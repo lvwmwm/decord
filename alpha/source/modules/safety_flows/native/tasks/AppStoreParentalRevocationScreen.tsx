@@ -1,26 +1,26 @@
-// Module ID: 19490
-// Function ID: 19491
+// Module ID: 19752
+// Function ID: 19753
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5661, 1125, 2833, 5235, 5978, 7902, 19474, 12739, 12952, 8090, 7901, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5696, 1125, 2833, 5270, 6013, 7936, 19736, 12786, 12999, 8124, 7935, 2]
 
-// Module 19490 (AppStoreParentalRevocationScreen)
+// Module 19752 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import _modDef2833 from "module_2833" /* 2833 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import LinkingDefault from "Linking" /* 5661 */;
-import Stack_Stack from "Stack/Stack" /* 5978 */;
-import ModalScreen2 from "ModalScreen" /* 7901 */;
-import ModalContent2 from "ModalContent" /* 7902 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8090 */;
-import ModalFooter2 from "ModalFooter" /* 12739 */;
-import ModalActionButton2 from "ModalActionButton" /* 12952 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19474 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import LinkingDefault from "Linking" /* 5696 */;
+import Stack_Stack from "Stack/Stack" /* 6013 */;
+import ModalScreen2 from "ModalScreen" /* 7935 */;
+import ModalContent2 from "ModalContent" /* 7936 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8124 */;
+import ModalFooter2 from "ModalFooter" /* 12786 */;
+import ModalActionButton2 from "ModalActionButton" /* 12999 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19736 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -169,12 +169,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { children: items };
                 items = [tmp43, ];
-                const ModalFooter = tmp(12739).ModalFooter;
+                const ModalFooter = tmp(12786).ModalFooter;
                 const obj7 = { variant: "primary", text: intl4.string(_modDef2833["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj8), iconPosition: "end", onPress: first };
-                const ModalActionButton = tmp(12952).ModalActionButton;
+                const ModalActionButton = tmp(12999).ModalActionButton;
                 intl4 = tmp(1125).intl;
                 obj8 = { color: nativeDefault.colors.WHITE };
-                LinkExternalSmallIcon = tmp(8090).LinkExternalSmallIcon;
+                LinkExternalSmallIcon = tmp(8124).LinkExternalSmallIcon;
                 items[1] = hasOwnProperty(ModalActionButton, obj7);
                 const tmp51 = metroRequire(ModalFooter, obj6);
                 cResult[27] = tmp51;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
           const obj10 = { children: metroRequire(View, obj11) };
           obj11 = { style: content, children: items2 };
           items2 = [tmp30, tmp34];
-          const ModalContent = tmp(7902).ModalContent;
+          const ModalContent = tmp(7936).ModalContent;
           const tmp42 = hasOwnProperty(ModalContent, obj10);
           cResult[22] = tmp4.content;
           cResult[23] = tmp30;
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
         tmp30 = tmp33;
       }
       const obj13 = { align: "center", spacing: nativeDefault.space.PX_16, children: items3 };
-      const Stack2 = tmp(5978).Stack;
+      const Stack2 = tmp(6013).Stack;
       items3 = [tmp9, tmp24];
       const tmp29 = metroRequire(Stack2, obj13);
       cResult[14] = tmp24;
@@ -224,7 +224,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
     }
   }
   const obj14 = { align: "center", spacing: nativeDefault.space.PX_16, style: body, children: items4 };
-  const Stack = tmp(5978).Stack;
+  const Stack = tmp(6013).Stack;
   items4 = [tmp15, tmp21];
   const tmp25 = metroRequire(Stack, obj14);
   cResult[10] = tmp4.body;

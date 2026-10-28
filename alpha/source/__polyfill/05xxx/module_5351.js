@@ -1,52 +1,16 @@
 // Module ID: 5351
 // Function ID: 5352
-// Dependencies: [19, 5329, 5332]
-// Exports: useMountReactions
+// Dependencies: [19, 17, 5352]
+// Exports: useEnsureGestureHandlerRootView
 
 // Module 5351
+import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import selectProperties from "selectProperties" /* 5329 */;
-import MountRegistry2 from "MountRegistry" /* 5332 */;
+import reactDefault from "react" /* 5352 */;
 
-function shouldUpdateDetector(arg0, handlerTag) {
-  if (undefined === arg0) {
-    return false;
-  } else {
-    const obj = selectProperties;
-    const result = obj.transformIntoHandlerTags(arg0);
-    for (const item10012 of result) {
-      if (item10012 === handlerTag.handlerTag) {
-        obj2.return();
-        let flag = true;
-        return true;
-      }
-    }
-    return false;
-  }
-}
-const useEffect = react.useEffect;
+const use = react.use;
+const Platform = react_native.Platform;
 
-export const useMountReactions = function useMountReactions(detectorUpdater, current2) {
-  let closure_0 = detectorUpdater;
-  let closure_1 = current2;
-  const items = [detectorUpdater, current2];
-  useEffect(() => {
-    const MountRegistry = MountRegistry2.MountRegistry;
-    return MountRegistry.addMountListener((arg0) => {
-      if (current2.isMounted) {
-        const attachedGestures = current2.attachedGestures;
-        const iter = attachedGestures[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let requireToFail = nextResult.config.requireToFail;
-          let simultaneousWith = nextResult.config.simultaneousWith;
-          let tmp5 = shouldUpdateDetector;
-          if (!shouldUpdateDetector(nextResult.config.blocksHandlers, arg0)) {
-          }
-          let tmp9 = detectorUpdater();
-          iter.return();
-        }
-      }
-    });
-  }, items);
+export const useEnsureGestureHandlerRootView = function useEnsureGestureHandlerRootView() {
+  use(reactDefault);
 };

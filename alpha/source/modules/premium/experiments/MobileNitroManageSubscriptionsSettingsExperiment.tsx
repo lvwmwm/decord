@@ -1,10 +1,10 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14967
+// Function ID: 14968
 // Name: MobileNitroManageSubscriptionsSettingsExperiment
 // Dependencies: [1452, 558, 576, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 14744 (MobileNitroManageSubscriptionsSettingsExperiment)
+// Module 14967 (MobileNitroManageSubscriptionsSettingsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

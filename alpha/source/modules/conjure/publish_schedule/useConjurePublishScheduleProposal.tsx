@@ -1,11 +1,11 @@
-// Module ID: 12489
-// Function ID: 12490
+// Module ID: 12536
+// Function ID: 12537
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6774, 558, 576, 504, 10809, 10810, 1125, 3831, 12213, 2]
+// Dependencies: [5, 32, 19, 6808, 558, 576, 504, 10843, 10844, 1125, 3863, 12252, 2]
 
-// Module 12489 (useConjurePublishScheduleProposal)
-import _modDef3831 from "module_3831" /* 3831 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6774 */;
+// Module 12536 (useConjurePublishScheduleProposal)
+import _modDef3863 from "module_3863" /* 3863 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -147,8 +147,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
       }
       const formatToPlainString = tmp19.formatToPlainString;
       let obj4 = { time: tmpResult2.formatPublishScheduleTime(trigger.next_run_at) };
-      const orZDqY = _modDef3831.orZDqY;
-      tmpResult2 = tmp(12213);
+      const orZDqY = _modDef3863.orZDqY;
+      tmpResult2 = tmp(12252);
       formatToPlainStringResult = formatToPlainString(orZDqY, obj4);
     }
     cResult[8] = trigger.next_run_at;
@@ -346,13 +346,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     let intl = tmp(1125).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef3831.orZDqY;
-    tmpResult = tmp(12213);
+    const orZDqY = _modDef3863.orZDqY;
+    tmpResult = tmp(12252);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12213);
+  tmpResult2 = tmp(12252);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

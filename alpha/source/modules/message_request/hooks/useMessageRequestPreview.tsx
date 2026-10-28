@@ -1,16 +1,16 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13754
+// Function ID: 13755
 // Name: useMessageRequestPreview
-// Dependencies: [5, 6011, 6772, 13537, 1084, 558, 576, 504, 12, 1294, 584, 2]
+// Dependencies: [5, 6045, 6806, 13755, 1084, 558, 576, 504, 12, 1294, 584, 2]
 
-// Module 13536 (useMessageRequestPreview)
+// Module 13754 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6011 */;
-import ReadStateStore from "ReadStateStore" /* 6772 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13537 */;
+import MessageStore from "MessageStore" /* 6045 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13755 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

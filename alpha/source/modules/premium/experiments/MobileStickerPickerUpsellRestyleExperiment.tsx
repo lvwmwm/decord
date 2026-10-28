@@ -1,12 +1,12 @@
-// Module ID: 9934
-// Function ID: 9935
+// Module ID: 9966
+// Function ID: 9967
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1452, 558, 576, 5031, 2]
+// Dependencies: [1452, 558, 576, 5063, 2]
 // Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature
 
-// Module 9934 (MobileStickerPickerUpsellRestyleExperiment)
+// Module 9966 (MobileStickerPickerUpsellRestyleExperiment)
 import react from "react" /* 576 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5031 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5063 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

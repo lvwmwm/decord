@@ -1,19 +1,19 @@
-// Module ID: 11693
-// Function ID: 11694
+// Module ID: 11731
+// Function ID: 11732
 // Name: ChannelCallHeaderButtons
-// Dependencies: [19, 2011, 21, 558, 576, 504, 5852, 11551, 1125, 11694, 10888, 10889, 11695, 5711, 2]
+// Dependencies: [19, 2011, 21, 558, 576, 504, 5887, 11589, 1125, 11732, 10923, 10924, 11733, 5746, 2]
 
-// Module 11693 (ChannelCallHeaderButtons)
+// Module 11731 (ChannelCallHeaderButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1125 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5711 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5852 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10888 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 10889 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11551 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11694 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11695 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5746 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5887 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10923 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 10924 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11589 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11732 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11733 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -59,9 +59,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CameraButton
     }
     let tmp10 = null;
     if (isVideoEnabled) {
-      videoDevices(11551);
+      videoDevices(11589);
       const intl = tmp(1125).intl;
-      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1125).t["t9eQ/g"])} source={videoDevices(11694)} onPress={tmp8} disableBackground />;
+      tmp10 = <tmp13 accessibilityLabel={intl.string(videoDeviceId(1125).t["t9eQ/g"])} source={videoDevices(11732)} onPress={tmp8} disableBackground />;
     }
     cResult[5] = tmp8;
     cResult[6] = isVideoEnabled;

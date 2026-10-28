@@ -1,15 +1,15 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12120
+// Function ID: 12121
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 4972, 587, 558, 576, 12054, 5235, 6914, 8951, 2]
+// Dependencies: [109, 19, 21, 5004, 587, 558, 576, 12092, 5270, 6948, 8985, 2]
 
-// Module 12082 (AppLauncherSelectOptionFormRow)
+// Module 12120 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5235 */;
+import Text_Text from "Text/Text" /* 5270 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
               }
             }
           }
-          const FormRow = tmp(8951).FormRow;
+          const FormRow = tmp(8985).FormRow;
           const merged = Object.assign(tmp6);
           const tmp27 = <FormRow start end style={tmp13.formRow} label={tmp15} subLabel={tmp17} trailing={tmp19} />;
           cResult[16] = tmp6;

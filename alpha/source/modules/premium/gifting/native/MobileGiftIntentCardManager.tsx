@@ -1,19 +1,19 @@
-// Module ID: 18975
-// Function ID: 18976
+// Module ID: 19238
+// Function ID: 19239
 // Name: MobileGiftIntentCardManager
-// Dependencies: [7733, 4824, 6011, 4875, 8447, 1391, 18976, 1105, 4800, 10500, 9360, 1272, 4819, 9083, 2]
+// Dependencies: [7767, 4856, 6045, 4907, 8481, 1391, 19239, 1105, 4832, 10532, 9392, 1272, 4851, 9116, 2]
 
-// Module 18975 (MobileGiftIntentCardManager)
+// Module 19238 (MobileGiftIntentCardManager)
 import ChannelTypes from "ChannelTypes" /* 1105 */;
-import Timers from "Timers" /* 4819 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9083 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7733 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import MessageStore from "MessageStore" /* 6011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8447 */;
+import Timers from "Timers" /* 4851 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9116 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7767 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import MessageStore from "MessageStore" /* 6045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8481 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 18976 */;
+import GiftIntentReconcilingManager from "GiftIntentReconcilingManager" /* 19239 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,12 +41,12 @@ class MobileGiftIntentCardManager extends GiftIntentReconcilingManager {
           if (MessageStore.isReady(id)) {
             const tmp6 = constants2;
             if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, found, constants.SEND_MESSAGE)) {
-              const tmpResult = tmp(10500);
+              const tmpResult = tmp(10532);
               const result = tmpResult.logMessageGiftIntentShown(found);
               const userAffinity = self.getUserAffinity(found);
               const obj = { name: tmp(1272).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION, type: tmp(1272).ImpressionTypes.VIEW, properties: obj2 };
-              const trackImpression = tmp(9360).trackImpression;
-              tmp(9360);
+              const trackImpression = tmp(9392).trackImpression;
+              tmp(9392);
               obj2 = { gift_intent_type: tmp6.FRIEND_ANNIVERSARY, dm_affinity: dmProbability, channel_id: id };
               dmProbability = undefined;
               if (userAffinity != null) {

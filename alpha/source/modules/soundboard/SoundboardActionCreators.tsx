@@ -1,18 +1,18 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7480
+// Function ID: 7481
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6007, 6009, 1084, 1094, 1294, 7446, 584, 7447, 6376, 7448, 1264, 4805, 12, 5909, 1125, 7449, 2]
-// Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
+// Dependencies: [5, 6042, 6044, 1084, 1094, 1294, 7481, 584, 7482, 6410, 7483, 1264, 4837, 12, 5944, 1125, 7484, 2]
+// Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7445 (SoundboardActionCreators)
+// Module 7480 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1125 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
-import SoundboardConstants from "SoundboardConstants" /* 6009 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4837 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
+import SoundboardConstants from "SoundboardConstants" /* 6044 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6007 */;
+import SoundboardStore from "SoundboardStore" /* 6042 */;
 import Constants from "Constants" /* 1084 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7448);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7483);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -554,81 +554,32 @@ export const addFavoriteSound = function addFavoriteSound(soundId) {
   _require = soundId;
   const FrecencyUserSettingsActionCreators = require("UserSettingsProtoActionCreators").FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteSoundboardSounds", async (soundIds) => {
+    let flag;
     let intl;
     let intl2;
+    let obj3;
     obj = _modDef12;
-    if (obj.size(soundIds.soundIds) < metroImportAll) {
-      let flag;
-      const tmpResult = _modDef12;
-      if (tmpResult.size(soundIds.orderedSoundIds) < metroImportAll) {
-        const soundIds2 = soundIds.soundIds;
-        const hasItem = soundIds2.includes(soundId);
-        flag = !hasItem;
-        if (hasItem) {
-          const orderedSoundIds = soundIds.orderedSoundIds;
-          flag = !orderedSoundIds.includes(tmp8);
-        }
-        if (flag) {
-          soundIds = soundIds.soundIds;
-          if (!soundIds.includes(soundId)) {
-            const soundIds1 = soundIds.soundIds;
-            soundIds1.push(soundId);
-          }
-          const orderedSoundIds2 = soundIds.orderedSoundIds;
-          if (!orderedSoundIds2.includes(soundId)) {
-            const orderedSoundIds1 = soundIds.orderedSoundIds;
-            orderedSoundIds1.push(soundId);
-          }
-        }
+    if (obj.size(soundIds.soundIds) >= metroImportAll) {
+      const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
+      const show = tmp(5944).show;
+      AlertActionCreatorsDefault;
+      intl = intl3.intl;
+      intl2 = intl3.intl;
+      obj3 = { count: tmp3 };
+      show(obj2);
+      flag = false;
+    } else {
+      soundIds = soundIds.soundIds;
+      const hasItem = soundIds.includes(soundId);
+      flag = !hasItem;
+      const tmp4 = soundId;
+      if (flag) {
+        const soundIds1 = soundIds.soundIds;
+        soundIds1.push(tmp4);
       }
-      return flag;
     }
-    const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, { count: metroImportAll }) };
-    const show = AlertActionCreatorsDefault.show;
-    AlertActionCreatorsDefault;
-    intl = intl3.intl;
-    intl2 = intl3.intl;
-    show(obj2);
-    flag = false;
+    return flag;
   }, constants.INFREQUENT_USER_ACTION);
-};
-export const reorderFavoriteSound = function reorderFavoriteSound(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  if (arg0 !== arg1) {
-    let tmp = require;
-    const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
-    const tmp3 = constants;
-    FrecencyUserSettingsActionCreators.updateAsync("favoriteSoundboardSounds", async (orderedSoundIds) => {
-      orderedSoundIds = orderedSoundIds.orderedSoundIds;
-      const index = orderedSoundIds.indexOf(closure_0);
-      const tmp = closure_0;
-      if (-1 === index) {
-        return false;
-      } else {
-        let length;
-        if (null == closure_1) {
-          length = orderedSoundIds.orderedSoundIds.length;
-        } else {
-          const orderedSoundIds1 = orderedSoundIds.orderedSoundIds;
-          length = orderedSoundIds1.indexOf(tmp3);
-        }
-        if (-1 !== length) {
-          if (length !== index) {
-            const orderedSoundIds2 = orderedSoundIds.orderedSoundIds;
-            orderedSoundIds2.splice(index, 1);
-            let diff = length;
-            if (index < length) {
-              diff = length - 1;
-            }
-            const orderedSoundIds3 = orderedSoundIds.orderedSoundIds;
-            orderedSoundIds3.splice(diff, 0, tmp);
-          }
-        }
-        return false;
-      }
-    }, constants.INFREQUENT_USER_ACTION);
-  }
 };
 export const removeFavoriteSound = function removeFavoriteSound(soundId) {
   let closure_0 = soundId;

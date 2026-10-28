@@ -1,10 +1,10 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 17764
+// Function ID: 17765
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1084, 584, 1294, 6376, 2]
+// Dependencies: [5, 1084, 584, 1294, 6410, 2]
 // Exports: fetchActiveChannels
 
-// Module 17529 (ActiveChannelsActionCreators)
+// Module 17764 (ActiveChannelsActionCreators)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

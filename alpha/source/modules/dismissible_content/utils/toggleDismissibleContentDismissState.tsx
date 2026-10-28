@@ -1,17 +1,17 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17251
+// Function ID: 17252
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 5003, 5642, 4822, 4809, 4805, 11, 558, 576, 504, 1101, 5002, 4815, 2]
+// Dependencies: [19, 5035, 5677, 4854, 4841, 4837, 11, 558, 576, 504, 1101, 5034, 4847, 2]
 
-// Module 17021 (toggleDismissibleContentDismissState)
+// Module 17251 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4809 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4815 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4822 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5642 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4837 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4841 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4847 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4854 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5677 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = tmp(5002);
+  const tmpResult2 = tmp(5034);
   const result = tmpResult2.useIsDismissibleContentDismissed_UNSAFE(arg0, tmp8);
   dependencyMap = result;
   if (cResult[4] === arg0) {
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
             const fromTimestamp2 = SnowflakeUtilsDefault.fromTimestamp;
             SnowflakeUtilsDefault;
             const timestamp = Date.now();
-            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4809).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
+            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4841).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
             flag9 = true;
           }
           flag = flag9;
@@ -245,7 +245,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
                       const fromTimestamp = SnowflakeUtilsDefault.fromTimestamp;
                       SnowflakeUtilsDefault;
                       const timestamp1 = Date.now();
-                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4809).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
+                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4841).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
                       flag3 = true;
                     }
                     flag2 = flag3;
@@ -348,7 +348,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
             const fromTimestamp2 = SnowflakeUtilsDefault.fromTimestamp;
             SnowflakeUtilsDefault;
             const timestamp = Date.now();
-            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4809).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
+            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4841).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
             flag9 = true;
           }
           flag = flag9;
@@ -462,7 +462,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToggleD
                       const fromTimestamp = SnowflakeUtilsDefault.fromTimestamp;
                       SnowflakeUtilsDefault;
                       const timestamp1 = Date.now();
-                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4809).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
+                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4841).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
                       flag3 = true;
                     }
                     flag2 = flag3;

@@ -1,13 +1,13 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17811
+// Function ID: 17812
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1084, 558, 576, 4849, 1125, 17577, 2]
+// Dependencies: [19, 1084, 558, 576, 4881, 1125, 17812, 2]
 
-// Module 17576 (useFavoritesGuildCategoryLongPress)
+// Module 17811 (useFavoritesGuildCategoryLongPress)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import FavoritesUtils from "FavoritesUtils" /* 4849 */;
-import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 17577 */;
+import FavoritesUtils from "FavoritesUtils" /* 4881 */;
+import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 17812 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const obj = id(576);
   const cResult = obj.c(5);
   if (cResult[0] !== getGuildId) {
-    const tmpResult = id(4849);
+    const tmpResult = id(4881);
     const isFavoritesGuildIdResult = tmpResult.isFavoritesGuildId(getGuildId.getGuildId()) && getGuildId.type === ChannelTypes.GUILD_CATEGORY;
     cResult[0] = getGuildId;
     cResult[1] = isFavoritesGuildIdResult;

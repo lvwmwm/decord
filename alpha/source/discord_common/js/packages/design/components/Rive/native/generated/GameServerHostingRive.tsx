@@ -1,12 +1,12 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 5157
+// Function ID: 5158
 // Name: GameServerHostingRive
-// Dependencies: [109, 19, 21, 558, 5047, 576, 5123, 5101, 2]
+// Dependencies: [109, 19, 21, 558, 5079, 576, 5158, 5134, 2]
 
-// Module 5122 (GameServerHostingRive)
+// Module 5157 (GameServerHostingRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 5047 */;
+import BaseRive2 from "BaseRive" /* 5079 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let dataBinding, importDefault, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(5101);
+const RiveErrorBoundary2 = tmp(5134);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -175,7 +175,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameSe
         }
       }
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_5123")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_5158")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

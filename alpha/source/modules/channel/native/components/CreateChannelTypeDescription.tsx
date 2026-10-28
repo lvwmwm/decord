@@ -1,16 +1,16 @@
-// Module ID: 8984
-// Function ID: 8985
+// Module ID: 9018
+// Function ID: 9019
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8985, 1084, 21, 558, 576, 8986, 6855, 5235, 1125, 2]
+// Dependencies: [19, 17, 9019, 1084, 21, 558, 576, 9020, 6889, 5270, 1125, 2]
 
-// Module 8984 (CreateChannelTypeDescription)
+// Module 9018 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import GuildProfileStore from "GuildProfileStore" /* 8985 */;
-import useGuildProfile from "useGuildProfile" /* 8986 */;
+import GuildProfileStore from "GuildProfileStore" /* 9019 */;
+import useGuildProfile from "useGuildProfile" /* 9020 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6855).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6889).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp7 = fetchStatus === FETCHED && !hasItem;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-        const Text = tmp(5235).Text;
+        const Text = tmp(5270).Text;
         intl = tmp(1125).intl;
         const tmp18 = <View>{null}</View>;
         cResult[5] = tmp18;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6855).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6889).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = fetchStatus === FETCHED && !hasItem;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   let tmp9 = null;
   if (tmp6) {
     ({ variant: "text-sm/normal", color: "text-subtle", children: intl.string(intl2.t["2Ab4Id"]) });
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     tmp9 = <View>{null}</View>;
   }

@@ -1,9 +1,9 @@
-// Module ID: 12254
-// Function ID: 12255
+// Module ID: 12293
+// Function ID: 12294
 // Name: ConjureMcpUiExperiment
 // Dependencies: [1452, 558, 576, 2]
 
-// Module 12254 (ConjureMcpUiExperiment)
+// Module 12293 (ConjureMcpUiExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

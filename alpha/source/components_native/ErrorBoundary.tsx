@@ -1,23 +1,23 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17617
+// Function ID: 17618
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11031, 21, 4972, 558, 576, 12727, 504, 1125, 5245, 5038, 1254, 584, 1199, 9085, 5235, 2]
+// Dependencies: [5, 32, 19, 17, 11066, 21, 5004, 558, 576, 12774, 504, 1125, 5280, 5070, 1254, 584, 1199, 9118, 5270, 2]
 
-// Module 17384 (components_native/ErrorBoundary)
+// Module 17617 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import native from "native" /* 1199 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import native2 from "native" /* 5038 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import AppCrash from "AppCrash" /* 9085 */;
+import native2 from "native" /* 5070 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import AppCrash from "AppCrash" /* 9118 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11031 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11066 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroRequire;
 let tmp;
 const get_initialized = tmp(504);
 const intl4 = tmp(1125);
-const components_Button_Button = tmp(5245);
+const components_Button_Button = tmp(5280);
 ({ NativeModules: metroRequire, View: metroImportDefault } = react_native);
 ({ jsx: c9, jsxs: c10 } = Fragment);
 const unpackModuleId = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
@@ -265,7 +265,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeC
           return obj(...arguments);
         }
     };
-    const Button = tmp3(5245).Button;
+    const Button = tmp3(5280).Button;
     intl = tmp3(1125).intl;
     return closure_9(Button, obj2);
   }
@@ -351,7 +351,7 @@ class ErrorBoundary extends PureComponent {
       const obj3 = { style: tmp.buttons, children: items1 };
       items1 = [React4(closure_12, {}), ];
       const obj4 = { text: intl3.string(intl4.t["4n8OJn"]), onPress: self.handleReload };
-      const Button = tmp3(5245).Button;
+      const Button = tmp3(5280).Button;
       intl3 = tmp3(1125).intl;
       items1[1] = React4(Button, obj4);
       items[1] = authStore(metroImportDefault, obj3);

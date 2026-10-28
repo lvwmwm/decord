@@ -1,14 +1,14 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12285
+// Function ID: 12286
 // Name: useConjurePublishHistory
-// Dependencies: [32, 19, 1125, 3831, 2046, 558, 576, 12247, 12242, 2]
+// Dependencies: [32, 19, 1125, 3863, 2046, 558, 576, 12286, 12281, 2]
 // Exports: publishHistoryTitle
 
-// Module 12246 (useConjurePublishHistory)
+// Module 12285 (useConjurePublishHistory)
 import intl2 from "intl" /* 1125 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12247 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     if (cResult[5] === arg0) {
       tmp12 = cResult[6];
     }
-    const tmpResult = tmp(12242);
+    const tmpResult = tmp(12281);
     historyLoad = tmpResult.useHistoryLoad(tmp12);
     nextCursor = null;
     if ("loaded" === historyLoad.state.status) {
@@ -272,7 +272,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         if (cResult[3] === arg0) {
           tmp5 = cResult[4];
         }
-        const tmpResult = tmp(12242);
+        const tmpResult = tmp(12281);
         const historyLoad = tmpResult.useHistoryLoad(tmp5);
         if (cResult[5] === get) {
           let state;
@@ -410,7 +410,7 @@ export const publishHistoryTitle = function publishHistoryTitle(publishedAt) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { date: obj2.format("LLL") };
-  const prop = _modDef3831["/spQzC"];
+  const prop = _modDef3863["/spQzC"];
   obj2 = _modDef2046(publishedAt);
   return formatToPlainString(prop, obj);
 };

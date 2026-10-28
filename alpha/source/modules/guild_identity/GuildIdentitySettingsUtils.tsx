@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16231
+// Function ID: 16232
 // Name: GuildIdentitySettingsUtils
 // Dependencies: [2]
 // Exports: canResetThemeColors
 
-// Module 16003 (GuildIdentitySettingsUtils)
+// Module 16231 (GuildIdentitySettingsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_identity/GuildIdentitySettingsUtils.tsx");

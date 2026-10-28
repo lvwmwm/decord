@@ -1,11 +1,11 @@
-// Module ID: 11365
-// Function ID: 11366
+// Module ID: 11402
+// Function ID: 11403
 // Name: getOrFetchApplication
-// Dependencies: [5, 2042, 6811, 2]
+// Dependencies: [5, 2042, 6845, 2]
 // Exports: default
 
-// Module 11365 (getOrFetchApplication)
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6811 */;
+// Module 11402 (getOrFetchApplication)
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
 import size from "module_2" /* 2 */;

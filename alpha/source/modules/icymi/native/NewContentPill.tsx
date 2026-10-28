@@ -1,22 +1,22 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18246
+// Function ID: 18247
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 4846, 8823, 21, 4972, 587, 558, 576, 9405, 6885, 504, 5206, 8836, 8840, 5053, 5248, 1505, 12579, 5235, 1125, 6910, 4979, 2]
+// Dependencies: [32, 19, 17, 4878, 8860, 21, 5004, 587, 558, 576, 9437, 6919, 504, 5241, 8873, 8877, 5085, 5283, 1505, 12626, 5270, 1125, 6944, 5011, 2]
 
-// Module 18009 (NewContentPill)
+// Module 18246 (NewContentPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5248 */;
-import GuildIcon from "GuildIcon" /* 6885 */;
-import ICYMITypes from "ICYMITypes" /* 8836 */;
-import ClipView from "ClipView" /* 9405 */;
+import spring from "spring" /* 5283 */;
+import GuildIcon from "GuildIcon" /* 6919 */;
+import ICYMITypes from "ICYMITypes" /* 8873 */;
+import ClipView from "ClipView" /* 9437 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 4846 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8823 */;
+import GuildStore_mod from "GuildStore" /* 4878 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ICYMIUtils = tmp(8840);
+const ICYMIUtils = tmp(8877);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 let GuildStore = GuildStore_mod;
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewContentPi
       items = [{ translateY: withSpring(num, springConfig) }];
       ({ translateY: withSpring(num, springConfig) });
       num2 = 0;
-      withSpring2 = tmp(5248).withSpring;
+      withSpring2 = tmp(5283).withSpring;
       spring;
       tmp5 = springConfig;
       if (closure_8) {
@@ -400,7 +400,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewContentPi
     items = [{ translateY: withSpring(num, springConfig) }];
     ({ translateY: withSpring(num, springConfig) });
     num2 = 0;
-    withSpring2 = tmp(5248).withSpring;
+    withSpring2 = tmp(5283).withSpring;
     spring;
     tmp5 = springConfig;
     if (closure_8) {

@@ -1,15 +1,15 @@
-// Module ID: 18274
-// Function ID: 18275
+// Module ID: 18515
+// Function ID: 18516
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4914, 1389, 10619, 1084, 21, 558, 576, 7255, 7280, 18273, 504, 1272, 9360, 8668, 10625, 2]
+// Dependencies: [19, 4946, 1389, 10651, 1084, 21, 558, 576, 7289, 7314, 18514, 504, 1272, 9392, 8705, 10657, 2]
 
-// Module 18274 (SpamRequestsScreen)
+// Module 18515 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import UserRowConstants from "UserRowConstants" /* 10619 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
+import UserRowConstants from "UserRowConstants" /* 10651 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -82,8 +82,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   if (cResult[4] !== stateFromStoresArray) {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F155984 */ });
-        return mapped.filter(() => { /* body not rendered: F155985 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F156883 */ });
+        return mapped.filter(() => { /* body not rendered: F156884 */ });
       }
     }
     const items2 = [stateFromStoresArray];
@@ -101,8 +101,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamRequests
   } else {
     class N {
       constructor() {
-        mapped = closure_1.map(() => { /* body not rendered: F155984 */ });
-        return mapped.filter(() => { /* body not rendered: F155985 */ });
+        mapped = closure_1.map(() => { /* body not rendered: F156883 */ });
+        return mapped.filter(() => { /* body not rendered: F156884 */ });
       }
     }
     tmp15 = cResult[6];

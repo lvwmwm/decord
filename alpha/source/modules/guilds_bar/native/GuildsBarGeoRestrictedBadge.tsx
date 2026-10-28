@@ -1,18 +1,18 @@
-// Module ID: 17834
-// Function ID: 17835
+// Module ID: 18071
+// Function ID: 18072
 // Name: GuildsBarGeoRestrictedBadge
-// Dependencies: [19, 17, 21, 4972, 587, 6708, 558, 576, 5670, 16282, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 6742, 558, 576, 5705, 16510, 2]
 
-// Module 17834 (GuildsBarGeoRestrictedBadge)
+// Module 18071 (GuildsBarGeoRestrictedBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import LegacyTokens from "LegacyTokens" /* 6708 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16282 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import LegacyTokens from "LegacyTokens" /* 6742 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16510 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

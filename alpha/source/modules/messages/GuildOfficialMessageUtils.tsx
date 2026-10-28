@@ -1,21 +1,21 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7404
+// Function ID: 7405
 // Name: GuildOfficialMessageUtils
-// Dependencies: [4846, 4904, 4977, 1084, 1102, 683, 4969, 4979, 7370, 558, 576, 504, 7371, 6818, 2]
+// Dependencies: [4878, 4936, 5009, 1084, 1102, 683, 5001, 5011, 7405, 558, 576, 504, 7406, 6852, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor
 
-// Module 7369 (GuildOfficialMessageUtils)
+// Module 7404 (GuildOfficialMessageUtils)
 import react from "react" /* 576 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import MessageConstants from "MessageConstants" /* 4977 */;
-import shared from "shared" /* 4979 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6818 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7370 */;
-import ThreadHooks from "ThreadHooks" /* 7371 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import ColorUtils from "ColorUtils" /* 5001 */;
+import MessageConstants from "MessageConstants" /* 5009 */;
+import shared from "shared" /* 5011 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6852 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7405 */;
+import ThreadHooks from "ThreadHooks" /* 7406 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

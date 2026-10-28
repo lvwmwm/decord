@@ -1,11 +1,11 @@
 // Module ID: 2064
 // Function ID: 2065
 // Name: HelpdeskUtils
-// Dependencies: [2065, 1084, 4787, 1381, 2]
+// Dependencies: [2065, 1084, 4819, 1381, 2]
 
 // Module 2064 (HelpdeskUtils)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4787 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4819 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;

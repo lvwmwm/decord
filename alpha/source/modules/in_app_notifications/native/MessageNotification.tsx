@@ -1,23 +1,23 @@
-// Module ID: 13780
-// Function ID: 13781
+// Module ID: 13998
+// Function ID: 13999
 // Name: MessageNotification
-// Dependencies: [19, 4973, 13773, 21, 4972, 558, 576, 13781, 504, 1199, 1125, 6367, 13789, 7756, 4981, 6673, 5708, 13790, 1999, 13792, 13796, 2]
+// Dependencies: [19, 5005, 13991, 21, 5004, 558, 576, 13999, 504, 1199, 1125, 6401, 14007, 7790, 5013, 6707, 5743, 14008, 1999, 14010, 14014, 2]
 
-// Module 13780 (MessageNotification)
+// Module 13998 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import transitionToChannel from "transitionToChannel" /* 5708 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import MessageParserDefault from "MessageParser" /* 7756 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 13781 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import transitionToChannel from "transitionToChannel" /* 5743 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import MessageParserDefault from "MessageParser" /* 7790 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 13999 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13773 */;
-import createStyles from "createStyles" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13991 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,7 +207,7 @@ const memoResult = react.memo(function MessageNotification(notification) {
   const callback1 = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: channel.id };
-    return obj.pushLazy(asyncRequire(13790, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(14008, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items2);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items3);
   const NotificationPressable = message(parentChannel[19]).NotificationPressable;

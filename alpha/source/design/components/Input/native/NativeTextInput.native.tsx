@@ -1,15 +1,15 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7062
+// Function ID: 7063
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1498, 1084, 21, 558, 576, 7029, 5264, 5268, 7030, 5038, 5140, 2]
+// Dependencies: [19, 17, 1498, 1084, 21, 558, 576, 7063, 5299, 5303, 7064, 5070, 5175, 2]
 // Exports: NativeTextInput
 
-// Module 7028 (NativeTextInput)
+// Module 7062 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import native from "native" /* 5038 */;
-import native2 from "native" /* 5140 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7030 */;
+import native from "native" /* 5070 */;
+import native2 from "native" /* 5175 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7064 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5264);
+const useMountEffect = tmp(5299);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "toCharArray$esjava$1", defaultValue: "Symbol" };
+          const obj2 = { value: "useCallback", defaultValue: "PX_16" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "toCharArray$esjava$1", defaultValue: "Symbol" };
+  return { value: "useCallback", defaultValue: "PX_16" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

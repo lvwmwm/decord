@@ -1,13 +1,13 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10665
+// Function ID: 10666
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1084, 6375, 5909, 1125, 1294, 4979, 2]
+// Dependencies: [5, 1084, 6409, 5944, 1125, 1294, 5011, 2]
 
-// Module 10633 (GameRelationshipActionCreators)
+// Module 10665 (GameRelationshipActionCreators)
 import intl3 from "intl" /* 1125 */;
-import shared from "shared" /* 4979 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6375 */;
+import shared from "shared" /* 5011 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;

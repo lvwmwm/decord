@@ -1,19 +1,19 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18562
+// Function ID: 18563
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 4846, 7876, 21, 4972, 587, 504, 5605, 6639, 1997, 8973, 5663, 5211, 5266, 7250, 1125, 5245, 9002, 4832, 2]
+// Dependencies: [5, 32, 19, 17, 4878, 7910, 21, 5004, 587, 504, 5640, 6673, 1997, 9007, 5698, 5246, 5301, 7284, 1125, 5280, 9036, 4864, 2]
 // Exports: default
 
-// Module 18321 (AddModeratorsActionSheet)
+// Module 18562 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7876 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import createStyles from "createStyles" /* 4972 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import createStyles from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5, closure_0, closure_1, closure_2, id, row;

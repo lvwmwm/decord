@@ -1,12 +1,11 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8697
+// Function ID: 8698
 // Name: useShopProductItems
-// Dependencies: [19, 1992, 558, 576, 1125, 2]
-// Exports: getBundleItemNames, getProductItems, getPurchasedItem
+// Dependencies: [19, 1992, 558, 576, 2]
+// Exports: getProductItems, getPurchasedItem
 
-// Module 8660 (useShopProductItems)
+// Module 8697 (useShopProductItems)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -137,42 +136,3 @@ export const getPurchasedItem = function getPurchasedItem(arg0, firstAvatarDecor
   return tmp;
 };
 export const useShopProductItems = tmp2;
-export const getBundleItemNames = function getBundleItemNames(bundledProducts) {
-  const intl = intl4.intl;
-  let stringResult = intl.string(intl4.t["7v0T9P"]);
-  const intl2 = intl4.intl;
-  let stringResult1 = intl2.string(intl4.t.wR5wOo);
-  const intl3 = intl4.intl;
-  let stringResult2 = intl3.string(intl4.t.x5CoXR);
-  let itemThreeName = stringResult2;
-  let itemTwoName = stringResult1;
-  let itemOneName = stringResult;
-  if (null != bundledProducts.bundledProducts) {
-    if (bundledProducts.bundledProducts.length > 0) {
-      const first = bundledProducts.bundledProducts[0];
-      let name;
-      if (first != null) {
-        name = first.name;
-      }
-      stringResult = name;
-    }
-    if (bundledProducts.bundledProducts.length > 1) {
-      let name1;
-      if (bundledProducts.bundledProducts[1] != null) {
-        name1 = tmp9.name;
-      }
-      stringResult1 = name1;
-    }
-    if (bundledProducts.bundledProducts.length > 2) {
-      let name2;
-      if (bundledProducts.bundledProducts[2] != null) {
-        name2 = tmp11.name;
-      }
-      stringResult2 = name2;
-    }
-    itemThreeName = stringResult2;
-    itemTwoName = stringResult1;
-    itemOneName = stringResult;
-  }
-  return { itemOneName, itemTwoName, itemThreeName };
-};

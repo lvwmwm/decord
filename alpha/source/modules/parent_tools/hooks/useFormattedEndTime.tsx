@@ -1,9 +1,9 @@
-// Module ID: 18773
-// Function ID: 18774
+// Module ID: 19024
+// Function ID: 19025
 // Name: useFormattedEndTime
 // Dependencies: [1389, 1125, 558, 576, 504, 2]
 
-// Module 18773 (useFormattedEndTime)
+// Module 19024 (useFormattedEndTime)
 import react from "react" /* 576 */;
 import intl from "intl" /* 1125 */;
 import UserStore from "UserStore" /* 1389 */;

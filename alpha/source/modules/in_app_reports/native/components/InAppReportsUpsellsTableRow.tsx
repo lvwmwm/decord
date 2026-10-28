@@ -1,9 +1,9 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14845
+// Function ID: 14846
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 558, 576, 6905, 2]
+// Dependencies: [19, 21, 558, 576, 6939, 2]
 
-// Module 14622 (InAppReportsUpsellsTableRow)
+// Module 14845 (InAppReportsUpsellsTableRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow2 = tmp(6905);
+const TableRow2 = tmp(6939);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReportsUpsellsTableRow(description) {
   let disabled;

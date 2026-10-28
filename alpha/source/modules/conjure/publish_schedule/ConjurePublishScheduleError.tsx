@@ -1,9 +1,9 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10844
+// Function ID: 10845
 // Name: ConjurePublishScheduleError
 // Dependencies: [2]
 
-// Module 10810 (ConjurePublishScheduleError)
+// Module 10844 (ConjurePublishScheduleError)
 import size from "module_2" /* 2 */;
 
 class ConjurePublishScheduleError extends Error {

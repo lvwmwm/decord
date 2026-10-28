@@ -1,9 +1,9 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 8510
+// Function ID: 8511
 // Name: MarkupListRule
 // Dependencies: [1948, 38, 2]
 
-// Module 8473 (MarkupListRule)
+// Module 8510 (MarkupListRule)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef1948 from "module_1948" /* 1948 */;
 import size from "module_2" /* 2 */;

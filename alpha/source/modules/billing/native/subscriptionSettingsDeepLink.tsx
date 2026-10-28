@@ -1,13 +1,13 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15495
+// Function ID: 15496
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2055, 1084, 7491, 15271, 5211, 1125, 1264, 6464, 2]
+// Dependencies: [5, 2055, 1084, 7526, 15496, 5246, 1125, 1264, 6498, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15270 (subscriptionSettingsDeepLink)
+// Module 15495 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6464 */;
-import openUserSettings from "openUserSettings" /* 7491 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6498 */;
+import openUserSettings from "openUserSettings" /* 7526 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
 import Constants from "Constants" /* 1084 */;

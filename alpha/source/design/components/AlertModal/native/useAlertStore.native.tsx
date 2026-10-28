@@ -1,11 +1,11 @@
-// Module ID: 5911
-// Function ID: 5912
+// Module ID: 5946
+// Function ID: 5947
 // Name: useAlertStore
-// Dependencies: [32, 570, 1271, 5912, 5914, 2]
+// Dependencies: [32, 570, 1271, 5947, 5949, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5911 (useAlertStore)
-import react_nativeDefault from "react-native" /* 5914 */;
+// Module 5946 (useAlertStore)
+import react_nativeDefault from "react-native" /* 5949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ export const dismissAlerts = function dismissAlerts() {
   });
   const tmp4 = 0 === arr4.length && first.length > 0;
   if (tmp4) {
-    arr4(5912)();
+    arr4(5947)();
   }
 };
 export const dismissAlert = function dismissAlert(key) {
@@ -79,7 +79,7 @@ export const dismissAlert = function dismissAlert(key) {
       }
     });
     if (tmp2) {
-      found(5912)();
+      found(5947)();
     }
   }
 };

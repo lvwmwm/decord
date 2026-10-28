@@ -1,29 +1,29 @@
-// Module ID: 17117
-// Function ID: 17118
+// Module ID: 17347
+// Function ID: 17348
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1243, 13502, 4846, 5003, 17118, 1084, 21, 4972, 587, 1294, 2046, 8367, 13428, 558, 576, 17021, 7297, 13434, 4805, 4808, 1630, 504, 5235, 6905, 6989, 2]
+// Dependencies: [5, 19, 17, 1243, 13721, 4878, 5035, 17348, 1084, 21, 5004, 587, 1294, 2046, 8401, 13647, 558, 576, 17251, 7331, 13653, 4837, 4840, 1630, 504, 5270, 6939, 7023, 2]
 
-// Module 17117 (DevToolsGuildPowerupsScreen)
+// Module 17347 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13434 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17021 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4837 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13653 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13502 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17118 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13721 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17348 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const TableSwitchRow2 = tmp(7297);
+const TableSwitchRow2 = tmp(7331);
 function setWarningBoosts() {
   return obj(...arguments);
 }
@@ -267,7 +267,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
       }
     }
     let obj2 = { label: tmp5, value: isDismissed, onValueChange: tmp4 };
-    const tmp10 = closure_17(tmp(7297).TableSwitchRow, obj2);
+    const tmp10 = closure_17(tmp(7331).TableSwitchRow, obj2);
     cResult[5] = tmp4;
     cResult[6] = isDismissed;
     cResult[7] = tmp5;
@@ -308,7 +308,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     }
   }, items);
   obj = { label: closure_14(dc), value: isDismissed, onValueChange: callback };
-  const TableSwitchRow = dc(7297).TableSwitchRow;
+  const TableSwitchRow = dc(7331).TableSwitchRow;
   return closure_17(TableSwitchRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1107,7 +1107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: items4, children: closure_17(stateFromStores(5235).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
+    const obj5 = { style: items4, children: closure_17(stateFromStores(5270).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
     items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     tmp15Result = closure_17(closure_6, obj5);
@@ -1117,13 +1117,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
     const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    const TableRowGroup6 = tmp5(6989).TableRowGroup;
+    const TableRowGroup6 = tmp5(7023).TableRowGroup;
     const tmp16 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
     const _HermesInternal = HermesInternal;
-    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6905).TableRow, obj9) };
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6939).TableRow, obj9) };
     obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
@@ -1133,21 +1133,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     };
     items6 = [closure_17(TableRowGroup6, obj8), , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
-    const TableRowGroup = tmp5(6989).TableRowGroup;
+    const TableRowGroup = tmp5(7023).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    items7 = [closure_17(tmp5(6905).TableRow, obj11), ];
+    items7 = [closure_17(tmp5(6939).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_17(stateFromStores(6905).TableRow, obj12);
+    items7[1] = closure_17(stateFromStores(6939).TableRow, obj12);
     items6[1] = closure_18(TableRowGroup, obj10);
     const obj13 = {
       title: "User Level DCs",
@@ -1157,7 +1157,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_1_17(closure_1_24, obj, dc);
         })
     };
-    const TableRowGroup2 = tmp5(6989).TableRowGroup;
+    const TableRowGroup2 = tmp5(7023).TableRowGroup;
     items6[2] = closure_17(TableRowGroup2, obj13);
     const obj14 = {
       title: "Guild Level DCs",
@@ -1167,7 +1167,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup3 = tmp5(6989).TableRowGroup;
+    const TableRowGroup3 = tmp5(7023).TableRowGroup;
     items6[3] = closure_17(TableRowGroup3, obj14);
     const obj15 = {
       title: "Server Tag Guild Level DCs",
@@ -1177,10 +1177,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup4 = tmp5(6989).TableRowGroup;
+    const TableRowGroup4 = tmp5(7023).TableRowGroup;
     items6[4] = closure_17(TableRowGroup4, obj15);
-    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6905).TableRow, obj17) };
-    const TableRowGroup5 = tmp5(6989).TableRowGroup;
+    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6939).TableRow, obj17) };
+    const TableRowGroup5 = tmp5(7023).TableRowGroup;
     obj17 = {
       label: "Send Powerups System Message",
       onPress() {

@@ -1,13 +1,13 @@
-// Module ID: 11197
-// Function ID: 11198
+// Module ID: 11232
+// Function ID: 11233
 // Name: ActivityLauncherStore
-// Dependencies: [11198, 6499, 1084, 4819, 584, 504, 2]
+// Dependencies: [11233, 6533, 1084, 4851, 584, 504, 2]
 
-// Module 11197 (ActivityLauncherStore)
+// Module 11232 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LocalActivityStore from "LocalActivityStore" /* 11198 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
+import LocalActivityStore from "LocalActivityStore" /* 11233 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f109734 = () => {
+  const f110348 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -48,8 +48,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self3 = this;
       const self4 = this;
-      const timeout = new applicationId(4819).Timeout();
-      timeout.start(tmp10, f109734);
+      const timeout = new applicationId(4851).Timeout();
+      timeout.start(tmp10, f110348);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -63,8 +63,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self = this;
       const self2 = this;
-      const timeout1 = new applicationId(4819).Timeout();
-      timeout1.start(num, f109734);
+      const timeout1 = new applicationId(4851).Timeout();
+      timeout1.start(num, f110348);
       closure_8[applicationId] = timeout1;
     }
   }

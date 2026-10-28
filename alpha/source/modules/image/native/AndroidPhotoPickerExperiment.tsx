@@ -1,10 +1,10 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8189
+// Function ID: 8190
 // Name: AndroidPhotoPickerExperiment
 // Dependencies: [1452, 2]
 // Exports: getAndroidPhotoPickerExperimentConfig
 
-// Module 8155 (AndroidPhotoPickerExperiment)
+// Module 8189 (AndroidPhotoPickerExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

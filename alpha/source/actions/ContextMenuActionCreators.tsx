@@ -1,10 +1,10 @@
-// Module ID: 6857
-// Function ID: 6858
+// Module ID: 6891
+// Function ID: 6892
 // Name: ContextMenuActionCreators
-// Dependencies: [1084, 584, 6858, 1381, 6860, 2]
+// Dependencies: [1084, 584, 6892, 1381, 6894, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 6857 (ContextMenuActionCreators)
+// Module 6891 (ContextMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import size_mod from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const self = this;
     const self2 = this;
     dOMRect = new DOMRect(tmp3, sum1, 0, 0);
-    const obj3 = contextMenu(6858);
+    const obj3 = contextMenu(6892);
     let APP = obj3.getCurrentlyInteractingAppContext();
     if (APP == null) {
       APP = AppContext.APP;
@@ -132,7 +132,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
       const tmp14Result = contextMenu(1381);
       if (tmp14Result.isDesktop()) {
         if (nativeEvent.isTrusted) {
-          const tmp14Result2 = contextMenu(6860);
+          const tmp14Result2 = contextMenu(6894);
           importDefault = tmp14Result2.addResultListener(function handler() {
             closure_1();
             contextMenu = DispatcherDefault;

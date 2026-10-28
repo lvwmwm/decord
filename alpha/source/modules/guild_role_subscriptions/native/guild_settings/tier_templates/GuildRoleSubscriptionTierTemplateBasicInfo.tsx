@@ -1,9 +1,9 @@
-// Module ID: 19376
-// Function ID: 19377
+// Module ID: 19639
+// Function ID: 19640
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1391, 1095, 21, 4972, 587, 558, 576, 5670, 1199, 5235, 1125, 7341, 16630, 5245, 2]
+// Dependencies: [19, 17, 1391, 1095, 21, 5004, 587, 558, 576, 5705, 1199, 5270, 1125, 7376, 16859, 5280, 2]
 
-// Module 19376 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 19639 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1095 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import PriceUtils from "PriceUtils" /* 7341 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16630 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import PriceUtils from "PriceUtils" /* 7376 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16859 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
               }
             }
             const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
-            const Text = tmp(5235).Text;
+            const Text = tmp(5270).Text;
             const merged = Object.assign(descriptionTextProps);
             const tmp40 = metroRequire(Text, obj10);
             cResult[23] = description;

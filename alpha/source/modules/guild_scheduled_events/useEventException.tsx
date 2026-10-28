@@ -1,18 +1,18 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 8931
+// Function ID: 8932
 // Name: useEventException
-// Dependencies: [6785, 558, 576, 504, 2]
+// Dependencies: [6819, 558, 576, 504, 2]
 // Exports: getEventException
 
-// Module 8897 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
+// Module 8931 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f102156 = (event_exception_id) => event_exception_id.event_exception_id === constants;
+const f102769 = (event_exception_id) => event_exception_id.event_exception_id === constants;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventException(arg0, arg1) {
   let closure_0;
   let first;
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventExce
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f102156);
+    found = stateFromStoresArray.find(f102769);
   }
   cResult[3] = stateFromStoresArray;
   cResult[4] = arg0;
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventExce
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f102156);
+    found = stateFromStoresArray.find(f102769);
   }
   return found;
 });
@@ -102,7 +102,7 @@ export const getEventException = function getEventException(recurrenceId, eventI
   let closure_0 = recurrenceId;
   let found;
   if (prop != null) {
-    found = prop.find(f102156);
+    found = prop.find(f102769);
   }
   return found;
 };

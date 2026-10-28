@@ -1,14 +1,14 @@
-// Module ID: 11799
-// Function ID: 11800
-// Dependencies: [2, 11800, 11801, 11802, 11805, 11882, 11883]
+// Module ID: 11837
+// Function ID: 11838
+// Dependencies: [2, 11838, 11839, 11840, 11843, 11920, 11921]
 
-// Module 11799
-import createCompactNumberFormat from "createCompactNumberFormat" /* 11800 */;
-import resolvedDisplayField from "resolvedDisplayField" /* 11801 */;
-import resolvedValues from "resolvedValues" /* 11802 */;
-import schemas from "schemas" /* 11805 */;
-import types from "types" /* 11882 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 11883 */;
+// Module 11837
+import createCompactNumberFormat from "createCompactNumberFormat" /* 11838 */;
+import resolvedDisplayField from "resolvedDisplayField" /* 11839 */;
+import resolvedValues from "resolvedValues" /* 11840 */;
+import schemas from "schemas" /* 11843 */;
+import types from "types" /* 11920 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 11921 */;
 import size from "module_2" /* 2 */;
 
 const resolvedValuesFromUserApplicationIdentityProfileDefault = resolvedValuesFromUserApplicationIdentityProfile;

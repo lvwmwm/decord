@@ -1,89 +1,382 @@
 // Module ID: 12684
 // Function ID: 12685
-// Dependencies: [12645, 12633, 12668, 12592]
+// Dependencies: [5, 12663, 12685, 12664, 12636, 12647, 12650, 12643, 12673, 12637, 12659]
+// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 12684
-import _mod12592 from "module_12592" /* 12592 */;
-import module_12645 from "module_12645" /* 12645 */;
+import _mod12637 from "module_12637" /* 12637 */;
+import _mod12643 from "module_12643" /* 12643 */;
+import _mod12647 from "module_12647" /* 12647 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12650 */;
+import _mod12659 from "module_12659" /* 12659 */;
+import _mod12663 from "module_12663" /* 12663 */;
+import _mod12664 from "module_12664" /* 12664 */;
+import _mod12685 from "module_12685" /* 12685 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
-let filterKeys;
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-let c2 = "_sentryBundlerPluginAppKey:";
-
-export const thirdPartyErrorFilterIntegration = module_12645.defineIntegration((arg0) => {
-  const behaviour = arg0;
-  let obj = {
-    name: "ThirdPartyErrorsFilter",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = options(dependencyMap[2]);
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    },
-    processEvent(tags) {
-      const obj = _mod12592;
-      const framesFromEvent = obj.getFramesFromEvent(tags);
-      let mapped;
-      if (framesFromEvent) {
-        let found = framesFromEvent.filter((filename) => filename.filename);
-        mapped = found.map((module_metadata) => {
-          let length;
-          let mapped;
-          if (module_metadata.module_metadata) {
-            const _Object = Object;
-            const keys = Object.keys(module_metadata.module_metadata);
-            const found = keys.filter((item) => item.startsWith(length));
-            mapped = found.map((arr) => arr.slice(length.length));
-          } else {
-            mapped = [];
-          }
-          return mapped;
-        });
+let obj = function _flush() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
       }
-      if (mapped) {
-        let str2;
-        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
-          str2 = "some";
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
         } else {
-          str2 = "every";
-        }
-        if (mapped[str2]((arr) => !arr.some((item) => {
-          filterKeys = filterKeys.filterKeys;
-          return filterKeys.includes(item);
-        }))) {
-          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
-            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
-              const obj2 = { third_party_code: true };
-              const merged = Object.assign(tags.tags);
-              tags.tags = obj2;
+          let flushResult;
+          const obj4 = require("module_12663");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            flushResult = client.flush(tmp10);
+          } else {
+            if (require("module_12664").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events. No client defined.");
             }
+            flushResult = Promise.resolve(false);
           }
-          return null;
+          c1 = 3;
+          obj = { value: flushResult, done: true };
+          return obj;
         }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
       }
-      return tags;
     }
-  };
-  return obj;
-});
+  });
+  return obj(...arguments);
+};
+obj = function _close() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closeResult;
+          const obj4 = require("module_12663");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            closeResult = client.close(tmp10);
+          } else {
+            if (require("module_12664").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events and disable SDK. No client defined.");
+            }
+            closeResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: closeResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function endSession() {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  const obj3 = _mod12663;
+  const currentScope = obj3.getCurrentScope();
+  const tmp3 = currentScope.getSession() || isolationScope.getSession();
+  if (tmp3) {
+    const tmpResult = _mod12659;
+    tmpResult.closeSession(tmp3);
+  }
+  const tmpResult4 = _mod12663;
+  const isolationScope1 = tmpResult4.getIsolationScope();
+  const tmpResult5 = _mod12663;
+  const currentScope1 = tmpResult5.getCurrentScope();
+  const tmpResult6 = _mod12663;
+  const client = tmpResult6.getClient();
+  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
+  const tmp6 = tmp5 && client;
+  if (tmp6) {
+    client.captureSession(tmp5);
+  }
+  isolationScope.setSession();
+  currentScope.setSession();
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+
+export const addEventProcessor = function addEventProcessor(arg0) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.addEventProcessor(arg0);
+};
+export const captureCheckIn = function captureCheckIn(arg0, arg1) {
+  obj = _mod12663;
+  const currentScope = obj.getCurrentScope();
+  const obj2 = _mod12663;
+  const client = obj2.getClient();
+  if (client) {
+    if (client.captureCheckIn) {
+      return client.captureCheckIn(arg0, arg1, currentScope);
+    } else if (_mod12664.DEBUG_BUILD) {
+      const logger2 = tmp(12636).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+  } else if (_mod12664.DEBUG_BUILD) {
+    const logger = tmp(12636).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult = _mod12647;
+  return tmpResult.uuid4();
+};
+export const captureEvent = function captureEvent(arg0, arg1) {
+  obj = _mod12663;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureEvent(arg0, arg1);
+};
+export const captureException = function captureException(arg0, arg1) {
+  obj = _mod12663;
+  const currentScope = obj.getCurrentScope();
+  const captureException = currentScope.captureException;
+  const obj2 = _mod12685;
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+};
+export const captureMessage = function captureMessage(arg0, captureContext) {
+  let tmp;
+  if (typeof captureContext === "string") {
+    tmp = captureContext;
+  }
+  let tmp2;
+  if (typeof captureContext !== "string") {
+    tmp2 = { captureContext };
+    const obj2 = { captureContext };
+  }
+  obj = _mod12663;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureMessage(arg0, tmp, tmp2);
+};
+export const captureSession = function captureSession() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  if (flag) {
+    endSession();
+  } else {
+    obj = _mod12663;
+    const isolationScope = obj.getIsolationScope();
+    const obj3 = _mod12663;
+    const currentScope = obj3.getCurrentScope();
+    const obj5 = _mod12663;
+    const client = obj5.getClient();
+    const tmp3 = currentScope.getSession() || isolationScope.getSession();
+    const tmp4 = tmp3 && client;
+    if (tmp4) {
+      client.captureSession(tmp3);
+    }
+  }
+};
+export const close = function close(arg0) {
+  return obj(...arguments);
+};
+export { endSession };
+export const flush = function flush(arg0) {
+  return obj(...arguments);
+};
+export const isEnabled = function isEnabled() {
+  obj = _mod12663;
+  const client = obj.getClient();
+  const transport = client && false !== client.getOptions().enabled && client.getTransport();
+  return transport;
+};
+export const isInitialized = function isInitialized() {
+  obj = _mod12663;
+  return obj.getClient();
+};
+export const lastEventId = function lastEventId() {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  return isolationScope.lastEventId();
+};
+export const setContext = function setContext(arg0, arg1) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setContext(arg0, arg1);
+};
+export const setExtra = function setExtra(arg0, arg1) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtra(arg0, arg1);
+};
+export const setExtras = function setExtras(arg0) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtras(arg0);
+};
+export const setTag = function setTag(arg0, arg1) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTag(arg0, arg1);
+};
+export const setTags = function setTags(arg0) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTags(arg0);
+};
+export const setUser = function setUser(arg0) {
+  obj = _mod12663;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setUser(arg0);
+};
+export const startSession = function startSession(arg0) {
+  let environment;
+  let release;
+  obj = _mod12663;
+  const client = obj.getClient();
+  const obj3 = _mod12663;
+  const isolationScope = obj3.getIsolationScope();
+  const obj5 = _mod12663;
+  const currentScope = obj5.getCurrentScope();
+  ({ environment, release } = client && client.getOptions() || {});
+  client && client.getOptions() || {};
+  if (undefined === environment) {
+    environment = tmp(12673).DEFAULT_ENVIRONMENT;
+  }
+  const userAgent = (_mod12637.GLOBAL_OBJ.navigator || {}).userAgent;
+  _mod12637.GLOBAL_OBJ.navigator || {};
+  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
+  const makeSession = _mod12659.makeSession;
+  _mod12659;
+  let tmp7 = userAgent;
+  currentScope.getUser() || isolationScope.getUser();
+  if (tmp7) {
+    tmp7 = { userAgent };
+    const obj4 = { userAgent };
+  }
+  const merged = Object.assign(tmp7);
+  const merged1 = Object.assign(arg0);
+  const session = makeSession(obj2);
+  const session1 = isolationScope.getSession();
+  const tmp12 = session1 && "ok" === session1.status;
+  if (tmp12) {
+    const tmpResult2 = _mod12659;
+    tmpResult2.updateSession(session1, { status: "exited" });
+  }
+  endSession();
+  isolationScope.setSession(session);
+  currentScope.setSession(session);
+  return session;
+};
+export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
+  let closure_1;
+  _require = monitorSlug;
+  dependencyMap = arg1;
+  function finishCheckIn(status) {
+    let obj2;
+    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
+    obj2 = _browserPerformanceTimeOriginMode;
+    const obj3 = _mod12663;
+    const currentScope = obj3.getCurrentScope();
+    const obj4 = _mod12663;
+    const client = obj4.getClient();
+    if (client) {
+      if (client.captureCheckIn) {
+        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
+      } else if (_mod12664.DEBUG_BUILD) {
+        const logger2 = tmp(12636).logger;
+        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+      }
+    } else if (_mod12664.DEBUG_BUILD) {
+      const logger = tmp(12636).logger;
+      logger.warn("Cannot capture check-in. No client defined.");
+    }
+    const tmpResult = _mod12647;
+    tmpResult.uuid4();
+  }
+  obj = { monitorSlug, status: "in_progress" };
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj2 = require("module_12663");
+  let currentScope = obj2.getCurrentScope();
+  let obj3 = require("module_12663");
+  let client = obj3.getClient();
+  if (client) {
+    let captureCheckInResult;
+    if (client.captureCheckIn) {
+      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
+    } else if (tmp(12664).DEBUG_BUILD) {
+      let logger2 = tmp(12636).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+    _asyncToGenerator = captureCheckInResult;
+    let tmpResult = tmp(12650);
+    let closure_3 = tmpResult.timestampInSeconds();
+    const tmpResult3 = tmp(12663);
+    return tmpResult3.withIsolationScope(() => {
+      try {
+        const tmp2 = closure_1();
+        obj = _mod12643;
+        if (obj.isThenable(tmp2)) {
+          const resolved = Promise.resolve(tmp2);
+          resolved.then(() => {
+            finishCheckIn("ok");
+          }, (arg0) => {
+            finishCheckIn("error");
+            throw arg0;
+          });
+        } else {
+          finishCheckIn("ok");
+        }
+        return tmp2;
+      } catch (tmp11) {
+        finishCheckIn("error");
+        throw tmp11;
+      }
+    });
+  } else if (tmp(12664).DEBUG_BUILD) {
+    let logger = tmp(12636).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult4 = tmp(12647);
+  captureCheckInResult = tmpResult4.uuid4();
+};

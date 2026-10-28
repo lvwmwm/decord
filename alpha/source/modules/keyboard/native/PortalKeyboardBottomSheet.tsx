@@ -1,25 +1,25 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12140
+// Function ID: 12141
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10092, 21, 1381, 4972, 587, 8913, 558, 576, 5268, 5053, 12103, 5038, 5582, 12104, 504, 5270, 5213, 6803, 1893, 5264, 5253, 1630, 1496, 5167, 5147, 5969, 9854, 5593, 2]
+// Dependencies: [32, 19, 17, 10124, 21, 1381, 5004, 587, 8947, 558, 576, 5303, 5085, 12141, 5070, 5617, 12142, 504, 5305, 5248, 6837, 1893, 5299, 5288, 1630, 1496, 5202, 5182, 6004, 9886, 5628, 2]
 
-// Module 12102 (PortalKeyboardBottomSheet)
+// Module 12140 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import HapticUtils from "HapticUtils" /* 5213 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5268 */;
-import BottomSheetModal from "BottomSheetModal" /* 5270 */;
-import isChannelFocused from "isChannelFocused" /* 6803 */;
-import native from "native" /* 8913 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import HapticUtils from "HapticUtils" /* 5248 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5303 */;
+import BottomSheetModal from "BottomSheetModal" /* 5305 */;
+import isChannelFocused from "isChannelFocused" /* 6837 */;
+import native from "native" /* 8947 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 10092 */;
+import NativeMenuStore from "NativeMenuStore" /* 10124 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

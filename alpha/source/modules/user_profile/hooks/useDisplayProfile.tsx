@@ -1,15 +1,15 @@
-// Module ID: 8675
-// Function ID: 8676
+// Module ID: 8712
+// Function ID: 8713
 // Name: useDisplayProfile
-// Dependencies: [19, 1389, 7704, 558, 576, 504, 8676, 2038, 8678, 2]
+// Dependencies: [19, 1389, 7738, 558, 576, 504, 8713, 2038, 8715, 2]
 // Exports: getDisplayProfile
 
-// Module 8675 (useDisplayProfile)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import DisplayProfileDefault from "DisplayProfile" /* 8678 */;
+// Module 8712 (useDisplayProfile)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8713 */;
+import DisplayProfileDefault from "DisplayProfile" /* 8715 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import UserProfileStore from "UserProfileStore" /* 7704 */;
+import UserProfileStore from "UserProfileStore" /* 7738 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import FunctionUtils from "FunctionUtils" /* 2038 */;
 import size from "module_2" /* 2 */;

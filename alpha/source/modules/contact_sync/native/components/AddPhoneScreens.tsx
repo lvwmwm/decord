@@ -1,23 +1,23 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13841
+// Function ID: 13842
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1389, 13596, 21, 4972, 5269, 587, 558, 576, 1502, 1125, 5235, 13595, 7141, 7142, 573, 7135, 38, 7175, 7091, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 13814, 21, 5004, 5304, 587, 558, 576, 1502, 1125, 5270, 13813, 7175, 7176, 573, 7169, 38, 7209, 7125, 2]
 
-// Module 13623 (AddPhoneScreens)
+// Module 13841 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorConstants from "NavigatorConstants" /* 5269 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7135 */;
-import AddPhoneDefault from "AddPhone" /* 7141 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7142 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13595 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13596 */;
+import NavigatorConstants from "NavigatorConstants" /* 5304 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7169 */;
+import AddPhoneDefault from "AddPhone" /* 7175 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7176 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13813 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13814 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   }
   if (cResult[1] !== tmp5.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp10 = closure_9(navigation(5235).Text, obj3);
+    const tmp10 = closure_9(navigation(5270).Text, obj3);
     cResult[1] = tmp5.title;
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   }
   if (cResult[4] !== tmp5.subtitle) {
     const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp11 };
-    const tmp15 = closure_9(navigation(5235).Text, obj4);
+    const tmp15 = closure_9(navigation(5270).Text, obj4);
     cResult[4] = tmp5.subtitle;
     cResult[5] = tmp15;
     tmp13 = tmp15;
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
           }
         }
       }
-      const obj5 = { style: tmp5.container, reason: navigation(7142).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
+      const obj5 = { style: tmp5.container, reason: navigation(7176).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
       const tmp22 = AddPhoneDefault;
       cResult[12] = tmp16;
       cResult[13] = tmp5.container;
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
               result = obj.handlePhoneVerificationComplete(tmp, closure_2);
               nextPromise = result.then(() => {
                 const obj = RunAfterInteractionsUtils;
-                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F161065 */ });
+                closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F162007 */ });
               });
             }
             return () => {
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
         result = obj.handlePhoneVerificationComplete(tmp, closure_2);
         nextPromise = result.then(() => {
           const obj = RunAfterInteractionsUtils;
-          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F161065 */ });
+          closure_0 = obj.runAfterInteractions(() => { /* body not rendered: F162007 */ });
         });
       }
       return () => {

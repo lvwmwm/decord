@@ -1,25 +1,25 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 17445
+// Function ID: 17446
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 4972, 587, 8566, 9462, 11139, 11141, 11143, 11145, 9951, 558, 576, 5235, 7235, 6986, 6987, 7010, 7297, 5978, 6907, 1199, 2]
+// Dependencies: [32, 19, 17, 21, 5004, 587, 8603, 9494, 11174, 11176, 11178, 11180, 9983, 558, 576, 5270, 7269, 7020, 7021, 7044, 7331, 6013, 6941, 1199, 2]
 
-// Module 17215 (UserSettingsDesignSystemBadge)
+// Module 17445 (UserSettingsDesignSystemBadge)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import Stack_Stack from "Stack/Stack" /* 5978 */;
-import Card_Card from "Card/Card" /* 6907 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 6987 */;
-import Badge_Badge from "Badge/Badge" /* 7235 */;
-import TableSwitchRow from "TableSwitchRow" /* 7297 */;
-import StarIcon3 from "StarIcon" /* 9951 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11143 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import Stack_Stack from "Stack/Stack" /* 6013 */;
+import Card_Card from "Card/Card" /* 6941 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7021 */;
+import Badge_Badge from "Badge/Badge" /* 7269 */;
+import TableSwitchRow from "TableSwitchRow" /* 7331 */;
+import StarIcon3 from "StarIcon" /* 9983 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11178 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
                 }
               }
               const obj5 = { spacing: nativeDefault.space.PX_12, children: items };
-              const Stack = tmp(5978).Stack;
+              const Stack = tmp(6013).Stack;
               items = [first4, tmp27, tmp34, tmp40, tmp43, tmp46];
               const tmp52 = metroImportAll(Stack, obj5);
               cResult[25] = tmp43;
@@ -182,7 +182,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
             let tmp44 = null;
             if ("custom" === first1) {
               const obj6 = { label: "Custom text", value: first2, onChange: tmp12 };
-              tmp44 = metroImportDefault(tmp(7010).TextInput, obj6);
+              tmp44 = metroImportDefault(tmp(7044).TextInput, obj6);
             }
             cResult[20] = first2;
             cResult[21] = first1;
@@ -209,19 +209,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
     if (first3) {
       let StarIcon;
       if ("premium" === first) {
-        StarIcon = tmp(8566).LockIcon;
+        StarIcon = tmp(8603).LockIcon;
       } else if ("inverted" === first) {
-        StarIcon = tmp(9462).TagIcon;
+        StarIcon = tmp(9494).TagIcon;
       } else if ("rarity-common" === first) {
-        StarIcon = tmp(11139).ExperimentalCommonIcon;
+        StarIcon = tmp(11174).ExperimentalCommonIcon;
       } else if ("rarity-rare" === first) {
-        StarIcon = tmp(11141).ExperimentalRareIcon;
+        StarIcon = tmp(11176).ExperimentalRareIcon;
       } else if ("rarity-epic" === first) {
-        StarIcon = tmp(11143).ExperimentalEpicIcon;
+        StarIcon = tmp(11178).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === first) {
-        StarIcon = tmp(11145).ExperimentalMythicIcon;
+        StarIcon = tmp(11180).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp(9951).StarIcon;
+        StarIcon = tmp(9983).StarIcon;
       }
       tmp23 = StarIcon;
     }
@@ -281,19 +281,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
   if (first3) {
     let StarIcon;
     if ("premium" === first) {
-      StarIcon = tmp14(8566).LockIcon;
+      StarIcon = tmp14(8603).LockIcon;
     } else if ("inverted" === first) {
-      StarIcon = tmp14(9462).TagIcon;
+      StarIcon = tmp14(9494).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(11139).ExperimentalCommonIcon;
+      StarIcon = tmp14(11174).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(11141).ExperimentalRareIcon;
+      StarIcon = tmp14(11176).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(11143).ExperimentalEpicIcon;
+      StarIcon = tmp14(11178).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(11145).ExperimentalMythicIcon;
+      StarIcon = tmp14(11180).ExperimentalMythicIcon;
     } else {
-      StarIcon = tmp14(9951).StarIcon;
+      StarIcon = tmp14(9983).StarIcon;
     }
     tmp20 = StarIcon;
   }
@@ -308,7 +308,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = tmp14(6987).TableRadioGroup;
+  const TableRadioGroup = tmp14(7021).TableRadioGroup;
   items[2] = metroImportDefault(TableRadioGroup, obj5);
   const obj6 = {
     title: "Type",
@@ -320,12 +320,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Playgr
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label.value);
     })
   };
-  const TableRadioGroup2 = tmp14(6987).TableRadioGroup;
+  const TableRadioGroup2 = tmp14(7021).TableRadioGroup;
   items[3] = metroImportDefault(TableRadioGroup2, obj6);
   let tmp16Result = null;
   if ("custom" === first1) {
     const obj7 = { label: "Custom text", value: first2, onChange: tmp9 };
-    tmp16Result = tmp16(tmp14(7010).TextInput, obj7);
+    tmp16Result = tmp16(tmp14(7044).TextInput, obj7);
   }
   items[4] = tmp16Result;
   items[5] = metroImportDefault(TableSwitchRow.TableSwitchRow, { label: "Leading icon", value: first3, onValueChange: tmp12, start: true, end: true });
@@ -377,37 +377,37 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("premium" === variant) {
-        StarIcon = tmp2(8566).LockIcon;
+        StarIcon = tmp2(8603).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon = tmp2(9462).TagIcon;
+        StarIcon = tmp2(9494).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11139).ExperimentalCommonIcon;
+        StarIcon = tmp2(11174).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11141).ExperimentalRareIcon;
+        StarIcon = tmp2(11176).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11143).ExperimentalEpicIcon;
+        StarIcon = tmp2(11178).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11145).ExperimentalMythicIcon;
+        StarIcon = tmp2(11180).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp2(9951).StarIcon;
+        StarIcon = tmp2(9983).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(7235).Badge;
+      const Badge2 = tmp2(7269).Badge;
       if ("premium" === variant) {
-        StarIcon2 = tmp2(8566).LockIcon;
+        StarIcon2 = tmp2(8603).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon2 = tmp2(9462).TagIcon;
+        StarIcon2 = tmp2(9494).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11139).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11174).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11141).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11176).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11143).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11178).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11145).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11180).ExperimentalMythicIcon;
       } else {
-        StarIcon2 = tmp2(9951).StarIcon;
+        StarIcon2 = tmp2(9983).StarIcon;
       }
       items1[4] = metroImportDefault(Badge2, obj8);
       items[1] = metroImportAll(tmp5, obj3);
@@ -421,9 +421,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
   }
   if (cResult[4] !== tmp10) {
     let obj2 = { children: closure_8(Stack, obj3) };
-    const Card = tmp(6907).Card;
+    const Card = tmp(6941).Card;
     obj3 = { spacing: nativeDefault.space.PX_16, children: items };
-    Stack = tmp(5978).Stack;
+    Stack = tmp(6013).Stack;
     items = [tmp5, tmp6, tmp10];
     const tmp17 = closure_7(Card, obj2);
     cResult[4] = tmp10;
@@ -466,37 +466,37 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Varian
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("premium" === variant) {
-        StarIcon = tmp2(8566).LockIcon;
+        StarIcon = tmp2(8603).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon = tmp2(9462).TagIcon;
+        StarIcon = tmp2(9494).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11139).ExperimentalCommonIcon;
+        StarIcon = tmp2(11174).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11141).ExperimentalRareIcon;
+        StarIcon = tmp2(11176).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11143).ExperimentalEpicIcon;
+        StarIcon = tmp2(11178).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11145).ExperimentalMythicIcon;
+        StarIcon = tmp2(11180).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp2(9951).StarIcon;
+        StarIcon = tmp2(9983).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(7235).Badge;
+      const Badge2 = tmp2(7269).Badge;
       if ("premium" === variant) {
-        StarIcon2 = tmp2(8566).LockIcon;
+        StarIcon2 = tmp2(8603).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon2 = tmp2(9462).TagIcon;
+        StarIcon2 = tmp2(9494).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11139).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11174).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11141).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11176).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11143).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11178).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11145).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11180).ExperimentalMythicIcon;
       } else {
-        StarIcon2 = tmp2(9951).StarIcon;
+        StarIcon2 = tmp2(9983).StarIcon;
       }
       items1[4] = metroImportDefault(Badge2, obj8);
       items[1] = metroImportAll(tmp5, obj3);
@@ -554,7 +554,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { type: obj6, variant: "primary", icon: StarIcon3.StarIcon };
     obj6 = { text };
-    const Badge = tmp(7235).Badge;
+    const Badge = tmp(7269).Badge;
     const tmp21 = metroImportDefault(Badge, obj5);
     cResult[5] = tmp21;
     tmp18 = tmp21;
@@ -573,7 +573,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { type: obj9, variant: "rarity-epic", icon: ExperimentalEpicIcon.ExperimentalEpicIcon };
     obj9 = { text };
-    const Badge2 = tmp(7235).Badge;
+    const Badge2 = tmp(7269).Badge;
     const tmp29 = metroImportDefault(Badge2, obj8);
     cResult[8] = tmp29;
     tmp26 = tmp29;
@@ -599,9 +599,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Trunca
     }
   }
   const obj11 = { children: metroImportAll(Stack, obj12) };
-  const Card = tmp(6907).Card;
+  const Card = tmp(6941).Card;
   obj12 = { spacing: nativeDefault.space.PX_12, children: items };
-  Stack = tmp(5978).Stack;
+  Stack = tmp(6013).Stack;
   items = [tmp5, tmp6, tmp14, tmp22, tmp30];
   const tmp35 = metroImportDefault(Card, obj11);
   cResult[11] = tmp14;
@@ -672,7 +672,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compar
           }
         }
         const obj2 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_12, children: items };
-        const Stack = tmp(5978).Stack;
+        const Stack = tmp(6013).Stack;
         items = [tmp5, tmp7, tmp11];
         const tmp18 = metroImportAll(Stack, obj2);
         cResult[9] = tmp5;
@@ -854,9 +854,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Legacy
       }
       if (cResult[20] !== tmp28) {
         const obj11 = { children: metroImportAll(Stack2, obj12) };
-        const Card = tmp(6907).Card;
+        const Card = tmp(6941).Card;
         obj12 = { spacing: nativeDefault.space.PX_12, children: items };
-        Stack2 = tmp(5978).Stack;
+        Stack2 = tmp(6013).Stack;
         items = [tmp5, tmp6, tmp28, tmp33, tmp37, tmp41, tmp45, tmp49];
         const tmp57 = metroImportDefault(Card, obj11);
         cResult[20] = tmp28;
@@ -869,7 +869,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Legacy
     }
   }
   const obj13 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_12, children: items1 };
-  const Stack = tmp(5978).Stack;
+  const Stack = tmp(6013).Stack;
   items1 = [tmp10, tmp17, tmp24];
   const tmp29 = metroImportAll(Stack, obj13);
   cResult[10] = tmp10;
@@ -940,7 +940,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Layout
       return tmp10;
     }
     const obj3 = { spacing: nativeDefault.space.PX_4, children: items };
-    const Stack = tmp(5978).Stack;
+    const Stack = tmp(6013).Stack;
     items = [tmp5, tmp8];
     const tmp13 = metroImportAll(Stack, obj3);
     cResult[5] = tmp5;
@@ -1250,9 +1250,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Parent
                   }
                 }
                 const obj15 = { children: metroImportAll(Stack, obj16) };
-                const Card = tmp(6907).Card;
+                const Card = tmp(6941).Card;
                 obj16 = { spacing: nativeDefault.space.PX_12, children: items4 };
-                Stack = tmp(5978).Stack;
+                Stack = tmp(6013).Stack;
                 items4 = [tmp5, tmp6, tmp32, tmp59, tmp66, tmp81, tmp104];
                 const tmp112 = metroImportDefault(Card, obj15);
                 cResult[53] = tmp59;
@@ -1388,7 +1388,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { spacing: nativeDefault.space.PX_24, children: items };
-    const Stack = tmp(5978).Stack;
+    const Stack = tmp(6013).Stack;
     items = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", color: "text-subtle", children: "Badges label feature status, like New or Beta. They are not for counts or notifications." }), metroImportDefault(closure_13, {}), metroImportDefault(closure_14, {}), metroImportDefault(closure_15, {}), metroImportDefault(closure_17, {}), metroImportDefault(closure_19, {})];
     const tmp14 = metroImportAll(Stack, obj2);
     cResult[0] = tmp14;

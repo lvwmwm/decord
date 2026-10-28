@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 375, height: 152, scales: [2, 3], hash: "bd0899bbe9025729a8e812d462104779", name: "img_bundle_subheader_mobile", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f8d879d772069d05fdb56edf802c6c07", name: "CameraIcon", type: "png" });

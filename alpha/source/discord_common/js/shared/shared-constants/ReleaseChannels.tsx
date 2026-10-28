@@ -1,9 +1,9 @@
-// Module ID: 6471
-// Function ID: 6472
+// Module ID: 6505
+// Function ID: 6506
 // Name: ReleaseChannels
 // Dependencies: [2]
 
-// Module 6471 (ReleaseChannels)
+// Module 6505 (ReleaseChannels)
 import size from "module_2" /* 2 */;
 
 const obj = { WEB_AND_IOS: new Set(["canary", "ptb", "stable"]), ANDROID: new Set(["betaRelease", "canaryRelease", "googleRelease"]), QUEST_VR: new Set(["questBetaRelease", "questCanaryRelease", "questProductionRelease"]), OTHER: new Set(["N/A", "adhoc", "development", "staging"]), ALL: new Set(["N/A", "adhoc", "betaRelease", "canary", "canaryRelease", "development", "googleRelease", "ptb", "questBetaRelease", "questCanaryRelease", "questProductionRelease", "stable", "staging"]) };

@@ -1,22 +1,23 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 14054
+// Function ID: 14055
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 4972, 587, 1630, 1893, 5211, 8933, 1999, 1125, 6935, 9701, 1381, 6926, 6910, 5235, 2]
+// Dependencies: [32, 19, 17, 21, 5004, 587, 1630, 5013, 1893, 5246, 8967, 1999, 1125, 6969, 9733, 1381, 6960, 6944, 5270, 2]
 
-// Module 13836 (MessageRemindersCustomDurationModal)
+// Module 14054 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import Pressables from "Pressables" /* 6910 */;
-import HeaderShared from "HeaderShared" /* 9701 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import Pressables from "Pressables" /* 6944 */;
+import HeaderShared from "HeaderShared" /* 9733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -36,6 +37,7 @@ obj4 = { paddingRight: nativeDefault.space.PX_16 };
 obj5 = { paddingHorizontal: 16, paddingVertical: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
 let closure_9 = createStyles(obj);
 const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onClose) {
+  let closure_7;
   let first;
   let getError;
   let intl;
@@ -46,15 +48,28 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
   let items2;
   let items3;
   let num;
-  let onSubmit;
   let tmp11Result;
   onClose = onClose.onClose;
   const createReminder = onClose.createReminder;
   const title = onClose.title;
   ({ minimumDate: dependencyMap, maximumDate: _slicedToArray, getError } = onClose);
   first = undefined;
-  onSubmit = undefined;
+  closure_7 = undefined;
   let onPress;
+  function handleSubmitDueDate(arg0) {
+    closure_7(arg0);
+    let tmp2;
+    if (getError != null) {
+      tmp2 = getError(arg0);
+    }
+    if (tmp2 == null) {
+      tmp2 = null;
+    }
+    if (null != tmp2) {
+      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(tmp2);
+    }
+  }
   function handleOpenDatePicker(date) {
     let startOfResult;
     let toDateResult;
@@ -62,11 +77,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(8933, dependencyMap.paths);
+    const tmp4 = asyncRequire(8967, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;
-    const obj2 = { title: string("date" === date ? t.pSZKvM : t.GOmEb8), startDate: first.toDate(), minimumDate: startOfResult.toDate(), maximumDate: toDateResult, mode: date, onSubmit };
+    const obj2 = { title: string("date" === date ? t.pSZKvM : t.GOmEb8), startDate: first.toDate(), minimumDate: startOfResult.toDate(), maximumDate: toDateResult, mode: date, onSubmit: handleSubmitDueDate };
     if ("date" === date) {
       const cloneResult = dependencyMap.clone();
       startOfResult = cloneResult.startOf("day");
@@ -85,11 +100,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     openLazy(tmp4, "DatePicker", obj2);
   }
   const defaultValue = onClose.defaultValue;
-  const tmp = onPress();
-  const tmp2 = createReminder;
-  let obj = first;
+  const tmp = handleSubmitDueDate();
+  let tmp2 = createReminder;
+  let obj = getError;
   const top = createReminder(1630)().top;
-  [first, onSubmit] = first.useState(defaultValue);
+  [first, closure_7] = getError.useState(defaultValue);
   let error;
   if (getError != null) {
     error = getError(first);
@@ -132,21 +147,21 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       return metroImportDefault(PressableOpacity, obj);
     }
   };
-  const Header = onClose(6935).Header;
+  const Header = onClose(6969).Header;
   num = 0;
   const obj5 = onClose(1381);
   if (!obj5.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  tmp11Result = onClose(6926);
-  items1 = [error(Header, obj3), ];
+  tmp11Result = onClose(6960);
+  items1 = [closure_7(Header, obj3), ];
   const obj6 = { style: tmp.container, children: items3 };
   const obj7 = { children: items2 };
   const obj8 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl.string(onClose(1125).t.pSZKvM) };
-  let Text = tmp11(5235).Text;
+  let Text = tmp11(5270).Text;
   intl = tmp11(1125).intl;
-  items2 = [error(Text, obj8), ];
+  items2 = [closure_7(Text, obj8), ];
   const obj9 = {
     accessibilityRole: "button",
     accessibilityLabel: intl2.string(onClose(1125).t.pSZKvM),
@@ -155,16 +170,16 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("date");
     },
     style: tmp.inputContainer,
-    children: error(onClose(5235).Text, { variant: "text-md/medium", children: formatResult })
+    children: closure_7(onClose(5270).Text, { variant: "text-md/medium", children: formatResult })
   };
-  let PressableOpacity = tmp11(6910).PressableOpacity;
+  let PressableOpacity = tmp11(6944).PressableOpacity;
   intl2 = tmp11(1125).intl;
-  items2[1] = error(PressableOpacity, obj9);
-  items3 = [handleOpenDatePicker(onSubmit, obj7), ];
+  items2[1] = closure_7(PressableOpacity, obj9);
+  items3 = [error(first, obj7), ];
   const obj10 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(onClose(1125).t.GOmEb8) };
-  const Text2 = tmp11(5235).Text;
+  const Text2 = tmp11(5270).Text;
   intl3 = tmp11(1125).intl;
-  const items4 = [error(Text2, obj10), , ];
+  const items4 = [closure_7(Text2, obj10), , ];
   const obj11 = {
     accessibilityRole: "button",
     accessibilityLabel: intl4.string(onClose(1125).t.GOmEb8),
@@ -173,20 +188,20 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("time");
     },
     style: tmp.inputContainer,
-    children: error(onClose(5235).Text, { variant: "text-md/medium", children: formatResult1 })
+    children: closure_7(onClose(5270).Text, { variant: "text-md/medium", children: formatResult1 })
   };
-  const PressableOpacity2 = tmp11(6910).PressableOpacity;
+  const PressableOpacity2 = tmp11(6944).PressableOpacity;
   intl4 = tmp11(1125).intl;
-  items4[1] = error(PressableOpacity2, obj11);
+  items4[1] = closure_7(PressableOpacity2, obj11);
   let tmp10Result = null != error;
   if (tmp10Result) {
     const obj12 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5235).Text, obj12);
+    tmp10Result = tmp10(tmp11(5270).Text, obj12);
   }
   items4[2] = tmp10Result;
-  items3[1] = handleOpenDatePicker(onSubmit, { children: items4 });
-  items1[1] = handleOpenDatePicker(onSubmit, obj6);
-  return handleOpenDatePicker(onSubmit, obj2);
+  items3[1] = error(first, { children: items4 });
+  items1[1] = error(first, obj6);
+  return error(first, obj2);
 });
 let result = size.fileFinishedImporting("modules/saved_messages/message_reminders/native/MessageRemindersCustomDurationModal.tsx");
 

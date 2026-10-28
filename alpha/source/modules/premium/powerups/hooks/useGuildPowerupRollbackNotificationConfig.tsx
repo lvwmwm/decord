@@ -1,15 +1,15 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13656
+// Function ID: 13657
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5182, 13438, 4808, 1125, 2567, 558, 576, 504, 5186, 13439, 2]
+// Dependencies: [5217, 13657, 4840, 1125, 2567, 558, 576, 504, 5221, 13658, 2]
 // Exports: getGuildThemeRollbackNotificationConfig
 
-// Module 13437 (useGuildPowerupRollbackNotificationConfig)
+// Module 13656 (useGuildPowerupRollbackNotificationConfig)
 import intl3 from "intl" /* 1125 */;
 import _modDef2567 from "module_2567" /* 2567 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13438 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5182 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13657 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5217 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   let tmp8;
   if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 5186).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp8 = stateFromStores.allPowerups[tmp(undefined, 5221).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmpResult2 = require("guildTheme");
   const shouldShowGuildThemeRollback = tmpResult2.useShouldShowGuildThemeRollback(arg0, arg1);

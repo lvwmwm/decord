@@ -1,34 +1,34 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 11434
+// Function ID: 11435
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9652, 2042, 6773, 7831, 502, 4824, 4846, 4904, 1389, 5631, 4823, 2023, 1084, 1372, 4821, 7810, 11398, 10205, 10770, 11399, 11400, 11404, 11405, 584, 10733, 10775, 11406, 10780, 6376, 6019, 2028, 5627, 8882, 11407, 1997, 11408, 11410, 10200, 1264, 11411, 11419, 6663, 11420, 5909, 1125, 5630, 11421, 1272, 6677, 4893, 6781, 5711, 1294, 8866, 7567, 7413, 7756, 4809, 4808, 2]
+// Dependencies: [32, 5, 9684, 2042, 6807, 7865, 502, 4856, 4878, 4936, 1389, 5666, 4855, 2023, 1084, 1372, 4853, 7844, 11435, 10237, 10804, 11436, 11437, 11441, 11442, 584, 10767, 10809, 11443, 10814, 6410, 6053, 2028, 5662, 8916, 11444, 1997, 11445, 11447, 10232, 1264, 11448, 11456, 6697, 11457, 5944, 1125, 5665, 11458, 1272, 6711, 4925, 6815, 5746, 1294, 8900, 7601, 7448, 7790, 4841, 4840, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11397 (EmbeddedActivitiesActionCreators)
+// Module 11434 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import ApplicationConstants from "ApplicationConstants" /* 1372 */;
 import Constants2 from "Constants" /* 2023 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4809 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4893 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6781 */;
-import Constants3 from "Constants" /* 7810 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9652 */;
-import createProxyTicket2 from "createProxyTicket" /* 10733 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6815 */;
+import Constants3 from "Constants" /* 7844 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9684 */;
+import createProxyTicket2 from "createProxyTicket" /* 10767 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7831 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7865 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5711);
+const ChannelRTCActionCreatorsDefault = tmp2(5746);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -1081,7 +1081,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6781).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6815).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;

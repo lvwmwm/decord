@@ -1,22 +1,22 @@
-// Module ID: 18745
-// Function ID: 18746
+// Module ID: 18996
+// Function ID: 18997
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4824, 4875, 21, 4972, 558, 576, 573, 12092, 18192, 11290, 1125, 5235, 2]
+// Dependencies: [19, 17, 4856, 4907, 21, 5004, 558, 576, 573, 12130, 18431, 11327, 1125, 5270, 2]
 
-// Module 18745 (LaunchPadMembers)
+// Module 18996 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11290 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12092 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18192 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11327 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12130 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 18431 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import createStyles from "createStyles" /* 4972 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      return { channelId: "unicodeVersion", type: false };
+      return { channelId: "ix", type: null };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    return { channelId: "unicodeVersion", type: false };
+    return { channelId: "ix", type: null };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -218,7 +218,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     intl = tmp2(1125).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }

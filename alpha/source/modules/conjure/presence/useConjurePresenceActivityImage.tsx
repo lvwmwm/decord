@@ -1,13 +1,13 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14537
+// Function ID: 14538
 // Name: useConjurePresenceActivityImage
-// Dependencies: [558, 4979, 5206, 14315, 2]
+// Dependencies: [558, 5011, 5241, 14538, 2]
 // Exports: default
 
-// Module 14314 (useConjurePresenceActivityImage)
-import shared from "shared" /* 4979 */;
-import useThemeDefault from "useTheme" /* 5206 */;
-import conjurePresenceActivityImageDefault from "conjurePresenceActivityImage" /* 14315 */;
+// Module 14537 (useConjurePresenceActivityImage)
+import shared from "shared" /* 5011 */;
+import useThemeDefault from "useTheme" /* 5241 */;
+import conjurePresenceActivityImageDefault from "conjurePresenceActivityImage" /* 14538 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16290
+// Function ID: 16291
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 558, 576, 1502, 6662, 5911, 5663, 1125, 3091, 5915, 5915, 2]
+// Dependencies: [5, 21, 558, 576, 1502, 6696, 5946, 5698, 1125, 3091, 5950, 5950, 2]
 
-// Module 16062 (SettingsAgeGroupResetAlert)
+// Module 16290 (SettingsAgeGroupResetAlert)
 import _modDef3091 from "module_3091" /* 3091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[5] !== tmp5) {
     let obj3 = { variant: "destructive", onPress: tmp5, text: tmp12 };
-    const tmp17 = closure_4(tmp(5915).AlertActionButton, obj3, "confirm");
+    const tmp17 = closure_4(tmp(5950).AlertActionButton, obj3, "confirm");
     cResult[5] = tmp5;
     cResult[6] = tmp17;
     tmp15 = tmp17;
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { variant: "secondary", text: intl4.string(tmp(1125).t["ETE/oC"]) };
-    const AlertActionButton = tmp(5915).AlertActionButton;
+    const AlertActionButton = tmp(5950).AlertActionButton;
     intl4 = tmp(1125).intl;
     const tmp20 = closure_4(AlertActionButton, obj4, "cancel");
     cResult[7] = tmp20;
@@ -156,8 +156,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     tmp18 = cResult[7];
   }
   if (cResult[8] !== tmp15) {
-    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5915).AlertActions, obj6) };
-    const AlertModal = tmp(5915).AlertModal;
+    let obj5 = { title: tmp7, content: tmp8, actions: closure_5(tmp(5950).AlertActions, obj6) };
+    const AlertModal = tmp(5950).AlertModal;
     obj6 = { children: items };
     items = [tmp15, tmp18];
     const tmp24 = closure_4(AlertModal, obj5);

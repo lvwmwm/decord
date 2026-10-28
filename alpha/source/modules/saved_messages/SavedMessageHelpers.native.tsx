@@ -1,18 +1,19 @@
-// Module ID: 13827
-// Function ID: 13828
+// Module ID: 14045
+// Function ID: 14046
 // Name: SavedMessageHelpers
-// Dependencies: [5, 1084, 13828, 13824, 5909, 1125, 13818, 10080, 5664, 5692, 13829, 2]
+// Dependencies: [5, 10111, 1084, 14046, 14042, 5944, 1125, 14036, 10112, 5699, 5727, 14047, 5013, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 13827 (SavedMessageHelpers)
+// Module 14045 (SavedMessageHelpers)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 13828 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10111 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 14046 */;
 import size from "module_2" /* 2 */;
 
 let text;
 
-let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
 let obj = function _addOrUpdateSavedMessage() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -36,11 +37,10 @@ let obj = function _addOrUpdateSavedMessage() {
         }
       } else {
         try {
-          let closure_2;
           let tmp;
           let BookmarkIcon;
           c4 = 2;
-          if (0 === c3) {
+          if (0 === text) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -49,17 +49,16 @@ let obj = function _addOrUpdateSavedMessage() {
               let obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_2 = tmp4;
               displayToast = undefined;
               displayToast = displayToast.displayToast;
               tmp = Object.assign(displayToast, Object.assign({ displayToast: 0 }));
-              text = undefined;
+              closure_2 = undefined;
               BookmarkIcon = undefined;
-              c3 = 1;
+              text = 1;
               c4 = 1;
               return { value: "Reflect", done: true };
             }
-          } else if (1 === c3) {
+          } else if (1 === text) {
             if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -67,10 +66,11 @@ let obj = function _addOrUpdateSavedMessage() {
               c4 = 3;
               return { value, done: true };
             } else {
-              c3 = 2;
+              closure_2 = closure_130_4.isMessageReminder(tmp.channelId, tmp.messageId);
+              text = 2;
               c4 = 1;
-              const obj4 = closure_130_0(closure_130_2[3]);
-              const obj7 = {
+              const obj9 = closure_130_0(closure_130_2[4]);
+              const obj6 = {
                 value: upsertSavedMessageResult.catch((error) => {
                           let closure_0;
                           let formatToPlainString;
@@ -89,33 +89,33 @@ let obj = function _addOrUpdateSavedMessage() {
                           if (code === constants.TOO_MANY_SAVED_MESSAGES) {
                             closure_0 = tmp6;
                             const obj2 = {
-                              title: intl2.string(closure_0(closure_2[5]).t.mlbiZW),
+                              title: intl2.string(closure_0(closure_2[6]).t.mlbiZW),
                               body: formatToPlainString(null != closure_1_1.dueAt ? t.Anr1Dg : t["1zVbEG"], obj3),
-                              confirmText: intl4.string(closure_0(closure_2[5]).t.BddRzS),
-                              cancelText: intl5.string(closure_0(closure_2[5]).t.ZGbTcy),
+                              confirmText: intl4.string(closure_0(closure_2[6]).t.BddRzS),
+                              cancelText: intl5.string(closure_0(closure_2[6]).t.ZGbTcy),
                               onCancel() {
-                                  const showForLaterModal = closure_2_0(closure_2_2[6]).showForLaterModal;
-                                  closure_2_0(closure_2_2[6]);
-                                  const SavedMessageSortTypes = closure_2_0(closure_2_2[7]).SavedMessageSortTypes;
+                                  const showForLaterModal = closure_2_0(closure_2_2[7]).showForLaterModal;
+                                  closure_2_0(closure_2_2[7]);
+                                  const SavedMessageSortTypes = closure_2_0(closure_2_2[8]).SavedMessageSortTypes;
                                   return showForLaterModal(closure_0 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
                                 },
                               isDismissable: false
                             };
-                            const show = closure_1(closure_2[4]).show;
-                            closure_1(closure_2[4]);
-                            intl2 = closure_0(closure_2[5]).intl;
-                            const intl3 = closure_0(closure_2[5]).intl;
+                            const show = closure_1(closure_2[5]).show;
+                            closure_1(closure_2[5]);
+                            intl2 = closure_0(closure_2[6]).intl;
+                            const intl3 = closure_0(closure_2[6]).intl;
                             formatToPlainString = intl3.formatToPlainString;
-                            t = closure_0(closure_2[5]).t;
-                            obj3 = { max: null != closure_1_1.dueAt ? closure_2_6 : closure_2_5 };
-                            intl4 = tmp10(tmp8[5]).intl;
-                            intl5 = tmp10(tmp8[5]).intl;
+                            t = closure_0(closure_2[6]).t;
+                            obj3 = { max: null != closure_1_1.dueAt ? closure_2_7 : closure_2_6 };
+                            intl4 = tmp10(tmp8[6]).intl;
+                            intl5 = tmp10(tmp8[6]).intl;
                             show(obj2);
                             return null;
                           } else {
                             let message;
-                            const open = closure_1(closure_2[8]).open;
-                            closure_1(closure_2[8]);
+                            const open = closure_1(closure_2[9]).open;
+                            closure_1(closure_2[9]);
                             if (error != null) {
                               const body2 = error.body;
                               if (body2 != null) {
@@ -123,8 +123,8 @@ let obj = function _addOrUpdateSavedMessage() {
                               }
                             }
                             if (message == null) {
-                              const intl = closure_0(tmp13[5]).intl;
-                              message = intl.string(closure_0(tmp13[5]).t.R0RpRX);
+                              const intl = closure_0(tmp13[6]).intl;
+                              message = intl.string(closure_0(tmp13[6]).t.R0RpRX);
                             }
                             obj = { text: message, variant: "critical" };
                             open("SAVED_MESSAGE_CREATE_ERROR", obj);
@@ -133,8 +133,8 @@ let obj = function _addOrUpdateSavedMessage() {
                         }),
                 done: false
               };
-              upsertSavedMessageResult = obj4.upsertSavedMessage(tmp);
-              return obj7;
+              upsertSavedMessageResult = obj9.upsertSavedMessage(tmp);
+              return obj6;
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -144,37 +144,47 @@ let obj = function _addOrUpdateSavedMessage() {
             return { value, done: true };
           } else {
             if (null != value) {
-              const tmp46 = displayToast;
-              if (tmp46) {
-                let stringResult;
-                if (null != tmp.dueAt) {
-                  const tmp13 = closure_130_0;
-                  let intl2 = closure_130_0(closure_130_2[5]).intl;
-                  stringResult = intl2.string(closure_130_0(closure_130_2[5]).t.i1IsOy);
+              let stringResult;
+              if (null != tmp.dueAt) {
+                let i1IsOy;
+                const tmp13 = closure_130_0;
+                let intl2 = closure_130_0(closure_130_2[6]).intl;
+                const string = intl2.string;
+                let t = closure_130_0(closure_130_2[6]).t;
+                if (closure_2) {
+                  i1IsOy = t.lapk3f;
                 } else {
-                  const tmp6 = closure_2;
-                  const tmp8 = closure_130_2;
-                  let intl = closure_130_0(closure_130_2[5]).intl;
-                  const tmp10 = closure_130_2;
-                  stringResult = intl.string(closure_130_0(closure_130_2[5]).t.DQjes4);
+                  i1IsOy = t.i1IsOy;
                 }
-                text = stringResult;
+                stringResult = string(i1IsOy);
+              } else {
+                const tmp6 = closure_130_0;
+                let intl = closure_130_0(closure_130_2[6]).intl;
+                const tmp8 = closure_130_0;
+                stringResult = intl.string(closure_130_0(closure_130_2[6]).t.DQjes4);
+              }
+              text = stringResult;
+              const tmp20 = displayToast;
+              if (tmp20) {
                 if (null != tmp.dueAt) {
-                  BookmarkIcon = closure_130_0(closure_130_2[9]).ClockIcon;
+                  BookmarkIcon = closure_130_0(closure_130_2[10]).ClockIcon;
                 } else {
-                  BookmarkIcon = closure_130_0(closure_130_2[10]).BookmarkIcon;
+                  BookmarkIcon = closure_130_0(closure_130_2[11]).BookmarkIcon;
                 }
-                obj = closure_130_1(closure_130_2[8]);
-                const obj9 = { text, icon: BookmarkIcon };
-                obj.open("SAVED_MESSAGE_CREATE_SUCCESS", obj9);
+                obj = closure_130_1(closure_130_2[9]);
+                const obj8 = { text, icon: BookmarkIcon };
+                obj.open("SAVED_MESSAGE_CREATE_SUCCESS", obj8);
+              } else {
+                const AccessibilityAnnouncer = closure_130_0(closure_130_2[12]).AccessibilityAnnouncer;
+                AccessibilityAnnouncer.announce(text, "polite");
               }
             }
             c4 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp40) {
+        } catch (tmp43) {
           c4 = 3;
-          throw tmp40;
+          throw tmp43;
         }
       }
     })();
@@ -235,14 +245,14 @@ obj = function _removeSavedMessage() {
             const obj6 = { value, done: true };
             return obj6;
           } else {
-            const obj4 = closure_130_0(closure_130_2[3]);
+            const obj4 = closure_130_0(closure_130_2[4]);
             text = 2;
             c4 = 1;
             const obj7 = {
               value: deleteSavedMessageResult.catch((error) => {
                         let message;
-                        const open = closure_1_1(closure_1_2[8]).open;
-                        closure_1_1(closure_1_2[8]);
+                        const open = closure_1_1(closure_1_2[9]).open;
+                        closure_1_1(closure_1_2[9]);
                         if (error != null) {
                           const body = error.body;
                           if (body != null) {
@@ -250,8 +260,8 @@ obj = function _removeSavedMessage() {
                           }
                         }
                         if (message == null) {
-                          const intl = closure_1_0(tmp[5]).intl;
-                          message = intl.string(closure_1_0(tmp[5]).t.R0RpRX);
+                          const intl = closure_1_0(tmp[6]).intl;
+                          message = intl.string(closure_1_0(tmp[6]).t.R0RpRX);
                         }
                         open("SAVED_MESSAGE_REMOVE_ERROR", { text: message, variant: "critical" });
                         return null;
@@ -270,44 +280,47 @@ obj = function _removeSavedMessage() {
           return obj8;
         } else {
           if (null != value) {
-            const tmp50 = c0;
-            if (tmp50) {
-              if (null == closure_2.dueAt) {
-                let stringResult;
-                const tmp7 = c1;
-                if (!tmp7) {
-                  let intl = closure_130_0(closure_130_2[5]).intl;
-                  stringResult = intl.string(closure_130_0(closure_130_2[5]).t["5KOMiV"]);
-                }
-                text = stringResult;
+            if (null == closure_2.dueAt) {
+              let stringResult;
+              const tmp6 = c1;
+              if (!tmp6) {
+                let intl = closure_130_0(closure_130_2[6]).intl;
+                stringResult = intl.string(closure_130_0(closure_130_2[6]).t["5KOMiV"]);
+              }
+              text = stringResult;
+              const tmp19 = c0;
+              if (tmp19) {
                 if (null == closure_2.dueAt) {
-                  const tmp22 = c1;
-                  if (!tmp22) {
-                    ClockIcon = closure_130_0(closure_130_2[10]).BookmarkIcon;
+                  const tmp27 = c1;
+                  if (!tmp27) {
+                    ClockIcon = closure_130_0(closure_130_2[11]).BookmarkIcon;
                   }
                   const obj9 = { text, icon: ClockIcon };
-                  obj = closure_130_1(closure_130_2[8]);
+                  obj = closure_130_1(closure_130_2[9]);
                   const openResult = obj.open("SAVED_MESSAGE_REMOVE_SUCCESS", obj9);
                 }
-                ClockIcon = closure_130_0(closure_130_2[9]).ClockIcon;
+                ClockIcon = closure_130_0(closure_130_2[10]).ClockIcon;
+              } else {
+                const AccessibilityAnnouncer = closure_130_0(closure_130_2[12]).AccessibilityAnnouncer;
+                AccessibilityAnnouncer.announce(text, "polite");
               }
-              const intl2 = closure_130_0(closure_130_2[5]).intl;
-              stringResult = intl2.string(closure_130_0(closure_130_2[5]).t.D0tS02);
             }
+            const intl2 = closure_130_0(closure_130_2[6]).intl;
+            stringResult = intl2.string(closure_130_0(closure_130_2[6]).t.D0tS02);
           }
           c4 = 3;
           return { value: "IconComponent", done: null };
         }
-      } catch (tmp44) {
+      } catch (tmp49) {
         c4 = 3;
-        throw tmp44;
+        throw tmp49;
       }
     }
   });
   return obj(...arguments);
 };
 const AbortCodes = Constants.AbortCodes;
-({ SAVED_BOOKMARKS_MAX: hasOwnProperty, SAVED_REMINDERS_MAX: metroRequire } = SavedMessagesConstants);
+({ SAVED_BOOKMARKS_MAX: metroRequire, SAVED_REMINDERS_MAX: metroImportDefault } = SavedMessagesConstants);
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageHelpers.native.tsx");
 
 export const addOrUpdateSavedMessage = function addOrUpdateSavedMessage() {

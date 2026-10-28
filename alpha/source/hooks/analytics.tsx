@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9969
+// Function ID: 9970
 // Name: analytics
 // Dependencies: [19, 558, 1264, 2]
 // Exports: useAnalyticsContext
 
-// Module 9937 (analytics)
+// Module 9969 (analytics)
 import AnalyticsUtils from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

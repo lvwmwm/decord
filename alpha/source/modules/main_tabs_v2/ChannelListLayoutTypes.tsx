@@ -1,9 +1,9 @@
-// Module ID: 5644
-// Function ID: 5645
+// Module ID: 5679
+// Function ID: 5680
 // Name: ChannelListLayoutTypes
 // Dependencies: [2]
 
-// Module 5644 (ChannelListLayoutTypes)
+// Module 5679 (ChannelListLayoutTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/ChannelListLayoutTypes.tsx");

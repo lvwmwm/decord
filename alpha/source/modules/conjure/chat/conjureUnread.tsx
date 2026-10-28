@@ -1,18 +1,18 @@
-// Module ID: 10725
-// Function ID: 10726
+// Module ID: 10759
+// Function ID: 10760
 // Name: conjureUnread
-// Dependencies: [19, 1243, 6772, 6774, 6706, 584, 11, 558, 576, 10726, 504, 2]
+// Dependencies: [19, 1243, 6806, 6808, 6740, 584, 11, 558, 576, 10760, 504, 2]
 // Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread
 
-// Module 10725 (conjureUnread)
+// Module 10759 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 6706 */;
-import conjureProjectMute from "conjureProjectMute" /* 10726 */;
+import ReadStateConstants from "ReadStateConstants" /* 6740 */;
+import conjureProjectMute from "conjureProjectMute" /* 10760 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ReadStateStore from "ReadStateStore" /* 6772 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -477,9 +477,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureUnread.tsx");
 
 export { ackConjureProject };
-export const isConjureProjectUnread = function isConjureProjectUnread(c0) {
-  const mentionCount = ReadStateStore.getMentionCount(c0, ReadStateTypes.CONJURING_PROJECT);
-  const ackMessageIdResult = ReadStateStore.ackMessageId(c0, ReadStateTypes.CONJURING_PROJECT);
+export const isConjureProjectUnread = function isConjureProjectUnread(id) {
+  const mentionCount = ReadStateStore.getMentionCount(id, ReadStateTypes.CONJURING_PROJECT);
+  const ackMessageIdResult = ReadStateStore.ackMessageId(id, ReadStateTypes.CONJURING_PROJECT);
   let tmp3 = mentionCount > 0;
   if (!tmp3) {
     let tmp5 = null != ackMessageIdResult;

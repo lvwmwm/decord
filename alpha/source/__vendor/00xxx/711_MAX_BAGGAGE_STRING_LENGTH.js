@@ -8,11 +8,11 @@
 import _mod699 from "module_699" /* 699 */;
 import _mod703 from "module_703" /* 703 */;
 
-const f86489 = (acc, item) => {
+const f87064 = (acc, item) => {
   let closure_0 = acc;
   const parts = item.split(",");
-  const mapped = parts.map(f86490);
-  const entries = Object.entries(mapped.reduce(f86491, {}));
+  const mapped = parts.map(f87065);
+  const entries = Object.entries(mapped.reduce(f87066, {}));
   item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -21,7 +21,7 @@ const f86489 = (acc, item) => {
   });
   return acc;
 };
-const f86490 = (arr) => {
+const f87065 = (arr) => {
   let items;
   const index = arr.indexOf("=");
   if (-1 === index) {
@@ -38,7 +38,7 @@ const f86490 = (arr) => {
   }
   return items;
 };
-const f86491 = (acc, item) => {
+const f87066 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -48,7 +48,7 @@ const f86491 = (acc, item) => {
   }
   return acc;
 };
-const f86492 = (acc, item, index) => {
+const f87067 = (acc, item, index) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -90,12 +90,12 @@ export const baggageHeaderToDynamicSamplingContext = function baggageHeaderToDyn
       let reduced;
       const _Array2 = Array;
       if (Array.isArray(arr)) {
-        reduced = arr.reduce(f86489, {});
+        reduced = arr.reduce(f87064, {});
       } else {
         const str = ",";
         let parts = arr.split(",");
-        let mapped = parts.map(f86490);
-        reduced = mapped.reduce(f86491, {});
+        let mapped = parts.map(f87065);
+        reduced = mapped.reduce(f87066, {});
       }
       tmp = reduced;
     } else {
@@ -143,7 +143,7 @@ export const dynamicSamplingContextToSentryBaggageHeader = function dynamicSampl
     if (0 !== Object.keys(reduced).length) {
       const _Object3 = Object;
       const entries1 = Object.entries(reduced);
-      reduced1 = entries1.reduce(f86492, "");
+      reduced1 = entries1.reduce(f87067, "");
     }
     return reduced1;
   }
@@ -152,7 +152,7 @@ export const objectToBaggageHeader = function objectToBaggageHeader(arg0) {
   if (0 !== Object.keys(arg0).length) {
     const _Object = Object;
     const entries = Object.entries(arg0);
-    return entries.reduce(f86492, "");
+    return entries.reduce(f87067, "");
   }
 };
 export const parseBaggageHeader = function parseBaggageHeader(arr) {
@@ -165,11 +165,11 @@ export const parseBaggageHeader = function parseBaggageHeader(arr) {
     }
     const _Array2 = Array;
     if (Array.isArray(arr)) {
-      reduced = arr.reduce(f86489, {});
+      reduced = arr.reduce(f87064, {});
     } else {
       const parts = arr.split(",");
-      const mapped = parts.map(f86490);
-      reduced = mapped.reduce(f86491, {});
+      const mapped = parts.map(f87065);
+      reduced = mapped.reduce(f87066, {});
     }
     return reduced;
   }

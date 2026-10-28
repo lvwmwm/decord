@@ -1,9 +1,9 @@
 // Module ID: 15605
 // Function ID: 15606
-// Dependencies: [15591]
+// Dependencies: [15595]
 
 // Module 15605
-import _mod15591 from "module_15591" /* 15591 */;
+import _mod15595 from "module_15595" /* 15595 */;
 
 
-export default (arg0) => Object(_mod15591(arg0));
+export default (arg0, arg1, arg2) => _mod15595(arg0, arg1, arg2) >= 0;

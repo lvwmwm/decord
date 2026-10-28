@@ -1,17 +1,19 @@
 // Module ID: 10392
 // Function ID: 10393
-// Dependencies: [41, 42, 93, 95, 96, 98, 10211, 10231]
+// Dependencies: [41, 42, 93, 95, 98, 10249, 10393, 10276, 10256]
 
 // Module 10392
-import en from "en" /* 10211 */;
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10231 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10249 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10256 */;
+import _mod10393 from "module_10393" /* 10393 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod10276 = tmp2(10276);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -27,91 +29,61 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENTimeExpressionParser {
-  constructor(arg0) {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|pasado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10393.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|pasado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
+class ESWeekdayParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeExpressionParser);
-    const items = [arg0];
-    const obj = _getPrototypeOf(ENTimeExpressionParser);
+    _classCallCheck(this, ESWeekdayParser);
+    const obj = _getPrototypeOf(ESWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items);
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(ESWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "followingPhase",
-  value: function followingPhase() {
-    return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "primaryPrefix",
-    value: function primaryPrefix() {
-      return "(?:(?:alle|dalle)\\s*)??";
-    }
-  },
-  {
-    key: "primarySuffix",
-    value: function primarySuffix() {
-      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      const self = this;
-      const tmp = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-      let closure_1 = tmp;
-      let fn = tmp;
-      if (typeof tmp === "function") {
-        fn = (items) => closure_1.apply(self, items);
-      }
-      const items = [arg0, arg1];
-      const fnResult = fn(items);
-      if (fnResult) {
-        const first = arg1[0];
-        if (first.endsWith("sera")) {
-          const value = fnResult.get("hour");
-          if (value >= 6) {
-            if (value < 12) {
-              fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", en.Meridiem.PM);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      const tmp4 = _mod10393.WEEKDAY_DICTIONARY[formatted];
+      if (undefined === tmp4) {
+        return null;
+      } else {
+        const str2 = arg1[1] || arg1[3] || "";
+        const formatted1 = str2.toLowerCase();
+        let str5 = "this";
+        if ("pasado" != formatted1) {
+          str5 = "next";
+          if ("pr\u00F3ximo" != formatted1) {
+            str5 = "next";
+            if ("proximo" != formatted1) {
+              str5 = null;
+              if ("este" == formatted1) {
+                str5 = "this";
+              }
             }
           }
-          if (value < 6) {
-            fnResult.assign("meridiem", en.Meridiem.AM);
-          }
         }
-        const first1 = arg1[0];
-        if (first1.endsWith("pomeriggio")) {
-          fnResult.assign("meridiem", en.Meridiem.PM);
-          const value2 = fnResult.get("hour");
-          const tmp14 = value2 >= 0 && value2 <= 6;
-          if (tmp14) {
-            fnResult.assign("hour", fnResult.get("hour") + 12);
-          }
-        }
-        const first2 = arg1[0];
-        if (first2.endsWith("mattina")) {
-          fnResult.assign("meridiem", en.Meridiem.AM);
-          if (fnResult.get("hour") < 12) {
-            fnResult.assign("hour", fnResult.get("hour"));
-          }
-        }
+        return _mod10276.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
       }
-      return fnResult;
     }
   }
 ];
 
-export default _createClass(ENTimeExpressionParser, items);
+export default _createClass(ESWeekdayParser, items);

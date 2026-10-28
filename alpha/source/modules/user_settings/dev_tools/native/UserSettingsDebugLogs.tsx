@@ -1,22 +1,22 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 17195
+// Function ID: 17196
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1084, 21, 4972, 587, 7026, 558, 576, 1630, 5664, 510, 7, 5235, 1125, 16966, 5211, 7147, 12517, 16967, 7222, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 5004, 587, 7060, 558, 576, 1630, 5699, 510, 7, 5270, 1125, 17196, 5246, 7181, 12564, 17197, 7256, 2]
 
-// Module 16965 (UserSettingsDebugLogs)
+// Module 17195 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import InputTypes from "InputTypes" /* 7026 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 16966 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import InputTypes from "InputTypes" /* 7060 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -196,9 +196,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           items[2] = str;
           items1 = [metroImportDefault(Text, obj2), ];
           const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-          const Text2 = tmp4(5235).Text;
+          const Text2 = tmp4(5270).Text;
           const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-          const Text3 = tmp4(5235).Text;
+          const Text3 = tmp4(5270).Text;
           items2 = [metroImportAll(Text3, obj4), item.message];
           items1[1] = metroImportDefault(Text2, obj3);
           return metroImportDefault(tmp2, obj, index);
@@ -239,9 +239,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(5235).Text;
+            const Text2 = tmp4(5270).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(5235).Text;
+            const Text3 = tmp4(5270).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -312,9 +312,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(5235).Text;
+            const Text2 = tmp4(5270).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(5235).Text;
+            const Text3 = tmp4(5270).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -379,9 +379,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
               items[2] = str;
               items1 = [metroImportDefault(Text, obj2), ];
               const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-              const Text2 = tmp4(5235).Text;
+              const Text2 = tmp4(5270).Text;
               const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-              const Text3 = tmp4(5235).Text;
+              const Text3 = tmp4(5270).Text;
               items2 = [metroImportAll(Text3, obj4), item.message];
               items1[1] = metroImportDefault(Text2, obj3);
               return metroImportDefault(tmp2, obj, index);
@@ -421,9 +421,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                 items[2] = str;
                 items1 = [metroImportDefault(Text, obj2), ];
                 const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-                const Text2 = tmp4(5235).Text;
+                const Text2 = tmp4(5270).Text;
                 const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-                const Text3 = tmp4(5235).Text;
+                const Text3 = tmp4(5270).Text;
                 items2 = [metroImportAll(Text3, obj4), item.message];
                 items1[1] = metroImportDefault(Text2, obj3);
                 return metroImportDefault(tmp2, obj, index);
@@ -486,9 +486,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(5235).Text;
+            const Text2 = tmp4(5270).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(5235).Text;
+            const Text3 = tmp4(5270).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -529,9 +529,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         items[2] = str;
         items1 = [metroImportDefault(Text, obj2), ];
         const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-        const Text2 = tmp4(5235).Text;
+        const Text2 = tmp4(5270).Text;
         const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-        const Text3 = tmp4(5235).Text;
+        const Text3 = tmp4(5270).Text;
         items2 = [metroImportAll(Text3, obj4), item.message];
         items1[1] = metroImportDefault(Text2, obj3);
         return metroImportDefault(tmp2, obj, index);
@@ -716,9 +716,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
     const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-    const Text2 = tmp4(5235).Text;
+    const Text2 = tmp4(5270).Text;
     const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(5235).Text;
+    const Text3 = tmp4(5270).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

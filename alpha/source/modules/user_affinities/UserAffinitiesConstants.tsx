@@ -1,9 +1,9 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7768
+// Function ID: 7769
 // Name: UserAffinitiesConstants
 // Dependencies: [1101, 2]
 
-// Module 7734 (UserAffinitiesConstants)
+// Module 7768 (UserAffinitiesConstants)
 import DurationsDefault from "Durations" /* 1101 */;
 import size from "module_2" /* 2 */;
 

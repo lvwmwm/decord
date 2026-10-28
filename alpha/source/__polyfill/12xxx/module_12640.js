@@ -1,65 +1,30 @@
 // Module ID: 12640
 // Function ID: 12641
-// Dependencies: [12613, 12617, 12589, 12596]
-// Exports: notifyEventProcessors
+// Dependencies: [12634, 12637]
+// Exports: addGlobalUnhandledRejectionInstrumentationHandler
 
 // Module 12640
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
+import _mod12634 from "module_12634" /* 12634 */;
+import _mod12637 from "module_12637" /* 12637 */;
 
-
-export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let num;
-  const f115675 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
-        }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f149908);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f115675);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
-        }
-      }
+function instrumentUnhandledRejection() {
+  onunhandledrejection = _mod12637.GLOBAL_OBJ.onunhandledrejection;
+  _mod12637.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
+    const obj = _mod12634;
+    obj.triggerHandlers("unhandledrejection", arg0);
+    let applyResult = !onunhandledrejection;
+    if (onunhandledrejection) {
+      applyResult = onunhandledrejection(...arguments);
     }
-    let tmp12 = fn(tmp4);
+    return applyResult;
   };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_12613").SyncPromise(f115675);
-  return syncPromise;
+  _mod12637.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
+}
+let onunhandledrejection = null;
+
+export const addGlobalUnhandledRejectionInstrumentationHandler = function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+  const obj = _mod12634;
+  obj.addHandler("unhandledrejection", arg0);
+  const obj2 = _mod12634;
+  obj2.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
 };

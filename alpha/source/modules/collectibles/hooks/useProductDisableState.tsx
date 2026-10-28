@@ -1,9 +1,9 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 9502
+// Function ID: 9503
 // Name: useProductDisableState
 // Dependencies: [2055, 558, 576, 504, 1087, 1125, 2]
 
-// Module 9470 (useProductDisableState)
+// Module 9502 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1087 */;

@@ -1,23 +1,23 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11467
+// Function ID: 11468
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 4824, 1084, 21, 4972, 587, 558, 576, 11431, 1199, 1125, 5898, 504, 7830, 6646, 5264, 5235, 5245, 2]
+// Dependencies: [109, 19, 17, 4856, 1084, 21, 5004, 587, 558, 576, 11468, 1199, 1125, 5933, 504, 7864, 6680, 5299, 5270, 5280, 2]
 
-// Module 11430 (VideoEmptyState)
+// Module 11467 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import useMountEffectDefault from "useMountEffect" /* 5264 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6646 */;
-import StreamActionCreators from "StreamActionCreators" /* 7830 */;
-import StreamEnded from "StreamEnded" /* 11431 */;
+import useMountEffectDefault from "useMountEffect" /* 5299 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
+import StreamActionCreators from "StreamActionCreators" /* 7864 */;
+import CouchSpotIllustration from "CouchSpotIllustration" /* 11468 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,16 +29,18 @@ let metroImportAll;
 let metroImportDefault;
 let obj3;
 let obj4;
+let obj5;
 let closure_3 = ["type", "style", "avError", "removeSplashImage", "removeCloseButton", "stream"];
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 const VideoEmptyTypes = { NONE: "NONE", STREAM_ENDED: "STREAM_ENDED", STREAM_FAILED: "STREAM_FAILED" };
 let createStyles = createStyles_mod;
-let obj2 = { container: obj3, placeholderImage: { marginBottom: 8, width: "100%", resizeMode: "contain" }, placeholderText: obj4, buttonWrapper: { marginTop: 16, alignSelf: "center" } };
+let obj2 = { container: obj3, placeholderImage: obj4, placeholderText: obj5, buttonWrapper: { marginTop: 16, alignSelf: "center" } };
 obj3 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, padding: 8 };
 createStyles = createStyles.createStyles;
-obj4 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
+obj4 = { marginBottom: nativeDefault.space.PX_8, width: "100%", maxWidth: 288, maxHeight: 162, aspectRatio: 1.7777777777777777, flexShrink: 1, minHeight: 0 };
+obj5 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
 let closure_11 = createStyles(obj2);
 const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmptyState(arg0) {
   let Button;
@@ -132,13 +134,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
         }
       }
       if (null != tmp4) {
-        const tmpResult = tmp(5898);
+        const tmpResult = tmp(5933);
         errorCode = tmpResult.getErrorInfo(tmp4).errorCode;
       } else {
         errorCode = null;
         if (tmp10 === obj.STREAM_FAILED) {
-          const tmpResult3 = tmp(5898);
-          errorCode = tmpResult3.getErrorInfo(tmp(5898).AVError.STREAM_FAILED_TO_START).errorCode;
+          const tmpResult3 = tmp(5933);
+          errorCode = tmpResult3.getErrorInfo(tmp(5933).AVError.STREAM_FAILED_TO_START).errorCode;
         }
       }
       const _Symbol = Symbol;
@@ -193,7 +195,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
               }
             }
             let obj2 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl.formatToPlainString(tmp(1125).t.ejOT95, obj3) };
-            const Text = tmp(5235).Text;
+            const Text = tmp(5270).Text;
             intl = tmp(1125).intl;
             obj3 = { errorCode };
             tmp36 = closure_7(Text, obj2);
@@ -226,7 +228,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
                           stopStream(obj.encodeStreamKey(channelId));
                         }
             };
-            Button = tmp(5245).Button;
+            Button = tmp(5280).Button;
             intl2 = tmp(1125).intl;
             tmp38 = closure_7(tmp34, obj4);
           }
@@ -268,8 +270,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     const tmp = React4;
     const tmp2 = metroImportAll;
     if (!closure_0) {
-      const obj = { style: closure_2.placeholderImage };
-      tmp3 = metroImportDefault(StreamEnded.StreamEnded, obj);
+      const obj = { style: closure_2.placeholderImage, children: metroImportDefault(CouchSpotIllustration.CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      tmp3 = metroImportDefault(View, obj);
     }
     const obj2 = { children: items };
     items = [tmp3, ];
@@ -313,8 +315,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     const tmp8 = closure_9;
     const tmp9 = closure_8;
     if (!removeSplashImage) {
-      let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_7(stream(11431).StreamEnded, obj2);
+      let obj2 = { style: tmp2.placeholderImage, children: closure_7(stream(11468).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      tmp10 = closure_7(View, obj2);
     }
     const obj3 = { children: items };
     items = [tmp10, ];
@@ -332,13 +334,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(5898);
+    const obj6 = stream(5933);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(5898);
-      errorCode = obj5.getErrorInfo(stream(5898).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(5933);
+      errorCode = obj5.getErrorInfo(stream(5933).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -362,18 +364,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
   const merged1 = Object.assign(merged);
   items3 = [tmp2.container, style];
   items4 = [tmp8Result, , ];
-  let tmp28 = null != errorCode;
-  const tmp25 = closure_9;
-  if (tmp28) {
+  let tmp29 = null != errorCode;
+  const tmp26 = closure_9;
+  if (tmp29) {
     const obj9 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1125).t.ejOT95, obj10) };
-    const Text = tmp22(5235).Text;
-    intl3 = tmp22(1125).intl;
+    const Text = tmp23(5270).Text;
+    intl3 = tmp23(1125).intl;
     obj10 = { errorCode };
-    tmp28 = closure_7(Text, obj9);
+    tmp29 = closure_7(Text, obj9);
   }
-  items4[1] = tmp28;
-  let tmp30 = !removeCloseButton;
-  if (tmp30) {
+  items4[1] = tmp29;
+  let tmp31 = !removeCloseButton;
+  if (tmp31) {
     const obj11 = { style: tmp2.buttonWrapper, children: closure_7(Button, obj12) };
     obj12 = {
       variant: "secondary",
@@ -388,12 +390,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp22(5245).Button;
-    intl4 = tmp22(1125).intl;
-    tmp30 = closure_7(tmp26, obj11);
+    Button = tmp23(5280).Button;
+    intl4 = tmp23(1125).intl;
+    tmp31 = closure_7(tmp27, obj11);
   }
-  items4[2] = tmp30;
-  return tmp25(View, obj8);
+  items4[2] = tmp31;
+  return tmp26(View, obj8);
 });
 const result = size.fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
 

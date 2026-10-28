@@ -1,13 +1,13 @@
-// Module ID: 13752
-// Function ID: 13753
+// Module ID: 13970
+// Function ID: 13971
 // Name: NavigationPathUtils
-// Dependencies: [1084, 558, 576, 5014, 2]
+// Dependencies: [1084, 558, 576, 5046, 2]
 // Exports: getSelectedSpecialNavigationPath
 
-// Module 13752 (NavigationPathUtils)
+// Module 13970 (NavigationPathUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import MemoryRouter from "MemoryRouter" /* 5014 */;
+import MemoryRouter from "MemoryRouter" /* 5046 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

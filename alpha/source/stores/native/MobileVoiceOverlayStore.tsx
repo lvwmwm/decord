@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 11618
+// Module ID: 11655
+// Function ID: 11656
 // Name: MobileVoiceOverlayStore
 // Dependencies: [1084, 1264, 1381, 1627, 504, 584, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 11617 (MobileVoiceOverlayStore)
+// Module 11655 (MobileVoiceOverlayStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;

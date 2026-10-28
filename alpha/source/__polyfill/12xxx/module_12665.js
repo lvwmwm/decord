@@ -1,26 +1,23 @@
 // Module ID: 12665
 // Function ID: 12666
-// Dependencies: [12666, 12649, 12645]
+// Dependencies: [12642]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 12665
-import eventFromMessage from "eventFromMessage" /* 12649 */;
-import _mod12666 from "module_12666" /* 12666 */;
-import module_12645 from "module_12645" /* 12645 */;
+import _mod12642 from "module_12642" /* 12642 */;
 
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export const linkedErrorsIntegration = module_12645.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export const getCapturedScopesOnSpan = function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+};
+export const setCapturedScopesOnSpan = function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod12642;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod12642;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = _mod12666;
-      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
-    }
-  };
-});
+};

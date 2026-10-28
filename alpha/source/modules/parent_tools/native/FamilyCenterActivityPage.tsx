@@ -1,21 +1,21 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16430
+// Function ID: 16431
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 8123, 16203, 16205, 16215, 12893, 16219, 7223, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 8157, 16431, 16433, 16443, 12940, 16447, 7257, 2]
 
-// Module 16202 (FamilyCenterActivityPage)
+// Module 16430 (FamilyCenterActivityPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useUserLinks from "useUserLinks" /* 8123 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12893 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16203 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16205 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16215 */;
-import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 16219 */;
+import useUserLinks from "useUserLinks" /* 8157 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12940 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16431 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16433 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16443 */;
+import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 16447 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const common_SafeAreaView = tmp(7223);
+const common_SafeAreaView = tmp(7257);
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(16219), {});
+    tmp3Result = tmp3(tmp7(16447), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

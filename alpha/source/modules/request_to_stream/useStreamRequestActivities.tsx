@@ -1,16 +1,16 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14563
+// Function ID: 14564
 // Name: useStreamRequestActivities
-// Dependencies: [19, 502, 5713, 6499, 1084, 9223, 558, 576, 504, 2]
+// Dependencies: [19, 502, 5748, 6533, 1084, 9256, 558, 576, 504, 2]
 // Exports: getStreamRequestActivities
 
-// Module 14340 (useStreamRequestActivities)
+// Module 14563 (useStreamRequestActivities)
 import Constants from "Constants" /* 1084 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9223 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9256 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5713 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
+import PresenceStore from "PresenceStore" /* 5748 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

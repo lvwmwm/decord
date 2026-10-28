@@ -1,15 +1,15 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16372
+// Function ID: 16373
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7418, 21, 558, 576, 8123, 10460, 7691, 5663, 1125, 2535, 16014, 2]
+// Dependencies: [19, 7453, 21, 558, 576, 8157, 10492, 7725, 5698, 1125, 2535, 16242, 2]
 
-// Module 16144 (FamilyCenterSettingsNotice)
+// Module 16372 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2535 from "module_2535" /* 2535 */;
-import Constants from "Constants" /* 7418 */;
-import LayerActionCreators from "LayerActionCreators" /* 7691 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10460 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16014 */;
+import Constants from "Constants" /* 7453 */;
+import LayerActionCreators from "LayerActionCreators" /* 7725 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10492 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16242 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp = dependencyMap;
   let obj = activeLinkUserIds(576);
   const cResult = obj.c(5);
-  const obj2 = activeLinkUserIds(8123);
+  const obj2 = activeLinkUserIds(8157);
   activeLinkUserIds = obj2.useActiveLinkUserIds();
   if (cResult[0] !== activeLinkUserIds) {
     function handleMessageParentClick() {
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   tmp4 = tmp6;
 }) : (function FamilyCenterSettingsParentalControlsNotice() {
   let activeLinkUserIds;
-  let obj = activeLinkUserIds(8123);
+  let obj = activeLinkUserIds(8157);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   let tmp = SafetySettingsNoticeDefault;
   return <tmp label={_modDef2535.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {

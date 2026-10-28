@@ -1,15 +1,15 @@
-// Module ID: 9938
-// Function ID: 9939
+// Module ID: 9970
+// Function ID: 9971
 // Name: openEmojiActionSheet
-// Dependencies: [1392, 1414, 1893, 5211, 9939, 1999, 2]
+// Dependencies: [1392, 1414, 1893, 5246, 9971, 1999, 2]
 // Exports: openEmojiActionSheet
 
-// Module 9938 (openEmojiActionSheet)
+// Module 9970 (openEmojiActionSheet)
 import EmojiConstants from "EmojiConstants" /* 1392 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -33,7 +33,7 @@ export const openEmojiActionSheet = function openEmojiActionSheet(uniqueName) {
       const result = obj5.dismissGlobalKeyboard();
       const obj6 = ActionSheetActionCreatorsDefault;
       const obj7 = { emojiNode: obj };
-      obj6.openLazy(asyncRequire(9939, dependencyMap.paths), "MessageEmojiActionSheet", obj7, "stack");
+      obj6.openLazy(asyncRequire(9971, dependencyMap.paths), "MessageEmojiActionSheet", obj7, "stack");
     }
     obj = { id: uniqueName.id, alt: name, src: url };
     if (null != uniqueName.id) {

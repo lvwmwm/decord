@@ -1,83 +1,91 @@
 // Module ID: 12653
 // Function ID: 12654
-// Dependencies: [12613, 12646]
-// Exports: makePromiseBuffer
+// Dependencies: []
+// Exports: getSpanStatusFromHttpCode, setHttpStatus
 
 // Module 12653
-import _mod12613 from "module_12613" /* 12613 */;
 
-let diff;
-
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod12613;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
+export const SPAN_STATUS_ERROR = 2;
+export const SPAN_STATUS_OK = 1;
+export const SPAN_STATUS_UNSET = 0;
+export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0) {
+  if (arg0 < 400) {
+    if (arg0 >= 100) {
+      return { code: 1 };
     }
-  };
-  return obj;
-}
+  }
+  if (arg0 >= 400) {
+    if (arg0 < 500) {
+      if (401 === arg0) {
+        return { code: 2, message: "unauthenticated" };
+      } else if (403 === arg0) {
+        return { code: 2, message: "permission_denied" };
+      } else if (404 === arg0) {
+        return { code: 2, message: "not_found" };
+      } else if (409 === arg0) {
+        return { code: 2, message: "already_exists" };
+      } else if (413 === arg0) {
+        return { code: 2, message: "failed_precondition" };
+      } else if (429 === arg0) {
+        return { code: 2, message: "resource_exhausted" };
+      } else {
+        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+      }
+    }
+  }
+  if (arg0 >= 500) {
+    if (arg0 < 600) {
+      if (501 === arg0) {
+        return { code: 2, message: "unimplemented" };
+      } else if (503 === arg0) {
+        return { code: 2, message: "unavailable" };
+      } else {
+        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  return { code: 2, message: "unknown_error" };
+};
+export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
+  let obj;
+  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
+  if (arg1 < 400) {
+    if (arg1 >= 100) {
+      obj = { code: 1 };
+    }
+    if ("unknown_error" !== obj.message) {
+      setAttribute.setStatus(obj);
+    }
+  }
+  if (arg1 >= 400) {
+    if (arg1 < 500) {
+      if (401 === arg1) {
+        obj = { code: 2, message: "unauthenticated" };
+      } else if (403 === arg1) {
+        obj = { code: 2, message: "permission_denied" };
+      } else if (404 === arg1) {
+        obj = { code: 2, message: "not_found" };
+      } else if (409 === arg1) {
+        obj = { code: 2, message: "already_exists" };
+      } else if (413 === arg1) {
+        obj = { code: 2, message: "failed_precondition" };
+      } else if (429 === arg1) {
+        obj = { code: 2, message: "resource_exhausted" };
+      } else {
+        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+      }
+    }
+  }
+  if (arg1 >= 500) {
+    if (arg1 < 600) {
+      if (501 === arg1) {
+        obj = { code: 2, message: "unimplemented" };
+      } else if (503 === arg1) {
+        obj = { code: 2, message: "unavailable" };
+      } else {
+        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  obj = { code: 2, message: "unknown_error" };
+};

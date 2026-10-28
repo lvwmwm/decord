@@ -83,7 +83,7 @@ export default function getSideChannelList() {
     set(key, value) {
       let iter = obj;
       if (!iter) {
-        obj = { next: "rejectWithError" };
+        obj = { next: "paths" };
         iter = obj;
       }
       let iter2 = iter.next;

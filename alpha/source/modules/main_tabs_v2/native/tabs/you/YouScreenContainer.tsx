@@ -1,21 +1,21 @@
-// Module ID: 18276
-// Function ID: 18277
+// Module ID: 18517
+// Function ID: 18518
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11187, 21, 4972, 587, 558, 576, 1630, 17482, 1496, 5154, 18277, 1382, 2]
+// Dependencies: [19, 17, 11222, 21, 5004, 587, 558, 576, 1630, 17717, 1496, 5189, 18518, 1382, 2]
 
-// Module 18276 (YouScreenContainer)
+// Module 18517 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useChatLayoutDefault from "useChatLayout" /* 5154 */;
-import MainTabsConstants from "MainTabsConstants" /* 11187 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17482 */;
-import YouScreenDefault from "YouScreen" /* 18277 */;
+import useChatLayoutDefault from "useChatLayout" /* 5189 */;
+import MainTabsConstants from "MainTabsConstants" /* 11222 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17717 */;
+import YouScreenDefault from "YouScreen" /* 18518 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp16Result = tmp16(View, obj4);
         } else {
           const obj7 = { initialTab };
-          tmp16Result = tmp16(tmp5(18277), obj7);
+          tmp16Result = tmp16(tmp5(18518), obj7);
         }
         cResult[8] = initialTab;
         cResult[9] = tmp4.wrapper;
@@ -160,12 +160,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp6Result = tmp6(tmp8, obj4);
     } else {
       const obj7 = { initialTab };
-      tmp6Result = tmp6(tmp2(18277), obj7);
+      tmp6Result = tmp6(tmp2(18518), obj7);
     }
     tmp6Result2 = tmp6(tmp8, obj3);
   } else {
     const obj8 = { initialTab };
-    tmp6Result2 = tmp6(tmp2(18277), obj8);
+    tmp6Result2 = tmp6(tmp2(18518), obj8);
   }
   return tmp6Result2;
 }));

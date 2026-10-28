@@ -1,20 +1,20 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14530
+// Function ID: 14531
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9652, 1084, 1501, 21, 558, 576, 12030, 10747, 5211, 7287, 12016, 5663, 1383, 8090, 9468, 1125, 587, 5245, 6811, 7413, 5160, 1628, 1264, 2]
+// Dependencies: [5, 32, 19, 9684, 1084, 1501, 21, 558, 576, 12068, 10781, 5246, 7321, 12054, 5698, 1383, 8124, 9500, 1125, 587, 5280, 6845, 7448, 5195, 1628, 1264, 2]
 
-// Module 14307 (AddOrOpenAppButton)
+// Module 14530 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import ToastUtils from "ToastUtils" /* 5663 */;
-import ClipboardUtils from "ClipboardUtils" /* 7287 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9652 */;
-import ApplicationUtils from "ApplicationUtils" /* 10747 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12016 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12030 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import ToastUtils from "ToastUtils" /* 5698 */;
+import ClipboardUtils from "ClipboardUtils" /* 7321 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9684 */;
+import ApplicationUtils from "ApplicationUtils" /* 10781 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12054 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12068 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             let tmp11;
             let obj2 = guildId(1383);
             if (!obj2.isDiscordUrl(customInstallUrl)) {
-              PlusSmallIcon = tmp(8090).LinkExternalSmallIcon;
+              PlusSmallIcon = tmp(8124).LinkExternalSmallIcon;
             }
             const _Symbol = Symbol;
             if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -240,10 +240,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             cResult[15] = tmp5;
             cResult[16] = tmp4;
             cResult[17] = tmp13;
-            cResult[18] = jsx(tmp(5245).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
-            const tmp18 = jsx(tmp(5245).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+            cResult[18] = jsx(tmp(5280).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+            const tmp18 = jsx(tmp(5280).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
           }
-          PlusSmallIcon = tmp(9468).PlusSmallIcon;
+          PlusSmallIcon = tmp(9500).PlusSmallIcon;
         }
       }
     }
@@ -282,7 +282,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
     let tmp6;
     let obj2 = guildId(1383);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(8090).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(8124).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
@@ -303,12 +303,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
         obj2.presentLinkCopied();
       }
     }, items1);
-    const Button = tmp6(5245).Button;
+    const Button = tmp6(5280).Button;
     let intl = tmp6(1125).intl;
     ({ size: "sm", color: guildId(587).colors.WHITE });
     return <Button text={intl.string(tmp6(1125).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(9468).PlusSmallIcon;
+  PlusSmallIcon = application(9500).PlusSmallIcon;
   tmp6 = application;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

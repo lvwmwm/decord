@@ -1,30 +1,30 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 18041
+// Function ID: 18042
 // Name: GuildsBarGuild
-// Dependencies: [19, 4842, 6704, 6816, 4846, 5003, 6702, 17775, 17772, 1084, 21, 4972, 587, 558, 576, 5253, 17784, 17490, 17493, 17805, 504, 6885, 17816, 17817, 5909, 1125, 1264, 17799, 17823, 17776, 17824, 5053, 5248, 5670, 17827, 2]
+// Dependencies: [19, 4874, 6738, 6850, 4878, 5035, 6736, 18012, 18009, 1084, 21, 5004, 587, 558, 576, 5288, 18021, 17725, 17728, 18042, 504, 6919, 18053, 18054, 5944, 1125, 1264, 18036, 18060, 18013, 18061, 5085, 5283, 5705, 18064, 2]
 
-// Module 17804 (GuildsBarGuild)
+// Module 18041 (GuildsBarGuild)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl10 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import spring from "spring" /* 5248 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
-import GuildIcon from "GuildIcon" /* 6885 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17772 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17775 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17776 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17799 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 17824 */;
+import spring from "spring" /* 5283 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
+import GuildIcon from "GuildIcon" /* 6919 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18009 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18012 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18013 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18036 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18061 */;
 import react_mod from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 4842 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6704 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6816 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
-import SortedGuildStore from "SortedGuildStore" /* 6702 */;
+import GuildRecord from "GuildRecord" /* 4874 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SortedGuildStore from "SortedGuildStore" /* 6736 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

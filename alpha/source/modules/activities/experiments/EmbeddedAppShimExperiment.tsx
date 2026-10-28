@@ -1,10 +1,10 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11531
+// Function ID: 11532
 // Name: EmbeddedAppShimExperiment
 // Dependencies: [1452, 558, 2]
 // Exports: getEmbeddedAppShimVersion, useEmbeddedAppShimVersion
 
-// Module 11493 (EmbeddedAppShimExperiment)
+// Module 11531 (EmbeddedAppShimExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,9 +27,9 @@ export const useEmbeddedAppShimVersion = function useEmbeddedAppShimVersion(Base
   }
   return num;
 };
-export const getEmbeddedAppShimVersion = function getEmbeddedAppShimVersion(location) {
+export const getEmbeddedAppShimVersion = function getEmbeddedAppShimVersion(ChannelLongPressActionSheet) {
   let num = 1;
-  const obj = { location };
+  const obj = { location: ChannelLongPressActionSheet };
   if (closure_0.getConfig(obj).enabled) {
     num = 2;
   }

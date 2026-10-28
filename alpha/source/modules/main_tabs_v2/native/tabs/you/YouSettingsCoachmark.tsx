@@ -1,18 +1,18 @@
-// Module ID: 18279
-// Function ID: 18280
+// Module ID: 18520
+// Function ID: 18521
 // Name: YouSettingsCoachmark
-// Dependencies: [109, 558, 576, 18280, 9842, 2]
+// Dependencies: [109, 558, 576, 18521, 9874, 2]
 // Exports: default
 
-// Module 18279 (YouSettingsCoachmark)
+// Module 18520 (YouSettingsCoachmark)
 import react from "react" /* 576 */;
-import useCoachmark from "useCoachmark" /* 9842 */;
+import useCoachmark from "useCoachmark" /* 9874 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useReferralProgramCoachmark = tmp(18280);
+const useReferralProgramCoachmark = tmp(18521);
 let closure_2 = ["buttonRef"];
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouSettingsCoachmark(disabled) {
@@ -67,7 +67,7 @@ export default function YouSettingsCoachmark(buttonRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9842);
+    const tmp8Result = tmp8(9874);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     buttonRef = buttonRef.buttonRef;

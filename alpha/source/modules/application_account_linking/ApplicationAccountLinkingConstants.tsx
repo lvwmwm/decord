@@ -1,9 +1,9 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7291
+// Function ID: 7292
 // Name: ApplicationAccountLinkingConstants
 // Dependencies: [2]
 
-// Module 7257 (ApplicationAccountLinkingConstants)
+// Module 7291 (ApplicationAccountLinkingConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/ApplicationAccountLinkingConstants.tsx");

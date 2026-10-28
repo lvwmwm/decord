@@ -1,16 +1,16 @@
-// Module ID: 18630
-// Function ID: 18631
+// Module ID: 18878
+// Function ID: 18879
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [4823, 6773, 6643, 2011, 5633, 10909, 1385, 558, 576, 504, 2]
+// Dependencies: [4855, 6807, 6677, 2011, 5668, 10944, 1385, 558, 576, 504, 2]
 
-// Module 18630 (useIsVoicePanelParticipantFocusable)
+// Module 18878 (useIsVoicePanelParticipantFocusable)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import participantHasVideo from "participantHasVideo" /* 10909 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
+import participantHasVideo from "participantHasVideo" /* 10944 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
 import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import CallConstants from "CallConstants" /* 5633 */;
+import CallConstants from "CallConstants" /* 5668 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

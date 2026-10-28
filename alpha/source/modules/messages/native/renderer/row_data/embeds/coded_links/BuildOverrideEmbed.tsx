@@ -1,22 +1,22 @@
-// Module ID: 14582
-// Function ID: 14583
+// Module ID: 14805
+// Function ID: 14806
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11031, 7810, 8273, 12727, 14583, 1380, 1125, 8135, 587, 4979, 12765, 12766, 14581, 2]
+// Dependencies: [17, 11066, 7844, 8307, 12774, 14806, 1380, 1125, 8169, 587, 5011, 12812, 12813, 14804, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 14582 (BuildOverrideEmbed)
+// Module 14805 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
 import react_nativeAll from "react-native" /* 1380 */;
-import shared from "shared" /* 4979 */;
-import Constants from "Constants" /* 7810 */;
-import react_native2 from "react-native" /* 8135 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8273 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 11031 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12727 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14581 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 14583 */;
+import shared from "shared" /* 5011 */;
+import Constants from "Constants" /* 7844 */;
+import react_native2 from "react-native" /* 8169 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 11066 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12774 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14804 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 14806 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -142,9 +142,9 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(12765);
+      tmpResult2 = tmp(12812);
     } else {
-      tmpResult2 = tmp(12766);
+      tmpResult2 = tmp(12813);
     }
   }
 };

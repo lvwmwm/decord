@@ -1,27 +1,27 @@
-// Module ID: 8587
-// Function ID: 8588
+// Module ID: 8624
+// Function ID: 8625
 // Name: transformEmbeds
-// Dependencies: [17, 1084, 8588, 8589, 6487, 8590, 1381, 8275, 6000, 1125, 1102, 8462, 4797, 7391, 7397, 6655, 8591, 2]
+// Dependencies: [17, 1084, 8625, 8626, 6521, 8627, 1381, 8309, 6035, 1125, 1102, 8496, 4829, 7426, 7432, 6689, 8628, 2]
 // Exports: default
 
-// Module 8587 (transformEmbeds)
+// Module 8624 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
 import intl6 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DateUtils from "DateUtils" /* 4797 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6000 */;
-import EmbedUtils from "EmbedUtils" /* 6487 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6655 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7391 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7397 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8275 */;
-import MarkupParsers from "MarkupParsers" /* 8462 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8588 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8589 */;
-import utils from "utils" /* 8590 */;
-import NativeChatCapabilities from "NativeChatCapabilities" /* 8591 */;
+import DateUtils from "DateUtils" /* 4829 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
+import EmbedUtils from "EmbedUtils" /* 6521 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7426 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7432 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
+import MarkupParsers from "MarkupParsers" /* 8496 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8625 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8626 */;
+import utils from "utils" /* 8627 */;
+import NativeChatCapabilities from "NativeChatCapabilities" /* 8628 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -191,7 +191,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp50 = url4;
-                              const isWebPlayerVideoUrl = tmp3(6000).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(6035).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp50 = url4;
@@ -248,7 +248,7 @@ export default function transformEmbeds(arg0) {
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8462).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8496).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
@@ -360,14 +360,14 @@ export default function transformEmbeds(arg0) {
                             tmp85 = closure_13(mapped2);
                           }
                           const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(7391).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(7426).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
                           const tmp90 = closure_9;
                           if (!closure_10) {
                             const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(7391).isMediaScanPending;
+                            const isMediaScanPending = tmp3(7426).isMediaScanPending;
                             ObscuredMediaUtils;
                             isMediaScanPendingResult = isMediaScanPending(obj14, tmp90);
                           }
@@ -418,7 +418,7 @@ export default function transformEmbeds(arg0) {
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8462).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8496).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {

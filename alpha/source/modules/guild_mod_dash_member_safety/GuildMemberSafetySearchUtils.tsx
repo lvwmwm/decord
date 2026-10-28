@@ -1,11 +1,11 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7664
+// Function ID: 7665
 // Name: GuildMemberSafetySearchUtils
-// Dependencies: [7631, 2]
+// Dependencies: [7665, 2]
 // Exports: splitQuery
 
-// Module 7630 (GuildMemberSafetySearchUtils)
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7631 */;
+// Module 7664 (GuildMemberSafetySearchUtils)
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");

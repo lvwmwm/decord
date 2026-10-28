@@ -1,10 +1,10 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12026
+// Function ID: 12027
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11989, 9651, 11990, 5635, 558, 576, 6914, 5245, 1125, 5681, 587, 2]
+// Dependencies: [5, 32, 19, 21, 12027, 9683, 12028, 5670, 558, 576, 6948, 5280, 1125, 5716, 587, 2]
 // Exports: useCommandRowSend
 
-// Module 11988 (CommandRowButton)
+// Module 12026 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -38,13 +38,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6914).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6948).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5245).Button;
+    const Button = tmp(5280).Button;
     intl = tmp(1125).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp(5681).SendMessageIcon;
+    const SendMessageIcon = tmp(5716).SendMessageIcon;
     tmp5Result = tmp5(Button, obj2);
   }
   cResult[0] = hasOptions;
@@ -56,13 +56,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6914).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6948).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5245).Button;
+    const Button = tmp4(5280).Button;
     intl = tmp4(1125).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp4(5681).SendMessageIcon;
+    const SendMessageIcon = tmp4(5716).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;

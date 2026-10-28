@@ -1,18 +1,18 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8433
+// Function ID: 8434
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6642, 4824, 4904, 1084, 1125, 2064, 8317, 11, 5997, 8319, 8321, 2]
+// Dependencies: [6676, 4856, 4936, 1084, 1125, 2064, 8351, 11, 6032, 8353, 8355, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8399 (StageRaiseHandSystemMessage)
+// Module 8433 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1125 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8317 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8319 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6642 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(5997).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6032).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(8321)(message));
+  const merged = Object.assign(tmp6(8355)(message));
   return obj3;
 };

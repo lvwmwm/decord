@@ -1,19 +1,19 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15486
+// Function ID: 15487
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 4824, 4902, 4875, 1084, 21, 558, 576, 15246, 8370, 504, 9053, 9050, 1125, 9810, 587, 5712, 5211, 6698, 7957, 10864, 8278, 7217, 7490, 9005, 6697, 2]
+// Dependencies: [19, 4856, 4934, 4907, 1084, 21, 558, 576, 15471, 8404, 504, 9086, 9083, 1125, 9842, 587, 5747, 5246, 6732, 7991, 10899, 8312, 7251, 7525, 9039, 6731, 2]
 
-// Module 15261 (GuildActionSheetTabItems)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6698 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7217 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9053 */;
+// Module 15486 (GuildActionSheetTabItems)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6732 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7251 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9086 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildChannelStore from "GuildChannelStore" /* 4902 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ let map1;
 let metroImportAll;
 let tmp3;
 let unpackModuleId;
-const instant_invite_InstantInviteUtils = tmp3(9050);
+const instant_invite_InstantInviteUtils = tmp3(9083);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsSections: c10, InstantInviteSources: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActionSheetTabItems(guild) {
@@ -45,9 +45,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   let obj = guild(576);
   const cResult = obj.c(32);
   guild = guild.guild;
-  let obj2 = guild(15246);
+  let obj2 = guild(15471);
   const canAccessSettings = obj2.useGuildActionSheetPermissions(guild).canAccessSettings;
-  const total = stateFromStores(8370)(guild.id).total;
+  const total = stateFromStores(8404)(guild.id).total;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildChannelStore];
     cResult[0] = items;
@@ -386,7 +386,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
             let obj4 = {
               variant: "secondary",
               label: null,
-              icon: tmp4(8278),
+              icon: tmp4(8312),
               grow: true,
               onPress() {
                           const obj = ActionSheetActionCreatorsDefault;
@@ -409,7 +409,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
                 }
               }
             }
-            const IconButton = tmp(7957).IconButton;
+            const IconButton = tmp(7991).IconButton;
             cResult[22] = guild.id;
             cResult[23] = closure_12(IconButton, obj4);
             const tmp34 = closure_12(IconButton, obj4);
@@ -477,8 +477,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
             cResult[28] = tmp33;
             cResult[29] = tmp35;
             cResult[30] = tmp23;
-            cResult[31] = closure_13(tmp(6697).ButtonGroup, obj5);
-            const tmp39 = closure_13(tmp(6697).ButtonGroup, obj5);
+            cResult[31] = closure_13(tmp(6731).ButtonGroup, obj5);
+            const tmp39 = closure_13(tmp(6731).ButtonGroup, obj5);
           }
           let tmp36 = canAccessSettings;
           if (tmp36) {
@@ -498,7 +498,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
             const obj6 = {
               variant: "secondary",
               label: intl2.string(tmp(1125).t["3D5yo/"]),
-              icon: stateFromStores(7490),
+              icon: stateFromStores(7525),
               grow: true,
               onPress() {
                           const obj = ActionSheetActionCreatorsDefault;
@@ -559,7 +559,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
           const obj7 = {
             variant: "secondary",
             label: intl.string(tmp(1125).t.VINpSK),
-            icon: stateFromStores(10864),
+            icon: stateFromStores(10899),
             grow: true,
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
@@ -591,8 +591,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       const obj8 = { variant: "secondary", label: tmp14, icon: tmp19, grow: true, onPress: tmp22 };
       cResult[15] = tmp14;
       cResult[16] = tmp22;
-      cResult[17] = closure_12(tmp(7957).IconButton, obj8);
-      const tmp25 = closure_12(tmp(7957).IconButton, obj8);
+      cResult[17] = closure_12(tmp(7991).IconButton, obj8);
+      const tmp25 = closure_12(tmp(7991).IconButton, obj8);
     }
     class G {
       constructor() {
@@ -613,7 +613,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     cResult[8] = G;
     tmp11 = G;
   }
-  const tmpResult2 = tmp(9053);
+  const tmpResult2 = tmp(9086);
   const shouldRenderInviteResult = tmpResult2.shouldRenderInvite(stateFromStores, guild);
   cResult[3] = stateFromStores;
   cResult[4] = guild;
@@ -629,14 +629,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(15246);
+  let obj = guild(15471);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
-  const total = stateFromStores(8370)(guild.id).total;
+  const total = stateFromStores(8404)(guild.id).total;
   let obj2 = guild(504);
   const items = [GuildChannelStore];
   stateFromStores = obj2.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj3 = guild(9053);
+  let obj3 = guild(9086);
   let shouldRenderInviteResult = obj3.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   let closure_2 = react.useCallback(() => {
@@ -652,8 +652,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     }
   }, items1);
   let obj4 = { direction: "horizontal", style: { flexWrap: "wrap" }, children: items2 };
-  const ButtonGroup = guild(6697).ButtonGroup;
-  const IconButton = guild(7957).IconButton;
+  const ButtonGroup = guild(6731).ButtonGroup;
+  const IconButton = guild(7991).IconButton;
   const tmp6 = closure_13;
   if (total > 0) {
     const intl2 = tmp(1125).intl;
@@ -681,13 +681,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
     }
   };
   obj7 = { color: tmp3(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-  BoostGemIcon = tmp(9810).BoostGemIcon;
+  BoostGemIcon = tmp(9842).BoostGemIcon;
   items2 = [tmp7(IconButton, obj6), , , ];
   if (shouldRenderInviteResult) {
     const obj8 = {
       variant: "secondary",
       label: intl3.string(tmp(1125).t.VINpSK),
-      icon: tmp3(10864),
+      icon: tmp3(10899),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -695,7 +695,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
           closure_2();
         }
     };
-    const IconButton2 = tmp(7957).IconButton;
+    const IconButton2 = tmp(7991).IconButton;
     intl3 = tmp(1125).intl;
     shouldRenderInviteResult = tmp7(IconButton2, obj8);
   }
@@ -703,7 +703,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
   const obj9 = {
     variant: "secondary",
     label: intl4.string(tmp(1125).t.HcoRu0),
-    icon: tmp3(8278),
+    icon: tmp3(8312),
     grow: true,
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -712,14 +712,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
       obj2.open(guild.id);
     }
   };
-  const IconButton3 = tmp(7957).IconButton;
+  const IconButton3 = tmp(7991).IconButton;
   intl4 = tmp(1125).intl;
   items2[2] = closure_12(IconButton3, obj9);
   if (canAccessSettings) {
     const obj10 = {
       variant: "secondary",
       label: intl5.string(tmp(1125).t["3D5yo/"]),
-      icon: tmp3(7490),
+      icon: tmp3(7525),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -728,7 +728,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActio
           obj2.open(guild.id);
         }
     };
-    const IconButton4 = tmp(7957).IconButton;
+    const IconButton4 = tmp(7991).IconButton;
     intl5 = tmp(1125).intl;
     canAccessSettings = tmp7(IconButton4, obj10);
   }

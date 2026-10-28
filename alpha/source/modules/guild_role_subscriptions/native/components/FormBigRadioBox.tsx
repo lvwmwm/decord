@@ -1,19 +1,19 @@
-// Module ID: 19324
-// Function ID: 19325
+// Module ID: 19587
+// Function ID: 19588
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5040, 1199, 5235, 9041, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5072, 1199, 5270, 9074, 2]
 
-// Module 19324 (FormBigRadioBox)
+// Module 19587 (FormBigRadioBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import react_native2 from "react-native" /* 5040 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
+import react_native2 from "react-native" /* 5072 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9074 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

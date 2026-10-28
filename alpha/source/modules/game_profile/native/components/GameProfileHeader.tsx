@@ -1,22 +1,22 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9334
+// Function ID: 9335
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9300, 21, 4972, 587, 558, 576, 5053, 9303, 9304, 5670, 5259, 9305, 9307, 5235, 9309, 2]
+// Dependencies: [19, 17, 9332, 21, 5004, 587, 558, 576, 5085, 9335, 9336, 5705, 5294, 9337, 9339, 5270, 9341, 2]
 
-// Module 9302 (GameProfileHeader)
+// Module 9334 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9304 */;
-import GameCoverArtDefault from "GameCoverArt" /* 9305 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9309 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9336 */;
+import GameCoverArtDefault from "GameCoverArt" /* 9337 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9341 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9300 */;
+import GameProfileConstants from "GameProfileConstants" /* 9332 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(9303);
+const SKUUtils = tmp(9335);
 let View = react_native.View;
 ({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -185,7 +185,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj5 = { source: obj6, style: tmp4.artHeroImage };
       obj6 = { uri: tmp9 };
-      tmp13 = metroRequire(tmp8(5670), obj5);
+      tmp13 = metroRequire(tmp8(5705), obj5);
     }
     cResult[7] = tmp9;
     cResult[8] = tmp4.artHeroImage;
@@ -227,7 +227,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const tmp2Result = ReanimatedRexport;
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const name = game.name;
-  const mapped = genres.map(tmp2(9303).getGenreText);
+  const mapped = genres.map(tmp2(9335).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp7 = useGameProfileHeroBackgroundURLDefault(game, 1024);
@@ -248,7 +248,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   if (tmp10) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp7 };
-    tmp10 = metroRequire(tmp6(5670), obj4);
+    tmp10 = metroRequire(tmp6(5705), obj4);
   }
   items2 = [tmp10, ];
   const obj6 = { colors: items3, style: tmp.artHeroGradient };
@@ -263,14 +263,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const obj10 = { style: tmp.titleContainer, children: items6 };
   if (tmp12Result) {
     const obj11 = { rank: l30Rank };
-    tmp12Result = tmp12(tmp6(9307), obj11);
+    tmp12Result = tmp12(tmp6(9339), obj11);
   }
   items6 = [tmp12Result, , ];
   const obj13 = { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: items7, children: name };
   items7 = [, ];
   const obj12 = { style: tmp.titleRow, children: items8 };
   ({ textShadow: arr9[0], title: arr9[1] } = tmp);
-  items8 = [metroRequire(tmp2(5235).Text, obj13), ];
+  items8 = [metroRequire(tmp2(5270).Text, obj13), ];
   let tmp12Result3 = game.id === hasOwnProperty;
   if (tmp12Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -284,7 +284,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     tmp12Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp12Result4 = tmp12(tmp2(5235).Text, obj15);
+      tmp12Result4 = tmp12(tmp2(5270).Text, obj15);
     }
   }
   items6[2] = tmp12Result4;

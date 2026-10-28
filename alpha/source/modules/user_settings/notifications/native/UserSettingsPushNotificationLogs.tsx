@@ -1,19 +1,19 @@
-// Module ID: 16969
-// Function ID: 16970
+// Module ID: 17199
+// Function ID: 17200
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1084, 21, 4972, 587, 7026, 558, 576, 510, 13806, 1630, 7147, 1125, 8851, 13807, 14234, 6910, 5235, 7222, 2]
+// Dependencies: [5, 32, 19, 17, 1084, 21, 5004, 587, 7060, 558, 576, 510, 14024, 1630, 7181, 1125, 8885, 14025, 14458, 6944, 5270, 7256, 2]
 
-// Module 16969 (UserSettingsPushNotificationLogs)
+// Module 17199 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import InputTypes from "InputTypes" /* 7026 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import InputTypes from "InputTypes" /* 7060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class B {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -116,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class B {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class B {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -153,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -164,13 +164,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       }
       let obj3 = { size: "md", placeholder: "Filter (regex)", onChange: tmp8, defaultValue: first1 };
       cResult[9] = first1;
-      cResult[10] = closure_7(tmp(7147).SearchBar, obj3);
-      const tmp22 = closure_7(tmp(7147).SearchBar, obj3);
+      cResult[10] = closure_7(tmp(7181).SearchBar, obj3);
+      const tmp22 = closure_7(tmp(7181).SearchBar, obj3);
     } else {
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -254,7 +254,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       function t12() {
         return closure_0(...arguments);
       }
-      const tmp29 = closure_7(tmp(14234).ShareIcon, {});
+      const tmp29 = closure_7(tmp(14458).ShareIcon, {});
       cResult[11] = stringResult;
       cResult[12] = t12;
       cResult[13] = tmp29;
@@ -265,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -281,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -292,13 +292,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       }
       let obj5 = { style: shareButton, accessibilityLabel: tmp23, onPress: tmp24, children: tmp25 };
       cResult[14] = tmp19.shareButton;
-      cResult[15] = closure_7(tmp(6910).PressableOpacity, obj5);
-      const tmp31 = closure_7(tmp(6910).PressableOpacity, obj5);
+      cResult[15] = closure_7(tmp(6944).PressableOpacity, obj5);
+      const tmp31 = closure_7(tmp(6944).PressableOpacity, obj5);
     } else {
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -312,7 +312,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class B {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F161666 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F162608 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -345,7 +345,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
             let str = "i";
             const self2 = this;
             const regExp = new RegExp(closure_0, "i");
-            closure_1_3(first2.filter(() => { /* body not rendered: F161667 */ }));
+            closure_1_3(first2.filter(() => { /* body not rendered: F162609 */ }));
             const Storage = first1(closure_2[11]).Storage;
             let str2 = "push-notification-logs-query";
             const result = Storage.set("push-notification-logs-query", closure_0);
@@ -507,7 +507,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   let obj = { style: tmp10.wrap, children: items2 };
   let obj2 = { style: tmp10.searchWrap, children: items1 };
   const bottom = first1(1630)().bottom;
-  items1 = [closure_7(defaultValue(7147).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  items1 = [closure_7(defaultValue(7181).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
   let obj3 = {
     style: tmp10.shareButton,
     accessibilityLabel: intl.string(defaultValue(1125).t.leICvh),
@@ -567,9 +567,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         }
       }
     }),
-    children: closure_7(defaultValue(14234).ShareIcon, {})
+    children: closure_7(defaultValue(14458).ShareIcon, {})
   };
-  const PressableOpacity = defaultValue(6910).PressableOpacity;
+  const PressableOpacity = defaultValue(6944).PressableOpacity;
   intl = defaultValue(1125).intl;
   items1[1] = closure_7(PressableOpacity, obj3);
   items2 = [closure_8(View, obj2), ];
@@ -602,7 +602,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     }
   };
   obj5 = { paddingBottom: bottom + first1(587).space.PX_16 };
-  const FlashList = defaultValue(7222).FlashList;
+  const FlashList = defaultValue(7256).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);

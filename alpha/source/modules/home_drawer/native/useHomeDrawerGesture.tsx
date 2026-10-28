@@ -1,26 +1,26 @@
-// Module ID: 17490
-// Function ID: 17491
+// Module ID: 17725
+// Function ID: 17726
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 17485, 17491, 1084, 11208, 558, 576, 5157, 5053, 1503, 1264, 5207, 17486, 5213, 1496, 1630, 5154, 11209, 17492, 5151, 5209, 5298, 7171, 2]
+// Dependencies: [32, 19, 17720, 17726, 1084, 11244, 558, 576, 5192, 5085, 1503, 1264, 5242, 17721, 5248, 1496, 1630, 5189, 11245, 17727, 5186, 5244, 5333, 7205, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useIsHomeDrawerEnabled
 
-// Module 17490 (useHomeDrawerGesture)
+// Module 17725 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1084 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
-import timing from "timing" /* 5207 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5209 */;
-import HapticUtils from "HapticUtils" /* 5213 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11208 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 17485 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17486 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
+import timing from "timing" /* 5242 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5244 */;
+import HapticUtils from "HapticUtils" /* 5248 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11244 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 17720 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 17491 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 17726 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7171 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7205 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set, set2, set3;

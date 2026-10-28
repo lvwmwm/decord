@@ -1,20 +1,20 @@
-// Module ID: 9841
-// Function ID: 9842
+// Module ID: 9873
+// Function ID: 9874
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1389, 4821, 21, 4808, 4972, 587, 558, 576, 9808, 504, 2050, 7497, 1125, 9842, 2]
+// Dependencies: [32, 19, 17, 1389, 4853, 21, 4840, 5004, 587, 558, 576, 9840, 504, 2050, 7532, 1125, 9874, 2]
 
-// Module 9841 (useBurstToggleCoachmark)
+// Module 9873 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(9808);
+const SuperReactionIcon2 = tmp(9840);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
   } else {
     items2 = [];
   }
-  const tmpResult = first(7497);
+  const tmpResult = first(7532);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9842);
+  const tmpResult2 = first(9874);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

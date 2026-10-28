@@ -1,12 +1,12 @@
-// Module ID: 19539
-// Function ID: 19540
+// Module ID: 19802
+// Function ID: 19803
 // Name: Disconnect
-// Dependencies: [4824, 19540, 9153, 2]
+// Dependencies: [4856, 19803, 9186, 2]
 
-// Module 19539 (Disconnect)
-import CallsUtils from "CallsUtils" /* 9153 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19540 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+// Module 19802 (Disconnect)
+import CallsUtils from "CallsUtils" /* 9186 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 19803 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");

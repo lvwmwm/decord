@@ -1,19 +1,19 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18439
+// Function ID: 18440
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6793, 13253, 9715, 21, 13260, 558, 576, 13246, 504, 18189, 18201, 13239, 18202, 18203, 13244, 18121, 18133, 2]
+// Dependencies: [19, 6827, 13470, 9747, 21, 13477, 558, 576, 13463, 504, 18428, 18440, 13456, 18441, 18442, 13461, 18361, 18373, 2]
 // Exports: trackMessageItemPress
 
-// Module 18200 (BaseMessagesScreen)
+// Module 18439 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9715 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13239 */;
-import SearchUtils from "SearchUtils" /* 13246 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13260 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18202 */;
+import TrackingConstants from "TrackingConstants" /* 9747 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13456 */;
+import SearchUtils from "SearchUtils" /* 13463 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13477 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18441 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6793 */;
-import SearchQueryStore from "SearchQueryStore" /* 13253 */;
+import SearchMessageStore from "SearchMessageStore" /* 6827 */;
+import SearchQueryStore from "SearchQueryStore" /* 13470 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,13 +35,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   let searchContext;
   let searchResultsQuery;
   let smartSearchStatus;
+  let viewabilityConfigCallbackPairs;
   let tmp = searchContext;
   let obj = searchContext(isFocused[7]);
-  const cResult = obj.c(45);
+  const cResult = obj.c(46);
   ({ data, searchContext } = tab);
   tab = tab.tab;
   isFocused = tab.isFocused;
-  ({ isFirstPageLoading, contentContainerStyle, ItemSeparatorComponent, numColumns, keywordResultCount, smartSearchStatus } = tab);
+  ({ isFirstPageLoading, contentContainerStyle, ItemSeparatorComponent, numColumns, keywordResultCount, smartSearchStatus, viewabilityConfigCallbackPairs } = tab);
   const isNextPageLoading = tab.isNextPageLoading;
   if (!isFirstPageLoading) {
     isFirstPageLoading = isNextPageLoading;
@@ -111,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                     if (null != documentsIndexed) {
                                       if (documentsIndexed > 0) {
                                         let obj2 = { searchContext: null, documentsIndexed, tab };
-                                        class U {
+                                        class V {
                                           constructor() {
                                             const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                             if (tmp) {
@@ -149,7 +150,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                       }
                                     }
                                   }
-                                  class U {
+                                  class V {
                                     constructor() {
                                       const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                       if (tmp) {
@@ -160,7 +161,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                                 }
                               }
                             }
-                            class U {
+                            class V {
                               constructor() {
                                 const tmp = isErrorToast && !isFirstPageLoading && isFocused;
                                 if (tmp) {
@@ -196,14 +197,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
                             }
                             cResult[26] = showErrorToast;
                             cResult[27] = items1;
-                            cResult[28] = U;
-                            tmp20 = U;
+                            cResult[28] = V;
+                            tmp20 = V;
                             tmp19 = items1;
                           }
                         }
                       }
                     }
-                    const fn2 = function q() {
+                    const fn2 = function z() {
                       const tmp = isFocused && !isFirstPageLoading;
                       if (tmp) {
                         searchFetchPendingManager.flush(searchContext, tab);
@@ -328,6 +329,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   let isErrorToast;
   let showErrorToast;
   let searchFetchPendingManager;
+  const viewabilityConfigCallbackPairs = tab.viewabilityConfigCallbackPairs;
   if (!isFirstPageLoading) {
     isFirstPageLoading = isNextPageLoading;
   }
@@ -409,7 +411,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
         return tmp13;
       }
     }
-    const obj7 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp9, ItemSeparatorComponent, numColumns, scrollToTopKey: searchResultsQuery };
+    const obj7 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp9, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs, scrollToTopKey: searchResultsQuery };
     tmp13 = hasError(tab(tmp2[17]), obj7);
   }
 });

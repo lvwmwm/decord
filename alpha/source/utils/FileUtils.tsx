@@ -1,16 +1,16 @@
-// Module ID: 8148
-// Function ID: 8149
+// Module ID: 8182
+// Function ID: 8183
 // Name: FileUtils
-// Dependencies: [4846, 1389, 1084, 1391, 12, 8149, 2050, 8144, 6380, 1125, 2]
+// Dependencies: [4878, 1389, 1084, 1391, 12, 8183, 2050, 8178, 6414, 1125, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 8148 (FileUtils)
+// Module 8182 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import FileSizeUtils from "FileSizeUtils" /* 6380 */;
-import UploadUtils from "UploadUtils" /* 8144 */;
-import _modDef8149 from "module_8149" /* 8149 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import FileSizeUtils from "FileSizeUtils" /* 6414 */;
+import UploadUtils from "UploadUtils" /* 8178 */;
+import _modDef8183 from "module_8183" /* 8183 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
@@ -129,7 +129,7 @@ export const classifyFileName = function classifyFileName(fileName, arg1) {
   return str2;
 };
 export const sizeString = function sizeString(size) {
-  const obj = _modDef8149;
+  const obj = _modDef8183;
   return obj.filesize(size);
 };
 export const maxFileSize = function maxFileSize(guildId) {

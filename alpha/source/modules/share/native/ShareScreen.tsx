@@ -1,26 +1,26 @@
-// Module ID: 15183
-// Function ID: 15184
+// Module ID: 15408
+// Function ID: 15409
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4828, 4824, 4904, 1084, 12915, 10619, 21, 4972, 587, 1125, 15184, 12916, 15185, 15186, 1264, 9719, 5708, 1381, 8852, 9669, 12954, 1999, 5911, 15187, 15188, 6935, 12926, 1627, 12927, 15189, 2]
+// Dependencies: [5, 32, 19, 17, 4860, 4856, 4936, 1084, 12962, 10651, 21, 5004, 587, 1125, 15409, 12963, 15410, 15411, 1264, 9751, 5743, 1381, 8886, 9701, 13001, 1999, 5946, 15412, 15413, 6969, 12973, 1627, 12974, 15414, 2]
 // Exports: default
 
-// Module 15183 (ShareScreen)
+// Module 15408 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
-import UserRowConstants from "UserRowConstants" /* 10619 */;
-import ForwardConstants from "ForwardConstants" /* 12915 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15187 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15188 */;
+import UserRowConstants from "UserRowConstants" /* 10651 */;
+import ForwardConstants from "ForwardConstants" /* 12962 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15412 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15413 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;

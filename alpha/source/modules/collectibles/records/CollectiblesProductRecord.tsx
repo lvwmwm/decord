@@ -1,15 +1,15 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7687
+// Function ID: 7688
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7654, 7655, 7660, 1086, 1084, 2047, 1992, 2]
+// Dependencies: [32, 7688, 7689, 7694, 1086, 1084, 2047, 1992, 2]
 
-// Module 7653 (CollectiblesProductRecord)
+// Module 7687 (CollectiblesProductRecord)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import getPricesFromServerDefault from "getPricesFromServer" /* 2047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7654 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7655 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7660 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7688 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7689 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7694 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 11134
-// Function ID: 11135
+// Module ID: 11169
+// Function ID: 11170
 // Name: useLegacyNoDateText
 // Dependencies: [32, 19, 1125, 558, 2]
 
-// Module 11134 (useLegacyNoDateText)
+// Module 11169 (useLegacyNoDateText)
 import intl2 from "intl" /* 1125 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

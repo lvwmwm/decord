@@ -1,20 +1,21 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7357
+// Function ID: 7358
 // Name: ConjureBuilderRouteStore
-// Dependencies: [4831, 504, 584, 2]
+// Dependencies: [4863, 504, 7358, 584, 2]
 
-// Module 7323 (ConjureBuilderRouteStore)
+// Module 7357 (ConjureBuilderRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import conjureGuildReturnsToProjectDefault from "conjureGuildReturnsToProject" /* 7358 */;
 import size from "module_2" /* 2 */;
 
-let _null, closure_3;
+let _null, closure_5;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 let lastProjectIdByGuildId = { lastProjectIdByGuildId: {} };
-const React2 = null;
-const _false = lastProjectIdByGuildId;
+const React3 = null;
+const hasOwnProperty = lastProjectIdByGuildId;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ConjureBuilderRouteStore extends PersistedStore {
   initialize(arg0) {
@@ -22,10 +23,10 @@ class ConjureBuilderRouteStore extends PersistedStore {
     if (arg0 == null) {
       tmp = obj;
     }
-    closure_3 = tmp;
+    closure_5 = tmp;
   }
   getState() {
-    return closure_3;
+    return closure_5;
   }
   getRoutedProjectId(guildId) {
     guildId = undefined;
@@ -39,9 +40,13 @@ class ConjureBuilderRouteStore extends PersistedStore {
     return projectId;
   }
   getLastProjectId(id) {
-    let tmp = closure_3.lastProjectIdByGuildId[id];
-    if (tmp == null) {
-      tmp = null;
+    let tmp = null;
+    if (conjureGuildReturnsToProjectDefault) {
+      let tmp4 = closure_5.lastProjectIdByGuildId[id];
+      if (tmp4 == null) {
+        tmp4 = null;
+      }
+      tmp = tmp4;
     }
     return tmp;
   }
@@ -95,20 +100,20 @@ let obj2 = {
       if (projectId2 == null) {
         projectId2 = null;
       }
-      let tmp10 = closure_3.lastProjectIdByGuildId[guildId];
+      let tmp10 = closure_5.lastProjectIdByGuildId[guildId];
       if (tmp10 == null) {
         tmp10 = null;
       }
       let flag = false;
       if (tmp10 !== projectId2) {
         const obj3 = {};
-        const merged = Object.assign(closure_3.lastProjectIdByGuildId);
+        const merged = Object.assign(closure_5.lastProjectIdByGuildId);
         if (null == projectId2) {
           delete obj2[guildId];
         } else {
           obj3[guildId] = projectId2;
         }
-        closure_3 = { lastProjectIdByGuildId: obj3 };
+        closure_5 = { lastProjectIdByGuildId: obj3 };
         flag = true;
         const obj5 = { lastProjectIdByGuildId: obj3 };
       }
@@ -123,16 +128,16 @@ let obj2 = {
     guildId = guildId.guildId;
     let tmp = null == guildId.projectId;
     if (tmp) {
-      let tmp3 = closure_3.lastProjectIdByGuildId[guildId];
+      let tmp3 = closure_5.lastProjectIdByGuildId[guildId];
       if (tmp3 == null) {
         tmp3 = null;
       }
       let flag = false;
       if (tmp3 !== null) {
         lastProjectIdByGuildId = {};
-        const merged = Object.assign(closure_3.lastProjectIdByGuildId);
+        const merged = Object.assign(closure_5.lastProjectIdByGuildId);
         delete lastProjectIdByGuildId[guildId];
-        closure_3 = { lastProjectIdByGuildId };
+        closure_5 = { lastProjectIdByGuildId };
         flag = true;
         const obj2 = { lastProjectIdByGuildId };
       }
@@ -141,8 +146,8 @@ let obj2 = {
     return tmp;
   },
   LOGOUT: function handleLogout() {
-    let c2 = null;
-    closure_3 = obj;
+    let c4 = null;
+    closure_5 = obj;
   }
 };
 const conjureBuilderRouteStore = new ConjureBuilderRouteStore(DispatcherDefault, obj2);

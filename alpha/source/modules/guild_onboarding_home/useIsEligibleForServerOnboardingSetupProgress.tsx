@@ -1,15 +1,15 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 17971
+// Function ID: 17972
 // Name: useIsEligibleForServerOnboardingSetupProgress
-// Dependencies: [17735, 17736, 1084, 1101, 558, 576, 13451, 2]
+// Dependencies: [17972, 17973, 1084, 1101, 558, 576, 13670, 2]
 
-// Module 17734 (useIsEligibleForServerOnboardingSetupProgress)
+// Module 17971 (useIsEligibleForServerOnboardingSetupProgress)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13451 */;
-import ServerOnboardingSetupProgressCompletionStore from "ServerOnboardingSetupProgressCompletionStore" /* 17735 */;
-import ServerOnboardingSetupProgressSkipStore from "ServerOnboardingSetupProgressSkipStore" /* 17736 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13670 */;
+import ServerOnboardingSetupProgressCompletionStore from "ServerOnboardingSetupProgressCompletionStore" /* 17972 */;
+import ServerOnboardingSetupProgressSkipStore from "ServerOnboardingSetupProgressSkipStore" /* 17973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

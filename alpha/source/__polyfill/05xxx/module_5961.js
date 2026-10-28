@@ -1,23 +1,50 @@
 // Module ID: 5961
 // Function ID: 5962
-// Dependencies: [19, 17, 21, 5962]
-// Exports: SafeAreaView
+// Dependencies: [19, 17, 5957]
+// Exports: useTabsHost
 
 // Module 5961
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import react_nativeDefault from "react-native" /* 5962 */;
-import react from "react" /* 19 */;
+import RNSLog2 from "RNSLog" /* 5957 */;
+import react_mod from "react" /* 19 */;
 
-const StyleSheet = react_native.StyleSheet;
-const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ flex: { flex: 1 } });
+let react = react_mod;
+const findNodeHandle = react_native.findNodeHandle;
 
-export const SafeAreaView = function SafeAreaView(style) {
-  react_nativeDefault;
-  const merged = Object.assign(style);
-  const items = [styles.flex, style.style];
-  const rect = { top: false, bottom: false, left: false, right: false };
-  const merged1 = Object.assign(style.edges);
-  return <tmp style={items} edges={rect} />;
+export const useTabsHost = function useTabsHost(arg0) {
+  let items;
+  let onTabSelected;
+  let ref;
+  let ref2;
+  ({ componentNodeRef: require, onTabSelected } = arg0);
+  react = undefined;
+  react = react.useRef(-1);
+  const effect = react.useEffect(() => {
+    if (null != require.current) {
+      let num2 = findNodeHandle(tmp.current);
+      const tmp3 = ref2;
+      if (num2 == null) {
+        num2 = -1;
+      }
+      tmp3.current = num2;
+    } else {
+      ref2.current = -1;
+    }
+  }, []);
+  const obj = {
+    onTabSelected: react.useCallback((nativeEvent) => {
+      const RNSLog = RNSLog2.RNSLog;
+      let num = ref2.current;
+      const log = RNSLog.log;
+      if (num == null) {
+        num = -1;
+      }
+      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
+      if (onTabSelected != null) {
+        onTabSelected(nativeEvent);
+      }
+    }, items)
+  };
+  items = [onTabSelected];
+  return obj;
 };

@@ -1,19 +1,19 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 13205
+// Function ID: 13206
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 4973, 6016, 21, 4972, 558, 576, 504, 1381, 5045, 2]
+// Dependencies: [19, 17, 5005, 6050, 21, 5004, 558, 576, 504, 1381, 5077, 2]
 
-// Module 12987 (CheckpointKnickKnacks)
+// Module 13205 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import _mod5045 from "module_5045" /* 5045 */;
-import CheckpointConstants from "CheckpointConstants" /* 6016 */;
+import _mod5077 from "module_5077" /* 5077 */;
+import CheckpointConstants from "CheckpointConstants" /* 6050 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import createStyles from "createStyles" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
         tmp12 = cResult[6];
       }
       if (cResult[7] !== tmp9) {
-        const tmp15 = jsx(_mod5045.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
+        const tmp15 = jsx(_mod5077.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
         cResult[7] = tmp9;
         cResult[8] = tmp15;
         tmp13 = tmp15;

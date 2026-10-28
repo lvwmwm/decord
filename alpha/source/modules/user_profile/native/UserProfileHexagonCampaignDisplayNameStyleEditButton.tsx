@@ -1,27 +1,27 @@
-// Module ID: 15916
-// Function ID: 15917
+// Module ID: 16142
+// Function ID: 16143
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1389, 1084, 4997, 21, 4972, 587, 558, 576, 15917, 1125, 2929, 15895, 6714, 8655, 6368, 4999, 10664, 5264, 8653, 15894, 5664, 7255, 7280, 9794, 9795, 15918, 6968, 5259, 6914, 7298, 6910, 15911, 7011, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 1084, 5029, 21, 5004, 587, 558, 576, 16143, 1125, 2929, 16121, 6748, 8692, 6402, 5031, 10696, 5299, 8690, 16120, 5699, 7289, 7314, 9826, 9827, 16144, 7002, 5294, 6948, 7332, 6944, 16137, 7045, 2]
 
-// Module 15916 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+// Module 16142 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
 import nativeDefault from "native" /* 587 */;
 import _modDef2929 from "module_2929" /* 2929 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6368 */;
-import _modDef6968 from "module_6968" /* 6968 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9794 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9795 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10664 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6402 */;
+import _modDef7002 from "module_7002" /* 7002 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9826 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9827 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10696 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }
   closure_19();
   _require = tmp6;
-  const tmpResult = tmp(15917);
+  const tmpResult = tmp(16143);
   const displayNameStylesPendingName = tmpResult.useDisplayNameStylesPendingName(user);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1125).intl;
@@ -91,10 +91,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   } else {
     first = cResult[0];
   }
-  const useTrackHexagonCampaignContentViewed = tmp(15895).useTrackHexagonCampaignContentViewed;
-  tmp(15895);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6714).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15895).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
-  const tmpResult6 = tmp(8655);
+  const useTrackHexagonCampaignContentViewed = tmp(16121).useTrackHexagonCampaignContentViewed;
+  tmp(16121);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6748).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(16121).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
+  const tmpResult6 = tmp(8692);
   pendingDisplayNameStyles = tmpResult6.useGuildMemberOrUserPendingDisplayNameStyles(user).pendingDisplayNameStyles;
   if (cResult[1] === pendingDisplayNameStyles) {
     let tmp13;
@@ -106,7 +106,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     if (cResult[4] !== tmp15) {
       let result = null != tmp15;
       if (result) {
-        const tmpResult7 = tmp(4999);
+        const tmpResult7 = tmp(5031);
         result = tmpResult7.isHexagonCampaignDisplayNameStyle(tmp15);
       }
       cResult[4] = tmp15;
@@ -178,7 +178,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
           }
         }
       }
-      const tmpResult8 = tmp(5264);
+      const tmpResult8 = tmp(5299);
       const unmountEffect = tmpResult8.useUnmountEffect(tmp31);
       if (!tmp4) {
         class W {
@@ -319,7 +319,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
       }
       t9 = tmp34;
       const tmp14Result = useAnalyticsLocationsDefault;
-      const analyticsLocations = tmp14Result(tmp14(7280).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
+      const analyticsLocations = tmp14Result(tmp14(7314).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
       if (cResult[13] !== analyticsLocations) {
         class W {
           constructor(nativeEvent) {
@@ -423,7 +423,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp10 = useDisplayNameStylesDefault(obj3);
   let result = null != tmp10;
   if (result) {
-    const tmp3Result = tmp3(4999);
+    const tmp3Result = tmp3(5031);
     result = tmp3Result.isHexagonCampaignDisplayNameStyle(tmp10);
   }
   importDefault = result;
@@ -445,7 +445,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp21 = _slicedToArray(react.useState(false), 2);
   react = react.useRef(false);
   closure_6 = react.useRef(true);
-  const tmp3Result2 = tmp3(5264);
+  const tmp3Result2 = tmp3(5299);
   const unmountEffect = tmp3Result2.useUnmountEffect(() => {
     closure_6.current = false;
   });
@@ -568,7 +568,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     return closure_0(...arguments);
   }, []);
   const tmp6Result = useAnalyticsLocationsDefault;
-  analyticsLocations = tmp6Result(tmp6(7280).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
+  analyticsLocations = tmp6Result(tmp6(7314).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
   const items = [analyticsLocations];
   callback3 = obj5.useCallback(() => {
     let obj2;
@@ -588,16 +588,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }, items1);
   let obj6 = { label: stringResult, labelTrailing: tmp18Result, children: tmp31(tmp32, obj9) };
   tmp18Result = undefined;
-  const Input = tmp3(7011).Input;
+  const Input = tmp3(7045).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(15918), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16144), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
   obj9 = { style: tmp.card, children: items5 };
   let obj10 = { onPress: callback4, style: tmp.row, disabled, accessibilityRole: str, accessibilityLabel: stringResult, accessibilityState: tmp33, children: items4 };
   str = "switch";
-  const PressableHighlight = tmp3(6910).PressableHighlight;
+  const PressableHighlight = tmp3(6944).PressableHighlight;
   if (availability === constants5.LOCKED) {
     str = "button";
   }
@@ -615,7 +615,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
       obj14 = { style: tmp.nameMask, children: items2 };
       items2 = [, ];
       const obj15 = { colors, style: tmp.nameMaskOpaque };
-      const tmp6Result2 = _modDef6968;
+      const tmp6Result2 = _modDef7002;
       items2[0] = tmp18(LinearGradientDefault, obj15);
       const obj16 = { colors: colors2, start: null, end: null, style: tmp.nameMaskFade };
       ({ START: obj22.start, END: obj22.end } = closure_11);
@@ -630,13 +630,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   items3[1] = tmp18(closure_6, obj17);
   items4 = [tmp31(tmp32, obj12), ];
   if (availability === constants5.LOCKED) {
-    tmp18Result4 = tmp18(tmp3(6914).TableRowArrow, {});
+    tmp18Result4 = tmp18(tmp3(6948).TableRowArrow, {});
   } else {
     const obj20 = { "aria-hidden": true, value: result, onValueChange: callback2, disabled };
-    tmp18Result4 = tmp18(tmp3(7298).FormSwitch, obj20);
+    tmp18Result4 = tmp18(tmp3(7332).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(15911), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16137), { showLearnMore: true })];
   return tmp18(Input, obj6);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileHexagonCampaignDisplayNameStyleEditButton.tsx");

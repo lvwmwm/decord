@@ -1,27 +1,27 @@
-// Module ID: 13750
-// Function ID: 13751
+// Module ID: 13968
+// Function ID: 13969
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 4846, 13741, 21, 4972, 5269, 587, 558, 576, 504, 5594, 7218, 6375, 6885, 1125, 5235, 7009, 1199, 5245, 13742, 13749, 6926, 5600, 7097, 2]
+// Dependencies: [5, 32, 19, 17, 4878, 13959, 21, 5004, 5304, 587, 558, 576, 504, 5629, 7252, 6409, 6919, 1125, 5270, 7043, 1199, 5280, 13960, 13967, 6960, 5635, 7131, 2]
 
-// Module 13750 (GuildDirectoryNicknameUpsellModal)
+// Module 13968 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import NavigatorConstants from "NavigatorConstants" /* 5269 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
-import useInitialValueDefault from "useInitialValue" /* 5600 */;
-import GuildIcon from "GuildIcon" /* 6885 */;
-import NavigatorHeader from "NavigatorHeader" /* 6926 */;
-import Constants from "Constants" /* 13741 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import NavigatorConstants from "NavigatorConstants" /* 5304 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
+import useInitialValueDefault from "useInitialValue" /* 5635 */;
+import GuildIcon from "GuildIcon" /* 6919 */;
+import NavigatorHeader from "NavigatorHeader" /* 6960 */;
+import Constants from "Constants" /* 13959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let tmp5;
 let unpackModuleId;
-const FreeFormInputGroupDefault = tmp5(7009);
+const FreeFormInputGroupDefault = tmp5(7043);
 const handleClose2 = function handleClose() {
   const obj = closure_2_1(closure_2_2[22]);
   obj.viewPrompt(constants.REAL_NAME_PROMPT, guildId);
@@ -94,7 +94,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const insets = handleClose(5594)().insets;
+  const insets = handleClose(5629)().insets;
   [obj3, dependencyMap] = ref(react.useState(null), 2);
   const tmp10 = ref(react.useState(null), 2);
   const tmp11 = ref(react.useState(""), 2);
@@ -157,7 +157,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
               }
               if (cResult[22] !== tmp4.description) {
                 let obj4 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp33 };
-                const tmp37 = closure_10(tmp(5235).Text, obj4);
+                const tmp37 = closure_10(tmp(5270).Text, obj4);
                 cResult[22] = tmp4.description;
                 cResult[23] = tmp37;
                 tmp35 = tmp37;
@@ -263,7 +263,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
                   }
                   let obj5 = { label: tmp42, placeholder: tmp43, value: first1, onChangeText: tmp13, style: null, textStyle: null, clearButtonVisibility: tmp(1199).ClearButtonVisibility.WITH_CONTENT, error: tmp46, onFocus: tmp48, onBlur: tmp49 };
                   ({ input: obj10.style, redesignTextInput: obj10.textStyle } = tmp4);
-                  const tmp9Result = handleClose(7009);
+                  const tmp9Result = handleClose(7043);
                   cResult[34] = first1;
                   cResult[35] = tmp4.input;
                   cResult[36] = tmp4.redesignTextInput;
@@ -281,14 +281,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
               const tmp41 = closure_11(closure_6, obj6);
             }
             const obj7 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp25 };
-            const tmp32 = closure_10(tmp(5235).Text, obj7);
+            const tmp32 = closure_10(tmp(5270).Text, obj7);
             cResult[18] = tmp4.title;
             cResult[19] = tmp25;
             cResult[20] = tmp32;
             tmp30 = tmp32;
           }
-          const obj8 = { style: tmp4.guildIcon, guild: stateFromStores, size: tmp(6885).GuildIconSizes.XLARGE };
-          const tmp9Result2 = handleClose(6885);
+          const obj8 = { style: tmp4.guildIcon, guild: stateFromStores, size: tmp(6919).GuildIconSizes.XLARGE };
+          const tmp9Result2 = handleClose(6919);
           const tmp22 = closure_10(tmp9Result2, obj8);
           cResult[13] = stateFromStores;
           cResult[14] = tmp4.guildIcon;
@@ -514,7 +514,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   }
   items3 = [tmp13(Text, obj7), ];
   const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t.b3L8yx) };
-  const Text2 = tmp2(5235).Text;
+  const Text2 = tmp2(5270).Text;
   intl2 = tmp2(1125).intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(closure_6, obj6);
@@ -563,7 +563,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
       return obj(...arguments);
     }
   };
-  Button = tmp2(5245).Button;
+  Button = tmp2(5280).Button;
   intl5 = tmp2(1125).intl;
   items2[4] = closure_10(closure_6, obj12);
   return closure_11(tmp12, obj3);
@@ -608,7 +608,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryNi
   const tmp5 = useInitialValueDefault(tmp4);
   if (cResult[2] !== tmp5) {
     let obj2 = { screens: tmp5, initialRouteName: UPSELL_SCREEN_KEY };
-    const tmp9 = closure_10(tmp(7097).Navigator, obj2);
+    const tmp9 = closure_10(tmp(7131).Navigator, obj2);
     cResult[2] = tmp5;
     cResult[3] = tmp9;
     tmp6 = tmp9;

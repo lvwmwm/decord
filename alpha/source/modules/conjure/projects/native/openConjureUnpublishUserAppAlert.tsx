@@ -1,11 +1,11 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12322
+// Function ID: 12323
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2042, 21, 558, 576, 504, 10789, 1125, 3831, 5664, 5235, 5915, 5911, 2]
+// Dependencies: [5, 32, 19, 2042, 21, 558, 576, 504, 10823, 1125, 3863, 5699, 5270, 5950, 5946, 2]
 // Exports: default
 
-// Module 12283 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5911 */;
+// Module 12322 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 5946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       if (cResult[8] !== stateFromStores) {
         let intl = tmp(tmp2[9]).intl;
         let obj2 = { app: stateFromStores };
-        const formatToPlainStringResult = intl.formatToPlainString(require("module_3831").m8KWic, obj2);
+        const formatToPlainStringResult = intl.formatToPlainString(require("module_3863").m8KWic, obj2);
         cResult[8] = stateFromStores;
         cResult[9] = formatToPlainStringResult;
         tmp13 = formatToPlainStringResult;
@@ -74,7 +74,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         let intl2 = tmp(tmp2[9]).intl;
-        const stringResult = intl2.string(require("module_3831").wve4kB);
+        const stringResult = intl2.string(require("module_3863").wve4kB);
         cResult[10] = stringResult;
         tmp16 = stringResult;
       } else {
@@ -96,7 +96,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       const _Symbol2 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(tmp2[9]).intl;
-        const stringResult1 = intl3.string(require("module_3831").GqcQyH);
+        const stringResult1 = intl3.string(require("module_3863").GqcQyH);
         cResult[13] = stringResult1;
         tmp22 = stringResult1;
       } else {
@@ -209,7 +209,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const obj6 = { value, done: true };
             return obj6;
           } else if (value) {
-            const obj = { text: intl2.formatToPlainString(require("module_3831").b8LN7N, obj7), variant: "success" };
+            const obj = { text: intl2.formatToPlainString(require("module_3863").b8LN7N, obj7), variant: "success" };
             const open = require("ToastActionCreators").open;
             const tmp21 = require("ToastActionCreators");
             intl2 = tmp4(stateFromStores[9]).intl;
@@ -219,7 +219,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             return { value: "IconComponent", done: null };
           } else {
             const intl = tmp4(stateFromStores[9]).intl;
-            tmp4 = intl.string(require("module_3831")["rE/0SD"]);
+            tmp4 = intl.string(require("module_3863")["rE/0SD"]);
             tmp(tmp4);
             const _Error = Error;
             const self = this;
@@ -370,7 +370,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_3831").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_3831").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_3863").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_3863").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[13]).AlertModal;
   intl = project(stateFromStores[9]).intl;
   intl2 = project(stateFromStores[9]).intl;

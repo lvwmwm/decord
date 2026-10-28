@@ -1,9 +1,9 @@
-// Module ID: 7496
-// Function ID: 7497
+// Module ID: 7531
+// Function ID: 7532
 // Name: GiftCardsExperiment
 // Dependencies: [1452, 558, 576, 2]
 
-// Module 7496 (GiftCardsExperiment)
+// Module 7531 (GiftCardsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

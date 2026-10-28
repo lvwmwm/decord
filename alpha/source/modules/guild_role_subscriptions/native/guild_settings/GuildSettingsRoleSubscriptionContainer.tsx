@@ -1,21 +1,21 @@
-// Module ID: 19329
-// Function ID: 19330
+// Module ID: 19592
+// Function ID: 19593
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 4846, 1084, 21, 4972, 558, 576, 504, 19305, 12136, 19255, 1125, 16612, 19322, 2]
+// Dependencies: [19, 17, 4878, 1084, 21, 5004, 558, 576, 504, 19568, 12174, 19518, 1125, 16841, 19585, 2]
 
-// Module 19329 (GuildSettingsRoleSubscriptionContainer)
+// Module 19592 (GuildSettingsRoleSubscriptionContainer)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12136 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16612 */;
-import WarningNoticeDefault from "WarningNotice" /* 19255 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 19305 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19322 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12174 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16841 */;
+import WarningNoticeDefault from "WarningNotice" /* 19518 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 19568 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19585 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -229,7 +229,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(19255), obj3);
+    tmp14 = closure_7(tmp9(19518), obj3);
   } else if (tmp13) {
     const obj4 = { notice: intl3.string(guildId(1125).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;

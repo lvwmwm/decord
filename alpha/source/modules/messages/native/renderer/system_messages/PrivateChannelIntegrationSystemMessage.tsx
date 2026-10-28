@@ -1,18 +1,18 @@
-// Module ID: 8401
-// Function ID: 8402
+// Module ID: 8435
+// Function ID: 8436
 // Name: PrivateChannelIntegrationSystemMessage
-// Dependencies: [1084, 8317, 8319, 8352, 8321, 2]
+// Dependencies: [1084, 8351, 8353, 8386, 8355, 2]
 // Exports: createPrivateChannelIntegrationSystemMessage
 
-// Module 8401 (PrivateChannelIntegrationSystemMessage)
+// Module 8435 (PrivateChannelIntegrationSystemMessage)
 import Constants from "Constants" /* 1084 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8317 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8319 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8352 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8386 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const createCommonMessageDefault = tmp4(8321);
+const createCommonMessageDefault = tmp4(8355);
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PrivateChannelIntegrationSystemMessage.tsx");
 

@@ -1,22 +1,22 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12210
+// Function ID: 12211
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 12173, 5670, 1414, 8577, 5253, 683, 12174, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 12211, 5705, 1414, 8614, 5288, 683, 12212, 2]
 
-// Module 12172 (ConjureProjectIcon)
+// Module 12210 (ConjureProjectIcon)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import useToken from "useToken" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import AppsIcon2 from "AppsIcon" /* 8577 */;
-import useConjureProjectIcon from "useConjureProjectIcon" /* 12173 */;
-import MagicWandIcon2 from "MagicWandIcon" /* 12174 */;
+import useToken from "useToken" /* 5288 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import AppsIcon2 from "AppsIcon" /* 8614 */;
+import useConjureProjectIcon from "useConjureProjectIcon" /* 12211 */;
+import MagicWandIcon2 from "MagicWandIcon" /* 12212 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
       tmp12 = hasOwnProperty(tmp5Result, obj4);
     } else {
       const obj5 = { size: "custom", style: tmp7.glyph, color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const AppsIcon = tmp(8577).AppsIcon;
+      const AppsIcon = tmp(8614).AppsIcon;
       tmp12 = hasOwnProperty(AppsIcon, obj5);
     }
     cResult[3] = tmp7.glyph;
@@ -184,7 +184,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNewPr
     }
     if (cResult[7] !== tmp7.glyph) {
       const obj2 = { size: "custom", style: tmp7.glyph, color: nativeDefault.colors.ICON_BRAND };
-      const MagicWandIcon = tmp(12174).MagicWandIcon;
+      const MagicWandIcon = tmp(12212).MagicWandIcon;
       const tmp16 = hasOwnProperty(MagicWandIcon, obj2);
       cResult[7] = tmp7.glyph;
       cResult[8] = tmp16;

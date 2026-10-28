@@ -1,10 +1,10 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 15387
+// Function ID: 15388
 // Name: useDeviceCodeAuthorizeCallback
-// Dependencies: [5, 19, 15161, 7276, 9626, 38, 7277, 9639, 558, 576, 2]
+// Dependencies: [5, 19, 15386, 7310, 9658, 38, 7311, 9671, 558, 576, 2]
 
-// Module 15162 (useDeviceCodeAuthorizeCallback)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7276 */;
+// Module 15387 (useDeviceCodeAuthorizeCallback)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7310 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

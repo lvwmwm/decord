@@ -1,13 +1,13 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12510
+// Function ID: 12511
 // Name: ConjureImageOptions
-// Dependencies: [32, 1125, 3831, 8863, 2]
+// Dependencies: [32, 1125, 3863, 8897, 2]
 // Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
 
-// Module 12464 (ConjureImageOptions)
+// Module 12510 (ConjureImageOptions)
 import intl2 from "intl" /* 1125 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8863 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,8 +26,8 @@ export const imageOptionsLayout = function imageOptionsLayout(options) {
   }
   return str;
 };
-export const viewableImageOptions = function viewableImageOptions(options) {
-  return options.flatMap((image) => {
+export const viewableImageOptions = function viewableImageOptions(items) {
+  return items.flatMap((image) => {
     let items1;
     if (null != image.image) {
       const obj = { image: image.image };
@@ -61,7 +61,7 @@ export const imageOptionViewerSize = function imageOptionViewerSize(value) {
 };
 export const ownImageOption = function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3831.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3863.SUdqCQ), image: { attachment_id: image.attachment.id } };
   intl = intl2.intl;
   return obj;
 };
@@ -153,6 +153,6 @@ export const ownImageUploadText = function ownImageUploadText(question) {
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef3831;
+  const tmp2 = _modDef3863;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
 };

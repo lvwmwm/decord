@@ -1,177 +1,105 @@
 // Module ID: 5479
 // Function ID: 5480
-// Dependencies: [19, 21, 1655, 5274, 5477, 5271, 5281, 5453, 5167]
-// Exports: default
+// Dependencies: [19, 17, 1655, 5306]
+// Exports: useKeyboard
 
 // Module 5479
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5271 */;
-import react_mod from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 19 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5306 */;
+import react_native from "react-native" /* 17 */;
 
-let c2;
+let Platform;
 let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-let react = react_mod;
-({ useCallback: c2, useMemo: c3, useRef: closure_4 } = react);
-react = react_mod;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const useEffect = react.useEffect;
+({ Keyboard: c3, Platform } = react_native);
+const keyboardDidShow = "keyboardDidShow";
+const keyboardDidHide = "keyboardDidHide";
+let closure_6 = { code: "function pnpm_useKeyboardTs1(state,height,duration,easing,bottomOffset){const{KEYBOARD_STATE,shouldHandleKeyboardEvents,temporaryCachedKeyboardEvent,keyboardHeight,includeBottomOffset,keyboardAnimationDuration,keyboardAnimationEasing,keyboardState}=this.__closure;if(state===KEYBOARD_STATE.SHOWN&&!shouldHandleKeyboardEvents.value){temporaryCachedKeyboardEvent.value=[state,height,duration,easing];return;}keyboardHeight.value=state===KEYBOARD_STATE.SHOWN?height:keyboardHeight.value;if(bottomOffset&&includeBottomOffset){keyboardHeight.value=keyboardHeight.value+bottomOffset;}keyboardAnimationDuration.value=duration;keyboardAnimationEasing.value=easing;keyboardState.value=state;temporaryCachedKeyboardEvent.value=[];}" };
+let closure_7 = { code: "function pnpm_useKeyboardTs2(){const{shouldHandleKeyboardEvents}=this.__closure;return shouldHandleKeyboardEvents.value;}" };
+const __initData = { code: "function pnpm_useKeyboardTs3(result){const{temporaryCachedKeyboardEvent,handleKeyboardEvent}=this.__closure;const params=temporaryCachedKeyboardEvent.value;if(result&&params.length>0){handleKeyboardEvent(params[0],params[1],params[2],params[3]);}}" };
 
-export default function _default(children) {
-  let BottomSheetModalInternalProvider;
-  let items2;
-  let obj4;
-  let sharedValue;
-  let sharedValue1;
-  let closure_3;
-  let mountSheet;
-  children = children.children;
-  let obj = sharedValue(sharedValue1[2]);
-  sharedValue = obj.useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_HEIGHT);
-  const obj2 = sharedValue(sharedValue1[2]);
-  sharedValue1 = obj2.useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_OFFSET);
-  let tmp3 = closure_3(() => {
-    const obj = sharedValue(sharedValue1[4]);
-    return "bottom-sheet-portal-" + obj.id();
-  }, []);
-  const hostName = tmp3;
-  closure_3 = mountSheet([]);
-  let tmp4 = hostName((key, current, arg2) => {
-    let closure_0 = key;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const tmp = closure_3;
-    if (-1 === findIndexResult) {
-      const tmp5 = substr[substr.length - 1] && !substr[substr.length - 1].willUnmount;
-      if (tmp5) {
-        const tmp7 = require;
-        if (arg2 === GESTURE_SOURCE.MODAL_STACK_BEHAVIOR.replace) {
-          if (substr[substr.length - 1].ref != null) {
-            const current2 = ref2.current;
-            if (current2 != null) {
-              current2.dismiss();
-            }
-          }
-        } else if (arg2 === tmp7(5271).MODAL_STACK_BEHAVIOR.switch) {
-          if (substr[substr.length - 1].ref != null) {
-            current = ref.current;
-            if (current != null) {
-              current.minimize();
-            }
-          }
-        }
-      }
-      if (-1 !== findIndexResult) {
-        substr.splice(findIndexResult, 1);
-        if (current != null) {
-          const current3 = current.current;
-          if (current3 != null) {
-            current3.restore();
-          }
-        }
-      }
-      const obj = { key, ref: current, willUnmount: false };
-      substr.push(obj);
-      tmp.current = substr;
-    }
-  }, []);
-  mountSheet = tmp4;
-  let tmp5 = hostName((arg0) => {
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    let tmp3 = findIndexResult === substr.length - 1;
-    substr.splice(findIndexResult, 1);
-    closure_3.current = substr;
-    if (tmp3) {
-      tmp3 = closure_3.current.length > 0;
-    }
-    if (tmp3) {
-      tmp3 = tmp5;
-    }
-    if (tmp3) {
-      tmp3 = !tmp5.willUnmount;
-    }
-    if (tmp3) {
-      const ref = closure_3.current[closure_3.current.length - 1].ref;
-      if (ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
+export const useKeyboard = (includeBottomOffset) => {
+  includeBottomOffset = includeBottomOffset.includeBottomOffset;
+  let shouldHandleKeyboardEvents;
+  let obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  shouldHandleKeyboardEvents = obj.useSharedValue(false);
+  const obj2 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const state = obj2.useSharedValue(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.UNDETERMINED);
+  const obj3 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const height = obj3.useSharedValue(0);
+  const obj4 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const animationEasing = obj4.useSharedValue("keyboard");
+  const obj5 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const animationDuration = obj5.useSharedValue(500);
+  const obj6 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const sharedValue5 = obj6.useSharedValue([]);
+  const fn = function v(value, arg1, value2, value3, arg4) {
+    value = arg1;
+    if (value === GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
+      if (!shouldHandleKeyboardEvents.value) {
+        const items = [value, value, value2, value3];
+        sharedValue5.value = items;
       }
     }
-  }, []);
-  const unmountSheet = tmp5;
-  const tmp6 = hostName((arg0) => {
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const diff = substr.length - 1;
-    const tmp = closure_3;
-    if (-1 !== findIndexResult) {
-      substr[findIndexResult].willUnmount = true;
+    if (value !== GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
+      value = iter.value;
     }
-    const tmp4 = findIndexResult === diff && substr.length > 1;
-    if (tmp4) {
-      if (substr[substr.length - 2].ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
-      }
+    height.value = value;
+    const tmp5 = arg4 && includeBottomOffset;
+    if (tmp5) {
+      height.value = height.value + arg4;
     }
-    tmp.current = substr;
-  }, []);
-  const willUnmountSheet = tmp6;
-  let tmp7 = hostName((arg0) => {
-    let found;
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    if (arg0) {
-      found = current1.find((key) => key.key === closure_0);
-    } else {
-      found = current1[tmp.current.length - 1];
-    }
-    let flag = found;
-    if (flag) {
-      flag = true;
-      if (found.ref != null) {
-        const current = ref.current;
-        flag = true;
-        if (current != null) {
-          current.dismiss();
-          flag = true;
-        }
-      }
-    }
-    return flag;
-  }, []);
-  const dismiss = tmp7;
-  const tmp8 = hostName(() => {
-    let current = closure_3.current;
-    const mapped = current.map((ref) => {
-      if (ref.ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.dismiss();
-        }
-      }
+    animationDuration.value = value2;
+    animationEasing.value = value3;
+    state.value = value;
+    sharedValue5.value = [];
+  };
+  const obj7 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  fn.__closure = { KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state };
+  fn.__workletHash = 7905199978020;
+  fn.__initData = sharedValue5;
+  ({ KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state });
+  const workletCallback = obj7.useWorkletCallback(fn, []);
+  let items = [workletCallback];
+  state(() => {
+    let closure_0 = height.addListener(animationEasing, (endCoordinates) => {
+      let duration;
+      let easing;
+      ({ duration, easing } = endCoordinates);
+      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+      const runOnUIResult = obj.runOnUI(workletCallback);
+      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.SHOWN, endCoordinates.endCoordinates.height, duration, easing, includeBottomOffset(shouldHandleKeyboardEvents[3]).SCREEN_HEIGHT - endCoordinates.endCoordinates.height - endCoordinates.endCoordinates.screenY);
     });
-  }, []);
-  const dismissAll = tmp8;
-  const items = [tmp7, tmp8];
-  const items1 = [tmp3, sharedValue, sharedValue1, tmp4, tmp5, tmp6];
-  const tmp9 = closure_3(() => ({ dismiss, dismissAll }), items);
-  const obj3 = { value: tmp9, children: willUnmountSheet(BottomSheetModalInternalProvider, obj4) };
-  const tmp10 = closure_3(() => ({ hostName, containerHeight: sharedValue, containerOffset: sharedValue1, mountSheet, unmountSheet, willUnmountSheet }), items1);
-  const BottomSheetModalProvider = sharedValue(sharedValue1[6]).BottomSheetModalProvider;
-  obj4 = { value: tmp10, children: items2 };
-  BottomSheetModalInternalProvider = sharedValue(sharedValue1[6]).BottomSheetModalInternalProvider;
-  items2 = [unmountSheet(sharedValue(sharedValue1[7]).BottomSheetHostingContainer, { containerOffset: sharedValue1, containerHeight: sharedValue }), unmountSheet(sharedValue(sharedValue1[8]).PortalProvider, { rootHostName: tmp3, children })];
-  return unmountSheet(BottomSheetModalProvider, obj3);
+    let closure_1 = height.addListener(animationDuration, (endCoordinates) => {
+      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+      const runOnUIResult = obj.runOnUI(workletCallback);
+      runOnUIResult(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.HIDDEN, endCoordinates.endCoordinates.height, endCoordinates.duration, endCoordinates.easing);
+    });
+    return () => {
+      closure_0.remove();
+      closure_1.remove();
+    };
+  }, items);
+  const fn2 = function b() {
+    return shouldHandleKeyboardEvents.value;
+  };
+  fn2.__closure = { shouldHandleKeyboardEvents };
+  fn2.__workletHash = 11615500623565;
+  fn2.__initData = workletCallback;
+  const fn3 = function y(arg0) {
+    let tmp = arg0;
+    const value = sharedValue5.value;
+    if (arg0) {
+      tmp = value.length > 0;
+    }
+    if (tmp) {
+      workletCallback(value[0], value[1], value[2], value[3]);
+    }
+  };
+  fn3.__closure = { temporaryCachedKeyboardEvent: sharedValue5, handleKeyboardEvent: workletCallback };
+  fn3.__workletHash = 16636741173520;
+  fn3.__initData = __initData;
+  const obj9 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
+  const animatedReaction = obj9.useAnimatedReaction(fn2, fn3, []);
+  return { state, height, animationEasing, animationDuration, shouldHandleKeyboardEvents };
 };

@@ -1,18 +1,18 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16380
+// Function ID: 16381
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7418, 21, 558, 576, 7400, 16015, 5661, 2064, 7884, 6658, 587, 1125, 5235, 7954, 2]
+// Dependencies: [19, 17, 7453, 21, 558, 576, 7435, 16243, 5696, 2064, 7918, 6692, 587, 1125, 5270, 7988, 2]
 
-// Module 16152 (AgeConfirmationNotice)
+// Module 16380 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import LinkingDefault from "Linking" /* 5661 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16015 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import LinkingDefault from "Linking" /* 5696 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16243 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7418 */;
+import Constants from "Constants" /* 7453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(11);
-  let obj2 = sensitiveContentFilterHelpArticle(7400);
+  let obj2 = sensitiveContentFilterHelpArticle(7435);
   sensitiveContentFilterHelpArticle = obj2.useSensitiveContentFilterHelpArticle();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -202,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(7400);
+  let obj = sensitiveContentFilterHelpArticle(7435);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[7]);
@@ -226,7 +226,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1125).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(7954).InlineNotice;
+  const InlineNotice = sensitiveContentFilterHelpArticle(7988).InlineNotice;
   intl = sensitiveContentFilterHelpArticle(1125).intl;
   obj5 = {
     hook(children) {

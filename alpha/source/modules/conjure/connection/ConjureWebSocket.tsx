@@ -1,9 +1,9 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10853
+// Function ID: 10854
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10818 (ConjureWebSocket)
+// Module 10853 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -175,15 +175,21 @@ class ConjureWebSocket {
     const error = new Error("Not connected");
     throw error;
   }
-  sendPublish(destination_id) {
+  sendPublish(destination_id, flag) {
+    if (flag === undefined) {
+      flag = false;
+    }
     const self = this;
     if (null != this.socket) {
       const _WebSocket = WebSocket;
       if (self.socket.readyState === WebSocket.OPEN) {
         const socket = self.socket;
+        const send = socket.send;
         const _JSON = JSON;
         const obj = { type: "publish", destination_id };
-        socket.send(JSON.stringify(obj));
+        const tmp3 = flag ? { app_channels_private: true } : {};
+        const merged = Object.assign(tmp3);
+        send(stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");
@@ -211,6 +217,29 @@ class ConjureWebSocket {
         const _JSON = JSON;
         const obj = { type: "draft_patch_notes", nonce: combined };
         socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendVoiceChannelPinOutcome(status) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        let obj3;
+        const socket = self.socket;
+        const send = socket.send;
+        const _JSON = JSON;
+        const obj = { type: "voice_channel_pin_outcome", status: status.status };
+        if ("pinned" === status.status) {
+          obj3 = { channel_id: status.channelId };
+          const obj2 = { channel_id: status.channelId };
+        } else {
+          obj3 = {};
+        }
+        const merged = Object.assign(obj3);
+        send(stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");

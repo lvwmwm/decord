@@ -1,36 +1,36 @@
-// Module ID: 13923
-// Function ID: 13924
+// Module ID: 14142
+// Function ID: 14143
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7656, 1990, 7657, 7658, 1084, 9390, 21, 587, 4972, 558, 576, 8667, 9416, 9402, 9415, 5670, 9393, 9414, 5253, 4969, 5259, 9216, 5040, 11055, 5235, 1125, 6910, 1496, 12, 2]
+// Dependencies: [19, 17, 7690, 1990, 7691, 7692, 1084, 9422, 21, 587, 5004, 558, 576, 8704, 9448, 9434, 9447, 5705, 9425, 9446, 5288, 5001, 5294, 9249, 5072, 11090, 5270, 1125, 6944, 1496, 12, 2]
 
-// Module 13923 (GiftingSKUCardsGrid)
+// Module 14142 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import NameplateRecord from "NameplateRecord" /* 1990 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import react_native from "react-native" /* 5040 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useToken from "useToken" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import Pressables from "Pressables" /* 6910 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7656 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7657 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7658 */;
-import useCurrentUser from "useCurrentUser" /* 8667 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9390 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9393 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9402 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9414 */;
-import _modDef9415 from "module_9415" /* 9415 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9416 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11055 */;
+import ColorUtils from "ColorUtils" /* 5001 */;
+import react_native from "react-native" /* 5072 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useToken from "useToken" /* 5288 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import Pressables from "Pressables" /* 6944 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7690 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7691 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7692 */;
+import useCurrentUser from "useCurrentUser" /* 8704 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9425 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9434 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
+import _modDef9447 from "module_9447" /* 9447 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9448 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11090 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,8 +47,8 @@ let rect1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5259);
-const CheckmarkLargeBoldIcon = tmp(9216);
+const LinearGradientDefault = tmp5(5294);
+const CheckmarkLargeBoldIcon = tmp(9249);
 ({ View: closure_4, StyleSheet } = react_native2);
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -127,7 +127,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Giftin
       let tmp27;
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { uri: _modDef9415 };
+        const obj5 = { uri: _modDef9447 };
         cResult[10] = obj5;
         tmp25 = obj5;
       } else {
@@ -220,7 +220,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Giftin
   let tmp8;
   ({ item, isSelected } = arg0);
   const tmp = closure_19();
-  const obj = isSelected(8667);
+  const obj = isSelected(8704);
   const currentUser = obj.useCurrentUser();
   const items = [isSelected, currentUser];
   const memo = react.useMemo(() => {
@@ -232,25 +232,25 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Giftin
   }, items);
   if (isNameplateRecord(item)) {
     const obj2 = { item, animate: isSelected };
-    tmp8 = closure_10(currentUser(9416), obj2);
+    tmp8 = closure_10(currentUser(9448), obj2);
   } else if (isAvatarDecorationRecord(item)) {
     const obj3 = { item, size, animate: isSelected, avatarSource: memo };
-    tmp8 = closure_10(currentUser(9402), obj3);
+    tmp8 = closure_10(currentUser(9434), obj3);
   } else if (isProfileEffectRecord(item)) {
     const obj4 = { style: tmp.profileEffect, children: items1 };
     const obj5 = { source: obj6, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj6 = { uri: currentUser(9415) };
-    const tmp19 = currentUser(5670);
+    obj6 = { uri: currentUser(9447) };
+    const tmp19 = currentUser(5705);
     items1 = [closure_10(tmp19, obj5), ];
     const obj7 = { skuId: item.skuId, useThumbnail: !isSelected };
-    items1[1] = closure_10(currentUser(9393), obj7);
+    items1[1] = closure_10(currentUser(9425), obj7);
     tmp8 = closure_11(closure_4, obj4);
   } else {
     tmp8 = null;
     if (isProfileFrameRecord(item)) {
       const obj8 = { style: tmp.profileFrame, children: closure_10(tmp12, obj9) };
       obj9 = { profileFrame: item, previewWidth, previewHeight, profileBackgroundColor: currentUser(587).colors.BACKGROUND_BASE_LOW };
-      tmp12 = currentUser(9414);
+      tmp12 = currentUser(9446);
       tmp8 = closure_10(closure_4, obj8);
     }
   }
@@ -694,7 +694,7 @@ let closure_23 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     const first = product.items[0];
     const items = [tmp.card, ];
     let selected = isSelected;
-    const PressableOpacity = tmp2(6910).PressableOpacity;
+    const PressableOpacity = tmp2(6944).PressableOpacity;
     if (isSelected) {
       selected = tmp.selected;
     }
@@ -719,7 +719,7 @@ let closure_23 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
     items2 = [authStore(Text_Text.Text, obj6), ];
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     const intl = tmp2(1125).intl;
     const string = intl.string;
     const t = tmp2(1125).t;

@@ -1,25 +1,25 @@
-// Module ID: 14588
-// Function ID: 14589
+// Module ID: 14811
+// Function ID: 14812
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [4823, 2042, 502, 4824, 5713, 1389, 10006, 13056, 1125, 13057, 14578, 14589, 13058, 13059, 6811, 12016, 2]
+// Dependencies: [4855, 2042, 502, 4856, 5748, 1389, 10038, 13273, 1125, 13274, 14801, 14812, 13275, 13276, 6845, 12054, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 14588 (EmbeddedActivityInstanceEmbed)
+// Module 14811 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1125 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6811 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10006 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12016 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13056 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13057 */;
-import getPlayInContext from "getPlayInContext" /* 13058 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13059 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14578 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 14589 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10038 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12054 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13273 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13274 */;
+import getPlayInContext from "getPlayInContext" /* 13275 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13276 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14801 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 14812 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PresenceStore from "PresenceStore" /* 5713 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PresenceStore from "PresenceStore" /* 5748 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 

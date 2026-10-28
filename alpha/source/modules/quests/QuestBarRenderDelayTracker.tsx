@@ -1,15 +1,15 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9633
+// Function ID: 9634
 // Name: QuestBarRenderDelayTracker
-// Dependencies: [1084, 6469, 6474, 6718, 1264, 6802, 2]
+// Dependencies: [1084, 6503, 6508, 6752, 1264, 6836, 2]
 
-// Module 9601 (QuestBarRenderDelayTracker)
+// Module 9633 (QuestBarRenderDelayTracker)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6469 */;
-import MetricEvents from "MetricEvents" /* 6474 */;
-import AdCreativeType from "AdCreativeType" /* 6718 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6802 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
+import MetricEvents from "MetricEvents" /* 6508 */;
+import AdCreativeType from "AdCreativeType" /* 6752 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6836 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

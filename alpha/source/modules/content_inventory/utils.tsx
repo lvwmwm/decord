@@ -1,17 +1,17 @@
-// Module ID: 8617
-// Function ID: 8618
+// Module ID: 8654
+// Function ID: 8655
 // Name: utils
-// Dependencies: [1101, 11, 1125, 2046, 8618, 4401, 8613, 2]
+// Dependencies: [1101, 11, 1125, 2046, 8655, 4433, 8650, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8617 (utils)
+// Module 8654 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl4 from "intl" /* 1125 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import _mod4401 from "module_4401" /* 4401 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8613 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8618 */;
+import _mod4433 from "module_4433" /* 4433 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8650 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8655 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -427,8 +427,8 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4401.intervalToDuration;
-  _mod4401;
+  const intervalToDuration = _mod4433.intervalToDuration;
+  _mod4433;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;

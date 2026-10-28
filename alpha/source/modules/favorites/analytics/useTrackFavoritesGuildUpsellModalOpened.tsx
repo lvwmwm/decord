@@ -1,14 +1,14 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 10888
+// Function ID: 10889
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 1084, 558, 576, 7255, 7280, 1264, 2]
+// Dependencies: [19, 1084, 558, 576, 7289, 7314, 1264, 2]
 
-// Module 10853 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 10888 (useTrackFavoritesGuildUpsellModalOpened)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

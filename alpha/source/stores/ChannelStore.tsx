@@ -1,9 +1,9 @@
-// Module ID: 4824
-// Function ID: 4825
+// Module ID: 4856
+// Function ID: 4857
 // Name: ChannelStore
-// Dependencies: [32, 5, 4825, 4827, 4828, 502, 4846, 1389, 1084, 4831, 3, 1385, 4850, 4870, 4871, 584, 4872, 10, 11, 4873, 12, 504, 2]
+// Dependencies: [32, 5, 4857, 4859, 4860, 502, 4878, 1389, 1084, 4863, 3, 1385, 4882, 4902, 4903, 584, 4904, 10, 11, 4905, 12, 504, 2]
 
-// Module 4824 (ChannelStore)
+// Module 4856 (ChannelStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -11,24 +11,24 @@ import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4850 */;
-import ChannelReaderDefault from "ChannelReader" /* 4871 */;
-import deserializeChannels from "deserializeChannels" /* 4872 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4873 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4882 */;
+import ChannelReaderDefault from "ChannelReader" /* 4903 */;
+import deserializeChannels from "deserializeChannels" /* 4904 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4825 */;
-import FavoriteStore from "FavoriteStore" /* 4827 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4857 */;
+import FavoriteStore from "FavoriteStore" /* 4859 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const deserializeChannelsDefault = deserializeChannels;
-let _require, c6, c7, closure_26, closure_28, closure_35, dependencyMap, importDefault;
+let _require, c6, c7, closure_28, closure_35, dependencyMap, importDefault;
 
 let c10;
 let c9;
@@ -36,7 +36,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f93919 = (item) => isChangelogUserDefault(item);
+const f94526 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -198,7 +198,7 @@ function setChannel(isPrivate) {
     } else {
       delete closure_33[id3];
       const recipients = isPrivate.recipients;
-      if (null == recipients.find(f93919)) {
+      if (null == recipients.find(f94526)) {
         closure_22[isPrivate.id] = isPrivate;
         if (isPrivate.type === ChannelTypes.DM) {
           closure_26[isPrivate.getRecipientId()] = isPrivate.id;
@@ -255,7 +255,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f93919)) {
+  if (null != recipients.find(f94526)) {
     return false;
   } else {
     closure_22[recipients.id] = recipients;
@@ -553,7 +553,7 @@ let closure_22 = {};
 let c23 = null;
 let closure_24 = {};
 let closure_25 = {};
-const prioritySpeakerDucking = {};
+let closure_26 = {};
 let closure_27 = 0;
 const results = {};
 let closure_29 = {};
@@ -603,7 +603,7 @@ class ChannelLoader {
         dependencyMap = closure_32;
         let tmp7 = _asyncToGenerator;
         let str = "loadChannels";
-        const tmpResult = tmp(4870);
+        const tmpResult = tmp(4902);
         return tmpResult.tryLoadOrResetCacheGatewayAsync("loadChannels", _asyncToGenerator(async (arg0, value) => {
           let closure_1;
           if (c7 === 2) {

@@ -1,10 +1,10 @@
-// Module ID: 9558
-// Function ID: 9559
+// Module ID: 9590
+// Function ID: 9591
 // Name: selectActiveMarketingComponent
 // Dependencies: [2]
 // Exports: default
 
-// Module 9558 (selectActiveMarketingComponent)
+// Module 9590 (selectActiveMarketingComponent)
 import size from "module_2" /* 2 */;
 
 let isTimed;

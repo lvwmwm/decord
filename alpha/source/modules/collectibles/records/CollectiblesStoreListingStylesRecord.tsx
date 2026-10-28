@@ -1,11 +1,11 @@
-// Module ID: 7669
-// Function ID: 7670
+// Module ID: 7703
+// Function ID: 7704
 // Name: CollectiblesStoreListingStylesRecord
-// Dependencies: [1404, 7661, 1102, 2]
+// Dependencies: [1404, 7695, 1102, 2]
 
-// Module 7669 (CollectiblesStoreListingStylesRecord)
+// Module 7703 (CollectiblesStoreListingStylesRecord)
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import _modDef7661 from "module_7661" /* 7661 */;
+import _modDef7695 from "module_7695" /* 7695 */;
 import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 
@@ -22,12 +22,12 @@ class CollectiblesStoreListingStylesRecord extends Record {
     let tmp;
     ({ background_colors, button_colors, confetti_colors } = arg0);
     const mapped = background_colors.map((item) => {
-      const tmp = _modDef7661;
+      const tmp = _modDef7695;
       const obj = utils_ColorUtils;
       return tmp(obj.int2hex(item));
     });
     const mapped1 = button_colors.map((item) => {
-      const tmp = _modDef7661;
+      const tmp = _modDef7695;
       const obj = utils_ColorUtils;
       return tmp(obj.int2hex(item));
     });

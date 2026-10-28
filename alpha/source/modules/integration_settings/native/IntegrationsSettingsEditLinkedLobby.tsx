@@ -1,18 +1,18 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 18590
+// Function ID: 18591
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1389, 21, 4972, 587, 558, 576, 5253, 1502, 7255, 7280, 7259, 5605, 504, 10827, 8668, 1125, 5235, 1414, 1199, 6989, 6905, 5978, 8951, 2]
+// Dependencies: [19, 17, 1389, 21, 5004, 587, 558, 576, 5288, 1502, 7289, 7314, 7293, 5640, 504, 10862, 8705, 1125, 5270, 1414, 1199, 7023, 6939, 6013, 8985, 2]
 
-// Module 18349 (IntegrationsSettingsEditLinkedLobby)
+// Module 18590 (IntegrationsSettingsEditLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

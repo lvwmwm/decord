@@ -1,16 +1,16 @@
-// Module ID: 5240
-// Function ID: 5241
+// Module ID: 5275
+// Function ID: 5276
 // Name: useTypographyVariantRemap
-// Dependencies: [558, 576, 4989, 5241, 2]
+// Dependencies: [558, 576, 5021, 5276, 2]
 
-// Module 5240 (useTypographyVariantRemap)
+// Module 5275 (useTypographyVariantRemap)
 import react from "react" /* 576 */;
-import ThemeContext from "ThemeContext" /* 4989 */;
+import ThemeContext from "ThemeContext" /* 5021 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const typographyVariantRemap = tmp(5241);
+const typographyVariantRemap = tmp(5276);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypographyVariantRemap(arg0, arg1) {
   let tmp4;
   const obj = react;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypogra
     themeContext = [];
   }
   let enabledExperiments = themeContext.enabledExperiments;
-  const remapTypographyVariant = tmp(5241).remapTypographyVariant;
+  const remapTypographyVariant = tmp(5276).remapTypographyVariant;
   typographyVariantRemap;
   if (enabledExperiments == null) {
     enabledExperiments = [];

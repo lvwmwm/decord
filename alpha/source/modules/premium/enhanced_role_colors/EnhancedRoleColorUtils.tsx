@@ -1,10 +1,10 @@
-// Module ID: 4881
-// Function ID: 4882
+// Module ID: 4913
+// Function ID: 4914
 // Name: EnhancedRoleColorUtils
 // Dependencies: [1084, 1102, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 4881 (EnhancedRoleColorUtils)
+// Module 4913 (EnhancedRoleColorUtils)
 import Constants from "Constants" /* 1084 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
 import size from "module_2" /* 2 */;

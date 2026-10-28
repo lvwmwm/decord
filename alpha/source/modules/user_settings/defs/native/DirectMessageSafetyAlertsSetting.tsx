@@ -1,19 +1,19 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16392
+// Function ID: 16393
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [8331, 558, 576, 12836, 10937, 10939, 11212, 1125, 10938, 16165, 2]
+// Dependencies: [8365, 558, 576, 12883, 10972, 10974, 11248, 1125, 10973, 16393, 2]
 
-// Module 16164 (DirectMessageSafetyAlertsSetting)
+// Module 16392 (DirectMessageSafetyAlertsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10937 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10938 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10939 */;
-import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 12836 */;
-import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 16165 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10972 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10973 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10974 */;
+import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 12883 */;
+import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 16393 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,15 +1,17 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8498
+// Function ID: 8499
 // Name: LabFeatureStore
-// Dependencies: [504, 8844, 584, 2]
+// Dependencies: [504, 8499, 584, 2]
 
-// Module 8843 (LabFeatureStore)
+// Module 8498 (LabFeatureStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LabFeaturesDefault from "LabFeatures" /* 8844 */;
+import LabFeatures from "LabFeatures" /* 8499 */;
 import size from "module_2" /* 2 */;
 
-const React2 = {};
+const LabFeaturesDefault = LabFeatures;
+
+const _false = {};
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class LabFeatureStore extends DeviceSettingsStore {
   getUserAgnosticState() {
@@ -17,27 +19,29 @@ class LabFeatureStore extends DeviceSettingsStore {
   }
   initialize(toggleStates) {
     for (const key10008 in LabFeaturesDefault) {
-      let flag;
-      let tmp2 = closure_2;
+      let labFeatureDefaultValue;
+      let tmp5 = closure_3;
       if (toggleStates != null) {
         toggleStates = toggleStates.toggleStates;
         if (toggleStates != null) {
-          flag = toggleStates[key10008];
+          labFeatureDefaultValue = toggleStates[key10008];
         }
       }
-      if (flag == null) {
-        flag = false;
+      if (labFeatureDefaultValue == null) {
+        let obj = LabFeatures;
+        labFeatureDefaultValue = obj.getLabFeatureDefaultValue(key10008);
       }
-      tmp2[key10008] = flag;
+      tmp5[key10008] = labFeatureDefaultValue;
       continue;
     }
   }
-  get(arg0) {
-    let flag = toggleStates[arg0];
-    if (flag == null) {
-      flag = false;
+  get(key10008) {
+    let labFeatureDefaultValue = toggleStates[key10008];
+    if (labFeatureDefaultValue == null) {
+      const obj = LabFeatures;
+      labFeatureDefaultValue = obj.getLabFeatureDefaultValue(key10008);
     }
-    return flag;
+    return labFeatureDefaultValue;
   }
   set(arg0, arg1) {
     toggleStates[arg0] = arg1;
@@ -47,7 +51,7 @@ class LabFeatureStore extends DeviceSettingsStore {
 const prototype = LabFeatureStore.prototype;
 LabFeatureStore.displayName = "LabFeatureStore";
 LabFeatureStore.persistKey = "LabFeatureStore";
-const obj = {
+let obj = {
   LAB_FEATURE_TOGGLE: function handleLabFeatureToggleSet(labFeature) {
     toggleStates[labFeature.labFeature] = labFeature.enabled;
   }

@@ -1,25 +1,25 @@
-// Module ID: 13404
-// Function ID: 13405
+// Module ID: 13623
+// Function ID: 13624
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 4828, 4824, 4902, 4904, 6772, 4914, 1389, 12520, 1084, 21, 558, 576, 13189, 504, 1385, 1125, 5605, 5712, 1111, 11, 13372, 2]
+// Dependencies: [19, 4860, 4856, 4934, 4936, 6806, 4946, 1389, 12567, 1084, 21, 558, 576, 13406, 504, 1385, 1125, 5640, 5747, 1111, 11, 13591, 2]
 
-// Module 13404 (ChatInputGuardReadonly)
+// Module 13623 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1111 */;
 import intl4 from "intl" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
-import ChatInputConstants from "ChatInputConstants" /* 12520 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13372 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
+import ChatInputConstants from "ChatInputConstants" /* 12567 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13591 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import ReadStateStore from "ReadStateStore" /* 6772 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

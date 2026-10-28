@@ -1,21 +1,21 @@
-// Module ID: 13028
-// Function ID: 13029
+// Module ID: 13245
+// Function ID: 13246
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 12968, 6016, 21, 4972, 587, 558, 576, 504, 12971, 1125, 3089, 12988, 12992, 13029, 13030, 9047, 12986, 12995, 12997, 13000, 2]
+// Dependencies: [17, 13015, 6050, 21, 5004, 587, 558, 576, 504, 13018, 1125, 3089, 13206, 13209, 13246, 13247, 9080, 13204, 13212, 13214, 13217, 2]
 
-// Module 13028 (CheckpointGameTimeStatsScreen)
+// Module 13245 (CheckpointGameTimeStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3089 from "module_3089" /* 3089 */;
-import CheckpointConstants from "CheckpointConstants" /* 6016 */;
-import CalendarIcon from "CalendarIcon" /* 9047 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12971 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13000 */;
-import CheckpointStore from "CheckpointStore" /* 12968 */;
+import CheckpointConstants from "CheckpointConstants" /* 6050 */;
+import CalendarIcon from "CalendarIcon" /* 9080 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 13018 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13217 */;
+import CheckpointStore from "CheckpointStore" /* 13015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -258,11 +258,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
       formatToPlainStringResult = intl2.formatToPlainString(tmp34(3089)["4FXB/m"], obj6);
     }
   }
-  const tmp34Result = tmp34(12988);
+  const tmp34Result = tmp34(13206);
   const container = tmp4.container;
   if (cResult[26] !== tmp4.image) {
-    const obj7 = { animatedUri: tmp34(13029), staticUri: tmp34(13030), style: tmp4.image };
-    const tmp34Result3 = tmp34(12992);
+    const obj7 = { animatedUri: tmp34(13246), staticUri: tmp34(13247), style: tmp4.image };
+    const tmp34Result3 = tmp34(13209);
     const tmp41 = metroRequire(tmp34Result3, obj7);
     cResult[26] = tmp4.image;
     cResult[27] = tmp41;
@@ -303,14 +303,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
         }
         if (roundResult <= 0 && null != stateFromStores1) {
           const obj9 = { value: stateFromStores1 };
-          tmp55Result = tmp55(tmp34(12995), obj9);
+          tmp55Result = tmp55(tmp34(13212), obj9);
         } else {
           const _HermesInternal = HermesInternal;
-          const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp4.number, children: metroRequire(tmp34(12997), obj11) };
+          const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp4.number, children: metroRequire(tmp34(13214), obj11) };
           obj11 = { end: roundResult };
           tmp55Result = tmp55(tmp37, obj10);
         }
-        const tmp34Result4 = tmp34(12986);
+        const tmp34Result4 = tmp34(13204);
         if (roundResult <= 0 && null != stateFromStores1) {
           const intl5 = tmp(1125).intl;
           const formatToPlainString = intl5.formatToPlainString;
@@ -386,7 +386,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
       tmp52 = tmp54;
     }
     const obj16 = { variant: "heading-md/extrabold", style: titleText, children: toLocaleUpperCaseResult };
-    const tmp51 = metroRequire(tmp34(12986), obj16);
+    const tmp51 = metroRequire(tmp34(13204), obj16);
     cResult[32] = tmp4.titleText;
     cResult[33] = toLocaleUpperCaseResult;
     cResult[34] = tmp51;
@@ -476,9 +476,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   }
   const obj4 = { style: tmp.container, children: items2 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp13Result4, obj6) };
-  obj6 = { animatedUri: tmp13(13029), staticUri: tmp13(13030), style: tmp.image };
-  const tmp13Result = tmp13(12988);
-  tmp13Result4 = tmp13(12992);
+  obj6 = { animatedUri: tmp13(13246), staticUri: tmp13(13247), style: tmp.image };
+  const tmp13Result = tmp13(13206);
+  tmp13Result4 = tmp13(13209);
   items2 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items3 };
   items3 = [, ];
@@ -486,21 +486,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items3[0] = metroRequire(CalendarIcon.CalendarIcon, obj9);
   const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp13Result5 = tmp13(12986);
+  const tmp13Result5 = tmp13(13204);
   items3[1] = metroRequire(tmp13Result5, obj10);
   items4 = [metroImportDefault(View, obj8), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj11 = { value: stateFromStores1 };
-    tmp15Result = tmp15(tmp13(12995), obj11);
+    tmp15Result = tmp15(tmp13(13212), obj11);
   } else {
     const _HermesInternal = HermesInternal;
-    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(12997), obj13) };
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(13214), obj13) };
     obj13 = { end: roundResult };
     tmp15Result = tmp15(tmp18, obj12);
   }
   items4[1] = tmp15Result;
   const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp13Result6 = tmp13(12986);
+  const tmp13Result6 = tmp13(13204);
   if (roundResult <= 0 && null != stateFromStores1) {
     const intl5 = tmp2(1125).intl;
     const formatToPlainString = intl5.formatToPlainString;

@@ -94,7 +94,7 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "end",
+      current: "duration",
       lastTimestamp: null,
       startTimestamp: "USER_PROFILE_SETTINGS_SET_GUILD",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)

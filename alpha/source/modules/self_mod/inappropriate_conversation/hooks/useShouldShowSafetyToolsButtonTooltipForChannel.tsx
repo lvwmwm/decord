@@ -1,20 +1,20 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11010
+// Function ID: 11011
 // Name: useShouldShowSafetyToolsButtonTooltipForChannel
-// Dependencies: [10696, 1101, 558, 576, 10976, 10935, 10977, 10978, 2]
+// Dependencies: [10728, 1101, 558, 576, 11011, 10970, 11012, 11013, 2]
 
-// Module 10975 (useShouldShowSafetyToolsButtonTooltipForChannel)
+// Module 11010 (useShouldShowSafetyToolsButtonTooltipForChannel)
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10696 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10935 */;
-import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 10976 */;
-import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 10977 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10728 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10970 */;
+import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 11011 */;
+import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 11012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const InappropriateConversationUtils = tmp(10978);
+const InappropriateConversationUtils = tmp(11013);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const HOUR = DurationsDefault.Millis.HOUR;
 let closure_4 = 12 * DurationsDefault.Millis.HOUR;

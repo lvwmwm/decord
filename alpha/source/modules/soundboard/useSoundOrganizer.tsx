@@ -1,14 +1,14 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18807
+// Function ID: 18808
 // Name: useSoundOrganizer
 // Dependencies: [11, 2]
 // Exports: sortSoundsOldestToNewestFavoriteDate, useSoundOrganizer
 
-// Module 18559 (useSoundOrganizer)
+// Module 18807 (useSoundOrganizer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
-const f136599 = (available, available2) => {
+const f137410 = (available, available2) => {
   let num;
   if (!available.available) {
     let num2 = 0;
@@ -24,12 +24,12 @@ const f136599 = (available, available2) => {
   }
   return num;
 };
-function sortSoundsOldestToNewestCreationDate(arg0) {
+function sortSoundsOldestToNewestCreationDate(value5) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const items = [...arg0];
+  const items = [...value5];
   const sorted = items.sort((soundId, soundId2) => {
     const obj = SnowflakeUtilsDefault;
     return obj.compare(soundId.soundId, soundId2.soundId);
@@ -38,7 +38,7 @@ function sortSoundsOldestToNewestCreationDate(arg0) {
   if (flag) {
     const items1 = [];
     HermesBuiltin.arraySpread(items1, sorted, 0);
-    sorted1 = items1.sort(f136599);
+    sorted1 = items1.sort(f137410);
   }
   return sorted1;
 }
@@ -55,7 +55,7 @@ export const sortSoundsOldestToNewestFavoriteDate = function sortSoundsOldestToN
     const items = [];
     let num = 0;
     HermesBuiltin.arraySpread(items, arg0, 0);
-    sorted = items.sort(f136599);
+    sorted = items.sort(f137410);
   }
   return sorted;
 };

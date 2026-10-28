@@ -1,16 +1,16 @@
-// Module ID: 13605
-// Function ID: 13606
+// Module ID: 13823
+// Function ID: 13824
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [1084, 21, 558, 576, 1125, 2064, 6989, 7297, 2]
+// Dependencies: [1084, 21, 558, 576, 1125, 2064, 7023, 7331, 2]
 
-// Module 13605 (RedesignContactSyncDiscoverabilityFooter)
+// Module 13823 (RedesignContactSyncDiscoverabilityFooter)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import TableRowGroup2 from "TableRowGroup" /* 6989 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7297 */;
+import TableRowGroup2 from "TableRowGroup" /* 7023 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7331 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignCo
     }
     return tmp10;
   }
-  const TableRowGroup = tmp(6989).TableRowGroup;
+  const TableRowGroup = tmp(7023).TableRowGroup;
   const tmp11 = <TableRowGroup hasIcons={false} helperText={first}>{null}</TableRowGroup>;
   cResult[2] = discoverabilityEnabled;
   cResult[3] = onValueChanged;

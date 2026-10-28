@@ -1,12 +1,12 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16410
+// Function ID: 16411
 // Name: ProfileToActivityUpsellActionSheet
-// Dependencies: [19, 21, 558, 576, 16181, 4800, 5211, 16183, 2]
+// Dependencies: [19, 21, 558, 576, 16409, 4832, 5246, 16411, 2]
 
-// Module 16182 (ProfileToActivityUpsellActionSheet)
+// Module 16410 (ProfileToActivityUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16181 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16409 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12225
+// Function ID: 12226
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 4973, 21, 587, 4972, 12188, 558, 576, 504, 5053, 5207, 2]
+// Dependencies: [19, 5005, 21, 587, 5004, 12226, 558, 576, 504, 5085, 5242, 2]
 
-// Module 12187 (ConjureAwaitingUser)
+// Module 12225 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12188 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12226 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import createStyles from "createStyles" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwa
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = tmp(5053);
+  const tmpResult3 = tmp(5085);
   const sharedValue = tmpResult3.useSharedValue(0);
   if (cResult[2] === sharedValue) {
     let tmp10;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwa
       tmp11 = cResult[5];
     }
     const effect = react.useEffect(tmp10, tmp11);
-    const tmpResult4 = tmp(5053);
+    const tmpResult4 = tmp(5085);
     class R {
       constructor() {
         const obj = { opacity: sharedValue.get() };
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwa
       return tmp16;
     }
     const items1 = [tmp4.ring, animatedStyle];
-    const tmp19 = jsx(sharedValue(5053).View, { pointerEvents: "none", style: items1 });
+    const tmp19 = jsx(sharedValue(5085).View, { pointerEvents: "none", style: items1 });
     cResult[6] = animatedStyle;
     cResult[7] = tmp4.ring;
     cResult[8] = tmp19;
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwa
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = stateFromStores(5053);
+  let obj2 = stateFromStores(5085);
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue, stateFromStores];
   const effect = react.useEffect(() => {
@@ -156,10 +156,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAwa
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 4491518532559;
   fn.__initData = __initData2;
-  const obj3 = stateFromStores(5053);
+  const obj3 = stateFromStores(5085);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items2 = [tmp.ring, animatedStyle];
-  return jsx(sharedValue(5053).View, { pointerEvents: "none", style: items2 });
+  return jsx(sharedValue(5085).View, { pointerEvents: "none", style: items2 });
 });
 let result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureAwaitingUser.tsx");
 

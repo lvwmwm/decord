@@ -1,13 +1,13 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 17096
+// Function ID: 17097
 // Name: ChatEmojiEmoticonsSetting
-// Dependencies: [8331, 11212, 1125, 4800, 2]
+// Dependencies: [8365, 11248, 1125, 4832, 2]
 
-// Module 16867 (ChatEmojiEmoticonsSetting)
+// Module 17096 (ChatEmojiEmoticonsSetting)
 import intl2 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

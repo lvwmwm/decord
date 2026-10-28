@@ -1,10 +1,10 @@
-// Module ID: 4804
-// Function ID: 4805
+// Module ID: 4836
+// Function ID: 4837
 // Name: UserSettingDefinitions
-// Dependencies: [1205, 1243, 1094, 558, 576, 504, 4805, 584, 2]
+// Dependencies: [1205, 1243, 1094, 558, 576, 504, 4837, 584, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 4804 (UserSettingDefinitions)
+// Module 4836 (UserSettingDefinitions)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
@@ -48,18 +48,18 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     return tmp(tmp3);
   }
   const obj2 = require("ReactCompilerGating");
-  const f93832 = (favorites) => {
+  const f94439 = (favorites) => {
     let closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f93832] = explicitContentToProto(favorites, arg0[f93832]);
+      arg0[f94439] = explicitContentToProto(favorites, arg0[f94439]);
     }, closure_4);
   };
   const obj3 = {
     getSetting,
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93838;
+      const tmp = f94445;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -121,7 +121,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93838;
+      const tmp = f94445;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -174,17 +174,17 @@ export function wrapSettingWithOverride(arg0, gifAutoPlay, arg2, arg3) {
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f93838;
+      const tmp = f94445;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f93838 = (arg0) => {
+  const f94445 = (arg0) => {
     let items;
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items };
-    items = [f93838];
+    items = [f94445];
     const obj = gifAutoPlay(closure_2[7]);
     obj.dispatch(obj2);
     return getSetting.updateSetting(arg0);

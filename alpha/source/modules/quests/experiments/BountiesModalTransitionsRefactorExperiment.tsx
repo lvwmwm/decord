@@ -1,9 +1,9 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16566
+// Function ID: 16567
 // Name: BountiesModalTransitionsRefactorExperiment
 // Dependencies: [1452, 558, 576, 2]
 
-// Module 16338 (BountiesModalTransitionsRefactorExperiment)
+// Module 16566 (BountiesModalTransitionsRefactorExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

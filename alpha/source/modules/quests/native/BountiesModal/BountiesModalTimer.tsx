@@ -1,18 +1,18 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16608
+// Function ID: 16609
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5251, 5053, 7960, 4972, 587, 1381, 558, 576, 5207, 5235, 9135, 2]
+// Dependencies: [19, 17, 21, 5286, 5085, 7994, 5004, 587, 1381, 558, 576, 5242, 5270, 9168, 2]
 
-// Module 16380 (BountiesModalTimer)
+// Module 16608 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
-import ButtonConstants from "ButtonConstants" /* 5251 */;
-import inlineStyles from "inlineStyles" /* 7960 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
+import ButtonConstants from "ButtonConstants" /* 5286 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

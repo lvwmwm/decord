@@ -1,17 +1,28 @@
 // Module ID: 12704
 // Function ID: 12705
 // Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Exports: isSentryRequestUrl
 
 // Module 12704
 
-export function getSDKSource() {
-  return "npm";
-}
-export const isBrowserBundle = function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
+    }
+    tmp2 = flag;
   }
-  return prop;
+  return tmp2;
 };

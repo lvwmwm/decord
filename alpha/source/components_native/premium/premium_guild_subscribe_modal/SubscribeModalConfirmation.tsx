@@ -1,33 +1,33 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 15179
+// Function ID: 15180
 // Name: SubscribeModalConfirmation
-// Dependencies: [5, 19, 17, 13502, 4846, 7512, 2055, 1084, 7545, 21, 4972, 4969, 587, 558, 576, 504, 8365, 5670, 14957, 5235, 1125, 14958, 14959, 5245, 14968, 5259, 1104, 1264, 14922, 38, 8367, 5910, 14972, 1999, 2]
+// Dependencies: [5, 19, 17, 13721, 4878, 7547, 2055, 1084, 7579, 21, 5004, 5001, 587, 558, 576, 504, 8399, 5705, 15180, 5270, 1125, 15181, 15182, 5280, 15191, 5294, 1104, 1264, 15145, 38, 8401, 5945, 15195, 1999, 2]
 // Exports: default
 
-// Module 14956 (SubscribeModalConfirmation)
+// Module 15179 (SubscribeModalConfirmation)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import ColorConstants from "ColorConstants" /* 7545 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14957 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14958 */;
-import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 14959 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import ColorConstants from "ColorConstants" /* 7579 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15180 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15181 */;
+import PremiumGuildPreviewDefault from "PremiumGuildPreview" /* 15182 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13502 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7512 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13721 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7547 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
-import ColorUtils_mod from "ColorUtils" /* 4969 */;
+import createStyles_mod from "createStyles" /* 5004 */;
+import ColorUtils_mod from "ColorUtils" /* 5001 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -212,7 +212,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
           }
         }
       }
-      Text = tmp(5235).Text;
+      Text = tmp(5270).Text;
       prop = tmp4.pendingCancellationMessage;
       const intl = tmp(1125).intl;
       const obj5 = { date: stateFromStores.currentPeriodEnd, canceledCount: found.length };
@@ -266,7 +266,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
       const tmp10 = FastImageDefault;
       items1 = [closure_17(tmp10, obj3), ];
       const obj4 = { style: tmp.pendingCancellationMessage, variant: "text-sm/medium", children: intl.format(intl6.t.SFpsCH, obj5) };
-      const Text = tmp2(5235).Text;
+      const Text = tmp2(5270).Text;
       intl = tmp2(1125).intl;
       obj5 = { date: stateFromStores.currentPeriodEnd, canceledCount: found.length };
       items1[1] = closure_17(Text, obj4);
@@ -459,7 +459,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
   ({ guild, isModifyingSubscription, previousGuildSubscriptionSlots } = onPremiumGuildSubscribe);
   onPremiumGuildSubscribe = onPremiumGuildSubscribe.onPremiumGuildSubscribe;
   const tmp4 = closure_20();
-  const obj2 = previousGuildSubscriptionSlots(14968);
+  const obj2 = previousGuildSubscriptionSlots(15191);
   const guildSubscriptionRemovalSource = obj2.useGuildSubscriptionRemovalSource();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -517,8 +517,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
       if (cResult[9] !== tmp4.header) {
         const obj4 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp14 };
         cResult[9] = tmp4.header;
-        cResult[10] = closure_17(previousGuildSubscriptionSlots(5235).Text, obj4);
-        const tmp18 = closure_17(previousGuildSubscriptionSlots(5235).Text, obj4);
+        cResult[10] = closure_17(previousGuildSubscriptionSlots(5270).Text, obj4);
+        const tmp18 = closure_17(previousGuildSubscriptionSlots(5270).Text, obj4);
       }
       const blurb = tmp4.blurb;
       if (cResult[11] !== previousGuildSubscriptionSlots.length) {
@@ -578,7 +578,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
                 }
                 if (cResult[31] !== guild) {
                   const obj7 = { guild };
-                  const tmp42 = closure_17(onPremiumGuildSubscribe(14959), obj7);
+                  const tmp42 = closure_17(onPremiumGuildSubscribe(15182), obj7);
                   cResult[31] = guild;
                   cResult[32] = tmp42;
                   tmp39 = tmp42;
@@ -638,8 +638,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
                           cResult[48] = isModifyingSubscription;
                           cResult[49] = tmp57;
                           cResult[50] = tmp59;
-                          cResult[51] = closure_17(previousGuildSubscriptionSlots(5245).Button, obj10);
-                          const tmp62 = closure_17(previousGuildSubscriptionSlots(5245).Button, obj10);
+                          cResult[51] = closure_17(previousGuildSubscriptionSlots(5280).Button, obj10);
+                          const tmp62 = closure_17(previousGuildSubscriptionSlots(5280).Button, obj10);
                         }
                       }
                     }
@@ -655,7 +655,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
                   const tmp52 = closure_18(closure_6, obj11);
                 }
                 const obj12 = { style: tmp38, start: previousGuildSubscriptionSlots(1104).HorizontalGradient.START, end: previousGuildSubscriptionSlots(1104).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: tmp39 };
-                const tmp46 = onPremiumGuildSubscribe(5259);
+                const tmp46 = onPremiumGuildSubscribe(5294);
                 const tmp48 = closure_17(tmp46, obj12);
                 cResult[33] = tmp38;
                 cResult[34] = tmp39;
@@ -670,21 +670,21 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
               tmp38 = items2;
             }
             const obj13 = { style: previewHeader2, variant: "eyebrow", color: "text-default", children: tmp33 };
-            const tmp37 = closure_17(previousGuildSubscriptionSlots(5235).Text, obj13);
+            const tmp37 = closure_17(previousGuildSubscriptionSlots(5270).Text, obj13);
             cResult[25] = tmp4.previewHeader;
             cResult[26] = tmp33;
             cResult[27] = tmp37;
             tmp35 = tmp37;
           }
           const obj14 = { style: tmp4.guildPreview, guild: stateFromStores };
-          const tmp32 = closure_17(onPremiumGuildSubscribe(14959), obj14);
+          const tmp32 = closure_17(onPremiumGuildSubscribe(15182), obj14);
           cResult[20] = stateFromStores;
           cResult[21] = tmp4.guildPreview;
           cResult[22] = tmp32;
           tmp29 = tmp32;
         }
         const obj15 = { style: previewHeader, variant: "eyebrow", color: "text-default", children: tmp24 };
-        const tmp28 = closure_17(previousGuildSubscriptionSlots(5235).Text, obj15);
+        const tmp28 = closure_17(previousGuildSubscriptionSlots(5270).Text, obj15);
         cResult[17] = tmp4.previewHeader;
         cResult[18] = tmp24;
         cResult[19] = tmp28;
@@ -693,14 +693,14 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
       const obj16 = { style: blurb, variant: "text-sm/medium", children: tmp19 };
       cResult[13] = tmp4.blurb;
       cResult[14] = tmp19;
-      cResult[15] = closure_17(previousGuildSubscriptionSlots(5235).Text, obj16);
-      const tmp23 = closure_17(previousGuildSubscriptionSlots(5235).Text, obj16);
+      cResult[15] = closure_17(previousGuildSubscriptionSlots(5270).Text, obj16);
+      const tmp23 = closure_17(previousGuildSubscriptionSlots(5270).Text, obj16);
     }
     const obj17 = { style: tmp4.transferImage, source: guildSubscriptionRemovalSource };
     cResult[5] = tmp4.transferImage;
     cResult[6] = guildSubscriptionRemovalSource;
-    cResult[7] = closure_17(onPremiumGuildSubscribe(5670), obj17);
-    const tmp13 = closure_17(onPremiumGuildSubscribe(5670), obj17);
+    cResult[7] = closure_17(onPremiumGuildSubscribe(5705), obj17);
+    const tmp13 = closure_17(onPremiumGuildSubscribe(5705), obj17);
   }
 }) : (function TransferConfirmation(previousGuildSubscriptionSlots) {
   let Button;
@@ -724,7 +724,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = closure_20();
-  const obj = prop(14968);
+  const obj = prop(15191);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   const items = [GuildStore];
   const obj2 = prop(504);
@@ -745,33 +745,33 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
   } else {
     const obj4 = { children: items1 };
     const obj5 = { style: tmp.transferImage, source: guildSubscriptionRemovalSource };
-    items1 = [closure_17(onPremiumGuildSubscribe(5670), obj5), , , , , ];
+    items1 = [closure_17(onPremiumGuildSubscribe(5705), obj5), , , , , ];
     const obj6 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(prop(1125).t.h92jfS) };
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     intl = tmp2(1125).intl;
     items1[1] = closure_17(Text, obj6);
     const obj7 = { style: tmp.blurb, variant: "text-sm/medium", children: intl2.format(prop(1125).t.SSA2lu, obj8) };
-    const Text2 = tmp2(5235).Text;
+    const Text2 = tmp2(5270).Text;
     intl2 = tmp2(1125).intl;
     obj8 = { slotCount: prop.length, guildCount: 1 };
     items1[2] = closure_17(Text2, obj7);
     const obj9 = { style: tmp.transferPreviews, children: items2 };
     const obj10 = { style: tmp.previewHeader, variant: "eyebrow", color: "text-default", children: intl3.format(prop(1125).t["5zQYEz"], { guildCount: 1 }) };
-    const Text3 = tmp2(5235).Text;
+    const Text3 = tmp2(5270).Text;
     intl3 = tmp2(1125).intl;
     items2 = [closure_17(Text3, obj10), , , ];
     const obj11 = { style: tmp.guildPreview, guild: stateFromStores };
-    items2[1] = closure_17(onPremiumGuildSubscribe(14959), obj11);
+    items2[1] = closure_17(onPremiumGuildSubscribe(15182), obj11);
     const obj12 = { style: tmp.previewHeader, variant: "eyebrow", color: "text-default", children: intl4.format(prop(1125).t.ct6oxD, obj13) };
-    const Text4 = tmp2(5235).Text;
+    const Text4 = tmp2(5270).Text;
     intl4 = tmp2(1125).intl;
     obj13 = { slotCount: prop.length };
     items2[2] = closure_17(Text4, obj12);
-    const obj14 = { style: items3, start: prop(1104).HorizontalGradient.START, end: prop(1104).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(14959), obj15) };
+    const obj14 = { style: items3, start: prop(1104).HorizontalGradient.START, end: prop(1104).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: closure_17(onPremiumGuildSubscribe(15182), obj15) };
     items3 = [, ];
     ({ guildPreview: arr5[0], activeTransferGuildCardBorder: arr5[1] } = tmp);
     obj15 = { guild };
-    const tmp14 = onPremiumGuildSubscribe(5259);
+    const tmp14 = onPremiumGuildSubscribe(5294);
     items2[3] = closure_17(tmp14, obj14);
     items1[3] = closure_18(closure_6, obj9);
     const obj16 = { slots: prop };
@@ -785,7 +785,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transf
         },
       loading: isModifyingSubscription
     };
-    Button = tmp2(5245).Button;
+    Button = tmp2(5280).Button;
     intl5 = tmp2(1125).intl;
     obj19 = { slotCount: prop.length };
     items1[5] = closure_17(closure_6, obj17);

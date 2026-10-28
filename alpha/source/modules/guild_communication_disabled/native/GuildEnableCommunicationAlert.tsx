@@ -1,23 +1,23 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12849
+// Function ID: 12850
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1389, 4886, 1084, 21, 4972, 558, 576, 8333, 10038, 1264, 5264, 5990, 12801, 5664, 1125, 5235, 5979, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1389, 4918, 1084, 21, 5004, 558, 576, 8367, 10070, 1264, 5299, 6025, 12848, 5699, 1125, 5270, 6014, 2]
 
-// Module 12802 (GuildEnableCommunicationAlert)
+// Module 12849 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
-import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8333 */;
-import CountDownDefault from "CountDown" /* 10038 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8367 */;
+import CountDownDefault from "CountDown" /* 10070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4886 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4918 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp11;
 let unpackModuleId;
-const useMountEffectDefault = tmp11(5264);
+const useMountEffectDefault = tmp11(5299);
 let closure_3 = ["guildId", "userId", "onCancel"];
 const View = react_native.View;
 ({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: c9, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: c10 } = GuildDisableCommunicationConstants);
@@ -201,8 +201,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  closure_3 = _slicedToArray(userId(8333)(userId, guildId), 1)[0];
-  userId(5264)(() => {
+  closure_3 = _slicedToArray(userId(8367)(userId, guildId), 1)[0];
+  userId(5299)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guildId, other_user_id: userId };
     obj.track(unpackModuleId.OPEN_MODAL, obj2);
@@ -219,7 +219,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(5979);
+  const tmp7 = userId(6014);
   const merged1 = Object.assign(merged);
   intl = guildId(1125).intl;
   intl2 = guildId(1125).intl;
@@ -230,12 +230,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   intl3 = tmp9(1125).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "text-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5235).Text;
+  const Text = tmp9(5270).Text;
   const intl4 = tmp9(1125).intl;
   format = intl4.format;
   prop = tmp9(1125).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(5990);
+  const tmp3Result = tmp3(6025);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_13;
   tmp12 = View;
@@ -260,7 +260,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1125).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5235).Text;
+  const Text2 = tmp9(5270).Text;
   intl5 = tmp9(1125).intl;
   obj6 = { link };
   items[1] = closure_12(Text2, obj5);

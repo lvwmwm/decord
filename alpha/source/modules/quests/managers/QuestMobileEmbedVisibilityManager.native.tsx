@@ -1,35 +1,35 @@
-// Module ID: 19418
-// Function ID: 19419
+// Module ID: 19681
+// Function ID: 19682
 // Name: QuestMobileEmbedVisibilityManager
-// Dependencies: [32, 5212, 6773, 9714, 6805, 4828, 4824, 4875, 10024, 1998, 7777, 9577, 1084, 7784, 7216, 1456, 5704, 6714, 6718, 14158, 6803, 5151, 1104, 1105, 5911, 7802, 5152, 2]
+// Dependencies: [32, 5247, 6807, 9746, 6839, 4860, 4856, 4907, 10056, 1998, 7811, 9609, 1084, 7818, 7250, 1456, 5739, 6748, 6752, 14381, 6837, 5186, 1104, 1105, 5946, 7836, 5187, 2]
 
-// Module 19418 (QuestMobileEmbedVisibilityManager)
+// Module 19681 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1084 */;
 import ConstantsIOS from "ConstantsIOS" /* 1104 */;
 import ChannelTypes from "ChannelTypes" /* 1105 */;
 import LRUCacheDefault from "LRUCache" /* 1456 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
-import RootNavigationRef from "RootNavigationRef" /* 5152 */;
-import CodedLink from "CodedLink" /* 5704 */;
-import QuestTypes from "QuestTypes" /* 6714 */;
-import AdCreativeType from "AdCreativeType" /* 6718 */;
-import isChannelFocused from "isChannelFocused" /* 6803 */;
-import getQuestLogger from "getQuestLogger" /* 7784 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7802 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9577 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 14158 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
+import RootNavigationRef from "RootNavigationRef" /* 5187 */;
+import CodedLink from "CodedLink" /* 5739 */;
+import QuestTypes from "QuestTypes" /* 6748 */;
+import AdCreativeType from "AdCreativeType" /* 6752 */;
+import isChannelFocused from "isChannelFocused" /* 6837 */;
+import getQuestLogger from "getQuestLogger" /* 7818 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9609 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 14381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ActionSheetStore from "ActionSheetStore" /* 5212 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9714 */;
-import VoicePanelStore from "VoicePanelStore" /* 6805 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import AlertStore from "AlertStore" /* 10024 */;
+import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9746 */;
+import VoicePanelStore from "VoicePanelStore" /* 6839 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import AlertStore from "AlertStore" /* 10056 */;
 import AppStateStore from "AppStateStore" /* 1998 */;
-import QuestStore from "QuestStore" /* 7777 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
+import QuestStore from "QuestStore" /* 7811 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
 import size from "module_2" /* 2 */;
 
 let map, questLogger, set;
@@ -37,7 +37,7 @@ let map, questLogger, set;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const useAlertStore2 = tmp(5911);
+const useAlertStore2 = tmp(5946);
 ({ useChannelDetailsStore: metroImportDefault, getIsChannelDetailsSearchActive: metroImportAll } = ChannelDetailsStore);
 const isTextChannel = ChannelRecord.isTextChannel;
 let closure_16 = ContentImpressionTrackerConstants.MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE;
@@ -277,7 +277,7 @@ class QuestMobileEmbedVisibilityManager extends AutomaticLifecycleManager {
             return false;
           } else {
             if (null == AlertStore.getAlert()) {
-              const useAlertStore = tmp3(5911).useAlertStore;
+              const useAlertStore = tmp3(5946).useAlertStore;
               if (useAlertStore.getState().alerts.length <= 0) {
                 const tmp14 = type === ChannelTypes.ChannelTypes.GUILD_VOICE && chatOpen;
                 let result = null != type && isTextChannel(type);

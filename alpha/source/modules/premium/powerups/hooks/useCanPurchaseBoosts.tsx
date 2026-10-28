@@ -1,12 +1,12 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13664
+// Function ID: 13665
 // Name: useCanPurchaseBoosts
-// Dependencies: [1389, 1391, 558, 576, 7506, 504, 2]
+// Dependencies: [1389, 1391, 558, 576, 7541, 504, 2]
 
-// Module 13445 (useCanPurchaseBoosts)
+// Module 13664 (useCanPurchaseBoosts)
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7506 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7541 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

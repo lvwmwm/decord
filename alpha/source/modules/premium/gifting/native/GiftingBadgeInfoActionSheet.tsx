@@ -1,22 +1,22 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10536
+// Function ID: 10537
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4973, 8681, 1084, 21, 4972, 587, 558, 576, 1630, 8673, 504, 1264, 1125, 2631, 5235, 10505, 10508, 5266, 2]
+// Dependencies: [19, 17, 5005, 8718, 1084, 21, 5004, 587, 558, 576, 1630, 8710, 504, 1264, 1125, 2631, 5270, 10537, 10540, 5301, 2]
 
-// Module 10504 (GiftingBadgeInfoActionSheet)
+// Module 10536 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2631 from "module_2631" /* 2631 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8681 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10505 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10508 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8718 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10537 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10540 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -180,8 +180,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
       }
       let obj2 = { style: title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: tmp20 };
       cResult[12] = tmp4.title;
-      cResult[13] = closure_9(tmp(5235).Text, obj2);
-      const tmp23 = closure_9(tmp(5235).Text, obj2);
+      cResult[13] = closure_9(tmp(5270).Text, obj2);
+      const tmp23 = closure_9(tmp(5270).Text, obj2);
     } else {
       class B {
         constructor() {
@@ -219,8 +219,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
       }
       let obj3 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp24 };
       cResult[15] = tmp4.description;
-      cResult[16] = closure_9(tmp(5235).Text, obj3);
-      const tmp27 = closure_9(tmp(5235).Text, obj3);
+      cResult[16] = closure_9(tmp(5270).Text, obj3);
+      const tmp27 = closure_9(tmp(5270).Text, obj3);
     } else {
       class B {
         constructor() {
@@ -337,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
         const tmp13 = React4;
         if (tmp13Result) {
           const obj6 = { variant: "text-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2631.qvx9E4, obj7) };
-          const Text = tmp8(5235).Text;
+          const Text = tmp8(5270).Text;
           intl = tmp8(1125).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

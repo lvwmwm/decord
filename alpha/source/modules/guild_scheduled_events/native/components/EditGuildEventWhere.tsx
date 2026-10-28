@@ -1,25 +1,25 @@
-// Module ID: 8945
-// Function ID: 8946
+// Module ID: 8979
+// Function ID: 8980
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 4824, 4904, 6785, 4830, 1084, 21, 4972, 1125, 8893, 558, 576, 504, 1502, 1893, 8889, 4981, 2046, 8946, 8912, 5235, 5245, 9003, 9004, 9005, 8910, 2]
+// Dependencies: [32, 19, 4856, 4936, 6819, 4862, 1084, 21, 5004, 1125, 8927, 558, 576, 504, 1502, 1893, 8923, 5013, 2046, 8980, 8946, 5270, 5280, 9037, 9038, 9039, 8944, 2]
 
-// Module 8945 (EditGuildEventWhere)
+// Module 8979 (EditGuildEventWhere)
 import intl5 from "intl" /* 1125 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8889 */;
-import EntityUtils from "EntityUtils" /* 8893 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8923 */;
+import EntityUtils from "EntityUtils" /* 8927 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -256,7 +256,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     function handleChangeEventEntityType(entityType) {
       _slicedToArray(null);
-      const obj = { entityType, scheduledEndTime: "y" };
+      const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef2046(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
@@ -412,7 +412,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     entityType: guildEvent.entityType,
     onChange: function handleChangeEventEntityType(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "y" };
+      const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef2046(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;

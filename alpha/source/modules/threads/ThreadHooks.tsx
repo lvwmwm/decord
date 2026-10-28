@@ -1,30 +1,30 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7406
+// Function ID: 7407
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5190, 4828, 502, 4824, 4904, 6771, 7372, 1084, 558, 576, 1096, 504, 6818, 11, 12, 7379, 7377, 7380, 7381, 6654, 6663, 2]
+// Dependencies: [32, 19, 5225, 4860, 502, 4856, 4936, 6805, 7407, 1084, 558, 576, 1096, 504, 6852, 11, 12, 7414, 7412, 7415, 7416, 6688, 6697, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
 
-// Module 7371 (ThreadHooks)
+// Module 7406 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6654 */;
-import AgeGateUtils from "AgeGateUtils" /* 6663 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6818 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7377 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7379 */;
-import useIsRemoteDefault from "useIsRemote" /* 7380 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7381 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6688 */;
+import AgeGateUtils from "AgeGateUtils" /* 6697 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6852 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7412 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7414 */;
+import useIsRemoteDefault from "useIsRemote" /* 7415 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7416 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5190 */;
+import createExperiment from "createExperiment" /* 5225 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6771 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7372 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6805 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7407 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

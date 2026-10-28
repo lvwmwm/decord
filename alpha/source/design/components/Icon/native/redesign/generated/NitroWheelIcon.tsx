@@ -1,14 +1,14 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9456
+// Function ID: 9457
 // Name: NitroWheelIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8421, 5669, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8455, 5704, 2]
 
-// Module 9424 (NitroWheelIcon)
+// Module 9456 (NitroWheelIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5669 */;
-import AssetRegistry from "AssetRegistry" /* 8421 */;
+import BaseIconImage2 from "BaseIconImage" /* 5704 */;
+import AssetRegistry from "AssetRegistry" /* 8455 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroWheel
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5669).BaseIconImage;
+  const BaseIconImage = tmp(5704).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

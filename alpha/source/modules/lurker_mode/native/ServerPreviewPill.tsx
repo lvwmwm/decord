@@ -1,17 +1,17 @@
-// Module ID: 17648
-// Function ID: 17649
+// Module ID: 17883
+// Function ID: 17884
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1125, 5235, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5270, 2]
 
-// Module 17648 (ServerPreviewPill)
+// Module 17883 (ServerPreviewPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
+import Text_Text from "Text/Text" /* 5270 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

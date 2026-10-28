@@ -1,27 +1,28 @@
-// Module ID: 18949
-// Function ID: 18950
+// Module ID: 19203
+// Function ID: 19204
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 9745, 4972, 587, 18950, 1999, 5911, 558, 576, 7097, 18948, 6673, 18947, 6932, 1381, 17456, 18951, 13616, 13604, 18952, 18958, 2]
+// Dependencies: [19, 17, 21, 9777, 5004, 587, 19204, 1999, 5946, 558, 576, 7131, 19201, 6707, 19200, 6966, 1381, 17691, 19205, 13834, 13822, 19206, 19215, 19221, 19207, 2]
 
-// Module 18949 (NewUserModal)
+// Module 19203 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NewUserUtils from "NewUserUtils" /* 18948 */;
+import NewUserUtils from "NewUserUtils" /* 19201 */;
+import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19207 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9745 */;
-import createStyles from "createStyles" /* 4972 */;
+import NativeStackView from "NativeStackView" /* 9777 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, dependencyMap;
+let _require, closure_0, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f138629 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f139444 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -29,7 +30,7 @@ let closure_7 = NativeStackView.createNativeStackNavigator();
 let obj = { header: obj2 };
 obj2 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 let closure_8 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal(arg0) {
   let accessibilityNativeStackOptions;
   let closure_2;
   let initialOnboardingStepIndex;
@@ -37,15 +38,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
   let items;
   let obj10;
   let obj12;
+  let obj14;
+  let obj16;
   let obj4;
   let obj6;
   let obj8;
+  let ref;
   let tmp5;
   let tmp7;
   let tmp8;
   let tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(15);
+  const cResult = obj.c(16);
   ({ initialRouteName, initialOnboardingStepIndex } = arg0);
   const tmp4 = closure_8();
   _require = tmp4;
@@ -57,12 +61,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
   } else {
     tmp5 = cResult[1];
   }
-  const ref = accessibilityNativeStackOptions.useRef(tmp5);
+  importDefault = accessibilityNativeStackOptions.useRef(tmp5);
   dependencyMap = accessibilityNativeStackOptions.useRef(null);
-  const tmpResult = tmp(7097);
+  const tmpResult = tmp(7131);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function f(flag) {
+    const fn = function v(flag) {
       let lastShownStepIndex;
       let onboardingStepIndex;
       ({ lastShownStepIndex, onboardingStepIndex } = ref.current);
@@ -102,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = tmp(6932);
+  const tmpResult2 = tmp(6966);
   tmpResult2.useNavigatorBackPressHandler(tmp8);
   if (cResult[4] === accessibilityNativeStackOptions) {
     let tmp10;
@@ -111,6 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     let tmp19;
     let tmp23;
     let tmp27;
+    let tmp31;
     if (cResult[5] === tmp4.header) {
       tmp10 = cResult[6];
     }
@@ -146,7 +151,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f138629);
+                      const lazyResult = React.lazy(f139444);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -192,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     const _Symbol4 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       const obj9 = {
-        name: "discoverability",
+        name: "interest-picker",
         options: { headerShown: false },
         getComponent() {
               return closure_0(closure_2[21]).default;
@@ -209,7 +214,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     const _Symbol5 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj11 = {
-        name: "connect-guardian",
+        name: "discoverability",
+        options: { headerShown: false },
         getComponent() {
               return closure_0(closure_2[22]).default;
             },
@@ -222,20 +228,38 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     } else {
       tmp27 = cResult[11];
     }
-    if (cResult[12] === tmp10) {
-      let tmp31;
-      if (cResult[13] === initialRouteName) {
-        tmp31 = cResult[14];
-      }
-      return tmp31;
+    const _Symbol6 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj13 = {
+        name: "connect-guardian",
+        getComponent() {
+              return closure_0(closure_2[23]).default;
+            },
+        initialParams: obj14
+      };
+      obj14 = { onComplete: tmp7 };
+      const tmp34 = closure_5(closure_7.Screen, obj13);
+      cResult[12] = tmp34;
+      tmp31 = tmp34;
+    } else {
+      tmp31 = cResult[12];
     }
-    const obj13 = { screenOptions: tmp10, initialRouteName, children: items };
-    items = [tmp11, tmp15, tmp19, tmp23, tmp27];
-    const tmp34 = closure_6(closure_7.Navigator, obj13);
-    cResult[12] = tmp10;
-    cResult[13] = initialRouteName;
-    cResult[14] = tmp34;
-    tmp31 = tmp34;
+    if (cResult[13] === tmp10) {
+      let tmp35;
+      if (cResult[14] === initialRouteName) {
+        tmp35 = cResult[15];
+      }
+      return tmp35;
+    }
+    const obj15 = { children: closure_6(closure_7.Navigator, obj16) };
+    obj16 = { screenOptions: tmp10, initialRouteName, children: items };
+    items = [tmp11, tmp15, tmp19, tmp23, tmp27, tmp31];
+    const tmp38 = InterestPickerPicksContextDefault;
+    const tmp41 = closure_5(tmp38, obj15);
+    cResult[13] = tmp10;
+    cResult[14] = initialRouteName;
+    cResult[15] = tmp41;
+    tmp35 = tmp41;
   }
   const fn3 = function y(navigation) {
     let str;
@@ -273,10 +297,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
   let initialOnboardingStepIndex;
   let initialRouteName;
   let items;
+  let ref;
   ({ initialRouteName, initialOnboardingStepIndex } = arg0);
   react = undefined;
   _require = closure_8();
-  const ref = react.useRef({ onboardingStepIndex: initialOnboardingStepIndex, lastShownStepIndex: initialOnboardingStepIndex });
+  importDefault = react.useRef({ onboardingStepIndex: initialOnboardingStepIndex, lastShownStepIndex: initialOnboardingStepIndex });
   dependencyMap = react.useRef(null);
   let obj = require("Navigator");
   react = obj.useAccessibilityNativeStackOptions();
@@ -309,7 +334,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     MinimizeApp.minimizeApp();
     return true;
   });
-  const Navigator = closure_7.Navigator;
   const obj3 = {
     screenOptions(navigation) {
       let str;
@@ -340,20 +364,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     initialRouteName,
     children: items
   };
-  const tmp3 = closure_6;
+  const Navigator = closure_7.Navigator;
+  const tmp4 = InterestPickerPicksContextDefault;
+  const tmp5 = closure_6;
   if (initialRouteName == null) {
     initialRouteName = "choose-avatar";
   }
-  items = [, , , , ];
-  const obj4 = {
+  items = [, , , , , ];
+  const obj4 = { children: tmp5(Navigator, obj3) };
+  const obj5 = {
     name: "enable-notification",
     getComponent() {
       return closure_0(closure_2[17]).RedesignNotificationScreen;
     },
     initialParams: { onComplete }
   };
-  items[0] = closure_5(closure_7.Screen, obj4);
-  const obj5 = {
+  items[0] = closure_5(closure_7.Screen, obj5);
+  const obj6 = {
     name: "choose-avatar",
     getComponent() {
       return closure_0(closure_2[18]).default;
@@ -365,7 +392,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f138629);
+              const lazyResult = React.lazy(f139444);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {
@@ -384,8 +411,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     },
     initialParams: { onComplete }
   };
-  items[1] = closure_5(closure_7.Screen, obj5);
-  const obj6 = {
+  items[1] = closure_5(closure_7.Screen, obj6);
+  const obj7 = {
     name: "contact-sync",
     options: { headerShown: false },
     getComponent() {
@@ -393,25 +420,34 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal
     },
     initialParams: { onComplete }
   };
-  items[2] = closure_5(closure_7.Screen, obj6);
-  const obj7 = {
-    name: "discoverability",
+  items[2] = closure_5(closure_7.Screen, obj7);
+  const obj8 = {
+    name: "interest-picker",
     options: { headerShown: false },
     getComponent() {
       return closure_0(closure_2[21]).default;
     },
     initialParams: { onComplete }
   };
-  items[3] = closure_5(closure_7.Screen, obj7);
-  const obj8 = {
-    name: "connect-guardian",
+  items[3] = closure_5(closure_7.Screen, obj8);
+  const obj9 = {
+    name: "discoverability",
+    options: { headerShown: false },
     getComponent() {
       return closure_0(closure_2[22]).default;
     },
     initialParams: { onComplete }
   };
-  items[4] = closure_5(closure_7.Screen, obj8);
-  return tmp3(Navigator, obj3);
+  items[4] = closure_5(closure_7.Screen, obj9);
+  const obj10 = {
+    name: "connect-guardian",
+    getComponent() {
+      return closure_0(closure_2[23]).default;
+    },
+    initialParams: { onComplete }
+  };
+  items[5] = closure_5(closure_7.Screen, obj10);
+  return closure_5(tmp4, obj4);
 });
 const result = size.fileFinishedImporting("modules/nuf/native/components/NewUserModal.tsx");
 

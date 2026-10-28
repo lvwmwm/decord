@@ -1,28 +1,28 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16956
+// Function ID: 16957
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1084, 4821, 21, 4808, 558, 576, 7497, 7235, 11212, 1125, 16728, 16730, 2]
+// Dependencies: [32, 19, 1084, 4853, 21, 4840, 558, 576, 7532, 7269, 11248, 1125, 16957, 16959, 2]
 
-// Module 16727 (AccessibilitySetting)
+// Module 16956 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7497 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 16728 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7532 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 16957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let dependencyMap;
 
 let tmp;
-const Badge_Badge = tmp(7235);
+const Badge_Badge = tmp(7269);
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
   let tmp4;
   let obj = first(576);
   const cResult = obj.c(3);
-  const obj2 = first(7497);
+  const obj2 = first(7532);
   [first, tmp4] = obj2.useSelectedDismissibleContent(items);
   dependencyMap = tmp4;
   if (cResult[0] === tmp4) {
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
 }) : (function usePreNavigationAction() {
   let closure_1;
   let first;
-  let obj = first(7497);
+  let obj = first(7532);
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11333
+// Function ID: 11334
 // Name: GroupDMNitroUpsellModel
 // Dependencies: [1389, 1084, 1391, 1988, 558, 576, 504, 1125, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI
 
-// Module 11296 (GroupDMNitroUpsellModel)
+// Module 11333 (GroupDMNitroUpsellModel)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl from "intl" /* 1125 */;

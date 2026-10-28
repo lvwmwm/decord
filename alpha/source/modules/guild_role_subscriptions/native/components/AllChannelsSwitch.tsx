@@ -1,23 +1,23 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19617
+// Function ID: 19618
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 16627, 21, 4972, 587, 558, 576, 5040, 1199, 5235, 9041, 1125, 19355, 19356, 2]
+// Dependencies: [19, 17, 16856, 21, 5004, 587, 558, 576, 5072, 1199, 5270, 9074, 1125, 19618, 19619, 2]
 
-// Module 19354 (AllChannelsSwitch)
+// Module 19617 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import react_native2 from "react-native" /* 5040 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19355 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19356 */;
+import react_native2 from "react-native" /* 5072 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9074 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16856 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19618 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19619 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -178,7 +178,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg
   items = [hasOwnProperty(Icon, obj3), , ];
   const obj4 = { style: tmp.rowLabel, variant: str, color: str2, lineClamp: 1, children: label };
   str = "text-md/medium";
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   if (selected) {
     str = "text-md/semibold";
   }

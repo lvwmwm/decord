@@ -1,170 +1,84 @@
 // Module ID: 12636
 // Function ID: 12637
-// Dependencies: [32, 12589, 12588]
-// Exports: dsnToString, makeDsn
+// Dependencies: [12637, 12635]
 
 // Module 12636
-import _mod12589 from "module_12589" /* 12589 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import GLOBAL_OBJ from "module_12637" /* 12637 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
-    }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
-      }
-    }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
-    }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
-  } else {
-    const obj = _mod12589;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
+const require = globalThis.__r;
+let _require, c0, dependencyMap;
+
+function consoleSandbox(fn) {
+  let closure_1;
+  let console;
+  const f116190 = (item) => {
+    console[item] = closure_1[item];
+  };
+  const tmp = console;
+  if ("console" in console(12637).GLOBAL_OBJ) {
+    console = tmp(12637).GLOBAL_OBJ.console;
+    dependencyMap = {};
+    const _Object = Object;
+    const keys = Object.keys(obj);
+    const item = keys.forEach((item) => {
+      closure_1[item] = console[item];
+      console[item] = obj[item];
     });
+    try {
+      const tmp6 = fn();
+      const item1 = keys.forEach(f116190);
+      return tmp6;
+    } catch (tmp8) {
+      const item2 = keys.forEach(f116190);
+      throw tmp8;
+    }
+  } else {
+    return fn();
   }
 }
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+let items = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+const originalConsoleMethods = {};
 
-export { dsnFromString };
-export const dsnToString = function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
-  if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
+export const CONSOLE_LEVELS = items;
+export { consoleSandbox };
+export const logger = GLOBAL_OBJ.getGlobalSingleton("logger", function makeLogger() {
+  _require = false;
+  let obj = {
+    enable() {
+      c0 = true;
+    },
+    disable() {
+      c0 = false;
+    },
+    isEnabled() {
+      return c0;
     }
-  }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
-};
-export const makeDsn = function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
+  };
+  let tmp = items;
+  const forEach = items.forEach;
+  if (require("module_12635").DEBUG_BUILD) {
+    const item = forEach((arg0) => {
+      let closure_0 = arg0;
+      obj[arg0] = () => {
+        const args = [...arguments];
+        const tmp = args;
+        if (tmp) {
+          consoleSandbox(() => {
+            const _console = GLOBAL_OBJ.GLOBAL_OBJ.console;
+            obj = _console[args];
+            items = ["Sentry Logger [" + args + "]:", ...closure_0];
+            obj.apply(items);
+          });
+        }
+      };
+    });
   } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+    const item1 = forEach((arg0) => {
+      obj[arg0] = () => {
+
+      };
+    });
   }
-  if (url) {
-    let flag = true;
-    if (url(12588).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod12589.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
-            }
-            if (num3) {
-              const logger3 = tmp2(12589).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(12589).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
-          }
-          num = num2;
-        } else {
-          let logger = tmp2(12589).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
-        }
-        found = num;
-      }
-      flag = !found;
-    }
-    if (flag) {
-      return url;
-    }
-  }
-};
+  return obj;
+});
+export { originalConsoleMethods };

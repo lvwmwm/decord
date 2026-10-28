@@ -1,17 +1,17 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 13669
+// Function ID: 13670
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 4846, 5182, 13438, 4808, 1125, 2567, 558, 576, 504, 13451, 5186, 13439, 2]
+// Dependencies: [19, 4878, 5217, 13657, 4840, 1125, 2567, 558, 576, 504, 13670, 5221, 13658, 2]
 
-// Module 13450 (useGuildPowerupRollbackModalConfig)
+// Module 13669 (useGuildPowerupRollbackModalConfig)
 import intl3 from "intl" /* 1125 */;
 import _modDef2567 from "module_2567" /* 2567 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13438 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13451 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13657 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13670 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5182 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5217 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

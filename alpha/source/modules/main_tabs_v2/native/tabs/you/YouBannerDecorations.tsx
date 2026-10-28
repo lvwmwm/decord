@@ -1,28 +1,28 @@
-// Module ID: 9517
-// Function ID: 9518
+// Module ID: 9549
+// Function ID: 9550
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2066, 1389, 4821, 1391, 21, 1382, 587, 4972, 558, 9518, 7560, 5002, 4808, 576, 1125, 504, 8675, 8718, 8729, 4979, 683, 2050, 9562, 9564, 9565, 9568, 9569, 6714, 14168, 14176, 14184, 14186, 9424, 7489, 14177, 5259, 2]
+// Dependencies: [19, 17, 2066, 1389, 4853, 1391, 21, 1382, 587, 5004, 558, 9550, 7594, 5034, 4840, 576, 1125, 504, 8712, 8755, 8766, 5011, 683, 2050, 9594, 9596, 9597, 9600, 9601, 6748, 14391, 14400, 14408, 14410, 9456, 7524, 14401, 5294, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9517 (YouBannerDecorations)
+// Module 9549 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2066 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
-import QuestTypes from "QuestTypes" /* 6714 */;
-import useTrialOffer from "useTrialOffer" /* 7560 */;
-import PromotionsHooks from "PromotionsHooks" /* 9518 */;
-import tracking_Tracking from "tracking/Tracking" /* 9568 */;
-import QuestUtils from "QuestUtils" /* 9569 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
+import QuestTypes from "QuestTypes" /* 6748 */;
+import useTrialOffer from "useTrialOffer" /* 7594 */;
+import PromotionsHooks from "PromotionsHooks" /* 9550 */;
+import tracking_Tracking from "tracking/Tracking" /* 9600 */;
+import QuestUtils from "QuestUtils" /* 9601 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -169,7 +169,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   let id;
-  const tmp11 = navigateToPremium(8675);
+  const tmp11 = navigateToPremium(8712);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -179,8 +179,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (cResult[4] === stateFromStores) {
       tmp14 = cResult[5];
     }
-    ({ theme, primaryColor, secondaryColor } = navigateToPremium(8718)(tmp14));
-    navigateToPremium(8718)(tmp14);
+    ({ theme, primaryColor, secondaryColor } = navigateToPremium(8755)(tmp14));
+    navigateToPremium(8755)(tmp14);
     if (cResult[6] === primaryColor) {
       if (cResult[7] === secondaryColor) {
         let tmp16;
@@ -188,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         if (cResult[8] === theme) {
           tmp16 = cResult[9];
         }
-        const tmpResult6 = tmp(8729);
+        const tmpResult6 = tmp(8766);
         const userProfileColors = tmpResult6.useUserProfileColors(tmp16);
         ({ containerBackground, containerBorderColor, gradientSecondaryBackground } = userProfileColors);
         if (cResult[10] === containerBackground) {
@@ -210,23 +210,23 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 const hasPremiumSubscriptionToDisplay = tmpResult7.useHasPremiumSubscriptionToDisplay();
                 const tmp34 = closure_13();
                 dependencyMap = tmp34;
-                const tmp35 = navigateToPremium(9562)();
+                const tmp35 = navigateToPremium(9594)();
                 const showBadge = tmp35.showBadge;
                 const dismissBadge = tmp35.dismissBadge;
                 const _Symbol = Symbol;
                 if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmpResult8 = tmp(9564);
+                  const tmpResult8 = tmp(9596);
                   const isEligibleForQuests = tmpResult8.getIsEligibleForQuests();
                   cResult[18] = isEligibleForQuests;
                   tmp36 = isEligibleForQuests;
                 } else {
                   tmp36 = cResult[18];
                 }
-                const tmp38 = navigateToPremium(9565)("YouBannerDecorations");
+                const tmp38 = navigateToPremium(9597)("YouBannerDecorations");
                 if (tmp38 != null) {
                   placement = tmp38.placement;
                 }
-                const tmpResult9 = tmp(7560);
+                const tmpResult9 = tmp(7594);
                 const tmp40 = null != tmpResult9.useTrialOffer(closure_9);
                 let closure_5 = tmp40;
                 if (cResult[19] === tmp40) {
@@ -257,7 +257,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       if (cResult[28] !== ("you_screen" === placement)) {
                         let tmp46 = null;
                         if ("you_screen" === placement) {
-                          tmp46 = closure_10(tmp10(14168), {}, "conjure");
+                          tmp46 = closure_10(tmp10(14391), {}, "conjure");
                         }
                         cResult[28] = "you_screen" === placement;
                         cResult[29] = tmp46;
@@ -431,7 +431,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                 tmp92 = tmp95;
                                               }
                                               const obj9 = { style: tmp31.containerFloatingGradient, pointerEvents: "none" };
-                                              const tmp10Result = navigateToPremium(5259);
+                                              const tmp10Result = navigateToPremium(5294);
                                               const merged = Object.assign(tmp80);
                                               const tmp87 = closure_10(tmp10Result, obj9);
                                               cResult[65] = tmp80;
@@ -454,7 +454,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                           tmp70 = tmp73;
                                         }
                                         const obj12 = { children: tmp65 };
-                                        const tmp69 = closure_10(tmp(14177).YouScreenNavIconMeasurer, obj12, tmp5);
+                                        const tmp69 = closure_10(tmp(14401).YouScreenNavIconMeasurer, obj12, tmp5);
                                         cResult[50] = tmp65;
                                         cResult[51] = tmp5;
                                         cResult[52] = tmp69;
@@ -474,8 +474,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                 tmp65 = found;
                               }
                             }
-                            const obj13 = { ref: settingsButtonRef, IconComponent: tmp(7489).SettingsIcon, accessibilityLabel: tmp59, onPress: tmp41, showRedDot: tmp34, testID: "you_tab_settings_button" };
-                            const tmp10Result5 = navigateToPremium(14176);
+                            const obj13 = { ref: settingsButtonRef, IconComponent: tmp(7524).SettingsIcon, accessibilityLabel: tmp59, onPress: tmp41, showRedDot: tmp34, testID: "you_tab_settings_button" };
+                            const tmp10Result5 = navigateToPremium(14400);
                             const tmp64 = closure_10(tmp10Result5, obj13, "settings");
                             cResult[40] = tmp34;
                             cResult[41] = tmp41;
@@ -485,8 +485,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                           }
                           let tmp56 = null;
                           if (!hasPremiumSubscriptionToDisplay) {
-                            const obj14 = { IconComponent: tmp(9424).NitroWheelIcon, accessibilityLabel: intl2.string(tmp(1125).t.Ipxkog), label: intl3.string(tmp(1125).t.Ipxkog), onPress: tmp42 };
-                            const tmp10Result6 = navigateToPremium(14176);
+                            const obj14 = { IconComponent: tmp(9456).NitroWheelIcon, accessibilityLabel: intl2.string(tmp(1125).t.Ipxkog), label: intl3.string(tmp(1125).t.Ipxkog), onPress: tmp42 };
+                            const tmp10Result6 = navigateToPremium(14400);
                             intl2 = tmp(1125).intl;
                             intl3 = tmp(1125).intl;
                             tmp56 = closure_10(tmp10Result6, obj14, "nitro");
@@ -497,7 +497,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                           tmp55 = tmp56;
                         }
                         const obj15 = { shopButtonRef, navigateToShop };
-                        const tmp54 = closure_10(navigateToPremium(14186), obj15, "shop");
+                        const tmp54 = closure_10(navigateToPremium(14410), obj15, "shop");
                         cResult[33] = navigateToShop;
                         cResult[34] = shopButtonRef;
                         cResult[35] = tmp54;
@@ -505,8 +505,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       }
                       let tmp49 = null;
                       if (tmp36) {
-                        const obj16 = { IconComponent: tmp(14184).QuestsIcon, accessibilityLabel: intl.string(tmp(1125).t.JALI2K), onPress: tmp43, showRedDot: showBadge };
-                        const tmp10Result7 = navigateToPremium(14176);
+                        const obj16 = { IconComponent: tmp(14408).QuestsIcon, accessibilityLabel: intl.string(tmp(1125).t.JALI2K), onPress: tmp43, showRedDot: showBadge };
+                        const tmp10Result7 = navigateToPremium(14400);
                         intl = tmp(1125).intl;
                         tmp49 = closure_10(tmp10Result7, obj16, "quests");
                       }
@@ -539,11 +539,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                     let tmp5 = closure_5;
                     if (tmp5) {
                       const tmpResult = DismissibleContentUnsafeUtils;
-                      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+                      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4840).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
                     }
                     if (tmp5) {
                       const tmpResult2 = DismissibleContentUnsafeUtils;
-                      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+                      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4840).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
                     }
                   }
                 }
@@ -570,7 +570,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
         }
-        const tmpResult10 = tmp(4979);
+        const tmpResult10 = tmp(5011);
         if (!tmpResult10.isThemeLight(theme)) {
           tmp19 = containerBackground;
         } else {
@@ -705,11 +705,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4840).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4808).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4840).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];

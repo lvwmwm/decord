@@ -1,15 +1,15 @@
-// Module ID: 7425
-// Function ID: 7426
+// Module ID: 7460
+// Function ID: 7461
 // Name: useCanRing
-// Dependencies: [502, 6498, 4824, 4914, 1084, 558, 576, 504, 2]
+// Dependencies: [502, 6532, 4856, 4946, 1084, 558, 576, 504, 2]
 // Exports: canRingUsersInChannel
 
-// Module 7425 (useCanRing)
+// Module 7460 (useCanRing)
 import Constants from "Constants" /* 1084 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6498 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import CallStore from "CallStore" /* 6532 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

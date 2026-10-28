@@ -1,21 +1,21 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16398
+// Function ID: 16399
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8331, 558, 7318, 576, 6663, 7319, 6655, 1381, 7884, 6658, 4800, 11212, 1125, 2]
+// Dependencies: [8365, 558, 7352, 576, 6697, 7353, 6689, 1381, 7918, 6692, 4832, 11248, 1125, 2]
 
-// Module 16170 (AndroidViewNsfwDmCommandsSetting)
+// Module 16398 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6655 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6658 */;
-import AgeGateUtils from "AgeGateUtils" /* 6663 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7318 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7319 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7884 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
+import AgeGateUtils from "AgeGateUtils" /* 6697 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7352 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7353 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -108,7 +108,7 @@ let obj = {
         const result = showAgeVerificationGetStartedModal(obj2);
       }
     }
-    const ViewNsfwCommands = tmp(4800).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(4832).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate: tmp3

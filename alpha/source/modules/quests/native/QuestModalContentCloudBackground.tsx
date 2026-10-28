@@ -1,18 +1,18 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16743
+// Function ID: 16744
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 4972, 558, 576, 5206, 4994, 5259, 16515, 16516, 5670, 2]
+// Dependencies: [19, 17, 21, 5004, 558, 576, 5241, 5026, 5294, 16744, 16745, 5705, 2]
 
-// Module 16514 (QuestModalContentCloudBackground)
+// Module 16743 (QuestModalContentCloudBackground)
 import react2 from "react" /* 576 */;
-import themes from "themes" /* 4994 */;
-import useTheme from "useTheme" /* 5206 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import FastImageDefault from "FastImage" /* 5670 */;
+import themes from "themes" /* 5026 */;
+import useTheme from "useTheme" /* 5241 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import FastImageDefault from "FastImage" /* 5705 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,11 +31,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "rejectWithError" } : { bottom: "rejectWithError" };
+  const tmp3 = arg0 ? { top: "paths" } : { bottom: "paths" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "rejectWithError" } : { bottom: "rejectWithError" };
+  const tmp6 = arg0 ? { top: "paths" } : { bottom: "paths" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -103,7 +103,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
             if (cResult[11] === tmp14) {
               tmp15 = cResult[12];
             }
-            const tmp16Result = importDefault(tmp6 ? 16515 : 16516);
+            const tmp16Result = importDefault(tmp6 ? 16744 : 16745);
             if (cResult[13] === str2) {
               if (cResult[14] === tmp15) {
                 let tmp18;
@@ -200,7 +200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16515 : 16516), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16744 : 16745), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

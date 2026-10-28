@@ -1,10 +1,10 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9698
+// Function ID: 9699
 // Name: ThreadAutoArchive
 // Dependencies: [1124, 1101, 1125, 606, 2046, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 9666 (ThreadAutoArchive)
+// Module 9698 (ThreadAutoArchive)
 import memoizeDefault from "memoize" /* 606 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;

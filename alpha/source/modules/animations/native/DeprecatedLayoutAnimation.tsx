@@ -1,13 +1,13 @@
-// Module ID: 5596
-// Function ID: 5597
+// Module ID: 5631
+// Function ID: 5632
 // Name: DeprecatedLayoutAnimation
-// Dependencies: [17, 4973, 1381, 2]
+// Dependencies: [17, 5005, 1381, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5596 (DeprecatedLayoutAnimation)
+// Module 5631 (DeprecatedLayoutAnimation)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let LayoutAnimation;

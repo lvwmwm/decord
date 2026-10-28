@@ -1,140 +1,158 @@
 // Module ID: 12679
 // Function ID: 12680
-// Dependencies: [12645, 12596, 12634, 12595, 12598, 12617, 12589]
+// Dependencies: [12635, 12636, 12680, 12683, 12672, 12641]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12679
-import _mod12595 from "module_12595" /* 12595 */;
-import _mod12596 from "module_12596" /* 12596 */;
-import module_12645 from "module_12645" /* 12645 */;
+import _mod12641 from "module_12641" /* 12641 */;
+import _mod12680 from "module_12680" /* 12680 */;
+import _mod12683 from "module_12683" /* 12683 */;
+import DEBUG_BUILD from "module_12635" /* 12635 */;
+import CONSOLE_LEVELS from "module_12636" /* 12636 */;
+
+const require = globalThis.__r;
+let _require, integrations;
 
 
-export const extraErrorDataIntegration = module_12645.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_1;
-  const depth = obj.depth;
-  let num = 3;
-  if (undefined !== depth) {
-    num = depth;
-  }
-  const captureErrorCause = obj.captureErrorCause;
-  closure_1 = undefined === captureErrorCause || captureErrorCause;
-  let obj2 = {
-    name: "ExtraErrorData",
-    processEvent(contexts, arg1, getOptions) {
-      function _extractErrorData(originalException, arg1, maxValueLength) {
-        try {
-          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
-          const obj = {};
-          const _Object = Object;
-          const keys = Object.keys(originalException);
-          const iter = keys[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let tmp8 = nextResult;
-            if (-1 === items.indexOf(nextResult)) {
-              let tmp11 = originalException[tmp8];
-              let tmp12 = tmp11;
-              let tmp15 = num;
-              let tmp17 = closure_1_1;
-              let obj2 = num(closure_1_1[1]);
-              if (!obj2.isError(tmp11)) {
-                let truncateResult;
-                if (typeof tmp12 !== "string") {
-                  truncateResult = tmp11;
-                }
-                obj[tmp8] = truncateResult;
-              }
-              let tmp15Result = tmp15(tmp17[4]);
-              let _HermesInternal = HermesInternal;
-              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
-            }
-            continue;
-          }
-          const tmp23 = arg1 && undefined !== originalException.cause;
-          if (tmp23) {
-            let str1;
-            const obj4 = -1(closure_1_1[1]);
-            if (obj4.isError(originalException.cause)) {
-              str1 = str2.toString();
-            } else {
-              str1 = str2;
-            }
-            obj.cause = str1;
-          }
-          if (typeof originalException.toJSON === "function") {
-            const toJSONResult = originalException.toJSON();
-            const _Object2 = Object;
-            const keys1 = Object.keys(toJSONResult);
-            const tmp48 = toJSONResult;
-            for (const item10067 of keys1) {
-              let str5;
-              let tmp32 = tmp48[item10067];
-              let str3 = tmp32;
-              let obj5 = num(closure_1_1[1]);
-              if (obj5.isError(tmp32)) {
-                str5 = str3.toString();
-              } else {
-                str5 = str3;
-              }
-              obj[item10067] = str5;
-              continue;
-            }
-          }
-          return obj;
-        } catch (tmp40) {
-          const tmp41 = num;
-          const tmp43 = closure_1_1;
-          if (num(closure_1_1[5]).DEBUG_BUILD) {
-            const logger = tmp41(tmp43[6]).logger;
-            logger.error("Unable to extract extra data from the Error object:", tmp40);
-          }
-          return null;
-        }
-      }
-      const maxValueLength = getOptions.getOptions().maxValueLength;
-      num = 250;
-      const tmp = num;
-      const tmp2 = closure_1;
-      if (undefined !== maxValueLength) {
-        num = maxValueLength;
-      }
-      let obj = arg1;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      let tmp3 = contexts;
-      if (obj.originalException) {
-        let obj2 = _mod12596;
-        tmp3 = contexts;
-        if (obj2.isError(obj.originalException)) {
-          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
-          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
-          tmp3 = contexts;
-          if (tmp7) {
-            const obj3 = {};
-            let tmp8 = obj3;
-            const merged = Object.assign(contexts.contexts);
-            const normalizer = tmp4(12634);
-            const normalizeResult = normalizer.normalize(tmp7, tmp);
-            const tmp4Result = _mod12596;
-            if (tmp4Result.isPlainObject(normalizeResult)) {
-              const tmp4Result2 = _mod12595;
-              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
-              obj3[tmp6] = normalizeResult;
-            }
-            let obj4 = { contexts: obj3 };
-            let tmp12 = obj4;
-            let tmp13 = contexts;
-            const merged1 = Object.assign(contexts);
-            tmp3 = obj4;
-          }
-        }
-      }
-      return tmp3;
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12680;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
-  };
-  return obj2;
-});
+  }
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
+    }
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
+    }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
+    }
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
+  }
+  const tmp3Result = _mod12680;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12680;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+};
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12680;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+  }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12683;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
+  }
+  const items2 = [items1];
+  const tmpResult2 = _mod12680;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12672");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12683);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12641;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12641;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12680");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12680");
+  return obj8.createEnvelope(obj2, items);
+};

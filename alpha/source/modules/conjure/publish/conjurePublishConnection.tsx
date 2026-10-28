@@ -1,25 +1,26 @@
-// Module ID: 10799
-// Function ID: 10800
+// Module ID: 10832
+// Function ID: 10833
 // Name: conjurePublishConnection
-// Dependencies: [5, 2042, 6774, 10717, 584, 10800, 10804, 10805, 1999, 10802, 10789, 10722, 10808, 2]
+// Dependencies: [5, 2042, 6808, 10749, 584, 10833, 10837, 10838, 1999, 10835, 10841, 10823, 10756, 10842, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10799 (conjurePublishConnection)
+// Module 10832 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10722 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10789 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10802 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10808 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10823 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10835 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10841 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10842 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10717 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
 import size from "module_2" /* 2 */;
 
 let paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(10800);
+const requestConjureDevicePermissionsDefault = tmp(10833);
 function rejectPendingPatchNotesDraft(projectId, arg1) {
   const value = map1.get(projectId);
   const obj = map1;
@@ -232,7 +233,7 @@ let obj2 = {
     let str;
     projectId = projectId.projectId;
     DispatcherDefault;
-    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: null, surface: null, previewAppChannels: null, previewDevicePermissions: null, publishedRevision: null, publishedAt: null, publishing: null, patchNotesSent: null, newUiUnpublished: null };
+    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: null, surface: null, previewAppChannels: null, previewDevicePermissions: null, publishedRevision: null, publishedAt: null, publishing: null, patchNotesSent: null, newUiUnpublished: null, voiceChannelPin: null };
     if (typeof publish_state.publish_state === "string") {
       let found;
       let found1;
@@ -301,6 +302,8 @@ let obj2 = {
       }
       obj.patchNotesSent = flatMapResult;
       obj.newUiUnpublished = true === publish_state.new_ui_unpublished;
+      const obj2 = conjureVoiceChannelPin;
+      obj.voiceChannelPin = obj2.parseVoiceChannelPinOutcome(publish_state.voice_channel_pin);
       tmp3(obj);
     }
     if (true !== publish_state.published) {
@@ -396,10 +399,14 @@ export const preparePublish = function preparePublish(projectId) {
     conjureSocket.sendPreparePublish();
   }
 };
-export const publishProject = function publishProject(id, selected_destination_id) {
+export const publishProject = function publishProject(id, selected_destination_id, arg2) {
   const projectId = id;
   let closure_1 = selected_destination_id;
-  let c2 = false;
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  let c3 = false;
   const promise = new Promise(function(resolve, reject) {
     let error1;
     const tmp = dependencyMap;
@@ -416,7 +423,7 @@ export const publishProject = function publishProject(id, selected_destination_i
       } else {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(function() {
-          const obj = selected_destination_id(c2[4]);
+          const obj = selected_destination_id(flag[4]);
           const obj2 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId, approvalUrl: null };
           obj.dispatch(obj2);
           const value = map2.get(projectId);
@@ -448,12 +455,13 @@ export const publishProject = function publishProject(id, selected_destination_i
         }, 900000);
         let obj2 = { resolve, reject, timeout: timerId };
         const result = obj3.set(tmp2, obj2);
-        c2 = true;
+        flag = true;
+        c3 = true;
         let obj4 = { type: "CONJURE_PROJECT_PUBLISH_START", projectId };
         const obj5 = DispatcherDefault;
         obj5.dispatch(obj4);
         try {
-          conjureSocket.sendPublish(selected_destination_id);
+          conjureSocket.sendPublish(selected_destination_id, flag);
         } catch (error1) {
           obj3.delete(tmp2);
           let _clearTimeout = clearTimeout;
@@ -488,7 +496,7 @@ export const publishProject = function publishProject(id, selected_destination_i
     throw error;
   });
   return catchPromise.finally(() => {
-    const tmp = c2;
+    const tmp = c3;
     if (tmp) {
       const obj2 = { type: "CONJURE_PROJECT_PUBLISH_SETTLE", projectId };
       const obj = DispatcherDefault;

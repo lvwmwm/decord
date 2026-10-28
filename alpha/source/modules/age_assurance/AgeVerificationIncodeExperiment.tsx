@@ -1,10 +1,10 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7954
+// Function ID: 7955
 // Name: AgeVerificationIncodeExperiment
 // Dependencies: [1452, 558, 576, 2]
 // Exports: isAgeVerificationIncodeEnabled
 
-// Module 7920 (AgeVerificationIncodeExperiment)
+// Module 7954 (AgeVerificationIncodeExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

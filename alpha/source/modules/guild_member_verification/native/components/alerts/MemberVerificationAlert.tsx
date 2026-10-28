@@ -1,18 +1,18 @@
-// Module ID: 6841
-// Function ID: 6842
+// Module ID: 6875
+// Function ID: 6876
 // Name: MemberVerificationAlert
-// Dependencies: [109, 19, 17, 21, 4972, 587, 558, 576, 5235, 5979, 2]
+// Dependencies: [109, 19, 17, 21, 5004, 587, 558, 576, 5270, 6014, 2]
 
-// Module 6841 (MemberVerificationAlert)
+// Module 6875 (MemberVerificationAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import AlertDefault from "Alert" /* 5979 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import AlertDefault from "Alert" /* 6014 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       let tmp21 = null;
       if (null != tmp8) {
         const obj4 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-default", children: tmp8 };
-        tmp21 = metroRequire(tmp(5235).Text, obj4);
+        tmp21 = metroRequire(tmp(5270).Text, obj4);
       }
       cResult[12] = tmp12.subtitle;
       cResult[13] = tmp8;

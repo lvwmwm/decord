@@ -1,66 +1,118 @@
 // Module ID: 4699
 // Function ID: 4700
-// Dependencies: [2073]
+// Dependencies: [4287, 4700, 4291, 4288]
+// Exports: default
 
 // Module 4699
-import buildLocalizeFn from "buildLocalizeFn" /* 2073 */;
+import toDate_mod from "toDate" /* 4287 */;
+import setMonth_mod from "setMonth" /* 4700 */;
+import toInteger_mod from "toInteger" /* 4291 */;
+import requiredArgs_mod from "requiredArgs" /* 4288 */;
 
-let obj;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
-}
-const date = {
-  ordinalNumber(arg0, unit) {
-    let str3;
-    unit = undefined;
-    const _String = String;
-    if (null != unit) {
-      unit = unit.unit;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
     }
-    const _StringResult = _String(unit);
-    const NumberResult = Number(arg0);
-    if ("date" === _StringResult) {
-      let str5;
-      if (3 === NumberResult) {
-        str5 = "-\u0454";
-      } else {
-        str5 = "-\u0435";
-      }
-      str3 = str5;
-    } else {
-      if ("minute" !== _StringResult) {
-        if ("second" !== _StringResult) {
-          str3 = "-\u0439";
-        }
-      }
-      str3 = "-\u0430";
-    }
-    return NumberResult + str3;
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["\u0434\u043E \u043D.\u0435.", "\u043D.\u0435."], abbreviated: ["\u0434\u043E \u043D. \u0435.", "\u043D. \u0435."], wide: ["\u0434\u043E \u043D\u0430\u0448\u043E\u0457 \u0435\u0440\u0438", "\u043D\u0430\u0448\u043E\u0457 \u0435\u0440\u0438"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["1-\u0439 \u043A\u0432.", "2-\u0439 \u043A\u0432.", "3-\u0439 \u043A\u0432.", "4-\u0439 \u043A\u0432."], wide: ["1-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "2-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "3-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "4-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
+    let tmp = arg0;
+    return _typeof(arg0);
   }
-};
-obj5 = { values: { narrow: ["\u0421", "\u041B", "\u0411", "\u041A", "\u0422", "\u0427", "\u041B", "\u0421", "\u0412", "\u0416", "\u041B", "\u0413"], abbreviated: ["\u0441\u0456\u0447.", "\u043B\u044E\u0442.", "\u0431\u0435\u0440\u0435\u0437.", "\u043A\u0432\u0456\u0442.", "\u0442\u0440\u0430\u0432.", "\u0447\u0435\u0440\u0432.", "\u043B\u0438\u043F.", "\u0441\u0435\u0440\u043F.", "\u0432\u0435\u0440\u0435\u0441.", "\u0436\u043E\u0432\u0442.", "\u043B\u0438\u0441\u0442\u043E\u043F.", "\u0433\u0440\u0443\u0434."], wide: ["\u0441\u0456\u0447\u0435\u043D\u044C", "\u043B\u044E\u0442\u0438\u0439", "\u0431\u0435\u0440\u0435\u0437\u0435\u043D\u044C", "\u043A\u0432\u0456\u0442\u0435\u043D\u044C", "\u0442\u0440\u0430\u0432\u0435\u043D\u044C", "\u0447\u0435\u0440\u0432\u0435\u043D\u044C", "\u043B\u0438\u043F\u0435\u043D\u044C", "\u0441\u0435\u0440\u043F\u0435\u043D\u044C", "\u0432\u0435\u0440\u0435\u0441\u0435\u043D\u044C", "\u0436\u043E\u0432\u0442\u0435\u043D\u044C", "\u043B\u0438\u0441\u0442\u043E\u043F\u0430\u0434", "\u0433\u0440\u0443\u0434\u0435\u043D\u044C"] }, defaultWidth: "wide", formattingValues: { narrow: ["\u0421", "\u041B", "\u0411", "\u041A", "\u0422", "\u0427", "\u041B", "\u0421", "\u0412", "\u0416", "\u041B", "\u0413"], abbreviated: ["\u0441\u0456\u0447.", "\u043B\u044E\u0442.", "\u0431\u0435\u0440\u0435\u0437.", "\u043A\u0432\u0456\u0442.", "\u0442\u0440\u0430\u0432.", "\u0447\u0435\u0440\u0432.", "\u043B\u0438\u043F.", "\u0441\u0435\u0440\u043F.", "\u0432\u0435\u0440\u0435\u0441.", "\u0436\u043E\u0432\u0442.", "\u043B\u0438\u0441\u0442\u043E\u043F.", "\u0433\u0440\u0443\u0434."], wide: ["\u0441\u0456\u0447\u043D\u044F", "\u043B\u044E\u0442\u043E\u0433\u043E", "\u0431\u0435\u0440\u0435\u0437\u043D\u044F", "\u043A\u0432\u0456\u0442\u043D\u044F", "\u0442\u0440\u0430\u0432\u043D\u044F", "\u0447\u0435\u0440\u0432\u043D\u044F", "\u043B\u0438\u043F\u043D\u044F", "\u0441\u0435\u0440\u043F\u043D\u044F", "\u0432\u0435\u0440\u0435\u0441\u043D\u044F", "\u0436\u043E\u0432\u0442\u043D\u044F", "\u043B\u0438\u0441\u0442\u043E\u043F\u0430\u0434\u0430", "\u0433\u0440\u0443\u0434\u043D\u044F"] }, defaultFormattingWidth: "wide" };
-obj6 = { values: { narrow: ["\u041D", "\u041F", "\u0412", "\u0421", "\u0427", "\u041F", "\u0421"], short: ["\u043D\u0434", "\u043F\u043D", "\u0432\u0442", "\u0441\u0440", "\u0447\u0442", "\u043F\u0442", "\u0441\u0431"], abbreviated: ["\u043D\u0435\u0434", "\u043F\u043E\u043D", "\u0432\u0456\u0432", "\u0441\u0435\u0440", "\u0447\u0442\u0432", "\u043F\u0442\u043D", "\u0441\u0443\u0431"], wide: ["\u043D\u0435\u0434\u0456\u043B\u044F", "\u043F\u043E\u043D\u0435\u0434\u0456\u043B\u043E\u043A", "\u0432\u0456\u0432\u0442\u043E\u0440\u043E\u043A", "\u0441\u0435\u0440\u0435\u0434\u0430", "\u0447\u0435\u0442\u0432\u0435\u0440", "\u043F\u2019\u044F\u0442\u043D\u0438\u0446\u044F", "\u0441\u0443\u0431\u043E\u0442\u0430"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D.", noon: "\u043F\u043E\u043B.", morning: "\u0440\u0430\u043D\u043E\u043A", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447.", night: "\u043D\u0456\u0447" }, abbreviated: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D.", noon: "\u043F\u043E\u043B.", morning: "\u0440\u0430\u043D\u043E\u043A", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447.", night: "\u043D\u0456\u0447" }, wide: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D\u0456\u0447", noon: "\u043F\u043E\u043B\u0443\u0434\u0435\u043D\u044C", morning: "\u0440\u0430\u043D\u043E\u043A", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447\u0456\u0440", night: "\u043D\u0456\u0447" } }, defaultWidth: "any", formattingValues: { narrow: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D.", noon: "\u043F\u043E\u043B.", morning: "\u0440\u0430\u043D\u043A\u0443", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u0456" }, abbreviated: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D.", noon: "\u043F\u043E\u043B.", morning: "\u0440\u0430\u043D\u043A\u0443", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u0456" }, wide: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u0456\u0432\u043D\u0456\u0447", noon: "\u043F\u043E\u043B\u0443\u0434\u0435\u043D\u044C", morning: "\u0440\u0430\u043D\u043A\u0443", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u0456" } }, defaultFormattingWidth: "wide" };
+  _typeof = function _typeof(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        let str;
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
+let toDate = toDate_mod;
+if (!toDate) {
+  tmp3 = { default: toDate };
+  const obj = { default: toDate };
+} else {
+  tmp3 = toDate;
+}
+toDate = tmp3;
+let setMonth = setMonth_mod;
+if (!setMonth) {
+  tmp5 = { default: setMonth };
+  const obj2 = { default: setMonth };
+} else {
+  tmp5 = setMonth;
+}
+setMonth = tmp5;
+let toInteger = toInteger_mod;
+if (!toInteger) {
+  tmp7 = { default: toInteger };
+  const obj3 = { default: toInteger };
+} else {
+  tmp7 = toInteger;
+}
+toInteger = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  tmp9 = { default: requiredArgs };
+  const obj4 = { default: requiredArgs };
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default date;
+export default function set(arg0, year) {
+  requiredArgs.default(2, arguments);
+  if ("object" === _typeof(year)) {
+    if (null !== year) {
+      const defaultResult1 = toDate.default(arg0);
+      const _isNaN = isNaN;
+      if (isNaN(defaultResult1.getTime())) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(NaN);
+        return date;
+      } else {
+        if (null != year.year) {
+          defaultResult1.setFullYear(year.year);
+        }
+        let defaultResult2 = defaultResult1;
+        if (null != year.month) {
+          defaultResult2 = setMonth.default(defaultResult1, year.month);
+        }
+        if (null != year.date) {
+          defaultResult2.setDate(toInteger.default(year.date));
+        }
+        if (null != year.hours) {
+          defaultResult2.setHours(toInteger.default(year.hours));
+        }
+        if (null != year.minutes) {
+          defaultResult2.setMinutes(toInteger.default(year.minutes));
+        }
+        if (null != year.seconds) {
+          defaultResult2.setSeconds(toInteger.default(year.seconds));
+        }
+        if (null != year.milliseconds) {
+          defaultResult2.setMilliseconds(toInteger.default(year.milliseconds));
+        }
+        return defaultResult2;
+      }
+    }
+  }
+  const rangeError = new RangeError("values parameter must be an object");
+  throw rangeError;
+};

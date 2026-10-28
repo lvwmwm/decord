@@ -1,13 +1,13 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9240
+// Function ID: 9241
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 5715, 7815, 558, 576, 9196, 504, 2]
+// Dependencies: [19, 5750, 7849, 558, 576, 9229, 504, 2]
 
-// Module 9207 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 9196 */;
+// Module 9240 (useIsSecureFramesKeyInconsistent)
+import SecureFramesUtils from "SecureFramesUtils" /* 9229 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7815 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7849 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,11 +100,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSe
           tmp6 = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          tmp2.current = setTimeout(() => { /* body not rendered: F146650 */ }, 1000);
+          tmp2.current = setTimeout(() => { /* body not rendered: F147518 */ }, 1000);
           tmp4 = tmp2;
         }
         current = tmp4.current;
-        return () => { /* body not rendered: F146651 */ };
+        return () => { /* body not rendered: F147519 */ };
       }
       tmp4 = closure_5;
       clearTimeoutResult = clearTimeout(closure_5.current);

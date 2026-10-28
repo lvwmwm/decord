@@ -1,12 +1,13 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5079
+// Function ID: 5080
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 5048, 4986, 5097, 5098, 5099, 558, 576, 2]
+// Dependencies: [5, 19, 17, 21, 5080, 5018, 5129, 5130, 5131, 558, 576, 5132, 2]
 // Exports: useArtboardBinding
 
-// Module 5047 (BaseRive)
+// Module 5079 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 5048 */;
+import DataBindByName from "DataBindByName" /* 5080 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -14,26 +15,37 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, c2, c3, current, dependencyMap;
 
 let Platform;
 let StyleSheet;
-let c3;
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const react3 = tmp(4986);
-const ManaContext = tmp(5097);
-const useRivePlayback2 = tmp(5098);
-const RiveTypes = tmp(5099);
+const react3 = tmp(5018);
+const ManaContext = tmp(5129);
+const useRivePlayback2 = tmp(5130);
+const RiveTypes = tmp(5131);
+function disposeRiveImageLater(arg0) {
+  let closure_0 = arg0;
+  const timerId = setTimeout(() => current.dispose(), c11);
+}
+function ensureImageUri(value2) {
+  let uri = value2;
+  if (typeof value2 === "number") {
+    uri = hasOwnProperty.resolveAssetSource(value2).uri;
+  }
+  return uri;
+}
 let react = react_mod;
-({ View: c3, StyleSheet, Image: closure_4, PixelRatio: hasOwnProperty, Platform } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const metroImportAll = StyleSheet.create({ container: { flexGrow: 1 }, fill: { flex: 1 }, hidden: { opacity: 0 } });
+({ View: closure_4, StyleSheet, Image: hasOwnProperty, PixelRatio: metroRequire, Platform } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const React4 = StyleSheet.create({ container: { flexGrow: 1 }, fill: { flex: 1 }, hidden: { opacity: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useObservedValue(arg0, cResult) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useObservedValue(arg0, cResult) {
   let tmp2;
   let tmp3;
   let tmp5;
@@ -114,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNumberBin
         tmp5 = cResult[4];
       }
       const effect = react.useEffect(tmp4, tmp5);
-      closure_9(tmp3, arg3);
+      closure_10(tmp3, arg3);
     }
   }
   const fn = function c() {
@@ -179,7 +191,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNumberBin
       }
     }
   }, items);
-  let tmp2 = closure_9(value, arg3);
+  let tmp2 = closure_10(value, arg3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStringBinding(arg0, arg1, arg2, arg3, arg4) {
@@ -199,7 +211,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStringBin
         tmp5 = cResult[4];
       }
       const effect = react.useEffect(tmp4, tmp5);
-      closure_9(tmp3, arg3);
+      closure_10(tmp3, arg3);
     }
   }
   const fn = function c() {
@@ -236,7 +248,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStringBin
       }
     }
   }, items);
-  closure_9(value, arg3);
+  closure_10(value, arg3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBooleanBinding(arg0, arg1, arg2, arg3, arg4) {
@@ -256,7 +268,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBooleanBi
         tmp5 = cResult[4];
       }
       const effect = react.useEffect(tmp4, tmp5);
-      closure_9(tmp3, arg3);
+      closure_10(tmp3, arg3);
     }
   }
   const fn = function c() {
@@ -293,7 +305,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBooleanBi
       }
     }
   }, items);
-  closure_9(value, arg3);
+  closure_10(value, arg3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorBinding(arg0, arg1, arg2, cResult, arg4) {
@@ -319,7 +331,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorBind
         tmp3 = cResult[4];
       }
       const effect = react.useEffect(tmp2, tmp3);
-      let closure_5 = react.useRef(cResult);
+      ref = react.useRef(cResult);
       if (cResult[5] !== cResult) {
         const fn2 = function b() {
           ref.current = current;
@@ -336,23 +348,35 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorBind
       }
       const effect1 = obj3.useEffect(tmp5, tmp6);
       if (cResult[8] !== value) {
-        const fn3 = function y() {
-          const obj = value;
-          if (null != value) {
-            current = ref.current;
-            if (current != null) {
-              current(obj.toInt());
+        class B {
+          constructor() {
+            const obj = value;
+            if (null != value) {
+              current = ref.current;
+              if (current != null) {
+                current(obj.toInt());
+              }
             }
           }
-        };
+        }
         const items1 = [value];
         cResult[8] = value;
-        cResult[9] = fn3;
+        cResult[9] = B;
         cResult[10] = items1;
         tmp9 = items1;
-        tmp8 = fn3;
+        tmp8 = B;
       } else {
-        tmp8 = cResult[9];
+        class B {
+          constructor() {
+            const obj = value;
+            if (null != value) {
+              current = ref.current;
+              if (current != null) {
+                current(obj.toInt());
+              }
+            }
+          }
+        }
         tmp9 = cResult[10];
       }
       const effect2 = obj3.useEffect(tmp8, tmp9);
@@ -427,7 +451,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnumBindi
         tmp5 = cResult[4];
       }
       const effect = react.useEffect(tmp4, tmp5);
-      closure_9(tmp3, arg3);
+      closure_10(tmp3, arg3);
     }
   }
   const fn = function c() {
@@ -464,7 +488,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnumBindi
       }
     }
   }, items);
-  closure_9(value, arg3);
+  closure_10(value, arg3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTriggerBinding(arg0, arg1, arg2, onTrigger, arg4) {
@@ -548,29 +572,26 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTriggerBi
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let c10 = 1000;
+let c11 = 1000;
 const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageBinding(arg0, arg1, arg2, cResult, arg4) {
-  let closure_0;
-  let closure_1;
-  let closure_2;
   let tmp2;
   let tmp3;
   _require = arg0;
   dependencyMap = arg1;
-  react = arg2;
-  let current = cResult;
+  let closure_2 = arg2;
+  react = cResult;
   let closure_4 = arg4;
   let obj = require("react");
   cResult = obj.c(15);
+  let obj2 = react;
   let closure_5 = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
-      let ref;
+    const fn = function f() {
       return () => {
         if (null != ref.current) {
           current = tmp.current;
           const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => current.dispose(), closure_2_10);
+          const timerId = setTimeout(() => current.dispose(), closure_2_11);
         }
         ref.current = null;
       };
@@ -598,12 +619,29 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
         const effect1 = obj2.useEffect(tmp5, tmp6);
         let closure_6 = obj2.useRef(cResult);
         if (cResult[8] !== cResult) {
-          const fn3 = function b() {
+          const fn3 = function y() {
             closure_6.current = current;
           };
           const items1 = [cResult];
           cResult[8] = cResult;
-          cResult[9] = fn3;
+          class I {
+            constructor() {
+              const obj = closure_1;
+              if (null != closure_1) {
+                const imagePropertyResult = obj.imageProperty(closure_0);
+                if (null != imagePropertyResult) {
+                  return imagePropertyResult.addListener(() => {
+                    current = ref.current;
+                    let currentResult;
+                    if (current != null) {
+                      currentResult = current();
+                    }
+                    return currentResult;
+                  });
+                }
+              }
+            }
+          }
           cResult[10] = items1;
           tmp9 = items1;
           tmp8 = fn3;
@@ -621,69 +659,113 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
           }
           const effect3 = obj2.useEffect(tmp11, tmp12);
         }
-        const fn4 = function y() {
-          let ref;
-          const obj = closure_1;
-          if (null != closure_1) {
-            const imagePropertyResult = obj.imageProperty(closure_0);
-            if (null != imagePropertyResult) {
-              return imagePropertyResult.addListener(() => {
-                current = ref.current;
-                let currentResult;
-                if (current != null) {
-                  currentResult = current();
-                }
-                return currentResult;
-              });
+        class I {
+          constructor() {
+            const obj = closure_1;
+            if (null != closure_1) {
+              const imagePropertyResult = obj.imageProperty(closure_0);
+              if (null != imagePropertyResult) {
+                return imagePropertyResult.addListener(() => {
+                  current = ref.current;
+                  let currentResult;
+                  if (current != null) {
+                    currentResult = current();
+                  }
+                  return currentResult;
+                });
+              }
             }
           }
-        };
+        }
         const items2 = [arg0, arg1];
         cResult[11] = arg1;
         cResult[12] = arg0;
-        cResult[13] = fn4;
+        cResult[13] = I;
         cResult[14] = items2;
         tmp12 = items2;
-        tmp11 = fn4;
+        tmp11 = I;
       }
     }
   }
-  const fn2 = function v() {
-    let ref;
+  const fn2 = function p() {
+    function loadImage() {
+      return closure_0(...arguments);
+    }
     if (null != closure_1) {
-      let tmp = closure_2;
+      const tmp = closure_2;
       if (null != closure_2) {
         let c0 = false;
-        const RiveImages = closure_0(closure_1[3]).RiveImages;
-        let uri = tmp;
-        const loadFromURLAsync = RiveImages.loadFromURLAsync;
-        if (typeof tmp === "number") {
-          uri = closure_4.resolveAssetSource(tmp).uri;
-        }
-        const fromURLAsync = loadFromURLAsync(uri);
-        const nextPromise = fromURLAsync.then((dispose) => {
-          const tmp = c0;
-          if (tmp) {
-            dispose.dispose();
+        const tmp2 = closure_2;
+        closure_0 = closure_2(function*(arg0, value) {
+          if (c3 === 2) {
+            c3 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
           } else {
-            const imagePropertyResult = closure_1.imageProperty(closure_0);
-            if (imagePropertyResult != null) {
-              const result = imagePropertyResult.set(dispose);
-            }
-            if (null != ref.current) {
-              current = tmp6.current;
-              const _setTimeout = setTimeout;
-              const timerId = setTimeout(() => current.dispose(), c10);
-            }
-            ref.current = dispose;
-            if (closure_4 != null) {
-              tmp10();
+            try {
+              c3 = 2;
+              if (0 === c2) {
+                if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj2 = { value, done: true };
+                  return obj2;
+                } else {
+                  closure_1 = tmp;
+                  current = undefined;
+                  const RiveImages = current(closure_3_1[4]).RiveImages;
+                  c2 = 1;
+                  c3 = 1;
+                  const obj3 = { value: RiveImages.loadFromURLAsync(ensureImageUri(closure_2_2)), done: false };
+                  return obj3;
+                }
+              } else if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                current = value;
+                const tmp36 = current;
+                if (tmp36) {
+                  current.dispose();
+                } else {
+                  const imagePropertyResult = closure_2_1.imageProperty(current);
+                  if (imagePropertyResult != null) {
+                    const result = imagePropertyResult.set(current);
+                  }
+                  if (null != ref.current) {
+                    disposeRiveImageLater(ref.current);
+                  }
+                  ref.current = current;
+                  if (closure_2_4 != null) {
+                    tmp22();
+                  }
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            } catch (tmp30) {
+              c3 = 3;
+              throw tmp30;
             }
           }
         });
-        nextPromise.catch(() => {
-
-        });
+        const tmp4 = closure_1;
+        let obj = closure_0(closure_1[11]);
+        obj.ignoreErrors(loadImage());
         return () => {
           c0 = true;
         };
@@ -700,61 +782,100 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
   tmp6 = items3;
   tmp5 = fn2;
 }) : (function useImageBinding(arg0, arg1, arg2, cResult, arg4) {
-  let closure_2;
   let closure_0 = arg0;
   let closure_1 = arg1;
-  react = arg2;
-  let current = cResult;
+  let closure_2 = arg2;
+  react = cResult;
   let closure_4 = arg4;
   let closure_5 = react.useRef(null);
-  const effect = react.useEffect(() => {
-    let ref;
-    return () => {
-      if (null != ref.current) {
-        current = tmp.current;
-        const _setTimeout = setTimeout;
-        const timerId = setTimeout(() => current.dispose(), closure_2_10);
-      }
-      ref.current = null;
-    };
+  const effect = react.useEffect(() => () => {
+    if (null != ref.current) {
+      current = tmp.current;
+      const _setTimeout = setTimeout;
+      const timerId = setTimeout(() => current.dispose(), closure_2_11);
+    }
+    ref.current = null;
   }, []);
   const items = [arg0, arg1, arg2, arg4];
   const effect1 = react.useEffect(() => {
-    let ref;
+    function loadImage() {
+      return closure_0(...arguments);
+    }
     if (null != closure_1) {
-      let tmp = closure_2;
+      const tmp = closure_2;
       if (null != closure_2) {
         let c0 = false;
-        const RiveImages = closure_0(closure_1[3]).RiveImages;
-        let uri = tmp;
-        const loadFromURLAsync = RiveImages.loadFromURLAsync;
-        if (typeof tmp === "number") {
-          uri = closure_4.resolveAssetSource(tmp).uri;
-        }
-        const fromURLAsync = loadFromURLAsync(uri);
-        const nextPromise = fromURLAsync.then((dispose) => {
-          const tmp = c0;
-          if (tmp) {
-            dispose.dispose();
+        const tmp2 = closure_2;
+        closure_0 = closure_2(function*(arg0, value) {
+          if (c3 === 2) {
+            c3 = 3;
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              return { value: "IconComponent", done: null };
+            }
           } else {
-            const imagePropertyResult = closure_1.imageProperty(closure_0);
-            if (imagePropertyResult != null) {
-              const result = imagePropertyResult.set(dispose);
-            }
-            if (null != ref.current) {
-              current = tmp6.current;
-              const _setTimeout = setTimeout;
-              const timerId = setTimeout(() => current.dispose(), c10);
-            }
-            ref.current = dispose;
-            if (closure_4 != null) {
-              tmp10();
+            try {
+              c3 = 2;
+              if (0 === c2) {
+                if (arg0 === 1) {
+                  c3 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 3;
+                  const obj2 = { value, done: true };
+                  return obj2;
+                } else {
+                  closure_1 = tmp;
+                  current = undefined;
+                  const RiveImages = current(closure_3_1[4]).RiveImages;
+                  c2 = 1;
+                  c3 = 1;
+                  const obj3 = { value: RiveImages.loadFromURLAsync(ensureImageUri(closure_2_2)), done: false };
+                  return obj3;
+                }
+              } else if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                current = value;
+                const tmp36 = current;
+                if (tmp36) {
+                  current.dispose();
+                } else {
+                  const imagePropertyResult = closure_2_1.imageProperty(current);
+                  if (imagePropertyResult != null) {
+                    const result = imagePropertyResult.set(current);
+                  }
+                  if (null != ref.current) {
+                    disposeRiveImageLater(ref.current);
+                  }
+                  ref.current = current;
+                  if (closure_2_4 != null) {
+                    tmp22();
+                  }
+                }
+                c3 = 3;
+                return { value: "IconComponent", done: null };
+              }
+            } catch (tmp30) {
+              c3 = 3;
+              throw tmp30;
             }
           }
         });
-        nextPromise.catch(() => {
-
-        });
+        const tmp4 = closure_1;
+        let obj = closure_0(closure_1[11]);
+        obj.ignoreErrors(loadImage());
         return () => {
           c0 = true;
         };
@@ -768,7 +889,6 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
   }, items1);
   const items2 = [arg0, arg1];
   const effect3 = react.useEffect(() => {
-    let ref;
     const obj = closure_1;
     if (null != closure_1) {
       const imagePropertyResult = obj.imageProperty(closure_0);
@@ -811,12 +931,12 @@ class BaseRiveInner {
     }
     renderDataBinding = renderDataBinding.renderDataBinding;
     let riveFile;
-    let c3;
+    let closure_3;
     let play;
     let pause;
     let tmp = require;
     let tmp2 = dependencyMap;
-    const ref = renderDataBinding.ref;
+    ref = renderDataBinding.ref;
     let tmp4;
     const useRiveFile = DataBindByName.useRiveFile;
     if (null != referencedAssets) {
@@ -824,7 +944,7 @@ class BaseRiveInner {
       const obj = { referencedAssets };
     }
     riveFile = useRiveFile(src, tmp4).riveFile;
-    c3 = react.useEffectEvent((arg0) => {
+    closure_3 = react.useEffectEvent((arg0) => {
       let tmpResult;
       if (closure_1_1 != null) {
         tmpResult = tmp(arg0);
@@ -859,7 +979,7 @@ class BaseRiveInner {
       flag = false;
     }
     if ("layout" === fit) {
-      value = hasOwnProperty.get();
+      value = metroRequire.get();
     }
     let items1 = artboardViewModelInstances[artboard];
     if (items1 == null) {
@@ -905,8 +1025,8 @@ class BaseRiveInner {
     const imperativeHandle = obj2.useImperativeHandle(ref, () => ({ play, pause }), items2);
     const items3 = [container.container, ];
     let hidden;
-    const tmp24 = metroImportDefault;
-    const tmp25 = _false;
+    const tmp24 = metroImportAll;
+    const tmp25 = React3;
     if (null == riveViewRef) {
       hidden = tmp26.hidden;
     }
@@ -921,7 +1041,7 @@ class BaseRiveInner {
       const obj5 = { file: riveFile, hybridRef: setHybridRef, artboardName: artboard, autoPlay: true, dataBind: None, style: items4 };
       items4 = [container.fill, style];
       const RiveView = DataBindByName.RiveView;
-      const tmp29 = metroRequire;
+      const tmp29 = metroImportDefault;
       if (null != stateMachine) {
         obj7 = { stateMachineName: stateMachine };
         const obj6 = { stateMachineName: stateMachine };

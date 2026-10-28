@@ -1,18 +1,18 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12377
+// Function ID: 12378
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 4972, 587, 5235, 558, 576, 7957, 6933, 1125, 12333, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 5270, 558, 576, 7991, 6967, 1125, 12378, 2]
 
-// Module 12332 (ConjureTipHint)
+// Module 12377 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12333 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12378 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,9 +97,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHi
     if (null != onDismiss) {
       const obj5 = { style: tmp4.dismiss, children: React3(IconButton, obj6) };
       obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-      IconButton = tmp(7957).IconButton;
+      IconButton = tmp(7991).IconButton;
       obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      XSmallIcon = tmp(6933).XSmallIcon;
+      XSmallIcon = tmp(6967).XSmallIcon;
       intl = tmp(1125).intl;
       tmp12 = React3(View, obj5);
     }
@@ -140,9 +140,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHi
   if (null != onDismiss) {
     const obj5 = { style: tmp.dismiss, children: React3(IconButton, obj6) };
     obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp8(7957).IconButton;
+    IconButton = tmp8(7991).IconButton;
     obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(6933).XSmallIcon;
+    XSmallIcon = tmp8(6967).XSmallIcon;
     intl = tmp8(1125).intl;
     tmp2Result = tmp2(tmp7, obj5);
   }

@@ -1,14 +1,14 @@
-// Module ID: 4882
-// Function ID: 4883
+// Module ID: 4914
+// Function ID: 4915
 // Name: GuildRoleUtils
-// Dependencies: [11, 1102, 4881, 4880, 2]
+// Dependencies: [11, 1102, 4913, 4912, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 4882 (GuildRoleUtils)
+// Module 4914 (GuildRoleUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4880 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4881 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 4912 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 function compareGuildRoles(guildId, id) {

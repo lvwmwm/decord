@@ -1,15 +1,15 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16711
+// Function ID: 16712
 // Name: useYouBarMargins
-// Dependencies: [16483, 558, 5154, 1630, 1382, 5253, 587, 2]
+// Dependencies: [16712, 558, 5189, 1630, 1382, 5288, 587, 2]
 
-// Module 16482 (useYouBarMargins)
+// Module 16711 (useYouBarMargins)
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useChatLayoutDefault from "useChatLayout" /* 5154 */;
-import useToken from "useToken" /* 5253 */;
-import YouBarConstants from "YouBarConstants" /* 16483 */;
+import useChatLayoutDefault from "useChatLayout" /* 5189 */;
+import useToken from "useToken" /* 5288 */;
+import YouBarConstants from "YouBarConstants" /* 16712 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

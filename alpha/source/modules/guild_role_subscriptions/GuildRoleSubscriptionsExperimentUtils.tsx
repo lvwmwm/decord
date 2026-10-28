@@ -1,12 +1,12 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15402
+// Function ID: 15403
 // Name: GuildRoleSubscriptionsExperimentUtils
-// Dependencies: [4846, 1084, 558, 576, 573, 2]
+// Dependencies: [4878, 1084, 558, 576, 573, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates
 
-// Module 15177 (GuildRoleSubscriptionsExperimentUtils)
+// Module 15402 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

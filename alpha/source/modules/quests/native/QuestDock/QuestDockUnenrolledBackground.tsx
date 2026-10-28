@@ -1,22 +1,22 @@
-// Module ID: 16581
-// Function ID: 16582
+// Module ID: 16810
+// Function ID: 16811
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 16480, 21, 558, 576, 16508, 16476, 5253, 587, 16582, 2]
+// Dependencies: [19, 16709, 21, 558, 576, 16737, 16705, 5288, 587, 16811, 2]
 
-// Module 16581 (QuestDockUnenrolledBackground)
+// Module 16810 (QuestDockUnenrolledBackground)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5253 */;
-import QuestHooks from "QuestHooks" /* 16476 */;
-import QuestDockConstants from "QuestDockConstants" /* 16480 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16508 */;
+import useToken from "useToken" /* 5288 */;
+import QuestHooks from "QuestHooks" /* 16705 */;
+import QuestDockConstants from "QuestDockConstants" /* 16709 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16737 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const QuestDockVideoBackgroundDefault = tmp5(16582);
+const QuestDockVideoBackgroundDefault = tmp5(16811);
 const expandedHeight = QuestDockConstants.QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockUnenrolledBackground() {

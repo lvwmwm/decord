@@ -1,19 +1,19 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9055
+// Function ID: 9056
 // Name: useGuildScheduledEvents
-// Dependencies: [32, 19, 4824, 4846, 4904, 6785, 9023, 4830, 1084, 1101, 558, 576, 504, 8890, 9024, 8898, 2]
+// Dependencies: [32, 19, 4856, 4878, 4936, 6819, 9056, 4862, 1084, 1101, 558, 576, 504, 8924, 9057, 8932, 2]
 // Exports: getGuildActiveEvent
 
-// Module 9022 (useGuildScheduledEvents)
+// Module 9055 (useGuildScheduledEvents)
 import DurationsDefault from "Durations" /* 1101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6785 */;
-import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 9023 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6819 */;
+import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 9056 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

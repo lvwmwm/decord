@@ -1,86 +1,98 @@
 // Module ID: 12674
 // Function ID: 12675
-// Dependencies: [12589, 12590, 12675, 12616, 12645, 12676, 12600, 12598, 12637]
+// Dependencies: [12664, 12641, 12636]
+// Exports: logSpanEnd, logSpanStart
 
 // Module 12674
-import _mod12616 from "module_12616" /* 12616 */;
-import _mod12676 from "module_12676" /* 12676 */;
-import module_12645 from "module_12645" /* 12645 */;
+import _mod12641 from "module_12641" /* 12641 */;
+import _mod12664 from "module_12664" /* 12664 */;
 
 
-export const captureConsoleIntegration = module_12645.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export const logSpanEnd = function logSpanEnd(spanContext) {
+  if (_mod12664.DEBUG_BUILD) {
+    const tmpResult = _mod12641;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
+    }
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const spanId = spanContext.spanContext().spanId;
+    let str3 = "";
+    const tmpResult2 = _mod12641;
+    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
+      str3 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
+    const logger = tmp(12636).logger;
+    logger.log(combined);
   }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    let tmp = CONSOLE_LEVELS;
-    let tmp2 = handled;
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
-  }
-  handled = obj.handled;
-  let obj2 = {
-    name: "CaptureConsole",
-    setup(arg0) {
-      let closure_0 = arg0;
-      const tmp2 = handled;
-      const tmp = CONSOLE_LEVELS;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let tmpResult = tmp(tmp2[2]);
-        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
-          let args;
-          let level;
-          let obj3;
-          let tmpResult;
-          ({ args, level } = arg0);
-          let obj = _mod12616;
-          let hasItem = obj.getClient() === closure_0;
-          if (hasItem) {
-            let tmp4 = CONSOLE_LEVELS;
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            let closure_2 = handled;
-            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
-            obj3 = { arguments: args };
-            tmpResult = _mod12676;
-            const tmpResult2 = _mod12616;
-            tmpResult2.withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const obj = args(level[6]);
-                obj2 = { handled, type: "console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                const tmp12 = args;
-                if (found) {
-                  const tmp14Result = closure_2_0(closure_2_1[8]);
-                  tmp14Result.captureException(found, obj2);
-                } else {
-                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
-                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
-                  const obj4 = closure_2_0(closure_2_1[8]);
-                  obj4.captureMessage(safeJoinResult, obj2);
-                }
-              } else if (!args[0]) {
-                let obj = closure_2_0(closure_2_1[7]);
-                const _HermesInternal = HermesInternal;
-                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
-                const combined = "Assertion failed: " + tmp4;
-                addEventProcessor.setExtra("arguments", args.slice(1));
-                obj2 = closure_2_0(closure_2_1[8]);
-                obj2.captureMessage(combined, obj2);
-              }
-            });
-          }
-        });
+};
+export const logSpanStart = function logSpanStart(spanContext) {
+  let description2;
+  let op2;
+  if (_mod12664.DEBUG_BUILD) {
+    const tmpResult = _mod12641;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
+    }
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const parent_span_id = spanToJSONResult.parent_span_id;
+    const spanId = spanContext.spanContext().spanId;
+    const tmpResult4 = _mod12641;
+    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
+    const tmpResult5 = _mod12641;
+    const rootSpan = tmpResult5.getRootSpan(spanContext);
+    let str3 = "unsampled";
+    if (spanIsSampledResult) {
+      str3 = "sampled";
+    }
+    let str5 = "";
+    if (rootSpan === spanContext) {
+      str5 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const _HermesInternal2 = HermesInternal;
+    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
+    const items = ["op: " + str2, , ];
+    const _HermesInternal3 = HermesInternal;
+    items[1] = "name: " + str;
+    const _HermesInternal4 = HermesInternal;
+    items[2] = "ID: " + spanId;
+    if (parent_span_id) {
+      const _HermesInternal5 = HermesInternal;
+      items.push("parent ID: " + parent_span_id);
+    }
+    if (rootSpan !== spanContext) {
+      const tmpResult6 = _mod12641;
+      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
+      const _HermesInternal6 = HermesInternal;
+      tmpResult6.spanToJSON(rootSpan);
+      items.push("root ID: " + rootSpan.spanContext().spanId);
+      if (op2) {
+        const _HermesInternal7 = HermesInternal;
+        items.push("root op: " + op2);
+      }
+      if (description2) {
+        const _HermesInternal8 = HermesInternal;
+        items.push("root description: " + description2);
       }
     }
-  };
-  return obj2;
-});
+    const logger = tmp(12636).logger;
+    const _HermesInternal9 = HermesInternal;
+    logger.log("" + combined + "\n  " + items.join("\n  "));
+  }
+};

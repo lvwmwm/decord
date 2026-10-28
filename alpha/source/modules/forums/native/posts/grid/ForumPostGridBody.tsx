@@ -1,24 +1,24 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13336
+// Function ID: 13337
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 4972, 587, 558, 576, 1199, 13120, 13121, 13122, 5235, 1496, 1385, 13123, 7384, 8848, 13127, 2]
+// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 1199, 13337, 13338, 13339, 5270, 1496, 1385, 13340, 7419, 8882, 13344, 2]
 
-// Module 13119 (ForumPostGridBody)
+// Module 13336 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8848 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13120 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13121 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13122 */;
-import ForumPostMedia from "ForumPostMedia" /* 13123 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8882 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13337 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13338 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13339 */;
+import ForumPostMedia from "ForumPostMedia" /* 13340 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -413,7 +413,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   ({ hasUnreads, media } = thread);
   const tmp4 = closure_10();
   importDefault = tmp4;
-  let obj2 = thread(7384);
+  let obj2 = thread(7419);
   [arr, tmp6] = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   const tmp5 = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   if (cResult[0] !== media) {
@@ -436,7 +436,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   const arr2 = closure_15(tmp8, tmp11);
   let wideAspectRatioGrid = tmp11;
   if (cResult[4] !== media) {
-    const tmpResult = tmp(8848);
+    const tmpResult = tmp(8882);
     const result = tmpResult.messageContainsGifOrVideo(media);
     cResult[4] = media;
     cResult[5] = result;
@@ -744,7 +744,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   let tmp = closure_10();
   dependencyMap = tmp;
   let tmp2 = thread;
-  let obj = thread(7384);
+  let obj = thread(7419);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp14Result = first.length > 0;
   items = [media];
@@ -784,7 +784,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   items3[1] = tmp15;
   items4 = [closure_6(View, obj3), , , ];
   if (tmp14Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13127).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13344).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp14Result = tmp14(tmp12, obj4);
   }

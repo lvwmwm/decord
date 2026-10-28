@@ -1,26 +1,26 @@
-// Module ID: 10046
-// Function ID: 10047
+// Module ID: 10078
+// Function ID: 10079
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 4846, 6705, 1084, 10047, 21, 4972, 587, 558, 576, 6885, 5235, 10048, 573, 1125, 10049, 1630, 2064, 6907, 8951, 7217, 7212, 5211, 5270, 5266, 2]
+// Dependencies: [32, 19, 17, 4878, 6739, 1084, 10079, 21, 5004, 587, 558, 576, 6919, 5270, 10080, 573, 1125, 10081, 1630, 2064, 6941, 8985, 7251, 7246, 5246, 5305, 5301, 2]
 
-// Module 10046 (GuildHighlightsNotificationsActionSheet)
+// Module 10078 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import GuildIcon from "GuildIcon" /* 6885 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7212 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7217 */;
-import Constants2 from "Constants" /* 10047 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10048 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import GuildIcon from "GuildIcon" /* 6919 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7246 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7251 */;
+import Constants2 from "Constants" /* 10079 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 10080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 6705 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 6739 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

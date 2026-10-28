@@ -1,10 +1,10 @@
-// Module ID: 5208
-// Function ID: 5209
+// Module ID: 5243
+// Function ID: 5244
 // Name: ReanimatedConstants
-// Dependencies: [5053, 2]
+// Dependencies: [5085, 2]
 
-// Module 5208 (ReanimatedConstants)
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+// Module 5243 (ReanimatedConstants)
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
 import size from "module_2" /* 2 */;
 
 const obj = { duration: 1, reduceMotion: ReanimatedRexport.ReduceMotion.Always };

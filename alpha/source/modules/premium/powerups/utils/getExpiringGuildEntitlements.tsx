@@ -1,10 +1,10 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13652
+// Function ID: 13653
 // Name: getExpiringGuildEntitlements
 // Dependencies: [2]
 // Exports: getExpiringGuildEntitlements
 
-// Module 13433 (getExpiringGuildEntitlements)
+// Module 13652 (getExpiringGuildEntitlements)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getExpiringGuildEntitlements.tsx");

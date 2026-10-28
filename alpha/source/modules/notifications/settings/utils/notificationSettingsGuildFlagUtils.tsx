@@ -1,16 +1,16 @@
-// Module ID: 19385
-// Function ID: 19386
+// Module ID: 19648
+// Function ID: 19649
 // Name: notificationSettingsGuildFlagUtils
-// Dependencies: [6705, 1084, 1094, 8297, 7217, 10996, 7212, 558, 576, 573, 2]
+// Dependencies: [6739, 1084, 1094, 8331, 7251, 11031, 7246, 558, 576, 573, 2]
 // Exports: updateGuildPreset
 
-// Module 19385 (notificationSettingsGuildFlagUtils)
+// Module 19648 (notificationSettingsGuildFlagUtils)
 import Constants from "Constants" /* 1084 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7217 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8297 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10996 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6705 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7251 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8331 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11031 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,25 +120,25 @@ export const updateGuildPreset = function updateGuildPreset(guildId, MENTIONS) {
     const updateGuildNotificationSettings3 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result = notificationSettingsFlagUtils;
-    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7212).NotificationLabels.PresetAll);
+    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7246).NotificationLabels.PresetAll);
   } else if (MENTIONS === notificationSettingsPresetUtils.Presets.HYBRID) {
     const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result4.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES) };
     const updateGuildNotificationSettings2 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result4 = notificationSettingsFlagUtils;
-    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7212).NotificationLabels.PresetHybrid);
+    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7246).NotificationLabels.PresetHybrid);
   } else if (MENTIONS === notificationSettingsPresetUtils.Presets.MENTIONS) {
     const obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result5.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result5 = notificationSettingsFlagUtils;
-    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7212).NotificationLabels.PresetMentions);
+    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7246).NotificationLabels.PresetMentions);
   } else if (MENTIONS === notificationSettingsPresetUtils.Presets.NOTHING) {
     const obj4 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: tmp2Result6.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings4 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result6 = notificationSettingsFlagUtils;
-    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7212).NotificationLabels.PresetNothing);
+    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7246).NotificationLabels.PresetNothing);
   }
 };
 export const useGuildPresetSettings = tmp2;

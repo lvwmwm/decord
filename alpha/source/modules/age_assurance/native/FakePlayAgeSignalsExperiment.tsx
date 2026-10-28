@@ -1,10 +1,10 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8117
+// Function ID: 8118
 // Name: FakePlayAgeSignalsExperiment
 // Dependencies: [1452, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 8083 (FakePlayAgeSignalsExperiment)
+// Module 8117 (FakePlayAgeSignalsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,19 @@
-// Module ID: 18802
-// Function ID: 18803
+// Module ID: 19053
+// Function ID: 19054
 // Name: CallIdleManager
-// Dependencies: [4823, 4824, 5631, 5718, 7567, 1125, 6635, 7216, 4819, 2]
+// Dependencies: [4855, 4856, 5666, 5753, 19054, 7601, 1125, 6669, 7250, 4851, 2]
 
-// Module 18802 (CallIdleManager)
+// Module 19053 (CallIdleManager)
 import intl2 from "intl" /* 1125 */;
-import Timers from "Timers" /* 4819 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6635 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7567 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
+import Timers from "Timers" /* 4851 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
+import CampInDmExperiment from "CampInDmExperiment" /* 19054 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5753 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
 import size from "module_2" /* 2 */;
 
 function disconnect() {
@@ -26,8 +27,16 @@ function disconnect() {
     if (tmp4) {
       let tmp5 = channel.recipients.length <= 1;
       if (tmp5) {
-        tmp5 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
-        const tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+        let tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+        if (tmp7) {
+          let tmp9 = null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+          if (tmp9) {
+            const obj3 = CampInDmExperiment;
+            tmp9 = !obj3.shouldDisableCallIdleDisconnect();
+          }
+          tmp7 = tmp9;
+        }
+        tmp5 = tmp7;
       }
       tmp4 = tmp5;
     }
@@ -40,8 +49,8 @@ function disconnect() {
       MessageActionCreatorsDefault;
       const intl = intl2.intl;
       sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(intl2.t.XYof5G, { number: 3 }));
-      const obj3 = SelectedChannelActionCreatorsDefault;
-      const voiceChannel = obj3.selectVoiceChannel(null);
+      const obj4 = SelectedChannelActionCreatorsDefault;
+      const voiceChannel = obj4.selectVoiceChannel(null);
     }
   }
 }
@@ -66,8 +75,16 @@ class CallIdleManager extends AutomaticLifecycleManager {
         if (tmp4) {
           let tmp5 = channel.recipients.length <= 1;
           if (tmp5) {
-            tmp5 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
-            const tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+            let tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+            if (tmp7) {
+              let tmp9 = null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+              if (tmp9) {
+                const obj2 = CampInDmExperiment;
+                tmp9 = !obj2.shouldDisableCallIdleDisconnect();
+              }
+              tmp7 = tmp9;
+            }
+            tmp5 = tmp7;
           }
           tmp4 = tmp5;
         }
@@ -88,8 +105,16 @@ class CallIdleManager extends AutomaticLifecycleManager {
         if (tmp4) {
           let tmp5 = channel.recipients.length <= 1;
           if (tmp5) {
-            tmp5 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
-            const tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1 && null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+            let tmp7 = SortedVoiceStateStore.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+            if (tmp7) {
+              let tmp9 = null == EmbeddedActivitiesStore.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+              if (tmp9) {
+                const obj2 = CampInDmExperiment;
+                tmp9 = !obj2.shouldDisableCallIdleDisconnect();
+              }
+              tmp7 = tmp9;
+            }
+            tmp5 = tmp7;
           }
           tmp4 = tmp5;
         }

@@ -1,25 +1,25 @@
-// Module ID: 14883
-// Function ID: 14884
+// Module ID: 15106
+// Function ID: 15107
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2065, 1389, 2054, 2055, 7525, 1084, 1391, 21, 4972, 558, 576, 504, 2050, 14747, 7532, 7520, 5235, 1381, 7342, 7341, 1125, 1900, 2]
+// Dependencies: [32, 19, 17, 2065, 1389, 2054, 2055, 7559, 1084, 1391, 21, 5004, 558, 576, 504, 2050, 14970, 7566, 7555, 5270, 1381, 7377, 7376, 1125, 1900, 2]
 
-// Module 14883 (PremiumSubscriptionPricingUpsell)
+// Module 15106 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14747 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 14970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
 import UserStore from "UserStore" /* 1389 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2054 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
-import IAPStore from "IAPStore" /* 7525 */;
+import IAPStore from "IAPStore" /* 7559 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp12, tmp13);
-  const tmpResult7 = tmp(14747);
+  const tmpResult7 = tmp(14970);
   const subscriptionPlansLoaded = tmpResult7.useSubscriptionPlansLoaded();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SubscriptionStore];
@@ -366,7 +366,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f123157 = () => {
+  const f123884 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[18]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -402,8 +402,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pricin
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f123157), 5);
-  str2(obj7.useStateFromStoresArray(items4, f123157), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f123884), 5);
+  str2(obj7.useStateFromStoresArray(items4, f123884), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];

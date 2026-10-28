@@ -1,13 +1,13 @@
-// Module ID: 6654
-// Function ID: 6655
+// Module ID: 6688
+// Function ID: 6689
 // Name: shouldAgeVerifyForAgeGate
-// Dependencies: [6655, 5645, 6660, 558, 2]
+// Dependencies: [6689, 5680, 6694, 558, 2]
 // Exports: shouldAgeVerifyForAgeGate
 
-// Module 6654 (shouldAgeVerifyForAgeGate)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5645 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6655 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6660 */;
+// Module 6688 (shouldAgeVerifyForAgeGate)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

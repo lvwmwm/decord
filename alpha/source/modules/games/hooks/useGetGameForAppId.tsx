@@ -1,12 +1,12 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9257
+// Function ID: 9258
 // Name: useGetGameForAppId
-// Dependencies: [19, 2019, 558, 576, 7259, 7408, 1385, 504, 2]
+// Dependencies: [19, 2019, 558, 576, 7293, 7443, 1385, 504, 2]
 
-// Module 9224 (useGetGameForAppId)
+// Module 9257 (useGetGameForAppId)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7293 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2019 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const useGetOrFetchApplicationsDefault = useGetOrFetchApplications;
 let _require;
 
 let tmp;
-const useGame = tmp(7408);
+const useGame = tmp(7443);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGameForAppId(arg0) {
   let tmp4;
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGame
 }) : (function useGetGamesForAppIds(arg0) {
   let closure_0;
   let memo;
-  const tmp = memo(7259)(arg0);
+  const tmp = memo(7293)(arg0);
   _require = tmp;
   const items = [tmp];
   memo = react.useMemo(() => {

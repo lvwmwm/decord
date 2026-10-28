@@ -1,12 +1,12 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17967
+// Function ID: 17968
 // Name: ChannelListFastList
-// Dependencies: [32, 19, 21, 558, 576, 17731, 7169, 2]
+// Dependencies: [32, 19, 21, 558, 576, 17968, 7203, 2]
 
-// Module 17730 (ChannelListFastList)
+// Module 17967 (ChannelListFastList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import reactDefault from "react" /* 17731 */;
+import reactDefault from "react" /* 17968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,8 +14,8 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const FastList = tmp(7169);
-const FastListDefault = tmp4(7169);
+const FastList = tmp(7203);
+const FastListDefault = tmp4(7203);
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListFastList(arg0) {
   let drawDistanceMode;

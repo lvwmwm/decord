@@ -1,10 +1,10 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7747
+// Function ID: 7748
 // Name: TieredTenureBadgeUtils
 // Dependencies: [1391, 2046, 2]
 // Exports: getEarnedOnDate, getEarnedTenureBadge, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 7713 (TieredTenureBadgeUtils)
+// Module 7747 (TieredTenureBadgeUtils)
 import _modDef2046 from "module_2046" /* 2046 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;

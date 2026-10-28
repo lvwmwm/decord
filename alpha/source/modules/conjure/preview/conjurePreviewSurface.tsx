@@ -1,14 +1,14 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10765
+// Function ID: 10766
 // Name: conjurePreviewSurface
-// Dependencies: [6776, 6777, 5627, 10732, 2]
+// Dependencies: [6810, 6811, 5662, 10766, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjureBuilderPreviewOverlayFrame, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewOverlayFrame, isConjurePreviewSurface
 
-// Module 10731 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5627 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10732 */;
-import FramesStore from "FramesStore" /* 6776 */;
-import FramesConstants from "FramesConstants" /* 6777 */;
+// Module 10765 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5662 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10766 */;
+import FramesStore from "FramesStore" /* 6810 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f108259 = (item) => null != item;
+const f108878 = (item) => null != item;
 ({ getFrameHostWindowKey: c3, isLaunched: closure_4, makeFrameId: hasOwnProperty, OVERLAY_SURFACE: metroRequire } = FramesConstants);
 let c7 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -90,7 +90,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f108259);
+  return mapped.filter(f108878);
 };
 export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -113,7 +113,7 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f108259);
+  const found = mapped.filter(f108878);
   let found1 = found.find(closure_4);
   if (found1 == null) {
     found1 = found[0];

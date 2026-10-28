@@ -1,16 +1,16 @@
-// Module ID: 10671
-// Function ID: 10672
-// Dependencies: [10670, 2]
+// Module ID: 10703
+// Function ID: 10704
+// Dependencies: [10702, 2]
 // Exports: splitGraphemes
 
-// Module 10671
-import _modDef10670 from "module_10670" /* 10670 */;
+// Module 10703
+import _modDef10702 from "module_10702" /* 10702 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/StringUtils.tsx");
 
 export const splitGraphemes = function splitGraphemes(name) {
-  const obj = _modDef10670();
+  const obj = _modDef10702();
   const items = [];
   let match = obj.exec(name);
   let num = 0;

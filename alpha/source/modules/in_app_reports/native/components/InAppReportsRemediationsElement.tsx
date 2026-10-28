@@ -1,17 +1,17 @@
-// Module ID: 14620
-// Function ID: 14621
+// Module ID: 14843
+// Function ID: 14844
 // Name: InAppReportsRemediationsElement
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1125, 6989, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 7023, 2]
 
-// Module 14620 (InAppReportsRemediationsElement)
+// Module 14843 (InAppReportsRemediationsElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import TableRowGroup2 from "TableRowGroup" /* 6989 */;
+import TableRowGroup2 from "TableRowGroup" /* 7023 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

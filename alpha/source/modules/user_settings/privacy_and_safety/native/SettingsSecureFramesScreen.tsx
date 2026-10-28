@@ -1,22 +1,22 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17522
+// Function ID: 17523
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1389, 1084, 21, 4972, 587, 558, 576, 504, 17293, 5026, 8670, 7255, 8668, 1199, 1125, 6914, 6905, 5253, 1502, 17291, 5235, 7222, 9196, 2]
+// Dependencies: [19, 17, 1389, 1084, 21, 5004, 587, 558, 576, 504, 17523, 5058, 8707, 7289, 8705, 1199, 1125, 6948, 6939, 5288, 1502, 17521, 5270, 7256, 9229, 2]
 
-// Module 17292 (SettingsSecureFramesScreen)
+// Module 17522 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import UserActionCreators from "UserActionCreators" /* 8670 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9196 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
+import UserActionCreators from "UserActionCreators" /* 8707 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9229 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -478,7 +478,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSecu
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9Q/PQv"]) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp7 = metroImportDefault(Text, obj2);
     cResult[0] = tmp7;
@@ -488,7 +488,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSecu
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: format(v8IwQfG, obj4) };
-    const Text2 = tmp(5235).Text;
+    const Text2 = tmp(5270).Text;
     const intl2 = tmp(1125).intl;
     format = intl2.format;
     obj4 = { helpArticle: tmpResult.getSecureFramesHelpdeskArticle() };

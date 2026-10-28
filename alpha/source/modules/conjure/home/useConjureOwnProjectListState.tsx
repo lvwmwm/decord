@@ -1,12 +1,12 @@
-// Module ID: 14183
-// Function ID: 14184
+// Module ID: 14407
+// Function ID: 14408
 // Name: useConjureOwnProjectListState
-// Dependencies: [19, 6774, 558, 576, 14172, 504, 2]
+// Dependencies: [19, 6808, 558, 576, 14395, 504, 2]
 
-// Module 14183 (useConjureOwnProjectListState)
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14172 */;
+// Module 14407 (useConjureOwnProjectListState)
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14395 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -143,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let closure_0;
   let obj3;
   _require = arg1;
-  arr = arr(14172)(arg1);
+  arr = arr(14395)(arg1);
   const items = [ConjureProjectStore];
   const items1 = [arg1];
   const obj = require("get initialized");

@@ -1,10 +1,10 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7393
+// Function ID: 7394
 // Name: GuildRoleSubscriptionsHttpApi
-// Dependencies: [5, 1084, 1095, 1294, 6375, 2]
+// Dependencies: [5, 1084, 1095, 1294, 6409, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 7358 (GuildRoleSubscriptionsHttpApi)
+// Module 7393 (GuildRoleSubscriptionsHttpApi)
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;

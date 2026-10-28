@@ -1,24 +1,24 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 9446
+// Function ID: 9447
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9390, 7306, 21, 4972, 587, 558, 576, 8715, 5253, 8711, 8698, 6968, 9415, 5670, 2]
+// Dependencies: [19, 17, 9422, 7340, 21, 5004, 587, 558, 576, 8752, 5288, 8748, 8735, 7002, 9447, 5705, 2]
 
-// Module 9414 (ProfileFrameSamplePreview)
+// Module 9446 (ProfileFrameSamplePreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5253 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import _modDef6968 from "module_6968" /* 6968 */;
-import Constants from "Constants" /* 7306 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8698 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8711 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8715 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9390 */;
-import _modDef9415 from "module_9415" /* 9415 */;
+import useToken from "useToken" /* 5288 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import _modDef7002 from "module_7002" /* 7002 */;
+import Constants from "Constants" /* 7340 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8735 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8748 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8752 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
+import _modDef9447 from "module_9447" /* 9447 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
                                                                 }
                                                                 const _Symbol = Symbol;
                                                                 if (cResult[69] === Symbol.for("react.memo_cache_sentinel")) {
-                                                                  const obj5 = { uri: _modDef9415 };
+                                                                  const obj5 = { uri: _modDef9447 };
                                                                   cResult[69] = obj5;
                                                                   tmp83 = obj5;
                                                                 } else {
@@ -298,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
                                                     }
                                                   }
                                                   const obj11 = { style: tmp22, maskElement: tmp63, children: tmp69 };
-                                                  const tmp75 = metroRequire(_modDef6968, obj11);
+                                                  const tmp75 = metroRequire(_modDef7002, obj11);
                                                   cResult[52] = tmp63;
                                                   cResult[53] = tmp69;
                                                   cResult[54] = tmp22;
@@ -449,7 +449,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
   obj4 = { style: _false.absoluteFill, children: items };
   items = [, , , , , , , ];
   const obj5 = { style: { position: "absolute", top: 0, left: 0, right: 0, height: overflowTop, backgroundColor: "black" } };
-  const tmp13 = _modDef6968;
+  const tmp13 = _modDef7002;
   items[0] = metroRequire(React3, obj5);
   const obj6 = { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: overflowBottom, backgroundColor: "black" } };
   items[1] = metroRequire(React3, obj6);
@@ -484,7 +484,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef9415 };
+  obj18 = { uri: _modDef9447 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

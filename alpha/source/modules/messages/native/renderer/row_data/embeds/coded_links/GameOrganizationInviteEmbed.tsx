@@ -1,22 +1,22 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14810
+// Function ID: 14811
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11032, 10006, 11033, 7810, 1125, 2403, 8273, 8135, 587, 12737, 4969, 12730, 2]
+// Dependencies: [11067, 10038, 11068, 7844, 1125, 2403, 8307, 12784, 8169, 587, 5001, 12777, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 14587 (GameOrganizationInviteEmbed)
+// Module 14810 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1125 */;
+import intl10 from "intl" /* 1125 */;
 import _modDef2403 from "module_2403" /* 2403 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import Constants from "Constants" /* 7810 */;
-import react_native from "react-native" /* 8135 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8273 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10006 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12730 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12737 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11032 */;
+import ColorUtils from "ColorUtils" /* 5001 */;
+import Constants from "Constants" /* 7844 */;
+import react_native from "react-native" /* 8169 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10038 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12777 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12784 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11067 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -31,19 +31,27 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
   let colors;
   let description;
   let displayNoun;
+  let formatToPlainString;
+  let formatToPlainString2;
   let formatToPlainStringResult;
   let iconUrl;
   let iconUrl2;
-  let intl3;
+  let internal3;
+  let intl;
   let intl4;
-  let intl6;
+  let intl7;
   let inviterId;
   let items;
   let maxMembers;
   let memberCount;
-  let obj18;
+  let obj14;
   let obj5;
+  let obj6;
+  let obj8;
   let organization;
+  let processColorOrThrow;
+  let prop;
+  let prop1;
   let str;
   ({ colors, baseColors } = getEmbedThemeColorsDefault(theme));
   getEmbedThemeColorsDefault(theme);
@@ -53,40 +61,48 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
   } else {
     const obj2 = { extendedType: CodedLinkExtendedType.GAME_ORGANIZATION_INVITE, type: InviteTypes.GUILD };
     const merged = Object.assign(baseColors);
-    ({ titleColor: obj7.titleColor, bodyTextColor: obj7.bodyTextColor, subtitleColor: obj7.subtitleColor } = colors);
+    ({ titleColor: obj13.titleColor, bodyTextColor: obj13.bodyTextColor } = colors);
     if (invite.state === constants.RESOLVING) {
       const obj3 = { headerText: str.toUpperCase(), embedCanBeTapped: false, canBeAccepted: false };
       const merged1 = Object.assign(obj2);
-      const intl5 = intl7.intl;
-      ({ resolvingGradientStart: obj6.resolvingGradientStart, resolvingGradientEnd: obj6.resolvingGradientEnd } = colors);
-      str = intl5.string(intl7.t["N/g9Z4"]);
+      const intl9 = intl10.intl;
+      ({ resolvingGradientStart: obj12.resolvingGradientStart, resolvingGradientEnd: obj12.resolvingGradientEnd } = colors);
+      str = intl9.string(intl10.t["N/g9Z4"]);
       return obj3;
-    } else if (invite.state === tmp31.ERROR) {
-      const obj4 = { headerText: intl3.string(_modDef2403.GLe98U), titleText: intl4.string(_modDef2403["2/aTr2"]), titleColor: obj5.processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400), embedCanBeTapped: false, canBeAccepted: false };
+    } else if (invite.state === tmp38.ERROR) {
+      const obj4 = { headerText: formatToPlainString(prop, obj5), titleText: intl7.string(_modDef2403["2/aTr2"]), subtitle: formatToPlainString2(prop1, obj6), titleColor: processColorOrThrow(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), showInvalidIcon: true, embedCanBeTapped: false, canBeAccepted: false };
       const merged2 = Object.assign(obj2);
-      intl3 = intl7.intl;
-      intl4 = intl7.intl;
-      obj5 = react_native;
+      const intl6 = intl10.intl;
+      formatToPlainString = intl6.formatToPlainString;
+      obj5 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null }) };
+      prop = tmp(2403)["jKi+kc"];
+      intl7 = intl10.intl;
+      const intl8 = intl10.intl;
+      formatToPlainString2 = intl8.formatToPlainString;
+      obj6 = { noun: getGameOrganizationDisplayNounDefault({ displayNoun: null, lowercase: true }) };
+      prop1 = tmp(2403)["L/fHgw"];
+      processColorOrThrow = react_native.processColorOrThrow;
+      react_native;
+      internal3 = tmp(587).internal;
       return obj4;
     } else {
-      let tmp13;
+      let obj28;
       ({ organization, application, displayNoun, accepted, inviterId } = invite);
-      const obj8 = { displayNoun };
-      const tmp32 = getGameOrganizationDisplayNounDefault(obj8);
+      const obj7 = { displayNoun };
+      const tmp39 = getGameOrganizationDisplayNounDefault(obj7);
       ({ memberCount, maxMembers } = organization);
-      const obj10 = { headerText: intl6.formatToPlainString(_modDef2403["jKi+kc"], obj18), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, bodyText: description, gradientColors: items };
+      let tmp5 = null != memberCount && null != maxMembers;
+      const obj = { headerText: intl.formatToPlainString(_modDef2403["jKi+kc"], obj8), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, bodyText: description, gradientColors: items };
       const merged3 = Object.assign(obj2);
-      intl6 = intl7.intl;
-      obj18 = { noun: tmp32 };
-      ({ name: obj9.titleText, iconUrl } = organization);
-      ({ name: obj9.gameName, iconUrl: iconUrl2 } = application);
+      intl = intl10.intl;
+      obj8 = { noun: tmp39 };
+      ({ name: obj.titleText, iconUrl } = organization);
+      ({ name: obj.gameName, iconUrl: iconUrl2 } = application);
       formatToPlainStringResult = undefined;
-      if (null != memberCount) {
-        if (null != maxMembers) {
-          const intl = tmp36(1125).intl;
-          const obj = { count: memberCount, max: maxMembers };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(2403).VuENGl, obj);
-        }
+      if (tmp5) {
+        const intl2 = tmp9(1125).intl;
+        const obj9 = { count: memberCount, max: maxMembers };
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(2403).VuENGl, obj9);
       }
       description = organization.description;
       const hexToRgba = ColorUtils.hexToRgba;
@@ -97,36 +113,39 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
       ColorUtils;
       const internal2 = tmp(587).internal;
       items[1] = hexToRgba2(internal2.resolveSemanticColor(theme, nativeDefault.colors.EXPRESSIVE_GRADIENT_PURPLE_END));
-      const tmp9 = canGoToGameOrganizationGuildDefault(invite, id);
-      const obj19 = { acceptLabelText: null, canBeAccepted: null, embedCanBeTapped: null };
-      const intl2 = tmp36(1125).intl;
+      const tmp14 = canGoToGameOrganizationGuildDefault(invite, id);
+      if (tmp5) {
+        tmp5 = memberCount >= maxMembers;
+      }
       if (accepted) {
         let stringResult;
-        const string = intl2.string;
-        if (tmp9) {
+        const intl5 = tmp9(1125).intl;
+        const string = intl5.string;
+        if (tmp14) {
           stringResult = string(tmp(2403).H1wMHV);
         } else {
-          stringResult = string(tmp36(1125).t.cEnaWx);
+          stringResult = string(tmp9(1125).t.cEnaWx);
         }
-        obj19.acceptLabelText = stringResult;
-        obj19.canBeAccepted = tmp9;
-        obj19.embedCanBeTapped = tmp9;
-        tmp13 = obj19;
+        obj28 = { acceptLabelText: stringResult, canBeAccepted: tmp14, embedCanBeTapped: tmp14 };
+        const obj10 = { acceptLabelText: stringResult, canBeAccepted: tmp14, embedCanBeTapped: tmp14 };
+      } else if (tmp5) {
+        const obj11 = { acceptLabelText: intl4.formatToPlainString(_modDef2403.rMimTG, obj14), canBeAccepted: false, embedCanBeTapped: false };
+        intl4 = tmp9(1125).intl;
+        obj28 = obj11;
+        obj14 = { noun: tmp39 };
       } else {
         let stringResult1;
+        const intl3 = tmp9(1125).intl;
         if (id === inviterId) {
-          stringResult1 = intl2.string(tmp(2403).OkMPbI);
+          stringResult1 = intl3.string(tmp(2403).OkMPbI);
         } else {
-          const obj20 = { noun: tmp32 };
-          stringResult1 = intl2.formatToPlainString(tmp(2403)["Cz/ZUM"], obj20);
+          const obj27 = { noun: tmp39 };
+          stringResult1 = intl3.formatToPlainString(tmp(2403)["Cz/ZUM"], obj27);
         }
-        obj19.acceptLabelText = stringResult1;
-        obj19.canBeAccepted = id !== inviterId;
-        obj19.embedCanBeTapped = id !== inviterId;
-        tmp13 = obj19;
+        obj28 = { acceptLabelText: stringResult1, canBeAccepted: id !== inviterId, embedCanBeTapped: id !== inviterId };
       }
-      const merged4 = Object.assign(tmp13);
-      return obj10;
+      const merged4 = Object.assign(obj28);
+      return obj;
     }
   }
 };

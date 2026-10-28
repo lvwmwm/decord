@@ -1,23 +1,23 @@
-// Module ID: 14116
-// Function ID: 14117
+// Module ID: 14339
+// Function ID: 14340
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1084, 21, 4972, 587, 558, 576, 1502, 1294, 1125, 5235, 7009, 14117, 5245, 7223, 6673, 6926, 7097, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 5004, 587, 558, 576, 1502, 1294, 1125, 5270, 7043, 14340, 5280, 7257, 6707, 6960, 7131, 2]
 
-// Module 14116 (DomainVerifyModal)
+// Module 14339 (DomainVerifyModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1125 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7223 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 14117 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 14340 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1096,7 +1096,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
   const tmp8 = closure_9;
   if (tmp9Result) {
     const obj10 = { variant: "text-md/normal", color: "text-feedback-critical", style: tmp.error, children: tmp5 };
-    tmp9Result = tmp9(tmp2(5235).Text, obj10);
+    tmp9Result = tmp9(tmp2(5270).Text, obj10);
   }
   items[2] = tmp9Result;
   const obj11 = { style: tmp.button, children: closure_8(Button, obj12) };
@@ -1149,7 +1149,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
       });
     }
   };
-  Button = tmp2(5245).Button;
+  Button = tmp2(5280).Button;
   intl4 = tmp2(1125).intl;
   items[3] = closure_8(View, obj11);
   const obj13 = { style: tmp.button, children: closure_8(Button2, obj14) };
@@ -1160,7 +1160,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HTTPPr
       closure_2.pop();
     }
   };
-  Button2 = tmp2(5245).Button;
+  Button2 = tmp2(5280).Button;
   intl5 = tmp2(1125).intl;
   items[4] = closure_8(View, obj13);
   return tmp8(SafeAreaPaddingView, obj2);
@@ -1202,7 +1202,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     intl = tmp(1125).intl;
     cResult[1] = obj2;
     tmp5 = obj2;
-    tmpResult = onClose(6926);
+    tmpResult = onClose(6960);
   } else {
     tmp5 = cResult[1];
   }
@@ -1218,7 +1218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     intl2 = tmp(1125).intl;
     cResult[2] = obj3;
     tmp6 = obj3;
-    tmpResult3 = onClose(6926);
+    tmpResult3 = onClose(6960);
   } else {
     tmp6 = cResult[2];
   }
@@ -1239,13 +1239,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     obj4[PROOF_HTTP] = obj5;
     cResult[3] = obj4;
     tmp7 = obj4;
-    tmpResult4 = onClose(6926);
+    tmpResult4 = onClose(6960);
   } else {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { screens: tmp7, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1125).t["13/7kX"]) };
-    const Navigator = tmp(7097).Navigator;
+    const Navigator = tmp(7131).Navigator;
     intl4 = tmp(1125).intl;
     const tmp12 = closure_8(Navigator, obj6);
     cResult[4] = tmp12;
@@ -1281,7 +1281,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     };
     intl = onClose(1125).intl;
     obj[DOMAIN] = obj2;
-    obj3 = onClose(6926);
+    obj3 = onClose(6960);
     const PROOF_DNS = constants2.PROOF_DNS;
     const obj4 = {
       headerTitle: intl2.string(onClose(1125).t["7lo8+e"]),
@@ -1293,7 +1293,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     };
     intl2 = onClose(1125).intl;
     obj[PROOF_DNS] = obj4;
-    obj5 = onClose(6926);
+    obj5 = onClose(6960);
     const PROOF_HTTP = constants2.PROOF_HTTP;
     const obj6 = {
       headerTitle: intl3.string(onClose(1125).t["7lo8+e"]),
@@ -1305,9 +1305,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DomainVerify
     };
     intl3 = onClose(1125).intl;
     obj[PROOF_HTTP] = obj6;
-    obj7 = onClose(6926);
+    obj7 = onClose(6960);
     const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: intl4.string(onClose(1125).t["13/7kX"]) };
-    const Navigator = onClose(7097).Navigator;
+    const Navigator = onClose(7131).Navigator;
     intl4 = onClose(1125).intl;
     return closure_8(Navigator, obj8);
   }

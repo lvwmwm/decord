@@ -1,10 +1,10 @@
-// Module ID: 5844
-// Function ID: 5845
+// Module ID: 5879
+// Function ID: 5880
 // Name: Avx512EntropyHistogramExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsAvx512EntropyHistogramEnabled
 
-// Module 5844 (Avx512EntropyHistogramExperiment)
+// Module 5879 (Avx512EntropyHistogramExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

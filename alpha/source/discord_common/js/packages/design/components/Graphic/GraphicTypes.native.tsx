@@ -1,10 +1,10 @@
-// Module ID: 5138
-// Function ID: 5139
+// Module ID: 5173
+// Function ID: 5174
 // Name: GraphicTypes
 // Dependencies: [2]
 // Exports: isImage, isRive
 
-// Module 5138 (GraphicTypes)
+// Module 5173 (GraphicTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Graphic/GraphicTypes.native.tsx");

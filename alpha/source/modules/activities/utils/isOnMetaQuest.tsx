@@ -1,10 +1,10 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 14556
+// Function ID: 14557
 // Name: isOnMetaQuest
 // Dependencies: [1084, 2]
 // Exports: default
 
-// Module 14333 (isOnMetaQuest)
+// Module 14556 (isOnMetaQuest)
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

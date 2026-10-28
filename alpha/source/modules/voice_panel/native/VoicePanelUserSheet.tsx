@@ -1,23 +1,23 @@
-// Module ID: 18604
-// Function ID: 18605
+// Module ID: 18852
+// Function ID: 18853
 // Name: VoicePanelUserSheet
-// Dependencies: [109, 19, 17, 4824, 4914, 1389, 1084, 21, 4972, 587, 558, 576, 7255, 7280, 14286, 8679, 504, 13034, 4800, 7286, 14285, 8668, 1125, 14295, 7413, 9646, 9763, 5053, 5990, 14362, 18603, 9418, 1199, 5670, 5235, 14308, 14365, 5266, 5270, 7223, 2]
+// Dependencies: [109, 19, 17, 4856, 4946, 1389, 1084, 21, 5004, 587, 558, 576, 7289, 7314, 14509, 8716, 504, 13251, 4832, 7320, 14508, 8705, 1125, 14518, 7448, 9678, 9795, 5085, 6025, 14585, 18851, 9450, 1199, 5705, 5270, 14531, 14588, 5301, 5305, 7257, 2]
 
-// Module 18604 (VoicePanelUserSheet)
+// Module 18852 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7413 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import UserProfileActivity from "UserProfileActivity" /* 14308 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 18603 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
+import UserProfileActivity from "UserProfileActivity" /* 14531 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 18851 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -422,9 +422,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
   }
   const tmpResult5 = tmp(504);
   const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp14);
-  const tmpResult6 = tmp(5990);
+  const tmpResult6 = tmp(6025);
   const name = tmpResult6.useName(guildId, channelId, stateFromStores);
-  const live = userId(14362)(userId).live;
+  const live = userId(14585)(userId).live;
   react = tmp17;
   if (cResult[8] !== (null == stateFromStores || null == stateFromStores1 || null == stateFromStores2)) {
     class C {
@@ -495,9 +495,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
   const items2 = [UserStore];
   const obj4 = channelId(504);
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj5 = channelId(5990);
+  const obj5 = channelId(6025);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(14362)(userId).live;
+  const live = userId(14585)(userId).live;
   react = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = react.useEffect(() => {
@@ -514,30 +514,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
         let tmp11Result;
         const avatarURL = stateFromStores.getAvatarURL(guildId, 48, false);
         if (null != avatarURL) {
-          const tmp2Result = channelId(9418);
+          const tmp2Result = channelId(9450);
           cachedSourceFromURI = tmp2Result.getCachedSourceFromURI(avatarURL);
         }
         const avatarDecoration = stateFromStores.avatarDecoration;
-        BottomSheet = tmp2(5266).BottomSheet;
-        const BottomSheetScrollView = tmp2(5270).BottomSheetScrollView;
+        BottomSheet = tmp2(5301).BottomSheet;
+        const BottomSheetScrollView = tmp2(5305).BottomSheetScrollView;
         const obj2 = { bottom: true, style: tmp.wrapper, children: items6 };
         const obj6 = { style: tmp.header, children: items5 };
         const obj7 = { style: tmp.user, children: items4 };
-        const SafeAreaPaddingView = tmp2(7223).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp2(7257).SafeAreaPaddingView;
         if (null != avatarDecoration) {
           const obj8 = { source: cachedSourceFromURI, size: channelId(1199).AvatarSizes.LARGE_48, avatarDecoration };
           const Avatar = tmp2(1199).Avatar;
           tmp11Result = tmp11(Avatar, obj8);
         } else {
           size = { source: cachedSourceFromURI, resizeMode: "stretch", width: v48, height: v48, style: tmp.avatar };
-          const tmp7Result = userId(5670);
+          const tmp7Result = userId(5705);
           tmp11Result = tmp11(tmp7Result, size);
         }
         const obj9 = { scrollable: true, children: closure_12(BottomSheetScrollView, obj10) };
         items4 = [tmp11Result, ];
         obj10 = { children: closure_13(SafeAreaPaddingView, obj2) };
         const obj11 = { variant: "text-md/semibold", style: tmp.username, lineClamp: 1, children: name };
-        items4[1] = closure_12(channelId(5235).Text, obj11);
+        items4[1] = closure_12(channelId(5270).Text, obj11);
         items5 = [closure_13(closure_6, obj7), ];
         const obj12 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
         items5[1] = closure_12(closure_16, obj12);
@@ -556,7 +556,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
 
         ];
         const obj13 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_12(userId(14365), obj13);
+        items6[2] = closure_12(userId(14588), obj13);
         return closure_12(BottomSheet, obj9);
       }
     }

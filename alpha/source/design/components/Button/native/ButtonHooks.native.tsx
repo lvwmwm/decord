@@ -1,22 +1,22 @@
-// Module ID: 5252
-// Function ID: 5253
+// Module ID: 5287
+// Function ID: 5288
 // Name: ButtonHooks
-// Dependencies: [19, 4972, 558, 576, 5038, 587, 4979, 5253, 5053, 5248, 5249, 5251, 5254, 5247, 5235, 1381, 2]
+// Dependencies: [19, 5004, 558, 576, 5070, 587, 5011, 5288, 5085, 5283, 5284, 5286, 5289, 5282, 5270, 1381, 2]
 
-// Module 5252 (ButtonHooks)
+// Module 5287 (ButtonHooks)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import shared from "shared" /* 4979 */;
-import native from "native" /* 5038 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import Icon from "Icon" /* 5247 */;
-import spring from "spring" /* 5248 */;
-import springPresets from "springPresets" /* 5249 */;
-import ButtonConstants from "ButtonConstants" /* 5251 */;
-import useFontScale from "useFontScale" /* 5254 */;
+import shared from "shared" /* 5011 */;
+import native from "native" /* 5070 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import Icon from "Icon" /* 5282 */;
+import spring from "spring" /* 5283 */;
+import springPresets from "springPresets" /* 5284 */;
+import ButtonConstants from "ButtonConstants" /* 5286 */;
+import useFontScale from "useFontScale" /* 5289 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
-const useToken = tmp(5253);
+const useToken = tmp(5288);
 function getButtonColorTokens(arg0) {
   let obj13;
   let obj20;
@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTh
           tmp29 = cResult[13];
         }
         if (cResult[14] !== tmp27) {
-          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "Array" };
+          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "r" };
           cResult[14] = tmp27;
           cResult[15] = obj5;
           tmp31 = obj5;
@@ -324,7 +324,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTh
               tmp16 = cResult[23];
             }
             if (cResult[24] !== tmp14) {
-              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "Array" };
+              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "r" };
               cResult[24] = tmp14;
               cResult[25] = obj6;
               tmp18 = obj6;
@@ -417,7 +417,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTh
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -443,7 +443,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTh
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -886,13 +886,13 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   let BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = arg2;
   const tmp4 = undefined !== arg1 && arg1;
   if (undefined === arg2) {
-    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5251).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5286).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmpResult = useFontScale;
   const fontScale = tmpResult.useFontScale();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult6 = Icon;
-    const iconSize = tmpResult6.getIconSize(tmp(5251).MEDIUM_BUTTON_ICON_SIZE);
+    const iconSize = tmpResult6.getIconSize(tmp(5286).MEDIUM_BUTTON_ICON_SIZE);
     cResult[0] = iconSize;
     first = iconSize;
   } else {
@@ -903,7 +903,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult7 = Icon;
-      const iconSize1 = tmpResult7.getIconSize(tmp(5251).SMALL_BUTTON_ICON_SIZE);
+      const iconSize1 = tmpResult7.getIconSize(tmp(5286).SMALL_BUTTON_ICON_SIZE);
       cResult[1] = iconSize1;
       tmp10 = iconSize1;
     } else {
@@ -915,7 +915,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult8 = Icon;
-      const iconSize2 = tmpResult8.getIconSize(tmp(5251).LARGE_BUTTON_ICON_SIZE);
+      const iconSize2 = tmpResult8.getIconSize(tmp(5286).LARGE_BUTTON_ICON_SIZE);
       cResult[2] = iconSize2;
       tmp8 = iconSize2;
     } else {
@@ -927,7 +927,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   if (tmp4) {
     bound = first;
     if (fontScale > 1) {
-      const TextStyleSheet = tmp(5235).TextStyleSheet;
+      const TextStyleSheet = tmp(5270).TextStyleSheet;
       const tmpResult9 = ButtonConstants;
       const tmp16 = TextStyleSheet[tmpResult9.getButtonDefaultTextVariant(tmpResult9, size)];
       const tmpResult10 = PlatformUtils;
@@ -972,19 +972,19 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5251).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5286).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5251).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5286).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(5235).TextStyleSheet;
+        const TextStyleSheet = tmp(5270).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

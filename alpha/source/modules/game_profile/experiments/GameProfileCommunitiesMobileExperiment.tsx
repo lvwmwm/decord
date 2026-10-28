@@ -1,9 +1,9 @@
-// Module ID: 14188
-// Function ID: 14189
+// Module ID: 14412
+// Function ID: 14413
 // Name: GameProfileCommunitiesMobileExperiment
 // Dependencies: [1452, 558, 576, 2]
 
-// Module 14188 (GameProfileCommunitiesMobileExperiment)
+// Module 14412 (GameProfileCommunitiesMobileExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

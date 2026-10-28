@@ -1,30 +1,30 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15668
+// Function ID: 15669
 // Name: Status
-// Dependencies: [32, 19, 17, 1200, 1084, 14351, 21, 4972, 15440, 587, 15443, 15444, 15445, 15446, 15447, 15448, 15449, 558, 576, 15441, 5670, 15450, 5053, 5248, 15428, 2]
+// Dependencies: [32, 19, 17, 1200, 1084, 14574, 21, 5004, 15666, 587, 15669, 15670, 15671, 15672, 15673, 15674, 15675, 558, 576, 15667, 5705, 15676, 5085, 5283, 15654, 2]
 
-// Module 15442 (Status)
+// Module 15668 (Status)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import StatusConstants from "StatusConstants" /* 1200 */;
-import spring from "spring" /* 5248 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15440 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15441 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15443 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15444 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15445 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15446 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15447 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15448 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15449 */;
+import spring from "spring" /* 5283 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15666 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15667 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15669 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15670 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15671 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15672 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15673 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15674 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15675 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14351 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14574 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -208,23 +208,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status(arg0)
   const tmp3 = View;
   tmp6 = FastImageDefault;
   if (streaming) {
-    tmp4Result = tmp4(15443);
+    tmp4Result = tmp4(15669);
   } else if (flag2) {
-    tmp4Result = tmp4(15444);
+    tmp4Result = tmp4(15670);
   } else if (flag) {
-    tmp4Result = tmp4(15445);
+    tmp4Result = tmp4(15671);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(15446);
+    tmp4Result = tmp4(15672);
   } else if (StatusTypes.DND === status) {
-    tmp4Result = tmp4(15447);
+    tmp4Result = tmp4(15673);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(15449);
+        tmp4Result = tmp4(15675);
       }
     }
-    tmp4Result = tmp4(15448);
+    tmp4Result = tmp4(15674);
   }
   return authStore(tmp3, obj);
 });

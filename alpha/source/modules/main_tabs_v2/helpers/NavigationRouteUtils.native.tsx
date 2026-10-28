@@ -1,15 +1,15 @@
-// Module ID: 5151
-// Function ID: 5152
+// Module ID: 5186
+// Function ID: 5187
 // Name: NavigationRouteUtils
-// Dependencies: [32, 19, 5152, 1503, 1278, 5153, 5158, 5159, 5160, 558, 576, 2]
+// Dependencies: [32, 19, 5187, 1503, 1278, 5188, 5193, 5194, 5195, 558, 576, 2]
 // Exports: coerceChannelSecondaryViewChatRoute, coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, routesBelowFirstRemoved, setHomeDrawerState
 
-// Module 5151 (NavigationRouteUtils)
+// Module 5186 (NavigationRouteUtils)
 import v1 from "v1" /* 1278 */;
 import Link from "Link" /* 1503 */;
-import RootNavigationRef from "RootNavigationRef" /* 5152 */;
-import react_nativeDefault from "react-native" /* 5158 */;
-import ChatInputUtils from "ChatInputUtils" /* 5160 */;
+import RootNavigationRef from "RootNavigationRef" /* 5187 */;
+import react_nativeDefault from "react-native" /* 5193 */;
+import ChatInputUtils from "ChatInputUtils" /* 5195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Types = tmp(5159);
+const Types = tmp(5194);
 function modalRoutesAboveMain(routes) {
   const items = [];
   const substr = routes.slice(1);
@@ -762,7 +762,7 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
   let obj3;
   let screen;
   let tmp2Result4;
-  let obj = icymiScreen(5152);
+  let obj = icymiScreen(5187);
   const rootNavigationRef = obj.getRootNavigationRef();
   ({ screen, forceNavigate } = drawerOpen);
   if (null != rootNavigationRef) {
@@ -781,15 +781,15 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
           if (forceNavigate) {
             let obj2 = { screen, params: obj3 };
             obj3 = { guildId, channelId, drawerOpen: drawerOpen.drawerOpen };
-            const tmp2Result = icymiScreen(5152);
+            const tmp2Result = icymiScreen(5187);
             const rootNavigationRef1 = tmp2Result.getRootNavigationRef();
             if (null != rootNavigationRef1) {
               if (rootNavigationRef1.isReady()) {
                 if (tmp4) {
                   const rootState = rootNavigationRef1.getRootState();
                   const obj4 = { name: "tabs", key: "tabs-" + tmp2Result4.v4(), params: obj2 };
-                  const wrapRouteForRootNavigator = icymiScreen(5153).wrapRouteForRootNavigator;
-                  icymiScreen(5153);
+                  const wrapRouteForRootNavigator = icymiScreen(5188).wrapRouteForRootNavigator;
+                  icymiScreen(5188);
                   const _HermesInternal = HermesInternal;
                   const items = [obj4];
                   const items1 = [];
@@ -861,7 +861,7 @@ export const pushModal = function pushModal(trigger) {
   let tmp4 = null == rootNavigationRef || !rootNavigationRef.isReady();
   if (!tmp4) {
     if (runningTTIAutomationResult) {
-      runningTTIAutomationResult = trigger.trigger !== tmp(5159).ModalOpenTrigger.USER_INTERACTION;
+      runningTTIAutomationResult = trigger.trigger !== tmp(5194).ModalOpenTrigger.USER_INTERACTION;
     }
     tmp4 = runningTTIAutomationResult;
   }

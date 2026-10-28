@@ -1,36 +1,123 @@
-// Module ID: 13833
-// Function ID: 13834
+// Module ID: 14051
+// Function ID: 14052
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4972, 5211, 13834, 1999, 13827, 13837, 1125, 12514, 6933, 13838, 10122, 9763, 7957, 9139, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 21, 5004, 5246, 14052, 1999, 14045, 14055, 1125, 12561, 6967, 14056, 10154, 558, 576, 7991, 9172, 9795, 2]
+// Exports: useForLaterCardMenuItems
 
-// Module 13833 (ForLaterCardActionButtons)
+// Module 14051 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import intl4 from "intl" /* 1125 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 13827 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import IconButton2 from "IconButton" /* 7991 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9172 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 14045 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const ContextMenu = tmp(9795);
+let closure_3 = ["menuItems"];
+let closure_4 = ["ref"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_6 = createStyles.createStyles({ actionGroup: { flexDirection: "row", gap: 8 } });
+let closure_9 = createStyles.createStyles({ actionGroup: { flexDirection: "row", gap: 8 } });
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCardActionButtons(menuItems) {
+  let tmp10;
+  let tmp11;
+  let tmp4;
+  let tmp5;
+  let tmp = require;
+  const obj = react2;
+  const cResult = obj.c(10);
+  if (cResult[0] !== menuItems) {
+    menuItems = menuItems.menuItems;
+    const tmp8 = _objectWithoutProperties(menuItems, closure_3);
+    cResult[0] = menuItems;
+    cResult[1] = tmp8;
+    cResult[2] = menuItems;
+    tmp5 = menuItems;
+    tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+  }
+  const tmp9 = closure_9();
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p(ref) {
+      ref = ref.ref;
+      const tmp = _objectWithoutProperties(ref, closure_1_4);
+      const IconButton = IconButton2.IconButton;
+      const merged = Object.assign(tmp);
+      const intl = intl4.intl;
+      return <IconButton ref={ref} variant="secondary" accessibilityLabel={intl.string(intl4.t.e1heBD)} size="sm" icon={AssetRegistryDefault} />;
+    };
+    cResult[3] = fn;
+    tmp10 = fn;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== tmp5) {
+    const tmp13 = jsx(ContextMenu.ContextMenu, { items: tmp5, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp10 });
+    cResult[4] = tmp5;
+    cResult[5] = tmp13;
+    tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[5];
+  }
+  if (cResult[6] === tmp4) {
+    if (cResult[7] === tmp9.actionGroup) {
+      let tmp14;
+      if (cResult[8] === tmp11) {
+        tmp14 = cResult[9];
+      }
+      return tmp14;
+    }
+  }
+  let merged = Object.assign(tmp4);
+  const tmp16 = <View style={tmp9.actionGroup}>{tmp11}</View>;
+  cResult[6] = tmp4;
+  cResult[7] = tmp9.actionGroup;
+  cResult[8] = tmp11;
+  cResult[9] = tmp16;
+  tmp14 = tmp16;
+}) : (function ForLaterCardActionButtons(menuItems) {
+  menuItems = menuItems.menuItems;
+  let merged = Object.assign(menuItems, Object.assign({ menuItems: 0 }));
+  let merged1 = Object.assign(merged);
+  return <View style={closure_9().actionGroup}>{jsx(ContextMenu.ContextMenu, {
+    items: menuItems,
+    keyboardShouldPersistTaps: "handled",
+    triggerOnTap: true,
+    children(ref) {
+      ref = ref.ref;
+      const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+      const IconButton = IconButton2.IconButton;
+      const merged1 = Object.assign(merged);
+      const intl = intl4.intl;
+      return <IconButton ref={ref} variant="secondary" accessibilityLabel={intl.string(intl4.t.e1heBD)} size="sm" icon={AssetRegistryDefault} />;
+    }
+  })}</View>;
+});
 const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardActionButtons.tsx");
 
-export default function ForLaterCardActionButtons(savedMessage) {
+export default tmp2;
+export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedMessage) {
   let PencilIcon;
   let SvXS1Z;
   let intl;
   savedMessage = savedMessage.savedMessage;
   const jumpToMessage = savedMessage.jumpToMessage;
-  const throttledNow = savedMessage.throttledNow;
   const items = [savedMessage];
-  const tmp = closure_6();
+  const throttledNow = savedMessage.throttledNow;
   let obj = {
     label: intl.string(savedMessage(1125).t["+TSRGD"]),
-    IconComponent: savedMessage(12514).ChatArrowRightIcon,
+    IconComponent: savedMessage(12561).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -39,34 +126,34 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj = ActionSheetActionCreatorsDefault;
     let obj2 = {
       createReminder(dueAt) {
-        const obj = { dueAt, source: savedMessage(dependencyMap[8]).SavedMessageSources.FOR_LATER_LIST };
-        const addOrUpdateSavedMessage = savedMessage(dependencyMap[7]).addOrUpdateSavedMessage;
-        savedMessage(dependencyMap[7]);
+        const obj = { dueAt, source: savedMessage(dependencyMap[9]).SavedMessageSources.FOR_LATER_LIST };
+        const addOrUpdateSavedMessage = savedMessage(dependencyMap[8]).addOrUpdateSavedMessage;
+        savedMessage(dependencyMap[8]);
         const merged = Object.assign(closure_1_0.saveData);
         return addOrUpdateSavedMessage(obj);
       },
       removeReminder() {
-        const obj = savedMessage(dependencyMap[7]);
+        const obj = savedMessage(dependencyMap[8]);
         const obj2 = { channelId: closure_1_0.saveData.channelId, messageId: closure_1_0.saveData.messageId, displayToast: true, isReminder: true };
         return obj.removeSavedMessage(obj2);
       },
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(13834, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(14052, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1125).intl;
   const items1 = [obj, ];
   const intl2 = savedMessage(1125).intl;
   const string = intl2.string;
   if (null != savedMessage.saveData.dueAt) {
-    SvXS1Z = tmp3(1125).t["a6gcZ/"];
+    SvXS1Z = tmp2(1125).t["a6gcZ/"];
   } else {
-    SvXS1Z = tmp3(1125).t.SvXS1Z;
+    SvXS1Z = tmp2(1125).t.SvXS1Z;
   }
   let obj2 = {
     label: string(SvXS1Z),
-    IconComponent: tmp3(6933).XSmallIcon,
+    IconComponent: tmp2(6967).XSmallIcon,
     action() {
       const obj = SavedMessageHelpers;
       return obj.removeSavedMessage(savedMessage.saveData);
@@ -76,16 +163,16 @@ export default function ForLaterCardActionButtons(savedMessage) {
   items1[1] = obj2;
   if (null != savedMessage.saveData.dueAt) {
     const unshift = items1.unshift;
-    const intl3 = tmp3(1125).intl;
+    const intl3 = tmp2(1125).intl;
     const string2 = intl3.string;
-    const t = tmp3(1125).t;
+    const t = tmp2(1125).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp3(13838).BellZIcon;
+      PencilIcon = tmp2(14056).BellZIcon;
     } else {
-      PencilIcon = tmp3(10122).PencilIcon;
+      PencilIcon = tmp2(10154).PencilIcon;
     }
     unshift(obj3);
   }
-  return <View style={tmp.actionGroup}>{null}</View>;
+  return items1;
 };

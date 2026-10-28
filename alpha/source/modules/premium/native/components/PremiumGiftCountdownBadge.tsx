@@ -1,23 +1,23 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10546
+// Function ID: 10547
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 4972, 587, 1381, 558, 576, 5235, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 1381, 558, 576, 5270, 2]
 
-// Module 10514 (PremiumGiftCountdownBadge)
+// Module 10546 (PremiumGiftCountdownBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(5235);
+const Text_Text = tmp(5270);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {

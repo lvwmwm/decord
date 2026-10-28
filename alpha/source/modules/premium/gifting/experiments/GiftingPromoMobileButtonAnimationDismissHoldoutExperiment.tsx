@@ -1,9 +1,9 @@
-// Module ID: 13159
-// Function ID: 13160
+// Module ID: 13376
+// Function ID: 13377
 // Name: GiftingPromoMobileButtonAnimationDismissHoldoutExperiment
 // Dependencies: [1452, 2]
 
-// Module 13159 (GiftingPromoMobileButtonAnimationDismissHoldoutExperiment)
+// Module 13376 (GiftingPromoMobileButtonAnimationDismissHoldoutExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

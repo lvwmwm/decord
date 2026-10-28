@@ -1,9 +1,9 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11296
+// Function ID: 11297
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7205, 2065, 1403, 502, 4824, 6501, 4884, 4904, 7278, 1084, 21, 4972, 587, 558, 576, 5206, 6503, 1414, 4979, 1199, 8502, 5605, 5235, 1125, 7277, 11260, 7256, 9134, 11261, 11262, 12, 5253, 11263, 38, 5664, 5687, 11266, 5264, 7276, 8951, 504, 7279, 6832, 1264, 5712, 5211, 7491, 11267, 9611, 584, 6673, 10752, 1999, 5604, 11272, 5266, 11273, 7301, 5245, 2]
+// Dependencies: [5, 32, 19, 17, 7239, 2065, 1403, 502, 4856, 6535, 4916, 4936, 7312, 1084, 21, 5004, 587, 558, 576, 5241, 6537, 1414, 5011, 1199, 8539, 5640, 5270, 1125, 7311, 11297, 7290, 9167, 11298, 11299, 12, 5288, 11300, 38, 5699, 5722, 11303, 5299, 7310, 8985, 504, 7313, 6866, 1264, 5747, 5246, 7526, 11304, 9643, 584, 6707, 10786, 1999, 5639, 11309, 5301, 11310, 7335, 5280, 2]
 
-// Module 11259 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11296 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -13,39 +13,39 @@ import intl14 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4979 */;
-import useThemeDefault from "useTheme" /* 5206 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useMountEffectDefault from "useMountEffect" /* 5264 */;
-import useChannelNameDefault from "useChannelName" /* 5605 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5687 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7276 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7277 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7279 */;
-import openUserSettings from "openUserSettings" /* 7491 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11272 */;
+import shared from "shared" /* 5011 */;
+import useThemeDefault from "useTheme" /* 5241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useMountEffectDefault from "useMountEffect" /* 5299 */;
+import useChannelNameDefault from "useChannelName" /* 5640 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7310 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7311 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7313 */;
+import openUserSettings from "openUserSettings" /* 7526 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11309 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7205 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7239 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore_mod from "ChannelStore" /* 4824 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
-import GuildMemberStore from "GuildMemberStore" /* 4884 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import Constants_mod from "Constants" /* 7278 */;
+import ChannelStore_mod from "ChannelStore" /* 4856 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import Constants_mod from "Constants" /* 7312 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let size;
 let size1;
 let size2;
 let tmp5;
-const PlatformsDefault = tmp5(6503);
+const PlatformsDefault = tmp5(6537);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Pressable: metroImportDefault, View: metroImportAll } = react_native);
@@ -539,7 +539,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                 if (someResult) {
                   tmp6 = closure_14;
                   accounts = closure_14.getAccounts();
-                  someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                  someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                 }
                 connection_type = null;
                 tmp7 = onAttempted;
@@ -607,7 +607,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -676,7 +676,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                   if (someResult) {
                     tmp6 = closure_14;
                     accounts = closure_14.getAccounts();
-                    someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                    someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                   }
                   connection_type = null;
                   tmp7 = onAttempted;
@@ -843,7 +843,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                     if (someResult) {
                                                       tmp6 = closure_14;
                                                       accounts = closure_14.getAccounts();
-                                                      someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                                      someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                                     }
                                                     connection_type = null;
                                                     tmp7 = onAttempted;
@@ -913,7 +913,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                                 if (someResult) {
                                                   tmp6 = closure_14;
                                                   accounts = closure_14.getAccounts();
-                                                  someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                                  someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                                 }
                                                 connection_type = null;
                                                 tmp7 = onAttempted;
@@ -990,7 +990,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                             if (someResult) {
                                               tmp6 = closure_14;
                                               accounts = closure_14.getAccounts();
-                                              someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                              someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                             }
                                             connection_type = null;
                                             tmp7 = onAttempted;
@@ -1053,7 +1053,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                         if (someResult) {
                                           tmp6 = closure_14;
                                           accounts = closure_14.getAccounts();
-                                          someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                          someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                         }
                                         connection_type = null;
                                         tmp7 = onAttempted;
@@ -1126,7 +1126,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                       if (someResult) {
                                         tmp6 = closure_14;
                                         accounts = closure_14.getAccounts();
-                                        someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                        someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                       }
                                       connection_type = null;
                                       tmp7 = onAttempted;
@@ -1187,7 +1187,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
                                   if (someResult) {
                                     tmp6 = closure_14;
                                     accounts = closure_14.getAccounts();
-                                    someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                                    someResult = accounts.some(() => { /* body not rendered: F149199 */ });
                                   }
                                   connection_type = null;
                                   tmp7 = onAttempted;
@@ -1258,7 +1258,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identi
               if (someResult) {
                 tmp6 = closure_14;
                 accounts = closure_14.getAccounts();
-                someResult = accounts.some(() => { /* body not rendered: F148336 */ });
+                someResult = accounts.some(() => { /* body not rendered: F149199 */ });
               }
               connection_type = null;
               tmp7 = onAttempted;
@@ -1775,7 +1775,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       }
     }
   }, items3);
-  let obj2 = eligibilityStatesGroups(5253);
+  let obj2 = eligibilityStatesGroups(5288);
   roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = {
     children: sorted.map(function(item) {
@@ -2369,7 +2369,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setFriendSync(account.type, account.id, enabled);
         }
     };
-    const FormSwitchRow = account(8951).FormSwitchRow;
+    const FormSwitchRow = account(8985).FormSwitchRow;
     intl = account(1125).intl;
     tmp13 = closure_29(FormSwitchRow, obj2);
   }
@@ -2384,7 +2384,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           obj.setShowActivity(account.type, account.id, show_activity);
         }
     };
-    const FormSwitchRow2 = account(8951).FormSwitchRow;
+    const FormSwitchRow2 = account(8985).FormSwitchRow;
     intl2 = account(1125).intl;
     obj4 = { platform: value.name };
     tmp16 = closure_29(FormSwitchRow2, obj3);
@@ -2410,7 +2410,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
           const result = setMetadataVisibility(type, id, num);
         }
     };
-    const FormSwitchRow3 = account(8951).FormSwitchRow;
+    const FormSwitchRow3 = account(8985).FormSwitchRow;
     intl3 = account(1125).intl;
     tmp19 = closure_29(FormSwitchRow3, obj5);
   }
@@ -2433,7 +2433,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
       setVisibility(type, id, num);
     }
   };
-  const FormSwitchRow4 = account(8951).FormSwitchRow;
+  const FormSwitchRow4 = account(8985).FormSwitchRow;
   intl4 = account(1125).intl;
   items = [closure_29(FormSwitchRow4, obj7), tmp19, tmp16, tmp13];
   return closure_30(closure_8, obj6);
@@ -2503,7 +2503,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f110185 = () => {
+    const f110799 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -2610,8 +2610,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f110185);
-    _slicedToArray(react.useState(f110185), 2);
+    [tmp27, c16] = react.useState(f110799);
+    _slicedToArray(react.useState(f110799), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[19])();

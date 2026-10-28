@@ -1,12 +1,12 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8714
+// Function ID: 8715
 // Name: preloadUserBannerImage
-// Dependencies: [1414, 4800, 2]
+// Dependencies: [1414, 4832, 2]
 // Exports: default
 
-// Module 8677 (preloadUserBannerImage)
+// Module 8714 (preloadUserBannerImage)
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 4800 */;
+import UserSettings from "UserSettings" /* 4832 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");

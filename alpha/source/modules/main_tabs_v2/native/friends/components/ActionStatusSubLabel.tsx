@@ -1,16 +1,16 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 18165
+// Function ID: 18166
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 4972, 4981, 5053, 5235, 558, 576, 5254, 5207, 2]
+// Dependencies: [19, 21, 5004, 5013, 5085, 5270, 558, 576, 5289, 5242, 2]
 
-// Module 17928 (ActionStatusSubLabel)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
-import Text_Text from "Text/Text" /* 5235 */;
+// Module 18165 (ActionStatusSubLabel)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
+import Text_Text from "Text/Text" /* 5270 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

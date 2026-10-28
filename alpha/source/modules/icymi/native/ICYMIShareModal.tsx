@@ -1,28 +1,28 @@
-// Module ID: 17992
-// Function ID: 17993
+// Module ID: 18229
+// Function ID: 18230
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4824, 1084, 10619, 4977, 21, 4972, 587, 558, 576, 8905, 1125, 17993, 5664, 5594, 12937, 12949, 5245, 6673, 12916, 1385, 7756, 7567, 1630, 1496, 1381, 12926, 12927, 2]
+// Dependencies: [32, 5, 19, 17, 4856, 1084, 10651, 5009, 21, 5004, 587, 558, 576, 8939, 1125, 18230, 5699, 5629, 12984, 12996, 5280, 6707, 12963, 1385, 7790, 7601, 1630, 1496, 1381, 12973, 12974, 2]
 
-// Module 17992 (ICYMIShareModal)
+// Module 18229 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import MessageConstants from "MessageConstants" /* 4977 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import ShareEventUtils from "ShareEventUtils" /* 8905 */;
-import UserRowConstants from "UserRowConstants" /* 10619 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 12937 */;
+import MessageConstants from "MessageConstants" /* 5009 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import ShareEventUtils from "ShareEventUtils" /* 8939 */;
+import UserRowConstants from "UserRowConstants" /* 10651 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 12984 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_12;
 let obj2;
 let tmp9;
 let unpackModuleId;
-const ShareChatInputDefault = tmp9(12949);
+const ShareChatInputDefault = tmp9(12996);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -523,7 +523,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5245).Button;
+    const Button = tmp7(5280).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;

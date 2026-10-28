@@ -1,16 +1,16 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12528
+// Function ID: 12529
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 558, 576, 12152, 5978, 5245, 11767, 12293, 12482, 5235, 12483, 2]
+// Dependencies: [19, 21, 558, 576, 12190, 6013, 5280, 11803, 12338, 12529, 5270, 12530, 2]
 
-// Module 12481 (ConjurePublishCtaCard)
+// Module 12528 (ConjurePublishCtaCard)
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import Stack_Stack from "Stack/Stack" /* 5978 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11767 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12152 */;
-import conjurePublishCard from "conjurePublishCard" /* 12293 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12482 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import Stack_Stack from "Stack/Stack" /* 6013 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11803 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12190 */;
+import conjurePublishCard from "conjurePublishCard" /* 12338 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12529 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publish
     }
   }
   const obj2 = { direction: "horizontal", children: _false(components_Button_Button.Button, obj3) };
-  const Stack = tmp(5978).Stack;
+  const Stack = tmp(6013).Stack;
   obj3 = { text: publish.label, variant: "primary", size: "sm", loading: publish.publishing && !publish.showsProgress, onPress: tmp6 };
   const tmp8 = _false(Stack, obj2);
   cResult[2] = publish.label;
@@ -106,19 +106,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     if (tmpResult.isConjurePublishCtaVisible(tmp5, cta)) {
       const obj2 = { projectId, publish: tmp5 };
       const tmp4Result = ConjureTipInlineCalloutDefault;
-      const Stack = tmp(5978).Stack;
+      const Stack = tmp(6013).Stack;
       const items = [_false(closure_5, obj2), , ];
       let tmp8Result = null;
       const tmp10 = React3;
       if (null != tmp5.failure) {
         const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp5.failure };
-        tmp8Result = tmp8(tmp(5235).Text, obj3);
+        tmp8Result = tmp8(tmp(5270).Text, obj3);
       }
       items[1] = tmp8Result;
       let tmp8Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp5.status };
-        tmp8Result3 = tmp8(tmp4(12483), obj4, turnId);
+        tmp8Result3 = tmp8(tmp4(12530), obj4, turnId);
       }
       const obj5 = { children: tmp10(Stack, obj6) };
       obj6 = { spacing: 12, children: items };
@@ -146,19 +146,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
     if (obj.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj2 = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp5(5978).Stack;
+      const Stack = tmp5(6013).Stack;
       const items = [_false(closure_5, obj2), , ];
       let tmp6Result = null;
       const tmp8 = React3;
       if (null != tmp3.failure) {
         const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.failure };
-        tmp6Result = tmp6(tmp5(5235).Text, obj3);
+        tmp6Result = tmp6(tmp5(5270).Text, obj3);
       }
       items[1] = tmp6Result;
       let tmp6Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp3.status };
-        tmp6Result3 = tmp6(tmp(12483), obj4, turnId);
+        tmp6Result3 = tmp6(tmp(12530), obj4, turnId);
       }
       const obj5 = { children: tmp8(Stack, obj6) };
       obj6 = { spacing: 12, children: items };

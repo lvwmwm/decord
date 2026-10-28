@@ -1,15 +1,15 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18320
+// Function ID: 18321
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 4824, 1084, 21, 558, 576, 18083, 8302, 7383, 1500, 1628, 504, 9665, 1125, 6887, 7010, 2]
+// Dependencies: [19, 4856, 1084, 21, 558, 576, 18321, 8336, 7418, 1500, 1628, 504, 9697, 1125, 6921, 7044, 2]
 
-// Module 18082 (ThreadCreationTitleInput)
+// Module 18320 (ThreadCreationTitleInput)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7383 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7418 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -233,7 +233,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const tmp2 = importDefault;
           if (tmp4 !== threadSettingsDraft.name) {
             const obj = { name: tmp4 };
-            const tmp2Result = tmp2(8302);
+            const tmp2Result = tmp2(8336);
             tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
           }
         }
@@ -283,7 +283,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const tmp2 = importDefault;
         if (tmp4 !== threadSettingsDraft.name) {
           const obj = { name: tmp4 };
-          const tmp2Result = tmp2(8302);
+          const tmp2Result = tmp2(8336);
           tmp2Result.changeThreadSettings(threadSettingsDraft.parentChannelId, obj);
         }
       }

@@ -1,19 +1,19 @@
-// Module ID: 19134
-// Function ID: 19135
+// Module ID: 19397
+// Function ID: 19398
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 8272, 21, 587, 4972, 15883, 4969, 558, 576, 1496, 5053, 11730, 1125, 8901, 5211, 7250, 15200, 9225, 5235, 9146, 15884, 8994, 5245, 5978, 5266, 2]
+// Dependencies: [32, 19, 17, 8306, 21, 587, 5004, 16109, 5001, 558, 576, 1496, 5085, 11768, 1125, 8935, 5246, 7284, 15425, 9258, 5270, 9179, 16110, 9028, 5280, 6013, 5301, 2]
 
-// Module 19134 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 19397 (GuildSettingsServerTagColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 15883 */;
+import ColorUtils from "ColorUtils" /* 5001 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 8272 */;
+import GuildTagConstants from "GuildTagConstants" /* 8306 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

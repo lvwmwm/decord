@@ -1,13 +1,13 @@
-// Module ID: 13208
-// Function ID: 13209
+// Module ID: 13425
+// Function ID: 13426
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [4824, 4846, 4904, 1084, 558, 576, 504, 2]
+// Dependencies: [4856, 4878, 4936, 1084, 558, 576, 504, 2]
 
-// Module 13208 (useCanManageGuildDirectoryEntry)
+// Module 13425 (useCanManageGuildDirectoryEntry)
 import Constants from "Constants" /* 1084 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

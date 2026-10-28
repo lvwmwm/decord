@@ -1,9 +1,9 @@
-// Module ID: 4801
-// Function ID: 4802
+// Module ID: 4833
+// Function ID: 4834
 // Name: UserSettingsOverridesStore
 // Dependencies: [1243, 504, 510, 584, 2]
 
-// Module 4801 (UserSettingsOverridesStore)
+// Module 4833 (UserSettingsOverridesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

@@ -1,13 +1,13 @@
-// Module ID: 12050
-// Function ID: 12051
+// Module ID: 12088
+// Function ID: 12089
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 1501, 21, 558, 576, 7222, 1630, 1381, 6709, 6986, 5211, 7040, 12051, 12053, 2]
+// Dependencies: [32, 109, 19, 1501, 21, 558, 576, 7256, 1630, 1381, 6743, 7020, 5246, 7074, 12089, 12091, 2]
 
-// Module 12050 (AppLauncherChoicesActionSheet)
+// Module 12088 (AppLauncherChoicesActionSheet)
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6709 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -20,8 +20,8 @@ let item;
 let c9;
 let metroImportAll;
 let tmp;
-const defaultMVCPConfig = tmp(7222);
-const f113247 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(7256);
+const f113866 = (choice, originalIndex) => ({ choice, originalIndex });
 let closure_3 = ["scrollable"];
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -122,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
       if (choices == null) {
         choices = [];
       }
-      return choices.map(f113247);
+      return choices.map(f113866);
     };
     cResult[2] = option.choices;
     cResult[3] = fn;
@@ -307,7 +307,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f113247);
+    return choices.map(f113866);
   }), 2);
   data = tmp5[0];
   closure_3 = tmp5[1];

@@ -1,22 +1,22 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18682
+// Function ID: 18683
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1389, 1084, 4821, 21, 558, 576, 4986, 4979, 5206, 7076, 504, 2050, 15898, 1125, 2929, 5002, 4808, 15976, 7491, 7135, 5583, 18442, 1381, 5670, 18446, 9400, 5235, 5245, 7223, 5266, 4972, 587, 2]
+// Dependencies: [19, 17, 1389, 1084, 4853, 21, 558, 576, 5018, 5011, 5241, 7110, 504, 2050, 16124, 1125, 2929, 5034, 4840, 16202, 7526, 7169, 5618, 18683, 1381, 5705, 18687, 9432, 5270, 5280, 7257, 5301, 5004, 587, 2]
 
-// Module 18441 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 18682 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 4808 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5002 */;
-import openUserSettings from "openUserSettings" /* 7491 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15976 */;
+import dismissible_content from "dismissible_content" /* 4840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
+import openUserSettings from "openUserSettings" /* 7526 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16202 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, dependencyMap;
@@ -44,11 +44,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const cResult = obj.c(56);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const ref = enabled2.useRef(null);
-  const enabled = enabled2.useContext(markAsDismissed(4986).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(4979);
-  obj2.isThemeDark(ref(5206)());
+  const enabled = enabled2.useContext(markAsDismissed(5018).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(5011);
+  obj2.isThemeDark(ref(5241)());
   const tmp7 = closure_11();
-  let obj3 = markAsDismissed(7076);
+  let obj3 = markAsDismissed(7110);
   const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -74,7 +74,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     tmp13 = cResult[3];
   }
   dependencyMap = tmp13;
-  const tmpResult2 = tmp(15898);
+  const tmpResult2 = tmp(16124);
   enabled2 = tmpResult2.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   if (cResult[4] !== tmp13) {
     let stringResult;
@@ -141,8 +141,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                 }
         };
         cResult[14] = markAsDismissed;
-        cResult[15] = closure_9(tmp(5583).ActionSheetHeaderBar, obj4);
-        const tmp23 = closure_9(tmp(5583).ActionSheetHeaderBar, obj4);
+        cResult[15] = closure_9(tmp(5618).ActionSheetHeaderBar, obj4);
+        const tmp23 = closure_9(tmp(5618).ActionSheetHeaderBar, obj4);
       } else {
         class L {
           constructor() {
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          tmp25 = closure_9(tmp(18442).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+          tmp25 = closure_9(tmp(18683).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
         }
         cResult[16] = enabled;
         cResult[17] = tmp25;
@@ -208,11 +208,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          const obj6 = { uri: ref(18446) };
+          const obj6 = { uri: ref(18687) };
           tmp32[0] = obj6;
           tmp32[1] = tmp7.image;
           tmp32[3] = !enabled;
-          const tmp5Result4 = ref(5670);
+          const tmp5Result4 = ref(5705);
           tmp28Result = tmp28(tmp5Result4, tmp32);
         } else {
           class L {
@@ -220,8 +220,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
               markAsDismissed(ContentDismissActionType.USER_DISMISS);
             }
           }
-          const APNGPlayer = tmp(9400).APNGPlayer;
-          tmp29[0] = ref(18446);
+          const APNGPlayer = tmp(9432).APNGPlayer;
+          tmp29[0] = ref(18687);
           tmp29[1] = tmp7.image;
           tmp28Result = tmp28(APNGPlayer, tmp29);
         }
@@ -284,11 +284,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let obj = enabled2;
   const ref = enabled2.useRef(null);
   let tmp2 = markAsDismissed;
-  const enabled = enabled2.useContext(markAsDismissed(4986).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(4979);
-  const isThemeDarkResult = obj2.isThemeDark(ref(5206)());
+  const enabled = enabled2.useContext(markAsDismissed(5018).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(5011);
+  const isThemeDarkResult = obj2.isThemeDark(ref(5241)());
   const tmp6 = closure_11();
-  let obj3 = markAsDismissed(7076);
+  let obj3 = markAsDismissed(7110);
   const typeConsolidationTextTransform = obj3.useTypeConsolidationTextTransform("DisplayNameStylesFlywheel");
   let obj4 = markAsDismissed(504);
   const items = [UserStore];
@@ -296,7 +296,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const obj5 = ref(2050);
   let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj6 = markAsDismissed(15898);
+  const obj6 = markAsDismissed(16124);
   enabled2 = obj6.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1125).intl;
   const string = intl.string;
@@ -345,9 +345,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
   const obj7 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: tmp15(SafeAreaPaddingView, obj16) };
-  BottomSheet = tmp2(5266).BottomSheet;
+  BottomSheet = tmp2(5301).BottomSheet;
   const obj8 = { style: tmp6.content, children: items4 };
-  SafeAreaPaddingView = tmp2(7223).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7257).SafeAreaPaddingView;
   items4 = [, , , , ];
   const obj9 = {
     onPress() {
@@ -358,22 +358,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  items4[0] = closure_9(tmp2(5583).ActionSheetHeaderBar, obj9);
+  items4[0] = closure_9(tmp2(5618).ActionSheetHeaderBar, obj9);
   const obj10 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp15(tmp2(18442).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp15(tmp2(18683).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp19 = !enabled;
-  enabled && tmp15(tmp2(18442).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && tmp15(tmp2(18683).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp19) {
     let tmp15Result;
     const tmp2Result = tmp2(1381);
     if (tmp2Result.isIOS()) {
       const obj11 = { source: obj12, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
-      obj12 = { uri: ref(18446) };
-      const tmp4Result = ref(5670);
+      obj12 = { uri: ref(18687) };
+      const tmp4Result = ref(5705);
       tmp15Result = tmp15(tmp4Result, obj11);
     } else {
-      const obj13 = { url: ref(18446), style: tmp6.image, autoplay: true };
-      const APNGPlayer = tmp2(9400).APNGPlayer;
+      const obj13 = { url: ref(18687), style: tmp6.image, autoplay: true };
+      const APNGPlayer = tmp2(9432).APNGPlayer;
       tmp15Result = tmp15(APNGPlayer, obj13);
     }
     tmp19 = tmp15Result;
@@ -384,14 +384,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   items6 = [tmp6.title, typeConsolidationTextTransform];
   let str = "text-overlay-dark";
   str2 = "text-overlay-dark";
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   if (isThemeDarkResult) {
     str2 = "text-overlay-light";
   }
   intl2 = tmp2(1125).intl;
   items4[2] = tmp15(Text, obj14);
   const obj15 = { variant: "text-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
-  const Text2 = tmp2(5235).Text;
+  const Text2 = tmp2(5270).Text;
   if (isThemeDarkResult) {
     str = "text-overlay-light";
   }
@@ -399,11 +399,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   items4[3] = tmp15(Text2, obj15);
   const obj17 = { style: tmp6.actions, children: items7 };
   const obj18 = { text: intl3.string(tmp2(1125).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
-  const Button = tmp2(5245).Button;
+  const Button = tmp2(5280).Button;
   intl3 = tmp2(1125).intl;
   items7 = [tmp15(Button, obj18), ];
   const obj19 = { text: intl4.string(tmp2(1125).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
-  const Button2 = tmp2(5245).Button;
+  const Button2 = tmp2(5280).Button;
   intl4 = tmp2(1125).intl;
   items7[1] = tmp15(Button2, obj19);
   items4[4] = closure_10(View, obj17);

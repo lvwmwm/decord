@@ -1,11 +1,11 @@
-// Module ID: 9941
-// Function ID: 9942
+// Module ID: 9973
+// Function ID: 9974
 // Name: useSharedMessageEmojiStyles
-// Dependencies: [4972, 587, 2]
+// Dependencies: [5004, 587, 2]
 
-// Module 9941 (useSharedMessageEmojiStyles)
+// Module 9973 (useSharedMessageEmojiStyles)
 import nativeDefault from "native" /* 587 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

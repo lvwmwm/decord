@@ -1,9 +1,9 @@
-// Module ID: 18467
-// Function ID: 18468
+// Module ID: 18708
+// Function ID: 18709
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [32, 19, 558, 576, 10512, 1898, 2]
+// Dependencies: [32, 19, 558, 576, 10544, 1898, 2]
 
-// Module 18467 (useGiftingPromotionAssetsReady)
+// Module 18708 (useGiftingPromotionAssetsReady)
 import react2 from "react" /* 576 */;
 import react_nativeDefault from "react-native" /* 1898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -21,7 +21,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoac
   let tmp6;
   let obj = themeAndReducedMotionAwareAssetUrl(576);
   const cResult = obj.c(3);
-  let obj2 = themeAndReducedMotionAwareAssetUrl(10512);
+  let obj2 = themeAndReducedMotionAwareAssetUrl(10544);
   themeAndReducedMotionAwareAssetUrl = obj2.useThemeAndReducedMotionAwareAssetUrl(arg0);
   let tmp3 = _slicedToArray(react.useState(null), 2);
   [tmp4, importDefault] = tmp3;
@@ -67,7 +67,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoac
   let closure_1;
   let first;
   let themeAndReducedMotionAwareAssetUrl;
-  let obj = themeAndReducedMotionAwareAssetUrl(10512);
+  let obj = themeAndReducedMotionAwareAssetUrl(10544);
   themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(arg0);
   [first, closure_1] = react.useState(null);
   const items = [themeAndReducedMotionAwareAssetUrl];

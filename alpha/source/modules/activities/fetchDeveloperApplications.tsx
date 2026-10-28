@@ -1,10 +1,10 @@
-// Module ID: 10783
-// Function ID: 10784
+// Module ID: 10817
+// Function ID: 10818
 // Name: fetchDeveloperApplications
 // Dependencies: [5, 2021, 1084, 584, 1294, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 10783 (fetchDeveloperApplications)
+// Module 10817 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;

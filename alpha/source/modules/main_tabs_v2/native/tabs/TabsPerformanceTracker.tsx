@@ -1,14 +1,14 @@
-// Module ID: 17482
-// Function ID: 17483
+// Module ID: 17717
+// Function ID: 17718
 // Name: TabsPerformanceTracker
-// Dependencies: [19, 1084, 3, 1264, 558, 576, 5053, 2]
+// Dependencies: [19, 1084, 3, 1264, 558, 576, 5085, 2]
 // Exports: trackTabPressed
 
-// Module 17482 (TabsPerformanceTracker)
+// Module 17717 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

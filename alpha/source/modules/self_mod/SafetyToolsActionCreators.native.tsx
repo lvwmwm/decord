@@ -1,12 +1,12 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 11007
+// Function ID: 11008
 // Name: SafetyToolsActionCreators
-// Dependencies: [10930, 5211, 10973, 1999, 2]
+// Dependencies: [10965, 5246, 11008, 1999, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 10972 (SafetyToolsActionCreators)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Constants from "Constants" /* 10930 */;
+// Module 11007 (SafetyToolsActionCreators)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Constants from "Constants" /* 10965 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,5 +30,5 @@ export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(ch
       obj.hideActionSheet(closure_0);
     }
   };
-  obj.openLazy(require("asyncRequire")(10973, dependencyMap.paths), tmp, obj2);
+  obj.openLazy(require("asyncRequire")(11008, dependencyMap.paths), tmp, obj2);
 };

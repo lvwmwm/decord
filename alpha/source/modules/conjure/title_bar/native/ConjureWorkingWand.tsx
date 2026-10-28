@@ -1,19 +1,19 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14397
+// Function ID: 14398
 // Name: ConjureWorkingWand
-// Dependencies: [19, 17, 4973, 21, 5053, 683, 587, 7960, 4972, 558, 576, 504, 5207, 14174, 2]
+// Dependencies: [19, 17, 5005, 21, 5085, 683, 587, 7994, 5004, 558, 576, 504, 5242, 14398, 2]
 
-// Module 14173 (ConjureWorkingWand)
+// Module 14397 (ConjureWorkingWand)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
-import inlineStyles from "inlineStyles" /* 7960 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = band(5053);
+  const tmpResult = band(5085);
   class W {
     constructor() {
       obj = band;
@@ -166,12 +166,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
     if (null != band) {
       const obj3 = { children: items3 };
       const obj4 = { children: items2 };
-      const Defs = tmp(7960).Defs;
+      const Defs = tmp(7994).Defs;
       const _HermesInternal = HermesInternal;
       const obj5 = { id: "" + tmp4 + "band", x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-      const LinearGradient = tmp(7960).LinearGradient;
+      const LinearGradient = tmp(7994).LinearGradient;
       const obj6 = { offset: "0", stopColor: null, stopOpacity: 0 };
-      const Stop = tmp(7960).Stop;
+      const Stop = tmp(7994).Stop;
       class W {
         constructor() {
           obj = band;
@@ -187,22 +187,22 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
       }
       items1 = [closure_7(Stop, obj6), , ];
       const obj7 = { offset: "0.5", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 1 };
-      const Stop2 = tmp(7960).Stop;
+      const Stop2 = tmp(7994).Stop;
       items1[1] = closure_7(Stop2, obj7);
       const obj8 = { offset: "1", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-      const Stop3 = tmp(7960).Stop;
+      const Stop3 = tmp(7994).Stop;
       items1[2] = closure_7(Stop3, obj8);
       items2 = [closure_8(LinearGradient, obj5), ];
       const size2 = { id: "" + tmp4 + "mask", maskUnits: "userSpaceOnUse", x: 0, y: 0, width: v24, height: v24, children: closure_7(closure_18, size3) };
       const _HermesInternal2 = HermesInternal;
-      const Mask = tmp(7960).Mask;
+      const Mask = tmp(7994).Mask;
       size3 = { animatedProps, y: 0, width, height: v24, fill: "url(#" + tmp4 + "band)" };
       const _HermesInternal3 = HermesInternal;
       items2[1] = closure_7(Mask, size2);
       items3 = [closure_8(Defs, obj4), ];
       const _HermesInternal4 = HermesInternal;
       const obj9 = { d: path, fill, mask: "url(#" + tmp4 + "mask)" };
-      const Path = tmp(7960).Path;
+      const Path = tmp(7994).Path;
       items3[1] = closure_7(Path, obj9);
       tmp13 = closure_8(closure_9, obj3);
     }
@@ -213,7 +213,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
     cResult[10] = tmp13;
     tmp12 = tmp13;
   }
-  const tmp11 = closure_7(band(7960).Path, { d: path, fill: color });
+  const tmp11 = closure_7(band(7994).Path, { d: path, fill: color });
   cResult[3] = color;
   cResult[4] = path;
   cResult[5] = tmp11;
@@ -230,7 +230,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
   color = color.color;
   const str = react.useId();
   const replaced = str.replace(/:/g, "");
-  let obj = band(5053);
+  let obj = band(5085);
   const fn = function u() {
     let x;
     const obj = band;
@@ -250,35 +250,35 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WandPa
   const size1 = { width: size, height: size, viewBox, children: items };
   items = [, ];
   const tmp7 = inlineStylesDefault;
-  items[0] = closure_7(band(7960).Path, { d: path, fill: color });
+  items[0] = closure_7(band(7994).Path, { d: path, fill: color });
   let tmp5Result = null;
   if (null != band) {
     const obj3 = { children: items3 };
     const obj4 = { children: items2 };
-    const Defs = tmp2(7960).Defs;
+    const Defs = tmp2(7994).Defs;
     const _HermesInternal = HermesInternal;
     const obj5 = { id: "" + replaced + "band", x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-    const LinearGradient = tmp2(7960).LinearGradient;
+    const LinearGradient = tmp2(7994).LinearGradient;
     const obj6 = { offset: "0", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop = tmp2(7960).Stop;
+    const Stop = tmp2(7994).Stop;
     items1 = [closure_7(Stop, obj6), , ];
     const obj7 = { offset: "0.5", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 1 };
-    const Stop2 = tmp2(7960).Stop;
+    const Stop2 = tmp2(7994).Stop;
     items1[1] = closure_7(Stop2, obj7);
     const obj8 = { offset: "1", stopColor: nativeDefault.unsafe_rawColors.WHITE, stopOpacity: 0 };
-    const Stop3 = tmp2(7960).Stop;
+    const Stop3 = tmp2(7994).Stop;
     items1[2] = closure_7(Stop3, obj8);
     items2 = [closure_8(LinearGradient, obj5), ];
     const size2 = { id: "" + replaced + "mask", maskUnits: "userSpaceOnUse", x: 0, y: 0, width: v24, height: v24, children: closure_7(closure_18, size3) };
     const _HermesInternal2 = HermesInternal;
-    const Mask = tmp2(7960).Mask;
+    const Mask = tmp2(7994).Mask;
     size3 = { animatedProps, y: 0, width, height: v24, fill: "url(#" + replaced + "band)" };
     const _HermesInternal3 = HermesInternal;
     items2[1] = closure_7(Mask, size2);
     items3 = [closure_8(Defs, obj4), ];
     const _HermesInternal4 = HermesInternal;
     const obj9 = { d: path, fill, mask: "url(#" + replaced + "mask)" };
-    const Path = tmp2(7960).Path;
+    const Path = tmp2(7994).Path;
     items3[1] = closure_7(Path, obj9);
     tmp5Result = tmp5(closure_9, obj3);
   }

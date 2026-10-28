@@ -1,17 +1,17 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 17091
+// Function ID: 17092
 // Name: VideoUploadQualitySetting
-// Dependencies: [1206, 8331, 558, 576, 504, 16861, 4800, 1125, 11212, 2]
+// Dependencies: [1206, 8365, 558, 576, 504, 17090, 4832, 1125, 11248, 2]
 
-// Module 16862 (VideoUploadQualitySetting)
+// Module 17091 (VideoUploadQualitySetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1206 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import UserSettingsText from "UserSettingsText" /* 16861 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import UserSettingsText from "UserSettingsText" /* 17090 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;

@@ -1,48 +1,148 @@
 // Module ID: 5389
 // Function ID: 5390
-// Dependencies: [5366, 5381, 5357]
-// Exports: useRotationGesture
+// Dependencies: [32, 19, 5390, 5401, 5392, 5405, 5376]
+// Exports: useJSResponderHandler
 
 // Module 5389
-import ComposedGestureName from "ComposedGestureName" /* 5357 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5366 */;
-import _mod5381 from "module_5381" /* 5381 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 5390 */;
+import ComposedGestureName from "ComposedGestureName" /* 5392 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5401 */;
+import _mod5405 from "module_5405" /* 5405 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-function transformRotationProps(arg0) {
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
+
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function isSupportedGesture(gestures) {
   const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-function diffCalculator(rotation, rotation2) {
-  let rotationChange;
-  rotation = rotation.rotation;
-  if (rotation2) {
-    rotationChange = rotation - rotation2.rotation;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    return gestures.some(isSupportedGesture);
   } else {
-    rotationChange = rotation;
+    const type = gestures.type;
+    if (ComposedGestureName.SingleGestureName.Tap !== type) {
+      if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+        if (ComposedGestureName.SingleGestureName.Fling !== type) {
+          if (ComposedGestureName.SingleGestureName.Native !== type) {
+            if (ComposedGestureName.SingleGestureName.Hover !== type) {
+              return false;
+            }
+          }
+        }
+      }
+    }
+    return true;
   }
-  return { rotationChange };
 }
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 14071129947311;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};}" };
-function fillInDefaultValues(arg0) {
-  arg0.rotationChange = 0;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 2470118803733;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;}" };
-const map = new Map();
-let closure_6 = {};
+({ use: c3, useCallback: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useState: metroImportDefault } = react);
+let closure_8 = SHARED_VALUE_OFFSET.SHARED_VALUE_OFFSET + 0.5;
+let closure_10 = { code: "function pnpm_useJSResponderHandlerTs1(sharedValues,id,notify){const{runOnJS}=this.__closure;const listener=runOnJS(notify);for(const sharedValue of sharedValues){sharedValue.addListener(id,listener);}}" };
+let closure_11 = { code: "function pnpm_useJSResponderHandlerTs2(sharedValues,id){for(const sharedValue of sharedValues){sharedValue.removeListener(id);}}" };
 
-export const useRotationGesture = function useRotationGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_6;
+export const useJSResponderHandler = function useJSResponderHandler(gesture) {
+  let closure_1;
+  let closure_2;
+  let first;
+  _require = gesture;
+  let tmp = closure_3(require("module_5405").JSResponderContext);
+  dependencyMap = tmp;
+  [first, _slicedToArray] = closure_7(0);
+  const tmp4 = closure_6(null);
+  closure_3 = tmp4;
+  if (null === tmp4.current) {
+    closure_8 = tmp6 + 1;
+    tmp4.current = +closure_8;
   }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
-  const obj2 = _mod5381;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
+  const items = [gesture];
+  closure_5(() => {
+    let runOnJS;
+    const Reanimated = gesture(closure_1[6]).Reanimated;
+    const obj = gesture(closure_1[2]);
+    const enabledSharedValues = obj.getEnabledSharedValues(Reanimated);
+    if (undefined !== Reanimated) {
+      if (0 !== enabledSharedValues.length) {
+        let tmp = runOnJS;
+        const current = runOnJS.current;
+        if (null !== current) {
+          runOnJS = Reanimated.runOnJS;
+          const fn = function o(arg0, arg1, arg2) {
+            const tmp = runOnJS(arg2);
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let addListenerResult = nextResult.addListener(arg1, tmp);
+              continue;
+            }
+          };
+          const obj2 = { runOnJS };
+          fn.__closure = obj2;
+          fn.__workletHash = 3030529712101;
+          fn.__initData = __initData;
+          const fn2 = function l(arg0, arg1) {
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let removeListenerResult = nextResult.removeListener(arg1);
+              continue;
+            }
+          };
+          fn2.__closure = {};
+          fn2.__workletHash = 3663767498079;
+          fn2.__initData = __initData2;
+          Reanimated.runOnUI(fn)(enabledSharedValues, current, () => {
+            current((arg0) => arg0 + 1);
+          });
+          return () => {
+            Reanimated.runOnUI(fn2)(enabledSharedValues, current);
+          };
+        }
+      }
+    }
+  }, items);
+  const items1 = [first, gesture];
+  const tmp8 = closure_4(() => {
+    const obj = maybeExtractNativeEvent;
+    let isGestureEnabledResult = obj.isGestureEnabled(gesture);
+    if (isGestureEnabledResult) {
+      let flag;
+      const tmpResult = maybeExtractNativeEvent;
+      if (tmpResult.isComposedGesture(gesture)) {
+        const gestures = tmp3.gestures;
+        flag = gestures.some(isSupportedGesture);
+      } else {
+        const type = tmp3.type;
+        if (ComposedGestureName.SingleGestureName.Tap !== type) {
+          if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+            if (ComposedGestureName.SingleGestureName.Fling !== type) {
+              if (ComposedGestureName.SingleGestureName.Native !== type) {
+                flag = false;
+              }
+            }
+          }
+        }
+        flag = true;
+      }
+      isGestureEnabledResult = flag;
+    }
+    return isGestureEnabledResult;
+  }, items1);
+  closure_4 = tmp8;
+  const items2 = [tmp, tmp8];
+  let handleStartShouldSetResponder = closure_4(() => {
+    if (closure_4()) {
+      const obj = _mod5405;
+      const result = obj.updateResponderEventValue(closure_1, true);
+    }
+    return false;
+  }, items2);
+  if (null == tmp) {
+    handleStartShouldSetResponder = () => false;
+  }
+  return { handleStartShouldSetResponder };
 };

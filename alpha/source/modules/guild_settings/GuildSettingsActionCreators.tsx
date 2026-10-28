@@ -1,22 +1,22 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9039
+// Function ID: 9040
 // Name: GuildSettingsActionCreators
-// Dependencies: [5, 4877, 4905, 502, 4884, 4846, 9006, 1084, 3, 584, 1294, 7426, 9013, 7081, 7085, 6677, 1272, 4980, 1125, 1111, 6856, 2]
+// Dependencies: [5, 4909, 4937, 502, 4916, 4878, 9040, 1084, 3, 584, 1294, 7461, 9046, 7115, 7119, 6711, 1272, 5012, 1125, 1111, 6890, 2]
 
-// Module 9005 (GuildSettingsActionCreators)
+// Module 9039 (GuildSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6677 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7426 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7461 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 4877 */;
-import LurkingStore from "LurkingStore" /* 4905 */;
+import ImpersonateStore from "ImpersonateStore" /* 4909 */;
+import LurkingStore from "LurkingStore" /* 4937 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4884 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9006 */;
+import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9040 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -77,14 +77,11 @@ let obj = {
               hasItem = features.has(constants3.COMMUNITY);
             }
             if (hasItem) {
-              if (SAFETY === constants2.GUILD_AUTOMOD) {
-                SAFETY = tmp6.SAFETY;
-                subsection = constants.SAFETY_AUTOMOD;
-              }
-              if (SAFETY === constants2.MEMBER_VERIFICATION) {
-                SAFETY = tmp6.SAFETY;
-                subsection = constants.SAFETY_DM_AND_SPAM_PROTECTION;
-              }
+              hasItem = SAFETY === constants2.MEMBER_VERIFICATION;
+            }
+            if (hasItem) {
+              SAFETY = constants2.SAFETY;
+              subsection = constants.SAFETY_DM_AND_SPAM_PROTECTION;
             }
             closure_1_16.init(guildId, SAFETY, closure_2, subsection);
             obj = closure_1_16;
@@ -97,9 +94,9 @@ let obj = {
             c0 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp25) {
+        } catch (tmp24) {
           c0 = 3;
-          throw tmp25;
+          throw tmp24;
         }
       }
     })();
@@ -292,7 +289,7 @@ let obj = {
     const obj5 = obj(584);
     obj5.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = GuildSettingsStore.getPendingOriginalMd5s();
-    const obj6 = obj(7081);
+    const obj6 = obj(7115);
     const obj7 = { [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash };
     const headersForMd5 = obj6.buildHeadersForMd5(obj7);
     const HTTP = require("HTTPUtils").HTTP;

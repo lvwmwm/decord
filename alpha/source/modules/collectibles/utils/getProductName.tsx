@@ -1,13 +1,13 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 9496
+// Function ID: 9497
 // Name: getProductName
-// Dependencies: [1992, 1125, 7662, 2]
+// Dependencies: [1992, 1125, 7696, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9464 (getProductName)
+// Module 9496 (getProductName)
 import intl6 from "intl" /* 1125 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");

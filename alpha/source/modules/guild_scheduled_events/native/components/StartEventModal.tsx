@@ -1,28 +1,28 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 9066
+// Function ID: 9067
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4824, 4846, 4830, 8884, 21, 4972, 587, 6673, 558, 576, 1125, 1199, 7186, 6910, 5235, 9027, 504, 8944, 9034, 7883, 9037, 5245, 7223, 2]
+// Dependencies: [5, 32, 19, 17, 4856, 4878, 4862, 8918, 21, 5004, 587, 6707, 558, 576, 1125, 1199, 7220, 6944, 5270, 9060, 504, 8978, 9067, 7917, 9070, 5280, 7257, 2]
 
-// Module 9033 (StartEventModal)
+// Module 9066 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import Pressables from "Pressables" /* 6910 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7186 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8884 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9027 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import Pressables from "Pressables" /* 6944 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7220 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8918 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9060 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

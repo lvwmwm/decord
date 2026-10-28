@@ -1,15 +1,15 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16669
+// Function ID: 16670
 // Name: OrbsArcadeRewardUtils
-// Dependencies: [16435, 1125, 2]
+// Dependencies: [16663, 1125, 2]
 // Exports: getOrbsArcadeClaimableRewards, getOrbsArcadeFocusedReward, getOrbsArcadeRewardScoreLabel, getOrbsArcadeRewardStatus, hasOrbsArcadeUnclaimedRewards, hasOrbsArcadeUnlockedRewards, isOrbsArcadeEnrollmentOver, mustClaimOrbsArcadeRewardsToPlay
 
-// Module 16440 (OrbsArcadeRewardUtils)
+// Module 16669 (OrbsArcadeRewardUtils)
 import intl2 from "intl" /* 1125 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
 import size from "module_2" /* 2 */;
 
-const f127100 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f127845 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 const result = size.fileFinishedImporting("modules/orbs_arcade/utils/OrbsArcadeRewardUtils.tsx");
 
 export const getOrbsArcadeRewardStatus = function getOrbsArcadeRewardStatus(id, gameState) {
@@ -88,7 +88,7 @@ export const hasOrbsArcadeUnclaimedRewards = function hasOrbsArcadeUnclaimedRewa
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f127100);
+  return values2.some(f127845);
 };
 export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -108,7 +108,7 @@ export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(ga
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f127100);
+    tmp = !values2.some(f127845);
   }
   return tmp;
 };
@@ -130,7 +130,7 @@ export const mustClaimOrbsArcadeRewardsToPlay = function mustClaimOrbsArcadeRewa
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f127100);
+    someResult = values2.some(f127845);
   }
   return someResult;
 };

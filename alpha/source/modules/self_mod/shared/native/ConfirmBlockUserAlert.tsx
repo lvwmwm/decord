@@ -1,20 +1,20 @@
-// Module ID: 10970
-// Function ID: 10971
+// Module ID: 11005
+// Function ID: 11006
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1389, 10930, 21, 4972, 587, 558, 576, 504, 10971, 5026, 7416, 7424, 8106, 5245, 1125, 5235, 5979, 2]
+// Dependencies: [19, 17, 1389, 10965, 21, 5004, 587, 558, 576, 504, 11006, 5058, 7451, 7459, 8140, 5280, 1125, 5270, 6014, 2]
 
-// Module 10970 (ConfirmBlockUserAlert)
+// Module 11005 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7416 */;
-import ReportModals from "ReportModals" /* 8106 */;
-import Constants from "Constants" /* 10930 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7451 */;
+import ReportModals from "ReportModals" /* 8140 */;
+import Constants from "Constants" /* 10965 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmBlo
       obj = closure_1(closure_2[12]);
       obj1 = { location: LOCATION_CONTEXT_MOBILE };
       blockUserResult = obj.blockUser(userId, obj1, channelId);
-      nextPromise = blockUserResult.then(() => { /* body not rendered: F148069 */ });
+      nextPromise = blockUserResult.then(() => { /* body not rendered: F148932 */ });
       return;
     }
   }

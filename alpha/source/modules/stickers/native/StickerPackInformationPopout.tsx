@@ -1,18 +1,18 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10198
+// Function ID: 10199
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4972, 587, 6489, 1125, 558, 576, 5235, 6910, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 6523, 1125, 558, 576, 5270, 6944, 2]
 // Exports: doesStickerPackHavePopoutInformation
 
-// Module 10166 (StickerPackInformationPopout)
+// Module 10198 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import StickersUtils from "StickersUtils" /* 6489 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import StickersUtils from "StickersUtils" /* 6523 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-            const Text = tmp(5235).Text;
+            const Text = tmp(5270).Text;
             intl4 = tmp(1125).intl;
             const tmp19 = closure_3(Text, obj4);
             cResult[23] = tmp19;
@@ -225,15 +225,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
   items1 = [tmp.informationContainer, style];
   const obj4 = { style: tmp.headerContainer, children: items2 };
   const obj5 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.format(require("intl").t.XDm6yN, obj6) };
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   intl2 = tmp2(1125).intl;
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_3(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_3(Text2, obj8) };
-  const PressableOpacity = tmp2(6910).PressableOpacity;
+  const PressableOpacity = tmp2(6944).PressableOpacity;
   intl3 = tmp2(1125).intl;
   obj8 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-  Text2 = tmp2(5235).Text;
+  Text2 = tmp2(5270).Text;
   intl4 = tmp2(1125).intl;
   items2[1] = closure_3(PressableOpacity, obj7);
   items3 = [

@@ -1,23 +1,23 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8698
+// Function ID: 8699
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 4973, 1086, 1626, 21, 4972, 558, 576, 1630, 504, 8662, 5053, 5248, 2050, 7663, 8663, 1125, 5213, 8664, 8665, 7650, 5211, 5245, 2]
+// Dependencies: [19, 5005, 1086, 1626, 21, 5004, 558, 576, 1630, 504, 8699, 5085, 5283, 2050, 7697, 8700, 1125, 5248, 8701, 8702, 7684, 5246, 5280, 2]
 
-// Module 8661 (EditCollectiblesCTAButton)
+// Module 8698 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import intl4 from "intl" /* 1125 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import HapticUtils from "HapticUtils" /* 5213 */;
-import spring from "spring" /* 5248 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8664 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8665 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import HapticUtils from "HapticUtils" /* 5248 */;
+import spring from "spring" /* 5283 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8701 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8702 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import createStyles from "createStyles" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

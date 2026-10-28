@@ -1,13 +1,13 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12189
+// Function ID: 12190
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1125, 3831, 558, 576, 11767, 2]
+// Dependencies: [32, 19, 1125, 3863, 558, 576, 11803, 2]
 
-// Module 12151 (useConjurePublishButton)
+// Module 12189 (useConjurePublishButton)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11767 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,13 +19,13 @@ function publishButtonText(upToDate, arg1) {
     let label;
     if (null == upToDate) {
       const intl2 = intl3.intl;
-      label = intl2.string(_modDef3831["120EFN"]);
+      label = intl2.string(_modDef3863["120EFN"]);
     } else {
       const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
       if (tmp2) {
         if (!upToDate.publishing) {
           const intl = intl3.intl;
-          label = intl.string(_modDef3831.kAfbEN);
+          label = intl.string(_modDef3863.kAfbEN);
         }
       }
       label = upToDate.label;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
   let tmp5;
   let tmp7;
   const obj = react2;
-  const cResult = obj.c(23);
+  const cResult = obj.c(29);
   [r10015, closure_129_0] = _slicedToArray(react.useState(null), 2);
   const tmp2 = _slicedToArray(react.useState(null), 2);
   let closure_1 = react.useRef(null);
@@ -150,6 +150,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
 }) : (function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   let closure_129_3;
   let str2;
+  let tmp13;
   let tmp2;
   let closure_0 = arg1;
   let closure_1 = arg2;
@@ -202,11 +203,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
   if (true !== publishing) {
     tmp11 = tmp2;
   }
-  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11) };
+  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11), label: publishButtonText(tmp7, null), indicator: tmp13 };
   str2 = "primary";
   const tmp12 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
   if (tmp12) {
     str2 = "secondary";
+  }
+  tmp13 = null;
+  if (null != tmp7) {
+    let str3 = "publishing";
+    if (!tmp7.publishing) {
+      let tmp15 = "unpublished";
+      const tmp14 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
+      if (tmp14) {
+        tmp15 = null;
+      }
+      str3 = tmp15;
+    }
+    tmp13 = str3;
   }
   return obj2;
 });

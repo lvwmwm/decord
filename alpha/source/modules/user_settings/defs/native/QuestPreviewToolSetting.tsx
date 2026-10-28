@@ -1,14 +1,14 @@
-// Module ID: 16553
-// Function ID: 16554
+// Module ID: 16782
+// Function ID: 16783
 // Name: QuestPreviewToolSetting
-// Dependencies: [1084, 11212, 1125, 9572, 14184, 16554, 2]
+// Dependencies: [1084, 11248, 1125, 9604, 14408, 16783, 2]
 
-// Module 16553 (QuestPreviewToolSetting)
+// Module 16782 (QuestPreviewToolSetting)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9572 */;
-import QuestsIcon from "QuestsIcon" /* 14184 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9604 */;
+import QuestsIcon from "QuestsIcon" /* 14408 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

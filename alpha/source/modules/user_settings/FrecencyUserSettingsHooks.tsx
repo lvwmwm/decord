@@ -1,10 +1,10 @@
-// Module ID: 10139
-// Function ID: 10140
+// Module ID: 10171
+// Function ID: 10172
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1243, 558, 576, 4805, 504, 2]
+// Dependencies: [19, 1243, 558, 576, 4837, 504, 2]
 
-// Module 10139 (FrecencyUserSettingsHooks)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4805 */;
+// Module 10171 (FrecencyUserSettingsHooks)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4837 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

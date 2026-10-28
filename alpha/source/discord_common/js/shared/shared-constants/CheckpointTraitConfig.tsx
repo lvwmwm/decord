@@ -1,9 +1,9 @@
-// Module ID: 6042
-// Function ID: 6043
+// Module ID: 6076
+// Function ID: 6077
 // Name: CheckpointTraitConfig
 // Dependencies: [2]
 
-// Module 6042 (CheckpointTraitConfig)
+// Module 6076 (CheckpointTraitConfig)
 import size from "module_2" /* 2 */;
 
 const set = new Set([1, 6, 9, 11, 13]);
@@ -20,3 +20,4 @@ export const CHECKPOINT_RARITY_TO_MIN_PERCENTILE = { common: 0, rare: 70, epic: 
 export const CHECKPOINT_WEARABLE_LAYER_BACKGROUND = set;
 export const CHECKPOINT_LAYER_DEFAULT_ORDERING = ["base", "outfit", "shoes", "wearable", "face", "hat", "aura"];
 export const CHECKPOINT_LAYER_BACKGROUND_WEARABLE_ORDERING = ["wearable", "base", "outfit", "shoes", "face", "hat", "aura"];
+export const CHECKPOINT_BASE_TO_CARD_COLOR_PALETTE = { 4: 2, 15: 2, 3: 2, 1: 1, 13: 1, 7: 1, 6: 3, 9: 3, 11: 3, 5: 4, 12: 4, 2: 5, 10: 5, 14: 6, 8: 6 };

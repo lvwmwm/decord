@@ -1,17 +1,17 @@
-// Module ID: 5868
-// Function ID: 5869
+// Module ID: 5903
+// Function ID: 5904
 // Name: VideoBackgroundUtils
-// Dependencies: [4824, 5715, 5864, 1084, 1414, 5712, 1264, 2]
+// Dependencies: [4856, 5750, 5899, 1084, 1414, 5747, 1264, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 5868 (VideoBackgroundUtils)
+// Module 5903 (VideoBackgroundUtils)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5864 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5899 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -166,7 +166,7 @@ export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProt
   let obj;
   let obj3;
   if (null == type) {
-    obj = { oneofKind: "rejectWithError" };
+    obj = { oneofKind: "paths" };
   } else {
     let tmp = null != type && typeof type === "object" && "id" in type;
     if (tmp) {

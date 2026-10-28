@@ -1,16 +1,16 @@
-// Module ID: 19368
-// Function ID: 19369
+// Module ID: 19631
+// Function ID: 19632
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 4821, 21, 4972, 587, 558, 576, 1630, 5235, 1125, 1199, 5245, 5270, 5266, 2]
+// Dependencies: [19, 17, 4853, 21, 5004, 587, 558, 576, 1630, 5270, 1125, 1199, 5280, 5305, 5301, 2]
 
-// Module 19368 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 19631 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       }
     }
     const obj2 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1125).t.Y0PTc0) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp10 = closure_5(Text, obj2);
     const tmp11 = closure_5(markAsDismissed(1199).Spacer, { size: 12 });
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       }
     }
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: intl2.string(markAsDismissed(1125).t["YSI/1/"]) };
-    const Text2 = tmp(5235).Text;
+    const Text2 = tmp(5270).Text;
     intl2 = tmp(1125).intl;
     const tmp14 = closure_5(Text2, obj3);
     const tmp15 = closure_5(markAsDismissed(1199).Spacer, { size: 48 });
@@ -148,8 +148,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       grow: true
     };
     cResult[9] = markAsDismissed;
-    cResult[10] = closure_5(markAsDismissed(5245).Button, obj5);
-    const tmp19 = closure_5(markAsDismissed(5245).Button, obj5);
+    cResult[10] = closure_5(markAsDismissed(5280).Button, obj5);
+    const tmp19 = closure_5(markAsDismissed(5280).Button, obj5);
   } else {
     class S {
       constructor() {
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         return tmp26;
       }
       const obj6 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp22 };
-      const tmp28 = closure_5(markAsDismissed(5266).BottomSheet, obj6);
+      const tmp28 = closure_5(markAsDismissed(5301).BottomSheet, obj6);
       cResult[17] = tmp5;
       cResult[18] = tmp22;
       cResult[19] = tmp28;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   items = [tmp8, tmp9, tmp12, tmp13, tmp18];
   cResult[11] = tmp6;
   cResult[12] = tmp18;
-  cResult[13] = closure_6(markAsDismissed(5270).BottomSheetScrollView, obj8);
-  const tmp21 = closure_6(markAsDismissed(5270).BottomSheetScrollView, obj8);
+  cResult[13] = closure_6(markAsDismissed(5305).BottomSheetScrollView, obj8);
+  const tmp21 = closure_6(markAsDismissed(5305).BottomSheetScrollView, obj8);
 }) : (function GuildRoleSubscriptionTierTemplateSelectedActionSheet(markAsDismissed) {
   let BottomSheetScrollView;
   let intl;
@@ -215,15 +215,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  BottomSheet = markAsDismissed(5266).BottomSheet;
+  BottomSheet = markAsDismissed(5301).BottomSheet;
   obj3 = { contentContainerStyle: { paddingBottom: bottom }, children: items };
-  BottomSheetScrollView = markAsDismissed(5270).BottomSheetScrollView;
+  BottomSheetScrollView = markAsDismissed(5305).BottomSheetScrollView;
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1125).t.Y0PTc0) };
-  const Text = markAsDismissed(5235).Text;
+  const Text = markAsDismissed(5270).Text;
   intl = markAsDismissed(1125).intl;
   items = [closure_5(Text, obj4), closure_5(markAsDismissed(1199).Spacer, { size: 12 }), , , ];
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: intl2.string(markAsDismissed(1125).t["YSI/1/"]) };
-  const Text2 = markAsDismissed(5235).Text;
+  const Text2 = markAsDismissed(5270).Text;
   intl2 = markAsDismissed(1125).intl;
   items[2] = closure_5(Text2, obj5);
   items[3] = closure_5(markAsDismissed(1199).Spacer, { size: 48 });
@@ -234,7 +234,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     },
     grow: true
   };
-  const Button = markAsDismissed(5245).Button;
+  const Button = markAsDismissed(5280).Button;
   intl3 = markAsDismissed(1125).intl;
   items[4] = closure_5(Button, obj6);
   return closure_5(BottomSheet, obj);

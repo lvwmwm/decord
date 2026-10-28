@@ -1,17 +1,17 @@
-// Module ID: 18282
-// Function ID: 18283
+// Module ID: 18523
+// Function ID: 18524
 // Name: ShopCoachmark
-// Dependencies: [19, 4821, 21, 4972, 558, 576, 1199, 1125, 587, 9842, 2]
+// Dependencies: [19, 4853, 21, 5004, 558, 576, 1199, 1125, 587, 9874, 2]
 
-// Module 18282 (ShopCoachmark)
+// Module 18523 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

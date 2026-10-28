@@ -1,10 +1,10 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10842
+// Function ID: 10843
 // Name: ConjurePublishTypes
 // Dependencies: [2]
 // Exports: canPublish, isConjureLive
 
-// Module 10808 (ConjurePublishTypes)
+// Module 10842 (ConjurePublishTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/ConjurePublishTypes.tsx");

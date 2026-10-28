@@ -1,10 +1,10 @@
-// Module ID: 10777
-// Function ID: 10778
+// Module ID: 10811
+// Function ID: 10812
 // Name: EmbeddedAppFramePolicyExperiment
 // Dependencies: [1452, 558, 576, 2]
 // Exports: getIsEmbeddedAppFramePolicyEnabled
 
-// Module 10777 (EmbeddedAppFramePolicyExperiment)
+// Module 10811 (EmbeddedAppFramePolicyExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

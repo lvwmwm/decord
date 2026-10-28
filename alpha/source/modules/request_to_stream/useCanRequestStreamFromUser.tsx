@@ -1,16 +1,16 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14564
+// Function ID: 14565
 // Name: useCanRequestStreamFromUser
-// Dependencies: [4824, 4884, 4878, 4904, 1084, 558, 576, 12, 4909, 504, 2]
+// Dependencies: [4856, 4916, 4910, 4936, 1084, 558, 576, 12, 4941, 504, 2]
 
-// Module 14341 (useCanRequestStreamFromUser)
+// Module 14564 (useCanRequestStreamFromUser)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildMemberStore from "GuildMemberStore" /* 4884 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

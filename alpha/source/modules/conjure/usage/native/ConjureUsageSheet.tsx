@@ -1,19 +1,19 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12547
+// Function ID: 12548
 // Name: ConjureUsageSheet
-// Dependencies: [19, 17, 10702, 21, 4972, 587, 558, 576, 5235, 10709, 504, 7300, 7250, 1125, 3831, 5978, 2]
+// Dependencies: [19, 17, 10734, 21, 5004, 587, 558, 576, 5270, 10741, 504, 7334, 7284, 1125, 3863, 6013, 2]
 
-// Module 12500 (ConjureUsageSheet)
+// Module 12547 (ConjureUsageSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10709 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10741 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10702 */;
+import ConjureChatStore from "ConjureChatStore" /* 10734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -308,17 +308,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
         }
       }
     }
-    const sumTokenUsage = projectId(10709).sumTokenUsage;
-    projectId(10709);
-    const tmpResult10 = projectId(10709);
+    const sumTokenUsage = projectId(10741).sumTokenUsage;
+    projectId(10741);
+    const tmpResult10 = projectId(10741);
     const sumTokenUsageResult = tmpResult10.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmpResult11 = projectId(10709);
+    const tmpResult11 = projectId(10741);
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmpResult11.usageOrEmpty(stateFromStores.compaction));
-    const ActionSheet = tmp(7300).ActionSheet;
+    const ActionSheet = tmp(7334).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { title: intl.string(_modDef3831.p5EGzq) };
-      const BottomSheetTitleHeader = tmp(7250).BottomSheetTitleHeader;
+      const obj7 = { title: intl.string(_modDef3863.p5EGzq) };
+      const BottomSheetTitleHeader = tmp(7284).BottomSheetTitleHeader;
       intl = tmp(1125).intl;
       const tmp28 = closure_5(BottomSheetTitleHeader, obj7);
       cResult[27] = tmp28;
@@ -326,14 +326,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     } else {
       tmp25 = cResult[27];
     }
-    const Stack = tmp(5978).Stack;
+    const Stack = tmp(6013).Stack;
     const PX_12 = nativeDefault.space.PX_12;
     if (cResult[28] !== stateFromStores.cost_usd) {
       const intl2 = tmp(1125).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj8 = { runes: runesFromUsdResult.toLocaleString() };
-      const gMuw5d = tmp30(3831).gMuw5d;
-      const tmpResult12 = projectId(10709);
+      const gMuw5d = tmp30(3863).gMuw5d;
+      const tmpResult12 = projectId(10741);
       runesFromUsdResult = tmpResult12.runesFromUsd(stateFromStores.cost_usd);
       const formatToPlainStringResult = formatToPlainString(gMuw5d, obj8);
       cResult[28] = stateFromStores.cost_usd;
@@ -344,7 +344,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     }
     if (cResult[30] !== tmp31) {
       const obj9 = { variant: "text-md/semibold", color: "text-default", children: tmp31 };
-      const tmp35 = closure_5(projectId(5235).Text, obj9);
+      const tmp35 = closure_5(projectId(5270).Text, obj9);
       cResult[30] = tmp31;
       cResult[31] = tmp35;
       tmp33 = tmp35;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const _Symbol2 = Symbol;
     if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(1125).intl;
-      const stringResult = intl3.string(_modDef3831.xtxP0e);
+      const stringResult = intl3.string(_modDef3863.xtxP0e);
       cResult[32] = stringResult;
       tmp36 = stringResult;
     } else {
@@ -372,7 +372,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const _Symbol3 = Symbol;
     if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1125).intl;
-      const stringResult1 = intl4.string(_modDef3831["9Sj3SX"]);
+      const stringResult1 = intl4.string(_modDef3863["9Sj3SX"]);
       cResult[35] = stringResult1;
       tmp42 = stringResult1;
     } else {
@@ -390,14 +390,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const _Symbol4 = Symbol;
     if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1125).intl;
-      const stringResult2 = intl5.string(_modDef3831.ANCEo3);
+      const stringResult2 = intl5.string(_modDef3863.ANCEo3);
       cResult[38] = stringResult2;
       tmp48 = stringResult2;
     } else {
       tmp48 = cResult[38];
     }
     if (cResult[39] !== stateFromStores.compaction) {
-      const tmpResult13 = projectId(10709);
+      const tmpResult13 = projectId(10741);
       const usageOrEmptyResult = tmpResult13.usageOrEmpty(stateFromStores.compaction);
       cResult[39] = stateFromStores.compaction;
       cResult[40] = usageOrEmptyResult;
@@ -417,14 +417,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const _Symbol5 = Symbol;
     if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
       const intl6 = tmp(1125).intl;
-      const stringResult3 = intl6.string(_modDef3831.ugL6D4);
+      const stringResult3 = intl6.string(_modDef3863.ugL6D4);
       cResult[43] = stringResult3;
       tmp56 = stringResult3;
     } else {
       tmp56 = cResult[43];
     }
     if (cResult[44] !== stateFromStores.classifier) {
-      const tmpResult14 = projectId(10709);
+      const tmpResult14 = projectId(10741);
       const usageOrEmptyResult1 = tmpResult14.usageOrEmpty(stateFromStores.classifier);
       cResult[44] = stateFromStores.classifier;
       cResult[45] = usageOrEmptyResult1;
@@ -444,14 +444,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const _Symbol6 = Symbol;
     if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
       const intl7 = tmp(1125).intl;
-      const stringResult4 = intl7.string(_modDef3831.DHr5On);
+      const stringResult4 = intl7.string(_modDef3863.DHr5On);
       cResult[48] = stringResult4;
       tmp64 = stringResult4;
     } else {
       tmp64 = cResult[48];
     }
     if (cResult[49] !== stateFromStores.image) {
-      const tmpResult15 = projectId(10709);
+      const tmpResult15 = projectId(10741);
       const usageOrEmptyResult2 = tmpResult15.usageOrEmpty(stateFromStores.image);
       cResult[49] = stateFromStores.image;
       cResult[50] = usageOrEmptyResult2;
@@ -481,8 +481,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
             const row = tmp4.row;
             const _Symbol7 = Symbol;
             if (cResult[59] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj15 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3831["8OUg09"]) };
-              const Text = tmp(5235).Text;
+              const obj15 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3863["8OUg09"]) };
+              const Text = tmp(5270).Text;
               intl8 = tmp(1125).intl;
               const tmp77 = closure_5(Text, obj15);
               cResult[59] = tmp77;
@@ -499,9 +499,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
             } else {
               tmp78 = cResult[61];
             }
-            const Text2 = tmp(5235).Text;
+            const Text2 = tmp(5270).Text;
             const _Math = Math;
-            const tmpResult16 = projectId(10709);
+            const tmpResult16 = projectId(10741);
             const roundResult = round(100 * tmpResult16.cacheHitRate(sumTokenUsageResult1));
             cResult[4] = tmp4.label;
             cResult[5] = tmp4.row;
@@ -546,7 +546,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       }
     }
     const obj17 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items4 };
-    const Stack2 = tmp(5978).Stack;
+    const Stack2 = tmp(6013).Stack;
     items4 = [tmp38, tmp44, tmp52, tmp60, tmp68];
     const tmp74 = closure_6(Stack2, obj17);
     cResult[53] = tmp38;
@@ -593,62 +593,62 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
   if (null == stateFromStores) {
     return null;
   } else {
-    const sumTokenUsage = projectId(10709).sumTokenUsage;
-    projectId(10709);
-    const tmp2Result8 = projectId(10709);
+    const sumTokenUsage = projectId(10741).sumTokenUsage;
+    projectId(10741);
+    const tmp2Result8 = projectId(10741);
     const sumTokenUsageResult = tmp2Result8.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmp2Result9 = projectId(10709);
+    const tmp2Result9 = projectId(10741);
     const obj2 = { header: closure_5(BottomSheetTitleHeader, obj3), children: closure_5(View, obj4) };
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmp2Result9.usageOrEmpty(stateFromStores.compaction));
-    const ActionSheet = tmp2(7300).ActionSheet;
-    obj3 = { title: intl.string(_modDef3831.p5EGzq) };
-    BottomSheetTitleHeader = tmp2(7250).BottomSheetTitleHeader;
+    const ActionSheet = tmp2(7334).ActionSheet;
+    obj3 = { title: intl.string(_modDef3863.p5EGzq) };
+    BottomSheetTitleHeader = tmp2(7284).BottomSheetTitleHeader;
     intl = tmp2(1125).intl;
     obj4 = { children: closure_6(Stack, obj5) };
     obj5 = { direction: "vertical", spacing: nativeDefault.space.PX_12, children: items2 };
-    Stack = tmp2(5978).Stack;
+    Stack = tmp2(6013).Stack;
     const obj6 = { variant: "text-md/semibold", color: "text-default", children: formatToPlainString(gMuw5d, obj7) };
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     const intl2 = tmp2(1125).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { runes: runesFromUsdResult.toLocaleString() };
-    gMuw5d = _modDef3831.gMuw5d;
-    const tmp2Result10 = projectId(10709);
+    gMuw5d = _modDef3863.gMuw5d;
+    const tmp2Result10 = projectId(10741);
     runesFromUsdResult = tmp2Result10.runesFromUsd(stateFromStores.cost_usd);
     items2 = [closure_5(Text, obj6), , ];
     const obj8 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items3 };
-    const Stack2 = tmp2(5978).Stack;
-    const obj9 = { label: intl3.string(_modDef3831.xtxP0e), usage: stateFromStores.orchestrator };
+    const Stack2 = tmp2(6013).Stack;
+    const obj9 = { label: intl3.string(_modDef3863.xtxP0e), usage: stateFromStores.orchestrator };
     intl3 = tmp2(1125).intl;
     items3 = [closure_5(closure_8, obj9), , , , ];
-    const obj10 = { label: intl4.string(_modDef3831["9Sj3SX"]), usage: stateFromStores.codegen };
+    const obj10 = { label: intl4.string(_modDef3863["9Sj3SX"]), usage: stateFromStores.codegen };
     intl4 = tmp2(1125).intl;
     items3[1] = closure_5(closure_8, obj10);
-    const obj11 = { label: intl5.string(_modDef3831.ANCEo3), usage: tmp2Result11.usageOrEmpty(stateFromStores.compaction) };
+    const obj11 = { label: intl5.string(_modDef3863.ANCEo3), usage: tmp2Result11.usageOrEmpty(stateFromStores.compaction) };
     intl5 = tmp2(1125).intl;
-    tmp2Result11 = projectId(10709);
+    tmp2Result11 = projectId(10741);
     items3[2] = closure_5(closure_8, obj11);
-    const obj12 = { label: intl6.string(_modDef3831.ugL6D4), usage: tmp2Result12.usageOrEmpty(stateFromStores.classifier) };
+    const obj12 = { label: intl6.string(_modDef3863.ugL6D4), usage: tmp2Result12.usageOrEmpty(stateFromStores.classifier) };
     intl6 = tmp2(1125).intl;
-    tmp2Result12 = projectId(10709);
+    tmp2Result12 = projectId(10741);
     items3[3] = closure_5(closure_8, obj12);
-    const obj13 = { label: intl7.string(_modDef3831.DHr5On), usage: tmp2Result13.usageOrEmpty(stateFromStores.image) };
+    const obj13 = { label: intl7.string(_modDef3863.DHr5On), usage: tmp2Result13.usageOrEmpty(stateFromStores.image) };
     intl7 = tmp2(1125).intl;
-    tmp2Result13 = projectId(10709);
+    tmp2Result13 = projectId(10741);
     items3[4] = closure_5(closure_8, obj13);
     items2[1] = closure_6(Stack2, obj8);
     const obj14 = { style: tmp.row, children: items4 };
     const obj15 = { style: tmp.label, children: closure_5(Text2, obj16) };
-    obj16 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3831["8OUg09"]) };
-    Text2 = tmp2(5235).Text;
+    obj16 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3863["8OUg09"]) };
+    Text2 = tmp2(5270).Text;
     intl8 = tmp2(1125).intl;
     items4 = [closure_5(View, obj15), ];
     const _Math = Math;
     const obj17 = { variant: "text-sm/medium", color: "text-default", children: "" + round(100 * tmp2Result14.cacheHitRate(sumTokenUsageResult1)) + "%" };
-    const Text3 = tmp2(5235).Text;
+    const Text3 = tmp2(5270).Text;
     round = Math.round;
     const _HermesInternal = HermesInternal;
-    tmp2Result14 = projectId(10709);
+    tmp2Result14 = projectId(10741);
     items4[1] = closure_5(Text3, obj17);
     items2[2] = closure_6(View, obj14);
     return closure_5(ActionSheet, obj2);

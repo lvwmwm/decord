@@ -1,22 +1,22 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11300
+// Function ID: 11301
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 1084, 21, 4972, 558, 576, 7284, 7303, 587, 1102, 1199, 11264, 11265, 2]
+// Dependencies: [19, 17, 1084, 21, 5004, 558, 576, 7318, 7337, 587, 1102, 1199, 11301, 11302, 2]
 
-// Module 11263 (OfficialConnectionIcon)
+// Module 11300 (OfficialConnectionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
 import native from "native" /* 1199 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7284 */;
-import RoleIconDefault from "RoleIcon" /* 7303 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11264 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11265 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7318 */;
+import RoleIconDefault from "RoleIcon" /* 7337 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11301 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11302 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,36 +1,33 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14488
+// Function ID: 14489
 // Name: MediaModalImage
-// Dependencies: [19, 21, 1381, 14265, 558, 576, 14261, 14262, 5670, 14263, 2]
+// Dependencies: [19, 21, 1381, 558, 576, 14485, 14486, 5705, 14487, 2]
 
-// Module 14264 (MediaModalImage)
+// Module 14488 (MediaModalImage)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14261 */;
-import MediaModalLoadingOverlayDefault from "MediaModalLoadingOverlay" /* 14262 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14263 */;
-import AndroidMediaViewerFullResolutionExperiment from "AndroidMediaViewerFullResolutionExperiment" /* 14265 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14485 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14487 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
+
+let nativeEvent;
 
 let closure_4;
 let hasOwnProperty;
 let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalImage(arg0) {
-  let description;
   let fadeDuration;
   let handleError;
   let handleLoad;
   let handleLoadStart;
   let handleProgress;
-  let height;
   let index;
   let isLoadingVisible;
-  let items;
   let onError;
   let onLoad;
   let onLoadingVisible;
@@ -43,65 +40,124 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ fadeDuration, index, onError, onLoad, onLoadingVisible, pointerEvents, source, style } = arg0);
   if (cResult[0] === onError) {
     if (cResult[1] === onLoad) {
-      let tmp4;
-      let tmp7;
-      let tmp8;
+      let tmp3;
       if (cResult[2] === onLoadingVisible) {
-        tmp4 = cResult[3];
+        tmp3 = cResult[3];
       }
-      const tmp6 = useMediaLoadingDefault(tmp4);
-      ({ isLoadingVisible, progress, handleLoadStart, handleLoad, handleError, handleProgress } = tmp6);
-      const hasError = tmp6.hasError;
+      const tmp5 = useMediaLoadingDefault(tmp3);
+      ({ isLoadingVisible, progress, handleLoadStart, handleLoad, handleError, handleProgress } = tmp5);
+      const hasError = tmp5.hasError;
+      const tmp4 = importDefault;
       if (cResult[4] !== handleProgress) {
-        const fn = function y(nativeEvent) {
-          nativeEvent = nativeEvent.nativeEvent;
-          return handleProgress(nativeEvent.loaded, nativeEvent.total);
-        };
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
+        }
         cResult[4] = handleProgress;
-        cResult[5] = fn;
-        tmp7 = fn;
+        cResult[5] = M;
       } else {
-        tmp7 = cResult[5];
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
+        }
       }
       if (cResult[6] !== source.uri) {
-        const obj2 = { uri: source.uri };
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
+        }
+        tmp8[0] = source.uri;
         cResult[6] = source.uri;
-        cResult[7] = obj2;
-        tmp8 = obj2;
+        cResult[7] = tmp8;
       } else {
-        tmp8 = cResult[7];
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
+        }
       }
       if (hasError) {
-        let tmp25;
-        if (cResult[8] !== style) {
-          const obj3 = { style, status: "error" };
-          const tmp27 = React3(MediaModalLoadingOverlayDefault, obj3);
-          cResult[8] = style;
-          cResult[9] = tmp27;
-          tmp25 = tmp27;
-        } else {
-          tmp25 = cResult[9];
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
         }
-        return tmp25;
+        return tmp16;
       } else {
-        let tmp9;
-        ({ description, height } = source);
+        class M {
+          constructor(arg0) {
+            nativeEvent = arg0.nativeEvent;
+            return handleProgress(nativeEvent.loaded, nativeEvent.total);
+          }
+        }
+        const height = source.height;
         if (cResult[10] !== source) {
-          let str;
-          const tmpResult = PlatformUtils;
-          if (tmpResult.isAndroid()) {
+          class M {
+            constructor(arg0) {
+              nativeEvent = arg0.nativeEvent;
+              return handleProgress(nativeEvent.loaded, nativeEvent.total);
+            }
+          }
+          if (obj3.isAndroid()) {
+            class M {
+              constructor(arg0) {
+                nativeEvent = arg0.nativeEvent;
+                return handleProgress(nativeEvent.loaded, nativeEvent.total);
+              }
+            }
             if (0 !== source.width) {
+              class M {
+                constructor(arg0) {
+                  nativeEvent = arg0.nativeEvent;
+                  return handleProgress(nativeEvent.loaded, nativeEvent.total);
+                }
+              }
               if (0 !== source.height) {
+                class M {
+                  constructor(arg0) {
+                    nativeEvent = arg0.nativeEvent;
+                    return handleProgress(nativeEvent.loaded, nativeEvent.total);
+                  }
+                }
                 if (source.width > 2048) {
+                  class M {
+                    constructor(arg0) {
+                      nativeEvent = arg0.nativeEvent;
+                      return handleProgress(nativeEvent.loaded, nativeEvent.total);
+                    }
+                  }
                   if (source.width * source.height <= 16777216) {
+                    class M {
+                      constructor(arg0) {
+                        nativeEvent = arg0.nativeEvent;
+                        return handleProgress(nativeEvent.loaded, nativeEvent.total);
+                      }
+                    }
                     const _Math = Math;
                     const _Math2 = Math;
                     const bound = Math.max(source.width, source.height);
                     if (bound / Math.min(source.width, source.height) > 2) {
-                      const tmpResult2 = AndroidMediaViewerFullResolutionExperiment;
-                      if (tmpResult2.getAndroidMediaViewerFullResolutionEnabled("MediaModal")) {
-                        str = "none";
+                      class M {
+                        constructor(arg0) {
+                          nativeEvent = arg0.nativeEvent;
+                          return handleProgress(nativeEvent.loaded, nativeEvent.total);
+                        }
                       }
+                    }
+                  }
+                } else {
+                  class M {
+                    constructor(arg0) {
+                      nativeEvent = arg0.nativeEvent;
+                      return handleProgress(nativeEvent.loaded, nativeEvent.total);
                     }
                   }
                 }
@@ -109,112 +165,47 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           cResult[10] = source;
-          cResult[11] = str;
-          tmp9 = str;
+          cResult[11] = undefined;
         } else {
-          tmp9 = cResult[11];
-        }
-        if (cResult[12] === fadeDuration) {
-          if (cResult[13] === handleError) {
-            if (cResult[14] === tmp7) {
-              if (cResult[15] === handleLoad) {
-                if (cResult[16] === handleLoadStart) {
-                  if (cResult[17] === tmp8) {
-                    if (cResult[18] === pointerEvents) {
-                      if (cResult[19] === source.description) {
-                        if (cResult[20] === source.height) {
-                          if (cResult[21] === source.width) {
-                            if (cResult[22] === style) {
-                              let tmp12;
-                              if (cResult[23] === tmp9) {
-                                tmp12 = cResult[24];
-                              }
-                              if (cResult[25] === isLoadingVisible) {
-                                if (cResult[26] === progress) {
-                                  let tmp15;
-                                  if (cResult[27] === style) {
-                                    tmp15 = cResult[28];
-                                  }
-                                  if (cResult[29] === index) {
-                                    if (cResult[30] === source) {
-                                      let tmp18;
-                                      if (cResult[31] === style) {
-                                        tmp18 = cResult[32];
-                                      }
-                                      if (cResult[33] === tmp12) {
-                                        if (cResult[34] === tmp15) {
-                                          let tmp21;
-                                          if (cResult[35] === tmp18) {
-                                            tmp21 = cResult[36];
-                                          }
-                                          return tmp21;
-                                        }
-                                      }
-                                      const obj4 = { children: items };
-                                      items = [tmp12, tmp15, tmp18];
-                                      const tmp24 = hasOwnProperty(react.Fragment, obj4);
-                                      cResult[33] = tmp12;
-                                      cResult[34] = tmp15;
-                                      cResult[35] = tmp18;
-                                      cResult[36] = tmp24;
-                                      tmp21 = tmp24;
-                                    }
-                                  }
-                                  const obj5 = { style, index, source };
-                                  const tmp20 = React3(MediaModalSpoilerOverlayDefault, obj5);
-                                  cResult[29] = index;
-                                  cResult[30] = source;
-                                  cResult[31] = style;
-                                  cResult[32] = tmp20;
-                                  tmp18 = tmp20;
-                                }
-                              }
-                              let tmp16 = null;
-                              if (isLoadingVisible) {
-                                const obj6 = { style, status: "loading", progress };
-                                tmp16 = React3(tmp5(14262), obj6);
-                              }
-                              cResult[25] = isLoadingVisible;
-                              cResult[26] = progress;
-                              cResult[27] = style;
-                              cResult[28] = tmp16;
-                              tmp15 = tmp16;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+          class M {
+            constructor(arg0) {
+              nativeEvent = arg0.nativeEvent;
+              return handleProgress(nativeEvent.loaded, nativeEvent.total);
             }
           }
         }
-        size = { accessibilityRole: "image", accessibilityLabel: description, fadeDuration, height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: tmp7, pointerEvents, resizeMethod: tmp9, source: tmp8, style, width: source.width };
-        const tmp14 = React3(FastImageDefault, size);
+        if (cResult[12] === fadeDuration) {
+          class M {
+            constructor(arg0) {
+              nativeEvent = arg0.nativeEvent;
+              return handleProgress(nativeEvent.loaded, nativeEvent.total);
+            }
+          }
+        }
+        size = { accessibilityRole: "image", accessibilityLabel: tmp9, fadeDuration, height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: tmp6, pointerEvents, resizeMethod: tmp10, source: tmp7, style, width: source.width };
         cResult[12] = fadeDuration;
         cResult[13] = handleError;
-        cResult[14] = tmp7;
+        cResult[14] = tmp6;
         cResult[15] = handleLoad;
         cResult[16] = handleLoadStart;
-        cResult[17] = tmp8;
+        cResult[17] = tmp7;
         cResult[18] = pointerEvents;
         cResult[19] = source.description;
         cResult[20] = source.height;
         cResult[21] = source.width;
         cResult[22] = style;
-        cResult[23] = tmp9;
-        cResult[24] = tmp14;
-        tmp12 = tmp14;
+        cResult[23] = tmp10;
+        cResult[24] = React3(tmp4(5705), size);
+        const tmp15 = React3(tmp4(5705), size);
       }
     }
   }
-  const obj7 = { onError, onLoad, onLoadingVisible };
+  const obj2 = { onError, onLoad, onLoadingVisible };
   cResult[0] = onError;
   cResult[1] = onLoad;
   cResult[2] = onLoadingVisible;
-  cResult[3] = obj7;
-  tmp4 = obj7;
+  cResult[3] = obj2;
+  tmp3 = obj2;
 }) : (function MediaModalImage(source) {
   let fadeDuration;
   let handleError;
@@ -245,14 +236,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = react;
   if (hasError) {
     const obj = { style, status: "error" };
-    tmp7Result = React3(tmp(14262), obj);
+    tmp7Result = React3(tmp(14486), obj);
   } else {
     const Fragment = tmp4.Fragment;
     size = { accessibilityRole: "image", accessibilityLabel: source.description, fadeDuration, height: source.height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: callback, pointerEvents, resizeMethod: str, source: tmp6, style, width: source.width };
     str = undefined;
     const tmpResult = FastImageDefault;
     const obj2 = PlatformUtils;
-    const tmp10 = require;
     const tmp7 = hasOwnProperty;
     if (obj2.isAndroid()) {
       if (0 !== source.width) {
@@ -263,10 +253,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               const _Math2 = Math;
               const bound = Math.max(source.width, source.height);
               if (bound / Math.min(source.width, source.height) > 2) {
-                const tmp10Result = tmp10(14265);
-                if (tmp10Result.getAndroidMediaViewerFullResolutionEnabled("MediaModal")) {
-                  str = "none";
-                }
+                str = "none";
               }
             }
           }
@@ -277,7 +264,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp8Result = null;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading", progress };
-      tmp8Result = tmp8(tmp(14262), obj3);
+      tmp8Result = tmp8(tmp(14486), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp8Result;

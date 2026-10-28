@@ -1,18 +1,18 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14425
+// Function ID: 14426
 // Name: GuildTagCreateGuildListBottomSheet
-// Dependencies: [19, 5195, 21, 558, 576, 504, 1125, 6885, 5211, 13419, 5186, 6905, 7250, 7300, 6989, 2]
+// Dependencies: [19, 5230, 21, 558, 576, 504, 1125, 6919, 5246, 13638, 5221, 6939, 7284, 7334, 7023, 2]
 
-// Module 14201 (GuildTagCreateGuildListBottomSheet)
+// Module 14425 (GuildTagCreateGuildListBottomSheet)
 import intl3 from "intl" /* 1125 */;
-import Powerups from "Powerups" /* 5186 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import TableRowGroup2 from "TableRowGroup" /* 6989 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7250 */;
-import ActionSheet2 from "ActionSheet" /* 7300 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13419 */;
+import Powerups from "Powerups" /* 5221 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import TableRowGroup2 from "TableRowGroup" /* 7023 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7284 */;
+import ActionSheet2 from "ActionSheet" /* 7334 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13638 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5195 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -64,8 +64,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
     tmp8 = cResult[4];
   }
   if (cResult[5] !== guild) {
-    const obj3 = { guild, size: guild(6885).GuildIconSizes.SMALL_32 };
-    const tmp13 = analyticsLocation(6885);
+    const obj3 = { guild, size: guild(6919).GuildIconSizes.SMALL_32 };
+    const tmp13 = analyticsLocation(6919);
     const tmp14 = closure_4(tmp13, obj3);
     cResult[5] = guild;
     cResult[6] = tmp14;
@@ -90,7 +90,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
       }
     }
     const obj4 = { label: guild.name, subLabel: tmp8, icon: tmp10, arrow: true, onPress: tmp15 };
-    const tmp18 = closure_4(guild(6905).TableRow, obj4);
+    const tmp18 = closure_4(guild(6939).TableRow, obj4);
     cResult[10] = guild.name;
     cResult[11] = tmp8;
     cResult[12] = tmp10;
@@ -135,14 +135,14 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
     }
   };
   formatToPlainStringResult = null;
-  const TableRow = guild(6905).TableRow;
+  const TableRow = guild(6939).TableRow;
   if (null != stateFromStores) {
     const intl = tmp(1125).intl;
     const obj3 = { count: stateFromStores };
     formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.zRl6XR, obj3);
   }
-  obj4 = { guild, size: guild(6885).GuildIconSizes.SMALL_32 };
-  tmp6 = analyticsLocation(6885);
+  obj4 = { guild, size: guild(6919).GuildIconSizes.SMALL_32 };
+  tmp6 = analyticsLocation(6919);
   return closure_4(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -159,7 +159,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTagCr
   ({ guilds, analyticsLocation } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(analyticsLocation(1125).t.xO5QzM), subtitle: intl2.string(analyticsLocation(1125).t["h+7Yx3"]) };
-    const BottomSheetTitleHeader = tmp(7250).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7284).BottomSheetTitleHeader;
     intl = tmp(1125).intl;
     intl2 = tmp(1125).intl;
     const tmp6 = closure_4(BottomSheetTitleHeader, obj2);
@@ -177,9 +177,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTagCr
     if (cResult[6] !== tmp7) {
       const obj3 = { children: items };
       items = [first, ];
-      const ActionSheet = tmp(7300).ActionSheet;
+      const ActionSheet = tmp(7334).ActionSheet;
       const obj4 = { hasIcons: true, children: tmp7 };
-      items[1] = closure_4(analyticsLocation(6989).TableRowGroup, obj4);
+      items[1] = closure_4(analyticsLocation(7023).TableRowGroup, obj4);
       const tmp13 = closure_5(ActionSheet, obj3);
       cResult[6] = tmp7;
       cResult[7] = tmp13;

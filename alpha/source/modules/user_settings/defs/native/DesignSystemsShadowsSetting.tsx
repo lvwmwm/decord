@@ -1,12 +1,12 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17416
+// Function ID: 17417
 // Name: DesignSystemsShadowsSetting
-// Dependencies: [8331, 1084, 11212, 17184, 2]
+// Dependencies: [8365, 1084, 11248, 17414, 2]
 
-// Module 17186 (DesignSystemsShadowsSetting)
+// Module 17416 (DesignSystemsShadowsSetting)
 import Constants from "Constants" /* 1084 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,26 +1,26 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16855
+// Function ID: 16856
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 6726, 4897, 16627, 16604, 1084, 1391, 558, 576, 504, 5600, 6384, 16628, 16629, 1102, 4895, 16630, 16611, 16631, 1271, 38, 6832, 7357, 12, 9945, 16632, 1278, 2]
+// Dependencies: [5, 32, 19, 6760, 4929, 16856, 16833, 1084, 1391, 558, 576, 504, 5635, 6418, 16857, 16858, 1102, 4927, 16859, 16840, 16860, 1271, 38, 6866, 7392, 12, 9977, 16861, 1278, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 16626 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 16855 (GuildRoleSubscriptionListingEditStateUtils)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1278 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4895 */;
-import useInitialValueDefault from "useInitialValue" /* 5600 */;
-import StoreUtils from "StoreUtils" /* 6384 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16604 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16611 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16628 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16631 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4927 */;
+import useInitialValueDefault from "useInitialValue" /* 5635 */;
+import StoreUtils from "StoreUtils" /* 6418 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16840 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16857 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16860 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6726 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4897 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16627 */;
+import EmojiStore from "EmojiStore" /* 6760 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4929 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16856 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,9 +34,9 @@ let closure_12;
 let map1;
 let tmp;
 const utils_ColorUtils = tmp(1102);
-const Contants = tmp(16629);
-const f128224 = (id) => id.id;
-const f153303 = () => {
+const Contants = tmp(16858);
+const f128969 = (id) => id.id;
+const f154200 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -58,14 +58,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f128224));
+    set = new Set(found.map(f128969));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f153303);
+  obj.batchUpdates(f154200);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -591,7 +591,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
       return () => {
         closure_0 = closure_1_0;
         obj = closure_0(dependencyMap[21]);
-        obj.batchUpdates(f153303);
+        obj.batchUpdates(f154200);
       };
     };
     const items = [arg0];
@@ -612,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[21]);
-    obj.batchUpdates(f153303);
+    obj.batchUpdates(f154200);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1207,7 +1207,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(found.map(f128224));
+      set = new Set(found.map(f128969));
     }
     cResult[4] = stateFromStoresArray;
     cResult[5] = tmp4.id;
@@ -1240,7 +1240,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f128224));
+        set = new Set(found.map(f128969));
       }
     }
     return set;
@@ -1538,7 +1538,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEditSt
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(16611);
+  const tmpResult = tmp(16840);
   const subscriptionListingsForGroup = tmpResult.useSubscriptionListingsForGroup(arg0, tmp4);
   if (cResult[2] !== arg1) {
     const fn = function s(arg0) {

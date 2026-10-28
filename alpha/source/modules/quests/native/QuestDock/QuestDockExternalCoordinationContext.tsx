@@ -1,19 +1,19 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16713
+// Function ID: 16714
 // Name: QuestDockExternalCoordinationContext
-// Dependencies: [19, 16478, 6711, 16480, 21, 1101, 7171, 558, 576, 5053, 16479, 9573, 1381, 2]
+// Dependencies: [19, 16707, 6745, 16709, 21, 1101, 7205, 558, 576, 5085, 16708, 9605, 1381, 2]
 
-// Module 16484 (QuestDockExternalCoordinationContext)
+// Module 16713 (QuestDockExternalCoordinationContext)
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import QuestConstants from "QuestConstants" /* 6711 */;
-import QuestActionCreators from "QuestActionCreators" /* 9573 */;
-import QuestDockConstants from "QuestDockConstants" /* 16480 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import QuestActionCreators from "QuestActionCreators" /* 9605 */;
+import QuestDockConstants from "QuestDockConstants" /* 16709 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16478 */;
+import QuestDockStore from "QuestDockStore" /* 16707 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7171 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7205 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;

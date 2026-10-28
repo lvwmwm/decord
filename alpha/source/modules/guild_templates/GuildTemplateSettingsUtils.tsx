@@ -1,18 +1,18 @@
-// Module ID: 19197
-// Function ID: 19198
+// Module ID: 19460
+// Function ID: 19461
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 4824, 4904, 7568, 1084, 558, 576, 504, 7427, 6375, 2]
+// Dependencies: [5, 32, 19, 4856, 4936, 7602, 1084, 558, 576, 504, 7462, 6409, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 19197 (GuildTemplateSettingsUtils)
+// Module 19460 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1084 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7427 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7462 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7568 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

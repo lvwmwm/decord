@@ -1,12 +1,12 @@
-// Module ID: 18008
-// Function ID: 18009
+// Module ID: 18245
+// Function ID: 18246
 // Name: CardHeightMeasurer
-// Dependencies: [19, 17, 21, 558, 576, 17943, 8841, 2]
+// Dependencies: [19, 17, 21, 558, 576, 18180, 8878, 2]
 
-// Module 18008 (CardHeightMeasurer)
+// Module 18245 (CardHeightMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8878 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(8);
   itemId = itemId.itemId;
   const children = itemId.children;
-  const width = react.useContext(itemId(17943).ICYMIContext).width;
+  const width = react.useContext(itemId(18180).ICYMIContext).width;
   if (cResult[0] !== itemId) {
     const fn = function l(nativeEvent) {
       const height = nativeEvent.nativeEvent.layout.height;
@@ -61,7 +61,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   itemId = itemId.itemId;
   const children = itemId.children;
   const items = [itemId];
-  const width = react.useContext(itemId(17943).ICYMIContext).width;
+  const width = react.useContext(itemId(18180).ICYMIContext).width;
   return <View onLayout={react.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
     const obj = ICYMIActionCreatorsDefault;

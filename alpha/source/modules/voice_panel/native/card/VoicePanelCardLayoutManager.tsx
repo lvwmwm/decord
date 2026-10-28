@@ -1,20 +1,20 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10941
+// Function ID: 10942
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6773, 10904, 10907, 5633, 558, 576, 5053, 10908, 568, 10909, 10910, 10911, 1271, 2]
+// Dependencies: [32, 19, 17, 6807, 10939, 10942, 5668, 558, 576, 5085, 10943, 568, 10944, 10945, 10946, 1271, 2]
 
-// Module 10906 (VoicePanelCardLayoutManager)
+// Module 10941 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import react_native2 from "react-native" /* 1271 */;
-import CallConstants from "CallConstants" /* 5633 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10908 */;
+import CallConstants from "CallConstants" /* 5668 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10904 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10907 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10942 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

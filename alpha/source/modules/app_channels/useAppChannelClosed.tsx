@@ -1,14 +1,14 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18337
+// Function ID: 18338
 // Name: useAppChannelClosed
-// Dependencies: [32, 19, 6777, 558, 576, 11777, 2]
+// Dependencies: [32, 19, 6811, 558, 576, 11815, 2]
 
-// Module 18097 (useAppChannelClosed)
+// Module 18337 (useAppChannelClosed)
 import react2 from "react" /* 576 */;
-import useFrameBySurfaceDefault from "useFrameBySurface" /* 11777 */;
+import useFrameBySurfaceDefault from "useFrameBySurface" /* 11815 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6777 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F154818 */ });
+          return closure_0(() => { /* body not rendered: F155717 */ });
         }
       }
       cResult[6] = I;
@@ -82,21 +82,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F154818 */ });
+          return closure_0(() => { /* body not rendered: F155717 */ });
         }
       }
     }
     if (tmp11 != null) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F154818 */ });
+          return closure_0(() => { /* body not rendered: F155717 */ });
         }
       }
     }
     if (cResult[7] !== (undefined === tmp3 && tmp11.isClosed)) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F154818 */ });
+          return closure_0(() => { /* body not rendered: F155717 */ });
         }
       }
       tmp29[0] = undefined === tmp3 && tmp11.isClosed;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F154818 */ });
+          return closure_0(() => { /* body not rendered: F155717 */ });
         }
       }
     }

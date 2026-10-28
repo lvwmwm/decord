@@ -1,18 +1,18 @@
-// Module ID: 7501
-// Function ID: 7502
+// Module ID: 7536
+// Function ID: 7537
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4821, 21, 4972, 587, 558, 576, 1630, 5211, 7502, 1125, 2239, 5235, 5245, 5978, 5266, 2]
+// Dependencies: [19, 17, 4853, 21, 5004, 587, 558, 576, 1630, 5246, 7537, 1125, 2239, 5270, 5280, 6013, 5301, 2]
 
-// Module 7501 (GiftCardMobileConsumptionActionSheet)
+// Module 7536 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import _modDef2239 from "module_2239" /* 2239 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const tmp19 = closure_6(tmp(7502).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
+      const tmp19 = closure_6(tmp(7537).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
       cResult[14] = tmp19;
       tmp18 = tmp19;
     } else {
@@ -208,8 +208,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       }
       const obj5 = { variant: "text-md/medium", color: "text-default", style: body, children: tmp23 };
       cResult[18] = tmp4.body;
-      cResult[19] = closure_6(tmp(5235).Text, obj5);
-      const tmp26 = closure_6(tmp(5235).Text, obj5);
+      cResult[19] = closure_6(tmp(5270).Text, obj5);
+      const tmp26 = closure_6(tmp(5270).Text, obj5);
     } else {
       class A {
         constructor() {
@@ -250,8 +250,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
             }
       };
       cResult[21] = tmp13;
-      cResult[22] = closure_6(tmp(5245).Button, obj7);
-      const tmp30 = closure_6(tmp(5245).Button, obj7);
+      cResult[22] = closure_6(tmp(5280).Button, obj7);
+      const tmp30 = closure_6(tmp(5280).Button, obj7);
     } else {
       class A {
         constructor() {
@@ -267,7 +267,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       }
     }
     const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-    const Stack = tmp(5978).Stack;
+    const Stack = tmp(6013).Stack;
     items2 = [tmp20, tmp25, tmp29];
     cResult[23] = tmp20;
     cResult[24] = tmp25;
@@ -327,14 +327,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = markAsDismissed(5266).BottomSheet;
+  BottomSheet = markAsDismissed(5301).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(5978).Stack;
+  Stack = markAsDismissed(6013).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7502).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7537).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
   const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2239.V3DI1E) };
-  const Text = markAsDismissed(5235).Text;
+  const Text = markAsDismissed(5270).Text;
   intl = markAsDismissed(1125).intl;
   items3[1] = closure_6(Text, obj5);
   const obj6 = {
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
       return closure_3(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = markAsDismissed(5245).Button;
+  const Button = markAsDismissed(5280).Button;
   intl2 = markAsDismissed(1125).intl;
   items3[2] = closure_6(Button, obj6);
   return closure_6(BottomSheet, obj);

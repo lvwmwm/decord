@@ -1,20 +1,20 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13212
+// Function ID: 13213
 // Name: CheckpointGlobalStatNumber
-// Dependencies: [17, 21, 4972, 587, 558, 576, 12996, 12997, 1125, 12992, 12998, 12999, 2]
+// Dependencies: [17, 21, 5004, 587, 558, 576, 13213, 13214, 1125, 13209, 13215, 13216, 2]
 
-// Module 12995 (CheckpointGlobalStatNumber)
+// Module 13212 (CheckpointGlobalStatNumber)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl from "intl" /* 1125 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12992 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 12996 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12997 */;
-import _modDef12998 from "module_12998" /* 12998 */;
-import _modDef12999 from "module_12999" /* 12999 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13209 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13213 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13214 */;
+import _modDef13215 from "module_13215" /* 13215 */;
+import _modDef13216 from "module_13216" /* 13216 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
               tmp30 = cResult[13];
             }
             if (cResult[14] !== iter.globe) {
-              const obj3 = { animatedUri: _modDef12998, staticUri: _modDef12999, style: iter.globe };
+              const obj3 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
               const tmp37 = CheckpointApngPlayerDefault;
               const tmp38 = React3(tmp37, obj3);
               cResult[14] = iter.globe;
@@ -191,7 +191,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
           tmp8 = cResult[25];
         }
         if (cResult[26] !== iter.globe) {
-          const obj8 = { animatedUri: _modDef12998, staticUri: _modDef12999, style: iter.globe };
+          const obj8 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
           const tmp15 = CheckpointApngPlayerDefault;
           const tmp16 = React3(tmp15, obj8);
           cResult[26] = iter.globe;
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
     obj4 = { style: iter.value, children: React3(closure_7, obj5) };
     obj5 = { value };
     const items1 = [React3(View, obj3), ];
-    const obj6 = { animatedUri: _modDef12998, staticUri: _modDef12999, style: iter.globe };
+    const obj6 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
     const tmp13 = CheckpointApngPlayerDefault;
     items1[1] = React3(tmp13, obj6);
     obj2.children = items1;
@@ -275,7 +275,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
     obj2.style = items;
     const obj7 = { value };
     const items2 = [React3(closure_7, obj7), ];
-    const obj8 = { animatedUri: _modDef12998, staticUri: _modDef12999, style: iter.globe };
+    const obj8 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
     const tmp8 = CheckpointApngPlayerDefault;
     items2[1] = React3(tmp8, obj8);
     obj2.children = items2;

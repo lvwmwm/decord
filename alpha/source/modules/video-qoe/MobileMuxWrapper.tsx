@@ -1,11 +1,11 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16756
+// Function ID: 16757
 // Name: MobileMuxWrapper
-// Dependencies: [4, 16528, 2]
+// Dependencies: [4, 16757, 2]
 
-// Module 16527 (MobileMuxWrapper)
+// Module 16756 (MobileMuxWrapper)
 import logger_Logger from "logger/Logger" /* 4 */;
-import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 16528 */;
+import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 16757 */;
 import size_mod from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("MobileMuxWrapper");

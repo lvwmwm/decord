@@ -1,13 +1,13 @@
-// Module ID: 16350
-// Function ID: 16351
+// Module ID: 16578
+// Function ID: 16579
 // Name: bountyError
-// Dependencies: [16336, 5664, 16351, 2]
+// Dependencies: [16564, 5699, 16579, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 16350 (bountyError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 16336 */;
-import BountyRewardClaimErrorUtils from "BountyRewardClaimErrorUtils" /* 16351 */;
+// Module 16578 (bountyError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 16564 */;
+import BountyRewardClaimErrorUtils from "BountyRewardClaimErrorUtils" /* 16579 */;
 import size from "module_2" /* 2 */;
 
 const duration = BountiesModalConstants.BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;

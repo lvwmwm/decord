@@ -1,23 +1,23 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7756
+// Function ID: 7757
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6497, 4828, 502, 4824, 4878, 4846, 4904, 4825, 3, 4850, 7723, 1096, 4913, 2]
+// Dependencies: [32, 5, 6531, 4860, 502, 4856, 4910, 4878, 4936, 4857, 3, 4882, 7757, 1096, 4945, 2]
 
-// Module 7722 (GuildBasicChannels)
+// Module 7756 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ChannelStore2 from "ChannelStore" /* 4824 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4850 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4913 */;
+import ChannelStore2 from "ChannelStore" /* 4856 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4882 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -332,7 +332,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "rejectWithError" }, done: true };
+                              return { value: { v: "paths" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;

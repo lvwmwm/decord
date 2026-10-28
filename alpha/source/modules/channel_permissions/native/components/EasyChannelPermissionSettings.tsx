@@ -1,32 +1,32 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18559
+// Function ID: 18560
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18319, 4824, 4884, 4878, 4846, 4904, 4914, 1389, 7876, 1084, 21, 4972, 587, 558, 576, 1502, 11315, 504, 8972, 8973, 8974, 1125, 5605, 5909, 8989, 4909, 5978, 7297, 6989, 7954, 11160, 6905, 11313, 6932, 5712, 8901, 9146, 18320, 18322, 2]
+// Dependencies: [32, 5, 19, 17, 18560, 4856, 4916, 4910, 4878, 4936, 4946, 1389, 7910, 1084, 21, 5004, 587, 558, 576, 1502, 11352, 504, 9006, 9007, 9008, 1125, 5640, 5944, 9023, 4941, 6013, 7331, 7023, 7988, 11195, 6939, 11350, 6966, 5747, 8935, 9179, 18561, 18563, 2]
 
-// Module 18318 (EasyChannelPermissionSettings)
+// Module 18559 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5712 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5909 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7876 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8972 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8973 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8989 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11313 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7910 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9006 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9007 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9023 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11350 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18319 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildMemberStore from "GuildMemberStore" /* 4884 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18560 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "rejectWithError" });
+        navigation.setOptions({ headerRight: "paths" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "rejectWithError" });
+        navigation.setOptions({ headerRight: "paths" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "rejectWithError" });
+        navigation.setOptions({ headerRight: "paths" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "rejectWithError" });
+          navigation.setOptions({ headerRight: "paths" });
         }
       }
     }
@@ -146,14 +146,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "rejectWithError" });
+        navigation.setOptions({ headerRight: "paths" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "rejectWithError" });
+        navigation.setOptions({ headerRight: "paths" });
       }
     }
   }
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "rejectWithError" });
+    navigation.setOptions({ headerRight: "paths" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

@@ -1,21 +1,21 @@
-// Module ID: 14569
-// Function ID: 14570
+// Module ID: 14792
+// Function ID: 14793
 // Name: InviteEmbed
-// Dependencies: [5701, 1389, 1084, 7810, 14570, 7809, 14572, 14573, 14574, 14577, 14579, 10003, 10004, 2]
+// Dependencies: [5736, 1389, 1084, 7844, 14793, 7843, 14795, 14796, 14797, 14800, 14802, 10035, 10036, 2]
 // Exports: createInviteEmbed
 
-// Module 14569 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7809 */;
-import Constants2 from "Constants" /* 7810 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10003 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10004 */;
-import invite_GuildInvite from "invite/GuildInvite" /* 14570 */;
-import GroupDMInvite from "GroupDMInvite" /* 14572 */;
-import FriendInvite from "FriendInvite" /* 14573 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14574 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14577 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 14579 */;
-import InviteStore from "InviteStore" /* 5701 */;
+// Module 14792 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7843 */;
+import Constants2 from "Constants" /* 7844 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10035 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10036 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 14793 */;
+import GroupDMInvite from "GroupDMInvite" /* 14795 */;
+import FriendInvite from "FriendInvite" /* 14796 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14797 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14800 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 14802 */;
+import InviteStore from "InviteStore" /* 5736 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;

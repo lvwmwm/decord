@@ -1,8 +1,8 @@
-// Module ID: 6339
-// Function ID: 6340
+// Module ID: 6373
+// Function ID: 6374
 // Dependencies: [2]
 
-// Module 6339
+// Module 6373
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/prism.png.js");

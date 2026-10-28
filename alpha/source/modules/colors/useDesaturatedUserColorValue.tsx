@@ -1,15 +1,15 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16215
+// Function ID: 16216
 // Name: useDesaturatedUserColorValue
-// Dependencies: [19, 4973, 558, 576, 504, 7661, 1102, 2]
+// Dependencies: [19, 5005, 558, 576, 504, 7695, 1102, 2]
 
-// Module 15989 (useDesaturatedUserColorValue)
+// Module 16215 (useDesaturatedUserColorValue)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import _modDef7661 from "module_7661" /* 7661 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import _modDef7695 from "module_7695" /* 7695 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,13 +64,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesatur
     cResult[8] = obj2;
     tmp14 = obj2;
   }
-  const tmp10 = _modDef7661;
+  const tmp10 = _modDef7695;
   const tmpResult2 = utils_ColorUtils;
   const tmp10Result = tmp10(tmpResult2.int2hex(color));
   ({ h, s, l } = tmp10Result.toHsl());
   const obj3 = { h, s: s * stateFromStores, l };
   tmp10Result.toHsl();
-  const obj6 = _modDef7661(obj3);
+  const obj6 = _modDef7695(obj3);
   const toHexStringResult = obj6.toHexString();
   const toHslStringResult = obj6.toHslString();
   cResult[2] = color;
@@ -96,13 +96,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesatur
     let h;
     let l;
     let s;
-    const tmp = _modDef7661;
+    const tmp = _modDef7695;
     const obj = utils_ColorUtils;
     const tmpResult = tmp(obj.int2hex(closure_0));
     ({ h, s, l } = tmpResult.toHsl());
     const obj2 = { h, s: s * stateFromStores, l };
     tmpResult.toHsl();
-    const obj4 = _modDef7661(obj2);
+    const obj4 = _modDef7695(obj2);
     const obj3 = { hex: obj4.toHexString(), hsl: obj4.toHslString() };
     return obj3;
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 12497
-// Function ID: 12498
+// Module ID: 12544
+// Function ID: 12545
 // Name: waveTransition
 // Dependencies: [2]
 // Exports: bandArrivalTime, bandDepartureTime, bandGlyphsAt, cellStateAt, charForState, dirtyRangeAt, glyphLayerOpacityAt, glyphRampIndexAt, isResolvedState, pickSlotFaces, shiftedLineFor, slotCountFor, waveArrivalTime
 
-// Module 12497 (waveTransition)
+// Module 12544 (waveTransition)
 import size from "module_2" /* 2 */;
 
 function shiftChar(str, arg1) {

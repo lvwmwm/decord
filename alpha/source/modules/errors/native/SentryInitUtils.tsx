@@ -1,7 +1,7 @@
 // Module ID: 1255
 // Function ID: 1256
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1084, 1095, 686, 3, 1256, 1111, 1264, 15419, 6469, 6474, 1374, 1254, 1380, 6470, 1381, 4929, 1627, 1375, 1367, 558, 2]
+// Dependencies: [5, 17, 1084, 1095, 686, 3, 1256, 1111, 1264, 15645, 6503, 6508, 1374, 1254, 1380, 6504, 1381, 4961, 1627, 1375, 1367, 558, 2]
 // Exports: initSentry
 
 // Module 1255 (SentryInitUtils)
@@ -13,7 +13,7 @@ import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1256 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react_nativeAll from "react-native" /* 1380 */;
-import MetricEvents from "MetricEvents" /* 6474 */;
+import MetricEvents from "MetricEvents" /* 6508 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import registerSpanErrorInstrumentation_mod from "module_686" /* 686 */;
@@ -33,7 +33,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f158292 = (arg0, arg1) => {
+      const f159228 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -70,10 +70,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f158292);
+              items[1] = new Promise(f159228);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f158292);
+              const promise = new Promise(f159228);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -568,9 +568,9 @@ function trackCrash(event, hint, arg2) {
     const tmp26Result = tmp26(1254);
     tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp12(15419).AppCrashedReasons;
+  const AppCrashedReasons = tmp12(15645).AppCrashedReasons;
   const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  const tmp27Result = tmp27(6469);
+  const tmp27Result = tmp27(6503);
   const increment = tmp27Result.increment;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: items };
   items = ["reason:" + tmp42, ];
@@ -665,13 +665,13 @@ export const initSentry = function initSentry() {
             tunnel: `/error-reporting-proxy/${str2}`,
             autoInitializeNativeSdk: false,
             beforeSend,
-            dist: "35320100000000",
+            dist: "35320200000000",
             dsn: SentryStaffDsn,
             environment: ReleaseChannel,
             tracesSampleRate: 0,
             sampleRate: 1,
             ignoreErrors,
-            release: "discord_android@353.1.0-2+353201",
+            release: "discord_android@353.2.0-2+353202",
             tracePropagationTargets: items,
             integrations: items1,
             beforeBreadcrumb(data) {
@@ -707,7 +707,7 @@ export const initSentry = function initSentry() {
           items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
           init(obj3);
           const tmp17Result17 = require("module_686");
-          tmp17Result17.setTag("buildNumber", "35320100000000");
+          tmp17Result17.setTag("buildNumber", "35320200000000");
           const tmp17Result18 = require("module_686");
           tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;

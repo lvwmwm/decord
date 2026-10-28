@@ -1,13 +1,13 @@
-// Module ID: 17775
-// Function ID: 17776
+// Module ID: 18012
+// Function ID: 18013
 // Name: GuildsBarDnDStore
-// Dependencies: [6702, 1266, 5053, 1271, 1254, 558, 576, 4887, 2]
+// Dependencies: [6736, 1266, 5085, 1271, 1254, 558, 576, 4919, 2]
 
-// Module 17775 (GuildsBarDnDStore)
+// Module 18012 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import react_native from "react-native" /* 1271 */;
-import SortedGuildStore from "SortedGuildStore" /* 6702 */;
+import SortedGuildStore from "SortedGuildStore" /* 6736 */;
 import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4887);
+const _slicedToArray = tmp(4919);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
@@ -32,7 +32,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "enabled",
+    overSpecs: "done",
     dropSpecs: "toCharArray$esjava$1",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
@@ -79,7 +79,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "applicationId" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "application" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -110,7 +110,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "rejectWithError" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "paths" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -160,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemDragS
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "enabled", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;
@@ -265,7 +265,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemDragS
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "enabled", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "done", overState: "toCharArray$esjava$1", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

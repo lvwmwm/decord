@@ -1,15 +1,15 @@
-// Module ID: 19248
-// Function ID: 19249
+// Module ID: 19511
+// Function ID: 19512
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5664, 5235, 5687, 1125, 11020, 19249, 6907, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5699, 5270, 5722, 1125, 11055, 19512, 6941, 2]
 
-// Module 19248 (GuildSettingsAnalyticsCard)
+// Module 19511 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
     if (cResult[3] !== title) {
       let obj2 = { variant: "text-md/medium", color: "text-subtle", children: title };
-      const tmp8 = closure_6(tmp(5235).Text, obj2);
+      const tmp8 = closure_6(tmp(5270).Text, obj2);
       cResult[3] = title;
       cResult[4] = tmp8;
       tmp6 = tmp8;
@@ -116,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj3 = { variant: "secondary", border: "subtle", style: tmp4.card, children: items };
                   items = [tmp14, tmp21, tmp24];
-                  const tmp37 = closure_7(tmp(6907).Card, obj3);
+                  const tmp37 = closure_7(tmp(6941).Card, obj3);
                   cResult[22] = tmp4.card;
                   cResult[23] = tmp14;
                   cResult[24] = tmp21;
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               const tmp27 = closure_5;
               if (isTrendingUp) {
                 const obj5 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(tmp(1125).t["8mcccd"]) };
-                const ArrowLargeUpIcon = tmp(11020).ArrowLargeUpIcon;
+                const ArrowLargeUpIcon = tmp(11055).ArrowLargeUpIcon;
                 intl2 = tmp(1125).intl;
                 tmp28 = closure_6(ArrowLargeUpIcon, obj5);
               }
@@ -142,13 +142,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               let tmp31 = null;
               if (isTrendingDown) {
                 const obj6 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(tmp(1125).t.NLl6Q3) };
-                const ArrowLargeDownIcon = tmp(19249).ArrowLargeDownIcon;
+                const ArrowLargeDownIcon = tmp(19512).ArrowLargeDownIcon;
                 intl3 = tmp(1125).intl;
                 tmp31 = closure_6(ArrowLargeDownIcon, obj6);
               }
               items1[1] = tmp31;
               const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };
-              items1[2] = closure_6(tmp(5235).Text, obj7);
+              items1[2] = closure_6(tmp(5270).Text, obj7);
               tmp26Result = tmp26(tmp27, obj4);
             }
             cResult[17] = isTrendingDown;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             tmp24 = tmp26Result;
           }
           const obj8 = { variant: "text-lg/semibold", color: str, children: tmp19 };
-          const tmp23 = closure_6(tmp(5235).Text, obj8);
+          const tmp23 = closure_6(tmp(5270).Text, obj8);
           cResult[14] = str;
           cResult[15] = tmp19;
           cResult[16] = tmp23;
@@ -179,7 +179,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     if (null != description) {
       const obj10 = { onPress: tmp5, hitSlop: 14, accessibilityRole: "button", accessibilityLabel: description, children: closure_6(CircleInformationIcon, obj11) };
       obj11 = { size: "xs", color: description(587).colors.INTERACTIVE_ICON_DEFAULT };
-      CircleInformationIcon = tmp(5687).CircleInformationIcon;
+      CircleInformationIcon = tmp(5722).CircleInformationIcon;
       tmp10 = closure_6(closure_4, obj10);
     }
     cResult[5] = description;
@@ -228,19 +228,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }, items);
   let obj = { variant: "secondary", border: "subtle", style: tmp.card, children: items2 };
   let obj2 = { style: tmp.line, children: items1 };
-  const Card = metricKey(6907).Card;
-  items1 = [closure_6(metricKey(5235).Text, { variant: "text-md/medium", color: "text-subtle", children: title }), ];
+  const Card = metricKey(6941).Card;
+  items1 = [closure_6(metricKey(5270).Text, { variant: "text-md/medium", color: "text-subtle", children: title }), ];
   let tmp7Result = null;
   if (null != description) {
     const obj3 = { onPress: callback, hitSlop: 14, accessibilityRole: "button", accessibilityLabel: description, children: closure_6(CircleInformationIcon, obj4) };
     obj4 = { size: "xs", color: description(587).colors.INTERACTIVE_ICON_DEFAULT };
-    CircleInformationIcon = tmp4(5687).CircleInformationIcon;
+    CircleInformationIcon = tmp4(5722).CircleInformationIcon;
     tmp7Result = tmp7(closure_4, obj3);
   }
   items1[1] = tmp7Result;
   items2 = [tmp3(closure_5, obj2), , ];
   let str = "text-muted";
-  const Text = tmp4(5235).Text;
+  const Text = tmp4(5270).Text;
   if (null != localizedNumber) {
     str = "text-strong";
   }
@@ -256,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj6 = { style: tmp.line, children: items3 };
     if (isTrendingUp) {
       const obj7 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(metricKey(1125).t["8mcccd"]) };
-      const ArrowLargeUpIcon = tmp4(11020).ArrowLargeUpIcon;
+      const ArrowLargeUpIcon = tmp4(11055).ArrowLargeUpIcon;
       intl2 = tmp4(1125).intl;
       tmp7Result3 = tmp7(ArrowLargeUpIcon, obj7);
     }
@@ -264,13 +264,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     let tmp7Result4 = null;
     if (isTrendingDown) {
       const obj8 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(metricKey(1125).t.NLl6Q3) };
-      const ArrowLargeDownIcon = tmp4(19249).ArrowLargeDownIcon;
+      const ArrowLargeDownIcon = tmp4(19512).ArrowLargeDownIcon;
       intl3 = tmp4(1125).intl;
       tmp7Result4 = tmp7(ArrowLargeDownIcon, obj8);
     }
     items3[1] = tmp7Result4;
     const obj9 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };
-    items3[2] = closure_6(metricKey(5235).Text, obj9);
+    items3[2] = closure_6(metricKey(5270).Text, obj9);
     tmp3Result = tmp3(tmp6, obj6);
   }
   items2[2] = tmp3Result;

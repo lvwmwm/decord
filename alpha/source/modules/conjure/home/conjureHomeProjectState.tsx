@@ -1,24 +1,25 @@
-// Module ID: 14171
-// Function ID: 14172
+// Module ID: 14394
+// Function ID: 14395
 // Name: conjureHomeProjectState
-// Dependencies: [1243, 6772, 10702, 6774, 10717, 10725, 10726, 558, 576, 504, 2]
-// Exports: conjureHomeProjectShowsDraft, conjureHomeProjectState, conjureProjectLastActivityTime, hasConjureUnpublishedChanges
+// Dependencies: [1243, 6806, 10734, 6808, 10749, 10759, 10760, 558, 576, 504, 10842, 2]
+// Exports: conjureHomeProjectShowsDraft, conjureHomeProjectState, conjureProjectLastActivityTime, conjureProjectStatus, hasConjureUnpublishedChanges
 
-// Module 14171 (conjureHomeProjectState)
-import conjureUnread from "conjureUnread" /* 10725 */;
+// Module 14394 (conjureHomeProjectState)
+import conjureUnread from "conjureUnread" /* 10759 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10842 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ReadStateStore from "ReadStateStore" /* 6772 */;
-import ConjureChatStore from "ConjureChatStore" /* 10702 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10717 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ConjureChatStore from "ConjureChatStore" /* 10734 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, dependencyMap;
 
 let tmp3;
-const conjureProjectMute = tmp3(10726);
+const conjureProjectMute = tmp3(10760);
 function readConjureHomeProjectState(id) {
   const isProjectDeletingResult = ConjureProjectStore.isProjectDeleting(id);
   const isThinkingResult = ConjureChatStore.isThinking(id);
@@ -60,34 +61,7 @@ function readConjureHomeProjectState(id) {
   return str;
 }
 let items = [ConjureProjectStore, ConjureChatStore, ReadStateStore, UserSettingsProtoStore, ConjurePublishStatusStore];
-function hasConjureUnpublishedChanges(arg0) {
-  return "nothing_built" === arg0 || "not_live" === arg0 || "live_outdated" === arg0;
-}
-function conjureHomeProjectState(deleting) {
-  let flag = deleting.deleting;
-  if (flag === undefined) {
-    flag = false;
-  }
-  const publishState = deleting.publishState;
-  let str = "deleting";
-  if (!flag) {
-    let str2 = "in_progress";
-    if (!tmp) {
-      let str3 = "unread";
-      if (!tmp2) {
-        let str7 = "default";
-        const tmp3 = "nothing_built" === publishState || "not_live" === publishState || "live_outdated" === publishState;
-        if (tmp3) {
-          str7 = "draft";
-        }
-        str3 = str7;
-      }
-      str2 = str3;
-    }
-    str = str2;
-  }
-  return str;
-}
+let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHomeProjectState(arg0) {
   let closure_0;
   let tmp4;
@@ -119,6 +93,175 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => readConjureHomeProjectState(closure_0), items);
 });
+ReactCompilerGating = ReactCompilerGating_mod;
+function hasConjureUnpublishedChanges(arg0) {
+  return "nothing_built" === arg0 || "not_live" === arg0 || "live_outdated" === arg0;
+}
+function conjureHomeProjectState(deleting) {
+  let flag = deleting.deleting;
+  if (flag === undefined) {
+    flag = false;
+  }
+  const publishState = deleting.publishState;
+  let str = "deleting";
+  if (!flag) {
+    let str2 = "in_progress";
+    if (!tmp) {
+      let str3 = "unread";
+      if (!tmp2) {
+        let str7 = "default";
+        const tmp3 = "nothing_built" === publishState || "not_live" === publishState || "live_outdated" === publishState;
+        if (tmp3) {
+          str7 = "draft";
+        }
+        str3 = str7;
+      }
+      str2 = str3;
+    }
+    str = str2;
+  }
+  return str;
+}
+function conjureProjectStatus(publishState) {
+  publishState = publishState.publishState;
+  let str = "in_progress";
+  if (!publishState.thinking) {
+    let str5;
+    if (null == publishState) {
+      if (null == publishState) {
+        let str6 = "draft";
+        str5 = str6;
+      } else {
+        ConjurePublishTypes;
+      }
+      str6 = "published";
+    } else {
+      str5 = "draft";
+    }
+    str = str5;
+  }
+  return str;
+}
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectItemState(id) {
+  let closure_1;
+  const tmp = id;
+  const obj = id(576);
+  const cResult = obj.c(4);
+  id = id.id;
+  const supported_surfaces = id.supported_surfaces;
+  let num;
+  if (supported_surfaces != null) {
+    num = supported_surfaces.length;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  dependencyMap = tmp4;
+  if (cResult[0] === num > 0) {
+    let tmp5;
+    let tmp6;
+    if (cResult[1] === id) {
+      tmp5 = cResult[2];
+      tmp6 = cResult[3];
+    }
+    const tmpResult = tmp(504);
+    return tmpResult.useStateFromStoresObject(items, tmp5, tmp6);
+  }
+  const fn = function c() {
+    let result;
+    const isThinkingResult = ConjureChatStore.isThinking(id);
+    const publishStatus = ConjurePublishStatusStore.getPublishStatus(id);
+    let publishState;
+    if (publishStatus != null) {
+      publishState = publishStatus.publishState;
+    }
+    if (publishState == null) {
+      publishState = null;
+    }
+    let str = "in_progress";
+    if (!isThinkingResult) {
+      let str5;
+      if (null == publishState) {
+        if (null == publishState) {
+          let str6 = "draft";
+          str5 = str6;
+        } else {
+          ConjurePublishTypes;
+        }
+        str6 = "published";
+      } else {
+        str5 = "draft";
+      }
+      str = str5;
+    }
+    const obj2 = { status: str, unread: result, deleting: ConjureProjectStore.isProjectDeleting(id) };
+    const obj3 = conjureUnread;
+    result = obj3.isConjureProjectUnread(tmp);
+    if (result) {
+      const tmp9Result = conjureProjectMute;
+      result = !tmp9Result.isConjureProjectMuted(UserSettingsProtoStore.settings, tmp);
+    }
+    return obj2;
+  };
+  items = [id, num > 0];
+  cResult[0] = num > 0;
+  cResult[1] = id;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp6 = items;
+  tmp5 = fn;
+}) : (function useConjureProjectItemState(id) {
+  let closure_1;
+  id = id.id;
+  const supported_surfaces = id.supported_surfaces;
+  let num;
+  if (supported_surfaces != null) {
+    num = supported_surfaces.length;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  const tmp = num > 0;
+  dependencyMap = tmp;
+  const obj = id(504);
+  items = [id, tmp];
+  return obj.useStateFromStoresObject(items, () => {
+    let result;
+    const isThinkingResult = ConjureChatStore.isThinking(id);
+    const publishStatus = ConjurePublishStatusStore.getPublishStatus(id);
+    let publishState;
+    if (publishStatus != null) {
+      publishState = publishStatus.publishState;
+    }
+    if (publishState == null) {
+      publishState = null;
+    }
+    let str = "in_progress";
+    if (!isThinkingResult) {
+      let str5;
+      if (null == publishState) {
+        if (null == publishState) {
+          let str6 = "draft";
+          str5 = str6;
+        } else {
+          ConjurePublishTypes;
+        }
+        str6 = "published";
+      } else {
+        str5 = "draft";
+      }
+      str = str5;
+    }
+    const obj2 = { status: str, unread: result, deleting: ConjureProjectStore.isProjectDeleting(id) };
+    const obj3 = conjureUnread;
+    result = obj3.isConjureProjectUnread(tmp);
+    if (result) {
+      const tmp9Result = conjureProjectMute;
+      result = !tmp9Result.isConjureProjectMuted(UserSettingsProtoStore.settings, tmp);
+    }
+    return obj2;
+  }, items);
+});
 let result = size.fileFinishedImporting("modules/conjure/home/conjureHomeProjectState.tsx");
 
 export { hasConjureUnpublishedChanges };
@@ -148,3 +291,5 @@ export const conjureProjectLastActivityTime = function conjureProjectLastActivit
 export const CONJURE_HOME_PROJECT_STATE_STORES = items;
 export { readConjureHomeProjectState };
 export const useConjureHomeProjectState = tmp7;
+export { conjureProjectStatus };
+export const useConjureProjectItemState = tmp8;

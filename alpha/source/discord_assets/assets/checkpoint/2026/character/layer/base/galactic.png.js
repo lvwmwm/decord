@@ -1,8 +1,8 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6085
+// Function ID: 6086
 // Dependencies: [2]
 
-// Module 6051
+// Module 6085
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/base/galactic.png.js");

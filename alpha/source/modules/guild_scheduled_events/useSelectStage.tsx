@@ -1,14 +1,14 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9175
+// Function ID: 9176
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 4824, 4875, 558, 576, 504, 7879, 2]
+// Dependencies: [5, 32, 19, 4856, 4907, 558, 576, 504, 7913, 2]
 
-// Module 9142 (useSelectStage)
+// Module 9175 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

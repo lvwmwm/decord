@@ -1,11 +1,11 @@
-// Module ID: 4865
-// Function ID: 4866
+// Module ID: 4897
+// Function ID: 4898
 // Name: MessageDao
-// Dependencies: [4855, 4857, 2]
+// Dependencies: [4887, 4889, 2]
 
-// Module 4865 (MessageDao)
-import Table from "Table" /* 4855 */;
-import TableId from "TableId" /* 4857 */;
+// Module 4897 (MessageDao)
+import Table from "Table" /* 4887 */;
+import TableId from "TableId" /* 4889 */;
 import size from "module_2" /* 2 */;
 
 class MessageDao {

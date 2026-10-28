@@ -1,15 +1,15 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 16048
+// Function ID: 16049
 // Name: discordEnvironmentEvents
-// Dependencies: [109, 4973, 6379, 1084, 11465, 12, 2]
+// Dependencies: [109, 5005, 6413, 1084, 11503, 12, 2]
 // Exports: createDiscordEnvironmentEvents
 
-// Module 15822 (discordEnvironmentEvents)
+// Module 16048 (discordEnvironmentEvents)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1084 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import Constants from "Constants" /* 6379 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import Constants from "Constants" /* 6413 */;
 import size from "module_2" /* 2 */;
 
 let items;

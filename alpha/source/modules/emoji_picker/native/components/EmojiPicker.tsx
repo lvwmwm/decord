@@ -1,9 +1,9 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10163
+// Function ID: 10164
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1084, 1392, 21, 4972, 587, 1264, 558, 576, 5053, 9831, 7255, 7280, 9837, 10130, 1125, 7147, 9855, 9938, 4969, 5259, 9960, 2]
+// Dependencies: [19, 17, 1084, 1392, 21, 5004, 587, 1264, 558, 576, 5085, 9863, 7289, 7314, 9869, 10162, 1125, 7181, 9887, 9970, 5001, 5294, 9992, 2]
 
-// Module 10131 (EmojiPicker)
+// Module 10163 (EmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
@@ -11,7 +11,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

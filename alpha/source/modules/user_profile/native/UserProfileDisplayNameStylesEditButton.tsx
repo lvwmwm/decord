@@ -1,24 +1,24 @@
-// Module ID: 15902
-// Function ID: 15903
+// Module ID: 16128
+// Function ID: 16129
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1084, 4821, 4997, 21, 4972, 587, 558, 576, 1502, 15903, 4808, 7497, 8655, 6368, 10667, 1408, 5000, 15895, 6714, 15904, 1264, 1125, 15907, 1199, 14533, 10664, 15908, 2929, 15910, 15911, 2]
+// Dependencies: [32, 19, 17, 1084, 4853, 5029, 21, 5004, 587, 558, 576, 1502, 16129, 4840, 7532, 8692, 6402, 10699, 1408, 5032, 16121, 6748, 16130, 1264, 1125, 16133, 1199, 14756, 10696, 16134, 2929, 16136, 16137, 2]
 
-// Module 15902 (UserProfileDisplayNameStylesEditButton)
+// Module 16128 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14533 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15907 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15908 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14756 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 16133 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 16134 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

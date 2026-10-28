@@ -1,18 +1,18 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 8462
+// Function ID: 8463
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 2055, 1391, 558, 7558, 8429, 8430, 576, 504, 2046, 8431, 8432, 1997, 8435, 2]
+// Dependencies: [32, 19, 2055, 1391, 558, 7592, 8463, 8464, 576, 504, 2046, 8465, 8466, 1997, 8469, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 8428 (PremiumSubscriptionOfferUtil)
+// Module 8462 (PremiumSubscriptionOfferUtil)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 1997 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7558 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8429 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8430 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8431 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8435 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7592 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8463 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8464 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8465 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
@@ -38,7 +38,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(8432);
+const UserOfferActionCreators = tmp(8466);
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {

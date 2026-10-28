@@ -1,14 +1,14 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12420
+// Function ID: 12421
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4902, 4977, 504, 7347, 9664, 12374, 10799, 7756, 7567, 2]
+// Dependencies: [5, 32, 19, 4934, 5009, 504, 7382, 9696, 12421, 10832, 7790, 7601, 2]
 // Exports: default
 
-// Module 12373 (useConjurePatchNotesComposer)
-import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
-import MessageConstants from "MessageConstants" /* 4977 */;
-import ConjureUtils from "ConjureUtils" /* 7347 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12374 */;
+// Module 12420 (useConjurePatchNotesComposer)
+import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
+import MessageConstants from "MessageConstants" /* 5009 */;
+import ConjureUtils from "ConjureUtils" /* 7382 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

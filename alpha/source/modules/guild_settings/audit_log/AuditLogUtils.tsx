@@ -1,10 +1,10 @@
-// Module ID: 19089
-// Function ID: 19090
+// Module ID: 19352
+// Function ID: 19353
 // Name: AuditLogUtils
-// Dependencies: [6726, 7197, 7327, 4829, 6767, 19088, 4824, 4878, 4914, 1389, 19087, 1084, 4831, 12823, 7198, 4830, 3, 5723, 1125, 8880, 11, 19090, 1096, 1402, 5605, 1997, 5026, 14, 1102, 9052, 19052, 4797, 2046, 2]
+// Dependencies: [6760, 7231, 7362, 4861, 6801, 19351, 4856, 4910, 4946, 1389, 19350, 1084, 4863, 12870, 7232, 4862, 3, 5758, 1125, 8914, 11, 19353, 1096, 1402, 5640, 1997, 5058, 14, 1102, 9085, 19315, 4829, 2046, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 19089 (AuditLogUtils)
+// Module 19352 (AuditLogUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
@@ -12,29 +12,29 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
 import intl71 from "intl" /* 1125 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import DateUtils from "DateUtils" /* 4797 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import UserUtilsDefault from "UserUtils" /* 5026 */;
-import useChannelName from "useChannelName" /* 5605 */;
-import TimeUtils from "TimeUtils" /* 5723 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7198 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9052 */;
-import Constants2 from "Constants" /* 12823 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19052 */;
-import AuditLogRecord from "AuditLogRecord" /* 19088 */;
-import GuildFeedItemTypes from "GuildFeedItemTypes" /* 19090 */;
-import EmojiStore from "EmojiStore" /* 6726 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7197 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7327 */;
-import StageInstanceStore from "StageInstanceStore" /* 4829 */;
-import StickersStore from "StickersStore" /* 6767 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import DateUtils from "DateUtils" /* 4829 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import UserUtilsDefault from "UserUtils" /* 5058 */;
+import useChannelName from "useChannelName" /* 5640 */;
+import TimeUtils from "TimeUtils" /* 5758 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7232 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9085 */;
+import Constants2 from "Constants" /* 12870 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19315 */;
+import AuditLogRecord from "AuditLogRecord" /* 19351 */;
+import GuildFeedItemTypes from "GuildFeedItemTypes" /* 19353 */;
+import EmojiStore from "EmojiStore" /* 6760 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7231 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7362 */;
+import StageInstanceStore from "StageInstanceStore" /* 4861 */;
+import StickersStore from "StickersStore" /* 6801 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19087 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19350 */;
 import Constants from "Constants" /* 1084 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 let EYd_ls, H7eE_9, Lfs4r_, Q_5kcO, VYfKA_, _PqSsi, __3TkD, _tb8kN, application, bxs_lS, gc_te5, guildEmoji, integrations, lj_A4u, m_qury, m_veAn, ms_xtL, r66lc_, role, sNpuy_, set, ws_1FA, wxs_vZ, z4w4U_, zwL_S2;
@@ -602,10 +602,10 @@ let result = size.fileFinishedImporting("modules/guild_settings/audit_log/AuditL
 
 export const getChangeStrings = function getChangeStrings(targetType) {
   let obj45;
-  const f139224 = () => obj45(dependencyMap[18]).t["2IW3C5"];
-  const f139233 = (oldValue) => null == oldValue.oldValue ? nYz2mg : oczvRI;
-  const f139234 = (newValue) => null == newValue.newValue ? Zplsov : u6cArh;
-  const f139235 = (newValue) => {
+  const f140091 = () => obj45(dependencyMap[18]).t["2IW3C5"];
+  const f140100 = (oldValue) => null == oldValue.oldValue ? nYz2mg : oczvRI;
+  const f140101 = (newValue) => null == newValue.newValue ? Zplsov : u6cArh;
+  const f140102 = (newValue) => {
     let tmp;
     if (null != newValue.newValue) {
       if (null != newValue.oldValue) {
@@ -619,9 +619,9 @@ export const getChangeStrings = function getChangeStrings(targetType) {
       tmp = lj_A4u;
     }
   };
-  const f139236 = (newValue) => newValue.newValue ? rBT0sn : gc_te5;
-  const f139237 = (arg0) => obj6[arg0.newValue];
-  const f139238 = (arg0) => {
+  const f140103 = (newValue) => newValue.newValue ? rBT0sn : gc_te5;
+  const f140104 = (arg0) => obj6[arg0.newValue];
+  const f140105 = (arg0) => {
     let tmp = obj11[arg0.newValue];
     if (tmp == null) {
       tmp = _2FQFiw;
@@ -636,46 +636,46 @@ export const getChangeStrings = function getChangeStrings(targetType) {
     const DESCRIPTION4 = AuditLogChangeKeys.DESCRIPTION;
     const RP3Ey3 = obj45(1125).t.RP3Ey3;
     const QAVj1Y = obj45(1125).t.QAVj1Y;
-    obj2[DESCRIPTION4] = f139234;
+    obj2[DESCRIPTION4] = f140101;
     obj2[AuditLogChangeKeys.ICON_HASH] = () => obj45(dependencyMap[18]).t.iLZ8Q9;
     obj2[AuditLogChangeKeys.SPLASH_HASH] = () => obj45(dependencyMap[18]).t["4VV6dn"];
     obj2[AuditLogChangeKeys.DISCOVERY_SPLASH_HASH] = () => obj45(dependencyMap[18]).t["2pds6p"];
     const BANNER_HASH = AuditLogChangeKeys.BANNER_HASH;
     const Cxq4zO = obj45(1125).t.Cxq4zO;
     H7eE_9 = obj45(1125).t["H7eE/9"];
-    obj2[BANNER_HASH] = f139234;
+    obj2[BANNER_HASH] = f140101;
     obj2[AuditLogChangeKeys.OWNER_ID] = () => obj45(dependencyMap[18]).t["8ltsLT"];
     obj2[AuditLogChangeKeys.REGION] = () => obj45(dependencyMap[18]).t.X9r5Kf;
     obj2[AuditLogChangeKeys.PREFERRED_LOCALE] = () => obj45(dependencyMap[18]).t.UnXuDS;
     const AFK_CHANNEL_ID = AuditLogChangeKeys.AFK_CHANNEL_ID;
     const ClBuA4 = obj45(1125).t.ClBuA4;
     ms_xtL = obj45(1125).t["ms+xtL"];
-    obj2[AFK_CHANNEL_ID] = f139234;
+    obj2[AFK_CHANNEL_ID] = f140101;
     obj2[AuditLogChangeKeys.AFK_TIMEOUT] = () => obj45(dependencyMap[18]).t.q21fHa;
     const SYSTEM_CHANNEL_ID = AuditLogChangeKeys.SYSTEM_CHANNEL_ID;
     const H1VXaa = obj45(1125).t.H1VXaa;
     const XhtmxJ = obj45(1125).t.XhtmxJ;
-    obj2[SYSTEM_CHANNEL_ID] = f139234;
+    obj2[SYSTEM_CHANNEL_ID] = f140101;
     const RULES_CHANNEL_ID = AuditLogChangeKeys.RULES_CHANNEL_ID;
     const OI6MG2 = obj45(1125).t.OI6MG2;
     const lik3tI = obj45(1125).t.lik3tI;
-    obj2[RULES_CHANNEL_ID] = f139234;
+    obj2[RULES_CHANNEL_ID] = f140101;
     const PUBLIC_UPDATES_CHANNEL_ID = AuditLogChangeKeys.PUBLIC_UPDATES_CHANNEL_ID;
     const YxBKrY = obj45(1125).t.YxBKrY;
     const Ehsnij = obj45(1125).t.Ehsnij;
-    obj2[PUBLIC_UPDATES_CHANNEL_ID] = f139234;
+    obj2[PUBLIC_UPDATES_CHANNEL_ID] = f140101;
     const obj3 = {};
     const MFA_LEVEL = AuditLogChangeKeys.MFA_LEVEL;
     obj3[constants.NONE] = obj45(1125).t.voaCCQ;
     obj3[constants.ELEVATED] = obj45(1125).t.pRNVwz;
-    obj2[MFA_LEVEL] = f139237;
+    obj2[MFA_LEVEL] = f140104;
     const WIDGET_ENABLED = AuditLogChangeKeys.WIDGET_ENABLED;
     const ADIty8 = obj45(1125).t.ADIty8;
     const nf58VY = obj45(1125).t.nf58VY;
-    obj2[WIDGET_ENABLED] = f139236;
+    obj2[WIDGET_ENABLED] = f140103;
     const WIDGET_CHANNEL_ID = AuditLogChangeKeys.WIDGET_CHANNEL_ID;
     const deQ5wO = obj45(1125).t.deQ5wO;
-    obj2[WIDGET_CHANNEL_ID] = f139234;
+    obj2[WIDGET_CHANNEL_ID] = f140101;
     const obj4 = {};
     const VERIFICATION_LEVEL = AuditLogChangeKeys.VERIFICATION_LEVEL;
     obj4[constants2.NONE] = obj45(1125).t.W27rsc;
@@ -683,33 +683,33 @@ export const getChangeStrings = function getChangeStrings(targetType) {
     obj4[constants2.MEDIUM] = obj45(1125).t.ERQFau;
     obj4[constants2.HIGH] = obj45(1125).t["83fN0j"];
     obj4[constants2.VERY_HIGH] = obj45(1125).t.PnkQJE;
-    obj2[VERIFICATION_LEVEL] = f139237;
+    obj2[VERIFICATION_LEVEL] = f140104;
     const obj5 = {};
     const DEFAULT_MESSAGE_NOTIFICATIONS = AuditLogChangeKeys.DEFAULT_MESSAGE_NOTIFICATIONS;
     obj5[constants3.ALL_MESSAGES] = obj45(1125).t.LDi76A;
     obj5[constants3.ONLY_MENTIONS] = obj45(1125).t["6K83ba"];
-    obj2[DEFAULT_MESSAGE_NOTIFICATIONS] = f139237;
+    obj2[DEFAULT_MESSAGE_NOTIFICATIONS] = f140104;
     const VANITY_URL_CODE = AuditLogChangeKeys.VANITY_URL_CODE;
     const Zplsov = obj45(1125).t.Zplsov;
     const u6cArh = obj45(1125).t.u6cArh;
-    obj2[VANITY_URL_CODE] = f139234;
+    obj2[VANITY_URL_CODE] = f140101;
     const obj6 = {};
     const EXPLICIT_CONTENT_FILTER = AuditLogChangeKeys.EXPLICIT_CONTENT_FILTER;
     obj6[constants4.DISABLED] = obj45(1125).t.fmOeL3;
     obj6[constants4.MEMBERS_WITHOUT_ROLES] = obj45(1125).t["4FghYw"];
     obj6[constants4.ALL_MEMBERS] = obj45(1125).t.olyrSm;
-    obj2[EXPLICIT_CONTENT_FILTER] = f139237;
+    obj2[EXPLICIT_CONTENT_FILTER] = f140104;
     const PREMIUM_PROGRESS_BAR_ENABLED = AuditLogChangeKeys.PREMIUM_PROGRESS_BAR_ENABLED;
     const rBT0sn = obj45(1125).t.rBT0sn;
     gc_te5 = obj45(1125).t["gc+te5"];
-    obj2[PREMIUM_PROGRESS_BAR_ENABLED] = f139236;
+    obj2[PREMIUM_PROGRESS_BAR_ENABLED] = f140103;
     obj2[AuditLogChangeKeys.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => obj45(dependencyMap[18]).t.YbouFH;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS] = () => obj45(dependencyMap[18]).t.g3DMjB;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_PREMIUM_SUBSCRIPTIONS] = () => obj45(dependencyMap[18]).t["+fQAel"];
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS] = () => obj45(dependencyMap[18]).t.E1fc4v;
     obj2[AuditLogChangeKeys.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES] = () => obj45(dependencyMap[18]).t.XbwtSA;
     const obj7 = {};
-    obj7[AuditLogChangeKeys.REASON] = f139224;
+    obj7[AuditLogChangeKeys.REASON] = f140091;
     const merged = Object.assign(obj7);
     return obj2;
   } else {
@@ -721,15 +721,15 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const qXDsHv = obj45(1125).t.qXDsHv;
           m_qury = obj45(1125).t["m+qury"];
           const DvLvjF = obj45(1125).t.DvLvjF;
-          obj8[NICK] = f139235;
+          obj8[NICK] = f140102;
           const DEAF = AuditLogChangeKeys.DEAF;
           const mArLlW = obj45(1125).t.mArLlW;
           const ddvVYG = obj45(1125).t.ddvVYG;
-          obj8[DEAF] = f139236;
+          obj8[DEAF] = f140103;
           const MUTE = AuditLogChangeKeys.MUTE;
           bxs_lS = obj45(1125).t["bxs/lS"];
           const FjecQM = obj45(1125).t.FjecQM;
-          obj8[MUTE] = f139236;
+          obj8[MUTE] = f140103;
           obj8[AuditLogChangeKeys.ROLES_REMOVE] = () => obj45(dependencyMap[18]).t["+2SDWV"];
           obj8[AuditLogChangeKeys.ROLES_ADD] = () => obj45(dependencyMap[18]).t["B3/3IJ"];
           obj8[AuditLogChangeKeys.PRUNE_DELETE_DAYS] = () => obj45(dependencyMap[18]).t["+Cvc+D"];
@@ -737,14 +737,14 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const LXTQr5 = obj45(1125).t.LXTQr5;
           const LXTQr52 = obj45(1125).t.LXTQr5;
           const ULSdnE = obj45(1125).t.ULSdnE;
-          obj8[COMMUNICATION_DISABLED_UNTIL] = f139235;
+          obj8[COMMUNICATION_DISABLED_UNTIL] = f140102;
           const BYPASSES_VERIFICATION = AuditLogChangeKeys.BYPASSES_VERIFICATION;
           const NBPBui = obj45(1125).t.NBPBui;
           const zATost = obj45(1125).t.zATost;
-          obj8[BYPASSES_VERIFICATION] = f139236;
+          obj8[BYPASSES_VERIFICATION] = f140103;
           obj8[AuditLogChangeKeys.AUTO_MODERATION_TRIGGERED_RULE_NAME] = () => obj45(dependencyMap[18]).t.YbouFH;
           const obj9 = {};
-          obj9[AuditLogChangeKeys.REASON] = f139224;
+          obj9[AuditLogChangeKeys.REASON] = f140091;
           const merged1 = Object.assign(obj9);
           return obj8;
         } else if (tmp.ROLE === targetType) {
@@ -752,16 +752,16 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const NAME6 = AuditLogChangeKeys.NAME;
           const QBmlaD = obj45(1125).t.QBmlaD;
           Lfs4r_ = obj45(1125).t["Lfs4r+"];
-          obj10[NAME6] = f139233;
+          obj10[NAME6] = f140100;
           const DESCRIPTION3 = AuditLogChangeKeys.DESCRIPTION;
           let XeYKWJ = obj45(1125).t.XeYKWJ;
           let PSfeIj = obj45(1125).t.PSfeIj;
-          obj10[DESCRIPTION3] = f139233;
+          obj10[DESCRIPTION3] = f140100;
           obj10[AuditLogChangeKeys.PERMISSIONS_GRANTED] = () => obj45(dependencyMap[18]).t["9i/DvE"];
           obj10[AuditLogChangeKeys.PERMISSIONS_DENIED] = () => obj45(dependencyMap[18]).t.pa1ZVh;
           const obj11 = { "#000000": obj45(1125).t.TK6E1H };
           const COLOR = AuditLogChangeKeys.COLOR;
-          obj10[COLOR] = f139238;
+          obj10[COLOR] = f140105;
           obj10[AuditLogChangeKeys.COLORS] = (newValue) => {
             let U44ttm;
             if (null == newValue.newValue.secondary_color) {
@@ -774,64 +774,64 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const HOIST = AuditLogChangeKeys.HOIST;
           const gWfe24 = obj45(1125).t.gWfe24;
           _tb8kN = obj45(1125).t["+tb8kN"];
-          obj10[HOIST] = f139236;
+          obj10[HOIST] = f140103;
           const MENTIONABLE = AuditLogChangeKeys.MENTIONABLE;
           const LL8VFF = obj45(1125).t.LL8VFF;
           const Z7xzmC = obj45(1125).t.Z7xzmC;
-          obj10[MENTIONABLE] = f139236;
+          obj10[MENTIONABLE] = f140103;
           obj10[AuditLogChangeKeys.ICON_HASH] = () => obj45(dependencyMap[18]).t["iEE79/"];
           obj10[AuditLogChangeKeys.UNICODE_EMOJI] = () => obj45(dependencyMap[18]).t.KiLMM0;
           const obj12 = {};
-          obj12[AuditLogChangeKeys.REASON] = f139224;
+          obj12[AuditLogChangeKeys.REASON] = f140091;
           const merged2 = Object.assign(obj12);
           return obj10;
         } else if (tmp.ONBOARDING_PROMPT === targetType) {
           const obj13 = {};
           const obj14 = {};
-          obj14[AuditLogChangeKeys.REASON] = f139224;
+          obj14[AuditLogChangeKeys.REASON] = f140091;
           const merged3 = Object.assign(obj14);
           const TITLE = AuditLogChangeKeys.TITLE;
           sNpuy_ = obj45(1125).t["sNpuy/"];
-          obj13[TITLE] = f139233;
+          obj13[TITLE] = f140100;
           const DESCRIPTION2 = AuditLogChangeKeys.DESCRIPTION;
           const PP1q0x = obj45(1125).t.PP1q0x;
           const z7pYLg = obj45(1125).t.z7pYLg;
-          obj13[DESCRIPTION2] = f139233;
+          obj13[DESCRIPTION2] = f140100;
           obj13[AuditLogChangeKeys.OPTIONS] = () => obj45(dependencyMap[18]).t["3G5C9+"];
           const SINGLE_SELECT = AuditLogChangeKeys.SINGLE_SELECT;
           const v4WnR3 = obj45(1125).t.v4WnR3;
-          obj13[SINGLE_SELECT] = f139236;
+          obj13[SINGLE_SELECT] = f140103;
           const REQUIRED = AuditLogChangeKeys.REQUIRED;
           const pwsXir = obj45(1125).t.pwsXir;
-          obj13[REQUIRED] = f139236;
+          obj13[REQUIRED] = f140103;
           return obj13;
         } else if (tmp.GUILD_ONBOARDING === targetType) {
           const obj15 = {};
           const obj16 = {};
-          obj16[AuditLogChangeKeys.REASON] = f139224;
+          obj16[AuditLogChangeKeys.REASON] = f140091;
           const merged4 = Object.assign(obj16);
           obj15[AuditLogChangeKeys.DEFAULT_CHANNEL_IDS] = () => obj45(dependencyMap[18]).t["8M+D2s"];
           const ENABLE_DEFAULT_CHANNELS = AuditLogChangeKeys.ENABLE_DEFAULT_CHANNELS;
           EYd_ls = obj45(1125).t["EYd/ls"];
-          obj15[ENABLE_DEFAULT_CHANNELS] = f139236;
+          obj15[ENABLE_DEFAULT_CHANNELS] = f140103;
           const ENABLE_ONBOARDING_PROMPTS = AuditLogChangeKeys.ENABLE_ONBOARDING_PROMPTS;
           const V3u8PV = obj45(1125).t.V3u8PV;
           r66lc_ = obj45(1125).t["r66lc/"];
-          obj15[ENABLE_ONBOARDING_PROMPTS] = f139236;
+          obj15[ENABLE_ONBOARDING_PROMPTS] = f140103;
           const ENABLED = AuditLogChangeKeys.ENABLED;
           const SODVIs = obj45(1125).t.SODVIs;
           const u8HY5U = obj45(1125).t.u8HY5U;
-          obj15[ENABLED] = f139236;
+          obj15[ENABLED] = f140103;
           const obj17 = {};
           const MODE = AuditLogChangeKeys.MODE;
           obj17[GuildOnboardingMode.ONBOARDING_ADVANCED] = obj45(1125).t.JbzVsh;
           obj17[GuildOnboardingMode.ONBOARDING_DEFAULT] = obj45(1125).t.aCgU0S;
-          obj15[MODE] = f139237;
+          obj15[MODE] = f140104;
           return obj15;
         } else if (tmp.HOME_SETTINGS === targetType) {
           const obj18 = {};
           const obj19 = {};
-          obj19[AuditLogChangeKeys.REASON] = f139224;
+          obj19[AuditLogChangeKeys.REASON] = f140091;
           const merged5 = Object.assign(obj19);
           obj18[AuditLogChangeKeys.WELCOME_MESSAGE] = () => obj45(dependencyMap[18]).t.dKQ1xd;
           obj18[AuditLogChangeKeys.NEW_MEMBER_ACTIONS] = () => obj45(dependencyMap[18]).t.jDUIno;
@@ -844,25 +844,25 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const MAX_USES = AuditLogChangeKeys.MAX_USES;
           const obj21 = { 0: null };
           obj21[0] = obj45(1125).t.Yx8LNm;
-          obj20[MAX_USES] = f139238;
+          obj20[MAX_USES] = f140105;
           const MAX_AGE = AuditLogChangeKeys.MAX_AGE;
           const obj22 = {};
           const intl = obj45(1125).intl;
           const stringResult = intl.string(obj45(1125).t.PqEzn8);
           obj22[stringResult] = obj45(1125).t.uWrLvw;
           Q_5kcO = obj45(1125).t["Q+5kcO"];
-          obj20[MAX_AGE] = f139238;
+          obj20[MAX_AGE] = f140105;
           const TEMPORARY = AuditLogChangeKeys.TEMPORARY;
           const MWp6H7 = obj45(1125).t.MWp6H7;
           const omiqTH = obj45(1125).t.omiqTH;
-          obj20[TEMPORARY] = f139236;
+          obj20[TEMPORARY] = f140103;
           const FLAGS = AuditLogChangeKeys.FLAGS;
           const obj23 = {};
-          obj23[obj45(8880).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1125).t.XYZMbL;
-          obj20[FLAGS] = f139237;
+          obj23[obj45(8914).GuildInviteFlags.IS_GUEST_INVITE] = obj45(1125).t.XYZMbL;
+          obj20[FLAGS] = f140104;
           obj20[AuditLogChangeKeys.ROLE_IDS] = () => obj45(dependencyMap[18]).t.gb1Owj;
           const obj24 = {};
-          obj24[AuditLogChangeKeys.REASON] = f139224;
+          obj24[AuditLogChangeKeys.REASON] = f140091;
           const merged6 = Object.assign(obj24);
           return obj20;
         } else if (tmp.WEBHOOK === targetType) {
@@ -870,11 +870,11 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const CHANNEL_ID2 = AuditLogChangeKeys.CHANNEL_ID;
           const jhPprR = obj45(1125).t.jhPprR;
           const ar4qYO = obj45(1125).t.ar4qYO;
-          obj25[CHANNEL_ID2] = f139233;
+          obj25[CHANNEL_ID2] = f140100;
           const NAME5 = AuditLogChangeKeys.NAME;
           const ZVGrzU = obj45(1125).t.ZVGrzU;
           const tywdZR = obj45(1125).t.tywdZR;
-          obj25[NAME5] = f139233;
+          obj25[NAME5] = f140100;
           obj25[AuditLogChangeKeys.AVATAR_HASH] = () => obj45(dependencyMap[18]).t.KB52Uj;
           obj25[AuditLogChangeKeys.REASON] = () => obj45(dependencyMap[18]).t["2IW3C5"];
           return obj25;
@@ -883,9 +883,9 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const NAME4 = AuditLogChangeKeys.NAME;
           const ahU1o5 = obj45(1125).t.ahU1o5;
           wxs_vZ = obj45(1125).t["wxs+vZ"];
-          obj26[NAME4] = f139233;
+          obj26[NAME4] = f140100;
           const obj27 = {};
-          obj27[AuditLogChangeKeys.REASON] = f139224;
+          obj27[AuditLogChangeKeys.REASON] = f140091;
           const merged7 = Object.assign(obj27);
           return obj26;
         } else if (tmp.STICKER === targetType) {
@@ -893,17 +893,17 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const NAME3 = AuditLogChangeKeys.NAME;
           const cdl0Yo = obj45(1125).t.cdl0Yo;
           const o3W2ly = obj45(1125).t.o3W2ly;
-          obj28[NAME3] = f139233;
+          obj28[NAME3] = f140100;
           const TAGS = AuditLogChangeKeys.TAGS;
           zwL_S2 = obj45(1125).t["zwL+S2"];
           VYfKA_ = obj45(1125).t["VYfKA+"];
-          obj28[TAGS] = f139233;
+          obj28[TAGS] = f140100;
           const DESCRIPTION = AuditLogChangeKeys.DESCRIPTION;
           XeYKWJ = obj45(1125).t.XeYKWJ;
           PSfeIj = obj45(1125).t.PSfeIj;
-          obj28[DESCRIPTION] = f139233;
+          obj28[DESCRIPTION] = f140100;
           const obj29 = {};
-          obj29[AuditLogChangeKeys.REASON] = f139224;
+          obj29[AuditLogChangeKeys.REASON] = f140091;
           const merged8 = Object.assign(obj29);
           return obj28;
         } else if (tmp.INTEGRATION === targetType) {
@@ -911,15 +911,15 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const ENABLE_EMOTICONS = AuditLogChangeKeys.ENABLE_EMOTICONS;
           const FI0m5x = obj45(1125).t.FI0m5x;
           const olpKC6 = obj45(1125).t.olpKC6;
-          obj30[ENABLE_EMOTICONS] = f139236;
+          obj30[ENABLE_EMOTICONS] = f140103;
           const obj31 = { 0: null, 1: null };
           const EXPIRE_BEHAVIOR = AuditLogChangeKeys.EXPIRE_BEHAVIOR;
           obj31[0] = obj45(1125).t["1Bb1+u"];
           obj31[1] = obj45(1125).t.vjlW6m;
-          obj30[EXPIRE_BEHAVIOR] = f139237;
+          obj30[EXPIRE_BEHAVIOR] = f140104;
           obj30[AuditLogChangeKeys.EXPIRE_GRACE_PERIOD] = () => obj45(dependencyMap[18]).t.iovXMa;
           const obj32 = {};
-          obj32[AuditLogChangeKeys.REASON] = f139224;
+          obj32[AuditLogChangeKeys.REASON] = f140091;
           const merged9 = Object.assign(obj32);
           return obj30;
         } else if (tmp.STAGE_INSTANCE === targetType) {
@@ -927,14 +927,14 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const TOPIC = AuditLogChangeKeys.TOPIC;
           m_veAn = obj45(1125).t["m+veAn"];
           let esQcxn = obj45(1125).t.esQcxn;
-          obj33[TOPIC] = f139233;
+          obj33[TOPIC] = f140100;
           const obj34 = {};
           const PRIVACY_LEVEL2 = AuditLogChangeKeys.PRIVACY_LEVEL;
           obj34[constants12.GUILD_ONLY] = obj45(1125).t["EC+CDt"];
           obj34[constants12.PUBLIC] = obj45(1125).t["pK/WG0"];
-          obj33[PRIVACY_LEVEL2] = f139237;
+          obj33[PRIVACY_LEVEL2] = f140104;
           const obj35 = {};
-          obj35[AuditLogChangeKeys.REASON] = f139224;
+          obj35[AuditLogChangeKeys.REASON] = f140091;
           const merged10 = Object.assign(obj35);
           return obj33;
         } else if (tmp.GUILD_SCHEDULED_EVENT === targetType) {
@@ -945,35 +945,35 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const PRIVACY_LEVEL = AuditLogChangeKeys.PRIVACY_LEVEL;
           obj37[constants12.GUILD_ONLY] = obj45(1125).t["EC+CDt"];
           obj37[constants12.PUBLIC] = obj45(1125).t["pK/WG0"];
-          obj36[PRIVACY_LEVEL] = f139237;
+          obj36[PRIVACY_LEVEL] = f140104;
           const obj38 = {};
           const STATUS = AuditLogChangeKeys.STATUS;
           obj38[constants11.SCHEDULED] = obj45(1125).t.hXKDgq;
           obj38[constants11.ACTIVE] = obj45(1125).t.lRX1nz;
           obj38[constants11.COMPLETED] = obj45(1125).t["/eFIhq"];
           obj38[constants11.CANCELED] = obj45(1125).t.NWIYhj;
-          obj36[STATUS] = f139237;
+          obj36[STATUS] = f140104;
           const obj39 = {};
           const ENTITY_TYPE = AuditLogChangeKeys.ENTITY_TYPE;
           obj39[constants10.NONE] = obj45(1125).t["6sO3Ss"];
           obj39[constants10.STAGE_INSTANCE] = obj45(1125).t["Wo+s1y"];
           obj39[constants10.VOICE] = obj45(1125).t.XCVaIL;
           obj39[constants10.EXTERNAL] = obj45(1125).t.IvhAj2;
-          obj36[ENTITY_TYPE] = f139237;
+          obj36[ENTITY_TYPE] = f140104;
           const CHANNEL_ID = AuditLogChangeKeys.CHANNEL_ID;
           const yJBIcX = obj45(1125).t.yJBIcX;
           _PqSsi = obj45(1125).t["+PqSsi"];
-          obj36[CHANNEL_ID] = f139234;
+          obj36[CHANNEL_ID] = f140101;
           const LOCATION = AuditLogChangeKeys.LOCATION;
           const GaMBHy = obj45(1125).t.GaMBHy;
           const PsICk0 = obj45(1125).t.PsICk0;
-          obj36[LOCATION] = f139234;
+          obj36[LOCATION] = f140101;
           const IMAGE_HASH = AuditLogChangeKeys.IMAGE_HASH;
           const S3vcRK = obj45(1125).t.S3vcRK;
           const KQu47I = obj45(1125).t.KQu47I;
-          obj36[IMAGE_HASH] = f139234;
+          obj36[IMAGE_HASH] = f140101;
           const obj40 = {};
-          obj40[AuditLogChangeKeys.REASON] = f139224;
+          obj40[AuditLogChangeKeys.REASON] = f140091;
           const merged11 = Object.assign(obj40);
           return obj36;
         } else if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION === targetType) {
@@ -981,11 +981,11 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const SCHEDULED_START_TIME = AuditLogChangeKeys.SCHEDULED_START_TIME;
           const zMIYVg = obj45(1125).t.zMIYVg;
           const fzF8Gd = obj45(1125).t.fzF8Gd;
-          obj41[SCHEDULED_START_TIME] = f139234;
+          obj41[SCHEDULED_START_TIME] = f140101;
           const SCHEDULED_END_TIME = AuditLogChangeKeys.SCHEDULED_END_TIME;
           const vONSQA = obj45(1125).t.vONSQA;
           const IlIti3 = obj45(1125).t.IlIti3;
-          obj41[SCHEDULED_END_TIME] = f139234;
+          obj41[SCHEDULED_END_TIME] = f140101;
           obj41[AuditLogChangeKeys.IS_CANCELED] = (oldValue) => {
             if (null != oldValue.oldValue) {
               if (!oldValue.oldValue) {
@@ -1001,7 +1001,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             }
           };
           const obj42 = {};
-          obj42[AuditLogChangeKeys.REASON] = f139224;
+          obj42[AuditLogChangeKeys.REASON] = f140091;
           const merged12 = Object.assign(obj42);
           return obj41;
         } else if (tmp.THREAD === targetType) {
@@ -1009,37 +1009,37 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const NAME2 = AuditLogChangeKeys.NAME;
           const tUKRzX = obj45(1125).t.tUKRzX;
           const kPCHON = obj45(1125).t.kPCHON;
-          obj43[NAME2] = f139233;
+          obj43[NAME2] = f140100;
           const ARCHIVED = AuditLogChangeKeys.ARCHIVED;
           const jDi9FK = obj45(1125).t.jDi9FK;
           const F6dvbT = obj45(1125).t.F6dvbT;
-          obj43[ARCHIVED] = f139236;
+          obj43[ARCHIVED] = f140103;
           const LOCKED = AuditLogChangeKeys.LOCKED;
           const JSy1QW = obj45(1125).t.JSy1QW;
           const C7Jgo8 = obj45(1125).t.C7Jgo8;
-          obj43[LOCKED] = f139236;
+          obj43[LOCKED] = f140103;
           const INVITABLE = AuditLogChangeKeys.INVITABLE;
           const dxNUs9 = obj45(1125).t.dxNUs9;
           const biJvYG = obj45(1125).t.biJvYG;
-          obj43[INVITABLE] = f139236;
+          obj43[INVITABLE] = f140103;
           const AUTO_ARCHIVE_DURATION = AuditLogChangeKeys.AUTO_ARCHIVE_DURATION;
           const LuaG3y = obj45(1125).t.LuaG3y;
-          obj43[AUTO_ARCHIVE_DURATION] = f139233;
+          obj43[AUTO_ARCHIVE_DURATION] = f140100;
           const RATE_LIMIT_PER_USER = AuditLogChangeKeys.RATE_LIMIT_PER_USER;
           let j4CCJR = obj45(1125).t.j4CCJR;
-          obj43[RATE_LIMIT_PER_USER] = f139233;
+          obj43[RATE_LIMIT_PER_USER] = f140100;
           obj43[AuditLogChangeKeys.FLAGS] = () => obj45(dependencyMap[18]).t.sSAQtj;
           obj43[AuditLogChangeKeys.AVAILABLE_TAG_ADD] = () => obj45(dependencyMap[18]).t.H86QQU;
           obj43[AuditLogChangeKeys.AVAILABLE_TAG_DELETE] = () => obj45(dependencyMap[18]).t["8QOseg"];
           const obj44 = {};
-          obj44[AuditLogChangeKeys.REASON] = f139224;
+          obj44[AuditLogChangeKeys.REASON] = f140091;
           const merged13 = Object.assign(obj44);
           return obj43;
         } else if (tmp.APPLICATION_COMMAND === targetType) {
           const changes = targetType.changes;
           obj45 = {};
           const obj46 = {};
-          obj46[AuditLogChangeKeys.REASON] = f139224;
+          obj46[AuditLogChangeKeys.REASON] = f140091;
           const merged14 = Object.assign(obj46);
           if (changes != null) {
             const item = changes.forEach((newValue) => {
@@ -1084,7 +1084,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj47[AuditLogChangeKeys.AUTO_MODERATION_ADD_ALLOW_LIST] = () => obj45(dependencyMap[18]).t["FvvR+K"];
           obj47[AuditLogChangeKeys.AUTO_MODERATION_REMOVE_ALLOW_LIST] = () => obj45(dependencyMap[18]).t.p5nSvy;
           const obj48 = {};
-          obj48[AuditLogChangeKeys.REASON] = f139224;
+          obj48[AuditLogChangeKeys.REASON] = f140091;
           const merged15 = Object.assign(obj48);
           return obj47;
         } else if (tmp.GUILD_SOUNDBOARD === targetType) {
@@ -1092,28 +1092,28 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           const NAME = AuditLogChangeKeys.NAME;
           const VOtRSO = obj45(1125).t.VOtRSO;
           const OK7B8E = obj45(1125).t.OK7B8E;
-          obj49[NAME] = f139233;
+          obj49[NAME] = f140100;
           const VOLUME = AuditLogChangeKeys.VOLUME;
           const igrDB9 = obj45(1125).t.igrDB9;
           const L5lDFJ = obj45(1125).t.L5lDFJ;
-          obj49[VOLUME] = f139233;
+          obj49[VOLUME] = f140100;
           const EMOJI_NAME = AuditLogChangeKeys.EMOJI_NAME;
           const IIanaY = obj45(1125).t.IIanaY;
           z4w4U_ = obj45(1125).t["z4w4U/"];
           const V8TfyU = obj45(1125).t.V8TfyU;
-          obj49[EMOJI_NAME] = f139235;
+          obj49[EMOJI_NAME] = f140102;
           const EMOJI_ID = AuditLogChangeKeys.EMOJI_ID;
           const ainxMB = obj45(1125).t.ainxMB;
-          obj49[EMOJI_ID] = f139235;
+          obj49[EMOJI_ID] = f140102;
           const obj50 = {};
-          obj50[AuditLogChangeKeys.REASON] = f139224;
+          obj50[AuditLogChangeKeys.REASON] = f140091;
           const merged16 = Object.assign(obj50);
           return obj49;
         } else if (tmp.VOICE_CHANNEL_STATUS === targetType) {
           const obj51 = {};
           obj51[AuditLogChangeKeys.STATUS] = () => obj45(dependencyMap[18]).t.HyCSnI;
           const obj52 = {};
-          obj52[AuditLogChangeKeys.REASON] = f139224;
+          obj52[AuditLogChangeKeys.REASON] = f140091;
           const merged17 = Object.assign(obj52);
           return obj51;
         } else if (tmp.GUILD_MEMBER_VERIFICATION === targetType) {
@@ -1137,7 +1137,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
             return WxyOtj;
           };
           const obj54 = {};
-          obj54[AuditLogChangeKeys.REASON] = f139224;
+          obj54[AuditLogChangeKeys.REASON] = f140091;
           const merged18 = Object.assign(obj54);
           return obj53;
         } else if (tmp.GUILD_PROFILE === targetType) {
@@ -1150,11 +1150,11 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           obj55[AuditLogChangeKeys.VISIBILITY] = () => obj45(dependencyMap[18]).t.bCl1Ep;
           const SERVER_TAG = AuditLogChangeKeys.SERVER_TAG;
           const ix1dnX = obj45(1125).t.ix1dnX;
-          obj55[SERVER_TAG] = f139234;
+          obj55[SERVER_TAG] = f140101;
           return obj55;
         } else {
           obj = {};
-          obj[AuditLogChangeKeys.REASON] = f139224;
+          obj[AuditLogChangeKeys.REASON] = f140091;
           return obj;
         }
       }
@@ -1163,35 +1163,35 @@ export const getChangeStrings = function getChangeStrings(targetType) {
     const NAME7 = AuditLogChangeKeys.NAME;
     const f8Rh0U = obj45(1125).t.f8Rh0U;
     const ebD4Qp = obj45(1125).t.ebD4Qp;
-    obj56[NAME7] = f139233;
+    obj56[NAME7] = f140100;
     const POSITION = AuditLogChangeKeys.POSITION;
     const isS8te = obj45(1125).t.isS8te;
     const t5uBis = obj45(1125).t.t5uBis;
-    obj56[POSITION] = f139233;
+    obj56[POSITION] = f140100;
     const TOPIC2 = AuditLogChangeKeys.TOPIC;
     esQcxn = obj45(1125).t.esQcxn;
     m_veAn = obj45(1125).t["m+veAn"];
     ws_1FA = obj45(1125).t["ws/1FA"];
-    obj56[TOPIC2] = f139235;
+    obj56[TOPIC2] = f140102;
     const BITRATE = AuditLogChangeKeys.BITRATE;
     const fw81ak = obj45(1125).t.fw81ak;
     const MFNlgZ = obj45(1125).t.MFNlgZ;
-    obj56[BITRATE] = f139233;
+    obj56[BITRATE] = f140100;
     const RTC_REGION_OVERRIDE = AuditLogChangeKeys.RTC_REGION_OVERRIDE;
     const v6kajxx = obj45(1125).t["6kajxx"];
     const eGOlmU = obj45(1125).t.eGOlmU;
-    obj56[RTC_REGION_OVERRIDE] = f139235;
+    obj56[RTC_REGION_OVERRIDE] = f140102;
     const USER_LIMIT = AuditLogChangeKeys.USER_LIMIT;
     const wk5t7p = obj45(1125).t.wk5t7p;
     const XgjCEh = obj45(1125).t.XgjCEh;
-    obj56[USER_LIMIT] = f139233;
+    obj56[USER_LIMIT] = f140100;
     const RATE_LIMIT_PER_USER2 = AuditLogChangeKeys.RATE_LIMIT_PER_USER;
     j4CCJR = obj45(1125).t.j4CCJR;
-    obj56[RATE_LIMIT_PER_USER2] = f139233;
+    obj56[RATE_LIMIT_PER_USER2] = f140100;
     const APPLICATION_ID = AuditLogChangeKeys.APPLICATION_ID;
     const fnhin8 = obj45(1125).t.fnhin8;
     const mcNs5B = obj45(1125).t.mcNs5B;
-    obj56[APPLICATION_ID] = f139233;
+    obj56[APPLICATION_ID] = f140100;
     obj56[AuditLogChangeKeys.PERMISSIONS_RESET] = () => obj45(dependencyMap[18]).t["+vSBFY"];
     obj56[AuditLogChangeKeys.PERMISSIONS_GRANTED] = () => obj45(dependencyMap[18]).t.EKLJv8;
     obj56[AuditLogChangeKeys.PERMISSIONS_DENIED] = () => obj45(dependencyMap[18]).t.U3rO5X;
@@ -1199,31 +1199,31 @@ export const getChangeStrings = function getChangeStrings(targetType) {
     const NSFW = AuditLogChangeKeys.NSFW;
     const H8Ri2Y = obj45(1125).t.H8Ri2Y;
     const WW6cJw = obj45(1125).t.WW6cJw;
-    obj56[NSFW] = f139236;
+    obj56[NSFW] = f140103;
     const TYPE = AuditLogChangeKeys.TYPE;
     const Vn5zn2 = obj45(1125).t.Vn5zn2;
     const aq4uWI = obj45(1125).t.aq4uWI;
-    obj56[TYPE] = f139233;
+    obj56[TYPE] = f140100;
     const VIDEO_QUALITY_MODE = AuditLogChangeKeys.VIDEO_QUALITY_MODE;
     const e68fAU = obj45(1125).t.e68fAU;
     const djbES0 = obj45(1125).t.djbES0;
-    obj56[VIDEO_QUALITY_MODE] = f139233;
+    obj56[VIDEO_QUALITY_MODE] = f140100;
     const DEFAULT_AUTO_ARCHIVE_DURATION = AuditLogChangeKeys.DEFAULT_AUTO_ARCHIVE_DURATION;
     const nYz2mg = obj45(1125).t.nYz2mg;
     const oczvRI = obj45(1125).t.oczvRI;
-    obj56[DEFAULT_AUTO_ARCHIVE_DURATION] = f139233;
+    obj56[DEFAULT_AUTO_ARCHIVE_DURATION] = f140100;
     const DEFAULT_THREAD_RATE_LIMIT_PER_USER = AuditLogChangeKeys.DEFAULT_THREAD_RATE_LIMIT_PER_USER;
     const tOJ8h7 = obj45(1125).t.tOJ8h7;
     const WaSgzk = obj45(1125).t.WaSgzk;
     lj_A4u = obj45(1125).t["lj+A4u"];
-    obj56[DEFAULT_THREAD_RATE_LIMIT_PER_USER] = f139235;
+    obj56[DEFAULT_THREAD_RATE_LIMIT_PER_USER] = f140102;
     obj56[AuditLogChangeKeys.FLAGS] = () => obj45(dependencyMap[18]).t.ImCQko;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_ADD] = () => obj45(dependencyMap[18]).t.H86QQU;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_EDIT] = () => obj45(dependencyMap[18]).t.YtUzls;
     obj56[AuditLogChangeKeys.AVAILABLE_TAG_DELETE] = () => obj45(dependencyMap[18]).t["8QOseg"];
     const LINKED_LOBBY = AuditLogChangeKeys.LINKED_LOBBY;
     __3TkD = obj45(1125).t["+/3TkD"];
-    obj56[LINKED_LOBBY] = f139234;
+    obj56[LINKED_LOBBY] = f140101;
     return obj56;
   }
 };
@@ -1345,7 +1345,7 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
           if (timeAndUnit.unit in obj) {
             let time;
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === tmp23(5723).TimeUnits.SECONDS) {
+            if (unit2 === tmp23(5758).TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1995,7 +1995,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
     let stageInstancesByGuild;
     let stickerById;
     let tmp264;
-    const f139232 = (key) => key.key === c0;
+    const f140099 = (key) => key.key === c0;
     let result3 = targetType;
     const tmp = result3;
     let id = targetType;
@@ -2034,7 +2034,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   tmp201 = tmp197;
                   if (null != targetType.changes) {
                     const changes = targetType.changes;
-                    let found = changes.find(f139232);
+                    let found = changes.find(f140099);
                     tmp201 = tmp197;
                     if (null != found) {
                       tmp201 = found.newValue || found.oldValue;
@@ -2068,7 +2068,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   tmp188 = tmp184;
                   if (null != targetType.changes) {
                     const changes1 = targetType.changes;
-                    let found1 = changes1.find(f139232);
+                    let found1 = changes1.find(f140099);
                     tmp188 = tmp184;
                     if (null != found1) {
                       let tmp190 = found1.newValue || found1.oldValue;
@@ -2102,7 +2102,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                   stringResult = tmp169;
                   if (null != targetType.changes) {
                     const changes2 = targetType.changes;
-                    let found2 = changes2.find(f139232);
+                    let found2 = changes2.find(f140099);
                     stringResult = tmp169;
                     if (null != found2) {
                       stringResult = found2.newValue || found2.oldValue;
@@ -2148,7 +2148,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp161 = tmp157;
                         if (null != targetType.changes) {
                           const changes3 = targetType.changes;
-                          let found3 = changes3.find(f139232);
+                          let found3 = changes3.find(f140099);
                           tmp161 = tmp157;
                           if (null != found3) {
                             const tmp163 = found3.newValue || found3.oldValue;
@@ -2186,7 +2186,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp148 = tmp144;
                         if (null != targetType.changes) {
                           const changes4 = targetType.changes;
-                          let found4 = changes4.find(f139232);
+                          let found4 = changes4.find(f140099);
                           tmp148 = tmp144;
                           if (null != found4) {
                             tmp148 = found4.newValue || found4.oldValue;
@@ -2224,7 +2224,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp136 = tmp132;
                         if (null != targetType.changes) {
                           const changes5 = targetType.changes;
-                          let found5 = changes5.find(f139232);
+                          let found5 = changes5.find(f140099);
                           tmp136 = tmp132;
                           if (null != found5) {
                             tmp136 = found5.newValue || found5.oldValue;
@@ -2261,7 +2261,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp124 = tmp120;
                         if (null != targetType.changes) {
                           const changes6 = targetType.changes;
-                          let found6 = changes6.find(f139232);
+                          let found6 = changes6.find(f140099);
                           tmp124 = tmp120;
                           if (null != found6) {
                             tmp124 = found6.newValue || found6.oldValue;
@@ -2295,7 +2295,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp112 = tmp108;
                         if (null != targetType.changes) {
                           const changes7 = targetType.changes;
-                          let found7 = changes7.find(f139232);
+                          let found7 = changes7.find(f140099);
                           tmp112 = tmp108;
                           if (null != found7) {
                             tmp112 = found7.newValue || found7.oldValue;
@@ -2337,7 +2337,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp100 = tmp96;
                         if (null != targetType.changes) {
                           const changes8 = targetType.changes;
-                          const found8 = changes8.find(f139232);
+                          const found8 = changes8.find(f140099);
                           tmp100 = tmp96;
                           if (null != found8) {
                             tmp100 = found8.newValue || found8.oldValue;
@@ -2378,7 +2378,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp76 = tmp72;
                               if (null != targetType.changes) {
                                 const changes9 = targetType.changes;
-                                const found9 = changes9.find(f139232);
+                                const found9 = changes9.find(f140099);
                                 tmp76 = tmp72;
                                 if (null != found9) {
                                   tmp76 = found9.newValue || found9.oldValue;
@@ -2442,7 +2442,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 tmp61 = tmp57;
                                 if (null != targetType.changes) {
                                   const changes10 = targetType.changes;
-                                  const found11 = changes10.find(f139232);
+                                  const found11 = changes10.find(f140099);
                                   tmp61 = tmp57;
                                   if (null != found11) {
                                     tmp61 = found11.newValue || found11.oldValue;
@@ -2481,7 +2481,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp52 = tmp48;
                               if (null != targetType.changes) {
                                 const changes11 = targetType.changes;
-                                const found12 = changes11.find(f139232);
+                                const found12 = changes11.find(f140099);
                                 tmp52 = tmp48;
                                 if (null != found12) {
                                   tmp52 = found12.newValue || found12.oldValue;
@@ -2516,7 +2516,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp40 = tmp36;
                               if (null != targetType.changes) {
                                 const changes12 = targetType.changes;
-                                const found13 = changes12.find(f139232);
+                                const found13 = changes12.find(f140099);
                                 tmp40 = tmp36;
                                 if (null != found13) {
                                   tmp40 = found13.newValue || found13.oldValue;
@@ -2559,7 +2559,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp27 = tmp23;
                               if (null != targetType.changes) {
                                 const changes13 = targetType.changes;
-                                const found14 = changes13.find(f139232);
+                                const found14 = changes13.find(f140099);
                                 tmp27 = tmp23;
                                 if (null != found14) {
                                   tmp27 = found14.newValue || found14.oldValue;
@@ -2600,7 +2600,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               tmp15 = tmp11;
                               if (null != targetType.changes) {
                                 const changes14 = targetType.changes;
-                                const found15 = changes14.find(f139232);
+                                const found15 = changes14.find(f140099);
                                 tmp15 = tmp11;
                                 if (null != found15) {
                                   let tmp17 = found15.newValue || found15.oldValue;
@@ -2645,7 +2645,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                         tmp88 = tmp84;
                         if (null != targetType.changes) {
                           const changes15 = targetType.changes;
-                          const found16 = changes15.find(f139232);
+                          const found16 = changes15.find(f140099);
                           tmp88 = tmp84;
                           if (null != found16) {
                             tmp88 = found16.newValue || found16.oldValue;
@@ -2688,7 +2688,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
             tmp213 = tmp209;
             if (null != targetType.changes) {
               const changes16 = targetType.changes;
-              const found17 = changes16.find(f139232);
+              const found17 = changes16.find(f140099);
               tmp213 = tmp209;
               if (null != found17) {
                 tmp213 = found17.newValue || found17.oldValue;
@@ -2762,7 +2762,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
             tmp237 = tmp233;
             if (null != result1.changes) {
               const changes17 = result1.changes;
-              const found18 = changes17.find(f139232);
+              const found18 = changes17.find(f140099);
               tmp237 = tmp233;
               if (null != found18) {
                 let tmp239 = found18.newValue || found18.oldValue;
@@ -2906,21 +2906,21 @@ export const transformLogs = function transformLogs(arr, arg1) {
             }
             return { added, removed };
           }
-          const f164011 = (value) => value.value === oldValue;
-          const f164013 = (type) => type.type;
-          const f164014 = (item) => "'" + item + "'";
-          const f164015 = (item) => "'" + item + "'";
-          const f164016 = (item) => null != item;
-          const f164017 = (item) => {
+          const f164964 = (value) => value.value === oldValue;
+          const f164966 = (type) => type.type;
+          const f164967 = (item) => "'" + item + "'";
+          const f164968 = (item) => "'" + item + "'";
+          const f164969 = (item) => null != item;
+          const f164970 = (item) => {
             obj = result3(closure_1_3[24]);
             return obj.computeChannelName(item, user, closure_1_12, true);
           };
-          const f164018 = (item) => role.getRole(user.id, item);
-          const f164019 = (item) => null != item;
-          const f164020 = (name) => name.name;
-          const f164021 = (item) => role.getRole(user.id, item);
-          const f164022 = (item) => null != item;
-          const f164023 = (id) => ({ id: id.id, name: id.name });
+          const f164971 = (item) => role.getRole(user.id, item);
+          const f164972 = (item) => null != item;
+          const f164973 = (name) => name.name;
+          const f164974 = (item) => role.getRole(user.id, item);
+          const f164975 = (item) => null != item;
+          const f164976 = (id) => ({ id: id.id, name: id.name });
           if (result3.action === AuditLogActions.APPLICATION_COMMAND_PERMISSION_UPDATE) {
             const type = tmp243.type;
             if (constants2.ROLE === type) {
@@ -3165,7 +3165,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 newValue = newValue.newValue;
                                 const obj10 = intl71;
                                 const availableLocales = obj10.getAvailableLocales();
-                                const found = availableLocales.find(f164011);
+                                const found = availableLocales.find(f164964);
                                 let name1 = null;
                                 if (null != found) {
                                   name1 = found.name;
@@ -3176,7 +3176,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 oldValue = newValue.oldValue;
                                 const obj11 = intl71;
                                 const availableLocales1 = obj11.getAvailableLocales();
-                                const found1 = availableLocales1.find(f164011);
+                                const found1 = availableLocales1.find(f164964);
                                 let name2 = null;
                                 if (null != found1) {
                                   name2 = found1.name;
@@ -3249,7 +3249,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 ({ newValue: newValue10, oldValue: oldValue10 } = newValue);
                                 if (null != newValue.newValue) {
                                   const newValue1 = newValue.newValue;
-                                  const mapped = newValue1.map(f164013);
+                                  const mapped = newValue1.map(f164966);
                                   let joined = mapped;
                                   if (null != mapped) {
                                     const mapped1 = mapped.map(AutomodRuleUtils.actionTypeToName);
@@ -3259,7 +3259,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                 }
                                 if (null != newValue.oldValue) {
                                   const oldValue1 = newValue.oldValue;
-                                  const mapped2 = oldValue1.map(f164013);
+                                  const mapped2 = oldValue1.map(f164966);
                                   let joined1 = mapped2;
                                   if (null != mapped2) {
                                     const mapped3 = mapped2.map(AutomodRuleUtils.actionTypeToName);
@@ -3344,7 +3344,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                           let obj2 = { newValue: mapped4.join(", ") };
                                           const keyword_filter = newValue22.keyword_filter;
                                           const y91UXV = intl71.t.y91UXV;
-                                          mapped4 = keyword_filter.map(f164014);
+                                          mapped4 = keyword_filter.map(f164967);
                                           result = formatToMarkdownString(y91UXV, obj2);
                                         }
                                         tmp81 = result;
@@ -3370,7 +3370,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                           let obj3 = { newValue: mapped5.join(", ") };
                                           const keyword_filter1 = oldValue22.keyword_filter;
                                           const y91UXV2 = intl71.t.y91UXV;
-                                          mapped5 = keyword_filter1.map(f164014);
+                                          mapped5 = keyword_filter1.map(f164967);
                                           result1 = formatToMarkdownString2(y91UXV2, obj3);
                                         }
                                         tmp87 = result1;
@@ -3407,8 +3407,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               if (null != newValue.newValue) {
                                                 const newValue23 = newValue.newValue;
                                                 const mapped6 = newValue23.map(ChannelStore.getChannel);
-                                                const found2 = mapped6.filter(f164016);
-                                                const mapped7 = found2.map(f164017);
+                                                const found2 = mapped6.filter(f164969);
+                                                const mapped7 = found2.map(f164970);
                                                 let tmp53 = mapped7;
                                                 if (null != mapped7) {
                                                   if (null != mapped7) {
@@ -3426,8 +3426,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               if (null != newValue.oldValue) {
                                                 const oldValue23 = newValue.oldValue;
                                                 const mapped8 = oldValue23.map(ChannelStore.getChannel);
-                                                const found3 = mapped8.filter(f164016);
-                                                const mapped9 = found3.map(f164017);
+                                                const found3 = mapped8.filter(f164969);
+                                                const mapped9 = found3.map(f164970);
                                                 let tmp57 = mapped9;
                                                 if (null != mapped9) {
                                                   if (null != mapped9) {
@@ -3460,9 +3460,9 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               ({ newValue: newValue4, oldValue: oldValue4 } = newValue);
                                               if (null != newValue.newValue) {
                                                 const newValue24 = newValue.newValue;
-                                                const mapped10 = newValue24.map(f164018);
-                                                const found4 = mapped10.filter(f164019);
-                                                const mapped11 = found4.map(f164020);
+                                                const mapped10 = newValue24.map(f164971);
+                                                const found4 = mapped10.filter(f164972);
+                                                const mapped11 = found4.map(f164973);
                                                 let tmp39 = mapped11;
                                                 if (null != mapped11) {
                                                   if (null != mapped11) {
@@ -3480,9 +3480,9 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               }
                                               if (null != newValue.oldValue) {
                                                 const oldValue24 = newValue.oldValue;
-                                                const mapped12 = oldValue24.map(f164018);
-                                                const found5 = mapped12.filter(f164019);
-                                                const mapped13 = found5.map(f164020);
+                                                const mapped12 = oldValue24.map(f164971);
+                                                const found5 = mapped12.filter(f164972);
+                                                const mapped13 = found5.map(f164973);
                                                 let tmp43 = mapped13;
                                                 if (null != mapped13) {
                                                   if (null != mapped13) {
@@ -3516,15 +3516,15 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               ({ newValue: newValue3, oldValue: oldValue3 } = newValue);
                                               if (null != newValue.newValue) {
                                                 const newValue25 = newValue.newValue;
-                                                const mapped14 = newValue25.map(f164021);
-                                                const found6 = mapped14.filter(f164022);
-                                                newValue3 = found6.map(f164023);
+                                                const mapped14 = newValue25.map(f164974);
+                                                const found6 = mapped14.filter(f164975);
+                                                newValue3 = found6.map(f164976);
                                               }
                                               if (null != newValue.oldValue) {
                                                 const oldValue25 = newValue.oldValue;
-                                                const mapped15 = oldValue25.map(f164021);
-                                                const found7 = mapped15.filter(f164022);
-                                                oldValue3 = found7.map(f164023);
+                                                const mapped15 = oldValue25.map(f164974);
+                                                const found7 = mapped15.filter(f164975);
+                                                oldValue3 = found7.map(f164976);
                                               }
                                               const tmp30 = AuditLogChange;
                                               if (!oldValue3) {
@@ -3601,7 +3601,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     let joined6;
                                     const _Array = Array;
                                     if (Array.isArray(newValue26)) {
-                                      const mapped16 = newValue26.map(f164015);
+                                      const mapped16 = newValue26.map(f164968);
                                       joined6 = mapped16.join(", ");
                                     }
                                     newValue6 = joined6;
@@ -3615,7 +3615,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     let joined7;
                                     const _Array2 = Array;
                                     if (Array.isArray(oldValue26)) {
-                                      const mapped17 = oldValue26.map(f164015);
+                                      const mapped17 = oldValue26.map(f164968);
                                       joined7 = mapped17.join(", ");
                                     }
                                     oldValue6 = joined7;

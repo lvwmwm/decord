@@ -1,11 +1,11 @@
-// Module ID: 10629
-// Function ID: 10630
+// Module ID: 10661
+// Function ID: 10662
 // Name: useScaledSectionHeight
-// Dependencies: [10626, 558, 5254, 2]
+// Dependencies: [10658, 558, 5289, 2]
 
-// Module 10629 (useScaledSectionHeight)
-import useFontScale from "useFontScale" /* 5254 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10626 */;
+// Module 10661 (useScaledSectionHeight)
+import useFontScale from "useFontScale" /* 5289 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10658 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

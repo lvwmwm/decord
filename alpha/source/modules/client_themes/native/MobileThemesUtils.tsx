@@ -1,22 +1,22 @@
-// Module ID: 5203
-// Function ID: 5204
+// Module ID: 5238
+// Function ID: 5239
 // Name: MobileThemesUtils
-// Dependencies: [1204, 4996, 5204, 1250, 1252, 4997, 1253, 4999, 5000, 1125, 2769, 558, 576, 5205, 504, 2]
+// Dependencies: [1204, 5028, 5239, 1250, 1252, 5029, 1253, 5031, 5032, 1125, 2769, 558, 576, 5240, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, isHexagonCampaignMobileTheme, isNitroGatedMobileTheme
 
-// Module 5203 (MobileThemesUtils)
+// Module 5238 (MobileThemesUtils)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
 import _modDef2769 from "module_2769" /* 2769 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5000 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5205 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5032 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5240 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5204 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5028 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 5239 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroImportDefault;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const HexagonCampaignUtils = tmp(4999);
+const HexagonCampaignUtils = tmp(5031);
 function getCustomThemesName() {
   const intl = intl2.intl;
   return intl.string(_modDef2769.yl1iMm);

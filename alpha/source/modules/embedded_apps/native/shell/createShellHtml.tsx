@@ -1,13 +1,13 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11539
+// Function ID: 11540
 // Name: createShellHtml
-// Dependencies: [10763, 11502, 11472, 2]
+// Dependencies: [10797, 11540, 11510, 2]
 // Exports: createShellHtml
 
-// Module 11501 (createShellHtml)
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10763 */;
-import bridgeProtocol from "bridgeProtocol" /* 11472 */;
-import _modDef11502 from "module_11502" /* 11502 */;
+// Module 11539 (createShellHtml)
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10797 */;
+import bridgeProtocol from "bridgeProtocol" /* 11510 */;
+import _modDef11540 from "module_11540" /* 11540 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = EmbeddedAppConstants.EMBEDDED_APP_FRAME_ELEMENT_ID;
@@ -31,7 +31,7 @@ export const createShellHtml = function createShellHtml(shimVersion) {
   }
   if (null != shellBridgeSecret) {
     const _JSON = JSON;
-    const tmp5 = _modDef11502;
+    const tmp5 = _modDef11540;
     const SHELL_BRIDGE_GLOBAL = bridgeProtocol.SHELL_BRIDGE_GLOBAL;
     const _JSON2 = JSON;
     const json = JSON.stringify(shellBridgeSecret);

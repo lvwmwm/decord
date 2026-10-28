@@ -1,21 +1,21 @@
-// Module ID: 9422
-// Function ID: 9423
+// Module ID: 9454
+// Function ID: 9455
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1391, 21, 4972, 587, 558, 576, 1125, 5235, 9423, 8566, 9424, 2]
+// Dependencies: [19, 17, 1391, 21, 5004, 587, 558, 576, 1125, 5270, 9455, 8603, 9456, 2]
 
-// Module 9422 (CollectiblesBadges)
+// Module 9454 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import LockIcon3 from "LockIcon" /* 8566 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9423 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9424 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import LockIcon3 from "LockIcon" /* 8603 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9455 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9456 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,10 +139,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const LockIcon2 = tmp(8566).LockIcon;
+    const LockIcon2 = tmp(8603).LockIcon;
     items1 = [hasOwnProperty(LockIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
@@ -150,7 +150,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     const obj5 = { style: items2, children: hasOwnProperty(LockIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    LockIcon = tmp(8566).LockIcon;
+    LockIcon = tmp(8603).LockIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -228,10 +228,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const NitroWheelIcon2 = tmp(9424).NitroWheelIcon;
+    const NitroWheelIcon2 = tmp(9456).NitroWheelIcon;
     items1 = [hasOwnProperty(NitroWheelIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
@@ -239,7 +239,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     const obj5 = { style: items2, children: hasOwnProperty(NitroWheelIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    NitroWheelIcon = tmp(9424).NitroWheelIcon;
+    NitroWheelIcon = tmp(9456).NitroWheelIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;

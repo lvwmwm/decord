@@ -1,19 +1,19 @@
-// Module ID: 9036
-// Function ID: 9037
+// Module ID: 9069
+// Function ID: 9070
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 4824, 5715, 5003, 4830, 1084, 38, 7879, 7874, 6635, 1111, 2]
+// Dependencies: [5, 4856, 5750, 5035, 4862, 1084, 38, 7913, 7908, 6669, 1111, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9036 (StartEventPlatformUtils)
+// Module 9069 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7879 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7913 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

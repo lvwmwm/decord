@@ -1,10 +1,10 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15647
+// Function ID: 15648
 // Name: updateBackgroundColor
 // Dependencies: [2]
 // Exports: default
 
-// Module 15421 (updateBackgroundColor)
+// Module 15647 (updateBackgroundColor)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/updateBackgroundColor.native.tsx");

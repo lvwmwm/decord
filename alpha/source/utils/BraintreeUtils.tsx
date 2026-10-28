@@ -1,13 +1,13 @@
-// Module ID: 4789
-// Function ID: 4790
+// Module ID: 4821
+// Function ID: 4822
 // Name: BraintreeUtils
-// Dependencies: [4790, 1084, 4791, 4794, 1999, 4794, 2]
+// Dependencies: [4822, 1084, 4823, 4826, 1999, 4826, 2]
 // Exports: collectDeviceData, getBraintreeSDK
 
-// Module 4789 (BraintreeUtils)
+// Module 4821 (BraintreeUtils)
 import Constants from "Constants" /* 1084 */;
-import core_CodeSplittingUtils from "core/CodeSplittingUtils" /* 4791 */;
-import BraintreeStore from "BraintreeStore" /* 4790 */;
+import core_CodeSplittingUtils from "core/CodeSplittingUtils" /* 4823 */;
+import BraintreeStore from "BraintreeStore" /* 4822 */;
 import size from "module_2" /* 2 */;
 
 let dataCollector;
@@ -15,24 +15,24 @@ let dataCollector;
 function createPromise() {
   return closure_1_0(paths[4])(paths[3], paths.paths);
 }
-const f93557 = (result) => result.default;
+const f94164 = (result) => result.default;
 const PaymentSettings = Constants.PaymentSettings;
 const result = size.fileFinishedImporting("utils/BraintreeUtils.tsx");
 
 export const getBraintreeSDK = function getBraintreeSDK() {
   const obj = core_CodeSplittingUtils;
-  const obj2 = { createPromise, webpackId: 4794 };
+  const obj2 = { createPromise, webpackId: 4826 };
   const importWithRetryResult = obj.importWithRetry(obj2);
-  return importWithRetryResult.then(f93557);
+  return importWithRetryResult.then(f94164);
 };
 export const collectDeviceData = function collectDeviceData() {
   let nextPromise1;
   let client = BraintreeStore.getClient();
   if (null == client) {
-    let obj2 = { createPromise, webpackId: 4794 };
+    let obj2 = { createPromise, webpackId: 4826 };
     const obj3 = core_CodeSplittingUtils;
     let importWithRetryResult = obj3.importWithRetry(obj2);
-    let nextPromise = importWithRetryResult.then(f93557);
+    let nextPromise = importWithRetryResult.then(f94164);
     nextPromise1 = nextPromise.then((client) => {
       client = client.client;
       let obj = { authorization: constants.BRAINTREE.KEY };
@@ -43,7 +43,7 @@ export const collectDeviceData = function collectDeviceData() {
         let obj = closure_1_0(closure_1_1[2]);
         let obj2 = { createPromise, webpackId: closure_1_1[5] };
         const importWithRetryResult = obj.importWithRetry(obj2);
-        let nextPromise = importWithRetryResult.then(f93557);
+        let nextPromise = importWithRetryResult.then(f94164);
         return nextPromise.then((dataCollector) => {
           dataCollector = dataCollector.dataCollector;
           const obj = { client };
@@ -56,9 +56,9 @@ export const collectDeviceData = function collectDeviceData() {
     });
   } else {
     let obj = core_CodeSplittingUtils;
-    const obj4 = { createPromise, webpackId: 4794 };
+    const obj4 = { createPromise, webpackId: 4826 };
     const importWithRetryResult1 = obj.importWithRetry(obj4);
-    const nextPromise2 = importWithRetryResult1.then(f93557);
+    const nextPromise2 = importWithRetryResult1.then(f94164);
     nextPromise1 = nextPromise2.then((dataCollector) => {
       dataCollector = dataCollector.dataCollector;
       const obj = { client };

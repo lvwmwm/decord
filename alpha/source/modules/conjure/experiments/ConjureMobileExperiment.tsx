@@ -1,10 +1,10 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9599
+// Function ID: 9600
 // Name: ConjureMobileExperiment
 // Dependencies: [1452, 558, 576, 504, 2]
 // Exports: isConjureMobileEnabled
 
-// Module 9567 (ConjureMobileExperiment)
+// Module 9599 (ConjureMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16892
+// Function ID: 16893
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4996, 1205, 1204, 16664, 8331, 1084, 21, 558, 576, 1502, 1381, 9701, 1125, 11064, 1271, 3413, 2064, 16665, 5264, 573, 11212, 16016, 2]
+// Dependencies: [19, 5028, 1205, 1204, 16893, 8365, 1084, 21, 558, 576, 1502, 1381, 9733, 1125, 11099, 1271, 3445, 2064, 16894, 5299, 573, 11248, 16244, 2]
 
-// Module 16663 (SettingsAppearanceScreen)
+// Module 16892 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -11,16 +11,16 @@ import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import _modDef3413 from "module_3413" /* 3413 */;
-import useMountEffectDefault from "useMountEffect" /* 5264 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import HeaderShared from "HeaderShared" /* 9701 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import _modDef3445 from "module_3445" /* 3445 */;
+import useMountEffectDefault from "useMountEffect" /* 5299 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import HeaderShared from "HeaderShared" /* 9733 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4996 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5028 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import FontScaleStore from "FontScaleStore" /* 16664 */;
+import FontScaleStore from "FontScaleStore" /* 16893 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(16016);
+const SettingLayoutDefault = tmp5(16244);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -73,7 +73,7 @@ function getAppearanceSettings() {
   const intl3 = intl6.intl;
   format = intl3.format;
   obj7 = { helpCenterLink: obj8.getArticleURL(HelpdeskArticles.FAVORITES_GUILD) };
-  GR2KOG = _modDef3413.GR2KOG;
+  GR2KOG = _modDef3445.GR2KOG;
   items1[5] = obj6;
   obj8 = HelpdeskUtilsDefault;
   const obj9 = { label: intl4.string(intl6.t.lEde7i), settings: items7 };
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "rejectWithError" });
+          nativeStackNavigation.setOptions({ headerRight: "paths" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "rejectWithError" });
+          nativeStackNavigation.setOptions({ headerRight: "paths" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(11212).createList;
+    const createList = tmp(11248).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

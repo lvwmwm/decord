@@ -1,22 +1,22 @@
-// Module ID: 13039
-// Function ID: 13040
+// Module ID: 13256
+// Function ID: 13257
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6016, 21, 6364, 5211, 13040, 1999, 4972, 587, 558, 576, 1381, 1125, 5235, 13026, 5253, 13041, 3089, 11083, 2]
+// Dependencies: [19, 17, 6050, 21, 6398, 5246, 13257, 1999, 5004, 587, 558, 576, 1381, 1125, 5270, 13243, 5288, 13258, 3089, 11118, 2]
 
-// Module 13039 (FinalizeTraitTabs)
+// Module 13256 (FinalizeTraitTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6364 */;
-import CheckpointPressable from "CheckpointPressable" /* 13026 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6398 */;
+import CheckpointPressable from "CheckpointPressable" /* 13243 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13258 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6016 */;
+import CheckpointConstants from "CheckpointConstants" /* 6050 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitT
                 tmp20 = tmp24;
               }
               const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: tmp16, children: label };
-              const Text = tmp(5235).Text;
+              const Text = tmp(5270).Text;
               const tmp19 = metroImportDefault(Text, obj4);
               cResult[16] = label;
               cResult[17] = tmp16;
@@ -225,7 +225,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitT
   const obj3 = { size: "sm", containerStyle: tabContainerActive, style: items1, disabled: isActive || disabled, onPress, accessibilityRole: "tab", accessibilityHint: joined, accessibilityState: { selected: isActive, disabled }, shadowColor: hasOwnProperty, children: items3 };
   items1 = [tmp.tab, isActive && tmp.tabActive, disabled && tmp.tabDisabled];
   const obj4 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.sm.textVariant, style: items2, children: label };
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   items2 = [tmp.tabLabel, , ];
   const tmp9 = metroImportDefault;
   if (isActive) {
@@ -256,7 +256,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
   dependencyMap = tmp4;
   let closure_3 = tmp5;
   const tmp6 = closure_11();
-  const tmp7 = tmp(6364).CUSTOMIZATION_OPTION_TO_TRAIT[activeCustomizationOption];
+  const tmp7 = tmp(6398).CUSTOMIZATION_OPTION_TO_TRAIT[activeCustomizationOption];
   let closure_4 = tmp7;
   if (cResult[0] === tmp7) {
     if (cResult[1] === tmp4) {
@@ -274,7 +274,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
       } else {
         tmp10 = cResult[5];
       }
-      const tmpResult = tmp(5253);
+      const tmpResult = tmp(5288);
       const token = tmpResult.useToken("text-subtle");
       let tmp15 = token;
       if (!tmp4) {
@@ -338,7 +338,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
                               }
                               if (cResult[28] !== tmp15) {
                                 let obj2 = { color: tmp15, size: "xs" };
-                                const tmp33 = closure_7(tmp(11083).ChevronSmallDownIcon, obj2);
+                                const tmp33 = closure_7(tmp(11118).ChevronSmallDownIcon, obj2);
                                 cResult[28] = tmp15;
                                 cResult[29] = tmp33;
                                 tmp31 = tmp33;
@@ -417,7 +417,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
                               const intl = tmp(1125).intl;
                               stringResult1 = intl.string(onSelectOption(3089)["iXpQc+"]);
                             } else {
-                              const tmpResult7 = tmp(6364);
+                              const tmpResult7 = tmp(6398);
                               stringResult1 = tmpResult7.getCustomizationOptionName(activeCustomizationOption);
                             }
                             cResult[23] = activeCustomizationOption;
@@ -464,7 +464,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
                 } else {
                   const obj = { selectedOption: activeCustomizationOption, onSelectOption };
                   const obj2 = ActionSheetActionCreatorsDefault;
-                  obj2.openLazy(asyncRequire(13040, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+                  obj2.openLazy(asyncRequire(13257, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
                 }
               }
             }
@@ -500,7 +500,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
   let nitroLockedMessage;
   if (tmp4) {
     if (!(undefined !== disabled && disabled)) {
-      const tmpResult8 = tmp(6364);
+      const tmpResult8 = tmp(6398);
       nitroLockedMessage = tmpResult8.getNitroLockedMessage(tmp7);
     }
   }
@@ -615,7 +615,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTrai
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption: importDefault };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13040, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(13257, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },

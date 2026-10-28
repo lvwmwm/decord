@@ -1,39 +1,63 @@
 // Module ID: 5089
 // Function ID: 5090
-// Dependencies: [32, 576, 5085]
-// Exports: useRiveEnum
+// Dependencies: [17, 5090, 5091]
+// Exports: isRuntimeAlive
 
 // Module 5089
-import react from "react" /* 576 */;
-import _mod5085 from "module_5085" /* 5085 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_native from "react-native" /* 17 */;
+import _mod5090 from "module_5090" /* 5090 */;
+import ModuleNotFoundError from "ModuleNotFoundError" /* 5091 */;
 
-function getEnumProperty(enumProperty, arg1) {
-  return enumProperty.enumProperty(arg1);
+let installedNitro1;
+function getInstalledNitro() {
+  return global.NitroModulesProxy;
+}
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
+const installedNitro = getInstalledNitro();
+if (null != installedNitro) {
+  installedNitro1 = installedNitro;
+  if (installedNitro.version !== _mod5090.version) {
+    const _Error2 = Error;
+    const version = installedNitro.version;
+    const _HermesInternal2 = HermesInternal;
+    const self5 = this;
+    const self6 = this;
+    const error = new Error("Nitro was installed twice: once with native version " + version + " and once with JS version " + _mod5090.version + ". This usually means react-native-nitro-modules exists multiple times in node_modules (e.g. in monorepos or double-linked setups).");
+    throw error;
+  }
+} else {
+  try {
+    const enforcing = TurboModuleRegistry.getEnforcing("NitroModules");
+    const installResult = enforcing.install();
+    if (null != installResult) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error1 = new Error("Failed to install Nitro: " + installResult);
+      throw error1;
+    } else {
+      installedNitro1 = getInstalledNitro();
+      if (null == installedNitro1) {
+        const _Error3 = Error;
+        const self7 = this;
+        const self8 = this;
+        const error2 = new Error("NitroModules was installed, but `global.NitroModulesProxy` was null!");
+        const self9 = this;
+        const self10 = this;
+        const moduleNotFoundError = new ModuleNotFoundError.ModuleNotFoundError(error2);
+        throw moduleNotFoundError;
+      }
+    }
+  } catch (tmp8) {
+    const self3 = this;
+    const self4 = this;
+    const moduleNotFoundError1 = new ModuleNotFoundError.ModuleNotFoundError(tmp8);
+    throw moduleNotFoundError1;
+  }
 }
 
-export const useRiveEnum = function useRiveEnum(arg0, arg1) {
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(4);
-  const obj2 = _mod5085;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getEnumProperty);
-  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getEnumProperty), 3);
-  if (cResult[0] === tmp5) {
-    if (cResult[1] === tmp4) {
-      let tmp6;
-      if (cResult[2] === tmp3) {
-        tmp6 = cResult[3];
-      }
-      return tmp6;
-    }
-  }
-  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
-  cResult[0] = tmp5;
-  cResult[1] = tmp4;
-  cResult[2] = tmp3;
-  cResult[3] = obj3;
-  tmp6 = obj3;
+export const NitroModules = installedNitro1;
+export const isRuntimeAlive = function isRuntimeAlive() {
+  return null != globalThis.__nitroJsiCache && null != globalThis.__nitroDispatcher;
 };

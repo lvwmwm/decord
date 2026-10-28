@@ -1,15 +1,15 @@
-// Module ID: 18592
-// Function ID: 18593
+// Module ID: 18840
+// Function ID: 18841
 // Name: useCanConnect
-// Dependencies: [4824, 4846, 4904, 5631, 1095, 558, 576, 5995, 504, 2]
+// Dependencies: [4856, 4878, 4936, 5666, 1095, 558, 576, 6030, 504, 2]
 
-// Module 18592 (useCanConnect)
+// Module 18840 (useCanConnect)
 import Constants from "Constants" /* 1095 */;
-import ChannelUtils from "ChannelUtils" /* 5995 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import ChannelUtils from "ChannelUtils" /* 6030 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

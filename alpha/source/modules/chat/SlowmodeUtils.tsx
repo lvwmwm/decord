@@ -1,15 +1,15 @@
-// Module ID: 7762
-// Function ID: 7763
+// Module ID: 7796
+// Function ID: 7797
 // Name: SlowmodeUtils
-// Dependencies: [4904, 1084, 558, 576, 504, 1125, 1101, 2046, 2]
+// Dependencies: [4936, 1084, 558, 576, 504, 1125, 1101, 2046, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText
 
-// Module 7762 (SlowmodeUtils)
+// Module 7796 (SlowmodeUtils)
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl4 from "intl" /* 1125 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

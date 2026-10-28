@@ -1,20 +1,20 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7548
+// Function ID: 7549
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2055, 1084, 1391, 5910, 1125, 1264, 6464, 7514, 7519, 7520, 7521, 7522, 2050, 2]
+// Dependencies: [5, 2055, 1084, 1391, 5945, 1125, 1264, 6498, 7549, 7554, 7555, 7556, 2050, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7513 (GuildBoostPurchasingUtils)
+// Module 7548 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
-let analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
+let allowYearlyBundles, analyticsLocation, analyticsLocations, guildId, onBack, onPaymentDismiss, onPaymentSuccess;
 
 let c10;
 let c9;
@@ -65,7 +65,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
           let externalManagementMessage;
           let c8;
           let productIdFromSubscription;
-          let mobileBoostingEnabled;
           c6 = 2;
           if (0 === onPaymentDismiss) {
             if (arg0 === 1) {
@@ -87,7 +86,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               externalManagementMessage = undefined;
               c8 = undefined;
               productIdFromSubscription = undefined;
-              mobileBoostingEnabled = undefined;
+              allowYearlyBundles = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
               return { value: "Reflect", done: true };
@@ -120,12 +119,12 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                       c8 = null;
                       if (null != premiumTypeSubscription) {
                         onPaymentSuccess = 1;
-                        const obj11 = closure_131_0(closure_131_2[9]);
-                        productIdFromSubscription = obj11.getProductIdFromSubscription(premiumTypeSubscription, true);
-                        const tmp88 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+                        const obj10 = closure_131_0(closure_131_2[9]);
+                        productIdFromSubscription = obj10.getProductIdFromSubscription(premiumTypeSubscription, true);
+                        const tmp82 = closure_131_0(closure_131_2[10]).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
                         let interval;
-                        if (tmp88 != null) {
-                          interval = tmp88.interval;
+                        if (tmp82 != null) {
+                          interval = tmp82.interval;
                         }
                         analyticsLocations = interval;
                         if (interval == null) {
@@ -150,8 +149,8 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                 onPaymentDismiss = 2;
                 let num3 = 1;
                 c6 = 1;
-                const obj9 = { value: obj2.fetchSubscriptions(), done: false };
-                return obj9;
+                const obj8 = { value: obj2.fetchSubscriptions(), done: false };
+                return obj8;
               }
             } else if (2 === onPaymentDismiss) {
               if (arg0 === 1) {
@@ -167,17 +166,16 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess = 0;
               c8 = null;
             }
-            const obj5 = closure_131_0(closure_131_2[11]);
-            mobileBoostingEnabled = obj5.getMobileBoostingEnabled("GuildBoostPurchasing") && c8 === closure_131_10.YEAR;
-            const obj10 = {
+            allowYearlyBundles = c8 === closure_131_10.YEAR;
+            const obj9 = {
               showCurrentPlan: false,
               isBoostPurchaseFlow: true,
-              allowYearlyBundles: mobileBoostingEnabled,
+              allowYearlyBundles,
               predicate(interval) {
                       let tmp = !closure_1_10;
                       if (closure_1_10) {
-                        tmp = !(interval.interval !== constants.YEAR || interval.numPremiumGuild > 5);
-                        const tmp3 = interval.interval !== constants.YEAR || interval.numPremiumGuild > 5;
+                        tmp = !(interval.interval !== allowYearlyBundles.YEAR || interval.numPremiumGuild > 5);
+                        const tmp3 = interval.interval !== allowYearlyBundles.YEAR || interval.numPremiumGuild > 5;
                       }
                       if (tmp) {
                         let num2 = 0;
@@ -188,9 +186,9 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                         let num3 = 0;
                         const sum = numPremiumGuild + num2;
                         if (null != closure_1_6) {
-                          obj = analyticsLocation(guildId[13]);
+                          obj = analyticsLocation(guildId[12]);
                           const numPremiumGuildSubscriptions = obj.getNumPremiumGuildSubscriptions(closure_1_6.additionalPlans);
-                          const obj2 = c1(guildId[13]);
+                          const obj2 = c1(guildId[12]);
                           num3 = numPremiumGuildSubscriptions + obj2.getNumIncludedPremiumGuildSubscriptionSlots(closure_1_6.planId);
                         }
                         tmp = sum > num3;
@@ -204,13 +202,13 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               onPaymentSuccess,
               onPaymentDismiss
             };
-            const obj6 = closure_131_0(closure_131_2[12]);
-            const result = obj6.launchPremiumPlanSelect(obj10);
+            const obj5 = closure_131_0(closure_131_2[11]);
+            const result = obj5.launchPremiumPlanSelect(obj9);
           }
-        } catch (tmp70) {
+        } catch (tmp64) {
           if (0 === onPaymentSuccess) {
             c6 = 3;
-            throw tmp70;
+            throw tmp64;
           } else {
             onPaymentDismiss = 3;
           }

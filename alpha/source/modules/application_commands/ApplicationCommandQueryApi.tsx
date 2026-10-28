@@ -1,22 +1,22 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10238
+// Function ID: 10239
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 4846, 9652, 5984, 1084, 7631, 9658, 558, 576, 504, 9660, 1385, 1997, 9657, 10207, 5635, 2]
+// Dependencies: [32, 19, 4878, 9684, 6019, 1084, 7665, 9690, 558, 576, 504, 9692, 1385, 1997, 9689, 10239, 5670, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useCommand
 
-// Module 10206 (ApplicationCommandQueryApi)
+// Module 10238 (ApplicationCommandQueryApi)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import Server from "Server" /* 1997 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5635 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5984 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7631 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10207 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10239 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9652 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9684 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp2;
-const ApplicationCommandQueryTypes = tmp(9658);
-const ApplicationCommandBuiltIns = tmp2(9660);
+const ApplicationCommandQueryTypes = tmp(9690);
+const ApplicationCommandBuiltIns = tmp2(9692);
 function findCommandInSection(found, commandId) {
   let str;
   let closure_0 = commandId;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscovery
                 return section.section.id === first1;
               }
             }
-            const tmp49 = guild_id(9660).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
+            const tmp49 = guild_id(9692).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
             const _Symbol2 = Symbol;
             if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
               class G {
@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "Array", command: "unicodeVersion", section: "children" };
+    return { application: "Array", command: "ix", section: "withSpring" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "Array", command: "unicodeVersion", section: "children" };
+    return { application: "Array", command: "ix", section: "withSpring" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "toCharArray$esjava$1", application: "Symbol" };
+    return { command: "useCallback", application: "PX_16" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

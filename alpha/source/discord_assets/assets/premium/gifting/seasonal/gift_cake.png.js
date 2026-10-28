@@ -1,8 +1,8 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 14125
+// Function ID: 14126
 // Dependencies: [2]
 
-// Module 13906
+// Module 14125
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_cake.png.js");

@@ -1,22 +1,22 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 9387
+// Function ID: 9388
 // Name: GameProfileShopCarousel
-// Dependencies: [19, 17, 21, 4972, 587, 9356, 558, 576, 9473, 9343, 9336, 9474, 9245, 7650, 7280, 1125, 7222, 9316, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 9388, 558, 576, 9505, 9375, 9368, 9506, 9278, 7684, 7314, 1125, 7256, 9348, 2]
 
-// Module 9355 (GameProfileShopCarousel)
+// Module 9387 (GameProfileShopCarousel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7650 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
-import GameProfileSection from "GameProfileSection" /* 9336 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9343 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9356 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9473 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9278 */;
+import GameProfileSection from "GameProfileSection" /* 9368 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9375 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9388 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9505 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,7 +119,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
   trackAction = trackAction.trackAction;
   const tmp4 = closure_6();
   dependencyMap = tmp4;
-  const obj2 = closeModal(9474);
+  const obj2 = closeModal(9506);
   const gameProfileShopCollectionProducts = obj2.useGameProfileShopCollectionProducts(collectionId);
   const products = gameProfileShopCollectionProducts.products;
   if (cResult[0] === closeModal) {
@@ -199,7 +199,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
                   return closure_1_5(trackAction(closure_2[5]), obj);
                 }
               }
-              const tmp19 = jsx(trackAction(9336), { style: container, headerStyle: header, title: tmp8, onPressViewAll: null, children: tmp11 });
+              const tmp19 = jsx(trackAction(9368), { style: container, headerStyle: header, title: tmp8, onPressViewAll: null, children: tmp11 });
               cResult[13] = tmp7;
               cResult[14] = tmp4.container;
               cResult[15] = tmp4.header;
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
               tmp16 = tmp19;
             }
           }
-          const FlashList = tmp(7222).FlashList;
+          const FlashList = tmp(7256).FlashList;
           class E {
             constructor(arg0) {
               item = trackAction.item;
@@ -233,7 +233,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
               return closure_1_5(trackAction(closure_2[5]), obj);
             }
           }
-          const tmp15 = <FlashList key={collectionId} horizontal renderScrollComponent={trackAction(9316)} data={products} renderItem={null} showsHorizontalScrollIndicator={false} ItemSeparatorComponent={ListFooterComponent} ListHeaderComponent={ListFooterComponent} ListFooterComponent={ListFooterComponent} decelerationRate="fast" snapToInterval={closeModal(9356).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9356).COLLECTIBLES_SHOP_CARD_GAP} />;
+          const tmp15 = <FlashList key={collectionId} horizontal renderScrollComponent={trackAction(9348)} data={products} renderItem={null} showsHorizontalScrollIndicator={false} ItemSeparatorComponent={ListFooterComponent} ListHeaderComponent={ListFooterComponent} ListFooterComponent={ListFooterComponent} decelerationRate="fast" snapToInterval={closeModal(9388).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9388).COLLECTIBLES_SHOP_CARD_GAP} />;
           cResult[9] = collectionId;
           cResult[10] = products;
           cResult[11] = tmp10;
@@ -296,7 +296,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
   trackAction = trackAction.trackAction;
   const tmp = closure_6();
   dependencyMap = tmp;
-  let obj = closeModal(9474);
+  let obj = closeModal(9506);
   const gameProfileShopCollectionProducts = obj.useGameProfileShopCollectionProducts(collectionId);
   const products = gameProfileShopCollectionProducts.products;
   let items = [trackAction, closeModal];
@@ -306,11 +306,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
     tmp6 = null;
     if (0 !== products.length) {
       ({ container: obj2.style, header: obj2.headerStyle } = tmp);
-      trackAction(9336);
+      trackAction(9368);
       const intl = tmp2(1125).intl;
       ({
         horizontal: true,
-        renderScrollComponent: trackAction(9316),
+        renderScrollComponent: trackAction(9348),
         data: products,
         renderItem(item) {
               item = item.item;
@@ -338,9 +338,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamePro
         ListHeaderComponent: ListFooterComponent,
         ListFooterComponent,
         decelerationRate: "fast",
-        snapToInterval: closeModal(9356).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9356).COLLECTIBLES_SHOP_CARD_GAP
+        snapToInterval: closeModal(9388).COLLECTIBLES_SHOP_CARD_WIDTH + closeModal(9388).COLLECTIBLES_SHOP_CARD_GAP
       });
-      const FlashList = tmp2(7222).FlashList;
+      const FlashList = tmp2(7256).FlashList;
       tmp6 = <tmp11 style={null} headerStyle={null} title={intl.string(tmp2(1125).t["5DYPT8"])} onPressViewAll={tmp5}>{null}</tmp11>;
     }
   }

@@ -1,14 +1,14 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14709
+// Function ID: 14710
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 558, 576, 1125, 9843, 6910, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1125, 9875, 6944, 2]
 
-// Module 14486 (DynamicBadgeTooltip)
+// Module 14709 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import Pressables from "Pressables" /* 6910 */;
-import useTooltip from "useTooltip" /* 9843 */;
+import Pressables from "Pressables" /* 6944 */;
+import useTooltip from "useTooltip" /* 9875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -81,8 +81,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F151810 */ }, 2500);
-            return () => { /* body not rendered: F151811 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F152706 */ }, 2500);
+            return () => { /* body not rendered: F152707 */ };
           } else {
             return;
           }
@@ -101,8 +101,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
             tmp = globalThis;
             _setTimeout = setTimeout;
             num = 2500;
-            closure_0 = setTimeout(() => { /* body not rendered: F151810 */ }, 2500);
-            return () => { /* body not rendered: F151811 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F152706 */ }, 2500);
+            return () => { /* body not rendered: F152707 */ };
           } else {
             return;
           }
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F151812 */ });
+          tmp = closure_1(() => { /* body not rendered: F152708 */ });
           return;
         }
       }
@@ -124,7 +124,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     } else {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F151812 */ });
+          tmp = closure_1(() => { /* body not rendered: F152708 */ });
           return;
         }
       }
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     if (cResult[9] === accessibilityLabel) {
       class E {
         constructor() {
-          tmp = closure_1(() => { /* body not rendered: F151812 */ });
+          tmp = closure_1(() => { /* body not rendered: F152708 */ });
           return;
         }
       }

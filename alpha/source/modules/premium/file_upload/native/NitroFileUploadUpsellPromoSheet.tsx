@@ -1,17 +1,17 @@
-// Module ID: 18461
-// Function ID: 18462
+// Module ID: 18702
+// Function ID: 18703
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1084, 4821, 21, 4972, 587, 558, 576, 5264, 7491, 9918, 18457, 1125, 2639, 5245, 10859, 2]
+// Dependencies: [19, 17, 1084, 4853, 21, 5004, 587, 558, 576, 5299, 7526, 9950, 18698, 1125, 2639, 5280, 10894, 2]
 
-// Module 18461 (NitroFileUploadUpsellPromoSheet)
+// Module 18702 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import openUserSettings from "openUserSettings" /* 7491 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import openUserSettings from "openUserSettings" /* 7526 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

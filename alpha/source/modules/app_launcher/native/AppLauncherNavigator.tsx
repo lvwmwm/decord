@@ -1,24 +1,24 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11988
+// Function ID: 11989
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1501, 1084, 21, 9745, 4972, 587, 558, 576, 7255, 7280, 1503, 5976, 5162, 1628, 7097, 5712, 11951, 12011, 12038, 12101, 11172, 2]
+// Dependencies: [109, 19, 1501, 1084, 21, 9777, 5004, 587, 558, 576, 7289, 7314, 1503, 6011, 5197, 1628, 7131, 5747, 11989, 12049, 12076, 12139, 11207, 2]
 
-// Module 11950 (AppLauncherNavigator)
+// Module 11988 (AppLauncherNavigator)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7255 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11951 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 12011 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 12038 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12101 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 11989 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 12049 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 12076 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12139 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9745 */;
-import createStyles from "createStyles" /* 4972 */;
+import NativeStackView from "NativeStackView" /* 9777 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,15 +67,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const analyticsLocations = tmp5(AnalyticsLocationDefault.APP_LAUNCHER).analyticsLocations;
   let obj2 = entrypoint(1503);
   const navigationContainerRef = obj2.useNavigationContainerRef();
-  const obj3 = entrypoint(5976);
+  const obj3 = entrypoint(6011);
   const trackNavigationBackPress = obj3.useTrackNavigationBackPress(navigationContainerRef);
   const tmp8 = closure_12();
-  const useKeyboardContextForType = entrypoint(5162).useKeyboardContextForType;
-  entrypoint(5162);
+  const useKeyboardContextForType = entrypoint(5197).useKeyboardContextForType;
+  entrypoint(5197);
   if (overrideParams == null) {
     overrideParams = useKeyboardContextForType(entrypoint(1628).KeyboardTypes.APP_LAUNCHER);
   }
-  const tmpResult = entrypoint(7097);
+  const tmpResult = entrypoint(7131);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[0] !== overrideParams) {
     const initialRouteName = overrideParams.initialRouteName;
@@ -226,7 +226,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                             return tmp72;
                                                           }
                                                           const obj4 = { value: tmp71, children: tmp62 };
-                                                          const tmp74 = closure_9(entrypoint(11172).AppLauncherContext.Provider, obj4);
+                                                          const tmp74 = closure_9(entrypoint(11207).AppLauncherContext.Provider, obj4);
                                                           cResult[66] = tmp71;
                                                           cResult[67] = tmp62;
                                                           cResult[68] = tmp74;
@@ -274,7 +274,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                     tmp62 = tmp64;
                                   }
                                   const obj9 = { value: analyticsLocations, children: tmp55 };
-                                  const tmp61 = closure_9(entrypoint(7255).AnalyticsLocationProvider, obj9);
+                                  const tmp61 = closure_9(entrypoint(7289).AnalyticsLocationProvider, obj9);
                                   cResult[42] = analyticsLocations;
                                   cResult[43] = tmp55;
                                   cResult[44] = tmp61;

@@ -1,17 +1,17 @@
-// Module ID: 7209
-// Function ID: 7210
+// Module ID: 7243
+// Function ID: 7244
 // Name: GuildCategoryStore
-// Dependencies: [4827, 502, 4824, 4902, 4846, 1084, 7210, 504, 584, 2]
+// Dependencies: [4859, 502, 4856, 4934, 4878, 1084, 7244, 504, 584, 2]
 
-// Module 7209 (GuildCategoryStore)
+// Module 7243 (GuildCategoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7210 */;
-import FavoriteStore from "FavoriteStore" /* 4827 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7244 */;
+import FavoriteStore from "FavoriteStore" /* 4859 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4902 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4934 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

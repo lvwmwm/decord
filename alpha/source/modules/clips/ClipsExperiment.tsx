@@ -1,15 +1,15 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 14897
+// Function ID: 14898
 // Name: ClipsExperiment
-// Dependencies: [2011, 1389, 1391, 5719, 1452, 558, 576, 504, 2050, 1381, 2]
+// Dependencies: [2011, 1389, 1391, 5754, 1452, 558, 576, 504, 2050, 1381, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 14674 (ClipsExperiment)
+// Module 14897 (ClipsExperiment)
 import react from "react" /* 576 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1381 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import Constants from "Constants" /* 5719 */;
+import Constants from "Constants" /* 5754 */;
 import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import UserStore from "UserStore" /* 1389 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;

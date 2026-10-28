@@ -1,11 +1,11 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 10827
+// Function ID: 10828
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 10795, 1084, 584, 1294, 504, 2]
+// Dependencies: [5, 10828, 1084, 584, 1294, 504, 2]
 
-// Module 10794 (UserApplicationIdentityActionCreators)
+// Module 10827 (UserApplicationIdentityActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 10795 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 10828 */;
 import Constants from "Constants" /* 1084 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;

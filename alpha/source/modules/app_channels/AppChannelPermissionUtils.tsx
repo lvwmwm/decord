@@ -1,15 +1,15 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11352
+// Function ID: 11353
 // Name: AppChannelPermissionUtils
-// Dependencies: [2042, 1084, 558, 576, 7348, 1096, 4911, 2]
+// Dependencies: [2042, 1084, 558, 576, 7383, 1096, 4943, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission
 
-// Module 11315 (AppChannelPermissionUtils)
+// Module 11352 (AppChannelPermissionUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4911 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7348 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4943 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7383 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

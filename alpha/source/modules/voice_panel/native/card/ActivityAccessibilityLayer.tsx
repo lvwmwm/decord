@@ -1,18 +1,18 @@
-// Module ID: 18615
-// Function ID: 18616
+// Module ID: 18863
+// Function ID: 18864
 // Name: ActivityAccessibilityLayer
-// Dependencies: [109, 32, 19, 17, 10904, 21, 4972, 558, 576, 5972, 1125, 5969, 5268, 2]
+// Dependencies: [109, 32, 19, 17, 10939, 21, 5004, 558, 576, 6007, 1125, 6004, 5303, 2]
 
-// Module 18615 (ActivityAccessibilityLayer)
+// Module 18863 (ActivityAccessibilityLayer)
 import react2 from "react" /* 576 */;
-import react_native from "react-native" /* 5972 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10904 */;
+import react_native from "react-native" /* 6007 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useIsScreenReaderEnabled = tmp(5268);
+const useIsScreenReaderEnabled = tmp(5303);
 let closure_2 = ["isActivityFocused"];
 ({ Pressable: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll } = react_native2);
 const IS_IOS = VoicePanelConstants.IS_IOS;

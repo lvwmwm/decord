@@ -1,31 +1,31 @@
-// Module ID: 6642
-// Function ID: 6643
+// Module ID: 6676
+// Function ID: 6677
 // Name: StageChannelParticipantStore
-// Dependencies: [6643, 502, 4824, 4846, 4904, 4914, 6686, 1389, 5631, 5718, 6687, 4829, 4899, 12, 6689, 6646, 1354, 504, 584, 2]
+// Dependencies: [6677, 502, 4856, 4878, 4936, 4946, 6720, 1389, 5666, 5753, 6721, 4861, 4931, 12, 6723, 6680, 1354, 504, 584, 2]
 
-// Module 6642 (StageChannelParticipantStore)
+// Module 6676 (StageChannelParticipantStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1354 from "module_1354" /* 1354 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4899 */;
-import StageChannelParticipantsDefault from "StageChannelParticipants" /* 6689 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4931 */;
+import StageChannelParticipantsDefault from "StageChannelParticipants" /* 6723 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
-import SpeakingStore from "SpeakingStore" /* 6686 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
+import SpeakingStore from "SpeakingStore" /* 6720 */;
 import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6687 */;
-import StageInstanceStore from "StageInstanceStore" /* 4829 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5753 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6721 */;
+import StageInstanceStore from "StageInstanceStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
-const f96633 = (id) => id.id;
-const f96634 = (isGuildStageVoice) => {
+const f97249 = (id) => id.id;
+const f97250 = (isGuildStageVoice) => {
   const tmp = null != isGuildStageVoice && isGuildStageVoice.isGuildStageVoice() && SortedVoiceStateStore.countVoiceStatesForChannel(isGuildStageVoice.id) > 0;
   if (tmp) {
     const result = secondaryIndexMap.set(isGuildStageVoice.id, isGuildStageVoice);
@@ -34,7 +34,7 @@ const f96634 = (isGuildStageVoice) => {
 function getActiveStageChannelIds(guildId) {
   const values = secondaryIndexMap.values;
   const values2 = values(guildId, true);
-  return values2.map(f96633);
+  return values2.map(f97249);
 }
 function maybeGetParticipants(id) {
   if (null != closure_18[id]) {
@@ -53,7 +53,7 @@ function maybeGetParticipants(id) {
           const tmp6 = _modDef12;
           const tmp6Result = tmp6(obj4.getMutableGuildChannelsForGuild(guild_id));
           const values = tmp6Result.values();
-          const item = values.forEach(f96634);
+          const item = values.forEach(f97250);
         }
         let tmp10 = null;
         const tmp8 = null != channel && channel.isGuildStageVoice() && SortedVoiceStateStore.countVoiceStatesForChannel(channel.id) > 0;
@@ -92,12 +92,12 @@ function updateParticipant(arg0) {
   let mapped;
   {
     const values = secondaryIndexMap.values(undefined, true);
-    mapped = values.map(f96633);
+    mapped = values.map(f97249);
   }
-  const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+  const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
   if (mapped === undefined) {
     const values2 = secondaryIndexMap.values(undefined, true);
-    mapped = values2.map(f96633);
+    mapped = values2.map(f97249);
   }
   return mapped.reduce(function(acc, item) {
     let obj = closure_2_18[item];
@@ -111,7 +111,7 @@ function updateParticipant(arg0) {
       obj = obj2;
     }
     let flag = acc;
-    if (f96636(obj)) {
+    if (f97252(obj)) {
       channel = channel.getChannel(item);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
@@ -151,13 +151,13 @@ function handleRebuildActiveStageChannels() {
 function handleUserUpdate(user) {
   const id = user.user.id;
   const values = secondaryIndexMap.values(undefined, true);
-  const mapped = values.map(f96633);
-  const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+  const mapped = values.map(f97249);
+  const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
   let mapped1 = mapped;
   const obj = secondaryIndexMap;
   if (mapped === undefined) {
     const values2 = obj.values(undefined, true);
-    mapped1 = values2.map(f96633);
+    mapped1 = values2.map(f97249);
   }
   return mapped1.reduce(function(acc, item) {
     let obj = closure_2_18[item];
@@ -171,7 +171,7 @@ function handleUserUpdate(user) {
       obj = obj2;
     }
     let flag = acc;
-    if (f96636(obj)) {
+    if (f97252(obj)) {
       channel = channel.getChannel(item);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
@@ -206,13 +206,13 @@ function handleUserUpdate(user) {
 function handleRelationshipUpdate(relationship) {
   const id = relationship.relationship.id;
   const values = secondaryIndexMap.values(undefined, true);
-  const mapped = values.map(f96633);
-  const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+  const mapped = values.map(f97249);
+  const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
   let mapped1 = mapped;
   const obj = secondaryIndexMap;
   if (mapped === undefined) {
     const values2 = obj.values(undefined, true);
-    mapped1 = values2.map(f96633);
+    mapped1 = values2.map(f97249);
   }
   return mapped1.reduce(function(acc, item) {
     let obj = closure_2_18[item];
@@ -226,7 +226,7 @@ function handleRelationshipUpdate(relationship) {
       obj = obj2;
     }
     let flag = acc;
-    if (f96636(obj)) {
+    if (f97252(obj)) {
       channel = channel.getChannel(item);
       if (null != channel) {
         if (channel.isGuildStageVoice()) {
@@ -272,10 +272,10 @@ function handleGuildCreateOrDelete(guild) {
 }
 function handleStreamClose(streamKey) {
   let channelId;
-  let f96636;
+  let f97252;
   let ownerId;
   streamKey = streamKey.streamKey;
-  const obj = f96636(6646);
+  const obj = f97252(6680);
   const decodeStreamKeyResult = obj.decodeStreamKey(streamKey);
   const guildId = decodeStreamKeyResult.guildId;
   let tmp2 = null == guildId;
@@ -286,7 +286,7 @@ function handleStreamClose(streamKey) {
   let reduced = !tmp2;
   if (reduced) {
     const items = [channelId];
-    f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+    f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
     reduced = items.reduce(function(acc, item) {
       let obj = closure_2_18[item];
       const tmp = item;
@@ -299,7 +299,7 @@ function handleStreamClose(streamKey) {
         obj = obj2;
       }
       let flag = acc;
-      if (f96636(obj)) {
+      if (f97252(obj)) {
         channel = channel.getChannel(item);
         if (null != channel) {
           if (channel.isGuildStageVoice()) {
@@ -426,7 +426,7 @@ class StageChannelParticipantStore extends Store {
       const tmp6 = _modDef12;
       const tmp6Result = tmp6(ChannelStore.getMutableGuildChannelsForGuild(tmp2));
       const values2 = tmp6Result.values();
-      const item = values2.forEach(f96634);
+      const item = values2.forEach(f97250);
     }
     const values = secondaryIndexMap.values;
     if (tmp == null) {
@@ -470,7 +470,7 @@ let obj = {
           let reduced = null != id;
           if (reduced) {
             const items = [currentVoiceChannelId];
-            const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+            const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
             reduced = items.reduce(function(acc, item) {
               let obj = closure_2_18[item];
               const tmp = item;
@@ -483,7 +483,7 @@ let obj = {
                 obj = obj2;
               }
               let flag = acc;
-              if (f96636(obj)) {
+              if (f97252(obj)) {
                 channel = channel.getChannel(item);
                 if (null != channel) {
                   if (channel.isGuildStageVoice()) {
@@ -574,12 +574,12 @@ let obj = {
             if (arr === undefined) {
               let flag = true;
               const values = secondaryIndexMap.values(undefined, true);
-              mapped = values.map(f96633);
+              mapped = values.map(f97249);
             }
-            const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+            const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
             if (mapped === undefined) {
               const values2 = secondaryIndexMap.values(undefined, true);
-              mapped = values2.map(f96633);
+              mapped = values2.map(f97249);
             }
             tmp13 = mapped.reduce(function(acc, item) {
               let obj = closure_2_18[item];
@@ -593,7 +593,7 @@ let obj = {
                 obj = obj2;
               }
               let flag = acc;
-              if (f96636(obj)) {
+              if (f97252(obj)) {
                 channel = channel.getChannel(item);
                 if (null != channel) {
                   if (channel.isGuildStageVoice()) {
@@ -636,7 +636,7 @@ let obj = {
                 obj = obj2;
               }
               let flag = acc;
-              if (f96636(obj)) {
+              if (f97252(obj)) {
                 channel = channel.getChannel(item);
                 if (null != channel) {
                   if (channel.isGuildStageVoice()) {
@@ -721,11 +721,11 @@ let obj = {
       }
       return arr;
     }, []);
-    const f96640 = (rebuild) => rebuild.rebuild();
+    const f97256 = (rebuild) => rebuild.rebuild();
     let mapped = reduced;
     if (reduced === undefined) {
       const values = secondaryIndexMap.values(undefined, true);
-      mapped = values.map(f96633);
+      mapped = values.map(f97249);
     }
     const reduced1 = mapped.reduce(function(acc, item) {
       let obj = closure_2_18[item];
@@ -739,7 +739,7 @@ let obj = {
         obj = obj2;
       }
       let flag = acc;
-      if (f96636(obj)) {
+      if (f97252(obj)) {
         channel = channel.getChannel(item);
         if (null != channel) {
           if (channel.isGuildStageVoice()) {
@@ -778,12 +778,12 @@ let obj = {
       const values = secondaryIndexMap.values;
       const fn = (rebuild) => rebuild.rebuild();
       const values3 = values(guildId, true);
-      const mapped = values3.map(f96633);
+      const mapped = values3.map(f97249);
       let mapped1 = mapped;
       const obj = secondaryIndexMap;
       if (mapped === undefined) {
         const values4 = obj.values(undefined, true);
-        mapped1 = values4.map(f96633);
+        mapped1 = values4.map(f97249);
       }
       return mapped1.reduce(function(acc, item) {
         let obj = closure_2_18[item];
@@ -797,7 +797,7 @@ let obj = {
           obj = obj2;
         }
         let flag = acc;
-        if (f96636(obj)) {
+        if (f97252(obj)) {
           channel = channel.getChannel(item);
           if (null != channel) {
             if (channel.isGuildStageVoice()) {
@@ -842,7 +842,7 @@ let obj = {
     let reduced = !tmp;
     if (reduced) {
       const items = [channelId];
-      const f96636 = (dependencyMap) => dependencyMap.updateParticipant(f96636);
+      const f97252 = (dependencyMap) => dependencyMap.updateParticipant(f97252);
       reduced = items.reduce(function(acc, item) {
         let obj = closure_2_18[item];
         const tmp = item;
@@ -855,7 +855,7 @@ let obj = {
           obj = obj2;
         }
         let flag = acc;
-        if (f96636(obj)) {
+        if (f97252(obj)) {
           channel = channel.getChannel(item);
           if (null != channel) {
             if (channel.isGuildStageVoice()) {

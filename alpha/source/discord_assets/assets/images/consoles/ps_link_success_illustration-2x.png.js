@@ -1,8 +1,8 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15388
+// Function ID: 15389
 // Dependencies: [2]
 
-// Module 15163
+// Module 15388
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/images/consoles/ps_link_success_illustration-2x.png.js");

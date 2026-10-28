@@ -1,21 +1,21 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17782
+// Function ID: 17783
 // Name: HappeningNowCardActivitySubtitle
-// Dependencies: [19, 17, 4824, 1084, 21, 4972, 558, 576, 504, 5605, 9018, 16696, 1125, 8749, 10654, 2]
+// Dependencies: [19, 17, 4856, 1084, 21, 5004, 558, 576, 504, 5640, 9051, 16925, 1125, 8786, 10686, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 17547 (HappeningNowCardActivitySubtitle)
+// Module 17782 (HappeningNowCardActivitySubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import useChannelNameDefault from "useChannelName" /* 5605 */;
-import isStreamingDefault from "isStreaming" /* 8749 */;
-import HappeningNowCard from "HappeningNowCard" /* 16696 */;
+import useChannelNameDefault from "useChannelName" /* 5640 */;
+import isStreamingDefault from "isStreaming" /* 8786 */;
+import HappeningNowCard from "HappeningNowCard" /* 16925 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import createStyles from "createStyles" /* 4972 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function getActivitySubtitle(activity, stream) {
         }
         name2 = activity.name;
       } else {
-        if (tmp4(10654)(activity)) {
+        if (tmp4(10686)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;
@@ -124,7 +124,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
       let tmp29;
       if (null != stateFromStores) {
         const obj2 = { channel: stateFromStores };
-        tmp29 = tmp25(9018)(obj2);
+        tmp29 = tmp25(9051)(obj2);
       }
       cResult[3] = stateFromStores;
       cResult[4] = tmp29;
@@ -150,7 +150,7 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
       cResult[10] = tmp36;
       tmp33 = tmp36;
     }
-    const tmp32 = jsx(voiceState2(16696).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp27, children: tmp26 });
+    const tmp32 = jsx(voiceState2(16925).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp27, children: tmp26 });
     cResult[5] = tmp26;
     cResult[6] = tmp27;
     cResult[7] = tmp32;
@@ -163,12 +163,12 @@ export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubti
     const stateFromStores1 = obj.useStateFromStores(items1, () => ChannelStore.getChannel(voiceState2.channelId));
     const obj6 = { style: tmp3.cardDetails, children: null };
     const tmp9 = useChannelNameDefault(stateFromStores1);
-    const HappeningNowCardSubtitle = voiceState2(16696).HappeningNowCardSubtitle;
+    const HappeningNowCardSubtitle = voiceState2(16925).HappeningNowCardSubtitle;
     const tmp11 = View;
     const tmp8 = importDefault;
     if (null != stateFromStores1) {
       const obj7 = { channel: stateFromStores1 };
-      const tmp13 = tmp8(9018)(obj7);
+      const tmp13 = tmp8(9051)(obj7);
     }
     tmp10Result = tmp10(tmp11, obj6);
   }
@@ -190,7 +190,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
         tmp11 = cResult[2];
       }
       if (cResult[3] !== tmp11) {
-        const tmp16 = jsx(tmp8(16696).HappeningNowCardSubtitle, { lineClamp: 1, children: tmp11 });
+        const tmp16 = jsx(tmp8(16925).HappeningNowCardSubtitle, { lineClamp: 1, children: tmp11 });
         cResult[3] = tmp11;
         cResult[4] = tmp16;
         tmp14 = tmp16;

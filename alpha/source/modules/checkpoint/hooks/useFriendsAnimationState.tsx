@@ -1,18 +1,18 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13249
+// Function ID: 13250
 // Name: useFriendsAnimationState
-// Dependencies: [32, 19, 558, 576, 6365, 2]
+// Dependencies: [32, 19, 558, 576, 6399, 2]
 
-// Module 13032 (useFriendsAnimationState)
+// Module 13249 (useFriendsAnimationState)
 import react2 from "react" /* 576 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6365 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const FriendsAnimationState = { START: 0, [0]: "START", INTRO: 1, [1]: "INTRO", TRANSITION: 2, [2]: "TRANSITION", BEST: 3, [3]: "BEST", LEAVE: 4, [4]: "LEAVE", END: 5, [5]: "END" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAnimationState(route, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAnimationState(route, arg1) {
   let tmp12;
   let obj = react2;
   const cResult = obj.c(6);
@@ -33,10 +33,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAn
       tmp12 = !arg1;
       first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
       if (tmp12) {
-        tmp12 = first.route === tmp(6365).CheckpointRoute.SQUAD;
+        tmp12 = first.route === tmp(6399).CheckpointRoute.SQUAD;
       }
       if (tmp12) {
-        tmp12 = route === tmp(6365).CheckpointRoute.SIDEKICK;
+        tmp12 = route === tmp(6399).CheckpointRoute.SIDEKICK;
       }
       tmp8[1](obj2);
     }
@@ -82,21 +82,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAn
   cResult[2] = obj4;
   tmp5 = obj4;
 }) : (function useFriendsAnimationState(route, arg1) {
-  let first;
-  let tmp5;
-  let tmp6;
   let tmp7;
   let obj = react;
-  let obj2 = { route, hasShownSquad: route === CheckpointNavigation.CheckpointRoute.SQUAD, isTransitioning: false };
-  const tmp = require;
-  const tmp2 = dependencyMap;
-  [first, tmp5] = react.useState(obj2);
+  const obj2 = { route, hasShownSquad: route === CheckpointNavigation.CheckpointRoute.SQUAD, isTransitioning: false };
+  const tmp3 = _slicedToArray(react.useState(obj2), 2);
+  let first = tmp3[0];
   let closure_1 = tmp5;
   if (first.route !== route) {
-    const obj3 = { route, hasShownSquad: tmp6, isTransitioning: tmp7 };
-    tmp6 = first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
-    tmp7 = !arg1 && first.route === CheckpointNavigation.CheckpointRoute.SQUAD && route === CheckpointNavigation.CheckpointRoute.SIDEKICK;
-    tmp5(obj3);
+    const obj3 = { route, hasShownSquad: first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD, isTransitioning: tmp7 };
+    tmp7 = !arg1;
+    first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
+    if (tmp7) {
+      tmp7 = first.route === tmp(6399).CheckpointRoute.SQUAD;
+    }
+    if (tmp7) {
+      tmp7 = route === tmp(6399).CheckpointRoute.SIDEKICK;
+    }
+    tmp3[1](obj3);
   }
   const items = [first.isTransitioning];
   const effect = obj.useEffect(() => {
@@ -120,11 +122,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsAn
   } else if (CheckpointNavigation.CheckpointRoute.SIDEKICK_LEAVE === route) {
     return arg1 ? obj.BEST : obj.LEAVE;
   } else {
-    let tmp10 = obj;
     return obj.START;
   }
 });
-let result = size.fileFinishedImporting("modules/checkpoint/hooks/useFriendsAnimationState.tsx");
+const result = size.fileFinishedImporting("modules/checkpoint/hooks/useFriendsAnimationState.tsx");
 
 export { FriendsAnimationState };
 export const useFriendsAnimationState = tmp2;

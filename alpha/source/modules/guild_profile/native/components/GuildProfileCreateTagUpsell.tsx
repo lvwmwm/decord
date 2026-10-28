@@ -1,16 +1,16 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14420
+// Function ID: 14421
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 4972, 558, 576, 14197, 14199, 5211, 14200, 7280, 5235, 1125, 2]
+// Dependencies: [19, 17, 21, 5004, 558, 576, 14421, 14423, 5246, 14424, 7314, 5270, 1125, 2]
 
-// Module 14196 (GuildProfileCreateTagUpsell)
+// Module 14420 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14424 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfi
   const cResult = obj.c(7);
   guildId = guildId.guildId;
   const tmp4 = closure_5();
-  const obj2 = guildId(14197);
-  const guildTagCreationUpsell = obj2.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14199));
+  const obj2 = guildId(14421);
+  const guildTagCreationUpsell = obj2.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14423));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   if (guildTagCreationUpsell.isUpsellVisible) {
     if (cResult[0] === creatableGuilds) {
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfi
       }
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const Text = tmp(5235).Text;
+        const Text = tmp(5270).Text;
         const intl = tmp(1125).intl;
         const tmp11 = <Text variant="text-md/medium" color="text-muted">{intl.string(guildId(1125).t.J0YWRq)}</Text>;
         cResult[3] = tmp11;
@@ -76,13 +76,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfi
   let creatableGuilds;
   let tmp2 = guildId;
   const tmp = closure_5();
-  let obj = guildId(14197);
-  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14199));
+  let obj = guildId(14421);
+  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14423));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {
     ({ variant: "text-md/medium", color: "text-muted", children: intl.string(tmp2(1125).t.J0YWRq) });
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     intl = tmp2(1125).intl;
     tmp5 = <Pressable style={tmp.upsell} role="button" onPress={function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;

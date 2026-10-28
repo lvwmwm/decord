@@ -1,18 +1,18 @@
-// Module ID: 7523
-// Function ID: 7524
+// Module ID: 7557
+// Function ID: 7558
 // Name: PremiumModal
-// Dependencies: [19, 1084, 21, 1125, 6926, 7524, 14843, 14846, 14888, 14904, 558, 576, 7255, 7097, 2]
+// Dependencies: [19, 1084, 21, 1125, 6960, 7558, 15066, 15069, 15111, 15127, 558, 576, 7289, 7131, 2]
 
-// Module 7523 (PremiumModal)
+// Module 7557 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import NavigatorHeader from "NavigatorHeader" /* 6926 */;
-import Navigator2 from "Navigator" /* 7097 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7255 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7524 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14888 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14904 */;
+import NavigatorHeader from "NavigatorHeader" /* 6960 */;
+import Navigator2 from "Navigator" /* 7131 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7289 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7558 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 15111 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 15127 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ function getScreens(analyticsLocation) {
   };
   intl = analyticsLocation(1125).intl;
   obj[PREMIUM] = obj2;
-  obj3 = analyticsLocation(6926);
+  obj3 = analyticsLocation(6960);
   const PREMIUM_MANAGE_PLAN = UserSettingsSections.PREMIUM_MANAGE_PLAN;
   const obj4 = {
     title: intl2.string(analyticsLocation(1125).t["8jmdON"]),
@@ -82,7 +82,7 @@ function getScreens(analyticsLocation) {
   };
   intl3 = analyticsLocation(1125).intl;
   obj[GUILD_BOOSTING] = obj5;
-  obj6 = analyticsLocation(6926);
+  obj6 = analyticsLocation(6960);
   const PREMIUM_PLAN_SELECT = UserSettingsSections.PREMIUM_PLAN_SELECT;
   const obj7 = {
     title: intl4.string(analyticsLocation(1125).t.u95Dt4),
@@ -118,7 +118,7 @@ function getScreens(analyticsLocation) {
   };
   intl5 = analyticsLocation(1125).intl;
   obj[PREMIUM_GIFTING] = obj8;
-  obj9 = analyticsLocation(6926);
+  obj9 = analyticsLocation(6960);
   return obj;
 }
 const UserSettingsSections = Constants.UserSettingsSections;

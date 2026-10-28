@@ -1,9 +1,9 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9420
+// Function ID: 9421
 // Name: useWishlistGiftableItems
 // Dependencies: [19, 1084, 558, 576, 2]
 
-// Module 9388 (useWishlistGiftableItems)
+// Module 9420 (useWishlistGiftableItems)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import react from "react" /* 19 */;

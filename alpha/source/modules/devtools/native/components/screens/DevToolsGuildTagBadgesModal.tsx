@@ -1,16 +1,16 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17349
+// Function ID: 17350
 // Name: DevToolsGuildTagBadgesModal
-// Dependencies: [109, 19, 21, 9745, 558, 576, 7097, 9701, 10033, 17120, 2]
+// Dependencies: [109, 19, 21, 9777, 558, 576, 7131, 9733, 10065, 17350, 2]
 
-// Module 17119 (DevToolsGuildTagBadgesModal)
+// Module 17349 (DevToolsGuildTagBadgesModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9701 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10033 */;
-import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 17120 */;
+import HeaderShared from "HeaderShared" /* 9733 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10065 */;
+import DevToolsGuildTagBadgesScreenDefault from "DevToolsGuildTagBadgesScreen" /* 17350 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9745 */;
+import NativeStackView from "NativeStackView" /* 9777 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp = dependencyMap;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(7097);
+  let obj2 = accessibilityNativeStackOptions(7131);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function o(navigation) {

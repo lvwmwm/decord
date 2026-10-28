@@ -1,9 +1,9 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13942
+// Function ID: 13943
 // Name: ForumChannel
-// Dependencies: [19, 17, 4905, 6791, 4824, 7632, 6637, 13114, 1084, 1095, 21, 4972, 587, 6652, 558, 576, 9710, 1125, 5235, 9727, 7403, 504, 13725, 7381, 9, 9245, 9247, 9251, 7263, 6910, 5211, 13727, 1999, 5245, 12036, 13728, 9462, 9731, 13729, 5605, 13141, 13113, 13730, 8287, 7222, 10628, 5664, 5687, 7371, 7255, 7280, 8531, 11027, 9729, 13733, 8302, 10090, 10121, 5213, 5214, 10119, 6873, 5594, 11025, 8920, 13737, 13188, 2]
+// Dependencies: [19, 17, 4937, 6825, 4856, 7666, 6671, 13331, 1084, 1095, 21, 5004, 587, 6686, 558, 576, 9742, 1125, 5270, 9759, 7438, 504, 13943, 7416, 9, 9278, 9280, 9283, 7297, 6944, 5246, 13945, 1999, 5280, 12074, 13946, 9494, 9763, 13947, 5640, 13358, 13330, 13948, 8321, 7256, 10660, 5699, 5722, 7406, 7289, 7314, 8568, 11062, 9761, 13951, 8336, 10122, 10153, 5248, 5249, 10151, 6907, 5629, 11060, 8954, 13955, 13405, 2]
 
-// Module 13724 (ForumChannel)
+// Module 13942 (ForumChannel)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,31 +11,31 @@ import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1095 */;
 import intl3 from "intl" /* 1125 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5687 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 7403 */;
-import Tracking from "Tracking" /* 8287 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9251 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9710 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10090 */;
-import ForumPostDefault from "ForumPost" /* 13113 */;
-import ForumChannelStore from "ForumChannelStore" /* 13114 */;
-import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 13141 */;
-import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13733 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 7438 */;
+import Tracking from "Tracking" /* 8321 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9278 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9283 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9742 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10122 */;
+import ForumPostDefault from "ForumPost" /* 13330 */;
+import ForumChannelStore from "ForumChannelStore" /* 13331 */;
+import ForumPostPlaceholderDefault from "ForumPostPlaceholder" /* 13358 */;
+import CreateGameInvitePostModalActionCreators from "CreateGameInvitePostModalActionCreators" /* 13951 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4905 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6791 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import DraftStore from "DraftStore" /* 7632 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6637 */;
+import LurkingStore from "LurkingStore" /* 4937 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6825 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import DraftStore from "DraftStore" /* 7666 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6671 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
-import TextStyles_mod from "TextStyles" /* 6652 */;
+import createStyles_mod from "createStyles" /* 5004 */;
+import TextStyles_mod from "TextStyles" /* 6686 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let obj5;
 let size;
 let tmp;
 let unpackModuleId;
-const MemberVerificationModalActionCreators = tmp(6873);
+const MemberVerificationModalActionCreators = tmp(6907);
 function forumKeyExtractor(arg0, arg1) {
   let combined = arg0;
   if (arg0 === loading_section) {
@@ -78,10 +78,10 @@ function SortAndViewOptions(channel) {
         obj.hideActionSheet(combined);
       }
     };
-    obj.openLazy(asyncRequire(13727, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequire(13945, dependencyMap.paths), combined, obj2);
   }, items);
   const isMediaChannelResult = channel.isMediaChannel();
-  const Button = id(5245).Button;
+  const Button = id(5280).Button;
   const intl = id(1125).intl;
   const string = intl.string;
   const t = id(1125).t;
@@ -91,7 +91,7 @@ function SortAndViewOptions(channel) {
   } else {
     stringResult = string(t.xyYt8A);
   }
-  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12036).ArrowsUpDownIcon, { size: "xxs" }) };
+  let obj = { variant: "secondary", text: stringResult, onPress: callback, size: "sm", icon: tmp3(tmp4(12074).ArrowsUpDownIcon, { size: "xxs" }) };
   return closure_14(Button, obj);
 }
 function TagFilter(channel) {
@@ -103,12 +103,12 @@ function TagFilter(channel) {
     onPress: function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel };
-      obj.openLazy(asyncRequire(13728, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
+      obj.openLazy(asyncRequire(13946, dependencyMap.paths), "ForumTagFilterActionSheet", obj2);
     },
     size: "sm",
-    icon: closure_14(channel(9462).TagIcon, { size: "xxs" })
+    icon: closure_14(channel(9494).TagIcon, { size: "xxs" })
   };
-  const Button = channel(5245).Button;
+  const Button = channel(5280).Button;
   intl = channel(1125).intl;
   return closure_14(Button, obj);
 }
@@ -1617,7 +1617,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8302).changeThreadSettings;
+        const changeThreadSettings = tmp2(8336).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {
@@ -1716,7 +1716,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChanne
       }
       if (!tmp8) {
         let trimmed1;
-        const changeThreadSettings = tmp2(8302).changeThreadSettings;
+        const changeThreadSettings = tmp2(8336).changeThreadSettings;
         const id = tmp.id;
         DraftActionCreatorsDefault;
         if (null != searchQuery) {

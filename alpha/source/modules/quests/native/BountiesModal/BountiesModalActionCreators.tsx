@@ -1,11 +1,11 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16560
+// Function ID: 16561
 // Name: BountiesModalActionCreators
-// Dependencies: [6673, 16333, 1999, 2]
+// Dependencies: [6707, 16561, 1999, 2]
 
-// Module 16332 (BountiesModalActionCreators)
+// Module 16560 (BountiesModalActionCreators)
 import asyncRequire from "asyncRequire" /* 1999 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
 import size from "module_2" /* 2 */;
 
 const BOUNTIES_MODAL = "BOUNTIES_MODAL";
@@ -17,7 +17,7 @@ let obj = {
     let variant;
     ({ bountyId, sourceQuestContent, variant, bounty } = arg0);
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(16333, dependencyMap.paths), { bountyId, sourceQuestContent, variant, bounty }, BOUNTIES_MODAL);
+    obj.pushLazy(asyncRequire(16561, dependencyMap.paths), { bountyId, sourceQuestContent, variant, bounty }, BOUNTIES_MODAL);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

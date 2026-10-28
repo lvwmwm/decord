@@ -1,15 +1,15 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7663
+// Function ID: 7664
 // Name: GuildMemberSafetySearch
-// Dependencies: [32, 7630, 5805, 11, 4891, 4910, 2]
+// Dependencies: [32, 7664, 5840, 11, 4923, 4942, 2]
 // Exports: getDefaultSearchState
 
-// Module 7629 (GuildMemberSafetySearch)
+// Module 7663 (GuildMemberSafetySearch)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4891 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4910 */;
-import isEqualDefault from "isEqual" /* 5805 */;
-import GuildMemberSafetySearchUtils from "GuildMemberSafetySearchUtils" /* 7630 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4923 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4942 */;
+import isEqualDefault from "isEqual" /* 5840 */;
+import GuildMemberSafetySearchUtils from "GuildMemberSafetySearchUtils" /* 7664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
 set = new Set();
 let closure_4 = freeze(obj);
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
@@ -32,16 +32,16 @@ class GuildMemberSafetySearch {
   constructor(guildId) {
     const obj2 = Object.create(new.target.prototype);
     obj2.guildId = guildId;
-    obj2._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+    obj2._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
     obj2.hasDefaultQuery = true;
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
     new Set();
     return obj2;
   }
   reset() {
-    this._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+    this._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
     this.hasDefaultQuery = true;
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
     new Set();
   }
   updateSearchState(arg0) {
@@ -59,7 +59,7 @@ class GuildMemberSafetySearch {
       const _Set = Set;
       const self2 = this;
       const self3 = this;
-      const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+      const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
       self._searchState = obj;
       self.hasDefaultQuery = true;
       flag = true;
@@ -236,7 +236,7 @@ Object.defineProperty(GuildMemberSafetySearch.prototype, "requiresUsernameMatch"
 });
 
 export const getDefaultSearchState = function getDefaultSearchState() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "unicodeVersion", selectedSourceInviteCode: "user", selectedSort: "toCharArray$esjava$1" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "application", selectedSourceInviteCode: "Set", selectedSort: "ix" };
   new Set();
   return obj;
 };

@@ -1,19 +1,19 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10964
+// Function ID: 10965
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 10930, 21, 558, 576, 10931, 10936, 10940, 10941, 10962, 10968, 10992, 10997, 11022, 11025, 2]
+// Dependencies: [32, 19, 10965, 21, 558, 576, 10966, 10971, 10975, 10976, 10997, 11003, 11027, 11032, 11057, 11060, 2]
 
-// Module 10929 (ChatViewStickyHeader)
+// Module 10964 (ChatViewStickyHeader)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 10930 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10931 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10936 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10940 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10941 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10962 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10968 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10992 */;
-import ChatBannerDefault from "ChatBanner" /* 11025 */;
+import Constants from "Constants" /* 10965 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10966 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10971 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10975 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10976 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10997 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 11003 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 11027 */;
+import ChatBannerDefault from "ChatBanner" /* 11060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp17 = null;
     if (showUnreadsNotice) {
       const obj6 = { channel, clearUnreadsNotice };
-      tmp17 = metroRequire(tmp5(11022), obj6);
+      tmp17 = metroRequire(tmp5(11057), obj6);
     }
     cResult[7] = channel;
     cResult[8] = clearUnreadsNotice;
@@ -232,7 +232,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp10 = null;
     if (tmp4) {
       const obj7 = { channel };
-      tmp10 = metroRequire(tmp5(10997), obj7);
+      tmp10 = metroRequire(tmp5(11032), obj7);
     }
   }
   cResult[2] = channel;
@@ -270,7 +270,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp9 = null;
     if (first) {
       const obj = { channel };
-      tmp9 = metroRequire(tmp3(10997), obj);
+      tmp9 = metroRequire(tmp3(11032), obj);
     }
   }
   const items = [tmp9, , , ];
@@ -283,7 +283,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp14 = null;
   if (showUnreadsNotice) {
     const obj3 = { channel, clearUnreadsNotice };
-    tmp14 = metroRequire(tmp3(11022), obj3);
+    tmp14 = metroRequire(tmp3(11057), obj3);
   }
   const obj4 = { children: items };
   items[2] = tmp14;

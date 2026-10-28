@@ -1,72 +1,72 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11065
+// Function ID: 11066
 // Name: Messages
-// Dependencies: [32, 109, 19, 4973, 4823, 8621, 2042, 11031, 7586, 6773, 10005, 6726, 5191, 7392, 11032, 6812, 8312, 8137, 6785, 7568, 8596, 8268, 11035, 8269, 7205, 11036, 11037, 7563, 11038, 7754, 7697, 10011, 4906, 7405, 2065, 1204, 502, 4824, 7755, 11039, 4884, 4846, 6637, 5701, 6011, 4904, 5713, 5715, 6772, 5717, 8271, 1389, 5631, 6826, 11197, 5718, 1084, 11033, 1391, 21, 558, 576, 12, 504, 568, 6811, 1385, 4800, 11207, 11214, 11218, 11221, 9572, 7560, 2050, 8337, 6696, 10932, 10933, 9783, 8333, 7530, 11225, 5162, 10013, 9755, 11226, 10001, 8763, 6655, 10002, 8595, 11227, 11230, 8614, 7809, 11231, 10628, 11234, 13073, 2]
+// Dependencies: [32, 109, 19, 5005, 4855, 8658, 2042, 11066, 7620, 6807, 10037, 6760, 5226, 7427, 11067, 6846, 8346, 8171, 6819, 7602, 8633, 8302, 11070, 8303, 7239, 11071, 11072, 7597, 11073, 7788, 7731, 10043, 4938, 7440, 2065, 1204, 502, 4856, 7789, 11074, 4916, 4878, 6671, 5736, 6045, 4936, 5748, 5750, 6806, 5752, 8305, 1389, 5666, 6860, 11232, 5753, 1084, 11068, 1391, 21, 558, 576, 12, 504, 568, 6845, 1385, 4832, 11243, 11250, 11254, 11257, 9604, 7594, 2050, 8371, 6730, 10967, 10968, 9815, 8367, 7564, 11261, 5197, 10045, 9787, 11262, 10033, 8800, 6689, 10034, 8632, 11263, 11267, 8651, 7843, 11268, 10660, 11271, 13290, 2]
 
-// Module 11030 (Messages)
+// Module 11065 (Messages)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6811 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9783 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11226 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9815 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11262 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8621 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8658 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11031 */;
-import CacheStore from "CacheStore" /* 7586 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6773 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10005 */;
-import EmojiStore from "EmojiStore" /* 6726 */;
-import ExperimentStore from "ExperimentStore" /* 5191 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7392 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11032 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6812 */;
-import BasicGuildStore from "BasicGuildStore" /* 8312 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8137 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6785 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7568 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8596 */;
-import InteractionStore from "InteractionStore" /* 8268 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11035 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8269 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7205 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11036 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11037 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7563 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 11038 */;
-import PendingReplyStore from "PendingReplyStore" /* 7754 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7697 */;
-import SummaryStore from "SummaryStore" /* 10011 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4906 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7405 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11066 */;
+import CacheStore from "CacheStore" /* 7620 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10037 */;
+import EmojiStore from "EmojiStore" /* 6760 */;
+import ExperimentStore from "ExperimentStore" /* 5226 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7427 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11067 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6846 */;
+import BasicGuildStore from "BasicGuildStore" /* 8346 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8171 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7602 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8633 */;
+import InteractionStore from "InteractionStore" /* 8302 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11070 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8303 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7239 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11071 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11072 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7597 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 11073 */;
+import PendingReplyStore from "PendingReplyStore" /* 7788 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7731 */;
+import SummaryStore from "SummaryStore" /* 10043 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4938 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import EditMessageStore from "EditMessageStore" /* 7755 */;
-import GiftCodeStore from "GiftCodeStore" /* 11039 */;
-import GuildMemberStore from "GuildMemberStore" /* 4884 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6637 */;
-import InviteStore from "InviteStore" /* 5701 */;
-import MessageStore from "MessageStore" /* 6011 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import PresenceStore from "PresenceStore" /* 5713 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
-import ReadStateStore from "ReadStateStore" /* 6772 */;
-import SessionsStore from "SessionsStore" /* 5717 */;
-import UploadStore from "UploadStore" /* 8271 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import EditMessageStore from "EditMessageStore" /* 7789 */;
+import GiftCodeStore from "GiftCodeStore" /* 11074 */;
+import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6671 */;
+import InviteStore from "InviteStore" /* 5736 */;
+import MessageStore from "MessageStore" /* 6045 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import PresenceStore from "PresenceStore" /* 5748 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import SessionsStore from "SessionsStore" /* 5752 */;
+import UploadStore from "UploadStore" /* 8305 */;
 import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
-import SKUStore from "SKUStore" /* 6826 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 11197 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import SKUStore from "SKUStore" /* 6860 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 11232 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5753 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
@@ -793,7 +793,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -833,7 +833,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -868,7 +868,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -895,7 +895,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F160463 */ });
+          let item = arr.forEach(() => { /* body not rendered: F161404 */ });
         });
         return Array.from(set);
       }
@@ -917,7 +917,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -953,7 +953,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -980,7 +980,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F160463 */ });
+          let item = arr.forEach(() => { /* body not rendered: F161404 */ });
         });
         return Array.from(set);
       }
@@ -1002,7 +1002,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1038,7 +1038,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1080,7 +1080,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1116,7 +1116,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1161,7 +1161,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1198,7 +1198,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1243,7 +1243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1280,7 +1280,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1320,7 +1320,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F160462 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F161403 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2279,7 +2279,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
   let version;
-  const f109234 = () => {
+  const f109848 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2593,8 +2593,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   const stateFromStoresObject3 = tmp2Result113.useStateFromStoresObject(items48, () => messageInteractionStates.getMessageInteractionStates());
   const items49 = [LocalInteractionComponentStateStore];
   const tmp2Result114 = tmp2(tmp3[63]);
-  [tmp69, tmp70] = stateFromStores1(tmp2Result114.useStateFromStores(items49, f109234, [], tmp2(tmp3[76]).isVersionEqual), 2);
-  stateFromStores1(tmp2Result114.useStateFromStores(items49, f109234, [], tmp2(tmp3[76]).isVersionEqual), 2);
+  [tmp69, tmp70] = stateFromStores1(tmp2Result114.useStateFromStores(items49, f109848, [], tmp2(tmp3[76]).isVersionEqual), 2);
+  stateFromStores1(tmp2Result114.useStateFromStores(items49, f109848, [], tmp2(tmp3[76]).isVersionEqual), 2);
   const items50 = [ExperimentStore];
   const tmp2Result115 = tmp2(tmp3[63]);
   let stateFromStores22 = tmp2Result115.useStateFromStores(items50, () => hasLoadedExperiments.hasLoadedExperiments);

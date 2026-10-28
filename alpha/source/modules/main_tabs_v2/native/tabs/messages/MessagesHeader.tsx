@@ -1,25 +1,25 @@
-// Module ID: 17495
-// Function ID: 17496
+// Module ID: 17730
+// Function ID: 17731
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1084, 21, 587, 12093, 11063, 5251, 4972, 558, 576, 5053, 5248, 17490, 5152, 13239, 6927, 10845, 7957, 1125, 5235, 7149, 17496, 5245, 5674, 2]
+// Dependencies: [19, 17, 1084, 21, 587, 12131, 11098, 5286, 5004, 558, 576, 5085, 5283, 17725, 5187, 13456, 6961, 10880, 7991, 1125, 5270, 7183, 17731, 5280, 5709, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 17495 (MessagesHeader)
+// Module 17730 (MessagesHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5053 */;
-import spring from "spring" /* 5248 */;
-import ButtonConstants from "ButtonConstants" /* 5251 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5674 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6927 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7149 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11063 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12093 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17496 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5085 */;
+import spring from "spring" /* 5283 */;
+import ButtonConstants from "ButtonConstants" /* 5286 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5709 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6961 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7183 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11098 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12131 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17731 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,14 +96,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj = { opacity: withSpring(num) };
       return obj;
     };
-    let obj3 = { withSpring: tmp(5248).withSpring, scrollPosition };
-    const useAnimatedStyle = tmp(5053).useAnimatedStyle;
-    tmp(5053);
+    let obj3 = { withSpring: tmp(5283).withSpring, scrollPosition };
+    const useAnimatedStyle = tmp(5085).useAnimatedStyle;
+    tmp(5085);
     fn.__closure = obj3;
     fn.__workletHash = 17233409273245;
     fn.__initData = __initData;
     const animatedStyle = useAnimatedStyle(fn);
-    const tmpResult2 = tmp(17490);
+    const tmpResult2 = tmp(17725);
     const isHomeDrawerEnabled = tmpResult2.useIsHomeDrawerEnabled();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -224,7 +224,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       const obj4 = { size: "sm", color: nativeDefault.colors.WHITE };
-      const PlusLargeIcon = tmp(10845).PlusLargeIcon;
+      const PlusLargeIcon = tmp(10880).PlusLargeIcon;
       const tmp19 = closure_6(PlusLargeIcon, obj4);
       cResult[9] = tmp19;
       tmp18 = tmp19;
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       const obj5 = { variant: "primary", icon: tmp18, size: "sm", accessibilityLabel: intl.string(tmp(1125).t.jD1qzM), onPress: tmp15 };
-      const IconButton = tmp(7957).IconButton;
+      const IconButton = tmp(7991).IconButton;
       intl = tmp(1125).intl;
       const tmp21 = closure_6(IconButton, obj5);
       cResult[10] = tmp21;
@@ -357,8 +357,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj6 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier, accessibilityRole: "header", children: tmp22 };
       cResult[13] = tmp22;
-      cResult[14] = closure_6(tmp(5235).Text, obj6);
-      const tmp27 = closure_6(tmp(5235).Text, obj6);
+      cResult[14] = closure_6(tmp(5270).Text, obj6);
+      const tmp27 = closure_6(tmp(5270).Text, obj6);
     } else {
       class I {
         constructor() {
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj7 = { onPress: tmp14, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl2.string(tmp(1125).t["5h0QOP"]) };
-        const IconButton2 = tmp(7957).IconButton;
+        const IconButton2 = tmp(7991).IconButton;
         intl2 = tmp(1125).intl;
         const tmp34 = closure_6(IconButton2, obj7);
         const obj8 = { noMargin: true, onPress: tmp12, alternateVariant: true };
@@ -448,7 +448,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj9 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: tmp13, maxFontSizeMultiplier: 1, text: intl3.string(tmp(1125).t.zIJnA6) };
-        const Button = tmp(5245).Button;
+        const Button = tmp(5280).Button;
         intl3 = tmp(1125).intl;
         const tmp37 = closure_6(Button, obj9);
         cResult[20] = tmp37;
@@ -583,7 +583,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items[1] = obj;
     return items;
   }, items);
-  let obj = height(5053);
+  let obj = height(5085);
   const fn = function c() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -594,12 +594,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num) };
     return obj;
   };
-  let obj2 = { withSpring: height(5248).withSpring, scrollPosition };
+  let obj2 = { withSpring: height(5283).withSpring, scrollPosition };
   fn.__closure = obj2;
   fn.__workletHash = 5883359949214;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(17490);
+  let obj3 = height(17725);
   const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
   const callback = react.useCallback(() => {
     const obj = height(headerPanel[14]);
@@ -638,16 +638,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, []);
   const obj4 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj5), size: "sm", accessibilityLabel: intl.string(height(1125).t.jD1qzM), onPress: callback3 };
-  const tmp12 = scrollPosition(6927)("bespoke");
-  const IconButton = height(7957).IconButton;
+  const tmp12 = scrollPosition(6961)("bespoke");
+  const IconButton = height(7991).IconButton;
   obj5 = { size: "sm", color: scrollPosition(587).colors.WHITE };
-  PlusLargeIcon = height(10845).PlusLargeIcon;
+  PlusLargeIcon = height(10880).PlusLargeIcon;
   intl = height(1125).intl;
   const obj6 = { style: memo, children: items1 };
   const obj7 = { style: tmp.headerPanelTitle, children: closure_6(Text, obj8) };
   obj8 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier, accessibilityRole: "header", children: stringResult };
   const tmp14 = closure_6(IconButton, obj4);
-  Text = height(5235).Text;
+  Text = height(5270).Text;
   const intl2 = height(1125).intl;
   const string = intl2.string;
   const t = height(1125).t;
@@ -658,19 +658,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   items1 = [closure_6(closure_4, obj7), , , ];
   const obj9 = { style: tmp.headerPanelButtons, children: items2 };
-  const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(7149), accessibilityLabel: intl3.string(height(1125).t["5h0QOP"]) };
-  const IconButton2 = tmp3(7957).IconButton;
+  const obj10 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(7183), accessibilityLabel: intl3.string(height(1125).t["5h0QOP"]) };
+  const IconButton2 = tmp3(7991).IconButton;
   intl3 = tmp3(1125).intl;
-  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(17496), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
-  const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5674), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1125).t.zIJnA6) };
-  const Button = tmp3(5245).Button;
+  items2 = [closure_6(IconButton2, obj10), closure_6(scrollPosition(17731), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const obj11 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5709), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1125).t.zIJnA6) };
+  const Button = tmp3(5280).Button;
   intl4 = tmp3(1125).intl;
   items2[2] = closure_6(Button, obj11);
   items2[3] = tmp14;
   items1[1] = closure_7(closure_4, obj9);
   const obj12 = { style: items3 };
   items3 = [tmp.headerBorder, animatedStyle];
-  items1[2] = closure_6(scrollPosition(5053).View, obj12);
+  items1[2] = closure_6(scrollPosition(5085).View, obj12);
   items1[3] = tmp12;
   return closure_7(closure_4, obj6);
 }));

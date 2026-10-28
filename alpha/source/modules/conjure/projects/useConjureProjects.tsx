@@ -1,23 +1,23 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12355
+// Function ID: 12356
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2042, 7704, 4902, 4846, 4904, 5003, 10702, 6774, 558, 576, 6809, 11748, 1452, 504, 7347, 2]
+// Dependencies: [32, 19, 2042, 7738, 4934, 4878, 4936, 5035, 10734, 6808, 558, 576, 6843, 11786, 1452, 504, 7382, 2]
 
-// Module 12310 (useConjureProjects)
+// Module 12355 (useConjureProjects)
 import react2 from "react" /* 576 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6809 */;
-import ConjureUtils from "ConjureUtils" /* 7347 */;
-import ConjureActivity from "ConjureActivity" /* 11748 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6843 */;
+import ConjureUtils from "ConjureUtils" /* 7382 */;
+import ConjureActivity from "ConjureActivity" /* 11786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import UserProfileStore from "UserProfileStore" /* 7704 */;
-import GuildChannelStore from "GuildChannelStore" /* 4902 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
-import ConjureChatStore from "ConjureChatStore" /* 10702 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import UserProfileStore from "UserProfileStore" /* 7738 */;
+import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import ConjureChatStore from "ConjureChatStore" /* 10734 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11748).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11786).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;

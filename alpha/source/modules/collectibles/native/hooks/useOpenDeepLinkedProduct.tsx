@@ -1,13 +1,13 @@
-// Module ID: 17243
-// Function ID: 17244
+// Module ID: 17473
+// Function ID: 17474
 // Name: useOpenDeepLinkedProduct
-// Dependencies: [19, 7690, 558, 576, 504, 9475, 7662, 5211, 8665, 2]
+// Dependencies: [19, 7724, 558, 576, 504, 9507, 7696, 5246, 8702, 2]
 
-// Module 17243 (useOpenDeepLinkedProduct)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
+// Module 17473 (useOpenDeepLinkedProduct)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7690 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7724 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenDee
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
         const obj2 = { product: react, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-        const tmp8Result = tmp8(8665);
+        const tmp8Result = tmp8(8702);
         const result = tmp8Result.openProductDetailsActionSheet(obj2);
       }
     }
@@ -136,7 +136,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenDee
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
         const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-        const tmp8Result = tmp8(8665);
+        const tmp8Result = tmp8(8702);
         const result = tmp8Result.openProductDetailsActionSheet(obj2);
       }
     }

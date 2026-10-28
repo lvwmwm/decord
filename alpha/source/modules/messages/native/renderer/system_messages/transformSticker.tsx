@@ -1,12 +1,12 @@
-// Module ID: 8357
-// Function ID: 8358
+// Module ID: 8391
+// Function ID: 8392
 // Name: transformSticker
-// Dependencies: [4803, 6489, 8358, 8280, 1125, 4800, 2]
+// Dependencies: [4835, 6523, 8392, 8314, 1125, 4832, 2]
 // Exports: transformSticker
 
-// Module 8357 (transformSticker)
+// Module 8391 (transformSticker)
 import intl3 from "intl" /* 1125 */;
-import StickersConstants from "StickersConstants" /* 4803 */;
+import StickersConstants from "StickersConstants" /* 4835 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export const transformSticker = function transformSticker(tmp2Result4) {
   if (str2 == null) {
     str2 = "";
   }
-  NativeLottieRenderMode = tmp(8358).NativeLottieRenderMode;
+  NativeLottieRenderMode = tmp(8392).NativeLottieRenderMode;
   obj3 = {
     expensive() {
       const intl = intl3.intl;

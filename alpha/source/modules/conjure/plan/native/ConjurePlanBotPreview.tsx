@@ -1,19 +1,19 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12497
+// Function ID: 12498
 // Name: ConjurePlanBotPreview
-// Dependencies: [19, 17, 21, 8131, 4972, 587, 12334, 558, 576, 9774, 12446, 12452, 2]
+// Dependencies: [19, 17, 21, 8165, 5004, 587, 12379, 558, 576, 9806, 12492, 12498, 2]
 
-// Module 12451 (ConjurePlanBotPreview)
+// Module 12497 (ConjurePlanBotPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import RowGeneratorDefault from "RowGenerator" /* 8131 */;
-import ChatItemDefault from "ChatItem" /* 9774 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12334 */;
-import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 12452 */;
+import RowGeneratorDefault from "RowGenerator" /* 8165 */;
+import ChatItemDefault from "ChatItem" /* 9806 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12379 */;
+import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 12498 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

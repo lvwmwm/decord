@@ -1,15 +1,15 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11421
+// Function ID: 11422
 // Name: useActionBarHeight
-// Dependencies: [2011, 1084, 5267, 11385, 558, 576, 11388, 11393, 504, 2]
+// Dependencies: [2011, 1084, 5302, 11422, 558, 576, 11425, 11430, 504, 2]
 
-// Module 11384 (useActionBarHeight)
+// Module 11421 (useActionBarHeight)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5267 */;
-import CallBarAction from "CallBarAction" /* 11385 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11388 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11393 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
+import CallBarAction from "CallBarAction" /* 11422 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11425 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11430 */;
 import MediaEngineStore from "MediaEngineStore" /* 2011 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

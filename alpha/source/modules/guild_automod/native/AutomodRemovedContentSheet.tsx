@@ -1,22 +1,22 @@
-// Module ID: 18793
-// Function ID: 18794
+// Module ID: 19044
+// Function ID: 19045
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1084, 21, 8131, 4972, 587, 558, 576, 1125, 6013, 7250, 9774, 5235, 7300, 2]
+// Dependencies: [19, 17, 1084, 21, 8165, 5004, 587, 558, 576, 1125, 6047, 7284, 9806, 5270, 7334, 2]
 
-// Module 18793 (AutomodRemovedContentSheet)
+// Module 19044 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6013 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7250 */;
-import ActionSheet2 from "ActionSheet" /* 7300 */;
-import RowGeneratorDefault from "RowGenerator" /* 8131 */;
-import ChatItemDefault from "ChatItem" /* 9774 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6047 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7284 */;
+import ActionSheet2 from "ActionSheet" /* 7334 */;
+import RowGeneratorDefault from "RowGenerator" /* 8165 */;
+import ChatItemDefault from "ChatItem" /* 9806 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     if (null != tmp6) {
       tmp22 = <View style={tmp4.blockedMessage}>{null}</View>;
     } else {
-      tmp22 = jsx(tmp(5235).Text, { variant: "text-md/normal", color: "text-default", children: notice });
+      tmp22 = jsx(tmp(5270).Text, { variant: "text-md/normal", color: "text-default", children: notice });
     }
     cResult[8] = tmp6;
     cResult[9] = notice;
@@ -196,8 +196,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7300).ActionSheet;
-  const BottomSheetTitleHeader = message(7250).BottomSheetTitleHeader;
+  const ActionSheet = message(7334).ActionSheet;
+  const BottomSheetTitleHeader = message(7284).BottomSheetTitleHeader;
   let intl = message(1125).intl;
   const string = intl.string;
   if (null != thread) {
@@ -218,7 +218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5235).Text, obj6);
+    tmp4Result = tmp4(tmp5(5270).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 });

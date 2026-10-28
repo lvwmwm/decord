@@ -1,19 +1,19 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12789
+// Function ID: 12790
 // Name: OutcomeStep
-// Dependencies: [32, 19, 4846, 11033, 12734, 21, 4972, 1125, 2403, 558, 576, 12736, 504, 7450, 12737, 5235, 7902, 5978, 587, 12739, 5245, 7901, 2]
+// Dependencies: [32, 19, 4878, 11068, 12781, 21, 5004, 1125, 2403, 558, 576, 12783, 504, 7485, 12784, 5270, 7936, 6013, 587, 12786, 5280, 7935, 2]
 
-// Module 12742 (OutcomeStep)
+// Module 12789 (OutcomeStep)
 import intl14 from "intl" /* 1125 */;
 import _modDef2403 from "module_2403" /* 2403 */;
-import transitionToGuild from "transitionToGuild" /* 7450 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12734 */;
+import transitionToGuild from "transitionToGuild" /* 7485 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12781 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   ({ joinStatus, failureReason, guildJoinStatus } = code);
   code = code.code;
   closure_12();
-  const tmp6 = stateFromStores(12736)(code);
+  const tmp6 = stateFromStores(12783)(code);
   guildId = undefined;
   const tmp5 = stateFromStores;
   if (tmp6 != null) {
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
             }
           }
           const tmp21 = getOutcomeContent;
-          const tmp5Result = tmp5(12737);
+          const tmp5Result = tmp5(12784);
           if (tmp6 != null) {
             class C {
               constructor() {
@@ -468,7 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   code = code.code;
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(12736)(code);
+  const tmp4 = stateFromStores(12783)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -519,7 +519,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   }, items2);
   let displayNoun;
   const tmp14 = getOutcomeContent;
-  const tmp2Result = tmp2(12737);
+  const tmp2Result = tmp2(12784);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
@@ -543,25 +543,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   const tmp14Result = tmp14(joinStatus, failureReason, guildJoinStatus, obj3, obj4);
   ({ subtitle, cta } = tmp14Result);
   const title = tmp14Result.title;
-  const ModalScreen = tmp6(7901).ModalScreen;
-  const ModalContent = tmp6(7902).ModalContent;
+  const ModalScreen = tmp6(7935).ModalScreen;
+  const ModalContent = tmp6(7936).ModalContent;
   const obj5 = { spacing: tmp2(587).space.PX_8, children: items3 };
-  const Stack = tmp6(5978).Stack;
+  const Stack = tmp6(6013).Stack;
   items3 = [, ];
   const obj6 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
-  items3[0] = closure_10(guildId(5235).Text, obj6);
+  items3[0] = closure_10(guildId(5270).Text, obj6);
   let tmp20Result = null != subtitle;
   if (tmp20Result) {
     const obj7 = { variant: "text-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-    tmp20Result = tmp20(tmp6(5235).Text, obj7);
+    tmp20Result = tmp20(tmp6(5270).Text, obj7);
   }
   const obj8 = { children: items4 };
   items3[1] = tmp20Result;
   items4 = [, ];
   const obj9 = { children: closure_11(Stack, obj5) };
   items4[0] = closure_10(ModalContent, obj9);
-  const obj10 = { children: closure_10(guildId(5245).Button, obj11) };
-  const ModalFooter = tmp6(12739).ModalFooter;
+  const obj10 = { children: closure_10(guildId(5280).Button, obj11) };
+  const ModalFooter = tmp6(12786).ModalFooter;
   obj11 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj10);
   return closure_11(ModalScreen, obj8);

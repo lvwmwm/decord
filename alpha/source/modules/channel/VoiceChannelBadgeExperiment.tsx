@@ -1,13 +1,13 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14767
+// Function ID: 14768
 // Name: VoiceChannelBadgeExperiment
-// Dependencies: [5192, 5189, 558, 576, 2]
+// Dependencies: [5227, 5224, 558, 576, 2]
 // Exports: getVoiceChannelBadgeExperiment
 
-// Module 14544 (VoiceChannelBadgeExperiment)
+// Module 14767 (VoiceChannelBadgeExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 5192 */;
-import createExperiment from "module_5189" /* 5189 */;
+import ExperimentConstants from "ExperimentConstants" /* 5227 */;
+import createExperiment from "module_5224" /* 5224 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

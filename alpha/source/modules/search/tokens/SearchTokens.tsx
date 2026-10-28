@@ -1,28 +1,28 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13464
+// Function ID: 13465
 // Name: SearchTokens
-// Dependencies: [32, 4824, 4902, 4914, 4875, 5027, 1389, 13248, 13249, 1084, 2046, 12, 1125, 5605, 5026, 13250, 13251, 6829, 6709, 9067, 13252, 13245, 2]
+// Dependencies: [32, 4856, 4934, 4946, 4907, 5059, 1389, 13465, 13466, 1084, 2046, 12, 1125, 5640, 5058, 13467, 13468, 6863, 6743, 9100, 13469, 13462, 2]
 // Exports: buildCrossDMSearchTokensConfig, getLocalizedAuthorTypeAnswer, getLocalizedHasAnswer, getRandomDateShortcut, isMeAutcompleteAnswer, isSearchFilterTokenType, isValidFilterAnswerForSubmit, rebuildSearchTokenConfigs
 
-// Module 13247 (SearchTokens)
+// Module 13464 (SearchTokens)
 import _modDef12 from "module_12" /* 12 */;
 import intl50 from "intl" /* 1125 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import UserUtilsDefault from "UserUtils" /* 5026 */;
-import useChannelName from "useChannelName" /* 5605 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6709 */;
-import QueryTokenizer from "QueryTokenizer" /* 13245 */;
-import SearchTokensUtils from "SearchTokensUtils" /* 13251 */;
-import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 13252 */;
+import UserUtilsDefault from "UserUtils" /* 5058 */;
+import useChannelName from "useChannelName" /* 5640 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6743 */;
+import QueryTokenizer from "QueryTokenizer" /* 13462 */;
+import SearchTokensUtils from "SearchTokensUtils" /* 13468 */;
+import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 13469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4902 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import StreamerModeStore from "StreamerModeStore" /* 5027 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4934 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import StreamerModeStore from "StreamerModeStore" /* 5059 */;
 import UserStore from "UserStore" /* 1389 */;
-import SearchRecentMessageStore from "SearchRecentMessageStore" /* 13248 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13249 */;
+import SearchRecentMessageStore from "SearchRecentMessageStore" /* 13465 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13466 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -37,9 +37,9 @@ let closure_18;
 let closure_19;
 let hasOwnProperty;
 let metroRequire;
-const f117792 = (item) => item.toLowerCase();
-const f117793 = (item) => item.toLowerCase();
-const f117794 = (item) => item.toString();
+const f118489 = (item) => item.toLowerCase();
+const f118490 = (item) => item.toLowerCase();
+const f118491 = (item) => item.toString();
 function getShortcuts() {
   let obj = {};
   const intl = intl50.intl;
@@ -159,7 +159,7 @@ function dateValidator(getFullMatch, arg1) {
     const self8 = this;
     const obj20 = _modDef2046;
     const monthsResult = obj20.months();
-    set = new Set(monthsResult.map(f117792));
+    set = new Set(monthsResult.map(f118489));
     if (set.has(formatted)) {
       const obj17 = _modDef2046(formatted, "MMMM");
       const localResult = obj17.local();
@@ -174,7 +174,7 @@ function dateValidator(getFullMatch, arg1) {
       const self2 = this;
       const tmp26Result = _modDef2046;
       const weekdaysResult = tmp26Result.weekdays();
-      const set1 = new Set(weekdaysResult.map(f117793));
+      const set1 = new Set(weekdaysResult.map(f118490));
       if (set1.has(formatted)) {
         const obj14 = _modDef2046(formatted, "dddd");
         const localResult1 = obj14.local();
@@ -194,7 +194,7 @@ function dateValidator(getFullMatch, arg1) {
         const self6 = this;
         const tmp26Result2 = _modDef12;
         const rangeResult = tmp26Result2.range(2015, fullYear + 1);
-        set2 = new Set(rangeResult.map(f117794));
+        set2 = new Set(rangeResult.map(f118491));
         if (set2.has(formatted)) {
           const obj11 = _modDef2046(formatted, "YYYY");
           const localResult2 = obj11.local();
@@ -252,7 +252,7 @@ function isValidChannelAutocomplete(token, items) {
       const substr = str.substring(1, str.length - 1);
       replaced = substr.replaceAll(/\\(.)/g, (arg0, arg1) => arg1);
     }
-    obj2 = replaced(13250);
+    obj2 = replaced(13467);
     if (obj2.isGuildLikeSearchContext(items)) {
       let allThreadsForGuild;
       const guildId = items.guildId;
@@ -390,19 +390,19 @@ function isValidPinnedAutocomplete(getMatch) {
 function generateDateAutocompletions() {
   const obj = _modDef2046;
   const monthsResult = obj.months();
-  const items = [...from(new Set(monthsResult.map(f117792)))];
+  const items = [...from(new Set(monthsResult.map(f118489)))];
   const from2 = Array.from;
-  new Set(monthsResult.map(f117792));
+  new Set(monthsResult.map(f118489));
   obj2 = _modDef2046;
   const weekdaysResult = obj2.weekdays();
   const from3 = Array.from;
-  const set1 = new Set(weekdaysResult.map(f117793));
+  const set1 = new Set(weekdaysResult.map(f118490));
   const arraySpreadResult = HermesBuiltin.arraySpread(items, from2(set1), tmp2);
   const date = new Date();
   const fullYear = date.getFullYear();
   const obj4 = _modDef12;
   const rangeResult = obj4.range(2015, fullYear + 1);
-  set2 = new Set(rangeResult.map(f117794));
+  set2 = new Set(rangeResult.map(f118491));
   const arraySpreadResult3 = HermesBuiltin.arraySpread(items, from3(set2), arraySpreadResult);
   HermesBuiltin.arraySpread(items, Object.keys(getShortcuts()), arraySpreadResult3);
   return items;
@@ -615,16 +615,16 @@ function getChannelAutocompletions(arg0) {
       const guildId = searchContext.guildId;
       _require = undefined;
       importDefault = undefined;
-      let obj = { query: substr1, type, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, includeAllThreads: true, boosters: tmpResult.getBoosterMap(tmp(9067).AutocompleterResultTypes.TEXT_CHANNEL) };
+      let obj = { query: substr1, type, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, includeAllThreads: true, boosters: tmpResult.getBoosterMap(tmp(9100).AutocompleterResultTypes.TEXT_CHANNEL) };
       const queryChannels = AutocompleteUtilsDefault.queryChannels;
       AutocompleteUtilsDefault;
-      tmpResult = tmp(6709);
+      tmpResult = tmp(6743);
       const concat = queryChannels(obj).concat;
       queryChannels(obj);
-      obj2 = { query: substr1, type: type2, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, boosters: tmpResult4.getBoosterMap(tmp(9067).AutocompleterResultTypes.VOICE_CHANNEL) };
+      obj2 = { query: substr1, type: type2, guildId, limit: Infinity, allowEmptyQueries: true, allowSnowflake: true, boosters: tmpResult4.getBoosterMap(tmp(9100).AutocompleterResultTypes.VOICE_CHANNEL) };
       const queryChannels2 = AutocompleteUtilsDefault.queryChannels;
       AutocompleteUtilsDefault;
-      tmpResult4 = tmp(6709);
+      tmpResult4 = tmp(6743);
       const combined = concat(queryChannels2(obj2));
       const mapped = combined.map((record) => record.record);
       const tmp9 = importDefault;
@@ -657,17 +657,17 @@ function getChannelAutocompletions(arg0) {
         if (!StreamerModeStore.hidePersonalInformation) {
           const tmp5 = AutocompleteUtilsDefault;
           const queryGroupDMs = tmp5.queryGroupDMs;
-          const obj4 = { query: substr1, limit: maxResults, fuzzy: true, boosters: tmpResult5.getBoosterMap(tmp(9067).AutocompleterResultTypes.GROUP_DM) };
-          tmpResult5 = tmp(6709);
+          const obj4 = { query: substr1, limit: maxResults, fuzzy: true, boosters: tmpResult5.getBoosterMap(tmp(9100).AutocompleterResultTypes.GROUP_DM) };
+          tmpResult5 = tmp(6743);
           const queryGroupDMsResult = queryGroupDMs(obj4);
           const tmp6 = AutocompleteUtilsDefault;
           const queryDMChannels = tmp6.queryDMChannels;
-          const obj5 = { query: substr1, limit: maxResults, boosters: tmpResult6.getBoosterMap(tmp(9067).AutocompleterResultTypes.USER) };
-          tmpResult6 = tmp(6709);
+          const obj5 = { query: substr1, limit: maxResults, boosters: tmpResult6.getBoosterMap(tmp(9100).AutocompleterResultTypes.USER) };
+          tmpResult6 = tmp(6743);
           const queryDMChannelsResult = queryDMChannels(obj5);
           const tmp8 = _modDef12;
           const tmp8Result = tmp8(queryGroupDMsResult.concat(queryDMChannelsResult));
-          const sorted = tmp8Result.sort(tmp(9067).sortByMatchScore);
+          const sorted = tmp8Result.sort(tmp(9100).sortByMatchScore);
           const mapped1 = sorted.map((record) => {
             let id;
             record = record.record;
@@ -743,7 +743,7 @@ function makeSearchTokenConfigs(arg0) {
   let regExp7;
   let regExp8;
   let regExp9;
-  const f117804 = (text) => ({ text });
+  const f118501 = (text) => ({ text });
   _require = arg0;
   const intl = require("intl").intl;
   let items = [intl.string(require("intl").t.tPZo4p), , ];
@@ -827,7 +827,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f117804);
+      const iter = takeResult.map(f118501);
       return iter.value();
     }
   };
@@ -889,7 +889,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f117804);
+      const iter = takeResult.map(f118501);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -921,7 +921,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f117804);
+      const iter = takeResult.map(f118501);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -955,7 +955,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f117804);
+      const iter = takeResult.map(f118501);
       const valueResult = iter.value();
       return valueResult.map((text) => {
         const obj = { group: FILTER_AFTER, key: "" + FILTER_AFTER + "-" + text.text };
@@ -1079,7 +1079,7 @@ function makeSearchTokenConfigs(arg0) {
         return tmp(closure_0, toLocaleLowerCase.toLocaleLowerCase());
       });
       const takeResult = found.take(maxResults);
-      const iter = takeResult.map(f117804);
+      const iter = takeResult.map(f118501);
       return iter.value();
     }
   };

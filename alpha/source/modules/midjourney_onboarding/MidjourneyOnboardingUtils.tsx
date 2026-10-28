@@ -1,14 +1,14 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15363
+// Function ID: 15364
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [4846, 5003, 15139, 558, 576, 504, 2]
+// Dependencies: [4878, 5035, 15364, 558, 576, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow
 
-// Module 15138 (MidjourneyOnboardingUtils)
+// Module 15363 (MidjourneyOnboardingUtils)
 import react from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15139 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15364 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

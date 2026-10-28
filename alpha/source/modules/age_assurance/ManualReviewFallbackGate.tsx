@@ -1,13 +1,13 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7962
+// Function ID: 7963
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 7929, 7898, 7930, 584, 7931, 2]
+// Dependencies: [5, 7963, 7932, 7964, 584, 7965, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 7928 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 7898 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7929 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7930 */;
+// Module 7962 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7963 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 13501
-// Function ID: 13502
+// Module ID: 13720
+// Function ID: 13721
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 13502, 558, 576, 8370, 504, 1125, 2567, 2]
+// Dependencies: [19, 13721, 558, 576, 8404, 504, 1125, 2567, 2]
 
-// Module 13501 (useGuildPowerupsWarningConfig)
+// Module 13720 (useGuildPowerupsWarningConfig)
 import intl3 from "intl" /* 1125 */;
 import _modDef2567 from "module_2567" /* 2567 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8370 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8404 */;
 import react_mod from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13502 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13721 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

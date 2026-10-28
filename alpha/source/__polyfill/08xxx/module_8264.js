@@ -1,42 +1,106 @@
 // Module ID: 8264
 // Function ID: 8265
-// Dependencies: [8212]
+// Dependencies: [8263]
 
 // Module 8264
-const require = globalThis.__r;
+import _modDef8263 from "module_8263" /* 8263 */;
 
-let closure_2 = [6, 7, 99];
 
 export default {
-  get(buffer, Compression, arg2) {
-    let prop = Compression;
-    if (prop) {
-      const hasItem = undefined === Compression.Compression || closure_2.includes(Compression.Compression.value);
-      prop = hasItem;
+  read(buffer, sum) {
+    let str6;
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    const obj = _modDef8263;
+    const shortAt = obj.getShortAt(buffer, sum);
+    let tmp4;
+    if (15 <= shortAt) {
+      const tmpResult = _modDef8263;
+      const byteAt = tmpResult.getByteAt(buffer, sum + 14);
+      const _HermesInternal = HermesInternal;
+      tmp4 = { value: byteAt, description: "" + byteAt + "px" };
+      const obj2 = { value: byteAt, description: "" + byteAt + "px" };
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat;
+    let tmp7;
+    if (16 <= shortAt) {
+      const tmpResult7 = _modDef8263;
+      const byteAt1 = tmpResult7.getByteAt(buffer, sum + 15);
+      const _HermesInternal2 = HermesInternal;
+      tmp7 = { value: byteAt1, description: "" + byteAt1 + "px" };
+      const obj3 = { value: byteAt1, description: "" + byteAt1 + "px" };
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat.value;
+    let tmp10;
+    if (9 <= shortAt) {
+      const tmpResult8 = _modDef8263;
+      const byteAt2 = tmpResult8.getByteAt(buffer, sum + 7);
+      const tmpResult9 = _modDef8263;
+      const byteAt3 = tmpResult9.getByteAt(buffer, sum + 7 + 1);
+      tmp10 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp11}.${tmp12}` };
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength;
+    const obj5 = { "JFIF Version": tmp10, "Resolution Unit": tmp13, XResolution: tmp15, YResolution: tmp17, "JFIF Thumbnail Width": tmp4, "JFIF Thumbnail Height": tmp7 };
+    tmp13 = undefined;
+    if (10 <= shortAt) {
+      const tmpResult10 = _modDef8263;
+      const byteAt4 = tmpResult10.getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: str6 };
+      str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
+          }
+          str7 = str8;
+        }
+        str6 = str7;
+      }
+      tmp13 = obj6;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength.value;
+    tmp15 = undefined;
+    if (12 <= shortAt) {
+      const tmpResult11 = _modDef8263;
+      const shortAt1 = tmpResult11.getShortAt(buffer, sum + 10);
+      tmp15 = { value: shortAt1, description: "" + shortAt1 };
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
     }
-    if (prop) {
-      Compression.type = "image/jpeg";
-      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
-      buffer = buffer.buffer;
-      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
-      let obj = require("module_8212");
-      obj.deferInit(Compression, "base64", function() {
-        const obj = require("module_8212");
-        return obj.getBase64Image(this.image);
-      });
+    tmp17 = undefined;
+    if (14 <= shortAt) {
+      const tmpResult12 = _modDef8263;
+      const shortAt2 = tmpResult12.getShortAt(buffer, sum + 12);
+      tmp17 = { value: shortAt2, description: "" + shortAt2 };
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
     }
-    return Compression;
+    if (undefined !== tmp4) {
+      if (undefined !== tmp7) {
+        const result = 3 * tmp4.value * tmp7.value;
+        let tmp20;
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            tmp20 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            const obj10 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+          }
+        }
+        if (tmp20) {
+          obj5["JFIF Thumbnail"] = tmp20;
+        }
+      }
+    }
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp22]) {
+          continue;
+        } else {
+          delete obj9[tmp23];
+          continue;
+        }
+        continue;
+      }
+    }
+    return obj5;
   }
 };

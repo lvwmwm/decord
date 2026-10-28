@@ -1,11 +1,11 @@
-// Module ID: 4873
-// Function ID: 4874
+// Module ID: 4905
+// Function ID: 4906
 // Name: isChangelogUser
-// Dependencies: [4874, 2]
+// Dependencies: [4906, 2]
 // Exports: default
 
-// Module 4873 (isChangelogUser)
-import ChangelogConstants from "ChangelogConstants" /* 4874 */;
+// Module 4905 (isChangelogUser)
+import ChangelogConstants from "ChangelogConstants" /* 4906 */;
 import size from "module_2" /* 2 */;
 
 const SYSTEM_UPDATES_USER_ID = ChangelogConstants.SYSTEM_UPDATES_USER_ID;

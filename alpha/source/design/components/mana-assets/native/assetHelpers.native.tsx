@@ -1,10 +1,10 @@
-// Module ID: 6997
-// Function ID: 6998
+// Module ID: 7031
+// Function ID: 7032
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: getAssetResizeMode, getAssetSizeStyle, getAssetSource
 
-// Module 6997 (react-native)
+// Module 7031 (react-native)
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;
 

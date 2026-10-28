@@ -1,22 +1,22 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17404
+// Function ID: 17405
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1199, 558, 576, 5235, 5245, 4972, 587, 5978, 8951, 2]
+// Dependencies: [32, 19, 17, 21, 1199, 558, 576, 5270, 5280, 5004, 587, 6013, 8985, 2]
 
-// Module 17174 (UserSettingsDesignSystemLegacyButton)
+// Module 17404 (UserSettingsDesignSystemLegacyButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
-import Stack_Stack from "Stack/Stack" /* 5978 */;
-import Form from "Form" /* 8951 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
+import Stack_Stack from "Stack/Stack" /* 6013 */;
+import Form from "Form" /* 8985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -275,7 +275,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compar
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5235).Text;
+  const Text = tmp4(5270).Text;
   if (hasItem) {
     str = "text-default";
   }

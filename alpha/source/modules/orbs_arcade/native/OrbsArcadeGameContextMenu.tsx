@@ -1,16 +1,16 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16701
+// Function ID: 16702
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [109, 5, 19, 1389, 21, 16439, 5664, 1125, 558, 576, 504, 13979, 16450, 12275, 7957, 9139, 9763, 2]
+// Dependencies: [109, 5, 19, 1389, 21, 16668, 5699, 1125, 558, 576, 504, 14198, 16679, 12302, 7991, 9172, 9795, 2]
 
-// Module 16472 (OrbsArcadeGameContextMenu)
+// Module 16701 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1125 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9139 */;
-import RefreshIcon from "RefreshIcon" /* 12275 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 13979 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16439 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16450 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9172 */;
+import RefreshIcon from "RefreshIcon" /* 12302 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14198 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16668 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16679 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -146,11 +146,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     tmp8 = cResult[2];
   }
   if (cResult[3] !== game.id) {
-    const items1 = [{ label: tmp8, IconComponent: tmp(13979).CircleQuestionIcon, action }];
+    const items1 = [{ label: tmp8, IconComponent: tmp(14198).CircleQuestionIcon, action }];
     cResult[3] = game.id;
     cResult[4] = items1;
     tmp10 = items1;
-    const obj2 = { label: tmp8, IconComponent: tmp(13979).CircleQuestionIcon, action };
+    const obj2 = { label: tmp8, IconComponent: tmp(14198).CircleQuestionIcon, action };
   } else {
     tmp10 = cResult[4];
   }
@@ -163,11 +163,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     tmp11 = cResult[5];
   }
   if (cResult[6] !== game.id) {
-    const items2 = [{ label: tmp11, IconComponent: tmp(12275).RefreshIcon, variant: "destructive", action: action2 }];
+    const items2 = [{ label: tmp11, IconComponent: tmp(12302).RefreshIcon, variant: "destructive", action: action2 }];
     cResult[6] = game.id;
     cResult[7] = items2;
     tmp13 = items2;
-    const obj3 = { label: tmp11, IconComponent: tmp(12275).RefreshIcon, variant: "destructive", action: action2 };
+    const obj3 = { label: tmp11, IconComponent: tmp(12302).RefreshIcon, variant: "destructive", action: action2 };
   } else {
     tmp13 = cResult[7];
   }
@@ -219,7 +219,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
             return <IconButton ref={ref} variant="secondary-overlay" icon={AssetRegistryDefault} accessibilityLabel={intl.string(game(dependencyMap[7]).t.reWgFH)} accessibilityHint={intl2.string(game(dependencyMap[7]).t.hd0b7t)} />;
           }
         }
-        const tmp19 = jsx(tmp(9763).ContextMenu, { items: tmp14, triggerOnTap: true, children: tmp17 });
+        const tmp19 = jsx(tmp(9795).ContextMenu, { items: tmp14, triggerOnTap: true, children: tmp17 });
         cResult[13] = tmp14;
         cResult[14] = tmp19;
         tmp18 = tmp19;
@@ -320,7 +320,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     const items = [obj];
     return items;
   }, items2);
-  const ContextMenu = game(9763).ContextMenu;
+  const ContextMenu = game(9795).ContextMenu;
   const tmp4 = jsx;
   if (stateFromStores) {
     const items3 = [memo, memo1];

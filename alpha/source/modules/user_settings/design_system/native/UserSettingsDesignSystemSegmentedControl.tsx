@@ -1,18 +1,18 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17418
+// Function ID: 17419
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4972, 587, 558, 576, 5235, 8901, 9146, 11151, 4981, 5245, 5978, 2]
+// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 5270, 8935, 9179, 11186, 5013, 5280, 6013, 2]
 
-// Module 17188 (UserSettingsDesignSystemSegmentedControl)
+// Module 17418 (UserSettingsDesignSystemSegmentedControl)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import Text_Text from "Text/Text" /* 5235 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import Text_Text from "Text/Text" /* 5270 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7306
+// Function ID: 7307
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1084, 21, 558, 576, 5206, 6503, 1125, 7273, 7274, 1264, 5712, 1414, 4979, 1199, 5679, 7268, 2]
+// Dependencies: [5, 19, 1084, 21, 558, 576, 5241, 6537, 1125, 7307, 7308, 1264, 5747, 1414, 5011, 1199, 5714, 7302, 2]
 
-// Module 7272 (ProviderConnectionCard)
+// Module 7306 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import native from "native" /* 1199 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4979 */;
-import LinkIcon from "LinkIcon" /* 5679 */;
-import PlatformsDefault from "Platforms" /* 6503 */;
+import shared from "shared" /* 5011 */;
+import LinkIcon from "LinkIcon" /* 5714 */;
+import PlatformsDefault from "Platforms" /* 6537 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

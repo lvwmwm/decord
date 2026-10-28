@@ -1,9 +1,9 @@
-// Module ID: 5159
-// Function ID: 5160
+// Module ID: 5194
+// Function ID: 5195
 // Name: Types
 // Dependencies: [2]
 
-// Module 5159 (Types)
+// Module 5194 (Types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/Types.tsx");

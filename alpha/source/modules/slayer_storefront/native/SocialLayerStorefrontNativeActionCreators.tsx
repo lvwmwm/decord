@@ -1,20 +1,20 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 10590
+// Function ID: 10591
 // Name: SocialLayerStorefrontNativeActionCreators
-// Dependencies: [6826, 21, 5910, 1125, 3701, 10559, 6673, 10560, 1999, 2062, 10564, 10580, 13889, 2]
+// Dependencies: [6860, 21, 5945, 1125, 3733, 10591, 6707, 10592, 1999, 2062, 10596, 10612, 14108, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 10558 (SocialLayerStorefrontNativeActionCreators)
+// Module 10590 (SocialLayerStorefrontNativeActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1125 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2062 */;
-import _modDef3701 from "module_3701" /* 3701 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10559 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10564 */;
-import SKUStore from "SKUStore" /* 6826 */;
+import _modDef3733 from "module_3733" /* 3733 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10591 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10596 */;
+import SKUStore from "SKUStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ export const SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY = "social-l
 export const openSocialLayerStorefrontUnsupportedOnMobileAlert = function openSocialLayerStorefrontUnsupportedOnMobileAlert() {
   let intl;
   let intl2;
-  const obj = { title: intl.string(_modDef3701.XjhkM5), body: intl2.string(_modDef3701.NBFa62) };
+  const obj = { title: intl.string(_modDef3733.XjhkM5), body: intl2.string(_modDef3733.NBFa62) };
   const show = actions_AlertActionCreatorsDefault.show;
   actions_AlertActionCreatorsDefault;
   intl = intl3.intl;
@@ -40,7 +40,7 @@ export const openSocialLayerStorefrontProductDetailsModal = function openSocialL
   const obj = SocialLayerStorefrontActionCreators;
   const socialLayerStorefrontConfig = obj.fetchSocialLayerStorefrontConfig();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(10560, dependencyMap.paths), merged, c5, { presentation: "modal" });
+  obj2.pushLazy(asyncRequire(10592, dependencyMap.paths), merged, c5, { presentation: "modal" });
 };
 export const closeSocialLayerStorefrontProductDetailsModal = function closeSocialLayerStorefrontProductDetailsModal() {
   const obj = ModalActionCreatorsDefault;
@@ -51,7 +51,7 @@ export const openSocialLayerStorefrontGiftModal = function openSocialLayerStoref
   const tmp2 = dependencyMap;
   if (obj.isSocialLayerStorefrontGiftingSupported()) {
     const tmp3Result = ModalActionCreatorsDefault;
-    tmp3Result.pushLazy(asyncRequire(10580, tmp2.paths), skuId, c6);
+    tmp3Result.pushLazy(asyncRequire(10612, tmp2.paths), skuId, c6);
   } else {
     const tmp3Result2 = redirectToSlayerStorefrontWebDefault;
     const value = SKUStore.get(skuId.skuId);
@@ -72,7 +72,7 @@ export const openSocialLayerStorefrontProductSelfPurchaseSuccessModal = function
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13889, dependencyMap.paths);
+      const promise = asyncRequire(14108, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
         return (arg0) => {
@@ -91,7 +91,7 @@ export const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = function
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13889, dependencyMap.paths);
+      const promise = asyncRequire(14108, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
         return (arg0) => {

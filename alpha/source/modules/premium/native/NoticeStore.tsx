@@ -1,16 +1,16 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15293
+// Function ID: 15294
 // Name: NoticeStore
-// Dependencies: [7561, 1391, 1084, 510, 2046, 504, 584, 2]
+// Dependencies: [7595, 1391, 1084, 510, 2046, 504, 584, 2]
 
-// Module 15070 (NoticeStore)
+// Module 15293 (NoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import UserOfferStore from "UserOfferStore" /* 7561 */;
+import UserOfferStore from "UserOfferStore" /* 7595 */;
 import size from "module_2" /* 2 */;
 
 function clearDismissUntil(arg0) {

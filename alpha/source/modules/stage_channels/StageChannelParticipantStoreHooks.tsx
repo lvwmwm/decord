@@ -1,12 +1,12 @@
-// Module ID: 6695
-// Function ID: 6696
+// Module ID: 6729
+// Function ID: 6730
 // Name: StageChannelParticipantStoreHooks
-// Dependencies: [32, 6642, 558, 576, 504, 6696, 6689, 2]
+// Dependencies: [32, 6676, 558, 576, 504, 6730, 6723, 2]
 
-// Module 6695 (StageChannelParticipantStoreHooks)
-import StageChannelParticipants from "StageChannelParticipants" /* 6689 */;
+// Module 6729 (StageChannelParticipantStoreHooks)
+import StageChannelParticipants from "StageChannelParticipants" /* 6723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6642 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8961
+// Function ID: 8962
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4902, 4904, 4832, 558, 576, 504, 2]
+// Dependencies: [4934, 4936, 4864, 558, 576, 504, 2]
 
-// Module 8927 (useGuildsUserCanStartStageIn)
-import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+// Module 8961 (useGuildsUserCanStartStageIn)
+import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     class S {
       constructor() {
         arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F146399 */ }, []);
+        return arr.reduce(() => { /* body not rendered: F147267 */ }, []);
       }
     }
     const items1 = [id];
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     class S {
       constructor() {
         arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F146399 */ }, []);
+        return arr.reduce(() => { /* body not rendered: F147267 */ }, []);
       }
     }
     tmp9 = cResult[3];

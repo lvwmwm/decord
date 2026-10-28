@@ -1,177 +1,170 @@
 // Module ID: 12683
 // Function ID: 12684
-// Dependencies: [12596, 12598, 12645]
+// Dependencies: [32, 12636, 12635]
+// Exports: dsnToString, makeDsn
 
 // Module 12683
-import _mod12596 from "module_12596" /* 12596 */;
-import _mod12598 from "module_12598" /* 12598 */;
-import module_12645 from "module_12645" /* 12645 */;
+import _mod12636 from "module_12636" /* 12636 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let set;
-
-function flattenIssue(path) {
-  let joined;
-  let json;
-  let json1;
-  const obj = { path: joined, keys: json, unionErrors: json1 };
-  const merged = Object.assign(path);
-  joined = undefined;
-  if ("path" in path) {
-    const _Array = Array;
-    if (Array.isArray(path.path)) {
-      path = path.path;
-      joined = path.join(".");
+function dsnFromString(arg0) {
+  let closure_0 = arg0;
+  const match = re3.exec(arg0);
+  if (match) {
+    const tmp5 = _slicedToArray(match.slice(1), 6);
+    let str = tmp5[1];
+    let str3 = "";
+    const first = tmp5[0];
+    if (undefined !== tmp5[2]) {
+      str3 = tmp7;
     }
-  }
-  json = undefined;
-  if ("keys" in path) {
-    const _JSON = JSON;
-    json = JSON.stringify(path.keys);
-  }
-  json1 = undefined;
-  if ("unionErrors" in path) {
-    const _JSON2 = JSON;
-    json1 = JSON.stringify(path.unionErrors);
-  }
-  return obj;
-}
-function flattenIssuePath(arr) {
-  const mapped = arr.map((item) => {
-    let str = "<array>";
-    if (typeof item !== "number") {
-      str = item;
+    let str4 = "";
+    if (undefined !== tmp5[3]) {
+      str4 = tmp8;
     }
-    return str;
-  });
-  return mapped.join(".");
-}
-function formatIssueMessage(issues) {
-  set = new Set();
-  const tmp = issues.issues[Symbol.iterator]();
-  while (tmp !== undefined) {
-    let arr = flattenIssuePath(tmp2.path);
-    if (arr.length > 0) {
-      let addResult = set.add(tmp4);
+    let str5 = "";
+    if (undefined !== tmp5[4]) {
+      str5 = tmp9;
     }
-    continue;
-  }
-  const arr2 = Array.from(set);
-  if (0 === arr2.length) {
-    let str4 = "variable";
-    if (issues.issues.length > 0) {
-      const first = issues.issues[0];
-      str4 = "variable";
-      const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
-      if (tmp10) {
-        str4 = first.expected;
+    let str6 = "";
+    if (undefined !== tmp5[5]) {
+      str6 = tmp10;
+    }
+    const parts = str6.split("/");
+    let str8 = str6;
+    let str9 = "";
+    if (parts.length > 1) {
+      const substr = parts.slice(0, -1);
+      str9 = substr.join("/");
+      str8 = parts.pop();
+    }
+    let first1 = str8;
+    if (first1) {
+      const match1 = str8.match(/^\d+/);
+      first1 = str8;
+      if (match1) {
+        first1 = match1[0];
       }
     }
-    const _HermesInternal2 = HermesInternal;
-    return "Failed to validate " + str4;
+    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
+    if (!str) {
+      str = "";
+    }
+    if (!str3) {
+      str3 = "";
+    }
+    if (!str5) {
+      str5 = "";
+    }
+    if (!str9) {
+      str9 = "";
+    }
+    return url;
   } else {
-    const _HermesInternal = HermesInternal;
-    const obj2 = _mod12598;
-    return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
+    const obj = _mod12636;
+    obj.consoleSandbox(() => {
+      console.error("Invalid Sentry Dsn: " + closure_0);
+    });
   }
 }
-function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
-  let items;
-  let obj2;
-  let obj4;
-  let obj6;
-  let obj8;
-  function originalExceptionIsZodError(originalException) {
-    const obj = _mod12596;
-    let isErrorResult = obj.isError(originalException) && "ZodError" === originalException.name;
-    if (isErrorResult) {
-      const _Array = Array;
-      isErrorResult = Array.isArray(originalException.issues);
-    }
-    return isErrorResult;
-  }
+const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+
+export { dsnFromString };
+export const dsnToString = function dsnToString(arg0) {
+  let host;
+  let pass;
+  let path;
+  let port;
+  let projectId;
+  let protocol;
+  let publicKey;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  if (exception.exception) {
-    if (exception.exception.values) {
-      const tmp2 = originalException;
-      if (tmp2) {
-        if (originalException.originalException) {
-          if (originalExceptionIsZodError(originalException.originalException)) {
-            if (0 !== originalException.originalException.issues.length) {
-              try {
-                let substr;
-                const issues = originalException.originalException.issues;
-                if (flag) {
-                  substr = issues;
-                } else {
-                  substr = issues.slice(0, arg0);
-                }
-                const mapped = substr.map(flattenIssue);
-                if (flag) {
-                  let _Array = Array;
-                  if (!Array.isArray(originalException.attachments)) {
-                    originalException.attachments = [];
-                  }
-                  const attachments = originalException.attachments;
-                  let obj = { filename: "zod_issues.json", data: JSON.stringify(obj2) };
-                  const _JSON = JSON;
-                  const push = attachments.push;
-                  obj2 = { issues: mapped };
-                  push(obj);
-                }
-                const obj3 = { exception: obj4, extra: obj6 };
-                const merged = Object.assign(exception);
-                obj4 = { values: items };
-                const merged1 = Object.assign(exception.exception);
-                const obj5 = { value: formatIssueMessage(originalException.originalException) };
-                const merged2 = Object.assign(exception.exception.values[0]);
-                items = [obj5];
-                const values = exception.exception.values;
-                HermesBuiltin.arraySpread(items, values.slice(1), 1);
-                obj6 = { "zoderror.issues": mapped.slice(0, arg0) };
-                const merged3 = Object.assign(exception.extra);
-                return obj3;
-              } catch (error) {
-                const obj7 = { extra: obj8 };
-                const merged4 = Object.assign(exception);
-                obj8 = { "zoderrors sentry integration parse error": obj9 };
-                const merged5 = Object.assign(exception.extra);
-                const _Error = Error;
-                let str = "unknown";
-                if (error instanceof Error) {
-                  const _HermesInternal = HermesInternal;
-                  str = "" + error.name + ": " + error.message + "\n" + error.stack;
-                }
-                return obj7;
-              }
-            }
-          }
+  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
+  let str = "";
+  if (flag) {
+    str = "";
+    if (pass) {
+      const _HermesInternal = HermesInternal;
+      str = ":" + pass;
+    }
+  }
+  let str3 = "";
+  if (port) {
+    const _HermesInternal2 = HermesInternal;
+    str3 = ":" + port;
+  }
+  let combined = path;
+  if (combined) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + path + "/";
+  }
+  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
+};
+export const makeDsn = function makeDsn(protocol) {
+  let port;
+  let projectId;
+  let url;
+  if (typeof protocol === "string") {
+    url = dsnFromString(protocol);
+  } else {
+    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+  }
+  if (url) {
+    let flag = true;
+    if (url(12635).DEBUG_BUILD) {
+      ({ port, projectId, protocol } = url);
+      const items = ["protocol", "publicKey", "host", "projectId"];
+      let found = items.find((item) => {
+        let flag = !url[item];
+        if (flag) {
+          const logger = _mod12636.logger;
+          const _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: " + item + " missing");
+          flag = true;
         }
+        return flag;
+      });
+      if (!found) {
+        let num;
+        if (projectId.match(/^\d+$/)) {
+          let num2;
+          const tmp7 = "http" === protocol || "https" === protocol;
+          if (tmp7) {
+            let num3 = port;
+            if (num3) {
+              const _isNaN = isNaN;
+              const _parseInt = parseInt;
+              num3 = isNaN(parseInt(port, 10));
+            }
+            if (num3) {
+              const logger3 = tmp2(12636).logger;
+              const _HermesInternal3 = HermesInternal;
+              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
+              num3 = 1;
+            }
+            num2 = num3;
+          } else {
+            const logger2 = tmp2(12636).logger;
+            const _HermesInternal2 = HermesInternal;
+            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
+            num2 = 1;
+          }
+          num = num2;
+        } else {
+          let logger = tmp2(12636).logger;
+          let _HermesInternal = HermesInternal;
+          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
+          num = 1;
+        }
+        found = num;
       }
+      flag = !found;
+    }
+    if (flag) {
+      return url;
     }
   }
-  return exception;
-}
-
-export { applyZodErrorsToEvent };
-export { flattenIssue };
-export { flattenIssuePath };
-export { formatIssueMessage };
-export const zodErrorsIntegration = module_12645.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let num = 10;
-  if (undefined !== obj.limit) {
-    num = obj.limit;
-  }
-  return {
-    name: "ZodErrors",
-    processEvent(arg0, arg1) {
-      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
-    }
-  };
-});
+};

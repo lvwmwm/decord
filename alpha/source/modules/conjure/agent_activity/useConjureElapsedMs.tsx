@@ -1,10 +1,10 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12549
+// Function ID: 12550
 // Name: useConjureElapsedMs
 // Dependencies: [32, 19, 558, 576, 2]
 // Exports: useConjureElapsedMs
 
-// Module 12502 (useConjureElapsedMs)
+// Module 12549 (useConjureElapsedMs)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

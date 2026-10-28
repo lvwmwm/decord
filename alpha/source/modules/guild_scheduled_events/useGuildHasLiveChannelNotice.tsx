@@ -1,20 +1,20 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17889
+// Function ID: 17890
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6642, 4829, 6643, 4824, 4904, 5718, 17655, 4830, 1095, 558, 576, 17656, 504, 9022, 17657, 6695, 6689, 2]
+// Dependencies: [19, 6676, 4861, 6677, 4856, 4936, 5753, 17890, 4862, 1095, 558, 576, 17891, 504, 9055, 17892, 6729, 6723, 2]
 
-// Module 17654 (useGuildHasLiveChannelNotice)
+// Module 17889 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1095 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4830 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6689 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6723 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6642 */;
-import StageInstanceStore from "StageInstanceStore" /* 4829 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5718 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17655 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
+import StageInstanceStore from "StageInstanceStore" /* 4861 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5753 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -247,7 +247,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildLi
   let tmp2 = dependencyMap;
   const obj = activeEventOrStageInstanceChannel(576);
   const cResult = obj.c(29);
-  const obj2 = activeEventOrStageInstanceChannel(17657);
+  const obj2 = activeEventOrStageInstanceChannel(17892);
   activeEventOrStageInstanceChannel = obj2.useActiveEventOrStageInstanceChannel(arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PermissionStore];
@@ -276,7 +276,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildLi
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(9022);
+  const tmpResult5 = tmp(9055);
   const guildActiveEvent = tmpResult5.useGuildActiveEvent(arg0);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
@@ -360,8 +360,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildLi
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp10, tmp12, tmp14);
-  const useActualStageSpeakerCount = tmp(6695).useActualStageSpeakerCount;
-  tmp(6695);
+  const useActualStageSpeakerCount = tmp(6729).useActualStageSpeakerCount;
+  tmp(6729);
   if (activeEventOrStageInstanceChannel != null) {
     class S {
       constructor() {

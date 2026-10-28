@@ -1,19 +1,19 @@
-// Module ID: 19459
-// Function ID: 19460
+// Module ID: 19721
+// Function ID: 19722
 // Name: RequestToStreamManager
-// Dependencies: [6643, 6011, 14309, 14343, 1084, 7216, 14338, 11, 14340, 7830, 2]
+// Dependencies: [6677, 6045, 14532, 14566, 1084, 7250, 14561, 11, 14563, 7864, 2]
 
-// Module 19459 (RequestToStreamManager)
+// Module 19721 (RequestToStreamManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1084 */;
-import StreamActionCreatorsAll from "StreamActionCreators" /* 7830 */;
-import MobileRequestToStreamExperiment2 from "MobileRequestToStreamExperiment" /* 14338 */;
-import useStreamRequestActivities from "useStreamRequestActivities" /* 14340 */;
-import RequestToStreamConstants from "RequestToStreamConstants" /* 14343 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
-import MessageStore from "MessageStore" /* 6011 */;
-import RequestToStreamStore from "RequestToStreamStore" /* 14309 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
+import StreamActionCreatorsAll from "StreamActionCreators" /* 7864 */;
+import MobileRequestToStreamExperiment2 from "MobileRequestToStreamExperiment" /* 14561 */;
+import useStreamRequestActivities from "useStreamRequestActivities" /* 14563 */;
+import RequestToStreamConstants from "RequestToStreamConstants" /* 14566 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
+import MessageStore from "MessageStore" /* 6045 */;
+import RequestToStreamStore from "RequestToStreamStore" /* 14532 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
 import size from "module_2" /* 2 */;
 
 let closure_7 = RequestToStreamConstants.STREAM_REQUEST_AUTO_WATCH_MAX_AGE;

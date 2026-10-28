@@ -1,13 +1,13 @@
-// Module ID: 18537
-// Function ID: 18538
+// Module ID: 18785
+// Function ID: 18786
 // Name: useControlsHoverGesture
-// Dependencies: [19, 10904, 10902, 558, 576, 10903, 5053, 5298, 2]
+// Dependencies: [19, 10939, 10937, 558, 576, 10938, 5085, 5333, 2]
 
-// Module 18537 (useControlsHoverGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10902 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10904 */;
+// Module 18785 (useControlsHoverGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10937 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14435
+// Function ID: 14436
 // Name: resolveInvite
-// Dependencies: [502, 4846, 7810, 1084, 7809, 5702, 1264, 6677, 1272, 4836, 2]
+// Dependencies: [502, 4878, 7844, 1084, 7843, 5737, 1264, 6711, 1272, 4868, 2]
 // Exports: default
 
-// Module 14211 (resolveInvite)
+// Module 14435 (resolveInvite)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import TypeUtils from "TypeUtils" /* 4836 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6677 */;
+import TypeUtils from "TypeUtils" /* 4868 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import Constants_mod from "Constants" /* 7810 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import Constants_mod from "Constants" /* 7844 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const InviteTypeUtils = tmp3(7809);
+const InviteTypeUtils = tmp3(7843);
 let Constants = Constants_mod2;
 ({ InviteTargetTypes: hasOwnProperty, InviteTypes: metroRequire } = Constants);
 Constants = Constants_mod2;
@@ -74,7 +74,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
     }
     const request = { url: closure_7.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
     const tmp12 = closure_7;
-    const get = tmp4(6677).get;
+    const get = tmp4(6711).get;
     TrackedHTTPUtilsDefault;
     obj5 = {
       event: tmp(1272).NetworkActionNames.INVITE_RESOLVE,

@@ -1,13 +1,13 @@
-// Module ID: 5258
-// Function ID: 5259
+// Module ID: 5293
+// Function ID: 5294
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 558, 576, 5252, 683, 4979, 5053, 5207, 4972, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5287, 683, 5011, 5085, 5242, 5004, 2]
 
-// Module 5258 (ButtonShine)
+// Module 5293 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

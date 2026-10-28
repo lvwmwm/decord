@@ -1,19 +1,19 @@
-// Module ID: 12202
-// Function ID: 12203
+// Module ID: 12241
+// Function ID: 12242
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4902, 4914, 5027, 1389, 6774, 558, 576, 7347, 504, 12203, 5605, 5990, 2]
+// Dependencies: [19, 4934, 4946, 5059, 1389, 6808, 558, 576, 7382, 504, 12242, 5640, 6025, 2]
 // Exports: conjureSettingPickedIds, withPickCap, withSavedPicks
 
-// Module 12202 (useConjureSettingPickerOptions)
-import NicknameUtils from "NicknameUtils" /* 5990 */;
-import ConjureUtils from "ConjureUtils" /* 7347 */;
-import conjureGuildPickerSources from "conjureGuildPickerSources" /* 12203 */;
+// Module 12241 (useConjureSettingPickerOptions)
+import NicknameUtils from "NicknameUtils" /* 6025 */;
+import ConjureUtils from "ConjureUtils" /* 7382 */;
+import conjureGuildPickerSources from "conjureGuildPickerSources" /* 12242 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4902 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
-import StreamerModeStore from "StreamerModeStore" /* 5027 */;
+import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
+import StreamerModeStore from "StreamerModeStore" /* 5059 */;
 import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,15 +100,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp11 = null;
-    const useConjureGuildRoles = tmp(12203).useConjureGuildRoles;
-    tmp(12203);
+    const useConjureGuildRoles = tmp(12242).useConjureGuildRoles;
+    tmp(12242);
     if ("role" === type.type) {
       tmp11 = arg0;
     }
     const conjureGuildRoles = useConjureGuildRoles(tmp11);
     let tmp13 = null;
-    const useConjureGuildMemberUsers = tmp(12203).useConjureGuildMemberUsers;
-    tmp(12203);
+    const useConjureGuildMemberUsers = tmp(12242).useConjureGuildMemberUsers;
+    tmp(12242);
     if ("user" === type.type) {
       tmp13 = arg0;
     }
@@ -140,7 +140,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
       let mapped = null;
       if (null != stateFromStores) {
-        const tmpResult8 = tmp(7347);
+        const tmpResult8 = tmp(7382);
         let result = tmpResult8.conjureSettingChannels(stateFromStores, type.channel_filter);
         mapped = result.map((id) => {
           let obj2;
@@ -239,8 +239,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(12203).useConjureGuildMemberUsers;
-  tmp(12203);
+  const useConjureGuildMemberUsers = tmp(12242).useConjureGuildMemberUsers;
+  tmp(12242);
   if ("user" === type.type) {
     tmp8 = arg0;
   }

@@ -1,20 +1,20 @@
-// Module ID: 19185
-// Function ID: 19186
+// Module ID: 19448
+// Function ID: 19449
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 558, 576, 11260, 1199, 6905, 5206, 7250, 1125, 7613, 1414, 4979, 5211, 8901, 9146, 5270, 7223, 6989, 7300, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 11297, 1199, 6939, 5241, 7284, 1125, 7647, 1414, 5011, 5246, 8935, 9179, 5305, 7257, 7023, 7334, 2]
 
-// Module 19185 (SelectConnectionActionSheet)
+// Module 19448 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4979 */;
-import useThemeDefault from "useTheme" /* 5206 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import TableRow2 from "TableRow" /* 6905 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7250 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11260 */;
+import shared from "shared" /* 5011 */;
+import useThemeDefault from "useTheme" /* 5241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import TableRow2 from "TableRow" /* 6939 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7284 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -27,13 +27,13 @@ let application;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const BottomSheetModal = tmp3(5270);
-const TableRowGroup = tmp3(6989);
-const common_SafeAreaView = tmp3(7223);
-const ActionSheet2 = tmp3(7300);
-const ConnectionsHooks = tmp3(7613);
-const SegmentedControlState = tmp3(8901);
-const SegmentedControl = tmp3(9146);
+const BottomSheetModal = tmp3(5305);
+const TableRowGroup = tmp3(7023);
+const common_SafeAreaView = tmp3(7257);
+const ActionSheet2 = tmp3(7334);
+const ConnectionsHooks = tmp3(7647);
+const SegmentedControlState = tmp3(8935);
+const SegmentedControl = tmp3(9179);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -53,7 +53,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
     if (cResult[0] !== bot) {
       let tmp6 = null;
       if (null != bot) {
-        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        const obj3 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
         const Avatar = tmp(1199).Avatar;
         tmp6 = metroRequire(Avatar, obj3);
       }
@@ -99,9 +99,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Identit
   } else {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
-    const TableRow = tmp(6905).TableRow;
+    const TableRow = tmp(6939).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
       const Avatar = tmp(1199).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -200,7 +200,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
                   }
               };
               const TableRow = addConnection(excludedApplications[8]).TableRow;
-              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: application.bot, size: addConnection(excludedApplications[7]).AvatarSizes.XSMALL, guildId: "r" };
               Avatar = addConnection(excludedApplications[7]).Avatar;
               description = undefined;
               const tmp2 = closure_1_6;
@@ -538,7 +538,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectConnection
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

@@ -1,18 +1,18 @@
-// Module ID: 11149
-// Function ID: 11150
+// Module ID: 11184
+// Function ID: 11185
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 11137, 5235, 1125, 11121, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 11172, 5270, 1125, 11156, 2]
 
-// Module 11149 (BadgeProgressSection)
+// Module 11184 (BadgeProgressSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 11121 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11137 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 11156 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 11172 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeProgres
   const section = tmp4.section;
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp22 = React3(Text, obj6);
     cResult[18] = tmp22;
@@ -214,7 +214,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeProgres
   let tmp26 = null != helperText;
   if (tmp26) {
     const obj8 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp26 = React3(tmp(5235).Text, obj8);
+    tmp26 = React3(tmp(5270).Text, obj8);
   }
   let tmp29Result = null != threshold;
   if (tmp29Result) {
@@ -311,7 +311,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeProgres
   }
   const obj2 = { style: tmp.section, children: items };
   const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   intl = tmp2(1125).intl;
   items = [React3(Text, obj3), ];
   let tmp9Result = null != currentArtUrl;
@@ -325,7 +325,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeProgres
   const obj6 = { style: tmp.content, children: items2 };
   if (tmp9Result4) {
     const obj7 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp9Result4 = tmp9(tmp2(5235).Text, obj7);
+    tmp9Result4 = tmp9(tmp2(5270).Text, obj7);
   }
   items2 = [tmp9Result4, ];
   let tmp9Result5 = null != threshold;

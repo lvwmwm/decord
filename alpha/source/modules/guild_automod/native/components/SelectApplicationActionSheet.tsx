@@ -1,15 +1,15 @@
-// Module ID: 19077
-// Function ID: 19078
+// Module ID: 19340
+// Function ID: 19341
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 558, 576, 1125, 5211, 7250, 6986, 8980, 7300, 6987, 2]
+// Dependencies: [19, 21, 558, 576, 1125, 5246, 7284, 7020, 9014, 7334, 7021, 2]
 
-// Module 19077 (SelectApplicationActionSheet)
+// Module 19340 (SelectApplicationActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import TableRadioRow2 from "TableRadioRow" /* 6986 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6987 */;
-import ActionSheet2 from "ActionSheet" /* 7300 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import TableRadioRow2 from "TableRadioRow" /* 7020 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7021 */;
+import ActionSheet2 from "ActionSheet" /* 7334 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectAppl
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = jsx(onSelectApplication(7250).BottomSheetTitleHeader, { title: first });
+    const tmp9 = jsx(onSelectApplication(7284).BottomSheetTitleHeader, { title: first });
     cResult[3] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectAppl
       return tmp13;
     }
   }
-  const ActionSheet = tmp(7300).ActionSheet;
+  const ActionSheet = tmp(7334).ActionSheet;
   const tmp14 = <ActionSheet header={tmp7}>{null}</ActionSheet>;
   cResult[7] = tmp6;
   cResult[8] = selectedApplicationId;

@@ -1,23 +1,23 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15313
+// Function ID: 15314
 // Name: ActivityTrackingStore
-// Dependencies: [2018, 1243, 502, 2036, 2040, 5715, 4875, 1084, 1101, 510, 7508, 11216, 4819, 7820, 504, 584, 2]
+// Dependencies: [2018, 1243, 502, 2036, 2040, 5750, 4907, 1084, 1101, 510, 7543, 11252, 4851, 7854, 504, 584, 2]
 
-// Module 15090 (ActivityTrackingStore)
+// Module 15313 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7820 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11216 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7854 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11252 */;
 import RunningGameStore from "RunningGameStore" /* 2018 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DetectableGameStore from "DetectableGameStore" /* 2036 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2040 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5715 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ function updateActivity(applicationId) {
     applicationId = applicationId.applicationId;
     const self = this;
     const self2 = this;
-    const interval = new tmp3(4819).Interval();
+    const interval = new tmp3(4851).Interval();
     tmp12[applicationId] = interval;
     interval.start(tmp2, () => {
       updateActivity(applicationId);

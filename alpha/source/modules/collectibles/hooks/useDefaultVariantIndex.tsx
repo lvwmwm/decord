@@ -1,10 +1,10 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9389
+// Function ID: 9390
 // Name: useDefaultVariantIndex
-// Dependencies: [7666, 558, 576, 504, 7662, 2]
+// Dependencies: [7700, 558, 576, 504, 7696, 2]
 
-// Module 9357 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7666 */;
+// Module 9389 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7700 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefault
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (null != variants) {
-    const tmpResult2 = stateFromStores(7662);
+    const tmpResult2 = stateFromStores(7696);
     if (tmpResult2.getIsVariantProduct(variants)) {
       let tmp9;
       if (cResult[2] === variants.variants) {
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefault
   let num = 0;
   if (null != variants) {
     num = 0;
-    const tmpResult = tmp(7662);
+    const tmpResult = tmp(7696);
     if (tmpResult.getIsVariantProduct(variants)) {
       const _Math = Math;
       variants = variants.variants;

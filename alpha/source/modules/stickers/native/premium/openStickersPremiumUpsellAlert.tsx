@@ -1,14 +1,14 @@
-// Module ID: 10181
-// Function ID: 10182
+// Module ID: 10213
+// Function ID: 10214
 // Name: openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 1084, 21, 1264, 7359, 6464, 5910, 10182, 1999, 2]
+// Dependencies: [5, 19, 1084, 21, 1264, 7394, 6498, 5945, 10214, 1999, 2]
 // Exports: default
 
-// Module 10181 (openStickersPremiumUpsellAlert)
+// Module 10213 (openStickersPremiumUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6464 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7359 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6498 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;

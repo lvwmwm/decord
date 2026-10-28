@@ -1,8 +1,8 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7538
+// Function ID: 7539
 // Dependencies: [2]
 
-// Module 7503
+// Module 7538
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LaptopSpotIllustration-1x.png.js");

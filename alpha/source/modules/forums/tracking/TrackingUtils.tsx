@@ -1,33 +1,33 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8323
+// Function ID: 8324
 // Name: TrackingUtils
-// Dependencies: [6791, 4906, 8290, 7405, 4824, 7632, 4904, 8291, 7386, 1084, 4831, 1124, 8292, 4833, 8293, 11, 8294, 2]
+// Dependencies: [6825, 4938, 8324, 7440, 4856, 7666, 4936, 8325, 7421, 1084, 4863, 1124, 8326, 4865, 8327, 11, 8328, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumChannelSessionId, getForumPostAttachmentMimetypes, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
-// Module 8289 (TrackingUtils)
+// Module 8323 (TrackingUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1084 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4833 */;
-import DraftStore2 from "DraftStore" /* 7632 */;
-import ForumSessionAnalyticsManagerDefault from "ForumSessionAnalyticsManager" /* 8292 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8293 */;
-import ForumPostAnalyticsManagerDefault from "ForumPostAnalyticsManager" /* 8294 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6791 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4906 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 8290 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7405 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8291 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7386 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4865 */;
+import DraftStore2 from "DraftStore" /* 7666 */;
+import ForumSessionAnalyticsManagerDefault from "ForumSessionAnalyticsManager" /* 8326 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8327 */;
+import ForumPostAnalyticsManagerDefault from "ForumPostAnalyticsManager" /* 8328 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6825 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4938 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 8324 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7421 */;
 import size from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
 let set;
 
-const f100966 = (content_type) => {
+const f101579 = (content_type) => {
   let str = content_type.content_type;
   if (str == null) {
     str = "unknown";
@@ -163,7 +163,7 @@ export const getForumPostAttachmentMimetypes = function getForumPostAttachmentMi
     items = [];
   } else {
     const attachments = firstMessage.attachments;
-    items = attachments.map(f100966);
+    items = attachments.map(f101579);
   }
   return items;
 };
@@ -284,7 +284,7 @@ export const collectForumPostAnalyticsMetadata = function collectForumPostAnalyt
             items1 = [];
           } else {
             const attachments = firstMessage2.attachments;
-            items1 = attachments.map(f100966);
+            items1 = attachments.map(f101579);
           }
           tmp = obj2;
         }

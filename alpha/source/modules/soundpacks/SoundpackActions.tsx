@@ -1,14 +1,14 @@
-// Module ID: 18876
-// Function ID: 18877
+// Module ID: 19129
+// Function ID: 19130
 // Name: SoundpackActions
-// Dependencies: [11529, 1084, 1264, 584, 2]
+// Dependencies: [11567, 1084, 1264, 584, 2]
 // Exports: setSoundpack
 
-// Module 18876 (SoundpackActions)
+// Module 19129 (SoundpackActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import SoundpackStore from "SoundpackStore" /* 11529 */;
+import SoundpackStore from "SoundpackStore" /* 11567 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

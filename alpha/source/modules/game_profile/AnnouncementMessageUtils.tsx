@@ -1,13 +1,13 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9376
+// Function ID: 9377
 // Name: AnnouncementMessageUtils
-// Dependencies: [4915, 1997, 6022, 6000, 1102, 9345, 6013, 9346, 1125, 1383, 2]
+// Dependencies: [4947, 1997, 6056, 6035, 1102, 9377, 6047, 9378, 1125, 1383, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9344 (AnnouncementMessageUtils)
+// Module 9376 (AnnouncementMessageUtils)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import MessageRecord from "MessageRecord" /* 4915 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9346 */;
+import MessageRecord from "MessageRecord" /* 4947 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9378 */;
 import size from "module_2" /* 2 */;
 
 let reactions;

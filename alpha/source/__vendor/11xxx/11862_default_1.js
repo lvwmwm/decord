@@ -1,11 +1,11 @@
 // Module ID: 11862
 // Function ID: 11863
 // Name: default_1
-// Dependencies: [11812]
+// Dependencies: [11850]
 // Exports: default
 
 // Module 11862 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11812 */;
+import captureStackTrace2 from "captureStackTrace" /* 11850 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "\u063A\u0644\u0637 \u0627\u0646 \u067E\u0679: instanceof " + code.expected + " \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627\u060C " + tmp48 + " \u0645\u0648\u0635\u0648\u0644 \u06C1\u0648\u0627";
+                combined = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no instanceof " + code.expected + ", obdr\u017Eeno " + tmp49;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "\u063A\u0644\u0637 \u0627\u0646 \u067E\u0679: " + expected + " \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627\u060C " + tmp48 + " \u0645\u0648\u0635\u0648\u0644 \u06C1\u0648\u0627";
+                combined = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no " + expected + ", obdr\u017Eeno " + tmp49;
               }
               return combined;
             }
@@ -121,58 +121,66 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u063A\u0644\u0637 \u0627\u0646 \u067E\u0679: " + captureStackTrace.stringifyPrimitive(code.values[0]) + " \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627";
+                combined1 = "Neplatn\u00FD vstup: o\u010Dek\u00E1v\u00E1no " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u063A\u0644\u0637 \u0622\u067E\u0634\u0646: " + captureStackTrace.joinValues(code.values, "|") + " \u0645\u06CC\u06BA \u0633\u06D2 \u0627\u06CC\u06A9 \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627";
+                combined1 = "Neplatn\u00E1 mo\u017Enost: o\u010Dek\u00E1v\u00E1na jedna z hodnot " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str30 = "<";
+              let str27 = "<";
               if (code.inclusive) {
-                str30 = "<=";
+                str27 = "<=";
               }
-              let str31 = code.origin;
+              let str28 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str31 == null) {
-                  str31 = "\u0648\u06CC\u0644\u06CC\u0648";
+                if (str28 == null) {
+                  str28 = "hodnota";
                 }
-                const str37 = code.maximum;
+                const str33 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str37.toString();
-                const str38 = (obj2[code.origin] ?? null).unit ?? "\u0639\u0646\u0627\u0635\u0631";
-                combined2 = "\u0628\u06C1\u062A \u0628\u0691\u0627: " + str31 + " \u06A9\u06D2 " + str30 + str1 + " " + str38 + " \u06C1\u0648\u0646\u06D2 \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u06D2";
+                const str1 = str33.toString();
+                const str34 = (obj2[code.origin] ?? null).unit ?? "prvk\u016F";
+                combined2 = "Hodnota je p\u0159\u00EDli\u0161 velk\u00E1: " + str28 + " mus\u00ED m\u00EDt " + str27 + str1 + " " + str34;
               } else {
-                let str32 = str31;
-                if (str31 == null) {
-                  str32 = "\u0648\u06CC\u0644\u06CC\u0648";
+                let str29 = str28;
+                if (str28 == null) {
+                  str29 = "hodnota";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str33 = code.maximum;
-                combined2 = "\u0628\u06C1\u062A \u0628\u0691\u0627: " + str32 + " \u06A9\u0627 " + str30 + str33.toString() + " \u06C1\u0648\u0646\u0627 \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627";
+                const str30 = code.maximum;
+                combined2 = "Hodnota je p\u0159\u00EDli\u0161 velk\u00E1: " + str29 + " mus\u00ED b\u00FDt " + str27 + str30.toString();
               }
               return combined2;
             }
             case "too_small":
             {
               let combined3;
-              let minimum;
-              let origin;
-              let str22 = ">";
+              let str16 = ">";
               if (code.inclusive) {
-                str22 = ">=";
+                str16 = ">=";
               }
-              ({ origin, minimum } = code);
-              const str57 = minimum.toString();
+              let str17 = code.origin;
               if (obj2[code.origin] ?? null) {
+                if (str17 == null) {
+                  str17 = "hodnota";
+                }
+                const str22 = code.minimum;
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u0628\u06C1\u062A \u0686\u06BE\u0648\u0679\u0627: " + origin + " \u06A9\u06D2 " + str22 + str57 + " " + tmp15.unit + " \u06C1\u0648\u0646\u06D2 \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u06D2";
+                const str23 = (obj2[code.origin] ?? null).unit ?? "prvk\u016F";
+                const str48 = str22.toString();
+                combined3 = "Hodnota je p\u0159\u00EDli\u0161 mal\u00E1: " + str17 + " mus\u00ED m\u00EDt " + str16 + str48 + " " + str23;
               } else {
+                let str18 = str17;
+                if (str17 == null) {
+                  str18 = "hodnota";
+                }
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u0628\u06C1\u062A \u0686\u06BE\u0648\u0679\u0627: " + origin + " \u06A9\u0627 " + str22 + str57 + " \u06C1\u0648\u0646\u0627 \u0645\u062A\u0648\u0642\u0639 \u062A\u06BE\u0627";
+                const str19 = code.minimum;
+                combined3 = "Hodnota je p\u0159\u00EDli\u0161 mal\u00E1: " + str18 + " mus\u00ED b\u00FDt " + str16 + str19.toString();
               }
               return combined3;
             }
@@ -181,61 +189,57 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u063A\u0644\u0637 \u0633\u0679\u0631\u0646\u06AF: \"" + code.prefix + "\" \u0633\u06D2 \u0634\u0631\u0648\u0639 \u06C1\u0648\u0646\u0627 \u0686\u0627\u06C1\u06CC\u06D2";
+                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED za\u010D\u00EDnat na \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u063A\u0644\u0637 \u0633\u0679\u0631\u0646\u06AF: \"" + code.suffix + "\" \u067E\u0631 \u062E\u062A\u0645 \u06C1\u0648\u0646\u0627 \u0686\u0627\u06C1\u06CC\u06D2";
+                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED kon\u010Dit na \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u063A\u0644\u0637 \u0633\u0679\u0631\u0646\u06AF: \"" + code.includes + "\" \u0634\u0627\u0645\u0644 \u06C1\u0648\u0646\u0627 \u0686\u0627\u06C1\u06CC\u06D2";
+                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED obsahovat \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u063A\u0644\u0637 \u0633\u0679\u0631\u0646\u06AF: \u067E\u06CC\u0679\u0631\u0646 " + code.pattern + " \u0633\u06D2 \u0645\u06CC\u0686 \u06C1\u0648\u0646\u0627 \u0686\u0627\u06C1\u06CC\u06D2";
+                combined4 = "Neplatn\u00FD \u0159et\u011Bzec: mus\u00ED odpov\u00EDdat vzoru " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "\u063A\u0644\u0637 " + format;
+                combined4 = "Neplatn\u00FD form\u00E1t " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u063A\u0644\u0637 \u0646\u0645\u0628\u0631: " + code.divisor + " \u06A9\u0627 \u0645\u0636\u0627\u0639\u0641 \u06C1\u0648\u0646\u0627 \u0686\u0627\u06C1\u06CC\u06D2";
+              return "Neplatn\u00E9 \u010D\u00EDslo: mus\u00ED b\u00FDt n\u00E1sobkem " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str5 = "";
-              if (code.keys.length > 1) {
-                str5 = "\u0632";
-              }
               const _HermesInternal3 = HermesInternal;
-              return "\u063A\u06CC\u0631 \u062A\u0633\u0644\u06CC\u0645 \u0634\u062F\u06C1 \u06A9\u06CC" + str5 + ": " + captureStackTrace.joinValues(code.keys, "\u060C ");
+              return "Nezn\u00E1m\u00E9 kl\u00ED\u010De: " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "" + code.origin + " \u0645\u06CC\u06BA \u063A\u0644\u0637 \u06A9\u06CC";
+              return "Neplatn\u00FD kl\u00ED\u010D v " + code.origin;
             }
             case "invalid_union":
             {
-              return "\u063A\u0644\u0637 \u0627\u0646 \u067E\u0679";
+              return "Neplatn\u00FD vstup";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " \u0645\u06CC\u06BA \u063A\u0644\u0637 \u0648\u06CC\u0644\u06CC\u0648";
+              return "Neplatn\u00E1 hodnota v " + code.origin;
             }
             default:
             {
-              return "\u063A\u0644\u0637 \u0627\u0646 \u067E\u0679";
+              return "Neplatn\u00FD vstup";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "\u062D\u0631\u0648\u0641", verb: "\u06C1\u0648\u0646\u0627" }, file: { unit: "\u0628\u0627\u0626\u0679\u0633", verb: "\u06C1\u0648\u0646\u0627" }, array: { unit: "\u0622\u0626\u0679\u0645\u0632", verb: "\u06C1\u0648\u0646\u0627" }, set: { unit: "\u0622\u0626\u0679\u0645\u0632", verb: "\u06C1\u0648\u0646\u0627" } };
-    closure_1 = { regex: "\u0627\u0646 \u067E\u0679", email: "\u0627\u06CC \u0645\u06CC\u0644 \u0627\u06CC\u0688\u0631\u06CC\u0633", url: "\u06CC\u0648 \u0622\u0631 \u0627\u06CC\u0644", emoji: "\u0627\u06CC\u0645\u0648\u062C\u06CC", uuid: "\u06CC\u0648 \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC", uuidv4: "\u06CC\u0648 \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC \u0648\u06CC 4", uuidv6: "\u06CC\u0648 \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC \u0648\u06CC 6", nanoid: "\u0646\u06CC\u0646\u0648 \u0622\u0626\u06CC \u0688\u06CC", guid: "\u062C\u06CC \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC", cuid: "\u0633\u06CC \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC", cuid2: "\u0633\u06CC \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC 2", ulid: "\u06CC\u0648 \u0627\u06CC\u0644 \u0622\u0626\u06CC \u0688\u06CC", xid: "\u0627\u06CC\u06A9\u0633 \u0622\u0626\u06CC \u0688\u06CC", ksuid: "\u06A9\u06D2 \u0627\u06CC\u0633 \u06CC\u0648 \u0622\u0626\u06CC \u0688\u06CC", datetime: "\u0622\u0626\u06CC \u0627\u06CC\u0633 \u0627\u0648 \u0688\u06CC\u0679 \u0679\u0627\u0626\u0645", date: "\u0622\u0626\u06CC \u0627\u06CC\u0633 \u0627\u0648 \u062A\u0627\u0631\u06CC\u062E", time: "\u0622\u0626\u06CC \u0627\u06CC\u0633 \u0627\u0648 \u0648\u0642\u062A", duration: "\u0622\u0626\u06CC \u0627\u06CC\u0633 \u0627\u0648 \u0645\u062F\u062A", ipv4: "\u0622\u0626\u06CC \u067E\u06CC \u0648\u06CC 4 \u0627\u06CC\u0688\u0631\u06CC\u0633", ipv6: "\u0622\u0626\u06CC \u067E\u06CC \u0648\u06CC 6 \u0627\u06CC\u0688\u0631\u06CC\u0633", cidrv4: "\u0622\u0626\u06CC \u067E\u06CC \u0648\u06CC 4 \u0631\u06CC\u0646\u062C", cidrv6: "\u0622\u0626\u06CC \u067E\u06CC \u0648\u06CC 6 \u0631\u06CC\u0646\u062C", base64: "\u0628\u06CC\u0633 64 \u0627\u0646 \u06A9\u0648\u0688\u0688 \u0633\u0679\u0631\u0646\u06AF", base64url: "\u0628\u06CC\u0633 64 \u06CC\u0648 \u0622\u0631 \u0627\u06CC\u0644 \u0627\u0646 \u06A9\u0648\u0688\u0688 \u0633\u0679\u0631\u0646\u06AF", json_string: "\u062C\u06D2 \u0627\u06CC\u0633 \u0627\u0648 \u0627\u06CC\u0646 \u0633\u0679\u0631\u0646\u06AF", e164: "\u0627\u06CC 164 \u0646\u0645\u0628\u0631", jwt: "\u062C\u06D2 \u0688\u0628\u0644\u06CC\u0648 \u0679\u06CC", template_literal: "\u0627\u0646 \u067E\u0679" };
-    let closure_2 = { nan: "NaN", number: "\u0646\u0645\u0628\u0631", array: "\u0622\u0631\u06D2", null: "\u0646\u0644" };
+    const obj2 = { string: { unit: "znak\u016F", verb: "m\u00EDt" }, file: { unit: "bajt\u016F", verb: "m\u00EDt" }, array: { unit: "prvk\u016F", verb: "m\u00EDt" }, set: { unit: "prvk\u016F", verb: "m\u00EDt" } };
+    closure_1 = { regex: "regul\u00E1rn\u00ED v\u00FDraz", email: "e-mailov\u00E1 adresa", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "datum a \u010Das ve form\u00E1tu ISO", date: "datum ve form\u00E1tu ISO", time: "\u010Das ve form\u00E1tu ISO", duration: "doba trv\u00E1n\u00ED ISO", ipv4: "IPv4 adresa", ipv6: "IPv6 adresa", cidrv4: "rozsah IPv4", cidrv6: "rozsah IPv6", base64: "\u0159et\u011Bzec zak\u00F3dovan\u00FD ve form\u00E1tu base64", base64url: "\u0159et\u011Bzec zak\u00F3dovan\u00FD ve form\u00E1tu base64url", json_string: "\u0159et\u011Bzec ve form\u00E1tu JSON", e164: "\u010D\u00EDslo E.164", jwt: "JWT", template_literal: "vstup" };
+    let closure_2 = { nan: "NaN", number: "\u010D\u00EDslo", string: "\u0159et\u011Bzec", function: "funkce", array: "pole" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

@@ -1,13 +1,13 @@
-// Module ID: 9985
-// Function ID: 9986
+// Module ID: 10017
+// Function ID: 10018
 // Name: useEmojiColorPalette
-// Dependencies: [4973, 1204, 558, 576, 504, 4979, 8314, 2]
+// Dependencies: [5005, 1204, 558, 576, 504, 5011, 8348, 2]
 
-// Module 9985 (useEmojiColorPalette)
+// Module 10017 (useEmojiColorPalette)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import EmojiColorUtils from "EmojiColorUtils" /* 8314 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import EmojiColorUtils from "EmojiColorUtils" /* 8348 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

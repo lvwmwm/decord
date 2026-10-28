@@ -1,321 +1,168 @@
 // Module ID: 5560
 // Function ID: 5561
-// Dependencies: [5543, 5500, 19, 5561, 5497, 5562]
-// Exports: useBenchmark
+// Dependencies: [5544, 5545, 5561]
 
 // Module 5560
-import autoScroll from "autoScroll" /* 5561 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5543 */;
-import _slicedToArray from "_slicedToArray" /* 5500 */;
-import react from "react" /* 19 */;
+import _createClassDefault from "_createClass" /* 5545 */;
+import _classCallCheck from "_classCallCheck" /* 5544 */;
 
-let c2, c3, size;
+let updateViewableItems;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-function getFormattedString(js) {
-  js = js.js;
-  let averageFPS;
-  if (js != null) {
-    averageFPS = js.averageFPS;
-  }
-  const js2 = js.js;
-  let minFPS;
-  if (js2 != null) {
-    minFPS = js2.minFPS;
-  }
-  const js3 = js.js;
-  let maxFPS;
-  if (js3 != null) {
-    maxFPS = js3.maxFPS;
-  }
-  let str = "";
-  const combined = "Results:\n\nJS FPS: Avg: " + averageFPS + " | Min: " + minFPS + " | Max: " + maxFPS + "\n\n";
-  if (js.suggestions.length > 0) {
-    const suggestions = js.suggestions;
-    const mapped = suggestions.map((item, index) => "" + index + 1 + ". " + item);
-    const _HermesInternal = HermesInternal;
-    str = "Suggestions:\n\n" + mapped.join("\n");
-  }
-  return combined + str;
-}
-function runScrollBenchmark(arg0, arg1, arg2) {
-  return obj(...arguments);
-}
-let obj = function _runScrollBenchmark() {
-  obj = _asyncToGenerator(async (arg0, arg1, arg2) => {
-    const ref = arg0;
-    let closure_1 = arg1;
-    let closure_2 = arg2;
-    let c5 = 0;
-    let c6 = 0;
-    return (async (arg0, value, arg2) => {
-      let tmp;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let c4;
-          let diff1;
-          let scrollNow;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp4;
-              closure_3 = tmp;
-              let horizontal;
-              c4 = undefined;
-              diff1 = undefined;
-              scrollNow = undefined;
-              if (ref.current) {
-                horizontal = tmp29.current.props.horizontal;
-                let current = tmp29.current;
-                if (current) {
-                  size = current.getWindowSize();
-                  const size2 = current.getChildContainerDimensions();
-                  const diff = size2.width - size.width;
-                  c4 = diff;
-                  diff1 = size2.height - size.height;
-                  scrollNow = function scrollNow(arg0, arg1) {
-                    const current = ref.current;
-                    if (current != null) {
-                      let tmp = arg1;
-                      const scrollToOffset = current.scrollToOffset;
-                      if (closure_1_3) {
-                        tmp = arg0;
-                      }
-                      obj = { offset: tmp, animated: false };
-                      scrollToOffset(obj);
-                    }
-                  };
-                  c5 = 1;
-                  c6 = 1;
-                  const obj5 = autoScroll;
-                  const obj6 = { value: obj5.autoScroll(scrollNow, 0, 0, diff, diff1, closure_2, closure_1), done: false };
-                  return obj6;
-                }
-              }
-            }
-          } else if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              c5 = 2;
-              c6 = 1;
-              const obj2 = closure_132_0(closure_132_1[3]);
-              const obj8 = { value: obj2.autoScroll(scrollNow, c4, diff1, 0, 0, closure_2, closure_1), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            obj = { value, done: true };
-            return obj;
+class ViewabilityManager {
+  constructor(rvManager) {
+    const self = this;
+    let closure_0 = rvManager;
+    let tmp = _classCallCheck(this, ViewabilityManager);
+    this.viewabilityHelpers = [];
+    this.hasInteracted = false;
+    this.dispose = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((dispose) => dispose.dispose());
+    };
+    this.onVisibleIndicesChanged = (arg0) => {
+      self.updateViewableItems(arg0);
+    };
+    this.recordInteraction = () => {
+      if (!self.hasInteracted) {
+        self.hasInteracted = true;
+        const viewabilityHelpers = obj.viewabilityHelpers;
+        const item = viewabilityHelpers.forEach((item) => {
+          item.hasInteracted = true;
+        });
+        self.updateViewableItems();
+      }
+    };
+    this.updateViewableItems = (arg0) => {
+      let windowSize;
+      closure_0 = arg0;
+      let rvManager = windowSize.rvManager;
+      windowSize = rvManager.getWindowSize();
+      if (undefined !== windowSize) {
+        if (windowSize.shouldListenToVisibleIndices) {
+          const rvManager2 = tmp.rvManager;
+          let num = rvManager2.getAbsoluteLastScrollOffset();
+          if (num == null) {
+            num = 0;
           }
-          c6 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp25) {
-          c6 = 3;
-          throw tmp25;
+          let closure_2 = num - tmp.rvManager.firstItemOffset;
+          const bottomViewabilityInsetRef = tmp.rvManager.props.bottomViewabilityInsetRef;
+          let num2;
+          if (bottomViewabilityInsetRef != null) {
+            num2 = bottomViewabilityInsetRef.current;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          const viewabilityHelpers = tmp.viewabilityHelpers;
+          const item = viewabilityHelpers.forEach((updateViewableItems) => {
+            let flag = self.rvManager.props.horizontal;
+            updateViewableItems = updateViewableItems.updateViewableItems;
+            if (flag == null) {
+              flag = false;
+            }
+            updateViewableItems(flag, closure_2, num2, windowSize, (arg0) => {
+              rvManager = rvManager.rvManager;
+              return rvManager.getLayout(arg0);
+            }, closure_0);
+          });
         }
       }
-    })();
-  });
-  return obj(...arguments);
-};
-({ useEffect: closure_4, useState: hasOwnProperty, useCallback: metroRequire, useRef: metroImportDefault } = react);
-
-export const useBenchmark = function useBenchmark(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  obj = arg2;
-  if (arg2 === undefined) {
-    obj = {};
-  }
-  let isBenchmarkRunning;
-  let closure_5;
-  let startBenchmark;
-  let tmp = isBenchmarkRunning(closure_5(false), 2);
-  isBenchmarkRunning = tmp[0];
-  let closure_4 = tmp[1];
-  closure_5 = closure_7(null);
-  const items = [arg1, arg0, isBenchmarkRunning, , ];
-  ({ repeatCount: arr[3], speedMultiplier: arr[4] } = obj);
-  startBenchmark = startBenchmark(function() {
-    function runBenchmark() {
-      return closure_0(...arguments);
-    }
-    const tmp = isBenchmarkRunning;
-    if (!tmp) {
-      const tmp3 = closure_1;
-      let self = this;
-      let self2 = this;
-      const cancellable = new closure_0(closure_1[3]).Cancellable();
-      closure_5.current = cancellable;
-      closure_1 = [];
-      const tmp2 = closure_0;
-      if (cancellable.current) {
-        let tmp8 = globalThis;
-        const data = tmp7.current.props.data;
-        let length;
-        const _Number = Number;
-        if (data != null) {
-          length = data.length;
-        }
-        let num = 0;
-        if (_Number(length) <= 0) {
-          const _Error = Error;
-          const self3 = this;
-          const self4 = this;
-          const error = new Error(tmp2(tmp3[4]).ErrorMessages.dataEmptyCannotRunBenchmark);
-          throw error;
-        }
-      }
-      closure_4(true);
-      closure_0 = obj(function*(arg0, value) {
-        function computeSuggestions(current, arr) {
-          current = current.current && current.current.props.data.length < 200;
-          if (current) {
-            arr.push("Data count is low. Try to increase it to a large number (e.g 200) using the 'useDataMultiplier' hook.");
-          }
-        }
-        function generateResult(js, suggestions, isCancelled) {
-          obj = { js, suggestions, interrupted: isCancelled.isCancelled() };
-          return obj;
-        }
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let cancelled;
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                cancelled = tmp;
-                closure_1 = undefined;
-                let averageFPS;
-                let closure_3;
-                const self = this;
-                const self2 = this;
-                const jSFPSMonitor = new cancellable(closure_1[5]).JSFPSMonitor();
-                jSFPSMonitor.startTracking();
-                closure_1 = 0;
-                let num8 = closure_2_2.repeatCount;
-                const tmp50 = closure_1;
-                if (!num8) {
-                  num8 = 1;
-                }
-                if (tmp50 >= num8) {
-                  averageFPS = jSFPSMonitor.stopAndGetData();
-                  if (averageFPS.averageFPS < 35) {
-                    const str = "Your average JS FPS is low. This can indicate that your components are doing too much work. Try to optimize your components and reduce re-renders if any";
-                    const arr = closure_1.push("Your average JS FPS is low. This can indicate that your components are doing too much work. Try to optimize your components and reduce re-renders if any");
+    };
+    this.clearLastReportedViewableIndices = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((clearLastReportedViewableIndices) => clearLastReportedViewableIndices.clearLastReportedViewableIndices());
+    };
+    this.createViewabilityHelper = (arg0, arg1) => {
+      closure_0 = arg1;
+      const tmp = new closure_0(self[2])(arg0, (arr, arr2, arr3) => {
+        let items;
+        if (closure_0 != null) {
+          let obj = {
+            viewableItems: arr.map((item) => {
+                if (undefined !== closure_1_1.rvManager.props.data[item]) {
+                  let keyExtractorResult;
+                  if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                    const props = tmp.rvManager.props;
+                    keyExtractorResult = props.keyExtractor(tmp2, item);
                   }
-                  computeSuggestions(cancelled, closure_1);
-                  closure_3 = generateResult(averageFPS, closure_1, cancelled);
-                  if (!cancelled.isCancelled()) {
-                    closure_3.formattedString = getFormattedString(closure_3);
-                  }
-                  closure_2_1(closure_3);
-                  closure_2_4(false);
-                  c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  const _Date = Date;
+                  const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+                  return obj;
                 }
+                keyExtractorResult = item.toString();
+              }),
+            changed: items
+          };
+          items = [];
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, arr2.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
               }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value, done: true };
+              const _Date = Date;
+              const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
               return obj;
-            } else {
-              closure_1 = closure_1 + 1;
-              let num4 = closure_2_2.repeatCount;
-              if (!num4) {
-                num4 = 1;
+            }
+            keyExtractorResult = item.toString();
+          }), 0);
+          HermesBuiltin.arraySpread(items, arr3.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
               }
+              const _Date = Date;
+              const obj = { index: item, isViewable: false, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
             }
-            let num11 = closure_2_2.speedMultiplier;
-            const tmp38 = runScrollBenchmark;
-            const tmp39 = cancelled;
-            const tmp40 = cancelled;
-            if (!num11) {
-              num11 = 1;
-            }
-            c2 = 1;
-            c3 = 1;
-            const obj4 = { value: tmp38(tmp39, tmp40, num11), done: false };
-            return obj4;
-          } catch (tmp42) {
-            c3 = 3;
-            throw tmp42;
-          }
+            keyExtractorResult = item.toString();
+          }), arraySpreadResult);
+          tmp2(obj);
         }
       });
-      runBenchmark();
-    }
-  }, items);
-  const tmp4 = closure_4(() => {
-    let ref;
-    if (!obj.startManually) {
-      let num = tmp.startDelayInMs;
-      const _setTimeout = setTimeout;
-      if (!num) {
-        num = 3000;
-      }
-      closure_0 = _setTimeout(() => {
-        startBenchmark();
-      }, num);
-      return () => {
-        clearTimeout(closure_0);
-        if (ref.current) {
-          const current = ref.current;
-          current.cancel();
+      return tmp;
+    };
+    this.rvManager = rvManager;
+    const tmp2 = null !== rvManager.props.onViewableItemsChanged && undefined !== rvManager.props.onViewableItemsChanged;
+    if (tmp2) {
+      let viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(rvManager.props.viewabilityConfig, (arg0) => {
+        const props = closure_0.props;
+        const onViewableItemsChanged = props.onViewableItemsChanged;
+        if (onViewableItemsChanged != null) {
+          const result = onViewableItemsChanged(arg0);
         }
-      };
+      }));
     }
-  }, []);
-  return { startBenchmark, isBenchmarkRunning };
+    let prop = rvManager.props.viewabilityConfigCallbackPairs;
+    if (prop == null) {
+      prop = [];
+    }
+    let item = prop.forEach((viewabilityConfig, index) => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(viewabilityConfig.viewabilityConfig, (arg0) => {
+        let prop;
+        if (index.props.viewabilityConfigCallbackPairs != null) {
+          if (index.props.viewabilityConfigCallbackPairs[index] != null) {
+            prop = tmp3.onViewableItemsChanged;
+          }
+        }
+        if (prop != null) {
+          prop(arg0);
+        }
+      }));
+    });
+  }
+}
+let obj = {
+  key: "shouldListenToVisibleIndices",
+  get() {
+    return this.viewabilityHelpers.length > 0;
+  }
 };
-export { getFormattedString };
+let items = [obj];
+
+export default _createClassDefault(ViewabilityManager, items);

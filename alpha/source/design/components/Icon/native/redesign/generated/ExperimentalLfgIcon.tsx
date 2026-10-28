@@ -1,14 +1,14 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8578
+// Function ID: 8579
 // Name: ExperimentalLfgIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8532, 5669, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8569, 5704, 2]
 
-// Module 8541 (ExperimentalLfgIcon)
+// Module 8578 (ExperimentalLfgIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5669 */;
-import AssetRegistry from "AssetRegistry" /* 8532 */;
+import BaseIconImage2 from "BaseIconImage" /* 5704 */;
+import AssetRegistry from "AssetRegistry" /* 8569 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experiment
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5669).BaseIconImage;
+  const BaseIconImage = tmp(5704).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

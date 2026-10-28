@@ -1,15 +1,15 @@
-// Module ID: 4999
-// Function ID: 5000
+// Module ID: 5031
+// Function ID: 5032
 // Name: HexagonCampaignUtils
-// Dependencies: [4997, 1988, 1408, 1409, 1395, 1397, 2]
+// Dependencies: [5029, 1988, 1408, 1409, 1395, 1397, 2]
 // Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, hasPerkOnlyFromHexagonCampaign, isEnrolledInHexagonCampaign, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
 
-// Module 4999 (HexagonCampaignUtils)
+// Module 5031 (HexagonCampaignUtils)
 import PerksStateUtils from "PerksStateUtils" /* 1395 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
 import DisplayNameFont from "DisplayNameFont" /* 1409 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
 import size from "module_2" /* 2 */;
 
 let c2;

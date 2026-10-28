@@ -1,10 +1,10 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14221
+// Function ID: 14222
 // Name: EmojiRowUtils
 // Dependencies: [1084, 1402, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 14002 (EmojiRowUtils)
+// Module 14221 (EmojiRowUtils)
 import FlagUtils from "FlagUtils" /* 1402 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;

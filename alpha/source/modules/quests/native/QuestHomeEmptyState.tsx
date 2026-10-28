@@ -1,25 +1,25 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16618
+// Function ID: 16619
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1084, 21, 4972, 587, 558, 576, 1125, 5253, 5154, 1381, 5235, 5670, 16391, 5259, 7223, 2]
+// Dependencies: [19, 17, 1084, 21, 5004, 587, 558, 576, 1125, 5288, 5189, 1381, 5270, 5705, 16619, 5294, 7257, 2]
 
-// Module 16390 (QuestHomeEmptyState)
+// Module 16618 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useChatLayoutDefault from "useChatLayout" /* 5154 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useToken from "useToken" /* 5253 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7223 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16391 */;
+import useChatLayoutDefault from "useChatLayout" /* 5189 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useToken from "useToken" /* 5288 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16619 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

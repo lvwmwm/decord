@@ -1,0 +1,10 @@
+// Module ID: 14506
+// Function ID: 14507
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 14506 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 120, height: 96, scales: [2, 3], hash: "21dd2828907413d4c11bf84cb61743df", name: "search_empty_state_light", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5085
+// Function ID: 5086
 // Name: ReanimatedRexport
-// Dependencies: [1382, 1655, 5054, 2]
+// Dependencies: [1382, 1655, 5086, 2]
 
-// Module 5053 (ReanimatedRexport)
+// Module 5085 (ReanimatedRexport)
 import _mod1655 from "module_1655" /* 1655 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5054 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5086 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 

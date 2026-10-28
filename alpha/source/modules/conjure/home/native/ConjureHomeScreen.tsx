@@ -1,18 +1,18 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18647
+// Function ID: 18648
 // Name: ConjureHomeScreen
-// Dependencies: [19, 17, 6497, 21, 4972, 587, 558, 576, 1503, 12310, 504, 11752, 11747, 5235, 1125, 3831, 5245, 2]
+// Dependencies: [19, 17, 6531, 21, 5004, 587, 558, 576, 1503, 12355, 504, 11788, 11785, 5270, 1125, 3863, 5280, 2]
 
-// Module 18406 (ConjureHomeScreen)
+// Module 18647 (ConjureHomeScreen)
 import nativeDefault from "native" /* 587 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import ConjureStandaloneScreenDefault from "ConjureStandaloneScreen" /* 11747 */;
-import reactDefault from "react" /* 11752 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import ConjureStandaloneScreenDefault from "ConjureStandaloneScreen" /* 11785 */;
+import reactDefault from "react" /* 11788 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6497 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHom
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult = navigation(12310);
+  const tmpResult = navigation(12355);
   const conjureForMeGuildId = tmpResult.useConjureForMeGuildId(ConjureHomeScreen_str);
   if (cResult[2] === isFocused) {
     if (cResult[3] === projectId) {
@@ -141,16 +141,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHom
             return connectedOrOverlay.isConnectedOrOverlay();
           }
         }
-        const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(_modDef3831["c+8IMp"]) };
-        const Text = tmp(5235).Text;
+        const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(_modDef3863["c+8IMp"]) };
+        const Text = tmp(5270).Text;
         intl = tmp(1125).intl;
         items1 = [closure_7(Text, obj7), , ];
-        const obj8 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef3831["5PqGKy"]) };
-        const Text2 = tmp(5235).Text;
+        const obj8 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef3863["5PqGKy"]) };
+        const Text2 = tmp(5270).Text;
         intl2 = tmp(1125).intl;
         items1[1] = closure_7(Text2, obj8);
         const obj9 = { variant: "secondary", size: "sm", text: intl3.string(navigation(1125).t["13/7kX"]), onPress: tmp6 };
-        const Button = tmp(5245).Button;
+        const Button = tmp(5280).Button;
         intl3 = tmp(1125).intl;
         items1[2] = closure_7(Button, obj9);
         tmp19 = closure_8(closure_5, obj6);

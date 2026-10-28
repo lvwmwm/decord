@@ -1,10 +1,10 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14916
+// Function ID: 14917
 // Name: purchaseExceptionAlerts
 // Dependencies: [1125, 2]
 // Exports: getPurchaseExceptionAlert
 
-// Module 14693 (purchaseExceptionAlerts)
+// Module 14916 (purchaseExceptionAlerts)
 import intl3 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 

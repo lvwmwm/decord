@@ -574,7 +574,7 @@ class SafetyState$Type extends MessageType6 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { state: { oneofKind: "rejectWithError" }, reason: 0, annotations: [] };
+    obj = { state: { oneofKind: "paths" }, reason: 0, annotations: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);

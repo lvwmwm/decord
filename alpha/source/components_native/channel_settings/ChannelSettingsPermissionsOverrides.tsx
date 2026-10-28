@@ -1,34 +1,34 @@
-// Module ID: 18326
-// Function ID: 18327
+// Module ID: 18567
+// Function ID: 18568
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 4842, 4824, 4878, 4846, 4904, 4914, 1389, 1084, 21, 4972, 587, 1502, 1630, 504, 7348, 11315, 4909, 1096, 8974, 7413, 1997, 5026, 5909, 1125, 5661, 2064, 4832, 18327, 9701, 5235, 5605, 10836, 6905, 7954, 6989, 18331, 1381, 18332, 2]
+// Dependencies: [32, 5, 19, 17, 4874, 4856, 4910, 4878, 4936, 4946, 1389, 1084, 21, 5004, 587, 1502, 1630, 504, 7383, 11352, 4941, 1096, 9008, 7448, 1997, 5058, 5944, 1125, 5696, 2064, 4864, 18568, 9733, 5270, 5640, 10871, 6939, 7988, 7023, 18572, 1381, 18573, 2]
 // Exports: default
 
-// Module 18326 (ChannelSettingsPermissionsOverrides)
+// Module 18567 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import useNavigation from "useNavigation" /* 1502 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4832 */;
-import GuildRecord from "GuildRecord" /* 4842 */;
-import PermissionUtils from "PermissionUtils" /* 4909 */;
-import TableRowGroup2 from "TableRowGroup" /* 6989 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7348 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11315 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18327 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4864 */;
+import GuildRecord from "GuildRecord" /* 4874 */;
+import PermissionUtils from "PermissionUtils" /* 4941 */;
+import TableRowGroup2 from "TableRowGroup" /* 7023 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7383 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11352 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18568 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,10 +47,10 @@ let obj3;
 let obj4;
 let tmp2;
 const intl5 = tmp2(1125);
-const Text_Text = tmp2(5235);
-const useChannelName = tmp2(5605);
-const TableRow2 = tmp2(6905);
-const InlineNotice2 = tmp2(7954);
+const Text_Text = tmp2(5270);
+const useChannelName = tmp2(5640);
+const TableRow2 = tmp2(6939);
+const InlineNotice2 = tmp2(7988);
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = Constants);
@@ -351,7 +351,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
   const tmp13 = closure_19(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp13 };
-    tmp12Result = tmp12(tmp5(10836), obj6);
+    tmp12Result = tmp12(tmp5(10871), obj6);
   } else {
     let TableRow = TableRow2.TableRow;
     const role = GuildRoleStore.getRole(stateFromStores.guild_id, id);

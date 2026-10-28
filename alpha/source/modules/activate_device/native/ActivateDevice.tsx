@@ -1,19 +1,19 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15384
+// Function ID: 15385
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4972, 587, 558, 576, 15160, 15162, 10747, 13541, 15163, 9633, 15164, 1898, 15165, 15169, 15170, 1414, 15171, 5670, 7223, 2]
+// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 15385, 15387, 10781, 13759, 15388, 9665, 15389, 1898, 15390, 15394, 15395, 1414, 15396, 5705, 7257, 2]
 
-// Module 15159 (ActivateDevice)
+// Module 15384 (ActivateDevice)
 import nativeDefault from "native" /* 587 */;
 import react_nativeDefault from "react-native" /* 1898 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13541 */;
-import _modDef15163 from "module_15163" /* 15163 */;
-import _modDef15164 from "module_15164" /* 15164 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13759 */;
+import _modDef15388 from "module_15388" /* 15388 */;
+import _modDef15389 from "module_15389" /* 15389 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -411,7 +411,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    const source = obj9.makeSource(require("module_15171"));
+    const source = obj9.makeSource(require("module_15396"));
     cResult[22] = source;
     tmp36 = source;
   } else {
@@ -531,14 +531,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef15163);
+        closure_3(_modDef15388);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[13]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef15164);
+          closure_3(_modDef15389);
         }
       }
     }
@@ -574,7 +574,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     }
   }
   const obj6 = { style: tmp.background, children: items6 };
-  const obj7 = { source: tmp7Result.makeSource(require("module_15171")), style: tmp.imageStyle };
+  const obj7 = { source: tmp7Result.makeSource(require("module_15396")), style: tmp.imageStyle };
   const tmp23 = require("FastImage");
   tmp7Result = first(first1[19]);
   items6 = [closure_8(tmp23, obj7), ];

@@ -1,28 +1,29 @@
-// Module ID: 18948
-// Function ID: 18949
+// Module ID: 19201
+// Function ID: 19202
 // Name: NewUserUtils
-// Dependencies: [5, 17415, 6501, 1389, 13327, 1084, 13597, 7869, 17461, 13599, 1381, 7892, 17462, 13328, 1254, 9050, 584, 1503, 13602, 6673, 18947, 1111, 13709, 2]
+// Dependencies: [5, 17648, 6535, 1389, 13544, 1084, 13815, 7903, 17696, 13817, 1381, 7926, 17697, 13545, 1254, 19202, 9083, 584, 1503, 13820, 6707, 19200, 1111, 13927, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18948 (NewUserUtils)
+// Module 19201 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1111 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import Link from "Link" /* 1503 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7869 */;
-import react_nativeDefault from "react-native" /* 7892 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13597 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13602 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13709 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17461 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18947 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
+import react_nativeDefault from "react-native" /* 7926 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13820 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13927 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17696 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19200 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 19202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17415 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17648 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
 import UserStore from "UserStore" /* 1389 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13327 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13544 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -215,7 +216,7 @@ obj = function _getNextOnboardingStep() {
                 let obj12;
                 lastShownStepIndex = sum;
                 const obj10 = { skip: flag };
-                const obj3 = closure_133_0(closure_133_2[18]);
+                const obj3 = closure_133_0(closure_133_2[19]);
                 obj3.trackNUFStep(closure_3, key2, obj10);
                 if (null != transitionStep) {
                   closure_133_19(key2);
@@ -489,6 +490,18 @@ let items = [
   obj2,
   obj3,
   {
+    key: "interest-picker",
+    shouldShowStep() {
+      const shouldShowGuardianConnect = ParentalConsentStore.getShouldShowGuardianConnect();
+      let result = !shouldShowGuardianConnect;
+      if (result) {
+        obj = InterestPickerExperiment;
+        result = obj.isInterestPickerExperimentEnabled("nuf_interest_picker_step");
+      }
+      return result;
+    }
+  },
+  {
     key: "discoverability",
     shouldShowStep() {
       obj = MobileOnboardingFrictionExperimentDefault;
@@ -512,7 +525,7 @@ let obj4 = {
     obj.dispatch({ type: "DEFERRED_INVITE_SHOW" });
   }
 };
-items[5] = obj4;
+items[6] = obj4;
 let result = size.fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
 
 export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardingStepIndex) {

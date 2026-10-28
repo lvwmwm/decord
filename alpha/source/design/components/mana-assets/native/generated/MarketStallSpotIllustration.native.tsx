@@ -1,28 +1,28 @@
-// Module ID: 19312
-// Function ID: 19313
+// Module ID: 19575
+// Function ID: 19576
 // Name: MarketStallSpotIllustration
-// Dependencies: [19, 21, 19313, 19314, 19315, 558, 576, 6997, 5670, 2]
+// Dependencies: [19, 21, 19576, 19577, 19578, 558, 576, 7031, 5705, 2]
 
-// Module 19312 (MarketStallSpotIllustration)
+// Module 19575 (MarketStallSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import react_native from "react-native" /* 6997 */;
-import _modDef19313 from "module_19313" /* 19313 */;
-import _modDef19314 from "module_19314" /* 19314 */;
-import _modDef19315 from "module_19315" /* 19315 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import react_native from "react-native" /* 7031 */;
+import _modDef19576 from "module_19576" /* 19576 */;
+import _modDef19577 from "module_19577" /* 19577 */;
+import _modDef19578 from "module_19578" /* 19578 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19313 };
+let obj2 = { uri: _modDef19576 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19314 };
+let obj3 = { uri: _modDef19577 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19315 };
-({ uri: _modDef19315 });
+obj[3] = { uri: _modDef19578 };
+({ uri: _modDef19578 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketStallSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

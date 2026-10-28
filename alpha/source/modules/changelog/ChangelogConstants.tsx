@@ -1,9 +1,9 @@
-// Module ID: 4874
-// Function ID: 4875
+// Module ID: 4906
+// Function ID: 4907
 // Name: ChangelogConstants
 // Dependencies: [2]
 
-// Module 4874 (ChangelogConstants)
+// Module 4906 (ChangelogConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");

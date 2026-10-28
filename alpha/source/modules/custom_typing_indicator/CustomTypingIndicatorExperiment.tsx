@@ -1,10 +1,10 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13299
+// Function ID: 13300
 // Name: CustomTypingIndicatorExperiment
 // Dependencies: [1452, 558, 576, 2]
 // Exports: getCustomTypingIndicatorConfig
 
-// Module 13082 (CustomTypingIndicatorExperiment)
+// Module 13299 (CustomTypingIndicatorExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

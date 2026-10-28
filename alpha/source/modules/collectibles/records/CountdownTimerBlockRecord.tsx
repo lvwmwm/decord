@@ -1,10 +1,10 @@
-// Module ID: 7679
-// Function ID: 7680
+// Module ID: 7713
+// Function ID: 7714
 // Name: CountdownTimerBlockRecord
-// Dependencies: [5641, 2]
+// Dependencies: [5676, 2]
 
-// Module 7679 (CountdownTimerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5641 */;
+// Module 7713 (CountdownTimerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5676 */;
 import size from "module_2" /* 2 */;
 
 class CountdownTimerBlockRecord {

@@ -1,20 +1,20 @@
-// Module ID: 16461
-// Function ID: 16462
+// Module ID: 16690
+// Function ID: 16691
 // Name: OrbsArcadeRewardChain
-// Dependencies: [19, 17, 21, 587, 4972, 558, 576, 4979, 16440, 16435, 16449, 16462, 683, 5259, 16444, 5235, 2]
+// Dependencies: [19, 17, 21, 587, 5004, 558, 576, 5011, 16669, 16663, 16678, 16691, 683, 5294, 16673, 5270, 2]
 
-// Module 16461 (OrbsArcadeRewardChain)
+// Module 16690 (OrbsArcadeRewardChain)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16440 */;
-import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16449 */;
-import OrbsArcadeRewardChainCellDefault from "OrbsArcadeRewardChainCell" /* 16462 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
+import useOrbsArcadeRewardAccentColorDefault from "useOrbsArcadeRewardAccentColor" /* 16678 */;
+import OrbsArcadeRewardChainCellDefault from "OrbsArcadeRewardChainCell" /* 16691 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp16;
-const OrbsArcadeRewardStatusLabelDefault = tmp16(16444);
+const OrbsArcadeRewardStatusLabelDefault = tmp16(16673);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 let Fragment = Fragment_mod;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -61,7 +61,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   grantAnimatedOnOpenRewardIds = grantAnimatedOnOpenRewardIds.grantAnimatedOnOpenRewardIds;
   const tmp5 = closure_11();
   importDefault = tmp5;
-  let obj2 = gameState(4979);
+  let obj2 = gameState(5011);
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== game.rewards) {
     let tmp7;
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
             if (cResult[21] === id) {
               tmp29 = cResult[22];
             }
-            let tmp2Result = tmp2(16462);
+            let tmp2Result = tmp2(16691);
             const orbsArcadeRewardChainTimeline = tmp2Result.useOrbsArcadeRewardChainTimeline(tmp29);
             const timeline = orbsArcadeRewardChainTimeline.timeline;
             const getGrantAtMs = orbsArcadeRewardChainTimeline.getGrantAtMs;
@@ -290,7 +290,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
                 const obj7 = { variant: "heading-sm/semibold", color: "text-strong", children: reward.name };
                 items3[1] = metroRequire(Text_Text.Text, obj7);
                 const obj8 = { variant: "text-xxs/medium", color: "text-muted", children: tmp2Result.getOrbsArcadeRewardScoreLabel(reward, closure_2[arg1]) };
-                const Text = tmp2(5235).Text;
+                const Text = tmp2(5270).Text;
                 tmp2Result = OrbsArcadeRewardUtils;
                 items3[2] = metroRequire(Text, obj8);
                 items2[1] = metroImportDefault(hasOwnProperty, obj5);
@@ -310,10 +310,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
               tmp46 = fn2;
             }
             let tmp36 = null;
-            const tmp2Result2 = tmp2(4979);
+            const tmp2Result2 = tmp2(5011);
             if (!tmp2Result2.isThemeLight(theme)) {
               let obj4 = { style: timeline.absoluteFill, start, end, colors: tmp33 };
-              tmp36 = getFocusRingAtMs(tmp18(5259), obj4);
+              tmp36 = getFocusRingAtMs(tmp18(5294), obj4);
             }
             cResult[27] = tmp33;
             cResult[28] = theme;
@@ -434,7 +434,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   const tmp = closure_11();
   dependencyMap = tmp;
   const tmp2 = game;
-  let obj = game(4979);
+  let obj = game(5011);
   let obj2 = memo;
   let items = [game.rewards];
   const theme = obj.useThemeContext().theme;
@@ -450,14 +450,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   const findLastResult = memo.findLast((arg0, arg1) => closure_4[arg1] === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED);
   let c5 = findLastResult;
   let first = findLastResult;
-  let tmp6 = gameState(16449);
+  let tmp6 = gameState(16678);
   const tmp5 = gameState;
   if (findLastResult == null) {
     first = memo[0];
   }
   const tmp6Result = tmp6(first);
   closure_6 = tmp6Result;
-  let tmp2Result = tmp2(16462);
+  let tmp2Result = tmp2(16691);
   let obj3 = { grantedRewardIds: mapped.reverse(), focusedRewardId: id, grantAnimatedOnOpenRewardIds };
   const useOrbsArcadeRewardChainTimeline = tmp2Result.useOrbsArcadeRewardChainTimeline;
   const found = memo.filter((item, index) => closure_4[index] !== OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED);
@@ -483,13 +483,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   const tmp13 = c7;
   let tmp15 = null;
   const tmp14 = c5;
-  const tmp2Result2 = tmp2(4979);
+  const tmp2Result2 = tmp2(5011);
   if (!tmp2Result2.isThemeLight(theme)) {
     let tmp16 = closure_6;
     let obj5 = { style: absoluteFill.absoluteFill, start, end, colors: memo1 };
     let tmp17 = absoluteFill;
     let tmp18 = start;
-    tmp15 = closure_6(tmp5(5259), obj5);
+    tmp15 = closure_6(tmp5(5294), obj5);
   }
   items3 = [
     tmp15,
@@ -538,7 +538,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       const obj7 = { variant: "heading-sm/semibold", color: "text-strong", children: reward.name };
       items3[1] = metroRequire(Text_Text.Text, obj7);
       const obj8 = { variant: "text-xxs/medium", color: "text-muted", children: tmp2Result.getOrbsArcadeRewardScoreLabel(reward, closure_4[index]) };
-      const Text = tmp2(5235).Text;
+      const Text = tmp2(5270).Text;
       tmp2Result = OrbsArcadeRewardUtils;
       items3[2] = metroRequire(Text, obj8);
       items2[1] = metroImportDefault(hasOwnProperty, obj5);

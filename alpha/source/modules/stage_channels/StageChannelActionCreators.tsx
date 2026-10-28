@@ -1,27 +1,27 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7908
+// Function ID: 7909
 // Name: StageChannelActionCreators
-// Dependencies: [5, 4875, 5631, 1084, 7418, 38, 5712, 7875, 1294, 7424, 5997, 6688, 6832, 1997, 4909, 1096, 7413, 7879, 7882, 2]
+// Dependencies: [5, 4907, 5666, 1084, 7453, 38, 5747, 7909, 1294, 7459, 6032, 6722, 6866, 1997, 4941, 1096, 7448, 7913, 7916, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7874 (StageChannelActionCreators)
+// Module 7908 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import Server from "Server" /* 1997 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5997 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6688 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6832 */;
-import Constants2 from "Constants" /* 7418 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7424 */;
-import StageChannelUtils from "StageChannelUtils" /* 7875 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7879 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7882 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6032 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6722 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
+import Constants2 from "Constants" /* 7453 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7459 */;
+import StageChannelUtils from "StageChannelUtils" /* 7909 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7913 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7413);
-const f100006 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7448);
+const f100619 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -346,7 +346,7 @@ export const setUserSuppress = function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f100006);
+  return patchResult.catch(f100619);
 };
 export const moveUserToAudience = function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export const moveUserToAudience = function moveUserToAudience(user, voiceChannel
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f100006);
+      patchResult.catch(f100619);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

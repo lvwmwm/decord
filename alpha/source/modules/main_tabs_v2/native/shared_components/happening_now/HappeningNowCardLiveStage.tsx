@@ -1,9 +1,9 @@
-// Module ID: 17538
-// Function ID: 17539
+// Module ID: 17773
+// Function ID: 17774
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 16695, 1084, 21, 4972, 587, 1264, 12719, 1999, 17539, 17540, 17541, 16696, 8568, 1199, 17550, 558, 576, 5605, 1125, 5990, 2]
+// Dependencies: [19, 17, 16924, 1084, 21, 5004, 587, 1264, 12766, 1999, 17774, 17775, 17776, 16925, 8605, 1199, 17785, 558, 576, 5640, 1125, 6025, 2]
 
-// Module 17538 (HappeningNowCardLiveStage)
+// Module 17773 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1084 */;
 import intl13 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import useChannelNameDefault from "useChannelName" /* 5605 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
-import HappeningNowCard from "HappeningNowCard" /* 16696 */;
-import useLiveStageData from "useLiveStageData" /* 17539 */;
+import useChannelNameDefault from "useChannelName" /* 5640 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
+import HappeningNowCard from "HappeningNowCard" /* 16925 */;
+import useLiveStageData from "useLiveStageData" /* 17774 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16695 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16924 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(12719, dependencyMap.paths);
+    const promise = asyncRequire(12766, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });

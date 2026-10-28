@@ -1,18 +1,18 @@
-// Module ID: 7326
-// Function ID: 7327
+// Module ID: 7361
+// Function ID: 7362
 // Name: OnboardingHomeUtils
-// Dependencies: [4877, 4824, 4846, 7327, 1084, 4831, 558, 576, 7328, 4849, 7329, 573, 7203, 2]
+// Dependencies: [4909, 4856, 4878, 7362, 1084, 4863, 558, 576, 7363, 4881, 7364, 573, 7237, 2]
 // Exports: canSeeOnboardingHome
 
-// Module 7326 (OnboardingHomeUtils)
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import FavoritesUtils from "FavoritesUtils" /* 4849 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7328 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7329 */;
-import ImpersonateStore from "ImpersonateStore" /* 4877 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7327 */;
+// Module 7361 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import FavoritesUtils from "FavoritesUtils" /* 4881 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7363 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7364 */;
+import ImpersonateStore from "ImpersonateStore" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7362 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -228,7 +228,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          const tmp14Result = tmp14(7203);
+          const tmp14Result = tmp14(7237);
           let result = tmp14Result.isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;

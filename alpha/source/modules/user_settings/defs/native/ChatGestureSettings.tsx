@@ -1,18 +1,18 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11247
+// Function ID: 11248
 // Name: ChatGestureSettings
-// Dependencies: [8331, 1084, 1208, 1125, 1264, 4800, 558, 11212, 2]
+// Dependencies: [8365, 1084, 1208, 1125, 1264, 4832, 558, 11248, 2]
 // Exports: getSwipeToReplySettingValue
 
-// Module 11211 (ChatGestureSettings)
+// Module 11247 (ChatGestureSettings)
 import intl4 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 let c3;

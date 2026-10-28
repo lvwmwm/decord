@@ -1,39 +1,38 @@
-// Module ID: 18133
-// Function ID: 18134
+// Module ID: 18373
+// Function ID: 18374
 // Name: SearchList
-// Dependencies: [19, 17, 9716, 21, 4972, 18134, 18135, 18136, 18151, 18130, 18153, 18155, 18150, 18137, 18156, 18160, 18161, 18164, 18165, 18166, 18167, 18168, 18169, 18119, 18186, 558, 576, 1630, 18121, 1125, 7222, 18187, 2]
+// Dependencies: [19, 17, 9748, 21, 5004, 18374, 18375, 18376, 18391, 18370, 18393, 18395, 18390, 18377, 18396, 18400, 18401, 18404, 18405, 18406, 18407, 18408, 18409, 18359, 18426, 558, 576, 1630, 18361, 1125, 7256, 2]
 
-// Module 18133 (SearchList)
+// Module 18373 (SearchList)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7222 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18119 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 18130 */;
-import DMRowDefault from "DMRow" /* 18134 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 18135 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 18136 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 18137 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 18150 */;
-import MediaGridItemDefault from "MediaGridItem" /* 18151 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 18153 */;
-import MediaGridDefault from "MediaGrid" /* 18155 */;
-import MessageRowDefault from "MessageRow" /* 18156 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18160 */;
-import LinkGridItemDefault from "LinkGridItem" /* 18161 */;
-import FileGridItemDefault from "FileGridItem" /* 18164 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 18165 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 18166 */;
-import GenericTextRowDefault from "GenericTextRow" /* 18167 */;
-import SearchListSectionDefault from "SearchListSection" /* 18168 */;
-import SmartSearchRowDefault from "SmartSearchRow" /* 18169 */;
-import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 18186 */;
-import smartSearchViewabilityConfig from "smartSearchViewabilityConfig" /* 18187 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7256 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18359 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 18370 */;
+import DMRowDefault from "DMRow" /* 18374 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 18375 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 18376 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 18377 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 18390 */;
+import MediaGridItemDefault from "MediaGridItem" /* 18391 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 18393 */;
+import MediaGridDefault from "MediaGrid" /* 18395 */;
+import MessageRowDefault from "MessageRow" /* 18396 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18400 */;
+import LinkGridItemDefault from "LinkGridItem" /* 18401 */;
+import FileGridItemDefault from "FileGridItem" /* 18404 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 18405 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 18406 */;
+import GenericTextRowDefault from "GenericTextRow" /* 18407 */;
+import SearchListSectionDefault from "SearchListSection" /* 18408 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 18409 */;
+import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 18426 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchConstants from "SearchConstants" /* 9716 */;
+import SearchConstants from "SearchConstants" /* 9748 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +43,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp9;
-const ErrorScreenDefault = tmp9(18121);
+const ErrorScreenDefault = tmp9(18361);
 function keyExtractor(type) {
   let key;
   const type2 = type.type;
@@ -260,9 +259,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp5;
   let tmp6;
   let tmp9Result;
+  let viewabilityConfigCallbackPairs;
   const obj = react2;
-  const cResult = obj.c(25);
-  ({ contentContainerStyle, data, onEndReached, ItemSeparatorComponent, ListHeaderComponent, ListFooterComponent, numColumns, scrollToTopKey } = arg0);
+  const cResult = obj.c(26);
+  ({ contentContainerStyle, data, onEndReached, ItemSeparatorComponent, ListHeaderComponent, ListFooterComponent, numColumns, viewabilityConfigCallbackPairs, scrollToTopKey } = arg0);
   const ref = react.useRef(null);
   let closure_2 = react.useRef(scrollToTopKey);
   const obj2 = react;
@@ -348,27 +348,29 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               if (cResult[16] === onEndReached) {
                 if (cResult[17] === tmp17) {
                   if (cResult[18] === tmp20) {
-                    let tmp22;
                     if (cResult[19] === num4) {
-                      tmp22 = cResult[20];
-                    }
-                    if (cResult[21] === tmp8.container) {
-                      if (cResult[22] === tmp11) {
-                        let tmp28;
-                        if (cResult[23] === tmp22) {
-                          tmp28 = cResult[24];
-                        }
-                        return tmp28;
+                      let tmp22;
+                      if (cResult[20] === viewabilityConfigCallbackPairs) {
+                        tmp22 = cResult[21];
                       }
+                      if (cResult[22] === tmp8.container) {
+                        if (cResult[23] === tmp11) {
+                          let tmp28;
+                          if (cResult[24] === tmp22) {
+                            tmp28 = cResult[25];
+                          }
+                          return tmp28;
+                        }
+                      }
+                      const obj7 = { style: tmp8.container, children: items1 };
+                      items1 = [tmp11, tmp22];
+                      const tmp31 = React4(React3, obj7);
+                      cResult[22] = tmp8.container;
+                      cResult[23] = tmp11;
+                      cResult[24] = tmp22;
+                      cResult[25] = tmp31;
+                      tmp28 = tmp31;
                     }
-                    const obj7 = { style: tmp8.container, children: items1 };
-                    items1 = [tmp11, tmp22];
-                    const tmp31 = React4(React3, obj7);
-                    cResult[21] = tmp8.container;
-                    cResult[22] = tmp11;
-                    cResult[23] = tmp22;
-                    cResult[24] = tmp31;
-                    tmp28 = tmp31;
                   }
                 }
               }
@@ -377,9 +379,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const obj8 = { ref, overrideProps: tmp17, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num4, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: tmp18, contentContainerStyle: tmp20, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
-    const AnimatedFlashList = tmp(7222).AnimatedFlashList;
-    const tmp27 = metroImportAll(AnimatedFlashList, obj8);
+    const obj8 = { ref, overrideProps: tmp17, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num4, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: tmp18, contentContainerStyle: tmp20, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs };
+    const tmp27 = metroImportAll(defaultMVCPConfig.AnimatedFlashList, obj8);
     cResult[11] = ItemSeparatorComponent;
     cResult[12] = ListFooterComponent;
     cResult[13] = ListHeaderComponent;
@@ -389,7 +390,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[17] = tmp17;
     cResult[18] = tmp20;
     cResult[19] = num4;
-    cResult[20] = tmp27;
+    cResult[20] = viewabilityConfigCallbackPairs;
+    cResult[21] = tmp27;
     tmp22 = tmp27;
   }
   const obj9 = { paddingBottom: sum };
@@ -413,8 +415,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let onEndReached;
   let scrollToTopKey;
   let tmp4Result;
+  let viewabilityConfigCallbackPairs;
   ({ contentContainerStyle, data, ListHeaderComponent, ListFooterComponent, numColumns, scrollToTopKey } = arg0);
-  ({ onEndReached, ItemSeparatorComponent } = arg0);
+  ({ onEndReached, ItemSeparatorComponent, viewabilityConfigCallbackPairs } = arg0);
   const ref = react.useRef(null);
   let closure_2 = react.useRef(scrollToTopKey);
   const items = [scrollToTopKey];
@@ -452,7 +455,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp9 = metroImportAll(tmp8, obj2);
   }
   items1 = [tmp9, ];
-  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs: smartSearchViewabilityConfig.smartSearchViewabilityConfig };
+  const obj4 = { ref, overrideProps: obj5, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj6, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs };
   obj5 = undefined;
   const AnimatedFlashList = defaultMVCPConfig.AnimatedFlashList;
   const tmp14 = metroImportAll;

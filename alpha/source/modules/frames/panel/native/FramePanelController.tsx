@@ -1,18 +1,18 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18771
+// Function ID: 18772
 // Name: FramePanelController
-// Dependencies: [19, 2042, 6776, 6777, 5610, 21, 558, 576, 504, 18089, 10770, 18493, 18524, 2]
+// Dependencies: [19, 2042, 6810, 6811, 5645, 21, 558, 576, 504, 18327, 10804, 18744, 18772, 2]
 
-// Module 18523 (FramePanelController)
+// Module 18771 (FramePanelController)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5610 */;
-import FramesConstants from "FramesConstants" /* 6777 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10770 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18089 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 18524 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18327 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 18772 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import FramesStore from "FramesStore" /* 6776 */;
+import FramesStore from "FramesStore" /* 6810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
       }
     }
   }
-  const BaseActivityPanelController = tmp(18493).BaseActivityPanelController;
+  const BaseActivityPanelController = tmp(18744).BaseActivityPanelController;
   const tmp13 = <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={tmp10}>{children}</BaseActivityPanelController>;
   cResult[5] = children;
   cResult[6] = connectedActivityAppId;
@@ -210,7 +210,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
       }
     }
   }, items1);
-  const BaseActivityPanelController = mainFrameId(18493).BaseActivityPanelController;
+  const BaseActivityPanelController = mainFrameId(18744).BaseActivityPanelController;
   return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
 });
 let result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");

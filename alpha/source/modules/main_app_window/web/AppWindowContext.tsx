@@ -1,19 +1,19 @@
-// Module ID: 6858
-// Function ID: 6859
+// Module ID: 6892
+// Function ID: 6893
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1084, 21, 1120, 6798, 558, 576, 2033, 6859, 2]
+// Dependencies: [32, 19, 1084, 21, 1120, 6832, 558, 576, 2033, 6893, 2]
 // Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6858 (AppWindowContext)
+// Module 6892 (AppWindowContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
 import DOMUtils from "DOMUtils" /* 2033 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 6859 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WindowIdUtils_mod from "WindowIdUtils" /* 6798 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 6832 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
         class E {
           constructor() {
             result = closure_1_6.set(closure_1, closure_3);
-            handleUnload = function handleUnload() { /* body not rendered: F144787 */ };
+            handleUnload = function handleUnload() { /* body not rendered: F145655 */ };
             listener = handleUnload.addEventListener("unload", handleUnload);
-            return () => { /* body not rendered: F144788 */ };
+            return () => { /* body not rendered: F145656 */ };
           }
         }
         const items = [tmp11, renderWindow, windowId];

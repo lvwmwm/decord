@@ -1,21 +1,21 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 18093
+// Function ID: 18094
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6643, 4824, 4904, 5713, 4914, 6499, 5631, 1084, 558, 576, 5026, 4800, 10641, 8654, 10639, 10640, 10647, 1125, 10651, 504, 2]
+// Dependencies: [6677, 4856, 4936, 5748, 4946, 6533, 5666, 1084, 558, 576, 5058, 4832, 10673, 8691, 10671, 10672, 10679, 1125, 10683, 504, 2]
 
-// Module 17856 (useYouBarAccessibilityLabel)
-import UserUtils from "UserUtils" /* 5026 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10639 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10640 */;
-import isGameActivityDefault from "isGameActivity" /* 10647 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10651 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6643 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import PresenceStore from "PresenceStore" /* 5713 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+// Module 18093 (useYouBarAccessibilityLabel)
+import UserUtils from "UserUtils" /* 5058 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10671 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10672 */;
+import isGameActivityDefault from "isGameActivity" /* 10679 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10683 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import PresenceStore from "PresenceStore" /* 5748 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               } else {
                 found1 = undefined;
                 if (activities != null) {
-                  found1 = activities.find(() => { /* body not rendered: F154511 */ });
+                  found1 = activities.find(() => { /* body not rendered: F155408 */ });
                 }
                 if (null != found1) {
                   tmp17 = closure_1;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
         tmp22 = tag;
         items1[1] = tag;
         items1[2] = text;
-        found2 = items1.filter(() => { /* body not rendered: F154512 */ });
+        found2 = items1.filter(() => { /* body not rendered: F155409 */ });
         str2 = ", ";
         return found2.join(", ");
       } else {
@@ -207,7 +207,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
   let closure_0;
   let closure_2;
   const tmp = dependencyMap;
-  let obj = id(5026);
+  let obj = id(5058);
   _require = obj.useName(id);
   id = undefined;
   if (id != null) {

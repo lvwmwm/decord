@@ -1,18 +1,18 @@
-// Module ID: 14296
-// Function ID: 14297
+// Module ID: 14519
+// Function ID: 14520
 // Name: BotReportChooser
-// Dependencies: [19, 2042, 21, 558, 576, 5235, 1125, 7300, 7296, 5211, 8106, 504, 6811, 2]
+// Dependencies: [19, 2042, 21, 558, 576, 5270, 1125, 7334, 7330, 5246, 8140, 504, 6845, 2]
 
-// Module 14296 (BotReportChooser)
+// Module 14519 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6811 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7296 */;
-import ActionSheet2 from "ActionSheet" /* 7300 */;
-import ReportModals from "ReportModals" /* 8106 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7330 */;
+import ActionSheet2 from "ActionSheet" /* 7334 */;
+import ReportModals from "ReportModals" /* 8140 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
 import Fragment from "Fragment" /* 21 */;
@@ -43,7 +43,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotReportC
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { style: first, variant: "redesign/heading-18/bold", children: intl.string(intl3.t.Bd10bR) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp7 = React3(Text, obj3);
     cResult[1] = tmp7;
@@ -53,10 +53,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotReportC
   }
   if (cResult[2] !== arg0) {
     const obj4 = { header: tmp5, children: hasOwnProperty(Group, obj5) };
-    const ActionSheet = tmp(7300).ActionSheet;
+    const ActionSheet = tmp(7334).ActionSheet;
     obj5 = { hasIcons: false, children: items };
     const obj6 = {};
-    Group = tmp(7296).ActionSheetRow.Group;
+    Group = tmp(7330).ActionSheetRow.Group;
     const merged = Object.assign(arg0);
     items = [React3(closure_7, obj6), ];
     const obj7 = {};

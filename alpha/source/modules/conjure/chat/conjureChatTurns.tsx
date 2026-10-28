@@ -1,24 +1,24 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10735
+// Function ID: 10736
 // Name: conjureChatTurns
-// Dependencies: [10704, 10705, 2]
+// Dependencies: [10736, 10737, 2]
 // Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
 
-// Module 10703 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10704 */;
-import conjureChatHistory from "conjureChatHistory" /* 10705 */;
+// Module 10735 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10736 */;
+import conjureChatHistory from "conjureChatHistory" /* 10737 */;
 import size from "module_2" /* 2 */;
 
-function findOpenTurn(map) {
+function findOpenTurn(messages) {
   let tmp;
-  if (null == map) {
+  if (null == messages) {
     return null;
   } else {
-    let diff = map.length - 1;
+    let diff = messages.length - 1;
     let flag2 = false;
     if (0 <= diff) {
       while (true) {
-        tmp = map[diff];
+        tmp = messages[diff];
         let tmp4 = flag2;
         if ("assistant" === tmp.role) {
           let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind || "project_event" === tmp.kind || "context_boundary" === tmp.kind;
@@ -137,7 +137,7 @@ export const turnIdOfSegment = function turnIdOfSegment(message) {
     const tmp = require;
     if (id.startsWith(conjureChatHistory.TURN_ENTRY_PREFIX)) {
       const id1 = message.id;
-      turn_id = id1.slice(tmp(10705).TURN_ENTRY_PREFIX.length);
+      turn_id = id1.slice(tmp(10737).TURN_ENTRY_PREFIX.length);
     }
   }
   return turn_id;

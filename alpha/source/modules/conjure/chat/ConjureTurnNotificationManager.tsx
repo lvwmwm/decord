@@ -1,28 +1,29 @@
-// Module ID: 18818
-// Function ID: 18819
+// Module ID: 19070
+// Function ID: 19071
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7646, 1243, 13761, 4875, 5003, 6499, 6774, 1084, 4831, 7216, 10745, 4800, 10726, 11528, 7347, 12346, 2]
+// Dependencies: [7680, 1243, 13979, 4907, 5035, 6533, 11237, 6808, 1084, 4863, 7250, 10779, 4832, 10760, 11566, 7382, 12391, 2]
 
-// Module 18818 (ConjureTurnNotificationManager)
-import UserSettings from "UserSettings" /* 4800 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import ConjureUtils from "ConjureUtils" /* 7347 */;
-import conjureProjectMute from "conjureProjectMute" /* 10726 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10745 */;
-import SoundUtils from "SoundUtils" /* 11528 */;
-import conjureMentions from "conjureMentions" /* 12346 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7646 */;
+// Module 19070 (ConjureTurnNotificationManager)
+import UserSettings from "UserSettings" /* 4832 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import ConjureUtils from "ConjureUtils" /* 7382 */;
+import conjureProjectMute from "conjureProjectMute" /* 10760 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10779 */;
+import SoundUtils from "SoundUtils" /* 11566 */;
+import conjureMentions from "conjureMentions" /* 12391 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13761 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6499 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13979 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11237 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7216 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
 import size from "module_2" /* 2 */;
 
-let c10;
+let closure_12;
 let unpackModuleId;
 function handleConjureTurnSettled(projectId) {
   notifyTurn(projectId.projectId, projectId.guildId, projectId.title, projectId.body, projectId.nonce);
@@ -50,8 +51,8 @@ function handleLogout() {
 }
 function notifyTurn(projectId, guildId, title, body, nonce) {
   let CHANNELResult;
-  let tmp26;
-  let tmp8Result4;
+  let tmp27;
+  let tmp8Result3;
   if (null != nonce) {
     let num = map.get(projectId);
     const obj = map;
@@ -63,7 +64,7 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
     }
   }
   const obj2 = ConjurePlatformUtilsDefault;
-  let result2 = obj2.areTurnNotificationsDisabled() || SelfPresenceStore.getStatus() === unpackModuleId.DND;
+  let result2 = obj2.areTurnNotificationsDisabled() || SelfPresenceStore.getStatus() === constants.DND;
   if (!result2) {
     const FocusMode = UserSettings.FocusMode;
     result2 = FocusMode.getSetting();
@@ -76,37 +77,37 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
     if (!obj3.isConjureProjectMuted(UserSettingsProtoStore.settings, projectId)) {
       const isSoundDisabledResult = NotificationSettingsStore.isSoundDisabled(message1);
       guildId = SelectedGuildStore.getGuildId();
-      if (ConjureProjectStore.getGlobalSelectedProjectId() === projectId) {
-        const tmpResult = ConjurePlatformUtilsDefault;
-        if (tmpResult.isWindowFocused()) {
-          if (!isSoundDisabledResult) {
-            const tmp8Result = SoundUtils;
-            tmp8Result.playSound(bit_message1, volume);
-          }
+      if (ConjurePagesStore.getShownProjectId() !== projectId) {
+        let conjureWorkspaceGuildId = guildId;
+        if (guildId == null) {
+          const tmp8Result = ConjureUtils;
+          conjureWorkspaceGuildId = tmp8Result.resolveConjureWorkspaceGuildId(ConjureChatStore);
+        }
+        const obj5 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result3.withConjureMentionNames(body), route: CHANNELResult, sound: tmp27, volume };
+        const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
+        ConjurePlatformUtilsDefault;
+        CHANNELResult = null;
+        tmp8Result3 = conjureMentions;
+        if (null != conjureWorkspaceGuildId) {
+          CHANNELResult = unpackModuleId.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
+        }
+        tmp27 = undefined;
+        if (!isSoundDisabledResult) {
+          tmp27 = bit_message1;
+        }
+        const result1 = presentTurnNotification(obj5);
+      }
+      const tmpResult2 = ConjurePlatformUtilsDefault;
+      if (tmpResult2.isWindowFocused()) {
+        if (!isSoundDisabledResult) {
+          const tmp8Result4 = SoundUtils;
+          tmp8Result4.playSound(bit_message1, volume);
         }
       }
-      let conjureWorkspaceGuildId = guildId;
-      if (guildId == null) {
-        const tmp8Result3 = ConjureUtils;
-        conjureWorkspaceGuildId = tmp8Result3.resolveConjureWorkspaceGuildId(ConjureChatStore);
-      }
-      const obj5 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result4.withConjureMentionNames(body), route: CHANNELResult, sound: tmp26, volume };
-      const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
-      ConjurePlatformUtilsDefault;
-      CHANNELResult = null;
-      tmp8Result4 = conjureMentions;
-      if (null != conjureWorkspaceGuildId) {
-        CHANNELResult = authStore.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
-      }
-      tmp26 = undefined;
-      if (!isSoundDisabledResult) {
-        tmp26 = bit_message1;
-      }
-      const result1 = presentTurnNotification(obj5);
     }
   }
 }
-({ Routes: c10, StatusTypes: unpackModuleId } = Constants);
+({ Routes: unpackModuleId, StatusTypes: closure_12 } = Constants);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 class ConjureTurnNotificationManager extends AutomaticLifecycleManager {
   constructor() {
@@ -119,7 +120,7 @@ class ConjureTurnNotificationManager extends AutomaticLifecycleManager {
 const bit_message1 = "bit_message1";
 const message1 = "message1";
 const ConjureChatStore = "ConjureChatStore";
-let c20 = 0.4;
+let c21 = 0.4;
 const conjureTurnNotificationManager = new ConjureTurnNotificationManager();
 const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/chat/ConjureTurnNotificationManager.tsx");

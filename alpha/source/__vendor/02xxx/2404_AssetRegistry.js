@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_organization_invites", scales: [1], hash: "6ffaae10287cbcb250efbabecc471463", name: "GameOrganizationInvitesUntranslated.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_organization_invites", scales: [1], hash: "e695187b9b41902300ff51c2d8c6c6db", name: "GameOrganizationInvitesUntranslated.compiled.messages", type: "jsona" });

@@ -1,38 +1,14 @@
-// Module ID: 17302
-// Function ID: 17303
+// Module ID: 17532
+// Function ID: 17533
 // Name: PinotSettingsLazy
-// Dependencies: [8331, 11212, 2]
-// Exports: usePinotDataPrivacySections
+// Dependencies: [2, 17533]
 
-// Module 17302 (PinotSettingsLazy)
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+// Module 17532 (PinotSettingsLazy)
+import PinotMemberSetting from "PinotMemberSetting" /* 17533 */;
 import size from "module_2" /* 2 */;
 
-const obj = {
-  useTitle() {
-    return "";
-  },
-  parent: SettingsConstants.MobileUserSettings.DATA_AND_PRIVACY,
-  usePredicate() {
-    return false;
-  },
-  unsearchable: true
-};
-const createToggle = SettingBuilders.createToggle;
-const obj2 = {
-  useValue() {
-    return false;
-  },
-  onValueChange() {
-
-  }
-};
-const merged = Object.assign(obj);
-const toggle = createToggle(obj2);
 const result = size.fileFinishedImporting("modules/pinot/native/PinotSettingsLazy.tsx");
+const PinotMemberSetting_export = PinotMemberSetting.PinotMemberSetting;
 
-export const PinotMemberSetting = toggle;
-export function usePinotDataPrivacySections() {
-  return [];
-}
+export { PinotMemberSetting_export as PinotMemberSetting };
+export const usePinotDataPrivacySections = PinotMemberSetting.usePinotDataPrivacySections;

@@ -1,29 +1,29 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16671
+// Function ID: 16672
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2065, 16434, 21, 587, 4972, 558, 576, 504, 12956, 9405, 5235, 1125, 16440, 16443, 16444, 16435, 9438, 7555, 16445, 16449, 683, 16450, 5259, 7307, 2]
+// Dependencies: [19, 17, 2065, 16662, 21, 587, 5004, 558, 576, 504, 13003, 9437, 5270, 1125, 16669, 16672, 16673, 16663, 9470, 7589, 16674, 16678, 683, 16679, 5294, 7341, 2]
 
-// Module 16442 (OrbsArcadeRewardShelf)
+// Module 16671 (OrbsArcadeRewardShelf)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useCountdownDefault from "useCountdown" /* 7555 */;
-import ClipView from "ClipView" /* 9405 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16440 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16443 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16444 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16445 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16450 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useCountdownDefault from "useCountdown" /* 7589 */;
+import ClipView from "ClipView" /* 9437 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16672 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16673 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16674 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16679 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const NitroCoinSpotIllustration = tmp(9438);
+const NitroCoinSpotIllustration = tmp(9470);
 function formatTimeUntil(tmp3Result) {
   let days;
   let formatToPlainStringResult;
@@ -158,7 +158,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
           }
         }
         const obj2 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t.DCCcdz) };
-        const Text = tmp(5235).Text;
+        const Text = tmp(5270).Text;
         intl = tmp(1125).intl;
         const tmp21 = React4(Text, obj2);
         cResult[12] = tmp21;
@@ -222,7 +222,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       const tmp27 = authStore(metroRequire, obj5);
     }
     const obj6 = { "aria-label": tmp9, shape: ClipView.CutoutShape.Circle, size: v50, gap: 2, depthX: 0.3, children: tmp13 };
-    const Pile = tmp(12956).Pile;
+    const Pile = tmp(13003).Pile;
     cResult[9] = tmp9;
     cResult[10] = tmp13;
     cResult[11] = React4(Pile, obj6);
@@ -269,7 +269,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const obj2 = { children: items2 };
   const obj3 = {
     "aria-label": memo,
-    shape: rewards(9405).CutoutShape.Circle,
+    shape: rewards(9437).CutoutShape.Circle,
     size: v50,
     gap: 2,
     depthX: 0.3,
@@ -278,13 +278,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
       return closure_1_9(closure_1_18, obj, reward.id);
     })
   };
-  const Pile = rewards(12956).Pile;
+  const Pile = rewards(13003).Pile;
   items2 = [closure_9(Pile, obj3), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
   const obj5 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(rewards(1125).t.DCCcdz) };
-  const Text = rewards(5235).Text;
+  const Text = rewards(5270).Text;
   intl = rewards(1125).intl;
-  items3 = [closure_9(Text, obj5), closure_9(rewards(5235).Text, { variant: "heading-sm/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
+  items3 = [closure_9(Text, obj5), closure_9(rewards(5270).Text, { variant: "heading-sm/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
   items2[1] = closure_10(closure_6, obj4);
   return closure_10(closure_11, obj2);
 });
@@ -539,7 +539,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-sm/semibold", color: "text-default", children: intl.string(intl4.t["/AJCN+"]) };
-      const Text = tmp(5235).Text;
+      const Text = tmp(5270).Text;
       intl = tmp(1125).intl;
       const tmp22 = React4(Text, obj4);
       cResult[8] = tmp22;
@@ -583,7 +583,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
     let tmp24 = null;
     if (null != windowEndsAt) {
       const obj7 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj8) };
-      const Text2 = tmp(5235).Text;
+      const Text2 = tmp(5270).Text;
       const intl2 = tmp(1125).intl;
       formatToPlainString = intl2.formatToPlainString;
       obj8 = { duration: formatTimeUntil(tmp9) };
@@ -635,7 +635,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsAr
   const tmp9 = React4;
   if (null != windowEndsAt) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj7) };
-    const Text2 = tmp11(5235).Text;
+    const Text2 = tmp11(5270).Text;
     const intl2 = tmp11(1125).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { duration: formatTimeUntil(tmp3Result) };

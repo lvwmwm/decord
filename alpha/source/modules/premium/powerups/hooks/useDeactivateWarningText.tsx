@@ -1,16 +1,16 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13701
+// Function ID: 13702
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5195, 4878, 4846, 558, 576, 504, 7226, 5186, 1125, 2567, 2]
+// Dependencies: [19, 5230, 4910, 4878, 558, 576, 504, 7260, 5221, 1125, 2567, 2]
 
-// Module 13482 (useDeactivateWarningText)
+// Module 13701 (useDeactivateWarningText)
 import _modDef2567 from "module_2567" /* 2567 */;
-import Powerups from "Powerups" /* 5186 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7226 */;
+import Powerups from "Powerups" /* 5221 */;
+import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7260 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5195 */;
-import GuildRoleStore from "GuildRoleStore" /* 4878 */;
-import GuildStore from "GuildStore" /* 4846 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
+import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import GuildStore from "GuildStore" /* 4878 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F150831 */ }, 0);
+          num = sortedRoles.reduce(() => { /* body not rendered: F151725 */ }, 0);
         }
       }
       return num;
@@ -279,7 +279,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(5186).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(5221).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;

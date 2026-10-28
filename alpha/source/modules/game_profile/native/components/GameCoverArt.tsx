@@ -1,16 +1,16 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9337
+// Function ID: 9338
 // Name: GameCoverArt
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 9306, 5235, 5670, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 9338, 5270, 5705, 2]
 
-// Module 9305 (GameCoverArt)
+// Module 9337 (GameCoverArt)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useGameArtworkDefault from "useGameArtwork" /* 9306 */;
+import useGameArtworkDefault from "useGameArtwork" /* 9338 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let obj2;
 let obj3;
 let tmp;
 let tmp4;
-const Text_Text = tmp(5235);
-const FastImageDefault = tmp4(5670);
+const Text_Text = tmp(5270);
+const FastImageDefault = tmp4(5705);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -161,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCoverArt
                 }
               }
               const obj7 = { source: tmp14, accessible: false, style: tmp15, onError: handleError, onLoad: handleLoad };
-              const tmp18 = React3(tmp9(5670), obj7, imageUrl);
+              const tmp18 = React3(tmp9(5705), obj7, imageUrl);
               cResult[21] = handleError;
               cResult[22] = handleLoad;
               cResult[23] = imageUrl;

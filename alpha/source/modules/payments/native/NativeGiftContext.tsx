@@ -1,9 +1,9 @@
-// Module ID: 10452
-// Function ID: 10453
+// Module ID: 10484
+// Function ID: 10485
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8681, 9519, 10453, 1389, 1084, 7526, 1391, 1095, 21, 3, 7541, 558, 576, 10454, 7542, 4788, 10455, 1125, 10456, 2050, 7520, 10457, 504, 10492, 10499, 8686, 8673, 5910, 1264, 7280, 10500, 584, 1381, 10450, 2]
+// Dependencies: [5, 32, 19, 8718, 9551, 10485, 1389, 1084, 7560, 1391, 1095, 21, 3, 7575, 558, 576, 10486, 7576, 4820, 10487, 1125, 10488, 2050, 7555, 10489, 504, 10524, 10531, 8723, 8710, 5945, 1264, 7314, 10532, 584, 1381, 10482, 2]
 
-// Module 10452 (NativeGiftContext)
+// Module 10484 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,21 +12,21 @@ import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import BillingUtils from "BillingUtils" /* 4788 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
-import Constants3 from "Constants" /* 7526 */;
-import ContextUtilsDefault from "ContextUtils" /* 7541 */;
-import BadgeId from "BadgeId" /* 8673 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10450 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10500 */;
+import BillingUtils from "BillingUtils" /* 4820 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
+import Constants3 from "Constants" /* 7560 */;
+import ContextUtilsDefault from "ContextUtils" /* 7575 */;
+import BadgeId from "BadgeId" /* 8710 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8723 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10482 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10532 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9519 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10453 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8718 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9551 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10485 */;
 import UserStore from "UserStore" /* 1389 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: 1610613164, planSelection: { premiumType, planInterval }, giftInfo: 1090519905 };
+  let obj4 = { orderId: "a", planId: null, planSelection: { premiumType, planInterval }, giftInfo: null };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: 1610613164, planSelection: { premiumType, planInterval }, giftInfo: 1090519905 };
+  let obj = { orderId: "a", planId: null, planSelection: { premiumType, planInterval }, giftInfo: null };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);

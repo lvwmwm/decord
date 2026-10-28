@@ -1,20 +1,20 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17585
+// Function ID: 17586
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 8331, 558, 576, 1208, 1125, 4800, 16181, 5211, 17353, 1999, 11212, 2]
+// Dependencies: [19, 8365, 558, 576, 1208, 1125, 4832, 16409, 5246, 17586, 1999, 11248, 2]
 
-// Module 17352 (ActivityPrivacyDefaultSharingSetting)
+// Module 17585 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16181 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16409 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -108,7 +108,7 @@ let obj = {
       const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
       ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(17353, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+      obj3.openLazy(asyncRequire(17586, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

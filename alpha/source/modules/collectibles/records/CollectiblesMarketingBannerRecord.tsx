@@ -1,10 +1,10 @@
-// Module ID: 7674
-// Function ID: 7675
+// Module ID: 7708
+// Function ID: 7709
 // Name: CollectiblesMarketingBannerRecord
-// Dependencies: [7673, 2]
+// Dependencies: [7707, 2]
 
-// Module 7674 (CollectiblesMarketingBannerRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7673 */;
+// Module 7708 (CollectiblesMarketingBannerRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7707 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingBannerRecord {

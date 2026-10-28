@@ -1,16 +1,16 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14392
+// Function ID: 14393
 // Name: useConjureWandStatus
-// Dependencies: [6774, 558, 576, 14170, 10723, 5264, 1125, 3831, 2]
+// Dependencies: [6808, 558, 576, 14393, 10757, 5299, 1125, 3863, 2]
 
-// Module 14169 (useConjureWandStatus)
+// Module 14392 (useConjureWandStatus)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1125 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import useMountEffectDefault from "useMountEffect" /* 5264 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10723 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 14170 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import useMountEffectDefault from "useMountEffect" /* 5299 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10757 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 14393 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   useMountEffectDefault(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef3831.uk6jhJ);
+    const stringResult = intl.string(_modDef3863.uk6jhJ);
     cResult[1] = stringResult;
     tmp9 = stringResult;
   } else {
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     let stringResult1 = null;
     if ("working" === kind) {
       const intl2 = tmp(1125).intl;
-      stringResult1 = intl2.string(tmp4(3831)["Y8pS+n"]);
+      stringResult1 = intl2.string(tmp4(3863)["Y8pS+n"]);
     }
     cResult[2] = "working" === kind;
     cResult[3] = stringResult1;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     let stringResult2 = null;
     if ("needs_input" === kind2) {
       const intl3 = tmp(1125).intl;
-      stringResult2 = intl3.string(tmp4(3831).hfIuc7);
+      stringResult2 = intl3.string(tmp4(3863).hfIuc7);
     }
     let kind3;
     if (status != null) {
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     let stringResult3 = null;
     if ("unread" === kind5) {
       const intl4 = tmp(1125).intl;
-      stringResult3 = intl4.string(tmp4(3831)["6XGnHJ"]);
+      stringResult3 = intl4.string(tmp4(3863)["6XGnHJ"]);
     }
     let kind6;
     if (status != null) {
@@ -162,11 +162,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   });
   let obj = { working: tmp5, hasBadge: !tmp5 && hasUnread, accessibilityLabel: found.join(", ") };
   const intl = intl5.intl;
-  const items = [intl.string(tmp(3831).uk6jhJ), , , ];
+  const items = [intl.string(tmp(3863).uk6jhJ), , , ];
   let stringResult = null;
   if ("working" === kind) {
     const intl2 = tmp7(1125).intl;
-    stringResult = intl2.string(tmp(3831)["Y8pS+n"]);
+    stringResult = intl2.string(tmp(3863)["Y8pS+n"]);
   }
   items[1] = stringResult;
   let kind1;
@@ -176,7 +176,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let stringResult1 = null;
   if ("needs_input" === kind1) {
     const intl3 = tmp7(1125).intl;
-    stringResult1 = intl3.string(tmp(3831).hfIuc7);
+    stringResult1 = intl3.string(tmp(3863).hfIuc7);
   }
   items[2] = stringResult1;
   let kind2;
@@ -186,7 +186,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let stringResult2 = null;
   if ("unread" === kind2) {
     const intl4 = tmp7(1125).intl;
-    stringResult2 = intl4.string(tmp(3831)["6XGnHJ"]);
+    stringResult2 = intl4.string(tmp(3863)["6XGnHJ"]);
   }
   items[3] = stringResult2;
   found = items.filter((item) => null != item);

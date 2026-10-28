@@ -1,15 +1,15 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17741
+// Function ID: 17742
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [6011, 4914, 4831, 1084, 558, 576, 504, 11, 4797, 2046, 10931, 2]
+// Dependencies: [6045, 4946, 4863, 1084, 558, 576, 504, 11, 4829, 2046, 10966, 2]
 
-// Module 17506 (usePrivateChannelWaveEligible)
+// Module 17741 (usePrivateChannelWaveEligible)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1084 */;
 import _modDef2046 from "module_2046" /* 2046 */;
-import ChannelConstants from "ChannelConstants" /* 4831 */;
-import MessageStore from "MessageStore" /* 6011 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelConstants from "ChannelConstants" /* 4863 */;
+import MessageStore from "MessageStore" /* 6045 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -221,8 +221,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
       }
       const obj6 = SnowflakeUtilsDefault;
       const extractTimestampResult = obj6.extractTimestamp(isDM.id);
-      const isWithinInterval = tmp(4797).isWithinInterval;
-      tmp(4797);
+      const isWithinInterval = tmp(4829).isWithinInterval;
+      tmp(4829);
       const tmp29 = _modDef2046();
       cResult[19] = isDM.id;
       cResult[20] = isWithinInterval(tmp29, _modDef2046(extractTimestampResult), c7);
@@ -234,7 +234,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         }
       }
     }
-    const tmpResult10 = tmp(10931);
+    const tmpResult10 = tmp(10966);
     const strangerDangerWarning = tmpResult10.useStrangerDangerWarning(isDM.id);
     if (tmp4) {
       class T {

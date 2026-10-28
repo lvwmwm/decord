@@ -1184,7 +1184,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "rejectWithError" }, animated: false };
+    obj = { emoji: { oneofKind: "paths" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
@@ -2065,7 +2065,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "rejectWithError" } };
+    obj = { badge: { oneofKind: "paths" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
@@ -3901,7 +3901,7 @@ class PerkConfig$Type extends MessageType29 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "rejectWithError" } };
+    obj = { source: [], kind: { oneofKind: "paths" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);

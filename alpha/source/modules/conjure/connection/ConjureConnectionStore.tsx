@@ -1,51 +1,54 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10733
+// Function ID: 10734
 // Name: ConjureConnectionStore
-// Dependencies: [5, 1389, 10702, 10707, 6774, 10710, 10711, 10712, 10714, 10715, 10716, 10717, 10718, 10719, 584, 10720, 10735, 10736, 10738, 10740, 10741, 10742, 10799, 10809, 10811, 10812, 10814, 10815, 10816, 10721, 10817, 10728, 10788, 10818, 569, 10722, 10745, 10819, 10205, 10796, 504, 2]
+// Dependencies: [5, 1389, 10734, 10739, 6808, 10742, 10743, 10744, 10746, 10747, 10748, 10749, 10750, 10751, 10752, 10753, 584, 10754, 10769, 10770, 10772, 10774, 10775, 10776, 10832, 10843, 10845, 10846, 10848, 10849, 10850, 10851, 10755, 10852, 10762, 10822, 10853, 569, 10756, 10779, 10854, 10237, 10829, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
-// Module 10701 (ConjureConnectionStore)
+// Module 10733 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import createNonce from "createNonce" /* 10205 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 10702 */;
-import conjureChatConnection from "conjureChatConnection" /* 10720 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10721 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10722 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10728 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 10735 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 10736 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 10738 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 10740 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10741 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 10742 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10745 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10788 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10796 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 10799 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 10809 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10811 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 10812 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10814 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 10815 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 10816 */;
-import conjureKnownStepKinds from "conjureKnownStepKinds" /* 10817 */;
-import ConjureWebSocket from "ConjureWebSocket" /* 10818 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 10819 */;
+import createNonce from "createNonce" /* 10237 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 10734 */;
+import conjureChatConnection from "conjureChatConnection" /* 10754 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10755 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10762 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 10769 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10770 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 10772 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 10774 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10775 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 10776 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10779 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10822 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10829 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 10832 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 10843 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10845 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 10846 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10848 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 10849 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 10850 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 10851 */;
+import conjureKnownStepKinds from "conjureKnownStepKinds" /* 10852 */;
+import ConjureWebSocket from "ConjureWebSocket" /* 10853 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 10854 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10707 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
-import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 10710 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10711 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10712 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 10714 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10715 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 10716 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10717 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 10718 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10719 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10739 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 10742 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10743 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10744 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 10746 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10747 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 10748 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 10750 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10751 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 10752 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 10753 */;
 import size from "module_2" /* 2 */;
 
 const ConjureChatStore = ConjureChatStore2;
@@ -99,7 +102,7 @@ function appendFailedUserMessage(projectId, nonce, message) {
   const result = set(nonce, id);
   const tmp6 = DispatcherDefault;
   const dispatch = tmp6.dispatch;
-  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "enabled" };
+  obj2 = { type: "CONJURE_CHAT_MESSAGE_APPEND", projectId, content, id: "optimistic:" + nonce, userId: id1, timestamp: date.toISOString(), attachments, held: "done" };
   const currentUser1 = obj.getCurrentUser();
   id1 = undefined;
   if (currentUser1 != null) {
@@ -204,7 +207,7 @@ function handleEvent(projectId, pendingEvents, type) {
       }
       if (deleteResult) {
         const obj8 = { type: "CONJURE_CHAT_INTERRUPTED", projectId };
-        const tmp13Result = tmp13(dependencyMap[14]);
+        const tmp13Result = tmp13(dependencyMap[16]);
         tmp13Result.dispatch(obj8);
       }
     } else if (null != closure_1_18[kind.kind]) {
@@ -214,7 +217,7 @@ function handleEvent(projectId, pendingEvents, type) {
       const tmp4 = require;
       const tmp5 = dependencyMap;
       if (obj.isKnownStepKind(kind.kind)) {
-        const tmp4Result = tmp4(tmp5[15]);
+        const tmp4Result = tmp4(tmp5[17]);
         tmp4Result.appendTurnStep(projectId, kind);
       }
     }
@@ -390,16 +393,16 @@ let obj = function _openWithFreshTicket() {
               tmp21(tmp22, open, str);
               closure_1.pendingModelSettings = null;
               closure_1.pendingTemplatePrep = null;
-              let obj3 = closure_132_0(closure_132_2[22]);
+              let obj3 = closure_132_0(closure_132_2[24]);
               const rejectPendingPublishResult = obj3.rejectPendingPublish(closure_0, "Connection failed before the publish result arrived");
-              let obj4 = closure_132_0(closure_132_2[23]);
+              let obj4 = closure_132_0(closure_132_2[25]);
               let result = obj4.rejectPendingPublishSchedule(closure_0);
-              let obj5 = closure_132_0(closure_132_2[22]);
+              let obj5 = closure_132_0(closure_132_2[24]);
               let result1 = obj5.rejectPendingPatchNotesDraft(closure_0, "Connection failed before the draft arrived");
               open = closure_0;
-              let obj9 = { location: "connection", code: closure_132_0(closure_132_2[29]).ConjureErrorCodes.WS_OPEN_FAILED, message: str2 };
-              const trackConjureErrored = closure_132_0(closure_132_2[29]).trackConjureErrored;
-              const tmp45 = closure_132_0(closure_132_2[29]);
+              let obj9 = { location: "connection", code: closure_132_0(closure_132_2[32]).ConjureErrorCodes.WS_OPEN_FAILED, message: str2 };
+              const trackConjureErrored = closure_132_0(closure_132_2[32]).trackConjureErrored;
+              const tmp45 = closure_132_0(closure_132_2[32]);
               const _Error2 = Error;
               str2 = "ws open failed";
               if (tmp57 instanceof Error) {
@@ -434,22 +437,22 @@ let obj = function _openWithFreshTicket() {
                             return closure_2_20(projectId, closure_1_1, arg0);
                           },
                 onClose() {
-                            obj = projectId(c2[22]);
+                            obj = projectId(c2[24]);
                             obj.rejectPendingPublish(projectId, "Connection closed before the publish result arrived");
-                            obj2 = projectId(c2[23]);
+                            obj2 = projectId(c2[25]);
                             const result = obj2.rejectPendingPublishSchedule(projectId);
-                            const obj3 = projectId(c2[22]);
+                            const obj3 = projectId(c2[24]);
                             const result1 = obj3.rejectPendingPatchNotesDraft(projectId, "Connection closed before the draft arrived");
-                            const obj4 = projectId(c2[32]);
+                            const obj4 = projectId(c2[35]);
                             const result2 = obj4.clearConjurePreviewClaims(projectId);
                             if (closure_1_1.disposed) {
                               const obj6 = { type: "CONJURE_CHAT_CONN_STATE", projectId, connState: "closed" };
-                              const obj9 = closure_1(c2[14]);
+                              const obj9 = closure_1(c2[16]);
                               obj9.dispatch(obj6);
                             } else if (closure_1_1.helloSeen) {
                               closure_1_1.reconnectPending = true;
                               const obj8 = { type: "CONJURE_CHAT_CONN_STATE", projectId, connState: "connecting" };
-                              const obj7 = closure_1(c2[14]);
+                              const obj7 = closure_1(c2[16]);
                               obj7.dispatch(obj8);
                               const backoff = tmp7.backoff;
                               backoff.fail(() => {
@@ -457,7 +460,7 @@ let obj = function _openWithFreshTicket() {
                               });
                             } else {
                               const obj10 = { type: "CONJURE_CHAT_CONN_STATE", projectId, connState: "closed" };
-                              const obj5 = closure_1(c2[14]);
+                              const obj5 = closure_1(c2[16]);
                               obj5.dispatch(obj10);
                               closure_2_16(projectId, closure_1_1, "Connection closed before the message was sent");
                               closure_1_1.pendingModelSettings = null;
@@ -612,6 +615,7 @@ const merged14 = Object.assign(conjureDebugConnection.debugStepHandlers);
 const merged15 = Object.assign(conjurePreviewConnection.previewStepHandlers);
 const merged16 = Object.assign(conjureProjectConnection.projectStepHandlers);
 const merged17 = Object.assign(conjurePublishConnection.publishStepHandlers);
+const merged18 = Object.assign(conjureUsageConnection.usageStepHandlers);
 const set1 = new Set(["hello", "history", "capture_preview", "control_preview", "control_claim", "control_abort", "capture_claim", "preview_operation", "request_upstream_ticket", "host_approvals"]);
 const map3 = new Map();
 const map4 = new Map();

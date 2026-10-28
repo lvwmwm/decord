@@ -1,18 +1,18 @@
-// Module ID: 16346
-// Function ID: 16347
+// Module ID: 16574
+// Function ID: 16575
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 6711, 21, 558, 576, 16347, 9582, 9608, 16348, 6716, 7802, 7793, 6718, 14137, 14120, 2]
+// Dependencies: [19, 6745, 21, 558, 576, 16575, 9614, 9640, 16576, 6750, 7836, 7827, 6752, 14360, 14343, 2]
 // Exports: canUseBountyVideoEndAppStoreOverlay
 
-// Module 16346 (useBountyVideoEndAppStoreOverlay)
+// Module 16574 (useBountyVideoEndAppStoreOverlay)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import QuestConstants from "QuestConstants" /* 6711 */;
-import QuestContent from "QuestContent" /* 6716 */;
-import AnalyticsActions from "AnalyticsActions" /* 7793 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7802 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9582 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16347 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import QuestContent from "QuestContent" /* 6750 */;
+import AnalyticsActions from "AnalyticsActions" /* 7827 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9614 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16575 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -333,7 +333,7 @@ export { useBountyVideoEndAppStoreContext };
 export const canUseBountyVideoEndAppStoreOverlay = function canUseBountyVideoEndAppStoreOverlay(cta) {
   const obj = QuestCustomAppStoreOverlayUtils;
   if (obj.canOpenCustomAppStoreOverlayFromCta(cta.cta)) {
-    const BountiesMobileQuestBarExperiment = tmp(9582).BountiesMobileQuestBarExperiment;
+    const BountiesMobileQuestBarExperiment = tmp(9614).BountiesMobileQuestBarExperiment;
     const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
     const config = BountiesMobileQuestBarExperiment.getConfig(obj2);
     const tmp5 = config.enabled && tmp6 === BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;

@@ -1,21 +1,21 @@
-// Module ID: 17838
-// Function ID: 17839
+// Module ID: 18075
+// Function ID: 18076
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5003, 1084, 1391, 21, 4972, 10141, 1999, 13628, 7309, 9674, 7280, 558, 576, 17784, 504, 17799, 1125, 17839, 587, 11160, 2]
+// Dependencies: [5, 19, 17, 5035, 1084, 1391, 21, 5004, 10173, 1999, 13846, 7343, 9706, 7314, 558, 576, 18021, 504, 18036, 1125, 18076, 587, 11195, 2]
 
-// Module 17838 (GuildsBarCreateJoinButton)
+// Module 18075 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7309 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17784 */;
+import GuildCapUpsellHooks from "GuildCapUpsellHooks" /* 7343 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18021 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5003 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let metroImportDefault;
 let tmp;
 const get_initialized = tmp(504);
 const intl2 = tmp(1125);
-const CirclePlusIcon2 = tmp(11160);
-const HomeDrawerAddServerRow = tmp(17839);
+const CirclePlusIcon2 = tmp(11195);
+const HomeDrawerAddServerRow = tmp(18076);
 function handleCreateJoinGuildPress() {
   return obj(...arguments);
 }
@@ -225,7 +225,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp23 = tmp26;
     }
   }
-  const tmp22 = jsx(tmp17(17784), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
+  const tmp22 = jsx(tmp17(18021), { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: tmp10, label: tmp11, expandedChildren: tmp12, children: tmp18 });
   cResult[7] = stateFromStores;
   cResult[8] = tmp18;
   cResult[9] = guildsBarAnimatedWrapperStyles;
@@ -259,7 +259,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "guilds-bar-drag-preview", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "INVITE_RESOLVE_SUCCESS", children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

@@ -1,22 +1,22 @@
-// Module ID: 13462
-// Function ID: 13463
+// Module ID: 13681
+// Function ID: 13682
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4972, 558, 576, 7269, 587, 5235, 7014, 1125, 2567, 13463, 13438, 7077, 9810, 2]
+// Dependencies: [17, 21, 5004, 558, 576, 7303, 587, 5270, 7048, 1125, 2567, 13682, 13657, 7111, 9842, 2]
 
-// Module 13462 (GuildPowerupsCardFooter)
+// Module 13681 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import _modDef2567 from "module_2567" /* 2567 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7014 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7077 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7269 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13438 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13463 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7048 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7111 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7303 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13657 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13682 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
-    const CircleCheckIcon = tmp(7269).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7303).CircleCheckIcon;
     const tmp8 = React3(CircleCheckIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(7014).CircleErrorIcon;
+    const CircleErrorIcon = tmp(7048).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(7014).CircleErrorIcon;
+    const CircleErrorIcon = tmp(7048).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -311,7 +311,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     const inline = tmp4.inline;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp(9810).BoostGemIcon;
+      const BoostGemIcon = tmp(9842).BoostGemIcon;
       const tmp10 = React3(BoostGemIcon, obj2);
       cResult[0] = tmp10;
       first = tmp10;
@@ -382,10 +382,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   if (null != cost) {
     const obj = { style: tmp.inline, children: items };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const BoostGemIcon = tmp2(9810).BoostGemIcon;
+    const BoostGemIcon = tmp2(9842).BoostGemIcon;
     items = [React3(BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
-    const Text = tmp2(5235).Text;
+    const Text = tmp2(5270).Text;
     const tmp7 = hasOwnProperty;
     const tmp8 = View;
     const tmp9 = React3;

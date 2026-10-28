@@ -1,15 +1,15 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17591
+// Function ID: 17592
 // Name: NotifyServerMembersOnGoLiveSetting
-// Dependencies: [8331, 11212, 1125, 2705, 4800, 17359, 2]
+// Dependencies: [8365, 11248, 1125, 2705, 4832, 17592, 2]
 
-// Module 17358 (NotifyServerMembersOnGoLiveSetting)
+// Module 17591 (NotifyServerMembersOnGoLiveSetting)
 import intl2 from "intl" /* 1125 */;
 import _modDef2705 from "module_2705" /* 2705 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 17359 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 17592 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

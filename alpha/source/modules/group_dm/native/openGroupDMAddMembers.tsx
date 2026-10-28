@@ -1,16 +1,16 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11332
+// Function ID: 11333
 // Name: openGroupDMAddMembers
-// Dependencies: [4824, 1389, 11296, 11297, 11299, 11300, 5663, 5151, 2]
+// Dependencies: [4856, 1389, 11333, 11334, 11336, 11337, 5698, 5186, 2]
 // Exports: default, showGroupDMAddMembersRoadblock
 
-// Module 11295 (openGroupDMAddMembers)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5151 */;
-import ToastUtils from "ToastUtils" /* 5663 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11296 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11297 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11300 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+// Module 11332 (openGroupDMAddMembers)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
+import ToastUtils from "ToastUtils" /* 5698 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11333 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11334 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11337 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
       }
       const obj = { memberCount: num + 1, recipientLimit: getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true }), audience: getGroupDMNitroAudience(premiumType, flag), showUpsell: tmp5Result.getConfig(obj2).enabled };
       premiumType = undefined;
-      getGroupDMNitroAudience = tmp2(11296).getGroupDMNitroAudience;
+      getGroupDMNitroAudience = tmp2(11333).getGroupDMNitroAudience;
       GroupDMNitroUpsellModel;
       const tmp5 = importDefault;
       if (currentUser != null) {
@@ -50,7 +50,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
         flag = false;
       }
       obj2 = { location: CHANNEL_TEXT_AREA };
-      tmp5Result = tmp5(11299);
+      tmp5Result = tmp5(11336);
       return getGroupDMAddMembersEntryAction(obj);
     }
   }

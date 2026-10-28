@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 1505, height: 1505, scales: [1], hash: "dad08de0f63cac4aff0fb523b64af317", name: "img_meta_quest", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "4a45d5464752b264a97efb61145f651f", name: "img_account_sync_ebay_white", type: "png" });

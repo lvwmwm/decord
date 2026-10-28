@@ -1,9 +1,9 @@
-// Module ID: 4924
-// Function ID: 4925
+// Module ID: 4956
+// Function ID: 4957
 // Name: DefaultEmojisExperiment
 // Dependencies: [1452, 558, 576, 2]
 
-// Module 4924 (DefaultEmojisExperiment)
+// Module 4956 (DefaultEmojisExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,17 +1,17 @@
-// Module ID: 10800
-// Function ID: 10801
+// Module ID: 10833
+// Function ID: 10834
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2042, 6776, 10801, 6777, 1101, 10802, 5723, 10803, 584, 2]
+// Dependencies: [5, 2042, 6810, 10834, 6811, 1101, 10835, 5758, 10836, 584, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 10800 (requestConjureDevicePermissions)
+// Module 10833 (requestConjureDevicePermissions)
 import DurationsDefault from "Durations" /* 1101 */;
-import FramesConstants from "FramesConstants" /* 6777 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10802 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10835 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import FramesStore from "FramesStore" /* 6776 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10801 */;
+import FramesStore from "FramesStore" /* 6810 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10834 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;

@@ -1,9 +1,9 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15967
+// Function ID: 15968
 // Name: FrecencySettingsMigrations
 // Dependencies: [1094, 1084, 504, 1244, 12, 1245, 510, 11, 2]
 
-// Module 15741 (FrecencySettingsMigrations)
+// Module 15967 (FrecencySettingsMigrations)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
@@ -466,30 +466,27 @@ let items = [
   },
   {
     version: 12,
+    run() {
+      return false;
+    },
+    cleanup() {
+
+    }
+  },
+  {
+    version: 13,
     run(favoriteSoundboardSounds) {
-      if (null == favoriteSoundboardSounds.favoriteSoundboardSounds) {
-        return false;
-      } else {
-        favoriteSoundboardSounds = favoriteSoundboardSounds.favoriteSoundboardSounds;
-        const soundIds = favoriteSoundboardSounds.soundIds;
-        const orderedSoundIds = favoriteSoundboardSounds.orderedSoundIds;
+      let tmp = null != favoriteSoundboardSounds.favoriteSoundboardSounds;
+      if (tmp) {
         const obj = _modDef12;
-        let tmp4 = 0 === obj.size(soundIds);
-        const tmp2 = importDefault;
-        if (!tmp4) {
-          const tmp2Result = tmp2(12);
-          tmp4 = tmp2Result.size(orderedSoundIds) > 0;
-        }
-        let flag = !tmp4;
+        let flag = 0 !== obj.size(favoriteSoundboardSounds.favoriteSoundboardSounds.orderedSoundIds);
         if (flag) {
-          const items = [];
-          const favoriteSoundboardSounds2 = favoriteSoundboardSounds.favoriteSoundboardSounds;
-          HermesBuiltin.arraySpread(items, soundIds, 0);
-          favoriteSoundboardSounds2.orderedSoundIds = items;
+          favoriteSoundboardSounds.favoriteSoundboardSounds.orderedSoundIds = [];
           flag = true;
         }
-        return flag;
+        tmp = flag;
       }
+      return tmp;
     },
     cleanup() {
 

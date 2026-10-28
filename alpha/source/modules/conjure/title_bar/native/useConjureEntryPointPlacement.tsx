@@ -1,11 +1,11 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9597
+// Function ID: 9598
 // Name: useConjureEntryPointPlacement
-// Dependencies: [9566, 558, 576, 6809, 1452, 9567, 504, 2]
+// Dependencies: [9598, 558, 576, 6843, 1452, 9599, 504, 2]
 
-// Module 9565 (useConjureEntryPointPlacement)
-import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9567 */;
-import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9566 */;
+// Module 9597 (useConjureEntryPointPlacement)
+import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9599 */;
+import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9598 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

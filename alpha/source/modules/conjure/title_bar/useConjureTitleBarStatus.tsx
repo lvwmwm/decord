@@ -1,11 +1,11 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14393
+// Function ID: 14394
 // Name: useConjureTitleBarStatus
-// Dependencies: [14171, 10725, 558, 576, 14172, 504, 2]
+// Dependencies: [14394, 10759, 558, 576, 14395, 504, 2]
 
-// Module 14170 (useConjureTitleBarStatus)
-import conjureHomeProjectState2 from "conjureHomeProjectState" /* 14171 */;
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14172 */;
+// Module 14393 (useConjureTitleBarStatus)
+import conjureHomeProjectState2 from "conjureHomeProjectState" /* 14394 */;
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14395 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,14 +43,18 @@ function summaryEqual(status, status2) {
   if (tmp3) {
     tmp3 = status.mentionCount === status2.mentionCount;
   }
+  if (tmp3) {
+    tmp3 = status.unreadProjectCount === status2.unreadProjectCount;
+  }
   return tmp3;
 }
 function summarize(arg0) {
-  let tmp22;
+  let tmp23;
   let id = null;
   let id1 = null;
   let id2 = null;
   let num = 0;
+  let num2 = 0;
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -63,7 +67,8 @@ function summarize(arg0) {
         id = tmp5.id;
       }
     } else if ("unread" === tmp9) {
-      let tmp6Result = tmp6(10725);
+      num2 = num2 + 1;
+      let tmp6Result = tmp6(10759);
       let conjureProjectMentionCount = tmp6Result.getConjureProjectMentionCount(tmp5.id);
       num = num + conjureProjectMentionCount;
       if (conjureProjectMentionCount > 0) {
@@ -77,19 +82,19 @@ function summarize(arg0) {
     continue;
   }
   if (null != id) {
-    tmp22 = { kind: "working", projectId: id };
+    tmp23 = { kind: "working", projectId: id };
     const obj2 = { kind: "working", projectId: id };
   } else if (null != id1) {
-    tmp22 = { kind: "needs_input", projectId: id1 };
+    tmp23 = { kind: "needs_input", projectId: id1 };
     const obj3 = { kind: "needs_input", projectId: id1 };
   } else {
-    tmp22 = null;
+    tmp23 = null;
     if (null != id2) {
-      tmp22 = { kind: "unread", projectId: id2 };
+      tmp23 = { kind: "unread", projectId: id2 };
       const obj4 = { kind: "unread", projectId: id2 };
     }
   }
-  return { status: tmp22, hasUnread: null != id1 || null != id2, mentionCount: num };
+  return { status: tmp23, hasUnread: null != id1 || null != id2, mentionCount: num, unreadProjectCount: num2 };
 }
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTitleBarStatus() {
   let closure_0;

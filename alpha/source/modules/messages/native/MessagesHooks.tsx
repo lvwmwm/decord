@@ -1,25 +1,25 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11254
+// Function ID: 11255
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10005, 9784, 6704, 4846, 5713, 558, 576, 12, 504, 568, 6811, 1385, 7809, 11219, 9783, 11220, 2]
+// Dependencies: [32, 19, 17, 10037, 9816, 6738, 4878, 5748, 558, 576, 12, 504, 568, 6845, 1385, 7843, 11255, 9815, 11256, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11218 (MessagesHooks)
+// Module 11254 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6811 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7809 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9783 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9784 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11220 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7843 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9815 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9816 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10005 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6704 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PresenceStore from "PresenceStore" /* 5713 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10037 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PresenceStore from "PresenceStore" /* 5748 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11219);
+            let tmp4Result = tmp4(11255);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11219);
+            let tmp4Result = tmp4(11255);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

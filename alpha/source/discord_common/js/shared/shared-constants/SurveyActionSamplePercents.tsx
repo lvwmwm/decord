@@ -1,9 +1,9 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7897
+// Function ID: 7898
 // Name: SurveyActionSamplePercents
 // Dependencies: [2]
 
-// Module 7863 (SurveyActionSamplePercents)
+// Module 7897 (SurveyActionSamplePercents)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionSamplePercents.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10974
+// Function ID: 10975
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1453, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn
 
-// Module 10939 (InappropriateConversationsDefaultOn)
+// Module 10974 (InappropriateConversationsDefaultOn)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12778
+// Function ID: 12779
 // Name: gameOrganizationAccountLinkStatus
-// Dependencies: [2042, 7205, 7258, 558, 576, 504, 2]
+// Dependencies: [2042, 7239, 7292, 558, 576, 504, 2]
 
-// Module 12731 (gameOrganizationAccountLinkStatus)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7205 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7258 */;
+// Module 12778 (gameOrganizationAccountLinkStatus)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7239 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7292 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

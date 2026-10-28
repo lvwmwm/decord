@@ -1,10 +1,10 @@
-// Module ID: 5039
-// Function ID: 5040
+// Module ID: 5071
+// Function ID: 5072
 // Name: useBadgeTextVariant
-// Dependencies: [558, 4989, 2]
+// Dependencies: [558, 5021, 2]
 
-// Module 5039 (useBadgeTextVariant)
-import ThemeContext from "ThemeContext" /* 4989 */;
+// Module 5071 (useBadgeTextVariant)
+import ThemeContext from "ThemeContext" /* 5021 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

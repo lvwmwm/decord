@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/holidays/assets", scales: [1], hash: "f93451de8485614c5fc27f96cc9d2019", name: "halloween_loading_dark", type: "webm" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3], hash: "e57414c7a7beaf43becfa6bd320e5461", name: "vr", type: "png" });

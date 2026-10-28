@@ -1,19 +1,19 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12414
+// Function ID: 12415
 // Name: conjureSettingsAsks
-// Dependencies: [32, 19, 4824, 10702, 10719, 558, 576, 10703, 12365, 12302, 504, 12368, 2]
+// Dependencies: [32, 19, 4856, 10734, 10751, 558, 576, 10735, 12410, 12347, 504, 12415, 2]
 // Exports: conjureSettingsRequestDone, hasOtherOpenSetupAsk
 
-// Module 12367 (conjureSettingsAsks)
+// Module 12414 (conjureSettingsAsks)
 import react2 from "react" /* 576 */;
-import conjureChatTurns from "conjureChatTurns" /* 10703 */;
-import conjureSettingsRequest from "conjureSettingsRequest" /* 12365 */;
-import conjureSettingsSummary from "conjureSettingsSummary" /* 12368 */;
+import conjureChatTurns from "conjureChatTurns" /* 10735 */;
+import conjureSettingsRequest from "conjureSettingsRequest" /* 12410 */;
+import conjureSettingsSummary from "conjureSettingsSummary" /* 12415 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import ConjureChatStore from "ConjureChatStore" /* 10702 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10719 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import ConjureChatStore from "ConjureChatStore" /* 10734 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10751 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
                       const tmp4 = require;
                       if (tmp6) {
                         const obj2 = { keys: result };
-                        const tmp4Result = tmp4(12365);
+                        const tmp4Result = tmp4(12410);
                         tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
                       }
                       flag = tmp6;
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
                     const tmp4 = require;
                     if (tmp6) {
                       const obj2 = { keys: result };
-                      const tmp4Result = tmp4(12365);
+                      const tmp4Result = tmp4(12410);
                       tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
                     }
                     flag = tmp6;
@@ -376,7 +376,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
                   const tmp4 = require;
                   if (tmp6) {
                     const obj2 = { keys: result };
-                    const tmp4Result = tmp4(12365);
+                    const tmp4Result = tmp4(12410);
                     tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
                   }
                   flag = tmp6;
@@ -408,7 +408,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
               const tmp4 = require;
               if (tmp6) {
                 const obj2 = { keys: result };
-                const tmp4Result = tmp4(12365);
+                const tmp4Result = tmp4(12410);
                 tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
               }
               flag = tmp6;
@@ -477,7 +477,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           const tmp4 = require;
           if (tmp6) {
             const obj2 = { keys: result };
-            const tmp4Result = tmp4(12365);
+            const tmp4Result = tmp4(12410);
             tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
           }
           flag = tmp6;
@@ -545,7 +545,7 @@ function conjureSettingsRequestDone(settingsRequest, settings, arg2) {
       const tmp5 = require;
       if (tmp7) {
         const obj2 = { keys: result };
-        const tmp5Result = tmp5(12365);
+        const tmp5Result = tmp5(12410);
         tmp7 = !tmp5Result.conjureSettingsRequestBlocks(obj2, settings);
       }
       return tmp7;
@@ -595,7 +595,7 @@ export const hasOtherOpenSetupAsk = function hasOtherOpenSetupAsk(arr, arg1, sec
               const tmp13 = require;
               if (tmp15) {
                 const obj3 = { keys: result };
-                const tmp13Result = tmp13(12365);
+                const tmp13Result = tmp13(12410);
                 tmp15 = !tmp13Result.conjureSettingsRequestBlocks(obj3, tmp11);
               }
               flag = tmp15;

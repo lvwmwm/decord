@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/slayer_storefront/intl", scales: [1], hash: "4aa45f97f3a65e88a0016505c9909e3c", name: "SlayerStorefront.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_player", scales: [1], hash: "81026198b198a840d393b2692f40aeb8", name: "VideoPlayer.compiled.messages", type: "jsona" });

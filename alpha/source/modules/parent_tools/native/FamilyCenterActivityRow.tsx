@@ -1,9 +1,9 @@
-// Module ID: 16230
-// Function ID: 16231
+// Module ID: 16458
+// Function ID: 16459
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1389, 7646, 7647, 1084, 21, 4972, 587, 1199, 558, 576, 38, 573, 11, 5026, 5235, 8126, 6885, 6889, 1125, 2535, 16231, 16234, 16235, 2]
+// Dependencies: [19, 17, 1389, 7680, 7681, 1084, 21, 5004, 587, 1199, 558, 576, 38, 573, 11, 5058, 5270, 8160, 6919, 6923, 1125, 2535, 16459, 16462, 16463, 2]
 
-// Module 16230 (FamilyCenterActivityRow)
+// Module 16458 (FamilyCenterActivityRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -12,19 +12,19 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import native from "native" /* 1199 */;
 import _modDef2535 from "module_2535" /* 2535 */;
-import UserUtilsDefault from "UserUtils" /* 5026 */;
-import GuildIconDefault from "GuildIcon" /* 6885 */;
-import GuildBadgeDefault from "GuildBadge" /* 6889 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7647 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8126 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16231 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16234 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16235 */;
+import UserUtilsDefault from "UserUtils" /* 5058 */;
+import GuildIconDefault from "GuildIcon" /* 6919 */;
+import GuildBadgeDefault from "GuildBadge" /* 6923 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7681 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 16459 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16462 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 16463 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7646 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -110,12 +110,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if (cResult[12] === tmp4.text) {
             tmp20 = cResult[13];
           }
-          const Text = tmp(5235).Text;
+          const Text = tmp(5270).Text;
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const formatUserActivityTimestamp = action(8126).formatUserActivityTimestamp;
-          action(8126);
+          const formatUserActivityTimestamp = action(8160).formatUserActivityTimestamp;
+          action(8160);
           const date = new Date(extractTimestampResult);
           const result = formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
           if (cResult[14] === Text) {
@@ -171,7 +171,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           tmp27 = tmp29;
         }
         const obj5 = { style: text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: tmp18 };
-        const tmp22 = closure_8(action(5235).Text, obj5);
+        const tmp22 = closure_8(action(5270).Text, obj5);
         cResult[11] = tmp18;
         cResult[12] = tmp4.text;
         cResult[13] = tmp22;
@@ -216,16 +216,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items1 = [closure_8(View, obj3), ];
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: tmp3Result2.getName(stateFromStores) };
-    const Text = tmp6(5235).Text;
+    const Text = tmp6(5270).Text;
     tmp3Result2 = UserUtilsDefault;
     items2 = [closure_8(Text, obj6), ];
     const obj7 = { variant: "text-xs/medium", color: "channels-default", children: formatUserActivityTimestamp(date.getTime(), value.timestampFormatter) };
-    const Text2 = tmp6(5235).Text;
+    const Text2 = tmp6(5270).Text;
     const _Date = Date;
     const self = this;
     const self2 = this;
-    formatUserActivityTimestamp = action(8126).formatUserActivityTimestamp;
-    action(8126);
+    formatUserActivityTimestamp = action(8160).formatUserActivityTimestamp;
+    action(8160);
     date = new Date(extractTimestampResult);
     items2[1] = closure_8(Text2, obj7);
     items1[1] = closure_9(View, obj5);
@@ -328,7 +328,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
                       let tmp35 = null;
                       if (undefined !== stateFromStores.approximateMemberCount) {
                         const obj2 = { variant: "text-xs/medium", color: "channels-default", children: intl.format(_modDef2535["5JmNgg"], obj4) };
-                        const Text = tmp(5235).Text;
+                        const Text = tmp(5270).Text;
                         intl = tmp(1125).intl;
                         obj4 = { members: stateFromStores.approximateMemberCount };
                         tmp35 = closure_8(Text, obj2);
@@ -391,7 +391,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
               tmp26 = tmp29;
             }
             const obj9 = { style: tmp4.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: name };
-            const tmp25 = closure_8(action(5235).Text, obj9);
+            const tmp25 = closure_8(action(5270).Text, obj9);
             cResult[13] = tmp4.header;
             cResult[14] = name;
             cResult[15] = tmp25;
@@ -412,7 +412,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
       }
     }
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp4);
-    const obj11 = { style: null, textStyle: null, guild: stateFromStores, size: action(6885).GuildIconSizes.NORMAL, animate: true };
+    const obj11 = { style: null, textStyle: null, guild: stateFromStores, size: action(6919).GuildIconSizes.NORMAL, animate: true };
     const tmp10Result2 = GuildIconDefault;
     const tmp18 = closure_8(tmp10Result2, obj11);
     cResult[5] = stateFromStores;
@@ -448,7 +448,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
     const name = stateFromStores.name;
     const obj2 = { style: tmp.container, children: items1 };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
-    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(6885).GuildIconSizes.NORMAL, animate: true };
+    const obj4 = { style: null, textStyle: null, guild: stateFromStores, size: action(6919).GuildIconSizes.NORMAL, animate: true };
     const tmp6Result = GuildIconDefault;
     items1 = [closure_8(tmp6Result, obj4), ];
     const obj5 = { style: tmp.text, children: items3 };
@@ -462,12 +462,12 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((actio
     }
     items2 = [tmp11Result, ];
     const obj9 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: name };
-    items2[1] = closure_8(action(5235).Text, obj9);
+    items2[1] = closure_8(action(5270).Text, obj9);
     items3 = [closure_8(View, obj6), ];
     let tmp11Result2 = null;
     if (undefined !== stateFromStores.approximateMemberCount) {
       const obj10 = { variant: "text-xs/medium", color: "channels-default", children: intl.format(_modDef2535["5JmNgg"], obj19) };
-      const Text = tmp2(5235).Text;
+      const Text = tmp2(5270).Text;
       intl = tmp2(1125).intl;
       obj19 = { members: stateFromStores.approximateMemberCount };
       tmp11Result2 = tmp11(Text, obj10);

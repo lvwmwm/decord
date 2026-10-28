@@ -1,12 +1,12 @@
-// Module ID: 13879
-// Function ID: 13880
+// Module ID: 14098
+// Function ID: 14099
 // Name: useFrameRunsInBackground
-// Dependencies: [1206, 6776, 558, 576, 13880, 504, 2]
+// Dependencies: [1206, 6810, 558, 576, 14099, 504, 2]
 
-// Module 13879 (useFrameRunsInBackground)
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 13880 */;
+// Module 14098 (useFrameRunsInBackground)
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 14099 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
-import FramesStore from "FramesStore" /* 6776 */;
+import FramesStore from "FramesStore" /* 6810 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

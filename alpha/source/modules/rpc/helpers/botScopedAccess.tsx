@@ -1,19 +1,19 @@
-// Module ID: 9267
-// Function ID: 9268
+// Module ID: 9299
+// Function ID: 9300
 // Name: botScopedAccess
-// Dependencies: [4824, 4904, 1084, 8827, 9266, 4909, 1096, 9258, 9264, 9268, 2]
+// Dependencies: [4856, 4936, 1084, 8864, 9298, 4941, 1096, 9290, 9296, 9300, 2]
 // Exports: botCanViewChannel, canBotScopeReadMessages, isBotScopeOnly, validateBotScopeHasChannelAccess, validateBotScopeHasGuildAccess
 
-// Module 9267 (botScopedAccess)
+// Module 9299 (botScopedAccess)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9258 */;
-import RPCErrorDefault from "RPCError" /* 9264 */;
-import validateScopeDefault from "validateScope" /* 9266 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9268 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8864 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9290 */;
+import RPCErrorDefault from "RPCError" /* 9296 */;
+import validateScopeDefault from "validateScope" /* 9298 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9300 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

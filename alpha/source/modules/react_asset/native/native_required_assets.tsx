@@ -1,11 +1,11 @@
-// Module ID: 19515
-// Function ID: 19516
+// Module ID: 19779
+// Function ID: 19780
 // Name: native_required_assets
-// Dependencies: [19516, 19523, 2]
+// Dependencies: [19780, 19786, 2]
 
-// Module 19515 (native_required_assets)
-import native_required_assets_icons from "native_required_assets_icons" /* 19516 */;
-import native_required_assets_misc from "native_required_assets_misc" /* 19523 */;
+// Module 19779 (native_required_assets)
+import native_required_assets_icons from "native_required_assets_icons" /* 19780 */;
+import native_required_assets_misc from "native_required_assets_misc" /* 19786 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

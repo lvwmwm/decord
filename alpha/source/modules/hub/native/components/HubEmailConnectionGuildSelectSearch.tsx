@@ -1,10 +1,10 @@
-// Module ID: 13704
-// Function ID: 13705
+// Module ID: 13922
+// Function ID: 13923
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 13677, 21, 4972, 587, 558, 576, 5670, 13705, 1125, 5235, 1502, 6829, 1630, 13691, 6375, 6926, 7485, 7222, 1199, 13700, 2]
+// Dependencies: [5, 32, 19, 17, 13895, 21, 5004, 587, 558, 576, 5705, 13923, 1125, 5270, 1502, 6863, 1630, 13909, 6409, 6960, 7520, 7256, 1199, 13918, 2]
 // Exports: default
 
-// Module 13704 (HubEmailConnectionGuildSelectSearch)
+// Module 13922 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,16 +12,16 @@ import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import useNavigation from "useNavigation" /* 1502 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6829 */;
-import HubConstants from "HubConstants" /* 13677 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13705 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6863 */;
+import HubConstants from "HubConstants" /* 13895 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13923 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,9 +35,9 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp9;
-const NavigatorHeader = tmp2(6926);
-const defaultMVCPConfig = tmp2(7222);
-const SearchBarNavDefault = tmp9(7485);
+const NavigatorHeader = tmp2(6960);
+const defaultMVCPConfig = tmp2(7256);
+const SearchBarNavDefault = tmp9(7520);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;

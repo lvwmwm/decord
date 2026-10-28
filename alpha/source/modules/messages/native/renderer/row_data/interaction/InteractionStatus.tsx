@@ -1,12 +1,12 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14762
+// Function ID: 14763
 // Name: InteractionStatus
-// Dependencies: [8599, 1125, 2]
+// Dependencies: [8636, 1125, 2]
 // Exports: createInteractionStatus
 
-// Module 14539 (InteractionStatus)
+// Module 14762 (InteractionStatus)
 import intl5 from "intl" /* 1125 */;
-import InteractionUtils from "InteractionUtils" /* 8599 */;
+import InteractionUtils from "InteractionUtils" /* 8636 */;
 import size from "module_2" /* 2 */;
 
 const constants = { LOADING: 0, [0]: "LOADING", FAILED: 1, [1]: "FAILED", EPHEMERAL_SUCCESS: 999, [999]: "EPHEMERAL_SUCCESS" };

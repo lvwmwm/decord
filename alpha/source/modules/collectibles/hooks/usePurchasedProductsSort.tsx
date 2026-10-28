@@ -1,14 +1,14 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16633
+// Function ID: 16634
 // Name: usePurchasedProductsSort
-// Dependencies: [32, 19, 7666, 1992, 7662, 558, 576, 573, 2]
+// Dependencies: [32, 19, 7700, 1992, 7696, 558, 576, 573, 2]
 
-// Module 16405 (usePurchasedProductsSort)
+// Module 16633 (usePurchasedProductsSort)
 import react from "react" /* 19 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7662 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7666 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7700 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

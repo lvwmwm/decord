@@ -1,30 +1,30 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11097
+// Function ID: 11098
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 109, 19, 17, 7306, 1392, 1095, 21, 1381, 4972, 587, 558, 576, 7960, 4800, 1414, 5670, 5235, 7229, 5253, 8679, 10641, 11063, 5211, 11065, 7280, 1125, 6910, 11160, 2]
+// Dependencies: [32, 109, 19, 17, 7340, 1392, 1095, 21, 1381, 5004, 587, 558, 576, 7994, 4832, 1414, 5705, 5270, 7263, 5288, 8716, 10673, 11098, 5246, 11100, 7314, 1125, 6944, 11195, 2]
 
-// Module 11062 (UserProfileCustomStatusBubble)
+// Module 11097 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 4800 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import EmojiDefault from "Emoji" /* 7229 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7280 */;
-import Constants2 from "Constants" /* 7306 */;
-import inlineStyles from "inlineStyles" /* 7960 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11065 */;
+import UserSettings from "UserSettings" /* 4832 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import EmojiDefault from "Emoji" /* 7263 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
+import Constants2 from "Constants" /* 7340 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11100 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -307,7 +307,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
       }
       let obj4 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: tmp9, children: items };
       items = [tmp12, text, tmp14];
-      const tmp17 = closure_12(tmp(5235).Text, obj4);
+      const tmp17 = closure_12(tmp(5270).Text, obj4);
       cResult[10] = lineClamp;
       cResult[11] = onTextLayout;
       cResult[12] = tmp12;

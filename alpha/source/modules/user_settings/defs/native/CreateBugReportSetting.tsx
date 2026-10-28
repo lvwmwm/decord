@@ -1,19 +1,19 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17393
+// Function ID: 17394
 // Name: CreateBugReportSetting
-// Dependencies: [1369, 1370, 13813, 558, 576, 504, 1381, 11212, 1125, 16963, 17156, 2]
+// Dependencies: [1369, 1370, 14031, 558, 576, 504, 1381, 11248, 1125, 17193, 17386, 2]
 
-// Module 17163 (CreateBugReportSetting)
+// Module 17393 (CreateBugReportSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1370 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import BugReportManagerDefault from "BugReportManager" /* 13813 */;
-import WrenchIcon from "WrenchIcon" /* 16963 */;
-import BugReporterSetting from "BugReporterSetting" /* 17156 */;
+import BugReportManagerDefault from "BugReportManager" /* 14031 */;
+import WrenchIcon from "WrenchIcon" /* 17193 */;
+import BugReporterSetting from "BugReporterSetting" /* 17386 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

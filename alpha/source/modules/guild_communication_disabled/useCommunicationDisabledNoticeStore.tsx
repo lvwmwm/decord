@@ -1,15 +1,15 @@
-// Module ID: 4885
-// Function ID: 4886
+// Module ID: 4917
+// Function ID: 4918
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 4886, 510, 571, 1271, 558, 576, 1266, 4887, 2]
+// Dependencies: [32, 4918, 510, 571, 1271, 558, 576, 1266, 4919, 2]
 // Exports: clearCommunicationDisabledNotice
 
-// Module 4885 (useCommunicationDisabledNoticeStore)
+// Module 4917 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import _mod1266 from "module_1266" /* 1266 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4886 */;
-import _slicedToArray2 from "_slicedToArray" /* 4887 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4918 */;
+import _slicedToArray2 from "_slicedToArray" /* 4919 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_571 from "module_571" /* 571 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

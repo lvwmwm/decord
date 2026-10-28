@@ -1,10 +1,10 @@
-// Module ID: 13598
-// Function ID: 13599
+// Module ID: 13816
+// Function ID: 13817
 // Name: ContactSyncPersistedStore
 // Dependencies: [510, 1271, 584, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 13598 (ContactSyncPersistedStore)
+// Module 13816 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_native from "react-native" /* 1271 */;

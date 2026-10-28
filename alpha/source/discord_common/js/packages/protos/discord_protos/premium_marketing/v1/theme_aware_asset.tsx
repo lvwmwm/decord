@@ -1,9 +1,9 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 9566
+// Function ID: 9567
 // Name: theme_aware_asset
 // Dependencies: [32, 1209, 2]
 
-// Module 9534 (theme_aware_asset)
+// Module 9566 (theme_aware_asset)
 import _mod1209 from "module_1209" /* 1209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

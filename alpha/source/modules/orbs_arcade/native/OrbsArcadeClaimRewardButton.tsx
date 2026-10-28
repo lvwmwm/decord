@@ -1,16 +1,16 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16683
+// Function ID: 16684
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16434, 21, 5664, 1125, 558, 576, 504, 16440, 16439, 16455, 5245, 2]
+// Dependencies: [5, 19, 16662, 21, 5699, 1125, 558, 576, 504, 16669, 16668, 16684, 5280, 2]
 
-// Module 16454 (OrbsArcadeClaimRewardButton)
+// Module 16683 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16440 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           }
         }
       }
-      const tmp20 = jsx(tmp(5245).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
+      const tmp20 = jsx(tmp(5280).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
       cResult[14] = tmp14;
       cResult[15] = stateFromStores;
       cResult[16] = size;
@@ -337,7 +337,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5245).Button;
+  const Button = game(5280).Button;
   const intl = game(1125).intl;
   string = intl.string;
   const tmp6 = jsx;

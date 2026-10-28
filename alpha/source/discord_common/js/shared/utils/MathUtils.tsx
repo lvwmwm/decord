@@ -1,10 +1,10 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 11187
+// Function ID: 11188
 // Name: MathUtils
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 11152 (MathUtils)
+// Module 11187 (MathUtils)
 import size from "module_2" /* 2 */;
 
 function roundIfClose(arg0, arg1) {

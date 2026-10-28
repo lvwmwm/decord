@@ -1,47 +1,47 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 16147
+// Function ID: 16148
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8649, 1389, 8681, 1084, 5267, 1391, 21, 4972, 587, 5213, 9765, 15922, 558, 576, 1125, 7065, 7063, 9763, 5687, 11120, 5235, 6907, 11129, 8913, 7059, 5053, 5207, 5210, 14444, 9764, 5298, 4981, 11122, 1630, 504, 2050, 7255, 7280, 5581, 9794, 9795, 8680, 1264, 8686, 5664, 1496, 11965, 15923, 6882, 5266, 7250, 5270, 2]
+// Dependencies: [19, 17, 8686, 1389, 8718, 1084, 5302, 1391, 21, 5004, 587, 5248, 9797, 16148, 558, 576, 1125, 7099, 7097, 9795, 5722, 11155, 5270, 6941, 11164, 8947, 7093, 5085, 5242, 5245, 14667, 9796, 5333, 5013, 11157, 1630, 504, 2050, 7289, 7314, 5616, 9826, 9827, 8717, 1264, 8723, 5699, 1496, 12003, 16149, 6916, 5301, 7284, 5305, 2]
 // Exports: default
 
-// Module 15921 (CustomizeBadgesSheet)
+// Module 16147 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import timing from "timing" /* 5207 */;
-import timingPresets from "timingPresets" /* 5210 */;
-import HapticUtils from "HapticUtils" /* 5213 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5267 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5664 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5687 */;
-import Card_Card from "Card/Card" /* 6907 */;
-import EyeSlashIcon2 from "EyeSlashIcon" /* 7063 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8680 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8686 */;
-import native from "native" /* 8913 */;
-import ContextMenu2 from "ContextMenu" /* 9763 */;
-import ContextMenuState from "ContextMenuState" /* 9764 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9765 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9794 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9795 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11120 */;
-import BadgeUtils from "BadgeUtils" /* 11129 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11965 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14444 */;
-import BadgeGrid from "BadgeGrid" /* 15922 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import timing from "timing" /* 5242 */;
+import timingPresets from "timingPresets" /* 5245 */;
+import HapticUtils from "HapticUtils" /* 5248 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5722 */;
+import Card_Card from "Card/Card" /* 6941 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 7097 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8717 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8723 */;
+import native from "native" /* 8947 */;
+import ContextMenu2 from "ContextMenu" /* 9795 */;
+import ContextMenuState from "ContextMenuState" /* 9796 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9797 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9826 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9827 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11155 */;
+import BadgeUtils from "BadgeUtils" /* 11164 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12003 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14667 */;
+import BadgeGrid from "BadgeGrid" /* 16148 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8686 */;
 import UserStore from "UserStore" /* 1389 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8718 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -111,9 +111,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
     tmp4 = cResult[1];
   }
   if (flag) {
-    EyeSlashIcon = tmp(7065).EyeIcon;
+    EyeSlashIcon = tmp(7099).EyeIcon;
   } else {
-    EyeSlashIcon = tmp(7063).EyeSlashIcon;
+    EyeSlashIcon = tmp(7097).EyeSlashIcon;
   }
   if (cResult[2] === badge) {
     if (cResult[3] === flag) {
@@ -129,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(15922).BADGE_GRID_COLUMNS;
+            const result = index % tmp(16148).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -205,13 +205,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
   };
   const tmp = syncedClientThemes;
   if (flag) {
-    EyeSlashIcon = tmp2(7065).EyeIcon;
+    EyeSlashIcon = tmp2(7099).EyeIcon;
   } else {
-    EyeSlashIcon = tmp2(7063).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7097).EyeSlashIcon;
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(15922).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16148).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";
@@ -259,7 +259,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const CircleInformationIcon = tmp(5687).CircleInformationIcon;
+      const CircleInformationIcon = tmp(5722).CircleInformationIcon;
       const tmp15 = syncedClientThemes(CircleInformationIcon, obj2);
       cResult[0] = tmp15;
       first = tmp15;
@@ -274,7 +274,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const EyeSlashIcon = tmp(7063).EyeSlashIcon;
+        const EyeSlashIcon = tmp(7097).EyeSlashIcon;
         const tmp10 = syncedClientThemes(EyeSlashIcon, obj3);
         cResult[1] = tmp10;
         tmp7 = tmp10;
@@ -1374,7 +1374,7 @@ let closure_49 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(4981).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(5013).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1125).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };

@@ -1,14 +1,14 @@
-// Module ID: 15751
-// Function ID: 15752
+// Module ID: 15977
+// Function ID: 15978
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [4823, 1389, 6379, 4893, 5990, 9262, 1385, 12, 2]
+// Dependencies: [4855, 1389, 6413, 4925, 6025, 9294, 1385, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 15751 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 9262 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4823 */;
+// Module 15977 (activityInstanceConnectedParticipants)
+import transformUserDefault from "transformUser" /* 9294 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 6379 */;
+import Constants from "Constants" /* 6413 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -14,7 +14,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
-let error, isLoading, map;
+let error, map;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -101,7 +101,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
   let getUseStoreState;
   let loader;
   let retryConfig;
-  const f141581 = () => {
+  const f142449 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -130,7 +130,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       obj = map;
       if (null == value) {
         const obj2 = module_570;
-        const obj3 = obj2.create(f141581);
+        const obj3 = obj2.create(f142449);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -142,6 +142,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
   };
   let obj = function _loader() {
     obj = _asyncToGenerator(async (arg0) => {
+      let args;
       let closure_2;
       let closure_3;
       let closure_4;
@@ -149,10 +150,8 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       let c6 = 0;
       let c7 = 0;
       let c5 = 0;
-      const iter = (async function(arg0, value) {
-        let args;
+      const iter = (async (arg0, value) => {
         let c1;
-        let fail;
         let refetch;
         let useStoreState;
         function isCachedDataStale(useStoreState, arg1) {
@@ -176,7 +175,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
               if (null != status) {
                 if ("status" in status) {
                   if (typeof status.status === "number") {
-                    retryAfter = status.retryAfter;
+                    const retryAfter = status.retryAfter;
                     let tmp3;
                     if (typeof retryAfter === "number") {
                       const _Number = Number;
@@ -226,7 +225,24 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
             return error;
           }
         }
-        if (1 === tmp4) {
+        function getRetryAfterMs(retryAfter) {
+          retryAfter = retryAfter.retryAfter;
+          let tmp;
+          if (typeof retryAfter === "number") {
+            const _Number = Number;
+            if (Number.isFinite(retryAfter)) {
+              if (retryAfter > 0) {
+                tmp = retryAfter;
+              }
+            }
+          }
+          let num2 = 0;
+          if (null != tmp) {
+            num2 = 1000 * tmp;
+          }
+          return num2;
+        }
+        if (1 === c6) {
           if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -238,21 +254,21 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
             let applyResult;
             if (closure_131_4 != null) {
               const items = [];
-              HermesBuiltin.arraySpread(items, c1, 0);
-              applyResult = HermesBuiltin.apply(tmp86, items, undefined);
+              HermesBuiltin.arraySpread(items, args, 0);
+              applyResult = HermesBuiltin.apply(tmp94, items, undefined);
             }
-            isLoading = applyResult;
+            let isLoading = applyResult;
             if (applyResult == null) {
               isLoading = useStoreState.getState().isLoading;
             }
             let closure_5 = isLoading;
             if (null != queryId) {
-              const tmp88 = closure_5;
-              if (!tmp88) {
-                const tmp40 = refetch;
-                if (!tmp40) {
+              const tmp96 = closure_5;
+              if (!tmp96) {
+                const tmp48 = refetch;
+                if (!tmp48) {
                   const items1 = [];
-                  HermesBuiltin.arraySpread(items1, c1, 0);
+                  HermesBuiltin.arraySpread(items1, args, 0);
                   let closure_6 = HermesBuiltin.apply(closure_131_2, items1, undefined);
                   if (closure_6 === closure_1_8) {
                     c7 = 3;
@@ -277,7 +293,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
                 c5 = 1;
                 useStoreState.setState({ isLoading: true });
                 const items2 = [];
-                HermesBuiltin.arraySpread(items2, c1, 0);
+                HermesBuiltin.arraySpread(items2, args, 0);
                 c6 = 3;
                 c7 = 1;
                 const obj5 = { value: HermesBuiltin.apply(closure_131_3, items2, undefined), done: false };
@@ -285,42 +301,17 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
               }
             }
           }
-        } else if (2 === tmp4) {
+        } else if (2 === c6) {
           c5 = 0;
-          error = makeError(fail);
+          error = makeError(closure_4);
           const obj6 = { error, isLoading: false };
           useStoreState.setState(obj6);
           if (closure_131_8(error)) {
             if (closure_131_6 > backoff.fails) {
-              let self = this;
-              let self2 = this;
-              let promise = new Promise((arg0, arg1) => {
-                let closure_0 = arg0;
-                let closure_1 = arg1;
-                retryAfter = retryAfter.retryAfter;
-                let tmp2;
-                fail = fail.fail;
-                if (typeof retryAfter === "number") {
-                  const _Number = Number;
-                  if (Number.isFinite(retryAfter)) {
-                    if (retryAfter > 0) {
-                      tmp2 = retryAfter;
-                    }
-                  }
-                }
-                let num2 = 0;
-                if (null != tmp2) {
-                  num2 = 1000 * tmp2;
-                }
-                fail(() => {
-                  obj = { queryId, args, useStoreState, refetch };
-                  const promise = closure_3_13(obj);
-                  promise.then(closure_0, closure_1);
-                }, num2);
-              });
               c6 = 4;
               c7 = 1;
-              return { value: promise, done: false };
+              const obj7 = { value: backoff.failAsync(getRetryAfterMs(error)), done: false };
+              return obj7;
             }
           }
           if (null != closure_131_10) {
@@ -329,7 +320,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
             const obj8 = { failureLockedUntil: Date.now() + 1000 * closure_131_10 };
             setState2(obj8);
           }
-        } else if (3 === tmp4) {
+        } else if (3 === c6) {
           if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -345,24 +336,36 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
             setState(obj10);
             c5 = 0;
           }
+        } else if (4 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            return { value, done: true };
+          } else {
+            c6 = 5;
+            c7 = 1;
+            const obj12 = { queryId, args, useStoreState, refetch };
+            const obj13 = { value: closure_131_13(obj12), done: false };
+            return obj13;
+          }
         } else if (arg0 === 1) {
           let num2 = 3;
           c7 = 3;
           throw value;
         } else if (arg0 === 2) {
           c7 = 3;
-          obj = { value, done: true };
-          return obj;
+          return { value, done: true };
         }
         await "IconComponent";
-        useStoreState = tmp;
         queryId = queryId.queryId;
         ({ args: c1, refetch } = queryId);
-        const tmp91 = queryId;
+        const tmp99 = queryId;
         if (refetch === undefined) {
           refetch = false;
         }
-        useStoreState = tmp91.useStoreState ?? getUseStoreState(queryId);
+        useStoreState = tmp99.useStoreState ?? getUseStoreState(queryId);
         return "Reflect";
       })();
       iter.next();
@@ -393,7 +396,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       value = map.get(tmp4);
       if (null == value) {
         const obj2 = ApplicationStore(dependencyMap[6]);
-        const obj6 = obj2.create(f141581);
+        const obj6 = obj2.create(f142449);
         const result = obj.set(tmp4, obj6);
         value = obj6;
       }
@@ -499,7 +502,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           const obj2 = closure_1_11;
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj4 = obj3.create(f141581);
+            const obj4 = obj3.create(f142449);
             const result = obj2.set(tmp, obj4);
             value = obj4;
           }
@@ -528,7 +531,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           value = closure_1_11.get(tmp);
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj2 = obj3.create(f141581);
+            const obj2 = obj3.create(f142449);
             const result = obj.set(tmp, obj2);
             value = obj2;
           }

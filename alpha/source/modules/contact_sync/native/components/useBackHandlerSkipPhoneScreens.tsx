@@ -1,12 +1,12 @@
-// Module ID: 13615
-// Function ID: 13616
+// Module ID: 13833
+// Function ID: 13834
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 13597, 558, 576, 6932, 2]
+// Dependencies: [17, 13815, 558, 576, 6966, 2]
 
-// Module 13615 (useBackHandlerSkipPhoneScreens)
+// Module 13833 (useBackHandlerSkipPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13597 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let MinimizeApp, _require, dependencyMap;
 
 let tmp;
-const useNavigatorBackPressHandler = tmp(6932);
+const useNavigatorBackPressHandler = tmp(6966);
 const NativeModules = react_native.NativeModules;
 const ContactSyncScenes = ContactSyncConstants.ContactSyncScenes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHan
     if (cResult[1] === arg0) {
       tmp4 = cResult[2];
     }
-    const tmpResult = tmp(6932);
+    const tmpResult = tmp(6966);
     tmpResult.useNavigatorBackPressHandler(tmp4);
   }
   const fn = function c() {

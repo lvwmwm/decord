@@ -1,18 +1,18 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13989
+// Function ID: 13990
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 4914, 1389, 1084, 1100, 558, 576, 504, 8337, 6367, 1125, 6000, 5603, 12, 8342, 8440, 2]
+// Dependencies: [502, 4946, 1389, 1084, 1100, 558, 576, 504, 8371, 6401, 1125, 6035, 5638, 12, 8376, 8474, 2]
 // Exports: isMessageContentPreviewable
 
-// Module 13771 (useFormattedMessagePreview)
+// Module 13989 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1084 */;
 import MessageTypes from "MessageTypes" /* 1100 */;
 import intl30 from "intl" /* 1125 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5603 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 8337 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8342 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5638 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 8371 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8376 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp9;
-const useMessageAuthorDefault = tmp9(6367);
+const useMessageAuthorDefault = tmp9(6401);
 function formatMessagePreview(type, isBlocked) {
   let MMN2Jq;
   let OEdU6X;
@@ -409,7 +409,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(1100).MessageTypes.VOICE_SESSION) {
                 const obj57 = { type: "text", text: tmp4Result.getVoiceSessionMessageContent(type) };
                 tmp21 = obj57;
-                tmp4Result = tmp4(8440);
+                tmp4Result = tmp4(8474);
               }
             }
           }
@@ -498,12 +498,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
     }
     const tmpResult6 = tmp(504);
     const stateFromStores1 = tmpResult6.useStateFromStores(tmp16, tmp18);
-    const tmpResult7 = tmp(6367);
+    const tmpResult7 = tmp(6401);
     const nick2 = tmpResult7.useNullableUserAuthor(stateFromStores1, id).nick;
     const obj2 = { message: author, channel: id, currentUserId: stateFromStores, authorNick: stringResult, actorNick: nick1, otherUser: stateFromStores1, otherUserNick: nick2, isBlocked, isIgnored, isCallActive: tmp10 };
     nick1 = undefined;
     const tmp20 = formatMessagePreview;
-    const tmpResult8 = tmp(6367);
+    const tmpResult8 = tmp(6401);
     if (null != author.actor) {
       nick1 = tmpResult8.useNullableUserAuthor(author.actor, id).nick;
     }
@@ -557,12 +557,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
     }
     return user;
   });
-  const tmpResult3 = tmp(6367);
+  const tmpResult3 = tmp(6401);
   const nick2 = tmpResult3.useNullableUserAuthor(stateFromStores1, channel).nick;
   const obj3 = { message: author, channel, currentUserId: stateFromStores, authorNick: stringResult, actorNick: nick1, otherUser: stateFromStores1, otherUserNick: nick2, isBlocked, isIgnored, isCallActive: tmp4 };
   nick1 = undefined;
   const tmp8 = formatMessagePreview;
-  const tmpResult4 = tmp(6367);
+  const tmpResult4 = tmp(6401);
   if (null != author.actor) {
     nick1 = tmpResult4.useNullableUserAuthor(author.actor, channel).nick;
   }

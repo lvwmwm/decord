@@ -1,15 +1,15 @@
-// Module ID: 9147
-// Function ID: 9148
+// Module ID: 9180
+// Function ID: 9181
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 8759, 5053, 5248, 1381, 1125, 5235, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 8796, 5085, 5283, 1381, 1125, 5270, 2]
 
-// Module 9147 (SegmentedControlItem)
+// Module 9180 (SegmentedControlItem)
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5248 */;
+import spring from "spring" /* 5283 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

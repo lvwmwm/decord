@@ -1,9 +1,9 @@
-// Module ID: 13710
-// Function ID: 13711
+// Module ID: 13928
+// Function ID: 13929
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 13596, 1389, 1084, 21, 4972, 587, 5269, 558, 576, 1502, 504, 13603, 1104, 13624, 13711, 13617, 1272, 7097, 1125, 2]
+// Dependencies: [19, 17, 13814, 1389, 1084, 21, 5004, 587, 5304, 558, 576, 1502, 504, 13821, 1104, 13842, 13929, 13835, 1272, 7131, 1125, 2]
 
-// Module 13710 (DiscoverabilityModal)
+// Module 13928 (DiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,15 +12,15 @@ import Constants from "Constants" /* 1084 */;
 import ConstantsIOS from "ConstantsIOS" /* 1104 */;
 import intl2 from "intl" /* 1125 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import NavigatorConstants from "NavigatorConstants" /* 5269 */;
-import Navigator2 from "Navigator" /* 7097 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13596 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13603 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13617 */;
-import NUFActionCreators from "NUFActionCreators" /* 13624 */;
+import NavigatorConstants from "NavigatorConstants" /* 5304 */;
+import Navigator2 from "Navigator" /* 7131 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13814 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13821 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 13835 */;
+import NUFActionCreators from "NUFActionCreators" /* 13842 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -281,7 +281,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discoverabil
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(7097).Navigator;
+    const Navigator = tmp(7131).Navigator;
     const intl = tmp(1125).intl;
     const tmp7 = <Navigator screens={first} initialRouteName={ConstantsIOS.DiscoverabilityScenes.LANDING} headerBackTitle={intl.string(intl2.t["13/7kX"])} />;
     cResult[1] = tmp7;

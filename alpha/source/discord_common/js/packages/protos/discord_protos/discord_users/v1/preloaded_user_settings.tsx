@@ -921,7 +921,7 @@ const items1 = [];
 const obj28 = { no: 1, name: "guilds", kind: "map", K: 6, V: { kind: "message", T: T2 } };
 items1[0] = obj28;
 let tmp10 = new "CUSTOM"("discord_protos.discord_users.v1.AllGuildSettings", items1, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const prioritySpeakerDucking = tmp10;
+let internalBinaryWrite2 = tmp10;
 const MessageType4 = _mod1209.MessageType;
 class GuildDismissibleContentState$Type extends MessageType4 {
   constructor() {
@@ -1841,7 +1841,7 @@ class UserContentSettings$Type extends MessageType10 {
     }
     return obj;
   }
-  binaryReadMap7(recurringDismissibleContentStates, pos, readUnknownField) {
+  binaryReadMap7(arg0, pos, arg2) {
     let tmp2;
     let tmp3;
     let tmp7;
@@ -1860,7 +1860,7 @@ class UserContentSettings$Type extends MessageType10 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = closure_32.internalBinaryRead(pos, pos.uint32(), readUnknownField);
+          internalBinaryReadResult = closure_32.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = int32Result;
@@ -1879,7 +1879,7 @@ class UserContentSettings$Type extends MessageType10 {
     if (obj == null) {
       obj = closure_32.create();
     }
-    recurringDismissibleContentStates[num] = obj;
+    arg0[num] = obj;
   }
   internalBinaryWrite(dismissedContents, tag, writeUnknownFields) {
     if (dismissedContents.dismissedContents.length) {
@@ -2168,7 +2168,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "rejectWithError" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "paths" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
@@ -3863,7 +3863,7 @@ const notificationSettingsType = new NotificationSettings$Type();
 const MessageType20 = _mod1209.MessageType;
 class PrivacySettings$Type extends MessageType20 {
   constructor() {
-    let items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+    let items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
     const obj = {
       no: 1,
       name: "allow_activity_party_privacy_friends",
@@ -4077,17 +4077,26 @@ class PrivacySettings$Type extends MessageType20 {
         return require("wrappers").BoolValue;
       }
     };
-    const obj2 = { no: 34, name: "ad_topic_opt_outs", kind: "enum", repeat: 1, T };
-    class T {
-      constructor() {
+    items[31] = {
+      no: 34,
+      name: "ad_topic_opt_outs",
+      kind: "enum",
+      repeat: 1,
+      T() {
         const items = ["discord_protos.discord_users.v1.AdTopic", obj15, "AD_TOPIC_"];
         return items;
       }
+    };
+    const obj2 = { no: 35, name: "swp_message_promotion_opted_out", kind: "message", T };
+    class T {
+      constructor() {
+        return require("wrappers").BoolValue;
+      }
     }
-    items[31] = obj2;
-    items[32] = {
-      no: 35,
-      name: "swp_message_promotion_opted_out",
+    items[32] = obj2;
+    items[33] = {
+      no: 36,
+      name: "personal_access_opted_out",
       kind: "message",
       T() {
         return require("wrappers").BoolValue;
@@ -4385,6 +4394,14 @@ class PrivacySettings$Type extends MessageType20 {
       const tagResult32 = tag.tag(35, _mod1209.WireType.LengthDelimited);
       const result11 = internalBinaryWrite21(swpMessagePromotionOptedOut, tagResult32.fork(), writeUnknownFields);
       const joined25 = result11.join();
+    }
+    if (allowActivityPartyPrivacyFriends.personalAccessOptedOut) {
+      const BoolValue20 = wrappers.BoolValue;
+      internalBinaryWrite22 = BoolValue20.internalBinaryWrite;
+      const personalAccessOptedOut = allowActivityPartyPrivacyFriends.personalAccessOptedOut;
+      const tagResult33 = tag.tag(36, _mod1209.WireType.LengthDelimited);
+      const result12 = internalBinaryWrite22(personalAccessOptedOut, tagResult33.fork(), writeUnknownFields);
+      const joined26 = result12.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
@@ -6646,7 +6663,7 @@ class SoundboardSettings$Type extends MessageType37 {
 const prototype37 = SoundboardSettings$Type.prototype;
 const items30 = [{ no: 1, name: "volume", kind: "scalar", T: 2 }];
 const tmp44 = new "binaryReadMap12"("discord_protos.discord_users.v1.SoundboardSettings", items30, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite2 = tmp44;
+internalBinaryWrite2 = tmp44;
 const MessageType38 = _mod1209.MessageType;
 class CustomCallSound$Type extends MessageType38 {
   constructor() {

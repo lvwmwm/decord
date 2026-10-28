@@ -1,12 +1,12 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 6946
+// Function ID: 6947
 // Name: useIOSPressEffects
-// Dependencies: [19, 558, 576, 1496, 5053, 1381, 5248, 2]
+// Dependencies: [19, 558, 576, 1496, 5085, 1381, 5283, 2]
 
-// Module 6912 (useIOSPressEffects)
+// Module 6946 (useIOSPressEffects)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import spring from "spring" /* 5248 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import spring from "spring" /* 5283 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

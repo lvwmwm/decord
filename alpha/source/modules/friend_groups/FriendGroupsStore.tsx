@@ -1,14 +1,14 @@
-// Module ID: 15052
-// Function ID: 15053
+// Module ID: 15275
+// Function ID: 15276
 // Name: FriendGroupsStore
-// Dependencies: [7733, 6671, 4914, 1389, 504, 584, 2]
+// Dependencies: [7767, 6705, 4946, 1389, 504, 584, 2]
 
-// Module 15052 (FriendGroupsStore)
+// Module 15275 (FriendGroupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7733 */;
-import ConsentStore from "ConsentStore" /* 6671 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7767 */;
+import ConsentStore from "ConsentStore" /* 6705 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -80,11 +80,11 @@ let obj = {
     return false;
   },
   CREATE_FRIEND_GROUP: function handleCreateFriendGroup(groupId) {
-    const f123531 = (id) => id.id === groupId;
+    const f124258 = (id) => id.id === groupId;
     groupId = groupId.groupId;
     const name = groupId.name;
-    let flag = !found.some(f123531);
-    found.some(f123531);
+    let flag = !found.some(f124258);
+    found.some(f124258);
     if (flag) {
       const obj = { id: groupId, name, userIds: [] };
       found.push(obj);

@@ -1,17 +1,21 @@
 // Module ID: 15582
 // Function ID: 15583
-// Dependencies: [15581]
+// Dependencies: []
 
 // Module 15582
-import _mod15581 from "module_15581" /* 15581 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default (arg0, value) => {
-  try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod15581, arg0, obj);
-  } catch (err) {
-    _mod15581[arg0] = value;
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
   }
-  return value;
+  return tmp2;
 };

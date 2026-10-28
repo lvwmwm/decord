@@ -1,25 +1,26 @@
 // Module ID: 5383
 // Function ID: 5384
 // Name: react
-// Dependencies: [19, 5384]
-// Exports: useGestureEventHandler
+// Dependencies: [19, 5368]
+// Exports: useViewRefHandler
 
 // Module 5383 (react)
 import react from "react" /* 19 */;
+import react_nativeDefault from "react-native" /* 5368 */;
 
-let useMemo = react.useMemo;
+const useCallback = react.useCallback;
 
-export const useGestureEventHandler = function useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated) {
-  let closure_0 = handlerTag;
-  let closure_1 = memoizedGestureCallbacks;
-  useMemo = disableReanimated;
-  const tmp = useMemo(() => ({ lastUpdateEvent: "rejectWithError" }), []);
-  let closure_3 = tmp;
-  const items = [handlerTag, memoizedGestureCallbacks, , , , ];
-  ({ changeEventCalculator: arr[2], dispatchesAnimatedEvents: arr[3], fillInDefaultValues: arr[4] } = disableReanimated);
-  items[5] = tmp;
-  return useMemo(() => (arg0) => {
-    const obj = closure_0(closure_1[1]);
-    obj.eventHandler(closure_1_0, arg0, closure_1_1, disableReanimated.changeEventCalculator, closure_1_3, disableReanimated.dispatchesAnimatedEvents, disableReanimated.fillInDefaultValues);
+export const useViewRefHandler = function useViewRefHandler(current, detectorUpdater) {
+  const items = [current, detectorUpdater];
+  return useCallback((viewRef) => {
+    if (null !== viewRef) {
+      current.viewRef = viewRef;
+      if (-1 === current.previousViewTag) {
+        current.previousViewTag = react_nativeDefault(current.viewRef);
+      }
+      if (!current.firstRender) {
+        detectorUpdater(true);
+      }
+    }
   }, items);
 };

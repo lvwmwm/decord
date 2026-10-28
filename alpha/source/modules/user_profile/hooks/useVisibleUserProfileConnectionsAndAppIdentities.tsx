@@ -1,12 +1,12 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14677
+// Function ID: 14678
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 14455, 14456, 7259, 1385, 6503, 2]
+// Dependencies: [19, 558, 576, 14678, 14679, 7293, 1385, 6537, 2]
 
-// Module 14454 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 6503 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14455 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14456 */;
+// Module 14677 (useVisibleUserProfileConnectionsAndAppIdentities)
+import PlatformsDefault from "Platforms" /* 6537 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14678 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14679 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const useGetOrFetchApplicationsDefault = tmp4(7259);
+const useGetOrFetchApplicationsDefault = tmp4(7293);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let tmp11;

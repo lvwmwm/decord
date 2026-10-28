@@ -1,13 +1,13 @@
-// Module ID: 16466
-// Function ID: 16467
+// Module ID: 16695
+// Function ID: 16696
 // Name: OrbsArcadeRewardUnlockedSheet
-// Dependencies: [19, 16434, 21, 558, 576, 504, 16440, 16435, 16467, 1125, 16461, 16453, 5978, 587, 10859, 2]
+// Dependencies: [19, 16662, 21, 558, 576, 504, 16669, 16663, 16696, 1125, 16690, 16682, 6013, 587, 10894, 2]
 
-// Module 16466 (OrbsArcadeRewardUnlockedSheet)
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16440 */;
+// Module 16695 (OrbsArcadeRewardUnlockedSheet)
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16434 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           return OrbsArcadeStore.getGame(gameId);
         }
       }
-      const tmpResult4 = gameId(16440);
+      const tmpResult4 = gameId(16669);
       const orbsArcadeClaimableRewards = tmpResult4.getOrbsArcadeClaimableRewards(stateFromStores.rewards, stateFromStores1);
       cResult[11] = stateFromStores.rewards;
       cResult[12] = stateFromStores1;

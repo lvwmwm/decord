@@ -1,17 +1,17 @@
-// Module ID: 19335
-// Function ID: 19336
+// Module ID: 19598
+// Function ID: 19599
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 19326, 16604, 21, 558, 576, 16626, 5663, 1125, 19336, 19322, 19343, 2]
+// Dependencies: [5, 32, 19, 19589, 16833, 21, 558, 576, 16855, 5698, 1125, 19599, 19585, 19606, 2]
 
-// Module 19335 (GuildRoleSubscriptionTierCreationModal)
+// Module 19598 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5663 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16626 */;
+import ToastUtils from "ToastUtils" /* 5698 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16855 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19326 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16604 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19589 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -307,9 +307,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(19343).EditStateContextProvider;
+  const EditStateContextProvider = guildId(19606).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(19322).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(19585).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

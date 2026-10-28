@@ -1,12 +1,12 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7169
+// Function ID: 7170
 // Name: RunAfterInteractionsUtils
-// Dependencies: [17, 4819, 2]
+// Dependencies: [17, 4851, 2]
 // Exports: runAfterInteractions
 
-// Module 7135 (RunAfterInteractionsUtils)
+// Module 7169 (RunAfterInteractionsUtils)
 import react_native from "react-native" /* 17 */;
-import Timers from "Timers" /* 4819 */;
+import Timers from "Timers" /* 4851 */;
 import size from "module_2" /* 2 */;
 
 function runAfterInteractions(arg0, MINUTE) {

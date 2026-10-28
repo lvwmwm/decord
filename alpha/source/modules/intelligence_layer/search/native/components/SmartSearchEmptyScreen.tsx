@@ -1,21 +1,21 @@
-// Module ID: 18116
-// Function ID: 18117
+// Module ID: 18356
+// Function ID: 18357
 // Name: SmartSearchEmptyScreen
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 5594, 4981, 1125, 18117, 5235, 4086, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5629, 5013, 1125, 18357, 5270, 4118, 2]
 
-// Module 18116 (SmartSearchEmptyScreen)
+// Module 18356 (SmartSearchEmptyScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef4086 from "module_4086" /* 4086 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 18117 */;
+import _modDef4118 from "module_4118" /* 4118 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 18357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,8 +98,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4086["HX/WYf"]) };
-      const Text = tmp(5235).Text;
+      const obj5 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4118["HX/WYf"]) };
+      const Text = tmp(5270).Text;
       intl = tmp(1125).intl;
       const tmp17 = hasOwnProperty(Text, obj5);
       cResult[10] = tmp17;
@@ -109,8 +109,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj6 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4086["0ySxbu"]) };
-      const Text2 = tmp(5235).Text;
+      const obj6 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4118["0ySxbu"]) };
+      const Text2 = tmp(5270).Text;
       intl2 = tmp(1125).intl;
       const tmp20 = hasOwnProperty(Text2, obj6);
       cResult[11] = tmp20;
@@ -170,11 +170,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   items = [tmp.container, { paddingBottom: insets.bottom }];
   items1 = [hasOwnProperty(SuggestedSearchListDefault, { smartSearchQuery, source: "error_screen" }), ];
   const obj2 = { style: tmp.copy, children: items2 };
-  const obj3 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4086["HX/WYf"]) };
+  const obj3 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl.string(_modDef4118["HX/WYf"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items2 = [hasOwnProperty(Text, obj3), ];
-  const obj4 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4086["0ySxbu"]) };
+  const obj4 = { variant: "text-sm/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.string(_modDef4118["0ySxbu"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items2[1] = hasOwnProperty(Text2, obj4);

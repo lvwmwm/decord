@@ -1,9 +1,9 @@
-// Module ID: 13035
-// Function ID: 13036
+// Module ID: 13252
+// Function ID: 13253
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [32, 19, 17, 4973, 12968, 6016, 21, 587, 4972, 1382, 558, 576, 504, 8624, 12988, 1414, 8072, 13036, 1125, 3089, 3057, 6885, 4918, 7229, 5670, 12986, 12996, 2]
+// Dependencies: [32, 19, 17, 5005, 13015, 6050, 21, 587, 5004, 1382, 558, 576, 504, 8661, 13206, 1414, 8106, 13253, 1125, 3089, 3057, 6919, 4950, 7263, 5705, 13204, 13213, 2]
 
-// Module 13035 (CheckpointSummaryStatsScreen)
+// Module 13252 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,21 +11,21 @@ import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import _modDef3057 from "module_3057" /* 3057 */;
 import _modDef3089 from "module_3089" /* 3089 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4918 */;
-import CheckpointConstants from "CheckpointConstants" /* 6016 */;
-import GuildIcon from "GuildIcon" /* 6885 */;
-import EmojiDefault from "Emoji" /* 7229 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 8624 */;
-import CheckpointTextDefault from "CheckpointText" /* 12986 */;
-import CheckpointScreen from "CheckpointScreen" /* 12988 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12996 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13036 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
+import CheckpointConstants from "CheckpointConstants" /* 6050 */;
+import GuildIcon from "GuildIcon" /* 6919 */;
+import EmojiDefault from "Emoji" /* 7263 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 8661 */;
+import CheckpointTextDefault from "CheckpointText" /* 13204 */;
+import CheckpointScreen from "CheckpointScreen" /* 13206 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13213 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
-import CheckpointStore from "CheckpointStore" /* 12968 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import CheckpointStore from "CheckpointStore" /* 13015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -355,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     const obj6 = AvatarUtilsDefault;
     applicationIconURL = obj6.getApplicationIconURL(obj3);
   }
-  let tmp27Result4 = closure_8(tmp2(8072).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp27Result4 = closure_8(tmp2(8106).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   const obj4 = { style: tmp.container, children: items2 };
   items2 = [, ];
   const tmp30 = CheckpointScreenDefault;
@@ -484,7 +484,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   if (null != applicationIconURL) {
     const obj23 = { source: obj24, style: tmp.itemIcon };
     obj24 = { uri: applicationIconURL };
-    tmp27Result4 = tmp27(tmp29(5670), obj23);
+    tmp27Result4 = tmp27(tmp29(5705), obj23);
   }
   const obj25 = { children: closure_9(View, obj4) };
   items7[1] = closure_8(closure_14, obj22);

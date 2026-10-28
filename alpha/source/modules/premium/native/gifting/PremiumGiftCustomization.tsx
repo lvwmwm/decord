@@ -1,9 +1,9 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 14143
+// Function ID: 14144
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1391, 21, 4972, 587, 558, 576, 1502, 10452, 13925, 1125, 10588, 13926, 5235, 10615, 10617, 13927, 2]
+// Dependencies: [32, 19, 17, 1391, 21, 5004, 587, 558, 576, 1502, 10484, 14144, 1125, 10620, 14145, 5270, 10647, 10649, 14146, 2]
 
-// Module 13924 (PremiumGiftCustomization)
+// Module 14143 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
@@ -11,7 +11,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

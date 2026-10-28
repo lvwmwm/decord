@@ -1,9 +1,9 @@
-// Module ID: 11510
-// Function ID: 11511
+// Module ID: 11548
+// Function ID: 11549
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 558, 576, 8620, 2]
+// Dependencies: [32, 19, 558, 576, 8657, 2]
 
-// Module 11510 (useEmbeddedActivityBackground)
+// Module 11548 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F148563 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F149426 */ });
               }
               return;
             }
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F148563 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F149426 */ });
               }
               return;
             }
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F148563 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F149426 */ });
               }
               return;
             }

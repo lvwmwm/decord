@@ -1,12 +1,12 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8461
+// Function ID: 8462
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1389, 7563, 558, 576, 504, 8428, 8429, 2]
+// Dependencies: [19, 1389, 7597, 558, 576, 504, 8462, 8463, 2]
 
-// Module 8427 (useMaybeFetchReferralsRemaining)
+// Module 8461 (useMaybeFetchReferralsRemaining)
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7563 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7597 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,9 +37,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = tmp(8428);
+  const tmpResult3 = tmp(8462);
   const hasDiscountApplied = tmpResult3.useHasDiscountApplied();
-  const tmpResult4 = tmp(8429);
+  const tmpResult4 = tmp(8463);
   const hasActiveTrial = tmpResult4.useHasActiveTrial();
   if (cResult[2] === stateFromStores) {
     if (cResult[3] === hasActiveTrial) {
@@ -93,10 +93,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj3 = flag(8428);
+  const obj3 = flag(8462);
   const hasDiscountApplied = obj3.useHasDiscountApplied();
   let verified;
-  const obj4 = flag(8429);
+  const obj4 = flag(8463);
   const hasActiveTrial = obj4.useHasActiveTrial();
   if (stateFromStores != null) {
     verified = stateFromStores.verified;

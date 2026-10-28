@@ -1,11 +1,11 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12393
+// Function ID: 12394
 // Name: ConjureMessageTime
-// Dependencies: [4797, 2]
+// Dependencies: [4829, 2]
 // Exports: describeMessageTime
 
-// Module 12348 (ConjureMessageTime)
-import DateUtils from "DateUtils" /* 4797 */;
+// Module 12393 (ConjureMessageTime)
+import DateUtils from "DateUtils" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureMessageTime.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 12198
-// Function ID: 12199
+// Module ID: 12236
+// Function ID: 12237
 // Name: conjureAttachmentRequests
-// Dependencies: [5, 10797, 10796, 2]
+// Dependencies: [5, 10830, 10829, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 12198 (conjureAttachmentRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10797 */;
+// Module 12236 (conjureAttachmentRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

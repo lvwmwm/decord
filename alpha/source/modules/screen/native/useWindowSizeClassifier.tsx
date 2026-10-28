@@ -1,12 +1,12 @@
-// Module ID: 5155
-// Function ID: 5156
+// Module ID: 5190
+// Function ID: 5191
 // Name: useWindowSizeClassifier
-// Dependencies: [5156, 558, 576, 2]
+// Dependencies: [5191, 558, 576, 2]
 // Exports: getWindowSizeClassifier
 
-// Module 5155 (useWindowSizeClassifier)
+// Module 5190 (useWindowSizeClassifier)
 import react from "react" /* 576 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5156 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

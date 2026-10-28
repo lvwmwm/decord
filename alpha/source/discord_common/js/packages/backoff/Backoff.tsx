@@ -85,6 +85,15 @@ class Backoff {
     }
     return _current;
   }
+  failAsync(arg0) {
+    const self = this;
+    let closure_0 = arg0;
+    const promise = new Promise((arg0) => {
+      closure_0 = arg0;
+      self.fail(() => closure_0(), closure_0);
+    });
+    return promise;
+  }
   cancel() {
     const self = this;
     this._callback = null;

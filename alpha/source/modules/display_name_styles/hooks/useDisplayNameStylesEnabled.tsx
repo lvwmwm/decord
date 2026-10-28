@@ -1,14 +1,14 @@
-// Module ID: 6369
-// Function ID: 6370
+// Module ID: 6403
+// Function ID: 6404
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 4973, 558, 576, 504, 6370, 2]
+// Dependencies: [19, 5005, 558, 576, 504, 6404, 2]
 
-// Module 6369 (useDisplayNameStylesEnabled)
+// Module 6403 (useDisplayNameStylesEnabled)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 6370 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import react3 from "react" /* 6404 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplay
     [tmp4, tmp5] = cResult;
   }
   const tmpResult = get_initialized;
-  const overrideSettings = tmpResult.useStateFromStores(tmp4, tmp5) || useContext(tmp(6370).DisplayNameStylesContext).overrideSettings;
+  const overrideSettings = tmpResult.useStateFromStores(tmp4, tmp5) || useContext(tmp(6404).DisplayNameStylesContext).overrideSettings;
   return overrideSettings;
 }) : (function useDisplayNameStylesEnabled() {
   const items = [AccessibilityStore];

@@ -1,16 +1,16 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16966
+// Function ID: 16967
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1407, 4997, 1409, 558, 576, 15903, 5000, 2]
+// Dependencies: [19, 1407, 5029, 1409, 558, 576, 16129, 5032, 2]
 
-// Module 16737 (DisplayNameStylesFontOrder)
+// Module 16966 (DisplayNameStylesFontOrder)
 import react2 from "react" /* 576 */;
 import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5000 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15903 */;
+import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5032 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 16129 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4997 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

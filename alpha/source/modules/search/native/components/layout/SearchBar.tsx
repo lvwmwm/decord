@@ -1,28 +1,28 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18345
+// Function ID: 18346
 // Name: SearchBar
-// Dependencies: [19, 17, 4824, 4846, 4914, 1389, 13253, 9716, 9715, 1084, 21, 4972, 1125, 5605, 558, 576, 504, 18102, 5254, 13239, 13264, 4981, 13260, 13247, 18106, 8993, 2]
+// Dependencies: [19, 17, 4856, 4878, 4946, 1389, 13470, 9748, 9747, 1084, 21, 5004, 1125, 5640, 558, 576, 504, 18342, 5289, 13456, 13481, 5013, 13477, 13464, 18346, 9027, 2]
 
-// Module 18105 (SearchBar)
+// Module 18345 (SearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import intl8 from "intl" /* 1125 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4981 */;
-import useChannelName from "useChannelName" /* 5605 */;
-import TrackingConstants from "TrackingConstants" /* 9715 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13239 */;
-import SearchTokens from "SearchTokens" /* 13247 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13260 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13264 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
+import useChannelName from "useChannelName" /* 5640 */;
+import TrackingConstants from "TrackingConstants" /* 9747 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13456 */;
+import SearchTokens from "SearchTokens" /* 13464 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13477 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13481 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
-import SearchQueryStore from "SearchQueryStore" /* 13253 */;
-import SearchConstants from "SearchConstants" /* 9716 */;
-import createStyles from "createStyles" /* 4972 */;
+import SearchQueryStore from "SearchQueryStore" /* 13470 */;
+import SearchConstants from "SearchConstants" /* 9748 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1431,7 +1431,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp2 = importDefault;
       if (!SearchQueryStore.isAutocompleteVisible(searchContext)) {
         const isInitialSearchQueryResult = SearchQueryStore.isInitialSearchQuery(searchContext);
-        const tmp2Result = tmp2(13239);
+        const tmp2Result = tmp2(13456);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
@@ -1469,7 +1469,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
       const tmp6 = importDefault;
       if (queryString !== searchResultsQuery) {
-        const tmp6Result = tmp6(13239);
+        const tmp6Result = tmp6(13456);
         if (tmp11) {
           const initialMessages = tmp6Result.fetchInitialMessages(tmp);
         } else {

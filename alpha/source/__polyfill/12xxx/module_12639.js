@@ -1,201 +1,148 @@
 // Module ID: 12639
 // Function ID: 12640
-// Dependencies: [12614, 12595, 12594, 12625]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12639
-import _mod12594 from "module_12594" /* 12594 */;
-import _mod12595 from "module_12595" /* 12595 */;
-import _mod12614 from "module_12614" /* 12614 */;
-import _mod12625 from "module_12625" /* 12625 */;
+let filename;
 
-
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod12595;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
-  }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
-  }
-  const tmpResult = _mod12595;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
-  }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod12595;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod12595;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod12594;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod12625;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod12594;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod12594;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
     }
-  }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
-    } else {
-      items = [fingerprint2];
+    let num2 = arg2;
+    if (arg2 === undefined) {
+      num2 = 0;
     }
-    items1 = items;
-  } else {
-    items1 = [];
-  }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
-  }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
-  }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
-  }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
-};
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod12614;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
-export const mergeScopeData = function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod12614;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod12614;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod12614;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod12614;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod12614;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
-  }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
     const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
+        }
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
+        }
+      }
+    }
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
+    }
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
+    });
+  } else {
+    return [];
   }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
+}
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
+
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
+    }
   }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
 };
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
+  }
+};
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
+  if (Array.isArray(arg0)) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
+  }
+  return applyResult;
+};
+export { stripSentryFramesAndReverse };

@@ -1,19 +1,19 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9368
+// Function ID: 9369
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 9334, 5235, 5245, 1125, 7307, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 9366, 5270, 5280, 1125, 7341, 2]
 
-// Module 9336 (GameProfileSection)
+// Module 9368 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7307 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9334 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7341 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9366 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
           tmp8 = cResult[10];
         }
         if (cResult[11] !== showViewAllSkeleton) {
-          const tmp13 = showViewAllSkeleton && React3(tmp(9334).GameProfileSkeletonButton, { size: "sm" });
+          const tmp13 = showViewAllSkeleton && React3(tmp(9366).GameProfileSkeletonButton, { size: "sm" });
           cResult[11] = showViewAllSkeleton;
           cResult[12] = tmp13;
           tmp12 = tmp13;
@@ -207,7 +207,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
         let tmp12 = null != onPressViewAll;
         if (tmp12) {
           const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-          const Button = tmp(5245).Button;
+          const Button = tmp(5280).Button;
           intl = tmp(1125).intl;
           tmp12 = React3(Button, obj3);
         }
@@ -283,7 +283,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-    const Button = tmp5(5245).Button;
+    const Button = tmp5(5280).Button;
     intl = tmp5(1125).intl;
     tmp4Result = tmp4(Button, obj3);
   }

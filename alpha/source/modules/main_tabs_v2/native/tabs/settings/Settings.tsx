@@ -1,18 +1,18 @@
-// Module ID: 18400
-// Function ID: 18401
+// Module ID: 18641
+// Function ID: 18642
 // Name: Settings
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 18278, 1630, 7040, 4929, 18401, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 18519, 1630, 7074, 4961, 18642, 2]
 
-// Module 18400 (Settings)
+// Module 18641 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7040 */;
-import profileModalTransition from "profileModalTransition" /* 18278 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7074 */;
+import profileModalTransition from "profileModalTransition" /* 18519 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp5;
-const DeviceUtils = tmp(4929);
-const SettingsNavigatorDefault = tmp5(18401);
+const DeviceUtils = tmp(4961);
+const SettingsNavigatorDefault = tmp5(18642);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

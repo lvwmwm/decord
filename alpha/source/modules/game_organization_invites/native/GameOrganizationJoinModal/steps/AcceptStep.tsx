@@ -1,25 +1,25 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12787
+// Function ID: 12788
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12734, 21, 4972, 587, 558, 576, 5670, 5235, 5978, 12736, 1502, 11324, 5664, 1125, 7901, 7902, 2403, 12741, 12739, 6697, 5245, 2]
+// Dependencies: [5, 32, 19, 17, 12781, 21, 5004, 587, 558, 576, 5705, 5270, 6013, 12783, 1502, 11361, 5699, 1125, 7935, 7936, 2403, 12788, 12786, 6731, 5280, 2]
 // Exports: AcceptStep
 
-// Module 12740 (AcceptStep)
+// Module 12787 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2403 from "module_2403" /* 2403 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import Stack_Stack from "Stack/Stack" /* 5978 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12736 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12741 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import Stack_Stack from "Stack/Stack" /* 6013 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12783 */;
+import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12734 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12781 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
       }
     }
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp4.benefitCard, children: items };
-    const Stack = tmp(5978).Stack;
+    const Stack = tmp(6013).Stack;
     items = [tmp5, tmp11];
     const tmp17 = authStore(Stack, obj3);
     cResult[5] = tmp4.benefitCard;
@@ -249,14 +249,14 @@ export const AcceptStep = function AcceptStep(code) {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
     let tmp11 = closure_9;
-    const ModalScreen = tmp5(7901).ModalScreen;
-    const ModalContent = tmp5(7902).ModalContent;
+    const ModalScreen = tmp5(7935).ModalScreen;
+    const ModalContent = tmp5(7936).ModalContent;
     let obj2 = { spacing: tmp2(587).space.PX_48, children: items1 };
-    const Stack3 = tmp5(5978).Stack;
+    const Stack3 = tmp5(6013).Stack;
     let obj3 = { spacing: tmp2(587).space.PX_24, children: items };
-    const Stack4 = tmp5(5978).Stack;
+    const Stack4 = tmp5(6013).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5235).Text;
+    const Text2 = tmp5(5270).Text;
     const intl6 = tmp5(1125).intl;
     formatToPlainString = intl6.formatToPlainString;
     WmxMAI = tmp2(2403).WmxMAI;
@@ -271,13 +271,13 @@ export const AcceptStep = function AcceptStep(code) {
     items[1] = tmp11(GameOrganizationLinkedServerCardDefault, obj8);
     items1 = [tmp10(Stack4, obj3), ];
     const obj9 = { spacing: nativeDefault.space.PX_24, children: items2 };
-    const Stack = tmp5(5978).Stack;
+    const Stack = tmp5(6013).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(_modDef2403.yFqGy8) };
-    const Text = tmp5(5235).Text;
+    const Text = tmp5(5270).Text;
     intl = tmp5(1125).intl;
     items2 = [tmp11(Text, obj10), ];
     const obj11 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, children: items3 };
-    const Stack2 = tmp5(5978).Stack;
+    const Stack2 = tmp5(6013).Stack;
     const obj12 = { text: intl2.string(_modDef2403.WUVzdk) };
     intl2 = tmp5(1125).intl;
     items3 = [tmp11(closure_12, obj12), ];
@@ -288,9 +288,9 @@ export const AcceptStep = function AcceptStep(code) {
     items1[1] = closure_10(Stack, obj9);
     items4 = [tmp11(ModalContent, obj6), ];
     const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(12739).ModalFooter;
+    const ModalFooter = tmp5(12786).ModalFooter;
     obj15 = { children: items5 };
-    ButtonGroup = tmp5(6697).ButtonGroup;
+    ButtonGroup = tmp5(6731).ButtonGroup;
     const obj16 = {
       text: intl4.string(_modDef2403.BaZ6nt),
       size: "lg",
@@ -300,11 +300,11 @@ export const AcceptStep = function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5245).Button;
+    const Button = tmp5(5280).Button;
     intl4 = tmp5(1125).intl;
     items5 = [tmp11(Button, obj16), ];
     const obj17 = { text: intl5.string(code(1125).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5245).Button;
+    const Button2 = tmp5(5280).Button;
     intl5 = tmp5(1125).intl;
     items5[1] = tmp11(Button2, obj17);
     items4[1] = tmp11(ModalFooter, obj14);

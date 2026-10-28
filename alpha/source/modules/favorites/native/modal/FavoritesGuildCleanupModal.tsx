@@ -1,21 +1,21 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17844
+// Function ID: 17845
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 21, 4972, 587, 6673, 558, 576, 1630, 17610, 5235, 1125, 3413, 7010, 6987, 6986, 5978, 5245, 6989, 11153, 5605, 17612, 6902, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 6707, 558, 576, 1630, 17845, 5270, 1125, 3445, 7044, 7021, 7020, 6013, 5280, 7023, 11188, 5640, 17847, 6936, 2]
 
-// Module 17609 (FavoritesGuildCleanupModal)
+// Module 17844 (FavoritesGuildCleanupModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3413 from "module_3413" /* 3413 */;
-import useChannelNameDefault from "useChannelName" /* 5605 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6673 */;
-import TableRadioRow2 from "TableRadioRow" /* 6986 */;
-import Modal from "Modal" /* 11153 */;
-import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 17612 */;
+import _modDef3445 from "module_3445" /* 3445 */;
+import useChannelNameDefault from "useChannelName" /* 5640 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import TableRadioRow2 from "TableRadioRow" /* 7020 */;
+import Modal from "Modal" /* 11188 */;
+import useFavoritesCleanupActivityDefault from "useFavoritesCleanupActivity" /* 17847 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const TableCheckboxRow2 = tmp(6902);
+const TableCheckboxRow2 = tmp(6936);
 function closeCleanup() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey("FavoritesGuildCleanupModal");
@@ -838,7 +838,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { cleanup: obj3 };
     obj3 = {
-      title: intl.string(_modDef3413["b081B+"]),
+      title: intl.string(_modDef3445["b081B+"]),
       headerLeft() {
           let intl;
           const obj = { text: intl.string(require("intl").t["ETE/oC"]), size: "sm", variant: "tertiary", onPress };
@@ -872,7 +872,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     let onPress;
     let obj = { cleanup: obj2 };
     obj2 = {
-      title: intl.string(_modDef3413["b081B+"]),
+      title: intl.string(_modDef3445["b081B+"]),
       headerLeft() {
         let intl;
         const obj = { text: intl.string(closure_1_0(closure_1_2[11]).t["ETE/oC"]), size: "sm", variant: "tertiary", onPress };

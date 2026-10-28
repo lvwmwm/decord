@@ -1,82 +1,202 @@
 // Module ID: 12660
 // Function ID: 12661
-// Dependencies: [12585, 12588, 12617, 12603, 12616, 12637, 12607, 12608, 12594, 12625, 12602, 12601, 12589]
-// Exports: getTraceData
+// Dependencies: [41, 42, 12643]
+// Exports: rejectedSyncPromise, resolvedSyncPromise
 
 // Module 12660
-import _mod12594 from "module_12594" /* 12594 */;
-import _mod12601 from "module_12601" /* 12601 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12602 */;
-import _mod12607 from "module_12607" /* 12607 */;
-import _mod12608 from "module_12608" /* 12608 */;
-import _mod12616 from "module_12616" /* 12616 */;
-import _mod12625 from "module_12625" /* 12625 */;
-import _mod12637 from "module_12637" /* 12637 */;
-import registerSpanErrorInstrumentation from "module_12585" /* 12585 */;
-import "module_12588";
-import DEBUG_BUILD from "module_12617" /* 12617 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12603 */;
+import _mod12643 from "module_12643" /* 12643 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
+let c3;
 
-export const getTraceData = function getTraceData() {
-  let sampled;
-  let spanId;
-  let traceId;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  const obj2 = _mod12616;
-  const client = obj2.getClient();
-  const obj3 = _mod12637;
-  if (obj3.isEnabled()) {
-    if (client) {
-      const tmpResult = _mod12607;
-      const mainCarrier = tmpResult.getMainCarrier();
-      const tmpResult8 = _mod12608;
-      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
-      if (asyncContextStrategy.getTraceData) {
-        return asyncContextStrategy.getTraceData(obj);
-      } else {
-        let spanToTraceHeaderResult;
-        let dynamicSamplingContextFromSpan;
-        let obj5;
-        const tmpResult9 = _mod12616;
-        const currentScope = tmpResult9.getCurrentScope();
-        let span = obj.span;
-        if (!span) {
-          const tmpResult10 = _mod12594;
-          span = tmpResult10.getActiveSpan();
-        }
-        if (span) {
-          const tmpResult11 = _mod12594;
-          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
-        } else {
-          const propagationContext = currentScope.getPropagationContext();
-          ({ traceId, sampled, spanId } = propagationContext);
-          const tmpResult12 = _mod12601;
-          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
-        }
-        const tmpResult13 = _mod12625;
-        if (span) {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
-        } else {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
-        }
-        const tmpResult14 = BAGGAGE_HEADER_NAME;
-        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-        const TRACEPARENT_REGEXP = tmp(12601).TRACEPARENT_REGEXP;
-        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-        } else {
-          const logger = tmp(12589).logger;
-          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
-          obj5 = {};
-        }
-        return obj5;
-      }
+let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
+obj[0] = "PENDING";
+obj[1] = "RESOLVED";
+obj[2] = "REJECTED";
+class SyncPromise {
+  constructor(fn) {
+    const self = this;
+    _classCallCheck(this, SyncPromise);
+    const __init = SyncPromise.prototype.__init;
+    __init.call(self);
+    const __init2 = tmp.prototype.__init2;
+    __init2.call(self);
+    const __init3 = tmp.prototype.__init3;
+    __init3.call(self);
+    const __init4 = tmp.prototype.__init4;
+    __init4.call(self);
+    self._state = obj.PENDING;
+    self._handlers = [];
+    try {
+      fn(self._resolve, self._reject);
+    } catch (tmp5) {
+      self._reject(tmp5);
     }
   }
-  return {};
+}
+const entry = {
+  key: "then",
+  value: function then(arg0, arg1) {
+    const self = this;
+    let closure_1 = arg0;
+    let closure_0 = arg1;
+    obj = Object.create(SyncPromise.prototype);
+    SyncPromise((arg0, arg1) => {
+      closure_0 = arg0;
+      closure_1 = arg1;
+      const _handlers = self._handlers;
+      const items = [
+        false,
+        (arg0) => {
+          if (closure_1) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_0(arg0);
+          }
+        },
+        (arg0) => {
+          if (closure_0) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_1(arg0);
+          }
+        }
+      ];
+      _handlers.push(items);
+      self._executeHandlers();
+    });
+    return obj;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "catch",
+    value: function _catch(arg0) {
+      return this.then((result) => result, arg0);
+    }
+  },
+  {
+    key: "finally",
+    value: function _finally(arg0) {
+      const self = this;
+      let closure_0 = arg0;
+      obj = Object.create(SyncPromise.prototype);
+      SyncPromise((arg0, arg1) => {
+        let closure_1;
+        closure_0 = arg0;
+        const nextPromise = arg1.then((result) => {
+          c3 = false;
+          let closure_1_2 = result;
+          if (closure_0) {
+            tmp();
+          }
+        }, (arg0) => {
+          c3 = true;
+          let closure_1_2 = arg0;
+          if (closure_0) {
+            tmp();
+          }
+        });
+        return nextPromise.then(() => {
+          const tmp = c3;
+          if (tmp) {
+            closure_1(closure_1_2);
+          } else {
+            closure_0(closure_1_2);
+          }
+        });
+      });
+      return obj;
+    }
+  },
+  {
+    key: "__init",
+    value: function __init() {
+      const self = this;
+      this._resolve = (arg0) => {
+        self._setResult(obj.RESOLVED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init2",
+    value: function __init2() {
+      const self = this;
+      this._reject = (arg0) => {
+        self._setResult(obj.REJECTED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init3",
+    value: function __init3() {
+      const self = this;
+      this._setResult = (_state, _value) => {
+        if (self._state === self.PENDING) {
+          const obj2 = _mod12643;
+          if (obj2.isThenable(_value)) {
+            _value.then(self._resolve, self._reject);
+          } else {
+            self._state = _state;
+            self._value = _value;
+            self._executeHandlers();
+          }
+        }
+      };
+    }
+  },
+  {
+    key: "__init4",
+    value: function __init4() {
+      const self = this;
+      this._executeHandlers = () => {
+        let _state;
+        if (self._state !== obj.PENDING) {
+          const _handlers = tmp._handlers;
+          const substr = _handlers.slice();
+          self._handlers = [];
+          const item = substr.forEach((item) => {
+            if (!item[0]) {
+              const tmp2 = constants;
+              if (_state._state === constants.RESOLVED) {
+                item[1](_state._value);
+              }
+              if (_state._state === tmp2.REJECTED) {
+                item[2](_state._value);
+              }
+              item[0] = true;
+            }
+          });
+        }
+      };
+    }
+  }
+];
+const _moduleResult = _createClass(SyncPromise, items);
+const SyncPromise_export = _moduleResult;
+
+export { SyncPromise_export as SyncPromise };
+export const rejectedSyncPromise = function rejectedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((arg0, fn) => {
+    fn(closure_0);
+  });
+  return tmp;
+};
+export const resolvedSyncPromise = function resolvedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((fn) => {
+    fn(closure_0);
+  });
+  return tmp;
 };

@@ -1,30 +1,30 @@
-// Module ID: 13338
-// Function ID: 13339
+// Module ID: 13555
+// Function ID: 13556
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4973, 7632, 1389, 1084, 21, 1199, 4972, 587, 558, 576, 5253, 1125, 5235, 7034, 6910, 504, 5040, 6368, 9221, 8318, 13339, 5145, 5053, 5207, 10089, 1264, 10087, 1111, 6367, 8302, 9696, 9698, 13340, 2]
+// Dependencies: [19, 17, 5005, 7666, 1389, 1084, 21, 1199, 5004, 587, 558, 576, 5288, 1125, 5270, 7068, 6944, 504, 5072, 6402, 9254, 8352, 13556, 5180, 5085, 5242, 10121, 1264, 10119, 1111, 6401, 8336, 9728, 9730, 13557, 2]
 
-// Module 13338 (ChatInputContextBar)
+// Module 13555 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1111 */;
 import intl9 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import useToken from "useToken" /* 5253 */;
-import Pressables from "Pressables" /* 6910 */;
-import DraftStore2 from "DraftStore" /* 7632 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8302 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9696 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9698 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10089 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import useToken from "useToken" /* 5288 */;
+import Pressables from "Pressables" /* 6944 */;
+import DraftStore2 from "DraftStore" /* 7666 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9728 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9730 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10121 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let hasOwnProperty;
 let map1;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(7034);
+const AssetRegistryDefault = tmp5(7068);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;
@@ -976,33 +976,24 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputScheduledMessageBar(arg0) {
   let date;
-  let first;
   let items;
   let onCancelScheduling;
   let onEditSchedule;
   let scheduledTimestamp;
-  let tmp10;
+  let tmp12;
   let tmp14;
+  let tmp8;
   obj = react2;
-  const cResult = obj.c(25);
+  const cResult = obj.c(26);
   ({ scheduledTimestamp, onCancelScheduling, onEditSchedule } = arg0);
   const tmp4 = closure_17();
   const obj2 = useToken;
   const token = obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const obj3 = useToken;
   const bound = Math.max(0, (token - obj3.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const floatingReplyTextWrapper = tmp4.floatingReplyTextWrapper;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[0] !== scheduledTimestamp) {
     const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl9.t.SBcdAN);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== scheduledTimestamp) {
-    const intl2 = tmp(1125).intl;
-    const formatToPlainString = intl2.formatToPlainString;
+    const formatToPlainString = intl.formatToPlainString;
     const _Date = Date;
     const self = this;
     const self2 = this;
@@ -1010,129 +1001,136 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
     const ZN3tIx = tmp(1125).t.ZN3tIx;
     date = new Date(scheduledTimestamp);
     const formatToPlainStringResult = formatToPlainString(ZN3tIx, obj4);
-    cResult[1] = scheduledTimestamp;
-    cResult[2] = formatToPlainStringResult;
-    tmp10 = formatToPlainStringResult;
+    cResult[0] = scheduledTimestamp;
+    cResult[1] = formatToPlainStringResult;
+    tmp8 = formatToPlainStringResult;
   } else {
-    tmp10 = cResult[2];
+    tmp8 = cResult[1];
   }
-  if (cResult[3] !== tmp10) {
-    const obj5 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp10 };
+  const floatingReplyTextWrapper = tmp4.floatingReplyTextWrapper;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1125).intl;
+    const stringResult = intl2.string(intl9.t.SBcdAN);
+    cResult[2] = stringResult;
+    tmp12 = stringResult;
+  } else {
+    tmp12 = cResult[2];
+  }
+  if (cResult[3] !== tmp8) {
+    const obj5 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp8 };
     const tmp16 = authStore2(Text_Text.Text, obj5);
-    cResult[3] = tmp10;
+    cResult[3] = tmp8;
     cResult[4] = tmp16;
     tmp14 = tmp16;
   } else {
     tmp14 = cResult[4];
   }
   if (cResult[5] === onEditSchedule) {
-    if (cResult[6] === tmp4.floatingReplyTextWrapper) {
-      let tmp17;
-      let tmp19;
-      let tmp22;
-      if (cResult[7] === tmp14) {
-        tmp17 = cResult[8];
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1125).intl;
-        const stringResult1 = intl3.string(intl9.t.cpT0Cq);
-        cResult[9] = stringResult1;
-        tmp19 = stringResult1;
-      } else {
-        tmp19 = cResult[9];
-      }
-      let tmp21;
-      if (bound > 0) {
-        tmp21 = bound;
-      }
-      if (cResult[10] !== tmp4.floatingCloseIcon) {
-        const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
-        const Icon = tmp(1199).Icon;
-        const tmp24 = authStore2(Icon, obj6);
-        cResult[10] = tmp4.floatingCloseIcon;
-        cResult[11] = tmp24;
-        tmp22 = tmp24;
-      } else {
-        tmp22 = cResult[11];
-      }
-      if (cResult[12] === onCancelScheduling) {
-        if (cResult[13] === tmp21) {
-          let tmp25;
-          if (cResult[14] === tmp22) {
-            tmp25 = cResult[15];
-          }
-          if (cResult[16] === tmp25) {
-            let tmp28;
-            if (cResult[17] === tmp4.floatingRightActions) {
-              tmp28 = cResult[18];
-            }
-            if (cResult[19] === tmp17) {
-              let tmp32;
-              if (cResult[20] === tmp28) {
-                tmp32 = cResult[21];
-              }
-              if (cResult[22] === tmp4.contextBarRow) {
-                let tmp36;
-                if (cResult[23] === tmp32) {
-                  tmp36 = cResult[24];
-                }
-                return tmp36;
-              }
-              const obj7 = { style: tmp4.contextBarRow, children: tmp32 };
-              const tmp39 = authStore2(hasOwnProperty, obj7);
-              cResult[22] = tmp4.contextBarRow;
-              cResult[23] = tmp32;
-              cResult[24] = tmp39;
-              tmp36 = tmp39;
-            }
-            const obj8 = { children: items };
-            items = [tmp17, tmp28];
-            const tmp35 = map1(syncedClientThemes, obj8);
-            cResult[19] = tmp17;
-            cResult[20] = tmp28;
-            cResult[21] = tmp35;
-            tmp32 = tmp35;
-          }
-          const obj9 = { style: tmp4.floatingRightActions, children: tmp25 };
-          const tmp31 = authStore2(hasOwnProperty, obj9);
-          cResult[16] = tmp25;
-          cResult[17] = tmp4.floatingRightActions;
-          cResult[18] = tmp31;
-          tmp28 = tmp31;
+    if (cResult[6] === tmp8) {
+      if (cResult[7] === tmp4.floatingReplyTextWrapper) {
+        let tmp17;
+        let tmp19;
+        let tmp22;
+        if (cResult[8] === tmp14) {
+          tmp17 = cResult[9];
         }
+        const _Symbol = Symbol;
+        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl3 = tmp(1125).intl;
+          const stringResult1 = intl3.string(intl9.t.cpT0Cq);
+          cResult[10] = stringResult1;
+          tmp19 = stringResult1;
+        } else {
+          tmp19 = cResult[10];
+        }
+        let tmp21;
+        if (bound > 0) {
+          tmp21 = bound;
+        }
+        if (cResult[11] !== tmp4.floatingCloseIcon) {
+          const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
+          const Icon = tmp(1199).Icon;
+          const tmp24 = authStore2(Icon, obj6);
+          cResult[11] = tmp4.floatingCloseIcon;
+          cResult[12] = tmp24;
+          tmp22 = tmp24;
+        } else {
+          tmp22 = cResult[12];
+        }
+        if (cResult[13] === onCancelScheduling) {
+          if (cResult[14] === tmp21) {
+            let tmp25;
+            if (cResult[15] === tmp22) {
+              tmp25 = cResult[16];
+            }
+            if (cResult[17] === tmp25) {
+              let tmp28;
+              if (cResult[18] === tmp4.floatingRightActions) {
+                tmp28 = cResult[19];
+              }
+              if (cResult[20] === tmp17) {
+                let tmp32;
+                if (cResult[21] === tmp28) {
+                  tmp32 = cResult[22];
+                }
+                if (cResult[23] === tmp4.contextBarRow) {
+                  let tmp36;
+                  if (cResult[24] === tmp32) {
+                    tmp36 = cResult[25];
+                  }
+                  return tmp36;
+                }
+                const obj7 = { style: tmp4.contextBarRow, children: tmp32 };
+                const tmp39 = authStore2(hasOwnProperty, obj7);
+                cResult[23] = tmp4.contextBarRow;
+                cResult[24] = tmp32;
+                cResult[25] = tmp39;
+                tmp36 = tmp39;
+              }
+              const obj8 = { children: items };
+              items = [tmp17, tmp28];
+              const tmp35 = map1(syncedClientThemes, obj8);
+              cResult[20] = tmp17;
+              cResult[21] = tmp28;
+              cResult[22] = tmp35;
+              tmp32 = tmp35;
+            }
+            const obj9 = { style: tmp4.floatingRightActions, children: tmp25 };
+            const tmp31 = authStore2(hasOwnProperty, obj9);
+            cResult[17] = tmp25;
+            cResult[18] = tmp4.floatingRightActions;
+            cResult[19] = tmp31;
+            tmp28 = tmp31;
+          }
+        }
+        const obj10 = { accessibilityRole: "button", accessibilityLabel: tmp19, activeOpacity: 0.5, hitSlop: tmp21, onPress: onCancelScheduling, children: tmp22 };
+        const tmp27 = authStore2(Pressables.PressableOpacity, obj10);
+        cResult[13] = onCancelScheduling;
+        cResult[14] = tmp21;
+        cResult[15] = tmp22;
+        cResult[16] = tmp27;
+        tmp25 = tmp27;
       }
-      const obj10 = { accessibilityRole: "button", accessibilityLabel: tmp19, activeOpacity: 0.5, hitSlop: tmp21, onPress: onCancelScheduling, children: tmp22 };
-      const tmp27 = authStore2(Pressables.PressableOpacity, obj10);
-      cResult[12] = onCancelScheduling;
-      cResult[13] = tmp21;
-      cResult[14] = tmp22;
-      cResult[15] = tmp27;
-      tmp25 = tmp27;
     }
   }
-  const tmp18 = authStore2(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: first, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
+  const tmp18 = authStore2(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: tmp8, accessibilityHint: tmp12, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
   cResult[5] = onEditSchedule;
-  cResult[6] = tmp4.floatingReplyTextWrapper;
-  cResult[7] = tmp14;
-  cResult[8] = tmp18;
+  cResult[6] = tmp8;
+  cResult[7] = tmp4.floatingReplyTextWrapper;
+  cResult[8] = tmp14;
+  cResult[9] = tmp18;
   tmp17 = tmp18;
 }) : (function ChatInputScheduledMessageBar(scheduledTimestamp) {
   let Icon;
-  let Text;
-  let ZN3tIx;
   let date;
-  let formatToPlainString;
-  let intl;
+  let intl2;
   let intl3;
   let items;
-  let obj4;
-  let obj5;
-  let obj7;
-  let obj9;
+  let obj6;
+  let obj8;
   let onCancelScheduling;
   let onEditSchedule;
-  let tmp9;
+  let tmp10;
   scheduledTimestamp = scheduledTimestamp.scheduledTimestamp;
   ({ onCancelScheduling, onEditSchedule } = scheduledTimestamp);
   const tmp = closure_17();
@@ -1140,32 +1138,31 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const obj2 = useToken;
   const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text, obj4) };
-  const PressableOpacity = Pressables.PressableOpacity;
-  intl = intl9.intl;
-  obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainString(ZN3tIx, obj5) };
-  Text = Text_Text.Text;
-  const intl2 = intl9.intl;
-  formatToPlainString = intl2.formatToPlainString;
-  obj5 = { timestamp: date.valueOf() };
-  ZN3tIx = intl9.t.ZN3tIx;
+  const intl = intl9.intl;
+  const formatToPlainString = intl.formatToPlainString;
+  const obj3 = { timestamp: date.valueOf() };
+  const ZN3tIx = intl9.t.ZN3tIx;
   date = new Date(scheduledTimestamp);
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: authStore2(Icon, obj7) };
-  const tmp8 = authStore2(PressableOpacity, obj3);
+  const formatToPlainStringResult = formatToPlainString(ZN3tIx, obj3);
+  const obj4 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, accessibilityHint: intl2.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text_Text.Text, { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainStringResult }) };
+  const PressableOpacity = Pressables.PressableOpacity;
+  intl2 = intl9.intl;
+  const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp10, onPress: onCancelScheduling, children: authStore2(Icon, obj6) };
+  const tmp9 = authStore2(PressableOpacity, obj4);
   const PressableOpacity2 = Pressables.PressableOpacity;
   intl3 = intl9.intl;
-  tmp9 = undefined;
+  tmp10 = undefined;
   if (bound > 0) {
-    tmp9 = bound;
+    tmp10 = bound;
   }
-  obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1199).Icon;
-  const obj8 = { style: tmp.contextBarRow, children: map1(syncedClientThemes, obj9) };
-  obj9 = { children: items };
-  items = [tmp8, ];
-  const obj10 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity2, obj6) };
-  items[1] = authStore2(hasOwnProperty, obj10);
-  return authStore2(hasOwnProperty, obj8);
+  const obj7 = { style: tmp.contextBarRow, children: map1(syncedClientThemes, obj8) };
+  obj8 = { children: items };
+  items = [tmp9, ];
+  const obj9 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity2, obj5) };
+  items[1] = authStore2(hasOwnProperty, obj9);
+  return authStore2(hasOwnProperty, obj7);
 });
 const __initData = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
 let closure_23 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
@@ -1183,10 +1180,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   obj = backgroundColor(576);
   const cResult = obj.c(9);
   ({ children, ref } = arg0);
-  const obj2 = backgroundColor(5145);
-  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(5145).GradientPercentage.END)).contextBar.backgroundColor;
+  const obj2 = backgroundColor(5180);
+  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(5180).GradientPercentage.END)).contextBar.backgroundColor;
   const tmp3 = closure_17();
-  const obj3 = backgroundColor(5053);
+  const obj3 = backgroundColor(5085);
   const sharedValue = obj3.useSharedValue(0);
   let fn = function l() {
     obj = { backgroundColor, maxHeight: sharedValue.get() };
@@ -1195,7 +1192,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const obj4 = backgroundColor(5053);
+  const obj4 = backgroundColor(5085);
   const animatedStyle = obj4.useAnimatedStyle(fn);
   dependencyMap = first.useRef(null);
   const obj5 = first;
@@ -1229,7 +1226,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161018 */ };
+                  const fn = function n() { /* body not rendered: F161960 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1261,7 +1258,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161018 */ };
+                  const fn = function n() { /* body not rendered: F161960 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1292,7 +1289,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161018 */ };
+                  const fn = function n() { /* body not rendered: F161960 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1321,7 +1318,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F161018 */ };
+                      const fn = function n() { /* body not rendered: F161960 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
@@ -1335,7 +1332,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
       return tmp10;
     }
     const obj6 = { style: tmp9, children };
-    const tmp13 = closure_12(sharedValue(5053).View, obj6);
+    const tmp13 = closure_12(sharedValue(5085).View, obj6);
     cResult[6] = children;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
@@ -1572,7 +1569,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(10087);
+      tmp8Result = tmp8(10119);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {

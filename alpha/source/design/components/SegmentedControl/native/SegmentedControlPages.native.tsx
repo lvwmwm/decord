@@ -1,16 +1,16 @@
-// Module ID: 11151
-// Function ID: 11152
+// Module ID: 11186
+// Function ID: 11187
 // Name: SegmentedControlPages
-// Dependencies: [109, 32, 19, 17, 21, 5053, 558, 576, 11152, 1381, 5298, 5972, 5940, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5085, 558, 576, 11187, 1381, 5333, 6007, 5975, 2]
 
-// Module 11151 (SegmentedControlPages)
+// Module 11186 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5053 */;
-import react_native2 from "react-native" /* 5972 */;
-import MathUtils from "MathUtils" /* 11152 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
+import react_native2 from "react-native" /* 6007 */;
+import MathUtils from "MathUtils" /* 11187 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -197,7 +197,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedCon
           }
           if (tmp4) {
             const result2 = sharedValue1.set(obj2.get());
-            const tmp13Result = tmp13(5053);
+            const tmp13Result = tmp13(5085);
             const runOnJSResult = tmp13Result.runOnJS(onPageChanged);
             runOnJSResult(sharedValue.get());
           }
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedCon
             const result = obj.set(-1);
           } else {
             const value = obj.get();
-            const tmpResult = tmp(5053);
+            const tmpResult = tmp(5085);
             tmpResult.runOnJS(closure_18)(value);
           }
         }
@@ -687,7 +687,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedCon
         }
         if (tmp4) {
           const result2 = sharedValue1.set(obj2.get());
-          const tmp13Result = tmp13(5053);
+          const tmp13Result = tmp13(5085);
           const runOnJSResult = tmp13Result.runOnJS(callback1);
           runOnJSResult(sharedValue.get());
         }
@@ -729,7 +729,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedCon
         const result = obj.set(-1);
       } else {
         const value = obj.get();
-        const tmpResult = tmp(5053);
+        const tmpResult = tmp(5085);
         tmpResult.runOnJS(callback2)(value);
       }
     }
@@ -952,7 +952,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Segmen
     reportedPageIndex = tmp9;
     closure_5 = cResult[7];
   }
-  const tmpResult = tmp(5053);
+  const tmpResult = tmp(5085);
   class P {
     constructor() {
       obj = closure_3;
@@ -973,7 +973,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Segmen
   P.__workletHash = 2724531395868;
   P.__initData = __initData13;
   const derivedValue = tmpResult.useDerivedValue(P);
-  const tmpResult3 = tmp(5053);
+  const tmpResult3 = tmp(5085);
   class O {
     constructor() {
       pointerEvents = "box-none";
@@ -1134,7 +1134,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? (function Segmen
       tmp30 = cResult[14];
     }
     const effect = obj4.useEffect(tmp29, tmp30);
-    const tmpResult4 = tmp(5053);
+    const tmpResult4 = tmp(5085);
     class A {
       constructor() {
         display = "none";

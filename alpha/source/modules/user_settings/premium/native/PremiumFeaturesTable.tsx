@@ -1,25 +1,25 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 15045
+// Function ID: 15046
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1084, 1391, 21, 4972, 587, 6708, 558, 576, 5206, 4979, 1199, 14823, 14824, 5235, 1125, 5259, 9797, 2050, 14825, 14826, 14827, 14828, 5670, 14829, 14830, 14831, 2]
+// Dependencies: [32, 19, 17, 1084, 1391, 21, 5004, 587, 6742, 558, 576, 5241, 5011, 1199, 15046, 15047, 5270, 1125, 5294, 9829, 2050, 15048, 15049, 15050, 15051, 5705, 15052, 15053, 15054, 2]
 
-// Module 14822 (PremiumFeaturesTable)
+// Module 15045 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl32 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import shared from "shared" /* 4979 */;
-import useThemeDefault from "useTheme" /* 5206 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import LegacyTokens from "LegacyTokens" /* 6708 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14824 */;
+import shared from "shared" /* 5011 */;
+import useThemeDefault from "useTheme" /* 5241 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import LegacyTokens from "LegacyTokens" /* 6742 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let obj6;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const Text_Text = tmp(5235);
-const AssetRegistryDefault = tmp4(14823);
+const Text_Text = tmp(5270);
+const AssetRegistryDefault = tmp4(15046);
 const View = react_native.View;
 const HorizontalGradient = Constants.HorizontalGradient;
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportDefault, PRICE_PLACEHOLDER: metroImportAll, PremiumTypes: c9, SubscriptionPlans: c10 } = PremiumConstants);
@@ -639,9 +639,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   }
   dependencyMap = tmp5;
   const tmp6 = closure_14();
-  const tmp8 = str(5206)();
-  const tmp9 = str(9797)(closure_10.PREMIUM_MONTH_TIER_0);
-  const tmp10 = str(9797)(closure_10.PREMIUM_MONTH_TIER_2);
+  const tmp8 = str(5241)();
+  const tmp9 = str(9829)(closure_10.PREMIUM_MONTH_TIER_0);
+  const tmp10 = str(9829)(closure_10.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp9 != null) {
     priceString = tmp9.priceString;
@@ -674,9 +674,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   }
   if (cResult[2] !== tmp6.logo) {
     size = { style: tmp6.logo, width: 48, height: 9 };
-    const tmp22 = closure_11(str(14825), size);
+    const tmp22 = closure_11(str(15048), size);
     const size1 = { style: tmp6.logo, width: 50, height: 9 };
-    const tmp23 = closure_11(str(14826), size1);
+    const tmp23 = closure_11(str(15049), size1);
     cResult[2] = tmp6.logo;
     cResult[3] = tmp22;
     cResult[4] = tmp23;
@@ -703,11 +703,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       } else {
         tmp26 = cResult[9];
       }
-      const tmpResult5 = tmp(4979);
+      const tmpResult5 = tmp(5011);
       if (tmpResult5.isThemeDark(tmp8)) {
-        tmp7Result = tmp7(14827);
+        tmp7Result = tmp7(15050);
       } else {
-        tmp7Result = tmp7(14828);
+        tmp7Result = tmp7(15051);
       }
       if (cResult[10] === tmp6.logo) {
         let tmp29;
@@ -725,11 +725,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
         } else {
           tmp32 = cResult[13];
         }
-        const tmpResult6 = tmp(4979);
+        const tmpResult6 = tmp(5011);
         if (tmpResult6.isThemeDark(tmp8)) {
-          tmp7Result2 = tmp7(14829);
+          tmp7Result2 = tmp7(15052);
         } else {
-          tmp7Result2 = tmp7(14830);
+          tmp7Result2 = tmp7(15053);
         }
         if (cResult[14] === tmp6.logo) {
           let tmp35;
@@ -866,7 +866,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
                           const intl10 = tmp(1125).intl;
                           const stringResult3 = intl10.string(tmp(1125).t["ufhQC+"]);
                           const obj6 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: first };
-                          const tmp71 = closure_11(tmp(5235).Text, obj6);
+                          const tmp71 = closure_11(tmp(5270).Text, obj6);
                           cResult[41] = tmp69;
                           cResult[42] = stringResult3;
                           cResult[43] = tmp71;
@@ -880,7 +880,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
                         }
                         const _Symbol8 = Symbol;
                         if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj7 = { label: tmp64, rowName: tmp65, column1: tmp66, column1AccessibilityLabel: first, column2: closure_11(tmp(5235).Text, obj8), column2AccessibilityLabel: tmp16 };
+                          const obj7 = { label: tmp64, rowName: tmp65, column1: tmp66, column1AccessibilityLabel: first, column2: closure_11(tmp(5270).Text, obj8), column2AccessibilityLabel: tmp16 };
                           obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp16 };
                           cResult[44] = obj7;
                           tmp72 = obj7;
@@ -1109,7 +1109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
                                     let tmp132 = tmp5 && null != premiumGroupRole;
                                     if (tmp132) {
                                       const obj24 = { style: tmp6.premiumGroupCard, premiumGroupRole };
-                                      tmp132 = closure_11(tmp7(14831), obj24);
+                                      tmp132 = closure_11(tmp7(15054), obj24);
                                     }
                                     cResult[79] = undefined !== isPremiumGroup && isPremiumGroup;
                                     cResult[80] = premiumGroupRole;
@@ -1118,7 +1118,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
                                     tmp131 = tmp132;
                                   }
                                   const obj25 = { style: tmp6.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp126 };
-                                  const tmp130 = closure_11(tmp(5235).Text, obj25);
+                                  const tmp130 = closure_11(tmp(5270).Text, obj25);
                                   cResult[76] = tmp6.headerText;
                                   cResult[77] = tmp126;
                                   cResult[78] = tmp130;
@@ -1176,14 +1176,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
           tmp38 = obj29;
         }
         const obj30 = { accessible: true, accessibilityLabel: tmp32, style: tmp6.logo, source: tmp7Result2 };
-        const tmp37 = closure_11(str(5670), obj30);
+        const tmp37 = closure_11(str(5705), obj30);
         cResult[14] = tmp6.logo;
         cResult[15] = tmp7Result2;
         cResult[16] = tmp37;
         tmp35 = tmp37;
       }
       const obj31 = { accessible: true, accessibilityLabel: tmp26, style: tmp6.logo, source: tmp7Result };
-      const tmp31 = closure_11(str(5670), obj31);
+      const tmp31 = closure_11(str(5705), obj31);
       cResult[10] = tmp6.logo;
       cResult[11] = tmp7Result;
       cResult[12] = tmp31;

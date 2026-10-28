@@ -1,10 +1,10 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16628
+// Function ID: 16629
 // Name: Shopfront
-// Dependencies: [5, 1084, 1294, 1348, 7447, 2]
+// Dependencies: [5, 1084, 1294, 1348, 7482, 2]
 // Exports: search
 
-// Module 16400 (Shopfront)
+// Module 16628 (Shopfront)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

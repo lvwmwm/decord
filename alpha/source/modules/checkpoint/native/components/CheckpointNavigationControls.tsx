@@ -1,17 +1,17 @@
-// Module ID: 13051
-// Function ID: 13052
+// Module ID: 13268
+// Function ID: 13269
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 6016, 1084, 21, 4972, 587, 558, 576, 6364, 13041, 1630, 5253, 1125, 6365, 13052, 8765, 3089, 12986, 5661, 2064, 10122, 10753, 10828, 2]
+// Dependencies: [17, 6050, 1084, 21, 5004, 587, 558, 576, 6398, 13258, 1630, 5288, 1125, 6399, 13269, 8802, 3089, 13204, 5696, 2064, 10154, 10787, 10863, 2]
 
-// Module 13051 (CheckpointNavigationControls)
+// Module 13268 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import CheckpointTextDefault from "CheckpointText" /* 12986 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13041 */;
+import CheckpointTextDefault from "CheckpointText" /* 13204 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13258 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6016 */;
+import CheckpointConstants from "CheckpointConstants" /* 6050 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (cResult[0] !== nextBlockedTrait) {
     let nitroLockedMessage;
     if (null != nextBlockedTrait) {
-      const tmpResult = tmp(6364);
+      const tmpResult = tmp(6398);
       nitroLockedMessage = tmpResult.getNitroLockedMessage(nextBlockedTrait);
     }
     cResult[0] = nextBlockedTrait;
@@ -102,7 +102,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 tmp14 = cResult[13];
               }
               const _Symbol = Symbol;
-              const tmpResult3 = tmp(5253);
+              const tmpResult3 = tmp(5288);
               const token = tmpResult3.useToken("text-subtle");
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl = tmp(1125).intl;
@@ -114,11 +114,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               }
               if (cResult[15] !== activeRoute) {
                 let stringResult1;
-                if (activeRoute === tmp(6365).CheckpointRoute.FINALIZE_CHARACTER) {
+                if (activeRoute === tmp(6399).CheckpointRoute.FINALIZE_CHARACTER) {
                   const intl3 = tmp(1125).intl;
                   stringResult1 = intl3.string(tmp(1125).t["R3BPH+"]);
                 } else {
-                  const tmpResult4 = tmp(6365);
+                  const tmpResult4 = tmp(6399);
                   if (tmpResult4.isCheckpointCustomizationRoute(activeRoute)) {
                     const intl2 = tmp(1125).intl;
                     stringResult1 = intl2.string(tmp(1125).t.PDTjLN);
@@ -130,7 +130,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               } else {
                 tmp19 = cResult[16];
               }
-              if (activeRoute === tmp(6365).CheckpointRoute.HOME) {
+              if (activeRoute === tmp(6399).CheckpointRoute.HOME) {
                 if (cResult[17] === tmp14) {
                   let tmp67;
                   let tmp68;
@@ -191,7 +191,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       }
                       if (cResult[29] !== tmp75) {
                         const obj5 = { variant: "text-sm/medium", children: tmp75 };
-                        const tmp79 = closure_7(nextBlockedTrait(12986), obj5);
+                        const tmp79 = closure_7(nextBlockedTrait(13204), obj5);
                         cResult[29] = tmp75;
                         cResult[30] = tmp79;
                         tmp77 = tmp79;
@@ -217,8 +217,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       tmp80 = tmp83;
                     }
                   }
-                  const obj7 = { Icon: tmp(8765).PlayIcon, label: tmp68, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp70 };
-                  const tmp12Result = nextBlockedTrait(13052);
+                  const obj7 = { Icon: tmp(8802).PlayIcon, label: tmp68, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp70 };
+                  const tmp12Result = nextBlockedTrait(13269);
                   const tmp74 = closure_7(tmp12Result, obj7);
                   cResult[23] = tmp11;
                   cResult[24] = undefined !== nextLoading && nextLoading;
@@ -231,7 +231,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 cResult[18] = tmp7.homeContainer;
                 cResult[19] = items1;
                 tmp67 = items1;
-              } else if (activeRoute === tmp(6365).CheckpointRoute.SUMMARY) {
+              } else if (activeRoute === tmp(6399).CheckpointRoute.SUMMARY) {
                 if (cResult[35] === tmp14) {
                   let tmp46;
                   let tmp47;
@@ -311,7 +311,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                               }
                             }
                             const obj10 = { label: tmp58, onPress: onShare, color, borderColor: color, shadowColor, style: tmp7.share };
-                            const tmp62 = closure_7(nextBlockedTrait(13052), obj10);
+                            const tmp62 = closure_7(nextBlockedTrait(13269), obj10);
                             cResult[53] = color;
                             cResult[54] = onShare;
                             cResult[55] = shadowColor;
@@ -329,7 +329,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                         tmp54 = tmp57;
                       }
                       const obj12 = { size: "custom", color, style: tmp7.editIcon };
-                      const tmp53 = closure_7(tmp(10122).PencilIcon, obj12);
+                      const tmp53 = closure_7(tmp(10154).PencilIcon, obj12);
                       cResult[45] = color;
                       cResult[46] = tmp7.editIcon;
                       cResult[47] = tmp53;
@@ -383,7 +383,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                   }
                   if (cResult[68] !== tmp25) {
                     const obj14 = { color: tmp25 };
-                    const tmp28 = closure_7(tmp(10753).ArrowSmallLeftIcon, obj14);
+                    const tmp28 = closure_7(tmp(10787).ArrowSmallLeftIcon, obj14);
                     cResult[68] = tmp25;
                     cResult[69] = tmp28;
                     tmp26 = tmp28;
@@ -453,8 +453,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                               }
                             }
                           }
-                          const obj17 = { Icon: tmp(10828).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp19, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, loading: undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
-                          const tmp12Result2 = nextBlockedTrait(13052);
+                          const obj17 = { Icon: tmp(10863).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp19, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, loading: undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
+                          const tmp12Result2 = nextBlockedTrait(13269);
                           const tmp41 = closure_7(tmp12Result2, obj17);
                           cResult[78] = tmp11;
                           cResult[79] = tmp19;

@@ -1,17 +1,17 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 12211
+// Function ID: 12212
 // Name: useConjureProjectIcon
-// Dependencies: [558, 576, 6811, 1414, 2]
+// Dependencies: [558, 576, 6845, 1414, 2]
 // Exports: conjureProjectIconMetrics
 
-// Module 12173 (useConjureProjectIcon)
+// Module 12211 (useConjureProjectIcon)
 import react from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ApplicationActionCreators = tmp(6811);
+const ApplicationActionCreators = tmp(6845);
 function conjureProjectIconMetrics(arg0) {
   const obj = { glyphSize: Math.round(0.6 * arg0), radius: arg0 / 4 };
   return obj;

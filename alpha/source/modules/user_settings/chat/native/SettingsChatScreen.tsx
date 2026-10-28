@@ -1,24 +1,24 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 17086
+// Function ID: 17087
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1389, 2055, 8331, 1084, 21, 4972, 587, 558, 576, 1502, 2050, 573, 5235, 1125, 6907, 1199, 10169, 7089, 11212, 16016, 2]
+// Dependencies: [19, 17, 1389, 2055, 8365, 1084, 21, 5004, 587, 558, 576, 1502, 2050, 573, 5270, 1125, 6941, 1199, 10201, 7123, 11248, 16244, 2]
 
-// Module 16857 (SettingsChatScreen)
+// Module 17086 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl14 from "intl" /* 1125 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7089 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10169 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
-import SettingLayoutDefault from "SettingLayout" /* 16016 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7123 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10201 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingLayoutDefault from "SettingLayout" /* 16244 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(stackNavigation(1125).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" }) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp13 = closure_9(Text, obj3);
     cResult[2] = tmp13;
@@ -178,12 +178,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj5 = { style: tmp5.card, children: closure_9(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: closure_10(View, obj7) };
     obj7 = { style: tmp5.cardContent, children: items2 };
-    Card = tmp(6907).Card;
+    Card = tmp(6941).Card;
     const obj8 = { style: tmp5.cardIcon, source: AssetRegistryDefault, size: stackNavigation(1199).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1199).Icon;
     items2 = [closure_9(Icon, obj8), ];
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: intl2.format(stackNavigation(1125).t.uW1zul, obj10) };
-    const Text2 = tmp(5235).Text;
+    const Text2 = tmp(5270).Text;
     intl2 = tmp(1125).intl;
     obj10 = {
       onClick() {
@@ -229,12 +229,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(6907).Card;
+    Card = tmp(6941).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1199).Icon;
     items2 = [closure_9(Icon, obj7), ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
-    const Text2 = tmp(5235).Text;
+    const Text2 = tmp(5270).Text;
     intl2 = tmp(1125).intl;
     obj9 = {
       onClick() {
@@ -267,7 +267,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsChat
   }
   if (first !== initialSetting) {
     const obj2 = { sections: getChatSettings(), scrollTarget: initialSetting1 };
-    const createList = tmp(11212).createList;
+    const createList = tmp(11248).createList;
     SettingBuilders;
     initialSetting1 = undefined;
     if (route != null) {

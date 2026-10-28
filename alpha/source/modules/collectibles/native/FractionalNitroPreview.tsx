@@ -1,22 +1,22 @@
-// Module ID: 14493
-// Function ID: 14494
+// Module ID: 14716
+// Function ID: 14717
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1084, 1391, 21, 4972, 587, 558, 576, 1125, 5033, 2050, 5259, 14494, 5670, 14495, 7232, 5235, 2]
+// Dependencies: [19, 17, 1084, 1391, 21, 5004, 587, 558, 576, 1125, 5065, 2050, 5294, 14717, 5705, 14718, 7266, 5270, 2]
 
-// Module 14493 (FractionalNitroPreview)
+// Module 14716 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7232 */;
-import _modDef14494 from "module_14494" /* 14494 */;
-import NitroIconDefault from "NitroIcon" /* 14495 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7266 */;
+import _modDef14717 from "module_14717" /* 14717 */;
+import NitroIconDefault from "NitroIcon" /* 14718 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { uri: _modDef14494 };
+    const obj6 = { uri: _modDef14717 };
     cResult[4] = obj6;
     tmp13 = obj6;
   } else {
@@ -219,7 +219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef14494 };
+  obj7 = { uri: _modDef14717 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

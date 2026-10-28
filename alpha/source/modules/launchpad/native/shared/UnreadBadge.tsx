@@ -1,19 +1,19 @@
-// Module ID: 18733
-// Function ID: 18734
+// Module ID: 18984
+// Function ID: 18985
 // Name: UnreadBadge
-// Dependencies: [19, 17, 11954, 6706, 21, 4972, 558, 576, 18145, 5254, 9706, 2]
+// Dependencies: [19, 17, 11992, 6740, 21, 5004, 558, 576, 18385, 5289, 9738, 2]
 
-// Module 18733 (UnreadBadge)
+// Module 18984 (UnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFontScale from "useFontScale" /* 5254 */;
-import ReadStateConstants from "ReadStateConstants" /* 6706 */;
-import shared_components_Badge from "shared_components/Badge" /* 9706 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11954 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18145 */;
+import useFontScale from "useFontScale" /* 5289 */;
+import ReadStateConstants from "ReadStateConstants" /* 6740 */;
+import shared_components_Badge from "shared_components/Badge" /* 9738 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11992 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18385 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

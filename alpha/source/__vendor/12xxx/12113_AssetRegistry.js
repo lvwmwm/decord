@@ -1,0 +1,10 @@
+// Module ID: 12113
+// Function ID: 12114
+// Name: AssetRegistry
+// Dependencies: [1131]
+
+// Module 12113 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "5740634dc33de72534d208b361b37df5", name: "ic_file_small_sketch", type: "png" });

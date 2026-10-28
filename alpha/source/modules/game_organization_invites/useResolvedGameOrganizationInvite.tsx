@@ -1,11 +1,11 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12783
+// Function ID: 12784
 // Name: useResolvedGameOrganizationInvite
-// Dependencies: [11032, 11033, 558, 576, 504, 2]
+// Dependencies: [11067, 11068, 558, 576, 504, 2]
 
-// Module 12736 (useResolvedGameOrganizationInvite)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11033 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11032 */;
+// Module 12783 (useResolvedGameOrganizationInvite)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

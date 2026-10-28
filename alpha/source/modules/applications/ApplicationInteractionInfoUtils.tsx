@@ -1,11 +1,11 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10072
+// Function ID: 10073
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [6020, 1997, 2]
+// Dependencies: [6054, 1997, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 10040 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 6020 */;
+// Module 10072 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 6054 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

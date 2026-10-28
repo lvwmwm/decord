@@ -1,24 +1,24 @@
-// Module ID: 7203
-// Function ID: 7204
+// Module ID: 7237
+// Function ID: 7238
 // Name: GuildOnboardingUtils
-// Dependencies: [4824, 6501, 4902, 4846, 4904, 7198, 1084, 4890, 558, 576, 504, 1402, 7204, 7199, 4909, 1385, 568, 2030, 7205, 2]
+// Dependencies: [4856, 6535, 4934, 4878, 4936, 7232, 1084, 4922, 558, 576, 504, 1402, 7238, 7233, 4941, 1385, 568, 2030, 7239, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding
 
-// Module 7203 (GuildOnboardingUtils)
+// Module 7237 (GuildOnboardingUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
 import StringUtils from "StringUtils" /* 2030 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4890 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4902 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4909 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7198 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7199 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7204 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7232 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7233 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7238 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let _require, application_id, authStore, navigation, provider_id, set;
 
 let closure_12;
 let unpackModuleId;
-const f97980 = (isCategory) => {
+const f98596 = (isCategory) => {
   const isCategoryResult = isCategory.isCategory();
   const tmp2 = !isCategoryResult && !isCategory.isThread() && !isRoleRequiredDefault(isCategory);
   return tmp2;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f97980);
+  const found = mapped.filter(f98596);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -278,7 +278,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f97980);
+  const found = mapped.filter(f98596);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -600,7 +600,7 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
     });
   });
   const item1 = defaultChannelIds.forEach((item) => set.add(item));
-  const found = mapped.filter(f97980);
+  const found = mapped.filter(f98596);
   const items = [
     found.filter((id) => {
       let hasItem = set.has(id.id);

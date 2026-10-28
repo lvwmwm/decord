@@ -1,111 +1,147 @@
 // Module ID: 10296
 // Function ID: 10297
-// Dependencies: [10213, 10220, 10222, 10246, 10297, 10299, 10300, 10301, 10302, 10303, 10304, 10253]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 10254]
 
 // Module 10296
-import _mod10246 from "module_10246" /* 10246 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10253 */;
-import _mod10297 from "module_10297" /* 10297 */;
-import _mod10299 from "module_10299" /* 10299 */;
-import _mod10300 from "module_10300" /* 10300 */;
-import _mod10301 from "module_10301" /* 10301 */;
-import _mod10302 from "module_10302" /* 10302 */;
-import _mod10303 from "module_10303" /* 10303 */;
-import _mod10304 from "module_10304" /* 10304 */;
-import { Chrono } from "module_10213" /* 10213 */;
+import Meridiem from "Meridiem" /* 10254 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-const require = globalThis.__r;
-
-function createConfiguration(flag, arg1) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+const regExp = new RegExp("(^|\\s|T)(?:(?:um|von)\\s*)?(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i");
+const regExp1 = new RegExp("^\\s*(\\-|\\\u2013|\\~|\\\u301C|bis(?:\\s+um)?|\\?)\\s*(\\d{1,2})(?:h|:)?(?:(\\d{1,2})(?:m|:)?)?(?:(\\d{1,2})(?:s)?)?(?:\\s*Uhr)?(?:\\s*(morgens|vormittags|nachmittags|abends|nachts|am\\s+(?:Morgen|Vormittag|Nachmittag|Abend)|in\\s+der\\s+Nacht))?(?=\\W|$)", "i");
+class DESpecificTimeExpressionParser {
+  constructor() {
+    _classCallCheck(this, DESpecificTimeExpressionParser);
   }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10246.default(flag2), , , ];
-  new module_10246.default(flag2);
-  items[1] = new module_10297.default();
-  new module_10297.default();
-  items[2] = new module_10299.default();
-  new module_10299.default();
-  items[3] = new module_10302.default();
-  new module_10302.default();
-  items1 = [new module_10300.default(), ];
-  new module_10300.default();
-  items1[1] = new module_10301.default();
-  new module_10301.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+const entry = {
+  key: "pattern",
+  value: function pattern(arg0) {
+    return regExp;
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingResult, index) {
+      const sum = index.index + index[1].length;
+      const str = index[0];
+      const parsingResult = createParsingResult.createParsingResult(sum, str.substring(index[1].length));
+      const str2 = parsingResult.text;
+      if (str2.match(/^\d{4}$/)) {
+        index.index = index.index + index[0].length;
+        return null;
+      } else {
+        const start = parsingResult.start;
+        parsingResult.start = DESpecificTimeExpressionParser.extractTimeComponent(start.clone(), index);
+        const obj = DESpecificTimeExpressionParser;
+        if (parsingResult.start) {
+          const str3 = createParsingResult.text;
+          const match = regExp1.exec(str3.substring(index.index + index[0].length));
+          if (match) {
+            const start2 = parsingResult.start;
+            parsingResult.end = obj.extractTimeComponent(start2.clone(), match);
+            if (parsingResult.end) {
+              parsingResult.text = parsingResult.text + match[0];
+            }
+          }
+          return parsingResult;
+        } else {
+          index.index = index.index + index[0].length;
+          return null;
+        }
+      }
+    }
   }
-  const tmp = createConfiguration(false, flag);
-  const parsers = tmp.parsers;
-  const push = parsers.push;
-  const _default = new module_10303.default();
-  push(_default);
-  const parsers1 = tmp.parsers;
-  const push2 = parsers1.push;
-  const _default1 = new module_10304.default();
-  push2(_default1);
-  return tmp;
-}
-const module_10246 = fn(_mod10246);
-const module_10297 = fn(_mod10297);
-const module_10299 = fn(_mod10299);
-const module_10300 = fn(_mod10300);
-const module_10301 = fn(_mod10301);
-const module_10302 = fn(_mod10302);
-const module_10303 = fn(_mod10303);
-const module_10304 = fn(_mod10304);
-const configuration = createConfiguration(false, true);
-let parsers = configuration.parsers;
-let push = parsers.push;
-let _default = new module_10303.default();
-push(_default);
-let parsers1 = configuration.parsers;
-let push2 = parsers1.push;
-let _default1 = new module_10304.default();
-push2(_default1);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_10213").Chrono(createConfiguration(true));
-const Chrono_export = require("module_10213").Chrono;
+];
+const entry1 = {
+  key: "extractTimeComponent",
+  value: function extractTimeComponent(assign, arg1) {
+    const parsed = parseInt(arg1[2]);
+    let num = 0;
+    if (null != arg1[3]) {
+      const _parseInt = parseInt;
+      num = parseInt(arg1[3]);
+    }
+    if (num < 60) {
+      if (parsed <= 24) {
+        let PM1 = null;
+        if (parsed >= 12) {
+          PM1 = Meridiem.Meridiem.PM;
+        }
+        let tmp5 = PM1;
+        let tmp6 = parsed;
+        if (null != arg1[5]) {
+          if (parsed > 12) {
+            return null;
+          } else {
+            const str7 = arg1[5];
+            const str8 = str7.toLowerCase();
+            let tmp9 = parsed;
+            if (str8.match(/morgen|vormittag/)) {
+              let num2 = parsed;
+              const AM = Meridiem.Meridiem.AM;
+              if (12 == parsed) {
+                num2 = 0;
+              }
+              tmp9 = num2;
+              PM1 = AM;
+            }
+            let tmp10 = tmp9;
+            if (str8.match(/nachmittag|abend/)) {
+              let sum = tmp9;
+              const PM = Meridiem.Meridiem.PM;
+              if (12 != tmp9) {
+                sum = tmp9 + 12;
+              }
+              tmp10 = sum;
+              PM1 = PM;
+            }
+            tmp5 = PM1;
+            tmp6 = tmp10;
+            if (str8.match(/nacht/)) {
+              let PM2;
+              let num4;
+              if (12 == tmp10) {
+                PM2 = Meridiem.Meridiem.AM;
+                num4 = 0;
+              } else if (tmp10 < 6) {
+                PM2 = Meridiem.Meridiem.AM;
+                num4 = tmp10;
+              } else {
+                PM2 = Meridiem.Meridiem.PM;
+                num4 = tmp10 + 12;
+              }
+              tmp5 = PM2;
+              tmp6 = num4;
+            }
+          }
+        }
+        assign.assign("hour", tmp6);
+        assign.assign("minute", num);
+        if (null !== tmp5) {
+          assign.assign("meridiem", tmp5);
+        } else if (tmp6 < 12) {
+          assign.imply("meridiem", Meridiem.Meridiem.AM);
+        } else {
+          assign.imply("meridiem", Meridiem.Meridiem.PM);
+        }
+        if (null != arg1[4]) {
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(arg1[4]);
+          if (parsed1 >= 60) {
+            return null;
+          } else {
+            assign.assign("second", parsed1);
+          }
+        }
+        return assign;
+      }
+    }
+    return null;
+  }
+};
+const items1 = [entry1];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(DESpecificTimeExpressionParser, items, items1);

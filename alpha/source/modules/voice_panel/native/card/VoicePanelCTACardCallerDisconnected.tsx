@@ -1,18 +1,18 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18859
+// Function ID: 18860
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 4824, 1389, 21, 4972, 587, 558, 576, 10903, 5990, 504, 6888, 5670, 1125, 5235, 2]
+// Dependencies: [32, 19, 502, 4856, 1389, 21, 5004, 587, 558, 576, 10938, 6025, 504, 6922, 5705, 1125, 5270, 2]
 
-// Module 18611 (VoicePanelCTACardCallerDisconnected)
+// Module 18859 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 587 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5990 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp6;
   const obj = channelId(576);
   const cResult = obj.c(35);
-  channelId = react.useContext(first(10903)).channelId;
+  channelId = react.useContext(first(10938)).channelId;
   const tmp5 = closure_10();
   if (cResult[0] !== channelId) {
     const channel = ChannelStore.getChannel(channelId);
@@ -129,7 +129,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                   if (cResult[22] !== tmp5.text) {
                     const obj2 = { style: text, variant: "heading-sm/semibold", color: "text-overlay-light", children: tmp41 };
-                    const tmp45 = closure_8(channelId(5235).Text, obj2);
+                    const tmp45 = closure_8(channelId(5270).Text, obj2);
                     cResult[22] = tmp5.text;
                     cResult[23] = tmp45;
                     tmp43 = tmp45;
@@ -158,7 +158,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         }
                         let obj3 = { style: tmp23, children: items1 };
                         items1 = [tmp38, tmp50];
-                        const tmp55 = closure_9(first(6888), obj3);
+                        const tmp55 = closure_9(first(6922), obj3);
                         cResult[31] = tmp5.container;
                         cResult[32] = tmp50;
                         cResult[33] = tmp38;
@@ -168,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     }
                     const obj4 = { style: textContainer, children: items2 };
                     items2 = [tmp43, tmp46];
-                    const tmp52 = closure_9(first(6888), obj4);
+                    const tmp52 = closure_9(first(6922), obj4);
                     cResult[27] = tmp5.textContainer;
                     cResult[28] = tmp43;
                     cResult[29] = tmp46;
@@ -178,7 +178,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   let tmp48 = null != tmp22;
                   if (tmp48) {
                     const obj5 = { style: tmp5.text, variant: "text-xs/medium", color: "text-overlay-light", children: intl2.format(channelId(1125).t.kXrAqz, obj6) };
-                    const Text = tmp(5235).Text;
+                    const Text = tmp(5270).Text;
                     intl2 = tmp(1125).intl;
                     obj6 = { username: tmp22 };
                     tmp48 = closure_8(Text, obj5);
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               }
               const obj7 = { style: tmp5.avatarContainer, children: items3 };
               items3 = [tmp24, tmp31];
-              const tmp40 = closure_9(first(6888), obj7);
+              const tmp40 = closure_9(first(6922), obj7);
               cResult[17] = tmp5.avatarContainer;
               cResult[18] = tmp24;
               cResult[19] = tmp31;
@@ -204,8 +204,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (tmp34Result) {
           let tmp37 = tmp21;
           const obj8 = { style: tmp5.avatarWrapper, children: closure_8(tmp4Result4, obj10) };
-          const tmp4Result = first(6888);
-          tmp4Result4 = first(5670);
+          const tmp4Result = first(6922);
+          tmp4Result4 = first(5705);
           if (typeof tmp21 !== "number") {
             tmp37 = { uri: tmp21 };
             const obj9 = { uri: tmp21 };
@@ -227,8 +227,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (tmp27Result) {
       let tmp30 = tmp20;
       const obj11 = { style: tmp5.avatarWrapper, children: closure_8(tmp4Result6, obj13) };
-      const tmp4Result5 = first(6888);
-      tmp4Result6 = first(5670);
+      const tmp4Result5 = first(6922);
+      tmp4Result6 = first(5705);
       if (typeof tmp20 !== "number") {
         tmp30 = { uri: tmp20 };
         const obj12 = { uri: tmp20 };
@@ -288,7 +288,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f137011 = () => {
+  const f137822 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -320,9 +320,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[12]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f137011, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f137822, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f137011, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f137822, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[13]);

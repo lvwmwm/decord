@@ -1,12 +1,13 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7737
+// Function ID: 7738
 // Name: handleExplicitMediaScanTimeoutForMessage
-// Dependencies: [7394, 7401, 2]
+// Dependencies: [7429, 12, 7436, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage
 
-// Module 7703 (handleExplicitMediaScanTimeoutForMessage)
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7394 */;
-import findComponentMediaDefault from "findComponentMedia" /* 7401 */;
+// Module 7737 (handleExplicitMediaScanTimeoutForMessage)
+import _mod12 from "module_12" /* 12 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7429 */;
+import findComponentMediaDefault from "findComponentMedia" /* 7436 */;
 import size from "module_2" /* 2 */;
 
 function failOverComponentMedia(components) {
@@ -32,26 +33,32 @@ const FAILOVER_SCAN_VERSION = ExplicitMediaRedactionConstants.FAILOVER_SCAN_VERS
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/handleExplicitMediaScanTimeoutForMessage.tsx");
 
 export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f99659 = (item) => {
-    item.content_scan_version = -1;
-    return item;
+  const f100274 = (item) => {
+    const obj = { content_scan_version: -1 };
+    const merged = Object.assign(item);
+    return obj;
   };
-  const f99660 = (components) => {
-    components.contentScanVersion = -1;
-    components = components.components;
-    const tmp = closure_1_3;
-    if (components == null) {
-      components = [];
+  const f100275 = (components) => {
+    if (null == components.components) {
+      const obj2 = { contentScanVersion: -1 };
+      const merged = Object.assign(components);
+      return obj2;
+    } else {
+      const obj = closure_1_0(closure_1_2[1]);
+      const cloneDeepResult = obj.cloneDeep(components.components);
+      closure_1_4(cloneDeepResult);
+      const obj3 = { contentScanVersion: -1, components: cloneDeepResult };
+      const merged1 = Object.assign(components);
+      return obj3;
     }
-    tmp(components);
-    return components;
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f99659);
-  let components = message.components;
-  const embeds1 = embeds.map(f99660);
-  failOverComponentMedia(components);
+  const attachments1 = attachments.map(f100274);
+  const embeds1 = embeds.map(f100275);
+  let obj = _mod12;
+  const components = obj.cloneDeep(message.components);
+  const tmp4 = failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
   if (null != messageSnapshots) {
@@ -61,12 +68,13 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f99659);
-        let components = message.components;
-        const mapped1 = embeds.map(f99660);
-        failOverComponentMedia(components);
-        const obj = { message: message.merge({ attachments: mapped, embeds: mapped1, components }) };
-        return message.merge(obj);
+        const mapped = attachments.map(f100274);
+        const mapped1 = embeds.map(f100275);
+        let obj = _mod12;
+        let cloneDeepResult = obj.cloneDeep(message.components);
+        failOverComponentMedia(cloneDeepResult);
+        let obj2 = { message: message.merge({ attachments: mapped, embeds: mapped1, components: cloneDeepResult }) };
+        return message.merge(obj2);
       });
     }
   }

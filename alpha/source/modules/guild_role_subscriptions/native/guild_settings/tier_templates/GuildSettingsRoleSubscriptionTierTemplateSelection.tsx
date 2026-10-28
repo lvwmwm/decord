@@ -1,24 +1,24 @@
-// Module ID: 19373
-// Function ID: 19374
+// Module ID: 19636
+// Function ID: 19637
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 16633, 19326, 1084, 21, 4972, 587, 558, 576, 5235, 19374, 7222, 573, 16611, 16612, 12115, 19380, 1630, 1502, 1264, 5712, 19334, 10122, 1125, 6926, 1272, 9360, 1199, 19322, 2]
+// Dependencies: [32, 19, 17, 16862, 19589, 1084, 21, 5004, 587, 558, 576, 5270, 19637, 7256, 573, 16840, 16841, 12153, 19643, 1630, 1502, 1264, 5747, 19597, 10154, 1125, 6960, 1272, 9392, 1199, 19585, 2]
 
-// Module 19373 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 19636 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5712 */;
-import NavigatorHeader from "NavigatorHeader" /* 6926 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19326 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19334 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19374 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import NavigatorHeader from "NavigatorHeader" /* 6960 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19589 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 19597 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 19637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16633 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16862 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const GroupListingsFetchContext = tmp(16612);
+const GroupListingsFetchContext = tmp(16841);
 ({ ActivityIndicator: metroRequire, TouchableOpacity: metroImportDefault, View: metroImportAll } = react_native);
 const usePriceTiers = RoleTierEditStore.usePriceTiers;
 ({ AnalyticEvents: unpackModuleId, GuildSettingsSections: closure_12 } = Constants);
@@ -81,7 +81,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
     if (cResult[2] !== error.message) {
       const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
       items = ["Error: ", error.message];
-      const tmp18 = closure_14(guildId(5235).Text, obj3);
+      const tmp18 = closure_14(guildId(5270).Text, obj3);
       cResult[2] = error.message;
       cResult[3] = tmp18;
       tmp16 = tmp18;
@@ -135,14 +135,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
               }
               tmp6 = tmp12;
             }
-            const obj5 = { data: templates, horizontal: true, contentContainerStyle: tmp7, keyExtractor: null, ItemSeparatorComponent: tmp9, decelerationRate: "fast", snapToInterval: guildId(19374).CARD_WIDTH + v16, renderItem: tmp11 };
+            const obj5 = { data: templates, horizontal: true, contentContainerStyle: tmp7, keyExtractor: null, ItemSeparatorComponent: tmp9, decelerationRate: "fast", snapToInterval: guildId(19637).CARD_WIDTH + v16, renderItem: tmp11 };
             class T {
               constructor(template) {
                 const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                 return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
               }
             }
-            const FlashList = tmp(7222).FlashList;
+            const FlashList = tmp(7256).FlashList;
             const tmp15 = closure_13(FlashList, obj5);
             cResult[11] = tmp11;
             cResult[12] = templates;
@@ -184,7 +184,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
   } else if (null != error) {
     let obj = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
     items = ["Error: ", error.message];
-    tmp3 = closure_14(guildId(5235).Text, obj);
+    tmp3 = closure_14(guildId(5270).Text, obj);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -203,14 +203,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTe
                   return closure_1_13(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(19374).CARD_WIDTH + v16,
+          snapToInterval: guildId(19637).CARD_WIDTH + v16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
                 }
         };
         obj4 = { paddingLeft: v16, paddingRight: v16 };
-        const FlashList = guildId(7222).FlashList;
+        const FlashList = guildId(7256).FlashList;
         tmp3 = closure_13(FlashList, obj3);
       }
     }

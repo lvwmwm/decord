@@ -1,12 +1,12 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 12019
+// Function ID: 12020
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1496, 11172, 10923, 12, 5053, 2]
+// Dependencies: [19, 1496, 11207, 10958, 12, 5085, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11981 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 12019 (useBottomSheetFlashListBottomViewabilityInset)
 import _modDef12 from "module_12" /* 12 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,13 +22,13 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
   let flashListRef;
   let obj = bottomVisibilityInsetRef;
   const tmp3 = flashListRef(1496)();
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(11172).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(11207).AppLauncherContext);
   bottomSheetPosition = undefined;
   const tmp = flashListRef;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
-  const maximum = tmp(10923)().maximum;
+  const maximum = tmp(10958)().maximum;
   flashListRef = obj.useRef(null);
   const diff = tmp3.height - maximum;
   dependencyMap = diff;
@@ -62,11 +62,11 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
     const obj = ReanimatedRexport;
     obj.runOnJS(memo)(arg0 - dependencyMap);
   };
-  const tmp4Result = bottomSheetPosition(5053);
-  fn2.__closure = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(5053).runOnJS, handleBottomViewabilityInsetDebounced: memo };
+  const tmp4Result = bottomSheetPosition(5085);
+  fn2.__closure = { distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(5085).runOnJS, handleBottomViewabilityInsetDebounced: memo };
   fn2.__workletHash = 6025307858098;
   fn2.__initData = __initData;
-  ({ distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(5053).runOnJS, handleBottomViewabilityInsetDebounced: memo });
+  ({ distanceBetweenExpandedScreenTopAndSheetTop: diff, runOnJS: bottomSheetPosition(5085).runOnJS, handleBottomViewabilityInsetDebounced: memo });
   const animatedReaction = tmp4Result.useAnimatedReaction(fn, fn2);
   return { flashListRef, bottomVisibilityInsetRef };
 };

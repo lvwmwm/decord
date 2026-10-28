@@ -1,36 +1,36 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12478
+// Function ID: 12479
 // Name: ConjurePlanProposalCard
-// Dependencies: [32, 19, 17, 6774, 21, 4972, 587, 12433, 558, 576, 12438, 12439, 5670, 12200, 12428, 1125, 3831, 12440, 5235, 12435, 12236, 5706, 12248, 12441, 12443, 12446, 504, 12447, 12448, 12449, 12451, 12431, 12455, 12456, 5245, 12188, 2]
+// Dependencies: [32, 19, 17, 6808, 21, 5004, 587, 12479, 558, 576, 12484, 12485, 5705, 12238, 12239, 1125, 3863, 12486, 5270, 12481, 5741, 12287, 12487, 12489, 12492, 504, 12493, 12494, 12495, 12497, 12477, 12501, 12502, 5280, 12226, 2]
 
-// Module 12432 (ConjurePlanProposalCard)
+// Module 12478 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1125 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5706 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12200 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12248 */;
-import openConjureNativeImages from "openConjureNativeImages" /* 12428 */;
-import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12433 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12435 */;
-import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12438 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12439 */;
-import conjurePlanBot from "conjurePlanBot" /* 12447 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12448 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12449 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12451 */;
+import _modDef3863 from "module_3863" /* 3863 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5741 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12238 */;
+import openConjureNativeImages from "openConjureNativeImages" /* 12239 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12287 */;
+import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12479 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12481 */;
+import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12484 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12485 */;
+import conjurePlanBot from "conjurePlanBot" /* 12493 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12494 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12495 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, obj1;
+let alt, dependencyMap, importDefault, obj1;
 
 let c10;
 let closure_12;
@@ -45,7 +45,6 @@ let obj12;
 let obj13;
 let obj14;
 let obj15;
-let obj16;
 let obj2;
 let obj3;
 let obj4;
@@ -59,7 +58,7 @@ let react = react_mod;
 ({ ActivityIndicator: hasOwnProperty, Pressable: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll } = react_native);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { surface: { padding: 0, overflow: "hidden" }, content: obj2, whatChanged: obj3, footer: obj4, replyHint: { flexShrink: 1 }, design: obj5, overlayDesign: obj6, blurredBackground: obj7, overlayWidget: obj8, stack: obj9, overlayWidgetSlide: obj10, overlayFullWidget: { width: "100%", height: "100%" }, slidePicker: obj11, slideButton: obj12, slideButtonActive: obj13, look: obj14, referenceList: obj15, reference: obj16, referenceImage: { width: "100%", height: "100%" } };
+let obj = { surface: { padding: 0, overflow: "hidden" }, content: obj2, whatChanged: obj3, footer: obj4, replyHint: { flexShrink: 1 }, design: obj5, overlayDesign: obj6, blurredBackground: obj7, overlayWidget: obj8, stack: obj9, overlayWidgetSlide: obj10, overlayFullWidget: { width: "100%", height: "100%" }, slidePicker: obj11, slideButton: obj12, slideButtonActive: obj13, referenceList: obj14, reference: obj15, referenceImage: { width: "100%", height: "100%" } };
 obj2 = { padding: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_8 };
@@ -74,13 +73,11 @@ obj10 = { padding: nativeDefault.space.PX_16, alignItems: "center", justifyConte
 obj11 = { flexDirection: "row", gap: nativeDefault.space.PX_4 };
 obj12 = { paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
 obj13 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-obj14 = { alignItems: "flex-start", gap: nativeDefault.space.PX_12 };
-obj15 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
-obj16 = { height: 64, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj14 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
+obj15 = { height: 64, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOverlayWidget(projectId) {
-  let alt;
   let items;
   let items2;
   let num3;
@@ -206,7 +203,6 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   cResult[6] = tmp11Result;
   tmp9 = tmp11Result;
 }) : (function PlanOverlayWidget(arg0) {
-  let alt;
   let items;
   let items1;
   let items2;
@@ -250,7 +246,6 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanDesign(projectId) {
-  let alt;
   let handleError;
   let obj6;
   let src;
@@ -342,7 +337,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanDe
   let tmp7Result;
   projectId = projectId.projectId;
   const design = projectId.design;
-  const alt = projectId.alt;
+  alt = projectId.alt;
   const tmp = closure_13();
   let obj = projectId(alt[13]);
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
@@ -382,7 +377,6 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOverlayDesign(projectId) {
   let closure_2;
   let handleError;
-  let items;
   let items1;
   let items2;
   let labels;
@@ -397,7 +391,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   size = projectId.size;
   const tmp4 = closure_13();
   dependencyMap = tmp4;
-  let obj2 = projectId(12200);
+  let obj2 = projectId(12238);
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, design.id);
   ({ src, handleError } = conjureAttachmentImage);
   const gone = conjureAttachmentImage.gone;
@@ -409,7 +403,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = projectId(12440);
+  const tmpResult = projectId(12486);
   const conjurePlanOverlaySlides = tmpResult.useConjurePlanOverlaySlides(tmp7);
   const slide = conjurePlanOverlaySlides.slide;
   ({ labels, pick } = conjurePlanOverlaySlides);
@@ -423,17 +417,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     let str = "react.memo_cache_sentinel";
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1125).intl;
-      const stringResult = intl.string(design(3831).mjryK4);
+      const stringResult = intl.string(design(3863).mjryK4);
       cResult[2] = stringResult;
       tmp10 = stringResult;
     } else {
       tmp10 = cResult[2];
     }
-    const alt = tmp10;
+    alt = tmp10;
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(design(3831)["rPpf5/"]);
+      const stringResult1 = intl2.string(design(3863)["rPpf5/"]);
       cResult[3] = stringResult1;
       tmp13 = stringResult1;
     } else {
@@ -441,7 +435,6 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     }
     if (cResult[4] === design.id) {
       let tmp17;
-      let tmp20;
       let tmp49Result;
       if (cResult[5] === projectId) {
         tmp17 = cResult[6];
@@ -453,11 +446,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
       const _Symbol3 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1125).intl;
-        const stringResult2 = intl3.string(design(3831).TvAPIm);
+        const stringResult2 = intl3.string(design(3863).TvAPIm);
         cResult[7] = stringResult2;
-        tmp20 = stringResult2;
-      } else {
-        tmp20 = cResult[7];
       }
       if (cResult[8] === handleError) {
         if (cResult[9] === projectId) {
@@ -483,7 +473,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                           const slidePicker = tmp4.slidePicker;
                           if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
                             const intl4 = tmp(1125).intl;
-                            const stringResult3 = intl4.string(design(3831).EH36X6);
+                            const stringResult3 = intl4.string(design(3863).EH36X6);
                             cResult[22] = stringResult3;
                             tmp35 = stringResult3;
                           } else {
@@ -510,9 +500,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                         return tmp45;
                                       }
                                     }
-                                    const obj4 = { style: tmp16, children: items };
-                                    items = [, ];
-                                    class F {
+                                    let items = [, ];
+                                    class H {
                                       constructor(arg0, arg1) {
                                         closure_0 = arg1;
                                         tmp = closure_1_10;
@@ -524,15 +513,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                         if (tmp3) {
                                           slideButtonActive = closure_2.slideButtonActive;
                                         }
-                                        obj = {
-                                          style: items,
-                                          onPress() {
-                                                                                  return pick(closure_0);
-                                                                                },
-                                          accessibilityRole: "tab",
-                                          accessibilityState: { selected: tmp3 },
-                                          children: null
-                                        };
+                                        obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
                                         items[1] = slideButtonActive;
                                         str = "text-muted";
                                         Text = projectId(closure_2[18]).Text;
@@ -545,7 +526,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                       }
                                     }
                                     items[1] = tmp41;
-                                    const tmp48 = closure_11(closure_8, obj4);
+                                    class B {
+                                      constructor() {
+                                        obj = closure_0(closure_2[14]);
+                                        obj1 = { id: design.id, alt: closure_5 };
+                                        items = [];
+                                        items[0] = obj1;
+                                        return obj.openConjureNativeImages(projectId, items, 0);
+                                      }
+                                    }
                                     cResult[37] = tmp4.stack;
                                     cResult[38] = tmp31;
                                     cResult[39] = tmp41;
@@ -553,7 +542,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                     tmp45 = tmp48;
                                   }
                                   const obj5 = { style: slidePicker, accessibilityRole: "tablist", accessibilityLabel: tmp35, children: null };
-                                  class F {
+                                  class H {
                                     constructor(arg0, arg1) {
                                       closure_0 = arg1;
                                       tmp = closure_1_10;
@@ -565,15 +554,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                       if (tmp3) {
                                         slideButtonActive = closure_2.slideButtonActive;
                                       }
-                                      obj = {
-                                        style: items,
-                                        onPress() {
-                                                                              return pick(closure_0);
-                                                                            },
-                                        accessibilityRole: "tab",
-                                        accessibilityState: { selected: tmp3 },
-                                        children: null
-                                      };
+                                      obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
                                       items[1] = slideButtonActive;
                                       str = "text-muted";
                                       Text = projectId(closure_2[18]).Text;
@@ -586,7 +567,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                     }
                                   }
                                   const tmp44 = closure_10(closure_8, obj5);
-                                  cResult[34] = tmp4.slidePicker;
+                                  class B {
+                                    constructor() {
+                                      obj = closure_0(closure_2[14]);
+                                      obj1 = { id: design.id, alt: closure_5 };
+                                      items = [];
+                                      items[0] = obj1;
+                                      return obj.openConjureNativeImages(projectId, items, 0);
+                                    }
+                                  }
                                   cResult[35] = tmp38;
                                   cResult[36] = tmp44;
                                   tmp41 = tmp44;
@@ -604,7 +593,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                 const mapped = labels.map(tmp39);
                                 cResult[23] = labels;
                                 cResult[24] = pick;
-                                class F {
+                                class H {
                                   constructor(arg0, arg1) {
                                     closure_0 = arg1;
                                     tmp = closure_1_10;
@@ -616,15 +605,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                     if (tmp3) {
                                       slideButtonActive = closure_2.slideButtonActive;
                                     }
-                                    obj = {
-                                      style: items,
-                                      onPress() {
-                                                                          return pick(closure_0);
-                                                                        },
-                                      accessibilityRole: "tab",
-                                      accessibilityState: { selected: tmp3 },
-                                      children: null
-                                    };
+                                    obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
                                     items[1] = slideButtonActive;
                                     str = "text-muted";
                                     Text = projectId(closure_2[18]).Text;
@@ -637,13 +618,22 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                                   }
                                 }
                                 cResult[26] = tmp4.slideButton;
+                                class B {
+                                  constructor() {
+                                    obj = closure_0(closure_2[14]);
+                                    obj1 = { id: design.id, alt: closure_5 };
+                                    items = [];
+                                    items[0] = obj1;
+                                    return obj.openConjureNativeImages(projectId, items, 0);
+                                  }
+                                }
                                 cResult[27] = tmp4.slideButtonActive;
                                 cResult[28] = mapped;
                                 tmp38 = mapped;
                               }
                             }
                           }
-                          class F {
+                          class H {
                             constructor(arg0, arg1) {
                               closure_0 = arg1;
                               tmp = closure_1_10;
@@ -655,15 +645,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                               if (tmp3) {
                                 slideButtonActive = closure_2.slideButtonActive;
                               }
-                              obj = {
-                                style: items,
-                                onPress() {
-                                                              return pick(closure_0);
-                                                            },
-                                accessibilityRole: "tab",
-                                accessibilityState: { selected: tmp3 },
-                                children: null
-                              };
+                              obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
                               items[1] = slideButtonActive;
                               str = "text-muted";
                               Text = projectId(closure_2[18]).Text;
@@ -676,16 +658,32 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
                             }
                           }
                           cResult[29] = pick;
+                          class B {
+                            constructor() {
+                              obj = closure_0(closure_2[14]);
+                              obj1 = { id: design.id, alt: closure_5 };
+                              items = [];
+                              items[0] = obj1;
+                              return obj.openConjureNativeImages(projectId, items, 0);
+                            }
+                          }
                           cResult[30] = slide;
                           cResult[31] = tmp4.slideButton;
                           cResult[32] = tmp4.slideButtonActive;
-                          cResult[33] = F;
-                          tmp39 = F;
+                          cResult[33] = H;
+                          tmp39 = H;
                         }
                       }
                     }
-                    const obj6 = { onPressIn: hold, onPress: tmp17, accessibilityRole: "imagebutton", accessibilityLabel: null, accessibilityHint: tmp20, children: tmp23 };
-                    const tmp34 = closure_10(closure_6, obj6);
+                    class B {
+                      constructor() {
+                        obj = closure_0(closure_2[14]);
+                        obj1 = { id: design.id, alt: closure_5 };
+                        items = [];
+                        items[0] = obj1;
+                        return obj.openConjureNativeImages(projectId, items, 0);
+                      }
+                    }
                     cResult[17] = hold;
                     cResult[18] = tmp17;
                     cResult[19] = tmp19;
@@ -703,7 +701,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
         const obj7 = { style: items1, children: closure_10(alt, { size: "small" }) };
         items1 = [, ];
         ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp4);
-        class F {
+        class H {
           constructor(arg0, arg1) {
             closure_0 = arg1;
             tmp = closure_1_10;
@@ -715,15 +713,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
             if (tmp3) {
               slideButtonActive = closure_2.slideButtonActive;
             }
-            obj = {
-              style: items,
-              onPress() {
-                          return pick(closure_0);
-                        },
-              accessibilityRole: "tab",
-              accessibilityState: { selected: tmp3 },
-              children: null
-            };
+            obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
             items[1] = slideButtonActive;
             str = "text-muted";
             Text = projectId(closure_2[18]).Text;
@@ -737,10 +727,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
         }
         tmp49Result = closure_10(closure_8, obj7);
       } else if (0 === slide) {
-        const obj8 = { style: items2, children: closure_10(design(5670), tmp28) };
+        const obj8 = { style: items2, children: closure_10(design(5705), tmp28) };
         items2 = [, ];
         ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp4);
-        class F {
+        class H {
           constructor(arg0, arg1) {
             closure_0 = arg1;
             tmp = closure_1_10;
@@ -752,15 +742,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
             if (tmp3) {
               slideButtonActive = closure_2.slideButtonActive;
             }
-            obj = {
-              style: items,
-              onPress() {
-                          return pick(closure_0);
-                        },
-              accessibilityRole: "tab",
-              accessibilityState: { selected: tmp3 },
-              children: null
-            };
+            obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
             items[1] = slideButtonActive;
             str = "text-muted";
             Text = projectId(closure_2[18]).Text;
@@ -772,13 +754,20 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
             return tmp(tmp2, obj, projectId);
           }
         }
-        const obj9 = { uri: src };
-        tmp28[0] = obj9;
+        class B {
+          constructor() {
+            obj = closure_0(closure_2[14]);
+            obj1 = { id: design.id, alt: closure_5 };
+            items = [];
+            items[0] = obj1;
+            return obj.openConjureNativeImages(projectId, items, 0);
+          }
+        }
         tmp28[1] = tmp4.overlayFullWidget;
         tmp28[3] = handleError;
         tmp49Result = tmp49(closure_8, obj8);
       } else {
-        class F {
+        class H {
           constructor(arg0, arg1) {
             closure_0 = arg1;
             tmp = closure_1_10;
@@ -790,15 +779,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
             if (tmp3) {
               slideButtonActive = closure_2.slideButtonActive;
             }
-            obj = {
-              style: items,
-              onPress() {
-                          return pick(closure_0);
-                        },
-              accessibilityRole: "tab",
-              accessibilityState: { selected: tmp3 },
-              children: null
-            };
+            obj = { style: items, onPress() { /* body not rendered: F150488 */ }, accessibilityRole: "tab", accessibilityState: { selected: tmp3 }, children: null };
             items[1] = slideButtonActive;
             str = "text-muted";
             Text = projectId(closure_2[18]).Text;
@@ -809,6 +790,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
             obj.children = tmp(Text, obj1);
             return tmp(tmp2, obj, projectId);
           }
+        }
+      }
+      class B {
+        constructor() {
+          obj = closure_0(closure_2[14]);
+          obj1 = { id: design.id, alt: closure_5 };
+          items = [];
+          items[0] = obj1;
+          return obj.openConjureNativeImages(projectId, items, 0);
         }
       }
       cResult[8] = handleError;
@@ -822,20 +812,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
       cResult[16] = tmp49Result;
       tmp23 = tmp49Result;
     }
-    const fn = function k() {
-      const items = [];
-      const obj2 = { id: design.id, alt };
-      items[0] = obj2;
-      const obj = openConjureNativeImages;
-      return obj.openConjureNativeImages(projectId, items, 0);
-    };
+    class B {
+      constructor() {
+        obj = closure_0(closure_2[14]);
+        obj1 = { id: design.id, alt: closure_5 };
+        items = [];
+        items[0] = obj1;
+        return obj.openConjureNativeImages(projectId, items, 0);
+      }
+    }
     cResult[4] = design.id;
     cResult[5] = projectId;
-    cResult[6] = fn;
-    tmp17 = fn;
+    cResult[6] = B;
+    tmp17 = B;
   }
 }) : (function PlanOverlayDesign(projectId) {
-  let alt;
   let c4;
   let closure_2;
   let gone;
@@ -860,10 +851,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
   dependencyMap = tmp;
   let tmp2 = projectId;
   const tmp3 = dependencyMap;
-  let obj = projectId(12200);
+  let obj = projectId(12238);
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
   ({ src, handleError, gone } = conjureAttachmentImage);
-  let obj2 = projectId(12440);
+  let obj2 = projectId(12486);
   const obj3 = { ready: null != src };
   const conjurePlanOverlaySlides = obj2.useConjurePlanOverlaySlides(obj3);
   const slide = conjurePlanOverlaySlides.slide;
@@ -872,10 +863,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     return null;
   } else {
     const intl = tmp2(1125).intl;
-    const stringResult = intl.string(design(3831).mjryK4);
+    const stringResult = intl.string(design(3863).mjryK4);
     c5 = stringResult;
     const intl2 = tmp2(1125).intl;
-    const stringResult1 = intl2.string(design(3831)["rPpf5/"]);
+    const stringResult1 = intl2.string(design(3863)["rPpf5/"]);
     const obj4 = { style: tmp.stack, children: items2 };
     const obj5 = {
       onPressIn: tmp6,
@@ -888,7 +879,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
         },
       accessibilityRole: "imagebutton",
       accessibilityLabel: tmp15,
-      accessibilityHint: intl3.string(design(3831).TvAPIm),
+      accessibilityHint: intl3.string(design(3863).TvAPIm),
       children: tmp12Result
     };
     tmp15 = stringResult1;
@@ -904,7 +895,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
       ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp);
       tmp12Result = tmp12(tmp11, obj6);
     } else if (0 === slide) {
-      const obj7 = { style: items1, children: closure_10(design(5670), obj8) };
+      const obj7 = { style: items1, children: closure_10(design(5705), obj8) };
       items1 = [, ];
       ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp);
       obj8 = { source: obj9, style: tmp.overlayFullWidget, resizeMode: "contain", onError: handleError };
@@ -918,7 +909,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
     const obj11 = {
       style: tmp.slidePicker,
       accessibilityRole: "tablist",
-      accessibilityLabel: intl4.string(design(3831).EH36X6),
+      accessibilityLabel: intl4.string(design(3863).EH36X6),
       children: labels.map((children, index) => {
           let Text;
           let obj2;
@@ -955,7 +946,6 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOv
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanReference(arg0) {
-  let alt;
   let closure_129_0;
   let handleError;
   let id;
@@ -1061,7 +1051,6 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRe
     tmp9 = items;
   }
 }) : (function PlanReference(arg0) {
-  let alt;
   let c0;
   let gone;
   let handleError;
@@ -1121,14 +1110,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanRe
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanLook(projectId) {
-  let intl2;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanReferences(projectId) {
+  let intl;
   let items;
-  let items1;
-  let items2;
-  let tmp11;
   let obj = projectId(576);
-  const cResult = obj.c(17);
+  const cResult = obj.c(20);
   projectId = projectId.projectId;
   const proposal = projectId.proposal;
   const tmp4 = closure_13();
@@ -1139,152 +1125,139 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanLo
       let tmp7;
       let tmp8;
       let tmp9;
+      let tmp10;
+      let tmp11;
       if (cResult[2] === tmp4) {
         tmp5 = cResult[3];
         tmp6 = cResult[4];
         tmp7 = cResult[5];
         tmp8 = cResult[6];
         tmp9 = cResult[7];
+        tmp10 = cResult[8];
+        tmp11 = cResult[9];
       }
       const _Symbol = Symbol;
-      if (tmp9 === Symbol.for("react.early_return_sentinel")) {
-        if (cResult[12] === tmp5) {
-          if (cResult[13] === tmp6) {
-            if (cResult[14] === tmp7) {
-              let tmp27;
-              if (cResult[15] === tmp8) {
-                tmp27 = cResult[16];
-              }
-              tmp9 = tmp27;
+      if (tmp11 === Symbol.for("react.early_return_sentinel")) {
+        if (cResult[11] === tmp5) {
+          if (cResult[12] === tmp7) {
+            let tmp25;
+            if (cResult[13] === tmp8) {
+              tmp25 = cResult[14];
             }
+            if (cResult[15] === tmp6) {
+              if (cResult[16] === tmp9) {
+                if (cResult[17] === tmp10) {
+                  let tmp28;
+                  if (cResult[18] === tmp25) {
+                    tmp28 = cResult[19];
+                  }
+                  tmp11 = tmp28;
+                }
+              }
+            }
+            const obj2 = { style: tmp9, children: items };
+            items = [tmp10, tmp25];
+            const tmp30 = closure_11(tmp6, obj2);
+            cResult[15] = tmp6;
+            cResult[16] = tmp9;
+            cResult[17] = tmp10;
+            cResult[18] = tmp25;
+            cResult[19] = tmp30;
+            tmp28 = tmp30;
           }
         }
-        const obj2 = { style: tmp6, children: items };
-        items = [tmp7, tmp8];
-        const tmp29 = closure_11(tmp5, obj2);
-        cResult[12] = tmp5;
-        cResult[13] = tmp6;
-        cResult[14] = tmp7;
-        cResult[15] = tmp8;
-        cResult[16] = tmp29;
-        tmp27 = tmp29;
+        const obj3 = { style: tmp7, children: tmp8 };
+        const tmp27 = closure_10(tmp5, obj3);
+        cResult[11] = tmp5;
+        cResult[12] = tmp7;
+        cResult[13] = tmp8;
+        cResult[14] = tmp27;
+        tmp25 = tmp27;
       }
-      return tmp9;
+      return tmp11;
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult = projectId(12435);
+  const tmpResult = projectId(12481);
   const result = tmpResult.conjurePlanReferenceImages(proposal);
   importDefault = result;
-  if (null != proposal.style) {
-    let tmp16;
-    if (cResult[8] !== proposal.style) {
-      let stringResult = null;
-      if (null != proposal.style) {
-        const intl = tmp(1125).intl;
-        stringResult = intl.string(tmp(12435).CONJURE_PLAN_STYLE_LABELS[proposal.style]);
-      }
-      cResult[8] = proposal.style;
-      cResult[9] = stringResult;
-      tmp16 = stringResult;
+  let tmp13 = null;
+  let tmp14;
+  let tmp15;
+  let mapped;
+  let referenceList;
+  let tmp18;
+  let tmp19;
+  if (0 !== result.length) {
+    let tmp20;
+    const _Symbol2 = Symbol;
+    const stack = tmp4.stack;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef3863.ubBJcy) };
+      const Text = tmp(5270).Text;
+      intl = tmp(1125).intl;
+      const tmp23 = closure_10(Text, obj4);
+      cResult[10] = tmp23;
+      tmp20 = tmp23;
     } else {
-      tmp16 = cResult[9];
+      tmp20 = cResult[10];
     }
-    const look = tmp4.look;
-    if (cResult[10] !== tmp16) {
-      let tmp20 = null;
-      if (null != tmp16) {
-        const obj3 = { label: tmp16, items: items1, size: "sm", variant: "filter" };
-        items1 = [{ id: "style", label: tmp16 }];
-        const obj4 = { id: "style", label: tmp16 };
-        tmp20 = closure_10(tmp(12236).TagGroup, obj3);
-      }
-      cResult[10] = tmp16;
-      cResult[11] = tmp20;
-    }
-    if (result.length > 0) {
-      const obj5 = { style: tmp4.stack, children: items2 };
-      const obj6 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(_modDef3831.ubBJcy) };
-      const Text = tmp(5235).Text;
-      intl2 = tmp(1125).intl;
-      items2 = [closure_10(Text, obj6), ];
-      const obj7 = {
-        style: tmp4.referenceList,
-        children: result.map((alt, index) => {
-              projectId = index;
-              const id = alt.id;
-              let obj = {
-                projectId,
-                id,
-                alt: alt.alt,
-                onOpen() {
-                  const obj = openConjureNativeImages;
-                  return obj.openConjureNativeImages(projectId, importDefault, index);
-                }
-              };
-              return closure_1_10(closure_1_17, obj, id);
-            })
+    referenceList = tmp4.referenceList;
+    mapped = result.map((alt, index) => {
+      projectId = index;
+      const id = alt.id;
+      let obj = {
+        projectId,
+        id,
+        alt: alt.alt,
+        onOpen() {
+          const obj = openConjureNativeImages;
+          return obj.openConjureNativeImages(projectId, importDefault, index);
+        }
       };
-      items2[1] = closure_10(closure_8, obj7);
-      closure_11(tmp18, obj5);
-    }
-    tmp11 = forResult;
-  } else {
-    tmp11 = null;
+      return closure_1_10(closure_1_17, obj, id);
+    });
+    tmp14 = tmp20;
+    tmp13 = forResult;
+    tmp15 = stack;
+    tmp18 = tmp31;
+    tmp19 = tmp31;
   }
   cResult[0] = projectId;
   cResult[1] = proposal;
   cResult[2] = tmp4;
-  cResult[3] = tmp15;
-  cResult[4] = tmp14;
-  cResult[5] = tmp13;
-  cResult[6] = tmp12;
-  cResult[7] = tmp11;
-  tmp9 = tmp11;
-  tmp8 = tmp12;
-  tmp7 = tmp13;
-  tmp6 = tmp14;
-  tmp5 = tmp15;
-}) : (function PlanLook(arg0) {
+  cResult[3] = tmp19;
+  cResult[4] = tmp18;
+  cResult[5] = referenceList;
+  cResult[6] = mapped;
+  cResult[7] = tmp15;
+  cResult[8] = tmp14;
+  cResult[9] = tmp13;
+  tmp11 = tmp13;
+  tmp10 = tmp14;
+  tmp9 = tmp15;
+  tmp8 = mapped;
+  tmp7 = referenceList;
+  tmp6 = tmp18;
+  tmp5 = tmp19;
+}) : (function PlanReferences(projectId) {
   let c1;
-  let intl2;
+  let intl;
   let items;
-  let items1;
-  let items2;
-  let proposal;
-  let require;
-  ({ projectId: require, proposal } = arg0);
+  projectId = projectId.projectId;
+  const proposal = projectId.proposal;
   const tmp = closure_13();
-  let obj = conjurePlanDesign;
+  let obj = projectId(12481);
   const result = obj.conjurePlanReferenceImages(proposal);
   importDefault = result;
-  if (null == proposal.style) {
-    if (0 === result.length) {
-      return null;
-    }
-  }
-  let stringResult = null;
-  if (null != proposal.style) {
-    const intl = tmp2(1125).intl;
-    stringResult = intl.string(tmp2(12435).CONJURE_PLAN_STYLE_LABELS[proposal.style]);
-  }
-  let tmp7 = null;
-  const obj2 = { style: tmp.look, children: items1 };
-  if (null != stringResult) {
-    const obj3 = { label: stringResult, items, size: "sm", variant: "filter" };
-    items = [{ id: "style", label: stringResult }];
-    const obj4 = { id: "style", label: stringResult };
-    tmp7 = closure_10(tmp2(12236).TagGroup, obj3);
-  }
-  items1 = [tmp7, ];
-  let tmp5Result = null;
-  if (result.length > 0) {
-    const obj5 = { style: tmp.stack, children: items2 };
-    const obj6 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(_modDef3831.ubBJcy) };
-    const Text = tmp2(5235).Text;
-    intl2 = tmp2(1125).intl;
-    items2 = [closure_10(Text, obj6), ];
-    const obj7 = {
+  let tmp4 = null;
+  if (0 !== result.length) {
+    const obj2 = { style: tmp.stack, children: items };
+    const obj3 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef3863.ubBJcy) };
+    const Text = tmp2(5270).Text;
+    intl = tmp2(1125).intl;
+    items = [closure_10(Text, obj3), ];
+    const obj4 = {
       style: tmp.referenceList,
       children: result.map((alt, index) => {
           const id = alt.id;
@@ -1295,17 +1268,16 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanLo
             alt: alt.alt,
             onOpen() {
               const obj = openConjureNativeImages;
-              return obj.openConjureNativeImages(require, c1, index);
+              return obj.openConjureNativeImages(projectId, c1, index);
             }
           };
           return closure_1_10(closure_1_17, obj, id);
         })
     };
-    items2[1] = closure_10(closure_8, obj7);
-    tmp5Result = tmp5(tmp6, obj5);
+    items[1] = closure_10(closure_8, obj4);
+    tmp4 = closure_11(closure_8, obj2);
   }
-  items1[1] = tmp5Result;
-  return closure_11(closure_8, obj2);
+  return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanProposalCard(projectId) {
@@ -1351,21 +1323,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   }
   if (cResult[4] !== tmp5) {
     let tmp10 = proposal;
-    let obj2 = proposal(5706);
-    const parsed = obj2.parse(tmp5, true, tmp(12248).CONJURE_MARKUP_OPTIONS);
+    let obj2 = proposal(5741);
+    const parsed = obj2.parse(tmp5, true, tmp(12287).CONJURE_MARKUP_OPTIONS);
     cResult[4] = tmp5;
     cResult[5] = parsed;
   }
-  const tmpResult = tmp(12441);
+  const tmpResult = tmp(12487);
   const conjurePlanSlashCommandNames = tmpResult.useConjurePlanSlashCommandNames(proposal.commands);
-  const tmpResult6 = tmp(12443);
+  const tmpResult6 = tmp(12489);
   const conjurePlanWidget = tmpResult6.useConjurePlanWidget(projectId, proposal);
-  const tmpResult7 = tmp(12446);
+  const tmpResult7 = tmp(12492);
   const botExchanges = tmpResult7.useConjurePlanBotExchanges(proposal).botExchanges;
-  const tmpResult8 = tmp(12446);
+  const tmpResult8 = tmp(12492);
   const conjurePlanCommandExchanges = tmpResult8.useConjurePlanCommandExchanges(proposal);
   if (cResult[6] !== proposal) {
-    const tmpResult9 = tmp(12433);
+    const tmpResult9 = tmp(12479);
     const result = tmpResult9.conjurePlanDesignPreviews(proposal);
     cResult[6] = proposal;
     cResult[7] = result;
@@ -1382,7 +1354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     tmp17 = cResult[8];
   }
   if (cResult[9] !== projectId) {
-    class W {
+    class M {
       constructor() {
         project = closure_9.getProject(projectId);
         name = undefined;
@@ -1394,12 +1366,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
     let items1 = [projectId];
     cResult[9] = projectId;
-    cResult[10] = W;
+    cResult[10] = M;
     cResult[11] = items1;
     tmp20 = items1;
-    tmp19 = W;
+    tmp19 = M;
   } else {
-    class W {
+    class M {
       constructor() {
         project = closure_9.getProject(projectId);
         name = undefined;
@@ -1414,7 +1386,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   const tmpResult10 = tmp(504);
   const stateFromStores = tmpResult10.useStateFromStores(tmp17, tmp19, tmp20);
   if (cResult[12] === botExchanges) {
-    class W {
+    class M {
       constructor() {
         project = closure_9.getProject(projectId);
         name = undefined;
@@ -1426,7 +1398,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
   }
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class H {
+    class U {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -1437,10 +1409,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
         return tmp;
       }
     }
-    cResult[16] = H;
-    tmp23 = H;
+    cResult[16] = U;
+    tmp23 = U;
   } else {
-    class H {
+    class U {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -1453,7 +1425,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     }
   }
   if (cResult[17] === botExchanges) {
-    class H {
+    class U {
       constructor(arg0) {
         kind = projectId.kind;
         tmp = "bot" === kind;
@@ -1467,7 +1439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     const experiences = proposal.experiences;
     const _Map = Map;
     if (experiences == null) {
-      class H {
+      class U {
         constructor(arg0) {
           kind = projectId.kind;
           tmp = "bot" === kind;
@@ -1492,7 +1464,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     constructor(arg0) {
       items = [, ];
       items[0] = projectId.id;
-      obj = closure_0(closure_2[27]);
+      obj = closure_0(closure_2[26]);
       items[1] = obj.getConjurePlanSectionBotExchanges(projectId, botExchanges, closure_5);
       return items;
     }
@@ -1553,15 +1525,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     const obj = MarkupUtilsDefault;
     return obj.parse(trimmed, true, ConjureNativeMarkdown.CONJURE_MARKUP_OPTIONS);
   }, items);
-  let obj = projectId(12441);
+  let obj = projectId(12487);
   const conjurePlanSlashCommandNames = obj.useConjurePlanSlashCommandNames(proposal.commands);
-  let obj2 = projectId(12443);
+  let obj2 = projectId(12489);
   react = obj2.useConjurePlanWidget(projectId, proposal);
-  let obj3 = projectId(12446);
+  let obj3 = projectId(12492);
   botExchanges = obj3.useConjurePlanBotExchanges(proposal).botExchanges;
-  let obj4 = projectId(12446);
+  let obj4 = projectId(12492);
   conjurePlanCommandExchanges = obj4.useConjurePlanCommandExchanges(proposal);
-  let obj5 = projectId(12433);
+  let obj5 = projectId(12479);
   ui = obj5.conjurePlanDesignPreviews(proposal);
   let obj6 = projectId(504);
   let items1 = [ConjureProjectStore];
@@ -1587,7 +1559,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     });
     const _Map1 = new _Map(found.map((id) => {
       const items = [id.id, ];
-      const obj = projectId(stack[27]);
+      const obj = projectId(stack[26]);
       items[1] = obj.getConjurePlanSectionBotExchanges(id, botExchanges, conjurePlanCommandExchanges);
       return items;
     }));
@@ -1596,26 +1568,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
   let tmp10 = proposal;
   let obj7 = { style: tmp.surface, children: null };
   const obj8 = { style: tmp.content, children: null };
-  const tmp11 = proposal(12188);
+  const tmp11 = proposal(12226);
   if (superseded) {
     let formatToPlainStringResult;
     if (null != version) {
       const intl2 = tmp4(1125).intl;
       const obj9 = { version };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp10(3831).YZ3qJs, obj9);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp10(3863).YZ3qJs, obj9);
     }
-    const obj10 = { title: formatToPlainStringResult, meta: tmp12Result, superseded, expanded: flag, onToggleExpanded, showLabel: intl4.string(tmp10(3831).yD8EJS), hideLabel: intl5.string(tmp10(3831).nSPGNb), children: closure_10(tmp10Result, obj12) };
+    const obj10 = { title: formatToPlainStringResult, meta: tmp12Result, superseded, expanded: flag, onToggleExpanded, showLabel: intl4.string(tmp10(3863).yD8EJS), hideLabel: intl5.string(tmp10(3863).nSPGNb), children: closure_10(tmp10Result, obj12) };
     tmp12Result = null;
     if (superseded) {
-      const obj11 = { children: intl3.string(tmp10(3831).hF2c41) };
-      const ConjureNativeCollapsibleMeta = tmp4(12431).ConjureNativeCollapsibleMeta;
+      const obj11 = { children: intl3.string(tmp10(3863).hF2c41) };
+      const ConjureNativeCollapsibleMeta = tmp4(12477).ConjureNativeCollapsibleMeta;
       intl3 = tmp4(1125).intl;
       tmp12Result = tmp12(ConjureNativeCollapsibleMeta, obj11);
     }
     intl4 = tmp4(1125).intl;
     intl5 = tmp4(1125).intl;
     let str4 = stateFromStores;
-    tmp10Result = tmp10(12456);
+    tmp10Result = tmp10(12502);
     if (stateFromStores == null) {
       let experiences = proposal.experiences;
       let name;
@@ -1714,8 +1686,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     };
     tmp20 = closure_12;
     if ("" !== trimmed) {
-      const obj13 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12455).ConjurePlanCommandMarkup, obj14) };
-      const Text = tmp4(5235).Text;
+      const obj13 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12501).ConjurePlanCommandMarkup, obj14) };
+      const Text = tmp4(5270).Text;
       obj14 = { markup: memo, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
       tmp12Result2 = tmp12(Text, obj13);
     }
@@ -1725,12 +1697,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     let tmp9Result = null;
     if ("" !== str3) {
       const obj16 = { style: tmp.whatChanged, children: items5 };
-      const obj17 = { variant: "text-xs/medium", color: "text-muted", children: intl8.string(tmp10(3831).iNS4dl) };
-      const Text3 = tmp4(5235).Text;
+      const obj17 = { variant: "text-xs/medium", color: "text-muted", children: intl8.string(tmp10(3863).iNS4dl) };
+      const Text3 = tmp4(5270).Text;
       intl8 = tmp4(1125).intl;
       items5 = [tmp12(Text3, obj17), ];
-      const obj18 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12455).ConjurePlanCommandText, obj19) };
-      const Text4 = tmp4(5235).Text;
+      const obj18 = { variant: "text-md/normal", color: "text-default", children: closure_10(projectId(12501).ConjurePlanCommandText, obj19) };
+      const Text4 = tmp4(5270).Text;
       obj19 = { text: str3, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
       items5[1] = closure_10(Text4, obj18);
       tmp9Result = tmp9(tmp13, obj16);
@@ -1744,12 +1716,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       tmp9Result2 = null;
       if (!superseded) {
         const obj21 = { style: tmp.footer, children: items7 };
-        const obj22 = { text: intl6.string(tmp10(3831)["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
-        const Button = tmp4(5245).Button;
+        const obj22 = { text: intl6.string(tmp10(3863)["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
+        const Button = tmp4(5280).Button;
         intl6 = tmp4(1125).intl;
         items7 = [tmp12(Button, obj22), ];
-        const obj23 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(3831).IZoqbR) };
-        const Text2 = tmp4(5235).Text;
+        const obj23 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(3863).IZoqbR) };
+        const Text2 = tmp4(5270).Text;
         intl7 = tmp4(1125).intl;
         items7[1] = closure_10(Text2, obj23);
         tmp9Result2 = tmp9(tmp13, obj21);
@@ -1760,7 +1732,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     return closure_11(tmp11, obj7);
   }
   let intl = tmp4(1125).intl;
-  formatToPlainStringResult = intl.string(tmp10(3831)["3b6e7o"]);
+  formatToPlainStringResult = intl.string(tmp10(3863)["3b6e7o"]);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanProposalCard.tsx");

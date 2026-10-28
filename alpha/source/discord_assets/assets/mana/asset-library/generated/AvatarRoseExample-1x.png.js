@@ -1,8 +1,8 @@
-// Module ID: 19279
-// Function ID: 19280
+// Module ID: 19542
+// Function ID: 19543
 // Dependencies: [2]
 
-// Module 19279
+// Module 19542
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarRoseExample-1x.png.js");

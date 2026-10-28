@@ -1,32 +1,32 @@
-// Module ID: 17863
-// Function ID: 17864
+// Module ID: 18100
+// Function ID: 18101
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 5027, 1389, 13330, 13331, 17864, 1084, 21, 9745, 4972, 587, 558, 576, 504, 1199, 5910, 1125, 13334, 16713, 6910, 17408, 5053, 5207, 6661, 1264, 17409, 13340, 17865, 6917, 8951, 11160, 17866, 7223, 7097, 9701, 10033, 17434, 6669, 7036, 17433, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 5059, 1389, 13547, 13548, 18101, 1084, 21, 9777, 5004, 587, 558, 576, 504, 1199, 5945, 1125, 13551, 16942, 6944, 17641, 5085, 5242, 6695, 1264, 17642, 13557, 18102, 6951, 8985, 11195, 18103, 7257, 7131, 9733, 10065, 17667, 6703, 7070, 17666, 2]
 
-// Module 17863 (ManageAccountsModal)
+// Module 18100 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import timing from "timing" /* 5207 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5910 */;
-import HeaderShared from "HeaderShared" /* 9701 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10033 */;
-import MultiAccountStore from "MultiAccountStore" /* 13330 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13334 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 17864 */;
+import timing from "timing" /* 5242 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
+import HeaderShared from "HeaderShared" /* 9733 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10065 */;
+import MultiAccountStore from "MultiAccountStore" /* 13547 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13551 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18101 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 5027 */;
+import StreamerModeStore from "StreamerModeStore" /* 5059 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants_mod from "Constants" /* 13331 */;
+import Constants_mod from "Constants" /* 13548 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9745 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import NativeStackView from "NativeStackView" /* 9777 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(16713).CircleMinusIcon;
+            const CircleMinusIcon = tmp(16942).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -153,7 +153,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           }
           if (cResult[14] !== tmp17) {
             let obj3 = { accessibilityRole: "button", accessibilityLabel: tmp19, onPress: tmp17, children: tmp21 };
-            const tmp27 = closure_20(tmp(6910).PressableOpacity, obj3);
+            const tmp27 = closure_20(tmp(6944).PressableOpacity, obj3);
             cResult[14] = tmp17;
             cResult[15] = tmp27;
             tmp25 = tmp27;
@@ -361,10 +361,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         },
       children: closure_20(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(6910).PressableOpacity;
+    const PressableOpacity = tmp(6944).PressableOpacity;
     intl = tmp(1125).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(16713).CircleMinusIcon;
+    CircleMinusIcon = tmp(16942).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });
@@ -786,7 +786,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined === MANAGE_ACCOUNTS) {
     MANAGE_ACCOUNTS = ManageAccountsScreens.MANAGE_ACCOUNTS;
   }
-  const tmpResult = tmp(7097);
+  const tmpResult = tmp(7131);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   [isEditing, closure_2] = react.useState(false);
   if (cResult[0] === accessibilityNativeStackOptions) {

@@ -1,33 +1,30 @@
-// Module ID: 12195
-// Function ID: 12196
+// Module ID: 12233
+// Function ID: 12234
 // Name: ConjureFileMention
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 12194, 12196, 12199, 1125, 3831, 5235, 2]
+// Dependencies: [5, 19, 17, 21, 5004, 587, 12232, 12234, 12237, 5270, 1125, 3863, 12206, 12239, 1999, 2]
+// Exports: default
 
-// Module 12195 (ConjureFileMention)
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
+// Module 12233 (ConjureFileMention)
 import nativeDefault from "native" /* 587 */;
-import _modDef3831 from "module_3831" /* 3831 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import conjureFileMentions from "conjureFileMentions" /* 12194 */;
-import conjureStoredAttachments from "conjureStoredAttachments" /* 12196 */;
-import ConjureFileThumbnailDefault from "ConjureFileThumbnail" /* 12199 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import size_mod from "module_2" /* 2 */;
+
+let c3, paths;
 
 let hasOwnProperty;
 let items;
+let metroImportAll;
+let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj4;
 let size;
-let tmp2;
-const intl2 = tmp2(1125);
-const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { chip: obj2, thumbnail: size, name: obj4 };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: 2, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, transform: items };
@@ -36,127 +33,130 @@ let obj3 = { translateY: nativeDefault.space.PX_4 };
 items = [obj3];
 size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.xs };
 obj4 = { color: nativeDefault.colors.MENTION_FOREGROUND };
-let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFileMention(variant) {
-  let items;
-  const obj = react2;
-  const cResult = obj.c(14);
-  variant = variant.variant;
-  let str = "text-md/normal";
-  const attachmentId = variant.attachmentId;
-  if (undefined !== variant) {
-    str = variant;
-  }
-  const tmp4 = closure_7();
-  const context = react.useContext(tmp(12194).ConjureFileMentionProjectContext);
-  const tmpResult = conjureStoredAttachments;
-  const conjureStoredAttachment = tmpResult.useConjureStoredAttachment(context, attachmentId);
-  if (cResult[0] === conjureStoredAttachment) {
-    if (cResult[1] === context) {
-      let tmp7;
-      let tmp13;
-      if (cResult[2] === tmp4.thumbnail) {
-        tmp7 = cResult[3];
-      }
-      let name;
-      const tmp10 = cResult[4];
-      if (conjureStoredAttachment != null) {
-        name = conjureStoredAttachment.name;
-      }
-      if (tmp10 !== name) {
-        let name1;
-        if (conjureStoredAttachment != null) {
-          name1 = conjureStoredAttachment.name;
-        }
-        if (name1 == null) {
-          const intl = tmp(1125).intl;
-          name1 = intl.string(_modDef3831.ff9Q4C);
-        }
-        let name2;
-        if (conjureStoredAttachment != null) {
-          name2 = conjureStoredAttachment.name;
-        }
-        cResult[4] = name2;
-        cResult[5] = name1;
-        tmp13 = name1;
-      } else {
-        tmp13 = cResult[5];
-      }
-      if (cResult[6] === tmp4.name) {
-        if (cResult[7] === tmp13) {
-          let tmp17;
-          if (cResult[8] === str) {
-            tmp17 = cResult[9];
-          }
-          if (cResult[10] === tmp4.chip) {
-            if (cResult[11] === tmp7) {
-              let tmp20;
-              if (cResult[12] === tmp17) {
-                tmp20 = cResult[13];
-              }
-              return tmp20;
-            }
-          }
-          const obj2 = { style: tmp4.chip, children: items };
-          items = [tmp7, tmp17];
-          const tmp23 = metroRequire(View, obj2);
-          cResult[10] = tmp4.chip;
-          cResult[11] = tmp7;
-          cResult[12] = tmp17;
-          cResult[13] = tmp23;
-          tmp20 = tmp23;
-        }
-      }
-      const obj3 = { variant: str, style: tmp4.name, children: tmp13 };
-      const tmp19 = hasOwnProperty(Text_Text.Text, obj3);
-      cResult[6] = tmp4.name;
-      cResult[7] = tmp13;
-      cResult[8] = str;
-      cResult[9] = tmp19;
-      tmp17 = tmp19;
-    }
-  }
-  const obj4 = { projectId: context, file: conjureStoredAttachment, style: tmp4.thumbnail, iconColor: nativeDefault.colors.MENTION_FOREGROUND };
-  const tmp8 = ConjureFileThumbnailDefault;
-  const tmp9 = hasOwnProperty(tmp8, obj4);
-  cResult[0] = conjureStoredAttachment;
-  cResult[1] = context;
-  cResult[2] = tmp4.thumbnail;
-  cResult[3] = tmp9;
-  tmp7 = tmp9;
-}) : (function ConjureFileMention(variant) {
+let closure_9 = createStyles(obj);
+size = size_mod;
+const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureFileMention.tsx");
+
+export default function ConjureFileMention(variant) {
+  let intl2;
   let items;
   let name;
+  let obj6;
   let str = variant.variant;
   const attachmentId = variant.attachmentId;
   if (str === undefined) {
     str = "text-md/normal";
   }
-  const tmp = closure_7();
-  const context = react.useContext(conjureFileMentions.ConjureFileMentionProjectContext);
-  const obj = conjureStoredAttachments;
+  let context;
+  const tmp = closure_9();
+  const tmp3 = dependencyMap;
+  context = react.useContext(context(12232).ConjureFileMentionProjectContext);
+  let obj = context(12234);
   const conjureStoredAttachment = obj.useConjureStoredAttachment(context, attachmentId);
   const obj2 = { style: tmp.chip, children: items };
-  const obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: nativeDefault.colors.MENTION_FOREGROUND };
-  const tmp10 = ConjureFileThumbnailDefault;
-  items = [hasOwnProperty(tmp10, obj3), ];
-  const obj4 = { variant: str, style: tmp.name, children: name };
+  let obj3 = { projectId: context, file: conjureStoredAttachment, style: tmp.thumbnail, iconColor: conjureStoredAttachment(587).colors.MENTION_FOREGROUND };
+  const tmp10 = conjureStoredAttachment(12237);
+  items = [closure_7(tmp10, obj3), ];
+  let obj4 = { variant: str, style: tmp.name, children: name };
   name = undefined;
-  const Text = Text_Text.Text;
-  const tmp6 = metroRequire;
-  const tmp7 = View;
-  const tmp8 = hasOwnProperty;
+  const Text = context(5270).Text;
+  const tmp6 = closure_8;
+  const tmp7 = closure_6;
   if (conjureStoredAttachment != null) {
     name = conjureStoredAttachment.name;
   }
   if (name == null) {
-    const intl = intl2.intl;
-    name = intl.string(_modDef3831.ff9Q4C);
+    const intl = tmp2(1125).intl;
+    name = intl.string(tmp9(3863).ff9Q4C);
   }
-  items[1] = tmp8(Text, obj4);
-  return tmp6(tmp7, obj2);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureFileMention.tsx");
-
-export default tmp4;
+  items[1] = closure_7(Text, obj4);
+  const tmp6Result = tmp6(tmp7, obj2);
+  let tmp8Result = tmp6Result;
+  if (null != context) {
+    tmp8Result = tmp6Result;
+    if (null != conjureStoredAttachment) {
+      const CONJURE_VIEWABLE_IMAGE_TYPES = tmp2(12206).CONJURE_VIEWABLE_IMAGE_TYPES;
+      tmp8Result = tmp6Result;
+      if (CONJURE_VIEWABLE_IMAGE_TYPES.has(conjureStoredAttachment.content_type)) {
+        let obj5 = {
+          onPress: _asyncToGenerator(async (arg0, value) => {
+                  let closure_0;
+                  if (c3 === 2) {
+                    c3 = 3;
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp3 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      const obj3 = { value, done: true };
+                      return obj3;
+                    } else {
+                      return { value: "IconComponent", done: null };
+                    }
+                  } else {
+                    try {
+                      let openConjureNativeImages;
+                      c3 = 2;
+                      if (0 === paths) {
+                        if (arg0 === 1) {
+                          c3 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c3 = 3;
+                          const obj4 = { value, done: true };
+                          return obj4;
+                        } else {
+                          let closure_1 = tmp4;
+                          openConjureNativeImages = undefined;
+                          paths = 1;
+                          c3 = 1;
+                          const obj5 = { value: tmp(paths[14])(paths[13], paths.paths), done: false };
+                          return obj5;
+                        }
+                      } else if (1 === paths) {
+                        if (arg0 === 1) {
+                          c3 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c3 = 3;
+                          const obj6 = { value, done: true };
+                          return obj6;
+                        } else {
+                          openConjureNativeImages = value.openConjureNativeImages;
+                          const obj7 = { id: null, alt: null };
+                          ({ id: obj2.id, name: obj2.alt } = closure_129_1);
+                          const items = [obj7];
+                          paths = 2;
+                          c3 = 1;
+                          const obj13 = { value: openConjureNativeImages(closure_129_0, items, 0), done: false };
+                          return obj13;
+                        }
+                      } else if (arg0 === 1) {
+                        c3 = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        c3 = 3;
+                        const obj = { value, done: true };
+                        return obj;
+                      } else {
+                        c3 = 3;
+                        return { value: "IconComponent", done: null };
+                      }
+                    } catch (tmp12) {
+                      c3 = 3;
+                      throw tmp12;
+                    }
+                  }
+                }),
+          accessibilityRole: "button",
+          accessibilityLabel: intl2.formatToPlainString(tmp9(3863).GtNukg, obj6),
+          children: tmp6Result
+        };
+        intl2 = tmp2(1125).intl;
+        obj6 = { name: conjureStoredAttachment.name };
+        tmp8Result = tmp8(closure_5, obj5);
+      }
+    }
+  }
+  return tmp8Result;
+};

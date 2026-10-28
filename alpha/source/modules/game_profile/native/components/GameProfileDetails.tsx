@@ -1,28 +1,28 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9513
+// Function ID: 9514
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8839, 21, 8830, 9482, 7055, 9292, 9484, 9486, 4972, 587, 558, 576, 5661, 9488, 9489, 9303, 1125, 1997, 4797, 9490, 5235, 2]
+// Dependencies: [19, 17, 8876, 21, 8867, 9514, 7089, 9324, 9516, 9518, 5004, 587, 558, 576, 5696, 9520, 9521, 9335, 1125, 1997, 4829, 9522, 5270, 2]
 
-// Module 9481 (GameProfileDetails)
+// Module 9513 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1125 */;
 import Server from "Server" /* 1997 */;
-import DateUtilsAll from "DateUtils" /* 4797 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import LinkingDefault from "Linking" /* 5661 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7055 */;
-import PlatformType from "PlatformType" /* 8830 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8839 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9292 */;
-import SKUUtils from "SKUUtils" /* 9303 */;
-import ScreenIcon from "ScreenIcon" /* 9482 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9484 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9486 */;
-import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9489 */;
+import DateUtilsAll from "DateUtils" /* 4829 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import LinkingDefault from "Linking" /* 5696 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7089 */;
+import PlatformType from "PlatformType" /* 8867 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8876 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9324 */;
+import SKUUtils from "SKUUtils" /* 9335 */;
+import ScreenIcon from "ScreenIcon" /* 9514 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9516 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9518 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9521 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   ({ game, trackAction } = arg0);
   const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9488);
+  let obj2 = trackAction(9520);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
   const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
@@ -178,7 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9303).getGenreText);
+        const mapped = genres1.map(tmp(9335).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -407,8 +407,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr3(4797).dateFormat;
-          arr3(4797);
+          const dateFormat = arr3(4829).dateFormat;
+          arr3(4829);
           const date = new Date(undefined);
           cResult[34] = undefined;
           cResult[35] = dateFormat(date, "LL");
@@ -727,8 +727,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
       const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
       cResult[61] = tmp4.headerText;
-      cResult[62] = closure_8(tmp(5235).Text, obj11);
-      const tmp81 = closure_8(tmp(5235).Text, obj11);
+      cResult[62] = closure_8(tmp(5270).Text, obj11);
+      const tmp81 = closure_8(tmp(5270).Text, obj11);
     } else {
       class F {
         constructor(arg0) {

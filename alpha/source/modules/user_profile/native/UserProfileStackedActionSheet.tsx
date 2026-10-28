@@ -1,22 +1,22 @@
-// Module ID: 11080
-// Function ID: 11081
+// Module ID: 11115
+// Function ID: 11116
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 4972, 587, 558, 576, 1630, 8951, 1381, 7222, 5270, 6910, 1125, 6930, 5235, 5266, 2]
+// Dependencies: [109, 19, 17, 21, 5004, 587, 558, 576, 1630, 8985, 1381, 7256, 5305, 6944, 1125, 6964, 5270, 5301, 2]
 
-// Module 11080 (UserProfileStackedActionSheet)
+// Module 11115 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5266 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6930 */;
-import Form from "Form" /* 8951 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5301 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6964 */;
+import Form from "Form" /* 8985 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
           }
         }
         const obj3 = { data: arr, style: tmp10.list, ItemSeparatorComponent: tmp12, contentContainerStyle: tmp15, renderItem: tmp16 };
-        const BottomSheetFlashList = tmp(7222).BottomSheetFlashList;
+        const BottomSheetFlashList = tmp(7256).BottomSheetFlashList;
         const merged = Object.assign(tmp5);
         const tmp21 = closure_8(BottomSheetFlashList, obj3);
         cResult[16] = arr;
@@ -189,7 +189,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return renderItem(obj);
     }
   };
-  const BottomSheetFlashList = data(7222).BottomSheetFlashList;
+  const BottomSheetFlashList = data(7256).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
@@ -267,7 +267,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     }
   }
   const obj2 = { contentContainerStyle: tmp4, renderItem: tmp11, ItemSeparatorComponent: tmp12 };
-  const BottomSheetSectionList = tmp(5270).BottomSheetSectionList;
+  const BottomSheetSectionList = tmp(5305).BottomSheetSectionList;
   const merged = Object.assign(tmp5);
   const tmp15 = closure_8(BottomSheetSectionList, obj2);
   cResult[8] = tmp4;
@@ -293,7 +293,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return metroImportAll(Form.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(5270).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(5305).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_8(BottomSheetSectionList, obj);
 });
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
                 }
               }
               const obj4 = { header: tmp25, children: tmp4 };
-              BottomSheet = tmp(5266).BottomSheet;
+              BottomSheet = tmp(5301).BottomSheet;
               const merged = Object.assign(tmp6);
               const tmp34 = metroImportAll(BottomSheet, obj4);
               cResult[23] = tmp4;
@@ -418,7 +418,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
     let tmp16 = tmp12;
     if (tmp16) {
       const obj7 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: tmp5, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp(6910).PressableOpacity;
+      const PressableOpacity = tmp(6944).PressableOpacity;
       intl = tmp(1125).intl;
       tmp16 = metroImportAll(PressableOpacity, obj7);
     }
@@ -458,7 +458,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: metroImportAll(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(6910).PressableOpacity;
+    const PressableOpacity = tmp5(6944).PressableOpacity;
     intl = tmp5(1125).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }

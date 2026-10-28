@@ -1,8 +1,8 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9725
+// Function ID: 9726
 // Dependencies: [2]
 
-// Module 9693
+// Module 9725
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StickersSpotIllustration-3x.png.js");

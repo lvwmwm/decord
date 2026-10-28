@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_player", scales: [1], hash: "81026198b198a840d393b2692f40aeb8", name: "VideoPlayer.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/game_pass_perks", scales: [1], hash: "0ed18d802f39ad8ae58ce024ccbaa690", name: "XboxGamePassPerks.compiled.messages", type: "jsona" });

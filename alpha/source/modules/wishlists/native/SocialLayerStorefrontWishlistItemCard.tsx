@@ -1,18 +1,18 @@
-// Module ID: 13919
-// Function ID: 13920
+// Module ID: 14138
+// Function ID: 14139
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [109, 19, 2042, 13917, 21, 4972, 587, 558, 576, 504, 9417, 5670, 9365, 2]
+// Dependencies: [109, 19, 2042, 14136, 21, 5004, 587, 558, 576, 504, 9449, 5705, 9397, 2]
 
-// Module 13919 (SocialLayerStorefrontWishlistItemCard)
+// Module 14138 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 587 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9365 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9417 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9397 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9449 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2042 */;
-import SentGiftsStore from "SentGiftsStore" /* 13917 */;
+import SentGiftsStore from "SentGiftsStore" /* 14136 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let obj2;
 let size;
 let tmp4;
-const FastImageDefault = tmp4(5670);
+const FastImageDefault = tmp4(5705);
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
@@ -201,7 +201,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStore
               cResult[30] = tmp36;
               tmp29 = tmp36;
             }
-            OWNED = tmp(9365).WishlistItemCardOverlay.OWNED;
+            OWNED = tmp(9397).WishlistItemCardOverlay.OWNED;
           }
         }
       }

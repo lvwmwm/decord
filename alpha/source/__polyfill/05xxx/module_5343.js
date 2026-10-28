@@ -1,53 +1,25 @@
 // Module ID: 5343
 // Function ID: 5344
-// Dependencies: [19, 5322, 5333, 5344, 5345, 5346, 5347]
-// Exports: useDetectorUpdater
+// Dependencies: [5344, 5432, 5433, 5444]
 
 // Module 5343
-import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 5333 */;
-import needsToReattach from "needsToReattach" /* 5344 */;
-import dropHandlers from "dropHandlers" /* 5345 */;
-import attachHandlers from "attachHandlers" /* 5346 */;
+import RawButton from "RawButton" /* 5344 */;
+import RefreshControl from "RefreshControl" /* 5432 */;
+import _modDef5433 from "module_5433" /* 5433 */;
+import _mod5444 from "module_5444" /* 5444 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+const RawButton_export = RawButton.RawButton;
+const RefreshControl_export = RefreshControl.RefreshControl;
 
-react.useCallback;
-
-export const useDetectorUpdater = function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
-  let gestureConfig;
-  _require = current;
-  const preparedGesture = current2;
-  dependencyMap = gesturesToAttach;
-  const webEventHandlersRef = webEventHandlers;
-  let obj = require("ALLOWED_PROPS");
-  const forceRender = obj.useForceRender();
-  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
-  return gesture((arg0) => {
-    const tmp3 = react_nativeDefault(current.viewRef);
-    if (tmp3 === current.previousViewTag) {
-      const obj = needsToReattach;
-      const tmp5 = require;
-      const tmp6 = preparedGesture;
-      const tmp7 = gesturesToAttach;
-      if (!obj.needsToReattach(preparedGesture, gesturesToAttach)) {
-        const tmp8 = arg0;
-        if (!tmp8) {
-          const tmp5Result = tmp5(5347);
-          tmp5Result.updateHandlers(tmp6, gestureConfig, tmp7);
-        }
-      }
-    }
-    const obj3 = dropHandlers;
-    obj3.dropHandlers(preparedGesture);
-    const obj2 = { preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp3 };
-    const obj4 = attachHandlers;
-    obj4.attachHandlers(obj2);
-    if (tmp3 !== current.previousViewTag) {
-      current.previousViewTag = tmp3;
-      current.forceRebuildReanimatedEvent = true;
-      forceRender();
-    }
-  }, items);
-};
+export const BaseButton = RawButton.BaseButton;
+export const BorderlessButton = RawButton.BorderlessButton;
+export const PureNativeButton = RawButton.PureNativeButton;
+export { RawButton_export as RawButton };
+export const RectButton = RawButton.RectButton;
+export const FlatList = RefreshControl.FlatList;
+export { RefreshControl_export as RefreshControl };
+export const ScrollView = RefreshControl.ScrollView;
+export const Switch = RefreshControl.Switch;
+export const TextInput = RefreshControl.TextInput;
+export const Pressable = _modDef5433;
+export const Touchable = _mod5444.Touchable;

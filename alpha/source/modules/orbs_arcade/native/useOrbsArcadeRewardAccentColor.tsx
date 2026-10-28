@@ -1,14 +1,14 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16678
+// Function ID: 16679
 // Name: useOrbsArcadeRewardAccentColor
-// Dependencies: [32, 558, 576, 16435, 11055, 13960, 683, 2]
+// Dependencies: [32, 558, 576, 16663, 11090, 14179, 683, 2]
 
-// Module 16449 (useOrbsArcadeRewardAccentColor)
+// Module 16678 (useOrbsArcadeRewardAccentColor)
 import react from "react" /* 576 */;
 import _modDef683 from "module_683" /* 683 */;
-import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11055 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13960 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16435 */;
+import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11090 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 14179 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsArcad
   if (type != null) {
     type = type.type;
   }
-  const COLLECTIBLE = tmp(16435).OrbsArcadeRewardType.COLLECTIBLE;
+  const COLLECTIBLE = tmp(16663).OrbsArcadeRewardType.COLLECTIBLE;
   let skuId = null;
   const useFetchCollectiblesProduct = useFetchCollectiblesProduct2.useFetchCollectiblesProduct;
   useFetchCollectiblesProduct2;

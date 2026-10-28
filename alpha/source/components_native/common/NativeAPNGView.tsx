@@ -1,11 +1,11 @@
-// Module ID: 10173
-// Function ID: 10174
+// Module ID: 10205
+// Function ID: 10206
 // Name: NativeAPNGView
-// Dependencies: [17, 1381, 10174, 2]
+// Dependencies: [17, 1381, 10206, 2]
 
-// Module 10173 (NativeAPNGView)
+// Module 10205 (NativeAPNGView)
 import react_native from "react-native" /* 17 */;
-import APNGStickerNativeComponent from "APNGStickerNativeComponent" /* 10174 */;
+import APNGStickerNativeComponent from "APNGStickerNativeComponent" /* 10206 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 

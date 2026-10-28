@@ -1,21 +1,21 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15412
+// Function ID: 15413
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 5053, 5259, 1199, 4972, 587, 558, 576, 5207, 4969, 1125, 12065, 8152, 2]
+// Dependencies: [19, 17, 21, 5085, 5294, 1199, 5004, 587, 558, 576, 5242, 5001, 1125, 12103, 8186, 2]
 
-// Module 15187 (ShareAttachments)
+// Module 15412 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import timing from "timing" /* 5207 */;
-import LinearGradientDefault from "LinearGradient" /* 5259 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8152 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12065 */;
+import ColorUtils from "ColorUtils" /* 5001 */;
+import timing from "timing" /* 5242 */;
+import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12103 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5053 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

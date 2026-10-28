@@ -1,15 +1,15 @@
-// Module ID: 17923
-// Function ID: 17924
+// Module ID: 18160
+// Function ID: 18161
 // Name: ForYouHoistedItemsHeader
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 2]
 
-// Module 17923 (ForYouHoistedItemsHeader)
+// Module 18160 (ForYouHoistedItemsHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,31 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17793
+// Function ID: 17794
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4902, 4846, 4875, 16695, 1084, 21, 4972, 587, 1264, 558, 576, 8975, 1125, 17559, 9005, 17560, 9050, 17561, 13209, 13737, 5670, 5235, 16696, 2]
+// Dependencies: [19, 17, 4934, 4878, 4907, 16924, 1084, 21, 5004, 587, 1264, 558, 576, 9009, 1125, 17794, 9039, 17795, 9083, 17796, 13426, 13955, 5705, 5270, 16925, 2]
 
-// Module 17558 (HappeningNowActions)
+// Module 17793 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8975 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13209 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13737 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 16696 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17559 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17560 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17561 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9009 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13426 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13955 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 16925 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17794 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17795 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17796 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4902 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4875 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16695 */;
+import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16924 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj2;
 let size;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5235);
+const Text_Text = tmp(5270);
 const View = react_native.View;
 ({ HappeningNowCardTrackingType: metroImportAll, HAPPENING_NOW_CARD_HEIGHT } = HappeningNowConstants);
 ({ AnalyticEvents: c9, InstantInviteSources: c10 } = Constants);

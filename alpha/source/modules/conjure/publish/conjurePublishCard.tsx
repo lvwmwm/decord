@@ -1,11 +1,11 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12338
+// Function ID: 12339
 // Name: conjurePublishCard
-// Dependencies: [3831, 2]
+// Dependencies: [3863, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 12293 (conjurePublishCard)
-import _modDef3831 from "module_3831" /* 3831 */;
+// Module 12338 (conjurePublishCard)
+import _modDef3863 from "module_3863" /* 3863 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -67,18 +67,23 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
   }
   return null;
 };
-export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
+export const publishNoticeMessage = function publishNoticeMessage(notice, arg1, automod) {
   let prop;
   if (true === notice.commands_failed) {
-    prop = _modDef3831["PrQg+B"];
+    prop = _modDef3863["PrQg+B"];
   } else if (true === notice.channel_skipped) {
-    prop = _modDef3831.ev23Cw;
+    prop = _modDef3863.ev23Cw;
   } else if (notice.update) {
-    prop = _modDef3831.gQzuLC;
-  } else if (null == arg1) {
-    prop = _modDef3831.MOrR29;
+    prop = _modDef3863.gQzuLC;
   } else {
-    prop = _modDef3831["/npn7F"];
+    const tmp = automod;
+    if (tmp) {
+      prop = _modDef3863.KORRGl;
+    } else if (null == arg1) {
+      prop = _modDef3863.MOrR29;
+    } else {
+      prop = _modDef3863["/npn7F"];
+    }
   }
   return prop;
 };

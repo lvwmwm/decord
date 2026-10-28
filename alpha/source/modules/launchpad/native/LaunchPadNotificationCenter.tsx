@@ -1,14 +1,14 @@
-// Module ID: 18746
-// Function ID: 18747
+// Module ID: 18997
+// Function ID: 18998
 // Name: LaunchPadNotificationCenter
-// Dependencies: [19, 21, 4972, 558, 576, 17890, 2]
+// Dependencies: [19, 21, 5004, 558, 576, 18127, 2]
 
-// Module 18746 (LaunchPadNotificationCenter)
+// Module 18997 (LaunchPadNotificationCenter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import notifications_NotificationsDefault from "notifications/Notifications" /* 17890 */;
+import notifications_NotificationsDefault from "notifications/Notifications" /* 18127 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

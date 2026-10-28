@@ -1,10 +1,10 @@
-// Module ID: 19533
-// Function ID: 19534
+// Module ID: 19796
+// Function ID: 19797
 // Name: timerUtils
 // Dependencies: [1084, 3, 1264, 551, 567, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 19533 (timerUtils)
+// Module 19796 (timerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import timersAll from "timers" /* 567 */;

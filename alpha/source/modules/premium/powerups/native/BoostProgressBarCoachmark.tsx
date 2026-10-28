@@ -1,18 +1,18 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17872
+// Function ID: 17873
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 4821, 21, 4972, 558, 576, 9005, 1125, 2567, 5102, 9842, 2]
+// Dependencies: [19, 17, 4853, 21, 5004, 558, 576, 9039, 1125, 2567, 5135, 9874, 2]
 
-// Module 17637 (BoostProgressBarCoachmark)
+// Module 17872 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1125 */;
 import _modDef2567 from "module_2567" /* 2567 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4821 */;
-import BoostThisServerRive from "BoostThisServerRive" /* 5102 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import BoostThisServerRive from "BoostThisServerRive" /* 5135 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
         if (cResult[12] === tmp13) {
           tmp16 = cResult[13];
         }
-        const tmpResult = guild(9842);
+        const tmpResult = guild(9874);
         const coachmark = tmpResult.useCoachmark(targetRef, tmp16);
         return null;
       }
@@ -154,7 +154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9842);
+  let obj = guild(9874);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 });

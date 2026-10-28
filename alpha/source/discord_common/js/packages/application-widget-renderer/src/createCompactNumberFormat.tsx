@@ -1,10 +1,10 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11838
+// Function ID: 11839
 // Name: createCompactNumberFormat
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 11800 (createCompactNumberFormat)
+// Module 11838 (createCompactNumberFormat)
 import size from "module_2" /* 2 */;
 
 let map1, set;

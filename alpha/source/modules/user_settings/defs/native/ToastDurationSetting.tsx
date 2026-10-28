@@ -1,22 +1,22 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 17042
+// Function ID: 17043
 // Name: ToastDurationSetting
-// Dependencies: [19, 4973, 8331, 1084, 21, 1125, 558, 576, 504, 15723, 16713, 11160, 11212, 2]
+// Dependencies: [19, 5005, 8365, 1084, 21, 1125, 558, 576, 504, 15949, 16942, 11195, 11248, 2]
 
-// Module 16813 (ToastDurationSetting)
+// Module 17042 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8331 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11160 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15723 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 16713 */;
+import SettingsConstants from "SettingsConstants" /* 8365 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11195 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15949 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16942 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11212 */;
+import SettingBuilders from "SettingBuilders" /* 11248 */;
 import size from "module_2" /* 2 */;
 
 function formatToastDuration(seconds) {

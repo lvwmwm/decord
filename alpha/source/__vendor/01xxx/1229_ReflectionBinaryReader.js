@@ -23,7 +23,7 @@ class ReflectionBinaryReader {
 const entry = {
   key: "prepare",
   value: function prepare() {
-    const f142387 = (no) => {
+    const f143256 = (no) => {
       const items = [no.no, no];
       return items;
     };
@@ -33,8 +33,8 @@ const entry = {
       const _Map = Map;
       const self2 = this;
       const self3 = this;
-      self.fieldNoToField = new Map(fields.map(f142387));
-      map = new Map(fields.map(f142387));
+      self.fieldNoToField = new Map(fields.map(f143256));
+      map = new Map(fields.map(f143256));
     }
   }
 };

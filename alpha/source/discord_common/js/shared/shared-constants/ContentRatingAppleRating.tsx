@@ -1,9 +1,9 @@
-// Module ID: 5622
-// Function ID: 5623
+// Module ID: 5657
+// Function ID: 5658
 // Name: ContentRatingAppleRating
 // Dependencies: [2]
 
-// Module 5622 (ContentRatingAppleRating)
+// Module 5657 (ContentRatingAppleRating)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5, 6, 7]), IS_ADULT_ONLY: new Set([]) };

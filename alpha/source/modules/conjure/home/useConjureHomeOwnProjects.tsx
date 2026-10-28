@@ -1,11 +1,12 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 14395
+// Function ID: 14396
 // Name: useConjureHomeOwnProjects
-// Dependencies: [10702, 6774, 558, 576, 504, 2]
+// Dependencies: [10734, 6808, 558, 576, 14396, 10735, 12359, 504, 2]
 
-// Module 14172 (useConjureHomeOwnProjects)
-import ConjureChatStore from "ConjureChatStore" /* 10702 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6774 */;
+// Module 14395 (useConjureHomeOwnProjects)
+import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 14396 */;
+import ConjureChatStore from "ConjureChatStore" /* 10734 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,13 +19,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHo
   let tmp7;
   let tmp8;
   _require = arg0;
-  const tmp = _require;
-  const tmp2 = dependencyMap;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
   let obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ConjureProjectStore, ConjureChatStore];
-    let num = 0;
     cResult[0] = items;
     first = items;
   } else {
@@ -33,64 +33,36 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHo
   if (cResult[1] !== arg0) {
     const fn = function s() {
       let found;
-      let projectDeleting;
-      let thinking;
+      let messages;
+      let tmp2;
       if (null != closure_0) {
         const items = [];
-        let num = 0;
         const arraySpreadResult = HermesBuiltin.arraySpread(items, ConjureProjectStore.getOwnedProjects(), 0);
         HermesBuiltin.arraySpread(items, ConjureProjectStore.getSharedProjects(tmp2), arraySpreadResult);
         found = items.filter((guild_id) => guild_id.guild_id === closure_1_0 || guild_id.preview_guild_id === tmp);
       } else {
         found = ConjureProjectStore.getOwnedProjects();
       }
-      const mapped = found.map((project) => {
-        const obj = { project, time: null };
-        const obj2 = thinking;
-        if (thinking.isThinking(project.id)) {
-          let POSITIVE_INFINITY;
-          if (!projectDeleting.isProjectDeleting(project.id)) {
-            const _Number = Number;
-            POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
-          }
-          obj.time = POSITIVE_INFINITY;
-          return obj;
+      let obj = conjureHomeProjectOrder;
+      return obj.sortConjureProjectsByActivity(found.map((id) => {
+        let conjureTurnStartedAtResult;
+        let obj2;
+        const obj = closure_1_0(closure_1_1[5]);
+        const findOpenTurnResult = obj.findOpenTurn(messages.getMessages(id.id));
+        const obj3 = { project: id, turnStartedAt: conjureTurnStartedAtResult, finishedAt: obj2.getFinishedAt(id.id) };
+        conjureTurnStartedAtResult = null;
+        obj2 = messages;
+        const tmp = closure_1_0;
+        const tmp2 = closure_1_1;
+        if (null != findOpenTurnResult) {
+          const tmpResult = tmp(tmp2[6]);
+          conjureTurnStartedAtResult = tmpResult.conjureTurnStartedAt(findOpenTurnResult);
         }
-        const _Math = Math;
-        let num = obj2.getFinishedAt(project.id);
-        if (num == null) {
-          num = 0;
-        }
-        let num2 = 0;
-        if (null != project.updated_at) {
-          const _Date = Date;
-          num2 = Date.parse(project.updated_at);
-        }
-        let num3 = 0;
-        if (!Number.isNaN(num2)) {
-          num3 = num2;
-        }
-        POSITIVE_INFINITY = max(num, num3);
-      });
-      const sorted = mapped.sort((time, time2) => {
-        let num;
-        if (time.time === time2.time) {
-          const id = time.project.id;
-          num = id.localeCompare(time2.project.id);
-        } else {
-          num = -1;
-          if (time.time < time2.time) {
-            num = 1;
-          }
-        }
-        return num;
-      });
-      return sorted.map((project) => project.project);
+        return obj3;
+      }));
     };
     const items1 = [arg0];
-    let num2 = 1;
     cResult[1] = arg0;
-    let num3 = 2;
     cResult[2] = fn;
     cResult[3] = items1;
     tmp8 = items1;
@@ -99,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHo
     tmp7 = cResult[2];
     tmp8 = cResult[3];
   }
-  const tmpResult = tmp(504);
+  let tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
 }) : (function useConjureHomeOwnProjects(arg0) {
   let closure_0;
@@ -109,59 +81,33 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHo
   const items1 = [arg0];
   return obj.useStateFromStoresArray(items, () => {
     let found;
-    let projectDeleting;
-    let thinking;
+    let messages;
+    let tmp2;
     if (null != closure_0) {
       const items = [];
-      let num = 0;
       const arraySpreadResult = HermesBuiltin.arraySpread(items, ConjureProjectStore.getOwnedProjects(), 0);
       HermesBuiltin.arraySpread(items, ConjureProjectStore.getSharedProjects(tmp2), arraySpreadResult);
       found = items.filter((guild_id) => guild_id.guild_id === closure_1_0 || guild_id.preview_guild_id === tmp);
     } else {
       found = ConjureProjectStore.getOwnedProjects();
     }
-    const mapped = found.map((project) => {
-      const obj = { project, time: null };
-      const obj2 = thinking;
-      if (thinking.isThinking(project.id)) {
-        let POSITIVE_INFINITY;
-        if (!projectDeleting.isProjectDeleting(project.id)) {
-          const _Number = Number;
-          POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
-        }
-        obj.time = POSITIVE_INFINITY;
-        return obj;
+    let obj = conjureHomeProjectOrder;
+    return obj.sortConjureProjectsByActivity(found.map((id) => {
+      let conjureTurnStartedAtResult;
+      let obj2;
+      const obj = closure_1_0(closure_1_1[5]);
+      const findOpenTurnResult = obj.findOpenTurn(messages.getMessages(id.id));
+      const obj3 = { project: id, turnStartedAt: conjureTurnStartedAtResult, finishedAt: obj2.getFinishedAt(id.id) };
+      conjureTurnStartedAtResult = null;
+      obj2 = messages;
+      const tmp = closure_1_0;
+      const tmp2 = closure_1_1;
+      if (null != findOpenTurnResult) {
+        const tmpResult = tmp(tmp2[6]);
+        conjureTurnStartedAtResult = tmpResult.conjureTurnStartedAt(findOpenTurnResult);
       }
-      const _Math = Math;
-      let num = obj2.getFinishedAt(project.id);
-      if (num == null) {
-        num = 0;
-      }
-      let num2 = 0;
-      if (null != project.updated_at) {
-        const _Date = Date;
-        num2 = Date.parse(project.updated_at);
-      }
-      let num3 = 0;
-      if (!Number.isNaN(num2)) {
-        num3 = num2;
-      }
-      POSITIVE_INFINITY = max(num, num3);
-    });
-    const sorted = mapped.sort((time, time2) => {
-      let num;
-      if (time.time === time2.time) {
-        const id = time.project.id;
-        num = id.localeCompare(time2.project.id);
-      } else {
-        num = -1;
-        if (time.time < time2.time) {
-          num = 1;
-        }
-      }
-      return num;
-    });
-    return sorted.map((project) => project.project);
+      return obj3;
+    }));
   }, items1);
 });
 const result = size.fileFinishedImporting("modules/conjure/home/useConjureHomeOwnProjects.tsx");

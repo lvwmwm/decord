@@ -1,24 +1,24 @@
-// Module ID: 19379
-// Function ID: 19380
+// Module ID: 19642
+// Function ID: 19643
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1391, 1095, 21, 4972, 587, 558, 576, 5040, 6990, 1125, 7341, 16630, 5235, 9041, 1630, 1199, 5245, 5211, 5270, 5266, 2]
+// Dependencies: [32, 19, 17, 1391, 1095, 21, 5004, 587, 558, 576, 5072, 7024, 1125, 7376, 16859, 5270, 9074, 1630, 1199, 5280, 5246, 5305, 5301, 2]
 
-// Module 19379 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 19642 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import react_native from "react-native" /* 5040 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import FormRadio from "FormRadio" /* 6990 */;
-import PriceUtils from "PriceUtils" /* 7341 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16630 */;
+import react_native from "react-native" /* 5072 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import FormRadio from "FormRadio" /* 7024 */;
+import PriceUtils from "PriceUtils" /* 7376 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9074 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16859 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -192,7 +192,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
   const obj3 = { style: tmp.rowStatusIcon, children: React4(FormRadio.FormRadio, { selected }) };
   items1[0] = React4(metroRequire, obj3);
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   const intl = tmp2(1125).intl;
   format = intl.format;
   obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };

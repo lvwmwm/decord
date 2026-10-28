@@ -1,18 +1,18 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12902
+// Function ID: 12903
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4972, 1199, 587, 558, 576, 5235, 1125, 12856, 2]
+// Dependencies: [19, 17, 21, 5004, 1199, 587, 558, 576, 5270, 1125, 12903, 2]
 
-// Module 12855 (ClassificationEvidence)
+// Module 12902 (ClassificationEvidence)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12856 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import native_mod from "native" /* 1199 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl2.t.s64CMg) };
-      const Text = tmp(5235).Text;
+      const Text = tmp(5270).Text;
       intl = tmp(1125).intl;
       const tmp8 = React3(Text, obj2);
       cResult[0] = tmp8;

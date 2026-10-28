@@ -1,19 +1,19 @@
-// Module ID: 14031
-// Function ID: 14032
+// Module ID: 14254
+// Function ID: 14255
 // Name: HomeChannelHeader
-// Dependencies: [19, 17, 21, 4972, 587, 558, 576, 1199, 13754, 5235, 1125, 2]
+// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1199, 13972, 5270, 1125, 2]
 
-// Module 14031 (HomeChannelHeader)
+// Module 14254 (HomeChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13754 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t.Ym2Ri6) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp11 = React3(Text, obj3);
     cResult[1] = tmp11;

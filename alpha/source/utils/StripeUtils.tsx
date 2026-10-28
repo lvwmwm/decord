@@ -1,14 +1,14 @@
-// Module ID: 6479
-// Function ID: 6480
+// Module ID: 6513
+// Function ID: 6514
 // Name: StripeUtils
-// Dependencies: [5, 32, 2065, 1084, 3, 6480, 1294, 558, 576, 504, 2]
+// Dependencies: [5, 32, 2065, 1084, 3, 6514, 1294, 558, 576, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, validateExpiry
 
-// Module 6479 (StripeUtils)
+// Module 6513 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _mod6480 from "module_6480" /* 6480 */;
+import _mod6514 from "module_6514" /* 6514 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
@@ -27,7 +27,7 @@ function getStripe() {
   if (null != React2) {
     resolved = Promise.resolve(React2);
   } else {
-    obj = _mod6480;
+    obj = _mod6514;
     const stripe = obj.loadStripe(metroImportDefault.STRIPE.KEY);
     resolved = stripe.then((result) => {
       let closure_1_2 = result;

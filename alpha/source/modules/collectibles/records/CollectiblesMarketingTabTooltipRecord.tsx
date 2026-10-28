@@ -1,10 +1,10 @@
-// Module ID: 7676
-// Function ID: 7677
+// Module ID: 7710
+// Function ID: 7711
 // Name: CollectiblesMarketingTabTooltipRecord
-// Dependencies: [7673, 2]
+// Dependencies: [7707, 2]
 
-// Module 7676 (CollectiblesMarketingTabTooltipRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7673 */;
+// Module 7710 (CollectiblesMarketingTabTooltipRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7707 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingTabTooltipRecord {

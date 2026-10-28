@@ -1,28 +1,28 @@
-// Module ID: 16291
-// Function ID: 16292
+// Module ID: 16519
+// Function ID: 16520
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 7205, 502, 6501, 2065, 1084, 21, 4972, 587, 5206, 504, 14455, 7261, 7276, 5211, 16290, 1999, 9611, 16292, 8951, 5978, 16295, 16296, 2]
+// Dependencies: [19, 17, 7239, 502, 6535, 2065, 1084, 21, 5004, 587, 5241, 504, 14678, 7295, 7310, 5246, 16518, 1999, 9643, 16520, 8985, 6013, 16523, 16524, 2]
 // Exports: UserSettingsConnections
 
-// Module 16291 (UserSettingsConnections)
+// Module 16519 (UserSettingsConnections)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import asyncRequire from "asyncRequire" /* 1999 */;
-import useThemeDefault from "useTheme" /* 5206 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5211 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7205 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7261 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9611 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14455 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 16295 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 16296 */;
+import useThemeDefault from "useTheme" /* 5241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7239 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7295 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9643 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14678 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 16523 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 16524 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6501 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
 import LocaleStore from "LocaleStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -32,7 +32,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const ConnectionsEmptyStateUpsellDefault = tmp2(16292);
+const ConnectionsEmptyStateUpsellDefault = tmp2(16520);
 const ActivityIndicator = react_native.ActivityIndicator;
 const FetchState = AuthorizedAppsStore2.FetchState;
 const AnalyticsLocations = Constants.AnalyticsLocations;
@@ -94,7 +94,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (null != selectedPlatformType) {
       if (-1 === selectedPlatformType) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(16290, dependencyMap.paths), "AddConnection");
+        obj2.openLazy(asyncRequire(16518, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: selectedPlatformType, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);
@@ -110,9 +110,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         }
       }
       const obj4 = { style: tmp.form, children: closure_12(Stack, obj5) };
-      const Form = tmp4(8951).Form;
+      const Form = tmp4(8985).Form;
       obj5 = { spacing: 16, children: items5 };
-      Stack = tmp4(5978).Stack;
+      Stack = tmp4(6013).Stack;
       items5 = [
         prop.map((identity) => {
               let closure_0 = identity;

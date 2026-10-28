@@ -1,12 +1,12 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 7809
+// Function ID: 7810
 // Name: AdDecisionUtils
-// Dependencies: [1101, 6718, 2]
+// Dependencies: [1101, 6752, 2]
 // Exports: getDeliveredAdCreativeId, getDeliveredBounty, getDeliveredPlayable, getDeliveredQuestId, questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7775 (AdDecisionUtils)
+// Module 7809 (AdDecisionUtils)
 import DurationsDefault from "Durations" /* 1101 */;
-import AdCreativeType from "AdCreativeType" /* 6718 */;
+import AdCreativeType from "AdCreativeType" /* 6752 */;
 import size from "module_2" /* 2 */;
 
 const result = 6 * DurationsDefault.Millis.HOUR;
@@ -52,14 +52,14 @@ export const getDeliveredBounty = function getDeliveredBounty(creative) {
   }
   return bounty;
 };
-export const getDeliveredPlayable = function getDeliveredPlayable(creative2) {
+export const getDeliveredPlayable = function getDeliveredPlayable(creative) {
   let type;
-  if (creative2 != null) {
-    type = creative2.type;
+  if (creative != null) {
+    type = creative.type;
   }
   let playable = null;
   if (type === AdCreativeType.AdCreativeType.PLAYABLE) {
-    playable = creative2.playable;
+    playable = creative.playable;
   }
   return playable;
 };

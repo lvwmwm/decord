@@ -1,21 +1,21 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12965
+// Function ID: 12966
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6767, 4828, 4824, 4904, 4914, 1389, 1084, 558, 576, 12916, 1385, 504, 1105, 6489, 1997, 6663, 6655, 5645, 6660, 12919, 1125, 6487, 7762, 5026, 5605, 2]
+// Dependencies: [19, 6801, 4860, 4856, 4936, 4946, 1389, 1084, 558, 576, 12963, 1385, 504, 1105, 6523, 1997, 6697, 6689, 5680, 6694, 12966, 1125, 6521, 7796, 5058, 5640, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 12918 (ForwardDestinationUtils)
+// Module 12965 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1105 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import StickersUtils from "StickersUtils" /* 6489 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7762 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12919 */;
+import StickersUtils from "StickersUtils" /* 6523 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7796 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12966 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6767 */;
-import ChannelRecord from "ChannelRecord" /* 4828 */;
-import ChannelStore from "ChannelStore" /* 4824 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import RelationshipStore from "RelationshipStore" /* 4914 */;
+import StickersStore from "StickersStore" /* 6801 */;
+import ChannelRecord from "ChannelRecord" /* 4860 */;
+import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import RelationshipStore from "RelationshipStore" /* 4946 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(12916).getChannelIdFromDestinationId);
+    const mapped = arr.map(tmp(12963).getChannelIdFromDestinationId);
     const found = mapped.find(tmp(1385).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   return tmp11;
 }) : (function useSelectedDestinationChannel(arr) {
   let found;
-  const mapped = arr.map(found(12916).getChannelIdFromDestinationId);
+  const mapped = arr.map(found(12963).getChannelIdFromDestinationId);
   found = mapped.find(found(1385).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
@@ -378,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(6660).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(6694).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {

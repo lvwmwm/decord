@@ -1,19 +1,19 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12359
+// Function ID: 12360
 // Name: ConjureTurnStart
 // Dependencies: [11, 2]
 // Exports: conjureTurnStartedAt
 
-// Module 12314 (ConjureTurnStart)
+// Module 12359 (ConjureTurnStart)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureTurnStart.tsx");
 
-export const conjureTurnStartedAt = function conjureTurnStartedAt(memo) {
-  let turn_id = memo.turn_id;
+export const conjureTurnStartedAt = function conjureTurnStartedAt(findOpenTurnResult) {
+  let turn_id = findOpenTurnResult.turn_id;
   if (turn_id == null) {
-    const steps = memo.steps;
+    const steps = findOpenTurnResult.steps;
     let turn_id1;
     const found = steps.find((turn_id) => null != turn_id.turn_id);
     if (found != null) {
@@ -31,5 +31,5 @@ export const conjureTurnStartedAt = function conjureTurnStartedAt(memo) {
     }
     return created_at;
   }
-  created_at = memo.created_at;
+  created_at = findOpenTurnResult.created_at;
 };

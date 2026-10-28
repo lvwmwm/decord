@@ -1,46 +1,49 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 16219
+// Function ID: 16220
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7306, 21, 4972, 587, 558, 576, 15992, 8732, 5160, 1125, 14415, 14468, 8901, 5053, 12222, 2]
+// Dependencies: [32, 19, 17, 7340, 21, 5004, 587, 558, 576, 16218, 8769, 14658, 5195, 1125, 16220, 14638, 16221, 14691, 8935, 5085, 12261, 2]
 
-// Module 15993 (UserProfileEditFormTabs)
+// Module 16219 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import ChatInputUtils from "ChatInputUtils" /* 5160 */;
-import Constants from "Constants" /* 7306 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8732 */;
-import reactDefault from "react" /* 15992 */;
+import ChatInputUtils from "ChatInputUtils" /* 5195 */;
+import Constants from "Constants" /* 7340 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8769 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14638 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14658 */;
+import reactDefault from "react" /* 16218 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16220 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16221 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp5;
-const UserProfileWidgetsBoardDefault = tmp5(14415);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, page: { paddingHorizontal: PROFILE_SIDE_PADDING }, boardPage: obj3 };
-obj2 = { marginTop: nativeDefault.space.PX_16, marginHorizontal: -PROFILE_SIDE_PADDING };
+let obj = { tabbedContainer: obj2, page: obj3 };
+obj2 = { marginTop: nativeDefault.space.PX_24, marginHorizontal: -PROFILE_SIDE_PADDING };
 createStyles = createStyles.createStyles;
-obj3 = { paddingTop: nativeDefault.space.PX_16 };
-let closure_8 = createStyles(obj);
+obj3 = { paddingHorizontal: PROFILE_SIDE_PADDING, paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 };
+let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainPage() {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainPage() {
   const obj = react2;
   const cResult = obj.c(3);
-  const tmp2 = closure_8();
+  const tmp2 = closure_9();
   const context = react.useContext(reactDefault);
   if (cResult[0] === context) {
     let tmp4;
@@ -56,46 +59,50 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainPag
   cResult[2] = tmp5;
   tmp4 = tmp5;
 }) : (function MainPage() {
-  const tmp = closure_8();
+  const tmp = closure_9();
   const obj = { style: tmp.page, children: react.useContext(reactDefault) };
   return metroRequire(View, obj);
 });
-let closure_10 = { code: "function UserProfileEditFormTabsTsx1(){const{tabsState,BOARD_TAB_INDEX}=this.__closure;return tabsState.visiblePageRange.get()[1]>=BOARD_TAB_INDEX;}" };
-let closure_11 = { code: "function UserProfileEditFormTabsTsx2(isOnScreen){const{isBoardTabOnScreen}=this.__closure;return isBoardTabOnScreen.set(isOnScreen);}" };
+let closure_11 = { code: "function UserProfileEditFormTabsTsx1(){const{tabsState,BOARD_TAB_INDEX}=this.__closure;return tabsState.visiblePageRange.get()[1]>=BOARD_TAB_INDEX;}" };
+let closure_12 = { code: "function UserProfileEditFormTabsTsx2(isOnScreen){const{isBoardTabOnScreen}=this.__closure;return isBoardTabOnScreen.set(isOnScreen);}" };
 const __initData = { code: "function UserProfileEditFormTabsTsx3(){const{tabsState,BOARD_TAB_INDEX}=this.__closure;return tabsState.visiblePageRange.get()[1]>=BOARD_TAB_INDEX;}" };
 const __initData2 = { code: "function UserProfileEditFormTabsTsx4(isOnScreen){const{isBoardTabOnScreen}=this.__closure;return isBoardTabOnScreen.set(isOnScreen);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditFormTabs(arg0) {
-  let closure_2;
   let containerBackground;
-  let first;
   let isBoardTabOnScreen;
+  let items;
+  let items1;
   let scrollPosition;
   let scrollViewRef;
+  let tmp19;
+  let tmp9;
   let userId;
   let obj = isBoardTabOnScreen(576);
-  const cResult = obj.c(34);
+  const cResult = obj.c(28);
   ({ userId, containerBackground, scrollPosition, scrollViewRef, isBoardTabOnScreen } = arg0);
-  const tmp4 = closure_8();
+  closure_9();
   const tmp6 = UserProfileSharedStylesDefault();
   [r10028, importDefault] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
-  [first, dependencyMap] = react.useState(0);
+  [tmp9, dependencyMap] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  const tmp10 = useUserProfileWidgetsDefault(userId).length > 0;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function l(nativeEvent) {
       importDefault(nativeEvent.nativeEvent.layout.width);
     };
     cResult[0] = fn;
-    let first1 = fn;
+    let first = fn;
   } else {
-    first1 = cResult[0];
+    first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     class H {
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
     cResult[1] = H;
@@ -104,7 +111,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
   }
@@ -113,19 +120,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
     const intl = tmp(1125).intl;
-    tmp13[1] = intl.string(isBoardTabOnScreen(1125).t.LXw470);
-    tmp13[2] = closure_6(closure_9, {});
-    cResult[2] = tmp13;
+    tmp14[1] = intl.string(isBoardTabOnScreen(1125).t.LXw470);
+    tmp14[2] = closure_6(closure_10, {});
+    cResult[2] = tmp14;
   } else {
     class H {
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
   }
@@ -134,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
     cResult[3] = obj2.string(isBoardTabOnScreen(1125).t.laViwx);
@@ -144,82 +151,61 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
   }
-  if (cResult[4] === tmp4.boardPage) {
+  if (cResult[4] === tmp9) {
     class H {
       constructor(arg0) {
         const obj = ChatInputUtils;
         obj.dismissKeyboard();
-        closure_2(arg0);
+        dependencyMap(arg0);
       }
     }
-    if (cResult[7] !== containerBackground) {
-      class H {
-        constructor(arg0) {
-          const obj = ChatInputUtils;
-          obj.dismissKeyboard();
-          closure_2(arg0);
-        }
-      }
-      tmp19[0] = containerBackground;
-      cResult[7] = containerBackground;
-      cResult[8] = tmp19;
-    } else {
-      class H {
-        constructor(arg0) {
-          const obj = ChatInputUtils;
-          obj.dismissKeyboard();
-          closure_2(arg0);
-        }
-      }
-    }
-    if (cResult[9] === tmp6.card) {
-      class H {
-        constructor(arg0) {
-          const obj = ChatInputUtils;
-          obj.dismissKeyboard();
-          closure_2(arg0);
-        }
-      }
-      if (cResult[12] === 1 === first) {
-        class H {
-          constructor(arg0) {
-            const obj = ChatInputUtils;
-            obj.dismissKeyboard();
-            closure_2(arg0);
-          }
-        }
-      }
-      const obj3 = { userId, isVisible: 1 === first, cardStyle: tmp20 };
-      cResult[12] = 1 === first;
-      cResult[13] = tmp20;
-      cResult[14] = userId;
-      cResult[15] = closure_6(UserProfileWidgetsBoardDefault, obj3);
-      const tmp24 = closure_6(UserProfileWidgetsBoardDefault, obj3);
-    }
-    const items = [tmp6.card, tmp18];
-    cResult[9] = tmp6.card;
-    cResult[10] = tmp18;
-    cResult[11] = items;
   }
-  const items1 = [, ];
-  ({ page: arr[0], boardPage: arr[1] } = tmp4);
-  cResult[4] = tmp4.boardPage;
-  cResult[5] = tmp4.page;
-  cResult[6] = items1;
+  if (tmp10) {
+    class H {
+      constructor(arg0) {
+        const obj = ChatInputUtils;
+        obj.dismissKeyboard();
+        dependencyMap(arg0);
+      }
+    }
+    const obj3 = { children: items };
+    items = [closure_6(UserProfileWidgetEditingHeaderDefault, {}), ];
+    const obj4 = { userId, isVisible: 1 === tmp9, cardStyle: items1 };
+    items1 = [tmp6.card, ];
+    const obj5 = { backgroundColor: containerBackground };
+    items1[1] = obj5;
+    items[1] = closure_6(UserProfileWidgetsBoardDefault, obj4);
+    tmp19 = closure_8(closure_7, obj3);
+  } else {
+    class H {
+      constructor(arg0) {
+        const obj = ChatInputUtils;
+        obj.dismissKeyboard();
+        dependencyMap(arg0);
+      }
+    }
+    tmp19 = closure_6(tmp5(16221), {});
+  }
+  cResult[4] = tmp9;
+  cResult[5] = containerBackground;
+  cResult[6] = tmp10;
+  cResult[7] = tmp6.card;
+  cResult[8] = userId;
+  cResult[9] = tmp19;
 }) : (function UserProfileEditFormTabs(userId) {
   let _undefined;
   let c5;
   let card;
-  let closure_3;
   let closure_7;
   let first;
   let hasCustomProfileTheme;
   let items;
   let items2;
+  let page;
   let pageHeights;
   let scrollPosition;
   let scrollViewRef;
@@ -235,17 +221,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ hasCustomProfileTheme, scrollPosition, scrollViewRef } = userId);
   const tmp = segmentedControlState();
   _slicedToArray = tmp;
+  const tmp2 = containerBackground;
+  let tmp3 = isBoardTabOnScreen;
   const tmp4 = containerBackground(isBoardTabOnScreen[10])();
   react = tmp4;
   [tmp6, c5] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
   [first, closure_7] = react.useState(0);
+  const tmp9 = containerBackground(isBoardTabOnScreen[11])(userId).length > 0;
+  let closure_8 = tmp9;
   const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let items1 = [userId, first, containerBackground, , , ];
-  ({ page: arr[3], boardPage: arr[4] } = tmp);
-  items1[5] = tmp4.card;
+  let items1 = [userId, first, tmp9, containerBackground, tmp.page, tmp4.card];
   const callback1 = react.useCallback((arg0) => {
     const obj = ChatInputUtils;
     obj.dismissKeyboard();
@@ -257,55 +245,63 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let items1;
     let items2;
     let obj3;
-    let obj4;
-    const obj = { id: "main", label: intl.string(intl3.t.LXw470), page: metroRequire(closure_9, {}) };
+    let tmp2Result;
+    let tmp3;
+    const obj = { id: "main", label: intl.string(intl3.t.LXw470), page: metroRequire(closure_10, {}) };
     intl = intl3.intl;
     const items = [obj, ];
-    const obj2 = { id: "board", label: intl2.string(intl3.t.laViwx), page: metroRequire(View, obj3) };
+    const obj2 = { id: "board", label: intl2.string(intl3.t.laViwx), page: metroRequire(tmp3, obj3) };
     intl2 = intl3.intl;
-    obj3 = { style: items1, children: metroRequire(UserProfileWidgetsBoardDefault, obj4) };
-    items1 = [, ];
-    ({ page: arr2[0], boardPage: arr2[1] } = closure_3);
-    obj4 = { userId, isVisible: 1 === first, cardStyle: items2 };
-    items2 = [card.card, ];
-    const obj5 = { backgroundColor: containerBackground };
-    items2[1] = obj5;
+    obj3 = { style: page.page, children: tmp2Result };
+    tmp3 = View;
+    if (metroImportAll) {
+      const obj4 = { children: items1 };
+      items1 = [metroRequire(UserProfileWidgetEditingHeaderDefault, {}), ];
+      const obj5 = { userId, isVisible: 1 === first, cardStyle: items2 };
+      items2 = [card.card, ];
+      const obj6 = { backgroundColor: containerBackground };
+      items2[1] = obj6;
+      items1[1] = metroRequire(UserProfileWidgetsBoardDefault, obj5);
+      tmp2Result = metroImportAll(metroImportDefault, obj4);
+    } else {
+      tmp2Result = tmp2(UserProfileWidgetsEmptyStateDefault, {});
+    }
     items[1] = obj2;
     return items;
   }, items1);
-  let obj = userId(isBoardTabOnScreen[14]);
+  let obj = userId(isBoardTabOnScreen[17]);
   const measuredTabItems = obj.useMeasuredTabItems(memo);
   ({ items, pageHeights } = measuredTabItems);
-  let obj2 = userId(isBoardTabOnScreen[15]);
+  let obj2 = userId(isBoardTabOnScreen[18]);
   segmentedControlState = obj2.useSegmentedControlState({ pageWidth: tmp6, items, onPageChange: callback1 });
-  let obj3 = userId(isBoardTabOnScreen[16]);
-  const fn = function y() {
-    const visiblePageRange = segmentedControlState.visiblePageRange;
-    return visiblePageRange.get()[1] >= 1;
-  };
-  fn.__closure = { tabsState: segmentedControlState, BOARD_TAB_INDEX: 1 };
-  fn.__workletHash = 12896262225722;
-  fn.__initData = __initData;
-  const fn2 = function v(arg0) {
+  let obj3 = userId(isBoardTabOnScreen[19]);
+  class B {
+    constructor() {
+      const visiblePageRange = segmentedControlState.visiblePageRange;
+      return visiblePageRange.get()[1] >= 1;
+    }
+  }
+  B.__closure = { tabsState: segmentedControlState, BOARD_TAB_INDEX: 1 };
+  B.__workletHash = 12896262225722;
+  B.__initData = __initData;
+  const fn = function y(arg0) {
     return isBoardTabOnScreen.set(arg0);
   };
-  fn2.__closure = { isBoardTabOnScreen };
-  fn2.__workletHash = 11446268141917;
-  fn2.__initData = __initData2;
-  const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
-  let obj4 = { style: tmp.container, onLayout: callback, children: items2 };
+  fn.__closure = { isBoardTabOnScreen };
+  fn.__workletHash = 11446268141917;
+  fn.__initData = __initData2;
+  const animatedReaction = obj3.useAnimatedReaction(B, fn);
+  let obj4 = { style: tmp.tabbedContainer, onLayout: callback, children: items2 };
   let obj5 = { state: segmentedControlState, variant: str };
   str = undefined;
-  const Tabs = userId(isBoardTabOnScreen[17]).Tabs;
-  const tmp15 = closure_7;
-  const tmp16 = c5;
-  const tmp2 = containerBackground;
-  const tmp3 = isBoardTabOnScreen;
+  const Tabs = userId(isBoardTabOnScreen[20]).Tabs;
+  const tmp16 = closure_8;
+  const tmp17 = c5;
   if (hasCustomProfileTheme) {
     str = "overlay";
   }
-  items2 = [first(Tabs, obj5), first(tmp2(tmp3[14]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
-  return tmp15(tmp16, obj4);
+  items2 = [first(Tabs, obj5), first(tmp2(tmp3[17]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
+  return tmp16(tmp17, obj4);
 }));
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTabs.tsx");
 

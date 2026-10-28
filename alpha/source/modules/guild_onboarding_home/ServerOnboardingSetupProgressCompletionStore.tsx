@@ -1,10 +1,10 @@
-// Module ID: 17735
-// Function ID: 17736
+// Module ID: 17972
+// Function ID: 17973
 // Name: ServerOnboardingSetupProgressCompletionStore
 // Dependencies: [504, 584, 558, 576, 2]
 // Exports: markServerOnboardingSetupProgressComplete
 
-// Module 17735 (ServerOnboardingSetupProgressCompletionStore)
+// Module 17972 (ServerOnboardingSetupProgressCompletionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,18 +1,18 @@
-// Module ID: 14654
-// Function ID: 14655
+// Module ID: 14877
+// Function ID: 14878
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4904, 1084, 21, 4972, 558, 576, 11564, 504, 1125, 1893, 6635, 5245, 2]
+// Dependencies: [19, 17, 4936, 1084, 21, 5004, 558, 576, 11602, 504, 1125, 1893, 6669, 5280, 2]
 
-// Module 14654 (JoinVoiceChannelButton)
+// Module 14877 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6635 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11564 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11602 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import createStyles from "createStyles" /* 4972 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,8 +131,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceC
     cResult[11] = tmp10;
     cResult[12] = flag;
     cResult[13] = tmp16;
-    cResult[14] = jsx(channel(5245).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
-    const tmp19 = jsx(channel(5245).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    cResult[14] = jsx(channel(5280).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    const tmp19 = jsx(channel(5280).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
   }
   const items1 = [tmp4.container, style];
   cResult[8] = style;

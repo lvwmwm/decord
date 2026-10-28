@@ -1,14 +1,14 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10182
+// Function ID: 10183
 // Name: GifIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8452, 5669, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8486, 5704, 2]
 
-// Module 10150 (GifIcon)
+// Module 10182 (GifIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5669 */;
-import AssetRegistry from "AssetRegistry" /* 8452 */;
+import BaseIconImage2 from "BaseIconImage" /* 5704 */;
+import AssetRegistry from "AssetRegistry" /* 8486 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GifIcon(ar
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5669).BaseIconImage;
+  const BaseIconImage = tmp(5704).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

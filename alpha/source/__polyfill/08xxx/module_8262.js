@@ -1,75 +1,91 @@
 // Module ID: 8262
 // Function ID: 8263
-// Dependencies: [8212]
+// Dependencies: [8263]
 
 // Module 8262
-import _mod8212 from "module_8212" /* 8212 */;
+import _modDef8263 from "module_8263" /* 8263 */;
 
 
 export default {
-  read(byteLength) {
-    let str5;
+  read(dataView, sum) {
     let str6;
-    let str9;
     let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
+    let tmp14;
     let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod8212;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
+    const obj = _modDef8263;
+    const shortAt = obj.getShortAt(dataView, sum);
+    let tmp4;
+    if (8 <= shortAt) {
+      const tmpResult = _modDef8263;
+      const byteAt = tmpResult.getByteAt(dataView, sum + 7);
+      tmp4 = { value: byteAt, description: "" + byteAt };
+      const obj2 = { value: byteAt, description: "" + byteAt };
     }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+    let tmp6;
+    if (3 <= shortAt) {
+      const tmpResult4 = _modDef8263;
+      const byteAt1 = tmpResult4.getByteAt(dataView, sum + 2);
+      tmp6 = { value: byteAt1, description: "" + byteAt1 };
+      const obj3 = { value: byteAt1, description: "" + byteAt1 };
     }
+    const obj4 = { "Bits Per Sample": tmp6, "Image Height": tmp8, "Image Width": tmp11, "Color Components": tmp4, Subsampling: tmp14 };
     tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
+    if (5 <= shortAt) {
+      const tmpResult5 = _modDef8263;
+      const shortAt1 = tmpResult5.getShortAt(dataView, sum + 3);
+      const _HermesInternal = HermesInternal;
+      tmp8 = { value: shortAt1, description: "" + shortAt1 + "px" };
+      const obj5 = { value: shortAt1, description: "" + shortAt1 + "px" };
     }
     tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
-      }
-      tmp11 = obj6;
+    if (7 <= shortAt) {
+      const tmpResult6 = _modDef8263;
+      const shortAt2 = tmpResult6.getShortAt(dataView, sum + 5);
+      const _HermesInternal2 = HermesInternal;
+      tmp11 = { value: shortAt2, description: "" + shortAt2 + "px" };
+      const obj6 = { value: shortAt2, description: "" + shortAt2 + "px" };
     }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
+    tmp14 = tmp4;
+    if (tmp14) {
+      const value = tmp4.value;
+      let tmp15;
+      if (8 + 3 * value <= shortAt) {
+        let num6;
+        const items = [];
+        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
+          sum = sum + 8 + 3 * num6;
+          let push = items.push;
+          let obj11 = _modDef8263;
+          let items1 = [obj11.getByteAt(dataView, sum), , ];
+          let obj12 = _modDef8263;
+          items1[1] = obj12.getByteAt(dataView, sum + 1);
+          let obj13 = _modDef8263;
+          items1[2] = obj13.getByteAt(dataView, sum + 2);
+          let arr = push(items1);
+        }
+        const obj7 = { value: items, description: str6 };
+        str6 = "";
+        if (items.length > 1) {
+          let closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
+          const mapped = items.map((item) => closure_0[item[0]]);
+          let str7 = "";
+          const joined = mapped.join("");
+          if (0 !== items.length) {
+            str7 = "";
+            if (undefined !== items[0][1]) {
+              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
+              str7 = "";
+              if (undefined !== obj8[items[0][1]]) {
+                str7 = obj8[items[0][1]];
+              }
+            }
+          }
+          str6 = joined + str7;
+        }
+        tmp15 = obj7;
       }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
+      tmp14 = tmp15;
     }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
-    }
-    return obj3;
+    return obj4;
   }
 };

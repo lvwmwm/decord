@@ -1,19 +1,19 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12843
+// Function ID: 12844
 // Name: RoleName
-// Dependencies: [19, 17, 4973, 21, 4972, 587, 558, 576, 504, 8318, 1199, 5235, 2]
+// Dependencies: [19, 17, 5005, 21, 5004, 587, 558, 576, 504, 8352, 1199, 5270, 2]
 
-// Module 12796 (RoleName)
+// Module 12843 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8318 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8352 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleName(a
   const obj6 = { variant: textVariant, style: items2, lineClamp: 1, gradientColors: tmp15, children };
   items2 = [tmp.name, ];
   let tmp13;
-  const Text = tmp2(5235).Text;
+  const Text = tmp2(5270).Text;
   const tmp12 = React3;
   if ("username" === stateFromStores) {
     if (null != colorString) {

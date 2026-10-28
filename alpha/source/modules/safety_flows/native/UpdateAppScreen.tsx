@@ -1,18 +1,18 @@
-// Module ID: 19479
-// Function ID: 19480
+// Module ID: 19741
+// Function ID: 19742
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4972, 587, 558, 576, 5235, 1125, 2833, 5245, 2]
+// Dependencies: [17, 21, 5004, 587, 558, 576, 5270, 1125, 2833, 5280, 2]
 
-// Module 19479 (UpdateAppScreen)
+// Module 19741 (UpdateAppScreen)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import _modDef2833 from "module_2833" /* 2833 */;
-import Text_Text from "Text/Text" /* 5235 */;
-import components_Button_Button from "components/Button/Button" /* 5245 */;
+import Text_Text from "Text/Text" /* 5270 */;
+import components_Button_Button from "components/Button/Button" /* 5280 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4972 */;
+import createStyles_mod from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpdateAppS
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2833.yxqMCD) };
-    const Text = tmp(5235).Text;
+    const Text = tmp(5270).Text;
     intl = tmp(1125).intl;
     const tmp9 = hasOwnProperty(Text, obj2);
     cResult[1] = tmp9;
@@ -67,7 +67,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpdateAppS
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2833.VBZJJg) };
-    const Text2 = tmp(5235).Text;
+    const Text2 = tmp(5270).Text;
     intl2 = tmp(1125).intl;
     const tmp13 = hasOwnProperty(Text2, obj3);
     cResult[2] = tmp13;
@@ -77,7 +77,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpdateAppS
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { onPress: first, text: intl3.string(_modDef2833.o4D6fm), variant: "primary", size: "md" };
-    const Button = tmp(5245).Button;
+    const Button = tmp(5280).Button;
     intl3 = tmp(1125).intl;
     const tmp17 = hasOwnProperty(Button, obj4);
     cResult[3] = tmp17;

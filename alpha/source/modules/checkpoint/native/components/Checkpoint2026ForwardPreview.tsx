@@ -1,17 +1,17 @@
-// Module ID: 12946
-// Function ID: 12947
+// Module ID: 12993
+// Function ID: 12994
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [19, 17, 21, 4972, 558, 576, 6038, 8624, 6037, 1897, 5670, 12947, 587, 2]
+// Dependencies: [19, 17, 21, 5004, 558, 576, 6072, 8661, 6071, 1897, 5705, 12994, 587, 2]
 
-// Module 12946 (Checkpoint2026ForwardPreview)
+// Module 12993 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import react_nativeDefault from "react-native" /* 1897 */;
-import FastImageDefault from "FastImage" /* 5670 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6037 */;
+import FastImageDefault from "FastImage" /* 5705 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6071 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4972 */;
+import createStyles from "createStyles" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
           return jsx(FastImageDefault, { source: { uri }, style: items }, uri);
         });
       } else {
-        const ExperimentalCheckpointIcon = tmp(12947).ExperimentalCheckpointIcon;
+        const ExperimentalCheckpointIcon = tmp(12994).ExperimentalCheckpointIcon;
         mapped = <ExperimentalCheckpointIcon color={nativeDefault.colors.BLACK} />;
       }
       cResult[9] = character;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       });
     } else {
       const obj5 = { color: character(587).colors.BLACK };
-      const ExperimentalCheckpointIcon = tmp2(12947).ExperimentalCheckpointIcon;
+      const ExperimentalCheckpointIcon = tmp2(12994).ExperimentalCheckpointIcon;
       mapped = tmp6(ExperimentalCheckpointIcon, obj5);
     }
     tmp6Result = tmp6(tmp7, obj3);

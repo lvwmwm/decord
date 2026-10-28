@@ -1,17 +1,22 @@
 // Module ID: 12658
 // Function ID: 12659
-// Dependencies: []
-// Exports: parameterize
+// Dependencies: [12642]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 12658
+import _mod12642 from "module_12642" /* 12642 */;
 
-export const parameterize = function parameterize(join) {
-  const substr = [...arguments].slice();
-  const items = [join, ...substr];
-  const string = new String(String.raw.apply(items));
-  const str = join.join("\0");
-  const str2 = str.replace(/%/g, "%%");
-  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
-  string.__sentry_template_values__ = substr;
-  return string;
+const _sentrySpan = "_sentrySpan";
+
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+};
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod12642;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
+  }
 };

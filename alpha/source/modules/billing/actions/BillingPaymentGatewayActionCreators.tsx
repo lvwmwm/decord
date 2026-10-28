@@ -1,19 +1,19 @@
-// Module ID: 6476
-// Function ID: 6477
+// Module ID: 6510
+// Function ID: 6511
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1084, 1095, 3, 1294, 1125, 6465, 6477, 584, 38, 6478, 6479, 4795, 6375, 2]
+// Dependencies: [5, 1084, 1095, 3, 1294, 1125, 6499, 6511, 584, 38, 6512, 6513, 4827, 6409, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6476 (BillingPaymentGatewayActionCreators)
+// Module 6510 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1125 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6465 */;
-import react from "react" /* 6477 */;
-import StripeActionCreators from "StripeActionCreators" /* 6478 */;
-import StripeUtilsAll from "StripeUtils" /* 6479 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6499 */;
+import react from "react" /* 6511 */;
+import StripeActionCreators from "StripeActionCreators" /* 6512 */;
+import StripeUtilsAll from "StripeUtils" /* 6513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1084 */;
 import Constants_mod2 from "Constants" /* 1095 */;
@@ -766,8 +766,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "y" };
-                        const obj8 = { setupIntent: _undefined, error: "y" };
+                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        const obj8 = { setupIntent: _undefined, error: "Array" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;

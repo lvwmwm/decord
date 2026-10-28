@@ -1,15 +1,15 @@
-// Module ID: 14164
-// Function ID: 14165
+// Module ID: 14387
+// Function ID: 14388
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4973, 1998, 21, 558, 576, 504, 1104, 14165, 5670, 8790, 14166, 2]
+// Dependencies: [32, 19, 5005, 1998, 21, 558, 576, 504, 1104, 14388, 5705, 8827, 14389, 2]
 
-// Module 14164 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5670 */;
-import _modDef14165 from "module_14165" /* 14165 */;
-import _modDef14166 from "module_14166" /* 14166 */;
+// Module 14387 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5705 */;
+import _modDef14388 from "module_14388" /* 14388 */;
+import _modDef14389 from "module_14389" /* 14389 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4973 */;
+import AccessibilityStore from "AccessibilityStore" /* 5005 */;
 import AppStateStore from "AppStateStore" /* 1998 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
     const effect = obj4.useEffect(tmp19, tmp20);
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef14165 };
+      const obj2 = { uri: _modDef14388 };
       cResult[10] = obj2;
       tmp22 = obj2;
     } else {
@@ -150,8 +150,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
     let tmp30 = !stateFromStores && tmp28;
     if (tmp30) {
       const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: tmp17, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-      obj7 = { uri: _modDef14166 };
-      const VideoComponent = tmp(8790).VideoComponent;
+      obj7 = { uri: _modDef14389 };
+      const VideoComponent = tmp(8827).VideoComponent;
       tmp30 = closure_7(VideoComponent, obj6);
     }
     cResult[13] = stateFromStores1 === ACTIVE;
@@ -222,7 +222,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
   }, items2);
   const Fragment = obj3.Fragment;
   const obj4 = { source: obj5, style, resizeMode: "cover", onLoad: callback };
-  obj5 = { uri: _modDef14165 };
+  obj5 = { uri: _modDef14388 };
   const tmp16 = FastImageDefault;
   const children = [closure_7(tmp16, obj4), ];
   let tmp14Result = !stateFromStores && stateFromStores1 === ACTIVE;
@@ -230,8 +230,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsReward
   const tmp14 = closure_7;
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj7 = { uri: _modDef14166 };
-    const VideoComponent = tmp(8790).VideoComponent;
+    obj7 = { uri: _modDef14389 };
+    const VideoComponent = tmp(8827).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }
   children[1] = tmp14Result;

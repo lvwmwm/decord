@@ -1,14 +1,14 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11602
+// Function ID: 11603
 // Name: useIsVoiceChannelFull
-// Dependencies: [4846, 4904, 5631, 1095, 558, 576, 504, 5995, 2]
+// Dependencies: [4878, 4936, 5666, 1095, 558, 576, 504, 6030, 2]
 
-// Module 11564 (useIsVoiceChannelFull)
+// Module 11602 (useIsVoiceChannelFull)
 import Constants from "Constants" /* 1095 */;
-import ChannelUtils from "ChannelUtils" /* 5995 */;
-import GuildStore from "GuildStore" /* 4846 */;
-import PermissionStore from "PermissionStore" /* 4904 */;
-import VoiceStateStore from "VoiceStateStore" /* 5631 */;
+import ChannelUtils from "ChannelUtils" /* 6030 */;
+import GuildStore from "GuildStore" /* 4878 */;
+import PermissionStore from "PermissionStore" /* 4936 */;
+import VoiceStateStore from "VoiceStateStore" /* 5666 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

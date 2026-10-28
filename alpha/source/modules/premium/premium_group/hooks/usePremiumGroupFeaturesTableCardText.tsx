@@ -1,14 +1,14 @@
-// Module ID: 14832
-// Function ID: 14833
+// Module ID: 15055
+// Function ID: 15056
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [2055, 2063, 1125, 3251, 1397, 8419, 558, 576, 14833, 504, 2]
+// Dependencies: [2055, 2063, 1125, 3283, 1397, 8453, 558, 576, 15056, 504, 2]
 
-// Module 14832 (usePremiumGroupFeaturesTableCardText)
+// Module 15055 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import user from "user" /* 1397 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8419 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 14833 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8453 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 15056 */;
 import SubscriptionStore from "SubscriptionStore" /* 2055 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp6;
-const _modDef3251 = tmp6(3251);
+const _modDef3283 = tmp6(3283);
 ({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: hasOwnProperty } = PremiumGroupConstants);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
   let premiumGroupSubscription;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
             return closure_1_3.getPremiumGroupSubscription();
           }
         }
-        const Nu9LNm = _modDef3251.Nu9LNm;
+        const Nu9LNm = _modDef3283.Nu9LNm;
         priceString = format(Nu9LNm, obj4);
       }
     }
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         const intl = tmp(1125).intl;
         const format = intl.format;
         const obj3 = { primaryName: tmp4, premiumGroupProductName: React3() };
-        const Nu9LNm = tmp3(3251).Nu9LNm;
+        const Nu9LNm = tmp3(3283).Nu9LNm;
         priceString = format(Nu9LNm, obj3);
       }
     }
@@ -158,12 +158,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
       const intl3 = tmp(1125).intl;
       const format3 = intl3.format;
       const obj5 = { helpCenterLink: hasOwnProperty, premiumGroupProductName: React3() };
-      const prop = tmp3(3251)["+R/K74"];
+      const prop = tmp3(3283)["+R/K74"];
       format3Result = format3(prop, obj5);
     } else {
       const intl2 = tmp(1125).intl;
       const format2 = intl2.format;
-      const tmp3Result = _modDef3251;
+      const tmp3Result = _modDef3283;
       const obj6 = { helpCenterLink: hasOwnProperty };
       format3Result = format2(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj6);
     }

@@ -1,21 +1,83 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 5132
+// Function ID: 5133
 // Name: utils/FunctionUtils
 // Dependencies: [32, 5, 2]
-// Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty, promiseThrottle
+// Exports: areArraysShallowlyEqual, cachedFunction, clearObject, ignoreErrors, isPlainObjectEmpty, promiseThrottle
 
-// Module 10792 (utils/FunctionUtils)
+// Module 5132 (utils/FunctionUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
+let obj = function _ignoreErrors() {
+  obj = _asyncToGenerator(async (value) => {
+    let c2 = 0;
+    let c1 = 0;
+    let c3 = 0;
+    return (async (arg0, value) => {
+      if (c1 === 2) {
+        c1 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c1 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c1 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c1 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 1;
+              c2 = 2;
+              c1 = 1;
+              return { value, done: false };
+            }
+          } else {
+            if (1 === tmp3) {
+              c3 = 0;
+            } else if (arg0 === 1) {
+              c1 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c1 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 0;
+            }
+            c1 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp4) {
+          if (0 === c3) {
+            c1 = 3;
+            throw tmp4;
+          } else {
+            c2 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/FunctionUtils.tsx");
 class PromiseDeduper {
   #r;
   constructor() {
-    const obj = Object.create(new.target.prototype);
+    obj = Object.create(new.target.prototype);
     map = new Map();
     const tmp2 = _r;
     if (_r in obj) {
@@ -28,7 +90,7 @@ class PromiseDeduper {
   one(play, fn, arg2) {
     const self = this;
     let closure_1 = play;
-    let obj = arg2;
+    obj = arg2;
     if (arg2 === undefined) {
       obj = {};
     }
@@ -37,8 +99,8 @@ class PromiseDeduper {
       flag = false;
     }
     let cleanupPromise;
-    let obj2 = self[self];
-    let tmp = self;
+    let obj2 = self.#r;
+    let tmp = _r;
     const value = obj2.get(play);
     if (!flag) {
       let tmp3 = null;
@@ -48,7 +110,7 @@ class PromiseDeduper {
     }
     const promise = fn();
     cleanupPromise = promise.finally(() => {
-      const obj = self.#r;
+      obj = self.#r;
       const tmp = self;
       const tmp2 = _r;
       const tmp3 = play;
@@ -78,7 +140,7 @@ class PromiseDeduper {
         }
       });
       const cleanupPromise = nextPromise.finally(() => {
-        const obj = self.#r;
+        obj = self.#r;
         const tmp = self;
         const tmp2 = _r;
         const tmp3 = item10055;
@@ -87,11 +149,11 @@ class PromiseDeduper {
           obj2.delete(tmp3);
         }
       });
-      let obj = closure_0[promise];
+      obj = closure_0[closure_1_3];
       const result = obj.set(item10055, cleanupPromise);
       const result1 = cleanupPromise.set(item10055, cleanupPromise);
     }
-    let obj = arg2;
+    obj = arg2;
     if (arg2 === undefined) {
       obj = {};
     }
@@ -109,8 +171,8 @@ class PromiseDeduper {
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp3 = nextResult;
-      let tmp4 = promise;
-      let obj3 = this[promise];
+      let tmp4 = _r;
+      let obj3 = this.#r;
       let value = obj3.get(nextResult);
       if (!flag) {
         if (null != value) {
@@ -240,6 +302,9 @@ export function promiseThrottle(arg0) {
     return closure_3;
   };
 }
+export const ignoreErrors = function ignoreErrors() {
+  return obj(...arguments);
+};
 export { PromiseDeduper };
 export const clearObject = function clearObject(obj) {
   for (const key10003 in obj) {
