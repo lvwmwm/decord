@@ -1,16 +1,16 @@
-// Module ID: 8708
-// Function ID: 8709
+// Module ID: 8740
+// Function ID: 8741
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2068, 8709, 7669, 1087, 8710, 584, 6383, 6375, 2]
+// Dependencies: [5, 2068, 8741, 7701, 1087, 8742, 584, 6415, 6407, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8708 (StorefrontProductActionCreators)
+// Module 8740 (StorefrontProductActionCreators)
 import Constants from "Constants" /* 1087 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8710 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8709 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7669 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8741 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7701 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _maybeFetchProductsWithSkus() {

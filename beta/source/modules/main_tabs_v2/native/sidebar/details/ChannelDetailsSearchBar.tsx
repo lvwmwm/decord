@@ -1,17 +1,17 @@
-// Module ID: 18061
-// Function ID: 18062
+// Module ID: 18098
+// Function ID: 18099
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 13237, 9712, 10024, 21, 4971, 13265, 558, 576, 13184, 13244, 13248, 6908, 1128, 10142, 18062, 2]
+// Dependencies: [19, 13269, 9744, 10056, 21, 5003, 13297, 558, 576, 13216, 13276, 13280, 6940, 1128, 10174, 18099, 2]
 
-// Module 18061 (ChannelDetailsSearchBar)
+// Module 18098 (ChannelDetailsSearchBar)
 import Fragment from "Fragment" /* 21 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9712 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10024 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13248 */;
-import SearchButton from "SearchButton" /* 13265 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9744 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10056 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13280 */;
+import SearchButton from "SearchButton" /* 13297 */;
 import react from "react" /* 19 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 13237 */;
-import createStyles from "createStyles" /* 4971 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 13269 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

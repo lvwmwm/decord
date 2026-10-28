@@ -1,20 +1,20 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13930
+// Function ID: 13931
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8681, 21, 558, 576, 4971, 587, 10502, 10505, 5234, 1128, 2632, 2]
+// Dependencies: [19, 17, 8713, 21, 558, 576, 5003, 587, 10534, 10537, 5266, 1128, 2632, 2]
 
-// Module 13898 (GiftingBadgeProgress)
+// Module 13930 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2632 from "module_2632" /* 2632 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8681 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10502 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10505 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8713 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10534 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10537 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -261,7 +261,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
       let tmp28 = null != title;
       if (tmp28) {
         const obj6 = { variant: "text-md/semibold", children: title };
-        tmp28 = hasOwnProperty(tmp(5234).Text, obj6);
+        tmp28 = hasOwnProperty(tmp(5266).Text, obj6);
       }
       cResult[25] = title;
       cResult[26] = tmp28;
@@ -282,7 +282,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
     let tmp34 = null != nextTier;
     if (tmp34) {
       const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2632.iIpfQe, obj9) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl = tmp(1128).intl;
       obj9 = { count: progress, threshold: tmp19 };
       tmp34 = hasOwnProperty(Text, obj8);
@@ -364,14 +364,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
   const obj5 = { style: tmp.content, children: items1 };
   if (tmp14) {
     const obj6 = { variant: "text-md/semibold", children: title };
-    tmp14 = hasOwnProperty(tmp2(5234).Text, obj6);
+    tmp14 = hasOwnProperty(tmp2(5266).Text, obj6);
   }
   items1 = [tmp14, hasOwnProperty(closure_7, { percent: num2 }), ];
   const obj7 = { style: tmp.labels, children: tmp16Result };
   tmp16Result = null != nextTier;
   if (tmp16Result) {
     const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2632.iIpfQe, obj9) };
-    const Text = tmp2(5234).Text;
+    const Text = tmp2(5266).Text;
     intl = tmp2(1128).intl;
     obj9 = { count: progress, threshold: tmp6 };
     tmp16Result = tmp16(Text, obj8);

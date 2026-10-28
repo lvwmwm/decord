@@ -1,15 +1,15 @@
-// Module ID: 19129
-// Function ID: 19130
+// Module ID: 19166
+// Function ID: 19167
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1406, 1087, 558, 576, 6012, 10207, 1128, 8670, 13838, 2]
+// Dependencies: [19, 1406, 1087, 558, 576, 6044, 10239, 1128, 8702, 13870, 2]
 
-// Module 19129 (useGuildSettingsRoleExampleMessage)
+// Module 19166 (useGuildSettingsRoleExampleMessage)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6012 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8670 */;
-import createMessageDefault from "createMessage" /* 10207 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8702 */;
+import createMessageDefault from "createMessage" /* 10239 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildSe
     const insertStaticUserResult = obj5.insertStaticUser(tmp13);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => require("module_13838");
+      messageRecord.author.getAvatarURL = () => require("module_13870");
     }
     cResult[0] = content;
     cResult[1] = messageRecord;

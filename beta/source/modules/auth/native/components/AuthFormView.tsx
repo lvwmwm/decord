@@ -1,19 +1,19 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7097
+// Function ID: 7098
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7037, 7066, 7067, 7068, 7071, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 7069, 7098, 7099, 7100, 7103, 2]
 
-// Module 7065 (AuthFormView)
+// Module 7097 (AuthFormView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7037 */;
-import react3 from "react" /* 7066 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7068 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7071 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7069 */;
+import react3 from "react" /* 7098 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7100 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7103 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthFormView
         let tmp37 = null;
         if (null != headerText) {
           const obj3 = { children: headerText };
-          tmp37 = metroRequire(tmp3(7067), obj3);
+          tmp37 = metroRequire(tmp3(7099), obj3);
         }
         cResult[6] = headerText;
         cResult[7] = tmp37;
@@ -197,7 +197,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthFormView
               let tmp18 = null;
               if (null != headerText) {
                 const obj7 = { children: headerText };
-                tmp18 = metroRequire(tmp3(7067), obj7);
+                tmp18 = metroRequire(tmp3(7099), obj7);
               }
               cResult[30] = headerText;
               cResult[31] = tmp18;
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthFormView
     const tmp13 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = metroRequire(tmp(7067), obj3);
+      tmp15 = metroRequire(tmp(7099), obj3);
     }
     items1 = [tmp15, , ];
     let tmp17 = null;
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthFormView
     const tmp8 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(7067), obj7);
+      tmp7Result = tmp7(tmp(7099), obj7);
     }
     items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

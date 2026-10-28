@@ -1,12 +1,12 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10653
+// Function ID: 10654
 // Name: useScaledActionHeight
-// Dependencies: [558, 5253, 5252, 587, 2]
+// Dependencies: [558, 5285, 5284, 587, 2]
 
-// Module 10621 (useScaledActionHeight)
+// Module 10653 (useScaledActionHeight)
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5252 */;
-import useFontScale from "useFontScale" /* 5253 */;
+import useToken from "useToken" /* 5284 */;
+import useFontScale from "useFontScale" /* 5285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

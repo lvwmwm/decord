@@ -1,20 +1,20 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14794
+// Function ID: 14795
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5252, 587, 14745, 5669, 14763, 7962, 14764, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 5284, 587, 14777, 5701, 14795, 7994, 14796, 2]
 
-// Module 14762 (ProgressWheel)
+// Module 14794 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5252 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14745 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14763 */;
+import useToken from "useToken" /* 5284 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14777 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14795 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressWhee
           tmp23 = cResult[10];
         }
         if (altImage == null) {
-          altImage = tmp5(14764);
+          altImage = tmp5(14796);
         }
         if (cResult[11] !== altImage) {
           const obj5 = { uri: altImage };
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressWhee
   const tmp13 = React3;
   const tmp4Result4 = FastImageDefault;
   if (altImage == null) {
-    altImage = tmp4(14764);
+    altImage = tmp4(14796);
   }
   const obj6 = { source: { uri: altImage }, style: tmp.progressCircleImage };
   items[2] = tmp13(tmp4Result4, obj6);

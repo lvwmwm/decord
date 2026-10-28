@@ -1,13 +1,13 @@
-// Module ID: 5993
-// Function ID: 5994
+// Module ID: 6025
+// Function ID: 6026
 // Name: useChannelRoleSubscriptionStatus
-// Dependencies: [4875, 4823, 4903, 1087, 558, 576, 504, 2]
+// Dependencies: [4907, 4855, 4935, 1087, 558, 576, 504, 2]
 
-// Module 5993 (useChannelRoleSubscriptionStatus)
+// Module 6025 (useChannelRoleSubscriptionStatus)
 import Constants from "Constants" /* 1087 */;
-import GatedChannelStore from "GatedChannelStore" /* 4875 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import GatedChannelStore from "GatedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

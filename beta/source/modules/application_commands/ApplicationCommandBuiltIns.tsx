@@ -1,27 +1,27 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9690
+// Function ID: 9691
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4823, 4903, 1392, 5983, 1087, 9659, 4885, 4976, 5634, 1128, 9660, 2000, 4799, 9661, 9662, 7369, 9663, 1108, 9664, 7566, 7755, 6830, 5025, 1104, 12782, 2049, 7411, 38, 7348, 14055, 2]
+// Dependencies: [5, 4855, 4935, 1392, 6015, 1087, 9691, 4917, 5008, 5666, 1128, 9692, 2000, 4831, 9693, 9694, 7401, 9695, 1108, 9696, 7598, 7787, 6862, 5057, 1104, 12814, 2049, 7443, 38, 7380, 14087, 2]
 // Exports: getBuiltInCommands
 
-// Module 9658 (ApplicationCommandBuiltIns)
+// Module 9690 (ApplicationCommandBuiltIns)
 import Server from "Server" /* 2000 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4885 */;
-import MessageConstants from "MessageConstants" /* 4976 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5634 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7348 */;
-import ThreadHooks from "ThreadHooks" /* 7369 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7566 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9660 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9661 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7380 */;
+import ThreadHooks from "ThreadHooks" /* 7401 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9692 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import DiceRollConstants from "DiceRollConstants" /* 9659 */;
+import DiceRollConstants from "DiceRollConstants" /* 9691 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

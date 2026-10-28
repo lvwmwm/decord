@@ -1,29 +1,29 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 16935
+// Function ID: 16936
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1087, 4873, 21, 4971, 587, 5037, 1267, 8751, 16902, 5669, 8790, 1128, 6908, 9041, 10166, 1202, 8465, 558, 576, 1499, 8466, 1506, 6924, 2049, 8467, 5234, 6672, 7095, 2]
+// Dependencies: [19, 17, 1087, 4905, 21, 5003, 587, 5069, 1267, 8783, 16936, 5701, 8822, 1128, 6940, 9073, 10198, 1202, 8497, 558, 576, 1499, 8498, 1506, 6956, 2049, 8499, 5266, 6704, 7127, 2]
 
-// Module 16901 (ChangeLogModal)
+// Module 16935 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ChangelogConstants from "ChangelogConstants" /* 4873 */;
-import native from "native" /* 5037 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6924 */;
-import Navigator from "Navigator" /* 7095 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8465 */;
-import openMediaModal2 from "openMediaModal" /* 8751 */;
-import common_VideoDefault from "common/Video" /* 8790 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10166 */;
-import _modDef16902 from "module_16902" /* 16902 */;
+import ChangelogConstants from "ChangelogConstants" /* 4905 */;
+import native from "native" /* 5069 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6956 */;
+import Navigator from "Navigator" /* 7127 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8497 */;
+import openMediaModal2 from "openMediaModal" /* 8783 */;
+import common_VideoDefault from "common/Video" /* 8822 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9073 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10198 */;
+import _modDef16936 from "module_16936" /* 16936 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef16902, obj4), ];
+        items = [closure_7(_modDef16936, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;
@@ -209,7 +209,7 @@ class ChangeLog extends PureComponent2 {
           const obj5 = { style: tmp.videoOverlay, source: obj6 };
           const _HermesInternal = HermesInternal;
           obj6 = { uri: "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg" };
-          const tmp7Result = tmp7(5669);
+          const tmp7Result = tmp7(5701);
           tmp6Result = tmp6(tmp7Result, obj5);
         }
         items[1] = tmp6Result;
@@ -241,7 +241,7 @@ class ChangeLog extends PureComponent2 {
     tmp14 = closure_8;
     if (null != video) {
       const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: closure_7(tmp15Result, obj10) };
-      const PressableOpacity = tmp18(6908).PressableOpacity;
+      const PressableOpacity = tmp18(6940).PressableOpacity;
       obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: AssetRegistryDefault, onPress: self.playVideo, style: tmp.playButton, iconSize: self(1202).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
       tmp15Result = TouchableHitBoxDefault;
       tmp12Result = tmp12(PressableOpacity, obj9);

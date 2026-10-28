@@ -1,31 +1,31 @@
-// Module ID: 18296
-// Function ID: 18297
+// Module ID: 18333
+// Function ID: 18334
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 109, 19, 4823, 4901, 4845, 4903, 1392, 18297, 1087, 21, 4971, 587, 558, 576, 1505, 1417, 1202, 1128, 11, 5025, 6903, 504, 18298, 8953, 18299, 5037, 2067, 5234, 18301, 6987, 8951, 5977, 5592, 2]
+// Dependencies: [5, 109, 19, 4855, 4933, 4877, 4935, 1392, 18334, 1087, 21, 5003, 587, 558, 576, 1505, 1417, 1202, 1128, 11, 5057, 6935, 504, 18335, 8985, 18336, 5069, 2067, 5266, 18338, 7019, 8983, 6009, 5624, 2]
 
-// Module 18296 (IntegrationsSettingsWebhooksOverview)
+// Module 18333 (IntegrationsSettingsWebhooksOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import native from "native" /* 5037 */;
-import NavScrim from "NavScrim" /* 5592 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import Form2 from "Form" /* 8951 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18298 */;
+import native from "native" /* 5069 */;
+import NavScrim from "NavScrim" /* 5624 */;
+import Stack_Stack from "Stack/Stack" /* 6009 */;
+import Form2 from "Form" /* 8983 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18335 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4933 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import UserStore from "UserStore" /* 1392 */;
-import WebhooksStore from "WebhooksStore" /* 18297 */;
+import WebhooksStore from "WebhooksStore" /* 18334 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -647,7 +647,7 @@ class WebhooksOverview extends PureComponent {
     }
     const helpText = self.getHelpText();
     const tmp2 = closure_22;
-    const children = [closure_20(webhookType(5234).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+    const children = [closure_20(webhookType(5266).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
     let tmp4Result = webhookType === constants3.INCOMING;
     const tmp3 = closure_21;
     const tmp7 = constants3;
@@ -657,7 +657,7 @@ class WebhooksOverview extends PureComponent {
     }
     children[1] = tmp4Result;
     if (0 === found.length) {
-      const obj2 = { Illustration: webhookType(18301).WebhookEmpty, title: stringResult };
+      const obj2 = { Illustration: webhookType(18338).WebhookEmpty, title: stringResult };
       const EmptyState = tmp5(1202).EmptyState;
       if (webhookType === tmp7.CHANNEL_FOLLOWER) {
         const intl2 = tmp5(1128).intl;
@@ -684,7 +684,7 @@ class WebhooksOverview extends PureComponent {
             return closure_1_20(closure_1_25, obj, id);
           })
       };
-      const TableRowGroup = tmp5(6987).TableRowGroup;
+      const TableRowGroup = tmp5(7019).TableRowGroup;
       tmp4Result2 = tmp4(TableRowGroup, obj3);
     }
     children[2] = tmp4Result2;

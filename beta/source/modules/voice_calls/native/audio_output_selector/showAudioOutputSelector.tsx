@@ -1,14 +1,14 @@
-// Module ID: 9160
-// Function ID: 9161
+// Module ID: 9192
+// Function ID: 9193
 // Name: showAudioOutputSelector
-// Dependencies: [17, 9161, 1384, 5210, 9162, 2002, 2]
+// Dependencies: [17, 9193, 1384, 5242, 9194, 2002, 2]
 // Exports: showAudioOutputSelector
 
-// Module 9160 (showAudioOutputSelector)
+// Module 9192 (showAudioOutputSelector)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9161 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9193 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -23,7 +23,7 @@ export const showAudioOutputSelector = function showAudioOutputSelector(channelI
   if (obj.isAndroid()) {
     const obj3 = { channelId, isConnectedToVoiceChannel };
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequire(9162, tmp2.paths), closure_4, obj3);
+    obj2.openLazy(asyncRequire(9194, tmp2.paths), closure_4, obj3);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
     if (AudioRoutePicker != null) {

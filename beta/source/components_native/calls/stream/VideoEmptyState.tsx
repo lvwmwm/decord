@@ -1,23 +1,23 @@
-// Module ID: 11426
-// Function ID: 11427
+// Module ID: 11458
+// Function ID: 11459
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 4823, 1087, 21, 4971, 587, 558, 576, 11427, 1202, 1128, 5897, 504, 7829, 6645, 5263, 5234, 5244, 2]
+// Dependencies: [109, 19, 17, 4855, 1087, 21, 5003, 587, 558, 576, 11459, 1202, 1128, 5929, 504, 7861, 6677, 5295, 5266, 5276, 2]
 
-// Module 11426 (VideoEmptyState)
+// Module 11458 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import useMountEffectDefault from "useMountEffect" /* 5263 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6645 */;
-import StreamActionCreators from "StreamActionCreators" /* 7829 */;
-import StreamEnded from "StreamEnded" /* 11427 */;
+import useMountEffectDefault from "useMountEffect" /* 5295 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6677 */;
+import StreamActionCreators from "StreamActionCreators" /* 7861 */;
+import StreamEnded from "StreamEnded" /* 11459 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -132,13 +132,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
         }
       }
       if (null != tmp4) {
-        const tmpResult = tmp(5897);
+        const tmpResult = tmp(5929);
         errorCode = tmpResult.getErrorInfo(tmp4).errorCode;
       } else {
         errorCode = null;
         if (tmp10 === obj.STREAM_FAILED) {
-          const tmpResult3 = tmp(5897);
-          errorCode = tmpResult3.getErrorInfo(tmp(5897).AVError.STREAM_FAILED_TO_START).errorCode;
+          const tmpResult3 = tmp(5929);
+          errorCode = tmpResult3.getErrorInfo(tmp(5929).AVError.STREAM_FAILED_TO_START).errorCode;
         }
       }
       const _Symbol = Symbol;
@@ -193,7 +193,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
               }
             }
             let obj2 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl.formatToPlainString(tmp(1128).t.ejOT95, obj3) };
-            const Text = tmp(5234).Text;
+            const Text = tmp(5266).Text;
             intl = tmp(1128).intl;
             obj3 = { errorCode };
             tmp36 = closure_7(Text, obj2);
@@ -226,7 +226,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
                           stopStream(obj.encodeStreamKey(channelId));
                         }
             };
-            Button = tmp(5244).Button;
+            Button = tmp(5276).Button;
             intl2 = tmp(1128).intl;
             tmp38 = closure_7(tmp34, obj4);
           }
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     const tmp9 = closure_8;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_7(stream(11427).StreamEnded, obj2);
+      tmp10 = closure_7(stream(11459).StreamEnded, obj2);
     }
     const obj3 = { children: items };
     items = [tmp10, ];
@@ -332,13 +332,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(5897);
+    const obj6 = stream(5929);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(5897);
-      errorCode = obj5.getErrorInfo(stream(5897).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(5929);
+      errorCode = obj5.getErrorInfo(stream(5929).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -366,7 +366,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
   const tmp25 = closure_9;
   if (tmp28) {
     const obj9 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1128).t.ejOT95, obj10) };
-    const Text = tmp22(5234).Text;
+    const Text = tmp22(5266).Text;
     intl3 = tmp22(1128).intl;
     obj10 = { errorCode };
     tmp28 = closure_7(Text, obj9);
@@ -388,7 +388,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp22(5244).Button;
+    Button = tmp22(5276).Button;
     intl4 = tmp22(1128).intl;
     tmp30 = closure_7(tmp26, obj11);
   }

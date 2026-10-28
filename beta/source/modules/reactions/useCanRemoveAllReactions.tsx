@@ -1,11 +1,11 @@
-// Module ID: 9984
-// Function ID: 9985
+// Module ID: 10016
+// Function ID: 10017
 // Name: useCanRemoveAllReactions
-// Dependencies: [4903, 1087, 558, 576, 7369, 504, 2]
+// Dependencies: [4935, 1087, 558, 576, 7401, 504, 2]
 
-// Module 9984 (useCanRemoveAllReactions)
+// Module 10016 (useCanRemoveAllReactions)
 import Constants from "Constants" /* 1087 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

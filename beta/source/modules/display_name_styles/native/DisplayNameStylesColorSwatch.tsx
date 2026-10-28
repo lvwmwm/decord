@@ -1,17 +1,17 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 15904
+// Function ID: 15905
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4971, 587, 558, 576, 1411, 15871, 1105, 5258, 2]
+// Dependencies: [17, 21, 5003, 587, 558, 576, 1411, 15905, 1105, 5290, 2]
 
-// Module 15870 (DisplayNameStylesColorSwatch)
+// Module 15904 (DisplayNameStylesColorSwatch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import GummyStripesDefault from "GummyStripes" /* 15871 */;
-import createStyles from "createStyles" /* 4971 */;
+import LinearGradientDefault from "LinearGradient" /* 5290 */;
+import GummyStripesDefault from "GummyStripes" /* 15905 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

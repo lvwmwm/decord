@@ -1,22 +1,22 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8340
+// Function ID: 8341
 // Name: ThreadUtils
-// Dependencies: [109, 6771, 6704, 4905, 1127, 1087, 1128, 7608, 5711, 1267, 8297, 7210, 1405, 558, 576, 504, 11, 2049, 2]
+// Dependencies: [109, 6803, 6736, 4937, 1127, 1087, 1128, 7640, 5743, 1267, 8329, 7242, 1405, 558, 576, 504, 11, 2049, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8308 (ThreadUtils)
+// Module 8340 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import getTimestampStringDefault from "getTimestampString" /* 7608 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8297 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
+import getTimestampStringDefault from "getTimestampString" /* 7640 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8329 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4937 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7210);
+const NotificationSettingsUtils = tmp(7242);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };

@@ -1,29 +1,29 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12848
+// Function ID: 12849
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1087, 21, 4971, 587, 558, 576, 1128, 7485, 8115, 7221, 7627, 1633, 5234, 8951, 1202, 5244, 5711, 12817, 7626, 5662, 7095, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5003, 587, 558, 576, 1128, 7517, 8147, 7253, 7659, 1633, 5266, 8983, 1202, 5276, 5743, 12849, 7658, 5694, 7127, 2]
 
-// Module 12816 (AutomodSubmitFeedbackModal)
+// Module 12848 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5711 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7485 */;
-import AutomodAlert from "AutomodAlert" /* 7626 */;
-import AutomodFeedback from "AutomodFeedback" /* 7627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8115 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 12817 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import ToastUtils from "ToastUtils" /* 5694 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7253 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7517 */;
+import AutomodAlert from "AutomodAlert" /* 7658 */;
+import AutomodFeedback from "AutomodFeedback" /* 7659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8147 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 12849 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Navbar
   }
   if (cResult[1] !== onClose) {
     const obj2 = { accessibilityLabel: first, onPress: onClose, source: AssetRegistryDefault };
-    const HeaderActionButton = tmp(7485).HeaderActionButton;
+    const HeaderActionButton = tmp(7517).HeaderActionButton;
     const tmp10 = metroImportDefault(HeaderActionButton, obj2);
     cResult[1] = onClose;
     cResult[2] = tmp10;

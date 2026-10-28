@@ -1,51 +1,51 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15127
+// Function ID: 15128
 // Name: handleSupportedURL
-// Dependencies: [32, 109, 5, 6859, 6784, 7533, 14707, 502, 1087, 4830, 6643, 7868, 10745, 7646, 5698, 15094, 8332, 13580, 6672, 5151, 15095, 8668, 7490, 11121, 9342, 12738, 1896, 11036, 1267, 11038, 7348, 10069, 12877, 15102, 13613, 10749, 2002, 10746, 10744, 15104, 15106, 1630, 7885, 15116, 5660, 15118, 4845, 7449, 8888, 8883, 7429, 7866, 11652, 5150, 6722, 1114, 584, 7274, 1386, 9005, 15121, 15136, 1384, 15146, 9050, 12869, 15154, 6463, 15155, 7649, 7278, 9200, 15232, 7792, 6715, 9567, 14134, 6716, 10446, 15233, 6697, 10768, 15234, 9245, 9251, 7345, 13527, 5693, 2]
+// Dependencies: [32, 109, 5, 6891, 6816, 7565, 14739, 502, 1087, 4862, 6675, 7900, 10777, 7678, 5730, 15128, 8364, 13612, 6704, 5183, 15129, 8700, 7522, 11153, 9374, 12770, 1896, 11068, 1267, 11070, 7380, 10101, 12909, 15136, 13645, 10781, 2002, 10778, 10776, 15138, 15140, 1630, 7917, 15150, 5692, 15152, 4877, 7481, 8920, 8915, 7461, 7898, 11684, 5182, 6754, 1114, 584, 7306, 1386, 9037, 15155, 15170, 1384, 15180, 9082, 12901, 15188, 6495, 15189, 7681, 7310, 9232, 15266, 7824, 6747, 9599, 14166, 6748, 10478, 15267, 6729, 10800, 15268, 9277, 9283, 7377, 13559, 5725, 2]
 // Exports: default
 
-// Module 15093 (handleSupportedURL)
+// Module 15127 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import PaymentConstants from "PaymentConstants" /* 5698 */;
-import Constants2 from "Constants" /* 6643 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6697 */;
-import QuestContent from "QuestContent" /* 6715 */;
-import AdPlacement from "AdPlacement" /* 6716 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6859 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import openUserSettings from "openUserSettings" /* 7490 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7533 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import AnalyticsActions from "AnalyticsActions" /* 7792 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7868 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9005 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9050 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9200 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
-import GameProfileActionCreators from "GameProfileActionCreators" /* 9251 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9342 */;
-import QuestUtils from "QuestUtils" /* 9567 */;
-import ApplicationUtils from "ApplicationUtils" /* 10744 */;
-import Constants3 from "Constants" /* 10745 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 10768 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12738 */;
-import BountyActionCreators from "BountyActionCreators" /* 14134 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15094 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15102 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15136 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15232 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import PaymentConstants from "PaymentConstants" /* 5730 */;
+import Constants2 from "Constants" /* 6675 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6729 */;
+import QuestContent from "QuestContent" /* 6747 */;
+import AdPlacement from "AdPlacement" /* 6748 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6891 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import openUserSettings from "openUserSettings" /* 7522 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7565 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7678 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
+import AnalyticsActions from "AnalyticsActions" /* 7824 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9232 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
+import GameProfileActionCreators from "GameProfileActionCreators" /* 9283 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9374 */;
+import QuestUtils from "QuestUtils" /* 9599 */;
+import ApplicationUtils from "ApplicationUtils" /* 10776 */;
+import Constants3 from "Constants" /* 10777 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 10800 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12770 */;
+import BountyActionCreators from "BountyActionCreators" /* 14166 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15128 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15136 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15170 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15266 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6784 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14707 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6816 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 14739 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -60,9 +60,9 @@ let closure_18;
 let map1;
 let tmp;
 let tmp3;
-const authorizeCallbackDefault = tmp(10746);
-const FamilyCenterNativeUtils = tmp3(12877);
-const CreateGuildModalActionCreatorsDefault = tmp(13613);
+const authorizeCallbackDefault = tmp(10778);
+const FamilyCenterNativeUtils = tmp3(12909);
+const CreateGuildModalActionCreatorsDefault = tmp(13645);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_10 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -336,7 +336,7 @@ export default function handleSupportedURL(payload) {
               });
             } else {
               const obj3 = { callback: authorizeCallbackDefault };
-              const openOAuth2Modal = tmp4(10744).openOAuth2Modal;
+              const openOAuth2Modal = tmp4(10776).openOAuth2Modal;
               ApplicationUtils;
               let merged = Object.assign(payload.props);
               openOAuth2Modal(obj3);
@@ -355,7 +355,7 @@ export default function handleSupportedURL(payload) {
           remoteAuthFingerprint(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15106, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15140, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;

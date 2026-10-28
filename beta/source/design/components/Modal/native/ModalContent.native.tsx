@@ -1,14 +1,14 @@
-// Module ID: 7901
-// Function ID: 7902
+// Module ID: 7933
+// Function ID: 7934
 // Name: ModalContent
-// Dependencies: [19, 17, 21, 4971, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 2]
 
-// Module 7901 (ModalContent)
+// Module 7933 (ModalContent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

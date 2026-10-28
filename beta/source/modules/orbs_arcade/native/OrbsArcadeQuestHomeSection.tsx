@@ -1,22 +1,22 @@
-// Module ID: 16394
-// Function ID: 16395
+// Module ID: 16428
+// Function ID: 16429
 // Name: OrbsArcadeQuestHomeSection
-// Dependencies: [19, 16395, 16397, 21, 4971, 587, 558, 576, 16398, 504, 9616, 5977, 5234, 1128, 16402, 9474, 2]
+// Dependencies: [19, 16429, 16431, 21, 5003, 587, 558, 576, 16432, 504, 9648, 6009, 5266, 1128, 16436, 9506, 2]
 
-// Module 16394 (OrbsArcadeQuestHomeSection)
+// Module 16428 (OrbsArcadeQuestHomeSection)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import GameControllerIcon from "GameControllerIcon" /* 9616 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16397 */;
-import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16398 */;
-import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16402 */;
+import Stack_Stack from "Stack/Stack" /* 6009 */;
+import GameControllerIcon from "GameControllerIcon" /* 9648 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16431 */;
+import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16432 */;
+import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16436 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16395 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16429 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -94,10 +94,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-      const Stack = tmp(5977).Stack;
+      const Stack = tmp(6009).Stack;
       items2 = [tmp15, ];
       const obj3 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
-      const Heading = tmp(5234).Heading;
+      const Heading = tmp(5266).Heading;
       intl = tmp(1128).intl;
       items2[1] = React3(Heading, obj3);
       const tmp21 = hasOwnProperty(Stack, obj2);
@@ -109,7 +109,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     const _Symbol3 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-sm/medium", color: "text-subtle", children: intl2.string(intl3.t.kMY21I) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl2 = tmp(1128).intl;
       const tmp24 = React3(Text, obj4);
       cResult[6] = tmp24;
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           }
         }
         const obj6 = { spacing: nativeDefault.space.PX_16, style: tmp4.section, children: items4 };
-        const Stack2 = tmp(5977).Stack;
+        const Stack2 = tmp(6009).Stack;
         items4 = [tmp25, tmp28];
         const tmp33 = hasOwnProperty(Stack2, obj6);
         cResult[13] = tmp4.section;
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       });
     } else {
       const obj7 = { style: tmp4.skeletonTile };
-      mapped = React3(tmp5(9474), obj7);
+      mapped = React3(tmp5(9506), obj7);
     }
     cResult[9] = stateFromStores1;
     cResult[10] = stateFromStores;
@@ -190,19 +190,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   if (!stateFromStores1) {
     let mapped;
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp.section, children: items4 };
-    const Stack = tmp5(5977).Stack;
+    const Stack = tmp5(6009).Stack;
     const obj4 = { style: tmp.sectionHeader, children: items3 };
-    const Stack2 = tmp5(5977).Stack;
+    const Stack2 = tmp5(6009).Stack;
     const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-    const Stack3 = tmp5(5977).Stack;
+    const Stack3 = tmp5(6009).Stack;
     items2 = [React3(GameControllerIcon.GameControllerIcon, {}), ];
     const obj6 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
-    const Heading = tmp5(5234).Heading;
+    const Heading = tmp5(5266).Heading;
     intl = tmp5(1128).intl;
     items2[1] = React3(Heading, obj6);
     items3 = [hasOwnProperty(Stack3, obj5), ];
     const obj7 = { variant: "heading-sm/medium", color: "text-subtle", children: intl2.string(intl3.t.kMY21I) };
-    const Text = tmp5(5234).Text;
+    const Text = tmp5(5266).Text;
     intl2 = tmp5(1128).intl;
     items3[1] = React3(Text, obj7);
     items4 = [hasOwnProperty(Stack2, obj4), ];
@@ -215,7 +215,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       });
     } else {
       const obj8 = { style: tmp.skeletonTile };
-      mapped = tmp9(tmp2(9474), obj8);
+      mapped = tmp9(tmp2(9506), obj8);
     }
     items4[1] = mapped;
     tmp8Result = tmp8(Stack, obj3);

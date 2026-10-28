@@ -1,26 +1,26 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 10774
+// Function ID: 10775
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 2001, 6773, 6776, 10743, 8827, 5603, 10744, 1099, 10753, 10728, 10758, 7907, 10759, 10761, 10762, 10763, 10764, 10765, 2]
+// Dependencies: [5, 2001, 6805, 6808, 10775, 8859, 5635, 10776, 1099, 10785, 10760, 10790, 7939, 10791, 10793, 10794, 10795, 10796, 10797, 2]
 // Exports: inspectConjurePreviewPoint, setConjurePreviewFrameVisibility
 
-// Module 10742 (ConjurePlatformUtils)
+// Module 10774 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5603 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8827 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
-import Constants from "Constants" /* 10743 */;
-import ApplicationUtils from "ApplicationUtils" /* 10744 */;
-import PushNotificationDefault from "PushNotification" /* 10753 */;
-import conjurePreviewCall from "conjurePreviewCall" /* 10758 */;
-import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 10763 */;
-import restartFrames from "restartFrames" /* 10765 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
+import FramesConstants from "FramesConstants" /* 6808 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10760 */;
+import Constants from "Constants" /* 10775 */;
+import ApplicationUtils from "ApplicationUtils" /* 10776 */;
+import PushNotificationDefault from "PushNotification" /* 10785 */;
+import conjurePreviewCall from "conjurePreviewCall" /* 10790 */;
+import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 10795 */;
+import restartFrames from "restartFrames" /* 10797 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10762 */;
-import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 10764 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10794 */;
+import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 10796 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -231,7 +231,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, arg3) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(10758);
+          const tmp4Result = tmp4(10790);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -783,7 +783,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
             }
             c2 = null;
           } else {
-            const tmp4Result = tmp4(10758);
+            const tmp4Result = tmp4(10790);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -810,7 +810,7 @@ let closure_20 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
   }
   let tmp3 = null;
   if (null != prop) {
-    const obj2 = iframeId(10728);
+    const obj2 = iframeId(10760);
     const conjureBuilderPreviewFrame = obj2.getConjureBuilderPreviewFrame(prop);
     let tmp7 = null;
     if (null != conjureBuilderPreviewFrame) {
@@ -838,7 +838,7 @@ let closure_20 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
     }
     let tmp12 = null;
     if (null != prop1) {
-      const obj5 = iframeId(10728);
+      const obj5 = iframeId(10760);
       const conjureBuilderPreviewFrame1 = obj5.getConjureBuilderPreviewFrame(prop1);
       iframeId = null;
       if (isLaunched(conjureBuilderPreviewFrame1)) {
@@ -1045,7 +1045,7 @@ obj = {
               }
               c2 = null;
             } else {
-              const tmp4Result = tmp4(10758);
+              const tmp4Result = tmp4(10790);
               if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
                 cleanup();
                 closure_0(parsed);
@@ -1149,7 +1149,7 @@ export const setConjurePreviewFrameVisibility = function setConjurePreviewFrameV
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(10758);
+          const tmp4Result = tmp4(10790);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);

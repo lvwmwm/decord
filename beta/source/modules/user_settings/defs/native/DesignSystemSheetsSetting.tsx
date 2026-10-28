@@ -1,12 +1,12 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17209
+// Function ID: 17210
 // Name: DesignSystemSheetsSetting
-// Dependencies: [8332, 1087, 11208, 17176, 2]
+// Dependencies: [8364, 1087, 11240, 17210, 2]
 
-// Module 17175 (DesignSystemSheetsSetting)
+// Module 17209 (DesignSystemSheetsSetting)
 import Constants from "Constants" /* 1087 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

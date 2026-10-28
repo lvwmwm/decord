@@ -1,12 +1,12 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7960
+// Function ID: 7961
 // Name: ManualAgeAssuranceFallbackExperiment
-// Dependencies: [7922, 1455, 7897, 2]
+// Dependencies: [7954, 1455, 7929, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 7928 (ManualAgeAssuranceFallbackExperiment)
-import SafetyHubUtils from "SafetyHubUtils" /* 7897 */;
-import SafetyHubStore from "SafetyHubStore" /* 7922 */;
+// Module 7960 (ManualAgeAssuranceFallbackExperiment)
+import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
+import SafetyHubStore from "SafetyHubStore" /* 7954 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

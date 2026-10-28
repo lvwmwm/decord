@@ -1,22 +1,22 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7988
+// Function ID: 7989
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 7012, 587, 2081, 7957, 5686, 7267, 5235, 4971, 558, 576, 5234, 5253, 1128, 5041, 1385, 4980, 5244, 7959, 6931, 2]
+// Dependencies: [19, 17, 21, 7044, 587, 2081, 7989, 5718, 7299, 5267, 5003, 558, 576, 5266, 5285, 1128, 5073, 1385, 5012, 5276, 7991, 6963, 2]
 
-// Module 7956 (NewInlineNotice)
+// Module 7988 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import _modDef2081 from "module_2081" /* 2081 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import TextVariants from "TextVariants" /* 5235 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7012 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7267 */;
-import WarningIcon from "WarningIcon" /* 7957 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import TextVariants from "TextVariants" /* 5267 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5718 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7044 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7299 */;
+import WarningIcon from "WarningIcon" /* 7989 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj5;
 let obj7;
 let obj8;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4980);
+const AccessibilityAnnouncer2 = tmp(5012);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, positive: obj5 };
@@ -196,7 +196,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notice
       tmp10 = T;
     }
   }
-  const tmp7 = closure_5(tmp(5234).Text, { variant, color, children: intro });
+  const tmp7 = closure_5(tmp(5266).Text, { variant, color, children: intro });
   cResult[0] = color;
   cResult[1] = intro;
   cResult[2] = variant;
@@ -213,7 +213,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notice
   const tmp = closure_10();
   dependencyMap = tmp;
   obj = { style: tmp.stack, children: items1 };
-  items1 = [closure_5(variant(5234).Text, { variant, color, children: intro }), ];
+  items1 = [closure_5(variant(5266).Text, { variant, color, children: intro }), ];
   let obj2 = {
     accessibilityRole: "list",
     style: tmp.stack,

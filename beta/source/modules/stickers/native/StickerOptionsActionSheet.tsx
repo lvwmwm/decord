@@ -1,13 +1,13 @@
-// Module ID: 10176
-// Function ID: 10177
+// Module ID: 10208
+// Function ID: 10209
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 558, 576, 7285, 5662, 5210, 5678, 1128, 7298, 6987, 6903, 2]
+// Dependencies: [19, 21, 558, 576, 7317, 5694, 5242, 5710, 1128, 7330, 7019, 6935, 2]
 
-// Module 10176 (StickerOptionsActionSheet)
+// Module 10208 (StickerOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import ToastUtils from "ToastUtils" /* 5694 */;
+import ClipboardUtils from "ClipboardUtils" /* 7317 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerOpt
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = jsx(stickerUrl(5678).LinkIcon, {});
+    const tmp8 = jsx(stickerUrl(5710).LinkIcon, {});
     const intl = tmp(1128).intl;
     const stringResult = intl.string(stickerUrl(1128).t.B1ubHx);
     cResult[2] = tmp8;
     cResult[3] = stringResult;
   }
   if (cResult[4] !== tmp4) {
-    const ActionSheet = tmp(7298).ActionSheet;
+    const ActionSheet = tmp(7330).ActionSheet;
     let obj3 = { hasIcons: true, children: null };
-    const TableRowGroup = tmp(6987).TableRowGroup;
+    const TableRowGroup = tmp(7019).TableRowGroup;
     const tmp12 = <ActionSheet>{null}</ActionSheet>;
     cResult[4] = tmp4;
     cResult[5] = tmp12;
@@ -65,11 +65,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerOpt
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = stickerUrl(7298).ActionSheet;
+  const ActionSheet = stickerUrl(7330).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = stickerUrl(6987).TableRowGroup;
+  const TableRowGroup = stickerUrl(7019).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(stickerUrl(1128).t.B1ubHx), onPress: callback };
-  const TableRow = stickerUrl(6903).TableRow;
+  const TableRow = stickerUrl(6935).TableRow;
   intl = stickerUrl(1128).intl;
   return <ActionSheet>{null}</ActionSheet>;
 });

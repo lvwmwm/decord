@@ -1,15 +1,15 @@
-// Module ID: 18783
-// Function ID: 18784
+// Module ID: 18820
+// Function ID: 18821
 // Name: EmbeddedAppShimManager
-// Dependencies: [32, 6775, 1087, 18784, 11467, 7214, 1123, 2]
+// Dependencies: [32, 6807, 1087, 18821, 11499, 7246, 1123, 2]
 
-// Module 18783 (EmbeddedAppShimManager)
+// Module 18820 (EmbeddedAppShimManager)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 11467 */;
+import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 11499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 6775 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7214 */;
+import FramesStore from "FramesStore" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 function getParentState(iframeId) {
@@ -30,8 +30,8 @@ function handleShimPipeOpen(iframeId) {
   let value = map.get(iframeId);
   if (null == value) {
     let tmp;
-    const createEmbeddedAppShimHost = iframeId(18784).createEmbeddedAppShimHost;
-    iframeId(18784);
+    const createEmbeddedAppShimHost = iframeId(18821).createEmbeddedAppShimHost;
+    iframeId(18821);
     const frameByIframeId = FramesStore.getFrameByIframeId(iframeId);
     if (null != frameByIframeId) {
       tmp = { muted: frameByIframeId.data.muted };

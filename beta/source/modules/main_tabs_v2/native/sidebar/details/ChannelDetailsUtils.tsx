@@ -1,12 +1,12 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11344
+// Function ID: 11345
 // Name: ChannelDetailsUtils
-// Dependencies: [10024, 1108, 2]
+// Dependencies: [10056, 1108, 2]
 // Exports: getChannelDetailsButtons, navigateToChannelDetailsScreen
 
-// Module 11312 (ChannelDetailsUtils)
+// Module 11344 (ChannelDetailsUtils)
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10024 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10056 */;
 import size from "module_2" /* 2 */;
 
 const ChannelDetailsButtonTypes = ChannelDetailsConstants.ChannelDetailsButtonTypes;

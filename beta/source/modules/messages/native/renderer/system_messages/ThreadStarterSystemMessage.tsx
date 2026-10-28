@@ -1,20 +1,20 @@
-// Module ID: 8382
-// Function ID: 8383
+// Module ID: 8414
+// Function ID: 8415
 // Name: ThreadStarterSystemMessage
-// Dependencies: [7696, 1087, 38, 1128, 8322, 2]
+// Dependencies: [7728, 1087, 38, 1128, 8354, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 8382 (ThreadStarterSystemMessage)
+// Module 8414 (ThreadStarterSystemMessage)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7696 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7728 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 
 let tmp;
-const createCommonMessageDefault = tmp(8322);
+const createCommonMessageDefault = tmp(8354);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");

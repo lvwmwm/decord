@@ -1,9 +1,9 @@
-// Module ID: 6914
-// Function ID: 6915
+// Module ID: 6946
+// Function ID: 6947
 // Name: TableRowTrailingText
-// Dependencies: [19, 21, 558, 576, 5234, 2]
+// Dependencies: [19, 21, 558, 576, 5266, 2]
 
-// Module 6914 (TableRowTrailingText)
+// Module 6946 (TableRowTrailingText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5266);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowTrailingText(text) {
   let tmp4;

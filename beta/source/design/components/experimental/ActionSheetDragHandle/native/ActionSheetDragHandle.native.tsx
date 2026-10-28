@@ -1,18 +1,18 @@
-// Module ID: 8924
-// Function ID: 8925
+// Module ID: 8956
+// Function ID: 8957
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8914, 21, 4971, 587, 558, 576, 1128, 5052, 2]
+// Dependencies: [19, 17, 8946, 21, 5003, 587, 558, 576, 1128, 5084, 2]
 
-// Module 8924 (ActionSheetDragHandle)
+// Module 8956 (ActionSheetDragHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8914 */;
-import createStyles from "createStyles" /* 4971 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 8946 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

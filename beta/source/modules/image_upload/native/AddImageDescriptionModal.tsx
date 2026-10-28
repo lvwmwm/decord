@@ -1,19 +1,19 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 14003
+// Function ID: 14004
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 7631, 8293, 21, 4971, 587, 558, 576, 504, 1499, 1505, 5593, 11069, 9699, 1128, 9665, 13970, 7180, 10030, 2]
+// Dependencies: [32, 19, 17, 7663, 8325, 21, 5003, 587, 558, 576, 504, 1499, 1505, 5625, 11101, 9731, 1128, 9697, 14002, 7212, 10062, 2]
 
-// Module 13971 (AddImageDescriptionModal)
+// Module 14003 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import DraftStore from "DraftStore" /* 7631 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10030 */;
+import DraftStore from "DraftStore" /* 7663 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

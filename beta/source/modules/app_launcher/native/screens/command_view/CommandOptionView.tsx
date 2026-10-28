@@ -1,19 +1,19 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12187
+// Function ID: 12188
 // Name: CommandOptionView
-// Dependencies: [19, 17, 4972, 21, 2000, 4971, 587, 558, 576, 504, 5052, 12156, 5234, 12157, 1202, 10187, 12164, 2]
+// Dependencies: [19, 17, 5004, 21, 2000, 5003, 587, 558, 576, 504, 5084, 12188, 5266, 12189, 1202, 10219, 12196, 2]
 
-// Module 12155 (CommandOptionView)
+// Module 12187 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10187 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12157 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10219 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12189 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -162,9 +162,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
   const items = [AccessibilityStore];
   const obj = option(504);
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  const ReduceMotion = option(5052).ReduceMotion;
+  const ReduceMotion = option(5084).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12156);
+  const tmp2Result = option(12188);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -172,9 +172,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     if (option.required || isPreSelectedOption) {
       fn = (fn) => fn();
     }
-    const FadeOut = tmp2(5052).FadeOut;
+    const FadeOut = tmp2(5084).FadeOut;
     const reduceMotionResult = FadeOut.reduceMotion(tmp5);
-    const FadeInUp = tmp2(5052).FadeInUp;
+    const FadeInUp = tmp2(5084).FadeInUp;
     const obj2 = { transform: items1 };
     items1 = [{ translateY: -10 }];
     const withInitialValuesResult = FadeInUp.withInitialValues(obj2);
@@ -189,14 +189,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     }
     const hasItem1 = items1.includes(option.type);
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
-    const LayoutAnimationConfig = tmp2(5052).LayoutAnimationConfig;
+    const LayoutAnimationConfig = tmp2(5084).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12164).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12196).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12156).ExitingAnimation,
-      layout: option(12156).LayoutAnimation,
+      exiting: option(12188).ExitingAnimation,
+      layout: option(12188).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
@@ -208,7 +208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     tmp20 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      tmp17Result = tmp17(tmp2(5234).Text, obj7);
+      tmp17Result = tmp17(tmp2(5266).Text, obj7);
     }
     items2 = [tmp17Result, , , ];
     const obj8 = {
@@ -234,15 +234,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5234).Text, obj9);
+    items2[2] = closure_5(option(5266).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
-      const View2 = tmp18(5052).View;
+      const View2 = tmp18(5084).View;
       const obj11 = { style: tmp.optionErrorIcon, source: AssetRegistryDefault, size: option(1202).IconSizes.REFRESH_SMALL_16 };
       const Icon = tmp2(1202).Icon;
       items3 = [closure_5(Icon, obj11), ];
       const obj12 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5234).Text, obj12);
+      items3[1] = closure_5(option(5266).Text, obj12);
       hasItem = tmp19(View2, obj10);
     }
     items2[3] = hasItem;

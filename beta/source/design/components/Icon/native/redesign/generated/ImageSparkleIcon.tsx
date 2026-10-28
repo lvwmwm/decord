@@ -1,14 +1,14 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11634
+// Function ID: 11635
 // Name: ImageSparkleIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11603, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11635, 5700, 2]
 
-// Module 11602 (ImageSparkleIcon)
+// Module 11634 (ImageSparkleIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 11603 */;
+import BaseIconImage2 from "BaseIconImage" /* 5700 */;
+import AssetRegistry from "AssetRegistry" /* 11635 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageSpark
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5668).BaseIconImage;
+  const BaseIconImage = tmp(5700).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

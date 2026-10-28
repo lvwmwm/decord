@@ -1,13 +1,13 @@
-// Module ID: 13435
-// Function ID: 13436
+// Module ID: 13467
+// Function ID: 13468
 // Name: useHasAllocateBoostPermission
-// Dependencies: [4845, 4903, 1098, 558, 576, 504, 2]
+// Dependencies: [4877, 4935, 1098, 558, 576, 504, 2]
 // Exports: getHasAllocateBoostPermission
 
-// Module 13435 (useHasAllocateBoostPermission)
+// Module 13467 (useHasAllocateBoostPermission)
 import Constants from "Constants" /* 1098 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

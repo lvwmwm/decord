@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "test", right: "unicodeVersion", bottom: "gap" };
+let closure_0 = { top: "fill", left: "x", right: "toCharArray$esjava$1", bottom: "toCharArray$esjava$1" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

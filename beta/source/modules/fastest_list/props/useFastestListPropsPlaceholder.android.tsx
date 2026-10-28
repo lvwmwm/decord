@@ -1,13 +1,13 @@
-// Module ID: 7156
-// Function ID: 7157
+// Module ID: 7188
+// Function ID: 7189
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7157, 4968, 558, 576, 2]
+// Dependencies: [19, 17, 7189, 5000, 558, 576, 2]
 
-// Module 7156 (useFastestListPropsPlaceholder)
+// Module 7188 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4968 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7157 */;
+import ColorUtils from "ColorUtils" /* 5000 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7189 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "ti", borderBottomRightRadius: "ks", divider: "cursor", dividerColor: "color", dividerPaddingLeft: "flags", dividerPaddingRight: "Button", placeholderShape: "channel", placeholderShapeColor: "index", placeholderShapeCount: "flexDirection", placeholderShapeGap: "resizeMode", placeholderShapePaddingHorizontal: "o", placeholderShapePaddingVertical: "transform", placeholderFeedBackgroundColor: "ix", placeholderFeedColor: "flags", placeholderFeedLabelPadding: "Button", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "ix", placeholderFeedLabelSecondarySize: "url", placeholderFeedPadding: "width", placeholderFeedShape: "enabled", placeholderFeedShapeSize: "o", placeholderType: NONE, width: null, height: null, verticalAlignment: 1518500249, horizontalAlignment: 1859775393 };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "applicationId", borderBottomLeftRadius: "hasIcons", borderBottomRightRadius: "T", divider: "a", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "concat", dividerPaddingRight: "__esModule", placeholderShape: "Array", placeholderShapeColor: "toCharArray$esjava$1", placeholderShapeCount: "ix", placeholderShapeGap: "Path", placeholderShapePaddingHorizontal: "ix", placeholderShapePaddingVertical: "IconComponent", placeholderFeedBackgroundColor: "substring_i", placeholderFeedColor: "ix", placeholderFeedLabelPadding: "left", placeholderFeedLabelPaddingInnerRatio: "guildId", placeholderFeedLabelSize: "ix", placeholderFeedLabelSecondarySize: "has", placeholderFeedPadding: "limit", placeholderFeedShape: "ix", placeholderFeedShapeSize: "applicationId", placeholderType: NONE, width: "<string:3578855425>", height: "<string:7475749>", verticalAlignment: "toCharArray$esjava$1", horizontalAlignment: "<string:1358954496>" };
   if (null == listFooter) {
     return size;
   } else {

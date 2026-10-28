@@ -1,13 +1,13 @@
-// Module ID: 11399
-// Function ID: 11400
+// Module ID: 11431
+// Function ID: 11432
 // Name: resolveAppChannel
-// Dependencies: [5, 4823, 4903, 1087, 10720, 2]
+// Dependencies: [5, 4855, 4935, 1087, 10752, 2]
 // Exports: default
 
-// Module 11399 (resolveAppChannel)
+// Module 11431 (resolveAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

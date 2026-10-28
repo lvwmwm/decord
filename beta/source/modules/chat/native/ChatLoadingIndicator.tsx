@@ -1,26 +1,26 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14051
+// Function ID: 14052
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 4972, 6496, 6010, 4874, 1392, 2001, 1087, 21, 4971, 587, 5909, 5978, 2002, 558, 576, 504, 5234, 14020, 5052, 5206, 1128, 6908, 2]
+// Dependencies: [32, 19, 17, 5004, 6528, 6042, 4906, 1392, 2001, 1087, 21, 5003, 587, 5941, 6010, 2002, 558, 576, 504, 5266, 14052, 5084, 5238, 1128, 6940, 2]
 
-// Module 14019 (ChatLoadingIndicator)
+// Module 14051 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5909 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6496 */;
-import MessageStore from "MessageStore" /* 6010 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
+import MessageStore from "MessageStore" /* 6042 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import UserStore from "UserStore" /* 1392 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let map1;
 let size;
 let tmp;
 const get_initialized = tmp(504);
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5266);
 function openLoadingIndicatorDebugBody() {
   let paths;
   const currentUser = UserStore.getCurrentUser();
@@ -257,13 +257,13 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   if (messagesCached !== false) {
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: items2 };
     items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
-    tmp4Result = tmp4(tmp(5234).Text, obj3);
+    tmp4Result = tmp4(tmp(5266).Text, obj3);
   }
   items1[4] = tmp4Result;
   const items3 = [syncedClientThemes(closure_15, { children: items1 }), "\n", , , , , ];
   const items4 = ["messages.ready", ":", " ", , ];
   let str6 = str;
-  const Text3 = tmp(5234).Text;
+  const Text3 = tmp(5266).Text;
   if (messagesReady) {
     str6 = "text-feedback-positive";
   }
@@ -277,14 +277,14 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   if (messagesReady !== true) {
     const obj5 = { variant: "text-md/normal", color: "text-muted", children: items5 };
     items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result3 = tmp4(tmp(5234).Text, obj5);
+    tmp4Result3 = tmp4(tmp(5266).Text, obj5);
   }
   items4[4] = tmp4Result3;
   items3[2] = syncedClientThemes(closure_15, { children: items4 });
   items3[3] = "\n";
   const items6 = ["connected", ":", " ", , ];
   let str10 = str;
-  const Text4 = tmp(5234).Text;
+  const Text4 = tmp(5266).Text;
   if (connected) {
     str10 = "text-feedback-positive";
   }
@@ -298,7 +298,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   if (connected !== true) {
     const obj7 = { variant: "text-md/normal", color: "text-muted", children: items7 };
     items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
-    tmp4Result4 = tmp4(tmp(5234).Text, obj7);
+    tmp4Result4 = tmp4(tmp(5266).Text, obj7);
   }
   items6[4] = tmp4Result4;
   items3[4] = syncedClientThemes(closure_15, { children: items6 });
@@ -310,7 +310,7 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     messagesCached = !connected;
   }
   const items8 = ["should show chat indicator", ":", " ", , ];
-  const Text5 = tmp(5234).Text;
+  const Text5 = tmp(5266).Text;
   if (messagesCached) {
     str = "text-feedback-positive";
   }
@@ -566,8 +566,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
     }
     return tmp11;
   };
-  const tmpResult4 = stateFromStores(5052);
-  let obj2 = { useReducedMotion: stateFromStores, withRepeat: tmp(5052).withRepeat, withSequence: tmp(5052).withSequence, withTiming: tmp(5206).withTiming, Easing: tmp(5052).Easing };
+  const tmpResult4 = stateFromStores(5084);
+  let obj2 = { useReducedMotion: stateFromStores, withRepeat: tmp(5084).withRepeat, withSequence: tmp(5084).withSequence, withTiming: tmp(5238).withTiming, Easing: tmp(5084).Easing };
   fn3.__closure = obj2;
   fn3.__workletHash = 17454673879926;
   fn3.__initData = __initData;
@@ -581,7 +581,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       let obj3 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(tmp(1128).t.JwIJMV) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl = tmp(1128).intl;
       const tmp18 = closure_13(Text, obj3);
       cResult[7] = tmp18;
@@ -599,7 +599,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
         let tmp24;
         if (cResult[11] !== tmp19) {
           let obj4 = { onPress: openLoadingIndicatorDebugBody, children: tmp19 };
-          const tmp27 = closure_13(stateFromStores(6908).PressableOpacity, obj4);
+          const tmp27 = closure_13(stateFromStores(6940).PressableOpacity, obj4);
           cResult[11] = tmp19;
           cResult[12] = tmp27;
           tmp24 = tmp27;
@@ -653,7 +653,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
     }
     return isStaffResult;
   });
-  let obj3 = stateFromStores(5052);
+  let obj3 = stateFromStores(5084);
   const fn = function t() {
     let Easing;
     let Easing2;
@@ -691,7 +691,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
     }
     return tmp11;
   };
-  let obj4 = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(5052).withRepeat, withSequence: stateFromStores(5052).withSequence, withTiming: stateFromStores(5206).withTiming, Easing: stateFromStores(5052).Easing };
+  let obj4 = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(5084).withRepeat, withSequence: stateFromStores(5084).withSequence, withTiming: stateFromStores(5238).withTiming, Easing: stateFromStores(5084).Easing };
   fn.__closure = obj4;
   fn.__workletHash = 9356373946997;
   fn.__initData = __initData2;
@@ -701,7 +701,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
   items2 = [tmp.pulse, animatedStyle];
   items3 = [closure_13(ReanimatedRexportDefault.View, obj6), ];
   const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(stateFromStores(1128).t.JwIJMV) };
-  const Text = stateFromStores(5234).Text;
+  const Text = stateFromStores(5266).Text;
   intl = stateFromStores(1128).intl;
   items3[1] = closure_13(Text, obj7);
   const tmp8 = closure_14(View, obj5);
@@ -709,7 +709,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
   const tmp7 = closure_13;
   if (stateFromStores1) {
     const obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = tmp7(tmp2(6908).PressableOpacity, obj8);
+    tmp7Result = tmp7(tmp2(6940).PressableOpacity, obj8);
   }
   return tmp7Result;
 });

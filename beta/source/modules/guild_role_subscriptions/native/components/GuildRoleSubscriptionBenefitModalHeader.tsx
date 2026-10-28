@@ -1,22 +1,22 @@
-// Module ID: 19303
-// Function ID: 19304
+// Module ID: 19340
+// Function ID: 19341
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 16584, 5234, 1128, 9041, 6924, 7221, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 16618, 5266, 1128, 9073, 6956, 7253, 2]
 
-// Module 19303 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 19340 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9041 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16584 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7253 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9073 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16618 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/medium", color: "interactive-text-active", children: intl.string(intl3.t["ETE/oC"]) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl = tmp(1128).intl;
       const tmp11 = metroRequire(Text, obj3);
       cResult[3] = tmp11;

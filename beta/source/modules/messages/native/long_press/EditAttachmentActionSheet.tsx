@@ -1,17 +1,17 @@
-// Module ID: 13984
-// Function ID: 13985
+// Module ID: 14016
+// Function ID: 14017
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6010, 4976, 1087, 21, 558, 576, 8659, 8758, 1405, 1128, 4980, 7566, 7248, 5234, 7180, 6900, 5244, 5977, 587, 7298, 2]
+// Dependencies: [5, 32, 19, 6042, 5008, 1087, 21, 558, 576, 8691, 8790, 1405, 1128, 5012, 7598, 7280, 5266, 7212, 6932, 5276, 6009, 587, 7330, 2]
 
-// Module 13984 (EditAttachmentActionSheet)
+// Module 14016 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1087 */;
-import MessageConstants from "MessageConstants" /* 4976 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8659 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6010 */;
+import MessageStore from "MessageStore" /* 6042 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,13 +23,13 @@ let c9;
 let tmp;
 const intl7 = tmp(1128);
 const FlagUtils = tmp(1405);
-const Text_Text = tmp(5234);
-const components_Button_Button = tmp(5244);
-const Stack_Stack = tmp(5977);
-const TableCheckboxRow2 = tmp(6900);
-const TextArea2 = tmp(7180);
-const BottomSheetTitleHeader2 = tmp(7248);
-const ActionSheet2 = tmp(7298);
+const Text_Text = tmp(5266);
+const components_Button_Button = tmp(5276);
+const Stack_Stack = tmp(6009);
+const TableCheckboxRow2 = tmp(6932);
+const TextArea2 = tmp(7212);
+const BottomSheetTitleHeader2 = tmp(7280);
+const ActionSheet2 = tmp(7330);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 let MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -520,7 +520,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8758)(attachment);
+  const tmp5 = attachment(8790)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;

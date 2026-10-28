@@ -1,32 +1,32 @@
-// Module ID: 18276
-// Function ID: 18277
+// Module ID: 18313
+// Function ID: 18314
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18277, 4823, 4883, 4877, 4845, 4903, 4913, 1392, 7875, 1087, 21, 4971, 587, 558, 576, 1505, 11311, 504, 8972, 8973, 8974, 1128, 5604, 5908, 8989, 4908, 5977, 7295, 6987, 7953, 11156, 6903, 11309, 6930, 5711, 8901, 9146, 18278, 18280, 2]
+// Dependencies: [32, 5, 19, 17, 18314, 4855, 4915, 4909, 4877, 4935, 4945, 1392, 7907, 1087, 21, 5003, 587, 558, 576, 1505, 11343, 504, 9004, 9005, 9006, 1128, 5636, 5940, 9021, 4940, 6009, 7327, 7019, 7985, 11188, 6935, 11341, 6962, 5743, 8933, 9178, 18315, 18317, 2]
 
-// Module 18276 (EasyChannelPermissionSettings)
+// Module 18313 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5711 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5908 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7875 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8972 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8973 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8989 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11309 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7907 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9004 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9005 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9021 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11341 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18277 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18314 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

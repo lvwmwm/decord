@@ -1,15 +1,15 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11517
+// Function ID: 11518
 // Name: createWebViewHtmlFile
-// Dependencies: [5, 10760, 1164, 1257, 11486, 11468, 2]
+// Dependencies: [5, 10792, 1164, 1257, 11518, 11500, 2]
 // Exports: createActivityFrameInjectedJavaScript, default, deleteWebViewHtmlFile
 
-// Module 11485 (createWebViewHtmlFile)
+// Module 11517 (createWebViewHtmlFile)
 import react_nativeDefault from "react-native" /* 1164 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10760 */;
-import bridgeProtocol from "bridgeProtocol" /* 11468 */;
-import _modDef11486 from "module_11486" /* 11486 */;
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10792 */;
+import bridgeProtocol from "bridgeProtocol" /* 11500 */;
+import _modDef11518 from "module_11518" /* 11518 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function generateWebViewHtml(arg0) {
   }
   if (null != shimBridgeSecret) {
     const _JSON = JSON;
-    const tmp4 = _modDef11486;
+    const tmp4 = _modDef11518;
     const SHELL_BRIDGE_GLOBAL = bridgeProtocol.SHELL_BRIDGE_GLOBAL;
     const _JSON2 = JSON;
     const json = JSON.stringify(shimBridgeSecret);

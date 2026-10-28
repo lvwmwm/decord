@@ -1,13 +1,13 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13295
+// Function ID: 13296
 // Name: SmartSearchExperiments
-// Dependencies: [4845, 1087, 1455, 9734, 558, 576, 504, 2]
+// Dependencies: [4877, 1087, 1455, 9766, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 13263 (SmartSearchExperiments)
+// Module 13295 (SmartSearchExperiments)
 import Constants from "Constants" /* 1087 */;
-import ConversationExperiments from "ConversationExperiments" /* 9734 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import ConversationExperiments from "ConversationExperiments" /* 9766 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
   }
   const tmpResult = tmp(504);
   let stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult2 = tmp(9734);
+  const tmpResult2 = tmp(9766);
   let isConversationDebugUXEnabled = tmpResult2.useIsConversationDebugUXEnabled(arg0, location);
   if (cResult[4] !== location) {
     const obj2 = { location };

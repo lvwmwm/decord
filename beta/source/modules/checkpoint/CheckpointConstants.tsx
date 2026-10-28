@@ -1,11 +1,11 @@
-// Module ID: 6015
-// Function ID: 6016
+// Module ID: 6047
+// Function ID: 6048
 // Name: CheckpointConstants
-// Dependencies: [6016, 3088, 2]
+// Dependencies: [6048, 3088, 2]
 
-// Module 6015 (CheckpointConstants)
+// Module 6047 (CheckpointConstants)
 import _modDef3088 from "module_3088" /* 3088 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6016 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6048 */;
 import size from "module_2" /* 2 */;
 
 const obj = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };

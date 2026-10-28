@@ -1,8 +1,8 @@
-// Module ID: 8641
-// Function ID: 8642
+// Module ID: 8673
+// Function ID: 8674
 // Dependencies: [2]
 
-// Module 8641
+// Module 8673
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/clyde_small_yellow.png.js");

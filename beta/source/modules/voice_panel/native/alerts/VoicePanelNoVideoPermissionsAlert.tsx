@@ -1,13 +1,13 @@
-// Module ID: 18628
-// Function ID: 18629
+// Module ID: 18665
+// Function ID: 18666
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5914, 1128, 5914, 2]
+// Dependencies: [19, 21, 558, 576, 5946, 1128, 5946, 2]
 
-// Module 18628 (VoicePanelNoVideoPermissionsAlert)
+// Module 18665 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5914 */;
+import AlertModal2 from "AlertModal" /* 5946 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     cResult[2] = stringResult2;
   }
   if (cResult[3] !== dismissModalCallback) {
-    const AlertModal = tmp(5914).AlertModal;
+    const AlertModal = tmp(5946).AlertModal;
     const tmp13 = <AlertModal title={tmp5} content={tmp6} actions={null} />;
     cResult[3] = dismissModalCallback;
     cResult[4] = tmp13;

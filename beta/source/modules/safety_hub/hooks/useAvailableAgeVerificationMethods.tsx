@@ -1,9 +1,9 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16066
+// Function ID: 16067
 // Name: useAvailableAgeVerificationMethods
-// Dependencies: [32, 19, 558, 576, 7929, 584, 7930, 2]
+// Dependencies: [32, 19, 558, 576, 7961, 584, 7962, 2]
 
-// Module 16032 (useAvailableAgeVerificationMethods)
+// Module 16066 (useAvailableAgeVerificationMethods)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

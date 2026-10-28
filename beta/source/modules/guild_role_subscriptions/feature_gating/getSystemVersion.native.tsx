@@ -1,11 +1,11 @@
-// Module ID: 6764
-// Function ID: 6765
+// Module ID: 6796
+// Function ID: 6797
 // Name: getSystemVersion
-// Dependencies: [4928, 2]
+// Dependencies: [4960, 2]
 // Exports: getSystemVersion
 
-// Module 6764 (getSystemVersion)
-import DeviceUtils from "DeviceUtils" /* 4928 */;
+// Module 6796 (getSystemVersion)
+import DeviceUtils from "DeviceUtils" /* 4960 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/getSystemVersion.native.tsx");

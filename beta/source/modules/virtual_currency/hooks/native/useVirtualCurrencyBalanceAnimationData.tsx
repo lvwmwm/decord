@@ -1,12 +1,12 @@
-// Module ID: 13951
-// Function ID: 13952
+// Module ID: 13983
+// Function ID: 13984
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4972, 558, 576, 504, 6660, 2]
+// Dependencies: [32, 19, 5004, 558, 576, 504, 6692, 2]
 
-// Module 13951 (useVirtualCurrencyBalanceAnimationData)
+// Module 13983 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

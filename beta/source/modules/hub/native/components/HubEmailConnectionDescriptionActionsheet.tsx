@@ -1,17 +1,17 @@
-// Module ID: 13681
-// Function ID: 13682
+// Module ID: 13713
+// Function ID: 13714
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4971, 558, 576, 7248, 1128, 5234, 5265, 2]
+// Dependencies: [19, 21, 5003, 558, 576, 7280, 1128, 5266, 5297, 2]
 
-// Module 13681 (HubEmailConnectionDescriptionActionsheet)
+// Module 13713 (HubEmailConnectionDescriptionActionsheet)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7280 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   const tmp4 = closure_4();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t["48kg+O"]) };
-    const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7280).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp7 = React2(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;

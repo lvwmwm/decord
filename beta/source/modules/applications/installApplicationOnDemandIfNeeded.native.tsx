@@ -1,10 +1,10 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11436
+// Function ID: 11437
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2024, 2045, 1087, 11405, 6809, 5603, 5711, 5159, 10744, 2]
+// Dependencies: [5, 2024, 2045, 1087, 11437, 6841, 5635, 5743, 5191, 10776, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11404 (installApplicationOnDemandIfNeeded)
+// Module 11436 (installApplicationOnDemandIfNeeded)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;

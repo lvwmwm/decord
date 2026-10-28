@@ -1,15 +1,15 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17608
+// Function ID: 17609
 // Name: useFavoritesCleanupActivity
-// Dependencies: [32, 19, 6771, 558, 576, 6822, 504, 1128, 3412, 1104, 2]
+// Dependencies: [32, 19, 6803, 558, 576, 6854, 504, 1128, 3444, 1104, 2]
 
-// Module 17571 (useFavoritesCleanupActivity)
+// Module 17608 (useFavoritesCleanupActivity)
 import DurationsDefault from "Durations" /* 1104 */;
-import _modDef3412 from "module_3412" /* 3412 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6822 */;
+import _modDef3444 from "module_3444" /* 3444 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       const _Math = Math;
       const _Math2 = Math;
       const obj2 = { days: Math.max(0, Math.floor(diff / DurationsDefault.Millis.DAY)) };
-      const IzxPdG = _modDef3412.IzxPdG;
+      const IzxPdG = _modDef3444.IzxPdG;
       diff = first - stateFromStores;
       formatToPlainStringResult = formatToPlainString(IzxPdG, obj2);
     }
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     if (archived1) {
       const intl3 = tmp(1128).intl;
       const obj3 = { activity: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3412.Dr1FWM, obj3);
+      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3444.Dr1FWM, obj3);
     }
     const threadMetadata3 = threadMetadata.threadMetadata;
     let archived2;
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     tmp12 = formatToPlainStringResult1;
   }
   const intl = tmp(1128).intl;
-  formatToPlainStringResult = intl.string(_modDef3412.rYws6y);
+  formatToPlainStringResult = intl.string(_modDef3444.rYws6y);
 }) : (function useFavoritesCleanupActivity(threadMetadata) {
   let diff;
   _require = threadMetadata;
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       const _Math = Math;
       const _Math2 = Math;
       const obj2 = { days: Math.max(0, Math.floor(diff / DurationsDefault.Millis.DAY)) };
-      const IzxPdG = _modDef3412.IzxPdG;
+      const IzxPdG = _modDef3444.IzxPdG;
       diff = first - stateFromStores;
       formatToPlainStringResult = formatToPlainString(IzxPdG, obj2);
     }
@@ -132,12 +132,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     if (archived) {
       const intl3 = tmp2(1128).intl;
       const obj3 = { activity: formatToPlainStringResult };
-      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3412.Dr1FWM, obj3);
+      formatToPlainStringResult1 = intl3.formatToPlainString(_modDef3444.Dr1FWM, obj3);
     }
     return formatToPlainStringResult1;
   }
   const intl = tmp2(1128).intl;
-  formatToPlainStringResult = intl.string(_modDef3412.rYws6y);
+  formatToPlainStringResult = intl.string(_modDef3444.rYws6y);
 });
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesCleanupActivity.tsx");
 

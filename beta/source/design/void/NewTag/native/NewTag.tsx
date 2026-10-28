@@ -1,20 +1,20 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15429
+// Function ID: 15430
 // Name: NewTag
-// Dependencies: [109, 19, 17, 1087, 21, 4971, 587, 558, 576, 1128, 5234, 5258, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 5003, 587, 558, 576, 1128, 5266, 5290, 2]
 
-// Module 15395 (NewTag)
+// Module 15429 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import LinearGradientDefault from "LinearGradient" /* 5290 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTag(arg0)
             }
           }
         }
-        const Text2 = tmp(5234).Text;
+        const Text2 = tmp(5266).Text;
         const merged = Object.assign(tmp9);
         const tmp47 = <Text2 variant={str} color={str2} style={tmp38}>{tmp40}</Text2>;
         cResult[20] = str2;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTag(arg0)
             }
           }
         }
-        const Text = tmp(5234).Text;
+        const Text = tmp(5266).Text;
         const merged1 = Object.assign(tmp9);
         const tmp30 = <Text variant={str} color={str2} style={tmp21}>{tmp23}</Text>;
         cResult[39] = str2;

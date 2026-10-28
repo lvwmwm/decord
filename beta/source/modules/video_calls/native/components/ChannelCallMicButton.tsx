@@ -1,19 +1,19 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11674
+// Function ID: 11675
 // Name: ChannelCallMicButton
-// Dependencies: [19, 5715, 21, 558, 576, 7453, 504, 11643, 11644, 1128, 11647, 11648, 587, 11381, 2]
+// Dependencies: [19, 5747, 21, 558, 576, 7485, 504, 11675, 11676, 1128, 11679, 11680, 587, 11413, 2]
 
-// Module 11642 (ChannelCallMicButton)
+// Module 11674 (ChannelCallMicButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import useMuteStatesDefault from "useMuteStates" /* 7453 */;
-import CallBarActionAll from "CallBarAction" /* 11381 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 11643 */;
-import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 11644 */;
+import useMuteStatesDefault from "useMuteStates" /* 7485 */;
+import CallBarActionAll from "CallBarAction" /* 11413 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11675 */;
+import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 11676 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5715 */;
+import GameConsoleStore from "GameConsoleStore" /* 5747 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
     } else {
       tmp16 = cResult[7];
     }
-    const tmp5Result = importDefault(mute ? 11647 : 11648);
+    const tmp5Result = importDefault(mute ? 11679 : 11680);
     if (!tmp4) {
       tmp4 = mute;
     }
@@ -132,13 +132,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
   const items = [GameConsoleStore];
   const obj = mute(504);
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const obj2 = mute(11643);
+  const obj2 = mute(11675);
   const muteHandler = obj2.createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const onPress = muteHandler.onPress;
   const memo = react.useMemo(() => jsx(VoicePanelRiveMicButton.VoicePanelRiveMicButton, { muted: mute }), items1);
-  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1128).t.B3zz0G), onPress, source: importDefault(mute ? 11647 : 11648), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
+  const obj3 = { appearsDisabled: stateFromStores, accessibilityLabel: intl.string(mute(1128).t.B3zz0G), onPress, source: importDefault(mute ? 11679 : 11680), isActive: flag, isSmallSize, lottieComponent: memo, tintColor: RED_400 };
   const ToggledActionButton = CallBarActionAll.ToggledActionButton;
   intl = mute(1128).intl;
   const tmp7 = jsx;

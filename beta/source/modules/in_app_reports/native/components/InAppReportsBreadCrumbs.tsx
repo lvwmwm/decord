@@ -1,17 +1,17 @@
-// Module ID: 14583
-// Function ID: 14584
+// Module ID: 14615
+// Function ID: 14616
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [32, 109, 19, 17, 21, 4971, 587, 558, 576, 12, 8111, 1128, 2670, 5234, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5003, 587, 558, 576, 12, 8143, 1128, 2670, 5266, 2]
 
-// Module 14583 (InAppReportsBreadCrumbs)
+// Module 14615 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5266 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Breadcrumbs(
         const container = tmp5.container;
         if (cResult[2] !== menuName) {
           let stringResult;
-          const REPORT_TO_MOD = tmp(8111).ReportMenuTypeSets.REPORT_TO_MOD;
+          const REPORT_TO_MOD = tmp(8143).ReportMenuTypeSets.REPORT_TO_MOD;
           const hasItem = REPORT_TO_MOD.has(menuName);
           const intl = tmp(1128).intl;
           const string = intl.string;
@@ -156,7 +156,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Breadcrumbs(
           tmp16 = tmp18;
         }
         let obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp9 };
-        const tmp14 = closure_7(tmp(5234).Text, obj4);
+        const tmp14 = closure_7(tmp(5266).Text, obj4);
         cResult[4] = tmp5.title;
         cResult[5] = tmp9;
         cResult[6] = tmp14;

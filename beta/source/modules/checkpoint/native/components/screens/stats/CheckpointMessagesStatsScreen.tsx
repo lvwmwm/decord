@@ -1,20 +1,20 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13018
+// Function ID: 13019
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 12954, 6015, 21, 4971, 587, 558, 576, 504, 12957, 1128, 3088, 3056, 12974, 12977, 12987, 12988, 8542, 12972, 12980, 12982, 12985, 2]
+// Dependencies: [17, 12986, 6047, 21, 5003, 587, 558, 576, 504, 12989, 1128, 3088, 3056, 13006, 13009, 13019, 13020, 8574, 13004, 13012, 13014, 13017, 2]
 
-// Module 12986 (CheckpointMessagesStatsScreen)
+// Module 13018 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
-import ChatIcon from "ChatIcon" /* 8542 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12957 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12985 */;
-import CheckpointStore from "CheckpointStore" /* 12954 */;
+import CheckpointConstants from "CheckpointConstants" /* 6047 */;
+import ChatIcon from "ChatIcon" /* 8574 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 12989 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13017 */;
+import CheckpointStore from "CheckpointStore" /* 12986 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -257,11 +257,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
       formatToPlainStringResult = intl2.formatToPlainString(tmp33(3088).TOMBAW, obj6);
     }
   }
-  const tmp33Result = tmp33(12974);
+  const tmp33Result = tmp33(13006);
   const container = tmp4.container;
   if (cResult[26] !== tmp4.image) {
-    const obj7 = { animatedUri: tmp33(12987), staticUri: tmp33(12988), style: tmp4.image };
-    const tmp33Result3 = tmp33(12977);
+    const obj7 = { animatedUri: tmp33(13019), staticUri: tmp33(13020), style: tmp4.image };
+    const tmp33Result3 = tmp33(13009);
     const tmp40 = metroRequire(tmp33Result3, obj7);
     cResult[26] = tmp4.image;
     cResult[27] = tmp40;
@@ -302,14 +302,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
         }
         if (roundResult <= 0 && null != stateFromStores1) {
           const obj9 = { value: stateFromStores1 };
-          tmp54Result = tmp54(tmp33(12980), obj9);
+          tmp54Result = tmp54(tmp33(13012), obj9);
         } else {
           const _HermesInternal = HermesInternal;
-          const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp4.number, children: metroRequire(tmp33(12982), obj11) };
+          const obj10 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp4.number, children: metroRequire(tmp33(13014), obj11) };
           obj11 = { end: roundResult };
           tmp54Result = tmp54(tmp36, obj10);
         }
-        const tmp33Result4 = tmp33(12972);
+        const tmp33Result4 = tmp33(13004);
         if (roundResult <= 0 && null != stateFromStores1) {
           const intl5 = tmp(1128).intl;
           const formatToPlainString = intl5.formatToPlainString;
@@ -388,7 +388,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
       tmp51 = tmp53;
     }
     const obj16 = { variant: "heading-md/extrabold", style: titleText, children: toLocaleUpperCaseResult };
-    const tmp50 = metroRequire(tmp33(12972), obj16);
+    const tmp50 = metroRequire(tmp33(13004), obj16);
     cResult[32] = tmp4.titleText;
     cResult[33] = toLocaleUpperCaseResult;
     cResult[34] = tmp50;
@@ -478,9 +478,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   }
   const obj4 = { style: tmp.container, children: items2 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp12Result4, obj6) };
-  obj6 = { animatedUri: tmp12(12987), staticUri: tmp12(12988), style: tmp.image };
-  const tmp12Result = tmp12(12974);
-  tmp12Result4 = tmp12(12977);
+  obj6 = { animatedUri: tmp12(13019), staticUri: tmp12(13020), style: tmp.image };
+  const tmp12Result = tmp12(13006);
+  tmp12Result4 = tmp12(13009);
   items2 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items3 };
   items3 = [, ];
@@ -488,21 +488,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items3[0] = metroRequire(ChatIcon.ChatIcon, obj9);
   const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp12Result5 = tmp12(12972);
+  const tmp12Result5 = tmp12(13004);
   items3[1] = metroRequire(tmp12Result5, obj10);
   items4 = [metroImportDefault(View, obj8), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj11 = { value: stateFromStores1 };
-    tmp14Result = tmp14(tmp12(12980), obj11);
+    tmp14Result = tmp14(tmp12(13012), obj11);
   } else {
     const _HermesInternal = HermesInternal;
-    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp12(12982), obj13) };
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp12(13014), obj13) };
     obj13 = { end: roundResult };
     tmp14Result = tmp14(tmp17, obj12);
   }
   items4[1] = tmp14Result;
   const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp12Result6 = tmp12(12972);
+  const tmp12Result6 = tmp12(13004);
   if (roundResult <= 0 && null != stateFromStores1) {
     const intl5 = tmp2(1128).intl;
     const formatToPlainString = intl5.formatToPlainString;

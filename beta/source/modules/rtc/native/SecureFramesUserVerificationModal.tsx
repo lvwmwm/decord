@@ -1,26 +1,26 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9233
+// Function ID: 9234
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [19, 17, 4823, 1392, 9197, 1087, 1206, 21, 4971, 587, 558, 576, 504, 5989, 9202, 9204, 9177, 9205, 9196, 6672, 5663, 1128, 9206, 9199, 8851, 7253, 8668, 9207, 6928, 6908, 5234, 5977, 9208, 7233, 9210, 5244, 7221, 2]
+// Dependencies: [19, 17, 4855, 1392, 9229, 1087, 1206, 21, 5003, 587, 558, 576, 504, 6021, 9234, 9236, 9209, 9237, 9228, 6704, 5695, 1128, 9238, 9231, 8883, 7285, 8700, 9239, 6960, 6940, 5266, 6009, 9240, 7265, 9242, 5276, 7253, 2]
 
-// Module 9201 (SecureFramesUserVerificationModal)
+// Module 9233 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
 import FormConstants from "FormConstants" /* 1206 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import showShareActionSheet from "showShareActionSheet" /* 8851 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9196 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9199 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import showShareActionSheet from "showShareActionSheet" /* 8883 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9228 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9231 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import UserStore from "UserStore" /* 1392 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9197 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9229 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

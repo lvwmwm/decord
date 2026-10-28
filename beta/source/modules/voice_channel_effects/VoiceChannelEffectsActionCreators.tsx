@@ -1,15 +1,15 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7486
+// Function ID: 7487
 // Name: VoiceChannelEffectsActionCreators
-// Dependencies: [6725, 4874, 7455, 7456, 1087, 6008, 12, 7457, 1297, 7480, 7278, 7445, 2]
+// Dependencies: [6757, 4906, 7487, 7488, 1087, 6040, 12, 7489, 1297, 7512, 7310, 7477, 2]
 // Exports: sendVoiceChannelCustomCallSoundEffect, sendVoiceChannelSoundboardEcho, sendVoiceChannelSoundboardEffect
 
-// Module 7454 (VoiceChannelEffectsActionCreators)
-import SoundboardConstants from "SoundboardConstants" /* 6008 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7456 */;
-import EmojiStore from "EmojiStore" /* 6725 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 7455 */;
+// Module 7486 (VoiceChannelEffectsActionCreators)
+import SoundboardConstants from "SoundboardConstants" /* 6040 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7488 */;
+import EmojiStore from "EmojiStore" /* 6757 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
+import VoiceChannelEffectsPersistedStore from "VoiceChannelEffectsPersistedStore" /* 7487 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -47,8 +47,8 @@ export const sendVoiceChannelCustomCallSoundEffect = function sendVoiceChannelCu
 
   });
   const items = [];
-  const tmp7 = abortController(7480);
-  items[0] = abortController(7278).CHANNEL_CALL;
+  const tmp7 = abortController(7512);
+  items[0] = abortController(7310).CHANNEL_CALL;
   tmp7(items, arg2, sound, require("SoundboardTypes").AnalyticsSoundType.ENTRY);
 };
 export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundboardEffect(arg0, emojiId, arg2, arg3, arg4) {
@@ -85,7 +85,7 @@ export const sendVoiceChannelSoundboardEffect = function sendVoiceChannelSoundbo
   postResult.then(closure_8, () => {
 
   });
-  const tmp9 = abortController(7480);
+  const tmp9 = abortController(7512);
   if (arg3 == null) {
     items = [];
   }
@@ -110,9 +110,9 @@ export const sendVoiceChannelSoundboardEcho = function sendVoiceChannelSoundboar
 
   });
   const tmp2 = _require;
-  const tmp6 = abortController(7480);
+  const tmp6 = abortController(7512);
   if (arg3 == null) {
     items = [];
   }
-  tmp6(items, arg2, soundId, tmp2(7445).AnalyticsSoundType.ECHO);
+  tmp6(items, arg2, soundId, tmp2(7477).AnalyticsSoundType.ECHO);
 };

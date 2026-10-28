@@ -1,26 +1,26 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10771
+// Function ID: 10772
 // Name: conjurePreviewConnection
-// Dependencies: [5, 1392, 6773, 10740, 10742, 10785, 10762, 584, 10786, 10727, 10717, 10720, 10791, 10719, 10793, 10794, 10795, 2]
+// Dependencies: [5, 1392, 6805, 10772, 10774, 10817, 10794, 584, 10818, 10759, 10749, 10752, 10823, 10751, 10825, 10826, 10827, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 10739 (conjurePreviewConnection)
+// Module 10771 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10717 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10740 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10742 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10762 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10785 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10786 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 10791 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10793 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10795 */;
+import conjureChatConnection from "conjureChatConnection" /* 10749 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10752 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10772 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10774 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10794 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10817 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10818 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 10823 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10825 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10827 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_3, currentUser;
@@ -750,7 +750,7 @@ let obj2 = {
       });
       const tmp4 = require;
       if (true === has_activity.has_activity) {
-        const tmp4Result = tmp4(10727);
+        const tmp4Result = tmp4(10759);
         const result1 = tmp4Result.prefetchConjurePreviewTicket(projectId, { known: true });
       }
     }

@@ -1,25 +1,25 @@
-// Module ID: 16885
-// Function ID: 16886
+// Module ID: 16919
+// Function ID: 16920
 // Name: AppIconRows
-// Dependencies: [32, 13136, 19, 17, 1392, 9865, 21, 4971, 558, 576, 9866, 6987, 1128, 16886, 14767, 504, 1991, 16887, 2]
+// Dependencies: [32, 13168, 19, 17, 1392, 9897, 21, 5003, 558, 576, 9898, 7019, 1128, 16920, 14799, 504, 1991, 16921, 2]
 
-// Module 16885 (AppIconRows)
+// Module 16919 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import AppIconConstants from "AppIconConstants" /* 9865 */;
-import AppIconTypes from "AppIconTypes" /* 9866 */;
-import AppIconUtils from "AppIconUtils" /* 14767 */;
-import AppIconRowDefault from "AppIconRow" /* 16886 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16887 */;
+import AppIconConstants from "AppIconConstants" /* 9897 */;
+import AppIconTypes from "AppIconTypes" /* 9898 */;
+import AppIconUtils from "AppIconUtils" /* 14799 */;
+import AppIconRowDefault from "AppIconRow" /* 16920 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13136 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13168 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
     onLongPress = cResult[0];
   }
   const container = tmp6.container;
-  const TableRowGroup = tmp(6987).TableRowGroup;
+  const TableRowGroup = tmp(7019).TableRowGroup;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(tmp(1128).t.N4YDao);
@@ -149,7 +149,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(6987).TableRowGroup;
+    TableRowGroup = merged(7019).TableRowGroup;
     intl = merged(1128).intl;
     return closure_10(View, obj);
   }

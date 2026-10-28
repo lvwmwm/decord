@@ -1,14 +1,14 @@
-// Module ID: 18513
-// Function ID: 18514
+// Module ID: 18550
+// Function ID: 18551
 // Name: ExpressionPickerStore
-// Dependencies: [1243, 6673, 1269, 5164, 1274, 2]
+// Dependencies: [1243, 6705, 1269, 5196, 1274, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 18513 (ExpressionPickerStore)
+// Module 18550 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
-import uniqueIdDefault from "uniqueId" /* 6673 */;
+import uniqueIdDefault from "uniqueId" /* 6705 */;
 import module_1269_mod from "module_1269" /* 1269 */;
-import combine from "combine" /* 5164 */;
+import combine from "combine" /* 5196 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

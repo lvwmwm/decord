@@ -1,25 +1,25 @@
-// Module ID: 18059
-// Function ID: 18060
+// Module ID: 18096
+// Function ID: 18097
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13237, 4823, 9712, 10024, 21, 587, 4971, 558, 576, 504, 13184, 18060, 7253, 7278, 1505, 13333, 5267, 7038, 1633, 1384, 4928, 7584, 13248, 13223, 5052, 5206, 5209, 5247, 13257, 5159, 18061, 18071, 18187, 18189, 18190, 18191, 5939, 5297, 2]
+// Dependencies: [19, 17, 13269, 4855, 9744, 10056, 21, 587, 5003, 558, 576, 504, 13216, 18097, 7285, 7310, 1505, 13365, 5299, 7070, 1633, 1384, 4960, 7616, 13280, 13255, 5084, 5238, 5241, 5279, 13289, 5191, 18098, 18108, 18224, 18226, 18227, 18228, 5971, 5329, 2]
 
-// Module 18059 (ChannelDetails)
+// Module 18096 (ChannelDetails)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import timing from "timing" /* 5206 */;
-import timingPresets from "timingPresets" /* 5209 */;
-import spring from "spring" /* 5247 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13223 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13248 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 13257 */;
+import timing from "timing" /* 5238 */;
+import timingPresets from "timingPresets" /* 5241 */;
+import spring from "spring" /* 5279 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13255 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13280 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 13289 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 13237 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9712 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10024 */;
+import SearchQueryStore from "SearchQueryStore" /* 13269 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9744 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10056 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(4928);
+const DeviceUtils = tmp(4960);
 let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);

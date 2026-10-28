@@ -1,13 +1,13 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11774
+// Function ID: 11775
 // Name: handleConjureRoute
-// Dependencies: [4830, 5153, 5150, 11743, 2]
+// Dependencies: [4862, 5185, 5182, 11775, 2]
 // Exports: default
 
-// Module 11742 (handleConjureRoute)
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import useChatLayout from "useChatLayout" /* 5153 */;
-import openConjureModalDefault from "openConjureModal" /* 11743 */;
+// Module 11774 (handleConjureRoute)
+import ChannelConstants from "ChannelConstants" /* 4862 */;
+import useChatLayout from "useChatLayout" /* 5185 */;
+import openConjureModalDefault from "openConjureModal" /* 11775 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
@@ -24,7 +24,7 @@ export default function handleConjureRoute(guildId, channelId, arg2, arg3) {
         }
       } else if (null == arg2) {
         const obj = { screen: "guilds", guildId, channelId };
-        const tmp8Result = tmp8(5150);
+        const tmp8Result = tmp8(5182);
         tmp8Result.navigateToRootTab(obj);
       }
       openConjureModalDefault(guildId);

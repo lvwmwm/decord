@@ -1,20 +1,20 @@
-// Module ID: 5152
-// Function ID: 5153
+// Module ID: 5184
+// Function ID: 5185
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 5006, 4874, 1087, 3, 5153, 1114, 5007, 5020, 5156, 2]
+// Dependencies: [32, 502, 5038, 4906, 1087, 3, 5185, 1114, 5039, 5052, 5188, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 5152 (getInitialNavigationState)
+// Module 5184 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
 import router_utils from "router_utils" /* 1114 */;
-import matchPathCompat from "matchPathCompat" /* 5007 */;
-import RouteUtils from "RouteUtils" /* 5020 */;
-import useChatLayout from "useChatLayout" /* 5153 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5156 */;
+import matchPathCompat from "matchPathCompat" /* 5039 */;
+import RouteUtils from "RouteUtils" /* 5052 */;
+import useChatLayout from "useChatLayout" /* 5185 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5188 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5006 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(5020).RouteParam;
+      const RouteParam3 = tmp(5052).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(5020).RouteParam;
+      RouteParam4 = tmp(5052).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {

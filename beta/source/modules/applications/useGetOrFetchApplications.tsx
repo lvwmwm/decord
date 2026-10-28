@@ -1,15 +1,15 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7289
+// Function ID: 7290
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 2045, 1087, 558, 576, 568, 6809, 12, 1388, 504, 2]
+// Dependencies: [19, 2045, 1087, 558, 576, 568, 6841, 12, 1388, 504, 2]
 
-// Module 7257 (useGetOrFetchApplications)
+// Module 7289 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6809 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6841 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

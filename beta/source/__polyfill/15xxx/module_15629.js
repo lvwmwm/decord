@@ -1,9 +1,10 @@
 // Module ID: 15629
 // Function ID: 15630
-// Dependencies: [15617]
+// Dependencies: []
 
 // Module 15629
-import _mod15617 from "module_15617" /* 15617 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-
-export const URLSearchParams = _mod15617.URLSearchParams;
+export default tmp;

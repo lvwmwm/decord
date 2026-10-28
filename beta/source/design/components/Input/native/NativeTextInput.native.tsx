@@ -1,15 +1,15 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 7058
+// Function ID: 7059
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7027, 5263, 5267, 7028, 5037, 5139, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 7059, 5295, 5299, 7060, 5069, 5171, 2]
 // Exports: NativeTextInput
 
-// Module 7026 (NativeTextInput)
+// Module 7058 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import native from "native" /* 5037 */;
-import native2 from "native" /* 5139 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7028 */;
+import native from "native" /* 5069 */;
+import native2 from "native" /* 5171 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7060 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5263);
+const useMountEffect = tmp(5295);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;

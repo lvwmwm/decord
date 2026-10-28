@@ -1,9 +1,9 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15459
+// Function ID: 15460
 // Name: void/Badge/Badge
-// Dependencies: [19, 17, 2068, 1087, 1204, 21, 4971, 587, 1384, 558, 576, 4978, 504, 5234, 1903, 8966, 2]
+// Dependencies: [19, 17, 2068, 1087, 1204, 21, 5003, 587, 1384, 558, 576, 5010, 504, 5266, 1903, 8998, 2]
 
-// Module 15425 (void/Badge/Badge)
+// Module 15459 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,12 +11,12 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
-import shared from "shared" /* 4978 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8966 */;
+import shared from "shared" /* 5010 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8998 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import BadgeConstants from "BadgeConstants" /* 1204 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -214,7 +214,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0
                   } else if (flag) {
                     const obj5 = { variant: "experimental/body-xs/semibold", color: "none", style: items2, lineClamp: 1, allowFontScaling: false, children: tmpResult5.humanizeValue(Math.min(value, num), stateFromStores) };
                     items2 = [tmp8.experimentalBadgeText, textStyle];
-                    const Text = tmp(5234).Text;
+                    const Text = tmp(5266).Text;
                     const _Math2 = Math;
                     tmpResult5 = NumberUtils;
                     tmp20Result = tmp20(Text, obj5);

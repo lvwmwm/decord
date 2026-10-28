@@ -1,24 +1,24 @@
-// Module ID: 18716
-// Function ID: 18717
+// Module ID: 18753
+// Function ID: 18754
 // Name: CaptchaModal
-// Dependencies: [19, 17, 17362, 17363, 21, 4971, 558, 576, 7037, 1506, 18717, 6466, 18718, 17370, 18721, 1128, 5234, 5244, 5265, 5977, 2]
+// Dependencies: [19, 17, 17399, 17400, 21, 5003, 558, 576, 7069, 1506, 18754, 6498, 18755, 17407, 18758, 1128, 5266, 5276, 5297, 6009, 2]
 
-// Module 18716 (CaptchaModal)
+// Module 18753 (CaptchaModal)
 import intl4 from "intl" /* 1128 */;
 import Link from "Link" /* 1506 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6466 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17362 */;
-import RegistrationUtils from "RegistrationUtils" /* 17370 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 18718 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18721 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
+import Stack_Stack from "Stack/Stack" /* 6009 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6498 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17399 */;
+import RegistrationUtils from "RegistrationUtils" /* 17407 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 18755 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18758 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 17363 */;
+import RegistrationConstants from "RegistrationConstants" /* 17400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -188,7 +188,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let tmp = dependencyMap;
-  const tmp2 = closure_11(onReject(7037)());
+  const tmp2 = closure_11(onReject(7069)());
   let obj = Link;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     }
     return str;
   }, items);
-  let closure_9 = onReject(18717)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(18754)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);
@@ -226,7 +226,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   }
   const items2 = [tmp7(Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
-  const Text2 = tmp3(5234).Text;
+  const Text2 = tmp3(5266).Text;
   if (bodyText == null) {
     const intl2 = tmp3(1128).intl;
     bodyText = intl2.string(tmp3(1128).t["/CidxO"]);
@@ -284,7 +284,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     },
     text: intl3.string(intl4.t["cY+Oob"])
   };
-  const Button = tmp3(5244).Button;
+  const Button = tmp3(5276).Button;
   intl3 = tmp3(1128).intl;
   items1[2] = closure_9(Button, obj6);
   return closure_9(BottomSheet, obj4);

@@ -1,13 +1,13 @@
-// Module ID: 12295
-// Function ID: 12296
+// Module ID: 12327
+// Function ID: 12328
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 6773, 6774, 3830, 12296, 11809, 12297, 12298, 11813, 11880, 10720, 1128, 2]
+// Dependencies: [5, 32, 19, 6805, 6806, 3862, 12328, 11841, 12329, 12330, 11845, 11912, 10752, 1128, 2]
 // Exports: default
 
-// Module 12295 (useConjurePublishPanel)
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
+// Module 12327 (useConjurePublishPanel)
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,16 +18,16 @@ let _require, c1, c4, closure_2, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3830.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3862.UnoAgo];
 let items1 = [items, , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3830["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3862["I88/iG"]];
 items1[1] = items2;
-const items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3830.gXY1x1];
+const items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3862.gXY1x1];
 items1[2] = items3;
-const items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3830.Q9ruoM];
+const items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3862.Q9ruoM];
 items1[3] = items4;
-let obj = { screen_capture: _modDef3830["8/7kE7"], connect_user_to_voice: _modDef3830.uvDWXa };
-let obj2 = { initial: _modDef3830.NUZBwo, notPublished: _modDef3830.Gdz7pg, published: _modDef3830["6E9W4F"] };
+let obj = { screen_capture: _modDef3862["8/7kE7"], connect_user_to_voice: _modDef3862.uvDWXa };
+let obj2 = { initial: _modDef3862.NUZBwo, notPublished: _modDef3862.Gdz7pg, published: _modDef3862["6E9W4F"] };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {

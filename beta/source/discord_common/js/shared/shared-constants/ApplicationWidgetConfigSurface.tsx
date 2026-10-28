@@ -1,9 +1,9 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11905
+// Function ID: 11906
 // Name: ApplicationWidgetConfigSurface
 // Dependencies: [2]
 
-// Module 11873 (ApplicationWidgetConfigSurface)
+// Module 11905 (ApplicationWidgetConfigSurface)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConfigSurface.tsx");

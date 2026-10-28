@@ -1,14 +1,14 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7254
+// Function ID: 7255
 // Name: usePromptHelpText
-// Dependencies: [4823, 4877, 4903, 4913, 1392, 1087, 1128, 558, 576, 504, 5604, 2]
+// Dependencies: [4855, 4909, 4935, 4945, 1392, 1087, 1128, 558, 576, 504, 5636, 2]
 
-// Module 7222 (usePromptHelpText)
+// Module 7254 (usePromptHelpText)
 import Constants from "Constants" /* 1087 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7515
+// Function ID: 7516
 // Name: canChannelUseSoundboard
-// Dependencies: [4823, 4903, 4874, 1087, 558, 576, 504, 2]
+// Dependencies: [4855, 4935, 4906, 1087, 558, 576, 504, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default
 
-// Module 7483 (canChannelUseSoundboard)
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+// Module 7515 (canChannelUseSoundboard)
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

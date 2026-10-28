@@ -1,21 +1,21 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10179
+// Function ID: 10180
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 10132, 10136, 1499, 5210, 5663, 1128, 10148, 7285, 5662, 5244, 5669, 6696, 5265, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 10164, 10168, 1499, 5242, 5695, 1128, 10180, 7317, 5694, 5276, 5701, 6728, 5297, 2]
 
-// Module 10147 (GIFPickerItemActionSheet)
+// Module 10179 (GIFPickerItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10132 */;
-import GifIcon from "GifIcon" /* 10148 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import ToastUtils from "ToastUtils" /* 5694 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import ClipboardUtils from "ClipboardUtils" /* 7317 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10164 */;
+import GifIcon from "GifIcon" /* 10180 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
   item = item.item;
   const tmp4 = closure_7();
   if (cResult[0] !== item.url) {
-    const tmpResult = tmp(10132);
+    const tmpResult = tmp(10164);
     const gifUrlKeyResult = tmpResult.gifUrlKey(item.url);
     cResult[0] = item.url;
     cResult[1] = gifUrlKeyResult;
@@ -56,7 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(10136);
+  const tmpResult2 = tmp(10168);
   const isFavoriteGIF = tmpResult2.useIsFavoriteGIF(tmp5);
   ({ width, height } = isFavoriteGIF(1499)());
   const tmp8 = isFavoriteGIF(1499)();
@@ -415,8 +415,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerIte
             items1 = [tmp25, tmp29];
             cResult[27] = tmp25;
             cResult[28] = tmp29;
-            cResult[29] = closure_6(tmp(6696).ButtonGroup, obj3);
-            const tmp32 = closure_6(tmp(6696).ButtonGroup, obj3);
+            cResult[29] = closure_6(tmp(6728).ButtonGroup, obj3);
+            const tmp32 = closure_6(tmp(6728).ButtonGroup, obj3);
           }
           class P {
             constructor() {

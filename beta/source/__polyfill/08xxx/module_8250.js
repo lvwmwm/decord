@@ -1,33 +1,26 @@
 // Module ID: 8250
 // Function ID: 8251
-// Dependencies: []
+// Dependencies: [8251, 8249]
 
 // Module 8250
-let obj = {
-  get(arg0) {
-    const tmp = arg0;
+import _modDef8249 from "module_8249" /* 8249 */;
+import _modDef8251 from "module_8251" /* 8251 */;
+
+
+export default {
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
     if (tmp) {
-      return arg0;
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef8251.LITTLE_ENDIAN) === 42;
+    }
+    return tmp;
+  },
+  findTiffOffsets() {
+    if (_modDef8249.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
     } else {
-      if (typeof globalThis.DOMParser !== "undefined") {
-        const DOMParser2 = globalThis.DOMParser;
-        const self3 = this;
-        const self4 = this;
-        const dOMParser = new globalThis.DOMParser();
-        return dOMParser;
-      } else {
-        try {
-          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
-          const self = this;
-          const self2 = this;
-          const obj = { onError: result.onErrorStopParsing };
-          const dOMParser1 = new result.DOMParser(obj);
-          return dOMParser1;
-        } catch (err) {
-        }
-      }
+      return {};
     }
   }
 };
-
-export default obj;

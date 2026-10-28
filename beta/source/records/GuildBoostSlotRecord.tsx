@@ -1,9 +1,9 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8402
+// Function ID: 8403
 // Name: GuildBoostSlotRecord
 // Dependencies: [1407, 2]
 
-// Module 8370 (GuildBoostSlotRecord)
+// Module 8402 (GuildBoostSlotRecord)
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

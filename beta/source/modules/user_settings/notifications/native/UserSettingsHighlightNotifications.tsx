@@ -1,18 +1,18 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 16915
+// Function ID: 16916
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 4845, 6701, 6704, 1087, 21, 558, 576, 7215, 7210, 504, 6883, 7295, 8951, 2]
+// Dependencies: [19, 4877, 6733, 6736, 1087, 21, 558, 576, 7247, 7242, 504, 6915, 7327, 8983, 2]
 
-// Module 16881 (UserSettingsHighlightNotifications)
+// Module 16915 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7210 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7215 */;
+import GuildIconDefault from "GuildIcon" /* 6915 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7242 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7247 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import SortedGuildStore from "SortedGuildStore" /* 6701 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import SortedGuildStore from "SortedGuildStore" /* 6733 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(gui
         }
       }
     }
-    const tmp20 = jsx(guildId(7295).TableSwitchRow, { label: name, icon: tmp14, value: !muted, onValueChange: tmp4, start: isStart, end: isEnd });
+    const tmp20 = jsx(guildId(7327).TableSwitchRow, { label: name, icon: tmp14, value: !muted, onValueChange: tmp4, start: isStart, end: isEnd });
     cResult[8] = tmp14;
     cResult[9] = isEnd;
     cResult[10] = isStart;
@@ -155,7 +155,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(gui
     }
     const tmp7 = !muted;
     jsx(GuildIconDefault, { guild });
-    return jsx(tmp2(7295).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
+    return jsx(tmp2(7327).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (0 !== stateFromStoresArray.length) {
     let tmp11;
     if (cResult[6] !== tmp7) {
-      const tmp13 = jsx(stateFromStoresArray(8951).Form, { children: tmp7 });
+      const tmp13 = jsx(stateFromStoresArray(8983).Form, { children: tmp7 });
       cResult[6] = tmp7;
       cResult[7] = tmp13;
       tmp11 = tmp13;
@@ -224,7 +224,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    tmp4 = jsx(tmp(8951).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(8983).Form, { children: tmp3 });
   }
   return tmp4;
 });

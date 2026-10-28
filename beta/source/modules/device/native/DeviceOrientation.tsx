@@ -1,24 +1,24 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8852
+// Function ID: 8853
 // Name: DeviceOrientation
-// Dependencies: [19, 17, 570, 1384, 1274, 4928, 8821, 558, 576, 2]
+// Dependencies: [19, 17, 570, 1384, 1274, 4960, 8853, 558, 576, 2]
 // Exports: getOrientation, getOrientationLock, handleOrientationChange, lockOrientation, restoreDefaultOrientation, unlockOrientation, useOrientation
 
-// Module 8820 (DeviceOrientation)
+// Module 8852 (DeviceOrientation)
 import react_native from "react-native" /* 17 */;
 import react_native2 from "react-native" /* 1274 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import DeviceUtils from "DeviceUtils" /* 4928 */;
+import DeviceUtils from "DeviceUtils" /* 4960 */;
 import react from "react" /* 19 */;
 import module_570 from "module_570" /* 570 */;
-import react_native3_mod from "react-native" /* 8821 */;
+import react_native3_mod from "react-native" /* 8853 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f101706 = () => {
+const f101829 = () => {
   state.setState({ orientationLock: null });
 };
 function handleOrientationChange(initialOrientation) {
@@ -78,7 +78,7 @@ function handleDeviceOrientationChange(LANDSCAPE) {
         const obj10 = react_native;
         const result = obj10.unlockAllOrientations();
         const tmp15Result4 = react_native2;
-        tmp15Result4.batchUpdates(f101706);
+        tmp15Result4.batchUpdates(f101829);
         c8 = false;
       }
     } else if ("PORTRAIT" === LANDSCAPE) {
@@ -97,7 +97,7 @@ function handleDeviceOrientationChange(LANDSCAPE) {
         const obj5 = react_native;
         const result1 = obj5.unlockAllOrientations();
         const tmp13Result4 = react_native2;
-        tmp13Result4.batchUpdates(f101706);
+        tmp13Result4.batchUpdates(f101829);
         c8 = false;
       }
     }
@@ -222,7 +222,7 @@ function unlockOrientation(unlockAfterRotatingToPreviousLock) {
   const obj5 = react_native;
   const result = obj5.unlockAllOrientations();
   const tmpResult4 = react_native2;
-  tmpResult4.batchUpdates(f101706);
+  tmpResult4.batchUpdates(f101829);
 }
 function lockOrientation(PORTRAIT, flag) {
   const ignoreAutoRotate = react_native.ignoreAutoRotate;
@@ -314,6 +314,6 @@ export const restoreDefaultOrientation = function restoreDefaultOrientation() {
   const obj7 = react_native;
   const result = obj7.unlockAllOrientations();
   const tmpResult8 = react_native2;
-  tmpResult8.batchUpdates(f101706);
+  tmpResult8.batchUpdates(f101829);
   lockOrientationForiOS();
 };

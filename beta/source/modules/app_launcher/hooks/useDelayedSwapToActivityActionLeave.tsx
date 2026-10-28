@@ -1,9 +1,9 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12168
+// Function ID: 12169
 // Name: useDelayedSwapToActivityActionLeave
-// Dependencies: [32, 19, 558, 576, 12038, 2]
+// Dependencies: [32, 19, 558, 576, 12070, 2]
 
-// Module 12136 (useDelayedSwapToActivityActionLeave)
+// Module 12168 (useDelayedSwapToActivityActionLeave)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

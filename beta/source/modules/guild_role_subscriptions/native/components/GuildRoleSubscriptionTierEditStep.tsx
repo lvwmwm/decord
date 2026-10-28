@@ -1,22 +1,22 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19318
+// Function ID: 19319
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 4971, 587, 558, 576, 5234, 16574, 7221, 1128, 1633, 5244, 1505, 2]
+// Dependencies: [109, 19, 17, 21, 5003, 587, 558, 576, 5266, 16608, 7253, 1128, 1633, 5276, 1505, 2]
 
-// Module 19281 (GuildRoleSubscriptionTierEditStep)
+// Module 19318 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import FormSeparatorDefault from "FormSeparator" /* 16574 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7253 */;
+import FormSeparatorDefault from "FormSeparator" /* 16608 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroImportAll(tmp5(5244).Button, obj3) };
+  const obj = { style: items, children: metroImportAll(tmp5(5276).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

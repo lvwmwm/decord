@@ -1,11 +1,11 @@
-// Module ID: 12320
-// Function ID: 12321
+// Module ID: 12352
+// Function ID: 12353
 // Name: useConjureProjectPickerOptions
-// Dependencies: [19, 558, 576, 11751, 2]
+// Dependencies: [19, 558, 576, 11783, 2]
 
-// Module 12320 (useConjureProjectPickerOptions)
+// Module 12352 (useConjureProjectPickerOptions)
 import react2 from "react" /* 576 */;
-import useConjureProjects from "useConjureProjects" /* 11751 */;
+import useConjureProjects from "useConjureProjects" /* 11783 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

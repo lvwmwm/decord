@@ -1,9 +1,9 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8932
+// Function ID: 8933
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 558, 576, 6374, 2]
+// Dependencies: [5, 32, 19, 558, 576, 6406, 2]
 
-// Module 8900 (LazyAPIPromise)
+// Module 8932 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 13770
+// Function ID: 13771
 // Name: useIsViewingPremiumMemberships
-// Dependencies: [1087, 4830, 558, 576, 5020, 5013, 2]
+// Dependencies: [1087, 4862, 558, 576, 5052, 5045, 2]
 
-// Module 13738 (useIsViewingPremiumMemberships)
+// Module 13770 (useIsViewingPremiumMemberships)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import MemoryRouter from "MemoryRouter" /* 5013 */;
-import RouteUtils from "RouteUtils" /* 5020 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
+import MemoryRouter from "MemoryRouter" /* 5045 */;
+import RouteUtils from "RouteUtils" /* 5052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsViewi
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const CHANNEL = Routes.CHANNEL;
-    const RouteParam = tmp(5020).RouteParam;
+    const RouteParam = tmp(5052).RouteParam;
     const CHANNELResult = CHANNEL(RouteParam.guildId(), StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     cResult[0] = CHANNELResult;
     first = CHANNELResult;

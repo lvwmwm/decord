@@ -1,25 +1,25 @@
-// Module ID: 18353
-// Function ID: 18354
+// Module ID: 18390
+// Function ID: 18391
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4913, 1087, 10959, 21, 4971, 587, 13517, 504, 7414, 10629, 13545, 5025, 5210, 10960, 2002, 8108, 7411, 5244, 1128, 5234, 2]
+// Dependencies: [19, 17, 4945, 1087, 10991, 21, 5003, 587, 13549, 504, 7446, 10661, 13577, 5057, 5242, 10992, 2002, 8140, 7443, 5276, 1128, 5266, 2]
 // Exports: default
 
-// Module 18353 (RestrictedMessagePreviewActions)
+// Module 18390 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7414 */;
-import ReportModals from "ReportModals" /* 8108 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10629 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10959 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13545 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
+import ReportModals from "ReportModals" /* 8140 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10661 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10991 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13577 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -111,7 +111,7 @@ export default function RestrictedMessagePreviewActions(channel) {
   const callback4 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { userId: user.id, channelId: channel.id };
-    obj.openLazy(asyncRequire(10960, dependencyMap.paths), closure_8, obj2);
+    obj.openLazy(asyncRequire(10992, dependencyMap.paths), closure_8, obj2);
   }, items6);
   const items8 = [message, channel.id];
   const callback5 = react.useCallback(() => {
@@ -182,7 +182,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (constants2.PENDING_OUTGOING === stateFromStores) {
-    const obj11 = { size: "sm", variant: "active", text: intl3.string(channel(message[20]).t.xMH6vD), disabled: true, onPress: "Boolean" };
+    const obj11 = { size: "sm", variant: "active", text: intl3.string(channel(message[20]).t.xMH6vD), disabled: true, onPress: "Array" };
     const Button3 = tmp2(tmp3[19]).Button;
     intl3 = tmp2(tmp3[20]).intl;
     tmp19 = closure_9(Button3, obj11);

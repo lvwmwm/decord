@@ -1,20 +1,20 @@
-// Module ID: 18838
-// Function ID: 18839
+// Module ID: 18875
+// Function ID: 18876
 // Name: LabelLayoutComponent
-// Dependencies: [19, 17, 21, 558, 576, 8595, 2000, 7009, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8627, 2000, 7041, 2]
 
-// Module 18838 (LabelLayoutComponent)
+// Module 18875 (LabelLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
-import ComponentStateContext from "ComponentStateContext" /* 8595 */;
+import ComponentStateContext from "ComponentStateContext" /* 8627 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Input2 = tmp(7009);
+const Input2 = tmp(7041);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabelLayoutComponent(arg0) {

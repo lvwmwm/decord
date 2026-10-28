@@ -1,18 +1,18 @@
-// Module ID: 13166
-// Function ID: 13167
+// Module ID: 13198
+// Function ID: 13199
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 4971, 1384, 558, 576, 5052, 5247, 5205, 4978, 5585, 6886, 7168, 2]
+// Dependencies: [19, 17, 21, 5003, 1384, 558, 576, 5084, 5279, 5237, 5010, 5617, 6918, 7200, 2]
 
-// Module 13166 (VoicePanelHeaderGlassBlur)
+// Module 13198 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import spring from "spring" /* 5247 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5585 */;
-import NativeViewDefault from "NativeView" /* 6886 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7168 */;
+import useThemeDefault from "useTheme" /* 5237 */;
+import spring from "spring" /* 5279 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5617 */;
+import NativeViewDefault from "NativeView" /* 6918 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7200 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__closure = obj3;
   fn.__workletHash = 3451055086565;
   fn.__initData = __initData;
-  const obj2 = shown(5052);
+  const obj2 = shown(5084);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const fn2 = function k() {
     const withSpring = spring.withSpring;
@@ -66,11 +66,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { blurAmount: withSpring(num) };
     return obj;
   };
-  const obj4 = shown(5052);
-  fn2.__closure = { withSpring: shown(5247).withSpring, shown };
+  const obj4 = shown(5084);
+  fn2.__closure = { withSpring: shown(5279).withSpring, shown };
   fn2.__workletHash = 5642055202507;
   fn2.__initData = __initData2;
-  ({ withSpring: shown(5247).withSpring, shown });
+  ({ withSpring: shown(5279).withSpring, shown });
   const animatedProps = obj4.useAnimatedProps(fn2);
   const tmp8 = useThemeDefault();
   if (cResult[0] === animatedStyle) {
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp9 = cResult[3];
       }
       let str = "light";
-      const tmpResult = tmp(4978);
+      const tmpResult = tmp(5010);
       if (tmpResult.isThemeDark(tmp8)) {
         str = "dark";
       }
@@ -162,7 +162,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               tmp23 = tmp25;
             }
           }
-          const tmpResult2 = tmp(4978);
+          const tmpResult2 = tmp(5010);
           const tmp19 = tmpResult2.isThemeDark(tmp8) ? tmp4.strokeAlt : tmp4.strokeAltLight;
           cResult[12] = tmp4.strokeAlt;
           cResult[13] = tmp4.strokeAltLight;
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   const tmp = closure_6();
-  let obj = shown(5052);
+  let obj = shown(5084);
   const fn = function _() {
     let opacity = 0;
     if (shown.get()) {
@@ -223,11 +223,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { blurAmount: withSpring(num) };
     return obj;
   };
-  const obj3 = shown(5052);
-  fn2.__closure = { withSpring: shown(5247).withSpring, shown };
+  const obj3 = shown(5084);
+  fn2.__closure = { withSpring: shown(5279).withSpring, shown };
   fn2.__workletHash = 10766437578125;
   fn2.__initData = __initData4;
-  ({ withSpring: shown(5247).withSpring, shown });
+  ({ withSpring: shown(5279).withSpring, shown });
   const animatedProps = obj3.useAnimatedProps(fn2);
   const tmp7 = useThemeDefault();
   const obj5 = { style: items, children: items2 };
@@ -235,7 +235,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp9 = ReanimatedNativeViewDefault;
   let str = "light";
   const tmp11 = VisualEffectViewAnimatedDefault;
-  const obj6 = shown(4978);
+  const obj6 = shown(5010);
   const tmp2 = shown;
   if (obj6.isThemeDark(tmp7)) {
     str = "dark";
@@ -249,7 +249,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp6Result = NativeViewDefault;
   items3[0] = closure_4(NativeViewDefault, obj9);
   const tmp6Result2 = NativeViewDefault;
-  const tmp2Result = tmp2(4978);
+  const tmp2Result = tmp2(5010);
   const obj10 = { style: tmp2Result.isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight };
   items3[1] = closure_4(tmp6Result2, obj10);
   items2[1] = closure_5(tmp6Result, obj8);

@@ -1,15 +1,15 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18133
+// Function ID: 18134
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 12064, 5234, 558, 576, 17658, 12061, 2]
+// Dependencies: [19, 21, 12096, 5266, 558, 576, 17695, 12093, 2]
 // Exports: renderChannelSubtitle
 
-// Module 18096 (guild_channels/ChannelSubtitle)
+// Module 18133 (guild_channels/ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 12061 */;
-import ChannelListLayout from "ChannelListLayout" /* 12064 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 17658 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 12093 */;
+import ChannelListLayout from "ChannelListLayout" /* 12096 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 17695 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
   let tmp13;
   if (null != channelSubtitleData) {
     const tmp14 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(5234).Text;
+    const Text = tmp(5266).Text;
     const obj3 = { content: channelSubtitleData.subtitle, muted: flag, channelId, guildId, layout, color: "text-muted", disableAnimatedEmoji: !tmp14 };
     flag = muted;
     const renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
@@ -125,7 +125,7 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
   } else {
     const obj2 = { children: renderMessagePreviewMarkup(obj3) };
     const tmp4 = "voice" === channelSubtitleData.type && connected;
-    const Text = tmp(5234).Text;
+    const Text = tmp(5266).Text;
     const merged = Object.assign(textProps);
     obj3 = { content: channelSubtitleData.subtitle, muted, channelId, guildId, layout, color: "text-muted", disableAnimatedEmoji: !tmp4 };
     renderMessagePreviewMarkup = MessagePreviewMarkup.renderMessagePreviewMarkup;
@@ -152,7 +152,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     obj3 = ChannelListLayout;
     const tmp10 = require;
     if (typeof subtitle === "string") {
-      const Text = tmp10(5234).Text;
+      const Text = tmp10(5266).Text;
       const merged = Object.assign(obj2);
       tmp9 = <Text>{subtitle}</Text>;
     } else {

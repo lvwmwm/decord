@@ -1,10 +1,10 @@
-// Module ID: 9772
-// Function ID: 9773
+// Module ID: 9804
+// Function ID: 9805
 // Name: ChatItem
-// Dependencies: [32, 109, 19, 17, 4972, 1087, 8134, 21, 587, 558, 576, 9773, 1103, 9774, 6816, 9775, 4971, 1384, 8609, 5252, 683, 5258, 2]
+// Dependencies: [32, 109, 19, 17, 5004, 1087, 8166, 21, 587, 558, 576, 9805, 1103, 9806, 6848, 9807, 5003, 1384, 8641, 5284, 683, 5290, 2]
 // Exports: default
 
-// Module 9772 (ChatItem)
+// Module 9804 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,18 +12,18 @@ import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1087 */;
 import MessageTypes2 from "MessageTypes" /* 1103 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6816 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9773 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9774 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9775 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6848 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9805 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9806 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9807 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4972 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8134 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5004 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8609);
+const RowGeneratorTypes = tmp(8641);
 let closure_3 = ["message"];
 let react = react_mod;
 const View = react_native.View;

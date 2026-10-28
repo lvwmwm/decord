@@ -1,20 +1,20 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10182
+// Function ID: 10183
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 1128, 8997, 5669, 10151, 9949, 5234, 2]
+// Dependencies: [19, 17, 1087, 21, 5003, 587, 558, 576, 1128, 9029, 5701, 10183, 9981, 5266, 2]
 
-// Module 10150 (GIFPickerCategoryView)
+// Module 10182 (GIFPickerCategoryView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 8997 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9029 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,13 +157,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerC
         }
         if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
           const obj8 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
-          const AnalyticsIcon = tmp(10151).AnalyticsIcon;
+          const AnalyticsIcon = tmp(10183).AnalyticsIcon;
           tmp20 = metroImportDefault(AnalyticsIcon, obj8);
         } else {
           tmp20 = null;
           if (item.type === tmp19.FAVORITES) {
             const obj9 = { size: "sm", style: tmp4.categoryNameIcon, color: nativeDefault.colors.WHITE };
-            const StarIcon = tmp(9949).StarIcon;
+            const StarIcon = tmp(9981).StarIcon;
             tmp20 = metroImportDefault(StarIcon, obj9);
           }
         }
@@ -214,13 +214,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerC
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(10151).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(10183).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(9949).StarIcon;
+      const StarIcon = tmp3(9981).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }

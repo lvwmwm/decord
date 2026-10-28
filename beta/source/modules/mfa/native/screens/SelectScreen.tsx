@@ -1,17 +1,17 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17068
+// Function ID: 17069
 // Name: SelectScreen
-// Dependencies: [19, 17, 17031, 21, 4971, 5268, 8953, 558, 576, 7037, 1505, 5234, 1128, 7221, 2]
+// Dependencies: [19, 17, 17065, 21, 5003, 5300, 8985, 558, 576, 7069, 1505, 5266, 1128, 7253, 2]
 
-// Module 17034 (SelectScreen)
+// Module 17068 (SelectScreen)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5268 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7037 */;
-import RowButton from "RowButton" /* 8953 */;
-import MFAConstants from "MFAConstants" /* 17031 */;
+import NavigatorConstants from "NavigatorConstants" /* 5300 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7069 */;
+import RowButton from "RowButton" /* 8985 */;
+import MFAConstants from "MFAConstants" /* 17065 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,14 +47,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectScreen
   _require = mfaChallenge;
   let obj = require("react");
   const cResult = obj.c(15);
-  const tmp4 = navigation(7037)();
+  const tmp4 = navigation(7069)();
   const tmp5 = closure_7(tmp4);
   const obj2 = require("useNavigation");
   navigation = obj2.useNavigation();
   const container = tmp5.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-xl/extrabold", children: intl.string(require("intl").t.S9b9bX) };
-    const Heading = tmp(5234).Heading;
+    const Heading = tmp(5266).Heading;
     intl = tmp(1128).intl;
     const tmp10 = closure_5(Heading, obj3);
     cResult[0] = tmp10;
@@ -64,7 +64,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectScreen
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-sm/medium", children: intl2.string(require("intl").t.Jz1lXO) };
-    const Text = tmp(5234).Text;
+    const Text = tmp(5266).Text;
     intl2 = tmp(1128).intl;
     const tmp13 = closure_5(Text, obj4);
     cResult[1] = tmp13;

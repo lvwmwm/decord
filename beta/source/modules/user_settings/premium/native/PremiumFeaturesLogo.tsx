@@ -1,14 +1,14 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9847
+// Function ID: 9848
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1394, 21, 558, 576, 9816, 7547, 2053, 5669, 2]
+// Dependencies: [19, 1394, 21, 558, 576, 9848, 7579, 2053, 5701, 2]
 
-// Module 9815 (PremiumFeaturesLogo)
+// Module 9847 (PremiumFeaturesLogo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7547 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9816 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7579 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9848 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       return tmp10;
     }
   }
-  const tmp11 = jsx(tmp6(5669), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
+  const tmp11 = jsx(tmp6(5701), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = style;
   cResult[4] = tmp8;
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     tmp = importDefault;
     tmp3 = AssetRegistryDefault;
   }
-  tmp(5669);
+  tmp(5701);
   const obj2 = PremiumUtils;
   return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 });

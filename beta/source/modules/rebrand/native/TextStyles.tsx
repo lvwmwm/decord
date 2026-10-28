@@ -1,10 +1,10 @@
-// Module ID: 6651
-// Function ID: 6652
+// Module ID: 6683
+// Function ID: 6684
 // Name: TextStyles
 // Dependencies: [1087, 2]
 // Exports: default
 
-// Module 6651 (TextStyles)
+// Module 6683 (TextStyles)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

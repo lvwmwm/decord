@@ -1,14 +1,14 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11322
+// Function ID: 11323
 // Name: useCanInviteToLinkedGameOrganization
-// Dependencies: [4883, 4877, 4903, 1087, 558, 576, 11289, 504, 2]
+// Dependencies: [4915, 4909, 4935, 1087, 558, 576, 11321, 504, 2]
 // Exports: canInviteToLinkedGameOrganization, hasCanInviteRole
 
-// Module 11290 (useCanInviteToLinkedGameOrganization)
+// Module 11322 (useCanInviteToLinkedGameOrganization)
 import Constants from "Constants" /* 1087 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

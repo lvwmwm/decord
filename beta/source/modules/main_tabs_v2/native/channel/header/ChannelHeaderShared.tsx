@@ -1,10 +1,10 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14053
+// Function ID: 14054
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4913, 1392, 21, 4971, 587, 558, 576, 1384, 6908, 10661, 5234, 1202, 14022, 10688, 5252, 8502, 7075, 14023, 1128, 5604, 5669, 1417, 9134, 2]
+// Dependencies: [32, 19, 17, 4945, 1392, 21, 5003, 587, 558, 576, 1384, 6940, 10693, 5266, 1202, 14054, 10720, 5284, 8534, 7107, 14055, 1128, 5636, 5701, 1417, 9166, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 14021 (ChannelHeaderShared)
+// Module 14053 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,24 +12,24 @@ import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useToken from "useToken" /* 5252 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import Pressables from "Pressables" /* 6908 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7075 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
-import BotTagDefault from "BotTag" /* 9134 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10661 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10688 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14022 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 14023 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import useToken from "useToken" /* 5284 */;
+import useChannelName from "useChannelName" /* 5636 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import Pressables from "Pressables" /* 6940 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7107 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8534 */;
+import BotTagDefault from "BotTag" /* 9166 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10693 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10720 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14054 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 14055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(5234).Text, obj13);
+    tmp9 = metroImportAll(tmp(5266).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -527,7 +527,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(5234).Text, obj3);
+          tmp8 = metroImportAll(tmp(5266).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;

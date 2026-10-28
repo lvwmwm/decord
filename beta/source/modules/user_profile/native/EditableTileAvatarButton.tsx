@@ -1,27 +1,27 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 15987
+// Function ID: 15988
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 4972, 8649, 21, 558, 576, 504, 4799, 8658, 1202, 1417, 15952, 1128, 15949, 15944, 2]
+// Dependencies: [19, 5004, 8681, 21, 558, 576, 504, 4831, 8690, 1202, 1417, 15986, 1128, 15983, 15978, 2]
 
-// Module 15953 (EditableTileAvatarButton)
+// Module 15987 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8658 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15949 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15952 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8690 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15983 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15986 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8649 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8681 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp21;
-const SpinAnimationDefault = tmp21(15944);
+const SpinAnimationDefault = tmp21(15978);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTileAvatarButtonBase(arg0) {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   }
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const GifAutoPlay = tmp(4799).GifAutoPlay;
+  const GifAutoPlay = tmp(4831).GifAutoPlay;
   const tmp9 = !stateFromStores && GifAutoPlay.useSetting();
   if (cResult[2] === avatarChange) {
     if (cResult[3] === tmp9) {

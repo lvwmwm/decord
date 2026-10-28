@@ -1,21 +1,21 @@
-// Module ID: 17548
-// Function ID: 17549
+// Module ID: 17585
+// Function ID: 17586
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4971, 558, 576, 6367, 9221, 5025, 5234, 1128, 17549, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 558, 576, 6399, 9253, 5057, 5266, 1128, 17586, 2]
 
-// Module 17548 (VoiceUserNameItem)
+// Module 17585 (VoiceUserNameItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6367 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9221 */;
-import VoiceGuildTagDefault from "VoiceGuildTag" /* 17549 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6399 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9253 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 17586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -219,7 +219,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
               }
             }
             const obj3 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items };
-            const Text = tmp(5234).Text;
+            const Text = tmp(5266).Text;
             const intl = tmp(1128).intl;
             items = ["\u00A0", intl.string(tmp(1128).t["pFO/Ph"])];
             tmp34 = metroRequire(Text, obj3);
@@ -356,7 +356,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
   items[1] = measuringTag;
   const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: tmp20, children: items1 };
   tmp20 = null != displayNameStylesFont;
-  const Text = tmp5(5234).Text;
+  const Text = tmp5(5266).Text;
   if (tmp20) {
     tmp20 = { fontFamily: displayNameStylesFont };
     const obj5 = { fontFamily: displayNameStylesFont };
@@ -372,7 +372,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
   items1 = [nick, ];
   if (isGuest) {
     const obj6 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items2 };
-    const Text2 = tmp5(5234).Text;
+    const Text2 = tmp5(5266).Text;
     const intl = tmp5(1128).intl;
     items2 = ["\u00A0", intl.string(intl2.t["pFO/Ph"])];
     isGuest = tmp18(Text2, obj6);

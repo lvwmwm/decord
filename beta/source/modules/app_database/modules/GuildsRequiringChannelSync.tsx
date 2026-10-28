@@ -1,24 +1,24 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7757
+// Function ID: 7758
 // Name: GuildsRequiringChannelSync
-// Dependencies: [4827, 502, 4823, 4883, 4877, 4845, 4903, 1087, 4830, 1098, 1099, 3, 4849, 4893, 1281, 1267, 1405, 2]
+// Dependencies: [4859, 502, 4855, 4915, 4909, 4877, 4935, 1087, 4862, 1098, 1099, 3, 4881, 4925, 1281, 1267, 1405, 2]
 
-// Module 7725 (GuildsRequiringChannelSync)
+// Module 7757 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1098 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import v1 from "v1" /* 1281 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4849 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4893 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4925 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import Constants from "Constants" /* 1087 */;
 import BigFlagUtils from "BigFlagUtils" /* 1099 */;
 import size from "module_2" /* 2 */;
@@ -120,7 +120,7 @@ class GuildsRequiringChannelSync {
       let obj3 = PremiumRoleUtils;
       let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
       if (isSubscriptionRoleResult1) {
-        let tmp6Result = tmp6(4893);
+        let tmp6Result = tmp6(4925);
         isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
       }
       if (!isSubscriptionRoleResult) {

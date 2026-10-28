@@ -1,12 +1,12 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15908
+// Function ID: 15909
 // Name: openHexagonCampaignLearnMore
-// Dependencies: [4996, 5660, 2]
+// Dependencies: [5028, 5692, 2]
 // Exports: openHexagonCampaignLearnMore
 
-// Module 15874 (openHexagonCampaignLearnMore)
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
-import LinkingDefault from "Linking" /* 5660 */;
+// Module 15908 (openHexagonCampaignLearnMore)
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
+import LinkingDefault from "Linking" /* 5692 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = HexagonCampaignConstants.HEXAGON_CAMPAIGN_LEARN_MORE_URL;

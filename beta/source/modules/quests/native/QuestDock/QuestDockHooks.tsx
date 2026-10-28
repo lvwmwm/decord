@@ -1,31 +1,31 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16472
+// Function ID: 16473
 // Name: QuestDockHooks
-// Dependencies: [32, 19, 16439, 6710, 16441, 558, 576, 504, 16442, 16445, 10916, 16443, 16446, 5052, 9976, 16440, 1104, 9605, 9573, 9576, 16448, 7801, 6713, 5210, 16449, 2002, 1499, 9584, 9708, 5252, 587, 2]
+// Dependencies: [32, 19, 16473, 6742, 16475, 558, 576, 504, 16476, 16479, 10948, 16477, 16480, 5084, 10008, 16474, 1104, 9637, 9605, 9608, 16482, 7833, 6745, 5242, 16483, 2002, 1499, 9616, 9740, 5284, 587, 2]
 // Exports: useActionSheetPressHandler
 
-// Module 16438 (QuestDockHooks)
+// Module 16472 (QuestDockHooks)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import useToken from "useToken" /* 5252 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7801 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9573 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
-import AssetUtils from "AssetUtils" /* 9584 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9708 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9976 */;
-import QuestDockUtils from "QuestDockUtils" /* 16440 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 16448 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import useToken from "useToken" /* 5284 */;
+import QuestTypes from "QuestTypes" /* 6745 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7833 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9605 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9608 */;
+import AssetUtils from "AssetUtils" /* 9616 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9740 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10008 */;
+import QuestDockUtils from "QuestDockUtils" /* 16474 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 16482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16439 */;
-import QuestConstants from "QuestConstants" /* 6710 */;
-import QuestDockConstants from "QuestDockConstants" /* 16441 */;
+import QuestDockStore from "QuestDockStore" /* 16473 */;
+import QuestConstants from "QuestConstants" /* 6742 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -356,8 +356,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(4);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16445).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(16442).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16479).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(16476).QuestDockGestureContext).activeQuestDockMode;
   const obj2 = react;
   if (cResult[0] === activeQuestDockMode) {
     let tmp2;
@@ -404,8 +404,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   tmp2 = fn;
 }) : (function useQuestDockDismissalReset() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16445).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(16442).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(16479).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(16476).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = react.useEffect(() => {
     let closure_0;
@@ -593,7 +593,7 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(qu
     captureAdUserAction(obj);
     const obj3 = ActionSheetActionCreatorsDefault;
     const obj4 = { creative, impressionId: questImpressionId };
-    obj3.openLazy(asyncRequire(16449, dependencyMap.paths), "QuestDockContextMenuActionSheet", obj4);
+    obj3.openLazy(asyncRequire(16483, dependencyMap.paths), "QuestDockContextMenuActionSheet", obj4);
   }, items);
 };
 export const useQuestDockExpandHandler = tmp8;

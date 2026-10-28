@@ -1,37 +1,23 @@
 // Module ID: 15533
 // Function ID: 15534
-// Dependencies: [15448, 15534]
-// Exports: getSupportedNumberingSystems
+// Dependencies: [15523, 15526]
+// Exports: LookupSupportedLocales
 
 // Module 15533
-const require = globalThis.__r;
-let _require;
+import _mod15523 from "module_15523" /* 15523 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 15526 */;
 
 
-export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
-  _require = locale;
-  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
-  return numberingSystemNames.filter((item) => {
-    function isSupportedNumberingSystem(item, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const concat = "".concat;
-        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
-        const combined = "".concat(str, "-u-nu-");
-        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
-        const obj3 = memoizedNumberFormat;
-        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
-          if ("123" === obj3.format(123)) {
-            return false;
-          }
-        }
-        return true;
-      } catch (err) {
-      }
+export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  let num;
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod15523.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
-    return isSupportedNumberingSystem(item, locale);
-  });
+  }
+  return items;
 };

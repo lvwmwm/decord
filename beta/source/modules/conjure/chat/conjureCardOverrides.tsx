@@ -1,10 +1,10 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12346
+// Function ID: 12347
 // Name: conjureCardOverrides
 // Dependencies: [2]
 // Exports: conjureCardExpanded, toggleConjureCard
 
-// Module 12314 (conjureCardOverrides)
+// Module 12346 (conjureCardOverrides)
 import size from "module_2" /* 2 */;
 
 let map, set;

@@ -1,14 +1,14 @@
-// Module ID: 5003
-// Function ID: 5004
+// Module ID: 5035
+// Function ID: 5036
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1392, 5004, 504, 4837, 584, 2]
+// Dependencies: [1392, 5036, 504, 4869, 584, 2]
 // Exports: joinRequestFromServer
 
-// Module 5003 (UserGuildJoinRequestStore)
+// Module 5035 (UserGuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5004 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4869 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5036 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

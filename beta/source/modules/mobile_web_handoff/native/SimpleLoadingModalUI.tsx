@@ -1,13 +1,13 @@
-// Module ID: 7431
-// Function ID: 7432
+// Module ID: 7463
+// Function ID: 7464
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4971, 558, 576, 6880, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 6912, 2]
 
-// Module 7431 (SimpleLoadingModalUI)
+// Module 7463 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

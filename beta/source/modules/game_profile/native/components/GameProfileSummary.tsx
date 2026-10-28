@@ -1,15 +1,15 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9365
+// Function ID: 9366
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4971, 558, 576, 9245, 1128, 5234, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 558, 576, 9277, 1128, 5266, 2]
 
-// Module 9333 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
+// Module 9365 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

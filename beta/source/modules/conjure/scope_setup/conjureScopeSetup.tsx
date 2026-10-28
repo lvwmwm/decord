@@ -1,24 +1,24 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11787
+// Function ID: 11788
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 10699, 11756, 10698, 6773, 1087, 510, 10203, 11757, 11758, 1128, 3830, 1297, 584, 10720, 10719, 2]
+// Dependencies: [109, 5, 10731, 11788, 10730, 6805, 1087, 510, 10235, 11789, 11790, 1128, 3862, 1297, 584, 10752, 10751, 2]
 // Exports: keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 11755 (conjureScopeSetup)
+// Module 11787 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11757 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11758 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11789 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11790 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureChatStore from "ConjureChatStore" /* 10699 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 11756 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10698 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureChatStore from "ConjureChatStore" /* 10731 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 11788 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10730 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, closure_3, closure_4, set;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f111440 = function*(arg0, value) {
+const f111563 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -253,7 +253,7 @@ export const startConjurePrompt = function startConjurePrompt(arg0, trimmed) {
     const merged = Object.assign(obj);
     const obj3 = { message: trimmed, attachments: items, nonce: tmp5Result.createNonce() };
     obj2[arg0] = obj3;
-    tmp5Result = tmp5(10203);
+    tmp5Result = tmp5(10235);
     const result = set(tmp7, obj2);
   } else {
     metroImportAll(arg0, trimmed, items);
@@ -343,7 +343,7 @@ export const serverQuestionFields = function serverQuestionFields(conjureEligibl
     return {};
   } else {
     const found = conjureEligibleGuilds.find((id) => id.id === closure_0);
-    const obj2 = { input: "server", note: intl.string(_modDef3830.SU9K9U) };
+    const obj2 = { input: "server", note: intl.string(_modDef3862.SU9K9U) };
     intl = intl2.intl;
     if (null != found) {
       const obj4 = { default_entities: items };
@@ -364,7 +364,7 @@ export const ownerOnlyClarification = function ownerOnlyClarification(memo) {
     id: memo.id,
     questions: questions.map((id) => {
       let intl;
-      obj = { id: id.id, question: id.question, recommendation_reason: "", options: [], allow_custom: false, note: intl.string(_modDef3830.ZKPaWY) };
+      obj = { id: id.id, question: id.question, recommendation_reason: "", options: [], allow_custom: false, note: intl.string(_modDef3862.ZKPaWY) };
       intl = intl2.intl;
       return obj;
     })
@@ -462,7 +462,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f111440)();
+    value = tmp2(f111563)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -538,7 +538,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f111440)();
+    value = tmp2(f111563)();
   }
   const result = obj.set(combined, value);
   return value;

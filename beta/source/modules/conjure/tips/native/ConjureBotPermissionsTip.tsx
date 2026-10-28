@@ -1,13 +1,13 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12373
+// Function ID: 12374
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 558, 576, 11877, 1128, 3830, 12342, 10953, 12348, 2]
+// Dependencies: [5, 19, 21, 558, 576, 11909, 1128, 3862, 12374, 10985, 12380, 2]
 
-// Module 12341 (ConjureBotPermissionsTip)
+// Module 12373 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12342 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12348 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12374 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 12380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -108,7 +108,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(11877).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(11909).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1128).intl;
   const format = intl.format;
@@ -117,7 +117,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
       return closure_1(...arguments);
     }
   };
-  const v0S9HY8 = _modDef3830["0S9HY8"];
+  const v0S9HY8 = _modDef3862["0S9HY8"];
   importDefault = _asyncToGenerator(async (arg0, value) => {
     let v3;
     if (projectId === 2) {
@@ -166,7 +166,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPerm
       }
     }
   });
-  return <tmp icon={projectId(10953).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(10985).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {

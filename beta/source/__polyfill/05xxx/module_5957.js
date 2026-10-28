@@ -1,25 +1,50 @@
 // Module ID: 5957
 // Function ID: 5958
-// Dependencies: [109, 19, 17, 21, 5958]
-// Exports: default
+// Dependencies: [19, 17, 5953]
+// Exports: useTabsHost
 
 // Module 5957
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import ScreenContentWrapperDefault from "ScreenContentWrapper" /* 5958 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
+import RNSLog2 from "RNSLog" /* 5953 */;
+import react_mod from "react" /* 19 */;
 
-const Platform = react_native.Platform;
-const jsx = Fragment.jsx;
+let react = react_mod;
+const findNodeHandle = react_native.findNodeHandle;
 
-export default function _default(arg0) {
-  let contentStyle;
-  let style;
-  ({ contentStyle, style } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ contentStyle: 0, style: 0 }));
-  const items = [style, contentStyle];
-  ScreenContentWrapperDefault;
-  const merged1 = Object.assign(merged);
-  return <tmp2 style={items} />;
+export const useTabsHost = function useTabsHost(arg0) {
+  let items;
+  let onTabSelected;
+  let ref;
+  let ref2;
+  ({ componentNodeRef: require, onTabSelected } = arg0);
+  react = undefined;
+  react = react.useRef(-1);
+  const effect = react.useEffect(() => {
+    if (null != require.current) {
+      let num2 = findNodeHandle(tmp.current);
+      const tmp3 = ref2;
+      if (num2 == null) {
+        num2 = -1;
+      }
+      tmp3.current = num2;
+    } else {
+      ref2.current = -1;
+    }
+  }, []);
+  const obj = {
+    onTabSelected: react.useCallback((nativeEvent) => {
+      const RNSLog = RNSLog2.RNSLog;
+      let num = ref2.current;
+      const log = RNSLog.log;
+      if (num == null) {
+        num = -1;
+      }
+      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
+      if (onTabSelected != null) {
+        onTabSelected(nativeEvent);
+      }
+    }, items)
+  };
+  items = [onTabSelected];
+  return obj;
 };

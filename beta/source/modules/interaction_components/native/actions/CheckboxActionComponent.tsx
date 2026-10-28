@@ -1,14 +1,14 @@
-// Module ID: 18843
-// Function ID: 18844
+// Module ID: 18880
+// Function ID: 18881
 // Name: CheckboxActionComponent
-// Dependencies: [19, 21, 8595, 38, 2000, 14064, 2]
+// Dependencies: [19, 21, 8627, 38, 2000, 14096, 2]
 
-// Module 18843 (CheckboxActionComponent)
+// Module 18880 (CheckboxActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2000 */;
-import ComponentStateContext from "ComponentStateContext" /* 8595 */;
-import Checkbox from "Checkbox" /* 14064 */;
+import ComponentStateContext from "ComponentStateContext" /* 8627 */;
+import Checkbox from "Checkbox" /* 14096 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

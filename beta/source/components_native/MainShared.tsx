@@ -1,31 +1,31 @@
-// Module ID: 18369
-// Function ID: 18370
+// Module ID: 18406
+// Function ID: 18407
 // Name: MainShared
-// Dependencies: [19, 4823, 5714, 21, 558, 576, 504, 11375, 5150, 11571, 18370, 1384, 5973, 1128, 18372, 15684, 2, 18373, 18374, 18375, 18376, 18384, 18388, 18426]
+// Dependencies: [19, 4855, 5746, 21, 558, 576, 504, 11407, 5182, 11603, 18407, 1384, 6005, 1128, 18409, 15718, 2, 18410, 18411, 18412, 18413, 18421, 18425, 18463]
 
-// Module 18369 (MainShared)
+// Module 18406 (MainShared)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import KeyCommands from "KeyCommands" /* 5973 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 11375 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 11571 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 15684 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 18370 */;
-import showLaunchPadDefault from "showLaunchPad" /* 18372 */;
-import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 18373 */;
-import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 18374 */;
-import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 18375 */;
-import AlertsDefault from "Alerts" /* 18376 */;
-import SoundPlayerDefault from "SoundPlayer" /* 18384 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18388 */;
-import AppToastContainerDefault from "AppToastContainer" /* 18426 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import KeyCommands from "KeyCommands" /* 6005 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 11407 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 11603 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 15718 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 18407 */;
+import showLaunchPadDefault from "showLaunchPad" /* 18409 */;
+import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 18410 */;
+import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 18411 */;
+import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 18412 */;
+import AlertsDefault from "Alerts" /* 18413 */;
+import SoundPlayerDefault from "SoundPlayer" /* 18421 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18425 */;
+import AppToastContainerDefault from "AppToastContainer" /* 18463 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppKeyCom
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = PlatformUtils;
     const isAndroidResult = tmpResult.isAndroid();
-    const KeyModifierFlags = tmp(5973).KeyModifierFlags;
+    const KeyModifierFlags = tmp(6005).KeyModifierFlags;
     const obj2 = {
       input: "k",
       modifierFlags: isAndroidResult ? KeyModifierFlags.keyModifierControl : KeyModifierFlags.keyModifierCommand,

@@ -1,25 +1,25 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16664
+// Function ID: 16665
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [32, 19, 17, 16631, 1087, 4996, 21, 5052, 1202, 4971, 587, 558, 576, 5267, 5202, 15857, 6713, 1630, 4999, 5206, 5209, 12, 5212, 1128, 16632, 9901, 5234, 10515, 16386, 15880, 16635, 2]
+// Dependencies: [32, 19, 17, 16665, 1087, 5028, 21, 5084, 1202, 5003, 587, 558, 576, 5299, 5234, 15891, 6745, 1630, 5031, 5238, 5241, 12, 5244, 1128, 16666, 9933, 5266, 10547, 16420, 15914, 16669, 2]
 
-// Module 16630 (SettingsAppearanceThemeCarousel)
+// Module 16664 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5202 */;
-import timing from "timing" /* 5206 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5234 */;
+import timing from "timing" /* 5238 */;
+import HapticUtils from "HapticUtils" /* 5244 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16631 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16665 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj9;
 let size;
 let tmp2;
 let unpackModuleId;
-const timingPresets = tmp2(5209);
+const timingPresets = tmp2(5241);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ HexagonCampaignPerk: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);

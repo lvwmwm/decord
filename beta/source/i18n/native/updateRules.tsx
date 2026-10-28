@@ -1,16 +1,16 @@
-// Module ID: 18707
-// Function ID: 18708
+// Module ID: 18744
+// Function ID: 18745
 // Name: updateRules
-// Dependencies: [19, 1087, 21, 558, 576, 4985, 5252, 587, 5660, 1951, 1202, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 5017, 5284, 587, 5692, 1951, 1202, 2]
 // Exports: default
 
-// Module 18707 (updateRules)
+// Module 18744 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import _modDef1951 from "module_1951" /* 1951 */;
-import LinkingDefault from "Linking" /* 5660 */;
+import LinkingDefault from "Linking" /* 5692 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
   const cResult = obj.c(9);
   node = node.node;
   ({ output, state } = node);
-  const alwaysShowLinkDecorations = react.useContext(node(4985).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const obj2 = node(5252);
+  const alwaysShowLinkDecorations = react.useContext(node(5017).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const obj2 = node(5284);
   const token = obj2.useToken(nativeDefault.colors.TEXT_LINK);
   let str = "none";
   if (alwaysShowLinkDecorations) {

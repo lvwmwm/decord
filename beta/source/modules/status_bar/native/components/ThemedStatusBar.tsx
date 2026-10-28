@@ -1,15 +1,15 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15859
+// Function ID: 15860
 // Name: ThemedStatusBar
-// Dependencies: [19, 1207, 502, 21, 558, 576, 504, 5150, 4978, 11568, 10889, 2]
+// Dependencies: [19, 1207, 502, 21, 558, 576, 504, 5182, 5010, 11600, 10921, 2]
 
-// Module 15825 (ThemedStatusBar)
+// Module 15859 (ThemedStatusBar)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import StatusBarDefault from "StatusBar" /* 10889 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11568 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import StatusBarDefault from "StatusBar" /* 10921 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11600 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

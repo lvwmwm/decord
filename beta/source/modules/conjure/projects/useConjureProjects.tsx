@@ -1,27 +1,27 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11783
+// Function ID: 11784
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2045, 7703, 4901, 4845, 4903, 5002, 10699, 6773, 1128, 3830, 558, 576, 6808, 11748, 10731, 1455, 504, 7345, 2]
+// Dependencies: [32, 19, 2045, 7735, 4933, 4877, 4935, 5034, 10731, 6805, 1128, 3862, 558, 576, 6840, 11780, 10763, 1455, 504, 7377, 2]
 // Exports: describeConjureProjectRow
 
-// Module 11751 (useConjureProjects)
+// Module 11783 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6808 */;
-import ConjureUtils from "ConjureUtils" /* 7345 */;
-import conjureAppInServer from "conjureAppInServer" /* 10731 */;
-import ConjureActivity from "ConjureActivity" /* 11748 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6840 */;
+import ConjureUtils from "ConjureUtils" /* 7377 */;
+import conjureAppInServer from "conjureAppInServer" /* 10763 */;
+import ConjureActivity from "ConjureActivity" /* 11780 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import UserProfileStore from "UserProfileStore" /* 7703 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5002 */;
-import ConjureChatStore from "ConjureChatStore" /* 10699 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import UserProfileStore from "UserProfileStore" /* 7735 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import ConjureChatStore from "ConjureChatStore" /* 10731 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11748).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11780).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -434,19 +434,19 @@ export const describeConjureProjectRow = function describeConjureProjectRow(entr
   let obj4;
   let obj6;
   if (entry.notInServer) {
-    const obj3 = { serverName: intl4.string(_modDef3830["08PzLy"]), label: intl5.formatToPlainString(_modDef3830.pyh2pa, obj4) };
+    const obj3 = { serverName: intl4.string(_modDef3862["08PzLy"]), label: intl5.formatToPlainString(_modDef3862.pyh2pa, obj4) };
     intl4 = intl6.intl;
     intl5 = intl6.intl;
     obj = obj3;
     obj4 = { name: entry.name };
   } else if (null == entry.guildName) {
-    const obj5 = { serverName: intl2.string(_modDef3830["3QFps8"]), label: intl3.formatToPlainString(_modDef3830["2sBOnp"], obj6) };
+    const obj5 = { serverName: intl2.string(_modDef3862["3QFps8"]), label: intl3.formatToPlainString(_modDef3862["2sBOnp"], obj6) };
     intl2 = intl6.intl;
     intl3 = intl6.intl;
     obj = obj5;
     obj6 = { name: entry.name };
   } else {
-    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3830["hd+GF1"], obj11) };
+    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3862["hd+GF1"], obj11) };
     intl = intl6.intl;
     obj11 = { name: null, server: null };
     ({ name: obj2.name, guildName: obj2.server } = entry);

@@ -1,10 +1,10 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10682
+// Function ID: 10683
 // Name: getChannelCopyForEmbeddedActivity
 // Dependencies: [1128, 2]
 // Exports: default
 
-// Module 10650 (getChannelCopyForEmbeddedActivity)
+// Module 10682 (getChannelCopyForEmbeddedActivity)
 import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 

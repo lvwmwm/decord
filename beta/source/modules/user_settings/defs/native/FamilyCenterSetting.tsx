@@ -1,21 +1,21 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16190
+// Function ID: 16191
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1087, 21, 558, 576, 16157, 16158, 7957, 587, 1128, 2536, 11208, 8560, 16161, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 16191, 16192, 7989, 587, 1128, 2536, 11240, 8592, 16195, 2]
 
-// Module 16156 (FamilyCenterSetting)
+// Module 16190 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import GroupIcon from "GroupIcon" /* 8560 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16157 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 16158 */;
+import GroupIcon from "GroupIcon" /* 8592 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16191 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 16192 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFamilyC
         let first;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const WarningIcon = tmp(7957).WarningIcon;
+          const WarningIcon = tmp(7989).WarningIcon;
           const intl = tmp(1128).intl;
           const tmp12 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2536.wucWfE)} />;
           cResult[0] = tmp12;
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFamilyC
     if (null != daysRemaining) {
       tmp6 = null;
       if (daysRemaining >= 0) {
-        const WarningIcon = tmp(7957).WarningIcon;
+        const WarningIcon = tmp(7989).WarningIcon;
         const intl = tmp(1128).intl;
         tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2536.wucWfE)} />;
       }

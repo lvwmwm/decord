@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/user_settings", width: 224, height: 104, scales: [2, 3], hash: "a2009aeba6d9e049dbc8c9ac25b7dc92", name: "crunchyroll_link_success", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "231cc2e45d7613cf5eb4ce4ba6961f0d", name: "EmbedIcon", type: "png" });

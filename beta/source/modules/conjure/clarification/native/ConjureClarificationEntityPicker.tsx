@@ -1,25 +1,25 @@
-// Module ID: 12482
-// Function ID: 12483
+// Module ID: 12514
+// Function ID: 12515
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4901, 4845, 4913, 1392, 21, 558, 576, 11751, 5210, 12483, 12476, 6883, 6903, 6987, 12320, 12484, 11835, 504, 7345, 11837, 1128, 3830, 5604, 11839, 2]
+// Dependencies: [19, 4933, 4877, 4945, 1392, 21, 558, 576, 11783, 5242, 12515, 12508, 6915, 6935, 7019, 12352, 12516, 11867, 504, 7377, 11869, 1128, 3862, 5636, 11871, 2]
 
-// Module 12482 (ConjureClarificationEntityPicker)
+// Module 12514 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
-import ConjureUtils from "ConjureUtils" /* 7345 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11837 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11839 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12320 */;
-import ConjureClarification from "ConjureClarification" /* 12476 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5242 */;
+import TableRow2 from "TableRow" /* 6935 */;
+import TableRowGroup2 from "TableRowGroup" /* 7019 */;
+import ConjureUtils from "ConjureUtils" /* 7377 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11869 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11871 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12352 */;
+import ConjureClarification from "ConjureClarification" /* 12508 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -393,7 +393,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(12476);
+      const tmp4Result = tmp4(12508);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };
@@ -532,7 +532,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
                               guild: GuildStore.getGuild(tmp),
                               channels: result,
                               selectedChannel: found,
-                              noChannelOptionLabel: intl.string(_modDef3830["jtBVV+"]),
+                              noChannelOptionLabel: intl.string(_modDef3862["jtBVV+"]),
                               onSelect(id) {
                                               let items;
                                               let closure_0 = id;
@@ -716,7 +716,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
                                       guild: GuildStore.getGuild(tmp),
                                       channels: result,
                                       selectedChannel: found,
-                                      noChannelOptionLabel: intl.string(_modDef3830["jtBVV+"]),
+                                      noChannelOptionLabel: intl.string(_modDef3862["jtBVV+"]),
                                       onSelect(id) {
                                                       let items;
                                                       let closure_0 = id;

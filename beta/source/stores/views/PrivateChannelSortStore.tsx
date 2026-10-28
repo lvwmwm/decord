@@ -1,23 +1,23 @@
-// Module ID: 7322
-// Function ID: 7323
+// Module ID: 7354
+// Function ID: 7355
 // Name: PrivateChannelSortStore
-// Dependencies: [6785, 6786, 4827, 4823, 4845, 6771, 6704, 1392, 4830, 11, 4898, 2049, 7323, 504, 584, 2]
+// Dependencies: [6817, 6818, 4859, 4855, 4877, 6803, 6736, 1392, 4862, 11, 4930, 2049, 7355, 504, 584, 2]
 
-// Module 7322 (PrivateChannelSortStore)
+// Module 7354 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4898 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7323 */;
-import MessageRequestStore from "MessageRequestStore" /* 6785 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6786 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4930 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7355 */;
+import MessageRequestStore from "MessageRequestStore" /* 6817 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6818 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 let values = [];
 let values2 = [];
 let closure_18 = [];
-const f41482 = () => {
+const f41550 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -95,7 +95,7 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f41482 === "function") {
+    if (typeof f41550 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;

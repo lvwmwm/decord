@@ -1,18 +1,18 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15061
+// Function ID: 15062
 // Name: LocalPushNotificationStore
-// Dependencies: [4845, 6636, 10743, 1087, 10753, 2049, 1128, 504, 584, 2]
+// Dependencies: [4877, 6668, 10775, 1087, 10785, 2049, 1128, 504, 584, 2]
 
-// Module 15029 (LocalPushNotificationStore)
+// Module 15061 (LocalPushNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import PushNotificationDefault from "PushNotification" /* 10753 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6636 */;
-import Constants from "Constants" /* 10743 */;
+import PushNotificationDefault from "PushNotification" /* 10785 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6668 */;
+import Constants from "Constants" /* 10775 */;
 import size from "module_2" /* 2 */;
 
 let userInfo;
@@ -79,7 +79,7 @@ let obj = {
               const obj2 = { type: hasOwnProperty.GUILD_VERIFICATION, guildId: guild.id };
               set.add(obj2);
               const obj3 = { userInfo: obj2, fireDate: obj.format(metroRequire), alertTitle: guild.name, alertBody: intl.string(intl2.t["hrDBa+"]), category: "local" };
-              const scheduleLocalNotification = tmp16(10753).scheduleLocalNotification;
+              const scheduleLocalNotification = tmp16(10785).scheduleLocalNotification;
               PushNotificationDefault;
               intl = intl2.intl;
               const result = scheduleLocalNotification(obj3);

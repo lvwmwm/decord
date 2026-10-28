@@ -1,215 +1,149 @@
 // Module ID: 5398
 // Function ID: 5399
-// Dependencies: []
-// Exports: addInsets, gestureToPressableEvent, gestureTouchToPressableEvent, isTouchWithinInset, numberAsInset, viewCenterToPressableEvent
+// Dependencies: [32, 19, 5396, 5386, 5399, 5372, 5387, 5334]
+// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 5398
-function touchDataToPressEvent(arg0, arg1, arg2) {
+import react from "react" /* 19 */;
+import Reanimated2 from "Reanimated" /* 5372 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 5386 */;
+import allowedNativeProps2 from "allowedNativeProps" /* 5387 */;
+import _mod5396 from "module_5396" /* 5396 */;
+import _mod5399 from "module_5399" /* 5399 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
+const useMemo = react.useMemo;
+const map = new Map();
+function DEFAULT_PROPS_TRANSFORMER(arg0) {
+  return arg0;
+}
+function isGestureEnabled(gestures) {
+  let someResult;
+  const obj = _mod5396;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    someResult = gestures.some(isGestureEnabled);
+  } else {
+    const tmpResult = SHARED_VALUE_OFFSET;
+    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
+  }
+  return someResult;
 }
 
-export const addInsets = (left, left2) => {
-  let num3;
-  let num4;
-  let num5;
-  let num6;
-  let num7;
-  let num8;
-  let num = left.left;
-  if (num == null) {
-    num = 0;
+export { isGestureEnabled };
+export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
+  useAnimated = useAnimated.useAnimated;
+  if (!useAnimated) {
+    const obj = _mod5399;
+    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
   }
-  let num2 = left2.left;
-  if (num2 == null) {
-    num2 = 0;
+  useAnimated.dispatchesAnimatedEvents = useAnimated;
+  if (useAnimated.dispatchesAnimatedEvents) {
+    useAnimated.disableReanimated = true;
   }
-  const rect = { left: num + num2, right: num3 + num4, top: num5 + num6, bottom: num7 + num8 };
-  num3 = left.right;
-  if (num3 == null) {
-    num3 = 0;
+  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
+  if (result) {
+    const obj2 = SHARED_VALUE_OFFSET;
+    result = obj2.hasWorkletEventHandlers(useAnimated);
   }
-  num4 = left2.right;
-  if (num4 == null) {
-    num4 = 0;
+  if (result) {
+    result = !useAnimated.dispatchesAnimatedEvents;
   }
-  num5 = left.top;
-  if (num5 == null) {
-    num5 = 0;
-  }
-  num6 = left2.top;
-  if (num6 == null) {
-    num6 = 0;
-  }
-  num7 = left.bottom;
-  if (num7 == null) {
-    num7 = 0;
-  }
-  num8 = left2.bottom;
-  if (num8 == null) {
-    num8 = 0;
-  }
-  return rect;
+  useAnimated.shouldUseReanimatedDetector = result;
+  const obj3 = _mod5399;
+  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
 };
-export const gestureToPressableEvent = (handlerTag) => {
-  let items;
-  let items1;
-  let obj3;
-  const timestamp = Date.now();
-  const obj = { identifier: handlerTag.handlerTag, locationX: handlerTag.x, locationY: handlerTag.y, pageX: handlerTag.absoluteX, pageY: handlerTag.absoluteY, target: 0, timestamp, touches: [], changedTouches: [] };
-  const obj2 = { nativeEvent: obj3 };
-  obj3 = { touches: items, changedTouches: items1, identifier: obj.identifier, locationX: handlerTag.x, locationY: handlerTag.y, pageX: handlerTag.absoluteX, pageY: handlerTag.absoluteY, target: 0, timestamp, force: "Boolean" };
-  items = [obj];
-  items1 = [obj];
+export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  let first;
+  let iter;
+  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
+  if (shouldUseReanimatedDetector) {
+    const obj = SHARED_VALUE_OFFSET;
+    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+  }
+  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
+  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
+  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
+  if (EMPTY_WHITE_LIST == null) {
+    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
+  }
+  const entries = Object.entries(shouldUseReanimatedDetector);
+  const tmp12 = entries[Symbol.iterator]();
+  while (tmp12 !== undefined) {
+    [first, iter] = tmp13;
+    let tmp17 = first;
+    let tmp19 = require;
+    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
+    if (!allowedNativeProps.has(first)) {
+      if (!EMPTY_WHITE_LIST.has(tmp17)) {
+        let PropsToFilter = tmp19(5387).PropsToFilter;
+        if (PropsToFilter.has(tmp17)) {
+          continue;
+        } else {
+          let _console = console;
+          let tmp19Result = tmp19(5334);
+          let _HermesInternal = HermesInternal;
+          let str = "";
+          let str2 = " is not a valid property for ";
+          let str3 = " and will be ignored.";
+          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
+        }
+        continue;
+      }
+      continue;
+    }
+    let Reanimated = tmp19(5372).Reanimated;
+    let isSharedValueResult;
+    if (Reanimated != null) {
+      isSharedValueResult = Reanimated.isSharedValue(iter);
+    }
+    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
+  }
   return obj2;
 };
-export const gestureTouchToPressableEvent = (handlerTag) => {
-  let allTouches1;
-  let changedTouches;
-  let num;
-  let num2;
-  let num3;
-  let num4;
-  const timestamp = Date.now();
-  const nativeEvent = {
-    touches: allTouches1.map((item) => {
-      if (typeof touchDataToPressEvent === "function") {
-        const obj = { identifier: null, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: tmp, touches: [], changedTouches: [] };
-        ({ id: obj.identifier, x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = item);
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
+export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(cResult, map, transformHoverProps) {
+  let closure_0 = cResult;
+  let tmp = map;
+  if (map === undefined) {
+    tmp = map;
+  }
+  let closure_1 = tmp;
+  let tmp2 = transformHoverProps;
+  if (transformHoverProps === undefined) {
+    tmp2 = DEFAULT_PROPS_TRANSFORMER;
+  }
+  let closure_2 = tmp2;
+  const items = [cResult, tmp, tmp2];
+  return useMemo(() => {
+    const obj = {};
+    const merged = Object.assign(closure_0);
+    const item = closure_1.forEach((item, index) => {
+      if (index in obj) {
+        obj[item] = obj[index];
+        delete obj[tmp];
       }
-    }),
-    changedTouches: changedTouches.map((item) => {
-      if (typeof touchDataToPressEvent === "function") {
-        const obj = { identifier: null, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: tmp, touches: [], changedTouches: [] };
-        ({ id: obj.identifier, x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = item);
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }),
-    identifier: handlerTag.handlerTag,
-    locationX: num,
-    locationY: num2,
-    pageX: num3,
-    pageY: num4,
-    target: 0,
-    timestamp,
-    force: "Boolean"
-  };
-  allTouches1 = handlerTag.allTouches;
-  changedTouches = handlerTag.changedTouches;
-  const allTouches = handlerTag.allTouches;
-  const atResult = allTouches.at(0);
-  num = undefined;
-  if (atResult != null) {
-    num = atResult.x;
-  }
-  if (num == null) {
-    num = -1;
-  }
-  const allTouches2 = handlerTag.allTouches;
-  const atResult1 = allTouches2.at(0);
-  num2 = undefined;
-  if (atResult1 != null) {
-    num2 = atResult1.y;
-  }
-  if (num2 == null) {
-    num2 = -1;
-  }
-  const allTouches3 = handlerTag.allTouches;
-  const atResult2 = allTouches3.at(0);
-  num3 = undefined;
-  if (atResult2 != null) {
-    num3 = atResult2.absoluteX;
-  }
-  if (num3 == null) {
-    num3 = -1;
-  }
-  const allTouches4 = handlerTag.allTouches;
-  const atResult3 = allTouches4.at(0);
-  num4 = undefined;
-  if (atResult3 != null) {
-    num4 = atResult3.absoluteY;
-  }
-  if (num4 == null) {
-    num4 = -1;
-  }
-  return { nativeEvent };
-};
-export const isTouchWithinInset = (width, right, locationX) => {
-  let num;
-  if (locationX != null) {
-    num = locationX.locationX;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  let num2 = right.right;
-  if (num2 == null) {
-    num2 = 0;
-  }
-  let tmp = num < num2 + width.width;
-  if (tmp) {
-    let num3;
-    if (locationX != null) {
-      num3 = locationX.locationY;
+    });
+    const tmp3 = closure_2(obj);
+    let useAnimated = tmp3.useAnimated;
+    if (!useAnimated) {
+      const obj2 = _mod5399;
+      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
     }
-    if (num3 == null) {
-      num3 = 0;
+    tmp3.dispatchesAnimatedEvents = useAnimated;
+    if (tmp3.dispatchesAnimatedEvents) {
+      tmp3.disableReanimated = true;
     }
-    let num4 = right.bottom;
-    if (num4 == null) {
-      num4 = 0;
+    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
+    if (result) {
+      const obj3 = SHARED_VALUE_OFFSET;
+      result = obj3.hasWorkletEventHandlers(tmp3);
     }
-    tmp = num3 < num4 + width.height;
-  }
-  if (tmp) {
-    let num5;
-    if (locationX != null) {
-      num5 = locationX.locationX;
+    if (result) {
+      result = !tmp3.dispatchesAnimatedEvents;
     }
-    if (num5 == null) {
-      num5 = 0;
-    }
-    let num6 = right.left;
-    if (num6 == null) {
-      num6 = 0;
-    }
-    tmp = num5 > -num6;
-  }
-  if (tmp) {
-    let num7;
-    if (locationX != null) {
-      num7 = locationX.locationY;
-    }
-    if (num7 == null) {
-      num7 = 0;
-    }
-    let num8 = right.top;
-    if (num8 == null) {
-      num8 = 0;
-    }
-    tmp = num7 > -num8;
-  }
-  return tmp;
-};
-export const numberAsInset = (left) => {
-  const rect = { left, right: left, top: left, bottom: left };
-  return rect;
-};
-export const viewCenterToPressableEvent = (width) => {
-  let items;
-  let items1;
-  let obj3;
-  const timestamp = Date.now();
-  const result = width.width / 2;
-  const result1 = width.height / 2;
-  const obj = { identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, touches: [], changedTouches: [] };
-  const obj2 = { nativeEvent: obj3 };
-  obj3 = { touches: items, changedTouches: items1, identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, force: "r" };
-  items = [obj];
-  items1 = [obj];
-  return obj2;
+    tmp3.shouldUseReanimatedDetector = result;
+    const obj4 = _mod5399;
+    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
+    return tmp3;
+  }, items);
 };

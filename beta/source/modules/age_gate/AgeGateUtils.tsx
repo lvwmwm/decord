@@ -1,28 +1,28 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6694
+// Function ID: 6695
 // Name: AgeGateUtils
-// Dependencies: [4841, 4823, 6663, 4845, 4874, 1392, 1112, 1087, 1128, 11, 558, 576, 5644, 6659, 6664, 6654, 504, 6653, 6657, 2067, 6667, 6681, 6682, 2]
+// Dependencies: [4873, 4855, 6695, 4877, 4906, 1392, 1112, 1087, 1128, 11, 558, 576, 5676, 6691, 6696, 6686, 504, 6685, 6689, 2067, 6699, 6713, 6714, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, userNeedsAgeGate
 
-// Module 6662 (AgeGateUtils)
+// Module 6694 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl15 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import GuildRecord from "GuildRecord" /* 4841 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5644 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6653 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6654 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6657 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6659 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6667 */;
-import NSFWContentGate from "NSFWContentGate" /* 6681 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6682 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6663 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import GuildRecord from "GuildRecord" /* 4873 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5676 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6685 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6686 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6691 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6699 */;
+import NSFWContentGate from "NSFWContentGate" /* 6713 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6714 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6695 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import UserStore from "UserStore" /* 1392 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
 import Constants from "Constants" /* 1087 */;
@@ -35,7 +35,7 @@ let _require;
 let GuildNSFWContentLevel;
 let tmp;
 let unpackModuleId;
-const getTinyBroncoWarningDescriptions = tmp(6664);
+const getTinyBroncoWarningDescriptions = tmp(6696);
 function getLargeGuildUnderageContent(isAgeVerified) {
   let string2Result;
   let stringResult;
@@ -1101,7 +1101,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannel
   const tmpResult4 = require("get initialized");
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp12, tmp13);
   const tmpResult5 = require("RegionalFeatureConfigUtils");
-  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(6659).AgeGatedFeature.AGE_GATED_SPACES);
+  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(6691).AgeGatedFeature.AGE_GATED_SPACES);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [];
     class S {

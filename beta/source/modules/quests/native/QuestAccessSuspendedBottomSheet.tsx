@@ -1,17 +1,17 @@
-// Module ID: 16466
-// Function ID: 16467
+// Module ID: 16500
+// Function ID: 16501
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 576, 5210, 16465, 12869, 1128, 10855, 5244, 2]
+// Dependencies: [19, 21, 558, 576, 5242, 16499, 12901, 1128, 10887, 5276, 2]
 
-// Module 16466 (QuestAccessSuspendedBottomSheet)
+// Module 16500 (QuestAccessSuspendedBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import PromoSheet2 from "PromoSheet" /* 10855 */;
-import openAccountStanding from "openAccountStanding" /* 12869 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 16465 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import PromoSheet2 from "PromoSheet" /* 10887 */;
+import openAccountStanding from "openAccountStanding" /* 12901 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 16499 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -51,9 +51,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAcces
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const PromoSheet = tmp(10855).PromoSheet;
+    const PromoSheet = tmp(10887).PromoSheet;
     ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.hvVgAZ), onPress: first });
-    const Button = tmp(5244).Button;
+    const Button = tmp(5276).Button;
     intl3 = tmp(1128).intl;
     const tmp11 = <PromoSheet title={tmp5} description={tmp6} actions={null} />;
     cResult[3] = tmp11;

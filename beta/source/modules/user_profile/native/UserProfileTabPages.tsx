@@ -1,16 +1,16 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14464
+// Function ID: 14465
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 558, 576, 5052, 1499, 1633, 5267, 11147, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 5084, 1499, 1633, 5299, 11179, 2]
 
-// Module 14432 (UserProfileTabPages)
+// Module 14464 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ const ReanimatedRexportDefault = ReanimatedRexport;
 let _require, dependencyMap, set;
 
 let tmp;
-const SegmentedControlPages = tmp(11147);
+const SegmentedControlPages = tmp(11179);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMeasuredT
   let tmp6;
   let obj = sharedValue(576);
   const cResult = obj.c(11);
-  const obj2 = sharedValue(5052);
+  const obj2 = sharedValue(5084);
   sharedValue = obj2.useSharedValue([]);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [];

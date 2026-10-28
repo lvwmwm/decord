@@ -1,23 +1,23 @@
-// Module ID: 12257
-// Function ID: 12258
+// Module ID: 12289
+// Function ID: 12290
 // Name: ConjurePublishDestinationSheet
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 3830, 5210, 7248, 6984, 6985, 5244, 7298, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 1128, 3862, 5242, 7280, 7016, 7017, 5276, 7330, 2]
 // Exports: default
 
-// Module 12257 (ConjurePublishDestinationSheet)
+// Module 12289 (ConjurePublishDestinationSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import TableRadioRow from "TableRadioRow" /* 6984 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6985 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7248 */;
-import ActionSheet2 from "ActionSheet" /* 7298 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5242 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import TableRadioRow from "TableRadioRow" /* 7016 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7017 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7280 */;
+import ActionSheet2 from "ActionSheet" /* 7330 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   [value, tmp7] = react.useState(options.selected_destination_id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(value(3830).lJrOGW);
+    const stringResult = intl.string(value(3862).lJrOGW);
     cResult[0] = stringResult;
     first1 = stringResult;
   } else {
@@ -71,8 +71,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   dependencyMap = tmp11;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: first1 };
-    cResult[3] = closure_6(onDone(7248).BottomSheetTitleHeader, obj2);
-    const tmp14 = closure_6(onDone(7248).BottomSheetTitleHeader, obj2);
+    cResult[3] = closure_6(onDone(7280).BottomSheetTitleHeader, obj2);
+    const tmp14 = closure_6(onDone(7280).BottomSheetTitleHeader, obj2);
   }
   if (cResult[4] !== onDone) {
     const fn = function w() {
@@ -130,7 +130,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
           return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
         }
       }
-      const stringResult1 = obj3.string(value(3830).zh1Izp);
+      const stringResult1 = obj3.string(value(3862).zh1Izp);
       cResult[12] = stringResult1;
       tmp21 = stringResult1;
     } else {
@@ -157,7 +157,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
             return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
           }
         }
-        const stringResult2 = obj5.string(value(3830).y83r6D);
+        const stringResult2 = obj5.string(value(3862).y83r6D);
         cResult[16] = stringResult2;
         tmp27 = stringResult2;
       } else {
@@ -183,8 +183,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
                 }
         };
         cResult[17] = tmp11;
-        cResult[18] = closure_6(onDone(5244).Button, obj4);
-        const tmp31 = closure_6(onDone(5244).Button, obj4);
+        cResult[18] = closure_6(onDone(5276).Button, obj4);
+        const tmp31 = closure_6(onDone(5276).Button, obj4);
       } else {
         class T {
           constructor(label) {
@@ -219,13 +219,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
     };
     cResult[13] = value;
     cResult[14] = tmp11;
-    cResult[15] = closure_6(onDone(5244).Button, obj7);
-    const tmp26 = closure_6(onDone(5244).Button, obj7);
+    cResult[15] = closure_6(onDone(5276).Button, obj7);
+    const tmp26 = closure_6(onDone(5276).Button, obj7);
   }
   cResult[9] = value;
   cResult[10] = tmp16;
-  cResult[11] = closure_6(onDone(6985).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
-  const tmp20 = closure_6(onDone(6985).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
+  cResult[11] = closure_6(onDone(7017).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
+  const tmp20 = closure_6(onDone(7017).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
 }) : (function PublishDestinationSheet(arg0) {
   let destinations;
   let intl2;
@@ -240,7 +240,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   const tmp = closure_9();
   [value, tmp4] = react.useState(options.selected_destination_id);
   const intl = intl4.intl;
-  const stringResult = intl.string(value(3830).lJrOGW);
+  const stringResult = intl.string(value(3862).lJrOGW);
   let obj = {
     header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }),
     onDismiss() {
@@ -265,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = {
     variant: "primary",
-    text: intl2.string(value(3830).zh1Izp),
+    text: intl2.string(value(3862).zh1Izp),
     onPress() {
       require(first);
       const obj = ActionSheetActionCreatorsDefault;
@@ -277,7 +277,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   items[1] = closure_6(Button, obj4);
   const obj5 = {
     variant: "secondary",
-    text: intl3.string(value(3830).y83r6D),
+    text: intl3.string(value(3862).y83r6D),
     onPress() {
       require(null);
       const obj = ActionSheetActionCreatorsDefault;

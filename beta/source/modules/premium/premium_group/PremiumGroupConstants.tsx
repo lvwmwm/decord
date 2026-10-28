@@ -1,12 +1,12 @@
 // Module ID: 2066
 // Function ID: 2067
 // Name: PremiumGroupConstants
-// Dependencies: [1087, 2067, 1128, 3250, 2]
+// Dependencies: [1087, 2067, 1128, 3282, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
 // Module 2066 (PremiumGroupConstants)
 import intl2 from "intl" /* 1128 */;
-import _modDef3250 from "module_3250" /* 3250 */;
+import _modDef3282 from "module_3282" /* 3282 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2067 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ export const HELP_CENTER_LINK = articleURL;
 export const CANNOT_INVITE_STATUSES = items;
 export const getPremiumGroupProductName = function getPremiumGroupProductName() {
   const intl = intl2.intl;
-  return intl.string(_modDef3250.aFBQ3d);
+  return intl.string(_modDef3282.aFBQ3d);
 };
 export const getPremiumGroupCountryName = function getPremiumGroupCountryName() {
   const intl = intl2.intl;

@@ -16,7 +16,7 @@ let closure_52;
 let closure_53;
 let closure_54;
 let closure_55;
-const f86700 = (__h) => {
+const f86792 = (__h) => {
   let closure_0 = __h;
   try {
     __h = __h.__h;
@@ -165,7 +165,7 @@ function y$1(span, arg1, formTitle) {
       }
     }
   }
-  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "maxDuration", __u: "maxDurationMs" };
+  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "stopImmediatePropagation", __u: null };
   sum = sum + 1;
   const obj3 = obj;
   if (null != obj.vnode) {
@@ -478,7 +478,7 @@ class C$1 {
         if (obj.__c) {
           let __cResult1 = obj3.__c(tmp8, items);
         }
-        let someResult = items.some(f86700);
+        let someResult = items.some(f86792);
         items.length = 0;
         items1.length = 0;
         let sorted1 = arr3.sort(H);
@@ -502,7 +502,7 @@ class C$1 {
       if (obj.__c) {
         obj4.__c(tmp4, items);
       }
-      items.some(f86700);
+      items.some(f86792);
     }
     C$1.__r = 0;
   }
@@ -542,7 +542,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                   if (tmp3.constructor != String) {
                     if (isArray(tmp3)) {
                       obj = { children: tmp3 };
-                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "maxDuration", __u: "maxDurationMs" };
+                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "stopImmediatePropagation", __u: null };
                       sum = sum + 1;
                       let obj4 = obj;
                       tmp8 = element;
@@ -561,7 +561,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                             ref1 = tmp3.ref;
                           }
                           let __v = tmp3.__v;
-                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "maxDuration", __u: "maxDurationMs" };
+                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "stopImmediatePropagation", __u: null };
                           tmp10 = __v;
                           if (null == __v) {
                             let sum1 = sum + 1;
@@ -585,7 +585,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                 }
               }
             }
-            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "maxDuration", __u: "maxDurationMs" };
+            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "stopImmediatePropagation", __u: null };
             tmp21 = tmp3;
             if (null == tmp3) {
               let sum2 = sum + 1;
@@ -2196,12 +2196,12 @@ function Form(onSubmitError) {
     input = screenshotInput.input;
   }
   [tmp12, c14] = tmp3(tmp(tmp2, null), 2);
-  const f86708 = (arg0) => {
+  const f86800 = (arg0) => {
     _undefined(arg0);
     closure_1_13(false);
   };
   items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
-  const f86709 = (name) => {
+  const f86801 = (name) => {
     let tmp2 = isEmailRequired;
     let tmp3 = isNameRequired;
     const tmp = emailLabel;
@@ -2233,8 +2233,8 @@ function Form(onSubmitError) {
   };
   c46 = 8;
   tmp3(tmp(tmp2, null), 2);
-  const tmp14 = fn2(() => f86713, []);
-  closure_15 = fn2(() => f86713, items);
+  const tmp14 = fn2(() => f86805, []);
+  closure_15 = fn2(() => f86805, items);
   let closure_0 = screenshotInput(function*(arg0, value) {
     let closure_2;
     let tmp33;
@@ -2391,11 +2391,11 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  const f141422 = function(arg0) {
-    return f141422(...arguments);
+  const f141549 = function(arg0) {
+    return f141549(...arguments);
   };
   c46 = 8;
-  obj = { class: "form", onSubmit: tmp13(() => f86713, items1) };
+  obj = { class: "form", onSubmit: tmp13(() => f86805, items1) };
   let tmp15Result = null;
   if (input) {
     tmp15Result = null;
@@ -2542,16 +2542,16 @@ function Dialog(onFormSubmitted) {
   first = tmp3[0];
   let closure_3 = tmp3[1];
   items = [first];
-  const f86712 = () => {
+  const f86804 = () => {
     if (first) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp);
       closure_1_3(null);
     }
-    f86712();
+    f86804();
   };
   [][0] = onFormSubmitted;
-  const f86713 = (arg0, arg1) => {
+  const f86805 = (arg0, arg1) => {
     merged.onSubmitSuccess(arg0, arg1);
     closure_1_3(setTimeout(() => {
       closure_1_0();
@@ -2559,7 +2559,7 @@ function Dialog(onFormSubmitted) {
     }, 5000));
   };
   c46 = 8;
-  const tmp5 = fn2(() => f86713, items);
+  const tmp5 = fn2(() => f86805, items);
   const tmp8 = g$1;
   if (first) {
     const obj2 = { class: "success__position", onClick: tmp5 };
@@ -2879,7 +2879,7 @@ const fn3 = function p(keys) {
 const fn4 = function x(arg0, arg1) {
   let closure_0 = arg0;
   c46 = 8;
-  return fn2(() => f86713, arg1);
+  return fn2(() => f86805, arg1);
 };
 let merged = Object.assign({ useCallback: null, useContext: null, useDebugValue: null, useEffect: null, useErrorBoundary: null, useId: null, useImperativeHandle: null, useLayoutEffect: null, useMemo: null, useReducer: null, useRef: null, useState: null });
 merged[0] = fn4;
@@ -4219,7 +4219,7 @@ export const feedbackModalIntegration = () => {
         if (closure_2_13.__c) {
           obj3.__c(tmpResult2, __h);
         }
-        __h.some(f86700);
+        __h.some(f86792);
       };
       return obj2;
     }

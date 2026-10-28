@@ -1,11 +1,11 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 9877
+// Function ID: 9878
 // Name: TooltipConstants
-// Dependencies: [5247, 2]
+// Dependencies: [5279, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9845 (TooltipConstants)
-import spring from "spring" /* 5247 */;
+// Module 9877 (TooltipConstants)
+import spring from "spring" /* 5279 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

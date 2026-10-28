@@ -1,11 +1,11 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 12476
+// Function ID: 12477
 // Name: conjurePlanOverlayDesign
-// Dependencies: [12445, 2]
+// Dependencies: [12477, 2]
 // Exports: conjurePlanOverlayWidgetBox, conjurePlanOverlayWidgetSize
 
-// Module 12444 (conjurePlanOverlayDesign)
-import conjureOverlayPreview from "conjureOverlayPreview" /* 12445 */;
+// Module 12476 (conjurePlanOverlayDesign)
+import conjureOverlayPreview from "conjureOverlayPreview" /* 12477 */;
 import size_mod from "module_2" /* 2 */;
 
 const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";

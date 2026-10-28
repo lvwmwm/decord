@@ -1,12 +1,12 @@
-// Module ID: 5829
-// Function ID: 5830
+// Module ID: 5861
+// Function ID: 5862
 // Name: GoLiveQualityManager
-// Dependencies: [5742, 3, 4818, 2]
+// Dependencies: [5774, 3, 4850, 2]
 
-// Module 5829 (GoLiveQualityManager)
+// Module 5861 (GoLiveQualityManager)
 import LoggerDefault from "Logger" /* 3 */;
-import Timers from "Timers" /* 4818 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5742 */;
+import Timers from "Timers" /* 4850 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5774 */;
 import size from "module_2" /* 2 */;
 
 const GoLiveQualityManagerEvent = { RequestedSSRCsUpdate: "requested-ssrcs-update", RequestedStreamsUpdate: "requested-streams-update" };

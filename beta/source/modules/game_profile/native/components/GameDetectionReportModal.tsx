@@ -1,25 +1,25 @@
-// Module ID: 9504
-// Function ID: 9505
+// Module ID: 9536
+// Function ID: 9537
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1505, 9245, 9505, 9076, 9073, 6672, 1128, 7485, 6931, 6924, 5234, 6985, 6984, 7008, 5244, 7180, 7095, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 1505, 9277, 9537, 9108, 9105, 6704, 1128, 7517, 6963, 6956, 5266, 7017, 7016, 7040, 5276, 7212, 7127, 2]
 
-// Module 9504 (GameDetectionReportModal)
+// Module 9536 (GameDetectionReportModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import TableRadioRow3 from "TableRadioRow" /* 6984 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 6985 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7008 */;
-import TextArea2 from "TextArea" /* 7180 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+import TableRadioRow3 from "TableRadioRow" /* 7016 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7017 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7040 */;
+import TextArea2 from "TextArea" /* 7212 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Navigator = tmp(7095);
+const Navigator = tmp(7127);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
@@ -192,8 +192,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
         tmp13 = closure_0;
         tmp14 = closure_2;
         obj1.title = intl2.string(closure_0(closure_2[14]).t["6tnjbD"]);
-        obj1.headerLeft = function headerLeft() { /* body not rendered: F146498 */ };
-        obj1.headerRight = function headerRight() { /* body not rendered: F146499 */ };
+        obj1.headerLeft = function headerLeft() { /* body not rendered: F146625 */ };
+        obj1.headerRight = function headerRight() { /* body not rendered: F146626 */ };
         setOptions2Result = setOptions2(obj1);
       } else {
         str = "game_search";
@@ -210,8 +210,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp7 = closure_0;
           tmp8 = closure_2;
           obj2 = closure_0(closure_2[17]);
-          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F146500 */ });
-          obj.headerRight = function headerRight() { /* body not rendered: F146501 */ };
+          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F146627 */ });
+          obj.headerRight = function headerRight() { /* body not rendered: F146628 */ };
           setOptionsResult = setOptions(obj);
         } else {
           tmp16 = closure_2;
@@ -226,8 +226,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp21 = closure_0;
           tmp22 = closure_2;
           obj5 = closure_0(closure_2[17]);
-          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F146502 */ });
-          obj6.headerRight = function headerRight() { /* body not rendered: F146503 */ };
+          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F146629 */ });
+          obj6.headerRight = function headerRight() { /* body not rendered: F146630 */ };
           setOptions3Result = setOptions3(obj6);
         }
       }

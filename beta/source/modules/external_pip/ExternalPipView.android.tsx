@@ -1,17 +1,17 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 18475
+// Function ID: 18476
 // Name: ExternalPipView
-// Dependencies: [32, 19, 8781, 21, 558, 576, 5824, 18439, 18441, 18442, 2]
+// Dependencies: [32, 19, 8813, 21, 558, 576, 5856, 18476, 18478, 18479, 2]
 
-// Module 18438 (ExternalPipView)
+// Module 18475 (ExternalPipView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 5824 */;
-import ExternalPipAutoEnterExperiment from "ExternalPipAutoEnterExperiment" /* 18441 */;
-import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 18442 */;
+import ExternalPipDefault from "ExternalPip" /* 5856 */;
+import ExternalPipAutoEnterExperiment from "ExternalPipAutoEnterExperiment" /* 18478 */;
+import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 18479 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 8781 */;
+import AppFreezeStore from "AppFreezeStore" /* 8813 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -134,11 +134,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipV
     let obj2 = { disabled: !obj3.isSupported() };
     cResult[0] = obj2;
     first = obj2;
-    obj3 = setExternalPipActive(5824);
+    obj3 = setExternalPipActive(5856);
   } else {
     first = cResult[0];
   }
-  externalPipEnabled = setExternalPipActive(18439)(first).externalPipEnabled;
+  externalPipEnabled = setExternalPipActive(18476)(first).externalPipEnabled;
   ({ externalPipActive, setExternalPipActive } = closure_7());
   const tmp5 = closure_7();
   if (cResult[1] !== externalPipEnabled) {
@@ -312,8 +312,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipV
   let obj2;
   let setExternalPipActive;
   let obj = { disabled: !obj2.isSupported() };
-  const tmp = setExternalPipActive(18439);
-  obj2 = setExternalPipActive(5824);
+  const tmp = setExternalPipActive(18476);
+  obj2 = setExternalPipActive(5856);
   const externalPipEnabled = tmp(obj).externalPipEnabled;
   const tmp2 = closure_7();
   setExternalPipActive = tmp2.setExternalPipActive;

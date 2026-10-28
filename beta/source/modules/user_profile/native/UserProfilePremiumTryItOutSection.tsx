@@ -1,20 +1,20 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15944
+// Function ID: 15945
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 7253, 15911, 9792, 9793, 1128, 8566, 15933, 15942, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 7285, 15945, 9824, 9825, 1128, 8598, 15967, 15976, 2]
 
-// Module 15910 (UserProfilePremiumTryItOutSection)
+// Module 15944 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15911 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15933 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 15942 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7285 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9824 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9825 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 15945 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 15967 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 15976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   }
   if (cResult[7] !== tmp4.lockIcon) {
     const obj4 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp4.lockIcon };
-    const LockIcon = tmp(8566).LockIcon;
+    const LockIcon = tmp(8598).LockIcon;
     const tmp18 = closure_5(LockIcon, obj4);
     cResult[7] = tmp4.lockIcon;
     cResult[8] = tmp18;
@@ -204,7 +204,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
   items1[0] = closure_5(View, obj3);
   const obj4 = { style: tmp.lockCircle, children: closure_5(LockIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon };
-  LockIcon = analyticsLocations(8566).LockIcon;
+  LockIcon = analyticsLocations(8598).LockIcon;
   items1[1] = closure_5(View, obj4);
   items2 = [closure_6(View, obj2), closure_5(UserProfileTryItOutFieldsDefault, { currentUser, mode: "entrypoint" })];
   return closure_6(tmp4, obj);

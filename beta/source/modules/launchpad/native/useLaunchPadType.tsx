@@ -1,13 +1,13 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11237
+// Function ID: 11238
 // Name: useLaunchPadType
-// Dependencies: [11204, 558, 4799, 1211, 2]
+// Dependencies: [11236, 558, 4831, 1211, 2]
 // Exports: default
 
-// Module 11205 (useLaunchPadType)
+// Module 11237 (useLaunchPadType)
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11204 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11236 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

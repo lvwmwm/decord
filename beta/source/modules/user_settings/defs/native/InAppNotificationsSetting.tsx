@@ -1,21 +1,21 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16878
+// Function ID: 16879
 // Name: InAppNotificationsSetting
-// Dependencies: [8332, 1087, 558, 4799, 576, 13753, 1128, 2864, 1267, 11208, 15698, 16845, 2]
+// Dependencies: [8364, 1087, 558, 4831, 576, 13785, 1128, 2864, 1267, 11240, 15732, 16879, 2]
 
-// Module 16844 (InAppNotificationsSetting)
+// Module 16878 (InAppNotificationsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _modDef2864 from "module_2864" /* 2864 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import FocusModeUtils from "FocusModeUtils" /* 13753 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15698 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16845 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
+import FocusModeUtils from "FocusModeUtils" /* 13785 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15732 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16879 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11208 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

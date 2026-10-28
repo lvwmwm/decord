@@ -1,9 +1,9 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15724
+// Function ID: 15725
 // Name: SystemTelecomManager
 // Dependencies: [2004, 2]
 
-// Module 15690 (SystemTelecomManager)
+// Module 15724 (SystemTelecomManager)
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 

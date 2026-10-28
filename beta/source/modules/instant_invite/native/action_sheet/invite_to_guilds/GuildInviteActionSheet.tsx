@@ -1,26 +1,26 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14286
+// Function ID: 14287
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 1128, 1202, 14255, 14256, 14252, 14257, 5234, 5593, 11076, 7248, 7145, 9052, 5265, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 1128, 1202, 14287, 14288, 14284, 14289, 5266, 5625, 11108, 7280, 7177, 9084, 5297, 2]
 
-// Module 14254 (GuildInviteActionSheet)
+// Module 14286 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import SearchBar2 from "SearchBar" /* 7145 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7248 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9052 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14255 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14256 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14257 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
+import SearchBar2 from "SearchBar" /* 7177 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7280 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9084 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14287 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14288 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14289 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   const query = recipientId.query;
   const tmp4 = closure_8();
   dependencyMap = tmp4;
-  const obj2 = recipientId(14252);
+  const obj2 = recipientId(14284);
   [arr, arr2] = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   const tmp5 = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
@@ -131,7 +131,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         }
         _slicedToArray = tmp12;
         let tmp14 = 0 === arr.length;
-        const insets = source(5593)().insets;
+        const insets = source(5625)().insets;
         const tmp13 = source;
         if (!tmp14) {
           tmp14 = 0 === arr2.length;
@@ -197,8 +197,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
             cResult[17] = tmp7;
             cResult[18] = tmp16;
             cResult[19] = tmp17;
-            cResult[20] = closure_6(tmp(11076).UserProfileStackedActionSheetSectionList, obj3);
-            const tmp23 = closure_6(tmp(11076).UserProfileStackedActionSheetSectionList, obj3);
+            cResult[20] = closure_6(tmp(11108).UserProfileStackedActionSheetSectionList, obj3);
+            const tmp23 = closure_6(tmp(11108).UserProfileStackedActionSheetSectionList, obj3);
           }
           class A {
             constructor(arg0) {
@@ -276,7 +276,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14252);
+  let obj = recipientId(14284);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -284,7 +284,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
       items = [];
     }
     let tmp5 = 0 === arr.length;
-    const insets = source(5593)().insets;
+    const insets = source(5625)().insets;
     const tmp4 = source;
     if (!tmp5) {
       tmp5 = 0 === arr2.length;
@@ -321,7 +321,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         },
       ListEmptyComponent
     };
-    const UserProfileStackedActionSheetSectionList = tmp(11076).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(11108).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;
@@ -371,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.HvoZQD) };
-    const BottomSheetTitleHeader = tmp(7248).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7280).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { onChange: first, placeholder: intl2.string(intl4.t.uohsSv) };
-    const SearchBar = tmp(7145).SearchBar;
+    const SearchBar = tmp(7177).SearchBar;
     intl2 = tmp(1128).intl;
     const tmp13 = metroRequire(SearchBar, obj3);
     cResult[2] = tmp13;
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: format(v4UyUHh, obj5) };
-    const Text = tmp(5234).Text;
+    const Text = tmp(5266).Text;
     const intl3 = tmp(1128).intl;
     format = intl3.format;
     obj5 = { xDays: InstantInviteUtilsDefault.INVITE_OPTIONS_7_DAYS.label };

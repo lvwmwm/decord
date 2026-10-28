@@ -1,16 +1,16 @@
-// Module ID: 5592
-// Function ID: 5593
+// Module ID: 5624
+// Function ID: 5625
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5593, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5625, 2]
 
-// Module 5592 (NavScrim)
+// Module 5624 (NavScrim)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5593 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5625 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

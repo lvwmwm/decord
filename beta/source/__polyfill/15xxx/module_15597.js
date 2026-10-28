@@ -1,18 +1,18 @@
 // Module ID: 15597
 // Function ID: 15598
-// Dependencies: [15570]
+// Dependencies: [15598]
 
 // Module 15597
-import _mod15570 from "module_15570" /* 15570 */;
+import prop_mod from "module_15598" /* 15598 */;
 
+let prop = prop_mod;
+if (prop) {
+  const _Symbol = Symbol;
+  prop = !Symbol.sham;
+}
+if (prop) {
+  const _Symbol2 = Symbol;
+  prop = typeof Symbol.iterator === "symbol";
+}
 
-export default function(arg0) {
-  if (_mod15570(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default prop;

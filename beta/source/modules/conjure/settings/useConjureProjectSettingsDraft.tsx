@@ -1,16 +1,16 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11837
+// Function ID: 11838
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6773, 504, 11806, 11809, 11811, 10735, 6774, 7345, 11812, 1128, 3830, 11813, 10720, 2]
+// Dependencies: [5, 32, 19, 6805, 504, 11838, 11841, 11843, 10767, 6806, 7377, 11844, 1128, 3862, 11845, 10752, 2]
 // Exports: default
 
-// Module 11805 (useConjureProjectSettingsDraft)
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
+// Module 11837 (useConjureProjectSettingsDraft)
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -212,7 +212,7 @@ export default function useConjureProjectSettingsDraft(arg0, guild_id) {
       const intl = tmp(1128).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { max: ConjureProjectTypes.MAX_PROJECT_COLLABORATOR_ROLES };
-      prop = _modDef3830["dH7+/Z"];
+      prop = _modDef3862["dH7+/Z"];
       closure_19(formatToPlainString(prop, obj));
     } else {
       closure_15(arg0);

@@ -1,9 +1,9 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18746
+// Function ID: 18747
 // Name: IdGenerator
 // Dependencies: [2, 1277]
 
-// Module 18709 (IdGenerator)
+// Module 18746 (IdGenerator)
 import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1277 */;
 import size from "module_2" /* 2 */;
 

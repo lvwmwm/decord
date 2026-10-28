@@ -1,23 +1,23 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16308
+// Function ID: 16309
 // Name: PremiumSetting
-// Dependencies: [19, 1392, 2058, 1087, 21, 14708, 2053, 1128, 558, 576, 7529, 11039, 16275, 11208, 9425, 16279, 2]
+// Dependencies: [19, 1392, 2058, 1087, 21, 14740, 2053, 1128, 558, 576, 7561, 11071, 16309, 11240, 9457, 16313, 2]
 
-// Module 16274 (PremiumSetting)
+// Module 16308 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7529 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9425 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 14708 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16275 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7561 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9457 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 14740 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16309 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

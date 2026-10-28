@@ -1,27 +1,27 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17460
+// Function ID: 17461
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5146, 9710, 1633, 10625, 17424, 5037, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5178, 9742, 1633, 10657, 17461, 5069, 2]
 
-// Module 17423 (MainTabs)
+// Module 17460 (MainTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
-import useActiveTheme from "useActiveTheme" /* 9710 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10625 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17424 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5178 */;
+import useActiveTheme from "useActiveTheme" /* 9742 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10657 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17461 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const native = tmp(5037);
+const native = tmp(5069);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((paddingLeft, paddingRight) => {
@@ -99,7 +99,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = tmp14;
   }
   if (left > 0) {
-    tmp10 = React3(tmp4(10625), { absolute: true, mix: true });
+    tmp10 = React3(tmp4(10657), { absolute: true, mix: true });
   } else {
     tmp10 = null;
   }
@@ -127,7 +127,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp8 = View;
   tmp9 = hasOwnProperty;
   if (left > 0) {
-    tmp7Result = tmp7(tmp(10625), { absolute: true, mix: true });
+    tmp7Result = tmp7(tmp(10657), { absolute: true, mix: true });
   } else {
     tmp7Result = null;
   }

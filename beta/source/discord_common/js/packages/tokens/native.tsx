@@ -46,20 +46,20 @@ let obj = {
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
     function resolve(isAndroid) {
-      return f86066(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      return f86158(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
     }
     let closure_0 = arg0;
-    const f86062 = (shadowOffset, arg1) => {
+    const f86154 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    const f86063 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    const f86064 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    const f86065 = (shadowRadius) => shadowRadius.shadowRadius;
-    const f86066 = (elevation) => elevation.elevation;
+    const f86155 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const f86156 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    const f86157 = (shadowRadius) => shadowRadius.shadowRadius;
+    const f86158 = (elevation) => elevation.elevation;
     return { shadowOffset: { resolve }, shadowColor: { resolve }, shadowOpacity: { resolve }, shadowRadius: { resolve }, elevation: { resolve } };
   }),
   radii: Radius.Radius,

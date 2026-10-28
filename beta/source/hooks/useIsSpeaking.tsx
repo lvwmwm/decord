@@ -1,14 +1,14 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 6813
+// Function ID: 6814
 // Name: useIsSpeaking
-// Dependencies: [6006, 4874, 6685, 5630, 558, 576, 504, 2]
+// Dependencies: [6038, 4906, 6717, 5662, 558, 576, 504, 2]
 // Exports: getIsSpeaking
 
-// Module 6781 (useIsSpeaking)
-import SoundboardStore from "SoundboardStore" /* 6006 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import SpeakingStore from "SpeakingStore" /* 6685 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+// Module 6813 (useIsSpeaking)
+import SoundboardStore from "SoundboardStore" /* 6038 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
+import SpeakingStore from "SpeakingStore" /* 6717 */;
+import VoiceStateStore from "VoiceStateStore" /* 5662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

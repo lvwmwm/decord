@@ -1,18 +1,50 @@
 // Module ID: 5954
 // Function ID: 5955
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [5955]
 
 // Module 5954
-import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 5955 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } }, validAttributes: obj2 };
-obj2 = { nativeContainerBackgroundColor: _mod26.colorAttribute };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
 
-export default module_65.get("RNSScreenStack", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const RNSLog = {
+  log(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(log, items, console);
+    }
+  },
+  warn(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(warn, items, console);
+    }
+  },
+  error(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(error, items, console);
+    }
+  },
+  info(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(info, items, console);
+    }
+  }
+};

@@ -1,16 +1,16 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7952
+// Function ID: 7953
 // Name: AgeVerificationModal
-// Dependencies: [19, 6656, 21, 5150, 6654, 5660, 7907, 4971, 587, 6672, 7485, 1128, 558, 576, 7095, 2]
+// Dependencies: [19, 6688, 21, 5182, 6686, 5692, 7939, 5003, 587, 6704, 7517, 1128, 558, 576, 7127, 2]
 
-// Module 7920 (AgeVerificationModal)
+// Module 7952 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5150 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6656 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import LinkingDefault from "Linking" /* 5692 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

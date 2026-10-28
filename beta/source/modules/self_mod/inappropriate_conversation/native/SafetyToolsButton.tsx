@@ -1,19 +1,19 @@
-// Module ID: 14030
-// Function ID: 14031
+// Module ID: 14062
+// Function ID: 14063
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4971, 587, 558, 576, 10971, 10973, 1128, 10939, 5263, 10940, 10968, 9841, 14001, 10954, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 558, 576, 11003, 11005, 1128, 10971, 5295, 10972, 11000, 9873, 14033, 10986, 2]
 
-// Module 14030 (SafetyToolsButton)
+// Module 14062 (SafetyToolsButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10939 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10940 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10968 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10971 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10972 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

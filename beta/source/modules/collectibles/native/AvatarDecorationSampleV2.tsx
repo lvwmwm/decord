@@ -1,19 +1,19 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9435
+// Function ID: 9436
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 38, 1995, 9404, 5669, 9405, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 38, 1995, 9436, 5701, 9437, 2]
 
-// Module 9403 (AvatarDecorationSampleV2)
+// Module 9435 (AvatarDecorationSampleV2)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9405 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9437 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDecora
       tmp7 = cResult[2];
     }
     if (null == avatarSource) {
-      avatarSource = tmp4(9404);
+      avatarSource = tmp4(9436);
     }
     if (cResult[3] === tmp7) {
       let tmp8;
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDecora
   const obj = { style: items, resizeMode: "contain", source: avatarSource, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(9404);
+    avatarSource = tmp2(9436);
   }
   const obj2 = { children: items1 };
   items1 = [React3(tmp9, obj), ];

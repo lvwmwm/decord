@@ -1,13 +1,13 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9556
+// Function ID: 9557
 // Name: announcement_modal_variant_1_properties
-// Dependencies: [32, 1212, 9525, 9526, 9527, 2]
+// Dependencies: [32, 1212, 9557, 9558, 9559, 2]
 
-// Module 9524 (announcement_modal_variant_1_properties)
+// Module 9556 (announcement_modal_variant_1_properties)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9525 */;
-import help_article from "help_article" /* 9526 */;
-import cta_button from "cta_button" /* 9527 */;
+import localized_string from "localized_string" /* 9557 */;
+import help_article from "help_article" /* 9558 */;
+import cta_button from "cta_button" /* 9559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

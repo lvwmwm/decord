@@ -1,14 +1,14 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18877
+// Function ID: 18878
 // Name: useFileUploadComponentState
-// Dependencies: [19, 7631, 8293, 8595, 38, 2000, 2]
+// Dependencies: [19, 7663, 8325, 8627, 38, 2000, 2]
 // Exports: useFileUploadComponentState
 
-// Module 18840 (useFileUploadComponentState)
+// Module 18877 (useFileUploadComponentState)
 import Server from "Server" /* 2000 */;
-import DraftStore from "DraftStore" /* 7631 */;
+import DraftStore from "DraftStore" /* 7663 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
 import size from "module_2" /* 2 */;
 
 const DraftType = DraftStore.DraftType;

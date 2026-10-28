@@ -1,30 +1,30 @@
-// Module ID: 10998
-// Function ID: 10999
+// Module ID: 11030
+// Function ID: 11031
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5211, 4823, 4913, 1392, 7384, 7405, 1087, 1127, 558, 576, 5225, 38, 5604, 8502, 1386, 8848, 9718, 8751, 1384, 5212, 5213, 8289, 5707, 5159, 10999, 9783, 9781, 2]
+// Dependencies: [19, 5243, 4855, 4945, 1392, 7416, 7437, 1087, 1127, 558, 576, 5257, 38, 5636, 8534, 1386, 8880, 9750, 8783, 1384, 5244, 5245, 8321, 5739, 5191, 11031, 9815, 9813, 2]
 
-// Module 10998 (useNativeForumPostHandlers)
+// Module 11030 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ChatInputUtils from "ChatInputUtils" /* 5159 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5225 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import Tracking from "Tracking" /* 8289 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
-import openMediaModal from "openMediaModal" /* 8751 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9781 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9783 */;
+import ChatInputUtils from "ChatInputUtils" /* 5191 */;
+import HapticUtils from "HapticUtils" /* 5244 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5245 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5257 */;
+import useChannelName from "useChannelName" /* 5636 */;
+import transitionToChannel from "transitionToChannel" /* 5739 */;
+import Tracking from "Tracking" /* 8321 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8534 */;
+import openMediaModal from "openMediaModal" /* 8783 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9813 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9815 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5211 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import ActionSheetStore from "ActionSheetStore" /* 5243 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7384 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7405 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7416 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7437 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(10999);
+const showLongPressForumPostActionSheetDefault = tmp2(11031);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 const constants4 = ThreadConstants.OpenThreadAnalyticsLocations;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostHandlers(threadId) {
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (undefined === NORMAL) {
-    NORMAL = tmp(5225).ReactionTypes.NORMAL;
+    NORMAL = tmp(5257).ReactionTypes.NORMAL;
   }
   if (cResult[0] !== threadId) {
     const fn = function h(containerRef) {
@@ -461,7 +461,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(5225).ReactionTypes.NORMAL;
+    NORMAL = threadId(5257).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];

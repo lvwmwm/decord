@@ -1,17 +1,17 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15880
+// Function ID: 15881
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5052, 15847, 15848, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 5084, 15881, 15882, 2]
 
-// Module 15846 (HSVColorPicker)
+// Module 15880 (HSVColorPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 15847 */;
-import HuePickerDefault from "HuePicker" /* 15848 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 15881 */;
+import HuePickerDefault from "HuePicker" /* 15882 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 9367
+// Function ID: 9368
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 9336, 5052, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 9368, 5084, 2]
 
-// Module 9335 (GameProfileSkeleton)
+// Module 9367 (GameProfileSkeleton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let obj2;
 let size;
 let size1;
 let tmp;
-const GameProfileSkeletonPulse = tmp(9336);
+const GameProfileSkeletonPulse = tmp(9368);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

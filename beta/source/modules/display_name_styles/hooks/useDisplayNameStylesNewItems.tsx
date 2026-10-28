@@ -1,12 +1,12 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16731
+// Function ID: 16732
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 15867, 1410, 558, 576, 504, 15868, 2]
+// Dependencies: [19, 15901, 1410, 558, 576, 504, 15902, 2]
 
-// Module 16697 (useDisplayNameStylesNewItems)
+// Module 16731 (useDisplayNameStylesNewItems)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15867 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15901 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

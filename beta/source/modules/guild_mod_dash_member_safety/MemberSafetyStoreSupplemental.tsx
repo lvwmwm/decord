@@ -1,11 +1,11 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7642
+// Function ID: 7643
 // Name: MemberSafetyStoreSupplemental
-// Dependencies: [7611, 2]
+// Dependencies: [7643, 2]
 // Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 7610 (MemberSafetyStoreSupplemental)
-import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7611 */;
+// Module 7642 (MemberSafetyStoreSupplemental)
+import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7643 */;
 import size from "module_2" /* 2 */;
 
 let joinSourceType;

@@ -1,22 +1,22 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17271
+// Function ID: 17272
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7650, 1089, 1087, 21, 4971, 587, 558, 576, 1505, 9360, 17209, 7253, 7278, 504, 17211, 16363, 7649, 9357, 5669, 5234, 5244, 1128, 5597, 7220, 2]
+// Dependencies: [19, 17, 7682, 1089, 1087, 21, 5003, 587, 558, 576, 1505, 9392, 17243, 7285, 7310, 504, 17245, 16397, 7681, 9389, 5701, 5266, 5276, 1128, 5629, 7252, 2]
 
-// Module 17237 (ShelfBlock)
+// Module 17271 (ShelfBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9357 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9360 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9389 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9392 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7650 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

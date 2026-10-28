@@ -1,35 +1,35 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11342
+// Function ID: 11343
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 4823, 4883, 4877, 4845, 4903, 1087, 21, 4971, 587, 558, 576, 1633, 504, 1505, 5604, 11311, 8972, 5210, 10093, 11312, 5234, 1128, 8989, 6908, 7488, 7248, 8953, 11309, 10859, 7953, 5269, 5265, 2]
+// Dependencies: [19, 17, 4855, 4915, 4909, 4877, 4935, 1087, 21, 5003, 587, 558, 576, 1633, 504, 1505, 5636, 11343, 9004, 5242, 10125, 11344, 5266, 1128, 9021, 6940, 7520, 7280, 8985, 11341, 10891, 7985, 5301, 5297, 2]
 
-// Module 11310 (ChannelMembersActionSheet)
+// Module 11342 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import useChannelNameDefault from "useChannelName" /* 5604 */;
-import SettingsIcon from "SettingsIcon" /* 7488 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8972 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8989 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10859 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11309 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11311 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11312 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import useChannelNameDefault from "useChannelName" /* 5636 */;
+import SettingsIcon from "SettingsIcon" /* 7520 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9004 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9021 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10125 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10891 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11341 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11343 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11344 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,8 +166,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
   const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp17, tmp19, tmp20);
   const tmpResult7 = channelId(1505);
   navigation = tmpResult7.useNavigation();
-  tmp5(5604)(stateFromStores);
-  const tmpResult8 = channelId(11311);
+  tmp5(5636)(stateFromStores);
+  const tmpResult8 = channelId(11343);
   const appChannelBotUserId = tmpResult8.useAppChannelBotUserId(stateFromStores);
   if (null != stateFromStores) {
     class B {
@@ -267,9 +267,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
         const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
         intl5 = tmp5(1128).intl;
         push2(obj7);
-        BottomSheet = tmp5(5265).BottomSheet;
+        BottomSheet = tmp5(5297).BottomSheet;
         const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
-        const BottomSheetTitleHeader = tmp5(7248).BottomSheetTitleHeader;
+        const BottomSheetTitleHeader = tmp5(7280).BottomSheetTitleHeader;
         intl6 = tmp5(1128).intl;
         const _HermesInternal = HermesInternal;
         tmp32Result = canResult;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
             accessibilityLabel: intl.string(intl7.t.XPDhcc),
             children: closure_11(SettingsIcon.SettingsIcon, {})
           };
-          const PressableOpacity = tmp5(6908).PressableOpacity;
+          const PressableOpacity = tmp5(6940).PressableOpacity;
           intl = tmp5(1128).intl;
           tmp32Result = tmp32(PressableOpacity, obj9);
         }
@@ -303,13 +303,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
                     },
             icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
           };
-          const RowButton = tmp5(8953).RowButton;
+          const RowButton = tmp5(8985).RowButton;
           intl3 = tmp5(1128).intl;
           tmp32Result2 = tmp32(RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: closure_11(InlineNotice, obj14) };
           obj14 = { type: "info", message: intl2.string(intl7.t.VOuiSj), role: "none" };
-          InlineNotice = tmp5(7953).InlineNotice;
+          InlineNotice = tmp5(7985).InlineNotice;
           intl2 = tmp5(1128).intl;
           tmp32Result2 = tmp32(tmp14, obj13);
         }
@@ -340,7 +340,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
           stickySectionHeadersEnabled: false
         };
         obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        const BottomSheetSectionList = tmp5(5269).BottomSheetSectionList;
+        const BottomSheetSectionList = tmp5(5301).BottomSheetSectionList;
         items6[1] = closure_11(BottomSheetSectionList, obj15);
         return closure_11(BottomSheet, obj10);
       }

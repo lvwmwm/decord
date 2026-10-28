@@ -1,10 +1,10 @@
-// Module ID: 4836
-// Function ID: 4837
+// Module ID: 4868
+// Function ID: 4869
 // Name: FavoritesConstants
-// Dependencies: [4837, 2]
+// Dependencies: [4869, 2]
 
-// Module 4836 (FavoritesConstants)
-import GuildRecordUtils from "GuildRecordUtils" /* 4837 */;
+// Module 4868 (FavoritesConstants)
+import GuildRecordUtils from "GuildRecordUtils" /* 4869 */;
 import size from "module_2" /* 2 */;
 
 const constructFromPartialGuildRecord = GuildRecordUtils.constructFromPartialGuildRecord;

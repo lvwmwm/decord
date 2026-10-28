@@ -1,9 +1,9 @@
-// Module ID: 18255
-// Function ID: 18256
+// Module ID: 18292
+// Function ID: 18293
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7732, 4913, 1392, 1087, 21, 1202, 4971, 558, 576, 504, 14349, 9083, 12, 1388, 5234, 1128, 6903, 2]
+// Dependencies: [32, 19, 17, 7764, 4945, 1392, 1087, 21, 1202, 5003, 558, 576, 504, 14381, 9115, 12, 1388, 5266, 1128, 6935, 2]
 
-// Module 18255 (UserProfileYourFriendsCard)
+// Module 18292 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -12,10 +12,10 @@ import native from "native" /* 1202 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7764 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

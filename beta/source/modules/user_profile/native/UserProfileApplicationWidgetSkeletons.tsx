@@ -1,21 +1,21 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12029
+// Function ID: 12030
 // Name: UserProfileApplicationWidgetSkeletons
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5266, 2]
 
-// Module 11997 (UserProfileApplicationWidgetSkeletons)
+// Module 12029 (UserProfileApplicationWidgetSkeletons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Text_Text = tmp(5234);
+const Text_Text = tmp(5266);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { skeleton: obj2 };

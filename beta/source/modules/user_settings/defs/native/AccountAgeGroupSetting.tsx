@@ -1,26 +1,26 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16039
+// Function ID: 16040
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8332, 1087, 21, 4971, 587, 558, 576, 10019, 16006, 16013, 4807, 6903, 11208, 1128, 16014, 15974, 16015, 2]
+// Dependencies: [17, 8364, 1087, 21, 5003, 587, 558, 576, 10051, 16040, 16047, 4839, 6935, 11240, 1128, 16048, 16008, 16049, 2]
 
-// Module 16005 (AccountAgeGroupSetting)
+// Module 16039 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import TableRow from "TableRow" /* 6903 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10019 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15974 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 16006 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16013 */;
+import dismissible_content from "dismissible_content" /* 4839 */;
+import TableRow from "TableRow" /* 6935 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10051 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16008 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 16040 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16047 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16014 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16048 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

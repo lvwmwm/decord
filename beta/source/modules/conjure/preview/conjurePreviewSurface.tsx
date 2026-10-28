@@ -1,15 +1,15 @@
-// Module ID: 10728
-// Function ID: 10729
+// Module ID: 10760
+// Function ID: 10761
 // Name: conjurePreviewSurface
-// Dependencies: [6775, 6773, 6776, 5626, 10729, 2]
+// Dependencies: [6807, 6805, 6808, 5658, 10761, 2]
 // Exports: getConjureBuilderPreviewFrame, getConjureBuilderPreviewFrames, getConjureBuilderPreviewOverlayFrame, getConjurePreviewGuildId, getConjurePreviewSurface, isConjurePreviewOverlayFrame, isConjurePreviewSurface
 
-// Module 10728 (conjurePreviewSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10729 */;
-import FramesStore from "FramesStore" /* 6775 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
+// Module 10760 (conjurePreviewSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10761 */;
+import FramesStore from "FramesStore" /* 6807 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
+import FramesConstants from "FramesConstants" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f107981 = (item) => null != item;
+const f108104 = (item) => null != item;
 ({ getFrameHostWindowKey: closure_4, isLaunched: hasOwnProperty, makeFrameId: metroRequire, OVERLAY_SURFACE: metroImportDefault } = FramesConstants);
 let c8 = "0";
 const CONJURE_PREVIEW_SURFACE = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: "0" };
@@ -91,7 +91,7 @@ export const getConjureBuilderPreviewFrames = function getConjureBuilderPreviewF
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  return mapped.filter(f107981);
+  return mapped.filter(f108104);
 };
 export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFrame(prop) {
   _require = prop;
@@ -114,7 +114,7 @@ export const getConjureBuilderPreviewFrame = function getConjureBuilderPreviewFr
     }
     return getFrame(tmp2(tmp3, obj2));
   });
-  const found = mapped.filter(f107981);
+  const found = mapped.filter(f108104);
   let found1 = found.find(closure_5);
   if (found1 == null) {
     found1 = found[0];

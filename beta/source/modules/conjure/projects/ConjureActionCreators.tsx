@@ -1,31 +1,31 @@
-// Module ID: 10720
-// Function ID: 10721
+// Module ID: 10752
+// Function ID: 10753
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6771, 1392, 10721, 6773, 1087, 6705, 584, 1297, 10722, 5722, 10724, 569, 10719, 10725, 10727, 10730, 10728, 5626, 6774, 6809, 8670, 10731, 2]
+// Dependencies: [109, 5, 6803, 1392, 10753, 6805, 1087, 6737, 584, 1297, 10754, 5754, 10756, 569, 10751, 10757, 10759, 10762, 10760, 5658, 6806, 6841, 8702, 10763, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 10720 (ConjureActionCreators)
+// Module 10752 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
-import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6774 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6809 */;
-import UserActionCreators from "UserActionCreators" /* 8670 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10719 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10725 */;
-import conjurePreviewTicket from "conjurePreviewTicket" /* 10727 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10728 */;
-import createProxyTicket from "createProxyTicket" /* 10730 */;
-import conjureAppInServer from "conjureAppInServer" /* 10731 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
+import ReadStateConstants from "ReadStateConstants" /* 6737 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6806 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6841 */;
+import UserActionCreators from "UserActionCreators" /* 8702 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10751 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10757 */;
+import conjurePreviewTicket from "conjurePreviewTicket" /* 10759 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10760 */;
+import createProxyTicket from "createProxyTicket" /* 10762 */;
+import conjureAppInServer from "conjureAppInServer" /* 10763 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10721 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6773 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10753 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6805 */;
 import size from "module_2" /* 2 */;
 
 let GUILD_COLLABORATION, closure_14, closure_15, closure_31, projectsFetchState, resourceIds;

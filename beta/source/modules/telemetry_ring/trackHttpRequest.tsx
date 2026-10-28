@@ -1,14 +1,14 @@
-// Module ID: 18712
-// Function ID: 18713
+// Module ID: 18749
+// Function ID: 18750
 // Name: trackHttpRequest
-// Dependencies: [1087, 18713, 18714, 1267, 2]
+// Dependencies: [1087, 18750, 18751, 1267, 2]
 // Exports: default
 
-// Module 18712 (trackHttpRequest)
+// Module 18749 (trackHttpRequest)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import HttpRequestSampleExperiment from "HttpRequestSampleExperiment" /* 18713 */;
-import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 18714 */;
+import HttpRequestSampleExperiment from "HttpRequestSampleExperiment" /* 18750 */;
+import trackZoomedInHttpRequestDefault from "trackZoomedInHttpRequest" /* 18751 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

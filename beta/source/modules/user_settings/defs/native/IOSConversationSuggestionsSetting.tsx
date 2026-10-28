@@ -1,25 +1,25 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16175
+// Function ID: 16176
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 8332, 1269, 1274, 558, 576, 4886, 1384, 3, 11208, 1128, 2]
+// Dependencies: [19, 17, 8364, 1269, 1274, 558, 576, 4918, 1384, 3, 11240, 1128, 2]
 
-// Module 16141 (IOSConversationSuggestionsSetting)
+// Module 16175 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8332 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
 import react from "react" /* 19 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11208 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;
 
 let tmp;
-const _slicedToArray = tmp(4886);
+const _slicedToArray = tmp(4918);
 const NativeModules = react_native.NativeModules;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let closure_4 = module_1269.createWithEqualityFn(() => ({ isEnabled: true }));

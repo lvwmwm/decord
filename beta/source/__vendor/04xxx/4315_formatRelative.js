@@ -5,23 +5,24 @@
 // Exports: default
 
 // Module 4315 (formatRelative)
-const f92856 = (arg0) => {
-  let str = "'m\u00FAlt' ";
-  const concat = "".concat;
-  const tmp = _true[arg0.getUTCDay(arg0)];
-  if (c0) {
-    str = "";
-  }
-  const combined = concat(str, "'");
-  return combined.concat(tmp, "' p'-kor'");
+let closure_0 = {
+  lastWeek(getUTCDay) {
+    let str = "'\u03C4\u03B7\u03BD \u03C0\u03C1\u03BF\u03B7\u03B3\u03BF\u03CD\u03BC\u03B5\u03BD\u03B7' eeee '\u03C3\u03C4\u03B9\u03C2' p";
+    if (6 === getUTCDay.getUTCDay()) {
+      str = "'\u03C4\u03BF \u03C0\u03C1\u03BF\u03B7\u03B3\u03BF\u03CD\u03BC\u03B5\u03BD\u03BF' eeee '\u03C3\u03C4\u03B9\u03C2' p";
+    }
+    return str;
+  },
+  yesterday: "'\u03C7\u03B8\u03B5\u03C2 \u03C3\u03C4\u03B9\u03C2' p",
+  today: "'\u03C3\u03AE\u03BC\u03B5\u03C1\u03B1 \u03C3\u03C4\u03B9\u03C2' p",
+  tomorrow: "'\u03B1\u03CD\u03C1\u03B9\u03BF \u03C3\u03C4\u03B9\u03C2' p",
+  nextWeek: "eeee '\u03C3\u03C4\u03B9\u03C2' p",
+  other: "P"
 };
-let closure_0 = ["vas\u00E1rnap", "h\u00E9tf\u0151n", "kedden", "szerd\u00E1n", "cs\u00FCt\u00F6rt\u00F6k\u00F6n", "p\u00E9nteken", "szombaton"];
-const obj = { lastWeek: f92856, yesterday: "'tegnap' p'-kor'", today: "'ma' p'-kor'", tomorrow: "'holnap' p'-kor'", nextWeek: f92856, other: "P" };
-let c0 = true;
 
 export default function formatRelative(arg0, arg1) {
   let tmpResult = tmp;
-  if (typeof obj[arg0] === "function") {
+  if (typeof closure_0[arg0] === "function") {
     tmpResult = tmp(arg1);
   }
   return tmpResult;

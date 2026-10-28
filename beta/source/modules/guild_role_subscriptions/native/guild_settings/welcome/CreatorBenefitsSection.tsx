@@ -1,26 +1,26 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19267
+// Function ID: 19268
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 16562, 21, 4971, 587, 4978, 558, 576, 5205, 5234, 1128, 19231, 19235, 19239, 19243, 19247, 19251, 2]
+// Dependencies: [19, 17, 16596, 21, 5003, 587, 5010, 558, 576, 5237, 5266, 1128, 19268, 19272, 19276, 19280, 19284, 19288, 2]
 
-// Module 19230 (CreatorBenefitsSection)
+// Module 19267 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import shared from "shared" /* 4978 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16562 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 19231 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 19235 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 19239 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 19243 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 19247 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 19251 */;
+import shared from "shared" /* 5010 */;
+import useThemeDefault from "useTheme" /* 5237 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16596 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 19268 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 19272 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 19276 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 19280 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 19284 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 19288 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earning
               const _Symbol = Symbol;
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-                const Text = tmp(5234).Text;
+                const Text = tmp(5266).Text;
                 intl = tmp(1128).intl;
                 const tmp15 = hasOwnProperty(Text, obj2);
                 cResult[14] = tmp15;
@@ -209,10 +209,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Earning
   const tmp6Result = shared;
   items1[2] = tmp6Result.isThemeDark(tmp2) ? tmp3.earningMetricsDarkMode : tmp3.earningMetricsLightMode;
   const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp6(5234).Text;
+  const Text = tmp6(5266).Text;
   intl = tmp6(1128).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp6(5234).Text;
+  const Text2 = tmp6(5266).Text;
   const obj5 = { children: items2 };
   const tmp6Result2 = shared;
   const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/extrabold", children: intl2.string(intl3.t.LdjJG5) };
@@ -541,7 +541,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Revenu
   items1[1] = obj2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
   const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp7(5234).Text;
+  const Text2 = tmp7(5266).Text;
   intl = tmp7(1128).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp3.revenueShareIllo, children: hasOwnProperty(StarCoinsSpotIllustration.StarCoinsSpotIllustration, { width: 128 }) };

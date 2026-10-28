@@ -1,15 +1,15 @@
-// Module ID: 18747
-// Function ID: 18748
+// Module ID: 18784
+// Function ID: 18785
 // Name: AutomodRemovedContentActionCreators
-// Dependencies: [4823, 5663, 1128, 5210, 18748, 2002, 2]
+// Dependencies: [4855, 5695, 1128, 5242, 18785, 2002, 2]
 // Exports: openRemovedContentModal, showRemovedMessageToast
 
-// Module 18747 (AutomodRemovedContentActionCreators)
+// Module 18784 (AutomodRemovedContentActionCreators)
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRemovedContentActionCreators.native.tsx");
@@ -40,5 +40,5 @@ export const showRemovedMessageToast = function showRemovedMessageToast(arg0, ch
 export const openRemovedContentModal = function openRemovedContentModal(action) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { action };
-  obj.openLazy(asyncRequire(18748, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
+  obj.openLazy(asyncRequire(18785, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
 };

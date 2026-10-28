@@ -1,14 +1,14 @@
-// Module ID: 10775
-// Function ID: 10776
+// Module ID: 10807
+// Function ID: 10808
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 10773, 504, 10776, 558, 576, 10774, 5623, 2]
+// Dependencies: [5, 10805, 504, 10808, 558, 576, 10806, 5655, 2]
 
-// Module 10775 (useEmbeddedAppCSP)
+// Module 10807 (useEmbeddedAppCSP)
 import react from "react" /* 576 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10774 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10776 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10806 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10773 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10805 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5623);
+const getURLForApplication = tmp(5655);
 let obj = {
   getQueryId(arg0) {
     let combined = null;

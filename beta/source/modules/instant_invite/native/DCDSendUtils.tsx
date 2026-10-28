@@ -1,12 +1,12 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7855
+// Function ID: 7856
 // Name: DCDSendUtils
-// Dependencies: [17, 1384, 7824, 2]
+// Dependencies: [17, 1384, 7856, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 7823 (DCDSendUtils)
+// Module 7855 (DCDSendUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import react_nativeDefault from "react-native" /* 7824 */;
+import react_nativeDefault from "react-native" /* 7856 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12791
+// Function ID: 12792
 // Name: UserSettingsExperimentsUtils
-// Dependencies: [5794, 2]
+// Dependencies: [5826, 2]
 // Exports: getBestMatches, getEntries, getExperimentDateFromId, sortEntries
 
-// Module 12759 (UserSettingsExperimentsUtils)
-import flattenDefault from "flatten" /* 5794 */;
+// Module 12791 (UserSettingsExperimentsUtils)
+import flattenDefault from "flatten" /* 5826 */;
 import size from "module_2" /* 2 */;
 
 let id;

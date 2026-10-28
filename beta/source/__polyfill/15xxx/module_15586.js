@@ -1,25 +1,23 @@
 // Module ID: 15586
 // Function ID: 15587
-// Dependencies: [15552, 15573, 15587, 15597, 15598]
+// Dependencies: [15587]
 
 // Module 15586
-import _mod15552 from "module_15552" /* 15552 */;
-import _mod15573 from "module_15573" /* 15573 */;
-import f2 from "f" /* 15587 */;
-import _mod15597 from "module_15597" /* 15597 */;
-import _mod15598 from "module_15598" /* 15598 */;
+import module_15587_mod from "module_15587" /* 15587 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod15597(arg0));
-  const f = _mod15598.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
-  }
-  return tmp2;
+const call = prototype.call;
+let module_15587 = module_15587_mod;
+if (module_15587) {
+  const bind = prototype.bind;
+  module_15587 = bind.bind(call, call);
 }
-let closure_2 = _mod15552([].concat);
-_mod15573("Reflect", "ownKeys") || ownKeys;
+if (!module_15587) {
+  module_15587 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default _mod15573("Reflect", "ownKeys") || ownKeys;
+export default module_15587;

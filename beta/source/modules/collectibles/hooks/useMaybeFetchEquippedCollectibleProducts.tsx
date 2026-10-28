@@ -1,11 +1,11 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8738
+// Function ID: 8739
 // Name: useMaybeFetchEquippedCollectibleProducts
-// Dependencies: [19, 1392, 558, 576, 504, 8675, 6782, 8707, 8708, 2]
+// Dependencies: [19, 1392, 558, 576, 504, 8707, 6814, 8739, 8740, 2]
 
-// Module 8706 (useMaybeFetchEquippedCollectibleProducts)
-import useDisplayProfileDefault from "useDisplayProfile" /* 8675 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8708 */;
+// Module 8738 (useMaybeFetchEquippedCollectibleProducts)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8707 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8740 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

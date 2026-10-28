@@ -1,11 +1,11 @@
-// Module ID: 14385
-// Function ID: 14386
+// Module ID: 14417
+// Function ID: 14418
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 7406, 1128, 2]
+// Dependencies: [558, 576, 7438, 1128, 2]
 
-// Module 14385 (useGameNameAndCoverImage)
+// Module 14417 (useGameNameAndCoverImage)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 7406 */;
+import useGame from "useGame" /* 7438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

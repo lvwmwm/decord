@@ -1,22 +1,22 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 8131
+// Function ID: 8132
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6656, 21, 558, 576, 8100, 5234, 7883, 2067, 1128, 3154, 5914, 5914, 2]
+// Dependencies: [19, 6688, 21, 558, 576, 8132, 5266, 7915, 2067, 1128, 3186, 5946, 5946, 2]
 
-// Module 8099 (ManualReviewDecidedTeenAlertModal)
+// Module 8131 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef3154 from "module_3154" /* 3154 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6656 */;
-import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8100 */;
+import _modDef3186 from "module_3186" /* 3186 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8132 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const intl4 = tmp(1128);
-const AlertModal2 = tmp(5914);
+const AlertModal2 = tmp(5946);
 const FALLBACK_TEEN_AGE_RANGE = AgeVerificationConstants.FALLBACK_TEEN_AGE_RANGE;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = intl4.intl;
-    const stringResult = intl.string(_modDef3154.AA3xYb);
+    const stringResult = intl.string(_modDef3186.AA3xYb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   }
   const intl2 = intl4.intl;
   const format = intl2.format;
-  const tmp10 = _modDef3154;
+  const tmp10 = _modDef3186;
   if (isManualReviewInconclusiveCopyEnabled) {
     const obj6 = { contentAndSettingsHook: first };
     formatResult = format(tmp10.UIbYzl, obj6);
@@ -131,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   let intl = intl4.intl;
   const intl2 = intl4.intl;
   const format = intl2.format;
-  const tmp5 = _modDef3154;
+  const tmp5 = _modDef3186;
   if (isManualReviewInconclusiveCopyEnabled) {
     const obj3 = { contentAndSettingsHook };
     formatResult = format(tmp5.UIbYzl, obj3);
@@ -147,7 +147,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   ({ text: intl3.string(intl4.t["NX+WJN"]) });
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
-  return <AlertModal title={intl.string(_modDef3154.AA3xYb)} content={formatResult} actions={null} />;
+  return <AlertModal title={intl.string(_modDef3186.AA3xYb)} content={formatResult} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewDecidedTeenAlertModal.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11888
+// Function ID: 11889
 // Name: ConjureStaffAccess
-// Dependencies: [4901, 4845, 4913, 1392, 1087, 558, 576, 5604, 504, 2]
+// Dependencies: [4933, 4877, 4945, 1392, 1087, 558, 576, 5636, 504, 2]
 
-// Module 11856 (ConjureStaffAccess)
+// Module 11888 (ConjureStaffAccess)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import GuildChannelStore from "GuildChannelStore" /* 4901 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
               tmp7 = closure_1_2;
               tmp8 = item10017;
               selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-              found = selectableChannels.find(() => { /* body not rendered: F148459 */ });
+              found = selectableChannels.find(() => { /* body not rendered: F148586 */ });
               tmp10 = found;
               if (null != found) {
                 obj1 = { isStaff: null, guildId: null, channelId: null };
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
                   tmp7 = closure_1_2;
                   tmp8 = item10017;
                   selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-                  found = selectableChannels.find(() => { /* body not rendered: F148459 */ });
+                  found = selectableChannels.find(() => { /* body not rendered: F148586 */ });
                   tmp10 = found;
                   if (null != found) {
                     obj1 = { isStaff: null, guildId: null, channelId: null };

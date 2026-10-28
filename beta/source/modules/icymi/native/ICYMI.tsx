@@ -1,9 +1,9 @@
-// Module ID: 17898
-// Function ID: 17899
+// Module ID: 17935
+// Function ID: 17936
 // Name: ICYMI
-// Dependencies: [32, 19, 17, 4972, 502, 4845, 8835, 8823, 17899, 4820, 21, 4971, 587, 17900, 7959, 12527, 8841, 5210, 17902, 2002, 558, 576, 5686, 17915, 5234, 1128, 7038, 10625, 5144, 6908, 17848, 17850, 6931, 7221, 17903, 1499, 1633, 1506, 7584, 504, 17838, 17933, 17936, 7497, 4807, 17925, 1505, 8836, 13803, 10078, 16437, 1108, 17937, 17941, 17948, 17959, 17960, 17961, 17962, 17963, 17964, 17965, 17966, 9708, 17967, 7220, 8840, 1384, 12855, 5146, 5037, 17968, 17901, 2]
+// Dependencies: [32, 19, 17, 5004, 502, 4877, 8867, 8855, 17936, 4852, 21, 5003, 587, 17937, 7991, 12559, 8873, 5242, 17939, 2002, 558, 576, 5718, 17952, 5266, 1128, 7070, 10657, 5176, 6940, 17885, 17887, 6963, 7253, 17940, 1499, 1633, 1506, 7616, 504, 17875, 17970, 17973, 7529, 4839, 17962, 1505, 8868, 13835, 10110, 16471, 1108, 17974, 17978, 17985, 17996, 17997, 17998, 17999, 18000, 18001, 18002, 18003, 9740, 18004, 7252, 8872, 1384, 12887, 5178, 5069, 18005, 17938, 2]
 
-// Module 17898 (ICYMI)
+// Module 17935 (ICYMI)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,45 +11,45 @@ import ChannelTypes from "ChannelTypes" /* 1108 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import native from "native" /* 5037 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5144 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5686 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7038 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7221 */;
-import IconButton2 from "IconButton" /* 7959 */;
-import ICYMITypes from "ICYMITypes" /* 8836 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12527 */;
-import notifications_Notifications from "notifications/Notifications" /* 17848 */;
-import ICYMIConstants from "ICYMIConstants" /* 17899 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 17903 */;
-import NativeICYMIUtils from "NativeICYMIUtils" /* 17915 */;
-import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 17937 */;
-import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 17941 */;
-import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 17948 */;
-import ICYMILoading from "ICYMILoading" /* 17959 */;
-import ICYMIBottomLoading from "ICYMIBottomLoading" /* 17960 */;
-import CaughtUpRowDefault from "CaughtUpRow" /* 17961 */;
-import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 17962 */;
-import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 17963 */;
-import ICYMIHeaderDefault from "ICYMIHeader" /* 17964 */;
-import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 17965 */;
-import CardHeightMeasurer from "CardHeightMeasurer" /* 17966 */;
-import AppFreezerDefault from "AppFreezer" /* 17968 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
+import native from "native" /* 5069 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5176 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5178 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5718 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7070 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7253 */;
+import IconButton2 from "IconButton" /* 7991 */;
+import ICYMITypes from "ICYMITypes" /* 8868 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8873 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12559 */;
+import notifications_Notifications from "notifications/Notifications" /* 17885 */;
+import ICYMIConstants from "ICYMIConstants" /* 17936 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 17940 */;
+import NativeICYMIUtils from "NativeICYMIUtils" /* 17952 */;
+import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 17974 */;
+import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 17978 */;
+import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 17985 */;
+import ICYMILoading from "ICYMILoading" /* 17996 */;
+import ICYMIBottomLoading from "ICYMIBottomLoading" /* 17997 */;
+import CaughtUpRowDefault from "CaughtUpRow" /* 17998 */;
+import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 17999 */;
+import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 18000 */;
+import ICYMIHeaderDefault from "ICYMIHeader" /* 18001 */;
+import ICYMIForumThreadRow2 from "ICYMIForumThreadRow" /* 18002 */;
+import CardHeightMeasurer from "CardHeightMeasurer" /* 18003 */;
+import AppFreezerDefault from "AppFreezer" /* 18005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8835 */;
-import ICYMIStore from "ICYMIStore" /* 8823 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8867 */;
+import ICYMIStore from "ICYMIStore" /* 8855 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
-import createICYMIStyles from "createICYMIStyles" /* 17900 */;
+import createStyles from "createStyles" /* 5003 */;
+import createICYMIStyles from "createICYMIStyles" /* 17937 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let closure_16;
 let hasOwnProperty;
 let metroRequire;
 let tmp5;
-const ThemedGradientDefault = tmp5(10625);
+const ThemedGradientDefault = tmp5(10657);
 function SettingsButton() {
   let paths;
   let obj = {
@@ -167,7 +167,7 @@ function ICYMI(inNestedNavigator) {
     const hasOpenedEnoughTimesResult = endVisible && ICYMIStore.hasOpenedEnoughTimes();
     if (hasOpenedEnoughTimesResult) {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(17925, dependencyMap.paths), "ICYMIFeedbackSheet", {});
+      obj.openLazy(asyncRequire(17962, dependencyMap.paths), "ICYMIFeedbackSheet", {});
     }
   }, items6);
   const ref = handleOnRefresh.useRef(null);
@@ -367,7 +367,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBu
           obj3.pushICYMIInfoModal({ extendedOnboarding: true });
         }
     };
-    const IconButton = tmp(7959).IconButton;
+    const IconButton = tmp(7991).IconButton;
     const tmp6 = syncedClientThemes(IconButton, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -406,7 +406,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIH
   const tmp4 = closure_18();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(intl3.t.SY4sdZ) };
-    const Text = tmp(5234).Text;
+    const Text = tmp(5266).Text;
     intl = tmp(1128).intl;
     const tmp7 = syncedClientThemes(Text, obj2);
     cResult[0] = tmp7;
@@ -418,7 +418,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIH
     const obj3 = { children: items };
     items = [first, ];
     const obj4 = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: intl2.string(intl3.t.Ac2OZA) };
-    const Text2 = tmp(5234).Text;
+    const Text2 = tmp(5266).Text;
     intl2 = tmp(1128).intl;
     items[1] = syncedClientThemes(Text2, obj4);
     const tmp12 = authStore3(closure_15, obj3);
@@ -589,12 +589,12 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function H
   }
   if (tmp6) {
     const obj9 = { style: tmp4.headerClose, accessibilityLabel: intl.string(intl3.t["13/7kX"]), onPress: notifications_Notifications.goBack, children: tmp14Result };
-    const PressableOpacity = tmp(6908).PressableOpacity;
+    const PressableOpacity = tmp(6940).PressableOpacity;
     intl = tmp(1128).intl;
     if (inNestedNavigator) {
-      tmp14Result = tmp14(tmp(17850).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp14Result = tmp14(tmp(17887).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
-      tmp14Result = tmp14(tmp(6931).XSmallIcon, { color: "interactive-text-default" });
+      tmp14Result = tmp14(tmp(6963).XSmallIcon, { color: "interactive-text-default" });
     }
     tmp14Result2 = tmp14(PressableOpacity, obj9);
   } else {
@@ -627,12 +627,12 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function H
   const obj5 = { style: tmp.headerLeft, children: items1 };
   if (tmp3) {
     const obj6 = { style: tmp.headerClose, accessibilityLabel: intl.string(intl3.t["13/7kX"]), onPress: notifications_Notifications.goBack, children: tmp6Result };
-    const PressableOpacity = tmp5(6908).PressableOpacity;
+    const PressableOpacity = tmp5(6940).PressableOpacity;
     intl = tmp5(1128).intl;
     if (inNestedNavigator) {
-      tmp6Result = tmp6(tmp5(17850).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp6Result = tmp6(tmp5(17887).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
-      tmp6Result = tmp6(tmp5(6931).XSmallIcon, { color: "interactive-text-default" });
+      tmp6Result = tmp6(tmp5(6963).XSmallIcon, { color: "interactive-text-default" });
     }
     tmp6Result2 = tmp6(PressableOpacity, obj6);
   } else {
@@ -734,7 +734,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMITab(route) 
         obj3 = { children: authStore3(Fragment, obj4) };
         obj4 = { children: items1 };
         const tmp4Result = AppFreezerDefault;
-        ICYMIContextProvider = tmp(17901).ICYMIContextProvider;
+        ICYMIContextProvider = tmp(17938).ICYMIContextProvider;
         const merged = Object.assign(tmp13);
         items1 = [tmp14, tmp22];
         const tmp32 = syncedClientThemes(tmp4Result, obj2);
@@ -804,7 +804,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMITab(route) 
   }, items1);
   const tmp11 = tmp6 ? closure_5 : react.Fragment;
   const tmpResult = AppFreezerDefault;
-  const ICYMIContextProvider = tmp4(17901).ICYMIContextProvider;
+  const ICYMIContextProvider = tmp4(17938).ICYMIContextProvider;
   const tmp14 = closure_16;
   if (tmp6) {
     obj3 = { style: memo };
@@ -818,7 +818,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMITab(route) 
   const merged = Object.assign(obj3);
   items2 = [closure_14(ThemedGradientDefault, { absolute: true }), ];
   const obj7 = { gradient: tmp3, children: closure_14(ICYMI, { inNestedNavigator }, "" + stateFromStores) };
-  const ThemeContextProvider = tmp4(5037).ThemeContextProvider;
+  const ThemeContextProvider = tmp4(5069).ThemeContextProvider;
   items2[1] = closure_14(ThemeContextProvider, obj7);
   return closure_14(tmpResult, obj4);
 });

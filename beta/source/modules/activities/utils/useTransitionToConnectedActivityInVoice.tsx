@@ -1,15 +1,15 @@
-// Module ID: 18654
-// Function ID: 18655
+// Module ID: 18691
+// Function ID: 18692
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4823, 4874, 1087, 558, 576, 4892, 5629, 11417, 11364, 1123, 2]
+// Dependencies: [5, 19, 4855, 4906, 1087, 558, 576, 4924, 5661, 11449, 11396, 1123, 2]
 
-// Module 18654 (useTransitionToConnectedActivityInVoice)
+// Module 18691 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

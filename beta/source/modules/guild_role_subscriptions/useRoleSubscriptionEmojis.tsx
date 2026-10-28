@@ -1,12 +1,12 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19334
+// Function ID: 19335
 // Name: useRoleSubscriptionEmojis
-// Dependencies: [19, 6725, 558, 576, 504, 4925, 2]
+// Dependencies: [19, 6757, 558, 576, 504, 4957, 2]
 
-// Module 19297 (useRoleSubscriptionEmojis)
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4925 */;
+// Module 19334 (useRoleSubscriptionEmojis)
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4957 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6725 */;
+import EmojiStore from "EmojiStore" /* 6757 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

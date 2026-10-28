@@ -1,23 +1,23 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15097
+// Function ID: 15098
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [5190, 7732, 4827, 4823, 6670, 6823, 4883, 4845, 4913, 1392, 1087, 2033, 5025, 9070, 504, 584, 2]
+// Dependencies: [5222, 7764, 4859, 4855, 6702, 6855, 4915, 4877, 4945, 1392, 1087, 2033, 5057, 9102, 504, 584, 2]
 
-// Module 15065 (PrivateChannelRecipientsInviteStore)
+// Module 15097 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9070 */;
-import ExperimentStore from "ExperimentStore" /* 5190 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7732 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import ConsentStore from "ConsentStore" /* 6670 */;
-import FrecencyStore from "FrecencyStore" /* 6823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9102 */;
+import ExperimentStore from "ExperimentStore" /* 5222 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7764 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import ConsentStore from "ConsentStore" /* 6702 */;
+import FrecencyStore from "FrecencyStore" /* 6855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

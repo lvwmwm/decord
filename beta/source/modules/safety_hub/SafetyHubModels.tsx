@@ -1,9 +1,9 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 7931
+// Function ID: 7932
 // Name: SafetyHubModels
 // Dependencies: [2]
 
-// Module 7899 (SafetyHubModels)
+// Module 7931 (SafetyHubModels)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5032
+// Function ID: 5033
 // Name: HexagonCampaignExperiment
-// Dependencies: [1455, 558, 576, 4998, 2]
+// Dependencies: [1455, 558, 576, 5030, 2]
 // Exports: getIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled
 
-// Module 5000 (HexagonCampaignExperiment)
+// Module 5032 (HexagonCampaignExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const HexagonCampaignUtils = tmp(4998);
+const HexagonCampaignUtils = tmp(5030);
 let obj = { kind: "user", name: "2026-09-hexagon-campaign-client", defaultConfig: { enabled: false, questHomeRedirect: false }, variations: { 0: { enabled: false, questHomeRedirect: false }, 1: { enabled: true, questHomeRedirect: true }, 2: { enabled: true, questHomeRedirect: false } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;

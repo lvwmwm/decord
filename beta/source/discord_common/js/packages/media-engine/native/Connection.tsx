@@ -1,22 +1,22 @@
-// Module ID: 5751
-// Function ID: 5752
+// Module ID: 5783
+// Function ID: 5784
 // Name: Connection
-// Dependencies: [32, 5718, 5741, 5752, 2016, 4, 5756, 5800, 5801, 5802, 5750, 5804, 5753, 5805, 5757, 5806, 5809, 2]
+// Dependencies: [32, 5750, 5773, 5784, 2016, 4, 5788, 5832, 5833, 5834, 5782, 5836, 5785, 5837, 5789, 5838, 5841, 2]
 
-// Module 5751 (Connection)
+// Module 5783 (Connection)
 import inject from "inject" /* 2016 */;
-import VideoQualityManager from "VideoQualityManager" /* 5753 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5756 */;
-import cloneDeepDefault from "cloneDeep" /* 5757 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 5800 */;
-import transformStatsDefault from "transformStats" /* 5802 */;
-import isEqualDefault from "isEqual" /* 5804 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5805 */;
-import reduceDefault from "reduce" /* 5806 */;
+import VideoQualityManager from "VideoQualityManager" /* 5785 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5788 */;
+import cloneDeepDefault from "cloneDeep" /* 5789 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 5832 */;
+import transformStatsDefault from "transformStats" /* 5834 */;
+import isEqualDefault from "isEqual" /* 5836 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5837 */;
+import reduceDefault from "reduce" /* 5838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants_mod from "Constants" /* 5718 */;
-import Constants_mod2 from "Constants" /* 5741 */;
-import BaseConnection from "BaseConnection" /* 5752 */;
+import Constants_mod from "Constants" /* 5750 */;
+import Constants_mod2 from "Constants" /* 5773 */;
+import BaseConnection from "BaseConnection" /* 5784 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(5756).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(5788).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +404,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(5809)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(5841)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -864,7 +864,7 @@ class Connection extends BaseConnection {
       resolved = Promise.resolve(null);
     } else {
       const tmp = self;
-      const tmp3 = self(5801);
+      const tmp3 = self(5833);
       self = this;
       const self2 = this;
       const timeout = tmp3.timeout;
@@ -883,7 +883,7 @@ class Connection extends BaseConnection {
           const stats1 = voiceEngine.getStats((arg0) => closure_0(transformStatsDefault(self.mediaEngineConnectionId, arg0, self.remoteVideoSinkWants, self.localVideoSinkWants)));
         }
       });
-      const timeoutResult = timeout(promise, self(5750).STATS_INTERVAL);
+      const timeoutResult = timeout(promise, self(5782).STATS_INTERVAL);
       resolved = timeoutResult.catch((error) => {
         if (!(error instanceof self(dependencyMap[8]).TimeoutError)) {
           throw error;
@@ -1649,7 +1649,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(5756).BaseConnectionEvent.Video;
+        const Video = tmp8(5788).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;

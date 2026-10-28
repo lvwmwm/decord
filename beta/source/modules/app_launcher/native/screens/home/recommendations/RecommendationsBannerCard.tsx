@@ -1,19 +1,19 @@
-// Module ID: 12083
-// Function ID: 12084
+// Module ID: 12115
+// Function ID: 12116
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1087, 21, 4971, 587, 558, 576, 9649, 8676, 1417, 12060, 6908, 12084, 2000, 12077, 5234, 1128, 12037, 6912, 2]
+// Dependencies: [19, 17, 1087, 21, 5003, 587, 558, 576, 9681, 8708, 1417, 12092, 6940, 12116, 2000, 12109, 5266, 1128, 12069, 6944, 2]
 
-// Module 12083 (RecommendationsBannerCard)
+// Module 12115 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8676 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12077 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 12084 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8708 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12109 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 12116 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
       tmp6 = cResult[2];
     }
     if (cResult[3] !== application) {
-      const tmpResult = tmp(9649);
+      const tmpResult = tmp(9681);
       const shelfBadgeTypeIfActive = tmpResult.getShelfBadgeTypeIfActive(application);
       cResult[3] = application;
       cResult[4] = shelfBadgeTypeIfActive;
@@ -187,7 +187,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
               return;
             }
           }
-          tmp23Result2 = closure_6(tmp(12060).BaseAppRow, obj2);
+          tmp23Result2 = closure_6(tmp(12092).BaseAppRow, obj2);
         } else {
           let tmp23Result;
           const items1 = [tmp5.container, , ];
@@ -207,7 +207,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
             }
           }
           let num12 = 8;
-          const PressableOpacity = tmp(6908).PressableOpacity;
+          const PressableOpacity = tmp(6940).PressableOpacity;
           if (isFirst) {
             num12 = 0;
           }
@@ -219,7 +219,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
           const obj8 = { applicationBot: application.bot, isActivity: tmpResult3.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
           const tmp27 = RecommendationsBannerDefault;
           ({ id: obj9.applicationId, icon } = application);
-          tmpResult3 = tmp(9649);
+          tmpResult3 = tmp(9681);
           items2 = [closure_6(tmp27, obj8), ];
           const tmp26 = importDefault;
           if (tmp6) {
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
                 return;
               }
             }
-            items3 = [closure_6(tmp26(12077), obj11), ];
+            items3 = [closure_6(tmp26(12109), obj11), ];
             let tmp25Result = tmp6;
             if (tmp25Result) {
               const obj12 = { style: tmp5.promotedLabelWrapper, children: closure_6(tmp30, obj13) };
@@ -291,11 +291,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
           items5 = [null != tmp19, , ];
           const obj16 = { style: tmp5.appDetails, children: items6 };
           const obj17 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-          items6 = [closure_6(tmp(5234).Text, obj17), ];
+          items6 = [closure_6(tmp(5266).Text, obj17), ];
           const obj18 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-          items6[1] = closure_6(tmp(5234).Text, obj18);
+          items6[1] = closure_6(tmp(5266).Text, obj18);
           items5[1] = closure_7(View, obj16);
-          items5[2] = closure_6(tmp(6912).TableRowArrow, {});
+          items5[2] = closure_6(tmp(6944).TableRowArrow, {});
           items4[1] = closure_7(View, obj14);
           tmp23Result2 = tmp23(PressableOpacity, obj6);
         }
@@ -341,7 +341,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   }
   let result = tmp4;
   if (!result) {
-    const tmpResult4 = tmp(9649);
+    const tmpResult4 = tmp(9681);
     result = tmpResult4.isPromotedApplication(application);
   }
   cResult[0] = application;
@@ -375,10 +375,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   const overrideImageUrl = application.overrideImageUrl;
   let tmp = closure_8();
   if (!showsPromoted) {
-    const obj = application(9649);
+    const obj = application(9681);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  const obj2 = application(9649);
+  const obj2 = application(9681);
   const shelfBadgeTypeIfActive = obj2.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -404,13 +404,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(12060).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(12092).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
     let num = 8;
     let num2 = 8;
-    const PressableOpacity = tmp4(6908).PressableOpacity;
+    const PressableOpacity = tmp4(6940).PressableOpacity;
     if (isFirst) {
       num2 = 0;
     }
@@ -425,7 +425,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
     const obj10 = { applicationBot: application.bot, isActivity: tmp4Result.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
     const tmp10Result = RecommendationsBannerDefault;
     ({ id: obj8.applicationId, icon } = application);
-    tmp4Result = application(9649);
+    tmp4Result = application(9681);
     items2 = [closure_6(tmp10Result, obj10), ];
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: items3 };
@@ -434,7 +434,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
       if (showsPromoted) {
         const obj13 = { style: tmp.promotedLabelWrapper, children: closure_6(Text, obj14) };
         obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: intl.string(application(1128).t["/eVltv"]) };
-        Text = tmp4(5234).Text;
+        Text = tmp4(5266).Text;
         intl = tmp4(1128).intl;
         showsPromoted = tmp14(tmp13, obj13);
       }
@@ -449,16 +449,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recommenda
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(12037), obj16);
+      tmp14Result = tmp14(tmp10(12069), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };
     const obj18 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    items6 = [closure_6(application(5234).Text, obj18), ];
+    items6 = [closure_6(application(5266).Text, obj18), ];
     const obj19 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = closure_6(application(5234).Text, obj19);
+    items6[1] = closure_6(application(5266).Text, obj19);
     items5[1] = closure_7(View, obj17);
-    items5[2] = closure_6(application(6912).TableRowArrow, {});
+    items5[2] = closure_6(application(6944).TableRowArrow, {});
     items4[1] = closure_7(View, obj15);
     tmp12Result2 = tmp12(PressableOpacity, obj7);
   }

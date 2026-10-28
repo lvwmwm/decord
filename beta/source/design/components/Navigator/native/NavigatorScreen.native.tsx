@@ -1,18 +1,18 @@
-// Module ID: 7130
-// Function ID: 7131
+// Module ID: 7162
+// Function ID: 7163
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 558, 576, 7131, 7132, 2]
+// Dependencies: [19, 21, 558, 576, 7163, 7164, 2]
 
-// Module 7130 (NavigatorScreen)
+// Module 7162 (NavigatorScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import config from "config" /* 7131 */;
+import config from "config" /* 7163 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PostponeRender2 = tmp(7132);
+const PostponeRender2 = tmp(7164);
 const jsxs = Fragment.jsxs;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function NavigatorScreen(arg0) {

@@ -1,29 +1,29 @@
-// Module ID: 18189
-// Function ID: 18190
+// Module ID: 18226
+// Function ID: 18227
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 4823, 4845, 4903, 5712, 1392, 1087, 21, 4971, 587, 558, 576, 504, 1202, 5604, 1505, 5707, 1128, 5234, 6908, 5994, 3766, 10688, 8502, 10661, 7253, 8668, 2]
+// Dependencies: [19, 17, 4855, 4877, 4935, 5744, 1392, 1087, 21, 5003, 587, 558, 576, 504, 1202, 5636, 1505, 5739, 1128, 5266, 6940, 6026, 3798, 10720, 8534, 10693, 7285, 8700, 2]
 
-// Module 18189 (ChannelNameHeader)
+// Module 18226 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import _modDef3766 from "module_3766" /* 3766 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import ChannelUtils from "ChannelUtils" /* 5994 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8502 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10688 */;
+import _modDef3798 from "module_3798" /* 3798 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import transitionToChannel from "transitionToChannel" /* 5739 */;
+import ChannelUtils from "ChannelUtils" /* 6026 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8534 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10720 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import PresenceStore from "PresenceStore" /* 5744 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -369,7 +369,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         let tmp15;
         if (cResult[7] !== tmp9) {
           const obj2 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: tmp9 };
-          const tmp17 = closure_12(tmp(5234).Text, obj2);
+          const tmp17 = closure_12(tmp(5266).Text, obj2);
           cResult[7] = tmp9;
           cResult[8] = tmp17;
           tmp15 = tmp17;
@@ -386,9 +386,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     let stringResult;
     if (channel.isGameInvitesChannel()) {
       const intl = tmp(1128).intl;
-      stringResult = intl.string(_modDef3766["D+2/QP"]);
+      stringResult = intl.string(_modDef3798["D+2/QP"]);
     } else {
-      const tmpResult2 = tmp(5994);
+      const tmpResult2 = tmp(6026);
       stringResult = tmpResult2.channelTypeString(channel);
     }
     tmp10 = stringResult;
@@ -416,9 +416,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     let stringResult;
     if (channel.isGameInvitesChannel()) {
       const intl = tmp(1128).intl;
-      stringResult = intl.string(_modDef3766["D+2/QP"]);
+      stringResult = intl.string(_modDef3798["D+2/QP"]);
     } else {
-      const tmpResult = tmp(5994);
+      const tmpResult = tmp(6026);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -428,7 +428,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp6 = null;
     if ("" !== stateFromStores) {
       const obj2 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp6 = closure_12(tmp(5234).Text, obj2);
+      tmp6 = closure_12(tmp(5266).Text, obj2);
     }
   }
   return tmp6;
@@ -450,7 +450,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const cResult = obj.c(48);
   channel = channel.channel;
   closure_15();
-  stateFromStores(5604)(channel);
+  stateFromStores(5636)(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
     cResult[0] = items;
@@ -691,7 +691,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   channel = channel.channel;
   const containerStyle = channel.containerStyle;
   const tmp4 = closure_15();
-  analyticsLocations = analyticsLocations(7253)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp5;
     if (cResult[1] === channel) {
@@ -722,7 +722,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
         }
       }
       const obj3 = { style: tmp6, onPress: tmp5, children: tmp7 };
-      const tmp13 = closure_12(tmp(6908).PressableOpacity, obj3);
+      const tmp13 = closure_12(tmp(6940).PressableOpacity, obj3);
       cResult[8] = tmp5;
       cResult[9] = tmp6;
       cResult[10] = tmp7;
@@ -753,7 +753,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(7253)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7285)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -765,7 +765,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(closure_19, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(6908).PressableOpacity;
+  const PressableOpacity = channel(6940).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

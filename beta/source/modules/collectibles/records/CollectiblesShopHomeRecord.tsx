@@ -1,23 +1,23 @@
-// Module ID: 7677
-// Function ID: 7678
+// Module ID: 7709
+// Function ID: 7710
 // Name: CollectiblesShopHomeRecord
-// Dependencies: [7651, 7678, 7679, 7682, 7683, 7684, 7685, 7686, 7687, 7688, 5640, 2]
+// Dependencies: [7683, 7710, 7711, 7714, 7715, 7716, 7717, 7718, 7719, 7720, 5672, 2]
 
-// Module 7677 (CollectiblesShopHomeRecord)
-import ShopBlockType from "ShopBlockType" /* 5640 */;
-import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 7678 */;
-import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 7679 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 7682 */;
-import GameServerHostingBannerBlockRecord from "GameServerHostingBannerBlockRecord" /* 7683 */;
-import HeroBlockRecord2 from "HeroBlockRecord" /* 7684 */;
-import ImmersiveBannerBlockRecord from "ImmersiveBannerBlockRecord" /* 7685 */;
-import ShelfBlockRecord2 from "ShelfBlockRecord" /* 7686 */;
-import SocialLayerStorefrontPromotionalBannerBlockRecord from "SocialLayerStorefrontPromotionalBannerBlockRecord" /* 7687 */;
-import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 7688 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7651 */;
+// Module 7709 (CollectiblesShopHomeRecord)
+import ShopBlockType from "ShopBlockType" /* 5672 */;
+import CountdownTimerBlockRecord2 from "CountdownTimerBlockRecord" /* 7710 */;
+import FeaturedBlockRecord2 from "FeaturedBlockRecord" /* 7711 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 7714 */;
+import GameServerHostingBannerBlockRecord from "GameServerHostingBannerBlockRecord" /* 7715 */;
+import HeroBlockRecord2 from "HeroBlockRecord" /* 7716 */;
+import ImmersiveBannerBlockRecord from "ImmersiveBannerBlockRecord" /* 7717 */;
+import ShelfBlockRecord2 from "ShelfBlockRecord" /* 7718 */;
+import SocialLayerStorefrontPromotionalBannerBlockRecord from "SocialLayerStorefrontPromotionalBannerBlockRecord" /* 7719 */;
+import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 7720 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7683 */;
 import size from "module_2" /* 2 */;
 
-const f99365 = (type) => {
+const f99488 = (type) => {
   type = type.type;
   if (ShopBlockType.ShopBlockType.HERO === type) {
     return HeroBlockRecord.fromServer(type);
@@ -39,8 +39,8 @@ const f99365 = (type) => {
     return closure_1_6.fromServer(type);
   }
 };
-const f99366 = (item) => undefined !== item;
-const f99367 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f99489 = (item) => undefined !== item;
+const f99490 = (item) => CollectiblesCategoryRecord.fromServer(item);
 const CountdownTimerBlockRecord = CountdownTimerBlockRecord2.CountdownTimerBlockRecord;
 const FeaturedBlockRecord = FeaturedBlockRecord2.FeaturedBlockRecord;
 const FeedBlockRecord = FeedBlockRecord2.FeedBlockRecord;
@@ -54,20 +54,20 @@ class CollectiblesShopHomeRecord {
   constructor(shop_blocks) {
     const obj = Object.create(new.target.prototype);
     shop_blocks = shop_blocks.shop_blocks;
-    const mapped = shop_blocks.map(f99365);
-    obj.shopBlocks = mapped.filter(f99366);
+    const mapped = shop_blocks.map(f99488);
+    obj.shopBlocks = mapped.filter(f99489);
     const categories = shop_blocks.categories;
-    obj.categories = categories.map(f99367);
+    obj.categories = categories.map(f99490);
     return obj;
   }
   static fromServer(shop_blocks) {
     if (typeof CollectiblesShopHomeRecord === "function") {
       const obj = Object.create(tmp.prototype);
       shop_blocks = shop_blocks.shop_blocks;
-      const mapped = shop_blocks.map(f99365);
-      obj.shopBlocks = mapped.filter(f99366);
+      const mapped = shop_blocks.map(f99488);
+      obj.shopBlocks = mapped.filter(f99489);
       const categories = shop_blocks.categories;
-      obj.categories = categories.map(f99367);
+      obj.categories = categories.map(f99490);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

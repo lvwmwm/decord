@@ -1,11 +1,11 @@
-// Module ID: 12280
-// Function ID: 12281
+// Module ID: 12312
+// Function ID: 12313
 // Name: conjurePublishHistoryRequests
-// Dependencies: [5, 10794, 2]
+// Dependencies: [5, 10826, 2]
 // Exports: fetchPublishHistory, fetchPublishHistoryNotes
 
-// Module 12280 (conjurePublishHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10794 */;
+// Module 12312 (conjurePublishHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

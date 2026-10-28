@@ -1,13 +1,13 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12339
+// Function ID: 12340
 // Name: useConjureRemixNotice
-// Dependencies: [19, 10715, 558, 576, 504, 10808, 1128, 3830, 2]
+// Dependencies: [19, 10747, 558, 576, 504, 10840, 1128, 3862, 2]
 
-// Module 12307 (useConjureRemixNotice)
-import _modDef3830 from "module_3830" /* 3830 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10808 */;
+// Module 12339 (useConjureRemixNotice)
+import _modDef3862 from "module_3862" /* 3862 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10840 */;
 import react from "react" /* 19 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 10715 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 10747 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (cResult[5] !== stateFromStores) {
       const intl = tmp(1128).intl;
       const obj2 = { reason: stateFromStores };
-      const formatResult = intl.format(_modDef3830.Up6Ssw, obj2);
+      const formatResult = intl.format(_modDef3862.Up6Ssw, obj2);
       cResult[5] = stateFromStores;
       cResult[6] = formatResult;
       tmp10 = formatResult;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(1128).intl;
-      const stringResult = intl2.string(_modDef3830["ywA+ET"]);
+      const stringResult = intl2.string(_modDef3862["ywA+ET"]);
       cResult[7] = stringResult;
       tmp13 = stringResult;
     } else {
@@ -112,10 +112,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   [][0] = arg0;
   let tmp5 = null;
   if (null != stateFromStores) {
-    const obj2 = { message: intl.format(_modDef3830.Up6Ssw, obj3), retry: obj4 };
+    const obj2 = { message: intl.format(_modDef3862.Up6Ssw, obj3), retry: obj4 };
     intl = tmp(1128).intl;
     obj3 = { reason: stateFromStores };
-    obj4 = { text: intl2.string(_modDef3830["ywA+ET"]), onClick: tmp4 };
+    obj4 = { text: intl2.string(_modDef3862["ywA+ET"]), onClick: tmp4 };
     intl2 = tmp(1128).intl;
     tmp5 = obj2;
   }

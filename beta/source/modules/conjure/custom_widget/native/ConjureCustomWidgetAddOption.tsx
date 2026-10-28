@@ -1,20 +1,20 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14408
+// Function ID: 14409
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 14377, 5210, 14378, 8953, 12345, 1128, 3830, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 14409, 5242, 14410, 8985, 12377, 1128, 3862, 2]
 
-// Module 14376 (ConjureCustomWidgetAddOption)
+// Module 14408 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5210 */;
-import MagicWandIcon from "MagicWandIcon" /* 12345 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 14377 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14378 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5242 */;
+import MagicWandIcon from "MagicWandIcon" /* 12377 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 14409 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14410 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,12 +51,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCus
     let tmp12;
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const RowButton = tmp(8953).RowButton;
+      const RowButton = tmp(8985).RowButton;
       ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-      const Icon = tmp(8953).RowButton.Icon;
+      const Icon = tmp(8985).RowButton.Icon;
       const intl = tmp(1128).intl;
       const intl2 = tmp(1128).intl;
-      const tmp11 = <RowButton icon={null} label={intl.string(_modDef3830["5WHmVU"])} subLabel={intl2.string(_modDef3830.yI85oV)} onPress={first} />;
+      const tmp11 = <RowButton icon={null} label={intl.string(_modDef3862["5WHmVU"])} subLabel={intl2.string(_modDef3862.yI85oV)} onPress={first} />;
       cResult[1] = tmp11;
       tmp8 = tmp11;
     } else {
@@ -81,10 +81,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCus
   const canConjureCustomWidget = obj.useCanConjureCustomWidget(ConjureCustomWidgetAddOption_str);
   let tmp6 = null;
   if (canConjureCustomWidget) {
-    ({ icon: null, label: intl.string(_modDef3830["5WHmVU"]), subLabel: intl2.string(_modDef3830.yI85oV), onPress: tmp5 });
-    const RowButton = tmp2(8953).RowButton;
+    ({ icon: null, label: intl.string(_modDef3862["5WHmVU"]), subLabel: intl2.string(_modDef3862.yI85oV), onPress: tmp5 });
+    const RowButton = tmp2(8985).RowButton;
     ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-    const Icon = tmp2(8953).RowButton.Icon;
+    const Icon = tmp2(8985).RowButton.Icon;
     intl = tmp2(1128).intl;
     intl2 = tmp2(1128).intl;
     tmp6 = <View style={tmp.container}>{null}</View>;

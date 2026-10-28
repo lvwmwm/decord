@@ -1,16 +1,16 @@
-// Module ID: 9594
-// Function ID: 9595
+// Module ID: 9626
+// Function ID: 9627
 // Name: QuestCopyUtils
-// Dependencies: [6710, 1128, 6717, 9573, 9576, 7285, 2]
+// Dependencies: [6742, 1128, 6749, 9605, 9608, 7317, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9594 (QuestCopyUtils)
+// Module 9626 (QuestCopyUtils)
 import intl7 from "intl" /* 1128 */;
-import AdCreativeType from "AdCreativeType" /* 6717 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import captureAdUserAction from "captureAdUserAction" /* 9573 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9576 */;
-import QuestConstants from "QuestConstants" /* 6710 */;
+import AdCreativeType from "AdCreativeType" /* 6749 */;
+import ClipboardUtils from "ClipboardUtils" /* 7317 */;
+import captureAdUserAction from "captureAdUserAction" /* 9605 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9608 */;
+import QuestConstants from "QuestConstants" /* 6742 */;
 import size from "module_2" /* 2 */;
 
 let c2;

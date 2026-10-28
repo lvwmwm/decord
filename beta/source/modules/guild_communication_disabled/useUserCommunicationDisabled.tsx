@@ -1,13 +1,13 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 8366
+// Function ID: 8367
 // Name: useUserCommunicationDisabled
-// Dependencies: [4883, 1392, 558, 576, 504, 4890, 2]
+// Dependencies: [4915, 1392, 558, 576, 504, 4922, 2]
 // Exports: userCommunicationDisabled
 
-// Module 8334 (useUserCommunicationDisabled)
+// Module 8366 (useUserCommunicationDisabled)
 import react from "react" /* 576 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4890 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4922 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCom
         prop = null;
       }
       const items1 = [prop, ];
-      const tmpResult2 = tmp(4890);
+      const tmpResult2 = tmp(4922);
       items1[1] = tmpResult2.isMemberCommunicationDisabled(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = items1;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCom
     prop = null;
   }
   const items2 = [prop, ];
-  const tmpResult = tmp(4890);
+  const tmpResult = tmp(4922);
   items2[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores);
   return items2;
 });

@@ -1,15 +1,15 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12053
+// Function ID: 12054
 // Name: useActivityShelfData
-// Dependencies: [19, 1392, 5624, 4822, 558, 576, 504, 7257, 1388, 5626, 5633, 1384, 10206, 2]
+// Dependencies: [19, 1392, 5656, 4854, 558, 576, 504, 7289, 1388, 5658, 5665, 1384, 10238, 2]
 
-// Module 12021 (useActivityShelfData)
+// Module 12053 (useActivityShelfData)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5626 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
 import react from "react" /* 19 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import TestModeStore from "TestModeStore" /* 5624 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import TestModeStore from "TestModeStore" /* 5656 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

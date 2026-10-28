@@ -1,16 +1,16 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17108
+// Function ID: 17109
 // Name: DevToolsGuildPowerupsModal
-// Dependencies: [109, 19, 21, 9743, 558, 576, 7095, 9699, 10031, 17075, 2]
+// Dependencies: [109, 19, 21, 9775, 558, 576, 7127, 9731, 10063, 17109, 2]
 
-// Module 17074 (DevToolsGuildPowerupsModal)
+// Module 17108 (DevToolsGuildPowerupsModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10031 */;
-import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 17075 */;
+import HeaderShared from "HeaderShared" /* 9731 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10063 */;
+import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 17109 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
+import NativeStackView from "NativeStackView" /* 9775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp = dependencyMap;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(7095);
+  let obj2 = accessibilityNativeStackOptions(7127);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n(navigation) {

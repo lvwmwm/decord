@@ -1,13 +1,13 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 9056
+// Function ID: 9057
 // Name: GuildScheduledEventUtils
-// Dependencies: [4829, 2049, 11, 2]
+// Dependencies: [4861, 2049, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9024 (GuildScheduledEventUtils)
+// Module 9056 (GuildScheduledEventUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4829 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let c2;

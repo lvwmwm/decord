@@ -1,11 +1,11 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14802
+// Function ID: 14803
 // Name: OpenNitroTriggerPoint
-// Dependencies: [5191, 10564, 2]
+// Dependencies: [5223, 10596, 2]
 
-// Module 14770 (OpenNitroTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5191 */;
-import Helpers from "Helpers" /* 10564 */;
+// Module 14802 (OpenNitroTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5223 */;
+import Helpers from "Helpers" /* 10596 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.OPEN_NITRO, { location: "open nitro tab/settings" });

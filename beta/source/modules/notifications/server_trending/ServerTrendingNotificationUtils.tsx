@@ -1,14 +1,14 @@
-// Module ID: 16868
-// Function ID: 16869
+// Module ID: 16902
+// Function ID: 16903
 // Name: ServerTrendingNotificationUtils
-// Dependencies: [4916, 1087, 4799, 1267, 2]
+// Dependencies: [4948, 1087, 4831, 1267, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 16868 (ServerTrendingNotificationUtils)
+// Module 16902 (ServerTrendingNotificationUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import NotificationConstants from "NotificationConstants" /* 4916 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import NotificationConstants from "NotificationConstants" /* 4948 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

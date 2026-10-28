@@ -1,30 +1,30 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17138
+// Function ID: 17139
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6766, 4827, 4914, 4823, 4845, 4874, 1392, 1087, 21, 4971, 587, 5663, 13757, 13759, 6489, 11, 558, 576, 1633, 1202, 6987, 6903, 16946, 6912, 2]
+// Dependencies: [19, 17, 6798, 4859, 4946, 4855, 4877, 4906, 1392, 1087, 21, 5003, 587, 5695, 13789, 13791, 6521, 11, 558, 576, 1633, 1202, 7019, 6935, 16980, 6944, 2]
 
-// Module 17104 (DevToolsInAppNotificationTestingScreen)
+// Module 17138 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5663 */;
-import StickersTypes from "StickersTypes" /* 6489 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13757 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13759 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import StickersTypes from "StickersTypes" /* 6521 */;
+import TableRowGroup2 from "TableRowGroup" /* 7019 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13789 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13791 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6766 */;
-import MessageRecord from "MessageRecord" /* 4914 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import StickersStore from "StickersStore" /* 6798 */;
+import MessageRecord from "MessageRecord" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(6987).TableRowGroup;
+      let TableRowGroup = tmp(7019).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;

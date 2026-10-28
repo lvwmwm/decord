@@ -1,26 +1,26 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12107
+// Function ID: 12108
 // Name: HeroMedia
-// Dependencies: [19, 4972, 1504, 21, 4971, 558, 576, 11170, 11507, 504, 7257, 12039, 1128, 8790, 2]
+// Dependencies: [19, 5004, 1504, 21, 5003, 558, 576, 11202, 11539, 504, 7289, 12071, 1128, 8822, 2]
 
-// Module 12075 (HeroMedia)
+// Module 12107 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7257 */;
-import common_VideoDefault from "common/Video" /* 8790 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11507 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7289 */;
+import common_VideoDefault from "common/Video" /* 8822 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11539 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import createStyles from "createStyles" /* 4971 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const useDefaultAppLauncherWidth = tmp(11170);
-const getPreviewVideoAssetUrlDefault = tmp2(12039);
+const useDefaultAppLauncherWidth = tmp(11202);
+const getPreviewVideoAssetUrlDefault = tmp2(12071);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
       }
       let tmp22 = null;
       if (null != prop2) {
-        tmp22 = tmp10(12039)(applicationId, prop.activity_preview_video_asset_id);
+        tmp22 = tmp10(12071)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;

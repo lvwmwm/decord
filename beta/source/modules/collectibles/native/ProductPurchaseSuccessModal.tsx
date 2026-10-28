@@ -1,36 +1,36 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 13976
+// Function ID: 13977
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 4972, 1087, 21, 4971, 587, 1995, 558, 576, 13943, 6931, 1128, 6933, 5052, 5247, 5206, 5212, 7660, 13945, 5252, 5258, 8667, 13947, 504, 13948, 11182, 9451, 8820, 8660, 9390, 9403, 11055, 11173, 11174, 5669, 13949, 5234, 7662, 5244, 7221, 2]
+// Dependencies: [32, 729, 19, 17, 5004, 1087, 21, 5003, 587, 1995, 558, 576, 13975, 6963, 1128, 6965, 5084, 5279, 5238, 5244, 7692, 13977, 5284, 5290, 8699, 13979, 504, 13980, 11214, 9483, 8852, 8692, 9422, 9435, 11087, 11205, 11206, 5701, 13981, 5266, 7694, 5276, 7253, 2]
 
-// Module 13944 (ProductPurchaseSuccessModal)
+// Module 13976 (ProductPurchaseSuccessModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
-import useToken from "useToken" /* 5252 */;
-import LinearGradientDefault from "LinearGradient" /* 5258 */;
-import XSmallIcon from "XSmallIcon" /* 6931 */;
-import _mod6933 from "module_6933" /* 6933 */;
-import _modDef7660 from "module_7660" /* 7660 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9390 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9403 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11055 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11173 */;
-import NameplatePreview from "NameplatePreview" /* 11174 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13943 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13945 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import spring from "spring" /* 5279 */;
+import useToken from "useToken" /* 5284 */;
+import LinearGradientDefault from "LinearGradient" /* 5290 */;
+import XSmallIcon from "XSmallIcon" /* 6963 */;
+import _mod6965 from "module_6965" /* 6965 */;
+import _modDef7692 from "module_7692" /* 7692 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9422 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9435 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11087 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11205 */;
+import NameplatePreview from "NameplatePreview" /* 11206 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13975 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,15 +47,15 @@ let obj2;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const Text_Text = tmp(5234);
-const common_SafeAreaView = tmp(7221);
-const CollectiblesUtils = tmp(7662);
-const useShopProductItems = tmp(8660);
-const useCurrentUser = tmp(8667);
-const useFetchVirtualCurrencyBalance = tmp(9451);
-const useHandleUseNow = tmp(11182);
-const useAvatarDecorationPreviewSizes = tmp(13947);
-const useFetchCollectiblesProductCategory = tmp(13948);
+const Text_Text = tmp(5266);
+const common_SafeAreaView = tmp(7253);
+const CollectiblesUtils = tmp(7694);
+const useShopProductItems = tmp(8692);
+const useCurrentUser = tmp(8699);
+const useFetchVirtualCurrencyBalance = tmp(9483);
+const useHandleUseNow = tmp(11214);
+const useAvatarDecorationPreviewSizes = tmp(13979);
+const useFetchCollectiblesProductCategory = tmp(13980);
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
 ({ Orientation: c9, VerticalGradient: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
@@ -163,7 +163,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cancel
       return tmp10;
     }
     let obj2 = { onPress: tmp5, backImage: tmp6, accessibilityLabel: tmp8, displayMode: "minimal" };
-    const tmp12 = closure_11(tmp(6933).HeaderBackButton, obj2);
+    const tmp12 = closure_11(tmp(6965).HeaderBackButton, obj2);
     cResult[6] = tmp5;
     cResult[7] = tmp6;
     cResult[8] = tmp12;
@@ -210,7 +210,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cancel
     accessibilityLabel: intl.string(intl5.t.cpT0Cq),
     displayMode: "minimal"
   };
-  const HeaderBackButton = _mod6933.HeaderBackButton;
+  const HeaderBackButton = _mod6965.HeaderBackButton;
   intl = intl5.intl;
   return closure_11(HeaderBackButton, obj);
 });
@@ -439,7 +439,7 @@ let closure_25 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
 function useDrummingHapticFeedbacks() {
 
 }
-let obj7 = _modDef7660("black");
+let obj7 = _modDef7692("black");
 let closure_27 = obj7.toHexString();
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurchaseGradientBackground(product) {
@@ -675,7 +675,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
   }
   const tmpResult = useCurrentUser;
   const currentUser = tmpResult.useCurrentUser();
-  const backgroundColors = currentUser(13945)(product.styles).backgroundColors;
+  const backgroundColors = currentUser(13977)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -1016,7 +1016,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
                                                                                     }
                                                                                     const items4 = [tmp9.curtain, curtainViewStyle];
                                                                                     tmp100[0] = items4;
-                                                                                    const tmp101 = closure_11(currentUser(5052).View, tmp100);
+                                                                                    const tmp101 = closure_11(currentUser(5084).View, tmp100);
                                                                                     cResult[90] = curtainViewStyle;
                                                                                     cResult[91] = tmp9.curtain;
                                                                                     cResult[92] = tmp101;
@@ -1120,7 +1120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
                                                               }
                                                               tmp78[0] = tmp72;
                                                               tmp78[1] = tmp73;
-                                                              const tmp79 = closure_11(currentUser(5052).View, tmp78);
+                                                              const tmp79 = closure_11(currentUser(5084).View, tmp78);
                                                               cResult[67] = tmp72;
                                                               cResult[68] = tmp73;
                                                               cResult[69] = tmp79;
@@ -1191,7 +1191,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
                                                         }
                                                       }
                                                       const obj14 = { style: tmp67, children: tmp68 };
-                                                      const tmp71 = closure_11(currentUser(5052).View, obj14);
+                                                      const tmp71 = closure_11(currentUser(5084).View, obj14);
                                                       cResult[57] = tmp67;
                                                       cResult[58] = tmp68;
                                                       cResult[59] = tmp71;
@@ -1289,7 +1289,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
                                       return first1.useReducedMotion;
                                     }
                                   }
-                                  tmp44 = closure_11(tmp7(5669), obj18);
+                                  tmp44 = closure_11(tmp7(5701), obj18);
                                 }
                                 cResult[24] = mobileBgUrl;
                                 class N {
@@ -1516,14 +1516,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       if (null != mobileBgUrl) {
         const obj5 = { source: obj6, style: tmp6.imageBackground };
         obj6 = { uri: mobileBgUrl };
-        tmp31 = closure_11(tmp4(5669), obj5);
+        tmp31 = closure_11(tmp4(5701), obj5);
         tmp32 = closure_11;
         tmp33 = closure_11;
       }
       const items2 = [tmp31, , ];
       const items3 = [tmp6.main, ];
       let str;
-      const SafeAreaPaddingView = tmp2(7221).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp2(7253).SafeAreaPaddingView;
       if (useCategoryImage) {
         str = "rgba(0, 0, 0, 0.3)";
       }
@@ -1534,7 +1534,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       const obj9 = { style: tmp6.headerLeading, children: showOrbBalancePill };
       if (showOrbBalancePill) {
         const obj10 = { initialRenderedBalance: prop, balance };
-        showOrbBalancePill = tmp33(tmp2(13949).BalanceWidgetPill, obj10);
+        showOrbBalancePill = tmp33(tmp2(13981).BalanceWidgetPill, obj10);
       }
       items4 = [tmp33(closure_7, obj9), ];
       let toHexStringResult;
@@ -1553,7 +1553,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       items6 = [tmp6.preview, previewViewStyle];
       const type = product.type;
       const obj12 = { style: { flex: 1 }, contentContainerStyle: tmp6.body, alwaysBounceVertical: false, children: items7 };
-      const View = tmp4(5052).View;
+      const View = tmp4(5084).View;
       const tmp37 = closure_6;
       if (require("CollectiblesItemType").CollectiblesItemType.BUNDLE === type) {
         const obj14 = { style: tmp6.previewBundle, onLayout: tmp26, children: tmp32Result };
@@ -1561,39 +1561,39 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
         if (tmp32Result) {
           const obj15 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp25 };
           ({ firstAvatarDecoration: obj27.deco, firstProfileEffect: obj27.pfx, firstNameplate: obj27.nameplate } = shopProductItems);
-          tmp32Result = tmp32(tmp4(9390), obj15);
+          tmp32Result = tmp32(tmp4(9422), obj15);
         }
         tmp32Result2 = tmp32(tmp28, obj14);
       } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
         const obj16 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-        tmp32Result2 = tmp32(tmp4(9403), obj16);
+        tmp32Result2 = tmp32(tmp4(9435), obj16);
       } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
         const obj17 = { user: currentUser, profileEffect: product.items[0] };
-        tmp32Result2 = tmp32(tmp4(11055), obj17);
+        tmp32Result2 = tmp32(tmp4(11087), obj17);
       } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
         const obj18 = { user: currentUser, profileFrame: product.items[0] };
-        tmp32Result2 = tmp32(tmp4(11173), obj18);
+        tmp32Result2 = tmp32(tmp4(11205), obj18);
       } else {
         tmp32Result2 = null;
         if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
           const obj19 = { user: currentUser, nameplate: product.items[0], animate: true };
-          tmp32Result2 = tmp32(tmp2(11174).NameplatePreview, obj19);
+          tmp32Result2 = tmp32(tmp2(11206).NameplatePreview, obj19);
         }
       }
       items7 = [tmp33(View, obj13), ];
       const obj20 = { style: items8, children: renderMessagesResult };
       items8 = [tmp6.messages, textViewStyle];
-      const View2 = tmp4(5052).View;
+      const View2 = tmp4(5084).View;
       if (null != renderMessages) {
         renderMessagesResult = renderMessages();
       } else {
         const obj21 = { variant: "heading-xl/bold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj22) };
-        const Text = tmp2(5234).Text;
+        const Text = tmp2(5266).Text;
         intl3 = tmp2(1128).intl;
         obj22 = { itemName: product.name };
         const items9 = [tmp33(Text, obj21), ];
         const obj23 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-        const Text2 = tmp2(5234).Text;
+        const Text2 = tmp2(5266).Text;
         const tmp2Result14 = require("CollectiblesUtils");
         let result = tmp2Result14.isPremiumCollectiblesProduct(product);
         const intl4 = tmp2(1128).intl;
@@ -1615,7 +1615,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       items5[1] = closure_12(tmp37, obj12);
       const obj28 = { style: tmp6.footer, children: tmp33(closure_7, obj29) };
       obj29 = { style: tmp6.cta, children: tmp33(Button, obj31) };
-      Button = tmp2(5244).Button;
+      Button = tmp2(5276).Button;
       if (canUseNow) {
         const obj30 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
         intl2 = tmp2(1128).intl;

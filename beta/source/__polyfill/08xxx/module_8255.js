@@ -1,287 +1,322 @@
 // Module ID: 8255
 // Function ID: 8256
-// Dependencies: [8214, 8256]
+// Dependencies: [8256, 8249, 8246]
+// Exports: findOffsets
 
 // Module 8255
-import _mod8214 from "module_8214" /* 8214 */;
-import iccTags from "iccTags" /* 8256 */;
+import _mod8246 from "module_8246" /* 8246 */;
+import _modDef8249 from "module_8249" /* 8249 */;
+import get64BitValue from "get64BitValue" /* 8256 */;
 
-function parseTags(buffer) {
+function parseBox(getUint32, sum) {
+  let contentOffset;
   let length;
-  buffer = buffer.buffer;
-  if (buffer.byteLength !== buffer.getUint32()) {
-    const _Error3 = Error;
-    const self9 = this;
-    const self10 = this;
-    const error = new Error("ICC profile length not matching");
-    throw error;
-  } else if (buffer.byteLength < c2) {
-    const _Error2 = Error;
-    const self7 = this;
-    const self8 = this;
-    const error1 = new Error("ICC profile too short");
-    throw error1;
+  let obj;
+  let obj12;
+  let obj14;
+  let obj20;
+  const uint32 = getUint32.getUint32(sum);
+  if (0 === uint32) {
+    obj = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
+    const obj2 = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
   } else {
-    let num;
-    const obj2 = {};
-    const _Object = Object;
-    const keys = Object.keys(iccTags.iccProfile);
-    for (let num = 0; num < keys.length; num = num + 1) {
-      let tmp = keys[num];
-      let iter = iccTags.iccProfile[tmp];
-      let _parseInt = parseInt;
-      let valueResult = iter.value(buffer, parseInt(tmp, 10));
-      let descriptionResult = valueResult;
-      if (iter.description) {
-        descriptionResult = iter.description(valueResult);
+    if (1 === uint32) {
+      if (0 === getUint32.getUint32(sum + 8)) {
+        obj = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
+        const obj3 = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
       }
-      let obj = { value: valueResult, description: descriptionResult };
-      obj2[iter.name] = obj;
     }
-    const _String = String;
-    const _Uint8Array = Uint8Array;
-    const self = this;
-    const self2 = this;
-    const apply = fromCharCode.apply;
-    const uint8Array = new Uint8Array(buffer.slice(36, 40));
-    if (apply(null, uint8Array) !== acsp) {
-      const _Error = Error;
-      const self5 = this;
-      const self6 = this;
-      const error2 = new Error("ICC profile: missing signature");
-      throw error2;
+    obj = { length: uint32, contentOffset: sum + 4 + 4 };
+  }
+  ({ length, contentOffset } = obj);
+  if (length >= 8) {
+    const uint321 = getUint32.getUint32(sum + 4);
+    if (1718909296 === uint321) {
+      const obj4 = { type: "ftyp", majorBrand: obj20.getStringFromDataView(getUint32, contentOffset, 4), length };
+      obj20 = _mod8246;
+      return obj4;
+    } else if (1768977008 === uint321) {
+      const diff = length - (contentOffset - sum);
+      const items = [c3, c4];
+      const items1 = [];
+      sum = contentOffset;
+      if (contentOffset < contentOffset + diff) {
+        const arr12 = parseBox(getUint32, sum);
+        while (undefined !== arr12) {
+          let tmp63 = undefined === arr12.type;
+          if (!tmp63) {
+            let tmp64 = undefined !== arr12.itemType && -1 === items.indexOf(arr12.itemType);
+            tmp63 = tmp64;
+          }
+          if (!tmp63) {
+            let arr = items1.push(arr12);
+          }
+          sum = sum + arr12.length;
+          if (sum >= contentOffset + diff) {
+            break;
+          }
+        }
+      }
+      return { type: "iprp", subBoxes: items1, length };
+    } else if (1768973167 === uint321) {
+      const diff1 = length - (contentOffset - sum);
+      const items2 = [c3, c4];
+      const items3 = [];
+      let sum1 = contentOffset;
+      if (contentOffset < contentOffset + diff1) {
+        const arr9 = parseBox(getUint32, sum1);
+        while (undefined !== arr9) {
+          let tmp54 = undefined === arr9.type;
+          if (!tmp54) {
+            let tmp55 = undefined !== arr9.itemType && -1 === items2.indexOf(arr9.itemType);
+            tmp54 = tmp55;
+          }
+          if (!tmp54) {
+            let arr2 = items3.push(arr9);
+          }
+          sum1 = sum1 + arr9.length;
+          if (sum1 >= contentOffset + diff1) {
+            break;
+          }
+        }
+      }
+      return { type: "ipco", properties: items3, length };
+    } else if (1668246642 === uint321) {
+      let tmp47;
+      const obj15 = _mod8246;
+      const stringFromDataView = obj15.getStringFromDataView(getUint32, contentOffset, 4);
+      if ("prof" === stringFromDataView) {
+        tmp47 = { offset: contentOffset + 4, length: getUint32.getUint32(contentOffset + 4), chunkNumber: 1, chunksTotal: 1 };
+      }
+      return { type: "colr", icc: tmp47, length };
     } else {
-      let num6 = 132;
-      if (buffer.length < 132) {
-        return obj2;
-      } else {
-        const uint32 = buffer.getUint32(128);
-        let num7 = 0;
-        if (0 < uint32) {
-          while (buffer.length >= num6 + c8) {
-            let tmp45 = require;
-            let obj17 = _mod8214;
-            let stringFromDataView = obj17.getStringFromDataView(buffer, num6, 4);
-            let uint321 = buffer.getUint32(num6 + 4);
-            let uint322 = buffer.getUint32(num6 + 8);
-            if (uint321 > buffer.length) {
-              return obj2;
-            } else {
-              let tmp45Result = tmp45(8214);
-              let stringFromDataView1 = tmp45Result.getStringFromDataView(buffer, uint321, 4);
-              if (stringFromDataView1 === desc) {
-                let uint323 = buffer.getUint32(uint321 + 8);
-                if (uint323 > uint322) {
-                  return obj2;
-                } else {
-                  let _String4 = String;
-                  let fromCharCode4 = String.fromCharCode;
-                  let _Uint8Array4 = Uint8Array;
-                  let self13 = this;
-                  let self14 = this;
-                  let apply4 = fromCharCode4.apply;
-                  let uint8Array1 = new Uint8Array(buffer.slice(uint321 + 12, uint321 + uint323 + 11));
-                  let apply4Result = apply4(null, uint8Array1);
-                  if (tmp45(8256).iccTags[stringFromDataView]) {
-                    let obj3 = { value: apply4Result, description: apply4Result };
-                    obj2[tmp45(8256).iccTags[stringFromDataView].name] = obj3;
-                  } else {
-                    let obj4 = { value: apply4Result, description: apply4Result };
-                    obj2[stringFromDataView] = obj4;
-                  }
-                }
-              } else if (stringFromDataView1 === mluc) {
-                let uint324 = buffer.getUint32(uint321 + 8);
-                let sum = uint321 + 16;
-                let items = [];
-                let num4 = 0;
-                let tmp21 = tmp45;
-                if (0 < uint324) {
-                  do {
-                    let obj6 = _mod8214;
-                    let stringFromDataView2 = obj6.getStringFromDataView(buffer, sum, 2);
-                    let obj7 = _mod8214;
-                    let stringFromDataView3 = obj7.getStringFromDataView(buffer, sum + 2, 2);
-                    let uint325 = buffer.getUint32(sum + 4);
-                    let uint326 = buffer.getUint32(sum + 8);
-                    let obj8 = _mod8214;
-                    let obj5 = { languageCode: stringFromDataView2, countryCode: stringFromDataView3, text: obj8.getUnicodeStringFromDataView(buffer, uint321 + uint326, uint325) };
-                    let arr = items.push(obj5);
-                    sum = sum + tmp18;
-                    num4 = num4 + 1;
-                    tmp21 = require;
-                  } while (num4 < uint324);
-                }
-                if (1 === uint324) {
-                  metroRequire = items[0].text;
-                  if (tmp21(8256).iccTags[stringFromDataView]) {
-                    let obj9 = { value: metroRequire, description: metroRequire };
-                    obj2[tmp21(8256).iccTags[stringFromDataView].name] = obj9;
-                  } else {
-                    let obj10 = { value: metroRequire, description: metroRequire };
-                    obj2[stringFromDataView] = obj10;
-                  }
-                } else {
-                  let obj11 = {};
-                  let num5 = 0;
-                  if (0 < items.length) {
-                    do {
-                      let _HermesInternal = HermesInternal;
-                      obj11["" + items[num5].languageCode + "-" + items[num5].countryCode] = items[num5].text;
-                      num5 = num5 + 1;
-                      length = items.length;
-                    } while (num5 < length);
-                  }
-                  let tmp29 = require;
-                  if (iccTags.iccTags[stringFromDataView]) {
-                    let obj12 = { value: obj11, description: obj11 };
-                    obj2[tmp29(8256).iccTags[stringFromDataView].name] = obj12;
-                  } else {
-                    let obj13 = { value: obj11, description: obj11 };
-                    obj2[stringFromDataView] = obj13;
-                  }
-                }
-              } else if (stringFromDataView1 === metroRequire) {
-                let _String2 = String;
-                let fromCharCode2 = String.fromCharCode;
-                let _Uint8Array2 = Uint8Array;
-                let self3 = this;
-                let self4 = this;
-                let apply2 = fromCharCode2.apply;
-                let uint8Array2 = new Uint8Array(buffer.slice(uint321 + 8, uint321 + uint322 - 7));
-                let apply2Result = apply2(null, uint8Array2);
-                if (tmp45(8256).iccTags[stringFromDataView]) {
-                  let obj14 = { value: apply2Result, description: apply2Result };
-                  obj2[tmp45(8256).iccTags[stringFromDataView].name] = obj14;
-                } else {
-                  let obj15 = { value: apply2Result, description: apply2Result };
-                  obj2[stringFromDataView] = obj15;
-                }
-              } else if (stringFromDataView1 === c7) {
-                let _String3 = String;
-                let fromCharCode3 = String.fromCharCode;
-                let _Uint8Array3 = Uint8Array;
-                let self11 = this;
-                let self12 = this;
-                let apply3 = fromCharCode3.apply;
-                let uint8Array3 = new Uint8Array(buffer.slice(uint321 + 8, uint321 + 12));
-                let apply3Result = apply3(null, uint8Array3);
-                if (tmp45(8256).iccTags[stringFromDataView]) {
-                  let obj16 = { value: apply3Result, description: apply3Result };
-                  obj2[tmp45(8256).iccTags[stringFromDataView].name] = obj16;
-                } else {
-                  let obj18 = { value: apply3Result, description: apply3Result };
-                  obj2[stringFromDataView] = obj18;
-                }
-              }
-              num6 = num6 + 12;
-              num7 = num7 + 1;
+      let parseItemLocationBoxResult;
+      const uint8 = getUint32.getUint8(contentOffset);
+      if (1835365473 === uint321) {
+        let sum2 = contentOffset + 1 + 3;
+        const items4 = [c3, c4];
+        const items5 = [];
+        const sum3 = sum2 + (length - (sum2 - sum));
+        if (sum2 < sum3) {
+          const arr6 = parseBox(getUint32, sum2);
+          while (undefined !== arr6) {
+            let tmp41 = undefined === arr6.type;
+            if (!tmp41) {
+              let tmp42 = undefined !== arr6.itemType && -1 === items4.indexOf(arr6.itemType);
+              tmp41 = tmp42;
+            }
+            if (!tmp41) {
+              let arr4 = items5.push(arr6);
+            }
+            sum2 = sum2 + arr6.length;
+            if (sum2 >= sum3) {
+              break;
             }
           }
-          return obj2;
         }
-        return obj2;
+        parseItemLocationBoxResult = { type: "meta", subBoxes: items5, length };
+        const obj11 = { type: "meta", subBoxes: items5, length };
+      } else if (1768714083 === uint321) {
+        const obj13 = get64BitValue;
+        parseItemLocationBoxResult = obj13.parseItemLocationBox(getUint32, uint8, contentOffset + 1, length);
+      } else if (1768517222 === uint321) {
+        obj12 = { entryCount: contentOffset + 1 + 3, itemInfos: obj12.entryCount + obj14.entryCount };
+        let num13 = 4;
+        if (0 === uint8) {
+          num13 = 2;
+        }
+        const itemInfos = obj12.itemInfos;
+        const diff2 = length - (obj12.itemInfos - sum);
+        const items6 = [c3, c4];
+        const items7 = [];
+        let sum4 = itemInfos;
+        obj14 = { entryCount: num13 };
+        if (itemInfos < itemInfos + diff2) {
+          const arr3 = parseBox(getUint32, sum4);
+          while (undefined !== arr3) {
+            let tmp26 = undefined === arr3.type;
+            if (!tmp26) {
+              let tmp27 = undefined !== arr3.itemType && -1 === items6.indexOf(arr3.itemType);
+              tmp26 = tmp27;
+            }
+            if (!tmp26) {
+              let arr5 = items7.push(arr3);
+            }
+            sum4 = sum4 + arr3.length;
+            if (sum4 >= itemInfos + diff2) {
+              break;
+            }
+          }
+        }
+        parseItemLocationBoxResult = { type: "iinf", itemInfos: items7, length };
+        const obj16 = { type: "iinf", itemInfos: items7, length };
+      } else if (1768842853 === uint321) {
+        const obj17 = { type: "infe", length };
+        let tmp3 = 0 !== uint8;
+        const sum5 = contentOffset + 1;
+        if (tmp3) {
+          tmp3 = 1 !== uint8;
+        }
+        const sum6 = sum5 + 3;
+        let sum9 = sum6;
+        if (!tmp3) {
+          obj17.itemId = getUint32.getUint16(sum6);
+          const sum7 = sum6 + 2;
+          obj17.itemProtectionIndex = getUint32.getUint16(sum7);
+          const sum8 = sum7 + 2;
+          const obj6 = _mod8246;
+          obj17.itemName = obj6.getNullTerminatedStringFromDataView(getUint32, sum8);
+          sum9 = sum8 + (obj17.itemName.length + 1);
+        }
+        parseItemLocationBoxResult = obj17;
+        if (uint8 >= 2) {
+          let sum10;
+          if (2 === uint8) {
+            obj17.itemId = getUint32.getUint16(sum9);
+            sum10 = sum9 + 2;
+          } else {
+            sum10 = sum9;
+            if (3 === uint8) {
+              obj17.itemId = getUint32.getUint32(sum9);
+              sum10 = sum9 + 4;
+            }
+          }
+          obj17.itemProtectionIndex = getUint32.getUint16(sum10);
+          const sum11 = sum10 + 2;
+          obj17.itemType = getUint32.getUint32(sum11);
+          const sum12 = sum11 + 4;
+          const obj7 = _mod8246;
+          obj17.itemName = obj7.getNullTerminatedStringFromDataView(getUint32, sum12);
+          const sum13 = sum12 + (obj17.itemName.length + 1);
+          if (obj17.itemType === c4) {
+            const tmp13Result = _mod8246;
+            obj17.contentType = tmp13Result.getNullTerminatedStringFromDataView(getUint32, sum13);
+            const sum14 = sum13 + (obj17.contentType.length + 1);
+            parseItemLocationBoxResult = obj17;
+            if (sum + length > sum14) {
+              const tmp13Result3 = _mod8246;
+              obj17.contentEncoding = tmp13Result3.getNullTerminatedStringFromDataView(getUint32, sum14);
+              const sum15 = obj17.contentEncoding.length + 1;
+              parseItemLocationBoxResult = obj17;
+            }
+          } else {
+            parseItemLocationBoxResult = obj17;
+            if (obj17.itemType === c5) {
+              const tmp13Result4 = _mod8246;
+              obj17.itemUri = tmp13Result4.getNullTerminatedStringFromDataView(getUint32, sum13);
+              const sum16 = obj17.itemUri.length + 1;
+              parseItemLocationBoxResult = obj17;
+            }
+          }
+        }
+      } else {
+        parseItemLocationBoxResult = { type: "Array", length };
       }
+      return parseItemLocationBoxResult;
     }
   }
 }
-let obj = {
-  read(buffer, arr, arg2) {
-    function readIcc(buffer, arr) {
-      let length;
-      let sum;
-      function getBuffer(buffer) {
-        if (Array.isArray(buffer)) {
-          const _DataView = DataView;
-          const _Uint8Array = Uint8Array;
-          const self = this;
-          const self2 = this;
-          const dataView = new DataView(Uint8Array.from(buffer).buffer);
-          return dataView.buffer;
-        } else {
-          return buffer.buffer;
-        }
+function findIlocItem(subBoxes, arg1) {
+  let closure_0 = arg1;
+  subBoxes = subBoxes.subBoxes;
+  const items = subBoxes.find((type) => "iloc" === type.type).items;
+  return items.find((itemId) => itemId.itemId === closure_0);
+}
+let c3 = 1165519206;
+let c4 = 1835625829;
+let c5 = 1970432288;
+
+export const ITEM_INFO_TYPE_EXIF = 1165519206;
+export const ITEM_INFO_TYPE_MIME = 1835625829;
+export { parseBox };
+export const findOffsets = function findOffsets(byteLength) {
+  let obj;
+  let obj2;
+  function findExifOffset(byteLength, subBoxes) {
+    function findIinfExifItemId(subBoxes) {
+      subBoxes = subBoxes.subBoxes;
+      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
+      return itemInfos.find((itemType) => itemType.itemType === closure_1_3);
+    }
+    function getTiffHeaderOffset(getUint32, sum) {
+      sum = sum + 4;
+      return sum + getUint32.getUint32(sum);
+    }
+    try {
+      const tmp4 = findIlocItem(subBoxes, findIinfExifItemId(subBoxes).itemId);
+      return getTiffHeaderOffset(byteLength, tmp4.baseOffset + tmp4.extents[0].extentOffset);
+    } catch (err) {
+    }
+  }
+  function findXmpChunks(subBoxes) {
+    function findIinfXmpItemId(subBoxes) {
+      subBoxes = subBoxes.subBoxes;
+      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
+      return itemInfos.find((itemType) => itemType.itemType === closure_1_4 && "application/rdf+xml" === itemType.contentType);
+    }
+    try {
+      const itemId = findIinfXmpItemId(subBoxes).itemId;
+      const tmp3 = findIlocItem(subBoxes, itemId);
+      const first = findIlocItem(subBoxes, itemId).extents[0];
+      const items = [{ dataOffset: tmp3.baseOffset + first.extentOffset, length: first.extentLength }];
+      return items;
+    } catch (err) {
+    }
+  }
+  function findIccChunks(subBoxes) {
+    try {
+      subBoxes = subBoxes.subBoxes;
+      const subBoxes1 = subBoxes.find((type) => "iprp" === type.type).subBoxes;
+      const properties = subBoxes1.find((type) => "ipco" === type.type).properties;
+      const icc = properties.find((type) => "colr" === type.type).icc;
+      if (icc) {
+        const items = [tmp2];
+        return items;
       }
-      let closure_0 = arr;
-      try {
-        let _Uint8Array = Uint8Array;
-        let self = this;
-        let self2 = this;
-        let uint8Array = new Uint8Array(arr.reduce((acc, item) => acc + item.length, 0));
-        let closure_2 = 0;
-        let closure_3 = getBuffer(buffer);
-        function _loop(arg0) {
-          closure_0 = arg0;
-          const found = closure_0.find((chunkNumber) => chunkNumber.chunkNumber === closure_0);
-          if (found) {
-            const _Uint8Array = Uint8Array;
-            const self3 = this;
-            const self4 = this;
-            uint8Array = new Uint8Array(closure_3.slice(found.offset, found.offset + found.length));
-            const result = uint8Array.set(uint8Array, closure_2);
-            closure_2 = closure_2 + uint8Array.length;
-          } else {
-            const _Error = Error;
-            const _HermesInternal = HermesInternal;
-            const self = this;
-            const self2 = this;
-            const error = new Error("ICC chunk " + arg0 + " not found");
-            throw error;
-          }
-        }
-        let num3 = 1;
-        const tmp4 = uint8Array;
-        if (1 <= arr.length) {
-          do {
-            let _loopResult = _loop(num3);
-            sum = num3 + 1;
-            num3 = sum;
-            length = arr.length;
-          } while (sum <= length);
-        }
-        let _DataView = DataView;
-        let self3 = this;
-        let self4 = this;
-        let dataView = new DataView(tmp4.buffer);
-        return parseTags(dataView);
-      } catch (err) {
+    } catch (err) {
+    }
+  }
+  let tmp = importDefault;
+  const tmp2 = dependencyMap;
+  if (!_modDef8249.USE_EXIF) {
+    if (!_modDef8249.USE_XMP) {
+      if (!_modDef8249.USE_ICC) {
         return {};
       }
     }
-    const tmp = arg2;
-    if (tmp) {
-      const tmp2 = require;
-      if (arr[0].compressionMethod !== _mod8214.COMPRESSION_METHOD_NONE) {
-        let catchPromise;
-        if (arr[0].compressionMethod === tmp2(8214).COMPRESSION_METHOD_DEFLATE) {
-          let tmp4 = globalThis;
-          let _DataView = DataView;
-          buffer = buffer.buffer;
-          let self = this;
-          let self2 = this;
-          let dataView = new DataView(buffer.slice(arr[0].offset, arr[0].offset + arr[0].length));
-          const tmp2Result = tmp2(8214);
-          let tmp6 = dataView;
-          let tmp7 = tmp2Result;
-          const decompressResult = tmp2Result.decompress(dataView, arr[0].compressionMethod, "utf-8", "dataview");
-          const nextPromise = decompressResult.then(parseTags);
-          catchPromise = nextPromise.catch(() => ({}));
-        } else {
-          catchPromise = {};
+  }
+  let num = 0;
+  let tmp3;
+  if (8 <= byteLength.byteLength) {
+    let tmp4 = parseBox;
+    const arr = parseBox(byteLength, num);
+    while (undefined !== arr) {
+      tmp3 = arr;
+      if ("meta" === arr.type) {
+        break;
+      } else {
+        let sum = num + arr.length;
+        num = sum;
+        if (sum + 4 + 4 > byteLength.byteLength) {
+          break;
         }
-        return catchPromise;
       }
     }
-    return readIcc(buffer, arr);
   }
+  if (tmp3) {
+    obj2 = { hasAppMarkers: undefined !== obj2.tiffHeaderOffset || undefined !== obj2.xmpChunks || undefined !== obj2.iccChunks };
+    if (_modDef8249.USE_EXIF) {
+      obj2.tiffHeaderOffset = findExifOffset(byteLength, tmp3);
+    }
+    if (_modDef8249.USE_XMP) {
+      obj2.xmpChunks = findXmpChunks(tmp3);
+    }
+    if (_modDef8249.USE_ICC) {
+      obj2.iccChunks = findIccChunks(tmp3);
+    }
+    obj = obj2;
+  } else {
+    obj = { hasAppMarkers: false };
+  }
+  return obj;
 };
-let c2 = 84;
-const acsp = "acsp";
-const desc = "desc";
-const mluc = "mluc";
-let metroRequire = "text";
-let c7 = "sig ";
-let c8 = 12;
-
-export default obj;
-export { parseTags };

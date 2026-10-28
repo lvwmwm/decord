@@ -1,15 +1,15 @@
-// Module ID: 11013
-// Function ID: 11014
+// Module ID: 11045
+// Function ID: 11046
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4971, 558, 576, 5234, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 5266, 2]
 
-// Module 11013 (ActionSheetIconHeader)
+// Module 11045 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5266 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetI
     let tmp13 = null;
     if (null != subtitle) {
       const obj4 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
-      tmp13 = _false(tmp(5234).Text, obj4);
+      tmp13 = _false(tmp(5266).Text, obj4);
     }
     cResult[4] = subtitle;
     cResult[5] = tmp13;

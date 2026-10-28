@@ -1,9 +1,9 @@
-// Module ID: 5241
-// Function ID: 5242
+// Module ID: 5273
+// Function ID: 5274
 // Name: TypographyVariantRemap
 // Dependencies: [2]
 
-// Module 5241 (TypographyVariantRemap)
+// Module 5273 (TypographyVariantRemap)
 import size from "module_2" /* 2 */;
 
 let items;

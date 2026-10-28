@@ -1,27 +1,27 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15130
+// Function ID: 15131
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1392, 1087, 13582, 21, 4971, 6651, 587, 558, 576, 13584, 1267, 1384, 5263, 1508, 6672, 5025, 1128, 8851, 7485, 15097, 6924, 5234, 15098, 15100, 1633, 7095, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 13614, 21, 5003, 6683, 587, 558, 576, 13616, 1267, 1384, 5295, 1508, 6704, 5057, 1128, 8883, 7517, 15131, 6956, 5266, 15132, 15134, 1633, 7127, 2]
 
-// Module 15096 (AddFriendModal)
+// Module 15130 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import Navigator from "Navigator" /* 7095 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13582 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13584 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+import Navigator from "Navigator" /* 7127 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13614 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13616 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import TextStyles from "TextStyles" /* 6651 */;
+import createStyles_mod from "createStyles" /* 5003 */;
+import TextStyles from "TextStyles" /* 6683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11353
+// Function ID: 11354
 // Name: useCanInviteGuildIds
-// Dependencies: [4883, 4877, 4845, 4903, 558, 576, 11289, 11290, 504, 2]
+// Dependencies: [4915, 4909, 4877, 4935, 558, 576, 11321, 11322, 504, 2]
 
-// Module 11321 (useCanInviteGuildIds)
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildRoleStore from "GuildRoleStore" /* 4877 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+// Module 11353 (useCanInviteGuildIds)
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanInvi
   let tmp = linkedGameOrgInvitesEnabled;
   let obj = linkedGameOrgInvitesEnabled(576);
   const cResult = obj.c(4);
-  const obj2 = linkedGameOrgInvitesEnabled(11289);
+  const obj2 = linkedGameOrgInvitesEnabled(11321);
   linkedGameOrgInvitesEnabled = obj2.useLinkedGameOrgInvitesEnabled(arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore, GuildMemberStore, GuildRoleStore, PermissionStore];
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanInvi
   return tmpResult.useStateFromStoresArray(first, tmp10, tmp11);
 }) : (function useCanInviteGuildIds(arg0) {
   let linkedGameOrgInvitesEnabled;
-  let obj = linkedGameOrgInvitesEnabled(11289);
+  let obj = linkedGameOrgInvitesEnabled(11321);
   linkedGameOrgInvitesEnabled = obj.useLinkedGameOrgInvitesEnabled(arg0);
   const items = [GuildStore, GuildMemberStore, GuildRoleStore, PermissionStore];
   const items1 = [linkedGameOrgInvitesEnabled];

@@ -1,15 +1,15 @@
-// Module ID: 11392
-// Function ID: 11393
+// Module ID: 11424
+// Function ID: 11425
 // Name: IgnoreThermalStateAlert
-// Dependencies: [109, 19, 21, 4971, 558, 576, 1128, 11393, 5234, 5978, 2]
+// Dependencies: [109, 19, 21, 5003, 558, 576, 1128, 11425, 5266, 6010, 2]
 
-// Module 11392 (IgnoreThermalStateAlert)
-import AlertDefault from "Alert" /* 5978 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11393 */;
+// Module 11424 (IgnoreThermalStateAlert)
+import AlertDefault from "Alert" /* 6010 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11425 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoreTher
   }
   if (cResult[8] !== tmp9.header) {
     const obj2 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_5(tmp(5234).Text, obj2);
+    const tmp19 = closure_5(tmp(5266).Text, obj2);
     cResult[8] = tmp9.header;
     cResult[9] = tmp19;
     tmp17 = tmp19;
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoreTher
   }
   if (cResult[11] !== tmp9.text) {
     const obj3 = { style: text, variant: "text-md/medium", children: tmp20 };
-    const tmp24 = closure_5(tmp(5234).Text, obj3);
+    const tmp24 = closure_5(tmp(5266).Text, obj3);
     cResult[11] = tmp9.text;
     cResult[12] = tmp24;
     tmp22 = tmp24;
@@ -162,11 +162,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoreTher
   intl = onConfirm(1128).intl;
   intl2 = onConfirm(1128).intl;
   const obj2 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1128).t.v5X4fZ) };
-  const Text = onConfirm(5234).Text;
+  const Text = onConfirm(5266).Text;
   intl3 = onConfirm(1128).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = { style: tmp2.text, variant: "text-md/medium", children: intl4.string(onConfirm(1128).t.VOgTjy) };
-  const Text2 = onConfirm(5234).Text;
+  const Text2 = onConfirm(5266).Text;
   intl4 = onConfirm(1128).intl;
   items[1] = closure_5(Text2, obj3);
   return closure_6(tmp3, obj);

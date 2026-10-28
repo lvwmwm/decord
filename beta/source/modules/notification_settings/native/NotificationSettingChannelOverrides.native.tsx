@@ -1,25 +1,25 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19386
+// Function ID: 19387
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 4827, 7207, 4913, 1392, 1087, 21, 4971, 587, 558, 576, 504, 5593, 7208, 5604, 6827, 1128, 4980, 7144, 6903, 6911, 8502, 10624, 7145, 1202, 8723, 7150, 2]
+// Dependencies: [32, 19, 17, 4859, 7239, 4945, 1392, 1087, 21, 5003, 587, 558, 576, 504, 5625, 7240, 5636, 6859, 1128, 5012, 7176, 6935, 6943, 8534, 10656, 7177, 1202, 8755, 7182, 2]
 
-// Module 19349 (NotificationSettingChannelOverrides)
+// Module 19386 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
-import useChannelName from "useChannelName" /* 5604 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6827 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7208 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
+import useChannelName from "useChannelName" /* 5636 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6859 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7207 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7239 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11911
+// Function ID: 11912
 // Name: conjurePublishAction
-// Dependencies: [10805, 1128, 3830, 11871, 11880, 2]
+// Dependencies: [10837, 1128, 3862, 11903, 11912, 2]
 // Exports: conjurePublishTooltip, resolveConjurePublishAction
 
-// Module 11879 (conjurePublishAction)
+// Module 11911 (conjurePublishAction)
 import intl5 from "intl" /* 1128 */;
-import _modDef3830 from "module_3830" /* 3830 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10805 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11871 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11880 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10837 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11903 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11912 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -72,7 +72,7 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
     if (false === tmp12) {
       const intl = intl5.intl;
       const format = intl.format;
-      const N4NkyR = _modDef3830.N4NkyR;
+      const N4NkyR = _modDef3862.N4NkyR;
       if (str4 == null) {
         str4 = "";
       }
@@ -115,7 +115,7 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
         if (false === tmp25) {
           const intl2 = tmp17(1128).intl;
           const format2 = intl2.format;
-          const eHYXFg = _modDef3830.eHYXFg;
+          const eHYXFg = _modDef3862.eHYXFg;
           if (str6 == null) {
             str6 = "";
           }
@@ -141,14 +141,14 @@ export const resolveConjurePublishAction = function resolveConjurePublishAction(
       prop2 = integrationStatus.bot_permissions_changed;
     }
     if (true === prop2) {
-      const obj9 = { label: intl4.string(_modDef3830["tUeY/h"]), action: "review_permissions" };
+      const obj9 = { label: intl4.string(_modDef3862["tUeY/h"]), action: "review_permissions" };
       const merged2 = Object.assign(obj7);
       intl4 = tmp17(1128).intl;
       obj10 = obj9;
     }
     return obj10;
   }
-  obj10 = { label: intl3.string(_modDef3830["120EFN"]), action: "publish" };
+  obj10 = { label: intl3.string(_modDef3862["120EFN"]), action: "publish" };
   const merged3 = Object.assign(obj7);
   intl3 = tmp17(1128).intl;
 };
@@ -179,7 +179,7 @@ export const conjurePublishTooltip = function conjurePublishTooltip(status) {
           const intl = tmp6(1128).intl;
           const formatToPlainString = intl.formatToPlainString;
           const obj3 = { time: tmp6Result.formatHistoryDateTime(parseTimestampMsResult), version: publishedRevision };
-          const D9erxW = _modDef3830.D9erxW;
+          const D9erxW = _modDef3862.D9erxW;
           tmp6Result = ConjureHistoryFormat;
           formatToPlainStringResult = formatToPlainString(D9erxW, obj3);
         }

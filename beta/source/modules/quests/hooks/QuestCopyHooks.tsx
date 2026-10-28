@@ -1,10 +1,10 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14171
+// Function ID: 14172
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2068, 1392, 6710, 1087, 1394, 1128, 558, 576, 9570, 7796, 7798, 9589, 2067, 14140, 1991, 504, 14141, 9245, 9246, 6713, 9594, 1903, 11456, 14128, 9607, 7801, 7800, 2]
+// Dependencies: [5, 32, 19, 2068, 1392, 6742, 1087, 1394, 1128, 558, 576, 9602, 7828, 7830, 9621, 2067, 14172, 1991, 504, 14173, 9277, 9278, 6745, 9626, 1903, 11488, 14160, 9639, 7833, 7832, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 14139 (QuestCopyHooks)
+// Module 14171 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,22 +12,22 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import NumberUtils from "NumberUtils" /* 1903 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import QuestTypes from "QuestTypes" /* 6713 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7798 */;
-import QuestType from "QuestType" /* 7800 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9570 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9589 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9594 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11456 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14128 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14141 */;
+import QuestTypes from "QuestTypes" /* 6745 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7830 */;
+import QuestType from "QuestType" /* 7832 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9278 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9602 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9621 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9626 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11488 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14160 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14173 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2068 */;
 import UserStore from "UserStore" /* 1392 */;
-import QuestConstants from "QuestConstants" /* 6710 */;
+import QuestConstants from "QuestConstants" /* 6742 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const intl13 = tmp(1128);
-const utils_QuestUtils = tmp(7796);
-const GameProfileAnalyticUtils = tmp2(9245);
-const SponsoredQuestUtils = tmp(14140);
+const utils_QuestUtils = tmp(7828);
+const GameProfileAnalyticUtils = tmp2(9277);
+const SponsoredQuestUtils = tmp(14172);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -904,7 +904,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestsIns
     tmp11 = cResult[3];
   }
   if (gameProfileSource == null) {
-    gameProfileSource = tmp(9245).GameProfileSources.QuestHome;
+    gameProfileSource = tmp(9277).GameProfileSources.QuestHome;
   }
   if (cResult[4] === tmp11) {
     let tmp16;
@@ -2207,7 +2207,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
     }
     return subtitle;
   }, items);
-  obj2 = quest(9594);
+  obj2 = quest(9626);
   return obj;
 });
 let result = size.fileFinishedImporting("modules/quests/hooks/QuestCopyHooks.tsx");
@@ -2241,7 +2241,7 @@ export const getRewardCodeRedemptionInstructions = function getRewardCodeRedempt
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(6713).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(6745).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {

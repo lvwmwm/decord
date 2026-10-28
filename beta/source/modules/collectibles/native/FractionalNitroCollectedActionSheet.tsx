@@ -1,31 +1,31 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14511
+// Function ID: 14512
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1087, 1394, 21, 4971, 587, 9438, 558, 576, 5669, 14480, 5205, 7691, 4978, 10480, 10481, 5234, 1128, 2067, 5660, 7543, 13964, 6908, 5244, 5210, 5582, 5265, 2]
+// Dependencies: [19, 17, 1087, 1394, 21, 5003, 587, 9470, 558, 576, 5701, 14512, 5237, 7723, 5010, 10512, 10513, 5266, 1128, 2067, 5692, 7575, 13996, 6940, 5276, 5242, 5614, 5297, 2]
 
-// Module 14479 (FractionalNitroCollectedActionSheet)
+// Module 14511 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl7 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
-import shared from "shared" /* 4978 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5265 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5582 */;
-import LinkingDefault from "Linking" /* 5660 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import Pressables from "Pressables" /* 6908 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7691 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9438 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14480 */;
+import shared from "shared" /* 5010 */;
+import useThemeDefault from "useTheme" /* 5237 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5297 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5614 */;
+import LinkingDefault from "Linking" /* 5692 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import Pressables from "Pressables" /* 6940 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7723 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9470 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14512 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroA
   }
   if (cResult[1] !== skuId) {
     size = { skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET };
-    const FractionalNitroCoinIllustration = tmp(9438).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp(9470).FractionalNitroCoinIllustration;
     const tmp12 = React4(FractionalNitroCoinIllustration, size);
     cResult[1] = skuId;
     cResult[2] = tmp12;
@@ -163,9 +163,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
     let tmp13;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(10480);
+      tmp5Result = tmp5(10512);
     } else {
-      tmp5Result = tmp5(10481);
+      tmp5Result = tmp5(10513);
     }
     if (cResult[0] !== tmp5Result) {
       const obj3 = { source: tmp5Result };
@@ -181,7 +181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(intl7.t.g5W1g8) };
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl = tmp(1128).intl;
       const tmp11 = React4(Text, obj4);
       cResult[2] = tmp11;
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
             }
             if (cResult[16] !== tmp4.questionIcon) {
               const obj5 = { style: tmp4.questionIcon, color: nativeDefault.colors.WHITE };
-              const CircleQuestionIcon = tmp(13964).CircleQuestionIcon;
+              const CircleQuestionIcon = tmp(13996).CircleQuestionIcon;
               const tmp33 = React4(CircleQuestionIcon, obj5);
               cResult[16] = tmp4.questionIcon;
               cResult[17] = tmp33;
@@ -301,7 +301,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
                   items1 = [tmp9, tmp16, ];
                   const obj10 = { size: "lg", text: null, onPress: null };
                   const obj9 = { style: tmp4.buttonContainer, children: items2 };
-                  const Button = tmp(5244).Button;
+                  const Button = tmp(5276).Button;
                   const intl5 = tmp(1128).intl;
                   const string = intl5.string;
                   const t = tmp(1128).t;
@@ -324,7 +324,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
                                       return obj.hideActionSheet();
                                     }
                   };
-                  const Button2 = tmp(5244).Button;
+                  const Button2 = tmp(5276).Button;
                   intl6 = tmp(1128).intl;
                   items2[1] = React4(Button2, obj11);
                   items1[2] = authStore(hasOwnProperty, obj9);
@@ -358,7 +358,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
           }
           if (consumed) {
             const obj14 = { premiumType: metroImportAll.TIER_2 };
-            tmp27Result = tmp27(tmp5(7543), obj14);
+            tmp27Result = tmp27(tmp5(7575), obj14);
           } else {
             const obj15 = { skuId };
             tmp27Result = tmp27(closure_13, obj15);
@@ -382,7 +382,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const formatToPlainStringResult = intl2.formatToPlainString(intl7.t.Cz1G97, { days: num4 });
   if (consumed) {
     const obj16 = { variant: "text-md/normal", color: "text-default", style: tmp4.description, children: intl4.format(intl7.t["93PGOI"], obj17) };
-    const Text2 = tmp(5234).Text;
+    const Text2 = tmp(5266).Text;
     intl4 = tmp(1128).intl;
     obj17 = { duration: formatToPlainStringResult, expirationDate: expiresAt };
     tmp20 = React4(Text2, obj16);
@@ -434,10 +434,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const tmp = closure_12();
   dependencyMap = tmp;
   const tmp2 = consumed;
-  const tmp4 = consumed(5205)();
+  const tmp4 = consumed(5237)();
   react = tmp4;
   let tmp5 = skuId;
-  let obj = skuId(7691);
+  let obj = skuId(7723);
   const fetchFractionalPremiumInfo = obj.useFetchFractionalPremiumInfo();
   const isFractionalPremiumActive = fetchFractionalPremiumInfo.isFractionalPremiumActive;
   const expiresAt = fetchFractionalPremiumInfo.expiresAt;
@@ -452,9 +452,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
       const tmp11 = FastImageDefault;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_3)) {
-        tmp9Result = tmp9(10480);
+        tmp9Result = tmp9(10512);
       } else {
-        tmp9Result = tmp9(10481);
+        tmp9Result = tmp9(10513);
       }
       const obj3 = { source: tmp9Result };
       tmpResult = tmp(tmp11, obj3);
@@ -505,11 +505,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
     const obj2 = consumed(description[20]);
     obj2.openURL(articleURL);
   }, []);
-  BottomSheet = skuId(5265).BottomSheet;
+  BottomSheet = skuId(5297).BottomSheet;
   let tmp11 = closure_11;
   if (consumed) {
     let obj2 = { premiumType: TIER_2.TIER_2 };
-    tmp12Result = tmp12(tmp2(7543), obj2);
+    tmp12Result = tmp12(tmp2(7575), obj2);
     tmp15 = tmp12;
   } else {
     let obj3 = { skuId };
@@ -519,9 +519,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const obj4 = { children: items2 };
   items2 = [tmp12Result, ];
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
-  const PressableOpacity = tmp5(6908).PressableOpacity;
+  const PressableOpacity = tmp5(6940).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(587).colors.WHITE };
-  CircleQuestionIcon = tmp5(13964).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(13996).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };
@@ -533,7 +533,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
     items4 = [memo, memo1, ];
     const obj10 = { size: "lg", text: null, onPress: null };
     const obj9 = { style: tmp.buttonContainer, children: items5 };
-    const Button = tmp5(5244).Button;
+    const Button = tmp5(5276).Button;
     let intl = tmp5(1128).intl;
     const string = intl.string;
     const t = tmp5(1128).t;
@@ -556,7 +556,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
           return obj.hideActionSheet();
         }
     };
-    const Button2 = tmp5(5244).Button;
+    const Button2 = tmp5(5276).Button;
     intl2 = tmp5(1128).intl;
     items5[1] = tmp15(Button2, obj11);
     items4[2] = closure_10(expiresAt, obj9);
@@ -564,7 +564,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   }
   const obj12 = { handleDisabled: true, children: items3 };
   items3[1] = tmp15(expiresAt, obj7);
-  items3[2] = tmp15(tmp5(5582).ActionSheetHeaderBar, { variant: "floating" });
+  items3[2] = tmp15(tmp5(5614).ActionSheetHeaderBar, { variant: "floating" });
   return closure_10(BottomSheet, obj12);
 });
 size = size_mod;

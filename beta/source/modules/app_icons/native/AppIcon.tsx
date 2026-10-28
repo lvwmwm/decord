@@ -1,25 +1,25 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 16418
+// Function ID: 16419
 // Name: AppIcon
-// Dependencies: [19, 17, 9865, 21, 4971, 587, 558, 576, 5205, 4978, 5669, 2]
+// Dependencies: [19, 17, 9897, 21, 5003, 587, 558, 576, 5237, 5010, 5701, 2]
 
-// Module 16384 (AppIcon)
+// Module 16418 (AppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useThemeDefault from "useTheme" /* 5205 */;
-import AppIconConstants from "AppIconConstants" /* 9865 */;
+import useThemeDefault from "useTheme" /* 5237 */;
+import AppIconConstants from "AppIconConstants" /* 9897 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
 let tmp5;
-const shared = tmp(4978);
-const FastImageDefault = tmp5(5669);
+const shared = tmp(5010);
+const FastImageDefault = tmp5(5701);
 const View = react_native.View;
 const getIconById = AppIconConstants.getIconById;
 const jsx = Fragment.jsx;

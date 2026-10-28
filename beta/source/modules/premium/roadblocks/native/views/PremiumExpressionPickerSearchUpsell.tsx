@@ -1,17 +1,17 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9949
+// Function ID: 9950
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 587, 4971, 558, 576, 5234, 6908, 2]
+// Dependencies: [19, 17, 21, 587, 5003, 558, 576, 5266, 6940, 2]
 
-// Module 9917 (PremiumExpressionPickerSearchUpsell)
+// Module 9949 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Pressables from "Pressables" /* 6908 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Pressables from "Pressables" /* 6940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

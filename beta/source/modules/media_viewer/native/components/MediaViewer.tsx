@@ -1,14 +1,14 @@
-// Module ID: 14239
-// Function ID: 14240
+// Module ID: 14271
+// Function ID: 14272
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 5052, 14240, 14241, 8759, 7167, 5297, 7253, 7278, 8784, 14245, 14246, 5972, 5206, 8754, 8820, 10889, 5053, 14247, 11369, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 5084, 14272, 14273, 8791, 7199, 5329, 7285, 7310, 8816, 14277, 14278, 6004, 5238, 8786, 8852, 10921, 5085, 14279, 11401, 2]
 
-// Module 14239 (MediaViewer)
+// Module 14271 (MediaViewer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import useVideoControls from "useVideoControls" /* 8754 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14241 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import useVideoControls from "useVideoControls" /* 8786 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14273 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(8784);
+const MediaViewerDimensionsContext = tmp(8816);
 function MediaViewer(arg0) {
   let closure_2;
   let height;
@@ -62,8 +62,8 @@ function MediaViewer(arg0) {
   let tmp = height;
   ({ renderOverlay, swipeVelocityThreshold } = arg0);
   const useViewerProps = syncer.useViewerProps;
-  let tmp3 = height(7253);
-  let items = [height(7278).MEDIA_VIEWER];
+  let tmp3 = height(7285);
+  let items = [height(7310).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   [tmp5, tmp6] = tmp4;
@@ -71,7 +71,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14245)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14277)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -92,7 +92,7 @@ function MediaViewer(arg0) {
   const isInteracting = mediaViewerPanGestureConfig.isInteracting;
   const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
   const items1 = [dismiss, isClosing];
-  const tmp17 = height(5972);
+  const tmp17 = height(6004);
   tmp17(sharedValue1.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
@@ -239,29 +239,29 @@ function MediaViewer(arg0) {
   const obj17 = { style: closure_6.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: items6 };
   items6 = [, , , , ];
   const obj18 = { barStyle: "light-content", hidden: !tmp5 };
-  items6[0] = dismiss(height(10889), obj18);
-  items6[1] = dismiss(height(5052).View, { style: animatedStyle });
+  items6[0] = dismiss(height(10921), obj18);
+  items6[1] = dismiss(height(5084).View, { style: animatedStyle });
   const obj19 = { ref: animatedRef, style: animatedStyle2, children: tmp30Result };
   const tmp32 = translatePos;
   const tmp33 = animatedRef;
-  const tmp34 = height(5053);
+  const tmp34 = height(5085);
   const tmp7 = _require;
   if (isMediaViewerImprovementsEnabled) {
     const obj20 = { entranceAnimationDriver: sharedValue, onLongPress, onScrollWorklets, originLayout, pagerIndex, panGestureConfig: mediaViewerPanGestureConfig, renderMedia, sources, useItemVisible, windowWidth: width, windowHeight: height, zoomed };
-    tmp30Result = tmp30(tmp(14247), obj20);
+    tmp30Result = tmp30(tmp(14279), obj20);
   }
   items6[2] = dismiss(tmp34, obj19);
   const obj21 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
   items7 = [first, animatedStyle1];
   str = "none";
-  const tmpResult = tmp(5053);
+  const tmpResult = tmp(5085);
   if (tmp5) {
     str = "box-none";
   }
   items6[3] = dismiss(tmpResult, obj21);
-  items6[4] = dismiss(tmp(11369), {});
+  items6[4] = dismiss(tmp(11401), {});
   const children = tmp32(tmp33, obj17);
-  return dismiss(tmp7(7253).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return dismiss(tmp7(7285).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

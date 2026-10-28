@@ -1,23 +1,23 @@
-// Module ID: 18588
-// Function ID: 18589
+// Module ID: 18625
+// Function ID: 18626
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7406, 9245, 9246, 1128, 14180, 6903, 18589, 9164, 2]
+// Dependencies: [19, 21, 558, 576, 7438, 9277, 9278, 1128, 14212, 6935, 18626, 9196, 2]
 
-// Module 18588 (VoicePanelGamesSection)
+// Module 18625 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import useGame from "useGame" /* 7406 */;
-import FormComponents from "FormComponents" /* 9164 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9245 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9246 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18589 */;
+import useGame from "useGame" /* 7438 */;
+import FormComponents from "FormComponents" /* 9196 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9277 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9278 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 18626 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(14180);
+const GameActivityIconDefault = tmp5(14212);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {
@@ -85,13 +85,13 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
       } else {
         tmp17 = cResult[9];
       }
-      const TableRow = tmp(6903).TableRow;
+      const TableRow = tmp(6935).TableRow;
       const intl2 = tmp(1128).intl;
       const obj6 = { gameName: name };
       tmp16 = <TableRow icon={tmp11} label={name} arrow onPress={tmp17} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
       tmp15 = forResult;
     } else {
-      tmp15 = jsx(tmp(6903).TableRow, { icon: tmp11, label: name, disabled: true });
+      tmp15 = jsx(tmp(6935).TableRow, { icon: tmp11, label: name, disabled: true });
     }
     cResult[2] = data;
     cResult[3] = tmp6;
@@ -122,7 +122,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
       name = intl.string(tmp(1128).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6903).TableRow;
+    const TableRow = tmp(6935).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };

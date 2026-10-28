@@ -1,43 +1,85 @@
 // Module ID: 5519
 // Function ID: 5520
-// Dependencies: [5499, 19, 5520, 5540]
-// Exports: useRecyclerViewManager
+// Dependencies: [19, 17, 21, 1658, 5313, 5306, 5302, 5329]
 
 // Module 5519
-import RecyclerViewManager from "RecyclerViewManager" /* 5520 */;
-import _slicedToArray from "_slicedToArray" /* 5499 */;
-import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5302 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5329 */;
+import react_mod from "react" /* 19 */;
+import cancelAnimation from "module_1658" /* 1658 */;
 
+let dependencyMap;
+
+let c2;
 let c3;
-let closure_4;
-let hasOwnProperty;
-({ useEffect: c3, useMemo: closure_4, useState: hasOwnProperty } = react);
-
-export const useRecyclerViewManager = (data) => {
-  let velocityTracker;
-  let recyclerViewManager = velocityTracker(closure_5(() => {
-    recyclerViewManager = new RecyclerViewManager.RecyclerViewManager(data);
-    return recyclerViewManager;
-  }), 1)[0];
-  velocityTracker = velocityTracker(closure_5(() => {
-    velocityTracker = new data(recyclerViewManager[3]).VelocityTracker();
-    return velocityTracker;
-  }), 1)[0];
-  const items = [data];
-  data = data.data;
-  closure_4(() => {
-    recyclerViewManager.updateProps(data);
-  }, items);
-  const items1 = [data];
-  closure_4(() => {
-    recyclerViewManager.processDataUpdate();
+let memo;
+let react = react_mod;
+({ useContext: c2, useMemo: c3, memo } = react);
+react = react_mod;
+const RefreshControl = react_native.RefreshControl;
+const jsx = Fragment.jsx;
+let closure_5 = cancelAnimation.createAnimatedComponent(RefreshControl);
+const __initData = { code: "function pnpm_BottomSheetRefreshControlAndroidTsx1(){const{animatedScrollableState,SCROLLABLE_STATE}=this.__closure;return{enabled:animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED};}" };
+const memoResult = memo(function BottomSheetRefreshControlComponent(arg0) {
+  let closure_1;
+  let obj4;
+  let onRefresh;
+  let scrollableGesture;
+  let tmp8Result;
+  ({ onRefresh, scrollableGesture } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ onRefresh: 0, scrollableGesture: 0 }));
+  let iter;
+  const tmp4 = iter(scrollableGesture(5313).BottomSheetDraggableContext);
+  dependencyMap = tmp4;
+  let obj = scrollableGesture(5306);
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  iter = bottomSheetInternal.animatedScrollableState;
+  if (!tmp4) {
+    if (bottomSheetInternal.enableContentPanningGesture) {
+      throw "'BottomSheetRefreshControl' cannot be used out of the BottomSheet!";
+    }
+  }
+  const fn = function f() {
+    const obj = { enabled: iter.value === GESTURE_SOURCE.SCROLLABLE_STATE.UNLOCKED };
+    return obj;
+  };
+  const tmp2Result = scrollableGesture(1658);
+  fn.__closure = { animatedScrollableState: iter, SCROLLABLE_STATE: scrollableGesture(5302).SCROLLABLE_STATE };
+  fn.__workletHash = 8403038560398;
+  fn.__initData = __initData;
+  let items = [iter.value];
+  ({ animatedScrollableState: iter, SCROLLABLE_STATE: scrollableGesture(5302).SCROLLABLE_STATE });
+  const animatedProps = tmp2Result.useAnimatedProps(fn, items);
+  const items1 = [tmp4, scrollableGesture];
+  const tmp7 = closure_3(() => {
+    let result;
+    if (closure_1) {
+      const Gesture = LegacyBaseButton.Gesture;
+      const NativeResult = Gesture.Native();
+      const simultaneousWithExternalGesture = NativeResult.simultaneousWithExternalGesture;
+      const items = [];
+      const arraySpreadResult = HermesBuiltin.arraySpread(items, closure_1.toGestureArray(), 0);
+      HermesBuiltin.arraySpread(items, scrollableGesture.toGestureArray(), arraySpreadResult);
+      const applyResult = HermesBuiltin.apply(simultaneousWithExternalGesture, items, NativeResult);
+      result = applyResult.shouldCancelWhenOutside(true);
+    }
+    return result;
   }, items1);
-  closure_3(() => {
-    recyclerViewManager.restoreIfNeeded();
-    return () => {
-      recyclerViewManager.dispose();
-      velocityTracker.cleanUp();
-    };
-  }, []);
-  return { recyclerViewManager, velocityTracker };
-};
+  if (tmp7) {
+    const obj3 = { gesture: tmp7, children: jsx(closure_5, obj4) };
+    obj4 = { onRefresh, animatedProps };
+    const GestureDetector = tmp2(5329).GestureDetector;
+    const merged1 = Object.assign(merged);
+    tmp8Result = tmp8(GestureDetector, obj3);
+  } else {
+    const obj5 = { onRefresh, animatedProps };
+    const merged2 = Object.assign(merged);
+    tmp8Result = tmp8(closure_5, obj5);
+  }
+  return tmp8Result;
+});
+memoResult.displayName = "BottomSheetRefreshControl";
+
+export default memoResult;

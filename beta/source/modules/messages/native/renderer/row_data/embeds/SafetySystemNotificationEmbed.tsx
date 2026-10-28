@@ -1,15 +1,15 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14605
+// Function ID: 14606
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1087, 2049, 7958, 8510, 7897, 8277, 1128, 2]
+// Dependencies: [17, 1087, 2049, 7990, 8542, 7929, 8309, 1128, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 14573 (SafetySystemNotificationEmbed)
+// Module 14605 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef2049 from "module_2049" /* 2049 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7897 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8277 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -67,7 +67,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7958 : 8510))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7990 : 8542))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result4 = renderer_EmbedUtils;
             const intl = tmp6(1128).intl;
             formatToPlainString = intl.formatToPlainString;

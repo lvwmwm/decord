@@ -1,35 +1,35 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17980
+// Function ID: 17981
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 4972, 4823, 4913, 1392, 8823, 1087, 21, 4971, 587, 5999, 1107, 558, 576, 504, 8790, 5052, 5206, 17944, 5669, 5234, 1128, 8765, 8154, 6908, 8841, 11623, 8572, 17901, 8757, 8836, 1388, 12, 7206, 8751, 5604, 2]
+// Dependencies: [32, 19, 17, 5004, 4855, 4945, 1392, 8855, 1087, 21, 5003, 587, 6031, 1107, 558, 576, 504, 8822, 5084, 5238, 17981, 5701, 5266, 1128, 8797, 8186, 6940, 8873, 11655, 8604, 17938, 8789, 8868, 1388, 12, 7238, 8783, 5636, 2]
 
-// Module 17943 (ICYMIMediaMosaic)
+// Module 17980 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7206 */;
-import openMediaModal2 from "openMediaModal" /* 8751 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8757 */;
-import common_VideoDefault from "common/Video" /* 8790 */;
-import ICYMITypes from "ICYMITypes" /* 8836 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8841 */;
-import ICYMIContext from "ICYMIContext" /* 17901 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 17944 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7238 */;
+import openMediaModal2 from "openMediaModal" /* 8783 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8789 */;
+import common_VideoDefault from "common/Video" /* 8822 */;
+import ICYMITypes from "ICYMITypes" /* 8868 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8873 */;
+import ICYMIContext from "ICYMIContext" /* 17938 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 17981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
-import ICYMIStore from "ICYMIStore" /* 8823 */;
+import ICYMIStore from "ICYMIStore" /* 8855 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let metroRequire;
 let tmp;
 let tmp4;
 const get_initialized = tmp(504);
-const useChannelName = tmp4(5604);
+const useChannelName = tmp4(5636);
 let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticsObjectTypes: closure_12, AnalyticsObjects: map1, AnalyticsPages: closure_14 } = Constants);
@@ -207,16 +207,16 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  const obj2 = imageFinishedLoading(5052);
-  fn.__closure = { withTiming: imageFinishedLoading(5206).withTiming, imageFinishedLoading };
+  const obj2 = imageFinishedLoading(5084);
+  fn.__closure = { withTiming: imageFinishedLoading(5238).withTiming, imageFinishedLoading };
   fn.__workletHash = 7803531897566;
   fn.__initData = __initData;
-  ({ withTiming: imageFinishedLoading(5206).withTiming, imageFinishedLoading });
+  ({ withTiming: imageFinishedLoading(5238).withTiming, imageFinishedLoading });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (null != source.placeholder) {
     let tmp9;
     if (cResult[0] !== source.placeholder) {
-      const tmpResult = tmp(17944);
+      const tmpResult = tmp(17981);
       const thumbhashImageFromPlaceholder = tmpResult.createThumbhashImageFromPlaceholder(source.placeholder);
       let num = 0;
       cResult[0] = source.placeholder;
@@ -353,7 +353,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   const isSpoiler = source.isSpoiler;
   const tmp = closure_18();
   [imageFinishedLoading, dependencyMap] = react.useState(false);
-  let obj = source(5052);
+  let obj = source(5084);
   const fn = function h() {
     let num = 1;
     const withTiming = timing.withTiming;
@@ -364,7 +364,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  let obj2 = { withTiming: source(5206).withTiming, imageFinishedLoading };
+  let obj2 = { withTiming: source(5238).withTiming, imageFinishedLoading };
   fn.__closure = obj2;
   fn.__workletHash = 8852576862173;
   fn.__initData = __initData2;
@@ -378,9 +378,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
       return obj;
     }
   }, items);
-  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5669), obj4) };
+  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5701), obj4) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
-  const View = imageFinishedLoading(5052).View;
+  const View = imageFinishedLoading(5084).View;
   obj4 = { source: memo, style: items2 };
   items2 = [style, tmp.media, dimensions];
   const items3 = [closure_15(View, obj3), ];
@@ -398,7 +398,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   const tmp6 = closure_17;
   const tmp7 = closure_16;
   const tmp8 = closure_15;
-  const tmp9 = imageFinishedLoading(5669);
+  const tmp9 = imageFinishedLoading(5701);
   if (isSpoiler) {
     num = 100;
   }

@@ -1,18 +1,18 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12152
+// Function ID: 12153
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 9650, 1504, 5983, 21, 4971, 558, 576, 11168, 12121, 9649, 1631, 12122, 7257, 5052, 12123, 2]
+// Dependencies: [19, 17, 9682, 1504, 6015, 21, 5003, 558, 576, 11200, 12153, 9681, 1631, 12154, 7289, 5084, 12155, 2]
 
-// Module 12120 (AppLauncherApplicationViewScreen)
+// Module 12152 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5983 */;
-import AppLauncherContext from "AppLauncherContext" /* 11168 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import AppLauncherContext from "AppLauncherContext" /* 11200 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9650 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9682 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11023
+// Function ID: 11024
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [6704, 1087, 6705, 1097, 558, 576, 573, 8299, 7215, 10992, 7210, 2]
+// Dependencies: [6736, 1087, 6737, 1097, 558, 576, 573, 8331, 7247, 11024, 7242, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 10991 (notficationSettingsChannelFlagUtils)
+// Module 11023 (notficationSettingsChannelFlagUtils)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import ReadStateConstants from "ReadStateConstants" /* 6705 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7210 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7215 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8299 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10992 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import ReadStateConstants from "ReadStateConstants" /* 6737 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7242 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7247 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8331 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11024 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

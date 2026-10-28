@@ -1,16 +1,16 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15257
+// Function ID: 15258
 // Name: GuildHeaderCountsStore
-// Dependencies: [7372, 4823, 5194, 1392, 5630, 504, 584, 2]
+// Dependencies: [7404, 4855, 5226, 1392, 5662, 504, 584, 2]
 
-// Module 15223 (GuildHeaderCountsStore)
+// Module 15257 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7372 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5194 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7404 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5226 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5630 */;
+import VoiceStateStore from "VoiceStateStore" /* 5662 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;

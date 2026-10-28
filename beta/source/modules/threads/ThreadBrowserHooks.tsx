@@ -1,25 +1,25 @@
-// Module ID: 13710
-// Function ID: 13711
+// Module ID: 13742
+// Function ID: 13743
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 13711, 4823, 4903, 6771, 6790, 8288, 4905, 1098, 558, 576, 8308, 12, 1388, 504, 11, 8287, 9727, 2]
+// Dependencies: [32, 19, 13743, 4855, 4935, 6803, 6822, 8320, 4937, 1098, 558, 576, 8340, 12, 1388, 504, 11, 8319, 9759, 2]
 
-// Module 13710 (ThreadBrowserHooks)
+// Module 13742 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8287 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9727 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 13711 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8319 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9759 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 13743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6790 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8288 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4905 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
+import ActiveThreadsStore_mod from "ActiveThreadsStore" /* 6822 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8320 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4937 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

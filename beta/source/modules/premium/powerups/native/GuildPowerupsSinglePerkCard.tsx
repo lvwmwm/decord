@@ -1,22 +1,22 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13526
+// Function ID: 13527
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 558, 576, 13442, 13424, 13420, 13441, 13490, 13495, 2]
+// Dependencies: [19, 21, 558, 576, 13474, 13456, 13452, 13473, 13522, 13527, 2]
 
-// Module 13494 (GuildPowerupsSinglePerkCard)
+// Module 13526 (GuildPowerupsSinglePerkCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13420 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13424 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13441 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13442 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13490 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 13452 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13456 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13473 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13474 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13522 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const GuildPowerupsPerkCardDefault = tmp3(13495);
+const GuildPowerupsPerkCardDefault = tmp3(13527);
 const jsx = Fragment.jsx;
 tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsSinglePerkCard(arg0) {
   let badge;

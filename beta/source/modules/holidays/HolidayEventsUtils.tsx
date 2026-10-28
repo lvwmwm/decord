@@ -1,11 +1,11 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18865
+// Function ID: 18866
 // Name: HolidayEventsUtils
-// Dependencies: [18824, 558, 576, 2]
+// Dependencies: [18861, 558, 576, 2]
 
-// Module 18828 (HolidayEventsUtils)
+// Module 18865 (HolidayEventsUtils)
 import react from "react" /* 576 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18824 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18861 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ let obj = {
     let appSpinnerSources = null;
     const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
-      appSpinnerSources = tmp2(18824).appSpinnerSources;
+      appSpinnerSources = tmp2(18861).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -115,7 +115,7 @@ let obj = {
     if (tmp5) {
       soundpack = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        soundpack = tmp(18824).soundpack;
+        soundpack = tmp(18861).soundpack;
       }
     }
     return soundpack;

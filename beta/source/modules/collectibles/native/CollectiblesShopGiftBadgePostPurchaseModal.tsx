@@ -1,21 +1,21 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 13927
+// Function ID: 13928
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 1633, 6672, 7649, 7278, 1128, 6931, 5234, 2632, 13896, 7900, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 1633, 6704, 7681, 7310, 1128, 6963, 5266, 2632, 13928, 7932, 2]
 
-// Module 13895 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 13927 (CollectiblesShopGiftBadgePostPurchaseModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef2632 from "module_2632" /* 2632 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13896 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13928 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,9 +25,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const intl3 = tmp(1128);
-const Text_Text = tmp(5234);
-const XSmallIcon = tmp(6931);
-const ModalScreen2 = tmp(7900);
+const Text_Text = tmp(5266);
+const XSmallIcon = tmp(6963);
+const ModalScreen2 = tmp(7932);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((paddingTop) => {

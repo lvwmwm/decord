@@ -1,12 +1,12 @@
-// Module ID: 17570
-// Function ID: 17571
+// Module ID: 17607
+// Function ID: 17608
 // Name: useFavoritesGuildCategories
-// Dependencies: [4826, 558, 576, 10845, 504, 2]
+// Dependencies: [4858, 558, 576, 10877, 504, 2]
 
-// Module 17570 (useFavoritesGuildCategories)
+// Module 17607 (useFavoritesGuildCategories)
 import react from "react" /* 576 */;
-import FavoritesHooks from "FavoritesHooks" /* 10845 */;
-import FavoriteStore from "FavoriteStore" /* 4826 */;
+import FavoritesHooks from "FavoritesHooks" /* 10877 */;
+import FavoriteStore from "FavoriteStore" /* 4858 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

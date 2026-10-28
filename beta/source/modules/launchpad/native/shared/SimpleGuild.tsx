@@ -1,22 +1,22 @@
-// Module ID: 18681
-// Function ID: 18682
+// Module ID: 18718
+// Function ID: 18719
 // Name: SimpleGuild
-// Dependencies: [19, 17, 4841, 6814, 4845, 1087, 21, 4971, 558, 576, 6883, 18682, 504, 18683, 18685, 1128, 17778, 8542, 587, 18684, 2]
+// Dependencies: [19, 17, 4873, 6846, 4877, 1087, 21, 5003, 558, 576, 6915, 18719, 504, 18720, 18722, 1128, 17815, 8574, 587, 18721, 2]
 
-// Module 18681 (SimpleGuild)
+// Module 18718 (SimpleGuild)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import GuildRecord from "GuildRecord" /* 4841 */;
-import GuildIconDefault from "GuildIcon" /* 6883 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 18682 */;
-import CutoutImageDefault from "CutoutImage" /* 18684 */;
-import useSimpleGuildSizeDefault from "useSimpleGuildSize" /* 18685 */;
+import GuildRecord from "GuildRecord" /* 4873 */;
+import GuildIconDefault from "GuildIcon" /* 6915 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 18719 */;
+import CutoutImageDefault from "CutoutImage" /* 18721 */;
+import useSimpleGuildSizeDefault from "useSimpleGuildSize" /* 18722 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6814 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import createStyles from "createStyles" /* 4971 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6846 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
   ({ onPress, onLongPress, onAccessibilityAction, onLayout, backgroundColor, animated, altDefaultBackground, selected, size, iconSize, borderRadius, unread, badge } = arg0);
   const tmp4 = undefined === animated || animated;
   if (undefined === iconSize) {
-    iconSize = tmp(6883).GuildIconSizes.LARGE;
+    iconSize = tmp(6915).GuildIconSizes.LARGE;
   }
   const tmp7 = closure_10();
   ({ iconStroke, iconBackground, iconBackgroundBrand } = useSimpleGuildDefaultColorsDefault());
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
   const tmpResult4 = guildId(504);
   const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp14, tmp16, tmp17);
   ({ unread: unread2, badge: badge2 } = stateFromStoresObject);
-  const tmpResult5 = guildId(18683);
+  const tmpResult5 = guildId(18720);
   const tmp20 = tmp4 ? tmpResult5.SimpleGuildContainerAnimated : tmpResult5.SimpleGuildContainer;
   if (cResult[7] === size) {
     let tmp21;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
         tmp23 = tmp24;
       }
     }
-    const tmpResult6 = guildId(17778);
+    const tmpResult6 = guildId(17815);
     const activityIndicatorState = tmpResult6.useActivityIndicatorState(guildId);
     if (cResult[18] === containerSize) {
       if (cResult[19] === stateFromStores) {
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuild(
               }
               if (guildId === ME) {
                 const obj6 = { style: tmp7.dmsWrapper, children: null };
-                const ChatIcon = tmp(8542).ChatIcon;
+                const ChatIcon = tmp(8574).ChatIcon;
                 const colors = tmp8(587).colors;
                 tmp48Result = tmp43(View, obj6);
               } else if ((unread2 || tmp6 || badge2 > 0 || null != activityIndicatorState.source) && "transparent" === backgroundColor) {

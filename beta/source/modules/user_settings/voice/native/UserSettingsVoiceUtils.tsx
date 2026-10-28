@@ -1,13 +1,13 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11661
+// Function ID: 11662
 // Name: UserSettingsVoiceUtils
-// Dependencies: [2014, 1087, 5851, 11630, 558, 576, 504, 2]
+// Dependencies: [2014, 1087, 5883, 11662, 558, 576, 504, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange
 
-// Module 11629 (UserSettingsVoiceUtils)
+// Module 11661 (UserSettingsVoiceUtils)
 import react from "react" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5851 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11630 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5883 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11662 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

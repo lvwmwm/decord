@@ -1,19 +1,19 @@
-// Module ID: 13493
-// Function ID: 13494
+// Module ID: 13525
+// Function ID: 13526
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 4971, 587, 558, 576, 13476, 1128, 2568, 13494, 13496, 13498, 2]
+// Dependencies: [17, 21, 5003, 587, 558, 576, 13508, 1128, 2568, 13526, 13528, 13530, 2]
 
-// Module 13493 (GuildPowerupsPerksSection)
+// Module 13525 (GuildPowerupsPerksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13476 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 13494 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 13496 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 13498 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 13508 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 13526 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 13528 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 13530 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11626
+// Function ID: 11627
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 5879, 6642, 4823, 4845, 4874, 1392, 5814, 1087, 5718, 21, 4971, 587, 1385, 5210, 11594, 2002, 1275, 558, 576, 504, 11595, 11599, 7253, 7278, 5052, 7829, 5851, 7053, 1128, 2342, 11600, 11602, 6886, 5234, 5668, 9934, 5265, 5269, 7221, 9672, 1107, 6984, 6987, 6985, 9931, 5030, 10178, 7295, 5244, 11593, 2]
+// Dependencies: [32, 19, 5911, 6674, 4855, 4877, 4906, 1392, 5846, 1087, 5750, 21, 5003, 587, 1385, 5242, 11626, 2002, 1275, 558, 576, 504, 11627, 11631, 7285, 7310, 5084, 7861, 5883, 7085, 1128, 2342, 11632, 11634, 6918, 5266, 5700, 9966, 5297, 5301, 7253, 9704, 1107, 7016, 7019, 7017, 9963, 5062, 10210, 7327, 5276, 11625, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 11594 (MobileGoLiveActionSheet)
+// Module 11626 (MobileGoLiveActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
@@ -12,28 +12,28 @@ import intl8 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef2342 from "module_2342" /* 2342 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import Constants2 from "Constants" /* 5718 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5814 */;
-import NativeViewDefault from "NativeView" /* 6886 */;
-import TableRadioRow2 from "TableRadioRow" /* 6984 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7053 */;
-import StreamActionCreators from "StreamActionCreators" /* 7829 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9672 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9934 */;
-import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11595 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11600 */;
-import ImageSparkleIcon from "ImageSparkleIcon" /* 11602 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import Constants2 from "Constants" /* 5750 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5846 */;
+import NativeViewDefault from "NativeView" /* 6918 */;
+import TableRadioRow2 from "TableRadioRow" /* 7016 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7085 */;
+import StreamActionCreators from "StreamActionCreators" /* 7861 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9966 */;
+import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11627 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11632 */;
+import ImageSparkleIcon from "ImageSparkleIcon" /* 11634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5879 */;
-import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6642 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildStore_mod from "GuildStore" /* 4845 */;
-import SelectedChannelStore_mod from "SelectedChannelStore" /* 4874 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5911 */;
+import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6674 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore_mod from "GuildStore" /* 4877 */;
+import SelectedChannelStore_mod from "SelectedChannelStore" /* 4906 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const AudioActionCreatorsDefault = tmp(5851);
+const AudioActionCreatorsDefault = tmp(5883);
 let react = react_mod;
 let ApplicationStreamingStore = ApplicationStreamingStore_mod;
 let GuildStore = GuildStore_mod;
@@ -257,10 +257,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       tmp21 = cResult[9];
     }
-    let obj6 = guildPremiumTier(11599);
+    let obj6 = guildPremiumTier(11631);
     const goLiveUpsellVariant = obj6.useConfig(tmp21).goLiveUpsellVariant;
-    const tmp23 = guildPremiumTier(7253);
-    analyticsLocations = tmp23(guildPremiumTier(7278).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
+    const tmp23 = guildPremiumTier(7285);
+    analyticsLocations = tmp23(guildPremiumTier(7310).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
     const tmp25 = closure_16();
     ApplicationStreamingStore = tmp25;
     if (cResult[10] === tmp14) {
@@ -307,7 +307,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       SelectedChannelStore = tmp35;
       UserStore = tmp34[1];
-      const tmpResult6 = tmp(5052);
+      const tmpResult6 = tmp(5084);
       const sharedValue = tmpResult6.useSharedValue(!tmp14(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY));
       if (cResult[13] === tmp20) {
         if (cResult[14] === guildPremiumTier) {
@@ -360,11 +360,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
                 const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2342.nMcXo1) };
                 tmp8Result = NativeViewDefault;
-                const Text = tmp(5234).Text;
+                const Text = tmp(5266).Text;
                 intl5 = tmp(1128).intl;
                 items = [syncedClientThemes(Text, obj10), ];
                 const obj11 = { source: AssetRegistryDefault, size: "xs" };
-                const BaseIconImage = tmp(5668).BaseIconImage;
+                const BaseIconImage = tmp(5700).BaseIconImage;
                 items[1] = syncedClientThemes(BaseIconImage, obj11);
                 if (null != maxSettingsForPreset2) {
                   const intl6 = tmp(1128).intl;
@@ -414,10 +414,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 return obj2;
               }
             }
-            const AnalyticsLocationProvider = tmp(7253).AnalyticsLocationProvider;
-            BottomSheet = tmp(5265).BottomSheet;
-            const BottomSheetScrollView = tmp(5269).BottomSheetScrollView;
-            const SafeAreaPaddingView = tmp(7221).SafeAreaPaddingView;
+            const AnalyticsLocationProvider = tmp(7285).AnalyticsLocationProvider;
+            BottomSheet = tmp(5297).BottomSheet;
+            const BottomSheetScrollView = tmp(5301).BottomSheetScrollView;
+            const SafeAreaPaddingView = tmp(7253).SafeAreaPaddingView;
             const _Symbol3 = Symbol;
             class R {
               constructor() {
@@ -479,8 +479,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
               cResult[21] = tmp25.header;
-              cResult[22] = closure_14(tmp(5234).Text, obj3);
-              closure_14(tmp(5234).Text, obj3);
+              cResult[22] = closure_14(tmp(5266).Text, obj3);
+              closure_14(tmp(5266).Text, obj3);
               class R {
                 constructor() {
                   user = currentUser.getCurrentUser();
@@ -690,7 +690,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         tmp74 = cResult[54];
                                       }
                                       if (cResult[55] !== isStreaming) {
-                                        const Button = tmp(5244).Button;
+                                        const Button = tmp(5276).Button;
                                         if (isStreaming) {
                                           let obj4 = {
                                             size: "lg",
@@ -1026,7 +1026,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         }
                                       }
                                       let obj7 = { style: tmp25.section, children: tmp78 };
-                                      const tmp82 = closure_14(guildPremiumTier(6886), obj7);
+                                      const tmp82 = closure_14(guildPremiumTier(6918), obj7);
                                       class R {
                                         constructor() {
                                           user = currentUser.getCurrentUser();
@@ -1067,7 +1067,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                     }
                                     tmp76[0] = section2;
                                     tmp76[1] = tmp70;
-                                    const tmp77 = closure_14(guildPremiumTier(6886), tmp76);
+                                    const tmp77 = closure_14(guildPremiumTier(6918), tmp76);
                                     cResult[52] = tmp25.section;
                                     class R {
                                       constructor() {
@@ -1108,7 +1108,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                     }
                                   }
                                   tmp72[0] = tmp64;
-                                  const TableRowGroup2 = tmp(6987).TableRowGroup;
+                                  const TableRowGroup2 = tmp(7019).TableRowGroup;
                                   let obj8 = { label: tmp66, value: tmp35, onValueChange: null };
                                   class R {
                                     constructor() {
@@ -1127,7 +1127,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                       return { user, guildPremiumTier };
                                     }
                                   }
-                                  tmp72[2] = closure_14(tmp(7295).TableSwitchRow, obj8);
+                                  tmp72[2] = closure_14(tmp(7327).TableSwitchRow, obj8);
                                   const tmp73 = closure_14(TableRowGroup2, tmp72);
                                   cResult[49] = tmp35;
                                   cResult[50] = tmp68;
@@ -1180,7 +1180,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               }
                             }
                             obj10 = { text: intl3.string(guildPremiumTier(2342).u72Prd), onPress: null };
-                            tmp22Result = guildPremiumTier(10178);
+                            tmp22Result = guildPremiumTier(10210);
                             intl3 = tmp(1128).intl;
                             class R {
                               constructor() {
@@ -1243,7 +1243,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         }
                         tmp55[0] = section;
                         tmp55[1] = tmp51;
-                        const tmp56 = closure_14(guildPremiumTier(6886), tmp55);
+                        const tmp56 = closure_14(guildPremiumTier(6918), tmp55);
                         cResult[36] = tmp25.section;
                         class R {
                           constructor() {
@@ -1284,8 +1284,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         return obj2;
                       }
                     }
-                    let obj11 = { title: tmp45, hasIcons: false, children: closure_14(tmp(6985).TableRadioGroup, obj12) };
-                    const TableRowGroup = tmp(6987).TableRowGroup;
+                    let obj11 = { title: tmp45, hasIcons: false, children: closure_14(tmp(7017).TableRadioGroup, obj12) };
+                    const TableRowGroup = tmp(7019).TableRowGroup;
                     obj12 = { value, onChange: null, hasIcons: true, children: tmp48 };
                     class R {
                       constructor() {
@@ -1649,11 +1649,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
           const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2342.nMcXo1) };
           tmp8Result = NativeViewDefault;
-          const Text = tmp2(5234).Text;
+          const Text = tmp2(5266).Text;
           intl5 = tmp2(1128).intl;
           items = [syncedClientThemes(Text, obj10), ];
           const obj11 = { source: AssetRegistryDefault, size: "xs" };
-          const BaseIconImage = tmp2(5668).BaseIconImage;
+          const BaseIconImage = tmp2(5700).BaseIconImage;
           items[1] = syncedClientThemes(BaseIconImage, obj11);
           if (null != maxSettingsForPreset2) {
             const intl6 = tmp2(1128).intl;
@@ -1760,6 +1760,6 @@ export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(
   const obj = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: obj2 };
   ActionSheetActionCreatorsDefault;
   obj2 = { location_stack };
-  const tmp2 = asyncRequire(11594, dependencyMap.paths);
+  const tmp2 = asyncRequire(11626, dependencyMap.paths);
   openLazy(tmp2, MobileGoLiveActionSheet_str, obj);
 };

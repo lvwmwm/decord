@@ -1,221 +1,226 @@
 // Module ID: 15661
 // Function ID: 15662
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: [41, 42, 15659]
 
 // Module 15661
-import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod15659 from "module_15659" /* 15659 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let size;
-
-let value;
-let weakMap;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-if (typeof WeakMap === "function") {
-  const _WeakMap = WeakMap;
-  let self = this;
-  const self2 = this;
-  weakMap = new WeakMap();
-  const _WeakMap2 = WeakMap;
-  const self3 = this;
-  const weakMap1 = new WeakMap();
-}
-if (!react) {
-  let tmp7 = null;
-  let merged = Object.assign({ default: null });
-  merged[0] = react;
-  value = merged;
-  if (null !== react) {
-    if (typeof react === "object") {
-      if (!weakMap) {
-        value = merged;
-        const keys = Object.keys();
-        if (keys !== undefined) {
-          value = merged;
-          while (keys[tmp] !== undefined) {
-            let callResult = "default" !== tmp12;
-            if (callResult) {
-              let hasOwnProperty = {}.hasOwnProperty;
-              callResult = hasOwnProperty.call(react, tmp12);
-            }
-            if (!callResult) {
-              continue;
-            } else {
-              let _Object = Object;
-              let ownPropertyDescriptor = defineProperty;
-              if (ownPropertyDescriptor) {
-                let _Object2 = Object;
-                ownPropertyDescriptor = Object.getOwnPropertyDescriptor(react, tmp12);
-              }
-              if (!ownPropertyDescriptor) {
-                merged[tmp12] = react[tmp12];
-                continue;
-              } else {
-                let definePropertyResult1 = defineProperty(merged, tmp12, ownPropertyDescriptor);
-                continue;
-              }
-              continue;
-            }
+class URLSearchParamsImpl {
+  constructor(arg0, arg1, doNotStripQMark) {
+    let flag = doNotStripQMark.doNotStripQMark;
+    if (flag === undefined) {
+      flag = false;
+    }
+    const self = this;
+    _classCallCheck(this, URLSearchParamsImpl);
+    const first = arg1[0];
+    this._list = [];
+    this._url = null;
+    if (!flag) {
+      flag = typeof first !== "string";
+    }
+    if (!flag) {
+      flag = "?" !== first[0];
+    }
+    let substr = first;
+    if (!flag) {
+      substr = first.slice(1);
+    }
+    if (Array.isArray(substr)) {
+      const iter = substr[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp12 = nextResult;
+        if (2 !== nextResult.length) {
+          let _TypeError = TypeError;
+          let self2 = this;
+          let str2 = "Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.";
+          let self3 = this;
+          let typeError = new TypeError("Failed to construct 'URLSearchParams': parameter 1 sequence's element does not contain exactly two elements.");
+          throw typeError;
+        } else {
+          let _list = self._list;
+          let items = [, ];
+          [arr6[0], arr6[1]] = tmp12;
+          let arr = _list.push(items);
+          continue;
+        }
+      }
+    } else {
+      if (typeof substr === "object") {
+        const _Object2 = Object;
+        if (null === Object.getPrototypeOf(substr)) {
+          const _Object = Object;
+          const keys = Object.keys(substr);
+          for (const item10033 of keys) {
+            let _list1 = self._list;
+            let items1 = [item10033, substr[item10033]];
+            let arr2 = _list1.push(items1);
             continue;
           }
         }
-      } else if (weakMap.has(react)) {
-        value = weakMap.get(react);
-      } else {
-        const result = weakMap.set(react, merged);
       }
-    } else {
-      value = merged;
+      const obj = _mod15659;
+      self._list = obj.parseUrlencoded(substr);
     }
   }
-} else {
-  value = react;
 }
-const metroRequire = { container: { position: "absolute", left: 0, top: 0, right: 0, bottom: 0, zIndex: 1000, opacity: 0.25 }, debugContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", backgroundColor: "transparent", zIndex: 2000 }, debugTextContainer: { backgroundColor: "lightgray", margin: 50, padding: 20 }, debugText: { color: "red", fontSize: 16, marginBottom: 10 } };
-class FullScreenOverlay {
-  constructor(emitter) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, FullScreenOverlay);
-    const items = [emitter];
-    let obj = _getPrototypeOf(FullScreenOverlay);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    const obj2 = { opacity: container.container.opacity, uri: null, justifyContent: "center", alignItems: "center" };
-    tmp3Result.state = obj2;
-    emitter = emitter.emitter;
-    emitter.on("overlay", (arg0) => {
-      const setState = closure_0.setState;
-      const obj = {};
-      const merged = Object.assign(closure_0.state);
-      const merged1 = Object.assign(arg0);
-      setState(obj);
-    });
-    return tmp3Result;
-  }
-}
-_inherits(FullScreenOverlay, value.Component);
 const entry = {
-  key: "createContainerStyle",
-  value: function createContainerStyle() {
-    let alignItems;
-    let height;
-    let justifyContent;
-    let opacity;
-    let width;
-    const Dimensions = react_native.Dimensions;
-    ({ opacity, justifyContent, alignItems } = this.state);
-    const value = Dimensions.get("window");
-    const obj = { opacity, width, height, justifyContent, alignItems };
-    ({ width, height } = value);
-    const merged = Object.assign(container.container);
-    return obj;
+  key: "_updateSteps",
+  value: function _updateSteps() {
+    const self = this;
+    if (null !== this._url) {
+      const obj = _mod15659;
+      let serializeUrlencodedResult = obj.serializeUrlencoded(self._list);
+      if ("" === serializeUrlencodedResult) {
+        serializeUrlencodedResult = null;
+      }
+      self._url._url.query = serializeUrlencodedResult;
+    }
   }
 };
 let items = [
   entry,
   {
-    key: "renderDebug",
-    value: function renderDebug() {
+    key: "append",
+    value: function append(arg0, arg1) {
+      const _list = this._list;
+      const items = [arg0, arg1];
+      _list.push(items);
+      this._updateSteps();
+    }
+  },
+  {
+    key: "delete",
+    value: function _delete(arg0) {
+      let sum;
+      const self = this;
+      let num = 0;
+      if (0 < this._list.length) {
+        do {
+          if (self._list[num][0] === arg0) {
+            let _list = self._list;
+            let spliceResult = _list.splice(num, 1);
+            sum = num;
+          } else {
+            sum = num + 1;
+          }
+          num = sum;
+        } while (sum < self._list.length);
+      }
+      self._updateSteps();
+    }
+  },
+  {
+    key: "get",
+    value: function get(arg0) {
+      const _list = this._list;
+      for (const item10008 of _list) {
+        if (item10008[0] === arg0) {
+          let tmp2 = item10008[1];
+          obj.return();
+          return tmp2;
+        }
+      }
       return null;
     }
   },
   {
-    key: "render",
-    value: function render() {
-      let growToWindow;
-      let height;
-      let jsx2;
-      let jsxResult;
-      let jsxs;
-      let marginLeft;
-      let num4;
-      let resizeMode;
-      let tmp6;
-      let tmp7;
-      let uri;
-      let width;
-      const self = this;
-      const state = this.state;
-      ({ uri, growToWindow, marginLeft } = state);
-      let num = 0;
-      ({ width, height, resizeMode } = state);
-      if (undefined !== marginLeft) {
-        num = marginLeft;
-      }
-      const marginRight = state.marginRight;
-      let num2 = 0;
-      if (undefined !== marginRight) {
-        num2 = marginRight;
-      }
-      const marginTop = state.marginTop;
-      let num3 = 0;
-      if (undefined !== marginTop) {
-        num3 = marginTop;
-      }
-      const marginBottom = state.marginBottom;
-      size = { width, height, marginTop: num3, marginRight: num2, marginBottom: num4, marginLeft: num };
-      num4 = 0;
-      if (undefined !== marginBottom) {
-        num4 = marginBottom;
-      }
-      if (growToWindow) {
-        const Dimensions = react_native.Dimensions;
-        const value = Dimensions.get("window");
-        ({ width: obj.width, height: obj.height } = value);
-      }
-      const jsx = Fragment.jsx;
-      if (uri) {
-        let tmp8 = null;
-        const Image = tmp4.Image;
-        const obj3 = { uri };
-        if (growToWindow) {
-          tmp8 = resizeMode;
+    key: "getAll",
+    value: function getAll(arg0) {
+      const items = [];
+      const _list = this._list;
+      for (const item10009 of _list) {
+        if (item10009[0] === arg0) {
+          let arr = items.push(tmp[1]);
         }
-        jsxResult = <Image source={obj3} style={size} resizeMode={tmp8} />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
-      } else {
-        jsxResult = <tmp4.View />;
-        tmp6 = tmp4;
-        tmp7 = tmp3;
+        continue;
       }
-      ({ jsxs, Fragment, jsx: jsx2 } = tmp7);
-      const items = [, ];
-      const obj5 = { style: self.createContainerStyle(), pointerEvents: "none", children: jsxResult };
-      items[0] = jsx2(tmp6.View, obj5);
-      items[1] = self.renderDebug();
-      return <>{items}</>;
+      return items;
     }
-  }
-];
+  },
+  {
+    key: "has",
+    value: function has(arg0) {
+      const _list = this._list;
+      for (const item10007 of _list) {
+        if (item10007[0] === arg0) {
+          obj.return();
+          let flag = true;
+          return true;
+        }
+      }
+      return false;
+    }
+  },
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      let sum;
+      const self = this;
+      let num = 0;
+      let flag = false;
+      let flag2 = false;
+      if (0 < this._list.length) {
+        do {
+          let flag3;
+          if (self._list[num][0] === arg0) {
+            let _list = self._list;
+            if (flag) {
+              let spliceResult = _list.splice(num, 1);
+              sum = num;
+              flag3 = flag;
+            } else {
+              _list[num][1] = arg1;
+              sum = num + 1;
+              flag3 = true;
+            }
+          } else {
+            sum = num + 1;
+            flag3 = flag;
+          }
+          num = sum;
+          flag = flag3;
+          flag2 = flag3;
+        } while (sum < self._list.length);
+      }
+      if (!flag2) {
+        const _list1 = self._list;
+        const items = [arg0, arg1];
+        _list1.push(items);
+      }
+      self._updateSteps();
+    }
+  },
+  {
+    key: "sort",
+    value: function sort() {
+      const _list = this._list;
+      const mapped = _list.map((item, index) => ({ item, index }));
+      const sorted = mapped.sort((index, index2) => index.item[0] > index2.item[0] || index.index - index2.index);
+      this._list = sorted.map((item) => item.item);
+      this._updateSteps();
+    }
+  },
+,
 
-export default _createClass(FullScreenOverlay, items);
+];
+const entry1 = {
+  key: Symbol.iterator,
+  value() {
+    const _list = this._list;
+    return _list[Symbol.iterator]();
+  }
+};
+items[8] = entry1;
+items[9] = {
+  key: "toString",
+  value: function toString() {
+    const obj = _mod15659;
+    return obj.serializeUrlencoded(this._list);
+  }
+};
+
+export const implementation = _createClass(URLSearchParamsImpl, items);

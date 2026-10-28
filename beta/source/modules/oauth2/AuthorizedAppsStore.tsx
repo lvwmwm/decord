@@ -1,23 +1,23 @@
-// Module ID: 7203
-// Function ID: 7204
+// Module ID: 7235
+// Function ID: 7236
 // Name: AuthorizedAppsStore
-// Dependencies: [32, 4823, 7204, 6010, 1388, 504, 584, 2]
+// Dependencies: [32, 4855, 7236, 6042, 1388, 504, 584, 2]
 
-// Module 7203 (AuthorizedAppsStore)
+// Module 7235 (AuthorizedAppsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7204 */;
-import MessageStore from "MessageStore" /* 6010 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7236 */;
+import MessageStore from "MessageStore" /* 6042 */;
 import size from "module_2" /* 2 */;
 
-const f97750 = (application) => null == application.application.parent_id;
+const f97873 = (application) => null == application.application.parent_id;
 function recomputeFromAppTokens() {
   const items = [...map.values()];
   closure_8 = items;
-  closure_9 = items.filter(f97750);
+  closure_9 = items.filter(f97873);
 }
 function updateFetchStates(FETCHED, applicationIds) {
   if (null == applicationIds) {
@@ -153,7 +153,7 @@ const obj2 = {
     const result = map.set(application.id, obj);
     const items = [...map.values()];
     closure_8 = items;
-    closure_9 = items.filter(f97750);
+    closure_9 = items.filter(f97873);
   },
   OAUTH2_TOKEN_DELETE: function handleOAuth2TokenDelete(id) {
     id = id.id;
@@ -164,7 +164,7 @@ const obj2 = {
         const items = [];
         HermesBuiltin.arraySpread(items, map.values(), 0);
         closure_8 = items;
-        closure_9 = items.filter(f97750);
+        closure_9 = items.filter(f97873);
       }
     }
     return false;

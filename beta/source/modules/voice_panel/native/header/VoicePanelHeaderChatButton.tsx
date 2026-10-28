@@ -1,21 +1,21 @@
-// Module ID: 18554
-// Function ID: 18555
+// Module ID: 18591
+// Function ID: 18592
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1087, 21, 4971, 587, 558, 576, 1123, 18555, 18476, 8542, 1128, 6886, 2]
+// Dependencies: [19, 1087, 21, 5003, 587, 558, 576, 1123, 18592, 18513, 8574, 1128, 6918, 2]
 
-// Module 18554 (VoicePanelHeaderChatButton)
+// Module 18591 (VoicePanelHeaderChatButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
-import NativeViewDefault from "NativeView" /* 6886 */;
-import ChatIcon2 from "ChatIcon" /* 8542 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18476 */;
-import useChatBadgeDefault from "useChatBadge" /* 18555 */;
+import NativeViewDefault from "NativeView" /* 6918 */;
+import ChatIcon2 from "ChatIcon" /* 8574 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18513 */;
+import useChatBadgeDefault from "useChatBadge" /* 18592 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHe
     const obj2 = { icon: hasOwnProperty(ChatIcon, obj3), accessibilityLabel: intl.string(intl2.t["5KxXrK"]), onPress: first };
     obj3 = { color: nativeDefault.colors.ICON_STRONG, size: "sm" };
     const tmp6Result = VoicePanelIconButtonDefault;
-    ChatIcon = tmp(8542).ChatIcon;
+    ChatIcon = tmp(8574).ChatIcon;
     intl = tmp(1128).intl;
     const tmp11 = hasOwnProperty(tmp6Result, obj2);
     cResult[1] = tmp11;

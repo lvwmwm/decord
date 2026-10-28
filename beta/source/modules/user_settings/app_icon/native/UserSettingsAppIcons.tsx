@@ -1,23 +1,23 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16918
+// Function ID: 16919
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 9865, 4996, 21, 4971, 504, 14767, 1991, 7253, 15856, 5663, 1128, 16380, 15857, 6713, 9866, 4999, 9792, 9793, 9672, 8951, 16885, 10178, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 9897, 5028, 21, 5003, 504, 14799, 1991, 7285, 15890, 5695, 1128, 16414, 15891, 6745, 9898, 5031, 9824, 9825, 9704, 8983, 16919, 10210, 2]
 
-// Module 16884 (UserSettingsAppIcons)
+// Module 16918 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4996 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7253 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9792 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9793 */;
-import AppIconRowsDefault from "AppIconRows" /* 16885 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5028 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7285 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9824 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9825 */;
+import AppIconRowsDefault from "AppIconRows" /* 16919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import AppIconConstants from "AppIconConstants" /* 9865 */;
+import AppIconConstants from "AppIconConstants" /* 9897 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c7, c8, closure_1, closure_2, dependencyMap, importDefault;
@@ -30,7 +30,7 @@ let map1;
 let metroImportAll;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(10178);
+const NitroUpsellButtonDefault = tmp6(10210);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
 ({ getIconById: c10, isHexagonCampaignAppIcon: unpackModuleId } = AppIconConstants);
@@ -322,7 +322,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(14767);
+  let obj2 = stateFromStores(14799);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(1991);
   const isPremiumResult = obj3.isPremium(stateFromStores);
@@ -336,7 +336,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   let tmp9 = closure_15;
   let obj5 = { children: closure_13(closure_6, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_13(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8951).Form;
+  const Form = stateFromStores(8983).Form;
   let tmp12 = closure_6;
   obj7 = {
     onSelect(arg0) {

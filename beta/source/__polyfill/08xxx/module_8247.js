@@ -1,45 +1,79 @@
 // Module ID: 8247
 // Function ID: 8248
-// Dependencies: [8248]
+// Dependencies: [41, 42]
 
 // Module 8247
-import _modDef8248 from "module_8248" /* 8248 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-
-export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
+class DataView {
+  constructor(buffer) {
+    const self = this;
+    _classCallCheck(this, DataView);
+    const tmp2 = typeof buffer !== "object" || undefined === buffer.length || undefined === buffer.readUInt8 || undefined === buffer.readUInt16LE || undefined === buffer.readUInt16BE || undefined === buffer.readUInt32LE || undefined === buffer.readUInt32BE || undefined === buffer.readInt32LE || undefined === buffer.readInt32BE;
+    if (tmp2) {
+      const _Error = Error;
+      const self2 = this;
+      const self3 = this;
+      const error = new Error("DataView: Passed buffer type is unsupported.");
+      throw error;
+    } else {
+      self.buffer = buffer;
+      self.byteLength = self.buffer.length;
     }
-    const obj = _modDef8248;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
-  },
-  TAG_HEADER_SIZE: 5
+  }
+}
+const entry = {
+  key: "getUint8",
+  value: function getUint8(sum) {
+    const buffer = this.buffer;
+    return buffer.readUInt8(sum);
+  }
 };
+const items = [
+  entry,
+  {
+    key: "getUint16",
+    value: function getUint16(c5, arg1) {
+      let uInt16LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt16LE = buffer.readUInt16LE(c5);
+      } else {
+        uInt16LE = buffer.readUInt16BE(c5);
+      }
+      return uInt16LE;
+    }
+  },
+  {
+    key: "getUint32",
+    value: function getUint32(sum, arg1) {
+      let uInt32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt32LE = buffer.readUInt32LE(sum);
+      } else {
+        uInt32LE = buffer.readUInt32BE(sum);
+      }
+      return uInt32LE;
+    }
+  },
+  {
+    key: "getInt32",
+    value: function getInt32(sum, arg1) {
+      let int32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        int32LE = buffer.readInt32LE(sum);
+      } else {
+        int32LE = buffer.readInt32BE(sum);
+      }
+      return int32LE;
+    }
+  }
+];
+
+export default _createClassDefault(DataView, items);

@@ -1,15 +1,15 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 7902
+// Function ID: 7903
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4903, 4874, 570, 1274, 558, 576, 504, 4831, 7871, 2]
+// Dependencies: [19, 4935, 4906, 570, 1274, 558, 576, 504, 4863, 7903, 2]
 // Exports: setIsOnStartStageScreen
 
-// Module 7870 (useIsOnStartStageScreenStore)
+// Module 7902 (useIsOnStartStageScreenStore)
 import react_native from "react-native" /* 1274 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4831 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4863 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f99732 = () => {
+const f99855 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10, tmp11);
-  const tmp13 = stateFromStores1 && !stateFromStores(7871)(id.id);
+  const tmp13 = stateFromStores1 && !stateFromStores(7903)(id.id);
   dependencyMap = tmp13;
   if (cResult[7] === tmp13) {
     class I {
@@ -98,12 +98,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f99732);
+        obj2.batchUpdates(f99855);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f99732);
+      obj.batchUpdates(f99855);
     }
   };
   items3 = [stateFromStores, tmp13];
@@ -121,7 +121,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
   const items1 = [PermissionStore];
   const items2 = [id];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
-  const tmp3 = stateFromStores1 && !stateFromStores(7871)(id.id);
+  const tmp3 = stateFromStores1 && !stateFromStores(7903)(id.id);
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];
   const effect = react.useEffect(() => {
@@ -130,12 +130,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f99732);
+        obj2.batchUpdates(f99855);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f99732);
+      obj.batchUpdates(f99855);
     }
   }, items3);
 });
@@ -143,7 +143,7 @@ function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f99732);
+  obj.batchUpdates(f99855);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
 

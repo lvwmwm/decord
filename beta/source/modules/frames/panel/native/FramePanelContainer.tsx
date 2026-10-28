@@ -1,16 +1,16 @@
-// Module ID: 18479
-// Function ID: 18480
+// Module ID: 18516
+// Function ID: 18517
 // Name: FramePanelContainer
-// Dependencies: [19, 6775, 6776, 21, 558, 576, 504, 11503, 18480, 18482, 2]
+// Dependencies: [19, 6807, 6808, 21, 558, 576, 504, 11535, 18517, 18519, 2]
 
-// Module 18479 (FramePanelContainer)
+// Module 18516 (FramePanelContainer)
 import react2 from "react" /* 576 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import WakeLockDefault from "WakeLock" /* 11503 */;
-import FramePanelControllerDefault from "FramePanelController" /* 18480 */;
-import FramePanelUIDefault from "FramePanelUI" /* 18482 */;
+import FramesConstants from "FramesConstants" /* 6808 */;
+import WakeLockDefault from "WakeLock" /* 11535 */;
+import FramePanelControllerDefault from "FramePanelController" /* 18517 */;
+import FramePanelUIDefault from "FramePanelUI" /* 18519 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6775 */;
+import FramesStore from "FramesStore" /* 6807 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

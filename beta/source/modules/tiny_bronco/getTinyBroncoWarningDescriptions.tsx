@@ -1,14 +1,14 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6696
+// Function ID: 6697
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [6665, 1128, 6666, 3122, 2]
+// Dependencies: [6697, 1128, 6698, 3122, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 6664 (getTinyBroncoWarningDescriptions)
+// Module 6696 (getTinyBroncoWarningDescriptions)
 import intl6 from "intl" /* 1128 */;
 import _modDef3122 from "module_3122" /* 3122 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6666 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6665 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6698 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6697 */;
 import size from "module_2" /* 2 */;
 
 let c3;

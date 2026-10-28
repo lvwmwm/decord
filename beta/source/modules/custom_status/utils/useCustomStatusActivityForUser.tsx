@@ -1,12 +1,12 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11107
+// Function ID: 11108
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 5712, 1087, 558, 576, 504, 11057, 2]
+// Dependencies: [502, 5744, 1087, 558, 576, 504, 11089, 2]
 
-// Module 11075 (useCustomStatusActivityForUser)
+// Module 11107 (useCustomStatusActivityForUser)
 import Constants from "Constants" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
+import PresenceStore from "PresenceStore" /* 5744 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

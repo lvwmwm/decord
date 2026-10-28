@@ -1,24 +1,24 @@
-// Module ID: 12493
-// Function ID: 12494
+// Module ID: 12525
+// Function ID: 12526
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 4972, 21, 4971, 587, 558, 576, 5052, 5206, 5247, 5248, 9949, 9947, 12494, 6908, 504, 11905, 5234, 5210, 12495, 2002, 12495, 1128, 3830, 2]
+// Dependencies: [32, 19, 17, 5004, 21, 5003, 587, 558, 576, 5084, 5238, 5279, 5280, 9981, 9979, 12526, 6940, 504, 11937, 5266, 5242, 12527, 2002, 12527, 1128, 3862, 2]
 // Exports: default
 
-// Module 12493 (ConjurePublishRating)
+// Module 12525 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import spring from "spring" /* 5247 */;
-import springPresets from "springPresets" /* 5248 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12495 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import spring from "spring" /* 5279 */;
+import springPresets from "springPresets" /* 5280 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12527 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
   const onPress = rating.onPress;
   const tmp4 = closure_9();
   dependencyMap = tmp5;
-  const tmpResult = tmp(5052);
+  const tmpResult = tmp(5084);
   const sharedValue = tmpResult.useSharedValue(1);
   if (cResult[0] === (null != picked && rating <= picked)) {
     if (cResult[1] === rating) {
@@ -69,7 +69,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
           tmp8 = cResult[5];
         }
         const effect = react.useEffect(tmp7, tmp8);
-        const tmpResult3 = tmp(5052);
+        const tmpResult3 = tmp(5084);
         class I {
           constructor() {
             let items;
@@ -85,13 +85,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
         I.__initData = __initData;
         const animatedStyle = tmpResult3.useAnimatedStyle(I);
         if (null != picked && rating <= picked) {
-          StarOutlineIcon = tmp(9949).StarIcon;
+          StarOutlineIcon = tmp(9981).StarIcon;
         } else {
-          StarOutlineIcon = tmp(9947).StarOutlineIcon;
+          StarOutlineIcon = tmp(9979).StarOutlineIcon;
         }
         const star = tmp4.star;
         if (cResult[6] !== rating) {
-          const tmpResult4 = tmp(12494);
+          const tmpResult4 = tmp(12526);
           let result = tmpResult4.conjurePublishRatingOptionLabel(rating);
           cResult[6] = rating;
           class I {
@@ -149,7 +149,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
                 return obj;
               }
             }
-            const PressableOpacity = tmp(6908).PressableOpacity;
+            const PressableOpacity = tmp(6940).PressableOpacity;
             const tmp26 = closure_7(PressableOpacity, obj3);
             cResult[14] = onPress;
             cResult[15] = tmp4.star;
@@ -169,7 +169,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
               return obj;
             }
           }
-          const tmp23 = closure_7(tmp17(5052).View, obj4);
+          const tmp23 = closure_7(tmp17(5084).View, obj4);
           cResult[11] = animatedStyle;
           cResult[12] = tmp18;
           cResult[13] = tmp23;
@@ -227,7 +227,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
     tmp2 = rating <= picked;
   }
   dependencyMap = tmp2;
-  let obj = rating(5052);
+  let obj = rating(5084);
   sharedValue = obj.useSharedValue(1);
   let items = [tmp2, rating, reducedMotion, sharedValue];
   const effect = react.useEffect(() => {
@@ -245,7 +245,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
       const result1 = set(withDelay(result, withSequence(withTimingResult, obj2.withSpring(1, springPresets.springUnclampedBounce))));
     }
   }, items);
-  let obj2 = rating(5052);
+  let obj2 = rating(5084);
   const fn = function f() {
     let items;
     const obj = { transform: items };
@@ -258,15 +258,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
   fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (tmp2) {
-    StarOutlineIcon = tmp3(9949).StarIcon;
+    StarOutlineIcon = tmp3(9981).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(9947).StarOutlineIcon;
+    StarOutlineIcon = tmp3(9979).StarOutlineIcon;
   }
   const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(587).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(6908).PressableOpacity;
-  tmp3Result = rating(12494);
+  const PressableOpacity = tmp3(6940).PressableOpacity;
+  tmp3Result = rating(12526);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
-  View = reducedMotion(5052).View;
+  View = reducedMotion(5084).View;
   const colors = reducedMotion(587).colors;
   obj5 = { size: "sm", color: tmp2 ? colors.ICON_BRAND : colors.ICON_MUTED };
   return closure_7(PressableOpacity, obj3);
@@ -351,7 +351,7 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(12495, dependencyMap.paths);
+            const tmp7 = asyncRequire(12527, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }

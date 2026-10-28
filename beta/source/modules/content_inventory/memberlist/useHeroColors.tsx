@@ -1,20 +1,20 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8647
+// Function ID: 8648
 // Name: useHeroColors
-// Dependencies: [32, 19, 4972, 1207, 8614, 7660, 8616, 1105, 683, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5004, 1207, 8646, 7692, 8648, 1105, 683, 558, 576, 504, 2]
 // Exports: getHeroColors
 
-// Module 8615 (useHeroColors)
+// Module 8647 (useHeroColors)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import _modDef7660 from "module_7660" /* 7660 */;
-import useAvatarColor from "useAvatarColor" /* 8614 */;
-import getFallbackHeroColor from "getFallbackHeroColor" /* 8616 */;
+import _modDef7692 from "module_7692" /* 7692 */;
+import useAvatarColor from "useAvatarColor" /* 8646 */;
+import getFallbackHeroColor from "getFallbackHeroColor" /* 8648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -160,9 +160,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHeroColor
   let obj2 = first(504);
   const items1 = [ThemeStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => theme.theme);
-  let obj3 = first(8616);
+  let obj3 = first(8648);
   const fallbackHeroColor = obj3.getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj4 = first(8614);
+  let obj4 = first(8646);
   [first, tmp6] = obj4.useAvatarColors(arg0, fallbackHeroColor);
   let closure_1 = tmp6;
   const items2 = [first, tmp6];
@@ -233,13 +233,13 @@ export const getHeroColors = function getHeroColors(iconURL) {
   const tmp = AccessibilityStore;
   const saturation = AccessibilityStore.saturation;
   const theme = ThemeStore.theme;
-  let obj = num(8616);
+  let obj = num(8648);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme, saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(8614).useColorStore;
+  const useColorStore = tmp2(8646).useColorStore;
   const arr = useColorStore.getState().palette[iconURL];
   let mapped;
   if (arr != null) {
@@ -251,11 +251,11 @@ export const getHeroColors = function getHeroColors(iconURL) {
       let tmp2;
       let tmp3;
       [tmp, tmp2, tmp3] = item;
-      const obj = _modDef7660({ r: tmp, g: tmp2, b: tmp3 });
+      const obj = _modDef7692({ r: tmp, g: tmp2, b: tmp3 });
       ({ h, s, l } = obj.toHsl());
       const obj2 = { h, s: s * num, l };
       obj.toHsl();
-      const obj3 = _modDef7660(obj2);
+      const obj3 = _modDef7692(obj2);
       return obj3.toHexString();
     });
   }

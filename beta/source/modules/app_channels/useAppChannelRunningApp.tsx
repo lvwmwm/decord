@@ -1,13 +1,13 @@
-// Module ID: 13863
-// Function ID: 13864
+// Module ID: 13895
+// Function ID: 13896
 // Name: useAppChannelRunningApp
-// Dependencies: [6775, 1087, 6776, 558, 576, 504, 13864, 1128, 2]
+// Dependencies: [6807, 1087, 6808, 558, 576, 504, 13896, 1128, 2]
 
-// Module 13863 (useAppChannelRunningApp)
+// Module 13895 (useAppChannelRunningApp)
 import Constants from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6776 */;
-import useFrameRunsInBackgroundDefault from "useFrameRunsInBackground" /* 13864 */;
-import FramesStore from "FramesStore" /* 6775 */;
+import FramesConstants from "FramesConstants" /* 6808 */;
+import useFrameRunsInBackgroundDefault from "useFrameRunsInBackground" /* 13896 */;
+import FramesStore from "FramesStore" /* 6807 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

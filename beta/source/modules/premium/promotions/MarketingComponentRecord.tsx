@@ -1,13 +1,13 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9554
+// Function ID: 9555
 // Name: MarketingComponentRecord
-// Dependencies: [1407, 1104, 1249, 9523, 1266, 2]
+// Dependencies: [1407, 1104, 1249, 9555, 1266, 2]
 
-// Module 9522 (MarketingComponentRecord)
+// Module 9554 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1104 */;
 import ProtoUtils from "ProtoUtils" /* 1249 */;
 import _modDef1266 from "module_1266" /* 1266 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9523 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9555 */;
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

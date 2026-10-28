@@ -1,14 +1,14 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14260
+// Function ID: 14261
 // Name: MediaModalWebEmbed
-// Dependencies: [109, 32, 19, 21, 14229, 14232, 558, 576, 8788, 1386, 2]
+// Dependencies: [109, 32, 19, 21, 14261, 14264, 558, 576, 8820, 1386, 2]
 
-// Module 14228 (MediaModalWebEmbed)
+// Module 14260 (MediaModalWebEmbed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8788 */;
-import escapeDefault from "escape" /* 14229 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8820 */;
+import escapeDefault from "escape" /* 14261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ const MediaModalWebViewBaseDefault = MediaModalWebViewBase;
 let importDefault;
 
 let tmp;
-const EmbedIFrameConfig = tmp(14232);
+const EmbedIFrameConfig = tmp(14264);
 let closure_3 = ["visible", "source", "provider"];
 const jsx = Fragment.jsx;
 let closure_8 = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
@@ -38,8 +38,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebEmbe
   const tmp = onLoad;
   ({ src, style, onError, onLoad } = arg0);
   ({ onLoadStart, onToggleOverlay } = arg0);
-  [tmp5, importDefault] = react.useState(onLoad(8788).PlayerState.UNREADY);
-  _slicedToArray(react.useState(onLoad(8788).PlayerState.UNREADY), 2);
+  [tmp5, importDefault] = react.useState(onLoad(8820).PlayerState.UNREADY);
+  _slicedToArray(react.useState(onLoad(8820).PlayerState.UNREADY), 2);
   if (cResult[0] !== onLoad) {
     const fn = function t() {
       importDefault(MediaModalWebViewBase.PlayerState.PLAYING);
@@ -75,7 +75,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebEmbe
     }
     const _HermesInternal = HermesInternal;
     const tmp9 = escapeDefault(src);
-    const combined = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"" + tmp9 + "\" allow=\"autoplay\" sandbox=\"" + tmp(14232).EMBED_IFRAME_SANDBOX + "\" scrolling=\"no\"></iframe>\n  </body>\n</html>\n";
+    const combined = "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"" + tmp9 + "\" allow=\"autoplay\" sandbox=\"" + tmp(14264).EMBED_IFRAME_SANDBOX + "\" scrolling=\"no\"></iframe>\n  </body>\n</html>\n";
     cResult[3] = src;
     cResult[4] = combined;
   } else {
@@ -130,7 +130,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebEmbe
   onLoad = onLoad.onLoad;
   importDefault = undefined;
   ({ src, style, onError, onLoadStart, onToggleOverlay } = onLoad);
-  [first, importDefault] = react.useState(onLoad(8788).PlayerState.UNREADY);
+  [first, importDefault] = react.useState(onLoad(8820).PlayerState.UNREADY);
   const items = [onLoad];
   const callback = react.useCallback(() => {
     closure_1(MediaModalWebViewBase.PlayerState.PLAYING);
@@ -141,7 +141,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebEmbe
   const callback1 = react.useCallback(() => {
 
   }, []);
-  const obj2 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"" + tmp6 + "\" allow=\"autoplay\" sandbox=\"" + onLoad(14232).EMBED_IFRAME_SANDBOX + "\" scrolling=\"no\"></iframe>\n  </body>\n</html>\n", baseUrl: baseURL };
+  const obj2 = { html: "\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"initial-scale=1\">\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        background-color: #000;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"" + tmp6 + "\" allow=\"autoplay\" sandbox=\"" + onLoad(14264).EMBED_IFRAME_SANDBOX + "\" scrolling=\"no\"></iframe>\n  </body>\n</html>\n", baseUrl: baseURL };
   MediaModalWebViewBaseDefault;
   tmp6 = escapeDefault(src);
   return <tmp5 style={style} source={obj2} baseURL={baseURL} playerState={first} onDataReceived={callback1} onToggleOverlay={onToggleOverlay} onError={onError} onLoad={callback} onLoadStart={onLoadStart} />;

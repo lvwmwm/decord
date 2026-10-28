@@ -1,21 +1,21 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9846
+// Function ID: 9847
 // Name: PremiumGroupWordmark
-// Dependencies: [109, 19, 21, 558, 576, 5252, 587, 7962, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5284, 587, 7994, 2]
 
-// Module 9814 (PremiumGroupWordmark)
+// Module 9846 (PremiumGroupWordmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 5252 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
+import useToken2 from "useToken" /* 5284 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp12;
-const inlineStylesDefault = tmp12(7962);
+const inlineStylesDefault = tmp12(7994);
 let closure_3 = ["width", "height", "alwaysWhite"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGroupWordmark(arg0) {

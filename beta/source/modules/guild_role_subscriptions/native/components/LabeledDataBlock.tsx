@@ -1,17 +1,17 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16611
+// Function ID: 16612
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 5234, 6908, 1202, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5266, 6940, 1202, 2]
 
-// Module 16577 (LabeledDataBlock)
+// Module 16611 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5266 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDataB
               let tmp18 = children;
               if (typeof children === "string") {
                 const obj2 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
-                tmp18 = _false(tmp(5234).Text, obj2);
+                tmp18 = _false(tmp(5266).Text, obj2);
               }
               cResult[13] = children;
               cResult[14] = tmp18;
@@ -102,7 +102,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDataB
       let tmp11 = null != icon;
       if (tmp11) {
         const obj5 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj6) };
-        const PressableOpacity = tmp(6908).PressableOpacity;
+        const PressableOpacity = tmp(6940).PressableOpacity;
         obj6 = { size: native.Icon.Sizes.SMALL, source: icon };
         Icon = tmp(1202).Icon;
         tmp11 = _false(PressableOpacity, obj5);
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDataB
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
-    const PressableOpacity = tmp5(6908).PressableOpacity;
+    const PressableOpacity = tmp5(6940).PressableOpacity;
     obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
     Icon = tmp5(1202).Icon;
     tmp4Result = tmp4(PressableOpacity, obj4);
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDataB
   let tmp4Result2 = children;
   if (typeof children === "string") {
     const obj6 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
-    tmp4Result2 = tmp4(tmp5(5234).Text, obj6);
+    tmp4Result2 = tmp4(tmp5(5266).Text, obj6);
   }
   items2[1] = tmp4Result2;
   return React3(View, obj);

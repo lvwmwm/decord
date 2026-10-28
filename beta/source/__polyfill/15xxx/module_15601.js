@@ -1,17 +1,20 @@
 // Module ID: 15601
 // Function ID: 15602
-// Dependencies: [15548, 15599, 15582]
+// Dependencies: [15586]
 
 // Module 15601
-import _mod15548 from "module_15548" /* 15548 */;
-import _mod15582 from "module_15582" /* 15582 */;
-import defineProperty2 from "defineProperty2" /* 15599 */;
+import _mod15586 from "module_15586" /* 15586 */;
 
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod15586((1).toString);
 
-export default _mod15548 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod15582(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
+  }
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

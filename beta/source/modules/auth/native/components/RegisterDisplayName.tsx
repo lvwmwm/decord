@@ -1,20 +1,20 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17420
+// Function ID: 17421
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 15999, 17362, 17363, 21, 4971, 587, 1128, 558, 576, 7037, 1505, 17359, 17361, 1107, 17379, 17378, 15293, 16000, 7485, 7050, 7008, 5244, 7065, 7135, 2]
+// Dependencies: [5, 32, 19, 17, 16033, 17399, 17400, 21, 5003, 587, 1128, 558, 576, 7069, 1505, 17396, 17398, 1107, 17416, 17415, 15327, 16034, 7517, 7082, 7040, 5276, 7097, 7167, 2]
 
-// Module 17383 (RegisterDisplayName)
+// Module 17420 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15999 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17362 */;
-import RegistrationConstants from "RegistrationConstants" /* 17363 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16033 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17399 */;
+import RegistrationConstants from "RegistrationConstants" /* 17400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

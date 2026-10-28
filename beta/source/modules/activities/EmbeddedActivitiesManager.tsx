@@ -1,38 +1,38 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15832
+// Function ID: 15833
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 2045, 6772, 4827, 502, 4823, 5714, 4874, 1392, 15721, 4822, 1087, 15720, 1297, 4892, 11408, 5904, 1267, 10767, 11394, 11396, 11400, 5710, 1281, 2033, 9655, 2004, 1123, 584, 5629, 5623, 10778, 10783, 6809, 11386, 1128, 11456, 11388, 11458, 11360, 6019, 7278, 2]
+// Dependencies: [5, 2045, 6804, 4859, 502, 4855, 5746, 4906, 1392, 15755, 4854, 1087, 15754, 1297, 4924, 11440, 5936, 1267, 10799, 11426, 11428, 11432, 5742, 1281, 2033, 9687, 2004, 1123, 584, 5661, 5655, 10810, 10815, 6841, 11418, 1128, 11488, 11420, 11490, 11392, 6051, 7310, 2]
 
-// Module 15798 (EmbeddedActivitiesManager)
+// Module 15832 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import v1 from "v1" /* 1281 */;
 import StringUtils from "StringUtils" /* 2033 */;
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4892 */;
-import getURLForApplication from "getURLForApplication" /* 5623 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5710 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5904 */;
-import InteractionTypes from "InteractionTypes" /* 6019 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7278 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9655 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10767 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11394 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11396 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 11400 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 11408 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15720 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4924 */;
+import getURLForApplication from "getURLForApplication" /* 5655 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5742 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5936 */;
+import InteractionTypes from "InteractionTypes" /* 6051 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9687 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10799 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11426 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11428 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 11432 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 11440 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15754 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6772 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5714 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import UserStore from "UserStore" /* 1392 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15721 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4822 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15755 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import Constants from "Constants" /* 1087 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size_mod from "module_2" /* 2 */;

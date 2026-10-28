@@ -1,13 +1,13 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11778
+// Function ID: 11779
 // Name: conjureStandaloneScenes
-// Dependencies: [1087, 4830, 1114, 2]
+// Dependencies: [1087, 4862, 1114, 2]
 // Exports: projectOpener
 
-// Module 11746 (conjureStandaloneScenes)
+// Module 11778 (conjureStandaloneScenes)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
-import ChannelConstants from "ChannelConstants" /* 4830 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

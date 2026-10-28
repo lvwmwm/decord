@@ -1,9 +1,9 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15033
+// Function ID: 15034
 // Name: ConnectionIndicatorExperiment
 // Dependencies: [1455, 2]
 
-// Module 15001 (ConnectionIndicatorExperiment)
+// Module 15033 (ConnectionIndicatorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

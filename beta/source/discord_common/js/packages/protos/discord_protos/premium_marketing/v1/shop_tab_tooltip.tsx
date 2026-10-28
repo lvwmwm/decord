@@ -1,12 +1,12 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9584
+// Function ID: 9585
 // Name: shop_tab_tooltip
-// Dependencies: [32, 1212, 9535, 9525, 2]
+// Dependencies: [32, 1212, 9567, 9557, 2]
 
-// Module 9552 (shop_tab_tooltip)
+// Module 9584 (shop_tab_tooltip)
 import _mod1212 from "module_1212" /* 1212 */;
-import localized_string from "localized_string" /* 9525 */;
-import theme_aware_asset from "theme_aware_asset" /* 9535 */;
+import localized_string from "localized_string" /* 9557 */;
+import theme_aware_asset from "theme_aware_asset" /* 9567 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

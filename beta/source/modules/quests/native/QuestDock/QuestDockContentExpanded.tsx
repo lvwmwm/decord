@@ -1,17 +1,17 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16561
+// Function ID: 16562
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 6710, 16441, 21, 4971, 558, 576, 16442, 10916, 5052, 16440, 5247, 7168, 2]
+// Dependencies: [19, 17, 6742, 16475, 21, 5003, 558, 576, 16476, 10948, 5084, 16474, 5279, 7200, 2]
 
-// Module 16527 (QuestDockContentExpanded)
+// Module 16561 (QuestDockContentExpanded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5247 */;
-import QuestConstants from "QuestConstants" /* 6710 */;
-import QuestDockUtils from "QuestDockUtils" /* 16440 */;
-import QuestDockConstants from "QuestDockConstants" /* 16441 */;
+import spring from "spring" /* 5279 */;
+import QuestConstants from "QuestConstants" /* 6742 */;
+import QuestDockUtils from "QuestDockUtils" /* 16474 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

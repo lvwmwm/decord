@@ -1,30 +1,30 @@
-// Module ID: 10433
-// Function ID: 10434
+// Module ID: 10465
+// Function ID: 10466
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8293, 10434, 21, 5052, 4971, 587, 4968, 558, 576, 1202, 10166, 5234, 8152, 504, 10435, 1128, 8173, 8154, 10436, 10437, 5206, 1499, 10438, 8558, 10423, 2]
+// Dependencies: [19, 17, 8325, 10466, 21, 5084, 5003, 587, 5000, 558, 576, 1202, 10198, 5266, 8184, 504, 10467, 1128, 8205, 8186, 10468, 10469, 5238, 1499, 10470, 8590, 10455, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10433 (MediaKeyboardItem)
+// Module 10465 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import ImageIcon from "ImageIcon" /* 8558 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10166 */;
-import AttachmentIcon from "AttachmentIcon" /* 10423 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10435 */;
-import CameraIcon from "CameraIcon" /* 10438 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import ImageIcon from "ImageIcon" /* 8590 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10198 */;
+import AttachmentIcon from "AttachmentIcon" /* 10455 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10467 */;
+import CameraIcon from "CameraIcon" /* 10470 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
-import DeviceConstants from "DeviceConstants" /* 10434 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import DeviceConstants from "DeviceConstants" /* 10466 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
-import ColorUtils_mod from "ColorUtils" /* 4968 */;
+import createStyles_mod from "createStyles" /* 5003 */;
+import ColorUtils_mod from "ColorUtils" /* 5000 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

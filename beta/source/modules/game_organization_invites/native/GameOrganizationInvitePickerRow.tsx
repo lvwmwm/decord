@@ -1,21 +1,21 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11347
+// Function ID: 11348
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9131, 7809, 21, 4971, 587, 558, 576, 11316, 7265, 5669, 5977, 8560, 5234, 1128, 2406, 9136, 6903, 2]
+// Dependencies: [19, 9163, 7841, 21, 5003, 587, 558, 576, 11348, 7297, 5701, 6009, 8592, 5266, 1128, 2406, 9168, 6935, 2]
 
-// Module 11315 (GameOrganizationInvitePickerRow)
+// Module 11347 (GameOrganizationInvitePickerRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2406 from "module_2406" /* 2406 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7265 */;
-import Constants from "Constants" /* 7809 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9131 */;
-import InviteButtonDefault from "InviteButton" /* 9136 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11316 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7297 */;
+import Constants from "Constants" /* 7841 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9163 */;
+import InviteButtonDefault from "InviteButton" /* 9168 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11348 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ let metroRequire;
 let size;
 let tmp;
 const intl2 = tmp(1128);
-const Text_Text = tmp(5234);
-const Stack_Stack = tmp(5977);
-const TableRow2 = tmp(6903);
-const GroupIcon2 = tmp(8560);
-const getGameOrganizationInviteSendStateKey = tmp(11316);
+const Text_Text = tmp(5266);
+const Stack_Stack = tmp(6009);
+const TableRow2 = tmp(6935);
+const GroupIcon2 = tmp(8592);
+const getGameOrganizationInviteSendStateKey = tmp(11348);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -231,12 +231,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(5977).Stack;
+      const Stack = tmp5(6009).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp5(8560).GroupIcon;
+      const GroupIcon = tmp5(8592).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
       const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2406.VuENGl, obj8) };
-      const Text = tmp5(5234).Text;
+      const Text = tmp5(5266).Text;
       intl = tmp5(1128).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

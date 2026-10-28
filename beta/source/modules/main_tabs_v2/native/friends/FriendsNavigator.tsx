@@ -1,23 +1,23 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18239
+// Function ID: 18240
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 9743, 4971, 587, 558, 576, 1128, 9705, 9699, 13522, 7584, 7095, 18203, 18209, 18212, 18213, 18214, 18225, 18226, 18227, 18229, 18232, 18233, 5146, 1633, 5037, 2]
+// Dependencies: [109, 19, 17, 21, 9775, 5003, 587, 558, 576, 1128, 9737, 9731, 13554, 7616, 7127, 18240, 18246, 18249, 18250, 18251, 18262, 18263, 18264, 18266, 18269, 18270, 5178, 1633, 5069, 2]
 
-// Module 18202 (FriendsNavigator)
+// Module 18239 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5146 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9705 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13522 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5178 */;
+import HeaderShared from "HeaderShared" /* 9731 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9737 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13554 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import NativeStackView from "NativeStackView" /* 9775 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(5037);
+const native = tmp(5069);
 let closure_3 = ["children"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -61,7 +61,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reques
     const obj2 = { isModal: true, children: metroImportDefault(HeaderIconButton, obj3) };
     obj3 = { source: AssetRegistryDefault, onPress, accessibilityLabel: first };
     const tmp9 = PressableNavigatorButtonWrapperDefault;
-    HeaderIconButton = tmp(9699).HeaderIconButton;
+    HeaderIconButton = tmp(9731).HeaderIconButton;
     const tmp10 = metroImportDefault(tmp9, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;
@@ -125,7 +125,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(7095);
+  const tmpResult = tmp(7127);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === accessibilityNativeStackOptions) {
     let tmp9;

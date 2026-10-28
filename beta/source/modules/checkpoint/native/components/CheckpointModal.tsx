@@ -1,27 +1,27 @@
-// Module ID: 12953
-// Function ID: 12954
+// Module ID: 12985
+// Function ID: 12986
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 4914, 12954, 6015, 1098, 21, 4971, 587, 1633, 12955, 12958, 504, 6363, 8624, 11623, 8572, 12961, 12962, 12963, 6362, 12965, 6672, 5662, 1128, 6364, 5037, 12966, 12967, 12969, 12977, 8629, 8630, 13022, 6931, 13023, 13026, 13035, 2000, 6022, 12900, 558, 576, 13037, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 12986, 6047, 1098, 21, 5003, 587, 1633, 12987, 12990, 504, 6395, 8656, 11655, 8604, 12993, 12994, 12995, 6394, 12997, 6704, 5694, 1128, 6396, 5069, 12998, 12999, 13001, 13009, 8661, 8662, 13054, 6963, 13055, 13058, 13067, 2000, 6054, 12932, 558, 576, 13069, 2]
 
-// Module 12953 (CheckpointModal)
+// Module 12985 (CheckpointModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import Server from "Server" /* 2000 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6022 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6672 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12900 */;
-import CheckpointStore2 from "CheckpointStore" /* 12954 */;
-import CheckpointFlows from "CheckpointFlows" /* 12958 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13037 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6054 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12932 */;
+import CheckpointStore2 from "CheckpointStore" /* 12986 */;
+import CheckpointFlows from "CheckpointFlows" /* 12990 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 4914 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import MessageRecord from "MessageRecord" /* 4946 */;
+import CheckpointConstants from "CheckpointConstants" /* 6047 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
       const tmp7 = first;
       if (null != adjacentCheckpointRoute) {
         ref.current = timestamp;
-        const SILENT_CHECKPOINT_ROUTES = tmp4(6363).SILENT_CHECKPOINT_ROUTES;
+        const SILENT_CHECKPOINT_ROUTES = tmp4(6395).SILENT_CHECKPOINT_ROUTES;
         if (!SILENT_CHECKPOINT_ROUTES.has(tmp7)) {
           closure_7();
         }

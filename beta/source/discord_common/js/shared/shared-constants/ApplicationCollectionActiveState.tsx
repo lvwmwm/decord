@@ -1,9 +1,9 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12090
+// Function ID: 12091
 // Name: ApplicationCollectionActiveState
 // Dependencies: [2]
 
-// Module 12058 (ApplicationCollectionActiveState)
+// Module 12090 (ApplicationCollectionActiveState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionActiveState.tsx");

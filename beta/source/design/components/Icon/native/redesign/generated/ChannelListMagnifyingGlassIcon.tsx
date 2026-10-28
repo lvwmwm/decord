@@ -1,14 +1,14 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15118
+// Function ID: 15119
 // Name: ChannelListMagnifyingGlassIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15085, 5668, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15119, 5700, 2]
 
-// Module 15084 (ChannelListMagnifyingGlassIcon)
+// Module 15118 (ChannelListMagnifyingGlassIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5668 */;
-import AssetRegistry from "AssetRegistry" /* 15085 */;
+import BaseIconImage2 from "BaseIconImage" /* 5700 */;
+import AssetRegistry from "AssetRegistry" /* 15119 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelLis
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5668).BaseIconImage;
+  const BaseIconImage = tmp(5700).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

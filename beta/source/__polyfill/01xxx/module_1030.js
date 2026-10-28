@@ -10,7 +10,7 @@ import _mod879 from "module_879" /* 879 */;
 
 let tmp;
 const fillTyped = tmp(1031);
-const f87423 = (arg0) => {
+const f87515 = (arg0) => {
   closure_0 = arg0;
   return () => {
     const items = [...arguments];
@@ -24,7 +24,7 @@ function patchAppRegistryRunApplication(arg0) {
   AppRegistry = ReactNativeLibraries.ReactNativeLibraries.AppRegistry;
   if (AppRegistry) {
     const tmpResult = fillTyped;
-    tmpResult.fillTyped(AppRegistry, "runApplication", f87423);
+    tmpResult.fillTyped(AppRegistry, "runApplication", f87515);
   }
 }
 
@@ -40,7 +40,7 @@ export const appRegistryIntegration = () => {
           AppRegistry = tmp(874).ReactNativeLibraries.AppRegistry;
           if (AppRegistry) {
             const tmpResult = fillTyped;
-            tmpResult.fillTyped(AppRegistry, "runApplication", f87423);
+            tmpResult.fillTyped(AppRegistry, "runApplication", f87515);
           }
         } else {
           throw new TypeError("Trying to call a non-function");

@@ -1,15 +1,15 @@
-// Module ID: 11009
-// Function ID: 11010
+// Module ID: 11041
+// Function ID: 11042
 // Name: MutedUntilText
-// Dependencies: [19, 21, 4971, 558, 576, 1128, 5234, 2]
+// Dependencies: [19, 21, 5003, 558, 576, 1128, 5266, 2]
 
-// Module 11009 (MutedUntilText)
+// Module 11041 (MutedUntilText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5266 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MutedUntilTe
       } else {
         return null;
       }
-      const Text = tmp15(5234).Text;
+      const Text = tmp15(5266).Text;
       const intl5 = tmp15(1128).intl;
       const _Date = Date;
       const self = this;
@@ -201,7 +201,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MutedUntilTe
     return null;
   }
   obj = { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult };
-  return jsx(tmp3(5234).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
+  return jsx(tmp3(5266).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/screens/MutedUntilText.tsx");
 

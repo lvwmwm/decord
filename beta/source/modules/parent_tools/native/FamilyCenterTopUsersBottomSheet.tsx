@@ -1,23 +1,23 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16223
+// Function ID: 16224
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1392, 21, 4971, 558, 576, 8128, 6903, 5025, 1202, 1128, 2536, 5234, 6987, 7298, 2]
+// Dependencies: [19, 1392, 21, 5003, 558, 576, 8160, 6935, 5057, 1202, 1128, 2536, 5266, 7019, 7330, 2]
 
-// Module 16189 (FamilyCenterTopUsersBottomSheet)
+// Module 16223 (FamilyCenterTopUsersBottomSheet)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import TableRowGroup2 from "TableRowGroup" /* 6987 */;
-import ActionSheet2 from "ActionSheet" /* 7298 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8128 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import TableRow2 from "TableRow" /* 6935 */;
+import TableRowGroup2 from "TableRowGroup" /* 7019 */;
+import ActionSheet2 from "ActionSheet" /* 7330 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (cResult[9] === userActivity.dms_sent) {
         tmp15 = cResult[10];
       }
-      TableRow = tmp(6903).TableRow;
+      TableRow = tmp(6935).TableRow;
       const obj3 = UserUtilsDefault;
       name = obj3.getName(user);
       tmp13 = tmp15;

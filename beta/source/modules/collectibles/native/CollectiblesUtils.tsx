@@ -1,30 +1,30 @@
-// Module ID: 9448
-// Function ID: 9449
+// Module ID: 9480
+// Function ID: 9481
 // Name: collectibles/CollectiblesUtils
-// Dependencies: [1087, 7339, 2065, 7524, 7662, 2053, 7661, 8685, 9449, 2]
+// Dependencies: [1087, 7371, 2065, 7556, 7694, 2053, 7693, 8717, 9481, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, getGoogleSkuIds, isGPlaySynced
 
-// Module 9448 (collectibles/CollectiblesUtils)
+// Module 9480 (collectibles/CollectiblesUtils)
 import Constants from "Constants" /* 1087 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2065 */;
-import PriceUtils from "PriceUtils" /* 7339 */;
-import IAPStoreDefault from "IAPStore" /* 7524 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
-import types from "types" /* 8685 */;
-import _modDef9449 from "module_9449" /* 9449 */;
+import PriceUtils from "PriceUtils" /* 7371 */;
+import IAPStoreDefault from "IAPStore" /* 7556 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7693 */;
+import types from "types" /* 8717 */;
+import _modDef9481 from "module_9481" /* 9481 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const CollectiblesUtils = tmp(7662);
-const f103496 = (variants) => {
+const CollectiblesUtils = tmp(7694);
+const f103619 = (variants) => {
   let everyResult;
   const obj = closure_1_0(closure_1_2[6]);
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    everyResult = variants.every(f103496);
+    everyResult = variants.every(f103619);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;
@@ -52,7 +52,7 @@ function hasAtLeastOneGPlaySynced(nextResult) {
     let obj = CollectiblesProductUtils;
     if (obj.getIsVariantProduct(variants)) {
       variants = variants.variants;
-      everyResult = variants.every(f103496);
+      everyResult = variants.every(f103619);
     } else {
       const tmp2 = importDefault;
       const tmp3 = require("IAPStore");
@@ -219,7 +219,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
   const obj = CollectiblesProductUtils;
   if (obj.getIsVariantProduct(variants)) {
     variants = variants.variants;
-    return variants.every(f103496);
+    return variants.every(f103619);
   } else {
     const googleSkuIds = variants.googleSkuIds;
     let tmp5;
@@ -231,7 +231,7 @@ export const isGPlaySynced = function isGPlaySynced(variants) {
     const product = getProduct(tmp5);
     const googleSkuIds2 = variants.googleSkuIds;
     let tmp9;
-    const getProduct2 = tmp2(7524).getProduct;
+    const getProduct2 = tmp2(7556).getProduct;
     IAPStoreDefault;
     if (googleSkuIds2 != null) {
       tmp9 = googleSkuIds2[closure_3.MOBILE_PREMIUM_TIER_2];
@@ -276,6 +276,6 @@ export const filterHiddenCategories = function filterHiddenCategories(result2) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  const obj = { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef9449, description: "", isPreviewMode: true };
+  const obj = { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef9481, description: "", isPreviewMode: true };
   return obj;
 };

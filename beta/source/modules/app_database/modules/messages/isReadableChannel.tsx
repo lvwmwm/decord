@@ -1,13 +1,13 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7625
+// Function ID: 7626
 // Name: isReadableChannel
-// Dependencies: [4827, 4823, 4903, 1087, 2]
+// Dependencies: [4859, 4855, 4935, 1087, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 7593 (isReadableChannel)
-import ChannelRecord from "ChannelRecord" /* 4827 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
+// Module 7625 (isReadableChannel)
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

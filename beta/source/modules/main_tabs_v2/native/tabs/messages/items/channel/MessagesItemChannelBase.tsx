@@ -1,25 +1,25 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17495
+// Function ID: 17496
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5712, 6771, 4913, 4874, 6704, 1392, 1087, 21, 4971, 587, 558, 576, 504, 17459, 8707, 1384, 7411, 5707, 10691, 9018, 9411, 17460, 5643, 8749, 17461, 9407, 17462, 6908, 2]
+// Dependencies: [19, 17, 5744, 6803, 4945, 4906, 6736, 1392, 1087, 21, 5003, 587, 558, 576, 504, 17496, 8739, 1384, 7443, 5739, 10723, 9050, 9443, 17497, 5675, 8781, 17498, 9439, 17499, 6940, 2]
 
-// Module 17458 (MessagesItemChannelBase)
+// Module 17495 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import transitionToChannel from "transitionToChannel" /* 5707 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7411 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10691 */;
+import transitionToChannel from "transitionToChannel" /* 5739 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10723 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5712 */;
-import ReadStateStore from "ReadStateStore" /* 6771 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6704 */;
+import PresenceStore from "PresenceStore" /* 5744 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -304,9 +304,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult9 = channel(504);
     const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(17459)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(17496)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(17459)(channel.id);
+    setIsPressed(17496)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {
@@ -480,7 +480,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const tmpResult13 = channel(8707);
+    const tmpResult13 = channel(8739);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {

@@ -1,16 +1,16 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12505
+// Function ID: 12506
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 4971, 587, 1128, 3830, 558, 576, 12474, 12475, 12476, 7008, 5234, 7959, 6931, 12478, 6987, 6900, 6905, 12482, 5244, 12485, 11820, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 1128, 3862, 558, 576, 12506, 12507, 12508, 7040, 5266, 7991, 6963, 12510, 7019, 6932, 6937, 12514, 5276, 12517, 11852, 2]
 
-// Module 12473 (ConjureClarificationCard)
+// Module 12505 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureClarification from "ConjureClarification" /* 12476 */;
+import ConjureClarification from "ConjureClarification" /* 12508 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const f114664 = (item) => "" !== item;
+const f114787 = (item) => "" !== item;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -349,7 +349,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       const result = obj3.followingClarificationStep(clarification, obj, bound);
       const tmp18 = require;
       if (null == result) {
-        const tmp18Result = tmp18(12476);
+        const tmp18Result = tmp18(12508);
         const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first2, tmp);
       } else {
         closure_13(result);
@@ -409,7 +409,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp63;
   let tmp64;
   let tmp8;
-  const f114679 = () => {
+  const f114802 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -452,8 +452,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f114679), 2);
-  const tmp9 = _slicedToArray(react.useState(f114679), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f114802), 2);
+  const tmp9 = _slicedToArray(react.useState(f114802), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       const result = obj3.followingClarificationStep(clarification, obj, bound);
       const tmp18 = require;
       if (null == result) {
-        const tmp18Result = tmp18(12476);
+        const tmp18Result = tmp18(12508);
         const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first1, tmp);
       } else {
         closure_13(result);
@@ -724,7 +724,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f114664);
+          const found = items.filter(f114787);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");

@@ -1,31 +1,31 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16217
+// Function ID: 16218
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7646, 21, 8542, 12884, 5666, 14900, 8544, 7943, 5691, 12886, 4971, 587, 558, 576, 5234, 1128, 2536, 12883, 8126, 8128, 7900, 7901, 12728, 5244, 6672, 6924, 11149, 2]
+// Dependencies: [32, 19, 17, 7678, 21, 8574, 12916, 5698, 14932, 8576, 7975, 5723, 12918, 5003, 587, 558, 576, 5266, 1128, 2536, 12915, 8158, 8160, 7932, 7933, 12760, 5276, 6704, 6956, 11181, 2]
 
-// Module 16183 (FamilyCenterModalDataTooltip)
+// Module 16217 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FriendsIcon from "FriendsIcon" /* 5666 */;
-import ClockIcon from "ClockIcon" /* 5691 */;
-import NavigatorHeader from "NavigatorHeader" /* 6924 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
-import CreditCardIcon from "CreditCardIcon" /* 7943 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8126 */;
-import ChatIcon from "ChatIcon" /* 8542 */;
-import ThreadIcon from "ThreadIcon" /* 8544 */;
-import Modal2 from "Modal" /* 11149 */;
-import PhoneIcon from "PhoneIcon" /* 12884 */;
-import GiftIcon from "GiftIcon" /* 12886 */;
-import ServerGridIcon from "ServerGridIcon" /* 14900 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import FriendsIcon from "FriendsIcon" /* 5698 */;
+import ClockIcon from "ClockIcon" /* 5723 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7678 */;
+import CreditCardIcon from "CreditCardIcon" /* 7975 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8158 */;
+import ChatIcon from "ChatIcon" /* 8574 */;
+import ThreadIcon from "ThreadIcon" /* 8576 */;
+import Modal2 from "Modal" /* 11181 */;
+import PhoneIcon from "PhoneIcon" /* 12916 */;
+import GiftIcon from "GiftIcon" /* 12918 */;
+import ServerGridIcon from "ServerGridIcon" /* 14932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj5;
 let obj7;
 let size;
 let tmp11;
-const ModalActionCreatorsDefault = tmp11(6672);
+const ModalActionCreatorsDefault = tmp11(6704);
 function headerTitle() {
   return null;
 }
@@ -218,7 +218,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = tmp(12883);
+  const tmpResult = tmp(12915);
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp5, tmp6);
   const tmp12 = useIsInAdultAgeGroupDefault();
   _require = tmp12;
@@ -249,9 +249,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
                 const _Symbol = Symbol;
                 if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
                   let obj2 = { children: closure_6(Button, obj3) };
-                  const ModalFooter = tmp(12728).ModalFooter;
+                  const ModalFooter = tmp(12760).ModalFooter;
                   obj3 = { variant: "primary", text: intl3.string(tmp(1128).t["NX+WJN"]), onPress: ModalActionCreatorsDefault.pop };
-                  Button = tmp(5244).Button;
+                  Button = tmp(5276).Button;
                   intl3 = tmp(1128).intl;
                   const tmp32 = closure_6(ModalFooter, obj2);
                   cResult[25] = tmp32;
@@ -295,10 +295,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
     }
   }
-  const tmpResult2 = tmp(8128);
+  const tmpResult2 = tmp(8160);
   const sortedActivityTypeConfigs = tmpResult2.getSortedActivityTypeConfigs();
-  const ModalScreen = tmp(7900).ModalScreen;
-  const ModalContent = tmp(7901).ModalContent;
+  const ModalScreen = tmp(7932).ModalScreen;
+  const ModalContent = tmp(7933).ModalContent;
   const container = tmp4.container;
   if (cResult[12] === ageSpecificText) {
     let tmp20;
@@ -357,7 +357,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     tmp13 = tmp19;
   }
   const obj7 = { style: tmp4.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText };
-  const tmp21 = closure_6(tmp(5234).Text, obj7);
+  const tmp21 = closure_6(tmp(5266).Text, obj7);
   cResult[12] = ageSpecificText;
   cResult[13] = tmp4.groupHeader;
   cResult[14] = tmp21;
@@ -425,7 +425,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { initialRouteName: "DATA_TOOLTIP", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
-    const Modal = tmp(11149).Modal;
+    const Modal = tmp(11181).Modal;
     intl = tmp(1128).intl;
     const tmp8 = metroRequire(Modal, obj4);
     cResult[1] = tmp8;

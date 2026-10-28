@@ -1,10 +1,10 @@
-// Module ID: 5594
-// Function ID: 5595
+// Module ID: 5626
+// Function ID: 5627
 // Name: useKeyboardDuration
 // Dependencies: [1502, 1384, 1503, 2]
 // Exports: getKeyboardDuration
 
-// Module 5594 (useKeyboardDuration)
+// Module 5626 (useKeyboardDuration)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1503 */;

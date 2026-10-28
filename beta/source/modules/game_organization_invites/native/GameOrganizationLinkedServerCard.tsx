@@ -1,21 +1,21 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12762
+// Function ID: 12763
 // Name: GameOrganizationLinkedServerCard
-// Dependencies: [19, 17, 21, 6883, 4971, 587, 558, 576, 1417, 5234, 5977, 1128, 6905, 2]
+// Dependencies: [19, 17, 21, 6915, 5003, 587, 558, 576, 1417, 5266, 6009, 1128, 6937, 2]
 
-// Module 12730 (GameOrganizationLinkedServerCard)
+// Module 12762 (GameOrganizationLinkedServerCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import Stack_Stack from "Stack/Stack" /* 5977 */;
-import GuildIcon from "GuildIcon" /* 6883 */;
-import Card_Card from "Card/Card" /* 6905 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Stack_Stack from "Stack/Stack" /* 6009 */;
+import GuildIcon from "GuildIcon" /* 6915 */;
+import Card_Card from "Card/Card" /* 6937 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
                               tmp39 = tmp41;
                             }
                             const obj5 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_16, children: items };
-                            const Stack5 = tmp(5977).Stack;
+                            const Stack5 = tmp(6009).Stack;
                             items = [tmp7, tmp31];
                             const tmp38 = hasOwnProperty(Stack5, obj5);
                             cResult[27] = tmp7;
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
                           }
                         }
                         const obj6 = { spacing: nativeDefault.space.PX_4, style: tmp4.info, children: items1 };
-                        const Stack4 = tmp(5977).Stack;
+                        const Stack4 = tmp(6009).Stack;
                         items1 = [tmp12, tmp27];
                         const tmp34 = hasOwnProperty(Stack4, obj6);
                         cResult[23] = tmp4.info;
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
                       }
                     }
                     const obj7 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_20, style: tmp4.autoWidth, children: items2 };
-                    const Stack3 = tmp(5977).Stack;
+                    const Stack3 = tmp(6009).Stack;
                     items2 = [tmp15, tmp21];
                     const tmp30 = hasOwnProperty(Stack3, obj7);
                     cResult[19] = tmp4.autoWidth;
@@ -163,13 +163,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
               let tmp22 = null;
               if (null != memberCount) {
                 const obj8 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp4.autoWidth, children: items4 };
-                const Stack2 = tmp(5977).Stack;
+                const Stack2 = tmp(6009).Stack;
                 const obj9 = { style: items3 };
                 items3 = [, ];
                 ({ dot: arr3[0], membersDot: arr3[1] } = tmp4);
                 items4 = [React3(View, obj9), ];
                 const obj10 = { variant: "text-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj11) };
-                const Text2 = tmp(5234).Text;
+                const Text2 = tmp(5266).Text;
                 intl2 = tmp(1128).intl;
                 obj11 = { count: memberCount };
                 items4[1] = React3(Text2, obj10);
@@ -187,13 +187,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
         let tmp16 = null;
         if (null != presenceCount) {
           const obj12 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp4.autoWidth, children: items6 };
-          const Stack = tmp(5977).Stack;
+          const Stack = tmp(6009).Stack;
           const obj13 = { style: items5 };
           items5 = [, ];
           ({ dot: arr[0], onlineDot: arr[1] } = tmp4);
           items6 = [React3(View, obj13), ];
           const obj14 = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj15) };
-          const Text = tmp(5234).Text;
+          const Text = tmp(5266).Text;
           intl = tmp(1128).intl;
           obj15 = { membersOnline: presenceCount };
           items6[1] = React3(Text, obj14);
@@ -263,13 +263,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   let tmp7Result = null;
   if (null != presenceCount) {
     const obj8 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items3 };
-    const Stack4 = tmp4(5977).Stack;
+    const Stack4 = tmp4(6009).Stack;
     const obj9 = { style: items2 };
     items2 = [, ];
     ({ dot: arr3[0], onlineDot: arr3[1] } = tmp);
     items3 = [React3(View, obj9), ];
     const obj10 = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj11) };
-    const Text = tmp4(5234).Text;
+    const Text = tmp4(5266).Text;
     intl = tmp4(1128).intl;
     obj11 = { membersOnline: presenceCount };
     items3[1] = React3(Text, obj10);
@@ -279,13 +279,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   let tmp7Result2 = null;
   if (null != memberCount) {
     const obj12 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items6 };
-    const Stack5 = tmp4(5977).Stack;
+    const Stack5 = tmp4(6009).Stack;
     const obj13 = { style: items5 };
     items5 = [, ];
     ({ dot: arr6[0], membersDot: arr6[1] } = tmp);
     items6 = [React3(View, obj13), ];
     const obj14 = { variant: "text-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj15) };
-    const Text2 = tmp4(5234).Text;
+    const Text2 = tmp4(5266).Text;
     intl2 = tmp4(1128).intl;
     obj15 = { count: memberCount };
     items6[1] = React3(Text2, obj14);

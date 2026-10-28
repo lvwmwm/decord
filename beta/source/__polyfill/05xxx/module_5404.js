@@ -1,17 +1,39 @@
 // Module ID: 5404
 // Function ID: 5405
-// Dependencies: [5405, 5356]
-// Exports: useCompetingGestures
+// Dependencies: [19, 5403, 5373]
+// Exports: useGestureRelationsUpdater
 
 // Module 5404
-import ComposedGestureName from "ComposedGestureName" /* 5356 */;
-import _mod5405 from "module_5405" /* 5405 */;
+import traverseAndConfigureRelations from "traverseAndConfigureRelations" /* 5403 */;
+import react from "react" /* 19 */;
 
+let c2;
+let c3;
+({ useEffect: c2, useMemo: c3 } = react);
 
-export const useCompetingGestures = function useCompetingGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5405.useComposedGesture;
-  _mod5405;
-  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
-  return useComposedGesture.apply(items1);
+export const useGestureRelationsUpdater = function useGestureRelationsUpdater(gesture) {
+  let closure_0 = gesture;
+  const items = [gesture];
+  const tmp = closure_3(() => {
+    let configureRelationsResult = null;
+    if (gesture) {
+      const obj = traverseAndConfigureRelations;
+      configureRelationsResult = obj.configureRelations(tmp);
+    }
+    return configureRelationsResult;
+  }, items);
+  let closure_1 = tmp;
+  const items1 = [tmp];
+  closure_2(() => {
+    if (closure_1) {
+      const _requestAnimationFrame = requestAnimationFrame;
+      let closure_0 = requestAnimationFrame(() => {
+        const item = closure_1_1.forEach((item, index) => {
+          const NativeProxy = closure_1_0(closure_1_1[2]).NativeProxy;
+          NativeProxy.configureRelations(index, item);
+        });
+      });
+      return () => cancelAnimationFrame(closure_0);
+    }
+  }, items1);
 };

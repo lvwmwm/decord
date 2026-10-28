@@ -1,14 +1,14 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16236
+// Function ID: 16237
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 558, 576, 5234, 1128, 2536, 2]
+// Dependencies: [21, 558, 576, 5266, 1128, 2536, 2]
 
-// Module 16202 (useScheduleTimeControlsRowProps)
+// Module 16236 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2536 from "module_2536" /* 2536 */;
-import Text_Text from "Text/Text" /* 5234 */;
+import Text_Text from "Text/Text" /* 5266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
     let first;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { subLabel: null, trailing: "Array" };
+      const obj2 = { subLabel: null, trailing: "r" };
       ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2536.fOBIZH) });
-      const Text = tmp(5234).Text;
+      const Text = tmp(5266).Text;
       intl3 = tmp(1128).intl;
       cResult[0] = obj2;
       first = obj2;
@@ -109,7 +109,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
   let obj5;
   let tmp10;
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "Array" };
+    const obj2 = { subLabel: null, trailing: "r" };
     ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2536.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;

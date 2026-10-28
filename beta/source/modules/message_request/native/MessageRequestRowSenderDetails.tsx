@@ -1,20 +1,20 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18369
+// Function ID: 18370
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4913, 21, 4971, 1202, 587, 558, 576, 5025, 504, 18333, 1420, 1128, 5234, 18334, 18335, 2]
+// Dependencies: [19, 17, 4945, 21, 5003, 1202, 587, 558, 576, 5057, 504, 18370, 1420, 1128, 5266, 18371, 18372, 2]
 // Exports: default
 
-// Module 18332 (MessageRequestRowSenderDetails)
+// Module 18369 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1420 */;
-import UserUtilsDefault from "UserUtils" /* 5025 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 18335 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 18372 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4913 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     const tmp26Result = otherUser(504);
     const stateFromStores = tmp26Result.useStateFromStores(first, tmp35);
-    const tmp26Result3 = otherUser(18333);
+    const tmp26Result3 = otherUser(18370);
     const messageRequestRelativeTimestampText = tmp26Result3.useMessageRequestRelativeTimestampText(channel2);
     const _Math3 = Math;
     const _Math4 = Math;
@@ -145,7 +145,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                   }
                   if (cResult[22] !== tmp31.timestampSeparator) {
                     let obj3 = { style: tmp31.timestampSeparator, variant: "text-xs/medium", color: "text-muted", children: "\u00B7" };
-                    const tmp69 = closure_5(otherUser(5234).Text, obj3);
+                    const tmp69 = closure_5(otherUser(5266).Text, obj3);
                     cResult[22] = tmp31.timestampSeparator;
                     cResult[23] = tmp69;
                     tmp67 = tmp69;
@@ -154,7 +154,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                   }
                   if (cResult[24] !== messageRequestRelativeTimestampText) {
                     let obj4 = { variant: "text-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText };
-                    const tmp72 = closure_5(otherUser(5234).Text, obj4);
+                    const tmp72 = closure_5(otherUser(5266).Text, obj4);
                     cResult[24] = messageRequestRelativeTimestampText;
                     cResult[25] = tmp72;
                     tmp70 = tmp72;
@@ -232,7 +232,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                         let tmp78 = !tmp29;
                         if (tmp78) {
                           const obj8 = { style: tmp31.messagePreview, channel: channel2 };
-                          tmp78 = closure_5(tmp39(18334), obj8);
+                          tmp78 = closure_5(tmp39(18371), obj8);
                         }
                         cResult[31] = channel2;
                         cResult[32] = undefined !== isRestricted && isRestricted;
@@ -255,7 +255,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
               }
               let obj10 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.usernameTextContainer, children: items4 };
               items4 = [tmp58, tmp61];
-              const tmp66 = closure_6(otherUser(5234).Text, obj10);
+              const tmp66 = closure_6(otherUser(5266).Text, obj10);
               cResult[18] = tmp31.usernameTextContainer;
               cResult[19] = tmp58;
               cResult[20] = tmp61;
@@ -265,9 +265,9 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
             let tmp62 = null != stateFromStores;
             if (tmp62) {
               const obj11 = { variant: "text-md/medium", color: "text-muted", children: items5 };
-              const Text4 = tmp26(5234).Text;
+              const Text4 = tmp26(5266).Text;
               items5 = [" "];
-              const tmp26Result4 = otherUser(5025);
+              const tmp26Result4 = otherUser(5057);
               items5[1] = tmp26Result4.getUserTag(otherUser2);
               tmp62 = closure_6(Text4, obj11);
             }
@@ -277,7 +277,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
             tmp61 = tmp62;
           }
           const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.username, children: tmp54 };
-          const tmp60 = closure_5(otherUser(5234).Text, obj12);
+          const tmp60 = closure_5(otherUser(5266).Text, obj12);
           cResult[12] = tmp31.username;
           cResult[13] = tmp54;
           cResult[14] = tmp60;
@@ -352,7 +352,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       }
       return tmp2;
     });
-    let obj2 = otherUser(18333);
+    let obj2 = otherUser(18370);
     const _Math = Math;
     const _Math2 = Math;
     const messageRequestRelativeTimestampText1 = obj2.useMessageRequestRelativeTimestampText(channel);
@@ -376,10 +376,10 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const obj20 = { style: tmp3.detailsContainer, children: items11 };
     const obj21 = { style: tmp3.messageDetails, children: items10 };
     const obj22 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp3.usernameTextContainer, children: items8 };
-    const Text = tmp4(5234).Text;
+    const Text = tmp4(5266).Text;
     const obj23 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp3.username, children: stringResult1 };
     stringResult1 = stateFromStores1;
-    const Text2 = tmp4(5234).Text;
+    const Text2 = tmp4(5266).Text;
     if (stateFromStores1 == null) {
       let username3;
       if (otherUser != null) {
@@ -395,23 +395,23 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     let tmp14Result = null != stateFromStores1;
     if (tmp14Result) {
       const obj24 = { variant: "text-md/medium", color: "text-muted", children: items9 };
-      const Text3 = tmp4(5234).Text;
+      const Text3 = tmp4(5266).Text;
       items9 = [" "];
-      const tmp4Result = tmp4(5025);
+      const tmp4Result = tmp4(5057);
       items9[1] = tmp4Result.getUserTag(otherUser);
       tmp14Result = tmp14(Text3, obj24);
     }
     items8[1] = tmp14Result;
     items10 = [tmp14(Text, obj22), , ];
     const obj25 = { style: tmp3.timestampSeparator, variant: "text-xs/medium", color: "text-muted", children: "\u00B7" };
-    items10[1] = closure_5(tmp4(5234).Text, obj25);
+    items10[1] = closure_5(tmp4(5266).Text, obj25);
     const obj26 = { variant: "text-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText1 };
-    items10[2] = closure_5(tmp4(5234).Text, obj26);
+    items10[2] = closure_5(tmp4(5266).Text, obj26);
     items11 = [tmp14(tmp17, obj21), , ];
     let tmp16Result = !flag;
     if (tmp16Result) {
       const obj27 = { style: tmp3.messagePreview, channel };
-      tmp16Result = tmp16(tmp11(18334), obj27);
+      tmp16Result = tmp16(tmp11(18371), obj27);
     }
     items11[1] = tmp16Result;
     if (flag) {

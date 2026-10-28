@@ -1,13 +1,13 @@
-// Module ID: 9734
-// Function ID: 9735
+// Module ID: 9766
+// Function ID: 9767
 // Name: ConversationExperiments
-// Dependencies: [4845, 1087, 1455, 558, 576, 504, 2]
+// Dependencies: [4877, 1087, 1455, 558, 576, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled
 
-// Module 9734 (ConversationExperiments)
+// Module 9766 (ConversationExperiments)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import GuildStore from "GuildStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

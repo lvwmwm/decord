@@ -1,20 +1,20 @@
-// Module ID: 13301
-// Function ID: 13302
+// Module ID: 13333
+// Function ID: 13334
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 4883, 13296, 21, 4971, 587, 558, 576, 504, 13128, 5669, 1128, 6908, 5212, 5213, 7220, 2]
+// Dependencies: [19, 17, 4915, 13328, 21, 5003, 587, 558, 576, 504, 13160, 5701, 1128, 6940, 5244, 5245, 7252, 2]
 
-// Module 13301 (ApplicationCommandsCategories)
+// Module 13333 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5213 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13128 */;
+import HapticUtils from "HapticUtils" /* 5244 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5245 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13160 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13296 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13328 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -182,7 +182,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ca
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6908).PressableOpacity;
+  const PressableOpacity = tmp2(6940).PressableOpacity;
   const intl = tmp2(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1128).t;

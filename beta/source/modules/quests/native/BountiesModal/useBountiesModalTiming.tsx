@@ -1,10 +1,10 @@
-// Module ID: 16310
-// Function ID: 16311
+// Module ID: 16344
+// Function ID: 16345
 // Name: useBountiesModalTiming
-// Dependencies: [32, 19, 6710, 558, 576, 2]
+// Dependencies: [32, 19, 6742, 558, 576, 2]
 
-// Module 16310 (useBountiesModalTiming)
-import QuestConstants from "QuestConstants" /* 6710 */;
+// Module 16344 (useBountiesModalTiming)
+import QuestConstants from "QuestConstants" /* 6742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -311,7 +311,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesM
   let tmp5;
   let tmp7;
   let tmp9;
-  const f126345 = () => {
+  const f126468 = () => {
     num = 0;
     if (null != num3) {
       num = num / tmp;
@@ -364,8 +364,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountiesM
   }
   [tmp5, c11] = onRewardEarned(useState(tmp), 2);
   const tmp4 = onRewardEarned(useState(tmp), 2);
-  [tmp7, c12] = onRewardEarned(obj.useState(f126345), 2);
-  const tmp6 = onRewardEarned(obj.useState(f126345), 2);
+  [tmp7, c12] = onRewardEarned(obj.useState(f126468), 2);
+  const tmp6 = onRewardEarned(obj.useState(f126468), 2);
   let tmp8 = onRewardEarned(obj.useState(null), 2);
   [tmp9, c13] = tmp8;
   [tmp11, c14] = onRewardEarned(obj.useState(num2), 2);

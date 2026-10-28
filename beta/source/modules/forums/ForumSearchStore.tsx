@@ -1,12 +1,12 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 8322
+// Function ID: 8323
 // Name: ForumSearchStore
-// Dependencies: [4823, 504, 584, 2]
+// Dependencies: [4855, 504, 584, 2]
 
-// Module 8290 (ForumSearchStore)
+// Module 8322 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, results;

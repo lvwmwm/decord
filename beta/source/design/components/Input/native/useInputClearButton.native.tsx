@@ -1,14 +1,14 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7049
+// Function ID: 7050
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 558, 576, 7018, 1128, 2]
+// Dependencies: [19, 17, 21, 558, 576, 7050, 1128, 2]
 
-// Module 7017 (useInputClearButton)
+// Module 7049 (useInputClearButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import CircleXIcon from "CircleXIcon" /* 7018 */;
+import CircleXIcon from "CircleXIcon" /* 7050 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

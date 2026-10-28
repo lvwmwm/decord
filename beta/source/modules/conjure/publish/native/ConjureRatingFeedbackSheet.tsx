@@ -1,16 +1,16 @@
-// Module ID: 12495
-// Function ID: 12496
+// Module ID: 12527
+// Function ID: 12528
 // Name: ConjureRatingFeedbackSheet
-// Dependencies: [19, 17, 21, 4971, 587, 558, 576, 8659, 12494, 1128, 3830, 1896, 7248, 7180, 5244, 7298, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 8691, 12526, 1128, 3862, 1896, 7280, 7212, 5276, 7330, 2]
 
-// Module 12495 (ConjureRatingFeedbackSheet)
+// Module 12527 (ConjureRatingFeedbackSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import _modDef3830 from "module_3830" /* 3830 */;
+import _modDef3862 from "module_3862" /* 3862 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,16 +37,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
   const cResult = obj.c(20);
   rating = rating.rating;
   const tmp4 = closure_6();
-  const obj2 = bottomSheetClose(8659);
+  const obj2 = bottomSheetClose(8691);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  const obj3 = bottomSheetClose(12494);
+  const obj3 = bottomSheetClose(12526);
   const conjureRatingFeedback = obj3.useConjureRatingFeedback(rating);
   ({ text, setText, send } = conjureRatingFeedback);
   const canSend = conjureRatingFeedback.canSend;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(send(3830).IqkF07);
+    const stringResult = intl.string(send(3862).IqkF07);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { title: first };
-      const tmp13 = closure_4(bottomSheetClose(7248).BottomSheetTitleHeader, obj4);
+      const tmp13 = closure_4(bottomSheetClose(7280).BottomSheetTitleHeader, obj4);
       cResult[4] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
     const content = tmp4.content;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(1128).intl;
-      const stringResult1 = intl2.string(send(3830).HMGKAV);
+      const stringResult1 = intl2.string(send(3862).HMGKAV);
       cResult[5] = stringResult1;
       tmp14 = stringResult1;
     } else {
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
       const _Symbol3 = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1128).intl;
-        const stringResult2 = intl3.string(send(3830)["sr+mUC"]);
+        const stringResult2 = intl3.string(send(3862)["sr+mUC"]);
         cResult[9] = stringResult2;
         tmp20 = stringResult2;
       } else {
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
               return tmp31;
             }
             const obj5 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp11, children: tmp27 };
-            const tmp33 = closure_4(bottomSheetClose(7298).ActionSheet, obj5);
+            const tmp33 = closure_4(bottomSheetClose(7330).ActionSheet, obj5);
             cResult[17] = bottomSheetRef;
             cResult[18] = tmp27;
             cResult[19] = tmp33;
@@ -129,14 +129,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
         tmp27 = tmp30;
       }
       const obj7 = { variant: "primary", text: tmp20, disabled: !canSend, onPress: tmp10 };
-      const tmp26 = closure_4(bottomSheetClose(5244).Button, obj7);
+      const tmp26 = closure_4(bottomSheetClose(5276).Button, obj7);
       cResult[10] = tmp10;
       cResult[11] = !canSend;
       cResult[12] = tmp26;
       tmp24 = tmp26;
     }
-    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12494).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
-    const TextArea = tmp(7180).TextArea;
+    const obj8 = { accessibilityLabel: first, placeholder: tmp14, maxLength: bottomSheetClose(12526).CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
+    const TextArea = tmp(7212).TextArea;
     const tmp19 = closure_4(TextArea, obj8);
     cResult[6] = setText;
     cResult[7] = text;
@@ -177,17 +177,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRatin
   const conjureRatingFeedback = obj2.useConjureRatingFeedback(rating);
   ({ send: c1, text, setText, canSend } = conjureRatingFeedback);
   const intl = require("intl").intl;
-  const stringResult = intl.string(_modDef3830.IqkF07);
+  const stringResult = intl.string(_modDef3862.IqkF07);
   const obj3 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_4(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title: stringResult }), children: closure_5(View, obj4) };
   const ActionSheet = require("ActionSheet").ActionSheet;
   obj4 = { style: tmp.content, children: items };
-  const obj5 = { accessibilityLabel: stringResult, placeholder: intl2.string(_modDef3830.HMGKAV), maxLength: require("conjurePublishRatings").CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
+  const obj5 = { accessibilityLabel: stringResult, placeholder: intl2.string(_modDef3862.HMGKAV), maxLength: require("conjurePublishRatings").CONJURE_RATING_FEEDBACK_MAX_LENGTH, value: text, onChange: setText };
   const TextArea = require("TextArea").TextArea;
   intl2 = require("intl").intl;
   items = [closure_4(TextArea, obj5), ];
   const obj6 = {
     variant: "primary",
-    text: intl3.string(_modDef3830["sr+mUC"]),
+    text: intl3.string(_modDef3862["sr+mUC"]),
     disabled: !canSend,
     onPress: function handleSend() {
       _undefined2();

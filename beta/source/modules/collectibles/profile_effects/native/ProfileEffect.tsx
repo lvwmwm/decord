@@ -1,25 +1,25 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9426
+// Function ID: 9427
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4972, 2001, 21, 4971, 558, 576, 1499, 9395, 9396, 9397, 9399, 504, 1107, 9400, 9398, 5669, 8717, 2]
+// Dependencies: [32, 19, 17, 5004, 2001, 21, 5003, 558, 576, 1499, 9427, 9428, 9429, 9431, 504, 1107, 9432, 9430, 5701, 8749, 2]
 
-// Module 9394 (ProfileEffect)
+// Module 9426 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8717 */;
-import utils from "utils" /* 9395 */;
-import constants from "constants" /* 9396 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9397 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9400 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8749 */;
+import utils from "utils" /* 9427 */;
+import constants from "constants" /* 9428 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9429 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9432 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

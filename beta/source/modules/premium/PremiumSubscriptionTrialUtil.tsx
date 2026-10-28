@@ -1,14 +1,14 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8462
+// Function ID: 8463
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1392, 2058, 7560, 1394, 558, 576, 504, 2]
+// Dependencies: [1392, 2058, 7592, 1394, 558, 576, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub
 
-// Module 8430 (PremiumSubscriptionTrialUtil)
+// Module 8462 (PremiumSubscriptionTrialUtil)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import UserOfferStore from "UserOfferStore" /* 7560 */;
+import UserOfferStore from "UserOfferStore" /* 7592 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

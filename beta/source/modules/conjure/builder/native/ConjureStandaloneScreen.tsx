@@ -1,22 +1,22 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11776
+// Function ID: 11777
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 4883, 4845, 4903, 7321, 1087, 21, 558, 576, 1505, 11745, 11746, 504, 6808, 10720, 6924, 1128, 3830, 11747, 11861, 12539, 7095, 11885, 2]
+// Dependencies: [32, 19, 4915, 4877, 4935, 7353, 1087, 21, 558, 576, 1505, 11777, 11778, 504, 6840, 10752, 6956, 1128, 3862, 11779, 11893, 12571, 7127, 11917, 2]
 
-// Module 11744 (ConjureStandaloneScreen)
+// Module 11776 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1087 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10720 */;
-import selectConjureChannelDefault from "selectConjureChannel" /* 11745 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11746 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11747 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11861 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12539 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10752 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 11777 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11778 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 11779 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11893 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
-import GuildStore from "GuildStore" /* 4845 */;
-import PermissionStore from "PermissionStore" /* 4903 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7321 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7353 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

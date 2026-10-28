@@ -1,12 +1,12 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 10118
+// Function ID: 10119
 // Name: SendMessageOptionsStore
-// Dependencies: [4976, 504, 584, 2]
+// Dependencies: [5008, 504, 584, 2]
 
-// Module 10086 (SendMessageOptionsStore)
+// Module 10118 (SendMessageOptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageConstants from "MessageConstants" /* 4976 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
 import size from "module_2" /* 2 */;
 
 const MessageSendLocation = MessageConstants.MessageSendLocation;

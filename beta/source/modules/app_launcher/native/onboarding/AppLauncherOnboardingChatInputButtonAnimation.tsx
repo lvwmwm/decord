@@ -1,26 +1,26 @@
-// Module ID: 13138
-// Function ID: 13139
+// Module ID: 13170
+// Function ID: 13171
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 4972, 21, 4971, 5250, 587, 5206, 5209, 558, 576, 504, 9708, 12018, 13139, 5228, 5052, 12043, 2]
+// Dependencies: [19, 17, 5004, 21, 5003, 5282, 587, 5238, 5241, 558, 576, 504, 9740, 12050, 13171, 5260, 5084, 12075, 2]
 
-// Module 13138 (AppLauncherOnboardingChatInputButtonAnimation)
+// Module 13170 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import timingPresets from "timingPresets" /* 5209 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5228 */;
-import ButtonConstants from "ButtonConstants" /* 5250 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9708 */;
-import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12018 */;
-import _mod12043 from "module_12043" /* 12043 */;
-import _mod13139 from "module_13139" /* 13139 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import timingPresets from "timingPresets" /* 5241 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5260 */;
+import ButtonConstants from "ButtonConstants" /* 5282 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9740 */;
+import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12050 */;
+import _mod12075 from "module_12075" /* 12075 */;
+import _mod13171 from "module_13171" /* 13171 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherO
   }
   const glowLottie = tmp4.glowLottie;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult5 = _mod13139;
+    const tmpResult5 = _mod13171;
     cResult[6] = tmpResult5;
     tmp15 = tmpResult5;
   } else {
@@ -153,7 +153,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherO
             const _Symbol = Symbol;
             const trinketsLottie = tmp4.trinketsLottie;
             if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmpResult6 = _mod12043;
+              const tmpResult6 = _mod12075;
               cResult[20] = tmpResult6;
               tmp33 = tmpResult6;
             } else {
@@ -229,7 +229,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherO
   items1 = [React3.absoluteFill, tmp.glowAnimation];
   const obj3 = { children: items4 };
   const View = ReanimatedRexportDefault.View;
-  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod13139, autoPlay: !stateFromStores };
+  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod13171, autoPlay: !stateFromStores };
   const tmp5 = LottieAnimationViewDefault;
   items2 = [metroRequire(tmp5, obj5), , ];
   const obj6 = { collapsable: false, style: items3 };
@@ -238,7 +238,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherO
   const obj7 = { collapsable: false, style: tmp.fakeButton };
   items2[2] = metroRequire(_false, obj7);
   items4 = [metroImportDefault(View, obj4), ];
-  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12043, autoPlay: !stateFromStores };
+  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12075, autoPlay: !stateFromStores };
   const tmp6 = LottieAnimationViewDefault;
   items4[1] = metroRequire(tmp6, obj8);
   return metroImportDefault(metroImportAll, obj3);

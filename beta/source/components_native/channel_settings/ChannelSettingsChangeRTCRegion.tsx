@@ -1,23 +1,23 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18346
+// Function ID: 18347
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 4823, 18259, 21, 4971, 587, 5037, 1128, 10093, 6984, 6985, 8951, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 4855, 18296, 21, 5003, 587, 5069, 1128, 10125, 7016, 7017, 8983, 558, 576, 504, 38, 2]
 
-// Module 18309 (ChannelSettingsChangeRTCRegion)
+// Module 18346 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import native from "native" /* 5037 */;
-import TableRadioRow from "TableRadioRow" /* 6984 */;
-import TableRadioGroup from "TableRadioGroup" /* 6985 */;
-import Form2 from "Form" /* 8951 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10093 */;
+import native from "native" /* 5069 */;
+import TableRadioRow from "TableRadioRow" /* 7016 */;
+import TableRadioGroup from "TableRadioGroup" /* 7017 */;
+import Form2 from "Form" /* 8983 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10125 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import RegionStore from "RegionStore" /* 18259 */;
-import createStyles from "createStyles" /* 4971 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RegionStore from "RegionStore" /* 18296 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(10093);
+    let obj = self(10125);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

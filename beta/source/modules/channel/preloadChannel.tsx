@@ -1,10 +1,10 @@
-// Module ID: 5709
-// Function ID: 5710
+// Module ID: 5741
+// Function ID: 5742
 // Name: preloadChannel
 // Dependencies: [1087, 584, 2]
 // Exports: default
 
-// Module 5709 (preloadChannel)
+// Module 5741 (preloadChannel)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

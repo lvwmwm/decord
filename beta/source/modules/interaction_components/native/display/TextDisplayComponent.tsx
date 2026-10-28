@@ -1,21 +1,21 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17123
+// Function ID: 17124
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4972, 4823, 4874, 8594, 21, 558, 576, 8595, 38, 5705, 8482, 504, 4799, 8763, 10008, 17090, 11279, 2]
+// Dependencies: [32, 19, 5004, 4855, 4906, 8626, 21, 558, 576, 8627, 38, 5737, 8514, 504, 4831, 8795, 10040, 17124, 11311, 2]
 
-// Module 17089 (TextDisplayComponent)
+// Module 17123 (TextDisplayComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8482 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 8594 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 10008 */;
-import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 17090 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8514 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 8626 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 10040 */;
+import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 17124 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4874 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
   let obj = channelId(576);
   const cResult = obj.c(21);
   ({ type, id, content } = arg0);
-  const obj2 = channelId(8595);
+  const obj2 = channelId(8627);
   const componentContainerId = obj2.useComponentContainerId();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     channelId = SelectedChannelStore.getChannelId();
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
       const tmpResult = channelId(504);
       [tmp18, tmp19] = tmpResult.useStateFromStoresArray(tmp13, tmp14);
       _slicedToArray(tmpResult.useStateFromStoresArray(tmp13, tmp14), 2);
-      const AnimateEmoji = tmp(4799).AnimateEmoji;
+      const AnimateEmoji = tmp(4831).AnimateEmoji;
       const setting = AnimateEmoji.useSetting();
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
@@ -94,7 +94,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
       }
       const tmpResult4 = channelId(504);
       const stateFromStores = tmpResult4.useStateFromStores(tmp21, tmp22);
-      const tmpResult5 = channelId(8763);
+      const tmpResult5 = channelId(8795);
       const tmp25 = !tmpResult5.useShouldDisplaySpoilerObscurity(stateFromStores);
       if (cResult[9] === tmp19) {
         if (cResult[10] === setting) {
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
                   return tmp32;
                 }
                 TextDisplayComponentViewNativeComponentDefault;
-                const tmp35 = <tmp8Result model={tmp10} markdownTextRenderOptions={tmp28} onTapLink={tmp30} onLongPressLink={channelId(11279).contentHandlers.onLongPressLink} onTapAttachmentLink={channelId(11279).contentHandlers.onTapAttachmentLink} onLongPressAttachmentLink={channelId(11279).contentHandlers.onLongPressAttachmentLink} onTapMention={channelId(11279).contentHandlers.onTapMention} onTapTimestamp={channelId(11279).contentHandlers.onTapTimestamp} onTapInlineCode={channelId(11279).contentHandlers.onTapInlineCode} onTapEmoji={channelId(11279).contentHandlers.onTapEmoji} style={tmp31} />;
+                const tmp35 = <tmp8Result model={tmp10} markdownTextRenderOptions={tmp28} onTapLink={tmp30} onLongPressLink={channelId(11311).contentHandlers.onLongPressLink} onTapAttachmentLink={channelId(11311).contentHandlers.onTapAttachmentLink} onLongPressAttachmentLink={channelId(11311).contentHandlers.onLongPressAttachmentLink} onTapMention={channelId(11311).contentHandlers.onTapMention} onTapTimestamp={channelId(11311).contentHandlers.onTapTimestamp} onTapInlineCode={channelId(11311).contentHandlers.onTapInlineCode} onTapEmoji={channelId(11311).contentHandlers.onTapEmoji} style={tmp31} />;
                 cResult[18] = tmp10;
                 cResult[19] = tmp28;
                 cResult[20] = tmp35;
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
   parseToAST = MarkupUtilsDefault.parseToAST;
   MarkupUtilsDefault;
   obj7 = { channelId, renderOptions };
-  tmpResult6 = channelId(8482);
+  tmpResult6 = channelId(8514);
   const json = stringify(obj6);
   cResult[1] = content;
   cResult[2] = id;
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
 }) : (function TextDisplayComponent(type) {
   let tmp6;
   let tmp7;
-  const f129117 = () => {
+  const f129240 = () => {
     const items = [, ];
     ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
     return items;
@@ -193,8 +193,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
   }, items);
   let obj2 = type(content[13]);
   const items1 = [AccessibilityStore];
-  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f129117), 2);
-  channelId(obj2.useStateFromStoresArray(items1, f129117), 2);
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f129240), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f129240), 2);
   const AnimateEmoji = type(content[14]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj3 = type(content[13]);

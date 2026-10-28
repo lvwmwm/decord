@@ -1,21 +1,21 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13061
+// Function ID: 13062
 // Name: TraitOptionList
-// Dependencies: [19, 17, 4972, 6015, 21, 587, 4971, 558, 576, 7962, 6362, 504, 5267, 5052, 5599, 1499, 5206, 5212, 13030, 2]
+// Dependencies: [19, 17, 5004, 6047, 21, 587, 5003, 558, 576, 7994, 6394, 504, 5299, 5084, 5631, 1499, 5238, 5244, 13062, 2]
 
-// Module 13029 (TraitOptionList)
+// Module 13061 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import HapticUtils from "HapticUtils" /* 5212 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6362 */;
-import inlineStyles from "inlineStyles" /* 7962 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import HapticUtils from "HapticUtils" /* 5244 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6394 */;
+import inlineStyles from "inlineStyles" /* 7994 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import CheckpointConstants from "CheckpointConstants" /* 6015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import CheckpointConstants from "CheckpointConstants" /* 6047 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
-    const Polygon = tmp(7962).Polygon;
+    const Polygon = tmp(7994).Polygon;
     const tmp8 = React4(Polygon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

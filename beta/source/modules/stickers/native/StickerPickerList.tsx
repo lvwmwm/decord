@@ -1,30 +1,30 @@
-// Module ID: 10186
-// Function ID: 10187
+// Module ID: 10218
+// Function ID: 10219
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 6766, 10157, 10124, 1087, 21, 4971, 587, 558, 576, 1202, 10187, 1128, 5234, 9908, 6489, 5052, 9925, 9854, 504, 10188, 9907, 10189, 10169, 12, 7157, 10190, 5596, 9917, 7150, 9930, 5030, 2]
+// Dependencies: [32, 19, 17, 6798, 10189, 10156, 1087, 21, 5003, 587, 558, 576, 1202, 10219, 1128, 5266, 9940, 6521, 5084, 9957, 9886, 504, 10220, 9939, 10221, 10201, 12, 7189, 10222, 5628, 9949, 7182, 9962, 5062, 2]
 
-// Module 10186 (StickerPickerList)
+// Module 10218 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7157 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9907 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9908 */;
-import StickerPickerStore from "StickerPickerStore" /* 10157 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10169 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10187 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 10188 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10189 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7189 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9939 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9940 */;
+import StickerPickerStore from "StickerPickerStore" /* 10189 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10201 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10219 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 10220 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10221 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6766 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10124 */;
+import StickersStore from "StickersStore" /* 6798 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10156 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         tmp6 = cResult[5];
       }
       if (cResult[6] !== isSectionNitroLocked) {
-        const tmp8 = isSectionNitroLocked && map1(tmp(9908).PremiumUpsellGradientBackground, {});
+        const tmp8 = isSectionNitroLocked && map1(tmp(9940).PremiumUpsellGradientBackground, {});
         cResult[6] = isSectionNitroLocked;
         cResult[7] = tmp8;
         tmp7 = tmp8;

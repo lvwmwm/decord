@@ -1,14 +1,14 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8697
+// Function ID: 8698
 // Name: openProductDetailsActionSheet
-// Dependencies: [7661, 7649, 5210, 8666, 2002, 2]
+// Dependencies: [7693, 7681, 5242, 8698, 2002, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 8665 (openProductDetailsActionSheet)
+// Module 8697 (openProductDetailsActionSheet)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5210 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7649 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7661 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7693 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Product Preview";
@@ -45,7 +45,7 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   tmpResult.productDetailsOpened(skuId);
   const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(8666, tmp2.paths), c3, obj2, stack);
+  obj3.openLazy(asyncRequire(8698, tmp2.paths), c3, obj2, stack);
 };
 export const openProductDetailsActionSheetForSku = function openProductDetailsActionSheetForSku(skuId, stack) {
   let analyticsLocations;
@@ -58,5 +58,5 @@ export const openProductDetailsActionSheetForSku = function openProductDetailsAc
   obj.productDetailsOpened(skuId);
   const obj2 = ActionSheetActionCreatorsDefault;
   const obj3 = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext, stageCollectibleChangeForEditProfile };
-  obj2.openLazy(asyncRequire(8666, dependencyMap.paths), c3, obj3, stack);
+  obj2.openLazy(asyncRequire(8698, dependencyMap.paths), c3, obj3, stack);
 };

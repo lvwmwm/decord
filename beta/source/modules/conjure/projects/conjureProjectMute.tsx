@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10755
+// Function ID: 10756
 // Name: conjureProjectMute
-// Dependencies: [1246, 558, 576, 504, 4804, 1211, 2]
+// Dependencies: [1246, 558, 576, 504, 4836, 1211, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted
 
-// Module 10723 (conjureProjectMute)
+// Module 10755 (conjureProjectMute)
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

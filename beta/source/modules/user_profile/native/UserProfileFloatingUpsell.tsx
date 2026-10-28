@@ -1,24 +1,24 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15975
+// Function ID: 15976
 // Name: UserProfileFloatingUpsell
-// Dependencies: [32, 19, 7304, 21, 4971, 15942, 558, 576, 1633, 2]
+// Dependencies: [32, 19, 7336, 21, 5003, 15976, 558, 576, 1633, 2]
 
-// Module 15941 (UserProfileFloatingUpsell)
+// Module 15975 (UserProfileFloatingUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15942 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15976 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7304 */;
-import createStyles from "createStyles" /* 4971 */;
+import Constants from "Constants" /* 7336 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const UserProfileUpsellCardV2Default = tmp3(15942);
+const UserProfileUpsellCardV2Default = tmp3(15976);
 ({ FLOATING_UPSELL_HEIGHT: hasOwnProperty, PROFILE_SIDE_PADDING: metroRequire } = Constants);
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles((bottom) => {

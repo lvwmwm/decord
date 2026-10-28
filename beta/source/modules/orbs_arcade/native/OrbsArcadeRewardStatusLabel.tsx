@@ -1,18 +1,18 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16439
+// Function ID: 16440
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 4971, 587, 16396, 1128, 558, 576, 5234, 8566, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 16430, 1128, 558, 576, 5266, 8598, 2]
 
-// Module 16405 (OrbsArcadeRewardStatusLabel)
+// Module 16439 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5234 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16396 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16430 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp4;
-const LockIcon2 = tmp4(8566);
+const LockIcon2 = tmp4(8598);
 function getStatusLabel(type, arg1) {
   type = type.type;
   const FRACTIONAL_PREMIUM = OrbsArcadeTypes.OrbsArcadeRewardType.FRACTIONAL_PREMIUM;
@@ -68,7 +68,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeReward
         let tmp12 = null;
         if (status === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED) {
           const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-          const LockIcon = tmp(8566).LockIcon;
+          const LockIcon = tmp(8598).LockIcon;
           tmp12 = React3(LockIcon, obj2);
         }
         cResult[6] = status;

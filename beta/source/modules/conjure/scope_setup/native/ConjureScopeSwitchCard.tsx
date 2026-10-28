@@ -1,19 +1,19 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12502
+// Function ID: 12503
 // Name: ConjureScopeSwitchCard
-// Dependencies: [109, 19, 21, 558, 576, 12471, 12472, 2]
+// Dependencies: [109, 19, 21, 558, 576, 12503, 12504, 2]
 
-// Module 12470 (ConjureScopeSwitchCard)
+// Module 12502 (ConjureScopeSwitchCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12472 */;
+import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12504 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useConjureScopeCards = tmp(12471);
+const useConjureScopeCards = tmp(12503);
 let closure_3 = ["onInputFocusChange"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureScopeSwitchCard(onInputFocusChange) {

@@ -1,15 +1,15 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 9653
+// Function ID: 9654
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 9612, 1087, 21, 4971, 558, 576, 1505, 9622, 1128, 9623, 2]
+// Dependencies: [19, 9644, 1087, 21, 5003, 558, 576, 1505, 9654, 1128, 9655, 2]
 
-// Module 9621 (XboxLinkPreConnect)
+// Module 9653 (XboxLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9612 */;
-import _modDef9622 from "module_9622" /* 9622 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9644 */;
+import _modDef9654 from "module_9654" /* 9654 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkPr
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef9622 };
+    const obj3 = { uri: _modDef9654 };
     cResult[4] = obj3;
     tmp8 = obj3;
   } else {
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkPr
       return tmp14;
     }
   }
-  const tmp15 = jsx(navigation(9623).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
+  const tmp15 = jsx(navigation(9655).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
   cResult[7] = tmp7;
   cResult[8] = tmp6;
   cResult[9] = tmp4.image;
@@ -99,10 +99,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkPr
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef9622 };
+    const obj = { uri: _modDef9654 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(9623).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9655).TwoWayLinkPreConnect;
   const intl = navigation(1128).intl;
   const intl2 = navigation(1128).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1128).t["e/z3na"])} body={intl2.string(navigation(1128).t["7tXu0i"])} />;

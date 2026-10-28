@@ -4,4 +4,4 @@
 
 // Module 15590
 
-export default {};
+export default (arg0) => null == arg0;

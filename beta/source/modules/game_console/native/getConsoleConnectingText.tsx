@@ -1,10 +1,10 @@
-// Module ID: 18606
-// Function ID: 18607
+// Module ID: 18643
+// Function ID: 18644
 // Name: getConsoleConnectingText
 // Dependencies: [1087, 1128, 2]
 // Exports: getConsoleConnectingText
 
-// Module 18606 (getConsoleConnectingText)
+// Module 18643 (getConsoleConnectingText)
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8703
+// Function ID: 8704
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4823, 4883, 1392, 8672, 1087, 21, 4971, 587, 8674, 1128, 558, 576, 6987, 6903, 1202, 4978, 5205, 504, 8675, 7278, 7253, 8679, 8688, 1267, 8670, 8668, 8689, 7062, 5234, 5989, 5244, 6908, 4799, 5265, 5269, 2]
+// Dependencies: [32, 19, 17, 4855, 4915, 1392, 8704, 1087, 21, 5003, 587, 8706, 1128, 558, 576, 7019, 6935, 1202, 5010, 5237, 504, 8707, 7310, 7285, 8711, 8720, 1267, 8702, 8700, 8721, 7094, 5266, 6021, 5276, 6940, 4831, 5297, 5301, 2]
 
-// Module 8671 (UserProfileSpeedBumpActionSheet)
+// Module 8703 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 4799 */;
-import TableRow2 from "TableRow" /* 6903 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8668 */;
-import UserActionCreators from "UserActionCreators" /* 8670 */;
-import Constants2 from "Constants" /* 8672 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8674 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import TableRow2 from "TableRow" /* 6935 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import UserActionCreators from "UserActionCreators" /* 8702 */;
+import Constants2 from "Constants" /* 8704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4823 */;
-import GuildMemberStore from "GuildMemberStore" /* 4883 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
         stringResult = intl2.string(tmp(1128).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6987).TableRowGroup;
+      const TableRowGroup = tmp(7019).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
@@ -148,7 +148,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
           return authStore2(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6987).TableRowGroup;
+    const TableRowGroup = tmp4(7019).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");

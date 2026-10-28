@@ -1,11 +1,11 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10238
+// Function ID: 10239
 // Name: isApplicationAgeRestricted
-// Dependencies: [2045, 5612, 2]
+// Dependencies: [2045, 5644, 2]
 // Exports: default
 
-// Module 10206 (isApplicationAgeRestricted)
-import utils from "utils" /* 5612 */;
+// Module 10238 (isApplicationAgeRestricted)
+import utils from "utils" /* 5644 */;
 import ApplicationStore from "ApplicationStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 

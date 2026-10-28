@@ -1,13 +1,13 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15322
+// Function ID: 15323
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 4982, 558, 576, 5665, 4985, 4980, 2]
+// Dependencies: [32, 19, 5014, 558, 576, 5697, 5017, 5012, 2]
 
-// Module 15288 (DEFAULT_TOAST_POSITION)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4980 */;
+// Module 15322 (DEFAULT_TOAST_POSITION)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4982 from "module_4982" /* 4982 */;
+import module_5014 from "module_5014" /* 5014 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, dependencyMap, set;
 let _slicedToArray = _slicedToArray_mod;
 const top = "top";
 let c5 = 3000;
-let closure_6 = module_4982.create(() => {
+let closure_6 = module_5014.create(() => {
   const obj = { containerIdsBySurface: new Map() };
   new Map();
   return obj;
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastCont
   let obj = react;
   const tmp = closure_7(arg0, react.useId());
   let tmp2 = _require;
-  const obj2 = require("module_5665");
+  const obj2 = require("module_5697");
   const tmp3 = entry;
   entry = undefined;
   if (tmp) {

@@ -1,19 +1,19 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16207
+// Function ID: 16208
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1392, 7646, 21, 4971, 587, 558, 576, 573, 7554, 16169, 16170, 7285, 5662, 1128, 2536, 9101, 8173, 5234, 5977, 14207, 5244, 6696, 2]
+// Dependencies: [19, 17, 1392, 7678, 21, 5003, 587, 558, 576, 573, 7586, 16203, 16204, 7317, 5694, 1128, 2536, 9133, 8205, 5266, 6009, 14239, 5276, 6728, 2]
 
-// Module 16173 (ConnectGuardianCard)
+// Module 16207 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 5662 */;
-import ClipboardUtils from "ClipboardUtils" /* 7285 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7646 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16170 */;
+import ToastUtils from "ToastUtils" /* 5694 */;
+import ClipboardUtils from "ClipboardUtils" /* 7317 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7678 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16204 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

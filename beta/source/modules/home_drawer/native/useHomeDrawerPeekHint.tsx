@@ -1,20 +1,20 @@
-// Module ID: 17451
-// Function ID: 17452
+// Module ID: 17488
+// Function ID: 17489
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4972, 17444, 1087, 4820, 5052, 4807, 558, 576, 1506, 17452, 504, 17446, 5001, 7496, 5206, 5247, 17449, 2]
+// Dependencies: [32, 19, 5004, 17481, 1087, 4852, 5084, 4839, 558, 576, 1506, 17489, 504, 17483, 5033, 7528, 5238, 5279, 17486, 2]
 
-// Module 17451 (useHomeDrawerPeekHint)
+// Module 17488 (useHomeDrawerPeekHint)
 import Constants from "Constants" /* 1087 */;
-import dismissible_content from "dismissible_content" /* 4807 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4820 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5052 */;
-import timing from "timing" /* 5206 */;
-import spring from "spring" /* 5247 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17449 */;
+import dismissible_content from "dismissible_content" /* 4839 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import spring from "spring" /* 5279 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17486 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4972 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 17444 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 17481 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

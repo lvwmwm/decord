@@ -1,25 +1,25 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12203
+// Function ID: 12204
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 7631, 8293, 21, 4971, 587, 558, 576, 11831, 12172, 2000, 12153, 504, 9665, 1128, 8145, 12187, 12189, 2]
+// Dependencies: [19, 17, 7663, 8325, 21, 5003, 587, 558, 576, 11863, 12204, 2000, 12185, 504, 9697, 1128, 8177, 12219, 12221, 2]
 
-// Module 12171 (AppLauncherAttachmentOption)
+// Module 12203 (AppLauncherAttachmentOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DraftStore from "DraftStore" /* 7631 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12172 */;
+import DraftStore from "DraftStore" /* 7663 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12204 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8293 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 let size1;
 let tmp;
-const FileIcon = tmp(11831);
+const FileIcon = tmp(11863);
 let View = react_native.View;
 const DraftType = DraftStore.DraftType;
 const jsx = Fragment.jsx;

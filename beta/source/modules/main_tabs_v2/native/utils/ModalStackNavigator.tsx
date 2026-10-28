@@ -1,17 +1,17 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10062
+// Function ID: 10063
 // Name: ModalStackNavigator
-// Dependencies: [109, 19, 21, 9743, 558, 576, 7095, 9699, 10031, 1384, 2]
+// Dependencies: [109, 19, 21, 9775, 558, 576, 7127, 9731, 10063, 1384, 2]
 
-// Module 10030 (ModalStackNavigator)
+// Module 10062 (ModalStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Navigator2 from "Navigator" /* 7095 */;
-import HeaderShared from "HeaderShared" /* 9699 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10031 */;
+import Navigator2 from "Navigator" /* 7127 */;
+import HeaderShared from "HeaderShared" /* 9731 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10063 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9743 */;
+import NativeStackView from "NativeStackView" /* 9775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

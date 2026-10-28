@@ -1,14 +1,14 @@
-// Module ID: 5977
-// Function ID: 5978
+// Module ID: 6009
+// Function ID: 6010
 // Name: Stack/Stack
-// Dependencies: [19, 17, 21, 4971, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 2]
 
-// Module 5977 (Stack/Stack)
+// Module 6009 (Stack/Stack)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

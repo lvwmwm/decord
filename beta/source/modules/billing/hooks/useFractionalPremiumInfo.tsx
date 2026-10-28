@@ -1,19 +1,19 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7537
+// Function ID: 7538
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1392, 2058, 7506, 1087, 1394, 2049, 38, 4787, 2053, 558, 576, 504, 7508, 5263, 12, 2]
+// Dependencies: [32, 19, 1392, 2058, 7538, 1087, 1394, 2049, 38, 4819, 2053, 558, 576, 504, 7540, 5295, 12, 2]
 
-// Module 7505 (useFractionalPremiumInfo)
+// Module 7537 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef2049 from "module_2049" /* 2049 */;
 import PremiumUtils from "PremiumUtils" /* 2053 */;
-import BillingUtils from "BillingUtils" /* 4787 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7508 */;
+import BillingUtils from "BillingUtils" /* 4819 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7540 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2058 */;
-import EntitlementStore from "EntitlementStore" /* 7506 */;
+import EntitlementStore from "EntitlementStore" /* 7538 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

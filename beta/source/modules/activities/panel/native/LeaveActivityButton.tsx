@@ -1,16 +1,16 @@
-// Module ID: 18368
-// Function ID: 18369
+// Module ID: 18405
+// Function ID: 18406
 // Name: LeaveActivityButton
-// Dependencies: [19, 5609, 21, 558, 576, 1128, 5244, 11538, 10771, 2]
+// Dependencies: [19, 5641, 21, 558, 576, 1128, 5276, 11570, 10803, 2]
 
-// Module 18368 (LeaveActivityButton)
+// Module 18405 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import components_Button_Button from "components/Button/Button" /* 5244 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5609 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10771 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11538 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5641 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10803 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11570 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseLeaveA
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const Button = tmp(5244).Button;
+    const Button = tmp(5276).Button;
     const tmp11 = <Button onPress={onPress} icon={AssetRegistryDefault} text={tmp4} accessibilityLabel={tmp5} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
     cResult[2] = onPress;
     cResult[3] = tmp11;

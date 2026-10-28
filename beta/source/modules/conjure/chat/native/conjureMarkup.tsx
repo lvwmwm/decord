@@ -1,14 +1,14 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11857
+// Function ID: 11858
 // Name: conjureMarkup
-// Dependencies: [19, 21, 12, 5705, 11826, 11827, 2]
+// Dependencies: [19, 21, 12, 5737, 11858, 11859, 2]
 // Exports: parseConjureMarkup
 
-// Module 11825 (conjureMarkup)
+// Module 11857 (conjureMarkup)
 import Fragment from "Fragment" /* 21 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5705 */;
-import conjureFileMentions from "conjureFileMentions" /* 11826 */;
-import ConjureFileMentionDefault from "ConjureFileMention" /* 11827 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
+import conjureFileMentions from "conjureFileMentions" /* 11858 */;
+import ConjureFileMentionDefault from "ConjureFileMention" /* 11859 */;
 import react from "react" /* 19 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

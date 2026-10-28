@@ -1,20 +1,17 @@
 // Module ID: 15580
 // Function ID: 15581
-// Dependencies: [15548, 15549, 15581]
+// Dependencies: [15579]
 
 // Module 15580
-import _mod15549 from "module_15549" /* 15549 */;
-import _mod15581 from "module_15581" /* 15581 */;
-import getOwnPropertyDescriptor from "module_15548" /* 15548 */;
+import _mod15579 from "module_15579" /* 15579 */;
 
-const f71204 = () => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty(_mod15581("div"), "a", obj).a;
+
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod15579, arg0, obj);
+  } catch (err) {
+    _mod15579[arg0] = value;
+  }
+  return value;
 };
-!getOwnPropertyDescriptor && !_mod15549(f71204);
-
-export default !getOwnPropertyDescriptor && !_mod15549(f71204);

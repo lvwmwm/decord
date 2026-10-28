@@ -1,20 +1,20 @@
-// Module ID: 11669
-// Function ID: 11670
+// Module ID: 11701
+// Function ID: 11702
 // Name: LabeledActionBarButton
-// Dependencies: [109, 19, 17, 1098, 21, 4971, 6707, 587, 558, 576, 5669, 1202, 6908, 2]
+// Dependencies: [109, 19, 17, 1098, 21, 5003, 6739, 587, 558, 576, 5701, 1202, 6940, 2]
 
-// Module 11669 (LabeledActionBarButton)
+// Module 11701 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
-import FastImageDefault from "FastImage" /* 5669 */;
-import LegacyTokens from "LegacyTokens" /* 6707 */;
-import Pressables from "Pressables" /* 6908 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import LegacyTokens from "LegacyTokens" /* 6739 */;
+import Pressables from "Pressables" /* 6940 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4971 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -203,7 +203,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                                     }
                                   }
                                   const obj6 = { accessibilityRole: "button", disabled: tmp6, style: tmp15.pressable, children: tmp42 };
-                                  const PressableOpacity = tmp(6908).PressableOpacity;
+                                  const PressableOpacity = tmp(6940).PressableOpacity;
                                   const merged = Object.assign(tmp9);
                                   const tmp51 = metroRequire(PressableOpacity, obj6);
                                   cResult[47] = tmp6;

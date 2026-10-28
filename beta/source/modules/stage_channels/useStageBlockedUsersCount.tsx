@@ -1,12 +1,12 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8138
+// Function ID: 8139
 // Name: useStageBlockedUsersCount
-// Dependencies: [6641, 558, 576, 6688, 504, 2]
+// Dependencies: [6673, 558, 576, 6720, 504, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount
 
-// Module 8106 (useStageBlockedUsersCount)
-import StageChannelParticipants from "StageChannelParticipants" /* 6688 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6641 */;
+// Module 8138 (useStageBlockedUsersCount)
+import StageChannelParticipants from "StageChannelParticipants" /* 6720 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6673 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

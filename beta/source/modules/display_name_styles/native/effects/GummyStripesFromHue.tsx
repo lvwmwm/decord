@@ -1,14 +1,14 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16740
+// Function ID: 16741
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 4971, 558, 576, 1409, 5052, 15845, 2]
+// Dependencies: [32, 19, 21, 5003, 558, 576, 1409, 5084, 15879, 2]
 
-// Module 16706 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 15845 */;
+// Module 16740 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 15879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4971 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

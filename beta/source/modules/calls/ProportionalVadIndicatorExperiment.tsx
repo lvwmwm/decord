@@ -1,9 +1,9 @@
-// Module ID: 5834
-// Function ID: 5835
+// Module ID: 5866
+// Function ID: 5867
 // Name: ProportionalVadIndicatorExperiment
 // Dependencies: [1456, 2]
 
-// Module 5834 (ProportionalVadIndicatorExperiment)
+// Module 5866 (ProportionalVadIndicatorExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1456 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9018
+// Function ID: 9019
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8985, 558, 576, 504, 8987, 2]
+// Dependencies: [5, 19, 9017, 558, 576, 504, 9019, 2]
 
-// Module 8986 (useGuildProfile)
+// Module 9018 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 8985 */;
+import GuildProfileStore from "GuildProfileStore" /* 9017 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

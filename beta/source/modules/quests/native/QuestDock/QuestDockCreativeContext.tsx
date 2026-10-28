@@ -1,12 +1,12 @@
-// Module ID: 16469
-// Function ID: 16470
+// Module ID: 16503
+// Function ID: 16504
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 558, 576, 6717, 2]
+// Dependencies: [19, 21, 558, 576, 6749, 2]
 
-// Module 16469 (QuestDockCreativeContext)
+// Module 16503 (QuestDockCreativeContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 6717 */;
+import AdCreativeType from "AdCreativeType" /* 6749 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
