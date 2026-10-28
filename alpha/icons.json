@@ -6152,13 +6152,6 @@
         "width": 300,
         "height": 120
     },
-    "img_stream_full": {
-        "file": "app/images/native/application_streaming/img_stream_full.png",
-        "hash": "c73d40dd66a153a872cf68d5a6b8779e",
-        "scales": [],
-        "width": 272,
-        "height": 93
-    },
     "img_study": {
         "file": "app/modules/create_guild/native/images/img_study.png",
         "hash": "4baba2bad08c08e75957838b804dc091",
@@ -9095,6 +9088,13 @@
     "WaveformIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/WaveformIcon.png",
         "hash": "07392a850e043822a5c8062588fbfbb4",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "WaveformSlashIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WaveformSlashIcon.png",
+        "hash": "f1866c542e48fd1fe13979e0f76a481a",
         "scales": [],
         "width": 24,
         "height": 24
