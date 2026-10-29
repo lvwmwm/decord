@@ -1,12 +1,12 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14870
+// Function ID: 14871
 // Name: ConjureCustomWidget
-// Dependencies: [4878, 558, 576, 1452, 7382, 504, 2]
+// Dependencies: [4879, 558, 576, 1453, 7405, 504, 2]
 // Exports: composeConjureCustomWidgetPrompt
 
-// Module 14636 (ConjureCustomWidget)
-import ConjureUtils from "ConjureUtils" /* 7382 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 14870 (ConjureCustomWidget)
+import ConjureUtils from "ConjureUtils" /* 7405 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let result = size.fileFinishedImporting("modules/conjure/custom_widget/ConjureCu
 
 export const CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH = 2000;
 export const useCanConjureCustomWidget = tmp2;
-export const composeConjureCustomWidgetPrompt = function composeConjureCustomWidgetPrompt(trimmed) {
+export function composeConjureCustomWidgetPrompt(trimmed) {
   const items = ["Build a profile card (an application profile widget) for my Discord profile.", "Read the data from the public source below \u2014 it must be reachable without a login.", "Recommend which fields the card should show and ask me to confirm or edit them before you build.", "", trimmed];
   return items.join("\n");
-};
+}

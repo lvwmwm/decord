@@ -1,16 +1,16 @@
-// Module ID: 6521
-// Function ID: 6522
+// Module ID: 6545
+// Function ID: 6546
 // Name: EmbedUtils
-// Dependencies: [1084, 6522, 11, 1402, 12, 2046, 6049, 2]
+// Dependencies: [1084, 6546, 11, 1402, 12, 2047, 6053, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6521 (EmbedUtils)
+// Module 6545 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6049 */;
-import EmbedConstants from "EmbedConstants" /* 6522 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6053 */;
+import EmbedConstants from "EmbedConstants" /* 6546 */;
 import Constants from "Constants" /* 1084 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const re18 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/users\/
 let size = size_mod;
 let result = size.fileFinishedImporting("utils/EmbedUtils.tsx");
 
-export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
+export function sanitizeEmbed(channel_id, id, footer) {
   let content_type;
   let content_type2;
   let content_type3;
@@ -102,7 +102,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const tmpResult = _modDef2046;
+    const tmpResult = _modDef2047;
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -265,8 +265,8 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.components = tmp39;
   }
   return obj;
-};
-export const mergeEmbedsOnURL = function mergeEmbedsOnURL(mapped) {
+}
+export function mergeEmbedsOnURL(mapped) {
   map = new Map();
   const items = [];
   const item = mapped.forEach((url) => {
@@ -292,9 +292,9 @@ export const mergeEmbedsOnURL = function mergeEmbedsOnURL(mapped) {
     }
   });
   return items;
-};
+}
 export { getEffectiveVideoProvider };
-export const isEmbedInline = function isEmbedInline(type) {
+export function isEmbedInline(type) {
   let author;
   let rawTitle;
   type = type.type;
@@ -311,36 +311,36 @@ export const isEmbedInline = function isEmbedInline(type) {
     tmp = tmp2;
   }
   return tmp;
-};
-export const isServerShopArticleEmbed = function isServerShopArticleEmbed(type) {
+}
+export function isServerShopArticleEmbed(type) {
   let tmp = type.type === constants2.ARTICLE && null != type.url;
   if (tmp) {
     const isMatch = re11.test(type.url) || re10.test(type.url);
     tmp = isMatch;
   }
   return tmp;
-};
-export const isCollectiblesShopArticleEmbed = function isCollectiblesShopArticleEmbed(type) {
+}
+export function isCollectiblesShopArticleEmbed(type) {
   const isMatch = type.type === constants2.ARTICLE && null != type.url && regExp.test(type.url);
   return isMatch;
-};
-export const isGameProfileArticleEmbed = function isGameProfileArticleEmbed(type) {
+}
+export function isGameProfileArticleEmbed(type) {
   const isMatch = type.type === constants2.ARTICLE && null != type.url && re17.test(type.url);
   return isMatch;
-};
-export const isUserProfileArticleEmbed = function isUserProfileArticleEmbed(type) {
+}
+export function isUserProfileArticleEmbed(type) {
   const isMatch = type.type === constants2.ARTICLE && null != type.url && re18.test(type.url);
   return isMatch;
-};
-export const isSocialLayerStorefrontArticleEmbed = function isSocialLayerStorefrontArticleEmbed(type) {
+}
+export function isSocialLayerStorefrontArticleEmbed(type) {
   let tmp = type.type === constants2.ARTICLE && null != type.url;
   if (tmp) {
     const isMatch = re14.test(type.url) || re15.test(type.url) || re13.test(type.url) || re16.test(type.url);
     tmp = isMatch;
   }
   return tmp;
-};
-export const getMaxEmbedMediaSize = function getMaxEmbedMediaSize(provider, maxMediaWidth, maxMediaHeight) {
+}
+export function getMaxEmbedMediaSize(provider, maxMediaWidth, maxMediaHeight) {
   let obj;
   if (null != maxMediaWidth) {
     if (null != maxMediaHeight) {
@@ -368,8 +368,8 @@ export const getMaxEmbedMediaSize = function getMaxEmbedMediaSize(provider, maxM
     }
     obj = { maxMediaWidth: 400, maxMediaHeight: 300 };
   }
-};
-export const canEmbedLinks = function canEmbedLinks(isPrivate, PermissionStore) {
+}
+export function canEmbedLinks(isPrivate, PermissionStore) {
   let canResult;
   if (isPrivate.isPrivate()) {
     canResult = !isPrivate.isManaged();
@@ -377,12 +377,12 @@ export const canEmbedLinks = function canEmbedLinks(isPrivate, PermissionStore) 
     canResult = PermissionStore.can(hasOwnProperty.EMBED_LINKS, isPrivate);
   }
   return canResult;
-};
-export const shouldStripEmbeds = function shouldStripEmbeds(message) {
+}
+export function shouldStripEmbeds(message) {
   let someResult = "" !== message.content;
   if (!someResult) {
     const messageSnapshots = message.messageSnapshots;
     someResult = messageSnapshots.some((message) => "" !== message.message.content || message.message.attachments.length > 0);
   }
   return someResult;
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 8358
-// Function ID: 8359
+// Module ID: 8380
+// Function ID: 8381
 // Name: MessageAccessibilityActions
-// Dependencies: [4832, 8359, 1125, 8362, 8366, 2]
+// Dependencies: [4833, 8381, 1125, 8384, 8388, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 8358 (MessageAccessibilityActions)
+// Module 8380 (MessageAccessibilityActions)
 import intl10 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8359 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8362 */;
-import canReplyToMessage from "canReplyToMessage" /* 8366 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8381 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8384 */;
+import canReplyToMessage from "canReplyToMessage" /* 8388 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
 let result = size.fileFinishedImporting("modules/messages/native/MessageAccessibilityActions.tsx");
 
 export { MessageAccessibilityAction };
-export const getMessageAccessibilityActionFromLabel = function getMessageAccessibilityActionFromLabel(action) {
+export function getMessageAccessibilityActionFromLabel(action) {
   const obj = {};
   const intl = intl10.intl;
   obj[intl.string(intl10.t.iXAna6)] = obj.VIEW_PROFILE;
@@ -57,8 +57,8 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
     obj[formatToPlainStringResult] = tmp3.ADD_QUICK_REACTION;
   }
   return obj[action];
-};
-export const createMessageAccessibilityActions = function createMessageAccessibilityActions(message, channel) {
+}
+export function createMessageAccessibilityActions(message, channel) {
   let intl;
   let intl4;
   let intl5;
@@ -75,7 +75,7 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
       const push = items.push;
       intl = tmp10(1125).intl;
       push(obj);
-      const DoubleTapReactionEmoji = tmp10(4832).DoubleTapReactionEmoji;
+      const DoubleTapReactionEmoji = tmp10(4833).DoubleTapReactionEmoji;
       const setting = DoubleTapReactionEmoji.getSetting();
       let disableDoubleTap;
       if (setting != null) {
@@ -113,4 +113,4 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
     push3(obj6);
     return items;
   }
-};
+}

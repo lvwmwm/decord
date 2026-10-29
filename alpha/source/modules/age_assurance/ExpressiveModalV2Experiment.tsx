@@ -1,14 +1,14 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7979
+// Function ID: 7980
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [7957, 1452, 558, 576, 7932, 504, 2]
+// Dependencies: [7980, 1453, 558, 576, 7955, 504, 2]
 // Exports: isExpressiveModalV2Enabled
 
-// Module 7956 (ExpressiveModalV2Experiment)
+// Module 7979 (ExpressiveModalV2Experiment)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
-import SafetyHubStore from "SafetyHubStore" /* 7957 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
+import SafetyHubStore from "SafetyHubStore" /* 7980 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsExpre
   return enabled;
 });
 const result = size.fileFinishedImporting("modules/age_assurance/ExpressiveModalV2Experiment.tsx");
-const isExpressiveModalV2Enabled_export = function isExpressiveModalV2Enabled(AUTOMATED_UNDERAGE_APPEALS) {
+
+export const useIsExpressiveModalV2Enabled = tmp2;
+export function isExpressiveModalV2Enabled(AUTOMATED_UNDERAGE_APPEALS) {
   let enabled;
   const obj = SafetyHubUtils;
   if (obj.isCurrentUserSuspended()) {
@@ -80,7 +82,4 @@ const isExpressiveModalV2Enabled_export = function isExpressiveModalV2Enabled(AU
     enabled = closure_3.getConfig(obj2).enabled;
   }
   return enabled;
-};
-
-export const useIsExpressiveModalV2Enabled = tmp2;
-export { isExpressiveModalV2Enabled_export as isExpressiveModalV2Enabled };
+}

@@ -1,11 +1,11 @@
-// Module ID: 5946
-// Function ID: 5947
+// Module ID: 5948
+// Function ID: 5949
 // Name: useAlertStore
-// Dependencies: [32, 570, 1271, 5947, 5949, 2]
+// Dependencies: [32, 570, 1271, 5949, 5951, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5946 (useAlertStore)
-import react_nativeDefault from "react-native" /* 5949 */;
+// Module 5948 (useAlertStore)
+import react_nativeDefault from "react-native" /* 5951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const useAlertStore = module_570.create(() => ({ alerts: [] }));
 const result = size.fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
 
 export { useAlertStore };
-export const dismissAlerts = function dismissAlerts() {
+export function dismissAlerts() {
   let arr4;
   let first;
   let obj;
@@ -47,10 +47,10 @@ export const dismissAlerts = function dismissAlerts() {
   });
   const tmp4 = 0 === arr4.length && first.length > 0;
   if (tmp4) {
-    arr4(5947)();
+    arr4(5949)();
   }
-};
-export const dismissAlert = function dismissAlert(key) {
+}
+export function dismissAlert(key) {
   let obj;
   _require = key;
   let alerts = obj.getState().alerts;
@@ -79,11 +79,11 @@ export const dismissAlert = function dismissAlert(key) {
       }
     });
     if (tmp2) {
-      found(5947)();
+      found(5949)();
     }
   }
-};
-export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
+}
+export function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
   let closure_1;
   let obj;
   _require = DeleteEventAlert;
@@ -111,4 +111,4 @@ export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallb
       return { alerts };
     });
   });
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 8445
+// Function ID: 8446
 // Name: getRoleIcon
-// Dependencies: [7318, 1125, 2]
+// Dependencies: [7342, 1125, 2]
 // Exports: getRoleIcon
 
-// Module 8423 (getRoleIcon)
+// Module 8445 (getRoleIcon)
 import intl2 from "intl" /* 1125 */;
-import useRoleIconProps from "useRoleIconProps" /* 7318 */;
+import useRoleIconProps from "useRoleIconProps" /* 7342 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/getRoleIcon.tsx");
 
-export const getRoleIcon = function getRoleIcon(size) {
+export function getRoleIcon(size) {
   let guildId;
   let intl;
   let roleId;
@@ -34,4 +34,4 @@ export const getRoleIcon = function getRoleIcon(size) {
     intl = tmp(1125).intl;
     return obj3;
   }
-};
+}

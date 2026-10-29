@@ -1,17 +1,17 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 18048
+// Function ID: 18049
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4859, 4869, 1084, 558, 576, 504, 10884, 4881, 1125, 3445, 2]
+// Dependencies: [4860, 4870, 1084, 558, 576, 504, 10789, 4882, 1125, 3446, 2]
 
-// Module 17810 (useFavoritesGuildCategoryFullNotice)
+// Module 18048 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import _modDef3445 from "module_3445" /* 3445 */;
-import FavoritesConstants from "FavoritesConstants" /* 4869 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import FavoritesHooks from "FavoritesHooks" /* 10884 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
+import _modDef3446 from "module_3446" /* 3446 */;
+import FavoritesConstants from "FavoritesConstants" /* 4870 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import FavoritesHooks from "FavoritesHooks" /* 10789 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
               let tmp14;
               const _Symbol = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { label: intl.string(_modDef3445.WsUrMD), tooltip: intl2.string(_modDef3445.dW9Kov) };
+                const obj2 = { label: intl.string(_modDef3446.WsUrMD), tooltip: intl2.string(_modDef3446.dW9Kov) };
                 intl = tmp(1125).intl;
                 intl2 = tmp(1125).intl;
                 cResult[2] = obj2;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3445.WsUrMD), tooltip: intl2.string(_modDef3445.dW9Kov) };
+              const obj2 = { label: intl.string(_modDef3446.WsUrMD), tooltip: intl2.string(_modDef3446.dW9Kov) };
               intl = tmp(1125).intl;
               intl2 = tmp(1125).intl;
               tmp6 = obj2;

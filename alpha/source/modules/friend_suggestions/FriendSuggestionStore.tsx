@@ -1,22 +1,22 @@
-// Module ID: 7770
-// Function ID: 7771
+// Module ID: 7792
+// Function ID: 7793
 // Name: FriendSuggestionStore
-// Dependencies: [1403, 1389, 12, 7771, 7772, 504, 584, 2]
+// Dependencies: [1403, 1389, 12, 7793, 7794, 504, 584, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7770 (FriendSuggestionStore)
+// Module 7792 (FriendSuggestionStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7771 */;
-import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7772 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7793 */;
+import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7794 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 
-const f100404 = function(contact_names) {
+const f101417 = function(contact_names) {
   let name;
   let tmp7;
   if (null != contact_names.contact_names) {
@@ -37,7 +37,7 @@ const f100404 = function(contact_names) {
     return obj;
   }
 };
-const f100405 = (key) => key.key;
+const f101418 = (key) => key.key;
 const React3 = {};
 let friendSuggestionCount = 0;
 let c6 = false;
@@ -121,8 +121,8 @@ let obj = {
     suggestions = suggestions.suggestions;
     let obj = _modDef12;
     const chainResult = obj.chain(suggestions);
-    const mapped = chainResult.map(f100404);
-    const iter = mapped.keyBy(f100405);
+    const mapped = chainResult.map(f101417);
+    const iter = mapped.keyBy(f101418);
     closure_4 = iter.value();
     const obj3 = _modDef12;
     friendSuggestionCount = obj3.keys(closure_4).length;
@@ -136,10 +136,10 @@ const friendSuggestionStore = new FriendSuggestionStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionStore.tsx");
 
 export default friendSuggestionStore;
-export const transformFriendSuggestions = function transformFriendSuggestions(arg0) {
+export function transformFriendSuggestions(arg0) {
   const obj = _modDef12;
   const chainResult = obj.chain(arg0);
-  const mapped = chainResult.map(f100404);
-  const iter = mapped.keyBy(f100405);
+  const mapped = chainResult.map(f101417);
+  const iter = mapped.keyBy(f101418);
   return iter.value();
-};
+}

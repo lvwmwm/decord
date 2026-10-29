@@ -1,10 +1,10 @@
-// Module ID: 19796
-// Function ID: 19797
+// Module ID: 20018
+// Function ID: 20019
 // Name: timerUtils
 // Dependencies: [1084, 3, 1264, 551, 567, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 19796 (timerUtils)
+// Module 20018 (timerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import timersAll from "timers" /* 567 */;
@@ -50,7 +50,7 @@ let closure_6 = debounceDefault(function flushDelayLogs() {
 }, 5000);
 let result = size.fileFinishedImporting("modules/libdiscore/timerUtils.tsx");
 
-export const setupLibdiscoreTimersMonitor = function setupLibdiscoreTimersMonitor() {
+export function setupLibdiscoreTimersMonitor() {
   const obj = timersAll;
   const result = obj.setTimersMonitorCallback(onTimersDelayCallback);
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 11309
-// Function ID: 11310
+// Module ID: 11363
+// Function ID: 11364
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1084, 1294, 584, 7262, 2]
+// Dependencies: [5, 1084, 1294, 584, 7286, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 11309 (ConnectionsRoleActionCreators)
+// Module 11363 (ConnectionsRoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -29,7 +29,7 @@ let obj = function _putRoleConnectionsConfigurations() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _putRoleConnectionsConfigurations() {
             const obj3 = closure_132_1(closure_132_2[3]);
             obj3.dispatch(obj11);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           c6 = 3;
@@ -119,7 +119,7 @@ obj = function _fetchUserApplicationRoleConnections() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/connections/ConnectionsRoleActionCreators.tsx");
 
-export const fetchRoleConnectionsConfiguration = function fetchRoleConnectionsConfiguration(guildId, id) {
+export function fetchRoleConnectionsConfiguration(guildId, id) {
   let roleId;
   _require = id;
   const HTTP = require("HTTPUtils").HTTP;
@@ -137,10 +137,10 @@ export const fetchRoleConnectionsConfiguration = function fetchRoleConnectionsCo
   nextPromise.catch(() => {
 
   });
-};
-export const putRoleConnectionsConfigurations = function putRoleConnectionsConfigurations() {
+}
+export function putRoleConnectionsConfigurations() {
   return obj(...arguments);
-};
-export const fetchUserApplicationRoleConnections = function fetchUserApplicationRoleConnections() {
+}
+export function fetchUserApplicationRoleConnections() {
   return obj(...arguments);
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 14186
+// Function ID: 14187
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11233, 6533, 7795, 1084, 4863, 558, 576, 7416, 13954, 11396, 504, 9697, 7796, 2]
+// Dependencies: [5, 32, 19, 11287, 6557, 7818, 1084, 4864, 558, 576, 7439, 14187, 11450, 504, 9729, 7819, 2]
 
-// Module 13953 (useCreateGameInvitePost)
+// Module 14186 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7416 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7795 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11396 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7439 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7818 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11450 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11233 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
+import LocalActivityStore from "LocalActivityStore" /* 11287 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -491,7 +491,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -537,7 +537,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
           c2 = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;

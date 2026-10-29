@@ -1,21 +1,21 @@
-// Module ID: 9270
-// Function ID: 9271
+// Module ID: 9274
+// Function ID: 9275
 // Name: GuildBadgeImageSource
-// Dependencies: [9268, 6924, 6925, 9271, 9272, 9273, 9274, 9275, 9276, 5011, 9267, 2]
+// Dependencies: [9272, 6948, 6949, 9275, 9276, 9277, 9278, 9279, 9280, 5012, 9271, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9270 (GuildBadgeImageSource)
-import shared from "shared" /* 5011 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6924 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6925 */;
-import GuildTraits from "GuildTraits" /* 9267 */;
-import BadgeCategory from "BadgeCategory" /* 9268 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9271 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9272 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9273 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9274 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9275 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9276 */;
+// Module 9274 (GuildBadgeImageSource)
+import shared from "shared" /* 5012 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6948 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6949 */;
+import GuildTraits from "GuildTraits" /* 9271 */;
+import BadgeCategory from "BadgeCategory" /* 9272 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9275 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9276 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9277 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9278 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9279 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9280 */;
 import size from "module_2" /* 2 */;
 
 const badgeVariants = {};
@@ -41,7 +41,7 @@ badgeVariants[BadgeCategory.BadgeCategory.NONE] = {};
 const result = size.fileFinishedImporting("modules/guild_badge/native/GuildBadgeImageSource.tsx");
 
 export { badgeVariants };
-export const resolveImageSource = function resolveImageSource(premiumImageSource, guildTraits, arg2) {
+export function resolveImageSource(premiumImageSource, guildTraits, arg2) {
   let imageSource;
   if (guildTraits.premium) {
     if (null != premiumImageSource.premiumImageSource) {
@@ -56,8 +56,8 @@ export const resolveImageSource = function resolveImageSource(premiumImageSource
     }
   }
   imageSource = premiumImageSource.imageSource;
-};
-export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, theme) {
+}
+export function getGuildBadgeImageSource(guild, theme) {
   const obj = GuildTraits;
   const guildTraits = obj.getGuildTraits(guild);
   const obj2 = BadgeCategory;
@@ -80,4 +80,4 @@ export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild,
     imageSource = tmp4.imageSource;
   }
   return tmp5;
-};
+}

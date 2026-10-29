@@ -1,18 +1,18 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15366
+// Function ID: 15367
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 15132, 7289, 7314, 9591, 5705, 15133, 5270, 1125, 5280, 7321, 15134, 5696, 6014, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 15367, 7313, 7338, 9623, 5707, 15368, 5271, 1125, 5281, 7345, 15369, 5698, 6018, 2]
 
-// Module 15131 (OutboundPromotionClaimAlert)
+// Module 15366 (OutboundPromotionClaimAlert)
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import PromotionUtils from "PromotionUtils" /* 9591 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import PromotionUtils from "PromotionUtils" /* 9623 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 17717
-// Function ID: 17718
+// Module ID: 17955
+// Function ID: 17956
 // Name: TabsPerformanceTracker
-// Dependencies: [19, 1084, 3, 1264, 558, 576, 5085, 2]
+// Dependencies: [19, 1084, 3, 1264, 558, 576, 5086, 2]
 // Exports: trackTabPressed
 
-// Module 17717 (TabsPerformanceTracker)
+// Module 17955 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -245,11 +245,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackTabP
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/TabsPerformanceTracker.tsx");
 
-export const trackTabPressed = function trackTabPressed(arg0) {
+export function trackTabPressed(arg0) {
   if (null == closure_6[arg0]) {
     const _performance = performance;
     tmp[arg0] = { startTime: performance.now() };
     const obj = { startTime: performance.now() };
   }
-};
+}
 export const useTrackTabPerformance = tmp3;

@@ -1,17 +1,17 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11295
+// Function ID: 11296
 // Name: PresenceActivityFiltering
-// Dependencies: [2042, 1997, 2]
+// Dependencies: [2043, 1998, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 11241 (PresenceActivityFiltering)
-import Server from "Server" /* 1997 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+// Module 11295 (PresenceActivityFiltering)
+import Server from "Server" /* 1998 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");
 
-export const doesGameHaveRichPresence = function doesGameHaveRichPresence(visibleGame, items3) {
+export function doesGameHaveRichPresence(visibleGame, items3) {
   if (null !== visibleGame.id) {
     if (undefined !== visibleGame.id) {
       let tmp = ApplicationStore;
@@ -32,4 +32,4 @@ export const doesGameHaveRichPresence = function doesGameHaveRichPresence(visibl
     }
   }
   return false;
-};
+}

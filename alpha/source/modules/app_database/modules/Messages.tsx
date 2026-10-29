@@ -1,21 +1,21 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7644
+// Function ID: 7645
 // Name: modules/Messages
-// Dependencies: [5, 32, 6531, 4856, 7622, 3, 6530, 4882, 7628, 7631, 4883, 11, 2]
+// Dependencies: [5, 32, 6555, 4857, 7645, 3, 6554, 4883, 7651, 7654, 4884, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7621 (modules/Messages)
+// Module 7644 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4882 */;
-import _mod4883 from "module_4883" /* 4883 */;
-import requireSortedDescending from "requireSortedDescending" /* 6530 */;
-import isReadableChannel from "isReadableChannel" /* 7628 */;
-import KvMessage2 from "KvMessage" /* 7631 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4883 */;
+import _mod4884 from "module_4884" /* 4884 */;
+import requireSortedDescending from "requireSortedDescending" /* 6554 */;
+import isReadableChannel from "isReadableChannel" /* 7651 */;
+import KvMessage2 from "KvMessage" /* 7654 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7622 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7645 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -140,7 +140,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -351,7 +351,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channel_id, item10009, result);
-    put(guildId, channel_id, fromMessageResult, _mod4883.ConflictOptions.Skip);
+    put(guildId, channel_id, fromMessageResult, _mod4884.ConflictOptions.Skip);
   }
   upsertOne(guildId, channelId, message, database) {
     const obj = DatabaseDaosDefault;
@@ -360,7 +360,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channelId, message, result);
-    put(guildId, channelId, fromMessageResult, _mod4883.ConflictOptions.Replace);
+    put(guildId, channelId, fromMessageResult, _mod4884.ConflictOptions.Replace);
     messagesTransactionResult.trimChannel(guildId, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   upsertMany(guild_id, channelId, messages, database) {
@@ -416,7 +416,7 @@ class Messages {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ class Messages {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -524,6 +524,6 @@ let result = size.fileFinishedImporting("modules/app_database/modules/Messages.t
 
 export default obj;
 export { ChannelHistory };
-export const isLikelyNotDelta = function isLikelyNotDelta(author) {
+export function isLikelyNotDelta(author) {
   return null != author.author && null != author.content && null != author.mentions && null != author.timestamp;
-};
+}

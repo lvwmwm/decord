@@ -10,7 +10,7 @@ import size from "module_2" /* 2 */;
 const _errors = "_errors";
 const result = size.fileFinishedImporting("../discord_common/js/packages/http-utils/convertSkemaError.tsx");
 
-export const convertSkemaError = function convertSkemaError(errors) {
+export function convertSkemaError(errors) {
   const obj = {};
   for (const key10007 in errors) {
     let tmp3 = errors[key10007];
@@ -42,4 +42,4 @@ export const convertSkemaError = function convertSkemaError(errors) {
     continue;
   }
   return obj;
-};
+}

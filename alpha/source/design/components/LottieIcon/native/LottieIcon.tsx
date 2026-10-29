@@ -1,14 +1,14 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11686
+// Function ID: 11687
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 558, 576, 587, 7058, 5018, 5288, 5265, 2]
+// Dependencies: [19, 17, 21, 558, 576, 587, 7082, 5019, 5289, 5266, 2]
 
-// Module 11632 (LottieIcon)
+// Module 11686 (LottieIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import LottieViewDefault from "LottieView" /* 5265 */;
+import LottieViewDefault from "LottieView" /* 5266 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -16,9 +16,9 @@ import size_mod from "module_2" /* 2 */;
 let playResult, playResult1, playResult2, tmp10, tmp11, tmp14, tmp15, tmp4, tmp9;
 
 let tmp;
-const react3 = tmp(5018);
-const useToken = tmp(5288);
-const IconSize = tmp(7058);
+const react3 = tmp(5019);
+const useToken = tmp(5289);
+const IconSize = tmp(7082);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LottieIcon(animation) {

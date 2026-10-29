@@ -1,12 +1,12 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17960
+// Function ID: 17961
 // Name: useGuildsRouteGuildId
-// Dependencies: [558, 1503, 576, 2]
+// Dependencies: [558, 1504, 576, 2]
 // Exports: default
 
-// Module 17722 (useGuildsRouteGuildId)
+// Module 17960 (useGuildsRouteGuildId)
 import react from "react" /* 576 */;
-import Link from "Link" /* 1503 */;
+import Link from "Link" /* 1504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

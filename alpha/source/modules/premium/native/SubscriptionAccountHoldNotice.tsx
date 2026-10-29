@@ -1,17 +1,17 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15195
+// Function ID: 15196
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1084, 21, 5004, 587, 558, 576, 1199, 14961, 1125, 2050, 5270, 5280, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 1199, 15196, 1125, 2051, 5271, 5281, 2]
 
-// Module 14960 (SubscriptionAccountHoldNotice)
+// Module 15195 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14961 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15196 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
                               return openURL(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
                             }
               };
-              const tmp25 = closure_6(subscription(5280).Button, obj3);
+              const tmp25 = closure_6(subscription(5281).Button, obj3);
               cResult[13] = subscription.paymentGateway;
               cResult[14] = tmp25;
               tmp23 = tmp25;
@@ -124,7 +124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
         tmp16 = tmp19;
       }
       const obj6 = { style: tmp9, variant: "text-sm/medium", children: tmp10 };
-      const tmp15 = closure_6(subscription(5270).Text, obj6);
+      const tmp15 = closure_6(subscription(5271).Text, obj6);
       cResult[5] = tmp4.text;
       cResult[6] = tmp10;
       cResult[7] = tmp15;
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
     const format = intl.format;
     const obj7 = { endDate: subscription.currentPeriodEnd, planDescription: tmpResult.getDisplayName(subscription.planId) };
     const v7I21Iz = tmp(1125).t["7I21Iz"];
-    tmpResult = subscription(2050);
+    tmpResult = subscription(2051);
     const formatResult = format(v7I21Iz, obj7);
     cResult[2] = subscription.currentPeriodEnd;
     cResult[3] = subscription.planId;
@@ -159,12 +159,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
     const Icon = subscription(1199).Icon;
     items = [closure_6(Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "text-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5270).Text;
+    const Text = subscription(5271).Text;
     const intl = subscription(1125).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
     v7I21Iz = subscription(1125).t["7I21Iz"];
-    obj6 = subscription(2050);
+    obj6 = subscription(2051);
     items[1] = closure_6(Text, obj4);
     items1 = [closure_7(closure_4, obj2), ];
     const obj7 = {
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
           return openURL(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5280).Button;
+    const Button = subscription(5281).Button;
     intl2 = subscription(1125).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);

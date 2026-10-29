@@ -1,15 +1,15 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12798
+// Function ID: 12799
 // Name: conjureCreateForm
 // Dependencies: [2]
 // Exports: createSubmissionBlocker, isConjureEligibleGuild, isCreateDisabled
 
-// Module 12579 (conjureCreateForm)
+// Module 12798 (conjureCreateForm)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/create/conjureCreateForm.tsx");
 
-export const createSubmissionBlocker = function createSubmissionBlocker(idea) {
+export function createSubmissionBlocker(idea) {
   let str2 = "submitting";
   const str = idea.idea;
   if (!idea.submitting) {
@@ -24,8 +24,8 @@ export const createSubmissionBlocker = function createSubmissionBlocker(idea) {
     str2 = str3;
   }
   return str2;
-};
-export const isCreateDisabled = function isCreateDisabled(idea) {
+}
+export function isCreateDisabled(idea) {
   let str2 = "submitting";
   const str = idea.idea;
   if (!idea.submitting) {
@@ -40,8 +40,8 @@ export const isCreateDisabled = function isCreateDisabled(idea) {
     str2 = str3;
   }
   return "idea" === str2 || "submitting" === str2;
-};
-export const isConjureEligibleGuild = function isConjureEligibleGuild(arr, guildId) {
+}
+export function isConjureEligibleGuild(arr, guildId) {
   let closure_0 = guildId;
   return arr.some((id) => id.id === guildId);
-};
+}

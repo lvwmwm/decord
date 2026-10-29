@@ -1,17 +1,17 @@
-// Module ID: 18812
-// Function ID: 18813
+// Module ID: 19045
+// Function ID: 19046
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5005, 1204, 18805, 5302, 558, 576, 1496, 504, 5011, 4837, 7480, 2]
+// Dependencies: [5, 19, 5006, 1204, 19038, 5303, 558, 576, 1497, 504, 5012, 4838, 7503, 2]
 
-// Module 18812 (SoundboardHooks)
+// Module 19045 (SoundboardHooks)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18805 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19038 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

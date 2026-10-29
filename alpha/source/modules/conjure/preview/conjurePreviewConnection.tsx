@@ -1,26 +1,26 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10851
+// Function ID: 10852
 // Name: conjurePreviewConnection
-// Dependencies: [5, 1389, 6808, 10777, 10779, 10822, 10799, 584, 10823, 10764, 10754, 10757, 10827, 10756, 10829, 10830, 10831, 2]
+// Dependencies: [5, 1389, 6831, 10852, 10854, 10898, 10875, 584, 10899, 10839, 10829, 10832, 10903, 10831, 10905, 10906, 10907, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 10776 (conjurePreviewConnection)
+// Module 10851 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 10754 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10757 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10777 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10779 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10799 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 10822 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10823 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 10827 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 10829 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10830 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10831 */;
+import conjureChatConnection from "conjureChatConnection" /* 10829 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10852 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10854 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10875 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10898 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10899 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 10903 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10905 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10906 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_3, currentUser;
@@ -38,7 +38,7 @@ let obj = function _refetchWidgetData() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -81,7 +81,7 @@ let obj = function _refetchWidgetData() {
           c2 = 0;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp9) {
         if (0 === c2) {
           c0 = 3;
@@ -109,7 +109,7 @@ obj = function _getPreviewScreenshotUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -184,7 +184,7 @@ obj = function _uploadOverlayBackground() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _uploadOverlayBackground() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -249,7 +249,7 @@ obj = function _resetOverlayBackground() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -282,7 +282,7 @@ obj = function _resetOverlayBackground() {
           closure_0 = value;
           if (closure_0.ok) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -317,7 +317,7 @@ obj = function _getOverlayBackgroundUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -389,7 +389,7 @@ obj = function _relayCaptureRequest() {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c6;
@@ -473,7 +473,7 @@ obj = function _relayCaptureRequest() {
             resolveUploadUrl = closure_1;
             const sendCaptureAckResult = closure_1.sendCaptureAck(closure_2.id, resolveUploadUrl.status, resolveUploadUrl.code, resolveUploadUrl.message);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -510,7 +510,7 @@ obj = function _relayControlRequest() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ obj = function _relayControlRequest() {
               c6 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp27) {
           closure_5 = tmp27;
@@ -599,7 +599,7 @@ obj = function _getClientCaptureUploadUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -750,7 +750,7 @@ let obj2 = {
       });
       const tmp4 = require;
       if (true === has_activity.has_activity) {
-        const tmp4Result = tmp4(10764);
+        const tmp4Result = tmp4(10839);
         const result1 = tmp4Result.prefetchConjurePreviewTicket(projectId, { known: true });
       }
     }
@@ -787,7 +787,7 @@ let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewC
 
 export const previewFrameHandlers = obj;
 export const previewStepHandlers = obj2;
-export const sendOverlayBackgroundBlur = function sendOverlayBackgroundBlur(projectId, arg1) {
+export function sendOverlayBackgroundBlur(projectId, arg1) {
   obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   if (null == conjureSocket) {
@@ -800,16 +800,16 @@ export const sendOverlayBackgroundBlur = function sendOverlayBackgroundBlur(proj
       return false;
     }
   }
-};
-export const getPreviewScreenshotUrl = function getPreviewScreenshotUrl() {
+}
+export function getPreviewScreenshotUrl() {
   return obj(...arguments);
-};
-export const uploadOverlayBackground = function uploadOverlayBackground() {
+}
+export function uploadOverlayBackground() {
   return obj(...arguments);
-};
-export const resetOverlayBackground = function resetOverlayBackground() {
+}
+export function resetOverlayBackground() {
   return obj(...arguments);
-};
-export const getOverlayBackgroundUrl = function getOverlayBackgroundUrl() {
+}
+export function getOverlayBackgroundUrl() {
   return obj(...arguments);
-};
+}

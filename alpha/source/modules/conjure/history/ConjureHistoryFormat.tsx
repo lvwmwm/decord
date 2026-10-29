@@ -1,14 +1,14 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12325
+// Function ID: 12326
 // Name: ConjureHistoryFormat
-// Dependencies: [6060, 4829, 1125, 3863, 2]
+// Dependencies: [6064, 4830, 1125, 3864, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 12271 (ConjureHistoryFormat)
+// Module 12325 (ConjureHistoryFormat)
 import intl8 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import getTimestampString from "getTimestampString" /* 6060 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import getTimestampString from "getTimestampString" /* 6064 */;
 import size from "module_2" /* 2 */;
 
 function startOfDayMs(arg0) {
@@ -25,7 +25,7 @@ function formatHistoryDay(arg0, nowMs) {
   const time1 = date1.getTime();
   if (time === time1) {
     const intl2 = intl8.intl;
-    return intl2.string(_modDef3863.CADyoV);
+    return intl2.string(_modDef3864.CADyoV);
   } else {
     const _Date = Date;
     const self = this;
@@ -34,7 +34,7 @@ function formatHistoryDay(arg0, nowMs) {
     date2.setDate(date2.getDate() - 1);
     if (time === date2.getTime()) {
       const intl = intl8.intl;
-      return intl.string(_modDef3863.mghe4b);
+      return intl.string(_modDef3864.mghe4b);
     } else {
       const _Date2 = Date;
       const self3 = this;
@@ -63,18 +63,18 @@ function backupTitle(origin) {
     let stringResult;
     if ("stable" === origin.deployEnvironment) {
       const intl6 = intl8.intl;
-      stringResult = intl6.string(_modDef3863["4TpI2y"]);
+      stringResult = intl6.string(_modDef3864["4TpI2y"]);
     } else if ("preview" === origin.deployEnvironment) {
       const intl5 = intl8.intl;
-      stringResult = intl5.string(_modDef3863.NdyxPu);
+      stringResult = intl5.string(_modDef3864.NdyxPu);
     } else {
       const intl4 = intl8.intl;
-      stringResult = intl4.string(_modDef3863["4JCH6A"]);
+      stringResult = intl4.string(_modDef3864["4JCH6A"]);
     }
     return stringResult;
   } else if ("undo" === origin) {
     const intl3 = intl8.intl;
-    return intl3.string(_modDef3863.VjJT5R);
+    return intl3.string(_modDef3864.VjJT5R);
   } else {
     const str4 = origin.label;
     const trimmed = str4.trim();
@@ -83,25 +83,25 @@ function backupTitle(origin) {
       if ("Manual restore point" !== trimmed) {
         const intl = intl8.intl;
         const obj = { label: trimmed };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3863["UKyQ+E"], obj);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3864["UKyQ+E"], obj);
       }
       return formatToPlainStringResult;
     }
     const intl2 = intl8.intl;
-    formatToPlainStringResult = intl2.string(_modDef3863.ObcM6b);
+    formatToPlainStringResult = intl2.string(_modDef3864.ObcM6b);
   }
 }
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureHistoryFormat.tsx");
 
-export const parseTimestampMs = function parseTimestampMs(authoredAt) {
+export function parseTimestampMs(authoredAt) {
   const parsed = Date.parse(authoredAt);
   let tmp2 = null;
   if (!Number.isNaN(parsed)) {
     tmp2 = parsed;
   }
   return tmp2;
-};
-export const formatAuthoredAt = function formatAuthoredAt(authored_at) {
+}
+export function formatAuthoredAt(authored_at) {
   let date;
   let dateFormat;
   let getDurationString;
@@ -130,21 +130,21 @@ export const formatAuthoredAt = function formatAuthoredAt(authored_at) {
     date = new Date(tmp2);
   }
   return obj;
-};
-export const formatHistoryTime = function formatHistoryTime(parseTimestampMsResult) {
+}
+export function formatHistoryTime(parseTimestampMsResult) {
   const dateFormat = DateUtils.dateFormat;
   DateUtils;
   const date = new Date(parseTimestampMsResult);
   return dateFormat(date, "LT");
-};
-export const formatHistoryDateTime = function formatHistoryDateTime(arg0) {
+}
+export function formatHistoryDateTime(arg0) {
   const dateFormat = DateUtils.dateFormat;
   DateUtils;
   const date = new Date(arg0);
   return dateFormat(date, "LLL");
-};
+}
 export { formatHistoryDay };
-export const groupHistoryByDay = function groupHistoryByDay(items, getMs, nowMs) {
+export function groupHistoryByDay(items, getMs, nowMs) {
   let items2;
   let tmp14;
   items = [];
@@ -179,8 +179,8 @@ export const groupHistoryByDay = function groupHistoryByDay(items, getMs, nowMs)
     let arr2 = push(obj);
   }
   return items;
-};
-export const versionTitle = function versionTitle(subject, arg1) {
+}
+export function versionTitle(subject, arg1) {
   let intl3;
   let intl4;
   let obj4;
@@ -208,13 +208,13 @@ export const versionTitle = function versionTitle(subject, arg1) {
         }
       }
       const intl = intl8.intl;
-      const stringResult = intl.string(_modDef3863.Vk8vB1);
+      const stringResult = intl.string(_modDef3864.Vk8vB1);
       obj = { short: stringResult, full: stringResult };
       const obj2 = { short: stringResult, full: stringResult };
     }
     let tmp8 = obj;
     if (flag) {
-      const obj3 = { short: intl3.formatToPlainString(_modDef3863.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3863.Z4n6LX, obj5) };
+      const obj3 = { short: intl3.formatToPlainString(_modDef3864.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3864.Z4n6LX, obj5) };
       intl3 = intl8.intl;
       obj4 = { title: obj.short };
       intl4 = intl8.intl;
@@ -224,39 +224,39 @@ export const versionTitle = function versionTitle(subject, arg1) {
     return tmp8;
   }
   const intl2 = intl8.intl;
-  const stringResult1 = intl2.string(_modDef3863.sFC5fT);
+  const stringResult1 = intl2.string(_modDef3864.sFC5fT);
   obj = { short: stringResult1, full: stringResult1 };
-};
-export const historyEnvironmentLabel = function historyEnvironmentLabel(environment) {
+}
+export function historyEnvironmentLabel(environment) {
   let S65Rv3;
   const intl = intl8.intl;
   const string = intl.string;
   if ("preview" === environment) {
-    S65Rv3 = _modDef3863.Ebk40C;
+    S65Rv3 = _modDef3864.Ebk40C;
   } else {
-    S65Rv3 = _modDef3863.S65Rv3;
+    S65Rv3 = _modDef3864.S65Rv3;
   }
   return string(S65Rv3);
-};
-export const historyDatabaseTitle = function historyDatabaseTitle(environment, sharedDatabase) {
+}
+export function historyDatabaseTitle(environment, sharedDatabase) {
   let stringResult;
   const intl = intl8.intl;
   const string = intl.string;
   const tmp2 = sharedDatabase;
   if (tmp2) {
-    stringResult = string(_modDef3863.h3WBgO);
+    stringResult = string(_modDef3864.h3WBgO);
   } else {
     let yLsAhA;
     if ("preview" === environment) {
-      yLsAhA = _modDef3863.cjJdqL;
+      yLsAhA = _modDef3864.cjJdqL;
     } else {
-      yLsAhA = _modDef3863.yLsAhA;
+      yLsAhA = _modDef3864.yLsAhA;
     }
     stringResult = string(yLsAhA);
   }
   return stringResult;
-};
-export const historyPreviewSha = function historyPreviewSha(data) {
+}
+export function historyPreviewSha(data) {
   let previewSha = data.previewSha;
   if (previewSha == null) {
     const first = data.entries[0];
@@ -270,15 +270,15 @@ export const historyPreviewSha = function historyPreviewSha(data) {
     previewSha = null;
   }
   return previewSha;
-};
-export const visibleBackups = function visibleBackups(points, arg1) {
+}
+export function visibleBackups(points, arg1) {
   let substr = points;
   if (!arg1) {
     substr = points.slice(0, 3);
   }
   return { shown: substr, collapsible: points.length > 3 };
-};
-export const backupRow = function backupRow(createdAt, restoreToMs) {
+}
+export function backupRow(createdAt, restoreToMs) {
   let found;
   let tmp5;
   const parsed = Date.parse(createdAt.createdAt);
@@ -310,13 +310,13 @@ export const backupRow = function backupRow(createdAt, restoreToMs) {
   if (null != value) {
     const intl = intl8.intl;
     const obj2 = { title: value };
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3863.V7YNvf, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3864.V7YNvf, obj2);
   }
   items[1] = formatToPlainStringResult;
   found = items.filter((item) => null != item);
   return obj;
-};
-export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
+}
+export function historyRewindCopy(arg0, arg1) {
   let KfgzUO;
   let formatToPlainString;
   let intl;
@@ -332,7 +332,7 @@ export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
   const date = new Date(arg1);
   const dateFormatResult = dateFormat(date, "LLL");
   if ("stable" === arg0) {
-    const obj2 = { title: intl2.string(_modDef3863.G9wD92), body: intl3.formatToPlainString(_modDef3863.vyxJO8, obj3), confirmText: intl4.string(_modDef3863.kap49k), critical: true };
+    const obj2 = { title: intl2.string(_modDef3864.G9wD92), body: intl3.formatToPlainString(_modDef3864.vyxJO8, obj3), confirmText: intl4.string(_modDef3864.kap49k), critical: true };
     intl2 = tmp(1125).intl;
     intl3 = tmp(1125).intl;
     obj3 = { time: dateFormatResult };
@@ -340,25 +340,25 @@ export const historyRewindCopy = function historyRewindCopy(arg0, arg1) {
     obj4 = obj2;
   } else {
     let S65Rv3;
-    obj4 = { title: intl5.string(_modDef3863.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3863.XfeFw5), critical: false };
+    obj4 = { title: intl5.string(_modDef3864.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3864.XfeFw5), critical: false };
     intl5 = tmp(1125).intl;
     const intl6 = tmp(1125).intl;
     formatToPlainString = intl6.formatToPlainString;
-    KfgzUO = _modDef3863.KfgzUO;
+    KfgzUO = _modDef3864.KfgzUO;
     const intl7 = tmp(1125).intl;
     const string = intl7.string;
     if ("preview" === arg0) {
-      S65Rv3 = tmp7(3863).Ebk40C;
+      S65Rv3 = tmp7(3864).Ebk40C;
     } else {
-      S65Rv3 = tmp7(3863).S65Rv3;
+      S65Rv3 = tmp7(3864).S65Rv3;
     }
     obj = { environment: string(S65Rv3), time: dateFormatResult };
     intl = tmp(1125).intl;
   }
   return obj4;
-};
+}
 export { backupTitle };
-export const matchingPreviewBackup = function matchingPreviewBackup(sha, previewBackups) {
+export function matchingPreviewBackup(sha, previewBackups) {
   let tmp = null;
   const iter = previewBackups[Symbol.iterator]();
   const nextResult = iter.next();
@@ -389,4 +389,4 @@ export const matchingPreviewBackup = function matchingPreviewBackup(sha, preview
     continue;
   }
   return tmp;
-};
+}

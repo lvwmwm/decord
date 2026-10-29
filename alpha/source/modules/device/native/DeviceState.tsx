@@ -1,10 +1,10 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5931
+// Function ID: 5932
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1444, 5930, 2]
+// Dependencies: [5, 3, 1445, 5932, 2]
 // Exports: getDeviceState
 
-// Module 5929 (device/DeviceState)
+// Module 5931 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let obj = function _getDeviceState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -49,7 +49,7 @@ let obj = function _getDeviceState() {
             fallback = obj5.fallback;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           let DEFAULT_DEVICE_STATE;
@@ -116,6 +116,6 @@ let closure_4 = tmp2;
 const result = size.fileFinishedImporting("modules/device/native/DeviceState.tsx");
 
 export const logger = tmp2;
-export const getDeviceState = function getDeviceState() {
+export function getDeviceState() {
   return obj(...arguments);
-};
+}

@@ -1,31 +1,31 @@
-// Module ID: 18466
-// Function ID: 18467
+// Module ID: 18700
+// Function ID: 18701
 // Name: AutocompleteScreenUtils
-// Dependencies: [4916, 4946, 1389, 13470, 9748, 1084, 1125, 12970, 5714, 14304, 10455, 10457, 11368, 8595, 13685, 13690, 12214, 12193, 18467, 13463, 5058, 2]
+// Dependencies: [4917, 4947, 1389, 13703, 9780, 1084, 1125, 13191, 5716, 14538, 10488, 10490, 11422, 8617, 13918, 13923, 12268, 12247, 18701, 13696, 5059, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 18466 (AutocompleteScreenUtils)
+// Module 18700 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1084 */;
 import intl10 from "intl" /* 1125 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import LinkIcon from "LinkIcon" /* 5714 */;
-import ImageIcon from "ImageIcon" /* 8595 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
-import PollsIcon from "PollsIcon" /* 10455 */;
-import AttachmentIcon from "AttachmentIcon" /* 10457 */;
-import VideoIcon from "VideoIcon" /* 11368 */;
-import RobotIcon from "RobotIcon" /* 12193 */;
-import UserIcon from "UserIcon" /* 12214 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12970 */;
-import SearchUtils from "SearchUtils" /* 13463 */;
-import SoundboardIcon from "SoundboardIcon" /* 13685 */;
-import StickerIcon from "StickerIcon" /* 13690 */;
-import EmbedIcon from "EmbedIcon" /* 14304 */;
-import WebhookIcon from "WebhookIcon" /* 18467 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import LinkIcon from "LinkIcon" /* 5716 */;
+import ImageIcon from "ImageIcon" /* 8617 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
+import PollsIcon from "PollsIcon" /* 10488 */;
+import AttachmentIcon from "AttachmentIcon" /* 10490 */;
+import VideoIcon from "VideoIcon" /* 11422 */;
+import RobotIcon from "RobotIcon" /* 12247 */;
+import UserIcon from "UserIcon" /* 12268 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 13191 */;
+import SearchUtils from "SearchUtils" /* 13696 */;
+import SoundboardIcon from "SoundboardIcon" /* 13918 */;
+import StickerIcon from "StickerIcon" /* 13923 */;
+import EmbedIcon from "EmbedIcon" /* 14538 */;
+import WebhookIcon from "WebhookIcon" /* 18701 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
-import SearchQueryStore from "SearchQueryStore" /* 13470 */;
+import SearchQueryStore from "SearchQueryStore" /* 13703 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -34,11 +34,11 @@ const SearchListItemTypes = SearchConstants.SearchListItemTypes;
 const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
 
-export const getSearchQueryChannelIds = function getSearchQueryChannelIds(items) {
+export function getSearchQueryChannelIds(items) {
   set = new Set(SearchQueryStore.getChannelIds(items));
   return set;
-};
-export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
+}
+export function getSearchQueryUserIds(items) {
   const prefixTag = SearchQueryStore.getPrefixTag(items);
   const obj = SearchQueryStore;
   if (null == prefixTag) {
@@ -54,8 +54,8 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
     const set1 = new Set(obj.getUserIds(items, prefixTag.searchTokenType));
     return set1;
   }
-};
-export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
+}
+export function getSearchFilterHasIcon(text) {
   const intl = intl10.intl;
   if (intl.string(intl10.t.nrpA5E) === text) {
     return ForwardingIconDefault;
@@ -100,8 +100,8 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
       }
     }
   }
-};
-export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
+}
+export function getSearchFilterAuthorTypeIcon(text) {
   const intl = intl10.intl;
   if (intl.string(intl10.t.tPZo4p) === text) {
     return UserIcon.UserIcon;
@@ -116,8 +116,8 @@ export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeI
       }
     }
   }
-};
-export const toSearchListUserItem = function toSearchListUserItem(searchContext, user, callback2) {
+}
+export function toSearchListUserItem(searchContext, user, callback2) {
   const obj = SearchUtils;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   if (null == user) {
@@ -137,8 +137,8 @@ export const toSearchListUserItem = function toSearchListUserItem(searchContext,
     const element = { type: SearchListItemTypes.DM, props: obj3 };
     return element;
   }
-};
-export const toSearchListChannelItem = function toSearchListChannelItem(channel, callback3) {
+}
+export function toSearchListChannelItem(channel, callback3) {
   let nickname;
   let obj;
   let closure_0 = channel;
@@ -182,4 +182,4 @@ export const toSearchListChannelItem = function toSearchListChannelItem(channel,
     }
     return tmp2;
   }
-};
+}

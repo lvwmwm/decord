@@ -1,15 +1,15 @@
-// Module ID: 19089
-// Function ID: 19090
+// Module ID: 19324
+// Function ID: 19325
 // Name: ExplicitMediaManagerUtils
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 19089 (ExplicitMediaManagerUtils)
+// Module 19324 (ExplicitMediaManagerUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
 
-export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachmentsEmbedsComponentsOrSnapshots(message) {
+export function hasAttachmentsEmbedsComponentsOrSnapshots(message) {
   if (null == message) {
     return false;
   } else {
@@ -57,4 +57,4 @@ export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachments
     }
     return tmp;
   }
-};
+}

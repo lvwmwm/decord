@@ -1,14 +1,14 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10941
+// Function ID: 10942
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1084, 1294, 10907, 584, 6703, 2]
+// Dependencies: [5, 1084, 1294, 10942, 584, 6727, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10906 (MessageRequestActionCreators)
+// Module 10941 (MessageRequestActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6703 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 10907 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6727 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 10942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let body = function _acceptMessageRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ let body = function _acceptMessageRequest() {
             const obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -80,10 +80,10 @@ let body = function _acceptMessageRequest() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
 
-export const acceptMessageRequest = function acceptMessageRequest() {
+export function acceptMessageRequest() {
   return obj(...arguments);
-};
-export const clearMessageRequestState = function clearMessageRequestState(id) {
+}
+export function clearMessageRequestState(id) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -91,8 +91,8 @@ export const clearMessageRequestState = function clearMessageRequestState(id) {
   body = { consent_status: MessageRequestTypes.MessageRequestConsentStatusTypes.UNSPECIFIED };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const markAsMessageRequest = function markAsMessageRequest(id) {
+}
+export function markAsMessageRequest(id) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -100,16 +100,16 @@ export const markAsMessageRequest = function markAsMessageRequest(id) {
   body = { consent_status: MessageRequestTypes.MessageRequestConsentStatusTypes.PENDING };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const rejectMessageRequest = function rejectMessageRequest(id) {
+}
+export function rejectMessageRequest(id) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const del = HTTP.del;
   const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return del(obj);
-};
-export const rejectMessageRequestBatch = function rejectMessageRequestBatch(c0) {
+}
+export function rejectMessageRequestBatch(c0) {
   let obj3;
   const HTTP = HTTPUtils.HTTP;
   const request = { url: Endpoints.CHANNEL_RECIPIENT_REJECT_BATCH(), body, rejectWithError: obj3.rejectWithMigratedError() };
@@ -117,8 +117,8 @@ export const rejectMessageRequestBatch = function rejectMessageRequestBatch(c0) 
   body = { channel_ids: c0 };
   obj3 = HTTPUtils;
   return put(request);
-};
-export const fetchUserCountryCode = function fetchUserCountryCode() {
+}
+export function fetchUserCountryCode() {
   const obj = AuthenticationActionCreatorsDefault;
   const locationMetadata = obj.getLocationMetadata();
-};
+}

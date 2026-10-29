@@ -1,13 +1,13 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16592
+// Function ID: 16593
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 558, 576, 16330, 1125, 2]
+// Dependencies: [19, 21, 558, 576, 16568, 1125, 2]
 
-// Module 16354 (WebAuthnSuccessStep)
+// Module 16592 (WebAuthnSuccessStep)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 16330 */;
+import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 16568 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

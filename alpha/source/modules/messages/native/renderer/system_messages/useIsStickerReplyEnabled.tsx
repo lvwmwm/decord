@@ -1,21 +1,21 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8412
+// Function ID: 8413
 // Name: useIsStickerReplyEnabled
-// Dependencies: [4916, 4936, 1389, 1084, 7406, 2]
+// Dependencies: [4917, 4937, 1389, 1084, 7429, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8390 (useIsStickerReplyEnabled)
+// Module 8412 (useIsStickerReplyEnabled)
 import Constants from "Constants" /* 1084 */;
-import ThreadHooks from "ThreadHooks" /* 7406 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ThreadHooks from "ThreadHooks" /* 7429 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");
 
-export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnabled(guildId, channel, message, arg3) {
+export function computeIsStickerReplyEnabled(guildId, channel, message, arg3) {
   const currentUser = UserStore.getCurrentUser();
   let tmp2 = null != currentUser;
   if (tmp2) {
@@ -43,4 +43,4 @@ export const computeIsStickerReplyEnabled = function computeIsStickerReplyEnable
     canResult = arg3;
   }
   return canResult;
-};
+}

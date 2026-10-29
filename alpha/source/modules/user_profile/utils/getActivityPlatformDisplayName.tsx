@@ -1,13 +1,13 @@
-// Module ID: 14558
-// Function ID: 14559
+// Module ID: 14792
+// Function ID: 14793
 // Name: getActivityPlatformDisplayName
-// Dependencies: [1084, 1125, 14557, 2]
+// Dependencies: [1084, 1125, 14791, 2]
 // Exports: default
 
-// Module 14558 (getActivityPlatformDisplayName)
+// Module 14792 (getActivityPlatformDisplayName)
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14557 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14791 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

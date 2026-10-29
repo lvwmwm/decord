@@ -968,7 +968,6 @@ const obj2 = {
   BILLING_WALLET_INFORMATION(arg0) {
     return "/users/@me/billing/wallet/" + arg0 + "/information";
   },
-  BILLING_PAYMENTS: "/users/@me/billing/payments",
   BILLING_HISTORY: "/users/@me/billing/history",
   BILLING_PAYMENT(arg0) {
     return "/users/@me/billing/payments/" + arg0;
@@ -2062,6 +2061,9 @@ const obj2 = {
   GAME_ORGANIZATION_INVITE_JOIN(arg0) {
     return "/game-organization-invites/" + arg0 + "/join";
   },
+  GAME_ORGANIZATION_INVITE_CHARACTERS(arg0) {
+    return "/game-organization-invites/" + arg0 + "/characters";
+  },
   GAME_ORGANIZATIONS_INVITABLE: "/game-organizations/invitable/@me",
   GUILD_ROOM(arg0, arg1) {
     return "/guilds/" + arg0 + "/rooms/" + arg1;
@@ -2406,6 +2408,14 @@ const obj25 = {
     }
     return combined;
   },
+  GAME_ORGANIZATION_CHARACTER_ELIGIBILITY(arg0) {
+    let combined = null;
+    if (null != arg0) {
+      const _HermesInternal = HermesInternal;
+      combined = "game-organization-character-eligibility/" + arg0;
+    }
+    return combined;
+  },
   INVITABLE_GAME_ORGANIZATIONS(guildIds) {
     let combined = null;
     if (guildIds.length > 0) {
@@ -2480,7 +2490,7 @@ export const GuildSettingsSections = { LANDING: "LANDING", OVERVIEW: "OVERVIEW",
 export const GuildSettingsSubsections = { DISPLAY: "DISPLAY", INVITE: "INVITE", DEFAULT_NOTIFICATIONS: "DEFAULT_NOTIFICATIONS", ROLE_SUBSCRIPTION_TIERS: "ROLE_SUBSCRIPTION_TIERS", ROLE_SUBSCRIPTION_EMOJI: "ROLE_SUBSCRIPTION_EMOJI", ROLE_SUBSCRIPTION_TIER_TEMPLATE: "ROLE_SUBSCRIPTION_TIER_TEMPLATE", AUTOMOD_MENTION_SPAM: "AUTOMOD_MENTION_SPAM", SERVER_GUIDE: "SERVER_GUIDE", SAFETY_OVERVIEW: "SAFETY_OVERVIEW", SAFETY_AUTOMOD: "SAFETY_AUTOMOD", SAFETY_DM_AND_SPAM_PROTECTION: "SAFETY_DM_AND_SPAM_PROTECTION", SAFETY_CAPTCHA_AND_RAID_PROTECTION: "SAFETY_CAPTCHA_AND_RAID_PROTECTION", SAFETY_PERMISSIONS: "SAFETY_PERMISSIONS", ACCESS_DISCOVERABLE: "ACCESS_DISCOVERABLE", ENGAGEMENT_GUILD_SPACE: "ENGAGEMENT_GUILD_SPACE", PROFILE_VISIBILITY: "PROFILE_VISIBILITY", BOOST_PERKS_VANITY_URL: "BOOST_PERKS_VANITY_URL" };
 export const ChannelSettingsSections = { OVERVIEW: "OVERVIEW", PERMISSIONS: "PERMISSIONS", INSTANT_INVITES: "INSTANT_INVITES", INTEGRATIONS: "INTEGRATIONS", DELETE: "DELETE", DEFAULT_FORUM_LAYOUT: "DEFAULT_FORUM_LAYOUT", NOTIFICATIONS: "NOTIFICATIONS", PINNED_MESSAGES: "PINNED_MESSAGES", INSTANT_INVITES_MANAGEMENT: "INSTANT_INVITES_MANAGEMENT", PINNED_CHAT: "PINNED_CHAT", NEW_PERMISSION: "NEW_PERMISSION", PERMISSION_OVERRIDES: "PERMISSION_OVERRIDES", CHANGE_CATEGORY: "CHANGE_CATEGORY", WEBHOOKS: "WEBHOOKS", EDIT_LINKED_LOBBY: "EDIT_LINKED_LOBBY", CHANNELS_FOLLOWED: "CHANNELS_FOLLOWED", EDIT_WEBHOOK: "EDIT_WEBHOOK", CHANGE_RTC_REGION: "CHANGE_RTC_REGION", EDIT_FORUM_TAG: "EDIT_FORUM_TAG" };
 export const ChannelSettingsSubsections = { TOPIC: "TOPIC" };
-export const ChannelSections = { NONE: "NONE", MEMBERS: "MEMBERS", SEARCH: "SEARCH", SIDEBAR_CHAT: "SIDEBAR_CHAT", PROFILE: "PROFILE", SUMMARIES: "SUMMARIES", CONVERSATIONS: "CONVERSATIONS", FRIENDS: "FRIENDS" };
+export const ChannelSections = { NONE: "NONE", MEMBERS: "MEMBERS", SEARCH: "SEARCH", SIDEBAR_CHAT: "SIDEBAR_CHAT", PROFILE: "PROFILE", SUMMARIES: "SUMMARIES", FRIENDS: "FRIENDS" };
 export const FriendsSections = { ADD_FRIEND: "ADD_FRIEND", ALL: "ALL", ONLINE: "ONLINE", PENDING: "PENDING", PENDING_IGNORED: "PENDING_IGNORED", SPAM: "SPAM", SUGGESTIONS: "SUGGESTIONS" };
 export const SearchSections = { SEARCH: "SEARCH", CHANNEL: "CHANNEL" };
 export const DesktopNotificationTypes = { NEVER: "NEVER", ALL: "ALL" };
@@ -2663,7 +2673,7 @@ export const DefaultCloudSyncConfiguration = frozen11;
 export const CHANNEL_NOTICE_SHOW_DELAY = 86400000;
 export const ChannelLayouts = { NORMAL: "normal", MINIMUM: "minimum", NO_CHAT: "no-chat", FULL_SCREEN: "full-screen" };
 export const StreamLayouts = { THEATRE: "theatre", FULL_SCREEN: "full-screen", PIP: "pip", POPOUT: "popout", PORTRAIT: "portrait", LANDSCAPE: "landscape", MINIMIZED: "minimized" };
-export const Layers = { CHANNEL_SETTINGS: "CHANNEL_SETTINGS", GUILD_SETTINGS: "GUILD_SETTINGS", RTC_DEBUG: "RTC_DEBUG", COLLECTIBLES_SHOP: "COLLECTIBLES_SHOP", COMPONENT_PLAYGROUND: "COMPONENT_PLAYGROUND" };
+export const Layers = { CHANNEL_SETTINGS: "CHANNEL_SETTINGS", GUILD_SETTINGS: "GUILD_SETTINGS", RTC_DEBUG: "RTC_DEBUG", COMPONENT_PLAYGROUND: "COMPONENT_PLAYGROUND" };
 export const AuditLogActions = frozen12;
 export const AuditLogActionTypes = { ALL: "ALL", CREATE: "CREATE", UPDATE: "UPDATE", DELETE: "DELETE" };
 export const AuditLogSubtargetTypes = { USER: "1", ROLE: "0" };

@@ -1,8 +1,8 @@
-// Module ID: 13071
-// Function ID: 13072
+// Module ID: 13302
+// Function ID: 13303
 // Dependencies: [2]
 
-// Module 13071
+// Module 13302
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_06_confused_textureAtlas.webp.js");

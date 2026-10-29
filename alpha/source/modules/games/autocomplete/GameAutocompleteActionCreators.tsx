@@ -1,15 +1,15 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 9110
+// Function ID: 9111
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 8616, 1084, 8617, 584, 1294, 2]
+// Dependencies: [5, 8638, 1084, 8639, 584, 1294, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9107 (GameAutocompleteActionCreators)
+// Module 9110 (GameAutocompleteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8617 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8639 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8616 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8638 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, filterGroup, results;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _fetchGameAutocomplete() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {
@@ -120,6 +120,6 @@ let obj = function _fetchGameAutocomplete() {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteActionCreators.tsx");
 
-export const fetchGameAutocomplete = function fetchGameAutocomplete() {
+export function fetchGameAutocomplete() {
   return obj(...arguments);
-};
+}

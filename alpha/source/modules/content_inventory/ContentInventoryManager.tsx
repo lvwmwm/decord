@@ -1,25 +1,25 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 19898
+// Function ID: 19899
 // Name: ContentInventoryManager
-// Dependencies: [5, 6531, 6535, 6668, 6831, 13010, 8861, 8876, 1084, 1101, 12, 14662, 584, 15265, 19677, 7250, 2]
+// Dependencies: [5, 6555, 6559, 6692, 6854, 13231, 8864, 8879, 1084, 1101, 12, 14897, 584, 15500, 19899, 7274, 2]
 
-// Module 19676 (ContentInventoryManager)
+// Module 19898 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8876 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 14662 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 15265 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 19677 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8879 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 14897 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 15500 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 19899 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
-import IdleStore from "IdleStore" /* 6668 */;
-import WindowStore from "WindowStore" /* 6831 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13010 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8861 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
+import IdleStore from "IdleStore" /* 6692 */;
+import WindowStore from "WindowStore" /* 6854 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 13231 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8864 */;
 import module_12 from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let refresh_token;
@@ -36,20 +36,20 @@ function setFeedState(feedId, state) {
   const obj2 = { type: "CONTENT_INVENTORY_SET_FEED_STATE", feedId, state };
   obj.dispatch(obj2);
 }
-function canFetch(GLOBAL_FEED) {
-  if (set.has(GLOBAL_FEED)) {
+function canFetch(arg0) {
+  if (set.has(arg0)) {
     return false;
   } else {
-    if (GLOBAL_FEED === ContentInventoryFeedKey.GAME_PROFILE_FEED) {
-      if (undefined !== ContentInventoryStore.getFeed(GLOBAL_FEED)) {
+    if (arg0 === ContentInventoryFeedKey.GAME_PROFILE_FEED) {
+      if (undefined !== ContentInventoryStore.getFeed(arg0)) {
         return false;
       }
     }
-    if (GLOBAL_FEED === GLOBAL_FEED) {
+    if (arg0 === GLOBAL_FEED) {
       const obj = ContentInventoryExperiments;
       if (obj.isEligibleForContentInventoryV1("ContentInventoryManager")) {
         if (ContentInventoryPersistedStore.hidden) {
-          if (null != ContentInventoryStore.getFeed(GLOBAL_FEED)) {
+          if (null != ContentInventoryStore.getFeed(arg0)) {
             return false;
           }
         }
@@ -188,84 +188,132 @@ let actions = function _fetchInventory() {
       let c0;
       let c1;
       let force;
-      if (1 === c6) {
+      if (c7 === 2) {
+        c7 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 3;
           return { value, done: true };
         } else {
-          c5 = 1;
-          feed.getFeed(feedId);
-          set.add(feedId);
-          closure_131_20(feedId, { loading: true });
-          refresh_token = undefined;
-          const getMyContentInventory = closure_131_0(closure_131_2[11]).getMyContentInventory;
-          closure_131_0(closure_131_2[11]);
-          if (refresh_token != null) {
-            refresh_token = refresh_token.refresh_token;
-          }
-          c6 = 3;
-          c7 = 1;
-          const obj6 = { token: refresh_token, feedId, feature };
-          const obj7 = { value: getMyContentInventory(obj6), done: false };
-          return obj7;
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } else if (2 === c6) {
-        c5 = 0;
-        value = closure_131_16.get(feedId);
-        feature = value;
-        if (value == null) {
-          feature = 0;
-        }
-        let closure_5 = feature;
-        if (closure_5 < 4) {
-          const _Math = Math;
-          let closure_6 = closure_131_1(closure_131_2[9]).Millis.MINUTE * Math.pow(2, closure_5);
-          let closure_7 = closure_131_19(closure_5);
-          const _setTimeout = setTimeout;
-          const result = closure_131_14.set(feedId, setTimeout(() => {
-            const obj = { feedId, feature, force };
-            return closure_2_23(obj);
-          }, closure_6 + closure_7));
-          const result1 = closure_131_16.set(feedId, closure_5 + 1);
-        } else {
-          const obj8 = { type: "CONTENT_INVENTORY_CLEAR_FEED", feedId };
-          const obj2 = closure_131_1(closure_131_2[12]);
-          obj2.dispatch(obj8);
-        }
-        set.delete(feedId);
-      } else if (arg0 === 1) {
-        c7 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 0;
-        c7 = 3;
-        let obj = { value, done: true };
-        return obj;
       } else {
-        feed = value;
-        const obj10 = { type: "CONTENT_INVENTORY_SET_FEED", feedId, feed };
-        const obj9 = closure_131_1(closure_131_2[12]);
-        obj9.dispatch(obj10);
-        const result2 = closure_131_16.set(feedId, 0);
-        set.delete(feedId);
-        closure_131_20(feedId, { loading: false });
-        if (feedId === closure_131_12) {
-          let c17 = null;
-          closure_131_22();
+        try {
+          let closure_5;
+          let closure_6;
+          let closure_7;
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              return { value, done: true };
+            } else {
+              refresh_token = tmp;
+              feedId = undefined;
+              feature = undefined;
+              force = undefined;
+              ({ feedId: c0, feature: c1, force } = feedId);
+              if (force === undefined) {
+                force = false;
+              }
+              refresh_token = undefined;
+              feed = undefined;
+              closure_5 = undefined;
+              closure_6 = undefined;
+              closure_7 = undefined;
+              c6 = 1;
+              c7 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            if (1 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                return { value, done: true };
+              } else {
+                c5 = 1;
+                feed.getFeed(feedId);
+                set.add(feedId);
+                closure_131_20(feedId, { loading: true });
+                refresh_token = undefined;
+                const getMyContentInventory = closure_131_0(closure_131_2[11]).getMyContentInventory;
+                closure_131_0(closure_131_2[11]);
+                if (refresh_token != null) {
+                  refresh_token = refresh_token.refresh_token;
+                }
+                c6 = 3;
+                c7 = 1;
+                const obj6 = { token: refresh_token, feedId, feature };
+                const obj7 = { value: getMyContentInventory(obj6), done: false };
+                return obj7;
+              }
+            } else if (2 === c6) {
+              c5 = 0;
+              value = closure_131_16.get(feedId);
+              feature = value;
+              if (value == null) {
+                feature = 0;
+              }
+              closure_5 = feature;
+              if (closure_5 < 4) {
+                const _Math = Math;
+                closure_6 = closure_131_1(closure_131_2[9]).Millis.MINUTE * Math.pow(2, closure_5);
+                closure_7 = closure_131_19(closure_5);
+                const _setTimeout = setTimeout;
+                const result = closure_131_14.set(feedId, setTimeout(() => {
+                  const obj = { feedId, feature, force };
+                  return closure_2_23(obj);
+                }, closure_6 + closure_7));
+                const result1 = closure_131_16.set(feedId, closure_5 + 1);
+              } else {
+                const obj8 = { type: "CONTENT_INVENTORY_CLEAR_FEED", feedId };
+                const obj2 = closure_131_1(closure_131_2[12]);
+                obj2.dispatch(obj8);
+              }
+              set.delete(feedId);
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              let obj = { value, done: true };
+              return obj;
+            } else {
+              feed = value;
+              const obj10 = { type: "CONTENT_INVENTORY_SET_FEED", feedId, feed };
+              const obj9 = closure_131_1(closure_131_2[12]);
+              obj9.dispatch(obj10);
+              const result2 = closure_131_16.set(feedId, 0);
+              set.delete(feedId);
+              closure_131_20(feedId, { loading: false });
+              if (feedId === closure_131_12) {
+                let c17 = null;
+                closure_131_22();
+              }
+              c5 = 0;
+            }
+            c7 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp64) {
+          feed = tmp64;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp64;
+          } else {
+            c6 = 2;
+          }
         }
-        c5 = 0;
       }
-      await "IconComponent";
-      refresh_token = tmp;
-      force = tmp4;
-      ({ feedId: c0, feature: c1, force } = feedId);
-      if (force === undefined) {
-        force = false;
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;

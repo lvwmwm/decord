@@ -1,50 +1,109 @@
 // Module ID: 10322
 // Function ID: 10323
-// Dependencies: [41, 42, 10319, 10276]
+// Dependencies: [41, 42, 93, 95, 98, 10301]
 
 // Module 10322
-import NUMBER from "NUMBER" /* 10319 */;
+import _mod10301 from "module_10301" /* 10301 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const _mod10276 = tmp(10276);
-const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
-const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
-class JPWeekdayParser {
-  constructor() {
-    _classCallCheck(this, JPWeekdayParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class UnlikelyFormatFilter {
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, UnlikelyFormatFilter);
+    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
+  }
+}
+_inherits(UnlikelyFormatFilter, _mod10301.Filter);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return regExp;
+  key: "isValid",
+  value: function isValid(debug, text) {
+    let flag;
+    const str = text.text;
+    const str2 = str.replace(" ", "");
+    if (str2.match(/^\d*(\.\d*)?$/)) {
+      debug.debug(() => {
+        console.log("Removing unlikely result '" + text.text + "'");
+      });
+      flag = false;
+    } else {
+      const start = text.start;
+      if (start.isValidDate()) {
+        if (text.end) {
+          let flag2;
+          const end = text.end;
+          if (!end.isValidDate()) {
+            debug.debug(() => {
+              console.log("Removing invalid result: " + text + " (" + text.end + ")");
+            });
+            flag2 = false;
+          }
+          flag = flag2;
+        }
+        const self = this;
+        const strictMode = this.strictMode;
+        let isStrictModeValidResult = !strictMode;
+        if (strictMode) {
+          isStrictModeValidResult = self.isStrictModeValid(debug, text);
+        }
+        flag2 = isStrictModeValidResult;
+      } else {
+        debug.debug(() => {
+          console.log("Removing invalid result: " + text + " (" + text.start + ")");
+        });
+        flag = false;
+      }
+    }
+    return flag;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(reference, groups) {
-      const tmp3 = NUMBER.WEEKDAY_OFFSET[groups.groups.weekday];
-      if (undefined === tmp3) {
-        return null;
-      } else {
-        let str2 = "last";
-        if (!(groups.groups.prefix || "").match(/前の/)) {
-          str2 = "next";
-          if (!(groups.groups.prefix || "").match(/次の/)) {
-            str2 = null;
-            if ((groups.groups.prefix || "").match(/今週/)) {
-              str2 = "this";
-            }
-          }
-        }
-        return _mod10276.createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
+    key: "isStrictModeValid",
+    value: function isStrictModeValid(debug, start) {
+      start = start.start;
+      const result = start.isOnlyWeekdayComponent();
+      let flag = !result;
+      if (result) {
+        debug.debug(() => {
+          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
+        });
+        flag = false;
       }
+      return flag;
     }
   }
 ];
 
-export default _createClass(JPWeekdayParser, items);
+export default _createClass(UnlikelyFormatFilter, items);

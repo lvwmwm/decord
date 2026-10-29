@@ -1,19 +1,19 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 12470
+// Function ID: 12471
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 558, 576, 12408, 12329, 12417, 1125, 12338, 5270, 12418, 3863, 5246, 12419, 2]
+// Dependencies: [19, 21, 558, 576, 12462, 12383, 12471, 1125, 12392, 5271, 12472, 3864, 5247, 12473, 2]
 
-// Module 12416 (ConjurePublishNoticeLine)
+// Module 12470 (ConjurePublishNoticeLine)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12329 */;
-import conjurePublishCard from "conjurePublishCard" /* 12338 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12408 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12417 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12418 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12419 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12383 */;
+import conjurePublishCard from "conjurePublishCard" /* 12392 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12462 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12471 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12472 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12473 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp5;
-const useConjureAutomodSettingsLink = tmp5(12417);
+const useConjureAutomodSettingsLink = tmp5(12471);
 ({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishNoticeLine(arg0) {
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePubli
         }
         if (null != tmp6.guildId) {
           const obj3 = { guildId: tmp6.guildId, update: notice.update };
-          tmp12 = _false(tmp(12417).ConjureAutomodSettingsLink, obj3);
+          tmp12 = _false(tmp(12471).ConjureAutomodSettingsLink, obj3);
         } else {
           tmp12 = null;
           if (!tmp6.automod) {
@@ -200,7 +200,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp4(3863)["35VEu5"], obj3);
+      formatResult = intl2.format(tmp4(3864)["35VEu5"], obj3);
     } else {
       const intl = tmp(1125).intl;
       const obj4 = {
@@ -220,7 +220,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               }
             }
       };
-      formatResult = intl.format(tmp4(3863)["6/zJpD"], obj4);
+      formatResult = intl.format(tmp4(3864)["6/zJpD"], obj4);
     }
     cResult[0] = tmp5;
     cResult[1] = projectId;
@@ -257,7 +257,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp(3863)["35VEu5"], obj2);
+      formatResult = intl2.format(tmp(3864)["35VEu5"], obj2);
     } else {
       let tmp7 = projectId;
       const intl = projectId(1125).intl;
@@ -278,7 +278,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               }
             }
       };
-      formatResult = intl.format(tmp(3863)["6/zJpD"], obj);
+      formatResult = intl.format(tmp(3864)["6/zJpD"], obj);
     }
     let obj3 = { children: items };
     items = [" ", formatResult];

@@ -1,10 +1,10 @@
-// Module ID: 6516
-// Function ID: 6517
+// Module ID: 6540
+// Function ID: 6541
 // Name: PurchaseTokenUtils
 // Dependencies: [5, 1101, 510, 1278, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 6516 (PurchaseTokenUtils)
+// Module 6540 (PurchaseTokenUtils)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import v1 from "v1" /* 1278 */;
@@ -60,6 +60,6 @@ let closure_4 = 60 * DurationsDefault.Millis.DAY;
 let result = size.fileFinishedImporting("utils/PurchaseTokenUtils.tsx");
 
 export { getPurchaseToken };
-export const getPurchaseTokenHash = function getPurchaseTokenHash() {
+export function getPurchaseTokenHash() {
   return obj(...arguments);
-};
+}

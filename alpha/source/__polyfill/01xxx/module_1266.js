@@ -72,7 +72,7 @@ export const createWithEqualityFn = (arg0, arg1) => {
   }
   return tmp2;
 };
-export const useStoreWithEqualityFn = function useStoreWithEqualityFn(context, cResult, shallow) {
+export function useStoreWithEqualityFn(context, cResult, shallow) {
   let tmp = cResult;
   if (cResult === undefined) {
     tmp = identity;
@@ -81,4 +81,4 @@ export const useStoreWithEqualityFn = function useStoreWithEqualityFn(context, c
   const syncExternalStoreWithSelector = obj.useSyncExternalStoreWithSelector(context.subscribe, context.getState, context.getInitialState, tmp, shallow);
   const debugValue = react.useDebugValue(syncExternalStoreWithSelector);
   return syncExternalStoreWithSelector;
-};
+}

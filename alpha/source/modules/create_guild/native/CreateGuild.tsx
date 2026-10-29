@@ -1,17 +1,17 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 13685
+// Function ID: 13686
 // Name: CreateGuild
-// Dependencies: [19, 17, 1389, 1084, 21, 5004, 587, 558, 576, 5303, 6007, 1125, 5270, 12803, 7044, 7331, 5280, 7069, 6013, 2]
+// Dependencies: [19, 17, 1389, 1084, 21, 5005, 587, 558, 576, 5304, 6009, 1125, 5271, 13024, 7068, 7355, 5281, 7093, 6015, 2]
 
-// Module 13452 (CreateGuild)
+// Module 13685 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import react_native2 from "react-native" /* 6007 */;
+import react_native2 from "react-native" /* 6009 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(5303);
+  const tmpResult = tmp(5304);
   isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
   const ref = react.useRef(null);
   const obj4 = react;
@@ -363,20 +363,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       cResult[16] = onIconPress;
       cResult[17] = tmp4.contentContainer.backgroundColor;
       cResult[18] = tmp4.iconUploader;
-      cResult[19] = closure_7(ref(12803), obj2);
-      const tmp27 = closure_7(ref(12803), obj2);
+      cResult[19] = closure_7(ref(13024), obj2);
+      const tmp27 = closure_7(ref(13024), obj2);
     }
     const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp19 };
     cResult[12] = tmp4.description;
     cResult[13] = tmp19;
-    cResult[14] = closure_7(tmp(5270).Text, obj3);
-    const tmp23 = closure_7(tmp(5270).Text, obj3);
+    cResult[14] = closure_7(tmp(5271).Text, obj3);
+    const tmp23 = closure_7(tmp(5271).Text, obj3);
   }
   const obj6 = { ref, style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
   cResult[7] = tmp4.header;
   cResult[8] = tmp16;
-  cResult[9] = closure_7(tmp(5270).Text, obj6);
-  closure_7(tmp(5270).Text, obj6);
+  cResult[9] = closure_7(tmp(5271).Text, obj6);
+  closure_7(tmp(5271).Text, obj6);
 }) : (function CreateGuild(arg0) {
   let Stack;
   let autoFocus;
@@ -411,7 +411,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
     isStaffResult = currentUser.isStaff();
   }
   const tmp3 = !isStaffResult;
-  let obj2 = isScreenReaderEnabled(5303);
+  let obj2 = isScreenReaderEnabled(5304);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -424,9 +424,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(6013).Stack;
+  Stack = isScreenReaderEnabled(6015).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: customTitle };
-  const Text = isScreenReaderEnabled(5270).Text;
+  const Text = isScreenReaderEnabled(5271).Text;
   const tmp10 = ScrollView;
   tmp11 = closure_8;
   if (customTitle == null) {
@@ -435,16 +435,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   }
   items1 = [closure_7(Text, obj3), , , , , , , ];
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: customDescription };
-  const Text2 = tmp4(5270).Text;
+  const Text2 = tmp4(5271).Text;
   if (customDescription == null) {
     const intl2 = tmp4(1125).intl;
     customDescription = intl2.string(tmp4(1125).t["/k/L/j"]);
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(12803), obj5);
+  items1[2] = closure_7(ref(13024), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1125).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(7044).TextInput;
+  const TextInput = tmp4(7068).TextInput;
   intl3 = tmp4(1125).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
@@ -458,18 +458,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
     const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1125).t.edQ5va) };
-    const TableSwitchRow = tmp4(7331).TableSwitchRow;
+    const TableSwitchRow = tmp4(7355).TableSwitchRow;
     intl4 = tmp4(1125).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
   items1[4] = tmp9Result;
   const obj8 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1125).t["2bprXx"], obj9) };
-  const Text3 = tmp4(5270).Text;
+  const Text3 = tmp4(5271).Text;
   intl5 = tmp4(1125).intl;
   obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
   items1[5] = closure_7(Text3, obj8);
   const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
-  const Button = tmp4(5280).Button;
+  const Button = tmp4(5281).Button;
   if (customButtonLabel == null) {
     const intl6 = tmp4(1125).intl;
     customButtonLabel = intl6.string(tmp4(1125).t["O0p/lS"]);
@@ -494,7 +494,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(7069);
+        const tmp12Result = tmp12(7093);
         if (error != null) {
           message2 = error.message;
         }

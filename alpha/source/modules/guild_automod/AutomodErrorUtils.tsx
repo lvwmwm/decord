@@ -1,14 +1,14 @@
-// Module ID: 8300
-// Function ID: 8301
+// Module ID: 8322
+// Function ID: 8323
 // Name: AutomodErrorUtils
-// Dependencies: [4856, 1084, 1125, 8172, 2]
+// Dependencies: [4857, 1084, 1125, 8195, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8300 (AutomodErrorUtils)
+// Module 8322 (AutomodErrorUtils)
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import MessageQueue from "MessageQueue" /* 8172 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import MessageQueue from "MessageQueue" /* 8195 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
@@ -107,7 +107,7 @@ export { InvalidRegexPatternError };
 export const AUTOMOD_ERROR_CODES = set;
 export { getAutomodErrorMessageFromErrorResponse };
 export { getAutomodErrorMessageFromMessageData };
-export const getAutomodErrorMessage = function getAutomodErrorMessage(messageData, errorResponseBody) {
+export function getAutomodErrorMessage(messageData, errorResponseBody) {
   let tmp = getAutomodErrorMessageFromErrorResponse(errorResponseBody);
   if (null == tmp) {
     let stringResult;
@@ -120,4 +120,4 @@ export const getAutomodErrorMessage = function getAutomodErrorMessage(messageDat
     tmp = stringResult;
   }
   return tmp;
-};
+}

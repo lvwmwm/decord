@@ -1,24 +1,24 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15732
+// Function ID: 15733
 // Name: Menu
-// Dependencies: [32, 19, 17, 1084, 21, 15499, 5004, 587, 5085, 5018, 1630, 1496, 1381, 5013, 1125, 6007, 5242, 6008, 15500, 15501, 5283, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 15733, 5005, 587, 5086, 5019, 1631, 1497, 1381, 5014, 1125, 6009, 5243, 6010, 15734, 15735, 5284, 2]
 // Exports: Menu
 
-// Module 15498 (Menu)
+// Module 15732 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import spring from "spring" /* 5283 */;
-import react_native from "react-native" /* 6007 */;
-import Easing from "Easing" /* 15499 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import spring from "spring" /* 5284 */;
+import react_native from "react-native" /* 6009 */;
+import Easing from "Easing" /* 15733 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -61,7 +61,7 @@ let result = size.fileFinishedImporting("design/components/Menu/native/Menu.tsx"
 
 export const MENU_OFFSET = 10;
 export const MenuContext = context;
-export const Menu = function Menu(toggleButtonRef) {
+export function Menu(toggleButtonRef) {
   let Children;
   let Provider;
   let View;
@@ -108,7 +108,7 @@ export const Menu = function Menu(toggleButtonRef) {
   function openMenuCallback() {
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(5013).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(5014).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp(1125).intl;
       announce(intl.string(intl2.t.ZqK0uI));
@@ -297,7 +297,7 @@ export const Menu = function Menu(toggleButtonRef) {
       items1[1] = num4;
       items = [{ translateX: interpolate(value, [0, 1], items1) }, , ];
       const obj5 = { translateX: interpolate(value, [0, 1], items1) };
-      const interpolate2 = tmp2(5085).interpolate;
+      const interpolate2 = tmp2(5086).interpolate;
       ReanimatedRexport;
       const value8 = obj2.get();
       if ("top" === __initData) {
@@ -378,4 +378,4 @@ export const Menu = function Menu(toggleButtonRef) {
   View = tmp4(tmp3[8]).View;
   Provider = callback1.Provider;
   return sharedValue1(tmp4Result, obj6);
-};
+}

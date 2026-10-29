@@ -1,8 +1,8 @@
-// Module ID: 19576
-// Function ID: 19577
+// Module ID: 19809
+// Function ID: 19810
 // Dependencies: [2]
 
-// Module 19576
+// Module 19809
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MarketStallSpotIllustration-1x.png.js");

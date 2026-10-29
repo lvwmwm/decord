@@ -1,12 +1,12 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14629
+// Function ID: 14630
 // Name: useConjureHomeOwnProjects
-// Dependencies: [10734, 6808, 558, 576, 14396, 10735, 12359, 504, 2]
+// Dependencies: [10808, 6831, 558, 576, 14630, 10809, 12413, 504, 2]
 
-// Module 14395 (useConjureHomeOwnProjects)
-import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 14396 */;
-import ConjureChatStore from "ConjureChatStore" /* 10734 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+// Module 14629 (useConjureHomeOwnProjects)
+import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 14630 */;
+import ConjureChatStore from "ConjureChatStore" /* 10808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

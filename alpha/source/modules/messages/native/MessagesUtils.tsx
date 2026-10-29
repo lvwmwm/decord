@@ -1,60 +1,60 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9847
+// Function ID: 9848
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 9816, 7731, 4856, 4916, 6671, 6045, 5926, 4936, 6806, 1389, 8166, 1084, 6035, 6049, 1997, 7432, 8318, 8568, 4923, 5699, 1125, 5722, 9817, 1988, 5261, 4948, 5248, 5249, 6907, 8319, 8321, 5747, 7321, 6030, 11, 5698, 10028, 9, 12, 1381, 1628, 10032, 1264, 10029, 7601, 6748, 5237, 9605, 10033, 7665, 6054, 4924, 8387, 2]
+// Dependencies: [32, 5, 9848, 7754, 4857, 4917, 6695, 6049, 5928, 4937, 6829, 1389, 8189, 1084, 6039, 6053, 1998, 7455, 8340, 8590, 4924, 5701, 1125, 5724, 9849, 1989, 5262, 4949, 5249, 5250, 6931, 8341, 8343, 5749, 7345, 6034, 11, 5700, 10060, 9, 12, 1381, 1629, 10064, 1264, 10061, 7624, 6771, 5238, 9637, 10065, 7688, 6058, 4925, 8409, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 9815 (messages/MessagesUtils)
+// Module 9847 (messages/MessagesUtils)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
-import Server from "Server" /* 1997 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4923 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4924 */;
-import ReactionUtils from "ReactionUtils" /* 4948 */;
-import flow_Client from "flow/Client" /* 5237 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import ChannelUtils from "ChannelUtils" /* 6030 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6049 */;
-import InteractionTypes from "InteractionTypes" /* 6054 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6907 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7432 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8318 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8319 */;
-import Tracking from "Tracking" /* 8321 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8387 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8568 */;
-import QuestActionCreators from "QuestActionCreators" /* 9605 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9816 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9817 */;
-import computeScrollData from "computeScrollData" /* 10028 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10029 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10032 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10033 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import Server from "Server" /* 1998 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4924 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4925 */;
+import ReactionUtils from "ReactionUtils" /* 4949 */;
+import flow_Client from "flow/Client" /* 5238 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import ChannelUtils from "ChannelUtils" /* 6034 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6053 */;
+import InteractionTypes from "InteractionTypes" /* 6058 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6931 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7455 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8340 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8341 */;
+import Tracking from "Tracking" /* 8343 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8409 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 8590 */;
+import QuestActionCreators from "QuestActionCreators" /* 9637 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9848 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9849 */;
+import computeScrollData from "computeScrollData" /* 10060 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10061 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10064 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10065 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7731 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6671 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import NetworkStore from "NetworkStore" /* 5926 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7754 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6695 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import NetworkStore from "NetworkStore" /* 5928 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
 import UserStore from "UserStore" /* 1389 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -71,8 +71,8 @@ let closure_21;
 let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
-const KeyboardTypes = tmp(1628);
-const f105632 = (id) => id.id;
+const KeyboardTypes = tmp(1629);
+const f106820 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -156,7 +156,7 @@ let obj = function _handleTapNavBar() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ let obj = function _handleTapNavBar() {
                   const findMessageIndexResult = findMessageIndex(tmp9Result3.castChannelIdAsMessageId(channel.id));
                   if (null == findMessageIndexResult) {
                     c3 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   } else {
                     const obj8 = { animated: !useReducedMotion };
                     const tmp9Result4 = NativeChatUtilsDefault;
@@ -215,7 +215,7 @@ let obj = function _handleTapNavBar() {
           const timerId1 = setTimeout(() => closure_1_1(!closure_1_0), 50);
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp16) {
         c3 = 3;
         throw tmp16;
@@ -256,14 +256,8 @@ let closure_5 = useChatBottomManagerUIStore.updateShouldShowJumpToPresentButton;
 ({ RowType: closure_15, Changeset: closure_16 } = RowGeneratorConstants);
 ({ AnalyticEvents: closure_17, MessageEmbedTypes: closure_18, MessageTypes: closure_19, Permissions: closure_20, MAX_MESSAGES_PER_CHANNEL: closure_21 } = Constants);
 let result = size.fileFinishedImporting("modules/messages/native/MessagesUtils.tsx");
-const findMessageIndex_export = function findMessageIndex(previousRows, startMessageId) {
-  if (null != startMessageId) {
-    obj = computeScrollData;
-    return obj.findMessageRowIndex(previousRows, startMessageId);
-  }
-};
 
-export const getLongPressSelectedMedia = function getLongPressSelectedMedia(message, mediaIndex, mediaType, tmpResult3, componentMediaIndex) {
+export function getLongPressSelectedMedia(message, mediaIndex, mediaType, tmpResult3, componentMediaIndex) {
   let content_type;
   let str;
   let str3;
@@ -388,8 +382,8 @@ export const getLongPressSelectedMedia = function getLongPressSelectedMedia(mess
   } else {
     return null;
   }
-};
-export const toObscuredMedia = function toObscuredMedia(sourceType) {
+}
+export function toObscuredMedia(sourceType) {
   let tmp;
   if ("attachment" === sourceType.sourceType) {
     tmp = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Attachment, media: sourceType.source };
@@ -402,8 +396,8 @@ export const toObscuredMedia = function toObscuredMedia(sourceType) {
     }
   }
   return tmp;
-};
-export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(messageId, channel, reaction, isBurst, MESSAGE) {
+}
+export function handleAddOrRemoveReaction(messageId, channel, reaction, isBurst, MESSAGE) {
   let id;
   let obj5;
   let flag = isBurst;
@@ -458,7 +452,7 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
         }
       }
     }
-    const ReactionTypes = tmp12(5261).ReactionTypes;
+    const ReactionTypes = tmp12(5262).ReactionTypes;
     const tmp23 = flag ? ReactionTypes.BURST : ReactionTypes.NORMAL;
     const tmp12Result10 = ReactionUtils;
     if (tmp12Result10.isMeReaction(reaction.me, reaction.me_burst, tmp23)) {
@@ -496,8 +490,8 @@ export const handleAddOrRemoveReaction = function handleAddOrRemoveReaction(mess
     const tmp12Result16 = reactions_ReactionUtils;
     const result4 = tmp12Result16.handleAddNewReactions(channel, messageId, MESSAGE, obj7);
   }
-};
-export const handleToggleFollowForumPost = function handleToggleFollowForumPost(channel, stateFromStores1) {
+}
+export function handleToggleFollowForumPost(channel, stateFromStores1) {
   obj = HapticUtils;
   const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
   const obj2 = ThreadActionCreatorsDefault;
@@ -507,8 +501,8 @@ export const handleToggleFollowForumPost = function handleToggleFollowForumPost(
   } else {
     obj2.joinThread(channel, "iOS Forum Toolbar");
   }
-};
-export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId, id, location) {
+}
+export function handleCopyLinkForumPost(guildId, id, location) {
   const channel = ChannelStore.getChannel(id);
   let parent_id;
   const getChannel = ChannelStore.getChannel;
@@ -552,10 +546,15 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
   }
   const tmp4Result12 = ToastUtils;
   tmp4Result12.presentLinkCopied();
-};
-export { findMessageIndex_export as findMessageIndex };
+}
+export function findMessageIndex(previousRows, startMessageId) {
+  if (null != startMessageId) {
+    obj = computeScrollData;
+    return obj.findMessageRowIndex(previousRows, startMessageId);
+  }
+}
 export { getVisibleMessages };
-export const shouldJumpToOriginalPost = function shouldJumpToOriginalPost(first1, id, arg2, arg3) {
+export function shouldJumpToOriginalPost(first1, id, arg2, arg3) {
   let isForumPostResult = first1.isForumPost();
   if (isForumPostResult) {
     obj = SnowflakeUtilsDefault;
@@ -565,8 +564,8 @@ export const shouldJumpToOriginalPost = function shouldJumpToOriginalPost(first1
     isForumPostResult = !arg3;
   }
   return isForumPostResult;
-};
-export const startOrCancelChannelLatestMessagesLoad = function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) {
+}
+export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) {
   if (null == hasJumpedToOriginalPost.jumpTargetId) {
     if (null == hasJumpedToOriginalPost.oldestUnreadMessageId) {
       if (!hasJumpedToOriginalPost.shouldJumpToOriginalPost) {
@@ -578,25 +577,25 @@ export const startOrCancelChannelLatestMessagesLoad = function startOrCancelChan
   }
   const tracker2 = hasJumpedToOriginalPost.tracker;
   tracker2.cancel();
-};
-export const recordTimings = function recordTimings(channelId, hasFetched) {
+}
+export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f105632);
+  const mapped = hasFetched.map(f106820);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
   }
   recordMessageRender(channelId, mapped, hasFetched, hasFetched.hasMoreAfter);
-};
-export const findMessageIndexInRows = function findMessageIndexInRows(startMessageId, previousRows) {
+}
+export function findMessageIndexInRows(startMessageId, previousRows) {
   if (null != startMessageId) {
     obj = computeScrollData;
     return obj.findMessageRowIndex(previousRows, startMessageId);
   }
-};
+}
 export { getMessage };
-export const isLoadingAtTop = function isLoadingAtTop(arg0, arg1) {
+export function isLoadingAtTop(arg0, arg1) {
   const tmp = arg1;
   if (tmp) {
     const iter = arg0[Symbol.iterator]();
@@ -612,8 +611,8 @@ export const isLoadingAtTop = function isLoadingAtTop(arg0, arg1) {
   } else {
     return false;
   }
-};
-export const handleTapTableView = function handleTapTableView(current, arg1) {
+}
+export function handleTapTableView(current, arg1) {
   obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
@@ -625,8 +624,8 @@ export const handleTapTableView = function handleTapTableView(current, arg1) {
       current.closeCustomKeyboard();
     }
   }
-};
-export const handleMediaPlayFinishedAnalytics = function handleMediaPlayFinishedAnalytics(mediaSource) {
+}
+export function handleMediaPlayFinishedAnalytics(mediaSource) {
   let errorCode;
   let errorMessage;
   let fileDurationSec;
@@ -658,8 +657,8 @@ export const handleMediaPlayFinishedAnalytics = function handleMediaPlayFinished
     }
   }
   track(MEDIA_PLAY_FINISHED, obj2);
-};
-export const scrollToBottom = function scrollToBottom(current, arg1, fn) {
+}
+export function scrollToBottom(current, arg1, fn) {
   let flag = arg3;
   if (arg3 === undefined) {
     flag = true;
@@ -673,8 +672,8 @@ export const scrollToBottom = function scrollToBottom(current, arg1, fn) {
     flag = !arg1;
   }
   scrollToBottom(current, flag);
-};
-export const scrollToTop = function scrollToTop(current, arg1) {
+}
+export function scrollToTop(current, arg1) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
@@ -686,8 +685,8 @@ export const scrollToTop = function scrollToTop(current, arg1) {
     flag = !arg1;
   }
   scrollToTop(current, flag);
-};
-export const scrollToRelativeOffset = function scrollToRelativeOffset(current, arg1, arg2) {
+}
+export function scrollToRelativeOffset(current, arg1, arg2) {
   let flag = arg3;
   if (arg3 === undefined) {
     flag = true;
@@ -699,19 +698,19 @@ export const scrollToRelativeOffset = function scrollToRelativeOffset(current, a
     flag = !arg1;
   }
   const result = scrollToRelativeOffset(current, arg2, flag);
-};
-export const scrollToTopMessage = function scrollToTopMessage(current, getPreviousRows) {
+}
+export function scrollToTopMessage(current, getPreviousRows) {
   const previousRows = getPreviousRows.getPreviousRows();
   if (previousRows.length > 0) {
     obj = NativeChatUtilsDefault;
     obj.scrollTo(current.current, previousRows.length - 1);
   }
-};
-export const canAddNewReactions = function canAddNewReactions(isPrivate, arg1) {
+}
+export function canAddNewReactions(isPrivate, arg1) {
   const canResult = arg1 && PermissionStore.can(constants6.ADD_REACTIONS, isPrivate) || isPrivate.isPrivate();
   return canResult;
-};
-export const loadMoreBefore = function loadMoreBefore(channelId, hasMoreBefore, fn) {
+}
+export function loadMoreBefore(channelId, hasMoreBefore, fn) {
   let id;
   fn(true);
   const tmp2 = hasMoreBefore.hasMoreBefore && !hasMoreBefore.loadingMore;
@@ -726,8 +725,8 @@ export const loadMoreBefore = function loadMoreBefore(channelId, hasMoreBefore, 
     }
     const messages = fetchMessages(obj);
   }
-};
-export const loadMoreAfter = function loadMoreAfter(channelId, hasMoreAfter, fn) {
+}
+export function loadMoreAfter(channelId, hasMoreAfter, fn) {
   let id;
   fn(true);
   const tmp2 = hasMoreAfter.hasMoreAfter && !hasMoreAfter.loadingMore;
@@ -742,23 +741,23 @@ export const loadMoreAfter = function loadMoreAfter(channelId, hasMoreAfter, fn)
     }
     const messages = fetchMessages(obj);
   }
-};
-export const clearRows = function clearRows(current, clear, arg2, arg3, fn) {
+}
+export function clearRows(current, clear, arg2, arg3, fn) {
   fn({ animated: false, hasHandledScroll: false, isNearBottom: false, isAtBottom: false, isNearTop: false, decelerating: false, dragging: false, hasMoreMessagesAfterForLastUpdate: false, pendingUpdatesQueue: [], _loaded: false, animatingStickerMessageId: null });
   clear.clear();
   closure_5(arg2, arg3, false);
   obj = NativeChatUtilsDefault;
   obj.clearRows(current.current);
-};
-export const handleFirstLayout = function handleFirstLayout(fn, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
+}
+export function handleFirstLayout(fn, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
   obj = { firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: QuestTypes.QuestsVisibleMessagesChangedSource.FIRST_LAYOUT };
   fn(obj);
-};
-export const handleMessageVisibilityChanged = function handleMessageVisibilityChanged(fn, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
+}
+export function handleMessageVisibilityChanged(fn, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
   obj = { firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: QuestTypes.QuestsVisibleMessagesChangedSource.VISIBILITY_CHANGED };
   fn(obj);
-};
-export const handleLongPressSticker = function handleLongPressSticker(arg0, arg1, fn) {
+}
+export function handleLongPressSticker(arg0, arg1, fn) {
   const items = [arg0];
   set = new Set(items);
   if (null != arg1) {
@@ -770,11 +769,11 @@ export const handleLongPressSticker = function handleLongPressSticker(arg0, arg1
   }
   fn({ forceRender: true, updateMessageIds: set });
   return tmp2;
-};
-export const handleTapNavBar = function handleTapNavBar() {
+}
+export function handleTapNavBar() {
   return obj(...arguments);
-};
-export const jumpToPresent = function jumpToPresent(jumpReturnTargetId, id, fn) {
+}
+export function jumpToPresent(jumpReturnTargetId, id, fn) {
   if (null == jumpReturnTargetId.jumpReturnTargetId) {
     if (!jumpReturnTargetId.loadingMore) {
       if (jumpReturnTargetId.hasMoreAfter) {
@@ -790,8 +789,8 @@ export const jumpToPresent = function jumpToPresent(jumpReturnTargetId, id, fn) 
     obj = MessageActionCreatorsDefault;
     obj.jumpToMessage(obj4);
   }
-};
-export const scrollToNewMessages = function scrollToNewMessages(channel) {
+}
+export function scrollToNewMessages(channel) {
   channel = channel.channel;
   let id = ReadStateStore.ackMessageId(channel.id);
   obj = { channelId: channel.id, messageId: id, offset: 1, context: "Mark As Read" };
@@ -801,8 +800,8 @@ export const scrollToNewMessages = function scrollToNewMessages(channel) {
     id = channel.id;
   }
   jumpToMessage(obj);
-};
-export const syncMessageDisplay = function syncMessageDisplay(messages) {
+}
+export function syncMessageDisplay(messages) {
   let channelId;
   let scrollToMessageId;
   let updateRows;
@@ -831,17 +830,17 @@ export const syncMessageDisplay = function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f105632);
+  const mapped = messages.map(f106820);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;
   }
   recordMessageRender(channelId, mapped, hasFetched, messages.hasMoreAfter);
-};
+}
 export function getChatRef(arg0) {
   return arg0;
 }
-export const maybeRescrollToMessageId = function maybeRescrollToMessageId(arg0, jumpType) {
+export function maybeRescrollToMessageId(arg0, jumpType) {
   let closure_0;
   let updateRowsEnabled;
   _require = arg0;
@@ -874,8 +873,8 @@ export const maybeRescrollToMessageId = function maybeRescrollToMessageId(arg0, 
       }
     }, 50);
   }
-};
-export const scrollToMessageIdWithRescroll = function scrollToMessageIdWithRescroll(scrollToMessageId) {
+}
+export function scrollToMessageIdWithRescroll(scrollToMessageId) {
   let chatRef;
   let findMessageIndex;
   let updateRows;
@@ -958,8 +957,8 @@ export const scrollToMessageIdWithRescroll = function scrollToMessageIdWithRescr
       obj2.scrollTo(chatRef.current, findMessageIndexResult, obj3);
     }
   }
-};
-export const handleVisibleMessagesChange = function handleVisibleMessagesChange(arg0) {
+}
+export function handleVisibleMessagesChange(arg0) {
   let channel;
   let firstVisibleMessagePercentVisible;
   let firstVisibleMessageRowIndex;
@@ -994,8 +993,8 @@ export const handleVisibleMessagesChange = function handleVisibleMessagesChange(
       }
     }
   }
-};
-export const getVoiceStateChannelSummaryFromVoiceStates = function getVoiceStateChannelSummaryFromVoiceStates(voiceStates) {
+}
+export function getVoiceStateChannelSummaryFromVoiceStates(voiceStates) {
   const entries = Object.entries(voiceStates);
   const found = entries.filter((item) => {
     let tmp;
@@ -1014,8 +1013,8 @@ export const getVoiceStateChannelSummaryFromVoiceStates = function getVoiceState
   });
   const sorted = mapped.sort();
   return sorted.join("|");
-};
-export const getVoiceChannelIdChangedAuthorIds = function getVoiceChannelIdChangedAuthorIds(prop, prop1) {
+}
+export function getVoiceChannelIdChangedAuthorIds(prop, prop1) {
   obj = parseVoiceStateChannelIdSummary(prop);
   const obj2 = parseVoiceStateChannelIdSummary(prop1);
   set = new Set();
@@ -1030,8 +1029,8 @@ export const getVoiceChannelIdChangedAuthorIds = function getVoiceChannelIdChang
     continue;
   }
   return set;
-};
-export const getMessageAuthorMemberUserIds = function getMessageAuthorMemberUserIds(author) {
+}
+export function getMessageAuthorMemberUserIds(author) {
   obj = ApplicationCommandUtils;
   const initialInteractionMetadata = obj.getInitialInteractionMetadata(author);
   let type;
@@ -1085,4 +1084,4 @@ export const getMessageAuthorMemberUserIds = function getMessageAuthorMemberUser
   }
   items[arraySpreadResult] = userId;
   return items.filter((item) => null != item);
-};
+}

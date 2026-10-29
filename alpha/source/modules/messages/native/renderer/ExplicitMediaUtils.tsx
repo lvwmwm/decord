@@ -1,22 +1,22 @@
-// Module ID: 8645
-// Function ID: 8646
+// Module ID: 8667
+// Function ID: 8668
 // Name: ExplicitMediaUtils
-// Dependencies: [1084, 1402, 7426, 7432, 6689, 1125, 2]
+// Dependencies: [1084, 1402, 7449, 7455, 6713, 1125, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8645 (ExplicitMediaUtils)
+// Module 8667 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7426 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7432 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7449 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7455 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/ExplicitMediaUtils.tsx");
 
-export const getAttachmentObscurityProps = function getAttachmentObscurityProps(shouldAgeVerify) {
+export function getAttachmentObscurityProps(shouldAgeVerify) {
   let attachment;
   let enabledContentHarmTypeFlags;
   let num2;
@@ -73,8 +73,8 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
     str = intl2.string(tmp(1125).t.SpxcUR);
   }
   return obj4;
-};
-export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemObscurityProps(arg0) {
+}
+export function getUnfurledMediaItemObscurityProps(arg0) {
   let enabledContentHarmTypeFlags;
   let isAuthorBot;
   let isSpoilered;
@@ -129,7 +129,7 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
     stringResult1 = intl4.string(tmp(1125).t.SpxcUR);
   }
   return obj4;
-};
+}
 export function getAttachmentObscurityDefaults() {
   return { isSpoiler: false, spoiler: "" };
 }

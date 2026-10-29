@@ -1,13 +1,13 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12243
+// Function ID: 12244
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1125, 3863, 558, 576, 11803, 2]
+// Dependencies: [32, 19, 1125, 3864, 558, 576, 11857, 2]
 
-// Module 12189 (useConjurePublishButton)
+// Module 12243 (useConjurePublishButton)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11803 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11857 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,13 +19,13 @@ function publishButtonText(upToDate, arg1) {
     let label;
     if (null == upToDate) {
       const intl2 = intl3.intl;
-      label = intl2.string(_modDef3863["120EFN"]);
+      label = intl2.string(_modDef3864["120EFN"]);
     } else {
       const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
       if (tmp2) {
         if (!upToDate.publishing) {
           const intl = intl3.intl;
-          label = intl.string(_modDef3863.kAfbEN);
+          label = intl.string(_modDef3864.kAfbEN);
         }
       }
       label = upToDate.label;

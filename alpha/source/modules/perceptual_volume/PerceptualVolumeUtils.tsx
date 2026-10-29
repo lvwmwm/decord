@@ -1,15 +1,15 @@
-// Module ID: 5896
-// Function ID: 5897
+// Module ID: 5898
+// Function ID: 5899
 // Name: perceptual_volume/PerceptualVolumeUtils
 // Dependencies: [2]
 // Exports: amplitudeToPerceptual, perceptualToAmplitude
 
-// Module 5896 (perceptual_volume/PerceptualVolumeUtils)
+// Module 5898 (perceptual_volume/PerceptualVolumeUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/perceptual_volume/PerceptualVolumeUtils.tsx");
 
-export const perceptualToAmplitude = function perceptualToAmplitude(arg0) {
+export function perceptualToAmplitude(arg0) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 100;
@@ -28,8 +28,8 @@ export const perceptualToAmplitude = function perceptualToAmplitude(arg0) {
     }
     return powResult * num;
   }
-};
-export const amplitudeToPerceptual = function amplitudeToPerceptual(USER) {
+}
+export function amplitudeToPerceptual(USER) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 100;
@@ -48,4 +48,4 @@ export const amplitudeToPerceptual = function amplitudeToPerceptual(USER) {
     }
     return powResult * num;
   }
-};
+}

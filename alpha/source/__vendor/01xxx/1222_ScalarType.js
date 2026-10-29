@@ -68,7 +68,7 @@ RepeatType[1] = "PACKED";
 RepeatType.UNPACKED = 2;
 RepeatType[2] = "UNPACKED";
 
-export const normalizeFieldInfo = function normalizeFieldInfo(localName) {
+export function normalizeFieldInfo(localName) {
   localName = localName.localName;
   if (null === localName) {
     const obj = lowerCamelCase;
@@ -94,8 +94,8 @@ export const normalizeFieldInfo = function normalizeFieldInfo(localName) {
   }
   localName.opt = opt;
   return localName;
-};
-export const readFieldOptions = function readFieldOptions(fields, arg1, arg2, fromJson) {
+}
+export function readFieldOptions(fields, arg1, arg2, fromJson) {
   let closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName, index) => localName.localName == closure_0 || index == tmp);
@@ -112,8 +112,8 @@ export const readFieldOptions = function readFieldOptions(fields, arg1, arg2, fr
     }
   }
   return fromJsonResult;
-};
-export const readFieldOption = function readFieldOption(fields, arg1, arg2, fromJson) {
+}
+export function readFieldOption(fields, arg1, arg2, fromJson) {
   let closure_0 = arg1;
   fields = fields.fields;
   const found = fields.find((localName, index) => localName.localName == closure_0 || index == tmp);
@@ -134,8 +134,8 @@ export const readFieldOption = function readFieldOption(fields, arg1, arg2, from
     }
     return tmp5;
   }
-};
-export const readMessageOption = function readMessageOption(arg0, arg1, fromJson) {
+}
+export function readMessageOption(arg0, arg1, fromJson) {
   let tmp2 = tmp;
   if (undefined !== arg0.options[arg1]) {
     let fromJsonResult = tmp;
@@ -145,4 +145,4 @@ export const readMessageOption = function readMessageOption(arg0, arg1, fromJson
     tmp2 = fromJsonResult;
   }
   return tmp2;
-};
+}

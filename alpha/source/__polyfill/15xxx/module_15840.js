@@ -1,17 +1,9 @@
 // Module ID: 15840
 // Function ID: 15841
-// Dependencies: [15815]
+// Dependencies: [15830]
 
 // Module 15840
-import _mod15815 from "module_15815" /* 15815 */;
+import _mod15830 from "module_15830" /* 15830 */;
 
-let fn;
-if (_mod15815) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
 
-export default fn;
+export default (arg0, arg1, arg2) => _mod15830(arg0, arg1, arg2) >= 0;

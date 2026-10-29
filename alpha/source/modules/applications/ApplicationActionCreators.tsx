@@ -1,13 +1,13 @@
-// Module ID: 6845
-// Function ID: 6846
+// Module ID: 6868
+// Function ID: 6869
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6846, 2021, 2042, 1084, 584, 1294, 504, 558, 576, 2]
+// Dependencies: [5, 6869, 2022, 2043, 1084, 584, 1294, 504, 558, 576, 2]
 
-// Module 6845 (ApplicationActionCreators)
+// Module 6868 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6846 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6869 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import Constants from "Constants" /* 1084 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {

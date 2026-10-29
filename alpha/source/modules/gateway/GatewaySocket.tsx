@@ -1,10 +1,10 @@
-// Module ID: 15209
-// Function ID: 15210
+// Module ID: 15444
+// Function ID: 15445
 // Name: GatewaySocket
-// Dependencies: [32, 5, 1369, 1084, 3, 15210, 15212, 1101, 15213, 569, 15214, 15221, 15223, 15242, 10, 9, 5010, 15219, 1381, 1294, 1264, 38, 504, 7757, 7761, 7764, 7762, 500, 15243, 15244, 15226, 1362, 6503, 6508, 1254, 584, 2]
+// Dependencies: [32, 5, 1369, 1084, 3, 15445, 15447, 1101, 15448, 569, 15449, 15456, 15458, 15477, 10, 9, 5011, 15454, 1381, 1294, 1264, 38, 504, 7779, 7783, 7786, 7784, 500, 15478, 15479, 15461, 1362, 6527, 6532, 1254, 584, 2]
 // Exports: setAccountSwitchUserId
 
-// Module 15209 (GatewaySocket)
+// Module 15444 (GatewaySocket)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -15,16 +15,16 @@ import DurationsDefault from "Durations" /* 1101 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1362 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5010 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
-import GatewayEncodingDefault from "GatewayEncoding" /* 15210 */;
-import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 15213 */;
-import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 15214 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15219 */;
-import ConnectionStateDefault from "ConnectionState" /* 15221 */;
-import GatewayCompressionHandler from "GatewayCompressionHandler" /* 15223 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15242 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5011 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
+import GatewayEncodingDefault from "GatewayEncoding" /* 15445 */;
+import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 15448 */;
+import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 15449 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15454 */;
+import ConnectionStateDefault from "ConnectionState" /* 15456 */;
+import GatewayCompressionHandler from "GatewayCompressionHandler" /* 15458 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15477 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
@@ -195,7 +195,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         logger.info("Skipping _connect because socket is paused");
       } else {
         const tmp5 = self;
-        self.connectionState = self(15221).CONNECTING;
+        self.connectionState = self(15456).CONNECTING;
         self.nextReconnectIsImmediate = false;
         let compressionHandler = self.compressionHandler;
         const algorithm = compressionHandler.getAlgorithm();
@@ -243,7 +243,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         const str1 = str11.toString();
         ({ compressionHandler: compressionHandler2, _handleClose } = self);
         let closure_1 = _handleClose.bind(self);
-        const f124149 = (byteLength, compressed_byte_size) => {
+        const f125696 = (byteLength, compressed_byte_size) => {
           let compressionHandler;
           let d;
           let num3;
@@ -318,7 +318,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         let closure_3 = 0;
         compressionHandler2.dataReady((arg0) => {
           try {
-            f124149(arg0, closure_3);
+            f125696(arg0, closure_3);
             closure_3 = 0;
           } catch (tmp5) {
             closure_3 = 0;
@@ -400,7 +400,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
           }
         }
         if (null == tmp30) {
-          const tmp46 = tmp5(15212)(str1);
+          const tmp46 = tmp5(15447)(str1);
           tmp46.binaryType = "arraybuffer";
           tmp30 = tmp46;
         }
@@ -800,7 +800,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -939,7 +939,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
             closure_1_9.warn("Skipping identify because connectionState or identifyStartTime has changed");
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp90) {
           c3 = 3;
           throw tmp90;
@@ -1031,7 +1031,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
   }
   isConnected() {
     const self = this;
-    const tmp3 = this.connectionState === ConnectionStateDefault.IDENTIFYING || self.connectionState === tmp(15221).RESUMING || self.connectionState === tmp(15221).SESSION_ESTABLISHED;
+    const tmp3 = this.connectionState === ConnectionStateDefault.IDENTIFYING || self.connectionState === tmp(15456).RESUMING || self.connectionState === tmp(15456).SESSION_ESTABLISHED;
     return tmp3;
   }
   connect() {

@@ -1,11 +1,11 @@
-// Module ID: 14914
-// Function ID: 14915
+// Module ID: 15149
+// Function ID: 15150
 // Name: ErrorUtils
-// Dependencies: [14915, 2]
+// Dependencies: [15150, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 14914 (ErrorUtils)
-import _mod14915 from "module_14915" /* 14915 */;
+// Module 15149 (ErrorUtils)
+import _mod15150 from "module_15150" /* 15150 */;
 import size from "module_2" /* 2 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
@@ -19,15 +19,15 @@ function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
 }
 const result = size.fileFinishedImporting("utils/ErrorUtils.tsx");
 
-export const getUnderlyingIOSError = function getUnderlyingIOSError(message) {
+export function getUnderlyingIOSError(message) {
   try {
     const tmp3 = getUnderlyingIOSExceptionRecursively(message) ?? null;
     return tmp3;
   } catch (err) {
     return null;
   }
-};
-export const serializeError = function serializeError(arg0) {
+}
+export function serializeError(arg0) {
   let error = arg0;
   if (!Boolean(arg0)) {
     const _Error = Error;
@@ -43,6 +43,6 @@ export const serializeError = function serializeError(arg0) {
     const self4 = this;
     error1 = new Error(String(error));
   }
-  const obj = _mod14915;
+  const obj = _mod15150;
   return stringify(obj.normalizeToSize(error1));
-};
+}

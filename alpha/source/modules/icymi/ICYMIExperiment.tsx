@@ -1,14 +1,14 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8882
+// Function ID: 8883
 // Name: ICYMIExperiment
-// Dependencies: [8498, 1452, 558, 576, 8500, 2]
+// Dependencies: [8520, 1453, 558, 576, 8522, 2]
 // Exports: getICYMIEnabled, icymiEnabled
 
-// Module 8879 (ICYMIExperiment)
+// Module 8882 (ICYMIExperiment)
 import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 8500 */;
-import LabFeatureStore from "LabFeatureStore" /* 8498 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import useLabFeatureDefault from "useLabFeature" /* 8522 */;
+import LabFeatureStore from "LabFeatureStore" /* 8520 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,11 +76,11 @@ export const ICYMI_LAB_FEATURE = "hide_icymi_tab";
 export const ICYMIStaffOnlyExperiment = apexExperiment;
 export const useICYMIEnabled = tmp3;
 export { getICYMIEnabled };
-export const icymiEnabled = function icymiEnabled(customScores) {
+export function icymiEnabled(customScores) {
   const value = LabFeatureStore.get(hide_icymi_tab);
   const obj = { location: customScores };
   const tmp2 = !value && apexExperiment.getConfig(obj).enabled;
   return tmp2;
-};
+}
 export const ICYMIStaffDebuggingUtilityExperiment = apexExperiment1;
 export const ICYMIDesktopExperiment = apexExperiment2;

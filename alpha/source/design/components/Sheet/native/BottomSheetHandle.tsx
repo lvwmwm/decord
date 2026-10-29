@@ -1,9 +1,9 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5618
+// Function ID: 5619
 // Name: Sheet/BottomSheetHandle
 // Dependencies: [19, 558, 576, 2]
 
-// Module 5617 (Sheet/BottomSheetHandle)
+// Module 5618 (Sheet/BottomSheetHandle)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

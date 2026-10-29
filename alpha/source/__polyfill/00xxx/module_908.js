@@ -37,7 +37,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_6 = {};
 let closure_7 = {};
 
-export const addClsInstrumentationHandler = function addClsInstrumentationHandler(fn, arg1) {
+export function addClsInstrumentationHandler(fn, arg1) {
   let onCLSResult;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -81,8 +81,8 @@ export const addClsInstrumentationHandler = function addClsInstrumentationHandle
       }
     }
   };
-};
-export const addInpInstrumentationHandler = function addInpInstrumentationHandler(_onInp) {
+}
+export function addInpInstrumentationHandler(_onInp) {
   const tmp3 = closure_6.inp || [];
   closure_6.inp = tmp3;
   let inp = tmp2.inp;
@@ -113,8 +113,8 @@ export const addInpInstrumentationHandler = function addInpInstrumentationHandle
       }
     }
   };
-};
-export const addLcpInstrumentationHandler = function addLcpInstrumentationHandler(fn, arg1) {
+}
+export function addLcpInstrumentationHandler(fn, arg1) {
   let onLCPResult;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -158,8 +158,8 @@ export const addLcpInstrumentationHandler = function addLcpInstrumentationHandle
       }
     }
   };
-};
-export const addPerformanceInstrumentationHandler = function addPerformanceInstrumentationHandler(event, handleEntries) {
+}
+export function addPerformanceInstrumentationHandler(event, handleEntries) {
   const tmp2 = closure_6[event] || [];
   closure_6[event] = tmp2;
   const arr = closure_6[event];
@@ -190,8 +190,8 @@ export const addPerformanceInstrumentationHandler = function addPerformanceInstr
       }
     }
   };
-};
-export const addTtfbInstrumentationHandler = function addTtfbInstrumentationHandler(fn) {
+}
+export function addTtfbInstrumentationHandler(fn) {
   const tmp = closure_4;
   const tmp3 = closure_6.ttfb || [];
   closure_6.ttfb = tmp3;
@@ -223,7 +223,7 @@ export const addTtfbInstrumentationHandler = function addTtfbInstrumentationHand
       }
     }
   };
-};
-export const isPerformanceEventTiming = function isPerformanceEventTiming(interactionId) {
+}
+export function isPerformanceEventTiming(interactionId) {
   return "duration" in interactionId;
-};
+}

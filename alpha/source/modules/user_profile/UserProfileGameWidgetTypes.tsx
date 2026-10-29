@@ -1,13 +1,13 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7762
+// Function ID: 7763
 // Name: UserProfileGameWidgetTypes
-// Dependencies: [7741, 7739, 7742, 2]
+// Dependencies: [7763, 7761, 7764, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7740 (UserProfileGameWidgetTypes)
-import WidgetType from "WidgetType" /* 7739 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 7742 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7741 */;
+// Module 7762 (UserProfileGameWidgetTypes)
+import WidgetType from "WidgetType" /* 7761 */;
+import GameWidgetLimits from "GameWidgetLimits" /* 7764 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7763 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -51,7 +51,7 @@ class BaseGameWidget {
     return tmp;
   }
   isEqual(type) {
-    const f146393 = (gameId, index) => {
+    const f147942 = (gameId, index) => {
       let c0;
       let flag = false;
       if (gameId.gameId === games1[index].gameId) {
@@ -128,8 +128,8 @@ class BaseGameWidget {
         const games = self.games;
         const games1 = type.games;
         type = self.type;
-        tmp2 = games.length === games1.length && games.every(f146393);
-        const tmp3 = games.length === games1.length && games.every(f146393);
+        tmp2 = games.length === games1.length && games.every(f147942);
+        const tmp3 = games.length === games1.length && games.every(f147942);
       }
       tmp = tmp2;
     }
@@ -149,10 +149,10 @@ const prototype = BaseGameWidget.prototype;
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTypes.tsx");
 
 export const GAME_WIDGET_TYPES = items;
-export const isGameWidgetType = function isGameWidgetType(arg0) {
+export function isGameWidgetType(arg0) {
   return items.includes(arg0);
-};
-export const isGameWidget = function isGameWidget(widget) {
+}
+export function isGameWidget(widget) {
   return widget instanceof BaseGameWidget;
-};
+}
 export { BaseGameWidget };

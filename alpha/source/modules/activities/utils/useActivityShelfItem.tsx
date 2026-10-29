@@ -1,32 +1,32 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 12021
+// Function ID: 12022
 // Name: useActivityShelfItem
-// Dependencies: [5, 4855, 2023, 1084, 558, 576, 5669, 1381, 11548, 11968, 11969, 1997, 6847, 11496, 11495, 7293, 4925, 7289, 11401, 11404, 10808, 2]
+// Dependencies: [5, 4856, 2024, 1084, 558, 576, 5671, 1381, 11602, 12022, 12023, 1998, 6870, 11550, 11549, 7317, 4926, 7313, 11455, 11458, 10884, 2]
 // Exports: getStaffReleasePhase
 
-// Module 11967 (useActivityShelfItem)
+// Module 12021 (useActivityShelfItem)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Constants2 from "Constants" /* 2023 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
-import getPlatformDefault from "getPlatform" /* 5669 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6847 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7293 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10808 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11495 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11496 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11548 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11969 */;
+import Constants2 from "Constants" /* 2024 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4926 */;
+import getPlatformDefault from "getPlatform" /* 5671 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6870 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7317 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10884 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 11549 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 11550 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11602 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 
-const f113275 = (str) => str.toUpperCase();
+const f114504 = (str) => str.toUpperCase();
 const STAFF_RELEASE_PHASES = Constants2.STAFF_RELEASE_PHASES;
 const ApplicationFlags = Constants.ApplicationFlags;
 const ActivityAction = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
                           if (tmp9) {
                             NONE = tmp7.label_type;
                           } else {
-                            NONE = tmp(1997).EmbeddedActivityLabelTypes.NONE;
+                            NONE = tmp(1998).EmbeddedActivityLabelTypes.NONE;
                           }
                           if (cResult[28] === tmp21) {
                             if (cResult[29] === tmp11) {
@@ -169,7 +169,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f113275);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f114504);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -219,7 +219,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       }
       let tmp13 = null;
       if (null != activity.activity_preview_video_asset_id) {
-        tmp13 = tmp5(11968)(application.id, activity.activity_preview_video_asset_id);
+        tmp13 = tmp5(12022)(application.id, activity.activity_preview_video_asset_id);
       }
       cResult[6] = activity.activity_preview_video_asset_id;
       cResult[7] = application.id;
@@ -277,7 +277,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11968)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12022)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -300,7 +300,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f113275);
+      replaced = str4.replace(/(^\w|\s\w)/g, f114504);
     }
     tmp16 = replaced;
   } else {
@@ -310,7 +310,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   if (tmp7) {
     NONE = tmp5.label_type;
   } else {
-    NONE = tmp4(1997).EmbeddedActivityLabelTypes.NONE;
+    NONE = tmp4(1998).EmbeddedActivityLabelTypes.NONE;
   }
   return obj5;
 });
@@ -395,7 +395,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityA
     return START;
   } else {
     let JOIN;
-    const getEmbeddedActivityLocationChannelId = tmp6(4925).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp6(4926).getEmbeddedActivityLocationChannelId;
     embeddedActivityLocationUtils;
     if (tmp4 != null) {
       const _location = tmp4.location;
@@ -509,7 +509,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -550,7 +550,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
                     }
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } catch (tmp21) {
                 c2 = 3;
@@ -643,7 +643,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -685,7 +685,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
               }
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp21) {
           c2 = 3;
@@ -708,7 +708,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -764,7 +764,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnActivit
             return obj;
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -800,7 +800,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f113275);
+    replaced = str4.replace(/(^\w|\s\w)/g, f114504);
   }
   return replaced;
 }

@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10897
+// Function ID: 10898
 // Name: conjurePausedPreviewViews
 // Dependencies: [19, 558, 576, 2]
 // Exports: isConjurePausedPreviewMounted, registerConjurePausedPreview
 
-// Module 10821 (conjurePausedPreviewViews)
+// Module 10897 (conjurePausedPreviewViews)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -122,12 +122,12 @@ function registerConjurePausedPreview(arg0) {
 }
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePausedPreviewViews.tsx");
 
-export const isConjurePausedPreviewMounted = function isConjurePausedPreviewMounted(projectId) {
+export function isConjurePausedPreviewMounted(projectId) {
   let num = map.get(projectId);
   if (num == null) {
     num = 0;
   }
   return num > 0;
-};
+}
 export { registerConjurePausedPreview };
 export const useConjurePausedPreviewView = tmp3;

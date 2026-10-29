@@ -1,10 +1,10 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10815
+// Function ID: 10816
 // Name: ConjurePerfTraceBatches
 // Dependencies: [2]
 // Exports: applyTimingTraceBatch
 
-// Module 10740 (ConjurePerfTraceBatches)
+// Module 10815 (ConjurePerfTraceBatches)
 import size from "module_2" /* 2 */;
 
 function foldRecord(_Map1, nextResult) {
@@ -91,7 +91,7 @@ function foldRecord(_Map1, nextResult) {
 }
 let result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/ConjurePerfTraceBatches.tsx");
 
-export const applyTimingTraceBatch = function applyTimingTraceBatch(found, batch, live) {
+export function applyTimingTraceBatch(found, batch, live) {
   let max;
   let num;
   let sorted;
@@ -152,4 +152,4 @@ export const applyTimingTraceBatch = function applyTimingTraceBatch(found, batch
     live = found.live;
   }
   return obj;
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 16175
-// Function ID: 16176
+// Module ID: 16412
+// Function ID: 16413
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8686, 1084, 558, 576, 5241, 5011, 16176, 8693, 16104, 7122, 1264, 1125, 2]
+// Dependencies: [19, 8689, 1084, 558, 576, 5242, 5012, 16413, 8696, 16340, 7146, 1264, 1125, 2]
 
-// Module 16175 (usePremiumTryItOutPresetShuffle)
+// Module 16412 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import shared from "shared" /* 5011 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7122 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8693 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16104 */;
-import TryItOutPresets from "TryItOutPresets" /* 16176 */;
+import shared from "shared" /* 5012 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7146 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8696 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16340 */;
+import TryItOutPresets from "TryItOutPresets" /* 16413 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8686 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8689 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,9 +29,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(9);
-  const tmp4 = T(5241)();
+  const tmp4 = T(5242)();
   if (cResult[0] !== tmp4) {
-    const tmpResult = tmp(5011);
+    const tmpResult = tmp(5012);
     const isThemeLightResult = tmpResult.isThemeLight(tmp4);
     cResult[0] = tmp4;
     cResult[1] = isThemeLightResult;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "format" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "format" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -91,7 +91,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "format" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
         obj1 = { banner: null, themeColors: null, displayNameStyles: null, lastPreset: null };
         setTryItOutPreset = tmp.setTryItOutPreset;
         obj4 = closure_0(closure_2[9]);
-        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "format" };
+        obj6 = { assetOrigin: closure_0(closure_2[10]).AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
         obj1.banner = obj4.createPendingImage(obj6);
         themeColors = tryItOutPresetConfig.themeColors;
         obj1.themeColors = closure_0 ? themeColors.light : themeColors.dark;
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   return tmp12;
 }) : (function usePremiumTryItOutPresetShuffle() {
   let callback;
-  const tmp = callback(5241)();
+  const tmp = callback(5242)();
   let obj = shared;
   const isThemeLightResult = obj.isThemeLight(tmp);
   const require = isThemeLightResult;
@@ -196,7 +196,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "format" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "formatToPlainString" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

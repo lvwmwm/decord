@@ -1,21 +1,21 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14706
+// Function ID: 14707
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5004, 587, 5085, 11274, 5242, 1199, 14473, 5333, 5086, 7257, 5618, 14474, 14464, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 5086, 11328, 5243, 1199, 14707, 5334, 5087, 7281, 5619, 14708, 14698, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 14472 (MediaModalOverlayFooter)
+// Module 14706 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11274 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let __initData4, __initData5, set, set2, set3;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "application" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "paths" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "__packager_asset" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -52,7 +52,7 @@ let closure_24 = { code: "function MediaModalOverlayFooterTsx15(){const{overlayE
 let closure_25 = { code: "function MediaModalOverlayFooterTsx16([overlayEnabledValue,animationDriverValue]){const{DISMISSED_HIDE_OVERLAY,overlayEnabled}=this.__closure;if(overlayEnabledValue&&animationDriverValue<DISMISSED_HIDE_OVERLAY){overlayEnabled.set(false);}}" };
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayFooter.tsx");
 
-export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelId) {
+export function MediaModalOverlayFooter(channelId) {
   let NONE;
   let closure_13;
   let first1;
@@ -463,4 +463,4 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   items14[2] = setFull(tmp46, obj17);
   items12[1] = setFull(SafeAreaPaddingView, rect);
   return full(GestureDetector, obj13);
-};
+}

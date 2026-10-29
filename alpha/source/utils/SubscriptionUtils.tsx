@@ -1,19 +1,19 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 11140
+// Function ID: 11141
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 2054, 1084, 1391, 38, 11087, 2050, 7394, 558, 576, 504, 11089, 2046, 2]
+// Dependencies: [32, 19, 2055, 1084, 1391, 38, 11141, 2051, 7417, 558, 576, 504, 11143, 2047, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately
 
-// Module 11086 (SubscriptionUtils)
+// Module 11140 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7394 */;
-import CheckoutError from "CheckoutError" /* 11087 */;
-import PauseDuration from "PauseDuration" /* 11089 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7417 */;
+import CheckoutError from "CheckoutError" /* 11141 */;
+import PauseDuration from "PauseDuration" /* 11143 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2054 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2055 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f109948 = (planId) => {
+const f111174 = (planId) => {
   const value = SubscriptionPlanStore.get(planId.planId);
   _modDef38(null != value, "Unable to fetch plan");
   return value;
@@ -36,7 +36,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ SubscriptionPlans: metroImportAll, SubscriptionPlanInfo: c9 } = PremiumConstants);
 function getSubscriptionPlans(items) {
   items = items.items;
-  return items.map(f109948);
+  return items.map(f111174);
 }
 function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
   const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
@@ -190,13 +190,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFe
 let result = size.fileFinishedImporting("utils/SubscriptionUtils.tsx");
 
 export { getSubscriptionPlans };
-export const getSubscriptionSKUs = function getSubscriptionSKUs(items) {
+export function getSubscriptionSKUs(items) {
   items = items.items;
-  const mapped = items.map(f109948);
+  const mapped = items.map(f111174);
   return mapped.map((skuId) => skuId.skuId);
-};
+}
 export { subscriptionCanSwitchImmediately };
-export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
+export function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
   let flag;
   const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
   if (getCurrentSubscriptionPlanIdForGroup.type !== metroImportDefault.PREMIUM) {
@@ -224,8 +224,8 @@ export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCur
     flag = true;
   }
   return !flag;
-};
-export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
+}
+export function getOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
   const value = SubscriptionPlanStore.get(subscriptionPlanId);
   const obj = SubscriptionPlanStore;
   if (null == value) {
@@ -237,22 +237,22 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const result = obj3.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     const tmp12 = require;
     if (!obj.isFetchingForSKU(result)) {
-      const tmp12Result = tmp12(7394);
+      const tmp12Result = tmp12(7417);
       const subscriptionPlansForSKU = tmp12Result.fetchSubscriptionPlansForSKU(result, arg1);
     }
   }
   return value;
-};
+}
 export const useGetOrFetchSubscriptionPlan = tmp4;
-export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
+export function getSubscriptionPauseDurations(status) {
   const keys = Object.keys(PauseDuration.PauseDuration);
   const found = keys.filter((item) => isNaN(Number(item)));
   if (status.status !== metroRequire.PAUSED) {
     return { durations: found, currentDaysPaused: 0 };
   } else if (null != status.pauseEndsAt) {
     const _Math = Math;
-    const tmp6 = _modDef2046(status.currentPeriodStart);
-    const obj2 = _modDef2046(status.pauseEndsAt);
+    const tmp6 = _modDef2047(status.currentPeriodStart);
+    const obj2 = _modDef2047(status.pauseEndsAt);
     const rounded = Math.round(obj2.diff(tmp6, "days", true));
     const items = [];
     for (const item10042 of found) {
@@ -266,15 +266,15 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
   } else {
     return { durations: [], currentDaysPaused: 0 };
   }
-};
-export const didBeginPurchaseFlowOnFractionalPremium = function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
+}
+export function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
   let isMomentResult = null != isSameOrAfter;
   if (isMomentResult) {
-    const obj = _modDef2046;
+    const obj = _modDef2047;
     isMomentResult = obj.isMoment(isSameOrAfter);
   }
   if (isMomentResult) {
-    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef2046());
+    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef2047());
   }
   return isMomentResult;
-};
+}

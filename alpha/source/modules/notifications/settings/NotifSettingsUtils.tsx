@@ -1,13 +1,13 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15487
+// Function ID: 15488
 // Name: settings/NotifSettingsUtils
-// Dependencies: [15253, 1245, 15254, 558, 576, 504, 2]
+// Dependencies: [15488, 1245, 15489, 558, 576, 504, 2]
 // Exports: b64ToDeclarativeSettingsProto
 
-// Module 15252 (settings/NotifSettingsUtils)
+// Module 15487 (settings/NotifSettingsUtils)
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
-import notification_settings from "notification_settings" /* 15254 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15253 */;
+import notification_settings from "notification_settings" /* 15489 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15488 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,10 +102,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotifSe
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
 
-export const b64ToDeclarativeSettingsProto = function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
+export function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
   const obj = user_settings_UserSettingsUtils;
   return obj.b64ToProto(notification_settings.DeclarativeSettings, declarative_settings_proto);
-};
+}
 export const useNotifSettingValue = tmp2;
 export const useNotifSettingToggleValue = tmp3;
 export const useNotifSettingRadioValue = tmp4;

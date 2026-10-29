@@ -7,4 +7,4 @@
 import react from "react" /* 19 */;
 
 
-export const NavigationMetaContext = react.createContext(undefined);
+export const NavigationFocusedRouteStateContext = react.createContext(undefined);

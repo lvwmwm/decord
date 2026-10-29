@@ -1,19 +1,19 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10081
+// Function ID: 10082
 // Name: handleNSFWGuildInvite
-// Dependencies: [4874, 4878, 1084, 6700, 1381, 10050, 5680, 6701, 10051, 2]
+// Dependencies: [4875, 4879, 1084, 6724, 1381, 10082, 5682, 6725, 10083, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10049 (handleNSFWGuildInvite)
+// Module 10081 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6700 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6701 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10050 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10051 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6724 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6725 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10082 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10083 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;
@@ -24,7 +24,7 @@ const items = [, ];
 const set = new Set(items);
 let result = size.fileFinishedImporting("modules/age_gate/native/handleNSFWGuildInvite.tsx");
 
-export const isNSFWInvite = function isNSFWInvite(guild) {
+export function isNSFWInvite(guild) {
   let nsfw_level;
   const has = set.has;
   if (guild != null) {
@@ -37,8 +37,8 @@ export const isNSFWInvite = function isNSFWInvite(guild) {
     nsfw_level = GuildNSFWContentLevel.DEFAULT;
   }
   return has(nsfw_level);
-};
-export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1) {
+}
+export function handleNSFWGuildInvite(invite, arg1) {
   let closure_129_0;
   let id;
   let onCancel;
@@ -113,4 +113,4 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite, arg1
   } else {
     return false;
   }
-};
+}

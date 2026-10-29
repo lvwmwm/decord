@@ -1,12 +1,12 @@
-// Module ID: 5236
-// Function ID: 5237
+// Module ID: 5237
+// Function ID: 5238
 // Name: GameServerExperiment
-// Dependencies: [5224, 558, 576, 2]
+// Dependencies: [5225, 558, 576, 2]
 // Exports: getGameServerEnabled
 
-// Module 5236 (GameServerExperiment)
+// Module 5237 (GameServerExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5224" /* 5224 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,8 +45,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
 const result = size.fileFinishedImporting("modules/game_server/GameServerExperiment.tsx");
 
 export const GameServerExperiment = experiment;
-export const getGameServerEnabled = function getGameServerEnabled(c0, maybeGetGameServerHostingGuildEligiblePopoutDCF) {
+export function getGameServerEnabled(c0, maybeGetGameServerHostingGuildEligiblePopoutDCF) {
   const obj = { guildId: c0, location: maybeGetGameServerHostingGuildEligiblePopoutDCF };
   return experiment.getCurrentConfig(obj, { autoTrackExposure: false }).enabled;
-};
+}
 export const useGameServerEnabled = tmp3;

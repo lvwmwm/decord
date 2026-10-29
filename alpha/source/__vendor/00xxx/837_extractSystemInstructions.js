@@ -10,15 +10,15 @@ import DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT from "DEFAULT_GEN_AI_MESSAGES_BYTE_LIM
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const buildMethodPath = function buildMethodPath(arg0, arg1) {
+export function buildMethodPath(arg0, arg1) {
   let combined = arg1;
   if (arg0) {
     const _HermesInternal = HermesInternal;
     combined = "" + arg0 + "." + arg1;
   }
   return combined;
-};
-export const extractSystemInstructions = function extractSystemInstructions(arr) {
+}
+export function extractSystemInstructions(arr) {
   let items;
   let items1;
   if (Array.isArray(arr)) {
@@ -51,8 +51,8 @@ export const extractSystemInstructions = function extractSystemInstructions(arr)
   } else {
     return { systemInstructions: "Array", filteredMessages: arr };
   }
-};
-export const getFinalOperationName = function getFinalOperationName(arr) {
+}
+export function getFinalOperationName(arr) {
   let str = "chat";
   let str2 = "chat";
   if (!arr.includes("messages")) {
@@ -76,8 +76,8 @@ export const getFinalOperationName = function getFinalOperationName(arr) {
     str2 = str4;
   }
   return str2;
-};
-export const getSpanOperation = function getSpanOperation(arr) {
+}
+export function getSpanOperation(arr) {
   let str = "chat";
   let str2 = "chat";
   if (!arr.includes("messages")) {
@@ -101,8 +101,8 @@ export const getSpanOperation = function getSpanOperation(arr) {
     str2 = str4;
   }
   return "gen_ai." + str2;
-};
-export const getTruncatedJsonString = function getTruncatedJsonString(filteredMessages) {
+}
+export function getTruncatedJsonString(filteredMessages) {
   if (typeof filteredMessages === "string") {
     const obj2 = DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT;
     return obj2.truncateGenAiStringInput(filteredMessages);
@@ -117,8 +117,8 @@ export const getTruncatedJsonString = function getTruncatedJsonString(filteredMe
       return JSON.stringify(filteredMessages);
     }
   }
-};
-export const setTokenUsageAttributes = function setTokenUsageAttributes(setAttributes, arg1, arg2, arg3, arg4) {
+}
+export function setTokenUsageAttributes(setAttributes, arg1, arg2, arg3, arg4) {
   let num = arg1;
   if (undefined !== arg1) {
     const obj = {};
@@ -149,4 +149,4 @@ export const setTokenUsageAttributes = function setTokenUsageAttributes(setAttri
   }
   const sum2 = sum1 + num4;
   setAttributes.setAttributes({ [closure_1_0(closure_1_1[0]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE]: sum2 });
-};
+}

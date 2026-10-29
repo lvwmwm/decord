@@ -1,15 +1,15 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7466
+// Function ID: 7467
 // Name: useGame
-// Dependencies: [5, 19, 2019, 1084, 504, 1101, 7444, 558, 576, 2]
+// Dependencies: [5, 19, 2020, 1084, 504, 1101, 7467, 558, 576, 2]
 
-// Module 7443 (useGame)
+// Module 7466 (useGame)
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import GameActionCreators from "GameActionCreators" /* 7444 */;
+import GameActionCreators from "GameActionCreators" /* 7467 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -73,7 +73,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

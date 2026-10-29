@@ -1,15 +1,15 @@
-// Module ID: 4820
-// Function ID: 4821
+// Module ID: 4821
+// Function ID: 4822
 // Name: BillingUtils
-// Dependencies: [5, 1095, 4821, 1254, 1294, 4827, 2]
+// Dependencies: [5, 1095, 4822, 1254, 1294, 4828, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4820 (BillingUtils)
+// Module 4821 (BillingUtils)
 import Constants from "Constants" /* 1095 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BraintreeUtils from "BraintreeUtils" /* 4821 */;
-import BillingErrorDefault from "BillingError" /* 4827 */;
+import BraintreeUtils from "BraintreeUtils" /* 4822 */;
+import BillingErrorDefault from "BillingError" /* 4828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGatewayCheckoutContext() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -83,15 +83,15 @@ let obj = function _createGatewayCheckoutContext() {
 const PaymentGateways = Constants.PaymentGateways;
 const result = size.fileFinishedImporting("utils/BillingUtils.tsx");
 
-export const getLocalizedDisplayMonth = function getLocalizedDisplayMonth(arg0, arg1) {
+export function getLocalizedDisplayMonth(arg0, arg1) {
   const date = new Date();
   date.setMonth(arg0 - 1);
   return date.toLocaleString(arg1, { month: "short" });
-};
-export const createGatewayCheckoutContext = function createGatewayCheckoutContext() {
+}
+export function createGatewayCheckoutContext() {
   return obj(...arguments);
-};
-export const captureBillingException = function captureBillingException(error, tags) {
+}
+export function captureBillingException(error, tags) {
   let obj2;
   obj = { tags: obj2 };
   const captureException = SentryUtilsDefault.captureException;
@@ -104,16 +104,16 @@ export const captureBillingException = function captureBillingException(error, t
   obj2 = { app_context: "billing" };
   const merged1 = Object.assign(tags);
   captureException(error, obj);
-};
-export const isExpectedHttpClientError = function isExpectedHttpClientError(status) {
+}
+export function isExpectedHttpClientError(status) {
   let tmp2 = status instanceof HTTPUtils.HTTPResponseError && status.status >= 400 && status.status < 500;
   if (!tmp2) {
     tmp2 = status instanceof BillingErrorDefault && null != status.status && status.status >= 400 && status.status < 500;
     const tmp4 = status instanceof BillingErrorDefault && null != status.status && status.status >= 400 && status.status < 500;
   }
   return tmp2;
-};
-export const captureBillingMessage = function captureBillingMessage(arg0, tags) {
+}
+export function captureBillingMessage(arg0, tags) {
   let obj2;
   obj = { tags: obj2 };
   const captureMessage = SentryUtilsDefault.captureMessage;
@@ -126,7 +126,7 @@ export const captureBillingMessage = function captureBillingMessage(arg0, tags) 
   obj2 = { app_context: "billing" };
   const merged1 = Object.assign(tags);
   captureMessage(arg0, obj);
-};
+}
 export function calculateStandardizedUnits(billingPeriod, billingPeriod2) {
   let tmp = "P1M" === billingPeriod;
   const tmp2 = tmp && "P1Y" === billingPeriod2;

@@ -14,7 +14,7 @@ import PerformanceResourceTiming2 from "PerformanceResourceTiming" /* 172 */;
 const RawPerformanceEntryTypeValues = { MARK: 1, MEASURE: 2, EVENT: 3, LONGTASK: 4, RESOURCE: 5 };
 
 export { RawPerformanceEntryTypeValues };
-export const rawToPerformanceEntry = function rawToPerformanceEntry(entryType) {
+export function rawToPerformanceEntry(entryType) {
   let fetchStart;
   let num;
   let num2;
@@ -132,8 +132,8 @@ export const rawToPerformanceEntry = function rawToPerformanceEntry(entryType) {
     const performanceEntry = new PerformanceEntry(str, obj);
     return performanceEntry;
   }
-};
-export const rawToPerformanceEntryType = function rawToPerformanceEntryType(arg0) {
+}
+export function rawToPerformanceEntryType(arg0) {
   if (obj.MARK === arg0) {
     return "mark";
   } else if (obj.MEASURE === arg0) {
@@ -152,8 +152,8 @@ export const rawToPerformanceEntryType = function rawToPerformanceEntryType(arg0
     const typeError = new TypeError("rawToPerformanceEntryType: unexpected performance entry type received: " + arg0);
     throw typeError;
   }
-};
-export const performanceEntryTypeToRaw = function performanceEntryTypeToRaw(type) {
+}
+export function performanceEntryTypeToRaw(type) {
   if ("mark" === type) {
     return obj.MARK;
   } else if ("measure" === type) {
@@ -172,4 +172,4 @@ export const performanceEntryTypeToRaw = function performanceEntryTypeToRaw(type
     const typeError = new TypeError("performanceEntryTypeToRaw: unexpected performance entry type received: " + type);
     throw typeError;
   }
-};
+}

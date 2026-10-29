@@ -1,31 +1,31 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12079
+// Function ID: 12080
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 9684, 11977, 1501, 21, 5004, 587, 558, 576, 11961, 11966, 11208, 12026, 1125, 9683, 6939, 11964, 1630, 7180, 8916, 11976, 5670, 7665, 12029, 12030, 5013, 12011, 11989, 12023, 5270, 12031, 8947, 12032, 2]
+// Dependencies: [32, 19, 17, 9716, 12031, 1502, 21, 5005, 587, 558, 576, 12015, 12020, 11262, 12080, 1125, 9715, 6963, 12018, 1631, 7204, 8919, 12030, 5672, 7688, 12083, 12084, 5014, 12065, 12043, 12077, 5271, 12085, 8950, 12086, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 12025 (SearchLocalAndGlobalContentView)
+// Module 12079 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9684 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11208 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11961 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11964 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11966 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 11977 */;
-import CommandRowButton from "CommandRowButton" /* 12026 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9716 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11262 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 12018 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12020 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12031 */;
+import CommandRowButton from "CommandRowButton" /* 12080 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -258,15 +258,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(11961);
+  obj = hasOptions(12015);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(11966), obj2);
+    tmp4 = closure_10(onPressSend(12020), obj2);
   }
-  const tmpResult = tmp(12026);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11208).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(12080);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11262).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -289,9 +289,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12026), { hasOptions, sending, onPressSend }) };
-  const TableRow = tmp(6939).TableRow;
-  tmpResult2 = tmp(9683);
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12080), { hasOptions, sending, onPressSend }) };
+  const TableRow = tmp(6963).TableRow;
+  tmpResult2 = tmp(9715);
   return closure_10(TableRow, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -641,7 +641,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
 size = size_mod;
 let result = size.fileFinishedImporting("modules/app_launcher/native/screens/search/SearchLocalAndGlobalContentView.tsx");
 
-export const SearchLocalAndGlobalContentView = function SearchLocalAndGlobalContentView(context) {
+export function SearchLocalAndGlobalContentView(context) {
   let Text;
   let _undefined;
   let height;
@@ -919,4 +919,4 @@ export const SearchLocalAndGlobalContentView = function SearchLocalAndGlobalCont
   items12[3] = tmp29Result6;
   const obj12 = { ListHeaderComponent: fetchState(applicationResults2, { children: items12 }), contentContainerStyle: memo2, scrollIndicatorInsets: memo3, renderItem: callback3, keyExtractor, data: memo1, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "always", automaticallyAdjustsScrollIndicatorInsets: false, showsVerticalScrollIndicator: false, onViewableItemsChanged: handleViewableItemsChanged, preserveScrollMomentum: true, onScroll: callback4, animatedOnScroll: appLauncherFlashListProps.onScroll, ref: appLauncherFlashListProps.scrollerRef, simultaneousHandlers: appLauncherFlashListProps.gestureRef, animatedProps: appLauncherFlashListProps.animatedProps };
   return applicationResults(tmp2Result, obj12, query);
-};
+}

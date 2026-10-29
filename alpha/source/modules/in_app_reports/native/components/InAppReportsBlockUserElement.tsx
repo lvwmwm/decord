@@ -1,18 +1,18 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 15082
+// Function ID: 15083
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 4856, 4946, 1084, 21, 558, 576, 504, 6025, 5747, 7451, 7459, 1125, 9804, 14845, 2]
+// Dependencies: [19, 4857, 4947, 1084, 21, 558, 576, 504, 6029, 5749, 7474, 7482, 1125, 9836, 15080, 2]
 
-// Module 14847 (InAppReportsBlockUserElement)
+// Module 15082 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7451 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7459 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7474 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7482 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

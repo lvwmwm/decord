@@ -1,26 +1,26 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10908
+// Function ID: 10909
 // Name: conjurePublishConnection
-// Dependencies: [5, 2042, 6808, 10749, 584, 10833, 10837, 10838, 1999, 10835, 10841, 10823, 10756, 10842, 2]
+// Dependencies: [5, 2043, 6831, 10824, 584, 10909, 10913, 10914, 2000, 10911, 10917, 10899, 10831, 10918, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestPublishOptions
 
-// Module 10832 (conjurePublishConnection)
+// Module 10908 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10823 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10835 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10841 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 10842 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10899 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10911 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10917 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 10918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
 import size from "module_2" /* 2 */;
 
 let paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(10833);
+const requestConjureDevicePermissionsDefault = tmp(10909);
 function rejectPendingPatchNotesDraft(projectId, arg1) {
   const value = map1.get(projectId);
   const obj = map1;
@@ -131,7 +131,7 @@ let obj2 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ let obj2 = {
                 const tmp9 = projectId;
                 if (publishApprovalUrl.getPublishApprovalUrl(projectId) === tmp.approval_url) {
                   paths = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 } else {
                   const obj5 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId: tmp9, approvalUrl: tmp.approval_url };
                   const obj2 = projectId(paths[4]);
@@ -174,7 +174,7 @@ let obj2 = {
             const result = value.promptPublishApproval(closure_128_0.approval_url);
           }
           paths = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp14) {
           paths = 3;
           throw tmp14;
@@ -392,14 +392,14 @@ let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishC
 
 export const publishFrameHandlers = obj;
 export const publishStepHandlers = obj2;
-export const preparePublish = function preparePublish(projectId) {
+export function preparePublish(projectId) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   if (conjureSocket != null) {
     conjureSocket.sendPreparePublish();
   }
-};
-export const publishProject = function publishProject(id, selected_destination_id, arg2) {
+}
+export function publishProject(id, selected_destination_id, arg2) {
   const projectId = id;
   let closure_1 = selected_destination_id;
   let flag = arg2;
@@ -503,8 +503,8 @@ export const publishProject = function publishProject(id, selected_destination_i
       obj.dispatch(obj2);
     }
   });
-};
-export const draftPatchNotes = function draftPatchNotes(arg0) {
+}
+export function draftPatchNotes(arg0) {
   let closure_0 = arg0;
   const promise = new Promise(function(resolve, reject) {
     let error;
@@ -564,8 +564,8 @@ export const draftPatchNotes = function draftPatchNotes(arg0) {
     }
   });
   return promise;
-};
-export const recordPatchNotesSent = function recordPatchNotesSent(projectId, sent, source_sha) {
+}
+export function recordPatchNotesSent(projectId, sent, source_sha) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_PROJECT_PATCH_NOTES_SENT", projectId, sent };
   obj.dispatch(obj2);
@@ -584,8 +584,8 @@ export const recordPatchNotesSent = function recordPatchNotesSent(projectId, sen
     }
   } catch (err) {
   }
-};
-export const rejectPendingPublish = function rejectPendingPublish(projectId, arg1) {
+}
+export function rejectPendingPublish(projectId, arg1) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId, approvalUrl: null };
   obj.dispatch(obj2);
@@ -615,9 +615,9 @@ export const rejectPendingPublish = function rejectPendingPublish(projectId, arg
     const error1 = new Error(arg1);
     reject2(error1);
   }
-};
+}
 export { rejectPendingPatchNotesDraft };
-export const publishStateFromFrame = function publishStateFromFrame(publish_state) {
+export function publishStateFromFrame(publish_state) {
   let str;
   if (typeof publish_state.publish_state === "string") {
     if ("" !== publish_state.publish_state) {
@@ -637,8 +637,8 @@ export const publishStateFromFrame = function publishStateFromFrame(publish_stat
       str = "live_outdated";
     }
   }
-};
-export const requestPublishOptions = function requestPublishOptions(id) {
+}
+export function requestPublishOptions(id) {
   let closure_0 = id;
   const promise = new Promise(function(resolve, reject) {
     let items;
@@ -696,4 +696,4 @@ export const requestPublishOptions = function requestPublishOptions(id) {
     }
   });
   return promise;
-};
+}

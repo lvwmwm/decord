@@ -1,17 +1,17 @@
-// Module ID: 6745
-// Function ID: 6746
+// Module ID: 6768
+// Function ID: 6769
 // Name: QuestConstants
-// Dependencies: [6746, 1101, 6747, 1294, 6748, 6752, 6753, 12, 2, 6754]
+// Dependencies: [6769, 1101, 6770, 1294, 6771, 6775, 6776, 12, 2, 6777]
 // Exports: getQuestCdnUrlBase, getQuestHomeFilterOptionItem
 
-// Module 6745 (QuestConstants)
+// Module 6768 (QuestConstants)
 import DurationsDefault from "Durations" /* 1101 */;
-import QuestVariants from "QuestVariants" /* 6746 */;
-import Quests from "Quests" /* 6747 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6753 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6754 */;
+import QuestVariants from "QuestVariants" /* 6769 */;
+import Quests from "Quests" /* 6770 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import AdCreativeType from "AdCreativeType" /* 6775 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6776 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 6777 */;
 import HTTPUtils_mod from "HTTPUtils" /* 1294 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -148,7 +148,7 @@ export const EMPTY_AD_DECISION_DATA = { is_targeted: false };
 export const QuestHomeSortMethods = { SUGGESTED: "suggested", MOST_RECENT: "most_recent", EXPIRING_SOON: "expiring_soon", RECENTLY_ENROLLED: "recently_enrolled" };
 export { TaskFilterTypes };
 export const RewardFilterTypes = obj2;
-export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionItem(filter) {
+export function getQuestHomeFilterOptionItem(filter) {
   let obj;
   let tmp2;
   const values = Object.values(obj);
@@ -165,5 +165,5 @@ export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionIte
     }
   }
   return tmp2;
-};
+}
 export const SORTED_QUEST_HOME_FILTER_GROUPS = sorted;

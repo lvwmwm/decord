@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7214
+// Function ID: 7215
 // Name: FastestListLogger
 // Dependencies: [3, 1254, 2]
 // Exports: logFastestListError
 
-// Module 7190 (FastestListLogger)
+// Module 7214 (FastestListLogger)
 import LoggerDefault from "Logger" /* 3 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import size from "module_2" /* 2 */;
@@ -13,9 +13,9 @@ const logger = new LoggerDefault("FastestList");
 new LoggerDefault("FastestList");
 const result = size.fileFinishedImporting("modules/fastest_list/utils/FastestListLogger.native.tsx");
 
-export const logFastestListError = function logFastestListError(arg0, extra) {
+export function logFastestListError(arg0, extra) {
   logger.error(arg0, extra);
   const obj = SentryUtilsDefault;
   const obj2 = { extra };
   obj.captureMessage(arg0, obj2);
-};
+}

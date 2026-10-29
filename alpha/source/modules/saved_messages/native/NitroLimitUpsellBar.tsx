@@ -1,20 +1,20 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14511
+// Function ID: 14512
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5004, 587, 558, 576, 7989, 5705, 9968, 5270, 1125, 10212, 5280, 2]
+// Dependencies: [17, 21, 5005, 587, 558, 576, 8012, 5707, 10000, 5271, 1125, 10245, 5281, 2]
 
-// Module 14277 (NitroLimitUpsellBar)
+// Module 14511 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import WarningIcon from "WarningIcon" /* 7989 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9968 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10212 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import WarningIcon from "WarningIcon" /* 8012 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10000 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10245 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-xs/bold", color: "text-brand", children: str2.toUpperCase() };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       const intl = tmp(1125).intl;
       str2 = intl.string(intl3.t.oW0eUd);
       const tmp13 = React3(Text, obj2);
@@ -96,7 +96,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
       if (isAtLimit) {
         Button = NitroUpsellButtonDefault;
       } else {
-        Button = tmp(5280).Button;
+        Button = tmp(5281).Button;
       }
       const obj4 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
       intl2 = tmp(1125).intl;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   }
   if (isAtLimit) {
     const obj6 = { color: "text-feedback-warning", style: tmp4.icon };
-    tmp6Result = tmp6(tmp(7989).WarningIcon, obj6);
+    tmp6Result = tmp6(tmp(8012).WarningIcon, obj6);
   } else {
     const obj7 = { source: AssetRegistryDefault, style: tmp4.icon };
     const tmp8 = FastImageDefault;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5280).Button;
+    Button = tmp12(5281).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1125).intl;

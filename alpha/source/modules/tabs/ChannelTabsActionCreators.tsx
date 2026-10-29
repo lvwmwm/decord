@@ -1,20 +1,20 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13199
+// Function ID: 13200
 // Name: ChannelTabsActionCreators
-// Dependencies: [4856, 4907, 5035, 12979, 1084, 4863, 5746, 1111, 5743, 584, 2]
+// Dependencies: [4857, 4908, 5036, 13200, 1084, 4864, 5748, 1111, 5745, 584, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 12978 (ChannelTabsActionCreators)
+// Module 13199 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5746 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 12979 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5748 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 13200 */;
 import size from "module_2" /* 2 */;
 
 function navigateToTabLocation(found) {
@@ -68,7 +68,7 @@ function openChannelTabActive(id, guildId) {
       const channel1 = ChannelStore.getChannel(id);
       const tmp18 = null != channel1 && channel1.isGuildVocal();
       if (tmp18) {
-        const tmp15Result = tmp15(5746);
+        const tmp15Result = tmp15(5748);
         tmp15Result.updateChatOpen(id, true);
       }
       if (null != guildId) {
@@ -144,7 +144,7 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj11.getChannel(channelId);
               const tmp8 = null != channel && channel.isGuildVocal();
               if (tmp8) {
-                const tmp36Result = tmp36(5746);
+                const tmp36Result = tmp36(5748);
                 tmp36Result.updateChatOpen(channelId, true);
               }
               if (null != guildId) {
@@ -171,7 +171,7 @@ const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const TabHistoryNavResult = { Passthrough: "passthrough", Noop: "noop", Navigated: "navigated" };
 const result = size.fileFinishedImporting("modules/tabs/ChannelTabsActionCreators.tsx");
 
-export const openChannelTab = function openChannelTab(channelId, guildId) {
+export function openChannelTab(channelId, guildId) {
   const currentlySelectedChannelId = SelectedChannelStore.getCurrentlySelectedChannelId();
   if (0 === ChannelTabsStore.getTabs().length) {
     const channel = ChannelStore.getChannel(channelId);
@@ -191,9 +191,9 @@ export const openChannelTab = function openChannelTab(channelId, guildId) {
   const obj = { type: "CHANNEL_TABS_OPEN", kind: "channel", channelId, guildId };
   const obj5 = DispatcherDefault;
   obj5.dispatch(obj);
-};
+}
 export { openChannelTabActive };
-export const openDuplicateTab = function openDuplicateTab() {
+export function openDuplicateTab() {
   const activeTab = ChannelTabsStore.getActiveTab();
   const obj = ChannelTabsStore;
   if (null != activeTab) {
@@ -227,25 +227,25 @@ export const openDuplicateTab = function openDuplicateTab() {
     }
     tmp7(channelId, guildId);
   }
-};
-export const navigateToRoute = function navigateToRoute(routePath, routeLabel) {
+}
+export function navigateToRoute(routePath, routeLabel) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_TABS_NAVIGATE_ROUTE", routePath, routeLabel };
   obj.dispatch(obj2);
-};
+}
 export { TabHistoryNavResult };
-export const goBackInActiveTab = function goBackInActiveTab() {
+export function goBackInActiveTab() {
   return navigateActiveTabHistory(-1);
-};
-export const goForwardInActiveTab = function goForwardInActiveTab() {
+}
+export function goForwardInActiveTab() {
   return navigateActiveTabHistory(1);
-};
-export const setChannelTabsEnabled = function setChannelTabsEnabled(enabled) {
+}
+export function setChannelTabsEnabled(enabled) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_TABS_SET_ENABLED", enabled };
   obj.dispatch(obj2);
-};
-export const selectChannelTab = function selectChannelTab(tabId) {
+}
+export function selectChannelTab(tabId) {
   let closure_0 = tabId;
   const tabs = ChannelTabsStore.getTabs();
   const found = tabs.find((id) => id.id === id);
@@ -256,8 +256,8 @@ export const selectChannelTab = function selectChannelTab(tabId) {
     obj2.dispatch(obj3);
     navigateToTabLocation(found);
   }
-};
-export const cycleChannelTab = function cycleChannelTab(arg0) {
+}
+export function cycleChannelTab(arg0) {
   let activeTabId;
   const tabs = ChannelTabsStore.getTabs();
   if (tabs.length > 1) {
@@ -275,18 +275,18 @@ export const cycleChannelTab = function cycleChannelTab(arg0) {
       }
     }
   }
-};
-export const moveChannelTab = function moveChannelTab(tabId, toIndex) {
+}
+export function moveChannelTab(tabId, toIndex) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_TABS_MOVE", tabId, toIndex };
   obj.dispatch(obj2);
-};
-export const setChannelTabPinned = function setChannelTabPinned(tabId, pinned) {
+}
+export function setChannelTabPinned(tabId, pinned) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_TABS_SET_PINNED", tabId, pinned };
   obj.dispatch(obj2);
-};
-export const closeChannelTab = function closeChannelTab(tabId) {
+}
+export function closeChannelTab(tabId) {
   let closure_0 = tabId;
   const tabs = ChannelTabsStore.getTabs();
   if (-1 !== tabs.findIndex((id) => id.id === closure_0)) {
@@ -301,4 +301,4 @@ export const closeChannelTab = function closeChannelTab(tabId) {
       }
     }
   }
-};
+}

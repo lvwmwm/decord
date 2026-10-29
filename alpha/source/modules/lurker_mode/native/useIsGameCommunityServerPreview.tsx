@@ -1,12 +1,12 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 18045
+// Function ID: 18046
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4937, 1084, 558, 576, 504, 2]
+// Dependencies: [4938, 1084, 558, 576, 504, 2]
 // Exports: isGameCommunityServerPreview
 
-// Module 17807 (useIsGameCommunityServerPreview)
+// Module 18045 (useIsGameCommunityServerPreview)
 import Constants from "Constants" /* 1084 */;
-import LurkingStore from "LurkingStore" /* 4937 */;
+import LurkingStore from "LurkingStore" /* 4938 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,11 +69,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameC
 const result = size.fileFinishedImporting("modules/lurker_mode/native/useIsGameCommunityServerPreview.tsx");
 
 export default tmp2;
-export const isGameCommunityServerPreview = function isGameCommunityServerPreview(id) {
+export function isGameCommunityServerPreview(id) {
   const lurkingSourceForGuild = LurkingStore.getLurkingSourceForGuild(id);
   let type;
   if (lurkingSourceForGuild != null) {
     type = lurkingSourceForGuild.type;
   }
   return type === JoinGuildSources.GAME_COMMUNITY_UPSELL;
-};
+}

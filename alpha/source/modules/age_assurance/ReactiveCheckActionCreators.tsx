@@ -1,10 +1,10 @@
-// Module ID: 6696
-// Function ID: 6697
+// Module ID: 6720
+// Function ID: 6721
 // Name: ReactiveCheckActionCreators
 // Dependencies: [5, 1084, 1294, 584, 2]
 // Exports: fetchReactiveCheckResult, resetAgeVerification
 
-// Module 6696 (ReactiveCheckActionCreators)
+// Module 6720 (ReactiveCheckActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -43,7 +43,7 @@ obj = function _resetAgeVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -76,7 +76,7 @@ obj = function _resetAgeVerification() {
           obj = closure_128_1(closure_128_2[3]);
           obj.dispatch({ type: "AGE_VERIFICATION_RESET" });
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         c2 = 3;
@@ -89,9 +89,9 @@ obj = function _resetAgeVerification() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/age_assurance/ReactiveCheckActionCreators.tsx");
 
-export const fetchReactiveCheckResult = function fetchReactiveCheckResult() {
+export function fetchReactiveCheckResult() {
   return obj(...arguments);
-};
-export const resetAgeVerification = function resetAgeVerification() {
+}
+export function resetAgeVerification() {
   return obj(...arguments);
-};
+}

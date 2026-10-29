@@ -1,26 +1,26 @@
-// Module ID: 18083
-// Function ID: 18084
+// Module ID: 18317
+// Function ID: 18318
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6736, 18012, 18009, 21, 5004, 558, 576, 17725, 5085, 5283, 5070, 7204, 5288, 587, 18020, 18041, 4919, 2]
+// Dependencies: [19, 6759, 18246, 18243, 21, 5005, 558, 576, 17963, 5086, 5284, 5071, 7228, 5289, 587, 18254, 18275, 4920, 2]
 
-// Module 18083 (GuildsBarDragPreview)
+// Module 18317 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import spring from "spring" /* 5283 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18009 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import spring from "spring" /* 5284 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18243 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18012 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18246 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let min, obj1, set, str, tmp11, tmp12, tmp16, tmp18;
 
 let tmp;
-const _slicedToArray = tmp(4919);
+const _slicedToArray = tmp(4920);
 function getItemPreviewKey(id) {
   return "" + id.id;
 }

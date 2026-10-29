@@ -1,12 +1,12 @@
-// Module ID: 5847
-// Function ID: 5848
+// Module ID: 5849
+// Function ID: 5850
 // Name: Devices
-// Dependencies: [5777, 1364, 2013, 2]
+// Dependencies: [5779, 1364, 2014, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 5847 (Devices)
+// Module 5849 (Devices)
 import _modDef1364 from "module_1364" /* 1364 */;
-import Constants from "Constants" /* 5777 */;
+import Constants from "Constants" /* 5779 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -16,7 +16,7 @@ let closure_4;
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/Devices.tsx");
 
-export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
+export function sanitizeDevices(AUDIO_INPUT, items) {
   let c1;
   let closure_0 = AUDIO_INPUT;
   importDefault = false;
@@ -75,8 +75,8 @@ export const sanitizeDevices = function sanitizeDevices(AUDIO_INPUT, items) {
     mapped.unshift(obj2);
   }
   return mapped;
-};
-export const getAudioInputDevices = function getAudioInputDevices() {
+}
+export function getAudioInputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -146,8 +146,8 @@ export const getAudioInputDevices = function getAudioInputDevices() {
     });
   });
   return promise;
-};
-export const getAudioOutputDevices = function getAudioOutputDevices() {
+}
+export function getAudioOutputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -217,8 +217,8 @@ export const getAudioOutputDevices = function getAudioOutputDevices() {
     });
   });
   return promise;
-};
-export const getVideoInputDevices = function getVideoInputDevices() {
+}
+export function getVideoInputDevices() {
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
     let obj = closure_0(closure_2[2]);
@@ -295,4 +295,4 @@ export const getVideoInputDevices = function getVideoInputDevices() {
     });
   });
   return promise;
-};
+}

@@ -6,7 +6,7 @@
 
 // Module 1185 (chainMessagesObjects)
 
-export const chainMessagesObjects = function chainMessagesObjects(messagesProxy, $$loader2) {
+export function chainMessagesObjects(messagesProxy, $$loader2) {
   let merged;
   let tmp2 = "IntlMessagesProxy" === $$loader2[Symbol.toStringTag];
   if ("IntlMessagesProxy" === messagesProxy[Symbol.toStringTag]) {
@@ -38,9 +38,9 @@ export const chainMessagesObjects = function chainMessagesObjects(messagesProxy,
     const _Object4 = Object;
     merged = Object.assign($$loader2.$$baseObject, messagesProxy);
   }
-};
-export const makeMessagesProxy = function makeMessagesProxy(loader) {
-  const f143247 = (arg0) => loader.get(loader, arg0);
+}
+export function makeMessagesProxy(loader) {
+  const f144795 = (arg0) => loader.get(loader, arg0);
   let closure_0 = loader;
   const obj = {};
   const obj2 = {
@@ -50,7 +50,7 @@ export const makeMessagesProxy = function makeMessagesProxy(loader) {
     getOwnPropertyDescriptor(arg0, arg1) {
       if (!arg0[arg1]) {
         let closure_0 = arg1;
-        arg0[arg1] = f143247;
+        arg0[arg1] = f144795;
       }
       return Reflect.getOwnPropertyDescriptor(arg0, arg1);
     },
@@ -62,7 +62,7 @@ export const makeMessagesProxy = function makeMessagesProxy(loader) {
         if (arg1 !== Symbol.toStringTag) {
           if (!arg0[arg1]) {
             let closure_0 = arg1;
-            arg0[arg1] = f143247;
+            arg0[arg1] = f144795;
           }
           str2 = arg0[arg1];
         }
@@ -76,4 +76,4 @@ export const makeMessagesProxy = function makeMessagesProxy(loader) {
   const obj3 = { value: loader, enumerable: false, configurable: false, writable: false };
   Object.defineProperty(proxy, "$$loader", obj3);
   return proxy;
-};
+}

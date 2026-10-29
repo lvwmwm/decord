@@ -1,19 +1,19 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10682
+// Function ID: 10683
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1391, 21, 5004, 587, 558, 576, 1125, 7216, 10484, 2]
+// Dependencies: [19, 17, 1391, 21, 5005, 587, 558, 576, 1125, 7240, 10517, 2]
 
-// Module 10649 (PremiumGiftCustomMessage)
+// Module 10682 (PremiumGiftCustomMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import TextArea2 from "TextArea" /* 7216 */;
-import NativeGiftContext from "NativeGiftContext" /* 10484 */;
+import TextArea2 from "TextArea" /* 7240 */;
+import NativeGiftContext from "NativeGiftContext" /* 10517 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

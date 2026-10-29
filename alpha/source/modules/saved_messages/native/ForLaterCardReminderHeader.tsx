@@ -1,13 +1,13 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14291
+// Function ID: 14292
 // Name: ForLaterCardReminderHeader
-// Dependencies: [21, 558, 576, 14049, 14059, 5727, 2]
+// Dependencies: [21, 558, 576, 14282, 14292, 5729, 2]
 
-// Module 14058 (ForLaterCardReminderHeader)
+// Module 14291 (ForLaterCardReminderHeader)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import ClockIcon from "ClockIcon" /* 5727 */;
-import SavedMessageUtils from "SavedMessageUtils" /* 14049 */;
+import ClockIcon from "ClockIcon" /* 5729 */;
+import SavedMessageUtils from "SavedMessageUtils" /* 14282 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCa
           tmp7 = tmp8;
         }
       }
-      const ForLaterCardStatusHeader = tmp(14059).ForLaterCardStatusHeader;
+      const ForLaterCardStatusHeader = tmp(14292).ForLaterCardStatusHeader;
       const tmp10 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={dueInText} isCritical={isOverdue} actions={actions} />;
       cResult[3] = actions;
       cResult[4] = dueInText;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCa
   const dueInString = useDueInString(obj);
   let tmp8 = null;
   if (null != savedMessage.saveData.dueAt) {
-    const ForLaterCardStatusHeader = tmp(14059).ForLaterCardStatusHeader;
+    const ForLaterCardStatusHeader = tmp(14292).ForLaterCardStatusHeader;
     tmp8 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={tmp6} isCritical={tmp7} actions={actions} />;
   }
   return tmp8;

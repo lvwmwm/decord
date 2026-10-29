@@ -1,30 +1,30 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 7885
+// Function ID: 7886
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6677, 4856, 4907, 1084, 2023, 3, 4851, 4832, 584, 1294, 7863, 2001, 2013, 38, 7864, 5746, 6680, 1496, 1381, 11634, 10790, 1125, 2]
+// Dependencies: [5, 17, 6701, 4857, 4908, 1084, 2024, 3, 4852, 4833, 584, 1294, 7886, 2002, 2014, 38, 7887, 5748, 6704, 1497, 1381, 11688, 10866, 1125, 2]
 
-// Module 7862 (VoiceEngineStreamingManager)
+// Module 7885 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import inject from "inject" /* 2013 */;
-import Constants2 from "Constants" /* 2023 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import Timers from "Timers" /* 4851 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
-import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7863 */;
-import StreamActionCreators from "StreamActionCreators" /* 7864 */;
-import PushNotificationDefault from "PushNotification" /* 10790 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import inject from "inject" /* 2014 */;
+import Constants2 from "Constants" /* 2024 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import Timers from "Timers" /* 4852 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
+import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7886 */;
+import StreamActionCreators from "StreamActionCreators" /* 7887 */;
+import PushNotificationDefault from "PushNotification" /* 10866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import Constants from "Constants" /* 1084 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(11634);
+const useScreenshareUtils = tmp2(11688);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }
@@ -55,7 +55,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

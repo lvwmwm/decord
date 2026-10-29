@@ -1,17 +1,17 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15868
+// Function ID: 15869
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1369, 7648, 3, 1381, 15631, 510, 2]
+// Dependencies: [32, 5, 1369, 7671, 3, 1381, 15867, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 15632 (KeyboardLayoutMapUtils)
+// Module 15868 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 15631 */;
+import keyCodeDefault from "keyCode" /* 15867 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import KeyboardConstants from "KeyboardConstants" /* 7648 */;
+import KeyboardConstants from "KeyboardConstants" /* 7671 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let WindowsKeyToCode;
 function createKeyboardMapper() {
   return obj(...arguments);
 }
-const f124862 = (item) => {
+const f126409 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -56,7 +56,7 @@ let obj = function _syncKeyboardLayoutMap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -174,7 +174,7 @@ obj = function _createKeyboardMapper() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ obj = function _createKeyboardMapper() {
             }
           });
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -255,7 +255,7 @@ obj = function _resetKeyboardMapper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = function _resetKeyboardMapper() {
             obj.reset();
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -389,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f124862));
-    new Map(entries.map(f124862));
+    obj.map = new Map(entries.map(f126409));
+    new Map(entries.map(f126409));
     return obj;
   }
   get(arg0) {
@@ -430,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f124862));
+let map = new Map(entries.map(f126409));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {
@@ -960,7 +960,26 @@ const prototype2 = KeyboardMapper.prototype;
 let c17 = null;
 let closure_18 = null;
 let result = size.fileFinishedImporting("utils/web/KeyboardLayoutMapUtils.tsx");
-const getLayoutMap_export = function getLayoutMap() {
+
+export const BACKTICK_CODES = set;
+export const DefaultKeyboardLayout = frozen;
+export { normalizeKeyMap };
+export { initializeKeyboardMapper };
+export function __DEV_overrideLayoutMapKey(arg0, arg1) {
+  obj._set(arg0, arg1);
+  if (c17 != null) {
+    const result = obj._initializeInternalLayoutMap();
+  }
+  const obj2 = c17;
+  if (c17 != null) {
+    obj2.updateCaches();
+  }
+}
+export { getKeyboardMapper };
+export function resetKeyboardMapper() {
+  return obj(...arguments);
+}
+export function getLayoutMap() {
   let layoutMap;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -988,30 +1007,10 @@ const getLayoutMap_export = function getLayoutMap() {
     }
   }
   return layoutMap;
-};
-
-export const BACKTICK_CODES = set;
-export const DefaultKeyboardLayout = frozen;
-export { normalizeKeyMap };
-export { initializeKeyboardMapper };
-export const __DEV_overrideLayoutMapKey = function __DEV_overrideLayoutMapKey(arg0, arg1) {
-  obj._set(arg0, arg1);
-  if (c17 != null) {
-    const result = obj._initializeInternalLayoutMap();
-  }
-  const obj2 = c17;
-  if (c17 != null) {
-    obj2.updateCaches();
-  }
-};
-export { getKeyboardMapper };
-export const resetKeyboardMapper = function resetKeyboardMapper() {
-  return obj(...arguments);
-};
-export { getLayoutMap_export as getLayoutMap };
+}
 export { reverseLookupCodeFromKey };
 export { getExactKeyboardEventMatchFromAny };
-export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAny(keyCode) {
+export function getKeyboardEventShapeFromAny(keyCode) {
   const tmp = getExactKeyboardEventMatchFromAny(keyCode);
   if (null != tmp) {
     return tmp;
@@ -1054,8 +1053,8 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
       return null;
     }
   }
-};
-export const getKeyboardEventShapeFromKey = function getKeyboardEventShapeFromKey(codeToKeyLanguageCorrection) {
+}
+export function getKeyboardEventShapeFromKey(codeToKeyLanguageCorrection) {
   let tmp;
   if (null != codeToKeyLanguageCorrection) {
     tmp = normalizeKey(codeToKeyLanguageCorrection);
@@ -1100,8 +1099,8 @@ export const getKeyboardEventShapeFromKey = function getKeyboardEventShapeFromKe
       }
     }
   }
-};
-export const getKeyboardEventShapeFromKeycode = function getKeyboardEventShapeFromKeycode(keyCode) {
+}
+export function getKeyboardEventShapeFromKeycode(keyCode) {
   obj = getKeyboardMapper();
   let result;
   const tmp = getKeyboardMapper;
@@ -1137,4 +1136,4 @@ export const getKeyboardEventShapeFromKeycode = function getKeyboardEventShapeFr
       return null;
     }
   }
-};
+}

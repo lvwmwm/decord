@@ -1,18 +1,18 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6523
+// Function ID: 6524
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2053, 6500, 1084, 1294, 4827, 584, 1125, 1264, 6409, 4820, 6501, 2]
+// Dependencies: [5, 2054, 6524, 1084, 1294, 4828, 584, 1125, 1264, 6433, 4821, 6525, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6499 (BillingSharedActionCreators)
+// Module 6523 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6409 */;
-import Constants2 from "Constants" /* 6500 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6433 */;
+import Constants2 from "Constants" /* 6524 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2053 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2054 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c8;
@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {
@@ -274,10 +274,10 @@ const StripeErrorTypes = Constants2.StripeErrorTypes;
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 let result = size.fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
 
-export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress() {
+export function validatePaymentSourceBillingAddress() {
   return obj(...arguments);
-};
-export const dispatchConfirmationError = function dispatchConfirmationError(error, captureException) {
+}
+export function dispatchConfirmationError(error, captureException) {
   let billingError;
   let flag2;
   let obj9;
@@ -341,7 +341,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(6409).BillingError;
+      const BillingError = tmp3(6433).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }
@@ -375,14 +375,14 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     obj9 = {};
     const merged2 = Object.assign(tmp8);
     const merged3 = Object.assign(prop.extra);
-    const tmp11Result = tmp11(4820);
+    const tmp11Result = tmp11(4821);
     const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;
-};
-export const popupBridgeState = function popupBridgeState() {
+}
+export function popupBridgeState() {
   return obj(...arguments);
-};
-export const createPaymentSource = function createPaymentSource() {
+}
+export function createPaymentSource() {
   return obj(...arguments);
-};
+}

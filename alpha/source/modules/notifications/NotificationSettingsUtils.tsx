@@ -1,18 +1,18 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 16196
+// Function ID: 16197
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 15955, 15961, 15962, 558, 576, 1452, 504, 2]
+// Dependencies: [32, 19, 16191, 16197, 16198, 558, 576, 1453, 504, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useNotifCategoryVisibility
 
-// Module 15960 (notifications/NotificationSettingsUtils)
+// Module 16196 (notifications/NotificationSettingsUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15961 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15962 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16197 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16198 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15955 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,6 +21,7 @@ let _require, set;
 
 let closure_4;
 let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
 function getNamedExperiment(experiment) {
   const tmp = NotificationSettingsExperiments.knownExperimentConfigs[experiment];
@@ -36,7 +37,7 @@ function getNamedExperiment(experiment) {
   }
 }
 function getExperimentAndConfigBySettingId(arg0) {
-  const iter = metroRequire[Symbol.iterator]();
+  const iter = metroImportDefault[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
@@ -56,7 +57,7 @@ function getExperimentAndConfigBySettingId(arg0) {
   }
   return {};
 }
-({ NOTIF_CATEGORIES: closure_4, NOTIF_SETTING_MAPPING: hasOwnProperty, NOTIF_SETTINGS: metroRequire } = NotificationSettingsConstants);
+({ NOTIF_CATEGORIES: closure_4, NOTIF_SETTING_MAPPING: hasOwnProperty, NOTIF_SETTING_REDESIGN_MAPPING: metroRequire, NOTIF_SETTINGS: metroImportDefault } = NotificationSettingsConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 function useIsDeclarativeSettingsUIAvailable(AndroidMessageNotificationsSetting) {
@@ -193,13 +194,14 @@ function useNotifCategoryVisibility(CATEGORY_CALLS_MESSAGES) {
 }
 const result2 = size.fileFinishedImporting("modules/notifications/NotificationSettingsUtils.tsx");
 
-export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSettingsAndMappings() {
+export function getAssignedNotifSettingsAndMappings() {
+  let tmp14;
   const settings = [];
   const mappings = [];
   const obj = DeclarativeNotificationSettingsRedesignExperiment;
   const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("getAssignedNotifSettingsAndMappings");
   set = new Set();
-  const iter = metroRequire[Symbol.iterator]();
+  const iter = metroImportDefault[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp4 = nextResult;
@@ -215,19 +217,27 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
     }
     continue;
   }
-  const entries = Object.entries(hasOwnProperty);
-  const tmp14 = entries[Symbol.iterator]();
-  while (tmp14 !== undefined) {
-    let tmp17 = _slicedToArray(tmp15, 2);
-    let tmp18 = tmp17[1];
+  if (result) {
+    const obj2 = {};
+    const merged = Object.assign(tmp13);
+    const merged1 = Object.assign(metroRequire);
+    tmp14 = obj2;
+  } else {
+    tmp14 = tmp13;
+  }
+  const entries = Object.entries(tmp14);
+  const tmp22 = entries[Symbol.iterator]();
+  while (tmp22 !== undefined) {
+    let tmp25 = _slicedToArray(tmp23, 2);
+    let tmp26 = tmp25[1];
     let _parseInt = parseInt;
-    let parsed = parseInt(tmp17[0]);
-    for (const item10072 of tmp18) {
-      let tmp22 = item10072;
-      if (set.has(item10072)) {
-        let obj2 = { notifType: parsed, notifSetting: tmp22 };
-        let arr2 = mappings.push(obj2);
-        obj4.return();
+    let parsed = parseInt(tmp25[0]);
+    for (const item10080 of tmp26) {
+      let tmp30 = item10080;
+      if (set.has(item10080)) {
+        let obj4 = { notifType: parsed, notifSetting: tmp30 };
+        let arr2 = mappings.push(obj4);
+        obj5.return();
         break;
       }
       continue;
@@ -235,26 +245,26 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
     continue;
   }
   const categories = [];
-  for (const item10090 of React3) {
-    let tmp27 = item10090;
-    let tmp28 = null != item10090.redesignState;
-    if (tmp28) {
-      tmp28 = tmp27.redesignState !== result;
+  for (const item10098 of React3) {
+    let tmp35 = item10098;
+    let tmp36 = null != item10098.redesignState;
+    if (tmp36) {
+      tmp36 = tmp35.redesignState !== result;
     }
-    if (!tmp28) {
-      let obj5 = { stringId: tmp27.string_id, title: null };
+    if (!tmp36) {
+      let obj6 = { stringId: tmp35.string_id, title: null };
       if (result) {
-        if (null != tmp27.redesignTitle) {
-          obj5.title = tmp27.redesignTitle;
-          let tmp30Result = tmp30(obj5);
+        if (null != tmp35.redesignTitle) {
+          obj6.title = tmp35.redesignTitle;
+          let tmp38Result = tmp38(obj6);
         }
       }
-      let title = tmp27.title;
+      let title = tmp35.title;
     }
     continue;
   }
   return { categories, settings, mappings };
-};
+}
 export { useIsDeclarativeSettingsUIAvailable };
 export { useNotifCategoryVisibility };
 export const useNotifSettingVisibility = tmp5;

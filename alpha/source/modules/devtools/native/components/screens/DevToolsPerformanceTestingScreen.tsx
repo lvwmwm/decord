@@ -1,17 +1,17 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17613
+// Function ID: 17614
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 1502, 1630, 17213, 7023, 6939, 16092, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 1503, 1631, 17452, 7047, 6963, 16328, 2]
 
-// Module 17374 (DevToolsPerformanceTestingScreen)
+// Module 17613 (DevToolsPerformanceTestingScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16092 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = navigation(576);
   const cResult = obj.c(9);
   const tmp4 = closure_6();
-  let obj2 = navigation(1502);
+  let obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   const container = tmp4.container;
   const sum = useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16;
@@ -46,14 +46,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
-    const entries = Object.entries(tmp(17213).PerformanceTestingScreens);
+    const entries = Object.entries(tmp(17452).PerformanceTestingScreens);
     cResult[2] = entries;
     arr = entries;
   } else {
     arr = cResult[2];
   }
   if (cResult[3] !== navigation) {
-    const TableRowGroup = tmp(7023).TableRowGroup;
+    const TableRowGroup = tmp(7047).TableRowGroup;
     const tmp11 = <TableRowGroup hasIcons>{arr.map((item) => {
       let Icon;
       let headerTitle;

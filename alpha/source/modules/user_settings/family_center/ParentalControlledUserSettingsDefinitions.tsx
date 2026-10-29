@@ -1,11 +1,11 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16615
+// Function ID: 16616
 // Name: ParentalControlledUserSettingsDefinitions
-// Dependencies: [7683, 558, 576, 504, 7682, 2]
+// Dependencies: [7706, 558, 576, 504, 7705, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 16377 (ParentalControlledUserSettingsDefinitions)
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7683 */;
+// Module 16615 (ParentalControlledUserSettingsDefinitions)
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -13,7 +13,7 @@ let _require, dependencyMap;
 
 const result = size.fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");
 
-export const defineParentalControlledSetting = function defineParentalControlledSetting(privacy, defaultGuildsRestricted, explicitContentFromProto, explicitContentToProto, arg4) {
+export function defineParentalControlledSetting(privacy, defaultGuildsRestricted, explicitContentFromProto, explicitContentToProto, arg4) {
   _require = privacy;
   dependencyMap = explicitContentFromProto;
   let obj = arg4;
@@ -141,8 +141,8 @@ export const defineParentalControlledSetting = function defineParentalControlled
     })
   };
   return obj3;
-};
-export const wrapParentalControlledSettingWithExperimentDefaults = function wrapParentalControlledSettingWithExperimentDefaults(arg0) {
+}
+export function wrapParentalControlledSettingWithExperimentDefaults(arg0) {
   let closure_4;
   let closure_5;
   let require;
@@ -184,4 +184,4 @@ export const wrapParentalControlledSettingWithExperimentDefaults = function wrap
       return _require.updateControlledSetting(selectedTeenId, addFlagResult);
     }
   };
-};
+}

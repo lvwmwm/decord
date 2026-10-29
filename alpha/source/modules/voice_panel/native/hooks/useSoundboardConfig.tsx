@@ -1,14 +1,14 @@
-// Module ID: 18926
-// Function ID: 18927
+// Module ID: 19159
+// Function ID: 19160
 // Name: useSoundboardConfig
-// Dependencies: [19, 4856, 2011, 558, 576, 18768, 504, 18802, 7519, 1125, 2]
+// Dependencies: [19, 4857, 2012, 558, 576, 19001, 504, 19035, 7542, 1125, 2]
 
-// Module 18926 (useSoundboardConfig)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18768 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18802 */;
+// Module 19159 (useSoundboardConfig)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19001 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19035 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const canChannelUseSoundboardDefault = tmp4(7519);
+const canChannelUseSoundboardDefault = tmp4(7542);
 const SoundboardButtonLocation = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
   let closure_0;
   let deaf;
   let stringResult;
-  const f138255 = () => {
+  const f139828 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -190,9 +190,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f138255, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f139828, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f138255, items2);
+  stateFromStores || !react.useMemo(f139828, items2);
   if (stateFromStores) {
     const intl = tmp3(1125).intl;
     stringResult = intl.string(tmp3(1125).t.X1lQli);

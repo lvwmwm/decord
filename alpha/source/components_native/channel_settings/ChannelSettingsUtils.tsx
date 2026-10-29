@@ -1,15 +1,15 @@
-// Module ID: 18547
-// Function ID: 18548
+// Module ID: 18781
+// Function ID: 18782
 // Name: ChannelSettingsUtils
 // Dependencies: [2]
 // Exports: getIsChannelNameSettingEditable
 
-// Module 18547 (ChannelSettingsUtils)
+// Module 18781 (ChannelSettingsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsUtils.tsx");
 
-export const getIsChannelNameSettingEditable = function getIsChannelNameSettingEditable(arg0) {
+export function getIsChannelNameSettingEditable(arg0) {
   let canManageThread;
   let canSendMessages;
   let isChannelOwner;
@@ -25,4 +25,4 @@ export const getIsChannelNameSettingEditable = function getIsChannelNameSettingE
     }
   }
   return canSendMessages;
-};
+}

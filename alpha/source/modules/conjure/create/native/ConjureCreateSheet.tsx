@@ -1,21 +1,21 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12797
+// Function ID: 12798
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 21, 5004, 587, 10854, 12579, 12355, 12580, 12581, 12582, 5246, 10761, 12341, 12305, 1125, 3863, 10757, 7327, 12257, 12583, 12584, 7334, 7284, 7216, 7023, 6939, 5270, 12258, 12592, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5005, 587, 10930, 12798, 12409, 12791, 12799, 12790, 5247, 10836, 12395, 12359, 1125, 3864, 10832, 7351, 12311, 12800, 12801, 7358, 7308, 7240, 7047, 6963, 5271, 12312, 12809, 5281, 2]
 // Exports: default
 
-// Module 12578 (ConjureCreateSheet)
+// Module 12797 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5246 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 12257 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 12580 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 12584 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 12311 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 12791 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 12801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -148,7 +148,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export default function ConjureCreateSheet(guildId) {
             c5 = 0;
             closure_1_9(false);
             modelSettings = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp38) {
           closure_4 = tmp38;
@@ -237,7 +237,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -267,9 +267,9 @@ export default function ConjureCreateSheet(guildId) {
               c4 = 1;
               c3 = 1;
               const obj5 = {
-                value: tmp8((arg0) => {
-                            const obj = closure_2_0(installScope[15]);
-                            return obj.startConjurePrompt(arg0, trimmed);
+                value: tmp8((value) => {
+                            const obj = trimmed(c2[15]);
+                            return obj.startConjurePrompt(value, trimmed, [], closure_2_0);
                           }, obj4),
                 done: false
               };
@@ -285,14 +285,14 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp11) {
         c3 = 3;
         throw tmp11;
       }
     }
   });
-  const items1 = [callback, initialInstallScope, str, disabled];
+  const items1 = [callback, guildId, initialInstallScope, str, disabled];
   closure_12 = useCallback2(function() {
     return closure_0(...arguments);
   }, items1);
@@ -311,7 +311,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let closure_3;
@@ -455,7 +455,7 @@ export default function ConjureCreateSheet(guildId) {
           closure_1_9(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp82) {
         closure_3 = tmp82;
         if (0 === c4) {
@@ -492,7 +492,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -564,7 +564,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         initialInstallScope = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp15) {
         initialInstallScope = 3;
         throw tmp15;

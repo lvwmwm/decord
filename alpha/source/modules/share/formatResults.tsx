@@ -1,19 +1,19 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 13184
+// Function ID: 13185
 // Name: formatResults
-// Dependencies: [5, 9099, 4856, 4936, 1389, 12964, 1084, 9100, 7448, 9112, 1125, 1385, 12, 2]
+// Dependencies: [5, 9102, 4857, 4937, 1389, 13185, 1084, 9103, 7471, 9115, 1125, 1385, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 12963 (formatResults)
+// Module 13184 (formatResults)
 import _mod12 from "module_12" /* 12 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import _mod9100 from "module_9100" /* 9100 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9112 */;
-import ShareConstants from "ShareConstants" /* 12964 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import _mod9103 from "module_9103" /* 9103 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9115 */;
+import ShareConstants from "ShareConstants" /* 13185 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 9099 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 9102 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -77,13 +77,13 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
               return obj6;
             } else {
               c1 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else if (1 === tmp3) {
           c4 = 0;
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -113,7 +113,7 @@ let obj = function _getOrResolveChannelIdFromDestinationId() {
 };
 function canShareToChannel(type, arg1) {
   let tmp7;
-  if (type.type === _mod9100.AutocompleterResultTypes.USER) {
+  if (type.type === _mod9103.AutocompleterResultTypes.USER) {
     const record = type.record;
     let tmp9 = !record.isSystemUser();
     record.isSystemUser();
@@ -132,7 +132,7 @@ function canShareToChannel(type, arg1) {
     }
     tmp7 = tmp9;
   } else {
-    tmp7 = type.type === _mod9100.AutocompleterResultTypes.GROUP_DM;
+    tmp7 = type.type === _mod9103.AutocompleterResultTypes.GROUP_DM;
     if (!tmp7) {
       let tmp4 = type.record.type !== constants2.GUILD_FORUM && type.record.type !== tmp3.GUILD_MEDIA;
       if (tmp4) {
@@ -160,7 +160,7 @@ function mergeAndDedupeResultsWithHeaders(found, items1) {
     let tmp9 = nextResult;
     if (null != nextResult) {
       let tmp;
-      if (tmp9.type === _mod9100.AutocompleterResultTypes.HEADER) {
+      if (tmp9.type === _mod9103.AutocompleterResultTypes.HEADER) {
         tmp = nextResult;
       } else {
         let id = tmp9.record.id;
@@ -192,7 +192,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f117354 = (type) => {
+  const f118845 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -215,7 +215,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f117354));
+    return tmp26(results.filter(f118845));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -262,12 +262,12 @@ export default function formatResults(hasQuery) {
           let user = UserStore.getUser(targetDestination.id);
           let tmp13 = null;
           if (null != user) {
-            obj = { type: queryMode(9100).AutocompleterResultTypes.USER, record: user, score: 0 };
+            obj = { type: queryMode(9103).AutocompleterResultTypes.USER, record: user, score: 0 };
             tmp13 = obj;
           }
           tmp10 = tmp13;
         } else {
-          tmp10 = originDestination(9112)(targetDestination.id);
+          tmp10 = originDestination(9115)(targetDestination.id);
         }
         tmp7 = tmp10;
       }
@@ -279,7 +279,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f117354);
+      const found = items.filter(f118845);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;
@@ -305,7 +305,7 @@ export default function formatResults(hasQuery) {
     mapped = [];
   }
 };
-export const getDestinationIdFromChannelId = function getDestinationIdFromChannelId(channel_id) {
+export function getDestinationIdFromChannelId(channel_id) {
   const channel = ChannelStore.getChannel(channel_id);
   let type;
   if (channel != null) {
@@ -318,25 +318,25 @@ export const getDestinationIdFromChannelId = function getDestinationIdFromChanne
     obj = { type: "channel", id: channel_id };
   }
   return obj;
-};
-export const getDestinationIdFromResult = function getDestinationIdFromResult(results) {
+}
+export function getDestinationIdFromResult(results) {
   const record = results.record;
-  if (results.type === _mod9100.AutocompleterResultTypes.USER) {
+  if (results.type === _mod9103.AutocompleterResultTypes.USER) {
     obj = { type: "user", id: record.id };
     const obj2 = { type: "user", id: record.id };
   } else {
     obj = { type: "channel", id: record.id };
   }
   return obj;
-};
-export const destinationKey = function destinationKey(destinationIdFromResult) {
+}
+export function destinationKey(destinationIdFromResult) {
   return "" + destinationIdFromResult.type + "-" + destinationIdFromResult.id;
-};
+}
 export { getChannelIdFromDestinationId };
-export const getOrResolveChannelIdFromDestinationId = function getOrResolveChannelIdFromDestinationId() {
+export function getOrResolveChannelIdFromDestinationId() {
   return obj(...arguments);
-};
-export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNonEmptyQuery) {
+}
+export function formatResultsWithHeaders(hasNonEmptyQuery) {
   let frequentChannels;
   let items1;
   let queryMode;
@@ -351,7 +351,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
   } else {
     items1 = [];
   }
-  const createHeaderResult = queryMode(9100).createHeaderResult;
+  const createHeaderResult = queryMode(9103).createHeaderResult;
   const intl = queryMode(1125).intl;
   const headerResult = createHeaderResult(intl.string(queryMode(1125).t.qm9dSj));
   if (hasNonEmptyQuery) {
@@ -370,7 +370,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       HermesBuiltin.arraySpread(items3, found1.filter((type) => type.type === queryMode), 1);
       items4 = items3;
     } else {
-      const createHeaderResult2 = queryMode(9100).createHeaderResult;
+      const createHeaderResult2 = queryMode(9103).createHeaderResult;
       const intl2 = tmp2(1125).intl;
       items4 = [createHeaderResult2(intl2.string(queryMode(1125).t["80lOZ1"])), , ];
       let tmp15 = null;
@@ -381,7 +381,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
           let tmp11 = null;
           if (tmp6(tmp9)) {
             tmp11 = null;
-            const canResult = tmp9.type === tmp2(9100).AutocompleterResultTypes.USER || PermissionStore.can(constants.VIEW_CHANNEL, tmp9.record);
+            const canResult = tmp9.type === tmp2(9103).AutocompleterResultTypes.USER || PermissionStore.can(constants.VIEW_CHANNEL, tmp9.record);
             if (canResult) {
               tmp11 = tmp9;
             }
@@ -396,4 +396,4 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
     }
     return tmp7(items4, items1);
   }
-};
+}

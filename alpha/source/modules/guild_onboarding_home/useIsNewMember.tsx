@@ -1,15 +1,15 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7386
+// Function ID: 7387
 // Name: useIsNewMember
-// Dependencies: [4909, 4916, 4922, 1402, 1101, 558, 576, 504, 2]
+// Dependencies: [4910, 4917, 4923, 1402, 1101, 558, 576, 504, 2]
 // Exports: getIsNewMember
 
-// Module 7363 (useIsNewMember)
+// Module 7386 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1101 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNewMe
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
 
 export default tmp2;
-export const getIsNewMember = function getIsNewMember(id) {
+export function getIsNewMember(id) {
   let flag = true;
   if (!ImpersonateStore.isFullServerPreview(id)) {
     const selfMember = obj.getSelfMember(id);
@@ -141,4 +141,4 @@ export const getIsNewMember = function getIsNewMember(id) {
     }
   }
   return flag;
-};
+}

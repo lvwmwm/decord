@@ -1,15 +1,15 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 18787
+// Function ID: 18788
 // Name: voiceChannelAppListState
 // Dependencies: [2]
 // Exports: voiceChannelAppListState
 
-// Module 18553 (voiceChannelAppListState)
+// Module 18787 (voiceChannelAppListState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/voiceChannelAppListState.tsx");
 
-export const voiceChannelAppListState = function voiceChannelAppListState(hasRows) {
+export function voiceChannelAppListState(hasRows) {
   let str = "rows";
   if (!hasRows.hasRows) {
     let str2 = "failed";
@@ -23,4 +23,4 @@ export const voiceChannelAppListState = function voiceChannelAppListState(hasRow
     str = str2;
   }
   return str;
-};
+}

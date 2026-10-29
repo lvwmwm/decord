@@ -1,16 +1,16 @@
-// Module ID: 19003
-// Function ID: 19004
+// Module ID: 19236
+// Function ID: 19237
 // Name: updateRules
-// Dependencies: [19, 1084, 21, 558, 576, 5018, 5288, 587, 5696, 1948, 1199, 2]
+// Dependencies: [19, 1084, 21, 558, 576, 5019, 5289, 587, 5698, 1949, 1199, 2]
 // Exports: default
 
-// Module 19003 (updateRules)
+// Module 19236 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import native from "native" /* 1199 */;
-import _modDef1948 from "module_1948" /* 1948 */;
-import LinkingDefault from "Linking" /* 5696 */;
+import _modDef1949 from "module_1949" /* 1949 */;
+import LinkingDefault from "Linking" /* 5698 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,8 +26,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
   const cResult = obj.c(9);
   node = node.node;
   ({ output, state } = node);
-  const alwaysShowLinkDecorations = react.useContext(node(5018).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const obj2 = node(5288);
+  const alwaysShowLinkDecorations = react.useContext(node(5019).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  const obj2 = node(5289);
   const token = obj2.useToken(nativeDefault.colors.TEXT_LINK);
   let str = "none";
   if (alwaysShowLinkDecorations) {
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
         const fn = function f() {
           const openURL = LinkingDefault.openURL;
           LinkingDefault;
-          const obj = _modDef1948;
+          const obj = _modDef1949;
           return openURL(obj.sanitizeUrl(node.target));
         };
         cResult[3] = node.target;
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function I18nLink(nod
     obj.onClick = () => {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1948;
+      const obj = _modDef1949;
       return openURL(obj.sanitizeUrl(node.target));
     };
   }

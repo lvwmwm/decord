@@ -1,16 +1,16 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12212
+// Function ID: 12213
 // Name: buildPlatformPollResources
-// Dependencies: [12, 12159, 5004, 587, 8309, 7280, 6938, 1417, 2]
+// Dependencies: [12, 12213, 5005, 587, 8331, 7304, 6962, 1418, 2]
 // Exports: buildPlatformPollResources, getAvatarUrl
 
-// Module 12158 (buildPlatformPollResources)
+// Module 12212 (buildPlatformPollResources)
 import nativeDefault from "native" /* 587 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6938 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7280 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import PollStyles from "PollStyles" /* 12159 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6962 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7304 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import PollStyles from "PollStyles" /* 12213 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let closure_3 = module_12.mapValues(PollStyles.pollStyleSets, (arg0) => {
 });
 const result = size.fileFinishedImporting("modules/polls/chat/buildPlatformPollResources.native.tsx");
 
-export const buildPlatformPollResources = function buildPlatformPollResources(theme, layoutType) {
+export function buildPlatformPollResources(theme, layoutType) {
   let obj2;
   let obj3;
   let obj4;
@@ -55,8 +55,8 @@ export const buildPlatformPollResources = function buildPlatformPollResources(th
   obj3 = renderer_EmbedUtils;
   obj4 = renderer_EmbedUtils;
   return obj;
-};
-export const getAvatarUrl = function getAvatarUrl(currentUser, guildId) {
+}
+export function getAvatarUrl(currentUser, guildId) {
   const obj = utils_AvatarUtils;
   return obj.ensureAvatarSource(currentUser.getAvatarSource(guildId, false)).uri;
-};
+}

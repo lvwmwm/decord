@@ -1,15 +1,15 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 11872
+// Function ID: 11873
 // Name: FrameRenderTarget
-// Dependencies: [19, 17, 21, 5004, 558, 576, 11819, 11820, 7942, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 11873, 11874, 7965, 2]
 
-// Module 11818 (FrameRenderTarget)
+// Module 11872 (FrameRenderTarget)
 import react2 from "react" /* 576 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 11820 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 11874 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderT
   }
   const tmp5 = closure_8();
   const tmp6 = closure_9(presentation);
-  const tmp8 = webViewKey(11819)(frameId, level, tmp6);
+  const tmp8 = webViewKey(11873)(frameId, level, tmp6);
   const tmp7 = webViewKey;
   webViewKey = tmp8.webViewKey;
   const temporaryParentNodeTag = tmp8.temporaryParentNodeTag;
@@ -84,7 +84,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderT
     if (cResult[1] === webViewKey) {
       tmp9 = cResult[2];
     }
-    const syncExternalStore = react.useSyncExternalStore(tmp7(11820).subscribe, tmp9);
+    const syncExternalStore = react.useSyncExternalStore(tmp7(11874).subscribe, tmp9);
     if (null == webViewKey) {
       return null;
     } else {
@@ -133,7 +133,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderT
         }
       }
       const obj4 = { webViewKey, temporaryParentNodeTag, style: tmp5.target };
-      const tmp15 = closure_6(tmp(7942).WebViewTarget, obj4);
+      const tmp15 = closure_6(tmp(7965).WebViewTarget, obj4);
       cResult[3] = tmp5.target;
       cResult[4] = temporaryParentNodeTag;
       cResult[5] = webViewKey;
@@ -166,14 +166,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameRenderT
   let webViewKey;
   const tmp = closure_8();
   const tmp2 = closure_9(presentation);
-  const tmp4 = webViewKey(11819)(frameId, level, tmp2);
+  const tmp4 = webViewKey(11873)(frameId, level, tmp2);
   webViewKey = tmp4.webViewKey;
   const temporaryParentNodeTag = tmp4.temporaryParentNodeTag;
   if (null == webViewKey) {
     return null;
   } else {
     const obj2 = { webViewKey, temporaryParentNodeTag, style: tmp.target };
-    const tmp13 = closure_6(frameId(7942).WebViewTarget, obj2);
+    const tmp13 = closure_6(frameId(7965).WebViewTarget, obj2);
     let tmp6Result = tmp13;
     if (flag) {
       let obj = { style: tmp.target, children: items };

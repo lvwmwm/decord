@@ -1,9 +1,9 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10517
+// Function ID: 10518
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8718, 9551, 10485, 1389, 1084, 7560, 1391, 1095, 21, 3, 7575, 558, 576, 10486, 7576, 4820, 10487, 1125, 10488, 2050, 7555, 10489, 504, 10524, 10531, 8723, 8710, 5945, 1264, 7314, 10532, 584, 1381, 10482, 2]
+// Dependencies: [5, 32, 19, 8721, 9583, 10518, 1389, 1084, 7583, 1391, 1095, 21, 3, 7598, 558, 576, 10519, 7599, 4821, 10520, 1125, 10521, 2051, 7578, 10522, 504, 10557, 10564, 8726, 8713, 5947, 1264, 7338, 10565, 584, 1381, 10515, 2]
 
-// Module 10484 (NativeGiftContext)
+// Module 10517 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,21 +12,21 @@ import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import BillingUtils from "BillingUtils" /* 4820 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import Constants3 from "Constants" /* 7560 */;
-import ContextUtilsDefault from "ContextUtils" /* 7575 */;
-import BadgeId from "BadgeId" /* 8710 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8723 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10482 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10532 */;
+import BillingUtils from "BillingUtils" /* 4821 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import Constants3 from "Constants" /* 7583 */;
+import ContextUtilsDefault from "ContextUtils" /* 7598 */;
+import BadgeId from "BadgeId" /* 8713 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8726 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10515 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10565 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8718 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9551 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10485 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8721 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9583 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10518 */;
 import UserStore from "UserStore" /* 1389 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -443,7 +443,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } else {
                       try {
@@ -507,7 +507,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                               if (ref.current.orderId !== closure_129_6) {
                                 needsPlanSync = 0;
                                 c5 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "IconComponent" };
                               } else {
                                 expectedRevision = revision.revision;
                                 needsPlanSync(revision);
@@ -528,7 +528,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                                 if (ref.current.orderId !== closure_129_6) {
                                   needsPlanSync = 0;
                                   c5 = 3;
-                                  return { value: "IconComponent", done: null };
+                                  return { value: "IconComponent", done: "IconComponent" };
                                 }
                               }
                             } else if (arg0 === 1) {
@@ -542,14 +542,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                               expectedRevision = value;
                               if (ref.current.orderId !== closure_129_6) {
                                 c5 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "IconComponent" };
                               } else {
                                 ref.current.giftInfo = current;
                                 tmp67(expectedRevision);
                               }
                             }
                             c5 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           }
                           ref.current.planId = planId;
                           const obj15 = { premiumType, planInterval };
@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: null, planSelection: { premiumType, planInterval }, giftInfo: null };
+  let obj4 = { orderId: "a", planId: true, planSelection: { premiumType, planInterval }, giftInfo: true };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: null, planSelection: { premiumType, planInterval }, giftInfo: null };
+  let obj = { orderId: "a", planId: true, planSelection: { premiumType, planInterval }, giftInfo: true };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
@@ -764,7 +764,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -828,7 +828,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                             if (ref.current.orderId !== closure_129_6) {
                               needsPlanSync = 0;
                               c5 = 3;
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "IconComponent" };
                             } else {
                               expectedRevision = revision.revision;
                               needsPlanSync(revision);
@@ -849,7 +849,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                               if (ref.current.orderId !== closure_129_6) {
                                 needsPlanSync = 0;
                                 c5 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "IconComponent" };
                               }
                             }
                           } else if (arg0 === 1) {
@@ -863,14 +863,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
                             expectedRevision = value;
                             if (ref.current.orderId !== closure_129_6) {
                               c5 = 3;
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "IconComponent" };
                             } else {
                               ref.current.giftInfo = current;
                               tmp67(expectedRevision);
                             }
                           }
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                         ref.current.planId = planId;
                         const obj15 = { premiumType, planInterval };
@@ -1502,7 +1502,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1553,7 +1553,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp28) {
             closure_3 = tmp28;
             if (0 === c4) {
@@ -1594,7 +1594,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -1688,7 +1688,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
               const tmp8 = closure_1_19(false);
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp51) {
           c5 = 3;

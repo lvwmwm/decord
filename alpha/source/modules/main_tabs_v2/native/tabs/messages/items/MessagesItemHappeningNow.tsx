@@ -1,19 +1,19 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17998
+// Function ID: 17999
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 16924, 21, 12131, 587, 5004, 558, 576, 5288, 17761, 9438, 2]
+// Dependencies: [19, 17, 17163, 21, 12185, 587, 5005, 558, 576, 5289, 17999, 9469, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 17760 (MessagesItemHappeningNow)
+// Module 17998 (MessagesItemHappeningNow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12131 */;
+import useToken from "useToken" /* 5289 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12185 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16924 */;
-import createStyles from "createStyles" /* 5004 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17163 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ let HappeningNowItem;
 let closure_4;
 let tmp;
 let tmp4;
-const CutoutBackgroundContext = tmp(9438);
-const HappeningNowDefault = tmp4(17761);
+const CutoutBackgroundContext = tmp(9469);
+const HappeningNowDefault = tmp4(17999);
 const View = react_native.View;
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);
 const jsx = Fragment.jsx;
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemHappeningNow.tsx");
 
 export default memoResult;
-export const getMessagesItemHappeningNowHeight = function getMessagesItemHappeningNowHeight() {
+export function getMessagesItemHappeningNowHeight() {
   const obj = MobileVisualRefreshExperiment;
   return obj.resolveRefreshToken(nativeDefault.modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM) + React3;
-};
+}

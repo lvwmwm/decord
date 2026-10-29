@@ -1,16 +1,16 @@
-// Module ID: 4948
-// Function ID: 4949
+// Module ID: 4949
+// Function ID: 4950
 // Name: ReactionUtils
-// Dependencies: [502, 1084, 4949, 4950, 1125, 5261, 4832, 1264, 2]
+// Dependencies: [502, 1084, 4950, 4951, 1125, 5262, 4833, 1264, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4948 (ReactionUtils)
+// Module 4949 (ReactionUtils)
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import NotificationConstants from "NotificationConstants" /* 4949 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5261 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import NotificationConstants from "NotificationConstants" /* 4950 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5262 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ const constants3 = NotificationConstants.NotificationSettingsUpdateType;
 let result = size.fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
 
 export const MAX_REACTIONS = 20;
-export const getReactionEmojiName = function getReactionEmojiName(emoji) {
+export function getReactionEmojiName(emoji) {
   let result;
   if (null == emoji.id) {
     const obj = UnicodeEmojisDefault;
@@ -32,8 +32,8 @@ export const getReactionEmojiName = function getReactionEmojiName(emoji) {
     result = ":" + emoji.name + ":";
   }
   return result;
-};
-export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(selected, count, emoji, arg3) {
+}
+export function getAccessibleEmojiDisplayName(selected, count, emoji, arg3) {
   let PirBBE;
   let str2;
   let str3;
@@ -80,8 +80,8 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     str3 = "";
   }
   return formatToPlainString(PirBBE, obj);
-};
-export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
+}
+export function isMeReaction(me, me_burst, arg2) {
   let tmp3 = arg2 === MessageReactionsTypes.ReactionTypes.BURST;
   if (tmp3) {
     tmp3 = true === me_burst;
@@ -91,8 +91,8 @@ export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
     const tmp5 = arg2 === MessageReactionsTypes.ReactionTypes.NORMAL && true === me;
   }
   return tmp3;
-};
-export const toReactionEmoji = function toReactionEmoji(byName) {
+}
+export function toReactionEmoji(byName) {
   let str;
   let id = byName.id;
   if (id == null) {
@@ -107,8 +107,8 @@ export const toReactionEmoji = function toReactionEmoji(byName) {
     str = "";
   }
   return obj;
-};
-export const isCustomReactionEmojiId = function isCustomReactionEmojiId(emojiId) {
+}
+export function isCustomReactionEmojiId(emojiId) {
   let tmp = null != emojiId && "" !== emojiId;
   if (tmp) {
     let tmp2;
@@ -121,8 +121,8 @@ export const isCustomReactionEmojiId = function isCustomReactionEmojiId(emojiId)
     tmp = tmp2;
   }
   return tmp;
-};
-export const emojiEquals = function emojiEquals(emoji, id2) {
+}
+export function emojiEquals(emoji, id2) {
   if (null != id2.id) {
     let id;
     if (null != emoji.id) {
@@ -136,8 +136,8 @@ export const emojiEquals = function emojiEquals(emoji, id2) {
   } else {
     return null == emoji.id && id2.name === emoji.name;
   }
-};
-export const getBurstAnalyticsSection = function getBurstAnalyticsSection(isThread) {
+}
+export function getBurstAnalyticsSection(isThread) {
   let FORUM_CHANNEL_TEXT_AREA;
   if (isThread.isThread()) {
     FORUM_CHANNEL_TEXT_AREA = constants.THREAD_TEXT_AREA;
@@ -147,19 +147,19 @@ export const getBurstAnalyticsSection = function getBurstAnalyticsSection(isThre
     FORUM_CHANNEL_TEXT_AREA = isThread.isGuildVocal() ? tmp.TEXT_IN_VOICE : tmp.CHANNEL_TEXT_AREA;
   }
   return FORUM_CHANNEL_TEXT_AREA;
-};
-export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
+}
+export function shouldApplyReaction(optimistic) {
   optimistic = optimistic.optimistic;
   const userId = optimistic.userId;
   if (optimistic) {
     optimistic = AuthenticationStore.getId() !== userId;
   }
   return !optimistic;
-};
-export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
+}
+export function updateReactionNotificationsSetting(NumberResult, setting) {
   const ReactionNotifications = UserSettings.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };
   obj.track(hasOwnProperty.NOTIFICATION_SETTINGS_UPDATED, obj2);
-};
+}

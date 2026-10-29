@@ -1,16 +1,16 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12565
+// Function ID: 12566
 // Name: ConjureClarificationServerSheet
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 7284, 7181, 1125, 3863, 5270, 7023, 6939, 6919, 5246, 7334, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 7308, 7205, 1125, 3864, 5271, 7047, 6963, 6943, 5247, 7358, 2]
 
-// Module 12519 (ConjureClarificationServerSheet)
+// Module 12565 (ConjureClarificationServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     if (cResult[5] !== title) {
       let obj2 = { title };
-      const tmp12 = closure_6(tmp(7284).BottomSheetTitleHeader, obj2);
+      const tmp12 = closure_6(tmp(7308).BottomSheetTitleHeader, obj2);
       cResult[5] = title;
       cResult[6] = tmp12;
       tmp10 = tmp12;
@@ -80,8 +80,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(onPick(3863).gnsPOt), placeholder: intl2.string(onPick(3863).gnsPOt), onChange: tmp6 };
-      const SearchBar = tmp(7181).SearchBar;
+      const obj3 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(onPick(3864).gnsPOt), placeholder: intl2.string(onPick(3864).gnsPOt), onChange: tmp6 };
+      const SearchBar = tmp(7205).SearchBar;
       intl = tmp(1125).intl;
       intl2 = tmp(1125).intl;
       const tmp17 = closure_6(SearchBar, obj3);
@@ -111,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             }
             const obj4 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp10, children: items };
             items = [tmp14, tmp23];
-            const tmp29 = closure_7(tmp(7334).ActionSheet, obj4);
+            const tmp29 = closure_7(tmp(7358).ActionSheet, obj4);
             cResult[16] = tmp10;
             cResult[17] = tmp23;
             cResult[18] = tmp29;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     if (0 === arr.length) {
       const obj6 = { style: tmp4.empty, children: closure_6(Text, obj7) };
       obj7 = { variant: "text-md/normal", color: "text-muted", children: intl3.string(tmp(1125).t.V6nAfF) };
-      Text = tmp(5270).Text;
+      Text = tmp(5271).Text;
       intl3 = tmp(1125).intl;
       tmp20 = closure_6(View, obj6);
     } else {
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
               return closure_1_6(TableRow, obj, guild.id);
             })
       };
-      const TableRowGroup = tmp(7023).TableRowGroup;
+      const TableRowGroup = tmp(7047).TableRowGroup;
       tmp20 = closure_6(TableRowGroup, obj8);
     }
     cResult[8] = onPick;

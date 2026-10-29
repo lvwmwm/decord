@@ -1,14 +1,14 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15717
+// Function ID: 15718
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 5230, 15484, 558, 576, 12, 584, 504, 2]
+// Dependencies: [19, 5231, 15718, 558, 576, 12, 584, 504, 2]
 
-// Module 15483 (useGuildHeaderCounts)
+// Module 15717 (useGuildHeaderCounts)
 import _mod12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 15484 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildHeaderCountsStore from "GuildHeaderCountsStore" /* 15718 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14916
-// Function ID: 14917
+// Module ID: 15151
+// Function ID: 15152
 // Name: purchaseExceptionAlerts
 // Dependencies: [1125, 2]
 // Exports: getPurchaseExceptionAlert
 
-// Module 14916 (purchaseExceptionAlerts)
+// Module 15151 (purchaseExceptionAlerts)
 import intl3 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const obj2 = { 4000006: null };
 obj2[4000006] = obj;
 const result = size.fileFinishedImporting("modules/billing/native/apple/purchaseExceptionAlerts.tsx");
 
-export const getPurchaseExceptionAlert = function getPurchaseExceptionAlert(message) {
+export function getPurchaseExceptionAlert(message) {
   let intl;
   let intl2;
   if (null != message) {
@@ -37,4 +37,4 @@ export const getPurchaseExceptionAlert = function getPurchaseExceptionAlert(mess
     }
   }
   return null;
-};
+}

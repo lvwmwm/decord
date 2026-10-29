@@ -1,20 +1,20 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10882
+// Function ID: 10883
 // Name: launchFrame
-// Dependencies: [32, 5, 6810, 6811, 5645, 10807, 584, 10767, 6813, 10809, 10815, 10820, 10803, 2]
+// Dependencies: [32, 5, 6833, 6834, 5646, 10883, 584, 10842, 6836, 10885, 10891, 10896, 10879, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10806 (launchFrame)
+// Module 10882 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import createProxyTicket from "createProxyTicket" /* 10767 */;
-import leaveFrame from "leaveFrame" /* 10803 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10807 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import createProxyTicket from "createProxyTicket" /* 10842 */;
+import leaveFrame from "leaveFrame" /* 10879 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(10803);
+        const tmp4Result = tmp4(10879);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -281,7 +281,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -402,29 +402,29 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 let c12 = 0;
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
-export const launchFrame = function launchFrame() {
+export function launchFrame() {
   return obj(...arguments);
-};
+}
 export { clearMainFrameSlot };
 export { demoteMainFrame };
 export { promoteFrame };
 export { updateFrameLayoutMode };
-export const setFrameRunsInBackground = function setFrameRunsInBackground(id, enabled) {
+export function setFrameRunsInBackground(id, enabled) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId: id, enabled };
   obj.dispatch(obj2);
-};
-export const setFrameUserMuted = function setFrameUserMuted(frameId, muted) {
+}
+export function setFrameUserMuted(id, muted) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_SET_USER_MUTED", frameId, muted };
+  const obj2 = { type: "FRAME_SET_USER_MUTED", frameId: id, muted };
   obj.dispatch(obj2);
-};
-export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {
+}
+export function updateFramePanelMode(id, PIP) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_SET_PANEL_MODE", frameId: id, activityPanelMode: PIP };
   obj.dispatch(obj2);
-};
-export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
+}
+export function resetFrameLayoutModes(frameId) {
   const FOCUSED = metroImportDefault.FOCUSED;
   const frame = FramesStore.getFrame(frameId);
   if (null != frame) {
@@ -436,27 +436,27 @@ export const resetFrameLayoutModes = function resetFrameLayoutModes(frameId) {
   const obj3 = DispatcherDefault;
   const obj4 = { type: "FRAME_SET_PANEL_MODE", frameId, activityPanelMode: PANEL };
   obj3.dispatch(obj4);
-};
-export const attachFrameIframe = function attachFrameIframe(id, first1) {
+}
+export function attachFrameIframe(id, first1) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId: first1 };
   obj.dispatch(obj2);
-};
-export const detachFrameIframe = function detachFrameIframe(frameId, iframeId) {
+}
+export function detachFrameIframe(frameId, iframeId) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_IFRAME_UNMOUNT", frameId, iframeId };
   obj.dispatch(obj2);
-};
-export const attachFrameHostWindow = function attachFrameHostWindow(frameId, windowKey) {
+}
+export function attachFrameHostWindow(frameId, windowKey) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_HOST_WINDOW_MOUNT", frameId, windowKey };
   obj.dispatch(obj2);
-};
-export const detachFrameHostWindow = function detachFrameHostWindow(frameId, windowKey) {
+}
+export function detachFrameHostWindow(frameId, windowKey) {
   obj = DispatcherDefault;
   const obj2 = { type: "FRAME_HOST_WINDOW_UNMOUNT", frameId, windowKey };
   obj.dispatch(obj2);
-};
-export const refreshProxyTicket = function refreshProxyTicket() {
+}
+export function refreshProxyTicket() {
   return obj(...arguments);
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 15479
+// Function ID: 15480
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1452, 558, 576, 2, 15245]
+// Dependencies: [1453, 558, 576, 2, 15480]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled
 
-// Module 15244 (PrivateChannelHidingExperiment)
+// Module 15479 (PrivateChannelHidingExperiment)
 import react from "react" /* 576 */;
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 15245 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 15480 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,12 +37,12 @@ const result = size.fileFinishedImporting("modules/gateway/PrivateChannelHidingE
 
 export const getCachedPrivateChannelObfuscation = PrivateChannelHidingExperimentCache.getCachedPrivateChannelObfuscation;
 export const PRIVATE_CHANNEL_OBFUSCATION_KEY = PrivateChannelHidingExperimentCache.PRIVATE_CHANNEL_OBFUSCATION_KEY;
-export const isChannelMetadataObfuscationEnabled = function isChannelMetadataObfuscationEnabled(dependencyMap) {
+export function isChannelMetadataObfuscationEnabled(dependencyMap) {
   const obj = { location: dependencyMap };
   return closure_2.getConfig(obj).enableObfuscation;
-};
+}
 export const useIsChannelMetadataObfuscationEnabled = tmp2;
-export const isChannelMetadataIntegrityCheckEnabled = function isChannelMetadataIntegrityCheckEnabled(scheduleIntegrityCheck) {
+export function isChannelMetadataIntegrityCheckEnabled(scheduleIntegrityCheck) {
   const obj = { location: scheduleIntegrityCheck };
   return closure_2.getConfig(obj).enableIntegrityCheck;
-};
+}

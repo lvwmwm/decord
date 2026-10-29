@@ -1,29 +1,29 @@
-// Module ID: 18642
-// Function ID: 18643
+// Module ID: 18876
+// Function ID: 18877
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2065, 16246, 1084, 21, 9777, 5004, 587, 558, 576, 18643, 1199, 5270, 1503, 15028, 18644, 7127, 573, 7289, 7314, 16248, 7619, 16249, 7131, 15552, 5288, 6944, 1125, 18129, 18645, 16093, 18646, 38, 2]
+// Dependencies: [32, 19, 17, 2066, 16484, 1084, 21, 9809, 5005, 587, 558, 576, 18877, 1199, 5271, 1504, 15263, 18878, 7151, 573, 7313, 7338, 16486, 7642, 16487, 7155, 15788, 5289, 6968, 1125, 18363, 18879, 16329, 18880, 38, 2]
 
-// Module 18642 (SettingsNavigator)
+// Module 18876 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Pressables from "Pressables" /* 6944 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7127 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16248 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18129 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 18643 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Pressables from "Pressables" /* 6968 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7151 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16486 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18363 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 18877 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 16246 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import UserSettingSearchStore_mod from "UserSettingSearchStore" /* 16484 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

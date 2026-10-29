@@ -12,7 +12,7 @@ import _mod750 from "module_750" /* 750 */;
 
 let data, integrations;
 
-const f87196 = (stacktrace) => {
+const f88203 = (stacktrace) => {
   stacktrace = stacktrace.stacktrace;
   if (stacktrace != null) {
     const frames = stacktrace.frames;
@@ -74,18 +74,18 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_3 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "propagationContext"];
 
 export { applyClientOptions };
-export const applyDebugIds = function applyDebugIds(exception, arg1) {
+export function applyDebugIds(exception, arg1) {
   const obj = _mod750;
   const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
   exception = exception.exception;
   if (exception != null) {
     const values = exception.values;
     if (values != null) {
-      const item = values.forEach(f87196);
+      const item = values.forEach(f88203);
     }
   }
-};
-export const applyDebugMeta = function applyDebugMeta(exception) {
+}
+export function applyDebugMeta(exception) {
   const obj = {};
   exception = exception.exception;
   if (exception != null) {
@@ -129,8 +129,8 @@ export const applyDebugMeta = function applyDebugMeta(exception) {
       images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
     });
   }
-};
-export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
+}
+export function parseEventHintOrCaptureContext(captureContext) {
   if (captureContext) {
     let tmp5;
     const tmp3 = captureContext instanceof Scope.Scope || typeof captureContext === "function";
@@ -144,8 +144,8 @@ export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureCo
     }
     return tmp5;
   }
-};
-export const prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, isolationScope) {
+}
+export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, isolationScope) {
   let timestamp;
   let uuid4Result;
   normalizeDepth = normalizeDepth.normalizeDepth;
@@ -201,7 +201,7 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
     if (exception != null) {
       let values = exception.values;
       if (values != null) {
-        let item = values.forEach(f87196);
+        let item = values.forEach(f88203);
       }
     }
   }
@@ -399,4 +399,4 @@ export const prepareEvent = function prepareEvent(normalizeDepth, event_id, even
     }
     return tmp7;
   });
-};
+}

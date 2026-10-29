@@ -1,17 +1,17 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12014
+// Function ID: 12015
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 11961, 5705, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12015, 5707, 2]
 
-// Module 11960 (ApplicationsImage)
+// Module 12014 (ApplicationsImage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11961 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

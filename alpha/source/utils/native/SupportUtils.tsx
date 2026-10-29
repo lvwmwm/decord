@@ -1,14 +1,14 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17407
+// Function ID: 17408
 // Name: SupportUtils
-// Dependencies: [5, 2065, 1380, 4961, 5696, 2064, 2]
+// Dependencies: [5, 2066, 1380, 4962, 5698, 2065, 2]
 // Exports: emailSupport
 
-// Module 17168 (SupportUtils)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import LinkingDefault from "Linking" /* 5696 */;
+// Module 17407 (SupportUtils)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import LinkingDefault from "Linking" /* 5698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, constants;
@@ -40,7 +40,7 @@ let obj = function _emailSupport() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let obj = function _emailSupport() {
         } else {
           openURL(value);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -86,6 +86,6 @@ let obj = function _emailSupport() {
 };
 const result = size.fileFinishedImporting("utils/native/SupportUtils.tsx");
 
-export const emailSupport = function emailSupport() {
+export function emailSupport() {
   return obj(...arguments);
-};
+}

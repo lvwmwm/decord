@@ -1,18 +1,18 @@
-// Module ID: 10118
-// Function ID: 10119
+// Module ID: 10151
+// Function ID: 10152
 // Name: useReportToModHooks
-// Dependencies: [19, 4878, 6045, 558, 576, 7403, 7424, 504, 7420, 7601, 8707, 2]
+// Dependencies: [19, 4879, 6049, 558, 576, 7426, 7447, 504, 7443, 7624, 8710, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel
 
-// Module 10118 (useReportToModHooks)
+// Module 10151 (useReportToModHooks)
 import react from "react" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7403 */;
-import ReportToModUtils from "ReportToModUtils" /* 7420 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7424 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import UserActionCreators from "UserActionCreators" /* 8707 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import MessageStore from "MessageStore" /* 6045 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7426 */;
+import ReportToModUtils from "ReportToModUtils" /* 7443 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7447 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import UserActionCreators from "UserActionCreators" /* 8710 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -222,16 +222,16 @@ const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReport
 
 export const useIsReportToModEnabled = tmp2;
 export const useReportToModChannelId = tmp3;
-export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
+export function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
   const obj = ReportToModUtils;
   return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
-};
-export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
+}
+export function useIsModeratorReportPostChannel(isModeratorReportChannel) {
   const obj = ReportToModUtils;
   return obj.isModeratorReportPostChannel(isModeratorReportChannel);
-};
+}
 export const useLoadReportedMessage = tmp4;
-export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSnapshot(arg0) {
+export function loadOriginalAuthorFromSnapshot(arg0) {
   let reported_user_id;
   if (arg0 != null) {
     const first = arg0.messageSnapshots[0];
@@ -246,4 +246,4 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     const obj = UserActionCreators;
     const user = obj.getUser(reported_user_id);
   }
-};
+}

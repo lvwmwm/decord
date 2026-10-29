@@ -1,19 +1,19 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 15773
+// Function ID: 15774
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 5248, 5249, 1381, 8806, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 5249, 5250, 1381, 8809, 2]
 
-// Module 15539 (Slider)
+// Module 15773 (Slider)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import _modDef8806 from "module_8806" /* 8806 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import _modDef8809 from "module_8809" /* 8809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -236,7 +236,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(onCha
             }
           }
           const obj4 = { style: tmp4.slider, value: tmp16, minimumValue: num, maximumValue: num2, step, disabled, onValueChange: tmp11, onSlidingComplete: onChangeEnd, minimumTrackTintColor: tmp4.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp4.maximumTrackTintColor.backgroundColor, tapToSeek: true, accessibilityLabel, accessibilityHint, accessibilityValue: tmp17, testID, onResponderGrant: tmp20 };
-          const tmp24 = closure_6(onChange(8806), obj4);
+          const tmp24 = closure_6(onChange(8809), obj4);
           cResult[11] = accessibilityHint;
           cResult[12] = accessibilityLabel;
           cResult[13] = disabled;
@@ -362,7 +362,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(onCha
     testID,
     onResponderGrant: fn
   };
-  const tmp13 = _modDef8806;
+  const tmp13 = _modDef8809;
   if (value == null) {
     value = first;
   }

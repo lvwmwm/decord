@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 11271
+// Module ID: 11324
+// Function ID: 11325
 // Name: storefrontCodedLink
 // Dependencies: [32, 2]
 // Exports: makeStorefrontCodedLink, parseStorefrontCodedLink
 
-// Module 11270 (storefrontCodedLink)
+// Module 11324 (storefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -32,10 +32,10 @@ const result = size.fileFinishedImporting("modules/slayer_storefront/storefrontC
 
 export const MAX_STOREFRONT_EMBED_SKUS = 6;
 export { normalizeStorefrontSkuIds };
-export const makeStorefrontCodedLink = function makeStorefrontCodedLink(items, applicationId) {
+export function makeStorefrontCodedLink(items, applicationId) {
   return "" + items.join(",") + "-" + applicationId;
-};
-export const parseStorefrontCodedLink = function parseStorefrontCodedLink(code) {
+}
+export function parseStorefrontCodedLink(code) {
   let str;
   let tmp3;
   const parts = code.split("-");
@@ -56,4 +56,4 @@ export const parseStorefrontCodedLink = function parseStorefrontCodedLink(code) 
       return null;
     }
   }
-};
+}

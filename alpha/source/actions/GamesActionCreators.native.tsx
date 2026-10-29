@@ -1,13 +1,13 @@
-// Module ID: 11401
-// Function ID: 11402
+// Module ID: 11455
+// Function ID: 11456
 // Name: GamesActionCreators
-// Dependencies: [5, 1084, 2023, 11402, 1104, 7446, 5696, 584, 1294, 11403, 11404, 2]
+// Dependencies: [5, 1084, 2024, 11456, 1104, 7469, 5698, 584, 1294, 11457, 11458, 2]
 
-// Module 11401 (GamesActionCreators)
+// Module 11455 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 2023 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11402 */;
+import Constants2 from "Constants" /* 2024 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -181,7 +181,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {

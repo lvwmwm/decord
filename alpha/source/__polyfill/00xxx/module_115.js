@@ -9,7 +9,7 @@ import _mod289 from "module_289" /* 289 */;
 import react from "react" /* 19 */;
 
 
-export const renderElement = function renderElement(element) {
+export function renderElement(element) {
   element = element.element;
   const rootTag = element.rootTag;
   const render = ReactFabricDefault.render;
@@ -17,7 +17,7 @@ export const renderElement = function renderElement(element) {
   ReactFabricDefault;
   const NumberResult = Number(rootTag);
   render(element, NumberResult, null, true, obj);
-};
+}
 export const dispatchCommand = ReactFabricDefault.dispatchCommand;
 export const findHostInstance_DEPRECATED = ReactFabricDefault.findHostInstance_DEPRECATED;
 export const findNodeHandle = ReactFabricDefault.findNodeHandle;
@@ -26,6 +26,6 @@ export const isChildPublicInstance = ReactFabricDefault.isChildPublicInstance;
 export const getNodeFromInternalInstanceHandle = ReactFabricDefault.getNodeFromInternalInstanceHandle;
 export const getPublicInstanceFromInternalInstanceHandle = ReactFabricDefault.getPublicInstanceFromInternalInstanceHandle;
 export const getPublicInstanceFromRootTag = ReactFabricDefault.getPublicInstanceFromRootTag;
-export const isProfilingRenderer = function isProfilingRenderer() {
+export function isProfilingRenderer() {
   return Boolean(false);
-};
+}

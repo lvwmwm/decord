@@ -1,31 +1,31 @@
-// Module ID: 18497
-// Function ID: 18498
+// Module ID: 18731
+// Function ID: 18732
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7766, 4946, 1389, 13837, 1084, 13815, 21, 5004, 587, 13813, 8900, 5698, 1125, 9094, 558, 576, 13817, 1381, 7289, 7314, 7180, 18498, 1264, 5299, 8705, 12, 5058, 573, 17748, 7293, 6939, 5702, 8598, 18499, 18500, 18502, 10660, 9124, 6916, 10657, 18503, 2]
+// Dependencies: [32, 5, 19, 17, 7788, 4947, 1389, 14070, 1084, 14048, 21, 5005, 587, 14046, 8903, 5700, 1125, 9097, 558, 576, 14050, 1381, 7313, 7338, 7204, 18732, 1264, 5300, 8708, 12, 5059, 573, 17986, 7317, 6963, 5704, 8620, 18733, 18734, 18736, 10693, 9127, 6940, 10690, 18737, 2]
 
-// Module 18497 (AddFriendsScreen)
+// Module 18731 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8900 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13813 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13817 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13837 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18500 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18502 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14046 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14048 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14050 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 14070 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18734 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18736 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7766 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4946 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -121,7 +121,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -137,12 +137,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f135587 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f137156 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f135587);
-    const tmp2 = arr.length === arg1.length && arr.every(f135587);
+    tmp = arr.length === arg1.length && arr.every(f137156);
+    const tmp2 = arr.length === arg1.length && arr.every(f137156);
   }
   return tmp;
 }
@@ -176,7 +176,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   const obj2 = require("ContactSyncUtils");
   const contactSyncAccount = obj2.useContactSyncAccount();
   if (cResult[0] !== contactSyncAccount) {
-    let tmpResult = tmp(13817);
+    let tmpResult = tmp(14050);
     const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
     cResult[0] = contactSyncAccount;
     cResult[1] = isContactSyncEnabledResult;
@@ -216,7 +216,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
     tmp10 = cResult[3];
   }
   const effect = obj4.useEffect(tmp9, tmp10);
-  const tmpResult2 = tmp(13817);
+  const tmpResult2 = tmp(14050);
   let result = tmpResult2.isContactSyncAvailable();
   if (result) {
     let tmp13 = !tmp5;

@@ -1,24 +1,24 @@
-// Module ID: 9697
-// Function ID: 9698
+// Module ID: 9729
+// Function ID: 9730
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7439, 502, 4856, 7666, 6045, 7795, 1124, 1084, 5009, 558, 7406, 7790, 7418, 576, 1125, 9698, 11, 1294, 8336, 9699, 7792, 1402, 8178, 9701, 8321, 5747, 7601, 5944, 584, 5011, 1101, 10237, 14291, 2]
+// Dependencies: [32, 5, 19, 7462, 502, 4857, 7689, 6049, 7818, 1124, 1084, 5010, 558, 7429, 7812, 7441, 576, 1125, 9730, 11, 1294, 8358, 9731, 7814, 1402, 8201, 9733, 8343, 5749, 7624, 5946, 584, 5012, 1101, 10270, 14525, 2]
 // Exports: createThread
 
-// Module 9697 (ThreadCreationHooks)
+// Module 9729 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import ThreadHooks from "ThreadHooks" /* 7406 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import DraftStore from "DraftStore" /* 7666 */;
-import MessageParserDefault from "MessageParser" /* 7790 */;
-import SlowmodeStore from "SlowmodeStore" /* 7795 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import ThreadHooks from "ThreadHooks" /* 7429 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import DraftStore from "DraftStore" /* 7689 */;
+import MessageParserDefault from "MessageParser" /* 7812 */;
+import SlowmodeStore from "SlowmodeStore" /* 7818 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7439 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7462 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MessageStore from "MessageStore" /* 6045 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7418);
+    const tmp17Result = tmp17(7441);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -228,7 +228,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -741,7 +741,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -791,7 +791,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -890,7 +890,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -958,7 +958,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp91;
@@ -1208,7 +1208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp91;
@@ -1420,7 +1420,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
   }, items);
 });
 let result = size.fileFinishedImporting("modules/threads/ThreadCreationHooks.tsx");
-const createThread_export = function createThread(arg0, name, type, auto_archive_duration, _location) {
+
+export const PrivateThreadMode = obj;
+export const usePrivateThreadMode = tmp4;
+export { getIsPrivate };
+export { getDefaultThreadName };
+export const useCreateThreadCommon = tmp5;
+export function createThread(arg0, name, type, auto_archive_duration, _location) {
   const id = arg0;
   return createThread_(arg0, [], undefined, () => {
     let obj3;
@@ -1431,12 +1437,5 @@ const createThread_export = function createThread(arg0, name, type, auto_archive
     obj3 = HTTPUtils;
     return post(request);
   });
-};
-
-export const PrivateThreadMode = obj;
-export const usePrivateThreadMode = tmp4;
-export { getIsPrivate };
-export { getDefaultThreadName };
-export const useCreateThreadCommon = tmp5;
-export { createThread_export as createThread };
+}
 export const useCreateForumPostCommon = tmp6;

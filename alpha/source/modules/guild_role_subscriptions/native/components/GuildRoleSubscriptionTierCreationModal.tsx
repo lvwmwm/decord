@@ -1,17 +1,17 @@
-// Module ID: 19598
-// Function ID: 19599
+// Module ID: 19831
+// Function ID: 19832
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 19589, 16833, 21, 558, 576, 16855, 5698, 1125, 19599, 19585, 19606, 2]
+// Dependencies: [5, 32, 19, 19822, 17071, 21, 558, 576, 17093, 5700, 1125, 19832, 19818, 19839, 2]
 
-// Module 19598 (GuildRoleSubscriptionTierCreationModal)
+// Module 19831 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16855 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17093 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19589 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19822 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
             onAfterTierCreation();
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp15) {
         c2 = 3;
@@ -232,7 +232,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               closure_128_3();
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp15) {
           c2 = 3;
@@ -307,9 +307,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(19606).EditStateContextProvider;
+  const EditStateContextProvider = guildId(19839).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(19585).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(19818).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

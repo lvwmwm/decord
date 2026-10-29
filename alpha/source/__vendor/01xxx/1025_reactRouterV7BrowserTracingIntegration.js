@@ -11,23 +11,23 @@ import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 898 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const reactRouterV7BrowserTracingIntegration = function reactRouterV7BrowserTracingIntegration(instrumentPageLoad) {
+export function reactRouterV7BrowserTracingIntegration(instrumentPageLoad) {
   const obj = _mod1022;
   return obj.createReactRouterV6CompatibleTracingIntegration(instrumentPageLoad, "7");
-};
-export const withSentryReactRouterV7Routing = function withSentryReactRouterV7Routing(arg0) {
+}
+export function withSentryReactRouterV7Routing(arg0) {
   const obj = _mod1022;
   return obj.createV6CompatibleWithSentryReactRouterRouting(arg0, "7");
-};
-export const wrapCreateBrowserRouterV7 = function wrapCreateBrowserRouterV7(arg0) {
+}
+export function wrapCreateBrowserRouterV7(arg0) {
   const obj = _mod1022;
   return obj.createV6CompatibleWrapCreateBrowserRouter(arg0, "7");
-};
-export const wrapCreateMemoryRouterV7 = function wrapCreateMemoryRouterV7(arg0) {
+}
+export function wrapCreateMemoryRouterV7(arg0) {
   const obj = _mod1022;
   return obj.createV6CompatibleWrapCreateMemoryRouter(arg0, "7");
-};
-export const wrapUseRoutesV7 = function wrapUseRoutesV7(arg0) {
+}
+export function wrapUseRoutesV7(arg0) {
   const obj = _mod1022;
   return obj.createV6CompatibleWrapUseRoutes(arg0, "7");
-};
+}

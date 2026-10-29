@@ -1,15 +1,15 @@
-// Module ID: 6882
-// Function ID: 6883
+// Module ID: 6906
+// Function ID: 6907
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 4916, 1389, 5036, 21, 558, 576, 6883, 504, 6884, 6879, 6907, 1125, 5280, 6875, 6967, 2]
+// Dependencies: [5, 109, 19, 4917, 1389, 5037, 21, 558, 576, 6907, 504, 6908, 6903, 6931, 1125, 5281, 6899, 6991, 2]
 
-// Module 6882 (MemberVerificationAlertRejected)
+// Module 6906 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import UserStore from "UserStore" /* 1389 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5036 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -218,7 +218,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             const obj2 = tmp(stateFromStores[13]);
             const result = obj2.openMemberVerificationModal(tmp);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp19) {
           c2 = 3;
@@ -379,7 +379,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -435,7 +435,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj2 = guildId(stateFromStores[13]);
           const result = obj2.openMemberVerificationModal(closure_128_0);
           stateFromStores = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp18) {
         stateFromStores = 3;

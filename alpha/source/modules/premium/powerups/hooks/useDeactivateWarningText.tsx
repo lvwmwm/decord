@@ -1,16 +1,16 @@
-// Module ID: 13701
-// Function ID: 13702
+// Module ID: 13934
+// Function ID: 13935
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5230, 4910, 4878, 558, 576, 504, 7260, 5221, 1125, 2567, 2]
+// Dependencies: [19, 5231, 4911, 4879, 558, 576, 504, 7284, 5222, 1125, 2568, 2]
 
-// Module 13701 (useDeactivateWarningText)
-import _modDef2567 from "module_2567" /* 2567 */;
-import Powerups from "Powerups" /* 5221 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7260 */;
+// Module 13934 (useDeactivateWarningText)
+import _modDef2568 from "module_2568" /* 2568 */;
+import Powerups from "Powerups" /* 5222 */;
+import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7284 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F151725 */ }, 0);
+          num = sortedRoles.reduce(function() { /* body not rendered: F153353 */ }, 0);
         }
       }
       return num;
@@ -226,13 +226,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
       if (stateFromStores2 > 0) {
         const intl5 = tmp2(1125).intl;
         const obj2 = { perk: skuId.title, memberCount: tmp15 };
-        formatToPlainStringResult = intl5.formatToPlainString(_modDef2567["4jSvr1"], obj2);
+        formatToPlainStringResult = intl5.formatToPlainString(_modDef2568["4jSvr1"], obj2);
         tmp16 = importDefault;
       } else {
         const intl4 = tmp2(1125).intl;
         tmp16 = importDefault;
         const obj3 = { perk: skuId.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2567.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2568.cavtEo, obj3);
       }
       tmp8 = tmp16;
       formatToPlainStringResult1 = formatToPlainStringResult;
@@ -241,7 +241,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
       let tmp14;
       const intl3 = tmp2(1125).intl;
       const string = intl3.string;
-      const tmp12 = _modDef2567;
+      const tmp12 = _modDef2568;
       if (stateFromStores1) {
         stringResult = string(tmp12.hN75yb);
         tmp14 = tmp11;
@@ -260,7 +260,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
               const formatToPlainString = intl.formatToPlainString;
               const obj = { perk: skuId.title, memberCount: num };
               num = stateFromStores;
-              const v4jSvr1 = _modDef2567["4jSvr1"];
+              const v4jSvr1 = _modDef2568["4jSvr1"];
               const tmp4 = importDefault;
               if (stateFromStores == null) {
                 num = 0;
@@ -272,18 +272,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
         }
       }
       const intl2 = tmp2(1125).intl;
-      formatToPlainStringResult1 = intl2.string(_modDef2567.Vf2ZcR);
+      formatToPlainStringResult1 = intl2.string(_modDef2568.Vf2ZcR);
       tmp8 = importDefault;
     }
     const items = [{ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID }];
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(5221).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(5222).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;
-      const obj5 = { text: intl6.string(tmp8(2567).M4XL5n), critical: true };
+      const obj5 = { text: intl6.string(tmp8(2568).M4XL5n), critical: true };
       intl6 = tmp2(1125).intl;
       push(obj5);
     }

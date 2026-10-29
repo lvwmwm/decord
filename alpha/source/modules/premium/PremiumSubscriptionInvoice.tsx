@@ -1,16 +1,16 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 15193
+// Function ID: 15194
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 2058, 1084, 2050, 1294, 584, 6409, 38, 6418, 558, 576, 2]
+// Dependencies: [109, 32, 5, 19, 2059, 1084, 2051, 1294, 584, 6433, 38, 6442, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 14958 (PremiumSubscriptionInvoice)
+// Module 15193 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1084 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 2058 */;
+import InvoiceRecord from "InvoiceRecord" /* 2059 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f123549 = (enabled) => enabled.enabled;
+const f125096 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -50,7 +50,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -94,7 +94,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -206,7 +206,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let currency;
@@ -248,7 +248,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -359,7 +359,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -385,7 +385,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               body = undefined;
               quantity = 1;
               apply_wallet_balance = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
@@ -458,85 +458,25 @@ function getSubscriptionInvoice() {
   return obj(...arguments);
 }
 obj = function _getSubscriptionInvoice() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
+    let c3;
+    let c4;
+    let closure_1;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let body;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
-            body = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const tmp20 = c1;
-            if (tmp20) {
-              c4 = 3;
-              return { value: null, done: true };
-            } else {
-              const HTTP = closure_130_0(closure_130_2[7]).HTTP;
-              const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
-              const get = HTTP.get;
-              c3 = 2;
-              c4 = 1;
-              const obj6 = { value: get(obj5), done: false };
-              return obj6;
-            }
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          body = value;
-          c4 = 3;
-          obj = { value: closure_130_11.createInvoiceFromServer(body.body), done: true };
-          return obj;
-        }
-      } catch (tmp15) {
-        c4 = 3;
-        throw tmp15;
-      }
+    let body = tmp4;
+    ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
+    await "Reflect";
+    const tmp20 = c1;
+    if (tmp20) {
+      return null;
     }
+    const HTTP = closure_130_0(closure_130_2[7]).HTTP;
+    const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
+    const get = HTTP.get;
+    body = await get(obj5);
+    return closure_130_11.createInvoiceFromServer(body.body);
   });
   return obj(...arguments);
 };
@@ -607,7 +547,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -660,7 +600,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           closure_2 = tmp28;
@@ -720,7 +660,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -772,7 +712,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -914,7 +854,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f123549);
+          const found = payment_sources.find(f125096);
           let id;
           if (found != null) {
             id = found.id;
@@ -968,7 +908,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f123549);
+          const found = payment_sources.find(f125096);
           let id;
           if (found != null) {
             id = found.id;
@@ -1031,7 +971,7 @@ export { createOneTimePurchaseInvoicePreview };
 export { getSubscriptionInvoice };
 export const useFetchGenericInvoicePreview = tmp3;
 export const useFetchSubscriptionGiftInvoicePreview = tmp4;
-export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
+export function useFetchSubscriptionInvoicePreview(subscriptionId, arg1) {
   let serverPricedPreviewRef;
   let shouldReturnInvoiceCache;
   let current = subscriptionId;
@@ -1092,9 +1032,9 @@ export const useFetchSubscriptionInvoicePreview = function useFetchSubscriptionI
       return null;
     }
   }, items), arg1);
-};
+}
 export const useGetSubscriptionInvoice = tmp5;
-export const getItemUnitPriceWithDiscount = function getItemUnitPriceWithDiscount(arg0) {
+export function getItemUnitPriceWithDiscount(arg0) {
   let closure_1;
   let discounts;
   const quantity = arg0;
@@ -1103,4 +1043,4 @@ export const getItemUnitPriceWithDiscount = function getItemUnitPriceWithDiscoun
     closure_1 = closure_1 - amount.amount / quantity.quantity;
   });
   return closure_1;
-};
+}

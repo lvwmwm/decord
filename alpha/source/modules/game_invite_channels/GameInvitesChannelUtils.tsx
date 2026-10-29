@@ -1,22 +1,22 @@
-// Module ID: 7416
-// Function ID: 7417
+// Module ID: 7439
+// Function ID: 7440
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 4856, 1084, 4863, 7417, 7418, 558, 576, 504, 7419, 7438, 38, 7443, 6845, 7445, 7446, 6858, 2]
+// Dependencies: [109, 19, 4857, 1084, 4864, 7440, 7441, 558, 576, 504, 7442, 7461, 38, 7466, 6868, 7468, 7469, 6881, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags
 
-// Module 7416 (GameInvitesChannelUtils)
+// Module 7439 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6858 */;
-import ForumConstants from "ForumConstants" /* 7417 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7418 */;
-import ForumTagHooks from "ForumTagHooks" /* 7419 */;
-import hasFlagDefault from "hasFlag" /* 7446 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6868 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6881 */;
+import ForumConstants from "ForumConstants" /* 7440 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7441 */;
+import ForumTagHooks from "ForumTagHooks" /* 7442 */;
+import hasFlagDefault from "hasFlag" /* 7469 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let tmp;
-const ForumPostDataLoader = tmp(7438);
+const ForumPostDataLoader = tmp(7461);
 let closure_3 = ["data"];
 let closure_4 = ["data"];
 const useMemo = react.useMemo;
@@ -239,7 +239,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGam
   }
   tmp3(isGameInvitesChannelResult, "requires a game invites channel");
   let gameId;
-  const useGame = tmp(7443).useGame;
+  const useGame = tmp(7466).useGame;
   require("useGame");
   if (stateFromStores != null) {
     gameId = stateFromStores.gameId;
@@ -288,7 +288,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInvit
 }) : (function useGameInvitesChannelOfficialApplication(arg0) {
   let application;
   const tmp = closure_15(arg0);
-  let obj = application(6845);
+  let obj = application(6868);
   application = obj.useApplication(tmp);
   const items = [application];
   return useMemo(() => {
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribe
         tmp11 = cResult[7];
       }
     }
-    const tmpResult2 = tmp(7445);
+    const tmpResult2 = tmp(7468);
     const subscribeGuildMembers = tmpResult2.useSubscribeGuildMembers(tmp11, "GameInvitesChannelPostAuthors");
   }
   const fn = function c() {
@@ -647,7 +647,7 @@ const result = size.fileFinishedImporting("modules/game_invite_channels/GameInvi
 
 export const GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME = "No Mic";
 export const GAME_INVITE_POST_MESSAGE_MAX_LENGTH = 120;
-export const deriveThreadName = function deriveThreadName(description) {
+export function deriveThreadName(description) {
   const str = description.trim();
   let str2 = str.split("\n")[0];
   if (str2 == null) {
@@ -655,16 +655,16 @@ export const deriveThreadName = function deriveThreadName(description) {
   }
   const tmp = sanitizeThreadNameDefault;
   return tmp(str2.slice(0, authStore), true);
-};
+}
 export const useIsGameInvitesPost = tmp3;
 export const useIsGameInvitePostVoiceEnabled = tmp4;
 export const useFirstMessage = tmp5;
 export const useGameInvitesChannelOfficialApplication = tmp6;
 export const useSubscribeToGameInvitePostAuthors = tmp7;
-export const canInviteToActivity = function canInviteToActivity(stateFromStores) {
+export function canInviteToActivity(stateFromStores) {
   const tmp = stateFromStores.type === constants2.PLAYING && hasFlagDefault(stateFromStores, metroImportAll.JOIN);
   return tmp;
-};
+}
 export { maxedAppliedForumPostTags };
 export const useGameInviteVoiceChatState = tmp8;
 export const useGameInvitesActiveAndArchivedThreads = tmp9;

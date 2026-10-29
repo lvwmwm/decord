@@ -1,17 +1,17 @@
-// Module ID: 8382
-// Function ID: 8383
+// Module ID: 8404
+// Function ID: 8405
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [4878, 1389, 8383, 1084, 11, 1125, 7388, 5747, 2]
+// Dependencies: [4879, 1389, 8405, 1084, 11, 1125, 7411, 5749, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8382 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8404 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1125 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7388 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7411 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8383 */;
+import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8405 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
 ({ AnalyticEvents: metroImportAll, NOOP: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
-export const pickRoleSubscriptionPurchaseSticker = function pickRoleSubscriptionPurchaseSticker(id) {
+export function pickRoleSubscriptionPurchaseSticker(id) {
   const currentUser = UserStore.getCurrentUser();
   id = undefined;
   if (currentUser != null) {
@@ -89,8 +89,8 @@ export const pickRoleSubscriptionPurchaseSticker = function pickRoleSubscription
   }
   const obj2 = SnowflakeUtilsDefault;
   return metroImportDefault[(num + obj2.extractTimestamp(obj2, id)) % metroImportDefault.length];
-};
-export const getRoleSubscriptionPurchaseStickerCTA = function getRoleSubscriptionPurchaseStickerCTA(id, arg1) {
+}
+export function getRoleSubscriptionPurchaseStickerCTA(id, arg1) {
   let arr;
   const tmp = arg1;
   if (tmp) {
@@ -100,8 +100,8 @@ export const getRoleSubscriptionPurchaseStickerCTA = function getRoleSubscriptio
   }
   const obj = SnowflakeUtilsDefault;
   return arr[obj.extractTimestamp(obj, id) % arr.length];
-};
-export const getRoleSubscriptionPurchaseSystemMessageFormattedContent = function getRoleSubscriptionPurchaseSystemMessageFormattedContent(username) {
+}
+export function getRoleSubscriptionPurchaseSystemMessageFormattedContent(username) {
   let content;
   let formatParams;
   const obj = { username: username.username, usernameOnClickHandler: username.usernameOnClickHandler, roleSubscriptionOnClickHandler: username.roleSubscriptionOnClickHandler, guildId: username.guildId, roleSubscriptionData: username.roleSubscriptionData };
@@ -109,8 +109,8 @@ export const getRoleSubscriptionPurchaseSystemMessageFormattedContent = function
   getRoleSubscriptionPurchaseSystemMessageContent(obj);
   const intl = intl2.intl;
   return intl.format(content, formatParams);
-};
-export const getRoleSubscriptionPurchaseSystemMessageAstFormattedContent = function getRoleSubscriptionPurchaseSystemMessageAstFormattedContent(username) {
+}
+export function getRoleSubscriptionPurchaseSystemMessageAstFormattedContent(username) {
   let content;
   let formatParams;
   const obj = { username: username.username, usernameOnClickHandler: username.usernameOnClickHandler, roleSubscriptionOnClickHandler: username.roleSubscriptionOnClickHandler, guildId: username.guildId, roleSubscriptionData: username.roleSubscriptionData };
@@ -118,8 +118,8 @@ export const getRoleSubscriptionPurchaseSystemMessageAstFormattedContent = funct
   getRoleSubscriptionPurchaseSystemMessageContent(obj);
   const intl = intl2.intl;
   return intl.formatToParts(content, formatParams);
-};
-export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function getRoleSubscriptionPurchaseSystemMessageContentMobile(usernameOnClickHandler) {
+}
+export function getRoleSubscriptionPurchaseSystemMessageContentMobile(usernameOnClickHandler) {
   let OxP1NC;
   let tier_name;
   let tmp7;
@@ -181,12 +181,12 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
     tier_name = roleSubscriptionData.tier_name;
   }
   return formatToParts(OxP1NC, obj);
-};
-export const isEligibleForRoleSubscriptionPurchaseSystemMessageSettings = function isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild) {
+}
+export function isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild) {
   const obj = useIsCreatorMonetizationEnabledGuild;
   return obj.isCreatorMonetizationEnabledGuild(guild);
-};
-export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleSubscriptionPurchaseMessageTierClick(guildId, channelId, messageId, roleSubscriptionListingId) {
+}
+export function trackRoleSubscriptionPurchaseMessageTierClick(guildId, channelId, messageId, roleSubscriptionListingId) {
   let id;
   const obj = { guild_id: guildId, user_id: id, channel_id: channelId, message_id: messageId, role_subscription_listing_id: roleSubscriptionListingId };
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
@@ -198,8 +198,8 @@ export const trackRoleSubscriptionPurchaseMessageTierClick = function trackRoleS
     id = currentUser.id;
   }
   trackWithMetadata(ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CLICKED, obj);
-};
-export const getRoleSubscriptionPurchaseSystemMessageEventProperties = function getRoleSubscriptionPurchaseSystemMessageEventProperties(guild_id, author) {
+}
+export function getRoleSubscriptionPurchaseSystemMessageEventProperties(guild_id, author) {
   let id;
   const obj = { guild_id: guild_id.guild_id, sender: id, target_user: author.author.id, channel_id: guild_id.id, message_id: author.id };
   const currentUser = UserStore.getCurrentUser();
@@ -208,4 +208,4 @@ export const getRoleSubscriptionPurchaseSystemMessageEventProperties = function 
     id = currentUser.id;
   }
   return obj;
-};
+}

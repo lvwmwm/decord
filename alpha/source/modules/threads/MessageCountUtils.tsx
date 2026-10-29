@@ -1,10 +1,10 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8330
+// Function ID: 8331
 // Name: MessageCountUtils
 // Dependencies: [1124, 11, 1125, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 8308 (MessageCountUtils)
+// Module 8330 (MessageCountUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1125 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
@@ -44,11 +44,11 @@ function _formatMessageCountLabel(count, iTS3Xe, id) {
 ({ MAX_THREAD_MESSAGE_COUNT: c3, MAX_THREAD_MESSAGE_COUNT_OLD: closure_4 } = ThreadConstants);
 const result = size.fileFinishedImporting("modules/threads/MessageCountUtils.tsx");
 
-export const shouldUseOldMaxMessageCount = function shouldUseOldMaxMessageCount(arg0) {
+export function shouldUseOldMaxMessageCount(arg0) {
   const obj = SnowflakeUtilsDefault;
   return obj.compare("992549565104128000", arg0) > -1;
-};
-export const getMessageCountText = function getMessageCountText(stateFromStores, id) {
+}
+export function getMessageCountText(stateFromStores, id) {
   if (null != stateFromStores) {
     if (stateFromStores >= 0) {
       SnowflakeUtilsDefault;
@@ -65,10 +65,10 @@ export const getMessageCountText = function getMessageCountText(stateFromStores,
     }
   }
   return "0";
-};
-export const formatMobileMessageCountLabel = function formatMobileMessageCountLabel(count, id) {
+}
+export function formatMobileMessageCountLabel(count, id) {
   return _formatMessageCountLabel(count, intl3.t.iTS3Xe, id);
-};
-export const formatMessageCountLabel = function formatMessageCountLabel(count, id) {
+}
+export function formatMessageCountLabel(count, id) {
   return _formatMessageCountLabel(count, intl3.t.rfAXDV, id);
-};
+}

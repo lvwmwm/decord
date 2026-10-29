@@ -1,24 +1,24 @@
-// Module ID: 8877
-// Function ID: 8878
+// Module ID: 8880
+// Function ID: 8881
 // Name: ICYMIUtils
-// Dependencies: [5, 6819, 4860, 4856, 4878, 8874, 1084, 8873, 8878, 8880, 6047, 8881, 8650, 8882, 1125, 2]
+// Dependencies: [5, 6842, 4861, 4857, 4879, 8877, 1084, 8876, 8881, 8883, 6051, 8884, 8672, 8885, 1125, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 8877 (ICYMIUtils)
+// Module 8880 (ICYMIUtils)
 import intl11 from "intl" /* 1125 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6047 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8650 */;
-import ICYMITypes from "ICYMITypes" /* 8873 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8878 */;
-import generateHydrationId from "generateHydrationId" /* 8880 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8881 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8882 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6051 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8672 */;
+import ICYMITypes from "ICYMITypes" /* 8876 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
+import generateHydrationId from "generateHydrationId" /* 8883 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8884 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8874 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8877 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _hydrateItems() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let obj = function _hydrateItems() {
           return obj;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -140,21 +140,21 @@ obj = { UNKNOWN: 0, [0]: "UNKNOWN", DEFAULT: 1, [1]: "DEFAULT", MORE: 2, [2]: "M
 let result = size.fileFinishedImporting("modules/icymi/ICYMIUtils.tsx");
 
 export const ICYMICustomScore = obj;
-export const isGuildItem = function isGuildItem(type) {
+export function isGuildItem(type) {
   let tmp3 = type.type === ICYMITypes.ICYMIItemTypes.MESSAGE;
   if (!tmp3) {
     tmp3 = type.type === ICYMITypes.ICYMIItemTypes.GUILD_EVENT;
   }
   return tmp3;
-};
-export const isChannelCustomScoreEligible = function isChannelCustomScoreEligible(stateFromStores) {
+}
+export function isChannelCustomScoreEligible(stateFromStores) {
   let tmp2 = stateFromStores.type === constants.GUILD_FORUM;
   if (!tmp2) {
     tmp2 = stateFromStores.type === constants.GUILD_ANNOUNCEMENT || stateFromStores.type === constants.GUILD_TEXT;
   }
   return tmp2;
-};
-export const numberToCustomScore = function numberToCustomScore(stateFromStores1) {
+}
+export function numberToCustomScore(stateFromStores1) {
   let DEFAULT;
   if (stateFromStores1 < -1.5) {
     DEFAULT = obj.MUTED;
@@ -166,8 +166,8 @@ export const numberToCustomScore = function numberToCustomScore(stateFromStores1
     DEFAULT = obj.DEFAULT;
   }
   return DEFAULT;
-};
-export const customScoreToNumber = function customScoreToNumber(DEFAULT) {
+}
+export function customScoreToNumber(DEFAULT) {
   if (obj.MORE === DEFAULT) {
     return 1;
   } else if (obj.LESS === DEFAULT) {
@@ -177,11 +177,11 @@ export const customScoreToNumber = function customScoreToNumber(DEFAULT) {
   } else {
     return 0;
   }
-};
-export const hydrateItems = function hydrateItems() {
+}
+export function hydrateItems() {
   return obj(...arguments);
-};
-export const createGravityMessageFromServer = function createGravityMessageFromServer(message, arg1) {
+}
+export function createGravityMessageFromServer(message, arg1) {
   let fromServerResult;
   let obj2;
   obj = { message: obj2.createMessageRecord(message.message), threadChannel: fromServerResult };
@@ -192,8 +192,8 @@ export const createGravityMessageFromServer = function createGravityMessageFromS
     fromServerResult = ThreadChannelRecord.fromServer(message.thread_channel, message.guild_id);
   }
   return obj;
-};
-export const customStatusToContentInventoryEntry = function customStatusToContentInventoryEntry(notificationItem) {
+}
+export function customStatusToContentInventoryEntry(notificationItem) {
   let obj2;
   let str;
   obj = { id: notificationItem.id, type: ICYMITypes.ICYMIItemTypes.CUSTOM_STATUS, activity: obj2, score: null, score_components: null };
@@ -204,8 +204,8 @@ export const customStatusToContentInventoryEntry = function customStatusToConten
   }
   ({ score: obj.score, score_components: obj.score_components } = notificationItem);
   return obj;
-};
-export const compareGravityUnreadIds = function compareGravityUnreadIds(id, id2, arg2) {
+}
+export function compareGravityUnreadIds(id, id2, arg2) {
   let num;
   let readTimestamp = ICYMIUnreadStateStore.getReadTimestamp(id);
   obj = ICYMIUnreadStateStore;
@@ -238,8 +238,8 @@ export const compareGravityUnreadIds = function compareGravityUnreadIds(id, id2,
     num = 0;
   }
   return num;
-};
-export const isItemNSFW = function isItemNSFW(data) {
+}
+export function isItemNSFW(data) {
   let guild_id;
   let id;
   const kind = data.data.kind;
@@ -288,8 +288,8 @@ export const isItemNSFW = function isItemNSFW(data) {
     }
     return tmp11;
   }
-};
-export const itemToType = function itemToType(data) {
+}
+export function itemToType(data) {
   const kind = data.data.kind;
   if ("end" === kind) {
     return "end";
@@ -331,8 +331,8 @@ export const itemToType = function itemToType(data) {
       return "unknown";
     }
   }
-};
-export const determineContentType = function determineContentType(channel, message) {
+}
+export function determineContentType(channel, message) {
   if (channel.type === constants.GUILD_ANNOUNCEMENT) {
     return ICYMITypes.ContentType.ANNOUNCEMENT;
   } else if (channel.type === tmp.GUILD_FORUM) {
@@ -369,11 +369,11 @@ export const determineContentType = function determineContentType(channel, messa
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(8873).ContentType.IMAGE;
+        IMAGE = tmp6(8876).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(8873).ContentType;
+        const ContentType = tmp6(8876).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;
@@ -384,8 +384,8 @@ export const determineContentType = function determineContentType(channel, messa
     }
     return INTERESTING;
   }
-};
-export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentioned) {
+}
+export function contentTypeToText(ANNOUNCEMENT, mentioned) {
   let flag = mentioned;
   if (mentioned === undefined) {
     flag = false;
@@ -429,4 +429,4 @@ export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentio
     const intl = tmp(1125).intl;
     return intl.string(intl11.t.pYrnTY);
   }
-};
+}

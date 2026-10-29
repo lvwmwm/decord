@@ -49,7 +49,7 @@ let obj = function _flush() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -100,7 +100,7 @@ obj = function _close() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -140,25 +140,25 @@ obj = function _close() {
 };
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addEventProcessor = function addEventProcessor(arg0) {
+export function addEventProcessor(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.addEventProcessor(arg0);
-};
+}
 export { captureCheckIn };
-export const captureEvent = function captureEvent(arg0, arg1) {
+export function captureEvent(arg0, arg1) {
   obj = _mod724;
   const currentScope = obj.getCurrentScope();
   return currentScope.captureEvent(arg0, arg1);
-};
-export const captureException = function captureException(arg0, arg1) {
+}
+export function captureException(arg0, arg1) {
   obj = _mod724;
   const currentScope = obj.getCurrentScope();
   const captureException = currentScope.captureException;
   const obj2 = applyClientOptions;
   return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
-};
-export const captureMessage = function captureMessage(arg0, captureContext) {
+}
+export function captureMessage(arg0, captureContext) {
   let tmp;
   if (typeof captureContext === "string") {
     tmp = captureContext;
@@ -171,8 +171,8 @@ export const captureMessage = function captureMessage(arg0, captureContext) {
   obj = _mod724;
   const currentScope = obj.getCurrentScope();
   return currentScope.captureMessage(arg0, tmp, tmp2);
-};
-export const captureSession = function captureSession() {
+}
+export function captureSession() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;
@@ -205,11 +205,11 @@ export const captureSession = function captureSession() {
       client1.captureSession(session1);
     }
   }
-};
-export const close = function close(arg0) {
+}
+export function close(arg0) {
   return obj(...arguments);
-};
-export const endSession = function endSession() {
+}
+export function endSession() {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   const obj3 = _mod724;
@@ -229,11 +229,11 @@ export const endSession = function endSession() {
     client.captureSession(session);
   }
   isolationScope.setSession();
-};
-export const flush = function flush(arg0) {
+}
+export function flush(arg0) {
   return obj(...arguments);
-};
-export const isEnabled = function isEnabled() {
+}
+export function isEnabled() {
   obj = _mod724;
   const client = obj.getClient();
   let enabled;
@@ -249,52 +249,52 @@ export const isEnabled = function isEnabled() {
     tmp2 = transport;
   }
   return tmp2;
-};
-export const isInitialized = function isInitialized() {
+}
+export function isInitialized() {
   obj = _mod724;
   return obj.getClient();
-};
-export const lastEventId = function lastEventId() {
+}
+export function lastEventId() {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   return isolationScope.lastEventId();
-};
-export const setContext = function setContext(arg0, arg1) {
+}
+export function setContext(arg0, arg1) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setContext(arg0, arg1);
-};
-export const setConversationId = function setConversationId(arg0) {
+}
+export function setConversationId(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setConversationId(arg0);
-};
-export const setExtra = function setExtra(arg0, arg1) {
+}
+export function setExtra(arg0, arg1) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setExtra(arg0, arg1);
-};
-export const setExtras = function setExtras(arg0) {
+}
+export function setExtras(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setExtras(arg0);
-};
-export const setTag = function setTag(arg0, arg1) {
+}
+export function setTag(arg0, arg1) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setTag(arg0, arg1);
-};
-export const setTags = function setTags(arg0) {
+}
+export function setTags(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setTags(arg0);
-};
-export const setUser = function setUser(arg0) {
+}
+export function setUser(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   isolationScope.setUser(arg0);
-};
-export const startSession = function startSession(arg0) {
+}
+export function startSession(arg0) {
   obj = _mod724;
   const isolationScope = obj.getIsolationScope();
   const obj3 = _mod724;
@@ -342,8 +342,8 @@ export const startSession = function startSession(arg0) {
   isolationScope1.setSession();
   isolationScope.setSession(session);
   return session;
-};
-export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
+}
+export function withMonitor(monitorSlug, arg1, arg2) {
   _require = monitorSlug;
   dependencyMap = arg1;
   let isolateTrace = arg2;
@@ -414,4 +414,4 @@ export const withMonitor = function withMonitor(monitorSlug, arg1, arg2) {
     }
     return startNewTraceResult;
   });
-};
+}

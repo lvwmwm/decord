@@ -1,24 +1,24 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8890
+// Function ID: 8891
 // Name: ShowShareActionSheetUtils
-// Dependencies: [1084, 8888, 1264, 8889, 1383, 1381, 6906, 2]
+// Dependencies: [1084, 8891, 1264, 8892, 1383, 1381, 6930, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8887 (ShowShareActionSheetUtils)
+// Module 8890 (ShowShareActionSheetUtils)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import FileExtensionUtils from "FileExtensionUtils" /* 6906 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8888 */;
-import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8889 */;
+import FileExtensionUtils from "FileExtensionUtils" /* 6930 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8891 */;
+import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8892 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const presentDelayMs = SharePreparingModalConstants.SHARE_SHEET_PRESENT_DELAY_MS;
 const result = size.fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
 
-export const trackAppClickInNativeShareSheet = function trackAppClickInNativeShareSheet(app, _location) {
+export function trackAppClickInNativeShareSheet(app, _location) {
   let str = app;
   const track = AnalyticsUtilsDefault.track;
   const NATIVE_SHARE_SHEET_APP_CLICKED = AnalyticEvents.NATIVE_SHARE_SHEET_APP_CLICKED;
@@ -28,8 +28,8 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
   }
   const obj = { package_name: str, location: _location };
   track(NATIVE_SHARE_SHEET_APP_CLICKED, obj);
-};
-export const getMediaShareParams = function getMediaShareParams(source) {
+}
+export function getMediaShareParams(source) {
   let contentType;
   let tmp11;
   let tmp6;
@@ -80,8 +80,8 @@ export const getMediaShareParams = function getMediaShareParams(source) {
     mediaFallbackUrl = source.uri;
   }
   return { mediaFallbackUrl };
-};
-export const resolveShareFileExtension = function resolveShareFileExtension(uri, contentType) {
+}
+export function resolveShareFileExtension(uri, contentType) {
   const obj = FileExtensionUtils;
   return obj.decideFileExtension(uri, contentType, true);
-};
+}

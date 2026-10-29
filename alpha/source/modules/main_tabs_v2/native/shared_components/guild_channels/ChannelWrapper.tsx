@@ -1,13 +1,13 @@
-// Module ID: 18164
-// Function ID: 18165
+// Module ID: 18398
+// Function ID: 18399
 // Name: ChannelWrapper
-// Dependencies: [19, 17, 21, 11993, 2]
+// Dependencies: [19, 17, 21, 12047, 2]
 // Exports: renderChannelWrapper
 
-// Module 18164 (ChannelWrapper)
+// Module 18398 (ChannelWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 11993 */;
+import ChannelListLayout from "ChannelListLayout" /* 12047 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const View = react_native.View;
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelWrapper.tsx");
 
-export const renderChannelWrapper = function renderChannelWrapper(children, fontScale) {
+export function renderChannelWrapper(children, fontScale) {
   let channel;
   let launchpad;
   let layout;
@@ -66,4 +66,4 @@ export const renderChannelWrapper = function renderChannelWrapper(children, font
   const obj = { style: items, children };
   items[2] = paddingThread;
   return tmp7(tmp8, obj);
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 7965
-// Function ID: 7966
+// Module ID: 7988
+// Function ID: 7989
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1397, 1381, 7966, 558, 576, 7967, 2]
+// Dependencies: [5, 32, 19, 1397, 1381, 7989, 558, 576, 7990, 2]
 // Exports: getAvailableMethodsV2
 
-// Module 7965 (AgeVerificationMethodAvailability)
+// Module 7988 (AgeVerificationMethodAvailability)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7967 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let c5, c6, method;
 
 let tmp;
-const AppStoreAgeSignalSupport = tmp(7966);
+const AppStoreAgeSignalSupport = tmp(7989);
 function filterByAvailability(arr, arg1) {
   ({ googleWallet: require, appStoreSignal: dependencyMap } = arg1);
   return arr.filter((method) => {
@@ -57,7 +57,7 @@ let obj = function _getAvailableMethodsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -226,6 +226,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailable
 let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodAvailability.native.tsx");
 
 export const useAvailableMethodsV2 = tmp2;
-export const getAvailableMethodsV2 = function getAvailableMethodsV2() {
+export function getAvailableMethodsV2() {
   return obj(...arguments);
-};
+}

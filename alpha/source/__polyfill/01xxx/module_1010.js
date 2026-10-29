@@ -10,7 +10,7 @@ import react from "react" /* 19 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const init = function init(arg0) {
+export function init(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   const obj2 = _mod693;
@@ -20,4 +20,4 @@ export const init = function init(arg0) {
   obj3.setContext("react", obj4);
   const obj5 = feedbackAsyncIntegration;
   return obj5.init(obj);
-};
+}

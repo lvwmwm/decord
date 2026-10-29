@@ -1,28 +1,28 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12300
+// Function ID: 12301
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 4910, 5748, 1389, 1084, 21, 5004, 587, 6057, 1199, 7319, 7337, 9024, 558, 576, 9166, 5270, 12214, 1125, 2]
+// Dependencies: [19, 17, 4911, 5750, 1389, 1084, 21, 5005, 587, 6061, 1199, 7343, 7361, 9027, 558, 576, 9169, 5271, 12268, 1125, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 12246 (MentionableSelectOptionParts)
+// Module 12300 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6057 */;
-import RoleIconUtils from "RoleIconUtils" /* 7319 */;
-import RoleIconDefault from "RoleIcon" /* 7337 */;
-import DiscordTagDefault from "DiscordTag" /* 9166 */;
-import UserIcon from "UserIcon" /* 12214 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6061 */;
+import RoleIconUtils from "RoleIconUtils" /* 7343 */;
+import RoleIconDefault from "RoleIcon" /* 7361 */;
+import DiscordTagDefault from "DiscordTag" /* 9169 */;
+import UserIcon from "UserIcon" /* 12268 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMe
 });
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectOptionParts.tsx");
 
-export const renderMentionableOptionIcon = function renderMentionableOptionIcon(type, guild, guildId) {
+export function renderMentionableOptionIcon(type, guild, guildId) {
   if (type.type === InteractionComponentTypes.SelectOptionType.USER) {
     const user = UserStore.getUser(type.value);
     if (null == user) {
@@ -155,7 +155,7 @@ export const renderMentionableOptionIcon = function renderMentionableOptionIcon(
           }
         }
         let colorString;
-        const ShieldUserIcon = tmp(9024).ShieldUserIcon;
+        const ShieldUserIcon = tmp(9027).ShieldUserIcon;
         const tmp8 = metroImportAll;
         if (role != null) {
           colorString = role.colorString;
@@ -169,14 +169,14 @@ export const renderMentionableOptionIcon = function renderMentionableOptionIcon(
     }
     return null;
   }
-};
-export const renderMentionableOptionDescription = function renderMentionableOptionDescription(type) {
+}
+export function renderMentionableOptionDescription(type) {
   if (type.type === InteractionComponentTypes.SelectOptionType.USER) {
     const obj = { user: UserStore.getUser(type.value) };
     return metroImportAll(closure_11, obj);
   }
-};
-export const renderMentionableOptionSuffix = function renderMentionableOptionSuffix(type, guild, arg2) {
+}
+export function renderMentionableOptionSuffix(type, guild, arg2) {
   if (type.type === InteractionComponentTypes.SelectOptionType.ROLE) {
     let role;
     if (null != guild) {
@@ -195,8 +195,8 @@ export const renderMentionableOptionSuffix = function renderMentionableOptionSuf
       return metroImportAll(closure_12, obj);
     }
   }
-};
-export const mentionableOptionAccessibilityLabel = function mentionableOptionAccessibilityLabel(type) {
+}
+export function mentionableOptionAccessibilityLabel(type) {
   let discriminator;
   let discriminator1;
   if (type.type === InteractionComponentTypes.SelectOptionType.USER) {
@@ -232,4 +232,4 @@ export const mentionableOptionAccessibilityLabel = function mentionableOptionAcc
     const obj = { roleName: type.label };
     return intl.formatToPlainString(intl3.t.F6ejkk, obj);
   }
-};
+}

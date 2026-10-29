@@ -1,13 +1,13 @@
-// Module ID: 19709
-// Function ID: 19710
+// Module ID: 19931
+// Function ID: 19932
 // Name: AVErrorStreamReconnecting
-// Dependencies: [1084, 5933, 19699, 6680, 2]
+// Dependencies: [1084, 5935, 19921, 6704, 2]
 
-// Module 19709 (AVErrorStreamReconnecting)
+// Module 19931 (AVErrorStreamReconnecting)
 import Constants from "Constants" /* 1084 */;
-import AVError from "AVError" /* 5933 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
-import AVErrorContext from "AVErrorContext" /* 19699 */;
+import AVError from "AVError" /* 5935 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
+import AVErrorContext from "AVErrorContext" /* 19921 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamStates = Constants.ApplicationStreamStates;

@@ -1,14 +1,14 @@
-// Module ID: 5857
-// Function ID: 5858
+// Module ID: 5859
+// Function ID: 5860
 // Name: BrowserUtils
-// Dependencies: [5858, 2]
+// Dependencies: [5860, 2]
 // Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 5857 (BrowserUtils)
-import _modDef5858 from "module_5858" /* 5858 */;
+// Module 5859 (BrowserUtils)
+import _modDef5860 from "module_5860" /* 5860 */;
 import size from "module_2" /* 2 */;
 
-let str = _modDef5858.name;
+let str = _modDef5860.name;
 if (str == null) {
   str = "unknown";
 }
@@ -17,7 +17,7 @@ let num = -1;
 let num2 = -1;
 if ("chrome" === str2.toLowerCase()) {
   const _parseInt = parseInt;
-  let str3 = _modDef5858.version;
+  let str3 = _modDef5860.version;
   if (str3 == null) {
     str3 = "";
   }
@@ -26,7 +26,7 @@ if ("chrome" === str2.toLowerCase()) {
 let _parseInt2Result = num;
 if ("electron" === str2.toLowerCase()) {
   const _parseInt2 = parseInt;
-  let str4 = _modDef5858.version;
+  let str4 = _modDef5860.version;
   if (str4 == null) {
     str4 = "";
   }
@@ -36,7 +36,7 @@ const map = _parseInt2Result;
 let _parseInt3Result = num;
 if ("firefox" === str2.toLowerCase()) {
   const _parseInt3 = parseInt;
-  let str5 = _modDef5858.version;
+  let str5 = _modDef5860.version;
   if (str5 == null) {
     str5 = "";
   }
@@ -46,7 +46,7 @@ let c2 = _parseInt3Result;
 let _parseInt4Result = num;
 if ("edge" === str2.toLowerCase()) {
   const _parseInt4 = parseInt;
-  let str6 = _modDef5858.version;
+  let str6 = _modDef5860.version;
   if (str6 == null) {
     str6 = "";
   }
@@ -55,7 +55,7 @@ if ("edge" === str2.toLowerCase()) {
 let c3 = _parseInt4Result;
 if ("safari" === str2.toLowerCase()) {
   const _parseInt5 = parseInt;
-  let str7 = _modDef5858.version;
+  let str7 = _modDef5860.version;
   if (str7 == null) {
     str7 = "";
   }
@@ -93,11 +93,11 @@ export { getElectronVersion };
 export { getFirefoxVersion };
 export { getEdgeVersion };
 export { getSafariVersion };
-export const canUseWebp = function canUseWebp() {
+export function canUseWebp() {
   return -1 !== num2 || -1 !== map || -1 !== c2 || -1 !== c3 || num >= 14;
-};
+}
 export { isSafari };
-export const isFirefox = function isFirefox() {
+export function isFirefox() {
   let str = arg0;
   if (arg0 === undefined) {
     const _navigator = navigator;
@@ -105,8 +105,8 @@ export const isFirefox = function isFirefox() {
   }
   const formatted = str.toLowerCase();
   return -1 !== formatted.indexOf("firefox");
-};
-export const supportsHEVCAlpha = function supportsHEVCAlpha() {
+}
+export function supportsHEVCAlpha() {
   const _navigator = window.navigator;
   const mediaCapabilities = _navigator.mediaCapabilities;
   let decodingInfo;
@@ -122,4 +122,4 @@ export const supportsHEVCAlpha = function supportsHEVCAlpha() {
   const formatted = str.toLowerCase();
   const tmp3 = -1 !== formatted.indexOf("safari") && -1 === formatted.indexOf("chrome") && -1 !== formatted.indexOf("version/") && tmp2;
   return tmp3;
-};
+}

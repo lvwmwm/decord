@@ -1,15 +1,15 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7579
+// Function ID: 7580
 // Name: launchPremiumPlanSelect
-// Dependencies: [1084, 7554, 6707, 7557, 1999, 7557, 7127, 2]
+// Dependencies: [1084, 7577, 6731, 7580, 2000, 7580, 7151, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 7556 (launchPremiumPlanSelect)
+// Module 7579 (launchPremiumPlanSelect)
 import Constants from "Constants" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7127 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7554 */;
-import PremiumModal from "PremiumModal" /* 7557 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7151 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7577 */;
+import PremiumModal from "PremiumModal" /* 7580 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 const UserSettingsSections = Constants.UserSettingsSections;
 let result = size.fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
 
-export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostPurchaseFlow) {
+export function launchPremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
   let analyticsLocations;
   let applicationId;
@@ -60,12 +60,12 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     let obj = { predicate: wrappedPredicate, analyticsLocation, analyticsLocations, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onPaymentSuccess, onPaymentDismiss };
     navigation.push(PREMIUM_PLAN_SELECT, obj);
   } else {
-    const pushLazy = flag2(6707).pushLazy;
+    const pushLazy = flag2(6731).pushLazy;
     const obj3 = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
-    flag2(6707);
-    const tmp8 = asyncRequire(7557, dependencyMap.paths);
+    flag2(6731);
+    const tmp8 = asyncRequire(7580, dependencyMap.paths);
     pushLazy(tmp8, obj3, PremiumModal.PREMIUM_KEY);
   }
   const obj2 = UserSettingsUtils;
   let result = obj2.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
-};
+}

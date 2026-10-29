@@ -1,14 +1,14 @@
-// Module ID: 7798
-// Function ID: 7799
+// Module ID: 7821
+// Function ID: 7822
 // Name: ApplicationCodedLink
-// Dependencies: [5739, 1385, 7799, 7800, 2]
+// Dependencies: [5741, 1385, 7822, 7823, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7798 (ApplicationCodedLink)
+// Module 7821 (ApplicationCodedLink)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import CodedLink from "CodedLink" /* 5739 */;
-import _slicedToArray from "_slicedToArray" /* 7799 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 7800 */;
+import CodedLink from "CodedLink" /* 5741 */;
+import _slicedToArray from "_slicedToArray" /* 7822 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 7823 */;
 import size from "module_2" /* 2 */;
 
 const items = [CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLink.CodedLinkType.ACTIVITY_BOOKMARK, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLink.CodedLinkType.APP_OAUTH2_LINK];
@@ -18,16 +18,16 @@ const set1 = new Set(items1);
 let result = size.fileFinishedImporting("modules/coded_links/ApplicationCodedLink.tsx");
 
 export const APP_LINK_CODED_TYPES = set;
-export const isApplicationCodedLink = function isApplicationCodedLink(type) {
+export function isApplicationCodedLink(type) {
   const obj = GlobalUtils;
   return obj.isInSet(type, set);
-};
+}
 export const APP_LINK_CODED_TYPES_MOBILE_SUPPORT = set1;
-export const isApplicationCodedLinkMobileSupported = function isApplicationCodedLinkMobileSupported(type) {
+export function isApplicationCodedLinkMobileSupported(type) {
   const obj = GlobalUtils;
   return obj.isInSet(type, set1);
-};
-export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
+}
+export function getApplicationCodedLinkData(type, code, url) {
   let tmpResult2;
   if (CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
     if (CodedLink.CodedLinkType.APP_OAUTH2_LINK !== type) {
@@ -51,4 +51,4 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
     }
   }
   return { type, applicationId: code };
-};
+}

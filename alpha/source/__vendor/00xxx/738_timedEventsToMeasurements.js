@@ -11,7 +11,7 @@ import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" 
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+export function setMeasurement(arg0, arg1, arg2) {
   let activeSpan = arg3;
   if (arg3 === undefined) {
     const obj = TRACE_FLAG_NONE;
@@ -33,8 +33,8 @@ export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
     obj2[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
     rootSpan.addEvent(arg0, obj2);
   }
-};
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+}
+export function timedEventsToMeasurements(arr) {
   let tmp = arr;
   if (tmp) {
     if (0 !== arr.length) {
@@ -55,4 +55,4 @@ export const timedEventsToMeasurements = function timedEventsToMeasurements(arr)
       return obj;
     }
   }
-};
+}

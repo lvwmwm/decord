@@ -1,12 +1,12 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11536
+// Function ID: 11537
 // Name: ZoomLayout
-// Dependencies: [109, 19, 17, 21, 558, 576, 11483, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 11537, 2]
 
-// Module 11482 (ZoomLayout)
+// Module 11536 (ZoomLayout)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 11483 */;
+import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 11537 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,18 +1,18 @@
-// Module ID: 11267
-// Function ID: 11268
+// Module ID: 11321
+// Function ID: 11322
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 2042, 2023, 5132, 8707, 6845, 8651, 38, 8657, 1997, 8649, 558, 576, 5638, 2]
+// Dependencies: [32, 5, 19, 2043, 2024, 5133, 8710, 6868, 8673, 38, 8679, 1998, 8671, 558, 576, 5639, 2]
 
-// Module 11267 (useLoadMessageContentEntries)
+// Module 11321 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1997 */;
-import Constants from "Constants" /* 2023 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5132 */;
-import useAvatarColor from "useAvatarColor" /* 8651 */;
+import Server from "Server" /* 1998 */;
+import Constants from "Constants" /* 2024 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5133 */;
+import useAvatarColor from "useAvatarColor" /* 8673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _fetchApplicationParts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ let obj = function _fetchApplicationParts() {
           return obj;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp5) {
         c4 = 3;
         throw tmp5;
@@ -132,7 +132,7 @@ obj = function _fetchUserParts() {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -161,7 +161,7 @@ obj = function _fetchUserParts() {
                 return obj;
               } else {
                 author_id = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp7) {
               author_id = 3;
@@ -182,7 +182,7 @@ obj = function _fetchUserParts() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -210,7 +210,7 @@ obj = function _fetchUserParts() {
               return obj;
             } else {
               c1 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp5) {
             c1 = 3;
@@ -237,7 +237,7 @@ obj = function _fetchWatchedContentParts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ obj = function _fetchWatchedContentParts() {
             return { value, done: true };
           }
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp10) {
           c1 = 3;
           throw tmp10;
@@ -294,7 +294,7 @@ obj = function _fetchListenedContentParts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -325,7 +325,7 @@ obj = function _fetchListenedContentParts() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -348,7 +348,7 @@ obj = function _fetchTopArtistContentParts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -379,7 +379,7 @@ obj = function _fetchTopArtistContentParts() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -408,7 +408,7 @@ obj = function _loadContentEntryParts() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -459,7 +459,7 @@ obj = function _loadContentEntryParts() {
                       let obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -485,7 +485,7 @@ obj = function _loadContentEntryParts() {
                                   const obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "IconComponent", done: null };
+                                  return { value: "IconComponent", done: "IconComponent" };
                                 }
                               } else {
                                 try {
@@ -513,7 +513,7 @@ obj = function _loadContentEntryParts() {
                                     return obj;
                                   } else {
                                     c0 = 3;
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "IconComponent" };
                                   }
                                 } catch (tmp6) {
                                   c0 = 3;
@@ -533,7 +533,7 @@ obj = function _loadContentEntryParts() {
                           closure_0.push(fetchEntryParts());
                         }
                         c0 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } catch (tmp3) {
                       c0 = 3;
@@ -575,7 +575,7 @@ obj = function _loadContentEntryParts() {
             } else {
               let num7 = 3;
               c11 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             if (3 === tmp3) {
@@ -682,7 +682,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8649);
+      let tmp3Result = tmp3(8671);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
   } else {
     tmp19 = cResult[4];
   }
-  const tmpResult = tmp(8651);
+  const tmpResult = tmp(8673);
   const colorStore = tmpResult.useColorStore(tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = _asyncToGenerator(async (arg0, value) => {
@@ -794,7 +794,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -868,7 +868,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp37) {
           if (0 === c5) {
             c7 = 3;
@@ -1124,7 +1124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -1201,7 +1201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp37) {
         if (0 === c5) {
           c7 = 3;

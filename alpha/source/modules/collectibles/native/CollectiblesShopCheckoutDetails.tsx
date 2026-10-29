@@ -1,38 +1,38 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14345
+// Function ID: 14346
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1086, 9422, 21, 5004, 587, 558, 576, 8754, 14113, 5705, 8729, 9446, 8697, 9421, 1989, 9442, 1992, 1087, 9469, 9468, 9434, 1125, 5270, 7696, 9479, 14114, 8704, 2050, 9496, 2]
+// Dependencies: [19, 17, 1086, 9453, 21, 5005, 587, 558, 576, 8757, 14346, 5707, 8732, 9477, 8700, 9452, 1990, 9473, 1993, 1087, 9500, 9499, 9465, 1125, 5271, 7719, 9510, 14347, 8707, 2051, 9527, 2]
 
-// Module 14112 (CollectiblesShopCheckoutDetails)
+// Module 14345 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1087 */;
 import intl8 from "intl" /* 1125 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
-import useShopProductItems from "useShopProductItems" /* 8697 */;
-import useCurrentUser from "useCurrentUser" /* 8704 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8729 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8754 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9421 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9434 */;
-import NameplateDefault from "Nameplate" /* 9442 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import _modDef9468 from "module_9468" /* 9468 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9469 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9479 */;
-import getProductName from "getProductName" /* 9496 */;
-import _modDef14113 from "module_14113" /* 14113 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14114 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
+import useShopProductItems from "useShopProductItems" /* 8700 */;
+import useCurrentUser from "useCurrentUser" /* 8707 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8732 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8757 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9452 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9465 */;
+import NameplateDefault from "Nameplate" /* 9473 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9477 */;
+import _modDef9499 from "module_9499" /* 9499 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9500 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9510 */;
+import getProductName from "getProductName" /* 9527 */;
+import _modDef14346 from "module_14346" /* 14346 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14347 */;
 import react from "react" /* 19 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9422 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9453 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const utils = tmp(1989);
+const utils = tmp(1990);
 const View = react_native.View;
 const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_IDS;
 ({ BUNDLE_PREVIEW_CONFIG: metroRequire, SAMPLE_PROFILE_ASPECT_RATIO } = CollectiblesPreviewConstants);
@@ -79,8 +79,8 @@ let closure_10 = createStyles.createStyles((arg0) => {
     BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
     tmp5 = tmp;
   }
-  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "application" } };
-  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "application" });
+  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "ix" } };
+  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(587).space.PX_16, backgroundColor: "ix" });
   return obj;
 });
 createStyles = createStyles_mod;
@@ -104,7 +104,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef14113 };
+      const obj2 = { uri: _modDef14346 };
       cResult[0] = obj2;
       first = obj2;
     } else {
@@ -176,7 +176,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef14113 };
+    obj3 = { uri: _modDef14346 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };
@@ -542,7 +542,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     let tmp37;
     if (cResult[0] !== product.skuId) {
       size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-      const FractionalNitroCoinIllustration = tmp(9469).FractionalNitroCoinIllustration;
+      const FractionalNitroCoinIllustration = tmp(9500).FractionalNitroCoinIllustration;
       const tmp39 = metroImportDefault(FractionalNitroCoinIllustration, size);
       cResult[0] = product.skuId;
       cResult[1] = tmp39;
@@ -556,7 +556,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     let tmp33;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { uri: _modDef9468 };
+      const obj2 = { uri: _modDef9499 };
       cResult[2] = obj2;
       tmp31 = obj2;
     } else {
@@ -667,11 +667,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
     size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    const FractionalNitroCoinIllustration = tmp2(9469).FractionalNitroCoinIllustration;
+    const FractionalNitroCoinIllustration = tmp2(9500).FractionalNitroCoinIllustration;
     return metroImportDefault(FractionalNitroCoinIllustration, size);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj = { source: obj2, style: tmp.externalProductImage };
-    obj2 = { uri: _modDef9468 };
+    obj2 = { uri: _modDef9499 };
     const tmp18 = FastImageDefault;
     return metroImportDefault(tmp18, obj);
   } else {
@@ -1155,7 +1155,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
                     if (tmp36) {
                       const obj4 = { style: tmp7.errorContainer, children: metroImportDefault(Text, obj5) };
                       obj5 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: intl2.string(intl8.t["3YfczA"]) };
-                      Text = tmp(5270).Text;
+                      Text = tmp(5271).Text;
                       intl2 = tmp(1125).intl;
                       tmp36 = metroImportDefault(View, obj4);
                     }
@@ -1255,7 +1255,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   const tmp2 = closure_10(flag);
   let obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
-  let obj2 = flag2(2050);
+  let obj2 = flag2(2051);
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];

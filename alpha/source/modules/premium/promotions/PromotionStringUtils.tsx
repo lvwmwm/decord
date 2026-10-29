@@ -1,17 +1,17 @@
-// Module ID: 14997
-// Function ID: 14998
+// Module ID: 15232
+// Function ID: 15233
 // Name: PromotionStringUtils
-// Dependencies: [2054, 1391, 558, 576, 504, 2050, 7376, 1125, 2064, 2]
+// Dependencies: [2055, 1391, 558, 576, 504, 2051, 7399, 1125, 2065, 2]
 // Exports: getHelpArticleLinkProps
 
-// Module 14997 (PromotionStringUtils)
+// Module 15232 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import PriceUtils from "PriceUtils" /* 7376 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2054 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import PriceUtils from "PriceUtils" /* 7399 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2055 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatS
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
 
 export const useFormatStringWithCommonPremiumParams = tmp3;
-export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArticle, helpArticleId) {
+export function getHelpArticleLinkProps(helpArticle, helpArticleId) {
   let obj2;
   let id1;
   if (helpArticle != null) {
@@ -116,4 +116,4 @@ export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArti
     const intl = intl2.intl;
     linkText = intl.string(intl2.t["sBp+u0"]);
   }
-};
+}

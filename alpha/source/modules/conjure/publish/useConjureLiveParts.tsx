@@ -1,14 +1,14 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12254
+// Function ID: 12255
 // Name: useConjureLiveParts
-// Dependencies: [2042, 4934, 5230, 4878, 6808, 558, 576, 504, 7382, 2]
+// Dependencies: [2043, 4935, 5231, 4879, 6831, 558, 576, 504, 7405, 2]
 
-// Module 12200 (useConjureLiveParts)
-import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+// Module 12254 (useConjureLiveParts)
+import GuildChannelStore2 from "GuildChannelStore" /* 4935 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

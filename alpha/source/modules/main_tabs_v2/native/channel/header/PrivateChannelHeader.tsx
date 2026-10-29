@@ -1,21 +1,21 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14490
+// Function ID: 14491
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 4856, 5748, 4946, 1389, 1084, 21, 1199, 5004, 587, 558, 576, 504, 14252, 5640, 1125, 10669, 14256, 14257, 14259, 5058, 14262, 2]
+// Dependencies: [19, 17, 4857, 5750, 4947, 1389, 1084, 21, 1199, 5005, 587, 558, 576, 504, 14487, 5641, 1125, 10702, 14491, 14492, 11079, 5059, 14494, 2]
 
-// Module 14255 (PrivateChannelHeader)
+// Module 14490 (PrivateChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import ChannelHeader from "ChannelHeader" /* 14252 */;
+import ChannelHeader from "ChannelHeader" /* 14487 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

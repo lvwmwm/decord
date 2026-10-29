@@ -1,33 +1,33 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 9694
+// Function ID: 9695
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4951, 5005, 2021, 6535, 1389, 9663, 1084, 21, 5004, 4941, 504, 5303, 5085, 5242, 6845, 9664, 9665, 1096, 9666, 1294, 1278, 9667, 9669, 9671, 5639, 7295, 1254, 9672, 9673, 5747, 9674, 6008, 9675, 5280, 1125, 6916, 6537, 9677, 9679, 8864, 9670, 14294, 14298, 14297, 14299, 14300, 14301, 14303, 14306, 7263, 2]
+// Dependencies: [5, 32, 19, 17, 4952, 5006, 2022, 6559, 1389, 9695, 1084, 21, 5005, 4942, 504, 5304, 5086, 5243, 6868, 9696, 9697, 1096, 9698, 1294, 1278, 9699, 9701, 9703, 5640, 7319, 1254, 9704, 9705, 5749, 9706, 6010, 9707, 5281, 1125, 6940, 6561, 9709, 9711, 8867, 9702, 14528, 14532, 14531, 14533, 14534, 14535, 14537, 14540, 7287, 2]
 // Exports: default
 
-// Module 9662 (useOAuth2AuthorizeForm)
+// Module 9694 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5639 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6916 */;
-import Authorize from "Authorize" /* 9664 */;
-import react_nativeDefault from "react-native" /* 9666 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6940 */;
+import Authorize from "Authorize" /* 9696 */;
+import react_nativeDefault from "react-native" /* 9698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4951 from "module_4951" /* 4951 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import module_4952 from "module_4952" /* 4952 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants_mod from "Constants" /* 9663 */;
+import Constants_mod from "Constants" /* 9695 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9665);
+const scopes2 = tmp4(9697);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -459,7 +459,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -533,7 +533,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_49.current = false;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -573,7 +573,6 @@ export default function useOAuth2AuthorizeForm(clientId) {
   const useCallback = obj.useCallback;
   _require = codeChallengeMethod(function*(arg0, value) {
     let application;
-    let authorize;
     let c0;
     let c1;
     let c2;
@@ -582,155 +581,204 @@ export default function useOAuth2AuthorizeForm(clientId) {
     let obj9;
     let tmp107;
     let tmp99;
-    if (1 === state) {
+    if (nonce === 2) {
+      nonce = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        nonce = 3;
         throw value;
       } else if (arg0 === 2) {
-        nonce = 3;
-        const obj6 = { value, done: true };
-        return obj6;
-      } else if (null != callbackWithoutPost) {
-        closure_1_24(true);
-        callbackWithoutPost(authorize);
-        if (dismissOAuthModal != null) {
-          dismissOAuthModal();
-        }
-        nonce = 3;
-        const obj7 = { value: undefined, done: true };
-        return obj7;
-      } else if (null != integrationType) {
-        codeChallengeMethod = 2;
-        closure_1_24(true);
-        const obj8 = { authorize, clientId, scopes, responseType, redirectUri: tmp, codeChallenge, codeChallengeMethod, state, nonce, permissions: obj9.remove(memo4, first6), guildId: tmp99, channelId: tmp107, integrationType, connectedAccountProvider };
-        authorize = clientId(codeChallenge[27]).authorize;
-        const tmp82 = clientId(codeChallenge[27]);
-        obj9 = redirectUri(codeChallenge[21]);
-        tmp99 = undefined;
-        if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
-          if (null != first4) {
-            tmp99 = first4;
-          }
-        }
-        tmp107 = undefined;
-        if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
-          if (null != first5) {
-            tmp107 = first5;
-          }
-        }
-        state = 4;
-        nonce = 1;
-        const obj10 = { value: authorize(obj8), done: false };
-        return obj10;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const _Error2 = Error;
-        const self5 = this;
-        const self6 = this;
-        const error = new Error("No integration type was selected.");
-        closure_1_23(error);
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } else if (2 === state) {
-      codeChallengeMethod = 0;
-      closure_1_24(false);
-      throw codeChallenge;
     } else {
-      if (3 === state) {
-        codeChallengeMethod = 1;
-        const body = codeChallenge.body;
-        let message;
-        if (body != null) {
-          message = body.message;
-        }
-        if (null != message) {
-          if ("" !== body.message) {
-            const _Error = Error;
-            const self3 = this;
-            const self4 = this;
-            const error1 = new Error(body.message);
-            closure_1_23(error1);
-            closure_1_21(constants.AUTHORIZE_SCOPES);
-          }
-        }
-        closure_1_23(body);
-        closure_1_21(constants.AUTHORIZE_SCOPES);
-      } else {
-        if (4 === state) {
+      try {
+        let authorize;
+        let tmp;
+        let body;
+        nonce = 2;
+        if (0 === state) {
           if (arg0 === 1) {
             nonce = 3;
             throw value;
           } else if (arg0 === 2) {
-            codeChallengeMethod = 0;
-            closure_1_24(false);
             nonce = 3;
-            const obj11 = { value, done: true };
-            return obj11;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            codeChallenge = value;
-            const tmp138 = authorize;
-            if (tmp138) {
-              const obj4 = responseType(codeChallenge[29]);
-              const response = obj4.fetch();
-              state = 5;
-              nonce = 1;
-              const obj12 = { value: obj5.ackDisclosures(clientId, first12), done: false };
-              obj5 = clientId(codeChallenge[25]);
-              return obj12;
-            }
+            authorize = undefined;
+            responseType = undefined;
+            tmp = undefined;
+            ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
+            codeChallenge = undefined;
+            body = undefined;
+            state = 1;
+            nonce = 1;
+            return { value: "Reflect", done: null };
           }
         } else {
-          if (5 === state) {
+          if (1 === state) {
             if (arg0 === 1) {
               nonce = 3;
               throw value;
             } else if (arg0 === 2) {
-              codeChallengeMethod = 0;
-              closure_1_24(false);
               nonce = 3;
-              const obj13 = { value, done: true };
-              return obj13;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else if (null != callbackWithoutPost) {
+              closure_1_24(true);
+              callbackWithoutPost(authorize);
+              if (dismissOAuthModal != null) {
+                dismissOAuthModal();
+              }
+              nonce = 3;
+              const obj7 = { value: undefined, done: true };
+              return obj7;
+            } else if (null != integrationType) {
+              codeChallengeMethod = 2;
+              closure_1_24(true);
+              const obj8 = { authorize, clientId, scopes, responseType, redirectUri: tmp, codeChallenge, codeChallengeMethod, state, nonce, permissions: obj9.remove(memo4, first6), guildId: tmp99, channelId: tmp107, integrationType, connectedAccountProvider };
+              authorize = clientId(codeChallenge[27]).authorize;
+              const tmp82 = clientId(codeChallenge[27]);
+              obj9 = redirectUri(codeChallenge[21]);
+              tmp99 = undefined;
+              if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+                if (null != first4) {
+                  tmp99 = first4;
+                }
+              }
+              tmp107 = undefined;
+              if (integrationType === clientId(codeChallenge[28]).ApplicationIntegrationType.GUILD_INSTALL) {
+                if (null != first5) {
+                  tmp107 = first5;
+                }
+              }
+              state = 4;
+              nonce = 1;
+              const obj10 = { value: authorize(obj8), done: false };
+              return obj10;
+            } else {
+              const _Error2 = Error;
+              const self5 = this;
+              const self6 = this;
+              const error = new Error("No integration type was selected.");
+              closure_1_23(error);
             }
-          } else if (arg0 === 1) {
-            nonce = 3;
-            throw value;
-          } else if (arg0 === 2) {
+          } else if (2 === state) {
             codeChallengeMethod = 0;
             closure_1_24(false);
-            nonce = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else if (callback != null) {
-            const obj14 = { canceled: tmp, application, guild, wasDeepLink };
-            const merged = Object.assign(codeChallenge);
-            application = undefined;
-            if (application != null) {
-              application = application.application;
+            throw codeChallenge;
+          } else {
+            if (3 === state) {
+              codeChallengeMethod = 1;
+              body = codeChallenge.body;
+              let message;
+              if (body != null) {
+                message = body.message;
+              }
+              if (null != message) {
+                if ("" !== body.message) {
+                  const _Error = Error;
+                  const self3 = this;
+                  const self4 = this;
+                  const error1 = new Error(body.message);
+                  closure_1_23(error1);
+                  closure_1_21(constants.AUTHORIZE_SCOPES);
+                }
+              }
+              closure_1_23(body);
+              closure_1_21(constants.AUTHORIZE_SCOPES);
+            } else {
+              if (4 === state) {
+                if (arg0 === 1) {
+                  nonce = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  codeChallengeMethod = 0;
+                  closure_1_24(false);
+                  nonce = 3;
+                  const obj11 = { value, done: true };
+                  return obj11;
+                } else {
+                  codeChallenge = value;
+                  const tmp138 = authorize;
+                  if (tmp138) {
+                    const obj4 = responseType(codeChallenge[29]);
+                    const response = obj4.fetch();
+                    state = 5;
+                    nonce = 1;
+                    const obj12 = { value: obj5.ackDisclosures(clientId, first12), done: false };
+                    obj5 = clientId(codeChallenge[25]);
+                    return obj12;
+                  }
+                }
+              } else {
+                if (5 === state) {
+                  if (arg0 === 1) {
+                    nonce = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    codeChallengeMethod = 0;
+                    closure_1_24(false);
+                    nonce = 3;
+                    const obj13 = { value, done: true };
+                    return obj13;
+                  }
+                } else if (arg0 === 1) {
+                  nonce = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  codeChallengeMethod = 0;
+                  closure_1_24(false);
+                  nonce = 3;
+                  const obj = { value, done: true };
+                  return obj;
+                } else if (callback != null) {
+                  const obj14 = { canceled: tmp, application, guild, wasDeepLink };
+                  const merged = Object.assign(codeChallenge);
+                  application = undefined;
+                  if (application != null) {
+                    application = application.application;
+                  }
+                  tmp6(obj14);
+                }
+                codeChallengeMethod = 1;
+              }
+              if (null != responseType) {
+                responseType(codeChallenge.location);
+              } else {
+                if (dismissOAuthModal != null) {
+                  dismissOAuthModal();
+                }
+                const self = this;
+                const self2 = this;
+                const promise = new Promise((arg0) => setTimeout(arg0, 100));
+                state = 6;
+                nonce = 1;
+                const obj15 = { value: promise, done: false };
+                return obj15;
+              }
             }
-            tmp6(obj14);
+            codeChallengeMethod = 0;
+            closure_1_24(false);
           }
-          codeChallengeMethod = 1;
+          nonce = 3;
+          return { value: "IconComponent", done: "IconComponent" };
         }
-        if (null != responseType) {
-          responseType(codeChallenge.location);
+      } catch (tmp123) {
+        codeChallenge = tmp123;
+        if (0 === codeChallengeMethod) {
+          nonce = 3;
+          throw tmp123;
+        } else if (1 === tmp125) {
+          state = 2;
         } else {
-          if (dismissOAuthModal != null) {
-            dismissOAuthModal();
-          }
-          const self = this;
-          const self2 = this;
-          const promise = new Promise((arg0) => setTimeout(arg0, 100));
-          state = 6;
-          nonce = 1;
-          const obj15 = { value: promise, done: false };
-          return obj15;
+          state = 3;
         }
       }
-      codeChallengeMethod = 0;
-      closure_1_24(false);
     }
-    yield "IconComponent";
-    responseType = tmp4;
-    ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "Reflect";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -822,7 +870,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -912,7 +960,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_57.current = false;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {
@@ -1036,7 +1084,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9674);
+            const tmp27Result = tmp27(9706);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;
@@ -1406,6 +1454,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         let tmp122;
         if (flag6) {
+          const tmp123 = loading;
           const obj25 = { user: stateFromStores, application: null, accountScopes, bot: first.bot };
           class Spinner {
             constructor() {

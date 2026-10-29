@@ -1,21 +1,21 @@
-// Module ID: 14286
-// Function ID: 14287
+// Module ID: 14520
+// Function ID: 14521
 // Name: MobileRoadblockCtaUtils
-// Dependencies: [1391, 1125, 2050, 9835, 14287, 2]
+// Dependencies: [1391, 1125, 2051, 9867, 14521, 2]
 // Exports: formatMobileRoadblockOfferText, getMobileRoadblockButtonText
 
-// Module 14286 (MobileRoadblockCtaUtils)
+// Module 14520 (MobileRoadblockCtaUtils)
 import intl3 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import getTrialCtaOverride from "getTrialCtaOverride" /* 9835 */;
-import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 14287 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import getTrialCtaOverride from "getTrialCtaOverride" /* 9867 */;
+import MobileRoadblockOfferCtaExperiment from "MobileRoadblockOfferCtaExperiment" /* 14521 */;
 import size from "module_2" /* 2 */;
 
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
 let result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/MobileRoadblockCtaUtils.tsx");
 
-export const formatMobileRoadblockOfferText = function formatMobileRoadblockOfferText(arg0) {
+export function formatMobileRoadblockOfferText(arg0) {
   let discountOffer;
   let subscriptionTier;
   let trialOffer;
@@ -49,8 +49,8 @@ export const formatMobileRoadblockOfferText = function formatMobileRoadblockOffe
     }
     return result;
   }
-};
-export const getMobileRoadblockButtonText = function getMobileRoadblockButtonText(arg0) {
+}
+export function getMobileRoadblockButtonText(arg0) {
   let discountOffer;
   let subscriptionTier;
   let trialOffer;
@@ -104,4 +104,4 @@ export const getMobileRoadblockButtonText = function getMobileRoadblockButtonTex
     }
     return tmp8;
   }
-};
+}

@@ -1,24 +1,24 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18304
+// Function ID: 18305
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 18009, 21, 5004, 587, 18025, 558, 576, 18021, 1414, 6919, 5944, 1125, 9039, 18071, 18042, 5705, 2]
+// Dependencies: [19, 18243, 21, 5005, 587, 18259, 558, 576, 18255, 1415, 6943, 5946, 1125, 9042, 18305, 18276, 5707, 2]
 
-// Module 18070 (GuildsBarGeoRestrictedGuild)
+// Module 18304 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import GuildIcon from "GuildIcon" /* 6919 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18009 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18021 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18025 */;
-import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 18042 */;
-import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 18071 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import GuildIcon from "GuildIcon" /* 6943 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18243 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18255 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18259 */;
+import HomeDrawerGuildRowDefault from "HomeDrawerGuildRow" /* 18276 */;
+import GuildsBarGeoRestrictedBadgeDefault from "GuildsBarGeoRestrictedBadge" /* 18305 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(18021);
+  const tmpResult = tmp(18255);
   const guildsBarAnimatedWrapperStyles = tmpResult.useGuildsBarAnimatedWrapperStyles(first);
   if (cResult[1] === restrictedGuild.icon) {
     let tmp7;
@@ -112,7 +112,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp24 = jsx(FastImageDefault, { source: tmp7, style: tmp4.guildIcon, fadeDuration: 0 });
       } else {
         GuildIconDefault;
-        tmp24 = <tmp23 value={restrictedGuild.name} selected={false} animate={false} size={tmp(6919).GuildIconSizes.LARGE} />;
+        tmp24 = <tmp23 value={restrictedGuild.name} selected={false} animate={false} size={tmp(6943).GuildIconSizes.LARGE} />;
       }
       cResult[11] = tmp7;
       cResult[12] = tmp4.guildIcon;
@@ -168,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(18021);
+  let obj = restrictedGuild(18255);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;
@@ -215,13 +215,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   GuildsBarAnimatedItemWrapperDefault;
   if (null != animatableSourceWithFallback) {
     const obj6 = { source: animatableSourceWithFallback, style: tmp.guildIcon, fadeDuration: 0 };
-    tmp8Result = tmp8(tmp9(5705), obj6);
+    tmp8Result = tmp8(tmp9(5707), obj6);
   } else {
-    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(6919).GuildIconSizes.LARGE };
+    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(6943).GuildIconSizes.LARGE };
     const tmp9Result = GuildIconDefault;
     tmp8Result = tmp8(tmp9Result, obj7);
   }
-  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren="POST_CONNECTION_OPEN" expandedChildren="ONBOARDING_START">{tmp8Result}</tmp10>;
+  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren="function pnpm_useGestureHandlerTs1(event){const{state,State,gestureSource,source,onStart}=this.__closure;state.value=State.BEGAN;gestureSource.value=source;onStart(source,event);return;}" expandedChildren="function pnpm_useGestureHandlerTs2(event){const{gestureSource,source,state,onChange}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);}">{tmp8Result}</tmp10>;
 }));
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");

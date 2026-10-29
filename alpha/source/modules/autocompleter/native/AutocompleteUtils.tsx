@@ -1,27 +1,27 @@
-// Module ID: 10146
-// Function ID: 10147
+// Module ID: 10179
+// Function ID: 10180
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 4860, 4934, 4946, 1389, 1084, 10147, 6020, 21, 5004, 587, 5640, 8536, 6743, 5058, 558, 576, 8989, 2]
+// Dependencies: [19, 17, 4861, 4935, 4947, 1389, 1084, 10180, 6024, 21, 5005, 587, 5641, 8558, 6766, 5059, 558, 576, 8992, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10146 (autocompleter/AutocompleteUtils)
+// Module 10179 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6743 */;
-import TimestampUtils from "TimestampUtils" /* 8536 */;
-import FormDividerDefault from "FormDivider" /* 8989 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6766 */;
+import TimestampUtils from "TimestampUtils" /* 8558 */;
+import FormDividerDefault from "FormDivider" /* 8992 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10147 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
-import createStyles from "createStyles" /* 5004 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10180 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(5058);
+const UserUtilsDefault = tmp(5059);
 const StyleSheet = react_native.StyleSheet;
 let closure_3 = ChannelRecord.isGuildSelectableChannelType;
 ({ AutoCompleteResultTypes: metroImportDefault, WHITESPACE_RE: metroImportAll } = Constants);
@@ -98,7 +98,7 @@ function findWordStart(arg0, arg1) {
 }
 let result = size.fileFinishedImporting("modules/autocompleter/native/AutocompleteUtils.tsx");
 
-export const getItemLayout = function getItemLayout(arg0, index) {
+export function getItemLayout(arg0, index) {
   let result;
   let type;
   if (arg0 != null) {
@@ -110,8 +110,8 @@ export const getItemLayout = function getItemLayout(arg0, index) {
   const obj = { length: tmp3, offset: result + Math.max(0, (index - 1) * hairlineWidth), index };
   result = index * tmp3;
   return obj;
-};
-export const getAutocompleteResultText = function getAutocompleteResultText(type, channel, set) {
+}
+export function getAutocompleteResultText(type, channel, set) {
   if (null != set) {
     if (!set.has(type.type)) {
       return "";
@@ -128,7 +128,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(5058);
+      const tmp35Result = tmp35(5059);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;
@@ -189,30 +189,30 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
     }
     return "";
   }
-};
+}
 export { getMentionTextWithUser };
-export const getItemSeparator = function getItemSeparator() {
+export function getItemSeparator() {
   return <closure_18 />;
-};
-export const getPrefix = function getPrefix(substr1) {
+}
+export function getPrefix(substr1) {
   return substr1[0];
-};
-export const getQuery = function getQuery(arr) {
+}
+export function getQuery(arr) {
   const str = arr.slice(1);
   return str.toLowerCase();
-};
-export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(text, lastIndexOfResult) {
+}
+export function isWhitespaceSeparatingBoundary(text, lastIndexOfResult) {
   const isMatch = 0 === lastIndexOfResult || metroImportAll.test(text[lastIndexOfResult - 1]);
   return isMatch;
-};
-export const isUnbrokenRun = function isUnbrokenRun(arr, sum, selectionEnd) {
+}
+export function isUnbrokenRun(arr, sum, selectionEnd) {
   return !metroImportAll.test(arr.slice(sum, selectionEnd));
-};
-export const isSingleLineRun = function isSingleLineRun(arr, sum, selectionEnd) {
+}
+export function isSingleLineRun(arr, sum, selectionEnd) {
   return !re19.test(arr.slice(sum, selectionEnd));
-};
+}
 export { findWordStart };
-export const isSpaceJustTypedAtCaret = function isSpaceJustTypedAtCaret(text, selectionEnd, c22, selectionEnd2) {
+export function isSpaceJustTypedAtCaret(text, selectionEnd, c22, selectionEnd2) {
   let sum = selectionEnd2;
   if (selectionEnd2 === selectionEnd + 1) {
     if (c22.length === text.length + 1) {
@@ -235,8 +235,8 @@ export const isSpaceJustTypedAtCaret = function isSpaceJustTypedAtCaret(text, se
     }
   }
   return false;
-};
-export const findAutoInsertOnSpaceToken = function findAutoInsertOnSpaceToken(c22, selectionEnd, arg2) {
+}
+export function findAutoInsertOnSpaceToken(c22, selectionEnd, arg2) {
   if (selectionEnd >= arg2.length + 2) {
     if (" " === c22[selectionEnd - 1]) {
       const diff = selectionEnd - 1;
@@ -269,4 +269,4 @@ export const findAutoInsertOnSpaceToken = function findAutoInsertOnSpaceToken(c2
     }
   }
   return null;
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 10492
-// Function ID: 10493
+// Module ID: 10525
+// Function ID: 10526
 // Name: openLinkedUsersChannel
-// Dependencies: [5, 4856, 5743, 7448, 2]
+// Dependencies: [5, 4857, 5745, 7471, 2]
 // Exports: default
 
-// Module 10492 (openLinkedUsersChannel)
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
+// Module 10525 (openLinkedUsersChannel)
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let c4, c6, onBeforeTransition, recipientIds, set, sortedPrivateChannels;
@@ -47,7 +47,7 @@ let obj = function _openLinkedUsersChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -100,7 +100,7 @@ let obj = function _openLinkedUsersChannel() {
             c5 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         if (0 === c5) {

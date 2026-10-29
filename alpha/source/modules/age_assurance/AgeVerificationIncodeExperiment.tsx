@@ -1,12 +1,12 @@
-// Module ID: 7954
-// Function ID: 7955
+// Module ID: 7977
+// Function ID: 7978
 // Name: AgeVerificationIncodeExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isAgeVerificationIncodeEnabled
 
-// Module 7954 (AgeVerificationIncodeExperiment)
+// Module 7977 (AgeVerificationIncodeExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVeri
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
 
 export const useIsAgeVerificationIncodeEnabled = tmp2;
-export const isAgeVerificationIncodeEnabled = function isAgeVerificationIncodeEnabled(entryPoint) {
+export function isAgeVerificationIncodeEnabled(entryPoint) {
   const obj = { location: entryPoint };
   return closure_2.getConfig(obj).enabled;
-};
+}

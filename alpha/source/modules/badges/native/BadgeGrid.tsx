@@ -1,12 +1,12 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16385
+// Function ID: 16386
 // Name: BadgeGrid
-// Dependencies: [5302, 587, 2]
+// Dependencies: [5303, 587, 2]
 // Exports: getBadgeTileSize
 
-// Module 16148 (BadgeGrid)
+// Module 16385 (BadgeGrid)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 const ACTION_SHEET_MAX_WIDTH = ActionSheetConstants.ACTION_SHEET_MAX_WIDTH;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/badges/native/BadgeGrid.tsx")
 export const BADGE_GRID_COLUMNS = 3;
 export const BADGE_GRID_GAP = PX_16;
 export const BADGE_TILE_ICON_SIZE = 48;
-export const getBadgeTileSize = function getBadgeTileSize(width) {
+export function getBadgeTileSize(width) {
   const bound = Math.min(width, ACTION_SHEET_MAX_WIDTH);
   return (bound - 2 * nativeDefault.space.PX_16 - 2 * PX_16) / 3;
-};
+}

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "cc6b65382ac11a7c39e085140d379e5a", name: "messenger", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "1d1181e321dc8059ed1b1ce7cbbde121", name: "ic_chat_bubble_32px", type: "png" });

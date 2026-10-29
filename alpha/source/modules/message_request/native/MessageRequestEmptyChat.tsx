@@ -1,17 +1,17 @@
-// Module ID: 13789
-// Function ID: 13790
+// Module ID: 14022
+// Function ID: 14023
 // Name: MessageRequestEmptyChat
-// Dependencies: [19, 17, 1095, 21, 5004, 1381, 558, 576, 1125, 5270, 2]
+// Dependencies: [19, 17, 1095, 21, 5005, 1381, 558, 576, 1125, 5271, 2]
 
-// Module 13789 (MessageRequestEmptyChat)
+// Module 14022 (MessageRequestEmptyChat)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1095 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

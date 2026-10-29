@@ -1,16 +1,16 @@
-// Module ID: 6026
-// Function ID: 6027
+// Module ID: 6030
+// Function ID: 6031
 // Name: StaticRouteRendering
 // Dependencies: [1125, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 6026 (StaticRouteRendering)
+// Module 6030 (StaticRouteRendering)
 import intl5 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");
 
-export const staticRouteToTranslation = function staticRouteToTranslation(id) {
+export function staticRouteToTranslation(id) {
   if ("home" !== id) {
     if ("guide" !== id) {
       if ("browse" === id) {
@@ -29,8 +29,8 @@ export const staticRouteToTranslation = function staticRouteToTranslation(id) {
   }
   const intl4 = intl5.intl;
   return intl4.string(intl5.t.VbpLyU);
-};
-export const staticRouteToItemString = function staticRouteToItemString(GuildRoleStore, id, itemId, guildId) {
+}
+export function staticRouteToItemString(GuildRoleStore, id, itemId, guildId) {
   if ("linked-roles" === id) {
     if (null == guildId) {
       return null;
@@ -53,4 +53,4 @@ export const staticRouteToItemString = function staticRouteToItemString(GuildRol
   } else {
     return null;
   }
-};
+}

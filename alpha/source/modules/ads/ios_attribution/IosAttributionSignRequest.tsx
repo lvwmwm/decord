@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14598
+// Function ID: 14599
 // Name: IosAttributionSignRequest
 // Dependencies: [5, 1084, 1294, 1254, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 14364 (IosAttributionSignRequest)
+// Module 14598 (IosAttributionSignRequest)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
               ({ metadataSealed: c0, impressionId: c1, specs: c2, signal: c3 } = closure_0);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -118,6 +118,6 @@ let obj = function _fetchIosAttributionSignedPayloads() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionSignRequest.tsx");
 
-export const fetchIosAttributionSignedPayloads = function fetchIosAttributionSignedPayloads() {
+export function fetchIosAttributionSignedPayloads() {
   return obj(...arguments);
-};
+}

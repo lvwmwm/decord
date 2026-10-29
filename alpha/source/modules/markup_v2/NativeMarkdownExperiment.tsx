@@ -1,14 +1,14 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8519
+// Function ID: 8520
 // Name: NativeMarkdownExperiment
-// Dependencies: [8498, 1452, 558, 576, 8500, 2]
+// Dependencies: [8520, 1453, 558, 576, 8522, 2]
 // Exports: isNativeMarkdownEnabled
 
-// Module 8497 (NativeMarkdownExperiment)
+// Module 8519 (NativeMarkdownExperiment)
 import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 8500 */;
-import LabFeatureStore from "LabFeatureStore" /* 8498 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import useLabFeatureDefault from "useLabFeature" /* 8522 */;
+import LabFeatureStore from "LabFeatureStore" /* 8520 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const result = size.fileFinishedImporting("modules/markup_v2/NativeMarkdownExper
 export const NativeMarkdownExperiment = apexExperiment;
 export const NativeMarkdownSettingExperiment = apexExperiment1;
 export const NATIVE_MARKDOWN_LAB_FEATURE = "enable_native_markdown";
-export const isNativeMarkdownEnabled = function isNativeMarkdownEnabled(location, arg1) {
+export function isNativeMarkdownEnabled(location, arg1) {
   let enabled;
   const _location = location.location;
   if (apexExperiment1.getConfig({ location: _location }, arg1).enabled) {
@@ -82,5 +82,5 @@ export const isNativeMarkdownEnabled = function isNativeMarkdownEnabled(location
     enabled = apexExperiment.getConfig(obj, arg1).enabled;
   }
   return enabled;
-};
+}
 export const useNativeMarkdown = tmp4;

@@ -1,16 +1,16 @@
-// Module ID: 17936
-// Function ID: 17937
+// Module ID: 18174
+// Function ID: 18175
 // Name: getChannelSubtitleData
 // Dependencies: [1125, 2]
 // Exports: getChannelSubtitleData
 
-// Module 17936 (getChannelSubtitleData)
+// Module 18174 (getChannelSubtitleData)
 import intl2 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");
 
-export const getChannelSubtitleData = function getChannelSubtitleData(subtitle) {
+export function getChannelSubtitleData(subtitle) {
   let intl;
   if (null == subtitle) {
     return null;
@@ -33,4 +33,4 @@ export const getChannelSubtitleData = function getChannelSubtitleData(subtitle) 
     ({ name: obj3.subtitle, type: obj3.type } = subtitle);
     return obj5;
   }
-};
+}

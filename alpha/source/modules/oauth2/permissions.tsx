@@ -1,10 +1,10 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9706
+// Function ID: 9707
 // Name: permissions
 // Dependencies: [1084, 1096, 1125, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 9674 (permissions)
+// Module 9706 (permissions)
 import Constants from "Constants" /* 1084 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import intl2 from "intl" /* 1125 */;
@@ -284,7 +284,7 @@ let obj = {
 const result = size.fileFinishedImporting("modules/oauth2/permissions.tsx");
 
 export const OrderedPermissions = items;
-export const containsDisallowedPermission = function containsDisallowedPermission(memo4) {
+export function containsDisallowedPermission(memo4) {
   let closure_0 = memo4;
   const values = Object.values(Permissions);
   return values.some((item) => {
@@ -292,8 +292,8 @@ export const containsDisallowedPermission = function containsDisallowedPermissio
     const hasItem = obj.has(memo4, item) && !items.includes(item);
     return hasItem;
   });
-};
-export const getPermissionName = function getPermissionName(item) {
+}
+export function getPermissionName(item) {
   const tmp = obj[item.toString(item)];
   if (null == tmp) {
     const _Error = Error;
@@ -305,4 +305,4 @@ export const getPermissionName = function getPermissionName(item) {
   } else {
     return tmp();
   }
-};
+}

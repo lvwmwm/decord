@@ -8,7 +8,7 @@
 import _mod693 from "module_693" /* 693 */;
 
 
-export const safeFactory = function safeFactory(beforeBreadcrumb, arg1) {
+export function safeFactory(beforeBreadcrumb, arg1) {
   let fn = beforeBreadcrumb;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -37,7 +37,7 @@ export const safeFactory = function safeFactory(beforeBreadcrumb, arg1) {
     };
   }
   return fn;
-};
+}
 export function safeTracesSampler(tracesSampler) {
   let fn = tracesSampler;
   let closure_0 = tracesSampler;

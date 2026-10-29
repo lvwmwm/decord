@@ -1,21 +1,21 @@
-// Module ID: 11203
-// Function ID: 11204
+// Module ID: 11257
+// Function ID: 11258
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1084, 21, 5004, 587, 558, 576, 5195, 11204, 1264, 5747, 5246, 11210, 7665, 5670, 5270, 2]
+// Dependencies: [19, 1084, 21, 5005, 587, 558, 576, 5196, 11258, 1264, 5749, 5247, 11264, 7688, 5672, 5271, 2]
 
-// Module 11203 (UserProfileAboutMeCardCommand)
+// Module 11257 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11204 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11210 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11258 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11264 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

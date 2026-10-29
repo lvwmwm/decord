@@ -1,13 +1,13 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7542
+// Function ID: 7543
 // Name: canChannelUseSoundboard
-// Dependencies: [4856, 4936, 4907, 1084, 558, 576, 504, 2]
+// Dependencies: [4857, 4937, 4908, 1084, 558, 576, 504, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default
 
-// Module 7519 (canChannelUseSoundboard)
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+// Module 7542 (canChannelUseSoundboard)
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanChan
 const result = size.fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
 
 export default canChannelUseSoundboard;
-export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceChannelUseSoundboard() {
+export function canSelectedVoiceChannelUseSoundboard() {
   const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
   let flag = false;
   if (null != channel) {
@@ -114,5 +114,5 @@ export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceCha
     }
   }
   return flag;
-};
+}
 export const useCanChannelUseSoundboard = tmp3;

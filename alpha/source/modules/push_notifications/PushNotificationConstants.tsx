@@ -1,13 +1,13 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6730
+// Function ID: 6731
 // Name: PushNotificationConstants
-// Dependencies: [1380, 1627, 1381, 2]
+// Dependencies: [1380, 1628, 1381, 2]
 // Exports: getDevicePushProvider
 
-// Module 6706 (PushNotificationConstants)
+// Module 6730 (PushNotificationConstants)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react_native_mod from "react-native" /* 1380 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1627 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
 import size from "module_2" /* 2 */;
 
 let react_native = react_native_mod;
@@ -48,7 +48,7 @@ export const DEVICE_PUSH_PROVIDER_ANDROID = "gcm";
 export const DEVICE_PUSH_PROVIDER_META_HORIZON = "meta_horizon";
 export const DEVICE_PUSH_PROVIDER_IOS = str2;
 export const DEVICE_PUSH_VOIP_PROVIDER = str4;
-export const getDevicePushProvider = function getDevicePushProvider() {
+export function getDevicePushProvider() {
   let str;
   const tmp = MetaQuestUtils;
   if (tmp) {
@@ -61,5 +61,5 @@ export const getDevicePushProvider = function getDevicePushProvider() {
     }
   }
   return str;
-};
+}
 export const NotificationTypes = { REMINDER: "reminder", TOP_MESSAGE_PUSH: "top_messages_push", TRENDING_CONTENT_PUSH: "trending_content_push" };

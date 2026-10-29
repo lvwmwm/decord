@@ -1,16 +1,16 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7272
+// Function ID: 7273
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7249, 4856, 1084, 1101, 1294, 7250, 2]
+// Dependencies: [5, 7273, 4857, 1084, 1101, 1294, 7274, 2]
 
-// Module 7248 (UserGuildSettingsManager)
+// Module 7272 (UserGuildSettingsManager)
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7249 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7273 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;
@@ -45,7 +45,7 @@ let obj = function _saveUserGuildSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ let obj = function _saveUserGuildSettings() {
             return obj;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -160,7 +160,7 @@ obj = function _saveUserGuildSettingsBulk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {

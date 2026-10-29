@@ -1,14 +1,14 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18571
+// Function ID: 18572
 // Name: useAppChannelClosed
-// Dependencies: [32, 19, 6811, 558, 576, 11815, 2]
+// Dependencies: [32, 19, 6834, 558, 576, 11869, 2]
 
-// Module 18337 (useAppChannelClosed)
+// Module 18571 (useAppChannelClosed)
 import react2 from "react" /* 576 */;
-import useFrameBySurfaceDefault from "useFrameBySurface" /* 11815 */;
+import useFrameBySurfaceDefault from "useFrameBySurface" /* 11869 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F155717 */ });
+          return closure_0(function() { /* body not rendered: F157354 */ });
         }
       }
       cResult[6] = I;
@@ -82,21 +82,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F155717 */ });
+          return closure_0(function() { /* body not rendered: F157354 */ });
         }
       }
     }
     if (tmp11 != null) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F155717 */ });
+          return closure_0(function() { /* body not rendered: F157354 */ });
         }
       }
     }
     if (cResult[7] !== (undefined === tmp3 && tmp11.isClosed)) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F155717 */ });
+          return closure_0(function() { /* body not rendered: F157354 */ });
         }
       }
       tmp29[0] = undefined === tmp3 && tmp11.isClosed;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F155717 */ });
+          return closure_0(function() { /* body not rendered: F157354 */ });
         }
       }
     }

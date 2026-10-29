@@ -1,13 +1,13 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9408
+// Function ID: 9409
 // Name: AnnouncementMessageUtils
-// Dependencies: [4947, 1997, 6056, 6035, 1102, 9377, 6047, 9378, 1125, 1383, 2]
+// Dependencies: [4948, 1998, 6060, 6039, 1102, 9409, 6051, 9410, 1125, 1383, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9376 (AnnouncementMessageUtils)
+// Module 9408 (AnnouncementMessageUtils)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import MessageRecord from "MessageRecord" /* 4947 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9378 */;
+import MessageRecord from "MessageRecord" /* 4948 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9410 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -17,7 +17,7 @@ const re4 = /^#{1,3}\s+(.+)$/;
 const re5 = /^https?:\/\/\S+$/;
 let result = size.fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
 
-export const toAnnouncementMessages = function toAnnouncementMessages(messages) {
+export function toAnnouncementMessages(messages) {
   let regex;
   return messages.map((reactions) => {
     let body;
@@ -253,8 +253,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
       }
     }
   });
-};
-export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
+}
+export function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
@@ -262,8 +262,8 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
     result = intl.string(tmp(1125).t["e+J3JZ"]);
   }
   return result;
-};
-export const getPosterUrl = function getPosterUrl(proxyUrl, c11, c10) {
+}
+export function getPosterUrl(proxyUrl, c11, c10) {
   const obj = URLUtilsDefault;
   const str = obj.toURLSafe(proxyUrl);
   let str1 = null;
@@ -281,4 +281,4 @@ export const getPosterUrl = function getPosterUrl(proxyUrl, c11, c10) {
     str1 = str.toString();
   }
   return str1;
-};
+}

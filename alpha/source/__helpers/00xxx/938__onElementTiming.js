@@ -107,7 +107,7 @@ function _onElementTiming(arg0) {
 }
 
 export { _onElementTiming };
-export const startTrackingElementTiming = function startTrackingElementTiming() {
+export function startTrackingElementTiming() {
   const obj = extractNetworkProtocol;
   if (obj.getBrowserPerformanceAPI()) {
     let fn;
@@ -121,4 +121,4 @@ export const startTrackingElementTiming = function startTrackingElementTiming() 
   fn = () => {
 
   };
-};
+}

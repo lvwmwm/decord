@@ -1,23 +1,23 @@
-// Module ID: 8477
-// Function ID: 8478
+// Module ID: 8499
+// Function ID: 8500
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [4856, 1389, 8351, 8353, 5004, 587, 1125, 8309, 8478, 8355, 2]
+// Dependencies: [4857, 1389, 8373, 8375, 5005, 587, 1125, 8331, 8500, 8377, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8477 (FriendRequestAcceptedSystemMessage)
+// Module 8499 (FriendRequestAcceptedSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 5004 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8478 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import createStyles from "createStyles" /* 5005 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8500 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
 
-export const createFriendRequestAcceptedSystemMessage = function createFriendRequestAcceptedSystemMessage(message) {
+export function createFriendRequestAcceptedSystemMessage(message) {
   let obj5;
   let obj7;
   let tmp18Result2;
@@ -66,7 +66,7 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             }
             const obj8 = { content: formatToPartsResult, iconUrl: tmp18Result2.getAssetUriForEmbed(AssetRegistryDefault), textColor: tmp6 };
             tmp18Result2 = renderer_EmbedUtils;
-            const merged2 = Object.assign(tmp21(8355)(message));
+            const merged2 = Object.assign(tmp21(8377)(message));
             return obj8;
           }
           const intl = tmp18(1125).intl;
@@ -83,4 +83,4 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
     }
   }
   return null;
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 15063
+// Function ID: 15064
 // Name: PostPreviewEmbeds
-// Dependencies: [1084, 14829, 2]
+// Dependencies: [1084, 15064, 2]
 // Exports: createPostPreviewEmbeds
 
-// Module 14828 (PostPreviewEmbeds)
+// Module 15063 (PostPreviewEmbeds)
 import Constants from "Constants" /* 1084 */;
-import createMediaPostPreviewEmbedContentDefault from "createMediaPostPreviewEmbedContent" /* 14829 */;
+import createMediaPostPreviewEmbedContentDefault from "createMediaPostPreviewEmbedContent" /* 15064 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PostPreviewEmbeds.tsx");
 
-export const createPostPreviewEmbeds = function createPostPreviewEmbeds(message, roleStyle, useReducedMotion) {
+export function createPostPreviewEmbeds(message, roleStyle, useReducedMotion) {
   let closure_0 = message;
   let closure_1 = roleStyle;
   let flag = useReducedMotion;
@@ -32,4 +32,4 @@ export const createPostPreviewEmbeds = function createPostPreviewEmbeds(message,
     });
   }
   return items;
-};
+}

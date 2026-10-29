@@ -1,16 +1,16 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12425
+// Function ID: 12426
 // Name: conjureTipTurn
-// Dependencies: [10735, 2]
+// Dependencies: [10809, 2]
 // Exports: entryActivityAt, hasNoTurns, hasOpenAsk, newestPublish, newestSettledTurn
 
-// Module 12371 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 10735 */;
+// Module 12425 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 10809 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
 
-export const newestSettledTurn = function newestSettledTurn(arr) {
+export function newestSettledTurn(arr) {
   let diff = arr.length - 1;
   if (0 <= diff) {
     while (true) {
@@ -26,7 +26,7 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(10735);
+                let tmp4Result = tmp4(10809);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }
@@ -40,8 +40,8 @@ export const newestSettledTurn = function newestSettledTurn(arr) {
     return null;
   }
   return null;
-};
-export const newestPublish = function newestPublish(arr) {
+}
+export function newestPublish(arr) {
   let tmp2;
   let diff = arr.length - 1;
   if (0 <= diff) {
@@ -62,11 +62,11 @@ export const newestPublish = function newestPublish(arr) {
     return tmp2;
   }
   return null;
-};
-export const hasNoTurns = function hasNoTurns(arr) {
+}
+export function hasNoTurns(arr) {
   return arr.every((kind) => "publish_notice" === kind.kind || "project_event" === kind.kind || "context_boundary" === kind.kind);
-};
-export const hasOpenAsk = function hasOpenAsk(newestSettledTurnResult) {
+}
+export function hasOpenAsk(newestSettledTurnResult) {
   let tmp = null != newestSettledTurnResult.awaitingUser || null != newestSettledTurnResult.secretRequest || null != newestSettledTurnResult.settingsRequest;
   if (!tmp) {
     const intake = newestSettledTurnResult.intake;
@@ -80,8 +80,8 @@ export const hasOpenAsk = function hasOpenAsk(newestSettledTurnResult) {
     tmp = num > 0;
   }
   return tmp;
-};
-export const entryActivityAt = function entryActivityAt(atResult) {
+}
+export function entryActivityAt(atResult) {
   let num = atResult.finished_at;
   const _Math = Math;
   const created_at = atResult.created_at;
@@ -93,4 +93,4 @@ export const entryActivityAt = function entryActivityAt(atResult) {
     num2 = 0;
   }
   return max(created_at, num, num2);
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 4925
-// Function ID: 4926
+// Module ID: 4926
+// Function ID: 4927
 // Name: embeddedActivityLocationUtils
 // Dependencies: [2]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
-// Module 4925 (embeddedActivityLocationUtils)
+// Module 4926 (embeddedActivityLocationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");
 
-export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(connectedActivityLocation) {
+export function getEmbeddedActivityLocationChannelId(connectedActivityLocation) {
   if (null != connectedActivityLocation) {
     let channel_id;
     if ("channel_id" in connectedActivityLocation) {
@@ -17,8 +17,8 @@ export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivity
     }
     return channel_id;
   }
-};
-export const getEmbeddedActivityLocationGuildId = function getEmbeddedActivityLocationGuildId(location) {
+}
+export function getEmbeddedActivityLocationGuildId(location) {
   if (null != location) {
     let guild_id;
     if ("guild_id" in location) {
@@ -26,4 +26,4 @@ export const getEmbeddedActivityLocationGuildId = function getEmbeddedActivityLo
     }
     return guild_id;
   }
-};
+}

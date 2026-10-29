@@ -1,14 +1,14 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10083
+// Function ID: 10084
 // Name: NsfwServerInviteWarningAlert
-// Dependencies: [19, 21, 558, 576, 5950, 10052, 7918, 6692, 5950, 1125, 5946, 2]
+// Dependencies: [19, 21, 558, 576, 5952, 10084, 7941, 6716, 5952, 1125, 1272, 5948, 2]
 // Exports: showNsfwServerInviteWarningAlert
 
-// Module 10051 (NsfwServerInviteWarningAlert)
+// Module 10083 (NsfwServerInviteWarningAlert)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5946 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
+import useAlertStore from "useAlertStore" /* 5948 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,9 +18,10 @@ let c5 = "nsfw-server-invite-warning";
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwServerInviteWarningAlert(onConfirm) {
   let _confirm;
   let description;
+  let obj6;
   let tmp6;
   let obj = onConfirm(_confirm[3]);
-  const cResult = obj.c(21);
+  const cResult = obj.c(22);
   onConfirm = onConfirm.onConfirm;
   const obj2 = onConfirm(_confirm[4]);
   const dismissModalCallback = obj2.useDismissModalCallback();
@@ -90,21 +91,31 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwServer
           if (cResult[14] === tmp9) {
             if (cResult[15] === tmp15) {
               let tmp20;
+              let tmp22;
               if (cResult[16] === goBackIsPrimary) {
                 tmp20 = cResult[17];
               }
-              if (cResult[18] === description) {
-                let tmp22;
-                if (cResult[19] === tmp20) {
-                  tmp22 = cResult[20];
-                }
-                return tmp22;
+              const _Symbol3 = Symbol;
+              if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                const obj5 = { impression: obj6 };
+                cResult[18] = obj5;
+                tmp22 = obj5;
+                obj6 = { impressionName: onConfirm(_confirm[10]).ImpressionNames.USER_AGE_GATE_VERIFY };
+              } else {
+                tmp22 = cResult[18];
               }
-              const tmp24 = jsx(onConfirm(_confirm[8]).AlertModal, { title: tmp18, content: description, actions: tmp20 });
-              cResult[18] = description;
-              cResult[19] = tmp20;
-              cResult[20] = tmp24;
-              tmp22 = tmp24;
+              if (cResult[19] === description) {
+                let tmp23;
+                if (cResult[20] === tmp20) {
+                  tmp23 = cResult[21];
+                }
+                return tmp23;
+              }
+              const tmp25 = jsx(onConfirm(_confirm[8]).AlertModal, { title: tmp18, content: description, actions: tmp20, trackingProps: tmp22 });
+              cResult[19] = description;
+              cResult[20] = tmp20;
+              cResult[21] = tmp25;
+              tmp23 = tmp25;
             }
           }
           const items = [, ];
@@ -132,7 +143,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwServer
       tmp9 = tmp11;
     }
   }
-  const fn = function v() {
+  const fn = function f() {
     if (_confirm.joins) {
       onConfirm();
     } else {
@@ -198,17 +209,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwServer
     items1[1] = tmp7Result2;
     tmp10 = items1;
   }
-  return <AlertModal title={intl2.string(onConfirm(_confirm[9]).t.xi46lg)} content={description} actions={tmp10} />;
+  const obj6 = { impression: { impressionName: onConfirm(_confirm[10]).ImpressionNames.USER_AGE_GATE_VERIFY } };
+  ({ impressionName: onConfirm(_confirm[10]).ImpressionNames.USER_AGE_GATE_VERIFY });
+  return <AlertModal title={intl2.string(onConfirm(_confirm[9]).t.xi46lg)} content={description} actions={tmp10} trackingProps={obj6} />;
 });
 let closure_6 = tmp2;
 let result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwServerInviteWarningAlert.tsx");
 
 export default tmp2;
 export const NSFW_SERVER_INVITE_WARNING_ALERT_KEY = "nsfw-server-invite-warning";
-export const showNsfwServerInviteWarningAlert = function showNsfwServerInviteWarningAlert(arg0) {
+export function showNsfwServerInviteWarningAlert(arg0) {
   let onConfirm;
   let onDismiss;
   ({ onConfirm, onDismiss } = arg0);
   const obj = useAlertStore;
   obj.openAlert(c5, <closure_6 onConfirm={onConfirm} />, onDismiss);
-};
+}

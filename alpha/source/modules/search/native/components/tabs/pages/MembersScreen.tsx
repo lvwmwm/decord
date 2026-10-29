@@ -1,32 +1,32 @@
-// Module ID: 18429
-// Function ID: 18430
+// Module ID: 18663
+// Function ID: 18664
 // Name: MembersScreen
-// Dependencies: [19, 17, 7409, 4856, 4916, 4878, 4907, 1389, 13484, 13470, 9748, 9747, 1084, 21, 5004, 587, 558, 576, 573, 7289, 13463, 18369, 4941, 1893, 13477, 8705, 1125, 5013, 18430, 18428, 18361, 11327, 18373, 18431, 7314, 11334, 18433, 12130, 2]
+// Dependencies: [19, 17, 7432, 4857, 4917, 4879, 4908, 1389, 13717, 13703, 9780, 9779, 1084, 21, 5005, 587, 558, 576, 573, 7313, 13696, 18603, 4942, 1894, 13710, 8708, 1125, 5014, 18664, 18662, 18595, 11381, 18607, 18665, 7338, 11388, 18667, 12184, 2]
 
-// Module 18429 (MembersScreen)
+// Module 18663 (MembersScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7409 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import TrackingConstants from "TrackingConstants" /* 9747 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11334 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13477 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7432 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import TrackingConstants from "TrackingConstants" /* 9779 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11388 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13710 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 13484 */;
-import SearchQueryStore from "SearchQueryStore" /* 13470 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 13717 */;
+import SearchQueryStore from "SearchQueryStore" /* 13703 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,9 +141,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   searchContext = searchContext.searchContext;
   const guildId = searchContext.guildId;
   let tmp4 = closure_21();
-  const analyticsLocations = guildId(7289)().analyticsLocations;
+  const analyticsLocations = guildId(7313)().analyticsLocations;
   if (cResult[0] !== searchContext) {
-    const tmpResult = tmp(13463);
+    const tmpResult = tmp(13696);
     const searchContextId = tmpResult.getSearchContextId(searchContext);
     cResult[0] = searchContext;
     cResult[1] = searchContextId;
@@ -226,7 +226,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
       }
     }
   }
-  const tmpResult8 = tmp(18369);
+  const tmpResult8 = tmp(18603);
   const fullscreenPlaceholderCount = tmpResult8.useFullscreenPlaceholderCount(tmp15);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
@@ -447,8 +447,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   let tmp2 = guildId;
   let tmp3 = dependencyMap;
   let tmp = closure_21();
-  const analyticsLocations = guildId(7289)().analyticsLocations;
-  let obj = searchContext(13463);
+  const analyticsLocations = guildId(7313)().analyticsLocations;
+  let obj = searchContext(13696);
   dependencyMap = obj.getSearchContextId(searchContext);
   let obj2 = searchContext(573);
   let items = [SearchMemberTabStore];
@@ -458,7 +458,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   let obj3 = searchContext(573);
   const items1 = [stateFromStores4];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores4.getChannelId());
-  let obj4 = searchContext(18369);
+  let obj4 = searchContext(18603);
   const obj5 = { placeholderHeight, numColumns: 1 };
   const fullscreenPlaceholderCount = obj4.useFullscreenPlaceholderCount(obj5);
   const items2 = [callback];
@@ -619,19 +619,19 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     return items;
   }, items11);
-  const obj10 = searchContext(18430);
+  const obj10 = searchContext(18664);
   const contentContainerStyles = obj10.useContentContainerStyles();
-  const obj11 = searchContext(18428);
+  const obj11 = searchContext(18662);
   const messageTabCountsErrorText = obj11.useMessageTabCountsErrorText({ searchContext });
   if (null != messageTabCountsErrorText) {
-    tmp20 = jsx(tmp2(18361), { text: messageTabCountsErrorText });
+    tmp20 = jsx(tmp2(18595), { text: messageTabCountsErrorText });
   } else {
     if (stateFromStores4) {
       if (null != stateFromStores3) {
-        tmp20 = jsx(tmp2(11327), { onUserPress: callback1, onUserLongPress: callback2, channelId: stateFromStores3, guildId, disableStickySections: true, listStyleOverride: tmp.userList, isNameplatedList: true, canShowDisplayNameStylesFont: true });
+        tmp20 = jsx(tmp2(11381), { onUserPress: callback1, onUserLongPress: callback2, channelId: stateFromStores3, guildId, disableStickySections: true, listStyleOverride: tmp.userList, isNameplatedList: true, canShowDisplayNameStylesFont: true });
       }
     }
-    tmp20 = jsx(tmp2(18373), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
+    tmp20 = jsx(tmp2(18607), { contentContainerStyle: contentContainerStyles.membersContentContainer, data: memo });
   }
   return tmp20;
 });
@@ -715,8 +715,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   if (!stateFromStores) {
     let tmp17;
     if (stateFromStores1) {
-      channelId(18431);
-      tmp17 = <tmp16 channelId={channelId} guildId={guildId} onUserPress={tmp(1893).dismissGlobalKeyboard} disableStickySections />;
+      channelId(18665);
+      tmp17 = <tmp16 channelId={channelId} guildId={guildId} onUserPress={tmp(1894).dismissGlobalKeyboard} disableStickySections />;
     }
     cResult[7] = channelId;
     cResult[8] = guildId;
@@ -755,8 +755,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
       const tmp2 = SearchQueryStore.isInitialSearchQuery(searchContext) && !SearchQueryStore.isTagsEmpty(searchContext);
       return tmp2;
     }, items2)) {
-      channelId(18431);
-      tmp7 = <tmp6 channelId={channelId} guildId={guildId} onUserPress={tmp(1893).dismissGlobalKeyboard} disableStickySections />;
+      channelId(18665);
+      tmp7 = <tmp6 channelId={channelId} guildId={guildId} onUserPress={tmp(1894).dismissGlobalKeyboard} disableStickySections />;
     }
     return tmp7;
   }
@@ -781,8 +781,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(34);
   searchContext = searchContext.searchContext;
   const tmp4 = closure_21();
-  const tmp6 = stateFromStores(7289);
-  const analyticsLocations = tmp6(stateFromStores(7314).SEARCH_MEMBERS).analyticsLocations;
+  const tmp6 = stateFromStores(7313);
+  const analyticsLocations = tmp6(stateFromStores(7338).SEARCH_MEMBERS).analyticsLocations;
   channelId = undefined;
   const tmp5 = stateFromStores;
   const tmp7 = constants4;
@@ -998,7 +998,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return tmp2;
         }
       }
-      tmp24 = jsx(tmp5(18433), { location: "GroupDMDetailsMembers", memberCount: stateFromStores1, recipientLimit: stateFromStores2, wrapperStyle: tmp4.promoBanner });
+      tmp24 = jsx(tmp5(18667), { location: "GroupDMDetailsMembers", memberCount: stateFromStores1, recipientLimit: stateFromStores2, wrapperStyle: tmp4.promoBanner });
     }
     cResult[12] = stateFromStores;
     cResult[13] = stateFromStores1;
@@ -1025,8 +1025,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let stateFromStores;
   let tmp = closure_21();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(7289);
-  const analyticsLocations = tmp4(stateFromStores(7314).SEARCH_MEMBERS).analyticsLocations;
+  const tmp4 = stateFromStores(7313);
+  const analyticsLocations = tmp4(stateFromStores(7338).SEARCH_MEMBERS).analyticsLocations;
   let channelId;
   if (searchContext.type === constants4.CHANNEL) {
     channelId = searchContext.channelId;
@@ -1075,13 +1075,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   [][0] = stateFromStores;
   const type = searchContext.type;
   if (constants4.CHANNEL === type) {
-    const AnalyticsLocationProvider2 = tmp7(7289).AnalyticsLocationProvider;
-    ({ channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: channelId(1893).dismissGlobalKeyboard, listHeaderContent: tmp19Result });
-    tmp2(12130);
+    const AnalyticsLocationProvider2 = tmp7(7313).AnalyticsLocationProvider;
+    ({ channelId: searchContext.channelId, disableStickySections: true, listStyleOverride: tmp.userList, onUserPress: channelId(1894).dismissGlobalKeyboard, listHeaderContent: tmp19Result });
+    tmp2(12184);
     tmp19Result = null;
     if (stateFromStores) {
       const obj7 = { location: "GroupDMDetailsMembers", memberCount: stateFromStores1, recipientLimit: tmp11, wrapperStyle: tmp.promoBanner };
-      tmp19Result = tmp19(tmp2(18433), obj7);
+      tmp19Result = tmp19(tmp2(18667), obj7);
     }
     return <AnalyticsLocationProvider2 value={analyticsLocations}>{null}</AnalyticsLocationProvider2>;
   } else if (constants4.THREAD === type) {
@@ -1098,7 +1098,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         throw error;
       }
     }
-    const AnalyticsLocationProvider = tmp7(7289).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp7(7313).AnalyticsLocationProvider;
     return <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;
   }
 }));

@@ -1,18 +1,18 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 13011
+// Function ID: 13012
 // Name: StepModal
-// Dependencies: [32, 109, 19, 17, 21, 5004, 5304, 558, 576, 1630, 11188, 12791, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5005, 5305, 558, 576, 1631, 11242, 13012, 2]
 
-// Module 12790 (StepModal)
+// Module 13011 (StepModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 5304 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import NavigatorConstants from "NavigatorConstants" /* 5305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let c9;
 let metroImportAll;
 let rect;
 let tmp;
-const Modal2 = tmp(11188);
-const ModalStepIndicator2 = tmp(12791);
+const Modal2 = tmp(11242);
+const ModalStepIndicator2 = tmp(13012);
 let closure_3 = ["steps", "onWillFocus"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

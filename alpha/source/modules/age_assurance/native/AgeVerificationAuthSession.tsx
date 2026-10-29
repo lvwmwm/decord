@@ -1,14 +1,14 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 7975
+// Function ID: 7976
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 570, 5731, 1381, 558, 576, 2]
+// Dependencies: [5, 3, 570, 5733, 1381, 558, 576, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
 
-// Module 7952 (AgeVerificationAuthSession)
+// Module 7975 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_nativeDefault from "react-native" /* 5731 */;
+import react_nativeDefault from "react-native" /* 5733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -60,7 +60,7 @@ let obj = function _openAgeVerificationAuthSession() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -159,10 +159,10 @@ function getIsAgeVerificationAuthSessionOpen() {
 }
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationAuthSession.tsx");
 
-export const openAgeVerificationAuthSession = function openAgeVerificationAuthSession() {
+export function openAgeVerificationAuthSession() {
   return obj(...arguments);
-};
-export const closeAgeVerificationAuthSession = function closeAgeVerificationAuthSession() {
+}
+export function closeAgeVerificationAuthSession() {
   const isOpen = closure_5.getState().isOpen;
   obj = closure_5;
   const obj2 = c7;
@@ -176,7 +176,7 @@ export const closeAgeVerificationAuthSession = function closeAgeVerificationAuth
     const obj3 = react_nativeDefault;
     obj3.closeAuthSession();
   }
-};
+}
 export function getIsAgeVerificationAuthSessionAwaitingResult() {
   return c6;
 }

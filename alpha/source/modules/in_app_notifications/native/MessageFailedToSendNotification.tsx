@@ -1,16 +1,16 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14248
+// Function ID: 14249
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5743, 5237, 11939, 13999, 14010, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5745, 5238, 11993, 14232, 14243, 2]
 
-// Module 14015 (MessageFailedToSendNotification)
+// Module 14248 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import flow_Client from "flow/Client" /* 5237 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
+import flow_Client from "flow/Client" /* 5238 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const RetryIcon = tmp(11939).RetryIcon;
+      const RetryIcon = tmp(11993).RetryIcon;
       const tmp10 = <RetryIcon size="md" color={messageId(587).colors.ICON_SUBTLE} />;
       cResult[4] = tmp10;
       tmp7 = tmp10;
@@ -65,7 +65,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const SystemMessageText = tmp(13999).SystemMessageText;
+      const SystemMessageText = tmp(14232).SystemMessageText;
       const intl2 = tmp(1125).intl;
       const tmp17 = <SystemMessageText text={intl2.string(channelId(1125).t.xxRPOT)} />;
       cResult[7] = tmp17;
@@ -82,7 +82,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return tmp18;
       }
     }
-    const tmp20 = jsx(channelId(14010).NotificationPressable, { icon: tmp11, children: tmp15, header: first, onPress: tmp6, notification });
+    const tmp20 = jsx(channelId(14243).NotificationPressable, { icon: tmp11, children: tmp15, header: first, onPress: tmp6, notification });
     cResult[8] = notification;
     cResult[9] = tmp6;
     cResult[10] = tmp11;
@@ -114,11 +114,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const NotificationPressable = channelId(14010).NotificationPressable;
+  const NotificationPressable = channelId(14243).NotificationPressable;
   ({ size: "md", color: messageId(587).colors.ICON_SUBTLE });
-  const RetryIcon = channelId(11939).RetryIcon;
+  const RetryIcon = channelId(11993).RetryIcon;
   ({ text: intl2.string(channelId(1125).t.xxRPOT) });
-  const SystemMessageText = channelId(13999).SystemMessageText;
+  const SystemMessageText = channelId(14232).SystemMessageText;
   intl2 = channelId(1125).intl;
   return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 }));

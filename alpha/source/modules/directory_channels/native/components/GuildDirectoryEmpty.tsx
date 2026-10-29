@@ -1,18 +1,18 @@
-// Module ID: 13938
-// Function ID: 13939
+// Module ID: 14171
+// Function ID: 14172
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 4934, 1084, 21, 5004, 587, 558, 576, 1630, 504, 13425, 5705, 13939, 1125, 1199, 5270, 8985, 13426, 13940, 9083, 13941, 2]
+// Dependencies: [19, 17, 4935, 1084, 21, 5005, 587, 558, 576, 1631, 504, 13658, 5707, 14172, 1125, 1199, 5271, 8988, 13659, 14173, 9086, 14174, 2]
 
-// Module 13938 (GuildDirectoryEmpty)
+// Module 14171 (GuildDirectoryEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13426 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13659 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -281,18 +281,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   guild = guild.guild;
   const channel = guild.channel;
   const tmp = closure_8();
-  const bottom = channel(1630)().bottom;
+  const bottom = channel(1631)().bottom;
   let obj = guild(504);
   const items = [GuildChannelStore];
   dependencyMap = obj.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj2 = guild(13425);
+  let obj2 = guild(13658);
   const obj3 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.container, ];
   const obj4 = { paddingBottom: bottom + 16 };
   items1[1] = obj4;
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  const obj5 = { source: channel(13939), style: tmp.header };
-  const tmp9 = channel(5705);
+  const obj5 = { source: channel(14172), style: tmp.header };
+  const tmp9 = channel(5707);
   items2 = [closure_6(tmp9, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1125).t.vyvrpC, obj7) };
   const LegacyText = guild(1199).LegacyText;
@@ -300,7 +300,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   obj7 = { guildName: guild.name };
   items2[1] = closure_6(LegacyText, obj6);
   const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(guild(1125).t.WypE0i) };
-  const Text = guild(5270).Text;
+  const Text = guild(5271).Text;
   intl2 = guild(1125).intl;
   items2[2] = closure_6(Text, obj8);
   let tmp8Result = null;
@@ -314,10 +314,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
           const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj2);
         },
-      iconSource: channel(13940),
+      iconSource: channel(14173),
       title: intl3.string(guild(1125).t.hyK15i)
     };
-    const FormCTA = tmp4(8985).FormCTA;
+    const FormCTA = tmp4(8988).FormCTA;
     intl3 = tmp4(1125).intl;
     tmp8Result = tmp8(FormCTA, obj9);
   }
@@ -328,10 +328,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       const obj = instant_invite_InstantInviteUtils;
       return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, hasOwnProperty.HUB_EMPTY_STATE);
     },
-    iconSource: channel(13941),
+    iconSource: channel(14174),
     title: intl4.string(guild(1125).t.L4bwJ9)
   };
-  const FormCTA2 = tmp4(8985).FormCTA;
+  const FormCTA2 = tmp4(8988).FormCTA;
   intl4 = tmp4(1125).intl;
   items2[4] = closure_6(FormCTA2, obj10);
   return tmp6(tmp7, obj3);

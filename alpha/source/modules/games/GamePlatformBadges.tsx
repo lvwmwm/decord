@@ -1,20 +1,20 @@
-// Module ID: 13520
-// Function ID: 13521
+// Module ID: 13753
+// Function ID: 13754
 // Name: GamePlatformBadges
-// Dependencies: [13519, 1125, 2, 13521]
+// Dependencies: [13752, 1125, 2, 13754]
 // Exports: getGamePlatformAvailabilityLabel
 
-// Module 13520 (GamePlatformBadges)
+// Module 13753 (GamePlatformBadges)
 import intl5 from "intl" /* 1125 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 13519 */;
-import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 13521 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13752 */;
+import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 13754 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/GamePlatformBadges.tsx");
 
 export const GAME_PLATFORM_AVAILABILITY_ORDER = GamePlatformAvailabilityUtils.GAME_PLATFORM_AVAILABILITY_ORDER;
 export const sortGamePlatformAvailability = GamePlatformAvailabilityUtils.getOrderedGamePlatforms;
-export const getGamePlatformAvailabilityLabel = function getGamePlatformAvailabilityLabel(item) {
+export function getGamePlatformAvailabilityLabel(item) {
   if (GamePlatformAvailability.GamePlatformAvailability.DESKTOP === item) {
     const intl4 = tmp(1125).intl;
     return intl4.string(intl5.t.KT6uCJ);
@@ -28,4 +28,4 @@ export const getGamePlatformAvailabilityLabel = function getGamePlatformAvailabi
     const intl = tmp(1125).intl;
     return intl.string(intl5.t.MPURhG);
   }
-};
+}

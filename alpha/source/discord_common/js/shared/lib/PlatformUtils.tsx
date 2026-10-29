@@ -1,9 +1,9 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5940
+// Function ID: 5941
 // Name: shared/PlatformUtils
 // Dependencies: [1364, 2]
 
-// Module 5938 (shared/PlatformUtils)
+// Module 5940 (shared/PlatformUtils)
 import module_1364_mod from "module_1364" /* 1364 */;
 import size from "module_2" /* 2 */;
 

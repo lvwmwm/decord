@@ -1,16 +1,16 @@
-// Module ID: 12228
-// Function ID: 12229
+// Module ID: 12282
+// Function ID: 12283
 // Name: conjureSettingsRequired
 // Dependencies: [2]
 // Exports: conjureMissingRequiredSettings, isConjureSettingRequired
 
-// Module 12228 (conjureSettingsRequired)
+// Module 12282 (conjureSettingsRequired)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["select", "checkbox", "channel", "role", "user"]);
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingsRequired.tsx");
 
-export const isConjureSettingRequired = function isConjureSettingRequired(required) {
+export function isConjureSettingRequired(required) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -24,8 +24,8 @@ export const isConjureSettingRequired = function isConjureSettingRequired(requir
     tmp2 = "secret" !== required.type || !flag;
   }
   return tmp2;
-};
-export const conjureMissingRequiredSettings = function conjureMissingRequiredSettings(arr) {
+}
+export function conjureMissingRequiredSettings(arr) {
   const found = arr.filter((item) => {
     let def;
     let secretStored;
@@ -64,4 +64,4 @@ export const conjureMissingRequiredSettings = function conjureMissingRequiredSet
     return tmp2;
   });
   return found.map((def) => def.def.key);
-};
+}

@@ -1,8 +1,8 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14962
+// Function ID: 14963
 // Dependencies: [2]
 
-// Module 14727
+// Module 14962
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscountsMegaphoneSpotIllustration-3x.png.js");

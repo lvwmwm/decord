@@ -1,19 +1,19 @@
-// Module ID: 19422
-// Function ID: 19423
+// Module ID: 19655
+// Function ID: 19656
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 4916, 1389, 19413, 1084, 558, 576, 504, 5058, 7262, 6865, 1264, 6863, 1385, 2]
+// Dependencies: [19, 4917, 1389, 19646, 1084, 558, 576, 504, 5059, 7286, 6888, 1264, 6886, 1385, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName
 
-// Module 19422 (GuildSettingsRolesUtils)
+// Module 19655 (GuildSettingsRolesUtils)
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6863 */;
-import GuildUtilsDefault from "GuildUtils" /* 6865 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7262 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19413 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6886 */;
+import GuildUtilsDefault from "GuildUtils" /* 6888 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7286 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19646 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -342,7 +342,7 @@ export const MAX_PREFETCH_MEMBER_COUNT = 1000;
 export const useGuildMembers = tmp2;
 export const useGuildRoleMembers = tmp3;
 export const useQueryGuildMembers = tmp4;
-export const filterFullMembersByQuery = function filterFullMembersByQuery(str, id) {
+export function filterFullMembersByQuery(str, id) {
   str = str.trim();
   const formatted = str.toLowerCase();
   let tmp8Result = id.id === formatted;
@@ -357,8 +357,8 @@ export const filterFullMembersByQuery = function filterFullMembersByQuery(str, i
     tmp8Result = tmp8(formatted, str3.toLowerCase());
   }
   return tmp8Result;
-};
-export const getSectionAnalyticsName = function getSectionAnalyticsName(DISPLAY) {
+}
+export function getSectionAnalyticsName(DISPLAY) {
   if (constants.MEMBERS === DISPLAY) {
     return "Members";
   } else if (constants.PERMISSIONS === DISPLAY) {
@@ -371,8 +371,8 @@ export const getSectionAnalyticsName = function getSectionAnalyticsName(DISPLAY)
     const obj = GlobalUtils;
     obj.assertNever(DISPLAY);
   }
-};
-export const filterRole = function filterRole(name, str) {
+}
+export function filterRole(name, str) {
   let hasItem = "" === str;
   if (!hasItem) {
     str = name.name;
@@ -380,4 +380,4 @@ export const filterRole = function filterRole(name, str) {
     hasItem = formatted.includes(str.toLowerCase());
   }
   return hasItem;
-};
+}

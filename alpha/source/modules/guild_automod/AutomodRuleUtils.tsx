@@ -1,19 +1,19 @@
-// Module ID: 19315
-// Function ID: 19316
+// Module ID: 19548
+// Function ID: 19549
 // Name: AutomodRuleUtils
-// Dependencies: [502, 19312, 12870, 1385, 19316, 19319, 1125, 8300, 7665, 2]
+// Dependencies: [502, 19545, 13091, 1385, 19549, 19552, 1125, 8322, 7688, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, isValidMentionSpamLimit, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 19315 (AutomodRuleUtils)
+// Module 19548 (AutomodRuleUtils)
 import intl8 from "intl" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8300 */;
-import AutomodStore from "AutomodStore" /* 19312 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19316 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 19319 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8322 */;
+import AutomodStore from "AutomodStore" /* 19545 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19549 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 19552 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 12870 */;
+import Constants from "Constants" /* 13091 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -27,14 +27,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f139955 = (keyword) => {
+const f141525 = (keyword) => {
   const InvalidKeywordError = AutomodErrorUtils.InvalidKeywordError;
   const intl = intl8.intl;
   const range = { keyword, max, min };
   const invalidKeywordError = new InvalidKeywordError(intl.formatToPlainString(intl8.t.rbRvGe, range));
   throw invalidKeywordError;
 };
-const f139956 = (regex) => {
+const f141526 = (regex) => {
   const InvalidRegexPatternError = AutomodErrorUtils.InvalidRegexPatternError;
   const intl = intl8.intl;
   const range = { regex, max: max2, min: min2 };
@@ -45,7 +45,7 @@ const getRuleCountByTriggerType = AutomodStore.getRuleCountByTriggerType;
 ({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: hasOwnProperty, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: metroRequire, MAX_CHARACTERS_PER_KEYWORD: metroImportDefault, MIN_CHARACTERS_PER_KEYWORD: metroImportAll, MIN_REGEX_PATTERN_LENGTH: c9, MAX_REGEX_PATTERN_LENGTH: c10, AutomodActionType: unpackModuleId, AutomodEventType: closure_12, MAX_MENTION_SPAM_LIMIT: map1, MIN_MENTION_SPAM_LIMIT: closure_14 } = Constants);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");
 
-export const getRulesFromTriggerTypeMap = function getRulesFromTriggerTypeMap(rulesByTriggerType) {
+export function getRulesFromTriggerTypeMap(rulesByTriggerType) {
   let obj = rulesByTriggerType;
   const _Object = Object;
   if (rulesByTriggerType == null) {
@@ -54,68 +54,68 @@ export const getRulesFromTriggerTypeMap = function getRulesFromTriggerTypeMap(ru
   const values2 = values(obj);
   const flatResult = values2.flat();
   return flatResult.filter(GlobalUtils.isNotNullish);
-};
-export const isRegexSupported = function isRegexSupported(arg0) {
+}
+export function isRegexSupported(arg0) {
   if (constants.KEYWORD !== arg0) {
     if (constants.USER_PROFILE !== arg0) {
       return false;
     }
   }
   return true;
-};
-export const getNewAutomodRuleMockId = function getNewAutomodRuleMockId(arg0, arg1) {
+}
+export function getNewAutomodRuleMockId(arg0, arg1) {
   return "" + arg0 + "-" + arg1 + "-new-rule";
-};
-export const isRuleKeywordFilter = function isRuleKeywordFilter(rule) {
+}
+export function isRuleKeywordFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.KEYWORD;
-};
-export const isRuleMLSpamFilter = function isRuleMLSpamFilter(rule) {
+}
+export function isRuleMLSpamFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.ML_SPAM;
-};
-export const isRuleDefaultKeywordListFilter = function isRuleDefaultKeywordListFilter(rule) {
+}
+export function isRuleDefaultKeywordListFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.DEFAULT_KEYWORD_LIST;
-};
-export const isRuleMentionSpamFilter = function isRuleMentionSpamFilter(rule) {
+}
+export function isRuleMentionSpamFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.MENTION_SPAM;
-};
-export const isRuleServerPolicyFilter = function isRuleServerPolicyFilter(triggerType) {
+}
+export function isRuleServerPolicyFilter(triggerType) {
   triggerType = undefined;
   if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.SERVER_POLICY;
-};
-export const isRuleUserProfileFilter = function isRuleUserProfileFilter(rule) {
+}
+export function isRuleUserProfileFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.USER_PROFILE;
-};
-export const isRuleApplicationFilter = function isRuleApplicationFilter(rule) {
+}
+export function isRuleApplicationFilter(rule) {
   let triggerType;
   if (rule != null) {
     triggerType = rule.triggerType;
   }
   return triggerType === constants.APPLICATION;
-};
-export const createDefaultRule = function createDefaultRule(guildId, triggerType) {
+}
+export function createDefaultRule(guildId, triggerType) {
   let defaultTriggerMetadataForTriggerType;
   let obj4;
   const obj = AutomodTriggerConfigs.triggerConfigs[triggerType];
@@ -146,8 +146,8 @@ export const createDefaultRule = function createDefaultRule(guildId, triggerType
     }
     return obj3;
   }
-};
-export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, maxWordCount) {
+}
+export function validateKeywordsOrThrow(arr, maxWordCount) {
   if (arr.length > maxWordCount) {
     const _Error = Error;
     const intl = intl8.intl;
@@ -157,10 +157,10 @@ export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr, max
     const error = new Error(intl.formatToPlainString(intl8.t.mee4qd, obj));
     throw error;
   } else {
-    const item = arr.forEach(f139955);
+    const item = arr.forEach(f141525);
   }
-};
-export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThrow(arr) {
+}
+export function validateRegexPatternsOrThrow(arr) {
   if (arr.length > metroRequire) {
     const _Error = Error;
     const intl = intl8.intl;
@@ -170,14 +170,14 @@ export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThro
     const error = new Error(intl.formatToPlainString(intl8.t.tDjhF1, obj));
     throw error;
   } else {
-    const item = arr.forEach(f139956);
+    const item = arr.forEach(f141526);
   }
-};
-export const isValidMentionSpamLimit = function isValidMentionSpamLimit(NumberResult) {
+}
+export function isValidMentionSpamLimit(NumberResult) {
   const isIntegerResult = Number.isInteger(NumberResult) && NumberResult >= closure_14 && NumberResult <= map1;
   return isIntegerResult;
-};
-export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrThrow(triggerType) {
+}
+export function validateRuleBeforeSaveOrThrow(triggerType) {
   let max;
   let max2;
   let min;
@@ -232,7 +232,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
       const error2 = new Error(intl5.formatToPlainString(intl8.t.mee4qd, obj2));
       throw error2;
     } else {
-      const item = keywordFilter.forEach(f139955);
+      const item = keywordFilter.forEach(f141525);
       if (regexPatterns.length > metroRequire) {
         const _Error4 = Error;
         const intl4 = intl8.intl;
@@ -242,7 +242,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
         const error3 = new Error(intl4.formatToPlainString(intl8.t.tDjhF1, obj3));
         throw error3;
       } else {
-        const item1 = regexPatterns.forEach(f139956);
+        const item1 = regexPatterns.forEach(f141526);
       }
     }
   }
@@ -267,8 +267,8 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
     const error5 = new Error(intl2.string(intl8.t["t+gj5V"]));
     throw error5;
   }
-};
-export const isBackendPersistedRule = function isBackendPersistedRule(editingRule) {
+}
+export function isBackendPersistedRule(editingRule) {
   let str;
   const isSnowflake = ApplicationCommandUtils.isSnowflake;
   ApplicationCommandUtils;
@@ -279,8 +279,8 @@ export const isBackendPersistedRule = function isBackendPersistedRule(editingRul
     str = "INVALID_SNOWFLAKE";
   }
   return isSnowflake(str);
-};
-export const eventTypeToName = function eventTypeToName(newValue) {
+}
+export function eventTypeToName(newValue) {
   if (constants3.MESSAGE_SEND === newValue) {
     const intl3 = intl8.intl;
     return intl3.string(intl8.t.NlQW4P);
@@ -291,8 +291,8 @@ export const eventTypeToName = function eventTypeToName(newValue) {
     const intl = intl8.intl;
     return intl.string(intl8.t.SP9BBx);
   }
-};
-export const actionTypeToName = function actionTypeToName(arg0) {
+}
+export function actionTypeToName(arg0) {
   if (unpackModuleId.BLOCK_MESSAGE === arg0) {
     const intl5 = intl8.intl;
     return intl5.string(intl8.t.d1ab8n);
@@ -309,8 +309,8 @@ export const actionTypeToName = function actionTypeToName(arg0) {
     const intl = intl8.intl;
     return intl.string(intl8.t.SP9BBx);
   }
-};
-export const triggerTypeToName = function triggerTypeToName(newValue) {
+}
+export function triggerTypeToName(newValue) {
   if (constants.KEYWORD === newValue) {
     const intl7 = intl8.intl;
     return intl7.string(intl8.t.ffR2cM);
@@ -333,4 +333,4 @@ export const triggerTypeToName = function triggerTypeToName(newValue) {
     const intl = intl8.intl;
     return intl.string(intl8.t.SP9BBx);
   }
-};
+}

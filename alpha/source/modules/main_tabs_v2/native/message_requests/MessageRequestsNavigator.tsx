@@ -1,19 +1,19 @@
-// Module ID: 18612
-// Function ID: 18613
+// Module ID: 18846
+// Function ID: 18847
 // Name: MessageRequestsNavigator
-// Dependencies: [109, 19, 17, 21, 9777, 5004, 587, 558, 576, 7131, 7619, 1630, 9733, 1125, 10065, 18613, 18632, 18633, 2]
+// Dependencies: [109, 19, 17, 21, 9809, 5005, 587, 558, 576, 7155, 7642, 1631, 9765, 1125, 10097, 18847, 18866, 18867, 2]
 
-// Module 18612 (MessageRequestsNavigator)
+// Module 18846 (MessageRequestsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HeaderShared from "HeaderShared" /* 9733 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10065 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import HeaderShared from "HeaderShared" /* 9765 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10097 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,8 +64,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
     [tmp6, tmp7] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
-  ({ left, right } = accessibilityNativeStackOptions(1630)());
-  accessibilityNativeStackOptions(1630)();
+  ({ left, right } = accessibilityNativeStackOptions(1631)());
+  accessibilityNativeStackOptions(1631)();
   if (cResult[2] === left) {
     let tmp11;
     if (cResult[3] === right) {
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen = closure_9.Screen;
           const obj3 = { title: intl.string(tmp(1125).t.e7GWjQ) };
           intl = tmp(1125).intl;
-          let merged = Object.assign(tmp9(10065)());
+          let merged = Object.assign(tmp9(10097)());
           tmp19[1] = obj3;
           tmp19[2] = function getComponent() {
             return closure_0(dependencyMap[15]).default;
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen2 = closure_9.Screen;
           const obj4 = { title: intl2.string(tmp(1125).t.ulKXHp) };
           intl2 = tmp(1125).intl;
-          const merged1 = Object.assign(tmp9(10065)());
+          const merged1 = Object.assign(tmp9(10097)());
           tmp26[1] = obj4;
           tmp26[2] = function getComponent() {
             return closure_0(dependencyMap[16]).default;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           const Screen3 = closure_9.Screen;
           const obj5 = { title: intl3.string(tmp(1125).t.iilwGH) };
           intl3 = tmp(1125).intl;
-          const merged2 = Object.assign(tmp9(10065)());
+          const merged2 = Object.assign(tmp9(10097)());
           tmp33[1] = obj5;
           tmp33[2] = function getComponent() {
             return closure_0(dependencyMap[17]).default;

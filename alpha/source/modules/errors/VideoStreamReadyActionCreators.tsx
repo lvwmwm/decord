@@ -1,22 +1,22 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11532
+// Function ID: 11533
 // Name: VideoStreamReadyActionCreators
 // Dependencies: [584, 2]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
-// Module 11478 (VideoStreamReadyActionCreators)
+// Module 11532 (VideoStreamReadyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/VideoStreamReadyActionCreators.tsx");
 
-export const videoStreamTimedOut = function videoStreamTimedOut(current, userId, mediaContext, streamKey) {
+export function videoStreamTimedOut(current, userId, mediaContext, streamKey) {
   const obj = DispatcherDefault;
   const obj2 = { type: "VIDEO_STREAM_READY_TIMEOUT", videoStreamId: current, mediaContext, userId, streamKey };
   obj.dispatch(obj2);
-};
-export const clearVideoStreamTimeout = function clearVideoStreamTimeout(DEFAULT, userId) {
+}
+export function clearVideoStreamTimeout(DEFAULT, userId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CLEAR_VIDEO_STREAM_READY_TIMEOUT", mediaContext: DEFAULT, userId };
   obj.dispatch(obj2);
-};
+}

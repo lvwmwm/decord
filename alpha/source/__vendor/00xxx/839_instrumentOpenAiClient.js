@@ -106,7 +106,7 @@ function addRequestAttributes(setAttribute, input, arg2) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1) {
+export function instrumentOpenAiClient(arg0, arg1) {
   let c0;
   let obj2;
   function get(self, arg1) {
@@ -138,7 +138,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                 obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -161,7 +161,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                     stream = undefined;
                     c3 = 1;
                     c4 = 1;
-                    return { value: "Reflect", done: true };
+                    return { value: "Reflect", done: null };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;
@@ -210,7 +210,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                                 obj2 = { value, done: true };
                                 return obj2;
                               } else {
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "IconComponent" };
                               }
                             } else {
                               let c5;
@@ -387,7 +387,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                           obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } else {
                         let c4;
@@ -511,4 +511,4 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
   let obj3 = { get };
   const proxy = new Proxy(arg0, obj3);
   return proxy;
-};
+}

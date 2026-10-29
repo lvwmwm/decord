@@ -1,10 +1,10 @@
-// Module ID: 5177
-// Function ID: 5178
+// Module ID: 5178
+// Function ID: 5179
 // Name: mergeProps
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 5177 (mergeProps)
+// Module 5178 (mergeProps)
 import size from "module_2" /* 2 */;
 
 function chainCallbacks() {
@@ -24,7 +24,7 @@ function chainCallbacks() {
 const result = size.fileFinishedImporting("design/utils/native/mergeProps.native.tsx");
 
 export { chainCallbacks };
-export const mergeRefs = function mergeRefs() {
+export function mergeRefs() {
   const items = [...arguments];
   return 1 === items.length ? items[0] : ((current) => {
     const iter = items[Symbol.iterator]();
@@ -39,8 +39,8 @@ export const mergeRefs = function mergeRefs() {
       continue;
     }
   });
-};
-export const mergeProps = function mergeProps() {
+}
+export function mergeProps() {
   let num;
   const items = [...arguments];
   const obj = {};
@@ -78,4 +78,4 @@ export const mergeProps = function mergeProps() {
     }
   }
   return obj;
-};
+}

@@ -1,21 +1,21 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7276
+// Function ID: 7277
 // Name: GuildMemberActionCreators
-// Dependencies: [4909, 1084, 6890, 584, 1294, 2]
+// Dependencies: [4910, 1084, 6914, 584, 1294, 2]
 // Exports: updateGuildSelfMember
 
-// Module 7252 (GuildMemberActionCreators)
+// Module 7276 (GuildMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6890 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 6914 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");
 
-export const updateGuildSelfMember = function updateGuildSelfMember(guildId, memberOptions) {
+export function updateGuildSelfMember(guildId, memberOptions) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -34,4 +34,4 @@ export const updateGuildSelfMember = function updateGuildSelfMember(guildId, mem
     const patch = HTTP.patch;
     return patch(request);
   }
-};
+}

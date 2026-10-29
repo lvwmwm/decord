@@ -1,19 +1,19 @@
-// Module ID: 14637
-// Function ID: 14638
+// Module ID: 14871
+// Function ID: 14872
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10733, 21, 5004, 587, 7382, 1125, 3863, 10757, 14636, 10856, 10761, 7334, 7284, 7216, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 10807, 21, 5005, 587, 7405, 1125, 3864, 10832, 14870, 10932, 10836, 7358, 7308, 7240, 5281, 2]
 // Exports: default
 
-// Module 14637 (ConjureCustomWidgetSheet)
+// Module 14871 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3863 from "module_3863" /* 3863 */;
+import _modDef3864 from "module_3864" /* 3864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10733 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10807 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap;
@@ -80,7 +80,7 @@ export default function ConjureCustomWidgetSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -164,13 +164,13 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
-      } catch (tmp70) {
-        dependencyMap = tmp70;
+        return { value: "IconComponent", done: "IconComponent" };
+      } catch (tmp69) {
+        dependencyMap = tmp69;
         if (0 === c3) {
           c5 = 3;
-          throw tmp70;
-        } else if (1 === tmp72) {
+          throw tmp69;
+        } else if (1 === tmp71) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -179,21 +179,21 @@ export default function ConjureCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_9(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(7334).ActionSheet;
-  obj2 = { title: intl.string(_modDef3863.yI85oV) };
-  BottomSheetTitleHeader = value(7284).BottomSheetTitleHeader;
+  const ActionSheet = value(7358).ActionSheet;
+  obj2 = { title: intl.string(_modDef3864.yI85oV) };
+  BottomSheetTitleHeader = value(7308).BottomSheetTitleHeader;
   intl = value(1125).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3863["09BSx3"]), placeholder: intl3.string(_modDef3863.K7zdCZ), description: intl4.string(_modDef3863.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14636).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(7216).TextArea;
+  let obj4 = { label: intl2.string(_modDef3864["09BSx3"]), placeholder: intl3.string(_modDef3864.K7zdCZ), description: intl4.string(_modDef3864.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14870).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(7240).TextArea;
   intl2 = value(1125).intl;
   intl3 = value(1125).intl;
   intl4 = value(1125).intl;
   tmp15 = closure_10;
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
-  let obj5 = { variant: "primary", text: intl5.string(_modDef3863.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5280).Button;
+  let obj5 = { variant: "primary", text: intl5.string(_modDef3864.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
+  const Button = tmp12(5281).Button;
   intl5 = tmp12(1125).intl;
   items1[1] = closure_9(Button, obj5);
   return closure_9(ActionSheet, obj);

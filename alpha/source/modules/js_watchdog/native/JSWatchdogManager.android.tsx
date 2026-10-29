@@ -1,16 +1,16 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19392
+// Function ID: 19393
 // Name: JSWatchdogManager
-// Dependencies: [5, 1084, 3, 1101, 7250, 19158, 1254, 1264, 7619, 7616, 7606, 2]
+// Dependencies: [5, 1084, 3, 1101, 7274, 19393, 1254, 1264, 7642, 7639, 7629, 2]
 
-// Module 19157 (JSWatchdogManager)
+// Module 19392 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7619 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7642 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, closure_2;
@@ -72,7 +72,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             c3 = 0;
             closure_129_1._pingCompleted = true;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp80) {
           closure_2 = tmp80;
@@ -217,7 +217,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -315,7 +315,7 @@ class JSWatchdogManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {

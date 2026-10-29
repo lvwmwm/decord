@@ -1,8 +1,8 @@
-// Module ID: 6381
-// Function ID: 6382
+// Module ID: 6405
+// Function ID: 6406
 // Dependencies: [2]
 
-// Module 6381
+// Module 6405
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/bubbles.png.js");

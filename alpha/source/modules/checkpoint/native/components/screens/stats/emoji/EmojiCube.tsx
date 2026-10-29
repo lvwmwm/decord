@@ -1,19 +1,19 @@
-// Module ID: 13231
-// Function ID: 13232
+// Module ID: 13465
+// Function ID: 13466
 // Name: EmojiCube
-// Dependencies: [17, 5005, 6050, 21, 13232, 5004, 1382, 587, 558, 576, 504, 1414, 1496, 7263, 2]
+// Dependencies: [17, 5006, 6054, 21, 13466, 5005, 1382, 587, 558, 576, 504, 1415, 1497, 7287, 2]
 
-// Module 13231 (EmojiCube)
+// Module 13465 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
-import EmojiDefault from "Emoji" /* 7263 */;
-import glMatrix from "glMatrix" /* 13232 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
+import EmojiDefault from "Emoji" /* 7287 */;
+import glMatrix from "glMatrix" /* 13466 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -262,8 +262,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   if (null != emoji.id) {
     const obj2 = { id: emoji.id, animated: tmp6, size: 48 };
     tmp6 = !stateFromStores;
-    const getEmojiURL = emojiURL(1414).getEmojiURL;
-    emojiURL(1414);
+    const getEmojiURL = emojiURL(1415).getEmojiURL;
+    emojiURL(1415);
     if (!stateFromStores) {
       tmp6 = true === emoji.animated;
     }
@@ -273,12 +273,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   dependencyMap = tmp7;
   const items1 = [tmp7.container, , ];
   const obj4 = { transform: items2 };
-  items2 = [{ scale: emojiURL(1496)().width / 392 }];
+  items2 = [{ scale: emojiURL(1497)().width / 392 }];
   items1[1] = obj4;
   items1[2] = style;
   const items3 = [, , ];
   ({ topFace: arr4[0], leftFace: arr4[1], rightFace: arr4[2] } = tmp7);
-  ({ scale: emojiURL(1496)().width / 392 });
+  ({ scale: emojiURL(1497)().width / 392 });
   return <View style={items1}>{items3.map((item, index) => {
     let items;
     let str;

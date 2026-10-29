@@ -9,7 +9,7 @@ import UNKNOWN_FUNCTION2 from "UNKNOWN_FUNCTION" /* 709 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const filenameIsInApp = function filenameIsInApp(str) {
+export function filenameIsInApp(str) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -20,7 +20,7 @@ export const filenameIsInApp = function filenameIsInApp(str) {
   }
   const tmp2 = !flag && undefined !== str && !str.includes("node_modules/");
   return tmp2;
-};
+}
 export function node(arg0) {
   let closure_0 = arg0;
   const re1 = /^\s*[-]{4,}$/;

@@ -1,10 +1,10 @@
-// Module ID: 1988
-// Function ID: 1989
+// Module ID: 1989
+// Function ID: 1990
 // Name: PremiumTypeUtils
 // Dependencies: [1391, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1988 (PremiumTypeUtils)
+// Module 1989 (PremiumTypeUtils)
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ const result = size.fileFinishedImporting("utils/PremiumTypeUtils.tsx");
 
 export default { isPremiumAtLeast, isPremium, isPremiumExactly };
 export { isPremiumAtLeast };
-export const isPremiumAtMost = function isPremiumAtMost(premiumType, TIER_1) {
+export function isPremiumAtMost(premiumType, TIER_1) {
   return null == premiumType || PremiumTypeOrder[premiumType] <= PremiumTypeOrder[TIER_1];
-};
+}
 export { isPremium };
 export { isPremiumExactly };

@@ -1,10 +1,10 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 9044
+// Function ID: 9045
 // Name: GlobalDiscoveryServersConstants
 // Dependencies: [1101, 1125, 2]
 // Exports: getLanguageOptions
 
-// Module 9041 (GlobalDiscoveryServersConstants)
+// Module 9044 (GlobalDiscoveryServersConstants)
 import DurationsDefault from "Durations" /* 1101 */;
 import intl2 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ export const FEATURED_GUILDS_CACHE_DURATION = result;
 export const FEATURED_GUILDS_SEARCH_OPTIONS = { categoryId: -1 };
 export const CategoryId = obj2;
 export const DISCOVERY_SIDEBAR_CATEGORIES = items1;
-export const getLanguageOptions = function getLanguageOptions() {
+export function getLanguageOptions() {
   let obj = intl2;
   const languages = obj.getLanguages();
   const found = languages.filter((code) => !closure_1_2.includes(code.code));
@@ -51,4 +51,4 @@ export const getLanguageOptions = function getLanguageOptions() {
     }
     return tmp;
   });
-};
+}

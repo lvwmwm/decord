@@ -402,7 +402,7 @@ export const EMPTY_FLAG = tmp6Result;
 export const filter = tmp8;
 export const invert = tmp9;
 export const equals = tmp10;
-export const combine = function combine() {
+export function combine() {
   let length;
   const items = [...arguments];
   let first = items[0];
@@ -417,33 +417,33 @@ export const combine = function combine() {
     } while (num < length);
   }
   return tmp2;
-};
-export const has = function has(arg0, arg1) {
+}
+export function has(arg0, arg1) {
   return closure_9(closure_6(arg0, arg1), arg1);
-};
-export const hasAny = function hasAny(arg0, arg1) {
+}
+export function hasAny(arg0, arg1) {
   return !closure_9(closure_6(arg0, arg1), closure_5);
-};
-export const add = function add(arg0, arg1) {
+}
+export function add(arg0, arg1) {
   let tmp = arg0;
   if (arg1 !== closure_5) {
     tmp = closure_7(arg0, arg1);
   }
   return tmp;
-};
-export const remove = function remove(arg0, arg1) {
+}
+export function remove(arg0, arg1) {
   let tmp = arg0;
   if (arg1 !== closure_5) {
     tmp = closure_8(arg0, closure_6(arg0, arg1));
   }
   return tmp;
-};
+}
 export const getFlag = tmp11;
 export const asUintN = tmp12;
-export const getBrandedFlag = function getBrandedFlag(arg0) {
+export function getBrandedFlag(arg0) {
   return closure_10(arg0);
-};
-export const flagNameOf = function flagNameOf(arg0, arg1) {
+}
+export function flagNameOf(arg0, arg1) {
   const entries = Object.entries(arg1);
   const obj = entries[Symbol.iterator]();
   while (obj !== undefined) {
@@ -454,4 +454,4 @@ export const flagNameOf = function flagNameOf(arg0, arg1) {
       return first;
     }
   }
-};
+}

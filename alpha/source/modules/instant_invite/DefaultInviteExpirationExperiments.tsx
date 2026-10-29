@@ -1,14 +1,14 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9090
+// Function ID: 9091
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [4878, 1084, 9085, 5224, 558, 576, 573, 2]
+// Dependencies: [4879, 1084, 9088, 5225, 558, 576, 573, 2]
 
-// Module 9087 (DefaultInviteExpirationExperiments)
+// Module 9090 (DefaultInviteExpirationExperiments)
 import react from "react" /* 576 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9085 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9088 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
-import createExperiment_mod from "module_5224" /* 5224 */;
+import createExperiment_mod from "module_5225" /* 5225 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

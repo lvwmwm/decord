@@ -1,13 +1,13 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11683
+// Function ID: 11684
 // Name: useHasVideoPermission
-// Dependencies: [4878, 4936, 558, 576, 6687, 504, 2]
+// Dependencies: [4879, 4937, 558, 576, 6711, 504, 2]
 // Exports: getVideoPermission
 
-// Module 11629 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6687 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+// Module 11683 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6711 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,11 +78,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasVide
 const result = size.fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
 
 export default tmp2;
-export const getVideoPermission = function getVideoPermission(channel) {
+export function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {
     const obj = StreamPermissionUtils;
     isPrivateResult = obj.canStreamInChannel(channel, GuildStore, PermissionStore, false);
   }
   return isPrivateResult;
-};
+}

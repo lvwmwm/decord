@@ -1,13 +1,13 @@
-// Module ID: 9343
-// Function ID: 9344
+// Module ID: 9347
+// Function ID: 9348
 // Name: GameProfileMediaSources
-// Dependencies: [1449, 6418, 2034, 2]
+// Dependencies: [1450, 6442, 2035, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 9343 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2034 */;
-import StoreUtils from "StoreUtils" /* 6418 */;
+// Module 9347 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2035 */;
+import StoreUtils from "StoreUtils" /* 6442 */;
 import size_mod from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ export const MEDIA_ITEM_MAX_WIDTH = 366;
 export const MEDIA_ITEM_MAX_HEIGHT = 200;
 export const MEDIA_ITEM_ASPECT_RATIO = 1.83;
 export const MEDIA_VIEWER_ITEM_SIZE = size;
-export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize() {
+export function getCarouselPreviewPixelSize() {
   let devicePixelRatio = arg0;
   if (arg0 === undefined) {
     const obj = ImageLoaderUtils;
@@ -31,8 +31,8 @@ export const getCarouselPreviewPixelSize = function getCarouselPreviewPixelSize(
   const bestMediaProxySize = obj2.getBestMediaProxySize(c2 * devicePixelRatio);
   size = { width: bestMediaProxySize, height: Math.round(bestMediaProxySize / 1.83) };
   return size;
-};
-export const buildMediaEntries = function buildMediaEntries(game) {
+}
+export function buildMediaEntries(game) {
   let items;
   let styles;
   if (null == game) {
@@ -63,8 +63,8 @@ export const buildMediaEntries = function buildMediaEntries(game) {
     }), arraySpreadResult);
   }
   return items;
-};
-export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult, dimensions) {
+}
+export function buildMediaViewerSources(arr2, cResult, dimensions) {
   map = dimensions;
   if (dimensions === undefined) {
     const _Map = Map;
@@ -99,4 +99,4 @@ export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cR
     const merged = Object.assign(value);
     return obj;
   });
-};
+}

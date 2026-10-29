@@ -1,19 +1,19 @@
-// Module ID: 8363
-// Function ID: 8364
+// Module ID: 8385
+// Function ID: 8386
 // Name: DoubleTapErrorToast
-// Dependencies: [1392, 1125, 5699, 2]
+// Dependencies: [1392, 1125, 5701, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 8363 (DoubleTapErrorToast)
+// Module 8385 (DoubleTapErrorToast)
 import intl4 from "intl" /* 1125 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
 import size from "module_2" /* 2 */;
 
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
 const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
 
-export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiName) {
+export function showDoubleTapErrorToast(emojiName) {
   let stringResult;
   emojiName = emojiName.emojiName;
   const reason = emojiName.reason;
@@ -32,4 +32,4 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiNam
     stringResult = intl.formatToPlainString(intl4.t.WZGLFq, obj);
   }
   open("EMOJI_DOUBLE_TAP_ERROR", { text: stringResult, variant: "critical" });
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 16844
+// Function ID: 16845
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 5004, 558, 576, 5288, 587, 5139, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 558, 576, 5289, 587, 5140, 2]
 
-// Module 16606 (BountiesScrollIndicatorAnimation)
+// Module 16844 (BountiesScrollIndicatorAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
+import useToken from "useToken" /* 5289 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BountiesScrollIndicatorRive = tmp(5139);
+const BountiesScrollIndicatorRive = tmp(5140);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles(() => ({ container: { width: 80, height: 80 } }));

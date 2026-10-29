@@ -298,7 +298,7 @@ function setAttributeIfDefined(arg0, arg1, arg2) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addVercelAiProcessors = function addVercelAiProcessors(on) {
+export function addVercelAiProcessors(on) {
   on.on("spanStart", onVercelAiSpanStart);
   on.addEventProcessor(Object.assign(vercelAiEventProcessor, { id: "VercelAiEventProcessor" }));
-};
+}

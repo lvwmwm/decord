@@ -1,19 +1,20 @@
-// Module ID: 6892
-// Function ID: 6893
+// Module ID: 6916
+// Function ID: 6917
 // Name: AppWindowContext
-// Dependencies: [32, 19, 1084, 21, 1120, 6832, 558, 576, 2033, 6893, 2]
-// Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
+// Dependencies: [32, 19, 6854, 1084, 21, 1120, 6855, 558, 576, 2034, 6917, 2]
+// Exports: getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getFocusedOrLastFocusedAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6892 (AppWindowContext)
+// Module 6916 (AppWindowContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import DOMUtils from "DOMUtils" /* 2033 */;
-import WindowInteractingUtils from "WindowInteractingUtils" /* 6893 */;
+import DOMUtils from "DOMUtils" /* 2034 */;
+import WindowInteractingUtils from "WindowInteractingUtils" /* 6917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WindowIdUtils_mod from "WindowIdUtils" /* 6832 */;
+import WindowStore from "WindowStore" /* 6854 */;
+import WindowIdUtils_mod from "WindowIdUtils" /* 6855 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +32,7 @@ WindowIdUtils = WindowIdUtils_mod;
 const context = createContext(obj);
 const map = new Map();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowContextValue(appContext, renderWindow) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowContextValue(appContext, renderWindow) {
   let closure_2;
   let closure_3;
   let tmp4;
@@ -53,7 +54,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const self = this;
     const self2 = this;
-    const componentDispatcher = new tmp(tmp2[4]).ComponentDispatcher();
+    const componentDispatcher = new tmp(tmp2[5]).ComponentDispatcher();
     cResult[2] = componentDispatcher;
     tmp8 = componentDispatcher;
   } else {
@@ -88,10 +89,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
         }
         class E {
           constructor() {
-            result = closure_1_6.set(closure_1, closure_3);
-            handleUnload = function handleUnload() { /* body not rendered: F145655 */ };
+            result = closure_1_7.set(closure_1, closure_3);
+            handleUnload = function handleUnload() { /* body not rendered: F147204 */ };
             listener = handleUnload.addEventListener("unload", handleUnload);
-            return () => { /* body not rendered: F145656 */ };
+            return function() { /* body not rendered: F147205 */ };
           }
         }
         const items = [tmp11, renderWindow, windowId];
@@ -130,7 +131,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
   windowId = tmp[0];
   react = tmp[1];
   const memo = react.useMemo(() => {
-    const componentDispatcher = new appContext(renderWindow[4]).ComponentDispatcher();
+    const componentDispatcher = new appContext(renderWindow[5]).ComponentDispatcher();
     return componentDispatcher;
   }, []);
   const items = [appContext, defaultView, memo, windowId];
@@ -168,7 +169,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppWindowCon
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
-  const tmp2 = closure_7(children.appContext, children.renderWindow);
+  const tmp2 = closure_8(children.appContext, children.renderWindow);
   if (cResult[0] === children) {
     let tmp3;
     if (cResult[1] === tmp2) {
@@ -182,7 +183,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppWindowCon
   cResult[2] = tmp4;
   tmp3 = tmp4;
 }) : (function AppWindowContextProvider(appContext) {
-  return <context.Provider value={closure_7(arg0.appContext, arg0.renderWindow)}>{arg0.children}</context.Provider>;
+  return <context.Provider value={closure_8(arg0.appContext, arg0.renderWindow)}>{arg0.children}</context.Provider>;
 });
 function getWindowDispatchForElement(ownerDocument) {
   const defaultView = ownerDocument.ownerDocument.defaultView;
@@ -220,7 +221,7 @@ const result3 = size.fileFinishedImporting("modules/main_app_window/web/AppWindo
 export default context;
 export const MainWindowDispatch = componentDispatcher;
 export { getWindowDispatchForElement };
-export const getWindowDispatchForEvent = function getWindowDispatchForEvent(target) {
+export function getWindowDispatchForEvent(target) {
   target = undefined;
   const isElement = DOMUtils.isElement;
   DOMUtils;
@@ -246,12 +247,12 @@ export const getWindowDispatchForEvent = function getWindowDispatchForEvent(targ
     tmp5 = tmp6;
   }
   return tmp5;
-};
+}
 export { getCurrentlyInteractingAppWindowContext };
-export const getAppWindowContextValue = function getAppWindowContextValue(arg0) {
+export function getAppWindowContextValue(arg0) {
   return map.get(arg0);
-};
-export const getCurrentlyInteractingAppContext = function getCurrentlyInteractingAppContext() {
+}
+export function getCurrentlyInteractingAppContext() {
   const obj = WindowInteractingUtils;
   const currentlyInteractingWindowId = obj.getCurrentlyInteractingWindowId();
   let tmp2 = null;
@@ -267,14 +268,30 @@ export const getCurrentlyInteractingAppContext = function getCurrentlyInteractin
     appContext = tmp2.appContext;
   }
   return appContext;
-};
+}
+export function getFocusedOrLastFocusedAppWindowContext() {
+  let focusedWindowId = WindowStore.getFocusedWindowId();
+  const obj = WindowStore;
+  if (focusedWindowId == null) {
+    focusedWindowId = obj.getLastFocusedWindowId();
+  }
+  let tmp2 = null;
+  if (null != focusedWindowId) {
+    let value = map.get(focusedWindowId);
+    if (value == null) {
+      value = null;
+    }
+    tmp2 = value;
+  }
+  return tmp2;
+}
 export const AppWindowContextProvider = tmp6;
-export const useAppContext = function useAppContext() {
+export function useAppContext() {
   return react.useContext(context).appContext;
-};
-export const useWindowDispatch = function useWindowDispatch() {
+}
+export function useWindowDispatch() {
   return react.useContext(context).windowDispatch;
-};
-export const useRenderWindow = function useRenderWindow() {
+}
+export function useRenderWindow() {
   return react.useContext(context).renderWindow;
-};
+}

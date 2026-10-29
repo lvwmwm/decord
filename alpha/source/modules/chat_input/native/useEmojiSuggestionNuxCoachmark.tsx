@@ -1,14 +1,14 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13800
+// Function ID: 13801
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 4853, 21, 558, 576, 4840, 7532, 13564, 13295, 1125, 7269, 9874, 2]
+// Dependencies: [32, 19, 4854, 21, 558, 576, 4841, 7555, 13797, 13528, 1125, 7293, 9906, 2]
 
-// Module 13567 (useEmojiSuggestionNuxCoachmark)
+// Module 13800 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1125 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13295 */;
-import useChatInputKeyboardOffsetDefault from "useChatInputKeyboardOffset" /* 13564 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13528 */;
+import useChatInputKeyboardOffsetDefault from "useChatInputKeyboardOffset" /* 13797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   if (cResult[0] !== tmp7) {
     let items1;
     if (tmp7) {
-      const items = [tmp2(4840).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
+      const items = [tmp2(4841).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
       items1 = items;
     } else {
       items1 = [];

@@ -1,27 +1,27 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9420
+// Function ID: 9421
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1204, 7685, 1086, 21, 5004, 587, 558, 576, 9389, 7696, 9390, 8704, 9393, 9394, 1125, 5699, 7289, 9451, 9453, 5011, 504, 7697, 5270, 9454, 9457, 9459, 9456, 9460, 9462, 9467, 9478, 6944, 9391, 5246, 8702, 2050, 9465, 9502, 9503, 1278, 2]
+// Dependencies: [19, 17, 1204, 7708, 1086, 21, 5005, 587, 558, 576, 9421, 7719, 9422, 8707, 9424, 9425, 1125, 5701, 7313, 9482, 9484, 5012, 504, 7720, 5271, 9485, 9488, 9490, 9487, 9491, 9493, 9498, 9509, 6968, 9423, 5247, 8705, 2051, 9496, 9533, 9534, 9536, 1278, 2]
 
-// Module 9388 (CollectiblesShopCardV2)
+// Module 9420 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7697 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8702 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9391 */;
-import DiceIcon from "DiceIcon" /* 9457 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9459 */;
-import OrbsIcon from "OrbsIcon" /* 9460 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8705 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9423 */;
+import DiceIcon from "DiceIcon" /* 9488 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9490 */;
+import OrbsIcon from "OrbsIcon" /* 9491 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,14 +37,15 @@ let obj2;
 let obj3;
 let obj4;
 let size;
+let unpackModuleId;
 ({ PixelRatio, View: closure_4 } = react_native);
 ({ EXTERNAL_PRODUCT_SKU_IDS: metroImportDefault, ShopCtaEnum: metroImportAll } = CollectiblesShopConstants);
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let num = 170;
 if (PixelRatio.getFontScale() >= 1.78) {
   num = 302;
 }
-let c11 = 150;
+let c12 = 150;
 let createStyles = createStyles_mod;
 let obj = { card: size, topRowOverlay: { position: "absolute", top: 6, left: 6, right: 6, zIndex: 2, display: "flex", flexDirection: "row", gap: 4, justifyContent: "space-between", alignItems: "flex-start" }, badge: { flexShrink: 1 }, badgePill: obj2, badgeOverrideText: { textTransform: "uppercase" }, badgePillDarkMode: obj3, badgePillLightMode: obj4, wishlistButton: { marginLeft: "auto", flexShrink: 0 } };
 size = { position: "relative", height: num, width: 150, display: "flex", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
@@ -52,15 +53,14 @@ createStyles = createStyles.createStyles;
 obj2 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: 1.5, borderRadius: nativeDefault.radii.round, flexShrink: 1 };
 obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj4 = { backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
-let closure_12 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardInternalV2(product) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardInternalV2(product) {
   let busy;
   let cardStyle;
   let cardWidth;
   let collectibleProductState;
   let disableBundleStaticBackground;
-  let disabled;
   let hidePrice;
   let hideWishlistButton;
   let isDark;
@@ -80,7 +80,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const onPress = product.onPress;
   ({ unpublishedAt, collectibleProductState } = product);
   ({ solidBackground, preferVCPrice, isDisabled, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground } = product);
-  let tmp4 = closure_12();
+  let tmp4 = disabled();
   let closure_3 = tmp4;
   let tmpResult = tmp(tmp2[10]);
   const defaultVariantIndex = tmpResult.useDefaultVariantIndex(product);
@@ -281,7 +281,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   handleToggle = undefined;
   let closure_9;
   ({ disableBundleStaticBackground, muteBundleStaticBackground } = product);
-  let tmp = closure_12();
+  let tmp = closure_13();
   let obj = require("useDefaultVariantIndex");
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
   let obj2 = require("CollectiblesProductUtils");
@@ -465,7 +465,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   return closure_10(PressableOpacity, obj7);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardV2Inner(product) {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardV2Inner(product) {
   let analyticsLocations;
   let cardStyle;
   let cardWidth;
@@ -482,7 +482,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   let unpublishedAt;
   const tmp2 = analyticsLocations;
   let obj = require("react");
-  const cResult = obj.c(22);
+  const cResult = obj.c(27);
   product = product.product;
   require = product;
   ({ unpublishedAt, solidBackground, preferVCPrice, cardWidth, cardStyle, hideWishlistButton, hidePrice, onPress, disableBundleStaticBackground, muteBundleStaticBackground } = product);
@@ -508,12 +508,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
           if (onPress == null) {
             onPress = tmp9;
           }
-          const tmpResult8 = require("useCurrentUser");
-          const currentUser = tmpResult8.useCurrentUser();
+          const tmpResult9 = require("useCurrentUser");
+          const currentUser = tmpResult9.useCurrentUser();
           const tmp7Result = tmp7(tmp2[37]);
           const canUseCollectiblesResult = tmp7Result.canUseCollectibles(currentUser);
           require("useProductPurchaseState");
-          class D {
+          class O {
             constructor() {
               obj = closure_1(closure_2[35]);
               hideActionSheetResult = obj.hideActionSheet();
@@ -527,14 +527,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
             }
           }
           ({ isPurchased, isPartiallyOwnedBundle } = tmp14);
-          const tmpResult10 = require("useProductDisableState");
-          const isDisabled = tmpResult10.useProductDisableState(tmp5.skuId).isDisabled;
-          const tmpResult11 = require("OneDayFractionalNitroExperiment");
-          const oneDayFractionalNitroEnabled = tmpResult11.useOneDayFractionalNitroEnabled("product_card");
-          const tmpResult12 = require("CollectiblesUtils");
-          let result = tmpResult12.isPremiumCollectiblesProduct(tmp5);
+          const tmpResult11 = require("useProductDisableState");
+          const isDisabled = tmpResult11.useProductDisableState(tmp5.skuId).isDisabled;
+          const tmpResult12 = require("OneDayFractionalNitroExperiment");
+          const oneDayFractionalNitroEnabled = tmpResult12.useOneDayFractionalNitroEnabled("product_card");
           const tmpResult13 = require("CollectiblesUtils");
-          let result1 = tmpResult13.isFreeCollectiblesProduct(tmp5);
+          let result = tmpResult13.isPremiumCollectiblesProduct(tmp5);
+          const tmpResult14 = require("CollectiblesUtils");
+          let result1 = tmpResult14.isFreeCollectiblesProduct(tmp5);
           let tmp18 = "purchased";
           if (isPurchased !== true) {
             tmp18 = "partiallyOwnedBundle";
@@ -556,23 +556,64 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
             }
           }
           if (product.skuId !== text.FRACTIONAL_PREMIUM_1_DAY) {
-            if (cResult[8] === cardStyle) {
-              if (cResult[9] === cardWidth) {
-                if (cResult[10] === tmp18) {
-                  if (cResult[11] === disableBundleStaticBackground) {
-                    if (cResult[12] === onPress) {
-                      if (cResult[13] === hidePrice) {
-                        if (cResult[14] === hideWishlistButton) {
-                          if (cResult[15] === isDisabled) {
-                            if (cResult[16] === muteBundleStaticBackground) {
-                              if (cResult[17] === preferVCPrice) {
-                                if (cResult[18] === product) {
-                                  if (cResult[19] === solidBackground) {
-                                    let tmp22;
-                                    if (cResult[20] === unpublishedAt) {
-                                      tmp22 = cResult[21];
+            let tmp22;
+            if (cResult[8] !== product.skuId) {
+              let tmp23 = null;
+              const tmpResult15 = require("FractionalNitroPricingExperiment");
+              if (tmpResult15.isFractionalNitroPricingSku(product.skuId)) {
+                tmp23 = closure_9(tmp(tmp2[41]).FractionalNitroPricingExposure, { location: "product_card" });
+              }
+              cResult[8] = product.skuId;
+              cResult[9] = tmp23;
+              tmp22 = tmp23;
+            } else {
+              tmp22 = cResult[9];
+            }
+            if (cResult[10] === cardStyle) {
+              if (cResult[11] === cardWidth) {
+                if (cResult[12] === tmp18) {
+                  if (cResult[13] === disableBundleStaticBackground) {
+                    if (cResult[14] === onPress) {
+                      if (cResult[15] === hidePrice) {
+                        if (cResult[16] === hideWishlistButton) {
+                          if (cResult[17] === isDisabled) {
+                            if (cResult[18] === muteBundleStaticBackground) {
+                              if (cResult[19] === preferVCPrice) {
+                                if (cResult[20] === product) {
+                                  if (cResult[21] === solidBackground) {
+                                    let tmp25;
+                                    if (cResult[22] === unpublishedAt) {
+                                      tmp25 = cResult[23];
                                     }
-                                    tmp21 = tmp22;
+                                    if (cResult[24] === tmp22) {
+                                      let tmp29;
+                                      if (cResult[25] === tmp25) {
+                                        tmp29 = cResult[26];
+                                      }
+                                      tmp21 = tmp29;
+                                    }
+                                    const items = [, ];
+                                    const obj3 = { children: null };
+                                    items[0] = tmp22;
+                                    items[1] = tmp25;
+                                    class O {
+                                      constructor() {
+                                        obj = closure_1(closure_2[35]);
+                                        hideActionSheetResult = obj.hideActionSheet();
+                                        tmp2 = closure_0(closure_2[36]);
+                                        obj1 = { product, initialVariantIndex: closure_1, analyticsLocations, shopAnalyticsContext: null };
+                                        tmp3 = closure_3;
+                                        openProductDetailsActionSheet = tmp2.openProductDetailsActionSheet;
+                                        obj1.shopAnalyticsContext = tmp3;
+                                        result = openProductDetailsActionSheet(obj1);
+                                        return;
+                                      }
+                                    }
+                                    const tmp32 = closure_10(closure_11, obj3);
+                                    cResult[24] = tmp22;
+                                    cResult[25] = tmp25;
+                                    cResult[26] = tmp32;
+                                    tmp29 = tmp32;
                                   }
                                 }
                               }
@@ -585,8 +626,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
                 }
               }
             }
-            const obj3 = { product, onPress, collectibleProductState: tmp18, unpublishedAt, solidBackground: null, preferVCPrice, isDisabled, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground };
-            class D {
+            const obj4 = { product, onPress, collectibleProductState: tmp18, unpublishedAt: null, solidBackground, preferVCPrice, isDisabled, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground };
+            class O {
               constructor() {
                 obj = closure_1(closure_2[35]);
                 hideActionSheetResult = obj.hideActionSheet();
@@ -599,22 +640,22 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
                 return;
               }
             }
-            const tmp25 = closure_9(closure_13, obj3);
-            cResult[8] = cardStyle;
-            cResult[9] = cardWidth;
-            cResult[10] = tmp18;
-            cResult[11] = disableBundleStaticBackground;
-            cResult[12] = onPress;
-            cResult[13] = hidePrice;
-            cResult[14] = hideWishlistButton;
-            cResult[15] = isDisabled;
-            cResult[16] = muteBundleStaticBackground;
-            cResult[17] = preferVCPrice;
-            cResult[18] = product;
-            cResult[19] = solidBackground;
-            cResult[20] = unpublishedAt;
-            cResult[21] = tmp25;
-            tmp22 = tmp25;
+            const tmp28 = closure_9(closure_14, obj4);
+            cResult[10] = cardStyle;
+            cResult[11] = cardWidth;
+            cResult[12] = tmp18;
+            cResult[13] = disableBundleStaticBackground;
+            cResult[14] = onPress;
+            cResult[15] = hidePrice;
+            cResult[16] = hideWishlistButton;
+            cResult[17] = isDisabled;
+            cResult[18] = muteBundleStaticBackground;
+            cResult[19] = preferVCPrice;
+            cResult[20] = product;
+            cResult[21] = solidBackground;
+            cResult[22] = unpublishedAt;
+            cResult[23] = tmp28;
+            tmp25 = tmp28;
           } else {
             tmp21 = null;
           }
@@ -622,7 +663,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         }
       }
     }
-    class D {
+    class O {
       constructor() {
         obj = closure_1(closure_2[35]);
         hideActionSheetResult = obj.hideActionSheet();
@@ -639,11 +680,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
     cResult[4] = analyticsLocations;
     cResult[5] = product;
     cResult[6] = defaultVariantIndex;
-    cResult[7] = D;
-    tmp9 = D;
+    cResult[7] = O;
+    tmp9 = O;
   }
-  const tmpResult14 = require("CollectiblesProductUtils");
-  const selectedProduct = tmpResult14.getSelectedProduct(product, defaultVariantIndex);
+  const tmpResult16 = require("CollectiblesProductUtils");
+  const selectedProduct = tmpResult16.getSelectedProduct(product, defaultVariantIndex);
   cResult[0] = product;
   cResult[1] = defaultVariantIndex;
   cResult[2] = selectedProduct;
@@ -657,12 +698,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   let muteBundleStaticBackground;
   let preferVCPrice;
   let solidBackground;
-  let tmp14Result;
+  let tmp16Result;
   let unpublishedAt;
   product = product.product;
   const require = product;
   let onPress = product.onPress;
   let analyticsLocations;
+  const tmp2 = analyticsLocations;
   ({ unpublishedAt, solidBackground, preferVCPrice, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground } = product);
   let obj = require("useDefaultVariantIndex");
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
@@ -698,7 +740,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   let result = obj9.isPremiumCollectiblesProduct(selectedProduct);
   const obj10 = require("CollectiblesUtils");
   let result1 = obj10.isFreeCollectiblesProduct(selectedProduct);
-  let closure_6 = tmp11;
+  let closure_6 = tmp13;
   if (!result1) {
     if (result) {
       result = canUseCollectiblesResult;
@@ -707,17 +749,27 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   }
   const items1 = [result1, isPartiallyOwnedBundle, isPurchased, result && !canUseCollectiblesResult && !result1];
   if (product.skuId !== result1.FRACTIONAL_PREMIUM_1_DAY) {
-    const obj11 = { product, onPress, collectibleProductState: tmp12, unpublishedAt, solidBackground, preferVCPrice, isDisabled, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground };
-    const tmp14 = closure_9;
-    const tmp15 = closure_13;
+    let tmp19 = null;
+    const tmp16 = closure_10;
+    const tmp17 = closure_11;
+    const tmpResult = require("FractionalNitroPricingExperiment");
+    if (tmpResult.isFractionalNitroPricingSku(product.skuId)) {
+      tmp19 = closure_9(tmp(tmp2[41]).FractionalNitroPricingExposure, { location: "product_card" });
+    }
+    const items2 = [tmp19, ];
+    const obj11 = { product, onPress, collectibleProductState: tmp14, unpublishedAt, solidBackground, preferVCPrice, isDisabled, cardWidth, cardStyle, hideWishlistButton, hidePrice, disableBundleStaticBackground, muteBundleStaticBackground };
+    const tmp21 = closure_9;
+    const tmp22 = closure_14;
     if (onPress == null) {
       onPress = callback;
     }
-    tmp14Result = tmp14(tmp15, obj11);
+    const obj12 = { children: items2 };
+    items2[1] = tmp21(tmp22, obj11);
+    tmp16Result = tmp16(tmp17, obj12);
   } else {
-    tmp14Result = null;
+    tmp16Result = null;
   }
-  return tmp14Result;
+  return tmp16Result;
 });
 const memoResult = react.memo(function CollectiblesShopCardV2(arg0) {
   let obj2;
@@ -732,7 +784,7 @@ const memoResult = react.memo(function CollectiblesShopCardV2(arg0) {
       obj2 = require("v1");
       return obj;
     }, items);
-    let obj = { newValue: memo, children: React4(closure_14, obj2) };
+    let obj = { newValue: memo, children: React4(closure_15, obj2) };
     obj2 = {};
     const CollectiblesAnalyticsProvider = CollectiblesAnalyticsContext.CollectiblesAnalyticsProvider;
     const merged1 = Object.assign(merged);

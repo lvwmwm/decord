@@ -1,14 +1,14 @@
-// Module ID: 19305
-// Function ID: 19306
+// Module ID: 19538
+// Function ID: 19539
 // Name: guildSpaceWidgetLayout
 // Dependencies: [2]
 // Exports: addWidget, getFullColumnIndex, moveWidget, renumberWidgets, splitWidgetsByColumn
 
-// Module 19305 (guildSpaceWidgetLayout)
+// Module 19538 (guildSpaceWidgetLayout)
 import size from "module_2" /* 2 */;
 
-const f139910 = (position) => 1 !== position.position.column;
-const f139911 = (position) => 1 === position.position.column;
+const f141480 = (position) => 1 !== position.position.column;
+const f141481 = (position) => 1 === position.position.column;
 function byOrder(position, position2) {
   return position.position.order - position2.position.order;
 }
@@ -16,17 +16,17 @@ const result = size.fileFinishedImporting("modules/guild_space/guildSpaceWidgetL
 
 export const LEFT_COLUMN = 0;
 export const RIGHT_COLUMN = 1;
-export const splitWidgetsByColumn = function splitWidgetsByColumn(arr) {
-  const found = arr.filter(f139910);
+export function splitWidgetsByColumn(arr) {
+  const found = arr.filter(f141480);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f139911);
+  const found1 = arr.filter(f141481);
   items[1] = found1.sort(byOrder);
   return items;
-};
-export const renumberWidgets = function renumberWidgets(arr) {
-  const found = arr.filter(f139910);
+}
+export function renumberWidgets(arr) {
+  const found = arr.filter(f141480);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f139911);
+  const found1 = arr.filter(f141481);
   items[1] = found1.sort(byOrder);
   return items.flatMap((arr, index) => {
     let closure_0 = index;
@@ -44,11 +44,11 @@ export const renumberWidgets = function renumberWidgets(arr) {
       return tmp2;
     });
   });
-};
-export const addWidget = function addWidget(arr, arg1, column) {
-  const found = arr.filter(f139910);
+}
+export function addWidget(arr, arg1, column) {
+  const found = arr.filter(f141480);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f139911);
+  const found1 = arr.filter(f141481);
   items[1] = found1.sort(byOrder);
   column = undefined;
   if (column != null) {
@@ -82,8 +82,8 @@ export const addWidget = function addWidget(arr, arg1, column) {
       return tmp2;
     });
   });
-};
-export const getFullColumnIndex = function getFullColumnIndex(arr, arr2, arg2, arg3) {
+}
+export function getFullColumnIndex(arr, arr2, arg2, arg3) {
   let closure_0 = arg3;
   let found = arr;
   if (null != arg3) {
@@ -103,16 +103,16 @@ export const getFullColumnIndex = function getFullColumnIndex(arr, arr2, arg2, a
     }
     return length;
   }
-};
-export const moveWidget = function moveWidget(arr, arg1, arg2, arg3) {
+}
+export function moveWidget(arr, arg1, arg2, arg3) {
   let closure_0 = arg1;
   const found = arr.find((id) => id.id === closure_0);
   if (null == found) {
     return null;
   } else {
-    const found1 = arr.filter(f139910);
+    const found1 = arr.filter(f141480);
     const items = [found1.sort(byOrder), ];
-    const found2 = arr.filter(f139911);
+    const found2 = arr.filter(f141481);
     items[1] = found2.sort(byOrder);
     const first = items[0];
     const items1 = [first.filter((id) => id.id !== closure_0), ];
@@ -143,4 +143,4 @@ export const moveWidget = function moveWidget(arr, arg1, arg2, arg3) {
       });
     });
   }
-};
+}

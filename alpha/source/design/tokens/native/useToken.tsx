@@ -1,15 +1,15 @@
-// Module ID: 5288
-// Function ID: 5289
+// Module ID: 5289
+// Function ID: 5290
 // Name: useToken
-// Dependencies: [587, 5174, 12, 558, 576, 5070, 2]
+// Dependencies: [587, 5175, 12, 558, 576, 5071, 2]
 // Exports: useToken
 
-// Module 5288 (useToken)
+// Module 5289 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 5070 */;
-import SemanticColorContext from "SemanticColorContext" /* 5174 */;
+import native from "native" /* 5071 */;
+import SemanticColorContext from "SemanticColorContext" /* 5175 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ let closure_5 = fromEntries(keys.map((item) => {
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled();
 let result = size.fileFinishedImporting("design/tokens/native/useToken.tsx");
 
-export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
+export function useToken(BACKGROUND_BASE_LOW, theme) {
   let str2;
   let str3;
   let tmp5;
@@ -166,4 +166,4 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
     }
   }
   return tmp5;
-};
+}

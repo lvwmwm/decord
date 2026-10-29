@@ -1,13 +1,13 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18248
+// Function ID: 18249
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 6736, 1084, 7212, 1125, 15470, 1999, 7524, 18015, 2]
+// Dependencies: [5, 6759, 1084, 7236, 1125, 15704, 2000, 7547, 18249, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 18014 (GuildsBarFolderMenuItems)
+// Module 18248 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require, c2, guildFolderById;
 const AnalyticsSections = Constants.AnalyticsSections;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx");
 
-export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
+export function getGuildFolderMenuItems(id) {
   let intl;
   let intl2;
   _require = id;
@@ -36,7 +36,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp9) {
             c2 = 3;
@@ -140,4 +140,4 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
   intl2 = require("intl").intl;
   items[1] = obj2;
   return items;
-};
+}

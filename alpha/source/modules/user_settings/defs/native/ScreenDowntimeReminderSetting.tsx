@@ -1,18 +1,18 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17385
+// Function ID: 17386
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [13979, 8365, 558, 16469, 8157, 11248, 1125, 504, 17147, 2]
+// Dependencies: [14212, 8387, 558, 16707, 8180, 11302, 1125, 504, 17386, 2]
 
-// Module 17146 (ScreenDowntimeReminderSetting)
+// Module 17385 (ScreenDowntimeReminderSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1125 */;
-import useUserLinks from "useUserLinks" /* 8157 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16469 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17147 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13979 */;
+import useUserLinks from "useUserLinks" /* 8180 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16707 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17386 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 14212 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

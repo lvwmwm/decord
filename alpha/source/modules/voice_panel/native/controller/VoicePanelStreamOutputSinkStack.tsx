@@ -1,9 +1,9 @@
-// Module ID: 18850
-// Function ID: 18851
+// Module ID: 19083
+// Function ID: 19084
 // Name: VoicePanelStreamOutputSinkStack
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 18850 (VoicePanelStreamOutputSinkStack)
+// Module 19083 (VoicePanelStreamOutputSinkStack)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

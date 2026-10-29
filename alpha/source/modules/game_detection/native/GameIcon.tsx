@@ -1,21 +1,21 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7321
+// Function ID: 7322
 // Name: GameIcon
-// Dependencies: [19, 17, 1391, 21, 5004, 587, 7298, 7299, 7300, 558, 576, 7301, 5705, 2]
+// Dependencies: [19, 17, 1391, 21, 5005, 587, 7322, 7323, 7324, 558, 576, 7325, 5707, 2]
 
-// Module 7297 (GameIcon)
+// Module 7321 (GameIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7298 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7299 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7300 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7301 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7322 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7323 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7324 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7325 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9810
-// Function ID: 9811
+// Module ID: 9842
+// Function ID: 9843
 // Name: ConversationFocusScreen
-// Dependencies: [19, 9771, 21, 558, 576, 1505, 504, 9811, 2]
+// Dependencies: [19, 9803, 21, 558, 576, 1506, 504, 9843, 2]
 
-// Module 9810 (ConversationFocusScreen)
+// Module 9842 (ConversationFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 9811 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 9843 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9771 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
   let tmp9;
   let obj = channelId(576);
   const cResult = obj.c(16);
-  const obj2 = channelId(1505);
+  const obj2 = channelId(1506);
   const params = obj2.useRoute().params;
   channelId = params.channelId;
   ({ conversationId, messageId } = params);
@@ -122,7 +122,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
   let isFullFetchPending;
   let messageId;
   let startMessageId;
-  let obj = channelId(1505);
+  let obj = channelId(1506);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   ({ conversationId, messageId } = params);

@@ -1,10 +1,10 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 14229
+// Function ID: 14230
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1266, 558, 576, 4919, 2]
+// Dependencies: [510, 1266, 558, 576, 4920, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
 
-// Module 13996 (InAppMessageSoundsStore)
+// Module 14229 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import module_1266 from "module_1266" /* 1266 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _slicedToArray = tmp(4919);
+const _slicedToArray = tmp(4920);
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
 let closure_3 = module_1266.createWithEqualityFn(() => {
   const Storage = Storage2.Storage;
@@ -41,13 +41,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppMe
 });
 let result = size.fileFinishedImporting("modules/notifications/native/InAppMessageSoundsStore.tsx");
 
-export const isInAppMessageSoundsEnabled = function isInAppMessageSoundsEnabled() {
+export function isInAppMessageSoundsEnabled() {
   return closure_3.getState().isEnabled;
-};
-export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnabled(isEnabled) {
+}
+export function setInAppMessageSoundsEnabled(isEnabled) {
   const Storage = Storage2.Storage;
   const result = Storage.set(InAppMessageSoundsEnabled, isEnabled);
   const obj = { isEnabled };
   closure_3.setState(obj);
-};
+}
 export const useInAppMessageSoundsEnabled = tmp2;

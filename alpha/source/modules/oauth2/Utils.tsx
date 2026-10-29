@@ -1,19 +1,19 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9701
+// Function ID: 9702
 // Name: Utils
-// Dependencies: [1084, 9670, 1125, 5648, 2]
+// Dependencies: [1084, 9702, 1125, 5649, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 9669 (Utils)
+// Module 9701 (Utils)
 import Constants from "Constants" /* 1084 */;
-import utils from "utils" /* 5648 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9670 */;
+import utils from "utils" /* 5649 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9702 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;
 let result = size.fileFinishedImporting("modules/oauth2/Utils.tsx");
 
-export const getApplicationDetailsText = function getApplicationDetailsText(application) {
+export function getApplicationDetailsText(application) {
   const obj = useIsSocialLayerParentApplication;
   const isSocialLayerParentApplication = obj.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
@@ -47,8 +47,8 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
     const obj11 = { application: application.name, discordPrivacyPolicyURL: MarketingURLs.PRIVACY };
     return intl.format(tmp4, obj11);
   }
-};
-export const isContentClassificationRestricted = function isContentClassificationRestricted(content_classification, nsfwAllowed) {
+}
+export function isContentClassificationRestricted(content_classification, nsfwAllowed) {
   let result = null != content_classification;
   if (result) {
     const obj = utils;
@@ -58,4 +58,4 @@ export const isContentClassificationRestricted = function isContentClassificatio
     result = false === nsfwAllowed;
   }
   return result;
-};
+}

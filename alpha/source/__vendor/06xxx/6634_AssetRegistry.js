@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "924c5a5eda5a5885b3a2345095a2f59c", name: "img_account_sync_tiktok_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "2ebb6fd1431422af001c51b9dd778da6", name: "img_account_sync_playstation_white", type: "svg" });

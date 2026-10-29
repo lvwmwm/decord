@@ -18,7 +18,7 @@ do {
 items1["-".charCodeAt(0)] = 62;
 items1["_".charCodeAt(0)] = 63;
 
-export const byteLength = function byteLength(arr) {
+export function byteLength(arr) {
   if (0 < arr.length % 4) {
     const _Error = Error;
     const self = this;
@@ -38,8 +38,8 @@ export const byteLength = function byteLength(arr) {
     items[1] = num2;
     return 3 * (items[0] + items[1]) / 4 - items[1];
   }
-};
-export const toByteArray = function toByteArray(arr) {
+}
+export function toByteArray(arr) {
   let tmp2;
   let tmp3;
   if (0 < arr.length % 4) {
@@ -103,8 +103,8 @@ export const toByteArray = function toByteArray(arr) {
     }
     return tmp5;
   }
-};
-export const fromByteArray = function fromByteArray(arg0) {
+}
+export function fromByteArray(arg0) {
   let sum;
   const result = length % 3;
   items = [];
@@ -138,4 +138,4 @@ export const fromByteArray = function fromByteArray(arg0) {
     items.push(`${items[tmp13 >> 10]}${items[tmp13 >> 4 & 63]}${items[tmp13 << 2 & 63]}=`);
   }
   return items.join("");
-};
+}

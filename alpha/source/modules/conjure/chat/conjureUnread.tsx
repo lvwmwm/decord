@@ -1,18 +1,18 @@
-// Module ID: 10759
-// Function ID: 10760
+// Module ID: 10834
+// Function ID: 10835
 // Name: conjureUnread
-// Dependencies: [19, 1243, 6806, 6808, 6740, 584, 11, 558, 576, 10760, 504, 2]
+// Dependencies: [19, 1243, 6829, 6831, 6763, 584, 11, 558, 576, 10835, 504, 2]
 // Exports: ackConjureProject, getConjureProjectMentionCount, isConjureProjectUnread
 
-// Module 10759 (conjureUnread)
+// Module 10834 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import conjureProjectMute from "conjureProjectMute" /* 10760 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import conjureProjectMute from "conjureProjectMute" /* 10835 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -477,7 +477,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureUnread.tsx");
 
 export { ackConjureProject };
-export const isConjureProjectUnread = function isConjureProjectUnread(id) {
+export function isConjureProjectUnread(id) {
   const mentionCount = ReadStateStore.getMentionCount(id, ReadStateTypes.CONJURING_PROJECT);
   const ackMessageIdResult = ReadStateStore.ackMessageId(id, ReadStateTypes.CONJURING_PROJECT);
   let tmp3 = mentionCount > 0;
@@ -490,10 +490,10 @@ export const isConjureProjectUnread = function isConjureProjectUnread(id) {
     tmp3 = tmp5;
   }
   return tmp3;
-};
-export const getConjureProjectMentionCount = function getConjureProjectMentionCount(id) {
+}
+export function getConjureProjectMentionCount(id) {
   return ReadStateStore.getMentionCount(id, ReadStateTypes.CONJURING_PROJECT);
-};
+}
 export const useConjureProjectBadge = tmp2;
 export const useConjureUnreadSummary = tmp3;
 export const useAckConjureProjectWhileViewing = tmp4;

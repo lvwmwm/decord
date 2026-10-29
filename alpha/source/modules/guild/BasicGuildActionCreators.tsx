@@ -1,16 +1,16 @@
-// Module ID: 19690
-// Function ID: 19691
+// Module ID: 19912
+// Function ID: 19913
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 4878, 8346, 1084, 584, 1294, 2]
+// Dependencies: [5, 4879, 8368, 1084, 584, 1294, 2]
 // Exports: fetchBasicGuild
 
-// Module 19690 (BasicGuildActionCreators)
+// Module 19912 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import BasicGuildStore from "BasicGuildStore" /* 8346 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import BasicGuildStore from "BasicGuildStore" /* 8368 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
@@ -32,7 +32,7 @@ let obj = function _fetchBasicGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ let obj = function _fetchBasicGuild() {
             closure_130_7.delete(guildId);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {
@@ -118,6 +118,6 @@ const Endpoints = Constants.Endpoints;
 const set = new Set();
 const result = size.fileFinishedImporting("modules/guild/BasicGuildActionCreators.tsx");
 
-export const fetchBasicGuild = function fetchBasicGuild() {
+export function fetchBasicGuild() {
   return obj(...arguments);
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 17311
-// Function ID: 17312
+// Module ID: 17550
+// Function ID: 17551
 // Name: BackButton
-// Dependencies: [21, 558, 576, 1502, 1125, 17308, 17305, 2]
+// Dependencies: [21, 558, 576, 1503, 1125, 17547, 17544, 2]
 
-// Module 17311 (BackButton)
+// Module 17550 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 17305 */;
-import buttonDefault from "button" /* 17308 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17544 */;
+import buttonDefault from "button" /* 17547 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton
   const obj = props(576);
   const cResult = obj.c(4);
   props = props.props;
-  const obj2 = props(1502);
+  const obj2 = props(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1125).intl;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton
     }
     return tmp7;
   }
-  const tmp8 = jsx(navigation(17308), {
+  const tmp8 = jsx(navigation(17547), {
     variant: "secondary",
     text: first,
     onPress() {
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton
 }) : (function BackButton(props) {
   let closure_1;
   props = props.props;
-  const obj = props(1502);
+  const obj = props(1503);
   importDefault = obj.useNavigation();
   buttonDefault;
   const intl = props(1125).intl;

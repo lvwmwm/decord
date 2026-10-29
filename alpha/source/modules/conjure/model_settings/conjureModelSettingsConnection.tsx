@@ -1,12 +1,12 @@
-// Module ID: 10775
-// Function ID: 10776
+// Module ID: 10850
+// Function ID: 10851
 // Name: conjureModelSettingsConnection
-// Dependencies: [584, 10756, 2]
+// Dependencies: [584, 10831, 2]
 // Exports: sendModelSettings
 
-// Module 10775 (conjureModelSettingsConnection)
+// Module 10850 (conjureModelSettingsConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -31,7 +31,7 @@ let obj = {
 const result = size.fileFinishedImporting("modules/conjure/model_settings/conjureModelSettingsConnection.tsx");
 
 export const modelSettingsFrameHandlers = obj;
-export const sendModelSettings = function sendModelSettings(projectId, arg1) {
+export function sendModelSettings(projectId, arg1) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   try {
@@ -46,4 +46,4 @@ export const sendModelSettings = function sendModelSettings(projectId, arg1) {
     }
   } catch (err) {
   }
-};
+}

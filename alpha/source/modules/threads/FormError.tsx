@@ -1,19 +1,19 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18555
+// Function ID: 18556
 // Name: threads/FormError
-// Dependencies: [1125, 8300, 2]
+// Dependencies: [1125, 8322, 2]
 // Exports: makeApiNameRequiredError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTitleError, renderError
 
-// Module 18321 (threads/FormError)
+// Module 18555 (threads/FormError)
 import intl2 from "intl" /* 1125 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8300 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8322 */;
 import size from "module_2" /* 2 */;
 
 const FormSubmitErrorType = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };
 const result = size.fileFinishedImporting("modules/threads/FormError.tsx");
 
 export { FormSubmitErrorType };
-export const makeEmptyTitleError = function makeEmptyTitleError() {
+export function makeEmptyTitleError() {
   let obj;
   const intl = intl2.intl;
   let stringResult = intl.string(intl2.t.uXA573);
@@ -22,8 +22,8 @@ export const makeEmptyTitleError = function makeEmptyTitleError() {
     stringResult = null;
   }
   return obj;
-};
-export const makeEmptyMessageError = function makeEmptyMessageError() {
+}
+export function makeEmptyMessageError() {
   let obj;
   const intl = intl2.intl;
   let stringResult = intl.string(intl2.t.kesTVT);
@@ -32,8 +32,8 @@ export const makeEmptyMessageError = function makeEmptyMessageError() {
     stringResult = null;
   }
   return obj;
-};
-export const makeApiNameRequiredError = function makeApiNameRequiredError() {
+}
+export function makeApiNameRequiredError() {
   let obj;
   const ApiValidation = obj.ApiValidation;
   const intl = intl2.intl;
@@ -43,8 +43,8 @@ export const makeApiNameRequiredError = function makeApiNameRequiredError() {
     stringResult = null;
   }
   return obj;
-};
-export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
+}
+export function makeAutomodViolationError(errorResponseBody, id) {
   let obj;
   const AutomodViolation = obj.AutomodViolation;
   id = undefined;
@@ -59,8 +59,8 @@ export const makeAutomodViolationError = function makeAutomodViolationError(erro
     automodErrorMessageFromErrorResponse = null;
   }
   return obj;
-};
-export const renderError = function renderError(type, content) {
+}
+export function renderError(type, content) {
   let tmp = null;
   if (null != type) {
     if (type.type === obj.EmptyContent) {
@@ -75,4 +75,4 @@ export const renderError = function renderError(type, content) {
     tmp = message;
   }
   return tmp;
-};
+}

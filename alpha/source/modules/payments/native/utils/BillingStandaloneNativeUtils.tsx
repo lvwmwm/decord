@@ -1,15 +1,15 @@
-// Module ID: 7550
-// Function ID: 7551
+// Module ID: 7573
+// Function ID: 7574
 // Name: BillingStandaloneNativeUtils
-// Dependencies: [5734, 1084, 3, 7551, 7552, 1627, 1104, 5696, 2]
+// Dependencies: [5736, 1084, 3, 7574, 7575, 1628, 1104, 5698, 2]
 // Exports: goToStandaloneGuildBoostCheckoutFromMobileApp, goToStandaloneNitroManagementFromMobileApp, goToStandalonePremiumCheckoutFromMobileApp
 
-// Module 7550 (BillingStandaloneNativeUtils)
+// Module 7573 (BillingStandaloneNativeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7551 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7574 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ const tmp2 = new LoggerDefault("BillingStandaloneNativeUtils");
 const logger = tmp2;
 let result = size.fileFinishedImporting("modules/payments/native/utils/BillingStandaloneNativeUtils.tsx");
 
-export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalonePremiumCheckoutFromMobileApp(premium_plan_selection_action_sheet, arg1, arg2, arg3) {
+export function goToStandalonePremiumCheckoutFromMobileApp(premium_plan_selection_action_sheet, arg1, arg2, arg3) {
   let closure_2;
   let closure_3;
   let tmp6;
@@ -84,8 +84,8 @@ export const goToStandalonePremiumCheckoutFromMobileApp = function goToStandalon
     emitMWRCSentryErrorOnFailure(items, premium_plan_selection_action_sheet, loadId.loadId);
     closure_3(...items);
   });
-};
-export const goToStandaloneNitroManagementFromMobileApp = function goToStandaloneNitroManagementFromMobileApp(premium_external_management, loadId, arg2, arg3) {
+}
+export function goToStandaloneNitroManagementFromMobileApp(premium_external_management, loadId, arg2, arg3) {
   let closure_2;
   let closure_3;
   let result;
@@ -113,8 +113,8 @@ export const goToStandaloneNitroManagementFromMobileApp = function goToStandalon
     emitMWRCSentryErrorOnFailure(items, premium_external_management, loadId);
     closure_3(...items);
   });
-};
-export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStandaloneGuildBoostCheckoutFromMobileApp(arg0, arg1, newAnalyticsLoadId, arg3, arg4) {
+}
+export function goToStandaloneGuildBoostCheckoutFromMobileApp(arg0, arg1, newAnalyticsLoadId, arg3, arg4) {
   let closure_0;
   let closure_2;
   let closure_3;
@@ -144,4 +144,4 @@ export const goToStandaloneGuildBoostCheckoutFromMobileApp = function goToStanda
     emitMWRCSentryErrorOnFailure(items, closure_0, newAnalyticsLoadId);
     closure_3(...items);
   });
-};
+}

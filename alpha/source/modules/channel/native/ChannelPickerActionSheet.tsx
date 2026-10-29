@@ -1,15 +1,15 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12297
+// Function ID: 12298
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4946, 1389, 21, 558, 576, 1630, 7329, 5246, 7284, 6947, 12244, 7020, 8539, 5640, 7021, 5305, 7334, 2]
+// Dependencies: [19, 4947, 1389, 21, 558, 576, 1631, 7353, 5247, 7308, 6971, 12298, 7044, 8561, 5641, 7045, 5306, 7358, 2]
 
-// Module 12243 (ChannelPickerActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import TableRadioRow2 from "TableRadioRow" /* 7020 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
+// Module 12297 (ChannelPickerActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import TableRadioRow2 from "TableRadioRow" /* 7044 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let _require, closure_0, hideActionSheetResult, hideActionSheetResult1, onSelect
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const TableRowIcon2 = tmp(6947);
+const TableRowIcon2 = tmp(6971);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPickerActionSheet(channels) {
   let guild;

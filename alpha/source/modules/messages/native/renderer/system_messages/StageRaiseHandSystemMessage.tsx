@@ -1,18 +1,18 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8455
+// Function ID: 8456
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6676, 4856, 4936, 1084, 1125, 2064, 8351, 11, 6032, 8353, 8355, 2]
+// Dependencies: [6700, 4857, 4937, 1084, 1125, 2065, 8373, 11, 6036, 8375, 8377, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8433 (StageRaiseHandSystemMessage)
+// Module 8455 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6700 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 ({ HelpdeskArticles: metroRequire, MessageFlags: metroImportDefault, MessageTypes: metroImportAll, Permissions: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageRaiseHandSystemMessage.tsx");
 
-export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(message) {
+export function createStageRaiseHandSystemMessage(message) {
   let M87x7Y;
   let formatToParts;
   let intl2;
@@ -61,7 +61,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(6032).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6036).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(8355)(message));
+  const merged = Object.assign(tmp6(8377)(message));
   return obj3;
-};
+}

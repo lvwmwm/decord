@@ -1,14 +1,14 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10077
+// Function ID: 10078
 // Name: ChannelSummariesExperiment
-// Dependencies: [4874, 4878, 1084, 4863, 4881, 558, 576, 573, 2]
+// Dependencies: [4875, 4879, 1084, 4864, 4882, 558, 576, 573, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment
 
-// Module 10045 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 10077 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -252,16 +252,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEl
 });
 const result = size.fileFinishedImporting("experiments/ChannelSummariesExperiment.tsx");
 
-export const channelEligibleForSummaries = function channelEligibleForSummaries(channel) {
+export function channelEligibleForSummaries(channel) {
   return canSeeChannelSummaries(channel, true, false);
-};
+}
 export { canSeeChannelSummaries };
 export { canGuildUseConversationSummaries };
-export const useChannelSummariesExperiment = function useChannelSummariesExperiment(channel) {
+export function useChannelSummariesExperiment(channel) {
   let flag;
   if (flag === undefined) {
     flag = false;
   }
   return canSeeChannelSummaries(channel, flag);
-};
+}
 export const useGuildEligibleForSummaries = tmp3;

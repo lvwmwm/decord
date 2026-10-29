@@ -1,15 +1,15 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14712
+// Function ID: 14713
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5270, 5280, 5696, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5271, 5281, 5698, 2]
 
-// Module 14478 (MediaModalYoutubeEmbedError)
+// Module 14712 (MediaModalYoutubeEmbedError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 5696 */;
+import LinkingDefault from "Linking" /* 5698 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[1] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-md/semibold", color: "text-overlay-light", children: first };
-    const tmp9 = closure_4(videoId(5270).Text, obj2);
+    const tmp9 = closure_4(videoId(5271).Text, obj2);
     cResult[1] = tmp4.text;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -75,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           obj.openURL("https://youtube.com/watch?v=" + videoId);
         }
     };
-    const tmp14 = closure_4(videoId(5280).Button, obj3);
+    const tmp14 = closure_4(videoId(5281).Button, obj3);
     cResult[4] = videoId;
     cResult[5] = tmp14;
     tmp12 = tmp14;
@@ -107,7 +107,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_6();
   let obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1125).t.u7vKPs) };
-  const Text = videoId(5270).Text;
+  const Text = videoId(5271).Text;
   intl = videoId(1125).intl;
   items = [closure_4(Text, obj2), ];
   const obj3 = {
@@ -121,7 +121,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj.openURL("https://youtube.com/watch?v=" + videoId);
     }
   };
-  const Button = videoId(5280).Button;
+  const Button = videoId(5281).Button;
   intl2 = videoId(1125).intl;
   items[1] = closure_4(Button, obj3);
   return closure_5(View, obj);

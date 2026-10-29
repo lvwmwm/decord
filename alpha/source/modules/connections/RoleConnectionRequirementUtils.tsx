@@ -1,24 +1,24 @@
-// Module ID: 19447
-// Function ID: 19448
+// Module ID: 19680
+// Function ID: 19681
 // Name: RoleConnectionRequirementUtils
-// Dependencies: [7312, 2]
+// Dependencies: [7336, 2]
 // Exports: displayedValueFor, minDisplayedValueFor, realizedOperatorFor, storedValueFor
 
-// Module 19447 (RoleConnectionRequirementUtils)
-import Constants from "Constants" /* 7312 */;
+// Module 19680 (RoleConnectionRequirementUtils)
+import Constants from "Constants" /* 7336 */;
 import size from "module_2" /* 2 */;
 
 const OperatorTypes = Constants.OperatorTypes;
 const result = size.fileFinishedImporting("modules/connections/RoleConnectionRequirementUtils.tsx");
 
-export const realizedOperatorFor = function realizedOperatorFor(operator) {
+export function realizedOperatorFor(operator) {
   let GREATER_THAN = operator;
   if (operator == null) {
     GREATER_THAN = OperatorTypes.GREATER_THAN;
   }
   return GREATER_THAN;
-};
-export const displayedValueFor = function displayedValueFor(value, realizedOperatorForResult) {
+}
+export function displayedValueFor(value, realizedOperatorForResult) {
   let num = value;
   const _Math = Math;
   const _Number = Number;
@@ -35,8 +35,8 @@ export const displayedValueFor = function displayedValueFor(value, realizedOpera
   } else {
     return roundResult;
   }
-};
-export const storedValueFor = function storedValueFor(TableSwitchRow, c7) {
+}
+export function storedValueFor(TableSwitchRow, c7) {
   let num = TableSwitchRow;
   const _Math = Math;
   const _Number = Number;
@@ -55,11 +55,11 @@ export const storedValueFor = function storedValueFor(TableSwitchRow, c7) {
   } else {
     return str.toString();
   }
-};
-export const minDisplayedValueFor = function minDisplayedValueFor(arg0) {
+}
+export function minDisplayedValueFor(arg0) {
   if (OperatorTypes.GREATER_THAN === arg0) {
     return 1;
   } else if (tmp.LESS_THAN === arg0) {
     return 0;
   }
-};
+}

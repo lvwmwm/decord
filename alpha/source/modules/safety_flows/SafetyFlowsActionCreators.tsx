@@ -1,13 +1,13 @@
-// Module ID: 19731
-// Function ID: 19732
+// Module ID: 19953
+// Function ID: 19954
 // Name: SafetyFlowsActionCreators
-// Dependencies: [5, 1084, 6711, 1272, 6410, 2]
+// Dependencies: [5, 1084, 6734, 1272, 6434, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 19731 (SafetyFlowsActionCreators)
+// Module 19953 (SafetyFlowsActionCreators)
 import Constants from "Constants" /* 1084 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ obj = function _resendVerificationCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -126,12 +126,12 @@ obj = function _resendVerificationCode() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
-export const getCurrentTask = function getCurrentTask() {
+export function getCurrentTask() {
   return obj(...arguments);
-};
-export const completeTask = function completeTask() {
+}
+export function completeTask() {
   return obj(...arguments);
-};
-export const resendVerificationCode = function resendVerificationCode() {
+}
+export function resendVerificationCode() {
   return obj(...arguments);
-};
+}

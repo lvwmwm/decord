@@ -1,24 +1,24 @@
-// Module ID: 10168
-// Function ID: 10169
+// Module ID: 10201
+// Function ID: 10202
 // Name: GIFPickerUtils
-// Dependencies: [1084, 10167, 2]
+// Dependencies: [1084, 10200, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 10168 (GIFPickerUtils)
+// Module 10201 (GIFPickerUtils)
 import Constants from "Constants" /* 1084 */;
-import GifProvider from "GifProvider" /* 10167 */;
+import GifProvider from "GifProvider" /* 10200 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;
 const result = size.fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
-export const isKlipyProvider = function isKlipyProvider(arg0) {
+export function isKlipyProvider(arg0) {
   return arg0 === GifProvider.GIF_PROVIDER_EMBED_NAME;
-};
-export const shouldUseAnimatedWebPThumbnail = function shouldUseAnimatedWebPThumbnail(arg0) {
+}
+export function shouldUseAnimatedWebPThumbnail(arg0) {
   return arg0 === GifProvider.GIF_PROVIDER_EMBED_NAME;
-};
-export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(providerName) {
+}
+export function getGIFThumbnailForFavorite(providerName) {
   if (providerName.providerName === GifProvider.GIF_PROVIDER_EMBED_NAME) {
     const thumbnail = providerName.thumbnail;
     if (null != thumbnail) {
@@ -32,8 +32,8 @@ export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(pr
       return uri;
     }
   }
-};
-export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
+}
+export function calculateAnalyticsMetadata(analyticsID, TRENDING_GIFS, arg2) {
   let limit;
   let num2;
   let obj;
@@ -67,4 +67,4 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
     tmp2 = results;
   }
   return obj4;
-};
+}

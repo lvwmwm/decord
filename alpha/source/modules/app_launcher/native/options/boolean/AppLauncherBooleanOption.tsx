@@ -1,23 +1,23 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12175
+// Function ID: 12176
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 5004, 587, 558, 576, 5072, 6937, 8985, 2]
+// Dependencies: [32, 19, 21, 5005, 587, 558, 576, 5073, 6961, 8988, 2]
 
-// Module 12121 (AppLauncherBooleanOption)
+// Module 12175 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const react_native = tmp(5072);
-const FormCheckbox = tmp(6937);
-const Form = tmp(8985);
+const react_native = tmp(5073);
+const FormCheckbox = tmp(6961);
+const Form = tmp(8988);
 const jsx = Fragment.jsx;
 let obj = { container: obj2, checkboxWrapper: { flexShrink: 0 } };
 obj2 = { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center" };

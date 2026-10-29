@@ -1,25 +1,25 @@
-// Module ID: 18942
-// Function ID: 18943
+// Module ID: 19175
+// Function ID: 19176
 // Name: ChannelCallUtils
-// Dependencies: [19, 7849, 1084, 21, 1125, 18943, 7526, 5246, 5746, 5945, 18940, 1999, 18944, 6680, 18945, 9083, 11332, 11682, 14859, 7, 5699, 8885, 2]
+// Dependencies: [19, 7872, 1084, 21, 1125, 19176, 7549, 5247, 5748, 5947, 19173, 2000, 19177, 6704, 19178, 9086, 11386, 11736, 15094, 7, 5701, 8888, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 18942 (ChannelCallUtils)
+// Module 19175 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5746 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11332 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11682 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14859 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18943 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 18944 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5748 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11386 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11736 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15094 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19176 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19177 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7849 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -31,12 +31,12 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const asyncRequire = tmp(1999);
+const asyncRequire = tmp(2000);
 ({ UserSettingsSections: closure_4, AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire, RPC_APPLICATION_LOGGING_CATEGORY: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallUtils.tsx");
 
-export const voiceSettings = function voiceSettings() {
+export function voiceSettings() {
   let intl;
   let obj = {
     label: intl.string(intl2.t.dsXapM),
@@ -51,8 +51,8 @@ export const voiceSettings = function voiceSettings() {
   };
   intl = intl2.intl;
   return obj;
-};
-export const videoParticipantsHidden = function videoParticipantsHidden(arg0, arg1) {
+}
+export function videoParticipantsHidden(arg0, arg1) {
   let id;
   let intl;
   _require = arg0;
@@ -67,8 +67,8 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
   };
   intl = require("intl").intl;
   return obj;
-};
-export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
+}
+export function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
   let closure_1;
   let closure_0 = arg0;
   importDefault = arg1;
@@ -77,7 +77,7 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(18940, dependencyMap.paths);
+      const promise = asyncRequire(19173, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -89,8 +89,8 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
     isDismissable: false
   };
   obj.openLazy(obj2);
-};
-export const selfVideoHidden = function selfVideoHidden(arg0, arg1) {
+}
+export function selfVideoHidden(arg0, arg1) {
   let intl;
   let closure_0 = arg1;
   const obj = {
@@ -102,8 +102,8 @@ export const selfVideoHidden = function selfVideoHidden(arg0, arg1) {
   };
   intl = intl2.intl;
   return obj;
-};
-export const reportStreamIssue = function reportStreamIssue(stream) {
+}
+export function reportStreamIssue(stream) {
   let intl;
   _require = stream;
   let obj = {
@@ -121,14 +121,14 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(18945, tmp2.paths);
+      const tmp7 = asyncRequire(19178, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };
   intl = require("intl").intl;
   return obj;
-};
-export const invite = function invite(dependencyMap, stream, targetApplicationId) {
+}
+export function invite(dependencyMap, stream, targetApplicationId) {
   let intl;
   let onPress;
   _require = dependencyMap;
@@ -162,8 +162,8 @@ export const invite = function invite(dependencyMap, stream, targetApplicationId
   let obj = { label: intl.string(require("intl").t.VINpSK), icon: AssetRegistryDefault, onPress };
   intl = require("intl").intl;
   return obj;
-};
-export const rtcDebugPanel = function rtcDebugPanel(arg0) {
+}
+export function rtcDebugPanel(arg0) {
   let closure_0;
   let intl;
   _require = arg0;
@@ -178,8 +178,8 @@ export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   };
   intl = require("intl").intl;
   return obj;
-};
-export const shareActivityLogs = function shareActivityLogs() {
+}
+export function shareActivityLogs() {
   let intl;
   let obj = {
     label: intl.string(intl2.t.iQzQs3),
@@ -204,4 +204,4 @@ export const shareActivityLogs = function shareActivityLogs() {
   };
   intl = intl2.intl;
   return obj;
-};
+}

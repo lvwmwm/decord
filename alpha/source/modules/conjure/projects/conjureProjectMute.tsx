@@ -1,10 +1,10 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 10835
+// Function ID: 10836
 // Name: conjureProjectMute
-// Dependencies: [1243, 558, 576, 504, 4837, 1208, 2]
+// Dependencies: [1243, 558, 576, 504, 4838, 1208, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted
 
-// Module 10760 (conjureProjectMute)
+// Module 10835 (conjureProjectMute)
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -83,7 +83,7 @@ const result = size.fileFinishedImporting("modules/conjure/projects/conjureProje
 
 export { isConjureProjectMuted };
 export const useIsConjureProjectMuted = tmp2;
-export const setConjureProjectMuted = function setConjureProjectMuted(id, arg1) {
+export function setConjureProjectMuted(id, arg1) {
   let closure_1;
   _require = id;
   dependencyMap = arg1;
@@ -99,4 +99,4 @@ export const setConjureProjectMuted = function setConjureProjectMuted(id, arg1) 
       delete projects.projects[id];
     }
   }, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
-};
+}

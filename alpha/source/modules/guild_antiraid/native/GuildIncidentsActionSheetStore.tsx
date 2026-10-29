@@ -1,12 +1,12 @@
-// Module ID: 12833
-// Function ID: 12834
+// Module ID: 13054
+// Function ID: 13055
 // Name: GuildIncidentsActionSheetStore
-// Dependencies: [8419, 570, 1271, 2]
+// Dependencies: [8441, 570, 1271, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 12833 (GuildIncidentsActionSheetStore)
+// Module 13054 (GuildIncidentsActionSheetStore)
 import react_native from "react-native" /* 1271 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8419 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8441 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const useGuildIncidentsActionSheetStore = module_570.create(() => ({ time: DEFAU
 const result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
 
 export { useGuildIncidentsActionSheetStore };
-export const setTime = function setTime(diff) {
+export function setTime(diff) {
   let time;
   _require = diff;
   let obj = require("react-native");
@@ -26,32 +26,32 @@ export const setTime = function setTime(diff) {
     const obj = { time, hasTimeChanges: true };
     return obj.setState(obj);
   });
-};
-export const setInitialTime = function setInitialTime(time) {
+}
+export function setInitialTime(time) {
   _require = time;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { time, hasTimeChanges: false };
     return obj.setState(obj);
   });
-};
-export const setPauseInvites = function setPauseInvites(pauseInvites) {
+}
+export function setPauseInvites(pauseInvites) {
   _require = pauseInvites;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { pauseInvites };
     return obj.setState(obj);
   });
-};
-export const setPauseDms = function setPauseDms(pauseDms) {
+}
+export function setPauseDms(pauseDms) {
   _require = pauseDms;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { pauseDms };
     return obj.setState(obj);
   });
-};
-export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsActionSheetStore() {
+}
+export function resetGuildIncidentsActionSheetStore() {
   let state;
   let time;
   let obj = react_native;
@@ -59,4 +59,4 @@ export const resetGuildIncidentsActionSheetStore = function resetGuildIncidentsA
     const obj = { time, pauseInvites: true, pauseDms: true, hasTimeChanges: false };
     state.setState(obj);
   });
-};
+}

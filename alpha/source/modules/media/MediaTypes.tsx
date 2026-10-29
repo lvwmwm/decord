@@ -1,14 +1,14 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6060
+// Function ID: 6061
 // Name: MediaTypes
-// Dependencies: [1084, 1402, 1997, 6035, 1383, 2]
+// Dependencies: [1084, 1402, 1998, 6039, 1383, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 6056 (MediaTypes)
+// Module 6060 (MediaTypes)
 import Constants from "Constants" /* 1084 */;
 import URLUtilsDefault from "URLUtils" /* 1383 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
 import size_mod from "module_2" /* 2 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {
@@ -35,7 +35,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (hasFlag2(num3, tmp4.IS_ANIMATED)) {
     num4 = obj2.IS_ANIMATED | 0;
   }
-  size = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1997).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: tmp8, flags: num4 };
+  size = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1998).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: tmp8, flags: num4 };
   tmp8 = undefined;
   if (null != flags.content_scan_version) {
     obj = { version: flags.content_scan_version, flags: num2 };
@@ -51,11 +51,11 @@ const result = size.fileFinishedImporting("modules/media/MediaTypes.tsx");
 
 export { ContentScanFlags };
 export const ImageEncoder = { NATIVE: "native", JPEGLI: "jpegli", JPEG_IOS: "jpeg_ios", PASSTHROUGH: "passthrough", WIC: "wic", IMAGEIO: "imageio", SYSIMG_STUB: "sysimg_stub", SYSIMG_UNKNOWN: "sysimg_unknown" };
-export const toContentScanMetadata = function toContentScanMetadata(version) {
+export function toContentScanMetadata(version) {
   return { version: version.version, flags: version.flags };
-};
+}
 export const UnfurledMediaItemFlags = obj2;
-export const toUnfurledMediaItem = function toUnfurledMediaItem(media) {
+export function toUnfurledMediaItem(media) {
   let num;
   let tmp;
   size = { url: media.url, proxyUrl: media.proxy_url, height: media.height, width: media.width, placeholder: media.placeholder, placeholderVersion: media.placeholder_version, contentType: media.content_type, originalContentType: media.original_content_type, loadingState: media.loading_state, contentScanMetadata: tmp, flags: num };
@@ -70,9 +70,9 @@ export const toUnfurledMediaItem = function toUnfurledMediaItem(media) {
     num = 0;
   }
   return size;
-};
+}
 export { messageAttachmentToUnfurledMediaItem };
-export const getUnfurledMediaItemType = function getUnfurledMediaItemType(contentType) {
+export function getUnfurledMediaItemType(contentType) {
   let str = "IMAGE";
   const obj = MediaFormatTesters;
   if (!obj.isImageContentType(contentType.contentType)) {
@@ -91,8 +91,8 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
     str = str3;
   }
   return str;
-};
-export const messageAttachmentToMediaItem = function messageAttachmentToMediaItem(found2, tmp2Result) {
+}
+export function messageAttachmentToMediaItem(found2, tmp2Result) {
   let str;
   const obj = { type: str, alt: found2.description, sourceMetadata: obj3 };
   const merged = Object.assign(messageAttachmentToUnfurledMediaItem(found2));
@@ -107,15 +107,15 @@ export const messageAttachmentToMediaItem = function messageAttachmentToMediaIte
     str = str2;
   }
   return obj;
-};
-export const embedMediaToMediaItem = function embedMediaToMediaItem(thumbnail, sourceMetadata, IMAGE) {
+}
+export function embedMediaToMediaItem(thumbnail, sourceMetadata, IMAGE) {
   size = { type: IMAGE, url: thumbnail.url, proxyUrl: thumbnail.proxyURL, width: thumbnail.width, height: thumbnail.height, placeholder: thumbnail.placeholder, placeholderVersion: thumbnail.placeholderVersion, sourceMetadata, contentType: thumbnail.contentType };
   return size;
-};
-export const isVisualUnfurledMediaItem = function isVisualUnfurledMediaItem(width) {
+}
+export function isVisualUnfurledMediaItem(width) {
   return null != width.width && width.width > 0 && null != width.height && width.height > 0;
-};
-export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
+}
+export function getMediaItemDisplayUrl(type) {
   if (null == type) {
     return null;
   } else {
@@ -141,4 +141,4 @@ export const getMediaItemDisplayUrl = function getMediaItemDisplayUrl(type) {
     }
     return proxyUrl;
   }
-};
+}

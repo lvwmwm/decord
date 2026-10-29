@@ -1,28 +1,28 @@
-// Module ID: 18992
-// Function ID: 18993
+// Module ID: 19225
+// Function ID: 19226
 // Name: shared/DMChannel
-// Dependencies: [19, 6740, 21, 558, 576, 5743, 10726, 5004, 587, 18385, 18067, 16947, 11, 5289, 18986, 6944, 18984, 14001, 5679, 18384, 5640, 2]
+// Dependencies: [19, 6763, 21, 558, 576, 5745, 10759, 5005, 587, 18619, 18301, 17186, 11, 5290, 19219, 6968, 19217, 14234, 5681, 18618, 5641, 2]
 
-// Module 18992 (shared/DMChannel)
+// Module 19225 (shared/DMChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useFontScale from "useFontScale" /* 5289 */;
-import useChannelNameDefault from "useChannelName" /* 5640 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5679 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10726 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16947 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 18067 */;
-import renderChannelItemDefault from "renderChannelItem" /* 18384 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18385 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 18984 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 18986 */;
+import useFontScale from "useFontScale" /* 5290 */;
+import useChannelNameDefault from "useChannelName" /* 5641 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5681 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 17186 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 18301 */;
+import renderChannelItemDefault from "renderChannelItem" /* 18618 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18619 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19217 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19219 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -148,7 +148,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmpResult2 = useFontScale;
   const fontScale = tmpResult2.useFontScale();
   const tmp12Result3 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp(6944).PressableHighlight;
+  const PressableHighlight = tmp(6968).PressableHighlight;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { borderRadius: first.container.borderRadius };
     cResult[3] = obj3;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     let tmp23 = null != tmp13;
     if (tmp23) {
-      const ChannelRowPreview = tmp(14001).ChannelRowPreview;
+      const ChannelRowPreview = tmp(14234).ChannelRowPreview;
       tmp23 = <ChannelRowPreview channel={channel} message={tmp13} color={str} muted={undefined !== muted && muted} layout={ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT} />;
     }
     cResult[9] = channel;
@@ -270,14 +270,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
   const tmp2Result3 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp5(6944).PressableHighlight;
+  const PressableHighlight = tmp5(6968).PressableHighlight;
   const merged = Object.assign(closure_6(channel, flag));
   const obj3 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: useChannelNameDefault(channel), fontScale };
   tmp11Result = null != tmp7;
   const tmp2Result4 = renderChannelItemDefault;
   if (tmp11Result) {
     const obj5 = { channel, message: tmp7, color: str, muted, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT };
-    const ChannelRowPreview = tmp5(14001).ChannelRowPreview;
+    const ChannelRowPreview = tmp5(14234).ChannelRowPreview;
     tmp11Result = tmp11(ChannelRowPreview, obj5);
   }
   return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj3)}</PressableHighlight>);

@@ -1,14 +1,14 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11296
+// Function ID: 11297
 // Name: ActivityFlagUtils
-// Dependencies: [1084, 4832, 510, 1402, 7847, 2]
+// Dependencies: [1084, 4833, 510, 1402, 7870, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 11242 (ActivityFlagUtils)
+// Module 11296 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7847 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7870 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let closure_4;
 ({ ActivityFlags: c3, ActivityPartyPrivacy: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/ActivityFlagUtils.tsx");
 
-export const computeActivityFlags = function computeActivityFlags(secrets, hasFlagResult, arg2, isFrameAppResult, privacy) {
+export function computeActivityFlags(secrets, hasFlagResult, arg2, isFrameAppResult, privacy) {
   let tmp12;
   let flag = hasFlagResult;
   if (hasFlagResult === undefined) {
@@ -106,8 +106,8 @@ export const computeActivityFlags = function computeActivityFlags(secrets, hasFl
     }
   }
   return tmp12;
-};
-export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActivity(remoteApplicationActivity) {
+}
+export function isContextlessEmbeddedActivity(remoteApplicationActivity) {
   let num;
   const hasFlag = FlagUtils.hasFlag;
   FlagUtils;
@@ -119,4 +119,4 @@ export const isContextlessEmbeddedActivity = function isContextlessEmbeddedActiv
   }
   const hasFlagResult = hasFlag(num, constants.CONTEXTLESS) && isEmbeddedActivityDefault(remoteApplicationActivity);
   return hasFlagResult;
-};
+}

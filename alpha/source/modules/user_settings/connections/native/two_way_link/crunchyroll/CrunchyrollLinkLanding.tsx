@@ -1,16 +1,16 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14565
+// Function ID: 14566
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 14330, 1084, 21, 5004, 1125, 8802, 558, 576, 1502, 2064, 9652, 14332, 2]
+// Dependencies: [19, 14564, 1084, 21, 5005, 1125, 8805, 558, 576, 1503, 2065, 9684, 14566, 2]
 
-// Module 14331 (CrunchyrollLinkLanding)
+// Module 14565 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14330 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14332 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14564 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14566 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,10 +32,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const obj = navigation(576);
   const cResult = obj.c(9);
   const tmp4 = closure_8();
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { label: intl.string(navigation(1125).t["2TXHQd"]), icon: navigation(8802).PlayIcon };
+    const obj3 = { label: intl.string(navigation(1125).t["2TXHQd"]), icon: navigation(8805).PlayIcon };
     intl = tmp(1125).intl;
     const items = [obj3];
     cResult[0] = items;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
     }
     return tmp16;
   }
-  const TwoWayLinkLanding = tmp(9652).TwoWayLinkLanding;
+  const TwoWayLinkLanding = tmp(9684).TwoWayLinkLanding;
   const tmp17 = <TwoWayLinkLanding platformType={constants2.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={image} headerConnect={tmp8} body={tmp9} learnMoreLink={tmp10} onNext={tmp7} valueProps={first} />;
   cResult[6] = tmp7;
   cResult[7] = tmp4.image;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   tmp16 = tmp17;
 }) : (function CrunchyrollLinkLanding() {
   const tmp = closure_8();
-  let obj = navigation(1502);
+  let obj = navigation(1503);
   navigation = obj.useNavigation();
   let items = [navigation];
   const memo = react.useMemo(() => {
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const TwoWayLinkLanding = navigation(9652).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9684).TwoWayLinkLanding;
   let intl = navigation(1125).intl;
   const intl2 = navigation(1125).intl;
   const obj3 = HelpdeskUtilsDefault;

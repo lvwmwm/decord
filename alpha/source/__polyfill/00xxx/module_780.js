@@ -15,7 +15,7 @@ import _mod745 from "module_745" /* 745 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getTraceData = function getTraceData() {
+export function getTraceData() {
   let propagationSpanId;
   let propagationSpanId2;
   let sampled;
@@ -96,4 +96,4 @@ export const getTraceData = function getTraceData() {
     }
   }
   return {};
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 19795
-// Function ID: 19796
+// Module ID: 20017
+// Function ID: 20018
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 1084, 3, 566, 562, 559, 1264, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 19795 (libDiscoreSmokeTest)
+// Module 20017 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import initLibdiscore from "initLibdiscore" /* 566 */;
@@ -31,7 +31,7 @@ let obj = function _libDiscoreSmokeTest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _libDiscoreSmokeTest() {
           c6 = true;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {
@@ -142,7 +142,7 @@ const result = size.fileFinishedImporting("modules/libdiscore/libDiscoreSmokeTes
 export default libDiscoreSmokeTest;
 export { libDiscoreSmokeTest };
 export { trackLibdiscoreSuccess };
-export const formatErrorMessage = function formatErrorMessage(arg0) {
+export function formatErrorMessage(arg0) {
   let message;
   let name;
   if (arg0 instanceof Error) {
@@ -165,5 +165,5 @@ export const formatErrorMessage = function formatErrorMessage(arg0) {
     combined = "" + name + ": " + text;
   }
   return combined;
-};
+}
 export { trackLibdiscoreFailure };

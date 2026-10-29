@@ -1,16 +1,16 @@
-// Module ID: 7352
-// Function ID: 7353
+// Module ID: 7376
+// Function ID: 7377
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1389, 558, 576, 4832, 6689, 7353, 5680, 6694, 2]
+// Dependencies: [1389, 558, 576, 4833, 6713, 7377, 5682, 6718, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults
 
-// Module 7352 (AgeRestrictedContentSettingsUtils)
+// Module 7376 (AgeRestrictedContentSettingsUtils)
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6694 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7353 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7377 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -162,7 +162,7 @@ const result = size.fileFinishedImporting("modules/user_settings/content_and_soc
 export { resolveNsfwTogglesWithDefaults };
 export const useViewNsfwCommandsOrDefault = tmp2;
 export const useViewNsfwGuildsOrDefault = tmp3;
-export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefault() {
+export function getViewNsfwCommandsOrDefault() {
   let nsfwAllowed;
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
   let flag = ViewNsfwCommands.getSetting();
@@ -189,8 +189,8 @@ export const getViewNsfwCommandsOrDefault = function getViewNsfwCommandsOrDefaul
     tmp4 = tmp5;
   }
   return tmp4;
-};
-export const getViewNsfwGuildsOrDefault = function getViewNsfwGuildsOrDefault() {
+}
+export function getViewNsfwGuildsOrDefault() {
   let nsfwAllowed;
   const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.getSetting();
@@ -217,4 +217,4 @@ export const getViewNsfwGuildsOrDefault = function getViewNsfwGuildsOrDefault() 
     tmp4 = tmp5;
   }
   return tmp4;
-};
+}

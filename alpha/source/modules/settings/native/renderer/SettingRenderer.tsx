@@ -1,39 +1,39 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16485
+// Function ID: 16486
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2065, 16246, 4878, 11249, 21, 5004, 587, 1199, 6939, 504, 1502, 16248, 558, 576, 1125, 10606, 6919, 16250, 16251, 5270, 7332, 7331, 5018, 7021, 7020, 7321, 5698, 11663, 5248, 5249, 6941, 6013, 1900, 1381, 15539, 6944, 5280, 5288, 16252, 1893, 2]
+// Dependencies: [32, 109, 19, 17, 2066, 16484, 4879, 11303, 21, 5005, 587, 1199, 6963, 504, 1503, 16486, 558, 576, 1125, 10639, 6943, 16488, 16489, 5271, 7356, 7355, 5019, 7045, 7044, 7345, 5700, 11717, 5249, 5250, 6965, 6015, 1901, 1381, 15773, 6968, 5281, 5289, 16490, 1894, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 16247 (SettingRenderer)
+// Module 16485 (SettingRenderer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import react3 from "react" /* 5018 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useToken from "useToken" /* 5288 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import GuildIcon from "GuildIcon" /* 6919 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import FormSwitch from "FormSwitch" /* 7332 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11663 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16248 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 16250 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 16251 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 16252 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import react3 from "react" /* 5019 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useToken from "useToken" /* 5289 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import GuildIcon from "GuildIcon" /* 6943 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import FormSwitch from "FormSwitch" /* 7356 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11717 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16486 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 16488 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 16489 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 16490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16246 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11249 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16484 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11303 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ let obj4;
 let size;
 let tmp;
 let tmp2;
-const TableRow2 = tmp(6939);
-const TableRadioGroup2 = tmp2(7021);
-const ClydeIcon = tmp(10606);
+const TableRow2 = tmp(6963);
+const TableRadioGroup2 = tmp2(7045);
+const ClydeIcon = tmp(10639);
 function RouteSettingSearchResult(setting) {
   let IconComponent;
   let breadcrumbs;
@@ -459,19 +459,19 @@ let closure_22 = react.memo(function PressableSetting(arg0) {
   }
   const obj3 = { label: title, subLabel: description, arrow: withArrow, variant, icon: tmp11Result, onPress, disabled: true === isDisabled, trailing: tmp13, start, end };
   tmp11Result = null;
-  const TableRow = tmp(6939).TableRow;
+  const TableRow = tmp(6963).TableRow;
   const tmp10 = closure_15;
   const tmp9 = authStore3;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(6939).TableRow.Icon, obj4);
+    tmp11Result = tmp11(tmp(6963).TableRow.Icon, obj4);
   }
   tmp13 = undefined;
   if (null != trailing) {
     let tmp11Result2 = trailing;
     if (typeof trailing === "string") {
       const obj5 = { text: trailing };
-      tmp11Result2 = tmp11(tmp(6939).TableRow.TrailingText, obj5);
+      tmp11Result2 = tmp11(tmp(6963).TableRow.TrailingText, obj5);
     }
     tmp13 = tmp11Result2;
   }
@@ -532,7 +532,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disabl
     let tmp10Result = description;
     if (!react.isValidElement(description)) {
       let str = descriptionVariant;
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       const tmp10 = syncedClientThemes;
       if (descriptionVariant == null) {
         str = "text-xs/medium";
@@ -617,11 +617,11 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
   tmp9 = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp9 = syncedClientThemes(tmp(6939).TableRow.Icon, obj4);
+    tmp9 = syncedClientThemes(tmp(6963).TableRow.Icon, obj4);
   }
   if (typeof isDisabled === "object") {
     const obj6 = { subLabel: syncedClientThemes(closure_23, obj7), accessible: true, trailing: syncedClientThemes(View, obj8) };
-    const TableRow = tmp(6939).TableRow;
+    const TableRow = tmp(6963).TableRow;
     const merged = Object.assign(obj3);
     obj7 = { disabledActionLabel: isDisabled.label, description, descriptionVariant: "text-md/semibold", descriptionColor: "mobile-text-heading-primary" };
     ({ accessibilityHint: obj5.accessibilityHint, onPress: obj5.onPress } = isDisabled);
@@ -631,7 +631,7 @@ let closure_24 = react.memo(function ToggleSetting(arg0) {
     tmp18 = syncedClientThemes;
   } else {
     const obj10 = { disabled: isDisabled, onValueChange, value };
-    const TableSwitchRow = tmp(7331).TableSwitchRow;
+    const TableSwitchRow = tmp(7355).TableSwitchRow;
     const merged1 = Object.assign(obj3);
     tmp17 = syncedClientThemes(TableSwitchRow, obj10);
     tmp18 = syncedClientThemes;
@@ -757,7 +757,7 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   let trailing;
   const tmp = trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(16250);
+  let obj = trailing(16488);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   let obj2 = trailing(504);
   const items = [LocaleStore];
@@ -786,7 +786,7 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   }, items1);
   const obj3 = { label: title, subLabel: description, onPress: tmp13, variant, disabled: isDisabled, icon: tmp12Result, trailing: tmp12Result2, start, end };
   tmp13 = null;
-  const TableRow = tmp(6939).TableRow;
+  const TableRow = tmp(6963).TableRow;
   const tmp10 = closure_16;
   const tmp11 = closure_15;
   if (null != trailing) {
@@ -795,12 +795,12 @@ let closure_27 = react.memo(function StaticSetting(arg0) {
   tmp12Result = null;
   if (null != IconComponent) {
     const obj4 = { IconComponent, variant };
-    tmp12Result = tmp12(tmp(6939).TableRow.Icon, obj4);
+    tmp12Result = tmp12(tmp(6963).TableRow.Icon, obj4);
   }
   tmp12Result2 = null;
   if (null != trailing) {
     const obj5 = { text: trailing };
-    tmp12Result2 = tmp12(tmp(6939).TableRow.TrailingText, obj5);
+    tmp12Result2 = tmp12(tmp(6963).TableRow.TrailingText, obj5);
   }
   const children = [closure_14(TableRow, obj3), ];
   if (highlightSettingItem) {
@@ -1277,7 +1277,7 @@ size = size_mod;
 let result = size.fileFinishedImporting("modules/settings/native/renderer/SettingRenderer.tsx");
 
 export const GuildSelectDefaultIcon = tmp5;
-export const renderSettingItem = function renderSettingItem(item) {
+export function renderSettingItem(item) {
   let end;
   let setting;
   let settingData;
@@ -1317,8 +1317,8 @@ export const renderSettingItem = function renderSettingItem(item) {
     const merged7 = Object.assign(settingData);
     return syncedClientThemes(closure_29, obj);
   }
-};
-export const renderSettingSearchResultItem = function renderSettingSearchResultItem(settingData) {
+}
+export function renderSettingSearchResultItem(settingData) {
   settingData = settingData.settingData;
   const tmp = _objectWithoutProperties(settingData, closure_4);
   const type = settingData.type;
@@ -1342,8 +1342,8 @@ export const renderSettingSearchResultItem = function renderSettingSearchResultI
     const error = new Error("[SettingRenderer] Found unsupported renderer type for setting: " + settingData.setting);
     throw error;
   }
-};
-export const renderSettingSearchResultPlaceholderItem = function renderSettingSearchResultPlaceholderItem(start) {
+}
+export function renderSettingSearchResultPlaceholderItem(start) {
   const obj = { start: start.start, end: start.end };
   return syncedClientThemes(closure_35, obj);
-};
+}

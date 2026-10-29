@@ -1,16 +1,16 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11692
+// Function ID: 11693
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1258, 5915, 5850, 1453, 558, 576, 504, 510, 7864, 2]
+// Dependencies: [1258, 5917, 5852, 1454, 558, 576, 504, 510, 7887, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality
 
-// Module 11638 (GoLiveAutoQualityExperiment)
+// Module 11692 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5850 */;
-import StreamActionCreators from "StreamActionCreators" /* 7864 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5852 */;
+import StreamActionCreators from "StreamActionCreators" /* 7887 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5915 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1453 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5917 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let result = size.fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperi
 
 export { getGoLiveAutoQualityExperimentConfig };
 export const useGoLiveAutoQualityExperimentConfig = tmp5;
-export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
+export function maybeMigrateToAutoQuality() {
   const migrateAutoQuality = closure_6.getConfig({ location: "maybeMigrateToAutoQuality" }).migrateAutoQuality;
   const Storage = Storage3.Storage;
   let num = Storage.get(GoLiveAutoQualityMigrationVersion);
@@ -95,4 +95,4 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
       }
     }
   }
-};
+}

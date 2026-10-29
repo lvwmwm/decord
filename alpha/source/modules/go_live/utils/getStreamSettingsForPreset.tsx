@@ -1,13 +1,13 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11690
+// Function ID: 11691
 // Name: getStreamSettingsForPreset
-// Dependencies: [5850, 11637, 1381, 5881, 2]
+// Dependencies: [5852, 11691, 1381, 5883, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 11636 (getStreamSettingsForPreset)
+// Module 11690 (getStreamSettingsForPreset)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11637 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5850 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11691 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5852 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -50,7 +50,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
             let tmp26Result = tmp26(1381);
             if (tmp26Result.isDesktop()) {
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(5881)("getStreamSettingsForPreset", user, arg3);
+              let tmp11 = tmp4(5883)("getStreamSettingsForPreset", user, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {
@@ -87,7 +87,7 @@ const result = size.fileFinishedImporting("modules/go_live/utils/getStreamSettin
 
 export default getStreamSettingsForPreset;
 export { getApplicationStreamPresetValues };
-export const getMaxSettingsForPreset = function getMaxSettingsForPreset(PRESET_MOBILE_DEFAULT) {
+export function getMaxSettingsForPreset(PRESET_MOBILE_DEFAULT) {
   const tmp = getApplicationStreamPresetValues()[PRESET_MOBILE_DEFAULT];
   let first;
   if (tmp != null) {
@@ -97,7 +97,7 @@ export const getMaxSettingsForPreset = function getMaxSettingsForPreset(PRESET_M
     first = null;
   }
   return first;
-};
-export const canStreamWithPreset = function canStreamWithPreset(arg0, user, guildPremiumTier, arg3) {
+}
+export function canStreamWithPreset(arg0, user, guildPremiumTier, arg3) {
   return null != getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3);
-};
+}

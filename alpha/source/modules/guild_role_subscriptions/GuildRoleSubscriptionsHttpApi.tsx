@@ -1,10 +1,10 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7416
+// Function ID: 7417
 // Name: GuildRoleSubscriptionsHttpApi
-// Dependencies: [5, 1084, 1095, 1294, 6409, 2]
+// Dependencies: [5, 1084, 1095, 1294, 6433, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 7393 (GuildRoleSubscriptionsHttpApi)
+// Module 7416 (GuildRoleSubscriptionsHttpApi)
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -31,7 +31,7 @@ let obj = function _updateGuildRoleSubscriptionGroupListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ obj = function _createGuildRoleSubscriptionGroupListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ obj = function _deleteGuildRoleSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -224,7 +224,7 @@ obj = function _deleteGuildRoleSubscriptionGroupListing() {
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         closure_4 = tmp14;
@@ -259,7 +259,7 @@ obj = function _createGuildRoleSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -279,7 +279,7 @@ obj = function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -357,7 +357,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -449,7 +449,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -476,7 +476,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
             obj6 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -564,7 +564,7 @@ obj = function _updateGuildRoleSubscriptionsSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -640,7 +640,7 @@ obj = function _getPriceTiers() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -716,7 +716,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -739,7 +739,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
             }
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -809,7 +809,7 @@ obj = function _getGuildRoleSubscriptionGroupForSubscriptionPlan() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -886,7 +886,7 @@ obj = function _deleteGuildRoleSubscriptionListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -931,7 +931,7 @@ obj = function _deleteGuildRoleSubscriptionListing() {
         } else {
           c6 = 0;
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         closure_5 = tmp14;
@@ -962,7 +962,7 @@ obj = function _archiveGuildRoleSubscriptionListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -1037,7 +1037,7 @@ obj = function _getGuildRoleSubscriptionTrials() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -1116,7 +1116,7 @@ obj = function _updateGuildRoleSubscriptionsTrial() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -1190,7 +1190,7 @@ obj = function _getGuildRoleSubscriptionTrialEligibility() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -1266,7 +1266,7 @@ obj = function _getGuildMonetizationRestrictions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -1291,7 +1291,7 @@ obj = function _getGuildMonetizationRestrictions() {
             signal = obj4.signal;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -1360,7 +1360,7 @@ obj = function _fetchHighlightedCreatorGuildDetails() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -1436,57 +1436,57 @@ const Endpoints = Constants.Endpoints;
 const PriceTierTypes = Constants2.PriceTierTypes;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsHttpApi.tsx");
 
-export const updateGuildRoleSubscriptionGroupListing = function updateGuildRoleSubscriptionGroupListing() {
+export function updateGuildRoleSubscriptionGroupListing() {
   return obj(...arguments);
-};
-export const createGuildRoleSubscriptionGroupListing = function createGuildRoleSubscriptionGroupListing() {
+}
+export function createGuildRoleSubscriptionGroupListing() {
   return obj(...arguments);
-};
-export const deleteGuildRoleSubscriptionGroupListing = function deleteGuildRoleSubscriptionGroupListing() {
+}
+export function deleteGuildRoleSubscriptionGroupListing() {
   return obj(...arguments);
-};
-export const createGuildRoleSubscriptionListing = function createGuildRoleSubscriptionListing() {
+}
+export function createGuildRoleSubscriptionListing() {
   return obj(...arguments);
-};
-export const updateGuildRoleSubscriptionListing = function updateGuildRoleSubscriptionListing() {
+}
+export function updateGuildRoleSubscriptionListing() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionGroupListingsForGuild = function getGuildRoleSubscriptionGroupListingsForGuild() {
+}
+export function getGuildRoleSubscriptionGroupListingsForGuild() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionsSettings = function getGuildRoleSubscriptionsSettings() {
+}
+export function getGuildRoleSubscriptionsSettings() {
   return obj(...arguments);
-};
-export const updateGuildRoleSubscriptionsSettings = function updateGuildRoleSubscriptionsSettings() {
+}
+export function updateGuildRoleSubscriptionsSettings() {
   return obj(...arguments);
-};
-export const getPriceTiers = function getPriceTiers() {
+}
+export function getPriceTiers() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionGroupListing = function getGuildRoleSubscriptionGroupListing() {
+}
+export function getGuildRoleSubscriptionGroupListing() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionGroupForSubscriptionPlan = function getGuildRoleSubscriptionGroupForSubscriptionPlan() {
+}
+export function getGuildRoleSubscriptionGroupForSubscriptionPlan() {
   return obj(...arguments);
-};
-export const deleteGuildRoleSubscriptionListing = function deleteGuildRoleSubscriptionListing() {
+}
+export function deleteGuildRoleSubscriptionListing() {
   return obj(...arguments);
-};
-export const archiveGuildRoleSubscriptionListing = function archiveGuildRoleSubscriptionListing() {
+}
+export function archiveGuildRoleSubscriptionListing() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionTrials = function getGuildRoleSubscriptionTrials() {
+}
+export function getGuildRoleSubscriptionTrials() {
   return obj(...arguments);
-};
-export const updateGuildRoleSubscriptionsTrial = function updateGuildRoleSubscriptionsTrial() {
+}
+export function updateGuildRoleSubscriptionsTrial() {
   return obj(...arguments);
-};
-export const getGuildRoleSubscriptionTrialEligibility = function getGuildRoleSubscriptionTrialEligibility() {
+}
+export function getGuildRoleSubscriptionTrialEligibility() {
   return obj(...arguments);
-};
-export const getGuildMonetizationRestrictions = function getGuildMonetizationRestrictions() {
+}
+export function getGuildMonetizationRestrictions() {
   return obj(...arguments);
-};
-export const fetchHighlightedCreatorGuildDetails = function fetchHighlightedCreatorGuildDetails() {
+}
+export function fetchHighlightedCreatorGuildDetails() {
   return obj(...arguments);
-};
+}

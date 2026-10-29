@@ -1,48 +1,30 @@
 // Module ID: 5423
 // Function ID: 5424
-// Dependencies: [5401, 5416, 5392]
-// Exports: usePinchGesture
+// Dependencies: [5402, 5417, 5393]
+// Exports: useLongPressGesture
 
 // Module 5423
-import ComposedGestureName from "ComposedGestureName" /* 5392 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5401 */;
-import _mod5416 from "module_5416" /* 5416 */;
+import ComposedGestureName from "ComposedGestureName" /* 5393 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5402 */;
+import _mod5417 from "module_5417" /* 5417 */;
 
-function transformPinchProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
-  } else {
-    scaleChange = scale;
+function transformLongPressProps(shouldCancelWhenOutside) {
+  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
+    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
   }
-  return { scaleChange };
+  return shouldCancelWhenOutside;
 }
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 7517335332069;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 10393435493424;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
-const map = new Map();
-let closure_6 = {};
+const items = [["minDuration", "minDurationMs"], ["maxDistance", "maxDist"]];
+const map = new Map(items);
+let closure_4 = {};
 
-export const usePinchGesture = function usePinchGesture(cResult) {
+export function useLongPressGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
-    tmp = closure_6;
+    tmp = closure_4;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod5416;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
-};
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
+  const obj2 = _mod5417;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
+}

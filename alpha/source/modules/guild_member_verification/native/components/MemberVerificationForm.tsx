@@ -1,26 +1,26 @@
-// Module ID: 6929
-// Function ID: 6930
+// Module ID: 6953
+// Function ID: 6954
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6911, 1084, 21, 5004, 5699, 1125, 558, 576, 6913, 5038, 5635, 504, 6930, 6885, 6931, 7069, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 6935, 1084, 21, 5005, 5701, 1125, 558, 576, 6937, 5039, 5636, 504, 6954, 6909, 6955, 7093, 5281, 2]
 // Exports: default
 
-// Module 6929 (MemberVerificationForm)
+// Module 6953 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5038 */;
-import useInitialValueDefault from "useInitialValue" /* 5635 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6911 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5039 */;
+import useInitialValueDefault from "useInitialValue" /* 5636 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const MemberVerificationFormStore = MemberVerificationFormStore2;
-let _require, c5, c6, importDefault;
+let _require, c5, c6, importDefault, version;
 
 let c10;
 let unpackModuleId;
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReq
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(5635)(tmp7);
+    return initialVerification(5636)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;
@@ -418,7 +418,7 @@ export default function MemberVerificationForm(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -444,7 +444,7 @@ export default function MemberVerificationForm(guild) {
                 if (tmp33) {
                   showIncompleteToast();
                   c6 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 } else {
                   _undefined2(null);
                   _undefined(true);
@@ -470,7 +470,7 @@ export default function MemberVerificationForm(guild) {
             if (body != null) {
               body = body.body;
             }
-            let version;
+            version = undefined;
             const tmp19 = closure_130_9;
             if (body != null) {
               const errors = body.errors;
@@ -517,7 +517,7 @@ export default function MemberVerificationForm(guild) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp49) {
           body = tmp49;
           if (0 === c4) {

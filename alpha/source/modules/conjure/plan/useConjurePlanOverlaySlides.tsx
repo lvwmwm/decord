@@ -1,20 +1,20 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12540
+// Function ID: 12541
 // Name: useConjurePlanOverlaySlides
-// Dependencies: [32, 19, 5005, 3863, 558, 576, 504, 1125, 2]
+// Dependencies: [32, 19, 5006, 3864, 558, 576, 504, 1125, 2]
 
-// Module 12486 (useConjurePlanOverlaySlides)
-import _modDef3863 from "module_3863" /* 3863 */;
+// Module 12540 (useConjurePlanOverlaySlides)
+import _modDef3864 from "module_3864" /* 3864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_4, dependencyMap;
 
-let items = [_modDef3863["3eTjcV"], _modDef3863.l3j5nS];
+let items = [_modDef3864["3eTjcV"], _modDef3864.l3j5nS];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanOverlaySlides(arg0) {
   let closure_0;
   let num3;

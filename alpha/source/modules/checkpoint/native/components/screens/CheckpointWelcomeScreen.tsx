@@ -1,24 +1,24 @@
-// Module ID: 13202
-// Function ID: 13203
+// Module ID: 13434
+// Function ID: 13435
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1389, 21, 5004, 587, 558, 576, 1496, 504, 5058, 1125, 3057, 13203, 3089, 13205, 13206, 2]
+// Dependencies: [17, 1389, 21, 5005, 587, 558, 576, 1497, 504, 5059, 1125, 3058, 13435, 3090, 13437, 13438, 2]
 
-// Module 13202 (CheckpointWelcomeScreen)
+// Module 13434 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _modDef3057 from "module_3057" /* 3057 */;
-import _modDef3089 from "module_3089" /* 3089 */;
-import UserUtils from "UserUtils" /* 5058 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 13203 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 13205 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13206 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import _modDef3058 from "module_3058" /* 3058 */;
+import _modDef3090 from "module_3090" /* 3090 */;
+import UserUtils from "UserUtils" /* 5059 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 13435 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 13437 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13438 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
     const titleText = tmp4.titleText;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1125).intl;
-      const stringResult = intl.string(_modDef3057["CdU/PF"]);
+      const stringResult = intl.string(_modDef3058["CdU/PF"]);
       cResult[7] = stringResult;
       tmp14 = stringResult;
     } else {
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
       if (cResult[11] !== name) {
         const intl2 = tmp(1125).intl;
         const obj4 = { username: name };
-        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3089.xhZ23b, obj4);
+        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3090.xhZ23b, obj4);
         cResult[11] = name;
         cResult[12] = formatToPlainStringResult;
         tmp20 = formatToPlainStringResult;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
       cResult[15] = tmp26;
       tmp22 = tmp26;
     }
-    const obj10 = { style: tmp13, textStyle: titleText, text: tmp14, delay, variant: "display-lg" };
+    const obj10 = { isStepHeading: true, style: tmp13, textStyle: titleText, text: tmp14, delay, variant: "display-lg" };
     const tmp19 = hasOwnProperty(TextWritingAnimationDefault, obj10);
     cResult[8] = tmp4.titleText;
     cResult[9] = tmp13;
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const obj3 = { children: hasOwnProperty(View, obj4) };
   obj4 = { style: tmp.container, children: metroRequire(View, obj5) };
   obj5 = { style: tmp.content, children: items3 };
-  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3057["CdU/PF"]), delay, variant: "display-lg" };
+  const obj6 = { isStepHeading: true, style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3058["CdU/PF"]), delay, variant: "display-lg" };
   items1 = [tmp.title, ];
   const obj7 = { transform: items2 };
   items2 = [{ scale: bound }];
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const tmp6 = TextWritingAnimationDefault;
   intl = intl3.intl;
   items3 = [hasOwnProperty(tmp6, obj6), , ];
-  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3089.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3090.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
   const tmp7 = TextWritingAnimationDefault;
   intl2 = intl3.intl;
   items3[1] = hasOwnProperty(tmp7, obj8);

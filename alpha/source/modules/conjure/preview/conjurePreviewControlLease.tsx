@@ -1,10 +1,10 @@
-// Module ID: 10799
-// Function ID: 10800
+// Module ID: 10875
+// Function ID: 10876
 // Name: conjurePreviewControlLease
 // Dependencies: [19, 558, 576, 2]
 // Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased
 
-// Module 10799 (conjurePreviewControlLease)
+// Module 10875 (conjurePreviewControlLease)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -216,7 +216,7 @@ let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewC
 
 export { acquireConjureControlLease };
 export const CONTROL_OPERATION_IDLE_MS = 20000;
-export const beginConjureControlOperation = function beginConjureControlOperation(Stack2) {
+export function beginConjureControlOperation(Stack2) {
   let release;
   let closure_0 = Stack2;
   let obj = map1;
@@ -372,9 +372,9 @@ export const beginConjureControlOperation = function beginConjureControlOperatio
     emit();
     const result3 = set(Stack2, obj6);
   }
-};
+}
 export { endConjureControlOperation };
-export const releaseConjureControlLeases = function releaseConjureControlLeases(projectId) {
+export function releaseConjureControlLeases(projectId) {
   set2.delete(projectId);
   const value = map1.get(projectId);
   const obj = map1;
@@ -396,8 +396,8 @@ export const releaseConjureControlLeases = function releaseConjureControlLeases(
     emit();
     emitReleased(projectId);
   }
-};
-export const setConjureControlTuning = function setConjureControlTuning(projectId, arg1) {
+}
+export function setConjureControlTuning(projectId, arg1) {
   if (set2.has(projectId) !== arg1) {
     if (arg1) {
       set2.add(projectId);
@@ -406,19 +406,19 @@ export const setConjureControlTuning = function setConjureControlTuning(projectI
     }
     emit();
   }
-};
+}
 export const useConjureControlTuning = tmp7;
 export { isConjureControlActive };
-export const getConjureControlActiveProjectIds = function getConjureControlActiveProjectIds() {
+export function getConjureControlActiveProjectIds() {
   const items = [...map.keys()];
   return items;
-};
+}
 export { subscribeConjureControl };
-export const subscribeConjureControlReleased = function subscribeConjureControlReleased(arg0) {
+export function subscribeConjureControlReleased(arg0) {
   let closure_0 = arg0;
   set1.add(arg0);
   return () => {
     set1.delete(closure_0);
   };
-};
+}
 export const useConjureControlActive = tmp8;

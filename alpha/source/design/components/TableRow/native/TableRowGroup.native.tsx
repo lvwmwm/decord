@@ -1,19 +1,19 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 7047
+// Function ID: 7048
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5270, 5288, 6934, 6940, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5271, 5289, 6958, 6964, 2]
 // Exports: TableRowGroup
 
-// Module 7023 (TableRowGroup)
+// Module 7047 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
-import TableRowDivider from "TableRowDivider" /* 6934 */;
-import react3 from "react" /* 6940 */;
+import useToken from "useToken" /* 5289 */;
+import TableRowDivider from "TableRowDivider" /* 6958 */;
+import react3 from "react" /* 6964 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -84,7 +84,7 @@ let closure_9 = tmp4;
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowGroup.native.tsx");
 
 export const TableRowGroupTitle = tmp4;
-export const TableRowGroup = function TableRowGroup(children) {
+export function TableRowGroup(children) {
   let adjustSpacingForIcon;
   let description;
   let hasTrailingText;
@@ -157,4 +157,4 @@ export const TableRowGroup = function TableRowGroup(children) {
   items[3] = tmp6Result4;
   const obj6 = { value: true, children: tmp7(View, obj2) };
   return closure_5(Provider, obj6);
-};
+}

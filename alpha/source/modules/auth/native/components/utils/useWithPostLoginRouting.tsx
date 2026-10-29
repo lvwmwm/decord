@@ -1,10 +1,10 @@
-// Module ID: 7084
-// Function ID: 7085
+// Module ID: 7108
+// Function ID: 7109
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 502, 1084, 558, 576, 504, 1125, 7085, 6703, 2]
+// Dependencies: [5, 32, 19, 502, 1084, 558, 576, 504, 1125, 7109, 6727, 2]
 
-// Module 7084 (useWithPostLoginRouting)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6703 */;
+// Module 7108 (useWithPostLoginRouting)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6727 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -113,8 +113,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWithPostL
         intl2 = closure_0(closure_2[8]).intl;
         obj1.description = intl2.string(closure_0(closure_2[8]).t.myKyqh);
         obj1.phone = login;
-        obj1.onPhoneTokenReceived = function onPhoneTokenReceived() { /* body not rendered: F145798 */ };
-        obj1.onClose = function onClose() { /* body not rendered: F145799 */ };
+        obj1.onPhoneTokenReceived = function onPhoneTokenReceived() { /* body not rendered: F147347 */ };
+        obj1.onClose = function onClose() { /* body not rendered: F147348 */ };
         replaced = replace(VERIFY_PHONE, obj1);
       } else if (tmp2.PHONE_IP_AUTHORIZATION === tmp6) {
         tmp24 = closure_1_6;
@@ -133,9 +133,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWithPostL
         obj4.description = intl4.string(closure_0(closure_2[8]).t["0/ALaJ"]);
         obj4.phone = closure_1_6.getCredentials().login;
         tmp30 = closure_3;
-        closure_2 = closure_3(function() { /* body not rendered: F145800 */ });
-        obj4.onPhoneTokenReceived = function onPhoneTokenReceived() { /* body not rendered: F145801 */ };
-        obj4.onClose = function onClose() { /* body not rendered: F145802 */ };
+        closure_2 = closure_3(function() { /* body not rendered: F147349 */ });
+        obj4.onPhoneTokenReceived = function onPhoneTokenReceived() { /* body not rendered: F147350 */ };
+        obj4.onClose = function onClose() { /* body not rendered: F147351 */ };
         arr3 = push(VERIFY_PHONE2, obj4);
       }
       tmp23 = closure_3(tmp6);
@@ -252,7 +252,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWithPostL
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -291,7 +291,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWithPostL
                 closure_0.pop();
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp16) {
             c4 = 3;

@@ -84,7 +84,7 @@ function createMcpSpan(arg0) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const buildMcpServerSpanConfig = function buildMcpServerSpanConfig(message, self, extra, recordInputs) {
+export function buildMcpServerSpanConfig(message, self, extra, recordInputs) {
   let method;
   let params;
   let result;
@@ -130,12 +130,12 @@ export const buildMcpServerSpanConfig = function buildMcpServerSpanConfig(messag
   const tmpResult6 = filterMcpPiiFromSpanData;
   result = tmpResult6.filterMcpPiiFromSpanData(obj2, _BooleanResult);
   return obj4;
-};
-export const createMcpNotificationSpan = function createMcpNotificationSpan(message, self, extra, options, callback) {
+}
+export function createMcpNotificationSpan(message, self, extra, options, callback) {
   const obj = { type: "notification-incoming", message, transport: self, extra, callback, options };
   return createMcpSpan(obj);
-};
-export const createMcpOutgoingNotificationSpan = function createMcpOutgoingNotificationSpan(message, transport, self, callback) {
+}
+export function createMcpOutgoingNotificationSpan(message, transport, self, callback) {
   const obj = { type: "notification-outgoing", message, transport, options: self, callback };
   return createMcpSpan(obj);
-};
+}

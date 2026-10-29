@@ -1,16 +1,16 @@
-// Module ID: 12869
-// Function ID: 12870
+// Module ID: 13090
+// Function ID: 13091
 // Name: GuildAutomodActionActionCreators
-// Dependencies: [19, 12870, 21, 6707, 12874, 1999, 5945, 12877, 2]
+// Dependencies: [19, 13091, 21, 6731, 13095, 2000, 5947, 13098, 2]
 // Exports: getPromiseableActionHandlers, openAutomodProfileQuarantineAlert, openConfirmRemoveMentionRaid, openRaidResolveModal, openSubmitFeedback
 
-// Module 12869 (GuildAutomodActionActionCreators)
+// Module 13090 (GuildAutomodActionActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 12870 */;
+import Constants from "Constants" /* 13091 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,10 +19,10 @@ let closure_4;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodActionActionCreators.native.tsx");
 
-export const getPromiseableActionHandlers = function getPromiseableActionHandlers() {
+export function getPromiseableActionHandlers() {
   return { [closure_1_3.BLOCK_MESSAGE]: null, [closure_1_3.FLAG_TO_CHANNEL]: null, [closure_1_3.USER_COMMUNICATION_DISABLED]: null };
-};
-export const openSubmitFeedback = function openSubmitFeedback(messageId, content, decisionId, channel) {
+}
+export function openSubmitFeedback(messageId, content, decisionId, channel) {
   let obj3;
   let obj = ModalActionCreatorsDefault;
   const obj2 = {
@@ -33,20 +33,20 @@ export const openSubmitFeedback = function openSubmitFeedback(messageId, content
     automodDecision: obj3
   };
   obj3 = { messageId, messageContent: content, decisionId, channel };
-  obj.pushLazy(asyncRequire(12874, dependencyMap.paths), obj2, React3);
-};
+  obj.pushLazy(asyncRequire(13095, dependencyMap.paths), obj2, React3);
+}
 export function openRaidResolveModal() {
 
 }
 export function openConfirmRemoveMentionRaid() {
 
 }
-export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuarantineAlert(guildId) {
+export function openAutomodProfileQuarantineAlert(guildId) {
   let closure_0 = guildId;
   const obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(12877, dependencyMap.paths);
+      const promise = asyncRequire(13098, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -58,4 +58,4 @@ export const openAutomodProfileQuarantineAlert = function openAutomodProfileQuar
     isDismissable: false
   };
   obj.openLazy(obj2);
-};
+}

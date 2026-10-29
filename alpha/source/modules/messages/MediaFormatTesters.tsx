@@ -1,11 +1,11 @@
-// Module ID: 6035
-// Function ID: 6036
+// Module ID: 6039
+// Function ID: 6040
 // Name: MediaFormatTesters
-// Dependencies: [32, 1381, 6036, 2]
+// Dependencies: [32, 1381, 6040, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isGifLikeFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 6035 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 6036 */;
+// Module 6039 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 6040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ function isWebPlayerVideoFile(filename) {
 const result = size.fileFinishedImporting("modules/messages/MediaFormatTesters.tsx");
 
 export { urlMatchesFileExtension };
-export const isImageUrl = function isImageUrl(url) {
+export function isImageUrl(url) {
   let flag = false;
   const obj = re3;
   if (null != url) {
@@ -78,20 +78,20 @@ export const isImageUrl = function isImageUrl(url) {
     flag = obj.test(tmp2[0]);
   }
   return flag;
-};
-export const isImageFile = function isImageFile(filename) {
+}
+export function isImageFile(filename) {
   const isMatch = null != filename && re3.test(filename);
   return isMatch;
-};
-export const isImageContentType = function isImageContentType(contentType) {
+}
+export function isImageContentType(contentType) {
   let flag = false;
   if (null != contentType) {
     flag = _slicedToArray(contentType.split("/"), 2)[0] === "image";
     const tmp2 = _slicedToArray(contentType.split("/"), 2);
   }
   return flag;
-};
-export const isAnimatedImageUrl = function isAnimatedImageUrl(coverImage) {
+}
+export function isAnimatedImageUrl(coverImage) {
   let flag = false;
   const obj = re4;
   if (null != coverImage) {
@@ -99,8 +99,8 @@ export const isAnimatedImageUrl = function isAnimatedImageUrl(coverImage) {
     flag = obj.test(tmp2[0]);
   }
   return flag;
-};
-export const isGifLikeFile = function isGifLikeFile(arg0, arg1) {
+}
+export function isGifLikeFile(arg0, arg1) {
   let tmp = null != arg0;
   if (tmp) {
     let isMatch = re5.test(arg0);
@@ -111,13 +111,13 @@ export const isGifLikeFile = function isGifLikeFile(arg0, arg1) {
     tmp = isMatch;
   }
   return tmp;
-};
-export const isAudioFile = function isAudioFile(filename) {
+}
+export function isAudioFile(filename) {
   const isMatch = null != filename && regex.test(filename);
   return isMatch;
-};
+}
 export { isWebPlayerVideoUrl };
-export const isVideoUrl = function isVideoUrl(proxyURL) {
+export function isVideoUrl(proxyURL) {
   let flag = false;
   const obj = re9;
   if (null != proxyURL) {
@@ -139,9 +139,9 @@ export const isVideoUrl = function isVideoUrl(proxyURL) {
     flag = isIOSWithWebMResult;
   }
   return flag;
-};
+}
 export { isWebPlayerVideoFile };
-export const isVideoFile = function isVideoFile(filename) {
+export function isVideoFile(filename) {
   let tmp = null != filename;
   if (tmp) {
     let isMatch = re9.test(filename);
@@ -159,16 +159,16 @@ export const isVideoFile = function isVideoFile(filename) {
     tmp = isMatch;
   }
   return tmp;
-};
-export const isRiveFile = function isRiveFile(arg0) {
+}
+export function isRiveFile(arg0) {
   const isMatch = null != arg0 && re8.test(arg0);
   return isMatch;
-};
-export const isVideoContentType = function isVideoContentType(contentType) {
+}
+export function isVideoContentType(contentType) {
   let flag = false;
   if (null != contentType) {
     flag = _slicedToArray(contentType.split("/"), 2)[0] === "video";
     const tmp2 = _slicedToArray(contentType.split("/"), 2);
   }
   return flag;
-};
+}

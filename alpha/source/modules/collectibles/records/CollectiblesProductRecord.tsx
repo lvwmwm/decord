@@ -1,15 +1,15 @@
-// Module ID: 7687
-// Function ID: 7688
+// Module ID: 7710
+// Function ID: 7711
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7688, 7689, 7694, 1086, 1084, 2047, 1992, 2]
+// Dependencies: [32, 7711, 7712, 7717, 1086, 1084, 2048, 1993, 2]
 
-// Module 7687 (CollectiblesProductRecord)
+// Module 7710 (CollectiblesProductRecord)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 2047 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7688 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7689 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7694 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7711 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7712 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7717 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -64,8 +64,8 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
     }
     tmp11 = undefined;
     if (null != preview_assets) {
-      const obj3 = { fgStatic: null, fgAnimated: null, bgStatic: null, bgAnimated: null };
-      ({ fg_static: obj2.fgStatic, fg_animated: obj2.fgAnimated, bg_static: obj2.bgStatic, bg_animated: obj2.bgAnimated } = preview_assets);
+      const obj3 = { fgStatic: null, fgVideo: null, fgAnimated: null, bgStatic: null, bgAnimated: null };
+      ({ fg_static: obj2.fgStatic, fg_video: obj2.fgVideo, fg_animated: obj2.fgAnimated, bg_static: obj2.bgStatic, bg_animated: obj2.bgAnimated } = preview_assets);
       tmp11 = obj3;
     }
     mapped1 = undefined;
@@ -200,7 +200,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
                 }
                 ({ items, item } = obj);
                 first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "t", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "72952773756d8776abb1f02e0c8ab235", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "/assets/images/platforms", bundledProducts: 255, isFirstParty: collectibles.isFirstParty };
+                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "t", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: null, previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: null, bundledProducts: null, isFirstParty: collectibles.isFirstParty };
                 str = undefined;
                 const tmp5 = CollectiblesVariantProductRecord;
                 if (first != null) {

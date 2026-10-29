@@ -1,25 +1,25 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 17972
+// Function ID: 17973
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5748, 6806, 4946, 4907, 6739, 1389, 1084, 21, 5004, 587, 558, 576, 504, 17735, 8744, 1381, 7448, 5743, 10726, 9051, 9442, 17736, 5679, 8786, 17737, 9438, 17738, 6944, 2]
+// Dependencies: [19, 17, 5750, 6829, 4947, 4908, 6762, 1389, 1084, 21, 5005, 587, 558, 576, 504, 17973, 8747, 1381, 7471, 5745, 10759, 9054, 9473, 17974, 5681, 8789, 17975, 9469, 17976, 6968, 2]
 
-// Module 17734 (MessagesItemChannelBase)
+// Module 17972 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10726 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -215,7 +215,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -237,7 +237,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -257,7 +257,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -275,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -295,7 +295,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -304,9 +304,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult9 = channel(504);
     const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(17735)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(17973)(channel.id));
     const _Symbol3 = Symbol;
-    setIsPressed(17735)(channel.id);
+    setIsPressed(17973)(channel.id);
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
         constructor() {
@@ -319,7 +319,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -339,7 +339,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
             const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
           } else {
-            obj3 = { status: "useCallback", activities: "PX_16" };
+            obj3 = { status: "Array", activities: "Reflect" };
           }
           return obj3;
         }
@@ -480,7 +480,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const tmpResult13 = channel(8744);
+    const tmpResult13 = channel(8747);
     const nameplate = tmpResult13.useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {
@@ -601,7 +601,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "useCallback", activities: "PX_16" };
+      obj3 = { status: "Array", activities: "Reflect" };
     }
     return obj3;
   });

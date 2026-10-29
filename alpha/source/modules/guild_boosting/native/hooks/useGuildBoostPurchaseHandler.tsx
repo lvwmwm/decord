@@ -1,9 +1,9 @@
-// Module ID: 13697
-// Function ID: 13698
+// Module ID: 13930
+// Function ID: 13931
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1084, 3, 558, 576, 7551, 10482, 7550, 1264, 5945, 1125, 6732, 2]
+// Dependencies: [5, 19, 1084, 3, 558, 576, 7574, 10515, 7573, 1264, 5947, 1125, 6755, 2]
 
-// Module 13697 (useGuildBoostPurchaseHandler)
+// Module 13930 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
   let obj = require("react");
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7551);
+    const tmpResult = tmp(7574);
     const result = tmpResult.isMobileWebRedirectCheckoutEnabled();
     cResult[0] = result;
     first = result;
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
             let obj = closure_0(dependencyMap[12]);
             obj.closeApplyBoostModal();
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp9) {
           c4 = 3;
@@ -149,7 +149,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -207,7 +207,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBo
           let obj = closure_0(dependencyMap[12]);
           obj.closeApplyBoostModal();
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp9) {
         c4 = 3;

@@ -1,20 +1,20 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13457
+// Function ID: 13458
 // Name: CheckpointGuildStats
-// Dependencies: [17, 6050, 21, 5004, 587, 558, 576, 1125, 3057, 11686, 13204, 8579, 2]
+// Dependencies: [17, 6054, 21, 5005, 587, 558, 576, 1125, 3058, 11740, 13436, 8601, 2]
 
-// Module 13223 (CheckpointGuildStats)
+// Module 13457 (CheckpointGuildStats)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef3057 from "module_3057" /* 3057 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
-import ChatIcon from "ChatIcon" /* 8579 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11686 */;
-import CheckpointTextDefault from "CheckpointText" /* 13204 */;
+import _modDef3058 from "module_3058" /* 3058 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
+import ChatIcon from "ChatIcon" /* 8601 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11740 */;
+import CheckpointTextDefault from "CheckpointText" /* 13436 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,10 +146,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGu
     tmp13 = cResult[14];
   }
   const intl = tmp(1125).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3057.UZbUtl, { numMinutes: rounded });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3058.UZbUtl, { numMinutes: rounded });
   const intl2 = tmp(1125).intl;
   const stats = tmp4.stats;
-  const stringResult = intl2.string(_modDef3057.wWKySP);
+  const stringResult = intl2.string(_modDef3058.wWKySP);
   const combined1 = "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase();
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
@@ -220,10 +220,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGu
   const rounded = Math.round(numVoiceMinutes);
   const rounded1 = Math.round(numMessagesSent);
   const intl = intl3.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3057.UZbUtl, { numMinutes: rounded });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3058.UZbUtl, { numMinutes: rounded });
   const intl2 = intl3.intl;
   const obj = { style: tmp.stats, children: items1 };
-  const stringResult = intl2.string(_modDef3057.wWKySP);
+  const stringResult = intl2.string(_modDef3058.wWKySP);
   const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.stat, children: items };
   items = [, ];
   const obj3 = { size: "xs", color: CHECKPOINT_PRIMARY };

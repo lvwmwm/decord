@@ -1,25 +1,25 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 16758
+// Function ID: 16759
 // Name: ConnectionsEmptyStateUpsell
-// Dependencies: [19, 17, 1084, 21, 5004, 587, 558, 576, 5241, 9643, 16521, 16522, 5011, 1414, 1199, 6941, 5246, 16518, 1999, 5270, 7647, 1630, 6013, 1125, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 5242, 9675, 16759, 16760, 5012, 1415, 1199, 6965, 5247, 16756, 2000, 5271, 7670, 1631, 6015, 1125, 2]
 
-// Module 16520 (ConnectionsEmptyStateUpsell)
+// Module 16758 (ConnectionsEmptyStateUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useThemeDefault from "useTheme" /* 5241 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Stack_Stack from "Stack/Stack" /* 6013 */;
-import Card_Card from "Card/Card" /* 6941 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7647 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9643 */;
-import ConnectionsTracking from "ConnectionsTracking" /* 16521 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useThemeDefault from "useTheme" /* 5242 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Stack_Stack from "Stack/Stack" /* 6015 */;
+import Card_Card from "Card/Card" /* 6965 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7670 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9675 */;
+import ConnectionsTracking from "ConnectionsTracking" /* 16759 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let importDefault;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const shared = tmp(5011);
+const shared = tmp(5012);
 function OtherConnectionsCard(count) {
   let Text;
   let obj2;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
     tmp6 = cResult[1];
   }
   if (cResult[2] !== platform.type) {
-    const tmpResult = platform(16522);
+    const tmpResult = platform(16760);
     const connectionBackgroundColor = tmpResult.getConnectionBackgroundColor(platform.type);
     cResult[2] = platform.type;
     cResult[3] = connectionBackgroundColor;
@@ -126,7 +126,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
                       }
                     }
                     let obj2 = { onPress: tmp6, style: tmp4.card, border: "strong", children: tmp19 };
-                    const tmp25 = closure_6(platform(6941).Card, obj2);
+                    const tmp25 = closure_6(platform(6965).Card, obj2);
                     cResult[23] = tmp6;
                     cResult[24] = tmp4.card;
                     cResult[25] = tmp19;
@@ -168,13 +168,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
       }
     }
   }
-  const makeSource = tmp(1414).makeSource;
-  platform(1414);
+  const makeSource = tmp(1415).makeSource;
+  platform(1415);
   if (null != tmp7) {
     whitePNG = platform.icon.whitePNG;
   } else {
     const icon = platform.icon;
-    const tmpResult4 = platform(5011);
+    const tmpResult4 = platform(5012);
     whitePNG = tmpResult4.isThemeDark(tmp5) ? icon.darkPNG : icon.lightPNG;
   }
   const source = makeSource(whitePNG);
@@ -404,7 +404,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsE
   let items6;
   let obj4;
   const tmp = closure_8();
-  let obj = emptyStatePlatforms(7647);
+  let obj = emptyStatePlatforms(7670);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = react.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
@@ -415,7 +415,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsE
   obj4 = { style: tmp.content, children: items5 };
   const obj5 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: items3 };
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
-  const Stack = emptyStatePlatforms(6013).Stack;
+  const Stack = emptyStatePlatforms(6015).Stack;
   const obj6 = {
     spacing: 16,
     justify: "center",
@@ -425,10 +425,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsE
       return closure_1_6(closure_1_9, obj, platform.type);
     })
   };
-  const Stack2 = emptyStatePlatforms(6013).Stack;
+  const Stack2 = emptyStatePlatforms(6015).Stack;
   items3 = [closure_6(Stack2, obj6), ];
   const obj7 = { spacing: 16, justify: "center", direction: "horizontal", children: items4 };
-  const Stack3 = emptyStatePlatforms(6013).Stack;
+  const Stack3 = emptyStatePlatforms(6015).Stack;
   items4 = [
     memo1.map((platform) => {
       const obj = { platform };
@@ -441,13 +441,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsE
   items3[1] = closure_7(Stack3, obj7);
   items5 = [closure_7(Stack, obj5), ];
   const obj9 = { spacing: 8, align: "center", style: tmp.textContainer, children: items6 };
-  const Stack4 = emptyStatePlatforms(6013).Stack;
+  const Stack4 = emptyStatePlatforms(6015).Stack;
   const obj10 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(emptyStatePlatforms(1125).t.JlrHXb) };
-  const Text = emptyStatePlatforms(5270).Text;
+  const Text = emptyStatePlatforms(5271).Text;
   intl = emptyStatePlatforms(1125).intl;
   items6 = [closure_6(Text, obj10), ];
   const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(emptyStatePlatforms(1125).t.XijaQP) };
-  const Text2 = emptyStatePlatforms(5270).Text;
+  const Text2 = emptyStatePlatforms(5271).Text;
   intl2 = emptyStatePlatforms(1125).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack4, obj9);

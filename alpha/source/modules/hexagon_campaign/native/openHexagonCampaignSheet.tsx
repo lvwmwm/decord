@@ -1,19 +1,19 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16882
+// Function ID: 16883
 // Name: openHexagonCampaignSheet
-// Dependencies: [5246, 16645, 1999, 2]
+// Dependencies: [5247, 16883, 2000, 2]
 // Exports: openHexagonCampaignSheet
 
-// Module 16644 (openHexagonCampaignSheet)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+// Module 16882 (openHexagonCampaignSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import size from "module_2" /* 2 */;
 
 const HexagonCampaignSheet = "HexagonCampaignSheet";
 const result = size.fileFinishedImporting("modules/hexagon_campaign/native/openHexagonCampaignSheet.tsx");
 
 export const HEXAGON_CAMPAIGN_SHEET_KEY = "HexagonCampaignSheet";
-export const openHexagonCampaignSheet = function openHexagonCampaignSheet() {
+export function openHexagonCampaignSheet() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(16645, dependencyMap.paths), HexagonCampaignSheet);
-};
+  obj.openLazy(asyncRequire(16883, dependencyMap.paths), HexagonCampaignSheet);
+}

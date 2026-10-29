@@ -1,28 +1,28 @@
-// Module ID: 9066
-// Function ID: 9067
+// Module ID: 9069
+// Function ID: 9070
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4856, 4878, 4862, 8918, 21, 5004, 587, 6707, 558, 576, 1125, 1199, 7220, 6944, 5270, 9060, 504, 8978, 9067, 7917, 9070, 5280, 7257, 2]
+// Dependencies: [5, 32, 19, 17, 4857, 4879, 4863, 8921, 21, 5005, 587, 6731, 558, 576, 1125, 1199, 7244, 6968, 5271, 9063, 504, 8981, 9070, 7940, 9073, 5281, 7281, 2]
 
-// Module 9066 (StartEventModal)
+// Module 9069 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import Pressables from "Pressables" /* 6944 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7220 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8918 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9060 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import Pressables from "Pressables" /* 6968 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7244 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8921 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9063 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -541,7 +541,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -579,7 +579,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;
@@ -644,7 +644,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

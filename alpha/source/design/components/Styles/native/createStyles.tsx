@@ -1,23 +1,23 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5005
+// Function ID: 5006
 // Name: createStyles
-// Dependencies: [32, 17, 5005, 5028, 558, 576, 5070, 1381, 587, 5174, 5085, 5242, 5245, 5238, 2]
+// Dependencies: [32, 17, 5006, 5029, 558, 576, 5071, 1381, 587, 5175, 5086, 5243, 5246, 5239, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow
 
-// Module 5004 (createStyles)
+// Module 5005 (createStyles)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import SemanticColorContext from "SemanticColorContext" /* 5174 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5238 */;
-import timing from "timing" /* 5242 */;
-import timingPresets from "timingPresets" /* 5245 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import SemanticColorContext from "SemanticColorContext" /* 5175 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5239 */;
+import timing from "timing" /* 5243 */;
+import timingPresets from "timingPresets" /* 5246 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5028 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5029 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -151,11 +151,11 @@ let closure_11 = { code: "function createStylesTsx1(){const{resolvedStyles,withT
 let closure_12 = { code: "function createStylesTsx2(){const{resolvedStyles,withTiming,interpolateColor,themeIndex,stops,timingStandard}=this.__closure;const result={};for(const propertyName_0 in resolvedStyles){const value=resolvedStyles[propertyName_0];if(Array.isArray(value)){result[propertyName_0]=withTiming(interpolateColor(themeIndex.get(),stops,value),timingStandard);}else{result[propertyName_0]=value;}}return result;}" };
 let result = size.fileFinishedImporting("design/components/Styles/native/createStyles.tsx");
 
-export const experimental_createToken = function experimental_createToken(arg0) {
+export function experimental_createToken(arg0) {
   let closure_0 = arg0;
   return { [closure_1_8]: (arg0) => closure_0(arg0) };
-};
-export const createStyles = function createStyles(rect) {
+}
+export function createStyles(rect) {
   let closure_2;
   _require = rect;
   map = new Map();
@@ -292,8 +292,8 @@ export const createStyles = function createStyles(rect) {
       return obj3;
     }
   });
-};
-export const createLegacyClassComponentStyles = function createLegacyClassComponentStyles(arg0) {
+}
+export function createLegacyClassComponentStyles(arg0) {
   let closure_0 = arg0;
   map = new Map();
   return function readStyles(key) {
@@ -329,9 +329,9 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
       return obj2;
     }
   };
-};
+}
 export const useLegacyClassComponentStyles = tmp3;
-export const createStyleProperties = function createStyleProperties(getButtonColorTokens) {
+export function createStyleProperties(getButtonColorTokens) {
   let closure_2;
   _require = getButtonColorTokens;
   map = new Map();
@@ -410,9 +410,9 @@ export const createStyleProperties = function createStyleProperties(getButtonCol
       return tmp5Result;
     }
   });
-};
+}
 export { processColorOrThrow };
-export const createNativeStyleProperties = function createNativeStyleProperties(arg0) {
+export function createNativeStyleProperties(arg0) {
   let closure_0 = arg0;
   map = new Map();
   return function readStyleProperties(theme) {
@@ -433,14 +433,14 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       const setThemeFlag = native.setThemeFlag;
       native;
       if ("light" === customBackgroundGradient.theme) {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5070).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5071).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5070).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(5071).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
       num = setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
     }
     const obj2 = { flags: num, saturation, theme, enabledExperiments: ["mobile-visual-refresh"], gradient: customBackgroundGradient };
-    const merged = Object.assign(tmp3(5070).FALLBACK_THEME_CONTEXT_VALUE);
+    const merged = Object.assign(tmp3(5071).FALLBACK_THEME_CONTEXT_VALUE);
     const obj3 = { key: json };
     json = JSON.stringify(obj2);
     const merged1 = Object.assign(obj2);
@@ -478,8 +478,8 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       return tmp20Result;
     }
   };
-};
-export const createAnimatedThemedStyles = function createAnimatedThemedStyles(BACKGROUND_BASE_LOW, items) {
+}
+export function createAnimatedThemedStyles(BACKGROUND_BASE_LOW, items) {
   let arr = items;
   if (items === undefined) {
     arr = items;
@@ -672,4 +672,4 @@ export const createAnimatedThemedStyles = function createAnimatedThemedStyles(BA
     ({ resolvedStyles: tmp3, withTiming: arr(obj[11]).withTiming, interpolateColor: arr(obj[10]).interpolateColor, themeIndex, stops, timingStandard: arr(obj[12]).timingStandard });
     return obj4.useAnimatedStyle(fn);
   });
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2021
+// Function ID: 2022
 // Name: GameRecord
-// Dependencies: [1404, 2021, 1997, 2029, 1414, 1385, 2]
+// Dependencies: [1404, 2022, 1998, 2030, 1415, 1385, 2]
 
-// Module 2020 (GameRecord)
+// Module 2021 (GameRecord)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import Server from "Server" /* 1997 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2021 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2029 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import Server from "Server" /* 1998 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
 import Record from "Record" /* 1404 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -188,7 +188,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(coverImageSize) {
+  getCoverURL(rounded) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -200,7 +200,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: coverImageSize };
+    const obj = { keepAspectRatio: true, format: str, size: rounded };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {
@@ -257,14 +257,14 @@ class GameRecord extends Record {
     const mapped = screenshotUrls.map((item, index) => self.getScreenshotURL(index, closure_0));
     return mapped.filter(GlobalUtils.isNotNullish);
   }
-  getCompanyByRole(PUBLISHER) {
-    let closure_0 = PUBLISHER;
+  getCompanyByRole(DEVELOPER) {
+    let closure_0 = DEVELOPER;
     const companies = this.companies;
     let found;
     if (companies != null) {
       found = companies.filter((roles) => {
         roles = roles.roles;
-        return roles.includes(PUBLISHER);
+        return roles.includes(DEVELOPER);
       });
     }
     if (found == null) {

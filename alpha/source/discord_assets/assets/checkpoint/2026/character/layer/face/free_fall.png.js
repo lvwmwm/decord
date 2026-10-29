@@ -1,8 +1,8 @@
-// Module ID: 6304
-// Function ID: 6305
+// Module ID: 6328
+// Function ID: 6329
 // Dependencies: [2]
 
-// Module 6304
+// Module 6328
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/free_fall.png.js");

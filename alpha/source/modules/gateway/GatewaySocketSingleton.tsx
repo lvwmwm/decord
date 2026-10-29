@@ -1,21 +1,21 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15442
+// Function ID: 15443
 // Name: GatewaySocketSingleton
-// Dependencies: [15208, 502, 3, 15209, 15246, 15249, 6836, 1264, 10134, 1381, 4818, 1480, 584, 2]
+// Dependencies: [15443, 502, 3, 15444, 15481, 15484, 6859, 1264, 10167, 1381, 4819, 1481, 584, 2]
 
-// Module 15207 (GatewaySocketSingleton)
+// Module 15442 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DiscordNativeDefault from "DiscordNative" /* 4818 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6836 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10134 */;
-import GatewaySocketDefault from "GatewaySocket" /* 15209 */;
-import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 15246 */;
-import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 15249 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15208 */;
+import DiscordNativeDefault from "DiscordNative" /* 4819 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6859 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10167 */;
+import GatewaySocketDefault from "GatewaySocket" /* 15444 */;
+import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 15481 */;
+import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 15484 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15443 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NetworkUtils_mod from "NetworkUtils" /* 1480 */;
+import NetworkUtils_mod from "NetworkUtils" /* 1481 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = new LoggerDefault("ConnectionStore");

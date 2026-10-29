@@ -1,11 +1,11 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14905
+// Function ID: 14906
 // Name: useProfileSectionTabs
-// Dependencies: [32, 19, 8709, 558, 576, 2]
+// Dependencies: [32, 19, 8712, 558, 576, 2]
 // Exports: getProfileTabSectionIndex, useProfileTabIndices
 
-// Module 14670 (useProfileSectionTabs)
-import Constants from "Constants" /* 8709 */;
+// Module 14905 (useProfileSectionTabs)
+import Constants from "Constants" /* 8712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

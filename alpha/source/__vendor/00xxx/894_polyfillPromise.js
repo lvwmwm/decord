@@ -17,7 +17,7 @@ function getPromisePolyfill() {
   return require("module_178");
 }
 
-export const polyfillPromise = function polyfillPromise() {
+export function polyfillPromise() {
   if (ReactNativeLibraries.ReactNativeLibraries.Utilities) {
     let closure_0 = tmp(178);
     _mod895;
@@ -28,12 +28,12 @@ export const polyfillPromise = function polyfillPromise() {
     const debug = tmp(693).debug;
     debug.warn("Could not polyfill Promise. React Native Libraries Utilities not found.");
   }
-};
+}
 export { getPromisePolyfill };
-export const requireRejectionTracking = function requireRejectionTracking() {
+export function requireRejectionTracking() {
   return require("disable");
-};
-export const checkPromiseAndWarn = function checkPromiseAndWarn() {
+}
+export function checkPromiseAndWarn() {
   try {
     const _Promise = ReactNativeLibraries.ReactNativeLibraries.Promise;
     const tmp5 = require("module_178");
@@ -53,4 +53,4 @@ export const checkPromiseAndWarn = function checkPromiseAndWarn() {
     const debug4 = _mod693.debug;
     debug4.warn("Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.");
   }
-};
+}

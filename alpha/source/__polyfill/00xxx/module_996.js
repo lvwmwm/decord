@@ -7,17 +7,17 @@
 import _mod693 from "module_693" /* 693 */;
 
 
-export const isSentrySpan = function isSentrySpan(c4) {
+export function isSentrySpan(c4) {
   return c4 instanceof _mod693.SentrySpan;
-};
-export const isRootSpan = function isRootSpan(activeSpan) {
+}
+export function isRootSpan(activeSpan) {
   const obj = _mod693;
   return activeSpan === obj.getRootSpan(activeSpan);
-};
-export const setEndTimeValue = function setEndTimeValue(arg0, _endTime) {
+}
+export function setEndTimeValue(arg0, _endTime) {
   arg0._endTime = _endTime;
-};
-export const convertSpanToTransaction = function convertSpanToTransaction(_convertSpanToTransaction) {
+}
+export function convertSpanToTransaction(_convertSpanToTransaction) {
   _convertSpanToTransaction = _convertSpanToTransaction._convertSpanToTransaction;
   let callResult;
   if (null !== _convertSpanToTransaction) {
@@ -26,4 +26,4 @@ export const convertSpanToTransaction = function convertSpanToTransaction(_conve
     }
   }
   return callResult;
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15923
+// Function ID: 15924
 // Name: void/Badge/Badge
-// Dependencies: [19, 17, 2065, 1084, 1201, 21, 5004, 587, 1381, 558, 576, 5011, 504, 5270, 1900, 9000, 2]
+// Dependencies: [19, 17, 2066, 1084, 1201, 21, 5005, 587, 1381, 558, 576, 5012, 504, 5271, 1901, 9003, 2]
 
-// Module 15687 (void/Badge/Badge)
+// Module 15923 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import shared from "shared" /* 5011 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 9000 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import shared from "shared" /* 5012 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 9003 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import BadgeConstants from "BadgeConstants" /* 1201 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -214,7 +214,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0
                   } else if (flag) {
                     const obj5 = { variant: "experimental/body-xs/semibold", color: "none", style: items2, lineClamp: 1, allowFontScaling: false, children: tmpResult5.humanizeValue(Math.min(value, num), stateFromStores) };
                     items2 = [tmp8.experimentalBadgeText, textStyle];
-                    const Text = tmp(5270).Text;
+                    const Text = tmp(5271).Text;
                     const _Math2 = Math;
                     tmpResult5 = NumberUtils;
                     tmp20Result = tmp20(Text, obj5);

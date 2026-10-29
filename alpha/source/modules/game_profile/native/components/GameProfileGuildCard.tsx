@@ -1,23 +1,23 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9404
+// Function ID: 9405
 // Name: GameProfileGuildCard
-// Dependencies: [19, 17, 21, 587, 5004, 558, 576, 7074, 9366, 6919, 5270, 9269, 1199, 1125, 5280, 2]
+// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 7098, 9398, 6943, 5271, 9273, 1199, 1125, 5281, 2]
 
-// Module 9372 (GameProfileGuildCard)
+// Module 9404 (GameProfileGuildCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import GuildIcon from "GuildIcon" /* 6919 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7074 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9269 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9366 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import GuildIcon from "GuildIcon" /* 6943 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7098 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9273 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -417,7 +417,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
                         const obj12 = { style: tmp4.membersEllipse };
                         items4 = [React3(View, obj12), ];
                         const obj13 = { variant: "text-xs/normal", color: "text-default", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj14) };
-                        const Text2 = tmp(5270).Text;
+                        const Text2 = tmp(5271).Text;
                         intl2 = tmp(1125).intl;
                         obj14 = { count: memberCount };
                         items4[1] = React3(Text2, obj13);
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
                     const obj16 = { style: tmp4.onlineEllipse };
                     items5 = [React3(View, obj16), ];
                     const obj17 = { variant: "text-xs/normal", color: "text-default", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj18) };
-                    const Text = tmp(5270).Text;
+                    const Text = tmp(5271).Text;
                     intl = tmp(1125).intl;
                     obj18 = { membersOnline: presenceCount };
                     items5[1] = React3(Text, obj17);
@@ -544,7 +544,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
     const obj15 = { style: tmp.onlineEllipse };
     items4 = [React3(View, obj15), ];
     const obj16 = { variant: "text-xs/normal", color: "text-default", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj17) };
-    const Text = tmp7(5270).Text;
+    const Text = tmp7(5271).Text;
     intl = tmp7(1125).intl;
     obj17 = { membersOnline: presenceCount };
     items4[1] = React3(Text, obj16);
@@ -557,7 +557,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
     const obj19 = { style: tmp.membersEllipse };
     items6 = [React3(View, obj19), ];
     const obj20 = { variant: "text-xs/normal", color: "text-default", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj39) };
-    const Text2 = tmp7(5270).Text;
+    const Text2 = tmp7(5271).Text;
     intl2 = tmp7(1125).intl;
     obj39 = { count: memberCount };
     items6[1] = React3(Text2, obj20);

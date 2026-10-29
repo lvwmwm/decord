@@ -1,14 +1,14 @@
-// Module ID: 19222
-// Function ID: 19223
+// Module ID: 19455
+// Function ID: 19456
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 7680, 558, 576, 504, 7682, 5299, 2]
+// Dependencies: [32, 19, 7703, 558, 576, 504, 7705, 5300, 2]
 
-// Module 19222 (useConnectGuardianGate)
+// Module 19455 (useConnectGuardianGate)
 import get_initialized from "get initialized" /* 504 */;
-import useMountEffectDefault from "useMountEffect" /* 5299 */;
+import useMountEffectDefault from "useMountEffect" /* 5300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

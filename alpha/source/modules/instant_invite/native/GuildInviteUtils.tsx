@@ -1,26 +1,26 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14736
+// Function ID: 14737
 // Name: GuildInviteUtils
-// Dependencies: [5, 19, 4934, 5230, 4916, 4878, 4936, 6736, 1389, 14503, 7844, 1084, 1264, 5246, 14504, 1999, 6863, 558, 576, 504, 5013, 1125, 8900, 9085, 9165, 2]
+// Dependencies: [5, 19, 4935, 5231, 4917, 4879, 4937, 6759, 1389, 14737, 7867, 1084, 1264, 5247, 14738, 2000, 6886, 558, 576, 504, 5014, 1125, 8903, 9088, 9168, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet
 
-// Module 14502 (GuildInviteUtils)
+// Module 14736 (GuildInviteUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6863 */;
-import Constants2 from "Constants" /* 7844 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8900 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9085 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14503 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6886 */;
+import Constants2 from "Constants" /* 7867 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9088 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14737 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ let obj = function _sendGuildInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -118,7 +118,7 @@ let obj = function _sendGuildInvite() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp19) {
         if (0 === c5) {
@@ -305,17 +305,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInv
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/GuildInviteUtils.tsx");
 
-export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
+export function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
   obj = AnalyticsUtilsDefault;
   const obj2 = { type: "Invite to Guilds", source: newestAnalyticsLocation };
   obj.track(constants2.OPEN_POPOUT, obj2);
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj3 = { recipientId: id2, source: newestAnalyticsLocation };
-  const tmp3 = asyncRequire(14504, dependencyMap.paths);
+  const tmp3 = asyncRequire(14738, dependencyMap.paths);
   openLazy(tmp3, "invite-to-guilds-" + id2, obj3);
-};
+}
 export const useServerInviteRows = tmp3;
-export const sendGuildInvite = function sendGuildInvite() {
+export function sendGuildInvite() {
   return obj(...arguments);
-};
+}

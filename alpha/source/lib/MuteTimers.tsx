@@ -1,10 +1,10 @@
-// Module ID: 4939
-// Function ID: 4940
+// Module ID: 4940
+// Function ID: 4941
 // Name: MuteTimers
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 4939 (MuteTimers)
+// Module 4940 (MuteTimers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/MuteTimers.tsx");
@@ -67,7 +67,7 @@ class MuteTimers {
 const prototype = MuteTimers.prototype;
 
 export default MuteTimers;
-export const computeIsMuted = function computeIsMuted(mute_config) {
+export function computeIsMuted(mute_config) {
   mute_config = mute_config.mute_config;
   let muted = mute_config.muted;
   if (muted) {
@@ -86,8 +86,8 @@ export const computeIsMuted = function computeIsMuted(mute_config) {
     muted = tmp3;
   }
   return muted;
-};
-export const isTemporarilyMuted = function isTemporarilyMuted(mute_config) {
+}
+export function isTemporarilyMuted(mute_config) {
   mute_config = mute_config.mute_config;
   let muted = mute_config.muted && null != mute_config && null != mute_config.end_time;
   if (muted) {
@@ -102,4 +102,4 @@ export const isTemporarilyMuted = function isTemporarilyMuted(mute_config) {
     const date1 = new Date();
   }
   return muted;
-};
+}

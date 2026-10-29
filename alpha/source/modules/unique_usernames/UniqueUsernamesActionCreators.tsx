@@ -1,9 +1,9 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 16504
+// Function ID: 16505
 // Name: UniqueUsernamesActionCreators
-// Dependencies: [5, 1084, 1125, 584, 1294, 1264, 6711, 1272, 6409, 2]
+// Dependencies: [5, 1084, 1125, 584, 1294, 1264, 6734, 1272, 6433, 2]
 
-// Module 16266 (UniqueUsernamesActionCreators)
+// Module 16504 (UniqueUsernamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ let obj = {
               }
             }
             constants = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -160,7 +160,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ let obj = {
               constants = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp68) {
           closure_3 = tmp68;

@@ -1,10 +1,10 @@
-// Module ID: 7919
-// Function ID: 7920
+// Module ID: 7942
+// Function ID: 7943
 // Name: AgeVerificationIncodeWebViewConstants
 // Dependencies: [2]
 // Exports: buildIncodeFallbackSessionInjection, buildIncodeParamsInjection, parseIncodeWebViewMessage, postIncodeCaptureComplete, postIncodeFallbackRequest, postIncodeResult, readInjectedIncodeParams
 
-// Module 7919 (AgeVerificationIncodeWebViewConstants)
+// Module 7942 (AgeVerificationIncodeWebViewConstants)
 import size from "module_2" /* 2 */;
 
 const __DISCORD_AGE_VERIFICATION_INCODE_PARAMS__ = "__DISCORD_AGE_VERIFICATION_INCODE_PARAMS__";
@@ -23,7 +23,7 @@ export const VERIFICATION_CAPTURE_COMPLETE_EVENT_TYPE = "Verification.CaptureCom
 export const VERIFICATION_FALLBACK_REQUEST_EVENT_TYPE = "Verification.FallbackRequest";
 export const INCODE_FALLBACK_SESSION_CALLBACK_KEY = "__DISCORD_APPLY_INCODE_FALLBACK_SESSION__";
 export { AgeVerificationIncodeResultStatus };
-export const readInjectedIncodeParams = function readInjectedIncodeParams() {
+export function readInjectedIncodeParams() {
   let apiUrl;
   let consentId;
   let interviewId;
@@ -67,14 +67,14 @@ export const readInjectedIncodeParams = function readInjectedIncodeParams() {
     }
   }
   return null;
-};
-export const buildIncodeParamsInjection = function buildIncodeParamsInjection(arg0, arg1) {
+}
+export function buildIncodeParamsInjection(arg0, arg1) {
   const obj = { schemaVersion: 2 };
   const merged = Object.assign(arg0);
   const json = JSON.stringify(JSON.stringify(obj));
   return "if (window.location.origin === " + JSON.stringify(arg1) + ") { window." + __DISCORD_AGE_VERIFICATION_INCODE_PARAMS__ + " = JSON.parse(" + json + "); } true;";
-};
-export const parseIncodeWebViewMessage = function parseIncodeWebViewMessage(str) {
+}
+export function parseIncodeWebViewMessage(str) {
   let obj;
   if (null == str) {
     return null;
@@ -135,23 +135,23 @@ export const parseIncodeWebViewMessage = function parseIncodeWebViewMessage(str)
       }
     }
   }
-};
-export const postIncodeResult = function postIncodeResult(arg0) {
+}
+export function postIncodeResult(arg0) {
   if (ReactNativeWebView != null) {
     ReactNativeWebView.postMessage(tmp);
   }
-};
-export const postIncodeCaptureComplete = function postIncodeCaptureComplete(arg0) {
+}
+export function postIncodeCaptureComplete(arg0) {
   if (ReactNativeWebView != null) {
     ReactNativeWebView.postMessage(tmp);
   }
-};
-export const postIncodeFallbackRequest = function postIncodeFallbackRequest(arg0) {
+}
+export function postIncodeFallbackRequest(arg0) {
   if (ReactNativeWebView != null) {
     ReactNativeWebView.postMessage(tmp);
   }
-};
-export const buildIncodeFallbackSessionInjection = function buildIncodeFallbackSessionInjection(arg0) {
+}
+export function buildIncodeFallbackSessionInjection(arg0) {
   const json = JSON.stringify(JSON.stringify(arg0));
   return "(function(){var detail=JSON.parse(" + json + ");var key=" + JSON.stringify(__DISCORD_APPLY_INCODE_FALLBACK_SESSION__) + ";var n=0;var apply=function(){var cb=window[key];if(typeof cb===\"function\"){cb(detail);return true;}return false;};if(apply()){return;}var id=setInterval(function(){n+=1;if(apply()||n>40){clearInterval(id);}},50);})();true;";
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 8340
-// Function ID: 8341
+// Module ID: 8362
+// Function ID: 8363
 // Name: ThreadUtils
-// Dependencies: [109, 6806, 6739, 4938, 1124, 1084, 1125, 7643, 5747, 1264, 8329, 7246, 1402, 558, 576, 504, 11, 2046, 2]
+// Dependencies: [109, 6829, 6762, 4939, 1124, 1084, 1125, 7666, 5749, 1264, 8351, 7270, 1402, 558, 576, 504, 11, 2047, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8340 (ThreadUtils)
+// Module 8362 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import getTimestampStringDefault from "getTimestampString" /* 7643 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8329 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import getTimestampStringDefault from "getTimestampString" /* 7666 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4938 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7246);
+const NotificationSettingsUtils = tmp(7270);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastMes
   if (cResult[5] !== createTimestamp) {
     let valueOfResult = null;
     if (null != createTimestamp) {
-      const obj4 = _modDef2046(createTimestamp);
+      const obj4 = _modDef2047(createTimestamp);
       valueOfResult = obj4.valueOf();
     }
     cResult[5] = createTimestamp;
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastMes
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    const obj3 = _modDef2046(createTimestamp);
+    const obj3 = _modDef2047(createTimestamp);
     valueOfResult = obj3.valueOf();
   }
   if (extractTimestampResult == null) {
@@ -148,26 +148,26 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastMes
 let result = size.fileFinishedImporting("modules/threads/ThreadUtils.tsx");
 
 export const getTimestampString = getTimestampStringDefault;
-export const getTimestampAccessibilityLabel = function getTimestampAccessibilityLabel(extractTimestampResult) {
+export function getTimestampAccessibilityLabel(extractTimestampResult) {
   return getTimestampStringDefault(extractTimestampResult, getAccessibilityLabelFormatter);
-};
-export const trackThreadBrowserTab = function trackThreadBrowserTab() {
+}
+export function trackThreadBrowserTab() {
   const obj = AppAnalyticsUtils;
   obj.trackWithMetadata(constants.THREAD_BROWSER_TAB_CHANGED);
-};
-export const trackThreadBrowserOpened = function trackThreadBrowserOpened() {
+}
+export function trackThreadBrowserOpened() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "Modal";
   }
   const obj = AppAnalyticsUtils;
   obj.trackWithMetadata(constants.OPEN_MODAL, { type: "Thread Browser", location_section: str });
-};
-export const trackActiveThreadsPopoutOpened = function trackActiveThreadsPopoutOpened() {
+}
+export function trackActiveThreadsPopoutOpened() {
   const obj = AnalyticsUtilsDefault;
   obj.track(constants.OPEN_POPOUT, { type: "Active Threads Popout" });
-};
-export const trackThreadNotificationSettingsUpdated = function trackThreadNotificationSettingsUpdated(getGuildId, flags) {
+}
+export function trackThreadNotificationSettingsUpdated(getGuildId, flags) {
   let can_send_message;
   let constants2;
   let muted;
@@ -228,5 +228,5 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     const obj5 = AnalyticsUtilsDefault;
     obj5.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
-};
+}
 export const useLastMessageTimestamp = tmp3;

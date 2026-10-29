@@ -1,26 +1,26 @@
-// Module ID: 7738
-// Function ID: 7739
+// Module ID: 7760
+// Function ID: 7761
 // Name: UserProfileStore
-// Dependencies: [2065, 1403, 502, 4878, 1083, 5748, 6736, 1084, 7739, 12, 7740, 7743, 7744, 7746, 1385, 4851, 1992, 1985, 7747, 1125, 7748, 6537, 7749, 510, 2]
+// Dependencies: [2066, 1403, 502, 4879, 1083, 5750, 6759, 1084, 7761, 12, 7762, 7765, 7766, 7768, 1385, 4852, 1993, 1986, 7769, 1125, 7770, 6561, 7771, 510, 2]
 
-// Module 7738 (UserProfileStore)
+// Module 7760 (UserProfileStore)
 import _modDef12 from "module_12" /* 12 */;
 import Storage2 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import Timers from "Timers" /* 4851 */;
-import WidgetType from "WidgetType" /* 7739 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7747 */;
-import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7748 */;
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7749 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import Timers from "Timers" /* 4852 */;
+import WidgetType from "WidgetType" /* 7761 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7769 */;
+import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7770 */;
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7771 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1083 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,15 +28,15 @@ let _require, c24, set2, set3;
 
 let tmp;
 const GlobalUtils = tmp(1385);
-const UserProfileGameWidgetTypes = tmp(7740);
-const UserProfileApplicationWidgetTypes = tmp(7743);
-const UserProfilePersonalWidget2 = tmp(7744);
-const UserProfileClipsGalleryWidgetTypes = tmp(7746);
-const f100282 = (user) => {
+const UserProfileGameWidgetTypes = tmp(7762);
+const UserProfileApplicationWidgetTypes = tmp(7765);
+const UserProfilePersonalWidget2 = tmp(7766);
+const UserProfileClipsGalleryWidgetTypes = tmp(7768);
+const f101295 = (user) => {
   const str = user.user.username;
   return str.toLowerCase();
 };
-const f100288 = (id) => id.id;
+const f101301 = (id) => id.id;
 function createUserWidgetFromServer(data) {
   let mapped;
   let str;
@@ -76,10 +76,10 @@ function createUserWidgetFromServer(data) {
               if (null != id.id) {
                 tmp = null;
                 if (null != id.file_id) {
-                  obj = { status: "saved", id: null, fileId: null, gameId: null, title, tags: null, localClipId: local_clip_id, videoURL: null, thumbnailURL: null, spritesheetImageURL: null, spritesheetVttURL: null };
+                  obj = { status: "saved", id: null, fileId: null, gameId: null, title, tags: null, localClipId: local_clip_id, clipEventsTimeline: null, videoURL: null, thumbnailURL: null, spritesheetImageURL: null, spritesheetVttURL: null };
                   ({ id: obj.id, file_id: obj.fileId, game_id: obj.gameId, title } = id);
                   ({ tags: obj.tags, local_clip_id } = id);
-                  ({ video_url: obj.videoURL, thumbnail_url: obj.thumbnailURL, spritesheet_image_url: obj.spritesheetImageURL, spritesheet_vtt_url: obj.spritesheetVttURL } = id);
+                  ({ clip_events_timeline: obj.clipEventsTimeline, video_url: obj.videoURL, thumbnail_url: obj.thumbnailURL, spritesheet_image_url: obj.spritesheetImageURL, spritesheet_vtt_url: obj.spritesheetVttURL } = id);
                   tmp = obj;
                 }
               }
@@ -122,21 +122,21 @@ function createUserWidgetFromSnapshot(type) {
             const self5 = this;
             const self6 = this;
             const obj2 = { id: id3, applicationId };
-            const applicationWidget = new tmp(7743).ApplicationWidget(obj2);
+            const applicationWidget = new tmp(7765).ApplicationWidget(obj2);
             return applicationWidget;
           } else if (WidgetType.WidgetType.PERSONAL === type) {
             ({ id: id2, header, sections } = type);
             const self3 = this;
             const self4 = this;
             const obj3 = { id: id2, header, sections };
-            const userProfilePersonalWidget = new tmp(7744).UserProfilePersonalWidget(obj3);
+            const userProfilePersonalWidget = new tmp(7766).UserProfilePersonalWidget(obj3);
             return userProfilePersonalWidget;
           } else if (WidgetType.WidgetType.CLIPS_GALLERY === type) {
             ({ id, clips } = type);
             const self = this;
             const self2 = this;
             obj = { id, clips };
-            const clipsGalleryWidget = new tmp(7746).ClipsGalleryWidget(obj);
+            const clipsGalleryWidget = new tmp(7768).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           } else {
             const type2 = type.type;
@@ -147,7 +147,7 @@ function createUserWidgetFromSnapshot(type) {
   }
   ({ id: id4, type: type3, games } = type);
   const obj4 = { id: id4, type: type3, games };
-  const baseGameWidget = new tmp(7740).BaseGameWidget(obj4);
+  const baseGameWidget = new tmp(7762).BaseGameWidget(obj4);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -296,7 +296,7 @@ function handleMutualFriendsFetchSuccess(userId) {
     new UserRecord(obj2);
     return obj;
   });
-  const iter = mapped.sortBy(f100282);
+  const iter = mapped.sortBy(f101295);
   const result = set(userId, iter.value());
   const result1 = map4.set(userId.userId, userId.mutualFriends.length);
 }
@@ -381,7 +381,7 @@ function handleProfileFetch(arg0) {
       new UserRecord(obj2);
       return obj;
     });
-    const iter = mapped.sortBy(f100282);
+    const iter = mapped.sortBy(f101295);
     set3(id3, iter.value());
     const result3 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
@@ -448,7 +448,7 @@ function handleProfileFetch(arg0) {
       const _Set = Set;
       const self7 = this;
       const self8 = this;
-      new Set(mapped1.map(f100288));
+      new Set(mapped1.map(f101301));
       let found1;
       if (c24 != null) {
         const badges1 = tmp61.badges;
@@ -747,7 +747,7 @@ function handlePinBadgesToProfile(badges) {
       let found;
       const self = this;
       const self2 = this;
-      const set1 = new Set(badges.map(f100288));
+      const set1 = new Set(badges.map(f101301));
       if (obj != null) {
         const badges1 = tmp3.badges;
         found = badges1.filter((id) => !set1.has(id.id));

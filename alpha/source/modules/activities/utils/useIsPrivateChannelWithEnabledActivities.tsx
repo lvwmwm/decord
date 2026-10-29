@@ -1,11 +1,11 @@
-// Module ID: 11428
-// Function ID: 11429
+// Module ID: 11482
+// Function ID: 11483
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: [4856, 558, 576, 573, 2]
+// Dependencies: [4857, 558, 576, 573, 2]
 // Exports: isPrivateChannelWithEnabledActivities
 
-// Module 11428 (useIsPrivateChannelWithEnabledActivities)
-import ChannelStore from "ChannelStore" /* 4856 */;
+// Module 11482 (useIsPrivateChannelWithEnabledActivities)
+import ChannelStore from "ChannelStore" /* 4857 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPriva
 const result = size.fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");
 
 export default tmp2;
-export const isPrivateChannelWithEnabledActivities = function isPrivateChannelWithEnabledActivities(arg0) {
+export function isPrivateChannelWithEnabledActivities(arg0) {
   if (null == arg0) {
     return false;
   } else {
@@ -87,4 +87,4 @@ export const isPrivateChannelWithEnabledActivities = function isPrivateChannelWi
     }
     return flag;
   }
-};
+}

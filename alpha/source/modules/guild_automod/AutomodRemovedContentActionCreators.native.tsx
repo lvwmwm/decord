@@ -1,20 +1,20 @@
-// Module ID: 19043
-// Function ID: 19044
+// Module ID: 19276
+// Function ID: 19277
 // Name: AutomodRemovedContentActionCreators
-// Dependencies: [4856, 5699, 1125, 5246, 19044, 1999, 2]
+// Dependencies: [4857, 5701, 1125, 5247, 19277, 2000, 2]
 // Exports: openRemovedContentModal, showRemovedMessageToast
 
-// Module 19043 (AutomodRemovedContentActionCreators)
+// Module 19276 (AutomodRemovedContentActionCreators)
 import intl2 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRemovedContentActionCreators.native.tsx");
 
-export const showRemovedMessageToast = function showRemovedMessageToast(arg0, channel_id) {
+export function showRemovedMessageToast(arg0, channel_id) {
   let formatToPlainString;
   let obj2;
   let v9U3Wb3;
@@ -36,9 +36,9 @@ export const showRemovedMessageToast = function showRemovedMessageToast(arg0, ch
     v9U3Wb3 = intl2.t["9U3Wb3"];
     open(combined, obj);
   }
-};
-export const openRemovedContentModal = function openRemovedContentModal(action) {
+}
+export function openRemovedContentModal(action) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { action };
-  obj.openLazy(asyncRequire(19044, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
-};
+  obj.openLazy(asyncRequire(19277, dependencyMap.paths), "AutomodRemovedContentSheet", obj2);
+}

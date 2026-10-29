@@ -13,7 +13,7 @@ import ANTHROPIC_AI_INSTRUMENTED_METHODS2 from "ANTHROPIC_AI_INSTRUMENTED_METHOD
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const handleResponseError = function handleResponseError(setStatus, error) {
+export function handleResponseError(setStatus, error) {
   if (error.error) {
     setStatus = setStatus.setStatus;
     const obj = { code: SPAN_STATUS_ERROR.SPAN_STATUS_ERROR, message: error.error.type || "internal_error" };
@@ -22,8 +22,8 @@ export const handleResponseError = function handleResponseError(setStatus, error
     const tmp2Result = _mod745;
     tmp2Result.captureException(error.error, obj2);
   }
-};
-export const messagesFromParams = function messagesFromParams(first1) {
+}
+export function messagesFromParams(first1) {
   let input;
   let items1;
   let messages;
@@ -61,8 +61,8 @@ export const messagesFromParams = function messagesFromParams(first1) {
   }
   HermesBuiltin.arraySpread(items5, tmp2, tmp7);
   return items5;
-};
-export const setMessagesAttribute = function setMessagesAttribute(setAttributes, messagesFromParamsResult) {
+}
+export function setMessagesAttribute(setAttributes, messagesFromParamsResult) {
   let filteredMessages;
   let systemInstructions;
   if (!Array.isArray(messagesFromParamsResult)) {
@@ -87,8 +87,8 @@ export const setMessagesAttribute = function setMessagesAttribute(setAttributes,
     obj3[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_INPUT_MESSAGES_ORIGINAL_LENGTH_ATTRIBUTE] = num2;
     setAttributes(obj3);
   }
-};
-export const shouldInstrument = function shouldInstrument(arg0) {
+}
+export function shouldInstrument(arg0) {
   const ANTHROPIC_AI_INSTRUMENTED_METHODS = ANTHROPIC_AI_INSTRUMENTED_METHODS2.ANTHROPIC_AI_INSTRUMENTED_METHODS;
   return ANTHROPIC_AI_INSTRUMENTED_METHODS.includes(arg0);
-};
+}

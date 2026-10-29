@@ -8,7 +8,7 @@ import _mod776 from "module_776" /* 776 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+export function isSentryRequestUrl(arr, getDsn) {
   let dsn;
   let tunnel;
   if (getDsn != null) {
@@ -53,4 +53,4 @@ export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
     flag = flag2;
   }
   return flag;
-};
+}

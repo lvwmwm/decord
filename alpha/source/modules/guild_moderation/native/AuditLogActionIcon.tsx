@@ -1,40 +1,40 @@
-// Module ID: 19356
-// Function ID: 19357
+// Module ID: 19589
+// Function ID: 19590
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 19351, 1084, 21, 5004, 587, 19357, 19293, 9381, 5722, 16515, 5714, 10005, 8597, 18467, 8605, 9080, 8581, 13690, 11205, 13685, 19359, 14198, 8579, 12193, 19361, 19362, 19363, 558, 576, 1199, 2]
+// Dependencies: [19, 17, 19584, 1084, 21, 5005, 587, 19590, 19526, 9413, 5724, 16753, 5716, 10037, 8619, 18701, 8627, 9083, 8603, 13923, 11259, 13918, 19592, 14431, 8601, 12247, 19594, 19595, 19596, 558, 576, 1199, 2]
 
-// Module 19356 (AuditLogActionIcon)
+// Module 19589 (AuditLogActionIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import LinkIcon from "LinkIcon" /* 5714 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
-import ChatIcon from "ChatIcon" /* 8579 */;
-import ThreadIcon from "ThreadIcon" /* 8581 */;
-import GroupIcon from "GroupIcon" /* 8597 */;
-import StageIcon from "StageIcon" /* 8605 */;
-import CalendarIcon from "CalendarIcon" /* 9080 */;
-import ReactionIcon from "ReactionIcon" /* 9381 */;
-import FlagIcon from "FlagIcon" /* 10005 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 11205 */;
-import RobotIcon2 from "RobotIcon" /* 12193 */;
-import SoundboardIcon from "SoundboardIcon" /* 13685 */;
-import StickerIcon from "StickerIcon" /* 13690 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14198 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16515 */;
-import WebhookIcon from "WebhookIcon" /* 18467 */;
-import ChannelListIcon from "ChannelListIcon" /* 19293 */;
-import ListBulletsIcon from "ListBulletsIcon" /* 19357 */;
-import HomeIcon from "HomeIcon" /* 19359 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19361 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19362 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19363 */;
+import LinkIcon from "LinkIcon" /* 5716 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
+import ChatIcon from "ChatIcon" /* 8601 */;
+import ThreadIcon from "ThreadIcon" /* 8603 */;
+import GroupIcon from "GroupIcon" /* 8619 */;
+import StageIcon from "StageIcon" /* 8627 */;
+import CalendarIcon from "CalendarIcon" /* 9083 */;
+import ReactionIcon from "ReactionIcon" /* 9413 */;
+import FlagIcon from "FlagIcon" /* 10037 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 11259 */;
+import RobotIcon2 from "RobotIcon" /* 12247 */;
+import SoundboardIcon from "SoundboardIcon" /* 13918 */;
+import StickerIcon from "StickerIcon" /* 13923 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14431 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 16753 */;
+import WebhookIcon from "WebhookIcon" /* 18701 */;
+import ChannelListIcon from "ChannelListIcon" /* 19526 */;
+import ListBulletsIcon from "ListBulletsIcon" /* 19590 */;
+import HomeIcon from "HomeIcon" /* 19592 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19594 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19595 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19596 */;
 import react from "react" /* 19 */;
-import AuditLogRecord from "AuditLogRecord" /* 19351 */;
+import AuditLogRecord from "AuditLogRecord" /* 19584 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
   if (cResult[2] !== action) {
     let RobotIcon;
     if (action === metroImportDefault.MESSAGE_DELETE) {
-      RobotIcon = tmp(8579).ChatIcon;
+      RobotIcon = tmp(8601).ChatIcon;
     } else {
       if (action !== metroImportDefault.AUTO_MODERATION_BLOCK_MESSAGE) {
         if (action !== metroImportDefault.AUTO_MODERATION_FLAG_TO_CHANNEL) {
@@ -124,7 +124,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuditI
           }
         }
       }
-      RobotIcon = tmp(12193).RobotIcon;
+      RobotIcon = tmp(12247).RobotIcon;
     }
     cResult[2] = action;
     cResult[3] = RobotIcon;

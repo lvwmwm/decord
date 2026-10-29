@@ -1,16 +1,16 @@
-// Module ID: 14031
-// Function ID: 14032
+// Module ID: 14264
+// Function ID: 14265
 // Name: BugReportManager
-// Dependencies: [5, 17, 1369, 1084, 7903, 1381, 13990, 13992, 1278, 7250, 7926, 14032, 2]
+// Dependencies: [5, 17, 1369, 1084, 7926, 1381, 14223, 14225, 1278, 7274, 7949, 14265, 2]
 
-// Module 14031 (BugReportManager)
+// Module 14264 (BugReportManager)
 import Constants from "Constants" /* 1084 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
-import react_nativeDefault from "react-native" /* 7926 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
+import react_nativeDefault from "react-native" /* 7949 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_3, duration;
@@ -29,7 +29,7 @@ function showNotification(uri) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -105,7 +105,7 @@ function showNotification(uri) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -161,7 +161,7 @@ function showNotification(uri) {
             obj8 = tmp(duration[8]);
             enqueueNotification(obj10);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -216,7 +216,7 @@ class BugReportManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ class BugReportManager extends AutomaticLifecycleManager {
               addScreenshotEvent();
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c3 = 3;

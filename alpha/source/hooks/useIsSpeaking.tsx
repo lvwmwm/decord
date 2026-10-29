@@ -1,14 +1,14 @@
-// Module ID: 6816
-// Function ID: 6817
+// Module ID: 6839
+// Function ID: 6840
 // Name: useIsSpeaking
-// Dependencies: [6042, 4907, 6720, 5666, 558, 576, 504, 2]
+// Dependencies: [6046, 4908, 6743, 5668, 558, 576, 504, 2]
 // Exports: getIsSpeaking
 
-// Module 6816 (useIsSpeaking)
-import SoundboardStore from "SoundboardStore" /* 6042 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import SpeakingStore from "SpeakingStore" /* 6720 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+// Module 6839 (useIsSpeaking)
+import SoundboardStore from "SoundboardStore" /* 6046 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SpeakingStore from "SpeakingStore" /* 6743 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -194,7 +194,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSpeak
 const result = size.fileFinishedImporting("hooks/useIsSpeaking.tsx");
 
 export default tmp2;
-export const getIsSpeaking = function getIsSpeaking(checkIsMuted) {
+export function getIsSpeaking(checkIsMuted) {
   let checkSoundSharing;
   let obj;
   let obj2;
@@ -240,4 +240,4 @@ export const getIsSpeaking = function getIsSpeaking(checkIsMuted) {
     tmp10 = tmp11;
   }
   return tmp10;
-};
+}

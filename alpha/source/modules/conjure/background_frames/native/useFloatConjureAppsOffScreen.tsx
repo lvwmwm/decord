@@ -1,13 +1,13 @@
-// Module ID: 18741
-// Function ID: 18742
+// Module ID: 18974
+// Function ID: 18975
 // Name: useFloatConjureAppsOffScreen
-// Dependencies: [19, 18255, 18332, 558, 576, 504, 6813, 2]
+// Dependencies: [19, 18489, 18566, 558, 576, 504, 6836, 2]
 
-// Module 18741 (useFloatConjureAppsOffScreen)
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18332 */;
+// Module 18974 (useFloatConjureAppsOffScreen)
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18566 */;
 import react from "react" /* 19 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18255 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18489 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFloatConj
   let tmp5 = VisibleChannelScreenStore(first);
   _require = tmp5;
   const tmpResult = require("get initialized");
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp(18332).FLOATING_APP_STORES, getFloatableFrameIds);
+  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp(18566).FLOATING_APP_STORES, getFloatableFrameIds);
   if (cResult[1] !== tmp5) {
     const fn2 = function c() {
       const obj = conjureAppPictureInPictureFrames;

@@ -1,26 +1,26 @@
-// Module ID: 5887
-// Function ID: 5888
+// Module ID: 5889
+// Function ID: 5890
 // Name: AudioActionCreators
-// Dependencies: [5, 5888, 5891, 4856, 2011, 5750, 4907, 1389, 1084, 5892, 5754, 3, 1264, 551, 584, 5893, 5867, 5897, 5914, 2]
+// Dependencies: [5, 5890, 5893, 4857, 2012, 5752, 4908, 1389, 1084, 5894, 5756, 3, 1264, 551, 584, 5895, 5869, 5899, 5916, 2]
 
-// Module 5887 (AudioActionCreators)
+// Module 5889 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Constants2 from "Constants" /* 5754 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5867 */;
-import Constants3 from "Constants" /* 5892 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5893 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5897 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5914 */;
+import Constants2 from "Constants" /* 5756 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5869 */;
+import Constants3 from "Constants" /* 5894 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5895 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5899 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5888 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5891 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5890 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5893 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -653,7 +653,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp17) {
           c2 = 3;
@@ -743,7 +743,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -777,7 +777,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp17) {
           c2 = 3;

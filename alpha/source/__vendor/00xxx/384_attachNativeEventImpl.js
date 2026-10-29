@@ -253,7 +253,7 @@ let items = [
 ];
 const AnimatedEvent_export = _createClassDefault(AnimatedEvent, items);
 
-export const attachNativeEventImpl = function attachNativeEventImpl(current, arg1, arg2, arg3) {
+export function attachNativeEventImpl(current, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   _require = arg1;
@@ -301,5 +301,5 @@ export const attachNativeEventImpl = function attachNativeEventImpl(current, arg
       }
     }
   };
-};
+}
 export { AnimatedEvent_export as AnimatedEvent };

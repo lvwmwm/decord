@@ -1,18 +1,18 @@
-// Module ID: 19460
-// Function ID: 19461
+// Module ID: 19693
+// Function ID: 19694
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 4856, 4936, 7602, 1084, 558, 576, 504, 7462, 6409, 2]
+// Dependencies: [5, 32, 19, 4857, 4937, 7625, 1084, 558, 576, 504, 7485, 6433, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 19460 (GuildTemplateSettingsUtils)
+// Module 19693 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1084 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7462 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7602 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7625 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c4;
@@ -149,7 +149,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
                 }
                 closure_1(closure_0);
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp26) {
               closure_3 = tmp26;
@@ -256,7 +256,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c4;
@@ -302,7 +302,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               }
               closure_1(closure_0);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp26) {
             closure_3 = tmp26;
@@ -339,9 +339,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
 });
 const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateSettingsUtils.tsx");
 
-export const isGuildTemplateNameValid = function isGuildTemplateNameValid(str) {
+export function isGuildTemplateNameValid(str) {
   const tmp = null != str && str.trim().length >= 2;
   return tmp;
-};
+}
 export const useCanViewAllChannels = tmp2;
 export const useGuildTemplate = tmp3;

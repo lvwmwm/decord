@@ -1,13 +1,13 @@
-// Module ID: 13821
-// Function ID: 13822
+// Module ID: 14054
+// Function ID: 14055
 // Name: ContactSyncActionCreators
-// Dependencies: [5, 6535, 1084, 4832, 1402, 1264, 13817, 7310, 2]
+// Dependencies: [5, 6559, 1084, 4833, 1402, 1264, 14050, 7334, 2]
 
-// Module 13821 (ContactSyncActionCreators)
+// Module 14054 (ContactSyncActionCreators)
 import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 4832 */;
+import UserSettings from "UserSettings" /* 4833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _updateDiscoverability() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -103,7 +103,7 @@ let obj = function _updateDiscoverability() {
           obj3 = closure_132_0(closure_132_2[6]);
           track(USER_DISCOVERY_UPDATED, obj10);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp38) {
         c6 = 3;
@@ -131,7 +131,7 @@ _asyncToGenerator(async (name) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ _asyncToGenerator(async (name) => {
             }
             track(NAME_SUBMITTED, obj);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       } catch (tmp17) {
@@ -202,7 +202,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -319,7 +319,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         const obj7 = closure_1(setting[5]);
         obj7.track(constants.CONTACT_SYNC_TOGGLED, obj19);
         constants = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } catch (tmp47) {
       constants = 3;

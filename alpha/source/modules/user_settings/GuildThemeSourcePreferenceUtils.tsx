@@ -10,7 +10,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/GuildThemeSourcePreferenceUtils.tsx");
 
-export const resolveDefaultGuildThemePreference = function resolveDefaultGuildThemePreference(arg0) {
+export function resolveDefaultGuildThemePreference(arg0) {
   let GUILD;
   if (arg0 === preloaded_user_settings.GuildThemeSourcePreference.PERSONAL) {
     GUILD = tmp(1208).GuildThemeSourcePreference.PERSONAL;
@@ -18,8 +18,8 @@ export const resolveDefaultGuildThemePreference = function resolveDefaultGuildTh
     GUILD = tmp(1208).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
-};
-export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourcePreference(arg0, arg1) {
+}
+export function resolveGuildThemeSourcePreference(arg0, arg1) {
   let tmp3 = arg0;
   if (arg0 !== preloaded_user_settings.GuildThemeSourcePreference.GUILD) {
     tmp3 = arg0;
@@ -34,4 +34,4 @@ export const resolveGuildThemeSourcePreference = function resolveGuildThemeSourc
     }
   }
   return tmp3;
-};
+}

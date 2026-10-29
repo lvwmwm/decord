@@ -1,15 +1,15 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14486
+// Function ID: 14487
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 576, 5950, 1125, 5270, 14248, 5950, 2]
+// Dependencies: [19, 21, 558, 576, 5952, 1125, 5271, 14483, 5952, 2]
 
-// Module 14251 (VoicePanelVideoGuardErrorAlert)
+// Module 14486 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import AlertModal2 from "AlertModal" /* 5950 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 14248 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import AlertModal2 from "AlertModal" /* 5952 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 14483 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     const intl2 = tmp(1125).intl;
     const format = intl2.format;
     const obj4 = { helpdeskArticle: VideoGuardExperiment.VIDEO_GUARD_BLOG_POST_URL };

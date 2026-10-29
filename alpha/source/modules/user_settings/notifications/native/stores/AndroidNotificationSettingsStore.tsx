@@ -1,12 +1,12 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17349
+// Function ID: 17350
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1266, 1381, 10790, 1271, 558, 576, 4919, 2]
+// Dependencies: [5, 1266, 1381, 10866, 1271, 558, 576, 4920, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 17110 (AndroidNotificationSettingsStore)
+// Module 17349 (AndroidNotificationSettingsStore)
 import react from "react" /* 576 */;
-import PushNotificationDefault from "PushNotification" /* 10790 */;
+import PushNotificationDefault from "PushNotification" /* 10866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c3, c4;
 
 let tmp;
-const _slicedToArray = tmp(4919);
+const _slicedToArray = tmp(4920);
 let obj = function _initializeAndroidNotificationSettingsStore() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -35,7 +35,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -135,7 +135,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp24) {
         if (0 === c2) {
           c4 = 3;
@@ -148,7 +148,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1266.createWithEqualityFn(() => ({ isLightsEnabled: "left", isVibrationsEnabled: "ix", isSoundsEnabled: "Math", isNotifyEveryTime: "shapes" }));
+let closure_4 = module_1266.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "Symbol", isSoundsEnabled: "ix", isNotifyEveryTime: "min" }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationLightsEnabled() {
   let first;
@@ -223,11 +223,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroid
 });
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
-export const initializeAndroidNotificationSettingsStore = function initializeAndroidNotificationSettingsStore() {
+export function initializeAndroidNotificationSettingsStore() {
   return obj(...arguments);
-};
+}
 export const useAndroidNotificationLightsEnabled = tmp2;
-export const setAndroidNotificationLightsEnabled = function setAndroidNotificationLightsEnabled(isLightsEnabled) {
+export function setAndroidNotificationLightsEnabled(isLightsEnabled) {
   let state;
   _require = isLightsEnabled;
   obj = require("react-native");
@@ -237,9 +237,9 @@ export const setAndroidNotificationLightsEnabled = function setAndroidNotificati
   });
   const obj2 = PushNotificationDefault;
   obj2.setLightsEnabled(isLightsEnabled);
-};
+}
 export const useAndroidNotificationVibrationsEnabled = tmp3;
-export const setAndroidNotificationVibrationsEnabled = function setAndroidNotificationVibrationsEnabled(isVibrationsEnabled) {
+export function setAndroidNotificationVibrationsEnabled(isVibrationsEnabled) {
   let state;
   _require = isVibrationsEnabled;
   obj = require("react-native");
@@ -249,9 +249,9 @@ export const setAndroidNotificationVibrationsEnabled = function setAndroidNotifi
   });
   const obj2 = PushNotificationDefault;
   obj2.setVibrationsEnabled(isVibrationsEnabled);
-};
+}
 export const useAndroidNotificationSoundsEnabled = tmp4;
-export const setAndroidNotificationSoundsEnabled = function setAndroidNotificationSoundsEnabled(isSoundsEnabled) {
+export function setAndroidNotificationSoundsEnabled(isSoundsEnabled) {
   let state;
   _require = isSoundsEnabled;
   obj = require("react-native");
@@ -261,9 +261,9 @@ export const setAndroidNotificationSoundsEnabled = function setAndroidNotificati
   });
   const obj2 = PushNotificationDefault;
   obj2.setSoundsEnabled(isSoundsEnabled);
-};
+}
 export const useAndroidMessageNotificationsEnabled = tmp5;
-export const setAndroidMessageNotificationsEnabled = function setAndroidMessageNotificationsEnabled(isNotifyEveryTime) {
+export function setAndroidMessageNotificationsEnabled(isNotifyEveryTime) {
   let state;
   _require = isNotifyEveryTime;
   obj = require("react-native");
@@ -273,4 +273,4 @@ export const setAndroidMessageNotificationsEnabled = function setAndroidMessageN
   });
   const obj2 = PushNotificationDefault;
   const result = obj2.setAndroidNotifyEveryTime(isNotifyEveryTime);
-};
+}

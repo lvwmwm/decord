@@ -1,12 +1,12 @@
-// Module ID: 18736
-// Function ID: 18737
+// Module ID: 18970
+// Function ID: 18971
 // Name: conjureAppPictureInPictureLayout
-// Dependencies: [2023, 10940, 2]
+// Dependencies: [2024, 10975, 2]
 // Exports: getCloseTargetCenter, getPictureInPictureBounds, getPictureInPictureSize, getSnappedPosition, getStackedPosition, isOverCloseTarget
 
-// Module 18736 (conjureAppPictureInPictureLayout)
-import Constants from "Constants" /* 2023 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10940 */;
+// Module 18970 (conjureAppPictureInPictureLayout)
+import Constants from "Constants" /* 2024 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10975 */;
 import size_mod from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;

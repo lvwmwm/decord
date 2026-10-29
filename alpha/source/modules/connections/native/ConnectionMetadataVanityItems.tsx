@@ -1,25 +1,25 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11365
+// Function ID: 11366
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7312, 21, 5004, 587, 1125, 11312, 11313, 558, 576, 12, 1900, 5270, 1199, 7311, 2]
+// Dependencies: [19, 17, 7336, 21, 5005, 587, 1125, 11366, 11367, 558, 576, 12, 1901, 5271, 1199, 7335, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11311 (ConnectionMetadataVanityItems)
+// Module 11365 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7311 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11312 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11313 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7335 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11366 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11367 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7312 */;
+import Constants from "Constants" /* 7336 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -424,7 +424,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vanity
 });
 let result = size.fileFinishedImporting("modules/connections/native/ConnectionMetadataVanityItems.tsx");
 
-export const generateRedditMetadataItems = function generateRedditMetadataItems(metadata, metadataItem) {
+export function generateRedditMetadataItems(metadata, metadataItem) {
   let intl;
   let intl2;
   let num = metadata[constants.REDDIT_TOTAL_KARMA];
@@ -454,8 +454,8 @@ export const generateRedditMetadataItems = function generateRedditMetadataItems(
     push3(metroRequire(closure_12, obj3, constants.REDDIT_MOD));
   }
   return items;
-};
-export const generateTwitterMetadataItems = function generateTwitterMetadataItems(metadata, metadataItem) {
+}
+export function generateTwitterMetadataItems(metadata, metadataItem) {
   let num = metadata[constants.TWITTER_STATUSES_COUNT];
   const _Number = Number;
   if (num == null) {
@@ -480,8 +480,8 @@ export const generateTwitterMetadataItems = function generateTwitterMetadataItem
     push2(metroRequire(closure_10, obj2, constants.TWITTER_FOLLOWERS_COUNT));
   }
   return items;
-};
-export const generateBlueskyMetadataItems = function generateBlueskyMetadataItems(arg0, style) {
+}
+export function generateBlueskyMetadataItems(arg0, style) {
   let num = arg0[constants.BLUESKY_STATUSES_COUNT];
   const _Number = Number;
   if (num == null) {
@@ -506,8 +506,8 @@ export const generateBlueskyMetadataItems = function generateBlueskyMetadataItem
     push2(metroRequire(closure_10, obj2, constants.BLUESKY_FOLLOWERS_COUNT));
   }
   return items;
-};
-export const generateLetterboxdMetadataItems = function generateLetterboxdMetadataItems(metadata, metadataItem) {
+}
+export function generateLetterboxdMetadataItems(metadata, metadataItem) {
   let num = metadata[constants.LETTERBOXD_WATCHES];
   const _Number = Number;
   if (num == null) {
@@ -532,8 +532,8 @@ export const generateLetterboxdMetadataItems = function generateLetterboxdMetada
     push2(metroRequire(closure_10, obj2, constants.LETTERBOXD_FILMS_IN_DIARY_THIS_YEAR));
   }
   return items;
-};
-export const generateSteamMetadataItems = function generateSteamMetadataItems(metadata, metadataItem) {
+}
+export function generateSteamMetadataItems(metadata, metadataItem) {
   let intl;
   let intl2;
   let intl3;
@@ -581,8 +581,8 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     push3(metroRequire(closure_11, obj4, constants.STEAM_ITEM_COUNT_TF2));
   }
   return items;
-};
-export const generatePaypalMetadataItems = function generatePaypalMetadataItems(metadata, metadataItem) {
+}
+export function generatePaypalMetadataItems(metadata, metadataItem) {
   const items = [];
   const tmp = metadataItem;
   if ("1" === metadata[constants.PAYPAL_VERIFIED]) {
@@ -590,8 +590,8 @@ export const generatePaypalMetadataItems = function generatePaypalMetadataItems(
     items.push(metroRequire(closure_9, obj));
   }
   return items;
-};
-export const generateEbayMetadataItems = function generateEbayMetadataItems(metadata, metadataItem) {
+}
+export function generateEbayMetadataItems(metadata, metadataItem) {
   let intl;
   let num = metadata[constants.EBAY_POSITIVE_FEEDBACK_PERCENTAGE];
   const _Number = Number;
@@ -613,8 +613,8 @@ export const generateEbayMetadataItems = function generateEbayMetadataItems(meta
     push2(metroRequire(closure_12, obj2, constants.EBAY_TOP_RATED_SELLER));
   }
   return items;
-};
-export const generateTikTokMetadataItems = function generateTikTokMetadataItems(metadata, metadataItem) {
+}
+export function generateTikTokMetadataItems(metadata, metadataItem) {
   let intl;
   let num = metadata[constants.TIKTOK_FOLLOWER_COUNT];
   const _Number = Number;
@@ -658,8 +658,8 @@ export const generateTikTokMetadataItems = function generateTikTokMetadataItems(
     push4(metroRequire(closure_12, obj4, constants.TIKTOK_VERIFIED));
   }
   return items;
-};
-export const generateRoleConnectionMetadataItems = function generateRoleConnectionMetadataItems(applicationRoleConnection, style) {
+}
+export function generateRoleConnectionMetadataItems(applicationRoleConnection, style) {
   let closure_0 = applicationRoleConnection;
   const items = [];
   const keys = Object.keys(applicationRoleConnection.metadata);
@@ -717,4 +717,4 @@ export const generateRoleConnectionMetadataItems = function generateRoleConnecti
     }
   }
   return items;
-};
+}

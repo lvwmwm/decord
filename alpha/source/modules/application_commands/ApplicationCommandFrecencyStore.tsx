@@ -1,18 +1,18 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9718
+// Function ID: 9719
 // Name: ApplicationCommandFrecencyStore
-// Dependencies: [1243, 6019, 1372, 1094, 5766, 12, 504, 584, 2]
+// Dependencies: [1243, 6023, 1372, 1094, 5768, 12, 504, 584, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 9686 (ApplicationCommandFrecencyStore)
+// Module 9718 (ApplicationCommandFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import FrecencyDefault from "Frecency" /* 5766 */;
+import FrecencyDefault from "Frecency" /* 5768 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, recentUses, set;
@@ -145,7 +145,7 @@ const applicationCommandFrecencyStore = new ApplicationCommandFrecencyStore(Disp
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandFrecencyStore.tsx");
 
 export default applicationCommandFrecencyStore;
-export const getTopRealCommands = function getTopRealCommands(arg0) {
+export function getTopRealCommands(arg0) {
   set = new Set();
   const iter = arg0[Symbol.iterator]();
   const str = iter.next();
@@ -164,8 +164,8 @@ export const getTopRealCommands = function getTopRealCommands(arg0) {
     let arraySpreadResult = HermesBuiltin.arraySpread(items, set, 0);
     return items;
   }
-};
-export const getFilteredTopCommands = function getFilteredTopCommands(arr, arg1) {
+}
+export function getFilteredTopCommands(arr, arg1) {
   let closure_0 = arg1;
   const found = arr.filter((arr) => {
     const hasItem = arr.includes(":");
@@ -181,4 +181,4 @@ export const getFilteredTopCommands = function getFilteredTopCommands(arr, arg1)
     return tmp2;
   });
   return found.map((item) => item.split(":")[0]);
-};
+}

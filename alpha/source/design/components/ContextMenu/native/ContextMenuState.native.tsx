@@ -1,14 +1,14 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9828
+// Function ID: 9829
 // Name: ContextMenuState
-// Dependencies: [19, 570, 1271, 558, 576, 5085, 5248, 2]
+// Dependencies: [19, 570, 1271, 558, 576, 5086, 5249, 2]
 // Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState
 
-// Module 9796 (ContextMenuState)
+// Module 9828 (ContextMenuState)
 import react2 from "react" /* 576 */;
 import react_native from "react-native" /* 1271 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
 import react from "react" /* 19 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -116,7 +116,7 @@ export const INDEX_BOUNDS_PAGE_Y_OFFSET = 1;
 export const INDEX_BOUNDS_WIDTH_OFFSET = 2;
 export const INDEX_BOUNDS_HEIGHT_OFFSET = 3;
 export { ContextMenuStore };
-export const showContextMenu = function showContextMenu(size) {
+export function showContextMenu(size) {
   let menu;
   _require = size;
   let obj = require("react-native");
@@ -124,8 +124,8 @@ export const showContextMenu = function showContextMenu(size) {
     const obj = { menu };
     return obj.setState(obj);
   });
-};
-export const hideContextMenu = function hideContextMenu() {
+}
+export function hideContextMenu() {
   let state;
   let obj = react_native;
   obj.batchUpdates(() => {
@@ -137,11 +137,11 @@ export const hideContextMenu = function hideContextMenu() {
       return obj;
     });
   });
-};
+}
 export const useActiveContextMenu = tmp3;
 export { updateContextMenuState };
 export const useContextMenuState = tmp4;
-export const resetContextMenuState = function resetContextMenuState(contextMenuState) {
+export function resetContextMenuState(contextMenuState) {
   let activeIndex;
   let itemMeasurements;
   let pan;
@@ -151,4 +151,4 @@ export const resetContextMenuState = function resetContextMenuState(contextMenuS
   if (itemMeasurements.get().length > 0) {
     const result2 = itemMeasurements.set([]);
   }
-};
+}

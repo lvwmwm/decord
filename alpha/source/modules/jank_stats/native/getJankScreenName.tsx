@@ -1,13 +1,13 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 17947
+// Function ID: 17948
 // Name: getJankScreenName
-// Dependencies: [17710, 5187, 17711, 2]
+// Dependencies: [17948, 5188, 17949, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 17709 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17711 */;
-import JankScreenConstants from "JankScreenConstants" /* 17710 */;
+// Module 17947 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17949 */;
+import JankScreenConstants from "JankScreenConstants" /* 17948 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f131573 = (name) => name.name === tabs;
+const f133146 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -181,7 +181,7 @@ export default function getJankScreenName() {
               let tmp14 = tmp11;
               if (name === channel) {
                 let routes1 = tmp9.routes;
-                let found = routes1.find(f131573);
+                let found = routes1.find(f133146);
                 if (found == null) {
                   found = tmp11;
                 }
@@ -240,7 +240,7 @@ export default function getJankScreenName() {
         }
         ({ focused, rendered } = obj5);
         if (0 === focused.length) {
-          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "scheduleLayoutAnimation" };
+          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "Atrule" };
           obj10 = obj9;
         } else {
           obj10 = { screen: resolveScreenName(focused), expectedScreenIds: mapped1.join(","), focusedRoute: focused[focused.length - 1], chatScreens: tmp17 };
@@ -254,7 +254,7 @@ export default function getJankScreenName() {
   obj5 = { focused: items, rendered: items, chatScreens: null };
 };
 export const CHAT_PANEL_ROUTE = "channel";
-export const getComponentDisplayName = function getComponentDisplayName(type) {
+export function getComponentDisplayName(type) {
   if (null == type) {
     return null;
   } else {
@@ -281,8 +281,8 @@ export const getComponentDisplayName = function getComponentDisplayName(type) {
     }
     return tmp;
   }
-};
-export const getChatPanelScreenName = function getChatPanelScreenName(channelId, showCreateThread) {
+}
+export function getChatPanelScreenName(channelId, showCreateThread) {
   let channelScreenName;
   const tmp = showCreateThread;
   if (tmp) {
@@ -294,8 +294,8 @@ export const getChatPanelScreenName = function getChatPanelScreenName(channelId,
     channelScreenName = React3;
   }
   return channelScreenName;
-};
-export const getPanelListScreenName = function getPanelListScreenName() {
+}
+export function getPanelListScreenName() {
   let items;
   let tmp10;
   const obj = RootNavigationRef;
@@ -327,7 +327,7 @@ export const getPanelListScreenName = function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f131573);
+          let found = routes1.find(f133146);
           if (found == null) {
             found = tmp3;
           }
@@ -357,8 +357,8 @@ export const getPanelListScreenName = function getPanelListScreenName() {
     tmp10 = resolveScreenName(items);
   }
   return tmp10;
-};
-export const getBaseScreenName = function getBaseScreenName() {
+}
+export function getBaseScreenName() {
   let items;
   let tmp6;
   const obj = RootNavigationRef;
@@ -407,12 +407,12 @@ export const getBaseScreenName = function getBaseScreenName() {
     tmp6 = resolveScreenName(items);
   }
   return tmp6;
-};
-export const isModalScreenName = function isModalScreenName(str) {
+}
+export function isModalScreenName(str) {
   const tmp2 = str.startsWith("" + modal + ":") || str === modal;
   return tmp2;
-};
-export const getWideViewScreenName = function getWideViewScreenName(arg0) {
+}
+export function getWideViewScreenName(arg0) {
   let items;
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
@@ -504,4 +504,4 @@ export const getWideViewScreenName = function getWideViewScreenName(arg0) {
     }
   }
   return combined;
-};
+}

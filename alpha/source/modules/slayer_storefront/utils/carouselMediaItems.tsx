@@ -1,11 +1,11 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10627
+// Function ID: 10628
 // Name: carouselMediaItems
-// Dependencies: [6418, 7367, 2]
+// Dependencies: [6442, 7390, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 10594 (carouselMediaItems)
-import StoreUtils from "StoreUtils" /* 6418 */;
+// Module 10627 (carouselMediaItems)
+import StoreUtils from "StoreUtils" /* 6442 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/slayer_storefront/utils/carouselMediaItems.tsx");
@@ -15,15 +15,15 @@ export const WEB_HERO_HEIGHT_PX = 560;
 export const MOBILE_HERO_WIDTH_PX = 343;
 export const MOBILE_HERO_HEIGHT_PX = 257;
 export const CAROUSEL_THUMBNAIL_SIZE = 112;
-export const getThumbnailSrc = function getThumbnailSrc(thumbnailSrc) {
+export function getThumbnailSrc(thumbnailSrc) {
   if (null != thumbnailSrc.thumbnailSrc) {
     thumbnailSrc = thumbnailSrc.thumbnailSrc;
   } else {
     thumbnailSrc = "video" === thumbnailSrc.type ? thumbnailSrc.videoThumbnailSrc : thumbnailSrc.src;
   }
   return thumbnailSrc;
-};
-export const convertCarouselItemsToMediaItems = function convertCarouselItemsToMediaItems(carouselItems, applicationId, stateFromStores2, heroWidth) {
+}
+export function convertCarouselItemsToMediaItems(carouselItems, applicationId, stateFromStores2, heroWidth) {
   let assetURL;
   let assetURL1;
   let assetURL2;
@@ -58,14 +58,14 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             let str4 = "webp";
             assetURL = undefined;
             if (null != tmp4.thumbnailAssetId) {
-              let tmp26Result = tmp26(6418);
+              let tmp26Result = tmp26(6442);
               let str5 = "webp";
               assetURL = tmp26Result.getAssetURL(applicationId, tmp4.thumbnailAssetId, 112, "webp");
             }
             assetURL1 = undefined;
             if (null != tmp4.backgroundAssetId) {
-              let tmp26Result2 = tmp26(6418);
-              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7367).LARGE_ASSET_FORMAT);
+              let tmp26Result2 = tmp26(6442);
+              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7390).LARGE_ASSET_FORMAT);
             }
             let arr2 = push(obj3);
           } else {
@@ -75,14 +75,14 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             let str = "webp";
             assetURL2 = undefined;
             if (null != tmp4.thumbnailAssetId) {
-              let tmp8Result = tmp8(6418);
+              let tmp8Result = tmp8(6442);
               let str2 = "webp";
               assetURL2 = tmp8Result.getAssetURL(applicationId, tmp4.thumbnailAssetId, 112, "webp");
             }
             assetURL3 = undefined;
             if (null != tmp4.backgroundAssetId) {
-              let tmp8Result2 = tmp8(6418);
-              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7367).LARGE_ASSET_FORMAT);
+              let tmp8Result2 = tmp8(6442);
+              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7390).LARGE_ASSET_FORMAT);
             }
             let arr3 = push(obj);
           }
@@ -95,4 +95,4 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
   }
   const items3 = [items, items1];
   return items3;
-};
+}

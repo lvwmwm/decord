@@ -1,13 +1,13 @@
-// Module ID: 14240
-// Function ID: 14241
+// Module ID: 14476
+// Function ID: 14477
 // Name: useConjureDevicePermissionSettings
-// Dependencies: [19, 10834, 558, 576, 10835, 504, 584, 2]
+// Dependencies: [19, 10910, 558, 576, 10911, 504, 584, 2]
 
-// Module 14240 (useConjureDevicePermissionSettings)
+// Module 14476 (useConjureDevicePermissionSettings)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10835 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10911 */;
 import react from "react" /* 19 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10834 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10910 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,8 +55,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDe
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
   if (cResult[4] !== stateFromStoresObject) {
-    const prop = tmp(10835).CONJURE_DEVICE_PERMISSION_NAMES;
-    const found = prop.filter(tmp(10835).isConjureDevicePermissionSupported);
+    const prop = tmp(10911).CONJURE_DEVICE_PERMISSION_NAMES;
+    const found = prop.filter(tmp(10911).isConjureDevicePermissionSupported);
     const mapped = found.map((permission) => {
       let tmp;
       const obj = { permission, decision: tmp };

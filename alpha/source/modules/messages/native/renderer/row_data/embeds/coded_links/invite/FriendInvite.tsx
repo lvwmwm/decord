@@ -1,24 +1,24 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 15031
+// Function ID: 15032
 // Name: FriendInvite
-// Dependencies: [17, 4946, 7844, 8307, 1125, 5058, 1414, 2]
+// Dependencies: [17, 4947, 7867, 8329, 1125, 5059, 1415, 2]
 // Exports: createFriendInvite
 
-// Module 14796 (FriendInvite)
+// Module 15031 (FriendInvite)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import Constants from "Constants" /* 7844 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import Constants from "Constants" /* 7867 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const InviteTypes = Constants.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/FriendInvite.tsx");
 
-export const createFriendInvite = function createFriendInvite(inviter, arg1, arg2, arg3) {
+export function createFriendInvite(inviter, arg1, arg2, arg3) {
   let FRIEND;
   let acceptLabelDisabledBackgroundColor;
   let acceptLabelDisabledColor;
@@ -123,4 +123,4 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
     FRIEND = InviteTypes.FRIEND;
   }
   return obj;
-};
+}

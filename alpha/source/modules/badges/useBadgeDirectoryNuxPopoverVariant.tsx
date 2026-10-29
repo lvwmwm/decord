@@ -1,15 +1,15 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14844
+// Function ID: 14845
 // Name: useBadgeDirectoryNuxPopoverVariant
-// Dependencies: [32, 19, 8718, 558, 576, 504, 569, 1101, 8723, 11164, 14611, 2]
+// Dependencies: [32, 19, 8721, 558, 576, 504, 569, 1101, 8726, 11218, 14845, 2]
 // Exports: useBadgeDirectoryNuxPopoverVariant
 
-// Module 14610 (useBadgeDirectoryNuxPopoverVariant)
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8723 */;
-import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 14611 */;
+// Module 14844 (useBadgeDirectoryNuxPopoverVariant)
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8726 */;
+import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 14845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8718 */;
+import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8721 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -311,6 +311,6 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/badges/useBadgeDirectoryNuxPopoverVariant.tsx");
 
 export const useBadgeDirectoryNuxPopoverState = tmp2;
-export const useBadgeDirectoryNuxPopoverVariant = function useBadgeDirectoryNuxPopoverVariant(arg0) {
+export function useBadgeDirectoryNuxPopoverVariant(arg0) {
   return closure_6(arg0).variantProps;
-};
+}

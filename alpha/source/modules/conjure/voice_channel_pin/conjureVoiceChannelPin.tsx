@@ -1,16 +1,16 @@
-// Module ID: 10841
-// Function ID: 10842
+// Module ID: 10917
+// Function ID: 10918
 // Name: conjureVoiceChannelPin
-// Dependencies: [5, 4856, 4936, 1084, 584, 10756, 10127, 2]
+// Dependencies: [5, 4857, 4937, 1084, 584, 10831, 10160, 2]
 // Exports: parseVoiceChannelPinOutcome, pinVoiceChannel, resolveVoiceChannelPin
 
-// Module 10841 (conjureVoiceChannelPin)
+// Module 10917 (conjureVoiceChannelPin)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10127 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
+import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10160 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _pinVoiceChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -108,7 +108,7 @@ let obj = function _pinVoiceChannel() {
 ({ ChannelTypes: metroRequire, Permissions: metroImportDefault } = Constants);
 let result = size.fileFinishedImporting("modules/conjure/voice_channel_pin/conjureVoiceChannelPin.tsx");
 
-export const parseVoiceChannelPinOutcome = function parseVoiceChannelPinOutcome(voice_channel_pin) {
+export function parseVoiceChannelPinOutcome(voice_channel_pin) {
   let channel_id;
   let status;
   if (null != voice_channel_pin) {
@@ -127,9 +127,9 @@ export const parseVoiceChannelPinOutcome = function parseVoiceChannelPinOutcome(
       return tmp;
     }
   }
-};
+}
 export { canPinVoiceChannel };
-export const resolveVoiceChannelPin = function resolveVoiceChannelPin(projectId, outcome) {
+export function resolveVoiceChannelPin(projectId, outcome) {
   obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_VOICE_CHANNEL_PIN_RESOLVED", projectId, outcome };
   obj.dispatch(obj2);
@@ -148,7 +148,7 @@ export const resolveVoiceChannelPin = function resolveVoiceChannelPin(projectId,
     }
   } catch (err) {
   }
-};
-export const pinVoiceChannel = function pinVoiceChannel() {
+}
+export function pinVoiceChannel() {
   return obj(...arguments);
-};
+}

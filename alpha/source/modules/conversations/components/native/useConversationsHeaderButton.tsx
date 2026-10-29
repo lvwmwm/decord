@@ -1,17 +1,17 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9799
+// Function ID: 9800
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7732, 5643, 9768, 1105, 9769, 9770, 504, 9774, 9773, 9776, 1125, 2]
+// Dependencies: [5, 19, 7755, 5644, 9800, 1105, 9801, 9802, 504, 9806, 9805, 9808, 1125, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9767 (useConversationsHeaderButton)
+// Module 9799 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1125 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9770 */;
-import PaperIcon from "PaperIcon" /* 9774 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9802 */;
+import PaperIcon from "PaperIcon" /* 9806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7732 */;
-import ConversationConstants from "ConversationConstants" /* 5643 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7755 */;
+import ConversationConstants from "ConversationConstants" /* 5644 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ let metroRequire;
 ({ CONVERSATION_HAS_MORE_EXPIRATION_MS: hasOwnProperty, MOBILE_FETCH_LIMIT: metroRequire, MOBILE_PREVIEW_MESSAGE_COUNT: metroImportDefault } = ConversationConstants);
 let result = size.fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
 
-export const useConversationsHeaderButton = function useConversationsHeaderButton(channel) {
+export function useConversationsHeaderButton(channel) {
   let callback;
   let isTopicalNavEnabled;
   let stateFromStores;
@@ -53,7 +53,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
           ref = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp17) {
         if (0 === ref) {
           c3 = 3;
@@ -206,4 +206,4 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
     }
     return tmp;
   }, items9);
-};
+}

@@ -15,15 +15,15 @@ let tmp;
 const ErrorKind = tmp(1191);
 module_1171.__exportStar(TYPE, exports);
 
-export const parse = function parse(arg0, arg1) {
-  const f88637 = (style) => {
+export function parse(arg0, arg1) {
+  const f89644 = (style) => {
     delete style[`location`];
     if (!TYPE.isSelectElement(style)) {
       if (!TYPE.isPluralElement(style)) {
         if (!TYPE.isNumberElement(style)) {
           if (TYPE.isTagElement(style)) {
             const children = style.children;
-            const item = children.forEach(f88637);
+            const item = children.forEach(f89644);
           }
         }
         delete style.style["location"];
@@ -32,7 +32,7 @@ export const parse = function parse(arg0, arg1) {
     for (const key10046 in style.options) {
       delete style.options[key10046][str];
       let value = style.options[key10046].value;
-      let item1 = value.forEach(f88637);
+      let item1 = value.forEach(f89644);
       continue;
     }
   };
@@ -57,10 +57,10 @@ export const parse = function parse(arg0, arg1) {
     }
     if (!captureLocation) {
       const val = parsed.val;
-      let item = val.forEach(f88637);
+      let item = val.forEach(f89644);
     }
     return parsed.val;
   }
-};
+}
 export const _Parser = Parser.Parser;
 export const isStructurallySame = require("hoistSelectors").isStructurallySame;

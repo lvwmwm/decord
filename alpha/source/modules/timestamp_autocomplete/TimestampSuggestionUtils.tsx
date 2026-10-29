@@ -1,28 +1,28 @@
-// Module ID: 10242
-// Function ID: 10243
+// Module ID: 10275
+// Function ID: 10276
 // Name: TimestampSuggestionUtils
-// Dependencies: [32, 2065, 2046, 10243, 1125, 2]
+// Dependencies: [32, 2066, 2047, 10276, 1125, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 10242 (TimestampSuggestionUtils)
+// Module 10275 (TimestampSuggestionUtils)
 import intl6 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import en2 from "en" /* 10243 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import en2 from "en" /* 10276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 let items = ["h:mm:ssa", "h:mm:ss a", "H:mm:ss", "h:mma", "h:mm a", "H:mm", "HHmm", "ha", "h a", "H", "LT", "LTS"];
-let items1 = [_modDef2046.ISO_8601];
+let items1 = [_modDef2047.ISO_8601];
 const items2 = [...items];
 const set = new Set(items2);
 HermesBuiltin.arraySpread(items1, set, 1);
 let result = size.fileFinishedImporting("modules/timestamp_autocomplete/TimestampSuggestionUtils.tsx");
 
-export const preloadTimestampParser = function preloadTimestampParser() {
+export function preloadTimestampParser() {
   en2;
-};
-export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0, cloneResult1) {
+}
+export function queryTimestampSuggestions(arg0, cloneResult1) {
   let adjustedTimestamp;
   let intl;
   let invalidResult;
@@ -39,7 +39,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   let unadjustedDescription;
   let obj = cloneResult1;
   if (cloneResult1 === undefined) {
-    obj = _modDef2046();
+    obj = _modDef2047();
   }
   let tmp4 = null;
   if ("" !== arg0) {
@@ -104,7 +104,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   if (tmp13) {
     tmp13 = first.text === arg0;
   }
-  const obj2 = _modDef2046;
+  const obj2 = _modDef2047;
   if (tmp13) {
     const start = first.start;
     invalidResult = obj2(start.date());
@@ -138,7 +138,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
         if (!start2.isCertain("hour")) {
           const _Math = Math;
           const result = Math.round(cloneResult.valueOf() / 900000) * 900000;
-          obj5 = tmp19(2046)(result);
+          obj5 = tmp19(2047)(result);
         }
       }
       if (tmp13) {
@@ -269,4 +269,4 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
     }
   }
   return items1;
-};
+}

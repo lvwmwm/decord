@@ -1,15 +1,15 @@
-// Module ID: 15298
-// Function ID: 15299
+// Module ID: 15533
+// Function ID: 15534
 // Name: ProgramRewardsUtils
-// Dependencies: [1389, 1391, 4631, 15299, 15300, 2050, 2]
+// Dependencies: [1389, 1391, 4632, 15534, 15535, 2051, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isProgramRewardStale
 
-// Module 15298 (ProgramRewardsUtils)
+// Module 15533 (ProgramRewardsUtils)
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import isPastDefault from "isPast" /* 4631 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 15299 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15300 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import isPastDefault from "isPast" /* 4632 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 15534 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15535 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 let closure_5 = { [ProgramRewardsTypes.RewardProgram.NITRO]: canFetchNitroProgramReward, [ProgramRewardsTypes.RewardProgram.XBOX]: canFetchXboxProgramReward };
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
-export const isProgramRewardStale = function isProgramRewardStale(next_reward_date) {
+export function isProgramRewardStale(next_reward_date) {
   if (null == next_reward_date) {
     return true;
   } else {
@@ -42,10 +42,10 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     }
     return tmp;
   }
-};
+}
 export { canFetchNitroProgramReward };
 export { canFetchXboxProgramReward };
-export const canFetchAnyProgramReward = function canFetchAnyProgramReward() {
+export function canFetchAnyProgramReward() {
   const values = Object.values(ProgramRewardsTypes.RewardProgram);
   for (const item10014 of values) {
     if (typeof item10014 === "number") {
@@ -58,11 +58,11 @@ export const canFetchAnyProgramReward = function canFetchAnyProgramReward() {
     continue;
   }
   return false;
-};
-export const hasNecessaryPremiumSubscriptionStatus = function hasNecessaryPremiumSubscriptionStatus(currentUser) {
+}
+export function hasNecessaryPremiumSubscriptionStatus(currentUser) {
   if (currentUser == null) {
     currentUser = UserStore.getCurrentUser();
   }
   const obj = PremiumUtils;
   return obj.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
-};
+}

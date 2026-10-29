@@ -13,7 +13,7 @@ let c7, closure_8;
 
 let c2;
 let c3;
-const f88428 = (acc, item) => {
+const f89435 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -145,7 +145,7 @@ function encryptAndStoreTokens() {
         items[1] = combined;
         return items;
       }), 0);
-      closure_11 = items.reduce(f88428, {});
+      closure_11 = items.reduce(f89435, {});
       c9 = true;
     } else {
       closure_8 = tmp8;
@@ -202,7 +202,7 @@ function getToken(arg0) {
 }
 let result = size.fileFinishedImporting("../discord_common/js/shared/lib/TokenManager.tsx");
 
-export const init = function init() {
+export function init() {
   let wasEncrypted;
   const tmp2 = c13;
   if (!tmp2) {
@@ -263,13 +263,13 @@ export const init = function init() {
         [, tmp] = item;
         return null != tmp;
       }), 0);
-      closure_10 = items.reduce(f88428, {});
+      closure_10 = items.reduce(f89435, {});
       c13 = true;
     }
     obj3 = { decryptedToken: null, wasEncrypted: false };
   }
-};
-export const getAnalyticsToken = function getAnalyticsToken() {
+}
+export function getAnalyticsToken() {
   let tmp2;
   if (null != __analytics__) {
     tmp2 = closure_10[tmp];
@@ -277,9 +277,9 @@ export const getAnalyticsToken = function getAnalyticsToken() {
     tmp2 = c7;
   }
   return tmp2;
-};
+}
 export { getToken };
-export const setAnalyticsToken = function setAnalyticsToken(analyticsToken) {
+export function setAnalyticsToken(analyticsToken) {
   if (null != analyticsToken) {
     const tmp4 = c13;
     if (tmp4) {
@@ -294,8 +294,8 @@ export const setAnalyticsToken = function setAnalyticsToken(analyticsToken) {
   } else {
     removeToken(__analytics__);
   }
-};
-export const setToken = function setToken(token, id) {
+}
+export function setToken(token, id) {
   if (null != token) {
     const tmp3 = c13;
     if (tmp3) {
@@ -311,8 +311,8 @@ export const setToken = function setToken(token, id) {
   } else {
     removeToken(id);
   }
-};
-export const hideToken = function hideToken() {
+}
+export function hideToken() {
   const tmp = c12;
   if (!tmp) {
     const tmp2 = c13;
@@ -330,8 +330,8 @@ export const hideToken = function hideToken() {
       throw error;
     }
   }
-};
-export const showToken = function showToken() {
+}
+export function showToken() {
   const tmp = c12;
   if (tmp) {
     const tmp2 = c13;
@@ -357,9 +357,9 @@ export const showToken = function showToken() {
       throw error;
     }
   }
-};
+}
 export { removeToken };
-export const removeAnalyticsToken = function removeAnalyticsToken() {
+export function removeAnalyticsToken() {
   return removeToken(__analytics__);
-};
+}
 export { encryptAndStoreTokens };

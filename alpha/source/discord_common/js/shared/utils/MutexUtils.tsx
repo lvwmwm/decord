@@ -1,15 +1,15 @@
-// Module ID: 16082
-// Function ID: 16083
+// Module ID: 16318
+// Function ID: 16319
 // Name: MutexUtils
 // Dependencies: [2]
 // Exports: createLock, createObservableLock
 
-// Module 16082 (MutexUtils)
+// Module 16318 (MutexUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/MutexUtils.tsx");
 
-export const createLock = function createLock() {
+export function createLock() {
   let closure_0 = Promise.resolve(null);
   return (arg0) => {
     let promise = new Promise((arg0, arg1) => {
@@ -18,8 +18,8 @@ export const createLock = function createLock() {
     });
     return promise;
   };
-};
-export const createObservableLock = function createObservableLock(arg0) {
+}
+export function createObservableLock(arg0) {
   let closure_3;
   let closure_4;
   let closure_5;
@@ -64,4 +64,4 @@ export const createObservableLock = function createObservableLock(arg0) {
   mutex.isMutexHeld = () => closure_1.length > 0;
   mutex.getLockHolders = () => closure_1;
   return mutex;
-};
+}

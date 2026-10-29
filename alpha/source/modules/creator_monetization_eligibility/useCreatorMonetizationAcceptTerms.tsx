@@ -1,15 +1,15 @@
-// Module ID: 19519
-// Function ID: 19520
+// Module ID: 19752
+// Function ID: 19753
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 4874, 4878, 1389, 504, 7398, 19520, 6410, 2]
+// Dependencies: [5, 32, 19, 4875, 4879, 1389, 504, 7421, 19753, 6434, 2]
 // Exports: default
 
-// Module 19519 (useCreatorMonetizationAcceptTerms)
-import GuildRecord from "GuildRecord" /* 4874 */;
+// Module 19752 (useCreatorMonetizationAcceptTerms)
+import GuildRecord from "GuildRecord" /* 4875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -135,7 +135,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
             closure_129_4(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp41) {
           if (0 === c3) {
             c5 = 3;

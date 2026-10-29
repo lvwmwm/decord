@@ -1,14 +1,14 @@
-// Module ID: 18004
-// Function ID: 18005
+// Module ID: 18238
+// Function ID: 18239
 // Name: ChannelAffinitiesV2ActionCreators
-// Dependencies: [6705, 18002, 1084, 584, 1294, 2]
+// Dependencies: [6729, 18236, 1084, 584, 1294, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 18004 (ChannelAffinitiesV2ActionCreators)
+// Module 18238 (ChannelAffinitiesV2ActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ConsentStore from "ConsentStore" /* 6705 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18002 */;
+import ConsentStore from "ConsentStore" /* 6729 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18236 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let metroRequire;
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel_affinities_v2/ChannelAffinitiesV2ActionCreators.tsx");
 
-export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
+export function fetchChannelAffinitiesV2() {
   let num;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -65,4 +65,4 @@ export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
     return nextPromise;
   }
   nextPromise = Promise.resolve();
-};
+}

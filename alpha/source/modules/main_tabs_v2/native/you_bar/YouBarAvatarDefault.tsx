@@ -1,21 +1,21 @@
-// Module ID: 18111
-// Function ID: 18112
+// Module ID: 18345
+// Function ID: 18346
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 16712, 1084, 21, 5004, 587, 558, 576, 5288, 1199, 9437, 9381, 2]
+// Dependencies: [19, 17, 16950, 1084, 21, 5005, 587, 558, 576, 5289, 1199, 9468, 9413, 2]
 
-// Module 18111 (YouBarAvatarDefault)
+// Module 18345 (YouBarAvatarDefault)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import native from "native" /* 1199 */;
-import useToken from "useToken" /* 5288 */;
-import ReactionIcon2 from "ReactionIcon" /* 9381 */;
-import ClipView from "ClipView" /* 9437 */;
+import useToken from "useToken" /* 5289 */;
+import ReactionIcon2 from "ReactionIcon" /* 9413 */;
+import ClipView from "ClipView" /* 9468 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16712 */;
+import YouBarConstants from "YouBarConstants" /* 16950 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let rect;
 let tmp5;
-const ClipViewDefault = tmp5(9437);
+const ClipViewDefault = tmp5(9468);
 const View = react_native.View;
 ({ YOU_BAR_AVATAR_LARGE_SIZE: closure_4, YOU_BAR_AVATAR_PLACEHOLDER_SIZE: hasOwnProperty, YOU_BAR_STATUS_INSET: metroRequire, YOU_BAR_HEIGHT: metroImportDefault, YOU_BAR_LARGE_STATUS_SIZE: metroImportAll, YOU_BAR_PADDING: c9, YOU_BAR_STATUS_OFFSET: c10 } = YouBarConstants);
 const StatusTypes = Constants.StatusTypes;
@@ -197,7 +197,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   const result = num / 2;
   const sum = result + tmp2(1199).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  const point = { shape: tmp2(9437).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  const point = { shape: tmp2(9468).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   const obj3 = { style: size, children: items3 };
   size = { height: tmp2(1199).AVATAR_SIZE_MAP[tmp6], width: tmp2(1199).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   const obj4 = { cutouts: items, children: map1(View, obj5) };
@@ -309,7 +309,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "custom", style: size3, color: "background-mod-strong" };
       size3 = { width: native.AVATAR_SIZE_MAP[hasOwnProperty], height: native.AVATAR_SIZE_MAP[hasOwnProperty] };
-      const ReactionIcon = tmp(9381).ReactionIcon;
+      const ReactionIcon = tmp(9413).ReactionIcon;
       const tmp34 = authStore2(ReactionIcon, obj4);
       cResult[13] = tmp34;
       tmp31 = tmp34;

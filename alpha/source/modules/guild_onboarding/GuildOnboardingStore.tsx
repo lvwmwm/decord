@@ -1,14 +1,14 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7251
+// Function ID: 7252
 // Name: GuildOnboardingStore
-// Dependencies: [1084, 504, 4881, 584, 2]
+// Dependencies: [1084, 504, 4882, 584, 2]
 // Exports: isOnboarding
 
-// Module 7227 (GuildOnboardingStore)
+// Module 7251 (GuildOnboardingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;
@@ -93,7 +93,7 @@ const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboard
 
 export default guildOnboardingStore;
 export { GuildOnboardingStatus };
-export const isOnboarding = function isOnboarding(arg0) {
+export function isOnboarding(arg0) {
   let hasItem = null != arg0;
   if (hasItem) {
     const items = [, ];
@@ -101,4 +101,4 @@ export const isOnboarding = function isOnboarding(arg0) {
     hasItem = items.includes(arg0);
   }
   return hasItem;
-};
+}

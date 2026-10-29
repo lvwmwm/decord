@@ -46,7 +46,7 @@ export function forceLoad() {
 
 }
 export { getDefaultIntegrations };
-export const init = function init() {
+export function init() {
   let defaultIntegrations;
   let defaultStackParser;
   let obj4;
@@ -79,7 +79,7 @@ export const init = function init() {
   obj.transport || _mod906.makeFetchTransport;
   const tmp6Result2 = _mod693;
   return tmp6Result2.initAndBind(BrowserClient.BrowserClient, obj3);
-};
-export const onLoad = function onLoad(fn) {
+}
+export function onLoad(fn) {
   fn();
-};
+}

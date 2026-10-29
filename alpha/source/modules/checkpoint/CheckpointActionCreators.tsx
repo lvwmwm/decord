@@ -1,17 +1,17 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13247
+// Function ID: 13248
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4856, 13015, 1084, 584, 1294, 13017, 13018, 7448, 1264, 7790, 7601, 12963, 1385, 2]
+// Dependencies: [5, 4857, 13236, 1084, 584, 1294, 13248, 13249, 7471, 1264, 7812, 7624, 13184, 1385, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, toggleMute
 
-// Module 13016 (CheckpointActionCreators)
+// Module 13247 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import formatResults from "formatResults" /* 12963 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import formatResults from "formatResults" /* 13184 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import CheckpointStore from "CheckpointStore" /* 13015 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import CheckpointStore from "CheckpointStore" /* 13236 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -129,7 +129,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -202,7 +202,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -277,7 +277,7 @@ obj = function _sendSidekickMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -353,7 +353,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -435,7 +435,7 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           c8 = 0;
@@ -450,31 +450,31 @@ obj = function _sendCheckpointCard() {
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointActionCreators.tsx");
 
-export const toggleMute = function toggleMute() {
+export function toggleMute() {
   obj = DispatcherDefault;
   return obj.dispatch({ type: "CHECKPOINT_TOGGLE_MUTE" });
-};
-export const selectCharacterTrait = function selectCharacterTrait(trait, optionId) {
+}
+export function selectCharacterTrait(trait, optionId) {
   obj = DispatcherDefault;
   const obj2 = { type: "CHECKPOINT_SELECT_CHARACTER_TRAIT", trait, optionId };
   return obj.dispatch(obj2);
-};
-export const resetEditedCharacter = function resetEditedCharacter() {
+}
+export function resetEditedCharacter() {
   obj = DispatcherDefault;
   return obj.dispatch({ type: "CHECKPOINT_RESET_EDITED_CHARACTER" });
-};
-export const fetchCheckpointData = function fetchCheckpointData() {
+}
+export function fetchCheckpointData() {
   return obj(...arguments);
-};
-export const completeCheckpoint = function completeCheckpoint() {
+}
+export function completeCheckpoint() {
   return obj(...arguments);
-};
-export const resetCheckpoint = function resetCheckpoint() {
+}
+export function resetCheckpoint() {
   return obj(...arguments);
-};
-export const sendSidekickMessage = function sendSidekickMessage() {
+}
+export function sendSidekickMessage() {
   return obj(...arguments);
-};
-export const sendCheckpointCard = function sendCheckpointCard() {
+}
+export function sendCheckpointCard() {
   return obj(...arguments);
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5030
+// Function ID: 5031
 // Name: HexagonCampaignConstants
-// Dependencies: [1391, 1409, 1408, 1397, 1208, 5030, 2]
+// Dependencies: [1391, 1409, 1408, 1397, 1208, 5031, 2]
 
-// Module 5029 (HexagonCampaignConstants)
+// Module 5030 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import user from "user" /* 1397 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
 import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import HexagonCampaignDates from "HexagonCampaignDates" /* 5030 */;
+import HexagonCampaignDates from "HexagonCampaignDates" /* 5031 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
@@ -39,7 +39,7 @@ export const HEXAGON_SPECIAL_EVENT_ID = "1549285425984831508";
 export const HEXAGON_CAMPAIGN_ENROLL_ENDPOINT = combined;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HEXAGON;
 export const HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES = frozen;
-export const HEXAGON_CAMPAIGN_LEARN_MORE_URL = "https://dis.gd/gtavi-theme-available-in-discord";
+export const HEXAGON_CAMPAIGN_LEARN_MORE_URL = "https://dis.gd/vice-city-theme-available-in-discord";
 export const HEXAGON_CAMPAIGN_AD_CONTENT_ID = "1549285425984831508";
 export const HexagonCampaignPerk = obj2;
 export const HexagonCampaignPerkAvailability = { HIDDEN: "hidden", LOCKED: "locked", SELECTABLE: "selectable" };

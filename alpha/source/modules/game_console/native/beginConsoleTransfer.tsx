@@ -1,13 +1,13 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11746
+// Function ID: 11747
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1084, 11693, 11695, 5246, 11702, 1999, 1272, 11705, 2]
+// Dependencies: [5, 1084, 11747, 11749, 5247, 11756, 2000, 1272, 11759, 2]
 // Exports: beginConsoleTransfer
 
-// Module 11692 (beginConsoleTransfer)
+// Module 11746 (beginConsoleTransfer)
 import Constants from "Constants" /* 1084 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11693 */;
-import transferToXboxDefault from "transferToXbox" /* 11705 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11747 */;
+import transferToXboxDefault from "transferToXbox" /* 11759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _beginConsoleTransfer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _beginConsoleTransfer() {
             return { value, done: true };
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp35) {
           c5 = 3;
           throw tmp35;
@@ -107,6 +107,6 @@ const items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/game_console/native/beginConsoleTransfer.tsx");
 
-export const beginConsoleTransfer = function beginConsoleTransfer() {
+export function beginConsoleTransfer() {
   return obj(...arguments);
-};
+}

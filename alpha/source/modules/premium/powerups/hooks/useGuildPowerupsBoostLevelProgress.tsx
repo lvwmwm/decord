@@ -1,12 +1,12 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8430
+// Function ID: 8431
 // Name: useGuildPowerupsBoostLevelProgress
-// Dependencies: [4878, 1084, 8404, 558, 576, 504, 2]
+// Dependencies: [4879, 1084, 8426, 558, 576, 504, 2]
 // Exports: getGuildPowerupBoostLevelProgress
 
-// Module 8408 (useGuildPowerupsBoostLevelProgress)
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8404 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 8430 (useGuildPowerupsBoostLevelProgress)
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8426 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostLevelProgress.tsx");
 
 export default tmp3;
-export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLevelProgress(id) {
+export function getGuildPowerupBoostLevelProgress(id) {
   const obj = useGuildPowerupsBoostCount;
   const guildPowerupsBoostCount = obj.getGuildPowerupsBoostCount(id);
   const guild = GuildStore.getGuild(id);
@@ -156,4 +156,4 @@ export const getGuildPowerupBoostLevelProgress = function getGuildPowerupBoostLe
     premiumTier = hasOwnProperty.NONE;
   }
   return React3[premiumTier] + guildPowerupsBoostCount.available;
-};
+}

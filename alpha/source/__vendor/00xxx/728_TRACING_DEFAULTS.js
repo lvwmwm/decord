@@ -20,14 +20,14 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const TRACING_DEFAULTS = { idleTimeout: 1000, finalTimeout: 30000, childSpanTimeout: 15000 };
 
 export { TRACING_DEFAULTS };
-export const startIdleSpan = function startIdleSpan(arg0) {
+export function startIdleSpan(arg0) {
   let _false;
   let _undefined;
   let c9;
   let closure_12;
   let closure_13;
   let trimIdleSpanEndTimestamp;
-  const f142538 = () => {
+  const f144086 = () => {
     const tmp = !c2 && 0 === map.size && closure_4;
     if (tmp) {
       idleTimeout = "idleTimeout";
@@ -318,7 +318,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
               timeout = undefined;
             }
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f142538, tmp6);
+            timeout = setTimeout(f144086, tmp6);
           }
         }
       }));
@@ -333,7 +333,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
             timeout = undefined;
           }
           const _setTimeout = setTimeout;
-          timeout = setTimeout(f142538, idleTimeout);
+          timeout = setTimeout(f144086, idleTimeout);
           if (map.size) {
             const _setTimeout2 = setTimeout;
             timeout = setTimeout(() => {
@@ -354,7 +354,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
           _require = undefined;
         }
         let _setTimeout = setTimeout;
-        _require = setTimeout(f142538, idleTimeout);
+        _require = setTimeout(f144086, idleTimeout);
       }
       let _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {
@@ -377,4 +377,4 @@ export const startIdleSpan = function startIdleSpan(arg0) {
   const tmp5Result14 = tmp5(tmp6[4]);
   tmp5Result14.freezeDscOnSpan(sentryNonRecordingSpan, obj4);
   return sentryNonRecordingSpan;
-};
+}

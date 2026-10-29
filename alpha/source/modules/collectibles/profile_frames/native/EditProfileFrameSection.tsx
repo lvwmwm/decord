@@ -1,21 +1,21 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16400
+// Function ID: 16401
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7692, 8749, 21, 587, 5004, 14754, 558, 576, 16162, 14755, 7314, 9446, 2]
+// Dependencies: [19, 17, 7715, 8752, 21, 587, 5005, 14989, 558, 576, 16399, 14990, 7338, 9477, 2]
 
-// Module 16163 (EditProfileFrameSection)
+// Module 16400 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7692 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8749 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14754 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 16162 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7715 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8752 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9477 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14989 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 16399 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(14755);
+const CollectiblesEditUserProfileListItems = tmp(14990);
 const View = react_native.View;
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
 let closure_6 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
@@ -128,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-      const EditCollectiblesListItemShop = tmp(14755).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(14990).EditCollectiblesListItemShop;
       return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileFrameRecord(profileFrame)) {
       const obj4 = { profileFrame, isSelected: selectedSkuId === profileFrame.skuId, setSelectedProfileFrame, size };
@@ -169,7 +169,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(14755).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14990).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };
@@ -194,6 +194,8 @@ ReactCompilerGating = ReactCompilerGating_mod;
 const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((profileFrame) => {
   let isSelected;
   let setSelectedProfileFrame;
+  let tmp2 = dependencyMap;
+  const tmp = require;
   let obj = react2;
   const cResult = obj.c(18);
   profileFrame = profileFrame.profileFrame;
@@ -207,7 +209,10 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((profi
         tmp5 = cResult[3];
       }
       const skuId = profileFrame.skuId;
-      const result = size * closure_6;
+      let tmp6 = closure_6;
+      let result = size * closure_6;
+      let tmp8 = PX_8;
+      let num = 2;
       const diff = size - 2 * PX_8;
       if (cResult[4] === profileFrame) {
         if (cResult[5] === result) {
@@ -235,31 +240,49 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((profi
                 }
               }
             }
-            const obj2 = { skuId, isSelected, onPress: tmp5, size, accessibilityLabel: profileFrame.label, children: tmp15 };
+            let obj2 = { skuId, isSelected, onPress: tmp5, size, accessibilityLabel: profileFrame.label, children: tmp15 };
             const tmp21 = metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemProduct, obj2);
+            let num9 = 11;
             cResult[11] = isSelected;
+            let num10 = 12;
             cResult[12] = tmp5;
+            let num11 = 13;
             cResult[13] = profileFrame.label;
+            let num12 = 14;
             cResult[14] = size;
+            let num13 = 15;
             cResult[15] = skuId;
+            let num14 = 16;
             cResult[16] = tmp15;
+            let num15 = 17;
             cResult[17] = tmp21;
             tmp19 = tmp21;
           }
-          const obj3 = { style: tmp4.previewContainer, children: tmp10 };
+          let tmp16 = metroImportDefault;
+          let tmp17 = View;
+          let obj3 = { style: tmp4.previewContainer, children: tmp10 };
           const tmp18 = metroImportDefault(View, obj3);
+          let num6 = 8;
           cResult[8] = tmp4.previewContainer;
+          let num7 = 9;
           cResult[9] = tmp10;
+          let num8 = 10;
           cResult[10] = tmp18;
           tmp15 = tmp18;
         }
       }
-      const obj4 = { profileFrame, previewWidth: result, previewHeight: diff, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-      const tmp13 = ProfileFrameSamplePreviewDefault;
-      const tmp14 = metroImportDefault(tmp13, obj4);
+      let tmp11 = metroImportDefault;
+      let tmp12 = importDefault;
+      let obj4 = { profileFrame, previewWidth: result, previewHeight: diff, profileBackgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+      let tmp13 = ProfileFrameSamplePreviewDefault;
+      let tmp14 = metroImportDefault(tmp13, obj4);
+      let num2 = 4;
       cResult[4] = profileFrame;
+      let num3 = 5;
       cResult[5] = result;
+      let num4 = 6;
       cResult[6] = diff;
+      let num5 = 7;
       cResult[7] = tmp14;
       tmp10 = tmp14;
     }

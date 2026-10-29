@@ -1,14 +1,14 @@
-// Module ID: 7398
-// Function ID: 7399
+// Module ID: 7421
+// Function ID: 7422
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1389, 2051, 1084, 558, 576, 504, 2]
+// Dependencies: [1389, 2052, 1084, 558, 576, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsRavenOnboardingGuild, useIsWhitegloveOnboardingGuild
 
-// Module 7398 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7421 (CreatorMonetizationEligibilityExperimentUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import UserStore from "UserStore" /* 1389 */;
-import BillingInfoStore from "BillingInfoStore" /* 2051 */;
+import BillingInfoStore from "BillingInfoStore" /* 2052 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ function isWhitegloveOnboardingGuild(features) {
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityExperimentUtils.tsx");
 
 export const useIsUserInCreatorMonetizationEligibleCountry = tmp3;
-export const isUserInCreatorMonetizationEligibleCountry = function isUserInCreatorMonetizationEligibleCountry() {
+export function isUserInCreatorMonetizationEligibleCountry() {
   const currentUser = UserStore.getCurrentUser();
   let country;
   if (currentUser != null) {
@@ -140,13 +140,13 @@ export const isUserInCreatorMonetizationEligibleCountry = function isUserInCreat
   }
   const hasItem = null != country && set.has(country);
   return hasItem;
-};
+}
 export { useIsRavenOnboardingGuild };
 export { isRavenOnboardingGuild };
 export { useIsWhitegloveOnboardingGuild };
 export { isWhitegloveOnboardingGuild };
 export const useIsExpeditedOnboardingGuild = tmp4;
-export const isExpeditedMonetizationOnboardingGuild = function isExpeditedMonetizationOnboardingGuild(id) {
+export function isExpeditedMonetizationOnboardingGuild(id) {
   id = undefined;
   if (id != null) {
     id = id.id;
@@ -161,4 +161,4 @@ export const isExpeditedMonetizationOnboardingGuild = function isExpeditedMoneti
     tmp2 = hasItem;
   }
   return tmp2;
-};
+}

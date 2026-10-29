@@ -1,14 +1,14 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7617
+// Function ID: 7618
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1389, 7595, 558, 576, 504, 2050, 4851, 2]
+// Dependencies: [32, 19, 1389, 7618, 558, 576, 504, 2051, 4852, 2]
 // Exports: hasUserTrialOfferExpired
 
-// Module 7594 (useTrialOffer)
+// Module 7617 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import UserOfferStore from "UserOfferStore" /* 7595 */;
+import UserOfferStore from "UserOfferStore" /* 7618 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
                 }
                 const obj = timeout;
                 if (timeout != null) {
-                  obj.start(num, f160312);
+                  obj.start(num, f161963);
                 }
               }
             });
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f160313 = () => {
+    const f161964 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f160313);
+          obj.start(num, f161964);
         }
       }
     };
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f160313);
+          timeout.start(num, f161964);
         }
         return () => timeout.stop();
       }
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
 });
 let result = size.fileFinishedImporting("modules/premium/useTrialOffer.tsx");
 
-export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(hasExpired) {
+export function hasUserTrialOfferExpired(hasExpired) {
   let flag;
   if (hasExpired != null) {
     flag = hasExpired.hasExpired;
@@ -255,5 +255,5 @@ export const hasUserTrialOfferExpired = function hasUserTrialOfferExpired(hasExp
     flag = false;
   }
   return flag;
-};
+}
 export const useTrialOffer = tmp2;

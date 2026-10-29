@@ -1,9 +1,9 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14975
+// Function ID: 14976
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7684, 5246, 14177, 5699, 1125, 2]
+// Dependencies: [5, 19, 558, 576, 7707, 5247, 14410, 5701, 1125, 2]
 
-// Module 14740 (useHandleClaim)
+// Module 14975 (useHandleClaim)
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -97,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp18) {
         let closure_2 = tmp18;
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -187,7 +187,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

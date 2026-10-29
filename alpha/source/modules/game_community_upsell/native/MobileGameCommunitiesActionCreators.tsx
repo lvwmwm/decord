@@ -1,18 +1,18 @@
-// Module ID: 17990
-// Function ID: 17991
+// Module ID: 18224
+// Function ID: 18225
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 15285, 17255, 1084, 15286, 17256, 1294, 1490, 584, 504, 1101, 2]
+// Dependencies: [5, 15520, 17494, 1084, 15521, 17495, 1294, 1491, 584, 504, 1101, 2]
 // Exports: dismissGuild
 
-// Module 17990 (MobileGameCommunitiesActionCreators)
+// Module 18224 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+import _modDef1491 from "module_1491" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15285 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17255 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15520 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17494 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj = function _fetchDetectedGameCommunities() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _fetchDetectedGameCommunities() {
             const get = HTTP.get;
             obj4 = { game_ids: tmp17, limit: 20, ignored_guild_ids: Array.from(dismissedGuildIds.getDismissedGuildIds()) };
             const _Array = Array;
-            stringify = _modDef1490.stringify;
+            stringify = _modDef1491.stringify;
             c2 = 1;
             c3 = 1;
             const obj5 = { value: get(request), done: false };
@@ -87,7 +87,7 @@ let obj = function _fetchDetectedGameCommunities() {
           const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds };
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -130,7 +130,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     } catch (tmp7) {
       c0 = 3;
       throw tmp7;
@@ -173,8 +173,8 @@ const fetchStore = createFetchStore(MobileGameCommunitiesStore, obj);
 const result = size.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesActionCreators.tsx");
 
 export const useMobileGameCommunities = fetchStore;
-export const dismissGuild = function dismissGuild(guildId) {
+export function dismissGuild(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "MOBILE_GAME_COMMUNITIES_DISMISS_GUILD", guildId };
   obj.dispatch(obj2);
-};
+}

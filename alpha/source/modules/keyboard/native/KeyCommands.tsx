@@ -1,19 +1,19 @@
-// Module ID: 6009
-// Function ID: 6010
+// Module ID: 6011
+// Function ID: 6012
 // Name: KeyCommands
-// Dependencies: [19, 6010, 558, 576, 2]
+// Dependencies: [19, 6012, 558, 576, 2]
 // Exports: subscribeKeyCommand
 
-// Module 6009 (KeyCommands)
+// Module 6011 (KeyCommands)
 import react from "react" /* 19 */;
-import react_native_mod from "react-native" /* 6010 */;
+import react_native_mod from "react-native" /* 6012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const f96835 = () => {
+const f97845 = () => {
   c5 = false;
   map = new Map();
   for (const item10012 of closure_1_4) {
@@ -52,7 +52,7 @@ function registerKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f96835);
+    queueMicrotask(f97845);
   }
 }
 function unregisterKeyCommand(arg0) {
@@ -62,7 +62,7 @@ function unregisterKeyCommand(arg0) {
   if (!tmp) {
     c5 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f96835);
+    queueMicrotask(f97845);
   }
 }
 let react_native = react_native_mod;
@@ -127,7 +127,7 @@ let result = size.fileFinishedImporting("modules/keyboard/native/KeyCommands.tsx
 
 export const KeyModifierFlags = react_native;
 export const KeyInputs = { ESCAPE: "UIKeyInputEscape" };
-export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
+export function subscribeKeyCommand(arg0) {
   let closure_0 = arg0;
   let items = [];
   items[HermesBuiltin.arraySpread(items, items, 0)] = arg0;
@@ -154,7 +154,7 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
   if (!tmp4) {
     c5 = true;
     let _queueMicrotask = queueMicrotask;
-    queueMicrotask(f96835);
+    queueMicrotask(f97845);
   }
   return () => {
     items = items.filter((item) => item !== closure_0);
@@ -162,8 +162,8 @@ export const subscribeKeyCommand = function subscribeKeyCommand(arg0) {
     if (!tmp) {
       c5 = true;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f96835);
+      queueMicrotask(f97845);
     }
   };
-};
+}
 export const useKeyCommands = tmp3;

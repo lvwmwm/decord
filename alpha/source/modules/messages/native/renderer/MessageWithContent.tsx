@@ -1,21 +1,21 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8193
+// Function ID: 8194
 // Name: MessageWithContent
-// Dependencies: [8171, 8166, 8301, 1125, 8626, 2]
+// Dependencies: [8194, 8189, 8323, 1125, 8648, 2]
 // Exports: generateMessageRowData
 
-// Module 8170 (MessageWithContent)
+// Module 8193 (MessageWithContent)
 import intl6 from "intl" /* 1125 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import createMessageContentDefault from "createMessageContent" /* 8301 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8626 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8171 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
+import createMessageContentDefault from "createMessageContent" /* 8323 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8648 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8194 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/MessageWithContent.tsx");
 
-export const generateMessageRowData = function generateMessageRowData(canShowImages, options, theme) {
+export function generateMessageRowData(canShowImages, options, theme) {
   let alwaysShowAddReaction;
   let canAddNewReactions;
   let canReply;
@@ -76,4 +76,4 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   intl5 = tmp6(1125).intl;
   forcedTheme = options.forcedTheme;
   return obj;
-};
+}

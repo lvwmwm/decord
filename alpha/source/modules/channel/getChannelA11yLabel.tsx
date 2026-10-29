@@ -1,14 +1,14 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9054
+// Function ID: 9055
 // Name: getChannelA11yLabel
-// Dependencies: [4946, 1389, 1084, 1125, 5640, 7238, 5058, 8654, 2]
+// Dependencies: [4947, 1389, 1084, 1125, 5641, 7262, 5059, 8676, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9051 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 5058 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7238 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+// Module 9054 (getChannelA11yLabel)
+import UserUtils from "UserUtils" /* 5059 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7262 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const intl20 = tmp(1125);
-const utils = tmp(8654);
+const utils = tmp(8676);
 ({ ChannelTypes: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel/getChannelA11yLabel.tsx");
 
@@ -303,7 +303,7 @@ export default function getChannelA11yLabel(mentionCount) {
   }
   return items4.join(", ");
 };
-export const getStatusLabel = function getStatusLabel(arg0) {
+export function getStatusLabel(arg0) {
   if (metroRequire.ONLINE === arg0) {
     const obj4 = UserUtils;
     return obj4.humanizeStatus(metroRequire.ONLINE);
@@ -319,8 +319,8 @@ export const getStatusLabel = function getStatusLabel(arg0) {
   } else {
     return "";
   }
-};
-export const getChannelA11yHint = function getChannelA11yHint(userStatus) {
+}
+export function getChannelA11yHint(userStatus) {
   let channel;
   let muted;
   userStatus = userStatus.userStatus;
@@ -366,4 +366,4 @@ export const getChannelA11yHint = function getChannelA11yHint(userStatus) {
     }
     return joined;
   }
-};
+}

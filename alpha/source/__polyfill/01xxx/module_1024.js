@@ -11,7 +11,7 @@ let _require, dependencyMap;
 
 let tmp2;
 const _mod693 = tmp2(693);
-const f88207 = (error) => {
+const f89214 = (error) => {
   const tmp = item10034;
   const tmp2 = item10008;
   if (item10034(item10008[2]).DEBUG_BUILD) {
@@ -81,7 +81,7 @@ function createAsyncHandlerProxy(arg0, item10034, item10008, processResolvedRout
             closure_2(result, closure_0, closure_3, span);
           }
         });
-        nextPromise.catch(f88207);
+        nextPromise.catch(f89214);
       } else {
         const _Array = Array;
         if (Array.isArray(applyResult)) {
@@ -129,7 +129,7 @@ function checkRouteForAsyncHandler(item10034, processResolvedRoutes) {
 
 export { checkRouteForAsyncHandler };
 export { createAsyncHandlerProxy };
-export const handleAsyncHandlerResult = function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
+export function handleAsyncHandlerResult(promise, arg1, arg2, fn, arg4, arg5) {
   let closure_0;
   let closure_1;
   _require = arg1;
@@ -144,11 +144,11 @@ export const handleAsyncHandlerResult = function handleAsyncHandlerResult(promis
         closure_2(result, closure_0, closure_3, span);
       }
     });
-    nextPromise.catch(f88207);
+    nextPromise.catch(f89214);
   } else {
     const _Array = Array;
     if (Array.isArray(promise)) {
       fn(promise, arg1, arg4, arg5);
     }
   }
-};
+}

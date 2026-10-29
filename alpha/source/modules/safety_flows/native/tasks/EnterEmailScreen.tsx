@@ -1,13 +1,13 @@
-// Module ID: 19737
-// Function ID: 19738
+// Module ID: 19959
+// Function ID: 19960
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1502, 1125, 2833, 19729, 6013, 7044, 19738, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1503, 1125, 2834, 19951, 6015, 7068, 19960, 2]
 
-// Module 19737 (EnterEmailScreen)
+// Module 19959 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2833 from "module_2833" /* 2833 */;
-import types from "types" /* 19729 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19738 */;
+import _modDef2834 from "module_2834" /* 2834 */;
+import types from "types" /* 19951 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19960 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,14 +26,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   let tmp9;
   const obj = navigation(576);
   const cResult = obj.c(9);
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   [first, tmp7] = react.useState("");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2833.bFbsV6);
+    const stringResult = intl.string(_modDef2834.bFbsV6);
     const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(_modDef2833.RRBNpv);
+    const stringResult1 = intl2.string(_modDef2834.RRBNpv);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp8 = stringResult;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
     tmp13 = cResult[3];
   }
   if (cResult[4] !== first) {
-    const Stack = tmp(6013).Stack;
+    const Stack = tmp(6015).Stack;
     const tmp16 = <Stack>{null}</Stack>;
     cResult[4] = first;
     cResult[5] = tmp16;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   const intl = require("intl").intl;
   const intl2 = require("intl").intl;
   const Stack = require("Stack/Stack").Stack;
-  return <tmp4 title={intl.string(_modDef2833.bFbsV6)} action={intl2.string(_modDef2833.RRBNpv)} onAction={function onAction() {
+  return <tmp4 title={intl.string(_modDef2834.bFbsV6)} action={intl2.string(_modDef2834.RRBNpv)} onAction={function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
   }}>{null}</tmp4>;
 });

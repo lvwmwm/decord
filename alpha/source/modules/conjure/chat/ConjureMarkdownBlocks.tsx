@@ -1,17 +1,17 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12342
+// Function ID: 12343
 // Name: ConjureMarkdownBlocks
 // Dependencies: [2]
 // Exports: splitMarkdownBlocks
 
-// Module 12288 (ConjureMarkdownBlocks)
+// Module 12342 (ConjureMarkdownBlocks)
 import size from "module_2" /* 2 */;
 
 const re0 = /^( *)([-*]|\d+\.) +(.*)$/;
 const length = ["\u2022", "\u25E6", "\u25AA"];
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureMarkdownBlocks.tsx");
 
-export const splitMarkdownBlocks = function splitMarkdownBlocks(source) {
+export function splitMarkdownBlocks(source) {
   let combined;
   const parts = source.split("\n");
   const items = [];
@@ -151,4 +151,4 @@ export const splitMarkdownBlocks = function splitMarkdownBlocks(source) {
     items.push(obj8);
   }
   return items;
-};
+}

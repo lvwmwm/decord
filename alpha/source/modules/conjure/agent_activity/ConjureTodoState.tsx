@@ -1,12 +1,12 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12399
+// Function ID: 12400
 // Name: ConjureTodoState
-// Dependencies: [10735, 12346, 2]
+// Dependencies: [10809, 12400, 2]
 // Exports: checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress
 
-// Module 12345 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 10735 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12346 */;
+// Module 12399 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 10809 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12400 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -22,7 +22,7 @@ export function todoMark(status, flag2) {
   }
   return str;
 }
-export const todoLabel = function todoLabel(activeForm, todoMarkResult) {
+export function todoLabel(activeForm, todoMarkResult) {
   if ("in_progress" === todoMarkResult) {
     if (null != activeForm.activeForm) {
       let text;
@@ -33,8 +33,8 @@ export const todoLabel = function todoLabel(activeForm, todoMarkResult) {
     }
   }
   text = activeForm.text;
-};
-export const checklistLive = function checklistLive(memo) {
+}
+export function checklistLive(memo) {
   const obj = conjureChatTurns;
   let tmp2 = !obj.turnSettled(memo);
   obj.turnSettled(memo);
@@ -42,12 +42,12 @@ export const checklistLive = function checklistLive(memo) {
     tmp2 = true !== memo.stopRequested;
   }
   return tmp2;
-};
-export const todoProgress = function todoProgress(todos) {
+}
+export function todoProgress(todos) {
   const obj = { completed: todos.filter((status) => "completed" === status.status).length, total: todos.length };
   return obj;
-};
-export const messageChecklist = function messageChecklist(role) {
+}
+export function messageChecklist(role) {
   if ("assistant" !== role.role) {
     return null;
   } else {
@@ -65,8 +65,8 @@ export const messageChecklist = function messageChecklist(role) {
     }
     return latestTodosResult;
   }
-};
-export const supersededChecklists = function supersededChecklists(memo) {
+}
+export function supersededChecklists(memo) {
   set = new Set();
   let diff = memo.length - 1;
   let flag = false;
@@ -106,4 +106,4 @@ export const supersededChecklists = function supersededChecklists(memo) {
     } while (0 <= diff);
   }
   return set;
-};
+}

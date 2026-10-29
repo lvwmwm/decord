@@ -117,7 +117,7 @@ function wrap(__sentry_wrapped__) {
 }
 
 export const WINDOW = _mod693.GLOBAL_OBJ;
-export const getHttpRequestData = function getHttpRequestData() {
+export function getHttpRequestData() {
   let obj4;
   const obj = _mod693;
   const locationHref = obj.getLocationHref();
@@ -140,7 +140,7 @@ export const getHttpRequestData = function getHttpRequestData() {
   }
   const merged1 = Object.assign(tmp8);
   return obj2;
-};
+}
 export { ignoreNextOnError };
 export function shouldIgnoreOnError() {
   return closure_2 > 0;

@@ -1,10 +1,10 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 13131
+// Function ID: 13132
 // Name: NavigationTTIAnalytics
 // Dependencies: [1369, 3, 584, 2]
 // Exports: trackNavigationTTISpan
 
-// Module 12910 (NavigationTTIAnalytics)
+// Module 13131 (NavigationTTIAnalytics)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
@@ -14,7 +14,7 @@ let obj = new LoggerDefault("NavTTIAnalytics");
 obj.enableNativeLogger(true);
 const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationTTIAnalytics.tsx");
 
-export const trackNavigationTTISpan = function trackNavigationTTISpan(spanComponentName, spanTtiProperties) {
+export function trackNavigationTTISpan(spanComponentName, spanTtiProperties) {
   if (DeveloperOptionsStore.isLoggingInteractionTTIAnalytics) {
     const _JSON = JSON;
     const _HermesInternal = HermesInternal;
@@ -23,4 +23,4 @@ export const trackNavigationTTISpan = function trackNavigationTTISpan(spanCompon
   obj = DispatcherDefault;
   const obj2 = { type: "TRACK", event: spanComponentName, properties: spanTtiProperties };
   obj.dispatch(obj2);
-};
+}

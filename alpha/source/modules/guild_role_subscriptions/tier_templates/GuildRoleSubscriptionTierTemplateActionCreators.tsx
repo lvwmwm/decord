@@ -1,10 +1,10 @@
-// Module ID: 19643
-// Function ID: 19644
+// Module ID: 19877
+// Function ID: 19878
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
 // Dependencies: [5, 1084, 584, 1294, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 19643 (GuildRoleSubscriptionTierTemplateActionCreators)
+// Module 19877 (GuildRoleSubscriptionTierTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -28,7 +28,7 @@ let obj = function _getTemplates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _getTemplates() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp15) {
           c4 = 3;
@@ -82,11 +82,11 @@ let obj = function _getTemplates() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/GuildRoleSubscriptionTierTemplateActionCreators.tsx");
 
-export const stashTemplateChannels = function stashTemplateChannels(selectedTemplate, guildId) {
+export function stashTemplateChannels(selectedTemplate, guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS", selectedTemplate, guildId };
   obj.dispatch(obj2);
-};
-export const getTemplates = function getTemplates() {
+}
+export function getTemplates() {
   return obj(...arguments);
-};
+}

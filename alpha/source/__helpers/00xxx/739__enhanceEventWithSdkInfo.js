@@ -70,7 +70,7 @@ function _enhanceEventWithSdkInfo(sdk, name) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { _enhanceEventWithSdkInfo };
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+export function createEventEnvelope(type, arg1, sdk, arg3) {
   const obj = _mod740;
   const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
   let str = "event";
@@ -94,8 +94,8 @@ export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk,
   const items1 = [items];
   const tmp2Result2 = _mod740;
   return tmp2Result2.createEnvelope(eventEnvelopeHeaders, items1);
-};
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+}
+export function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
   let date;
   let items1;
   let tmpResult;
@@ -125,8 +125,8 @@ export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1
   const items2 = [items1];
   const tmpResult2 = _mod740;
   return tmpResult2.createEnvelope(obj2, items2);
-};
-export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
+}
+export function createSpanEnvelope(arr, getDsn) {
   let beforeSendSpan;
   let date;
   let fn;
@@ -217,4 +217,4 @@ export const createSpanEnvelope = function createSpanEnvelope(arr, getDsn) {
   }
   const obj9 = beforeSendSpan(ignoreSpans[0]);
   return obj9.createEnvelope(obj2, items);
-};
+}

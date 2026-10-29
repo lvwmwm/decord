@@ -1,27 +1,27 @@
-// Module ID: 8649
-// Function ID: 8650
+// Module ID: 8671
+// Function ID: 8672
 // Name: transformContentInventoryEntryMessageComponent
-// Dependencies: [17, 2042, 2065, 1389, 2023, 8650, 6025, 1417, 8107, 8651, 8652, 5001, 8654, 1101, 1125, 8492, 8656, 8544, 8657, 8659, 8660, 8655, 2]
+// Dependencies: [17, 2043, 2066, 1389, 2024, 8672, 6029, 1418, 8130, 8673, 8674, 5002, 8676, 1101, 1125, 8514, 8678, 8566, 8679, 8681, 8682, 8677, 2]
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
-// Module 8649 (transformContentInventoryEntryMessageComponent)
+// Module 8671 (transformContentInventoryEntryMessageComponent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1125 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import Constants from "Constants" /* 2023 */;
-import ColorUtils from "ColorUtils" /* 5001 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8107 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8492 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8650 */;
-import useAvatarColor from "useAvatarColor" /* 8651 */;
-import useHeroColors from "useHeroColors" /* 8652 */;
-import utils from "utils" /* 8654 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8656 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8657 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8660 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import Constants from "Constants" /* 2024 */;
+import ColorUtils from "ColorUtils" /* 5002 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8130 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8514 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8672 */;
+import useAvatarColor from "useAvatarColor" /* 8673 */;
+import useHeroColors from "useHeroColors" /* 8674 */;
+import utils from "utils" /* 8676 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8678 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8679 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8682 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const ImageSizes = Constants.ImageSizes;
 let items = [{ r: 0, g: 0, b: 0, a: 1 }, { r: 0, g: 0, b: 0, a: 1 }];
 const result = size.fileFinishedImporting("modules/messages/native/renderer/transformContentInventoryEntryMessageComponent.tsx");
 
-export const transformToRowGeneratedContentInventoryEntryComponent = function transformToRowGeneratedContentInventoryEntryComponent(component) {
+export function transformToRowGeneratedContentInventoryEntryComponent(component) {
   let combined;
   let formatEntryTimestamp;
   let formatEntryTimestamp2;
@@ -116,8 +116,8 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const obj3 = { text: sum };
             items2.push(obj3);
           }
-          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8659)).uri };
-          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8659)).uri };
+          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8681)).uri };
+          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8681)).uri };
         }
         tmp21 = tmp50;
       } else if (ContentInventoryEntryType.ContentInventoryEntryType.TOP_ARTIST === content_type) {
@@ -135,7 +135,7 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const tmpResult36 = ColorUtils;
             items3[1] = tmpResult36.hexToRgba(secondaryColor3);
             const tmpResult37 = utils;
-            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8655).ContentInventoryTraitType.AGGREGATE_COUNT);
+            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8677).ContentInventoryTraitType.AGGREGATE_COUNT);
             let count;
             if (trait != null) {
               count = trait.count;
@@ -216,7 +216,7 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const items8 = [];
             const push = items8.push;
             const timestamp = message.timestamp;
-            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(8544)).uri };
+            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(8566)).uri };
             const time = timestamp.getTime();
             const obj11 = { text: tmpResult46.formatEntryTimestamp(contentInventoryEntry, LocaleStore.locale, time), ariaDescription: formatEntryTimestamp(contentInventoryEntry, locale, time, obj12) };
             const merged = Object.assign(obj10);
@@ -316,4 +316,4 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
     }
   }
   tmp21 = tmp56;
-};
+}

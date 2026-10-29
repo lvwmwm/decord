@@ -1,16 +1,16 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13692
+// Function ID: 13693
 // Name: SmartSearchUtils
-// Dependencies: [13460, 13458, 1084, 9748, 13462, 13463, 13461, 2]
+// Dependencies: [13693, 13691, 1084, 9780, 13695, 13696, 13694, 2]
 // Exports: getChannelFilterKey, getChannelIdsForFilterKey, getSmartSearchCitationsCount, getSmartSearchQuery, getSmartSearchStatus, isSmartSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId
 
-// Module 13459 (SmartSearchUtils)
-import SearchConstants from "SearchConstants" /* 9748 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13461 */;
-import QueryTokenizer from "QueryTokenizer" /* 13462 */;
-import SearchUtils from "SearchUtils" /* 13463 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13460 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13458 */;
+// Module 13692 (SmartSearchUtils)
+import SearchConstants from "SearchConstants" /* 9780 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13694 */;
+import QueryTokenizer from "QueryTokenizer" /* 13695 */;
+import SearchUtils from "SearchUtils" /* 13696 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13693 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13691 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchUtils.tsx");
 
-export const getSmartSearchQuery = function getSmartSearchQuery(searchContext, searchQueryString) {
+export function getSmartSearchQuery(searchContext, searchQueryString) {
   let channel_id;
   const tmp2 = searchContext.type === hasOwnProperty.GUILD || searchContext.type === tmp.GUILD_CHANNEL;
   if (tmp2) {
@@ -61,19 +61,19 @@ export const getSmartSearchQuery = function getSmartSearchQuery(searchContext, s
   } else {
     return null;
   }
-};
-export const isSupportedSearchContext = function isSupportedSearchContext(type) {
+}
+export function isSupportedSearchContext(type) {
   return type.type === hasOwnProperty.GUILD || type.type === tmp.GUILD_CHANNEL;
-};
-export const getChannelFilterKey = function getChannelFilterKey(channelIds) {
+}
+export function getChannelFilterKey(channelIds) {
   const items = [...channelIds];
   const sorted = items.sort();
   return sorted.join(React3);
-};
-export const getChannelIdsForFilterKey = function getChannelIdsForFilterKey(item) {
+}
+export function getChannelIdsForFilterKey(item) {
   return item.split(React3);
-};
-export const parseConversationId = function parseConversationId(sourceId) {
+}
+export function parseConversationId(sourceId) {
   const obj = /\/(\d+)$/;
   const match = obj.exec(sourceId);
   let tmp2;
@@ -84,8 +84,8 @@ export const parseConversationId = function parseConversationId(sourceId) {
     tmp2 = sourceId;
   }
   return tmp2;
-};
-export const getSmartSearchStatus = function getSmartSearchStatus(smartSearchQuery, SmartSearchResultsStore) {
+}
+export function getSmartSearchStatus(smartSearchQuery, SmartSearchResultsStore) {
   let obj = SmartSearchResultsStore;
   if (SmartSearchResultsStore === undefined) {
     obj = SmartSearchResultsStore;
@@ -95,12 +95,12 @@ export const getSmartSearchStatus = function getSmartSearchStatus(smartSearchQue
     NOT_QUALIFIED = SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED;
   }
   return NOT_QUALIFIED;
-};
-export const isSmartSearchEmptyOrErrored = function isSmartSearchEmptyOrErrored(smartSearchStatus) {
+}
+export function isSmartSearchEmptyOrErrored(smartSearchStatus) {
   const tmp3 = smartSearchStatus === SmartSearchTypes.SmartSearchStatus.EMPTY || smartSearchStatus === SmartSearchTypes.SmartSearchStatus.ERROR;
   return tmp3;
-};
-export const getSmartSearchCitationsCount = function getSmartSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
+}
+export function getSmartSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
   const obj = SearchUtils;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   if (null == guildIdFromSearchContext) {
@@ -123,4 +123,4 @@ export const getSmartSearchCitationsCount = function getSmartSearchCitationsCoun
     }
     return bound;
   }
-};
+}

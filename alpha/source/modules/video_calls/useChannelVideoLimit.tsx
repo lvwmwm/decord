@@ -1,13 +1,13 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 9192
+// Function ID: 9193
 // Name: useChannelVideoLimit
-// Dependencies: [4878, 5753, 1084, 558, 576, 504, 2]
+// Dependencies: [4879, 5755, 1084, 558, 576, 504, 2]
 // Exports: getChannelVideoLimit
 
-// Module 9189 (useChannelVideoLimit)
+// Module 9192 (useChannelVideoLimit)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5753 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5755 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
 let result = size.fileFinishedImporting("modules/video_calls/useChannelVideoLimit.tsx");
 
 export default tmp2;
-export const getChannelVideoLimit = function getChannelVideoLimit(channel) {
+export function getChannelVideoLimit(channel) {
   let obj;
   let tmp4;
   const result = SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
@@ -104,4 +104,4 @@ export const getChannelVideoLimit = function getChannelVideoLimit(channel) {
     tmp4 = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
   }
   return obj;
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 19590
-// Function ID: 19591
+// Module ID: 19823
+// Function ID: 19824
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5004, 587, 8186, 1449, 9074, 1125, 5705, 12207, 10154, 558, 576, 5270, 5280, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5005, 587, 8209, 1450, 9077, 1125, 5707, 12261, 10187, 558, 576, 5271, 5281, 2]
 
-// Module 19590 (FormImagePicker)
+// Module 19823 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8186 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9074 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8209 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9077 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(5705);
+const FastImageDefault = tmp6(5707);
 function pickImage() {
   return obj(...arguments);
 }
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(12207).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(12261).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(10154).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(10187).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormImagePic
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: description };
-  items[0] = closure_8(tmp6(5270).Text, obj3);
+  items[0] = closure_8(tmp6(5271).Text, obj3);
   obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -385,7 +385,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormImagePic
     size: "md",
     disabled
   };
-  items[1] = closure_8(tmp6(5280).Button, obj4);
+  items[1] = closure_8(tmp6(5281).Button, obj4);
   items1 = [closure_9(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

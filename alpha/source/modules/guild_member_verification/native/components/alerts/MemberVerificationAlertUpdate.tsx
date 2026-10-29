@@ -1,20 +1,20 @@
-// Module ID: 7221
-// Function ID: 7222
+// Module ID: 7245
+// Function ID: 7246
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1084, 21, 5004, 558, 576, 1125, 5696, 5705, 7222, 5270, 6014, 2]
+// Dependencies: [19, 1084, 21, 5005, 558, 576, 1125, 5698, 5707, 7246, 5271, 6018, 2]
 
-// Module 7221 (MemberVerificationAlertUpdate)
+// Module 7245 (MemberVerificationAlertUpdate)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AlertDefault from "Alert" /* 6014 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7222 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AlertDefault from "Alert" /* 6018 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7246 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

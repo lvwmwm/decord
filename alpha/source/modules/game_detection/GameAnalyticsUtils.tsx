@@ -1,18 +1,18 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7877
+// Function ID: 7878
 // Name: GameAnalyticsUtils
-// Dependencies: [2036, 7855, 1381, 2]
+// Dependencies: [2037, 7878, 1381, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 7854 (GameAnalyticsUtils)
+// Module 7877 (GameAnalyticsUtils)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7855 */;
-import DetectableGameStore from "DetectableGameStore" /* 2036 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7878 */;
+import DetectableGameStore from "DetectableGameStore" /* 2037 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
 
-export const removeExecutablePathPrefix = function removeExecutablePathPrefix(exePath) {
+export function removeExecutablePathPrefix(exePath) {
   const formatted = exePath.toLowerCase();
   let str = formatted;
   if (formatted.endsWith("/")) {
@@ -21,8 +21,8 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
   const parts = str.split("/");
   const substr = parts.slice(-2);
   return substr.join("/");
-};
-export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
+}
+export function getRunningGameAnalytics(streamApplication) {
   let distributor;
   let id2;
   let joined;
@@ -32,7 +32,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "ix", exe: "c", distributor: "", sku: "IconComponent", gameMetadata: "__packager_asset", rawExePath: "set" };
+    return { gameName: "guildId", gameId: "ix", exe: "alignItems", distributor: "diversity", sku: "ix", gameMetadata: "defineProperty", rawExePath: "guildId" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;
@@ -77,8 +77,8 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
     }
     return obj2;
   }
-};
-export const getGameAnalyticsMetadata = function getGameAnalyticsMetadata(currentGameForAnalytics, arg1, detected_game_id) {
+}
+export function getGameAnalyticsMetadata(currentGameForAnalytics, arg1, detected_game_id) {
   const tmp = arg1;
   if (tmp) {
     let json;
@@ -91,8 +91,8 @@ export const getGameAnalyticsMetadata = function getGameAnalyticsMetadata(curren
   }
   const obj = RobloxSubgameUtils;
   json = obj.getSubgameMetadata(currentGameForAnalytics);
-};
-export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, arr) {
+}
+export function isVerifiedGameExecutable(str, arr) {
   if (null != str) {
     if (null != arr) {
       const formatted = str.toLowerCase();
@@ -117,4 +117,4 @@ export const isVerifiedGameExecutable = function isVerifiedGameExecutable(str, a
     }
   }
   return false;
-};
+}

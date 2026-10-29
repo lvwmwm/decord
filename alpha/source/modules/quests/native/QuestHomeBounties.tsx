@@ -1,26 +1,26 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16858
+// Function ID: 16859
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7810, 4853, 21, 587, 5004, 558, 576, 4840, 7532, 16621, 584, 16627, 9604, 504, 16634, 16640, 2]
+// Dependencies: [32, 19, 17, 7833, 4854, 21, 587, 5005, 558, 576, 4841, 7555, 16859, 584, 16865, 9636, 504, 16872, 16878, 2]
 
-// Module 16620 (QuestHomeBounties)
+// Module 16858 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9604 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16621 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16627 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16634 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16640 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9636 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 16859 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 16865 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16872 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16878 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7810 */;
+import BountyStore from "BountyStore" /* 7833 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBou
   if (cResult[0] !== arg0) {
     let items1;
     if (arg0) {
-      const items = [tmp(4840).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+      const items = [tmp(4841).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
       items1 = items;
     } else {
       items1 = [];
@@ -62,7 +62,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBou
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(7532);
+  const tmpResult = tmp(7555);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
   first = tmp5[0];
   importDefault = tmp7;
@@ -130,12 +130,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBou
   let ref;
   let tmp = arg0;
   if (tmp) {
-    const items = [first(4840).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+    const items = [first(4841).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
     items1 = items;
   } else {
     items1 = [];
   }
-  let obj = first(7532);
+  let obj = first(7555);
   const tmp4 = _slicedToArray(obj.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   let closure_1 = tmp6;
@@ -351,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (!stateFromStores) {
       let tmp7 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp7) {
-        tmp7 = orbShopProducts.length >= tmp(16627).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp7 = orbShopProducts.length >= tmp(16865).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
         orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp10Result = null;

@@ -1,20 +1,20 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18792
+// Function ID: 18793
 // Name: InstantInviteSelfMeasurer
-// Dependencies: [19, 17, 21, 5004, 558, 576, 10860, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 10765, 2]
 
-// Module 18558 (InstantInviteSelfMeasurer)
+// Module 18792 (InstantInviteSelfMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import InstantInviteDefault from "InstantInvite" /* 10860 */;
+import InstantInviteDefault from "InstantInvite" /* 10765 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const InstantInvite = tmp(10860);
+const InstantInvite = tmp(10765);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", opacity: 0 } });

@@ -1,23 +1,23 @@
-// Module ID: 15477
-// Function ID: 15478
+// Module ID: 15711
+// Function ID: 15712
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15478, 21, 5004, 587, 558, 576, 1630, 5270, 5696, 1125, 6936, 7023, 5280, 6960, 10067, 12834, 7093, 7131, 2]
+// Dependencies: [5, 32, 19, 17, 15712, 21, 5005, 587, 558, 576, 1631, 5271, 5698, 1125, 6960, 7047, 5281, 6984, 10099, 13055, 7117, 7155, 2]
 
-// Module 15477 (GuildAntiRaidReportModal)
+// Module 15711 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15478 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15712 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   const onSubmit = raidTypes.onSubmit;
   const tmp4 = closure_13();
   dependencyMap = tmp4;
-  const bottom = onChange(1630)().bottom;
+  const bottom = onChange(1631)().bottom;
   if (cResult[0] !== tmp4.formRow) {
     const fn = function n(arg0) {
       const obj = { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
@@ -96,7 +96,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   }
   if (cResult[4] !== tmp4.headerSubtitle) {
     const obj3 = { style: headerSubtitle, variant: "text-sm/medium", color: "text-default", children: tmp7 };
-    const tmp11 = closure_10(raidTypes(5270).Text, obj3);
+    const tmp11 = closure_10(raidTypes(5271).Text, obj3);
     cResult[4] = tmp4.headerSubtitle;
     cResult[5] = tmp11;
     tmp9 = tmp11;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
       }
       if (cResult[10] !== tmp13) {
         const obj4 = { hasIcons: false, children: tmp13 };
-        const tmp17 = closure_10(raidTypes(7023).TableRowGroup, obj4);
+        const tmp17 = closure_10(raidTypes(7047).TableRowGroup, obj4);
         cResult[10] = tmp13;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -152,7 +152,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           }
           if (cResult[21] !== onSubmit) {
             const obj6 = { size: "md", text: tmp25, onPress: onSubmit };
-            const tmp29 = closure_10(raidTypes(5280).Button, obj6);
+            const tmp29 = closure_10(raidTypes(5281).Button, obj6);
             cResult[21] = onSubmit;
             cResult[22] = tmp29;
             tmp27 = tmp29;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildAntiRai
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -432,7 +432,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildAntiRai
           tmp3();
         }
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp14) {
         c2 = 3;
         throw tmp14;
@@ -476,7 +476,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildAntiRai
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -512,7 +512,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildAntiRai
           closure_128_0();
         }
         first = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

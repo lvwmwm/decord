@@ -1,16 +1,16 @@
-// Module ID: 17891
-// Function ID: 17892
+// Module ID: 18129
+// Function ID: 18130
 // Name: useLiveStageChannels
-// Dependencies: [4856, 4936, 4861, 4864, 558, 576, 1385, 504, 11, 2]
+// Dependencies: [4857, 4937, 4862, 4865, 558, 576, 1385, 504, 11, 2]
 // Exports: getAllLiveStageChannels
 
-// Module 17891 (useLiveStageChannels)
+// Module 18129 (useLiveStageChannels)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import StageInstanceStore from "StageInstanceStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import StageInstanceStore from "StageInstanceStore" /* 4862 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLiveSta
 const result = size.fileFinishedImporting("modules/stage_channels/useLiveStageChannels.tsx");
 
 export default tmp3;
-export const getAllLiveStageChannels = function getAllLiveStageChannels() {
+export function getAllLiveStageChannels() {
   const allStageInstances = StageInstanceStore.getAllStageInstances();
   return allStageInstances.reduce((arr, channel_id) => {
     channel = channel.getChannel(channel_id.channel_id);
@@ -186,5 +186,5 @@ export const getAllLiveStageChannels = function getAllLiveStageChannels() {
     }
     return arr;
   }, []);
-};
+}
 export const useAllLiveStageChannels = tmp2;

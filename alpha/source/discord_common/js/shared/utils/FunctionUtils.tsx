@@ -1,10 +1,10 @@
-// Module ID: 5132
-// Function ID: 5133
+// Module ID: 5133
+// Function ID: 5134
 // Name: utils/FunctionUtils
 // Dependencies: [32, 5, 2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, ignoreErrors, isPlainObjectEmpty, promiseThrottle
 
-// Module 5132 (utils/FunctionUtils)
+// Module 5133 (utils/FunctionUtils)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let obj = function _ignoreErrors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ let obj = function _ignoreErrors() {
               c3 = 0;
             }
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp4) {
           if (0 === c3) {
@@ -220,7 +220,7 @@ class PromiseDeduper {
 }
 const prototype = PromiseDeduper.prototype;
 
-export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, arg1) {
+export function areArraysShallowlyEqual(arg0, arg1) {
   if (arg0 === arg1) {
     return true;
   } else {
@@ -240,7 +240,7 @@ export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, ar
     }
     return false;
   }
-};
+}
 export function cachedFunction(arg0) {
   let closure_0 = arg0;
   let items = null;
@@ -302,11 +302,11 @@ export function promiseThrottle(arg0) {
     return closure_3;
   };
 }
-export const ignoreErrors = function ignoreErrors() {
+export function ignoreErrors() {
   return obj(...arguments);
-};
+}
 export { PromiseDeduper };
-export const clearObject = function clearObject(obj) {
+export function clearObject(obj) {
   for (const key10003 in obj) {
     let tmp2 = key10003;
     if (!obj.hasOwnProperty(key10003)) {
@@ -317,8 +317,8 @@ export const clearObject = function clearObject(obj) {
     }
     continue;
   }
-};
-export const isPlainObjectEmpty = function isPlainObjectEmpty(arg0) {
+}
+export function isPlainObjectEmpty(arg0) {
   const keys = Object.keys();
   if (keys !== undefined) {
     if (keys[tmp] !== undefined) {
@@ -326,4 +326,4 @@ export const isPlainObjectEmpty = function isPlainObjectEmpty(arg0) {
     }
   }
   return true;
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 19316
-// Function ID: 19317
+// Module ID: 19549
+// Function ID: 19550
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 12870, 1125, 558, 576, 18571, 19317, 2]
+// Dependencies: [19, 13091, 1125, 558, 576, 18805, 19550, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, validateRuleByTriggerConfigOrThrow
 
-// Module 19316 (AutomodTriggerConfigs)
+// Module 19549 (AutomodTriggerConfigs)
 import intl2 from "intl" /* 1125 */;
-import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 18571 */;
+import guild_automod_PermissionUtils from "guild_automod/PermissionUtils" /* 18805 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 12870 */;
+import Constants from "Constants" /* 13091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -268,14 +268,14 @@ export const AutomodTriggerConfigFlags = obj;
 export const triggerConfigs = obj2;
 export const AutomodTriggerCategory = obj11;
 export const AUTOMOD_RULE_CONFIGS_BY_CATEGORY = obj12;
-export const checkTriggerTypeForFlag = function checkTriggerTypeForFlag(arg0, arg1) {
+export function checkTriggerTypeForFlag(arg0, arg1) {
   const flags = obj2[arg0].flags;
   return flags.has(arg1);
-};
-export const getAvailableActionTypes = function getAvailableActionTypes(triggerType) {
+}
+export function getAvailableActionTypes(triggerType) {
   return Array.from(obj2[triggerType].availableActionTypes);
-};
-export const validateRuleByTriggerConfigOrThrow = function validateRuleByTriggerConfigOrThrow(actions, arr) {
+}
+export function validateRuleByTriggerConfigOrThrow(actions, arr) {
   let closure_129_0;
   let triggerType;
   ({ id: closure_129_0, triggerType } = actions);
@@ -306,9 +306,9 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
     const error2 = new Error("You have provided an event type that is not available for this trigger type");
     throw error2;
   }
-};
+}
 export const useAvailableTriggerTypes = tmp27;
-export const getDefaultTriggerMetadataForTriggerType = function getDefaultTriggerMetadataForTriggerType(triggerType, guildId) {
+export function getDefaultTriggerMetadataForTriggerType(triggerType, guildId) {
   if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === triggerType) {
     return { allowList: [], presets: [] };
   } else {
@@ -327,4 +327,4 @@ export const getDefaultTriggerMetadataForTriggerType = function getDefaultTrigge
     }
     return { keywordFilter: [], regexPatterns: [], allowList: [] };
   }
-};
+}

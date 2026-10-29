@@ -1,37 +1,37 @@
-// Module ID: 17836
-// Function ID: 17837
+// Module ID: 18074
+// Function ID: 18075
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5005, 5247, 11992, 1084, 21, 558, 576, 9743, 5241, 5011, 5289, 17837, 4881, 17807, 11098, 5288, 587, 5286, 12003, 5004, 5085, 10660, 5086, 17838, 1496, 504, 1503, 5283, 5284, 15416, 1414, 5705, 17882, 2]
+// Dependencies: [19, 17, 5006, 5248, 12046, 1084, 21, 558, 576, 9775, 5242, 5012, 5290, 18075, 4882, 18045, 11152, 5289, 587, 5287, 12057, 5005, 5086, 10693, 5087, 18076, 1497, 504, 1504, 5284, 5285, 15650, 1415, 1125, 5707, 18120, 2]
 
-// Module 17836 (RedesignGuildHeader)
+// Module 18074 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5086 */;
-import useThemeDefault from "useTheme" /* 5241 */;
-import spring from "spring" /* 5283 */;
-import springPresets from "springPresets" /* 5284 */;
-import useToken from "useToken" /* 5288 */;
-import useFontScale from "useFontScale" /* 5289 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9743 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10660 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11098 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12003 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15416 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17807 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17837 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17838 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 5087 */;
+import useThemeDefault from "useTheme" /* 5242 */;
+import spring from "spring" /* 5284 */;
+import springPresets from "springPresets" /* 5285 */;
+import useToken from "useToken" /* 5289 */;
+import useFontScale from "useFontScale" /* 5290 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9775 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10693 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12057 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15650 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18045 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18075 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18076 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11992 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -45,7 +45,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const shared = tmp(5011);
+const shared = tmp(5012);
 ({ StyleSheet: closure_4, View: hasOwnProperty, Pressable: metroRequire } = react_native);
 ({ STICKY_BANNER_ASPECT_RATIO: c9, BANNER_MAX_HEIGHT_PERCENTAGE: c10, SEARCH_BAR_MARGIN_BOTTOM: unpackModuleId } = RedesignChannelListConstants);
 const GuildFeatures = Constants.GuildFeatures;
@@ -110,11 +110,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   const token = tmpResult3.useToken(tmp6(587).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   let num4 = 0;
   if (!isFavoritesGuildIdResult) {
-    num4 = tmp(5286).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num4 = tmp(5287).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num5 = 0;
   if (tmp9) {
-    num5 = 8 + tmp(5286).MEDIUM_BUTTON_HEIGHT + 8;
+    num5 = 8 + tmp(5287).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num6 = 16;
   if (isFavoritesGuildIdResult) {
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
       let bound = tmp10;
       if (isFavoritesGuildIdResult) {
         const _Math = Math;
-        bound = Math.max(tmp10, tmp(5286).SMALL_BUTTON_HEIGHT);
+        bound = Math.max(tmp10, tmp(5287).SMALL_BUTTON_HEIGHT);
       }
       const sum = 16 + bound + tmp15 + num4 + num5 + num6 + num3;
       if (cResult[6] !== sum) {
@@ -172,11 +172,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   const tmp2Result = useToken;
   const token = tmp2Result.useToken(tmp5(587).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp2(5286).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num2 = tmp2(5287).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num3 = 0;
   if (tmp8) {
-    num3 = 8 + tmp2(5286).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp2(5287).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -190,7 +190,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp2(5286).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp2(5287).SMALL_BUTTON_HEIGHT);
   }
   return roundToNearestPixelDefault(16 + bound + num6 + num2 + num3 + num5 + num);
 });
@@ -498,7 +498,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
   const tmp = guild;
   let tmp2 = bannerHeight;
   let obj = guild(bannerHeight[8]);
-  const cResult = obj.c(49);
+  const cResult = obj.c(51);
   guild = guild.guild;
   const scrollPosition = guild.scrollPosition;
   bannerHeight = guild.bannerHeight;
@@ -514,7 +514,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
   const tmp5 = scrollPosition;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ActionSheetStore, AccessibilityStore];
-    class T {
+    class P {
       constructor() {
         const obj = { actionSheetOpen: null != key.getKey(), useReducedMotion: useReducedMotion.useReducedMotion };
         return obj;
@@ -522,8 +522,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
     }
     let num2 = 1;
     cResult[1] = items;
-    cResult[2] = T;
-    tmp8 = T;
+    cResult[2] = P;
+    tmp8 = P;
     tmp7 = items;
   } else {
     tmp7 = cResult[1];
@@ -547,7 +547,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
     }
     cResult[3] = sharedValue;
     cResult[4] = G;
-    class T {
+    class P {
       constructor() {
         const obj = { actionSheetOpen: null != key.getKey(), useReducedMotion: useReducedMotion.useReducedMotion };
         return obj;
@@ -572,7 +572,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
     }
     cResult[5] = sharedValue;
     cResult[6] = O;
-    class T {
+    class P {
       constructor() {
         const obj = { actionSheetOpen: null != key.getKey(), useReducedMotion: useReducedMotion.useReducedMotion };
         return obj;
@@ -624,7 +624,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
       }
     }
     const obj3 = { scrollPosition, interpolate: tmp(tmp2[22]).interpolate, maxScrollPosition: bannerHeight, bannerHeight };
-    class T {
+    class P {
       constructor() {
         const obj = { actionSheetOpen: null != key.getKey(), useReducedMotion: useReducedMotion.useReducedMotion };
         return obj;
@@ -678,12 +678,11 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
   cResult[9] = fn;
 }) : (function ReanimatedGuildBanner(guild) {
   let actionSheetOpen;
+  let intl;
   let items5;
   let items6;
+  let items7;
   let key;
-  let obj9;
-  let tmp18;
-  let tmp19;
   let useReducedMotion;
   guild = guild.guild;
   const scrollPosition = guild.scrollPosition;
@@ -702,7 +701,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
     return obj;
   });
   ({ useReducedMotion, actionSheetOpen } = stateFromStoresObject);
-  let tmp17Result = scrollPosition(bannerHeight[15])(guild.id);
+  let tmp20Result = scrollPosition(bannerHeight[15])(guild.id);
   let obj2 = guild(bannerHeight[28]);
   const isFocused = obj2.useIsFocused();
   const obj3 = guild(bannerHeight[22]);
@@ -784,21 +783,23 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reanim
       const obj2 = { id: guild.id, banner: guild.banner };
       return obj.getGuildBannerSource(obj2, hasItem);
     });
-    const obj8 = { style: animatedStyle, children: tmp18(tmp19, obj9) };
-    obj9 = { style: tmp3.bannerWrapper, onPress: callback2, onPressIn: callback, onPressOut: callback1, children: items5 };
+    const obj8 = { style: animatedStyle, children: items7 };
+    const obj9 = { style: tmp3.bannerWrapper, accessibilityRole: "button", accessibilityLabel: guild.name, accessibilityHint: intl.string(guild(tmp2[33]).t["Gpyp/e"]), onPress: callback2, onPressIn: callback, onPressOut: callback1, children: items5 };
     const View = tmp(tmp2[22]).View;
-    const obj10 = { style: tmp13, source: animatableSourceWithFallback };
-    items5 = [closure_13(tmp(tmp2[33]), obj10), , ];
+    intl = tmp4(tmp2[33]).intl;
+    const obj10 = { style: tmp14, source: animatableSourceWithFallback };
+    items5 = [closure_13(tmp(tmp2[34]), obj10), ];
     const obj11 = { style: items6 };
     items6 = [tmp3.bannerOverlay, animatedStyle1];
     items5[1] = closure_13(tmp(tmp2[22]).View, obj11);
-    tmp18 = closure_14;
-    tmp19 = bannerHeight;
-    if (tmp17Result) {
-      tmp17Result = tmp17(tmp(tmp2[34]), {});
+    items7 = [closure_14(bannerHeight, obj9), ];
+    const tmp18 = closure_14;
+    const tmp20 = closure_13;
+    if (tmp20Result) {
+      tmp20Result = tmp20(tmp(tmp2[35]), {});
     }
-    items5[2] = tmp17Result;
-    return closure_13(View, obj8);
+    items7[1] = tmp20Result;
+    return tmp18(View, obj8);
   }
 });
 let size = size_mod;

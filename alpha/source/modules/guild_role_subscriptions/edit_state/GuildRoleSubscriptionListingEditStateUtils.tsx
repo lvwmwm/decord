@@ -1,26 +1,26 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 17093
+// Function ID: 17094
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 6760, 4929, 16856, 16833, 1084, 1391, 558, 576, 504, 5635, 6418, 16857, 16858, 1102, 4927, 16859, 16840, 16860, 1271, 38, 6866, 7392, 12, 9977, 16861, 1278, 2]
+// Dependencies: [5, 32, 19, 6783, 4930, 17094, 17071, 1084, 1391, 558, 576, 504, 5636, 6442, 17095, 17096, 1102, 4928, 17097, 17078, 17098, 1271, 38, 6889, 7415, 12, 10009, 17099, 1278, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 16855 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 17093 (GuildRoleSubscriptionListingEditStateUtils)
 import react2 from "react" /* 576 */;
 import v1 from "v1" /* 1278 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4927 */;
-import useInitialValueDefault from "useInitialValue" /* 5635 */;
-import StoreUtils from "StoreUtils" /* 6418 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16840 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16857 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16860 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4928 */;
+import useInitialValueDefault from "useInitialValue" /* 5636 */;
+import StoreUtils from "StoreUtils" /* 6442 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17078 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 17095 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 17098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4929 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16856 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4930 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17094 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,9 +34,9 @@ let closure_12;
 let map1;
 let tmp;
 const utils_ColorUtils = tmp(1102);
-const Contants = tmp(16858);
-const f128969 = (id) => id.id;
-const f154200 = () => {
+const Contants = tmp(17096);
+const f130535 = (id) => id.id;
+const f155833 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -58,14 +58,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f128969));
+    set = new Set(found.map(f130535));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f154200);
+  obj.batchUpdates(f155833);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -86,7 +86,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
             closure_16 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           if (1 === tmp5) {
@@ -262,7 +262,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
               return obj;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           subscriptionTrial = closure_130_8.getSubscriptionTrial(id);
           let tmp26 = null != trialLimit || null != trialInterval;
@@ -309,7 +309,7 @@ obj = function _createListingFromEditState() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -353,7 +353,7 @@ obj = function _createListingFromEditState() {
               analyticsContext = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === c6) {
@@ -591,7 +591,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
       return () => {
         closure_0 = closure_1_0;
         obj = closure_0(dependencyMap[21]);
-        obj.batchUpdates(f154200);
+        obj.batchUpdates(f155833);
       };
     };
     const items = [arg0];
@@ -612,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[21]);
-    obj.batchUpdates(f154200);
+    obj.batchUpdates(f155833);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1207,7 +1207,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(found.map(f128969));
+      set = new Set(found.map(f130535));
     }
     cResult[4] = stateFromStoresArray;
     cResult[5] = tmp4.id;
@@ -1240,7 +1240,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f128969));
+        set = new Set(found.map(f130535));
       }
     }
     return set;
@@ -1538,7 +1538,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEditSt
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(16840);
+  const tmpResult = tmp(17078);
   const subscriptionListingsForGroup = tmpResult.useSubscriptionListingsForGroup(arg0, tmp4);
   if (cResult[2] !== arg1) {
     const fn = function s(arg0) {
@@ -1810,7 +1810,7 @@ export const useHasChanges = tmp21;
 export const useHasChangesForEditStateIds = tmp22;
 export const useSubscriptionPlan = tmp23;
 export { clearEditState };
-export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateListingFromEditState() {
+export function useCreateOrUpdateListingFromEditState() {
   let closure_1;
   let first;
   let require;
@@ -1920,7 +1920,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -1947,7 +1947,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               id = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -1990,7 +1990,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               c4 = 0;
               guildId(false);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               throw subscriptionListing;
             }
@@ -2069,5 +2069,5 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
     }, [])
   };
   return obj;
-};
+}
 export const useEditStateIds = tmp24;

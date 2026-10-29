@@ -91,7 +91,7 @@ function updateSession(ipAddress) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const closeSession = function closeSession(status, status2) {
+export function closeSession(status, status2) {
   let obj;
   const tmp = status2;
   if (tmp) {
@@ -104,8 +104,8 @@ export const closeSession = function closeSession(status, status2) {
     }
   }
   updateSession(status, obj);
-};
-export const makeSession = function makeSession(arg0) {
+}
+export function makeSession(arg0) {
   let obj3;
   let obj = browserPerformanceTimeOrigin;
   const timestampInSecondsResult = obj.timestampInSeconds();
@@ -139,5 +139,5 @@ export const makeSession = function makeSession(arg0) {
     updateSession(obj2, arg0);
   }
   return obj2;
-};
+}
 export { updateSession };

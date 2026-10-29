@@ -1,19 +1,19 @@
-// Module ID: 14290
-// Function ID: 14291
+// Module ID: 14524
+// Function ID: 14525
 // Name: getAttachmentUploadAbortAlert
-// Dependencies: [1084, 1125, 8178, 2]
+// Dependencies: [1084, 1125, 8201, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 14290 (getAttachmentUploadAbortAlert)
+// Module 14524 (getAttachmentUploadAbortAlert)
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import UploadUtils from "UploadUtils" /* 8178 */;
+import UploadUtils from "UploadUtils" /* 8201 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
 const result = size.fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");
 
-export const getAttachmentUploadAbortAlertContent = function getAttachmentUploadAbortAlertContent(code) {
+export function getAttachmentUploadAbortAlertContent(code) {
   let DYFPg2;
   let formatToPlainString;
   let intl2;
@@ -39,4 +39,4 @@ export const getAttachmentUploadAbortAlertContent = function getAttachmentUpload
   } else {
     return null;
   }
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17564
+// Function ID: 17565
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5004, 587, 17326, 17327, 5699, 5270, 1199, 7257, 5280, 6707, 6960, 558, 576, 1125, 7131, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5005, 587, 17565, 17566, 5701, 5271, 1199, 7281, 5281, 6731, 6984, 558, 576, 1125, 7155, 2]
 
-// Module 17325 (CaptchaTestModal)
+// Module 17564 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import Navigator2 from "Navigator" /* 7131 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17326 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17327 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import Navigator2 from "Navigator" /* 7155 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17565 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17566 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c4;
@@ -114,7 +114,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {

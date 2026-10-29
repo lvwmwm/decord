@@ -1,10 +1,10 @@
-// Module ID: 10763
-// Function ID: 10764
+// Module ID: 10838
+// Function ID: 10839
 // Name: conjureLocalDev
 // Dependencies: [2]
 // Exports: getConjureTunnelWorkerOrigin, isConjureLocalDev
 
-// Module 10763 (conjureLocalDev)
+// Module 10838 (conjureLocalDev)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/conjureLocalDev.tsx");

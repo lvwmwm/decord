@@ -1,11 +1,11 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 10902
+// Function ID: 10903
 // Name: conjureLiveRelaunch
-// Dependencies: [10779, 2]
+// Dependencies: [10854, 2]
 // Exports: relaunchAppFramesForBuild, reloadAppFramesAfterDeploy
 
-// Module 10826 (conjureLiveRelaunch)
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10779 */;
+// Module 10902 (conjureLiveRelaunch)
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10854 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -14,7 +14,7 @@ const map = new Map();
 const map1 = new Map();
 let result = size.fileFinishedImporting("modules/conjure/live_reload/conjureLiveRelaunch.tsx");
 
-export const relaunchAppFramesForBuild = function relaunchAppFramesForBuild(applicationId, build) {
+export function relaunchAppFramesForBuild(applicationId, build) {
   let flag = map.get(applicationId) !== build;
   const obj = map;
   if (flag) {
@@ -38,8 +38,8 @@ export const relaunchAppFramesForBuild = function relaunchAppFramesForBuild(appl
     flag = true;
   }
   return flag;
-};
-export const reloadAppFramesAfterDeploy = function reloadAppFramesAfterDeploy(application_id) {
+}
+export function reloadAppFramesAfterDeploy(application_id) {
   const value = map1.get(application_id);
   if (null != value) {
     if (value.source !== "deploy") {
@@ -53,4 +53,4 @@ export const reloadAppFramesAfterDeploy = function reloadAppFramesAfterDeploy(ap
   const result = obj.set(application_id, obj2);
   const obj3 = ConjurePlatformUtilsDefault;
   obj3.reloadAppFrames(application_id);
-};
+}

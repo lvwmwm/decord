@@ -6,7 +6,7 @@
 // Module 793
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const parseCookie = function parseCookie(arr) {
+export function parseCookie(arr) {
   const obj = {};
   let num = 0;
   if (0 < arr.length) {
@@ -46,4 +46,4 @@ export const parseCookie = function parseCookie(arr) {
     }
   }
   return obj;
-};
+}

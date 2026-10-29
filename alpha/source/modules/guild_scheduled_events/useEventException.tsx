@@ -1,18 +1,18 @@
-// Module ID: 8931
-// Function ID: 8932
+// Module ID: 8934
+// Function ID: 8935
 // Name: useEventException
-// Dependencies: [6819, 558, 576, 504, 2]
+// Dependencies: [6842, 558, 576, 504, 2]
 // Exports: getEventException
 
-// Module 8931 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
+// Module 8934 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f102769 = (event_exception_id) => event_exception_id.event_exception_id === constants;
+const f103777 = (event_exception_id) => event_exception_id.event_exception_id === constants;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventException(arg0, arg1) {
   let closure_0;
   let first;
@@ -58,7 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventExce
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f102769);
+    found = stateFromStoresArray.find(f103777);
   }
   cResult[3] = stateFromStoresArray;
   cResult[4] = arg0;
@@ -83,14 +83,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventExce
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f102769);
+    found = stateFromStoresArray.find(f103777);
   }
   return found;
 });
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
 
 export default tmp2;
-export const getEventException = function getEventException(recurrenceId, eventId) {
+export function getEventException(recurrenceId, eventId) {
   const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
   let prop;
   if (guildScheduledEvent != null) {
@@ -102,7 +102,7 @@ export const getEventException = function getEventException(recurrenceId, eventI
   let closure_0 = recurrenceId;
   let found;
   if (prop != null) {
-    found = prop.find(f102769);
+    found = prop.find(f103777);
   }
   return found;
-};
+}

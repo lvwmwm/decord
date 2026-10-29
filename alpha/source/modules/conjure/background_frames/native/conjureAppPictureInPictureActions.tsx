@@ -1,31 +1,31 @@
-// Module ID: 18740
-// Function ID: 18741
+// Module ID: 18973
+// Function ID: 18974
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [6810, 6811, 1125, 3863, 14269, 18327, 14080, 11578, 14081, 7327, 11531, 2]
+// Dependencies: [6833, 6834, 1125, 3864, 14503, 18561, 14313, 11632, 14314, 7351, 11585, 2]
 // Exports: showConjureAppPictureInPictureActions
 
-// Module 18740 (conjureAppPictureInPictureActions)
-import _modDef3863 from "module_3863" /* 3863 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7327 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11531 */;
-import closeFrameDefault from "closeFrame" /* 14081 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18327 */;
-import FramesStore from "FramesStore" /* 6810 */;
+// Module 18973 (conjureAppPictureInPictureActions)
+import _modDef3864 from "module_3864" /* 3864 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7351 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 11585 */;
+import closeFrameDefault from "closeFrame" /* 14314 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18561 */;
+import FramesStore from "FramesStore" /* 6833 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp3;
-const getConjureAppSoundButtonDefault = tmp3(14080);
+const getConjureAppSoundButtonDefault = tmp3(14313);
 function getConjureAppPictureInPictureActions(stateFromStores, appName, arg2) {
   let intl;
   let intl2;
   let obj2;
   _require = stateFromStores;
   let obj = {
-    label: intl.formatToPlainString(_modDef3863.dPf03z, obj2),
+    label: intl.formatToPlainString(_modDef3864.dPf03z, obj2),
     IconComponent: require("WindowLaunchIcon").WindowLaunchIcon,
     onPress() {
       const obj = conjureBackgroundFrames;
@@ -58,7 +58,7 @@ let result = size.fileFinishedImporting("modules/conjure/background_frames/nativ
 
 export const CONJURE_APP_PICTURE_IN_PICTURE_LOCATION = "ConjureAppPictureInPicture";
 export { getConjureAppPictureInPictureActions };
-export const showConjureAppPictureInPictureActions = function showConjureAppPictureInPictureActions(frameId, title) {
+export function showConjureAppPictureInPictureActions(frameId, title) {
   let obj2;
   let obj3;
   const tmp = asLaunched(FramesStore.getFrame(frameId));
@@ -70,4 +70,4 @@ export const showConjureAppPictureInPictureActions = function showConjureAppPict
     obj3 = EmbeddedAppShimExperiment;
     const result = showSimpleActionSheet(obj);
   }
-};
+}

@@ -9,7 +9,7 @@ import _mod693 from "module_693" /* 693 */;
 
 const value_str = "value";
 
-export const convertToNormalizedObject = function convertToNormalizedObject(data) {
+export function convertToNormalizedObject(data) {
   const normalizer = _mod693;
   const normalizeResult = normalizer.normalize(data);
   if (null !== normalizeResult) {
@@ -24,4 +24,4 @@ export const convertToNormalizedObject = function convertToNormalizedObject(data
     }
   }
   obj = { [closure_1_2]: normalizeResult };
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 19022
-// Function ID: 19023
+// Module ID: 19255
+// Function ID: 19256
 // Name: RestrictedHoursActionCreators
-// Dependencies: [5, 6707, 19023, 1999, 2]
+// Dependencies: [5, 6731, 19256, 2000, 2]
 // Exports: openRestrictedHoursModal
 
-// Module 19022 (RestrictedHoursActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+// Module 19255 (RestrictedHoursActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ function closeRestrictedHoursModal() {
 const RESTRICTED_HOURS_MODAL_KEY = "RESTRICTED_HOURS_MODAL_KEY";
 const result = size.fileFinishedImporting("modules/parent_tools/RestrictedHoursActionCreators.native.tsx");
 
-export const openRestrictedHoursModal = function openRestrictedHoursModal() {
+export function openRestrictedHoursModal() {
   let paths;
   const obj = ModalActionCreatorsDefault;
   const obj2 = { onClose: closeRestrictedHoursModal };
@@ -28,5 +28,5 @@ export const openRestrictedHoursModal = function openRestrictedHoursModal() {
     await require("asyncRequire")(paths[2], paths.paths);
     return arg1.default;
   }), obj2, RESTRICTED_HOURS_MODAL_KEY, { animation: "none", presentation: "fullScreenModal" });
-};
+}
 export { closeRestrictedHoursModal };

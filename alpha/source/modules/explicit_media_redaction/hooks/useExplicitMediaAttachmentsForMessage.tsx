@@ -1,12 +1,12 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 13106
+// Function ID: 13107
 // Name: useExplicitMediaAttachmentsForMessage
-// Dependencies: [6045, 558, 576, 573, 12886, 7426, 7432, 2]
+// Dependencies: [6049, 558, 576, 573, 13107, 7449, 7455, 2]
 
-// Module 12885 (useExplicitMediaAttachmentsForMessage)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7426 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7432 */;
-import MessageStore from "MessageStore" /* 6045 */;
+// Module 13106 (useExplicitMediaAttachmentsForMessage)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7449 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7455 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedacta
     }
     const tmpResult = tmp(573);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-    const tmpResult2 = tmp(12886);
+    const tmpResult2 = tmp(13107);
     const enabledHarmTypesBitmaskForMessage = tmpResult2.useEnabledHarmTypesBitmaskForMessage(stateFromStores);
     if (null == stateFromStores) {
       let tmp16;

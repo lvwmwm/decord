@@ -1,15 +1,15 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7506
+// Function ID: 7507
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 4878, 6042, 558, 576, 573, 2]
+// Dependencies: [19, 4879, 6046, 558, 576, 573, 2]
 // Exports: getGuildIdsToFetchSoundsFor
 
-// Module 7483 (useGuildIdsToFetchSoundsFor)
+// Module 7506 (useGuildIdsToFetchSoundsFor)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SoundboardStore from "SoundboardStore" /* 6042 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SoundboardStore from "SoundboardStore" /* 6046 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,8 +84,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildId
 const result = size.fileFinishedImporting("modules/soundboard/useGuildIdsToFetchSoundsFor.tsx");
 
 export const useGuildIdsToFetchSoundsFor = tmp2;
-export const getGuildIdsToFetchSoundsFor = function getGuildIdsToFetchSoundsFor() {
+export function getGuildIdsToFetchSoundsFor() {
   const guildIds = GuildStore.getGuildIds();
   const sounds = SoundboardStore.getSounds();
   return guildIds.filter((item) => null == closure_0.get(item));
-};
+}

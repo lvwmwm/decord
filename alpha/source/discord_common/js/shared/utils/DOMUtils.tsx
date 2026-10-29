@@ -1,10 +1,10 @@
-// Module ID: 2033
-// Function ID: 2034
+// Module ID: 2034
+// Function ID: 2035
 // Name: DOMUtils
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 2033 (DOMUtils)
+// Module 2034 (DOMUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /input/i;
@@ -12,7 +12,7 @@ const re1 = /textarea/i;
 const set = new Set(["text", "password", "number", "date", "datetime-local", "time", "week", "month", "email", "search", "tel", "url"]);
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/DOMUtils.tsx");
 
-export const isElement = function isElement(ownerDocument, name) {
+export function isElement(ownerDocument, name) {
   if (null == ownerDocument) {
     return false;
   } else {
@@ -36,16 +36,16 @@ export const isElement = function isElement(ownerDocument, name) {
       return null != defaultView[str] && ownerDocument instanceof defaultView[str];
     }
   }
-};
-export const cssValueToNumber = function cssValueToNumber(match) {
+}
+export function cssValueToNumber(match) {
   const parsed = parseInt(match, 10);
   let num = 0;
   if (!isNaN(parsed)) {
     num = parsed;
   }
   return num;
-};
-export const isInputLikeElement = function isInputLikeElement(getAttribute) {
+}
+export function isInputLikeElement(getAttribute) {
   if (null == getAttribute) {
     return false;
   } else if ("true" === getAttribute.getAttribute("contenteditable")) {
@@ -64,14 +64,14 @@ export const isInputLikeElement = function isInputLikeElement(getAttribute) {
     }
     return false;
   }
-};
-export const removeNode = function removeNode(parentNode) {
+}
+export function removeNode(parentNode) {
   if (null != parentNode.parentNode) {
     parentNode = parentNode.parentNode;
     parentNode.removeChild(parentNode);
   }
-};
-export const eventOwnerDocument = function eventOwnerDocument(target) {
+}
+export function eventOwnerDocument(target) {
   target = target.target;
   let tmp = null;
   if (null != target) {
@@ -87,8 +87,8 @@ export const eventOwnerDocument = function eventOwnerDocument(target) {
     tmp = ownerDocument;
   }
   return tmp;
-};
-export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, arg2, arg3) {
+}
+export function clickedOnVisibleImage(arg0, arg1, arg2, arg3) {
   let height;
   let height2;
   let left;
@@ -104,8 +104,8 @@ export const clickedOnVisibleImage = function clickedOnVisibleImage(arg0, arg1, 
   const sum = (height2 - result1) / 2 + left;
   const sum1 = (width2 - result) / 2 + top;
   return arg1 >= sum && arg1 <= sum + result1 && arg0 >= sum1 && arg0 <= sum1 + result;
-};
-export const getParentElementByClassName = function getParentElementByClassName(parentElement, arg1) {
+}
+export function getParentElementByClassName(parentElement, arg1) {
   parentElement = parentElement.parentElement;
   if (null != parentElement) {
     const classList = parentElement.classList;
@@ -115,8 +115,8 @@ export const getParentElementByClassName = function getParentElementByClassName(
     return parentElement;
   }
   return null;
-};
-export const getParentElementByAttribute = function getParentElementByAttribute(parentElement, arg1) {
+}
+export function getParentElementByAttribute(parentElement, arg1) {
   parentElement = parentElement.parentElement;
   if (null != parentElement) {
     while (null == parentElement.getAttribute(arg1)) {
@@ -125,4 +125,4 @@ export const getParentElementByAttribute = function getParentElementByAttribute(
     return parentElement;
   }
   return null;
-};
+}

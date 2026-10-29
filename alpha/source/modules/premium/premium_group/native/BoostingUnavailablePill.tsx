@@ -1,20 +1,20 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15319
+// Function ID: 15320
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 2063, 21, 5004, 587, 5246, 15085, 1999, 1125, 3283, 558, 576, 5270, 2]
+// Dependencies: [17, 2064, 21, 5005, 587, 5247, 15320, 2000, 1125, 3284, 558, 576, 5271, 2]
 
-// Module 15084 (BoostingUnavailablePill)
+// Module 15319 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2063 */;
-import _modDef3283 from "module_3283" /* 3283 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2064 */;
+import _modDef3284 from "module_3284" /* 3284 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,11 +28,11 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15085, dependencyMap.paths);
+  const tmp2 = asyncRequire(15320, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };
-  prop = _modDef3283["5xN/C1"];
+  prop = _modDef3284["5xN/C1"];
   openLazy(tmp2, "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);

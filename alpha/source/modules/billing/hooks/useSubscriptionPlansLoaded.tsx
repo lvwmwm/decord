@@ -1,15 +1,15 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 15205
+// Function ID: 15206
 // Name: useSubscriptionPlansLoaded
-// Dependencies: [2052, 2054, 2055, 1391, 3, 504, 2]
+// Dependencies: [2053, 2055, 2056, 1391, 3, 504, 2]
 // Exports: useSubscriptionPlansLoaded
 
-// Module 14970 (useSubscriptionPlansLoaded)
+// Module 15205 (useSubscriptionPlansLoaded)
 import LoggerDefault from "Logger" /* 3 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2052 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2054 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2053 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2055 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
 import size from "module_2" /* 2 */;
 
 function getSubscriptionPlansLoaded(items, items2) {
@@ -62,7 +62,7 @@ const ACTIVE_PREMIUM_SKUS = PremiumConstants.ACTIVE_PREMIUM_SKUS;
 let tmp2 = new LoggerDefault("useSubscriptionPlansLoaded");
 const result = size.fileFinishedImporting("modules/billing/hooks/useSubscriptionPlansLoaded.tsx");
 
-export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() {
+export function useSubscriptionPlansLoaded() {
   let items;
   let tmp2 = arg0;
   if (arg0 === undefined) {
@@ -78,5 +78,5 @@ export const useSubscriptionPlansLoaded = function useSubscriptionPlansLoaded() 
     items = [PaymentSourceStore, SubscriptionPlanStore, SubscriptionStore];
     return getSubscriptionPlansLoaded(items, items);
   }, items2);
-};
+}
 export { getSubscriptionPlansLoaded };

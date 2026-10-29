@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 14049
+// Function ID: 14050
 // Name: ContactSyncPersistedStore
 // Dependencies: [510, 1271, 584, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 13816 (ContactSyncPersistedStore)
+// Module 14049 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_native from "react-native" /* 1271 */;
@@ -70,7 +70,7 @@ Storage3.asyncGet("ContactSyncUpsellCTADismissed", async (upsellCTADismissed) =>
 });
 let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncPersistedStore.tsx");
 
-export const setStoredContacts = function setStoredContacts(arg0) {
+export function setStoredContacts(arg0) {
   let closure_0;
   _require = arg0;
   const Storage = require("Storage").Storage;
@@ -88,8 +88,8 @@ export const setStoredContacts = function setStoredContacts(arg0) {
   const obj2 = DispatcherDefault;
   const obj3 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === arg0 };
   obj2.dispatch(obj3);
-};
-export const deleteStoredContacts = function deleteStoredContacts() {
+}
+export function deleteStoredContacts() {
   let state;
   const Storage = Storage4.Storage;
   let str = Storage.get(V2_DCD_CONTACTS_STORAGE_KEY);
@@ -108,9 +108,9 @@ export const deleteStoredContacts = function deleteStoredContacts() {
     });
   });
   return str;
-};
+}
 export { useContactSyncStore };
-export const dismissUpsellCTA = function dismissUpsellCTA() {
+export function dismissUpsellCTA() {
   let state;
   const Storage = Storage4.Storage;
   const result = Storage.set(ContactSyncUpsellCTADismissed, true);
@@ -122,8 +122,8 @@ export const dismissUpsellCTA = function dismissUpsellCTA() {
       return obj;
     });
   });
-};
-export const dismissDMListCTA = function dismissDMListCTA() {
+}
+export function dismissDMListCTA() {
   let state;
   const Storage = Storage4.Storage;
   const result = Storage.set(ContactSyncDMListCTADismissed, true);
@@ -133,8 +133,8 @@ export const dismissDMListCTA = function dismissDMListCTA() {
     const merged = Object.assign(arg0);
     return obj;
   }));
-};
-export const setDMListCTAFirstSeenDate = function setDMListCTAFirstSeenDate() {
+}
+export function setDMListCTAFirstSeenDate() {
   const Storage = Storage4.Storage;
   const tmp3 = contact_sync_dm_list_cta_first_seen_date;
   if (!Storage.get(contact_sync_dm_list_cta_first_seen_date)) {
@@ -142,8 +142,8 @@ export const setDMListCTAFirstSeenDate = function setDMListCTAFirstSeenDate() {
     const _Date = Date;
     const result = Storage2.set(tmp3, Date.now());
   }
-};
-export const clearDismissState = function clearDismissState() {
+}
+export function clearDismissState() {
   let obj;
   const Storage = Storage4.Storage;
   Storage.remove(ContactSyncUpsellCTADismissed);
@@ -154,4 +154,4 @@ export const clearDismissState = function clearDismissState() {
     const merged = Object.assign(arg0);
     return obj;
   });
-};
+}

@@ -1,22 +1,23 @@
-// Module ID: 6071
-// Function ID: 6072
+// Module ID: 6075
+// Function ID: 6076
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6050, 11, 6072, 6073, 6074, 6397, 1125, 2030, 6059, 3089, 4950, 3057, 1897, 1997, 2]
+// Dependencies: [6054, 11, 6076, 6077, 6078, 6079, 6099, 6421, 1125, 2031, 6063, 3090, 4951, 3058, 1898, 1998, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6071 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6075 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl16 from "intl" /* 1125 */;
-import Server from "Server" /* 1997 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import _modDef3057 from "module_3057" /* 3057 */;
-import _modDef3089 from "module_3089" /* 3089 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import CheckpointUtils from "CheckpointUtils" /* 6059 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6072 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6073 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6074 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
+import Server from "Server" /* 1998 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import _modDef3058 from "module_3058" /* 3058 */;
+import _modDef3090 from "module_3090" /* 3090 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import CheckpointUtils from "CheckpointUtils" /* 6063 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6076 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6078 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6079 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6099 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,6 +28,8 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
+let tmp;
+const CheckpointCardColorPalette = tmp(6077);
 function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   let formatToPlainString;
   let formatToPlainStringResult;
@@ -79,7 +82,7 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   const intl2 = tmp(1125).intl;
   formatToPlainString = intl2.formatToPlainString;
   obj4 = { duration: tmpResult3.getAccessibleVoiceDurationString(rounded) };
-  lw35aH = _modDef3089.lw35aH;
+  lw35aH = _modDef3090.lw35aH;
   tmpResult3 = CheckpointUtils;
   if (stats.numMessagesSent > 0) {
     const numMessagesSent = stats.numMessagesSent;
@@ -87,18 +90,18 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   } else {
     const intl3 = tmp(1125).intl;
     const obj5 = { count: stats.numMessagesSent };
-    toLocaleStringResult = intl3.formatToPlainString(tmp5(3089).foKBCN, obj5);
+    toLocaleStringResult = intl3.formatToPlainString(tmp5(3090).foKBCN, obj5);
   }
-  obj6 = { text: toLocaleStringResult, accessibilityLabel: intl4.formatToPlainString(_modDef3089.IdRUAC, obj7) };
+  obj6 = { text: toLocaleStringResult, accessibilityLabel: intl4.formatToPlainString(_modDef3090.IdRUAC, obj7) };
   intl4 = tmp(1125).intl;
   obj7 = { count: stats.numMessagesSent };
   if (null == stats.topGuild) {
     const intl5 = tmp(1125).intl;
-    const stringResult = intl5.string(_modDef3089.GultYJ);
+    const stringResult = intl5.string(_modDef3090.GultYJ);
     obj9 = { text: stringResult, accessibilityLabel: stringResult };
     const obj8 = { text: stringResult, accessibilityLabel: stringResult };
   } else {
-    obj9 = { text: intl14.formatToPlainString(intl16.t.GBLpQ8, obj10), accessibilityLabel: intl15.formatToPlainString(_modDef3089.MpSH8v, obj11) };
+    obj9 = { text: intl14.formatToPlainString(intl16.t.GBLpQ8, obj10), accessibilityLabel: intl15.formatToPlainString(_modDef3090.MpSH8v, obj11) };
     intl14 = tmp(1125).intl;
     obj10 = { days: stats.topGuildNumDaysInteracted };
     intl15 = tmp(1125).intl;
@@ -106,7 +109,7 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   }
   tmp8 = undefined;
   if (null != stats.topGuild) {
-    const obj12 = { text: stats.topGuild.guildName, accessibilityLabel: intl6.formatToPlainString(_modDef3089["9UTJ+t"], obj13) };
+    const obj12 = { text: stats.topGuild.guildName, accessibilityLabel: intl6.formatToPlainString(_modDef3090["9UTJ+t"], obj13) };
     intl6 = tmp(1125).intl;
     tmp8 = obj12;
     obj13 = { guildName: stats.topGuild.guildName };
@@ -117,9 +120,9 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   } else {
     const intl7 = tmp(1125).intl;
     const obj14 = { count: stats.numEmojisSent };
-    toLocaleStringResult1 = intl7.formatToPlainString(tmp5(3089).RHYx1k, obj14);
+    toLocaleStringResult1 = intl7.formatToPlainString(tmp5(3090).RHYx1k, obj14);
   }
-  obj15 = { text: toLocaleStringResult1, accessibilityLabel: intl8.formatToPlainString(_modDef3089["36qpUG"], obj16) };
+  obj15 = { text: toLocaleStringResult1, accessibilityLabel: intl8.formatToPlainString(_modDef3090["36qpUG"], obj16) };
   intl8 = tmp(1125).intl;
   tmp10 = undefined;
   obj16 = { count: stats.numEmojisSent };
@@ -133,7 +136,7 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
         const _HermesInternal = HermesInternal;
         result = ":" + stats.topEmoji.emojiName + ":";
       }
-      const obj17 = { text: result, accessibilityLabel: intl9.formatToPlainString(_modDef3089.CcBo8C, obj18) };
+      const obj17 = { text: result, accessibilityLabel: intl9.formatToPlainString(_modDef3090.CcBo8C, obj18) };
       intl9 = tmp(1125).intl;
       tmp10 = obj17;
       obj18 = { emojiName: stats.topEmoji.emojiName };
@@ -145,15 +148,15 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
     formatToPlainStringResult = intl11.formatToPlainString(tmp(1125).t.GBLpQ8, obj19);
   } else {
     const intl10 = tmp(1125).intl;
-    formatToPlainStringResult = intl10.string(tmp5(3089).mg1NPe);
+    formatToPlainStringResult = intl10.string(tmp5(3090).mg1NPe);
   }
-  obj20 = { text: formatToPlainStringResult, accessibilityLabel: intl12.formatToPlainString(_modDef3089.LYcKX7, obj21) };
+  obj20 = { text: formatToPlainStringResult, accessibilityLabel: intl12.formatToPlainString(_modDef3090.LYcKX7, obj21) };
   intl12 = tmp(1125).intl;
   tmp13 = undefined;
   obj21 = { days: stats.totalDaysPlayed };
   if (stats.totalDaysPlayed > 0) {
     if (null != stats.topGame) {
-      const obj22 = { text: stats.topGame.applicationName, accessibilityLabel: intl13.formatToPlainString(_modDef3089.kLqpNC, obj23) };
+      const obj22 = { text: stats.topGame.applicationName, accessibilityLabel: intl13.formatToPlainString(_modDef3090.kLqpNC, obj23) };
       intl13 = tmp(1125).intl;
       tmp13 = obj22;
       obj23 = { gameName: stats.topGame.applicationName };
@@ -182,61 +185,66 @@ const items1 = [CheckpointCardTypes.CheckpointCardTypes.DEFAULT, CheckpointCardT
 const set1 = new Set(items1);
 let result = size.fileFinishedImporting("modules/checkpoint/CheckpointMessageComponentUtils.tsx");
 
-export const transformCheckpoint2026CardComponent = function transformCheckpoint2026CardComponent(checkpoint_data) {
-  let tmp10;
+export function transformCheckpoint2026CardComponent(checkpoint_data) {
+  let NONE;
   let tmp11;
-  let tmp5;
+  let tmp12;
   let tmp6;
   let tmp7;
-  let tmp2 = null;
+  let tmp8;
+  let tmp3 = null;
   const obj = CheckpointExperiments;
   if (obj.getIsCheckpointCardEnabled("transformCheckpoint2026CardComponent")) {
-    let tmp4;
+    let tmp5;
     if (null != checkpoint_data.character) {
-      const obj2 = { version: checkpoint_data.version, character: tmp5, stats: tmp6 };
-      tmp5 = undefined;
+      const obj2 = { version: checkpoint_data.version, character: tmp6, stats: tmp7, cardColorPalette: NONE };
+      tmp6 = undefined;
       if (null != checkpoint_data.character) {
         const obj6 = { base: null, shoes: null, outfit: null, face: null, hat: null, wearable: null, aura: null };
         ({ base: obj3.base, shoes: obj3.shoes, outfit: obj3.outfit, face: obj3.face, hat: obj3.hat, wearable: obj3.wearable, aura: obj3.aura } = checkpoint_data.character);
-        tmp5 = obj6;
+        tmp6 = obj6;
       }
-      tmp6 = undefined;
+      tmp7 = undefined;
       if (null != checkpoint_data.stats) {
         const stats = checkpoint_data.stats;
-        const obj7 = { totalVoiceMinutes: null, numMessagesSent: null, numEmojisSent: null, totalDaysPlayed: null, topEmoji: tmp7, topGuild: tmp10, topGuildNumDaysInteracted: stats.top_guild_num_days_interacted, topGame: tmp11, powerLevel: null, powerLevelPercentile: null };
+        const obj7 = { totalVoiceMinutes: null, numMessagesSent: null, numEmojisSent: null, totalDaysPlayed: null, topEmoji: tmp8, topGuild: tmp11, topGuildNumDaysInteracted: stats.top_guild_num_days_interacted, topGame: tmp12, powerLevel: null, powerLevelPercentile: null };
         ({ total_voice_minutes: obj4.totalVoiceMinutes, num_messages_sent: obj4.numMessagesSent, num_emojis_sent: obj4.numEmojisSent, total_days_played: obj4.totalDaysPlayed } = stats);
-        tmp7 = undefined;
+        tmp8 = undefined;
         if (null != stats.top_emoji) {
           let emoji_id;
           const obj5 = SnowflakeUtilsDefault;
           if (obj5.isProbablyAValidSnowflake(stats.top_emoji.emoji_id)) {
             emoji_id = stats.top_emoji.emoji_id;
           }
-          tmp7 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
+          tmp8 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
           const obj8 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
         }
-        tmp10 = undefined;
+        tmp11 = undefined;
         if (null != stats.top_guild) {
-          tmp10 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
+          tmp11 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
           const obj14 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
         }
-        tmp11 = undefined;
+        tmp12 = undefined;
         if (null != stats.top_game) {
-          tmp11 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
+          tmp12 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
           const obj15 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
         }
         ({ power_level: obj4.powerLevel, power_level_percentile: obj4.powerLevelPercentile } = stats);
-        tmp6 = obj7;
+        tmp7 = obj7;
       }
-      tmp4 = obj2;
+      NONE = checkpoint_data.card_color_palette;
+      if (NONE == null) {
+        NONE = CheckpointCardColorPalette.CheckpointCardColorPalette.NONE;
+      }
+      tmp5 = obj2;
     } else {
-      tmp4 = null;
+      tmp5 = null;
     }
-    tmp2 = tmp4;
+    tmp3 = tmp5;
   }
-  return tmp2;
-};
-export const toCheckpointMessageComponentData = function toCheckpointMessageComponentData(arg0, arg1, guilds) {
+  return tmp3;
+}
+export function toCheckpointMessageComponentData(STATS_ONLY, stateFromStores, stats) {
   let icon;
   let num2;
   let num3;
@@ -244,30 +252,31 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
   let num5;
   let num6;
   let num7;
+  let obj6;
   let tmp;
   let tmp11;
   let tmp12;
   let tmp13;
   let tmp4;
-  const obj = { version: metroImportDefault.V2026, character: tmp, stats: tmp4 };
+  const obj = { version: metroImportDefault.V2026, character: tmp, stats: tmp4, cardColorPalette: obj6.getCharacterCardColorPalette(stateFromStores) };
   tmp = undefined;
-  if (set.has(arg0)) {
-    tmp = arg1;
+  if (set.has(STATS_ONLY)) {
+    tmp = stateFromStores;
   }
   tmp4 = undefined;
-  if (set1.has(arg0)) {
-    if (null != guilds) {
-      guilds = guilds.guilds;
+  if (set1.has(STATS_ONLY)) {
+    if (null != stats) {
+      const guilds = stats.guilds;
       let first;
       if (guilds != null) {
         first = guilds.guilds[0];
       }
-      const emojis = guilds.emojis;
+      const emojis = stats.emojis;
       let first1;
       if (emojis != null) {
         first1 = emojis.emojis[0];
       }
-      const games = guilds.games;
+      const games = stats.games;
       let game;
       if (games != null) {
         const first2 = games.games[0];
@@ -275,7 +284,7 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
           game = first2.game;
         }
       }
-      const voice = guilds.voice;
+      const voice = stats.voice;
       let num;
       if (voice != null) {
         num = voice.totalVoiceMinutes;
@@ -283,7 +292,7 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       if (num == null) {
         num = 0;
       }
-      const messages = guilds.messages;
+      const messages = stats.messages;
       const obj2 = { totalVoiceMinutes: num, numMessagesSent: num2, numEmojisSent: num3, totalDaysPlayed: num4, topEmoji: tmp11, topGuild: tmp12, topGuildNumDaysInteracted: num5, topGame: tmp13, powerLevel: num6, powerLevelPercentile: num7 };
       num2 = undefined;
       if (messages != null) {
@@ -292,7 +301,7 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       if (num2 == null) {
         num2 = 0;
       }
-      const emojis2 = guilds.emojis;
+      const emojis2 = stats.emojis;
       num3 = undefined;
       if (emojis2 != null) {
         num3 = emojis2.numEmojisSent;
@@ -300,7 +309,7 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       if (num3 == null) {
         num3 = 0;
       }
-      const games2 = guilds.games;
+      const games2 = stats.games;
       num4 = undefined;
       if (games2 != null) {
         num4 = games2.totalDaysPlayed;
@@ -316,9 +325,9 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       }
       tmp12 = undefined;
       if (null != first) {
-        const obj9 = { guildId: first.guild.id, guildName: first.guild.name, guildIcon: icon };
+        const obj10 = { guildId: first.guild.id, guildName: first.guild.name, guildIcon: icon };
         icon = first.guild.icon;
-        tmp12 = obj9;
+        tmp12 = obj10;
       }
       num5 = undefined;
       if (first != null) {
@@ -329,11 +338,11 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       }
       tmp13 = undefined;
       if (null != game) {
-        const obj10 = { applicationId: null, applicationName: null, applicationImageId: null };
+        const obj11 = { applicationId: null, applicationName: null, applicationImageId: null };
         ({ id: obj5.applicationId, name: obj5.applicationName, iconHash: obj5.applicationImageId } = game);
-        tmp13 = obj10;
+        tmp13 = obj11;
       }
-      const power = guilds.power;
+      const power = stats.power;
       num6 = undefined;
       if (power != null) {
         num6 = power.powerLevel;
@@ -341,7 +350,7 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       if (num6 == null) {
         num6 = 0;
       }
-      const power2 = guilds.power;
+      const power2 = stats.power;
       num7 = undefined;
       if (power2 != null) {
         num7 = power2.powerLevelPercentile;
@@ -352,9 +361,10 @@ export const toCheckpointMessageComponentData = function toCheckpointMessageComp
       tmp4 = obj2;
     }
   }
+  obj6 = CheckpointCardColors;
   return obj;
-};
-export const getCharacterLayerUrls = function getCharacterLayerUrls(character, arg1) {
+}
+export function getCharacterLayerUrls(character, arg1) {
   _require = character;
   let closure_1 = arg1;
   const items = [];
@@ -373,16 +383,16 @@ export const getCharacterLayerUrls = function getCharacterLayerUrls(character, a
     }
   });
   return items;
-};
-export const formatCheckpoint2026PowerLevel = function formatCheckpoint2026PowerLevel(arg0) {
+}
+export function formatCheckpoint2026PowerLevel(arg0) {
   const numberFormat = new Intl.NumberFormat(intl16.intl.currentLocale, { notation: "compact", compactDisplay: "short" });
   return numberFormat.format(arg0);
-};
-export const getCheckpoint2026PowerBarUnits = function getCheckpoint2026PowerBarUnits(arg0) {
+}
+export function getCheckpoint2026PowerBarUnits(arg0) {
   return Math.min(Math.max(Math.round(arg0 / 100 * hasOwnProperty), React3), _false);
-};
+}
 export { transformCheckpoint2026StatsToRowGeneratedComponent };
-export const transformCheckpoint2026CardToRowGeneratedComponent = function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData) {
+export function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData) {
   let character;
   let closure_1;
   let intl;
@@ -406,7 +416,7 @@ export const transformCheckpoint2026CardToRowGeneratedComponent = function trans
     importDefault = tmp3;
     const obj2 = { layerUrls: items, accessibilityLabel: obj4.getCheckpointCharacterAccessibilityLabel(character) };
     items = [];
-    const obj3 = character(items[4]);
+    const obj3 = character(items[6]);
     const characterLayerOrdering = obj3.getCharacterLayerOrdering(character.wearable);
     const item = characterLayerOrdering.forEach((item) => {
       const tmp = CheckpointCharacterTraits.CHECKPOINT_TRAIT_TO_OPTION_ASSETS[item][character[item]];
@@ -421,7 +431,7 @@ export const transformCheckpoint2026CardToRowGeneratedComponent = function trans
       }
     });
     tmp4 = obj2;
-    obj4 = character(items[5]);
+    obj4 = character(items[7]);
   }
   tmp7 = undefined;
   if (null != checkpointData.stats) {
@@ -431,13 +441,13 @@ export const transformCheckpoint2026CardToRowGeneratedComponent = function trans
   const obj5 = character(items[2]);
   const tmp9 = character;
   if (obj5.getIsCheckpointEnabled("getCheckpointClickable")) {
-    const obj6 = { ariaDescription: intl.string(tmp(items[11]).r8GEbK) };
-    intl = tmp9(tmp2[6]).intl;
+    const obj6 = { ariaDescription: intl.string(tmp(items[13]).r8GEbK) };
+    intl = tmp9(tmp2[8]).intl;
     tmp10 = obj6;
   }
   return obj;
-};
-export const getCheckpointDataFromMessage = function getCheckpointDataFromMessage(contentMessage) {
+}
+export function getCheckpointDataFromMessage(contentMessage) {
   const first = contentMessage.components[0];
   let checkpointData = null;
   if (null != first) {
@@ -447,13 +457,13 @@ export const getCheckpointDataFromMessage = function getCheckpointDataFromMessag
     }
   }
   return checkpointData;
-};
-export const getCheckpointLabel = function getCheckpointLabel(checkpointDataFromMessage) {
+}
+export function getCheckpointLabel(checkpointDataFromMessage) {
   if (metroImportDefault.V2025 === checkpointDataFromMessage.version) {
     const intl = intl16.intl;
-    return intl.string(_modDef3057.goiR2u);
+    return intl.string(_modDef3058.goiR2u);
   } else {
     const V2026 = tmp.V2026;
     return null;
   }
-};
+}

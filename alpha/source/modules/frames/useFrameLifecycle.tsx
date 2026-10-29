@@ -1,13 +1,13 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 18558
+// Function ID: 18559
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6811, 558, 576, 10804, 18325, 18326, 6845, 2028, 5659, 2]
+// Dependencies: [32, 5, 19, 6834, 558, 576, 10880, 18559, 18560, 6868, 2029, 5661, 2]
 
-// Module 18324 (useFrameLifecycle)
+// Module 18558 (useFrameLifecycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ function useFrameLifecycleState(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "Array" };
-      const obj8 = { state: obj.Loading, frame: "Array" };
+      obj10 = { state: obj.Loading, frame: "a" };
+      const obj8 = { state: obj.Loading, frame: "a" };
     } else {
       if (null != data) {
         if (tmp7) {
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c2;
@@ -177,7 +177,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                   c2 = 0;
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp12) {
               if (0 === c2) {
@@ -235,7 +235,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c2;
@@ -275,7 +275,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp12) {
             if (0 === c2) {

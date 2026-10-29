@@ -1,10 +1,10 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16734
+// Function ID: 16735
 // Name: RestrictedScheduleActionCreators
 // Dependencies: [5, 1084, 1294, 584, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 16496 (RestrictedScheduleActionCreators)
+// Module 16734 (RestrictedScheduleActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ obj = function _deleteRestrictedScheduleRule() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ obj = function _deleteRestrictedScheduleRule() {
             obj = closure_131_1(closure_131_2[3]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c5 = 3;
@@ -123,12 +123,12 @@ obj = function _deleteRestrictedScheduleRule() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleActionCreators.tsx");
 
-export const addRestrictedScheduleRule = function addRestrictedScheduleRule() {
+export function addRestrictedScheduleRule() {
   return obj(...arguments);
-};
-export const updateRestrictedScheduleRule = function updateRestrictedScheduleRule() {
+}
+export function updateRestrictedScheduleRule() {
   return obj(...arguments);
-};
-export const deleteRestrictedScheduleRule = function deleteRestrictedScheduleRule() {
+}
+export function deleteRestrictedScheduleRule() {
   return obj(...arguments);
-};
+}

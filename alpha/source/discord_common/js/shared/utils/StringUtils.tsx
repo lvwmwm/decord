@@ -1,12 +1,12 @@
-// Module ID: 2031
-// Function ID: 2032
+// Module ID: 2032
+// Function ID: 2033
 // Name: utils/StringUtils
-// Dependencies: [2032, 2, 2033]
+// Dependencies: [2033, 2, 2034]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
-// Module 2031 (utils/StringUtils)
-import _mod2032 from "module_2032" /* 2032 */;
-import DOMUtils from "DOMUtils" /* 2033 */;
+// Module 2032 (utils/StringUtils)
+import _mod2033 from "module_2033" /* 2033 */;
+import DOMUtils from "DOMUtils" /* 2034 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -28,7 +28,7 @@ if (null == String.prototype.normalize) {
   fullNormalize = (arg0) => arg0;
 } else {
   fullNormalize = function fullNormalize(str) {
-    let closure_0 = _mod2032;
+    let closure_0 = _mod2033;
     dependencyMap = "";
     const items = [...str.normalize("NFD")];
     const item = items.forEach((item) => {
@@ -46,7 +46,7 @@ if (null == String.prototype.normalize) {
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/StringUtils.tsx");
 
 export const cssValueToNumber = DOMUtils.cssValueToNumber;
-export const upperCaseFirstChar = function upperCaseFirstChar(item) {
+export function upperCaseFirstChar(item) {
   let str = "";
   if (null != item) {
     const str2 = item.charAt(0);
@@ -55,7 +55,7 @@ export const upperCaseFirstChar = function upperCaseFirstChar(item) {
     str = "" + formatted + item.slice(1);
   }
   return str;
-};
+}
 export const truncateText = (str, arg1) => {
   str = arg2;
   if (arg2 === undefined) {
@@ -84,7 +84,7 @@ export const truncateText = (str, arg1) => {
   }
   return str2;
 };
-export const getAcronym = function getAcronym(name) {
+export function getAcronym(name) {
   let str = "";
   if (null != name) {
     const str3 = name.replace(/'s /g, " ");
@@ -92,6 +92,6 @@ export const getAcronym = function getAcronym(name) {
     str = str4.replace(/\s/g, "");
   }
   return str;
-};
+}
 export const stripDiacritics = fn;
 export const normalize = fullNormalize;

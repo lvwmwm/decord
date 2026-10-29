@@ -1,12 +1,12 @@
-// Module ID: 9239
-// Function ID: 9240
+// Module ID: 9243
+// Function ID: 9244
 // Name: SecureFramesDeeplinkExperiment
-// Dependencies: [5225, 558, 576, 2]
+// Dependencies: [5226, 558, 576, 2]
 // Exports: getSecureFramesDeeplinkExperiment
 
-// Module 9239 (SecureFramesDeeplinkExperiment)
+// Module 9243 (SecureFramesDeeplinkExperiment)
 import react from "react" /* 576 */;
-import createExperimentDefault from "createExperiment" /* 5225 */;
+import createExperimentDefault from "createExperiment" /* 5226 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesDeeplinkExperiment.tsx");
 
 export const useSecureFramesDeeplinkExperiment = tmp2;
-export const getSecureFramesDeeplinkExperiment = function getSecureFramesDeeplinkExperiment(location) {
+export function getSecureFramesDeeplinkExperiment(location) {
   const obj = { location: location.location };
   return closure_2.getCurrentConfig(obj, { autoTrackExposure: true });
-};
+}

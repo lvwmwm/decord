@@ -1,20 +1,20 @@
-// Module ID: 5174
-// Function ID: 5175
+// Module ID: 5175
+// Function ID: 5176
 // Name: SemanticColorContext
-// Dependencies: [1102, 683, 5175, 5179, 5180, 2]
+// Dependencies: [1102, 683, 5176, 5180, 5181, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 5174 (SemanticColorContext)
+// Module 5175 (SemanticColorContext)
 import _modDef683 from "module_683" /* 683 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import native from "native" /* 5175 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5179 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5180 */;
+import native from "native" /* 5176 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5180 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5181 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
-export const getSemanticColorContextFromThemeContext = function getSemanticColorContextFromThemeContext(primaryColor) {
+export function getSemanticColorContextFromThemeContext(primaryColor) {
   let contrast;
   let enabledExperiments;
   let obj5;
@@ -63,4 +63,4 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
     num2 = saturation;
   }
   return obj6;
-};
+}

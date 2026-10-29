@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16865
+// Function ID: 16866
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1086, 1101, 1089, 16628, 16629, 1090, 9507, 16630, 2]
+// Dependencies: [5, 32, 19, 1086, 1101, 1089, 16866, 16867, 1090, 9539, 16868, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 16627 (usePopularOrbShopProducts)
+// Module 16865 (usePopularOrbShopProducts)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -21,7 +21,7 @@ let closure_7 = 10 * DurationsDefault.Millis.SECOND;
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/usePopularOrbShopProducts.tsx");
 
 export const MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL = 3;
-export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enabled) {
+export function usePopularOrbShopProducts(enabled) {
   let closure_4;
   let closure_5;
   let tmp18;
@@ -73,7 +73,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c4;
@@ -146,7 +146,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
                 c4(true);
               }
               sort_type = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp30) {
             closure_3 = tmp30;
@@ -241,4 +241,4 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     enabled = !first2;
   }
   return obj3;
-};
+}

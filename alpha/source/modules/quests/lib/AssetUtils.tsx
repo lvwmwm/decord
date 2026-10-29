@@ -1,22 +1,22 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9650
+// Function ID: 9651
 // Name: AssetUtils
-// Dependencies: [6745, 1084, 9619, 9620, 9621, 9622, 9623, 7816, 9630, 9631, 6753, 1383, 1897, 2]
+// Dependencies: [6768, 1084, 9651, 9652, 9653, 9654, 9655, 7839, 9662, 9663, 6776, 1383, 1898, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9618 (AssetUtils)
+// Module 9650 (AssetUtils)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import react_nativeDefault from "react-native" /* 1897 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6753 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7816 */;
-import _modDef9619 from "module_9619" /* 9619 */;
-import _modDef9620 from "module_9620" /* 9620 */;
-import _modDef9621 from "module_9621" /* 9621 */;
-import _modDef9622 from "module_9622" /* 9622 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9623 */;
-import _modDef9630 from "module_9630" /* 9630 */;
-import _modDef9631 from "module_9631" /* 9631 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import react_nativeDefault from "react-native" /* 1898 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6776 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7839 */;
+import _modDef9651 from "module_9651" /* 9651 */;
+import _modDef9652 from "module_9652" /* 9652 */;
+import _modDef9653 from "module_9653" /* 9653 */;
+import _modDef9654 from "module_9654" /* 9654 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9655 */;
+import _modDef9662 from "module_9662" /* 9662 */;
+import _modDef9663 from "module_9663" /* 9663 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
 import Constants from "Constants" /* 1084 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -188,12 +188,12 @@ function getAssetUrlWithMediaProxyQueryParams(assetUrl, size) {
     return str1;
   }
 }
-function convertVideoToFirstFrameImageWithMediaProxy(assetUrl, size) {
-  if (assetUrl.startsWith("blob:")) {
-    return assetUrl;
+function convertVideoToFirstFrameImageWithMediaProxy(url, size) {
+  if (url.startsWith("blob:")) {
+    return url;
   } else {
     const obj = URLUtilsDefault;
-    const str = obj.toURLSafe(assetUrl);
+    const str = obj.toURLSafe(url);
     let str1 = null;
     if (null != str) {
       const searchParams = str.searchParams;
@@ -226,7 +226,7 @@ let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIP
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let obj5 = { variant: obj2.VIDEO, property: obj3.VIDEO };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: obj5, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef9619, [TIER_2]: _modDef9620, [TIER_3]: _modDef9621, [TIER_4]: _modDef9622 };
+const obj11 = { [TIER_1]: _modDef9651, [TIER_2]: _modDef9652, [TIER_3]: _modDef9653, [TIER_4]: _modDef9654 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
@@ -236,7 +236,7 @@ export const ANIMATED_MIMETYPES = items;
 export { QuestAssetType };
 export { resolveAsset };
 export const OrbsValueTier = obj4;
-export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAIL, DARK, flag, arg4) {
+export function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAIL, DARK, flag, arg4) {
   let asset;
   let assetVideo;
   let flag2;
@@ -289,10 +289,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
         obj5 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
       } else if (flag) {
-        obj5 = { url: _modDef9630, mimetype: "video/mp4", isAnimated: true };
-        const obj4 = { url: _modDef9630, mimetype: "video/mp4", isAnimated: true };
+        obj5 = { url: _modDef9662, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef9662, mimetype: "video/mp4", isAnimated: true };
       } else {
-        obj5 = { url: _modDef9631, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef9663, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {
@@ -454,8 +454,8 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
     tmp41 = null;
   }
   return tmp41;
-};
-export const buildUrl = function buildUrl(arg0, str, theme) {
+}
+export function buildUrl(arg0, str, theme) {
   if (str.startsWith("blob:")) {
     const parts = str.split("?", 1);
     let atResult = parts.at(0);
@@ -483,8 +483,8 @@ export const buildUrl = function buildUrl(arg0, str, theme) {
     }
     return combined;
   }
-};
-export const resolveOptionalAdCreativeCdnUrl = function resolveOptionalAdCreativeCdnUrl(image_preview) {
+}
+export function resolveOptionalAdCreativeCdnUrl(image_preview) {
   if (null != image_preview) {
     let combined = image_preview;
     if (!image_preview.startsWith("http://")) {
@@ -499,8 +499,8 @@ export const resolveOptionalAdCreativeCdnUrl = function resolveOptionalAdCreativ
     }
     return combined;
   }
-};
-export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_image) {
+}
+export function resolveAdCreativeCdnUrl(hero_image) {
   let combined = hero_image;
   if (!hero_image.startsWith("http://")) {
     combined = hero_image;
@@ -513,9 +513,9 @@ export const resolveAdCreativeCdnUrl = function resolveAdCreativeCdnUrl(hero_ima
     }
   }
   return combined;
-};
+}
 export { getMimetype };
-export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimensions(width, height) {
+export function getDevicePixelScaledDimensions(width, height) {
   let size1;
   const tmp = react_nativeDefault();
   if (tmp < 3) {
@@ -525,9 +525,9 @@ export const getDevicePixelScaledDimensions = function getDevicePixelScaledDimen
     size1 = { width: width * tmp, height: height * tmp };
   }
   return size1;
-};
+}
 export { getAssetUrlWithMediaProxyQueryParams };
-export const getScaledImageUrl = function getScaledImageUrl(size) {
+export function getScaledImageUrl(size) {
   let assetUrl;
   let height;
   let width;
@@ -535,9 +535,9 @@ export const getScaledImageUrl = function getScaledImageUrl(size) {
   const tmp = react_nativeDefault();
   size = { width: width * tmp, height: height * tmp, format: "webp" };
   return getAssetUrlWithMediaProxyQueryParams(assetUrl, size);
-};
+}
 export { convertVideoToFirstFrameImageWithMediaProxy };
-export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(size) {
+export function getScaledFirstFrameImageUrl(size) {
   let assetUrl;
   let height;
   let width;
@@ -545,4 +545,4 @@ export const getScaledFirstFrameImageUrl = function getScaledFirstFrameImageUrl(
   const tmp = react_nativeDefault();
   size = { width: width * tmp, height: height * tmp };
   return convertVideoToFirstFrameImageWithMediaProxy(assetUrl, size);
-};
+}

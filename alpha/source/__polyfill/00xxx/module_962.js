@@ -15,7 +15,7 @@ import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
 const require = globalThis.__r;
-let Drag, RN, _require, _self, c104, c79, closure_111, constructResult, dependencyMap, ensureReadyResult, eventContext, map, responseBodySize, scope, segmentId, segment_id, selection, set2, set3, warn;
+let Drag, RN, _require, _self, c104, c79, closure_111, constructResult, dependencyMap, ensureReadyResult, eventContext, map, responseBodySize, scope, segmentId, segment_id, selection, set2, set3, version, warn;
 
 let items;
 let tmp18;
@@ -120,7 +120,7 @@ function makeReplayDebugLogger() {
   }
   return obj;
 }
-const f87717 = (item) => {
+const f88724 = (item) => {
   mirror = mirror.mirror;
   return mirror.getId(item);
 };
@@ -3167,7 +3167,7 @@ function initInputObserver(sampling) {
       HermesBuiltin.arraySpread(items7, items1.map((item) => {
         let tmp;
         let tmp2;
-        const f87657 = () => {
+        const f88664 = () => {
           let ownPropertyDescriptor;
           const tmp3 = ownPropertyDescriptor || {};
           closure_0 = tmp;
@@ -3177,7 +3177,7 @@ function initInputObserver(sampling) {
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, tmp3);
-          return f87657;
+          return f88664;
         };
         [tmp, tmp2] = item;
         obj = {
@@ -3238,7 +3238,7 @@ function initInputObserver(sampling) {
           }
         };
         _Object2.defineProperty(tmp, tmp2, obj2);
-        return f87657;
+        return f88664;
       }), 0);
       const tmp8 = mapped;
       HermesBuiltin.apply(push, items7, mapped);
@@ -3427,7 +3427,7 @@ function initObservers(doc) {
     ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
     closure_2 = undefined;
     closure_3 = undefined;
-    let f87655;
+    let f88662;
     items = undefined;
     if (false === sampling.mousemove) {
       return () => {
@@ -3468,7 +3468,7 @@ function initObservers(doc) {
         closure_2 = {};
         let c3 = null;
         let c4 = 0;
-        f87655 = function() {
+        f88662 = function() {
           function clearTimeout$2() {
             items = [...arguments];
             const tmp = closure_1_71("clearTimeout");
@@ -6173,11 +6173,11 @@ function getLargestContentfulPaint(arg0) {
   obj = _mod693;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "largest-contentful-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "format" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "formatToPlainString" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f87717);
+    mapped = tmp3.map(f88724);
   }
   return obj2;
 }
@@ -6235,11 +6235,11 @@ function getInteractionToNextPaint(arg0) {
   obj = _mod693;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "interaction-to-next-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "format" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "formatToPlainString" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f87717);
+    mapped = tmp3.map(f88724);
   }
   return obj2;
 }
@@ -6255,7 +6255,7 @@ function getWebVital(value, name, items1, items) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (items1) {
-    mapped = items1.map(f87717);
+    mapped = items1.map(f88724);
   }
   return obj2;
 }
@@ -6515,7 +6515,7 @@ let obj = function _addEvent3() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let tmp36;
@@ -6560,7 +6560,7 @@ let obj = function _addEvent3() {
               } else {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
             c8 = 3;
@@ -6626,7 +6626,7 @@ let obj = function _addEvent3() {
           return obj;
         } else {
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp36) {
         if (0 === c6) {
@@ -6852,7 +6852,7 @@ obj = function _captureFetchBreadcrumbToReplay() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -6898,7 +6898,7 @@ obj = function _captureFetchBreadcrumbToReplay() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp24) {
           closure_5 = tmp24;
@@ -7201,7 +7201,7 @@ obj = function _getResponseInfo2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -7233,7 +7233,7 @@ obj = function _getResponseInfo2() {
               closure_10 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -7349,7 +7349,7 @@ obj = function _parseFetchResponseBody2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -7753,7 +7753,7 @@ obj = function _captureXhrBreadcrumbToReplay() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -7790,7 +7790,7 @@ obj = function _captureXhrBreadcrumbToReplay() {
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp19) {
             closure_5 = tmp19;
             if (0 === c6) {
@@ -7971,7 +7971,7 @@ obj = function _addMemoryEntry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -8124,14 +8124,13 @@ obj = function _prepareReplayEvent() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
         let event_id;
         let sdk;
         let name;
-        let version;
         let settings;
         c4 = 2;
         if (0 === c3) {
@@ -8157,7 +8156,7 @@ obj = function _prepareReplayEvent() {
             settings = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -8310,7 +8309,7 @@ obj = function _sendReplayRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -8359,7 +8358,7 @@ obj = function _sendReplayRequest() {
               closure_20 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -8522,7 +8521,7 @@ obj = function _sendReplay() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -8553,7 +8552,7 @@ obj = function _sendReplay() {
             error = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -8574,7 +8573,7 @@ obj = function _sendReplay() {
               return obj7;
             } else {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else {
@@ -8620,7 +8619,7 @@ obj = function _sendReplay() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } else {
                         let c3;
@@ -8659,7 +8658,7 @@ obj = function _sendReplay() {
                               c3 = 0;
                             }
                             c4 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           }
                         } catch (tmp16) {
                           closure_2 = tmp16;
@@ -9359,7 +9358,7 @@ let closure_82 = (() => {
                     } while (-2 === id1);
                     if (-1 !== id) {
                       if (-1 !== id1) {
-                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F163442 */ }, onIframeLoad() { /* body not rendered: F163443 */ }, onStylesheetLoad() { /* body not rendered: F163444 */ }, onBlockedImageLoad() { /* body not rendered: F163445 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
+                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F165119 */ }, onIframeLoad() { /* body not rendered: F165120 */ }, onStylesheetLoad() { /* body not rendered: F165121 */ }, onBlockedImageLoad() { /* body not rendered: F165122 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
                         ({ doc: obj2.doc, mirror: obj2.mirror, blockClass: obj2.blockClass, blockSelector: obj2.blockSelector, maskAllText: obj2.maskAllText, unblockSelector: obj2.unblockSelector, maskTextClass: obj2.maskTextClass, unmaskTextClass: obj2.unmaskTextClass, maskTextSelector: obj2.maskTextSelector, unmaskTextSelector: obj2.unmaskTextSelector, inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = self);
                         const tmp25 = closure_3_58(value, obj3);
                         if (tmp25) {
@@ -9719,7 +9718,7 @@ let closure_82 = (() => {
                 let addedSet2;
                 let id1;
                 let tmp28;
-                const f87661 = () => { /* body not rendered: F87661 */ };
+                const f88668 = function() { /* body not rendered: F88668 */ };
                 const mirror = self.mirror;
                 const id = mirror.getId(childNodes);
                 target = target.target;
@@ -9755,7 +9754,7 @@ let closure_82 = (() => {
                     addedSet2.delete(childNodes);
                     childNodes = childNodes.childNodes;
                     if (childNodes != null) {
-                      let item = childNodes.forEach(f87661);
+                      let item = childNodes.forEach(f88668);
                     }
                     const droppedSet = tmp.droppedSet;
                     droppedSet.add(childNodes);
@@ -9839,7 +9838,7 @@ let closure_82 = (() => {
                             movedSet2.delete(childNodes);
                             const childNodes1 = childNodes.childNodes;
                             if (childNodes1 != null) {
-                              const item1 = childNodes1.forEach(f87661);
+                              const item1 = childNodes1.forEach(f88668);
                             }
                           }
                         } else {
@@ -10997,14 +10996,14 @@ try {
           });
         }
         const arr = closure_111.push(fn);
-        const f87711 = () => {
+        const f88718 = () => {
 
         };
         this._teardown = () => {
-          if (typeof f87711 === "function") {
+          if (typeof f88718 === "function") {
             let num2 = -1;
             if (closure_1_111) {
-              num2 = arr.indexOf(f87711);
+              num2 = arr.indexOf(f88718);
             }
             if (num2 > -1) {
               closure_1_111.splice(num2, 1);
@@ -11313,7 +11312,7 @@ try {
         obj = _mod693;
         const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + startTime) / 1000;
         obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
-        return { type: entryType, name, start: result, end: result + duration, data: "format" };
+        return { type: entryType, name, start: result, end: result + duration, data: "formatToPlainString" };
       },
     navigation: function createNavigationEntry(arg0) {
         let domComplete;
@@ -11418,7 +11417,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -11443,7 +11442,7 @@ try {
                 const events = tmp11.events;
                 events.push(tmp12);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           } catch (tmp7) {
@@ -11880,7 +11879,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           while (true) {
@@ -11946,7 +11945,7 @@ try {
                 c6 = 0;
               }
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         }
@@ -12063,14 +12062,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f142924 = (timestamp, arg1) => {
+        const f144472 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f142924.eventBuffer) {
+          if (f144472.eventBuffer) {
             flag = false;
-            if (!f142924.isPaused()) {
+            if (!f144472.isPaused()) {
               flag = false;
-              if (f142924.isEnabled()) {
+              if (f144472.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {
@@ -12507,7 +12506,6 @@ try {
       }
     };
     let closure_4 = _asyncToGenerator(async function() {
-      let closure_6;
       let log;
       const self = this;
       closure_1 = arg0;
@@ -12515,70 +12513,113 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        let reason;
-        if (1 === c7) {
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
             return { value, done: true };
-          } else if (closure_4._isEnabled) {
-            closure_4._isEnabled = false;
-            closure_4.recordingMode = "buffer";
-            c5 = 1;
-            const tmp13 = closure_1_130;
-            if (tmp13) {
-              eventBuffer = log.log;
-              let str = "";
-              if (reason) {
-                const _HermesInternal = HermesInternal;
-                str = " triggered by " + reason;
+          } else {
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } else {
+          try {
+            let flag;
+            let reason;
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = tmp;
+                flag = undefined;
+                reason = undefined;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag = obj4.forceFlush ?? false;
+                reason = obj4.reason;
+                c7 = 1;
+                c8 = 1;
+                return { value: "Reflect", done: null };
               }
-              eventBuffer("Stopping Replay" + str);
-            }
-            closure_1_149();
-            closure_4._removeListeners();
-            closure_4.stopRecording();
-            const _debouncedFlush = closure_4._debouncedFlush;
-            eventBuffer = _debouncedFlush.cancel();
-            const tmp27 = flag;
-            if (tmp27) {
-              eventBuffer = closure_4._flush({ force: true });
-              c7 = 3;
-              c8 = 1;
-              return { value: eventBuffer, done: false };
             } else {
-              eventBuffer = closure_4.eventBuffer;
-              if (eventBuffer != null) {
-                eventBuffer.destroy();
+              if (1 === c7) {
+                if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  return { value, done: true };
+                } else if (closure_4._isEnabled) {
+                  closure_4._isEnabled = false;
+                  closure_4.recordingMode = "buffer";
+                  c5 = 1;
+                  const tmp13 = closure_1_130;
+                  if (tmp13) {
+                    eventBuffer = log.log;
+                    let str = "";
+                    if (reason) {
+                      const _HermesInternal = HermesInternal;
+                      str = " triggered by " + reason;
+                    }
+                    eventBuffer("Stopping Replay" + str);
+                  }
+                  closure_1_149();
+                  closure_4._removeListeners();
+                  closure_4.stopRecording();
+                  const _debouncedFlush = closure_4._debouncedFlush;
+                  eventBuffer = _debouncedFlush.cancel();
+                  const tmp27 = flag;
+                  if (tmp27) {
+                    eventBuffer = closure_4._flush({ force: true });
+                    c7 = 3;
+                    c8 = 1;
+                    return { value: eventBuffer, done: false };
+                  } else {
+                    eventBuffer = closure_4.eventBuffer;
+                    if (eventBuffer != null) {
+                      eventBuffer.destroy();
+                    }
+                    eventBuffer = closure_4;
+                    closure_4.eventBuffer = null;
+                    closure_1_140(closure_4);
+                    c5 = 0;
+                  }
+                }
+              } else if (2 === c7) {
+                c5 = 0;
+                closure_2 = closure_6;
+                closure_4.handleException(closure_2);
+              } else if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                c8 = 3;
+                return { value, done: true };
               }
-              eventBuffer = closure_4;
-              closure_4.eventBuffer = null;
-              closure_1_140(closure_4);
-              c5 = 0;
+              c8 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp35) {
+            closure_6 = tmp35;
+            if (0 === c5) {
+              c8 = 3;
+              throw tmp35;
+            } else {
+              c7 = 2;
             }
           }
-        } else if (2 === c7) {
-          c5 = 0;
-          closure_2 = closure_6;
-          closure_4.handleException(closure_2);
-        } else if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          c8 = 3;
-          return { value, done: true };
         }
-        await "IconComponent";
-        closure_4 = self;
-        obj4 = closure_1;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        reason = obj4.reason;
-        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -12625,37 +12666,95 @@ try {
       closure_1 = arg0;
       let c5 = 0;
       let c6 = 0;
-      const iter = (async () => {
-        if ("session" === closure_4.recordingMode) {
-          return closure_4.flushImmediate();
-        }
-        const _Date = Date;
-        closure_1 = Date.now();
-        const tmp21 = closure_1_130;
-        if (tmp21) {
-          logger.log("Converting buffer to session");
-        }
-        await closure_4.flushImmediate();
-        closure_2 = closure_4.stopRecording();
-        const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
-        if (tmp6) {
-          closure_4.recordingMode = "session";
-          if (closure_4.session) {
-            closure_4.session.dirty = false;
-            closure_4._updateUserActivity(closure_1);
-            const result = closure_4._updateSessionActivity(closure_1);
-            closure_4._maybeSaveSession();
+      const iter = (async (arg0, value) => {
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "IconComponent", done: "IconComponent" };
           }
-          closure_4.startRecording();
+        } else {
+          try {
+            let flag2;
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = self;
+                closure_2 = tmp;
+                flag2 = undefined;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag2 = obj4.continueRecording ?? true;
+                closure_1 = undefined;
+                closure_2 = undefined;
+                c5 = 1;
+                c6 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else if (1 === tmp4) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else if ("session" === closure_4.recordingMode) {
+                c6 = 3;
+                obj6 = { value: closure_4.flushImmediate(), done: true };
+                return obj6;
+              } else {
+                const _Date = Date;
+                closure_1 = Date.now();
+                const tmp21 = closure_1_130;
+                if (tmp21) {
+                  logger.log("Converting buffer to session");
+                }
+                c5 = 2;
+                c6 = 1;
+                obj7 = { value: closure_4.flushImmediate(), done: false };
+                return obj7;
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = closure_4.stopRecording();
+              const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
+              if (tmp6) {
+                closure_4.recordingMode = "session";
+                if (closure_4.session) {
+                  closure_4.session.dirty = false;
+                  closure_4._updateUserActivity(closure_1);
+                  const result = closure_4._updateSessionActivity(closure_1);
+                  closure_4._maybeSaveSession();
+                }
+                closure_4.startRecording();
+              }
+              c6 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp28) {
+            c6 = 3;
+            throw tmp28;
+          }
         }
-        await "IconComponent";
-        closure_4 = self;
-        closure_3 = self;
-        closure_2 = tmp;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -12978,7 +13077,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -13012,7 +13111,7 @@ try {
               closure_3.initializeSampling(id.id);
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp10) {
             c5 = 3;
             throw tmp10;
@@ -13557,7 +13656,7 @@ try {
                                       const obj2 = { value, done: true };
                                       return obj2;
                                     } else {
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "IconComponent" };
                                     }
                                   } else {
                                     let c3;
@@ -13597,7 +13696,7 @@ try {
                                           c3 = 0;
                                         }
                                         c5 = 3;
-                                        return { value: "IconComponent", done: null };
+                                        return { value: "IconComponent", done: "IconComponent" };
                                       }
                                     } catch (tmp13) {
                                       closure_2 = tmp13;
@@ -13648,7 +13747,7 @@ try {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -13692,7 +13791,7 @@ try {
                             }
                           }
                           c4 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } else if (arg0 === 1) {
                         c4 = 3;
@@ -13723,7 +13822,7 @@ try {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -13751,7 +13850,7 @@ try {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } catch (tmp5) {
                     c0 = 3;
@@ -13765,7 +13864,7 @@ try {
           }
         }
         function setupPerformanceObserver(self) {
-          const f87716 = (metric) => {
+          const f88723 = (metric) => {
             const prop = closure_1.replayPerformanceEntries;
             prop.push(closure_0(metric.metric));
           };
@@ -13792,14 +13891,14 @@ try {
           let push = items.push;
           obj = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_125;
-          const result = obj.addLcpInstrumentationHandler(f87716);
+          const result = obj.addLcpInstrumentationHandler(f88723);
           const obj2 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_127;
-          const result1 = obj2.addClsInstrumentationHandler(f87716);
+          const result1 = obj2.addClsInstrumentationHandler(f88723);
           const obj3 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_128;
           closure_1 = self;
-          push(result, result1, obj3.addInpInstrumentationHandler(f87716));
+          push(result, result1, obj3.addInpInstrumentationHandler(f88723));
           return () => {
             const item = items.forEach((fn) => fn());
           };
@@ -14032,7 +14131,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c4;
@@ -14187,7 +14286,7 @@ try {
               c4 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp42) {
             recordingData = tmp42;
             if (0 === c4) {
@@ -14208,7 +14307,6 @@ try {
       }
     };
     _require = _asyncToGenerator(async function() {
-      let closure_6;
       let logger;
       const self = this;
       closure_1 = arg0;
@@ -14216,112 +14314,163 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        let _flushLock;
-        if (1 === c7) {
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
-            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c8 = 3;
-            return { value, done: true };
-          } else if (closure_4._isEnabled) {
-            if (closure_4.checkAndHandleExpiredSession()) {
-              if (closure_4.session) {
-                const started = closure_4.session.started;
-                const _Date = Date;
-                closure_2 = Date.now() - started;
-                const _debouncedFlush = closure_4._debouncedFlush;
-                _debouncedFlush.cancel();
-                closure_3 = closure_2 < closure_4._options.minReplayDuration;
-                closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
-                const tmp42 = closure_3;
-                if (!tmp42) {
-                  const tmp44 = closure_4;
-                  if (!tmp44) {
-                    const eventBuffer = closure_4.eventBuffer;
-                    const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
-                    if (tmp46) {
-                      logger.log("Flushing initial segment without checkout.");
-                    }
-                    _flushLock = closure_4._flushLock;
-                    if (!_flushLock) {
-                      closure_4._flushLock = closure_4._runFlush();
-                    }
-                    c5 = 2;
-                    c7 = 4;
-                    c8 = 1;
-                    return { value: closure_4._flushLock, done: false };
-                  }
-                }
-                const tmp59 = closure_1_130;
-                if (tmp59) {
-                  const _Math = Math;
-                  const log = logger.log;
-                  const rounded = Math.floor(closure_2 / 1000);
-                  let str = "long";
-                  if (closure_3) {
-                    str = "short";
-                  }
-                  const _HermesInternal = HermesInternal;
-                  log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
-                }
-                const tmp69 = closure_3;
-                if (tmp69) {
-                  closure_4._debouncedFlush();
-                }
-                c8 = 3;
-                return { value: undefined, done: true };
-              }
-            } else {
-              const tmp32 = closure_1_130;
-              if (tmp32) {
-                logger.error("Attempting to finish replay event after session expired.");
-              }
-            }
-          }
-        } else if (2 === c7) {
-          c5 = 0;
-          closure_4._flushLock = undefined;
-          const tmp23 = closure_6;
-          if (_flushLock) {
-            closure_4._debouncedFlush();
-          }
-          throw tmp23;
-        } else {
-          if (3 === c7) {
-            c5 = 1;
-            let closure_7 = closure_6;
-            closure_4.handleException(closure_7);
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            closure_4._flushLock = undefined;
-            const tmp7 = _flushLock;
-            if (tmp7) {
-              closure_4._debouncedFlush();
-            }
-            c8 = 3;
             return { value, done: true };
           } else {
-            c5 = 1;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-          c5 = 0;
-          closure_4._flushLock = undefined;
-          const tmp18 = _flushLock;
-          if (tmp18) {
-            closure_4._debouncedFlush();
+        } else {
+          try {
+            let started;
+            let eventBuffer;
+            let _flushLock;
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_4 = self;
+                closure_3 = tmp;
+                closure_2 = self;
+                let flag;
+                obj4 = closure_1;
+                if (closure_1 === undefined) {
+                  obj4 = {};
+                }
+                flag = obj4.force ?? false;
+                started = undefined;
+                closure_2 = undefined;
+                closure_3 = undefined;
+                closure_4 = undefined;
+                eventBuffer = undefined;
+                _flushLock = undefined;
+                c7 = 1;
+                c8 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else {
+              if (1 === c7) {
+                if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c8 = 3;
+                  return { value, done: true };
+                } else if (closure_4._isEnabled) {
+                  if (closure_4.checkAndHandleExpiredSession()) {
+                    if (closure_4.session) {
+                      started = closure_4.session.started;
+                      const _Date = Date;
+                      closure_2 = Date.now() - started;
+                      const _debouncedFlush = closure_4._debouncedFlush;
+                      _debouncedFlush.cancel();
+                      closure_3 = closure_2 < closure_4._options.minReplayDuration;
+                      closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
+                      const tmp42 = closure_3;
+                      if (!tmp42) {
+                        const tmp44 = closure_4;
+                        if (!tmp44) {
+                          eventBuffer = closure_4.eventBuffer;
+                          const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
+                          if (tmp46) {
+                            logger.log("Flushing initial segment without checkout.");
+                          }
+                          _flushLock = closure_4._flushLock;
+                          if (!_flushLock) {
+                            closure_4._flushLock = closure_4._runFlush();
+                          }
+                          c5 = 2;
+                          c7 = 4;
+                          c8 = 1;
+                          return { value: closure_4._flushLock, done: false };
+                        }
+                      }
+                      const tmp59 = closure_1_130;
+                      if (tmp59) {
+                        const _Math = Math;
+                        const log = logger.log;
+                        const rounded = Math.floor(closure_2 / 1000);
+                        let str = "long";
+                        if (closure_3) {
+                          str = "short";
+                        }
+                        const _HermesInternal = HermesInternal;
+                        log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
+                      }
+                      const tmp69 = closure_3;
+                      if (tmp69) {
+                        closure_4._debouncedFlush();
+                      }
+                      c8 = 3;
+                      return { value: undefined, done: true };
+                    }
+                  } else {
+                    const tmp32 = closure_1_130;
+                    if (tmp32) {
+                      logger.error("Attempting to finish replay event after session expired.");
+                    }
+                  }
+                }
+              } else if (2 === c7) {
+                c5 = 0;
+                closure_4._flushLock = undefined;
+                const tmp23 = closure_6;
+                if (_flushLock) {
+                  closure_4._debouncedFlush();
+                }
+                throw tmp23;
+              } else {
+                if (3 === c7) {
+                  c5 = 1;
+                  let closure_7 = closure_6;
+                  closure_4.handleException(closure_7);
+                } else if (arg0 === 1) {
+                  c8 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 0;
+                  closure_4._flushLock = undefined;
+                  const tmp7 = _flushLock;
+                  if (tmp7) {
+                    closure_4._debouncedFlush();
+                  }
+                  c8 = 3;
+                  return { value, done: true };
+                } else {
+                  c5 = 1;
+                }
+                c5 = 0;
+                closure_4._flushLock = undefined;
+                const tmp18 = _flushLock;
+                if (tmp18) {
+                  closure_4._debouncedFlush();
+                }
+              }
+              c8 = 3;
+              return { value: "IconComponent", done: "IconComponent" };
+            }
+          } catch (tmp73) {
+            closure_6 = tmp73;
+            if (0 === c5) {
+              c8 = 3;
+              throw tmp73;
+            } else if (1 === tmp75) {
+              c7 = 2;
+            } else {
+              c7 = 3;
+            }
           }
         }
-        await "IconComponent";
-        closure_4 = self;
-        closure_3 = tmp;
-        closure_2 = self;
-        if (closure_1 === undefined) {
-          obj4 = {};
-        }
-        return "Reflect";
       })();
       iter.next();
       return iter;
@@ -14422,7 +14571,7 @@ try {
         let maskFn;
         let onError;
         let workerUrl;
-        const f87746 = (item) => item.toLowerCase();
+        const f88753 = (item) => item.toLowerCase();
         obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -14590,8 +14739,8 @@ try {
         const merged = Object.assign(obj2);
         this._recordingOptions = obj3;
         obj4 = { flushMinDelay: num, flushMaxDelay: num2, minReplayDuration: Math.min(num3, 50000), maxReplayDuration: Math.min(num4, c15), stickySession: flag, useCompression: flag2, workerUrl, blockAllMedia: flag5, maskAllInputs: flag4, maskAllText: flag3, mutationBreadcrumbLimit: num5, mutationLimit: num6, slowClickTimeout: num7, slowClickIgnoreSelectors: prop, networkDetailAllowUrls: prop1, networkDetailDenyUrls: prop2, networkCaptureBodies: flag6, networkRequestHeaders: items5, networkResponseHeaders: items6, beforeAddRecordingEvent, beforeErrorSampling, onError, attachRawBodyFromRequest, _experiments };
-        items5 = [...closure_180, ...prop3.map(f87746)];
-        items6 = [...closure_180, ...prop4.map(f87746)];
+        items5 = [...closure_180, ...prop3.map(f88753)];
+        items6 = [...closure_180, ...prop4.map(f88753)];
         this._initialOptions = obj4;
         if (this._initialOptions.blockAllMedia) {
           let combined;

@@ -1,12 +1,12 @@
-// Module ID: 5079
-// Function ID: 5080
+// Module ID: 5080
+// Function ID: 5081
 // Name: BaseRive
-// Dependencies: [5, 19, 17, 21, 5080, 5018, 5129, 5130, 5131, 558, 576, 5132, 2]
+// Dependencies: [5, 19, 17, 21, 5081, 5019, 5130, 5131, 5132, 558, 576, 5133, 2]
 // Exports: useArtboardBinding
 
-// Module 5079 (BaseRive)
+// Module 5080 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 5080 */;
+import DataBindByName from "DataBindByName" /* 5081 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,10 +25,10 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const react3 = tmp(5018);
-const ManaContext = tmp(5129);
-const useRivePlayback2 = tmp(5130);
-const RiveTypes = tmp(5131);
+const react3 = tmp(5019);
+const ManaContext = tmp(5130);
+const useRivePlayback2 = tmp(5131);
+const RiveTypes = tmp(5132);
 function disposeRiveImageLater(arg0) {
   let closure_0 = arg0;
   const timerId = setTimeout(() => current.dispose(), c11);
@@ -707,7 +707,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
               const obj = { value, done: true };
               return obj;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -755,7 +755,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
                   }
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp30) {
               c3 = 3;
@@ -817,7 +817,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
               const obj = { value, done: true };
               return obj;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -865,7 +865,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useImageB
                   }
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp30) {
               c3 = 3;
@@ -1098,7 +1098,7 @@ export const useColorBinding = tmp7;
 export const useEnumBinding = tmp8;
 export const useTriggerBinding = tmp9;
 export const useImageBinding = tmp10;
-export const useArtboardBinding = function useArtboardBinding(Icon, instance, file, Icon2, playIfNeeded) {
+export function useArtboardBinding(Icon, instance, file, Icon2, playIfNeeded) {
   let closure_0 = Icon;
   let closure_1 = instance;
   let closure_2 = file;
@@ -1125,4 +1125,4 @@ export const useArtboardBinding = function useArtboardBinding(Icon, instance, fi
       }
     }
   }, items);
-};
+}

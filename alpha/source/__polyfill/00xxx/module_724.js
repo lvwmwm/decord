@@ -11,36 +11,36 @@ import Scope from "Scope" /* 719 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getClient = function getClient() {
+export function getClient() {
   const obj = _mod701;
   const mainCarrier = obj.getMainCarrier();
   const obj2 = _mod717;
   const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
   const currentScope = asyncContextStrategy.getCurrentScope();
   return currentScope.getClient();
-};
-export const getCurrentScope = function getCurrentScope() {
+}
+export function getCurrentScope() {
   const obj = _mod701;
   const mainCarrier = obj.getMainCarrier();
   const obj2 = _mod717;
   const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
   return asyncContextStrategy.getCurrentScope();
-};
-export const getGlobalScope = function getGlobalScope() {
+}
+export function getGlobalScope() {
   const obj = _mod701;
   return obj.getGlobalSingleton("globalScope", () => {
     const scope = new Scope.Scope();
     return scope;
   });
-};
-export const getIsolationScope = function getIsolationScope() {
+}
+export function getIsolationScope() {
   const obj = _mod701;
   const mainCarrier = obj.getMainCarrier();
   const obj2 = _mod717;
   const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
   return asyncContextStrategy.getIsolationScope();
-};
-export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
+}
+export function getTraceContextFromScope(getPropagationContext) {
   let propagationSpanId;
   const propagationContext = getPropagationContext.getPropagationContext();
   const parentSpanId = propagationContext.parentSpanId;
@@ -54,8 +54,8 @@ export const getTraceContextFromScope = function getTraceContextFromScope(getPro
     obj.parent_span_id = parentSpanId;
   }
   return obj;
-};
-export const withIsolationScope = function withIsolationScope() {
+}
+export function withIsolationScope() {
   let tmp2;
   let tmp3;
   const items = [...arguments];
@@ -75,8 +75,8 @@ export const withIsolationScope = function withIsolationScope() {
   } else {
     return asyncContextStrategy.withIsolationScope(items[0]);
   }
-};
-export const withScope = function withScope() {
+}
+export function withScope() {
   let tmp2;
   let tmp3;
   const items = [...arguments];
@@ -96,4 +96,4 @@ export const withScope = function withScope() {
   } else {
     return asyncContextStrategy.withScope(items[0]);
   }
-};
+}

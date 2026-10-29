@@ -1,26 +1,26 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8354
+// Function ID: 8355
 // Name: hasPendingMemberAction
-// Dependencies: [4856, 4916, 4878, 7362, 8333, 1084, 4922, 7364, 1402, 2]
+// Dependencies: [4857, 4917, 4879, 7385, 8355, 1084, 4923, 7387, 1402, 2]
 // Exports: hasPendingMemberAction
 
-// Module 8332 (hasPendingMemberAction)
+// Module 8354 (hasPendingMemberAction)
 import Constants from "Constants" /* 1084 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7364 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7362 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8333 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7387 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7385 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8355 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
 
-export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, selectedChannelId) {
+export function hasPendingMemberAction(guild_id, selectedChannelId) {
   const guild = GuildStore.getGuild(guild_id);
   const channel = ChannelStore.getChannel(selectedChannelId);
   let hasItem = null != guild && null != channel && guildHasOnboardingHomeDefault(guild);
@@ -48,4 +48,4 @@ export const hasPendingMemberAction = function hasPendingMemberAction(guild_id, 
     hasItem = !GuildOnboardingMemberActionStore.hasCompletedActionForChannel(guild.id, channel.id);
   }
   return hasItem;
-};
+}

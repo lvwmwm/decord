@@ -1,15 +1,15 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11314
+// Function ID: 11315
 // Name: ApexActionCreators
-// Dependencies: [109, 5, 1258, 1084, 1294, 584, 8524, 1455, 504, 2]
+// Dependencies: [109, 5, 1258, 1084, 1294, 584, 8546, 1456, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11260 (ApexActionCreators)
+// Module 11314 (ApexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1455 */;
-import experiment from "experiment" /* 8524 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1456 */;
+import experiment from "experiment" /* 8546 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
@@ -29,7 +29,7 @@ let obj = function _fetchApexExperimentsMetadata() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -84,7 +84,7 @@ let obj = function _fetchApexExperimentsMetadata() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp16) {
         closure_3 = tmp16;
@@ -116,7 +116,7 @@ obj = function _fetchUserExperimentAssignments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _fetchUserExperimentAssignments() {
             obj3.dispatch(obj13);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp34) {
           closure_3 = tmp34;
           if (0 === c4) {
@@ -206,7 +206,7 @@ obj = function _fetchInstallationExperiments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -293,7 +293,7 @@ obj = function _fetchInstallationExperiments() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp47) {
         experiments = tmp47;
         if (0 === c4) {
@@ -311,12 +311,12 @@ let closure_3 = ["installation"];
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexActionCreators.tsx");
 
-export const fetchApexExperimentsMetadata = function fetchApexExperimentsMetadata() {
+export function fetchApexExperimentsMetadata() {
   return obj(...arguments);
-};
-export const fetchUserExperimentAssignments = function fetchUserExperimentAssignments() {
+}
+export function fetchUserExperimentAssignments() {
   return obj(...arguments);
-};
-export const fetchInstallationExperiments = function fetchInstallationExperiments() {
+}
+export function fetchInstallationExperiments() {
   return obj(...arguments);
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 19281
-// Function ID: 19282
+// Module ID: 19514
+// Function ID: 19515
 // Name: NotificationSettingsModalStore
-// Dependencies: [4860, 7243, 4934, 5230, 4878, 6739, 1084, 504, 7244, 584, 2]
+// Dependencies: [4861, 7267, 4935, 5231, 4879, 6762, 1084, 504, 7268, 584, 2]
 
-// Module 19281 (NotificationSettingsModalStore)
+// Module 19514 (NotificationSettingsModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7244 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7243 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7268 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7267 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

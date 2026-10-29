@@ -1,41 +1,13 @@
 // Module ID: 5553
 // Function ID: 5554
-// Dependencies: [5535, 19, 5554]
-// Exports: useLayoutState
+// Dependencies: [5551]
+// Exports: getInvertedTransformStyle
 
 // Module 5553
-import react2 from "react" /* 5554 */;
-import _slicedToArray from "_slicedToArray" /* 5535 */;
-import react from "react" /* 19 */;
+import PlatformConfig2 from "PlatformConfig" /* 5551 */;
 
-let c3;
-let closure_4;
-({ useState: c3, useCallback: closure_4 } = react);
 
-export const useLayoutState = function useLayoutState(arg0) {
-  let closure_0;
-  let first;
-  [first, closure_0] = _false(arg0);
-  let obj = react2;
-  const recyclerViewContext = obj.useRecyclerViewContext();
-  const items = [first, ];
-  const items1 = [recyclerViewContext];
-  items[1] = React3((arg0, arg1) => {
-    closure_0 = arg0;
-    const tmp = closure_0((arg0) => {
-      let tmpResult = closure_0;
-      if (typeof closure_0 === "function") {
-        tmpResult = tmp(arg0);
-      }
-      return tmpResult;
-    });
-    const tmp2 = arg1;
-    if (!tmp2) {
-      const obj = recyclerViewContext;
-      if (recyclerViewContext != null) {
-        obj.layout();
-      }
-    }
-  }, items1);
-  return items;
-};
+export function getInvertedTransformStyle(horizontal) {
+  const PlatformConfig = PlatformConfig2.PlatformConfig;
+  return horizontal ? PlatformConfig.invertedTransformStyleHorizontal : PlatformConfig.invertedTransformStyle;
+}

@@ -1,17 +1,17 @@
-// Module ID: 8718
-// Function ID: 8719
+// Module ID: 8721
+// Function ID: 8722
 // Name: BadgeDirectoryStore
-// Dependencies: [1389, 1101, 1456, 8719, 569, 8723, 504, 584, 2]
+// Dependencies: [1389, 1101, 1457, 8722, 569, 8726, 504, 584, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8718 (BadgeDirectoryStore)
+// Module 8721 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8719 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8723 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8722 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8726 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f102195 = (badge_id) => {
+    const f103203 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f102195));
+    peekResult.badges = new Map(badges.map(f103203));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f102195));
+    new Map(badges.map(f103203));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },
@@ -354,7 +354,7 @@ const badgeDirectoryStore = new BadgeDirectoryStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/badges/BadgeDirectoryStore.tsx");
 
 export default badgeDirectoryStore;
-export const getSingleRequirementThreshold = function getSingleRequirementThreshold(arg0) {
+export function getSingleRequirementThreshold(arg0) {
   let num;
   if (arg0 != null) {
     const first = arg0.requirements[0];
@@ -366,8 +366,8 @@ export const getSingleRequirementThreshold = function getSingleRequirementThresh
     num = 0;
   }
   return num;
-};
-export const getObtainedAtFromBadge = function getObtainedAtFromBadge(current_tier) {
+}
+export function getObtainedAtFromBadge(current_tier) {
   if (null != current_tier) {
     let obtained_at;
     if (null != current_tier.current_tier) {
@@ -383,4 +383,4 @@ export const getObtainedAtFromBadge = function getObtainedAtFromBadge(current_ti
     }
     return obtained_at;
   }
-};
+}

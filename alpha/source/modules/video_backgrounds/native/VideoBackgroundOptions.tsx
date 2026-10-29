@@ -1,16 +1,16 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 11732
+// Function ID: 11733
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 5899, 21, 5004, 587, 558, 576, 5905, 1125, 6947, 9804, 11679, 5705, 2]
+// Dependencies: [19, 5901, 21, 5005, 587, 558, 576, 5907, 1125, 6971, 9836, 11733, 5707, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue
 
-// Module 11678 (VideoBackgroundOptions)
+// Module 11732 (VideoBackgroundOptions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5899 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5905 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5901 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5907 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj2 = { value: none, label: intl.string(require("intl").t.fUdMeO), icon: null };
     intl = tmp2(1125).intl;
     ({ IconComponent: require("DenyIcon").DenyIcon });
-    const TableRowIcon = tmp2(6947).TableRowIcon;
+    const TableRowIcon = tmp2(6971).TableRowIcon;
     cResult[1] = obj2;
     tmp8 = obj2;
   } else {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBa
     const obj4 = { value: BLUR_BACKGROUND_OPTION, label: intl2.string(require("intl").t.LhSyL8), icon: null };
     intl2 = tmp2(1125).intl;
     ({ IconComponent: require("BlurBackgroundIcon").BlurBackgroundIcon });
-    const TableRowIcon2 = tmp2(6947).TableRowIcon;
+    const TableRowIcon2 = tmp2(6971).TableRowIcon;
     cResult[2] = obj4;
     tmp11 = obj4;
   } else {
@@ -99,7 +99,7 @@ size = size_mod;
 const result = size.fileFinishedImporting("modules/video_backgrounds/native/VideoBackgroundOptions.tsx");
 
 export const NONE_VALUE = "none";
-export const toVideoBackgroundRadioValue = function toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption) {
+export function toVideoBackgroundRadioValue(lastUsedVideoBackgroundOption) {
   let tmp2;
   if (null == lastUsedVideoBackgroundOption) {
     tmp2 = none;
@@ -113,7 +113,7 @@ export const toVideoBackgroundRadioValue = function toVideoBackgroundRadioValue(
     }
   }
   return tmp2;
-};
+}
 export function fromVideoBackgroundRadioValue(arg0) {
   let tmp = null;
   if (arg0 !== none) {
@@ -121,7 +121,7 @@ export function fromVideoBackgroundRadioValue(arg0) {
   }
   return tmp;
 }
-export const parseVideoBackgroundRadioValue = function parseVideoBackgroundRadioValue(arg0) {
+export function parseVideoBackgroundRadioValue(arg0) {
   let NumberResult = arg0;
   if (arg0 !== none) {
     NumberResult = arg0;
@@ -131,5 +131,5 @@ export const parseVideoBackgroundRadioValue = function parseVideoBackgroundRadio
     }
   }
   return NumberResult;
-};
+}
 export const useVideoBackgroundRadioOptions = tmp3;

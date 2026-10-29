@@ -1,19 +1,19 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15618
+// Function ID: 15619
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 15385, 15387, 10781, 13759, 15388, 9665, 15389, 1898, 15390, 15394, 15395, 1414, 15396, 5705, 7257, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 15619, 15621, 10861, 13992, 15622, 9697, 15623, 1899, 15624, 15628, 15629, 1415, 15630, 5707, 7281, 2]
 
-// Module 15384 (ActivateDevice)
+// Module 15618 (ActivateDevice)
 import nativeDefault from "native" /* 587 */;
-import react_nativeDefault from "react-native" /* 1898 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13759 */;
-import _modDef15388 from "module_15388" /* 15388 */;
-import _modDef15389 from "module_15389" /* 15389 */;
+import react_nativeDefault from "react-native" /* 1899 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 13992 */;
+import _modDef15622 from "module_15622" /* 15622 */;
+import _modDef15623 from "module_15623" /* 15623 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -411,7 +411,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    const source = obj9.makeSource(require("module_15396"));
+    const source = obj9.makeSource(require("module_15630"));
     cResult[22] = source;
     tmp36 = source;
   } else {
@@ -531,14 +531,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef15388);
+        closure_3(_modDef15622);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[13]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef15389);
+          closure_3(_modDef15623);
         }
       }
     }
@@ -574,7 +574,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     }
   }
   const obj6 = { style: tmp.background, children: items6 };
-  const obj7 = { source: tmp7Result.makeSource(require("module_15396")), style: tmp.imageStyle };
+  const obj7 = { source: tmp7Result.makeSource(require("module_15630")), style: tmp.imageStyle };
   const tmp23 = require("FastImage");
   tmp7Result = first(first1[19]);
   items6 = [closure_8(tmp23, obj7), ];

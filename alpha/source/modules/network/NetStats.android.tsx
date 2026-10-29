@@ -1,22 +1,22 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7627
+// Function ID: 7628
 // Name: NetStats
-// Dependencies: [5, 17, 6531, 7605, 4878, 1084, 3, 1482, 1481, 5934, 1101, 510, 584, 5193, 7606, 7619, 9, 2]
+// Dependencies: [5, 17, 6555, 7628, 4879, 1084, 3, 1483, 1482, 5936, 1101, 510, 584, 5194, 7629, 7642, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7604 (NetStats)
+// Module 7627 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import configure from "configure" /* 1482 */;
-import react_nativeDefault from "react-native" /* 5193 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5934 */;
+import configure from "configure" /* 1483 */;
+import react_nativeDefault from "react-native" /* 5194 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7605 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import NetworkUtils_mod from "utils/NetworkUtils" /* 1481 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7628 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import NetworkUtils_mod from "utils/NetworkUtils" /* 1482 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions
 
 let AppState;
 let closure_4;
-const f99855 = (arg0) => {
+const f100870 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f99855);
+    const networkUsage = getNetworkUsage(f100870);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f99855);
+    const networkUsage = getNetworkUsage(f100870);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);
@@ -149,7 +149,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ class EventTracker {
             const result = Storage.set("previousNetStatsEvents", length);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp23) {
           c3 = 3;
           throw tmp23;
@@ -221,7 +221,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ class EventTracker {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -308,7 +308,7 @@ class EventTracker {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -449,14 +449,14 @@ const subscription2 = Dispatcher.subscribe("MESSAGE_SEND_FAILED", (arg0) => {
 });
 let result = size.fileFinishedImporting("modules/network/NetStats.android.tsx");
 
-export const isSlowNetwork = function isSlowNetwork() {
+export function isSlowNetwork() {
   let tmp = obj.type === configure.NetInfoStateType.cellular;
   if (tmp) {
     const isNetworkRoaming = null != closure_10.signalStrengthLevel && closure_10.signalStrengthLevel <= 2 || "2g" === obj.effectiveSpeed || closure_10.isNetworkRoaming;
     tmp = isNetworkRoaming;
   }
   return tmp;
-};
-export const getSignalStrength = function getSignalStrength() {
+}
+export function getSignalStrength() {
   return closure_10.signalStrengthLevel;
-};
+}

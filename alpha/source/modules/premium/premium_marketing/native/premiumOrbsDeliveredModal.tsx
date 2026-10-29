@@ -1,16 +1,16 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 15144
+// Function ID: 15145
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 7542, 1084, 14910, 21, 5945, 14911, 11, 14913, 2]
+// Dependencies: [19, 7565, 1084, 15145, 21, 5947, 15146, 11, 15148, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 14909 (premiumOrbsDeliveredModal)
+// Module 15144 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 14910 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 14913 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 15145 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 15148 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7542 */;
+import EntitlementStore from "EntitlementStore" /* 7565 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -24,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = null;
 const result = size.fileFinishedImporting("modules/premium/premium_marketing/native/premiumOrbsDeliveredModal.tsx");
 
-export const anchorOrbsPurchaseStart = function anchorOrbsPurchaseStart() {
+export function anchorOrbsPurchaseStart() {
   let _Set1;
   let items;
   const forSku = EntitlementStore.getForSku(SINGLE_ORB_SKU_ID);
@@ -37,8 +37,8 @@ export const anchorOrbsPurchaseStart = function anchorOrbsPurchaseStart() {
     items = Array.from(forSku, (id) => id.id);
   }
   _Set1 = new _Set(items);
-};
-export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
+}
+export function openOrbsModalIfDelivered() {
   let closure_0;
   let tmp;
   function getDeliveredOrbsAmount(knownCoinEntitlementIds) {
@@ -84,9 +84,9 @@ export const openOrbsModalIfDelivered = function openOrbsModalIfDelivered() {
                 },
           isDismissable: false
         };
-        const tmp2Result = tmp2(5945);
+        const tmp2Result = tmp2(5947);
         tmp2Result.openLazy(obj2);
       }
     }
   }
-};
+}

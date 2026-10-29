@@ -1,37 +1,37 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11574
+// Function ID: 11575
 // Name: RPCHelpers
-// Dependencies: [5, 2042, 2021, 4860, 4878, 2011, 6045, 5748, 1389, 5666, 6413, 1084, 1383, 5644, 1101, 12, 9295, 7601, 11521, 6025, 9294, 1386, 8864, 1294, 9296, 5659, 11523, 2]
+// Dependencies: [5, 2043, 2022, 4861, 4879, 2012, 6049, 5750, 1389, 5668, 6437, 1084, 1383, 5645, 1101, 12, 9299, 7624, 11575, 6029, 9298, 1386, 8867, 1294, 9300, 5661, 11577, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformBigFlag, transformChannel, transformGuildMember, transformRole, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 11520 (RPCHelpers)
+// Module 11574 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import urlParseDefault from "urlParse" /* 1386 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5659 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8864 */;
-import transformUserDefault from "transformUser" /* 9294 */;
-import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9295 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import transformMessage from "transformMessage" /* 11521 */;
-import LeakyBucketDefault from "LeakyBucket" /* 11523 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5661 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
+import transformUserDefault from "transformUser" /* 9298 */;
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 9299 */;
+import RPCErrorDefault from "RPCError" /* 9300 */;
+import transformMessage from "transformMessage" /* 11575 */;
+import LeakyBucketDefault from "LeakyBucket" /* 11577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
-import Constants_mod from "Constants" /* 6413 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import Constants_mod from "Constants" /* 6437 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import URLUtils from "URLUtils" /* 1383 */;
-import RegexUtils_mod from "RegexUtils" /* 5644 */;
+import RegexUtils_mod from "RegexUtils" /* 5645 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ let obj = function _validateSocketApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -181,7 +181,7 @@ let obj = function _validateSocketApplication() {
             const obj10 = { id, parentId, name, icon, coverImage, flags, bot, embeddedSurfaces };
             transport.application = obj10;
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           closure_5 = transport.transport === closure_133_14.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
           const tmp29 = transport.transport === closure_133_14.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
@@ -218,7 +218,7 @@ obj = function _processSocketThrottlers() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -271,7 +271,7 @@ obj = function _processSocketThrottlers() {
         } else {
           c6 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp19) {
         let closure_5 = tmp19;
@@ -353,15 +353,15 @@ export const VALIDATE_SOCKET_CALLS_PER_PERIOD_LOW = 2;
 export const VALIDATE_SOCKET_CALLS_PER_PERIOD_HIGH = 60;
 export const VALIDATE_SOCKET_PERIOD_MS = MINUTE;
 export const VALIDATE_SOCKET_THROTTLERS = obj;
-export const containsSameValues = function containsSameValues(arg0, arg1) {
+export function containsSameValues(arg0, arg1) {
   const isEqual = _modDef12.isEqual;
   _modDef12;
   obj = _modDef12;
   return isEqual(arg0, obj.pick(arg1, Object.keys(arg0)));
-};
+}
 export { validateOrigin };
 export { transformBigFlag };
-export const transformRole = function transformRole(id) {
+export function transformRole(id) {
   let colors;
   let permissions;
   let str;
@@ -378,8 +378,8 @@ export const transformRole = function transformRole(id) {
   }
   ({ managed: obj.managed, mentionable: obj.mentionable, icon: obj.icon, unicodeEmoji: obj.unicode_emoji, tags: obj.tags, flags: obj.flags } = id);
   return obj;
-};
-export const transformGuildMember = function transformGuildMember(userId) {
+}
+export function transformGuildMember(currentGuildMember) {
   let avatar;
   let banner;
   let flag;
@@ -388,42 +388,42 @@ export const transformGuildMember = function transformGuildMember(userId) {
   let num;
   let premiumSince;
   let prop;
-  obj = { user_id: userId.userId, guild_id: userId.guildId, nick, avatar, avatar_decoration_data: transformAvatarDecorationDefault(userId.avatarDecoration), banner, roles: null, joined_at: joinedAt, premium_since: premiumSince, communication_disabled_until: prop, pending: flag, flags: num };
-  nick = userId.nick;
+  obj = { user_id: currentGuildMember.userId, guild_id: currentGuildMember.guildId, nick, avatar, avatar_decoration_data: transformAvatarDecorationDefault(currentGuildMember.avatarDecoration), banner, roles: null, joined_at: joinedAt, premium_since: premiumSince, communication_disabled_until: prop, pending: flag, flags: num, color_string: currentGuildMember.colorString };
+  nick = currentGuildMember.nick;
   if (nick == null) {
     nick = null;
   }
-  avatar = userId.avatar;
+  avatar = currentGuildMember.avatar;
   if (avatar == null) {
     avatar = null;
   }
-  banner = userId.banner;
+  banner = currentGuildMember.banner;
   if (banner == null) {
     banner = null;
   }
-  ({ roles: obj.roles, joinedAt } = userId);
+  ({ roles: obj.roles, joinedAt } = currentGuildMember);
   if (joinedAt == null) {
     joinedAt = null;
   }
-  premiumSince = userId.premiumSince;
+  premiumSince = currentGuildMember.premiumSince;
   if (premiumSince == null) {
     premiumSince = null;
   }
-  prop = userId.communicationDisabledUntil;
+  prop = currentGuildMember.communicationDisabledUntil;
   if (prop == null) {
     prop = null;
   }
-  flag = userId.isPending;
+  flag = currentGuildMember.isPending;
   if (flag == null) {
     flag = false;
   }
-  num = userId.flags;
+  num = currentGuildMember.flags;
   if (num == null) {
     num = 0;
   }
   return obj;
-};
-export const transformChannel = function transformChannel(channel, result) {
+}
+export function transformChannel(channel, result) {
   let closure_1 = result;
   const items = [];
   const guild_id = channel.getGuildId();
@@ -500,14 +500,14 @@ export const transformChannel = function transformChannel(channel, result) {
       }
     }
   });
-};
+}
 export { transformVoiceState };
-export const transformBaseRelationship = function transformBaseRelationship(relationshipType, user) {
+export function transformBaseRelationship(relationshipType, user) {
   obj = { type: relationshipType, user: transformUserDefault(user), presence: { status: PresenceStore.getStatus(user.id, null), activity: null } };
   ({ status: PresenceStore.getStatus(user.id, null), activity: null });
   return obj;
-};
-export const transformApplicationRelationship = function transformApplicationRelationship(presence, id) {
+}
+export function transformApplicationRelationship(presence, id) {
   let applicationActivity;
   let obj2;
   let tmp = presence;
@@ -523,8 +523,8 @@ export const transformApplicationRelationship = function transformApplicationRel
     tmp = obj;
   }
   return tmp;
-};
-export const isMatchingOrigin = function isMatchingOrigin(str) {
+}
+export function isMatchingOrigin(str) {
   if (null == str) {
     return false;
   } else {
@@ -556,8 +556,8 @@ export const isMatchingOrigin = function isMatchingOrigin(str) {
       }
     }
   }
-};
-export const hasMessageReadPermission = function hasMessageReadPermission(channel, id, scopes) {
+}
+export function hasMessageReadPermission(channel, id, scopes) {
   let application_id;
   const guild = GuildStore.getGuild(channel.getGuildId());
   if (null != guild) {
@@ -567,8 +567,8 @@ export const hasMessageReadPermission = function hasMessageReadPermission(channe
   }
   const hasItem = application_id === id || scopes.has(OAuth2Scopes.OAuth2Scopes.MESSAGES_READ);
   return hasItem;
-};
-export const getVoiceConnectionState = function getVoiceConnectionState(state) {
+}
+export function getVoiceConnectionState(state) {
   if (constants5.RTC_CONNECTED !== state) {
     if (constants5.RTC_CONNECTING !== state) {
       if (constants5.RTC_DISCONNECTED !== state) {
@@ -577,22 +577,22 @@ export const getVoiceConnectionState = function getVoiceConnectionState(state) {
     }
   }
   return state.replace(/^RTC_/, "VOICE_");
-};
-export const validateActivityInvite = function validateActivityInvite(arg0, id, join) {
+}
+export function validateActivityInvite(arg0, id, join) {
   let tmp = arg0 === constants2.JOIN;
   if (tmp) {
     tmp = null != id && null != id.id && null != join.join;
     const tmp4 = null != id && null != id.id && null != join.join;
   }
   return tmp;
-};
-export const validateSocketApplication = function validateSocketApplication() {
+}
+export function validateSocketApplication() {
   return obj(...arguments);
-};
-export const processSocketThrottlers = function processSocketThrottlers() {
+}
+export function processSocketThrottlers() {
   return obj(...arguments);
-};
-export const validateOriginAndUpdateSocket = function validateOriginAndUpdateSocket(authorization, arg1) {
+}
+export function validateOriginAndUpdateSocket(authorization, arg1) {
   if (null == arg1) {
     const _Set = Set;
     const items = [map1];
@@ -602,37 +602,37 @@ export const validateOriginAndUpdateSocket = function validateOriginAndUpdateSoc
     authorization.scopes = new Set(items);
     set = new Set(items);
   }
-};
-export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoiceSettingsWithShortcut(fn) {
+}
+export function getDeprecatedVoiceSettingsWithShortcut(fn) {
   let obj3;
   let obj5;
   let sorted;
   let sorted1;
   let tmp2;
-  const f149414 = (index, index2) => index.index - index2.index;
-  const f149415 = (id) => ({ id: id.id, name: id.name });
+  const f150983 = (index, index2) => index.index - index2.index;
+  const f150984 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f149415), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f150984), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f149414);
+  sorted = values.sort(f150983);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f149415), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f150984), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f149414);
+  sorted1 = values2.sort(f150983);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;
-};
-export const getVoiceSettingsWithShortcut = function getVoiceSettingsWithShortcut(arg0, fn) {
+}
+export function getVoiceSettingsWithShortcut(arg0, fn) {
   const settings = MediaEngineStore.getSettings(arg0);
   obj = { input_mode: { type: settings.mode, shortcut: fn(settings) }, local_mutes: Object.keys(settings.localMutes), local_volumes: null, self_mute: null, self_deaf: null };
   ({ type: settings.mode, shortcut: fn(settings) });
   ({ localVolumes: obj.local_volumes, mute: obj.self_mute, deaf: obj.self_deaf } = settings);
   return obj;
-};
-export const validatePostMessageTransport = function validatePostMessageTransport(transport) {
+}
+export function validatePostMessageTransport(transport) {
   if (transport !== constants.POST_MESSAGE) {
     const _HermesInternal = HermesInternal;
     const self = this;
@@ -642,8 +642,8 @@ export const validatePostMessageTransport = function validatePostMessageTranspor
     const tmp32 = new tmp3(obj, "command not available from \"" + transport + " transport");
     throw tmp32;
   }
-};
-export const validateApplication = function validateApplication(application) {
+}
+export function validateApplication(application) {
   if (null == application.id) {
     const self = this;
     const self2 = this;
@@ -653,4 +653,4 @@ export const validateApplication = function validateApplication(application) {
   } else {
     return application.id;
   }
-};
+}

@@ -13,7 +13,7 @@ import LANGCHAIN_INTEGRATION_NAME from "LANGCHAIN_INTEGRATION_NAME" /* 856 */;
 
 let generationInfo, text;
 
-const f87413 = (_getType) => {
+const f88420 = (_getType) => {
   let content;
   let tmp30;
   _getType = _getType._getType;
@@ -306,7 +306,7 @@ function setNumberIfDefined(arg0, arg1, arg2) {
 
 }
 
-export const extractChatModelRequestAttributes = function extractChatModelRequestAttributes(id, arr, arg2, invocationParams, ls_provider) {
+export function extractChatModelRequestAttributes(id, arr, arg2, invocationParams, ls_provider) {
   let filteredMessages;
   let systemInstructions;
   ls_provider = undefined;
@@ -343,7 +343,7 @@ export const extractChatModelRequestAttributes = function extractChatModelReques
     if (Array.isArray(arr)) {
       if (arr.length > 0) {
         const flatResult = arr.flat();
-        const mapped = flatResult.map(f87413);
+        const mapped = flatResult.map(f88420);
         let obj2 = extractSystemInstructions;
         const result = obj2.extractSystemInstructions(mapped);
         ({ systemInstructions, filteredMessages } = result);
@@ -385,8 +385,8 @@ export const extractChatModelRequestAttributes = function extractChatModelReques
     }
   }
   return tmpResult;
-};
-export const extractLLMRequestAttributes = function extractLLMRequestAttributes(arg0, arr, arg2, invocationParams, ls_provider) {
+}
+export function extractLLMRequestAttributes(arg0, arr, arg2, invocationParams, ls_provider) {
   ls_provider = undefined;
   if (ls_provider != null) {
     ls_provider = ls_provider.ls_provider;
@@ -434,8 +434,8 @@ export const extractLLMRequestAttributes = function extractLLMRequestAttributes(
     }
   }
   return tmp2Result;
-};
-export const extractLlmResponseAttributes = function extractLlmResponseAttributes(generations, flag2) {
+}
+export function extractLlmResponseAttributes(generations, flag2) {
   let generations3;
   let llmOutput2;
   let tokenUsage;
@@ -737,8 +737,8 @@ export const extractLlmResponseAttributes = function extractLlmResponseAttribute
     }
     return obj;
   }
-};
-export const getInvocationParams = function getInvocationParams(invocation_params) {
+}
+export function getInvocationParams(invocation_params) {
   const tmp = invocation_params;
   if (tmp) {
     const _Array = Array;
@@ -746,7 +746,7 @@ export const getInvocationParams = function getInvocationParams(invocation_param
       return invocation_params.invocation_params;
     }
   }
-};
-export const normalizeLangChainMessages = function normalizeLangChainMessages(items) {
-  return items.map(f87413);
-};
+}
+export function normalizeLangChainMessages(items) {
+  return items.map(f88420);
+}

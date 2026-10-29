@@ -1,13 +1,13 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10952
+// Function ID: 10953
 // Name: showThreadBrowserModal
-// Dependencies: [10058, 8340, 5187, 2]
+// Dependencies: [10090, 8362, 5188, 2]
 // Exports: default
 
-// Module 10917 (showThreadBrowserModal)
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import ThreadUtils from "ThreadUtils" /* 8340 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10058 */;
+// Module 10952 (showThreadBrowserModal)
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import ThreadUtils from "ThreadUtils" /* 8362 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10090 */;
 import size from "module_2" /* 2 */;
 
 const constants = ChannelDetailsConstants.ChannelDetailsNavigatorScreens;

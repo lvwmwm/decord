@@ -1,13 +1,13 @@
-// Module ID: 12078
-// Function ID: 12079
+// Module ID: 12132
+// Function ID: 12133
 // Name: CommandDetailsOverflowMenu
-// Dependencies: [109, 19, 21, 558, 576, 4832, 1125, 7321, 5698, 10446, 7991, 9172, 9795, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4833, 1125, 7345, 5700, 10479, 8014, 9175, 9827, 2]
 
-// Module 12078 (CommandDetailsOverflowMenu)
+// Module 12132 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9172 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9175 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
   let obj = commandId(576);
   const cResult = obj.c(6);
   commandId = commandId.commandId;
-  const DeveloperMode = commandId(4832).DeveloperMode;
+  const DeveloperMode = commandId(4833).DeveloperMode;
   if (null != commandId) {
     if (DeveloperMode.useSetting()) {
       let first;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
                   const obj2 = ToastUtils;
                   obj2.presentIdCopied();
                 },
-          IconComponent: tmp(10446).IdIcon
+          IconComponent: tmp(10479).IdIcon
         };
         const items = [obj2];
         cResult[1] = commandId;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
         tmp8 = cResult[3];
       }
       if (cResult[4] !== tmp7) {
-        const tmp11 = jsx(tmp(9795).ContextMenu, { items: tmp7, children: tmp8 });
+        const tmp11 = jsx(tmp(9827).ContextMenu, { items: tmp7, children: tmp8 });
         cResult[4] = tmp7;
         cResult[5] = tmp11;
         tmp9 = tmp11;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
 }) : (function CommandDetailsOverflowMenu(commandId) {
   let intl;
   commandId = commandId.commandId;
-  const DeveloperMode = commandId(4832).DeveloperMode;
+  const DeveloperMode = commandId(4833).DeveloperMode;
   if (null != commandId) {
     if (DeveloperMode.useSetting()) {
       let obj = {
@@ -95,11 +95,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandDet
               const obj2 = ToastUtils;
               obj2.presentIdCopied();
             },
-        IconComponent: commandId(10446).IdIcon
+        IconComponent: commandId(10479).IdIcon
       };
       intl = tmp(1125).intl;
       const items = [obj];
-      return jsx(commandId(9795).ContextMenu, {
+      return jsx(commandId(9827).ContextMenu, {
         items,
         children(ref) {
               ref = ref.ref;

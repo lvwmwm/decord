@@ -1,10 +1,10 @@
-// Module ID: 7662
-// Function ID: 7663
+// Module ID: 7685
+// Function ID: 7686
 // Name: AutomodFeedback
 // Dependencies: [1125, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7662 (AutomodFeedback)
+// Module 7685 (AutomodFeedback)
 import intl3 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let obj2 = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "L
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");
 
 export { Feedback };
-export const generateFeedbackOptions = function generateFeedbackOptions() {
+export function generateFeedbackOptions() {
   let intl;
   let intl2;
   let obj;
@@ -24,10 +24,10 @@ export const generateFeedbackOptions = function generateFeedbackOptions() {
   intl2 = intl3.intl;
   items[1] = obj2;
   return items;
-};
+}
 export const RaidAlertType = { JOIN_RAID: "JOIN_RAID", MENTION_RAID: "MENTION_RAID" };
 export const RaidResolutionType = obj2;
-export const getMostImportantRaidResolutionType = function getMostImportantRaidResolutionType(c3) {
+export function getMostImportantRaidResolutionType(c3) {
   let DM_SPAM;
   if (c3.includes(obj2.LEGITIMATE_ACTIVITY)) {
     DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
@@ -37,5 +37,5 @@ export const getMostImportantRaidResolutionType = function getMostImportantRaidR
     DM_SPAM = c3.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
   }
   return DM_SPAM;
-};
+}
 export const RaidLockdownFeedbackType = { DM_SPAM: "DM_SPAM", MENTION_SPAM: "MENTION_SPAM", CHANNEL_SPAM: "CHANNEL_SPAM", SUS_NEW_MEMBERS: "SUS_NEW_MEMBERS", CHANGING_SETTINGS: "CHANGING_SETTINGS", OTHER: "OTHER" };

@@ -1,17 +1,17 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6038
+// Function ID: 6039
 // Name: MediaPostThumbnailUtils
-// Dependencies: [6035, 2]
+// Dependencies: [6039, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 6034 (MediaPostThumbnailUtils)
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
+// Module 6038 (MediaPostThumbnailUtils)
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");
 
 export const MAX_THUMBNAIL_COUNT = 4;
-export const getEmbedPreviewImageUrl = function getEmbedPreviewImageUrl(arg0) {
+export function getEmbedPreviewImageUrl(arg0) {
   let image;
   let thumbnail;
   if (null != arg0) {
@@ -32,8 +32,8 @@ export const getEmbedPreviewImageUrl = function getEmbedPreviewImageUrl(arg0) {
     }
     return tmp;
   }
-};
-export const getBackgroundImageUrl = function getBackgroundImageUrl(coverImage) {
+}
+export function getBackgroundImageUrl(coverImage) {
   let combined;
   const obj = MediaFormatTesters;
   if (obj.isAnimatedImageUrl(coverImage)) {
@@ -44,8 +44,8 @@ export const getBackgroundImageUrl = function getBackgroundImageUrl(coverImage) 
     MediaFormatTesters;
   }
   return combined;
-};
-export const getThumbnailImage = function getThumbnailImage(thumbnail) {
+}
+export function getThumbnailImage(thumbnail) {
   let proxy_url;
   let url;
   if (null != thumbnail) {
@@ -65,4 +65,4 @@ export const getThumbnailImage = function getThumbnailImage(thumbnail) {
     }
     return tmp;
   }
-};
+}

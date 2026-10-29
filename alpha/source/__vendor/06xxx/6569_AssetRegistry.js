@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "b8491165af3ebfd07b4e58fba6104e2b", name: "img_account_sync_steam_white", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ba3e8ee2991f198308400197cdb28bc", name: "img_account_sync_youtube_white", type: "svg" });

@@ -1,11 +1,11 @@
-// Module ID: 5187
-// Function ID: 5188
+// Module ID: 5188
+// Function ID: 5189
 // Name: RootNavigationRef
-// Dependencies: [1503, 2]
+// Dependencies: [1504, 2]
 // Exports: getRootNavigationRef, runWhenRootNavigationReady
 
-// Module 5187 (RootNavigationRef)
-import Link from "Link" /* 1503 */;
+// Module 5188 (RootNavigationRef)
+import Link from "Link" /* 1504 */;
 import size from "module_2" /* 2 */;
 
 let ready = Link.createNavigationContainerRef();
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/RootNavigationRe
 export function getRootNavigationRef() {
   return ready;
 }
-export const runWhenRootNavigationReady = function runWhenRootNavigationReady(fn) {
+export function runWhenRootNavigationReady(fn) {
   ready = fn;
   const obj = ready;
   if (ready.isReady()) {
@@ -25,4 +25,4 @@ export const runWhenRootNavigationReady = function runWhenRootNavigationReady(fn
       closure_0();
     });
   }
-};
+}

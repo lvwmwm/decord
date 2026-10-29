@@ -1,17 +1,17 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17759
+// Function ID: 17760
 // Name: EncryptionSetting
-// Dependencies: [5768, 8365, 1084, 558, 576, 504, 17521, 1125, 11248, 17522, 2]
+// Dependencies: [5770, 8387, 1084, 558, 576, 504, 17760, 1125, 11302, 17761, 2]
 
-// Module 17520 (EncryptionSetting)
+// Module 17759 (EncryptionSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 17521 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5768 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 17760 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5770 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

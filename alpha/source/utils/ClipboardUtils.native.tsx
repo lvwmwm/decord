@@ -1,11 +1,11 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7345
+// Function ID: 7346
 // Name: ClipboardUtils
-// Dependencies: [5, 7322, 2]
+// Dependencies: [5, 7346, 2]
 // Exports: copy, getString
 
-// Module 7321 (ClipboardUtils)
-import _modDef7322 from "module_7322" /* 7322 */;
+// Module 7345 (ClipboardUtils)
+import _modDef7346 from "module_7346" /* 7346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _copy() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -39,7 +39,7 @@ let obj = function _copy() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const obj2 = _modDef7322;
+            const obj2 = _modDef7346;
             obj2.setString(closure_0);
             const tmp5 = closure_1;
             if (closure_1 != null) {
@@ -59,7 +59,7 @@ let obj = function _copy() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         c2 = 3;
@@ -72,10 +72,10 @@ let obj = function _copy() {
 const result = size.fileFinishedImporting("utils/ClipboardUtils.native.tsx");
 
 export const SUPPORTS_COPY = true;
-export const copy = function copy() {
+export function copy() {
   return obj(...arguments);
-};
-export const getString = function getString() {
-  obj = _modDef7322;
+}
+export function getString() {
+  obj = _modDef7346;
   return obj.getString();
-};
+}

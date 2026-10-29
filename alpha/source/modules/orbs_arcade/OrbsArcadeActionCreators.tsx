@@ -1,18 +1,18 @@
-// Module ID: 16668
-// Function ID: 16669
+// Module ID: 16906
+// Function ID: 16907
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 16662, 1084, 1101, 569, 584, 1294, 16663, 6410, 16669, 2]
+// Dependencies: [5, 502, 16900, 1084, 1101, 569, 584, 1294, 16901, 6434, 16907, 2]
 // Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
-// Module 16668 (OrbsArcadeActionCreators)
+// Module 16906 (OrbsArcadeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16900 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _fetchOrbsArcadeGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let tmp28;
@@ -113,7 +113,7 @@ let obj = function _fetchOrbsArcadeGames() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp28) {
         if (0 === c3) {
           c5 = 3;
@@ -139,7 +139,7 @@ obj = function _resetOrbsArcadeGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -182,7 +182,7 @@ obj = function _resetOrbsArcadeGame() {
             return obj6;
           } else {
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -229,7 +229,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -277,7 +277,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
             obj = closure_130_1(closure_130_2[6]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -311,7 +311,7 @@ obj = function _postOrbsArcadeClaimRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -377,7 +377,7 @@ obj = function _postOrbsArcadeClaimRewardsWithRetry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -539,7 +539,7 @@ obj = function _claimOrbsArcadeRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -630,7 +630,7 @@ let c11 = 0;
 const result1 = size.fileFinishedImporting("modules/orbs_arcade/OrbsArcadeActionCreators.tsx");
 
 export { fetchOrbsArcadeGames };
-export const fetchOrbsArcadeGamesIfStale = function fetchOrbsArcadeGamesIfStale() {
+export function fetchOrbsArcadeGamesIfStale() {
   let hasFetchFailed;
   let lastFetchedOrbsArcadeGamesAt;
   if (!OrbsArcadeStore.isFetchingOrbsArcadeGames) {
@@ -660,13 +660,13 @@ export const fetchOrbsArcadeGamesIfStale = function fetchOrbsArcadeGamesIfStale(
       const _Date = Date;
     }
   }
-};
-export const resetOrbsArcadeGame = function resetOrbsArcadeGame() {
+}
+export function resetOrbsArcadeGame() {
   return obj(...arguments);
-};
-export const ensureOrbsArcadeEnrollment = function ensureOrbsArcadeEnrollment() {
+}
+export function ensureOrbsArcadeEnrollment() {
   return obj(...arguments);
-};
-export const claimOrbsArcadeRewards = function claimOrbsArcadeRewards() {
+}
+export function claimOrbsArcadeRewards() {
   return obj(...arguments);
-};
+}

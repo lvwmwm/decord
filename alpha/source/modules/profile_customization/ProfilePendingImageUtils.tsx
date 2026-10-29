@@ -1,17 +1,17 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16340
+// Function ID: 16341
 // Name: ProfilePendingImageUtils
-// Dependencies: [7122, 1385, 2]
+// Dependencies: [7146, 1385, 2]
 // Exports: createPendingImage
 
-// Module 16104 (ProfilePendingImageUtils)
+// Module 16340 (ProfilePendingImageUtils)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7122 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7146 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");
 
-export const createPendingImage = function createPendingImage(assetOrigin) {
+export function createPendingImage(assetOrigin) {
   let description;
   let imageUri;
   let originalAsset;
@@ -32,4 +32,4 @@ export const createPendingImage = function createPendingImage(assetOrigin) {
     const tmp3Result = GlobalUtils;
     tmp3Result.assertNever(NEW_ASSET);
   }
-};
+}

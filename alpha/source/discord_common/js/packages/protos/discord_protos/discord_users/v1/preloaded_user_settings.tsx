@@ -1439,6 +1439,7 @@ items3[1] = {
 };
 items3[2] = { no: 3, name: "color", kind: "message", T: T4 };
 let tmp13 = new "binaryReadMap12"("discord_protos.discord_users.v1.ChannelIconEmoji", items3, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
+let closure_29 = tmp13;
 const MessageType7 = _mod1209.MessageType;
 class ChannelSettings$Type extends MessageType7 {
   constructor() {
@@ -2168,7 +2169,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "paths" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);

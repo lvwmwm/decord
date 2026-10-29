@@ -1,14 +1,14 @@
 // Module ID: 1403
 // Function ID: 1404
 // Name: UserRecord
-// Dependencies: [1404, 1084, 1391, 1405, 1406, 1410, 1411, 1395, 1412, 1413, 1096, 11, 1414, 1402, 1988, 1397, 1984, 1989, 2]
+// Dependencies: [1404, 1084, 1391, 1405, 1406, 1411, 1412, 1395, 1413, 1414, 1096, 11, 1415, 1402, 1989, 1397, 1985, 1990, 2]
 
 // Module 1403 (UserRecord)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1984 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1985 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
 import Record from "Record" /* 1404 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;

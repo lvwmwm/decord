@@ -1,14 +1,14 @@
-// Module ID: 1998
-// Function ID: 1999
+// Module ID: 1999
+// Function ID: 2000
 // Name: AppStateStore
-// Dependencies: [17, 1084, 504, 1264, 1999, 584, 2]
+// Dependencies: [17, 1084, 504, 1264, 2000, 584, 2]
 
-// Module 1998 (AppStateStore)
+// Module 1999 (AppStateStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 const AppState = react_native.AppState;

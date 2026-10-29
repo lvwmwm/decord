@@ -1,40 +1,40 @@
-// Module ID: 17341
-// Function ID: 17342
+// Module ID: 17580
+// Function ID: 17581
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1084, 1086, 4853, 6745, 21, 558, 576, 5270, 1125, 6939, 4840, 10442, 1264, 9601, 6748, 17342, 9481, 5246, 14194, 1999, 7314, 7684, 14193, 5034, 5298, 2]
+// Dependencies: [19, 1084, 1086, 4854, 6768, 21, 558, 576, 5271, 1125, 6963, 4841, 10475, 1264, 9633, 6771, 17581, 9512, 5247, 14427, 2000, 7338, 7707, 14426, 5035, 5299, 2]
 
-// Module 17341 (BalanceWidgetMenu)
+// Module 17580 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import _mod9481 from "module_9481" /* 9481 */;
-import QuestUtils from "QuestUtils" /* 9601 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10442 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 14193 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import _mod9512 from "module_9512" /* 9512 */;
+import QuestUtils from "QuestUtils" /* 9633 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10475 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 14426 */;
 import react from "react" /* 19 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(4840);
+const dismissible_content = tmp(4841);
 function BalanceWidgetMenu() {
   let constants2;
   let constants3;
   let str;
-  let obj = str(9481);
+  let obj = str(9512);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = react.useCallback(() => {
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBa
   const cResult = obj.c(8);
   ({ onPress, accessibilityLabel, trailing, isBusy } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     const intl = tmp(1125).intl;
     const tmp7 = <Text variant="text-sm/semibold" color="text-default">{intl.string(intl3.t.gGtZpz)}</Text>;
     cResult[0] = tmp7;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   let tmp7;
   const obj = react2;
   const cResult = obj.c(3);
-  const obj2 = _mod9481;
+  const obj2 = _mod9512;
   const balance = obj2.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {
@@ -304,7 +304,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   return tmp7;
 }) : (function BalanceWidgetMenuWrapper() {
   let tmp5Result;
-  const obj = _mod9481;
+  const obj = _mod9512;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {

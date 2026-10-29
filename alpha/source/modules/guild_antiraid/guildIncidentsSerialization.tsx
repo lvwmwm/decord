@@ -1,15 +1,15 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 4877
+// Function ID: 4878
 // Name: guildIncidentsSerialization
 // Dependencies: [2]
 // Exports: fromServerGuildIncidentsData, toServerGuildIncidentsData
 
-// Module 4876 (guildIncidentsSerialization)
+// Module 4877 (guildIncidentsSerialization)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_antiraid/guildIncidentsSerialization.tsx");
 
-export const fromServerGuildIncidentsData = function fromServerGuildIncidentsData(incidents_data) {
+export function fromServerGuildIncidentsData(incidents_data) {
   let dm_spam_detected_at;
   let dms_disabled_until;
   let prop;
@@ -47,8 +47,8 @@ export const fromServerGuildIncidentsData = function fromServerGuildIncidentsDat
     }
   }
   return null;
-};
-export const toServerGuildIncidentsData = function toServerGuildIncidentsData(incidentsData) {
+}
+export function toServerGuildIncidentsData(incidentsData) {
   let dmSpamDetectedAt;
   let dmsDisabledUntil;
   let invitesDisabledUntil;
@@ -83,4 +83,4 @@ export const toServerGuildIncidentsData = function toServerGuildIncidentsData(in
     }
   }
   return tmp;
-};
+}

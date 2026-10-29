@@ -1,10 +1,10 @@
-// Module ID: 19764
-// Function ID: 19765
+// Module ID: 19986
+// Function ID: 19987
 // Name: ManagerRegistryShared
 // Dependencies: [584, 2]
 // Exports: initialize
 
-// Module 19764 (ManagerRegistryShared)
+// Module 19986 (ManagerRegistryShared)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let closure_2 = {};
 let c3 = false;
 const result = size.fileFinishedImporting("modules/app_startup/ManagerRegistryShared.tsx");
 
-export const initialize = function initialize(actions) {
+export function initialize(actions) {
   for (const key10004 in actions) {
     let tmp3 = actions[key10004];
     actions = tmp3.actions;
@@ -86,4 +86,4 @@ export const initialize = function initialize(actions) {
   }
   const obj = DispatcherDefault;
   obj.addInterceptor(handleAction);
-};
+}

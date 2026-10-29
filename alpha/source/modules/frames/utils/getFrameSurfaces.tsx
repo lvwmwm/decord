@@ -1,15 +1,15 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 11451
+// Function ID: 11452
 // Name: getFrameSurfaces
-// Dependencies: [1084, 9683, 2028, 5662, 6847, 2]
+// Dependencies: [1084, 9715, 2029, 5664, 6870, 2]
 // Exports: canOpenFrame, isFrameApp
 
-// Module 11397 (getFrameSurfaces)
+// Module 11451 (getFrameSurfaces)
 import Constants from "Constants" /* 1084 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2028 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5662 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6847 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6870 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -20,7 +20,7 @@ function getFrameSurfaces(application) {
     const obj5 = AppLauncherUtils;
     if (obj5.isRealApplication(application)) {
       const tmp19Result = EmbeddedSurfaceUtils;
-      let result = tmp19Result.supportsEmbeddedSurface(application, tmp19(5662).EmbeddedSurfaceType.MAIN);
+      let result = tmp19Result.supportsEmbeddedSurface(application, tmp19(5664).EmbeddedSurfaceType.MAIN);
       if (result) {
         const tmp19Result2 = ApplicationFlagUtils;
         result = tmp19Result2.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);
@@ -50,14 +50,14 @@ const ApplicationFlags = Constants.ApplicationFlags;
 let result = size.fileFinishedImporting("modules/frames/utils/getFrameSurfaces.tsx");
 
 export { getFrameSurfaces };
-export const isFrameApp = function isFrameApp(application) {
+export function isFrameApp(application) {
   return getFrameSurfaces(application).size > 0;
-};
-export const canOpenFrame = function canOpenFrame(app) {
+}
+export function canOpenFrame(app) {
   const obj = getFrameSurfaces(app);
   let hasItem = obj.has(EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
   if (!hasItem) {
     hasItem = obj.has(EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL);
   }
   return hasItem;
-};
+}

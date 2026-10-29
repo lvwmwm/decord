@@ -1,11 +1,11 @@
-// Module ID: 9267
-// Function ID: 9268
+// Module ID: 9271
+// Function ID: 9272
 // Name: GuildTraits
-// Dependencies: [1084, 4870, 2]
+// Dependencies: [1084, 4871, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 9267 (GuildTraits)
-import GuildRecordUtils from "GuildRecordUtils" /* 4870 */;
+// Module 9271 (GuildTraits)
+import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const GuildVisibility = { PUBLIC: "PUBLIC", INVITE_ONLY: "INVITE_ONLY", APPLY_TO
 const result = size.fileFinishedImporting("modules/guild_badge/GuildTraits.tsx");
 
 export { GuildVisibility };
-export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
+export function getGuildTraits(fromGuildProfileResult) {
   let obj;
   set = new Set(fromGuildProfileResult.features);
   let APPLY_TO_JOIN = obj.INVITE_ONLY;
@@ -61,8 +61,8 @@ export const getGuildTraits = function getGuildTraits(fromGuildProfileResult) {
   if (tmp3) {
     APPLY_TO_JOIN = tmp.APPLY_TO_JOIN;
   }
-};
-export const isPremiumGuild = function isPremiumGuild(premiumSubscriberCount) {
+}
+export function isPremiumGuild(premiumSubscriberCount) {
   let tmp = null != premiumSubscriberCount;
   if (tmp) {
     let tmp4;
@@ -76,8 +76,8 @@ export const isPremiumGuild = function isPremiumGuild(premiumSubscriberCount) {
     tmp = tmp4;
   }
   return tmp;
-};
-export const isDiscoverableGuild = function isDiscoverableGuild(features) {
+}
+export function isDiscoverableGuild(features) {
   let hasItem = null != features;
   if (hasItem) {
     const _Set = Set;
@@ -87,4 +87,4 @@ export const isDiscoverableGuild = function isDiscoverableGuild(features) {
     hasItem = set.has(constants.DISCOVERABLE);
   }
   return hasItem;
-};
+}

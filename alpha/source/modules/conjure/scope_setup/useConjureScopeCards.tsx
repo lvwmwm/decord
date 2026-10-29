@@ -1,15 +1,15 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12561
+// Function ID: 12562
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6808, 1125, 3863, 12341, 558, 576, 504, 12355, 2]
+// Dependencies: [5, 32, 19, 6831, 1125, 3864, 12395, 558, 576, 504, 12409, 2]
 
-// Module 12507 (useConjureScopeCards)
+// Module 12561 (useConjureScopeCards)
 import intl6 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 12341 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6831 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,13 +30,13 @@ function scopeClarification() {
   let items;
   let items1;
   const obj = { id: "scope-setup", questions: items1 };
-  const obj2 = { id, question: intl.string(_modDef3863.ickKBI), recommendation_reason: "", allow_custom: false, options: items };
+  const obj2 = { id, question: intl.string(_modDef3864.ickKBI), recommendation_reason: "", allow_custom: false, options: items };
   intl = intl6.intl;
-  const obj3 = { id: id2, label: intl2.string(_modDef3863.qLYOpH), detail: intl3.string(_modDef3863.QSKvUE) };
+  const obj3 = { id: id2, label: intl2.string(_modDef3864.qLYOpH), detail: intl3.string(_modDef3864.QSKvUE) };
   intl2 = intl6.intl;
   intl3 = intl6.intl;
   items = [obj3, ];
-  const obj4 = { id: id3, label: intl4.string(_modDef3863.QV5C7b), detail: intl5.string(_modDef3863["ZzHR4/"]) };
+  const obj4 = { id: id3, label: intl4.string(_modDef3864.QV5C7b), detail: intl5.string(_modDef3864["ZzHR4/"]) };
   intl4 = intl6.intl;
   intl5 = intl6.intl;
   items[1] = obj4;
@@ -57,17 +57,17 @@ function serverClarification(conjureEligibleGuilds, guild_id) {
   const intl = intl6.intl;
   const string = intl.string;
   if (conjureEligibleGuilds.length > 0) {
-    ZWXDeI = _modDef3863.ZWXDeI;
+    ZWXDeI = _modDef3864.ZWXDeI;
     tmp5 = importDefault;
   } else {
-    ZWXDeI = _modDef3863["u5+Qhu"];
+    ZWXDeI = _modDef3864["u5+Qhu"];
     tmp5 = importDefault;
   }
   const obj2 = { id: "server-setup:q0", question: string(ZWXDeI), recommendation_reason: "", allow_custom: false, options: items };
   if (conjureEligibleGuilds.length > 0) {
     items = [];
   } else {
-    const obj3 = { id: id2, label: intl2.string(tmp5(3863).qLYOpH) };
+    const obj3 = { id: id2, label: intl2.string(tmp5(3864).qLYOpH) };
     intl2 = tmp(1125).intl;
     items = [obj3];
   }
@@ -76,6 +76,7 @@ function serverClarification(conjureEligibleGuilds, guild_id) {
   items1 = [obj2];
   return obj;
 }
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const ConjureScopeSetupCard = "ConjureScopeSetupCard";
@@ -87,17 +88,16 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureScopeSetupCard(arg0) {
   let first;
   let install_scope_setup;
-  let settle;
-  let tmp11;
-  let tmp13;
-  let tmp15;
-  let tmp21;
+  let tmp10;
+  let tmp12;
+  let tmp14;
+  let tmp21Result;
   let tmp6;
   let tmp7;
   _require = arg0;
   const tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(25);
+  const cResult = obj.c(33);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
     cResult[0] = items;
@@ -121,262 +121,295 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult3 = tmp(12355);
-  const conjureEligibleGuilds = tmpResult3.useConjureEligibleGuilds(ConjureScopeSetupCard);
-  [tmp11, importDefault] = settle(react.useState(null), 2);
-  const tmp10 = settle(react.useState(null), 2);
-  [tmp13, dependencyMap] = settle(react.useState(false), 2);
-  const tmp12 = settle(react.useState(false), 2);
-  [tmp15, _asyncToGenerator] = settle(react.useState(null), 2);
-  const tmp14 = settle(react.useState(null), 2);
+  const tmpResult4 = tmp(12409);
+  const conjureEligibleGuilds = tmpResult4.useConjureEligibleGuilds(ConjureScopeSetupCard);
+  [tmp10, importDefault] = _slicedToArray(react.useState(null), 2);
+  const tmp9 = _slicedToArray(react.useState(null), 2);
+  let tmp11 = _slicedToArray(react.useState(false), 2);
+  [tmp12, dependencyMap] = tmp11;
+  [tmp14, _asyncToGenerator] = _slicedToArray(react.useState(null), 2);
+  const tmp13 = _slicedToArray(react.useState(null), 2);
   if (stateFromStores != null) {
     install_scope_setup = stateFromStores.install_scope_setup;
   }
-  let tmp16 = "server" === tmp11;
-  if (!tmp16) {
-    let tmp17 = null == tmp11;
-    if (tmp17) {
+  let tmp15 = "server" === tmp10;
+  if (!tmp15) {
+    let tmp16 = null == tmp10;
+    if (tmp16) {
       let str = "choose_server";
-      tmp17 = "choose_server" === install_scope_setup;
+      tmp16 = "choose_server" === install_scope_setup;
     }
-    tmp16 = tmp17;
+    tmp15 = tmp16;
   }
   let guild_id;
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  if (cResult[4] === tmp16) {
+  if (cResult[4] === tmp15) {
     if (cResult[5] === conjureEligibleGuilds) {
-      let tmp19;
       if (cResult[6] === guild_id) {
-        tmp19 = cResult[7];
-      }
-      if (null == install_scope_setup) {
-        return null;
-      } else {
-        let tmp34;
-        let tmp36;
-        if (null != stateFromStores) {
-          if (isProjectOwner(stateFromStores)) {
-            let tmp26;
-            if (cResult[12] !== arg0) {
-              _require = _asyncToGenerator(async (arg0, value) => {
-                let closure_3;
-                let obj2;
-                closure_0 = arg0;
-                let closure_1 = value;
-                if (c7 === 2) {
-                  c7 = 3;
-                  throw new TypeError("Generator functions may not be called on executing generators");
-                } else if (tmp3 === 3) {
-                  if (arg0 === 1) {
-                    throw value;
-                  } else if (arg0 === 2) {
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    return { value: "IconComponent", done: null };
-                  }
-                } else {
-                  let c5;
-                  try {
-                    let closure_2;
-                    c7 = 2;
-                    if (0 === c6) {
-                      if (arg0 === 1) {
-                        c7 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c7 = 3;
-                        const obj4 = { value, done: true };
-                        return obj4;
-                      } else {
-                        closure_2 = tmp4;
-                        closure_0 = closure_1;
-                        closure_1 = undefined;
-                        closure_2(true);
-                        tmp(null);
-                        c5 = 1;
-                        c6 = 2;
-                        c7 = 1;
-                        const obj5 = { value: obj2.settleConjureInstallScope(closure_0, closure_0, closure_1), done: false };
-                        obj2 = closure_0(dependencyMap[6]);
-                        return obj5;
-                      }
+        let tmp18;
+        if (cResult[7] === arg0) {
+          tmp18 = cResult[8];
+        }
+        if (null == install_scope_setup) {
+          return null;
+        } else {
+          let tmp36;
+          let tmp38;
+          if (null != stateFromStores) {
+            if (isProjectOwner(stateFromStores)) {
+              let tmp23;
+              let tmp27;
+              if (cResult[13] !== arg0) {
+                _require = _asyncToGenerator(async (arg0, value) => {
+                  let closure_3;
+                  let obj2;
+                  closure_0 = arg0;
+                  let closure_1 = value;
+                  if (c7 === 2) {
+                    c7 = 3;
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp3 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      const obj3 = { value, done: true };
+                      return obj3;
                     } else {
-                      if (1 === c6) {
-                        c5 = 0;
-                        closure_1 = closure_4;
-                        closure_2(false);
-                        let str = "failed";
-                        const tmp11 = tmp;
-                        if (null != closure_0) {
-                          str = "failed";
-                          if (403 === errorStatus(closure_1)) {
-                            str = "server";
+                      return { value: "IconComponent", done: "IconComponent" };
+                    }
+                  } else {
+                    let c5;
+                    try {
+                      let closure_2;
+                      c7 = 2;
+                      if (0 === c6) {
+                        if (arg0 === 1) {
+                          c7 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c7 = 3;
+                          const obj4 = { value, done: true };
+                          return obj4;
+                        } else {
+                          closure_2 = tmp4;
+                          closure_0 = closure_1;
+                          closure_1 = undefined;
+                          closure_2(true);
+                          tmp(null);
+                          c5 = 1;
+                          c6 = 2;
+                          c7 = 1;
+                          const obj5 = { value: obj2.settleConjureInstallScope(closure_0, closure_0, closure_1), done: false };
+                          obj2 = closure_0(dependencyMap[6]);
+                          return obj5;
+                        }
+                      } else {
+                        if (1 === c6) {
+                          c5 = 0;
+                          closure_1 = closure_4;
+                          closure_2(false);
+                          let str = "failed";
+                          const tmp11 = tmp;
+                          if (null != closure_0) {
+                            str = "failed";
+                            if (403 === errorStatus(closure_1)) {
+                              str = "server";
+                            }
+                          }
+                          tmp11(str);
+                        } else if (arg0 === 1) {
+                          c7 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c5 = 0;
+                          c7 = 3;
+                          const obj = { value, done: true };
+                          return obj;
+                        } else {
+                          c5 = 0;
+                        }
+                        c7 = 3;
+                        return { value: "IconComponent", done: "IconComponent" };
+                      }
+                    } catch (tmp27) {
+                      closure_4 = tmp27;
+                      if (0 === c5) {
+                        c7 = 3;
+                        throw tmp27;
+                      } else {
+                        c6 = 1;
+                      }
+                    }
+                  }
+                });
+                function settle() {
+                  return closure_0(...arguments);
+                }
+                cResult[13] = arg0;
+                cResult[14] = settle;
+                tmp23 = settle;
+              } else {
+                tmp23 = cResult[14];
+              }
+              _slicedToArray = tmp23;
+              if (cResult[15] !== tmp23) {
+                function handleAnswered(arg0, arg1) {
+                  let first;
+                  if (arg1 != null) {
+                    first = arg1.answers[0];
+                  }
+                  if (null != first) {
+                    const option_ids = first.option_ids;
+                    if (option_ids.includes(id3)) {
+                      importDefault("server");
+                    } else {
+                      closure_4("user", null);
+                    }
+                  }
+                }
+                cResult[15] = tmp23;
+                cResult[16] = handleAnswered;
+              }
+              const _Symbol = Symbol;
+              if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                const intl = tmp(1125).intl;
+                const stringResult = intl.string(tmp(1125).t["cY+Oob"]);
+                cResult[17] = stringResult;
+                tmp27 = stringResult;
+              } else {
+                tmp27 = cResult[17];
+              }
+              if (cResult[18] === tmp15) {
+                let tmp29;
+                if (cResult[19] === tmp12) {
+                  tmp29 = cResult[20];
+                }
+                if (tmp15) {
+                  tmp15 = conjureEligibleGuilds.length > 0;
+                }
+                if (cResult[21] === tmp12) {
+                  let tmp30;
+                  let tmp31;
+                  if (cResult[22] === tmp23) {
+                    tmp30 = cResult[23];
+                  }
+                  if (cResult[24] !== tmp14) {
+                    let stringResult1 = null;
+                    if (null != tmp14) {
+                      let jNVZ3e;
+                      const intl2 = tmp(1125).intl;
+                      const string = intl2.string;
+                      if ("server" === tmp14) {
+                        jNVZ3e = _modDef3864["XXKd+7"];
+                      } else {
+                        jNVZ3e = _modDef3864.jNVZ3e;
+                      }
+                      stringResult1 = string(jNVZ3e);
+                    }
+                    cResult[24] = tmp14;
+                    cResult[25] = stringResult1;
+                    tmp31 = stringResult1;
+                  } else {
+                    tmp31 = cResult[25];
+                  }
+                  if (cResult[26] === tmp18) {
+                    if (cResult[27] === tmp30) {
+                      if (cResult[28] === tmp31) {
+                        if (cResult[29] === tmp26) {
+                          if (cResult[30] === tmp29) {
+                            let tmp35;
+                            if (cResult[31] === tmp15) {
+                              tmp35 = cResult[32];
+                            }
+                            return tmp35;
                           }
                         }
-                        tmp11(str);
-                      } else if (arg0 === 1) {
-                        c7 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c5 = 0;
-                        c7 = 3;
-                        const obj = { value, done: true };
-                        return obj;
-                      } else {
-                        c5 = 0;
                       }
-                      c7 = 3;
-                      return { value: "IconComponent", done: null };
-                    }
-                  } catch (tmp27) {
-                    closure_4 = tmp27;
-                    if (0 === c5) {
-                      c7 = 3;
-                      throw tmp27;
-                    } else {
-                      c6 = 1;
                     }
                   }
+                  let obj2 = { clarification: tmp18, readOnly: false, onSubmit: tmp26, submitText: tmp27, onBack: tmp29, hideSubmit: false, serverStep: tmp15, onPickServer: tmp30, failure: tmp31 };
+                  cResult[26] = tmp18;
+                  cResult[27] = tmp30;
+                  cResult[28] = tmp31;
+                  cResult[29] = tmp26;
+                  cResult[30] = tmp29;
+                  cResult[31] = tmp15;
+                  cResult[32] = obj2;
+                  tmp35 = obj2;
                 }
-              });
-              settle = function settle() {
-                return closure_0(...arguments);
-              };
-              function handleAnswered(arg0, arg1) {
-                let first;
-                if (arg1 != null) {
-                  first = arg1.answers[0];
+                let fn3;
+                if (!tmp12) {
+                  fn3 = (arg0) => closure_4("guild", arg0);
                 }
-                if (null != first) {
-                  const entities = first.entities;
-                  if (entities != null) {
-                    const first1 = entities[0];
-                    if (first1 != null) {
-                      id = first1.id;
-                    }
-                  }
-                  const option_ids = first.option_ids;
-                  if (option_ids.includes(id3)) {
-                    importDefault("server");
-                  } else if (null != id) {
-                    settle("guild", id);
-                  } else {
-                    settle("user", null);
-                  }
+                cResult[21] = tmp12;
+                cResult[22] = tmp23;
+                cResult[23] = fn3;
+                tmp30 = fn3;
+              }
+              let fn2;
+              if (tmp15) {
+                if (!tmp12) {
+                  fn2 = () => importDefault("scope");
                 }
               }
-              cResult[12] = arg0;
-              cResult[13] = handleAnswered;
+              cResult[18] = tmp15;
+              cResult[19] = tmp12;
+              cResult[20] = fn2;
+              tmp29 = fn2;
             }
-            const _Symbol = Symbol;
-            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1125).intl;
-              const stringResult = intl.string(tmp(1125).t["cY+Oob"]);
-              cResult[14] = stringResult;
-              tmp26 = stringResult;
-            } else {
-              tmp26 = cResult[14];
-            }
-            if (cResult[15] === tmp16) {
-              let tmp28;
-              let tmp29;
-              if (cResult[16] === tmp13) {
-                tmp28 = cResult[17];
-              }
-              if (cResult[18] !== tmp15) {
-                let stringResult1 = null;
-                if (null != tmp15) {
-                  let jNVZ3e;
-                  const intl2 = tmp(1125).intl;
-                  const string = intl2.string;
-                  if ("server" === tmp15) {
-                    jNVZ3e = _modDef3863["XXKd+7"];
-                  } else {
-                    jNVZ3e = _modDef3863.jNVZ3e;
-                  }
-                  stringResult1 = string(jNVZ3e);
-                }
-                cResult[18] = tmp15;
-                cResult[19] = stringResult1;
-                tmp29 = stringResult1;
-              } else {
-                tmp29 = cResult[19];
-              }
-              if (cResult[20] === tmp19) {
-                if (cResult[21] === tmp25) {
-                  if (cResult[22] === tmp28) {
-                    let tmp33;
-                    if (cResult[23] === tmp29) {
-                      tmp33 = cResult[24];
-                    }
-                    return tmp33;
-                  }
-                }
-              }
-              let obj2 = { clarification: tmp19, readOnly: false, onSubmit: tmp25, submitText: tmp26, onBack: tmp28, hideSubmit: false, failure: tmp29 };
-              cResult[20] = tmp19;
-              cResult[21] = tmp25;
-              cResult[22] = tmp28;
-              cResult[23] = tmp29;
-              cResult[24] = obj2;
-              tmp33 = obj2;
-            }
-            let fn2;
-            if (tmp16) {
-              if (!tmp13) {
-                fn2 = () => importDefault("scope");
-              }
-            }
-            cResult[15] = tmp16;
-            cResult[16] = tmp13;
-            cResult[17] = fn2;
-            tmp28 = fn2;
           }
+          if (cResult[9] !== tmp18) {
+            const tmpResult5 = tmp(12395);
+            const result = tmpResult5.ownerOnlyClarification(tmp18);
+            cResult[9] = tmp18;
+            cResult[10] = result;
+            tmp36 = result;
+          } else {
+            tmp36 = cResult[10];
+          }
+          if (cResult[11] !== tmp36) {
+            let obj3 = { clarification: tmp36, readOnly: true, hideSubmit: true, failure: null };
+            cResult[11] = tmp36;
+            cResult[12] = obj3;
+            tmp38 = obj3;
+          } else {
+            tmp38 = cResult[12];
+          }
+          return tmp38;
         }
-        if (cResult[8] !== tmp19) {
-          const tmpResult4 = tmp(12341);
-          const result = tmpResult4.ownerOnlyClarification(tmp19);
-          cResult[8] = tmp19;
-          cResult[9] = result;
-          tmp34 = result;
-        } else {
-          tmp34 = cResult[9];
-        }
-        if (cResult[10] !== tmp34) {
-          let obj3 = { clarification: tmp34, readOnly: true, hideSubmit: true, failure: null };
-          cResult[10] = tmp34;
-          cResult[11] = obj3;
-          tmp36 = obj3;
-        } else {
-          tmp36 = cResult[11];
-        }
-        return tmp36;
       }
     }
   }
-  if (tmp16) {
-    tmp21 = serverClarification(conjureEligibleGuilds, guild_id);
+  if (tmp15) {
+    let heldConjurePromptGuildId = guild_id;
+    const tmp21 = serverClarification;
+    if (guild_id == null) {
+      const tmpResult6 = tmp(12395);
+      heldConjurePromptGuildId = tmpResult6.getHeldConjurePromptGuildId(arg0);
+    }
+    tmp21Result = tmp21(conjureEligibleGuilds, heldConjurePromptGuildId);
   } else {
-    tmp21 = scopeClarification();
+    tmp21Result = scopeClarification();
   }
-  cResult[4] = tmp16;
+  cResult[4] = tmp15;
   cResult[5] = conjureEligibleGuilds;
   cResult[6] = guild_id;
-  cResult[7] = tmp21;
-  tmp19 = tmp21;
+  cResult[7] = arg0;
+  cResult[8] = tmp21Result;
+  tmp18 = tmp21Result;
 }) : (function useConjureScopeSetupCard(arg0) {
   let closure_5;
   let fn;
+  let fn2;
   let guild_id;
   let handleAnswered;
   let intl;
   let stringResult;
-  let tmp10;
-  let tmp6;
-  let tmp8;
+  let tmp5;
+  let tmp7;
+  let tmp9;
   let tmpResult;
   _require = arg0;
   function settle() {
@@ -397,7 +430,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -450,7 +483,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp27) {
           closure_4 = tmp27;
@@ -473,67 +506,65 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let obj2 = require("useConjureProjects");
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds(obj);
   let obj3 = react;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(null), 2);
-  const tmp5 = _slicedToArray(react.useState(null), 2);
-  [tmp8, _asyncToGenerator] = _slicedToArray(react.useState(false), 2);
-  const tmp7 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = _slicedToArray(react.useState(null), 2);
-  [tmp10, _slicedToArray] = tmp9;
+  let tmp4 = _slicedToArray(react.useState(null), 2);
+  [tmp5, dependencyMap] = tmp4;
+  [tmp7, _asyncToGenerator] = _slicedToArray(react.useState(false), 2);
+  const tmp6 = _slicedToArray(react.useState(false), 2);
+  const tmp8 = _slicedToArray(react.useState(null), 2);
+  [tmp9, _slicedToArray] = tmp8;
   let install_scope_setup;
   if (stateFromStores != null) {
     install_scope_setup = stateFromStores.install_scope_setup;
   }
-  let tmp12 = "server" === tmp6;
-  if (!tmp12) {
-    let tmp13 = null == tmp6;
-    if (tmp13) {
+  let tmp11 = "server" === tmp5;
+  if (!tmp11) {
+    let tmp12 = null == tmp5;
+    if (tmp12) {
       let str = "choose_server";
-      tmp13 = "choose_server" === install_scope_setup;
+      tmp12 = "choose_server" === install_scope_setup;
     }
-    tmp12 = tmp13;
+    tmp11 = tmp12;
   }
-  react = tmp12;
+  react = tmp11;
   guild_id = undefined;
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  const items2 = [tmp12, conjureEligibleGuilds, guild_id];
+  const items2 = [tmp11, conjureEligibleGuilds, guild_id, arg0];
   const memo = obj3.useMemo(() => {
-    let tmp3;
+    let tmp4Result;
     const tmp = closure_5;
     if (tmp) {
-      tmp3 = serverClarification(conjureEligibleGuilds, guild_id);
+      let heldConjurePromptGuildId = guild_id;
+      const tmp4 = serverClarification;
+      const tmp5 = conjureEligibleGuilds;
+      if (guild_id == null) {
+        obj = conjureScopeSetup;
+        heldConjurePromptGuildId = obj.getHeldConjurePromptGuildId(closure_0);
+      }
+      tmp4Result = tmp4(tmp5, heldConjurePromptGuildId);
     } else {
-      tmp3 = scopeClarification();
+      tmp4Result = scopeClarification();
     }
-    return tmp3;
+    return tmp4Result;
   }, items2);
   if (null == install_scope_setup) {
     return null;
   } else {
     if (null != stateFromStores) {
       if (settle(stateFromStores)) {
-        let obj4 = { clarification: memo, readOnly: false, onSubmit: handleAnswered, submitText: intl.string(tmp(1125).t["cY+Oob"]), onBack: fn, hideSubmit: false, failure: stringResult };
+        let obj4 = { clarification: memo, readOnly: false, onSubmit: handleAnswered, submitText: intl.string(tmp(1125).t["cY+Oob"]), onBack: fn, hideSubmit: false, serverStep: tmp11, onPickServer: fn2, failure: stringResult };
         handleAnswered = undefined;
-        if (!tmp8) {
+        if (!tmp7) {
           handleAnswered = function handleAnswered(arg0, arg1) {
             let first;
             if (arg1 != null) {
               first = arg1.answers[0];
             }
             if (null != first) {
-              const entities = first.entities;
-              if (entities != null) {
-                const first1 = entities[0];
-                if (first1 != null) {
-                  id = first1.id;
-                }
-              }
               const option_ids = first.option_ids;
               if (option_ids.includes(id3)) {
                 dependencyMap("server");
-              } else if (null != id) {
-                settle("guild", id);
               } else {
                 settle("user", null);
               }
@@ -542,20 +573,27 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         }
         intl = tmp(1125).intl;
         fn = undefined;
-        if (tmp12) {
-          if (!tmp8) {
+        if (tmp11) {
+          if (!tmp7) {
             fn = () => dependencyMap("scope");
           }
         }
+        if (tmp11) {
+          tmp11 = conjureEligibleGuilds.length > 0;
+        }
+        fn2 = undefined;
+        if (!tmp7) {
+          fn2 = (arg0) => settle("guild", arg0);
+        }
         stringResult = null;
-        if (null != tmp10) {
+        if (null != tmp9) {
           let jNVZ3e;
           const intl2 = tmp(1125).intl;
           const string = intl2.string;
-          if ("server" === tmp10) {
-            jNVZ3e = conjureEligibleGuilds(3863)["XXKd+7"];
+          if ("server" === tmp9) {
+            jNVZ3e = conjureEligibleGuilds(3864)["XXKd+7"];
           } else {
-            jNVZ3e = conjureEligibleGuilds(3863).jNVZ3e;
+            jNVZ3e = conjureEligibleGuilds(3864).jNVZ3e;
           }
           stringResult = string(jNVZ3e);
         }
@@ -563,12 +601,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(12341);
+    tmpResult = tmp(12395);
     return obj5;
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureScopeSwitchCard(projectId) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureScopeSwitchCard(projectId) {
   let d7jxeT;
   let first;
   let guild_id;
@@ -804,7 +842,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } else {
                       try {
@@ -853,7 +891,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
                             c4 = 0;
                           }
                           c6 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } catch (tmp26) {
                         closure_3 = tmp26;
@@ -979,7 +1017,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -1028,7 +1066,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp26) {
           closure_3 = tmp26;
@@ -1050,7 +1088,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(12355);
+  let obj2 = projectId(12409);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds(switchTo);
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -1072,7 +1110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
     const first = _slicedToArray(clarification.questions, 1)[0];
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const tmp7 = _modDef3863;
+    const tmp7 = _modDef3864;
     const tmp = clarification;
     if ("guild" === scope) {
       d7jxeT = tmp7["jh/iy+"];
@@ -1092,7 +1130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
       tmp12 = obj3;
     } else {
       const _HermesInternal = HermesInternal;
-      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(3863).TVRkVh) };
+      const obj4 = { id: "" + first.id + ":0", label: intl2.string(tmp8(3864).TVRkVh) };
       intl2 = tmp3(1125).intl;
       const items = [obj4];
       obj3.options = items;
@@ -1130,7 +1168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
       tmp11 = "guild" === scope;
       let tmp12 = clarification;
       string = intl.string;
-      const tmp13 = clarification(3863);
+      const tmp13 = clarification(3864);
       if (tmp11) {
         TVRkVh = tmp13.Ua7yKM;
         tmp14 = tmp12;
@@ -1153,16 +1191,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
       }
       let intl2 = tmp(1125).intl;
       string2 = intl2.string;
-      tmp14Result = tmp14(3863);
+      tmp14Result = tmp14(3864);
       string3Result = null;
       if (null != tmp8) {
         let jNVZ3e;
         const intl3 = tmp(1125).intl;
         const string3 = intl3.string;
         if ("locked" === tmp8) {
-          jNVZ3e = tmp14(3863).irUT0N;
+          jNVZ3e = tmp14(3864).irUT0N;
         } else {
-          jNVZ3e = tmp14(3863).jNVZ3e;
+          jNVZ3e = tmp14(3864).jNVZ3e;
         }
         string3Result = string3(jNVZ3e);
       }
@@ -1170,7 +1208,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSc
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(12341);
+  tmpResult = tmp(12395);
   return obj5;
 });
 let result = size.fileFinishedImporting("modules/conjure/scope_setup/useConjureScopeCards.tsx");

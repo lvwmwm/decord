@@ -1,14 +1,14 @@
-// Module ID: 9538
-// Function ID: 9539
+// Module ID: 9570
+// Function ID: 9571
 // Name: useGameProfileCommunities
-// Dependencies: [5, 2019, 9539, 504, 9540, 1101, 2]
+// Dependencies: [5, 2020, 9571, 504, 9572, 1101, 2]
 
-// Module 9538 (useGameProfileCommunities)
+// Module 9570 (useGameProfileCommunities)
 import DurationsDefault from "Durations" /* 1101 */;
-import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9540 */;
+import DiscoverableGuildsActionCreators from "DiscoverableGuildsActionCreators" /* 9572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2019 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9539 */;
+import GameStore from "GameStore" /* 2020 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9571 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let closure_6 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -107,7 +107,7 @@ let closure_6 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

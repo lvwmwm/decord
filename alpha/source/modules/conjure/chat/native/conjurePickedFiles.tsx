@@ -1,15 +1,15 @@
-// Module ID: 12517
-// Function ID: 12518
+// Module ID: 12576
+// Function ID: 12577
 // Name: conjurePickedFiles
-// Dependencies: [5, 8187, 8176, 8177, 12344, 8186, 8178, 2]
+// Dependencies: [5, 8210, 8199, 8200, 12398, 8209, 8201, 2]
 // Exports: pickConjurePhotos, pickedName, uploadConjurePickedFile
 
-// Module 12517 (conjurePickedFiles)
-import UploadDefault from "Upload" /* 8176 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
-import ImagePickerDefault from "ImagePicker" /* 8187 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12344 */;
+// Module 12576 (conjurePickedFiles)
+import UploadDefault from "Upload" /* 8199 */;
+import UploadPlatform from "UploadPlatform" /* 8200 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8209 */;
+import ImagePickerDefault from "ImagePicker" /* 8210 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12398 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _pickConjurePhotos() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ obj = function _uploadConjurePickedFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -247,7 +247,7 @@ obj = function _uploadConjurePickedFile() {
 };
 const result = size.fileFinishedImporting("modules/conjure/chat/native/conjurePickedFiles.tsx");
 
-export const pickedName = function pickedName(uri, name) {
+export function pickedName(uri, name) {
   let tmp = name;
   if (null == name) {
     const parts = uri.split("/");
@@ -258,10 +258,10 @@ export const pickedName = function pickedName(uri, name) {
     tmp = str3;
   }
   return tmp;
-};
-export const pickConjurePhotos = function pickConjurePhotos() {
+}
+export function pickConjurePhotos() {
   return obj(...arguments);
-};
-export const uploadConjurePickedFile = function uploadConjurePickedFile() {
+}
+export function uploadConjurePickedFile() {
   return obj(...arguments);
-};
+}

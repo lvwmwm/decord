@@ -1,12 +1,12 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 6064
+// Function ID: 6065
 // Name: getTimestampString
-// Dependencies: [1125, 2046, 2]
+// Dependencies: [1125, 2047, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 6060 (getTimestampString)
+// Module 6064 (getTimestampString)
 import intl7 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 function getDurationString(seconds) {
@@ -62,17 +62,17 @@ export default function getTimestampString(arg0) {
   let getFormatter;
   let obj2;
   let since;
-  const obj = { seconds: obj2.diff(_modDef2046(since), "s"), getFormatter };
+  const obj = { seconds: obj2.diff(_modDef2047(since), "s"), getFormatter };
   ({ since, getFormatter } = arg0);
-  obj2 = _modDef2046();
+  obj2 = _modDef2047();
   return getDurationString(obj);
 };
-export const getAbbreviatedFormatter = function getAbbreviatedFormatter() {
+export function getAbbreviatedFormatter() {
   const time = { minutes: intl7.t["XIGt+W"], hours: intl7.t.rhY1Rs, days: intl7.t.GBLpQ8, months: intl7.t.XzBNbS, years: intl7.t.I1E8p6 };
   return time;
-};
-export const getFullFormatter = function getFullFormatter() {
+}
+export function getFullFormatter() {
   const time = { minutes: intl7.t["GqQ/Y9"], hours: intl7.t.c5zfWZ, days: intl7.t.amjnaI, months: intl7.t.SoON3V, years: intl7.t["12B3Re"] };
   return time;
-};
+}
 export { getDurationString };

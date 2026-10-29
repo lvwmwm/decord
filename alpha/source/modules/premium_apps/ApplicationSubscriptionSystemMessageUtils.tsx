@@ -1,16 +1,16 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8407
+// Function ID: 8408
 // Name: ApplicationSubscriptionSystemMessageUtils
 // Dependencies: [1125, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8385 (ApplicationSubscriptionSystemMessageUtils)
+// Module 8407 (ApplicationSubscriptionSystemMessageUtils)
 import intl3 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 
-export const getApplicationSubscriptionSystemMessageASTContent = function getApplicationSubscriptionSystemMessageASTContent(arg0) {
+export function getApplicationSubscriptionSystemMessageASTContent(arg0) {
   let application;
   let formatToPartsResult;
   let username;
@@ -26,4 +26,4 @@ export const getApplicationSubscriptionSystemMessageASTContent = function getApp
     formatToPartsResult = intl.formatToParts(intl3.t.PUJtgi, obj);
   }
   return formatToPartsResult;
-};
+}

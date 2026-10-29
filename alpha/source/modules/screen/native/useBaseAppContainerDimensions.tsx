@@ -1,13 +1,13 @@
-// Module ID: 5191
-// Function ID: 5192
+// Module ID: 5192
+// Function ID: 5193
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1496, 1630, 558, 576, 2]
+// Dependencies: [19, 1497, 1631, 558, 576, 2]
 // Exports: getBaseAppContainerDimensions
 
-// Module 5191 (useBaseAppContainerDimensions)
+// Module 5192 (useBaseAppContainerDimensions)
 import react2 from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1630 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1631 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let size = size_mod;
 const result = size.fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
 
 export default tmp2;
-export const getBaseAppContainerDimensions = function getBaseAppContainerDimensions() {
+export function getBaseAppContainerDimensions() {
   let height;
   let width;
   const obj = useWindowDimensions;
@@ -63,4 +63,4 @@ export const getBaseAppContainerDimensions = function getBaseAppContainerDimensi
   const rect = obj2.getSafeAreaInsets();
   size = { width: width - rect.left - rect.right, height };
   return size;
-};
+}

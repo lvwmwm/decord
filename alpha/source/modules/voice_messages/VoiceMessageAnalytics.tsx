@@ -1,10 +1,10 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 13101
+// Function ID: 13102
 // Name: VoiceMessageAnalytics
 // Dependencies: [1084, 1264, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 12880 (VoiceMessageAnalytics)
+// Module 13101 (VoiceMessageAnalytics)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/voice_messages/VoiceMessageAnalytics.tsx");
 
 export const VoiceMessageRecordingResult = { SENT: "sent", CANCELLED_DURATION: "cancelled_duration", CANCELLED_USER_REQUESTED: "cancelled_user_requested", CANCELLED_GESTURE_CONFLICT: "cancelled_gesture_conflict", CANCELLED_ON_BACKGROUND: "cancelled_on_background" };
-export const logVoiceMessagePlaybackStarted = function logVoiceMessagePlaybackStarted(messageId, totalDurationSecs, startDurationSecs, id) {
+export function logVoiceMessagePlaybackStarted(messageId, totalDurationSecs, startDurationSecs, id) {
   let min;
   let tmp = totalDurationSecs;
   const obj = { message_id: messageId, total_duration_secs: totalDurationSecs, start_duration_secs: min(tmp, startDurationSecs), sender_user_id: id };
@@ -26,8 +26,8 @@ export const logVoiceMessagePlaybackStarted = function logVoiceMessagePlaybackSt
     tmp = startDurationSecs;
   }
   track(VOICE_MESSAGE_PLAYBACK_STARTED, obj);
-};
-export const logVoiceMessagePlaybackEnded = function logVoiceMessagePlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs) {
+}
+export function logVoiceMessagePlaybackEnded(messageId, totalDurationSecs, endDurationSecs, id, durationListeningSecs) {
   let min;
   let tmp = totalDurationSecs;
   const obj = { message_id: messageId, total_duration_secs: totalDurationSecs, end_duration_secs: min(tmp, endDurationSecs), sender_user_id: id, duration_listening_secs: durationListeningSecs };
@@ -40,9 +40,9 @@ export const logVoiceMessagePlaybackEnded = function logVoiceMessagePlaybackEnde
     tmp = endDurationSecs;
   }
   track(VOICE_MESSAGE_PLAYBACK_ENDED, obj);
-};
-export const logVoiceMessagePlaybackFailed = function logVoiceMessagePlaybackFailed(messageId, errorMessage) {
+}
+export function logVoiceMessagePlaybackFailed(messageId, errorMessage) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { message_id: messageId, error_message: errorMessage };
   obj.track(AnalyticEvents.VOICE_MESSAGE_PLAYBACK_FAILED, obj2);
-};
+}

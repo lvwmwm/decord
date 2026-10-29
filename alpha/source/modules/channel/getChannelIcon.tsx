@@ -1,13 +1,13 @@
-// Module ID: 14575
-// Function ID: 14576
+// Module ID: 14809
+// Function ID: 14810
 // Name: getChannelIcon
-// Dependencies: [32, 1389, 1084, 1385, 1414, 2]
+// Dependencies: [32, 1389, 1084, 1385, 1415, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 14575 (getChannelIcon)
+// Module 14809 (getChannelIcon)
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/channel/getChannelIcon.tsx");
 
-export const getChannelIconURL = function getChannelIconURL(type) {
+export function getChannelIconURL(type) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 32;
@@ -37,8 +37,8 @@ export const getChannelIconURL = function getChannelIconURL(type) {
     AvatarUtilsDefault;
     return getChannelIconURL(obj);
   }
-};
-export const getChannelIconSource = function getChannelIconSource(type) {
+}
+export function getChannelIconSource(type) {
   type = type.type;
   if (ChannelTypes.DM === type) {
     const recipients = type.recipients;
@@ -56,4 +56,4 @@ export const getChannelIconSource = function getChannelIconSource(type) {
     AvatarUtilsDefault;
     return getChannelIconSource(obj);
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16907
+// Function ID: 16908
 // Name: OrbsArcadeRewardUtils
-// Dependencies: [16663, 1125, 2]
+// Dependencies: [16901, 1125, 2]
 // Exports: getOrbsArcadeClaimableRewards, getOrbsArcadeFocusedReward, getOrbsArcadeRewardScoreLabel, getOrbsArcadeRewardStatus, hasOrbsArcadeUnclaimedRewards, hasOrbsArcadeUnlockedRewards, isOrbsArcadeEnrollmentOver, mustClaimOrbsArcadeRewardsToPlay
 
-// Module 16669 (OrbsArcadeRewardUtils)
+// Module 16907 (OrbsArcadeRewardUtils)
 import intl2 from "intl" /* 1125 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16901 */;
 import size from "module_2" /* 2 */;
 
-const f127845 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f129408 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 const result = size.fileFinishedImporting("modules/orbs_arcade/utils/OrbsArcadeRewardUtils.tsx");
 
-export const getOrbsArcadeRewardStatus = function getOrbsArcadeRewardStatus(id, gameState) {
+export function getOrbsArcadeRewardStatus(id, gameState) {
   let LOCKED;
   let tmp;
   if (gameState != null) {
@@ -36,8 +36,8 @@ export const getOrbsArcadeRewardStatus = function getOrbsArcadeRewardStatus(id, 
     }
   }
   return LOCKED;
-};
-export const getOrbsArcadeFocusedReward = function getOrbsArcadeFocusedReward(rewards, stateFromStores) {
+}
+export function getOrbsArcadeFocusedReward(rewards, stateFromStores) {
   let closure_0 = stateFromStores;
   const items = [...rewards];
   const sorted = items.sort((scoreTarget, scoreTarget2) => scoreTarget.scoreTarget - scoreTarget2.scoreTarget);
@@ -50,8 +50,8 @@ export const getOrbsArcadeFocusedReward = function getOrbsArcadeFocusedReward(re
     }
     return null == claimedAt;
   });
-};
-export const getOrbsArcadeClaimableRewards = function getOrbsArcadeClaimableRewards(rewards, gameStateForGame) {
+}
+export function getOrbsArcadeClaimableRewards(rewards, gameStateForGame) {
   let closure_0 = gameStateForGame;
   const found = rewards.filter((item) => {
     let tmp2;
@@ -65,8 +65,8 @@ export const getOrbsArcadeClaimableRewards = function getOrbsArcadeClaimableRewa
     return null != pendingAt && null == tmp2.claimedAt;
   });
   return found.sort((scoreTarget, scoreTarget2) => scoreTarget.scoreTarget - scoreTarget2.scoreTarget);
-};
-export const hasOrbsArcadeUnlockedRewards = function hasOrbsArcadeUnlockedRewards(stateFromStores1) {
+}
+export function hasOrbsArcadeUnlockedRewards(stateFromStores1) {
   let rewardGrants;
   const _Object = Object;
   if (stateFromStores1 != null) {
@@ -77,8 +77,8 @@ export const hasOrbsArcadeUnlockedRewards = function hasOrbsArcadeUnlockedReward
   }
   const values2 = values(rewardGrants);
   return values2.some((pendingAt) => null != pendingAt.pendingAt);
-};
-export const hasOrbsArcadeUnclaimedRewards = function hasOrbsArcadeUnclaimedRewards(stateFromStores1) {
+}
+export function hasOrbsArcadeUnclaimedRewards(stateFromStores1) {
   let rewardGrants;
   const _Object = Object;
   if (stateFromStores1 != null) {
@@ -88,9 +88,9 @@ export const hasOrbsArcadeUnclaimedRewards = function hasOrbsArcadeUnclaimedRewa
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f127845);
-};
-export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(gameStateForGame) {
+  return values2.some(f129408);
+}
+export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -108,11 +108,11 @@ export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(ga
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f127845);
+    tmp = !values2.some(f129408);
   }
   return tmp;
-};
-export const mustClaimOrbsArcadeRewardsToPlay = function mustClaimOrbsArcadeRewardsToPlay(stateFromStores) {
+}
+export function mustClaimOrbsArcadeRewardsToPlay(stateFromStores) {
   let someResult = null != stateFromStores.expiresAt;
   if (someResult) {
     const _Date = Date;
@@ -130,11 +130,11 @@ export const mustClaimOrbsArcadeRewardsToPlay = function mustClaimOrbsArcadeRewa
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f127845);
+    someResult = values2.some(f129408);
   }
   return someResult;
-};
-export const getOrbsArcadeRewardScoreLabel = function getOrbsArcadeRewardScoreLabel(reward, orbsArcadeRewardStatus) {
+}
+export function getOrbsArcadeRewardScoreLabel(reward, orbsArcadeRewardStatus) {
   let Q8Vv0m;
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
@@ -145,4 +145,4 @@ export const getOrbsArcadeRewardScoreLabel = function getOrbsArcadeRewardScoreLa
   }
   const obj = { score: reward.scoreTarget };
   return formatToPlainString(Q8Vv0m, obj);
-};
+}

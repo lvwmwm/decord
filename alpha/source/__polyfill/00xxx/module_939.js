@@ -252,10 +252,10 @@ function makeDOMEventHandler(arg0) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addClickKeypressInstrumentationHandler = function addClickKeypressInstrumentationHandler(arg0) {
+export function addClickKeypressInstrumentationHandler(arg0) {
   const obj = _mod693;
   obj.addHandler("dom", arg0);
   const obj2 = _mod693;
   obj2.maybeInstrument("dom", instrumentDOM);
-};
+}
 export { instrumentDOM };

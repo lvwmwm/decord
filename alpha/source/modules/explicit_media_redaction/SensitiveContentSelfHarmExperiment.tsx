@@ -1,12 +1,12 @@
-// Module ID: 7428
-// Function ID: 7429
+// Module ID: 7451
+// Function ID: 7452
 // Name: SensitiveContentSelfHarmExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isSensitiveContentSelfHarmEnabled
 
-// Module 7428 (SensitiveContentSelfHarmExperiment)
+// Module 7451 (SensitiveContentSelfHarmExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/explicit_media_redaction/Sens
 
 export const SensitiveContentSelfHarmExperiment = apexExperiment;
 export const useIsSensitiveContentSelfHarmEnabled = tmp3;
-export const isSensitiveContentSelfHarmEnabled = function isSensitiveContentSelfHarmEnabled(location) {
+export function isSensitiveContentSelfHarmEnabled(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

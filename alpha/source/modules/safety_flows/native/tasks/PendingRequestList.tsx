@@ -1,21 +1,21 @@
-// Module ID: 19747
-// Function ID: 19748
+// Module ID: 19969
+// Function ID: 19970
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1389, 21, 5004, 587, 1199, 558, 576, 504, 19745, 19748, 1414, 5270, 1125, 2833, 6944, 2535, 9249, 16483, 16435, 5699, 19749, 14458, 16440, 6013, 2]
+// Dependencies: [19, 17, 1389, 21, 5005, 587, 1199, 558, 576, 504, 19967, 19970, 1415, 5271, 1125, 2834, 6968, 2536, 9253, 16721, 16673, 5701, 19971, 14692, 16678, 6015, 2]
 
-// Module 19747 (PendingRequestList)
+// Module 19969 (PendingRequestList)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import _modDef2833 from "module_2833" /* 2833 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 16435 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16483 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import _modDef2834 from "module_2834" /* 2834 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 16673 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16721 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -430,11 +430,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   if (avatar == null) {
     avatar = request.parent_avatar;
   }
-  const tmp2Result = request(19745);
+  const tmp2Result = request(19967);
   const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
   ({ isConnected, isResolved } = pendingRequestResolution);
   const obj2 = { style: tmp.row, children: items1 };
-  const tmp2Result2 = request(19748);
+  const tmp2Result2 = request(19970);
   const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
   const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
   const Avatar = tmp2(1199).Avatar;
@@ -442,20 +442,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   obj6 = AvatarUtilsDefault;
   items1 = [closure_7(Avatar, obj3), , ];
   const obj5 = { style: tmp.details, children: items2 };
-  items2 = [closure_7(request(5270).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
+  items2 = [closure_7(request(5271).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
   let tmp13Result = username1 !== globalName;
   if (tmp13Result) {
     const obj7 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: username1 };
-    tmp13Result = tmp13(tmp2(5270).Text, obj7);
+    tmp13Result = tmp13(tmp2(5271).Text, obj7);
   }
   items2[1] = tmp13Result;
-  items2[2] = closure_7(request(5270).Text, { variant: "text-xs/medium", color: "text-muted", children: result });
+  items2[2] = closure_7(request(5271).Text, { variant: "text-xs/medium", color: "text-muted", children: result });
   items1[1] = closure_8(closure_5, obj5);
   if (isResolved) {
-    const Text = tmp2(5270).Text;
+    const Text = tmp2(5271).Text;
     const intl3 = tmp2(1125).intl;
     const string = intl3.string;
-    const tmp14Result = _modDef2833;
+    const tmp14Result = _modDef2834;
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: string(isConnected ? tmp14Result.YQP5dE : tmp14Result["2HvOvh"]) };
     tmp13Result5 = tmp13(Text, obj8);
   } else {
@@ -464,7 +464,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
     if (tmp13Result7) {
       const obj10 = {
         accessibilityRole: "button",
-        accessibilityLabel: intl.formatToPlainString(_modDef2535.jc1Ip7, obj11),
+        accessibilityLabel: intl.formatToPlainString(_modDef2536.jc1Ip7, obj11),
         disabled: actionsDisabled,
         onPress() {
               return importDefault(request.parent_id);
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
         style: items3,
         children: tmp13Result6
       };
-      const PressableOpacity = tmp2(6944).PressableOpacity;
+      const PressableOpacity = tmp2(6968).PressableOpacity;
       intl = tmp2(1125).intl;
       items3 = [, ];
       obj11 = { name: request.parent_username };
@@ -482,7 +482,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
         tmp13Result6 = tmp13(closure_4, obj12);
       } else {
         const obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
-        const CheckmarkLargeBoldIcon = tmp2(9249).CheckmarkLargeBoldIcon;
+        const CheckmarkLargeBoldIcon = tmp2(9253).CheckmarkLargeBoldIcon;
         tmp13Result6 = tmp13(CheckmarkLargeBoldIcon, obj13);
       }
       tmp13Result7 = tmp13(PressableOpacity, obj10);
@@ -490,7 +490,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
     items4 = [tmp13Result7, ];
     const obj14 = {
       accessibilityRole: "button",
-      accessibilityLabel: intl2.formatToPlainString(_modDef2535["4GtllP"], obj15),
+      accessibilityLabel: intl2.formatToPlainString(_modDef2536["4GtllP"], obj15),
       disabled: actionsDisabled,
       onPress() {
           return dependencyMap(request.parent_id);
@@ -498,7 +498,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
       style: items5,
       children: tmp13Result8
     };
-    const PressableOpacity2 = tmp2(6944).PressableOpacity;
+    const PressableOpacity2 = tmp2(6968).PressableOpacity;
     intl2 = tmp2(1125).intl;
     items5 = [, ];
     obj15 = { name: request.parent_username };
@@ -1022,8 +1022,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   items1 = [, , ];
   const obj6 = { style: tmp.dividerLine };
   items1[0] = c7(c5, obj6);
-  const obj7 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted", children: intl.string(_modDef2833["/SbB94"]) };
-  const Text = tmp5(5270).Text;
+  const obj7 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted", children: intl.string(_modDef2834["/SbB94"]) };
+  const Text = tmp5(5271).Text;
   intl = tmp5(1125).intl;
   items1[1] = c7(Text, obj7);
   const obj8 = { style: tmp.dividerLine };
@@ -1036,25 +1036,25 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   const obj10 = { style: tmp.inviteIconContainer, children: c7(require("PlaneIllocon").PlaneIllocon, { size: 32 }) };
   items3[0] = c7(c5, obj10);
   const obj11 = { style: tmp.details, children: items4 };
-  const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2833.z9gkwZ) };
-  const Text2 = tmp5(5270).Text;
+  const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2834.z9gkwZ) };
+  const Text2 = tmp5(5271).Text;
   intl2 = tmp5(1125).intl;
   items4 = [c7(Text2, obj12), ];
-  const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl3.string(_modDef2833["9t4+vC"]) };
-  const Text3 = tmp5(5270).Text;
+  const obj13 = { variant: "text-xs/medium", color: "text-default", children: intl3.string(_modDef2834["9t4+vC"]) };
+  const Text3 = tmp5(5271).Text;
   intl3 = tmp5(1125).intl;
   items4[1] = c7(Text3, obj13);
   items3[1] = tmp7(c5, obj11);
   const obj14 = { style: tmp.actions, children: items6 };
   const obj15 = { accessibilityRole: "button", accessibilityLabel: intl4.string(require("intl").t.Ej3B3Y), onPress: onShare, style: items5, children: c7(require("ShareIcon").ShareIcon, obj16) };
-  const PressableOpacity = tmp5(6944).PressableOpacity;
+  const PressableOpacity = tmp5(6968).PressableOpacity;
   intl4 = tmp5(1125).intl;
   items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj16 = { size: "sm", color: tmp.declineIcon.color };
   items6 = [c7(PressableOpacity, obj15), ];
-  const obj17 = { accessibilityRole: "button", accessibilityLabel: intl5.string(_modDef2833.z9gkwZ), onPress: onInviteAnotherGuardian, style: items7, children: c7(require("QrCodeIcon").QrCodeIcon, obj18) };
-  const PressableOpacity2 = tmp5(6944).PressableOpacity;
+  const obj17 = { accessibilityRole: "button", accessibilityLabel: intl5.string(_modDef2834.z9gkwZ), onPress: onInviteAnotherGuardian, style: items7, children: c7(require("QrCodeIcon").QrCodeIcon, obj18) };
+  const PressableOpacity2 = tmp5(6968).PressableOpacity;
   intl5 = tmp5(1125).intl;
   items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);

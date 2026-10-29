@@ -1,24 +1,24 @@
-// Module ID: 19324
-// Function ID: 19325
+// Module ID: 19557
+// Function ID: 19558
 // Name: getRuleInfo
-// Dependencies: [12870, 8598, 19325, 19327, 17510, 12193, 19328, 5714, 2]
+// Dependencies: [13091, 8620, 19558, 19560, 17749, 12247, 19561, 5716, 2]
 // Exports: getRuleInfo
 
-// Module 19324 (getRuleInfo)
-import LinkIcon from "LinkIcon" /* 5714 */;
-import AtIcon from "AtIcon" /* 8598 */;
-import RobotIcon from "RobotIcon" /* 12193 */;
-import Constants from "Constants" /* 12870 */;
-import MenuIcon from "MenuIcon" /* 17510 */;
-import ChannelListPlusIcon from "ChannelListPlusIcon" /* 19325 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19327 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 19328 */;
+// Module 19557 (getRuleInfo)
+import LinkIcon from "LinkIcon" /* 5716 */;
+import AtIcon from "AtIcon" /* 8620 */;
+import RobotIcon from "RobotIcon" /* 12247 */;
+import Constants from "Constants" /* 13091 */;
+import MenuIcon from "MenuIcon" /* 17749 */;
+import ChannelListPlusIcon from "ChannelListPlusIcon" /* 19558 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19560 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 19561 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
 const result = size.fileFinishedImporting("modules/guild_automod/native/getRuleInfo.tsx");
 
-export const getRuleInfo = function getRuleInfo(triggerType, rule) {
+export function getRuleInfo(triggerType, rule) {
   let tmp9;
   const obj = BaseRuleInfo;
   const baseRuleInfo = obj.getBaseRuleInfo(triggerType, rule);
@@ -57,4 +57,4 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
     }
   }
   return tmp4;
-};
+}

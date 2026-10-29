@@ -1,12 +1,12 @@
-// Module ID: 9485
-// Function ID: 9486
+// Module ID: 9516
+// Function ID: 9517
 // Name: TestModeUtils
-// Dependencies: [5661, 5660, 558, 576, 504, 2]
+// Dependencies: [5663, 5662, 558, 576, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication
 
-// Module 9485 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5661 */;
-import TestModeStore from "TestModeStore" /* 5660 */;
+// Module 9516 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5663 */;
+import TestModeStore from "TestModeStore" /* 5662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,12 +68,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTestMod
 });
 let result = size.fileFinishedImporting("modules/game_store/TestModeUtils.tsx");
 
-export const isTestModeForApplication = function isTestModeForApplication(applicationId) {
+export function isTestModeForApplication(applicationId) {
   const result = TestModeStore.inTestModeForApplication(applicationId) || DeveloperActivityShelfStore.inDevModeForApplication(applicationId);
   return result;
-};
-export const isAnyApplicationInTestMode = function isAnyApplicationInTestMode() {
+}
+export function isAnyApplicationInTestMode() {
   const isEnabled = null != TestModeStore.getTestModeApplicationId() || DeveloperActivityShelfStore.getIsEnabled();
   return isEnabled;
-};
+}
 export const useIsTestModeForApplication = tmp2;

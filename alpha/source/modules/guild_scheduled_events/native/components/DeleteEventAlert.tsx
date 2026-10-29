@@ -1,15 +1,15 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 9082
+// Function ID: 9083
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6819, 21, 5004, 558, 576, 504, 8922, 5246, 1125, 5270, 5950, 2]
+// Dependencies: [5, 19, 6842, 21, 5005, 558, 576, 504, 8925, 5247, 1125, 5271, 5952, 2]
 
-// Module 9079 (DeleteEventAlert)
+// Module 9082 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
-import createStyles from "createStyles" /* 5004 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj2 = guildId(recurrenceId[9]);
           obj2.hideActionSheet();
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp16) {
         c2 = 3;
@@ -303,7 +303,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -352,7 +352,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
             const obj2 = c1(c2[9]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp15) {
           c2 = 3;

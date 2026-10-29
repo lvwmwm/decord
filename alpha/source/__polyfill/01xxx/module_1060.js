@@ -10,7 +10,7 @@ import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 898 */;
 import reactNativeTracingIntegration from "reactNativeTracingIntegration" /* 1061 */;
 
 
-export const getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise) {
+export function getDefaultIntegrations(patchGlobalPromise) {
   const items = [];
   const push = items.push;
   const obj = _mod879;
@@ -201,4 +201,4 @@ export const getDefaultIntegrations = function getDefaultIntegrations(patchGloba
   const tmpResult66 = debugSymbolicatorIntegration;
   push32(tmpResult66.primitiveTagIntegration());
   return items;
-};
+}

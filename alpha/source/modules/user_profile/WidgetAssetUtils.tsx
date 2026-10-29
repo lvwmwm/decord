@@ -1,12 +1,12 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14891
+// Function ID: 14892
 // Name: WidgetAssetUtils
-// Dependencies: [1084, 1414, 2]
+// Dependencies: [1084, 1415, 2]
 // Exports: getWidgetAssetURL
 
-// Module 14656 (WidgetAssetUtils)
+// Module 14891 (WidgetAssetUtils)
 import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
 import size from "module_2" /* 2 */;
 
 let CDN_HOST;
@@ -14,7 +14,7 @@ let CDN_HOST;
 const DEFAULT_CDN_HOST = Constants.DEFAULT_CDN_HOST;
 const result = size.fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");
 
-export const getWidgetAssetURL = function getWidgetAssetURL(arg0, fileId, arg2) {
+export function getWidgetAssetURL(arg0, fileId, arg2) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -35,4 +35,4 @@ export const getWidgetAssetURL = function getWidgetAssetURL(arg0, fileId, arg2) 
     str = str2;
   }
   return "https://" + CDN_HOST + "/widget-assets/" + arg0 + "/" + fileId + "?format=" + str + "&animated=" + flag;
-};
+}

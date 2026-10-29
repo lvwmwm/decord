@@ -1,23 +1,23 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15223
+// Function ID: 15224
 // Name: PillText
-// Dependencies: [1084, 21, 5004, 587, 558, 576, 14989, 5270, 5294, 2]
+// Dependencies: [1084, 21, 5005, 587, 558, 576, 15224, 5271, 5295, 2]
 
-// Module 14988 (PillText)
+// Module 15223 (PillText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 14989 */;
-import createStyles from "createStyles" /* 5004 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 15224 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5270);
-const LinearGradientDefault = tmp5(5294);
+const Text_Text = tmp(5271);
+const LinearGradientDefault = tmp5(5295);
 const HorizontalGradient = Constants.HorizontalGradient;
 const jsx = Fragment.jsx;
 let obj = { pillTextContainer: obj2, pillText: { textTransform: "uppercase" } };

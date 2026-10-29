@@ -1,10 +1,10 @@
-// Module ID: 19520
-// Function ID: 19521
+// Module ID: 19753
+// Function ID: 19754
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1084, 1372, 1294, 584, 6845, 2]
+// Dependencies: [5, 1084, 1372, 1294, 584, 6868, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 19520 (CreatorMonetizationEligibilityActionCreators)
+// Module 19753 (CreatorMonetizationEligibilityActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import ApplicationConstants from "ApplicationConstants" /* 1372 */;
@@ -27,7 +27,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -99,7 +99,7 @@ obj = function _acceptCreatorMonetizationTerms() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -131,7 +131,7 @@ obj = function _acceptCreatorMonetizationTerms() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -155,7 +155,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -253,7 +253,7 @@ obj = function _requestRemoveMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _requestRemoveMonetization() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -312,7 +312,7 @@ obj = function _removeMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -373,40 +373,40 @@ const Endpoints = Constants.Endpoints;
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
 
-export const createCreatorMonetizationEnableRequest = function createCreatorMonetizationEnableRequest() {
+export function createCreatorMonetizationEnableRequest() {
   return obj(...arguments);
-};
-export const getCreatorMonetizationEligibility = function getCreatorMonetizationEligibility() {
+}
+export function getCreatorMonetizationEligibility() {
   return obj(...arguments);
-};
-export const acceptCreatorMonetizationTerms = function acceptCreatorMonetizationTerms() {
+}
+export function acceptCreatorMonetizationTerms() {
   return obj(...arguments);
-};
-export const acceptCreatorMonetizationTermsV2 = function acceptCreatorMonetizationTermsV2() {
+}
+export function acceptCreatorMonetizationTermsV2() {
   return obj(...arguments);
-};
-export const getCreatorMonetizationOnboardingMarketing = function getCreatorMonetizationOnboardingMarketing() {
+}
+export function getCreatorMonetizationOnboardingMarketing() {
   return obj(...arguments);
-};
-export const ownershipTransferOnboard = function ownershipTransferOnboard() {
+}
+export function ownershipTransferOnboard() {
   return obj(...arguments);
-};
-export const acceptNewTerms = function acceptNewTerms(arg0) {
+}
+export function acceptNewTerms(arg0) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const post = HTTP.post;
   obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS(arg0), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return post(obj);
-};
-export const acceptNewTermsDemonetized = function acceptNewTermsDemonetized(arg0) {
+}
+export function acceptNewTermsDemonetized(arg0) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const post = HTTP.post;
   obj = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED(arg0), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return post(obj);
-};
-export const removeMonetization = function removeMonetization() {
+}
+export function removeMonetization() {
   return obj(...arguments);
-};
+}

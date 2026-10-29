@@ -1,17 +1,17 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16655
+// Function ID: 16656
 // Name: HarvesterUtils
-// Dependencies: [32, 19, 1389, 15284, 16418, 558, 576, 504, 2]
+// Dependencies: [32, 19, 1389, 15519, 16656, 558, 576, 504, 2]
 // Exports: harvestDisabled
 
-// Module 16417 (HarvesterUtils)
+// Module 16655 (HarvesterUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import HarvesterConstants from "HarvesterConstants" /* 16418 */;
+import HarvesterConstants from "HarvesterConstants" /* 16656 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import DataHarvestStore from "DataHarvestStore" /* 15284 */;
+import DataHarvestStore from "DataHarvestStore" /* 15519 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,16 +168,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
   let obj6;
   let ref;
   let tmp3;
-  const f126826 = () => Date.now();
+  const f128385 = () => Date.now();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [DataHarvestStore];
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => harvestType.harvestType);
-  [tmp3, require] = react.useState(f126826);
+  [tmp3, require] = react.useState(f128385);
   let sum = tmp3;
-  _slicedToArray(react.useState(f126826), 2);
+  _slicedToArray(react.useState(f128385), 2);
   if (null != stateFromStores1) {
     const _Date = Date;
     const self = this;
@@ -227,7 +227,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
 });
 const result = size.fileFinishedImporting("modules/harvester/HarvesterUtils.tsx");
 
-export const harvestDisabled = function harvestDisabled(created_at, stateFromStores) {
+export function harvestDisabled(created_at, stateFromStores) {
   const verified = stateFromStores.verified;
   let tmp = !verified;
   if (verified) {
@@ -248,5 +248,5 @@ export const harvestDisabled = function harvestDisabled(created_at, stateFromSto
     tmp = isStaffResult;
   }
   return tmp;
-};
+}
 export const useRequestHarvestStatus = tmp2;

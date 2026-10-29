@@ -1,10 +1,10 @@
-// Module ID: 19609
-// Function ID: 19610
+// Module ID: 19842
+// Function ID: 19843
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
-// Dependencies: [1266, 1271, 558, 576, 4919, 2]
+// Dependencies: [1266, 1271, 558, 576, 4920, 2]
 // Exports: initializeImperatively, resetImperatively
 
-// Module 19609 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 19842 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1271 */;
 import module_1266 from "module_1266" /* 1266 */;
@@ -12,8 +12,8 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _slicedToArray = tmp(4919);
-let closure_2 = Object.freeze({ name: "", emojiId: "ix", emojiName: "test", description: "uri", refId: "ix" });
+const _slicedToArray = tmp(4920);
+let closure_2 = Object.freeze({ name: "", emojiId: "ix", emojiName: "concat", description: "url", refId: "application" });
 let closure_3 = module_1266.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
@@ -185,11 +185,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefIdSt
 });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx");
 
-export const resetImperatively = function resetImperatively() {
+export function resetImperatively() {
   const state = closure_3.getState();
   state.reset();
-};
-export const initializeImperatively = function initializeImperatively(benefit) {
+}
+export function initializeImperatively(benefit) {
   let setDescription;
   let setEmojiId;
   let setEmojiName;
@@ -207,7 +207,7 @@ export const initializeImperatively = function initializeImperatively(benefit) {
   if (null != benefit.ref_id) {
     setRefId(benefit.ref_id);
   }
-};
+}
 export const useDescriptionState = tmp2;
 export const useEmojiIdState = tmp3;
 export const useEmojiNameState = tmp4;

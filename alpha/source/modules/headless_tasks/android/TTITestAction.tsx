@@ -1,26 +1,26 @@
-// Module ID: 19801
-// Function ID: 19802
+// Module ID: 20023
+// Function ID: 20024
 // Name: TTITestAction
-// Dependencies: [5, 19001, 5226, 6895, 502, 4856, 5039, 4878, 1084, 3, 584, 5193, 14027, 19156, 1375, 1380, 1264, 5186, 7601, 12911, 9751, 5743, 6703, 8900, 5744, 11779, 17205, 1209, 2]
+// Dependencies: [5, 19234, 5227, 6919, 502, 4857, 5040, 4879, 1084, 3, 584, 5194, 14260, 19391, 1375, 1380, 1264, 5187, 7624, 13132, 9783, 5745, 6727, 8903, 5746, 11833, 17444, 1209, 2]
 
-// Module 19801 (TTITestAction)
+// Module 20023 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtils from "AnalyticsUtils" /* 1264 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1375 */;
 import react_native from "react-native" /* 1380 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import react_nativeDefault from "react-native" /* 5193 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6703 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6895 */;
-import ComponentProfiler from "ComponentProfiler" /* 14027 */;
-import NativeAppStartup from "NativeAppStartup" /* 19001 */;
-import react_nativeDefault2 from "react-native" /* 19156 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import react_nativeDefault from "react-native" /* 5194 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6727 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6919 */;
+import ComponentProfiler from "ComponentProfiler" /* 14260 */;
+import NativeAppStartup from "NativeAppStartup" /* 19234 */;
+import react_nativeDefault2 from "react-native" /* 19391 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5226 */;
+import ExperimentStore from "ExperimentStore" /* 5227 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5039 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5040 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,7 @@ let obj = function _captureNavigationTTI() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ let obj = function _captureNavigationTTI() {
               if (true !== closure_0.coldMessageCache) {
                 closure_132_18("error", "Artificial content delay requires a cold message cache");
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const obj13 = { channelId: closure_0.toChannelId, delayMs, actions: [], timer: null };
               }
@@ -208,7 +208,7 @@ let obj = function _captureNavigationTTI() {
             obj5.transitionToChannel(closure_0.toChannelId, { navigationReplace: false });
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp88) {
         c6 = 3;
@@ -235,7 +235,7 @@ obj = function _navigateToDMs() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _navigateToDMs() {
             closure_129_18("success", "Navigation reset to DMs");
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -383,7 +383,7 @@ obj = function _setupTTITest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
             break;
           }
@@ -521,7 +521,7 @@ obj = function _setupTTITest() {
             } else {
               closure_131_18("error", message.message);
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
             break;
           }
@@ -656,7 +656,7 @@ obj = function _setupTTITest() {
                   } else {
                     closure_131_18("error", error1.message);
                     c7 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   const tmp183 = flag;
@@ -683,7 +683,7 @@ obj = function _setupTTITest() {
                 } else {
                   closure_131_18("error", error2.message);
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } else {
                 const tmp53 = flag;
@@ -802,7 +802,7 @@ obj = function _setupTTITest() {
               } else {
                 closure_131_18("error", error3.message);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
             break;
@@ -844,7 +844,7 @@ obj = function _setupTTITest() {
                 closure_131_18("success", "Setup Complete");
               }
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
             break;
           }
@@ -883,7 +883,7 @@ obj = function _apiLogin() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f164988 = () => {
+            const f166675 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f164988(arg0);
+              return f166675(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f164988(arg0);
+    return f166675(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -1241,7 +1241,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1275,7 +1275,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } else {
                 try {
@@ -1289,7 +1289,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } catch (tmp3) {
                   c0 = 3;
@@ -1405,7 +1405,7 @@ let closure_16 = _asyncToGenerator(async (arg0) => {
                     closure_136_18("error", "Failed to send backchannel reply", obj17);
                   }
                   c12 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } else if (arg0 === 1) {
                 c12 = 3;

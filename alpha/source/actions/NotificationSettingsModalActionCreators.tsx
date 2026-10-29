@@ -1,20 +1,20 @@
-// Module ID: 7251
-// Function ID: 7252
+// Module ID: 7275
+// Function ID: 7276
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6739, 1084, 4949, 1094, 584, 7246, 7248, 11, 5011, 1125, 1402, 1294, 2]
+// Dependencies: [5, 6762, 1084, 4950, 1094, 584, 7270, 7272, 11, 5012, 1125, 1402, 1294, 2]
 
-// Module 7251 (NotificationSettingsModalActionCreators)
+// Module 7275 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import intl2 from "intl" /* 1125 */;
-import NotificationConstants from "NotificationConstants" /* 4949 */;
-import shared from "shared" /* 5011 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7246 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7248 */;
+import NotificationConstants from "NotificationConstants" /* 4950 */;
+import shared from "shared" /* 5012 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7270 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -184,7 +184,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp10) {
           c3 = 3;

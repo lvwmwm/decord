@@ -1,17 +1,17 @@
-// Module ID: 18427
-// Function ID: 18428
+// Module ID: 18661
+// Function ID: 18662
 // Name: PeopleScreen
-// Dependencies: [5, 19, 13485, 13470, 9748, 9747, 21, 558, 576, 13463, 504, 18369, 18365, 7448, 13477, 18428, 18361, 18373, 2]
+// Dependencies: [5, 19, 13718, 13703, 9780, 9779, 21, 558, 576, 13696, 504, 18603, 18599, 7471, 13710, 18662, 18595, 18607, 2]
 
-// Module 18427 (PeopleScreen)
+// Module 18661 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9747 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13477 */;
+import TrackingConstants from "TrackingConstants" /* 9779 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13485 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 13470 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13718 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 13703 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -301,7 +301,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const result = obj6.trackSearchResultClicked(obj7);
             tmp4(userId, channelId);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp9) {
           c5 = 3;
@@ -389,7 +389,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -423,7 +423,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp9) {
           c5 = 3;

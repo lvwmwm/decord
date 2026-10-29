@@ -1,16 +1,16 @@
-// Module ID: 18479
-// Function ID: 18480
+// Module ID: 18713
+// Function ID: 18714
 // Name: GuildThemeAnalyticsUtils
-// Dependencies: [4878, 2]
+// Dependencies: [4879, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 18479 (GuildThemeAnalyticsUtils)
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 18713 (GuildThemeAnalyticsUtils)
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");
 
-export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnalyticsMetadata(selectedGuildId) {
+export function collectGuildThemeAnalyticsMetadata(selectedGuildId) {
   if (null == selectedGuildId) {
     return null;
   } else {
@@ -41,4 +41,4 @@ export const collectGuildThemeAnalyticsMetadata = function collectGuildThemeAnal
       return { guild_theme_enabled: false, guild_theme_is_custom: false };
     }
   }
-};
+}

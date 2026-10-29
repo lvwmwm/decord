@@ -9,7 +9,7 @@ import _mod740 from "module_740" /* 740 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+export function createClientReportEnvelope(discarded_events, dsn, arg2) {
   let obj3;
   let result = arg2;
   const items = [{ type: "client_report" }, ];
@@ -28,4 +28,4 @@ export const createClientReportEnvelope = function createClientReportEnvelope(di
   }
   const items1 = [items];
   return createEnvelope(obj3, items1);
-};
+}

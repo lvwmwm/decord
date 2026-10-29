@@ -1,14 +1,14 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8731
+// Function ID: 8732
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1497, 558, 576, 1499, 2]
+// Dependencies: [19, 1498, 558, 576, 1500, 2]
 // Exports: getIsScreenLandscape
 
-// Module 8728 (useIsScreenLandscape)
+// Module 8731 (useIsScreenLandscape)
 import react2 from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1497 */;
+import DimensionsStore from "DimensionsStore" /* 1498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,11 +37,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsScree
 });
 const result = size.fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");
 
-export const getIsScreenLandscape = function getIsScreenLandscape() {
+export function getIsScreenLandscape() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "main";
   }
   return DimensionsStore.getState().byAppEntry[str].screenIsLandscape;
-};
+}
 export const useIsScreenLandscape = tmp2;

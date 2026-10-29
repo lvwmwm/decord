@@ -1,26 +1,55 @@
 // Module ID: 12712
 // Function ID: 12713
-// Dependencies: [12713, 12696, 12692]
+// Dependencies: [12657, 12701]
 
 // Module 12712
-import eventFromMessage from "eventFromMessage" /* 12696 */;
-import _mod12713 from "module_12713" /* 12713 */;
-import module_12692 from "module_12692" /* 12692 */;
+import tokenize from "tokenize" /* 12657 */;
+import tokenize2 from "tokenize" /* 12701 */;
 
-
-export const linkedErrorsIntegration = module_12692.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = obj.limit || 5;
-  let closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      const options = getOptions.getOptions();
-      const obj = _mod12713;
-      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
+let items;
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
+}
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const Semicolon = tokenize.TYPE.Semicolon;
+const obj = {
+  name: "DeclarationList",
+  structure: obj2,
+  parse() {
+    const self = this;
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      while (true) {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace !== tokenType) {
+          if (Comment !== tokenType) {
+            if (Semicolon !== tokenType) {
+              let arr = list.push(self.parseWithFallback(self.Declaration, consumeRaw));
+            }
+            if (self.scanner.eof) {
+              break;
+            }
+          }
+        }
+        let iter = self.scanner;
+        let nextResult = iter.next();
+      }
     }
-  };
-});
+    const element = { type: "DeclarationList", loc: self.getLocationFromList(list), children: list };
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0, function(type) {
+      if ("Declaration" === type.type) {
+        const self = this;
+        this.chunk(";");
+      }
+    });
+  }
+};
+obj2 = { children: items };
+items = [["Declaration"]];
+
+export default obj;

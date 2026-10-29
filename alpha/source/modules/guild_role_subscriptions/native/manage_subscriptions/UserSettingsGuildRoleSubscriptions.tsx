@@ -1,20 +1,20 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 17075
+// Function ID: 17076
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 5004, 558, 576, 5270, 1125, 1199, 16838, 16839, 16840, 16843, 16844, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 5271, 1125, 1199, 17076, 17077, 17078, 17081, 17082, 2]
 
-// Module 16837 (UserSettingsGuildRoleSubscriptions)
+// Module 17075 (UserSettingsGuildRoleSubscriptions)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 16838 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 16839 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 16843 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 16844 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 17076 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 17077 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 17081 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 17082 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const native = tmp(1199);
-const GuildRoleSubscriptionsHooks = tmp(16840);
+const GuildRoleSubscriptionsHooks = tmp(17078);
 function renderSectionHeader(section) {
   let tmp = null;
   if (section.section.key === c7) {
@@ -49,7 +49,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
   const sectionHeader = tmp4.sectionHeader;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl3.t["KzCF/6"]) };
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     intl = tmp(1125).intl;
     const tmp7 = hasOwnProperty(Text, obj2);
     cResult[0] = tmp7;

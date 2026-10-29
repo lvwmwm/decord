@@ -9,7 +9,7 @@ import customBubblingEventTypes from "customBubblingEventTypes" /* 66 */;
 
 let closure_2 = {};
 
-export const topLevelTypeToEventType = function topLevelTypeToEventType(str) {
+export function topLevelTypeToEventType(str) {
   const charCodeAtResult = str.charCodeAt(3);
   let formatted = str;
   if (str.startsWith("top")) {
@@ -23,8 +23,8 @@ export const topLevelTypeToEventType = function topLevelTypeToEventType(str) {
     }
   }
   return formatted;
-};
-export const getEventTypePropName = function getEventTypePropName(arg0, arg1) {
+}
+export function getEventTypePropName(arg0, arg1) {
   if (undefined !== closure_2[arg0]) {
     return arg1 ? closure_2[arg0].captured : closure_2[arg0].bubbled;
   } else {
@@ -102,4 +102,4 @@ export const getEventTypePropName = function getEventTypePropName(arg0, arg1) {
       }
     }
   }
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13702
+// Function ID: 13703
 // Name: SearchTokenStreamerModeUtils
-// Dependencies: [5059, 1084, 13467, 2]
+// Dependencies: [5060, 1084, 13700, 2]
 // Exports: getValidFilterTokens, isFromUserFilterSupported, isInChannelFilterSupported, isMentionsUserFilterSupported
 
-// Module 13469 (SearchTokenStreamerModeUtils)
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13467 */;
-import StreamerModeStore from "StreamerModeStore" /* 5059 */;
+// Module 13702 (SearchTokenStreamerModeUtils)
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13700 */;
+import StreamerModeStore from "StreamerModeStore" /* 5060 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ function getValidOrderedFilterTokens(type, items) {
 ({ SearchTokenTypes: c3, SearchTypes: closure_4 } = Constants);
 let result = size.fileFinishedImporting("modules/search/tokens/SearchTokenStreamerModeUtils.tsx");
 
-export const isFromUserFilterSupported = function isFromUserFilterSupported() {
+export function isFromUserFilterSupported() {
   let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
@@ -62,8 +62,8 @@ export const isFromUserFilterSupported = function isFromUserFilterSupported() {
   }
   [tmp3] = tmp;
   return !tmp3.hidePersonalInformation;
-};
-export const isMentionsUserFilterSupported = function isMentionsUserFilterSupported() {
+}
+export function isMentionsUserFilterSupported() {
   let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
@@ -72,8 +72,8 @@ export const isMentionsUserFilterSupported = function isMentionsUserFilterSuppor
   }
   [tmp3] = tmp;
   return !tmp3.hidePersonalInformation;
-};
-export const isInChannelFilterSupported = function isInChannelFilterSupported(selectedSearchContext) {
+}
+export function isInChannelFilterSupported(selectedSearchContext) {
   let tmp3;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -87,9 +87,9 @@ export const isInChannelFilterSupported = function isInChannelFilterSupported(se
     result = selectedSearchContext.type === constants2.DMS && !tmp3.hidePersonalInformation;
   }
   return result;
-};
+}
 export { getValidOrderedFilterTokens };
-export const getValidFilterTokens = function getValidFilterTokens(type, items) {
+export function getValidFilterTokens(type, items) {
   set = new Set(getValidOrderedFilterTokens(type, items));
   return set;
-};
+}

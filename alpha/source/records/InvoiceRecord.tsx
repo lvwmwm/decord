@@ -1,11 +1,11 @@
-// Module ID: 2058
-// Function ID: 2059
+// Module ID: 2059
+// Function ID: 2060
 // Name: InvoiceRecord
-// Dependencies: [1404, 1084, 2059, 2]
+// Dependencies: [1404, 1084, 2060, 2]
 
-// Module 2058 (InvoiceRecord)
+// Module 2059 (InvoiceRecord)
 import Constants from "Constants" /* 1084 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2059 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2060 */;
 import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
     let mapped;
     let paymentLegs;
     let tmp3;
-    const obj = { id: body.id, invoiceItems: mapped, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: new Date(body.subscription_period_start), subscriptionPeriodEnd: new Date(body.subscription_period_end), status: null, orbsReward: null, checkoutContext: null };
+    const obj = { id: body.id, invoiceItems: mapped, total: null, subtotal: null, currency: null, tax: null, taxInclusive: null, subscriptionPeriodStart: new Date(body.subscription_period_start), subscriptionPeriodEnd: new Date(body.subscription_period_end), status: null, orbsReward: null, checkoutContext: null, paymentLegs: null };
     const invoice_items = body.invoice_items;
     mapped = undefined;
     const tmp = InvoiceRecord;
@@ -153,7 +153,7 @@ class InvoiceRecord extends BaseInvoiceRecord {
     const _Date = Date;
     const _Date2 = Date;
     new Date(body.subscription_period_start);
-    ({ status: obj.status, orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext } = body);
+    ({ status: obj.status, orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext, payment_legs: obj.paymentLegs } = body);
     new Date(body.subscription_period_end);
     if (typeof tmp === "function") {
       const self = this;

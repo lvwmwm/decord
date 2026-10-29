@@ -1,20 +1,20 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12569
+// Function ID: 12570
 // Name: useConjureSafetyAlertsChannelPick
-// Dependencies: [19, 4934, 4916, 4878, 6808, 1084, 1096, 558, 576, 10768, 504, 6866, 7382, 4941, 12512, 2]
+// Dependencies: [19, 4935, 4917, 4879, 6831, 1084, 1096, 558, 576, 10843, 504, 6889, 7405, 4942, 12566, 2]
 
-// Module 12521 (useConjureSafetyAlertsChannelPick)
+// Module 12569 (useConjureSafetyAlertsChannelPick)
 import Constants from "Constants" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
-import ConjureUtils from "ConjureUtils" /* 7382 */;
-import conjureAppInServer from "conjureAppInServer" /* 10768 */;
-import ConjureClarification from "ConjureClarification" /* 12512 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+import ConjureUtils from "ConjureUtils" /* 7405 */;
+import conjureAppInServer from "conjureAppInServer" /* 10843 */;
+import ConjureClarification from "ConjureClarification" /* 12566 */;
 import react_mod from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import BigFlagUtils from "BigFlagUtils" /* 1096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

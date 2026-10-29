@@ -1,14 +1,14 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15556
+// Function ID: 15557
 // Name: PermissionSpeakStore
-// Dependencies: [4856, 4878, 510, 504, 584, 2]
+// Dependencies: [4857, 4879, 510, 504, 584, 2]
 
-// Module 15321 (PermissionSpeakStore)
+// Module 15556 (PermissionSpeakStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, channelId, suppress;

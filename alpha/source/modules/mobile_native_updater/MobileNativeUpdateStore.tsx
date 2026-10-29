@@ -1,14 +1,14 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 16140
+// Function ID: 16141
 // Name: MobileNativeUpdateStore
-// Dependencies: [5733, 3, 504, 584, 15415, 2]
+// Dependencies: [5735, 3, 504, 584, 15649, 2]
 
-// Module 15904 (MobileNativeUpdateStore)
+// Module 16140 (MobileNativeUpdateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MobileNativeUpdateUtils from "MobileNativeUpdateUtils" /* 15415 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5733 */;
+import MobileNativeUpdateUtils from "MobileNativeUpdateUtils" /* 15649 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5735 */;
 import size from "module_2" /* 2 */;
 
 let c3;

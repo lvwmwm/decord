@@ -1,10 +1,10 @@
-// Module ID: 5199
-// Function ID: 5200
+// Module ID: 5200
+// Function ID: 5201
 // Name: ZustandStore
-// Dependencies: [1266, 5200, 1271, 558, 576, 2]
+// Dependencies: [1266, 5201, 1271, 558, 576, 2]
 // Exports: createZustandStore
 
-// Module 5199 (ZustandStore)
+// Module 5200 (ZustandStore)
 import react from "react" /* 576 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ function defaultStatesAreEqual(arg0, arg1) {
 }
 const result = size.fileFinishedImporting("lib/ZustandStore.tsx");
 
-export const createZustandStore = function createZustandStore(arg0) {
+export function createZustandStore(arg0) {
   let closure_1;
   _require = arg0;
   let tmp = _require;
@@ -110,4 +110,4 @@ export const createZustandStore = function createZustandStore(arg0) {
     }
   };
   return store;
-};
+}

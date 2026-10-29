@@ -1,17 +1,17 @@
-// Module ID: 6819
-// Function ID: 6820
+// Module ID: 6842
+// Function ID: 6843
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 4916, 4862, 4931, 12, 11, 504, 584, 2]
+// Dependencies: [502, 4917, 4863, 4932, 12, 11, 504, 584, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6819 (GuildScheduledEventStore)
+// Module 6842 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4931 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4932 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_13;
@@ -596,7 +596,7 @@ let result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildSch
 export default guildScheduledEventStore;
 export { StaticGuildEventIndexes };
 export { scheduledEventSort };
-export const isGuildScheduledEventActive = function isGuildScheduledEventActive(status) {
+export function isGuildScheduledEventActive(status) {
   let tmp = null != status;
   if (tmp) {
     status = undefined;
@@ -606,16 +606,16 @@ export const isGuildScheduledEventActive = function isGuildScheduledEventActive(
     tmp = status === constants.ACTIVE;
   }
   return tmp;
-};
-export const isEventUpcoming = function isEventUpcoming(guild_scheduled_event) {
+}
+export function isEventUpcoming(guild_scheduled_event) {
   return !hasOwnProperty.has(guild_scheduled_event.status);
-};
-export const eventScheduledToStartWithin = function eventScheduledToStartWithin(scheduled_start_time, arg1) {
+}
+export function eventScheduledToStartWithin(scheduled_start_time, arg1) {
   const date = new Date(scheduled_start_time.scheduled_start_time);
   const time = date.getTime();
   return time < Date.now() + 1000 * arg1;
-};
-export const isGuildEventEnded = function isGuildEventEnded(guildScheduledEvent) {
+}
+export function isGuildEventEnded(guildScheduledEvent) {
   const hasItem = null != guildScheduledEvent && hasOwnProperty.has(guildScheduledEvent.status);
   return hasItem;
-};
+}

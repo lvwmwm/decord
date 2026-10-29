@@ -6,7 +6,7 @@
 
 // Module 1233 (reflectionMergePartial)
 
-export const reflectionMergePartial = function reflectionMergePartial(arg0, reflectionCreateResult, partialSettings) {
+export function reflectionMergePartial(arg0, reflectionCreateResult, partialSettings) {
   let length;
   let length2;
   let sum;
@@ -103,4 +103,4 @@ export const reflectionMergePartial = function reflectionMergePartial(arg0, refl
       tmp2[localName] = arr;
     }
   }
-};
+}

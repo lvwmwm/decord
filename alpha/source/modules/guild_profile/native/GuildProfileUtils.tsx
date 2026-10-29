@@ -1,16 +1,16 @@
-// Module ID: 9264
-// Function ID: 9265
+// Module ID: 9268
+// Function ID: 9269
 // Name: guild_profile/GuildProfileUtils
-// Dependencies: [32, 5005, 558, 576, 1414, 8651, 7695, 2]
+// Dependencies: [32, 5006, 558, 576, 1415, 8673, 7718, 2]
 // Exports: getProfilePrimaryColor
 
-// Module 9264 (guild_profile/GuildProfileUtils)
+// Module 9268 (guild_profile/GuildProfileUtils)
 import react from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef7695 from "module_7695" /* 7695 */;
-import useAvatarColor from "useAvatarColor" /* 8651 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import _modDef7718 from "module_7718" /* 7718 */;
+import useAvatarColor from "useAvatarColor" /* 8673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
 const result = size.fileFinishedImporting("modules/guild_profile/native/GuildProfileUtils.tsx");
 
 export const useProfilePrimaryColor = tmp2;
-export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfileFromInvite) {
+export function getProfilePrimaryColor(guildProfileFromInvite) {
   let h;
   let l;
   let s;
@@ -101,7 +101,7 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         [tmp4, tmp5, tmp6] = first;
         const obj = { r: tmp4, g: tmp5, b: tmp6 };
         _slicedToArray(first, 3);
-        const obj2 = _modDef7695(obj);
+        const obj2 = _modDef7718(obj);
         let num2 = 1;
         ({ h, s, l } = obj2.toHsl());
         obj2.toHsl();
@@ -109,11 +109,11 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
           num2 = AccessibilityStore.saturation;
         }
         const obj9 = { h, s: s * num2, l };
-        const obj4 = _modDef7695(obj9);
+        const obj4 = _modDef7718(obj9);
         return obj4.toHexString();
       } else {
         return null;
       }
     }
   }
-};
+}

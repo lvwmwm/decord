@@ -8,11 +8,11 @@
 import _mod699 from "module_699" /* 699 */;
 import _mod703 from "module_703" /* 703 */;
 
-const f87064 = (acc, item) => {
+const f88071 = (acc, item) => {
   let closure_0 = acc;
   const parts = item.split(",");
-  const mapped = parts.map(f87065);
-  const entries = Object.entries(mapped.reduce(f87066, {}));
+  const mapped = parts.map(f88072);
+  const entries = Object.entries(mapped.reduce(f88073, {}));
   item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -21,7 +21,7 @@ const f87064 = (acc, item) => {
   });
   return acc;
 };
-const f87065 = (arr) => {
+const f88072 = (arr) => {
   let items;
   const index = arr.indexOf("=");
   if (-1 === index) {
@@ -38,7 +38,7 @@ const f87065 = (arr) => {
   }
   return items;
 };
-const f87066 = (acc, item) => {
+const f88073 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -48,7 +48,7 @@ const f87066 = (acc, item) => {
   }
   return acc;
 };
-const f87067 = (acc, item, index) => {
+const f88074 = (acc, item, index) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -80,7 +80,7 @@ const re3 = tmp2;
 export const MAX_BAGGAGE_STRING_LENGTH = 8192;
 export const SENTRY_BAGGAGE_KEY_PREFIX = "sentry-";
 export const SENTRY_BAGGAGE_KEY_PREFIX_REGEX = tmp2;
-export const baggageHeaderToDynamicSamplingContext = function baggageHeaderToDynamicSamplingContext(arr) {
+export function baggageHeaderToDynamicSamplingContext(arr) {
   let tmp;
   if (arr) {
     const tmp2 = require;
@@ -90,12 +90,12 @@ export const baggageHeaderToDynamicSamplingContext = function baggageHeaderToDyn
       let reduced;
       const _Array2 = Array;
       if (Array.isArray(arr)) {
-        reduced = arr.reduce(f87064, {});
+        reduced = arr.reduce(f88071, {});
       } else {
         const str = ",";
         let parts = arr.split(",");
-        let mapped = parts.map(f87065);
-        reduced = mapped.reduce(f87066, {});
+        let mapped = parts.map(f88072);
+        reduced = mapped.reduce(f88073, {});
       }
       tmp = reduced;
     } else {
@@ -121,8 +121,8 @@ export const baggageHeaderToDynamicSamplingContext = function baggageHeaderToDyn
     }
     return tmp9;
   }
-};
-export const dynamicSamplingContextToSentryBaggageHeader = function dynamicSamplingContextToSentryBaggageHeader(arg0) {
+}
+export function dynamicSamplingContextToSentryBaggageHeader(arg0) {
   const tmp = arg0;
   if (tmp) {
     const tmp2 = globalThis;
@@ -143,19 +143,19 @@ export const dynamicSamplingContextToSentryBaggageHeader = function dynamicSampl
     if (0 !== Object.keys(reduced).length) {
       const _Object3 = Object;
       const entries1 = Object.entries(reduced);
-      reduced1 = entries1.reduce(f87067, "");
+      reduced1 = entries1.reduce(f88074, "");
     }
     return reduced1;
   }
-};
-export const objectToBaggageHeader = function objectToBaggageHeader(arg0) {
+}
+export function objectToBaggageHeader(arg0) {
   if (0 !== Object.keys(arg0).length) {
     const _Object = Object;
     const entries = Object.entries(arg0);
-    return entries.reduce(f87067, "");
+    return entries.reduce(f88074, "");
   }
-};
-export const parseBaggageHeader = function parseBaggageHeader(arr) {
+}
+export function parseBaggageHeader(arr) {
   const tmp = arr;
   if (tmp) {
     let reduced;
@@ -165,12 +165,12 @@ export const parseBaggageHeader = function parseBaggageHeader(arr) {
     }
     const _Array2 = Array;
     if (Array.isArray(arr)) {
-      reduced = arr.reduce(f87064, {});
+      reduced = arr.reduce(f88071, {});
     } else {
       const parts = arr.split(",");
-      const mapped = parts.map(f87065);
-      reduced = mapped.reduce(f87066, {});
+      const mapped = parts.map(f88072);
+      reduced = mapped.reduce(f88073, {});
     }
     return reduced;
   }
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 17699
-// Function ID: 17700
+// Module ID: 17937
+// Function ID: 17938
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5182, 9744, 1630, 5189, 5288, 10660, 17700, 5070, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5183, 9776, 1631, 5190, 5289, 10693, 17938, 5071, 2]
 
-// Module 17699 (MainTabs)
+// Module 17937 (MainTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5182 */;
-import useChatLayoutDefault from "useChatLayout" /* 5189 */;
-import useToken from "useToken" /* 5288 */;
-import useActiveTheme from "useActiveTheme" /* 9744 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10660 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17700 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5183 */;
+import useChatLayoutDefault from "useChatLayout" /* 5190 */;
+import useToken from "useToken" /* 5289 */;
+import useActiveTheme from "useActiveTheme" /* 9776 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10693 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17938 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const native = tmp(5070);
+const native = tmp(5071);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((paddingLeft, paddingRight, marginTop, top) => {
@@ -203,7 +203,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (left > 0 || right > 0) {
       tmp13 = null;
       if (!isChatLockedOpen) {
-        tmp13 = hasOwnProperty(tmp4(10660), { absolute: true, mix: true });
+        tmp13 = hasOwnProperty(tmp4(10693), { absolute: true, mix: true });
       }
     }
     cResult[3] = isChatLockedOpen;
@@ -247,7 +247,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (left > 0) {
     tmp8Result = null;
     if (!isChatLockedOpen) {
-      tmp8Result = tmp8(tmp(10660), { absolute: true, mix: true });
+      tmp8Result = tmp8(tmp(10693), { absolute: true, mix: true });
     }
   } else {
     tmp8Result = null;

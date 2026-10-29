@@ -1,20 +1,20 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17940
+// Function ID: 17941
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 4856, 4907, 5035, 1084, 4863, 5187, 5186, 558, 576, 5189, 2]
+// Dependencies: [32, 19, 4857, 4908, 5036, 1084, 4864, 5188, 5187, 558, 576, 5190, 2]
 // Exports: isActiveTabsGuilds
 
-// Module 17702 (useChannelScreensFromNavigation)
+// Module 17940 (useChannelScreensFromNavigation)
 import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import useChatLayoutDefault from "useChatLayout" /* 5189 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import useChatLayoutDefault from "useChatLayout" /* 5190 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -416,7 +416,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/us
 export default tmp2;
 export { ChannelScreenType };
 export { getActiveTabsRoute };
-export const isActiveTabsGuilds = function isActiveTabsGuilds(state) {
+export function isActiveTabsGuilds(state) {
   const first = state.routes[0];
   const obj = NavigationRouteUtils;
   const coerceTabsRouteResult = obj.coerceTabsRoute(first);
@@ -431,4 +431,4 @@ export const isActiveTabsGuilds = function isActiveTabsGuilds(state) {
     }
     return tmp7;
   }
-};
+}

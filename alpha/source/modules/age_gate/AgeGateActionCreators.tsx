@@ -1,15 +1,15 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 17889
+// Function ID: 17890
 // Name: AgeGateActionCreators
-// Dependencies: [1109, 1084, 17649, 1264, 1294, 17650, 584, 2]
+// Dependencies: [1109, 1084, 17887, 1264, 1294, 17888, 584, 2]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 17651 (AgeGateActionCreators)
+// Module 17889 (AgeGateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1109 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17649 */;
-import formatDateForAPIDefault from "formatDateForAPI" /* 17650 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17887 */;
+import formatDateForAPIDefault from "formatDateForAPI" /* 17888 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const AgeGateAnalyticAction = AgeGateConstants.AgeGateAnalyticAction;
 ({ AnalyticEvents: closure_4, Endpoints: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/age_gate/AgeGateActionCreators.tsx");
 
-export const submitDateOfBirth = function submitDateOfBirth(arg0, source) {
+export function submitDateOfBirth(arg0, source) {
   let obj3;
   _require = source;
   trackAgeGateSubmittedDefault(arg0, source);
@@ -41,18 +41,18 @@ export const submitDateOfBirth = function submitDateOfBirth(arg0, source) {
     const obj3 = { source, action: AgeGateAnalyticAction.AGE_GATE_SUCCESS };
     obj2.track(constants.AGE_GATE_ACTION, obj3);
   });
-};
-export const preventUnderageRegistration = function preventUnderageRegistration(REGISTER) {
+}
+export function preventUnderageRegistration(REGISTER) {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION" });
   const obj2 = AnalyticsUtilsDefault;
   const obj3 = { source: REGISTER, action: AgeGateAnalyticAction.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION };
   obj2.track(constants.AGE_GATE_ACTION, obj3);
-};
-export const logoutUnderageNewUser = function logoutUnderageNewUser(source) {
+}
+export function logoutUnderageNewUser(source) {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER" });
   const obj2 = AnalyticsUtilsDefault;
   const obj3 = { source, action: AgeGateAnalyticAction.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER };
   obj2.track(constants.AGE_GATE_ACTION, obj3);
-};
+}

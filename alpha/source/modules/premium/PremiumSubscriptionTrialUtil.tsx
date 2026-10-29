@@ -1,14 +1,14 @@
-// Module ID: 8463
-// Function ID: 8464
+// Module ID: 8485
+// Function ID: 8486
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1389, 2055, 7595, 1391, 558, 576, 504, 2]
+// Dependencies: [1389, 2056, 7618, 1391, 558, 576, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub
 
-// Module 8463 (PremiumSubscriptionTrialUtil)
+// Module 8485 (PremiumSubscriptionTrialUtil)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
-import UserOfferStore from "UserOfferStore" /* 7595 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
+import UserOfferStore from "UserOfferStore" /* 7618 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -136,18 +136,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentPr
   return tmp4;
 });
 const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionTrialUtil.tsx");
-const hasActiveTrial_export = function hasActiveTrial() {
+
+export const useHasActiveTrial = tmp3;
+export function hasActiveTrial() {
   const premiumTypeSubscription = SubscriptionStore.getPremiumTypeSubscription();
   let trialId;
   if (premiumTypeSubscription != null) {
     trialId = premiumTypeSubscription.trialId;
   }
   return null != trialId;
-};
-
-export const useHasActiveTrial = tmp3;
-export { hasActiveTrial_export as hasActiveTrial };
-export const isEligibleTrialSub = function isEligibleTrialSub(trialId) {
+}
+export function isEligibleTrialSub(trialId) {
   trialId = undefined;
   if (trialId != null) {
     trialId = trialId.trialId;
@@ -158,11 +157,11 @@ export const isEligibleTrialSub = function isEligibleTrialSub(trialId) {
     const tmp4 = trialId.trialId === hasOwnProperty || trialId.trialId === metroRequire || trialId.trialId === metroImportDefault || trialId.trialId === metroImportAll;
   }
   return tmp2;
-};
+}
 export const useCurrentPremiumTrialTier = tmp4;
-export const getPremiumTrialOffer = function getPremiumTrialOffer() {
+export function getPremiumTrialOffer() {
   let userTrialOffer;
   const mapped = React4.map((item) => userTrialOffer.getUserTrialOffer(item));
   const found = mapped.filter((hasExpired) => null != hasExpired && !hasExpired.hasExpired);
   return found.shift();
-};
+}

@@ -1,28 +1,28 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15234
+// Function ID: 15235
 // Name: useTimeUntilNextBadge
-// Dependencies: [19, 2046, 15000, 11149, 2]
+// Dependencies: [19, 2047, 15235, 11203, 2]
 // Exports: computeDaysUntilNextBadgeDate, useTimeUntilNextBadge
 
-// Module 14999 (useTimeUntilNextBadge)
+// Module 15234 (useTimeUntilNextBadge)
 import react from "react" /* 19 */;
-import _modDef2046 from "module_2046" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = react.useMemo;
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTimeUntilNextBadge.tsx");
 
-export const computeDaysUntilNextBadgeDate = function computeDaysUntilNextBadgeDate(arg0, arg1) {
-  const obj = _modDef2046(arg0);
+export function computeDaysUntilNextBadgeDate(arg0, arg1) {
+  const obj = _modDef2047(arg0);
   const addResult = obj.add(arg1, "months");
   const addResult1 = addResult.add(1, "day");
-  return max(0, addResult1.diff(_modDef2046(), "days"));
-};
-export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
+  return max(0, addResult1.diff(_modDef2047(), "days"));
+}
+export function useTimeUntilNextBadge() {
   let nextTenureBadge;
-  let obj = nextTenureBadge(15000);
+  let obj = nextTenureBadge(15235);
   nextTenureBadge = obj.useNextTenureBadge();
-  let obj2 = nextTenureBadge(11149);
+  let obj2 = nextTenureBadge(11203);
   const premiumSince = obj2.usePremiumSince();
   const items = [nextTenureBadge, premiumSince];
   return useMemo(() => {
@@ -32,13 +32,13 @@ export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
     if (null != nextTenureBadge) {
       if (null != premiumSince) {
         const tenureReqNumMonths = tmp.tenureReqNumMonths;
-        const obj = _modDef2046(premiumSince);
+        const obj = _modDef2047(premiumSince);
         const addResult = obj.add(tenureReqNumMonths, "months");
         const _Math = Math;
-        const obj2 = { days: max(0, addResult3.diff(_modDef2046(), "days")), months: Math.max(0, Math.round(addResult1.diff(_modDef2046(), "months", true))) };
+        const obj2 = { days: max(0, addResult3.diff(_modDef2047(), "days")), months: Math.max(0, Math.round(addResult1.diff(_modDef2047(), "months", true))) };
         max = Math.max;
         addResult1 = addResult.add(1, "day");
-        const obj5 = _modDef2046(premiumSince);
+        const obj5 = _modDef2047(premiumSince);
         const addResult2 = obj5.add(tenureReqNumMonths, "months");
         const _Math2 = Math;
         const _Math3 = Math;
@@ -48,4 +48,4 @@ export const useTimeUntilNextBadge = function useTimeUntilNextBadge() {
     }
     return null;
   }, items);
-};
+}

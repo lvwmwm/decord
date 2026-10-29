@@ -1,19 +1,19 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8452
+// Function ID: 8453
 // Name: StageEndSystemMessage
-// Dependencies: [8351, 1125, 8353, 8355, 2]
+// Dependencies: [8373, 1125, 8375, 8377, 2]
 // Exports: createStageEndSystemMessage
 
-// Module 8430 (StageEndSystemMessage)
+// Module 8452 (StageEndSystemMessage)
 import intl2 from "intl" /* 1125 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8355 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8377 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageEndSystemMessage.tsx");
 
-export const createStageEndSystemMessage = function createStageEndSystemMessage(message) {
+export function createStageEndSystemMessage(message) {
   let formatToParts;
   let obj3;
   let vMJhvG;
@@ -28,4 +28,4 @@ export const createStageEndSystemMessage = function createStageEndSystemMessage(
   vMJhvG = intl2.t.vMJhvG;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

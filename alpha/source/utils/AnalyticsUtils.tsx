@@ -795,9 +795,9 @@ const result1 = size.fileFinishedImporting("utils/AnalyticsUtils.tsx");
 export default obj62;
 export const AnalyticsContext = context;
 export { launchSignature };
-export const addExtraAnalyticsDecorator = function addExtraAnalyticsDecorator(arg0) {
+export function addExtraAnalyticsDecorator(arg0) {
   closure_20.push(arg0);
-};
+}
 export const AnalyticEventConfigs = obj;
 export { expandLocation };
 export function setUTMContext(arg0) {
@@ -815,16 +815,16 @@ export function stopRecordingAnalyticsEvents() {
 export function getAnalyticsEventsRecording() {
   return closure_25;
 }
-export const clearAnalyticsEventsRecording = function clearAnalyticsEventsRecording() {
+export function clearAnalyticsEventsRecording() {
   const keys = Object.keys(closure_25);
   const item = keys.forEach((item) => {
     delete closure_1_25[item];
   });
-};
-export const isGameApplicationType = function isGameApplicationType(arg0) {
+}
+export function isGameApplicationType(arg0) {
   return arg0 === ApplicationTypes.GAME || arg0 === ApplicationTypes.DEPRECATED_GAME;
-};
-export const trackNetworkAction = function trackNetworkAction(event, arg1) {
+}
+export function trackNetworkAction(event, arg1) {
   const obj = { location: metroImportAll() };
   const merged = Object.assign(arg1);
   const obj2 = { type: "action" };
@@ -834,9 +834,9 @@ export const trackNetworkAction = function trackNetworkAction(event, arg1) {
   const obj3 = LogAggregatorAll;
   obj3.report("Analytics", event);
   closure_26(event, tmp2);
-};
-export const getNewAnalyticsLoadId = function getNewAnalyticsLoadId() {
+}
+export function getNewAnalyticsLoadId() {
   const obj = v1;
   return obj.v4();
-};
+}
 export const AnalyticsSchema = utils_AnalyticsSchemaAll;

@@ -1,16 +1,16 @@
-// Module ID: 12959
-// Function ID: 12960
+// Module ID: 13180
+// Function ID: 13181
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 4856, 1084, 1264, 5747, 558, 576, 12, 2]
+// Dependencies: [19, 4857, 1084, 1264, 5749, 558, 576, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 12959 (ForwardingAnalyticsUtils)
+// Module 13180 (ForwardingAnalyticsUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,12 +103,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackFo
 });
 const result = size.fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
 
-export const trackForwardStart = function trackForwardStart(channel_id, id, source) {
+export function trackForwardStart(channel_id, id, source) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { channel_id, message_id: id, source };
   obj.track(AnalyticEvents.FORWARD_MESSAGE_STARTED, obj2);
-};
-export const trackForwardCancel = function trackForwardCancel(arg0) {
+}
+export function trackForwardCancel(arg0) {
   let channelId;
   let messageId;
   let numDestinationChanges;
@@ -116,8 +116,8 @@ export const trackForwardCancel = function trackForwardCancel(arg0) {
   ({ channelId, messageId, numDestinationChanges, numQueryChanges } = arg0);
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FORWARD_MESSAGE_CANCELLED, { channel_id: channelId, message_id: messageId, num_destination_changes: numDestinationChanges, num_query_changes: numQueryChanges });
-};
-export const trackForwardSent = function trackForwardSent(arg0) {
+}
+export function trackForwardSent(arg0) {
   let anyDestinationHasSlowmode;
   let channelId;
   let hasContextMessage;
@@ -146,16 +146,16 @@ export const trackForwardSent = function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    const tmp14Result = tmp14(5747);
+    const tmp14Result = tmp14(5749);
     const merged1 = Object.assign(tmp14Result.collectChannelAnalyticsMetadata(channel));
     track(MESSAGE_SHORTCUT_ACTION_SENT, obj2);
   }
-};
-export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id) {
+}
+export function trackForwardCopyLink(channel_id, id) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { channel_id, message_id: id };
   obj.track(AnalyticEvents.FORWARD_COPY_LINK, obj2);
-};
+}
 export const useTrackForwardAddRecipientOnce = tmp2;
 export const useTrackForwardEditSearchOnce = tmp3;
 export const useTrackForwardEditContextMessageOnce = tmp4;

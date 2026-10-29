@@ -1,10 +1,10 @@
-// Module ID: 14101
-// Function ID: 14102
+// Module ID: 14334
+// Function ID: 14335
 // Name: useConjureAppCreator
-// Dependencies: [5, 32, 19, 1389, 558, 576, 14102, 12390, 504, 14103, 2]
+// Dependencies: [5, 32, 19, 1389, 558, 576, 14335, 12444, 504, 14336, 2]
 
-// Module 14101 (useConjureAppCreator)
-import react_native from "react-native" /* 14103 */;
+// Module 14334 (useConjureAppCreator)
+import react_native from "react-native" /* 14336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let obj = require("react");
   const cResult = obj.c(19);
   conjureProjectId = undefined;
-  let tmp4 = owner_user_id(14102);
+  let tmp4 = owner_user_id(14335);
   if (conjureProjectId != null) {
     conjureProjectId = conjureProjectId.conjureProjectId;
   }
@@ -169,7 +169,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
                   closure_2_2(closure_0);
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp19) {
               c4 = 3;
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -311,7 +311,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
                 user(closure_0);
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp19) {
             c4 = 3;

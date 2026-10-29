@@ -56,7 +56,7 @@ function getLanguages() {
 }
 const result = size.fileFinishedImporting("intl/util.tsx");
 
-export const getAvailableLocales = function getAvailableLocales() {
+export function getAvailableLocales() {
   let closure_0;
   _require = require("module_1128").default;
   const arr = require("module_1186");
@@ -83,9 +83,9 @@ export const getAvailableLocales = function getAvailableLocales() {
     }
     return num;
   });
-};
+}
 export { getLanguages };
-export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) {
+export function getNormalizedLocale(Language, arg1) {
   const arr = require("module_1186");
   const found = arr.filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
@@ -122,11 +122,11 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
       return tmp2;
     }
   }
-};
-export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, currentLocale) {
+}
+export function parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, currentLocale) {
   const obj = _Parser;
   const parsed = obj.parse(acknowledgedBadgeLabel, { ignoreTag: true });
   const internalIntlMessage = new _mod1164.InternalIntlMessage(parsed, currentLocale);
   return internalIntlMessage;
-};
+}
 export const useSyncMessages = tmp2;

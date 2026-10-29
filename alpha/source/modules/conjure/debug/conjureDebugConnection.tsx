@@ -1,15 +1,15 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10845
+// Function ID: 10846
 // Name: conjureDebugConnection
-// Dependencies: [10739, 584, 10756, 10755, 10771, 2]
+// Dependencies: [10814, 584, 10831, 10830, 10846, 2]
 // Exports: forceCompaction, pollConjureDebugInstance, requestConjureDebugGitInfo, requestDebugStatus, restartConjureAgent, restartConjureSandbox
 
-// Module 10770 (conjureDebugConnection)
+// Module 10845 (conjureDebugConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10755 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10771 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10739 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10830 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10846 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10814 */;
 import size from "module_2" /* 2 */;
 
 let obj4;
@@ -267,7 +267,7 @@ let result = size.fileFinishedImporting("modules/conjure/debug/conjureDebugConne
 
 export const debugFrameHandlers = obj;
 export const debugStepHandlers = obj2;
-export const requestDebugStatus = function requestDebugStatus(projectId) {
+export function requestDebugStatus(projectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_DEBUG_STATUS_REQUESTED", projectId };
   obj.dispatch(obj2);
@@ -288,8 +288,8 @@ export const requestDebugStatus = function requestDebugStatus(projectId) {
     const tmpResult = DispatcherDefault;
     tmpResult.dispatch(obj4);
   }
-};
-export const forceCompaction = function forceCompaction(projectId, flag) {
+}
+export function forceCompaction(projectId, flag) {
   let date;
   if (flag === undefined) {
     flag = false;
@@ -319,8 +319,8 @@ export const forceCompaction = function forceCompaction(projectId, flag) {
     date = new Date();
     dispatch(obj4);
   }
-};
-export const restartConjureSandbox = function restartConjureSandbox(projectId) {
+}
+export function restartConjureSandbox(projectId) {
   let date;
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_SANDBOX_RESTART_REQUESTED", projectId };
@@ -347,8 +347,8 @@ export const restartConjureSandbox = function restartConjureSandbox(projectId) {
     date = new Date();
     dispatch(obj4);
   }
-};
-export const pollConjureDebugInstance = function pollConjureDebugInstance(projectId) {
+}
+export function pollConjureDebugInstance(projectId) {
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
   if (null != conjureSocket) {
@@ -362,8 +362,8 @@ export const pollConjureDebugInstance = function pollConjureDebugInstance(projec
     } catch (err) {
     }
   }
-};
-export const requestConjureDebugGitInfo = function requestConjureDebugGitInfo(projectId) {
+}
+export function requestConjureDebugGitInfo(projectId) {
   let date;
   const obj = conjureProjectSockets;
   const conjureSocket = obj.getConjureSocket(projectId);
@@ -390,8 +390,8 @@ export const requestConjureDebugGitInfo = function requestConjureDebugGitInfo(pr
     date = new Date();
     dispatch(obj4);
   }
-};
-export const restartConjureAgent = function restartConjureAgent(projectId, first1) {
+}
+export function restartConjureAgent(projectId, first1) {
   let date;
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_RESTART_AGENT_REQUESTED", projectId };
@@ -418,4 +418,4 @@ export const restartConjureAgent = function restartConjureAgent(projectId, first
     date = new Date();
     dispatch(obj4);
   }
-};
+}

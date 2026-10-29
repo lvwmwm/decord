@@ -10,7 +10,7 @@ import _mod724 from "module_724" /* 724 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const initAndBind = function initAndBind(arg0, debug) {
+export function initAndBind(arg0, debug) {
   if (true === debug.debug) {
     const DEBUG_BUILD = _mod699.DEBUG_BUILD;
     const obj = CONSOLE_LEVELS;
@@ -32,9 +32,9 @@ export const initAndBind = function initAndBind(arg0, debug) {
   currentScope1.setClient(obj4);
   obj4.init();
   return obj4;
-};
-export const setCurrentClient = function setCurrentClient(arg0) {
+}
+export function setCurrentClient(arg0) {
   const obj = _mod724;
   const currentScope = obj.getCurrentScope();
   currentScope.setClient(arg0);
-};
+}

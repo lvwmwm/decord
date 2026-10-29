@@ -1,10 +1,10 @@
-// Module ID: 9832
-// Function ID: 9833
+// Module ID: 9864
+// Function ID: 9865
 // Name: GPlayActionCreators
-// Dependencies: [109, 5, 17, 9833, 502, 7559, 1084, 7560, 1391, 1095, 3, 7555, 7394, 5684, 584, 2062, 569, 1480, 1381, 1264, 5944, 1125, 1294, 4820, 2]
+// Dependencies: [109, 5, 17, 9865, 502, 7582, 1084, 7583, 1391, 1095, 3, 7578, 7417, 5686, 584, 2063, 569, 1481, 1381, 1264, 5946, 1125, 1294, 4821, 2]
 // Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, retainInAppSkus, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 9832 (GPlayActionCreators)
+// Module 9864 (GPlayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import BackoffDefault from "Backoff" /* 569 */;
@@ -12,22 +12,22 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2062 */;
-import BillingUtils from "BillingUtils" /* 4820 */;
-import ProductIds from "ProductIds" /* 7555 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2063 */;
+import BillingUtils from "BillingUtils" /* 4821 */;
+import ProductIds from "ProductIds" /* 7578 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9833 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9865 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 7559 */;
+import IAPStore from "IAPStore" /* 7582 */;
 import Constants_mod from "Constants" /* 1084 */;
-import Constants_mod2 from "Constants" /* 7560 */;
+import Constants_mod2 from "Constants" /* 7583 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let applyResult, c2, c21, c22, c8, closure_31, gift_info_options, importDefault, oldProductId;
+let applyResult, c2, c21, c22, closure_31, gift_info_options, importDefault, oldProductId, purchaseResult, v0;
 
 let c10;
 let c9;
@@ -36,96 +36,34 @@ let closure_15;
 let closure_18;
 let closure_19;
 let map1;
-const f105714 = async () => {
+const f106902 = async () => {
+  let closure_2;
   closure_0 = [...arguments];
   let c5 = 0;
   let c6 = 0;
   let c4 = 0;
-  const iter = (async (arg0, value) => {
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            closure_2 = tmp;
-            c5 = 1;
-            c6 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 1;
-            const items = [];
-            HermesBuiltin.arraySpread(items, closure_0, 0);
-            applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
-            c5 = 3;
-            c6 = 1;
-            return { value: applyResult, done: false };
-          }
-        } else if (2 === c5) {
-          c4 = 0;
-          let closure_1 = closure_3;
-          let tmp12;
-          const tmp10 = closure_1;
-          const tmp9 = closure_1_44;
-          if (null != closure_130_2) {
-            applyResult = { source: tmp11 };
-            tmp12 = applyResult;
-          }
-          const obj6 = { tags: tmp12 };
-          applyResult = tmp9(tmp10, obj6);
-          const tmp13 = closure_130_1;
-          if (tmp13) {
-            throw closure_1;
-          } else {
-            c6 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          return { value, done: true };
-        } else {
-          c4 = 0;
-          c6 = 3;
-          return { value, done: true };
-        }
-      } catch (tmp25) {
-        closure_3 = tmp25;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp25;
-        } else {
-          c5 = 2;
-        }
-      }
+  const iter = (async () => {
+    let tmp12;
+    await "Reflect";
+    const items = [];
+    HermesBuiltin.arraySpread(items, closure_0, 0);
+    applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
+    await applyResult;
+    let closure_1 = closure_3;
+    const tmp10 = closure_1;
+    const tmp9 = closure_1_44;
+    if (null != closure_130_2) {
+      applyResult = { source: tmp11 };
+      tmp12 = applyResult;
     }
+    const obj6 = { tags: tmp12 };
+    applyResult = tmp9(tmp10, obj6);
+    const tmp13 = closure_130_1;
+    if (tmp13) {
+      throw closure_1;
+    }
+    await "IconComponent";
+    return value;
   })();
   iter.next();
   return iter;
@@ -172,7 +110,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -235,7 +173,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
             user = undefined;
             c21 = 1;
             c22 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -451,7 +389,7 @@ function retryFailedInAppSkus() {
     let isOnlineResult = obj.isOnline();
     if (isOnlineResult) {
       let isReadyResult;
-      const obj2 = found(2062);
+      const obj2 = found(2063);
       if (obj2.isGooglePlayBillingSupported()) {
         isReadyResult = IAPStore.isReady();
       } else {
@@ -506,7 +444,7 @@ obj = function _loadUserCountry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -541,7 +479,7 @@ obj = function _loadUserCountry() {
           obj = closure_129_1(closure_129_2[14]);
           obj.dispatch(obj6);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -572,7 +510,7 @@ obj = function _subscribe() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -628,7 +566,7 @@ obj = function _subscribe() {
               c9 = 0;
             }
             c11 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp37) {
           closure_8 = tmp37;
@@ -661,7 +599,7 @@ obj = function _verifyPurchase() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -866,7 +804,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     let c4;
@@ -892,7 +830,7 @@ _asyncToGenerator(async (arg0, value) => {
           value = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "Reflect", done: true };
+          return { value: "Reflect", done: null };
         }
       } else if (1 === c5) {
         if (arg0 === 1) {
@@ -975,7 +913,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSubscriptionSkus = "loadSubscriptionSkus";
-const importDefaultResultResult = _asyncToGenerator(f105714);
+const importDefaultResultResult = _asyncToGenerator(f106902);
 _asyncToGenerator(async () => {
   let closure_0 = arg0;
   let c5 = 0;
@@ -1013,7 +951,7 @@ _asyncToGenerator(async () => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1036,7 +974,7 @@ _asyncToGenerator(async () => {
             value = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1118,7 +1056,7 @@ _asyncToGenerator(async () => {
   return iter;
 });
 const loadInAppSkus = "loadInAppSkus";
-const importDefaultResultResult1 = _asyncToGenerator(f105714);
+const importDefaultResultResult1 = _asyncToGenerator(f106902);
 _asyncToGenerator(async (arg0, value) => {
   if (c0 === 2) {
     c0 = 3;
@@ -1130,7 +1068,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -1159,7 +1097,7 @@ _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } catch (tmp7) {
       c0 = 3;
@@ -1168,7 +1106,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSkus = "loadSkus";
-const importDefaultResultResult2 = _asyncToGenerator(f105714);
+const importDefaultResultResult2 = _asyncToGenerator(f106902);
 let tmp11 = new BackoffDefault(5000, 300000, true);
 let closure_29 = tmp11;
 let c30 = 0;
@@ -1181,91 +1119,90 @@ map1 = new Map();
 const set1 = new Set();
 const tmp16 = new BackoffDefault(1000, 60000);
 let closure_36 = tmp16;
-_asyncToGenerator(async (arg0, value) => {
-  let obj6;
-  let v1;
-  let closure_1 = value;
-  if (c8 === 2) {
-    c8 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    let c6;
-    try {
-      let message;
-      let succeededOnlyFields;
-      let purchaseResult;
-      c8 = 2;
-      if (0 === c7) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          message = tmp;
-          succeededOnlyFields = undefined;
-          closure_3 = undefined;
-          closure_1 = state.getState().analyticsByProductId[product_id];
-          c6 = 1;
-          purchaseResult = BillingManager.purchase(product_id, closure_1);
-          c7 = 2;
-          c8 = 1;
-          const obj4 = { value: purchaseResult, done: false };
-          return obj4;
-        }
-      } else if (1 === tmp4) {
-        c6 = 0;
-        message = closure_5;
-        const obj5 = { tags: obj6 };
-        obj6 = { productId: product_id };
-        purchaseResult = captureGPlayBillingException(message, obj5);
-        succeededOnlyFields = closure_1;
-        if (closure_1 == null) {
-          succeededOnlyFields = {};
-        }
-        succeededOnlyFields = succeededOnlyFields.succeededOnlyFields;
-        closure_3 = c7(succeededOnlyFields, purchaseResult);
-        const obj7 = { location: "purchase", product_id, error: message.message };
-        const track = closure_1(succeededOnlyFields[19]).track;
-        const GPLAY_PURCHASE_FAILED = constants.GPLAY_PURCHASE_FAILED;
-        const tmp23 = closure_1(succeededOnlyFields[19]);
-        const merged = Object.assign(closure_3);
-        purchaseResult = track(GPLAY_PURCHASE_FAILED, obj7);
-        throw message;
-      } else if (arg0 === 1) {
-        c8 = 3;
+_asyncToGenerator(async (arg0, arg1, arg2) => {
+  closure_0 = arg0;
+  let closure_1 = arg1;
+  let succeededOnlyFields = arg2;
+  let c8 = 0;
+  let c9 = 0;
+  let c7 = 0;
+  return (async (arg0, value, arg2) => {
+    let obj6;
+    if (c9 === 2) {
+      c9 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        c6 = 0;
-        c8 = 3;
-        obj = { value, done: true };
-        return obj;
+        return { value, done: true };
       } else {
-        c6 = 0;
-        c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } catch (tmp35) {
-      closure_5 = tmp35;
-      if (0 === c6) {
-        c8 = 3;
-        throw tmp35;
-      } else {
-        c7 = 1;
+    } else {
+      try {
+        c9 = 2;
+        if (0 === c8) {
+          if (arg0 === 1) {
+            c9 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c9 = 3;
+            return { value, done: true };
+          } else {
+            closure_5 = tmp;
+            succeededOnlyFields = undefined;
+            closure_3 = undefined;
+            closure_1 = state.getState().analyticsByProductId[product_id];
+            v0 = 1;
+            purchaseResult = closure_1_21.purchase(product_id, closure_1, succeededOnlyFields);
+            c8 = 2;
+            c9 = 1;
+            return { value: purchaseResult, done: false };
+          }
+        } else if (1 === tmp4) {
+          v0 = 0;
+          purchaseResult = closure_6;
+          const obj5 = { tags: obj6 };
+          obj6 = { productId: product_id };
+          purchaseResult = closure_1_44(purchaseResult, obj5);
+          closure_3 = closure_1;
+          if (closure_1 == null) {
+            closure_3 = {};
+          }
+          succeededOnlyFields = closure_3;
+          succeededOnlyFields = succeededOnlyFields.succeededOnlyFields;
+          closure_3 = v0(succeededOnlyFields, closure_3);
+          const obj7 = { location: "purchase", product_id, error: purchaseResult.message };
+          const track = closure_1(succeededOnlyFields[19]).track;
+          const GPLAY_PURCHASE_FAILED = constants.GPLAY_PURCHASE_FAILED;
+          closure_1(succeededOnlyFields[19]);
+          const merged = Object.assign(closure_3);
+          purchaseResult = track(GPLAY_PURCHASE_FAILED, obj7);
+          throw purchaseResult;
+        } else if (arg0 === 1) {
+          c9 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          v0 = 0;
+          c9 = 3;
+          return { value, done: true };
+        } else {
+          v0 = 0;
+          c9 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp36) {
+        closure_6 = tmp36;
+        if (0 === v0) {
+          c9 = 3;
+          throw tmp36;
+        } else {
+          c8 = 1;
+        }
       }
     }
-  }
+  })();
 });
 let _require = _asyncToGenerator(async (arg0, value) => {
   let closure_0;
@@ -1279,7 +1216,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     let c3;
@@ -1376,7 +1313,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 });
 let c1 = true;
 const getUserCountry = "getUserCountry";
-const importDefaultResultResult3 = _asyncToGenerator(f105714);
+const importDefaultResultResult3 = _asyncToGenerator(f106902);
 const items1 = [, , , , ];
 ({ SERVICE_DISCONNECTED: arr2[0], SERVICE_TIMEOUT: arr2[1], BILLING_UNAVAILABLE: arr2[2], BILLING_CLIENT_NOT_READY: arr2[3], DEVELOPER_ERROR: arr2[4] } = Constants.GPlayBillingResult);
 const set2 = new Set(items1.map(String));
@@ -1392,7 +1329,7 @@ const getUserCountry_export = importDefaultResultResult3;
 export { loadSubscriptionSkus_export as loadSubscriptionSkus };
 export { loadInAppSkus_export as loadInAppSkus };
 export { loadSkus_export as loadSkus };
-export const ensureSkusLoaded = function ensureSkusLoaded(items) {
+export function ensureSkusLoaded(items) {
   let product;
   let resolved1;
   _require = items;
@@ -1413,7 +1350,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
         let isOnlineResult = obj3.isOnline();
         if (isOnlineResult) {
           let isReadyResult;
-          const tmpResult = tmp(2062);
+          const tmpResult = tmp(2063);
           if (tmpResult.isGooglePlayBillingSupported()) {
             isReadyResult = IAPStore.isReady();
           } else {
@@ -1423,7 +1360,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
         }
         if (isOnlineResult) {
           const tmp13 = (async (arg0, value) => {
-            const f161178 = (item) => null != product.getProduct(item);
+            const f162831 = (item) => null != product.getProduct(item);
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -1434,7 +1371,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               let c3;
@@ -1461,7 +1398,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                   c3 = 0;
                   c31 = null;
                   const tmp19 = closure_2;
-                  if (closure_129_0.every(f161178)) {
+                  if (closure_129_0.every(f162831)) {
                     closure_1_29.succeed();
                     let closure_30 = 0;
                   } else {
@@ -1476,7 +1413,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f161178)) {
+                  if (closure_129_0.every(f162831)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1490,7 +1427,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                 } else {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f161178)) {
+                  if (closure_129_0.every(f162831)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1499,7 +1436,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
                     closure_30 = timestamp2 + closure_1_29.fail();
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } catch (tmp28) {
                 closure_2 = tmp28;
@@ -1525,8 +1462,8 @@ export const ensureSkusLoaded = function ensureSkusLoaded(items) {
     resolved1 = Promise.resolve();
   }
   return resolved1;
-};
-export const retainInAppSkus = function retainInAppSkus(c0) {
+}
+export function retainInAppSkus(c0) {
   let allPromises;
   let product;
   _require = c0;
@@ -1615,20 +1552,20 @@ export const retainInAppSkus = function retainInAppSkus(c0) {
   };
   allPromises = Promise.all(c0.map((item) => map.get(item)));
   return obj3;
-};
-export const loadUserCountry = function loadUserCountry() {
+}
+export function loadUserCountry() {
   return obj(...arguments);
-};
-export const purchase = function purchase() {
+}
+export function purchase() {
   return closure_0(...arguments);
-};
-export const subscribe = function subscribe() {
+}
+export function subscribe() {
   return obj(...arguments);
-};
-export const verifyPurchase = function verifyPurchase() {
+}
+export function verifyPurchase() {
   return obj(...arguments);
-};
-export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytics(purchase) {
+}
+export function sendPaymentCompleteAnalytics(purchase) {
   const tmp = state.getState().analyticsByProductId[purchase.productId];
   if (null != tmp) {
     const succeededOnlyFields = tmp.succeededOnlyFields;
@@ -1644,8 +1581,8 @@ export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytic
     track(PAYMENT_FLOW_SUCCEEDED, obj2);
     React4(purchase.productId);
   }
-};
-export const updatePendingDowngrade = function updatePendingDowngrade(c0, c6, c7, c5) {
+}
+export function updatePendingDowngrade(c0, c6, c7, c5) {
   let obj4;
   let tmp;
   let tmp2;
@@ -1669,8 +1606,8 @@ export const updatePendingDowngrade = function updatePendingDowngrade(c0, c6, c7
       obj2.dispatch(obj3);
     }
   }
-};
-export const downgradeSubscription = function downgradeSubscription(pendingDowngrade) {
+}
+export function downgradeSubscription(pendingDowngrade) {
   let newSubscriptionSkuId;
   let purchaseToken;
   let subscriptionId;
@@ -1678,5 +1615,5 @@ export const downgradeSubscription = function downgradeSubscription(pendingDowng
   const HTTP = HTTPUtils.HTTP;
   const request = { url: constants2.DOWNGRADE_SUBSCRIPTION, body: { purchase_token: purchaseToken, subscription_id: subscriptionId, subscription_sku_id: newSubscriptionSkuId }, rejectWithError: false };
   return HTTP.post(request);
-};
+}
 export { getUserCountry_export as getUserCountry };

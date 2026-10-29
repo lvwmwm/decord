@@ -9,7 +9,7 @@ let set;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
 
-export const initUnique = function initUnique(visibilityWatcher, InteractionManager) {
+export function initUnique(visibilityWatcher, InteractionManager) {
   try {
     if (!weakMap.get(visibilityWatcher)) {
       const self = this;
@@ -25,4 +25,4 @@ export const initUnique = function initUnique(visibilityWatcher, InteractionMana
     const tmp5 = new InteractionManager();
     return tmp5;
   }
-};
+}

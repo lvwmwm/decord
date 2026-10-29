@@ -1,16 +1,16 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12806
+// Function ID: 12807
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 10733, 1125, 3863, 12590, 7382, 2]
+// Dependencies: [5, 10807, 1125, 3864, 12807, 7405, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 12589 (ConjureTemplateWizard)
+// Module 12806 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureUtils from "ConjureUtils" /* 7382 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 12590 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureUtils from "ConjureUtils" /* 7405 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 12807 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10733 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10807 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, name;
@@ -21,7 +21,7 @@ function conjureTemplateStartMessage(templateName) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { templateName, locale: intl3.intl.currentLocale };
-  const prop = _modDef3863["/qSx7+"];
+  const prop = _modDef3864["/qSx7+"];
   return formatToPlainString(prop, obj);
 }
 let obj = function _startConjureTemplateWizard() {
@@ -41,7 +41,7 @@ let obj = function _startConjureTemplateWizard() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ let obj = function _startConjureTemplateWizard() {
 ({ prepareTemplate: closure_4, sendUserMessage: hasOwnProperty } = ConjureConnectionStore);
 const result = size.fileFinishedImporting("modules/conjure/templates/ConjureTemplateWizard.tsx");
 
-export const conjureWizardServerStep = function conjureWizardServerStep(guildId, stateFromStores) {
+export function conjureWizardServerStep(guildId, stateFromStores) {
   let closure_0 = guildId;
   let str = "none";
   if (0 !== stateFromStores.length) {
@@ -100,8 +100,8 @@ export const conjureWizardServerStep = function conjureWizardServerStep(guildId,
     str = str2;
   }
   return str;
-};
-export const conjureTemplateWizardSteps = function conjureTemplateWizardSteps(result1, first1) {
+}
+export function conjureTemplateWizardSteps(result1, first1) {
   if ("none" === first1) {
     return ["server"];
   } else {
@@ -120,8 +120,8 @@ export const conjureTemplateWizardSteps = function conjureTemplateWizardSteps(re
     }
     return items1;
   }
-};
-export const canLeaveConjureWizardQuestion = function canLeaveConjureWizardQuestion(result1, arg1) {
+}
+export function canLeaveConjureWizardQuestion(result1, arg1) {
   let tmp = null != result1;
   if (tmp) {
     let tmp2 = true === result1.optional;
@@ -135,12 +135,12 @@ export const canLeaveConjureWizardQuestion = function canLeaveConjureWizardQuest
     tmp = tmp2;
   }
   return tmp;
-};
+}
 export { conjureTemplateStartMessage };
-export const startConjureTemplateWizard = function startConjureTemplateWizard() {
+export function startConjureTemplateWizard() {
   return obj(...arguments);
-};
-export const conjureTemplateWizardGuilds = function conjureTemplateWizardGuilds(guildsArray, ConjureTemplateWizardSheet) {
+}
+export function conjureTemplateWizardGuilds(guildsArray, ConjureTemplateWizardSheet) {
   let closure_0 = ConjureTemplateWizardSheet;
   const found = guildsArray.filter((item) => {
     obj = ConjureUtils;
@@ -150,8 +150,8 @@ export const conjureTemplateWizardGuilds = function conjureTemplateWizardGuilds(
     name = name.name;
     return name.localeCompare(name2.name);
   });
-};
-export const latestConjureIntake = function latestConjureIntake(messages) {
+}
+export function latestConjureIntake(messages) {
   let tmp2;
   let diff = messages.length - 1;
   if (0 <= diff) {
@@ -167,8 +167,8 @@ export const latestConjureIntake = function latestConjureIntake(messages) {
     return tmp2.intake;
   }
   return null;
-};
-export const conjureWizardIntro = function conjureWizardIntro(stateFromStores1) {
+}
+export function conjureWizardIntro(stateFromStores1) {
   let points;
   let tmp = null;
   if (null != stateFromStores1) {
@@ -196,8 +196,8 @@ export const conjureWizardIntro = function conjureWizardIntro(stateFromStores1) 
     tmp = obj;
   }
   return tmp;
-};
-export const conjureWizardServerCopy = function conjureWizardServerCopy(stateFromStores1) {
+}
+export function conjureWizardServerCopy(stateFromStores1) {
   let intl;
   let intl2;
   let server;
@@ -205,14 +205,14 @@ export const conjureWizardServerCopy = function conjureWizardServerCopy(stateFro
     server = stateFromStores1.server;
   }
   if (server == null) {
-    obj = { title: intl.string(_modDef3863.vcxYIA), hint: intl2.string(_modDef3863.auUHPZ) };
+    obj = { title: intl.string(_modDef3864.vcxYIA), hint: intl2.string(_modDef3864.auUHPZ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;
   }
   return server;
-};
-export const conjureWizardQuestions = function conjureWizardQuestions(stateFromStores1) {
+}
+export function conjureWizardQuestions(stateFromStores1) {
   let questions;
   if (stateFromStores1 != null) {
     questions = stateFromStores1.questions;
@@ -221,8 +221,8 @@ export const conjureWizardQuestions = function conjureWizardQuestions(stateFromS
     questions = [];
   }
   return questions;
-};
-export const isConjureWizardComplete = function isConjureWizardComplete(result1, first3) {
+}
+export function isConjureWizardComplete(result1, first3) {
   let tmp = result1.length > 0 && result1.every((optional, index) => {
     let tmp = true === optional.optional;
     if (!tmp) {
@@ -235,8 +235,8 @@ export const isConjureWizardComplete = function isConjureWizardComplete(result1,
     return tmp;
   });
   return tmp;
-};
-export const formatConjureWizardAnswers = function formatConjureWizardAnswers(arr, arg1) {
+}
+export function formatConjureWizardAnswers(arr, arg1) {
   let closure_0 = arg1;
   const items = [];
   const item = arr.forEach((optional, index) => {
@@ -259,4 +259,4 @@ export const formatConjureWizardAnswers = function formatConjureWizardAnswers(ar
     }
   });
   return items.join("\n");
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8440
+// Function ID: 8441
 // Name: GuildAntiRaidUtils
-// Dependencies: [8419, 2046, 8420, 1125, 2]
+// Dependencies: [8441, 2047, 8442, 1125, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 8418 (GuildAntiRaidUtils)
+// Module 8440 (GuildAntiRaidUtils)
 import intl4 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8420 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8419 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8442 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8441 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,57 +19,57 @@ let date = { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
 
 export const DATE_CONFIG = date;
-export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
+export function hasDetectedActivity(incidentsData) {
   let tmp = null != incidentsData.dmSpamDetectedAt;
   if (tmp) {
-    const obj = _modDef2046(incidentsData.dmSpamDetectedAt);
+    const obj = _modDef2047(incidentsData.dmSpamDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef2046();
+    tmp = addResult > _modDef2047();
   }
   if (!tmp) {
     let tmp6 = null != incidentsData.raidDetectedAt;
     if (tmp6) {
-      const obj2 = _modDef2046(incidentsData.raidDetectedAt);
+      const obj2 = _modDef2047(incidentsData.raidDetectedAt);
       const addResult1 = obj2.add(_false, "hours");
-      tmp6 = addResult1 > _modDef2046();
+      tmp6 = addResult1 > _modDef2047();
     }
     tmp = tmp6;
   }
   return tmp;
-};
-export const hasDetectedRaid = function hasDetectedRaid(raidDetectedAt) {
+}
+export function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {
-    const obj = _modDef2046(raidDetectedAt.raidDetectedAt);
+    const obj = _modDef2047(raidDetectedAt.raidDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef2046();
+    tmp = addResult > _modDef2047();
   }
   return tmp;
-};
-export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
+}
+export function hasDetectedDMRaid(dmSpamDetectedAt) {
   let tmp = null != dmSpamDetectedAt.dmSpamDetectedAt;
   if (tmp) {
-    const obj = _modDef2046(dmSpamDetectedAt.dmSpamDetectedAt);
+    const obj = _modDef2047(dmSpamDetectedAt.dmSpamDetectedAt);
     const addResult = obj.add(_false, "hours");
-    tmp = addResult > _modDef2046();
+    tmp = addResult > _modDef2047();
   }
   return tmp;
-};
-export const getIncidentAlertType = function getIncidentAlertType(guildIncident) {
+}
+export function getIncidentAlertType(guildIncident) {
   let tmp;
   if (null != guildIncident) {
     let tmp2 = null != guildIncident.raidDetectedAt;
     if (tmp2) {
-      const obj = _modDef2046(guildIncident.raidDetectedAt);
+      const obj = _modDef2047(guildIncident.raidDetectedAt);
       const addResult = obj.add(_false, "hours");
-      tmp2 = addResult > _modDef2046();
+      tmp2 = addResult > _modDef2047();
     }
     const GuildIncidentAlertTypes = GuildAntiRaidTypes.GuildIncidentAlertTypes;
     tmp = tmp2 ? GuildIncidentAlertTypes.JOIN_RAID : GuildIncidentAlertTypes.DM_RAID;
   }
   return tmp;
-};
-export const getEnabledInterventions = function getEnabledInterventions(pauseInvites, pauseDms) {
+}
+export function getEnabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   const tmp = pauseInvites;
   if (tmp) {
@@ -80,8 +80,8 @@ export const getEnabledInterventions = function getEnabledInterventions(pauseInv
     items.push(GuildAntiRaidTypes.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
-};
-export const getDisabledInterventions = function getDisabledInterventions(pauseInvites, pauseDms) {
+}
+export function getDisabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   const tmp = pauseInvites;
   if (!tmp) {
@@ -92,8 +92,8 @@ export const getDisabledInterventions = function getDisabledInterventions(pauseI
     items.push(GuildAntiRaidTypes.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
-};
-export const isUnderLockdown = function isUnderLockdown(incidentsData) {
+}
+export function isUnderLockdown(incidentsData) {
   let tmp = null != incidentsData.dmsDisabledUntil;
   if (tmp) {
     const _Date = Date;
@@ -122,8 +122,8 @@ export const isUnderLockdown = function isUnderLockdown(incidentsData) {
     tmp = tmp7;
   }
   return tmp;
-};
-export const hasDMsDisabled = function hasDMsDisabled(stateFromStores) {
+}
+export function hasDMsDisabled(stateFromStores) {
   let dmsDisabledUntil;
   if (stateFromStores != null) {
     dmsDisabledUntil = stateFromStores.dmsDisabledUntil;
@@ -141,8 +141,8 @@ export const hasDMsDisabled = function hasDMsDisabled(stateFromStores) {
     const date1 = new Date();
   }
   return tmp2;
-};
-export const hasInvitesDisabled = function hasInvitesDisabled(stateFromStores) {
+}
+export function hasInvitesDisabled(stateFromStores) {
   let invitesDisabledUntil;
   if (stateFromStores != null) {
     invitesDisabledUntil = stateFromStores.invitesDisabledUntil;
@@ -160,8 +160,8 @@ export const hasInvitesDisabled = function hasInvitesDisabled(stateFromStores) {
     const date1 = new Date();
   }
   return tmp2;
-};
-export const initialLockdownDurationHours = function initialLockdownDurationHours(stateFromStores) {
+}
+export function initialLockdownDurationHours(stateFromStores) {
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.lockdownDurationHours;
@@ -172,8 +172,8 @@ export const initialLockdownDurationHours = function initialLockdownDurationHour
     hasOwnProperty();
   }
   return prop;
-};
-export const getSecurityActionDetailsString = function getSecurityActionDetailsString(dmsDisabledUntil, guildName) {
+}
+export function getSecurityActionDetailsString(dmsDisabledUntil, guildName) {
   let date1;
   let date2;
   let invitesDisabledUntil = dmsDisabledUntil.dmsDisabledUntil;
@@ -218,4 +218,4 @@ export const getSecurityActionDetailsString = function getSecurityActionDetailsS
       return "";
     }
   }
-};
+}

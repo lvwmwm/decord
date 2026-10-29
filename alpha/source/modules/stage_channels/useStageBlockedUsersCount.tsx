@@ -1,12 +1,12 @@
-// Module ID: 8138
-// Function ID: 8139
+// Module ID: 8161
+// Function ID: 8162
 // Name: useStageBlockedUsersCount
-// Dependencies: [6676, 558, 576, 6723, 504, 2]
+// Dependencies: [6700, 558, 576, 6746, 504, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount
 
-// Module 8138 (useStageBlockedUsersCount)
-import StageChannelParticipants from "StageChannelParticipants" /* 6723 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
+// Module 8161 (useStageBlockedUsersCount)
+import StageChannelParticipants from "StageChannelParticipants" /* 6746 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6700 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -203,19 +203,19 @@ const result = size.fileFinishedImporting("modules/stage_channels/useStageBlocke
 
 export const useStageBlockedUsersCount = tmp2;
 export const useStageIgnoredUsersCount = tmp3;
-export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) {
+export function getStageBlockedUsersCount(id) {
   let num = StageChannelParticipantStore.getParticipantCount(id, StageChannelParticipants.StageChannelParticipantNamedIndex.BLOCKED);
   if (num == null) {
     num = 0;
   }
   return num;
-};
-export const getStageIgnoredUsersCount = function getStageIgnoredUsersCount(id) {
+}
+export function getStageIgnoredUsersCount(id) {
   let num = StageChannelParticipantStore.getParticipantCount(id, StageChannelParticipants.StageChannelParticipantNamedIndex.IGNORED);
   if (num == null) {
     num = 0;
   }
   return num;
-};
+}
 export const useStageBlockedUsers = tmp4;
 export const useStageIgnoredUsers = tmp5;

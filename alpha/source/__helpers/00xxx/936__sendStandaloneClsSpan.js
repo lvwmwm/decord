@@ -69,7 +69,7 @@ function _sendStandaloneClsSpan(c1, startTime, sentry_pageload_span_id, sentry_r
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { _sendStandaloneClsSpan };
-export const trackClsAsStandaloneSpan = function trackClsAsStandaloneSpan(client) {
+export function trackClsAsStandaloneSpan(client) {
   let c1;
   dependencyMap = 0;
   let tmp = _require;
@@ -89,4 +89,4 @@ export const trackClsAsStandaloneSpan = function trackClsAsStandaloneSpan(client
       closure_2();
     });
   }
-};
+}

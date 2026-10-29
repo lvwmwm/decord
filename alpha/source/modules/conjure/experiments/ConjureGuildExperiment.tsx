@@ -1,13 +1,13 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6866
+// Function ID: 6867
 // Name: ConjureGuildExperiment
-// Dependencies: [4878, 1084, 1452, 6844, 558, 576, 504, 2]
+// Dependencies: [4879, 1084, 1453, 6867, 558, 576, 504, 2]
 
-// Module 6843 (ConjureGuildExperiment)
+// Module 6866 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1084 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 6844 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 6867 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -210,7 +210,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasConjur
   const autoTrackExposure = tmp4.autoTrackExposure;
   dependencyMap = tmp5;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, tmp(1452).ApexExperimentStore];
+    const items = [GuildStore, tmp(1453).ApexExperimentStore];
     cResult[2] = items;
     tmp6 = items;
   } else {

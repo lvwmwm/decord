@@ -1,16 +1,16 @@
-// Module ID: 12394
-// Function ID: 12395
+// Module ID: 12448
+// Function ID: 12449
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 8705, 5246, 558, 576, 7321, 5699, 1125, 5718, 7330, 3863, 12395, 6967, 12214, 12267, 12323, 7334, 2]
+// Dependencies: [19, 21, 8708, 5247, 558, 576, 7345, 5701, 1125, 5720, 7354, 3864, 12449, 6991, 12268, 12321, 12377, 7358, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
-// Module 12394 (ConjureMessageActionSheet)
+// Module 12448 (ConjureMessageActionSheet)
 import intl6 from "intl" /* 1125 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5246 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import CopyIcon from "CopyIcon" /* 5718 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import CopyIcon from "CopyIcon" /* 5720 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -516,7 +516,7 @@ const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureMe
 
 export const CONJURE_MESSAGE_SHEET_KEY = "conjure-message-actions";
 export { openMessageAuthorProfile };
-export const showConjureMessageActions = function showConjureMessageActions(arg0) {
+export function showConjureMessageActions(arg0) {
   let obj2;
   const obj = { content: React3(closure_8, obj2), key };
   const showActionSheet = ActionSheetActionCreators.showActionSheet;
@@ -524,4 +524,4 @@ export const showConjureMessageActions = function showConjureMessageActions(arg0
   ActionSheetActionCreators;
   const merged = Object.assign(arg0);
   showActionSheet(obj);
-};
+}

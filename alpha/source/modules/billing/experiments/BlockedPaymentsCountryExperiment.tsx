@@ -1,12 +1,12 @@
-// Module ID: 7564
-// Function ID: 7565
+// Module ID: 7587
+// Function ID: 7588
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1452, 558, 576, 7565, 2]
+// Dependencies: [1453, 558, 576, 7588, 2]
 // Exports: getIsPaymentsBlocked
 
-// Module 7564 (BlockedPaymentsCountryExperiment)
+// Module 7587 (BlockedPaymentsCountryExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,6 +53,6 @@ const result = size.fileFinishedImporting("modules/billing/experiments/BlockedPa
 
 export const useBlockedPaymentsConfig = tmp2;
 export const useIsPaymentsBlocked = tmp3;
-export const getIsPaymentsBlocked = function getIsPaymentsBlocked() {
+export function getIsPaymentsBlocked() {
   return closure_3.getConfig({ location: "1ee357_1" }).enabled;
-};
+}

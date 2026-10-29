@@ -1,21 +1,21 @@
-// Module ID: 17679
-// Function ID: 17680
+// Module ID: 17917
+// Function ID: 17918
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1084, 21, 5004, 17680, 6916, 5270, 1125, 5280, 1199, 5058, 558, 576, 1502, 6405, 1264, 17681, 17685, 7101, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 17918, 6940, 5271, 1125, 5281, 1199, 5059, 558, 576, 1503, 6429, 1264, 17919, 17923, 7125, 2]
 
-// Module 17679 (CompanionRemoteAuth)
+// Module 17917 (CompanionRemoteAuth)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import reactDefault from "react" /* 6405 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6916 */;
-import typing from "typing" /* 17680 */;
-import react_nativeDefault from "react-native" /* 17685 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import reactDefault from "react" /* 6429 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6940 */;
+import typing from "typing" /* 17918 */;
+import react_nativeDefault from "react-native" /* 17923 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,11 +51,11 @@ function renderSteps(state, style, E, context) {
         const Avatar = tmp(1199).Avatar;
         items = [metroImportDefault(Avatar, obj2), , , ];
         const obj3 = { variant: "heading-lg/bold", children: intl.string(intl6.t.apGCUT) };
-        const Text = tmp(5270).Text;
+        const Text = tmp(5271).Text;
         intl = tmp(1125).intl;
         items[1] = metroImportDefault(Text, obj3);
         const obj4 = { style: style.statusText, variant: "text-md/medium", color: "text-muted", children: format(Cbl5JK, obj5) };
-        const Text2 = tmp(5270).Text;
+        const Text2 = tmp(5271).Text;
         const intl2 = tmp(1125).intl;
         format = intl2.format;
         obj5 = { username: obj6.getUserTag(user) };
@@ -64,7 +64,7 @@ function renderSteps(state, style, E, context) {
         items[2] = metroImportDefault(Text2, obj4);
         const obj7 = { style: style.buttonContainer, children: metroImportDefault(Button, obj8) };
         obj8 = { size: "lg", variant: "tertiary", text: intl3.string(intl6.t["ETE/oC"]), onPress: E };
-        Button = tmp(5280).Button;
+        Button = tmp(5281).Button;
         intl3 = tmp(1125).intl;
         items[3] = metroImportDefault(View, obj7);
         return React4(metroImportAll, obj);
@@ -76,12 +76,12 @@ function renderSteps(state, style, E, context) {
   const obj9 = { children: items1 };
   items1 = [metroImportDefault(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}), , ];
   const obj10 = { style: style.statusText, variant: "text-md/medium", color: "text-muted", children: intl4.string(intl6.t["7LkwqE"]) };
-  const Text3 = tmp(5270).Text;
+  const Text3 = tmp(5271).Text;
   intl4 = tmp(1125).intl;
   items1[1] = metroImportDefault(Text3, obj10);
   const obj11 = { style: style.buttonContainer, children: metroImportDefault(Button2, obj12) };
   obj12 = { size: "lg", variant: "tertiary", text: intl5.string(intl6.t["ETE/oC"]), onPress: E };
-  Button2 = tmp(5280).Button;
+  Button2 = tmp(5281).Button;
   intl5 = tmp(1125).intl;
   items1[2] = metroImportDefault(View, obj11);
   return React4(metroImportAll, obj9);
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   let obj = navigation(576);
   const cResult = obj.c(15);
   const tmp4 = closure_10();
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   const context = react.useContext(reactDefault);
   const obj3 = react;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(17681);
+  const tmpResult = tmp(17919);
   const state = tmpResult.useAuthWebsocket(first, true).state;
   if (cResult[1] !== navigation) {
     class E {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
       }
     }
   }
-  if (state.step === tmp(17680).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === tmp(17918).RemoteAuthStep.PENDING_REMOTE_INIT) {
     class E {
       constructor() {
         navigation.goBack();
@@ -202,9 +202,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   let obj5;
   let tmp = closure_10();
   const tmp2 = navigation;
-  let obj = navigation(1502);
+  let obj = navigation(1503);
   navigation = obj.useNavigation();
-  const context = react.useContext(fingerprint(6405));
+  const context = react.useContext(fingerprint(6429));
   const callback = react.useCallback((arg0) => {
     let tmp = arg0;
     const obj = { source: constants2.QR_CODE, login_source: "companion_remote_auth", is_new_user: false, login_method: "quest_remote_auth", login_instance_id: tmp };
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
     track(LOGIN_SUCCESSFUL, obj);
   }, []);
-  const obj3 = navigation(17681);
+  const obj3 = navigation(17919);
   const state = obj3.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = react.useCallback(() => {
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   const tmp5 = fingerprint;
   fingerprint = null;
   const obj2 = react;
-  if (state.step === navigation(17680).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(17918).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
   }, items1);
   const obj4 = { headerText: intl.string(tmp2(1125).t["7fNJgA"]), children: closure_7(View, obj5) };
-  const tmp5Result = tmp5(7101);
+  const tmp5Result = tmp5(7125);
   intl = tmp2(1125).intl;
   obj5 = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
   return closure_7(tmp5Result, obj4);

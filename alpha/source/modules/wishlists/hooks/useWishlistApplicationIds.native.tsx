@@ -1,9 +1,9 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10620
+// Function ID: 10621
 // Name: useWishlistApplicationIds
 // Dependencies: [19, 1084, 558, 576, 2]
 
-// Module 10587 (useWishlistApplicationIds)
+// Module 10620 (useWishlistApplicationIds)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import react from "react" /* 19 */;

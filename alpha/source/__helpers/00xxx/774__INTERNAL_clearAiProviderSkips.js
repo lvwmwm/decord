@@ -12,17 +12,17 @@ const CONSOLE_LEVELS = tmp2(700);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const set = new Set();
 
-export const _INTERNAL_clearAiProviderSkips = function _INTERNAL_clearAiProviderSkips() {
+export function _INTERNAL_clearAiProviderSkips() {
   set.clear();
   if (_mod699.DEBUG_BUILD) {
     const debug = CONSOLE_LEVELS.debug;
     debug.log("Cleared AI provider skip registrations");
   }
-};
-export const _INTERNAL_shouldSkipAiProviderWrapping = function _INTERNAL_shouldSkipAiProviderWrapping(arg0) {
+}
+export function _INTERNAL_shouldSkipAiProviderWrapping(arg0) {
   return set.has(arg0);
-};
-export const _INTERNAL_skipAiProviderWrapping = function _INTERNAL_skipAiProviderWrapping(arr) {
+}
+export function _INTERNAL_skipAiProviderWrapping(arr) {
   const item = arr.forEach((item) => {
     set.add(item);
     const tmp2 = require;
@@ -33,4 +33,4 @@ export const _INTERNAL_skipAiProviderWrapping = function _INTERNAL_skipAiProvide
       debug.log("AI provider \"" + item + "\" wrapping will be skipped");
     }
   });
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17882
+// Function ID: 17883
 // Name: RegistrationUtils
-// Dependencies: [19, 5736, 9088, 17636, 17637, 1084, 21, 1264, 558, 576, 17633, 6969, 2]
+// Dependencies: [19, 5738, 9091, 17874, 17875, 1084, 21, 1264, 558, 576, 17871, 6993, 2]
 // Exports: getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 17644 (RegistrationUtils)
+// Module 17882 (RegistrationUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5736 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9088 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17636 */;
-import RegistrationConstants from "RegistrationConstants" /* 17637 */;
+import InviteStore from "InviteStore" /* 5738 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9091 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17874 */;
+import RegistrationConstants from "RegistrationConstants" /* 17875 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButtonWi
   let step;
   _require = react.useContext(require("Auth").TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
-  const HeaderBackButton = require("module_6969").HeaderBackButton;
+  const HeaderBackButton = require("module_6993").HeaderBackButton;
   const merged = Object.assign(arg0);
   return <HeaderBackButton onPress={function handlePress() {
     if (null != dependencyMap) {
@@ -168,7 +168,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButtonWi
 });
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUtils.tsx");
 
-export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFieldsCompleted(email, isConsentRequired) {
+export function hasAllRegistrationFieldsCompleted(email, isConsentRequired) {
   isConsentRequired = isConsentRequired.isConsentRequired;
   let tmp = null != email.email || null != email.phoneToken;
   if (tmp) {
@@ -195,7 +195,7 @@ export const hasAllRegistrationFieldsCompleted = function hasAllRegistrationFiel
     tmp = tmp2;
   }
   return tmp;
-};
+}
 export { trackRegTransition };
 export function getTrackRegTransition(arg0) {
   const ref = arg0;
@@ -227,7 +227,7 @@ export function getTrackRegTransition(arg0) {
   };
 }
 export const BackButtonWithTracking = tmp4;
-export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
+export function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {
     const _HermesInternal7 = HermesInternal;
     return "" + error_code + ": Captcha was not completed";
@@ -259,4 +259,4 @@ export const getCommonErrorDetails = function getCommonErrorDetails(error_code) 
     const _HermesInternal = HermesInternal;
     return "" + error_code + ": Phone number already associated with an account";
   }
-};
+}

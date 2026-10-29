@@ -1,19 +1,19 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7955
+// Function ID: 7956
 // Name: SafetyHubUtils
-// Dependencies: [502, 7933, 1084, 2046, 6035, 1125, 7934, 1101, 11, 558, 576, 504, 2]
+// Dependencies: [502, 7956, 1084, 2047, 6039, 1125, 7957, 1101, 11, 558, 576, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7932 (SafetyHubUtils)
+// Module 7955 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl5 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
-import SafetyHubModels from "SafetyHubModels" /* 7934 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
+import SafetyHubModels from "SafetyHubModels" /* 7957 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7933 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -90,11 +90,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspend
 });
 const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
-export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef2046();
-  return obj.to(_modDef2046(timestamp));
-};
-export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
+export function getClassificationRelativeIncidentTime(timestamp) {
+  const obj = _modDef2047();
+  return obj.to(_modDef2047(timestamp));
+}
+export function getSpoilerFlagsForAttachment(filename) {
   let num;
   const obj = MediaFormatTesters;
   if (obj.isImageFile(filename.filename)) {
@@ -104,12 +104,12 @@ export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachmen
     MediaFormatTesters;
   }
   return num;
-};
-export const parseMessageForProps = function parseMessageForProps(message) {
+}
+export function parseMessageForProps(message) {
   return parseMessageEmbedForProps(message.embeds[0]);
-};
+}
 export { parseMessageEmbedForProps };
-export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_link, classification_id) {
+export function mapCtaToNativeData(arg0, learn_more_link, classification_id) {
   let intl;
   let intl2;
   if (hasOwnProperty.LEARN_MORE_LINK === arg0) {
@@ -129,16 +129,16 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
     }
     return obj;
   }
-};
-export const isFlaggedContentEmpty = function isFlaggedContentEmpty(type) {
+}
+export function isFlaggedContentEmpty(type) {
   let tmp = type.type !== SafetyHubModels.ContentIdType.MESSAGE;
   if (!tmp) {
     tmp = "" === type.content && 0 === type.attachments.length;
     const tmp2 = "" === type.content && 0 === type.attachments.length;
   }
   return tmp;
-};
-export const getAppealSignalDisplayText = function getAppealSignalDisplayText(signal) {
+}
+export function getAppealSignalDisplayText(signal) {
   const obj = {};
   const DIDNT_VIOLATE_POLICY = constants.DIDNT_VIOLATE_POLICY;
   const intl = intl5.intl;
@@ -153,8 +153,8 @@ export const getAppealSignalDisplayText = function getAppealSignalDisplayText(si
   const intl4 = intl5.intl;
   obj[SOMETHING_ELSE] = intl4.string(intl5.t.XU3s6r);
   return obj[signal];
-};
-export const capitalizeText = function capitalizeText(description) {
+}
+export function capitalizeText(description) {
   let str = "";
   if (null != description) {
     str = "";
@@ -172,11 +172,11 @@ export const capitalizeText = function capitalizeText(description) {
     }
   }
   return str;
-};
-export const isGuildClassification = function isGuildClassification(stateFromStores) {
+}
+export function isGuildClassification(stateFromStores) {
   return null != stateFromStores && null != stateFromStores.guild_metadata;
-};
-export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromCode(code) {
+}
+export function getRequestReviewErrorFromCode(code) {
   let stringResult;
   if (code === metroImportDefault.DSA_APPEAL_REQUEST_DEFLECTION) {
     const intl2 = intl5.intl;
@@ -186,13 +186,13 @@ export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromC
     stringResult = intl.string(intl5.t.aPmsx3);
   }
   return stringResult;
-};
+}
 export const APPEAL_WINDOW_DURATION_MS = result;
-export const isAppealWindowExpired = function isAppealWindowExpired(classificationId) {
+export function isAppealWindowExpired(classificationId) {
   const obj = SnowflakeUtilsDefault;
   return obj.age(classificationId) > c10;
-};
-export const getClassificationAccountStatusExpiration = function getClassificationAccountStatusExpiration(classification) {
+}
+export function getClassificationAccountStatusExpiration(classification) {
   const actions = classification.actions;
   if (actions.some((action_type) => action_type.action_type === SafetyHubModels.ActionType.BAN)) {
     return null;
@@ -213,8 +213,8 @@ export const getClassificationAccountStatusExpiration = function getClassificati
     }
     return null;
   }
-};
+}
 export const useIsSuspendedUser = tmp5;
-export const isCurrentUserSuspended = function isCurrentUserSuspended() {
+export function isCurrentUserSuspended() {
   return null != AuthenticationStore.getSuspendedUserToken();
-};
+}

@@ -15,7 +15,7 @@ let _require, c0, c4, dependencyMap;
 let _asyncToGenerator = _asyncToGenerator_mod;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const startProfileForSpan = function startProfileForSpan(rootSpan) {
+export function startProfileForSpan(rootSpan) {
   let closure_4;
   let result;
   _require = rootSpan;
@@ -38,7 +38,7 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
               }
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -179,4 +179,4 @@ export const startProfileForSpan = function startProfileForSpan(rootSpan) {
       return tmp3;
     };
   }
-};
+}

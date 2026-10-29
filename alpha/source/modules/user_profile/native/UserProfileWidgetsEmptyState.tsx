@@ -1,18 +1,18 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16458
+// Function ID: 16459
 // Name: UserProfileWidgetsEmptyState
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5270, 5280, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5271, 5281, 2]
 
-// Module 16221 (UserProfileWidgetsEmptyState)
+// Module 16458 (UserProfileWidgetsEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
 
                 }
         };
-        const Button = tmp(5280).Button;
+        const Button = tmp(5281).Button;
         intl3 = tmp(1125).intl;
         const tmp19 = _false(Button, obj4);
         cResult[10] = tmp19;

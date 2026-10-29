@@ -1,18 +1,18 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17899
+// Function ID: 17900
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 16265, 17636, 17637, 17633, 1502, 7086, 16263, 16262, 17635, 1503, 1125, 2]
+// Dependencies: [32, 19, 16503, 17874, 17875, 17871, 1503, 7110, 16501, 16500, 17873, 1504, 1125, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 17661 (useUsernameRegistrationStep)
+// Module 17899 (useUsernameRegistrationStep)
 import intl2 from "intl" /* 1125 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16262 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17635 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17636 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16500 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17873 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16265 */;
-import RegistrationConstants from "RegistrationConstants" /* 17637 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16503 */;
+import RegistrationConstants from "RegistrationConstants" /* 17875 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ const useRegistrationUIStore = RegistrationUIStore.useRegistrationUIStore;
 ({ authStateToRegisterTransitionStep: metroImportDefault, RegistrationTransitionActionTypes: metroImportAll } = RegistrationConstants);
 let result = size.fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
 
-export const useUsernameRegistrationStep = function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
+export function useUsernameRegistrationStep(REGISTER_ACCOUNT_INFORMATION) {
   let username;
   let usernameStatus;
   _require = REGISTER_ACCOUNT_INFORMATION;
@@ -81,7 +81,7 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       const tmp3Result4 = RegistrationStepsUtils;
       const nextAuthState = tmp3Result4.getNextAuthState(REGISTER_ACCOUNT_INFORMATION);
       const dispatch = navigation.dispatch;
-      const StackActions = tmp3(1503).StackActions;
+      const StackActions = tmp3(1504).StackActions;
       dispatch(StackActions.push(nextAuthState));
     }
   }, items);
@@ -134,4 +134,4 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
     }, items2)
   };
   return obj4;
-};
+}

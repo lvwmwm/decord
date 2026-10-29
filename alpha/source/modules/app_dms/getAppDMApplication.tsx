@@ -1,18 +1,18 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12199
+// Function ID: 12200
 // Name: getAppDMApplication
-// Dependencies: [2042, 7738, 1389, 2]
+// Dependencies: [2043, 7760, 1389, 2]
 // Exports: getAppDMApplication
 
-// Module 12145 (getAppDMApplication)
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+// Module 12199 (getAppDMApplication)
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
 
-export const getAppDMApplication = function getAppDMApplication(channel) {
+export function getAppDMApplication(channel) {
   let tmp7;
   let recipientId;
   if (channel.isPrivate()) {
@@ -45,4 +45,4 @@ export const getAppDMApplication = function getAppDMApplication(channel) {
     appIdForBotUserId = tmp7;
   }
   return getApplication(appIdForBotUserId);
-};
+}

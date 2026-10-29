@@ -1,12 +1,12 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9023
+// Function ID: 9024
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9019, 558, 576, 504, 9021, 2]
+// Dependencies: [5, 19, 9022, 558, 576, 504, 9024, 2]
 
-// Module 9020 (useGuildProfile)
+// Module 9023 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9019 */;
+import GuildProfileStore from "GuildProfileStore" /* 9022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

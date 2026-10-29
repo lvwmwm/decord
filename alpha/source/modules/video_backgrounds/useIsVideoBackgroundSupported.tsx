@@ -1,12 +1,12 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11713
+// Function ID: 11714
 // Name: useIsVideoBackgroundSupported
-// Dependencies: [2011, 558, 576, 5912, 504, 2]
+// Dependencies: [2012, 558, 576, 5914, 504, 2]
 
-// Module 11659 (useIsVideoBackgroundSupported)
+// Module 11713 (useIsVideoBackgroundSupported)
 import react from "react" /* 576 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5912 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5914 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

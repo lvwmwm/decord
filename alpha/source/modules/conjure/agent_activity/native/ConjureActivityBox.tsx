@@ -1,22 +1,22 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12480
+// Function ID: 12481
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1084, 21, 5004, 12388, 587, 558, 576, 12427, 12346, 11807, 1125, 3863, 12379, 12473, 5270, 12206, 7989, 12474, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 5005, 12442, 587, 558, 576, 12481, 12400, 11861, 1125, 3864, 12433, 12527, 5271, 12260, 8012, 12528, 2]
 // Exports: stretchOf
 
-// Module 12426 (ConjureActivityBox)
+// Module 12480 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12379 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12388 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 12427 */;
-import ConjureNativeStepImagesDefault from "ConjureNativeStepImages" /* 12474 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12433 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12442 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 12481 */;
+import ConjureNativeStepImagesDefault from "ConjureNativeStepImages" /* 12528 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const WarningIcon2 = tmp2(7989);
+const WarningIcon2 = tmp2(8012);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -780,7 +780,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     arr = cResult[1];
   }
   if (cResult[3] !== node) {
-    let tmpResult = tmp(12346);
+    let tmpResult = tmp(12400);
     const describeNodeResult = tmpResult.describeNode(node);
     cResult[3] = node;
     cResult[4] = describeNodeResult;
@@ -797,8 +797,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
     let tmp14 = null;
     if (null != node.durationMs) {
       let obj2 = { variant: "text-xs/normal", color: "text-subtle", children: tmpResult2.describeDuration(node.durationMs) };
-      let Text = tmp(5270).Text;
-      tmpResult2 = node(11807);
+      let Text = tmp(5271).Text;
+      tmpResult2 = node(11861);
       tmp14 = closure_6(Text, obj2);
     }
     cResult[5] = node.durationMs;
@@ -970,7 +970,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(12346);
+  obj2 = node(12400);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -979,8 +979,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
   tmp4Result = null;
   if (null != node.durationMs) {
     let obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
-    let Text = tmp8(5270).Text;
-    tmp8Result = tmp8(11807);
+    let Text = tmp8(5271).Text;
+    tmp8Result = tmp8(11861);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];
@@ -1035,7 +1035,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timeli
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureActivityBox.tsx");
 
 export default tmp4;
-export const stretchOf = function stretchOf(memo, index, arg2) {
+export function stretchOf(memo, index, arg2) {
   let steps;
   let tasks;
   let closure_0 = index;
@@ -1053,4 +1053,4 @@ export const stretchOf = function stretchOf(memo, index, arg2) {
     return obj;
   }
   obj3 = {};
-};
+}

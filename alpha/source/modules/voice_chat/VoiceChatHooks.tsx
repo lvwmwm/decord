@@ -1,12 +1,12 @@
-// Module ID: 10925
-// Function ID: 10926
+// Module ID: 10960
+// Function ID: 10961
 // Name: VoiceChatHooks
-// Dependencies: [502, 5666, 558, 576, 504, 2]
+// Dependencies: [502, 5668, 558, 576, 504, 2]
 // Exports: useIsConnectedToVoiceChannel
 
-// Module 10925 (VoiceChatHooks)
+// Module 10960 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

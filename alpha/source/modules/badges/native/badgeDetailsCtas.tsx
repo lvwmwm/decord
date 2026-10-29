@@ -1,22 +1,22 @@
-// Module ID: 11182
-// Function ID: 11183
+// Module ID: 11236
+// Function ID: 11237
 // Name: badgeDetailsCtas
-// Dependencies: [1084, 1086, 8710, 1125, 5692, 7526, 7684, 7314, 9601, 6750, 9596, 10480, 2]
+// Dependencies: [1084, 1086, 8713, 1125, 5694, 7549, 7707, 7338, 9633, 6773, 9628, 10513, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 11182 (badgeDetailsCtas)
+// Module 11236 (badgeDetailsCtas)
 import Constants from "Constants" /* 1084 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import intl2 from "intl" /* 1125 */;
-import openURLDefault from "openURL" /* 5692 */;
-import QuestContent from "QuestContent" /* 6750 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import openUserSettings from "openUserSettings" /* 7526 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
-import BadgeId from "BadgeId" /* 8710 */;
-import QuestsEligibility from "QuestsEligibility" /* 9596 */;
-import QuestUtils from "QuestUtils" /* 9601 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10480 */;
+import openURLDefault from "openURL" /* 5694 */;
+import QuestContent from "QuestContent" /* 6773 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import openUserSettings from "openUserSettings" /* 7549 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
+import BadgeId from "BadgeId" /* 8713 */;
+import QuestsEligibility from "QuestsEligibility" /* 9628 */;
+import QuestUtils from "QuestUtils" /* 9633 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10513 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -125,10 +125,10 @@ obj[BadgeId.BadgeId.GIFTING] = {
 };
 const result = size.fileFinishedImporting("modules/badges/native/badgeDetailsCtas.tsx");
 
-export const getBadgeDetailsCta = function getBadgeDetailsCta(badge_id) {
+export function getBadgeDetailsCta(badge_id) {
   let isAvailable;
   if (obj[badge_id] != null) {
     isAvailable = obj.isAvailable;
   }
   return obj[badge_id];
-};
+}

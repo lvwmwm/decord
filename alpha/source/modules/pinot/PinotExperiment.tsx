@@ -1,14 +1,18 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 11070
+// Function ID: 11071
 // Name: PinotExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1258, 1453, 558, 576, 504, 2]
 // Exports: isPinotAdminEnabled, isPinotMemberEnabled
 
-// Module 17534 (PinotExperiment)
+// Module 11070 (PinotExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2026-10-pinot-admin", kind: "guild", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
@@ -51,7 +55,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinot
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinotMemberNoticeEnabled(arg0, location) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinotMemberNoticeEnabled(arg0, location) {
   const obj = react;
   const cResult = obj.c(3);
   let str = arg0;
@@ -82,7 +86,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinot
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinotMemberEnabled(location) {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinotMemberEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -99,23 +103,67 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinot
   const obj = { location };
   return apexExperiment1.useConfig(obj).enabled;
 });
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPinotMemberEnabledWithoutExposure(_location) {
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = _location;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApexExperimentStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== _location) {
+    const fn = function u() {
+      const obj = { location: _location };
+      return apexExperiment1.getConfig(obj, { autoTrackExposure: false }).enabled;
+    };
+    const items1 = [_location];
+    cResult[1] = _location;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : (function useIsPinotMemberEnabledWithoutExposure(_location) {
+  _require = _location;
+  let obj = require("get initialized");
+  const items = [ApexExperimentStore];
+  const items1 = [_location];
+  return obj.useStateFromStores(items, () => {
+    const obj = { location: _location };
+    return apexExperiment1.getConfig(obj, { autoTrackExposure: false }).enabled;
+  }, items1);
+});
 const result = size.fileFinishedImporting("modules/pinot/PinotExperiment.tsx");
 
 export const PinotAdminExperiment = apexExperiment;
 export const PinotMemberExperiment = apexExperiment1;
 export const PinotMemberNoticeExperiment = apexExperiment2;
 export const useIsPinotAdminEnabled = tmp5;
-export const isPinotAdminEnabled = function isPinotAdminEnabled(guildId, location) {
+export function isPinotAdminEnabled(guildId, location) {
   let enabled = null != guildId;
   if (enabled) {
     const obj = { guildId, location };
     enabled = apexExperiment.getConfig(obj).enabled;
   }
   return enabled;
-};
+}
 export const useIsPinotMemberNoticeEnabled = tmp6;
 export const useIsPinotMemberEnabled = tmp7;
-export const isPinotMemberEnabled = function isPinotMemberEnabled(location, arg1) {
+export function isPinotMemberEnabled(location, arg1) {
   const obj = { location };
   return apexExperiment1.getConfig(obj, arg1).enabled;
-};
+}
+export const useIsPinotMemberEnabledWithoutExposure = tmp8;

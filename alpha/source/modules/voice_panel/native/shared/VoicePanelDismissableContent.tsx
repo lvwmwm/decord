@@ -1,24 +1,24 @@
-// Module ID: 18788
-// Function ID: 18789
+// Module ID: 19021
+// Function ID: 19022
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 6807, 10939, 5668, 21, 18789, 1999, 558, 576, 10938, 5085, 4840, 10443, 10442, 2]
+// Dependencies: [32, 19, 6830, 10974, 5670, 21, 19022, 2000, 558, 576, 10973, 5086, 4841, 10476, 10475, 2]
 
-// Module 18788 (VoicePanelDismissableContent)
+// Module 19021 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import CallConstants from "CallConstants" /* 5668 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import CallConstants from "CallConstants" /* 5670 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(18789, dependencyMap.paths);
+  return asyncRequire(19022, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;

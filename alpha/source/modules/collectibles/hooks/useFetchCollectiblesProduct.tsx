@@ -1,15 +1,15 @@
-// Module ID: 11090
-// Function ID: 11091
+// Module ID: 11144
+// Function ID: 11145
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 6860, 7685, 1084, 558, 576, 573, 1992, 7684, 2]
+// Dependencies: [32, 19, 6883, 7708, 1084, 558, 576, 573, 1993, 7707, 2]
 
-// Module 11090 (useFetchCollectiblesProduct)
+// Module 11144 (useFetchCollectiblesProduct)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import SKUStore_mod from "SKUStore" /* 6860 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
+import SKUStore_mod from "SKUStore" /* 6883 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchColl
         }
       }
     }
-    tmp20 = tmp21 === tmp(1992).CollectiblesItemType.BUNDLE;
+    tmp20 = tmp21 === tmp(1993).CollectiblesItemType.BUNDLE;
   }
   if (tmp20) {
     class L {
@@ -237,7 +237,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchColl
     if (product != null) {
       type = product.type;
     }
-    tmp10 = type === tmp(1992).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(1993).CollectiblesItemType.BUNDLE;
   }
   if (tmp10) {
     tmp10 = 0 === product.items.length;

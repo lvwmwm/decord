@@ -1,29 +1,30 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13569
+// Function ID: 13570
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 1199, 13337, 13338, 13339, 5270, 1496, 1385, 13340, 7419, 8882, 13344, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 1199, 13570, 13571, 13572, 5271, 11317, 1385, 13573, 7442, 8885, 13577, 2]
 
-// Module 13336 (ForumPostGridBody)
+// Module 13569 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8882 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13337 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13338 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13339 */;
-import ForumPostMedia from "ForumPostMedia" /* 13340 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8885 */;
+import useChatWidthDefault from "useChatWidth" /* 11317 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13570 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13571 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13572 */;
+import ForumPostMedia from "ForumPostMedia" /* 13573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, obj1;
+let _require, dependencyMap, importDefault, obj1, tmp3;
 
 let metroImportDefault;
 let metroRequire;
@@ -154,55 +155,56 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaGridLayout(arg0, arg1) {
   let closure_0;
   let closure_1;
-  let tmp3;
+  let closure_2;
   let tmp4;
-  let width;
+  let tmp5;
   _require = arg0;
   importDefault = arg1;
   let obj = require("react");
   const cResult = obj.c(16);
-  width = require("useWindowDimensions")().width;
+  let tmp2 = useChatWidthDefault();
+  dependencyMap = tmp2;
   const bound = Math.min(arg0.length, 2);
   if (cResult[0] === arg0) {
     let arr;
-    let tmp7;
+    let tmp8;
     if (cResult[1] === bound) {
       arr = cResult[2];
     }
-    const tmp6 = arg1 ? c9 : c8;
-    let closure_4 = tmp6;
-    if (cResult[6] === width) {
-      if (cResult[7] === tmp6) {
+    const tmp7 = arg1 ? c9 : c8;
+    let closure_4 = tmp7;
+    if (cResult[6] === tmp2) {
+      if (cResult[7] === tmp7) {
         if (cResult[8] === arr) {
           if (cResult[9] === arg1) {
-            tmp7 = cResult[10];
+            tmp8 = cResult[10];
           }
-          return tmp7;
+          return tmp8;
         }
       }
     }
-    if (cResult[11] === width) {
-      if (cResult[12] === tmp6) {
+    if (cResult[11] === tmp2) {
+      if (cResult[12] === tmp7) {
         if (cResult[13] === arr.length) {
-          let tmp8;
+          let tmp9;
           if (cResult[14] === arg1) {
-            tmp8 = cResult[15];
+            tmp9 = cResult[15];
           }
-          let mapped = arr.map(tmp8);
-          cResult[6] = width;
-          cResult[7] = tmp6;
+          let mapped = arr.map(tmp9);
+          cResult[6] = tmp2;
+          cResult[7] = tmp7;
           cResult[8] = arr;
           cResult[9] = arg1;
           cResult[10] = mapped;
-          tmp7 = mapped;
+          tmp8 = mapped;
         }
       }
     }
     const fn3 = function x(arr) {
-      arr.filter(closure_0(width[14]).isNotNullish).length;
+      arr.filter(closure_0(closure_2[14]).isNotNullish).length;
       const length = arr.length;
       return arr.map((media) => {
-        const diff = (width - 48) / length - 2 * (length - 1) / length;
+        const diff = (closure_2 - 48) / length - 2 * (length - 1) / length;
         const obj = { media, targetWidth: diff, targetHeight: null };
         const tmp2 = closure_1;
         if (tmp2) {
@@ -216,12 +218,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMed
         result = closure_4 / length - 2 * (length - 1) / length;
       });
     };
-    cResult[11] = width;
-    cResult[12] = tmp6;
+    cResult[11] = tmp2;
+    cResult[12] = tmp7;
     cResult[13] = arr.length;
     cResult[14] = arg1;
     cResult[15] = fn3;
-    tmp8 = fn3;
+    tmp9 = fn3;
   }
   if (cResult[3] !== arg0) {
     const fn = function l(arr) {
@@ -230,49 +232,50 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMed
     };
     cResult[3] = arg0;
     cResult[4] = fn;
-    tmp3 = fn;
+    tmp4 = fn;
   } else {
-    tmp3 = cResult[4];
+    tmp4 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function c(arg0) {
       return arg0.length > 0;
     };
     cResult[5] = fn2;
-    tmp4 = fn2;
+    tmp5 = fn2;
   } else {
-    tmp4 = cResult[5];
+    tmp5 = cResult[5];
   }
   const substr = items.slice(0, bound);
-  const mapped1 = substr.map(tmp3);
-  const found = mapped1.filter(tmp4);
+  const mapped1 = substr.map(tmp4);
+  const found = mapped1.filter(tmp5);
   cResult[0] = arg0;
   cResult[1] = bound;
   cResult[2] = found;
   arr = found;
 }) : (function useMediaGridLayout(arg0, arg1) {
   let closure_1;
-  let width;
+  let closure_2;
   let length = arg0;
   importDefault = arg1;
-  width = require("useWindowDimensions")().width;
+  const tmp = useChatWidthDefault();
+  dependencyMap = tmp;
   items = [arg0];
   const memo = react.useMemo(() => {
     const substr = items.slice(0, Math.min(length.length, 2));
     let mapped = substr.map((arr) => {
       const mapped = arr.map((item) => closure_1_0[item]);
-      return mapped.filter(length(width[14]).isNotNullish);
+      return mapped.filter(length(closure_2[14]).isNotNullish);
     });
     return mapped.filter((item) => item.length > 0);
   }, items);
-  const items1 = [width, memo, arg1];
+  const items1 = [tmp, memo, arg1];
   return react.useMemo(() => {
     let closure_0 = closure_1 ? closure_1_9 : closure_1_8;
     return memo.map((arr) => {
-      length = arr.filter(closure_0(width[14]).isNotNullish).length;
+      length = arr.filter(closure_0(closure_2[14]).isNotNullish).length;
       length = length.length;
       return arr.map((media) => {
-        const diff = (width - 48) / length - 2 * (length - 1) / length;
+        const diff = (closure_2 - 48) / length - 2 * (length - 1) / length;
         const obj = { media, targetWidth: diff, targetHeight: null };
         const tmp2 = closure_1;
         if (tmp2) {
@@ -413,7 +416,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   ({ hasUnreads, media } = thread);
   const tmp4 = closure_10();
   importDefault = tmp4;
-  let obj2 = thread(7419);
+  let obj2 = thread(7442);
   [arr, tmp6] = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   const tmp5 = _slicedToArray(obj2.useSomeAppliedTags(thread, 2), 2);
   if (cResult[0] !== media) {
@@ -436,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   const arr2 = closure_15(tmp8, tmp11);
   let wideAspectRatioGrid = tmp11;
   if (cResult[4] !== media) {
-    const tmpResult = tmp(8882);
+    const tmpResult = tmp(8885);
     const result = tmpResult.messageContainsGifOrVideo(media);
     cResult[4] = media;
     cResult[5] = result;
@@ -744,7 +747,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   let tmp = closure_10();
   dependencyMap = tmp;
   let tmp2 = thread;
-  let obj = thread(7419);
+  let obj = thread(7442);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp14Result = first.length > 0;
   items = [media];
@@ -784,7 +787,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGri
   items3[1] = tmp15;
   items4 = [closure_6(View, obj3), , , ];
   if (tmp14Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13344).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13577).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp14Result = tmp14(tmp12, obj4);
   }

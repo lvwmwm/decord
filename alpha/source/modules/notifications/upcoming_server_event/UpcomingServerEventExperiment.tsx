@@ -1,12 +1,12 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17380
+// Function ID: 17381
 // Name: UpcomingServerEventExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications
 
-// Module 17141 (UpcomingServerEventExperiment)
+// Module 17380 (UpcomingServerEventExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/notifications/upcoming_server
 
 export default apexExperiment;
 export const useUpcomingServerEventExperiment = tmp3;
-export const isEligibleForUpcomingServerEventNotifications = function isEligibleForUpcomingServerEventNotifications(location) {
+export function isEligibleForUpcomingServerEventNotifications(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).showSettingsToggle;
-};
+}

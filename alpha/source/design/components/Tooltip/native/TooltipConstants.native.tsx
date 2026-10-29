@@ -1,11 +1,11 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9911
+// Function ID: 9912
 // Name: TooltipConstants
-// Dependencies: [5283, 2]
+// Dependencies: [5284, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9879 (TooltipConstants)
-import spring from "spring" /* 5283 */;
+// Module 9911 (TooltipConstants)
+import spring from "spring" /* 5284 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ const TOOLTIP_SPRING = { overshootClamping: true, damping: 35, stiffness: 450, m
 const __initData = { code: "function TooltipConstantsNativeTsx1(visible,cleanUp){const{withSpring,translate,TOOLTIP_SPRING,isHorizontal}=this.__closure;const offset=withSpring(visible===1?0:translate,TOOLTIP_SPRING,'respect-motion-settings',cleanUp);return{transform:isHorizontal?[{translateX:offset}]:[{translateY:offset}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};}" };
 const result = size.fileFinishedImporting("design/components/Tooltip/native/TooltipConstants.native.tsx");
 
-export const tooltipEnterExitAnimation = function tooltipEnterExitAnimation(position) {
+export function tooltipEnterExitAnimation(position) {
   let closure_0;
   let num;
   let tmp = "left" === position;
@@ -50,4 +50,4 @@ export const tooltipEnterExitAnimation = function tooltipEnterExitAnimation(posi
   fn.__workletHash = 12524569976242;
   fn.__initData = __initData;
   return fn;
-};
+}

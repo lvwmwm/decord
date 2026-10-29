@@ -1,16 +1,16 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16919
+// Function ID: 16920
 // Name: OrbsArcadeGameGraphic
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5705, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5707, 2]
 
-// Module 16681 (OrbsArcadeGameGraphic)
+// Module 16919 (OrbsArcadeGameGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5705 */;
+import FastImageDefault from "FastImage" /* 5707 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

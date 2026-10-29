@@ -1,10 +1,10 @@
-// Module ID: 7031
-// Function ID: 7032
+// Module ID: 7055
+// Function ID: 7056
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: getAssetResizeMode, getAssetSizeStyle, getAssetSource
 
-// Module 7031 (react-native)
+// Module 7055 (react-native)
 import react_native from "react-native" /* 17 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -12,10 +12,10 @@ const PixelRatio = react_native.PixelRatio;
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/assetHelpers.native.tsx");
 
-export const getAssetSource = function getAssetSource(arg0) {
+export function getAssetSource(arg0) {
   return arg0[Math.min(Math, Math.ceil(Math, PixelRatio.get(PixelRatio)), 3)];
-};
-export const getAssetSizeStyle = function getAssetSizeStyle(size) {
+}
+export function getAssetSizeStyle(size) {
   let height;
   let intrinsicHeight;
   let intrinsicWidth;
@@ -41,11 +41,11 @@ export const getAssetSizeStyle = function getAssetSizeStyle(size) {
     }
   }
   size2 = { width, height, aspectRatio: intrinsicWidth / intrinsicHeight };
-};
-export const getAssetResizeMode = function getAssetResizeMode(resizeMode) {
+}
+export function getAssetResizeMode(resizeMode) {
   let str = "contain";
   if (null != resizeMode) {
     str = resizeMode;
   }
   return str;
-};
+}

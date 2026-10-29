@@ -1,13 +1,13 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 9998
+// Function ID: 9999
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1452, 558, 576, 5063, 2]
+// Dependencies: [1453, 558, 576, 5064, 2]
 // Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature
 
-// Module 9966 (MobileStickerPickerUpsellRestyleExperiment)
+// Module 9998 (MobileStickerPickerUpsellRestyleExperiment)
 import react from "react" /* 576 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5063 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5064 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,11 +38,11 @@ const result = size.fileFinishedImporting("modules/premium/experiments/MobileSti
 export const MobileStickerPickerUpsellRestyleExperiment = apexExperiment;
 export const useMobileStickerPickerUpsellRestyleEnabled = tmp3;
 export { getMobileStickerPickerUpsellRestyleEnabled };
-export const getMobileStickerPickerUpsellRestyleEnabledForFeature = function getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, location) {
+export function getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, location) {
   let config = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
   if (config) {
     const obj = { location };
     config = apexExperiment.getConfig(obj);
   }
   return config;
-};
+}

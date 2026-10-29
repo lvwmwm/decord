@@ -1,10 +1,10 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15347
+// Function ID: 15348
 // Name: PremiumPlanSelectStore
 // Dependencies: [570, 1271, 2]
 // Exports: setIsPurchasing
 
-// Module 15112 (PremiumPlanSelectStore)
+// Module 15347 (PremiumPlanSelectStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const usePremiumPlanSelectStore = module_570.create(() => ({ isPurchasing: false
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
 
 export { usePremiumPlanSelectStore };
-export const setIsPurchasing = function setIsPurchasing(isPurchasing) {
+export function setIsPurchasing(isPurchasing) {
   let purchasingProductId;
   _require = isPurchasing;
   let tmp = arg1;
@@ -28,4 +28,4 @@ export const setIsPurchasing = function setIsPurchasing(isPurchasing) {
     const obj = { isPurchasing, purchasingProductId };
     return obj.setState(obj);
   });
-};
+}

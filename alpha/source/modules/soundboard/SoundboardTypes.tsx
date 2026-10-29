@@ -1,10 +1,10 @@
-// Module ID: 7481
-// Function ID: 7482
+// Module ID: 7504
+// Function ID: 7505
 // Name: SoundboardTypes
 // Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 7481 (SoundboardTypes)
+// Module 7504 (SoundboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");
@@ -13,7 +13,7 @@ export const SoundButtonOverlay = { NONE: 0, [0]: "NONE", PLAY: 1, [1]: "PLAY", 
 export const AnalyticsSoundType = { ENTRY: "entry_sound", EXIT: "exit_sound", DEFAULT: "default", ECHO: "echo" };
 export const AnalyticsChangeType = { ADDED: "added", UPDATED: "updated", REMOVED: "removed" };
 export const AnalyticsSoundSource = { DEFAULT: "default", CUSTOM: "custom" };
-export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, c0) {
+export function soundboardSoundFromAPI(body, c0) {
   let emoji_id;
   let emoji_name;
   let sound_id;
@@ -26,8 +26,8 @@ export const soundboardSoundFromAPI = function soundboardSoundFromAPI(body, c0) 
     flag = true;
   }
   return obj;
-};
-export const soundboardSoundToAPI = function soundboardSoundToAPI(item) {
+}
+export function soundboardSoundToAPI(item) {
   let emojiId;
   let emojiName;
   let guildId;
@@ -37,6 +37,6 @@ export const soundboardSoundToAPI = function soundboardSoundToAPI(item) {
   const obj = { sound_id: soundId, guild_id: guildId, emoji_id: emojiId, emoji_name: emojiName, user_id: userId };
   const merged = Object.assign(Object.assign(item, Object.assign({ soundId: 0, guildId: 0, emojiId: 0, emojiName: 0, userId: 0 })));
   return obj;
-};
+}
 export const SoundboardSoundGridSectionType = { FAVORITES: 0, [0]: "FAVORITES", GUILD: 1, [1]: "GUILD", DEFAULTS: 2, [2]: "DEFAULTS", SEARCH: 3, [3]: "SEARCH", FREQUENTLY_USED: 4, [4]: "FREQUENTLY_USED", TOP_SOUNDS: 5, [5]: "TOP_SOUNDS" };
 export const SoundboardSoundItemType = { SOUND: 0, [0]: "SOUND", ADD_SOUND: 1, [1]: "ADD_SOUND" };

@@ -1,26 +1,26 @@
-// Module ID: 18115
-// Function ID: 18116
+// Module ID: 18349
+// Function ID: 18350
 // Name: ConjureYouBarButton
-// Dependencies: [19, 16712, 21, 5004, 587, 14404, 558, 576, 14392, 1503, 14397, 12212, 18116, 14402, 2]
+// Dependencies: [19, 16950, 21, 5005, 587, 14638, 558, 576, 14626, 1504, 14631, 12266, 18350, 14636, 2]
 
-// Module 18115 (ConjureYouBarButton)
+// Module 18349 (ConjureYouBarButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1503 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 14392 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14402 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14404 */;
-import YouBarConstants from "YouBarConstants" /* 16712 */;
-import YouBarButtonDefault from "YouBarButton" /* 18116 */;
+import Link from "Link" /* 1504 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 14626 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14636 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 14638 */;
+import YouBarConstants from "YouBarConstants" /* 16950 */;
+import YouBarButtonDefault from "YouBarButton" /* 18350 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const MagicWandIcon2 = tmp(12212);
+const MagicWandIcon2 = tmp(12266);
 function confirmUnpin() {
   confirmConjureYouBarPinDefault(false);
 }
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (working) {
     const obj4 = { size: YOU_BAR_BUTTON_ICON_SIZE, paused: !isFocused };
-    tmp9Result = tmp9(tmp5(14397), obj4);
+    tmp9Result = tmp9(tmp5(14631), obj4);
   } else {
     const obj5 = { size: "custom", style: tmp4.icon, color: str };
     str = undefined;
@@ -117,7 +117,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   YouBarButtonDefault;
   if (working) {
     const obj3 = { size: YOU_BAR_BUTTON_ICON_SIZE, paused: !isFocused };
-    tmp7Result = tmp7(tmp2(14397), obj3);
+    tmp7Result = tmp7(tmp2(14631), obj3);
   } else {
     const obj4 = { size: "custom", style: tmp.icon, color: str };
     str = undefined;

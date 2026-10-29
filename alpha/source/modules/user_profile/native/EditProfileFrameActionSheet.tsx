@@ -1,28 +1,28 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16398
+// Function ID: 16399
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7700, 7692, 1084, 21, 5004, 587, 558, 576, 8712, 8696, 7289, 7314, 1264, 8690, 8697, 7284, 1125, 8698, 5301, 10525, 504, 16162, 14752, 8692, 8713, 16163, 14758, 14759, 8699, 11212, 5294, 2]
+// Dependencies: [32, 19, 17, 7723, 7715, 1084, 21, 5005, 587, 558, 576, 8715, 8699, 7313, 7338, 1264, 8693, 8700, 7308, 1125, 8701, 5302, 10558, 504, 16399, 14987, 8695, 8716, 16400, 14993, 14994, 8702, 11266, 5295, 2]
 
-// Module 16161 (EditProfileFrameActionSheet)
+// Module 16398 (EditProfileFrameActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7692 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8690 */;
-import useShopProductItems from "useShopProductItems" /* 8697 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8699 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8713 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11212 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 16163 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7715 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8693 */;
+import useShopProductItems from "useShopProductItems" /* 8700 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8702 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11266 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 16400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7700 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,16 +60,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileF
   ({ user, currentProfileFrame, guildId } = arg0);
   closure_12();
   let str = user.id;
-  const tmp6 = selectedProfileFrame(8712);
+  const tmp6 = selectedProfileFrame(8715);
   if (str == null) {
     str = "";
   }
   const tmp6Result = tmp6(str);
   [selectedProfileFrame, tmp9] = react.useState(currentProfileFrame);
-  const tmpResult = tmp(8696);
+  const tmpResult = tmp(8699);
   const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
-  const tmp5Result = selectedProfileFrame(7289);
-  const analyticsLocations = tmp5Result(tmp5(7314).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
+  const tmp5Result = selectedProfileFrame(7313);
+  const analyticsLocations = tmp5Result(tmp5(7338).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
   if (cResult[0] !== tmp6Result) {
     let tmp12 = null != tmp6Result;
     if (tmp12) {
@@ -183,7 +183,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileF
           }
         }
         let obj2 = { title: tmp20(tmp(1125).t["oTSa/q"]) };
-        const BottomSheetTitleHeader = tmp(7284).BottomSheetTitleHeader;
+        const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
         const intl = tmp(1125).intl;
         class L {
           constructor(arg0) {
@@ -262,7 +262,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileF
     cResult[8] = selectedProfileFrame;
     cResult[9] = L;
   }
-  const obj4 = { type: selectedProfileFrame(7314).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp11 };
+  const obj4 = { type: selectedProfileFrame(7338).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp11 };
   cResult[2] = guildId;
   cResult[3] = tmp11;
   cResult[4] = obj4;
@@ -731,7 +731,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8699)(previewSkuId);
+  const tmp2 = purchase(8702)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -755,10 +755,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11212), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(11266), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5294);
+  const tmp4 = purchase(5295);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

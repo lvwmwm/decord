@@ -1,338 +1,280 @@
 // Module ID: 1692
 // Function ID: 1693
-// Dependencies: [1658, 1659, 1693, 1685, 1662, 1666, 1686]
+// Dependencies: [1659, 1681, 1693, 1695, 1663]
 
 // Module 1692
-import valueSetter2 from "valueSetter" /* 1693 */;
-import module_1658_mod from "module_1658" /* 1658 */;
+import LayoutAnimationType from "LayoutAnimationType" /* 1681 */;
+import _mod1693 from "module_1693" /* 1693 */;
+import _mod1695 from "module_1695" /* 1695 */;
+import module_1659_mod from "module_1659" /* 1659 */;
+import setupMicrotasks from "setupMicrotasks" /* 1663 */;
 
 const require = globalThis.__r;
-let _require, map;
+let _require, dependencyMap, map, map1;
 
-let module_1658 = module_1658_mod;
-module_1658.shouldBeUseWeb();
-module_1658 = module_1658_mod;
-let closure_2 = module_1658.isJest();
-function addCompilerSafeGetAndSet(prototype) {
-  let closure_0 = prototype;
-  const obj = {
-    get: {
-      value() {
-        return obj.value;
-      },
-      configurable: false,
-      enumerable: false
-    },
-    set: {
-      value(__isAnimationDefinition) {
-        if (typeof __isAnimationDefinition === "function") {
-          if (!__isAnimationDefinition.__isAnimationDefinition) {
-            obj.value = __isAnimationDefinition(obj.value);
+let module_1659 = module_1659_mod;
+module_1659 = module_1659.isAndroid();
+function startObservingProgress(arg0, addListener, arg2) {
+  let closure_2;
+  let closure_0 = arg0;
+  _require = addListener;
+  dependencyMap = arg2 === require("LayoutAnimationType").LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+  addListener.addListener(arg0 + 1000000000, () => {
+    closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+  });
+}
+let obj = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, TAG_OFFSET: 1000000000 };
+startObservingProgress.__closure = obj;
+startObservingProgress.__workletHash = 15816248532180;
+startObservingProgress.__initData = { code: "function startObservingProgress_Pnpm_animationsManagerTs1(tag,sharedValue,animationType){const{LayoutAnimationType,TAG_OFFSET}=this.__closure;const isSharedTransition=animationType===LayoutAnimationType.SHARED_ELEMENT_TRANSITION;sharedValue.addListener(tag+TAG_OFFSET,function(){global._notifyAboutProgress(tag,sharedValue.value,isSharedTransition);});}" };
+function stopObservingProgress(arg0, removeListener) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  removeListener.removeListener(arg0 + 1000000000);
+  global._notifyAboutEnd(arg0, flag);
+}
+stopObservingProgress.__closure = { TAG_OFFSET: 1000000000 };
+stopObservingProgress.__workletHash = 8517596296348;
+stopObservingProgress.__initData = { code: "function stopObservingProgress_Pnpm_animationsManagerTs2(tag,sharedValue,removeView=false){const{TAG_OFFSET}=this.__closure;sharedValue.removeListener(tag+TAG_OFFSET);global._notifyAboutEnd(tag,removeView);}" };
+function createLayoutAnimationManager() {
+  map = new Map();
+  map1 = new Map();
+  function startActually(arg0, arg1, arg2, fn) {
+    let closure_0;
+    let closure_1;
+    map = arg0;
+    map1 = arg1;
+    let tmp = map1;
+    if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+      const tmp6 = fn(arg2);
+      let closure_2 = tmp6;
+      let animations = tmp6.animations;
+      let obj = map;
+      const value = map.get(arg0);
+      if (value) {
+        const obj2 = {};
+        const merged = Object.assign(value);
+        let tmp11 = obj2;
+        const merged1 = Object.assign(tmp6.animations);
+        animations = obj2;
+      }
+      const result = obj.set(arg0, animations);
+      let value2 = map1.get(arg0);
+      let mutableUI = value2;
+      const obj3 = map1;
+      if (undefined === value2) {
+        const tmpResult = tmp(startActually[2]);
+        mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+        const result1 = obj3.set(arg0, mutableUI);
+        value2 = mutableUI;
+      } else {
+        let tmp15 = stopObservingProgress;
+        if (typeof stopObservingProgress === "function") {
+          value2.removeListener(arg0 + 1000000000);
+          map._notifyAboutEnd(arg0, false);
+          value2._value = tmp6.initialValues;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      const tmpResult2 = tmp(startActually[3]);
+      const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+      withStyleAnimationResult.callback = (arg0) => {
+        const tmp = arg0;
+        if (tmp) {
+          map.delete(closure_0);
+          map1.delete(closure_0);
+          const obj = mutableUI;
+          const tmp7 = closure_1;
+          if (typeof stopObservingProgress === "function") {
+            const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+            obj.removeListener(closure_0 + 1000000000);
+            global._notifyAboutEnd(closure_0, tmp11);
+          } else {
+            throw new TypeError("Trying to call a non-function");
           }
         }
-        obj.value = __isAnimationDefinition;
-      },
-      configurable: false,
-      enumerable: false
-    }
-  };
-  Object.defineProperties(prototype, obj);
-}
-addCompilerSafeGetAndSet.__closure = {};
-addCompilerSafeGetAndSet.__workletHash = 14094096506039;
-addCompilerSafeGetAndSet.__initData = { code: "function addCompilerSafeGetAndSet_Pnpm_mutablesTs1(mutable){Object.defineProperties(mutable,{get:{value:function(){return mutable.value;},configurable:false,enumerable:false},set:{value:function(newValue){if(typeof newValue==='function'&&!newValue.__isAnimationDefinition){mutable.value=newValue(mutable.value);}else{mutable.value=newValue;}},configurable:false,enumerable:false}});}" };
-function hideInternalValueProp(arg0) {
-  Object.defineProperty(arg0, "_value", { configurable: false, enumerable: false });
-}
-hideInternalValueProp.__closure = {};
-hideInternalValueProp.__workletHash = 3380393180484;
-hideInternalValueProp.__initData = { code: "function hideInternalValueProp_Pnpm_mutablesTs2(mutable){Object.defineProperty(mutable,'_value',{configurable:false,enumerable:false});}" };
-function makeMutableUI(initialValues) {
-  let obj3;
-  let obj4;
-  map = new Map();
-  let closure_1 = initialValues;
-  let obj = {
-    modify(fn, flag) {
-      let tmp3;
-      if (flag === undefined) {
-        flag = true;
-      }
-      const valueSetter = valueSetter2.valueSetter;
-      valueSetter2;
-      const tmp2 = obj;
-      if (undefined !== fn) {
-        tmp3 = fn(initialValues);
+        const tmp15 = closure_2;
+        if (closure_2.callback) {
+          let tmp16 = undefined !== arg0;
+          const callback = tmp15.callback;
+          if (tmp16) {
+            tmp16 = arg0;
+          }
+          callback(tmp16);
+        }
+      };
+      if (typeof startObservingProgress === "function") {
+        map = arg0;
+        closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+        value2.addListener(arg0 + 1000000000, () => {
+          closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+        });
+        value2.value = withStyleAnimationResult;
       } else {
-        tmp3 = initialValues;
+        throw new TypeError("Trying to call a non-function");
       }
-      valueSetter(tmp2, tmp3, flag);
-    },
-    addListener(arg0, arg1) {
-      const result = map.set(arg0, arg1);
-    },
-    removeListener(arg0) {
-      map.delete(arg0);
-    },
-    _animation: null,
-    _isReanimatedSharedValue: true
-  };
-  Object.defineProperty(obj, "value", {
-    get: () => initialValues,
-    set: (value) => {
-      obj = valueSetter2;
-      obj.valueSetter(obj, value);
+    } else {
+      const ProgressTransitionRegister = map.ProgressTransitionRegister;
+      ProgressTransitionRegister.onTransitionStart(arg0, arg2);
     }
-  });
-  Object.defineProperty(obj, "_value", {
-    get: () => initialValues,
-    set: (arg0) => {
+  }
+  const tmp3 = module_1659;
+  if (tmp3) {
+    startActually = (arg0, arg1, arg2, arg3) => {
       let closure_0 = arg0;
-      let closure_1 = arg0;
-      const item = map.forEach((fn) => {
-        fn(closure_0);
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      let closure_3 = arg3;
+      return requestAnimationFrame(() => {
+        startActually(closure_0, closure_1, closure_2, closure_3);
       });
-    }
-  });
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-    let tmp3 = addCompilerSafeGetAndSet;
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      const _Object2 = Object;
-      const obj2 = { get: obj3, set: obj4 };
-      obj3 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj4 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      Object.defineProperties(obj, obj2);
-      return obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    };
   }
-}
-let obj = { valueSetter: valueSetter2.valueSetter, hideInternalValueProp, addCompilerSafeGetAndSet };
-makeMutableUI.__closure = obj;
-makeMutableUI.__workletHash = 8132940328790;
-makeMutableUI.__initData = { code: "function makeMutableUI_Pnpm_mutablesTs3(initial){const{valueSetter,hideInternalValueProp,addCompilerSafeGetAndSet}=this.__closure;const listeners=new Map();let value=initial;const mutable={get value(){return value;},set value(newValue){valueSetter(mutable,newValue);},get _value(){return value;},set _value(newValue){value=newValue;listeners.forEach(function(listener){listener(newValue);});},modify:function(modifier,forceUpdate=true){valueSetter(mutable,modifier!==undefined?modifier(value):value,forceUpdate);},addListener:function(id,listener){listeners.set(id,listener);},removeListener:function(id){listeners.delete(id);},_animation:null,_isReanimatedSharedValue:true};hideInternalValueProp(mutable);addCompilerSafeGetAndSet(mutable);return mutable;}" };
-const __initData = { code: "function pnpm_mutablesTs4(){const{makeMutableUI,initial}=this.__closure;return makeMutableUI(initial);}" };
-let closure_7 = { code: "function pnpm_mutablesTs5(sv){return sv.value;}" };
-let closure_8 = { code: "function pnpm_mutablesTs6(){const{mutable,newValue}=this.__closure;mutable.value=newValue;}" };
-let closure_9 = { code: "function pnpm_mutablesTs7(){const{mutable,modifier,forceUpdate}=this.__closure;mutable.modify(modifier,forceUpdate);}" };
-
-export { makeMutableUI };
-export const makeMutable = module_1658 ? (function makeMutableWeb(arg0) {
-  let obj3;
-  let obj4;
-  let closure_0 = arg0;
-  map = new Map();
   let obj = {
-    modify(fn, flag) {
-      let value;
-      if (flag === undefined) {
-        flag = true;
+    start: startActually,
+    stop(arg0) {
+      const value = map1.get(arg0);
+      if (value) {
+        if (typeof stopObservingProgress === "function") {
+          value.removeListener(arg0 + 1000000000);
+          global._notifyAboutEnd(arg0, false);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
       }
-      const valueSetter = valueSetter2.valueSetter;
-      valueSetter2;
-      if (undefined !== fn) {
-        value = fn(iter.value);
+    }
+  };
+  return obj;
+}
+let obj2 = { LayoutAnimationType: LayoutAnimationType.LayoutAnimationType, makeMutableUI: _mod1693.makeMutableUI, stopObservingProgress, withStyleAnimation: _mod1695.withStyleAnimation, startObservingProgress, IS_ANDROID: module_1659 };
+createLayoutAnimationManager.__closure = obj2;
+createLayoutAnimationManager.__workletHash = 8526874600063;
+createLayoutAnimationManager.__initData = { code: "function createLayoutAnimationManager_Pnpm_animationsManagerTs3(){const{LayoutAnimationType,makeMutableUI,stopObservingProgress,withStyleAnimation,startObservingProgress,IS_ANDROID}=this.__closure;const currentAnimationForTag=new Map();const mutableValuesForTag=new Map();const startActually=function(tag,type,yogaValues,config){if(type===LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS){global.ProgressTransitionRegister.onTransitionStart(tag,yogaValues);return;}const style=config(yogaValues);let currentAnimation=style.animations;const previousAnimation=currentAnimationForTag.get(tag);if(previousAnimation){currentAnimation={...previousAnimation,...style.animations};}currentAnimationForTag.set(tag,currentAnimation);let value=mutableValuesForTag.get(tag);if(value===undefined){value=makeMutableUI(style.initialValues);mutableValuesForTag.set(tag,value);}else{stopObservingProgress(tag,value);value._value=style.initialValues;}const animation=withStyleAnimation(currentAnimation);animation.callback=function(finished){if(finished){currentAnimationForTag.delete(tag);mutableValuesForTag.delete(tag);const shouldRemoveView=type===LayoutAnimationType.EXITING;stopObservingProgress(tag,value,shouldRemoveView);}style.callback&&style.callback(finished===undefined?false:finished);};startObservingProgress(tag,value,type);value.value=animation;};let start;if(IS_ANDROID){start=function(tag,type,yogaValues,config){return requestAnimationFrame(function(){startActually(tag,type,yogaValues,config);});};}else{start=startActually;}return{start:start,stop:function(tag){const value=mutableValuesForTag.get(tag);if(!value){return;}stopObservingProgress(tag,value);}};}" };
+const fn = function t() {
+  if (typeof createLayoutAnimationManager === "function") {
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    new Map();
+    const _Map2 = Map;
+    const self3 = this;
+    const self4 = this;
+    new Map();
+    function startActually(arg0, arg1, arg2, fn) {
+      let closure_0;
+      let closure_1;
+      map = arg0;
+      map1 = arg1;
+      let tmp = map1;
+      if (arg1 !== map1(startActually[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION_PROGRESS) {
+        const tmp6 = fn(arg2);
+        let closure_2 = tmp6;
+        let animations = tmp6.animations;
+        let obj = map;
+        const value = map.get(arg0);
+        if (value) {
+          const obj2 = {};
+          const merged = Object.assign(value);
+          let tmp11 = obj2;
+          const merged1 = Object.assign(tmp6.animations);
+          animations = obj2;
+        }
+        const result = obj.set(arg0, animations);
+        let value2 = map1.get(arg0);
+        let mutableUI = value2;
+        const obj3 = map1;
+        if (undefined === value2) {
+          const tmpResult = tmp(startActually[2]);
+          mutableUI = tmpResult.makeMutableUI(tmp6.initialValues);
+          const result1 = obj3.set(arg0, mutableUI);
+          value2 = mutableUI;
+        } else {
+          let tmp15 = stopObservingProgress;
+          if (typeof stopObservingProgress === "function") {
+            value2.removeListener(arg0 + 1000000000);
+            map._notifyAboutEnd(arg0, false);
+            value2._value = tmp6.initialValues;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        const tmpResult2 = tmp(startActually[3]);
+        const withStyleAnimationResult = tmpResult2.withStyleAnimation(animations);
+        withStyleAnimationResult.callback = (arg0) => {
+          const tmp = arg0;
+          if (tmp) {
+            map.delete(closure_0);
+            map1.delete(closure_0);
+            const obj = mutableUI;
+            const tmp7 = closure_1;
+            if (typeof stopObservingProgress === "function") {
+              const tmp11 = tmp7 === LayoutAnimationType.LayoutAnimationType.EXITING;
+              obj.removeListener(closure_0 + 1000000000);
+              global._notifyAboutEnd(closure_0, tmp11);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+          const tmp15 = closure_2;
+          if (closure_2.callback) {
+            let tmp16 = undefined !== arg0;
+            const callback = tmp15.callback;
+            if (tmp16) {
+              tmp16 = arg0;
+            }
+            callback(tmp16);
+          }
+        };
+        if (typeof startObservingProgress === "function") {
+          map = arg0;
+          closure_2 = arg1 === tmp(tmp2[1]).LayoutAnimationType.SHARED_ELEMENT_TRANSITION;
+          value2.addListener(arg0 + 1000000000, () => {
+            closure_0._notifyAboutProgress(closure_0, value2.value, closure_2);
+          });
+          value2.value = withStyleAnimationResult;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
       } else {
-        value = iter.value;
+        const ProgressTransitionRegister = map.ProgressTransitionRegister;
+        ProgressTransitionRegister.onTransitionStart(arg0, arg2);
       }
-      valueSetter(obj, value, flag);
-    },
-    addListener(arg0, arg1) {
-      const result = map.set(arg0, arg1);
-    },
-    removeListener(arg0) {
-      map.delete(arg0);
-    },
-    _isReanimatedSharedValue: true
-  };
-  Object.defineProperty(obj, "value", {
-    get: () => closure_0,
-    set: (value) => {
-      obj = valueSetter2;
-      obj.valueSetter(obj, value);
     }
-  });
-  Object.defineProperty(obj, "_value", {
-    get: () => closure_0,
-    set: (arg0) => {
-      closure_0 = arg0;
-      const item = map.forEach((fn) => {
-        fn(closure_0);
-      });
-    }
-  });
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      const _Object2 = Object;
-      const obj2 = { get: obj3, set: obj4 };
-      obj3 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
+    const tmp7 = module_1659;
+    if (tmp7) {
+      startActually = (arg0, arg1, arg2, arg3) => {
+        let closure_0 = arg0;
+        let closure_1 = arg1;
+        let closure_2 = arg2;
+        let closure_3 = arg3;
+        return requestAnimationFrame(() => {
+          startActually(closure_0, closure_1, closure_2, closure_3);
+        });
       };
-      obj4 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      Object.defineProperties(obj, obj2);
-      const tmp5 = obj;
-      if (tmp5) {
-        obj.toJSON = () => JSON.stringify(closure_0);
-      }
-      return obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
     }
+    const obj = {
+      start: startActually,
+      stop(arg0) {
+          const value = map1.get(arg0);
+          if (value) {
+            if (typeof stopObservingProgress === "function") {
+              value.removeListener(arg0 + 1000000000);
+              global._notifyAboutEnd(arg0, false);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          }
+        }
+    };
+    tmp.LayoutAnimationsManager = obj;
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : (function makeMutableNative(initial) {
-  let fn;
-  let obj4;
-  let obj6;
-  let obj7;
-  _require = initial;
-  let obj = require("module_1685");
-  let obj2 = { __init: fn };
-  fn = function n() {
-    return makeMutableUI(initial);
-  };
-  const obj3 = { makeMutableUI, initial };
-  fn.__closure = obj3;
-  fn.__workletHash = 38746935544;
-  fn.__initData = __initData;
-  const tmp2 = obj4;
-  obj4 = {
-    modify(modifier) {
-      initial = modifier;
-      let flag = arg1;
-      if (arg1 === undefined) {
-        flag = true;
-      }
-      const fn = function u() {
-        obj4.modify(modifier, flag);
-      };
-      const obj2 = { mutable: flag, modifier, forceUpdate: flag };
-      fn.__closure = obj2;
-      fn.__workletHash = 15983399508815;
-      fn.__initData = __initData3;
-      const obj = initial(obj4[4]);
-      obj.runOnUI(fn)();
-    },
-    addListener() {
-      const reanimatedError = new initial(obj4[5]).ReanimatedError("Adding listeners is only possible on the UI runtime.");
-      throw reanimatedError;
-    },
-    removeListener() {
-      const reanimatedError = new initial(obj4[5]).ReanimatedError("Removing listeners is only possible on the UI runtime.");
-      throw reanimatedError;
-    },
-    _isReanimatedSharedValue: true
-  };
-  const shareableCloneRecursive = obj.makeShareableCloneRecursive(obj2);
-  Object.defineProperty(obj4, "value", {
-    get: () => {
-      const fn = function t(value) {
-        return value.value;
-      };
-      fn.__closure = {};
-      fn.__workletHash = 5375306386445;
-      fn.__initData = __initData;
-      const obj = require("setupMicrotasks");
-      return obj.executeOnUIRuntimeSync(fn)(obj4);
-    },
-    set: (newValue) => {
-      let value;
-      initial = newValue;
-      const fn = function n() {
-        obj4.value = value;
-      };
-      const obj2 = { mutable: obj4, newValue };
-      fn.__closure = obj2;
-      fn.__workletHash = 11269088169577;
-      fn.__initData = __initData2;
-      const obj = initial(obj4[4]);
-      obj.runOnUI(fn)();
-    }
-  });
-  Object.defineProperty(obj4, "_value", {
-    get: () => {
-      const reanimatedError = new initial(obj4[5]).ReanimatedError("Reading from `_value` directly is only possible on the UI runtime. Perhaps you passed an Animated Style to a non-animated component?");
-      throw reanimatedError;
-    },
-    set: (arg0) => {
-      const reanimatedError = new initial(obj4[5]).ReanimatedError("Setting `_value` directly is only possible on the UI runtime. Perhaps you want to assign to `value` instead?");
-      throw reanimatedError;
-    }
-  });
-  const tmp = _require;
-  if (typeof hideInternalValueProp === "function") {
-    const _Object = Object;
-    Object.defineProperty(obj4, "_value", { configurable: false, enumerable: false });
-    if (typeof addCompilerSafeGetAndSet === "function") {
-      const _Object2 = Object;
-      const obj5 = { get: obj6, set: obj7 };
-      obj6 = {
-        value() {
-              return obj.value;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      obj7 = {
-        value(__isAnimationDefinition) {
-              if (typeof __isAnimationDefinition === "function") {
-                if (!__isAnimationDefinition.__isAnimationDefinition) {
-                  obj.value = __isAnimationDefinition(obj.value);
-                }
-              }
-              obj.value = __isAnimationDefinition;
-            },
-        configurable: false,
-        enumerable: false
-      };
-      Object.defineProperties(obj4, obj5);
-      const shareableMappingCache = tmp(tmp2[6]).shareableMappingCache;
-      const result = shareableMappingCache.set(obj4, shareableCloneRecursive);
-      return obj4;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-});
+};
+fn.__closure = { createLayoutAnimationManager };
+fn.__workletHash = 11408639565737;
+fn.__initData = { code: "function pnpm_animationsManagerTs4(){const{createLayoutAnimationManager}=this.__closure;global.LayoutAnimationsManager=createLayoutAnimationManager();}" };
+const tmp2 = setupMicrotasks.runOnUIImmediately(fn)();

@@ -1,27 +1,27 @@
-// Module ID: 15357
-// Function ID: 15358
+// Module ID: 15592
+// Function ID: 15593
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1389, 1084, 13815, 21, 5004, 6686, 587, 558, 576, 13817, 1264, 1381, 5299, 1505, 6707, 5058, 1125, 8885, 7521, 15358, 6960, 5270, 15359, 15361, 1630, 7131, 2]
+// Dependencies: [32, 19, 17, 1389, 1084, 14048, 21, 5005, 6710, 587, 558, 576, 14050, 1264, 1381, 5300, 1506, 6731, 5059, 1125, 8888, 7544, 15593, 6984, 5271, 15594, 15595, 1631, 7155, 2]
 
-// Module 15357 (AddFriendModal)
+// Module 15592 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import Navigator from "Navigator" /* 7131 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13817 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import Navigator from "Navigator" /* 7155 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14048 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14050 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import TextStyles from "TextStyles" /* 6686 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import TextStyles from "TextStyles" /* 6710 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

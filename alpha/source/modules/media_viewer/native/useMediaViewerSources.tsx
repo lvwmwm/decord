@@ -1,11 +1,11 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 8792
+// Function ID: 8793
 // Name: useMediaViewerSources
-// Dependencies: [5199, 2]
+// Dependencies: [5200, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler, updateMediaViewerSources
 
-// Module 8789 (useMediaViewerSources)
-import ZustandStore from "ZustandStore" /* 5199 */;
+// Module 8792 (useMediaViewerSources)
+import ZustandStore from "ZustandStore" /* 5200 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -18,7 +18,7 @@ const zustandStore = ZustandStore.createZustandStore(() => {
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaViewerSources.tsx");
 
 export const MediaViewerSourcesStore = zustandStore;
-export const setMediaViewerSources = function setMediaViewerSources(initialIndex) {
+export function setMediaViewerSources(initialIndex) {
   initialIndex = initialIndex.initialIndex;
   const sources = initialIndex.sources;
   if (initialIndex === undefined) {
@@ -37,12 +37,12 @@ export const setMediaViewerSources = function setMediaViewerSources(initialIndex
     set = new Set();
   }
   zustandStore.setState({ sources, userRevealedIndexes: set });
-};
-export const updateMediaViewerSources = function updateMediaViewerSources(items) {
+}
+export function updateMediaViewerSources(items) {
   const obj = { sources: items };
   zustandStore.setState(obj);
-};
-export const removeSpoiler = function removeSpoiler(index) {
+}
+export function removeSpoiler(index) {
   const field = zustandStore.getField("userRevealedIndexes");
   const obj = zustandStore;
   if (!field.has(index)) {
@@ -54,8 +54,8 @@ export const removeSpoiler = function removeSpoiler(index) {
     const obj2 = { userRevealedIndexes: set };
     obj.setState(obj2);
   }
-};
-export const toggleSpoiler = function toggleSpoiler(index) {
+}
+export function toggleSpoiler(index) {
   set = new Set(zustandStore.getField("userRevealedIndexes"));
   const obj = zustandStore;
   if (set.has(index)) {
@@ -64,4 +64,4 @@ export const toggleSpoiler = function toggleSpoiler(index) {
     set.add(index);
   }
   obj.setState({ userRevealedIndexes: set });
-};
+}

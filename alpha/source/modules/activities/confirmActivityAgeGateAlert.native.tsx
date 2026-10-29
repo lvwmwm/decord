@@ -1,20 +1,20 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11506
+// Function ID: 11507
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 11453, 5270, 1125, 5944, 1199, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 11507, 5271, 1125, 5946, 1199, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 11452 (confirmActivityAgeGateAlert)
+// Module 11506 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11453 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 11507 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: obj2 };
@@ -80,7 +80,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
 });
 const result = size.fileFinishedImporting("modules/activities/confirmActivityAgeGateAlert.native.tsx");
 
-export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(arg0) {
+export function confirmActivityAgeGateAlert(arg0) {
   let application;
   let intl2;
   let intl3;
@@ -98,4 +98,4 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   intl3 = intl5.intl;
   intl4 = intl5.intl;
   return resolve(show(obj2));
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9520
+// Function ID: 9521
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5734, 4827, 4820, 7381, 9490, 1125, 9492, 2]
+// Dependencies: [5, 32, 19, 5736, 4828, 4821, 7404, 9521, 1125, 9523, 2]
 // Exports: useOrderSigning
 
-// Module 9489 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4820 */;
-import BillingErrorDefault from "BillingError" /* 4827 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
+// Module 9520 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4821 */;
+import BillingErrorDefault from "BillingError" /* 4828 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ let _slicedToArray = _slicedToArray_mod;
 const OrderStatus = PaymentConstants.OrderStatus;
 let result = size.fileFinishedImporting("modules/payments/hooks/useOrderSigning.tsx");
 
-export const useOrderSigning = function useOrderSigning(order) {
+export function useOrderSigning(order) {
   let closure_4;
   let first;
   let items2;
@@ -49,13 +49,13 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4827)(error);
+      tmp3 = new tmp(4828)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4820).captureBillingException;
+      const captureBillingException = tmp5(4821).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4827)(arg2);
+      tmp3 = new tmp(4828)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -94,7 +94,7 @@ export const useOrderSigning = function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c4;
@@ -124,7 +124,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {
@@ -260,4 +260,4 @@ export const useOrderSigning = function useOrderSigning(order) {
   };
   items2 = [order, onSignFailure, tmp4, tmp3];
   return obj;
-};
+}

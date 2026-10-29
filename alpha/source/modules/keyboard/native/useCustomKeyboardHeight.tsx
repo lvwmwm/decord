@@ -1,13 +1,13 @@
-// Module ID: 5632
-// Function ID: 5633
+// Module ID: 5633
+// Function ID: 5634
 // Name: useCustomKeyboardHeight
-// Dependencies: [1499, 1500, 558, 576, 2]
+// Dependencies: [1500, 1501, 558, 576, 2]
 // Exports: getCustomKeyboardHeight
 
-// Module 5632 (useCustomKeyboardHeight)
+// Module 5633 (useCustomKeyboardHeight)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1501 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,11 +36,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomK
 const result = size.fileFinishedImporting("modules/keyboard/native/useCustomKeyboardHeight.tsx");
 
 export default tmp2;
-export const getCustomKeyboardHeight = function getCustomKeyboardHeight(appEntryKey) {
+export function getCustomKeyboardHeight(appEntryKey) {
   let DEFAULT_APP_ENTRY_KEY = appEntryKey;
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
   const obj = KeyboardUIStoreDefault;
   return obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].customKeyboardHeight;
-};
+}

@@ -7,7 +7,7 @@
 const re2 = /; */;
 const re3 = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
 
-export const parse = function parse(str, arg1) {
+export function parse(str, arg1) {
   if (typeof str !== "string") {
     const tmp3 = globalThis;
     const _TypeError = TypeError;
@@ -49,8 +49,8 @@ export const parse = function parse(str, arg1) {
     });
     return obj2;
   }
-};
-export const serialize = function serialize(arg0, arg1, arg2) {
+}
+export function serialize(arg0, arg1, arg2) {
   const tmp = arg2 || {};
   const tmp2 = tmp.encode || encodeURIComponent;
   if (re3.test(arg0)) {
@@ -122,4 +122,4 @@ export const serialize = function serialize(arg0, arg1, arg2) {
     const typeError3 = new TypeError("argument name is invalid");
     throw typeError3;
   }
-};
+}

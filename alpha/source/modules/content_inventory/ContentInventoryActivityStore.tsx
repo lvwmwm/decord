@@ -1,19 +1,19 @@
-// Module ID: 14536
-// Function ID: 14537
+// Module ID: 14770
+// Function ID: 14771
 // Name: ContentInventoryActivityStore
-// Dependencies: [5748, 8861, 1084, 8650, 8654, 8881, 8866, 8862, 12, 504, 584, 2]
+// Dependencies: [5750, 8864, 1084, 8672, 8676, 8884, 8869, 8865, 12, 504, 584, 2]
 
-// Module 14536 (ContentInventoryActivityStore)
+// Module 14770 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8650 */;
-import utils from "utils" /* 8654 */;
-import matchUtils from "matchUtils" /* 8862 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8866 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8861 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8672 */;
+import utils from "utils" /* 8676 */;
+import matchUtils from "matchUtils" /* 8865 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8869 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8864 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -29,9 +29,9 @@ function getMatchingActivity(author_type) {
   let tmp3 = null;
   if (!obj.isEntryExpired(author_type)) {
     let found;
-    const tmpResult = tmp(8654);
+    const tmpResult = tmp(8676);
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8881).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(8884).ContentInventoryAuthorType.USER) {
         let tmp5 = PresenceStore;
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
@@ -42,7 +42,7 @@ function getMatchingActivity(author_type) {
             const tmp2 = require;
             const tmp4 = author_type;
             if (obj.isApplicationEntry(author_type)) {
-              const tmp2Result = tmp2(8862);
+              const tmp2Result = tmp2(8865);
               result = tmp2Result.isMatchingApplicationActivity(tmp4, type);
             }
             return result;

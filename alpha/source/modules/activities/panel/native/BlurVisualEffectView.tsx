@@ -1,22 +1,22 @@
-// Module ID: 18757
-// Function ID: 18758
+// Module ID: 18990
+// Function ID: 18991
 // Name: BlurVisualEffectView
-// Dependencies: [19, 17, 1084, 21, 5001, 587, 558, 576, 5288, 5622, 2]
+// Dependencies: [19, 17, 1084, 21, 5002, 587, 558, 576, 5289, 5623, 2]
 
-// Module 18757 (BlurVisualEffectView)
+// Module 18990 (BlurVisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import useToken from "useToken" /* 5288 */;
+import useToken from "useToken" /* 5289 */;
 import react from "react" /* 19 */;
-import ColorUtils from "ColorUtils" /* 5001 */;
+import ColorUtils from "ColorUtils" /* 5002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const VisualEffectViewDefault = tmp3(5622);
+const VisualEffectViewDefault = tmp3(5623);
 const StyleSheet = react_native.StyleSheet;
 const ThemeTypes = Constants.ThemeTypes;
 const jsx = Fragment.jsx;

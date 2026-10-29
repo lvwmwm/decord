@@ -1,11 +1,11 @@
-// Module ID: 8142
-// Function ID: 8143
+// Module ID: 8165
+// Function ID: 8166
 // Name: showReportModal
-// Dependencies: [5, 8143, 8144, 6707, 8145, 1999, 2]
+// Dependencies: [5, 8166, 8167, 6731, 8168, 2000, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8142 (showReportModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+// Module 8165 (showReportModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _showReportModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _showReportModal() {
               menu = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -107,7 +107,7 @@ let obj = function _showReportModal() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp26) {
           if (0 === c5) {
@@ -127,10 +127,10 @@ let obj = function _showReportModal() {
 const IN_APP_REPORT_MODAL_KEY = "IN_APP_REPORT_MODAL_KEY";
 const result = size.fileFinishedImporting("modules/in_app_reports/showReportModal.native.tsx");
 
-export const showReportModal = function showReportModal() {
+export function showReportModal() {
   return obj(...arguments);
-};
-export const hideReportModal = function hideReportModal() {
+}
+export function hideReportModal() {
   obj = ModalActionCreatorsDefault;
   obj.popWithKey(IN_APP_REPORT_MODAL_KEY);
-};
+}

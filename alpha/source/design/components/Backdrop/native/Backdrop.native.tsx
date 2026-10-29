@@ -1,20 +1,20 @@
-// Module ID: 5620
-// Function ID: 5621
+// Module ID: 5621
+// Function ID: 5622
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5070, 1630, 5621, 5085, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5071, 1631, 5622, 5086, 2]
 
-// Module 5620 (Backdrop)
+// Module 5621 (Backdrop)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5085 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5621 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5086 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5622 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

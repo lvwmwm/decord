@@ -1,21 +1,21 @@
-// Module ID: 16842
-// Function ID: 16843
+// Module ID: 17080
+// Function ID: 17081
 // Name: subscriptionUtils
 // Dependencies: [38, 2]
 // Exports: getRoleSubscriptionMutationPlanId, getRoleSubscriptionPlanId
 
-// Module 16842 (subscriptionUtils)
+// Module 17080 (subscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/subscriptionUtils.tsx");
 
-export const getRoleSubscriptionPlanId = function getRoleSubscriptionPlanId(items) {
+export function getRoleSubscriptionPlanId(items) {
   items = items.items;
   _modDef38(1 === items.length, "more than 1 subscription item for role subscription");
   return items[0].planId;
-};
-export const getRoleSubscriptionMutationPlanId = function getRoleSubscriptionMutationPlanId(renewalMutations) {
+}
+export function getRoleSubscriptionMutationPlanId(renewalMutations) {
   let items;
   if (renewalMutations != null) {
     renewalMutations = renewalMutations.renewalMutations;
@@ -31,4 +31,4 @@ export const getRoleSubscriptionMutationPlanId = function getRoleSubscriptionMut
     }
     return planId;
   }
-};
+}

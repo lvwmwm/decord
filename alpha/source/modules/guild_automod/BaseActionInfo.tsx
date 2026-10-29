@@ -1,17 +1,17 @@
-// Module ID: 19323
-// Function ID: 19324
+// Module ID: 19556
+// Function ID: 19557
 // Name: BaseActionInfo
-// Dependencies: [4856, 4946, 1389, 12870, 4918, 1125, 5640, 2]
+// Dependencies: [4857, 4947, 1389, 13091, 4919, 1125, 5641, 2]
 // Exports: getBaseActionInfo
 
-// Module 19323 (BaseActionInfo)
+// Module 19556 (BaseActionInfo)
 import intl13 from "intl" /* 1125 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4918 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4919 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 12870 */;
+import Constants from "Constants" /* 13091 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroRequire;
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
 const result = size.fileFinishedImporting("modules/guild_automod/BaseActionInfo.tsx");
 
-export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata, triggerType) {
+export function getBaseActionInfo(actionType, metadata, triggerType) {
   let formatResult;
   let str2;
   if (hasOwnProperty.BLOCK_MESSAGE !== actionType) {
@@ -133,4 +133,4 @@ export const getBaseActionInfo = function getBaseActionInfo(actionType, metadata
     }
   }
   flag = true;
-};
+}

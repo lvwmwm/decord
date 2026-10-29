@@ -1,13 +1,13 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8321
+// Function ID: 8322
 // Name: imageConversion
-// Dependencies: [5, 3, 6056, 8206, 4818, 2]
+// Dependencies: [5, 3, 6060, 8228, 4819, 2]
 // Exports: convertFileToJpeg
 
-// Module 8299 (imageConversion)
+// Module 8321 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 6056 */;
-import imageFilename from "imageFilename" /* 8206 */;
+import MediaTypes from "MediaTypes" /* 6060 */;
+import imageFilename from "imageFilename" /* 8228 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj = function _convertViaSysimg() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -95,7 +95,7 @@ let obj = function _convertViaSysimg() {
             };
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -353,6 +353,6 @@ export const ImageConversionFailureReason = obj;
 export const renameToJpegExtension = imageFilename.renameToJpegExtension;
 export { maybeConvertHeicToJpeg };
 export { maybeConvertJxrToJpeg };
-export const convertFileToJpeg = function convertFileToJpeg() {
+export function convertFileToJpeg() {
   return obj(...arguments);
-};
+}

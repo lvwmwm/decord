@@ -1,17 +1,17 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 17164
+// Function ID: 17165
 // Name: HappeningNowCard
-// Dependencies: [109, 19, 17, 16924, 21, 5004, 558, 576, 7074, 5182, 6941, 5270, 2]
+// Dependencies: [109, 19, 17, 17163, 21, 5005, 558, 576, 7098, 5183, 6965, 5271, 2]
 
-// Module 16925 (HappeningNowCard)
+// Module 17164 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7074 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7098 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16924 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17163 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ let metroImportAll;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(5182);
-const Text_Text = tmp(5270);
-const Card_Card = tmp(6941);
+const useColorThemeBackgroundDefault = tmp(5183);
+const Text_Text = tmp(5271);
+const Card_Card = tmp(6965);
 let closure_3 = ["children", "noMargin", "displayNameFont"];
 let closure_4 = ["children", "variant"];
 const View = react_native.View;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
         }
         const obj2 = { variant: "secondary", style: tmp8, onPress: panelVariant.onPress, border: "faint", shadow: str, onLongPress: panelVariant.onLongPress, disabled: null == panelVariant.onPress, accessibilityLabel, accessibilityHint, children: items };
         items = [panelVariant.children, tmp10];
-        const tmp16 = authStore5(Card_Card.Card, obj2);
+        const tmp16 = version(Card_Card.Card, obj2);
         cResult[7] = accessibilityHint;
         cResult[8] = accessibilityLabel;
         cResult[9] = panelVariant.children;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   str = undefined;
   const tmp6 = useColorThemeBackgroundDefault();
   const Card = Card_Card.Card;
-  const tmp7 = authStore5;
+  const tmp7 = version;
   if (null == tmp6) {
     str = "low";
   }

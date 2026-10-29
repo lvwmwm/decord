@@ -1,20 +1,20 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 18171
+// Function ID: 18172
 // Name: preloadChannelAppFrame
-// Dependencies: [4856, 4936, 6810, 6811, 1084, 6697, 6717, 5659, 10767, 6813, 10809, 6845, 2]
+// Dependencies: [4857, 4937, 6833, 6834, 1084, 6721, 6740, 5661, 10842, 6836, 10885, 6868, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 17933 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 5659 */;
-import AgeGateUtils from "AgeGateUtils" /* 6697 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6717 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import createProxyTicket from "createProxyTicket" /* 10767 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10809 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+// Module 18171 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5661 */;
+import AgeGateUtils from "AgeGateUtils" /* 6721 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6740 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import createProxyTicket from "createProxyTicket" /* 10842 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10885 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroRequire;
 ({ ChannelTypes: metroImportAll, NOOP: c9, Permissions: c10 } = Constants);
 let result = size.fileFinishedImporting("modules/frames/preloadChannelAppFrame.tsx");
 
-export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
+export function preloadChannelAppFrame(id) {
   const channel = ChannelStore.getChannel(id);
   let application_id;
   if (channel != null) {
@@ -55,11 +55,11 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
         tmp11Result2.prefetchProxyTicket(application_id, getChannelIdForEmbeddedSurfaceDefault(tmp4), tmp4.type);
         const promise = loadEmbeddedAppCSPForLaunchDefault(application_id);
         promise.catch(React4);
-        const useApplication = tmp11(6845).useApplication;
+        const useApplication = tmp11(6868).useApplication;
         const items = [application_id];
         const many = useApplication.fetchMany(items);
         many.catch(React4);
       }
     }
   }
-};
+}

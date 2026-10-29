@@ -1,13 +1,13 @@
-// Module ID: 19208
-// Function ID: 19209
+// Module ID: 19443
+// Function ID: 19444
 // Name: InterestPickerCatalogs
-// Dependencies: [9260, 17256, 1385, 2]
+// Dependencies: [9264, 17495, 1385, 2]
 // Exports: getInterestPickerCatalog
 
-// Module 19208 (InterestPickerCatalogs)
+// Module 19443 (InterestPickerCatalogs)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9260 */;
-import GameCommunityConfig from "GameCommunityConfig" /* 17256 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9264 */;
+import GameCommunityConfig from "GameCommunityConfig" /* 17495 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -28,7 +28,7 @@ let closure_3 = {
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestPickerCatalogs.tsx");
 
 export const INTEREST_PICKER_CATALOG_VERSION = "2026-10-27-placeholder";
-export const getInterestPickerCatalog = function getInterestPickerCatalog(interestPickerGameList) {
+export function getInterestPickerCatalog(interestPickerGameList) {
   set = new Set(closure_3[interestPickerGameList]());
   const fromResult = from(set);
   const substr = fromResult.slice(0, 60);
@@ -37,4 +37,4 @@ export const getInterestPickerCatalog = function getInterestPickerCatalog(intere
     tmp2 = substr;
   }
   return tmp2;
-};
+}

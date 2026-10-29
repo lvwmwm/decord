@@ -1,17 +1,17 @@
-// Module ID: 18743
-// Function ID: 18744
+// Module ID: 18976
+// Function ID: 18977
 // Name: ActivityPanelUtils
-// Dependencies: [4856, 4907, 4855, 5645, 4925, 5665, 1105, 558, 576, 504, 2]
+// Dependencies: [4857, 4908, 4856, 5646, 4926, 5667, 1105, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 18743 (ActivityPanelUtils)
+// Module 18976 (ActivityPanelUtils)
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5665 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4926 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5667 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -178,12 +178,12 @@ function isConnectedToActivityInText() {
 }
 const result = size.fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");
 
-export const isActivityPanelFullscreen = function isActivityPanelFullscreen() {
+export function isActivityPanelFullscreen() {
   const obj = embeddedActivityLocationUtils;
   const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(EmbeddedActivitiesStore.getConnectedActivityLocation());
   const tmp3 = EmbeddedActivitiesStore.getActivityPanelMode() === ActivityPanelModes.PANEL && !isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId);
   return tmp3;
-};
+}
 export { isConnectedToActivityInText };
 export const useIsActivityPanelFullscreen = tmp2;
 export const useIsConnectedToActivityInText = tmp3;

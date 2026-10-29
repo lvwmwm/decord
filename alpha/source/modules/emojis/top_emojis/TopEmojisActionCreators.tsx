@@ -1,10 +1,10 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9898
+// Function ID: 9899
 // Name: TopEmojisActionCreators
-// Dependencies: [1084, 5053, 584, 1294, 2]
+// Dependencies: [1084, 5054, 584, 1294, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9866 (TopEmojisActionCreators)
+// Module 9898 (TopEmojisActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let _require;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/emojis/top_emojis/TopEmojisActionCreators.tsx");
 
-export const fetchTopEmojis = function fetchTopEmojis(guildId) {
+export function fetchTopEmojis(guildId) {
   _require = guildId;
   const tmp = _require;
   let obj = require("RouteUtils");
@@ -41,8 +41,8 @@ export const fetchTopEmojis = function fetchTopEmojis(guildId) {
       return obj.dispatch(obj2);
     });
   }
-};
-export const updateNewlyAddedLastSeen = function updateNewlyAddedLastSeen(guildId, id) {
+}
+export function updateNewlyAddedLastSeen(guildId, id) {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "NEWLY_ADDED_EMOJI_SEEN_UPDATED" });
   const tmp4 = null != guildId && null != id;
@@ -51,12 +51,12 @@ export const updateNewlyAddedLastSeen = function updateNewlyAddedLastSeen(guildI
     const tmpResult = DispatcherDefault;
     tmpResult.dispatch(obj2);
   }
-};
-export const updateNewlyAddedEmojiSeenAcknowledged = function updateNewlyAddedEmojiSeenAcknowledged(guildId, emojiId) {
+}
+export function updateNewlyAddedEmojiSeenAcknowledged(guildId, emojiId) {
   const tmp = null != guildId && null != emojiId;
   if (tmp) {
     const obj2 = { type: "NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED", guildId, emojiId };
     const obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
+}

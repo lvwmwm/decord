@@ -1,10 +1,10 @@
-// Module ID: 6007
-// Function ID: 6008
+// Module ID: 6009
+// Function ID: 6010
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: setAccessibilityFocus
 
-// Module 6007 (react-native)
+// Module 6009 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let map;
 ({ AccessibilityInfo: _window, findNodeHandle: map } = react_native);
 let result = size.fileFinishedImporting("modules/a11y/native/setAccessibilityFocus.android.tsx");
 
-export const setAccessibilityFocus = function setAccessibilityFocus(arg0) {
+export function setAccessibilityFocus(arg0) {
   let delay;
   let ref;
   ({ ref, delay } = arg0);
@@ -31,4 +31,4 @@ export const setAccessibilityFocus = function setAccessibilityFocus(arg0) {
       }, delay);
     }
   }
-};
+}

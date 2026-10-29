@@ -1,20 +1,20 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8559
+// Function ID: 8560
 // Name: transformNativeMarkupMention
-// Dependencies: [8538, 6018, 6016, 6028, 8619, 2]
+// Dependencies: [8560, 6022, 6020, 6032, 8641, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8537 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 6016 */;
-import MarkupRules from "MarkupRules" /* 6018 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6028 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8538 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8619 */;
+// Module 8559 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 6020 */;
+import MarkupRules from "MarkupRules" /* 6022 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6032 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8560 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8641 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
 
-export const applyChannelMentionIcons = function applyChannelMentionIcons(handleUnknownChannelResult) {
+export function applyChannelMentionIcons(handleUnknownChannelResult) {
   let obj2;
   let obj3;
   const obj = { content: obj2.decorateWithIcon(handleUnknownChannelResult.content), inContent: obj3.decorateWithIcon(handleUnknownChannelResult.inContent) };
@@ -22,8 +22,8 @@ export const applyChannelMentionIcons = function applyChannelMentionIcons(handle
   obj2 = PlatformMarkupRules;
   obj3 = PlatformMarkupRules;
   return obj;
-};
-export const transformNativeMention = function transformNativeMention(value, allowGameMentions) {
+}
+export function transformNativeMention(value, allowGameMentions) {
   let tmp8Result5;
   let tmp8Result6;
   const type = value.type;
@@ -31,16 +31,16 @@ export const transformNativeMention = function transformNativeMention(value, all
     const str9 = value.value;
     const str1 = str9.toString();
     const _HermesInternal2 = HermesInternal;
-    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "r" };
+    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "Array" };
     const hydrateUserMention = MarkupRules.hydrateUserMention;
     MarkupRules;
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002804286485516824 }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: "r" }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: 2278796593990497400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: "r" }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;
@@ -95,4 +95,4 @@ export const transformNativeMention = function transformNativeMention(value, all
     const obj = { type: MarkupTypes.AST_KEY.TEXT, content: "" };
     return obj;
   }
-};
+}

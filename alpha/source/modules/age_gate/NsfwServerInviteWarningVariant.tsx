@@ -1,15 +1,15 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10084
+// Function ID: 10085
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1084, 6699, 1125, 10053, 558, 6689, 10054, 2]
+// Dependencies: [1084, 6723, 1125, 10085, 558, 6713, 10086, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant
 
-// Module 10052 (NsfwServerInviteWarningVariant)
+// Module 10084 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6699 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10053 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 6723 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGatedAg
 });
 const result = size.fileFinishedImporting("modules/age_gate/NsfwServerInviteWarningVariant.tsx");
 
-export const getNsfwServerInviteWarningVariant = function getNsfwServerInviteWarningVariant(gatedAgeGroup) {
+export function getNsfwServerInviteWarningVariant(gatedAgeGroup) {
   let intl;
   let intl2;
   let obj4;
@@ -61,9 +61,9 @@ export const getNsfwServerInviteWarningVariant = function getNsfwServerInviteWar
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === gatedAgeGroup) {
     return { description: tmp3, confirm: obj2, goBackIsPrimary: false };
   }
-};
+}
 export const useGatedAgeGroup = tmp2;
-export const getNsfwServerInviteWarningAgeGroupForError = function getNsfwServerInviteWarningAgeGroupForError(arg0) {
+export function getNsfwServerInviteWarningAgeGroupForError(arg0) {
   let UNVERIFIED;
   let tmp3;
   if (AbortCodes.UNDER_MINIMUM_AGE === arg0) {
@@ -76,9 +76,9 @@ export const getNsfwServerInviteWarningAgeGroupForError = function getNsfwServer
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(10054);
+  const tmp3Result = tmp3(10086);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }
   return tmp7;
-};
+}

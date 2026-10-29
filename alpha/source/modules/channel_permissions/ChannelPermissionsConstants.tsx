@@ -1,14 +1,14 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7933
+// Function ID: 7934
 // Name: ChannelPermissionsConstants
-// Dependencies: [1084, 1125, 7911, 2064, 7912, 2]
+// Dependencies: [1084, 1125, 7934, 2065, 7935, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 7910 (ChannelPermissionsConstants)
+// Module 7933 (ChannelPermissionsConstants)
 import intl62 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 7911 */;
-import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 7912 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import ForumPlatformUtilsDefault from "ForumPlatformUtils" /* 7934 */;
+import GuildTiVPlatformUtilsDefault from "GuildTiVPlatformUtils" /* 7935 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export const MEMBER_REQUEST_COUNT = 20;
 export const ADVANCED_MODE_ON_KEY = "channelPermissionSettingsAdvancedModeOn";
 export const TrackExposureLocations = { SETTINGS_PAGE: "settings-page", MEMBERS_LIST: "members-list", EMPTY_STATE: "empty-state", CREATE_CHANNEL: "create-channel" };
 export const SettingMode = { BASIC: "basic", ADVANCED: "advanced" };
-export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(type, arg1, createPostsDisabled) {
+export function getChannelPermissionSpecMap(type, arg1, createPostsDisabled) {
   let AuEQEC;
   let BhEo9V;
   let CP2sz4;
@@ -810,4 +810,4 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
   t2 = tmp10(1125).t;
   obj2[str80] = obj56;
   return obj2;
-};
+}

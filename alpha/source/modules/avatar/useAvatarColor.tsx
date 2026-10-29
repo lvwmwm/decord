@@ -1,16 +1,16 @@
-// Module ID: 8651
-// Function ID: 8652
+// Module ID: 8673
+// Function ID: 8674
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 5005, 570, 1271, 1493, 5001, 558, 576, 504, 7695, 2]
+// Dependencies: [32, 5, 19, 5006, 570, 1271, 1494, 5002, 558, 576, 504, 7718, 2]
 // Exports: maybeFetchColors
 
-// Module 8651 (useAvatarColor)
+// Module 8673 (useAvatarColor)
 import react2 from "react" /* 576 */;
-import _modDef7695 from "module_7695" /* 7695 */;
+import _modDef7718 from "module_7718" /* 7718 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let obj = function _maybeFetchColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _maybeFetchColors() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -93,7 +93,7 @@ obj = function _fetchColors() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -173,7 +173,7 @@ obj = function _fetchColors() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp24) {
         let closure_3 = tmp24;
         if (0 === c4) {
@@ -469,8 +469,8 @@ const result = size.fileFinishedImporting("modules/avatar/useAvatarColor.tsx");
 export default tmp4;
 export const useColorStore = obj;
 export { hasFetchedColors };
-export const maybeFetchColors = function maybeFetchColors() {
+export function maybeFetchColors() {
   return obj(...arguments);
-};
+}
 export const useHasFetchedColors = tmp3;
 export const useAvatarColors = tmp5;

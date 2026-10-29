@@ -1,13 +1,13 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15486
+// Function ID: 15487
 // Name: ReadyPayloadUtils
-// Dependencies: [4860, 4882, 7757, 7761, 4903, 7762, 4899, 12, 38, 2]
+// Dependencies: [4861, 4883, 7779, 7783, 4904, 7784, 4900, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 15251 (ReadyPayloadUtils)
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4882 */;
-import isCacheEnabled from "isCacheEnabled" /* 7757 */;
+// Module 15486 (ReadyPayloadUtils)
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4883 */;
+import isCacheEnabled from "isCacheEnabled" /* 7779 */;
 import size from "module_2" /* 2 */;
 
 let recipient_ids, set, user_id;
@@ -15,10 +15,10 @@ let recipient_ids, set, user_id;
 let tmp;
 let tmp2;
 const _modDef12 = tmp2(12);
-const DatabaseManagerDefault = tmp2(4899);
-const ChannelReaderDefault = tmp(4903);
-const GuildVersionsDefault = tmp(7761);
-const KvCacheVersionDefault = tmp(7762);
+const DatabaseManagerDefault = tmp2(4900);
+const ChannelReaderDefault = tmp(4904);
+const GuildVersionsDefault = tmp(7783);
+const KvCacheVersionDefault = tmp(7784);
 function hydrateGuild(guild) {
   let deleted_channel_ids;
   let deleted_emoji_ids;
@@ -240,7 +240,7 @@ let channels = null;
 let closure_5 = {};
 let result = size.fileFinishedImporting("utils/ReadyPayloadUtils.tsx");
 
-export const hydrateReadySupplementalPayload = function hydrateReadySupplementalPayload(found, identifyStartTime) {
+export function hydrateReadySupplementalPayload(found, identifyStartTime) {
   let guilds;
   let merged_presences;
   let obj;
@@ -346,8 +346,8 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
   const obj2 = { presences: items, guilds: mapped };
   const merged1 = Object.assign(merged);
   return obj2;
-};
-export const preloadReadyPayloadData = function preloadReadyPayloadData() {
+}
+export function preloadReadyPayloadData() {
   let committedVersions;
   let guildIds;
   let okAsyncResult;
@@ -388,8 +388,8 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     [tmp, tmp2, tmp3] = result;
     return { guildVersions, guildChannels, databaseOk };
   });
-};
-export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPrioritized(arg0, identifyStartTime, databaseOk) {
+}
+export function hydrateReadyPayloadPrioritized(arg0, identifyStartTime, databaseOk) {
   let guild;
   let guilds;
   let private_channels;
@@ -482,9 +482,9 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
     private_channels = [];
   }
   return obj2;
-};
-export const hydrateInitialGuild = function hydrateInitialGuild(guild, identifyStartTime) {
+}
+export function hydrateInitialGuild(guild, identifyStartTime) {
   const obj = { guild, identifyTime: identifyStartTime };
   return hydratePreviouslyUnavailableGuild(guild);
-};
+}
 export { hydratePreviouslyUnavailableGuild };

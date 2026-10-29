@@ -1,18 +1,18 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6909
+// Function ID: 6910
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 4909, 4916, 5736, 1389, 1084, 1294, 5737, 584, 6886, 6890, 5038, 6891, 5944, 1125, 6409, 1264, 2]
+// Dependencies: [5, 4910, 4917, 5738, 1389, 1084, 1294, 5739, 584, 6910, 6914, 5039, 6915, 5946, 1125, 6433, 1264, 2]
 // Exports: showCoachmark
 
-// Module 6885 (MemberVerificationActionCreators)
+// Module 6909 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5737 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import InviteStore from "InviteStore" /* 5736 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import InviteStore from "InviteStore" /* 5738 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -101,7 +101,7 @@ obj = function _updateVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ obj = function _updateVerificationForm() {
             const obj5 = closure_133_1(closure_133_2[8]);
             obj5.dispatch(obj7);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c7 = 3;
@@ -169,7 +169,7 @@ obj = function _updateVerificationFormDescription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -209,7 +209,7 @@ obj = function _updateVerificationFormDescription() {
             const obj5 = closure_131_1(closure_131_2[8]);
             obj5.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -237,7 +237,7 @@ obj = function _enableVerificationForm() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ obj = function _enableVerificationForm() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -304,7 +304,7 @@ obj = function _submitVerificationForm() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -328,7 +328,7 @@ obj = function _submitVerificationForm() {
               body = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -342,7 +342,7 @@ obj = function _submitVerificationForm() {
               const obj11 = closure_133_0(closure_133_2[10]);
               const result = obj11.updateImpersonatedData(guildId, obj6);
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               c7 = 1;
               const HTTP = closure_133_0(closure_133_2[6]).HTTP;
@@ -487,8 +487,8 @@ let result = size.fileFinishedImporting("modules/guild_member_verification/Membe
 
 export default obj;
 export const DISABLE_JOIN_REQUEST_COACHMARK = -1;
-export const showCoachmark = function showCoachmark(guildId) {
+export function showCoachmark(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW", guildId };
   obj.dispatch(obj2);
-};
+}

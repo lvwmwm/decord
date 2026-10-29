@@ -1,15 +1,15 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 12460
+// Function ID: 12461
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 12398, 12394, 558, 576, 12407, 12409, 12411, 5270, 12413, 2]
+// Dependencies: [19, 21, 12452, 12448, 558, 576, 12461, 12463, 12465, 5271, 12467, 2]
 
-// Module 12406 (ConjureProjectEventLine)
+// Module 12460 (ConjureProjectEventLine)
 import react2 from "react" /* 576 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12394 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12398 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 12407 */;
-import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 12409 */;
-import ConjureVoiceChannelPinCardDefault from "ConjureVoiceChannelPinCard" /* 12411 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12448 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12452 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 12461 */;
+import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 12463 */;
+import ConjureVoiceChannelPinCardDefault from "ConjureVoiceChannelPinCard" /* 12465 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 function renderMention(arg0, arg1, arg2) {
   let closure_0 = arg0;
   let obj = {
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     let tmp11 = null;
     if (null != tmp6) {
       const obj5 = { projectId, request: tmp6, notifyAgent: false };
-      tmp11 = _false(tmp4(12413), obj5);
+      tmp11 = _false(tmp4(12467), obj5);
     }
     cResult[4] = projectId;
     cResult[5] = tmp6;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   const tmp4 = useConjureRemixSettingsRequestDefault(projectId, event);
   if ("voice_channel_pin" === event.type) {
     const obj2 = { projectId };
-    tmp8Result = _false(tmp(12411), obj2);
+    tmp8Result = _false(tmp(12465), obj2);
   } else {
     const obj3 = { variant: "text-md/normal", color: "text-default", children: tmp3 };
     const items = [_false(Text_Text.Text, obj3), ];
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     const tmp9 = React3;
     if (null != tmp4) {
       const obj = { projectId, request: tmp4, notifyAgent: false };
-      tmp10Result = tmp10(tmp(12413), obj);
+      tmp10Result = tmp10(tmp(12467), obj);
     }
     const obj4 = { children: items };
     items[1] = tmp10Result;

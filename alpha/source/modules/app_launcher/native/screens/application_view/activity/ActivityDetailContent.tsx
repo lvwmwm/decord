@@ -1,34 +1,34 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12116
+// Function ID: 12117
 // Name: ActivityDetailContent
-// Dependencies: [5, 32, 19, 17, 5661, 2021, 1084, 21, 587, 5004, 558, 576, 5270, 11207, 11967, 12063, 5670, 11961, 9683, 1125, 1264, 11208, 5280, 11401, 11444, 7289, 7314, 12003, 8728, 504, 6934, 7331, 12064, 7044, 7293, 12065, 12066, 12067, 7988, 12004, 9682, 8597, 12069, 2]
+// Dependencies: [5, 32, 19, 17, 5663, 2022, 1084, 21, 587, 5005, 558, 576, 5271, 11261, 12021, 12117, 5672, 12015, 9715, 1125, 1264, 11262, 5281, 11455, 11498, 7313, 7338, 12057, 8731, 504, 6958, 7355, 12118, 7068, 7317, 12119, 12120, 12121, 8011, 12058, 9714, 8619, 12123, 2]
 
-// Module 12062 (ActivityDetailContent)
+// Module 12116 (ActivityDetailContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import DetailsHeaderDefault from "DetailsHeader" /* 9682 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
-import AppLauncherContext from "AppLauncherContext" /* 11207 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11208 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11967 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12003 */;
-import HeroMediaDefault from "HeroMedia" /* 12004 */;
-import DeveloperActivityShelfActionCreatorsAll from "DeveloperActivityShelfActionCreators" /* 12064 */;
-import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 12066 */;
-import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 12067 */;
-import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 12069 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import DetailsHeaderDefault from "DetailsHeader" /* 9714 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
+import AppLauncherContext from "AppLauncherContext" /* 11261 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11262 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12021 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12057 */;
+import HeroMediaDefault from "HeroMedia" /* 12058 */;
+import DeveloperActivityShelfActionCreatorsAll from "DeveloperActivityShelfActionCreators" /* 12118 */;
+import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 12120 */;
+import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 12121 */;
+import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 12123 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5661 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5663 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 let _asyncToGenerator = _asyncToGenerator_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -423,7 +423,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
     }
     const tmp11 = closure_11;
     let obj2 = { size: "lg", loading: tmp5, variant: str, text: tmp8, onPress: tmp6 };
-    const tmp12 = closure_11(tmp(5280).Button, obj2);
+    const tmp12 = closure_11(tmp(5281).Button, obj2);
     cResult[4] = tmp5;
     cResult[5] = tmp6;
     cResult[6] = str;
@@ -443,7 +443,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -492,7 +492,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
           clearTimeout(ref.current);
           tmp11(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp11) {
         if (0 === ref) {
@@ -537,7 +537,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -586,7 +586,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
           clearTimeout(closure_128_3.current);
           closure_128_2(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp11) {
         closure_2 = tmp11;
@@ -603,7 +603,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItO
     str = "secondary";
   }
   let obj = { size: "lg", loading: first, variant: str, text: intl.string(applicationId(1125).t.AUM8hY), onPress: callback };
-  const Button = applicationId(5280).Button;
+  const Button = applicationId(5281).Button;
   intl = applicationId(1125).intl;
   return closure_11(Button, obj);
 });
@@ -625,9 +625,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   application = application.application;
   ({ context, sectionName, onActivityItemSelected, entrypoint } = application);
   const tmp4 = closure_15();
-  let obj2 = application(11207);
+  let obj2 = application(11261);
   const width = obj2.useRequiredAppLauncherContext().width;
-  const obj3 = application(11444);
+  const obj3 = application(11498);
   const getPrimaryAppCommand = obj3.useGetPrimaryAppCommand(context, application.id);
   const tmp6 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp6(AnalyticsLocationDefault.APP_DETAIL).analyticsLocations;
@@ -642,9 +642,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   } else {
     first = cResult[0];
   }
-  const tmpResult = application(8728);
+  const tmpResult = application(8731);
   const isScreenLandscape = tmpResult.useIsScreenLandscape();
-  entrypoint !== application(11208).AppLauncherEntrypoint.VOICE && isScreenLandscape;
+  entrypoint !== application(11262).AppLauncherEntrypoint.VOICE && isScreenLandscape;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DeveloperActivityShelfStore];
     cResult[1] = items;
@@ -673,7 +673,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   const tmpResult3 = application(504);
   const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp11, tmp13);
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  const tmpResult4 = application(9683);
+  const tmpResult4 = application(9715);
   if (tmpResult4.isRealApplication(application)) {
     class G {
       constructor() {
@@ -717,9 +717,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
         }
       }
       const obj5 = { style: obj4, children: items1 };
-      items1 = [closure_11(tmp(6934).TableRowDivider, {}), , ];
+      items1 = [closure_11(tmp(6958).TableRowDivider, {}), , ];
       const obj6 = { label: intl.string(application(1125).t["3TSGuD"]), value: useActivityUrlOverride, onValueChange: DeveloperActivityShelfActionCreatorsAll.toggleUseActivityUrlOverride, end: true };
-      const TableSwitchRow = tmp(7331).TableSwitchRow;
+      const TableSwitchRow = tmp(7355).TableSwitchRow;
       intl = tmp(1125).intl;
       items1[1] = closure_11(TableSwitchRow, obj6);
       let tmp23Result = null;
@@ -732,7 +732,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
           }
         }
         tmp26[0] = tmp4.activityUrlOverrideInputContainer;
-        const TextInput = tmp(7044).TextInput;
+        const TextInput = tmp(7068).TextInput;
         const tmp27 = activityUrlOverride;
         if (activityUrlOverride == null) {
           class G {
@@ -742,7 +742,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
             }
           }
         }
-        const obj7 = { placeholder: "e.g. http://192.168.1.1:3000", value: tmp27, onChange: tmp24(12064).setActivityUrlOverride };
+        const obj7 = { placeholder: "e.g. http://192.168.1.1:3000", value: tmp27, onChange: tmp24(12118).setActivityUrlOverride };
         tmp26[1] = closure_11(TextInput, obj7);
         tmp23Result = tmp23(tmp22, tmp26);
       }
@@ -809,9 +809,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   importDefault = undefined;
   ({ sectionName, onActivityItemSelected, hasCommands } = application);
   const tmp = closure_15();
-  let obj = application(11207);
+  let obj = application(11261);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = application(11444);
+  let obj2 = application(11498);
   const getPrimaryAppCommand = obj2.useGetPrimaryAppCommand(context, application.id);
   const tmp6 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp6(AnalyticsLocationDefault.APP_DETAIL).analyticsLocations;
@@ -820,9 +820,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
   const callback = react.useCallback((nativeEvent) => {
     _undefined(roundToNearestPixelDefault(nativeEvent.nativeEvent.layout.width));
   }, []);
-  const obj3 = application(8728);
+  const obj3 = application(8731);
   const isScreenLandscape = obj3.useIsScreenLandscape();
-  let detailsContainerLandscape = entrypoint !== application(11208).AppLauncherEntrypoint.VOICE && isScreenLandscape;
+  let detailsContainerLandscape = entrypoint !== application(11262).AppLauncherEntrypoint.VOICE && isScreenLandscape;
   const items = [DeveloperActivityShelfStore];
   const tmp2Result = application(504);
   const stateFromStoresObject = tmp2Result.useStateFromStoresObject(items, () => {
@@ -830,7 +830,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
     return obj;
   });
   ({ isDeveloperOfThisApp, activityUrlOverride, useActivityUrlOverride } = stateFromStoresObject);
-  const tmp2Result7 = application(9683);
+  const tmp2Result7 = application(9715);
   if (tmp2Result7.isRealApplication(application)) {
     let tmp35Result;
     let tmp31;
@@ -847,32 +847,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
         num2 = -PX_12;
       }
       const obj5 = { style: obj4, children: items1 };
-      items1 = [closure_11(application(6934).TableRowDivider, {}), , ];
+      items1 = [closure_11(application(6958).TableRowDivider, {}), , ];
       const obj6 = { label: intl.string(application(1125).t["3TSGuD"]), value: useActivityUrlOverride, onValueChange: DeveloperActivityShelfActionCreatorsAll.toggleUseActivityUrlOverride, end: true };
-      const TableSwitchRow = tmp2(7331).TableSwitchRow;
+      const TableSwitchRow = tmp2(7355).TableSwitchRow;
       intl = tmp2(1125).intl;
       items1[1] = closure_11(TableSwitchRow, obj6);
       let tmp20Result = null;
       const tmp21 = importAll;
       if (useActivityUrlOverride) {
         const obj7 = { style: tmp.activityUrlOverrideInputContainer, children: closure_11(TextInput, obj8) };
-        TextInput = tmp2(7044).TextInput;
-        obj8 = { placeholder: "e.g. http://192.168.1.1:3000", value: activityUrlOverride, onChange: tmp21(12064).setActivityUrlOverride };
+        TextInput = tmp2(7068).TextInput;
+        obj8 = { placeholder: "e.g. http://192.168.1.1:3000", value: activityUrlOverride, onChange: tmp21(12118).setActivityUrlOverride };
         tmp20Result = tmp20(tmp19, obj7);
       }
       items1[2] = tmp20Result;
       tmp18Result = tmp18(tmp19, obj5);
     }
-    const tmp2Result8 = application(7293);
+    const tmp2Result8 = application(7317);
     const getOrFetchApplication = tmp2Result8.useGetOrFetchApplication(application.id);
     let bot;
     if (getOrFetchApplication != null) {
       bot = getOrFetchApplication.bot;
     }
     const obj9 = { context, applicationId: application.id };
-    const tmp2Result9 = application(11967);
+    const tmp2Result9 = application(12021);
     const activityAction = tmp2Result9.useActivityAction(obj9);
-    const tmp2Result10 = application(12065);
+    const tmp2Result10 = application(12119);
     const delayedSwapToActivityActionLeave = tmp2Result10.useDelayedSwapToActivityActionLeave(activityAction);
     const obj10 = { context, application, activityAction: delayedSwapToActivityActionLeave };
     ({ reason, disabled } = useIsPrimaryEntryPointDisabledDefault(obj10));
@@ -907,7 +907,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
       const tmp43 = View;
       if (tmp37Result2) {
         const obj17 = { variant: "text-sm/normal", style: tmp.primaryEntryPointButtonDisabledCTA, children: reason };
-        tmp37Result2 = tmp37(tmp2(5270).Text, obj17);
+        tmp37Result2 = tmp37(tmp2(5271).Text, obj17);
       }
       items3[1] = tmp37Result2;
       tmp35Result = closure_12(tmp43, obj16);
@@ -916,13 +916,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
         isDeveloperOfThisApp = !hasCommands;
       }
       if (isDeveloperOfThisApp) {
-        const tmp2Result11 = application(9683);
+        const tmp2Result11 = application(9715);
         isDeveloperOfThisApp = tmp2Result11.isActivityApp(application);
       }
       if (isDeveloperOfThisApp) {
         const obj18 = { style: tmp.buttonContainer, children: closure_11(InlineNotice, obj19) };
         obj19 = { type: "warning", message: intl2.format(application(1125).t["s/3hjE"], {}), role: "none" };
-        InlineNotice = tmp2(7988).InlineNotice;
+        InlineNotice = tmp2(8011).InlineNotice;
         intl2 = tmp2(1125).intl;
         tmp31 = closure_11(View, obj18);
       }
@@ -931,7 +931,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
     obj21 = { style: tmp.container, children: closure_11(View, obj22) };
     let activityHeroDetailsLandscape = detailsContainerLandscape;
     obj22 = { style: tmp.cardContainer, children: closure_12(View, obj23) };
-    const AnalyticsLocationProvider = tmp2(7289).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp2(7313).AnalyticsLocationProvider;
     if (detailsContainerLandscape) {
       activityHeroDetailsLandscape = tmp.activityHeroDetailsLandscape;
     }
@@ -954,11 +954,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityDeta
     const obj27 = { application };
     items6 = [closure_11(DetailsHeaderDefault, obj27), , , , ];
     const obj28 = { style: tmp.tagList, children: items7 };
-    const obj29 = { icon: closure_11(application(8597).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
+    const obj29 = { icon: closure_11(application(8619).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
     num5 = num;
     obj30 = { style: tmp.tagIcon, size: "xs" };
-    getItemSubtitleForMaxPlayersShort = application(12069).getItemSubtitleForMaxPlayersShort;
-    application(12069);
+    getItemSubtitleForMaxPlayersShort = application(12123).getItemSubtitleForMaxPlayersShort;
+    application(12123);
     const tmp51 = closure_16;
     if (num == null) {
       num5 = 0;

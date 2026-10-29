@@ -1,10 +1,10 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9046
+// Function ID: 9047
 // Name: GuildSettingsVanityURLActionCreators
 // Dependencies: [1084, 1294, 584, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 9043 (GuildSettingsVanityURLActionCreators)
+// Module 9046 (GuildSettingsVanityURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -16,7 +16,7 @@ let _require, throwErr;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLActionCreators.tsx");
 
-export const fetchVanityUrl = function fetchVanityUrl(id) {
+export function fetchVanityUrl(id) {
   const HTTP = HTTPUtils.HTTP;
   let obj = { url: Endpoints.GUILD_VANITY_URL(id), oldFormErrors: true, rejectWithError: true };
   const value = HTTP.get(obj);
@@ -28,17 +28,17 @@ export const fetchVanityUrl = function fetchVanityUrl(id) {
     const obj = DispatcherDefault;
     obj.dispatch({ type: "GUILD_SETTINGS_SET_VANITY_URL", code, uses, error });
   });
-};
-export const resetCode = function resetCode() {
+}
+export function resetCode() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "GUILD_SETTINGS_VANITY_URL_RESET" });
-};
-export const setCode = function setCode(code) {
+}
+export function setCode(code) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SETTINGS_VANITY_URL_SET", code };
   obj.dispatch(obj2);
-};
-export const saveCode = function saveCode(id, code, arg2) {
+}
+export function saveCode(id, code, arg2) {
   let obj;
   let obj3;
   _require = arg2;
@@ -68,4 +68,4 @@ export const saveCode = function saveCode(id, code, arg2) {
       return body;
     }
   });
-};
+}

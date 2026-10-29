@@ -1,13 +1,13 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13198
+// Function ID: 13199
 // Name: PlaygroundAccessExperiment
-// Dependencies: [1389, 1452, 558, 576, 504, 2]
+// Dependencies: [1389, 1453, 558, 576, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment
 
-// Module 12977 (PlaygroundAccessExperiment)
+// Module 13198 (PlaygroundAccessExperiment)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1389 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ export default apexExperiment;
 export const usePlaygroundAccessExperiment = tmp3;
 export { getPlaygroundAccessExperiment };
 export const useHasPlaygroundAccess = tmp4;
-export const getHasPlaygroundAccess = function getHasPlaygroundAccess(quickswitcher_action) {
+export function getHasPlaygroundAccess(quickswitcher_action) {
   const currentUser = UserStore.getCurrentUser();
   let isStaffResult;
   if (currentUser != null) {
@@ -133,4 +133,4 @@ export const getHasPlaygroundAccess = function getHasPlaygroundAccess(quickswitc
     enabled = apexExperiment.getConfig(obj).enabled;
   }
   return enabled;
-};
+}

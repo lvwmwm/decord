@@ -1,17 +1,17 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17847
+// Function ID: 17848
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15253, 1084, 3, 584, 1245, 15254, 1294, 1101, 2]
+// Dependencies: [5, 15488, 1084, 3, 584, 1245, 15489, 1294, 1101, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 17609 (NotifSettingsActionCreators)
+// Module 17847 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import notification_settings from "notification_settings" /* 15254 */;
+import notification_settings from "notification_settings" /* 15489 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15253 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15488 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let obj = function _persistPendingEdit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -88,7 +88,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Failed to take ownership of apply; current is", NotifSettingsProtoStore.applyingEdit);
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const obj12 = user_settings_UserSettingsUtils;
                 const protoToB64Result = obj12.protoToB64(notification_settings.DeclarativeSettings, pendingEdit.partialSettings);
@@ -108,7 +108,7 @@ let obj = function _persistPendingEdit() {
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           }
@@ -204,7 +204,7 @@ let obj = function _persistPendingEdit() {
           }
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp95) {
         resetAnyPending = tmp95;
         if (0 === c5) {
@@ -230,7 +230,7 @@ obj = function _reload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -375,7 +375,7 @@ const tmp3 = new LoggerDefault("NotifSettingsActionCreators");
 let closure_7 = tmp3;
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsActionCreators.tsx");
 
-export const schedulePersistPendingEditsIfNeeded = function schedulePersistPendingEditsIfNeeded() {
+export function schedulePersistPendingEditsIfNeeded() {
   const pendingEdit = NotifSettingsProtoStore.pendingEdit;
   if (null != pendingEdit) {
     const tmp2 = null != pendingEdit.timeout || tmp.isApplyingEdit;
@@ -389,8 +389,8 @@ export const schedulePersistPendingEditsIfNeeded = function schedulePersistPendi
       pendingEdit.timeout = _setTimeout(tmp4, num);
     }
   }
-};
-export const updateNotifSettingToggleValue = function updateNotifSettingToggleValue(CALLS, toggle) {
+}
+export function updateNotifSettingToggleValue(CALLS, toggle) {
   obj = {
     createNew() {
       const DeclarativeNotifSetting = toggle(dependencyMap[6]).DeclarativeNotifSetting;
@@ -404,8 +404,8 @@ export const updateNotifSettingToggleValue = function updateNotifSettingToggleVa
     }
   };
   updateNotifSettingValue(CALLS, obj);
-};
-export const updateNotifSettingRadioValue = function updateNotifSettingRadioValue(CALLS, arg1) {
+}
+export function updateNotifSettingRadioValue(CALLS, arg1) {
   let closure_0 = arg1;
   obj = {
     update(radio) {
@@ -414,4 +414,4 @@ export const updateNotifSettingRadioValue = function updateNotifSettingRadioValu
     }
   };
   updateNotifSettingValue(CALLS, obj);
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 8185
-// Function ID: 8186
+// Module ID: 8208
+// Function ID: 8209
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 8177, 8186, 8178, 2]
+// Dependencies: [5, 3, 38, 8200, 8209, 8201, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 8185 (AttachmentFile)
+// Module 8208 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
+import UploadPlatform from "UploadPlatform" /* 8200 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8209 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getAttachmentFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _cancelGetAttachmentFile() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _cancelGetAttachmentFile() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -179,13 +179,13 @@ let tmp2 = new LoggerDefault("AttachmentFile");
 const logger = tmp2;
 const result = size.fileFinishedImporting("utils/AttachmentFile.native.tsx");
 
-export const getAttachmentFile = function getAttachmentFile() {
+export function getAttachmentFile() {
   return obj(...arguments);
-};
-export const cancelGetAttachmentFile = function cancelGetAttachmentFile() {
+}
+export function cancelGetAttachmentFile() {
   return obj(...arguments);
-};
-export const fileIsInAppDir = function fileIsInAppDir(uri) {
+}
+export function fileIsInAppDir(uri) {
   const replaced = uri.replace(/^file:\/\//, "");
   try {
     obj = utils_UploadUtils;
@@ -193,7 +193,7 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(8186);
+      const tmp2Result = tmp2(8209);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;
@@ -201,4 +201,4 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     logger.error("Failed to get app dir", tmp5);
     return false;
   }
-};
+}

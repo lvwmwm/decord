@@ -1,14 +1,14 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14278
+// Function ID: 14279
 // Name: SavedMessageHelpers
-// Dependencies: [5, 10111, 1084, 14046, 14042, 5944, 1125, 14036, 10112, 5699, 5727, 14047, 5013, 2]
+// Dependencies: [5, 10144, 1084, 14279, 14275, 5946, 1125, 14269, 10145, 5701, 5729, 14280, 5014, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 14045 (SavedMessageHelpers)
+// Module 14278 (SavedMessageHelpers)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10111 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 14046 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10144 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 14279 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -33,7 +33,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ let obj = function _addOrUpdateSavedMessage() {
               BookmarkIcon = undefined;
               text = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === text) {
             if (arg0 === 1) {
@@ -180,7 +180,7 @@ let obj = function _addOrUpdateSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp43) {
           c4 = 3;
@@ -209,7 +209,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             text = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -309,7 +309,7 @@ obj = function _removeSavedMessage() {
             stringResult = intl2.string(closure_130_0(closure_130_2[6]).t.D0tS02);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp49) {
         c4 = 3;
@@ -323,9 +323,9 @@ const AbortCodes = Constants.AbortCodes;
 ({ SAVED_BOOKMARKS_MAX: metroRequire, SAVED_REMINDERS_MAX: metroImportDefault } = SavedMessagesConstants);
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageHelpers.native.tsx");
 
-export const addOrUpdateSavedMessage = function addOrUpdateSavedMessage() {
+export function addOrUpdateSavedMessage() {
   return obj(...arguments);
-};
-export const removeSavedMessage = function removeSavedMessage() {
+}
+export function removeSavedMessage() {
   return obj(...arguments);
-};
+}

@@ -1,9 +1,9 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 14885
+// Function ID: 14886
 // Name: WidgetActionCreators
-// Dependencies: [5, 1389, 1084, 584, 1294, 7746, 1254, 2]
+// Dependencies: [5, 1389, 1084, 584, 1294, 7768, 1254, 2]
 
-// Module 14650 (WidgetActionCreators)
+// Module 14885 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -36,7 +36,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -74,7 +74,7 @@ let obj = {
                 return obj7;
               } else {
                 constants = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           } else if (1 === tmp4) {
@@ -131,7 +131,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -362,7 +362,7 @@ let obj = {
               dispatch(obj10);
               c5 = 0;
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } catch (tmp39) {

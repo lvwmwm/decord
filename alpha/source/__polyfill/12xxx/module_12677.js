@@ -1,424 +1,195 @@
 // Module ID: 12677
 // Function ID: 12678
-// Dependencies: [41, 42, 12646, 12650, 12651, 12641, 12674, 12642, 12652, 12678, 12664, 12636, 12663, 12679, 12665, 12672]
+// Dependencies: []
 
 // Module 12677
-import _mod12641 from "module_12641" /* 12641 */;
-import _mod12642 from "module_12642" /* 12642 */;
-import generatePropagationContext from "generatePropagationContext" /* 12646 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12650 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12651 */;
-import _slicedToArray from "_slicedToArray" /* 12652 */;
-import _mod12663 from "module_12663" /* 12663 */;
-import _mod12664 from "module_12664" /* 12664 */;
-import _mod12665 from "module_12665" /* 12665 */;
-import _mod12674 from "module_12674" /* 12674 */;
-import _mod12678 from "module_12678" /* 12678 */;
-import _mod12679 from "module_12679" /* 12679 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-
-let data;
-
-function isFullFinishedSpan(start_timestamp) {
-  return start_timestamp.start_timestamp && start_timestamp.timestamp && start_timestamp.span_id && start_timestamp.trace_id;
+function noop(arg0) {
+  return arg0;
 }
-class SentrySpan {
-  constructor() {
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
-    }
-    const self = this;
-    _classCallCheck(this, SentrySpan);
-    let traceId = obj.traceId;
-    if (!traceId) {
-      const obj2 = generatePropagationContext;
-      traceId = obj2.generateTraceId();
-    }
-    self._traceId = traceId;
-    let spanId = obj.spanId;
-    if (!spanId) {
-      const obj3 = generatePropagationContext;
-      spanId = obj3.generateSpanId();
-    }
-    self._spanId = spanId;
-    let startTimestamp = obj.startTimestamp;
-    if (!startTimestamp) {
-      const obj4 = _browserPerformanceTimeOriginMode;
-      startTimestamp = obj4.timestampInSeconds();
-    }
-    self._startTime = startTimestamp;
-    self._attributes = {};
-    const obj5 = { [closure_2_0(closure_2_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "manual" };
-    const setAttributes = self.setAttributes;
-    obj5[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = obj.op;
-    const merged = Object.assign(obj.attributes);
-    setAttributes(obj5);
-    self._name = obj.name;
-    if (obj.parentSpanId) {
-      self._parentSpanId = obj.parentSpanId;
-    }
-    if ("sampled" in obj) {
-      self._sampled = obj.sampled;
-    }
-    if (obj.endTimestamp) {
-      self._endTime = obj.endTimestamp;
-    }
-    self._events = [];
-    self._isStandaloneSpan = obj.isStandalone;
-    if (self._endTime) {
-      self._onSpanEnded();
-    }
-  }
-}
-const entry = {
-  key: "addLink",
-  value: function addLink(arg0) {
-    return this;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "addLinks",
-    value: function addLinks(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "recordException",
-    value: function recordException(arg0, arg1) {
-
-    }
-  },
-  {
-    key: "spanContext",
-    value: function spanContext() {
-      let _sampled;
-      let tmp;
-      const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _sampled ? tmp.TRACE_FLAG_SAMPLED : tmp.TRACE_FLAG_NONE };
-      _sampled = this._sampled;
-      tmp = _mod12641;
-      return obj;
-    }
-  },
-  {
-    key: "setAttribute",
-    value: function setAttribute(arg0, arg1) {
-      const self = this;
-      if (undefined === arg1) {
-        delete self._attributes[tmp];
-      } else {
-        self._attributes[arg0] = arg1;
-      }
-      return self;
-    }
-  },
-  {
-    key: "setAttributes",
-    value: function setAttributes(arg0) {
-      const self = this;
-      let closure_0 = arg0;
-      const keys = Object.keys(arg0);
-      const item = keys.forEach((item) => self.setAttribute(item, closure_0[item]));
-      return this;
-    }
-  },
-  {
-    key: "updateStartTime",
-    value: function updateStartTime(arg0) {
-      const obj = _mod12641;
-      this._startTime = obj.spanTimeInputToSeconds(arg0);
-    }
-  },
-  {
-    key: "setStatus",
-    value: function setStatus(_status) {
-      this._status = _status;
-      return this;
-    }
-  },
-  {
-    key: "updateName",
-    value: function updateName(_name) {
-      this._name = _name;
-      const attr = this.setAttribute(SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom");
-      return this;
-    }
-  },
-  {
-    key: "end",
-    value: function end(arg0) {
-      const self = this;
-      if (!this._endTime) {
-        const obj = _mod12641;
-        self._endTime = obj.spanTimeInputToSeconds(arg0);
-        const obj2 = _mod12674;
-        obj2.logSpanEnd(self);
-        self._onSpanEnded();
-      }
-    }
-  },
-  {
-    key: "getSpanJSON",
-    value: function getSpanJSON() {
-      let _attributes;
-      let _isStandaloneSpan;
-      let obj2;
-      let obj3;
-      let obj4;
-      let spanId;
-      const self = this;
-      const tmp3 = _mod12642;
-      const obj = { data: this._attributes, description: this._name, op: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP], parent_span_id: this._parentSpanId, span_id: this._spanId, start_timestamp: this._startTime, status: obj2.getStatusMessage(this._status), timestamp: null, trace_id: null, origin: _attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], _metrics_summary: obj3.getMetricSummaryJsonForSpan(this), profile_id: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_PROFILE_ID], exclusive_time: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME], measurements: obj4.timedEventsToMeasurements(this._events), is_segment: _isStandaloneSpan, segment_id: spanId };
-      const dropUndefinedKeys = tmp3.dropUndefinedKeys;
-      ({ _endTime: obj.timestamp, _traceId: obj.trace_id, _attributes } = this);
-      obj2 = _mod12641;
-      obj3 = _slicedToArray;
-      _isStandaloneSpan = this._isStandaloneSpan;
-      obj4 = _mod12678;
-      if (_isStandaloneSpan) {
-        const tmpResult = _mod12641;
-        _isStandaloneSpan = tmpResult.getRootSpan(self) === self;
-      }
-      spanId = undefined;
-      if (self._isStandaloneSpan) {
-        const tmpResult2 = _mod12641;
-        const rootSpan = tmpResult2.getRootSpan(self);
-        spanId = rootSpan.spanContext().spanId;
-      }
-      return dropUndefinedKeys(obj);
-    }
-  },
-  {
-    key: "isRecording",
-    value: function isRecording() {
-      return !this._endTime && this._sampled;
-    }
-  },
-  {
-    key: "addEvent",
-    value: function addEvent(name, num, arg2) {
-      let obj;
-      let tmpResult2;
-      if (_mod12664.DEBUG_BUILD) {
-        const logger = tmp(12636).logger;
-        logger.log("[Tracing] Adding an event to span:", name);
-      }
-      let isArray = num && typeof num === "number";
-      if (!isArray) {
-        const _Date = Date;
-        isArray = num instanceof Date;
-      }
-      if (!isArray) {
-        const _Array = Array;
-        isArray = Array.isArray(num);
-      }
-      let tmp7 = num;
-      if (!isArray) {
-        let timestampInSecondsResult = arg2;
-        if (!timestampInSecondsResult) {
-          const tmpResult = _browserPerformanceTimeOriginMode;
-          timestampInSecondsResult = tmpResult.timestampInSeconds();
+function generate(type, fn, arg2, arg3) {
+  let closure_1;
+  let str = ",";
+  switch (type.type) {
+    case "Group":
+    {
+      let closure_0 = fn;
+      generate = arg2;
+      let closure_2 = arg3;
+      if (" " !== type.combinator) {
+        let combinator;
+        if (!arg3) {
+          combinator = `${" " + type.combinator} `;
         }
-        tmp7 = timestampInSecondsResult;
-      }
-      let isArray1 = num && typeof num === "number";
-      if (!isArray1) {
-        const _Date2 = Date;
-        isArray1 = num instanceof Date;
-      }
-      if (!isArray1) {
-        const _Array2 = Array;
-        isArray1 = Array.isArray(num);
-      }
-      if (isArray1) {
-        obj = {};
-      } else {
-        obj = num || {};
-      }
-      const obj2 = { name, time: tmpResult2.spanTimeInputToSeconds(tmp7), attributes: obj };
-      const _events = this._events;
-      tmpResult2 = _mod12641;
-      _events.push(obj2);
-      return this;
-    }
-  },
-  {
-    key: "isStandaloneSpan",
-    value: function isStandaloneSpan() {
-      return this._isStandaloneSpan;
-    }
-  },
-  {
-    key: "_onSpanEnded",
-    value: function _onSpanEnded() {
-      const self = this;
-      const obj = _mod12663;
-      const client = obj.getClient();
-      if (client) {
-        client.emit("spanEnd", self);
-      }
-      if (self._isStandaloneSpan) {
-        if (self._isStandaloneSpan) {
-          if (self._sampled) {
-            const items = [self];
-            const tmpResult = _mod12679;
-            const spanEnvelope = tmpResult.createSpanEnvelope(items, client);
-            const tmpResult5 = _mod12663;
-            const client1 = tmpResult5.getClient();
-            if (client1) {
-              if (spanEnvelope[1]) {
-                if (0 !== spanEnvelope[1].length) {
-                  client1.sendEnvelope(spanEnvelope);
-                }
-              }
-              client1.recordDroppedEvent("before_send", "span");
-            }
+        const terms = type.terms;
+        const mapped = terms.map((item) => generate(item, fn, closure_1, closure_2));
+        const joined = mapped.join(combinator);
+        const explicit = type.explicit || arg2;
+        let sum1 = joined;
+        if (explicit) {
+          let str27;
+          if (arg3) {
+            str27 = "[";
           } else {
-            if (_mod12664.DEBUG_BUILD) {
-              const logger = tmp(12636).logger;
-              logger.log("[Tracing] Discarding standalone span because its trace was not chosen to be sampled.");
-            }
-            if (client) {
-              client.recordDroppedEvent("sample_rate", "span");
-            }
+            str27 = "[ ";
           }
-        } else {
-          const result = self._convertSpanToTransaction();
-          if (result) {
-            const tmpResult6 = _mod12665;
-            let scope = tmpResult6.getCapturedScopesOnSpan(self).scope;
-            if (!scope) {
-              const tmpResult7 = _mod12663;
-              scope = tmpResult7.getCurrentScope();
-            }
-            scope.captureEvent(result);
+          let str28 = " ]";
+          const sum = str27 + joined;
+          if (arg3) {
+            str28 = "]";
           }
+          sum1 = sum + str28;
         }
-      } else {
-        _mod12641;
+        let str29 = "";
+        if (type.disallowEmpty) {
+          str29 = "!";
+        }
+        str = sum1 + str29;
+        return fn(str, type);
       }
+      combinator = type.combinator;
+      break;
     }
-  },
-  {
-    key: "_convertSpanToTransaction",
-    value: function _convertSpanToTransaction() {
-      let obj3;
-      let obj4;
-      let obj7;
-      let substr;
-      let tmpResult12;
-      let tmpResult14;
-      let tmpResult15;
-      const self = this;
-      let tmp = self;
-      let obj = self(12641);
-      const spanToJSONResult = obj.spanToJSON(this);
-      const tmp4 = spanToJSONResult.start_timestamp && spanToJSONResult.timestamp && spanToJSONResult.span_id && spanToJSONResult.trace_id;
-      if (tmp4) {
-        if (!self._name) {
-          if (tmp(12664).DEBUG_BUILD) {
-            const logger = tmp(12636).logger;
-            logger.warn("Transaction has no name, falling back to `<unlabeled transaction>`.");
+    case "Multiplier":
+    {
+      let str16;
+      const tmp11 = generate(type.term, fn, arg2, arg3);
+      if (0 !== type.min) {
+        let str17;
+        if (0 !== type.min) {
+          let str18;
+          if (1 === type.min) {
+            if (0 === type.max) {
+              let str25 = "+";
+              if (type.comma) {
+                str25 = "#";
+              }
+              str18 = str25;
+            }
+            str17 = str18;
           }
-          self._name = "<unlabeled transaction>";
-        }
-        const tmpResult = tmp(12665);
-        const capturedScopesOnSpan = tmpResult.getCapturedScopesOnSpan(self);
-        const scope = capturedScopesOnSpan.scope;
-        let currentScope = scope;
-        const isolationScope = capturedScopesOnSpan.isolationScope;
-        if (!scope) {
-          const tmpResult9 = tmp(12663);
-          currentScope = tmpResult9.getCurrentScope();
-        }
-        let client = currentScope.getClient();
-        if (!client) {
-          const tmpResult10 = tmp(12663);
-          client = tmpResult10.getClient();
-        }
-        if (true !== self._sampled) {
-          if (tmp(12664).DEBUG_BUILD) {
-            const logger3 = tmp(12636).logger;
-            logger3.log("[Tracing] Discarding transaction because its trace was not chosen to be sampled.");
-          }
-          const tmp20 = client;
-          if (tmp20) {
-            client.recordDroppedEvent("sample_rate", "transaction");
+          if (1 !== type.min) {
+            let text;
+            let str19 = "";
+            let str20 = "";
+            if (type.comma) {
+              str20 = "#";
+            }
+            if (type.min === type.max) {
+              text = `${"{" + type.min}}`;
+            } else {
+              const text1 = `{${type.min}`;
+              if (0 !== type.max) {
+                str19 = type.max;
+              }
+              text = `${tmp12 + "," + str19}}`;
+            }
+            str18 = str20 + text;
+          } else {
+            str18 = "";
           }
         } else {
-          const tmpResult11 = tmp(12641);
-          const spanDescendants = tmpResult11.getSpanDescendants(self);
-          const found = spanDescendants.filter((isStandaloneSpan) => {
-            let tmp = isStandaloneSpan !== self;
-            if (tmp) {
-              tmp = !(isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan());
-              isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan();
-            }
-            return tmp;
-          });
-          const mapped = found.map((item) => {
-            const obj = self(dependencyMap[5]);
-            return obj.spanToJSON(item);
-          });
-          const found1 = mapped.filter(isFullFinishedSpan);
-          const tmp23 = self._attributes[tmp(undefined, 12651).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE];
-          const _attributes = self._attributes;
-          delete _attributes[tmp(undefined, 12651).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
-          const item = found1.forEach((data) => {
-            if (data.data) {
-              data = data.data;
-              delete data[self(undefined, dependencyMap[4]).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
-            }
-          });
-          const obj2 = { contexts: obj3, spans: substr, start_timestamp: null, timestamp: null, transaction: null, type: "transaction", sdkProcessingMetadata: obj4, _metrics_summary: tmpResult15.getMetricSummaryJsonForSpan(self) };
-          obj3 = { trace: tmpResult12.spanToTransactionTraceContext(self) };
-          substr = found1;
-          tmpResult12 = tmp(12641);
-          if (found1.length > 1000) {
-            const sorted = found1.sort((start_timestamp, start_timestamp2) => start_timestamp.start_timestamp - start_timestamp2.start_timestamp);
-            substr = sorted.slice(0, 1000);
+          str17 = "?";
+        }
+        str16 = str17;
+      } else {
+        str16 = "*";
+      }
+      return tmp11 + fn(str16, type);
+    }
+    case "Type":
+    {
+      let str7 = "";
+      const text2 = `<${type.name}`;
+      if (type.opts) {
+        const opts = type.opts;
+        if ("Range" === opts.type) {
+          let str11 = "-\u221E";
+          if (null !== opts.min) {
+            str11 = opts.min;
           }
-          ({ _startTime: obj15.start_timestamp, _endTime: obj15.timestamp, _name: obj15.transaction } = self);
-          obj4 = { capturedSpanScope: scope, capturedSpanIsolationScope: isolationScope };
-          const obj5 = { dynamicSamplingContext: tmpResult14.getDynamicSamplingContextFromSpan(self) };
-          const dropUndefinedKeys = tmp(12642).dropUndefinedKeys;
-          tmp(12642);
-          tmpResult14 = tmp(12672);
-          const merged = Object.assign(dropUndefinedKeys(obj5));
-          let tmp11 = tmp23;
-          tmpResult15 = tmp(12652);
-          if (tmp11) {
-            const obj6 = { transaction_info: obj7 };
-            tmp11 = obj6;
-            obj7 = { source: tmp23 };
+          let str13 = "\u221E";
+          const text3 = ` [${str11}`;
+          if (null !== opts.max) {
+            str13 = opts.max;
           }
-          const merged1 = Object.assign(tmp11);
-          const tmpResult16 = tmp(12678);
-          const result = tmpResult16.timedEventsToMeasurements(self._events);
-          let length = result;
-          if (length) {
-            const _Object = Object;
-            length = Object.keys(result).length;
-          }
-          if (length) {
-            if (tmp(12664).DEBUG_BUILD) {
-              const logger2 = tmp(12636).logger;
-              const _JSON = JSON;
-              logger2.log("[Measurements] Adding measurements to transaction event", JSON.stringify(result, undefined, 2));
-            }
-            obj2.measurements = result;
-          }
-          return obj2;
+          str7 = fn(text3 + "," + str13 + "]", type.opts);
+        } else {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error("Unknown node type `" + opts.type + "`");
+          throw error;
         }
       }
+      str = `${tmp + str7}>`;
+      break;
+    }
+    case "Property":
+    {
+      str = `${"<'" + type.name}'>`;
+      break;
+    }
+    case "Keyword":
+    {
+      str = type.name;
+      break;
+    }
+    case "AtKeyword":
+    {
+      str = `@${type.name}`;
+      break;
+    }
+    case "Function":
+    {
+      str = `${type.name}(`;
+      break;
+    }
+    case "String":
+    {
+      str = type.value;
+      break;
+    }
+    case "Token":
+    {
+      str = type.value;
+      break;
+    }
+    case "Comma":
+    {
+      break;
+    }
+    default:
+    {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error1 = new Error("Unknown node type `" + type.type + "`");
+      throw error1;
     }
   }
-];
-const _moduleResult = _createClass(SentrySpan, items);
-let c3 = _moduleResult;
-const SentrySpan_export = _moduleResult;
+}
 
-export { SentrySpan_export as SentrySpan };
+export default (arg0, forceBraces) => {
+  let decorate = noop;
+  let flag = false;
+  let flag2 = false;
+  let tmp = forceBraces;
+  if (typeof forceBraces !== "function") {
+    flag = false;
+    flag2 = false;
+    tmp = decorate;
+    if (forceBraces) {
+      const _Boolean = Boolean;
+      const _Boolean2 = Boolean;
+      const BooleanResult = Boolean(forceBraces.forceBraces);
+      const BooleanResult1 = Boolean(forceBraces.compact);
+      if (typeof forceBraces.decorate === "function") {
+        decorate = forceBraces.decorate;
+      }
+      tmp = decorate;
+      flag = BooleanResult1;
+      flag2 = BooleanResult;
+    }
+  }
+  return generate(arg0, tmp, flag2, flag);
+};

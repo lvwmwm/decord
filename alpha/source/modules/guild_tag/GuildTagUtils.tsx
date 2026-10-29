@@ -1,16 +1,16 @@
-// Module ID: 8691
-// Function ID: 8692
+// Module ID: 8694
+// Function ID: 8695
 // Name: GuildTagUtils
-// Dependencies: [4916, 4878, 1389, 8306, 1084, 558, 576, 504, 4942, 2]
+// Dependencies: [4917, 4879, 1389, 8328, 1084, 558, 576, 504, 4943, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag
 
-// Module 8691 (GuildTagUtils)
+// Module 8694 (GuildTagUtils)
 import Constants from "Constants" /* 1084 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4942 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4943 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildTagConstants from "GuildTagConstants" /* 8306 */;
+import GuildTagConstants from "GuildTagConstants" /* 8328 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldD
 });
 let result = size.fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
 
-export const guildHasTag = function guildHasTag(guild) {
+export function guildHasTag(guild) {
   let tag;
   if (guild != null) {
     const profile = guild.profile;
@@ -293,12 +293,12 @@ export const guildHasTag = function guildHasTag(guild) {
     }
   }
   return null != tag;
-};
-export const guildSupportsTags = function guildSupportsTags(guild) {
+}
+export function guildSupportsTags(guild) {
   const features = guild.features;
   return features.has(GuildFeatures.GUILD_TAGS);
-};
-export const getGuildTagBadgeUrl = function getGuildTagBadgeUrl(guildId, badge, SIZE_12) {
+}
+export function getGuildTagBadgeUrl(guildId, badge, SIZE_12) {
   metroRequire = SIZE_12;
   if (SIZE_12 === undefined) {
     metroRequire = metroRequire.SIZE_12;
@@ -310,11 +310,11 @@ export const getGuildTagBadgeUrl = function getGuildTagBadgeUrl(guildId, badge, 
       return "https://" + CDN_HOST + "/clan-badges/" + guildId + "/" + badge + ".png?size=" + hasOwnProperty[metroRequire];
     }
   }
-};
+}
 export { getUserPrimaryGuild };
 export const useUserPrimaryGuild = tmp3;
 export const useShouldDisplayGuildTag = tmp4;
-export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id2, guildId1, arg2) {
+export function shouldDisplayGuildTag(id2, guildId1, arg2) {
   let tmp = arg2;
   const user = UserStore.getUser(id2);
   if (undefined === arg2) {
@@ -343,4 +343,4 @@ export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id2, guildId
     return tmp5;
   }
   obj = {};
-};
+}

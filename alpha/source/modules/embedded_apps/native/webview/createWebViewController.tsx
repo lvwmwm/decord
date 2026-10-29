@@ -1,25 +1,25 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11561
+// Function ID: 11562
 // Name: createWebViewController
-// Dependencies: [5, 1084, 2023, 6413, 7942, 10796, 1254, 11508, 11511, 1120, 2]
+// Dependencies: [5, 10873, 1084, 6437, 7965, 10872, 1254, 11562, 11565, 1120, 2]
 // Exports: default
 
-// Module 11507 (createWebViewController)
+// Module 11561 (createWebViewController)
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import Constants2 from "Constants" /* 2023 */;
-import Constants3 from "Constants" /* 6413 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11511 */;
+import Constants2 from "Constants" /* 6437 */;
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10873 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11565 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c6, c7, closure_4;
+let _require, c6, c7;
 
+let closure_4 = EmbeddedAppConstants.EMBEDDED_APP_DISALLOWED_NAVIGATION_MESSAGE;
 const ComponentActions = Constants.ComponentActions;
-let closure_5 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
-const TransportTypes = Constants3.TransportTypes;
+const TransportTypes = Constants2.TransportTypes;
 const result = size.fileFinishedImporting("modules/embedded_apps/native/webview/createWebViewController.tsx");
 
 export default function createWebViewController(id, contextSource) {
@@ -43,7 +43,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -85,7 +85,7 @@ export default function createWebViewController(id, contextSource) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp18) {
           closure_4 = tmp18;
@@ -118,7 +118,7 @@ export default function createWebViewController(id, contextSource) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -159,7 +159,7 @@ export default function createWebViewController(id, contextSource) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp15) {
         if (0 === c4) {
@@ -190,7 +190,7 @@ export default function createWebViewController(id, contextSource) {
     } catch (tmp16) {
       const _SyntaxError = SyntaxError;
       if (tmp16 instanceof SyntaxError) {
-        if (data.data === closure_5) {
+        if (data.data === closure_4) {
           dependencyMap();
         }
       } else {
@@ -200,7 +200,7 @@ export default function createWebViewController(id, contextSource) {
   });
   let ComponentDispatch = require("ComponentDispatchUtils").ComponentDispatch;
   let obj2 = { id, data: { contextSource } };
-  ComponentDispatch.dispatch(postMessageToWebView.IFRAME_MOUNT, obj2);
+  ComponentDispatch.dispatch(obj.IFRAME_MOUNT, obj2);
   let obj3 = {
     iframeId: id,
     shellBridgeSecret,

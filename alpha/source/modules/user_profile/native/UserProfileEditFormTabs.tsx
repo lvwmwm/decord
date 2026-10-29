@@ -1,25 +1,25 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16456
+// Function ID: 16457
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7340, 21, 5004, 587, 558, 576, 16218, 8769, 14658, 5195, 1125, 16220, 14638, 16221, 14691, 8935, 5085, 12261, 2]
+// Dependencies: [32, 19, 17, 7364, 21, 5005, 587, 558, 576, 16455, 8772, 14893, 5196, 1125, 16457, 14872, 16458, 14926, 8938, 5086, 12315, 2]
 
-// Module 16219 (UserProfileEditFormTabs)
+// Module 16456 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import ChatInputUtils from "ChatInputUtils" /* 5195 */;
-import Constants from "Constants" /* 7340 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8769 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14638 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14658 */;
-import reactDefault from "react" /* 16218 */;
-import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16220 */;
-import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16221 */;
+import ChatInputUtils from "ChatInputUtils" /* 5196 */;
+import Constants from "Constants" /* 7364 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8772 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14872 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14893 */;
+import reactDefault from "react" /* 16455 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16457 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16458 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -188,7 +188,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         dependencyMap(arg0);
       }
     }
-    tmp19 = closure_6(tmp5(16221), {});
+    tmp19 = closure_6(tmp5(16458), {});
   }
   cResult[4] = tmp9;
   cResult[5] = containerBackground;

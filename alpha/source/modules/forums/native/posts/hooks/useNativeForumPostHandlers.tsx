@@ -1,30 +1,30 @@
-// Module ID: 11037
-// Function ID: 11038
+// Module ID: 11091
+// Function ID: 11092
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5247, 4856, 4946, 1389, 7421, 7442, 1084, 1124, 558, 576, 5261, 38, 5640, 8539, 1383, 8882, 9752, 8788, 1381, 5248, 5249, 8321, 5743, 5195, 11038, 9817, 9815, 2]
+// Dependencies: [19, 5248, 4857, 4947, 1389, 7444, 7465, 1084, 1124, 558, 576, 5262, 38, 5641, 8561, 1383, 8885, 9784, 8791, 1381, 5249, 5250, 8343, 5745, 5196, 11092, 9849, 9847, 2]
 
-// Module 11037 (useNativeForumPostHandlers)
+// Module 11091 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ChatInputUtils from "ChatInputUtils" /* 5195 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5261 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import Tracking from "Tracking" /* 8321 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import openMediaModal from "openMediaModal" /* 8788 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9815 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9817 */;
+import ChatInputUtils from "ChatInputUtils" /* 5196 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5262 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import Tracking from "Tracking" /* 8343 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import openMediaModal from "openMediaModal" /* 8791 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9847 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9849 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7421 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7442 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7444 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7465 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(11038);
+const showLongPressForumPostActionSheetDefault = tmp2(11092);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 const constants4 = ThreadConstants.OpenThreadAnalyticsLocations;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostHandlers(threadId) {
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (undefined === NORMAL) {
-    NORMAL = tmp(5261).ReactionTypes.NORMAL;
+    NORMAL = tmp(5262).ReactionTypes.NORMAL;
   }
   if (cResult[0] !== threadId) {
     const fn = function h(containerRef) {
@@ -133,7 +133,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
             str1 = str.toString();
           }
         }
-        size = { uri: str1, guildId: channel.guild_id, messageId: tmp18, channelId: tmp17.id, mediaIndex: null, width: null, height: null, accessoryType: null, attachmentId: null };
+        size = { uri: str1, sourceURI: str1, guildId: channel.guild_id, messageId: tmp18, channelId: tmp17.id, mediaIndex: null, width: null, height: null, accessoryType: null, attachmentId: null };
         tmp18 = closure_1_0;
         tmp17 = channel;
         if (closure_1_0 == null) {
@@ -461,7 +461,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(5261).ReactionTypes.NORMAL;
+    NORMAL = threadId(5262).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];
@@ -544,7 +544,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
           str1 = str.toString();
         }
       }
-      size = { uri: str1, guildId: channel.guild_id, messageId: tmp18, channelId: tmp17.id, mediaIndex: null, width: null, height: null, accessoryType: null, attachmentId: null };
+      size = { uri: str1, sourceURI: str1, guildId: channel.guild_id, messageId: tmp18, channelId: tmp17.id, mediaIndex: null, width: null, height: null, accessoryType: null, attachmentId: null };
       tmp18 = closure_1_0;
       tmp17 = channel;
       if (closure_1_0 == null) {

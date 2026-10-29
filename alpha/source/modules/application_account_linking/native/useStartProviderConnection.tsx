@@ -1,10 +1,10 @@
-// Module ID: 7308
-// Function ID: 7309
+// Module ID: 7332
+// Function ID: 7333
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 558, 576, 7309, 5696, 2]
+// Dependencies: [5, 19, 558, 576, 7333, 5698, 2]
 
-// Module 7308 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 5696 */;
+// Module 7332 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 5698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
   let tmp3;
   let obj = startConnection(576);
   const cResult = obj.c(8);
-  let obj2 = startConnection(7309);
+  let obj2 = startConnection(7333);
   const providerConnection = obj2.useProviderConnection(arg0);
   ({ loading, hasConnection, canConnect, startConnection } = providerConnection);
   const account = providerConnection.account;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
   let hasConnection;
   let loading;
   let startConnection;
-  let obj = startConnection(7309);
+  let obj = startConnection(7333);
   const providerConnection = obj.useProviderConnection(arg0);
   startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartPr
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;

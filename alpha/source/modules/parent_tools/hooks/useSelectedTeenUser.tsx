@@ -1,13 +1,13 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16689
+// Function ID: 16690
 // Name: useSelectedTeenUser
-// Dependencies: [1389, 7683, 7680, 558, 576, 8158, 573, 2]
+// Dependencies: [1389, 7706, 7703, 558, 576, 8181, 573, 2]
 
-// Module 16451 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8158 */;
+// Module 16689 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8181 */;
 import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7683 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7706 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

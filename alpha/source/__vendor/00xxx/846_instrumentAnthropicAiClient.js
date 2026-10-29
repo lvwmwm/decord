@@ -45,7 +45,7 @@ function handleStreamingError(arg0, isRecording, _function) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(arg0, arg1) {
+export function instrumentAnthropicAiClient(arg0, arg1) {
   let c0;
   let obj2;
   function get(self, arg1) {
@@ -314,7 +314,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                               obj2 = { value, done: true };
                               return obj2;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "IconComponent" };
                             }
                           } else {
                             let c5;
@@ -470,4 +470,4 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
   let obj3 = { get };
   let proxy = new Proxy(arg0, obj3);
   return proxy;
-};
+}

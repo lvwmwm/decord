@@ -1,12 +1,12 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8868
+// Function ID: 8869
 // Name: SpotifyConstants
-// Dependencies: [1084, 6537, 1381, 2]
+// Dependencies: [1084, 6561, 1381, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8865 (SpotifyConstants)
+// Module 8868 (SpotifyConstants)
 import Constants from "Constants" /* 1084 */;
-import Platforms from "Platforms" /* 6537 */;
+import Platforms from "Platforms" /* 6561 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
@@ -81,15 +81,15 @@ const result = size.fileFinishedImporting("modules/spotify/SpotifyConstants.tsx"
 export const SPOTIFY_APP_PROTOCOL = "spotify";
 export const SPOTIFY_PARTY_PREFIX = "spotify:";
 export const SPOTIFY_PLATFORM_NAME = name;
-export const isSpotifyParty = function isSpotifyParty(id) {
+export function isSpotifyParty(id) {
   const startsWithResult = null != id && id.startsWith(c1);
   return startsWithResult;
-};
+}
 export { SpotifyResourceTypes };
 export const SpotifyActionTypes = { USER_ACTIVITY_PLAY: "user_activity_play", USER_ACTIVITY_SYNC: "user_activity_sync", EMBED_SYNC: "embed_sync" };
 export const SPOTIFY_HOSTNAMES = ["open.spotify.com", "www.spotify.com"];
 export const SpotifyEndpoints = freezeResult;
-export const getSpotifyResourceType = function getSpotifyResourceType(str) {
+export function getSpotifyResourceType(str) {
   if (typeof str !== "string") {
     return null;
   } else if ("track" === str) {
@@ -107,4 +107,4 @@ export const getSpotifyResourceType = function getSpotifyResourceType(str) {
   } else {
     return null;
   }
-};
+}

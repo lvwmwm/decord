@@ -1,20 +1,20 @@
-// Module ID: 18021
-// Function ID: 18022
+// Module ID: 18255
+// Function ID: 18256
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5291, 18009, 21, 5004, 587, 558, 576, 5288, 5070, 5283, 5085, 7204, 18022, 17725, 17728, 1125, 5013, 18023, 6922, 9437, 2]
+// Dependencies: [19, 5292, 18243, 21, 5005, 587, 558, 576, 5289, 5071, 5284, 5086, 7228, 18256, 17963, 17966, 1125, 5014, 18257, 6946, 9468, 2]
 
-// Module 18021 (GuildsBarAnimatedItemWrapper)
+// Module 18255 (GuildsBarAnimatedItemWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import native from "native" /* 5070 */;
-import spring from "spring" /* 5283 */;
-import styleConstants from "styleConstants" /* 5291 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import native from "native" /* 5071 */;
+import spring from "spring" /* 5284 */;
+import react_native from "react-native" /* 5292 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18009 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18243 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,12 +26,12 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const useToken = tmp(5288);
+const useToken = tmp(5289);
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   const obj = { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp };
   return metroImportAll(closure_18, obj, arg0);
 }
-const IOS_POINTER_STYLE = styleConstants.IOS_POINTER_STYLE;
+const IOS_POINTER_STYLE = react_native.IOS_POINTER_STYLE;
 ({ GUILD_ITEM_HIT_SLOP: hasOwnProperty, GUILD_ITEM_INSET_LEFT: metroRequire, useGuildWrapperSize: metroImportDefault } = GuildsBarConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 const CORNER_SPRING_PHYSICS = { mass: 0.8, damping: 100, stiffness: 150 };
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                     obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                     obj.animations = obj1;
                     obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                    obj.callback = function callback() { /* body not rendered: F155325 */ };
+                    obj.callback = function callback() { /* body not rendered: F156962 */ };
                     return obj;
                   }
                 }
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadIndica
                   obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                   obj.animations = obj1;
                   obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                  obj.callback = function callback() { /* body not rendered: F155325 */ };
+                  obj.callback = function callback() { /* body not rendered: F156962 */ };
                   return obj;
                 }
               }

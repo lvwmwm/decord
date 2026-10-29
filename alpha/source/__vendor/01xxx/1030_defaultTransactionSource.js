@@ -42,7 +42,7 @@ export const MARGIN_OF_ERROR_SECONDS = 0.05;
 export function getTimeOriginMilliseconds() {
   return closure_2;
 }
-export const isNearToNow = function isNearToNow(timestamp2) {
+export function isNearToNow(timestamp2) {
   let tmp = timestamp2;
   if (tmp) {
     const _Math = Math;
@@ -50,8 +50,8 @@ export const isNearToNow = function isNearToNow(timestamp2) {
     tmp = abs(obj.timestampInSeconds() - timestamp2) <= 0.05;
   }
   return tmp;
-};
-export const setSpanDurationAsMeasurement = function setSpanDurationAsMeasurement(time_to_full_display, arg1) {
+}
+export function setSpanDurationAsMeasurement(time_to_full_display, arg1) {
   let start_timestamp;
   let timestamp;
   const obj = _mod693;
@@ -62,8 +62,8 @@ export const setSpanDurationAsMeasurement = function setSpanDurationAsMeasuremen
     const tmpResult = _mod693;
     tmpResult.setMeasurement(time_to_full_display, 1000 * (timestamp - start_timestamp), "millisecond");
   }
-};
-export const setSpanDurationAsMeasurementOnSpan = function setSpanDurationAsMeasurementOnSpan(time_to_initial_display, span, activeSpan) {
+}
+export function setSpanDurationAsMeasurementOnSpan(time_to_initial_display, span, activeSpan) {
   let start_timestamp;
   let timestamp;
   const obj = _mod693;
@@ -77,12 +77,12 @@ export const setSpanDurationAsMeasurementOnSpan = function setSpanDurationAsMeas
     obj2[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = "millisecond";
     activeSpan.addEvent(time_to_initial_display, obj2);
   }
-};
-export const setSpanMeasurement = function setSpanMeasurement(addEvent, STALL_COUNT, value, unit) {
+}
+export function setSpanMeasurement(addEvent, STALL_COUNT, value, unit) {
   const obj = { [closure_1_0(closure_1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE]: value, [closure_1_0(closure_1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT]: unit };
   addEvent.addEvent(STALL_COUNT, obj);
-};
-export const getLatestChildSpanEndTimestamp = function getLatestChildSpanEndTimestamp(activeSpan) {
+}
+export function getLatestChildSpanEndTimestamp(activeSpan) {
   let obj = _mod693;
   const spanDescendants = obj.getSpanDescendants(activeSpan);
   const mapped = spanDescendants.map((item) => {
@@ -99,8 +99,8 @@ export const getLatestChildSpanEndTimestamp = function getLatestChildSpanEndTime
     applyResult = HermesBuiltin.apply(max, items, Math);
   }
   return applyResult;
-};
-export const getBundleStartTimestampMs = function getBundleStartTimestampMs() {
+}
+export function getBundleStartTimestampMs() {
   const __BUNDLE_START_TIME__ = RN_GLOBAL_OBJ2.RN_GLOBAL_OBJ.__BUNDLE_START_TIME__;
   if (__BUNDLE_START_TIME__) {
     let sum = __BUNDLE_START_TIME__;
@@ -115,9 +115,9 @@ export const getBundleStartTimestampMs = function getBundleStartTimestampMs() {
     const debug = tmp(693).debug;
     debug.warn("Missing the bundle start time on the global object.");
   }
-};
+}
 export { createSpanJSON };
-export const createChildSpanJSON = function createChildSpanJSON(op, arg1) {
+export function createChildSpanJSON(op, arg1) {
   let str;
   const obj = { op: op.op, trace_id: op.trace_id, parent_span_id: op.span_id, origin: str };
   str = op.origin;
@@ -127,4 +127,4 @@ export const createChildSpanJSON = function createChildSpanJSON(op, arg1) {
     str = "manual";
   }
   return tmp(assign(obj, arg1));
-};
+}

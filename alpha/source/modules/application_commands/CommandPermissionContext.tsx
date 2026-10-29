@@ -1,22 +1,22 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9721
+// Function ID: 9722
 // Name: CommandPermissionContext
-// Dependencies: [19, 4909, 4860, 4874, 502, 4856, 4916, 4878, 4936, 1389, 1084, 7352, 558, 576, 504, 1096, 1997, 2]
+// Dependencies: [19, 4910, 4861, 4875, 502, 4857, 4917, 4879, 4937, 1389, 1084, 7376, 558, 576, 504, 1096, 1998, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9689 (CommandPermissionContext)
+// Module 9721 (CommandPermissionContext)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import Server from "Server" /* 1997 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7352 */;
+import Server from "Server" /* 1998 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7376 */;
 import react_mod from "react" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,7 +73,7 @@ const isGuildNSFW = GuildRecord.isGuildNSFW;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled();
 const result = size.fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
 
-export const buildPermissionContext = function buildPermissionContext(channel, items) {
+export function buildPermissionContext(channel, items) {
   let tmp16;
   let obj = channel;
   if (channel instanceof ChannelRecordBase) {
@@ -132,8 +132,8 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
     tmp16 = tmp17;
   }
   return obj3;
-};
-export const usePermissionContext = function usePermissionContext(channel, items) {
+}
+export function usePermissionContext(channel, items) {
   let closure_3;
   let guild;
   let memo;
@@ -596,8 +596,8 @@ export const usePermissionContext = function usePermissionContext(channel, items
     }, items12);
   }
   return memo1;
-};
-export const computeCommandContextType = function computeCommandContextType(channel, applicationId) {
+}
+export function computeCommandContextType(channel, applicationId) {
   if (channel instanceof ChannelRecordBase) {
     let GUILD;
     let guild_id;
@@ -625,7 +625,7 @@ export const computeCommandContextType = function computeCommandContextType(chan
     return GUILD;
   }
   GUILD = Server.InteractionContextType.GUILD;
-};
-export const getContextGuildId = function getContextGuildId(context) {
+}
+export function getContextGuildId(context) {
   return context instanceof ChannelRecordBase ? context.guild_id : context.id;
-};
+}

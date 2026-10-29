@@ -1,10 +1,10 @@
-// Module ID: 7570
-// Function ID: 7571
+// Module ID: 7593
+// Function ID: 7594
 // Name: PremiumPlanSelectionActionSheet
-// Dependencies: [109, 5, 32, 19, 17, 7571, 2065, 7559, 7568, 1391, 1084, 1203, 5734, 1095, 21, 5004, 587, 2050, 558, 576, 1125, 5270, 38, 7578, 1900, 504, 14907, 7376, 5280, 5303, 6007, 10489, 7564, 5241, 7592, 8464, 9846, 8696, 7289, 7314, 5635, 10482, 7551, 5299, 10598, 1264, 5246, 7550, 1627, 5945, 10490, 6498, 7554, 5011, 10513, 10514, 10515, 10516, 10517, 10518, 1381, 2064, 5301, 11080, 5618, 5705, 8992, 14908, 1199, 9830, 10494, 10597, 2]
+// Dependencies: [109, 5, 32, 19, 17, 7594, 2066, 7582, 7591, 1391, 1084, 1203, 5736, 1095, 21, 5005, 587, 2051, 558, 576, 1125, 5271, 38, 7601, 1901, 504, 15142, 7399, 5281, 5304, 6009, 10522, 7587, 5242, 7615, 8486, 9878, 8699, 7313, 7338, 5636, 10515, 7574, 5300, 10631, 1264, 5247, 7573, 1628, 5947, 10523, 6522, 7577, 5012, 10546, 10547, 10548, 10549, 10550, 10551, 1381, 2065, 5302, 11134, 5619, 5707, 8995, 15143, 1199, 9862, 10527, 10630, 2]
 // Exports: default, getItemsByPremiumTypePredicate
 
-// Module 7570 (PremiumPlanSelectionActionSheet)
+// Module 7593 (PremiumPlanSelectionActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,37 +12,37 @@ import intl9 from "intl" /* 1125 */;
 import FormConstants from "FormConstants" /* 1203 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import react_native from "react-native" /* 6007 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7571 */;
-import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 7578 */;
-import ACOMExperiments from "ACOMExperiments" /* 9830 */;
-import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10597 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10598 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import react_native from "react-native" /* 6009 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7594 */;
+import PremiumPlanActionSheetHeaderDefault from "PremiumPlanActionSheetHeader" /* 7601 */;
+import ACOMExperiments from "ACOMExperiments" /* 9862 */;
+import NativeCheckoutStoreProviderDefault from "NativeCheckoutStoreProvider" /* 10630 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10631 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import IAPStore from "IAPStore" /* 7559 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7568 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import IAPStore from "IAPStore" /* 7582 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7591 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Constants_mod from "Constants" /* 1084 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
 import Constants_mod2 from "Constants" /* 1095 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, TIER_2, application_id, constants3, dependencyMap, set;
+let BottomSheet, TIER_2, application_id, c5, c6, constants3, dependencyMap, set;
 
 let c9;
 let closure_14;
@@ -74,11 +74,11 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const PremiumUtils = tmp(2050);
-const MobileWebRedirectCheckoutUtils = tmp(7551);
-const PremiumBundledPlansUtils = tmp(7554);
-const usePremiumTrialOffer = tmp(7592);
-const useIsEligibleForBogoOffer = tmp(10494);
+const PremiumUtils = tmp(2051);
+const MobileWebRedirectCheckoutUtils = tmp(7574);
+const PremiumBundledPlansUtils = tmp(7577);
+const usePremiumTrialOffer = tmp(7615);
+const useIsEligibleForBogoOffer = tmp(10527);
 function renderPlanOptionBadge(arg0) {
   let IAybsG;
   let customBadgeComponent;
@@ -160,8 +160,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   let tmp83;
   let userIsEligibleForBogoPromotion;
   let v9hnZoK;
-  const f99718 = (premiumTier) => premiumTier.premiumTier;
-  const f99728 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
+  const f100733 = (premiumTier) => premiumTier.premiumTier;
+  const f100743 = (patchOrderLineItems) => ({ patchOrderLineItems: patchOrderLineItems.patchOrderLineItems, isPatchOrderLoading: patchOrderLineItems.isPatchOrderLoading, orderRequired: patchOrderLineItems.orderRequired });
   ({ applicationId: require, analyticsLocation, premiumType } = premiumItems);
   premiumItems = premiumItems.premiumItems;
   const onPaymentStart = premiumItems.onPaymentStart;
@@ -203,7 +203,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -256,7 +256,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
                 }
               }
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -275,7 +275,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
             c4 = 0;
             closure_130_21.current = false;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           closure_130_20(found);
           c4 = 0;
@@ -301,7 +301,7 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const product_id = tmp3;
   let tmp5 = require;
   let tmp6 = premiumItems;
-  const tmp4 = orderRequired((mobileWebRedirectCheckoutStatus) => mobileWebRedirectCheckoutStatus.mobileWebRedirectCheckoutStatus);
+  let tmp4 = orderRequired((mobileWebRedirectCheckoutStatus) => mobileWebRedirectCheckoutStatus.mobileWebRedirectCheckoutStatus);
   obj = require("get initialized");
   const items = [handlePremiumPurchase];
   let stateFromStores = obj.useStateFromStores(items, () => handlePremiumPurchase.isBusy());
@@ -335,8 +335,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
   const tmp16 = premiumType(premiumItems[33])();
   const tmp17 = ref((orderRecord) => orderRecord.orderRecord);
   let closure_13 = tmp17;
-  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f99728));
-  const tmp18 = ref(f99728);
+  ({ patchOrderLineItems: c14, isPatchOrderLoading, orderRequired } = ref(f100743));
+  const tmp18 = ref(f100743);
   if (!isPatchOrderLoading) {
     isPatchOrderLoading = ref((isCreateOrderLoading) => isCreateOrderLoading.isCreateOrderLoading);
   }
@@ -470,113 +470,162 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
     let id;
     let intl;
     let intl2;
-    let shouldRedirectToMobileWeb;
     let tmp;
     application_id = arg0;
-    if (1 === tmp4) {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
-        let EXTERNAL_PAYMENT;
-        premiumType(premiumItems[22])(null != closure_130_19, "cannot start payment without a selectedItem");
-        basePlanId = closure_130_19.basePlanId;
-        const tmp31 = closure_130_27 && shouldRedirectToMobileWeb;
-        premiumItems = tmp31;
-        const PaymentFlowStep = application_id(premiumItems[41]).PaymentFlowStep;
-        if (premiumItems) {
-          EXTERNAL_PAYMENT = PaymentFlowStep.MOBILE_WEB_REDIRECT_CHECKOUT;
-        } else {
-          EXTERNAL_PAYMENT = PaymentFlowStep.EXTERNAL_PAYMENT;
-        }
-        const obj8 = { from_step: application_id(premiumItems[41]).PaymentFlowStep.PLAN_SELECT, to_step: EXTERNAL_PAYMENT, subscription_plan_gateway_plan_id: closure_130_19.productId, sku_id: closure_130_24 };
-        const getPaymentFlowStepAnalyticsFields = application_id(premiumItems[41]).getPaymentFlowStepAnalyticsFields;
-        const tmp41 = application_id(premiumItems[41]);
-        let closure_4 = getPaymentFlowStepAnalyticsFields(closure_130_25, obj8);
-        const tmp48 = premiumItems;
-        if (!tmp48) {
-          const obj5 = premiumType(premiumItems[45]);
-          const trackResult = obj5.track(constants.PAYMENT_FLOW_STEP, closure_4);
-        }
-        const obj10 = { productId: closure_130_19.productId, onPaymentStart: closure_130_3, onPaymentSuccess: closure_130_4, onPaymentDismiss: closure_130_5 };
-        closure_1_13(obj10);
-        const tmp64 = premiumItems;
-        if (tmp64) {
-          const obj9 = application_id(premiumItems[47]);
-          const obj11 = { planId: basePlanId, isGift: false, loadId: closure_130_23 };
-          const str = "premium_plan_selection_action_sheet";
-          const result = obj9.goToStandalonePremiumCheckoutFromMobileApp("premium_plan_selection_action_sheet", obj11, () => {
-            obj = require("MetaQuestUtils");
-            const tmp = premiumItems;
-            if (obj.isMetaQuest()) {
-              callback1();
-            } else {
-              c14("in_mobile_web");
-              const obj2 = premiumType(tmp[45]);
-              obj2.track(basePurchaseFlowAnalyticsFields.PAYMENT_FLOW_STEP, closure_1_4);
-            }
-          }, () => {
-            let intl;
-            let intl2;
-            obj = { title: intl.string(closure_1_0(closure_1_2[20]).t.NrBVjw), body: intl2.string(closure_1_0(closure_1_2[20]).t["gD+grx"]), hideActionSheet: true };
-            const show = closure_1_1(closure_1_2[49]).show;
-            closure_1_1(closure_1_2[49]);
-            intl = closure_1_0(closure_1_2[20]).intl;
-            intl2 = closure_1_0(closure_1_2[20]).intl;
-            show(obj);
-          });
-        } else {
-          let c4 = 1;
-          const obj12 = { productId: closure_130_19.productId, analyticsLocation: closure_130_25.location, analyticsLoadId: closure_130_23, analyticsLocations: closure_130_22, orderId: id };
-          id = undefined;
-          const tmp66 = closure_130_12;
-          if (closure_130_13 != null) {
-            id = closure_130_13.id;
-          }
-          let c5 = 3;
-          c6 = 1;
-          const obj13 = { value: tmp66(obj12), done: false };
-          return obj13;
-        }
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } else if (2 === tmp4) {
-      c4 = 0;
-      let closure_5 = closure_3;
-      if (closure_5 instanceof premiumType(premiumItems[50])) {
-        let obj2 = application_id(premiumItems[51]);
-        const subscriptions = obj2.fetchSubscriptions();
-        const obj14 = { title: intl.string(application_id(premiumItems[20]).t["U+H+kd"]), body: intl2.string(application_id(premiumItems[20]).t.F9ktNa), hideActionSheet: true };
-        let show = premiumType(premiumItems[49]).show;
-        const tmp20 = premiumType(premiumItems[49]);
-        intl = application_id(premiumItems[20]).intl;
-        intl2 = application_id(premiumItems[20]).intl;
-        const showResult = show(obj14);
-      } else {
-        throw closure_5;
-      }
-    } else if (arg0 === 1) {
-      c6 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 0;
-      c6 = 3;
-      obj = { value, done: true };
-      return obj;
     } else {
-      c4 = 0;
+      let c4;
+      try {
+        let shouldRedirectToMobileWeb;
+        let EXTERNAL_PAYMENT;
+        let closure_4;
+        c6 = 2;
+        const tmp4 = c5;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            premiumItems = tmp;
+            premiumType = tmp4;
+            shouldRedirectToMobileWeb = undefined;
+            let obj6 = application_id;
+            if (application_id === undefined) {
+              obj6 = { shouldRedirectToMobileWeb: false };
+            }
+            shouldRedirectToMobileWeb = obj6.shouldRedirectToMobileWeb;
+            basePlanId = undefined;
+            premiumItems = undefined;
+            EXTERNAL_PAYMENT = undefined;
+            closure_4 = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === tmp4) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              premiumType(premiumItems[22])(null != closure_130_19, "cannot start payment without a selectedItem");
+              basePlanId = closure_130_19.basePlanId;
+              const tmp31 = closure_130_27 && shouldRedirectToMobileWeb;
+              premiumItems = tmp31;
+              const PaymentFlowStep = application_id(premiumItems[41]).PaymentFlowStep;
+              if (premiumItems) {
+                EXTERNAL_PAYMENT = PaymentFlowStep.MOBILE_WEB_REDIRECT_CHECKOUT;
+              } else {
+                EXTERNAL_PAYMENT = PaymentFlowStep.EXTERNAL_PAYMENT;
+              }
+              const obj8 = { from_step: application_id(premiumItems[41]).PaymentFlowStep.PLAN_SELECT, to_step: EXTERNAL_PAYMENT, subscription_plan_gateway_plan_id: closure_130_19.productId, sku_id: closure_130_24 };
+              const getPaymentFlowStepAnalyticsFields = application_id(premiumItems[41]).getPaymentFlowStepAnalyticsFields;
+              const tmp41 = application_id(premiumItems[41]);
+              closure_4 = getPaymentFlowStepAnalyticsFields(closure_130_25, obj8);
+              const tmp48 = premiumItems;
+              if (!tmp48) {
+                const obj5 = premiumType(premiumItems[45]);
+                const trackResult = obj5.track(constants.PAYMENT_FLOW_STEP, closure_4);
+              }
+              const obj10 = { productId: closure_130_19.productId, onPaymentStart: closure_130_3, onPaymentSuccess: closure_130_4, onPaymentDismiss: closure_130_5 };
+              closure_1_13(obj10);
+              const tmp64 = premiumItems;
+              if (tmp64) {
+                const obj9 = application_id(premiumItems[47]);
+                const obj11 = { planId: basePlanId, isGift: false, loadId: closure_130_23 };
+                const str = "premium_plan_selection_action_sheet";
+                const result = obj9.goToStandalonePremiumCheckoutFromMobileApp("premium_plan_selection_action_sheet", obj11, () => {
+                  obj = require("MetaQuestUtils");
+                  const tmp = premiumItems;
+                  if (obj.isMetaQuest()) {
+                    callback1();
+                  } else {
+                    c14("in_mobile_web");
+                    const obj2 = premiumType(tmp[45]);
+                    obj2.track(basePurchaseFlowAnalyticsFields.PAYMENT_FLOW_STEP, closure_1_4);
+                  }
+                }, () => {
+                  let intl;
+                  let intl2;
+                  obj = { title: intl.string(closure_1_0(closure_1_2[20]).t.NrBVjw), body: intl2.string(closure_1_0(closure_1_2[20]).t["gD+grx"]), hideActionSheet: true };
+                  const show = closure_1_1(closure_1_2[49]).show;
+                  closure_1_1(closure_1_2[49]);
+                  intl = closure_1_0(closure_1_2[20]).intl;
+                  intl2 = closure_1_0(closure_1_2[20]).intl;
+                  show(obj);
+                });
+              } else {
+                c4 = 1;
+                const obj12 = { productId: closure_130_19.productId, analyticsLocation: closure_130_25.location, analyticsLoadId: closure_130_23, analyticsLocations: closure_130_22, orderId: id };
+                id = undefined;
+                const tmp66 = closure_130_12;
+                if (closure_130_13 != null) {
+                  id = closure_130_13.id;
+                }
+                c5 = 3;
+                c6 = 1;
+                const obj13 = { value: tmp66(obj12), done: false };
+                return obj13;
+              }
+            }
+          } else if (2 === tmp4) {
+            c4 = 0;
+            let closure_5 = closure_3;
+            if (closure_5 instanceof premiumType(premiumItems[50])) {
+              let obj2 = application_id(premiumItems[51]);
+              const subscriptions = obj2.fetchSubscriptions();
+              const obj14 = { title: intl.string(application_id(premiumItems[20]).t["U+H+kd"]), body: intl2.string(application_id(premiumItems[20]).t.F9ktNa), hideActionSheet: true };
+              let show = premiumType(premiumItems[49]).show;
+              const tmp20 = premiumType(premiumItems[49]);
+              intl = application_id(premiumItems[20]).intl;
+              intl2 = application_id(premiumItems[20]).intl;
+              const showResult = show(obj14);
+            } else {
+              throw closure_5;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp81) {
+        closure_3 = tmp81;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp81;
+        } else {
+          c5 = 2;
+        }
+      }
     }
-    yield "IconComponent";
-    premiumItems = tmp;
-    let obj6 = application_id;
-    if (application_id === undefined) {
-      obj6 = { shouldRedirectToMobileWeb: false };
-    }
-    shouldRedirectToMobileWeb = obj6.shouldRedirectToMobileWeb;
-    return "Reflect";
   }), items7);
   memo1 = obj3.useMemo(() => {
     let stringResult;
@@ -873,8 +922,8 @@ function PremiumPlanSelectionActionSheet(premiumItems) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        react = new Set(premiumItems.map(f99718)).size > 1;
-        set = new Set(premiumItems.map(f99718));
+        react = new Set(premiumItems.map(f100733)).size > 1;
+        set = new Set(premiumItems.map(f100733));
         items17[1] = tmp48(product_id, obj28);
         items15[1] = closure_36(tmp15Result13, obj25);
         tmp49Result2 = tmp49(tmp54, obj20);
@@ -1037,12 +1086,12 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   let premiumType;
   let selectedPremiumType;
   let trialOffer;
-  const f99741 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f100756 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   ({ premiumType, isPaymentSuccess, trialOffer } = arg0);
   ({ selectedPremiumType, discountOffer } = arg0);
   const tmp = closure_38();
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f99741));
-  useNativeCheckoutStore(f99741);
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f100756));
+  useNativeCheckoutStore(f100756);
   if (null == premiumType) {
     if (!isPaymentSuccess) {
       const obj = { style: tmp.headerText, variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(intl9.t.vLz3Zs) };
@@ -1218,7 +1267,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   }
   const tmpResult = premiumItem(504);
   const stateFromStores = tmpResult.useStateFromStores(first1, tmp10);
-  const tmpResult5 = premiumItem(14907);
+  const tmpResult5 = premiumItem(15142);
   const checkoutPlanPriceString = tmpResult5.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   let priceString;
   if (stateFromStores != null) {
@@ -1232,7 +1281,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     if (cResult[4] === priceString) {
       tmp14 = cResult[5];
     }
-    const tmpResult6 = premiumItem(14907);
+    const tmpResult6 = premiumItem(15142);
     const checkoutPlanDiscountPrices = tmpResult6.useCheckoutPlanDiscountPrices(premiumItem.productId, tmp14);
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1273,7 +1322,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
           }
         }
       }
-      const obj6 = first(2050);
+      const obj6 = first(2051);
       tmp19 = tmp21 === obj6.getSkuIdForPremiumType(premiumTier);
     }
     let tmp23 = tmp19;
@@ -1339,7 +1388,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
           return { orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord };
         }
       }
-      const obj8 = first(2050);
+      const obj8 = first(2051);
       const intervalString = obj8.getIntervalString(premiumItem.interval, false);
       cResult[43] = premiumItem.interval;
       cResult[44] = intervalString;
@@ -1421,7 +1470,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       const formatToPlainString = tmp41.formatToPlainString;
       const obj2 = { price: tmpResult7.formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
       const hXcaLT = tmp(1125).t.hXcaLT;
-      tmpResult7 = premiumItem(7376);
+      tmpResult7 = premiumItem(7399);
       formatToPlainStringResult = formatToPlainString(hXcaLT, obj2);
     } else {
       class W {
@@ -1451,8 +1500,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
         }
       }
     }
-    const formatRate = tmp(7376).formatRate;
-    premiumItem(7376);
+    const formatRate = tmp(7399).formatRate;
+    premiumItem(7399);
     if (checkoutPlanDiscountPrices != null) {
       class W {
         constructor(orderRequired) {
@@ -1522,8 +1571,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       cResult[48] = tmp48;
       cResult[49] = "interactive-text-default";
       cResult[50] = combined;
-      cResult[51] = closure_35(premiumItem(5270).Text, obj3);
-      const tmp53 = closure_35(premiumItem(5270).Text, obj3);
+      cResult[51] = closure_35(premiumItem(5271).Text, obj3);
+      const tmp53 = closure_35(premiumItem(5271).Text, obj3);
     }
     if (first > 0) {
       class W {
@@ -1587,7 +1636,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   let trialOffer;
   let userIsEligibleForBogoPromotion;
   let v02Gmgm;
-  const f99746 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
+  const f100761 = (orderRequired) => ({ orderRequired: orderRequired.orderRequired, orderRecord: orderRequired.orderRecord });
   premiumItem = premiumItem.premiumItem;
   ({ trialOffer, discountOffer, userIsEligibleForBogoPromotion } = premiumItem);
   ({ selectedProductId, optionNeedsProductNameLabel, customBadgeComponent, discountedPriceString } = premiumItem);
@@ -1603,28 +1652,28 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   const items = [IAPStore];
   const obj = premiumItem(504);
   const stateFromStores = obj.useStateFromStores(items, () => IAPStore.getProduct(premiumItem.productId));
-  const obj2 = premiumItem(14907);
+  const obj2 = premiumItem(15142);
   let checkoutPlanPriceString = obj2.useCheckoutPlanPriceString(premiumItem.productId, stateFromStores);
   const obj3 = { discountedPriceString, regularPriceString: priceString };
   priceString = undefined;
-  const useCheckoutPlanDiscountPrices = premiumItem(14907).useCheckoutPlanDiscountPrices;
+  const useCheckoutPlanDiscountPrices = premiumItem(15142).useCheckoutPlanDiscountPrices;
   const productId = premiumItem.productId;
-  premiumItem(14907);
+  premiumItem(15142);
   if (stateFromStores != null) {
     priceString = stateFromStores.priceString;
   }
   const checkoutPlanDiscountPrices = useCheckoutPlanDiscountPrices(productId, obj3);
-  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f99746));
+  ({ orderRequired, orderRecord } = useNativeCheckoutStore(f100761));
   const premiumTier = premiumItem.premiumTier;
   let tmp12 = null != trialOffer && null != premiumTier;
-  useNativeCheckoutStore(f99746);
+  useNativeCheckoutStore(f100761);
   if (tmp12) {
     const subscriptionTrial = trialOffer.subscriptionTrial;
     let skuId;
     if (subscriptionTrial != null) {
       skuId = subscriptionTrial.skuId;
     }
-    const obj4 = first(2050);
+    const obj4 = first(2051);
     tmp12 = skuId === obj4.getSkuIdForPremiumType(premiumTier);
   }
   let tmp15 = tmp12;
@@ -1646,9 +1695,9 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     }
     tmp15 = tmp16;
   }
-  const tmp4Result = premiumItem(2050);
+  const tmp4Result = premiumItem(2051);
   const tierDisplayNameByPlanId = tmp4Result.getTierDisplayNameByPlanId(premiumItem.basePlanId);
-  const obj6 = first(2050);
+  const obj6 = first(2051);
   const intervalString = obj6.getIntervalString(premiumItem.interval, false);
   let tmp21 = tmp15;
   const basePlanId = premiumItem.basePlanId;
@@ -1681,7 +1730,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   }
   let formatRateResult = null;
   if (null != checkoutPlanDiscountPrices) {
-    const tmp4Result4 = premiumItem(7376);
+    const tmp4Result4 = premiumItem(7399);
     formatRateResult = tmp4Result4.formatRate(checkoutPlanDiscountPrices.discountedPrice, tmp27.interval, tmp27.intervalCount);
   }
   if (tmp15) {
@@ -1689,7 +1738,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     const formatToPlainString = intl.formatToPlainString;
     const obj5 = { price: tmp4Result5.formatPrice(0, USD, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
     const hXcaLT = tmp4(1125).t.hXcaLT;
-    tmp4Result5 = premiumItem(7376);
+    tmp4Result5 = premiumItem(7399);
     formatToPlainStringResult = formatToPlainString(hXcaLT, obj5);
   } else {
     formatToPlainStringResult = undefined;
@@ -1704,8 +1753,8 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     }
   }
   let regularPrice;
-  const formatRate = premiumItem(7376).formatRate;
-  premiumItem(7376);
+  const formatRate = premiumItem(7399).formatRate;
+  premiumItem(7399);
   if (checkoutPlanDiscountPrices != null) {
     regularPrice = checkoutPlanDiscountPrices.regularPrice;
   }
@@ -1727,7 +1776,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
     planOptionPriceContainer = tmp.planOptionPriceContainer;
   }
   const obj9 = { style: tmp.planOptionContainer, children: items3 };
-  const Text = tmp4(5270).Text;
+  const Text = tmp4(5271).Text;
   if (null != discountOffer) {
     str3 = "text-lg/medium";
   } else {
@@ -1750,7 +1799,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   items4 = [renderPlanOptionBadge({ userLocale: locale, discount: tmp23, hideDefaultDiscountBadges: tmp21, customBadgeComponent, showBogoPromotionBadge: userIsEligibleForBogoPromotion }), ];
   const obj13 = { style: tmp.priceText, variant: "text-lg/medium", color: str8, children: formatToPlainStringResult };
   str8 = str4;
-  const Text2 = tmp4(5270).Text;
+  const Text2 = tmp4(5271).Text;
   if (productId2 === selectedProductId) {
     str8 = "interactive-text-active";
   }
@@ -1759,7 +1808,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   let tmp35Result = null;
   if (tmp15) {
     let str9 = str4;
-    const Text3 = tmp4(5270).Text;
+    const Text3 = tmp4(5271).Text;
     if (productId2 === selectedProductId) {
       str9 = "text-default";
     }
@@ -1804,7 +1853,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
       tmp35Result3 = null;
       if (null == selectedPremiumType) {
         let str10 = str4;
-        const Text4 = tmp4(5270).Text;
+        const Text4 = tmp4(5271).Text;
         if (productId2 === selectedProductId) {
           str10 = "text-default";
         }
@@ -1828,7 +1877,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanOp
   items6 = [tmp35Result3, ];
   let tmp35Result4 = null != checkoutPlanDiscountPrices && null != discountOffer;
   if (tmp35Result4) {
-    const Text5 = tmp4(5270).Text;
+    const Text5 = tmp4(5271).Text;
     if (productId2 === selectedProductId) {
       str4 = "text-default";
     }
@@ -1926,7 +1975,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
         }
       }
       const obj3 = { text: ctaText, grow: true, onPress: tmp6, loading, disabled };
-      const Button = tmp(5280).Button;
+      const Button = tmp(5281).Button;
       const merged = Object.assign(tmp4);
       const tmp11 = __initData4(Button, obj3);
       cResult[8] = ctaText;

@@ -1,21 +1,21 @@
-// Module ID: 16526
-// Function ID: 16527
+// Module ID: 16764
+// Function ID: 16765
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1084, 21, 5004, 558, 576, 2064, 16527, 1125, 5705, 16528, 9644, 4840, 2]
+// Dependencies: [19, 1084, 21, 5005, 558, 576, 2065, 16765, 1125, 5707, 16766, 9676, 4841, 2]
 
-// Module 16526 (XboxTwoWayLinkUpsell)
+// Module 16764 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9644 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16527 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16528 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9676 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16765 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16766 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLi
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16527).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(16765).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1125).intl;
     const stringResult = intl.string(intl3.t["2okkZV"]);
     const intl2 = tmp(1125).intl;

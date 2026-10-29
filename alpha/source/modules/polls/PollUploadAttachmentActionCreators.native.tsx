@@ -1,15 +1,15 @@
-// Module ID: 12167
-// Function ID: 12168
+// Module ID: 12221
+// Function ID: 12222
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 7666, 8343, 12168, 8733, 8186, 8176, 8177, 9699, 2]
+// Dependencies: [5, 7689, 8365, 12222, 8736, 8209, 8199, 8200, 9731, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 12167 (PollUploadAttachmentActionCreators)
-import DraftStore from "DraftStore" /* 7666 */;
-import PollsConstants from "PollsConstants" /* 8343 */;
-import FileManagerUtils from "FileManagerUtils" /* 8733 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9699 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12168 */;
+// Module 12221 (PollUploadAttachmentActionCreators)
+import DraftStore from "DraftStore" /* 7689 */;
+import PollsConstants from "PollsConstants" /* 8365 */;
+import FileManagerUtils from "FileManagerUtils" /* 8736 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9731 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12222 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _handlePollGifAttachmentAdd() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp36;
@@ -69,7 +69,7 @@ let obj = function _handlePollGifAttachmentAdd() {
           } else if (1 === file) {
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else if (2 === file) {
             if (arg0 === 1) {
               c8 = 3;
@@ -83,7 +83,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == closure_3) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const obj9 = closure_132_0(closure_132_2[3]);
                 filePathForGif = obj9.getFilePathForGif(filename);
@@ -107,7 +107,7 @@ let obj = function _handlePollGifAttachmentAdd() {
               if (null == tmp36) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const obj6 = closure_132_0(closure_132_2[5]);
                 writeFileResult = obj6.getImageDimensionsIfMissing(tmp36);
@@ -173,7 +173,7 @@ obj = function _removePollUploadAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -213,7 +213,7 @@ obj = function _removePollUploadAttachment() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp5) {
         let closure_5 = tmp5;
@@ -243,7 +243,7 @@ obj = function _removeAllPollUploadAttachments() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -282,7 +282,7 @@ obj = function _removeAllPollUploadAttachments() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         let closure_3 = tmp12;
@@ -301,15 +301,15 @@ const DraftType = DraftStore.DraftType;
 const POLL_ATTACHMENT_FOLDER = PollsConstants.POLL_ATTACHMENT_FOLDER;
 const result = size.fileFinishedImporting("modules/polls/PollUploadAttachmentActionCreators.native.tsx");
 
-export const handlePollGifAttachmentAdd = function handlePollGifAttachmentAdd() {
+export function handlePollGifAttachmentAdd() {
   return obj(...arguments);
-};
+}
 export function handlePollMediaAttachmentAdd() {
 
 }
-export const removePollUploadAttachment = function removePollUploadAttachment() {
+export function removePollUploadAttachment() {
   return obj(...arguments);
-};
-export const removeAllPollUploadAttachments = function removeAllPollUploadAttachments() {
+}
+export function removeAllPollUploadAttachments() {
   return obj(...arguments);
-};
+}

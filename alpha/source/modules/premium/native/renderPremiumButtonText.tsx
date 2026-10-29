@@ -1,20 +1,20 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15376
+// Function ID: 15377
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1391, 21, 5004, 5001, 587, 558, 576, 2050, 1125, 1199, 2]
+// Dependencies: [19, 17, 1391, 21, 5005, 5002, 587, 558, 576, 2051, 1125, 1199, 2]
 // Exports: default
 
-// Module 15141 (renderPremiumButtonText)
+// Module 15376 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import ColorUtils_mod from "ColorUtils" /* 5001 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import ColorUtils_mod from "ColorUtils" /* 5002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const text = isGift.text;
   const tmp4 = closure_9();
   if (cResult[0] !== basePlanId) {
-    let obj2 = isGift(2050);
+    let obj2 = isGift(2051);
     const interval = obj2.getInterval(basePlanId);
     cResult[0] = basePlanId;
     cResult[1] = interval;

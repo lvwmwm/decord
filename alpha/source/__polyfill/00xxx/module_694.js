@@ -13,7 +13,7 @@ import _mod727 from "module_727" /* 727 */;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let c2 = false;
 
-export const registerSpanErrorInstrumentation = function registerSpanErrorInstrumentation() {
+export function registerSpanErrorInstrumentation() {
   const tmp = c2;
   if (!tmp) {
     function errorCallback() {
@@ -43,4 +43,4 @@ export const registerSpanErrorInstrumentation = function registerSpanErrorInstru
     let obj2 = _mod727;
     const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
   }
-};
+}

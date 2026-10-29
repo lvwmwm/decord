@@ -1,32 +1,32 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 15046
+// Function ID: 15047
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [4855, 2042, 502, 4856, 5748, 1389, 10038, 13273, 1125, 13274, 14801, 14812, 13275, 13276, 6845, 12054, 2]
+// Dependencies: [4856, 2043, 502, 4857, 5750, 1389, 10070, 13506, 1125, 13507, 15036, 15047, 13508, 13509, 6868, 12108, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 14811 (EmbeddedActivityInstanceEmbed)
+// Module 15046 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1125 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10038 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12054 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13273 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 13274 */;
-import getPlayInContext from "getPlayInContext" /* 13275 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13276 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14801 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 14812 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6868 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10070 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12108 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 13506 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 13507 */;
+import getPlayInContext from "getPlayInContext" /* 13508 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13509 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15036 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15047 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/EmbeddedActivityInstanceEmbed.tsx");
 
-export const createActivityInstanceEmbed = function createActivityInstanceEmbed(message) {
+export function createActivityInstanceEmbed(message) {
   let activityInstance;
   let application;
   let canLaunchInChannel;
@@ -182,4 +182,4 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
       }
     }
   }
-};
+}

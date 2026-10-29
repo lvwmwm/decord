@@ -1,17 +1,17 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11063
+// Function ID: 11064
 // Name: notifications/NotificationUtils
-// Dependencies: [6739, 1084, 1094, 1125, 11, 1402, 4939, 558, 576, 504, 2]
+// Dependencies: [6762, 1084, 1094, 1125, 11, 1402, 4940, 558, 576, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem
 
-// Module 11028 (notifications/NotificationUtils)
+// Module 11063 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl7 from "intl" /* 1125 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import MuteTimers from "MuteTimers" /* 4939 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import MuteTimers from "MuteTimers" /* 4940 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldU
 });
 const result = size.fileFinishedImporting("modules/notifications/NotificationUtils.tsx");
 
-export const getMuteTimeOptions = function getMuteTimeOptions() {
+export function getMuteTimeOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -79,8 +79,8 @@ export const getMuteTimeOptions = function getMuteTimeOptions() {
   intl6 = intl7.intl;
   items[5] = obj6;
   return items;
-};
-export const filterOverrides = function filterOverrides(channelOverrides, arg1) {
+}
+export function filterOverrides(channelOverrides, arg1) {
   let ignoreUnreadSetting;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -123,8 +123,8 @@ export const filterOverrides = function filterOverrides(channelOverrides, arg1) 
     }
     return tmp9;
   });
-};
+}
 export const useShouldUseNewNotificationSystem = tmp3;
-export const shouldShowUseNewNotificationSystem = function shouldShowUseNewNotificationSystem() {
+export function shouldShowUseNewNotificationSystem() {
   return UserGuildSettingsStore.useNewNotifications;
-};
+}

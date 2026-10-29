@@ -1,12 +1,12 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19259
+// Function ID: 19260
 // Name: useIsInRestrictedHours
-// Dependencies: [1389, 7680, 558, 576, 504, 2]
+// Dependencies: [1389, 7703, 558, 576, 504, 2]
 
-// Module 19026 (useIsInRestrictedHours)
+// Module 19259 (useIsInRestrictedHours)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 7373
-// Function ID: 7374
+// Module ID: 7396
+// Function ID: 7397
 // Name: SKUPricesStore
-// Dependencies: [2065, 504, 1385, 584, 2]
+// Dependencies: [2066, 504, 1385, 584, 2]
 
-// Module 7373 (SKUPricesStore)
+// Module 7396 (SKUPricesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import size from "module_2" /* 2 */;
 
-const f99049 = (skuId) => {
+const f100064 = (skuId) => {
   let combined;
   obj = { type: "sku", skuId };
   if ("application" === obj.type) {
@@ -136,7 +136,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f99049)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f100064)));
     }
   },
   SKUS_PRICING_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
@@ -164,7 +164,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f99049)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f100064)));
     }
     if ("application" === priceId.type) {
       let obj9;
@@ -190,7 +190,7 @@ let obj = {
         const merged4 = Object.assign(obj4);
         const _Object2 = Object;
         const skuIds1 = obj5.skuIds;
-        const merged5 = Object.assign(Object.fromEntries(skuIds1.map(f99049)));
+        const merged5 = Object.assign(Object.fromEntries(skuIds1.map(f100064)));
       }
       obj4 = obj9;
     }
@@ -229,7 +229,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f99049)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f100064)));
     }
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: resetStoreState

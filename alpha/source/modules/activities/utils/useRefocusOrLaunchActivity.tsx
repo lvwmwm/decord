@@ -1,14 +1,14 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14604
+// Function ID: 14605
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6810, 4855, 6811, 558, 576, 6845, 504, 10804, 11405, 11401, 2]
+// Dependencies: [5, 19, 6833, 4856, 6834, 558, 576, 6868, 504, 10880, 11459, 11455, 2]
 
-// Module 14370 (useRefocusOrLaunchActivity)
-import FramesConstants from "FramesConstants" /* 6811 */;
+// Module 14604 (useRefocusOrLaunchActivity)
+import FramesConstants from "FramesConstants" /* 6834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp22) {
         if (0 === c3) {
           c4 = 3;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -281,7 +281,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefocus
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp22) {
         runBeforeLaunchAttempt = tmp22;
         if (0 === c3) {

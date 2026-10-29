@@ -1,19 +1,19 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 13010
+// Function ID: 13011
 // Name: OutcomeStep
-// Dependencies: [32, 19, 4878, 11068, 12781, 21, 5004, 1125, 2403, 558, 576, 12783, 504, 7485, 12784, 5270, 7936, 6013, 587, 12786, 5280, 7935, 2]
+// Dependencies: [32, 19, 4879, 11122, 13000, 21, 5005, 1125, 2404, 558, 576, 13002, 504, 7508, 13003, 5271, 7959, 6015, 587, 13007, 5281, 7958, 2]
 
-// Module 12789 (OutcomeStep)
-import intl14 from "intl" /* 1125 */;
-import _modDef2403 from "module_2403" /* 2403 */;
-import transitionToGuild from "transitionToGuild" /* 7485 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12781 */;
+// Module 13010 (OutcomeStep)
+import intl15 from "intl" /* 1125 */;
+import _modDef2404 from "module_2404" /* 2404 */;
+import transitionToGuild from "transitionToGuild" /* 7508 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13000 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,12 +25,12 @@ let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
 function getOutcomeContent(arg0, arg1, arg2, noun, onGoToServer) {
-  let accountName;
+  let characterName;
+  let formatToPlainStringResult1;
   let intl;
   let intl10;
   let intl11;
   let intl12;
-  let intl13;
   let intl2;
   let intl3;
   let intl4;
@@ -39,76 +39,82 @@ function getOutcomeContent(arg0, arg1, arg2, noun, onGoToServer) {
   let intl7;
   let intl8;
   let noun2;
-  let obj11;
-  let obj15;
-  let obj18;
+  let obj16;
+  let obj19;
   let obj5;
   let obj7;
   let obj9;
   let orgName;
   onGoToServer = onGoToServer.onGoToServer;
   noun = noun.noun;
-  const obj = { text: intl.string(intl14.t.cpT0Cq), onPress: onClose };
+  const obj = { text: intl.string(intl15.t.cpT0Cq), onPress: onClose };
   onClose = onGoToServer.onClose;
-  intl = intl14.intl;
+  intl = intl15.intl;
   let tmp3 = obj;
   if (null != onGoToServer) {
-    const obj2 = { text: intl2.string(_modDef2403.H1wMHV), onPress: onGoToServer };
+    const obj2 = { text: intl2.string(_modDef2404.H1wMHV), onPress: onGoToServer };
     intl2 = tmp(1125).intl;
     tmp3 = obj2;
   }
   if (arg0 === metroImportDefault.JOINED) {
-    ({ noun: noun2, orgName, accountName } = noun);
+    ({ noun: noun2, orgName, characterName } = noun);
     const intl9 = tmp(1125).intl;
     const obj3 = { noun: noun2 };
-    const formatToPlainStringResult = intl9.formatToPlainString(_modDef2403["w/spGp"], obj3);
+    const formatToPlainStringResult = intl9.formatToPlainString(_modDef2404["w/spGp"], obj3);
     if (metroImportAll.NEW_MEMBER !== arg2) {
       let obj8;
       if (metroImportAll.ALREADY_MEMBER !== arg2) {
         if (metroImportAll.PENDING_VERIFICATION === arg2) {
-          const obj4 = { title: formatToPlainStringResult, subtitle: intl12.formatToPlainString(_modDef2403["9K7Jdt"], obj5), cta: tmp3 };
+          const obj4 = { title: formatToPlainStringResult, subtitle: intl12.formatToPlainString(_modDef2404["9K7Jdt"], obj5), cta: tmp3 };
           intl12 = tmp(1125).intl;
           obj8 = obj4;
           obj5 = { noun: noun2, orgName };
         } else if (metroImportAll.APPLICATION === arg2) {
-          const obj6 = { title: formatToPlainStringResult, subtitle: intl11.formatToPlainString(_modDef2403.ODHuua, obj7), cta: obj };
+          const obj6 = { title: formatToPlainStringResult, subtitle: intl11.formatToPlainString(_modDef2404.ODHuua, obj7), cta: obj };
           intl11 = tmp(1125).intl;
           obj8 = obj6;
           obj7 = { noun: noun2, orgName };
         } else {
           const FAILED = tmp12.FAILED;
-          obj8 = { title: formatToPlainStringResult, subtitle: intl10.formatToPlainString(_modDef2403.Qo94hd, obj9), cta: obj };
+          obj8 = { title: formatToPlainStringResult, subtitle: intl10.formatToPlainString(_modDef2404.Qo94hd, obj9), cta: obj };
           intl10 = tmp(1125).intl;
           obj9 = { noun: noun2, orgName };
         }
       }
       return obj8;
     }
-    const obj10 = { title: formatToPlainStringResult, subtitle: intl13.formatToPlainString(_modDef2403.WF9Qgb, obj11), cta: tmp3 };
-    intl13 = tmp(1125).intl;
+    const obj10 = { title: formatToPlainStringResult, subtitle: formatToPlainStringResult1, cta: tmp3 };
+    if (null != characterName) {
+      const intl14 = tmp(1125).intl;
+      const obj11 = { noun: noun2, orgName, characterName };
+      formatToPlainStringResult1 = intl14.formatToPlainString(tmp10(2404).PLA9Om, obj11);
+    } else {
+      const intl13 = tmp(1125).intl;
+      const obj12 = { noun: noun2, orgName };
+      formatToPlainStringResult1 = intl13.formatToPlainString(tmp10(2404).WF9Qgb, obj12);
+    }
     obj8 = obj10;
-    obj11 = { noun: noun2, orgName, accountName };
   } else if (metroRequire.ALREADY_JOINED === arg1) {
-    const obj12 = { title: intl8.formatToPlainString(_modDef2403["1PMPYk"], obj13), cta: tmp3 };
+    const obj13 = { title: intl8.formatToPlainString(_modDef2404["1PMPYk"], obj14), cta: tmp3 };
     intl8 = tmp(1125).intl;
-    return obj12;
+    return obj13;
   } else if (metroRequire.IN_ANOTHER_ORGANIZATION === arg1) {
-    const obj14 = { title: intl6.formatToPlainString(_modDef2403.vSlR1j, obj15), subtitle: intl7.formatToPlainString(_modDef2403.kvDHqp, obj16), cta: obj };
+    const obj15 = { title: intl6.formatToPlainString(_modDef2404.vSlR1j, obj16), subtitle: intl7.formatToPlainString(_modDef2404.kvDHqp, obj17), cta: obj };
     intl6 = tmp(1125).intl;
-    obj15 = { noun };
+    obj16 = { noun };
     intl7 = tmp(1125).intl;
-    return obj14;
+    return obj15;
   } else if (metroRequire.GUILD_FULL === arg1) {
-    const obj17 = { title: intl4.formatToPlainString(_modDef2403["/7Gy4g"], obj18), subtitle: intl5.string(_modDef2403["8TGo9L"]), cta: obj };
+    const obj18 = { title: intl4.formatToPlainString(_modDef2404["/7Gy4g"], obj19), subtitle: intl5.string(_modDef2404["8TGo9L"]), cta: obj };
     intl4 = tmp(1125).intl;
-    obj18 = { noun };
+    obj19 = { noun };
     intl5 = tmp(1125).intl;
-    return obj17;
+    return obj18;
   } else {
-    const OTHER = tmp14.OTHER;
-    const obj19 = { title: intl3.string(_modDef2403.sXbaMb), cta: obj };
+    const OTHER = tmp15.OTHER;
+    const obj20 = { title: intl3.string(_modDef2404.sXbaMb), cta: obj };
     intl3 = tmp(1125).intl;
-    return obj19;
+    return obj20;
   }
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -117,6 +123,7 @@ let onClose = GameOrganizationJoinModalConstants.closeGameOrganizationJoinModal;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ text: { textAlign: "center" } });
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(code) {
+  let characterName;
   let closure_3;
   let failureReason;
   let first;
@@ -131,11 +138,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   let tmp = guildId;
   let tmp2 = dependencyMap;
   let obj = guildId(576);
-  const cResult = obj.c(39);
-  ({ joinStatus, failureReason, guildJoinStatus } = code);
+  const cResult = obj.c(40);
+  ({ joinStatus, failureReason, guildJoinStatus, characterName } = code);
   code = code.code;
   closure_12();
-  const tmp6 = stateFromStores(12783)(code);
+  const tmp6 = stateFromStores(13002)(code);
   guildId = undefined;
   const tmp5 = stateFromStores;
   if (tmp6 != null) {
@@ -175,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
         }
         _slicedToArray = tmp14;
         if (cResult[8] !== tmp14) {
-          class C {
+          class R {
             constructor() {
               if (closure_3) {
                 tmp = globalThis;
@@ -190,12 +197,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
           }
           const items1 = [tmp14];
           cResult[8] = tmp14;
-          cResult[9] = C;
+          cResult[9] = R;
           cResult[10] = items1;
           tmp17 = items1;
-          tmp16 = C;
+          tmp16 = R;
         } else {
-          class C {
+          class R {
             constructor() {
               if (closure_3) {
                 tmp = globalThis;
@@ -212,7 +219,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
         }
         const effect = obj3.useEffect(tmp16, tmp17);
         if (cResult[11] === guildId) {
-          class C {
+          class R {
             constructor() {
               if (closure_3) {
                 tmp = globalThis;
@@ -225,8 +232,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
               }
             }
           }
-          if (cResult[14] === failureReason) {
-            class C {
+          if (cResult[14] === characterName) {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -241,9 +248,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
             }
           }
           const tmp21 = getOutcomeContent;
-          const tmp5Result = tmp5(12784);
+          const tmp5Result = tmp5(13003);
           if (tmp6 != null) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -258,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
             }
           }
           if (undefined == null) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -272,10 +279,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
               }
             }
           }
-          const obj2 = { noun: tmp5Result(obj4), orgName: undefined, accountName: "[Account/Username]" };
+          const obj2 = { noun: tmp5Result(obj4), orgName: undefined, characterName };
           obj4 = { displayNoun: undefined, lowercase: true };
           if (tmp6 != null) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -290,7 +297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
             }
           }
           if (undefined == null) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -306,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
           }
           const obj5 = { onClose, onGoToServer: tmp26 };
           if (stateFromStores) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -320,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
               }
             }
           } else {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -334,29 +341,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
               }
             }
           }
-          cResult[14] = failureReason;
-          cResult[15] = guildJoinStatus;
-          cResult[16] = tmp19;
-          cResult[17] = stateFromStores;
+          cResult[14] = characterName;
+          cResult[15] = failureReason;
+          cResult[16] = guildJoinStatus;
+          cResult[17] = tmp19;
+          cResult[18] = stateFromStores;
           const tmp21Result = tmp21(joinStatus, failureReason, guildJoinStatus, obj2, obj5);
           if (tmp6 != null) {
-            class C {
-              constructor() {
-                if (closure_3) {
-                  tmp = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 5000;
-                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
-                  return () => clearTimeout(closure_0);
-                } else {
-                  return;
-                }
-              }
-            }
-          }
-          cResult[18] = undefined;
-          if (tmp6 != null) {
-            class C {
+            class R {
               constructor() {
                 if (closure_3) {
                   tmp = globalThis;
@@ -371,11 +363,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
             }
           }
           cResult[19] = undefined;
-          cResult[20] = tmp14;
-          cResult[21] = joinStatus;
-          cResult[22] = tmp21Result;
+          if (tmp6 != null) {
+            class R {
+              constructor() {
+                if (closure_3) {
+                  tmp = globalThis;
+                  _setTimeout = setTimeout;
+                  num = 5000;
+                  closure_0 = setTimeout(() => closure_1_2(true), 5000);
+                  return () => clearTimeout(closure_0);
+                } else {
+                  return;
+                }
+              }
+            }
+          }
+          cResult[20] = undefined;
+          cResult[21] = tmp14;
+          cResult[22] = joinStatus;
+          cResult[23] = tmp21Result;
         }
-        const fn2 = function y() {
+        const fn2 = function z() {
           let tmp2 = null != guildId;
           const tmp = guildId;
           if (tmp2) {
@@ -396,7 +404,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   }
   let tmp15 = !stateFromStores && !tmp13;
   if (tmp15) {
-    class C {
+    class R {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -411,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
     }
     let flag = false;
     if (joinStatus === constants2.JOINED) {
-      class C {
+      class R {
         constructor() {
           if (closure_3) {
             tmp = globalThis;
@@ -425,7 +433,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
         }
       }
       if (constants3.NEW_MEMBER !== guildJoinStatus) {
-        class C {
+        class R {
           constructor() {
             if (closure_3) {
               tmp = globalThis;
@@ -449,8 +457,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   cResult[6] = joinStatus;
   cResult[7] = tmp15;
   tmp14 = tmp15;
-}) : (function OutcomeStep(code) {
+}) : (function OutcomeStep(arg0) {
+  let characterName;
   let closure_2;
+  let code;
   let cta;
   let failureReason;
   let guildJoinStatus;
@@ -461,14 +471,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   let str;
   let subtitle;
   let tmp17;
-  ({ joinStatus, failureReason, guildJoinStatus } = code);
+  ({ joinStatus, failureReason, guildJoinStatus } = arg0);
   let stateFromStores;
   dependencyMap = undefined;
   let flag;
-  code = code.code;
+  ({ code, characterName } = arg0);
   let tmp = closure_12();
   let tmp2 = stateFromStores;
-  const tmp4 = stateFromStores(12783)(code);
+  const tmp4 = stateFromStores(13002)(code);
   let guildId;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -519,14 +529,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   }, items2);
   let displayNoun;
   const tmp14 = getOutcomeContent;
-  const tmp2Result = tmp2(12784);
+  const tmp2Result = tmp2(13003);
   if (tmp4 != null) {
     displayNoun = tmp4.displayNoun;
   }
   if (displayNoun == null) {
     displayNoun = null;
   }
-  const obj3 = { noun: tmp2Result({ displayNoun, lowercase: true }), orgName: str, accountName: "[Account/Username]" };
+  const obj3 = { noun: tmp2Result({ displayNoun, lowercase: true }), orgName: str, characterName };
   str = undefined;
   if (tmp4 != null) {
     str = tmp4.organization.name;
@@ -543,25 +553,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OutcomeStep(
   const tmp14Result = tmp14(joinStatus, failureReason, guildJoinStatus, obj3, obj4);
   ({ subtitle, cta } = tmp14Result);
   const title = tmp14Result.title;
-  const ModalScreen = tmp6(7935).ModalScreen;
-  const ModalContent = tmp6(7936).ModalContent;
+  const ModalScreen = tmp6(7958).ModalScreen;
+  const ModalContent = tmp6(7959).ModalContent;
   const obj5 = { spacing: tmp2(587).space.PX_8, children: items3 };
-  const Stack = tmp6(6013).Stack;
+  const Stack = tmp6(6015).Stack;
   items3 = [, ];
   const obj6 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
-  items3[0] = closure_10(guildId(5270).Text, obj6);
+  items3[0] = closure_10(guildId(5271).Text, obj6);
   let tmp20Result = null != subtitle;
   if (tmp20Result) {
     const obj7 = { variant: "text-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-    tmp20Result = tmp20(tmp6(5270).Text, obj7);
+    tmp20Result = tmp20(tmp6(5271).Text, obj7);
   }
   const obj8 = { children: items4 };
   items3[1] = tmp20Result;
   items4 = [, ];
   const obj9 = { children: closure_11(Stack, obj5) };
   items4[0] = closure_10(ModalContent, obj9);
-  const obj10 = { children: closure_10(guildId(5280).Button, obj11) };
-  const ModalFooter = tmp6(12786).ModalFooter;
+  const obj10 = { children: closure_10(guildId(5281).Button, obj11) };
+  const ModalFooter = tmp6(13007).ModalFooter;
   obj11 = { text: cta.text, size: "lg", onPress: cta.onPress, disabled: tmp9 };
   items4[1] = closure_10(ModalFooter, obj10);
   return closure_11(ModalScreen, obj8);

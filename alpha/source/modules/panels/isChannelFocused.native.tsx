@@ -1,21 +1,21 @@
-// Module ID: 6837
-// Function ID: 6838
+// Module ID: 6860
+// Function ID: 6861
 // Name: isChannelFocused
-// Dependencies: [32, 19, 6807, 6838, 6839, 5188, 5186, 5187, 5189, 6840, 558, 576, 6841, 2]
+// Dependencies: [32, 19, 6830, 6861, 6862, 5189, 5187, 5188, 5190, 6863, 558, 576, 6864, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 6837 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5188 */;
-import useChatLayout from "useChatLayout" /* 5189 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6838 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6840 */;
-import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6841 */;
+// Module 6860 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5189 */;
+import useChatLayout from "useChatLayout" /* 5190 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6861 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6863 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import VoicePanelStore from "VoicePanelStore" /* 6839 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import VoicePanelStore from "VoicePanelStore" /* 6862 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -247,7 +247,7 @@ let result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.
 export { getFocusedChannelId };
 export { isChannelFocused };
 export const useIsChannelFocused = tmp2;
-export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadStateAck(channelId, arg1) {
+export function isChannelFocusedForReadStateAck(channelId, arg1) {
   if (ChannelRTCStore.getChatOpen(channelId)) {
     return true;
   } else {
@@ -261,7 +261,7 @@ export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadS
       const tmp10 = require;
       if (tmp12) {
         const rootState = rootNavigationRef.getRootState();
-        const tmp10Result = tmp10(5186);
+        const tmp10Result = tmp10(5187);
         const result = tmp10Result.coerceChannelSecondaryViewChatRoute(rootState.routes[rootState.index]);
         channelId = undefined;
         if (result != null) {
@@ -284,4 +284,4 @@ export const isChannelFocusedForReadStateAck = function isChannelFocusedForReadS
       return false;
     }
   }
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15713
+// Function ID: 15714
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1630, 15480, 15419, 5305, 5301, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1631, 15714, 15653, 5306, 5302, 2]
 
-// Module 15479 (GuildActionSheetDirectory)
+// Module 15713 (GuildActionSheetDirectory)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5301 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 15419 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 15653 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp6;
-const GuildActionSheetHeaderDefault = tmp6(15480);
+const GuildActionSheetHeaderDefault = tmp6(15714);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, actions: { paddingHorizontal: 16, gap: 24 } };

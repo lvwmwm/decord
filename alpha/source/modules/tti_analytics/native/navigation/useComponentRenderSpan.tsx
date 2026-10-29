@@ -1,14 +1,14 @@
-// Module ID: 18262
-// Function ID: 18263
+// Module ID: 18496
+// Function ID: 18497
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 558, 576, 12908, 12912, 12909, 18263, 2]
+// Dependencies: [19, 3, 558, 576, 13129, 13133, 13130, 18497, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 18262 (useComponentRenderSpan)
+// Module 18496 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12909 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 12912 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 18263 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13130 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 13133 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 18497 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let current2 = ReactCompilerGating.isReactCompilerEnabled();
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/useComponentRenderSpan.tsx");
 
-export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegionMeasurement(exclude, regionId) {
+export function useNavigationTTIRegionMeasurement(exclude, regionId) {
   let navTTISurface1;
   let tmp = current2;
   if (tmp) {
@@ -857,4 +857,4 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
     }
     let obj2 = { onLayout: callback1 };
   }
-};
+}

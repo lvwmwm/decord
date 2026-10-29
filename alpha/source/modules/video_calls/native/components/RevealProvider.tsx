@@ -1,19 +1,19 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11462
+// Function ID: 11463
 // Name: RevealProvider
-// Dependencies: [19, 5247, 5751, 10921, 21, 558, 576, 504, 10923, 11409, 1381, 5241, 5011, 10928, 11410, 2]
+// Dependencies: [19, 5248, 5753, 10956, 21, 558, 576, 504, 10958, 11463, 1381, 5242, 5012, 10963, 11464, 2]
 
-// Module 11408 (RevealProvider)
+// Module 11462 (RevealProvider)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10923 */;
-import StatusBarDefault from "StatusBar" /* 10928 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 11410 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10958 */;
+import StatusBarDefault from "StatusBar" /* 10963 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 11464 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
-import GameConsoleStore from "GameConsoleStore" /* 5751 */;
-import ChannelCallStore from "ChannelCallStore" /* 10921 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
+import GameConsoleStore from "GameConsoleStore" /* 5753 */;
+import ChannelCallStore from "ChannelCallStore" /* 10956 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp8;
 let unpackModuleId;
-const useIsActivityFocusedDefault = tmp8(11409);
+const useIsActivityFocusedDefault = tmp8(11463);
 ({ useChannelCallStore: metroRequire, focusTimeout: metroImportDefault, resetFocusTimer: metroImportAll, useIsVoiceChatFocused: c9 } = ChannelCallStore);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const context = react.createContext({ reveal: true });

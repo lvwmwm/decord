@@ -9,7 +9,7 @@ import _mod902 from "module_902" /* 902 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const showReportDialog = function showReportDialog(arg0) {
+export function showReportDialog(arg0) {
   let eventId;
   let obj3;
   let onClose;
@@ -88,4 +88,4 @@ export const showReportDialog = function showReportDialog(arg0) {
     const debug = tmp(tmp2[2]).debug;
     debug.error("[showReportDialog] Global document not defined");
   }
-};
+}

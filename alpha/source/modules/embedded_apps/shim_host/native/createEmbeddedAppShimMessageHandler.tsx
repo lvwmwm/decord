@@ -1,18 +1,18 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11562
+// Function ID: 11563
 // Name: createEmbeddedAppShimMessageHandler
-// Dependencies: [11509, 11510, 2]
+// Dependencies: [11563, 11564, 2]
 // Exports: createEmbeddedAppShimMessageHandler
 
-// Module 11508 (createEmbeddedAppShimMessageHandler)
-import bridgeProtocol from "bridgeProtocol" /* 11510 */;
+// Module 11562 (createEmbeddedAppShimMessageHandler)
+import bridgeProtocol from "bridgeProtocol" /* 11564 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, map;
 
 let result = size.fileFinishedImporting("modules/embedded_apps/shim_host/native/createEmbeddedAppShimMessageHandler.tsx");
 
-export const createEmbeddedAppShimMessageHandler = function createEmbeddedAppShimMessageHandler(id, shellBridgeSecret, arg2) {
+export function createEmbeddedAppShimMessageHandler(id, shellBridgeSecret, arg2) {
   let closure_2 = arg2;
   map = new Map();
   let obj = {
@@ -61,4 +61,4 @@ export const createEmbeddedAppShimMessageHandler = function createEmbeddedAppShi
     }
   };
   return obj;
-};
+}

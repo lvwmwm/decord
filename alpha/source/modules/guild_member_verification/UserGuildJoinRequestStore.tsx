@@ -1,14 +1,14 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5037
+// Function ID: 5038
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1389, 5037, 504, 4870, 584, 2]
+// Dependencies: [1389, 5038, 504, 4871, 584, 2]
 // Exports: joinRequestFromServer
 
-// Module 5036 (UserGuildJoinRequestStore)
+// Module 5037 (UserGuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4870 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5037 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5038 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -203,6 +203,6 @@ const userGuildJoinRequestStore = new UserGuildJoinRequestStore(DispatcherDefaul
 const result = size.fileFinishedImporting("modules/guild_member_verification/UserGuildJoinRequestStore.tsx");
 
 export default userGuildJoinRequestStore;
-export const joinRequestFromServer = function joinRequestFromServer(request) {
+export function joinRequestFromServer(request) {
   return { joinRequestId: request.join_request_id, guildId: request.guild_id, userId: request.user_id, user: request.user, createdAt: request.created_at, formResponses: request.form_responses, rejectionReason: request.rejection_reason, applicationStatus: request.application_status, actionedAt: request.actioned_at, actionedByUser: request.actioned_by_user, lastSeen: request.last_seen, interviewChannelId: request.interview_channel_id };
-};
+}

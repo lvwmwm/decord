@@ -10,11 +10,11 @@ import _mod879 from "module_879" /* 879 */;
 
 const Platform = react_native.Platform;
 
-export const shouldEnableNativeNagger = function shouldEnableNativeNagger(enableNativeNagger) {
+export function shouldEnableNativeNagger(enableNativeNagger) {
   let tmp = enableNativeNagger;
   if (typeof enableNativeNagger !== "boolean") {
     const obj = _mod879;
     tmp = !obj.isExpoGo();
   }
   return tmp;
-};
+}

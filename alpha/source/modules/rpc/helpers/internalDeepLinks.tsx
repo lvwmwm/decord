@@ -1,12 +1,12 @@
-// Module ID: 16000
-// Function ID: 16001
+// Module ID: 16237
+// Function ID: 16238
 // Name: internalDeepLinks
-// Dependencies: [32, 1383, 5692, 8899, 2]
+// Dependencies: [32, 1383, 5694, 8902, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 16000 (internalDeepLinks)
+// Module 16237 (internalDeepLinks)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import openURL from "openURL" /* 5692 */;
+import openURL from "openURL" /* 5694 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const set = new Set(["channels", "users", "events"]);
 const set1 = new Set(["", "-"]);
 const result = size.fileFinishedImporting("modules/rpc/helpers/internalDeepLinks.tsx");
 
-export const resolveInternalDeepLink = function resolveInternalDeepLink(src) {
+export function resolveInternalDeepLink(src) {
   let host;
   let hostname;
   let hostname2;
@@ -66,8 +66,8 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(src) {
     }
     return combined2;
   }
-};
-export const openInternalDeepLink = function openInternalDeepLink(internalDeepLink) {
+}
+export function openInternalDeepLink(internalDeepLink) {
   openURL.default(internalDeepLink);
   return true;
-};
+}

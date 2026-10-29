@@ -1,17 +1,17 @@
-// Module ID: 5943
-// Function ID: 5944
+// Module ID: 5945
+// Function ID: 5946
 // Name: DaveMessageValidator
 // Dependencies: [2]
 // Exports: isDaveProtocolVersionAllowed, parseDaveExecuteTransition, parseDaveInit, parseDavePrepareEpoch, parseDavePrepareTransition, parseDaveProtocolVersion, parseMLSFrameHeader, parseMLSTransitionFrame
 
-// Module 5943 (DaveMessageValidator)
+// Module 5945 (DaveMessageValidator)
 import size from "module_2" /* 2 */;
 
 const DaveSignal = { INIT: "init", EPOCH: "epoch", TRANSITION: "transition" };
 const result = size.fileFinishedImporting("modules/rtc/DaveMessageValidator.tsx");
 
 export { DaveSignal };
-export const parseDaveProtocolVersion = function parseDaveProtocolVersion(num) {
+export function parseDaveProtocolVersion(num) {
   let tmp = null;
   if (typeof num === "number") {
     const _Number = Number;
@@ -27,8 +27,8 @@ export const parseDaveProtocolVersion = function parseDaveProtocolVersion(num) {
     }
   }
   return tmp;
-};
-export const parseDaveInit = function parseDaveInit(d) {
+}
+export function parseDaveInit(d) {
   let tmp = null;
   if (typeof d === "object") {
     tmp = null;
@@ -60,8 +60,8 @@ export const parseDaveInit = function parseDaveInit(d) {
     tmp3 = tmp4;
   }
   return tmp3;
-};
-export const parseDavePrepareTransition = function parseDavePrepareTransition(d) {
+}
+export function parseDavePrepareTransition(d) {
   let tmp = null;
   if (typeof d === "object") {
     tmp = null;
@@ -116,8 +116,8 @@ export const parseDavePrepareTransition = function parseDavePrepareTransition(d)
     }
     return tmp5;
   }
-};
-export const parseDaveExecuteTransition = function parseDaveExecuteTransition(d) {
+}
+export function parseDaveExecuteTransition(d) {
   let tmp = null;
   if (typeof d === "object") {
     tmp = null;
@@ -149,8 +149,8 @@ export const parseDaveExecuteTransition = function parseDaveExecuteTransition(d)
     tmp3 = tmp4;
   }
   return tmp3;
-};
-export const parseDavePrepareEpoch = function parseDavePrepareEpoch(d) {
+}
+export function parseDavePrepareEpoch(d) {
   let tmp = null;
   if (typeof d === "object") {
     tmp = null;
@@ -197,8 +197,8 @@ export const parseDavePrepareEpoch = function parseDavePrepareEpoch(d) {
     }
     return null;
   }
-};
-export const isDaveProtocolVersionAllowed = function isDaveProtocolVersionAllowed(EPOCH, protocol_version, _latchIsStageChannelResult) {
+}
+export function isDaveProtocolVersionAllowed(EPOCH, protocol_version, _latchIsStageChannelResult) {
   let tmp = null;
   if (typeof protocol_version === "number") {
     const _Number = Number;
@@ -223,8 +223,8 @@ export const isDaveProtocolVersionAllowed = function isDaveProtocolVersionAllowe
     tmp2 = tmp3;
   }
   return tmp2;
-};
-export const parseMLSFrameHeader = function parseMLSFrameHeader(uint8Array, arg1) {
+}
+export function parseMLSFrameHeader(uint8Array, arg1) {
   let num = 0;
   if (arg1) {
     num = 2;
@@ -244,8 +244,8 @@ export const parseMLSFrameHeader = function parseMLSFrameHeader(uint8Array, arg1
     const obj = { sequenceNumber: tmp3, opcode: uint8Array[num], payload: uint8Array.subarray(sum) };
   }
   return tmp2;
-};
-export const parseMLSTransitionFrame = function parseMLSTransitionFrame(d) {
+}
+export function parseMLSTransitionFrame(d) {
   let tmp = null;
   if (d.length >= 2) {
     tmp = d[0] << 8 | d[1];
@@ -256,4 +256,4 @@ export const parseMLSTransitionFrame = function parseMLSTransitionFrame(d) {
     const obj = { transitionId: tmp, message: d.slice(2) };
   }
   return tmp2;
-};
+}

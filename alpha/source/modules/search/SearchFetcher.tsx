@@ -1,13 +1,13 @@
-// Module ID: 13493
-// Function ID: 13494
+// Module ID: 13726
+// Function ID: 13727
 // Name: SearchFetcher
-// Dependencies: [5, 4856, 1084, 1101, 3, 1294, 1490, 2]
+// Dependencies: [5, 4857, 1084, 1101, 3, 1294, 1491, 2]
 
-// Module 13493 (SearchFetcher)
+// Module 13726 (SearchFetcher)
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+import _modDef1491 from "module_1491" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ class SearchFetcher {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -88,11 +88,11 @@ class SearchFetcher {
             if (null == config) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else if (closure_130_3.isCanceled) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               if (200 === config.status) {
                 closure_130_0(config);
@@ -107,7 +107,7 @@ class SearchFetcher {
                 if (closure_130_3.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 } else {
                   const _parseInt = parseInt;
                   closure_1 = parseInt(config.headers["retry-after"]);
@@ -129,7 +129,7 @@ class SearchFetcher {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp44) {
           closure_3 = tmp44;
           if (0 === c4) {
@@ -208,7 +208,7 @@ class SearchFetcherImpl extends SearchFetcher {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: endpoint, query: obj2.stringify(this.query), oldFormErrors: true, rejectWithError };
       const get = HTTP.get;
-      obj2 = _modDef1490;
+      obj2 = _modDef1491;
       value = get(request);
     }
     return value;

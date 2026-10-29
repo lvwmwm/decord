@@ -1,15 +1,15 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15729
+// Function ID: 15730
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2055, 1084, 7526, 15496, 5246, 1125, 1264, 6498, 2]
+// Dependencies: [5, 2056, 1084, 7549, 15730, 5247, 1125, 1264, 6522, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15495 (subscriptionSettingsDeepLink)
+// Module 15729 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6498 */;
-import openUserSettings from "openUserSettings" /* 7526 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6522 */;
+import openUserSettings from "openUserSettings" /* 7549 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {
@@ -168,6 +168,6 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
 let c7 = "subscription-settings-deep-link";
 let result = size.fileFinishedImporting("modules/billing/native/subscriptionSettingsDeepLink.tsx");
 
-export const openSubscriptionSettingsFromDeepLink = function openSubscriptionSettingsFromDeepLink() {
+export function openSubscriptionSettingsFromDeepLink() {
   return obj(...arguments);
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12414
+// Function ID: 12415
 // Name: ConjureTodoAgents
-// Dependencies: [12346, 2]
+// Dependencies: [12400, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 12360 (ConjureTodoAgents)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12346 */;
+// Module 12414 (ConjureTodoAgents)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12400 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -13,7 +13,7 @@ let map;
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoAgents.tsx");
 
 export const MAX_SHOWN_AGENTS = 3;
-export const runningTodoAgents = function runningTodoAgents(tasks) {
+export function runningTodoAgents(tasks) {
   let obj;
   let taskId;
   const items = [];
@@ -34,8 +34,8 @@ export const runningTodoAgents = function runningTodoAgents(tasks) {
     continue;
   }
   return items;
-};
-export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
+}
+export function groupAgentsByTodo(cResult) {
   map = new Map();
   const iter = cResult[Symbol.iterator]();
   const nextResult = iter.next();
@@ -56,8 +56,8 @@ export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
     continue;
   }
   return map;
-};
-export const splitAgentOverflow = function splitAgentOverflow(agents) {
+}
+export function splitAgentOverflow(agents) {
   let obj;
   let num = arg1;
   if (arg1 === undefined) {
@@ -70,4 +70,4 @@ export const splitAgentOverflow = function splitAgentOverflow(agents) {
     obj = { shown: agents.slice(0, num), overflow: agents.length - num };
   }
   return obj;
-};
+}

@@ -1,12 +1,11 @@
 // Module ID: 10305
 // Function ID: 10306
-// Dependencies: [41, 42, 93, 95, 98, 10273, 10255, 10254, 10256]
+// Dependencies: [41, 42, 93, 95, 98, 10306, 10288, 10289]
 
 // Module 10305
-import Meridiem from "Meridiem" /* 10254 */;
-import assignSimilarDate from "assignSimilarDate" /* 10255 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10256 */;
-import now2 from "now" /* 10273 */;
+import assignSimilarDate from "assignSimilarDate" /* 10288 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10289 */;
+import now2 from "now" /* 10306 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -86,7 +85,7 @@ if (!tmp4) {
 let closure_8 = tmp4;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function c(arg0) {
+  fn = function i(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -126,12 +125,13 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-class FRCasualDateParser {
+const re10 = /(now|today|tonight|tomorrow|overmorrow|tmr|tmrw|yesterday|last\s*night)(?=\W|$)/i;
+class ENCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRCasualDateParser);
-    const obj = _getPrototypeOf(FRCasualDateParser);
+    _classCallCheck(this, ENCasualDateParser);
+    const obj = _getPrototypeOf(ENCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -143,11 +143,11 @@ class FRCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
+    return re10;
   }
 };
 let items = [
@@ -155,36 +155,51 @@ let items = [
   {
     key: "innerExtract",
     value: function innerExtract(refDate, arg1) {
+      let nowResult;
       refDate = refDate.refDate;
       const str = arg1[0];
       const str2 = str.toLowerCase();
       const parsingComponents = refDate.createParsingComponents();
-      if ("maintenant" === str2) {
-        return now.now(refDate.reference);
-      } else if ("aujourd'hui" === str2) {
-        return now.today(refDate.reference);
-      } else if ("hier" === str2) {
-        return now.yesterday(refDate.reference);
-      } else if ("demain" === str2) {
-        return now.tomorrow(refDate.reference);
+      if ("now" === str2) {
+        nowResult = now.now(refDate.reference);
+      } else if ("today" === str2) {
+        nowResult = now.today(refDate.reference);
+      } else if ("yesterday" === str2) {
+        nowResult = now.yesterday(refDate.reference);
       } else {
-        if (str2.match(/cette\s*nuit/)) {
-          assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
-          parsingComponents.imply("hour", 22);
-          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        } else if (str2.match(/la\s*veille/)) {
-          const _Date = Date;
-          const self = this;
-          self2 = this;
-          const date = new Date(refDate.getTime());
-          date.setDate(date.getDate() - 1);
-          assignSimilarDate.assignSimilarDate(parsingComponents, date);
-          parsingComponents.imply("hour", 0);
+        if ("tomorrow" !== str2) {
+          if ("tmr" !== str2) {
+            if ("tmrw" !== str2) {
+              if ("tonight" === str2) {
+                nowResult = now.tonight(refDate.reference);
+              } else if ("overmorrow" === str2) {
+                nowResult = now.theDayAfter(refDate.reference, 2);
+              } else {
+                nowResult = parsingComponents;
+                if (str2.match(/last\s*night/)) {
+                  let tmp = refDate;
+                  if (refDate.getHours() > 6) {
+                    const _Date = Date;
+                    const self = this;
+                    self2 = this;
+                    const date = new Date(refDate.getTime());
+                    date.setDate(date.getDate() - 1);
+                    tmp = date;
+                  }
+                  assignSimilarDate.assignSimilarDate(parsingComponents, tmp);
+                  parsingComponents.imply("hour", 0);
+                  nowResult = parsingComponents;
+                }
+              }
+            }
+          }
         }
-        return parsingComponents;
+        nowResult = now.tomorrow(refDate.reference);
       }
+      nowResult.addTag("parser/ENCasualDateParser");
+      return nowResult;
     }
   }
 ];
 
-export default _createClass(FRCasualDateParser, items);
+export default _createClass(ENCasualDateParser, items);

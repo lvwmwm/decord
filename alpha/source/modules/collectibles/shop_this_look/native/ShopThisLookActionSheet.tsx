@@ -1,26 +1,26 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14746
+// Function ID: 14747
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 8746, 5302, 7340, 21, 5004, 587, 9397, 5699, 1125, 558, 576, 9507, 504, 14513, 7696, 14515, 14134, 9462, 8743, 14516, 7289, 7314, 5246, 7684, 5270, 11115, 2]
+// Dependencies: [19, 17, 8749, 5303, 7364, 21, 5005, 587, 9428, 5701, 1125, 558, 576, 9539, 504, 14747, 7719, 14749, 14367, 9493, 8746, 14750, 7313, 7338, 5247, 7707, 5271, 11169, 2]
 
-// Module 14512 (ShopThisLookActionSheet)
+// Module 14746 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import Constants from "Constants" /* 7340 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 9397 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 14513 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14515 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import Constants from "Constants" /* 7364 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 9428 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 14747 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14749 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StorefrontProductStore_mod from "StorefrontProductStore" /* 8746 */;
+import StorefrontProductStore_mod from "StorefrontProductStore" /* 8749 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -279,7 +279,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(9507);
+  let obj = skuId(9539);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -322,7 +322,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         const _Math = Math;
         const variants = tmp.variants;
         const bound = Math.max(0, variants.findIndex((skuId) => skuId.skuId === skuId));
-        const tmp2Result = tmp2(7696);
+        const tmp2Result = tmp2(7719);
         return tmp2Result.getSelectedProduct(c2, bound);
       } else {
         return c2;
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(9397), obj3);
+    tmp22 = closure_9(onPress(9428), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -369,7 +369,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(14134), obj5), ];
+        items7 = [closure_9(onPress(14367), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -377,13 +377,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(9462), obj6);
+          tmp19Result = tmp19(tmp20(9493), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(9397).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(14134);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(9428).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(14367);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -637,10 +637,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLo
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(14516)(obj2));
-  analyticsLocations(14516)(obj2);
-  const tmp3 = analyticsLocations(7289);
-  analyticsLocations = tmp3(analyticsLocations(7314).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(14750)(obj2));
+  analyticsLocations(14750)(obj2);
+  const tmp3 = analyticsLocations(7313);
+  analyticsLocations = tmp3(analyticsLocations(7338).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = react.useCallback((initialProductSkuId) => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -651,9 +651,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLo
   }, items);
   let obj3 = { value: items1, children: closure_9(tmp4, obj4) };
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
-  items1 = [analyticsLocations(7314).SHOP_THIS_LOOK_ACTION_SHEET];
+  items1 = [analyticsLocations(7338).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(11115);
+  tmp4 = analyticsLocations(11169);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

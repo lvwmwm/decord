@@ -1,24 +1,24 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12395
+// Function ID: 12396
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 10734, 12342, 10733, 6808, 1084, 510, 10237, 12343, 12344, 1125, 3863, 1294, 584, 10757, 10756, 2]
-// Exports: keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
+// Dependencies: [109, 5, 10808, 12396, 10807, 6831, 1084, 510, 10270, 12397, 12398, 1125, 3864, 1294, 584, 10832, 10831, 2]
+// Exports: getHeldConjurePromptGuildId, keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 12341 (conjureScopeSetup)
+// Module 12395 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12343 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12344 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12397 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12398 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureChatStore from "ConjureChatStore" /* 10734 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12342 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10733 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureChatStore from "ConjureChatStore" /* 10808 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12396 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10807 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, closure_3, closure_4, set;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f115053 = function*(arg0, value) {
+const f116292 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -38,7 +38,7 @@ const f115053 = function*(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     let c3;
@@ -76,7 +76,7 @@ const f115053 = function*(arg0, value) {
       } else {
         c3 = 0;
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } catch (tmp14) {
       closure_2 = tmp14;
@@ -161,7 +161,7 @@ let obj = function _putInstallScope() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ let obj = function _putInstallScope() {
             obj = closure_132_1(closure_132_2[14]);
             obj.dispatch(obj9);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp14) {
           c6 = 3;
@@ -228,13 +228,25 @@ const map = new Map();
 const map1 = new Map();
 let result = size.fileFinishedImporting("modules/conjure/scope_setup/conjureScopeSetup.tsx");
 
-export const startConjurePrompt = function startConjurePrompt(arg0, trimmed) {
+export function getHeldConjurePromptGuildId(arg0) {
+  const Storage = Storage6.Storage;
+  obj = Storage.get(ConjureHeldPrompts);
+  if (obj == null) {
+    obj = {};
+  }
+  let guildId;
+  if (obj[arg0] != null) {
+    guildId = tmp.guildId;
+  }
+  return guildId;
+}
+export function startConjurePrompt(value, trimmed, arg2, guildId) {
   let tmp5Result;
   let items = arg2;
   if (arg2 === undefined) {
     items = [];
   }
-  const project = ConjureProjectStore.getProject(arg0);
+  const project = ConjureProjectStore.getProject(value);
   let install_scope_setup;
   if (project != null) {
     install_scope_setup = project.install_scope_setup;
@@ -251,15 +263,15 @@ export const startConjurePrompt = function startConjurePrompt(arg0, trimmed) {
     }
     const obj2 = {};
     const merged = Object.assign(obj);
-    const obj3 = { message: trimmed, attachments: items, nonce: tmp5Result.createNonce() };
-    obj2[arg0] = obj3;
-    tmp5Result = tmp5(10237);
+    const obj3 = { message: trimmed, attachments: items, nonce: tmp5Result.createNonce(), guildId };
+    obj2[value] = obj3;
+    tmp5Result = tmp5(10270);
     const result = set(tmp7, obj2);
   } else {
-    metroImportAll(arg0, trimmed, items);
+    metroImportAll(value, trimmed, items);
   }
-};
-export const reconcileHeldConjurePrompt = function reconcileHeldConjurePrompt(projectId, fn) {
+}
+export function reconcileHeldConjurePrompt(projectId, fn) {
   const Storage = Storage6.Storage;
   obj = Storage.get(ConjureHeldPrompts);
   if (obj == null) {
@@ -334,8 +346,8 @@ export const reconcileHeldConjurePrompt = function reconcileHeldConjurePrompt(pr
       }
     }
   }
-};
-export const serverQuestionFields = function serverQuestionFields(conjureEligibleGuilds, guild_id) {
+}
+export function serverQuestionFields(conjureEligibleGuilds, guild_id) {
   let intl;
   let items;
   let closure_0 = guild_id;
@@ -343,7 +355,7 @@ export const serverQuestionFields = function serverQuestionFields(conjureEligibl
     return {};
   } else {
     const found = conjureEligibleGuilds.find((id) => id.id === closure_0);
-    const obj2 = { input: "server", note: intl.string(_modDef3863.SU9K9U) };
+    const obj2 = { input: "server", note: intl.string(_modDef3864.SU9K9U) };
     intl = intl2.intl;
     if (null != found) {
       const obj4 = { default_entities: items };
@@ -357,22 +369,22 @@ export const serverQuestionFields = function serverQuestionFields(conjureEligibl
     const merged = Object.assign(obj);
     return obj2;
   }
-};
-export const ownerOnlyClarification = function ownerOnlyClarification(memo) {
+}
+export function ownerOnlyClarification(memo) {
   let questions;
   obj = {
     id: memo.id,
     questions: questions.map((id) => {
       let intl;
-      obj = { id: id.id, question: id.question, recommendation_reason: "", options: [], allow_custom: false, note: intl.string(_modDef3863.ZKPaWY) };
+      obj = { id: id.id, question: id.question, recommendation_reason: "", options: [], allow_custom: false, note: intl.string(_modDef3864.ZKPaWY) };
       intl = intl2.intl;
       return obj;
     })
   };
   questions = memo.questions;
   return obj;
-};
-export const settleConjureInstallScope = function settleConjureInstallScope(arg0, arg1, arg2) {
+}
+export function settleConjureInstallScope(arg0, arg1, arg2) {
   let closure_0 = arg0;
   let closure_2 = arg2;
   const combined = "settle:" + arg0;
@@ -388,7 +400,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -445,7 +457,7 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -462,12 +474,12 @@ export const settleConjureInstallScope = function settleConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f115053)();
+    value = tmp2(f116292)();
   }
   const result = obj.set(combined, value);
   return value;
-};
-export const switchConjureInstallScope = function switchConjureInstallScope(arg0, id, arg2, arg3) {
+}
+export function switchConjureInstallScope(arg0, id, arg2, arg3) {
   let closure_0 = arg0;
   let closure_2 = arg3;
   const combined = "switch:" + arg0 + ":" + id;
@@ -482,7 +494,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -519,7 +531,7 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
           const intl = tmp(c2[11]).intl;
           if (closure_1_8(closure_129_0, intl.string(prop))) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else {
             const _Error = Error;
             const self = this;
@@ -538,12 +550,12 @@ export const switchConjureInstallScope = function switchConjureInstallScope(arg0
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f115053)();
+    value = tmp2(f116292)();
   }
   const result = obj.set(combined, value);
   return value;
-};
-export const keepConjureInstallScope = function keepConjureInstallScope(projectId) {
+}
+export function keepConjureInstallScope(projectId) {
   obj = conjureProjectSockets;
   return obj.sendOnConjureSocket(projectId, "keep install scope", (sendKeepInstallScope) => sendKeepInstallScope.sendKeepInstallScope());
-};
+}

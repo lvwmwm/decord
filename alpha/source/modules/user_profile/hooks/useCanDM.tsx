@@ -1,16 +1,16 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13485
+// Function ID: 13486
 // Name: useCanDM
-// Dependencies: [7766, 4937, 502, 4916, 4946, 4832, 558, 576, 504, 2]
+// Dependencies: [7788, 4938, 502, 4917, 4947, 4833, 558, 576, 504, 2]
 // Exports: canDm
 
-// Module 13251 (useCanDM)
-import UserSettings from "UserSettings" /* 4832 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7766 */;
-import LurkingStore from "LurkingStore" /* 4937 */;
+// Module 13485 (useCanDM)
+import UserSettings from "UserSettings" /* 4833 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
+import LurkingStore from "LurkingStore" /* 4938 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanDM(a
   }
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const RestrictedGuildIds = tmp(4832).RestrictedGuildIds;
+  const RestrictedGuildIds = tmp(4833).RestrictedGuildIds;
   setting = RestrictedGuildIds.useSetting();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class F {
@@ -180,10 +180,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanDM(a
     return tmp;
   });
 });
-const result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
+let result = size.fileFinishedImporting("modules/user_profile/hooks/useCanDM.tsx");
 
 export default tmp2;
-export const canDm = function canDm(userId, guildId) {
+export function canDm(userId, guildId) {
   let isLurkingResult = null != guildId;
   const id = AuthenticationStore.getId();
   if (isLurkingResult) {
@@ -202,6 +202,7 @@ export const canDm = function canDm(userId, guildId) {
     tmp8 = isFriendResult;
   }
   if (!tmp8) {
+    let tmp10 = GameRelationshipStore;
     let setting = GameRelationshipStore.getGameFriendsForUser(userId).length > 0;
     if (setting) {
       const AllowGameFriendDmsInDiscord = UserSettings.AllowGameFriendDmsInDiscord;
@@ -210,4 +211,4 @@ export const canDm = function canDm(userId, guildId) {
     tmp8 = setting;
   }
   return tmp8;
-};
+}

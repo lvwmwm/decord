@@ -1,17 +1,17 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 18063
+// Function ID: 18064
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1389, 8306, 21, 1381, 5004, 587, 558, 576, 504, 8691, 9258, 5270, 2]
+// Dependencies: [19, 17, 1389, 8328, 21, 1381, 5005, 587, 558, 576, 504, 8694, 9262, 5271, 2]
 
-// Module 17825 (VoiceGuildTag)
+// Module 18063 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 8306 */;
+import GuildTagConstants from "GuildTagConstants" /* 8328 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,8 +84,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     const _Symbol = Symbol;
     let primaryGuild1;
     const forResult = Symbol.for("react.early_return_sentinel");
-    const getUserPrimaryGuild = userId(8691).getUserPrimaryGuild;
-    userId(8691);
+    const getUserPrimaryGuild = userId(8694).getUserPrimaryGuild;
+    userId(8694);
     if (stateFromStores != null) {
       primaryGuild1 = stateFromStores.primaryGuild;
     }
@@ -96,7 +96,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != guildId) {
       tmp20 = null;
       if (null != tag) {
-        const tmpResult4 = userId(8691);
+        const tmpResult4 = userId(8694);
         guildTagBadgeUrl = tmpResult4.getGuildTagBadgeUrl(guildId, tmp19, GuildTagBadgeSize.SIZE_12);
         tmp20 = forResult;
       }
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (cResult[8] !== tmp12) {
       const obj2 = { source: obj3, size: GuildTagBadgeSize.SIZE_12 };
       obj3 = { uri: tmp12 };
-      const tmp27 = closure_5(userId(9258).GuildTagBadge, obj2);
+      const tmp27 = closure_5(userId(9262).GuildTagBadge, obj2);
       cResult[8] = tmp12;
       cResult[9] = tmp27;
       tmp24 = tmp27;
@@ -167,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
       tmp31 = tmp34;
     }
     const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.tag, children: tmp14 };
-    const tmp30 = closure_5(userId(5270).Text, obj6);
+    const tmp30 = closure_5(userId(5271).Text, obj6);
     cResult[10] = tmp4.tag;
     cResult[11] = tmp14;
     cResult[12] = tmp30;
@@ -186,8 +186,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8691).getUserPrimaryGuild;
-  userId(8691);
+  const getUserPrimaryGuild = userId(8694).getUserPrimaryGuild;
+  userId(8694);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -197,13 +197,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8691);
+      const tmp2Result = userId(8694);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(9258).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(9262).GuildTagBadge, obj4), ];
       const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5270).Text, obj6);
+      items2[1] = closure_5(userId(5271).Text, obj6);
       return closure_5(View, obj2);
     }
   }

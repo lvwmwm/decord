@@ -1,23 +1,23 @@
-// Module ID: 16584
-// Function ID: 16585
+// Module ID: 16822
+// Function ID: 16823
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 5005, 6745, 21, 5004, 587, 5242, 5245, 558, 576, 5085, 5294, 16585, 16588, 16566, 504, 16567, 9880, 2]
+// Dependencies: [19, 17, 5006, 6768, 21, 5005, 587, 5243, 5246, 558, 576, 5086, 5295, 16823, 16826, 16804, 504, 16805, 9912, 2]
 
-// Module 16584 (BountiesScrollEndCard)
+// Module 16822 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5242 */;
-import timingPresets from "timingPresets" /* 5245 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9880 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16566 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16567 */;
+import timing from "timing" /* 5243 */;
+import timingPresets from "timingPresets" /* 5246 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9912 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16804 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16805 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   isScrollingInBoundsSharedValue = isScrollingInBoundsSharedValue.isScrollingInBoundsSharedValue;
   ({ sourceQuestContent, opacityStyle } = isScrollingInBoundsSharedValue);
   const tmp3 = closure_10();
-  let obj2 = isActive(5085);
+  let obj2 = isActive(5086);
   const fn = function t() {
     let value;
     const obj = isScrollingInBoundsSharedValue;
@@ -100,10 +100,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     const obj2 = { opacity: withTiming(num, timingPresets.timingStandard) };
     return obj2;
   };
-  fn.__closure = { isScrollingInBoundsSharedValue, withTiming: isActive(5242).withTiming, isActive, timingStandard: isActive(5245).timingStandard };
+  fn.__closure = { isScrollingInBoundsSharedValue, withTiming: isActive(5243).withTiming, isActive, timingStandard: isActive(5246).timingStandard };
   fn.__workletHash = 4903386092677;
   fn.__initData = __initData;
-  ({ isScrollingInBoundsSharedValue, withTiming: isActive(5242).withTiming, isActive, timingStandard: isActive(5245).timingStandard });
+  ({ isScrollingInBoundsSharedValue, withTiming: isActive(5243).withTiming, isActive, timingStandard: isActive(5246).timingStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === opacityStyle) {
     let tmp11;
@@ -125,8 +125,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
     if (cResult[6] !== tmp3.backdropGradient) {
       const obj5 = { colors: tmp11, style: tmp3.backdropGradient, pointerEvents: "none" };
       cResult[6] = tmp3.backdropGradient;
-      cResult[7] = closure_8(isScrollingInBoundsSharedValue(5294), obj5);
-      const tmp15 = closure_8(isScrollingInBoundsSharedValue(5294), obj5);
+      cResult[7] = closure_8(isScrollingInBoundsSharedValue(5295), obj5);
+      const tmp15 = closure_8(isScrollingInBoundsSharedValue(5295), obj5);
     }
     if (cResult[8] === animatedStyle) {
       if (cResult[11] === bounty) {
@@ -160,16 +160,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
           cResult[17] = sourceQuestContent;
           cResult[18] = !isActive;
           cResult[19] = visible;
-          cResult[20] = closure_8(isScrollingInBoundsSharedValue(16588), obj6);
-          const tmp27 = closure_8(isScrollingInBoundsSharedValue(16588), obj6);
+          cResult[20] = closure_8(isScrollingInBoundsSharedValue(16826), obj6);
+          const tmp27 = closure_8(isScrollingInBoundsSharedValue(16826), obj6);
         }
       }
       const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
       cResult[11] = bounty;
       cResult[12] = sourceQuestContent;
       cResult[13] = !isActive;
-      cResult[14] = closure_8(isScrollingInBoundsSharedValue(16585), obj7);
-      const tmp21 = closure_8(isScrollingInBoundsSharedValue(16585), obj7);
+      cResult[14] = closure_8(isScrollingInBoundsSharedValue(16823), obj7);
+      const tmp21 = closure_8(isScrollingInBoundsSharedValue(16823), obj7);
     }
     const items1 = [tmp3.overlayContent, animatedStyle];
     cResult[8] = animatedStyle;
@@ -195,7 +195,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const sourceQuestContent = isScrollingInBoundsSharedValue.sourceQuestContent;
   ({ visible, opacityStyle } = isScrollingInBoundsSharedValue);
   const tmp = closure_10();
-  let obj = isActive(5085);
+  let obj = isActive(5086);
   class S {
     constructor() {
       let value;
@@ -216,7 +216,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
       return obj2;
     }
   }
-  let obj2 = { isScrollingInBoundsSharedValue, withTiming: isActive(5242).withTiming, isActive, timingStandard: isActive(5245).timingStandard };
+  let obj2 = { isScrollingInBoundsSharedValue, withTiming: isActive(5243).withTiming, isActive, timingStandard: isActive(5246).timingStandard };
   S.__closure = obj2;
   S.__workletHash = 6897254818210;
   S.__initData = __initData2;
@@ -224,17 +224,17 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const obj3 = { style: items, pointerEvents: "box-none", children: items1 };
   items = [tmp.container, opacityStyle];
   const obj4 = { style: tmp.backdropTint, pointerEvents: "none" };
-  const View = isScrollingInBoundsSharedValue(5085).View;
+  const View = isScrollingInBoundsSharedValue(5086).View;
   items1 = [closure_8(closure_5, obj4), , ];
   const obj5 = { colors: ["rgba(0, 0, 0, 0.48)", "rgba(0, 0, 0, 0.8)"], style: tmp.backdropGradient, pointerEvents: "none" };
-  items1[1] = closure_8(isScrollingInBoundsSharedValue(5294), obj5);
+  items1[1] = closure_8(isScrollingInBoundsSharedValue(5295), obj5);
   const obj6 = { style: items2, pointerEvents: "box-none", children: items3 };
   items2 = [tmp.overlayContent, animatedStyle];
-  const View2 = isScrollingInBoundsSharedValue(5085).View;
+  const View2 = isScrollingInBoundsSharedValue(5086).View;
   items3 = [, ];
   const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
-  items3[0] = closure_8(isScrollingInBoundsSharedValue(16585), obj7);
-  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16588), obj9) };
+  items3[0] = closure_8(isScrollingInBoundsSharedValue(16823), obj7);
+  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16826), obj9) };
   obj9 = {
     bounty,
     visible,

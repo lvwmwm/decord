@@ -1,20 +1,20 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17435
+// Function ID: 17436
 // Name: UserSettingsDebugLogsActionSheet
-// Dependencies: [19, 21, 558, 576, 7284, 1125, 7023, 6939, 7020, 7021, 1199, 7334, 5246, 2]
+// Dependencies: [19, 21, 558, 576, 7308, 1125, 7047, 6963, 7044, 7045, 1199, 7358, 5247, 2]
 // Exports: openUserSettingsDebugLogsFiltersActionSheet
 
-// Module 17196 (UserSettingsDebugLogsActionSheet)
+// Module 17435 (UserSettingsDebugLogsActionSheet)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import TableRadioRow3 from "TableRadioRow" /* 7020 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7021 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7284 */;
-import ActionSheet2 from "ActionSheet" /* 7334 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import TableRadioRow3 from "TableRadioRow" /* 7044 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7045 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
+import ActionSheet2 from "ActionSheet" /* 7358 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,7 +44,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSet
   ({ sortOrder, onSortOrderChanged, onRefresh } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl6.t["+B9e11"]) };
-    const BottomSheetTitleHeader = tmp(7284).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
     intl = tmp(1125).intl;
     const tmp6 = _false(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
@@ -62,7 +62,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSet
   }
   if (cResult[2] !== onRefresh) {
     const obj3 = { hasIcons: false, children: _false(TableRow2.TableRow, obj4) };
-    const TableRowGroup = tmp(7023).TableRowGroup;
+    const TableRowGroup = tmp(7047).TableRowGroup;
     obj4 = { label: tmp7, onPress: onRefresh };
     const tmp11 = _false(TableRowGroup, obj3);
     cResult[2] = onRefresh;
@@ -81,7 +81,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSet
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { label: intl4.string(intl6.t.eoXe0r), value: "newest" };
-    const TableRadioRow = tmp(7020).TableRadioRow;
+    const TableRadioRow = tmp(7044).TableRadioRow;
     intl4 = tmp(1125).intl;
     const tmp16 = _false(TableRadioRow, obj5);
     cResult[5] = tmp16;
@@ -91,7 +91,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSet
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { label: intl5.string(intl6.t.mmeWUF), value: "oldest" };
-    const TableRadioRow2 = tmp(7020).TableRadioRow;
+    const TableRadioRow2 = tmp(7044).TableRadioRow;
     intl5 = tmp(1125).intl;
     const tmp19 = _false(TableRadioRow2, obj6);
     cResult[6] = tmp19;
@@ -179,8 +179,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSet
 });
 const result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsDebugLogsActionSheet.tsx");
 
-export const openUserSettingsDebugLogsFiltersActionSheet = function openUserSettingsDebugLogsFiltersActionSheet(arg0) {
+export function openUserSettingsDebugLogsFiltersActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { default: closure_5 };
   obj.openLazy(Promise.resolve(obj2), "UserSettingsDebugLogsFiltersActionSheet", arg0);
-};
+}

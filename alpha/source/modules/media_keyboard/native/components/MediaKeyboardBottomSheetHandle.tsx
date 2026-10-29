@@ -1,14 +1,14 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 10493
+// Function ID: 10494
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 558, 576, 8796, 1125, 8947, 2]
+// Dependencies: [19, 21, 558, 576, 8799, 1125, 8950, 2]
 
-// Module 10460 (MediaKeyboardBottomSheetHandle)
+// Module 10493 (MediaKeyboardBottomSheetHandle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8796 */;
-import native from "native" /* 8947 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8799 */;
+import native from "native" /* 8950 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

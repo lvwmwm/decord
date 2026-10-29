@@ -1,27 +1,27 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14674
+// Function ID: 14675
 // Name: DynamicLinkTemplates
 // Dependencies: [2]
 // Exports: getChannelDynamicLinkTemplate, getDefaultDynamicLinkTemplate, getGuildTemplateDynamicLinkTemplate, getInviteDynamicLinkTemplate
 
-// Module 14440 (DynamicLinkTemplates)
+// Module 14674 (DynamicLinkTemplates)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/dynamic-links/DynamicLinkTemplates.tsx");
 
-export const getInviteDynamicLinkTemplate = function getInviteDynamicLinkTemplate(baseCode) {
+export function getInviteDynamicLinkTemplate(baseCode) {
   return "" + location.protocol + "//" + window.GLOBAL_ENV.INVITE_HOST + "/" + baseCode;
-};
-export const getGuildTemplateDynamicLinkTemplate = function getGuildTemplateDynamicLinkTemplate(arg0) {
+}
+export function getGuildTemplateDynamicLinkTemplate(arg0) {
   return "" + location.protocol + "//" + window.GLOBAL_ENV.GUILD_TEMPLATE_HOST + "/" + arg0;
-};
-export const getDefaultDynamicLinkTemplate = function getDefaultDynamicLinkTemplate() {
+}
+export function getDefaultDynamicLinkTemplate() {
   return "" + location.protocol + "//" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/channels/@me";
-};
-export const getChannelDynamicLinkTemplate = function getChannelDynamicLinkTemplate(arg0) {
+}
+export function getChannelDynamicLinkTemplate(arg0) {
   let str = arg0;
   if (!arg0) {
     str = "@me";
   }
   return "" + protocol + "//" + WEBAPP_ENDPOINT + "/channels/" + str;
-};
+}

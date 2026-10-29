@@ -14,7 +14,7 @@ let _require, c2;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const re3 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
 
-export const addContextToFrame = function addContextToFrame(arr, lineno) {
+export function addContextToFrame(arr, lineno) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 5;
@@ -46,8 +46,8 @@ export const addContextToFrame = function addContextToFrame(arr, lineno) {
       return obj.snipLine(item, 0);
     });
   }
-};
-export const addExceptionMechanism = function addExceptionMechanism(exception, data) {
+}
+export function addExceptionMechanism(exception, data) {
   exception = exception.exception;
   let first;
   if (exception != null) {
@@ -75,8 +75,8 @@ export const addExceptionMechanism = function addExceptionMechanism(exception, d
       }
     }
   }
-};
-export const addExceptionTypeValue = function addExceptionTypeValue(exception, arg1, arg2) {
+}
+export function addExceptionTypeValue(exception, arg1, arg2) {
   const tmp = exception.exception || {};
   exception.exception = tmp;
   const tmp2 = tmp.values || [];
@@ -89,8 +89,8 @@ export const addExceptionTypeValue = function addExceptionTypeValue(exception, a
   if (!iter.type) {
     iter.type = arg2 || "Error";
   }
-};
-export const checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry_captured__) {
+}
+export function checkOrSetAlreadyCaught(__sentry_captured__) {
   function isAlreadyCaptured(__sentry_captured__) {
     try {
       return __sentry_captured__.__sentry_captured__;
@@ -107,8 +107,8 @@ export const checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry
     }
     return false;
   }
-};
-export const getEventDescription = function getEventDescription(exception) {
+}
+export function getEventDescription(exception) {
   let event_id;
   let message;
   ({ message, event_id } = exception);
@@ -139,8 +139,8 @@ export const getEventDescription = function getEventDescription(exception) {
     }
     return tmp3;
   }
-};
-export const parseSemver = function parseSemver(str) {
+}
+export function parseSemver(str) {
   let tmp5;
   let tmp6;
   let tmp7;
@@ -177,8 +177,8 @@ export const parseSemver = function parseSemver(str) {
     tmp7 = _parseInt3Result;
   }
   return obj;
-};
-export const uuid4 = function uuid4() {
+}
+export function uuid4() {
   let closure_0;
   function getCrypto() {
     const GLOBAL_OBJ = closure_0(dependencyMap[0]).GLOBAL_OBJ;
@@ -212,4 +212,4 @@ export const uuid4 = function uuid4() {
     }
   } catch (err) {
   }
-};
+}

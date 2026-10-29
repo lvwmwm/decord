@@ -1,13 +1,13 @@
-// Module ID: 11418
-// Function ID: 11419
+// Module ID: 11472
+// Function ID: 11473
 // Name: usePipDimensions
-// Dependencies: [19, 558, 576, 11419, 1496, 8857, 2]
+// Dependencies: [19, 558, 576, 11473, 1497, 8860, 2]
 
-// Module 11418 (usePipDimensions)
+// Module 11472 (usePipDimensions)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import DeviceOrientation from "DeviceOrientation" /* 8857 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 11419 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import DeviceOrientation from "DeviceOrientation" /* 8860 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 11473 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipDime
   ({ width, height } = useWindowDimensionsDefault());
   let tmp8 = width > height;
   useWindowDimensionsDefault();
-  let tmp9 = tmp4 === tmp(8857).OrientationType.LANDSCAPE;
+  let tmp9 = tmp4 === tmp(8860).OrientationType.LANDSCAPE;
   if (!tmp9) {
     tmp9 = tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
     tmp8 && tmp4 !== DeviceOrientation.OrientationType.PORTRAIT;
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipDime
     let tmp3 = width > height;
     let tmp7 = forcedOrientation === DeviceOrientation.OrientationType.LANDSCAPE;
     if (!tmp7) {
-      tmp7 = tmp3 && tmp4 !== tmp5(8857).OrientationType.PORTRAIT;
+      tmp7 = tmp3 && tmp4 !== tmp5(8860).OrientationType.PORTRAIT;
       tmp3 && forcedOrientation !== DeviceOrientation.OrientationType.PORTRAIT;
     }
     height = 96;

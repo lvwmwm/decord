@@ -1,157 +1,787 @@
 // Module ID: 11972
 // Function ID: 11973
-// Dependencies: []
+// Dependencies: [32, 11967, 11968, 11966, 11960]
+// Exports: fromJSONSchema
 
 // Module 11972
-let items;
-let items1;
-let items10;
-let items11;
-let items12;
-let items13;
-let items14;
-let items15;
-let items16;
-let items17;
-let items18;
-let items19;
-let items2;
-let items20;
-let items21;
-let items22;
-let items23;
-let items24;
-let items25;
-let items26;
-let items27;
-let items28;
-let items29;
-let items3;
-let items4;
-let items5;
-let items6;
-let items7;
-let items8;
-let items9;
-let obj10;
-let obj11;
-let obj15;
-let obj16;
-let obj17;
-let obj20;
-let obj21;
-let obj25;
-let obj26;
-let obj27;
-let obj3;
-let obj30;
-let obj31;
-let obj35;
-let obj36;
-let obj37;
-let obj40;
-let obj41;
-let obj45;
-let obj46;
-let obj5;
-let obj6;
-let obj7;
-let point;
-let point1;
-let point2;
-let point3;
-const obj2 = { ty: 3, nm: "Trinkets Null", sr: 1, st: 0, op: 180, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj3, ef: [], ind: 1 };
-const obj = { nm: "entrypoint_anim", ddd: 0, h: 100, w: 100, meta: { g: "@lottiefiles/toolkit-js 0.33.2" }, layers: items, v: "5.12.1", fr: 60, op: 210, ip: 0, assets: [] };
-items = [obj2, , , , , ];
-const obj4 = { ty: 4, nm: "L2", sr: 1, st: 0, op: 180, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj5, ef: [], shapes: items7, ind: 2, parent: 1 };
-obj5 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: obj6, sk: { a: 0, k: 0 }, p: point, r: { a: 0, k: 0, ix: 10 }, sa: { a: 0, k: 0 }, o: { a: 0, k: 100, ix: 11 } };
-obj6 = { a: 1, k: items1, ix: 6 };
-items1 = [{ o: { x: 0.167, y: 0 }, i: { x: 0.502, y: 1 }, s: [0, 0, 100], t: 80 }, { o: { x: 0.507, y: 0 }, i: { x: 0.833, y: 1 }, s: [100, 100, 100], t: 100 }, { s: [0, 0, 100], t: 120 }];
-point = { s: true, x: { a: 0, k: -13.333, ix: 3 }, y: obj7, z: { a: 0, k: 0 } };
-obj7 = { a: 1, k: items2, ix: 4 };
-items2 = [{ o: { x: 0.333, y: 0 }, i: { x: 0.667, y: 1 }, s: [27.662], t: 80 }, { s: [2.662], t: 120 }];
-const obj9 = { ty: "sh", bm: 0, hd: false, mn: "ADBE Vector Shape - Group", nm: "Path 1", ix: 1, d: 1, ks: obj10 };
-obj10 = { a: 0, k: obj11, ix: 2 };
-obj11 = { c: true, i: items3, o: items4, v: items5 };
-items3 = [[0, 0], [-0.352, -0.951], [0, 0], [-0.274, -0.101], [0, 0], [0.951, -0.352], [0, 0], [0.101, -0.274], [0, 0], [0.352, 0.951], [0, 0], [0.274, 0.101], [0, 0], [-0.951, 0.352], [0, 0], [-0.101, 0.274]];
-items4 = [[0.352, -0.951], [0, 0], [0.101, 0.274], [0, 0], [0.951, 0.352], [0, 0], [-0.274, 0.101], [0, 0], [-0.352, 0.951], [0, 0], [-0.101, -0.274], [0, 0], [-0.951, -0.352], [0, 0], [0.274, -0.101], [0, 0]];
-items5 = [[-1.025, -3.786], [1.025, -3.786], [1.611, -2.202], [2.202, -1.611], [3.787, -1.025], [3.787, 1.025], [2.202, 1.611], [1.611, 2.202], [1.025, 3.786], [-1.025, 3.786], [-1.611, 2.202], [-2.202, 1.611], [-3.787, 1.025], [-3.787, -1.025], [-2.202, -1.611], [-1.611, -2.202]];
-const obj8 = { ty: "gr", bm: 0, hd: false, mn: "ADBE Vector Group", nm: "Group 1", ix: 1, cix: 2, np: 2, it: items6 };
-items6 = [obj9, , ];
-const obj12 = { ty: "fl", bm: 0, hd: false, mn: "ADBE Vector Graphic - Fill", nm: "Fill 1", c: { a: 0, k: [0.3451, 0.3961, 0.949], ix: 4 }, r: 1, o: { a: 0, k: 100, ix: 5 } };
-obj3 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: { a: 0, k: [100, 100, 100], ix: 6 }, sk: { a: 0, k: 0 }, p: { a: 0, k: [50, 50, 0], ix: 2 }, r: { a: 0, k: 0, ix: 10 }, sa: { a: 0, k: 0 }, o: { a: 0, k: 0, ix: 11 } };
-items6[1] = obj12;
-const obj13 = { ty: "tr", a: { a: 0, k: [0, 0], ix: 1 }, s: { a: 0, k: [100, 100], ix: 3 }, sk: { a: 0, k: 0, ix: 4 }, p: { a: 0, k: [0, 0], ix: 2 }, r: { a: 0, k: 0, ix: 6 }, sa: { a: 0, k: 0, ix: 5 }, o: { a: 0, k: 100, ix: 7 } };
-items6[2] = obj13;
-items7 = [obj8];
-items[1] = obj4;
-const obj14 = { ty: 4, nm: "R2", sr: 1, st: 0, op: 180, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj15, ef: [], shapes: items14, ind: 3, parent: 1 };
-obj15 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: obj16, sk: { a: 0, k: 0 }, p: point1, r: { a: 0, k: 0, ix: 10 }, sa: { a: 0, k: 0 }, o: { a: 0, k: 100, ix: 11 } };
-obj16 = { a: 1, k: items8, ix: 6 };
-items8 = [{ o: { x: 0.167, y: 0 }, i: { x: 0.502, y: 1 }, s: [0, 0, 100], t: 40 }, { o: { x: 0.507, y: 0 }, i: { x: 0.833, y: 1 }, s: [100, 100, 100], t: 60 }, { s: [0, 0, 100], t: 80 }];
-point1 = { s: true, x: { a: 0, k: 15, ix: 3 }, y: obj17, z: { a: 0, k: 0 } };
-obj17 = { a: 1, k: items9, ix: 4 };
-items9 = [{ o: { x: 0.333, y: 0 }, i: { x: 0.667, y: 1 }, s: [25.662], t: 40 }, { s: [0.662], t: 80 }];
-const obj19 = { ty: "sh", bm: 0, hd: false, mn: "ADBE Vector Shape - Group", nm: "Path 1", ix: 1, d: 1, ks: obj20 };
-obj20 = { a: 0, k: obj21, ix: 2 };
-obj21 = { c: true, i: items10, o: items11, v: items12 };
-items10 = [[0, 0], [-0.39, -0.389], [0, 0], [-0.224, -0.026], [0, 0], [0.061, -0.548], [0, 0], [-0.12, -0.191], [0, 0], [0.466, -0.294], [0, 0], [0.075, -0.213], [0, 0], [0.52, 0.181], [0, 0], [0.213, -0.074], [0, 0], [0.183, 0.52], [0, 0], [0.19, 0.12], [0, 0], [-0.292, 0.467], [0, 0], [0.025, 0.224], [0, 0], [-0.547, 0.063], [0, 0], [-0.16, 0.159]];
-items11 = [[0.39, -0.389], [0, 0], [0.16, 0.159], [0, 0], [0.547, 0.063], [0, 0], [-0.025, 0.224], [0, 0], [0.292, 0.467], [0, 0], [-0.191, 0.12], [0, 0], [-0.183, 0.52], [0, 0], [-0.213, -0.074], [0, 0], [-0.52, 0.181], [0, 0], [-0.075, -0.213], [0, 0], [-0.466, -0.294], [0, 0], [0.12, -0.191], [0, 0], [-0.061, -0.548], [0, 0], [0.224, -0.026], [0, 0]];
-items12 = [[-0.706, -4.594], [0.706, -4.594], [1.543, -3.76], [2.135, -3.475], [3.31, -3.34], [4.19, -2.237], [4.06, -1.061], [4.206, -0.421], [4.833, 0.581], [4.519, 1.958], [3.519, 2.589], [3.11, 3.102], [2.717, 4.218], [1.445, 4.83], [0.329, 4.442], [-0.329, 4.442], [-1.445, 4.83], [-2.717, 4.218], [-3.11, 3.102], [-3.519, 2.589], [-4.519, 1.958], [-4.833, 0.581], [-4.206, -0.421], [-4.06, -1.061], [-4.19, -2.237], [-3.31, -3.34], [-2.135, -3.475], [-1.543, -3.76]];
-const obj18 = { ty: "gr", bm: 0, hd: false, mn: "ADBE Vector Group", nm: "Group 1", ix: 1, cix: 2, np: 2, it: items13 };
-items13 = [obj19, , ];
-const obj22 = { ty: "fl", bm: 0, hd: false, mn: "ADBE Vector Graphic - Fill", nm: "Fill 1", c: { a: 0, k: [0.9686, 0.8, 0.3961], ix: 4 }, r: 1, o: { a: 0, k: 100, ix: 5 } };
-items13[1] = obj22;
-const obj23 = { ty: "tr", a: { a: 0, k: [0, 0], ix: 1 }, s: { a: 0, k: [100, 100], ix: 3 }, sk: { a: 0, k: 0, ix: 4 }, p: { a: 0, k: [0, 0], ix: 2 }, r: { a: 0, k: 0, ix: 6 }, sa: { a: 0, k: 0, ix: 5 }, o: { a: 0, k: 100, ix: 7 } };
-items13[2] = obj23;
-items14 = [obj18];
-items[2] = obj14;
-const obj24 = { ty: 4, nm: "R1", sr: 1, st: 0, op: 180, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj25, ef: [], shapes: items21, ind: 4, parent: 1 };
-obj25 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: obj26, sk: { a: 0, k: 0 }, p: point2, r: { a: 0, k: 0, ix: 10 }, sa: { a: 0, k: 0 }, o: { a: 0, k: 100, ix: 11 } };
-obj26 = { a: 1, k: items15, ix: 6 };
-items15 = [{ o: { x: 0.167, y: 0 }, i: { x: 0.502, y: 1 }, s: [0, 0, 100], t: 60 }, { o: { x: 0.507, y: 0 }, i: { x: 0.833, y: 1 }, s: [100, 100, 100], t: 80 }, { s: [0, 0, 100], t: 100 }];
-point2 = { s: true, x: { a: 0, k: 3.397, ix: 3 }, y: obj27, z: { a: 0, k: 0 } };
-obj27 = { a: 1, k: items16, ix: 4 };
-items16 = [{ o: { x: 0.333, y: 0 }, i: { x: 0.667, y: 1 }, s: [2.662], t: 60 }, { s: [-22.338], t: 100 }];
-const obj29 = { ty: "sh", bm: 0, hd: false, mn: "ADBE Vector Shape - Group", nm: "Path 1", ix: 1, d: 1, ks: obj30 };
-obj30 = { a: 0, k: obj31, ix: 2 };
-obj31 = { c: true, i: items17, o: items18, v: items19 };
-items17 = [[0, 0], [-0.073, 1.165], [0, 0], [-0.98, -0.722], [0, 0], [1.057, -0.493]];
-items18 = [[-1.057, 0.493], [0, 0], [0.076, -1.214], [0, 0], [0.939, 0.692], [0, 0]];
-items19 = [[-0.891, 3.165], [-3.075, 1.676], [-2.853, -1.869], [-0.407, -3.01], [2.453, -0.904], [2.191, 1.727]];
-const obj28 = { ty: "gr", bm: 0, hd: false, mn: "ADBE Vector Group", nm: "Group 1", ix: 1, cix: 2, np: 2, it: items20 };
-items20 = [obj29, , ];
-const obj32 = { ty: "fl", bm: 0, hd: false, mn: "ADBE Vector Graphic - Fill", nm: "Fill 1", c: { a: 0, k: [0.5176, 0.9333, 0.5686], ix: 4 }, r: 1, o: { a: 0, k: 100, ix: 5 } };
-items20[1] = obj32;
-const obj33 = { ty: "tr", a: { a: 0, k: [0, 0], ix: 1 }, s: { a: 0, k: [100, 100], ix: 3 }, sk: { a: 0, k: 0, ix: 4 }, p: { a: 0, k: [0, 0], ix: 2 }, r: { a: 0, k: 0, ix: 6 }, sa: { a: 0, k: 0, ix: 5 }, o: { a: 0, k: 100, ix: 7 } };
-items20[2] = obj33;
-items21 = [obj28];
-items[3] = obj24;
-const obj34 = { ty: 4, nm: "L1", sr: 1, st: 0, op: 180, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj35, ef: [], shapes: items28, ind: 5, parent: 1 };
-obj35 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: obj36, sk: { a: 0, k: 0 }, p: point3, r: { a: 0, k: 0, ix: 10 }, sa: { a: 0, k: 0 }, o: { a: 0, k: 100, ix: 11 } };
-obj36 = { a: 1, k: items22, ix: 6 };
-items22 = [{ o: { x: 0.167, y: 0 }, i: { x: 0.502, y: 1 }, s: [0, 0, 100], t: 72 }, { o: { x: 0.507, y: 0 }, i: { x: 0.833, y: 1 }, s: [100, 100, 100], t: 92 }, { s: [0, 0, 100], t: 112 }];
-point3 = { s: true, x: { a: 0, k: -15.264, ix: 3 }, y: obj37, z: { a: 0, k: 0 } };
-obj37 = { a: 1, k: items23, ix: 4 };
-items23 = [{ o: { x: 0.333, y: 0 }, i: { x: 0.667, y: 1 }, s: [2.662], t: 72 }, { s: [-22.338], t: 112 }];
-const obj39 = { ty: "sh", bm: 0, hd: false, mn: "ADBE Vector Shape - Group", nm: "Path 1", ix: 1, d: 1, ks: obj40 };
-obj40 = { a: 0, k: obj41, ix: 2 };
-obj41 = { c: true, i: items24, o: items25, v: items26 };
-items24 = [[-0.22, 0.82], [0, 0], [-0.82, -0.22], [0, 0], [0.22, -0.82], [0, 0], [0.82, 0.22], [0, 0]];
-items25 = [[0, 0], [0.22, -0.82], [0, 0], [0.82, 0.22], [0, 0], [-0.22, 0.82], [0, 0], [-0.82, -0.22]];
-items26 = [[-3.838, 0.961], [-2.844, -2.751], [-0.961, -3.838], [2.751, -2.844], [3.838, -0.961], [2.844, 2.751], [0.961, 3.838], [-2.751, 2.844]];
-const obj38 = { ty: "gr", bm: 0, hd: false, mn: "ADBE Vector Group", nm: "Group 1", ix: 1, cix: 2, np: 2, it: items27 };
-items27 = [obj39, , ];
-const obj42 = { ty: "fl", bm: 0, hd: false, mn: "ADBE Vector Graphic - Fill", nm: "Fill 1", c: { a: 0, k: [0.8235, 0.5961, 1], ix: 4 }, r: 1, o: { a: 0, k: 100, ix: 5 } };
-items27[1] = obj42;
-const obj43 = { ty: "tr", a: { a: 0, k: [0, 0], ix: 1 }, s: { a: 0, k: [100, 100], ix: 3 }, sk: { a: 0, k: 0, ix: 4 }, p: { a: 0, k: [0, 0], ix: 2 }, r: { a: 0, k: 0, ix: 6 }, sa: { a: 0, k: 0, ix: 5 }, o: { a: 0, k: 100, ix: 7 } };
-items27[2] = obj43;
-items28 = [obj38];
-items[4] = obj34;
-const obj44 = { ty: 3, nm: "Rotate Null", sr: 1, st: 0, op: 210, ip: 0, hd: false, ddd: 0, bm: 0, hasMask: false, ao: 0, ks: obj45, ef: [], ind: 6 };
-obj45 = { a: { a: 0, k: [0, 0, 0], ix: 1 }, s: { a: 0, k: [100, 100, 100], ix: 6 }, sk: { a: 0, k: 0 }, p: { a: 0, k: [50, 50, 0], ix: 2 }, r: obj46, sa: { a: 0, k: 0 }, o: { a: 0, k: 0, ix: 11 } };
-obj46 = { a: 1, k: items29, ix: 10 };
-items29 = [{ o: { x: 0.167, y: 0.167 }, i: { x: 0.833, y: 0.833 }, s: [0], t: 0 }, { s: [360], t: 210 }];
-items[5] = obj44;
+import $output from "$output" /* 11960 */;
+import ZodType from "ZodType" /* 11966 */;
+import lt2 from "lt" /* 11967 */;
+import ZodISODateTime2 from "ZodISODateTime" /* 11968 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-export default obj;
+let hasOwnProperty, map;
+
+let ZodISODateTime;
+let self = this;
+function convertBaseSchema(not, refs) {
+  let items;
+  let length;
+  let prefixItems;
+  function resolveRef($ref, rootSchema) {
+    if ($ref.startsWith("#")) {
+      const str2 = $ref.slice(1);
+      const parts = str2.split("/");
+      const _Boolean = Boolean;
+      const found = parts.filter(Boolean);
+      if (0 === found.length) {
+        return rootSchema.rootSchema;
+      } else {
+        let str4 = "definitions";
+        if ("draft-2020-12" === rootSchema.version) {
+          str4 = "$defs";
+        }
+        if (found[0] === str4) {
+          if (found[1]) {
+            if (rootSchema.defs[found[1]]) {
+              return rootSchema.defs[found[1]];
+            }
+          }
+          const _Error3 = Error;
+          const _HermesInternal2 = HermesInternal;
+          const self5 = this;
+          const self6 = this;
+          const error = new Error("Reference not found: " + $ref);
+          throw error;
+        } else {
+          const _Error2 = Error;
+          const _HermesInternal = HermesInternal;
+          const self3 = this;
+          const self4 = this;
+          const error1 = new Error("Reference not found: " + $ref);
+          throw error1;
+        }
+      }
+    } else {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error2 = new Error("External $ref is not supported, only local refs (#/...) are allowed");
+      throw error2;
+    }
+  }
+  let closure_0 = not;
+  if (undefined !== not.not) {
+    if (typeof not.not === "object") {
+      const _Object5 = Object;
+      if (0 === Object.keys(not.not).length) {
+        return obj.never();
+      }
+    }
+    const _Error6 = Error;
+    const self16 = this;
+    const self17 = this;
+    let error = new Error("not is not supported in Zod (except { not: {} } for never)");
+    throw error;
+  } else if (undefined !== not.unevaluatedItems) {
+    const _Error5 = Error;
+    const self14 = this;
+    const self15 = this;
+    let error1 = new Error("unevaluatedItems is not supported");
+    throw error1;
+  } else if (undefined !== not.unevaluatedProperties) {
+    const _Error4 = Error;
+    const self12 = this;
+    const self13 = this;
+    let error2 = new Error("unevaluatedProperties is not supported");
+    throw error2;
+  } else {
+    if (undefined === not.if) {
+      if (undefined === not.then) {
+        if (undefined === not.else) {
+          if (undefined === not.dependentSchemas) {
+            if (undefined === not.dependentRequired) {
+              let $ref;
+              if (not.$ref) {
+                $ref = not.$ref;
+                refs = refs.refs;
+                if (refs.has($ref)) {
+                  const refs3 = refs.refs;
+                  return refs3.get($ref);
+                } else {
+                  const processing = refs.processing;
+                  if (processing.has($ref)) {
+                    return obj.lazy(function() {
+                      refs = refs.refs;
+                      const tmp = refs;
+                      if (refs.has($ref)) {
+                        const refs2 = tmp.refs;
+                        return refs2.get($ref);
+                      } else {
+                        const _Error = Error;
+                        const _HermesInternal = HermesInternal;
+                        const self = this;
+                        const self2 = this;
+                        const error = new Error("Circular reference not resolved: " + tmp2);
+                        throw error;
+                      }
+                    });
+                  } else {
+                    const processing2 = refs.processing;
+                    processing2.add($ref);
+                    const tmp149 = convertSchema(resolveRef($ref, refs), refs);
+                    let refs2 = refs.refs;
+                    const result = refs2.set($ref, tmp149);
+                    const processing3 = refs.processing;
+                    processing3.delete($ref);
+                    return tmp149;
+                  }
+                }
+              } else if (undefined !== not.enum) {
+                const _enum = not.enum;
+                if ("openapi-3.0" === refs.version) {
+                  if (true === not.nullable) {
+                    if (1 === _enum.length) {
+                      if (null === _enum[0]) {
+                        return obj.null();
+                      }
+                    }
+                  }
+                }
+                if (0 === _enum.length) {
+                  return obj.never();
+                } else if (1 === _enum.length) {
+                  return obj.literal(_enum[0]);
+                } else if (_enum.every((item) => typeof item === "string")) {
+                  return obj.enum(_enum);
+                } else {
+                  let first;
+                  const mapped = _enum.map((item) => obj.literal(item));
+                  if (mapped.length < 2) {
+                    first = mapped[0];
+                  } else {
+                    const items1 = [, ];
+                    [arr8[0], arr8[1]] = mapped;
+                    const union = obj.union;
+                    HermesBuiltin.arraySpread(items1, mapped.slice(2), 2);
+                    first = union(items1);
+                  }
+                  return first;
+                }
+              } else if (undefined !== not.const) {
+                return obj.literal(not.const);
+              } else {
+                const type = not.type;
+                const _Array3 = Array;
+                if (Array.isArray(type)) {
+                  let neverResult;
+                  const mapped1 = type.map((type) => {
+                    obj = { type };
+                    const merged = Object.assign(not);
+                    return convertBaseSchema(obj, refs);
+                  });
+                  if (0 === mapped1.length) {
+                    neverResult = obj.never();
+                  } else if (1 === mapped1.length) {
+                    neverResult = mapped1[0];
+                  } else {
+                    neverResult = obj.union(mapped1);
+                  }
+                  return neverResult;
+                } else if (type) {
+                  let booleanResult;
+                  if ("string" === type) {
+                    const stringResult = obj.string();
+                    let checkResult = stringResult;
+                    if (not.format) {
+                      const format = not.format;
+                      let str4 = "email";
+                      if ("email" === format) {
+                        checkResult = stringResult.check(obj25.email());
+                      } else {
+                        if ("uri" !== format) {
+                          if ("uri-reference" !== format) {
+                            if ("uuid" !== format) {
+                              if ("guid" !== format) {
+                                if ("date-time" === format) {
+                                  const iso4 = obj25.iso;
+                                  checkResult = stringResult.check(iso4.datetime());
+                                } else if ("date" === format) {
+                                  const iso3 = obj25.iso;
+                                  checkResult = stringResult.check(iso3.date());
+                                } else if ("time" === format) {
+                                  const iso2 = obj25.iso;
+                                  checkResult = stringResult.check(iso2.time());
+                                } else if ("duration" === format) {
+                                  const iso = obj25.iso;
+                                  checkResult = stringResult.check(iso.duration());
+                                } else if ("ipv4" === format) {
+                                  checkResult = stringResult.check(obj25.ipv4());
+                                } else if ("ipv6" === format) {
+                                  checkResult = stringResult.check(obj25.ipv6());
+                                } else if ("mac" === format) {
+                                  checkResult = stringResult.check(obj25.mac());
+                                } else if ("cidr" === format) {
+                                  checkResult = stringResult.check(obj25.cidrv4());
+                                } else if ("cidr-v6" === format) {
+                                  checkResult = stringResult.check(obj25.cidrv6());
+                                } else if ("base64" === format) {
+                                  checkResult = stringResult.check(obj25.base64());
+                                } else if ("base64url" === format) {
+                                  checkResult = stringResult.check(obj25.base64url());
+                                } else if ("e164" === format) {
+                                  checkResult = stringResult.check(obj25.e164());
+                                } else if ("jwt" === format) {
+                                  checkResult = stringResult.check(obj25.jwt());
+                                } else if ("emoji" === format) {
+                                  checkResult = stringResult.check(obj25.emoji());
+                                } else if ("nanoid" === format) {
+                                  checkResult = stringResult.check(obj25.nanoid());
+                                } else if ("cuid" === format) {
+                                  checkResult = stringResult.check(obj25.cuid());
+                                } else if ("cuid2" === format) {
+                                  checkResult = stringResult.check(obj25.cuid2());
+                                } else if ("ulid" === format) {
+                                  checkResult = stringResult.check(obj25.ulid());
+                                } else if ("xid" === format) {
+                                  checkResult = stringResult.check(obj25.xid());
+                                } else {
+                                  checkResult = stringResult;
+                                  if ("ksuid" === format) {
+                                    checkResult = stringResult.check(obj25.ksuid());
+                                  }
+                                }
+                              }
+                            }
+                            checkResult = stringResult.check(obj25.uuid());
+                          }
+                        }
+                        checkResult = stringResult.check(obj25.url());
+                      }
+                    }
+                    let minResult = checkResult;
+                    if (typeof not.minLength === "number") {
+                      minResult = checkResult.min(not.minLength);
+                    }
+                    let maxResult = minResult;
+                    if (typeof not.maxLength === "number") {
+                      maxResult = minResult.max(not.maxLength);
+                    }
+                    let regex2Result = maxResult;
+                    if (not.pattern) {
+                      const _RegExp2 = RegExp;
+                      let self6 = this;
+                      const self7 = this;
+                      const regex2 = maxResult.regex;
+                      const regExp = new RegExp(not.pattern);
+                      regex2Result = regex2(regExp);
+                    }
+                    booleanResult = regex2Result;
+                  } else {
+                    let intResult;
+                    let gtResult;
+                    let ltResult;
+                    if ("number" !== type) {
+                      if ("integer" !== type) {
+                        if ("boolean" === type) {
+                          booleanResult = obj.boolean();
+                        } else if ("null" === type) {
+                          booleanResult = obj.null();
+                        } else if ("object" === type) {
+                          obj = {};
+                          let required = not.required;
+                          const _Set = Set;
+                          const tmp21 = not.properties || {};
+                          if (!required) {
+                            required = [];
+                          }
+                          let self3 = this;
+                          let self4 = this;
+                          const _Set1 = new _Set(required);
+                          const _Object = Object;
+                          const entries = Object.entries(tmp21);
+                          const tmp26 = entries[Symbol.iterator]();
+                          while (tmp26 !== undefined) {
+                            let optionalResult;
+                            let tmp31 = $ref(tmp28, 2);
+                            let first1 = tmp31[0];
+                            let obj14 = convertSchema(tmp31[1], refs);
+                            if (_Set1.has(first1)) {
+                              optionalResult = obj14;
+                            } else {
+                              optionalResult = obj14.optional();
+                            }
+                            obj[first1] = optionalResult;
+                            continue;
+                          }
+                          if (not.propertyNames) {
+                            const tmp76 = convertSchema(not.propertyNames, refs);
+                            const tmp75 = convertSchema;
+                            if (not.additionalProperties) {
+                              let anyResult;
+                              if (typeof not.additionalProperties === "object") {
+                                anyResult = tmp75(not.additionalProperties, refs);
+                              }
+                              const _Object4 = Object;
+                              if (0 === Object.keys(obj).length) {
+                                booleanResult = obj.record(tmp76, anyResult);
+                              } else {
+                                const objectResult = obj.object(obj);
+                                const passthroughResult = objectResult.passthrough();
+                                booleanResult = obj.intersection(passthroughResult, obj.looseRecord(tmp76, anyResult));
+                              }
+                            }
+                            anyResult = obj.any();
+                          } else if (not.patternProperties) {
+                            const patternProperties = not.patternProperties;
+                            const _Object2 = Object;
+                            const keys = Object.keys(patternProperties);
+                            const items2 = [];
+                            for (const item10130 of keys) {
+                              let tmp47 = convertSchema(patternProperties[item10130], refs);
+                              let stringResult1 = obj.string();
+                              let _RegExp = RegExp;
+                              let self5 = this;
+                              self4 = this;
+                              let regex = stringResult1.regex;
+                              let regExp1 = new RegExp(item10130);
+                              let arr = items2.push(obj.looseRecord(regex(regExp1), tmp47));
+                              continue;
+                            }
+                            const items3 = [];
+                            const _Object3 = Object;
+                            if (Object.keys(obj).length > 0) {
+                              const push = items3.push;
+                              const objectResult4 = obj.object(obj);
+                              push(objectResult4.passthrough());
+                            }
+                            const push2 = items3.push;
+                            const items4 = [];
+                            HermesBuiltin.arraySpread(items4, items2, 0);
+                            HermesBuiltin.apply(push2, items4, items3);
+                            if (0 === items3.length) {
+                              const objectResult5 = obj.object({});
+                              booleanResult = objectResult5.passthrough();
+                            } else if (1 === items3.length) {
+                              booleanResult = items3[0];
+                            } else {
+                              const intersectionResult = obj.intersection(items3[0], items3[1]);
+                              let num5 = 2;
+                              let intersectionResult1 = intersectionResult;
+                              let tmp69 = intersectionResult;
+                              if (2 < items3.length) {
+                                do {
+                                  intersectionResult1 = obj.intersection(intersectionResult1, items3[num5]);
+                                  num5 = num5 + 1;
+                                  tmp69 = intersectionResult1;
+                                  length = items3.length;
+                                } while (num5 < length);
+                              }
+                              booleanResult = tmp69;
+                            }
+                          } else {
+                            let strictResult;
+                            const objectResult6 = obj.object(obj);
+                            if (false === not.additionalProperties) {
+                              strictResult = objectResult6.strict();
+                            } else if (typeof not.additionalProperties === "object") {
+                              strictResult = objectResult6.catchall(convertSchema(not.additionalProperties, refs));
+                            } else {
+                              strictResult = objectResult6.passthrough();
+                            }
+                            booleanResult = strictResult;
+                          }
+                        } else if ("array" === type) {
+                          ({ prefixItems, items } = not);
+                          if (prefixItems) {
+                            const _Array = Array;
+                            if (Array.isArray(prefixItems)) {
+                              let restResult;
+                              let tmp17;
+                              const mapped2 = prefixItems.map((item) => convertSchema(item, refs));
+                              if (items) {
+                                if (typeof items === "object") {
+                                  const _Array4 = Array;
+                                  if (!Array.isArray(items)) {
+                                    tmp17 = convertSchema(items, refs);
+                                  }
+                                }
+                              }
+                              const tupleResult = obj.tuple(mapped2);
+                              if (tmp17) {
+                                restResult = tupleResult.rest(tmp17);
+                              } else {
+                                restResult = tupleResult;
+                              }
+                              let checkResult1 = restResult;
+                              if (typeof not.minItems === "number") {
+                                checkResult1 = restResult.check(obj8.minLength(not.minItems));
+                              }
+                              booleanResult = checkResult1;
+                              if (typeof not.maxItems === "number") {
+                                booleanResult = checkResult1.check(obj8.maxLength(not.maxItems));
+                              }
+                            }
+                          }
+                          const _Array2 = Array;
+                          if (Array.isArray(items)) {
+                            let restResult1;
+                            let tmp14;
+                            const mapped3 = items.map((item) => convertSchema(item, refs));
+                            if (not.additionalItems) {
+                              if (typeof not.additionalItems === "object") {
+                                tmp14 = convertSchema(not.additionalItems, refs);
+                              }
+                            }
+                            const tupleResult1 = obj.tuple(mapped3);
+                            if (tmp14) {
+                              restResult1 = tupleResult1.rest(tmp14);
+                            } else {
+                              restResult1 = tupleResult1;
+                            }
+                            let checkResult2 = restResult1;
+                            if (typeof not.minItems === "number") {
+                              checkResult2 = restResult1.check(obj4.minLength(not.minItems));
+                            }
+                            booleanResult = checkResult2;
+                            if (typeof not.maxItems === "number") {
+                              booleanResult = checkResult2.check(obj4.maxLength(not.maxItems));
+                            }
+                          } else if (undefined !== items) {
+                            const arrayResult = obj.array(convertSchema(items, refs));
+                            let minResult1 = arrayResult;
+                            if (typeof not.minItems === "number") {
+                              minResult1 = arrayResult.min(not.minItems);
+                            }
+                            let maxResult1 = minResult1;
+                            if (typeof not.maxItems === "number") {
+                              maxResult1 = minResult1.max(not.maxItems);
+                            }
+                            booleanResult = maxResult1;
+                          } else {
+                            booleanResult = obj.array(obj.any());
+                          }
+                        } else {
+                          let _Error = Error;
+                          let _HermesInternal = HermesInternal;
+                          let str2 = "Unsupported type: ";
+                          let self = this;
+                          let self2 = this;
+                          const error3 = new Error("Unsupported type: " + type);
+                          throw error3;
+                        }
+                      }
+                    }
+                    if ("integer" === type) {
+                      const numberResult = obj.number();
+                      intResult = numberResult.int();
+                    } else {
+                      intResult = obj.number();
+                    }
+                    let minResult2 = intResult;
+                    if (typeof not.minimum === "number") {
+                      minResult2 = intResult.min(not.minimum);
+                    }
+                    let maxResult2 = minResult2;
+                    if (typeof not.maximum === "number") {
+                      maxResult2 = minResult2.max(not.maximum);
+                    }
+                    if (typeof not.exclusiveMinimum === "number") {
+                      gtResult = maxResult2.gt(not.exclusiveMinimum);
+                    } else {
+                      gtResult = maxResult2;
+                      const tmp94 = true === not.exclusiveMinimum && typeof not.minimum === "number";
+                      if (tmp94) {
+                        gtResult = maxResult2.gt(not.minimum);
+                      }
+                    }
+                    if (typeof not.exclusiveMaximum === "number") {
+                      ltResult = gtResult.lt(not.exclusiveMaximum);
+                    } else {
+                      ltResult = gtResult;
+                      const tmp95 = true === not.exclusiveMaximum && typeof not.maximum === "number";
+                      if (tmp95) {
+                        ltResult = gtResult.lt(not.maximum);
+                      }
+                    }
+                    let multipleOfResult = ltResult;
+                    if (typeof not.multipleOf === "number") {
+                      multipleOfResult = ltResult.multipleOf(not.multipleOf);
+                    }
+                    booleanResult = multipleOfResult;
+                  }
+                  let describeResult = booleanResult;
+                  if (not.description) {
+                    describeResult = booleanResult.describe(not.description);
+                  }
+                  let defaultResult = describeResult;
+                  if (undefined !== not.default) {
+                    defaultResult = describeResult.default(not.default);
+                  }
+                  return defaultResult;
+                } else {
+                  const tmp2 = obj;
+                  return obj.any();
+                }
+              }
+            }
+          }
+          let _Error2 = Error;
+          const self8 = this;
+          const self9 = this;
+          const error4 = new Error("dependentSchemas and dependentRequired are not supported");
+          throw error4;
+        }
+      }
+    }
+    let _Error3 = Error;
+    const self10 = this;
+    const self11 = this;
+    const error5 = new Error("Conditional schemas (if/then/else) are not supported");
+    throw error5;
+  }
+}
+function convertSchema(items, version) {
+  let length;
+  let closure_0 = version;
+  if (typeof items === "boolean") {
+    let anyResult;
+    if (items) {
+      anyResult = obj4.any();
+    } else {
+      anyResult = obj4.never();
+    }
+    return anyResult;
+  } else {
+    const tmp40 = convertBaseSchema(items, version);
+    let tmp2 = tmp40;
+    if (items.anyOf) {
+      const _Array = Array;
+      tmp2 = tmp40;
+      if (Array.isArray(items.anyOf)) {
+        const anyOf = items.anyOf;
+        const unionResult = obj.union(anyOf.map((item) => convertSchema(item, version)));
+        let intersectionResult = unionResult;
+        if (items.type || undefined !== items.enum || undefined !== items.const) {
+          intersectionResult = obj.intersection(tmp40, unionResult);
+        }
+        tmp2 = intersectionResult;
+      }
+    }
+    let anyResult1 = tmp2;
+    if (items.oneOf) {
+      const _Array2 = Array;
+      anyResult1 = tmp2;
+      if (Array.isArray(items.oneOf)) {
+        const oneOf = items.oneOf;
+        const xorResult = obj.xor(oneOf.map((item) => convertSchema(item, version)));
+        let intersectionResult1 = xorResult;
+        const obj2 = obj;
+        if (items.type || undefined !== items.enum || undefined !== items.const) {
+          intersectionResult1 = obj2.intersection(tmp2, xorResult);
+        }
+        anyResult1 = intersectionResult1;
+      }
+    }
+    let tmp10 = anyResult1;
+    if (items.allOf) {
+      const _Array3 = Array;
+      tmp10 = anyResult1;
+      if (Array.isArray(items.allOf)) {
+        if (0 === items.allOf.length) {
+          if (!(items.type || undefined !== items.enum || undefined !== items.const)) {
+            anyResult1 = obj.any();
+          }
+          tmp10 = anyResult1;
+        } else {
+          let tmp13 = anyResult1;
+          if (!(items.type || undefined !== items.enum || undefined !== items.const)) {
+            tmp13 = convertSchema(items.allOf[0], version);
+          }
+          let num2 = 1;
+          if (items.type || undefined !== items.enum || undefined !== items.const) {
+            num2 = 0;
+          }
+          let intersectionResult2 = tmp13;
+          let tmp15 = tmp13;
+          if (num2 < items.allOf.length) {
+            do {
+              intersectionResult2 = obj.intersection(intersectionResult2, convertSchema(items.allOf[num2], version));
+              num2 = num2 + 1;
+              tmp15 = intersectionResult2;
+              length = items.allOf.length;
+            } while (num2 < length);
+          }
+          tmp10 = tmp15;
+        }
+      }
+    }
+    let nullableResult = tmp10;
+    const tmp19 = true === items.nullable && "openapi-3.0" === version.version;
+    if (tmp19) {
+      nullableResult = obj.nullable(tmp10);
+    }
+    let readonlyResult = nullableResult;
+    if (true === items.readOnly) {
+      readonlyResult = obj.readonly(nullableResult);
+    }
+    const obj3 = {};
+    items = ["$id", "id", "$comment", "$anchor", "$vocabulary", "$dynamicRef", "$dynamicAnchor"];
+    for (const item10086 of items) {
+      let tmp25 = item10086;
+      if (item10086 in items) {
+        obj3[tmp25] = items[tmp25];
+      }
+      continue;
+    }
+    const items1 = ["contentEncoding", "contentMediaType", "contentSchema"];
+    for (const item10096 of items1) {
+      let tmp28 = item10096;
+      if (item10096 in items) {
+        obj3[tmp28] = items[tmp28];
+      }
+      continue;
+    }
+    const _Object = Object;
+    const keys = Object.keys(items);
+    for (const item10110 of keys) {
+      let tmp34 = item10110;
+      if (!set.has(item10110)) {
+        obj3[tmp34] = items[tmp34];
+      }
+      continue;
+    }
+    const _Object2 = Object;
+    if (Object.keys(obj3).length > 0) {
+      const registry = version.registry;
+      registry.add(readonlyResult, obj3);
+    }
+    return readonlyResult;
+  }
+}
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_3 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  let _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_4 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
+    }
+  }
+  obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_3(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  closure_4(obj, __esModule);
+  return obj;
+});
+let lt = tmp5(lt2);
+let obj = { iso: ZodISODateTime };
+ZodISODateTime = tmp5(ZodISODateTime2);
+let merged = Object.assign(tmp5(ZodType));
+lt = Object.assign(lt);
+let set = new Set(["$schema", "$ref", "$defs", "definitions", "$id", "id", "$comment", "$anchor", "$vocabulary", "$dynamicRef", "$dynamicAnchor", "type", "enum", "const", "anyOf", "oneOf", "allOf", "not", "properties", "required", "additionalProperties", "patternProperties", "propertyNames", "minProperties", "maxProperties", "items", "prefixItems", "additionalItems", "minItems", "maxItems", "uniqueItems", "contains", "minContains", "maxContains", "minLength", "maxLength", "pattern", "format", "minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum", "multipleOf", "description", "default", "contentEncoding", "contentMediaType", "contentSchema", "unevaluatedItems", "unevaluatedProperties", "if", "then", "else", "dependentSchemas", "dependentRequired", "nullable", "readOnly"]);
+
+export function fromJSONSchema($schema, defaultTarget) {
+  let registry;
+  let tmp;
+  if (typeof $schema === "boolean") {
+    let anyResult;
+    if ($schema) {
+      anyResult = obj2.any();
+    } else {
+      anyResult = obj2.never();
+    }
+    return anyResult;
+  } else {
+    let str;
+    if (defaultTarget != null) {
+      str = defaultTarget.defaultTarget;
+    }
+    $schema = $schema.$schema;
+    let str4 = "draft-2020-12";
+    if ("https://json-schema.org/draft/2020-12/schema" !== $schema) {
+      str4 = "draft-7";
+      if ("http://json-schema.org/draft-07/schema#" !== $schema) {
+        str4 = "draft-4";
+        if ("http://json-schema.org/draft-04/schema#" !== $schema) {
+          if (str == null) {
+            str = "draft-2020-12";
+          }
+          str4 = str;
+        }
+      }
+    }
+    obj = { version: str4, defs: tmp, refs: map, processing: set, rootSchema: $schema, registry };
+    const _Map = Map;
+    const self = this;
+    const self2 = this;
+    tmp = $schema.$defs || $schema.definitions || {};
+    const _Set = Set;
+    const self3 = this;
+    const self4 = this;
+    map = new Map();
+    registry = undefined;
+    set = new Set();
+    if (defaultTarget != null) {
+      registry = defaultTarget.registry;
+    }
+    if (registry == null) {
+      registry = $output.globalRegistry;
+    }
+    return convertSchema($schema, obj);
+  }
+}

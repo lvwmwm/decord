@@ -1,103 +1,74 @@
 // Module ID: 8248
 // Function ID: 8249
-// Dependencies: [8249, 8250, 8252, 8253, 8254, 8258, 8259, 8260, 8261, 8246]
+// Dependencies: [8240, 8241]
+// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
 
 // Module 8248
-import _mod8246 from "module_8246" /* 8246 */;
-import _modDef8249 from "module_8249" /* 8249 */;
-import _modDef8250 from "module_8250" /* 8250 */;
-import _modDef8252 from "module_8252" /* 8252 */;
-import PNG_CHUNK_TYPE_SIZEDefault from "PNG_CHUNK_TYPE_SIZE" /* 8253 */;
-import ITEM_INFO_TYPE_EXIFDefault from "ITEM_INFO_TYPE_EXIF" /* 8254 */;
-import _modDef8258 from "module_8258" /* 8258 */;
-import _modDef8259 from "module_8259" /* 8259 */;
-import _modDef8260 from "module_8260" /* 8260 */;
-import _modDef8261 from "module_8261" /* 8261 */;
+import _mod8240 from "module_8240" /* 8240 */;
+import _mod8241 from "module_8241" /* 8241 */;
 
 
-export default {
-  parseAppMarkers(byteLength, flag2) {
-    if (_modDef8249.USE_TIFF) {
-      const tmpResult = _modDef8250;
-      if (tmpResult.isTiffFile(byteLength)) {
-        const tmpResult16 = _modDef8250;
-        const findTiffOffsetsResult = tmpResult16.findTiffOffsets();
-        const obj = { fileType: { value: "tiff", description: "TIFF" } };
-        const obj31 = _mod8246;
-        return obj31.objectAssign({}, findTiffOffsetsResult, obj);
-      }
+export function isAVI(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "avi");
+}
+export function isFLV(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod8240.isFlvStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isM4V(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod8240.isftypStringIncluded(fileChunk);
+  return tmp4;
+}
+export function isMKV(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8241.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod8240.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}
+export function isMOV(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mov");
+}
+export function isMP4(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
+  if (!checkByFileTypeResult) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    if (_modDef8249.USE_JPEG) {
-      const tmpResult17 = _modDef8252;
-      if (tmpResult17.isJpegFile(byteLength)) {
-        const tmpResult18 = _modDef8252;
-        const findJpegOffsetsResult = tmpResult18.findJpegOffsets(byteLength);
-        const obj2 = { fileType: { value: "jpeg", description: "JPEG" } };
-        const obj28 = _mod8246;
-        return obj28.objectAssign({}, findJpegOffsetsResult, obj2);
-      }
+    let tmp8 = !excludeSimilarTypes;
+    if (tmp8) {
+      const fileChunk1 = tmp(8240).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(8241).FileTypes;
+      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8240.isftypStringIncluded(fileChunk1);
+      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod8240.isftypStringIncluded(fileChunk1);
     }
-    if (_modDef8249.USE_PNG) {
-      const tmpResult19 = PNG_CHUNK_TYPE_SIZEDefault;
-      if (tmpResult19.isPngFile(byteLength)) {
-        const tmpResult20 = PNG_CHUNK_TYPE_SIZEDefault;
-        const findPngOffsetsResult = tmpResult20.findPngOffsets(byteLength, flag2);
-        const obj3 = { fileType: { value: "png", description: "PNG" } };
-        const obj25 = _mod8246;
-        return obj25.objectAssign({}, findPngOffsetsResult, obj3);
-      }
-    }
-    if (_modDef8249.USE_HEIC) {
-      const tmpResult21 = ITEM_INFO_TYPE_EXIFDefault;
-      if (tmpResult21.isHeicFile(byteLength)) {
-        const tmpResult22 = ITEM_INFO_TYPE_EXIFDefault;
-        const findHeicOffsetsResult = tmpResult22.findHeicOffsets(byteLength);
-        const obj4 = { fileType: { value: "heic", description: "HEIC" } };
-        const obj22 = _mod8246;
-        return obj22.objectAssign({}, findHeicOffsetsResult, obj4);
-      }
-    }
-    if (_modDef8249.USE_AVIF) {
-      const tmpResult23 = _modDef8258;
-      if (tmpResult23.isAvifFile(byteLength)) {
-        const tmpResult24 = _modDef8258;
-        const findAvifOffsetsResult = tmpResult24.findAvifOffsets(byteLength);
-        const obj5 = { fileType: { value: "avif", description: "AVIF" } };
-        const obj19 = _mod8246;
-        return obj19.objectAssign({}, findAvifOffsetsResult, obj5);
-      }
-    }
-    if (_modDef8249.USE_WEBP) {
-      const tmpResult25 = _modDef8259;
-      if (tmpResult25.isWebpFile(byteLength)) {
-        const tmpResult26 = _modDef8259;
-        const findOffsetsResult = tmpResult26.findOffsets(byteLength);
-        const obj6 = { fileType: { value: "webp", description: "WebP" } };
-        const obj16 = _mod8246;
-        return obj16.objectAssign({}, findOffsetsResult, obj6);
-      }
-    }
-    if (_modDef8249.USE_GIF) {
-      const tmpResult27 = _modDef8260;
-      if (tmpResult27.isGifFile(byteLength)) {
-        const tmpResult28 = _modDef8260;
-        const findOffsetsResult1 = tmpResult28.findOffsets(byteLength);
-        const obj7 = { fileType: { value: "gif", description: "GIF" } };
-        const obj13 = _mod8246;
-        return obj13.objectAssign({}, findOffsetsResult1, obj7);
-      }
-    }
-    if (_modDef8249.USE_XMP) {
-      const tmpResult29 = _modDef8261;
-      if (tmpResult29.isXMLFile(byteLength)) {
-        const tmpResult30 = _modDef8261;
-        const findOffsetsResult2 = tmpResult30.findOffsets(byteLength);
-        const obj8 = { fileType: { value: "xml", description: "XML" } };
-        const obj10 = _mod8246;
-        return obj10.objectAssign({}, findOffsetsResult2, obj8);
-      }
-    }
-    const error = new Error("Invalid image format");
-    throw error;
+    checkByFileTypeResult = tmp8;
   }
-};
+  return checkByFileTypeResult;
+}
+export function isOGG(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ogg");
+}
+export function isSWF(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "swf");
+}
+export function isWEBM(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk, 64);
+  const FileTypes = _mod8241.FileTypes;
+  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod8240.findMatroskaDocTypeElements(fileChunk);
+  return tmp4;
+}

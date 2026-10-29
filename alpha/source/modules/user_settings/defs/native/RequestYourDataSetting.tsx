@@ -1,26 +1,26 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 16654
+// Function ID: 16655
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1389, 8365, 1084, 21, 1266, 7114, 1271, 558, 576, 504, 4919, 16417, 1125, 2046, 11248, 16419, 2]
+// Dependencies: [17, 1389, 8387, 1084, 21, 1266, 7138, 1271, 558, 576, 504, 4920, 16655, 1125, 2047, 11302, 16657, 2]
 // Exports: fetchHarvestStatus
 
-// Module 16416 (RequestYourDataSetting)
+// Module 16654 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
 import react_native2 from "react-native" /* 1271 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import _slicedToArray from "_slicedToArray" /* 4919 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7114 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import HarvesterUtils from "HarvesterUtils" /* 16417 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import _slicedToArray from "_slicedToArray" /* 4920 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7138 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import HarvesterUtils from "HarvesterUtils" /* 16655 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -206,11 +206,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestYo
     if (cResult[1] !== tmp4.created_at) {
       const _Symbol = Symbol;
       const forResult = Symbol.for("react.early_return_sentinel");
-      const obj3 = _modDef2046(tmp4.created_at);
+      const obj3 = _modDef2047(tmp4.created_at);
       const addResult = obj3.add(hasOwnProperty, "days");
       let tmp11 = null;
       let formatToPlainStringResult;
-      if (!addResult.isBefore(_modDef2046())) {
+      if (!addResult.isBefore(_modDef2047())) {
         const intl = tmp(1125).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj2 = { date: addResult.format("MMMM Do YYYY") };
@@ -244,10 +244,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestYo
   } else if (null == tmp) {
     return null;
   } else {
-    const obj3 = _modDef2046(tmp.created_at);
+    const obj3 = _modDef2047(tmp.created_at);
     const addResult = obj3.add(hasOwnProperty, "days");
     let formatToPlainStringResult = null;
-    if (!addResult.isBefore(_modDef2046())) {
+    if (!addResult.isBefore(_modDef2047())) {
       const intl = intl3.intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { date: addResult.format("MMMM Do YYYY") };
@@ -312,7 +312,7 @@ const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/RequestYourDataSetting.tsx");
 
 export default route;
-export const fetchHarvestStatus = function fetchHarvestStatus() {
+export function fetchHarvestStatus() {
   let state;
   let obj = UserSettingsAccountActionCreators;
   const harvestStatus = obj.getHarvestStatus();
@@ -327,5 +327,5 @@ export const fetchHarvestStatus = function fetchHarvestStatus() {
     const obj = react_native2;
     obj.batchUpdates(() => state.setState({ isRequesting: false }));
   });
-};
+}
 export const useIsHarvestRequestDisabled = tmp3;

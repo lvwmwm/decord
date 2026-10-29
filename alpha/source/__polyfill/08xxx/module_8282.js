@@ -1,33 +1,25 @@
 // Module ID: 8282
 // Function ID: 8283
-// Dependencies: []
+// Dependencies: [8268]
 
 // Module 8282
+import _mod8268 from "module_8268" /* 8268 */;
+
 let obj = {
-  get(arg0) {
-    const tmp = arg0;
-    if (tmp) {
-      return arg0;
-    } else {
-      if (typeof globalThis.DOMParser !== "undefined") {
-        const DOMParser2 = globalThis.DOMParser;
-        const self3 = this;
-        const self4 = this;
-        const dOMParser = new globalThis.DOMParser();
-        return dOMParser;
-      } else {
-        try {
-          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
-          const self = this;
-          const self2 = this;
-          const obj = { onError: result.onErrorStopParsing };
-          const dOMParser1 = new result.DOMParser(obj);
-          return dOMParser1;
-        } catch (err) {
-        }
-      }
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      includes = includes.includes;
+      const obj = _mod8268;
+      hasItem = includes(obj.getStringFromDataView(dataView, 0, c2));
     }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
   }
 };
+let c2 = 6;
+let includes = ["GIF87a", "GIF89a"];
 
 export default obj;

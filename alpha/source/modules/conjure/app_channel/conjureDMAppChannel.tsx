@@ -1,13 +1,13 @@
-// Module ID: 6842
-// Function ID: 6843
+// Module ID: 6865
+// Function ID: 6866
 // Name: conjureDMAppChannel
-// Dependencies: [2042, 4878, 1389, 1084, 558, 576, 504, 6843, 6845, 6847, 2]
+// Dependencies: [2043, 4879, 1389, 1084, 558, 576, 504, 6866, 6868, 6870, 2]
 // Exports: isDMAppChannel
 
-// Module 6842 (conjureDMAppChannel)
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6843 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 6865 (conjureDMAppChannel)
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6866 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMAppCh
   let id = null;
   if (null != data) {
     id = null;
-    const tmpResult = tmp(6847);
+    const tmpResult = tmp(6870);
     if (tmpResult.hasApplicationFlag(data, constants.DM_OPENS_ACTIVITY)) {
       id = data.id;
     }
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMAppCh
 const result = size.fileFinishedImporting("modules/conjure/app_channel/conjureDMAppChannel.tsx");
 
 export const useDMAppChannelApplicationId = tmp3;
-export const isDMAppChannel = function isDMAppChannel(channel) {
+export function isDMAppChannel(channel) {
   if (channel.type === metroRequire.DM) {
     if (!channel.isSystemDM()) {
       const user = UserStore.getUser(channel.getRecipientId());
@@ -174,7 +174,7 @@ export const isDMAppChannel = function isDMAppChannel(channel) {
             id = user.id;
           }
           const application = getApplication(id);
-          const tmp8Result = tmp8(6847);
+          const tmp8Result = tmp8(6870);
           return tmp8Result.hasApplicationFlag(application, hasOwnProperty.DM_OPENS_ACTIVITY);
         }
       }
@@ -182,4 +182,4 @@ export const isDMAppChannel = function isDMAppChannel(channel) {
     }
   }
   return false;
-};
+}

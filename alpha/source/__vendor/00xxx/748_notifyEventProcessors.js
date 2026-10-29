@@ -14,7 +14,7 @@ let _require, closure_0, closure_1, dependencyMap;
 
 function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
   let closure_2;
-  const f87201 = (result) => {
+  const f88208 = (result) => {
     const sum = closure_2 + 1;
     let tmp5 = result;
     if (tmp5) {
@@ -37,7 +37,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
         }
         const tmp9Result = _mod703;
         if (tmp9Result.isThenable(tmp4Result)) {
-          nextPromise = tmp4Result.then(f87201);
+          nextPromise = tmp4Result.then(f88208);
         } else {
           const sum1 = sum + 1;
           closure_0 = tmp;
@@ -63,7 +63,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
               }
               const tmp9Result2 = _mod703;
               if (tmp9Result2.isThenable(tmp15Result)) {
-                nextPromise1 = tmp15Result.then(f87201);
+                nextPromise1 = tmp15Result.then(f88208);
               } else {
                 nextPromise1 = _notifyEventProcessors(tmp15Result, tmp, tmp2, sum1 + 1);
               }
@@ -104,7 +104,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
       }
       const tmp5Result = tmp5(703);
       if (tmp5Result.isThenable(tmpResult)) {
-        nextPromise = tmpResult.then(f87201);
+        nextPromise = tmpResult.then(f88208);
       } else {
         nextPromise = _notifyEventProcessors(tmpResult, arg1, arg2, arg3 + 1);
       }
@@ -115,7 +115,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const notifyEventProcessors = function notifyEventProcessors(arg0, tmp15Result, arg2) {
+export function notifyEventProcessors(arg0, tmp15Result, arg2) {
   let num = arg3;
   if (arg3 === undefined) {
     num = 0;
@@ -137,4 +137,4 @@ export const notifyEventProcessors = function notifyEventProcessors(arg0, tmp15R
     const obj3 = SyncPromise;
     return obj3.rejectedSyncPromise(tmp16);
   }
-};
+}

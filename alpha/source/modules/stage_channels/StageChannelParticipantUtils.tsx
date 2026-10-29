@@ -1,19 +1,19 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11642
+// Function ID: 11643
 // Name: StageChannelParticipantUtils
-// Dependencies: [1101, 5058, 1125, 2]
+// Dependencies: [1101, 5059, 1125, 2]
 // Exports: participantMemberInfo
 
-// Module 11588 (StageChannelParticipantUtils)
+// Module 11642 (StageChannelParticipantUtils)
 import DurationsDefault from "Durations" /* 1101 */;
 import intl6 from "intl" /* 1125 */;
-import UserUtils from "UserUtils" /* 5058 */;
+import UserUtils from "UserUtils" /* 5059 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");
 
-export const participantMemberInfo = function participantMemberInfo(participant) {
+export function participantMemberInfo(participant) {
   const obj = UserUtils;
   if (obj.isNewUser(participant.user)) {
     const intl5 = tmp(1125).intl;
@@ -59,4 +59,4 @@ export const participantMemberInfo = function participantMemberInfo(participant)
     }
     return stringResult;
   }
-};
+}

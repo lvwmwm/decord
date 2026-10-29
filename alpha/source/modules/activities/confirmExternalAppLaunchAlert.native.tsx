@@ -1,23 +1,23 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11508
+// Function ID: 11509
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2023, 21, 5004, 558, 576, 5705, 11455, 1125, 5270, 5696, 5280, 5944, 2]
+// Dependencies: [19, 17, 2024, 21, 5005, 558, 576, 5707, 11509, 1125, 5271, 5698, 5281, 5946, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11454 (confirmExternalAppLaunchAlert)
+// Module 11508 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import Constants from "Constants" /* 2023 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11455 */;
+import Constants from "Constants" /* 2024 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11509 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBut
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5280).Button;
+    const Button = tmp(5281).Button;
     intl = tmp(1125).intl;
     const tmp8 = hasOwnProperty(Button, obj2);
     cResult[1] = tmp8;
@@ -219,7 +219,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBut
 });
 const result = size.fileFinishedImporting("modules/activities/confirmExternalAppLaunchAlert.native.tsx");
 
-export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAlert(arg0) {
+export function confirmExternalAppLaunchAlert(arg0) {
   let application;
   let intl;
   let intl2;
@@ -232,4 +232,4 @@ export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAl
   intl = intl4.intl;
   intl2 = intl4.intl;
   return resolve(show(obj));
-};
+}

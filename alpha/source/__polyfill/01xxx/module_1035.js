@@ -12,7 +12,7 @@ let _require, dependencyMap;
 
 const AppState = react_native.AppState;
 
-export const onThisSpanEnd = function onThisSpanEnd(on, arg1, arg2) {
+export function onThisSpanEnd(on, arg1, arg2) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   on.on("spanEnd", (arg0) => {
@@ -20,7 +20,7 @@ export const onThisSpanEnd = function onThisSpanEnd(on, arg1, arg2) {
       closure_1(arg0);
     }
   });
-};
+}
 export const adjustTransactionDuration = (on, activeSpan, arg2) => {
   let closure_1;
   _require = activeSpan;
@@ -58,8 +58,8 @@ export const adjustTransactionDuration = (on, activeSpan, arg2) => {
   }
 };
 export const ignoreEmptyBackNavigation = (on, c4) => {
-  const f88227 = (arg0) => {
-    const obj = c4(f88227[2]);
+  const f89234 = (arg0) => {
+    const obj = c4(f89234[2]);
     const data = obj.spanToJSON(arg0).data;
     let prop;
     if (null !== data) {
@@ -69,20 +69,20 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
     }
     return true === prop;
   };
-  const f88228 = () => {
-    const debug = c4(f88227[2]).debug;
+  const f89235 = () => {
+    const debug = c4(f89234[2]).debug;
     debug.log("Not sampling transaction as route has been seen before. Pass ignoreEmptyBackNavigationTransactions = false to disable this feature.");
   };
   if (on) {
     if (c4) {
-      const tmpResult = c4(f88227[1]);
+      const tmpResult = c4(f89234[1]);
       if (tmpResult.isRootSpan(c4)) {
-        const tmpResult2 = c4(f88227[1]);
+        const tmpResult2 = c4(f89234[1]);
         if (tmpResult2.isSentrySpan(c4)) {
           on.on("spanEnd", (arg0) => {
             let tmp = closure_0;
             if (arg0 === closure_0) {
-              if (f88229(tmp)) {
+              if (f89236(tmp)) {
                 closure_0 = tmp;
                 let obj = closure_0(closure_1[2]);
                 const spanDescendants = obj.getSpanDescendants(tmp);
@@ -98,7 +98,7 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
                   }
                   return tmp;
                 }).length <= 0) {
-                  f88230(tmp);
+                  f89237(tmp);
                   tmp._sampled = false;
                 }
               }
@@ -121,10 +121,10 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
   let closure_1 = arg2;
   let closure_2 = arg3;
   let closure_0 = c4;
-  const f88229 = (arg0) => {
+  const f89236 = (arg0) => {
     const obj = on(closure_1[2]);
     const spanToJSONResult = obj.spanToJSON(arg0);
-    let tmp2 = spanToJSONResult.description === f88229;
+    let tmp2 = spanToJSONResult.description === f89236;
     if (tmp2) {
       const data = spanToJSONResult.data;
       let prop;
@@ -136,13 +136,13 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
       tmp2 = !prop;
     }
     if (tmp2) {
-      tmp2 = f88230();
+      tmp2 = f89237();
     }
     return tmp2;
   };
-  const f88230 = (arg0) => {
+  const f89237 = (arg0) => {
     const debug = on(closure_1[2]).debug;
-    debug.log("Discarding empty \"" + f88229 + "\" transaction that never received route information.");
+    debug.log("Discarding empty \"" + f89236 + "\" transaction that never received route information.");
     const obj = on;
     if (null != on) {
       obj.recordDroppedEvent("sample_rate", "transaction");
@@ -159,7 +159,7 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
           on.on("spanEnd", (arg0) => {
             let tmp = closure_0;
             if (arg0 === closure_0) {
-              if (f88229(tmp)) {
+              if (f89236(tmp)) {
                 closure_0 = tmp;
                 let obj = closure_0(closure_1[2]);
                 const spanDescendants = obj.getSpanDescendants(tmp);
@@ -175,7 +175,7 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
                   }
                   return tmp;
                 }).length <= 0) {
-                  f88230(tmp);
+                  f89237(tmp);
                   tmp._sampled = false;
                 }
               }

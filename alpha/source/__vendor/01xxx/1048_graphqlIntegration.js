@@ -8,8 +8,8 @@
 import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 898 */;
 
 
-export const graphqlIntegration = function graphqlIntegration(endpoints) {
+export function graphqlIntegration(endpoints) {
   const obj = feedbackAsyncIntegration;
   const obj2 = { endpoints: endpoints.endpoints };
   return obj.graphqlClientIntegration(obj2);
-};
+}

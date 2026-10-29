@@ -1,14 +1,14 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12553
+// Function ID: 12554
 // Name: ArrowAngleLeftUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12500, 5704, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12554, 5706, 2]
 
-// Module 12499 (ArrowAngleLeftUpIcon)
+// Module 12553 (ArrowAngleLeftUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5704 */;
-import AssetRegistry from "AssetRegistry" /* 12500 */;
+import BaseIconImage2 from "BaseIconImage" /* 5706 */;
+import AssetRegistry from "AssetRegistry" /* 12554 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArrowAngle
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5704).BaseIconImage;
+  const BaseIconImage = tmp(5706).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

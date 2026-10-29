@@ -1,30 +1,30 @@
-// Module ID: 19134
-// Function ID: 19135
+// Module ID: 19369
+// Function ID: 19370
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 4856, 7666, 4916, 5035, 8325, 15908, 8633, 1084, 558, 8632, 1997, 576, 1414, 5659, 7391, 504, 5635, 11, 584, 9699, 1125, 38, 6049, 10139, 8637, 6054, 8178, 1294, 1101, 2]
+// Dependencies: [5, 32, 19, 502, 4857, 7689, 4917, 5036, 8347, 16144, 8655, 1084, 558, 8654, 1998, 576, 1415, 5661, 7414, 504, 5636, 11, 584, 9731, 1125, 38, 6053, 10172, 8659, 6058, 8201, 1294, 1101, 2]
 
-// Module 19134 (InteractionModalUtils)
+// Module 19369 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Server from "Server" /* 1997 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5659 */;
-import DraftStore from "DraftStore" /* 7666 */;
-import ComponentStateContext from "ComponentStateContext" /* 8632 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9699 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 15908 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import Server from "Server" /* 1998 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5661 */;
+import DraftStore from "DraftStore" /* 7689 */;
+import ComponentStateContext from "ComponentStateContext" /* 8654 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9731 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 16144 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8633 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8655 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f139253 = (type) => {
+  const f140826 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f139253) };
+      const obj4 = { type: type.type, components: components.map(f140826) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f139253)[0] };
+                const obj21 = { type: type.type, component: items.map(f140826)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f139253);
+  return arr.map(f140826);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -214,7 +214,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -306,7 +306,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -336,7 +336,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFirstTe
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1997).ComponentType.ACTION_ROW && first.components[0].id === arg0;
+  let tmp6 = type === tmp(1998).ComponentType.ACTION_ROW && first.components[0].id === arg0;
   if (!tmp6) {
     let type1;
     if (first != null) {
@@ -360,7 +360,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFirstTe
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1997).ComponentType.ACTION_ROW && first.components[0].id === arg0;
+  let tmp6 = type === tmp(1998).ComponentType.ACTION_ROW && first.components[0].id === arg0;
   if (!tmp6) {
     let type1;
     if (first != null) {
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -620,7 +620,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;
@@ -678,7 +678,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -715,7 +715,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

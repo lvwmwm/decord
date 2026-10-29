@@ -1,12 +1,12 @@
-// Module ID: 18306
-// Function ID: 18307
+// Module ID: 18540
+// Function ID: 18541
 // Name: showMembersManagementActionSheet
-// Dependencies: [1389, 1125, 5246, 18307, 1999, 7402, 18308, 7326, 2]
+// Dependencies: [1389, 1125, 5247, 18541, 2000, 7425, 18542, 7350, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 18306 (showMembersManagementActionSheet)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+// Module 18540 (showMembersManagementActionSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ export default function showMembersManagementActionSheet(guild) {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18307, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18541, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
   intl = guild(1125).intl;
   const items = [obj];
   if (canPrune == null) {
-    const tmpResult = guild(7402);
+    const tmpResult = guild(7425);
     canPrune = tmpResult.canPruneGuildMembers(guild, UserStore.getCurrentUser());
   }
   if (canPrune) {
@@ -40,7 +40,7 @@ export default function showMembersManagementActionSheet(guild) {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18308, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18542, dependencyMap.paths), "MembersPrune", obj2);
         },
       isDestructive: true
     };
@@ -48,10 +48,10 @@ export default function showMembersManagementActionSheet(guild) {
     intl2 = tmp(1125).intl;
     push(obj2);
   }
-  const tmpResult2 = guild(7326);
+  const tmpResult2 = guild(7350);
   const result = tmpResult2.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
-export const getMembersManagementActions = function getMembersManagementActions(guild) {
+export function getMembersManagementActions(guild) {
   let canPrune;
   let intl;
   let intl2;
@@ -64,13 +64,13 @@ export const getMembersManagementActions = function getMembersManagementActions(
     action() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18307, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18541, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
   intl = guild(1125).intl;
   const items = [obj];
   if (canPrune == null) {
-    const tmpResult = guild(7402);
+    const tmpResult = guild(7425);
     canPrune = tmpResult.canPruneGuildMembers(guild, UserStore.getCurrentUser());
   }
   if (canPrune) {
@@ -79,7 +79,7 @@ export const getMembersManagementActions = function getMembersManagementActions(
       action() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18308, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18542, dependencyMap.paths), "MembersPrune", obj2);
         },
       variant: "destructive"
     };
@@ -88,4 +88,4 @@ export const getMembersManagementActions = function getMembersManagementActions(
     push(obj2);
   }
   return items;
-};
+}

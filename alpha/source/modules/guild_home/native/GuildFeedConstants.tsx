@@ -1,9 +1,9 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18519
+// Function ID: 18520
 // Name: GuildFeedConstants
 // Dependencies: [2]
 
-// Module 18285 (GuildFeedConstants)
+// Module 18519 (GuildFeedConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_home/native/GuildFeedConstants.tsx");

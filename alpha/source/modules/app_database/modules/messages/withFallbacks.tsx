@@ -1,17 +1,17 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7653
+// Function ID: 7654
 // Name: withFallbacks
-// Dependencies: [32, 4856, 6736, 1084, 7624, 7628, 7629, 2]
+// Dependencies: [32, 4857, 6759, 1084, 7647, 7651, 7652, 2]
 // Exports: withFallbacks
 
-// Module 7630 (withFallbacks)
+// Module 7653 (withFallbacks)
 import Constants from "Constants" /* 1084 */;
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7624 */;
-import isReadableChannel from "isReadableChannel" /* 7628 */;
-import isLimitedChannel from "isLimitedChannel" /* 7629 */;
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7647 */;
+import isReadableChannel from "isReadableChannel" /* 7651 */;
+import isLimitedChannel from "isLimitedChannel" /* 7652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 function isSaveableChannel(item10025) {
@@ -37,7 +37,7 @@ function mergeInto(extendedMemoryLru, allEntries) {
 const ChannelTypes = Constants.ChannelTypes;
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/withFallbacks.tsx");
 
-export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
+export function withFallbacks(extendedMemoryLru, arg1) {
   if (extendedMemoryLru.totalLength >= arg1) {
     return extendedMemoryLru;
   } else {
@@ -82,4 +82,4 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
     mergeInto(extendedMemoryLru, extendedMemoryLru);
     return extendedMemoryLru;
   }
-};
+}

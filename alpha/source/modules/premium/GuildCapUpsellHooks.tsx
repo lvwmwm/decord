@@ -1,16 +1,16 @@
-// Module ID: 7343
-// Function ID: 7344
+// Module ID: 7367
+// Function ID: 7368
 // Name: GuildCapUpsellHooks
-// Dependencies: [4878, 1389, 1084, 558, 576, 504, 7344, 2050, 2]
+// Dependencies: [4879, 1389, 1084, 558, 576, 504, 7368, 2051, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium
 
-// Module 7343 (GuildCapUpsellHooks)
+// Module 7367 (GuildCapUpsellHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import HotspotStore2 from "HotspotStore" /* 7344 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import HotspotStore2 from "HotspotStore" /* 7368 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -125,12 +125,12 @@ function hasIncreasedGuildCap(currentUser) {
 let result = size.fileFinishedImporting("modules/premium/GuildCapUpsellHooks.tsx");
 
 export const useShouldShowInlineGuildCapUpsell = tmp2;
-export const hideInlineGuildCapUpsell = function hideInlineGuildCapUpsell() {
+export function hideInlineGuildCapUpsell() {
   const obj = HotspotStore2;
   obj.hideHotspot(HotspotStore2.HotspotLocations.GUILD_CAP_INLINE_UPSELL);
-};
+}
 export { hasIncreasedGuildCap };
-export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
+export function isAtGuildCapAndNonPremium() {
   let tmp = GuildStore.getGuildCount() >= MAX_USER_GUILDS;
   if (tmp) {
     const currentUser = UserStore.getCurrentUser();
@@ -146,4 +146,4 @@ export const isAtGuildCapAndNonPremium = function isAtGuildCapAndNonPremium() {
     tmp = !result;
   }
   return tmp;
-};
+}

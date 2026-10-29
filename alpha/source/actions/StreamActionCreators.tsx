@@ -1,32 +1,32 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7887
+// Function ID: 7888
 // Name: StreamActionCreators
-// Dependencies: [5, 5751, 7865, 7866, 6677, 502, 4856, 4878, 4907, 5666, 1084, 6678, 584, 6680, 38, 6030, 7867, 5746, 7901, 1294, 1101, 6711, 1272, 5914, 6669, 7448, 7450, 2]
+// Dependencies: [5, 5753, 7888, 7889, 6701, 502, 4857, 4879, 4908, 5668, 1084, 6702, 584, 6704, 38, 6034, 7890, 5748, 7924, 1294, 1101, 6734, 1272, 5916, 6693, 7471, 7473, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 7864 (StreamActionCreators)
+// Module 7887 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5914 */;
-import ChannelUtils from "ChannelUtils" /* 6030 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import Constants2 from "Constants" /* 6678 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7450 */;
-import transitionToStreamDefault from "transitionToStream" /* 7901 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5916 */;
+import ChannelUtils from "ChannelUtils" /* 6034 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import Constants2 from "Constants" /* 6702 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7473 */;
+import transitionToStreamDefault from "transitionToStream" /* 7924 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameConsoleStore from "GameConsoleStore" /* 5751 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7865 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7866 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
+import GameConsoleStore from "GameConsoleStore" /* 5753 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7888 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7889 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ function watchStream(stream, forceMultiple) {
       obj3.dispatch(obj4);
       const tmp18 = importDefault;
       if (null != guildId) {
-        const tmp12Result = tmp12(7867);
+        const tmp12Result = tmp12(7890);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -78,7 +78,7 @@ function watchStream(stream, forceMultiple) {
         tmp22 = forceMultiple;
       }
       if (!tmp22) {
-        const tmp18Result = tmp18(5746);
+        const tmp18Result = tmp18(5748);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
     } else {
@@ -113,7 +113,7 @@ let obj = function _fetchStreamPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let obj = function _fetchStreamPreview() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp40) {
           closure_5 = tmp40;
           if (0 === c6) {
@@ -215,7 +215,7 @@ obj = function _notifyStreamStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -254,7 +254,7 @@ obj = function _notifyStreamStart() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp5) {
         let closure_3 = tmp5;
@@ -273,7 +273,7 @@ obj = function _notifyStreamStart() {
 const StreamTypes = Constants2.StreamTypes;
 let result = size.fileFinishedImporting("actions/StreamActionCreators.tsx");
 
-export const startStream = function startStream(guildId, channelId, arg2) {
+export function startStream(guildId, channelId, arg2) {
   let CALL;
   const dispatch = DispatcherDefault.dispatch;
   DispatcherDefault;
@@ -285,21 +285,21 @@ export const startStream = function startStream(guildId, channelId, arg2) {
   obj = { type: "STREAM_START", streamType: CALL, guildId, channelId, appContext: constants.APP };
   const merged = Object.assign(arg2);
   dispatch(obj);
-};
-export const setStreamPaused = function setStreamPaused(currentUserActiveStream, paused) {
+}
+export function setStreamPaused(currentUserActiveStream, paused) {
   obj = StreamKeyUtils;
   const encodeStreamKeyResult = obj.encodeStreamKey(currentUserActiveStream);
   const obj2 = DispatcherDefault;
   const obj3 = { type: "STREAM_SET_PAUSED", streamKey: encodeStreamKeyResult, paused };
   obj2.dispatch(obj3);
-};
+}
 export { watchStream };
-export const toggleSelfStreamHidden = function toggleSelfStreamHidden(channelId, selfStreamHidden) {
+export function toggleSelfStreamHidden(channelId, selfStreamHidden) {
   obj = DispatcherDefault;
   const obj2 = { type: "STREAM_UPDATE_SELF_HIDDEN", channelId, selfStreamHidden };
   obj.dispatch(obj2);
-};
-export const watchStreamAndTransitionToStream = function watchStreamAndTransitionToStream(stream, forceMultiple) {
+}
+export function watchStreamAndTransitionToStream(stream, forceMultiple) {
   const channelId = stream.channelId;
   if (null == stream.guildId) {
     watchStream(stream, forceMultiple);
@@ -318,8 +318,8 @@ export const watchStreamAndTransitionToStream = function watchStreamAndTransitio
       isChannelFullResult = obj.isChannelFull(channel, tmp6, GuildStore);
     }
   }
-};
-export const stopStream = function stopStream(streamKey) {
+}
+export function stopStream(streamKey) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -339,8 +339,8 @@ export const stopStream = function stopStream(streamKey) {
   const obj3 = DispatcherDefault;
   const obj4 = { type: "STREAM_STOP", streamKey, appContext: constants.APP };
   obj3.dispatch(obj4);
-};
-export const closeStream = function closeStream(encodeStreamKeyResult1, arg1) {
+}
+export function closeStream(encodeStreamKeyResult1, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -348,19 +348,19 @@ export const closeStream = function closeStream(encodeStreamKeyResult1, arg1) {
   obj = DispatcherDefault;
   const obj2 = { type: "STREAM_CLOSE", streamKey: encodeStreamKeyResult1, canShowFeedback: flag };
   obj.dispatch(obj2);
-};
-export const fetchStreamPreview = function fetchStreamPreview() {
+}
+export function fetchStreamPreview() {
   return obj(...arguments);
-};
-export const setLayout = function setLayout(layout) {
+}
+export function setLayout(layout) {
   obj = DispatcherDefault;
   const obj2 = { type: "STREAM_LAYOUT_UPDATE", layout };
   obj.dispatch(obj2);
-};
-export const notifyStreamStart = function notifyStreamStart() {
+}
+export function notifyStreamStart() {
   return obj(...arguments);
-};
-export const updateStreamSettings = function updateStreamSettings(noTrack) {
+}
+export function updateStreamSettings(noTrack) {
   if (true !== noTrack.noTrack) {
     obj = StreamQualityUtils;
     const result = obj.trackStreamSettingsUpdate(noTrack.preset, noTrack.resolution, noTrack.frameRate, noTrack.soundshareEnabled);
@@ -370,14 +370,14 @@ export const updateStreamSettings = function updateStreamSettings(noTrack) {
   DispatcherDefault;
   const merged = Object.assign(noTrack);
   dispatch(obj2);
-};
-export const changeStreamRegion = function changeStreamRegion(encodeStreamKeyResult, preferredRegion) {
+}
+export function changeStreamRegion(encodeStreamKeyResult, preferredRegion) {
   const HTTP = HTTPUtils.HTTP;
   const request = { url: map1.STREAM(encodeStreamKeyResult), body: obj, oldFormErrors: true, rejectWithError: true };
   obj = { region: preferredRegion };
   HTTP.patch(request);
-};
-export const stopOwnStream = function stopOwnStream(arg0) {
+}
+export function stopOwnStream(arg0) {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -399,8 +399,8 @@ export const stopOwnStream = function stopOwnStream(arg0) {
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj4);
   }
-};
-export const joinPrivateChannelAndWatchStream = function joinPrivateChannelAndWatchStream(arg0, streamKey) {
+}
+export function joinPrivateChannelAndWatchStream(arg0, streamKey) {
   let closure_0;
   let closure_1;
   let inChannel;
@@ -441,4 +441,4 @@ export const joinPrivateChannelAndWatchStream = function joinPrivateChannelAndWa
     };
     obj.call(closure_0, false, false, null, fn);
   });
-};
+}

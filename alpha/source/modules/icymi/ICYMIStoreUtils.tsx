@@ -1,16 +1,16 @@
-// Module ID: 18182
-// Function ID: 18183
+// Module ID: 18416
+// Function ID: 18417
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6045, 6806, 8860, 1084, 18183, 8877, 8873, 7242, 1999, 1084, 11, 8878, 558, 576, 504, 2]
+// Dependencies: [5, 6049, 6829, 8863, 1084, 18417, 8880, 8876, 7266, 2000, 1084, 11, 8881, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 18182 (ICYMIStoreUtils)
+// Module 18416 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1084 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 18183 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 18417 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import ICYMIStore from "ICYMIStore" /* 8860 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import ICYMIStore from "ICYMIStore" /* 8863 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp35) {
         c4 = 3;
@@ -412,7 +412,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIMess
 });
 const result = size.fileFinishedImporting("modules/icymi/ICYMIStoreUtils.tsx");
 
-export const getViewableFeedItemsArray = function getViewableFeedItemsArray(viewableItems) {
+export function getViewableFeedItemsArray(viewableItems) {
   let tmp3;
   const items = [...ICYMIStore.getUnreadDisplayItems(), ...ICYMIStore.getReadDisplayItems()];
   let id = null;
@@ -445,13 +445,13 @@ export const getViewableFeedItemsArray = function getViewableFeedItemsArray(view
     }
     return items1;
   }
-};
-export const hydrateNextPage = function hydrateNextPage() {
+}
+export function hydrateNextPage() {
   return obj(...arguments);
-};
-export const regenerateFeedAndClearReadStates = function regenerateFeedAndClearReadStates() {
+}
+export function regenerateFeedAndClearReadStates() {
   return obj(...arguments);
-};
+}
 export const useGravityMessage = tmp2;
 export const useGravityMessageItem = tmp3;
 export const useICYMIMessage = tmp4;

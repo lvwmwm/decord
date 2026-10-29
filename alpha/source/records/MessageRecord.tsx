@@ -1,15 +1,15 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 4948
+// Function ID: 4949
 // Name: MessageRecord
-// Dependencies: [1404, 1084, 1402, 4948, 5638, 5261, 5639, 2]
+// Dependencies: [1404, 1084, 1402, 4949, 5639, 5262, 5640, 2]
 // Exports: ModeratorReport, isMessageComponentsV2
 
-// Module 4947 (MessageRecord)
+// Module 4948 (MessageRecord)
 import FlagUtils from "FlagUtils" /* 1402 */;
-import ReactionUtils from "ReactionUtils" /* 4948 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5261 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5638 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5639 */;
+import ReactionUtils from "ReactionUtils" /* 4949 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5262 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5639 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
 import Record from "Record" /* 1404 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -588,7 +588,7 @@ export function ModeratorReport(arg0) {
   return obj;
 }
 export { MessageSnapshotRecord };
-export const isMessageComponentsV2 = function isMessageComponentsV2(contentMessage) {
+export function isMessageComponentsV2(contentMessage) {
   const obj = FlagUtils;
   return obj.hasFlag(contentMessage.flags, IS_COMPONENTS_V2.IS_COMPONENTS_V2);
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16308
+// Function ID: 16309
 // Name: VoiceMessagesPlaybackManager
-// Dependencies: [17, 5005, 4907, 16073, 2001, 584, 5948, 1381, 2]
+// Dependencies: [17, 5006, 4908, 16309, 2002, 584, 5950, 1381, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 16072 (VoiceMessagesPlaybackManager)
+// Module 16308 (VoiceMessagesPlaybackManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_nativeDefault from "react-native" /* 5948 */;
-import react_nativeDefault2 from "react-native" /* 16073 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import react_nativeDefault from "react-native" /* 5950 */;
+import react_nativeDefault2 from "react-native" /* 16309 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 const AppState = react_native.AppState;
@@ -88,15 +88,15 @@ const voiceMessagesPlaybackManager = new VoiceMessagesPlaybackManager();
 let result = size.fileFinishedImporting("modules/voice_messages/native/VoiceMessagesPlaybackManager.tsx");
 
 export default voiceMessagesPlaybackManager;
-export const pauseCurrentAudioPlayer = function pauseCurrentAudioPlayer(arg0) {
+export function pauseCurrentAudioPlayer(arg0) {
   const obj = react_nativeDefault2;
   obj.pauseCurrentPlayer(arg0);
-};
-export const playCurrentAudioPlayer = function playCurrentAudioPlayer() {
+}
+export function playCurrentAudioPlayer() {
   const obj = react_nativeDefault2;
   const result = obj.maybePlayCurrentPlayer();
-};
-export const handleVoiceMessageDeleted = function handleVoiceMessageDeleted(id) {
+}
+export function handleVoiceMessageDeleted(id) {
   const obj = react_nativeDefault2;
   const result = obj.handleVoiceMessageDeleted(id);
-};
+}

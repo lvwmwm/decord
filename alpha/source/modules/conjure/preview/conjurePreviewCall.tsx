@@ -1,10 +1,10 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10871
+// Function ID: 10872
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 10795 (conjurePreviewCall)
+// Module 10871 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["conjure-", "vibegrations-"];
@@ -17,13 +17,13 @@ class PreviewFrameCallTimeout extends Error {
 }
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewCall.tsx");
 
-export const previewCallTypes = function previewCallTypes(arg0) {
+export function previewCallTypes(arg0) {
   closure_0 = arg0;
   const mapped = closure_0.map((item) => "" + item + closure_0);
   const obj = { requests: mapped, results: mapped.map((item) => "" + item + "-result"), acks: mapped.map((item) => "" + item + "-ack") };
   return obj;
-};
-export const isResultEnvelope = function isResultEnvelope(parsed, acks, id) {
+}
+export function isResultEnvelope(parsed, acks, id) {
   if (typeof parsed === "object") {
     if (null != parsed) {
       const type = parsed.type;
@@ -38,9 +38,9 @@ export const isResultEnvelope = function isResultEnvelope(parsed, acks, id) {
     }
   }
   return false;
-};
+}
 export { PreviewFrameCallTimeout };
-export const controlAnswerTimeoutMs = function controlAnswerTimeoutMs(timeoutMs) {
+export function controlAnswerTimeoutMs(timeoutMs) {
   timeoutMs = timeoutMs.timeoutMs;
   let num = 20000;
   if (typeof timeoutMs === "number") {
@@ -56,7 +56,7 @@ export const controlAnswerTimeoutMs = function controlAnswerTimeoutMs(timeoutMs)
     }
   }
   return num + 4000;
-};
+}
 export const PREVIEW_FRAME_WAIT_MS = 6000;
 export const CONTROL_RETRY_MS = 400;
 export const CONTROL_END_TIMEOUT_MS = 2000;

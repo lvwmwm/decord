@@ -1,17 +1,17 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14819
+// Function ID: 14820
 // Name: useUserProfileActivity
-// Dependencies: [19, 9417, 2011, 5748, 5754, 558, 576, 504, 10671, 14586, 8654, 8866, 8862, 2]
+// Dependencies: [19, 9448, 2012, 5750, 5756, 558, 576, 504, 10704, 14820, 8676, 8869, 8865, 2]
 
-// Module 14585 (useUserProfileActivity)
+// Module 14819 (useUserProfileActivity)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 5754 */;
-import utils from "utils" /* 8654 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8866 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14586 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9417 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import Constants from "Constants" /* 5756 */;
+import utils from "utils" /* 8676 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8869 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14820 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9448 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   let tmp8 = null;
   if (stateFromStores) {
-    tmp8 = userProfileLiveActivities(10671)(arg0);
+    tmp8 = userProfileLiveActivities(10704)(arg0);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PresenceStore];
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
       }
     }
     found = arr5.filter((extra) => {
-      const f152581 = (item) => {
+      const f154212 = (item) => {
         let result = null != item;
         if (result) {
           const obj = closure_2_0(closure_2_2[12]);
@@ -210,8 +210,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         let result;
         const tmpResult = ContentInventoryTypes;
         if (tmpResult.isListenedSessionEntry(extra)) {
-          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f152581);
-          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f152581);
+          result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f154212);
+          const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f154212);
         } else {
           const tmpResult3 = ContentInventoryTypes;
           if (tmpResult3.isWatchedMediaEntry(extra)) {
@@ -277,7 +277,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f162164 = (item) => {
+        const f163836 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[12]);
@@ -293,8 +293,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
           let result;
           const tmpResult = closure_2_0(stateFromStores2[11]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f162164);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f162164);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f163836);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f163836);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[11]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

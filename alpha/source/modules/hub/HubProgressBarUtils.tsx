@@ -1,19 +1,19 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 14041
+// Function ID: 14042
 // Name: HubProgressBarUtils
-// Dependencies: [19, 1243, 6535, 9096, 1084, 558, 576, 504, 1208, 1125, 1385, 1402, 2]
+// Dependencies: [19, 1243, 6559, 9099, 1084, 558, 576, 504, 1208, 1125, 1385, 1402, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep
 
-// Module 13808 (HubProgressBarUtils)
+// Module 14041 (HubProgressBarUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9096 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 9099 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHubProgre
 });
 const result = size.fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
 
-export const getHubProgressTitleForStep = function getHubProgressTitleForStep(nextHubProgressStep) {
+export function getHubProgressTitleForStep(nextHubProgressStep) {
   if (preloaded_user_settings.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
     const intl3 = tmp(1125).intl;
     return intl3.string(intl4.t.iNR25n);
@@ -215,9 +215,9 @@ export const getHubProgressTitleForStep = function getHubProgressTitleForStep(ne
     const tmpResult = GlobalUtils;
     tmpResult.assertNever(nextHubProgressStep);
   }
-};
+}
 export const useHubProgressBarCompletedSteps = tmp2;
-export const getNextHubProgressStep = function getNextHubProgressStep(hubProgressBarCompletedSteps) {
+export function getNextHubProgressStep(hubProgressBarCompletedSteps) {
   for (const item10007 of HUB_PROGRESS_STEP_ORDER) {
     let tmp = item10007;
     if (hubProgressBarCompletedSteps.has(item10007)) {
@@ -228,4 +228,4 @@ export const getNextHubProgressStep = function getNextHubProgressStep(hubProgres
     }
   }
   return null;
-};
+}

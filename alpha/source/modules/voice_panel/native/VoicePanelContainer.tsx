@@ -1,18 +1,18 @@
-// Module ID: 18779
-// Function ID: 18780
+// Module ID: 19012
+// Function ID: 19013
 // Name: VoicePanelContainer
-// Dependencies: [19, 4856, 6839, 21, 558, 576, 504, 18780, 18949, 4919, 5070, 2]
+// Dependencies: [19, 4857, 6862, 21, 558, 576, 504, 19013, 19182, 4920, 5071, 2]
 
-// Module 18779 (VoicePanelContainer)
+// Module 19012 (VoicePanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 4919 */;
-import native from "native" /* 5070 */;
-import VoicePanelUIDefault from "VoicePanelUI" /* 18780 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 18949 */;
+import _slicedToArray from "_slicedToArray" /* 4920 */;
+import native from "native" /* 5071 */;
+import VoicePanelUIDefault from "VoicePanelUI" /* 19013 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 19182 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import VoicePanelStore from "VoicePanelStore" /* 6839 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import VoicePanelStore from "VoicePanelStore" /* 6862 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

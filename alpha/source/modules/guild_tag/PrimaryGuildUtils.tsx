@@ -9,7 +9,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");
 
-export const isUserPrimaryGuildEqual = function isUserPrimaryGuildEqual(primaryGuild, primary_guild) {
+export function isUserPrimaryGuildEqual(primaryGuild, primary_guild) {
   if (null != primaryGuild) {
     let tmp;
     if (null != primary_guild) {
@@ -18,8 +18,8 @@ export const isUserPrimaryGuildEqual = function isUserPrimaryGuildEqual(primaryG
     return tmp;
   }
   tmp = primaryGuild === primary_guild;
-};
-export const ensureUserPrimaryGuild = function ensureUserPrimaryGuild(primary_guild) {
+}
+export function ensureUserPrimaryGuild(primary_guild) {
   if (null == primary_guild) {
     return null;
   } else if ("identityGuildId" in primary_guild) {
@@ -29,4 +29,4 @@ export const ensureUserPrimaryGuild = function ensureUserPrimaryGuild(primary_gu
     ({ identity_guild_id: obj.identityGuildId, identity_enabled: obj.identityEnabled, tag: obj.tag, badge: obj.badge } = primary_guild);
     return obj;
   }
-};
+}

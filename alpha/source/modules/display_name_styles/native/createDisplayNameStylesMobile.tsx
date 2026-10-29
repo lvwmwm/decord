@@ -1,19 +1,19 @@
-// Module ID: 8354
-// Function ID: 8355
+// Module ID: 8376
+// Function ID: 8377
 // Name: createDisplayNameStylesMobile
-// Dependencies: [5005, 4916, 1389, 1409, 2]
+// Dependencies: [5006, 4917, 1389, 1409, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 8354 (createDisplayNameStylesMobile)
+// Module 8376 (createDisplayNameStylesMobile)
 import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");
 
-export const createDisplayNameStylesMobile = function createDisplayNameStylesMobile(author, member) {
+export function createDisplayNameStylesMobile(author, member) {
   const displayNameStylesEnabled = AccessibilityStore.displayNameStylesEnabled;
   const currentUser = UserStore.getCurrentUser();
   let displayNameStyles = author.displayNameStyles;
@@ -40,8 +40,8 @@ export const createDisplayNameStylesMobile = function createDisplayNameStylesMob
       return { fontId };
     }
   }
-};
-export const getDisplayNameFontIdForMobileUser = function getDisplayNameFontIdForMobileUser(user, guildId1) {
+}
+export function getDisplayNameFontIdForMobileUser(user, guildId1) {
   if (null != user) {
     let member = null;
     if (null != guildId1) {
@@ -85,4 +85,4 @@ export const getDisplayNameFontIdForMobileUser = function getDisplayNameFontIdFo
       }
     }
   }
-};
+}

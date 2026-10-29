@@ -11,7 +11,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const items = [CLIENT_ADDRESS_ATTRIBUTE.CLIENT_ADDRESS_ATTRIBUTE, CLIENT_ADDRESS_ATTRIBUTE.CLIENT_PORT_ATTRIBUTE, CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOURCE_URI_ATTRIBUTE];
 const set = new Set(items);
 
-export const filterMcpPiiFromSpanData = function filterMcpPiiFromSpanData(arg0, _BooleanResult) {
+export function filterMcpPiiFromSpanData(arg0, _BooleanResult) {
   let reduced = arg0;
   if (!_BooleanResult) {
     const tmp2 = globalThis;
@@ -28,4 +28,4 @@ export const filterMcpPiiFromSpanData = function filterMcpPiiFromSpanData(arg0, 
     }, {});
   }
   return reduced;
-};
+}

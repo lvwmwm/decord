@@ -1,21 +1,21 @@
-// Module ID: 19699
-// Function ID: 19700
+// Module ID: 19921
+// Function ID: 19922
 // Name: AVErrorContext
-// Dependencies: [2011, 5750, 4907, 7849, 5775, 6680, 2]
+// Dependencies: [2012, 5752, 4908, 7872, 5777, 6704, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 19699 (AVErrorContext)
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5775 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6680 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7849 */;
+// Module 19921 (AVErrorContext)
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");
 
-export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext() {
+export function getVoiceChannelErrorContext() {
   let mediaSessionId;
   let name1;
   let name2;
@@ -45,8 +45,8 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   }
   const merged = Object.assign(obj4);
   return obj;
-};
-export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
+}
+export function getStreamErrorContext(streamKey) {
   let channelId;
   let mediaSessionId;
   let name1;
@@ -87,8 +87,8 @@ export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
   }
   const merged = Object.assign(obj3);
   return obj2;
-};
-export const getCommonErrorContext = function getCommonErrorContext() {
+}
+export function getCommonErrorContext() {
   let name1;
   let name2;
   const videoDevices = MediaEngineStore.getVideoDevices();
@@ -111,4 +111,4 @@ export const getCommonErrorContext = function getCommonErrorContext() {
     name2 = tmp8.name;
   }
   return obj2;
-};
+}

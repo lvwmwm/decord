@@ -1,26 +1,26 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16234
+// Function ID: 16235
 // Name: validateOpenInviteDialog
-// Dependencies: [4856, 4878, 4936, 1084, 9290, 9296, 6813, 6812, 9300, 8938, 2]
+// Dependencies: [4857, 4879, 4937, 1084, 9294, 9300, 6836, 6835, 9304, 8941, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 15997 (validateOpenInviteDialog)
+// Module 16234 (validateOpenInviteDialog)
 import Constants from "Constants" /* 1084 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6812 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import canViewInviteModal from "canViewInviteModal" /* 8938 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9290 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9300 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6835 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import canViewInviteModal from "canViewInviteModal" /* 8941 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9294 */;
+import RPCErrorDefault from "RPCError" /* 9300 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9304 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import size from "module_2" /* 2 */;
 
 const RPCErrors = Constants.RPCErrors;
 const result = size.fileFinishedImporting("modules/rpc/helpers/validateOpenInviteDialog.tsx");
 
-export const validateOpenInviteDialog = function validateOpenInviteDialog(socket) {
+export function validateOpenInviteDialog(socket) {
   let channel;
   let source;
   let surface;
@@ -93,4 +93,4 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
     const tmpResult21 = new tmpResult5(obj, "command not available from \"" + socket.source.type + "\" transport");
     throw tmpResult21;
   }
-};
+}

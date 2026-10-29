@@ -1,12 +1,12 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 9866
+// Function ID: 9867
 // Name: useStoreFrontPrice
-// Dependencies: [19, 1084, 558, 576, 2050, 2]
+// Dependencies: [19, 1084, 558, 576, 2051, 2]
 
-// Module 9834 (useStoreFrontPrice)
+// Module 9866 (useStoreFrontPrice)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

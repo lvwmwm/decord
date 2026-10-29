@@ -1,14 +1,14 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14937
+// Function ID: 14938
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 4856, 558, 576, 1125, 10663, 504, 7448, 2]
+// Dependencies: [5, 19, 4857, 558, 576, 1125, 10696, 504, 7471, 2]
 
-// Module 14702 (usePrivateChannelCall)
+// Module 14937 (usePrivateChannelCall)
 import intl3 from "intl" /* 1125 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10663 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
             c2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
             closure_129_2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

@@ -1,15 +1,15 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7860
+// Function ID: 7861
 // Name: AdDataUtils
-// Dependencies: [32, 19, 7838, 7839, 7840, 558, 576, 2]
+// Dependencies: [32, 19, 7861, 7862, 7863, 558, 576, 2]
 // Exports: getAdUser
 
-// Module 7837 (AdDataUtils)
-import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7839 */;
-import AdUserActionCreators from "AdUserActionCreators" /* 7840 */;
+// Module 7860 (AdDataUtils)
+import AdDataUtilsConstants from "AdDataUtilsConstants" /* 7862 */;
+import AdUserActionCreators from "AdUserActionCreators" /* 7863 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdUserStore from "AdUserStore" /* 7838 */;
+import AdUserStore from "AdUserStore" /* 7861 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdUser(ar
 });
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
 
-export const getAdUser = function getAdUser(questContentName) {
+export function getAdUser(questContentName) {
   const adUser = AdUserStore.adUser;
   if (null == adUser) {
     let resolved;
@@ -147,5 +147,5 @@ export const getAdUser = function getAdUser(questContentName) {
     return resolved;
   }
   resolved = Promise.resolve(adUser);
-};
+}
 export const useAdUser = tmp2;

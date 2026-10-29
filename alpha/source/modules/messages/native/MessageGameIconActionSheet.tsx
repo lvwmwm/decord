@@ -1,17 +1,17 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 13045
+// Function ID: 13046
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2042, 1084, 21, 5004, 1381, 587, 558, 576, 504, 1199, 5270, 1125, 2064, 5301, 2]
+// Dependencies: [19, 17, 2043, 1084, 21, 5005, 1381, 587, 558, 576, 504, 1199, 5271, 1125, 2065, 5302, 2]
 
-// Module 12824 (MessageGameIconActionSheet)
+// Module 13045 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
                   }
                   const obj5 = { startExpanded: true, children: closure_6(View, obj6) };
                   obj6 = { style: contentWrapper, children: tmp30 };
-                  BottomSheet = tmp(5301).BottomSheet;
+                  BottomSheet = tmp(5302).BottomSheet;
                   const tmp37 = closure_6(BottomSheet, obj5);
                   cResult[27] = tmp4.contentWrapper;
                   cResult[28] = tmp30;
@@ -185,14 +185,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
         }
         const obj10 = { variant: "text-sm/medium", children: items3 };
         items3 = [tmp17, " ", tmp19];
-        const tmp25 = closure_7(applicationId(5270).Text, obj10);
+        const tmp25 = closure_7(applicationId(5271).Text, obj10);
         cResult[16] = tmp17;
         cResult[17] = tmp19;
         cResult[18] = tmp25;
         tmp23 = tmp25;
       }
       const obj11 = { style: tmp4.timestamp, variant: "text-xs/medium", color: "text-muted", children: messageTimestamp };
-      const tmp16 = closure_6(applicationId(5270).Text, obj11);
+      const tmp16 = closure_6(applicationId(5271).Text, obj11);
       cResult[10] = messageTimestamp;
       cResult[11] = tmp4.timestamp;
       cResult[12] = tmp16;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    BottomSheet = tmp2(5301).BottomSheet;
+    BottomSheet = tmp2(5302).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1199).Icon;
@@ -237,9 +237,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "text-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5270).Text, obj8), ];
+    items2 = [closure_6(applicationId(5271).Text, obj8), ];
     const obj9 = { variant: "text-sm/medium", children: items3 };
-    const Text = tmp2(5270).Text;
+    const Text = tmp2(5271).Text;
     const intl = tmp2(1125).intl;
     const obj10 = { applicationName: stateFromStores.name };
     items3 = [intl.format(applicationId(1125).t.J3s8JP, obj10), " ", ];

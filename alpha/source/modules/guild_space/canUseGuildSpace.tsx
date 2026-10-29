@@ -1,13 +1,13 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7388
+// Function ID: 7389
 // Name: canUseGuildSpace
-// Dependencies: [4878, 4936, 1084, 558, 576, 504, 7366, 2]
+// Dependencies: [4879, 4937, 1084, 558, 576, 504, 7389, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin
 
-// Module 7365 (canUseGuildSpace)
+// Module 7388 (canUseGuildSpace)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,10 +112,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseG
 });
 const result = size.fileFinishedImporting("modules/guild_space/canUseGuildSpace.tsx");
 
-export const isGuildSpaceAdmin = function isGuildSpaceAdmin(arg0) {
+export function isGuildSpaceAdmin(arg0) {
   const canResult = null != arg0 && PermissionStore.can(Permissions.MANAGE_GUILD, arg0);
   return canResult;
-};
+}
 export const useIsGuildSpaceAdmin = tmp2;
 export function canUseGuildSpace(guild, getChannelIdForGuildTransition) {
   return false;

@@ -1,22 +1,22 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10272
+// Function ID: 10273
 // Name: CommandPermissionUtils
-// Dependencies: [4860, 4878, 6019, 1084, 10240, 9689, 5670, 1997, 1096, 5639, 38, 7665, 7668, 2]
+// Dependencies: [4861, 4879, 6023, 1084, 10273, 9721, 5672, 1998, 1096, 5640, 38, 7688, 7691, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 10239 (CommandPermissionUtils)
+// Module 10272 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1084 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import Server from "Server" /* 1997 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5639 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7668 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9689 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import Server from "Server" /* 1998 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7691 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9721 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImpersonating) {
@@ -69,7 +69,7 @@ const HasAccessResult = { ALLOWED: 0, [0]: "ALLOWED", NSFW_NOT_ALLOWED: 1, [1]: 
 const result = size.fileFinishedImporting("modules/application_commands/CommandPermissionUtils.tsx");
 
 export { HasAccessResult };
-export const hasAccess = function hasAccess(type, arg1, applicationAllowedForChannel) {
+export function hasAccess(type, arg1, applicationAllowedForChannel) {
   let allowNsfw;
   let applicationAllowedForUser;
   let commandBotId;
@@ -227,8 +227,8 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
   } else {
     return obj.WRONG_COMMAND_TYPE;
   }
-};
-export const computeAllowedForChannel = function computeAllowedForChannel(permissions, context, guild_id) {
+}
+export function computeAllowedForChannel(permissions, context, guild_id) {
   if (null == permissions) {
     return null;
   } else {
@@ -257,5 +257,5 @@ export const computeAllowedForChannel = function computeAllowedForChannel(permis
       return permission;
     }
   }
-};
+}
 export { computeAllowedForUser };

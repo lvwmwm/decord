@@ -1,10 +1,10 @@
-// Module ID: 6959
-// Function ID: 6960
+// Module ID: 6983
+// Function ID: 6984
 // Name: ChangeEmailStore
 // Dependencies: [570, 1271, 558, 576, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken
 
-// Module 6959 (ChangeEmailStore)
+// Module 6983 (ChangeEmailStore)
 import react_native from "react-native" /* 1271 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f98055 = () => state.setState((errors) => {
+const f99070 = () => state.setState((errors) => {
   let obj2;
   const obj = { errors: obj2 };
   obj2 = {};
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
     const fn2 = function l(arg0) {
       let closure_1 = arg0;
       const obj = react_native;
-      obj.batchUpdates(f98055);
+      obj.batchUpdates(f99070);
     };
     cResult[2] = arg0;
     cResult[3] = fn2;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
       let state;
       let closure_1 = arg0;
       let obj = react_native;
-      obj.batchUpdates(f98055);
+      obj.batchUpdates(f99070);
     }
   ];
   return items;
@@ -97,7 +97,7 @@ function setChangeEmailError(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const obj = require("react-native");
-  obj.batchUpdates(f98055);
+  obj.batchUpdates(f99070);
 }
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
 
@@ -105,16 +105,16 @@ export const ChangeEmailFields = { EMAIL: "email", EMAIL_TOKEN: "email_token", P
 export { useChangeEmailStore };
 export { setChangeEmailError };
 export const useChangeEmailError = tmp3;
-export const setEmailToken = function setEmailToken(emailToken) {
+export function setEmailToken(emailToken) {
   _require = emailToken;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { emailToken };
     return obj.setState(obj);
   });
-};
-export const resetChangeEmailStore = function resetChangeEmailStore() {
+}
+export function resetChangeEmailStore() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => state.setState(closure_1_2, true));
-};
+}

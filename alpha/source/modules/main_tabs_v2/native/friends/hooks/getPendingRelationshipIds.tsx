@@ -1,12 +1,12 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18748
+// Function ID: 18749
 // Name: getPendingRelationshipIds
-// Dependencies: [4946, 1084, 2]
+// Dependencies: [4947, 1084, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 18514 (getPendingRelationshipIds)
+// Module 18748 (getPendingRelationshipIds)
 import Constants from "Constants" /* 1084 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 function filterFromPending(arg0) {
@@ -16,7 +16,7 @@ function filterFromPending(arg0) {
 const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/hooks/getPendingRelationshipIds.tsx");
 
-export const getPendingRelationshipIds = function getPendingRelationshipIds(mutableRelationships) {
+export function getPendingRelationshipIds(mutableRelationships) {
   const pendingIncomingIds = [];
   const pendingOutgoingIds = [];
   const spamIds = [];
@@ -59,4 +59,4 @@ export const getPendingRelationshipIds = function getPendingRelationshipIds(muta
   const reversed1 = pendingOutgoingIds.reverse();
   const reversed2 = spamIds.reverse();
   return { pendingIncomingIds, pendingOutgoingIds, spamIds, ignoredUserIds };
-};
+}

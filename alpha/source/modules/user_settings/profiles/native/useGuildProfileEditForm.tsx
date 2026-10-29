@@ -1,19 +1,19 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 16462
+// Function ID: 16463
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8686, 7738, 4916, 4878, 6736, 1389, 1084, 5029, 558, 576, 504, 12879, 4851, 11228, 16226, 11224, 5031, 7121, 16121, 6748, 16122, 6409, 1125, 8693, 2]
+// Dependencies: [109, 5, 19, 8689, 7760, 4917, 4879, 6759, 1389, 1084, 5030, 558, 576, 504, 13100, 4852, 11282, 16463, 11278, 5032, 7145, 16358, 6771, 16359, 6433, 1125, 8696, 2]
 
-// Module 16225 (useGuildProfileEditForm)
+// Module 16462 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8686 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8689 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SortedGuildStore_mod from "SortedGuildStore" /* 6736 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SortedGuildStore_mod from "SortedGuildStore" /* 6759 */;
 import UserStore_mod from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -275,7 +275,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -375,7 +375,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
                 }
               }
               pendingThemeColors = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -661,7 +661,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -761,7 +761,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

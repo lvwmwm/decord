@@ -1,20 +1,19 @@
 // Module ID: 15829
 // Function ID: 15830
-// Dependencies: [15814]
+// Dependencies: [15815]
 
 // Module 15829
-import _mod15814 from "module_15814" /* 15814 */;
+import _mod15815 from "module_15815" /* 15815 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod15814((1).toString);
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
+export default (arg0, arg1) => {
+  const tmp = _mod15815(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
   }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+  return prerelease;
 };

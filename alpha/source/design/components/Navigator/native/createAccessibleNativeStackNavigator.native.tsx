@@ -1,15 +1,15 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15789
+// Function ID: 15790
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 576, 7131, 1503, 9777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7155, 1504, 9809, 2]
 // Exports: default
 
-// Module 15553 (createAccessibleNativeStackNavigator)
+// Module 15789 (createAccessibleNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Link from "Link" /* 1503 */;
-import Navigator from "Navigator" /* 7131 */;
-import NativeStackView2 from "NativeStackView" /* 9777 */;
+import Link from "Link" /* 1504 */;
+import Navigator from "Navigator" /* 7155 */;
+import NativeStackView2 from "NativeStackView" /* 9809 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -157,7 +157,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accessi
                     tmp17 = cResult[20];
                   }
                   const tmpResult = Link;
-                  const navigationBuilder = tmpResult.useNavigationBuilder(tmp(1503).StackRouter, tmp17);
+                  const navigationBuilder = tmpResult.useNavigationBuilder(tmp(1504).StackRouter, tmp17);
                   ({ state, describe, navigation, NavigationContent } = navigationBuilder);
                   const tmp20 = closure_6(navigationBuilder.descriptors);
                   if (cResult[21] === describe) {
@@ -184,7 +184,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accessi
                       }
                     }
                   }
-                  const NativeStackView = tmp(9777).NativeStackView;
+                  const NativeStackView = tmp(9809).NativeStackView;
                   const merged = Object.assign(tmp10);
                   const tmp26 = <NativeStackView state={state} navigation={navigation} descriptors={tmp20} describe={describe} />;
                   cResult[21] = describe;

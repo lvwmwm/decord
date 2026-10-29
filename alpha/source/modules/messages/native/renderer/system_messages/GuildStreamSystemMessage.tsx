@@ -1,23 +1,23 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8432
+// Function ID: 8433
 // Name: GuildStreamSystemMessage
-// Dependencies: [6678, 8370, 8351, 8353, 1125, 8355, 2]
+// Dependencies: [6702, 8392, 8373, 8375, 1125, 8377, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 8410 (GuildStreamSystemMessage)
+// Module 8432 (GuildStreamSystemMessage)
 import intl2 from "intl" /* 1125 */;
-import Constants from "Constants" /* 6678 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8370 */;
+import Constants from "Constants" /* 6702 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8392 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8355);
+const createCommonMessageDefault = tmp(8377);
 const StreamTypes = Constants.StreamTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");
 
-export const createGuildStreamSystemMessage = function createGuildStreamSystemMessage(message) {
+export function createGuildStreamSystemMessage(message) {
   let channel_id;
   let formatToPartsResult;
   let guild_id;
@@ -53,4 +53,4 @@ export const createGuildStreamSystemMessage = function createGuildStreamSystemMe
   }
   const merged2 = Object.assign(createCommonMessageDefault(message));
   return obj5;
-};
+}

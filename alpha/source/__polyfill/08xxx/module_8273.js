@@ -1,17 +1,25 @@
 // Module ID: 8273
 // Function ID: 8274
-// Dependencies: [8271]
+// Dependencies: []
 
 // Module 8273
-import _mod8271 from "module_8271" /* 8271 */;
+let c0 = 18761;
+let c1 = 19789;
 
-let obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
-obj[2] = {
-  name: "InteroperabilityVersion",
-  description(value) {
-    const obj = _mod8271;
-    return obj.getStringValue(value);
+export default {
+  BIG_ENDIAN: 19789,
+  LITTLE_ENDIAN: 18761,
+  getByteOrder(getUint16, c5) {
+    if (getUint16.getUint16(c5) === c0) {
+      return c0;
+    } else if (getUint16.getUint16(c5) === c1) {
+      return c1;
+    } else {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Illegal byte order value. Faulty image.");
+      throw error;
+    }
   }
 };
-
-export default obj;

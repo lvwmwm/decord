@@ -8,9 +8,8 @@ import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 692 */;
 import _mod879 from "module_879" /* 879 */;
 
 
-export const createReleaseFromGlobalReleaseConstants = function createReleaseFromGlobalReleaseConstants() {
+export function createReleaseFromGlobalReleaseConstants() {
   let name;
-  let version;
   const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
   if (SENTRY_RELEASE) {
     ({ name, version } = SENTRY_RELEASE);
@@ -21,10 +20,9 @@ export const createReleaseFromGlobalReleaseConstants = function createReleaseFro
       }
     }
   }
-};
-export const getDefaultRelease = function getDefaultRelease() {
+}
+export function getDefaultRelease() {
   let name;
-  let version;
   const obj = _mod879;
   if (!obj.notWeb()) {
     const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
@@ -40,4 +38,4 @@ export const getDefaultRelease = function getDefaultRelease() {
     }
     return combined;
   }
-};
+}

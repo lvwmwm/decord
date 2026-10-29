@@ -1,14 +1,14 @@
-// Module ID: 18487
-// Function ID: 18488
+// Module ID: 18721
+// Function ID: 18722
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7766, 4946, 558, 576, 504, 2]
+// Dependencies: [32, 7788, 4947, 558, 576, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount
 
-// Module 18487 (useFriendRequestCounts)
+// Module 18721 (useFriendRequestCounts)
 import react from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7766 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const result = size.fileFinishedImporting("modules/people/hooks/useFriendRequest
 
 export { getIncomingFriendRequestCount };
 export const useIncomingFriendRequestCount = tmp2;
-export const getOutgoingFriendRequestCount = function getOutgoingFriendRequestCount(items1) {
+export function getOutgoingFriendRequestCount(items1) {
   let obj;
   let obj2;
   let tmp = items1;
@@ -78,4 +78,4 @@ export const getOutgoingFriendRequestCount = function getOutgoingFriendRequestCo
   _slicedToArray(tmp, 2);
   const outgoingCount = obj.getOutgoingCount();
   return outgoingCount + obj2.getPendingOutgoingCount();
-};
+}

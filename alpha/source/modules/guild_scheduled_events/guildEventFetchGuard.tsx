@@ -1,14 +1,14 @@
-// Module ID: 8928
-// Function ID: 8929
+// Module ID: 8931
+// Function ID: 8932
 // Name: guildEventFetchGuard
-// Dependencies: [1101, 11, 8929, 569, 2]
+// Dependencies: [1101, 11, 8932, 569, 2]
 // Exports: forgetTransientGuildEventFetchFailures, guardGuildEventFetch, isGuildEventUnavailableError, isPlausibleGuildEventTarget, onGuildEventFetchRetryable, resetGuildEventFetchGuardForTest
 
-// Module 8928 (guildEventFetchGuard)
+// Module 8931 (guildEventFetchGuard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8929 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8932 */;
 import size from "module_2" /* 2 */;
 
 let set3;
@@ -18,7 +18,7 @@ const notifyRetryable2 = function notifyRetryable(arg0) {
   obj = map7;
   if (null != value) {
     obj.delete(arg0);
-    const item = value.forEach(f147236);
+    const item = value.forEach(f148785);
   }
 };
 const guard2 = function guard(arg0, arg1, arg2) {
@@ -123,7 +123,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
         let value20 = map7.get(value);
         if (null != value20) {
           let deleteResult6 = obj7.delete(value);
-          let item = value20.forEach(f147236);
+          let item = value20.forEach(f148785);
         }
         if (obj5.size <= map6) {
           break;
@@ -238,7 +238,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
               let value10 = map7.get(value);
               if (null != value10) {
                 let deleteResult5 = obj4.delete(value);
-                let item = value10.forEach(f147236);
+                let item = value10.forEach(f148785);
               }
               if (obj2.size <= map6) {
                 break;
@@ -252,7 +252,7 @@ const guard2 = function guard(arg0, arg1, arg2) {
             const tmp = closure_1_0;
             if (null != value) {
               obj.delete(tmp);
-              const item = value.forEach(f147236);
+              const item = value.forEach(f148785);
             }
           }));
           throw error;
@@ -352,7 +352,7 @@ function reset() {
   }
   map5.clear();
 }
-const f147236 = (fn) => fn();
+const f148785 = (fn) => fn();
 let c3 = 1024;
 const UTCResult = Date.UTC(2021, 0, 1);
 let result = 15 * DurationsDefault.Millis.MINUTE;
@@ -380,7 +380,7 @@ export const MAX_TRACKED_GUILD_EVENT_FETCHES = 1024;
 export const GUILD_EVENT_FOREGROUND_THROTTLE_MS = 2000;
 export const GUILD_EVENT_MIN_TIMESTAMP = UTCResult;
 export const GUILD_EVENT_FUTURE_SKEW_MS = result;
-export const isPlausibleGuildEventTarget = function isPlausibleGuildEventTarget(arg0, arg1) {
+export function isPlausibleGuildEventTarget(arg0, arg1) {
   let timestamp = arg2;
   if (arg2 === undefined) {
     const _Date = Date;
@@ -396,9 +396,9 @@ export const isPlausibleGuildEventTarget = function isPlausibleGuildEventTarget(
     }
   }
   return false;
-};
+}
 export { GuildEventUnavailableError };
-export const isGuildEventUnavailableError = function isGuildEventUnavailableError(status) {
+export function isGuildEventUnavailableError(status) {
   if (status instanceof GuildEventUnavailableError) {
     return true;
   } else {
@@ -416,8 +416,8 @@ export const isGuildEventUnavailableError = function isGuildEventUnavailableErro
     }
     return hasItem;
   }
-};
-export const guardGuildEventFetch = function guardGuildEventFetch(c0, c1, arg2, arg3) {
+}
+export function guardGuildEventFetch(c0, c1, arg2, arg3) {
   obj = arg3;
   if (arg3 === undefined) {
     obj = {};
@@ -449,16 +449,16 @@ export const guardGuildEventFetch = function guardGuildEventFetch(c0, c1, arg2, 
     return rejectResult;
   }
   rejectResult = navigation.guard(c0, c1, arg2, obj);
-};
+}
 export const guardGuildEventUserCountFetch = guard;
-export const onGuildEventFetchRetryable = function onGuildEventFetchRetryable(arg0, arg1, arg2) {
+export function onGuildEventFetchRetryable(arg0, arg1, arg2) {
   return navigation.onRetryable("" + arg0 + "/" + arg1, arg2);
-};
-export const forgetTransientGuildEventFetchFailures = function forgetTransientGuildEventFetchFailures() {
+}
+export function forgetTransientGuildEventFetchFailures() {
   result = navigation.forgetTransientFailures();
   const result1 = obj.forgetTransientFailures();
-};
-export const resetGuildEventFetchGuardForTest = function resetGuildEventFetchGuardForTest() {
+}
+export function resetGuildEventFetchGuardForTest() {
   navigation.reset();
   obj.reset();
-};
+}

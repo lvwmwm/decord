@@ -9,7 +9,7 @@ import SDK_VERSION3 from "SDK_VERSION" /* 702 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getGlobalSingleton = function getGlobalSingleton(arg0, fn) {
+export function getGlobalSingleton(arg0, fn) {
   let GLOBAL_OBJ = arg2;
   if (arg2 === undefined) {
     GLOBAL_OBJ = _mod697.GLOBAL_OBJ;
@@ -26,8 +26,8 @@ export const getGlobalSingleton = function getGlobalSingleton(arg0, fn) {
     tmp5 = tmp7;
   }
   return tmp5;
-};
-export const getMainCarrier = function getMainCarrier() {
+}
+export function getMainCarrier() {
   const GLOBAL_OBJ = _mod697.GLOBAL_OBJ;
   const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
   GLOBAL_OBJ.__SENTRY__ = tmp3;
@@ -37,8 +37,8 @@ export const getMainCarrier = function getMainCarrier() {
   tmp3[SDK_VERSION] = tmp3[SDK_VERSION3.SDK_VERSION] || {};
   tmp3[SDK_VERSION3.SDK_VERSION] || {};
   return _mod697.GLOBAL_OBJ;
-};
-export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+}
+export function getSentryCarrier(__SENTRY__) {
   const tmp = __SENTRY__.__SENTRY__ || {};
   __SENTRY__.__SENTRY__ = tmp;
   const SDK_VERSION = tmp.version || SDK_VERSION3.SDK_VERSION;
@@ -47,4 +47,4 @@ export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
   const tmp4 = tmp[SDK_VERSION3.SDK_VERSION] || {};
   tmp[SDK_VERSION2] = tmp4;
   return tmp4;
-};
+}

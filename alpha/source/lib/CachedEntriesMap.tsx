@@ -1,10 +1,10 @@
-// Module ID: 2037
-// Function ID: 2038
+// Module ID: 2038
+// Function ID: 2039
 // Name: CachedEntriesMap
-// Dependencies: [2038, 2]
+// Dependencies: [2039, 2]
 
-// Module 2037 (CachedEntriesMap)
-import FunctionUtils from "FunctionUtils" /* 2038 */;
+// Module 2038 (CachedEntriesMap)
+import FunctionUtils from "FunctionUtils" /* 2039 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("lib/CachedEntriesMap.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 10487
+// Function ID: 10488
 // Name: MediaKeyboardActionSheet
-// Dependencies: [19, 1626, 1084, 21, 558, 576, 5085, 1125, 10455, 10457, 10459, 5248, 5249, 1264, 5299, 8595, 10461, 1627, 10462, 5301, 2]
+// Dependencies: [19, 1627, 1084, 21, 558, 576, 5086, 1125, 10488, 10490, 10492, 5249, 5250, 1264, 5300, 8617, 10494, 1628, 10495, 5302, 2]
 
-// Module 10454 (MediaKeyboardActionSheet)
+// Module 10487 (MediaKeyboardActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import ImageIcon from "ImageIcon" /* 8595 */;
-import PollsIcon from "PollsIcon" /* 10455 */;
-import AttachmentIcon from "AttachmentIcon" /* 10457 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10459 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10461 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import ImageIcon from "ImageIcon" /* 8617 */;
+import PollsIcon from "PollsIcon" /* 10488 */;
+import AttachmentIcon from "AttachmentIcon" /* 10490 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10492 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10494 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

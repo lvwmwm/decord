@@ -1,65 +1,84 @@
 // Module ID: 12687
 // Function ID: 12688
-// Dependencies: [12660, 12664, 12636, 12643]
-// Exports: notifyEventProcessors
+// Dependencies: [12659]
 
 // Module 12687
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
+import List from "List" /* 12659 */;
 
-
-export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let num;
-  const f116359 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
+function getFirstMatchNode(node) {
+  if ("node" in node) {
+    node = node.node;
+  } else {
+    node = getFirstMatchNode(node.match[0]);
+  }
+  return node;
+}
+function getLastMatchNode(node) {
+  if ("node" in node) {
+    node = node.node;
+  } else {
+    node = getLastMatchNode(node.match[node.match.length - 1]);
+  }
+  return node;
+}
+let obj = {
+  matchFragments(arg0, value, matched, arg3, arg4) {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg3;
+    let closure_3 = arg4;
+    const items = [];
+    if (null !== matched.matched) {
+      function findFragments(matched) {
+        if (null !== matched.syntax) {
+          if (matched.syntax.type === closure_2) {
+            if (matched.syntax.name === closure_3) {
+              let node;
+              let node2;
+              if ("node" in matched) {
+                node = matched.node;
+              } else if ("node" in matched.match[0]) {
+                node = str.node;
+              } else {
+                node = closure_2(str.match[0]);
+              }
+              if ("node" in matched) {
+                node2 = matched.node;
+              } else if ("node" in matched.match[matched.match.length - 1]) {
+                node2 = str2.node;
+              } else {
+                node2 = closure_3(str2.match[str2.match.length - 1]);
+              }
+              const syntax = node.syntax;
+              syntax.walk(node2, function(arg0, arg1, parent) {
+                if (arg0 === node) {
+                  let iter = arg1;
+                  const self = this;
+                  const self2 = this;
+                  const obj2 = new List();
+                  obj2.appendData(iter.data);
+                  while (iter.data !== node2) {
+                    iter = iter.next;
+                    if (null === iter) {
+                      break;
+                    }
+                  }
+                  const obj = { parent, nodes: obj2 };
+                  items.push(obj);
+                }
+              });
+            }
+          }
         }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f150788);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f116359);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
+        if (Array.isArray(matched.match)) {
+          const match = matched.match;
+          const item = match.forEach(findFragments);
         }
       }
+      findFragments(matched.matched);
     }
-    let tmp12 = fn(tmp4);
-  };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_12660").SyncPromise(f116359);
-  return syncPromise;
+    return items;
+  }
 };
+
+export default obj;

@@ -1,20 +1,20 @@
-// Module ID: 6687
-// Function ID: 6688
+// Module ID: 6711
+// Function ID: 6712
 // Name: StreamPermissionUtils
-// Dependencies: [5751, 4860, 4934, 4878, 4936, 5666, 1084, 6674, 6030, 6688, 6697, 558, 576, 504, 2]
+// Dependencies: [5753, 4861, 4935, 4879, 4937, 5668, 1084, 6698, 6034, 6712, 6721, 558, 576, 504, 2]
 // Exports: getStreamEligibleChannels
 
-// Module 6687 (StreamPermissionUtils)
+// Module 6711 (StreamPermissionUtils)
 import Constants from "Constants" /* 1084 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import ChannelUtils from "ChannelUtils" /* 6030 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6674 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6688 */;
-import GameConsoleStore from "GameConsoleStore" /* 5751 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import ChannelUtils from "ChannelUtils" /* 6034 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6698 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6712 */;
+import GameConsoleStore from "GameConsoleStore" /* 5753 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6697);
+      const tmp11Result = tmp11(6721);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {
@@ -151,7 +151,7 @@ export { canStreamInChannel };
 export { StreamUnavailableReasons };
 export { canWatchStream };
 export const useCanWatchStream = tmp2;
-export const getStreamEligibleChannels = function getStreamEligibleChannels(arg0, GuildStore, PermissionStore) {
+export function getStreamEligibleChannels(arg0, GuildStore, PermissionStore) {
   const items = [];
   const tmp = arg0[GUILD_VOCAL_CHANNELS_KEY];
   for (const item10011 of tmp) {
@@ -163,4 +163,4 @@ export const getStreamEligibleChannels = function getStreamEligibleChannels(arg0
     continue;
   }
   return items;
-};
+}

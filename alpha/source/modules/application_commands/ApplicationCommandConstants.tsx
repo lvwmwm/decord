@@ -1,12 +1,12 @@
-// Module ID: 6019
-// Function ID: 6020
+// Module ID: 6023
+// Function ID: 6024
 // Name: ApplicationCommandConstants
-// Dependencies: [1125, 1997, 2]
+// Dependencies: [1125, 1998, 2]
 // Exports: getValidationErrorText
 
-// Module 6019 (ApplicationCommandConstants)
+// Module 6023 (ApplicationCommandConstants)
 import intl10 from "intl" /* 1125 */;
-import Server from "Server" /* 1997 */;
+import Server from "Server" /* 1998 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
@@ -31,7 +31,7 @@ export const AUTOCOMPLETE_OPTION_DEBOUNCE_TIME = 500;
 export const EMPTY_COMMANDS = frozen;
 export const EMPTY_COMMANDS_SECTION = frozen1;
 export const APPLICATION_USER_INSTALL_BETA_USER_LIMIT = 200;
-export const getValidationErrorText = function getValidationErrorText(option) {
+export function getValidationErrorText(option) {
   if (null != option.choices) {
     const intl9 = intl10.intl;
     return intl9.string(intl10.t.xi5aah);
@@ -63,4 +63,4 @@ export const getValidationErrorText = function getValidationErrorText(option) {
       return intl.string(intl10.t.EkDo1i);
     }
   }
-};
+}

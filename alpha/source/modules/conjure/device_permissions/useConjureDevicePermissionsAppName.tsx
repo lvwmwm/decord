@@ -1,12 +1,12 @@
-// Module ID: 14237
-// Function ID: 14238
+// Module ID: 14473
+// Function ID: 14474
 // Name: useConjureDevicePermissionsAppName
-// Dependencies: [2042, 6808, 558, 576, 6818, 504, 2]
+// Dependencies: [2043, 6831, 558, 576, 6841, 504, 2]
 
-// Module 14237 (useConjureDevicePermissionsAppName)
-import isConjureApplicationDefault from "isConjureApplication" /* 6818 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+// Module 14473 (useConjureDevicePermissionsAppName)
+import isConjureApplicationDefault from "isConjureApplication" /* 6841 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

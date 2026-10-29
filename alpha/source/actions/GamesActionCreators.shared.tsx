@@ -1,22 +1,22 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11457
+// Function ID: 11458
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4855, 6807, 4856, 5748, 1084, 6811, 7446, 11397, 11402, 11404, 4925, 12768, 2028, 5662, 11437, 11436, 10804, 6815, 12771, 12772, 7448, 2]
+// Dependencies: [5, 4856, 6830, 4857, 5750, 1084, 6834, 7469, 11451, 11456, 11458, 4926, 12985, 2029, 5664, 11491, 11490, 10880, 6838, 12988, 12989, 7471, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11403 (tryJoinAsFrame)
+// Module 11457 (tryJoinAsFrame)
 import Constants from "Constants" /* 1084 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11397 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11402 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11404 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12772 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11451 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11456 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11458 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12989 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import size from "module_2" /* 2 */;
 
 let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;
@@ -47,7 +47,7 @@ let obj = function _tryJoinAsFrame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -194,7 +194,7 @@ obj = function _startFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -241,7 +241,7 @@ obj = function _startFrame() {
               frameParticipantId = undefined;
               referrerId = 1;
               source = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === referrerId) {
             if (arg0 === 1) {
@@ -348,7 +348,7 @@ obj = function _startActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -456,9 +456,9 @@ const ActivityFlags = Constants.ActivityFlags;
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
 const result = size.fileFinishedImporting("actions/GamesActionCreators.shared.tsx");
 
-export const tryJoinAsFrame = function tryJoinAsFrame() {
+export function tryJoinAsFrame() {
   return obj(...arguments);
-};
-export const tryStartAsEmbeddedApp = function tryStartAsEmbeddedApp() {
+}
+export function tryStartAsEmbeddedApp() {
   return obj(...arguments);
-};
+}

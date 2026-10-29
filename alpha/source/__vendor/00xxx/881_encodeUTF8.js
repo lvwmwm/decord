@@ -10,7 +10,7 @@ import _mod882 from "module_882" /* 882 */;
 let tmp;
 const _mod883 = tmp(883);
 
-export const encodeUTF8 = function encodeUTF8(json) {
+export function encodeUTF8(json) {
   const obj = _mod882;
   const sentryCarrier = obj.getSentryCarrier();
   if (!sentryCarrier.encodePolyfill) {
@@ -18,4 +18,4 @@ export const encodeUTF8 = function encodeUTF8(json) {
     const encodePolyfill = tmpResult.useEncodePolyfill();
   }
   return sentryCarrier.encodePolyfill(json);
-};
+}

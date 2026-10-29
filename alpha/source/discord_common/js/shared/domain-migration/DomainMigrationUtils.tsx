@@ -1,10 +1,10 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6927
+// Function ID: 6928
 // Name: DomainMigrationUtils
 // Dependencies: [2]
 // Exports: extractMessage, sendPostMessage
 
-// Module 6903 (DomainMigrationUtils)
+// Module 6927 (DomainMigrationUtils)
 import size from "module_2" /* 2 */;
 
 const DomainMigrationMessageFrom = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };
@@ -14,7 +14,7 @@ export const DomainMigrationEventType = { SKIP_MIGRATION: 0, [0]: "SKIP_MIGRATIO
 export { DomainMigrationMessageFrom };
 export const DOMAIN_MIGRATION_SUCCESS_KEY = "domainMigrationSuccess";
 export const DOMAIN_MIGRATION_FAILED_KEY = "domainMigrationFailed";
-export const sendPostMessage = function sendPostMessage(domainMigrationEvent, postMessage, arg2) {
+export function sendPostMessage(domainMigrationEvent, postMessage, arg2) {
   let MIGRATION_SOURCE_ORIGIN;
   let obj;
   if (arg2 === obj.MIGRATION_SOURCE_DOMAIN) {
@@ -26,8 +26,8 @@ export const sendPostMessage = function sendPostMessage(domainMigrationEvent, po
   }
   obj = { domainMigrationEvent };
   postMessage.postMessage(obj, MIGRATION_SOURCE_ORIGIN);
-};
-export const extractMessage = function extractMessage(origin, arg1) {
+}
+export function extractMessage(origin, arg1) {
   let MIGRATION_SOURCE_ORIGIN;
   if (arg1 === obj.MIGRATION_SOURCE_DOMAIN) {
     const _window2 = window;
@@ -47,4 +47,4 @@ export const extractMessage = function extractMessage(origin, arg1) {
     tmp5 = domainMigrationEvent;
   }
   return tmp5;
-};
+}

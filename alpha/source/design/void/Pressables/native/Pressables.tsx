@@ -1,20 +1,20 @@
-// Module ID: 6944
-// Function ID: 6945
+// Module ID: 6968
+// Function ID: 6969
 // Name: Pressables
-// Dependencies: [109, 19, 17, 5291, 1203, 21, 5004, 587, 558, 576, 1381, 6945, 2]
+// Dependencies: [109, 19, 17, 5292, 1203, 21, 5005, 587, 558, 576, 1381, 6969, 2]
 
-// Module 6944 (Pressables)
+// Module 6968 (Pressables)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1203 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import styleConstants from "styleConstants" /* 5291 */;
-import StyleSheetUtilsDefault from "StyleSheetUtils" /* 6945 */;
+import react_native2 from "react-native" /* 5292 */;
+import StyleSheetUtilsDefault from "StyleSheetUtils" /* 6969 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_3 = ["children", "androidRippleConfig", "style", "type", "activeOpac
 let closure_4 = ["activeOpacity", "ref"];
 let closure_5 = ["underlayColor", "ref"];
 const Pressable = react_native.Pressable;
-const IOS_POINTER_STYLE = styleConstants.IOS_POINTER_STYLE;
+const IOS_POINTER_STYLE = react_native2.IOS_POINTER_STYLE;
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;
 const jsx = Fragment.jsx;
 let obj = { pressedHighlight: obj2 };

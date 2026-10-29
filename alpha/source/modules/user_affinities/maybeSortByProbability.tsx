@@ -1,16 +1,16 @@
-// Module ID: 8475
-// Function ID: 8476
+// Module ID: 8497
+// Function ID: 8498
 // Name: maybeSortByProbability
-// Dependencies: [8476, 2]
+// Dependencies: [8498, 2]
 // Exports: maybeSortByProbability
 
-// Module 8475 (maybeSortByProbability)
-import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 8476 */;
+// Module 8497 (maybeSortByProbability)
+import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 8498 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");
 
-export const maybeSortByProbability = function maybeSortByProbability(reduced, stateFromStores, location) {
+export function maybeSortByProbability(reduced, stateFromStores, location) {
   let closure_0 = stateFromStores;
   let obj = VoiceUserAffinityExperiment;
   const voiceUserAffinitySortType = obj.getVoiceUserAffinitySortType(location);
@@ -69,4 +69,4 @@ export const maybeSortByProbability = function maybeSortByProbability(reduced, s
     tmp3 = sorted;
   }
   return tmp3;
-};
+}

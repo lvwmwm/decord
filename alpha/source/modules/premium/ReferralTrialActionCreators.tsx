@@ -1,17 +1,17 @@
-// Module ID: 7598
-// Function ID: 7599
+// Module ID: 7621
+// Function ID: 7622
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7599, 1403, 4907, 1084, 1294, 569, 1101, 584, 1254, 7601, 2]
+// Dependencies: [5, 7622, 1403, 4908, 1084, 1294, 569, 1101, 584, 1254, 7624, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7598 (ReferralTrialActionCreators)
+// Module 7621 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7599 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7622 */;
 import UserRecord from "UserRecord" /* 1403 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import Constants from "Constants" /* 1084 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -369,13 +369,13 @@ let result1 = size.fileFinishedImporting("modules/premium/ReferralTrialActionCre
 
 export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED", REFERRER_REWARD_GRANTED: 4, [4]: "REFERRER_REWARD_GRANTED" };
 export const CreateReferralStatus = obj;
-export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers() {
+export function fetchReferralEligibleUsers() {
   return obj(...arguments);
-};
-export const maybeFetchRecipientEligibility = function maybeFetchRecipientEligibility() {
+}
+export function maybeFetchRecipientEligibility() {
   return obj(...arguments);
-};
-export const fetchReferralsRemaining = function fetchReferralsRemaining() {
+}
+export function fetchReferralsRemaining() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_START" });
   const HTTP = HTTPUtils.HTTP;
@@ -455,13 +455,13 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
       obj.dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" });
     }
   });
-};
-export const createReferralTrials = function createReferralTrials() {
+}
+export function createReferralTrials() {
   return obj(...arguments);
-};
-export const createReferralTrial = function createReferralTrial() {
+}
+export function createReferralTrial() {
   return obj(...arguments);
-};
-export const resolveReferralTrialOffer = function resolveReferralTrialOffer() {
+}
+export function resolveReferralTrialOffer() {
   return obj(...arguments);
-};
+}

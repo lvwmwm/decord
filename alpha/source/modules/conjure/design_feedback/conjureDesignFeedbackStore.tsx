@@ -1,11 +1,11 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11865
+// Function ID: 11866
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 11812, 558, 576, 2]
+// Dependencies: [19, 11866, 558, 576, 2]
 // Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
 
-// Module 11811 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11812 */;
+// Module 11865 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11866 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 let result = size.fileFinishedImporting("modules/conjure/design_feedback/conjureDesignFeedbackStore.tsx");
 
 export { getConjureDesignFeedback };
-export const enterConjureDesignFeedback = function enterConjureDesignFeedback(arg0) {
+export function enterConjureDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -107,8 +107,8 @@ export const enterConjureDesignFeedback = function enterConjureDesignFeedback(ar
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const pauseConjureDesignFeedback = function pauseConjureDesignFeedback(arg0) {
+}
+export function pauseConjureDesignFeedback(arg0) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -134,8 +134,8 @@ export const pauseConjureDesignFeedback = function pauseConjureDesignFeedback(ar
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const exitConjureDesignFeedback = function exitConjureDesignFeedback(arg0) {
+}
+export function exitConjureDesignFeedback(arg0) {
   if (map.has(arg0)) {
     if (!active.active) {
       if (0 === active.annotations.length) {
@@ -155,8 +155,8 @@ export const exitConjureDesignFeedback = function exitConjureDesignFeedback(arg0
     }
     const result = obj.set(arg0, tmp);
   }
-};
-export const setConjureDesignFeedbackContext = function setConjureDesignFeedbackContext(arg0, context) {
+}
+export function setConjureDesignFeedbackContext(arg0, context) {
   let value = map.get(arg0);
   if (value == null) {
     value = active;
@@ -182,8 +182,8 @@ export const setConjureDesignFeedbackContext = function setConjureDesignFeedback
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const addConjureDesignAnnotation = function addConjureDesignAnnotation(arg0, authorId, target, comment) {
+}
+export function addConjureDesignAnnotation(arg0, authorId, target, comment) {
   let items;
   let CONJURE_DESIGN_ANCHOR_CENTER = arg4;
   if (arg4 === undefined) {
@@ -217,8 +217,8 @@ export const addConjureDesignAnnotation = function addConjureDesignAnnotation(ar
     return text;
   }
   const result = obj.set(arg0, obj2);
-};
-export const relocateConjureDesignAnnotations = function relocateConjureDesignAnnotations(arg0, size) {
+}
+export function relocateConjureDesignAnnotations(arg0, size) {
   let annotations;
   let closure_0 = size;
   let obj = map;
@@ -261,9 +261,9 @@ export const relocateConjureDesignAnnotations = function relocateConjureDesignAn
     }
     const result = obj.set(arg0, obj2);
   }
-};
+}
 export { canEditConjureDesignAnnotation };
-export const updateConjureDesignAnnotation = function updateConjureDesignAnnotation(arg0, arg1, arg2, arg3) {
+export function updateConjureDesignAnnotation(arg0, arg1, arg2, arg3) {
   let annotations1;
   let closure_0 = arg2;
   let closure_1 = arg3;
@@ -311,8 +311,8 @@ export const updateConjureDesignAnnotation = function updateConjureDesignAnnotat
     }
     const result = obj.set(arg0, obj2);
   }
-};
-export const removeConjureDesignAnnotation = function removeConjureDesignAnnotation(arg0, arg1, arg2) {
+}
+export function removeConjureDesignAnnotation(arg0, arg1, arg2) {
   let annotations1;
   let args;
   let closure_0 = arg2;
@@ -348,6 +348,6 @@ export const removeConjureDesignAnnotation = function removeConjureDesignAnnotat
     }
     const result = obj.set(arg0, obj2);
   }
-};
+}
 export { subscribeConjureDesignFeedback };
 export const useConjureDesignFeedback = tmp4;

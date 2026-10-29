@@ -1,10 +1,10 @@
-// Module ID: 5623
-// Function ID: 5624
+// Module ID: 5624
+// Function ID: 5625
 // Name: VEVOOStore
 // Dependencies: [570, 558, 1271, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5623 (VEVOOStore)
+// Module 5624 (VEVOOStore)
 import react_native from "react-native" /* 1271 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -19,19 +19,19 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
-export const useVisualEffectViewOverrides = function useVisualEffectViewOverrides() {
+export function useVisualEffectViewOverrides() {
   return state();
-};
-export const getVisualEffectViewOverrides = function getVisualEffectViewOverrides() {
+}
+export function getVisualEffectViewOverrides() {
   return state.getState();
-};
-export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
+}
+export function setVisualEffectViewOverides(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState(closure_0));
-};
-export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
+}
+export function clearVisualEffectViewOverrides() {
   const obj = react_native;
   obj.batchUpdates(() => state.setState(closure_1_2));
-};
+}

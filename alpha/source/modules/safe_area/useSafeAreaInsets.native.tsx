@@ -1,13 +1,13 @@
-// Module ID: 1630
-// Function ID: 1631
+// Module ID: 1631
+// Function ID: 1632
 // Name: useSafeAreaInsets
-// Dependencies: [1499, 1631, 558, 576, 2]
+// Dependencies: [1500, 1632, 558, 576, 2]
 // Exports: getSafeAreaInsets
 
-// Module 1630 (useSafeAreaInsets)
+// Module 1631 (useSafeAreaInsets)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1631 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1632 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,10 +36,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAre
 const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");
 
 export default tmp2;
-export const getSafeAreaInsets = function getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
+export function getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY) {
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
     DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
   }
   const obj = SafeAreaStoreDefault;
   return obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY].safeAreaInsets;
-};
+}

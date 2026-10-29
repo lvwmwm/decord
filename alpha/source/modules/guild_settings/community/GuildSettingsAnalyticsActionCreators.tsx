@@ -1,10 +1,10 @@
-// Module ID: 19510
-// Function ID: 19511
+// Module ID: 19743
+// Function ID: 19744
 // Name: GuildSettingsAnalyticsActionCreators
 // Dependencies: [109, 1084, 1294, 584, 2]
 // Exports: fetchEngagementOverview, fetchGrowthActivationOverview, fetchGrowthActivationRetention
 
-// Module 19510 (GuildSettingsAnalyticsActionCreators)
+// Module 19743 (GuildSettingsAnalyticsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -17,7 +17,7 @@ let closure_3 = ["interval_start_timestamp", "pct_retained"];
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsActionCreators.tsx");
 
-export const fetchEngagementOverview = function fetchEngagementOverview(guildId) {
+export function fetchEngagementOverview(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -41,8 +41,8 @@ export const fetchEngagementOverview = function fetchEngagementOverview(guildId)
     const obj2 = { type: "GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
-export const fetchGrowthActivationOverview = function fetchGrowthActivationOverview(guildId) {
+}
+export function fetchGrowthActivationOverview(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -66,8 +66,8 @@ export const fetchGrowthActivationOverview = function fetchGrowthActivationOverv
     const obj2 = { type: "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
-export const fetchGrowthActivationRetention = function fetchGrowthActivationRetention(guildId) {
+}
+export function fetchGrowthActivationRetention(guildId) {
   let obj;
   let obj5;
   _require = guildId;
@@ -99,4 +99,4 @@ export const fetchGrowthActivationRetention = function fetchGrowthActivationRete
     const obj2 = { type: "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE", error: body.body };
     obj.dispatch(obj2);
   });
-};
+}

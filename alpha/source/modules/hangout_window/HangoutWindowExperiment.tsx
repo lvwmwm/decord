@@ -1,13 +1,13 @@
-// Module ID: 18570
-// Function ID: 18571
+// Module ID: 18804
+// Function ID: 18805
 // Name: HangoutWindowExperiment
-// Dependencies: [5227, 5224, 558, 576, 2]
+// Dependencies: [5228, 5225, 558, 576, 2]
 // Exports: getHangoutWindowExperiment
 
-// Module 18570 (HangoutWindowExperiment)
+// Module 18804 (HangoutWindowExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
-import createExperiment from "module_5224" /* 5224 */;
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const result = size.fileFinishedImporting("modules/hangout_window/HangoutWindowE
 
 export const HangoutWindowExperiment = experiment;
 export const useHangoutWindowExperiment = tmp3;
-export const getHangoutWindowExperiment = function getHangoutWindowExperiment(guildId) {
+export function getHangoutWindowExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return experiment.getCurrentConfig(obj, { autoTrackExposure: true });
-};
+}

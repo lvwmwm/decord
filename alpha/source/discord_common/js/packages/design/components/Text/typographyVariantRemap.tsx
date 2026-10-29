@@ -1,17 +1,17 @@
-// Module ID: 5276
-// Function ID: 5277
+// Module ID: 5277
+// Function ID: 5278
 // Name: typographyVariantRemap
-// Dependencies: [32, 5277, 2]
+// Dependencies: [32, 5278, 2]
 // Exports: remapTypographyVariant
 
-// Module 5276 (typographyVariantRemap)
-import TypographyVariantRemap from "TypographyVariantRemap" /* 5277 */;
+// Module 5277 (typographyVariantRemap)
+import TypographyVariantRemap from "TypographyVariantRemap" /* 5278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Text/typographyVariantRemap.tsx");
 
-export const remapTypographyVariant = function remapTypographyVariant(cResult, arg1, arg2) {
+export function remapTypographyVariant(cResult, arg1, arg2) {
   const obj = TypographyVariantRemap.TYPOGRAPHY_EXPERIMENT_REMAPS[Symbol.iterator]();
   while (obj !== undefined) {
     let tmp3 = _slicedToArray(tmp, 2);
@@ -34,4 +34,4 @@ export const remapTypographyVariant = function remapTypographyVariant(cResult, a
     continue;
   }
   return arg1;
-};
+}

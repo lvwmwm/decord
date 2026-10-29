@@ -16,7 +16,7 @@ let c2 = "app:///index.android.bundle";
 
 export const ANDROID_DEFAULT_BUNDLE_NAME = "app:///index.android.bundle";
 export const IOS_DEFAULT_BUNDLE_NAME = "app:///main.jsbundle";
-export const createReactNativeRewriteFrames = function createReactNativeRewriteFrames() {
+export function createReactNativeRewriteFrames() {
   const obj = _mod693;
   const obj2 = {
     iteratee(platform) {
@@ -69,4 +69,4 @@ export const createReactNativeRewriteFrames = function createReactNativeRewriteF
     }
   };
   return obj.rewriteFramesIntegration(obj2);
-};
+}

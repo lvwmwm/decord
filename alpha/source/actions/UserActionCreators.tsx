@@ -1,10 +1,10 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8710
+// Function ID: 8711
 // Name: UserActionCreators
-// Dependencies: [5, 1403, 1389, 1084, 1085, 3, 1294, 584, 6711, 1358, 38, 6409, 2]
+// Dependencies: [5, 1403, 1389, 1084, 1085, 3, 1294, 584, 6734, 1358, 38, 6433, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8707 (UserActionCreators)
+// Module 8710 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1084 */;
 import RouteConstants from "RouteConstants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1358 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import UserStore from "UserStore" /* 1389 */;
@@ -47,7 +47,7 @@ let obj = function _fetchProfile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _fetchProfile() {
               closure_12 = undefined;
               join_request_id = 1;
               signal = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === join_request_id) {
             if (arg0 === 1) {
@@ -169,7 +169,7 @@ let obj = function _fetchProfile() {
             }
             connections_role_id = 0;
             signal = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp87) {
           closure_5 = tmp87;
@@ -203,7 +203,7 @@ obj = function _fetchMutualFriends() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _fetchMutualFriends() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp29) {
           closure_4 = tmp29;
@@ -283,7 +283,7 @@ let closure_8 = new LoggerDefault("UserProfileModalActionCreators");
 const tmp2 = new LoggerDefault("UserProfileModalActionCreators");
 const result = size.fileFinishedImporting("actions/UserActionCreators.tsx");
 
-export const fetchCurrentUser = function fetchCurrentUser() {
+export function fetchCurrentUser() {
   let closure_0;
   let obj3;
   obj = arg0;
@@ -311,8 +311,8 @@ export const fetchCurrentUser = function fetchCurrentUser() {
     const tmp4 = new UserRecord(body.body);
     return tmp4;
   });
-};
-export const acceptAgreements = function acceptAgreements() {
+}
+export function acceptAgreements() {
   let obj3;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -328,8 +328,8 @@ export const acceptAgreements = function acceptAgreements() {
   obj3 = HTTPUtils;
   const patchResult = patch(request);
   return patchResult.then(() => true, () => false);
-};
-export const setFlag = function setFlag(arg0, arg1) {
+}
+export function setFlag(arg0, arg1) {
   let obj2;
   let tmp5;
   const currentUser = UserStore.getCurrentUser();
@@ -346,8 +346,8 @@ export const setFlag = function setFlag(arg0, arg1) {
   const patch = HTTP.patch;
   obj2 = HTTPUtils;
   return patch(request);
-};
-export const getUser = function getUser(arg0) {
+}
+export function getUser(arg0) {
   let closure_0;
   let obj2;
   let resolved;
@@ -369,16 +369,16 @@ export const getUser = function getUser(arg0) {
     });
   }
   return resolved;
-};
-export const insertStaticUser = function insertStaticUser(user) {
+}
+export function insertStaticUser(user) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_UPDATE", user };
   obj.dispatch(obj2);
   return UserStore.getUser(user.id);
-};
-export const fetchProfile = function fetchProfile() {
+}
+export function fetchProfile() {
   return obj(...arguments);
-};
-export const fetchMutualFriends = function fetchMutualFriends() {
+}
+export function fetchMutualFriends() {
   return obj(...arguments);
-};
+}

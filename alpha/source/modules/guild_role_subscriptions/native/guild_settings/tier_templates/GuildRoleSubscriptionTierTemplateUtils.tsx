@@ -1,22 +1,22 @@
-// Module ID: 19641
-// Function ID: 19642
+// Module ID: 19875
+// Function ID: 19876
 // Name: GuildRoleSubscriptionTierTemplateUtils
-// Dependencies: [1105, 8586, 8606, 8604, 8594, 8593, 8601, 2]
+// Dependencies: [1105, 8608, 8628, 8626, 8616, 8615, 8623, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 19641 (GuildRoleSubscriptionTierTemplateUtils)
+// Module 19875 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1105 */;
-import TextLockIcon from "TextLockIcon" /* 8586 */;
-import ImageLockIcon from "ImageLockIcon" /* 8593 */;
-import ForumLockIcon from "ForumLockIcon" /* 8594 */;
-import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8601 */;
-import StageLockIcon from "StageLockIcon" /* 8604 */;
-import VoiceLockIcon from "VoiceLockIcon" /* 8606 */;
+import TextLockIcon from "TextLockIcon" /* 8608 */;
+import ImageLockIcon from "ImageLockIcon" /* 8615 */;
+import ForumLockIcon from "ForumLockIcon" /* 8616 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8623 */;
+import StageLockIcon from "StageLockIcon" /* 8626 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 8628 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
-export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
+export function getPrivateChannelIconComponent(type) {
   if (ChannelTypes.ChannelTypes.GUILD_TEXT === type) {
     return TextLockIcon.TextLockIcon;
   } else if (ChannelTypes.ChannelTypes.GUILD_VOICE === type) {
@@ -32,4 +32,4 @@ export const getPrivateChannelIconComponent = function getPrivateChannelIconComp
   } else {
     return TextLockIcon.TextLockIcon;
   }
-};
+}

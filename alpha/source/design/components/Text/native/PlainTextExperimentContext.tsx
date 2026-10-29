@@ -1,10 +1,10 @@
-// Module ID: 5274
-// Function ID: 5275
+// Module ID: 5275
+// Function ID: 5276
 // Name: PlainTextExperimentContext
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: usePlainTextExperimentEnabled
 
-// Module 5274 (PlainTextExperimentContext)
+// Module 5275 (PlainTextExperimentContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -40,6 +40,6 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("design/components/Text/native/PlainTextExperimentContext.tsx");
 
 export const PlainTextExperimentProvider = tmp2;
-export const usePlainTextExperimentEnabled = function usePlainTextExperimentEnabled() {
+export function usePlainTextExperimentEnabled() {
   return react.useContext(closure_4);
-};
+}

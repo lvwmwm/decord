@@ -1,24 +1,24 @@
-// Module ID: 14673
-// Function ID: 14674
+// Module ID: 14908
+// Function ID: 14909
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1389, 8709, 7579, 4853, 21, 5004, 587, 558, 576, 14674, 8716, 504, 2050, 4840, 10442, 1199, 5270, 1125, 6944, 6967, 5280, 9456, 12060, 2]
+// Dependencies: [19, 17, 1389, 8712, 7602, 4854, 21, 5005, 587, 558, 576, 14909, 8719, 504, 2051, 4841, 10475, 1199, 5271, 1125, 6968, 6991, 5281, 9487, 12114, 2]
 
-// Module 14673 (UserProfileDismissibleUpsells)
+// Module 14908 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import XSmallIcon from "XSmallIcon" /* 6967 */;
-import ColorConstants from "ColorConstants" /* 7579 */;
-import Constants from "Constants" /* 8709 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9456 */;
-import ShopIcon from "ShopIcon" /* 12060 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import XSmallIcon from "XSmallIcon" /* 6991 */;
+import ColorConstants from "ColorConstants" /* 7602 */;
+import Constants from "Constants" /* 8712 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
+import ShopIcon from "ShopIcon" /* 12114 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         const merged1 = Object.assign(tmp4);
                         const obj4 = { style: upsellContainer.header, children: items };
                         const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-                        const Text = tmp(5270).Text;
+                        const Text = tmp(5271).Text;
                         intl = tmp(1125).intl;
                         items = [metroImportAll(Text, obj5), ];
                         const obj6 = {
@@ -182,13 +182,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                             },
                           children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
                         };
-                        const PressableOpacity = tmp(6944).PressableOpacity;
+                        const PressableOpacity = tmp(6968).PressableOpacity;
                         intl2 = tmp(1125).intl;
                         items[1] = metroImportAll(PressableOpacity, obj6);
                         items1 = [React4(View, obj4), ];
                         const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
                         const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-                        Button = tmp(5280).Button;
+                        Button = tmp(5281).Button;
                         const intl3 = tmp(1125).intl;
                         const string = intl3.string;
                         const t = tmp(1125).t;
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                         items2 = [metroImportAll(View, obj8), ];
                         const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
                         obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-                        Button2 = tmp(5280).Button;
+                        Button2 = tmp(5281).Button;
                         intl4 = tmp(1125).intl;
                         items2[1] = metroImportAll(View, obj10);
                         items1[1] = React4(View, obj7);
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(5270).Text;
+            const Text = tmp(5271).Text;
             intl = tmp(1125).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
@@ -339,13 +339,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(6944).PressableOpacity;
+            const PressableOpacity = tmp(6968).PressableOpacity;
             intl2 = tmp(1125).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5280).Button;
+            Button = tmp(5281).Button;
             const intl3 = tmp(1125).intl;
             const string = intl3.string;
             const t = tmp(1125).t;
@@ -358,7 +358,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5280).Button;
+            Button2 = tmp(5281).Button;
             intl4 = tmp(1125).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);

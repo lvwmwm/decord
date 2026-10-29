@@ -1,12 +1,12 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18652
+// Function ID: 18653
 // Name: EnglishAnalyzer
-// Dependencies: [12, 18419, 18421, 2]
+// Dependencies: [12, 18653, 18655, 2]
 // Exports: analyze, createASTHighlighter
 
-// Module 18418 (EnglishAnalyzer)
+// Module 18652 (EnglishAnalyzer)
 import _modDef12 from "module_12" /* 12 */;
-import snowballStemmer from "snowballStemmer" /* 18419 */;
+import snowballStemmer from "snowballStemmer" /* 18653 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -110,7 +110,7 @@ function highlightAST(content, arg1, arg2) {
 let set = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 const result = size.fileFinishedImporting("lib/search/EnglishAnalyzer.tsx");
 
-export const analyze = function analyze(str) {
+export function analyze(str) {
   const tmp = _modDef12;
   const tmpResult = tmp(str.split(/\W+/));
   const mapped = tmpResult.map(stripPossessive);
@@ -119,10 +119,10 @@ export const analyze = function analyze(str) {
   const rejectResult1 = mapped1.reject(isStopWord);
   const iter = rejectResult1.map(snowballStemmer.snowballStem);
   return iter.value();
-};
+}
 export { shouldHighlight };
 export { highlightAST };
-export const createASTHighlighter = function createASTHighlighter(str) {
+export function createASTHighlighter(str) {
   let closure_1;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -151,4 +151,4 @@ export const createASTHighlighter = function createASTHighlighter(str) {
     tmp(arg0, tmp2, tmp3);
     return arg0;
   };
-};
+}

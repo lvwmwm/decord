@@ -1,15 +1,15 @@
-// Module ID: 13652
-// Function ID: 13653
+// Module ID: 13885
+// Function ID: 13886
 // Name: getExpiringGuildEntitlements
 // Dependencies: [2]
 // Exports: getExpiringGuildEntitlements
 
-// Module 13652 (getExpiringGuildEntitlements)
+// Module 13885 (getExpiringGuildEntitlements)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getExpiringGuildEntitlements.tsx");
 
-export const getExpiringGuildEntitlements = function getExpiringGuildEntitlements(items) {
+export function getExpiringGuildEntitlements(items) {
   const found = items.filter((ends_at) => null != ends_at.ends_at);
   return found.sort((ends_at, ends_at2) => {
     let num = 1;
@@ -18,4 +18,4 @@ export const getExpiringGuildEntitlements = function getExpiringGuildEntitlement
     }
     return num;
   });
-};
+}

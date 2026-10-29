@@ -1,16 +1,16 @@
-// Module ID: 19583
-// Function ID: 19584
+// Module ID: 19816
+// Function ID: 19817
 // Name: ListingImageUtil
-// Dependencies: [6418, 2]
+// Dependencies: [6442, 2]
 // Exports: getSource
 
-// Module 19583 (ListingImageUtil)
-import StoreUtils from "StoreUtils" /* 6418 */;
+// Module 19816 (ListingImageUtil)
+import StoreUtils from "StoreUtils" /* 6442 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/ListingImageUtil.tsx");
 
-export const getSource = function getSource(image_asset) {
+export function getSource(image_asset) {
   let obj2;
   if (null == image_asset.image_asset) {
     obj2 = { uri: "" };
@@ -23,4 +23,4 @@ export const getSource = function getSource(image_asset) {
     obj2 = { uri: str };
   }
   return obj2;
-};
+}

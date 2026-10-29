@@ -1,10 +1,10 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7722
+// Function ID: 7723
 // Name: CollectiblesDebugStore
 // Dependencies: [570, 2]
 // Exports: addDebugLog
 
-// Module 7699 (CollectiblesDebugStore)
+// Module 7722 (CollectiblesDebugStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ const useCollectiblesDebugStore = module_570.create((arg0) => {
 const result = size.fileFinishedImporting("modules/collectibles/CollectiblesDebugStore.tsx");
 
 export { useCollectiblesDebugStore };
-export const addDebugLog = function addDebugLog(arg0) {
+export function addDebugLog(arg0) {
   const date = new Date();
   const toLocaleTimeStringResult = date.toLocaleTimeString("en-US", { hour12: false });
   const state = obj.getState();
   state.addLog("[" + toLocaleTimeStringResult + "] " + arg0);
-};
+}

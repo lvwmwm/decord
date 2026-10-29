@@ -1,18 +1,18 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16358
+// Function ID: 16359
 // Name: HexagonCampaignAnalytics
-// Dependencies: [19, 5029, 1084, 7827, 6752, 7836, 7785, 558, 576, 1264, 2]
+// Dependencies: [19, 5030, 1084, 7850, 6775, 7859, 7807, 558, 576, 1264, 2]
 // Exports: trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction
 
-// Module 16121 (HexagonCampaignAnalytics)
+// Module 16358 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7785 */;
-import AnalyticsActions from "AnalyticsActions" /* 7827 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
+import AdCreativeType from "AdCreativeType" /* 6775 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7807 */;
+import AnalyticsActions from "AnalyticsActions" /* 7850 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampa
 export const HexagonCampaignContentSurface = { FONT_PICKER: "FONT_PICKER", PROFILE_ROW_PROMO: "PROFILE_ROW_PROMO", NON_NITRO_CARD: "NON_NITRO_CARD", THEME_PICKER: "THEME_PICKER", APP_ICON_PICKER: "APP_ICON_PICKER", USER_PROFILE: "USER_PROFILE", GUILD_PROFILE: "GUILD_PROFILE" };
 export { trackHexagonCampaignContentViewed };
 export const useTrackHexagonCampaignContentViewed = tmp3;
-export const trackHexagonCampaignPerkAction = function trackHexagonCampaignPerkAction(contentSurface) {
+export function trackHexagonCampaignPerkAction(contentSurface) {
   let content;
   let obj3;
   let perks;
@@ -136,4 +136,4 @@ export const trackHexagonCampaignPerkAction = function trackHexagonCampaignPerkA
   const merged = Object.assign(obj2.getAdSessionProperties(sourceQuestContent, AdCreativeType.AdCreativeType.QUEST_HOME_HERO));
   obj3 = AnalyticsTypes;
   track(QUEST_PROMOTIONAL_EVENT_USER_ACTION, obj);
-};
+}

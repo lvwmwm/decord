@@ -1,15 +1,15 @@
-// Module ID: 18969
-// Function ID: 18970
+// Module ID: 19202
+// Function ID: 19203
 // Name: LaunchPadPullTabCache
-// Dependencies: [11244, 510, 1381, 7072, 1496, 2]
+// Dependencies: [11298, 510, 1381, 7096, 1497, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 18969 (LaunchPadPullTabCache)
+// Module 19202 (LaunchPadPullTabCache)
 import Storage2 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import react_nativeDefault from "react-native" /* 7072 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11244 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import react_nativeDefault from "react-native" /* 7096 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11298 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
@@ -75,19 +75,19 @@ let c7 = 0;
 let c8;
 let result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadPullTabCache.tsx");
 
-export const getLaunchPadPullTabPositionCached = function getLaunchPadPullTabPositionCached() {
+export function getLaunchPadPullTabPositionCached() {
   const Storage = Storage2.Storage;
   let value = Storage.get(LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY);
   if (value == null) {
     value = React3;
   }
   return value;
-};
-export const setLaunchPadPullTabPositionCached = function setLaunchPadPullTabPositionCached(arg0) {
+}
+export function setLaunchPadPullTabPositionCached(arg0) {
   const Storage = Storage2.Storage;
   const result = Storage.set(LAUNCH_PAD_PULL_TAB_POSITION_CACHE_KEY, arg0);
-};
-export const persistLaunchPadPullTabPosition = function persistLaunchPadPullTabPosition(arg0) {
+}
+export function persistLaunchPadPullTabPosition(arg0) {
   let closure_7;
   let timeout;
   let closure_0 = arg0;
@@ -100,8 +100,8 @@ export const persistLaunchPadPullTabPosition = function persistLaunchPadPullTabP
       setLaunchPadPullTabExclusionRect(tmp);
     }
   }, 300);
-};
-export const clearLaunchPadPullTabExclusionRect = function clearLaunchPadPullTabExclusionRect() {
+}
+export function clearLaunchPadPullTabExclusionRect() {
   const obj = PlatformUtils;
   const isAndroidResult = obj.isAndroid() && null != c8;
   if (isAndroidResult) {
@@ -109,5 +109,5 @@ export const clearLaunchPadPullTabExclusionRect = function clearLaunchPadPullTab
     const obj2 = react_nativeDefault;
     const result = obj2.setSystemGestureExclusionRects([]);
   }
-};
+}
 export { setLaunchPadPullTabExclusionRect };

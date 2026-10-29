@@ -1,21 +1,21 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17408
+// Function ID: 17409
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1084, 21, 570, 1271, 558, 576, 1381, 14022, 5699, 1125, 5722, 11248, 2]
+// Dependencies: [5, 17, 1084, 21, 570, 1271, 558, 576, 1381, 14255, 5701, 1125, 5724, 11302, 2]
 
-// Module 17169 (UploadDebugLogsSetting)
+// Module 17408 (UploadDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
-import DebugUploadManager from "DebugUploadManager" /* 14022 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
+import DebugUploadManager from "DebugUploadManager" /* 14255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -49,7 +49,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ let obj = function _handleUploadDebugLogSettingPress() {
           c3 = 0;
           onUploadDebugLogsRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp26) {
         closure_2 = tmp26;

@@ -1,16 +1,16 @@
-// Module ID: 10523
-// Function ID: 10524
+// Module ID: 10556
+// Function ID: 10557
 // Name: ShineAnimation
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5085, 5242, 683, 5705, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5086, 5243, 683, 5707, 2]
 
-// Module 10523 (ShineAnimation)
+// Module 10556 (ShineAnimation)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

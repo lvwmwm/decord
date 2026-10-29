@@ -1,18 +1,18 @@
-// Module ID: 5246
-// Function ID: 5247
+// Module ID: 5247
+// Function ID: 5248
 // Name: ActionSheetActionCreators
-// Dependencies: [109, 19, 5247, 21, 5248, 5249, 1893, 584, 2]
+// Dependencies: [109, 19, 5248, 21, 5249, 5250, 1894, 584, 2]
 // Exports: showActionSheet
 
-// Module 5246 (ActionSheetActionCreators)
+// Module 5247 (ActionSheetActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["impressionName", "impressionProperties", "backdropKind", "disableHapticOnOpen", "appEntryKey"];
@@ -82,7 +82,7 @@ let result = size.fileFinishedImporting("modules/action_sheet/native/ActionSheet
 export default obj;
 export const ACTION_SHEET_HEIGHT_HALF = "start";
 export const ACTION_SHEET_HEIGHT_EXPANDED = "expanded";
-export const showActionSheet = function showActionSheet(disableHapticOnOpen) {
+export function showActionSheet(disableHapticOnOpen) {
   let appEntryKey;
   let backdropKind;
   let content;
@@ -99,4 +99,4 @@ export const showActionSheet = function showActionSheet(disableHapticOnOpen) {
   const result1 = obj2.dismissGlobalKeyboard();
   const obj3 = DispatcherDefault;
   obj3.dispatch({ type: "SHOW_ACTION_SHEET", content, key, impressionName, impressionProperties, backdropKind, stackingBehavior, appEntryKey });
-};
+}

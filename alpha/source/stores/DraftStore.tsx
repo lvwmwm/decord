@@ -1,20 +1,20 @@
-// Module ID: 7666
-// Function ID: 7667
+// Module ID: 7689
+// Function ID: 7690
 // Name: DraftStore
-// Dependencies: [32, 502, 4856, 6738, 1084, 7667, 12, 11, 504, 1385, 584, 2]
+// Dependencies: [32, 502, 4857, 6761, 1084, 7690, 12, 11, 504, 1385, 584, 2]
 
-// Module 7666 (DraftStore)
+// Module 7689 (DraftStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import DraftCommand from "DraftCommand" /* 7667 */;
+import DraftCommand from "DraftCommand" /* 7690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
 import size from "module_2" /* 2 */;
 
 let closure_9;

@@ -1,11 +1,11 @@
-// Module ID: 11157
-// Function ID: 11158
+// Module ID: 11211
+// Function ID: 11212
 // Name: BadgeManagementExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 11157 (BadgeManagementExperiment)
+// Module 11211 (BadgeManagementExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

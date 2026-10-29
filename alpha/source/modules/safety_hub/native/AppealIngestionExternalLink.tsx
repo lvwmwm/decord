@@ -1,19 +1,19 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 13139
+// Function ID: 13140
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5696, 5270, 1199, 8151, 6944, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5698, 5271, 1199, 8174, 6968, 2]
 
-// Module 12918 (AppealIngestionExternalLink)
+// Module 13139 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import Pressables from "Pressables" /* 6944 */;
-import AssetRegistry from "AssetRegistry" /* 8151 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import Pressables from "Pressables" /* 6968 */;
+import AssetRegistry from "AssetRegistry" /* 8174 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         tmp6 = cResult[5];
       }
       if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(8151), color: tmp4.chevron.color };
+        const obj2 = { source: tmp(8174), color: tmp4.chevron.color };
         const Icon = tmp(1199).Icon;
         const tmp11 = closure_4(Icon, obj2);
         cResult[6] = tmp4.chevron.color;
@@ -78,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             }
           }
           const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(6944).PressableHighlight, obj3);
+          const tmp18 = closure_4(tmp(6968).PressableHighlight, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp4.childButton;
           cResult[14] = tmp12;
@@ -96,7 +96,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
       tmp12 = tmp15;
     }
     const obj5 = { style: tmp4.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-    const tmp8 = closure_4(tmp(5270).Text, obj5);
+    const tmp8 = closure_4(tmp(5271).Text, obj5);
     cResult[3] = tmp4.childButtonText;
     cResult[4] = text;
     cResult[5] = tmp8;

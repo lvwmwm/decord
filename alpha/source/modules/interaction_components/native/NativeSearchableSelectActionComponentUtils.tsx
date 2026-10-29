@@ -1,21 +1,21 @@
-// Module ID: 8642
-// Function ID: 8643
+// Module ID: 8664
+// Function ID: 8665
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [4856, 4910, 4878, 1389, 1084, 6057, 1385, 1417, 7319, 8643, 1102, 587, 8644, 8539, 2]
+// Dependencies: [4857, 4911, 4879, 1389, 1084, 6061, 1385, 1418, 7343, 8665, 1102, 587, 8666, 8561, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8642 (NativeSearchableSelectActionComponentUtils)
+// Module 8664 (NativeSearchableSelectActionComponentUtils)
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6057 */;
-import RoleIconUtils from "RoleIconUtils" /* 7319 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8643 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8644 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6061 */;
+import RoleIconUtils from "RoleIconUtils" /* 7343 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8666 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportDefault;
 ({ ChannelTypes: metroImportDefault, DEFAULT_ROLE_COLOR: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/interaction_components/native/NativeSearchableSelectActionComponentUtils.tsx");
 
-export const transformSearchableSelectOptions = function transformSearchableSelectOptions(initialSnowflakeSelectOptions, guildId) {
+export function transformSearchableSelectOptions(initialSnowflakeSelectOptions, guildId) {
   let closure_1;
   _require = guildId;
   const guild = GuildStore.getGuild(guildId);
@@ -121,8 +121,8 @@ export const transformSearchableSelectOptions = function transformSearchableSele
     }
   });
   return mapped.filter(require("GlobalUtils").isNotNullish);
-};
-export const getChannelIconData = function getChannelIconData(channel, guild) {
+}
+export function getChannelIconData(channel, guild) {
   let channelIconWithGuild;
   if (channel.type === metroImportDefault.GUILD_CATEGORY) {
     channelIconWithGuild = AssetRegistryDefault2;
@@ -131,4 +131,4 @@ export const getChannelIconData = function getChannelIconData(channel, guild) {
     channelIconWithGuild = obj.getChannelIconWithGuild(channel, guild);
   }
   return channelIconWithGuild;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9437
+// Function ID: 9438
 // Name: SKUWishlistItemRecord
-// Dependencies: [2044, 9403, 2]
+// Dependencies: [2045, 9434, 2]
 // Exports: isSKUWishlistItemRecord
 
-// Module 9406 (SKUWishlistItemRecord)
-import SKURecord from "SKURecord" /* 2044 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9403 */;
+// Module 9437 (SKUWishlistItemRecord)
+import SKURecord from "SKURecord" /* 2045 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9434 */;
 import size from "module_2" /* 2 */;
 
 class SKUWishlistItemRecord extends BaseWishlistItemRecord {
@@ -63,6 +63,6 @@ class SKUWishlistItemRecord extends BaseWishlistItemRecord {
 const result = size.fileFinishedImporting("modules/wishlists/records/SKUWishlistItemRecord.tsx");
 
 export default SKUWishlistItemRecord;
-export const isSKUWishlistItemRecord = function isSKUWishlistItemRecord(sku) {
+export function isSKUWishlistItemRecord(sku) {
   return sku instanceof SKUWishlistItemRecord;
-};
+}

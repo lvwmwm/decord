@@ -1,10 +1,10 @@
-// Module ID: 9279
-// Function ID: 9280
+// Module ID: 9283
+// Function ID: 9284
 // Name: useOpenGameProfileModal
-// Dependencies: [558, 576, 9280, 9283, 2]
+// Dependencies: [558, 576, 9284, 9287, 2]
 
-// Module 9279 (useOpenGameProfileModal)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9283 */;
+// Module 9283 (useOpenGameProfileModal)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9287 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenGam
     tmp3 = cResult[1];
   }
   const onOpened = tmp3.onOpened;
-  const tmp4 = onOpened(9280)(arg0);
+  const tmp4 = onOpened(9284)(arg0);
   dependencyMap = tmp4;
   const gameId = tmp4.gameId;
   if (tmp4.shouldOpenGameProfile) {
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenGam
     obj = {};
   }
   const onOpened = obj.onOpened;
-  const tmp = onOpened(9280)(arg0);
+  const tmp = onOpened(9284)(arg0);
   dependencyMap = tmp;
   const gameId = tmp.gameId;
   let fn;

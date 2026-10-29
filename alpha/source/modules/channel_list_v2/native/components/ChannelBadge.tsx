@@ -1,23 +1,23 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13643
+// Function ID: 13644
 // Name: components/ChannelBadge
-// Dependencies: [19, 21, 1199, 13409, 5270, 1125, 1900, 2]
+// Dependencies: [19, 21, 1199, 13642, 5271, 1125, 1901, 2]
 // Exports: renderChannelBadge
 
-// Module 13410 (components/ChannelBadge)
+// Module 13643 (components/ChannelBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import _mod13409 from "module_13409" /* 13409 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import _mod13642 from "module_13642" /* 13642 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/ChannelBadge.tsx");
 
-export const renderChannelBadge = function renderChannelBadge(newChannel) {
+export function renderChannelBadge(newChannel) {
   let eventsMentionCount;
   let newPostCount;
   let obj5;
@@ -40,7 +40,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(_mod13409.NewBadge, {});
+    tmp2 = jsx(_mod13642.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
@@ -66,4 +66,4 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
       }
     }
   }
-};
+}

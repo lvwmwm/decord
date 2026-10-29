@@ -1,22 +1,22 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8195
+// Function ID: 8196
 // Name: MessageQueue
-// Dependencies: [109, 5273, 502, 5926, 1084, 5009, 1101, 8173, 3, 5747, 8174, 7604, 1294, 6054, 38, 8175, 8178, 8198, 8182, 2]
+// Dependencies: [109, 5274, 502, 5928, 1084, 5010, 1101, 8196, 3, 5749, 8197, 7627, 1294, 6058, 38, 8198, 8201, 8220, 8205, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8172 (MessageQueue)
+// Module 8195 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import NetStats from "NetStats" /* 7604 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8174 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import NetStats from "NetStats" /* 7627 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8197 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5926 */;
+import NetworkStore from "NetworkStore" /* 5928 */;
 import Constants from "Constants" /* 1084 */;
-import Queue from "Queue" /* 8173 */;
+import Queue from "Queue" /* 8196 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -361,16 +361,16 @@ let result = size.fileFinishedImporting("lib/MessageQueue.tsx");
 
 export default handleCommand1;
 export { MessageDataType };
-export const isMessageDataSend = function isMessageDataSend(type) {
+export function isMessageDataSend(type) {
   return type.type === obj.SEND || type.type === tmp.SEND_ANNOUNCEMENT;
-};
-export const isMessageDataEdit = function isMessageDataEdit(messageData) {
+}
+export function isMessageDataEdit(messageData) {
   return messageData.type === obj.EDIT;
-};
-export const isMessageDataCommand = function isMessageDataCommand(type) {
+}
+export function isMessageDataCommand(type) {
   return type.type === obj.COMMAND;
-};
-export const getFailedMessageId = function getFailedMessageId(messageData) {
+}
+export function getFailedMessageId(messageData) {
   let id;
   const tmp2 = messageData.type === obj.SEND || messageData.type === obj.SEND_ANNOUNCEMENT;
   if (tmp2) {
@@ -381,4 +381,4 @@ export const getFailedMessageId = function getFailedMessageId(messageData) {
     id = messageData.message.data.id;
   }
   return id;
-};
+}

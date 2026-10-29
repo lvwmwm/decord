@@ -1,15 +1,15 @@
-// Module ID: 9980
-// Function ID: 9981
+// Module ID: 10012
+// Function ID: 10013
 // Name: getEmojiPopoutMessage
-// Dependencies: [6920, 1084, 1125, 4150, 2064, 2]
+// Dependencies: [6944, 1084, 1125, 4151, 2065, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9980 (getEmojiPopoutMessage)
+// Module 10012 (getEmojiPopoutMessage)
 import Constants from "Constants" /* 1084 */;
 import intl12 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import _modDef4150 from "module_4150" /* 4150 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6920 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import _modDef4151 from "module_4151" /* 4151 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6944 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -19,7 +19,7 @@ const EmojiPopoutType = { GET_PREMIUM: "GET_PREMIUM", JOIN_GUILD: "JOIN_GUILD", 
 const result = size.fileFinishedImporting("modules/messages/getEmojiPopoutMessage.tsx");
 
 export { EmojiPopoutType };
-export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
+export function getEmojiPopoutData(sourceType) {
   let emojiComesFromCurrentGuild;
   let emojiComesFromCurrentGuild2;
   let expressionSourceApplication;
@@ -49,7 +49,7 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
     const intl11 = intl12.intl;
     format = intl11.format;
     obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = _modDef4150["/jdd/7"];
+    prop = _modDef4151["/jdd/7"];
     obj9 = HelpdeskUtilsDefault;
     return obj2;
   } else {
@@ -225,4 +225,4 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
       }
     }
   }
-};
+}

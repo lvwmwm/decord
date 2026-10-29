@@ -1,15 +1,15 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15737
+// Function ID: 15738
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 5004, 587, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 2]
 // Exports: MenuGroup
 
-// Module 15503 (MenuGroup)
+// Module 15737 (MenuGroup)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -24,7 +24,7 @@ obj2 = { marginLeft: 0, height: StyleSheet.hairlineWidth, backgroundColor: nativ
 let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuGroup.tsx");
 
-export const MenuGroup = function MenuGroup(ref) {
+export function MenuGroup(ref) {
   let children;
   let items;
   let style;
@@ -52,4 +52,4 @@ export const MenuGroup = function MenuGroup(ref) {
     return cloneElementResult;
   });
   return tmp2(closure_1, obj);
-};
+}

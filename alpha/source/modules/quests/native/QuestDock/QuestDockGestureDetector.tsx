@@ -1,21 +1,21 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 17035
+// Function ID: 17036
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6745, 16709, 21, 558, 576, 16737, 16706, 16710, 10955, 16713, 16791, 5085, 16714, 16711, 5333, 16708, 5248, 2]
+// Dependencies: [19, 6768, 16947, 21, 558, 576, 16975, 16944, 16948, 10990, 16951, 17029, 5086, 16952, 16949, 5334, 16946, 5249, 2]
 
-// Module 16797 (QuestDockGestureDetector)
+// Module 17035 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestDockUtils from "QuestDockUtils" /* 16708 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import QuestDockUtils from "QuestDockUtils" /* 16946 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16709 */;
+import QuestDockConstants from "QuestDockConstants" /* 16947 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let flag, flag2, num6, num7, num8, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp45, tmp46, tmp48, tmp49, tmp50, tmp51, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp63, tmp65, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp75, tmp76, tmp78, tmp79, tmp81, tmp82, tmp83, tmp84, tmp86, tmp87, tmp88, tmp91, tmp92;
+let flag, flag2, num6, num7, num8, obj1, set, set2, set2Result, set3, set3Result, set4Result, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp45, tmp46, tmp48, tmp49, tmp50, tmp51, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp63, tmp65, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp75, tmp76, tmp78, tmp79, tmp81, tmp82, tmp83, tmp84, tmp86, tmp87, tmp88, tmp91, tmp92;
 
 let c10;
 let c9;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(5333);
+const LegacyBaseButton = tmp(5334);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;
@@ -1011,7 +1011,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDo
           set3(obj3);
         }
         const obj6 = { x: 0, y: num5, width: getQuestDockExpandedWidth(width3, height.get().left, height.get().right), height: Math.min(sum, windowDimensions.get().height), prevDeltaY: diff };
-        set4 = questDockWrapperSpecs.set;
+        const set4 = questDockWrapperSpecs.set;
         const merged1 = Object.assign(questDockWrapperSpecs.get());
         num5 = 0;
         if (youBarTotalHeight > 0) {

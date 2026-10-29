@@ -1,21 +1,21 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16457
+// Function ID: 16458
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 5270, 5280, 9500, 7991, 12074, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5271, 5281, 9531, 8014, 12128, 2]
 
-// Module 16220 (UserProfileWidgetEditingHeader)
+// Module 16457 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import IconButton2 from "IconButton" /* 7991 */;
-import PlusSmallIcon2 from "PlusSmallIcon" /* 9500 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12074 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import IconButton2 from "IconButton" /* 8014 */;
+import PlusSmallIcon2 from "PlusSmallIcon" /* 9531 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,9 +72,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
 
         }
     };
-    const Button = tmp(5280).Button;
+    const Button = tmp(5281).Button;
     obj4 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
-    PlusSmallIcon = tmp(9500).PlusSmallIcon;
+    PlusSmallIcon = tmp(9531).PlusSmallIcon;
     intl2 = tmp(1125).intl;
     const tmp13 = React3(Button, obj3);
     cResult[3] = tmp13;
@@ -92,9 +92,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
 
         }
     };
-    const IconButton = tmp(7991).IconButton;
+    const IconButton = tmp(8014).IconButton;
     obj6 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
-    ArrowsUpDownIcon = tmp(12074).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = tmp(12128).ArrowsUpDownIcon;
     intl3 = tmp(1125).intl;
     const tmp17 = React3(IconButton, obj5);
     cResult[4] = tmp17;

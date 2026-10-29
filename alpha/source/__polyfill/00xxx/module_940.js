@@ -71,10 +71,10 @@ function instrumentHistory() {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addHistoryInstrumentationHandler = function addHistoryInstrumentationHandler(arg0) {
+export function addHistoryInstrumentationHandler(arg0) {
   const obj = _mod693;
   obj.addHandler("history", arg0);
   const obj2 = _mod693;
   obj2.maybeInstrument("history", instrumentHistory);
-};
+}
 export { instrumentHistory };

@@ -1,21 +1,21 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 15027
+// Function ID: 15028
 // Name: InviteEmbed
-// Dependencies: [5736, 1389, 1084, 7844, 14793, 7843, 14795, 14796, 14797, 14800, 14802, 10035, 10036, 2]
+// Dependencies: [5738, 1389, 1084, 7867, 15028, 7866, 15030, 15031, 15032, 15035, 15037, 10067, 10068, 2]
 // Exports: createInviteEmbed
 
-// Module 14792 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7843 */;
-import Constants2 from "Constants" /* 7844 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10035 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10036 */;
-import invite_GuildInvite from "invite/GuildInvite" /* 14793 */;
-import GroupDMInvite from "GroupDMInvite" /* 14795 */;
-import FriendInvite from "FriendInvite" /* 14796 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14797 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14800 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 14802 */;
-import InviteStore from "InviteStore" /* 5736 */;
+// Module 15027 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7866 */;
+import Constants2 from "Constants" /* 7867 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10067 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10068 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 15028 */;
+import GroupDMInvite from "GroupDMInvite" /* 15030 */;
+import FriendInvite from "FriendInvite" /* 15031 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 15032 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 15035 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 15037 */;
+import InviteStore from "InviteStore" /* 5738 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let hasOwnProperty;
 const InviteTypes = Constants2.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/InviteEmbed.tsx");
 
-export const createInviteEmbed = function createInviteEmbed(author, code, theme) {
+export function createInviteEmbed(author, code, theme) {
   const invite = InviteStore.getInvite(code);
   const obj = InviteStore;
   if (null == invite) {
@@ -110,4 +110,4 @@ export const createInviteEmbed = function createInviteEmbed(author, code, theme)
       return obj16.createExpiredGuildInvite(author, id === tmp4, theme);
     }
   }
-};
+}

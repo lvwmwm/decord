@@ -1,15 +1,15 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8180
+// Function ID: 8181
 // Name: useUserLinks
-// Dependencies: [19, 1389, 7680, 7681, 558, 576, 573, 8158, 8159, 8160, 2]
+// Dependencies: [19, 1389, 7703, 7704, 558, 576, 573, 8181, 8182, 8183, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useHasActiveLinks
 
-// Module 8157 (useUserLinks)
+// Module 8180 (useUserLinks)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7681 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -547,7 +547,7 @@ const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivi
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const formatUserActivityTimestamp = tmp(8160).formatUserActivityTimestamp;
+    const formatUserActivityTimestamp = tmp(8183).formatUserActivityTimestamp;
     require("FamilyCenterUtils");
     const date = new Date(stateFromStores);
     result = formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
@@ -608,7 +608,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinkTime
   const tmp = _require;
   if (null != stateFromStores) {
     const _Date = Date;
-    const tmpResult = tmp(8160);
+    const tmpResult = tmp(8183);
     formatLinkTimestampResult = tmpResult.formatLinkTimestamp(Date.parse(stateFromStores), arg1 === constants.PENDING ? closure_10 : closure_6);
   }
   return formatLinkTimestampResult;
@@ -635,7 +635,7 @@ const result4 = size.fileFinishedImporting("modules/parent_tools/hooks/useUserLi
 export const useUserIdsForLinkStatus = tmp3;
 export const useUsersForLinkStatus = tmp4;
 export { useActiveLinkUserIds };
-export const getActiveLinkUserIds = function getActiveLinkUserIds() {
+export function getActiveLinkUserIds() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
   const found = values.filter((link_status) => null != link_status && link_status.link_status === constants.ACTIVE);
   const sorted = found.sort((updated_at, updated_at2) => {
@@ -646,7 +646,7 @@ export const getActiveLinkUserIds = function getActiveLinkUserIds() {
   });
   const mapped = sorted.map((user_id) => user_id.user_id);
   return mapped.filter((item) => null != item);
-};
+}
 export { useActiveLinkUsers };
 export { useHasActiveLinks };
 export const useHasActiveParentLinks = tmp8;

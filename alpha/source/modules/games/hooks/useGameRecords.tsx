@@ -1,11 +1,11 @@
-// Module ID: 19211
-// Function ID: 19212
+// Module ID: 19446
+// Function ID: 19447
 // Name: useGameRecords
-// Dependencies: [2019, 558, 576, 7443, 1385, 504, 2]
+// Dependencies: [2020, 558, 576, 7466, 1385, 504, 2]
 
-// Module 19211 (useGameRecords)
+// Module 19446 (useGameRecords)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

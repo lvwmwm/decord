@@ -1,12 +1,12 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 15139
+// Function ID: 15140
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8305, 10130, 6047, 584, 2]
+// Dependencies: [5, 8327, 10163, 6051, 584, 2]
 // Exports: uploadMessageAttachments
 
-// Module 14904 (uploadMessageAttachments)
+// Module 15139 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 8305 */;
+import UploadStore from "UploadStore" /* 8327 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ let obj = function _uploadMessageAttachments() {
             let message;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else {
             const self = this;
             const self2 = this;
@@ -167,6 +167,6 @@ let obj = function _uploadMessageAttachments() {
 new Set();
 const result = size.fileFinishedImporting("modules/media_uploads/uploadMessageAttachments.native.tsx");
 
-export const uploadMessageAttachments = function uploadMessageAttachments() {
+export function uploadMessageAttachments() {
   return obj(...arguments);
-};
+}

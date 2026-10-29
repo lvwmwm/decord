@@ -1,35 +1,35 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16880
+// Function ID: 16881
 // Name: QuestHomeOrbShopRewardCardAssetTile
-// Dependencies: [32, 19, 17, 1086, 21, 9388, 587, 5004, 9434, 558, 576, 38, 1992, 5705, 9435, 9436, 8697, 9421, 9468, 1087, 9469, 9423, 9446, 9448, 9389, 7696, 5001, 5288, 2]
+// Dependencies: [32, 19, 17, 1086, 21, 9420, 587, 5005, 9465, 558, 576, 38, 1993, 5707, 9466, 9467, 8700, 9452, 9499, 1087, 9500, 9454, 9477, 9479, 9421, 7719, 5002, 5289, 2]
 
-// Module 16642 (QuestHomeOrbShopRewardCardAssetTile)
+// Module 16880 (QuestHomeOrbShopRewardCardAssetTile)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import ColorUtils from "ColorUtils" /* 5001 */;
-import useToken from "useToken" /* 5288 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
-import useShopProductItems from "useShopProductItems" /* 8697 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9388 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9389 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9421 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9423 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9434 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9435 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9436 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9446 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9448 */;
-import _modDef9468 from "module_9468" /* 9468 */;
-import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9469 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import ColorUtils from "ColorUtils" /* 5002 */;
+import useToken from "useToken" /* 5289 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
+import useShopProductItems from "useShopProductItems" /* 8700 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9420 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9421 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9452 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9454 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9465 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9466 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9467 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9477 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9479 */;
+import _modDef9499 from "module_9499" /* 9499 */;
+import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9500 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -206,7 +206,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
               let tmp62;
               const _Symbol = Symbol;
               if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj3 = { uri: _modDef9468 };
+                const obj3 = { uri: _modDef9499 };
                 cResult[17] = obj3;
                 tmp60 = obj3;
               } else {
@@ -228,7 +228,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
                 let tmp56;
                 if (cResult[20] !== product.skuId) {
                   size = { skuId: product.skuId, width: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CARD, height: FractionalNitroCoinIllustration2.FRACTIONAL_NITRO_COIN_SIZE.CARD };
-                  const FractionalNitroCoinIllustration = tmp(9469).FractionalNitroCoinIllustration;
+                  const FractionalNitroCoinIllustration = tmp(9500).FractionalNitroCoinIllustration;
                   const tmp58 = metroImportDefault(FractionalNitroCoinIllustration, size);
                   cResult[20] = product.skuId;
                   cResult[21] = tmp58;
@@ -315,7 +315,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
                           prop = tmp9.profileFramePreviewWidth;
                         }
                         if (prop == null) {
-                          prop = tmp(9388).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
+                          prop = tmp(9420).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
                         }
                         let prop1;
                         if (tmp9 != null) {
@@ -444,10 +444,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     flag = false;
   }
   let tmp = closure_15();
-  const obj = cardWidth(8697);
+  const obj = cardWidth(8700);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  const tmp5 = cardWidth < cardWidth(9388).COLLECTIBLES_SHOP_CARD_WIDTH || cardHeight < cardWidth(9388).COLLECTIBLES_SHOP_CARD_HEIGHT;
+  const tmp5 = cardWidth < cardWidth(9420).COLLECTIBLES_SHOP_CARD_WIDTH || cardHeight < cardWidth(9420).COLLECTIBLES_SHOP_CARD_HEIGHT;
   dependencyMap = tmp5;
   const items = [cardHeight, cardWidth, tmp5];
   const memo = react.useMemo(() => {
@@ -473,19 +473,19 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     }
     return size1;
   }, items1);
-  if (product.type === cardWidth(1992).CollectiblesItemType.BUNDLE) {
+  if (product.type === cardWidth(1993).CollectiblesItemType.BUNDLE) {
     const obj2 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, size: "small", previewAssets: product.previewAssets, disableStaticBackground: true, targetSize: memo1 };
-    return closure_7(cardHeight(9421), obj2);
+    return closure_7(cardHeight(9452), obj2);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj3 = { source: obj4, style: tmp.externalProductImage };
-    obj4 = { uri: cardHeight(9468) };
-    const tmp33 = cardHeight(5705);
+    obj4 = { uri: cardHeight(9499) };
+    const tmp33 = cardHeight(5707);
     return closure_7(tmp33, obj3);
   } else {
     const ALL = tmp2(1087).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      size = { skuId: product.skuId, width: tmp2(9469).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9469).FRACTIONAL_NITRO_COIN_SIZE.CARD };
-      const FractionalNitroCoinIllustration = tmp2(9469).FractionalNitroCoinIllustration;
+      size = { skuId: product.skuId, width: tmp2(9500).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9500).FRACTIONAL_NITRO_COIN_SIZE.CARD };
+      const FractionalNitroCoinIllustration = tmp2(9500).FractionalNitroCoinIllustration;
       return closure_7(FractionalNitroCoinIllustration, size);
     } else {
       const first = memo(product.items, 1)[0];
@@ -493,7 +493,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       if (first != null) {
         type = first.type;
       }
-      if (cardWidth(1992).CollectiblesItemType.AVATAR_DECORATION === type) {
+      if (cardWidth(1993).CollectiblesItemType.AVATAR_DECORATION === type) {
         let tmp24Result;
         if (flag) {
           const obj5 = { item: first, size: avatarDecorationSize };
@@ -508,14 +508,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
           tmp24Result = tmp24(tmp28, obj5);
         } else {
           const obj6 = { item: first, size };
-          tmp24Result = tmp24(cardHeight(9434), obj6);
+          tmp24Result = tmp24(cardHeight(9465), obj6);
         }
         return tmp24Result;
-      } else if (cardWidth(1992).CollectiblesItemType.PROFILE_EFFECT === type) {
-        const obj7 = { style: tmp.profileEffectContainer, children: closure_7(cardHeight(9423), obj8) };
+      } else if (cardWidth(1993).CollectiblesItemType.PROFILE_EFFECT === type) {
+        const obj7 = { style: tmp.profileEffectContainer, children: closure_7(cardHeight(9454), obj8) };
         obj8 = { item: first, hideBackground: true };
         return closure_7(closure_5, obj7);
-      } else if (cardWidth(1992).CollectiblesItemType.PROFILE_FRAME === type) {
+      } else if (cardWidth(1993).CollectiblesItemType.PROFILE_FRAME === type) {
         if (flag) {
           let profileFrameContainer;
           if (null != memo) {
@@ -527,12 +527,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
           obj10 = { profileFrame: first, previewWidth: prop, previewHeight: prop1, profileBackgroundColor: tmp16(587).colors.BACKGROUND_BASE_LOW };
           prop = undefined;
           tmp16 = cardHeight;
-          tmp17 = cardHeight(9446);
+          tmp17 = cardHeight(9477);
           if (memo != null) {
             prop = memo.profileFramePreviewWidth;
           }
           if (prop == null) {
-            prop = tmp2(9388).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
+            prop = tmp2(9420).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
           }
           prop1 = undefined;
           if (memo != null) {
@@ -544,9 +544,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
           return closure_7(tmp15, obj9);
         }
         profileFrameContainer = tmp.profileFrameContainer;
-      } else if (cardWidth(1992).CollectiblesItemType.NAMEPLATE === type) {
+      } else if (cardWidth(1993).CollectiblesItemType.NAMEPLATE === type) {
         const obj11 = { item: first };
-        return closure_7(cardHeight(9448), obj11);
+        return closure_7(cardHeight(9479), obj11);
       } else {
         return null;
       }

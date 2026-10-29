@@ -1,14 +1,14 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7333
+// Function ID: 7334
 // Name: useProviderConnection
-// Dependencies: [5, 19, 6535, 504, 7310, 2]
+// Dependencies: [5, 19, 6559, 504, 7334, 2]
 // Exports: useProviderConnection
 
-// Module 7309 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7310 */;
+// Module 7333 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7334 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require, c3, c6, closure_0;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(arg0) {
+export function useProviderConnection(arg0) {
   let fetching;
   _require = arg0;
   let obj = require("get initialized");
@@ -48,7 +48,7 @@ export const useProviderConnection = function useProviderConnection(arg0) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -137,4 +137,4 @@ export const useProviderConnection = function useProviderConnection(arg0) {
     account: stateFromStores
   };
   return obj3;
-};
+}

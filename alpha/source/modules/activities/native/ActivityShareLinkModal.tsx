@@ -1,30 +1,30 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 16241
+// Function ID: 16242
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4856, 1389, 4855, 10651, 5009, 21, 5004, 587, 558, 576, 504, 12963, 12054, 16003, 7293, 1385, 16005, 7601, 7790, 5699, 1125, 7321, 5698, 7521, 5714, 1496, 1381, 12973, 10660, 12974, 12998, 2]
+// Dependencies: [5, 32, 19, 17, 4857, 1389, 4856, 10684, 5010, 21, 5005, 587, 558, 576, 504, 13184, 12108, 16240, 7317, 1385, 16242, 7624, 7812, 5701, 1125, 7345, 5700, 7544, 5716, 1497, 1381, 13194, 10693, 13195, 13219, 2]
 
-// Module 16004 (ActivityShareLinkModal)
+// Module 16241 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import LinkIcon from "LinkIcon" /* 5714 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7521 */;
-import UserRowConstants from "UserRowConstants" /* 10651 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12054 */;
-import formatResults from "formatResults" /* 12963 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16003 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import LinkIcon from "LinkIcon" /* 5716 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7544 */;
+import UserRowConstants from "UserRowConstants" /* 10684 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12108 */;
+import formatResults from "formatResults" /* 13184 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 16240 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore_mod from "UserStore" /* 1389 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -268,7 +268,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -321,7 +321,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -356,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -378,7 +378,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShar
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

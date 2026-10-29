@@ -1,21 +1,21 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9431
+// Function ID: 9432
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7738, 502, 1389, 9401, 9402, 558, 576, 9407, 504, 9408, 12, 9409, 8713, 9415, 9420, 2]
+// Dependencies: [32, 19, 7760, 502, 1389, 9432, 9433, 558, 576, 9438, 504, 9439, 12, 9440, 8716, 9446, 9451, 2]
 
-// Module 9400 (useWishlistHooks)
+// Module 9431 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8713 */;
-import WishlistRecord from "WishlistRecord" /* 9402 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9408 */;
-import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9415 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
+import WishlistRecord from "WishlistRecord" /* 9433 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9439 */;
+import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1389 */;
-import WishlistStore from "WishlistStore" /* 9401 */;
+import WishlistStore from "WishlistStore" /* 9432 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -824,7 +824,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
       tmp17 = cResult[11];
     }
     const wishlist = closure_12(tmp17).wishlist;
-    tmp(9420);
+    tmp(9451);
     let flag2 = false;
     if (true === isGift) {
       flag2 = false;

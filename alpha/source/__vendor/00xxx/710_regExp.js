@@ -15,7 +15,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
 export const TRACEPARENT_REGEXP = regExp;
-export const extractTraceparentData = function extractTraceparentData(str) {
+export function extractTraceparentData(str) {
   const tmp = str;
   if (tmp) {
     const match = str.match(regExp);
@@ -29,8 +29,8 @@ export const extractTraceparentData = function extractTraceparentData(str) {
       return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
   }
-};
-export const generateSentryTraceHeader = function generateSentryTraceHeader() {
+}
+export function generateSentryTraceHeader() {
   let traceId = arg0;
   if (arg0 === undefined) {
     const obj = generateSpanId;
@@ -50,8 +50,8 @@ export const generateSentryTraceHeader = function generateSentryTraceHeader() {
     str = str2;
   }
   return "" + traceId + "-" + spanId + str;
-};
-export const generateTraceparentHeader = function generateTraceparentHeader(traceId, propagationSpanId2, sampled2) {
+}
+export function generateTraceparentHeader(traceId, propagationSpanId2, sampled2) {
   if (traceId === undefined) {
     const obj = generateSpanId;
     traceId = obj.generateTraceId();
@@ -67,8 +67,8 @@ export const generateTraceparentHeader = function generateTraceparentHeader(trac
     str = "01";
   }
   return "00-" + traceId + "-" + spanId + "-" + str;
-};
-export const propagationContextFromHeaders = function propagationContextFromHeaders(str, arg1) {
+}
+export function propagationContextFromHeaders(str, arg1) {
   let tmp4Result10;
   let tmp4Result9;
   let tmp;
@@ -145,8 +145,8 @@ export const propagationContextFromHeaders = function propagationContextFromHead
     tmp4Result10 = safeDateNow;
     return obj4;
   }
-};
-export const shouldContinueTrace = function shouldContinueTrace(client, org_id) {
+}
+export function shouldContinueTrace(client, org_id) {
   let flag;
   const obj = _mod713;
   const result = obj.extractOrgIdFromClient(client);
@@ -176,4 +176,4 @@ export const shouldContinueTrace = function shouldContinueTrace(client, org_id) 
     debug.log("Starting a new trace because strict trace continuation is enabled but one org ID is missing (incoming baggage: " + org_id + ", Sentry client: " + result + ")");
     flag = false;
   }
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 8498
+// Function ID: 8499
 // Name: VoiceUserAffinityExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getVoiceUserAffinitySortType
 
-// Module 8476 (VoiceUserAffinityExperiment)
+// Module 8498 (VoiceUserAffinityExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "a" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };
+let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "Array" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceUserAffinitySortType(location) {
   let tmp2;
@@ -32,8 +32,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceUs
 const result = size.fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");
 
 export default apexExperiment;
-export const getVoiceUserAffinitySortType = function getVoiceUserAffinitySortType(location) {
+export function getVoiceUserAffinitySortType(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).sortType;
-};
+}
 export const useVoiceUserAffinitySortType = tmp3;

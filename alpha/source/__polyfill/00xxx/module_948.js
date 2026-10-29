@@ -8,7 +8,7 @@ import _mod693 from "module_693" /* 693 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createUserFeedbackEnvelope = function createUserFeedbackEnvelope(event_id, tunnel) {
+export function createUserFeedbackEnvelope(event_id, tunnel) {
   let date;
   let dsn;
   let metadata;
@@ -39,4 +39,4 @@ export const createUserFeedbackEnvelope = function createUserFeedbackEnvelope(ev
   const items1 = [items];
   const obj7 = _mod693;
   return obj7.createEnvelope(obj, items1);
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16357
+// Function ID: 16358
 // Name: HexagonActionCreators
-// Dependencies: [5, 1389, 5029, 3, 1101, 1294, 5031, 584, 2]
+// Dependencies: [5, 1389, 5030, 3, 1101, 1294, 5032, 584, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16120 (HexagonActionCreators)
+// Module 16357 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5031 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5032 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj = function _enrollInHexagonCampaign() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _enrollInHexagonCampaign() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -116,7 +116,7 @@ obj = function _enrollAndWaitForHexagonCampaignPerk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -211,7 +211,7 @@ obj = function _enrollAndClearPendingHexagonCampaignEnrollment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -276,7 +276,7 @@ const result1 = size.fileFinishedImporting("modules/hexagon_campaign/HexagonActi
 
 export const HEXAGON_CAMPAIGN_PERK_SYNC_TIMEOUT_MS = result;
 export { enrollInHexagonCampaign };
-export const ensureHexagonCampaignEnrollment = function ensureHexagonCampaignEnrollment(DISPLAY_NAME_STYLE) {
+export function ensureHexagonCampaignEnrollment(DISPLAY_NAME_STYLE) {
   let resolved;
   function enrollAndClearPendingHexagonCampaignEnrollment() {
     return obj(...arguments);
@@ -291,29 +291,29 @@ export const ensureHexagonCampaignEnrollment = function ensureHexagonCampaignEnr
     resolved = closure_10;
   }
   return resolved;
-};
+}
 export function getPendingHexagonCampaignEnrollment() {
   return closure_10;
 }
-export const markHexagonCampaignPerkApplied = function markHexagonCampaignPerkApplied(DISPLAY_NAME_STYLE) {
+export function markHexagonCampaignPerkApplied(DISPLAY_NAME_STYLE) {
   obj = DispatcherDefault;
   const obj2 = { type: "HEXAGON_CAMPAIGN_PERK_APPLIED", perk: DISPLAY_NAME_STYLE };
   obj.dispatch(obj2);
-};
-export const clearHexagonCampaignAppliedPerks = function clearHexagonCampaignAppliedPerks() {
+}
+export function clearHexagonCampaignAppliedPerks() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "HEXAGON_CAMPAIGN_APPLIED_PERKS_CLEARED" });
-};
-export const markHexagonCampaignDisplayNameStylesVisited = function markHexagonCampaignDisplayNameStylesVisited() {
+}
+export function markHexagonCampaignDisplayNameStylesVisited() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES_VISITED" });
-};
-export const saveHexagonCampaignPreviousPerkValues = function saveHexagonCampaignPreviousPerkValues(previousPerkValues) {
+}
+export function saveHexagonCampaignPreviousPerkValues(previousPerkValues) {
   obj = DispatcherDefault;
   const obj2 = { type: "HEXAGON_CAMPAIGN_PREVIOUS_PERK_VALUES_SAVED", previousPerkValues };
   obj.dispatch(obj2);
-};
-export const saveHexagonCampaignPreviousDisplayNameStyles = function saveHexagonCampaignPreviousDisplayNameStyles() {
+}
+export function saveHexagonCampaignPreviousDisplayNameStyles() {
   const currentUser = UserStore.getCurrentUser();
   let displayNameStyles;
   if (currentUser != null) {
@@ -328,4 +328,4 @@ export const saveHexagonCampaignPreviousDisplayNameStyles = function saveHexagon
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj4);
   }
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 18572
-// Function ID: 18573
+// Module ID: 18806
+// Function ID: 18807
 // Name: permissions/PermissionUtils
 // Dependencies: [1095, 1125, 1385, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 18572 (permissions/PermissionUtils)
+// Module 18806 (permissions/PermissionUtils)
 import Constants from "Constants" /* 1095 */;
 import intl56 from "intl" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
@@ -378,7 +378,7 @@ const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/permissions/PermissionUtils.tsx");
 
 export { getGuildPermissionSpec };
-export const generateGuildPermissionSpec = function generateGuildPermissionSpec(showCreatorMonetizationAnalyticsPermission) {
+export function generateGuildPermissionSpec(showCreatorMonetizationAnalyticsPermission) {
   let intl;
   let intl2;
   let intl3;
@@ -395,7 +395,7 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   let permissions3;
   let permissions4;
   let permissions7;
-  const f136178 = (isExperimental) => !isExperimental.isExperimental;
+  const f137747 = (isExperimental) => !isExperimental.isExperimental;
   const tmp = getGuildPermissionSpec(showCreatorMonetizationAnalyticsPermission);
   const items = [, , , , , , ];
   ({ VIEW_CHANNEL: arr[0], MANAGE_CHANNELS: arr[1], MANAGE_ROLES: arr[2], CREATE_GUILD_EXPRESSIONS: arr[3], MANAGE_GUILD_EXPRESSIONS: arr[4], VIEW_AUDIT_LOG: arr[5], VIEW_GUILD_ANALYTICS: arr[6] } = Permissions);
@@ -404,13 +404,13 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   }
   items.push(Permissions.MANAGE_WEBHOOKS);
   items.push(Permissions.MANAGE_GUILD);
-  const obj = { title: intl.string(intl56.t["mYck+B"]), permissions: permissions.filter(f136178) };
+  const obj = { title: intl.string(intl56.t["mYck+B"]), permissions: permissions.filter(f137747) };
   intl = intl56.intl;
   permissions = obj.permissions;
   const items1 = [obj, , , , ];
   const items2 = [, , , , , ];
   ({ CREATE_INSTANT_INVITE: arr4[0], CHANGE_NICKNAME: arr4[1], MANAGE_NICKNAMES: arr4[2], KICK_MEMBERS: arr4[3], BAN_MEMBERS: arr4[4], MODERATE_MEMBERS: arr4[5] } = Permissions);
-  const obj2 = { title: intl2.string(intl56.t.Ny49TN), permissions: permissions1.filter(f136178) };
+  const obj2 = { title: intl2.string(intl56.t.Ny49TN), permissions: permissions1.filter(f137747) };
   intl2 = intl56.intl;
   let closure_0 = tmp;
   permissions1 = obj2.permissions;
@@ -421,19 +421,19 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   if (!showCreatorMonetizationAnalyticsPermission.inSoundmojiExperiment) {
     found = items3.filter((item) => item !== constants.USE_EXTERNAL_SOUNDS);
   }
-  const obj3 = { title: intl3.string(intl56.t.cKobO5), permissions: permissions2.filter(f136178) };
+  const obj3 = { title: intl3.string(intl56.t.cKobO5), permissions: permissions2.filter(f137747) };
   intl3 = tmp6(1125).intl;
   permissions2 = obj3.permissions;
   items1[2] = obj3;
   const items4 = [, , , , , , , , , , ];
   ({ CONNECT: arr9[0], SPEAK: arr9[1], STREAM: arr9[2], USE_SOUNDBOARD: arr9[3], USE_EXTERNAL_SOUNDS: arr9[4], USE_VAD: arr9[5], PRIORITY_SPEAKER: arr9[6], MUTE_MEMBERS: arr9[7], DEAFEN_MEMBERS: arr9[8], MOVE_MEMBERS: arr9[9], SET_VOICE_CHANNEL_STATUS: arr9[10] } = Permissions);
-  const obj4 = { title: intl4.string(intl56.t["46Ra1b"]), permissions: permissions3.filter(f136178) };
+  const obj4 = { title: intl4.string(intl56.t["46Ra1b"]), permissions: permissions3.filter(f137747) };
   intl4 = tmp6(1125).intl;
   permissions3 = obj4.permissions;
   items1[3] = obj4;
   const items5 = [, , ];
   ({ USE_APPLICATION_COMMANDS: arr11[0], USE_EMBEDDED_ACTIVITIES: arr11[1], USE_EXTERNAL_APPS: arr11[2] } = Permissions);
-  const obj5 = { title: intl5.string(intl56.t["rrh/W6"]), permissions: permissions4.filter(f136178) };
+  const obj5 = { title: intl5.string(intl56.t["rrh/W6"]), permissions: permissions4.filter(f137747) };
   intl5 = tmp6(1125).intl;
   closure_0 = tmp;
   permissions4 = obj5.permissions;
@@ -450,7 +450,7 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
     }
     if (!flag) {
       const permissions5 = obj6.permissions;
-      obj6.permissions = permissions5.filter(f136178);
+      obj6.permissions = permissions5.filter(f137747);
     }
     push(obj6);
   }
@@ -466,10 +466,10 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   }
   if (!flag2) {
     const permissions6 = obj7.permissions;
-    obj7.permissions = permissions6.filter(f136178);
+    obj7.permissions = permissions6.filter(f137747);
   }
   push2(obj7);
-  const obj8 = { title: intl8.string(intl56.t["3uI5CX"]), permissions: permissions7.filter(f136178) };
+  const obj8 = { title: intl8.string(intl56.t["3uI5CX"]), permissions: permissions7.filter(f137747) };
   const push3 = items1.push;
   intl8 = tmp6(1125).intl;
   const items8 = [Permissions.ADMINISTRATOR];
@@ -477,8 +477,8 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   permissions7 = obj8.permissions;
   push3(obj8);
   return items1;
-};
-export const generateChannelGeneralSection = function generateChannelGeneralSection(arg0, intl3) {
+}
+export function generateChannelGeneralSection(arg0, intl3) {
   let items1;
   let obj = arg2;
   if (arg2 === undefined) {
@@ -500,15 +500,15 @@ export const generateChannelGeneralSection = function generateChannelGeneralSect
   }
   let closure_0 = arg0;
   return obj2;
-};
-export const generateChannelMembershipSection = function generateChannelMembershipSection(arg0, intl4) {
+}
+export function generateChannelMembershipSection(arg0, intl4) {
   let items;
   const obj = { title: intl4, permissions: items.map((item) => closure_0[item.toString(item)]) };
   items = [Permissions.CREATE_INSTANT_INVITE];
   let closure_0 = arg0;
   return obj;
-};
-export const generateChannelTextSection = function generateChannelTextSection(arg0, stringResult2, description) {
+}
+export function generateChannelTextSection(arg0, stringResult2, description) {
   const items = [, , , , , , , , , , , , , , , , , , , ];
   ({ SEND_MESSAGES: arr[0], SEND_MESSAGES_IN_THREADS: arr[1], CREATE_PUBLIC_THREADS: arr[2], CREATE_PRIVATE_THREADS: arr[3], EMBED_LINKS: arr[4], ATTACH_FILES: arr[5], ADD_REACTIONS: arr[6], USE_EXTERNAL_EMOJIS: arr[7], USE_EXTERNAL_STICKERS: arr[8], USE_EXTERNAL_SOUNDS: arr[9], MENTION_EVERYONE: arr[10], MANAGE_MESSAGES: arr[11], PIN_MESSAGES: arr[12], MANAGE_OFFICIAL_MESSAGES: arr[13], BYPASS_SLOWMODE: arr[14], MANAGE_THREADS: arr[15], READ_MESSAGE_HISTORY: arr[16], SEND_TTS_MESSAGES: arr[17], SEND_VOICE_MESSAGES: arr[18], SEND_POLLS: arr[19] } = Permissions);
   let found = items;
@@ -527,16 +527,16 @@ export const generateChannelTextSection = function generateChannelTextSection(ar
   let closure_0 = arg0;
   const obj = { title: stringResult2, description: description.sectionDescription, permissions: found2.map((item) => closure_0[item.toString(item)]) };
   return obj;
-};
-export const generateChannelVoiceSection = function generateChannelVoiceSection(arg0, intl) {
+}
+export function generateChannelVoiceSection(arg0, intl) {
   let items;
   const obj = { title: intl, permissions: items.map((item) => closure_0[item.toString(item)]) };
   items = [, , , , , , , , , , ];
   ({ CONNECT: arr[0], SPEAK: arr[1], STREAM: arr[2], USE_SOUNDBOARD: arr[3], USE_EXTERNAL_SOUNDS: arr[4], USE_VAD: arr[5], PRIORITY_SPEAKER: arr[6], MUTE_MEMBERS: arr[7], DEAFEN_MEMBERS: arr[8], MOVE_MEMBERS: arr[9], SET_VOICE_CHANNEL_STATUS: arr[10] } = Permissions);
   let closure_0 = arg0;
   return obj;
-};
-export const generateChannelVoiceChatSection = function generateChannelVoiceChatSection(arg0, stringResult1, description) {
+}
+export function generateChannelVoiceChatSection(arg0, stringResult1, description) {
   const items = [, , , , , , , , , , , , , ];
   ({ SEND_MESSAGES: arr[0], EMBED_LINKS: arr[1], ATTACH_FILES: arr[2], ADD_REACTIONS: arr[3], USE_EXTERNAL_EMOJIS: arr[4], USE_EXTERNAL_STICKERS: arr[5], USE_EXTERNAL_SOUNDS: arr[6], MENTION_EVERYONE: arr[7], MANAGE_MESSAGES: arr[8], BYPASS_SLOWMODE: arr[9], READ_MESSAGE_HISTORY: arr[10], SEND_TTS_MESSAGES: arr[11], SEND_VOICE_MESSAGES: arr[12], SEND_POLLS: arr[13] } = Permissions);
   let found = items;
@@ -546,8 +546,8 @@ export const generateChannelVoiceChatSection = function generateChannelVoiceChat
   let closure_0 = arg0;
   const obj = { title: stringResult1, description: description.sectionDescription, permissions: found.map((item) => closure_0[item.toString(item)]) };
   return obj;
-};
-export const generateChannelAppsSection = function generateChannelAppsSection(arg0, intl6) {
+}
+export function generateChannelAppsSection(arg0, intl6) {
   let found;
   let obj = arg2;
   if (arg2 === undefined) {
@@ -564,8 +564,8 @@ export const generateChannelAppsSection = function generateChannelAppsSection(ar
   found = items.filter(GlobalUtils.isNotNullish);
   let closure_0 = arg0;
   return obj2;
-};
-export const generateChannelStageVoiceSection = function generateChannelStageVoiceSection(arg0, intl10, isStageVideoEnabledResult) {
+}
+export function generateChannelStageVoiceSection(arg0, intl10, isStageVideoEnabledResult) {
   let items1;
   const CONNECT = Permissions.CONNECT;
   const obj = { title: intl10, permissions: items1.map((item) => closure_0[item.toString(item)]) };
@@ -580,24 +580,24 @@ export const generateChannelStageVoiceSection = function generateChannelStageVoi
   }
   let closure_0 = arg0;
   return obj;
-};
-export const generateChannelStageSection = function generateChannelStageSection(arg0, intl11) {
+}
+export function generateChannelStageSection(arg0, intl11) {
   let items;
   const obj = { title: intl11, permissions: items.map((item) => closure_0[item.toString(item)]) };
   items = [, ];
   ({ REQUEST_TO_SPEAK: arr[0], MENTION_EVERYONE: arr[1] } = Permissions);
   let closure_0 = arg0;
   return obj;
-};
-export const generateChannelEventsSection = function generateChannelEventsSection(arg0, intl12) {
+}
+export function generateChannelEventsSection(arg0, intl12) {
   let items;
   const obj = { title: intl12, permissions: items.map((item) => closure_0[item.toString(item)]) };
   items = [, ];
   ({ CREATE_EVENTS: arr[0], MANAGE_EVENTS: arr[1] } = Permissions);
   let closure_0 = arg0;
   return obj;
-};
-export const renderDescription = function renderDescription(str) {
+}
+export function renderDescription(str) {
   let tmp = str;
   if (null != str) {
     let trimmed;
@@ -613,4 +613,4 @@ export const renderDescription = function renderDescription(str) {
     tmp = trimmed;
   }
   return tmp;
-};
+}

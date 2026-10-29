@@ -1,13 +1,13 @@
-// Module ID: 8178
-// Function ID: 8179
+// Module ID: 8201
+// Function ID: 8202
 // Name: UploadUtils
-// Dependencies: [5065, 8179, 8177, 2]
+// Dependencies: [5066, 8202, 8200, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData, getMaxTotalAttachmentSize
 
-// Module 8178 (UploadUtils)
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5065 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import clipPayloadUtils from "clipPayloadUtils" /* 8179 */;
+// Module 8201 (UploadUtils)
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5066 */;
+import UploadPlatform from "UploadPlatform" /* 8200 */;
+import clipPayloadUtils from "clipPayloadUtils" /* 8202 */;
 import size from "module_2" /* 2 */;
 
 let reName;
@@ -120,12 +120,12 @@ const result = size.fileFinishedImporting("utils/UploadUtils.tsx");
 export const MAX_TOTAL_ATTACHMENT_SIZE = 524288000;
 export const MAX_TOTAL_ATTACHMENT_SIZE_1GB = 1073741824;
 export const MAX_TOTAL_ATTACHMENT_SIZE_MB = 500;
-export const getMaxTotalAttachmentSize = function getMaxTotalAttachmentSize(location) {
+export function getMaxTotalAttachmentSize(location) {
   const _location = location.location;
   const obj = NitroFileUploadExperiments;
   return obj.getNitroFileUploadRolloutConfig({ location: _location }).enabled ? c4 : c3;
-};
-export const getAttachmentPayload = function getAttachmentPayload(id, index, name) {
+}
+export function getAttachmentPayload(id, index, name) {
   let filename;
   let tmp = index;
   if (index === undefined) {
@@ -181,8 +181,8 @@ export const getAttachmentPayload = function getAttachmentPayload(id, index, nam
     obj.original_content_type = id.mimeType;
   }
   return obj;
-};
-export const getFileData = function getFileData(arg0) {
+}
+export function getFileData(arg0) {
   let closure_0 = arg0;
   let xMLHttpRequest = new XMLHttpRequest();
   const promise = new Promise((arg0, arg1) => {
@@ -208,8 +208,8 @@ export const getFileData = function getFileData(arg0) {
     xMLHttpRequest.send();
   });
   return promise;
-};
-export const getFileContentLength = function getFileContentLength(arg0) {
+}
+export function getFileContentLength(arg0) {
   let closure_0 = arg0;
   const promise = new Promise((arg0, onerror) => {
     closure_0 = arg0;
@@ -242,8 +242,8 @@ export const getFileContentLength = function getFileContentLength(arg0) {
     xMLHttpRequest.send();
   });
   return promise;
-};
-export const getFile = function getFile(overrideType) {
+}
+export function getFile(overrideType) {
   let i;
   let overrideFilename;
   let str10;
@@ -335,4 +335,4 @@ export const getFile = function getFile(overrideType) {
       str5 = "unknown";
     }
   }
-};
+}

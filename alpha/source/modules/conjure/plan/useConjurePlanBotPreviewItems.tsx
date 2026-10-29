@@ -1,23 +1,23 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12546
+// Function ID: 12547
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2042, 4860, 1403, 1389, 6808, 1084, 558, 576, 504, 8707, 6047, 10241, 6054, 12493, 1125, 3863, 5058, 2]
+// Dependencies: [19, 2043, 4861, 1403, 1389, 6831, 1084, 558, 576, 504, 8710, 6051, 10274, 6058, 12547, 1125, 3864, 5059, 2]
 
-// Module 12492 (useConjurePlanBotPreviewItems)
+// Module 12546 (useConjurePlanBotPreviewItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6047 */;
-import InteractionTypes from "InteractionTypes" /* 6054 */;
-import UserActionCreators from "UserActionCreators" /* 8707 */;
-import createMessage from "createMessage" /* 10241 */;
-import conjurePlanBot from "conjurePlanBot" /* 12493 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6051 */;
+import InteractionTypes from "InteractionTypes" /* 6058 */;
+import UserActionCreators from "UserActionCreators" /* 8710 */;
+import createMessage from "createMessage" /* 10274 */;
+import conjurePlanBot from "conjurePlanBot" /* 12547 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -359,7 +359,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   if (null == tmp4) {
     items = [];
   } else {
-    const obj3 = { message: intl.string(_modDef3863.J7qggf), reply: intl2.string(_modDef3863.nqYtiy), event: intl3.string(_modDef3863["05lU9W"]) };
+    const obj3 = { message: intl.string(_modDef3864.J7qggf), reply: intl2.string(_modDef3864.nqYtiy), event: intl3.string(_modDef3864["05lU9W"]) };
     const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
     conjurePlanBot;
     intl = tmp(1125).intl;
@@ -386,7 +386,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef3863.J7qggf), reply: intl2.string(_modDef3863.nqYtiy), event: intl3.string(_modDef3863["05lU9W"]) };
+        const obj = { message: intl.string(_modDef3864.J7qggf), reply: intl2.string(_modDef3864.nqYtiy), event: intl3.string(_modDef3864["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -415,7 +415,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(commands);
-      const obj3 = { message: intl.string(_modDef3863.J7qggf), reply: intl2.string(_modDef3863.nqYtiy), event: intl3.string(_modDef3863["05lU9W"]) };
+      const obj3 = { message: intl.string(_modDef3864.J7qggf), reply: intl2.string(_modDef3864.nqYtiy), event: intl3.string(_modDef3864["05lU9W"]) };
       intl = tmp(1125).intl;
       intl2 = tmp(1125).intl;
       intl3 = tmp(1125).intl;
@@ -444,7 +444,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(tmp);
-      const obj2 = { message: intl.string(_modDef3863.J7qggf), reply: intl2.string(_modDef3863.nqYtiy), event: intl3.string(_modDef3863["05lU9W"]) };
+      const obj2 = { message: intl.string(_modDef3864.J7qggf), reply: intl2.string(_modDef3864.nqYtiy), event: intl3.string(_modDef3864["05lU9W"]) };
       intl = tmp2(1125).intl;
       intl2 = tmp2(1125).intl;
       intl3 = tmp2(1125).intl;
@@ -559,7 +559,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     }
     if (name1 == null) {
       const intl = tmp(1125).intl;
-      name1 = intl.string(application_id(3863).JEYq8M);
+      name1 = intl.string(application_id(3864).JEYq8M);
     }
     let name2;
     if (stateFromStores1 != null) {
@@ -666,7 +666,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
         return user;
       }
     }
-    const stringResult = obj6.string(application_id(3863)["9iAOsw"]);
+    const stringResult = obj6.string(application_id(3864)["9iAOsw"]);
     const obj2 = { discriminator: "0003" };
     cResult[17] = stringResult;
     cResult[18] = obj2;
@@ -810,7 +810,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   }
   if (name == null) {
     let intl = tmp(tmp2[15]).intl;
-    name = intl.string(require("module_3863").JEYq8M);
+    name = intl.string(require("module_3864").JEYq8M);
   }
   const items4 = [tmp3];
   const items5 = [application_id];
@@ -832,7 +832,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[15]).intl;
-  const tmp13Result = closure_14(c11, intl2.string(require("module_3863")["9iAOsw"]), { discriminator: "0003" });
+  const tmp13Result = closure_14(c11, intl2.string(require("module_3864")["9iAOsw"]), { discriminator: "0003" });
   let closure_5 = tmp13Result;
   const tmpResult4 = tmp(stateFromStores[17]);
   let str = tmpResult4.getName(stateFromStores);
@@ -852,7 +852,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
           if (null != obj6) {
             if (null != closure_5) {
               const obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              const obj2 = { targetMessage: intl.string(_modDef3863["y+QYes"]), memberMessage: intl2.string(_modDef3863.BUTRDc) };
+              const obj2 = { targetMessage: intl.string(_modDef3864["y+QYes"]), memberMessage: intl2.string(_modDef3864.BUTRDc) };
               intl = intl4.intl;
               intl2 = intl4.intl;
               buildPreviewItems(closure_1, obj, obj2);

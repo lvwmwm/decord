@@ -1,16 +1,16 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9660
+// Function ID: 9661
 // Name: QuestCopyUtils
-// Dependencies: [6745, 1125, 6752, 9607, 9610, 7321, 2]
+// Dependencies: [6768, 1125, 6775, 9639, 9642, 7345, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9628 (QuestCopyUtils)
+// Module 9660 (QuestCopyUtils)
 import intl7 from "intl" /* 1125 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import captureAdUserAction from "captureAdUserAction" /* 9607 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9610 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import AdCreativeType from "AdCreativeType" /* 6775 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import captureAdUserAction from "captureAdUserAction" /* 9639 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -19,7 +19,7 @@ let closure_4;
 ({ QuestHomeSortMethods: c2, RewardFilterTypes: c3, TaskFilterTypes: closure_4 } = QuestConstants);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestCopyUtils.tsx");
 
-export const getContextualEntrypointHeading = function getContextualEntrypointHeading(taskDetails) {
+export function getContextualEntrypointHeading(taskDetails) {
   let quest;
   let thirdPartyTaskDetails;
   ({ quest, thirdPartyTaskDetails } = taskDetails);
@@ -69,8 +69,8 @@ export const getContextualEntrypointHeading = function getContextualEntrypointHe
       return intl.formatToPlainString(intl7.t.EQa7os, obj);
     }
   }
-};
-export const getDisclosureText = function getDisclosureText(arg0) {
+}
+export function getDisclosureText(arg0) {
   let adCreativeType;
   let cosponsorName;
   let gamePublisher;
@@ -125,11 +125,11 @@ export const getDisclosureText = function getDisclosureText(arg0) {
     }
   }
   return tmp4;
-};
-export const getExternalCtaLabel = function getExternalCtaLabel(quest) {
+}
+export function getExternalCtaLabel(quest) {
   return quest.config.ctaConfig.buttonLabel;
-};
-export const getSortMethodText = function getSortMethodText(arg0) {
+}
+export function getSortMethodText(arg0) {
   if (constants.SUGGESTED === arg0) {
     const intl4 = intl7.intl;
     return intl4.string(intl7.t.gBfXPZ);
@@ -143,8 +143,8 @@ export const getSortMethodText = function getSortMethodText(arg0) {
     const intl = intl7.intl;
     return intl.string(intl7.t["BB+2tX"]);
   }
-};
-export const getFilterTypeText = function getFilterTypeText(filter) {
+}
+export function getFilterTypeText(filter) {
   if (constants2.VIRTUAL_CURRENCY === filter) {
     const intl5 = intl7.intl;
     return intl5.string(intl7.t.ElYQFS);
@@ -161,8 +161,8 @@ export const getFilterTypeText = function getFilterTypeText(filter) {
     const intl = intl7.intl;
     return intl.string(intl7.t["1nJR4p"]);
   }
-};
-export const getFilterGroupHeadingText = function getFilterGroupHeadingText(arg0) {
+}
+export function getFilterGroupHeadingText(arg0) {
   if ("reward" === arg0) {
     const intl2 = intl7.intl;
     return intl2.string(intl7.t.vjLqAU);
@@ -170,22 +170,22 @@ export const getFilterGroupHeadingText = function getFilterGroupHeadingText(arg0
     const intl = intl7.intl;
     return intl.string(intl7.t.Hufmss);
   }
-};
-export const getQuestUrl = function getQuestUrl(id) {
+}
+export function getQuestUrl(id) {
   return "" + location.protocol + "//" + location.host + "/quests/" + id;
-};
-export const getCtaLink = function getCtaLink(config) {
+}
+export function getCtaLink(config) {
   return config.ctaConfig.link;
-};
-export const copyShareLink = function copyShareLink(id, ctaContent) {
+}
+export function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
   const obj = captureAdUserAction;
   const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent, surfaceId: ctaContent.content, sourceQuestContent: ctaContent.sourceQuestContent, questContentPosition: ctaContent.position, impressionId: ctaContent.impressionId };
   obj.captureAdUserAction(obj2);
   const obj3 = ClipboardUtils;
   obj3.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
-};
-export const getDefaultReward = function getDefaultReward(config) {
+}
+export function getDefaultReward(config) {
   if (0 === config.rewardsConfig.rewards.length) {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -196,4 +196,4 @@ export const getDefaultReward = function getDefaultReward(config) {
   } else {
     return config.rewardsConfig.rewards[0];
   }
-};
+}

@@ -1,17 +1,17 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9433
+// Function ID: 9434
 // Name: WishlistRecord
-// Dependencies: [1404, 2021, 9403, 9404, 9405, 9406, 1084, 2]
+// Dependencies: [1404, 2022, 9434, 9435, 9436, 9437, 1084, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 9402 (WishlistRecord)
+// Module 9433 (WishlistRecord)
 import Constants from "Constants" /* 1084 */;
 import Record from "Record" /* 1404 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9403 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9404 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9405 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9406 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9434 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9435 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9436 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9437 */;
 import size from "module_2" /* 2 */;
 
 let set, sku_product_line;
@@ -69,17 +69,17 @@ class WishlistRecord extends Record {
 const result = size.fileFinishedImporting("modules/wishlists/records/WishlistRecord.tsx");
 
 export default WishlistRecord;
-export const getWishlistSkuIds = function getWishlistSkuIds(first1) {
+export function getWishlistSkuIds(first1) {
   const items = first1.items;
   return items.map((skuId) => skuId.skuId);
-};
-export const wishlistHasSkuId = function wishlistHasSkuId(items, arg1) {
+}
+export function wishlistHasSkuId(items, arg1) {
   let closure_0 = arg1;
   items = items.items;
   return items.some((skuId) => skuId.skuId === closure_0);
-};
-export const getWishlistProductLines = function getWishlistProductLines(items) {
+}
+export function getWishlistProductLines(items) {
   items = items.items;
   set = new Set(items.map((skuProductLine) => skuProductLine.skuProductLine));
   return set;
-};
+}

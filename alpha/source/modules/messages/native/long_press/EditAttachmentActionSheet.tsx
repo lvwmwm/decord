@@ -1,17 +1,18 @@
-// Module ID: 14218
-// Function ID: 14219
+// Module ID: 14452
+// Function ID: 14453
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6045, 5009, 1084, 21, 558, 576, 8696, 8795, 1402, 1125, 5013, 7601, 7284, 5270, 7216, 6936, 5280, 6013, 587, 7334, 2]
+// Dependencies: [5, 32, 19, 6049, 5010, 1084, 14439, 21, 558, 576, 8699, 8798, 1402, 1125, 5014, 7624, 7308, 5271, 7240, 6960, 5281, 6015, 587, 7358, 2]
 
-// Module 14218 (EditAttachmentActionSheet)
+// Module 14452 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1084 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8696 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8699 */;
+import AttachmentConstants from "AttachmentConstants" /* 14439 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6045 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,20 +20,21 @@ import size from "module_2" /* 2 */;
 let c1, c3, dependencyMap, id;
 
 let c10;
-let c9;
 let tmp;
+let unpackModuleId;
 const intl7 = tmp(1125);
 const FlagUtils = tmp(1402);
-const Text_Text = tmp(5270);
-const components_Button_Button = tmp(5280);
-const Stack_Stack = tmp(6013);
-const TableCheckboxRow2 = tmp(6936);
-const TextArea2 = tmp(7216);
-const BottomSheetTitleHeader2 = tmp(7284);
-const ActionSheet2 = tmp(7334);
+const Text_Text = tmp(5271);
+const components_Button_Button = tmp(5281);
+const Stack_Stack = tmp(6015);
+const TableCheckboxRow2 = tmp(6960);
+const TextArea2 = tmp(7240);
+const BottomSheetTitleHeader = tmp(7308);
+const ActionSheet2 = tmp(7358);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 let MessageAttachmentFlags = Constants.MessageAttachmentFlags;
-({ jsx: c9, jsxs: c10 } = Fragment);
+let maxLength = AttachmentConstants.MAX_ATTACHMENT_DESCRIPTION_LENGTH;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttachmentActionSheet(message) {
   let bottomSheetClose;
   let bottomSheetRef;
@@ -44,15 +46,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   let tmp5;
   let tmp8;
   const tmp = message;
-  let obj = message(bottomSheetClose[8]);
+  let obj = message(bottomSheetClose[9]);
   const cResult = obj.c(44);
   message = message.message;
   const attachment = message.attachment;
-  let obj2 = message(bottomSheetClose[9]);
+  let obj2 = message(bottomSheetClose[10]);
   const bottomSheetRef1 = obj2.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   if (cResult[0] !== attachment) {
-    const tmp7 = attachment(bottomSheetClose[10])(attachment);
+    const tmp7 = attachment(bottomSheetClose[11])(attachment);
     cResult[0] = attachment;
     cResult[1] = tmp7;
     tmp5 = tmp7;
@@ -93,8 +95,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
     const _Symbol = Symbol;
     first1(obj3.useState(), 2);
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(tmp2[12]).intl;
-      let stringResult = intl.string(tmp(tmp2[12]).t.Y8ujqr);
+      let intl = tmp(tmp2[13]).intl;
+      let stringResult = intl.string(tmp(tmp2[13]).t.Y8ujqr);
       cResult[7] = stringResult;
       tmp27 = stringResult;
     } else {
@@ -131,8 +133,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
               }
               const _Symbol3 = Symbol;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl2 = tmp(tmp2[12]).intl;
-                const stringResult1 = intl2.string(tmp(bottomSheetClose[12]).t.Xvtztt);
+                const intl2 = tmp(tmp2[13]).intl;
+                const stringResult1 = intl2.string(tmp(bottomSheetClose[13]).t.Xvtztt);
                 cResult[16] = stringResult1;
                 tmp32 = stringResult1;
               } else {
@@ -141,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
               const _Symbol4 = Symbol;
               if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
                 let obj4 = { title: tmp27 };
-                const tmp36 = closure_9(tmp(bottomSheetClose[15]).BottomSheetTitleHeader, obj4);
+                const tmp36 = closure_10(tmp(bottomSheetClose[16]).BottomSheetTitleHeader, obj4);
                 cResult[17] = tmp36;
                 tmp34 = tmp36;
               } else {
@@ -149,7 +151,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
               }
               if (cResult[18] !== tmp5) {
                 let obj5 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 };
-                const tmp39 = closure_9(tmp(bottomSheetClose[16]).Text, obj5);
+                const tmp39 = closure_10(tmp(bottomSheetClose[17]).Text, obj5);
                 cResult[18] = tmp5;
                 cResult[19] = tmp39;
                 tmp37 = tmp39;
@@ -158,10 +160,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
               }
               const _Symbol5 = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl3 = tmp(tmp2[12]).intl;
-                const stringResult2 = intl3.string(tmp(bottomSheetClose[12]).t.eOB2eR);
-                const intl4 = tmp(tmp2[12]).intl;
-                const stringResult3 = intl4.string(tmp(bottomSheetClose[12]).t.RNH1jn);
+                const intl3 = tmp(tmp2[13]).intl;
+                const stringResult2 = intl3.string(tmp(bottomSheetClose[13]).t.eOB2eR);
+                const intl4 = tmp(tmp2[13]).intl;
+                const stringResult3 = intl4.string(tmp(bottomSheetClose[13]).t.RNH1jn);
                 cResult[20] = stringResult2;
                 cResult[21] = stringResult3;
                 tmp41 = stringResult3;
@@ -172,111 +174,111 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
               }
               if (cResult[22] === value) {
                 let tmp44;
-                let tmp47;
+                let tmp48;
                 if (cResult[23] === first2) {
                   tmp44 = cResult[24];
                 }
                 const _Symbol6 = Symbol;
                 if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl5 = tmp(tmp2[12]).intl;
-                  const stringResult4 = intl5.string(tmp(bottomSheetClose[12]).t["gsI+xC"]);
+                  const intl5 = tmp(tmp2[13]).intl;
+                  const stringResult4 = intl5.string(tmp(bottomSheetClose[13]).t["gsI+xC"]);
                   cResult[25] = stringResult4;
-                  tmp47 = stringResult4;
+                  tmp48 = stringResult4;
                 } else {
-                  tmp47 = cResult[25];
+                  tmp48 = cResult[25];
                 }
                 if (cResult[26] === first1) {
-                  let tmp50;
-                  let tmp53;
-                  let tmp56;
+                  let tmp51;
+                  let tmp54;
+                  let tmp57;
                   if (cResult[27] === (first2 || tmp8)) {
-                    tmp50 = cResult[28];
+                    tmp51 = cResult[28];
                   }
                   if (cResult[29] !== tmp25) {
-                    let tmp54 = null;
+                    let tmp55 = null;
                     if (null != tmp25) {
                       const obj6 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp25 };
-                      tmp54 = closure_9(tmp(tmp2[16]).Text, obj6);
+                      tmp55 = closure_10(tmp(tmp2[17]).Text, obj6);
                     }
                     cResult[29] = tmp25;
-                    cResult[30] = tmp54;
-                    tmp53 = tmp54;
+                    cResult[30] = tmp55;
+                    tmp54 = tmp55;
                   } else {
-                    tmp53 = cResult[30];
+                    tmp54 = cResult[30];
                   }
                   const _Symbol7 = Symbol;
                   if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl6 = tmp(tmp2[12]).intl;
-                    const stringResult5 = intl6.string(tmp(bottomSheetClose[12]).t["TY+auE"]);
+                    const intl6 = tmp(tmp2[13]).intl;
+                    const stringResult5 = intl6.string(tmp(bottomSheetClose[13]).t["TY+auE"]);
                     cResult[31] = stringResult5;
-                    tmp56 = stringResult5;
+                    tmp57 = stringResult5;
                   } else {
-                    tmp56 = cResult[31];
+                    tmp57 = cResult[31];
                   }
                   if (cResult[32] === tmp30) {
-                    let tmp58;
+                    let tmp59;
                     if (cResult[33] === first2) {
-                      tmp58 = cResult[34];
+                      tmp59 = cResult[34];
                     }
                     if (cResult[35] === tmp44) {
-                      if (cResult[36] === tmp50) {
-                        if (cResult[37] === tmp53) {
-                          if (cResult[38] === tmp58) {
-                            let tmp61;
+                      if (cResult[36] === tmp51) {
+                        if (cResult[37] === tmp54) {
+                          if (cResult[38] === tmp59) {
+                            let tmp62;
                             if (cResult[39] === tmp37) {
-                              tmp61 = cResult[40];
+                              tmp62 = cResult[40];
                             }
                             if (cResult[41] === bottomSheetRef) {
-                              let tmp65;
-                              if (cResult[42] === tmp61) {
-                                tmp65 = cResult[43];
+                              let tmp66;
+                              if (cResult[42] === tmp62) {
+                                tmp66 = cResult[43];
                               }
-                              return tmp65;
+                              return tmp66;
                             }
                             const _HermesInternal = HermesInternal;
-                            const obj7 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: "" + tmp32 + ": " + tmp27, header: tmp34, children: tmp61 };
-                            const ActionSheet = tmp(tmp2[22]).ActionSheet;
-                            const tmp67 = closure_9(ActionSheet, obj7);
+                            const obj7 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: "" + tmp32 + ": " + tmp27, header: tmp34, children: tmp62 };
+                            const ActionSheet = tmp(tmp2[23]).ActionSheet;
+                            const tmp68 = closure_10(ActionSheet, obj7);
                             cResult[41] = bottomSheetRef;
-                            cResult[42] = tmp61;
-                            cResult[43] = tmp67;
-                            tmp65 = tmp67;
+                            cResult[42] = tmp62;
+                            cResult[43] = tmp68;
+                            tmp66 = tmp68;
                           }
                         }
                       }
                     }
-                    const obj8 = { spacing: attachment(bottomSheetClose[21]).space.PX_16, children: items };
-                    const Stack = tmp(tmp2[20]).Stack;
-                    items = [tmp37, tmp44, tmp50, tmp53, tmp58];
-                    const tmp64 = closure_10(Stack, obj8);
+                    const obj8 = { spacing: attachment(bottomSheetClose[22]).space.PX_16, children: items };
+                    const Stack = tmp(tmp2[21]).Stack;
+                    items = [tmp37, tmp44, tmp51, tmp54, tmp59];
+                    const tmp65 = closure_11(Stack, obj8);
                     cResult[35] = tmp44;
-                    cResult[36] = tmp50;
-                    cResult[37] = tmp53;
-                    cResult[38] = tmp58;
+                    cResult[36] = tmp51;
+                    cResult[37] = tmp54;
+                    cResult[38] = tmp59;
                     cResult[39] = tmp37;
-                    cResult[40] = tmp64;
-                    tmp61 = tmp64;
+                    cResult[40] = tmp65;
+                    tmp62 = tmp65;
                   }
-                  const obj9 = { variant: "primary", text: tmp56, onPress: tmp30, loading: first2, disabled: first2 };
-                  const tmp60 = closure_9(tmp(bottomSheetClose[19]).Button, obj9);
+                  const obj9 = { variant: "primary", text: tmp57, onPress: tmp30, loading: first2, disabled: first2 };
+                  const tmp61 = closure_10(tmp(bottomSheetClose[20]).Button, obj9);
                   cResult[32] = tmp30;
                   cResult[33] = first2;
-                  cResult[34] = tmp60;
-                  tmp58 = tmp60;
+                  cResult[34] = tmp61;
+                  tmp59 = tmp61;
                 }
-                const obj10 = { start: true, end: true, label: tmp47, checked: first1, onPress: tmp21, disabled: first2 || tmp8 };
-                const tmp52 = closure_9(tmp(bottomSheetClose[18]).TableCheckboxRow, obj10);
+                const obj10 = { start: true, end: true, label: tmp48, checked: first1, onPress: tmp21, disabled: first2 || tmp8 };
+                const tmp53 = closure_10(tmp(bottomSheetClose[19]).TableCheckboxRow, obj10);
                 cResult[26] = first1;
                 cResult[27] = first2 || tmp8;
-                cResult[28] = tmp52;
-                tmp50 = tmp52;
+                cResult[28] = tmp53;
+                tmp51 = tmp53;
               }
-              const obj11 = { label: tmp40, placeholder: tmp41, value, onChange: tmp14, disabled: first2 };
-              const tmp46 = closure_9(tmp(bottomSheetClose[17]).TextArea, obj11);
+              const obj11 = { label: tmp40, placeholder: tmp41, value, onChange: tmp14, maxLength, disabled: first2 };
+              const tmp47 = closure_10(tmp(bottomSheetClose[18]).TextArea, obj11);
               cResult[22] = value;
               cResult[23] = first2;
-              cResult[24] = tmp46;
-              tmp44 = tmp46;
+              cResult[24] = tmp47;
+              tmp44 = tmp47;
             }
           }
         }
@@ -295,7 +297,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c2;
@@ -331,7 +333,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
                     message(true);
                     closure_1_7(undefined);
                     c2 = 1;
-                    let obj2 = attachment(bottomSheetClose[14]);
+                    let obj2 = attachment(bottomSheetClose[15]);
                     c1 = 2;
                     c3 = 1;
                     const obj5 = { value: obj2.patchMessageAttachments(message.channel_id, message.id, mapped), done: false };
@@ -358,7 +360,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
             c2 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -384,8 +386,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   let hasFlagResult = tmp8;
   if (!hasFlagResult) {
     let num5 = attachment.flags;
-    const hasFlag = tmp(tmp2[11]).hasFlag;
-    tmp(bottomSheetClose[11]);
+    const hasFlag = tmp(tmp2[12]).hasFlag;
+    tmp(bottomSheetClose[12]);
     if (num5 == null) {
       num5 = 0;
     }
@@ -425,8 +427,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(stringResult);
   }
-  let obj = function _handleSave2() {
-    obj = _asyncToGenerator(async (arg0, value) => {
+  maxLength = function _handleSave2() {
+    let obj = _asyncToGenerator(async (arg0, value) => {
       let message;
       let v1;
       if (c3 === 2) {
@@ -439,7 +441,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -462,6 +464,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
                   if (attachments.some((id) => id.id === user.id)) {
                     const attachments1 = message.attachments;
                     const mapped = attachments1.map((id) => {
+                      let obj;
                       id = id.id;
                       if (id === user.id) {
                         obj = { id, description, is_spoiler };
@@ -474,7 +477,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
                     closure_2_6(true);
                     _undefined(undefined);
                     c2 = 1;
-                    let obj2 = c1(c2[14]);
+                    let obj2 = c1(c2[15]);
                     c1 = 2;
                     c3 = 1;
                     const obj5 = { value: obj2.patchMessageAttachments(message.channel_id, message.id, mapped), done: false };
@@ -494,14 +497,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
           } else if (arg0 === 2) {
             c2 = 0;
             c3 = 3;
-            obj = { value, done: true };
+            let obj = { value, done: true };
             return obj;
           } else {
             closure_128_2();
             c2 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -515,12 +518,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
     return obj(...arguments);
   };
   const tmp = require;
-  obj = useBottomSheetRef;
-  const bottomSheetRef1 = obj.useBottomSheetRef();
+  maxLength = useBottomSheetRef;
+  const bottomSheetRef1 = maxLength.useBottomSheetRef();
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8795)(attachment);
+  const tmp5 = attachment(8798)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;
@@ -552,23 +555,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   first1(obj2.useState(), 2);
   let intl = intl7.intl;
   let stringResult = intl.string(intl7.t.Y8ujqr);
-  let obj3 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: "" + intl2.string(intl7.t.Xvtztt) + ": " + stringResult, header: obj(BottomSheetTitleHeader2.BottomSheetTitleHeader, { title: stringResult }), children: tmp23(Stack, obj4) };
+  let obj3 = { ref: bottomSheetRef, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: "" + intl2.string(intl7.t.Xvtztt) + ": " + stringResult, header: closure_10(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }), children: tmp23(Stack, obj4) };
   const ActionSheet = ActionSheet2.ActionSheet;
   intl2 = intl7.intl;
   obj4 = { spacing: tmp4(587).space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
-  items = [obj(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
-  let obj5 = { label: intl3.string(intl7.t.eOB2eR), placeholder: intl4.string(intl7.t.RNH1jn), value, onChange: tmp10, disabled: first2 };
+  items = [closure_10(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
+  let obj5 = { label: intl3.string(intl7.t.eOB2eR), placeholder: intl4.string(intl7.t.RNH1jn), value, onChange: tmp10, maxLength, disabled: first2 };
   const TextArea = TextArea2.TextArea;
   intl3 = intl7.intl;
   intl4 = intl7.intl;
-  items[1] = obj(TextArea, obj5);
+  items[1] = closure_10(TextArea, obj5);
   const obj6 = { start: true, end: true, label: intl5.string(intl7.t["gsI+xC"]), checked: first1, onPress: tmp16, disabled: first2 || startsWithResult };
   const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
   intl5 = intl7.intl;
-  items[2] = obj(TableCheckboxRow, obj6);
+  items[2] = closure_10(TableCheckboxRow, obj6);
   let tmp22Result = null;
-  tmp23 = closure_10;
+  tmp23 = closure_11;
   if (null != tmp20) {
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp20 };
     tmp22Result = tmp22(Text_Text.Text, obj7);
@@ -585,8 +588,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   };
   const Button = components_Button_Button.Button;
   intl6 = intl7.intl;
-  items[4] = obj(Button, obj8);
-  return obj(ActionSheet, obj3);
+  items[4] = closure_10(Button, obj8);
+  return closure_10(ActionSheet, obj3);
 });
 const result = size.fileFinishedImporting("modules/messages/native/long_press/EditAttachmentActionSheet.tsx");
 

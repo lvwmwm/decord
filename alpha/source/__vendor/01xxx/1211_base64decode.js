@@ -22,7 +22,7 @@ items[charCodeAtResult] = parts.indexOf("+");
 const charCodeAtResult1 = "_".charCodeAt(0);
 items[charCodeAtResult1] = parts.indexOf("/");
 
-export const base64decode = function base64decode(actionData) {
+export function base64decode(actionData) {
   let diff;
   const result = 3 * actionData.length / 4;
   if ("=" == actionData[actionData.length - 2]) {
@@ -116,8 +116,8 @@ export const base64decode = function base64decode(actionData) {
   } else {
     return uint8Array.subarray(0, num7);
   }
-};
-export const base64encode = function base64encode(NumberResult) {
+}
+export function base64encode(NumberResult) {
   let str = "";
   let num = 0;
   let num2 = 0;
@@ -167,4 +167,4 @@ export const base64encode = function base64encode(NumberResult) {
     tmp10 = text2;
   }
   return tmp10;
-};
+}

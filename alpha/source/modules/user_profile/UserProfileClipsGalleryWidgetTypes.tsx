@@ -1,11 +1,11 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7768
+// Function ID: 7769
 // Name: UserProfileClipsGalleryWidgetTypes
-// Dependencies: [7739, 1354, 2]
+// Dependencies: [7761, 1354, 2]
 
-// Module 7746 (UserProfileClipsGalleryWidgetTypes)
+// Module 7768 (UserProfileClipsGalleryWidgetTypes)
 import _modDef1354 from "module_1354" /* 1354 */;
-import WidgetType from "WidgetType" /* 7739 */;
+import WidgetType from "WidgetType" /* 7761 */;
 import size from "module_2" /* 2 */;
 
 function isUploadedWidgetClip(status) {
@@ -13,7 +13,7 @@ function isUploadedWidgetClip(status) {
 }
 function convertClip(gameId) {
   let obj6;
-  const obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };
+  const obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags, clip_events_timeline: gameId.clipEventsTimeline };
   if ("saved" === gameId.status) {
     const obj5 = {};
     const merged = Object.assign(obj);

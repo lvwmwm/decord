@@ -1,16 +1,16 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9011
+// Function ID: 9012
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 4878, 7231, 7232, 1084, 7230, 7237, 1096, 5944, 1125, 2]
+// Dependencies: [5, 4879, 7255, 7256, 1084, 7254, 7261, 1096, 5946, 1125, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9008 (DefaultChannelThresholdUtils)
+// Module 9011 (DefaultChannelThresholdUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7230 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7232 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7254 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7231 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7255 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -336,9 +336,9 @@ let closure_7 = GuildOnboardingPromptsConstants.NUM_DEFAULT_CHATTABLE_CHANNELS_M
 ({ GuildFeatures: metroImportAll, GuildSettingsSections, Permissions: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/guild_onboarding/DefaultChannelThresholdUtils.tsx");
 
-export const isDefaultChannelThresholdMetAfterDelete = function isDefaultChannelThresholdMetAfterDelete() {
+export function isDefaultChannelThresholdMetAfterDelete() {
   return obj(...arguments);
-};
-export const checkChattableChannelThresholdMetAfterChannelPermissionDeny = function checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
+}
+export function checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
   return obj(...arguments);
-};
+}

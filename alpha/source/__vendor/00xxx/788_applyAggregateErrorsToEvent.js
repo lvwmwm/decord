@@ -75,7 +75,7 @@ function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mech
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, exception, originalException) {
+export function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, exception, originalException) {
   exception = exception.exception;
   let values;
   if (exception != null) {
@@ -97,4 +97,4 @@ export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(
       }
     }
   }
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18959
+// Function ID: 18960
 // Name: ExternalPipAutoEnterExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: isExternalPipAutoEnterEnabled
 
-// Module 18725 (ExternalPipAutoEnterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 18959 (ExternalPipAutoEnterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,6 +15,6 @@ obj2[1] = { autoEnterEnabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/external_pip/ExternalPipAutoEnterExperiment.tsx");
 
-export const isExternalPipAutoEnterEnabled = function isExternalPipAutoEnterEnabled() {
+export function isExternalPipAutoEnterEnabled() {
   return config.getConfig({ location: "ExternalPipView" }).autoEnterEnabled;
-};
+}

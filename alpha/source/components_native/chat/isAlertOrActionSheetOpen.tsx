@@ -1,18 +1,18 @@
-// Module ID: 10055
-// Function ID: 10056
+// Module ID: 10087
+// Function ID: 10088
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [5247, 10056, 5946, 2]
+// Dependencies: [5248, 10088, 5948, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 10055 (isAlertOrActionSheetOpen)
-import useAlertStore2 from "useAlertStore" /* 5946 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
-import AlertStore from "AlertStore" /* 10056 */;
+// Module 10087 (isAlertOrActionSheetOpen)
+import useAlertStore2 from "useAlertStore" /* 5948 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
+import AlertStore from "AlertStore" /* 10088 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/chat/isAlertOrActionSheetOpen.tsx");
 
-export const isAlertOrActionSheetOpen = function isAlertOrActionSheetOpen(selectedChannelId) {
+export function isAlertOrActionSheetOpen(selectedChannelId) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = ActionSheetStore;
@@ -32,4 +32,4 @@ export const isAlertOrActionSheetOpen = function isAlertOrActionSheetOpen(select
     tmp = tmp3;
   }
   return tmp;
-};
+}

@@ -1,8 +1,8 @@
-// Module ID: 13854
-// Function ID: 13855
+// Module ID: 14087
+// Function ID: 14088
 // Dependencies: [2]
 
-// Module 13854
+// Module 14087
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ControllerIllocon-1x.png.js");

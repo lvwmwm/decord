@@ -10,7 +10,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/clock.tsx");
 
-export const monotonicNowMs = function monotonicNowMs() {
+export function monotonicNowMs() {
   const LIBDISCORE_JSI = global_types.typedGlobal.LIBDISCORE_JSI;
   let monotonicNowMs;
   if (LIBDISCORE_JSI != null) {
@@ -21,4 +21,4 @@ export const monotonicNowMs = function monotonicNowMs() {
     monotonicNowMsResult = LIBDISCORE_JSI.monotonicNowMs();
   }
   return monotonicNowMsResult;
-};
+}

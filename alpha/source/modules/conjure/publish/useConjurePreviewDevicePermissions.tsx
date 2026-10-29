@@ -1,10 +1,10 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12257
+// Function ID: 12258
 // Name: useConjurePreviewDevicePermissions
-// Dependencies: [10749, 558, 576, 504, 2]
+// Dependencies: [10824, 558, 576, 504, 2]
 
-// Module 12203 (useConjurePreviewDevicePermissions)
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+// Module 12257 (useConjurePreviewDevicePermissions)
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12407
+// Function ID: 12408
 // Name: ConjureAppBuildRequest
-// Dependencies: [32, 19, 6808, 1125, 3863, 558, 576, 12354, 12344, 10237, 12356, 2]
+// Dependencies: [32, 19, 6831, 1125, 3864, 558, 576, 12408, 12398, 10270, 12410, 2]
 // Exports: appBuildRequestSentToast
 
-// Module 12353 (ConjureAppBuildRequest)
+// Module 12407 (ConjureAppBuildRequest)
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import createNonce from "createNonce" /* 10237 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12344 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12354 */;
-import conjureSendToProject from "conjureSendToProject" /* 12356 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import createNonce from "createNonce" /* 10270 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12398 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12408 */;
+import conjureSendToProject from "conjureSendToProject" /* 12410 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function sentMessage(arr) {
     });
     const targets = mapped.join(", ");
     let intl = require("intl").intl;
-    return "" + intl.formatToPlainString(_modDef3863.jZlNst, { targets }) + "\n\n" + tmp;
+    return "" + intl.formatToPlainString(_modDef3864.jZlNst, { targets }) + "\n\n" + tmp;
   });
   return arr.join("\n\n");
 }
@@ -585,13 +585,13 @@ let result = size.fileFinishedImporting("modules/conjure/app_build_request/Conju
 
 export const CONJURE_APP_BUILD_PROMPT_MAX_LENGTH = 4000;
 export const CONJURE_APP_BUILD_MAX_TARGETS = 10;
-export const appBuildRequestSentToast = function appBuildRequestSentToast(arr) {
+export function appBuildRequestSentToast(arr) {
   let mapped;
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { names: mapped.join(", ") };
-  const RZO35O = _modDef3863.RZO35O;
+  const RZO35O = _modDef3864.RZO35O;
   mapped = arr.map((name) => name.name);
   return formatToPlainString(RZO35O, obj);
-};
+}
 export const useConjureAppBuildRequestForm = tmp2;

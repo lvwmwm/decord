@@ -1,10 +1,10 @@
-// Module ID: 1412
-// Function ID: 1413
+// Module ID: 1413
+// Function ID: 1414
 // Name: FamilyCenterModels
 // Dependencies: [1404, 1397, 2]
 // Exports: ensureRestrictedScheduleRecord
 
-// Module 1412 (FamilyCenterModels)
+// Module 1413 (FamilyCenterModels)
 import user from "user" /* 1397 */;
 import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
@@ -292,7 +292,7 @@ let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterModels
 export const JS_DAY_TO_DAY_OF_WEEK = frozen;
 export { ScheduleRuleRecord };
 export { RestrictedScheduleRecord };
-export const ensureRestrictedScheduleRecord = function ensureRestrictedScheduleRecord(restrictedSchedule) {
+export function ensureRestrictedScheduleRecord(restrictedSchedule) {
   let tmp2 = null;
   if (null != restrictedSchedule) {
     let tmp3 = restrictedSchedule;
@@ -320,4 +320,4 @@ export const ensureRestrictedScheduleRecord = function ensureRestrictedScheduleR
     tmp2 = tmp3;
   }
   return tmp2;
-};
+}

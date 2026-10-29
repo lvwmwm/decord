@@ -1,30 +1,30 @@
-// Module ID: 10467
-// Function ID: 10468
+// Module ID: 10500
+// Function ID: 10501
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8325, 10468, 21, 5085, 5004, 587, 5001, 558, 576, 1199, 10200, 5270, 8184, 504, 10469, 1125, 8205, 8186, 10470, 10471, 5242, 1496, 10472, 8595, 10457, 2]
+// Dependencies: [19, 17, 8347, 10501, 21, 5086, 5005, 587, 5002, 558, 576, 1199, 10233, 5271, 8207, 504, 10502, 1125, 8227, 8209, 10503, 10504, 5243, 1497, 10505, 8617, 10490, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10467 (MediaKeyboardItem)
+// Module 10500 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ImageIcon from "ImageIcon" /* 8595 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10200 */;
-import AttachmentIcon from "AttachmentIcon" /* 10457 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10469 */;
-import CameraIcon from "CameraIcon" /* 10472 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ImageIcon from "ImageIcon" /* 8617 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10233 */;
+import AttachmentIcon from "AttachmentIcon" /* 10490 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10502 */;
+import CameraIcon from "CameraIcon" /* 10505 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
-import DeviceConstants from "DeviceConstants" /* 10468 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import DeviceConstants from "DeviceConstants" /* 10501 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import ColorUtils_mod from "ColorUtils" /* 5001 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import ColorUtils_mod from "ColorUtils" /* 5002 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1383,13 +1383,13 @@ export default memoResult;
 export const PARENT_PADDING = 24;
 export const CHILD_PADDING = 4;
 export const SEPARATOR_SIZE = 4;
-export const isMediaCameraNode = function isMediaCameraNode(type) {
+export function isMediaCameraNode(type) {
   return "type" in type && "camera" === type.type;
-};
-export const isAttachFilesNode = function isAttachFilesNode(type) {
+}
+export function isAttachFilesNode(type) {
   return "type" in type && "attach" === type.type;
-};
-export const isViewAllPhotosNode = function isViewAllPhotosNode(type) {
+}
+export function isViewAllPhotosNode(type) {
   return "type" in type && "allphotos" === type.type;
-};
+}
 export { isSpecialMediaGridNode };

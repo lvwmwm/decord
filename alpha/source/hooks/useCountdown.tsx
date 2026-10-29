@@ -1,11 +1,11 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7612
+// Function ID: 7613
 // Name: useCountdown
-// Dependencies: [32, 19, 558, 576, 4829, 7590, 2]
+// Dependencies: [32, 19, 558, 576, 4830, 7613, 2]
 
-// Module 7589 (useCountdown)
-import DateUtils from "DateUtils" /* 4829 */;
-import useIntervalDefault from "useInterval" /* 7590 */;
+// Module 7612 (useCountdown)
+import DateUtils from "DateUtils" /* 4830 */;
+import useIntervalDefault from "useInterval" /* 7613 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
     cResult[6] = A;
     tmp9 = A;
   }
-  const tmpResult = tmp(4829);
+  const tmpResult = tmp(4830);
   const diffAsUnitsResult = tmpResult.diffAsUnits(tmp6, expiresAt);
   cResult[0] = expiresAt;
   cResult[1] = tmp6;

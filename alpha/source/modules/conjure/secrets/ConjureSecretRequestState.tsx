@@ -1,14 +1,14 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12401
+// Function ID: 12402
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1125, 3863, 10735, 558, 576, 2]
+// Dependencies: [32, 19, 1125, 3864, 10809, 558, 576, 2]
 // Exports: markMcpSecretRequestSaved, secretRequestStatuses, unmarkMcpSecretRequestSaved
 
-// Module 12347 (ConjureSecretRequestState)
+// Module 12401 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import conjureChatTurns from "conjureChatTurns" /* 10735 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import conjureChatTurns from "conjureChatTurns" /* 10809 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,10 +20,10 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3863.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3864.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3863.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3864.sMQt5O);
   }
   return tmp5;
 }
@@ -121,17 +121,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretReq
 });
 let result = size.fileFinishedImporting("modules/conjure/secrets/ConjureSecretRequestState.tsx");
 
-export const markMcpSecretRequestSaved = function markMcpSecretRequestSaved(request_id) {
+export function markMcpSecretRequestSaved(request_id) {
   if (null != request_id) {
     set.add(request_id);
   }
-};
-export const unmarkMcpSecretRequestSaved = function unmarkMcpSecretRequestSaved(request_id) {
+}
+export function unmarkMcpSecretRequestSaved(request_id) {
   if (null != request_id) {
     set.delete(request_id);
   }
-};
-export const secretRequestStatuses = function secretRequestStatuses(memo, secrets) {
+}
+export function secretRequestStatuses(memo, secrets) {
   let set1 = null;
   if (null != secrets) {
     const _Set = Set;
@@ -218,5 +218,5 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, secret
     } while (0 <= diff);
   }
   return map;
-};
+}
 export const useSecretRequestStatusChanged = tmp3;

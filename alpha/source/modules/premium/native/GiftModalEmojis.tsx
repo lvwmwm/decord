@@ -1,16 +1,16 @@
-// Module ID: 11219
-// Function ID: 11220
+// Module ID: 11273
+// Function ID: 11274
 // Name: GiftModalEmojis
-// Dependencies: [32, 19, 17, 21, 5004, 558, 576, 4954, 7263, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 558, 576, 4955, 7287, 2]
 
-// Module 11219 (GiftModalEmojis)
+// Module 11273 (GiftModalEmojis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
-import EmojiDefault from "Emoji" /* 7263 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
+import EmojiDefault from "Emoji" /* 7287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
     flag = false;
   }
   const tmp = closure_7();
-  let obj = flag(4954);
+  let obj = flag(4955);
   dependencyMap = obj.getURL(emojiName);
   return <View style={tmp.emojisContainer}>{items.map((item, index) => {
     let rect;

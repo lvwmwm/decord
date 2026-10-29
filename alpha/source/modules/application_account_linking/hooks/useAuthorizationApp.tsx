@@ -1,15 +1,15 @@
-// Module ID: 7292
-// Function ID: 7293
+// Module ID: 7316
+// Function ID: 7317
 // Name: useAuthorizationApp
-// Dependencies: [19, 2042, 2021, 1372, 1997, 558, 576, 7293, 2]
+// Dependencies: [19, 2043, 2022, 1372, 1998, 558, 576, 7317, 2]
 // Exports: getAuthorizationApp
 
-// Module 7292 (useAuthorizationApp)
+// Module 7316 (useAuthorizationApp)
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1372 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const useGetOrFetchApplications = tmp(7293);
+const useGetOrFetchApplications = tmp(7317);
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizationApp(getOfficialApplicationId) {
   let tmp4;

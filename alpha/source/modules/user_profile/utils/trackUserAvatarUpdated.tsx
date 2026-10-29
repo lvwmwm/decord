@@ -1,20 +1,20 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7145
+// Function ID: 7146
 // Name: trackUserAvatarUpdated
-// Dependencies: [1084, 7122, 1264, 1414, 2]
+// Dependencies: [1084, 7146, 1264, 1415, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 7121 (trackUserAvatarUpdated)
+// Module 7145 (trackUserAvatarUpdated)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7122 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7146 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");
 
-export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildProfile) {
+export function trackUserAvatarUpdated(isGuildProfile) {
   let NumberResult;
   let avatarHash;
   let avatarId;
@@ -39,4 +39,4 @@ export const trackUserAvatarUpdated = function trackUserAvatarUpdated(isGuildPro
     NumberResult = Number(avatarId);
   }
   track(USER_AVATAR_UPDATED, obj);
-};
+}

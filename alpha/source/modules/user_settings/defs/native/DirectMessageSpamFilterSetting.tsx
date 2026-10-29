@@ -1,21 +1,21 @@
-// Module ID: 16394
-// Function ID: 16395
+// Module ID: 16632
+// Function ID: 16633
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 8365, 558, 576, 16395, 4832, 11248, 1125, 16397, 2]
+// Dependencies: [19, 8387, 558, 576, 16633, 4833, 11302, 1125, 16635, 2]
 
-// Module 16394 (DirectMessageSpamFilterSetting)
+// Module 16632 (DirectMessageSpamFilterSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16397 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16635 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ModerationUtils = tmp(16395);
+const ModerationUtils = tmp(16633);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDmSpamFilterSettingOptions() {
   let first;

@@ -1,16 +1,16 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12398
+// Function ID: 12399
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5199, 10733, 12236, 1125, 3863, 12206, 558, 576, 584, 2]
+// Dependencies: [109, 5200, 10807, 12290, 1125, 3864, 12260, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 12344 (conjureAttachmentDrafts)
+// Module 12398 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ZustandStore from "ZustandStore" /* 5199 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10733 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12206 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12236 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ZustandStore from "ZustandStore" /* 5200 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10807 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12260 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12290 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, closure_8;
 
-const f115065 = () => {
+const f116304 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -50,8 +50,8 @@ function _toPropertyKey(obj) {
   }
   return text;
 }
-function getConjureAttachmentDrafts(projectId, chat) {
-  const tmp = zustandStore.getState().draftsByProject[projectId];
+function getConjureAttachmentDrafts(substr, chat) {
+  const tmp = zustandStore.getState().draftsByProject[substr];
   let tmp2;
   if (tmp != null) {
     tmp2 = tmp[chat];
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f115065);
+    result.catch(f116304);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -195,7 +195,7 @@ function conjureAttachmentTooLargeText(contentType) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { size: formatConjureAttachmentLimit(obj2.conjureAttachmentLimit(contentType)) };
-  const JZ59Bo = _modDef3863.JZ59Bo;
+  const JZ59Bo = _modDef3864.JZ59Bo;
   formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
   ConjureAttachmentTypes;
   obj2 = ConjureAttachmentTypes;
@@ -219,7 +219,7 @@ let result = size.fileFinishedImporting("modules/conjure/chat/conjureAttachmentD
 export const ConjureAttachmentDraftStore = zustandStore;
 export { getConjureAttachmentDrafts };
 export { conjureAttachmentTooLargeText };
-export const uploadConjureAttachment = function uploadConjureAttachment(arg0, size, name, contentType) {
+export function uploadConjureAttachment(arg0, size, name, contentType) {
   let JZ59Bo;
   let formatConjureAttachmentLimit;
   let formatToPlainString;
@@ -235,18 +235,18 @@ export const uploadConjureAttachment = function uploadConjureAttachment(arg0, si
     const intl = tmp(1125).intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { size: formatConjureAttachmentLimit(tmpResult4.conjureAttachmentLimit(contentType)) };
-    JZ59Bo = _modDef3863.JZ59Bo;
+    JZ59Bo = _modDef3864.JZ59Bo;
     formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
     ConjureAttachmentTypes;
     tmpResult4 = ConjureAttachmentTypes;
     result = resolve(obj2);
   }
   return result;
-};
+}
 export const useConjureAttachmentDraftList = tmp3;
-export const addConjureAttachmentDrafts = function addConjureAttachmentDrafts(projectId, chat, mapped) {
+export function addConjureAttachmentDrafts(substr, chat, mapped) {
   let state;
-  let closure_0 = projectId;
+  let closure_0 = substr;
   let closure_1 = chat;
   if (0 !== mapped.length) {
     mapped = mapped.map((upload) => {
@@ -262,9 +262,9 @@ export const addConjureAttachmentDrafts = function addConjureAttachmentDrafts(pr
     const tmp5 = getConjureAttachmentDrafts;
     const items = [];
     let tmp6 = items;
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, getConjureAttachmentDrafts(projectId, chat), 0);
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, getConjureAttachmentDrafts(substr, chat), 0);
     HermesBuiltin.arraySpread(items, mapped.map((draft) => draft.draft), arraySpreadResult);
-    setDrafts(projectId, chat, items);
+    setDrafts(substr, chat, items);
     let tmp2 = mapped;
     for (const item10006 of mapped) {
       let upload = item10006.upload;
@@ -272,8 +272,8 @@ export const addConjureAttachmentDrafts = function addConjureAttachmentDrafts(pr
       continue;
     }
   }
-};
-export const removeConjureAttachmentDraft = function removeConjureAttachmentDraft(projectId, chat, arg2) {
+}
+export function removeConjureAttachmentDraft(projectId, chat, arg2) {
   let obj4;
   let closure_0 = arg2;
   const tmp = zustandStore.getState().draftsByProject[projectId];
@@ -294,7 +294,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f115065);
+      result.catch(f116304);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;
@@ -308,19 +308,19 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
     obj4[projectId] = obj5;
     setState(obj3);
   }
-};
-export const clearConjureAttachmentDrafts = function clearConjureAttachmentDrafts(projectId, chat) {
-  const arr = getConjureAttachmentDrafts(projectId, chat);
+}
+export function clearConjureAttachmentDrafts(substr, chat) {
+  const arr = getConjureAttachmentDrafts(substr, chat);
   if (0 !== arr.length) {
     for (const item10010 of arr) {
-      let tmp4 = discardDraft(projectId, item10010);
+      let tmp4 = discardDraft(substr, item10010);
       continue;
     }
-    setDrafts(projectId, chat, closure_7);
+    setDrafts(substr, chat, closure_7);
   }
-};
+}
 export { takeConjureAttachmentRefs };
-export const sendConjureCardReply = function sendConjureCardReply(projectId, implementation_prompt, arg2) {
+export function sendConjureCardReply(projectId, implementation_prompt, arg2) {
   let attachments;
   let clarificationAnswers;
   let obj = arg2;
@@ -350,4 +350,4 @@ export const sendConjureCardReply = function sendConjureCardReply(projectId, imp
     sendUserMessage(projectId, implementation_prompt, items, obj2);
   }
   items1 = [];
-};
+}

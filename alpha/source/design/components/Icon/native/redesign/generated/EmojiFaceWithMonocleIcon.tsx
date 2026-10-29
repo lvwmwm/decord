@@ -1,14 +1,14 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17241
+// Function ID: 17242
 // Name: EmojiFaceWithMonocleIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17003, 5704, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17242, 5706, 2]
 
-// Module 17002 (EmojiFaceWithMonocleIcon)
+// Module 17241 (EmojiFaceWithMonocleIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5704 */;
-import AssetRegistry from "AssetRegistry" /* 17003 */;
+import BaseIconImage2 from "BaseIconImage" /* 5706 */;
+import AssetRegistry from "AssetRegistry" /* 17242 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiFaceW
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(5704).BaseIconImage;
+  const BaseIconImage = tmp(5706).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,10 +1,10 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19234
+// Function ID: 19235
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19002, 19004, 17, 19027, 2066, 4907, 1998, 7605, 19028, 1084, 9, 3, 19765, 1381, 7636, 19766, 10, 19768, 19769, 12776, 504, 1271, 1256, 19770, 2002, 19771, 16061, 584, 19772, 7619, 1254, 19773, 19774, 10790, 510, 1264, 15703, 4899, 9687, 2077, 1164, 19775, 1999, 8857, 19777, 15900, 7781, 19794, 19795, 19796, 9751, 7632, 7620, 5188, 1204, 5005, 15950, 18712, 18713, 1110, 15700, 7604, 15954, 15968, 6850, 19797, 5333, 7606, 7620, 2]
+// Dependencies: [32, 5, 19235, 19237, 17, 19260, 2067, 4908, 1999, 7628, 19261, 1084, 9, 3, 19987, 1381, 7659, 19988, 10, 19990, 19991, 12993, 504, 1271, 1256, 19992, 2003, 19993, 16297, 584, 19994, 7642, 1254, 19995, 19996, 10866, 510, 1264, 15939, 4900, 9719, 2078, 1164, 19997, 2000, 8860, 19999, 16136, 7803, 20016, 20017, 20018, 9783, 7655, 7643, 5189, 1204, 5006, 16186, 18946, 18947, 1110, 15936, 7627, 16190, 16204, 6873, 20019, 5334, 7629, 7643, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19001 (NativeAppStartup)
+// Module 19234 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -12,22 +12,22 @@ import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1110 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2066 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4899 */;
-import Future from "Future" /* 9687 */;
-import react_nativeDefault from "react-native" /* 15703 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19768 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19769 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2067 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4900 */;
+import Future from "Future" /* 9719 */;
+import react_nativeDefault from "react-native" /* 15939 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19990 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19991 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19002 from "module_19002" /* 19002 */;
-import superagentPatch from "superagentPatch" /* 19004 */;
+import module_19235 from "module_19235" /* 19235 */;
+import superagentPatch from "superagentPatch" /* 19237 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19027 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7605 */;
-import ManagerRegistry from "ManagerRegistry" /* 19028 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19260 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7628 */;
+import ManagerRegistry from "ManagerRegistry" /* 19261 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const timeRequireDefault = tmp3(7636);
+const timeRequireDefault = tmp3(7659);
 function handleLinkingEventURL(url, arg1) {
   let logger;
   let closure_1 = arg1;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f157726 = () => _true(handleNotification[33]);
+  const f159371 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f157726).default(arg0, false);
+      timeRequireDefault("receiveNotification", f159371).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f157726).default(arg0, false);
+        timeRequireDefault("receiveNotification", f159371).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -406,7 +406,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -458,7 +458,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -505,7 +505,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -525,7 +525,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -584,7 +584,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -613,7 +613,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -658,7 +658,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -687,7 +687,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -834,7 +834,7 @@ obj = function _initializeApp() {
             obj = closure_129_0(closure_129_3[69]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -966,7 +966,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1038,7 +1038,7 @@ obj = function _initHeadlessTask() {
           closure_129_1(closure_129_3[50])();
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;
@@ -1095,9 +1095,9 @@ loadIndex.recordEnd();
 let result = size.fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
-export const init = function init() {
+export function init() {
   return obj(...arguments);
-};
-export const initHeadlessTask = function initHeadlessTask() {
+}
+export function initHeadlessTask() {
   return obj(...arguments);
-};
+}

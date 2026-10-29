@@ -11,7 +11,7 @@ function dynamicRequire(require, arg1) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const isNodeEnv = function isNodeEnv() {
+export function isNodeEnv() {
   const obj = _mod866;
   let tmp2 = !obj.isBrowserBundle();
   obj.isBrowserBundle();
@@ -26,8 +26,8 @@ export const isNodeEnv = function isNodeEnv() {
     tmp2 = "[object process]" === call(num);
   }
   return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
+}
+export function loadModule(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     tmp = module;
@@ -46,4 +46,4 @@ export const loadModule = function loadModule(arg0) {
     }
   }
   return tmp2;
-};
+}

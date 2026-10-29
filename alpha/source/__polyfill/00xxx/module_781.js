@@ -8,7 +8,7 @@ import _mod780 from "module_780" /* 780 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getTraceMetaTags = function getTraceMetaTags(arg0) {
+export function getTraceMetaTags(arg0) {
   let traceData = arg0;
   const _Object = Object;
   if (!arg0) {
@@ -24,4 +24,4 @@ export const getTraceMetaTags = function getTraceMetaTags(arg0) {
     return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
   });
   return mapped.join("\n");
-};
+}

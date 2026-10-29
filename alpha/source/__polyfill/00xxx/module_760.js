@@ -9,14 +9,14 @@ import _mod740 from "module_740" /* 740 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createLogContainerEnvelopeItem = function createLogContainerEnvelopeItem(items) {
+export function createLogContainerEnvelopeItem(items) {
   items = [, ];
   const obj = { type: "log", item_count: items.length, content_type: "application/vnd.sentry.items.log+json" };
   items[0] = obj;
   items[1] = { items };
   return items;
-};
-export const createLogEnvelope = function createLogEnvelope(items, _metadata, tunnel, dsn) {
+}
+export function createLogEnvelope(items, _metadata, tunnel, dsn) {
   let sdk;
   if (_metadata != null) {
     sdk = _metadata.sdk;
@@ -38,4 +38,4 @@ export const createLogEnvelope = function createLogEnvelope(items, _metadata, tu
   const items1 = [items];
   const obj4 = _mod740;
   return obj4.createEnvelope(obj, items1);
-};
+}

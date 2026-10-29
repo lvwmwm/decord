@@ -1,27 +1,27 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9765
+// Function ID: 9766
 // Name: HeaderShared
-// Dependencies: [109, 19, 17, 9734, 21, 5004, 587, 5270, 558, 576, 5288, 6961, 6969, 9735, 1381, 9740, 1630, 1503, 9742, 5631, 568, 9745, 14252, 1199, 6944, 2]
+// Dependencies: [109, 19, 17, 9766, 21, 5005, 587, 5271, 558, 576, 5289, 6985, 6993, 9767, 1381, 9772, 1631, 1504, 9774, 5632, 568, 9777, 14487, 1199, 6968, 2]
 // Exports: getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9733 (HeaderShared)
+// Module 9765 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useToken2 from "useToken" /* 5288 */;
-import Pressables from "Pressables" /* 6944 */;
-import react_native from "react-native" /* 9734 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9740 */;
-import ChannelActionsDefault from "ChannelActions" /* 9745 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14252 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useToken2 from "useToken" /* 5289 */;
+import Pressables from "Pressables" /* 6968 */;
+import react_native from "react-native" /* 9766 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9772 */;
+import ChannelActionsDefault from "ChannelActions" /* 9777 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14487 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const HeaderDebugOverlayDefault = tmp6(6961);
-const _mod6969 = tmp(6969);
+const HeaderDebugOverlayDefault = tmp6(6985);
+const _mod6993 = tmp(6993);
 function renderGenericTitle(children) {
   const obj = { title: children.children };
   return React4(closure_12, obj);
@@ -278,7 +278,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericHeaderTit
   }
   const tmp6 = closure_11();
   closure_5 = tmp6;
-  const tmp7 = tmp5(6961)("os-drawn");
+  const tmp7 = tmp5(6985)("os-drawn");
   if (null == subtitle) {
     let renderTitleContainerResult;
     if (null == tmp7) {
@@ -343,7 +343,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
     }
     const obj3 = { labelStyle: tmp10, displayMode: "default", backImage: tmp12, truncatedLabel: null, accessibilityLabel: null };
     ({ label: obj2.truncatedLabel, label: obj2.accessibilityLabel } = tmp5);
-    const HeaderBackButton = _mod6969.HeaderBackButton;
+    const HeaderBackButton = _mod6993.HeaderBackButton;
     const merged = Object.assign(tmp5);
     const tmp18 = React4(HeaderBackButton, obj3);
     cResult[7] = tmp5;
@@ -371,7 +371,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
   };
   items = [closure_11().backButtonLabel, labelStyle];
   closure_11();
-  const HeaderBackButton = _mod6969.HeaderBackButton;
+  const HeaderBackButton = _mod6993.HeaderBackButton;
   const merged1 = Object.assign(merged);
   return React4(HeaderBackButton, obj);
 });
@@ -405,9 +405,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       return closure_2_9(PressableNavigatorBackIcon, obj);
     };
   }
-  const tmpResult = navigation(1503);
+  const tmpResult = navigation(1504);
   const text = tmpResult.useTheme().colors.text;
-  const tmpResult2 = navigation(9742);
+  const tmpResult2 = navigation(9774);
   const gradientTop = tmpResult2.useGradientTop();
   const sum = num + MIN_HEADER_HEIGHT;
   if (cResult[0] === num) {
@@ -748,28 +748,28 @@ export function getRenderHeaderTextButton(intl, onPress) {
     return React4(closure_14, obj);
   };
 }
-export const renderHeader = function renderHeader(arg0) {
+export function renderHeader(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   return React4(memoResult, obj);
-};
+}
 export { getRenderBackImage };
-export const getRenderModalBackImage = function getRenderModalBackImage(navigation) {
+export function getRenderModalBackImage(navigation) {
   _require = navigation;
   let obj = require("PlatformUtils");
   return obj.isAndroid() ? undefined : (() => {
     const obj = { navigation };
     return React4(PressableNavigatorModalIconDefault, obj);
   });
-};
-export const getRenderModalCloseImage = function getRenderModalCloseImage(navigation) {
+}
+export function getRenderModalCloseImage(navigation) {
   _require = navigation;
   let obj = require("PlatformUtils");
   return obj.isAndroid() ? undefined : (() => {
     const obj = { navigation, type: "close" };
     return React4(PressableNavigatorModalIconDefault, obj);
   });
-};
+}
 export const Header = memoResult;
 export function getDefaultStackHeaderProps(navigation) {
   let closure_0 = navigation;
@@ -785,7 +785,7 @@ export function getDefaultStackHeaderProps(navigation) {
     headerBackVisible: false
   };
 }
-export const getDefaultChannelStackHeaderProps = function getDefaultChannelStackHeaderProps(navigation, route) {
+export function getDefaultChannelStackHeaderProps(navigation, route) {
   const routes = navigation.getState().routes;
   let str = routes.findIndex((key) => key.key === route.key);
   if (str == null) {
@@ -814,5 +814,5 @@ export const getDefaultChannelStackHeaderProps = function getDefaultChannelStack
   route = navigation;
   let c1;
   return obj;
-};
+}
 export const HeaderIconButton = tmp9;

@@ -1,17 +1,17 @@
-// Module ID: 19492
-// Function ID: 19493
+// Module ID: 19725
+// Function ID: 19726
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 5230, 4878, 19493, 1084, 558, 576, 504, 1125, 19510, 1900, 2]
+// Dependencies: [19, 5231, 4879, 19726, 1084, 558, 576, 504, 1125, 19743, 1901, 2]
 // Exports: getGuildAnalyticsCardProps
 
-// Module 19492 (GuildSettingsAnalyticsUtils)
+// Module 19725 (GuildSettingsAnalyticsUtils)
 import intl4 from "intl" /* 1125 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19510 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19743 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19493 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19726 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -281,7 +281,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
 let result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsUtils.tsx");
 
 export const useGuildAnalyticsOverview = tmp3;
-export const getGuildAnalyticsCardProps = function getGuildAnalyticsCardProps(communicators, communicatorsChange, stateFromStores, arg3) {
+export function getGuildAnalyticsCardProps(communicators, communicatorsChange, stateFromStores, arg3) {
   let formatToPlainStringResult;
   let obj2;
   let flag = arg3;
@@ -318,4 +318,4 @@ export const getGuildAnalyticsCardProps = function getGuildAnalyticsCardProps(co
     const intl2 = intl4.intl;
     formatToPlainStringResult = intl2.string(intl4.t.xO2msf);
   }
-};
+}

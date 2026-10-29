@@ -1,14 +1,14 @@
-// Module ID: 18955
-// Function ID: 18956
+// Module ID: 19188
+// Function ID: 19189
 // Name: calculatePIPState
-// Dependencies: [6807, 10939, 5668, 18730, 2]
+// Dependencies: [6830, 10974, 5670, 18964, 2]
 // Exports: default
 
-// Module 18955 (calculatePIPState)
-import CallConstants from "CallConstants" /* 5668 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18730 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+// Module 19188 (calculatePIPState)
+import CallConstants from "CallConstants" /* 5670 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18964 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
@@ -64,7 +64,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp6(18730).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp6(18964).SquarePIPReferenceDimensions;
   }
   const tmp18 = mode === PANEL && tmp;
   const obj4 = { participant: pIPParticipantToShow, dimensions: computePIPSize(SquarePIPReferenceDimensions, tmp12, tmp18, focusedId.showSecondaryPIP) };

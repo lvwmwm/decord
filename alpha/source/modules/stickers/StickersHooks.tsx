@@ -1,29 +1,29 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10221
+// Function ID: 10222
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 4878, 5035, 6736, 1389, 6800, 6801, 1084, 558, 576, 504, 10189, 4832, 6523, 8978, 6524, 8399, 1125, 4941, 10171, 7479, 2]
+// Dependencies: [5, 32, 19, 4879, 5036, 6759, 1389, 6823, 6824, 1084, 558, 576, 504, 10222, 4833, 6547, 8981, 6548, 8421, 1125, 4942, 10204, 7502, 2]
 // Exports: useHasSendableSticker, useStickersGrid
 
-// Module 10188 (StickersHooks)
+// Module 10221 (StickersHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import StickersTypes from "StickersTypes" /* 6524 */;
-import StickerSendability from "StickerSendability" /* 7479 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8978 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10171 */;
-import StickersActionCreators from "StickersActionCreators" /* 10189 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import StickersTypes from "StickersTypes" /* 6548 */;
+import StickerSendability from "StickerSendability" /* 7502 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8981 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10204 */;
+import StickersActionCreators from "StickersActionCreators" /* 10222 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import UserStore from "UserStore" /* 1389 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6800 */;
-import StickersStore from "StickersStore" /* 6801 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6823 */;
+import StickersStore from "StickersStore" /* 6824 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const require = globalThis.__r;
 let _require, c1, current, dependencyMap, flattenedGuildIds, rowCount, rowIndex, visibleRowIndex;
 
 let tmp;
-const StickersUtils = tmp(6523);
+const StickersUtils = tmp(6547);
 let react = react_mod;
 const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -282,7 +282,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGui
     } else {
       const tmp34 = -1 === findIndexResult && null != guild && canManageAllExpressions;
       if (tmp34) {
-        const obj3 = { type: tmp45(6524).StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: [] };
+        const obj3 = { type: tmp45(6548).StickerCategoryTypes.EMPTY_GUILD_UPSELL, id: null, name: null, stickers: [] };
         class F {
           constructor() {
             return currentUser.getCurrentUser();
@@ -757,7 +757,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerPa
         if (flag) {
           const tmpResult = StickerSendability;
           const stickerSendability = tmpResult.getStickerSendability(guild_id, stateFromStores, closure_0);
-          flag = stickerSendability !== tmp(7479).StickerSendability.NONSENDABLE;
+          flag = stickerSendability !== tmp(7502).StickerSendability.NONSENDABLE;
         }
         someResult = flag;
       } else {
@@ -889,10 +889,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
   [tmp12, _asyncToGenerator] = current(react.useState(false), 2);
   const tmp11 = current(react.useState(false), 2);
   if (cResult[3] !== id) {
-    const tmpResult3 = tmp(6523);
+    const tmpResult3 = tmp(6547);
     let isGuildStickerResult = tmpResult3.isGuildSticker(id);
     if (!isGuildStickerResult) {
-      const tmpResult4 = tmp(6523);
+      const tmpResult4 = tmp(6547);
       isGuildStickerResult = tmpResult4.isStandardSticker(id);
     }
     cResult[3] = id;
@@ -947,7 +947,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     let c2;
@@ -999,7 +999,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1035,7 +1035,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     let c2;
@@ -1087,7 +1087,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1120,7 +1120,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     let c2;
@@ -1172,7 +1172,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1206,7 +1206,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     let c2;
@@ -1258,7 +1258,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1288,7 +1288,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } else {
                       let c2;
@@ -1340,7 +1340,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                           closure_128_3(true);
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       } catch (tmp12) {
                         if (0 === c2) {
                           c3 = 3;
@@ -1371,7 +1371,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } else {
                       let c2;
@@ -1423,7 +1423,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                           closure_128_3(true);
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       } catch (tmp12) {
                         if (0 === c2) {
                           c3 = 3;
@@ -1484,7 +1484,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
   let obj3 = require("StickersUtils");
   let isGuildStickerResult = obj3.isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    const tmpResult = tmp(6523);
+    const tmpResult = tmp(6547);
     isGuildStickerResult = tmpResult.isStandardSticker(renderableSticker);
   }
   obj4 = { hasFetched: tmp7, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: first, stickersStoreDefinition: stateFromStores };
@@ -1508,7 +1508,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c2;
@@ -1559,7 +1559,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
             closure_128_3(true);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp12) {
           if (0 === c2) {
             c3 = 3;
@@ -1623,7 +1623,7 @@ let result = size.fileFinishedImporting("modules/stickers/StickersHooks.tsx");
 
 export const useFetchStickerPack = tmp2;
 export const useShouldAnimateSticker = tmp3;
-export const useStickersGrid = function useStickersGrid(collapsedStickersCategories) {
+export function useStickersGrid(collapsedStickersCategories) {
   collapsedStickersCategories = collapsedStickersCategories.collapsedStickersCategories;
   const filteredStickers = collapsedStickersCategories.filteredStickers;
   let num = collapsedStickersCategories.listPaddingRight;
@@ -1785,7 +1785,7 @@ export const useStickersGrid = function useStickersGrid(collapsedStickersCategor
     let obj2 = { rowCount, rowCountBySection: items1, stickersGrid: items2, gutterWidth: rounded1, columnCounts: items };
     return obj2;
   }, items);
-};
+}
 export function useHasSendableSticker() {
   return true;
 }

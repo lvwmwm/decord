@@ -26,15 +26,15 @@ function forEachEnvelopeItem(arg0, fn) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_4 = { session: "session", sessions: "session", attachment: "attachment", transaction: "transaction", event: "error", client_report: "internal", user_report: "default", profile: "profile", profile_chunk: "profile", replay_event: "replay", replay_recording: "replay", check_in: "monitor", feedback: "feedback", span: "span", raw_security: "security", log: "log_item", metric: "metric", trace_metric: "metric" };
 
-export const addItemToEnvelope = function addItemToEnvelope(arg0, arg1) {
+export function addItemToEnvelope(arg0, arg1) {
   const tmp2 = _slicedToArray(arg0, 2);
   const items = [tmp2[0], ];
   const items1 = [];
   items1[HermesBuiltin.arraySpread(items1, tmp2[1], 0)] = arg1;
   items[1] = items1;
   return items;
-};
-export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeItem(data) {
+}
+export function createAttachmentEnvelopeItem(data) {
   let data1;
   if (typeof data.data === "string") {
     let encodePolyfillResult;
@@ -59,7 +59,7 @@ export const createAttachmentEnvelopeItem = function createAttachmentEnvelopeIte
   items[0] = obj2;
   items[1] = data1;
   return items;
-};
+}
 export function createEnvelope(arg0) {
   let items = arg1;
   if (arg1 === undefined) {
@@ -68,7 +68,7 @@ export function createEnvelope(arg0) {
   const items1 = [arg0, items];
   return items1;
 }
-export const createEventEnvelopeHeaders = function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
+export function createEventEnvelopeHeaders(event_id, sdk, arg2, arg3) {
   let date;
   let obj5;
   const sdkProcessingMetadata = event_id.sdkProcessingMetadata;
@@ -98,20 +98,20 @@ export const createEventEnvelopeHeaders = function createEventEnvelopeHeaders(ev
   }
   const merged2 = Object.assign(tmp8);
   return obj;
-};
+}
 export function createSpanEnvelopeItem(arg0) {
   const items = [{ type: "span" }, arg0];
   return items;
 }
-export const envelopeContainsItemType = function envelopeContainsItemType(arg0, arg1) {
+export function envelopeContainsItemType(arg0, arg1) {
   let closure_0 = arg1;
   return forEachEnvelopeItem(arg0, (arg0, arg1) => closure_0.includes(arg1));
-};
-export const envelopeItemTypeToDataCategory = function envelopeItemTypeToDataCategory(arg0) {
+}
+export function envelopeItemTypeToDataCategory(arg0) {
   return closure_4[arg0];
-};
+}
 export { forEachEnvelopeItem };
-export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelopeHeader(sdk) {
+export function getSdkMetadataForEnvelopeHeader(sdk) {
   sdk = undefined;
   if (sdk != null) {
     sdk = sdk.sdk;
@@ -121,8 +121,8 @@ export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelop
     ({ name: obj.name, version: obj.version } = sdk.sdk);
     return obj;
   }
-};
-export const parseEnvelope = function parseEnvelope(arr) {
+}
+export function parseEnvelope(arr) {
   let tmp = arr;
   if (typeof arr === "string") {
     let encodePolyfillResult;
@@ -184,8 +184,8 @@ export const parseEnvelope = function parseEnvelope(arr) {
   }
   const items2 = [json, items];
   return items2;
-};
-export const serializeEnvelope = function serializeEnvelope(arg0) {
+}
+export function serializeEnvelope(arg0) {
   let sum;
   let tmp4;
   function concatBuffers(arr) {
@@ -273,4 +273,4 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
     }
     append(tmp6[1]);
   }
-};
+}

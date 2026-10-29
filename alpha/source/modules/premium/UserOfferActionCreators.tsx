@@ -1,18 +1,18 @@
-// Module ID: 8466
-// Function ID: 8467
+// Module ID: 8488
+// Function ID: 8489
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8467, 7599, 7595, 1391, 1084, 1381, 584, 1264, 1294, 8468, 1254, 5034, 4840, 4837, 2]
+// Dependencies: [5, 8489, 7622, 7618, 1391, 1084, 1381, 584, 1264, 1294, 8490, 1254, 5035, 4841, 4838, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8466 (UserOfferActionCreators)
+// Module 8488 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8467 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7599 */;
-import UserOfferStore from "UserOfferStore" /* 7595 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8489 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7622 */;
+import UserOfferStore from "UserOfferStore" /* 7618 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "useCallback", paymentGatewayOverride: "PX_16" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -103,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -334,16 +334,16 @@ let closure_7 = PremiumConstants.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID;
 ({ AnalyticEvents: metroImportAll, Endpoints: c9, PaymentGateways: c10 } = Constants);
 let result = size.fileFinishedImporting("modules/premium/UserOfferActionCreators.tsx");
 
-export const fetchUserOffer = function fetchUserOffer() {
+export function fetchUserOffer() {
   return obj(...arguments);
-};
-export const fetchExistingChurnDiscountOffer = function fetchExistingChurnDiscountOffer() {
+}
+export function fetchExistingChurnDiscountOffer() {
   return obj(...arguments);
-};
-export const fetchChurnDiscountOffer = function fetchChurnDiscountOffer() {
+}
+export function fetchChurnDiscountOffer() {
   return obj(...arguments);
-};
-export const acknowledgeUserOffer = function acknowledgeUserOffer(hasAcknowledged, userDiscountOffer) {
+}
+export function acknowledgeUserOffer(hasAcknowledged, userDiscountOffer) {
   let id;
   if (null != hasAcknowledged) {
     if (!hasAcknowledged.hasAcknowledged) {
@@ -397,8 +397,8 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(hasAcknowledge
       obj.dispatch({ type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: null, userDiscount: null, userDiscountOffer: null });
     }
   });
-};
-export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_location_stack, fn) {
+}
+export function triggerUserOffer(triggerType, trigger_location_stack, fn) {
   _require = triggerType;
   obj = UserOfferStore;
   if (UserOfferStore.canTriggerUserOffer(triggerType)) {
@@ -453,4 +453,4 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
       dispatch(obj);
     });
   }
-};
+}

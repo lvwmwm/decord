@@ -1,9 +1,9 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14668
+// Function ID: 14669
 // Name: ScrollHandlingActionSheet
-// Dependencies: [109, 19, 21, 558, 576, 5301, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5302, 2]
 
-// Module 14434 (ScrollHandlingActionSheet)
+// Module 14668 (ScrollHandlingActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet;
 
 let tmp;
-const Sheet_BottomSheet = tmp(5301);
+const Sheet_BottomSheet = tmp(5302);
 let closure_2 = ["children", "scrollableDeviceHeightBreakpoint"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollHandlingActionSheet(arg0) {

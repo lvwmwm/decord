@@ -10,7 +10,7 @@ let tmp;
 const AsyncContextStack = tmp(718);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
+export function getAsyncContextStrategy(arg0) {
   let acs;
   const obj = _mod701;
   const sentryCarrier = obj.getSentryCarrier(arg0);
@@ -21,10 +21,10 @@ export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
     acs = tmpResult.getStackAsyncContextStrategy();
   }
   return acs;
-};
-export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
+}
+export function setAsyncContextStrategy(acs) {
   const obj = _mod701;
   const mainCarrier = obj.getMainCarrier();
   _mod701.getSentryCarrier(mainCarrier).acs = acs;
   _mod701;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13532
+// Function ID: 13533
 // Name: CustomTypingIndicatorExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getCustomTypingIndicatorConfig
 
-// Module 13299 (CustomTypingIndicatorExperiment)
+// Module 13532 (CustomTypingIndicatorExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const result = size.fileFinishedImporting("modules/custom_typing_indicator/Custo
 
 export const CustomTypingIndicatorExperiment = apexExperiment;
 export const useCustomTypingIndicatorConfig = tmp3;
-export const getCustomTypingIndicatorConfig = function getCustomTypingIndicatorConfig(location) {
+export function getCustomTypingIndicatorConfig(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj);
-};
+}

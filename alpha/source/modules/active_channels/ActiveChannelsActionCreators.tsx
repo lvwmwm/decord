@@ -1,10 +1,10 @@
-// Module ID: 17764
-// Function ID: 17765
+// Module ID: 18002
+// Function ID: 18003
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1084, 584, 1294, 6410, 2]
+// Dependencies: [5, 1084, 584, 1294, 6434, 2]
 // Exports: fetchActiveChannels
 
-// Module 17764 (ActiveChannelsActionCreators)
+// Module 18002 (ActiveChannelsActionCreators)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _fetchActiveChannels() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _fetchActiveChannels() {
               channels = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -131,6 +131,6 @@ let obj = function _fetchActiveChannels() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/active_channels/ActiveChannelsActionCreators.tsx");
 
-export const fetchActiveChannels = function fetchActiveChannels() {
+export function fetchActiveChannels() {
   return obj(...arguments);
-};
+}

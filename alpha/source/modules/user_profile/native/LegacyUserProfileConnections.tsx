@@ -1,29 +1,29 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11364
+// Function ID: 11365
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2065, 1403, 5059, 7738, 1084, 1203, 7312, 21, 5004, 587, 558, 576, 7311, 11311, 6537, 1414, 5011, 1199, 11314, 11315, 5288, 11316, 11317, 5248, 7321, 5698, 1125, 8894, 5747, 5696, 6944, 5270, 5070, 504, 7647, 11318, 2]
+// Dependencies: [19, 17, 2066, 1403, 5060, 7760, 1084, 1203, 7336, 21, 5005, 587, 558, 576, 7335, 11365, 6561, 1415, 5012, 1199, 11368, 11369, 5289, 11370, 11371, 5249, 7345, 5700, 1125, 8897, 5749, 5698, 6968, 5271, 5071, 504, 7670, 11372, 2]
 
-// Module 11310 (LegacyUserProfileConnections)
+// Module 11364 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import FormConstants from "FormConstants" /* 1203 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import PlatformsDefault from "Platforms" /* 6537 */;
-import Constants2 from "Constants" /* 7312 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8894 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import PlatformsDefault from "Platforms" /* 6561 */;
+import Constants2 from "Constants" /* 7336 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8897 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import UserRecord from "UserRecord" /* 1403 */;
-import StreamerModeStore from "StreamerModeStore" /* 5059 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import StreamerModeStore from "StreamerModeStore" /* 5060 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,45 +89,45 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
     metadata = {};
   }
   if (showMetadata) {
-    const tmpResult = tmp(7311);
+    const tmpResult = tmp(7335);
     const createdAtDate = tmpResult.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
   }
   if (showMetadata) {
     const type = account.type;
     if (constants.REDDIT === type) {
-      const tmpResult12 = tmp(11311);
+      const tmpResult12 = tmp(11365);
       let redditMetadataItems = tmpResult12.generateRedditMetadataItems(metadata, tmp4.metadataItem);
     } else if (constants.STEAM === type) {
-      const tmpResult13 = tmp(11311);
+      const tmpResult13 = tmp(11365);
       redditMetadataItems = tmpResult13.generateSteamMetadataItems(metadata, tmp4.metadataItem);
     } else if (constants.LETTERBOXD === type) {
-      const tmpResult14 = tmp(11311);
+      const tmpResult14 = tmp(11365);
       redditMetadataItems = tmpResult14.generateLetterboxdMetadataItems(metadata, tmp4.metadataItem);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.MASTODON !== type) {
           if (constants.TWITTER !== type) {
             if (constants.PAYPAL === type) {
-              const tmpResult15 = tmp(11311);
+              const tmpResult15 = tmp(11365);
               redditMetadataItems = tmpResult15.generatePaypalMetadataItems(metadata, tmp4.metadataItem);
             } else if (constants.EBAY === type) {
-              const tmpResult16 = tmp(11311);
+              const tmpResult16 = tmp(11365);
               redditMetadataItems = tmpResult16.generateEbayMetadataItems(metadata, tmp4.metadataItem);
             } else if (constants.TIKTOK === type) {
-              const tmpResult17 = tmp(11311);
+              const tmpResult17 = tmp(11365);
               redditMetadataItems = tmpResult17.generateTikTokMetadataItems(metadata, tmp4.metadataItem);
             }
           }
         }
       }
-      const tmpResult18 = tmp(11311);
+      const tmpResult18 = tmp(11365);
       const twitterMetadataItems = tmpResult18.generateTwitterMetadataItems(metadata, tmp4.metadataItem);
       redditMetadataItems = twitterMetadataItems;
       if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
         let first;
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj7 = userId(6537);
+          const obj7 = userId(6561);
           const value = obj7.get(tmp8.TWITTER);
           cResult[0] = value;
           first = value;
@@ -150,17 +150,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
     if (null != showInvisibleIcon) {
       if (showInvisibleIcon) {
         if (cResult[6] !== tmp4.connectedAccountOpenHide) {
-          let obj2 = { style: tmp4.connectedAccountOpenHide, source: userId(11314) };
+          let obj2 = { style: tmp4.connectedAccountOpenHide, source: userId(11368) };
           const Icon = tmp(1199).Icon;
           const tmp28 = closure_14(Icon, obj2);
           cResult[6] = tmp4.connectedAccountOpenHide;
           cResult[7] = tmp28;
         }
       }
-      const tmpResult19 = tmp(5288);
+      const tmpResult19 = tmp(5289);
       let token = tmpResult19.useToken(userId(587).colors.BACKGROUND_MOD_MUTED, theme);
-      const useToken = tmp(5288).useToken;
-      tmp(5288);
+      const useToken = tmp(5289).useToken;
+      tmp(5289);
       const INTERACTIVE_TEXT_ACTIVE = userId(587).colors.INTERACTIVE_TEXT_ACTIVE;
       if (null != color) {
         theme = constants2.DARK;
@@ -252,7 +252,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -287,7 +287,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -317,7 +317,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
                       tmp4 = account;
                       tmp5 = PlatformTypes;
                       obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-                      obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+                      obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
                       handleClickResult = obj.handleClick(obj1);
                     }
                     return;
@@ -397,17 +397,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
               tmp4 = account;
               tmp5 = PlatformTypes;
               obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-              obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+              obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
               handleClickResult = obj.handleClick(obj1);
             }
             return;
           }
         }
         tmp36[0] = tmp4.verifiedCheckContainer;
-        const obj4 = { style: tmp4.verifiedCheck, size: tmp(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11316), color: token };
+        const obj4 = { style: tmp4.verifiedCheck, size: tmp(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11370), color: token };
         const Icon2 = tmp(1199).Icon;
         const items = [closure_14(Icon2, obj4), ];
-        const obj5 = { style: tmp4.verifiedCheck, size: tmp(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11317), color: WHITE };
+        const obj5 = { style: tmp4.verifiedCheck, size: tmp(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11371), color: WHITE };
         const Icon3 = tmp(1199).Icon;
         items[1] = closure_14(Icon3, obj5);
         tmp36[1] = items;
@@ -434,11 +434,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
       }
     }
   }
-  const obj11 = userId(6537);
+  const obj11 = userId(6561);
   const value2 = obj11.get(account.type);
-  const makeSource = tmp(1414).makeSource;
-  tmp(1414);
-  const tmpResult22 = tmp(5011);
+  const makeSource = tmp(1415).makeSource;
+  tmp(1415);
+  const tmpResult22 = tmp(5012);
   if (tmpResult22.isThemeDark(theme)) {
     class H {
       constructor() {
@@ -475,7 +475,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -531,7 +531,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
           tmp4 = account;
           tmp5 = PlatformTypes;
           obj1.trusted = account.type !== PlatformTypes.DOMAIN;
-          obj1.onConfirm = function onConfirm() { /* body not rendered: F149252 */ };
+          obj1.onConfirm = function onConfirm() { /* body not rendered: F150820 */ };
           handleClickResult = obj.handleClick(obj1);
         }
         return;
@@ -583,54 +583,54 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
   }
   let createdAtDate = null;
   if (showMetadata) {
-    let obj2 = account(7311);
+    let obj2 = account(7335);
     createdAtDate = obj2.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
   }
   if (showMetadata) {
     const type = account.type;
     if (constants.REDDIT === type) {
-      const obj8 = account(11311);
+      const obj8 = account(11365);
       redditMetadataItems = obj8.generateRedditMetadataItems(metadata, tmp.metadataItem);
     } else if (constants.STEAM === type) {
-      const obj7 = account(11311);
+      const obj7 = account(11365);
       redditMetadataItems = obj7.generateSteamMetadataItems(metadata, tmp.metadataItem);
     } else if (constants.LETTERBOXD === type) {
-      const obj6 = account(11311);
+      const obj6 = account(11365);
       redditMetadataItems = obj6.generateLetterboxdMetadataItems(metadata, tmp.metadataItem);
     } else {
       if (constants.BLUESKY !== type) {
         if (constants.MASTODON !== type) {
           if (constants.TWITTER !== type) {
             if (constants.PAYPAL === type) {
-              const obj4 = account(11311);
+              const obj4 = account(11365);
               redditMetadataItems = obj4.generatePaypalMetadataItems(metadata, tmp.metadataItem);
             } else if (constants.EBAY === type) {
-              let obj3 = account(11311);
+              let obj3 = account(11365);
               redditMetadataItems = obj3.generateEbayMetadataItems(metadata, tmp.metadataItem);
             } else if (constants.TIKTOK === type) {
-              const obj28 = account(11311);
+              const obj28 = account(11365);
               redditMetadataItems = obj28.generateTikTokMetadataItems(metadata, tmp.metadataItem);
             }
           }
         }
       }
-      const obj5 = account(11311);
+      const obj5 = account(11365);
       const twitterMetadataItems = obj5.generateTwitterMetadataItems(metadata, tmp.metadataItem);
       let str = "1";
       redditMetadataItems = twitterMetadataItems;
       if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
-        const obj29 = userId(6537);
+        const obj29 = userId(6561);
         color = obj29.get(tmp6.TWITTER).color;
         redditMetadataItems = twitterMetadataItems;
       }
     }
   }
-  const obj9 = userId(6537);
+  const obj9 = userId(6561);
   const value = obj9.get(account.type);
   dependencyMap = value;
-  const makeSource = account(1414).makeSource;
-  account(1414);
-  const obj10 = account(5011);
+  const makeSource = account(1415).makeSource;
+  account(1415);
+  const obj10 = account(5012);
   if (obj10.isThemeDark(theme)) {
     let darkPNG;
     if (value != null) {
@@ -651,14 +651,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
   if (null != showInvisibleIcon) {
     let PressableOpacity;
     if (showInvisibleIcon) {
-      let obj = { style: tmp.connectedAccountOpenHide, source: userId(11314) };
+      let obj = { style: tmp.connectedAccountOpenHide, source: userId(11368) };
       const Icon2 = tmp24(1199).Icon;
       tmp30 = closure_14(Icon2, obj);
     }
-    const tmp24Result = account(5288);
+    const tmp24Result = account(5289);
     const token = tmp24Result.useToken(tmp21(587).colors.BACKGROUND_MOD_MUTED, theme);
-    const useToken = account(5288).useToken;
-    account(5288);
+    const useToken = account(5289).useToken;
+    account(5289);
     const INTERACTIVE_TEXT_ACTIVE = tmp21(587).colors.INTERACTIVE_TEXT_ACTIVE;
     if (null != color) {
       theme = constants2.DARK;
@@ -672,10 +672,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
     let tmp37 = null;
     if (account.verified) {
       const obj11 = { style: tmp.verifiedCheckContainer, children: items };
-      const obj12 = { style: tmp.verifiedCheck, size: account(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11316), color: tmp36 };
+      const obj12 = { style: tmp.verifiedCheck, size: account(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11370), color: tmp36 };
       const Icon3 = tmp24(1199).Icon;
       items = [closure_14(Icon3, obj12), ];
-      const obj13 = { style: tmp.verifiedCheck, size: account(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11317), color: WHITE };
+      const obj13 = { style: tmp.verifiedCheck, size: account(1199).Icon.Sizes.REFRESH_SMALL_16, source: userId(11371), color: WHITE };
       const Icon4 = tmp24(1199).Icon;
       items[1] = closure_14(Icon4, obj13);
       tmp37 = closure_15(closure_5, obj11);
@@ -738,7 +738,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
       }
     }, items3);
     if (null != platformUserUrl) {
-      PressableOpacity = tmp24(6944).PressableOpacity;
+      PressableOpacity = tmp24(6968).PressableOpacity;
     } else {
       PressableOpacity = closure_4;
     }
@@ -756,12 +756,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
     const obj19 = { style: tmp.connectedAccountNameContainer, children: items7 };
     const obj20 = { style: tmp.connectedAccountName, children: items6 };
     const obj21 = { variant: "text-md/semibold", style: tmp.connectedAccountNameText, children: account.name };
-    items6 = [closure_14(account(5270).Text, obj21), tmp37];
+    items6 = [closure_14(account(5271).Text, obj21), tmp37];
     items7 = [closure_15(closure_5, obj20), , ];
     let tmp45Result = null;
     if (null != createdAtDate) {
       const obj22 = { variant: "heading-deprecated-12/medium", style: tmp.connectedAccountNameCreatedAtText, children: intl.format(account(1125).t["9rfonh"], obj23) };
-      const Text = tmp24(5270).Text;
+      const Text = tmp24(5271).Text;
       intl = tmp24(1125).intl;
       obj23 = { date: createdAtDate };
       tmp45Result = tmp45(Text, obj22);
@@ -782,7 +782,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUse
   }
   tmp30 = null;
   if (null != platformUserUrl) {
-    const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11315) };
+    const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11369) };
     const Icon = tmp24(1199).Icon;
     tmp30 = closure_14(Icon, obj25);
   }
@@ -801,7 +801,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
   const tmp4 = closure_17();
   let closure_1 = tmp4;
   if (cResult[0] !== applicationRoleConnection) {
-    const tmpResult = tmp(11311);
+    const tmpResult = tmp(11365);
     const roleConnectionMetadataItems = tmpResult.generateRoleConnectionMetadataItems(applicationRoleConnection);
     cResult[0] = applicationRoleConnection;
     cResult[1] = roleConnectionMetadataItems;
@@ -820,7 +820,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
       let tmp8 = null;
       if (null != applicationRoleConnection.platform_name) {
         let obj2 = { variant: "eyebrow", color: "interactive-text-default", children: applicationRoleConnection.platform_name };
-        tmp8 = closure_14(tmp(5270).Text, obj2);
+        tmp8 = closure_14(tmp(5271).Text, obj2);
       }
       cResult[5] = applicationRoleConnection.platform_name;
       cResult[6] = tmp8;
@@ -832,7 +832,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
       let tmp11 = null;
       if (null != applicationRoleConnection.platform_username) {
         let obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: applicationRoleConnection.platform_username };
-        tmp11 = closure_14(tmp(5270).Text, obj3);
+        tmp11 = closure_14(tmp(5271).Text, obj3);
       }
       cResult[7] = applicationRoleConnection.platform_username;
       cResult[8] = tmp11;
@@ -868,7 +868,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
             }
             if (cResult[20] !== tmp25) {
               const obj5 = { variant: "text-xs/normal", color: "text-muted", children: tmp25 };
-              const tmp29 = closure_14(tmp(5270).Text, obj5);
+              const tmp29 = closure_14(tmp(5271).Text, obj5);
               cResult[20] = tmp25;
               cResult[21] = tmp29;
               tmp27 = tmp29;
@@ -1003,7 +1003,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
   let closure_1 = tmp;
   let tmp2 = applicationRoleConnection;
   const tmp3 = dependencyMap;
-  let obj = applicationRoleConnection(11311);
+  let obj = applicationRoleConnection(11365);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   let tmp5 = closure_5;
   let obj2 = { style: items, children: items1 };
@@ -1011,14 +1011,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
   let tmp6 = null;
   if (null != applicationRoleConnection.platform_name) {
     let obj3 = { variant: "eyebrow", color: "interactive-text-default", children: applicationRoleConnection.platform_name };
-    tmp6 = closure_14(tmp2(5270).Text, obj3);
+    tmp6 = closure_14(tmp2(5271).Text, obj3);
   }
   items1 = [tmp6, , , ];
   const obj4 = { style: tmp.appConnectionNameContainer, children: tmp8Result };
   tmp8Result = null;
   if (null != applicationRoleConnection.platform_username) {
     const obj5 = { variant: "text-md/semibold", color: "interactive-text-active", children: applicationRoleConnection.platform_username };
-    tmp8Result = tmp8(tmp2(5270).Text, obj5);
+    tmp8Result = tmp8(tmp2(5271).Text, obj5);
   }
   items1[1] = closure_14(tmp5, obj4);
   let tmp8Result2 = null;
@@ -1033,7 +1033,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
   const obj7 = { style: { flexDirection: "row" }, children: items2 };
   const obj8 = { style: tmp.connectedAccountPoweredByContainer, children: closure_14(Text, obj9) };
   obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(tmp2(1125).t.zIT9YA, obj10) };
-  Text = tmp2(5270).Text;
+  Text = tmp2(5271).Text;
   intl = tmp2(1125).intl;
   obj10 = {
     applicationHook() {
@@ -1415,7 +1415,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegacyUserP
             return StreamerModeStore.hidePersonalInformation;
           }
         }
-        const tmp29 = closure_14(stateFromStores(11318), obj3);
+        const tmp29 = closure_14(stateFromStores(11372), obj3);
         cResult[12] = tmp18;
         cResult[13] = tmp29;
         tmp26 = tmp29;
@@ -1496,14 +1496,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegacyUserP
       }
       if (tmp11) {
         const obj3 = { title: intl.string(user(1125).t.PHjkRE), showContainer: true, children: arr6 };
-        const tmp14 = stateFromStores(11318);
+        const tmp14 = stateFromStores(11372);
         intl = tmp(1125).intl;
         tmp11 = closure_14(tmp14, obj3);
       }
       const obj4 = { children: items4 };
       items4 = [tmp11, ];
       const obj5 = { title: intl2.string(user(1125).t["3fe7U5"]), showContainer: true, children: tmp9 };
-      const tmp17 = stateFromStores(11318);
+      const tmp17 = stateFromStores(11372);
       intl2 = tmp(1125).intl;
       items4[1] = closure_14(tmp17, obj5);
       tmp18Result = tmp18(tmp19, obj4);

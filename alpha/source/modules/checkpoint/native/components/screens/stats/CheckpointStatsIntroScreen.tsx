@@ -1,17 +1,17 @@
-// Module ID: 13207
-// Function ID: 13208
+// Module ID: 13445
+// Function ID: 13446
 // Name: CheckpointStatsIntroScreen
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 13204, 13206, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 13436, 13438, 2]
 
-// Module 13207 (CheckpointStatsIntroScreen)
+// Module 13445 (CheckpointStatsIntroScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTextDefault from "CheckpointText" /* 13204 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13206 */;
+import CheckpointTextDefault from "CheckpointText" /* 13436 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13438 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     cResult[8] = tmp11;
     tmp8 = tmp11;
   }
-  const tmp7 = React3(CheckpointTextDefault, { variant: "heading-md/extrabold", style: titleText, children: tmp4 });
+  const tmp7 = React3(CheckpointTextDefault, { isStepHeading: true, variant: "heading-md/extrabold", style: titleText, children: tmp4 });
   cResult[2] = tmp3.titleText;
   cResult[3] = tmp4;
   cResult[4] = tmp7;
@@ -120,7 +120,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const obj3 = { style: tmp.title, children: items };
   items = [icon, ];
   obj2 = { style: tmp.container, children: items1 };
-  const obj4 = { variant: "heading-md/extrabold", style: tmp.titleText, children: title.toLocaleUpperCase() };
+  const obj4 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: title.toLocaleUpperCase() };
   const tmp2 = CheckpointScreenDefault;
   const tmp3 = CheckpointTextDefault;
   items[1] = React3(tmp3, obj4);

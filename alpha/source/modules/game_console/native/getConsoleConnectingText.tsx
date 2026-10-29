@@ -1,10 +1,10 @@
-// Module ID: 18902
-// Function ID: 18903
+// Module ID: 19135
+// Function ID: 19136
 // Name: getConsoleConnectingText
 // Dependencies: [1084, 1125, 2]
 // Exports: getConsoleConnectingText
 
-// Module 18902 (getConsoleConnectingText)
+// Module 19135 (getConsoleConnectingText)
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const PlatformTypes = Constants.PlatformTypes;
 const result = size.fileFinishedImporting("modules/game_console/native/getConsoleConnectingText.tsx");
 
-export const getConsoleConnectingText = function getConsoleConnectingText(stateFromStores1, stateFromStores, arg2) {
+export function getConsoleConnectingText(stateFromStores1, stateFromStores, arg2) {
   let tmp6;
   let type;
   if (stateFromStores != null) {
@@ -53,4 +53,4 @@ export const getConsoleConnectingText = function getConsoleConnectingText(stateF
     tmp6 = str;
   }
   return tmp6;
-};
+}

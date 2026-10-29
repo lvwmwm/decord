@@ -1,13 +1,13 @@
-// Module ID: 14896
-// Function ID: 14897
+// Module ID: 15131
+// Function ID: 15132
 // Name: isClipsEnabled
-// Dependencies: [2017, 14897, 558, 576, 504, 2]
+// Dependencies: [2018, 15132, 558, 576, 504, 2]
 // Exports: isClipsEnabled
 
-// Module 14896 (isClipsEnabled)
+// Module 15131 (isClipsEnabled)
 import react from "react" /* 576 */;
-import ClipsExperiment from "ClipsExperiment" /* 14897 */;
-import ClipsStore from "ClipsStore" /* 2017 */;
+import ClipsExperiment from "ClipsExperiment" /* 15132 */;
+import ClipsStore from "ClipsStore" /* 2018 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,9 +51,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClips
 });
 const result = size.fileFinishedImporting("modules/clips/isClipsEnabled.tsx");
 
-export const isClipsEnabled = function isClipsEnabled() {
+export function isClipsEnabled() {
   const obj = ClipsExperiment;
   const clipsEnabled = obj.areClipsAvailable() && ClipsStore.getState().clipsSettings.clipsEnabled;
   return clipsEnabled;
-};
+}
 export const useIsClipsEnabled = tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11384
+// Function ID: 11385
 // Name: LinkedGameOrgInvitesExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getLinkedGameOrgInvitesEnabled
 
-// Module 11330 (LinkedGameOrgInvitesExperiment)
+// Module 11384 (LinkedGameOrgInvitesExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/Lin
 
 export const LinkedGameOrgInvitesExperiment = apexExperiment;
 export const useLinkedGameOrgInvitesEnabled = tmp3;
-export const getLinkedGameOrgInvitesEnabled = function getLinkedGameOrgInvitesEnabled(MessageCodedLinkManager) {
+export function getLinkedGameOrgInvitesEnabled(MessageCodedLinkManager) {
   const obj = { location: MessageCodedLinkManager };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

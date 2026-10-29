@@ -1,26 +1,26 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15642
+// Function ID: 15643
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 4860, 4856, 4936, 1084, 12962, 10651, 21, 5004, 587, 1125, 15409, 12963, 15410, 15411, 1264, 9751, 5743, 1381, 8886, 9701, 13001, 1999, 5946, 15412, 15413, 6969, 12973, 1627, 12974, 15414, 2]
+// Dependencies: [5, 32, 19, 17, 4861, 4857, 4937, 1084, 13183, 10684, 21, 5005, 587, 1125, 15643, 13184, 15644, 15645, 1264, 9783, 5745, 1381, 8889, 9733, 13222, 2000, 5948, 15646, 15647, 6993, 13194, 1628, 13195, 15648, 2]
 // Exports: default
 
-// Module 15408 (ShareScreen)
+// Module 15642 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
-import UserRowConstants from "UserRowConstants" /* 10651 */;
-import ForwardConstants from "ForwardConstants" /* 12962 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 15412 */;
-import ShareEmbedDefault from "ShareEmbed" /* 15413 */;
+import UserRowConstants from "UserRowConstants" /* 10684 */;
+import ForwardConstants from "ForwardConstants" /* 13183 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 15646 */;
+import ShareEmbedDefault from "ShareEmbed" /* 15647 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let React, attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -173,7 +173,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -280,7 +280,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "IconComponent" };
                                   }
                                 } else {
                                   try {
@@ -301,7 +301,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "Reflect", done: true };
+                                        return { value: "Reflect", done: null };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {
@@ -414,7 +414,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_6(false);
                 closure_129_7.current = false;
                 React = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
             closure_10 = React.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -456,7 +456,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         React = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

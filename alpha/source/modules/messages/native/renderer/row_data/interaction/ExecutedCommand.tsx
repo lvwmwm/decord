@@ -1,24 +1,24 @@
-// Module ID: 14772
-// Function ID: 14773
+// Module ID: 15007
+// Function ID: 15008
 // Name: ExecutedCommand
-// Dependencies: [17, 1403, 4856, 1389, 1084, 1417, 1414, 6401, 10072, 587, 7665, 6054, 8352, 8354, 8916, 1125, 9683, 2]
+// Dependencies: [17, 1403, 4857, 1389, 1084, 1418, 1415, 6425, 10104, 587, 7688, 6058, 8374, 8376, 8919, 1125, 9715, 2]
 // Exports: createExecutedCommand
 
-// Module 14772 (ExecutedCommand)
+// Module 15007 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import InteractionTypes from "InteractionTypes" /* 6054 */;
-import useMessageAuthor from "useMessageAuthor" /* 6401 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8352 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8354 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8916 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10072 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import InteractionTypes from "InteractionTypes" /* 6058 */;
+import useMessageAuthor from "useMessageAuthor" /* 6425 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8374 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8376 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8919 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10104 */;
 import UserRecord from "UserRecord" /* 1403 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const processColor = react_native.processColor;
 const MessageTypes = Constants.MessageTypes;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/ExecutedCommand.tsx");
 
-export const createExecutedCommand = function createExecutedCommand(message, channel, roleStyle, forcedTheme, defaultUsernameColor) {
+export function createExecutedCommand(message, channel, roleStyle, forcedTheme, defaultUsernameColor) {
   let obj11;
   let obj14;
   let obj16;
@@ -64,7 +64,7 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       if (channel != null) {
         guildId = channel.getGuildId();
       }
-      tmp7(1417);
+      tmp7(1418);
       if (null != guildMemberAvatar) {
         let guildMemberAvatarSource;
         if (null != guildId) {
@@ -231,4 +231,4 @@ export const createExecutedCommand = function createExecutedCommand(message, cha
       formatToPartsResult = formatToParts3(mqKdCM, obj18);
     }
   }
-};
+}

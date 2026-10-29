@@ -1,11 +1,11 @@
-// Module ID: 19236
-// Function ID: 19237
+// Module ID: 19469
+// Function ID: 19470
 // Name: ParentalConsentWarningFetchExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 19236 (ParentalConsentWarningFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 19469 (ParentalConsentWarningFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/parent_tools/ParentalConsentWarningFetchExperiment.tsx");
 
-export const isParentalConsentWarningFetchEnabled = function isParentalConsentWarningFetchEnabled(parental_consent_warning_manager) {
+export function isParentalConsentWarningFetchEnabled(parental_consent_warning_manager) {
   const obj = { location: parental_consent_warning_manager };
   return config.getConfig(obj).enabled;
-};
+}

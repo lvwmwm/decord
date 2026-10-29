@@ -1,10 +1,10 @@
-// Module ID: 2048
-// Function ID: 2049
+// Module ID: 2049
+// Function ID: 2050
 // Name: SubscriptionPlanRecord
 // Dependencies: [1404, 1391, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 2048 (SubscriptionPlanRecord)
+// Module 2049 (SubscriptionPlanRecord)
 import Record from "Record" /* 1404 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
@@ -108,11 +108,11 @@ Object.defineProperty(SubscriptionPlanRecord.prototype, "premiumSubscriptionType
 const result = size.fileFinishedImporting("records/SubscriptionPlanRecord.tsx");
 
 export default SubscriptionPlanRecord;
-export const getPriceFromServer = function getPriceFromServer(amount, taxInclusive) {
+export function getPriceFromServer(amount, taxInclusive) {
   return { amount: amount.amount, currency: amount.currency, tax: 0, taxInclusive };
-};
-export const isNoneSubscription = function isNoneSubscription(planId) {
+}
+export function isNoneSubscription(planId) {
   const items = [, , , ];
   ({ NONE_MONTH: arr[0], NONE_3_MONTH: arr[1], NONE_6_MONTH: arr[2], NONE_YEAR: arr[3] } = React2);
   return items.includes(planId);
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 14897
+// Function ID: 14898
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 8876, 1084, 1294, 6409, 584, 1125, 2]
+// Dependencies: [5, 8879, 1084, 1294, 6433, 584, 1125, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 14662 (ContentInventoryHttpApi)
+// Module 14897 (ContentInventoryHttpApi)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8876 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8879 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _getMyContentInventory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -62,7 +62,7 @@ let obj = function _getMyContentInventory() {
             date = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -144,7 +144,7 @@ obj = function _getContentInventoryOutbox() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ obj = function _deleteContentInventoryEntryHistory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -294,7 +294,7 @@ obj = function _deleteContentInventoryEntryHistory() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp27) {
           body = tmp27;
@@ -329,7 +329,7 @@ obj = function _postTrackToContentInventory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -373,7 +373,7 @@ obj = function _postTrackToContentInventory() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp14) {
           closure_4 = tmp14;
@@ -393,15 +393,15 @@ const ContentInventoryFeedKey = ContentInventoryConstants.ContentInventoryFeedKe
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");
 
-export const getMyContentInventory = function getMyContentInventory() {
+export function getMyContentInventory() {
   return obj(...arguments);
-};
-export const getContentInventoryOutbox = function getContentInventoryOutbox() {
+}
+export function getContentInventoryOutbox() {
   return obj(...arguments);
-};
-export const deleteContentInventoryEntryHistory = function deleteContentInventoryEntryHistory() {
+}
+export function deleteContentInventoryEntryHistory() {
   return obj(...arguments);
-};
-export const postTrackToContentInventory = function postTrackToContentInventory() {
+}
+export function postTrackToContentInventory() {
   return obj(...arguments);
-};
+}

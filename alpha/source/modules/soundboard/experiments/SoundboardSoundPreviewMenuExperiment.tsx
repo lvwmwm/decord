@@ -1,11 +1,11 @@
-// Module ID: 18816
-// Function ID: 18817
+// Module ID: 19049
+// Function ID: 19050
 // Name: SoundboardSoundPreviewMenuExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 18816 (SoundboardSoundPreviewMenuExperiment)
+// Module 19049 (SoundboardSoundPreviewMenuExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

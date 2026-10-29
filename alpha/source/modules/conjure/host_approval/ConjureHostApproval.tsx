@@ -1,13 +1,13 @@
-// Module ID: 10772
-// Function ID: 10773
+// Module ID: 10847
+// Function ID: 10848
 // Name: ConjureHostApproval
-// Dependencies: [19, 504, 584, 10756, 558, 576, 10773, 2]
+// Dependencies: [19, 504, 584, 10831, 558, 576, 10848, 2]
 // Exports: answerHostApproval, removeAllowedHost
 
-// Module 10772 (ConjureHostApproval)
+// Module 10847 (ConjureHostApproval)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ let obj = {
     if (value == null) {
       value = closure_4;
     }
-    const f108915 = (id) => id.id;
+    const f110199 = (id) => id.id;
     let flag = !(value.length === asks.length && value.every((item, index) => {
       const tmp = o(item);
       return tmp === o(allowedHosts[index]);
@@ -301,7 +301,7 @@ let result = size.fileFinishedImporting("modules/conjure/host_approval/ConjureHo
 
 export const ConjureHostAccessStore = hostAccessStore;
 export const hostAccessFrameHandlers = obj2;
-export const answerHostApproval = function answerHostApproval(projectId, c1, always) {
+export function answerHostApproval(projectId, c1, always) {
   let closure_0 = c1;
   let closure_1 = always;
   let obj = conjureProjectSockets;
@@ -315,15 +315,15 @@ export const answerHostApproval = function answerHostApproval(projectId, c1, alw
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
   }
-};
-export const removeAllowedHost = function removeAllowedHost(projectId, arg1) {
+}
+export function removeAllowedHost(projectId, arg1) {
   let closure_0 = arg1;
   let obj = conjureProjectSockets;
   return obj.sendOnConjureSocket(projectId, "allowed hosts", (sendHostAccess) => {
     const obj = { type: "set_host_access", remove_host };
     return sendHostAccess.sendHostAccess(obj);
   });
-};
+}
 export const useConjureHostApprovals = tmp5;
 export const useConjureAllowedHosts = tmp6;
 export const useConjureRequireHostApprovalSetting = tmp7;

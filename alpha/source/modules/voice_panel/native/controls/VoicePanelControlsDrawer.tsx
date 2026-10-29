@@ -1,25 +1,25 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 19169
+// Function ID: 19170
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 10939, 21, 5004, 587, 558, 576, 6921, 5975, 13396, 10938, 5085, 13397, 5283, 10010, 18937, 18948, 17707, 18933, 2]
+// Dependencies: [32, 19, 17, 10974, 21, 5005, 587, 558, 576, 6945, 5977, 13629, 10973, 5086, 13630, 5284, 10042, 19170, 19181, 17945, 19166, 2]
 
-// Module 18936 (VoicePanelControlsDrawer)
+// Module 19169 (VoicePanelControlsDrawer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import spring from "spring" /* 5283 */;
-import useRefValueDefault from "useRefValue" /* 6921 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10010 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13396 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13397 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 18937 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 18948 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import spring from "spring" /* 5284 */;
+import useRefValueDefault from "useRefValue" /* 6945 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10042 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13629 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13630 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19170 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19181 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const react3 = tmp(5975);
+const react3 = tmp(5977);
 function renderChat(shown) {
   let obj2;
   const obj = { collapsable: false, style: hasOwnProperty.absoluteFill, children: React4(VoicePanelChatViewDefault, obj2) };

@@ -1,24 +1,24 @@
-// Module ID: 10585
-// Function ID: 10586
+// Module ID: 10618
+// Function ID: 10619
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 7738, 502, 10586, 7368, 1101, 558, 576, 504, 9400, 1385, 9408, 9407, 12, 9409, 8713, 10587, 10588, 2]
+// Dependencies: [32, 19, 7760, 502, 10619, 7391, 1101, 558, 576, 504, 9431, 1385, 9439, 9438, 12, 9440, 8716, 10620, 10621, 2]
 
-// Module 10585 (useWishlistRecommendations)
+// Module 10618 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 7368 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8713 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9408 */;
-import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 9409 */;
-import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10587 */;
-import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10588 */;
+import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 7391 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9439 */;
+import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 9440 */;
+import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10620 */;
+import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10621 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10586 */;
+import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10619 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let _require, dependencyMap, firstWishlistId;
 
 let obj2;
 let tmp2;
-const WishlistFetchSource = tmp2(9407);
+const WishlistFetchSource = tmp2(9438);
 let closure_8 = WishlistRecommendationRecord2.WishlistRecommendationReason;
 let closure_9 = 30 * DurationsDefault.Millis.MINUTE;
 let combinedSkusToUserAndReason = { state: "success", data: new WishlistRecommendationRecord(obj2), fetchedAt: 0 };
@@ -69,7 +69,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSor
     if (cResult[3] === userIdsAndWishlistIds) {
       tmp8 = cResult[4];
     }
-    const tmpResult2 = tmp(9400);
+    const tmpResult2 = tmp(9431);
     const fetchWishlists = tmpResult2.useFetchWishlists(tmp8);
     ({ wishlists, isFetching, errors } = fetchWishlists);
     if (cResult[5] === applicationIdsFilter) {
@@ -1271,7 +1271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistR
   const cResult = obj.c(16);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(9407).WishlistFetchSource.USER_PROFILE;
+    source = tmp(9438).WishlistFetchSource.USER_PROFILE;
   }
   ({ userIdsAndWishlistIds, defaultWishlistId } = closure_14(userId));
   closure_14(userId);
@@ -1478,7 +1478,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRecommend
   const cResult = obj.c(12);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(9407).WishlistFetchSource.USER_PROFILE;
+    source = tmp(9438).WishlistFetchSource.USER_PROFILE;
   }
   const userIdsAndWishlistIds = closure_14(userId).userIdsAndWishlistIds;
   const tmpResult = useWishlistApplicationIds;

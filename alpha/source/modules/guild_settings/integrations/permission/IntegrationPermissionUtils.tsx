@@ -1,12 +1,12 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7691
+// Function ID: 7692
 // Name: IntegrationPermissionUtils
-// Dependencies: [32, 1997, 5670, 2]
+// Dependencies: [32, 1998, 5672, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 7668 (IntegrationPermissionUtils)
-import Server from "Server" /* 1997 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
+// Module 7691 (IntegrationPermissionUtils)
+import Server from "Server" /* 1998 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -29,27 +29,27 @@ function commandPermissions(arg0, items) {
 }
 const result = size.fileFinishedImporting("modules/guild_settings/integrations/permission/IntegrationPermissionUtils.tsx");
 
-export const commandName = function commandName(arg0, arg1) {
+export function commandName(arg0, arg1) {
   let text = arg1;
   if (arg0 === Server.ApplicationCommandType.CHAT) {
     text = `/${arg1}`;
   }
   return text;
-};
-export const commandPermissionChannels = function commandPermissionChannels(arg0) {
+}
+export function commandPermissionChannels(arg0) {
   const items = [ApplicationCommandTypes.ApplicationCommandPermissionType.CHANNEL];
   return commandPermissions(arg0, items);
-};
-export const commandPermissionMembersRoles = function commandPermissionMembersRoles(arg0) {
+}
+export function commandPermissionMembersRoles(arg0) {
   const items = [ApplicationCommandTypes.ApplicationCommandPermissionType.ROLE, ApplicationCommandTypes.ApplicationCommandPermissionType.USER];
   return commandPermissions(arg0, items);
-};
-export const toPermissionKey = function toPermissionKey(allChannelsSentinelResult, CHANNEL) {
+}
+export function toPermissionKey(allChannelsSentinelResult, CHANNEL) {
   return "" + allChannelsSentinelResult + ":" + CHANNEL;
-};
-export const keyPermissions = function keyPermissions(permissions) {
+}
+export function keyPermissions(permissions) {
   return Object.fromEntries(permissions.map((id) => {
     const items = ["" + id.id + ":" + id.type, id];
     return items;
   }));
-};
+}

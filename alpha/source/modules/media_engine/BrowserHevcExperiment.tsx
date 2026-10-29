@@ -1,10 +1,10 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15861
+// Function ID: 15862
 // Name: BrowserHevcExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 15625 (BrowserHevcExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 15861 (BrowserHevcExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

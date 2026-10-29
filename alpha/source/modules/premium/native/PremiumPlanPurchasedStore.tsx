@@ -1,14 +1,14 @@
-// Module ID: 7568
-// Function ID: 7569
+// Module ID: 7591
+// Function ID: 7592
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [5247, 1391, 570, 1271, 7569, 7314, 2]
+// Dependencies: [5248, 1391, 570, 1271, 7592, 7338, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 7568 (PremiumPlanPurchasedStore)
+// Module 7591 (PremiumPlanPurchasedStore)
 import react_native from "react-native" /* 1271 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7569 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7592 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const usePremiumPlanPurchasedStore = module_570.create(() => ({ productId: "", i
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanPurchasedStore.tsx");
 
 export { usePremiumPlanPurchasedStore };
-export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFromNewFlow(productId) {
+export function setInitiatedPurchaseFromNewFlow(productId) {
   let onPaymentDismiss;
   let onPaymentStart;
   let onPaymentSuccess;
@@ -37,8 +37,8 @@ export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFrom
   if (onPaymentStart != null) {
     onPaymentStart(productId);
   }
-};
-export const setPaymentSuccess = function setPaymentSuccess() {
+}
+export function setPaymentSuccess() {
   if (obj.getState().initiatedPurchaseFromNewFlow) {
     const state = obj.getState();
     const onPaymentSuccess = state.onPaymentSuccess;
@@ -49,16 +49,16 @@ export const setPaymentSuccess = function setPaymentSuccess() {
       onPaymentSuccess(productId);
     }
   }
-};
-export const setMobileWebRedirectCheckoutStatus = function setMobileWebRedirectCheckoutStatus(mobileWebRedirectCheckoutStatus) {
+}
+export function setMobileWebRedirectCheckoutStatus(mobileWebRedirectCheckoutStatus) {
   _require = mobileWebRedirectCheckoutStatus;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { mobileWebRedirectCheckoutStatus };
     return obj.setState(obj);
   });
-};
-export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutStatus(mobileWebRedirectCheckoutStatus) {
+}
+export function handleMobileWebCheckoutStatus(mobileWebRedirectCheckoutStatus) {
   let items;
   let obj;
   _require = mobileWebRedirectCheckoutStatus;
@@ -83,8 +83,8 @@ export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutSta
       }
     }
   }
-};
-export const showOldPaymentFlowSuccess = function showOldPaymentFlowSuccess(fn) {
+}
+export function showOldPaymentFlowSuccess(fn) {
   let obj;
   let state;
   if (obj.getState().initiatedPurchaseFromNewFlow) {
@@ -93,8 +93,8 @@ export const showOldPaymentFlowSuccess = function showOldPaymentFlowSuccess(fn) 
   } else {
     fn();
   }
-};
-export const reset = function reset() {
+}
+export function reset() {
   let obj;
   let onPaymentDismiss;
   let require;
@@ -114,6 +114,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "application", onPaymentDismiss: "bm" });
+    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "ix", onPaymentDismiss: "then" });
   });
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 5688
-// Function ID: 5689
+// Module ID: 5690
+// Function ID: 5691
 // Name: SystemDateFormatter
-// Dependencies: [5689, 1381, 2]
+// Dependencies: [5691, 1381, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 5688 (SystemDateFormatter)
+// Module 5690 (SystemDateFormatter)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_native from "react-native" /* 5689 */;
+import react_native from "react-native" /* 5691 */;
 import size from "module_2" /* 2 */;
 
 let activateResult;
@@ -20,7 +20,7 @@ if (true === activateResult) {
 const result = size.fileFinishedImporting("modules/system_date_format/SystemDateFormatter.native.tsx");
 
 export const makeFormatter = prop;
-export const supportsSystemDateFormatter = function supportsSystemDateFormatter() {
+export function supportsSystemDateFormatter() {
   const obj = PlatformUtils;
   return obj.isIOS();
-};
+}

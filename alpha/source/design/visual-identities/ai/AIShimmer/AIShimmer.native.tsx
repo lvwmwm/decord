@@ -1,21 +1,21 @@
-// Module ID: 12542
-// Function ID: 12543
+// Module ID: 12597
+// Function ID: 12598
 // Name: AIShimmer
-// Dependencies: [32, 109, 19, 17, 21, 5004, 558, 576, 12543, 5070, 5270, 12544, 5085, 12545, 12546, 11830, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5005, 558, 576, 12598, 5071, 5271, 12599, 5086, 12600, 12601, 11884, 2]
 
-// Module 12542 (AIShimmer)
+// Module 12597 (AIShimmer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 12543 */;
-import waveTransition2 from "waveTransition" /* 12544 */;
-import createWaveTransition2 from "createWaveTransition" /* 12545 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 12598 */;
+import waveTransition2 from "waveTransition" /* 12599 */;
+import createWaveTransition2 from "createWaveTransition" /* 12600 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,14 +79,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     str = tmp5;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DELAY) {
-    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(12543).AI_TEXT_EFFECT_DEFAULT_DELAY;
+    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(12598).AI_TEXT_EFFECT_DEFAULT_DELAY;
   }
   let num7 = 0;
   if (undefined !== tmp6) {
     num7 = tmp6;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DURATION) {
-    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(12543).AI_TEXT_EFFECT_DEFAULT_DURATION;
+    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(12598).AI_TEXT_EFFECT_DEFAULT_DURATION;
   }
   if (cResult[6] === AI_TEXT_EFFECT_DEFAULT_DELAY) {
     if (cResult[7] === AI_TEXT_EFFECT_DEFAULT_DURATION) {

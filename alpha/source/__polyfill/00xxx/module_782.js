@@ -8,7 +8,7 @@ let c3, c4, closure_2;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const debounce = function debounce(arg0, arg1, maxWait) {
+export function debounce(arg0, arg1, maxWait) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   function invokeFunc() {
@@ -95,4 +95,4 @@ export const debounce = function debounce(arg0, arg1, maxWait) {
     tmp3 = tmp10;
   };
   return debounced;
-};
+}

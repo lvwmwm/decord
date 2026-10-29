@@ -1,22 +1,22 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10839
+// Function ID: 10840
 // Name: conjurePreviewTicket
-// Dependencies: [10758, 6808, 6811, 10765, 10767, 6813, 2]
+// Dependencies: [10833, 6831, 6834, 10840, 10842, 6836, 2]
 // Exports: prefetchConjurePreviewTicket
 
-// Module 10764 (conjurePreviewTicket)
-import FramesConstants from "FramesConstants" /* 6811 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10765 */;
-import createProxyTicket from "createProxyTicket" /* 10767 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10758 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+// Module 10839 (conjurePreviewTicket)
+import FramesConstants from "FramesConstants" /* 6834 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10840 */;
+import createProxyTicket from "createProxyTicket" /* 10842 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10833 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import size from "module_2" /* 2 */;
 
 const isLaunched = FramesConstants.isLaunched;
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTicket.tsx");
 
-export const prefetchConjurePreviewTicket = function prefetchConjurePreviewTicket(projectId, arg1) {
+export function prefetchConjurePreviewTicket(projectId, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -52,4 +52,4 @@ export const prefetchConjurePreviewTicket = function prefetchConjurePreviewTicke
       tmp11Result4.prefetchProxyTicket(prop, getChannelIdForEmbeddedSurfaceDefault(conjurePreviewSurface), conjurePreviewSurface.type);
     }
   }
-};
+}

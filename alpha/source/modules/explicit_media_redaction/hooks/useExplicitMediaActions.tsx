@@ -1,10 +1,10 @@
-// Module ID: 12889
-// Function ID: 12890
+// Module ID: 13110
+// Function ID: 13111
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 6409, 2]
+// Dependencies: [5, 32, 19, 6433, 2]
 // Exports: useExplicitMediaActions
 
-// Module 12889 (useExplicitMediaActions)
+// Module 13110 (useExplicitMediaActions)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -16,7 +16,7 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaActions.tsx");
 
-export const useExplicitMediaActions = function useExplicitMediaActions(onError) {
+export function useExplicitMediaActions(onError) {
   let c3;
   let items;
   let tmp2;
@@ -43,7 +43,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
             closure_129_3(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === v0) {
@@ -122,4 +122,4 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
   };
   items = [tmp2, onError, onSuccess, report];
   return obj;
-};
+}

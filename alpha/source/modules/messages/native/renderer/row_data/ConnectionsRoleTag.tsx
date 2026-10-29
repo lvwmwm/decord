@@ -1,10 +1,10 @@
-// Module ID: 14768
-// Function ID: 14769
+// Module ID: 15003
+// Function ID: 15004
 // Name: ConnectionsRoleTag
 // Dependencies: [17, 1084, 587, 1102, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 14768 (ConnectionsRoleTag)
+// Module 15003 (ConnectionsRoleTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
@@ -15,7 +15,7 @@ const processColor = react_native.processColor;
 const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/ConnectionsRoleTag.tsx");
 
-export const createConnectionsRoleTag = function createConnectionsRoleTag(visibleConnectionsRole) {
+export function createConnectionsRoleTag(visibleConnectionsRole) {
   let colorString = visibleConnectionsRole.colorString;
   if (colorString == null) {
     colorString = DEFAULT_ROLE_COLOR_HEX;
@@ -29,4 +29,4 @@ export const createConnectionsRoleTag = function createConnectionsRoleTag(visibl
   }
   const obj3 = { id: visibleConnectionsRole.id, name: visibleConnectionsRole.name, backgroundColor: processColor(colorString), iconColor: processColor(PRIMARY_630) };
   return obj3;
-};
+}

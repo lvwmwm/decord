@@ -1,13 +1,13 @@
-// Module ID: 6672
-// Function ID: 6673
+// Module ID: 6696
+// Function ID: 6697
 // Name: StageChannelsConstants
-// Dependencies: [1084, 1125, 2064, 2]
+// Dependencies: [1084, 1125, 2065, 2]
 // Exports: getStagePublicInfoText
 
-// Module 6672 (StageChannelsConstants)
+// Module 6696 (StageChannelsConstants)
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -26,7 +26,7 @@ export const EXPLICIT_END_STAGE_SHEET_KEY = "explicit-end-stage";
 export const STAGE_INVITE_STATE_KEY = "stage-invite";
 export const STAGE_BOOSTING_SHEET_KEY = "stage-boosting";
 export const RequestToSpeakPermissionStates = { EVERYONE: 1, [1]: "EVERYONE", NO_ONE: 2, [2]: "NO_ONE", ROLES: 3, [3]: "ROLES" };
-export const getStagePublicInfoText = function getStagePublicInfoText() {
+export function getStagePublicInfoText() {
   let obj2;
   const intl = intl5.intl;
   const items = [intl.string(intl5.t["9XlQ9W"]), , , ];
@@ -41,4 +41,4 @@ export const getStagePublicInfoText = function getStagePublicInfoText() {
   const intl4 = intl5.intl;
   items[3] = intl4.string(intl5.t.xfb7ZU);
   return items;
-};
+}

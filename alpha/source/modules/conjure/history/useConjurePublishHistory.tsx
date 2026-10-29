@@ -1,14 +1,14 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12339
+// Function ID: 12340
 // Name: useConjurePublishHistory
-// Dependencies: [32, 19, 1125, 3863, 2046, 558, 576, 12286, 12281, 2]
+// Dependencies: [32, 19, 1125, 3864, 2047, 558, 576, 12340, 12335, 2]
 // Exports: publishHistoryTitle
 
-// Module 12285 (useConjurePublishHistory)
+// Module 12339 (useConjurePublishHistory)
 import intl2 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12286 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 12340 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     if (cResult[5] === arg0) {
       tmp12 = cResult[6];
     }
-    const tmpResult = tmp(12281);
+    const tmpResult = tmp(12335);
     historyLoad = tmpResult.useHistoryLoad(tmp12);
     nextCursor = null;
     if ("loaded" === historyLoad.state.status) {
@@ -272,7 +272,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         if (cResult[3] === arg0) {
           tmp5 = cResult[4];
         }
-        const tmpResult = tmp(12281);
+        const tmpResult = tmp(12335);
         const historyLoad = tmpResult.useHistoryLoad(tmp5);
         if (cResult[5] === get) {
           let state;
@@ -405,14 +405,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 });
 let result = size.fileFinishedImporting("modules/conjure/history/useConjurePublishHistory.tsx");
 
-export const publishHistoryTitle = function publishHistoryTitle(publishedAt) {
+export function publishHistoryTitle(publishedAt) {
   let obj2;
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { date: obj2.format("LLL") };
-  const prop = _modDef3863["/spQzC"];
-  obj2 = _modDef2046(publishedAt);
+  const prop = _modDef3864["/spQzC"];
+  obj2 = _modDef2047(publishedAt);
   return formatToPlainString(prop, obj);
-};
+}
 export const useConjurePublishHistory = tmp2;
 export const useConjurePublishHistoryNotes = tmp3;

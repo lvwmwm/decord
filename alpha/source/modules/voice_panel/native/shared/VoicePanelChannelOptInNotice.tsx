@@ -1,11 +1,11 @@
-// Module ID: 18830
-// Function ID: 18831
+// Module ID: 19063
+// Function ID: 19064
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 558, 576, 7245, 1125, 6947, 15345, 6939, 6922, 2]
+// Dependencies: [19, 21, 558, 576, 7269, 1125, 6971, 15580, 6963, 6946, 2]
 
-// Module 18830 (VoicePanelChannelOptInNotice)
+// Module 19063 (VoicePanelChannelOptInNotice)
 import Fragment from "Fragment" /* 21 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7245 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7269 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,8 +34,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const stringResult = intl.string(channel(1125).t["9mysCh"]);
         const intl2 = tmp(1125).intl;
         const stringResult1 = intl2.string(channel(1125).t.PDUCIN);
-        const TableRowIcon = tmp(6947).TableRowIcon;
-        const tmp12 = <TableRowIcon IconComponent={channel(15345).ChannelListMagnifyingGlassIcon} />;
+        const TableRowIcon = tmp(6971).TableRowIcon;
+        const tmp12 = <TableRowIcon IconComponent={channel(15580).ChannelListMagnifyingGlassIcon} />;
         cResult[4] = stringResult;
         cResult[5] = stringResult1;
         cResult[6] = tmp12;
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp8 = cResult[6];
       }
       if (cResult[7] !== tmp4) {
-        const tmp15 = jsx(channel(6939).TableRow, { label: tmp6, subLabel: tmp7, icon: tmp8, onPress: tmp4, start: true, end: true, arrow: true });
+        const tmp15 = jsx(channel(6963).TableRow, { label: tmp6, subLabel: tmp7, icon: tmp8, onPress: tmp4, start: true, end: true, arrow: true });
         cResult[7] = tmp4;
         cResult[8] = tmp15;
         tmp13 = tmp15;
@@ -62,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         return tmp16;
       }
-      const tmp19 = jsx(analyticsSection(6922), { style, children: tmp13 });
+      const tmp19 = jsx(analyticsSection(6946), { style, children: tmp13 });
       cResult[9] = style;
       cResult[10] = tmp13;
       cResult[11] = tmp19;
@@ -92,12 +92,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj.setOptInChannel(channel.guild_id, channel.id, true, obj2);
   }, items);
   let obj2 = { label: intl.string(channel(1125).t["9mysCh"]), subLabel: intl2.string(channel(1125).t.PDUCIN), icon: null, onPress: callback, start: true, end: true, arrow: true };
-  analyticsSection(6922);
-  const TableRow = channel(6939).TableRow;
+  analyticsSection(6946);
+  const TableRow = channel(6963).TableRow;
   intl = channel(1125).intl;
   intl2 = channel(1125).intl;
-  ({ IconComponent: channel(15345).ChannelListMagnifyingGlassIcon });
-  const TableRowIcon = channel(6947).TableRowIcon;
+  ({ IconComponent: channel(15580).ChannelListMagnifyingGlassIcon });
+  const TableRowIcon = channel(6971).TableRowIcon;
   return <tmp2 style={style}>{null}</tmp2>;
 }));
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 14888
-// Function ID: 14889
+// Module ID: 15123
+// Function ID: 15124
 // Name: useSelectedActiveStream
-// Dependencies: [6807, 6677, 558, 576, 504, 2]
+// Dependencies: [6830, 6701, 558, 576, 504, 2]
 
-// Module 14888 (useSelectedActiveStream)
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
+// Module 15123 (useSelectedActiveStream)
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

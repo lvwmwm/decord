@@ -1,26 +1,29 @@
-// Module ID: 10779
-// Function ID: 10780
+// Module ID: 10854
+// Function ID: 10855
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 1998, 6808, 6811, 10780, 8864, 5639, 10781, 1096, 10790, 10765, 10795, 7942, 10796, 10798, 10799, 10800, 10801, 10802, 2]
+// Dependencies: [5, 5248, 1999, 6831, 6834, 10855, 8867, 5640, 1096, 5247, 10856, 2000, 10861, 10866, 10840, 10871, 7965, 10872, 10874, 10875, 10876, 10877, 10878, 2]
 // Exports: inspectConjurePreviewPoint, setConjurePreviewFrameVisibility
 
-// Module 10779 (ConjurePlatformUtils)
+// Module 10854 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5639 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8864 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10765 */;
-import Constants from "Constants" /* 10780 */;
-import ApplicationUtils from "ApplicationUtils" /* 10781 */;
-import PushNotificationDefault from "PushNotification" /* 10790 */;
-import conjurePreviewCall from "conjurePreviewCall" /* 10795 */;
-import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 10800 */;
-import restartFrames from "restartFrames" /* 10802 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10840 */;
+import Constants from "Constants" /* 10855 */;
+import ApplicationUtils from "ApplicationUtils" /* 10861 */;
+import PushNotificationDefault from "PushNotification" /* 10866 */;
+import conjurePreviewCall from "conjurePreviewCall" /* 10871 */;
+import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 10876 */;
+import restartFrames from "restartFrames" /* 10878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10799 */;
-import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 10801 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10875 */;
+import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 10877 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -119,10 +122,10 @@ function waitForPreviewFrameIdentity(arg0, arg1) {
           }
           let tmp4 = null;
           if (null != prop) {
-            obj = closure_0(closure_1_3[10]);
+            obj = closure_0(closure_1_3[14]);
             const conjureBuilderPreviewFrame = obj.getConjureBuilderPreviewFrame(prop);
             let iframeId = null;
-            if (closure_1_7(conjureBuilderPreviewFrame)) {
+            if (closure_1_8(conjureBuilderPreviewFrame)) {
               iframeId = conjureBuilderPreviewFrame.data.iframeId;
             }
             tmp4 = iframeId;
@@ -197,8 +200,8 @@ function callNativePreviewFrame(iframeId, arg1, arg2, arg3) {
     function post() {
       for (const item10005 of closure_4) {
         let injectJavaScript = cleanup.injectJavaScript;
-        let tmp4 = obj(acks[13]);
-        let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[13]).ANY_ORIGIN));
+        let tmp4 = obj(acks[17]);
+        let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[17]).ANY_ORIGIN));
         let catchPromise = injectJavaScriptResult.catch(() => {
 
         });
@@ -231,7 +234,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, arg3) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(10795);
+          const tmp4Result = tmp4(10871);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -263,7 +266,7 @@ let obj = function _relayPreviewCapture() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp45;
@@ -325,7 +328,7 @@ let obj = function _relayPreviewCapture() {
                   c8 = 3;
                   return { value: { status: "unavailable" }, done: true };
                 } else if (null == onAccepted) {
-                  obj10 = { uploadToken: "paths" };
+                  obj10 = { uploadToken: "r" };
                 } else {
                   c7 = 2;
                   c8 = 1;
@@ -347,7 +350,7 @@ let obj = function _relayPreviewCapture() {
             } else if (3 === c7) {
               let obj13;
               c6 = 0;
-              if (tmp45 instanceof closure_132_0(closure_132_3[11]).PreviewFrameCallTimeout) {
+              if (tmp45 instanceof closure_132_0(closure_132_3[15]).PreviewFrameCallTimeout) {
                 obj13 = { status: "failed" };
               } else {
                 obj13 = { status: "unavailable" };
@@ -378,7 +381,7 @@ let obj = function _relayPreviewCapture() {
             } else {
               let obj20;
               c6 = 1;
-              const tmp58 = closure_132_13;
+              const tmp58 = closure_132_15;
               if (null == spec) {
                 obj18 = {};
               } else {
@@ -392,8 +395,8 @@ let obj = function _relayPreviewCapture() {
                 obj20 = { uploadToken: obj10.uploadToken };
               }
               const merged = Object.assign(obj20);
-              const obj21 = { id, timeoutMs: closure_132_0(closure_132_3[11]).CAPTURE_NOW_TIMEOUT_MS, retryMs: obj18 };
-              obj18 = closure_132_0(closure_132_3[11]).CAPTURE_NOW_RETRY_MS;
+              const obj21 = { id, timeoutMs: closure_132_0(closure_132_3[15]).CAPTURE_NOW_TIMEOUT_MS, retryMs: obj18 };
+              obj18 = closure_132_0(closure_132_3[15]).CAPTURE_NOW_RETRY_MS;
               c7 = 4;
               c8 = 1;
               const obj22 = { value: tmp58(closure_3, "capture-now", obj19, obj21), done: false };
@@ -427,7 +430,7 @@ obj = function _inspectConjurePreviewPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -483,7 +486,7 @@ obj = function _inspectConjurePreviewPoint() {
           c4 = 0;
           c6 = 3;
           const obj10 = { value: obj.inspectResultFromResponse(closure_0), done: true };
-          obj = closure_131_0(closure_131_3[14]);
+          obj = closure_131_0(closure_131_3[18]);
           return obj10;
         }
       } catch (tmp10) {
@@ -519,7 +522,7 @@ obj = function _relayPreviewControl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp71;
@@ -560,7 +563,7 @@ obj = function _relayPreviewControl() {
           } else if (2 === c9) {
             endResult = tmp71;
             native = 1;
-            if (tmp71 instanceof closure_134_0(closure_134_3[11]).PreviewFrameCallTimeout) {
+            if (tmp71 instanceof closure_134_0(closure_134_3[15]).PreviewFrameCallTimeout) {
               endResult = { status: "failed", message: "the preview frame did not answer the control batch" };
             } else {
               endResult = { status: "unavailable" };
@@ -614,14 +617,14 @@ obj = function _relayPreviewControl() {
               c10 = 3;
               return { value: { status: "unavailable" }, done: true };
             } else {
-              const obj18 = closure_134_0(closure_134_3[16]);
+              const obj18 = closure_134_0(closure_134_3[20]);
               tmp = obj18.beginNativeSurfaceSessionForFrame(closure_5);
               native = 3;
-              const obj11 = { id, timeoutMs: obj20.controlAnswerTimeoutMs(closure_2), retryMs: closure_134_0(closure_134_3[11]).CONTROL_RETRY_MS };
+              const obj11 = { id, timeoutMs: obj20.controlAnswerTimeoutMs(closure_2), retryMs: closure_134_0(closure_134_3[15]).CONTROL_RETRY_MS };
               c9 = 6;
               c10 = 1;
-              obj20 = closure_134_0(closure_134_3[11]);
-              const obj12 = { value: closure_134_13(closure_5, "control", closure_2, obj11), done: false };
+              obj20 = closure_134_0(closure_134_3[15]);
+              const obj12 = { value: closure_134_15(closure_5, "control", closure_2, obj11), done: false };
               return obj12;
             }
           } else if (arg0 === 1) {
@@ -643,7 +646,7 @@ obj = function _relayPreviewControl() {
                 let obj15;
                 closure_4 = 0;
                 endResult = [];
-                closure_4 = HermesBuiltin.arraySpread(endResult, closure_134_20.drain(closure_0), closure_4);
+                closure_4 = HermesBuiltin.arraySpread(endResult, closure_134_22.drain(closure_0), closure_4);
                 closure_4 = HermesBuiltin.arraySpread(endResult, tmp.drain(), closure_4);
                 native = endResult;
                 if (0 === native.length) {
@@ -688,9 +691,10 @@ obj = function _relayPreviewControl() {
 const isLaunched = FramesConstants.isLaunched;
 const LocalNotificationTypes = Constants.LocalNotificationTypes;
 const items = [OAuth2Scopes.OAuth2Scopes.BOT, OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS];
-let c15 = 0;
-let c16 = 0;
-let c19 = 0;
+const ConjureAppInstallSheet = "ConjureAppInstallSheet";
+let c17 = 0;
+let c18 = 0;
+let c21 = 0;
 let result = conjurePreviewControlLease.subscribeConjureControlReleased(function(arg0) {
   let c0;
   let c3;
@@ -714,8 +718,8 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
   }
   if (null != tmp3) {
     ({ id: "control-end-" + sum + "-" + Date.now(), timeoutMs: require("conjurePreviewCall").CONTROL_END_TIMEOUT_MS, retryMs: require("conjurePreviewCall").CONTROL_RETRY_MS });
-    sum = c19 + 1;
-    c19 = sum;
+    sum = c21 + 1;
+    c21 = sum;
     const _Date = Date;
     const _HermesInternal = HermesInternal;
     _require = "control-end";
@@ -749,8 +753,8 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
       function post() {
         for (const item10005 of closure_4) {
           let injectJavaScript = cleanup.injectJavaScript;
-          let tmp4 = obj(acks[13]);
-          let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[13]).ANY_ORIGIN));
+          let tmp4 = obj(acks[17]);
+          let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[17]).ANY_ORIGIN));
           let catchPromise = injectJavaScriptResult.catch(() => {
 
           });
@@ -783,7 +787,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
             }
             c2 = null;
           } else {
-            const tmp4Result = tmp4(10795);
+            const tmp4Result = tmp4(10871);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -800,7 +804,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
     });
   }
 });
-let closure_20 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces((arg0) => {
+let closure_22 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces((arg0) => {
   let iframeId;
   obj = ConjureProjectStore;
   const project = ConjureProjectStore.getProject(arg0);
@@ -810,7 +814,7 @@ let closure_20 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
   }
   let tmp3 = null;
   if (null != prop) {
-    const obj2 = iframeId(10765);
+    const obj2 = iframeId(10840);
     const conjureBuilderPreviewFrame = obj2.getConjureBuilderPreviewFrame(prop);
     let tmp7 = null;
     if (null != conjureBuilderPreviewFrame) {
@@ -838,7 +842,7 @@ let closure_20 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
     }
     let tmp12 = null;
     if (null != prop1) {
-      const obj5 = iframeId(10765);
+      const obj5 = iframeId(10840);
       const conjureBuilderPreviewFrame1 = obj5.getConjureBuilderPreviewFrame(prop1);
       iframeId = null;
       if (isLaunched(conjureBuilderPreviewFrame1)) {
@@ -865,6 +869,7 @@ obj = {
     let deserializeResult;
     let guildId;
     let onClose;
+    let openLazyResult;
     let scopes;
     application = application.application;
     let oauth2InstallParams;
@@ -885,8 +890,6 @@ obj = {
       }
       oauth2InstallParams = installParams;
     }
-    const tmp7 = ApplicationUtils;
-    const openOAuth2Modal = tmp7.openOAuth2Modal;
     obj = {
       clientId: applicationId,
       guildId,
@@ -900,6 +903,7 @@ obj = {
       dismissOAuthModal: onClose
     };
     scopes = undefined;
+    const tmp7 = dependencyMap;
     if (oauth2InstallParams != null) {
       scopes = oauth2InstallParams.scopes;
     }
@@ -915,8 +919,18 @@ obj = {
       const deserializer = BigFlagUtilsAll;
       deserializeResult = deserializer.deserialize(oauth2InstallParams.permissions);
     }
-    openOAuth2Modal(obj);
-    return Promise.resolve();
+    if (ActionSheetStore.isOpen()) {
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      const obj2 = { sheetKey: ConjureAppInstallSheet, disableHapticOnOpen: true };
+      const tmp17 = asyncRequire(10856, tmp7.paths);
+      const merged = Object.assign(obj);
+      openLazyResult = openLazy(tmp17, ConjureAppInstallSheet, obj2, "stack");
+    } else {
+      const tmp6Result = ApplicationUtils;
+      tmp6Result.openOAuth2Modal(obj);
+      openLazyResult = Promise.resolve();
+    }
+    return openLazyResult;
   },
   isWindowFocused() {
     return "active" === AppStateStore.getState();
@@ -976,8 +990,8 @@ obj = {
     }
     if (null != tmp3) {
       ({ id: "control-abort-" + sum + "-" + Date.now(), timeoutMs: require("conjurePreviewCall").CONTROL_END_TIMEOUT_MS, retryMs: require("conjurePreviewCall").CONTROL_RETRY_MS });
-      sum = c19 + 1;
-      c19 = sum;
+      sum = c21 + 1;
+      c21 = sum;
       const _Date = Date;
       const _HermesInternal = HermesInternal;
       _require = "control-abort";
@@ -1011,8 +1025,8 @@ obj = {
         function post() {
           for (const item10005 of closure_4) {
             let injectJavaScript = cleanup.injectJavaScript;
-            let tmp4 = obj(acks[13]);
-            let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[13]).ANY_ORIGIN));
+            let tmp4 = obj(acks[17]);
+            let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[17]).ANY_ORIGIN));
             let catchPromise = injectJavaScriptResult.catch(() => {
 
             });
@@ -1045,7 +1059,7 @@ obj = {
               }
               c2 = null;
             } else {
-              const tmp4Result = tmp4(10795);
+              const tmp4Result = tmp4(10871);
               if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
                 cleanup();
                 closure_0(parsed);
@@ -1067,10 +1081,10 @@ obj = {
     const result = obj.releaseConjureControlLeases(projectId);
   },
   beginPreviewOperation(projectId) {
-    closure_20.begin(projectId);
+    closure_22.begin(projectId);
   },
   endPreviewOperation(projectId) {
-    closure_20.end(projectId);
+    closure_22.end(projectId);
   },
   reloadAppFrames(application_id) {
     obj = restartFrames;
@@ -1080,12 +1094,12 @@ obj = {
 const result1 = size.fileFinishedImporting("modules/conjure/shared/ConjurePlatformUtils.native.tsx");
 
 export default obj;
-export const setConjurePreviewFrameVisibility = function setConjurePreviewFrameVisibility(iframeId, visible) {
+export function setConjurePreviewFrameVisibility(iframeId, visible) {
   let c0;
   let c3;
   let closure_5;
-  const sum = c15 + 1;
-  c15 = sum;
+  const sum = c17 + 1;
+  c17 = sum;
   obj = { revision: sum, visible };
   let obj2 = { id: "visibility-" + sum, timeoutMs: 15000, retryMs: require("conjurePreviewCall").CONTROL_RETRY_MS };
   _require = "set-visibility";
@@ -1115,8 +1129,8 @@ export const setConjurePreviewFrameVisibility = function setConjurePreviewFrameV
     function post() {
       for (const item10005 of closure_4) {
         let injectJavaScript = cleanup.injectJavaScript;
-        let tmp4 = obj(acks[13]);
-        let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[13]).ANY_ORIGIN));
+        let tmp4 = obj(acks[17]);
+        let injectJavaScriptResult = injectJavaScript(tmp4(item10005, c0(acks[17]).ANY_ORIGIN));
         let catchPromise = injectJavaScriptResult.catch(() => {
 
         });
@@ -1149,7 +1163,7 @@ export const setConjurePreviewFrameVisibility = function setConjurePreviewFrameV
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(10795);
+          const tmp4Result = tmp4(10871);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -1164,7 +1178,7 @@ export const setConjurePreviewFrameVisibility = function setConjurePreviewFrameV
   let catchPromise = promise.catch(() => {
 
   });
-};
-export const inspectConjurePreviewPoint = function inspectConjurePreviewPoint() {
+}
+export function inspectConjurePreviewPoint() {
   return obj(...arguments);
-};
+}

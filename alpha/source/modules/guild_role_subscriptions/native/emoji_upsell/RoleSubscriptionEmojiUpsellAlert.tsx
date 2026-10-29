@@ -1,17 +1,17 @@
-// Module ID: 9894
-// Function ID: 9895
+// Module ID: 9926
+// Function ID: 9927
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 4878, 4863, 21, 9707, 1125, 558, 576, 1496, 504, 6866, 9895, 9898, 6014, 2]
+// Dependencies: [19, 4879, 4864, 21, 9739, 1125, 558, 576, 1497, 504, 6889, 9927, 9930, 6018, 2]
 
-// Module 9894 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9926 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1125 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9707 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9895 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9739 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9927 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
   const cResult = obj.c(18);
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
-  size = onClose(1496)();
+  size = onClose(1497)();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: onClose(9707), title: intl.string(tmp(1125).t.cBjkcx), description: intl2.formatToPlainString(tmp(1125).t["h0u/Hi"], obj3) };
+    const obj2 = { image: onClose(9739), title: intl.string(tmp(1125).t.cBjkcx), description: intl2.formatToPlainString(tmp(1125).t["h0u/Hi"], obj3) };
     intl = tmp(1125).intl;
     intl2 = tmp(1125).intl;
     obj3 = { serverName: name };
@@ -128,13 +128,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
       cResult[14] = onClose;
       cResult[15] = tmp15;
       cResult[16] = tmp16;
-      cResult[17] = jsx(onClose(6014), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
-      const tmp21 = jsx(onClose(6014), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      cResult[17] = jsx(onClose(6018), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      const tmp21 = jsx(onClose(6018), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
     }
     cResult[11] = diff;
     cResult[12] = tmp11;
-    cResult[13] = jsx(tmp(9898).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
-    const tmp18 = jsx(tmp(9898).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    cResult[13] = jsx(tmp(9930).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(9930).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
   }
   function handleConfirm() {
     const obj = GuildActionCreatorsDefault;

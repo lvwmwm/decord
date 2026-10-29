@@ -41,9 +41,9 @@ function instrumentConsole() {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
+export function addConsoleInstrumentationHandler(arg0) {
   const obj = _mod726;
   obj.addHandler("console", arg0);
   const obj2 = _mod726;
   obj2.maybeInstrument("console", instrumentConsole);
-};
+}

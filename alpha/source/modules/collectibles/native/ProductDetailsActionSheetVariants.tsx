@@ -1,18 +1,18 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14966
+// Function ID: 14967
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 9465, 1125, 6944, 9499, 7266, 7696, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 9496, 1125, 6968, 9530, 7290, 7719, 5271, 2]
 
-// Module 14731 (ProductDetailsActionSheetVariants)
+// Module 14966 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6944 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9465 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9499 */;
+import Pressables from "Pressables" /* 6968 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9496 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9530 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(7266);
+const CheckmarkSmallIcon2 = tmp(7290);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -219,13 +219,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   ({ disabled, onVariantSelect } = arg0);
   dependencyMap = tmp4;
   const tmp5 = closure_6();
-  const tmpResult = selectedVariantIndex(7696);
+  const tmpResult = selectedVariantIndex(7719);
   if (tmpResult.getIsVariantProduct(product)) {
     const _Symbol = Symbol;
     const container = tmp5.container;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(1125).t.wbgaj6) };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       const tmp10 = closure_4(Text, obj2);
       cResult[0] = tmp10;
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
                   class V {
                     constructor(arg0, arg1) {
                       closure_0 = arg1;
-                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F152712 */ } };
+                      obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F154343 */ } };
                       return closure_1_4(closure_1_8, obj, arg0.variantValue);
                     }
                   }
@@ -297,7 +297,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
                 class V {
                   constructor(arg0, arg1) {
                     closure_0 = arg1;
-                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F152712 */ } };
+                    obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F154343 */ } };
                     return closure_1_4(closure_1_8, obj, arg0.variantValue);
                   }
                 }
@@ -322,7 +322,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
               class V {
                 constructor(arg0, arg1) {
                   closure_0 = arg1;
-                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F152712 */ } };
+                  obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F154343 */ } };
                   return closure_1_4(closure_1_8, obj, arg0.variantValue);
                 }
               }
@@ -335,7 +335,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
           class V {
             constructor(arg0, arg1) {
               closure_0 = arg1;
-              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F152712 */ } };
+              obj = { variant: arg0, isSelected: closure_0 === arg1, disabled, onSelect() { /* body not rendered: F154343 */ } };
               return closure_1_4(closure_1_8, obj, arg0.variantValue);
             }
           }
@@ -356,7 +356,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
     }
     if (tmp12) {
       const obj6 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp5.text, children: product.variants[selectedVariantIndex].variantLabel };
-      tmp12 = closure_4(selectedVariantIndex(5270).Text, obj6);
+      tmp12 = closure_4(selectedVariantIndex(5271).Text, obj6);
     }
     cResult[1] = product.variants;
     cResult[2] = selectedVariantIndex;

@@ -1,13 +1,13 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 15522
+// Function ID: 15523
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 6705, 1084, 15286, 1382, 7858, 1264, 584, 2]
+// Dependencies: [5, 6729, 1084, 15521, 1382, 7881, 1264, 584, 2]
 // Exports: detectLocalApps
 
-// Module 15287 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15286 */;
+// Module 15522 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15521 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConsentStore from "ConsentStore" /* 6705 */;
+import ConsentStore from "ConsentStore" /* 6729 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _detectLocalApps() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ let obj = function _detectLocalApps() {
               let obj7 = { type: "LOCAL_APP_DETECTION_COMPLETE", result };
               let dispatchResult = obj6.dispatch(obj7);
               c8 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === tmp5) {
             c6 = 0;
@@ -146,6 +146,6 @@ let obj = function _detectLocalApps() {
 ({ AnalyticEvents: hasOwnProperty, Consents: metroRequire } = Constants);
 let result = size.fileFinishedImporting("modules/local_app_detection/native/LocalAppDetectionUtils.tsx");
 
-export const detectLocalApps = function detectLocalApps() {
+export function detectLocalApps() {
   return obj(...arguments);
-};
+}

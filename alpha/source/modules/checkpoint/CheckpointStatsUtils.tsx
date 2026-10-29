@@ -1,13 +1,13 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13249
+// Function ID: 13250
 // Name: CheckpointStatsUtils
-// Dependencies: [1403, 1125, 4870, 11, 2]
+// Dependencies: [1403, 1125, 4871, 11, 2]
 // Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 13018 (CheckpointStatsUtils)
+// Module 13249 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl from "intl" /* 1125 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4870 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const re5 = /^[A-Za-z.\s]+$/;
 const re6 = /\s/g;
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointStatsUtils.tsx");
 
-export const getCheckpointTopPercent = function getCheckpointTopPercent(prop) {
+export function getCheckpointTopPercent(prop) {
   let bound = null;
   if (null != prop) {
     bound = null;
@@ -29,12 +29,12 @@ export const getCheckpointTopPercent = function getCheckpointTopPercent(prop) {
     }
   }
   return bound;
-};
-export const formatCheckpointCompactNumber = function formatCheckpointCompactNumber(stateFromStores1) {
+}
+export function formatCheckpointCompactNumber(stateFromStores1) {
   const numberFormat = new Intl.NumberFormat(intl.intl.currentLocale, { notation: "compact", compactDisplay: "long" });
   return numberFormat.format(stateFromStores1);
-};
-export const formatCheckpointPeakHour = function formatCheckpointPeakHour(stateFromStores1) {
+}
+export function formatCheckpointPeakHour(stateFromStores1) {
   if (null == stateFromStores1) {
     return null;
   } else {
@@ -71,15 +71,15 @@ export const formatCheckpointPeakHour = function formatCheckpointPeakHour(stateF
     const obj2 = { value: str2.replace(re6, ""), label: str2 };
     return obj2;
   }
-};
-export const hasCheckpointSidekick = function hasCheckpointSidekick(sidekick) {
+}
+export function hasCheckpointSidekick(sidekick) {
   sidekick = undefined;
   if (sidekick != null) {
     sidekick = sidekick.sidekick;
   }
   return null != sidekick;
-};
-export const hasCheckpointSquad = function hasCheckpointSquad(sidekick) {
+}
+export function hasCheckpointSquad(sidekick) {
   sidekick = undefined;
   if (sidekick != null) {
     sidekick = sidekick.sidekick;
@@ -99,8 +99,8 @@ export const hasCheckpointSquad = function hasCheckpointSquad(sidekick) {
     tmp2 = num > 0;
   }
   return tmp2;
-};
-export const hasCheckpointVoiceMinutes = function hasCheckpointVoiceMinutes(voice) {
+}
+export function hasCheckpointVoiceMinutes(voice) {
   let num;
   const _Math = Math;
   if (voice != null) {
@@ -113,8 +113,8 @@ export const hasCheckpointVoiceMinutes = function hasCheckpointVoiceMinutes(voic
     num = 0;
   }
   return round(num) > 0;
-};
-export const hasCheckpointMessages = function hasCheckpointMessages(messages) {
+}
+export function hasCheckpointMessages(messages) {
   let num;
   const _Math = Math;
   if (messages != null) {
@@ -127,8 +127,8 @@ export const hasCheckpointMessages = function hasCheckpointMessages(messages) {
     num = 0;
   }
   return round(num) > 0;
-};
-export const hasCheckpointGuilds = function hasCheckpointGuilds(guilds) {
+}
+export function hasCheckpointGuilds(guilds) {
   let num;
   if (guilds != null) {
     guilds = guilds.guilds;
@@ -140,8 +140,8 @@ export const hasCheckpointGuilds = function hasCheckpointGuilds(guilds) {
     num = 0;
   }
   return num > 0;
-};
-export const hasCheckpointEmojis = function hasCheckpointEmojis(stats) {
+}
+export function hasCheckpointEmojis(stats) {
   let num;
   const _Math = Math;
   if (stats != null) {
@@ -168,8 +168,8 @@ export const hasCheckpointEmojis = function hasCheckpointEmojis(stats) {
     tmp = num2 > 0;
   }
   return tmp;
-};
-export const hasCheckpointGames = function hasCheckpointGames(stats) {
+}
+export function hasCheckpointGames(stats) {
   let num;
   const _Math = Math;
   if (stats != null) {
@@ -196,8 +196,8 @@ export const hasCheckpointGames = function hasCheckpointGames(stats) {
     tmp = num2 > 0;
   }
   return tmp;
-};
-export const hasCheckpointGameDays = function hasCheckpointGameDays(games) {
+}
+export function hasCheckpointGameDays(games) {
   let num;
   const _Math = Math;
   if (games != null) {
@@ -210,8 +210,8 @@ export const hasCheckpointGameDays = function hasCheckpointGameDays(games) {
     num = 0;
   }
   return round(num) > 0;
-};
-export const statsFromServer = function statsFromServer(stats) {
+}
+export function statsFromServer(stats) {
   let arr2;
   let emojis;
   let games;
@@ -280,8 +280,8 @@ export const statsFromServer = function statsFromServer(stats) {
     tmp3 = new UserRecord(sidekick.user);
   }
   return obj;
-};
-export const globalStatsFromServer = function globalStatsFromServer(global_stats) {
+}
+export function globalStatsFromServer(global_stats) {
   let arr2;
   let emojis;
   let games;
@@ -380,4 +380,4 @@ export const globalStatsFromServer = function globalStatsFromServer(global_stats
   prop1 = games.games_by_stream_watch_minutes;
   prop2 = games.games_by_coplay_users;
   return obj;
-};
+}

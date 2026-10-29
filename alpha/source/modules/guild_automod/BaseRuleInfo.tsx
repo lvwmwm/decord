@@ -1,19 +1,19 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19561
+// Function ID: 19562
 // Name: BaseRuleInfo
-// Dependencies: [12870, 19316, 19315, 1125, 2]
+// Dependencies: [13091, 19549, 19548, 1125, 2]
 // Exports: getBaseRuleInfo
 
-// Module 19328 (BaseRuleInfo)
-import Constants from "Constants" /* 12870 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19315 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19316 */;
+// Module 19561 (BaseRuleInfo)
+import Constants from "Constants" /* 13091 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19548 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19549 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
 const result = size.fileFinishedImporting("modules/guild_automod/BaseRuleInfo.tsx");
 
-export const getBaseRuleInfo = function getBaseRuleInfo(triggerType, name) {
+export function getBaseRuleInfo(triggerType, name) {
   let str2;
   let str3;
   let str4;
@@ -108,4 +108,4 @@ export const getBaseRuleInfo = function getBaseRuleInfo(triggerType, name) {
     flag = true;
   }
   return tmp;
-};
+}

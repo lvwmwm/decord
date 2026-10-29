@@ -1,12 +1,12 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7714
+// Function ID: 7715
 // Name: ProfileEffectRecord
-// Dependencies: [1991, 1992, 2]
+// Dependencies: [1992, 1993, 2]
 // Exports: isProfileEffectRecord
 
-// Module 7691 (ProfileEffectRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1991 */;
+// Module 7714 (ProfileEffectRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;
 
 class ProfileEffectRecord extends BaseCollectiblesItemRecord {
@@ -37,6 +37,6 @@ const result = size.fileFinishedImporting("modules/collectibles/records/ProfileE
 
 export default ProfileEffectRecord;
 export const RestartMethod = { FromLoop: "fromLoop", FromStart: "fromStart" };
-export const isProfileEffectRecord = function isProfileEffectRecord(first1) {
+export function isProfileEffectRecord(first1) {
   return first1 instanceof ProfileEffectRecord;
-};
+}

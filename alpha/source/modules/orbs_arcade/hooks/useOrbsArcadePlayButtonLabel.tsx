@@ -1,10 +1,10 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16925
+// Function ID: 16926
 // Name: useOrbsArcadePlayButtonLabel
-// Dependencies: [16662, 558, 576, 504, 1125, 2]
+// Dependencies: [16900, 558, 576, 504, 1125, 2]
 
-// Module 16687 (useOrbsArcadePlayButtonLabel)
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
+// Module 16925 (useOrbsArcadePlayButtonLabel)
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15364
+// Function ID: 15365
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1084, 21, 5004, 587, 6742, 558, 576, 7284, 1125, 5741, 5301, 5270, 5241, 9591, 15130, 5945, 15131, 1999, 9592, 5705, 5280, 5246, 2]
+// Dependencies: [32, 19, 17, 1084, 21, 5005, 587, 6765, 558, 576, 7308, 1125, 5743, 5302, 5271, 5242, 9623, 15365, 5947, 15366, 2000, 9624, 5707, 5281, 5247, 2]
 // Exports: default
 
-// Module 15129 (OutboundPromotionCard)
+// Module 15364 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5301 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5741 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import LegacyTokens from "LegacyTokens" /* 6742 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7284 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5743 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import LegacyTokens from "LegacyTokens" /* 6765 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsAn
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.PdKWVT) };
-    const BottomSheetTitleHeader = tmp(7284).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
     intl = tmp(1125).intl;
     const tmp7 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
@@ -76,7 +76,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsAn
     return tmp11;
   }
   const obj4 = { header: first, children: metroRequire(Text_Text.Text, { style: termsAndConditionsText, variant: "text-sm/medium", children: tmp8 }) };
-  BottomSheet = tmp(5301).BottomSheet;
+  BottomSheet = tmp(5302).BottomSheet;
   const tmp12 = metroRequire(BottomSheet, obj4);
   cResult[3] = tmp4.termsAndConditionsText;
   cResult[4] = tmp8;

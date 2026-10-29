@@ -1,18 +1,18 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 6871
+// Function ID: 6872
 // Name: MessageRequestUtils
-// Dependencies: [6820, 6821, 11, 2]
+// Dependencies: [6843, 6844, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 6848 (MessageRequestUtils)
+// Module 6871 (MessageRequestUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import MessageRequestStore from "MessageRequestStore" /* 6820 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6821 */;
+import MessageRequestStore from "MessageRequestStore" /* 6843 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6844 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestUtils.tsx");
 
-export const filterOutMessageRequestsAndSpam = function filterOutMessageRequestsAndSpam(arg0) {
+export function filterOutMessageRequestsAndSpam(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     let items = [MessageRequestStore, ];
@@ -59,8 +59,8 @@ export const filterOutMessageRequestsAndSpam = function filterOutMessageRequests
     [r10007, tmp] = item;
     return Object.assign(acc, { [r10007]: tmp });
   }, {});
-};
-export const filterOutMessageRequestsAndSpamById = function filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items) {
+}
+export function filterOutMessageRequestsAndSpamById(unreadPrivateChannelIds, items) {
   let tmp = items;
   if (items === undefined) {
     let tmp2 = MessageRequestStore;
@@ -93,8 +93,8 @@ export const filterOutMessageRequestsAndSpamById = function filterOutMessageRequ
     }
     return tmp2;
   });
-};
-export const isMessageRequestOrSpamRequest = function isMessageRequestOrSpamRequest(channelId, items) {
+}
+export function isMessageRequestOrSpamRequest(channelId, items) {
   let obj;
   let obj2;
   let tmp = items;
@@ -105,8 +105,8 @@ export const isMessageRequestOrSpamRequest = function isMessageRequestOrSpamRequ
   [obj, obj2] = tmp;
   const tmp4 = obj.isMessageRequest(channelId) || obj2.isSpam(channelId);
   return tmp4;
-};
-export const shouldShowMessageRequests = function shouldShowMessageRequests() {
+}
+export function shouldShowMessageRequests() {
   let obj;
   let obj2;
   let tmp = arg0;
@@ -118,4 +118,4 @@ export const shouldShowMessageRequests = function shouldShowMessageRequests() {
   const spamChannelsCount = obj2.getSpamChannelsCount();
   const tmp5 = obj.getMessageRequestsCount() > 0 || spamChannelsCount > 0;
   return tmp5;
-};
+}

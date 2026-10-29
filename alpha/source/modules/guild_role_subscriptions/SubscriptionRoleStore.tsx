@@ -1,17 +1,17 @@
-// Module ID: 4959
-// Function ID: 4960
+// Module ID: 4960
+// Function ID: 4961
 // Name: SubscriptionRoleStore
-// Dependencies: [4874, 4911, 4916, 4910, 4878, 1389, 1084, 4926, 504, 584, 2]
+// Dependencies: [4875, 4912, 4917, 4911, 4879, 1389, 1084, 4927, 504, 584, 2]
 
-// Module 4959 (SubscriptionRoleStore)
+// Module 4960 (SubscriptionRoleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4911 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4926 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4912 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4927 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function computeRolesForGuild(guildId) {
           let obj2 = PremiumRoleUtils;
           if (obj2.isSubscriptionRole(nextResult)) {
             let addResult = set.add(tmp13.id);
-            let tmp14Result = tmp14(4926);
+            let tmp14Result = tmp14(4927);
             if (tmp14Result.isSubscriptionRoleAvailableForPurchase(tmp13)) {
               let addResult1 = set1.add(tmp13.id);
               if (_Set1.has(tmp13.id)) {

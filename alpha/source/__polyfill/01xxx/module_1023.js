@@ -366,7 +366,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let flag = false;
 let closure_5 = [];
 
-export const clearNavigationContext = function clearNavigationContext(arg0) {
+export function clearNavigationContext(arg0) {
   let token;
   const arr = closure_5;
   if (closure_5[closure_5.length - 1] != null) {
@@ -375,8 +375,8 @@ export const clearNavigationContext = function clearNavigationContext(arg0) {
   if (token === arg0) {
     arr.pop();
   }
-};
-export const getActiveRootSpan = function getActiveRootSpan() {
+}
+export function getActiveRootSpan() {
   const obj = _mod693;
   const activeSpan = obj.getActiveSpan();
   let rootSpan;
@@ -393,8 +393,8 @@ export const getActiveRootSpan = function getActiveRootSpan() {
     }
     return tmp5;
   }
-};
-export const getNavigationContext = function getNavigationContext() {
+}
+export function getNavigationContext() {
   let tmp2 = null;
   if (closure_5.length > 0) {
     let tmp3 = tmp[length - 1];
@@ -404,7 +404,7 @@ export const getNavigationContext = function getNavigationContext() {
     tmp2 = tmp3;
   }
   return tmp2;
-};
+}
 export { getNormalizedName };
 export { getNumberOfUrlSegments };
 export function initializeRouterUtils(arg0, flag) {
@@ -418,7 +418,7 @@ export { pathEndsWithWildcard };
 export { pathIsWildcardAndHasChildren };
 export { prefixWithSlash };
 export { rebuildRoutePathFromAllRoutes };
-export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_location, routes, allRoutes, items, basename) {
+export function resolveRouteNameAndSource(_location, routes, allRoutes, items, basename) {
   let str2;
   let tmp2;
   let str = basename;
@@ -447,9 +447,9 @@ export const resolveRouteNameAndSource = function resolveRouteNameAndSource(_loc
   }
   items = [pathname, str2];
   return items;
-};
+}
 export { routeIsDescendant };
-export const setNavigationContext = function setNavigationContext(path, span) {
+export function setNavigationContext(path, span) {
   if (closure_5.length >= 10) {
     const tmp = require;
     if (_mod1016.DEBUG_BUILD) {
@@ -462,8 +462,8 @@ export const setNavigationContext = function setNavigationContext(path, span) {
   const obj2 = { token: obj, targetPath: path, span };
   closure_5.push(obj2);
   return obj;
-};
-export const transactionNameHasWildcard = function transactionNameHasWildcard(description) {
+}
+export function transactionNameHasWildcard(description) {
   const hasItem = description.includes("/*") || description.endsWith("*");
   return hasItem;
-};
+}

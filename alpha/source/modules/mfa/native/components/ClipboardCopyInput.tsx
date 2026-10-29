@@ -1,16 +1,16 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17553
+// Function ID: 17554
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1998, 1084, 21, 5004, 558, 576, 504, 7093, 7169, 7321, 7044, 2]
+// Dependencies: [5, 19, 17, 1999, 1084, 21, 5005, 558, 576, 504, 7117, 7193, 7345, 7068, 2]
 
-// Module 17314 (ClipboardCopyInput)
+// Module 17553 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import createStyles from "createStyles" /* 5004 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -153,7 +153,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -231,7 +231,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp26) {
             c3 = 3;
@@ -294,7 +294,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -372,7 +372,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp26) {
             c3 = 3;

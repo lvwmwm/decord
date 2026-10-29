@@ -1,17 +1,17 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 8933
+// Function ID: 8934
 // Name: GuildEventRsvpUtils
-// Dependencies: [502, 6819, 4862, 1125, 8931, 8932, 8924, 2]
+// Dependencies: [502, 6842, 4863, 1125, 8934, 8935, 8927, 2]
 // Exports: getExistingRsvp, getResponseOptions, handleRsvp
 
-// Module 8930 (GuildEventRsvpUtils)
+// Module 8933 (GuildEventRsvpUtils)
 import intl3 from "intl" /* 1125 */;
-import ScheduleUtils from "ScheduleUtils" /* 8924 */;
-import useEventException from "useEventException" /* 8931 */;
-import useEventSchedule from "useEventSchedule" /* 8932 */;
+import ScheduleUtils from "ScheduleUtils" /* 8927 */;
+import useEventException from "useEventException" /* 8934 */;
+import useEventSchedule from "useEventSchedule" /* 8935 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,11 +20,11 @@ let hasOwnProperty;
 const ResponseOptions = { SERIES: 0, [0]: "SERIES", RECURRENCE: 1, [1]: "RECURRENCE" };
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/utils/GuildEventRsvpUtils.tsx");
 
-export const getExistingRsvp = function getExistingRsvp(id, nextRecurrenceIdInEvent) {
+export function getExistingRsvp(id, nextRecurrenceIdInEvent) {
   return GuildScheduledEventStore.getRsvp(id, nextRecurrenceIdInEvent, AuthenticationStore.getId());
-};
+}
 export { ResponseOptions };
-export const getResponseOptions = function getResponseOptions() {
+export function getResponseOptions() {
   let intl;
   let intl2;
   let obj;
@@ -35,8 +35,8 @@ export const getResponseOptions = function getResponseOptions() {
   intl2 = intl3.intl;
   items[1] = obj2;
   return items;
-};
-export const handleRsvp = function handleRsvp(openRsvpPicker) {
+}
+export function handleRsvp(openRsvpPicker) {
   let eventId;
   let guildId;
   let onRsvp;
@@ -107,4 +107,4 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
       openRsvpPicker(guildScheduledEvent, tmp11);
     }
   }
-};
+}

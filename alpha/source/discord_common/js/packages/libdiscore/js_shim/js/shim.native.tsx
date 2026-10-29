@@ -11,28 +11,28 @@ import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/shim.native.tsx");
 
-export const isBlockedDomain = function isBlockedDomain(arg0) {
+export function isBlockedDomain(arg0) {
   const BlockedDomainsStore = ExperimentCacher.BlockedDomainsStore;
   return BlockedDomainsStore.isBlockedDomain(arg0);
-};
-export const startFetchingBlockedDomains = function startFetchingBlockedDomains(arg0) {
+}
+export function startFetchingBlockedDomains(arg0) {
   const BlockedDomainsStore = ExperimentCacher.BlockedDomainsStore;
   const result = BlockedDomainsStore.startFetchingBlockedDomains(arg0);
-};
-export const consumeLogs = function consumeLogs() {
+}
+export function consumeLogs() {
   const obj = ExperimentCacher;
   return obj.consumeLogs();
-};
+}
 export function isUnsupportedBrowser() {
   return false;
 }
-export const getExperimentCacher = function getExperimentCacher() {
+export function getExperimentCacher() {
   return ExperimentCacher.ExperimentCacher;
-};
-export const getHttpClientAPI = function getHttpClientAPI() {
+}
+export function getHttpClientAPI() {
   const obj = ExperimentCacher;
   return obj.getHttpClientAPI();
-};
+}
 export const rustMultiply = ExperimentCacher.rustMultiply;
 export const crash = ExperimentCacher.crash;
 export const generateLaunchSignature = ExperimentCacher.generateLaunchSignature;

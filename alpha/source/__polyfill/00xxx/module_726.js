@@ -11,13 +11,13 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_2 = {};
 let closure_3 = {};
 
-export const addHandler = function addHandler(arg0, arg1) {
+export function addHandler(arg0, arg1) {
   const tmp2 = closure_2[arg0] || [];
   closure_2[arg0] = tmp2;
   const arr = closure_2[arg0];
   arr.push(arg1);
-};
-export const maybeInstrument = function maybeInstrument(arg0, fn) {
+}
+export function maybeInstrument(arg0, fn) {
   if (!closure_3[arg0]) {
     tmp[arg0] = true;
     try {
@@ -31,14 +31,14 @@ export const maybeInstrument = function maybeInstrument(arg0, fn) {
       }
     }
   }
-};
-export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+}
+export function resetInstrumentationHandlers() {
   const keys = Object.keys(closure_2);
   const item = keys.forEach((item) => {
     closure_1_2[item] = undefined;
   });
-};
-export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+}
+export function triggerHandlers(arg0, arg1) {
   if (arg0 && closure_2[arg0]) {
     const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
     const nextResult = iter.next();
@@ -56,4 +56,4 @@ export const triggerHandlers = function triggerHandlers(arg0, arg1) {
       }
     }
   }
-};
+}

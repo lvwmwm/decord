@@ -1,12 +1,12 @@
-// Module ID: 7477
-// Function ID: 7478
+// Module ID: 7500
+// Function ID: 7501
 // Name: useGuildOnboardingAvailable
-// Dependencies: [4909, 1084, 558, 576, 504, 2]
+// Dependencies: [4910, 1084, 558, 576, 504, 2]
 // Exports: isGuildOnboardingAvailable
 
-// Module 7477 (useGuildOnboardingAvailable)
+// Module 7500 (useGuildOnboardingAvailable)
 import Constants from "Constants" /* 1084 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildOn
 const result = size.fileFinishedImporting("modules/guild_onboarding/useGuildOnboardingAvailable.tsx");
 
 export default tmp2;
-export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(guild) {
+export function isGuildOnboardingAvailable(guild) {
   if (null == guild) {
     return false;
   } else {
@@ -119,4 +119,4 @@ export const isGuildOnboardingAvailable = function isGuildOnboardingAvailable(gu
     }
     return hasItem;
   }
-};
+}

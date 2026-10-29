@@ -1,13 +1,13 @@
-// Module ID: 10482
-// Function ID: 10483
+// Module ID: 10515
+// Function ID: 10516
 // Name: PremiumAnalyticsUtils
-// Dependencies: [1084, 1278, 2050, 1264, 2]
+// Dependencies: [1084, 1278, 2051, 1264, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 10482 (PremiumAnalyticsUtils)
+// Module 10515 (PremiumAnalyticsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import v1 from "v1" /* 1278 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let obj = { WHAT_YOU_LOSE: 1, [1]: "WHAT_YOU_LOSE", CONFIRM: 2, [2]: "CONFIRM", 
 const result = size.fileFinishedImporting("modules/premium/native/PremiumAnalyticsUtils.tsx");
 
 export const PaymentFlowStep = { SKU_SELECT: "sku_select", PLAN_SELECT: "plan_select", REVIEW: "review", CONFIRM: "confirm", MOBILE_WEB_REDIRECT_CHECKOUT: "mobile_web_redirect_checkout", YEARLY_UPSELL: "yearly_upsell", PREMIUM_UPSELL: "premium_upsell", EXTERNAL_PAYMENT: "external_payment", REWARD_SKU_SELECT: "reward_sku_select" };
-export const getBasePurchaseFlowAnalyticsFields = function getBasePurchaseFlowAnalyticsFields(isGift) {
+export function getBasePurchaseFlowAnalyticsFields(isGift) {
   let section;
   let flag = isGift.isGift;
   const analyticsLoadId = isGift.analyticsLoadId;
@@ -34,26 +34,26 @@ export const getBasePurchaseFlowAnalyticsFields = function getBasePurchaseFlowAn
     section = analyticsLocation.section;
   }
   return obj;
-};
-export const getPaymentFlowCompletedAnalyticsFields = function getPaymentFlowCompletedAnalyticsFields(arg0, arg1) {
+}
+export function getPaymentFlowCompletedAnalyticsFields(arg0, arg1) {
   const obj = {};
   const merged = Object.assign(arg0);
   const merged1 = Object.assign(arg1);
   return obj;
-};
-export const getPaymentFlowStepAnalyticsFields = function getPaymentFlowStepAnalyticsFields(basePurchaseAnalytics, arg1) {
+}
+export function getPaymentFlowStepAnalyticsFields(basePurchaseAnalytics, arg1) {
   const obj = {};
   const merged = Object.assign(basePurchaseAnalytics);
   const merged1 = Object.assign(arg1);
   return obj;
-};
-export const getNewAnalyticsLoadId = function getNewAnalyticsLoadId() {
+}
+export function getNewAnalyticsLoadId() {
   const obj = v1;
   return obj.v4();
-};
+}
 export const CancellationFlowSteps = obj;
 export const STEP_ANALYTICS_NAMES = { [obj.WHAT_YOU_LOSE]: "What You're Losing", [obj.DOWNGRADE_TO_TIER_0]: "Downgrade To Tier 0", [obj.CONFIRM]: "Confirm Cancellation", [obj.PREVIEW]: "Preview Updated Subscription", [obj.MOBILE_SUBSCRIPTION_MANAGE]: "Mobile Subscription Manage" };
-export const trackPremiumSubscriptionCancellationStarted = function trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations) {
+export function trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations) {
   let paymentGatewayPlanId;
   let status;
   let tmp5;
@@ -91,8 +91,8 @@ export const trackPremiumSubscriptionCancellationStarted = function trackPremium
   }
   const merged = Object.assign(obj2);
   track(CANCELLATION_FLOW_STARTED, obj);
-};
-export const trackPremiumSubscriptionCancellationFlowStep = function trackPremiumSubscriptionCancellationFlowStep(subscription) {
+}
+export function trackPremiumSubscriptionCancellationFlowStep(subscription) {
   let analyticsLocations;
   let fromStep;
   let paymentGatewayPlanId;
@@ -135,4 +135,4 @@ export const trackPremiumSubscriptionCancellationFlowStep = function trackPremiu
   }
   const merged = Object.assign(obj2);
   track(CANCELLATION_FLOW_STEP, obj);
-};
+}

@@ -1,9 +1,9 @@
-// Module ID: 10138
-// Function ID: 10139
+// Module ID: 10171
+// Function ID: 10172
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 10138 (UploaderQueue)
+// Module 10171 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ class UploaderQueue {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -73,7 +73,7 @@ class UploaderQueue {
                 logger.log("drainQueue() - No uploads left, setting drainingQueue to false");
                 self.drainingQueue = false;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 c3 = 1;
                 logger.log("drainQueue() - start uploader");
@@ -115,7 +115,7 @@ class UploaderQueue {
             }
             closure_129_0.drainQueue();
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp27) {
           closure_2 = tmp27;

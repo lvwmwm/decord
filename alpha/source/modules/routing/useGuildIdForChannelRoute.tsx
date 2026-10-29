@@ -1,15 +1,15 @@
-// Module ID: 5744
-// Function ID: 5745
+// Module ID: 5746
+// Function ID: 5747
 // Name: useGuildIdForChannelRoute
-// Dependencies: [4859, 5035, 1084, 558, 576, 504, 4881, 2]
+// Dependencies: [4860, 5036, 1084, 558, 576, 504, 4882, 2]
 // Exports: getGuildIdForGenericRedirect
 
-// Module 5744 (useGuildIdForChannelRoute)
+// Module 5746 (useGuildIdForChannelRoute)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildId
 const result = size.fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");
 
 export default tmp2;
-export const getGuildIdForGenericRedirect = function getGuildIdForGenericRedirect(channel) {
+export function getGuildIdForGenericRedirect(channel) {
   let guildId;
   const obj = FavoritesUtils;
   if (!obj.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
@@ -70,4 +70,4 @@ export const getGuildIdForGenericRedirect = function getGuildIdForGenericRedirec
     guildId = FAVORITES;
   }
   return guildId;
-};
+}

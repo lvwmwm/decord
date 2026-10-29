@@ -1,21 +1,21 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 19268
+// Function ID: 19269
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 4850, 1389, 1109, 19034, 1084, 21, 5004, 558, 576, 1502, 504, 1264, 1125, 2064, 38, 17651, 6707, 2046, 17673, 5270, 19036, 5280, 7257, 2]
+// Dependencies: [5, 32, 19, 17, 4851, 1389, 1109, 19267, 1084, 21, 5005, 558, 576, 1503, 504, 1264, 1125, 2065, 38, 17889, 6731, 2047, 17911, 5271, 19269, 5281, 7281, 2]
 
-// Module 19035 (ExistingUserAgeGate)
+// Module 19268 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19034 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19267 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4850 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4851 */;
 import UserStore from "UserStore" /* 1389 */;
 import AgeGateConstants from "AgeGateConstants" /* 1109 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -356,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           }
                         } else {
                           try {
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           } catch (tmp9) {
                             c0 = 3;
                             throw tmp9;
@@ -455,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           }
                         } else {
                           try {
@@ -737,7 +737,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -837,7 +837,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

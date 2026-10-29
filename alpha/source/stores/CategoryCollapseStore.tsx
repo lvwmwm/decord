@@ -1,19 +1,19 @@
-// Module ID: 7249
-// Function ID: 7250
+// Module ID: 7273
+// Function ID: 7274
 // Name: CategoryCollapseStore
-// Dependencies: [1243, 4856, 6738, 4934, 1084, 1208, 1385, 4881, 504, 584, 2]
+// Dependencies: [1243, 4857, 6761, 4935, 1084, 1208, 1385, 4882, 504, 584, 2]
 
-// Module 7249 (CategoryCollapseStore)
+// Module 7273 (CategoryCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, set;

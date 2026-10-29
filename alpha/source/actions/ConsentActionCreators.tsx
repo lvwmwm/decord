@@ -1,10 +1,10 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16651
+// Function ID: 16652
 // Name: ConsentActionCreators
 // Dependencies: [1084, 584, 1125, 1294, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 16413 (ConsentActionCreators)
+// Module 16651 (ConsentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
@@ -50,7 +50,7 @@ function handleRequestFailure(status) {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/ConsentActionCreators.tsx");
 
-export const fetchConsents = function fetchConsents() {
+export function fetchConsents() {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const get = HTTP.get;
@@ -61,8 +61,8 @@ export const fetchConsents = function fetchConsents() {
     const error = new Error(body.body.message);
     return reject(error);
   });
-};
-export const setConsents = function setConsents(items, items2) {
+}
+export function setConsents(items, items2) {
   let obj;
   let obj3;
   const HTTP = HTTPUtils.HTTP;
@@ -72,4 +72,4 @@ export const setConsents = function setConsents(items, items2) {
   obj3 = HTTPUtils;
   const postResult = post(request);
   return postResult.then(handleRequestSuccess, handleRequestFailure);
-};
+}

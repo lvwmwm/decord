@@ -5,7 +5,7 @@
 
 // Module 887
 
-export const utf8ToBytes = function utf8ToBytes(str, arg1) {
+export function utf8ToBytes(str, arg1) {
   let tmp = arg1 || Infinity;
   const items = [];
   let num = 0;
@@ -114,4 +114,4 @@ export const utf8ToBytes = function utf8ToBytes(str, arg1) {
     throw error;
   }
   return items;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14480
+// Function ID: 14481
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4853, 21, 4840, 5004, 587, 558, 576, 5270, 1125, 7532, 9874, 2]
+// Dependencies: [32, 19, 17, 4854, 21, 4841, 5005, 587, 558, 576, 5271, 1125, 7555, 9906, 2]
 
-// Module 14244 (ConversationCoachmark)
+// Module 14480 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   const cResult = obj.c(3);
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     const intl = tmp(1125).intl;
     const tmp7 = <Text variant="text-sm/bold" color="text-default">{intl.string(intl3.t.c2GSIl)}</Text>;
     cResult[0] = tmp7;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7532);
+  let obj = first(7555);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9874);
+  const obj2 = first(9906);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

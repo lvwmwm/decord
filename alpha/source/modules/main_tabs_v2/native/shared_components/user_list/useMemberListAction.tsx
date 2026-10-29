@@ -1,29 +1,29 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11382
+// Function ID: 11383
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4856, 4936, 4946, 1389, 10658, 1084, 21, 5004, 558, 576, 573, 11329, 9006, 7180, 11332, 11341, 11342, 1125, 10899, 10898, 5034, 4840, 11344, 11349, 7524, 11350, 1893, 9083, 8987, 9650, 11354, 2403, 6013, 2]
+// Dependencies: [32, 19, 17, 4857, 4937, 4947, 1389, 10691, 1084, 21, 5005, 558, 576, 573, 11383, 9009, 7204, 11386, 11395, 11396, 1125, 10934, 10933, 5035, 4841, 11398, 11403, 7547, 11404, 1894, 9086, 8990, 9682, 11408, 2404, 6015, 2]
 
-// Module 11328 (useMemberListAction)
+// Module 11382 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10658 */;
-import useCanInviteToAnyLinkedGameOrganizationDefault from "useCanInviteToAnyLinkedGameOrganization" /* 11329 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11332 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11344 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11350 */;
-import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11354 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10691 */;
+import useCanInviteToAnyLinkedGameOrganizationDefault from "useCanInviteToAnyLinkedGameOrganization" /* 11383 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11386 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11398 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11404 */;
+import openGameOrganizationInvitePickerDefault from "openGameOrganizationInvitePicker" /* 11408 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore_mod from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore_mod from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "useCallback", listActionHeight: "PX_16" };
+let closure_16 = { listActionRenderer: "Array", listActionHeight: "Reflect" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMemberListAction(channel) {

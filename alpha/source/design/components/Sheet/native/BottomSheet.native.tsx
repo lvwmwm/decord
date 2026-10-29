@@ -1,28 +1,28 @@
-// Module ID: 5301
-// Function ID: 5302
+// Module ID: 5302
+// Function ID: 5303
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 5302, 21, 5004, 587, 1381, 558, 576, 1630, 5303, 5304, 5305, 5294, 1104, 5085, 5616, 5018, 5617, 5299, 5618, 5619, 5628, 1496, 5182, 5633, 5070, 2]
+// Dependencies: [32, 109, 19, 17, 5303, 21, 5005, 587, 1381, 558, 576, 1631, 5304, 5305, 5306, 5295, 1104, 5086, 5617, 5019, 5618, 5300, 5619, 5620, 5629, 1497, 5183, 5634, 5071, 2]
 
-// Module 5301 (Sheet/BottomSheet)
+// Module 5302 (Sheet/BottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5182 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import reactDefault from "react" /* 5616 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5618 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5619 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5183 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import reactDefault from "react" /* 5617 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5619 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const ConstantsIOS = tmp(1104);
-const useIsScreenReaderEnabled = tmp(5303);
-const NavigatorConstants = tmp(5304);
-const BottomSheetModalDefault = tmp2(5305);
-const NavScrim = tmp2(5628);
+const useIsScreenReaderEnabled = tmp(5304);
+const NavigatorConstants = tmp(5305);
+const BottomSheetModalDefault = tmp2(5306);
+const NavScrim = tmp2(5629);
 let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize", "ref"];
 let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent", "ref"];
 let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight", "ref"];
@@ -346,11 +346,11 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     const tmp2Result = BottomSheetModalDefault;
     const merged1 = Object.assign(merged);
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(5304).NAV_BAR_HEIGHT_MULTILINE - top;
+      maxDynamicContentSize = height - tmp4(5305).NAV_BAR_HEIGHT_MULTILINE - top;
     }
     obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: closure_20(authStore, obj5) };
     obj5 = { onLayout: callback, style: wrapperStyle, children };
-    BottomSheetScrollView = tmp4(5305).BottomSheetScrollView;
+    BottomSheetScrollView = tmp4(5306).BottomSheetScrollView;
     return closure_20(tmp2Result, obj3);
   }
   items = [];
@@ -975,7 +975,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
   let closure_12 = onLeave.useRef(false);
   ref = onLeave.useRef(true);
-  onLeave.useContext(tmp(5018).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
+  onLeave.useContext(tmp(5019).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
   if (cResult[26] === tmp15) {
     let tmp42;
     let tmp43;
@@ -984,7 +984,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       tmp43 = cResult[29];
     }
     const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
-    let tmpResult = tmp(5617);
+    let tmpResult = tmp(5618);
     const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(tmp12, ref1);
     if (cResult[30] === close) {
       let tmp46;
@@ -999,7 +999,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         if (cResult[35] === onLeave) {
           tmp49 = cResult[36];
         }
-        const tmpResult4 = tmp(5299);
+        const tmpResult4 = tmp(5300);
         const unmountEffect = tmpResult4.useUnmountEffect(tmp49);
         if (cResult[37] !== close) {
           function ie(arg0, arg1, arg2, arg3, arg4) {
@@ -1052,9 +1052,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         ke.__closure = obj3;
         ke.__workletHash = 4341912681188;
         ke.__initData = __initData;
-        const tmpResult5 = tmp(5085);
+        const tmpResult5 = tmp(5086);
         const derivedValue = tmpResult5.useDerivedValue(ke);
-        const tmpResult6 = tmp(5085);
+        const tmpResult6 = tmp(5086);
         class Be {
           constructor() {
             return derivedValue.get();
@@ -1074,10 +1074,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
           }
         }
         const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-        De.__closure = { transitionState, runOnJS: tmp(5085).runOnJS, onLeave };
+        De.__closure = { transitionState, runOnJS: tmp(5086).runOnJS, onLeave };
         De.__workletHash = 1921852093213;
         De.__initData = __initData3;
-        const obj5 = { transitionState, runOnJS: tmp(5085).runOnJS, onLeave };
+        const obj5 = { transitionState, runOnJS: tmp(5086).runOnJS, onLeave };
         const animatedReaction = useAnimatedReaction(Be, De);
         if (cResult[41] !== tmp22) {
           class Oe {
@@ -1341,7 +1341,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
                       const obj6 = { children: closure_21(ref1, obj7) };
                       obj7 = { style: tmp75, children: items };
                       items = [tmp76, tmp80];
-                      const LayerScope = tmp(5633).LayerScope;
+                      const LayerScope = tmp(5634).LayerScope;
                       cResult[67] = tmp75;
                       cResult[68] = tmp76;
                       const tmp88 = closure_20(LayerScope, obj6);

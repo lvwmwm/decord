@@ -1,11 +1,11 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12582
+// Function ID: 12583
 // Name: conjureSecretsRequests
-// Dependencies: [5, 10830, 2]
+// Dependencies: [5, 10906, 2]
 // Exports: submitProjectSecrets
 
-// Module 12527 (conjureSecretsRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10830 */;
+// Module 12582 (conjureSecretsRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _submitProjectSecrets() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _submitProjectSecrets() {
               throw new closure_131_3("secret request expired");
             } else if (closure_0.ok) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -87,6 +87,6 @@ class ConjureSecretRequestExpiredError extends Error {
 const result = size.fileFinishedImporting("modules/conjure/secrets/conjureSecretsRequests.tsx");
 
 export { ConjureSecretRequestExpiredError };
-export const submitProjectSecrets = function submitProjectSecrets() {
+export function submitProjectSecrets() {
   return obj(...arguments);
-};
+}

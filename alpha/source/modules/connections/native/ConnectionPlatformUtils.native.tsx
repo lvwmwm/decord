@@ -1,10 +1,10 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16760
+// Function ID: 16761
 // Name: ConnectionPlatformUtils
 // Dependencies: [1084, 587, 2]
 // Exports: getConnectionBackgroundColor
 
-// Module 16522 (ConnectionPlatformUtils)
+// Module 16760 (ConnectionPlatformUtils)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -32,6 +32,6 @@ const obj = { [CRUNCHYROLL]: nativeDefault.unsafe_rawColors.PLATFORM_CRUNCHYROLL
 ({ CRUNCHYROLL, PLAYSTATION_STAGING, PLAYSTATION, GITHUB, SAMSUNG, XBOX, SPOTIFY, TWITTER_LEGACY, TWITTER, FACEBOOK, REDDIT, STEAM, LEAGUE_OF_LEGENDS, SKYPE, BUNGIE, BATTLENET, YOUTUBE, TWITCH } = PlatformTypes);
 const result = size.fileFinishedImporting("modules/connections/native/ConnectionPlatformUtils.native.tsx");
 
-export const getConnectionBackgroundColor = function getConnectionBackgroundColor(type) {
+export function getConnectionBackgroundColor(type) {
   return obj[type];
-};
+}

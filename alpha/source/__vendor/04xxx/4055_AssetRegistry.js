@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/riot_credit_campaign", scales: [1], hash: "e3268bd141917880c9b07e45ce47ffee", name: "RiotCreditCampaign.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "fe4b0feaa80e10ddbb962a9e691dd15e", name: "zh-TW.messages.fe4b0feaa80e10ddbb962a9e691dd15e.compiled.messages", type: "jsona" });

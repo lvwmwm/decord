@@ -1,17 +1,17 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 18207
+// Function ID: 18208
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7620, 6531, 1084, 558, 576, 5186, 5187, 1120, 2]
+// Dependencies: [32, 19, 7643, 6555, 1084, 558, 576, 5187, 5188, 1120, 2]
 
-// Module 17969 (useShouldRenderChannelList)
+// Module 18207 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7620 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
+import CacheStore from "CacheStore" /* 7643 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,10 +35,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F155228 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F155229 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F155230 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F155231 */ };
+          allowRender = function allowRender() { /* body not rendered: F156865 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F156866 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F156867 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F156868 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F155232 */ };
+          return function() { /* body not rendered: F156869 */ };
         }
       }
     }
@@ -85,10 +85,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F155228 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F155229 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F155230 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F155231 */ };
+          allowRender = function allowRender() { /* body not rendered: F156865 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F156866 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F156867 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F156868 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F155232 */ };
+          return function() { /* body not rendered: F156869 */ };
         }
       }
     }

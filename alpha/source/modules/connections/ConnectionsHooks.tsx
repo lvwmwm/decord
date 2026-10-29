@@ -1,18 +1,18 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7670
+// Function ID: 7671
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 6535, 1389, 1084, 7648, 1101, 558, 576, 504, 7650, 12, 6537, 2]
+// Dependencies: [32, 19, 6559, 1389, 1084, 7671, 1101, 558, 576, 504, 7673, 12, 6561, 2]
 // Exports: useLegacyPlatformType
 
-// Module 7647 (ConnectionsHooks)
+// Module 7670 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import PlatformsDefault from "Platforms" /* 6537 */;
-import KeyboardConstants from "KeyboardConstants" /* 7648 */;
+import PlatformsDefault from "Platforms" /* 6561 */;
+import KeyboardConstants from "KeyboardConstants" /* 7671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -268,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlatforms
   const sortBy = set(12).sortBy;
   set(12);
   const items1 = [tmp14, tmp15, tmp16, tmp17, tmp18];
-  const arr3 = set(6537);
+  const arr3 = set(6561);
   const sortByResult = sortBy(arr3.filter(tmp8), items1);
   cResult[5] = tmp9;
   cResult[6] = tmp8;
@@ -394,7 +394,7 @@ const result = size.fileFinishedImporting("modules/connections/ConnectionsHooks.
 export const usePlatformAllowed = tmp4;
 export const usePlatforms = tmp5;
 export const useEmptyStatePlatforms = tmp7;
-export const useLegacyPlatformType = function useLegacyPlatformType(arg0) {
+export function useLegacyPlatformType(arg0) {
   let require;
   let tmp2;
   function handleKeyDown(key) {
@@ -425,4 +425,4 @@ export const useLegacyPlatformType = function useLegacyPlatformType(arg0) {
     }
   }
   return TWITTER_LEGACY;
-};
+}

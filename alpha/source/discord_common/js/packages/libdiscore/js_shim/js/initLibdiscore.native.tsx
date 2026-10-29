@@ -24,7 +24,7 @@ let obj = function _initLibdiscore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -38,7 +38,7 @@ let obj = function _initLibdiscore() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp3) {
         c0 = 3;
@@ -53,9 +53,9 @@ let timers = timers_mod;
 timers = timers.registerTimerPolyfills();
 const result1 = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/initLibdiscore.native.tsx");
 
-export const isLibdiscoreInitialized = function isLibdiscoreInitialized() {
+export function isLibdiscoreInitialized() {
   return undefined !== NativeModules.LibDiscoreModule;
-};
-export const initLibdiscore = function initLibdiscore() {
+}
+export function initLibdiscore() {
   return obj(...arguments);
-};
+}

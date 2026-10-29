@@ -1,10 +1,10 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14656
+// Function ID: 14657
 // Name: ServerTagUpsellOnProfileExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 14422 (ServerTagUpsellOnProfileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 14656 (ServerTagUpsellOnProfileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

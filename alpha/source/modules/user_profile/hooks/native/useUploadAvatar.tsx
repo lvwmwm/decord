@@ -1,12 +1,12 @@
-// Module ID: 16200
-// Function ID: 16201
+// Module ID: 16437
+// Function ID: 16438
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1389, 1084, 1391, 558, 576, 573, 9706, 5246, 8186, 2050, 16104, 8695, 8693, 8690, 8692, 2]
+// Dependencies: [5, 19, 1389, 1084, 1391, 558, 576, 573, 9738, 5247, 8209, 2051, 16340, 8698, 8696, 8693, 8695, 2]
 
-// Module 16200 (useUploadAvatar)
+// Module 16437 (useUploadAvatar)
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9706 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9738 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -176,7 +176,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp40) {
         c3 = 3;
@@ -232,7 +232,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp40) {
         c3 = 3;

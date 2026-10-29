@@ -1,13 +1,13 @@
-// Module ID: 7192
-// Function ID: 7193
+// Module ID: 7216
+// Function ID: 7217
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7193, 5001, 558, 576, 2]
+// Dependencies: [19, 17, 7217, 5002, 558, 576, 2]
 
-// Module 7192 (useFastestListPropsPlaceholder)
+// Module 7216 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 5001 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7193 */;
+import ColorUtils from "ColorUtils" /* 5002 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7217 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "ddd", borderTopRightRadius: "ix", borderBottomLeftRadius: "__closure", borderBottomRightRadius: "status", divider: "ix", dividerColor: "size", dividerPaddingLeft: "getGuild", dividerPaddingRight: "unicodeVersion", placeholderShape: "unicodeVersion", placeholderShapeColor: "nm", placeholderShapeCount: "ix", placeholderShapeGap: "nm", placeholderShapePaddingHorizontal: "raw", placeholderShapePaddingVertical: "ix", placeholderFeedBackgroundColor: "source", placeholderFeedColor: "getGuild", placeholderFeedLabelPadding: "ix", placeholderFeedLabelPaddingInnerRatio: "replace", placeholderFeedLabelSize: "getGuild", placeholderFeedLabelSecondarySize: "format", placeholderFeedPadding: "p", placeholderFeedShape: "Reflect", placeholderFeedShapeSize: "r", placeholderType: NONE, width: 172, height: false, verticalAlignment: false, horizontalAlignment: null };
+  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "enumerable", borderBottomLeftRadius: "channelId", borderBottomRightRadius: "to", divider: "toCharArray$esjava$1", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "channel_id", dividerPaddingRight: "to", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "toCharArray$esjava$1", placeholderShapeCount: "id", placeholderShapeGap: "to", placeholderShapePaddingHorizontal: "toCharArray$esjava$1", placeholderShapePaddingVertical: "toCharArray$esjava$1", placeholderFeedBackgroundColor: "children", placeholderFeedColor: "to", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "toCharArray$esjava$1", placeholderFeedLabelSize: "cix", placeholderFeedLabelSecondarySize: "to", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "toCharArray$esjava$1", placeholderFeedShapeSize: "ix", placeholderType: NONE, width: null, height: "MESSAGE_SEND_FAILED", verticalAlignment: "toCharArray$esjava$1", horizontalAlignment: "SEND_FAILED" };
   if (null == listFooter) {
     return size;
   } else {

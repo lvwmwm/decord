@@ -1,15 +1,15 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8227
+// Function ID: 8228
 // Name: utils/TimeUtils
 // Dependencies: [2]
 // Exports: getTimeFormat
 
-// Module 8205 (utils/TimeUtils)
+// Module 8227 (utils/TimeUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/native/TimeUtils.tsx");
 
-export const getTimeFormat = function getTimeFormat(playableDuration, padMinutes) {
+export function getTimeFormat(playableDuration, padMinutes) {
   padMinutes = undefined;
   if (padMinutes != null) {
     padMinutes = padMinutes.padMinutes;
@@ -32,4 +32,4 @@ export const getTimeFormat = function getTimeFormat(playableDuration, padMinutes
   const StringResult2 = String(result1);
   const StringResult3 = String(result);
   combined = "" + StringResult2 + ":" + StringResult3.padStart(2, "0");
-};
+}

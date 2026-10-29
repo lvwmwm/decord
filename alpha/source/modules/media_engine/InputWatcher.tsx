@@ -1,11 +1,11 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15875
+// Function ID: 15876
 // Name: InputWatcher
-// Dependencies: [32, 5, 6678, 4, 4851, 5775, 1382, 15579, 4818, 6902, 584, 2]
+// Dependencies: [32, 5, 6702, 4, 4852, 5777, 1382, 15814, 4819, 6926, 584, 2]
 
-// Module 15639 (InputWatcher)
+// Module 15875 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 6678 */;
+import Constants from "Constants" /* 6702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/media_engine/InputWatcher.tsx
 class InputWatcher {
   constructor(mediaEngine, mediaEngineStore) {
     let obj = Object.create(new.target.prototype);
-    const timeout = new obj(4851).Timeout();
+    const timeout = new obj(4852).Timeout();
     obj.stateChangeTimeout = timeout;
     obj.inputDetected = undefined;
     obj.lastUpdateTime = performance.now();
@@ -36,7 +36,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let closure_2;
@@ -136,7 +136,7 @@ class InputWatcher {
             _Promise.dispatch(obj);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp42) {
           closure_2 = tmp42;
           if (0 === osVolume) {
@@ -170,7 +170,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class InputWatcher {
             const obj2 = c1(inputDetected[10]);
             obj2.dispatch(obj6);
             inputDetected = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp11) {
             inputDetected = 3;
             throw tmp11;
@@ -219,7 +219,7 @@ class InputWatcher {
     obj.mediaEngine = mediaEngine;
     obj.mediaEngineStore = mediaEngineStore;
     mediaEngine = obj.mediaEngine;
-    mediaEngine.on(obj(5775).MediaEngineEvent.Silence, obj.handleSilence);
+    mediaEngine.on(obj(5777).MediaEngineEvent.Silence, obj.handleSilence);
     return obj;
   }
   reset() {

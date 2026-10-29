@@ -89,7 +89,7 @@ let entry = { key: "pushRichTextTag", value: pushRichTextTag };
 items = [entry, { key: "pushLiteralText", value: pushLiteralText }, { key: "pushObject", value: pushObject }, { key: "finish", value: finish }];
 
 export { formatReact };
-export const makeReactFormatter = function makeReactFormatter(arg0) {
+export function makeReactFormatter(arg0) {
   let _class;
   let closure_0;
   let items;
@@ -117,7 +117,7 @@ export const makeReactFormatter = function makeReactFormatter(arg0) {
   const entry = { key: "pushRichTextTag", value: pushRichTextTag };
   items = [entry, { key: "pushLiteralText", value: pushLiteralText }, { key: "pushObject", value: pushObject }, { key: "finish", value: finish }];
   return obj;
-};
+}
 export const DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
   $b(arg0, key) {
     return <strong key={arg1}>{arg0}</strong>;

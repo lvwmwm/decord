@@ -1,13 +1,13 @@
-// Module ID: 17535
-// Function ID: 17536
+// Module ID: 17773
+// Function ID: 17774
 // Name: PinotMemberSettingState
-// Dependencies: [15331, 4836, 1239, 558, 576, 504, 2]
+// Dependencies: [15566, 4837, 1239, 558, 576, 504, 2]
 
-// Module 17535 (PinotMemberSettingState)
+// Module 17773 (PinotMemberSettingState)
 import react from "react" /* 576 */;
 import wrappers from "wrappers" /* 1239 */;
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 15331 */;
-import UserSettingDefinitions from "UserSettingDefinitions" /* 4836 */;
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 15566 */;
+import UserSettingDefinitions from "UserSettingDefinitions" /* 4837 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

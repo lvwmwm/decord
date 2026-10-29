@@ -1,26 +1,26 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8720
+// Function ID: 8721
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [8718, 7239, 7767, 6677, 4916, 5748, 4946, 1389, 7738, 8709, 1084, 1095, 1414, 8712, 1264, 5747, 8724, 2]
+// Dependencies: [8721, 7263, 7789, 6701, 4917, 5750, 4947, 1389, 7760, 8712, 1084, 1095, 1415, 8715, 1264, 5749, 8727, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8717 (UserProfileAnalyticsUtils)
+// Module 8720 (UserProfileAnalyticsUtils)
 import Constants2 from "Constants" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7239 */;
-import Constants3 from "Constants" /* 8709 */;
-import useDisplayProfile from "useDisplayProfile" /* 8712 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 8724 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8718 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7767 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7263 */;
+import Constants3 from "Constants" /* 8712 */;
+import useDisplayProfile from "useDisplayProfile" /* 8715 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 8727 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8721 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -306,7 +306,7 @@ const StatusTypes = Constants2.StatusTypes;
 let result = size.fileFinishedImporting("modules/user_profile/UserProfileAnalyticsUtils.tsx");
 
 export { getProfileProperties };
-export const getUserStatus = function getUserStatus(id) {
+export function getUserStatus(id) {
   let combined;
   const status = PresenceStore.getStatus(id);
   const tmp2 = StatusTypes;
@@ -322,8 +322,8 @@ export const getUserStatus = function getUserStatus(id) {
     const _HermesInternal = HermesInternal;
     combined = "" + status + "-desktop";
   }
-};
-export const getActivityType = function getActivityType(arg0) {
+}
+export function getActivityType(arg0) {
   let tmp = arg0;
   if (null != arg0) {
     let str = "VOICE";
@@ -337,8 +337,8 @@ export const getActivityType = function getActivityType(arg0) {
     tmp = str;
   }
   return tmp;
-};
-export const getTrackUserRelationshipProperties = function getTrackUserRelationshipProperties(userId) {
+}
+export function getTrackUserRelationshipProperties(userId) {
   let communicationRank;
   let length;
   let prop;
@@ -363,9 +363,9 @@ export const getTrackUserRelationshipProperties = function getTrackUserRelations
     }
     return obj;
   }
-};
+}
 export { trackUserProfileAction };
-export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiViewed(userId) {
+export function maybeTrackUserProfileUiViewed(userId) {
   let analyticsLocations;
   let channelId;
   let communicationRank;
@@ -436,8 +436,8 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
       track(USER_PROFILE_UI_VIEWED, obj2);
     }
   }
-};
-export const trackUserProfileActivityJoined = function trackUserProfileActivityJoined(userId) {
+}
+export function trackUserProfileActivityJoined(userId) {
   let activityName;
   let activityPlatform;
   let activitySessionId;
@@ -501,8 +501,8 @@ export const trackUserProfileActivityJoined = function trackUserProfileActivityJ
     str = tmp9;
   }
   track(USER_PROFILE_ACTIVITY_JOINED, obj);
-};
-export const trackUserProfileActivityAction = function trackUserProfileActivityAction(userId) {
+}
+export function trackUserProfileActivityAction(userId) {
   let action;
   let activity;
   let analyticsLocations;
@@ -611,8 +611,8 @@ export const trackUserProfileActivityAction = function trackUserProfileActivityA
     mapped1 = entries1.map((author_id) => author_id.author_id);
   }
   track(USER_PROFILE_ACTIVITY_ACTION, obj);
-};
-export const trackUserProfileBadgeAction = function trackUserProfileBadgeAction(userId) {
+}
+export function trackUserProfileBadgeAction(userId) {
   let analyticsLocations;
   let badgeAction;
   let badgeId;
@@ -667,8 +667,8 @@ export const trackUserProfileBadgeAction = function trackUserProfileBadgeAction(
   }
   const merged3 = Object.assign(obj4);
   track(USER_PROFILE_BADGE_ACTION, obj);
-};
-export const trackDmProfileToggled = function trackDmProfileToggled(displayProfile) {
+}
+export function trackDmProfileToggled(displayProfile) {
   let _Boolean;
   let hasThemeColorsResult;
   let large_image;
@@ -729,8 +729,8 @@ export const trackDmProfileToggled = function trackDmProfileToggled(displayProfi
     prop = displayProfile.popoutAnimationParticleType;
   }
   track(DM_PROFILE_TOGGLED, obj);
-};
-export const trackUserProfileEditAction = function trackUserProfileEditAction(dependencyMap) {
+}
+export function trackUserProfileEditAction(dependencyMap) {
   let action;
   let analyticsLocations;
   let applicationId;
@@ -766,8 +766,8 @@ export const trackUserProfileEditAction = function trackUserProfileEditAction(de
   }
   const merged4 = Object.assign(obj5);
   track(USER_PROFILE_EDIT_ACTION, obj2);
-};
-export const trackUserProfileEditSaved = function trackUserProfileEditSaved(dependencyMap) {
+}
+export function trackUserProfileEditSaved(dependencyMap) {
   let analyticsLocations;
   let channelId;
   let gameIds;
@@ -790,8 +790,8 @@ export const trackUserProfileEditSaved = function trackUserProfileEditSaved(depe
   const merged2 = Object.assign(obj4.collectChannelAnalyticsMetadataFromId(channelId));
   const merged3 = Object.assign(getTrackUserProfileProperties(dependencyMap));
   track(USER_PROFILE_EDIT_SAVED, obj2);
-};
-export const trackUserProfileWishlistAction = function trackUserProfileWishlistAction(dependencyMap) {
+}
+export function trackUserProfileWishlistAction(dependencyMap) {
   let action;
   let analyticsLocations;
   let channelId;
@@ -821,4 +821,4 @@ export const trackUserProfileWishlistAction = function trackUserProfileWishlistA
     items = [];
   }
   track(USER_PROFILE_WISHLIST_ACTION, obj2);
-};
+}

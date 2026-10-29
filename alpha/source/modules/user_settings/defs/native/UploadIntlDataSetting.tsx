@@ -1,22 +1,22 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17409
+// Function ID: 17410
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1084, 21, 570, 1271, 558, 576, 1380, 1129, 1163, 1125, 1381, 1294, 5699, 5722, 11248, 12320, 16400, 2]
+// Dependencies: [5, 17, 1084, 21, 570, 1271, 558, 576, 1380, 1129, 1163, 1125, 1381, 1294, 5701, 5724, 11302, 12374, 16638, 2]
 
-// Module 17170 (UploadIntlDataSetting)
+// Module 17409 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1129 */;
 import AssetRegistry from "AssetRegistry" /* 1163 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import FileUpIcon from "FileUpIcon" /* 12320 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16400 */;
+import FileUpIcon from "FileUpIcon" /* 12374 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16638 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -43,7 +43,7 @@ let obj = function _serializeIntlData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let tmp32;
@@ -176,7 +176,7 @@ obj = function _handleUploadIntlDataSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -262,7 +262,7 @@ obj = function _handleUploadIntlDataSettingPress() {
           c3 = 0;
           onUploadIntlDataRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp28) {
         url = tmp28;

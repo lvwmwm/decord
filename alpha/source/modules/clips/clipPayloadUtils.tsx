@@ -1,15 +1,15 @@
-// Module ID: 8179
-// Function ID: 8180
+// Module ID: 8202
+// Function ID: 8203
 // Name: clipPayloadUtils
-// Dependencies: [32, 8180, 1084, 5754, 8181, 1264, 2]
+// Dependencies: [32, 8203, 1084, 5756, 8204, 1264, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 8179 (clipPayloadUtils)
+// Module 8202 (clipPayloadUtils)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Constants2 from "Constants" /* 5754 */;
+import Constants2 from "Constants" /* 5756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ClipsConstants from "ClipsConstants" /* 8180 */;
+import ClipsConstants from "ClipsConstants" /* 8203 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,11 +27,11 @@ const ServerClipGameEventType = { UNKNOWN: 0, [0]: "UNKNOWN", KILL: 1, [1]: "KIL
 let obj2 = { UNKNOWN: 0, [0]: "UNKNOWN", LAUGHTER: 1, [1]: "LAUGHTER", SHOUTING: 2, [2]: "SHOUTING" };
 let result = size.fileFinishedImporting("modules/clips/clipPayloadUtils.tsx");
 
-export const getClipCreatedAt = function getClipCreatedAt(createdAt) {
+export function getClipCreatedAt(createdAt) {
   const date = new Date(createdAt);
   return date.toISOString();
-};
-export const getClipSyncTimestamp = function getClipSyncTimestamp(clip) {
+}
+export function getClipSyncTimestamp(clip) {
   if (null != clip.syncTimestamp) {
     let length;
     const editMetadata = clip.editMetadata;
@@ -50,13 +50,13 @@ export const getClipSyncTimestamp = function getClipSyncTimestamp(clip) {
     const date = new Date(clip.syncTimestamp - (clip.length - length));
     return date.toISOString();
   }
-};
-export const getClipParticipantIds = function getClipParticipantIds(users) {
+}
+export function getClipParticipantIds(users) {
   return users.slice(0, React3);
-};
+}
 export { ServerClipGameEventType };
 export const ServerClipEmotionType = obj2;
-export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
+export function getClipEventsTimeline(clip) {
   let closure_1;
   _require = clip;
   const timeline = clip.timeline;
@@ -247,4 +247,4 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       num2 = 0;
     }
   }
-};
+}

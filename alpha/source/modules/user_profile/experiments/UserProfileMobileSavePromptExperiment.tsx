@@ -1,11 +1,11 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11165
+// Function ID: 11166
 // Name: UserProfileMobileSavePromptExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getIsUserProfileMobileSavePromptEnabled
 
-// Module 11111 (UserProfileMobileSavePromptExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11165 (UserProfileMobileSavePromptExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileMobileSavePromptExperiment.tsx");
 
-export const getIsUserProfileMobileSavePromptEnabled = function getIsUserProfileMobileSavePromptEnabled(location) {
+export function getIsUserProfileMobileSavePromptEnabled(location) {
   const obj = { location };
   return config.getConfig(obj).enabled;
-};
+}

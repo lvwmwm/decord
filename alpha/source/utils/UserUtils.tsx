@@ -1,14 +1,14 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5059
+// Function ID: 5060
 // Name: UserUtils
-// Dependencies: [5059, 1389, 1084, 558, 576, 504, 1125, 2]
+// Dependencies: [5060, 1389, 1084, 558, 576, 504, 1125, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useName
 
-// Module 5058 (UserUtils)
+// Module 5059 (UserUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl7 from "intl" /* 1125 */;
-import StreamerModeStore from "StreamerModeStore" /* 5059 */;
+import StreamerModeStore from "StreamerModeStore" /* 5060 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -456,7 +456,7 @@ export { getGlobalName };
 export { getFormattedName };
 export { humanizeStatus };
 export { accountAgeInRange };
-export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(stateFromStores) {
+export function ageEligibleForPremiumUpsell(stateFromStores) {
   let flag = false;
   if (null != stateFromStores) {
     const _Date = Date;
@@ -467,8 +467,8 @@ export const ageEligibleForPremiumUpsell = function ageEligibleForPremiumUpsell(
     const tmp5 = diff <= c6 * 30 && diff >= 0;
   }
   return !flag;
-};
-export const isNewUser = function isNewUser(createdAt) {
+}
+export function isNewUser(createdAt) {
   let flag = false;
   if (null != createdAt) {
     const _Date = Date;
@@ -479,7 +479,7 @@ export const isNewUser = function isNewUser(createdAt) {
     const tmp5 = diff <= c6 * 7 && diff >= 0;
   }
   return flag;
-};
+}
 export { getUserTag };
 export const useUserTag = tmp3;
 export const useDirectMessageRecipient = tmp4;

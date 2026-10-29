@@ -349,7 +349,7 @@ const map = new Map();
 export const MAX_PROFILE_DURATION_MS = 30000;
 export const PROFILER_THREAD_ID_STRING = StringResult;
 export const PROFILER_THREAD_NAME = str;
-export const addProfileToGlobalCache = function addProfileToGlobalCache(arg0, result) {
+export function addProfileToGlobalCache(arg0, result) {
   result = map.set(arg0, result);
   if (map.size > 30) {
     const iter = map.keys();
@@ -358,8 +358,8 @@ export const addProfileToGlobalCache = function addProfileToGlobalCache(arg0, re
       map.delete(value);
     }
   }
-};
-export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) {
+}
+export function addProfilesToEnvelope(arg0, arg1) {
   if (arg1.length) {
     const tmp2 = arg1[Symbol.iterator]();
     while (tmp2 !== undefined) {
@@ -372,9 +372,9 @@ export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) 
   } else {
     return arg0;
   }
-};
+}
 export { applyDebugMetadata };
-export const attachProfiledThreadToEvent = function attachProfiledThreadToEvent(contexts) {
+export function attachProfiledThreadToEvent(contexts) {
   let obj2;
   let profile;
   if (contexts != null) {
@@ -422,9 +422,9 @@ export const attachProfiledThreadToEvent = function attachProfiledThreadToEvent(
     }
   }
   return contexts;
-};
+}
 export { convertJSSelfProfileToSampledFormat };
-export const createProfileChunkPayload = function createProfileChunkPayload(frames, _client, _profilerId) {
+export function createProfileChunkPayload(frames, _client, _profilerId) {
   let obj5;
   let obj8;
   let obj9;
@@ -560,9 +560,9 @@ export const createProfileChunkPayload = function createProfileChunkPayload(fram
     }
     return obj7;
   }
-};
+}
 export { createProfilePayload };
-export const createProfilingEvent = function createProfilingEvent(event_id, arg1, samples, type) {
+export function createProfilingEvent(event_id, arg1, samples, type) {
   let flag;
   if (samples.samples.length < 2) {
     flag = false;
@@ -589,9 +589,9 @@ export const createProfilingEvent = function createProfilingEvent(event_id, arg1
     tmp7 = createProfilePayload(event_id, arg1, samples, type);
   }
   return tmp7;
-};
+}
 export { enrichWithThreadInformation };
-export const findProfiledTransactionsFromEnvelope = function findProfiledTransactionsFromEnvelope(arg0) {
+export function findProfiledTransactionsFromEnvelope(arg0) {
   const items = [];
   const obj = _mod693;
   obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
@@ -616,19 +616,19 @@ export const findProfiledTransactionsFromEnvelope = function findProfiledTransac
     }
   });
   return items;
-};
-export const getActiveProfilesCount = function getActiveProfilesCount() {
+}
+export function getActiveProfilesCount() {
   return map.size;
-};
-export const hasLegacyProfiling = function hasLegacyProfiling(options) {
+}
+export function hasLegacyProfiling(options) {
   return undefined !== options.profilesSampleRate;
-};
-export const isAutomatedPageLoadSpan = function isAutomatedPageLoadSpan(rootSpan) {
+}
+export function isAutomatedPageLoadSpan(rootSpan) {
   const obj = _mod693;
   return "pageload" === obj.spanToJSON(rootSpan).op;
-};
+}
 export { isValidSampleRate };
-export const shouldProfileSession = function shouldProfileSession(options) {
+export function shouldProfileSession(options) {
   const tmp = c14;
   if (tmp) {
     const tmp14 = require;
@@ -676,8 +676,8 @@ export const shouldProfileSession = function shouldProfileSession(options) {
     }
     return flag;
   }
-};
-export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan) {
+}
+export function shouldProfileSpanLegacy(rootSpan) {
   const tmp = c14;
   if (tmp) {
     const tmp16 = require;
@@ -748,8 +748,8 @@ export const shouldProfileSpanLegacy = function shouldProfileSpanLegacy(rootSpan
     }
     return false;
   }
-};
-export const startJSSelfProfile = function startJSSelfProfile() {
+}
+export function startJSSelfProfile() {
   function isJSProfilerSupported(Profiler) {
     return typeof Profiler === "function";
   }
@@ -775,16 +775,16 @@ export const startJSSelfProfile = function startJSSelfProfile() {
     const debug = tmp(693).debug;
     debug.log("[Profiling] Profiling is not supported by this browser, Profiler interface missing on window object.");
   }
-};
-export const takeProfileFromGlobalCache = function takeProfileFromGlobalCache(arg0) {
+}
+export function takeProfileFromGlobalCache(arg0) {
   const value = map.get(arg0);
   const obj = map;
   if (value) {
     obj.delete(arg0);
   }
   return value;
-};
-export const validateProfileChunk = function validateProfileChunk(profiler_id) {
+}
+export function validateProfileChunk(profiler_id) {
   try {
     const tmp = profiler_id;
     if (tmp) {
@@ -850,4 +850,4 @@ export const validateProfileChunk = function validateProfileChunk(profiler_id) {
     const obj5 = { reason: "unknown validation error: " + tmp10 };
     return obj5;
   }
-};
+}

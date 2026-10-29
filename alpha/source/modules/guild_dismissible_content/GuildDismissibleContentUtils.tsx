@@ -1,15 +1,15 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13886
+// Function ID: 13887
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1243, 1084, 4853, 1094, 4839, 558, 576, 504, 4837, 1264, 4840, 2]
+// Dependencies: [1243, 1084, 4854, 1094, 4840, 558, 576, 504, 4838, 1264, 4841, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed
 
-// Module 13653 (GuildDismissibleContentUtils)
+// Module 13886 (GuildDismissibleContentUtils)
 import Constants from "Constants" /* 1084 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4839 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ let result = size.fileFinishedImporting("modules/guild_dismissible_content/Guild
 
 export { isContentDismissed };
 export const useIsContentDismissed = tmp2;
-export const markContentAsDismissed = function markContentAsDismissed(dc, guildId, arg2, AUTO_DISMISS) {
+export function markContentAsDismissed(dc, guildId, arg2, AUTO_DISMISS) {
   let c0;
   _require = true;
   importDefault = dc;
@@ -110,7 +110,7 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
   const tmp4 = arg2;
   if (tmp4) {
     let UNKNOWN = AUTO_DISMISS;
-    const obj2 = { type: tmp(4840).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
+    const obj2 = { type: tmp(4841).DismissibleGuildContent[dc], guild_id: guildId, action: UNKNOWN };
     const track = AnalyticsUtilsDefault.track;
     const DISMISSIBLE_CONTENT_DISMISSED = AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED;
     AnalyticsUtilsDefault;
@@ -119,8 +119,8 @@ export const markContentAsDismissed = function markContentAsDismissed(dc, guildI
     }
     track(DISMISSIBLE_CONTENT_DISMISSED, obj2);
   }
-};
-export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, guildId) {
+}
+export function unmarkContentAsDismissed(dc, guildId) {
   let c0;
   _require = false;
   let closure_1 = dc;
@@ -139,4 +139,4 @@ export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, gu
     }
     return false;
   }, UserSettingsDelay.FREQUENT_USER_ACTION);
-};
+}

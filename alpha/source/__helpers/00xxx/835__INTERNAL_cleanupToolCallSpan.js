@@ -38,15 +38,15 @@ function convertPromptToMessages(data) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const _INTERNAL_cleanupToolCallSpan = function _INTERNAL_cleanupToolCallSpan(arg0) {
+export function _INTERNAL_cleanupToolCallSpan(arg0) {
   const toolCallSpanMap = EMBEDDINGS_OPS.toolCallSpanMap;
   toolCallSpanMap.delete(arg0);
-};
-export const _INTERNAL_getSpanForToolCallId = function _INTERNAL_getSpanForToolCallId(arg0) {
+}
+export function _INTERNAL_getSpanForToolCallId(arg0) {
   const toolCallSpanMap = EMBEDDINGS_OPS.toolCallSpanMap;
   return toolCallSpanMap.get(arg0);
-};
-export const accumulateTokensForParent = function accumulateTokensForParent(item10015, map) {
+}
+export function accumulateTokensForParent(item10015, map) {
   const parent_span_id = item10015.parent_span_id;
   if (parent_span_id) {
     const tmp3 = item10015.data[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE];
@@ -62,8 +62,8 @@ export const accumulateTokensForParent = function accumulateTokensForParent(item
       const result = map.set(parent_span_id, tmp6);
     }
   }
-};
-export const applyAccumulatedTokens = function applyAccumulatedTokens(trace, map) {
+}
+export function applyAccumulatedTokens(trace, map) {
   const value = map.get(trace.span_id);
   const tmp2 = value && trace.data;
   if (tmp2) {
@@ -78,8 +78,8 @@ export const applyAccumulatedTokens = function applyAccumulatedTokens(trace, map
       trace.data["gen_ai.usage.total_tokens"] = value.inputTokens + value.outputTokens;
     }
   }
-};
-export const convertAvailableToolsToJsonString = function convertAvailableToolsToJsonString(data) {
+}
+export function convertAvailableToolsToJsonString(data) {
   return JSON.stringify(data.map((item) => {
     if (typeof item === "string") {
       try {
@@ -92,9 +92,9 @@ export const convertAvailableToolsToJsonString = function convertAvailableToolsT
       return item;
     }
   }));
-};
+}
 export { convertPromptToMessages };
-export const getSpanOpFromName = function getSpanOpFromName(description) {
+export function getSpanOpFromName(description) {
   let tmp17;
   switch (description) {
     case "ai.generateText":
@@ -164,8 +164,8 @@ export const getSpanOpFromName = function getSpanOpFromName(description) {
       return str2;
     }
   }
-};
-export const requestMessagesFromPrompt = function requestMessagesFromPrompt(setAttribute, data) {
+}
+export function requestMessagesFromPrompt(setAttribute, data) {
   let filteredMessages;
   let systemInstructions;
   if (data[AI_MODEL_ID_ATTRIBUTE.AI_PROMPT_ATTRIBUTE]) {
@@ -230,4 +230,4 @@ export const requestMessagesFromPrompt = function requestMessagesFromPrompt(setA
     } catch (err) {
     }
   }
-};
+}

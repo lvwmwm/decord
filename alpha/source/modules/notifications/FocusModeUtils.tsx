@@ -1,17 +1,17 @@
-// Module ID: 13986
-// Function ID: 13987
+// Module ID: 14219
+// Function ID: 14220
 // Name: FocusModeUtils
-// Dependencies: [6533, 4949, 1084, 558, 576, 4832, 4837, 1239, 1264, 5944, 1125, 13987, 2]
+// Dependencies: [6557, 4950, 1084, 558, 576, 4833, 4838, 1239, 1264, 5946, 1125, 14220, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 13986 (FocusModeUtils)
+// Module 14219 (FocusModeUtils)
 import react from "react" /* 576 */;
 import wrappers from "wrappers" /* 1239 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import NotificationConstants from "NotificationConstants" /* 4949 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import NotificationConstants from "NotificationConstants" /* 4950 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusMode
 const result = size.fileFinishedImporting("modules/notifications/FocusModeUtils.tsx");
 
 export const useFocusModeEnabled = tmp3;
-export const getFocusModeEnabled = function getFocusModeEnabled() {
+export function getFocusModeEnabled() {
   const FocusMode = UserSettings.FocusMode;
   let setting = FocusMode.getSetting();
   const FocusModeExpiresAtSetting = UserSettings.FocusModeExpiresAtSetting;
@@ -108,8 +108,8 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
     setting = time - date1.getTime() > 0;
   }
   return setting;
-};
-export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
+}
+export function setFocusMode(quiet_mode_enabled, arg1) {
   let closure_1;
   let intl;
   let intl2;
@@ -155,7 +155,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
           closure_1(dependencyMap[11])(obj);
         }
     };
-    const show = tmp5(5944).show;
+    const show = tmp5(5946).show;
     AlertActionCreatorsDefault;
     intl = tmp(1125).intl;
     intl2 = tmp(1125).intl;
@@ -163,4 +163,4 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     intl4 = tmp(1125).intl;
     show(obj3);
   }
-};
+}

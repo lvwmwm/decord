@@ -1,20 +1,25 @@
 // Module ID: 12723
 // Function ID: 12724
 // Dependencies: []
-// Exports: severityLevelFromString
 
 // Module 12723
-
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
+let obj2;
+let obj = {
+  name: "Operator",
+  structure: obj2,
+  parse() {
+    let scanner;
+    const tokenStart = this.scanner.tokenStart;
+    const iter = this.scanner;
+    iter.next();
+    const obj = { type: "Operator", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart) };
+    scanner = this.scanner;
+    return obj;
+  },
+  generate(value) {
+    this.chunk(value.value);
   }
-  return str;
 };
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+obj2 = { value: String };
+
+export default obj;

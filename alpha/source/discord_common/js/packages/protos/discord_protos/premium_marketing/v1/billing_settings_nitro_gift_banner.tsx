@@ -1,14 +1,14 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 9601
+// Function ID: 9602
 // Name: billing_settings_nitro_gift_banner
-// Dependencies: [32, 1209, 9564, 9566, 9556, 9557, 2]
+// Dependencies: [32, 1209, 9596, 9598, 9588, 9589, 2]
 
-// Module 9569 (billing_settings_nitro_gift_banner)
+// Module 9601 (billing_settings_nitro_gift_banner)
 import _mod1209 from "module_1209" /* 1209 */;
-import localized_string from "localized_string" /* 9556 */;
-import help_article from "help_article" /* 9557 */;
-import gradient2 from "gradient" /* 9564 */;
-import theme_aware_asset from "theme_aware_asset" /* 9566 */;
+import localized_string from "localized_string" /* 9588 */;
+import help_article from "help_article" /* 9589 */;
+import gradient2 from "gradient" /* 9596 */;
+import theme_aware_asset from "theme_aware_asset" /* 9598 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

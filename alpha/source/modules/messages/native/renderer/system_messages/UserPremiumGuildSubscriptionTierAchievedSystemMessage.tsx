@@ -1,22 +1,22 @@
-// Module ID: 8398
-// Function ID: 8399
+// Module ID: 8420
+// Function ID: 8421
 // Name: UserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [4856, 4878, 8396, 8397, 8351, 8353, 1125, 8399, 8355, 2]
+// Dependencies: [4857, 4879, 8418, 8419, 8373, 8375, 1125, 8421, 8377, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 8398 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8396 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8397 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8399 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 8420 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8418 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8419 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8421 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");
 
-export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = function createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, TIER_1) {
+export function createUserPremiumGuildSubscriptionTierAchievedSystemMessage(message, TIER_1) {
   let tmp14Result;
   let tmp14Result2;
   message = message.message;
@@ -54,8 +54,8 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         formatToParts2Result = formatToParts(oAYAP7, obj3);
       }
       const obj4 = { content: formatToParts2Result };
-      const merged = Object.assign(tmp11(8355)(message));
+      const merged = Object.assign(tmp11(8377)(message));
       return obj4;
     }
   }
-};
+}

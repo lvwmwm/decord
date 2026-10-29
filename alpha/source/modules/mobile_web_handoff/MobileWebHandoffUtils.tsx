@@ -1,9 +1,9 @@
-// Module ID: 7469
-// Function ID: 7470
+// Module ID: 7492
+// Function ID: 7493
 // Name: MobileWebHandoffUtils
 // Dependencies: [5, 1084, 1278, 1294, 2]
 
-// Module 7469 (MobileWebHandoffUtils)
+// Module 7492 (MobileWebHandoffUtils)
 import Constants from "Constants" /* 1084 */;
 import v1 from "v1" /* 1278 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -27,7 +27,7 @@ let obj = function _createHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {

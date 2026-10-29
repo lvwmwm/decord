@@ -1,10 +1,10 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17978
+// Function ID: 17979
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1084, 5009, 558, 576, 13391, 1111, 7601, 5699, 1125, 17741, 2]
+// Dependencies: [5, 32, 19, 1084, 5010, 558, 576, 13624, 1111, 7624, 5701, 1125, 17979, 2]
 
-// Module 17740 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 5009 */;
+// Module 17978 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 5010 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(17741);
+    const tmpResult = tmp(17979);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
           tmp41(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp41) {
         if (0 === c3) {
           c5 = 3;
@@ -161,7 +161,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
           closure_129_2(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp41) {
         closure_2 = tmp41;
         if (0 === c3) {

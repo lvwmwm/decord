@@ -1,19 +1,20 @@
 // Module ID: 8854
 // Function ID: 8855
-// Dependencies: [8844, 8855, 5043, 8841, 8839]
+// Dependencies: [8850, 8851, 8852, 5044, 8842]
 
 // Module 8854
-import normalizeColor from "normalizeColor" /* 8839 */;
-import _mod8841 from "module_8841" /* 8841 */;
-import _mod8855 from "module_8855" /* 8855 */;
-import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 8844 */;
-import "module_5043";
-import module_5043_mod from "module_5043" /* 5043 */;
+import normalizeColor2 from "normalizeColor" /* 8842 */;
+import _mod8850 from "module_8850" /* 8850 */;
+import normalizeColor3 from "normalizeColor" /* 8851 */;
+import merged22 from "merged2" /* 8852 */;
+import "module_5044";
+import module_5044_mod from "module_5044" /* 5044 */;
 
-let module_5043;
-let module_8855;
-const obj = { ellipsizeMode: module_5043.oneOf(["head", "middle", "tail", "clip"]), numberOfLines: module_5043.number, textBreakStrategy: module_5043.oneOf(["simple", "highQuality", "balanced"]), onLayout: module_5043.func, onPress: module_5043.func, onLongPress: module_5043.func, pressRetentionOffset: _mod8841, selectable: module_5043.bool, selectionColor: normalizeColor, suppressHighlighting: module_5043.bool, style: module_8855, testID: module_5043.string, nativeID: module_5043.string, allowFontScaling: module_5043.bool, maxFontSizeMultiplier: module_5043.number, accessible: module_5043.bool, adjustsFontSizeToFit: module_5043.bool, minimumFontScale: module_5043.number, disabled: module_5043.bool, dataDetectorType: module_5043.oneOf(["phoneNumber", "link", "email", "none", "all"]) };
-module_8855 = DeprecatedStyleSheetPropType(_mod8855);
-module_5043 = module_5043_mod;
+let module_5044;
+const obj = { resizeMode: module_5044.oneOf(["center", "contain", "cover", "repeat", "stretch"]), backfaceVisibility: module_5044.oneOf(["visible", "hidden"]), backgroundColor: normalizeColor2, borderColor: normalizeColor2, borderWidth: module_5044.number, borderRadius: module_5044.number, overflow: module_5044.oneOf(["visible", "hidden"]), tintColor: normalizeColor2, opacity: module_5044.number, overlayColor: module_5044.string, borderTopLeftRadius: module_5044.number, borderTopRightRadius: module_5044.number, borderBottomLeftRadius: module_5044.number, borderBottomRightRadius: module_5044.number };
+const size = Object.assign(_mod8850);
+const normalizeColor = Object.assign(normalizeColor3);
+const merged2 = Object.assign(merged22);
+module_5044 = module_5044_mod;
 
 export default obj;

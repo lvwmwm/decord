@@ -1,14 +1,14 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14831
+// Function ID: 14832
 // Name: useNote
-// Dependencies: [5, 19, 14598, 1084, 558, 576, 504, 584, 1294, 2]
+// Dependencies: [5, 19, 14832, 1084, 558, 576, 504, 584, 1294, 2]
 
-// Module 14597 (useNote)
+// Module 14831 (useNote)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NoteStore from "NoteStore" /* 14598 */;
+import NoteStore from "NoteStore" /* 14832 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _fetchNote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ let obj = function _fetchNote() {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp21) {
         let closure_3 = tmp21;

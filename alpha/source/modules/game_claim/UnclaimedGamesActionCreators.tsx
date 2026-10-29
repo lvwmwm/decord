@@ -1,15 +1,15 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 18135
+// Function ID: 18136
 // Name: UnclaimedGamesActionCreators
-// Dependencies: [5, 17898, 1084, 1294, 584, 504, 1101, 569, 558, 2]
+// Dependencies: [5, 18136, 1084, 1294, 584, 504, 1101, 569, 558, 2]
 
-// Module 17897 (UnclaimedGamesActionCreators)
+// Module 18135 (UnclaimedGamesActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnclaimedGamesStore from "UnclaimedGamesStore" /* 17898 */;
+import UnclaimedGamesStore from "UnclaimedGamesStore" /* 18136 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _fetchUnclaimedGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ let obj = function _fetchUnclaimedGames() {
           obj = closure_129_1(closure_129_2[4]);
           obj.dispatch(obj7);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         c3 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16471
+// Function ID: 16472
 // Name: CollectiblesRecommendationActionCreators
-// Dependencies: [5, 1084, 584, 1294, 6409, 7482, 2]
+// Dependencies: [5, 1084, 584, 1294, 6433, 7505, 2]
 // Exports: maybeFetchCollectiblesRecommendations
 
-// Module 16234 (CollectiblesRecommendationActionCreators)
+// Module 16471 (CollectiblesRecommendationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -29,7 +29,7 @@ let obj = function _maybeFetchCollectiblesRecommendations() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -90,7 +90,7 @@ let obj = function _maybeFetchCollectiblesRecommendations() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp28) {
         closure_2 = tmp28;
@@ -108,6 +108,6 @@ let obj = function _maybeFetchCollectiblesRecommendations() {
 let closure_4 = Constants.COLLECTIBLES_APPLICATION_ID;
 let result = size.fileFinishedImporting("modules/collectibles/CollectiblesRecommendationActionCreators.tsx");
 
-export const maybeFetchCollectiblesRecommendations = function maybeFetchCollectiblesRecommendations() {
+export function maybeFetchCollectiblesRecommendations() {
   return obj(...arguments);
-};
+}

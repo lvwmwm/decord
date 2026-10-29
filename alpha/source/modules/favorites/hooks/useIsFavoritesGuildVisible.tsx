@@ -1,13 +1,13 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 17194
+// Function ID: 17195
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [5035, 4859, 4881, 558, 576, 504, 2]
+// Dependencies: [5036, 4860, 4882, 558, 576, 504, 2]
 // Exports: isFavoritesGuildVisible
 
-// Module 16955 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
+// Module 17194 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavorit
 const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
 
 export default tmp2;
-export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
+export function isFavoritesGuildVisible() {
   const obj = FavoritesUtils;
   const isFavoritesGuildIdResult = obj.isFavoritesGuildId(SelectedGuildStore.getGuildId());
   let favoriteGuildEnabled = isFavoritesGuildIdResult;
@@ -93,4 +93,4 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
     favoriteGuildEnabled = tmp.favoriteGuildEnabled;
   }
   return favoriteGuildEnabled;
-};
+}

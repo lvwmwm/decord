@@ -1,34 +1,34 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8885
+// Function ID: 8886
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7440, 4856, 6045, 1389, 1084, 1102, 6035, 4832, 1402, 1383, 1385, 558, 576, 6049, 1997, 6056, 11, 2]
+// Dependencies: [19, 7463, 4857, 6049, 1389, 1084, 1102, 6039, 4833, 1402, 1383, 1385, 558, 576, 6053, 1998, 6060, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8882 (ForumPostMediaUtils)
+// Module 8885 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
 import URLUtilsDefault from "URLUtils" /* 1383 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MessageStore from "MessageStore" /* 6045 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7463 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, type;
+let _require, type, version;
 
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(6049);
+const InteractionComponentUtils = tmp(6053);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -415,7 +415,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
             let num;
             let spoiler;
             let tmpResult2;
-            let version;
             type = type.type;
             if (require("Server").ComponentType.THUMBNAIL === type) {
               ({ media, spoiler } = type);
@@ -453,7 +452,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
                 let num;
                 let spoiler;
                 let tmpResult;
-                let version;
                 ({ media, spoiler } = item);
                 if (spoiler == null) {
                   spoiler = false;
@@ -529,7 +527,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
           let num;
           let spoiler;
           let tmpResult2;
-          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -567,7 +564,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
               let num;
               let spoiler;
               let tmpResult;
-              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;
@@ -799,7 +795,7 @@ function isValidVideoAttachment(filename) {
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/forums/ForumPostMediaUtils.tsx");
 
-export const getEmbedColor = function getEmbedColor(firstResult, flag) {
+export function getEmbedColor(firstResult, flag) {
   if (null != firstResult) {
     if (null != firstResult.embeds[0]) {
       const color = firstResult.embeds[0].color;
@@ -815,7 +811,7 @@ export const getEmbedColor = function getEmbedColor(firstResult, flag) {
       return int2hslResult;
     }
   }
-};
+}
 export { isValidImageAttachment };
 export { isValidVideoAttachment };
 export { isMediaAttachment };
@@ -826,7 +822,7 @@ export const useForumPostMediaThumbnail = tmp4;
 export const useForumPostMediaProperties = tmp5;
 export const useFindFirstMediaProperties = tmp6;
 export const useFirstMediaIsEmbed = tmp7;
-export const shouldShowAddMediaToOriginalPostModal = function shouldShowAddMediaToOriginalPostModal(uploads, id) {
+export function shouldShowAddMediaToOriginalPostModal(uploads, id) {
   const channel = ChannelStore.getChannel(id);
   if (null == channel) {
     let flag = false;
@@ -891,8 +887,8 @@ export const shouldShowAddMediaToOriginalPostModal = function shouldShowAddMedia
     }
     return tmp8;
   }
-};
-export const messageContainsGifOrVideo = function messageContainsGifOrVideo(media) {
+}
+export function messageContainsGifOrVideo(media) {
   return media.reduce((containsVideo, isVideo) => {
     let containsGif;
     const obj = { containsVideo: containsVideo.containsVideo || isVideo.isVideo, containsGif };
@@ -903,4 +899,4 @@ export const messageContainsGifOrVideo = function messageContainsGifOrVideo(medi
     }
     return obj;
   }, { containsVideo: false, containsGif: false });
-};
+}

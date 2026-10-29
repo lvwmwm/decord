@@ -1,21 +1,21 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11410
+// Function ID: 11411
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9164, 7844, 21, 5004, 587, 558, 576, 11357, 7301, 5705, 6013, 8597, 5270, 1125, 2403, 9169, 6939, 2]
+// Dependencies: [19, 9167, 7867, 21, 5005, 587, 558, 576, 11411, 7325, 5707, 6015, 8619, 5271, 1125, 2404, 9172, 6963, 2]
 
-// Module 11356 (GameOrganizationInvitePickerRow)
+// Module 11410 (GameOrganizationInvitePickerRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2403 from "module_2403" /* 2403 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7301 */;
-import Constants from "Constants" /* 7844 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9164 */;
-import InviteButtonDefault from "InviteButton" /* 9169 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11357 */;
+import _modDef2404 from "module_2404" /* 2404 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7325 */;
+import Constants from "Constants" /* 7867 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9167 */;
+import InviteButtonDefault from "InviteButton" /* 9172 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11411 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ let metroRequire;
 let size;
 let tmp;
 const intl2 = tmp(1125);
-const Text_Text = tmp(5270);
-const Stack_Stack = tmp(6013);
-const TableRow2 = tmp(6939);
-const GroupIcon2 = tmp(8597);
-const getGameOrganizationInviteSendStateKey = tmp(11357);
+const Text_Text = tmp(5271);
+const Stack_Stack = tmp(6015);
+const TableRow2 = tmp(6963);
+const GroupIcon2 = tmp(8619);
+const getGameOrganizationInviteSendStateKey = tmp(11411);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
             const GroupIcon = GroupIcon2.GroupIcon;
             items = [metroRequire(GroupIcon, obj6), ];
-            const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2403.VuENGl, obj8) };
+            const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2404.VuENGl, obj8) };
             const Text = Text_Text.Text;
             intl = intl2.intl;
             obj8 = { count: memberCount, max: maxMembers };
@@ -231,12 +231,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(6013).Stack;
+      const Stack = tmp5(6015).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp5(8597).GroupIcon;
+      const GroupIcon = tmp5(8619).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
-      const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2403.VuENGl, obj8) };
-      const Text = tmp5(5270).Text;
+      const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2404.VuENGl, obj8) };
+      const Text = tmp5(5271).Text;
       intl = tmp5(1125).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

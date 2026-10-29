@@ -1,40 +1,40 @@
-// Module ID: 19629
-// Function ID: 19630
+// Module ID: 19863
+// Function ID: 19864
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4929, 19589, 16833, 1084, 4853, 21, 5004, 587, 558, 576, 1502, 19606, 19595, 7390, 9077, 5270, 5725, 5280, 7257, 19625, 19623, 19601, 16840, 19585, 1199, 12174, 1125, 19630, 16855, 5698, 6960, 7521, 8935, 4840, 19631, 1999, 10442, 10443, 9179, 2]
+// Dependencies: [32, 19, 17, 4930, 19822, 17071, 1084, 4854, 21, 5005, 587, 558, 576, 1503, 19839, 19828, 7413, 9080, 5271, 5727, 5281, 7281, 19859, 19857, 19834, 17078, 19818, 1199, 12228, 1125, 19864, 17093, 5700, 6984, 7544, 8938, 4841, 19865, 2000, 10475, 10476, 9182, 2]
 // Exports: default
 
-// Module 19629 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 19863 (GuildSettingsRoleSubscriptionTierEdit)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4929 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import TrashIcon2 from "TrashIcon" /* 5725 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7390 */;
-import FormHeaderDefault from "FormHeader" /* 9077 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12174 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16840 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19585 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 19595 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 19601 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 19606 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 19623 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 19625 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 19630 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4930 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import TrashIcon2 from "TrashIcon" /* 5727 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7413 */;
+import FormHeaderDefault from "FormHeader" /* 9080 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12228 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17078 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19818 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 19828 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 19834 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 19839 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 19857 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 19859 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 19864 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19589 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19822 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj3;
 let tmp;
 const intl4 = tmp(1125);
 const native = tmp(1199);
-const DismissibleActionSheet = tmp(10443);
+const DismissibleActionSheet = tmp(10476);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
@@ -107,7 +107,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: "xs", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_TEXT_DEFAULT };
-        const TrashIcon = tmp(5725).TrashIcon;
+        const TrashIcon = tmp(5727).TrashIcon;
         const tmp17 = syncedClientThemes(TrashIcon, obj5);
         cResult[6] = tmp17;
         tmp15 = tmp17;
@@ -239,7 +239,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: items };
-      const SafeAreaPaddingView2 = tmp(7257).SafeAreaPaddingView;
+      const SafeAreaPaddingView2 = tmp(7281).SafeAreaPaddingView;
       items = [syncedClientThemes(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), syncedClientThemes(closure_20, {})];
       const tmp26 = authStore3(SafeAreaPaddingView2, obj2);
       cResult[0] = tmp26;
@@ -263,7 +263,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { bottom: true, children: syncedClientThemes(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-      const SafeAreaPaddingView = tmp(7257).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp(7281).SafeAreaPaddingView;
       const tmp16 = syncedClientThemes(SafeAreaPaddingView, obj4);
       cResult[3] = tmp16;
       tmp14 = tmp16;
@@ -561,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f141098 = (currentScene) => {
+  const f142671 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -641,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f141098), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f142671), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f141098), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f142671), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

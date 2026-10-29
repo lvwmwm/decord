@@ -1,18 +1,18 @@
-// Module ID: 8692
-// Function ID: 8693
+// Module ID: 8695
+// Function ID: 8696
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 8686, 7738, 4916, 558, 576, 504, 5011, 1125, 2]
+// Dependencies: [19, 8689, 7760, 4917, 558, 576, 504, 5012, 1125, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner
 
-// Module 8692 (ProfileCustomizationUtils)
+// Module 8695 (ProfileCustomizationUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import shared from "shared" /* 5011 */;
+import shared from "shared" /* 5012 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8686 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8689 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -710,7 +710,7 @@ export const useAvatarDecorationSettings = tmp8;
 export const useProfileEffectSettings = tmp9;
 export const useProfileFrameSettings = tmp10;
 export { getProfilePreviewValue };
-export const resolveCollectiblesOverride = function resolveCollectiblesOverride(arg0) {
+export function resolveCollectiblesOverride(arg0) {
   let guildId;
   let guildValue;
   let pendingValue;
@@ -744,8 +744,8 @@ export const resolveCollectiblesOverride = function resolveCollectiblesOverride(
     }
     pendingValue = tmp3;
   }
-};
-export const showRemoveAvatar = function showRemoveAvatar(pendingAvatar, avatar) {
+}
+export function showRemoveAvatar(pendingAvatar, avatar) {
   let tmp2;
   if (undefined === pendingAvatar) {
     tmp2 = null != avatar;
@@ -753,8 +753,8 @@ export const showRemoveAvatar = function showRemoveAvatar(pendingAvatar, avatar)
     tmp2 = null != pendingAvatar;
   }
   return tmp2;
-};
-export const showRemoveBanner = function showRemoveBanner(pendingBanner, banner) {
+}
+export function showRemoveBanner(pendingBanner, banner) {
   let tmp2;
   if (undefined === pendingBanner) {
     tmp2 = null != banner;
@@ -762,8 +762,8 @@ export const showRemoveBanner = function showRemoveBanner(pendingBanner, banner)
     tmp2 = null != pendingBanner;
   }
   return tmp2;
-};
-export const announcePendingAvatarChange = function announcePendingAvatarChange(set) {
+}
+export function announcePendingAvatarChange(set) {
   if ("set" === set) {
     const AccessibilityAnnouncer3 = shared.AccessibilityAnnouncer;
     const announce3 = AccessibilityAnnouncer3.announce;
@@ -780,4 +780,4 @@ export const announcePendingAvatarChange = function announcePendingAvatarChange(
     const intl = intl4.intl;
     announce(intl.string(intl4.t["/b5nqj"]));
   }
-};
+}

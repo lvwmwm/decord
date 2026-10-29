@@ -1,12 +1,12 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 15202
+// Function ID: 15203
 // Name: MobileNitroManageSubscriptionsSettingsExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 14967 (MobileNitroManageSubscriptionsSettingsExperiment)
+// Module 15202 (MobileNitroManageSubscriptionsSettingsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const result = size.fileFinishedImporting("modules/premium/experiments/MobileNit
 
 export default apexExperiment;
 export const useMobileNitroManageSubscriptionsSettingsExperiment = tmp3;
-export const getMobileNitroManageSubscriptionsSettingsExperiment = function getMobileNitroManageSubscriptionsSettingsExperiment(location) {
+export function getMobileNitroManageSubscriptionsSettingsExperiment(location) {
   const obj = { location: location.location };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

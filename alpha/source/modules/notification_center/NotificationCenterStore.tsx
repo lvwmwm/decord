@@ -1,16 +1,16 @@
-// Module ID: 18137
-// Function ID: 18138
+// Module ID: 18371
+// Function ID: 18372
 // Name: NotificationCenterStore
-// Dependencies: [32, 6851, 1101, 504, 6823, 11, 584, 2]
+// Dependencies: [32, 6874, 1101, 504, 6846, 11, 584, 2]
 
-// Module 18137 (NotificationCenterStore)
+// Module 18371 (NotificationCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6823 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6846 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 6851 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6874 */;
 import size from "module_2" /* 2 */;
 
 function handleLoadFinished() {

@@ -1,12 +1,12 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 8864
+// Function ID: 8865
 // Name: ContentInventoryStore
-// Dependencies: [504, 8862, 584, 2]
+// Dependencies: [504, 8865, 584, 2]
 
-// Module 8861 (ContentInventoryStore)
+// Module 8864 (ContentInventoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import matchUtils from "matchUtils" /* 8862 */;
+import matchUtils from "matchUtils" /* 8865 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -20,8 +20,8 @@ class ContentInventoryStore extends Store {
   getFeeds() {
     return map;
   }
-  getFeed(GLOBAL_FEED) {
-    return map.get(GLOBAL_FEED);
+  getFeed(arg0) {
+    return map.get(arg0);
   }
   getFeedState(arg0) {
     return map1.get(arg0);

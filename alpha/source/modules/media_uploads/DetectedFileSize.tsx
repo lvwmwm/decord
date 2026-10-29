@@ -1,10 +1,10 @@
-// Module ID: 8212
-// Function ID: 8213
+// Module ID: 8234
+// Function ID: 8235
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 8212 (_asyncToGenerator)
+// Module 8234 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _getDetectedFileSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -116,6 +116,6 @@ let obj = function _getDetectedFileSize() {
 };
 let result = size.fileFinishedImporting("modules/media_uploads/DetectedFileSize.tsx");
 
-export const getDetectedFileSize = function getDetectedFileSize() {
+export function getDetectedFileSize() {
   return obj(...arguments);
-};
+}

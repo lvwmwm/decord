@@ -1,19 +1,19 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14305
+// Function ID: 14306
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 13991, 1084, 21, 5004, 587, 558, 576, 14073, 6707, 13992, 7526, 5270, 14010, 2]
+// Dependencies: [19, 17, 14224, 1084, 21, 5005, 587, 558, 576, 14306, 6731, 14225, 7549, 5271, 14243, 2]
 
-// Module 14072 (RestrictedHoursWarningNotification)
+// Module 14305 (RestrictedHoursWarningNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import openUserSettings from "openUserSettings" /* 7526 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13991 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13992 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import openUserSettings from "openUserSettings" /* 7549 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 14224 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 14225 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = closure_9();
   type = notification.type;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const ThemeDarkIcon = tmp(14073).ThemeDarkIcon;
+    const ThemeDarkIcon = tmp(14306).ThemeDarkIcon;
     const tmp8 = <ThemeDarkIcon size="sm" color={nativeDefault.colors.WHITE} />;
     cResult[0] = tmp8;
     first = tmp8;
@@ -118,8 +118,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     cResult[7] = notification.subtitle;
-    cResult[8] = jsx(type(5270).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
-    const tmp17 = jsx(type(5270).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
+    cResult[8] = jsx(type(5271).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
+    const tmp17 = jsx(type(5271).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle });
   } else {
     class N {
       constructor() {
@@ -161,13 +161,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[11] = notification;
   cResult[12] = tmp14;
   cResult[13] = tmp15;
-  cResult[14] = jsx(type(14010).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
-  jsx(type(14010).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
+  cResult[14] = jsx(type(14243).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
+  jsx(type(14243).NotificationPressable, { icon: tmp9, header: tmp13, children: tmp15, onPress: tmp14, notification });
 }) : (function RestrictedHoursWarningNotification(notification) {
   notification = notification.notification;
   const type = notification.type;
   let obj2 = { size: "sm", color: type(587).colors.WHITE };
-  const ThemeDarkIcon = notification(14073).ThemeDarkIcon;
+  const ThemeDarkIcon = notification(14306).ThemeDarkIcon;
   const items = [notification.title];
   const items1 = [type];
   const tmp = <View style={closure_9().iconContainer}>{null}</View>;
@@ -183,7 +183,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj4 = { screen: metroImportDefault.FAMILY_CENTER };
     obj3.openUserSettings(obj4);
   }, items1);
-  const NotificationPressable = notification(14010).NotificationPressable;
+  const NotificationPressable = notification(14243).NotificationPressable;
   let obj4 = { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle };
   return <NotificationPressable icon={tmp} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 }));

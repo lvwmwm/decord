@@ -1,16 +1,16 @@
-// Module ID: 18737
-// Function ID: 18738
+// Module ID: 18971
+// Function ID: 18972
 // Name: ConjureAppPictureInPictureCloseTarget
-// Dependencies: [19, 21, 5004, 18736, 587, 558, 576, 5085, 5242, 5283, 11578, 2]
+// Dependencies: [19, 21, 5005, 18970, 587, 558, 576, 5086, 5243, 5284, 11632, 2]
 
-// Module 18737 (ConjureAppPictureInPictureCloseTarget)
+// Module 18971 (ConjureAppPictureInPictureCloseTarget)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5242 */;
-import spring from "spring" /* 5283 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 18736 */;
+import timing from "timing" /* 5243 */;
+import spring from "spring" /* 5284 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 18970 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
   dependencyMap = x;
   const y = center.y;
   let closure_3 = y;
-  let obj2 = shown(5085);
+  let obj2 = shown(5086);
   class T {
     constructor() {
       let items;
@@ -66,10 +66,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       ({ translateX: closure_2 - conjureAppPictureInPictureLayout.CLOSE_TARGET_SIZE / 2 });
       const withSpring = spring.withSpring;
       spring;
-      const diff = closure_3 - tmp(18736).CLOSE_TARGET_SIZE / 2;
+      const diff = closure_3 - tmp(18970).CLOSE_TARGET_SIZE / 2;
       let num2 = 0;
       if (!obj.get()) {
-        num2 = tmp(18736).CLOSE_TARGET_SIZE;
+        num2 = tmp(18970).CLOSE_TARGET_SIZE;
       }
       items[1] = { translateY: withSpring(diff + num2, SPRING) };
       ({ translateY: withSpring(diff + num2, SPRING) });
@@ -84,12 +84,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       return obj2;
     }
   }
-  const point = { withTiming: shown(5242).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(18736).CLOSE_TARGET_SIZE, withSpring: shown(5283).withSpring, y, SPRING, hovered, HOVERED_SCALE };
+  const point = { withTiming: shown(5243).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(18970).CLOSE_TARGET_SIZE, withSpring: shown(5284).withSpring, y, SPRING, hovered, HOVERED_SCALE };
   T.__closure = point;
   T.__workletHash = 15134050536622;
   T.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(T);
-  const obj4 = shown(5085);
+  const obj4 = shown(5086);
   const fn = function h() {
     const withTiming = timing.withTiming;
     let num = 0;
@@ -100,7 +100,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
     const obj = { opacity: withTiming(num, FADE) };
     return obj;
   };
-  const obj3 = { withTiming: shown(5242).withTiming, hovered, FADE };
+  const obj3 = { withTiming: shown(5243).withTiming, hovered, FADE };
   fn.__closure = obj3;
   fn.__workletHash = 1295924731740;
   fn.__initData = __initData2;
@@ -114,7 +114,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { size: "md", color: hovered(587).colors.ICON_STRONG };
-      const DoorExitIcon = tmp(11578).DoorExitIcon;
+      const DoorExitIcon = tmp(11632).DoorExitIcon;
       const tmp12 = closure_3(DoorExitIcon, obj5);
       let num = 3;
       cResult[3] = tmp12;
@@ -132,7 +132,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { size: "md", color: hovered(587).colors.WHITE };
-        const DoorExitIcon2 = tmp(11578).DoorExitIcon;
+        const DoorExitIcon2 = tmp(11632).DoorExitIcon;
         const tmp17 = closure_3(DoorExitIcon2, obj6);
         cResult[7] = tmp17;
         tmp14 = tmp17;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       }
       if (cResult[8] !== tmp13) {
         const obj7 = { style: tmp13, children: tmp14 };
-        const tmp21 = closure_3(hovered(5085).View, obj7);
+        const tmp21 = closure_3(hovered(5086).View, obj7);
         cResult[8] = tmp13;
         cResult[9] = tmp21;
         tmp18 = tmp21;
@@ -157,7 +157,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       }
       const obj8 = { style: tmp7, pointerEvents: "none", importantForAccessibility: "no-hide-descendants", children: items };
       items = [tmp9, tmp18];
-      const tmp25 = closure_4(hovered(5085).View, obj8);
+      const tmp25 = closure_4(hovered(5086).View, obj8);
       cResult[10] = tmp7;
       cResult[11] = tmp18;
       class T {
@@ -175,10 +175,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
           ({ translateX: closure_2 - conjureAppPictureInPictureLayout.CLOSE_TARGET_SIZE / 2 });
           const withSpring = spring.withSpring;
           spring;
-          const diff = closure_3 - tmp(18736).CLOSE_TARGET_SIZE / 2;
+          const diff = closure_3 - tmp(18970).CLOSE_TARGET_SIZE / 2;
           let num2 = 0;
           if (!obj.get()) {
-            num2 = tmp(18736).CLOSE_TARGET_SIZE;
+            num2 = tmp(18970).CLOSE_TARGET_SIZE;
           }
           items[1] = { translateY: withSpring(diff + num2, SPRING) };
           ({ translateY: withSpring(diff + num2, SPRING) });
@@ -225,7 +225,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
   dependencyMap = x;
   const y = center.y;
   let closure_3 = y;
-  let obj = shown(5085);
+  let obj = shown(5086);
   const fn = function u() {
     let items;
     const withTiming = timing.withTiming;
@@ -240,10 +240,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
     ({ translateX: closure_2 - conjureAppPictureInPictureLayout.CLOSE_TARGET_SIZE / 2 });
     const withSpring = spring.withSpring;
     spring;
-    const diff = closure_3 - tmp(18736).CLOSE_TARGET_SIZE / 2;
+    const diff = closure_3 - tmp(18970).CLOSE_TARGET_SIZE / 2;
     let num2 = 0;
     if (!obj.get()) {
-      num2 = tmp(18736).CLOSE_TARGET_SIZE;
+      num2 = tmp(18970).CLOSE_TARGET_SIZE;
     }
     items[1] = { translateY: withSpring(diff + num2, SPRING) };
     ({ translateY: withSpring(diff + num2, SPRING) });
@@ -257,12 +257,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
     ({ scale: withSpring2(num3, SPRING) });
     return obj2;
   };
-  const point = { withTiming: shown(5242).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(18736).CLOSE_TARGET_SIZE, withSpring: shown(5283).withSpring, y, SPRING, hovered, HOVERED_SCALE };
+  const point = { withTiming: shown(5243).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(18970).CLOSE_TARGET_SIZE, withSpring: shown(5284).withSpring, y, SPRING, hovered, HOVERED_SCALE };
   fn.__closure = point;
   fn.__workletHash = 15877568301676;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = shown(5085);
+  const obj3 = shown(5086);
   class A {
     constructor() {
       const withTiming = timing.withTiming;
@@ -275,22 +275,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureApp
       return obj;
     }
   }
-  let obj2 = { withTiming: shown(5242).withTiming, hovered, FADE };
+  let obj2 = { withTiming: shown(5243).withTiming, hovered, FADE };
   A.__closure = obj2;
   A.__workletHash = 2190356029722;
   A.__initData = __initData4;
   const animatedStyle1 = obj3.useAnimatedStyle(A);
   const obj4 = { style: items, pointerEvents: "none", importantForAccessibility: "no-hide-descendants", children: items1 };
   items = [tmp.target, animatedStyle];
-  const View = hovered(5085).View;
+  const View = hovered(5086).View;
   const obj5 = { size: "md", color: hovered(587).colors.ICON_STRONG };
-  const DoorExitIcon = shown(11578).DoorExitIcon;
+  const DoorExitIcon = shown(11632).DoorExitIcon;
   items1 = [closure_3(DoorExitIcon, obj5), ];
   const obj6 = { style: items2, children: closure_3(DoorExitIcon2, obj7) };
   items2 = [tmp.fill, animatedStyle1];
-  const View2 = hovered(5085).View;
+  const View2 = hovered(5086).View;
   obj7 = { size: "md", color: hovered(587).colors.WHITE };
-  DoorExitIcon2 = shown(11578).DoorExitIcon;
+  DoorExitIcon2 = shown(11632).DoorExitIcon;
   items1[1] = closure_3(View2, obj6);
   return closure_4(View, obj4);
 });

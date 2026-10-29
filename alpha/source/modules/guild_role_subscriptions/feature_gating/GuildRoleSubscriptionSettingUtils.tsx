@@ -1,13 +1,13 @@
-// Module ID: 7397
-// Function ID: 7398
+// Module ID: 7420
+// Function ID: 7421
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [4874, 4936, 1389, 1084, 558, 576, 504, 7398, 7390, 2]
+// Dependencies: [4875, 4937, 1389, 1084, 558, 576, 504, 7421, 7413, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 7397 (GuildRoleSubscriptionSettingUtils)
-import GuildRecord from "GuildRecord" /* 4874 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7398 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+// Module 7420 (GuildRoleSubscriptionSettingUtils)
+import GuildRecord from "GuildRecord" /* 4875 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7421 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -95,11 +95,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRole
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult3 = tmp(7398);
+  const tmpResult3 = tmp(7421);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult3.useIsUserInCreatorMonetizationEligibleCountry();
   id = undefined;
-  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(7390).useShouldRestrictUpdatingCreatorMonetizationSettings;
-  tmp(7390);
+  const useShouldRestrictUpdatingCreatorMonetizationSettings = tmp(7413).useShouldRestrictUpdatingCreatorMonetizationSettings;
+  tmp(7413);
   if (id != null) {
     id = id.id;
   }
@@ -251,11 +251,11 @@ const result1 = size.fileFinishedImporting("modules/guild_role_subscriptions/fea
 export { GuildRoleSubscriptionSettingsVisibility };
 export { canSeeGuildRoleSubscriptionSettingsContent };
 export { computeGuildRoleSubscriptionSettingsVisibility };
-export const canSeeGuildRoleSubscriptionSettings = function canSeeGuildRoleSubscriptionSettings(guild) {
+export function canSeeGuildRoleSubscriptionSettings(guild) {
   return computeGuildRoleSubscriptionSettingsVisibility(guild) !== obj.NONE;
-};
+}
 export const useGuildRoleSubscriptionSettingsVisibility = tmp3;
-export const getGuildRoleSubscriptionSettingsVisibility = function getGuildRoleSubscriptionSettingsVisibility(guild) {
+export function getGuildRoleSubscriptionSettingsVisibility(guild) {
   let canResult;
   let features;
   let obj;
@@ -272,7 +272,7 @@ export const getGuildRoleSubscriptionSettingsVisibility = function getGuildRoleS
     features = guild.features;
     return tmp9(obj2);
   }
-};
+}
 export { useCanSeeGuildRoleSubscriptionSettings };
 export const useCanManageGuildRoleSubscriptions = tmp5;
 export { canManageGuildRoleSubscriptions };

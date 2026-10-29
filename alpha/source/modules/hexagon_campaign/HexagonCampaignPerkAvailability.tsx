@@ -1,14 +1,14 @@
-// Module ID: 5032
-// Function ID: 5033
+// Module ID: 5033
+// Function ID: 5034
 // Name: HexagonCampaignPerkAvailability
-// Dependencies: [1389, 558, 576, 5033, 504, 5031, 2]
+// Dependencies: [1389, 558, 576, 5034, 504, 5032, 2]
 // Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser
 
-// Module 5032 (HexagonCampaignPerkAvailability)
+// Module 5033 (HexagonCampaignPerkAvailability)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5031 */;
-import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5033 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5032 */;
+import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5034 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHexagon
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignPerkAvailability.tsx");
 
 export const useHexagonCampaignPerkAvailability = tmp2;
-export const getHexagonCampaignPerkAvailabilityForCurrentUser = function getHexagonCampaignPerkAvailabilityForCurrentUser(CLIENT_THEME, MobileThemesUtils) {
+export function getHexagonCampaignPerkAvailabilityForCurrentUser(CLIENT_THEME, MobileThemesUtils) {
   let premiumType;
   let tmpResult;
   const obj = { perk: CLIENT_THEME, premiumType, isCampaignEnabled: tmpResult.getIsHexagonCampaignEnabled(MobileThemesUtils) };
@@ -89,8 +89,8 @@ export const getHexagonCampaignPerkAvailabilityForCurrentUser = function getHexa
   }
   tmpResult = HexagonCampaignExperiment;
   return getHexagonCampaignPerkAvailability(obj);
-};
-export const isHexagonCampaignPerkExpiredForCurrentUser = function isHexagonCampaignPerkExpiredForCurrentUser(CLIENT_THEME, arg1) {
+}
+export function isHexagonCampaignPerkExpiredForCurrentUser(CLIENT_THEME, arg1) {
   const isHexagonCampaignPerkExpired = HexagonCampaignUtils.isHexagonCampaignPerkExpired;
   HexagonCampaignUtils;
   const currentUser = UserStore.getCurrentUser();
@@ -99,4 +99,4 @@ export const isHexagonCampaignPerkExpiredForCurrentUser = function isHexagonCamp
     premiumType = currentUser.premiumType;
   }
   return isHexagonCampaignPerkExpired(CLIENT_THEME, premiumType, arg1);
-};
+}

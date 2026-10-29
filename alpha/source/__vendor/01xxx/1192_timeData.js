@@ -8,7 +8,7 @@
 import _mod1193 from "module_1193" /* 1193 */;
 
 
-export const getBestPattern = function getBestPattern(arr3, locale) {
+export function getBestPattern(arr3, locale) {
   let tmp22;
   let tmp26;
   let num = 0;
@@ -145,4 +145,4 @@ export const getBestPattern = function getBestPattern(arr3, locale) {
     throw error;
   }
   return str2;
-};
+}

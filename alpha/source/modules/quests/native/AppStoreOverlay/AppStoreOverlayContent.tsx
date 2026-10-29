@@ -1,13 +1,13 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14578
+// Function ID: 14579
 // Name: AppStoreOverlayContent
-// Dependencies: [5, 5696, 5692, 1125, 14345, 2]
+// Dependencies: [5, 5698, 5694, 1125, 14579, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 14344 (AppStoreOverlayContent)
-import openURL from "openURL" /* 5692 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 14345 */;
+// Module 14578 (AppStoreOverlayContent)
+import openURL from "openURL" /* 5694 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import AppStoreMetadataActionCreators from "AppStoreMetadataActionCreators" /* 14579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -85,10 +85,10 @@ let obj = function _getAppStoreOverlayContent() {
 };
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayContent.tsx");
 
-export const getIosAppStoreReviewsUrl = function getIosAppStoreReviewsUrl(arg0) {
+export function getIosAppStoreReviewsUrl(arg0) {
   return "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + arg0 + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software";
-};
-export const openAppStoreReviews = function openAppStoreReviews(storeUrl, platform, appId) {
+}
+export function openAppStoreReviews(storeUrl, platform, appId) {
   if ("ios" === platform) {
     if (null != appId) {
       if ("" !== appId) {
@@ -99,7 +99,7 @@ export const openAppStoreReviews = function openAppStoreReviews(storeUrl, platfo
     }
   }
   openURL.default(storeUrl);
-};
-export const getAppStoreOverlayContent = function getAppStoreOverlayContent() {
+}
+export function getAppStoreOverlayContent() {
   return obj(...arguments);
-};
+}

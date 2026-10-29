@@ -1,15 +1,15 @@
-// Module ID: 5673
-// Function ID: 5674
+// Module ID: 5675
+// Function ID: 5676
 // Name: AppLauncherBadgeUtils
 // Dependencies: [2]
 // Exports: getNewestBadgeableVersion
 
-// Module 5673 (AppLauncherBadgeUtils)
+// Module 5675 (AppLauncherBadgeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherBadgeUtils.tsx");
 
-export const getNewestBadgeableVersion = function getNewestBadgeableVersion(arg0) {
+export function getNewestBadgeableVersion(arg0) {
   let storeState;
   let surface;
   ({ storeState, surface } = arg0);
@@ -43,4 +43,4 @@ export const getNewestBadgeableVersion = function getNewestBadgeableVersion(arg0
     }
   }
   return num;
-};
+}

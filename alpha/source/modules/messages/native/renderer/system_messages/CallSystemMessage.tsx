@@ -1,30 +1,30 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8391
+// Function ID: 8392
 // Name: CallSystemMessage
-// Dependencies: [6807, 502, 5666, 1084, 5668, 8370, 8371, 1125, 1417, 4829, 8355, 2]
+// Dependencies: [6830, 502, 5668, 1084, 5670, 8392, 8393, 1125, 1418, 4830, 8377, 2]
 // Exports: createCallSystemMessage
 
-// Module 8369 (CallSystemMessage)
+// Module 8391 (CallSystemMessage)
 import Constants from "Constants" /* 1084 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import CallConstants from "CallConstants" /* 5668 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8370 */;
-import useIsCallActive from "useIsCallActive" /* 8371 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import CallConstants from "CallConstants" /* 5670 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8392 */;
+import useIsCallActive from "useIsCallActive" /* 8393 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import size from "module_2" /* 2 */;
 
 let user;
 
 let tmp4;
-const createCommonMessageDefault = tmp4(8355);
+const createCommonMessageDefault = tmp4(8377);
 const ME = Constants.ME;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
-export const createCallSystemMessage = function createCallSystemMessage(message) {
+export function createCallSystemMessage(message) {
   let formatToPlainStringResult;
   let mapped;
   let stringResult1;
@@ -95,4 +95,4 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   timestamp = message.timestamp;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj3;
-};
+}

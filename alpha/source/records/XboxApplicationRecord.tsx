@@ -1,11 +1,11 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15555
+// Function ID: 15556
 // Name: XboxApplicationRecord
-// Dependencies: [2021, 6537, 2]
+// Dependencies: [2022, 6561, 2]
 
-// Module 15320 (XboxApplicationRecord)
-import PlatformsDefault from "Platforms" /* 6537 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+// Module 15555 (XboxApplicationRecord)
+import PlatformsDefault from "Platforms" /* 6561 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "xbox:";

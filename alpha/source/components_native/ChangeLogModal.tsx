@@ -1,29 +1,29 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17412
+// Function ID: 17413
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1084, 4906, 21, 5004, 587, 5070, 1264, 8788, 17174, 5705, 8827, 1125, 6944, 9074, 10200, 1199, 8501, 558, 576, 1496, 8502, 1503, 6960, 2046, 8503, 5270, 6707, 7131, 2]
+// Dependencies: [19, 17, 1084, 4907, 21, 5005, 587, 5071, 1264, 8791, 17413, 5707, 8830, 1125, 6968, 9077, 10233, 1199, 8523, 558, 576, 1497, 8524, 1504, 6984, 2047, 8525, 5271, 6731, 7155, 2]
 
-// Module 17173 (ChangeLogModal)
+// Module 17412 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import ChangelogConstants from "ChangelogConstants" /* 4906 */;
-import native from "native" /* 5070 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6960 */;
-import Navigator from "Navigator" /* 7131 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8501 */;
-import openMediaModal2 from "openMediaModal" /* 8788 */;
-import common_VideoDefault from "common/Video" /* 8827 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9074 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10200 */;
-import _modDef17174 from "module_17174" /* 17174 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ChangelogConstants from "ChangelogConstants" /* 4907 */;
+import native from "native" /* 5071 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6984 */;
+import Navigator from "Navigator" /* 7155 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8523 */;
+import openMediaModal2 from "openMediaModal" /* 8791 */;
+import common_VideoDefault from "common/Video" /* 8830 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9077 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10233 */;
+import _modDef17413 from "module_17413" /* 17413 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef17174, obj4), ];
+        items = [closure_7(_modDef17413, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;
@@ -209,7 +209,7 @@ class ChangeLog extends PureComponent2 {
           const obj5 = { style: tmp.videoOverlay, source: obj6 };
           const _HermesInternal = HermesInternal;
           obj6 = { uri: "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg" };
-          const tmp7Result = tmp7(5705);
+          const tmp7Result = tmp7(5707);
           tmp6Result = tmp6(tmp7Result, obj5);
         }
         items[1] = tmp6Result;
@@ -241,7 +241,7 @@ class ChangeLog extends PureComponent2 {
     tmp14 = closure_8;
     if (null != video) {
       const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: closure_7(tmp15Result, obj10) };
-      const PressableOpacity = tmp18(6944).PressableOpacity;
+      const PressableOpacity = tmp18(6968).PressableOpacity;
       obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: AssetRegistryDefault, onPress: self.playVideo, style: tmp.playButton, iconSize: self(1199).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
       tmp15Result = TouchableHitBoxDefault;
       tmp12Result = tmp12(PressableOpacity, obj9);

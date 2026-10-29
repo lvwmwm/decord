@@ -1,25 +1,25 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17601
+// Function ID: 17602
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 5273, 21, 5004, 587, 558, 576, 5629, 504, 17251, 4840, 17336, 6939, 7332, 7331, 6013, 7023, 2]
+// Dependencies: [19, 17, 5274, 21, 5005, 587, 558, 576, 5630, 504, 17490, 4841, 17575, 6963, 7356, 7355, 6015, 7047, 2]
 
-// Module 17362 (DevToolsShopScreen)
+// Module 17601 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
-import Stack_Stack from "Stack/Stack" /* 6013 */;
-import TableRow5 from "TableRow" /* 6939 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
-import TableSwitchRow from "TableSwitchRow" /* 7331 */;
-import FormSwitch from "FormSwitch" /* 7332 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17251 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
+import Stack_Stack from "Stack/Stack" /* 6015 */;
+import TableRow5 from "TableRow" /* 6963 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
+import TableSwitchRow from "TableSwitchRow" /* 7355 */;
+import FormSwitch from "FormSwitch" /* 7356 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17490 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
   }
   if (cResult[12] !== stateFromStores) {
     const obj4 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp30) };
-    const TableRow = tmp(6939).TableRow;
+    const TableRow = tmp(6963).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -200,7 +200,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
       }
     }
     const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp34) };
-    const TableRow2 = tmp(6939).TableRow;
+    const TableRow2 = tmp(6963).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj6 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp41) };
-      const TableRow3 = tmp(6939).TableRow;
+      const TableRow3 = tmp(6963).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj7 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp45) };
-      const TableRow4 = tmp(6939).TableRow;
+      const TableRow4 = tmp(6963).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
@@ -317,7 +317,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
       }
     }
     const obj8 = { spacing: 16, children: metroRequire(TableRowGroup2.TableRowGroup, obj9) };
-    const Stack = tmp(6013).Stack;
+    const Stack = tmp(6015).Stack;
     obj9 = { title: "Shop Toggles", hasIcons: false, children: items4 };
     items4 = [tmp28, tmp33, tmp36, tmp40, tmp44];
     cResult[26] = tmp28;

@@ -1,10 +1,10 @@
-// Module ID: 12273
-// Function ID: 12274
+// Module ID: 12327
+// Function ID: 12328
 // Name: conjureDatabaseLock
 // Dependencies: [5, 19, 558, 576, 2]
 // Exports: withConjureDatabaseLock
 
-// Module 12273 (conjureDatabaseLock)
+// Module 12327 (conjureDatabaseLock)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ let obj = function _withConjureDatabaseLock() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -134,7 +134,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 });
 const result = size.fileFinishedImporting("modules/conjure/history/conjureDatabaseLock.tsx");
 
-export const withConjureDatabaseLock = function withConjureDatabaseLock() {
+export function withConjureDatabaseLock() {
   return obj(...arguments);
-};
+}
 export const useConjureDatabaseBusy = tmp4;

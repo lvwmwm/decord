@@ -1,15 +1,12 @@
 // Module ID: 15828
 // Function ID: 15829
-// Dependencies: [15807]
+// Dependencies: [15816]
 
 // Module 15828
-import _mod15807 from "module_15807" /* 15807 */;
+import _mod15816 from "module_15816" /* 15816 */;
 
-const tmp = _mod15807.navigator && _mod15807.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
 
-export default str;
+export default (arg0, arg1) => {
+  const tmp = new _mod15816(arg0, arg1);
+  return tmp.patch;
+};

@@ -1,17 +1,17 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10085
+// Function ID: 10086
 // Name: useAgeGroupPresentation
-// Dependencies: [1084, 558, 6689, 7918, 2064, 6692, 576, 1125, 2]
+// Dependencies: [1084, 558, 6713, 7941, 2065, 6716, 576, 1125, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification
 
-// Module 10053 (useAgeGroupPresentation)
+// Module 10085 (useAgeGroupPresentation)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,15 +101,15 @@ let result = size.fileFinishedImporting("modules/age_assurance/useAgeGroupPresen
 
 export { AgeGroupState };
 export const useAgeGroupState = tmp2;
-export const handleOpenAgeGatedContentArticle = function handleOpenAgeGatedContentArticle() {
+export function handleOpenAgeGatedContentArticle() {
   const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
   AgeVerificationActionCreatorsDefault;
   const obj = HelpdeskUtilsDefault;
   openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
-};
-export const handleShowAgeVerification = function handleShowAgeVerification() {
+}
+export function handleShowAgeVerification() {
   const obj = AgeVerificationActionCreatorsDefault;
   const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
   const result = obj.showAgeVerificationGetStartedModal(obj2);
-};
+}
 export const useAgeGroupValueLabel = tmp3;

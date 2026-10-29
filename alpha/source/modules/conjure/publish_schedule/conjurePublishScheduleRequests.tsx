@@ -1,12 +1,12 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10919
+// Function ID: 10920
 // Name: conjurePublishScheduleRequests
-// Dependencies: [10844, 10756, 2]
+// Dependencies: [10920, 10831, 2]
 // Exports: deletePublishSchedule, fetchPublishSchedule, setPublishSchedule
 
-// Module 10843 (conjurePublishScheduleRequests)
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjurePublishScheduleErrorDefault from "ConjurePublishScheduleError" /* 10844 */;
+// Module 10919 (conjurePublishScheduleRequests)
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjurePublishScheduleErrorDefault from "ConjurePublishScheduleError" /* 10920 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPublishSchedule(projectId) {
@@ -52,7 +52,7 @@ let result = size.fileFinishedImporting("modules/conjure/publish_schedule/conjur
 
 export const publishScheduleFrameHandlers = obj;
 export { rejectPendingPublishSchedule };
-export const fetchPublishSchedule = function fetchPublishSchedule(iter) {
+export function fetchPublishSchedule(iter) {
   let closure_0 = iter;
   let closure_1 = { type: "get_publish_schedule" };
   const promise = new Promise(function(resolve, reject) {
@@ -106,8 +106,8 @@ export const fetchPublishSchedule = function fetchPublishSchedule(iter) {
     }
   });
   return promise;
-};
-export const deletePublishSchedule = function deletePublishSchedule(arg0) {
+}
+export function deletePublishSchedule(arg0) {
   let closure_0 = arg0;
   let closure_1 = { type: "delete_publish_schedule", supports_errors: true };
   const promise = new Promise(function(resolve, reject) {
@@ -161,8 +161,8 @@ export const deletePublishSchedule = function deletePublishSchedule(arg0) {
     }
   });
   return promise;
-};
-export const setPublishSchedule = function setPublishSchedule(arg0, trigger) {
+}
+export function setPublishSchedule(arg0, trigger) {
   let obj = { type: "set_publish_schedule", trigger, supports_errors: true };
   let closure_0 = arg0;
   const promise = new Promise(function(resolve, reject) {
@@ -216,4 +216,4 @@ export const setPublishSchedule = function setPublishSchedule(arg0, trigger) {
     }
   });
   return promise;
-};
+}

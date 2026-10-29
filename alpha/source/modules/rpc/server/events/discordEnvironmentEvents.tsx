@@ -1,15 +1,15 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16284
+// Function ID: 16285
 // Name: discordEnvironmentEvents
-// Dependencies: [109, 5005, 6413, 1084, 11503, 12, 2]
+// Dependencies: [109, 5006, 6437, 1084, 11557, 12, 2]
 // Exports: createDiscordEnvironmentEvents
 
-// Module 16048 (discordEnvironmentEvents)
+// Module 16284 (discordEnvironmentEvents)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1084 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import Constants from "Constants" /* 6413 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import Constants from "Constants" /* 6437 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -74,7 +74,7 @@ let obj = { scope: { [RPC_SCOPE_CONFIG.ANY]: items }, handler };
 items = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
 const result = size.fileFinishedImporting("modules/rpc/server/events/discordEnvironmentEvents.tsx");
 
-export const createDiscordEnvironmentEvents = function createDiscordEnvironmentEvents(arg0) {
+export function createDiscordEnvironmentEvents(arg0) {
   let items;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -83,5 +83,5 @@ export const createDiscordEnvironmentEvents = function createDiscordEnvironmentE
   let obj = { scope: { [closure_8.ANY]: items }, handler };
   items = [RPC_EMBEDDED_APP_SCOPE, RPC_AUTHENTICATED_SCOPE];
   return { [closure_9.DISCORD_ENV_UPDATE]: obj };
-};
+}
 export const discordEnvironmentEvents = { [RPCEvents.DISCORD_ENV_UPDATE]: obj };

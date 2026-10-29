@@ -10,27 +10,29 @@ import ReactNativeLibraries from "ReactNativeLibraries" /* 874 */;
 import _mod880 from "module_880" /* 880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
+let version;
+
 const Platform = react_native.Platform;
 
-export const isHermesEnabled = function isHermesEnabled() {
+export function isHermesEnabled() {
   return RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.HermesInternal;
-};
-export const isTurboModuleEnabled = function isTurboModuleEnabled() {
+}
+export function isTurboModuleEnabled() {
   let tmp3 = true === RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.RN$Bridgeless;
   if (!tmp3) {
     tmp3 = null != RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.__turboModuleProxy;
   }
   return tmp3;
-};
-export const isFabricEnabled = function isFabricEnabled() {
+}
+export function isFabricEnabled() {
   return null != RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.nativeFabricUIManager;
-};
-export const getReactNativeVersion = function getReactNativeVersion() {
+}
+export function getReactNativeVersion() {
   let major;
   let minor;
   let patch;
   if (ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion) {
-    const version = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion.version;
+    version = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion.version;
     ({ major, minor, patch } = version);
     let str2 = "";
     if (null != version.prerelease) {
@@ -40,15 +42,15 @@ export const getReactNativeVersion = function getReactNativeVersion() {
     const _HermesInternal2 = HermesInternal;
     return "" + major + "." + minor + "." + patch + str2;
   }
-};
-export const isExpo = function isExpo() {
+}
+export function isExpo() {
   return null != RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.expo;
-};
-export const isExpoGo = function isExpoGo() {
+}
+export function isExpoGo() {
   const obj = _mod880;
   return obj.getExpoGo();
-};
-export const getExpoGoVersion = function getExpoGoVersion() {
+}
+export function getExpoGoVersion() {
   const obj = _mod880;
   const expoConstants = obj.getExpoConstants();
   let expoVersion;
@@ -60,8 +62,8 @@ export const getExpoGoVersion = function getExpoGoVersion() {
     expoVersion1 = expoConstants.expoVersion;
   }
   return expoVersion1;
-};
-export const getExpoSdkVersion = function getExpoSdkVersion() {
+}
+export function getExpoSdkVersion() {
   let parts;
   const obj = _mod880;
   const expoConstants = obj.getExpoConstants();
@@ -82,7 +84,7 @@ export const getExpoSdkVersion = function getExpoSdkVersion() {
     parts = [];
   }
   return _slicedToArray(parts, 2)[1];
-};
+}
 export function isWeb() {
   return false;
 }
@@ -95,7 +97,7 @@ export function isMobileOs() {
 export function notMobileOs() {
   return false;
 }
-export const getHermesVersion = function getHermesVersion() {
+export function getHermesVersion() {
   const _HermesInternal = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.HermesInternal;
   let getRuntimeProperties;
   if (null !== _HermesInternal) {
@@ -110,11 +112,11 @@ export const getHermesVersion = function getHermesVersion() {
     }
   }
   return prop;
-};
+}
 export function getDefaultEnvironment() {
   return "production";
 }
-export const isRunningInMetroDevServer = function isRunningInMetroDevServer() {
+export function isRunningInMetroDevServer() {
   let tmp3 = undefined !== RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.process;
   if (tmp3) {
     const env = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.process.env;
@@ -127,4 +129,4 @@ export const isRunningInMetroDevServer = function isRunningInMetroDevServer() {
     tmp3 = "true" === prop;
   }
   return tmp3;
-};
+}

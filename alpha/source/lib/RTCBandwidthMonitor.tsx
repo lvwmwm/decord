@@ -1,10 +1,10 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 5936
+// Function ID: 5937
 // Name: RTCBandwidthMonitor
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 5934 (RTCBandwidthMonitor)
+// Module 5936 (RTCBandwidthMonitor)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ const prototype = RTCBandwidthMonitor.prototype;
 const result = size.fileFinishedImporting("lib/RTCBandwidthMonitor.tsx");
 
 export default RTCBandwidthMonitor;
-export const getRTCTotalBytes = function getRTCTotalBytes() {
+export function getRTCTotalBytes() {
   const obj = _modDef12;
   return obj.sum(closure_2.map((getTotalBytes) => getTotalBytes.getTotalBytes()));
-};
+}

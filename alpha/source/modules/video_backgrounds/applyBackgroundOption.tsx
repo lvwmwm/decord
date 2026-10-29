@@ -1,22 +1,22 @@
-// Module ID: 5897
-// Function ID: 5898
+// Module ID: 5899
+// Function ID: 5900
 // Name: applyBackgroundOption
-// Dependencies: [5, 1389, 5898, 5899, 1084, 5900, 5775, 5905, 1414, 5910, 5903, 5902, 5911, 2]
+// Dependencies: [5, 1389, 5900, 5901, 1084, 5902, 5777, 5907, 1415, 5912, 5905, 5904, 5913, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5897 (applyBackgroundOption)
+// Module 5899 (applyBackgroundOption)
 import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5775 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5900 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5902 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5905 */;
-import getFilterImageDefault from "getFilterImage" /* 5910 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5911 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5902 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5904 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5907 */;
+import getFilterImageDefault from "getFilterImage" /* 5912 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5913 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5898 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5899 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5900 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5901 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -71,7 +71,7 @@ obj = function _applyBackgroundOption() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c7;
@@ -95,11 +95,11 @@ obj = function _applyBackgroundOption() {
             if (null == closure_2) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.NONE);
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else if (closure_2 === metroImportDefault) {
               applyBackgroundMediaFilterSettings(closure_0, closure_1, BaseConnectionEvent.FilterSettingsGraph.BACKGROUND_BLUR);
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               if (typeof closure_2 !== "string") {
                 let isAnimatedIconHashResult;
@@ -184,7 +184,7 @@ obj = function _applyBackgroundOption() {
           }
         }
         c9 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp47) {
         let closure_6 = tmp47;
         if (0 === c7) {
@@ -203,31 +203,83 @@ function applyBackgroundOptionLive() {
 }
 obj = function _applyBackgroundOptionLive() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
-    let closure_2;
-    let closure_3;
     let closure_0 = arg0;
     const track = arg1;
     let c4 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      let flag;
-      let location;
-      const obj5 = { type: closure_131_0(closure_131_2[6]).FilterTargetType.INPUT_DEVICE };
-      const CAMERA_BACKGROUND_LIVE = closure_131_0(closure_131_2[6]).FilterSettingsKey.CAMERA_BACKGROUND_LIVE;
-      await closure_131_11(CAMERA_BACKGROUND_LIVE, obj5, closure_0);
-      const tmp6 = flag;
-      if (tmp6) {
-        obj = closure_131_0(closure_131_2[10]);
-        const result = obj.trackBackgroundOptionUpdated(closure_0, location, "Enabled");
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let location;
+          let flag;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              closure_2 = tmp;
+              location = undefined;
+              flag = track.track;
+              const tmp14 = track;
+              if (flag === undefined) {
+                flag = true;
+              }
+              location = tmp14.location;
+              c4 = 1;
+              c5 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              const obj5 = { type: closure_131_0(closure_131_2[6]).FilterTargetType.INPUT_DEVICE };
+              const CAMERA_BACKGROUND_LIVE = closure_131_0(closure_131_2[6]).FilterSettingsKey.CAMERA_BACKGROUND_LIVE;
+              c4 = 2;
+              c5 = 1;
+              const obj6 = { value: closure_131_11(CAMERA_BACKGROUND_LIVE, obj5, closure_0), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            const tmp6 = flag;
+            if (tmp6) {
+              obj = closure_131_0(closure_131_2[10]);
+              const result = obj.trackBackgroundOptionUpdated(closure_0, location, "Enabled");
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp15) {
+          c5 = 3;
+          throw tmp15;
+        }
       }
-      await "IconComponent";
-      flag = track.track;
-      const tmp14 = track;
-      if (flag === undefined) {
-        flag = true;
-      }
-      location = tmp14.location;
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -236,33 +288,85 @@ obj = function _applyBackgroundOptionLive() {
 };
 obj = function _applyBackgroundOptionPreview() {
   obj = _asyncToGenerator(async (arg0, streamId, arg2) => {
-    let closure_3;
-    let closure_4;
     let closure_0 = arg0;
     const track = arg2;
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value, arg2) => {
-      let flag;
-      let location;
-      const obj7 = closure_132_0(closure_132_2[5]);
-      const result = obj7.startApplyMediaFilterSettings();
-      const obj5 = { type: closure_132_0(closure_132_2[6]).FilterTargetType.STREAM, streamId };
-      const CAMERA_BACKGROUND_PREVIEW = closure_132_0(closure_132_2[6]).FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW;
-      await closure_132_11(CAMERA_BACKGROUND_PREVIEW, obj5, closure_0);
-      const tmp6 = flag;
-      if (tmp6) {
-        obj = closure_132_0(closure_132_2[10]);
-        const result1 = obj.trackBackgroundOptionUpdated(closure_0, location, "Preview");
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let location;
+          let flag;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp4;
+              closure_3 = tmp;
+              location = undefined;
+              flag = track.track;
+              const tmp15 = track;
+              if (flag === undefined) {
+                flag = true;
+              }
+              location = tmp15.location;
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              const obj7 = closure_132_0(closure_132_2[5]);
+              const result = obj7.startApplyMediaFilterSettings();
+              const obj5 = { type: closure_132_0(closure_132_2[6]).FilterTargetType.STREAM, streamId };
+              const CAMERA_BACKGROUND_PREVIEW = closure_132_0(closure_132_2[6]).FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW;
+              c5 = 2;
+              c6 = 1;
+              const obj6 = { value: closure_132_11(CAMERA_BACKGROUND_PREVIEW, obj5, closure_0), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            const tmp6 = flag;
+            if (tmp6) {
+              obj = closure_132_0(closure_132_2[10]);
+              const result1 = obj.trackBackgroundOptionUpdated(closure_0, location, "Preview");
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp16) {
+          c6 = 3;
+          throw tmp16;
+        }
       }
-      await "IconComponent";
-      flag = track.track;
-      const tmp15 = track;
-      if (flag === undefined) {
-        flag = true;
-      }
-      location = tmp15.location;
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -274,10 +378,10 @@ const NOOP = Constants.NOOP;
 let result = size.fileFinishedImporting("modules/video_backgrounds/applyBackgroundOption.tsx");
 
 export { applyBackgroundOptionLive };
-export const applyBackgroundOptionPreview = function applyBackgroundOptionPreview() {
+export function applyBackgroundOptionPreview() {
   return obj(...arguments);
-};
-export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
+}
+export function applyInitialVideoBackgroundOption() {
   const currentUser = UserStore.getCurrentUser();
   if (null != currentUser) {
     obj = LastUsedVideoBackgroundOption;
@@ -288,4 +392,4 @@ export const applyInitialVideoBackgroundOption = function applyInitialVideoBackg
       promise.catch(NOOP);
     }
   }
-};
+}

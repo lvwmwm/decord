@@ -1,34 +1,34 @@
-// Module ID: 19201
-// Function ID: 19202
+// Module ID: 19436
+// Function ID: 19437
 // Name: NewUserUtils
-// Dependencies: [5, 17648, 6535, 1389, 13544, 1084, 13815, 7903, 17696, 13817, 1381, 7926, 17697, 13545, 1254, 19202, 9083, 584, 1503, 13820, 6707, 19200, 1111, 13927, 2]
+// Dependencies: [5, 17886, 6559, 1389, 13777, 1084, 14048, 7926, 17934, 14050, 1381, 7949, 17935, 13778, 1254, 19437, 9086, 584, 1504, 14053, 6731, 19435, 1111, 14160, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 19201 (NewUserUtils)
+// Module 19436 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1111 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Link from "Link" /* 1503 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
-import react_nativeDefault from "react-native" /* 7926 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13820 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13927 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17696 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 19200 */;
-import InterestPickerExperiment from "InterestPickerExperiment" /* 19202 */;
+import Link from "Link" /* 1504 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
+import react_nativeDefault from "react-native" /* 7949 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14048 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14053 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14160 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17934 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19435 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 19437 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17648 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17886 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import UserStore from "UserStore" /* 1389 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13544 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13777 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c2, c4, c5, closure_5, registration;
+let _require, c0, c1, c2, c4, c5, registration;
 
 let c10;
 let c9;
@@ -51,7 +51,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -119,142 +119,74 @@ function getNextOnboardingStep() {
 obj = function _getNextOnboardingStep() {
   obj = _asyncToGenerator(async (arg0, lastShownStepIndex) => {
     let closure_4;
+    let closure_5;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c6 = 0;
     let c7 = 0;
     const iter = (async (arg0, value) => {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      let tmp5;
+      let flag = closure_0;
+      if (closure_0 === undefined) {
+        flag = false;
+      }
+      let sum = closure_2;
+      await "Reflect";
+      registration = key;
+      if (key == null) {
+        registration = "registration";
+      }
+      let closure_3 = registration;
+      sum = sum + 1;
+      if (sum >= closure_133_18.length) {
+        closure_133_19(closure_3);
+        return { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+      }
+      const shouldShowStep = tmp.shouldShowStep;
+      let transitionStep = tmp.transitionStep;
+      await shouldShowStep();
+      if (2 === c6) {
         if (arg0 === 1) {
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let sum;
-          let flag;
-          let closure_3;
-          let tmp;
-          let key2;
-          let shouldShowStep;
-          let transitionStep;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              closure_5 = tmp4;
-              lastShownStepIndex = undefined;
-              sum = undefined;
-              flag = closure_0;
-              if (closure_0 === undefined) {
-                flag = false;
-              }
-              sum = closure_2;
-              closure_3 = undefined;
-              tmp = undefined;
-              key2 = undefined;
-              shouldShowStep = undefined;
-              transitionStep = undefined;
-              c6 = 1;
-              c7 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              let key;
-              if (closure_133_18[lastShownStepIndex] != null) {
-                key = tmp70.key;
-              }
-              registration = key;
-              if (key == null) {
-                registration = "registration";
-              }
-              closure_3 = registration;
-              sum = sum + 1;
-              if (sum >= closure_133_18.length) {
-                closure_133_19(closure_3);
-                c7 = 3;
-                return { value: { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false }, done: true };
-              } else {
-                tmp = closure_133_18[sum];
-                key2 = tmp.key;
-                shouldShowStep = tmp.shouldShowStep;
-                transitionStep = tmp.transitionStep;
-                c6 = 2;
-                c7 = 1;
-                const obj8 = { value: shouldShowStep(), done: false };
-                return obj8;
-              }
-            }
-          } else {
-            let tmp5;
-            if (2 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              } else if (value) {
-                let obj12;
-                lastShownStepIndex = sum;
-                const obj10 = { skip: flag };
-                const obj3 = closure_133_0(closure_133_2[19]);
-                obj3.trackNUFStep(closure_3, key2, obj10);
-                if (null != transitionStep) {
-                  closure_133_19(key2);
-                  transitionStep();
-                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-                  const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-                } else {
-                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
-                  transitionStep = undefined;
-                  if (closure_133_18[sum] != null) {
-                    transitionStep = tmp25.transitionStep;
-                  }
-                }
-                tmp5 = obj12;
-              } else {
-                c6 = 3;
-                c7 = 1;
-                const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
-                return obj13;
-              }
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else {
-              tmp5 = value;
-              if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              }
-            }
-            c7 = 3;
-            return { value: tmp5, done: true };
-          }
-        } catch (tmp60) {
           c7 = 3;
-          throw tmp60;
+          return { value, done: true };
+        } else if (value) {
+          let obj12;
+          lastShownStepIndex = sum;
+          const obj10 = { skip: flag };
+          const obj3 = closure_133_0(closure_133_2[19]);
+          obj3.trackNUFStep(closure_3, closure_133_18[sum].key, obj10);
+          if (null != transitionStep) {
+            closure_133_19(closure_133_18[sum].key);
+            transitionStep();
+            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+          } else {
+            obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
+            transitionStep = undefined;
+            if (closure_133_18[sum] != null) {
+              transitionStep = tmp25.transitionStep;
+            }
+          }
+          tmp5 = obj12;
+        } else {
+          c6 = 3;
+          c7 = 1;
+          const obj13 = { value: closure_133_20(flag, lastShownStepIndex, sum), done: false };
+          return obj13;
+        }
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else {
+        tmp5 = value;
+        if (arg0 === 2) {
+          c7 = 3;
+          return { value, done: true };
         }
       }
+      return tmp5;
     })();
     iter.next();
     return iter;
@@ -299,7 +231,7 @@ let closure_16 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     let c3;
@@ -388,7 +320,7 @@ let closure_16 = _asyncToGenerator(async (arg0, value) => {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           }
@@ -436,7 +368,7 @@ let closure_17 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -528,14 +460,14 @@ let obj4 = {
 items[6] = obj4;
 let result = size.fileFinishedImporting("modules/nuf/native/NewUserUtils.tsx");
 
-export const getKeyForOnboardingStep = function getKeyForOnboardingStep(onboardingStepIndex) {
+export function getKeyForOnboardingStep(onboardingStepIndex) {
   let key;
   if (items[onboardingStepIndex] != null) {
     key = tmp.key;
   }
   return key;
-};
-export const continueToNextStep = function continueToNextStep(onboardingStepIndex, current) {
+}
+export function continueToNextStep(onboardingStepIndex, current) {
   _require = current;
   let tmp = items[onboardingStepIndex];
   let key;
@@ -569,5 +501,5 @@ export const continueToNextStep = function continueToNextStep(onboardingStepInde
       }, 500);
     }
   }
-};
+}
 export { getNextOnboardingStep };

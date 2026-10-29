@@ -1,10 +1,10 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8528
+// Function ID: 8529
 // Name: ChangelogImageUtils
 // Dependencies: [2]
 // Exports: fitChangelogImage, getChangelogImageStillUrl, hasImageSegment, isAnimatedChangelogImage, isChangelogImageUrl, parseChangelogImageSize, splitParagraphAtImages
 
-// Module 8506 (ChangelogImageUtils)
+// Module 8528 (ChangelogImageUtils)
 import size_mod from "module_2" /* 2 */;
 
 function toURL(target) {
@@ -30,7 +30,7 @@ export const CHANGELOG_IMAGE_CDN_HOST = "cdn.discordapp.com";
 export const CHANGELOG_IMAGE_MEDIA_PROXY_HOST = "media.discordapp.net";
 export const CHANGELOG_IMAGE_WEB_MAX_WIDTH = 432;
 export const CHANGELOG_IMAGE_WEB_MAX_HEIGHT = 400;
-export const isChangelogImageUrl = function isChangelogImageUrl(target) {
+export function isChangelogImageUrl(target) {
   const url = toURL(target);
   let isMatch = null != url && "https:" === url.protocol;
   if (isMatch) {
@@ -41,8 +41,8 @@ export const isChangelogImageUrl = function isChangelogImageUrl(target) {
     isMatch = re2.test(url.pathname);
   }
   return isMatch;
-};
-export const parseChangelogImageSize = function parseChangelogImageSize(title) {
+}
+export function parseChangelogImageSize(title) {
   let match = null;
   if (null != title) {
     match = re4.exec(title.trim());
@@ -64,18 +64,18 @@ export const parseChangelogImageSize = function parseChangelogImageSize(title) {
     }
     return tmp6;
   }
-};
-export const fitChangelogImage = function fitChangelogImage(result1, diff, result) {
+}
+export function fitChangelogImage(result1, diff, result) {
   const bound = Math.max(0, Math.min(1, diff / result1.width, result / result1.height));
   size = { width: Math.max(1, Math.round(result1.width * bound)), height: Math.max(1, Math.round(result1.height * bound)) };
   return size;
-};
-export const isAnimatedChangelogImage = function isAnimatedChangelogImage(target) {
+}
+export function isAnimatedChangelogImage(target) {
   const tmp = toURL(target);
   const isMatch = null != tmp && re3.test(tmp.pathname);
   return isMatch;
-};
-export const getChangelogImageStillUrl = function getChangelogImageStillUrl(target) {
+}
+export function getChangelogImageStillUrl(target) {
   const url = toURL(target);
   let isMatch = null != url && "https:" === url.protocol;
   if (isMatch) {
@@ -97,8 +97,8 @@ export const getChangelogImageStillUrl = function getChangelogImageStillUrl(targ
   } else {
     return null;
   }
-};
-export const splitParagraphAtImages = function splitParagraphAtImages(content) {
+}
+export function splitParagraphAtImages(content) {
   function flushRun(arg0) {
     let content;
     let content2;
@@ -180,7 +180,7 @@ export const splitParagraphAtImages = function splitParagraphAtImages(content) {
   });
   flushRun(false);
   return items;
-};
-export const hasImageSegment = function hasImageSegment(arr) {
+}
+export function hasImageSegment(arr) {
   return arr.some((type) => "image" === type.type);
-};
+}

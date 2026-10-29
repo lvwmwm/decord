@@ -1,12 +1,12 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17443
+// Function ID: 17444
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 5699, 5722, 17202, 1125, 6013, 5270, 5280, 2]
+// Dependencies: [5, 32, 19, 21, 5701, 5724, 17441, 1125, 6015, 5271, 5281, 2]
 // Exports: default
 
-// Module 17204 (CacheActionsStorageDiagnostics)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
+// Module 17443 (CacheActionsStorageDiagnostics)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -124,7 +124,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp41) {
           ref = tmp41;
           if (0 === c3) {
@@ -144,9 +144,9 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(6013).Stack;
+  const Stack = onBusyChange(6015).Stack;
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1125).t.Fzi4HX) };
-  const Text = onBusyChange(5270).Text;
+  const Text = onBusyChange(5271).Text;
   intl = onBusyChange(1125).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
@@ -158,7 +158,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5280).Button;
+  const Button = onBusyChange(5281).Button;
   intl2 = onBusyChange(1125).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);

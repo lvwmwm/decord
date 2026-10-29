@@ -1,12 +1,12 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11042
+// Function ID: 11043
 // Name: SafetyToolsActionCreators
-// Dependencies: [10965, 5246, 11008, 1999, 2]
+// Dependencies: [11000, 5247, 11043, 2000, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 11007 (SafetyToolsActionCreators)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Constants from "Constants" /* 10965 */;
+// Module 11042 (SafetyToolsActionCreators)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Constants from "Constants" /* 11000 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ let _require;
 let closure_3 = Constants.getSafetyToolsActionSheetKey;
 const result = size.fileFinishedImporting("modules/self_mod/SafetyToolsActionCreators.native.tsx");
 
-export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType) {
+export function openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType) {
   let closure_0;
   const tmp = closure_3(channelId);
   _require = tmp;
@@ -30,5 +30,5 @@ export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(ch
       obj.hideActionSheet(closure_0);
     }
   };
-  obj.openLazy(require("asyncRequire")(11008, dependencyMap.paths), tmp, obj2);
-};
+  obj.openLazy(require("asyncRequire")(11043, dependencyMap.paths), tmp, obj2);
+}

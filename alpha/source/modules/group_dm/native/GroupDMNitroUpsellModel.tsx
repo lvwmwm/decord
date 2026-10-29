@@ -1,15 +1,15 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11387
+// Function ID: 11388
 // Name: GroupDMNitroUpsellModel
-// Dependencies: [1389, 1084, 1391, 1988, 558, 576, 504, 1125, 2]
+// Dependencies: [1389, 1084, 1391, 1989, 558, 576, 504, 1125, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI
 
-// Module 11333 (GroupDMNitroUpsellModel)
+// Module 11387 (GroupDMNitroUpsellModel)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -135,10 +135,10 @@ export const GroupDMNitroUpsellRoute = obj2;
 export { getGroupDMNitroAudience };
 export const useGroupDMNitroAudience = tmp2;
 export { isGroupDMNitroUpsellAudience };
-export const shouldUseGroupDMParticipantLimitUI = function shouldUseGroupDMParticipantLimitUI(enabled, arg1) {
+export function shouldUseGroupDMParticipantLimitUI(enabled, arg1) {
   return enabled || arg1 > MAX_GROUP_DM_PARTICIPANTS;
-};
-export const getGroupDMNitroCapCTAMessage = function getGroupDMNitroCapCTAMessage(groupDMNitroAudience) {
+}
+export function getGroupDMNitroCapCTAMessage(groupDMNitroAudience) {
   let yZOtoD;
   if ("upgrade" === groupDMNitroAudience) {
     yZOtoD = intl.t.KfitWs;
@@ -148,8 +148,8 @@ export const getGroupDMNitroCapCTAMessage = function getGroupDMNitroCapCTAMessag
     yZOtoD = intl.t.yZOtoD;
   }
   return yZOtoD;
-};
-export const getGroupDMNitroUpsellRoute = function getGroupDMNitroUpsellRoute(audience, acquisitionStrategy) {
+}
+export function getGroupDMNitroUpsellRoute(audience, acquisitionStrategy) {
   let NONE;
   const tmp2 = tmp || "acquire" === audience;
   if (tmp2) {
@@ -166,8 +166,8 @@ export const getGroupDMNitroUpsellRoute = function getGroupDMNitroUpsellRoute(au
     NONE = obj2.NONE;
   }
   return NONE;
-};
-export const getGroupDMAddMembersEntryAction = function getGroupDMAddMembersEntryAction(audience) {
+}
+export function getGroupDMAddMembersEntryAction(audience) {
   audience = audience.audience;
   let str = "open";
   if (audience.memberCount >= audience.recipientLimit) {
@@ -182,4 +182,4 @@ export const getGroupDMAddMembersEntryAction = function getGroupDMAddMembersEntr
     str = str3;
   }
   return str;
-};
+}

@@ -1,17 +1,17 @@
-// Module ID: 4870
-// Function ID: 4871
+// Module ID: 4871
+// Function ID: 4872
 // Name: GuildRecordUtils
-// Dependencies: [4871, 4874, 1084, 4873, 4876, 38, 4877, 2]
+// Dependencies: [4872, 4875, 1084, 4874, 4877, 38, 4878, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
-// Module 4870 (GuildRecordUtils)
+// Module 4871 (GuildRecordUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1084 */;
-import SetUtils from "SetUtils" /* 4873 */;
-import guildIncidentsSerialization from "guildIncidentsSerialization" /* 4876 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 4877 */;
-import PlainRecord from "PlainRecord" /* 4871 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
+import SetUtils from "SetUtils" /* 4874 */;
+import guildIncidentsSerialization from "guildIncidentsSerialization" /* 4877 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 4878 */;
+import PlainRecord from "PlainRecord" /* 4872 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
 import size from "module_2" /* 2 */;
 
 let vanityURLCode;
@@ -245,11 +245,11 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
 const result = size.fileFinishedImporting("utils/GuildRecordUtils.tsx");
 
-export const isGuildRecord = function isGuildRecord(guild) {
+export function isGuildRecord(guild) {
   return hasOwnProperty(metroImportAll, guild);
-};
+}
 export { fromGuildPropertiesWithAdditionalFields };
-export const fromServer = function fromServer(joined_at, joinedAt) {
+export function fromServer(joined_at, joinedAt) {
   let date;
   let tmp4;
   if (null != joined_at.joined_at) {
@@ -279,8 +279,8 @@ export const fromServer = function fromServer(joined_at, joinedAt) {
     tmp4 = fromGuildPropertiesWithAdditionalFields(joined_at.properties, obj, joinedAt);
   }
   return tmp4;
-};
-export const attachSerializedData = function attachSerializedData(guild, roles, selfMember) {
+}
+export function attachSerializedData(guild, roles, selfMember) {
   let tmp4;
   let toISOStringResult;
   let toISOStringResult1;
@@ -303,8 +303,8 @@ export const attachSerializedData = function attachSerializedData(guild, roles, 
     tmp4 = obj3;
   }
   return obj;
-};
-export const fromBackgroundSync = function fromBackgroundSync(properties, guildTheme) {
+}
+export function fromBackgroundSync(properties, guildTheme) {
   let tmp = guildTheme;
   if (null != properties.properties) {
     const obj = { joinedAt: null, premiumSubscriberCount: null };
@@ -312,8 +312,8 @@ export const fromBackgroundSync = function fromBackgroundSync(properties, guildT
     tmp = fromGuildPropertiesWithAdditionalFields(properties.properties, obj, guildTheme);
   }
   return tmp;
-};
-export const fromGuild = function fromGuild(guild, guild2) {
+}
+export function fromGuild(guild, guild2) {
   let date;
   const tmp = fromGuildPropertiesWithAdditionalFields;
   if (null != guild.joined_at) {
@@ -332,8 +332,8 @@ export const fromGuild = function fromGuild(guild, guild2) {
   }
   const obj = { joinedAt: date, premiumSubscriberCount: guild.premium_subscription_count };
   return tmp(guild, obj, guild2);
-};
-export const fromInviteGuild = function fromInviteGuild(guild) {
+}
+export function fromInviteGuild(guild) {
   let obj2;
   const obj = { id: guild.id, name: guild.name, description: guild.description, icon: guild.icon, splash: guild.splash, banner: guild.banner, features: obj2.toSetInplace(guild.features), verificationLevel: null, vanityURLCode: null, premiumSubscriberCount: null, nsfwLevel: null, premiumTier: null, homeHeader: null };
   ({ verification_level: obj.verificationLevel, vanity_url_code: obj.vanityURLCode, premium_subscription_count: obj.premiumSubscriberCount, nsfw_level: obj.nsfwLevel, premium_tier: obj.premiumTier, home_header: obj.homeHeader } = guild);
@@ -342,8 +342,8 @@ export const fromInviteGuild = function fromInviteGuild(guild) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromGuildProfile = function fromGuildProfile(profile) {
+}
+export function fromGuildProfile(profile) {
   let obj2;
   let premiumSubscriberCount;
   let premiumTier;
@@ -361,8 +361,8 @@ export const fromGuildProfile = function fromGuildProfile(profile) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromStoreListingGuild = function fromStoreListingGuild(id) {
+}
+export function fromStoreListingGuild(id) {
   let icon;
   const obj = { id: id.id, name: id.name, icon };
   icon = id.icon;
@@ -373,8 +373,8 @@ export const fromStoreListingGuild = function fromStoreListingGuild(id) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj2);
-};
-export const fromDirectoryGuild = function fromDirectoryGuild(id) {
+}
+export function fromDirectoryGuild(id) {
   let description;
   let icon;
   let obj2;
@@ -397,8 +397,8 @@ export const fromDirectoryGuild = function fromDirectoryGuild(id) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
+}
+export function fromGuildDirectoryEntry(entry) {
   let description;
   let icon;
   let obj2;
@@ -426,8 +426,8 @@ export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromVerificationGateGuild = function fromVerificationGateGuild(stateFromStores1) {
+}
+export function fromVerificationGateGuild(stateFromStores1) {
   let description;
   let icon;
   let obj2;
@@ -455,8 +455,8 @@ export const fromVerificationGateGuild = function fromVerificationGateGuild(stat
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromClientDiscoverableGuild = function fromClientDiscoverableGuild(guild) {
+}
+export function fromClientDiscoverableGuild(guild) {
   let banner;
   let description;
   let discoverySplash;
@@ -499,8 +499,8 @@ export const fromClientDiscoverableGuild = function fromClientDiscoverableGuild(
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const fromGuildBasic = function fromGuildBasic(guild) {
+}
+export function fromGuildBasic(guild) {
   let description;
   let discovery_splash;
   let icon;
@@ -528,8 +528,8 @@ export const fromGuildBasic = function fromGuildBasic(guild) {
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(obj);
   return _false(metroImportAll, obj3);
-};
-export const dangerouslyConstructGuildRecordFromUntypedObject = function dangerouslyConstructGuildRecordFromUntypedObject(id) {
+}
+export function dangerouslyConstructGuildRecordFromUntypedObject(id) {
   let date;
   let defaultMessageNotifications;
   let explicitContentFilter;
@@ -646,8 +646,8 @@ export const dangerouslyConstructGuildRecordFromUntypedObject = function dangero
     prop1 = null;
   }
   return _false(metroImportAll, obj);
-};
-export const toGuildProperties = function toGuildProperties(id) {
+}
+export function toGuildProperties(id) {
   let items;
   let obj6;
   let premiumProgressBarEnabledUserUpdatedAt;
@@ -703,8 +703,8 @@ export const toGuildProperties = function toGuildProperties(id) {
     tmp10 = obj13;
   }
   return obj;
-};
-export const fromSerializedGuildRecord = function fromSerializedGuildRecord(item10009) {
+}
+export function fromSerializedGuildRecord(item10009) {
   let date;
   let date1;
   let obj2;
@@ -729,10 +729,10 @@ export const fromSerializedGuildRecord = function fromSerializedGuildRecord(item
   delete obj["roles"];
   delete obj["member"];
   return _false(metroImportAll, obj);
-};
-export const constructFromPartialGuildRecord = function constructFromPartialGuildRecord(arg0) {
+}
+export function constructFromPartialGuildRecord(arg0) {
   const obj = {};
   const merged = Object.assign(metroImportDefault);
   const merged1 = Object.assign(arg0);
   return _false(metroImportAll, obj);
-};
+}

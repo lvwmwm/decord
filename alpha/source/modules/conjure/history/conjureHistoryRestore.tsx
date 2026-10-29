@@ -1,12 +1,12 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12326
+// Function ID: 12327
 // Name: conjureHistoryRestore
-// Dependencies: [5, 12273, 12269, 1125, 3863, 2]
+// Dependencies: [5, 12327, 12323, 1125, 3864, 2]
 // Exports: rewindDataAfterVersionRestore
 
-// Module 12272 (conjureHistoryRestore)
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12269 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 12273 */;
+// Module 12326 (conjureHistoryRestore)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12323 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 12327 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _runConjureDataRewind() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -85,7 +85,7 @@ let closure_4 = { ok: false, code: "failed", message: "" };
 const result = size.fileFinishedImporting("modules/conjure/history/conjureHistoryRestore.tsx");
 
 export { runConjureDataRewind };
-export const rewindDataAfterVersionRestore = function rewindDataAfterVersionRestore(arg0, c1) {
+export function rewindDataAfterVersionRestore(arg0, c1) {
   let closure_0 = arg0;
   const promise = runConjureDataRewind(arg0, () => {
     obj = conjureHistoryRequests;
@@ -106,4 +106,4 @@ export const rewindDataAfterVersionRestore = function rewindDataAfterVersionRest
     }
     return stringResult;
   });
-};
+}

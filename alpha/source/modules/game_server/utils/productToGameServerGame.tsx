@@ -1,15 +1,15 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13878
+// Function ID: 13879
 // Name: productToGameServerGame
 // Dependencies: [2]
 // Exports: productToGameServerGame
 
-// Module 13645 (productToGameServerGame)
+// Module 13878 (productToGameServerGame)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_server/utils/productToGameServerGame.tsx");
 
-export const productToGameServerGame = function productToGameServerGame(id) {
+export function productToGameServerGame(id) {
   let can_market;
   let disabled;
   let early_access;
@@ -90,4 +90,4 @@ export const productToGameServerGame = function productToGameServerGame(id) {
     }
   }
   return obj;
-};
+}

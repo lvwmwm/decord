@@ -1,17 +1,17 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15365
+// Function ID: 15366
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 2046, 558, 576, 4829, 2]
+// Dependencies: [19, 2047, 558, 576, 4830, 2]
 
-// Module 15130 (useOutboundPromotionRedemptionEndDate)
+// Module 15365 (useOutboundPromotionRedemptionEndDate)
 import react2 from "react" /* 576 */;
-import DateUtils from "DateUtils" /* 4829 */;
+import DateUtils from "DateUtils" /* 4830 */;
 import react from "react" /* 19 */;
-import module_2046 from "module_2046" /* 2046 */;
+import module_2047 from "module_2047" /* 2047 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = module_2046.duration(30, "days");
+let closure_4 = module_2047.duration(30, "days");
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutboundPromotionRedemptionEndDate(endDate, arg1) {
   let tmp7;
   const obj = react2;
@@ -25,19 +25,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutboun
       return tmp4;
     }
   }
-  const dateFormat = tmp(4829).dateFormat;
+  const dateFormat = tmp(4830).dateFormat;
   DateUtils;
   if (arg1) {
     let addResult;
     if (null != endDate.outboundRedemptionEndDate) {
-      addResult = module_2046(endDate.outboundRedemptionEndDate);
+      addResult = module_2047(endDate.outboundRedemptionEndDate);
     } else {
-      const obj2 = module_2046(endDate.endDate);
+      const obj2 = module_2047(endDate.endDate);
       addResult = obj2.add(closure_4);
     }
     tmp7 = addResult;
   } else {
-    tmp7 = module_2046(endDate.endDate);
+    tmp7 = module_2047(endDate.endDate);
   }
   const dateFormatResult = dateFormat(tmp7, "LL");
   cResult[0] = arg1;
@@ -56,14 +56,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutboun
     if (closure_1) {
       let addResult;
       if (null != closure_0.outboundRedemptionEndDate) {
-        addResult = module_2046(tmp6.outboundRedemptionEndDate);
+        addResult = module_2047(tmp6.outboundRedemptionEndDate);
       } else {
-        const obj = module_2046(closure_0.endDate);
+        const obj = module_2047(closure_0.endDate);
         addResult = obj.add(closure_4);
       }
       tmp5 = addResult;
     } else {
-      tmp5 = module_2046(closure_0.endDate);
+      tmp5 = module_2047(closure_0.endDate);
     }
     return dateFormat(tmp5, "LL");
   }, items);

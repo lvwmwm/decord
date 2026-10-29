@@ -1,14 +1,14 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14678
+// Function ID: 14679
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14445, 1084, 14447, 1294, 584, 2]
+// Dependencies: [5, 14679, 1084, 14681, 1294, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14444 (CustomActivityLinkUtils)
+// Module 14678 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1084 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14447 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14445 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14679 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "paths" }, done: true };
+            return { value: { customId: "r" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "paths" };
+              obj = { customId: "r" };
             } else {
               obj = { customId: custom_id.custom_id };
             }
@@ -237,11 +237,11 @@ const set = new Set();
 let result = size.fileFinishedImporting("modules/activities/utils/CustomActivityLinkUtils.tsx");
 
 export { fetchCustomActivityLink };
-export const getCustomActivityLinkParams = function getCustomActivityLinkParams() {
+export function getCustomActivityLinkParams() {
   return obj(...arguments);
-};
+}
 export { loadCustomActivityLink };
-export const getOrFetchCustomActivityLink = function getOrFetchCustomActivityLink(id, linkId) {
+export function getOrFetchCustomActivityLink(id, linkId) {
   let one = CustomActivityLinksStore.getOne(id, linkId);
   if (null == one) {
     one = null;
@@ -253,4 +253,4 @@ export const getOrFetchCustomActivityLink = function getOrFetchCustomActivityLin
     }
   }
   return one;
-};
+}

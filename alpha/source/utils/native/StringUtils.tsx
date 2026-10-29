@@ -1,16 +1,16 @@
-// Module ID: 10703
-// Function ID: 10704
-// Dependencies: [10702, 2]
+// Module ID: 10736
+// Function ID: 10737
+// Dependencies: [10735, 2]
 // Exports: splitGraphemes
 
-// Module 10703
-import _modDef10702 from "module_10702" /* 10702 */;
+// Module 10736
+import _modDef10735 from "module_10735" /* 10735 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/StringUtils.tsx");
 
-export const splitGraphemes = function splitGraphemes(name) {
-  const obj = _modDef10702();
+export function splitGraphemes(name) {
+  const obj = _modDef10735();
   const items = [];
   let match = obj.exec(name);
   let num = 0;
@@ -38,4 +38,4 @@ export const splitGraphemes = function splitGraphemes(name) {
     HermesBuiltin.apply(push2, items2, items);
   }
   return items;
-};
+}

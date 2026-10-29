@@ -1,12 +1,12 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9697
+// Function ID: 9698
 // Name: scopes
-// Dependencies: [1125, 8864, 2]
+// Dependencies: [1125, 8867, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9665 (scopes)
+// Module 9697 (scopes)
 import intl66 from "intl" /* 1125 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8864 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
 import size from "module_2" /* 2 */;
 
 let items = [
@@ -53,7 +53,7 @@ export const FAKE_SCOPES = items;
 export const OrderedAccountScopes = items1;
 export const ValidScopes = combined;
 export const RemovedScopes = ["rpc.api"];
-export const getScopeNames = function getScopeNames(nextResult, c2) {
+export function getScopeNames(nextResult, c2) {
   if (OAuth2Scopes.OAuth2Scopes.IDENTIFY === nextResult) {
     const intl65 = intl66.intl;
     const items = [intl65.string(intl66.t.DD9KQh)];
@@ -315,12 +315,12 @@ export const getScopeNames = function getScopeNames(nextResult, c2) {
     const items57 = [nextResult];
     return items57;
   }
-};
-export const isSocialLayerUmbrellaScope = function isSocialLayerUmbrellaScope(item) {
+}
+export function isSocialLayerUmbrellaScope(item) {
   const tmp3 = item === OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE || item === OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER;
   return tmp3;
-};
-export const getSecurityMessage = function getSecurityMessage(scopes) {
+}
+export function getSecurityMessage(scopes) {
   if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE)) {
     let formatResult;
     if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
@@ -341,4 +341,4 @@ export const getSecurityMessage = function getSecurityMessage(scopes) {
   }
   const intl2 = tmp(1125).intl;
   formatResult = intl2.format(tmp(1125).t.o0GMBD, {});
-};
+}

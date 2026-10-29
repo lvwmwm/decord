@@ -1,12 +1,12 @@
-// Module ID: 10926
-// Function ID: 10927
+// Module ID: 10961
+// Function ID: 10962
 // Name: isOrientationLockSupported
-// Dependencies: [4961, 1627, 2]
+// Dependencies: [4962, 1628, 2]
 // Exports: default
 
-// Module 10926 (isOrientationLockSupported)
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import DeviceUtils from "DeviceUtils" /* 4961 */;
+// Module 10961 (isOrientationLockSupported)
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import DeviceUtils from "DeviceUtils" /* 4962 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/device/native/isOrientationLockSupported.tsx");

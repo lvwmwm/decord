@@ -1,10 +1,10 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19801
+// Function ID: 19802
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 4874, 1389, 1084, 558, 576, 7398, 573, 19569, 19570, 19571, 7390, 1125, 2064, 19572, 2]
+// Dependencies: [19, 4875, 1389, 1084, 558, 576, 7421, 573, 19802, 19803, 19804, 7413, 1125, 2065, 19805, 2]
 
-// Module 19568 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 4874 */;
+// Module 19801 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 4875 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(19569);
+  const tmp22 = refresh(19802);
   if (features != null) {
     class T {
       constructor() {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
   tmp22(undefined);
-  const tmp21Result = refresh(19570);
+  const tmp21Result = refresh(19803);
   if (features != null) {
     class T {
       constructor() {
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   const tmp21ResultResult = tmp21Result(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
   const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(19571)(eligibility));
-  refresh(19571)(eligibility);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(19804)(eligibility));
+  refresh(19804)(eligibility);
   const tmp27 = cResult[7];
   if (features != null) {
     class T {
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       }
     }
   }
-  const useIsMonetizationReapplicationDisabled = tmp(7390).useIsMonetizationReapplicationDisabled;
-  tmp(7390);
+  const useIsMonetizationReapplicationDisabled = tmp(7413).useIsMonetizationReapplicationDisabled;
+  tmp(7413);
   if (features != null) {
     class T {
       constructor() {
@@ -311,7 +311,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     const format = tmp39.format;
     const obj3 = { faqUrl: tmp21Result2.getArticleURL(constants2.CREATOR_FAQ) };
     const aJUdOi = tmp(1125).t.aJUdOi;
-    tmp21Result2 = refresh(2064);
+    tmp21Result2 = refresh(2065);
     cResult[9] = format(aJUdOi, obj3);
     const formatResult = format(aJUdOi, obj3);
   } else {
@@ -509,23 +509,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(19569);
+  const tmp10 = refresh(19802);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(19570);
+  const tmp9Result = refresh(19803);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(19571)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(19804)(eligibility));
   let hasItem2;
-  refresh(19571)(eligibility);
+  refresh(19804)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(7390).useIsMonetizationReapplicationDisabled;
-  tmp(7390);
+  const useIsMonetizationReapplicationDisabled = tmp(7413).useIsMonetizationReapplicationDisabled;
+  tmp(7413);
   if (features != null) {
     id2 = features.id;
   }
@@ -559,7 +559,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   const intl = tmp(1125).intl;
   const aJUdOi = tmp(1125).t.aJUdOi;
-  const tmp9Result3 = refresh(2064);
+  const tmp9Result3 = refresh(2065);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
@@ -581,7 +581,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(19572);
+    const tmpResult4 = tmp(19805);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
@@ -613,7 +613,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
     const TvX207 = tmp(1125).t.TvX207;
-    tmp9Result4 = refresh(2064);
+    tmp9Result4 = refresh(2065);
     formatResult2 = format(TvX207, obj5);
   }
 });

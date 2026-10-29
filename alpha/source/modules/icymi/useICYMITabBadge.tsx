@@ -1,12 +1,12 @@
-// Module ID: 18118
-// Function ID: 18119
+// Module ID: 18352
+// Function ID: 18353
 // Name: useICYMITabBadge
-// Dependencies: [8860, 558, 576, 504, 2]
+// Dependencies: [8863, 558, 576, 504, 2]
 // Exports: icymiTabBadgeShown
 
-// Module 18118 (useICYMITabBadge)
+// Module 18352 (useICYMITabBadge)
 import react from "react" /* 576 */;
-import ICYMIStore from "ICYMIStore" /* 8860 */;
+import ICYMIStore from "ICYMIStore" /* 8863 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,6 +56,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMITa
 const result = size.fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");
 
 export default tmp2;
-export const icymiTabBadgeShown = function icymiTabBadgeShown() {
+export function icymiTabBadgeShown() {
   return ICYMIStore.hasNewContent();
-};
+}

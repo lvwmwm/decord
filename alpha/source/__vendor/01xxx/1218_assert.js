@@ -6,7 +6,7 @@
 
 // Module 1218 (assert)
 
-export const assert = function assert(arg0, arg1) {
+export function assert(arg0, arg1) {
   const tmp = arg0;
   if (!tmp) {
     const _Error = Error;
@@ -15,8 +15,8 @@ export const assert = function assert(arg0, arg1) {
     const error = new Error(arg1);
     throw error;
   }
-};
-export const assertNever = function assertNever(arg0, arg1) {
+}
+export function assertNever(arg0, arg1) {
   let text = arg1;
   const _Error = Error;
   if (null == arg1) {
@@ -24,8 +24,8 @@ export const assertNever = function assertNever(arg0, arg1) {
   }
   const _Error1 = new _Error(text);
   throw _Error1;
-};
-export const assertInt32 = function assertInt32(NumberResult) {
+}
+export function assertInt32(NumberResult) {
   if (typeof NumberResult !== "number") {
     const _Error2 = Error;
     const self3 = this;
@@ -40,8 +40,8 @@ export const assertInt32 = function assertInt32(NumberResult) {
     const error1 = new Error("invalid int 32: " + NumberResult);
     throw error1;
   }
-};
-export const assertUInt32 = function assertUInt32(NumberResult) {
+}
+export function assertUInt32(NumberResult) {
   if (typeof NumberResult !== "number") {
     const _Error2 = Error;
     const self3 = this;
@@ -56,8 +56,8 @@ export const assertUInt32 = function assertUInt32(NumberResult) {
     const error1 = new Error("invalid uint 32: " + NumberResult);
     throw error1;
   }
-};
-export const assertFloat32 = function assertFloat32(NumberResult) {
+}
+export function assertFloat32(NumberResult) {
   if (typeof NumberResult !== "number") {
     const _Error2 = Error;
     const self3 = this;
@@ -74,4 +74,4 @@ export const assertFloat32 = function assertFloat32(NumberResult) {
       throw error1;
     }
   }
-};
+}

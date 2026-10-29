@@ -1,14 +1,14 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6778
+// Function ID: 6779
 // Name: UserSettingsURLUtils
-// Dependencies: [32, 1094, 1084, 6756, 1264, 6757, 2]
+// Dependencies: [32, 1094, 1084, 6779, 1264, 6780, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 6755 (UserSettingsURLUtils)
+// Module 6778 (UserSettingsURLUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettingsKeys from "UserSettingsKeys" /* 6756 */;
-import _mod6757 from "module_6757" /* 6757 */;
+import UserSettingsKeys from "UserSettingsKeys" /* 6779 */;
+import _mod6780 from "module_6780" /* 6780 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -20,11 +20,11 @@ const UserSettingsPath = UserSettingsConstants.UserSettingsPath;
 const re7 = /[_\s]|%20/g;
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsURLUtils.tsx");
 
-export const settingsPathToRoute = function settingsPathToRoute(ACCOUNT) {
+export function settingsPathToRoute(ACCOUNT) {
   const parts = ACCOUNT.split("/");
   return metroRequire.SETTINGS(parts[0], parts[1]);
-};
-export const trackParseSettingsUrl = function trackParseSettingsUrl(path, user_settings_url_origin) {
+}
+export function trackParseSettingsUrl(path, user_settings_url_origin) {
   path = path.path;
   if (null != path.target) {
     const obj2 = { user_settings_url_path: path, user_settings_url_origin };
@@ -35,8 +35,8 @@ export const trackParseSettingsUrl = function trackParseSettingsUrl(path, user_s
     const obj = AnalyticsUtilsDefault;
     obj.track(hasOwnProperty.USER_SETTINGS_URL_PARSING_FAILED, obj4);
   }
-};
-export const parseSettingsUrl = function parseSettingsUrl(arg0) {
+}
+export function parseSettingsUrl(arg0) {
   let ACCESSIBILITY;
   let ACCOUNT;
   let ACCOUNT_ACCOUNT_STANDING;
@@ -116,11 +116,11 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
     tmp8 = tmp9;
   }
   const obj2 = { target: tmp8, path: joined, params: parse(search) };
-  parse = tmp6(6757).parse;
-  _mod6757;
+  parse = tmp6(6780).parse;
+  _mod6780;
   if (search == null) {
     const _location = location;
     search = location.search;
   }
   return obj2;
-};
+}

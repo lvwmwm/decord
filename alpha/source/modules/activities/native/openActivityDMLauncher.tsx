@@ -1,11 +1,11 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15728
+// Function ID: 15729
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1501, 14444, 11401, 7314, 5670, 6845, 7448, 5195, 1628, 2]
+// Dependencies: [5, 1502, 14678, 11455, 7338, 5672, 6868, 7471, 5196, 1629, 2]
 // Exports: default
 
-// Module 15494 (openActivityDMLauncher)
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+// Module 15728 (openActivityDMLauncher)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _openActivityDMLauncher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _openActivityDMLauncher() {
               id = undefined;
               c3 = 1;
               linkChannelId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -159,7 +159,7 @@ let obj = function _openActivityDMLauncher() {
               }
             }
             linkChannelId = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp30) {
           linkChannelId = 3;

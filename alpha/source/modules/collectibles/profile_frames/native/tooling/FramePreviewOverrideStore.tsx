@@ -1,15 +1,15 @@
-// Module ID: 8731
-// Function ID: 8732
+// Module ID: 8734
+// Function ID: 8735
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 8732, 3, 8733, 1161, 8734, 8738, 570, 2]
+// Dependencies: [5, 17, 8735, 3, 8736, 1161, 8737, 8741, 570, 2]
 
-// Module 8731 (FramePreviewOverrideStore)
+// Module 8734 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1161 */;
-import FileManagerUtils from "FileManagerUtils" /* 8733 */;
+import FileManagerUtils from "FileManagerUtils" /* 8736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FrameOverrideConstants from "FrameOverrideConstants" /* 8732 */;
+import FrameOverrideConstants from "FrameOverrideConstants" /* 8735 */;
 import module_570 from "module_570" /* 570 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _readManifest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ obj = function _buildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -317,7 +317,7 @@ obj = module_570.create((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -359,7 +359,7 @@ obj = module_570.create((arg0) => {
             const message2 = closure_2;
             if (isStale()) {
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               const _Error = Error;
               message = message2 instanceof Error;
@@ -388,7 +388,7 @@ obj = module_570.create((arg0) => {
               if (isStale()) {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else if (null == closure_2) {
                 message = closure_129_0;
                 closure_129_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
@@ -417,7 +417,7 @@ obj = module_570.create((arg0) => {
             if (isStale()) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               message = closure_129_0;
               obj = { override, status: "idle", error: null };
@@ -426,7 +426,7 @@ obj = module_570.create((arg0) => {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp36) {
         closure_2 = tmp36;

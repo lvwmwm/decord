@@ -1,19 +1,20 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13487
+// Function ID: 13488
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 587, 13213, 5004, 558, 576, 8661, 6397, 13254, 2]
+// Dependencies: [19, 17, 21, 587, 13440, 5005, 558, 576, 13259, 6079, 6421, 13239, 2]
 
-// Module 13253 (CheckpointRecapCard)
+// Module 13487 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6397 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 8661 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13213 */;
-import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13254 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6079 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6421 */;
+import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13239 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13259 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13440 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,15 +34,19 @@ items = [{ rotate: "90deg" }];
 let closure_9 = createStyles.createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointRecapCard(arg0) {
   let character;
+  let isStepFocusTarget;
   let maxHeight;
+  let tmp10;
   let tmp11;
-  let tmp7;
-  let tmp9;
+  let tmp14;
+  let tmp16;
   const obj = react2;
-  const cResult = obj.c(18);
-  ({ character, maxHeight } = arg0);
-  const tmp4 = closure_9();
+  const cResult = obj.c(21);
+  ({ character, maxHeight, isStepFocusTarget } = arg0);
+  const tmp4 = undefined !== isStepFocusTarget && isStepFocusTarget;
+  const tmp5 = closure_9();
   let num = 1;
+  const context = react.useContext(CheckpointStepHeaderRefContextDefault);
   if (null != maxHeight) {
     const _Math = Math;
     const _Math2 = Math;
@@ -49,99 +54,123 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   }
   if (cResult[0] !== character) {
     const tmpResult = CheckpointCardColors;
-    const cardColors = tmpResult.getCardColors(character);
+    const characterCardColorPalette = tmpResult.getCharacterCardColorPalette(character);
+    const tmpResult3 = CheckpointCardColors;
+    const cardColors = tmpResult3.getCardColors(characterCardColorPalette);
     cResult[0] = character;
-    cResult[1] = cardColors;
-    tmp7 = cardColors;
+    cResult[1] = characterCardColorPalette;
+    cResult[2] = cardColors;
+    tmp11 = cardColors;
+    tmp10 = characterCardColorPalette;
   } else {
-    tmp7 = cResult[1];
+    tmp10 = cResult[1];
+    tmp11 = cResult[2];
   }
-  const primaryBackgroundColor = tmp7.primaryBackgroundColor;
-  if (cResult[2] !== character) {
+  const primaryBackgroundColor = tmp11.primaryBackgroundColor;
+  if (cResult[3] !== character) {
     let checkpointCharacterAccessibilityLabel = null;
     if (null != character) {
-      const tmpResult2 = CheckpointCharacterAccessibilityUtils;
-      checkpointCharacterAccessibilityLabel = tmpResult2.getCheckpointCharacterAccessibilityLabel(character);
+      const tmpResult4 = CheckpointCharacterAccessibilityUtils;
+      checkpointCharacterAccessibilityLabel = tmpResult4.getCheckpointCharacterAccessibilityLabel(character);
     }
-    cResult[2] = character;
-    cResult[3] = checkpointCharacterAccessibilityLabel;
-    tmp9 = checkpointCharacterAccessibilityLabel;
+    cResult[3] = character;
+    cResult[4] = checkpointCharacterAccessibilityLabel;
+    tmp14 = checkpointCharacterAccessibilityLabel;
   } else {
-    tmp9 = cResult[3];
+    tmp14 = cResult[4];
   }
-  if (cResult[4] !== primaryBackgroundColor) {
-    const tmp15 = jsx(CheckpointStatNumberDefault, { value, color: primaryBackgroundColor, size: 64 });
-    cResult[4] = primaryBackgroundColor;
-    cResult[5] = tmp15;
-    tmp11 = tmp15;
+  if (cResult[5] !== primaryBackgroundColor) {
+    const tmp19 = jsx(CheckpointStatNumberDefault, { value, color: primaryBackgroundColor, size: 64 });
+    cResult[5] = primaryBackgroundColor;
+    cResult[6] = tmp19;
+    tmp16 = tmp19;
   } else {
-    tmp11 = cResult[5];
+    tmp16 = cResult[6];
   }
-  if (cResult[6] === tmp4.year) {
-    let tmp16;
-    if (cResult[7] === tmp11) {
-      tmp16 = cResult[8];
+  if (cResult[7] === tmp5.year) {
+    let tmp20;
+    if (cResult[8] === tmp16) {
+      tmp20 = cResult[9];
     }
-    if (cResult[9] === character) {
-      if (cResult[10] === num) {
-        let tmp18;
-        let tmp24;
-        if (cResult[11] === tmp16) {
-          tmp18 = cResult[12];
-        }
-        if (null == tmp9) {
-          let tmp28;
-          if (cResult[13] !== tmp18) {
-            const tmp31 = <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{tmp18}</View>;
-            cResult[13] = tmp18;
-            cResult[14] = tmp31;
-            tmp28 = tmp31;
-          } else {
-            tmp28 = cResult[14];
+    if (cResult[10] === tmp10) {
+      if (cResult[11] === character) {
+        if (cResult[12] === num) {
+          let tmp22;
+          if (cResult[13] === tmp20) {
+            tmp22 = cResult[14];
           }
-          tmp24 = tmp28;
-        } else {
-          if (cResult[15] === tmp9) {
-            if (cResult[16] === tmp18) {
-              tmp24 = cResult[17];
+          if (null == tmp14) {
+            let tmp32;
+            if (cResult[15] !== tmp22) {
+              const tmp35 = <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{tmp22}</View>;
+              cResult[15] = tmp22;
+              cResult[16] = tmp35;
+              tmp32 = tmp35;
+            } else {
+              tmp32 = cResult[16];
             }
+            return tmp32;
+          } else {
+            let tmp27;
+            if (tmp4) {
+              tmp27 = context;
+            }
+            if (cResult[17] === tmp14) {
+              if (cResult[18] === tmp22) {
+                let tmp28;
+                if (cResult[19] === tmp27) {
+                  tmp28 = cResult[20];
+                }
+                return tmp28;
+              }
+            }
+            const tmp31 = <View ref={tmp27} accessible accessibilityRole="image" accessibilityLabel={tmp14}>{tmp22}</View>;
+            cResult[17] = tmp14;
+            cResult[18] = tmp22;
+            cResult[19] = tmp27;
+            cResult[20] = tmp31;
+            tmp28 = tmp31;
           }
-          const tmp27 = <View accessible accessibilityRole="image" accessibilityLabel={tmp9}>{tmp18}</View>;
-          cResult[15] = tmp9;
-          cResult[16] = tmp18;
-          cResult[17] = tmp27;
-          tmp24 = tmp27;
         }
-        return tmp24;
       }
     }
-    const tmp23 = jsx(CheckpointCardFrameDefault, { character, canvasWidth: 200, canvasHeight, scale: num, clydeSize: 28, characterLayout: rect, children: tmp16 });
-    cResult[9] = character;
-    cResult[10] = num;
-    cResult[11] = tmp16;
-    cResult[12] = tmp23;
-    tmp18 = tmp23;
+    const tmp26 = jsx(CheckpointCardFrameDefault, { character, cardColorPalette: tmp10, canvasWidth: 200, canvasHeight, scale: num, clydeSize: 28, characterLayout: rect, children: tmp20 });
+    cResult[10] = tmp10;
+    cResult[11] = character;
+    cResult[12] = num;
+    cResult[13] = tmp20;
+    cResult[14] = tmp26;
+    tmp22 = tmp26;
   }
-  const tmp17 = <View style={tmp4.year}>{tmp11}</View>;
-  cResult[6] = tmp4.year;
-  cResult[7] = tmp11;
-  cResult[8] = tmp17;
-  tmp16 = tmp17;
+  const tmp21 = <View style={tmp5.year}>{tmp16}</View>;
+  cResult[7] = tmp5.year;
+  cResult[8] = tmp16;
+  cResult[9] = tmp21;
+  tmp20 = tmp21;
 }) : (function CheckpointRecapCard(character) {
-  let obj6;
+  let isStepFocusTarget;
+  let maxHeight;
+  let obj8;
   character = character.character;
-  const maxHeight = character.maxHeight;
-  let num = 1;
+  ({ maxHeight, isStepFocusTarget } = character);
+  if (isStepFocusTarget === undefined) {
+    isStepFocusTarget = false;
+  }
+  let obj = react;
   const tmp = closure_9();
+  let num = 1;
+  const context = react.useContext(CheckpointStepHeaderRefContextDefault);
   if (null != maxHeight) {
     const _Math = Math;
     const _Math2 = Math;
     num = Math.min(Math.max(maxHeight / canvasHeight, 0.75), 1);
   }
-  let obj = character(8661);
+  const obj2 = character(6079);
+  const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const primaryBackgroundColor = obj.getCardColors(character).primaryBackgroundColor;
-  const memo = react.useMemo(() => {
+  const obj3 = character(6079);
+  const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
+  const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;
     if (null != character) {
       const obj = CheckpointCharacterAccessibilityUtils;
@@ -150,16 +179,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     return checkpointCharacterAccessibilityLabel;
   }, items);
   CheckpointCardFrameDefault;
-  const tmp8 = <tmp6 character={character} canvasWidth={200} canvasHeight={canvasHeight} scale={num} clydeSize={28} characterLayout={rect}>{null}</tmp6>;
-  const tmp5 = jsx;
-  const tmp7 = View;
+  const tmp12 = <tmp2Result character={character} cardColorPalette={characterCardColorPalette} canvasWidth={200} canvasHeight={canvasHeight} scale={num} clydeSize={28} characterLayout={rect}>{null}</tmp2Result>;
+  const tmp11 = View;
+  const tmp9 = jsx;
   if (null == memo) {
-    obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp8 };
-    const obj5 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp8 };
+    obj8 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp12 };
+    const obj7 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp12 };
   } else {
-    obj6 = { accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp8 };
+    let tmp13;
+    if (isStepFocusTarget) {
+      tmp13 = context;
+    }
+    obj8 = { ref: tmp13, accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp12 };
   }
-  return tmp5(tmp7, obj6);
+  return tmp9(tmp11, obj8);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointRecapCard.tsx");
 

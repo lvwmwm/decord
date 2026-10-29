@@ -1,11 +1,11 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9631
+// Function ID: 9632
 // Name: ConjureMobileExperiment
-// Dependencies: [1452, 558, 576, 504, 2]
+// Dependencies: [1453, 558, 576, 504, 2]
 // Exports: isConjureMobileEnabled
 
-// Module 9599 (ConjureMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 9631 (ConjureMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
   let obj = require("react");
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp(1452).ApexExperimentStore];
+    const items = [tmp(1453).ApexExperimentStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -77,7 +77,7 @@ const result = size.fileFinishedImporting("modules/conjure/experiments/ConjureMo
 
 export default apexExperiment;
 export const useIsConjureMobileEnabled = tmp3;
-export const isConjureMobileEnabled = function isConjureMobileEnabled(openConjureHomeScreen_str) {
+export function isConjureMobileEnabled(openConjureHomeScreen_str) {
   const obj = { location: openConjureHomeScreen_str };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

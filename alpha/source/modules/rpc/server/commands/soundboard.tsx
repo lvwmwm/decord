@@ -1,16 +1,16 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16264
+// Function ID: 16265
 // Name: soundboard
-// Dependencies: [5, 6042, 1389, 6413, 1095, 8864, 7480, 7481, 11517, 7517, 7488, 9296, 7519, 7314, 2]
+// Dependencies: [5, 6046, 1389, 6437, 1095, 8867, 7503, 7504, 11571, 7540, 7511, 9300, 7542, 7338, 2]
 
-// Module 16027 (soundboard)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7480 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8864 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11517 */;
+// Module 16264 (soundboard)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7503 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11571 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6042 */;
+import SoundboardStore from "SoundboardStore" /* 6046 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants_mod from "Constants" /* 6413 */;
+import Constants_mod from "Constants" /* 6437 */;
 import Constants_mod2 from "Constants" /* 1095 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

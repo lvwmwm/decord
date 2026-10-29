@@ -1,13 +1,13 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17765
+// Function ID: 17766
 // Name: SecureFramesVerifiedDevicesSetting
-// Dependencies: [8365, 1084, 11248, 1125, 17527, 2]
+// Dependencies: [8387, 1084, 11302, 1125, 17766, 2]
 
-// Module 17526 (SecureFramesVerifiedDevicesSetting)
+// Module 17765 (SecureFramesVerifiedDevicesSetting)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

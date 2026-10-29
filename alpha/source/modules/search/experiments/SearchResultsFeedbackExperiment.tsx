@@ -1,12 +1,12 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19332
+// Function ID: 19333
 // Name: SearchResultsFeedbackExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsSearchResultsFeedbackExperimentEnabled
 
-// Module 19097 (SearchResultsFeedbackExperiment)
+// Module 19332 (SearchResultsFeedbackExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSearchR
 const result = size.fileFinishedImporting("modules/search/experiments/SearchResultsFeedbackExperiment.tsx");
 
 export const useIsSearchResultsFeedbackExperimentEnabled = tmp2;
-export const getIsSearchResultsFeedbackExperimentEnabled = function getIsSearchResultsFeedbackExperimentEnabled(location) {
+export function getIsSearchResultsFeedbackExperimentEnabled(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).enabled;
-};
+}

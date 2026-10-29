@@ -1,19 +1,19 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 13016
+// Function ID: 13017
 // Name: usePendingFolderGuildIds
-// Dependencies: [5036, 4878, 558, 576, 504, 2]
+// Dependencies: [5037, 4879, 558, 576, 504, 2]
 // Exports: getPendingFolderGuildIds
 
-// Module 12795 (usePendingFolderGuildIds)
+// Module 13016 (usePendingFolderGuildIds)
 import react from "react" /* 576 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5036 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const f116617 = (item) => null == closure_0[item];
+const f118108 = (item) => null == closure_0[item];
 function getPendingFolderGuildIds() {
   let obj;
   let obj2;
@@ -25,7 +25,7 @@ function getPendingFolderGuildIds() {
   [obj, obj2] = tmp;
   const guildIds = obj.computeGuildIds();
   const guilds = obj2.getGuilds();
-  return guildIds.filter(f116617);
+  return guildIds.filter(f118108);
 }
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingFolderGuildIds() {
   let tmp4;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePending
       [obj, obj2] = items;
       const guildIds = obj.computeGuildIds();
       const guilds = obj2.getGuilds();
-      return guildIds.filter(f116617);
+      return guildIds.filter(f118108);
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePending
     [obj, obj2] = items;
     const guildIds = obj.computeGuildIds();
     const guilds = obj2.getGuilds();
-    return guildIds.filter(f116617);
+    return guildIds.filter(f118108);
   });
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");

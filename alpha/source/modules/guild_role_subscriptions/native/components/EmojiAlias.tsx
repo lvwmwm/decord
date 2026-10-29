@@ -1,15 +1,15 @@
-// Module ID: 19602
-// Function ID: 19603
+// Module ID: 19835
+// Function ID: 19836
 // Name: EmojiAlias
-// Dependencies: [19, 17, 21, 5004, 558, 576, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 5271, 2]
 
-// Module 19602 (EmojiAlias)
+// Module 19835 (EmojiAlias)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,12 +19,12 @@ const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ emojiAlias: { alignItems: "center", flexDirection: "row" }, emojiColon: { width: 4 } });
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiAlias(arg0) {
+  let children;
   let items;
-  let name;
   let style;
   const obj = react2;
   const cResult = obj.c(14);
-  ({ name, style } = arg0);
+  ({ children, style } = arg0);
   const tmp4 = closure_5();
   if (cResult[0] === style) {
     let tmp5;
@@ -43,10 +43,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiAlias(a
     } else {
       tmp6 = cResult[4];
     }
-    if (cResult[5] !== name) {
-      const obj3 = { lineClamp: 1, variant: "text-md/bold", color: "interactive-text-active", children: name };
+    if (cResult[5] !== children) {
+      const obj3 = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", children };
       const tmp11 = _false(Text_Text.Text, obj3);
-      cResult[5] = name;
+      cResult[5] = children;
       cResult[6] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -88,18 +88,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiAlias(a
   cResult[2] = items1;
   tmp5 = items1;
 }) : (function EmojiAlias(arg0) {
+  let children;
   let items;
   let items1;
-  let name;
   let style;
-  ({ name, style } = arg0);
+  ({ children, style } = arg0);
   const tmp = closure_5();
   const obj = { style: items, children: items1 };
   items = [tmp.emojiAlias, style];
   items1 = [, , ];
   const obj2 = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
   items1[0] = _false(Text_Text.Text, obj2);
-  items1[1] = _false(Text_Text.Text, { lineClamp: 1, variant: "text-md/bold", color: "interactive-text-active", children: name });
+  items1[1] = _false(Text_Text.Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", children });
   const obj3 = { style: tmp.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
   items1[2] = _false(Text_Text.Text, obj3);
   return React3(View, obj);

@@ -8,6 +8,6 @@
 import MESSAGE_TYPE from "MESSAGE_TYPE" /* 1220 */;
 
 
-export const containsMessageType = function containsMessageType(arg0) {
+export function containsMessageType(arg0) {
   return null != arg0[MESSAGE_TYPE.MESSAGE_TYPE];
-};
+}

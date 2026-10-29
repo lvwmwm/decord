@@ -132,17 +132,17 @@ if (!tmp6) {
 }
 let closure_9 = !tmp7 ? (function codePointAt(str, arg1) {
   return str.codePointAt(arg1);
-}) : (function codePointAt(str, arg1) {
-  if (arg1 >= 0) {
-    if (arg1 < str.length) {
-      const charCodeAtResult = str.charCodeAt(arg1);
-      let sum = charCodeAtResult;
+}) : (function codePointAt(str, sum) {
+  if (sum >= 0) {
+    if (sum < str.length) {
+      const charCodeAtResult = str.charCodeAt(sum);
+      sum = charCodeAtResult;
       if (charCodeAtResult >= 55296) {
         sum = charCodeAtResult;
         if (charCodeAtResult <= 56319) {
           sum = charCodeAtResult;
-          if (arg1 + 1 !== str.length) {
-            const charCodeAtResult1 = str.charCodeAt(arg1 + 1);
+          if (sum + 1 !== str.length) {
+            const charCodeAtResult1 = str.charCodeAt(sum + 1);
             sum = charCodeAtResult;
             if (charCodeAtResult1 >= 56320) {
               sum = charCodeAtResult;

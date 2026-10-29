@@ -1,21 +1,21 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15780
+// Function ID: 15781
 // Name: Toast
-// Dependencies: [19, 17, 21, 587, 7303, 7048, 5004, 558, 576, 5288, 15545, 15546, 15547, 5270, 2]
+// Dependencies: [19, 17, 21, 587, 7327, 7072, 5005, 558, 576, 5289, 15781, 15782, 15783, 5271, 2]
 
-// Module 15544 (Toast)
+// Module 15780 (Toast)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7048 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7303 */;
-import _mod15545 from "module_15545" /* 15545 */;
-import ToastEntity from "ToastEntity" /* 15546 */;
-import isEmptyDefault from "isEmpty" /* 15547 */;
+import useToken from "useToken" /* 5289 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7072 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7327 */;
+import _mod15781 from "module_15781" /* 15781 */;
+import ToastEntity from "ToastEntity" /* 15782 */;
+import isEmptyDefault from "isEmpty" /* 15783 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(iconCo
   const tmpResult = useToken;
   const token = tmpResult.useToken(nativeDefault.modules.toast.TEXT_LINE_COUNT);
   if (null == obj[str]) {
-    const tmpResult3 = _mod15545;
+    const tmpResult3 = _mod15781;
     if (tmpResult3.isToastEntity(icon)) {
       let tmp19;
       if (cResult[0] !== icon) {
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(iconCo
       isEmptyDefault(text);
       if (tmp29) {
         const obj4 = { variant: "text-md/normal", color: "text-strong", lineClamp: token, style: tmp4.text, children: text };
-        tmp29 = metroRequire(tmp(5270).Text, obj4);
+        tmp29 = metroRequire(tmp(5271).Text, obj4);
       }
       cResult[12] = tmp4.text;
       cResult[13] = text;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(iconCo
   }
   if (icon1 == null) {
     let tmp9;
-    const tmpResult4 = _mod15545;
+    const tmpResult4 = _mod15781;
     if (!tmpResult4.isToastEntity(icon)) {
       tmp9 = icon;
     }
@@ -215,12 +215,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(iconCo
   const memo = secondaryIconColor.useMemo(() => {
     let obj;
     if (null == obj[str]) {
-      obj = _mod15545;
+      obj = _mod15781;
       const tmp2 = require;
       const tmp4 = icon;
       if (obj.isToastEntity(icon)) {
         const obj3 = { entity: tmp4 };
-        return metroRequire(tmp2(15546).ToastEntity, obj3);
+        return metroRequire(tmp2(15782).ToastEntity, obj3);
       }
     }
     icon = undefined;
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Toast(iconCo
     }
     if (icon == null) {
       let tmp9;
-      const obj2 = _mod15545;
+      const obj2 = _mod15781;
       const tmp8 = icon;
       if (!obj2.isToastEntity(icon)) {
         tmp9 = tmp8;

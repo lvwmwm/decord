@@ -1,18 +1,18 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 17046
+// Function ID: 17047
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7811, 6745, 21, 558, 576, 16737, 16791, 16706, 573, 16705, 9604, 9640, 9638, 9625, 9626, 16713, 16639, 6748, 7836, 16733, 9605, 16740, 14377, 9601, 9642, 16809, 16777, 1125, 7991, 14855, 9628, 2]
+// Dependencies: [5, 19, 7834, 6768, 21, 558, 576, 16975, 17029, 16944, 573, 16943, 9636, 9672, 9670, 9657, 9658, 16951, 16877, 6771, 7859, 16971, 9637, 16978, 14611, 9633, 9674, 17047, 17015, 1125, 8014, 15090, 9660, 2]
 
-// Module 16808 (QuestDockUnenrolledBody)
+// Module 17046 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
-import QuestUtils from "QuestUtils" /* 9601 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9642 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
+import QuestUtils from "QuestUtils" /* 9633 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9674 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7811 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import QuestStore from "QuestStore" /* 7834 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             setRestingQuestDockMode(constants.COLLAPSED);
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp42) {
         c2 = 3;
@@ -276,7 +276,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             closure_128_5(constants.COLLAPSED);
           }
           isMobileActivityQuest = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp42) {
         isMobileActivityQuest = 3;

@@ -1,13 +1,13 @@
-// Module ID: 19202
-// Function ID: 19203
+// Module ID: 19437
+// Function ID: 19438
 // Name: InterestPickerExperiment
-// Dependencies: [19, 1452, 558, 576, 2]
+// Dependencies: [19, 1453, 558, 576, 2]
 // Exports: isInterestPickerExperimentEnabled
 
-// Module 19202 (InterestPickerExperiment)
+// Module 19437 (InterestPickerExperiment)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,12 +47,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterestP
 const result = size.fileFinishedImporting("modules/waterwheels/interest/InterestPickerExperiment.tsx");
 
 export const InterestPickerExperiment = apexExperiment;
-export const isInterestPickerExperimentEnabled = function isInterestPickerExperimentEnabled(nuf_interest_picker_step) {
+export function isInterestPickerExperimentEnabled(nuf_interest_picker_step) {
   try {
     const obj = { location: nuf_interest_picker_step };
     return apexExperiment.getConfig(obj).enabled;
   } catch (err) {
     return false;
   }
-};
+}
 export const useInterestPickerGameList = tmp3;

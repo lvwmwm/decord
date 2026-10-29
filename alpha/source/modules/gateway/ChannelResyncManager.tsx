@@ -1,24 +1,24 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19294
+// Function ID: 19295
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4856, 6738, 4878, 6531, 1084, 4863, 3, 1101, 7250, 1264, 584, 7760, 15244, 1402, 1278, 2]
+// Dependencies: [5, 502, 4857, 6761, 4879, 6555, 1084, 4864, 3, 1101, 7274, 1264, 584, 7782, 15479, 1402, 1278, 2]
 
-// Module 19061 (ChannelResyncManager)
+// Module 19294 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7760 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15244 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7782 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {

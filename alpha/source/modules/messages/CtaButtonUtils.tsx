@@ -1,15 +1,15 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 13150
+// Function ID: 13151
 // Name: CtaButtonUtils
-// Dependencies: [11071, 12930, 12931, 558, 576, 504, 2]
+// Dependencies: [11125, 13151, 13152, 558, 576, 504, 2]
 // Exports: getCtaButtonType
 
-// Module 12929 (CtaButtonUtils)
+// Module 13150 (CtaButtonUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 12930 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12931 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11071 */;
+import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 13151 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13152 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCtaButt
 let result = size.fileFinishedImporting("modules/messages/CtaButtonUtils.tsx");
 
 export { CtaButtonType };
-export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
+export function getCtaButtonType(id, channel_id) {
   let CONNECT_TO_TEEN;
   const obj = useShouldRenderReportFalsePositiveButton;
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
@@ -96,5 +96,5 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
     }
   }
   return CONNECT_TO_TEEN;
-};
+}
 export const useCtaButtonType = tmp2;

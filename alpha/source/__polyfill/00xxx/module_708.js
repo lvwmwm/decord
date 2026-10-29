@@ -8,7 +8,7 @@ import _mod703 from "module_703" /* 703 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const isMatchingPattern = function isMatchingPattern(arr, test) {
+export function isMatchingPattern(arr, test) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -36,8 +36,8 @@ export const isMatchingPattern = function isMatchingPattern(arr, test) {
     isStringResult = isMatch;
   }
   return isStringResult;
-};
-export const safeJoin = function safeJoin(__v_isVNode, arg1) {
+}
+export function safeJoin(__v_isVNode, arg1) {
   if (Array.isArray(__v_isVNode)) {
     const items = [];
     let num = 0;
@@ -62,8 +62,8 @@ export const safeJoin = function safeJoin(__v_isVNode, arg1) {
   } else {
     return "";
   }
-};
-export const snipLine = function snipLine(arr, arg1) {
+}
+export function snipLine(arr, arg1) {
   if (arr.length <= 150) {
     return arr;
   } else {
@@ -97,8 +97,8 @@ export const snipLine = function snipLine(arr, arg1) {
     }
     return text;
   }
-};
-export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
+}
+export function stringMatchesSomePattern(arg0) {
   let closure_0 = arg0;
   let items = arg1;
   if (arg1 === undefined) {
@@ -133,8 +133,8 @@ export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) 
     }
     return isStringResult;
   });
-};
-export const truncate = function truncate(str) {
+}
+export function truncate(str) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 0;
@@ -151,4 +151,4 @@ export const truncate = function truncate(str) {
     }
   }
   return combined;
-};
+}

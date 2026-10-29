@@ -1,21 +1,21 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12074
+// Function ID: 12075
 // Name: AppLauncherOnboardingActionCreators
 // Dependencies: [584, 2]
 // Exports: setLastSeenTimeMs, setTriggeredOnboardingContentMetadata
 
-// Module 12020 (AppLauncherOnboardingActionCreators)
+// Module 12074 (AppLauncherOnboardingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/AppLauncherOnboardingActionCreators.tsx");
 
-export const setLastSeenTimeMs = function setLastSeenTimeMs() {
+export function setLastSeenTimeMs() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS" });
-};
-export const setTriggeredOnboardingContentMetadata = function setTriggeredOnboardingContentMetadata(triggeredOnboardingContentMetadata) {
+}
+export function setTriggeredOnboardingContentMetadata(triggeredOnboardingContentMetadata) {
   const obj = DispatcherDefault;
   const obj2 = { type: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", triggeredOnboardingContentMetadata };
   obj.dispatch(obj2);
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16843
+// Function ID: 16844
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5245, 5004, 587, 558, 576, 5085, 5242, 5294, 16606, 1125, 5270, 2]
+// Dependencies: [32, 19, 17, 21, 5246, 5005, 587, 558, 576, 5086, 5243, 5295, 16844, 1125, 5271, 2]
 
-// Module 16605 (BountiesScrollIndicatorOverlay)
+// Module 16843 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import timingPresets from "timingPresets" /* 5245 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import timingPresets from "timingPresets" /* 5246 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAni
   if (cResult[0] !== enabled) {
     const fn = function o() {
       let timeout;
-      const f162461 = () => {
+      const f164133 = () => {
         importDefault(closure_0);
         closure_0 = !closure_0;
         let num = 5000;
@@ -63,13 +63,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAni
         if (closure_0) {
           num = closure_2_9;
         }
-        enabled = _setTimeout(f162461, num);
+        enabled = _setTimeout(f164133, num);
       };
       const tmp = timeout;
       if (tmp) {
         let c0 = false;
         let _setTimeout = setTimeout;
-        timeout = setTimeout(f162461, closure_1_9);
+        timeout = setTimeout(f164133, closure_1_9);
         return () => clearTimeout(closure_0);
       }
     };
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAni
   const items = [visible];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f162462 = () => {
+    const f164134 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -119,13 +119,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAni
       if (closure_0) {
         num = closure_2_9;
       }
-      visible = _setTimeout(f162462, num);
+      visible = _setTimeout(f164134, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f162462, closure_1_9);
+      timeout = setTimeout(f164134, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -229,12 +229,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesSc
         let timingStandard;
         const tmp6 = enabled;
         if (tmp6) {
-          timingStandard = tmp(5245).timingSlow;
+          timingStandard = tmp(5246).timingSlow;
         }
         const obj = { opacity: withTiming(num, timingStandard) };
         return obj;
       }
-      timingStandard = tmp(5245).timingStandard;
+      timingStandard = tmp(5246).timingStandard;
     }
   }
   F.__closure = { withTiming: tmp(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: tmp(visible[4]).timingStandard, timingSlow: tmp(visible[4]).timingSlow };
@@ -251,7 +251,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesSc
       num = 1;
     }
     const obj = { transform: items };
-    items = [{ scale: withTiming(num, tmp(5245).timingStandard) }];
+    items = [{ scale: withTiming(num, tmp(5246).timingStandard) }];
     ({ scale: withTiming(num, timingPresets.timingStandard) });
     return obj;
   };
@@ -467,12 +467,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesSc
         let timingStandard;
         const tmp6 = enabled;
         if (tmp6) {
-          timingStandard = tmp(5245).timingSlow;
+          timingStandard = tmp(5246).timingSlow;
         }
         const obj = { opacity: withTiming(num, timingStandard) };
         return obj;
       }
-      timingStandard = tmp(5245).timingStandard;
+      timingStandard = tmp(5246).timingStandard;
     }
   }
   A.__closure = { withTiming: enabled(visible[10]).withTiming, visible, isEndCardVisible, enabled, timingStandard: enabled(visible[4]).timingStandard, timingSlow: enabled(visible[4]).timingSlow };
@@ -491,7 +491,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesSc
         num = 1;
       }
       const obj = { transform: items };
-      items = [{ scale: withTiming(num, tmp(5245).timingStandard) }];
+      items = [{ scale: withTiming(num, tmp(5246).timingStandard) }];
       ({ scale: withTiming(num, timingPresets.timingStandard) });
       return obj;
     }

@@ -9,23 +9,23 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");
 
-export const hasFlag = function hasFlag(arg0, arg1) {
+export function hasFlag(arg0, arg1) {
   return (arg0 & arg1) === arg1;
-};
-export const hasAnyFlag = function hasAnyFlag(flags, arg1) {
+}
+export function hasAnyFlag(flags, arg1) {
   return flags & arg1;
-};
-export const addFlag = function addFlag(setting, SUPPRESS_NOTIFICATIONS) {
+}
+export function addFlag(setting, SUPPRESS_NOTIFICATIONS) {
   return setting | SUPPRESS_NOTIFICATIONS;
-};
-export const removeFlag = function removeFlag(flags, OBFUSCATED) {
+}
+export function removeFlag(flags, OBFUSCATED) {
   return flags & ~OBFUSCATED;
-};
-export const removeFlags = function removeFlags(setting) {
+}
+export function removeFlags(setting) {
   const substr = [...arguments].slice();
   return substr.reduce((acc, item) => acc & ~item, setting);
-};
-export const setFlag = function setFlag(arg0, arg1, arg2) {
+}
+export function setFlag(arg0, arg1, arg2) {
   let tmp2;
   const tmp = arg2;
   if (tmp) {
@@ -34,8 +34,8 @@ export const setFlag = function setFlag(arg0, arg1, arg2) {
     tmp2 = arg0 & ~arg1;
   }
   return tmp2;
-};
-export const toggleFlag = function toggleFlag(arg0, arg1) {
+}
+export function toggleFlag(arg0, arg1) {
   let tmp;
   if ((arg0 & arg1) === arg1) {
     tmp = arg0 & ~arg1;
@@ -43,4 +43,4 @@ export const toggleFlag = function toggleFlag(arg0, arg1) {
     tmp = arg0 | arg1;
   }
   return tmp;
-};
+}

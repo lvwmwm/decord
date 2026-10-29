@@ -1,16 +1,16 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 19478
+// Function ID: 19479
 // Name: RelationshipUtils
-// Dependencies: [1084, 17147, 1414, 1125, 19246, 7448, 2]
+// Dependencies: [1084, 17386, 1415, 1125, 19479, 7471, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 19245 (RelationshipUtils)
+// Module 19478 (RelationshipUtils)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17147 */;
-import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 19246 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17386 */;
+import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 19479 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require;
 const FriendsSections = Constants.FriendsSections;
 const result = size.fileFinishedImporting("utils/RelationshipUtils.tsx");
 
-export const showPendingNotification = function showPendingNotification(user) {
+export function showPendingNotification(user) {
   const intl = intl2.intl;
   const stringResult = intl.string(intl2.t["t3+Af3"]);
   const showNotification = NotificationActionCreatorsDefault.showNotification;
@@ -36,8 +36,8 @@ export const showPendingNotification = function showPendingNotification(user) {
     isUserAvatar: true
   };
   showNotification(obj.getUserAvatarURL(user), user.username, stringResult, {}, obj2);
-};
-export const showAcceptedNotification = function showAcceptedNotification(user) {
+}
+export function showAcceptedNotification(user) {
   _require = user;
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.MYr3Ka);
@@ -56,4 +56,4 @@ export const showAcceptedNotification = function showAcceptedNotification(user) 
     isUserAvatar: true
   };
   showNotification(obj.getUserAvatarURL(user), user.username, stringResult, {}, obj2);
-};
+}

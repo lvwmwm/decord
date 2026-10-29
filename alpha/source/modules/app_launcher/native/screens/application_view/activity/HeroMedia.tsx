@@ -1,26 +1,26 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 12058
+// Function ID: 12059
 // Name: HeroMedia
-// Dependencies: [19, 5005, 1501, 21, 5004, 558, 576, 11209, 11548, 504, 7293, 11968, 1125, 8827, 2]
+// Dependencies: [19, 5006, 1502, 21, 5005, 558, 576, 11263, 11602, 504, 7317, 12022, 1125, 8830, 2]
 
-// Module 12004 (HeroMedia)
+// Module 12058 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7293 */;
-import common_VideoDefault from "common/Video" /* 8827 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11548 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7317 */;
+import common_VideoDefault from "common/Video" /* 8830 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11602 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import createStyles from "createStyles" /* 5004 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const useDefaultAppLauncherWidth = tmp(11209);
-const getPreviewVideoAssetUrlDefault = tmp2(11968);
+const useDefaultAppLauncherWidth = tmp(11263);
+const getPreviewVideoAssetUrlDefault = tmp2(12022);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
       }
       let tmp22 = null;
       if (null != prop2) {
-        tmp22 = tmp10(11968)(applicationId, prop.activity_preview_video_asset_id);
+        tmp22 = tmp10(12022)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;

@@ -1,20 +1,20 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 17064
+// Function ID: 17065
 // Name: QuestDockPlayableHeader
-// Dependencies: [19, 17, 6745, 16709, 21, 587, 5004, 558, 576, 16737, 16710, 5085, 5283, 8796, 16814, 1381, 16813, 16706, 16725, 6748, 7836, 16821, 7204, 5705, 5270, 1125, 6944, 16803, 2]
+// Dependencies: [19, 17, 6768, 16947, 21, 587, 5005, 558, 576, 16975, 16948, 5086, 5284, 8799, 17052, 1381, 17051, 16944, 16963, 6771, 7859, 17059, 7228, 5707, 5271, 1125, 6968, 17041, 2]
 
-// Module 16826 (QuestDockPlayableHeader)
+// Module 17064 (QuestDockPlayableHeader)
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5283 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16725 */;
+import spring from "spring" /* 5284 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16963 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestDockConstants from "QuestDockConstants" /* 16709 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import QuestDockConstants from "QuestDockConstants" /* 16947 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,14 +62,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = activeQuestDockMode;
   let obj = activeQuestDockMode(576);
   const cResult = obj.c(67);
-  let obj2 = activeQuestDockMode(16737);
+  let obj2 = activeQuestDockMode(16975);
   const questDockPlayable = obj2.useQuestDockPlayable();
   const tmp5 = closure_11();
   let str = questDockPlayable.productName;
   if (str == null) {
     str = "";
   }
-  activeQuestDockMode = react.useContext(tmp(16710).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(tmp(16948).QuestDockGestureContext).activeQuestDockMode;
   const fn = function o() {
     const withSpring = spring.withSpring;
     let num = 1;
@@ -80,8 +80,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num, metroImportDefault) };
     return obj;
   };
-  const tmpResult = tmp(5085);
-  const obj3 = { withSpring: tmp(5283).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const tmpResult = tmp(5086);
+  const obj3 = { withSpring: tmp(5284).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__closure = obj3;
   fn.__workletHash = 11102976607512;
   fn.__initData = __initData;
@@ -96,15 +96,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { opacity: withSpring(num, metroImportDefault) };
     return obj;
   };
-  const tmpResult7 = tmp(5085);
-  fn2.__closure = { withSpring: tmp(5283).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const tmpResult7 = tmp(5086);
+  fn2.__closure = { withSpring: tmp(5284).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn2.__workletHash = 14270991745638;
   fn2.__initData = __initData2;
-  ({ withSpring: tmp(5283).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: tmp(5284).withSpring, activeQuestDockMode, QuestDockMode, PROMOTED_LABEL_OPACITY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle1 = tmpResult7.useAnimatedStyle(fn2);
   const EXPANDED = QuestDockMode.EXPANDED;
-  const tmp9 = playableCreative(8796)(activeQuestDockMode);
-  const tmpResult8 = tmp(16814);
+  const tmp9 = playableCreative(8799)(activeQuestDockMode);
+  const tmpResult8 = tmp(17052);
   const isBountiesAndroidQuestBarSmokeAnimationEnabled = tmpResult8.useIsBountiesAndroidQuestBarSmokeAnimationEnabled(constants.QUESTS_BAR_MOBILE);
   if (cResult[0] !== isBountiesAndroidQuestBarSmokeAnimationEnabled) {
     const tmpResult9 = tmp(1381);
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[1];
   }
-  const tmpResult10 = tmp(16813);
+  const tmpResult10 = tmp(17051);
   const smokeArtSize = tmpResult10.useSmokeArtSize();
   ({ width, height } = smokeArtSize);
   if (cResult[2] === height) {
@@ -126,9 +126,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[3] === width) {
       tmp14 = cResult[4];
     }
-    const tmpResult11 = tmp(16737);
+    const tmpResult11 = tmp(16975);
     playableCreative = tmpResult11.usePlayableCreative(questDockPlayable);
-    const tmpResult12 = tmp(16706);
+    const tmpResult12 = tmp(16944);
     const actionSheetPressHandler = tmpResult12.useActionSheetPressHandler(playableCreative);
     if (cResult[5] !== playableCreative) {
       const fn3 = function w() {
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_8(playableCreative(16821), {});
+      const tmp21 = closure_8(playableCreative(17059), {});
       cResult[7] = tmp21;
       tmp19 = tmp21;
     } else {
@@ -167,8 +167,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           tmp23 = cResult[13];
         }
         if (cResult[14] !== (tmp9 === EXPANDED)) {
-          const obj5 = { surface: tmp(16813).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
-          const tmp8Result = playableCreative(16813);
+          const obj5 = { surface: tmp(17051).QuestDockBountySmokeSurface.COLLAPSED, paused: tmp9 === EXPANDED };
+          const tmp8Result = playableCreative(17051);
           const tmp28 = closure_8(tmp8Result, obj5);
           cResult[14] = tmp9 === EXPANDED;
           cResult[15] = tmp28;
@@ -237,7 +237,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                 const _Symbol2 = Symbol;
                                 if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
                                   const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1125).t.o6FLcF) };
-                                  const Text = tmp(5270).Text;
+                                  const Text = tmp(5271).Text;
                                   intl = tmp(1125).intl;
                                   const tmp53 = closure_8(Text, obj6);
                                   cResult[44] = tmp53;
@@ -247,7 +247,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                 }
                                 if (cResult[45] !== tmp17) {
                                   const obj7 = { onPress: tmp17, accessibilityRole: "button", children: tmp51 };
-                                  const tmp56 = closure_8(tmp(6944).PressableOpacity, obj7);
+                                  const tmp56 = closure_8(tmp(6968).PressableOpacity, obj7);
                                   cResult[45] = tmp17;
                                   cResult[46] = tmp56;
                                   tmp54 = tmp56;
@@ -287,9 +287,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                                     return tmp73;
                                                   }
                                                 }
-                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(16821).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
+                                                const obj8 = { onSubmenuPress: actionSheetPressHandler, hideBlurWhenCollapsed: true, promotedLabelLeading: true, collapsedContent: tmp19, secondaryContentWidth: tmp(17059).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH, children: items };
                                                 items = [tmp32, tmp69];
-                                                const tmp8Result2 = playableCreative(16803);
+                                                const tmp8Result2 = playableCreative(17041);
                                                 const tmp76 = closure_9(tmp8Result2, obj8);
                                                 cResult[63] = actionSheetPressHandler;
                                                 cResult[64] = tmp69;
@@ -318,7 +318,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                         tmp65 = tmp68;
                                       }
                                       const obj11 = { style: tmp50, children: tmp58 };
-                                      const tmp64 = closure_8(playableCreative(7204), obj11);
+                                      const tmp64 = closure_8(playableCreative(7228), obj11);
                                       cResult[52] = tmp50;
                                       cResult[53] = tmp58;
                                       cResult[54] = tmp64;
@@ -342,7 +342,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               tmp50 = items3;
                             }
                             const obj13 = { style: tmp39, children: tmp43 };
-                            const tmp49 = closure_8(playableCreative(7204), obj13);
+                            const tmp49 = closure_8(playableCreative(7228), obj13);
                             cResult[38] = tmp39;
                             cResult[39] = tmp43;
                             cResult[40] = tmp49;
@@ -360,7 +360,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       tmp43 = tmp46;
                     }
                     const obj15 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 2, accessible: false, style: tmp5.title, children: str };
-                    const tmp42 = closure_8(tmp(5270).Text, obj15);
+                    const tmp42 = closure_8(tmp(5271).Text, obj15);
                     cResult[30] = tmp5.title;
                     cResult[31] = str;
                     cResult[32] = tmp42;
@@ -376,7 +376,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 if (tmp37) {
                   const obj16 = { style: tmp5.productIcon, source: obj17, resizeMode: "cover", accessible: false, importantForAccessibility: "no" };
                   obj17 = { uri: questDockPlayable.productIcon };
-                  tmp37 = closure_8(tmp8(5705), obj16);
+                  tmp37 = closure_8(tmp8(5707), obj16);
                 }
                 cResult[24] = questDockPlayable.productIcon;
                 cResult[25] = tmp5.productIcon;
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj19 = { style: tmp23, needsOffscreenAlphaCompositing: tmp11, children: tmp25 };
-        const tmp31 = closure_8(playableCreative(7204), obj19, str3);
+        const tmp31 = closure_8(playableCreative(7228), obj19, str3);
         cResult[16] = tmp11;
         cResult[17] = str3;
         cResult[18] = tmp23;

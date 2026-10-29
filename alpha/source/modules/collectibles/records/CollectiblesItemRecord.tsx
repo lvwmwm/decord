@@ -1,16 +1,16 @@
-// Module ID: 7689
-// Function ID: 7690
+// Module ID: 7712
+// Function ID: 7713
 // Name: CollectiblesItemRecord
-// Dependencies: [7690, 1990, 7691, 7692, 7693, 1084, 1992, 2]
+// Dependencies: [7713, 1991, 7714, 7715, 7716, 1084, 1993, 2]
 // Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 7689 (CollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7690 */;
-import NameplateRecord from "NameplateRecord" /* 1990 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7691 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7692 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7693 */;
+// Module 7712 (CollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7713 */;
+import NameplateRecord from "NameplateRecord" /* 1991 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7714 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7715 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7716 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ function transformSKUToCollectiblesItem(productLine) {
   }
 }
 
-export const createCollectiblesItemsFromServerResponse = function createCollectiblesItemsFromServerResponse(arr) {
+export function createCollectiblesItemsFromServerResponse(arr) {
   let items;
   if (null == arr) {
     items = [];
@@ -127,8 +127,8 @@ export const createCollectiblesItemsFromServerResponse = function createCollecti
     }, []);
   }
   return items;
-};
-export const transformProductToCollectiblesItem = function transformProductToCollectiblesItem(type) {
+}
+export function transformProductToCollectiblesItem(type) {
   if (null != type) {
     if (0 !== type.items.length) {
       let obj;
@@ -142,5 +142,5 @@ export const transformProductToCollectiblesItem = function transformProductToCol
       return obj;
     }
   }
-};
+}
 export { transformSKUToCollectiblesItem };

@@ -1,14 +1,14 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 18197
+// Function ID: 18198
 // Name: OnboardingV2Utils
-// Dependencies: [4874, 4878, 1389, 1084, 558, 576, 504, 7397, 2]
+// Dependencies: [4875, 4879, 1389, 1084, 558, 576, 504, 7420, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 17959 (OnboardingV2Utils)
+// Module 18197 (OnboardingV2Utils)
 import Constants from "Constants" /* 1084 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7397 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7420 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeeC
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
 
 export const useCanSeeCreatorMonetizationOnboardingV2Upsell = tmp2;
-export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
+export function canSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
   const guild = GuildStore.getGuild(arg0);
   if (null == guild) {
     return false;
@@ -159,4 +159,4 @@ export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreato
       return tmp5;
     }
   }
-};
+}

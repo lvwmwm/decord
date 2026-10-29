@@ -1,14 +1,14 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8888
+// Function ID: 8889
 // Name: showShareActionSheet
-// Dependencies: [17, 1382, 8886, 8887, 8890, 1254, 2]
+// Dependencies: [17, 1382, 8889, 8890, 8893, 1254, 2]
 // Exports: showShareActionSheet
 
-// Module 8885 (showShareActionSheet)
+// Module 8888 (showShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import react_nativeDefault from "react-native" /* 8886 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8887 */;
+import react_nativeDefault from "react-native" /* 8889 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8890 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ if (PlatformUtils.isAndroid()) {
 }
 let result = size.fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
 
-export const showShareActionSheet = function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
+export function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
   let fn;
   let mediaFallbackUrl;
   let mediaShareParams;
@@ -44,7 +44,7 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
     const obj2 = require("ShowShareActionSheetUtils");
     mediaShareParams = obj2.getMediaShareParams(source.source);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "useCallback", mediaStagingOptions: "PX_16" };
+    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "Reflect" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {
@@ -114,4 +114,4 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   catchPromise.finally(() => {
     fn();
   });
-};
+}

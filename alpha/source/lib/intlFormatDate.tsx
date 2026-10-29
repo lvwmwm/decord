@@ -1,11 +1,11 @@
-// Module ID: 5691
-// Function ID: 5692
+// Module ID: 5693
+// Function ID: 5694
 // Name: intlFormatDate
-// Dependencies: [2065, 5688, 1125, 2]
+// Dependencies: [2066, 5690, 1125, 2]
 // Exports: makeFormatter
 
-// Module 5691 (intlFormatDate)
-import LocaleStore from "LocaleStore" /* 2065 */;
+// Module 5693 (intlFormatDate)
+import LocaleStore from "LocaleStore" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 function makeIntlFormatter(locale, arg1) {
@@ -19,7 +19,7 @@ function makeIntlFormatter(locale, arg1) {
 }
 const result = size.fileFinishedImporting("lib/intlFormatDate.tsx");
 
-export const makeFormatter = function makeFormatter(arg0) {
+export function makeFormatter(arg0) {
   function tryMakeNativeFormatter(locale, arg1) {
     let closure_0 = locale;
     let closure_1 = arg1;
@@ -71,4 +71,4 @@ export const makeFormatter = function makeFormatter(arg0) {
     tmp = makeIntlFormatter(locale, arg0);
   }
   return tmp;
-};
+}

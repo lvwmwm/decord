@@ -1,20 +1,20 @@
-// Module ID: 9507
-// Function ID: 9508
+// Module ID: 9539
+// Function ID: 9540
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9508, 8746, 7686, 7687, 558, 576, 9509, 504, 7684, 8745, 9510, 2]
+// Dependencies: [32, 19, 9540, 8749, 7709, 7710, 558, 576, 9541, 504, 7707, 8748, 9542, 2]
 // Exports: useCollectiblesShopProducts
 
-// Module 9507 (useCollectiblesShopProducts)
+// Module 9539 (useCollectiblesShopProducts)
 import react2 from "react" /* 576 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8745 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9509 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8748 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9541 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9508 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8746 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7686 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7687 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9540 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8749 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7709 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7710 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9510);
+const StorefrontCollectionActionCreators = tmp(9542);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -644,7 +644,7 @@ let result = size.fileFinishedImporting("modules/collectibles/hooks/useCollectib
 
 export const useFetchResolvedAbsent = tmp2;
 export const useCollectiblesShopProduct = tmp3;
-export const useCollectiblesShopProducts = function useCollectiblesShopProducts(skuIds, cResult) {
+export function useCollectiblesShopProducts(skuIds, cResult) {
   _require = skuIds;
   let obj = cResult;
   if (cResult === undefined) {
@@ -724,10 +724,10 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f147760 = (item) => "" !== item;
+    const f149316 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f147760))];
-    new Set(values.filter(f147760));
+    const items = [...new Set(values.filter(f149316))];
+    new Set(values.filter(f149316));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];
@@ -824,4 +824,4 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
     }
     return obj;
   }, items13);
-};
+}

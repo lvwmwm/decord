@@ -1,16 +1,16 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17338
+// Function ID: 17339
 // Name: InlineEmojiSuggestionsSetting
-// Dependencies: [8365, 1084, 1264, 4832, 11248, 1125, 13295, 2]
+// Dependencies: [8387, 1084, 1264, 4833, 11302, 1125, 13528, 2]
 
-// Module 17099 (InlineEmojiSuggestionsSetting)
+// Module 17338 (InlineEmojiSuggestionsSetting)
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13295 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 13528 */;
 import Constants from "Constants" /* 1084 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 let c3;

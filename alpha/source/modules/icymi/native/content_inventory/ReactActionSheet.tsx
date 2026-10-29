@@ -1,25 +1,25 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 18466
+// Function ID: 18467
 // Name: ReactActionSheet
-// Dependencies: [13369, 5, 32, 19, 17, 5302, 1392, 21, 1125, 5004, 587, 558, 576, 9859, 5261, 9381, 6944, 8650, 8878, 9863, 5182, 9742, 1496, 5270, 10660, 5180, 18227, 5070, 5705, 1414, 5058, 7044, 5716, 7991, 7334, 18180, 2]
+// Dependencies: [13602, 5, 32, 19, 17, 5303, 1392, 21, 1125, 5005, 587, 558, 576, 9891, 5262, 9413, 6968, 8672, 8881, 9895, 5183, 9774, 1497, 5271, 10693, 5181, 18461, 5071, 5707, 1415, 5059, 7068, 5718, 8014, 7358, 18414, 2]
 // Exports: getStatusReplyContent
 
-// Module 18232 (ReactActionSheet)
+// Module 18466 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5261 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8878 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9859 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13369 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5262 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9891 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 13602 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const ICYMIContext = tmp(18180);
+const ICYMIContext = tmp(18414);
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -643,7 +643,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -677,7 +677,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
                 } else {
                   closure_1_6(false);
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } catch (tmp8) {
                 c3 = 3;
@@ -708,7 +708,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -745,7 +745,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           closure_1_6(false);
           closure_1_8("");
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -837,7 +837,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -874,7 +874,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
             closure_128_5(false);
             closure_128_8("");
             sendMessage = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp9) {
           sendMessage = 3;
@@ -899,7 +899,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -932,7 +932,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactA
             } else {
               closure_1_5(false);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp8) {
             c3 = 3;
@@ -1113,7 +1113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactActionS
 let result = size.fileFinishedImporting("modules/icymi/native/content_inventory/ReactActionSheet.tsx");
 
 export default tmp4;
-export const getStatusReplyContent = function getStatusReplyContent(reply) {
+export function getStatusReplyContent(reply) {
   let attachments;
   let emojiStr;
   let formatToPlainStringResult;
@@ -1155,4 +1155,4 @@ export const getStatusReplyContent = function getStatusReplyContent(reply) {
   }
   items.push(reply);
   return items.join("\n");
-};
+}

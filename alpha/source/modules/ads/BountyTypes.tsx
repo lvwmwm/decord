@@ -1,12 +1,12 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9648
+// Function ID: 9649
 // Name: BountyTypes
-// Dependencies: [32, 9617, 9618, 2]
+// Dependencies: [32, 9649, 9650, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 9616 (BountyTypes)
-import BountyAspectRatio from "BountyAspectRatio" /* 9617 */;
-import AssetUtils from "AssetUtils" /* 9618 */;
+// Module 9648 (BountyTypes)
+import BountyAspectRatio from "BountyAspectRatio" /* 9649 */;
+import AssetUtils from "AssetUtils" /* 9650 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ function videoRenditionsFromServer(video_renditions) {
         hasItem = "" !== tmp12;
       }
       if (hasItem) {
-        let tmp13Result = tmp13(9618);
+        let tmp13Result = tmp13(9650);
         obj[tmp11] = tmp13Result.resolveAdCreativeCdnUrl(tmp12);
       }
       continue;
@@ -45,7 +45,7 @@ function videoRenditionsFromServer(video_renditions) {
 }
 const result = size.fileFinishedImporting("modules/ads/BountyTypes.tsx");
 
-export const bountyCtaFromServer = function bountyCtaFromServer(url) {
+export function bountyCtaFromServer(url) {
   let tmp;
   let tmp2;
   const obj = { url: url.url, buttonLabel: url.button_label, android: tmp, ios: tmp2 };
@@ -60,8 +60,8 @@ export const bountyCtaFromServer = function bountyCtaFromServer(url) {
     const obj3 = { iosAppId: url.ios.ios_app_id };
   }
   return obj;
-};
-export const bountyFromServer = function bountyFromServer(creative_content) {
+}
+export function bountyFromServer(creative_content) {
   let num;
   let obj2;
   let obj3;
@@ -92,4 +92,4 @@ export const bountyFromServer = function bountyFromServer(creative_content) {
     num = 15;
   }
   return obj;
-};
+}

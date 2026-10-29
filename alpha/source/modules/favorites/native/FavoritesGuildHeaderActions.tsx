@@ -1,16 +1,16 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 18094
+// Function ID: 18095
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 576, 7991, 11191, 17857, 1125, 3445, 2]
+// Dependencies: [19, 21, 558, 576, 8014, 11245, 18095, 1125, 3446, 2]
 
-// Module 17856 (FavoritesGuildHeaderActions)
+// Module 18094 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import _modDef3445 from "module_3445" /* 3445 */;
-import IconButton2 from "IconButton" /* 7991 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11191 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 17857 */;
+import _modDef3446 from "module_3446" /* 3446 */;
+import IconButton2 from "IconButton" /* 8014 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11245 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 18095 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,9 +21,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const IconButton = tmp(7991).IconButton;
+    const IconButton = tmp(8014).IconButton;
     const intl = tmp(1125).intl;
-    const tmp7 = <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3445.G9fGlP)} maxFontSizeMultiplier={1} />;
+    const tmp7 = <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3446.G9fGlP)} maxFontSizeMultiplier={1} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
 }) : (function FavoritesGuildHeaderActionButton() {
   const IconButton = IconButton2.IconButton;
   const intl = intl2.intl;
-  return <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3445.G9fGlP)} maxFontSizeMultiplier={1} />;
+  return <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3446.G9fGlP)} maxFontSizeMultiplier={1} />;
 });
 const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildHeaderActions.tsx");
 

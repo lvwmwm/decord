@@ -1,23 +1,23 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7462
+// Function ID: 7463
 // Name: ForumActivePostStore
-// Dependencies: [6825, 7440, 502, 4856, 6806, 4907, 4865, 4867, 12, 7441, 11, 504, 4873, 584, 2]
+// Dependencies: [6848, 7463, 502, 4857, 6829, 4908, 4866, 4868, 12, 7464, 11, 504, 4874, 584, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 7439 (ForumActivePostStore)
+// Module 7462 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4865 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4867 */;
-import SetUtils from "SetUtils" /* 4873 */;
-import ForumUtils from "ForumUtils" /* 7441 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6825 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4866 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4868 */;
+import SetUtils from "SetUtils" /* 4874 */;
+import ForumUtils from "ForumUtils" /* 7464 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6848 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7463 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ function rebuildState(refreshThreadIds) {
       const obj3 = module_12;
       const sort = obj3.chain(closure_19).sort;
       obj3.chain(closure_19);
-      LATEST_ACTIVITY = LATEST_ACTIVITY(4865).ThreadSortOrder.LATEST_ACTIVITY;
+      LATEST_ACTIVITY = LATEST_ACTIVITY(4866).ThreadSortOrder.LATEST_ACTIVITY;
       closure_21 = sort(function sortThreads(id, id2) {
         let num = -1;
         const obj = ForumUtils;
@@ -132,7 +132,7 @@ function rebuildState(refreshThreadIds) {
       const obj4 = module_12;
       const sort2 = obj4.chain(closure_19).sort;
       obj4.chain(closure_19);
-      const CREATION_DATE = LATEST_ACTIVITY(4865).ThreadSortOrder.CREATION_DATE;
+      const CREATION_DATE = LATEST_ACTIVITY(4866).ThreadSortOrder.CREATION_DATE;
       closure_20 = sort2(function sortThreads(id, id2) {
         let num = -1;
         const obj = ForumUtils;
@@ -165,7 +165,7 @@ function rebuildState(refreshThreadIds) {
         return num;
       });
     }
-    const iter = LATEST_ACTIVITY === LATEST_ACTIVITY(4865).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
+    const iter = LATEST_ACTIVITY === LATEST_ACTIVITY(4866).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
     const valueResult = iter.value();
     let found = valueResult;
     if (0 !== set.size) {
@@ -393,7 +393,7 @@ const forumActivePostStore = new ForumActivePostStore(DispatcherDefault, obj);
 const result = size.fileFinishedImporting("modules/forums/ForumActivePostStore.tsx");
 
 export default forumActivePostStore;
-export const computeThreadIdsSnapshot = function computeThreadIdsSnapshot(id) {
+export function computeThreadIdsSnapshot(id) {
   const channel = ChannelStore.getChannel(id);
   if (null == channel) {
     items = [];
@@ -435,4 +435,4 @@ export const computeThreadIdsSnapshot = function computeThreadIdsSnapshot(id) {
     });
   }
   return items;
-};
+}

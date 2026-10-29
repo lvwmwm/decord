@@ -1,47 +1,47 @@
-// Module ID: 7414
-// Function ID: 7415
+// Module ID: 7437
+// Function ID: 7438
 // Name: GuildSubscriptionsActionCreators
-// Dependencies: [584, 7412, 2]
+// Dependencies: [584, 7435, 2]
 // Exports: subscribeChannel, subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 7414 (GuildSubscriptionsActionCreators)
+// Module 7437 (GuildSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7412 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7435 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("actions/GuildSubscriptionsActionCreators.tsx");
 
-export const subscribeMembers = function subscribeMembers(guildId, userIds) {
+export function subscribeMembers(guildId, userIds) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS_MEMBERS_ADD", guildId, userIds };
   obj.dispatch(obj2);
-};
-export const unsubscribeMembers = function unsubscribeMembers(guildId, userIds) {
+}
+export function unsubscribeMembers(guildId, userIds) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE", guildId, userIds };
   obj.dispatch(obj2);
-};
-export const subscribeToMemberUpdates = function subscribeToMemberUpdates(guildId) {
+}
+export function subscribeToMemberUpdates(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES", guildId };
   obj.dispatch(obj2);
-};
-export const unsubscribeFromMemberUpdates = function unsubscribeFromMemberUpdates(guildId) {
+}
+export function unsubscribeFromMemberUpdates(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES", guildId };
   obj.dispatch(obj2);
-};
-export const subscribeGuild = function subscribeGuild(guildId) {
+}
+export function subscribeGuild(guildId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS", guildId };
   obj.dispatch(obj2);
-};
-export const subscribeChannel = function subscribeChannel(guildId, channelId, ranges) {
+}
+export function subscribeChannel(guildId, channelId, ranges) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges };
   obj.dispatch(obj2);
-};
-export const subscribeChannelDimensions = function subscribeChannelDimensions(arg0) {
+}
+export function subscribeChannelDimensions(arg0) {
   let channelId;
   let guildId;
   let height;
@@ -79,4 +79,4 @@ export const subscribeChannelDimensions = function subscribeChannelDimensions(ar
   }
   const obj = DispatcherDefault;
   obj.dispatch({ type: "GUILD_SUBSCRIPTIONS_CHANNEL", guildId, channelId, ranges: items });
-};
+}

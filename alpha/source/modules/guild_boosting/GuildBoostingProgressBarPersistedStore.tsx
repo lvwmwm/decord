@@ -1,9 +1,9 @@
-// Module ID: 17929
-// Function ID: 17930
+// Module ID: 18167
+// Function ID: 18168
 // Name: GuildBoostingProgressBarPersistedStore
 // Dependencies: [504, 584, 2]
 
-// Module 17929 (GuildBoostingProgressBarPersistedStore)
+// Module 18167 (GuildBoostingProgressBarPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

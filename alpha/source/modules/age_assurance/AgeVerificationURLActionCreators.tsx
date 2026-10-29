@@ -1,20 +1,20 @@
-// Module ID: 7931
-// Function ID: 7932
+// Module ID: 7954
+// Function ID: 7955
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 6691, 1084, 7932, 1294, 584, 2]
+// Dependencies: [5, 502, 6715, 1084, 7955, 1294, 584, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7931 (AgeVerificationURLActionCreators)
+// Module 7954 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6691 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6715 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let classificationId, from_classification_id, method, token;
+let classificationId, token;
 
 function requestAgeVerification() {
   return obj(...arguments);
@@ -36,7 +36,7 @@ let obj = function _requestAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -217,7 +217,7 @@ obj = function _requestAgeVerificationV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -279,75 +279,21 @@ function initiateSuspendedUserAgeVerification() {
 }
 obj = function _initiateSuspendedUserAgeVerification() {
   obj = _asyncToGenerator(async (from_classification_id) => {
+    let method;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
       let c0;
       let c1;
       let obj5;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              let closure_1 = tmp;
-              from_classification_id = undefined;
-              method = undefined;
-              ({ classificationId: c0, method: c1 } = closure_0);
-              token = undefined;
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              token = closure_130_4.getSuspendedUserToken();
-              const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-              const request = { url: closure_130_6.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: obj5, rejectWithError: true };
-              c3 = 2;
-              c4 = 1;
-              obj5 = { token, from_classification_id, method };
-              const obj6 = { value: HTTP.post(request), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: value.body, done: true };
-          }
-        } catch (tmp6) {
-          c4 = 3;
-          throw tmp6;
-        }
-      }
+      ({ classificationId: c0, method: c1 } = closure_0);
+      await "Reflect";
+      token = closure_130_4.getSuspendedUserToken();
+      const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+      const request = { url: closure_130_6.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: obj5, rejectWithError: true };
+      obj5 = { token, from_classification_id, method };
+      await HTTP.post(request);
+      return value.body;
     })();
     iter.next();
     return iter;
@@ -369,7 +315,7 @@ obj = function _registerIncodeInterview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -398,7 +344,7 @@ obj = function _registerIncodeInterview() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -410,82 +356,27 @@ obj = function _registerIncodeInterview() {
   return obj(...arguments);
 };
 obj = function _requestIncodeSessionBootstrap() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async () => {
+    let c3;
+    let c4;
+    let closure_1;
+    let closure_2;
+    let tmp7;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let obj4;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            obj4 = closure_0;
-            if (closure_0 === undefined) {
-              obj4 = {};
-            }
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            let tmp7;
-            const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-            const request = { url: closure_130_6.CREATE_INCODE_SESSION, body: tmp7, rejectWithError: true };
-            const post = HTTP.post;
-            if (null != obj4.previousInterviewId) {
-              const obj6 = { previous_interview_id: obj4.previousInterviewId };
-              tmp7 = obj6;
-            }
-            c3 = 2;
-            c4 = 1;
-            const obj7 = { value: post(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          c4 = 3;
-          obj = { value: value.body, done: true };
-          return obj;
-        }
-      } catch (tmp8) {
-        c4 = 3;
-        throw tmp8;
-      }
+    let obj4 = closure_0;
+    if (closure_0 === undefined) {
+      obj4 = {};
     }
+    await "Reflect";
+    const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+    const request = { url: closure_130_6.CREATE_INCODE_SESSION, body: tmp7, rejectWithError: true };
+    const post = HTTP.post;
+    if (null != obj4.previousInterviewId) {
+      const obj6 = { previous_interview_id: obj4.previousInterviewId };
+      tmp7 = obj6;
+    }
+    await post(request);
+    return arg1.body;
   });
   return obj(...arguments);
 };
@@ -535,24 +426,24 @@ const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");
 
 export { requestAgeVerification };
-export const requestIncodeMethodSession = function requestIncodeMethodSession() {
+export function requestIncodeMethodSession() {
   return obj(...arguments);
-};
+}
 export { initiateAgeVerification };
 export { initiateAgeVerificationV2 };
 export { initiateSuspendedUserAgeVerificationV2 };
-export const requestAgeVerificationV2 = function requestAgeVerificationV2() {
+export function requestAgeVerificationV2() {
   return obj(...arguments);
-};
+}
 export { initiateSuspendedUserAgeVerification };
-export const registerIncodeInterview = function registerIncodeInterview() {
+export function registerIncodeInterview() {
   return obj(...arguments);
-};
-export const requestIncodeSessionBootstrap = function requestIncodeSessionBootstrap() {
+}
+export function requestIncodeSessionBootstrap() {
   return obj(...arguments);
-};
-export const getAgeVerificationMethods = function getAgeVerificationMethods() {
+}
+export function getAgeVerificationMethods() {
   return obj(...arguments);
-};
+}
 export { fetchAgeVerificationMethods };
 export { fetchAgeVerificationMethodsSuspendedUser };

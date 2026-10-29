@@ -1,13 +1,13 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 12142
+// Function ID: 12143
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 1501, 21, 558, 576, 7256, 1630, 1381, 6743, 7020, 5246, 7074, 12089, 12091, 2]
+// Dependencies: [32, 109, 19, 1502, 21, 558, 576, 7280, 1631, 1381, 6766, 7044, 5247, 7098, 12143, 12145, 2]
 
-// Module 12088 (AppLauncherChoicesActionSheet)
+// Module 12142 (AppLauncherChoicesActionSheet)
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6743 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6766 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -20,8 +20,8 @@ let item;
 let c9;
 let metroImportAll;
 let tmp;
-const defaultMVCPConfig = tmp(7256);
-const f113866 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(7280);
+const f115095 = (choice, originalIndex) => ({ choice, originalIndex });
 let closure_3 = ["scrollable"];
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -122,7 +122,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
       if (choices == null) {
         choices = [];
       }
-      return choices.map(f113866);
+      return choices.map(f115095);
     };
     cResult[2] = option.choices;
     cResult[3] = fn;
@@ -307,7 +307,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f113866);
+    return choices.map(f115095);
   }), 2);
   data = tmp5[0];
   closure_3 = tmp5[1];

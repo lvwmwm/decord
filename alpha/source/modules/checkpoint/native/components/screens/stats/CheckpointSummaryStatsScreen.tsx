@@ -1,31 +1,31 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 13486
+// Function ID: 13487
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [32, 19, 17, 5005, 13015, 6050, 21, 587, 5004, 1382, 558, 576, 504, 8661, 13206, 1414, 8106, 13253, 1125, 3089, 3057, 6919, 4950, 7263, 5705, 13204, 13213, 2]
+// Dependencies: [32, 19, 17, 5006, 13236, 6054, 21, 587, 5005, 1382, 558, 576, 504, 6079, 13438, 1415, 8129, 13487, 1125, 3090, 3058, 6943, 4951, 7287, 5707, 13436, 13440, 2]
 
-// Module 13252 (CheckpointSummaryStatsScreen)
+// Module 13486 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef3057 from "module_3057" /* 3057 */;
-import _modDef3089 from "module_3089" /* 3089 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
-import GuildIcon from "GuildIcon" /* 6919 */;
-import EmojiDefault from "Emoji" /* 7263 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 8661 */;
-import CheckpointTextDefault from "CheckpointText" /* 13204 */;
-import CheckpointScreen from "CheckpointScreen" /* 13206 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13213 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13253 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import _modDef3058 from "module_3058" /* 3058 */;
+import _modDef3090 from "module_3090" /* 3090 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6079 */;
+import GuildIcon from "GuildIcon" /* 6943 */;
+import EmojiDefault from "Emoji" /* 7287 */;
+import CheckpointTextDefault from "CheckpointText" /* 13436 */;
+import CheckpointScreen from "CheckpointScreen" /* 13438 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13440 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 13487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import CheckpointStore from "CheckpointStore" /* 13015 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import CheckpointStore from "CheckpointStore" /* 13236 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -80,8 +80,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   let tmp12;
   let tmp13;
   let tmp16;
-  let tmp20;
-  let tmp32;
+  let tmp22;
+  let tmp34;
   let tmp5;
   let tmp6;
   let useReducedMotion;
@@ -138,28 +138,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     tmp12 = cResult[2];
     tmp13 = cResult[3];
   }
-  const tmpResult4 = get_initialized;
-  const stateFromStores = tmpResult4.useStateFromStores(tmp12, tmp13);
+  const tmpResult5 = get_initialized;
+  const stateFromStores = tmpResult5.useStateFromStores(tmp12, tmp13);
   if (cResult[4] !== character) {
-    const tmpResult5 = CheckpointCardColors;
-    const cardColors = tmpResult5.getCardColors(character);
+    const tmpResult6 = CheckpointCardColors;
+    const characterCardColorPalette = tmpResult6.getCharacterCardColorPalette(character);
+    CheckpointCardColors;
     class M {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[5] = cardColors;
-    tmp16 = cardColors;
+    cResult[4] = character;
+    cResult[5] = tmp19;
+    tmp16 = tmp19;
   } else {
     tmp16 = cResult[5];
   }
   const primaryBackgroundColor = tmp16.primaryBackgroundColor;
-  const tmpResult6 = CheckpointScreen;
-  const checkpointScreenContentHeight = tmpResult6.useCheckpointScreenContentHeight();
-  [tmp20, require] = react.useState(null);
+  const tmpResult8 = CheckpointScreen;
+  const checkpointScreenContentHeight = tmpResult8.useCheckpointScreenContentHeight();
+  [tmp22, require] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
-  if (null != tmp20) {
-    diff = checkpointScreenContentHeight - closure_11 - PX_16 - tmp20;
+  if (null != tmp22) {
+    diff = checkpointScreenContentHeight - closure_11 - PX_16 - tmp22;
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     function handleStatsLayout(nativeEvent) {
@@ -209,18 +211,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
         }
       }
       cResult[12] = primaryBackgroundColor;
-      cResult[13] = tmp38;
+      cResult[13] = tmp40;
     }
     class M {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
-    const obj4 = { character, maxHeight: diff };
+    const obj4 = { isStepFocusTarget: true, character, maxHeight: diff };
     cResult[14] = diff;
     cResult[15] = character;
     cResult[16] = closure_8(CheckpointRecapCardDefault, obj4);
-    const tmp42 = closure_8(CheckpointRecapCardDefault, obj4);
+    const tmp44 = closure_8(CheckpointRecapCardDefault, obj4);
   }
   let id;
   if (first1 != null) {
@@ -228,17 +230,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   }
   let emojiURL;
   if (null != id) {
-    const obj5 = { id: null, animated: tmp32, size: 48 };
-    const tmp31 = AvatarUtilsDefault;
+    const obj5 = { id: null, animated: tmp34, size: 48 };
+    const tmp33 = AvatarUtilsDefault;
     class M {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
-    tmp32 = !stateFromStores;
-    const getEmojiURL = tmp31.getEmojiURL;
+    tmp34 = !stateFromStores;
+    const getEmojiURL = tmp33.getEmojiURL;
     if (!stateFromStores) {
-      tmp32 = true === first1.animated;
+      tmp34 = true === first1.animated;
     }
     emojiURL = getEmojiURL(obj5);
   }
@@ -277,10 +279,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   let round5;
   let stats;
   let stringResult;
-  let tmp13;
-  let tmp24;
-  let tmp27Result;
-  let tmp27Result3;
+  let tmp14;
+  let tmp25;
+  let tmp28Result;
+  let tmp28Result3;
   let useReducedMotion;
   const tmp = closure_12();
   const items = [CheckpointStore];
@@ -313,15 +315,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   const items1 = [AccessibilityStore];
   const tmp2Result = get_initialized;
   const stateFromStores = tmp2Result.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  const tmp2Result3 = CheckpointCardColors;
-  const primaryBackgroundColor = tmp2Result3.getCardColors(character).primaryBackgroundColor;
-  const tmp2Result4 = CheckpointScreen;
-  const checkpointScreenContentHeight = tmp2Result4.useCheckpointScreenContentHeight();
-  [tmp13, require] = react.useState(null);
+  const tmp2Result4 = CheckpointCardColors;
+  const characterCardColorPalette = tmp2Result4.getCharacterCardColorPalette(character);
+  const tmp2Result5 = CheckpointCardColors;
+  const primaryBackgroundColor = tmp2Result5.getCardColors(characterCardColorPalette).primaryBackgroundColor;
+  const tmp2Result6 = CheckpointScreen;
+  const checkpointScreenContentHeight = tmp2Result6.useCheckpointScreenContentHeight();
+  [tmp14, require] = react.useState(null);
   let diff;
   _slicedToArray(react.useState(null), 2);
-  if (null != tmp13) {
-    diff = checkpointScreenContentHeight - closure_11 - PX_16 - tmp13;
+  if (null != tmp14) {
+    diff = checkpointScreenContentHeight - closure_11 - PX_16 - tmp14;
   }
   let first1;
   if (emojis != null) {
@@ -339,27 +343,27 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     id = first1.id;
   }
   if (null != id) {
-    const obj2 = { id: first1.id, animated: tmp24, size: 48 };
-    tmp24 = !stateFromStores;
+    const obj2 = { id: first1.id, animated: tmp25, size: 48 };
+    tmp25 = !stateFromStores;
     const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
     AvatarUtilsDefault;
     if (!stateFromStores) {
-      tmp24 = true === first1.animated;
+      tmp25 = true === first1.animated;
     }
     emojiURL = getEmojiURL(obj2);
   }
   let applicationIconURL;
   if (null != game) {
     const obj3 = { id: null, icon: null, fallbackAvatar: false };
-    ({ id: obj7.id, iconHash: obj7.icon } = game);
-    const obj6 = AvatarUtilsDefault;
-    applicationIconURL = obj6.getApplicationIconURL(obj3);
+    ({ id: obj8.id, iconHash: obj8.icon } = game);
+    const obj7 = AvatarUtilsDefault;
+    applicationIconURL = obj7.getApplicationIconURL(obj3);
   }
-  let tmp27Result4 = closure_8(tmp2(8106).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  let tmp28Result4 = closure_8(tmp2(8129).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
   const obj4 = { style: tmp.container, children: items2 };
   items2 = [, ];
-  const tmp30 = CheckpointScreenDefault;
-  items2[0] = closure_8(CheckpointRecapCardDefault, { character, maxHeight: diff });
+  const tmp31 = CheckpointScreenDefault;
+  items2[0] = closure_8(CheckpointRecapCardDefault, { isStepFocusTarget: true, character, maxHeight: diff });
   const obj5 = {
     style: tmp.stats,
     onLayout: function handleStatsLayout(nativeEvent) {
@@ -367,8 +371,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     },
     children: items4
   };
-  const obj8 = { style: tmp.row, children: items3 };
-  const obj9 = { label: intl.string(_modDef3089.MSrV9z), value: round(num), color: primaryBackgroundColor };
+  const obj6 = { style: tmp.row, children: items3 };
+  const obj9 = { label: intl.string(_modDef3090.MSrV9z), value: round(num), color: primaryBackgroundColor };
   intl = tmp2(1125).intl;
   num = undefined;
   const _Math = Math;
@@ -380,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num = 0;
   }
   items3 = [closure_8(closure_13, obj9), ];
-  const obj10 = { label: intl2.string(_modDef3057.wWKySP), value: round2(num2), color: primaryBackgroundColor };
+  const obj10 = { label: intl2.string(_modDef3058.wWKySP), value: round2(num2), color: primaryBackgroundColor };
   intl2 = tmp2(1125).intl;
   num2 = undefined;
   const _Math2 = Math;
@@ -392,9 +396,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num2 = 0;
   }
   items3[1] = closure_8(closure_13, obj10);
-  items4 = [closure_9(View, obj8), , , ];
+  items4 = [closure_9(View, obj6), , , ];
   const obj11 = { style: tmp.row, children: items5 };
-  const obj12 = { label: intl3.string(_modDef3089["f5S+pt"]), value: round3(num3), color: primaryBackgroundColor };
+  const obj12 = { label: intl3.string(_modDef3090["f5S+pt"]), value: round3(num3), color: primaryBackgroundColor };
   intl3 = tmp2(1125).intl;
   num3 = undefined;
   const _Math3 = Math;
@@ -406,24 +410,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num3 = 0;
   }
   items5 = [closure_8(closure_13, obj12), ];
-  const obj13 = { label: intl4.string(_modDef3057["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp27Result };
+  const obj13 = { label: intl4.string(_modDef3058["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp28Result };
   intl4 = tmp2(1125).intl;
   if (null != first) {
     name = first.guild.name;
   } else {
     const intl5 = tmp2(1125).intl;
-    name = intl5.string(tmp29(3089).GultYJ);
+    name = intl5.string(tmp30(3090).GultYJ);
   }
-  tmp27Result = tmp27Result4;
+  tmp28Result = tmp28Result4;
   if (null != first) {
     const obj14 = { guild: first.guild, size: GuildIcon.GuildIconSizes.SMALL, style: tmp.itemIcon };
-    const tmp29Result = GuildIconDefault;
-    tmp27Result = tmp27(tmp29Result, obj14);
+    const tmp30Result = GuildIconDefault;
+    tmp28Result = tmp28(tmp30Result, obj14);
   }
   items5[1] = closure_8(closure_14, obj13);
   items4[1] = closure_9(View, obj11);
   const obj15 = { style: tmp.row, children: items6 };
-  const obj16 = { label: intl6.string(_modDef3089.xVSlv3), value: round4(num4), color: primaryBackgroundColor };
+  const obj16 = { label: intl6.string(_modDef3090.xVSlv3), value: round4(num4), color: primaryBackgroundColor };
   intl6 = tmp2(1125).intl;
   num4 = undefined;
   const _Math4 = Math;
@@ -435,33 +439,33 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num4 = 0;
   }
   items6 = [closure_8(closure_13, obj16), ];
-  const obj17 = { label: intl7.string(_modDef3057["3sARW7"]), name: stringResult, color: primaryBackgroundColor, icon: tmp27Result3 };
+  const obj17 = { label: intl7.string(_modDef3058["3sARW7"]), name: stringResult, color: primaryBackgroundColor, icon: tmp28Result3 };
   intl7 = tmp2(1125).intl;
   if (null == first1) {
     const intl8 = tmp2(1125).intl;
     stringResult = intl8.string(tmp2(1125).t.PoWNfe);
   } else if (null == first1.id) {
-    const tmp29Result3 = UnicodeEmojisDefault;
-    stringResult = tmp29Result3.convertSurrogateToName(first1.name);
+    const tmp30Result3 = UnicodeEmojisDefault;
+    stringResult = tmp30Result3.convertSurrogateToName(first1.name);
   } else {
     const _HermesInternal = HermesInternal;
     stringResult = ":" + first1.name + ":";
   }
-  tmp27Result3 = tmp27Result4;
+  tmp28Result3 = tmp28Result4;
   if (null != first1) {
     let str2 = "";
-    const tmp29Result4 = EmojiDefault;
+    const tmp30Result4 = EmojiDefault;
     if (null == first1.id) {
       str2 = first1.name;
     }
     const obj18 = { name: str2, src: emojiURL, style: null, fastImageStyle: null, textEmojiStyle: null };
-    ({ emoji: obj21.style, emoji: obj21.fastImageStyle, textEmoji: obj21.textEmojiStyle } = tmp);
-    tmp27Result3 = tmp27(tmp29Result4, obj18);
+    ({ emoji: obj22.style, emoji: obj22.fastImageStyle, textEmoji: obj22.textEmojiStyle } = tmp);
+    tmp28Result3 = tmp28(tmp30Result4, obj18);
   }
   items6[1] = closure_8(closure_14, obj17);
   items4[2] = closure_9(View, obj15);
   const obj19 = { style: tmp.row, children: items7 };
-  const obj20 = { label: intl9.string(_modDef3089.y2Y1DD), value: round5(num5), color: primaryBackgroundColor };
+  const obj20 = { label: intl9.string(_modDef3090.y2Y1DD), value: round5(num5), color: primaryBackgroundColor };
   intl9 = tmp2(1125).intl;
   num5 = undefined;
   const _Math5 = Math;
@@ -473,7 +477,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
     num5 = 0;
   }
   items7 = [closure_8(closure_13, obj20), ];
-  const obj22 = { label: intl10.string(_modDef3057.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp27Result4 };
+  const obj21 = { label: intl10.string(_modDef3058.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp28Result4 };
   intl10 = tmp2(1125).intl;
   if (null != game) {
     name2 = game.name;
@@ -484,13 +488,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSu
   if (null != applicationIconURL) {
     const obj23 = { source: obj24, style: tmp.itemIcon };
     obj24 = { uri: applicationIconURL };
-    tmp27Result4 = tmp27(tmp29(5705), obj23);
+    tmp28Result4 = tmp28(tmp30(5707), obj23);
   }
   const obj25 = { children: closure_9(View, obj4) };
-  items7[1] = closure_8(closure_14, obj22);
+  items7[1] = closure_8(closure_14, obj21);
   items4[3] = closure_9(View, obj19);
   items2[1] = closure_9(View, obj5);
-  return closure_8(tmp30, obj25);
+  return closure_8(tmp31, obj25);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberStat(arg0) {

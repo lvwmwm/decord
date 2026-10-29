@@ -1,12 +1,12 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19320
+// Function ID: 19321
 // Name: createEmbeddedAppShimHost
-// Dependencies: [19086, 12, 19081, 2]
+// Dependencies: [19321, 12, 19316, 2]
 // Exports: createEmbeddedAppShimHost
 
-// Module 19085 (createEmbeddedAppShimHost)
+// Module 19320 (createEmbeddedAppShimHost)
 import _mod12 from "module_12" /* 12 */;
-import protocol from "protocol" /* 19081 */;
+import protocol from "protocol" /* 19316 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ let map;
 
 let result = size.fileFinishedImporting("modules/embedded_apps/shim_host/createEmbeddedAppShimHost.tsx");
 
-export const createEmbeddedAppShimHost = function createEmbeddedAppShimHost(arg0) {
+export function createEmbeddedAppShimHost(arg0) {
   let onMessage;
   ({ onConnect: require, onMessage } = arg0);
   map = new Map();
@@ -42,4 +42,4 @@ export const createEmbeddedAppShimHost = function createEmbeddedAppShimHost(arg0
     }
   };
   return obj2;
-};
+}

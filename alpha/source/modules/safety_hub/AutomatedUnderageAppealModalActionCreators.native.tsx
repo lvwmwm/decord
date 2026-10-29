@@ -1,16 +1,16 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 13116
+// Function ID: 13117
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 7933, 6691, 21, 12893, 584, 5246, 12896, 1999, 7932, 7956, 6692, 7962, 7918, 6707, 7969, 8120, 2]
+// Dependencies: [5, 7956, 6715, 21, 13114, 584, 5247, 13117, 2000, 7955, 7979, 6716, 7985, 7941, 6731, 7992, 8143, 2]
 
-// Module 12895 (AutomatedUnderageAppealModalActionCreators)
+// Module 13116 (AutomatedUnderageAppealModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6691 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7933 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let _require, c3, dependencyMap, importDefault, paths;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const ModalActionCreatorsDefault = tmp(6707);
+const ModalActionCreatorsDefault = tmp(6731);
 ({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: hasOwnProperty } = SafetyHubConstants);
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ let obj = {
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { classificationId, onClose };
-    obj2.openLazy(asyncRequire(12896, dependencyMap.paths), React3, obj3);
+    obj2.openLazy(asyncRequire(13117, dependencyMap.paths), React3, obj3);
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
@@ -41,8 +41,8 @@ let obj = {
     let tmp4 = _require;
     let obj2 = require("SafetyHubUtils");
     if (obj2.isCurrentUserSuspended()) {
-      const tmp4Result = tmp4(7956);
-      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6692).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
+      const tmp4Result = tmp4(7979);
+      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(6716).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         let tmp6 = globalThis;
         const _Math = Math;
         const _Date = Date;
@@ -64,7 +64,7 @@ let obj = {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -135,7 +135,7 @@ let obj = {
                   }), obj8, closure_1_6);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp23) {
               c3 = 3;

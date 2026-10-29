@@ -1,17 +1,17 @@
-// Module ID: 7549
-// Function ID: 7550
+// Module ID: 7572
+// Function ID: 7573
 // Name: PremiumManagementUtils
-// Dependencies: [1084, 1095, 21, 3, 5945, 1125, 1381, 1627, 7550, 7553, 2]
+// Dependencies: [1084, 1095, 21, 3, 5947, 1125, 1381, 1628, 7573, 7576, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 7549 (PremiumManagementUtils)
+// Module 7572 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import intl5 from "intl" /* 1125 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7550 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7573 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let result = size.fileFinishedImporting("modules/premium/native/utils/PremiumMan
 
 export const MobileWebDestinationTypes = { PREMIUM_MANAGEMENT: "premium_management" };
 export { PremiumManagementMethod };
-export const getPremiumManagementMethod = function getPremiumManagementMethod(isOnPlatformMatchingExternalPaymentGateway) {
+export function getPremiumManagementMethod(isOnPlatformMatchingExternalPaymentGateway) {
   let tmp = null;
   if (null != isOnPlatformMatchingExternalPaymentGateway) {
     let IN_WEB;
@@ -58,8 +58,8 @@ export const getPremiumManagementMethod = function getPremiumManagementMethod(is
     tmp = IN_WEB;
   }
   return tmp;
-};
-export const getExternalManagementMessage = function getExternalManagementMessage(subscription, arg1) {
+}
+export function getExternalManagementMessage(subscription, arg1) {
   let _null;
   let obj;
   let string;
@@ -136,7 +136,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 text: string(tmp8 ? t.tqSSSA : t["olSp/D"]),
                 variant: "text-sm/semibold"
               };
-              const LinkButton = tmp13(7553).LinkButton;
+              const LinkButton = tmp13(7576).LinkButton;
               const intl3 = tmp13(1125).intl;
               string = intl3.string;
               t = tmp13(1125).t;
@@ -167,4 +167,4 @@ export const getExternalManagementMessage = function getExternalManagementMessag
     }
   }
   return null;
-};
+}

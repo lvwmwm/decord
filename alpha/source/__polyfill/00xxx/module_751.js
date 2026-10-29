@@ -8,7 +8,7 @@ import _mod713 from "module_713" /* 713 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
+export function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
   let combined1 = arg1;
   if (!combined1) {
     let str2 = "";
@@ -47,8 +47,8 @@ export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpoin
     combined1 = "" + combined + "?" + str13.toString();
   }
   return combined1;
-};
-export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
+}
+export function getReportDialogEndpoint(arg0, user) {
   const obj = _mod713;
   const url = obj.makeDsn(arg0);
   if (url) {
@@ -130,4 +130,4 @@ export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, us
   } else {
     return "";
   }
-};
+}

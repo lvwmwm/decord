@@ -1,16 +1,16 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16888
+// Function ID: 16889
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [5028, 1204, 1207, 5904, 1251, 5011, 5031, 5069, 2]
+// Dependencies: [5029, 1204, 1207, 5906, 1251, 5012, 5032, 5070, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 16650 (SameAsDeviceThemeUtils)
+// Module 16888 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
-import shared from "shared" /* 5011 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5031 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5069 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5904 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5028 */;
+import shared from "shared" /* 5012 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5032 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5070 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5906 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5029 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import ThemeConstants from "ThemeConstants" /* 1207 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let metroRequire;
 ({ SystemTheme: hasOwnProperty, SystemThemeState: metroRequire } = ThemeConstants);
 let result = size.fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
-export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUserThemeSettings) {
+export function enableSameAsDeviceTheme(customUserThemeSettings) {
   const obj = UserSettingsActionCreatorsDefault;
   const result = obj.setShouldSyncAppearanceSettings(false);
   if (null == ThemeStore.getSyncedClientTheme(hasOwnProperty.LIGHT)) {
@@ -64,10 +64,10 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
   const result5 = obj14.setSameAsDeviceThemeEnabled(true);
   const obj15 = ThemeActionCreators;
   obj15.setUseSystemTheme(metroRequire.ON);
-};
-export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
+}
+export function disableSameAsDeviceTheme() {
   const obj = ThemeActionCreators;
   obj.setUseSystemTheme(metroRequire.OFF);
   const obj2 = ThemeActionCreators;
   const result = obj2.setSameAsDeviceThemeEnabled(false);
-};
+}

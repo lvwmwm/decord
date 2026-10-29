@@ -1,12 +1,12 @@
-// Module ID: 6501
-// Function ID: 6502
+// Module ID: 6525
+// Function ID: 6526
 // Name: SharedCaptchaUtils
-// Dependencies: [6502, 6509, 2]
+// Dependencies: [6526, 6533, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 6501 (SharedCaptchaUtils)
-import CaptchaConstants from "CaptchaConstants" /* 6509 */;
-import CaptchaStore from "CaptchaStore" /* 6502 */;
+// Module 6525 (SharedCaptchaUtils)
+import CaptchaConstants from "CaptchaConstants" /* 6533 */;
+import CaptchaStore from "CaptchaStore" /* 6526 */;
 import size from "module_2" /* 2 */;
 
 let _window;
@@ -23,7 +23,7 @@ class CaptchaCancelError extends Error {
 const result = size.fileFinishedImporting("modules/captcha/SharedCaptchaUtils.tsx");
 
 export const CaptchaError = { CANCEL: "cancel", ERROR: "error", EXPIRED: "expired" };
-export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromResponse(body) {
+export function extractCaptchaPropsFromResponse(body) {
   let flag;
   let obj2;
   const obj = { captchaService: body.captcha_service, sitekey: body.captcha_sitekey, captchaSessionId: body.captcha_session_id, options: obj2 };
@@ -33,12 +33,12 @@ export const extractCaptchaPropsFromResponse = function extractCaptchaPropsFromR
     flag = false;
   }
   return obj;
-};
-export const emitCaptchaDistributionMetric = function emitCaptchaDistributionMetric(userflow) {
+}
+export function emitCaptchaDistributionMetric(userflow) {
   if (React2()) {
     const _setTimeout = setTimeout;
     const timerId = setTimeout(() => closure_1_1(), closure_3);
   }
   React(userflow);
-};
+}
 export { CaptchaCancelError };

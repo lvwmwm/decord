@@ -1,11 +1,11 @@
-// Module ID: 12390
-// Function ID: 12391
+// Module ID: 12444
+// Function ID: 12445
 // Name: conjureMessageAuthors
-// Dependencies: [5, 19, 1389, 8707, 558, 576, 504, 2]
+// Dependencies: [5, 19, 1389, 8710, 558, 576, 504, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 12390 (conjureMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 8707 */;
+// Module 12444 (conjureMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 8710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
@@ -33,7 +33,7 @@ let obj = function _settle() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -65,7 +65,7 @@ let obj = function _settle() {
               c3 = 0;
             }
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp4) {
           if (0 === c3) {

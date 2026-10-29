@@ -200,7 +200,7 @@ export const browserTracingIntegration = () => {
       startInactiveSpanResult.end(result1);
     }
   }
-  let closure_3 = { name: "useCallback", source: "PX_16" };
+  let closure_3 = { name: "Array", source: "Reflect" };
   const document = require("module_902").WINDOW.document;
   let obj2 = {};
   let merged = Object.assign(closure_3);
@@ -327,7 +327,7 @@ export const browserTracingIntegration = () => {
                     spanId1 = tmpResult14.generateSpanId();
                   }
                   const result1 = setPropagationContext2(obj4);
-                  const result2 = currentScope.setSDKProcessingMetadata({ normalizedRequest: "paths" });
+                  const result2 = currentScope.setSDKProcessingMetadata({ normalizedRequest: "r" });
                   const obj5 = { op: "navigation", parentSpan: null, forceTransaction: true };
                   const merged1 = Object.assign(arg0);
                   _createRouteSpan(closure_0, obj5);
@@ -573,7 +573,7 @@ export const browserTracingIntegration = () => {
   };
   return obj3;
 };
-export const getMetaContent = function getMetaContent(arg0) {
+export function getMetaContent(arg0) {
   const _document = _mod902.WINDOW.document;
   let element;
   if (_document != null) {
@@ -585,8 +585,8 @@ export const getMetaContent = function getMetaContent(arg0) {
     attr = element.getAttribute("content");
   }
   return attr;
-};
-export const startBrowserTracingNavigationSpan = function startBrowserTracingNavigationSpan(client, name, arg2) {
+}
+export function startBrowserTracingNavigationSpan(client, name, arg2) {
   let isRedirect;
   let obj3;
   let url;
@@ -607,14 +607,14 @@ export const startBrowserTracingNavigationSpan = function startBrowserTracingNav
     const result = setSDKProcessingMetadata(obj2);
   }
   return client[_sentry_idleSpan];
-};
-export const startBrowserTracingPageLoadSpan = function startBrowserTracingPageLoadSpan(f143048, name, arg2) {
-  f143048.emit("startPageLoadSpan", name, arg2);
+}
+export function startBrowserTracingPageLoadSpan(f144596, name, arg2) {
+  f144596.emit("startPageLoadSpan", name, arg2);
   obj = _mod693;
   const currentScope = obj.getCurrentScope();
   currentScope.setTransactionName(name.name);
-  if (f143048[_sentry_idleSpan]) {
-    f143048.emit("afterStartPageLoadSpan", f143048[_sentry_idleSpan]);
+  if (f144596[_sentry_idleSpan]) {
+    f144596.emit("afterStartPageLoadSpan", f144596[_sentry_idleSpan]);
   }
-  return f143048[_sentry_idleSpan];
-};
+  return f144596[_sentry_idleSpan];
+}

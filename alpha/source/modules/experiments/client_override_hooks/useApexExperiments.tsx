@@ -1,15 +1,15 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11313
+// Function ID: 11314
 // Name: useApexExperiments
-// Dependencies: [32, 19, 1258, 8524, 5231, 1455, 558, 576, 11260, 504, 2]
+// Dependencies: [32, 19, 1258, 8546, 5232, 1456, 558, 576, 11314, 504, 2]
 // Exports: getApexExperiments
 
-// Module 11259 (useApexExperiments)
+// Module 11313 (useApexExperiments)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1455 */;
-import ExperimentManager from "ExperimentManager" /* 5231 */;
-import experiment from "experiment" /* 8524 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1456 */;
+import ExperimentManager from "ExperimentManager" /* 5232 */;
+import experiment from "experiment" /* 8546 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
@@ -243,10 +243,10 @@ const result = size.fileFinishedImporting("modules/experiments/client_override_h
 
 export { mergeApexExperiments };
 export { getApexExperimentOverridesInfo };
-export const getApexExperiments = function getApexExperiments() {
+export function getApexExperiments() {
   let experimentsMetadata;
   const obj = { experiments: mergeApexExperiments(experimentsMetadata, ApexExperimentStore.getRegisteredExperiments()), overridesInfo: getApexExperimentOverridesInfo(ApexExperimentStore.getClientOverrides()) };
   experimentsMetadata = ApexExperimentStore.getExperimentsMetadata();
   return obj;
-};
+}
 export const useApexExperiments = tmp3;

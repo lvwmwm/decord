@@ -1,16 +1,16 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8133
+// Function ID: 8134
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 1389, 8111, 510, 8112, 1381, 8113, 5758, 2]
+// Dependencies: [5, 1389, 8134, 510, 8135, 1381, 8136, 5760, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, getAppStoreAgeSignalAssertion, warmAgeSignalAttestation
 
-// Module 8110 (AppStoreAgeSignalAttestation)
+// Module 8133 (AppStoreAgeSignalAttestation)
 import Storage3 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TimeUtils from "TimeUtils" /* 5758 */;
-import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8111 */;
-import react_nativeDefault from "react-native" /* 8112 */;
-import react_nativeDefault2 from "react-native" /* 8113 */;
+import TimeUtils from "TimeUtils" /* 5760 */;
+import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8134 */;
+import react_nativeDefault from "react-native" /* 8135 */;
+import react_nativeDefault2 from "react-native" /* 8136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
@@ -101,7 +101,7 @@ let obj = function _requestIOSChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ let obj = function _requestIOSChallenge() {
         } else if (1 === tmp3) {
           c3 = 0;
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -189,7 +189,7 @@ obj = function _registerAttestKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ obj = function _registerAttestKey() {
           return obj;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -308,7 +308,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c7;
@@ -355,13 +355,13 @@ obj = function _getAppStoreAgeSignalAssertion() {
               }
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (1 === tmp4) {
           c7 = 0;
           closure_134_10(null);
           c9 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else {
           if (2 === tmp4) {
             if (arg0 === 1) {
@@ -377,7 +377,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
               if (null == _null) {
                 c7 = 0;
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 keyId = closure_2;
                 nonce = _null.nonce;
@@ -406,7 +406,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
               if (null == keyId) {
                 c7 = 0;
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 c8 = 5;
                 c9 = 1;
@@ -443,7 +443,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
             if (null == nonce) {
               c7 = 0;
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               let tmp7 = closure_5;
               nonce = nonce.nonce;
@@ -511,7 +511,7 @@ obj = function _getAgeSignalChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -538,13 +538,13 @@ obj = function _getAgeSignalChallenge() {
               return obj5;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else if (1 === tmp3) {
           c2 = 0;
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c0 = 3;
           throw value;
@@ -592,7 +592,7 @@ obj = function _getAgeSignalIntegrityToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -612,7 +612,7 @@ obj = function _getAgeSignalIntegrityToken() {
             return obj4;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (arg0 === 1) {
           c2 = 3;
@@ -638,10 +638,10 @@ let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAg
 
 export { buildRequestHashPayload };
 export { buildIOSClientDataPayload };
-export const getAppStoreAgeSignalAssertion = function getAppStoreAgeSignalAssertion() {
+export function getAppStoreAgeSignalAssertion() {
   return obj(...arguments);
-};
-export const warmAgeSignalAttestation = function warmAgeSignalAttestation() {
+}
+export function warmAgeSignalAttestation() {
   let tmp;
   if ("production" === PROJECT_ENV) {
     tmp = 179099419678;
@@ -659,10 +659,10 @@ export const warmAgeSignalAttestation = function warmAgeSignalAttestation() {
 
     });
   }
-};
-export const getAgeSignalChallenge = function getAgeSignalChallenge() {
+}
+export function getAgeSignalChallenge() {
   return obj(...arguments);
-};
-export const getAgeSignalIntegrityToken = function getAgeSignalIntegrityToken() {
+}
+export function getAgeSignalIntegrityToken() {
   return obj(...arguments);
-};
+}

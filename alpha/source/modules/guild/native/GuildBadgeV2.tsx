@@ -1,20 +1,20 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9273
+// Function ID: 9274
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 5004, 558, 576, 1199, 5011, 9270, 9267, 9268, 2]
+// Dependencies: [109, 19, 21, 5005, 558, 576, 1199, 5012, 9274, 9271, 9272, 2]
 // Exports: hasGuildBadge
 
-// Module 9269 (GuildBadgeV2)
+// Module 9273 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1199 */;
-import shared from "shared" /* 5011 */;
-import GuildTraits from "GuildTraits" /* 9267 */;
-import BadgeCategory from "BadgeCategory" /* 9268 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9270 */;
+import shared from "shared" /* 5012 */;
+import GuildTraits from "GuildTraits" /* 9271 */;
+import BadgeCategory from "BadgeCategory" /* 9272 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9274 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let size = size_mod;
 const result = size.fileFinishedImporting("modules/guild/native/GuildBadgeV2.tsx");
 
 export default tmp3;
-export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult, arg1) {
+export function hasGuildBadge(fromGuildProfileResult, arg1) {
   const obj = GuildTraits;
   const guildTraits = obj.getGuildTraits(fromGuildProfileResult);
   const obj2 = BadgeCategory;
@@ -128,4 +128,4 @@ export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult, arg1
     tmp6 = null != tmpResult.resolveImageSource(tmp5, guildTraits, arg1);
   }
   return tmp6;
-};
+}

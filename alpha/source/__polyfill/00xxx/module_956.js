@@ -10,7 +10,7 @@ import _mod946 from "module_946" /* 946 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const checkAndWarnIfIsEmbeddedBrowserExtension = function checkAndWarnIfIsEmbeddedBrowserExtension() {
+export function checkAndWarnIfIsEmbeddedBrowserExtension() {
   let flag = false;
   if (undefined !== _mod902.WINDOW.window) {
     const WINDOW = tmp(902).WINDOW;
@@ -48,4 +48,4 @@ export const checkAndWarnIfIsEmbeddedBrowserExtension = function checkAndWarnIfI
     }
   }
   return flag2;
-};
+}

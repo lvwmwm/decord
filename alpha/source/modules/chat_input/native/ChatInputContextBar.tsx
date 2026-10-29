@@ -1,30 +1,30 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13788
+// Function ID: 13789
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5005, 7666, 1389, 1084, 21, 1199, 5004, 587, 558, 576, 5288, 1125, 5270, 7068, 6944, 504, 5072, 6402, 9254, 8352, 13556, 5180, 5085, 5242, 10121, 1264, 10119, 1111, 6401, 8336, 9728, 9730, 13557, 2]
+// Dependencies: [19, 17, 5006, 7689, 1389, 1084, 21, 1199, 5005, 587, 558, 576, 5289, 1125, 5271, 7092, 6968, 504, 5073, 6426, 9258, 8374, 13789, 5181, 5086, 5243, 10154, 1264, 10152, 1111, 6425, 8358, 9760, 9762, 13790, 2]
 
-// Module 13555 (ChatInputContextBar)
+// Module 13788 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1111 */;
 import intl9 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useToken from "useToken" /* 5288 */;
-import Pressables from "Pressables" /* 6944 */;
-import DraftStore2 from "DraftStore" /* 7666 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9728 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9730 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10121 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useToken from "useToken" /* 5289 */;
+import Pressables from "Pressables" /* 6968 */;
+import DraftStore2 from "DraftStore" /* 7689 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8358 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9760 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9762 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10154 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let hasOwnProperty;
 let map1;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(7068);
+const AssetRegistryDefault = tmp5(7092);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;
@@ -1180,10 +1180,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   obj = backgroundColor(576);
   const cResult = obj.c(9);
   ({ children, ref } = arg0);
-  const obj2 = backgroundColor(5180);
-  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(5180).GradientPercentage.END)).contextBar.backgroundColor;
+  const obj2 = backgroundColor(5181);
+  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(5181).GradientPercentage.END)).contextBar.backgroundColor;
   const tmp3 = closure_17();
-  const obj3 = backgroundColor(5085);
+  const obj3 = backgroundColor(5086);
   const sharedValue = obj3.useSharedValue(0);
   let fn = function l() {
     obj = { backgroundColor, maxHeight: sharedValue.get() };
@@ -1192,7 +1192,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const obj4 = backgroundColor(5085);
+  const obj4 = backgroundColor(5086);
   const animatedStyle = obj4.useAnimatedStyle(fn);
   dependencyMap = first.useRef(null);
   const obj5 = first;
@@ -1226,7 +1226,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161960 */ };
+                  const fn = function n() { /* body not rendered: F163632 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1258,7 +1258,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161960 */ };
+                  const fn = function n() { /* body not rendered: F163632 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1289,7 +1289,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F161960 */ };
+                  const fn = function n() { /* body not rendered: F163632 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1318,7 +1318,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F161960 */ };
+                      const fn = function n() { /* body not rendered: F163632 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
@@ -1332,7 +1332,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
       return tmp10;
     }
     const obj6 = { style: tmp9, children };
-    const tmp13 = closure_12(sharedValue(5085).View, obj6);
+    const tmp13 = closure_12(sharedValue(5086).View, obj6);
     cResult[6] = children;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
@@ -1569,7 +1569,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(10119);
+      tmp8Result = tmp8(10152);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {

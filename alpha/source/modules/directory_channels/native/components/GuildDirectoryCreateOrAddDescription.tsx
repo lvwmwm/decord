@@ -1,16 +1,16 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13670
+// Function ID: 13671
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 5004, 13438, 4870, 13439, 13426, 13427, 5270, 1125, 13435, 2]
+// Dependencies: [5, 19, 17, 21, 5005, 13671, 4871, 13672, 13659, 13660, 5271, 1125, 13668, 2]
 // Exports: default
 
-// Module 13437 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13435 */;
+// Module 13670 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, guild;
@@ -48,7 +48,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -68,7 +68,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
                   const template = tmp35.template;
                   if (null == template) {
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -106,7 +106,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
               return { value, done: true };
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -120,13 +120,13 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(13427).GuildDirectoryAddModalScreen;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13660).GuildDirectoryAddModalScreen;
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1125).t["5bQcoa"]) };
-  const Text = directoryChannelId(5270).Text;
+  const Text = directoryChannelId(5271).Text;
   intl = directoryChannelId(1125).intl;
   items = [closure_6(Text, obj4), ];
   let obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1125).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5270).Text;
+  const Text2 = directoryChannelId(5271).Text;
   intl2 = directoryChannelId(1125).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300.5, height: 175, scales: [2, 3], hash: "cd214b5502d42e0d86b5bf4c01260ed5", name: "grey_server_boosts", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/images", width: 435, height: 218, scales: [1], hash: "92f827adadc1f86811fd4e36c86fdf27", name: "nitro_modal_header_background", type: "png" });

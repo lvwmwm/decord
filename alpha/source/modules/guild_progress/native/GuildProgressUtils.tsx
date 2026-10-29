@@ -1,21 +1,21 @@
-// Module ID: 13630
-// Function ID: 13631
+// Module ID: 13863
+// Function ID: 13864
 // Name: GuildProgressUtils
-// Dependencies: [4934, 4878, 4936, 13631, 13625, 1084, 5246, 13632, 1999, 13633, 558, 576, 504, 13628, 1125, 11, 2]
+// Dependencies: [4935, 4879, 4937, 13864, 13858, 1084, 5247, 13865, 2000, 13866, 558, 576, 504, 13861, 1125, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet
 
-// Module 13630 (GuildProgressUtils)
+// Module 13863 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 13625 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13633 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import GuildProgressStore from "GuildProgressStore" /* 13631 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 13858 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13866 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import GuildProgressStore from "GuildProgressStore" /* 13864 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -567,23 +567,23 @@ const result = size.fileFinishedImporting("modules/guild_progress/native/GuildPr
 
 export const MIN_PROGRESS_PERCENT = 3;
 export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
-export const openActionSheet = function openActionSheet(guild) {
+export function openActionSheet(guild) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { guild };
-  const tmp2 = asyncRequire(13632, dependencyMap.paths);
+  const tmp2 = asyncRequire(13865, dependencyMap.paths);
   openLazy(tmp2, "guild-progress-" + guild.id, obj);
-};
-export const hideActionSheet = function hideActionSheet(arg0) {
+}
+export function hideActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet("guild-progress-" + arg0);
-};
-export const createGuildProgress = function createGuildProgress(id) {
+}
+export function createGuildProgress(id) {
   if (null != GuildStore.getGuild(id)) {
     const obj = GuildProgressActionCreatorsDefault;
     const progress = obj.createProgress(id);
   }
-};
+}
 export const useIOSCompletionStates = tmp3;
 export const useGuildProgressStep = tmp4;
 export const useIsEligibleForGuildProgress = tmp5;

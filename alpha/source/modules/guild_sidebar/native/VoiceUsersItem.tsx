@@ -1,14 +1,14 @@
-// Module ID: 17829
-// Function ID: 17830
+// Module ID: 18067
+// Function ID: 18068
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 5004, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 2]
 
-// Module 17829 (VoiceUsersItem)
+// Module 18067 (VoiceUsersItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,29 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 14050
+// Function ID: 14051
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 6535, 13816, 13815, 1084, 1382, 6711, 1272, 584, 13818, 4832, 1254, 558, 576, 504, 1402, 2064, 5696, 6707, 2]
+// Dependencies: [5, 17, 6559, 14049, 14048, 1084, 1382, 6734, 1272, 584, 14051, 4833, 1254, 558, 576, 504, 1402, 2065, 5698, 6731, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 13817 (ContactSyncUtils)
+// Module 14050 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import ContactSyncManager from "ContactSyncManager" /* 13818 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import ContactSyncManager from "ContactSyncManager" /* 14051 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13816 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13815 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14049 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14048 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let c4, c5;
 
 let c10;
 let c9;
@@ -40,92 +38,33 @@ let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
 let obj = function _uploadContacts() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c4;
+    let c5;
+    let closure_3;
     let obj5;
     let obj6;
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let friend_list_entries;
-        let flag;
-        let body;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_3 = tmp4;
-            friend_list_entries = tmp;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = false;
-            }
-            friend_list_entries = undefined;
-            body = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const _JSON = JSON;
-            friend_list_entries = JSON.parse(closure_0);
-            const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
-            obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
-            obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
-            const put = closure_131_1(closure_131_2[7]).put;
-            const tmp22 = closure_131_1(closure_131_2[7]);
-            c4 = 2;
-            c5 = 1;
-            const obj7 = { value: put(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          body = value.body;
-          const obj9 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
-          obj = closure_131_1(closure_131_2[9]);
-          obj.dispatch(obj9);
-          c5 = 3;
-          const obj10 = { value: body, done: true };
-          return obj10;
-        }
-      } catch (tmp12) {
-        c5 = 3;
-        throw tmp12;
-      }
+    let closure_1 = arg1;
+    let friend_list_entries = tmp;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = false;
     }
+    await "Reflect";
+    const _JSON = JSON;
+    friend_list_entries = JSON.parse(closure_0);
+    const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
+    obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
+    obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
+    const put = closure_131_1(closure_131_2[7]).put;
+    const tmp22 = closure_131_1(closure_131_2[7]);
+    await put(request);
+    const body = arg1.body;
+    const obj9 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
+    obj = closure_131_1(closure_131_2[9]);
+    obj.dispatch(obj9);
+    return body;
   });
   return obj(...arguments);
 };
@@ -275,7 +214,7 @@ export const ContactSyncPermissionDenied = error;
 export const ContactSyncFailedUserHasNoPhone = error1;
 export const ContactImageFetchFailed = error2;
 export { isContactSyncAvailable };
-export const checkContactPermissions = function checkContactPermissions() {
+export function checkContactPermissions() {
   let result;
   obj = utils_PlatformUtils;
   let isIOSResult = obj.isIOS();
@@ -297,11 +236,11 @@ export const checkContactPermissions = function checkContactPermissions() {
     result = Promise.resolve(constants.UNAUTHORIZED);
   }
   return result;
-};
-export const uploadContacts = function uploadContacts() {
+}
+export function uploadContacts() {
   return obj(...arguments);
-};
-export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
+}
+export function bulkAddFriends(user_ids, bulkAddToken) {
   let obj2;
   const request = { url: authStore2.USER_BULK_RELATIONSHIPS, body: obj2, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE }, rejectWithError: false };
   obj2 = { user_ids, token: bulkAddToken };
@@ -309,8 +248,8 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
   ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE });
   const postResult = obj.post(request);
   return postResult.then((body) => body.body);
-};
-export const adminDeleteContactSync = function adminDeleteContactSync() {
+}
+export function adminDeleteContactSync() {
   metroImportDefault();
   metroImportAll();
   obj = ContactSyncManager;
@@ -322,8 +261,8 @@ export const adminDeleteContactSync = function adminDeleteContactSync() {
   const obj2 = { url: authStore2.CONNECTION(map1.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_CONNECTIONS_UPDATE }, rejectWithError: false };
   ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_CONNECTIONS_UPDATE });
   return _delete(obj2);
-};
-export const getImageForContactId = function getImageForContactId(arg0) {
+}
+export function getImageForContactId(arg0) {
   let closure_0 = arg0;
   const DCDContactSyncManager = NativeModules.DCDContactSyncManager;
   const promise = new Promise((arg0, arg1) => {
@@ -338,8 +277,8 @@ export const getImageForContactId = function getImageForContactId(arg0) {
     });
   });
   return promise;
-};
-export const getContacts = function getContacts(phone) {
+}
+export function getContacts(phone) {
   let str;
   let closure_0 = phone;
   const DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -376,8 +315,8 @@ export const getContacts = function getContacts(phone) {
     });
   });
   return promise;
-};
-export const getStoredContacts = function getStoredContacts() {
+}
+export function getStoredContacts() {
   try {
     const _JSON = JSON;
     const parsed = JSON.parse(tmp);
@@ -386,19 +325,19 @@ export const getStoredContacts = function getStoredContacts() {
     obj.captureException(tmp4);
   }
   return {};
-};
+}
 export const useContactSyncAccount = tmp8;
 export const useContactSyncEnabled = tmp9;
 export const useContactSyncUserIsDiscoverable = tmp10;
 export { isContactSyncEnabled };
 export { getOpenLearnMoreUrl };
-export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
+export function handleOpenLearnMoreLink() {
   const openURL = LinkingDefault.openURL;
   LinkingDefault;
   obj = HelpdeskUtilsDefault;
   openURL(obj.getArticleURL(constants4.CONTACT_SYNC));
-};
-export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
+}
+export function transitionToAddFriendsLandingPage() {
   obj = ModalActionCreatorsDefault;
   obj.popWithKey(React4);
-};
+}

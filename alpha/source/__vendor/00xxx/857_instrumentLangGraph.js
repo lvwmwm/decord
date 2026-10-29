@@ -58,7 +58,7 @@ function apply(arg0, arg1, arg2) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               let c6;
@@ -262,7 +262,7 @@ function apply(arg0, arg1, arg2) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentLangGraph = function instrumentLangGraph(compile, arg1) {
+export function instrumentLangGraph(compile, arg1) {
   let apply;
   let tmp = arg1 || {};
   compile = compile.compile;
@@ -271,10 +271,10 @@ export const instrumentLangGraph = function instrumentLangGraph(compile, arg1) {
   let proxy = new Proxy(compile.bind(compile), obj);
   compile.compile = proxy;
   return compile;
-};
-export const instrumentStateGraphCompile = function instrumentStateGraphCompile(arg0, arg1) {
+}
+export function instrumentStateGraphCompile(arg0, arg1) {
   let closure_0 = arg1;
   const obj = { apply };
   const proxy = new Proxy(arg0, obj);
   return proxy;
-};
+}

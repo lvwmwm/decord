@@ -1,17 +1,17 @@
-// Module ID: 9280
-// Function ID: 9281
+// Module ID: 9284
+// Function ID: 9285
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2019, 1084, 1264, 1402, 9281, 5648, 558, 576, 9282, 38, 2]
+// Dependencies: [19, 2020, 1084, 1264, 1402, 9285, 5649, 558, 576, 9286, 38, 2]
 // Exports: gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 9280 (useShouldOpenGameProfileModal)
+// Module 9284 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import GameFlags from "GameFlags" /* 9281 */;
+import GameFlags from "GameFlags" /* 9285 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -289,7 +289,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldOpe
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5648);
+        const tmp21Result = tmp21(5649);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -328,7 +328,7 @@ function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5648);
+    const tmp8Result = tmp8(5649);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -343,7 +343,7 @@ export { RejectionReason };
 export { trackEntryPoint };
 export { isGameDisabled };
 export { gameIsAcceptable };
-export const gameIdIsAcceptable = function gameIdIsAcceptable(arg0) {
+export function gameIdIsAcceptable(arg0) {
   let arr;
   const game = GameStore.getGame(arg0);
   if (null == game) {
@@ -357,11 +357,11 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(arg0) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5648);
+    const tmp9Result = tmp9(5649);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
     }
   }
   return 0 === arr.length;
-};
+}

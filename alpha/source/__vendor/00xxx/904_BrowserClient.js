@@ -175,7 +175,7 @@ let items = [
 const BrowserClient_export = _createClass(BrowserClient, items);
 
 export { BrowserClient_export as BrowserClient };
-export const applyDefaultOptions = function applyDefaultOptions(arg0) {
+export function applyDefaultOptions(arg0) {
   let id;
   if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
     id = globalThis.__SENTRY_RELEASE__;
@@ -188,4 +188,4 @@ export const applyDefaultOptions = function applyDefaultOptions(arg0) {
   const obj = { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
   const merged = Object.assign(arg0);
   return obj;
-};
+}

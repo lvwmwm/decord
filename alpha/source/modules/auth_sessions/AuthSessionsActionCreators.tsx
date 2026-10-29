@@ -1,10 +1,10 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16747
+// Function ID: 16748
 // Name: AuthSessionsActionCreators
 // Dependencies: [5, 1084, 1294, 584, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 16509 (AuthSessionsActionCreators)
+// Module 16747 (AuthSessionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -49,7 +49,7 @@ obj = function _logOutSessions() {
       items = arr2;
       if (0 === length.length) {
         let c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       items = [length];
@@ -68,13 +68,13 @@ obj = function _logOutSessions() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsActionCreators.tsx");
 
-export const fetchAuthSessions = function fetchAuthSessions() {
+export function fetchAuthSessions() {
   return obj(...arguments);
-};
-export const clearAuthSessions = function clearAuthSessions() {
+}
+export function clearAuthSessions() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: [] });
-};
-export const logOutSessions = function logOutSessions() {
+}
+export function logOutSessions() {
   return obj(...arguments);
-};
+}

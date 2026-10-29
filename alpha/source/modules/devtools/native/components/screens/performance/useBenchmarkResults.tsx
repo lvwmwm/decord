@@ -1,9 +1,9 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17621
+// Function ID: 17622
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 17382 (useBenchmarkResults)
+// Module 17621 (useBenchmarkResults)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

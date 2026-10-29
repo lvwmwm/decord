@@ -1,15 +1,15 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 7101
+// Function ID: 7102
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 7077 (getAuthenticationErrorsFromAPIError)
+// Module 7101 (getAuthenticationErrorsFromAPIError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");
 
-export const getAuthenticationErrorsFromAPIError = function getAuthenticationErrorsFromAPIError(error) {
+export function getAuthenticationErrorsFromAPIError(error) {
   const obj = { error_code: error.code };
   if (null != error.errors) {
     const _Object = Object;
@@ -27,8 +27,8 @@ export const getAuthenticationErrorsFromAPIError = function getAuthenticationErr
     }
     return obj;
   }
-};
-export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthenticationErrorsFromV6OrEarlierAPIError(error) {
+}
+export function getAuthenticationErrorsFromV6OrEarlierAPIError(error) {
   if (Object.keys(error.fields).length > 0) {
     return error.fields;
   } else {
@@ -38,4 +38,4 @@ export const getAuthenticationErrorsFromV6OrEarlierAPIError = function getAuthen
     }
     return obj;
   }
-};
+}

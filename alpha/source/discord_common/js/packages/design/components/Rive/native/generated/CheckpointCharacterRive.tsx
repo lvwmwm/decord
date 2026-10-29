@@ -1,12 +1,12 @@
-// Module ID: 5145
-// Function ID: 5146
+// Module ID: 5146
+// Function ID: 5147
 // Name: CheckpointCharacterRive
-// Dependencies: [109, 19, 21, 558, 5079, 576, 5146, 5134, 2]
+// Dependencies: [109, 19, 21, 558, 5080, 576, 5147, 5135, 2]
 
-// Module 5145 (CheckpointCharacterRive)
+// Module 5146 (CheckpointCharacterRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 5079 */;
+import BaseRive2 from "BaseRive" /* 5080 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let dataBinding, dependencyMap, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(5134);
+const RiveErrorBoundary2 = tmp(5135);
 let closure_2 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -15946,7 +15946,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkp
           }
         }
       }
-      const BaseRive = tmp(5079).BaseRive;
+      const BaseRive = tmp(5080).BaseRive;
       class R {
         constructor(arg0) {
           tmp = closure_9[closure_2];

@@ -1,13 +1,13 @@
-// Module ID: 5736
-// Function ID: 5737
+// Module ID: 5738
+// Function ID: 5739
 // Name: InviteStore
-// Dependencies: [1084, 5737, 504, 584, 2]
+// Dependencies: [1084, 5739, 504, 584, 2]
 
-// Module 5736 (InviteStore)
+// Module 5738 (InviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5737 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5739 */;
 import size from "module_2" /* 2 */;
 
 function updateInvite(code, fn) {

@@ -1,24 +1,24 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 9009
+// Function ID: 9010
 // Name: ChannelPermissionsUtils
-// Dependencies: [4860, 4874, 4911, 4916, 1389, 7910, 1084, 4914, 1125, 1096, 11, 5058, 1385, 4941, 9007, 1997, 6030, 2]
+// Dependencies: [4861, 4875, 4912, 4917, 1389, 7933, 1084, 4915, 1125, 1096, 11, 5059, 1385, 4942, 9010, 1998, 6034, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9006 (ChannelPermissionsUtils)
+// Module 9009 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import intl8 from "intl" /* 1125 */;
-import Server from "Server" /* 1997 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 4914 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import ChannelUtils from "ChannelUtils" /* 6030 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7910 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9007 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4911 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import Server from "Server" /* 1998 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 4915 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import ChannelUtils from "ChannelUtils" /* 6034 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7933 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9010 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4912 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -112,7 +112,7 @@ const result = size.fileFinishedImporting("modules/channel_permissions/ChannelPe
 
 export { getRoleRowData };
 export { sortRoles };
-export const getNoRolesRow = function getNoRolesRow() {
+export function getNoRolesRow() {
   let stringResult = arg0;
   if (arg0 === undefined) {
     const intl = intl8.intl;
@@ -122,12 +122,12 @@ export const getNoRolesRow = function getNoRolesRow() {
   const obj = { rowType: RowType.EMPTY_STATE, colorString: map1, name: stringResult, disabled: true, id: "EMPTY_STATE" };
   items[0] = obj;
   return items;
-};
-export const isEveryoneRoleId = function isEveryoneRoleId(guildId, id) {
+}
+export function isEveryoneRoleId(guildId, id) {
   const obj = SnowflakeUtilsDefault;
   return obj.castGuildIdAsEveryoneGuildRoleId(guildId) === id;
-};
-export const getRolesRows = function getRolesRows(guild, stateFromStores, channel, permission, filterByQuery) {
+}
+export function getRolesRows(guild, stateFromStores, channel, permission, filterByQuery) {
   let closure_0 = channel;
   let closure_1 = permission;
   let fn = filterByQuery;
@@ -168,8 +168,8 @@ export const getRolesRows = function getRolesRows(guild, stateFromStores, channe
   });
   const sorted = found.sort(sortRoles);
   return sorted.map((item) => getRoleRowData(item));
-};
-export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery) {
+}
+export function getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery) {
   let closure_0 = channel;
   let closure_1 = permission;
   let fn = filterByQuery;
@@ -210,8 +210,8 @@ export const getRolesRowsWithPermissionDisabled = function getRolesRowsWithPermi
   });
   const sorted = found.sort(sortRoles);
   return sorted.map((item) => getRoleRowData(item, metroRequire(item, permission)));
-};
-export const getExistingRoles = function getExistingRoles(guild, sortedRoles, channel, accessPermissions, arg4) {
+}
+export function getExistingRoles(guild, sortedRoles, channel, accessPermissions, arg4) {
   let closure_0 = channel;
   let closure_1 = accessPermissions;
   let closure_2 = arg4;
@@ -247,8 +247,8 @@ export const getExistingRoles = function getExistingRoles(guild, sortedRoles, ch
     }
     return tmp;
   });
-};
-export const getAllExistingRolesWithPermission = function getAllExistingRolesWithPermission(arg0, arr, arg2, arg3, arg4) {
+}
+export function getAllExistingRolesWithPermission(arg0, arr, arg2, arg3, arg4) {
   let closure_0 = arg2;
   let closure_1 = arg3;
   let closure_2 = arg4;
@@ -296,8 +296,8 @@ export const getAllExistingRolesWithPermission = function getAllExistingRolesWit
     }
     return hasItem;
   });
-};
-export const getExistingRolesRows = function getExistingRolesRows(guild, sortedGuildRoles, channel, accessPermissions, arg4) {
+}
+export function getExistingRolesRows(guild, sortedGuildRoles, channel, accessPermissions, arg4) {
   _require = channel;
   let closure_1 = accessPermissions;
   let closure_2 = arg4;
@@ -350,8 +350,8 @@ export const getExistingRolesRows = function getExistingRolesRows(guild, sortedG
     mapped = items;
   }
   return mapped;
-};
-export const getExistingRolesRowWithPermissionDisabled = function getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
+}
+export function getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
   _require = channel;
   let closure_1 = MODERATE_STAGE_CHANNEL_PERMISSIONS;
   let closure_2 = arg4;
@@ -416,8 +416,8 @@ export const getExistingRolesRowWithPermissionDisabled = function getExistingRol
     mapped = items;
   }
   return mapped;
-};
-export const getMembersRows = function getMembersRows(stateFromStoresArray, channel, guild, permission, arg4) {
+}
+export function getMembersRows(stateFromStoresArray, channel, guild, permission, arg4) {
   _require = channel;
   let closure_1 = guild;
   let closure_2 = permission;
@@ -470,8 +470,8 @@ export const getMembersRows = function getMembersRows(stateFromStoresArray, chan
   });
   const mapped1 = found1.map((item) => getMemberRowData(item, guild, appChannelBotUserId));
   return mapped1.sort(sortMembers);
-};
-export const getExistingMembers = function getExistingMembers(memberIds, channel, guild, accessPermissions, arg4) {
+}
+export function getExistingMembers(memberIds, channel, guild, accessPermissions, arg4) {
   let closure_3;
   _require = channel;
   let closure_1 = guild;
@@ -510,8 +510,8 @@ export const getExistingMembers = function getExistingMembers(memberIds, channel
     }
     return tmp10;
   });
-};
-export const getExistingMembersRows = function getExistingMembersRows(memberIds, channel, guild, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
+}
+export function getExistingMembersRows(memberIds, channel, guild, MODERATE_STAGE_CHANNEL_PERMISSIONS, arg4) {
   _require = guild;
   let obj = arg4;
   if (arg4 === undefined) {
@@ -557,8 +557,8 @@ export const getExistingMembersRows = function getExistingMembersRows(memberIds,
   });
   const mapped1 = found1.map((item) => getMemberRowData(item, guild, appChannelBotUserId));
   return mapped1.sort(sortMembers);
-};
-export const getRowTypeLabel = function getRowTypeLabel(rowType, arg1) {
+}
+export function getRowTypeLabel(rowType, arg1) {
   if (RowType.ROLE === rowType) {
     const intl7 = intl8.intl;
     return intl7.string(intl8.t.ZxoFOG);
@@ -587,8 +587,8 @@ export const getRowTypeLabel = function getRowTypeLabel(rowType, arg1) {
   } else if (RowType.EMPTY_STATE === rowType) {
     return null;
   }
-};
-export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
+}
+export function getRemoveTooltipHint(arg0) {
   if (RowType.ROLE === arg0) {
     const intl5 = intl8.intl;
     return intl5.string(intl8.t["Gzc/a8"]);
@@ -608,8 +608,8 @@ export const getRemoveTooltipHint = function getRemoveTooltipHint(arg0) {
     const EMPTY_STATE = tmp.EMPTY_STATE;
     return null;
   }
-};
-export const flipEveryonePermission = function flipEveryonePermission(guild_id, accessPermissions, result) {
+}
+export function flipEveryonePermission(guild_id, accessPermissions, result) {
   let obj2;
   let obj3;
   let obj4;
@@ -627,8 +627,8 @@ export const flipEveryonePermission = function flipEveryonePermission(guild_id, 
     obj2.deny = tmp5Result.add(obj2.deny, accessPermissions);
   }
   return obj2;
-};
-export const toggleChannelEveryonePermission = function toggleChannelEveryonePermission(guild_id, arg1, arg2) {
+}
+export function toggleChannelEveryonePermission(guild_id, arg1, arg2) {
   let obj2;
   let obj3;
   let obj4;
@@ -647,8 +647,8 @@ export const toggleChannelEveryonePermission = function toggleChannelEveryonePer
   }
   const obj6 = ChannelSettingsPermissionsActionCreators;
   obj6.updatePermission(guild_id, obj2.id, obj2.allow, obj2.deny);
-};
-export const grantUserChannelAccess = function grantUserChannelAccess(id, accessPermissions) {
+}
+export function grantUserChannelAccess(id, accessPermissions) {
   let allow;
   let deny;
   let obj4;
@@ -668,8 +668,8 @@ export const grantUserChannelAccess = function grantUserChannelAccess(id, access
       return obj2.updatePermission(id, id.permissionOverwrites[currentUser.id].id, addResult, deny);
     }
   }
-};
-export const isPrivateGuildChannel = function isPrivateGuildChannel(channel, arg1) {
+}
+export function isPrivateGuildChannel(channel, arg1) {
   if (null == channel) {
     return false;
   } else {
@@ -688,16 +688,16 @@ export const isPrivateGuildChannel = function isPrivateGuildChannel(channel, arg
     }
     return hasItem;
   }
-};
-export const isPrivateTextChannel = function isPrivateTextChannel(type) {
+}
+export function isPrivateTextChannel(type) {
   let hasItem = null != tmp && type.type === constants2.GUILD_TEXT;
   if (hasItem) {
     const obj = BigFlagUtilsAll;
     hasItem = obj.has(tmp.deny, unpackModuleId.VIEW_CHANNEL);
   }
   return hasItem;
-};
-export const canCreatePrivateChannel = function canCreatePrivateChannel(GUILD_APP, canResult, canResult1) {
+}
+export function canCreatePrivateChannel(GUILD_APP, canResult, canResult1) {
   let tmp2 = canResult;
   if (GUILD_APP !== constants2.GUILD_TEXT) {
     tmp2 = canResult;
@@ -714,8 +714,8 @@ export const canCreatePrivateChannel = function canCreatePrivateChannel(GUILD_AP
     }
   }
   return tmp2;
-};
-export const getPrivateChannelHintText = function getPrivateChannelHintText(first1) {
+}
+export function getPrivateChannelHintText(first1) {
   if (constants2.GUILD_TEXT !== first1) {
     if (constants2.GUILD_ANNOUNCEMENT !== first1) {
       if (constants2.GUILD_APP !== first1) {
@@ -733,8 +733,8 @@ export const getPrivateChannelHintText = function getPrivateChannelHintText(firs
   }
   const intl3 = intl8.intl;
   return intl3.format(intl8.t.ZDtA0T, {});
-};
-export const extractPermissionOverwrites = function extractPermissionOverwrites(arg0, arg1) {
+}
+export function extractPermissionOverwrites(arg0, arg1) {
   let closure_0 = arg1;
   const items = [];
   const values = Object.values(arg0);
@@ -754,4 +754,4 @@ export const extractPermissionOverwrites = function extractPermissionOverwrites(
     }
   });
   return items;
-};
+}

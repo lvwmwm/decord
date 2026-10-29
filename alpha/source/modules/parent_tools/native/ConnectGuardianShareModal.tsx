@@ -1,22 +1,22 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19463
+// Function ID: 19464
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7680, 21, 5004, 587, 1125, 2535, 5698, 6707, 12938, 573, 16438, 7935, 7936, 6013, 5270, 16439, 6916, 6960, 558, 576, 11188, 2]
+// Dependencies: [19, 17, 7703, 21, 5005, 587, 1125, 2536, 5700, 6731, 13159, 573, 16676, 7958, 7959, 6015, 5271, 16677, 6940, 6984, 558, 576, 11242, 2]
 
-// Module 19230 (ConnectGuardianShareModal)
+// Module 19463 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import Modal2 from "Modal" /* 11188 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16438 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import Modal2 from "Modal" /* 11242 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16676 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function ConnectGuardianShareScreen() {
   let obj13;
   const tmp = closure_8();
   const obj = getLinkCode(1125);
-  const syncMessages = obj.useSyncMessages(getLinkCode(2535).messagesLoader);
+  const syncMessages = obj.useSyncMessages(getLinkCode(2536).messagesLoader);
   const callback = react.useCallback(() => {
     const presentFailedToast = getLinkCode(dependencyMap[8]).presentFailedToast;
     getLinkCode(dependencyMap[8]);
@@ -47,7 +47,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(12938);
+  const obj2 = getLinkCode(13159);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(573);
@@ -60,32 +60,32 @@ function ConnectGuardianShareScreen() {
   }, []);
   const tmp9 = useOnNewPendingRequestDefault;
   tmp9(ModalActionCreatorsDefault.pop);
-  const ModalScreen = getLinkCode(7935).ModalScreen;
-  const ModalContent = getLinkCode(7936).ModalContent;
+  const ModalScreen = getLinkCode(7958).ModalScreen;
+  const ModalContent = getLinkCode(7959).ModalContent;
   const obj5 = { spacing: nativeDefault.space.PX_40, children: null };
-  const Stack = getLinkCode(6013).Stack;
+  const Stack = getLinkCode(6015).Stack;
   const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack2 = getLinkCode(6013).Stack;
-  const obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(_modDef2535.ITlV6p) };
-  const Text = getLinkCode(5270).Text;
+  const Stack2 = getLinkCode(6015).Stack;
+  const obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(_modDef2536.ITlV6p) };
+  const Text = getLinkCode(5271).Text;
   intl = getLinkCode(1125).intl;
   items2 = [closure_6(Text, obj7), ];
-  const obj8 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted", children: intl2.format(_modDef2535.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-  const Text2 = getLinkCode(5270).Text;
+  const obj8 = { style: tmp.body, variant: "text-sm/medium", color: "text-muted", children: intl2.format(_modDef2536.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
+  const Text2 = getLinkCode(5271).Text;
   intl2 = getLinkCode(1125).intl;
   items2[1] = closure_6(Text2, obj8);
   const items3 = [closure_7(Stack2, obj6), ];
   const obj9 = { spacing: nativeDefault.space.PX_24, style: tmp.cardSection, children: null };
-  const Stack3 = getLinkCode(6013).Stack;
-  const obj10 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(_modDef2535.pojgfk) };
-  const Text3 = getLinkCode(5270).Text;
+  const Stack3 = getLinkCode(6015).Stack;
+  const obj10 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(_modDef2536.pojgfk) };
+  const Text3 = getLinkCode(5271).Text;
   intl3 = getLinkCode(1125).intl;
   const items4 = [closure_6(Text3, obj10), ];
   if (null != stateFromStores) {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(16439).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(16677).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;
@@ -95,7 +95,7 @@ function ConnectGuardianShareScreen() {
     obj5.children = items3;
     return closure_6(ModalScreen, obj12);
   }
-  const obj14 = { style: tmp.loading, children: closure_6(getLinkCode(6916).ActivityIndicator, {}) };
+  const obj14 = { style: tmp.loading, children: closure_6(getLinkCode(6940).ActivityIndicator, {}) };
   tmp11Result = tmp11(View, obj14);
 }
 const View = react_native.View;
@@ -122,7 +122,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGua
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { initialRouteName: "CONNECT_GUARDIAN_SHARE", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
-    const Modal = tmp(11188).Modal;
+    const Modal = tmp(11242).Modal;
     intl = tmp(1125).intl;
     const tmp8 = metroRequire(Modal, obj4);
     cResult[1] = tmp8;

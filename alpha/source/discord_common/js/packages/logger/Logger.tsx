@@ -183,7 +183,7 @@ export function setLogFn(arg0) {
 export function setNativeLogFn(arg0) {
   nativeLog = arg0;
 }
-export const defaultLogFn = function defaultLogFn(arg0, arg1, arg2) {
+export function defaultLogFn(arg0, arg1, arg2) {
   const substr = [...arguments].slice();
-};
+}
 export { Logger };

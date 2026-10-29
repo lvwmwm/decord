@@ -1,17 +1,17 @@
-// Module ID: 18544
-// Function ID: 18545
+// Module ID: 18778
+// Function ID: 18779
 // Name: SecondsSliderUtils
-// Dependencies: [1125, 2046, 2]
+// Dependencies: [1125, 2047, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 18544 (SecondsSliderUtils)
+// Module 18778 (SecondsSliderUtils)
 import intl7 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 
-export const getSecondsSliderLabel = function getSecondsSliderLabel(arg0, arg1, intl) {
+export function getSecondsSliderLabel(arg0, arg1, intl) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -21,7 +21,7 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(arg0, arg1, 
     intl = intl7.intl;
     stringResult = intl.string(intl7.t.Yl1D84);
   }
-  const obj = _modDef2046;
+  const obj = _modDef2047;
   const time = obj.duration(arg0, "seconds");
   if (time.days() > 0) {
     const intl6 = intl7.intl;
@@ -56,4 +56,4 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(arg0, arg1, 
     stringResult = intl2.string(intl7.t.Yl1D84);
   }
   return stringResult;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17764
+// Function ID: 17765
 // Name: updatePersistentCodesEnabled
-// Dependencies: [5, 502, 4856, 5666, 9230, 1084, 584, 9229, 6409, 5944, 1125, 9233, 6669, 2]
+// Dependencies: [5, 502, 4857, 5668, 9234, 1084, 584, 9233, 6433, 5946, 1125, 9237, 6693, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 17525 (updatePersistentCodesEnabled)
+// Module 17764 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9229 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9230 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9233 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9233 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9234 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9237 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import size from "module_2" /* 2 */;
 
 let body, c0, c1, c2, closure_4, closure_5, dispatchResult, getChannel, id, persistentCodesEnabled, voiceStateForUser;
@@ -39,7 +39,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -257,7 +257,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -282,7 +282,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;
@@ -295,6 +295,6 @@ let closure_7 = SecureFramesConstants.SECURE_FRAMES_PUBLIC_KEY_VERSION;
 const ChannelTypes = Constants.ChannelTypes;
 let result = size.fileFinishedImporting("modules/rtc/updatePersistentCodesEnabled.tsx");
 
-export const updatePersistentCodesEnabled = function updatePersistentCodesEnabled() {
+export function updatePersistentCodesEnabled() {
   return obj(...arguments);
-};
+}

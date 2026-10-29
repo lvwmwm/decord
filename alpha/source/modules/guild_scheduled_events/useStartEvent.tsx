@@ -1,11 +1,11 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9070
+// Function ID: 9071
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 9068, 9069, 6409, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9071, 9072, 6433, 2]
 
-// Module 9067 (useStartEvent)
+// Module 9070 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 9068 */;
+import StartEventUtilsAll from "StartEventUtils" /* 9071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c6;
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
             }
             closure_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp50) {
           closure_5 = tmp50;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
               aPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -338,7 +338,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
             }
             closure_132_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp55) {
           closure_5 = tmp55;

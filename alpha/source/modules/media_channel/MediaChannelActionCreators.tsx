@@ -1,10 +1,10 @@
-// Module ID: 10855
-// Function ID: 10856
+// Module ID: 10931
+// Function ID: 10932
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1084, 584, 1294, 6409, 2]
+// Dependencies: [5, 1084, 584, 1294, 6433, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 10855 (MediaChannelActionCreators)
+// Module 10931 (MediaChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -28,7 +28,7 @@ let obj = function _fetchMediaPostEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _fetchMediaPostEmbed() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -110,7 +110,7 @@ obj = function _unfurlEmbedUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -170,14 +170,14 @@ obj = function _unfurlEmbedUrl() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/media_channel/MediaChannelActionCreators.tsx");
 
-export const dismissMediaPostSharePrompt = function dismissMediaPostSharePrompt(threadId) {
+export function dismissMediaPostSharePrompt(threadId) {
   obj = DispatcherDefault;
   const obj2 = { type: "DISMISS_MEDIA_POST_SHARE_PROMPT", threadId };
   obj.dispatch(obj2);
-};
-export const fetchMediaPostEmbed = function fetchMediaPostEmbed() {
+}
+export function fetchMediaPostEmbed() {
   return obj(...arguments);
-};
-export const unfurlEmbedUrl = function unfurlEmbedUrl() {
+}
+export function unfurlEmbedUrl() {
   return obj(...arguments);
-};
+}

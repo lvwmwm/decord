@@ -1,9 +1,9 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8895
+// Function ID: 8896
 // Name: MediaViewerOverlayButton
-// Dependencies: [109, 19, 21, 558, 576, 7991, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8014, 2]
 
-// Module 8892 (MediaViewerOverlayButton)
+// Module 8895 (MediaViewerOverlayButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const IconButton2 = tmp(7991);
+const IconButton2 = tmp(8014);
 let closure_2 = ["ref"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewerOverlayButton(ref) {

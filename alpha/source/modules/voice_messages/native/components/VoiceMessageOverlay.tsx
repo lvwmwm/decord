@@ -1,38 +1,36 @@
-// Module ID: 13804
-// Function ID: 13805
+// Module ID: 14037
+// Function ID: 14038
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5005, 4856, 13293, 13294, 1084, 12567, 21, 5085, 1199, 5270, 12, 7994, 5004, 587, 6742, 558, 576, 504, 5288, 6921, 1125, 5242, 8576, 11041, 13805, 5629, 13541, 5303, 6007, 1120, 12880, 11544, 13388, 13383, 7991, 5726, 5716, 11686, 12563, 13806, 2]
+// Dependencies: [32, 19, 17, 5006, 4857, 13526, 13527, 1084, 12622, 21, 5086, 1199, 5271, 12, 8017, 5005, 587, 6765, 558, 576, 504, 5289, 6945, 1125, 5243, 8598, 11095, 14038, 5630, 13774, 5304, 6009, 1120, 13101, 11598, 13621, 13616, 8014, 5728, 5718, 11740, 12618, 14039, 2]
 
-// Module 13804 (VoiceMessageOverlay)
+// Module 14037 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import intl7 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5303 */;
-import LegacyTokens from "LegacyTokens" /* 6742 */;
-import useRefValueDefault from "useRefValue" /* 6921 */;
-import inlineStyles from "inlineStyles" /* 7994 */;
-import ChatInputConstants from "ChatInputConstants" /* 12567 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13293 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13294 */;
+import timing from "timing" /* 5243 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5304 */;
+import LegacyTokens from "LegacyTokens" /* 6765 */;
+import useRefValueDefault from "useRefValue" /* 6945 */;
+import inlineStyles from "inlineStyles" /* 8017 */;
+import ChatInputConstants from "ChatInputConstants" /* 12622 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13526 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13527 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Fragment from "Fragment" /* 21 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5086 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const ReanimatedRexport_mod = ReanimatedRexport2;
 let _require, dependencyMap, flag, importDefault, ref, set, set2;
 
 let closure_14;
@@ -41,7 +39,9 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(6007);
+const intl7 = tmp(1125);
+const ReanimatedRexport2 = tmp(5086);
+const react_native = tmp(6009);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
@@ -324,10 +324,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessagePrompt(initialAnimation) {
   let first;
+  let obj3;
+  let obj4;
+  let obj5;
+  let obj6;
+  let obj7;
   let tmp11;
   let tmp17;
   let tmp18;
   let tmp7;
+  const tmp = require;
   let obj = react2;
   const cResult = obj.c(9);
   initialAnimation = initialAnimation.initialAnimation;
@@ -361,8 +367,8 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     }
   }
   let tmp5Result = tmp5(tmp7);
+  let obj2 = react;
   ref = react.useRef(undefined);
-  const obj2 = react;
   const tmp10 = useRefValueDefault(ref);
   if (exiting) {
     class A {
@@ -460,7 +466,7 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
           return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
         }
       }
-      stringResult4 = obj5.string(tmp(1125).t["3qvtks"]);
+      stringResult4 = obj5.string(intl7.t["3qvtks"]);
       tmp11 = stringResult4;
     }
   }
@@ -519,7 +525,7 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         ref.current = stringResult4;
       }
     }
-    const obj8 = { style: animatedStyle, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: 2, children: tmp11 };
+    let obj8 = { style: animatedStyle, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: 2, children: tmp11 };
     cResult[6] = animatedStyle;
     cResult[7] = tmp11;
     cResult[8] = map1(closure_21, obj8);

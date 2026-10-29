@@ -1,16 +1,16 @@
-// Module ID: 4900
-// Function ID: 4901
+// Module ID: 4901
+// Function ID: 4902
 // Name: react-native
-// Dependencies: [4901, 2]
+// Dependencies: [4902, 2]
 // Exports: getUserId, setUserId
 
-// Module 4900 (react-native)
-import react_nativeDefault from "react-native" /* 4901 */;
+// Module 4901 (react-native)
+import react_nativeDefault from "react-native" /* 4902 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");
 
-export const getUserId = function getUserId() {
+export function getUserId() {
   const obj = react_nativeDefault;
   const userId = obj.getConstants().userId;
   let tmp = null;
@@ -18,8 +18,8 @@ export const getUserId = function getUserId() {
     tmp = userId;
   }
   return tmp;
-};
-export const setUserId = function setUserId(id) {
+}
+export function setUserId(id) {
   const obj = react_nativeDefault;
   obj.setUserId(id);
-};
+}

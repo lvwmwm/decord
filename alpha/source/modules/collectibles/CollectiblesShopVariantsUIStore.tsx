@@ -1,12 +1,12 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 9483
+// Function ID: 9484
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1266, 4919, 558, 576, 9389, 7696, 2]
+// Dependencies: [1266, 4920, 558, 576, 9421, 7719, 2]
 // Exports: setSelectedVariantIndex
 
-// Module 9452 (CollectiblesShopVariantsUIStore)
-import _slicedToArray from "_slicedToArray" /* 4919 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
+// Module 9483 (CollectiblesShopVariantsUIStore)
+import _slicedToArray from "_slicedToArray" /* 4920 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
 import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -88,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedV
 const result = size.fileFinishedImporting("modules/collectibles/CollectiblesShopVariantsUIStore.tsx");
 
 export const useSelectedVariantIndex = tmp2;
-export const setSelectedVariantIndex = function setSelectedVariantIndex(arg0, arg1) {
+export function setSelectedVariantIndex(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   state.setState(function(selectionStates) {
@@ -112,4 +112,4 @@ export const setSelectedVariantIndex = function setSelectedVariantIndex(arg0, ar
     }
     return tmp5;
   });
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12427
+// Function ID: 12428
 // Name: conjureTipDismissals
 // Dependencies: [19, 510, 558, 576, 2]
 // Exports: dismissConjureTip
 
-// Module 12373 (conjureTipDismissals)
+// Module 12427 (conjureTipDismissals)
 import Storage5 from "Storage" /* 510 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -124,7 +124,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 let result = size.fileFinishedImporting("modules/conjure/tips/conjureTipDismissals.tsx");
 
 export { isConjureTipDismissed };
-export const dismissConjureTip = function dismissConjureTip(tip, arg1, ideasIntroAnchorId) {
+export function dismissConjureTip(tip, arg1, ideasIntroAnchorId) {
   let anchor;
   let app;
   let items2;
@@ -205,5 +205,5 @@ export const dismissConjureTip = function dismissConjureTip(tip, arg1, ideasIntr
       const item = set1.forEach((fn) => fn());
     }
   }
-};
+}
 export const useConjureTipDismissalsVersion = tmp4;

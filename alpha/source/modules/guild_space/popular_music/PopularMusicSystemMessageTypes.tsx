@@ -1,17 +1,17 @@
-// Module ID: 8387
-// Function ID: 8388
+// Module ID: 8409
+// Function ID: 8410
 // Name: PopularMusicSystemMessageTypes
 // Dependencies: [2]
 // Exports: parseGuildSpaceMusicMessageData
 
-// Module 8387 (PopularMusicSystemMessageTypes)
+// Module 8409 (PopularMusicSystemMessageTypes)
 import size from "module_2" /* 2 */;
 
 const GuildSpaceMusicEvent = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", TOP_SONG_CHANGED: 1, [1]: "TOP_SONG_CHANGED", TOP_ARTIST_CHANGED: 2, [2]: "TOP_ARTIST_CHANGED", TOP_LISTENER_CHANGED: 3, [3]: "TOP_LISTENER_CHANGED" };
 const result = size.fileFinishedImporting("modules/guild_space/popular_music/PopularMusicSystemMessageTypes.tsx");
 
 export { GuildSpaceMusicEvent };
-export const parseGuildSpaceMusicMessageData = function parseGuildSpaceMusicMessageData(music) {
+export function parseGuildSpaceMusicMessageData(music) {
   let obj;
   let tmp3;
   let tmp4;
@@ -52,4 +52,4 @@ export const parseGuildSpaceMusicMessageData = function parseGuildSpaceMusicMess
     }
   }
   return tmp;
-};
+}

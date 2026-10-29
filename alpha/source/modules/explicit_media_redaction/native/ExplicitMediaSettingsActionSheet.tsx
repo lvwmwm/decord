@@ -1,15 +1,15 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16623
+// Function ID: 16624
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5246, 7284, 1208, 7020, 7021, 5301, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5247, 7308, 1208, 7044, 7045, 5302, 2]
 
-// Module 16385 (ExplicitMediaSettingsActionSheet)
+// Module 16623 (ExplicitMediaSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,13 +97,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMedi
     cResult[8] = tmp5;
     cResult[9] = SHOW;
     cResult[10] = tmp9;
-    cResult[11] = closure_5(options(7021).TableRadioGroup, obj2);
-    const tmp15 = closure_5(options(7021).TableRadioGroup, obj2);
+    cResult[11] = closure_5(options(7045).TableRadioGroup, obj2);
+    const tmp15 = closure_5(options(7045).TableRadioGroup, obj2);
   }
   cResult[2] = subtitle;
   cResult[3] = title;
-  cResult[4] = closure_5(options(7284).BottomSheetTitleHeader, { title, subtitle });
-  closure_5(options(7284).BottomSheetTitleHeader, { title, subtitle });
+  cResult[4] = closure_5(options(7308).BottomSheetTitleHeader, { title, subtitle });
+  closure_5(options(7308).BottomSheetTitleHeader, { title, subtitle });
 }) : (function ExplicitMediaSettingsActionSheet(options) {
   let TableRadioGroup;
   let obj3;
@@ -123,10 +123,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExplicitMedi
       obj2.hideActionSheet();
     }
   }, items);
-  BottomSheet = options(5301).BottomSheet;
-  const items1 = [closure_5(options(7284).BottomSheetTitleHeader, { title, subtitle }), ];
+  BottomSheet = options(5302).BottomSheet;
+  const items1 = [closure_5(options(7308).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: tmp.content, children: closure_5(TableRadioGroup, obj3) };
-  TableRadioGroup = options(7021).TableRadioGroup;
+  TableRadioGroup = options(7045).TableRadioGroup;
   const tmp3 = closure_6;
   const tmp4 = options;
   const tmp7 = View;

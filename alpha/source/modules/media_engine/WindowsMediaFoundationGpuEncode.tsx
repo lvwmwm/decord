@@ -1,11 +1,11 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15862
+// Function ID: 15863
 // Name: WindowsMediaFoundationGpuEncode
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getWmfGpuEncode
 
-// Module 15626 (WindowsMediaFoundationGpuEncode)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 15862 (WindowsMediaFoundationGpuEncode)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/WindowsMediaFoundationGpuEncode.tsx");
 
-export const getWmfGpuEncode = function getWmfGpuEncode(MediaEngineStore) {
+export function getWmfGpuEncode(MediaEngineStore) {
   const obj = { location: MediaEngineStore };
   return config.getConfig(obj);
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 15636
+// Function ID: 15637
 // Name: GuildRoleSubscriptionsExperimentUtils
-// Dependencies: [4878, 1084, 558, 576, 573, 2]
+// Dependencies: [4879, 1084, 558, 576, 573, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates
 
-// Module 15402 (GuildRoleSubscriptionsExperimentUtils)
+// Module 15636 (GuildRoleSubscriptionsExperimentUtils)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,15 +72,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEl
 });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx");
 
-export const hasEnabledMonetization = function hasEnabledMonetization(arg0) {
+export function hasEnabledMonetization(arg0) {
   let closure_0 = arg0;
   const someResult = null != arg0 && items.some((item) => {
     features = features.features;
     return features.has(item);
   });
   return someResult;
-};
-export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTemplates(id) {
+}
+export function isGuildEligibleForTierTemplates(id) {
   const guild = GuildStore.getGuild(id);
   let flag;
   if (guild != null) {
@@ -91,5 +91,5 @@ export const isGuildEligibleForTierTemplates = function isGuildEligibleForTierTe
     flag = false;
   }
   return flag;
-};
+}
 export const useGuildEligibleForTierTemplates = tmp2;

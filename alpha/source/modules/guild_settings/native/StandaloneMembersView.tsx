@@ -1,22 +1,22 @@
-// Module ID: 18301
-// Function ID: 18302
+// Module ID: 18535
+// Function ID: 18536
 // Name: StandaloneMembersView
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 9744, 10660, 1502, 1630, 9039, 6960, 1125, 18302, 12841, 12855, 12859, 7131, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 9776, 10693, 1503, 1631, 9042, 6984, 1125, 18536, 13062, 13076, 13080, 7155, 2]
 
-// Module 18301 (StandaloneMembersView)
+// Module 18535 (StandaloneMembersView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
-import useActiveTheme from "useActiveTheme" /* 9744 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10660 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12841 */;
-import KickConfirmDefault from "KickConfirm" /* 12855 */;
-import BanConfirmDefault from "BanConfirm" /* 12859 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 18302 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+import useActiveTheme from "useActiveTheme" /* 9776 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10693 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 13062 */;
+import KickConfirmDefault from "KickConfirm" /* 13076 */;
+import BanConfirmDefault from "BanConfirm" /* 13080 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 18536 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,9 +124,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   const cResult = obj.c(31);
   guildId = guildId.guildId;
   closure_10();
-  let obj2 = guildId(1502);
+  let obj2 = guildId(1503);
   navigation = obj2.useNavigation();
-  const bottom = navigation(1630)().bottom;
+  const bottom = navigation(1631)().bottom;
   if (cResult[0] !== guildId) {
     const fn = function o() {
       const obj = GuildSettingsActionCreatorsDefault;
@@ -155,7 +155,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandaloneMe
   }
   dependencyMap = tmp10;
   if (cResult[5] !== navigation) {
-    const tmpResult = tmp(6960);
+    const tmpResult = tmp(6984);
     const headerCloseButton = tmpResult.getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;

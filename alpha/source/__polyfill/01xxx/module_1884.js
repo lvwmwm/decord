@@ -1,292 +1,173 @@
 // Module ID: 1884
 // Function ID: 1885
-// Dependencies: [1655, 1866, 1849, 1885]
-// Exports: useChatKeyboard
+// Dependencies: [19, 17, 21, 1656, 1864, 1885, 1887, 1889, 1870]
 
 // Module 1884
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1885 from "module_1885" /* 1885 */;
+import react_native from "react-native" /* 17 */;
+import react_mod from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import cancelAnimation_mod from "module_1656" /* 1656 */;
 
-const require = globalThis.__r;
-let _require;
+let value;
 
-let closure_3 = { code: "function pnpm_indexTs1(effective,totalPaddingForMaxScroll){const{size,layout,scroll,scrollTo,scrollViewRef}=this.__closure;const paddingForMax=totalPaddingForMaxScroll!==undefined?totalPaddingForMaxScroll:effective;const maxScroll=Math.max(size.value.height-layout.value.height+paddingForMax,0);if(scroll.value>maxScroll){scrollTo(scrollViewRef,0,maxScroll,false);}}" };
-let closure_4 = { code: "function pnpm_indexTs2(e){const{freeze,targetKeyboardHeight,closing,getEffectiveHeight,offset,isScrollAtEnd,scroll,layout,size,inverted,getVisibleMinimumPaddingFraction,blankSpace,getMinimumPaddingAbsorbed,extraContentPadding,getScrollEffective,minimumPaddingFractionOnOpen,padding,offsetBeforeScroll,keyboardLiftBehavior,actualOpenShift}=this.__closure;if(freeze.value){return;}if(e.height>0){targetKeyboardHeight.value=e.height;closing.value=false;}else{closing.value=true;}const effective=getEffectiveHeight(e.height,targetKeyboardHeight.value,offset);const atEnd=isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);const visibleFraction=getVisibleMinimumPaddingFraction(scroll.value,layout.value.height,size.value.height,blankSpace.value,inverted);const minimumPaddingAbsorbed=visibleFraction>=1?getMinimumPaddingAbsorbed(blankSpace.value,extraContentPadding.value):0;const scrollEffective=getScrollEffective(effective,minimumPaddingAbsorbed);if(inverted&&e.duration===-1){return;}else if(e.height>0){minimumPaddingFractionOnOpen.value=visibleFraction>=1?1:0;padding.value=effective;offsetBeforeScroll.value=scroll.value;if(!inverted&&keyboardLiftBehavior===\"whenAtEnd\"&&!atEnd){offsetBeforeScroll.value=-1;}else if(!inverted&&scrollEffective===0){offsetBeforeScroll.value=-1;}else if(inverted&&scrollEffective===0){offsetBeforeScroll.value=scroll.value;}}else{if(inverted){offsetBeforeScroll.value=scroll.value;}else{if(offsetBeforeScroll.value!==-1){offsetBeforeScroll.value=scroll.value-actualOpenShift.value;}}}}" };
-let closure_5 = { code: "function pnpm_indexTs3(e){const{freeze,currentHeight,inverted,getEffectiveHeight,targetKeyboardHeight,offset,getMinimumPaddingAbsorbed,blankSpace,extraContentPadding,minimumPaddingFractionOnOpen,getScrollEffective,isScrollAtEnd,offsetBeforeScroll,layout,size,keyboardLiftBehavior,padding,scrollTo,scrollViewRef,shouldShiftContent,closing,clampScrollIfNeeded,scroll,clampedScrollTarget,actualOpenShift}=this.__closure;if(freeze.value){return;}currentHeight.value=e.height;if(inverted){if(e.duration===-1){return;}const effective=getEffectiveHeight(e.height,targetKeyboardHeight.value,offset);const minimumPaddingAbsorbed=getMinimumPaddingAbsorbed(blankSpace.value,extraContentPadding.value)*minimumPaddingFractionOnOpen.value;const scrollEffective=getScrollEffective(effective,minimumPaddingAbsorbed);const actualTotalPadding=Math.max(blankSpace.value,effective+extraContentPadding.value);const wasAtEnd=isScrollAtEnd(offsetBeforeScroll.value,layout.value.height,size.value.height,inverted);if(keyboardLiftBehavior===\"never\"&&wasAtEnd&&effective<padding.value){padding.value=effective;if(scrollEffective===0&&minimumPaddingAbsorbed>0){return;}scrollTo(scrollViewRef,0,0,false);return;}if(!shouldShiftContent(keyboardLiftBehavior,wasAtEnd)){if(closing.value&&effective<padding.value){padding.value=effective;clampScrollIfNeeded(effective,actualTotalPadding);}return;}if(scrollEffective===0&&minimumPaddingAbsorbed>0){return;}if(keyboardLiftBehavior===\"persistent\"){const currentShift=offsetBeforeScroll.value+padding.value-scroll.value;if(effective<currentShift){if(wasAtEnd){padding.value=effective;scrollTo(scrollViewRef,0,0,false);}else if(closing.value){padding.value=effective;clampScrollIfNeeded(effective,actualTotalPadding);}return;}}const target=offsetBeforeScroll.value+padding.value-scrollEffective;scrollTo(scrollViewRef,0,target,false);}else{const effective=getEffectiveHeight(e.height,targetKeyboardHeight.value,offset);const minimumPaddingAbsorbed=getMinimumPaddingAbsorbed(blankSpace.value,extraContentPadding.value)*minimumPaddingFractionOnOpen.value;const scrollEffective=getScrollEffective(effective,minimumPaddingAbsorbed);const actualTotalPadding=Math.max(blankSpace.value,effective+extraContentPadding.value);if(keyboardLiftBehavior===\"never\"&&closing.value&&effective<padding.value){clampScrollIfNeeded(effective,actualTotalPadding);return;}if(!shouldShiftContent(keyboardLiftBehavior,true)){return;}if(offsetBeforeScroll.value===-1){if(closing.value){clampScrollIfNeeded(effective,actualTotalPadding);}return;}if(keyboardLiftBehavior===\"persistent\"&&closing.value){const keepAt=offsetBeforeScroll.value+padding.value;const maxScroll=Math.max(size.value.height-layout.value.height+actualTotalPadding,0);scrollTo(scrollViewRef,0,Math.min(keepAt,maxScroll),false);return;}const target=clampedScrollTarget(offsetBeforeScroll.value,scrollEffective,size.value.height,layout.value.height,actualTotalPadding);scrollTo(scrollViewRef,0,target,false);if(!closing.value){actualOpenShift.value=target-offsetBeforeScroll.value;}}}" };
-let closure_6 = { code: "function pnpm_indexTs4(e){const{freeze,getEffectiveHeight,targetKeyboardHeight,offset,padding,offsetBeforeScroll,actualOpenShift,scroll}=this.__closure;if(freeze.value){return;}const effective=getEffectiveHeight(e.height,targetKeyboardHeight.value,offset);padding.value=effective;if(effective>0&&offsetBeforeScroll.value!==-1){actualOpenShift.value=scroll.value-offsetBeforeScroll.value;}}" };
+let c3;
+let closure_4;
+let forwardRef;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let react = react_mod;
+({ useCallback: c3, useMemo: closure_4, forwardRef } = react);
+react = react_mod;
+const StyleSheet = react_native.StyleSheet;
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+let cancelAnimation = cancelAnimation_mod;
+let closure_8 = cancelAnimation.makeMutable(0);
+cancelAnimation = cancelAnimation_mod;
+let closure_9 = cancelAnimation.makeMutable(0);
+const __initData = { code: "function pnpm_indexTsx1(){const{freeze}=this.__closure;return typeof freeze===\"boolean\"?freeze:freeze.value;}" };
+const __initData2 = { code: "function pnpm_indexTsx2(){const{blankSpace,padding,extraContentPadding}=this.__closure;return Math.max(blankSpace.value,padding.value+extraContentPadding.value);}" };
+const __initData3 = { code: "function pnpm_indexTsx3(){const{padding,extraContentPadding}=this.__closure;return padding.value+extraContentPadding.value;}" };
+const __initData4 = { code: "function pnpm_indexTsx4(){const{currentHeight}=this.__closure;return{transform:[{translateY:-currentHeight.value}]};}" };
+const forwardRefResult = forwardRef((ScrollViewComponent, arg1) => {
+  let animatedStyle;
+  let blankSpace;
+  let commitView;
+  let contentOffsetY;
+  let extraContentPadding;
+  let items3;
+  let layout;
+  let onContentSizeChange2;
+  let onLayout2;
+  let scroll;
+  let ScrollView = ScrollViewComponent.ScrollViewComponent;
+  const children = ScrollViewComponent.children;
+  if (ScrollView === undefined) {
+    ScrollView = extraContentPadding(blankSpace[3]).ScrollView;
+  }
+  let flag = ScrollViewComponent.inverted;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let str = ScrollViewComponent.keyboardLiftBehavior;
+  if (str === undefined) {
+    str = "always";
+  }
+  let flag2 = ScrollViewComponent.freeze;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  let num = ScrollViewComponent.offset;
+  if (num === undefined) {
+    num = 0;
+  }
+  extraContentPadding = ScrollViewComponent.extraContentPadding;
+  if (extraContentPadding === undefined) {
+    extraContentPadding = onContentSizeChange2;
+  }
+  blankSpace = ScrollViewComponent.blankSpace;
+  if (blankSpace === undefined) {
+    blankSpace = animatedStyle;
+  }
+  let flag3 = ScrollViewComponent.applyWorkaroundForContentInsetHitTestBug;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
+  const onLayout = ScrollViewComponent.onLayout;
+  const onContentSizeChange = ScrollViewComponent.onContentSizeChange;
+  const onEndVisible = ScrollViewComponent.onEndVisible;
+  const merged = Object.assign(ScrollViewComponent, Object.assign({ children: 0, ScrollViewComponent: 0, inverted: 0, keyboardLiftBehavior: 0, freeze: 0, offset: 0, extraContentPadding: 0, blankSpace: 0, applyWorkaroundForContentInsetHitTestBug: 0, onLayout: 0, onContentSizeChange: 0, onEndVisible: 0 }));
+  let padding;
+  let currentHeight;
+  onLayout2 = undefined;
+  onContentSizeChange2 = undefined;
+  animatedStyle = undefined;
+  let obj = flag2(blankSpace[3]);
+  const animatedRef = obj.useAnimatedRef();
+  const tmp5 = extraContentPadding(blankSpace[4])(arg1, animatedRef);
+  let obj2 = flag2(blankSpace[3]);
+  class M {
+    constructor() {
+      value = flag2;
+      if (typeof flag2 !== "boolean") {
+        value = flag2.value;
+      }
+      return value;
+    }
+  }
+  M.__closure = { freeze: flag2 };
+  M.__workletHash = 1441280506731;
+  M.__initData = __initData;
+  const derivedValue = obj2.useDerivedValue(M);
+  const obj3 = flag2(blankSpace[5]);
+  const chatKeyboard = obj3.useChatKeyboard(animatedRef, { inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue, offset: num, blankSpace, extraContentPadding });
+  padding = chatKeyboard.padding;
+  currentHeight = chatKeyboard.currentHeight;
+  ({ contentOffsetY, scroll, layout, size, onLayout: onLayout2 } = chatKeyboard);
+  onContentSizeChange2 = chatKeyboard.onContentSizeChange;
+  const obj4 = flag2(blankSpace[6]);
+  const extraContentPadding1 = obj4.useExtraContentPadding({ scrollViewRef: animatedRef, extraContentPadding, keyboardPadding: padding, blankSpace, scroll, layout, size, contentOffsetY, inverted: flag, keyboardLiftBehavior: str, freeze: derivedValue });
+  const obj5 = flag2(blankSpace[7]);
+  const endVisible = obj5.useEndVisible({ scroll, layout, size, inverted: flag, onEndVisible });
+  const fn = function q() {
+    return Math.max(blankSpace.value, padding.value + extraContentPadding.value);
+  };
+  fn.__closure = { blankSpace, padding, extraContentPadding };
+  fn.__workletHash = 5812718828105;
+  fn.__initData = __initData2;
+  const obj6 = flag2(blankSpace[3]);
+  const derivedValue1 = obj6.useDerivedValue(fn);
+  const obj7 = flag2(blankSpace[3]);
+  class G {
+    constructor() {
+      return padding.value + extraContentPadding.value;
+    }
+  }
+  G.__closure = { padding, extraContentPadding };
+  G.__workletHash = 17005251423398;
+  G.__initData = __initData3;
+  let items = [onLayout2, onLayout];
+  const derivedValue2 = obj7.useDerivedValue(G);
+  const items1 = [onContentSizeChange2, onContentSizeChange];
+  const tmp12 = onLayout((arg0) => {
+    onLayout2(arg0);
+    if (onLayout != null) {
+      onLayout(arg0);
+    }
+  }, items);
+  const tmp13 = onLayout((arg0, arg1) => {
+    onContentSizeChange2(arg0, arg1);
+    if (onContentSizeChange != null) {
+      onContentSizeChange(arg0, arg1);
+    }
+  }, items1);
+  const obj8 = flag2(blankSpace[3]);
+  class J {
+    constructor() {
+      let items;
+      const obj = { transform: items };
+      items = [];
+      const obj2 = { translateY: -currentHeight.value };
+      items[0] = obj2;
+      return obj;
+    }
+  }
+  J.__closure = { currentHeight };
+  J.__workletHash = 2509855764315;
+  J.__initData = __initData4;
+  animatedStyle = obj8.useAnimatedStyle(J, []);
+  const items2 = [animatedStyle];
+  const obj10 = { ref: tmp5, applyWorkaroundForContentInsetHitTestBug: flag3, bottomPadding: derivedValue1, contentOffsetY, inverted: flag, scrollIndicatorPadding: derivedValue2, ScrollViewComponent: ScrollView, onContentSizeChange: tmp13, onLayout: tmp12, children };
+  const obj9 = { children: items3 };
+  const tmp15 = onContentSizeChange(() => {
+    const items = [commitView.commitView, animatedStyle];
+    return items;
+  }, items2);
+  const tmp16 = extraContentPadding(blankSpace[8]);
+  const merged1 = Object.assign(merged);
+  items3 = [padding(tmp16, obj10), padding(extraContentPadding(blankSpace[3]).View, { style: tmp15 })];
+  return onLayout2(currentHeight, obj9);
+});
+const styles = StyleSheet.create({ commitView: { display: "none", position: "absolute" } });
 
-export const useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
-  let fn2;
-  let fn3;
-  let fn4;
-  let onContentSizeChange;
-  let onLayout;
-  _require = animatedRef;
-  inverted = inverted.inverted;
-  const keyboardLiftBehavior = inverted.keyboardLiftBehavior;
-  const freeze = inverted.freeze;
-  const offset = inverted.offset;
-  const blankSpace = inverted.blankSpace;
-  const extraContentPadding = inverted.extraContentPadding;
-  let obj = require("module_1655");
-  const sharedValue = obj.useSharedValue(0);
-  let obj2 = require("module_1655");
-  const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = require("module_1655");
-  const sharedValue2 = obj3.useSharedValue(0);
-  let obj4 = require("module_1655");
-  const sharedValue3 = obj4.useSharedValue(0);
-  let obj5 = require("module_1655");
-  const sharedValue4 = obj5.useSharedValue(false);
-  let obj6 = require("module_1655");
-  const sharedValue5 = obj6.useSharedValue(0);
-  let obj7 = require("module_1655");
-  const sharedValue6 = obj7.useSharedValue(0);
-  let tmp8 = inverted(keyboardLiftBehavior[1])(animatedRef);
-  const layout = tmp8.layout;
-  size = tmp8.size;
-  const offset2 = tmp8.offset;
-  const clampScrollIfNeeded = function u(arg0, arg1) {
-    let tmp = arg0;
-    if (undefined !== arg1) {
-      tmp = arg1;
-    }
-    const bound = Math.max(size.value.height - layout.value.height + tmp, 0);
-    if (offset2.value > bound) {
-      const obj = _mod1655;
-      obj.scrollTo(animatedRef, 0, bound, false);
-    }
-  };
-  let obj8 = { size, layout, scroll: offset2, scrollTo: require("module_1655").scrollTo, scrollViewRef: animatedRef };
-  ({ onLayout, onContentSizeChange } = tmp8);
-  clampScrollIfNeeded.__closure = obj8;
-  clampScrollIfNeeded.__workletHash = 2908292579657;
-  clampScrollIfNeeded.__initData = freeze;
-  let obj9 = { onStart: fn2, onMove: fn3, onEnd: fn4 };
-  fn2 = function s(height) {
-    if (!freeze.value) {
-      if (height.height > 0) {
-        sharedValue3.value = height.height;
-        sharedValue4.value = false;
-      } else {
-        sharedValue4.value = true;
-      }
-      const obj = _mod1885;
-      const effectiveHeight = obj.getEffectiveHeight(height.height, sharedValue3.value, offset);
-      let tmp12 = inverted;
-      const obj2 = _mod1885;
-      obj2.isScrollAtEnd(offset2.value, layout.value.height, size.value.height, inverted);
-      const obj3 = _mod1885;
-      const visibleMinimumPaddingFraction = obj3.getVisibleMinimumPaddingFraction(offset2.value, layout.value.height, size.value.height, blankSpace.value, inverted);
-      let num3 = 0;
-      const iter2 = blankSpace;
-      if (visibleMinimumPaddingFraction >= 1) {
-        const tmp5Result = _mod1885;
-        num3 = tmp5Result.getMinimumPaddingAbsorbed(iter2.value, extraContentPadding.value);
-      }
-      const tmp5Result2 = _mod1885;
-      const scrollEffective = tmp5Result2.getScrollEffective(effectiveHeight, num3);
-      const tmp21 = tmp12 && -1 === height.duration;
-      if (!tmp21) {
-        if (height.height > 0) {
-          let num6 = 0;
-          const tmp22 = sharedValue5;
-          if (visibleMinimumPaddingFraction >= 1) {
-            num6 = 1;
-          }
-          tmp22.value = num6;
-          sharedValue.value = effectiveHeight;
-          sharedValue2.value = offset2.value;
-          if (!tmp12) {
-            sharedValue2.value = -1;
-          }
-          if (tmp12) {
-            tmp12 = 0 === scrollEffective;
-          }
-          if (tmp12) {
-            sharedValue2.value = offset2.value;
-          }
-        } else if (tmp12) {
-          sharedValue2.value = offset2.value;
-        } else if (-1 !== sharedValue2.value) {
-          sharedValue2.value = offset2.value - sharedValue6.value;
-        }
-      }
-    }
-  };
-  const tmp9 = require("module_1849");
-  let obj10 = { freeze, targetKeyboardHeight: sharedValue3, closing: sharedValue4, getEffectiveHeight: require("module_1885").getEffectiveHeight, offset, isScrollAtEnd: require("module_1885").isScrollAtEnd, scroll: offset2, layout, size, inverted, getVisibleMinimumPaddingFraction: require("module_1885").getVisibleMinimumPaddingFraction, blankSpace, getMinimumPaddingAbsorbed: require("module_1885").getMinimumPaddingAbsorbed, extraContentPadding, getScrollEffective: require("module_1885").getScrollEffective, minimumPaddingFractionOnOpen: sharedValue5, padding: sharedValue, offsetBeforeScroll: sharedValue2, keyboardLiftBehavior, actualOpenShift: sharedValue6 };
-  const useKeyboardHandler = tmp9.useKeyboardHandler;
-  fn2.__closure = obj10;
-  fn2.__workletHash = 16814590881167;
-  fn2.__initData = offset;
-  fn3 = function v(height) {
-    if (!freeze.value) {
-      sharedValue1.value = height.height;
-      if (inverted) {
-        if (-1 !== height.duration) {
-          const obj16 = _mod1885;
-          const effectiveHeight = obj16.getEffectiveHeight(height.height, sharedValue3.value, offset);
-          const obj17 = _mod1885;
-          const result = obj17.getMinimumPaddingAbsorbed(blankSpace.value, extraContentPadding.value) * sharedValue5.value;
-          const obj18 = _mod1885;
-          const scrollEffective = obj18.getScrollEffective(effectiveHeight, result);
-          const _Math8 = Math;
-          const bound = Math.max(blankSpace.value, effectiveHeight + extraContentPadding.value);
-          const obj19 = _mod1885;
-          const isScrollAtEndResult = obj19.isScrollAtEnd(sharedValue2.value, layout.value.height, size.value.height, inverted);
-          if ("never" === keyboardLiftBehavior) {
-            if (isScrollAtEndResult) {
-              if (effectiveHeight < sharedValue.value) {
-                sharedValue.value = effectiveHeight;
-                const obj15 = _mod1655;
-                obj15.scrollTo(animatedRef, 0, 0, false);
-              }
-            }
-          }
-          const obj10 = _mod1885;
-          if (obj10.shouldShiftContent(keyboardLiftBehavior, isScrollAtEndResult)) {
-            if ("persistent" === keyboardLiftBehavior) {
-              if (effectiveHeight < sharedValue2.value + sharedValue.value - offset2.value) {
-                if (isScrollAtEndResult) {
-                  sharedValue.value = effectiveHeight;
-                  const obj14 = _mod1655;
-                  obj14.scrollTo(animatedRef, 0, 0, false);
-                } else if (sharedValue4.value) {
-                  sharedValue.value = effectiveHeight;
-                  if (typeof fn === "function") {
-                    let tmp103 = effectiveHeight;
-                    if (undefined !== bound) {
-                      tmp103 = bound;
-                    }
-                    const _Math7 = Math;
-                    const bound1 = Math.max(iter5.value.height - iter4.value.height + tmp103, 0);
-                    if (iter2.value > bound1) {
-                      const obj13 = _mod1655;
-                      obj13.scrollTo(animatedRef, 0, bound1, false);
-                    }
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                }
-              }
-            }
-            const diff = iter3.value + sharedValue.value - scrollEffective;
-            const obj12 = _mod1655;
-            obj12.scrollTo(animatedRef, 0, diff, false);
-          } else {
-            const value = sharedValue4.value && effectiveHeight < sharedValue.value;
-            if (value) {
-              sharedValue.value = effectiveHeight;
-              if (typeof fn === "function") {
-                let tmp84 = effectiveHeight;
-                if (undefined !== bound) {
-                  tmp84 = bound;
-                }
-                const _Math6 = Math;
-                const bound2 = Math.max(iter5.value.height - iter4.value.height + tmp84, 0);
-                if (offset2.value > bound2) {
-                  const obj11 = _mod1655;
-                  obj11.scrollTo(animatedRef, 0, bound2, false);
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-          }
-        }
-      } else {
-        const obj = _mod1885;
-        const effectiveHeight1 = obj.getEffectiveHeight(height.height, sharedValue3.value, offset);
-        const obj2 = _mod1885;
-        const result1 = obj2.getMinimumPaddingAbsorbed(blankSpace.value, extraContentPadding.value) * sharedValue5.value;
-        const obj3 = _mod1885;
-        const scrollEffective1 = obj3.getScrollEffective(effectiveHeight1, result1);
-        const _Math = Math;
-        const bound3 = Math.max(blankSpace.value, effectiveHeight1 + extraContentPadding.value);
-        if ("never" === keyboardLiftBehavior) {
-          if (sharedValue4.value) {
-            if (effectiveHeight1 < sharedValue.value) {
-              if (typeof fn === "function") {
-                let tmp67 = effectiveHeight1;
-                if (undefined !== bound3) {
-                  tmp67 = bound3;
-                }
-                const _Math5 = Math;
-                const bound4 = Math.max(size.value.height - layout.value.height + tmp67, 0);
-                if (offset2.value > bound4) {
-                  const obj9 = _mod1655;
-                  obj9.scrollTo(animatedRef, 0, bound4, false);
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-          }
-        }
-        const obj4 = _mod1885;
-        if (obj4.shouldShiftContent(keyboardLiftBehavior, true)) {
-          if (-1 === sharedValue2.value) {
-            if (sharedValue4.value) {
-              if (typeof fn === "function") {
-                let tmp55 = effectiveHeight1;
-                if (undefined !== bound3) {
-                  tmp55 = bound3;
-                }
-                const _Math4 = Math;
-                const bound5 = Math.max(size.value.height - layout.value.height + tmp55, 0);
-                if (offset2.value > bound5) {
-                  const obj8 = _mod1655;
-                  obj8.scrollTo(animatedRef, 0, bound5, false);
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-          } else {
-            if ("persistent" === keyboardLiftBehavior) {
-              if (sharedValue4.value) {
-                const _Math2 = Math;
-                const sum = iter.value + sharedValue.value;
-                const bound6 = Math.max(size.value.height - layout.value.height + bound3, 0);
-                const _Math3 = Math;
-                const obj7 = _mod1655;
-                obj7.scrollTo(animatedRef, 0, Math.min(sum, bound6), false);
-              }
-            }
-            const obj5 = _mod1885;
-            const clampedScrollTargetResult = obj5.clampedScrollTarget(sharedValue2.value, scrollEffective1, size.value.height, layout.value.height, bound3);
-            const obj6 = _mod1655;
-            obj6.scrollTo(animatedRef, 0, clampedScrollTargetResult, false);
-            if (!sharedValue4.value) {
-              sharedValue6.value = clampedScrollTargetResult - sharedValue2.value;
-            }
-          }
-        }
-      }
-    }
-  };
-  let obj11 = { freeze, currentHeight: sharedValue1, inverted, getEffectiveHeight: require("module_1885").getEffectiveHeight, targetKeyboardHeight: sharedValue3, offset, getMinimumPaddingAbsorbed: require("module_1885").getMinimumPaddingAbsorbed, blankSpace, extraContentPadding, minimumPaddingFractionOnOpen: sharedValue5, getScrollEffective: require("module_1885").getScrollEffective, isScrollAtEnd: require("module_1885").isScrollAtEnd, offsetBeforeScroll: sharedValue2, layout, size, keyboardLiftBehavior, padding: sharedValue, scrollTo: require("module_1655").scrollTo, scrollViewRef: animatedRef, shouldShiftContent: require("module_1885").shouldShiftContent, closing: sharedValue4, clampScrollIfNeeded, scroll: offset2, clampedScrollTarget: require("module_1885").clampedScrollTarget, actualOpenShift: sharedValue6 };
-  fn3.__closure = obj11;
-  fn3.__workletHash = 6317221970795;
-  fn3.__initData = blankSpace;
-  fn4 = function c(height) {
-    if (!freeze.value) {
-      const obj = _mod1885;
-      const effectiveHeight = obj.getEffectiveHeight(height.height, sharedValue3.value, offset);
-      sharedValue.value = effectiveHeight;
-      const tmp8 = effectiveHeight > 0 && -1 !== sharedValue2.value;
-      if (tmp8) {
-        sharedValue6.value = offset2.value - sharedValue2.value;
-      }
-    }
-  };
-  let obj12 = { freeze, getEffectiveHeight: require("module_1885").getEffectiveHeight, targetKeyboardHeight: sharedValue3, offset, padding: sharedValue, offsetBeforeScroll: sharedValue2, actualOpenShift: sharedValue6, scroll: offset2 };
-  fn4.__closure = obj12;
-  fn4.__workletHash = 1904796451086;
-  fn4.__initData = extraContentPadding;
-  const items = [inverted, keyboardLiftBehavior, offset];
-  useKeyboardHandler(obj9, items);
-  let obj13 = { padding: sharedValue, currentHeight: sharedValue1, contentOffsetY: "Boolean", scroll: offset2, layout, size, onLayout, onContentSizeChange };
-  return obj13;
-};
+export default forwardRefResult;

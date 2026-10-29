@@ -1,10 +1,10 @@
-// Module ID: 7735
-// Function ID: 7736
+// Module ID: 7757
+// Function ID: 7758
 // Name: ConversationsUtils
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 7735 (ConversationsUtils)
+// Module 7757 (ConversationsUtils)
 import _mod12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -12,13 +12,11 @@ let text;
 
 const result = size.fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
-export const mapConversation = function mapConversation(rawConversation) {
+export function mapConversation(rawConversation) {
   let brief_summary;
   let entries1;
-  let flagged_message_details;
   let keywords;
   let tmp5;
-  let tmp6;
   function parseTopicExtractionSummary(content_json) {
     let found;
     let obj2;
@@ -79,12 +77,12 @@ export const mapConversation = function mapConversation(rawConversation) {
   if (null != title) {
     tmp4 = null;
     if ("" !== tmp2.title) {
-      const obj5 = { id: rawConversation.id, title: null, briefSummary: brief_summary, keyPoints: tmp2.key_points, channelId: null, guildId: null, messageIds: null, userIds: null, startMessageId: null, endMessageId: null, messageCount: null, userCount: null, keywords, summaryMap: tmp5, engagement: null, substance: null, dynamics: null, moderation: tmp6 };
-      ({ title: obj3.title, brief_summary } = tmp2);
+      const obj3 = { id: rawConversation.id, title: null, briefSummary: brief_summary, keyPoints: tmp2.key_points, channelId: null, guildId: null, messageIds: null, userIds: null, startMessageId: null, endMessageId: null, messageCount: null, userCount: null, keywords, summaryMap: tmp5, engagement: null, substance: null, dynamics: null };
+      ({ title: obj2.title, brief_summary } = tmp2);
       if (brief_summary == null) {
         brief_summary = null;
       }
-      ({ channel_id: obj3.channelId, guild_id: obj3.guildId, message_ids: obj3.messageIds, user_ids: obj3.userIds, start_message_id: obj3.startMessageId, end_message_id: obj3.endMessageId, message_count: obj3.messageCount, user_count: obj3.userCount, keywords } = rawConversation);
+      ({ channel_id: obj2.channelId, guild_id: obj2.guildId, message_ids: obj2.messageIds, user_ids: obj2.userIds, start_message_id: obj2.startMessageId, end_message_id: obj2.endMessageId, message_count: obj2.messageCount, user_count: obj2.userCount, keywords } = rawConversation);
       if (keywords == null) {
         keywords = [];
       }
@@ -94,17 +92,9 @@ export const mapConversation = function mapConversation(rawConversation) {
         entries1 = rawConversation.summary_map.entries;
         tmp5 = obj;
       }
-      ({ engagement: obj3.engagement, substance: obj3.substance, dynamics: obj3.dynamics } = rawConversation);
-      tmp6 = null;
-      if (null != rawConversation.moderation) {
-        const moderation = rawConversation.moderation;
-        const obj6 = { status: null, statusReason: null, messageViolationRate: null, flaggedMessageCount: null, totalMessageCount: null, flaggedMessageIds: null, flaggedMessageDetails: flagged_message_details.map((messageId) => ({ messageId: messageId.message_id, category: messageId.category, severity: messageId.severity, confidence: messageId.confidence, reason: messageId.reason })), flaggedSummaryDetails: null, flaggedTitle: null, flaggedSummary: null, flaggedKeyPoints: null, failedMessageIds: null };
-        ({ status: obj2.status, status_reason: obj2.statusReason, message_violation_rate: obj2.messageViolationRate, flagged_message_count: obj2.flaggedMessageCount, total_message_count: obj2.totalMessageCount, flagged_message_ids: obj2.flaggedMessageIds, flagged_message_details } = moderation);
-        ({ flagged_summary_details: obj2.flaggedSummaryDetails, flagged_title: obj2.flaggedTitle, flagged_summary: obj2.flaggedSummary, flagged_key_points: obj2.flaggedKeyPoints, failed_message_ids: obj2.failedMessageIds } = moderation);
-        tmp6 = obj6;
-      }
-      tmp4 = obj5;
+      ({ engagement: obj2.engagement, substance: obj2.substance, dynamics: obj2.dynamics } = rawConversation);
+      tmp4 = obj3;
     }
   }
   return tmp4;
-};
+}

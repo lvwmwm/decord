@@ -1,16 +1,16 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 14630
+// Function ID: 14631
 // Name: conjureHomeProjectOrder
 // Dependencies: [11, 2]
 // Exports: sortConjureProjectsByActivity
 
-// Module 14396 (conjureHomeProjectOrder)
+// Module 14630 (conjureHomeProjectOrder)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/home/conjureHomeProjectOrder.tsx");
 
-export const sortConjureProjectsByActivity = function sortConjureProjectsByActivity(arr) {
+export function sortConjureProjectsByActivity(arr) {
   const mapped = arr.map((project) => {
     let finishedAt;
     let max;
@@ -68,4 +68,4 @@ export const sortConjureProjectsByActivity = function sortConjureProjectsByActiv
     return num;
   });
   return sorted.map((project) => project.project);
-};
+}

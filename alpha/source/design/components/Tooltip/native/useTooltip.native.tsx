@@ -1,14 +1,14 @@
-// Module ID: 9875
-// Function ID: 9876
+// Module ID: 9907
+// Function ID: 9908
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1278, 5634, 9876, 1496, 9881, 2]
+// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1278, 5635, 9908, 1497, 9913, 2]
 // Exports: useTooltipHelper
 
-// Module 9875 (useTooltip)
+// Module 9907 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9876 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9908 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   const tmp8 = useWindowDimensionsDefault();
   let closure_3 = tmp8;
   let closure_4 = context.useRef(tmp8);
-  context = context.useContext(tmp(5634).LayerContext);
+  context = context.useContext(tmp(5635).LayerContext);
   let closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {
@@ -81,7 +81,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -132,7 +132,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -176,7 +176,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   const tmp3 = useWindowDimensionsDefault();
   let closure_3 = tmp3;
   ref = context.useRef(tmp3);
-  context = context.useContext(ref(5634).LayerContext);
+  context = context.useContext(ref(5635).LayerContext);
   let ref2 = context.useRef(null);
   let items = [context, ref];
   const effect = context.useEffect(() => {
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -262,7 +262,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -380,7 +380,7 @@ function useTooltipHelper(ref, arg1, arg2) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -431,7 +431,7 @@ function useTooltipHelper(ref, arg1, arg2) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

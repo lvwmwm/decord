@@ -1,16 +1,16 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8683
+// Function ID: 8684
 // Name: createMessageFailedEmbed
-// Dependencies: [8166, 1084, 8309, 8681, 1125, 8682, 8182, 2]
+// Dependencies: [8189, 1084, 8331, 8684, 1125, 8685, 8205, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 8680 (createMessageFailedEmbed)
+// Module 8683 (createMessageFailedEmbed)
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8681 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8682 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8684 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8685 */;
 import size from "module_2" /* 2 */;
 
 const MessageFailureState = RowGeneratorConstants.MessageFailureState;
@@ -43,7 +43,7 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       const tmp6 = require;
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        const tmp6Result = tmp6(8182);
+        const tmp6Result = tmp6(8205);
         str = " (" + tmp6Result.sizeString(uploaderFile.currentSize) + ")";
       }
     }
@@ -54,9 +54,9 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
   }
   return obj;
 };
-export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
+export function createAutomodBlockedMessageEmbed(errorMessage) {
   let obj2;
   const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: obj2.getAssetUriForEmbed(AssetRegistryDefault) };
   obj2 = renderer_EmbedUtils;
   return obj;
-};
+}

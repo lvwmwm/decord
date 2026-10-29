@@ -1,13 +1,13 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11798
+// Function ID: 11799
 // Name: useIsGuestOrLurker
-// Dependencies: [4916, 4878, 1084, 558, 576, 504, 2]
+// Dependencies: [4917, 4879, 1084, 558, 576, 504, 2]
 // Exports: isGuestOrLurkerInGuild
 
-// Module 11744 (useIsGuestOrLurker)
+// Module 11798 (useIsGuestOrLurker)
 import Constants from "Constants" /* 1084 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuestOr
 const result = size.fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
 
 export default tmp2;
-export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, id) {
+export function isGuestOrLurkerInGuild(guild_id, id) {
   const guild = GuildStore.getGuild(guild_id);
   let hasItem;
   const obj = GuildMemberStore;
@@ -102,4 +102,4 @@ export const isGuestOrLurkerInGuild = function isGuestOrLurkerInGuild(guild_id, 
   }
   const isGuestOrLurkerResult = true !== hasItem && obj.isGuestOrLurker(guild_id, id);
   return isGuestOrLurkerResult;
-};
+}

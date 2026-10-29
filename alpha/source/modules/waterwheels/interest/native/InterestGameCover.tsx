@@ -1,16 +1,16 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19447
+// Function ID: 19448
 // Name: InterestGameCover
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5705, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5707, 5271, 2]
 
-// Module 19212 (InterestGameCover)
+// Module 19447 (InterestGameCover)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5705 */;
+import FastImageDefault from "FastImage" /* 5707 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 ({ PixelRatio: c3, StyleSheet, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -80,7 +80,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function InterestGa
       let tmp15 = null == tmp6;
       if (tmp15) {
         const obj3 = { style: tmp4.name, children: hasOwnProperty(Text_Text.Text, obj4) };
-        obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: game.name };
+        obj4 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 2, children: game.name };
         tmp15 = hasOwnProperty(React3, obj3);
       }
       cResult[6] = game.name;
@@ -132,7 +132,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function InterestGa
   let tmp10 = null == coverURL;
   if (tmp10) {
     const obj4 = { style: tmp.name, children: hasOwnProperty(Text_Text.Text, obj5) };
-    obj5 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: game.name };
+    obj5 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 2, children: game.name };
     tmp10 = hasOwnProperty(tmp5, obj4);
   }
   items[1] = tmp10;

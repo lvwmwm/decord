@@ -1,10 +1,10 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8750
+// Function ID: 8751
 // Name: StorefrontCacheUtils
 // Dependencies: [1101, 2]
 // Exports: shouldRefetchEntry
 
-// Module 8747 (StorefrontCacheUtils)
+// Module 8750 (StorefrontCacheUtils)
 import DurationsDefault from "Durations" /* 1101 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const result2 = size.fileFinishedImporting("modules/storefront/StorefrontCacheUt
 
 export const TWELVE_HOURS_MS = result;
 export const ERROR_STALE_THRESHOLD_MS = result1;
-export const shouldRefetchEntry = function shouldRefetchEntry(hasPricingCoverage) {
+export function shouldRefetchEntry(hasPricingCoverage) {
   let fetchState;
   let fetchedAt;
   let needsPricing;
@@ -53,4 +53,4 @@ export const shouldRefetchEntry = function shouldRefetchEntry(hasPricingCoverage
     }
     return tmp;
   }
-};
+}

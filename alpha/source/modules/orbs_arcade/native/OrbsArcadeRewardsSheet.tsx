@@ -1,16 +1,16 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 16927
+// Function ID: 16928
 // Name: OrbsArcadeRewardsSheet
-// Dependencies: [19, 16662, 21, 5004, 587, 558, 576, 504, 1125, 7284, 16690, 16669, 16682, 6013, 7334, 2]
+// Dependencies: [19, 16900, 21, 5005, 587, 558, 576, 504, 1125, 7308, 16928, 16907, 16920, 6015, 7358, 2]
 
-// Module 16689 (OrbsArcadeRewardsSheet)
+// Module 16927 (OrbsArcadeRewardsSheet)
 import nativeDefault from "native" /* 587 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16682 */;
-import OrbsArcadeRewardChainDefault from "OrbsArcadeRewardChain" /* 16690 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16920 */;
+import OrbsArcadeRewardChainDefault from "OrbsArcadeRewardChain" /* 16928 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16900 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,13 +156,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
             return closure_3.getGame(gameId);
           }
         }
-        const tmpResult5 = gameId(16669);
+        const tmpResult5 = gameId(16907);
         const result = tmpResult5.hasOrbsArcadeUnclaimedRewards(stateFromStores1);
-        const OrbsArcadeSheetPrimaryAction = tmp(16682).OrbsArcadeSheetPrimaryAction;
+        const OrbsArcadeSheetPrimaryAction = tmp(16920).OrbsArcadeSheetPrimaryAction;
         const tmp27 = result ? OrbsArcadeSheetPrimaryAction.CLAIM : OrbsArcadeSheetPrimaryAction.PLAY;
-        const tmpResult6 = gameId(16669);
+        const tmpResult6 = gameId(16907);
         const result1 = tmpResult6.hasOrbsArcadeUnlockedRewards(stateFromStores1);
-        const OrbsArcadeSheetSecondaryAction = tmp(16682).OrbsArcadeSheetSecondaryAction;
+        const OrbsArcadeSheetSecondaryAction = tmp(16920).OrbsArcadeSheetSecondaryAction;
         const tmp29 = result1 ? OrbsArcadeSheetSecondaryAction.CLOSE : OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY;
         if (cResult[18] === stateFromStores) {
           class A {
@@ -188,8 +188,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     const obj6 = { title: tmp15, subtitle: tmp16 };
     cResult[12] = tmp15;
     cResult[13] = tmp16;
-    cResult[14] = closure_4(gameId(7284).BottomSheetTitleHeader, obj6);
-    const tmp21 = closure_4(gameId(7284).BottomSheetTitleHeader, obj6);
+    cResult[14] = closure_4(gameId(7308).BottomSheetTitleHeader, obj6);
+    const tmp21 = closure_4(gameId(7308).BottomSheetTitleHeader, obj6);
   }
 }) : (function OrbsArcadeRewardsSheet(gameId) {
   let OrbsArcadeSheetPrimaryAction;
@@ -212,8 +212,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   const stateFromStores1 = obj2.useStateFromStores(items2, () => OrbsArcadeStore.getGameStateForGame(gameId), items3);
   let tmp7Result = null;
   if (null != stateFromStores) {
-    const ActionSheet = tmp2(7334).ActionSheet;
-    const BottomSheetTitleHeader = tmp2(7284).BottomSheetTitleHeader;
+    const ActionSheet = tmp2(7358).ActionSheet;
+    const BottomSheetTitleHeader = tmp2(7308).BottomSheetTitleHeader;
     const intl = tmp2(1125).intl;
     const formatToPlainString = intl.formatToPlainString;
     let str = stateFromStores.name;
@@ -234,17 +234,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1125).t.bzMn46, obj5);
     }
     const obj6 = { header: closure_4(BottomSheetTitleHeader, obj3), children: closure_5(Stack, obj9) };
-    Stack = tmp2(6013).Stack;
+    Stack = tmp2(6015).Stack;
     const obj7 = { game: stateFromStores, gameState: stateFromStores1 };
     const items4 = [closure_4(OrbsArcadeRewardChainDefault, obj7), ];
     const obj8 = { game: stateFromStores, sheetKey: OrbsArcadeRewardsSheet_str, primaryAction: result ? OrbsArcadeSheetPrimaryAction.CLAIM : OrbsArcadeSheetPrimaryAction.PLAY, secondaryAction: result1 ? OrbsArcadeSheetSecondaryAction.CLOSE : OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, style: tmp.actionsContainer };
     const tmp13 = OrbsArcadeSheetActionsDefault;
-    const tmp2Result = gameId(16669);
+    const tmp2Result = gameId(16907);
     result = tmp2Result.hasOrbsArcadeUnclaimedRewards(stateFromStores1);
-    OrbsArcadeSheetPrimaryAction = tmp2(16682).OrbsArcadeSheetPrimaryAction;
-    const tmp2Result2 = gameId(16669);
+    OrbsArcadeSheetPrimaryAction = tmp2(16920).OrbsArcadeSheetPrimaryAction;
+    const tmp2Result2 = gameId(16907);
     result1 = tmp2Result2.hasOrbsArcadeUnlockedRewards(stateFromStores1);
-    OrbsArcadeSheetSecondaryAction = tmp2(16682).OrbsArcadeSheetSecondaryAction;
+    OrbsArcadeSheetSecondaryAction = tmp2(16920).OrbsArcadeSheetSecondaryAction;
     obj9 = { spacing: 0, children: items4 };
     items4[1] = closure_4(tmp13, obj8);
     tmp7Result = tmp7(ActionSheet, obj6);

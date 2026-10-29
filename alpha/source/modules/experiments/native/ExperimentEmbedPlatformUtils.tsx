@@ -1,23 +1,23 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 13031
+// Function ID: 13032
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [5246, 12811, 1999, 11258, 11259, 8521, 5231, 2]
+// Dependencies: [5247, 13032, 2000, 11312, 11313, 8543, 5232, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 12810 (ExperimentEmbedPlatformUtils)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ExperimentManager from "ExperimentManager" /* 5231 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8521 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11258 */;
-import useApexExperiments from "useApexExperiments" /* 11259 */;
+// Module 13031 (ExperimentEmbedPlatformUtils)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ExperimentManager from "ExperimentManager" /* 5232 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8543 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11312 */;
+import useApexExperiments from "useApexExperiments" /* 11313 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = size.fileFinishedImporting("modules/experiments/native/ExperimentEmbedPlatformUtils.tsx");
 
 export const EXPERIMENT_EMBED_URL_REGEX = regExp;
-export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL) {
+export function handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experimentTreatmentFromEmbedURL) {
   let experiments;
   let overridesInfo;
   let closure_0 = experimentTreatmentFromEmbedURL;
@@ -60,5 +60,5 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
   }
   const obj3 = { id: experimentFromEmbedURL };
   const obj6 = ActionSheetActionCreatorsDefault;
-  obj6.openLazy(asyncRequire(12811, dependencyMap.paths), "ExperimentOverrideSheet", obj3);
-};
+  obj6.openLazy(asyncRequire(13032, dependencyMap.paths), "ExperimentOverrideSheet", obj3);
+}

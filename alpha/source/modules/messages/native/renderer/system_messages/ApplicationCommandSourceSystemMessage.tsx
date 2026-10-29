@@ -1,22 +1,22 @@
-// Module ID: 8412
-// Function ID: 8413
+// Module ID: 8434
+// Function ID: 8435
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1084, 6020, 8413, 8351, 1125, 8353, 8355, 2]
+// Dependencies: [1084, 6024, 8435, 8373, 1125, 8375, 8377, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8412 (ApplicationCommandSourceSystemMessage)
+// Module 8434 (ApplicationCommandSourceSystemMessage)
 import Constants from "Constants" /* 1084 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import _slicedToArray from "_slicedToArray" /* 8413 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import _slicedToArray from "_slicedToArray" /* 8435 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
 const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx");
 
-export const createApplicationCommandSourceSystemMessage = function createApplicationCommandSourceSystemMessage(message) {
+export function createApplicationCommandSourceSystemMessage(message) {
   let name;
   let name2;
   let obj3;
@@ -45,9 +45,9 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
         name2 = applicationCommand.name;
       }
       const obj4 = { content: formatToParts(prop, obj2) };
-      const merged = Object.assign(tmp10(8355)(message));
+      const merged = Object.assign(tmp10(8377)(message));
       return obj4;
     }
   }
   return null;
-};
+}

@@ -1,27 +1,27 @@
-// Module ID: 19370
-// Function ID: 19371
+// Module ID: 19603
+// Function ID: 19604
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 4878, 19371, 21, 12, 9977, 5004, 587, 1125, 4958, 8399, 558, 576, 504, 8978, 5270, 19373, 19377, 1199, 19378, 6916, 5628, 7256, 1502, 6960, 2]
+// Dependencies: [32, 19, 17, 4879, 19604, 21, 12, 10009, 5005, 587, 1125, 4959, 8421, 558, 576, 504, 8981, 5271, 19606, 19610, 1199, 19611, 6940, 5629, 7280, 1503, 6984, 2]
 // Exports: computeSectionItem
 
-// Module 19370 (GuildSettingsModalEmoji)
+// Module 19603 (GuildSettingsModalEmoji)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4958 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9977 */;
-import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 19373 */;
-import HeaderRow from "HeaderRow" /* 19377 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 19378 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4959 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10009 */;
+import GuildSettingsModalEmoji_EmojiRow from "GuildSettingsModalEmoji/EmojiRow" /* 19606 */;
+import HeaderRow from "HeaderRow" /* 19610 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 19611 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildSettingsEmojiStore_mod from "GuildSettingsEmojiStore" /* 19371 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildSettingsEmojiStore_mod from "GuildSettingsEmojiStore" /* 19604 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12_mod from "module_12" /* 12 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   let arr3;
   let items1;
   let items4;
-  const f140162 = (emoji) => !emoji.emoji.animated;
+  const f141732 = (emoji) => !emoji.emoji.animated;
   _require = stateFromStores;
   const found = arr.filter((item) => {
     const obj = RoleSubscriptionEmojiUtils;
@@ -65,8 +65,8 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   const obj2 = require("GuildBoostingUtils");
   const maxEmojiSlots = obj2.getMaxEmojiSlots(stateFromStores);
   const obj3 = module_12;
-  [arr2, arr3] = obj3.partition(reversed, f140162);
-  _slicedToArray(obj3.partition(reversed, f140162), 2);
+  [arr2, arr3] = obj3.partition(reversed, f141732);
+  _slicedToArray(obj3.partition(reversed, f141732), 2);
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.sMOuuS);
   const bound = Math.max(maxEmojiSlots - arr2.length, 0);

@@ -1,12 +1,12 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9899
+// Function ID: 9900
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [6760, 1392, 558, 576, 573, 2]
+// Dependencies: [6783, 1392, 558, 576, 573, 2]
 // Exports: getTopAndNewlyAddedEmojis
 
-// Module 9867 (useTopAndNewlyAddedEmojis)
+// Module 9899 (useTopAndNewlyAddedEmojis)
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

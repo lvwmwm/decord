@@ -1,13 +1,13 @@
-// Module ID: 5065
-// Function ID: 5066
+// Module ID: 5066
+// Function ID: 5067
 // Name: NitroFileUploadExperiments
-// Dependencies: [1391, 1452, 558, 576, 2]
+// Dependencies: [1391, 1453, 558, 576, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy
 
-// Module 5065 (NitroFileUploadExperiments)
+// Module 5066 (NitroFileUploadExperiments)
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNonNitr
 });
 const result = size.fileFinishedImporting("modules/premium/experiments/NitroFileUploadExperiments.tsx");
 
-export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitBytes(arg0) {
+export function getNitroFileUploadLimitBytes(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -93,9 +93,9 @@ export const getNitroFileUploadLimitBytes = function getNitroFileUploadLimitByte
     _location = NitroFileUploadRollout;
   }
   return getConfig({ location: _location }).enabled ? _false : React2;
-};
+}
 export { getNitroFileUploadRolloutConfig };
-export const getNitroFileUploadRolloutCopy = function getNitroFileUploadRolloutCopy(legacyCopy) {
+export function getNitroFileUploadRolloutCopy(legacyCopy) {
   legacyCopy = legacyCopy.legacyCopy;
   let _location = {}.location;
   const rolloutCopy = legacyCopy.rolloutCopy;
@@ -107,6 +107,6 @@ export const getNitroFileUploadRolloutCopy = function getNitroFileUploadRolloutC
     legacyCopy = rolloutCopy;
   }
   return legacyCopy;
-};
+}
 export const useNitroFileUploadRolloutEnabled = tmp3;
 export const useNonNitroFileUploadMarketingEnabled = tmp4;

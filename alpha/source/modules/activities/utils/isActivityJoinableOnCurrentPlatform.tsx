@@ -1,13 +1,13 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 14814
+// Function ID: 14815
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [1084, 1382, 1627, 7446, 2]
+// Dependencies: [1084, 1382, 1628, 7469, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 14580 (isActivityJoinableOnCurrentPlatform)
+// Module 14814 (isActivityJoinableOnCurrentPlatform)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import hasFlagDefault from "hasFlag" /* 7446 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import hasFlagDefault from "hasFlag" /* 7469 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
     return false;
   }
 };
-export const getCurrentActivityGamePlatform = function getCurrentActivityGamePlatform() {
+export function getCurrentActivityGamePlatform() {
   let META_QUEST;
   const obj = utils_PlatformUtils;
   if (obj.isIOS()) {
@@ -75,8 +75,8 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
     }
   }
   return META_QUEST;
-};
-export const isActivityJoinable = function isActivityJoinable(type) {
+}
+export function isActivityJoinable(type) {
   const tmp = null == type || !hasFlagDefault(type, constants.JOIN) || type.type !== hasOwnProperty.PLAYING;
   return !tmp;
-};
+}

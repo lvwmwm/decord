@@ -585,11 +585,10 @@ let closure_2 = {};
 let obj4 = null;
 let closure_4 = 0;
 let closure_5 = { unsafelyIgnoreFunctions: true };
-const diff_export = function diff(arr, arg1, arg2) {
-  return diffProperties(null, arr, arg1, arg2);
-};
 
-export const create = function create(arg0, arg1) {
+export function create(arg0, arg1) {
   return addNestedProperty(null, arg0, arg1);
-};
-export { diff_export as diff };
+}
+export function diff(arr, arg1, arg2) {
+  return diffProperties(null, arr, arg1, arg2);
+}

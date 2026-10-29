@@ -1,7 +1,7 @@
 // Module ID: 1389
 // Function ID: 1390
 // Name: UserStore
-// Dependencies: [1390, 1403, 502, 1083, 1084, 1391, 1405, 1400, 1984, 1985, 1406, 1410, 1411, 1412, 1402, 12, 1996, 1997, 1385, 2]
+// Dependencies: [1390, 1403, 502, 1083, 1084, 1391, 1405, 1400, 1985, 1986, 1406, 1411, 1412, 1413, 1402, 12, 1997, 1998, 1385, 2]
 
 // Module 1389 (UserStore)
 import _mod12 from "module_12" /* 12 */;
@@ -11,12 +11,12 @@ import UserStoreUtils from "UserStoreUtils" /* 1400 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
 import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1405 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1410 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1411 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1984 */;
-import mappers from "mappers" /* 1985 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1996 */;
-import Server from "Server" /* 1997 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1412 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1985 */;
+import mappers from "mappers" /* 1986 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1997 */;
+import Server from "Server" /* 1998 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1390 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -150,7 +150,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1412).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1413).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;

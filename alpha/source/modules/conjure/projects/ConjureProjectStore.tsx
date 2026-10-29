@@ -1,13 +1,13 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6831
+// Function ID: 6832
 // Name: ConjureProjectStore
-// Dependencies: [32, 1389, 6809, 504, 584, 2]
+// Dependencies: [32, 1389, 6832, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6808 (ConjureProjectStore)
+// Module 6831 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
@@ -349,7 +349,7 @@ let result = size.fileFinishedImporting("modules/conjure/projects/ConjureProject
 
 export default conjureProjectStore;
 export { isProjectOwner };
-export const canPublishProject = function canPublishProject(project) {
+export function canPublishProject(project) {
   const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
@@ -363,8 +363,8 @@ export const canPublishProject = function canPublishProject(project) {
     obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
   }
   return tmp3;
-};
-export const canRemixProject = function canRemixProject(project) {
+}
+export function canRemixProject(project) {
   const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
@@ -382,4 +382,4 @@ export const canRemixProject = function canRemixProject(project) {
     isProjectPublicResult = obj2.isProjectPublic(project);
   }
   return isProjectPublicResult;
-};
+}

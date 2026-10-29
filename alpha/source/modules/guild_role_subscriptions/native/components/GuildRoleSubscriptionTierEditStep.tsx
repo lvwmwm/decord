@@ -1,22 +1,22 @@
-// Module ID: 19591
-// Function ID: 19592
+// Module ID: 19824
+// Function ID: 19825
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 5004, 587, 558, 576, 5270, 16845, 7257, 1125, 1630, 5280, 1502, 2]
+// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 5271, 17083, 7281, 1125, 1631, 5281, 1503, 2]
 
-// Module 19591 (GuildRoleSubscriptionTierEditStep)
+// Module 19824 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
-import FormSeparatorDefault from "FormSeparator" /* 16845 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
+import FormSeparatorDefault from "FormSeparator" /* 17083 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const useNavigation = tmp(1502);
+const useNavigation = tmp(1503);
 let closure_3 = ["scrollable"];
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -213,7 +213,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroImportAll(tmp5(5280).Button, obj3) };
+  const obj = { style: items, children: metroImportAll(tmp5(5281).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

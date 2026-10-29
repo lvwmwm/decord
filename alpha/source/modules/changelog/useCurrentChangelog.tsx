@@ -1,16 +1,16 @@
-// Module ID: 8502
-// Function ID: 8503
+// Module ID: 8524
+// Function ID: 8525
 // Name: useCurrentChangelog
-// Dependencies: [19, 2065, 7449, 4906, 558, 576, 573, 8503, 2]
+// Dependencies: [19, 2066, 7472, 4907, 558, 576, 573, 8525, 2]
 
-// Module 8502 (useCurrentChangelog)
+// Module 8524 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import ChangelogConstants from "ChangelogConstants" /* 4906 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8503 */;
+import ChangelogConstants from "ChangelogConstants" /* 4907 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8525 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import ChangelogStore from "ChangelogStore" /* 7449 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import ChangelogStore from "ChangelogStore" /* 7472 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

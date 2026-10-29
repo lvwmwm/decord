@@ -263,7 +263,7 @@ obj = {
   slash: { encodePath: addLeadingSlash, decodePath: addLeadingSlash }
 };
 
-export const createBrowserHistory = function createBrowserHistory(props) {
+export function createBrowserHistory(props) {
   let closure_2;
   let key;
   let state;
@@ -763,8 +763,8 @@ export const createBrowserHistory = function createBrowserHistory(props) {
     }
   };
   return obj2;
-};
-export const createHashHistory = function createHashHistory(props) {
+}
+export function createHashHistory(props) {
   let hash;
   let obj2;
   let pathname;
@@ -1347,8 +1347,8 @@ export const createHashHistory = function createHashHistory(props) {
     }
   };
   return obj2;
-};
-export const createMemoryHistory = function createMemoryHistory(props) {
+}
+export function createMemoryHistory(props) {
   let initialEntries;
   obj = props;
   if (undefined === props) {
@@ -1548,11 +1548,11 @@ export const createMemoryHistory = function createMemoryHistory(props) {
     }
   };
   return obj2;
-};
+}
 export { createLocation };
-export const locationsAreEqual = function locationsAreEqual(_location, pathname2) {
+export function locationsAreEqual(_location, pathname2) {
   const tmp = _location.pathname === pathname2.pathname && _location.search === pathname2.search && _location.hash === pathname2.hash && _location.key === pathname2.key && valueEqual(_location.state, pathname2.state);
   return tmp;
-};
+}
 export { parsePath };
 export { createPath };

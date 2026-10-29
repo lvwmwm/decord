@@ -1,14 +1,14 @@
-// Module ID: 9742
-// Function ID: 9743
+// Module ID: 9774
+// Function ID: 9775
 // Name: ClientThemesOverrides
-// Dependencies: [19, 5004, 558, 576, 5180, 9743, 2]
+// Dependencies: [19, 5005, 558, 576, 5181, 9775, 2]
 
-// Module 9742 (ClientThemesOverrides)
+// Module 9774 (ClientThemesOverrides)
 import react2 from "react" /* 576 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5180 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9743 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5181 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9775 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

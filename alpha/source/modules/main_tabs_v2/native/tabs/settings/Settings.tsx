@@ -1,28 +1,28 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18875
+// Function ID: 18876
 // Name: Settings
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 18519, 1630, 7074, 4961, 18642, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 18753, 1631, 7098, 4962, 18876, 2]
 
-// Module 18641 (Settings)
+// Module 18875 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7074 */;
-import profileModalTransition from "profileModalTransition" /* 18519 */;
-import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import DeviceUtils from "DeviceUtils" /* 4962 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7098 */;
+import profileModalTransition from "profileModalTransition" /* 18753 */;
+import react_mod from "react" /* 19 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let obj4;
-let tmp;
 let tmp5;
-const DeviceUtils = tmp(4961);
-const SettingsNavigatorDefault = tmp5(18642);
+const SettingsNavigatorDefault = tmp5(18876);
+let react = react_mod;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -33,6 +33,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHo
 obj4 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
 let closure_6 = createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settings() {
+  let containerOuter;
   let items1;
   let left;
   let right;
@@ -58,46 +59,51 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settings()
     tmp8 = cResult[1];
   }
   const tmp10 = closure_6();
+  if (tmp7) {
+    let tmp13;
+    let tmp16;
+    const tmpResult2 = DeviceUtils;
+    if (tmpResult2.isIpadOS()) {
+      containerOuter = tmp10.containerOuter;
+    }
+    const tmp11 = tmp8 ? tmp10.containerTablet : tmp10.container;
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp15 = jsx(SettingsNavigatorDefault, {});
+      cResult[9] = tmp15;
+      tmp13 = tmp15;
+    } else {
+      tmp13 = cResult[9];
+    }
+    if (cResult[10] !== tmp11) {
+      const tmp19 = <View style={tmp11}>{tmp13}</View>;
+      cResult[10] = tmp11;
+      cResult[11] = tmp19;
+      tmp16 = tmp19;
+    } else {
+      tmp16 = cResult[11];
+    }
+    if (cResult[12] === containerOuter) {
+      let tmp20;
+      if (cResult[13] === tmp16) {
+        tmp20 = cResult[14];
+      }
+      return tmp20;
+    }
+    const tmp23 = <View style={containerOuter}>{tmp16}</View>;
+    cResult[12] = containerOuter;
+    cResult[13] = tmp16;
+    cResult[14] = tmp23;
+    tmp20 = tmp23;
+  }
   if (cResult[2] === left) {
     if (cResult[3] === top) {
       if (cResult[4] === right) {
         if (cResult[5] === tmp10.containerOuter) {
           if (cResult[6] === tmp10.containerOuterTablet) {
-            let tmp11;
-            let tmp14;
-            let tmp17;
             if (cResult[7] === tmp8) {
-              tmp11 = cResult[8];
+              containerOuter = cResult[8];
             }
-            const tmp12 = tmp8 ? tmp10.containerTablet : tmp10.container;
-            const _Symbol = Symbol;
-            if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp16 = jsx(SettingsNavigatorDefault, {});
-              cResult[9] = tmp16;
-              tmp14 = tmp16;
-            } else {
-              tmp14 = cResult[9];
-            }
-            if (cResult[10] !== tmp12) {
-              const tmp20 = <View style={tmp12}>{tmp14}</View>;
-              cResult[10] = tmp12;
-              cResult[11] = tmp20;
-              tmp17 = tmp20;
-            } else {
-              tmp17 = cResult[11];
-            }
-            if (cResult[12] === tmp11) {
-              let tmp21;
-              if (cResult[13] === tmp17) {
-                tmp21 = cResult[14];
-              }
-              return tmp21;
-            }
-            const tmp24 = <View style={tmp11}>{tmp17}</View>;
-            cResult[12] = tmp11;
-            cResult[13] = tmp17;
-            cResult[14] = tmp24;
-            tmp21 = tmp24;
           }
         }
       }
@@ -120,38 +126,58 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settings()
   cResult[6] = tmp10.containerOuterTablet;
   cResult[7] = tmp8;
   cResult[8] = items1;
-  tmp11 = items1;
+  containerOuter = items1;
 }) : (function Settings() {
-  let obj = profileModalTransition;
+  let closure_3;
+  let left;
+  let obj3;
+  let right;
+  let top;
+  let tmp = top;
+  let obj = top(right[7]);
   const reportProfileModalTransition = obj.useReportProfileModalTransition();
-  const rect = useSafeAreaInsetsDefault();
-  const top = rect.top;
-  const left = rect.left;
-  const right = rect.right;
-  let tmp5 = useIsWindowLargeDefault();
-  if (tmp5) {
-    const tmpResult = DeviceUtils;
-    tmp5 = !tmpResult.isIpadOS();
+  const rect = left(right[8])();
+  top = rect.top;
+  const tmp4 = left;
+  left = rect.left;
+  right = rect.right;
+  const tmp5 = left(right[9])();
+  react = tmp5;
+  let tmp6 = tmp5;
+  if (tmp6) {
+    const tmpResult = tmp(right[10]);
+    tmp6 = !tmpResult.isIpadOS();
   }
-  let closure_3 = tmp5;
-  const tmp6 = closure_6();
   let closure_4 = tmp6;
-  let items = [tmp6, tmp5, top, left, right];
-  ({ style: tmp5 ? tmp6.containerTablet : tmp6.container, children: jsx(SettingsNavigatorDefault, {}) });
-  return <View style={react.useMemo(() => {
-    let items1;
-    if (closure_3) {
-      const items = [closure_4.containerOuterTablet, ];
-      const obj2 = { paddingTop: top, paddingLeft: left, paddingRight: right };
-      items[1] = obj2;
-      items1 = items;
-    } else {
-      items1 = [closure_4.containerOuter, ];
-      const obj = { paddingLeft: left, paddingRight: right };
-      items1[1] = obj;
-    }
-    return items1;
-  }, items)}>{null}</View>;
+  const tmp7 = closure_6();
+  let containerOuter = tmp7;
+  let items = [tmp7, tmp5, tmp6, top, left, right];
+  let obj2 = {
+    style: react.useMemo(() => {
+      const tmp = closure_3;
+      if (tmp) {
+        const obj = DeviceUtils;
+        if (obj.isIpadOS()) {
+          containerOuter = containerOuter.containerOuter;
+        }
+        return containerOuter;
+      }
+      if (closure_4) {
+        const items = [containerOuter.containerOuterTablet, ];
+        const obj2 = { paddingTop: top, paddingLeft: left, paddingRight: right };
+        items[1] = obj2;
+        containerOuter = items;
+      } else {
+        containerOuter = [, ];
+        containerOuter[0] = containerOuter.containerOuter;
+        const obj3 = { paddingLeft: left, paddingRight: right };
+        containerOuter[1] = obj3;
+      }
+    }, items),
+    children: tmp8(tmp9, obj3)
+  };
+  obj3 = { style: tmp6 ? tmp7.containerTablet : tmp7.container, children: tmp8(tmp4(tmp2[11]), {}) };
+  return containerOuter(closure_4, obj2);
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/settings/Settings.tsx");
 

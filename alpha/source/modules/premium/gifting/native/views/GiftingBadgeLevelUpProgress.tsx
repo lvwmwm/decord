@@ -1,19 +1,19 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14366
+// Function ID: 14367
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8718, 21, 5004, 587, 558, 576, 10537, 10540, 5270, 1125, 2631, 2]
+// Dependencies: [19, 17, 8721, 21, 5005, 587, 558, 576, 10570, 10573, 5271, 1125, 2632, 2]
 
-// Module 14133 (GiftingBadgeLevelUpProgress)
+// Module 14366 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2631 from "module_2631" /* 2631 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8718 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10537 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10540 */;
+import _modDef2632 from "module_2632" /* 2632 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8721 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10570 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10573 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -224,10 +224,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
                 tmp37 = cResult[42];
               }
               const labels = tmp4.labels;
-              const Text = tmp(5270).Text;
+              const Text = tmp(5271).Text;
               const intl = tmp(1125).intl;
               const obj8 = { count: progress, threshold: tmp16 };
-              const formatResult = intl.format(_modDef2631.iIpfQe, obj8);
+              const formatResult = intl.format(_modDef2632.iIpfQe, obj8);
               cResult[4] = tmp5;
               cResult[5] = newTier;
               cResult[6] = tmp7;
@@ -338,8 +338,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadge
   items1[2] = tmp14Result;
   items3 = [metroRequire(View, obj2), ];
   const obj8 = { style: tmp.labels, children: hasOwnProperty(Text, obj9) };
-  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2631.iIpfQe, { count: progress, threshold: tmp7 }) };
-  Text = tmp2(5270).Text;
+  obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2632.iIpfQe, { count: progress, threshold: tmp7 }) };
+  Text = tmp2(5271).Text;
   intl = tmp2(1125).intl;
   items3[1] = hasOwnProperty(View, obj8);
   return metroRequire(View, obj);

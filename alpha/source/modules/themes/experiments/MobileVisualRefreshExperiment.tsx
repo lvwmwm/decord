@@ -1,12 +1,12 @@
-// Module ID: 12131
-// Function ID: 12132
+// Module ID: 12185
+// Function ID: 12186
 // Name: MobileVisualRefreshExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isMobileVisualRefreshEnabled, resolveRefreshToken
 
-// Module 12131 (MobileVisualRefreshExperiment)
+// Module 12185 (MobileVisualRefreshExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,10 +55,10 @@ const result = size.fileFinishedImporting("modules/themes/experiments/MobileVisu
 export default tmp3;
 export const MobileVisualRefreshExperiment = tmp2;
 export const useMobileVisualRefreshConfig = tmp4;
-export const isMobileVisualRefreshEnabled = function isMobileVisualRefreshEnabled(location) {
+export function isMobileVisualRefreshEnabled(location) {
   const obj = { location };
   return closure_2.getConfig(obj).enabled;
-};
-export const resolveRefreshToken = function resolveRefreshToken(MESSAGES_HEADER_PADDING_BOTTOM) {
+}
+export function resolveRefreshToken(MESSAGES_HEADER_PADDING_BOTTOM) {
   return MESSAGES_HEADER_PADDING_BOTTOM.resolve({ enabledExperiments: ["mobile-visual-refresh"] });
-};
+}

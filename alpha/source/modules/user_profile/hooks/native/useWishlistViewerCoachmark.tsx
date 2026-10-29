@@ -1,12 +1,12 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14906
+// Function ID: 14907
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 558, 576, 4840, 7532, 2]
+// Dependencies: [32, 19, 558, 576, 4841, 7555, 2]
 
-// Module 14671 (useWishlistViewerCoachmark)
+// Module 14906 (useWishlistViewerCoachmark)
 import react2 from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7532 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7555 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

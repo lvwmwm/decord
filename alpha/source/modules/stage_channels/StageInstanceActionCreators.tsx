@@ -1,10 +1,10 @@
-// Module ID: 7916
-// Function ID: 7917
+// Module ID: 7939
+// Function ID: 7940
 // Name: StageInstanceActionCreators
 // Dependencies: [5, 1084, 1294, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 7916 (StageInstanceActionCreators)
+// Module 7939 (StageInstanceActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -50,17 +50,17 @@ obj = function _updateStageInstance() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/stage_channels/StageInstanceActionCreators.tsx");
 
-export const startStageInstance = function startStageInstance() {
+export function startStageInstance() {
   return obj(...arguments);
-};
-export const updateStageInstance = function updateStageInstance() {
+}
+export function updateStageInstance() {
   return obj(...arguments);
-};
-export const endStageInstance = function endStageInstance(id) {
+}
+export function endStageInstance(id) {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   const del = HTTP.del;
   obj = { url: Endpoints.STAGE_INSTANCE(id), rejectWithError: obj2.rejectWithMigratedError() };
   obj2 = HTTPUtils;
   return del(obj);
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 10135
+// Function ID: 10136
 // Name: handleContentLinking
-// Dependencies: [5, 6895, 1084, 6707, 7384, 1111, 10104, 10105, 2]
+// Dependencies: [5, 6919, 1084, 6731, 7407, 1111, 10136, 10137, 2]
 // Exports: default
 
-// Module 10103 (handleContentLinking)
+// Module 10135 (handleContentLinking)
 import Constants from "Constants" /* 1084 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6895 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _handleContentLinking() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _handleContentLinking() {
               isAppStartupNavigation = undefined;
               messageId = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === messageId) {
@@ -140,7 +140,7 @@ let obj = function _handleContentLinking() {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
             if (safe) {
               messageId = 3;

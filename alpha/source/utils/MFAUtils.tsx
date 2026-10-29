@@ -1,13 +1,13 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7104
+// Function ID: 7105
 // Name: MFAUtils
-// Dependencies: [1627, 7081, 1254, 2]
+// Dependencies: [1628, 7105, 1254, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 7080 (MFAUtils)
+// Module 7104 (MFAUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import encodeDefault from "encode" /* 7081 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import encodeDefault from "encode" /* 7105 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import size from "module_2" /* 2 */;
 
 let _crypto;
@@ -39,7 +39,7 @@ const result = size.fileFinishedImporting("utils/MFAUtils.tsx");
 
 export const hasCrypto = tmp5;
 export const hasWebAuthn = tmp6;
-export const generateTotpSecret = function generateTotpSecret() {
+export function generateTotpSecret() {
   const getRandomValues = _crypto.getRandomValues;
   const uint8Array = new Uint8Array(20);
   const randomValues = getRandomValues(uint8Array);
@@ -50,9 +50,9 @@ export const generateTotpSecret = function generateTotpSecret() {
   const str4 = str3.toLowerCase();
   const str5 = str4.replace(/(\w{4})/g, "$1 ");
   return str5.trim();
-};
+}
 export { encodeTotpSecret };
-export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {
+export function encodeTotpSecretAsUrl(arg0, str) {
   str = arg2;
   if (arg2 === undefined) {
     str = "Discord";
@@ -62,8 +62,8 @@ export const encodeTotpSecretAsUrl = function encodeTotpSecretAsUrl(arg0, str) {
   const str2 = str.replace(/[\s._-]+/g, "");
   const formatted = str2.toUpperCase();
   return "otpauth://totp/" + encodeURIResult + ":" + encodeURIResult1 + "?secret=" + formatted + "&issuer=" + encodeURIComponent(str);
-};
-export const captureWebAuthnException = function captureWebAuthnException(error, tags) {
+}
+export function captureWebAuthnException(error, tags) {
   let obj2;
   const obj = { tags: obj2 };
   const captureException = SentryUtilsDefault.captureException;
@@ -76,4 +76,4 @@ export const captureWebAuthnException = function captureWebAuthnException(error,
   obj2 = { app_context: "webauthn" };
   const merged1 = Object.assign(tags);
   captureException(error, obj);
-};
+}

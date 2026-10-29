@@ -1,11 +1,11 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12629
+// Function ID: 12630
 // Name: MobileMarkdownFormatMenuExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 12575 (MobileMarkdownFormatMenuExperiment)
+// Module 12629 (MobileMarkdownFormatMenuExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

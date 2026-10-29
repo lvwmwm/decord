@@ -1,10 +1,10 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 11126
+// Function ID: 11127
 // Name: PollsInteractionStore
 // Dependencies: [1266, 1271, 558, 576, 568, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState
 
-// Module 11072 (PollsInteractionStore)
+// Module 11126 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react from "react" /* 576 */;
@@ -127,7 +127,7 @@ const result = size.fileFinishedImporting("modules/polls/PollsInteractionStore.t
 
 export const useMessagePollInteractions = tmp2;
 export const useChannelPollInteractions = tmp3;
-export const clearChannelPollState = function clearChannelPollState(arg0) {
+export function clearChannelPollState(arg0) {
   let closure_0;
   let state;
   _require = arg0;
@@ -156,8 +156,8 @@ export const clearChannelPollState = function clearChannelPollState(arg0) {
       return { pollsByChannelId: obj5, pollsByMessageId: obj2 };
     });
   });
-};
-export const clearPollState = function clearPollState(arg0, arg1) {
+}
+export function clearPollState(arg0, arg1) {
   let closure_0;
   let state;
   _require = arg0;
@@ -187,16 +187,16 @@ export const clearPollState = function clearPollState(arg0, arg1) {
       return obj9;
     });
   });
-};
-export const updatePollState = function updatePollState(arg0, arg1, arg2) {
+}
+export function updatePollState(arg0, arg1, arg2) {
   const state = closure_4.getState();
   state.updatePollState(arg0, arg1, arg2);
-};
-export const getPollState = function getPollState(channelId, id) {
+}
+export function getPollState(channelId, id) {
   const tmp = closure_4.getState().pollsByChannelId[channelId];
   let tmp2;
   if (tmp != null) {
     tmp2 = tmp[id];
   }
   return tmp2;
-};
+}

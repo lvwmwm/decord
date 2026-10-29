@@ -1,12 +1,12 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9573
+// Function ID: 9574
 // Name: useGameProfileCommunitiesLocaleFilter
-// Dependencies: [19, 9542, 558, 576, 12, 1385, 2]
+// Dependencies: [19, 9574, 558, 576, 12, 1385, 2]
 
-// Module 9541 (useGameProfileCommunitiesLocaleFilter)
+// Module 9573 (useGameProfileCommunitiesLocaleFilter)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import GameProfileCommunitiesLocaleFilterStore from "GameProfileCommunitiesLocaleFilterStore" /* 9542 */;
+import GameProfileCommunitiesLocaleFilterStore from "GameProfileCommunitiesLocaleFilterStore" /* 9574 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

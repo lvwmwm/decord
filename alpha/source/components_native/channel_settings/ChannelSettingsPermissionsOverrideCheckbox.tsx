@@ -1,15 +1,15 @@
-// Module ID: 18573
-// Function ID: 18574
+// Module ID: 18807
+// Function ID: 18808
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 587, 5004, 4941, 1125, 9804, 9249, 18574, 558, 576, 5072, 2]
+// Dependencies: [19, 17, 21, 587, 5005, 4942, 1125, 9836, 9253, 18808, 558, 576, 5073, 2]
 
-// Module 18573 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 18807 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PermissionUtils from "PermissionUtils" /* 4941 */;
+import PermissionUtils from "PermissionUtils" /* 4942 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,15 +22,15 @@ let obj3;
 let obj4;
 function getIcon(arg0, arg1, icon) {
   if (PermissionUtils.DENY === arg0) {
-    const DenyIcon = tmp(9804).DenyIcon;
+    const DenyIcon = tmp(9836).DenyIcon;
     const colors3 = nativeDefault.colors;
     return <DenyIcon size="sm" style={arg2.icon} color={arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL} />;
   } else if (PermissionUtils.ALLOW === arg0) {
-    const CheckmarkLargeBoldIcon = tmp(9249).CheckmarkLargeBoldIcon;
+    const CheckmarkLargeBoldIcon = tmp(9253).CheckmarkLargeBoldIcon;
     const colors2 = nativeDefault.colors;
     return <CheckmarkLargeBoldIcon size="sm" style={arg2.icon} color={arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE} />;
   } else if (PermissionUtils.PASSTHROUGH === arg0) {
-    const SlashIcon = tmp(18574).SlashIcon;
+    const SlashIcon = tmp(18808).SlashIcon;
     const colors = nativeDefault.colors;
     return <SlashIcon size="sm" style={arg2.icon} color={arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT} />;
   } else {

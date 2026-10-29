@@ -1,14 +1,14 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12586
+// Function ID: 12587
 // Name: conjurePublishRatings
-// Dependencies: [32, 19, 3863, 1125, 510, 10755, 558, 576, 2]
+// Dependencies: [32, 19, 3864, 1125, 510, 10830, 558, 576, 2]
 // Exports: conjurePublishRatingLabel, conjurePublishRatingOptionLabel, conjurePublishRatingThanks, submitConjurePublishRatingFeedback
 
-// Module 12531 (conjurePublishRatings)
+// Module 12586 (conjurePublishRatings)
 import Storage4 from "Storage" /* 510 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10755 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -79,8 +79,8 @@ function submitConjurePublishRating(arg0) {
   }
 }
 const conjurePublishRatings = "conjurePublishRatings";
-let obj = { 1: null, 2: _modDef3863.GhbsGA, 3: _modDef3863.cm0nwU, 4: _modDef3863.kGvlh2, 5: _modDef3863.dVBSUg };
-obj[5] = _modDef3863.DKlgF7;
+let obj = { 1: null, 2: _modDef3864.GhbsGA, 3: _modDef3864.cm0nwU, 4: _modDef3864.kGvlh2, 5: _modDef3864.dVBSUg };
+obj[5] = _modDef3864.DKlgF7;
 const set = new Set();
 let closure_8 = 0;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -286,29 +286,29 @@ let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishR
 
 export const CONJURE_PUBLISH_RATINGS = [1, 2, 3, 4, 5];
 export { conjurePublishRatingLabel };
-export const conjurePublishRatingOptionLabel = function conjurePublishRatingOptionLabel(rating) {
+export function conjurePublishRatingOptionLabel(rating) {
   let intl2;
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { rating, label: intl2.string(obj[rating]) };
-  const NU7Dex = _modDef3863.NU7Dex;
+  const NU7Dex = _modDef3864.NU7Dex;
   intl2 = intl4.intl;
   return formatToPlainString(NU7Dex, obj);
-};
-export const conjurePublishRatingThanks = function conjurePublishRatingThanks(rating) {
+}
+export function conjurePublishRatingThanks(rating) {
   let stringResult;
   if (rating <= 2) {
     const intl3 = intl4.intl;
-    stringResult = intl3.string(_modDef3863["nIc9/M"]);
+    stringResult = intl3.string(_modDef3864["nIc9/M"]);
   } else if (3 === rating) {
     const intl2 = intl4.intl;
-    stringResult = intl2.string(_modDef3863.ausj8U);
+    stringResult = intl2.string(_modDef3864.ausj8U);
   } else {
     const intl = intl4.intl;
-    stringResult = intl.string(_modDef3863.HilSjw);
+    stringResult = intl.string(_modDef3864.HilSjw);
   }
   return stringResult;
-};
+}
 export const CONJURE_RATING_FEEDBACK_MAX_LENGTH = 256;
 export { submitConjurePublishRating };
 export { submitConjurePublishRatingFeedback };

@@ -1,79 +1,85 @@
 // Module ID: 8247
 // Function ID: 8248
-// Dependencies: [41, 42]
+// Dependencies: [8240, 8241]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 8247
-import _createClassDefault from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod8240 from "module_8240" /* 8240 */;
+import _mod8241 from "module_8241" /* 8241 */;
 
-class DataView {
-  constructor(buffer) {
-    const self = this;
-    _classCallCheck(this, DataView);
-    const tmp2 = typeof buffer !== "object" || undefined === buffer.length || undefined === buffer.readUInt8 || undefined === buffer.readUInt16LE || undefined === buffer.readUInt16BE || undefined === buffer.readUInt32LE || undefined === buffer.readUInt32BE || undefined === buffer.readInt32LE || undefined === buffer.readInt32BE;
-    if (tmp2) {
-      const _Error = Error;
-      const self2 = this;
-      const self3 = this;
-      const error = new Error("DataView: Passed buffer type is unsupported.");
-      throw error;
-    } else {
-      self.buffer = buffer;
-      self.byteLength = self.buffer.length;
-    }
-  }
+
+export function isBLEND(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
 }
-const entry = {
-  key: "getUint8",
-  value: function getUint8(sum) {
-    const buffer = this.buffer;
-    return buffer.readUInt8(sum);
-  }
-};
-const items = [
-  entry,
-  {
-    key: "getUint16",
-    value: function getUint16(c5, arg1) {
-      let uInt16LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        uInt16LE = buffer.readUInt16LE(c5);
-      } else {
-        uInt16LE = buffer.readUInt16BE(c5);
-      }
-      return uInt16LE;
-    }
-  },
-  {
-    key: "getUint32",
-    value: function getUint32(sum, arg1) {
-      let uInt32LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        uInt32LE = buffer.readUInt32LE(sum);
-      } else {
-        uInt32LE = buffer.readUInt32BE(sum);
-      }
-      return uInt32LE;
-    }
-  },
-  {
-    key: "getInt32",
-    value: function getInt32(sum, arg1) {
-      let int32LE;
-      const buffer = this.buffer;
-      const tmp = arg1;
-      if (tmp) {
-        int32LE = buffer.readInt32LE(sum);
-      } else {
-        int32LE = buffer.readInt32BE(sum);
-      }
-      return int32LE;
-    }
-  }
-];
-
-export default _createClassDefault(DataView, items);
+export function isELF(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
+}
+export function isEXE(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
+}
+export function isMACHO(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
+}
+export function isINDD(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
+}
+export function isORC(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
+}
+export function isPARQUET(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
+}
+export function isPDF(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
+}
+export function isPS(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+}
+export function isRTF(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+}
+export function isSQLITE(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+}
+export function isSTL(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+}
+export function isTTF(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+}
+export function isDOC(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+}
+export function isPCAP(fileChunk) {
+  fileChunk = _mod8240.getFileChunk(fileChunk);
+  const FileTypes = _mod8241.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
+}

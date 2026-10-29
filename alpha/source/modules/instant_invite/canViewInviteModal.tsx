@@ -1,17 +1,17 @@
-// Module ID: 8938
-// Function ID: 8939
+// Module ID: 8941
+// Function ID: 8942
 // Name: canViewInviteModal
 // Dependencies: [1084, 2]
 // Exports: canViewInviteModal
 
-// Module 8938 (canViewInviteModal)
+// Module 8941 (canViewInviteModal)
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/instant_invite/canViewInviteModal.tsx");
 
-export const canViewInviteModal = function canViewInviteModal(PermissionStore, guild, channel1, stageInstanceByChannel) {
+export function canViewInviteModal(PermissionStore, guild, channel1, stageInstanceByChannel) {
   let tmp = channel1;
   if (channel1 == null) {
     tmp = guild;
@@ -28,4 +28,4 @@ export const canViewInviteModal = function canViewInviteModal(PermissionStore, g
     canResult = null != invite_code;
   }
   return canResult;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 8315
-// Function ID: 8316
+// Module ID: 8337
+// Function ID: 8338
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [570, 5948, 5303, 558, 2]
+// Dependencies: [570, 5950, 5304, 558, 2]
 // Exports: getIsAccessibilityServiceEnabled
 
-// Module 8315 (useIsAccessibilityServiceEnabled)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5303 */;
-import react_nativeDefault from "react-native" /* 5948 */;
+// Module 8337 (useIsAccessibilityServiceEnabled)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5304 */;
+import react_nativeDefault from "react-native" /* 5950 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,9 +37,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAcces
 });
 let result = size.fileFinishedImporting("modules/a11y/native/useIsAccessibilityServiceEnabled.native.tsx");
 
-export const getIsAccessibilityServiceEnabled = function getIsAccessibilityServiceEnabled() {
+export function getIsAccessibilityServiceEnabled() {
   const obj = useIsScreenReaderEnabled;
   const accessibilityServiceEnabled = obj.getIsScreenReaderEnabled() || state.getState().accessibilityServiceEnabled;
   return accessibilityServiceEnabled;
-};
+}
 export const useIsAccessibilityServiceEnabled = tmp2;

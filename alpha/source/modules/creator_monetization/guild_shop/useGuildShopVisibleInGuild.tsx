@@ -1,16 +1,16 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7422
+// Function ID: 7423
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [1084, 558, 576, 7395, 7387, 7400, 7390, 2]
+// Dependencies: [1084, 558, 576, 7418, 7410, 7423, 7413, 2]
 // Exports: isGuildShopVisibleInGuild
 
-// Module 7399 (useGuildShopVisibleInGuild)
+// Module 7422 (useGuildShopVisibleInGuild)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import useRoleSubscriptionsVisibleInGuild2 from "useRoleSubscriptionsVisibleInGuild" /* 7387 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7390 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7395 */;
-import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7400 */;
+import useRoleSubscriptionsVisibleInGuild2 from "useRoleSubscriptionsVisibleInGuild" /* 7410 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7413 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7418 */;
+import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7423 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildSh
 let result = size.fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopVisibleInGuild.tsx");
 
 export const useGuildShopVisibleInGuild = tmp2;
-export const isGuildShopVisibleInGuild = function isGuildShopVisibleInGuild(id, arg1) {
+export function isGuildShopVisibleInGuild(id, arg1) {
   id = undefined;
   const isGuildEligibleForGuildProducts = GuildProductsEligibility.isGuildEligibleForGuildProducts;
   GuildProductsEligibility;
@@ -80,11 +80,11 @@ export const isGuildShopVisibleInGuild = function isGuildShopVisibleInGuild(id, 
   }
   const result = isGuildEligibleForGuildProducts(id);
   let id1;
-  const areRoleSubscriptionsVisibleInGuild = tmp(7387).areRoleSubscriptionsVisibleInGuild;
+  const areRoleSubscriptionsVisibleInGuild = tmp(7410).areRoleSubscriptionsVisibleInGuild;
   useRoleSubscriptionsVisibleInGuild2;
   if (id != null) {
     id1 = id.id;
   }
   const result1 = areRoleSubscriptionsVisibleInGuild(id1, arg1);
   return false;
-};
+}

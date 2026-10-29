@@ -1,19 +1,19 @@
-// Module ID: 13324
-// Function ID: 13325
+// Module ID: 13557
+// Function ID: 13558
 // Name: DraftCommandUtils
-// Dependencies: [6020, 7667, 10238, 2]
+// Dependencies: [6024, 7690, 10271, 2]
 // Exports: resolveDraftCommand, toDraftCommand
 
-// Module 13324 (DraftCommandUtils)
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
-import DraftCommand from "DraftCommand" /* 7667 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10238 */;
+// Module 13557 (DraftCommandUtils)
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
+import DraftCommand from "DraftCommand" /* 7690 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10271 */;
 import size from "module_2" /* 2 */;
 
 const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
 const result = size.fileFinishedImporting("modules/application_commands/DraftCommandUtils.tsx");
 
-export const toDraftCommand = function toDraftCommand(activeCommand, result1) {
+export function toDraftCommand(activeCommand, result1) {
   function getCommandTextPrefix(activeCommand, result1) {
     const items = [, ];
     ({ displayName: arr[0], untranslatedName: arr[1] } = activeCommand);
@@ -42,8 +42,8 @@ export const toDraftCommand = function toDraftCommand(activeCommand, result1) {
     }
     return tmp3;
   }
-};
-export const resolveDraftCommand = function resolveDraftCommand(channel, text, draftCommand) {
+}
+export function resolveDraftCommand(channel, text, draftCommand) {
   let command;
   let section;
   if (null != draftCommand) {
@@ -65,4 +65,4 @@ export const resolveDraftCommand = function resolveDraftCommand(channel, text, d
     }
   }
   return null;
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 13055
+// Function ID: 13056
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 4878, 8419, 1084, 1264, 5747, 9039, 2046, 1294, 12835, 2]
+// Dependencies: [5, 4879, 8441, 1084, 1264, 5749, 9042, 2047, 1294, 13056, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12834 (GuildAntiRaidActionCreators)
+// Module 13055 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8419 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12835 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8441 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 13056 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -116,7 +116,7 @@ obj = function _setGuildIncidentActions() {
     }
     let toISOStringResult = null;
     if (tmp4) {
-      const obj3 = _modDef2046();
+      const obj3 = _modDef2047();
       const addResult = obj3.add(closure_4, "hours");
       toISOStringResult = addResult.toISOString();
     }
@@ -159,7 +159,7 @@ obj = function _handleResolveRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -231,7 +231,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ const DEFAULT_LOCKDOWN_DURATION = GuildAntiRaidConstants.DEFAULT_LOCKDOWN_DURATI
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault, GuildFeatures: metroImportAll } = Constants);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(c1, c2) {
+export function trackReportRaidViewed(c1, c2) {
   let items = c2;
   if (c2 === undefined) {
     items = [];
@@ -304,16 +304,16 @@ export const trackReportRaidViewed = function trackReportRaidViewed(c1, c2) {
     const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(c1));
     track(GUILD_RAID_REPORTED, obj);
   }
-};
-export const setGuildRaidAlerts = function setGuildRaidAlerts() {
+}
+export function setGuildRaidAlerts() {
   return obj(...arguments);
-};
-export const setGuildIncidentActions = function setGuildIncidentActions() {
+}
+export function setGuildIncidentActions() {
   return obj(...arguments);
-};
-export const handleResolveRaid = function handleResolveRaid() {
+}
+export function handleResolveRaid() {
   return obj(...arguments);
-};
-export const handleReportRaid = function handleReportRaid() {
+}
+export function handleReportRaid() {
   return obj(...arguments);
-};
+}

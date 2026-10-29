@@ -1,20 +1,20 @@
-// Module ID: 4881
-// Function ID: 4882
+// Module ID: 4882
+// Function ID: 4883
 // Name: FavoritesUtils
-// Dependencies: [4869, 1084, 1125, 2]
+// Dependencies: [4870, 1084, 1125, 2]
 // Exports: getFavoritesAwareGuildName, isFavoritableChannel, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
-// Module 4881 (FavoritesUtils)
+// Module 4882 (FavoritesUtils)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import FavoritesConstants from "FavoritesConstants" /* 4869 */;
+import FavoritesConstants from "FavoritesConstants" /* 4870 */;
 import size from "module_2" /* 2 */;
 
 const FAVORITES_RAW_GUILD_ID = FavoritesConstants.FAVORITES_RAW_GUILD_ID;
 const FAVORITES = Constants.FAVORITES;
 const result = size.fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
 
-export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(guild) {
+export function getFavoritesAwareGuildName(guild) {
   if (null != guild) {
     let name;
     const id = guild.id;
@@ -27,13 +27,13 @@ export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(gu
     }
     return name;
   }
-};
+}
 export function isFavoritesGuildId(guildId) {
   return guildId === FAVORITES_RAW_GUILD_ID || guildId === FAVORITES;
 }
-export const isFavoritesGuildCategoryNameValid = function isFavoritesGuildCategoryNameValid(str) {
+export function isFavoritesGuildCategoryNameValid(str) {
   return "" !== str.trim();
-};
-export const isFavoritableChannel = function isFavoritableChannel(record) {
+}
+export function isFavoritableChannel(record) {
   return !record.isCategory();
-};
+}

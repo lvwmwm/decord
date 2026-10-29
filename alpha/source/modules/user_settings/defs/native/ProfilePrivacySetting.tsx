@@ -1,21 +1,21 @@
-// Module ID: 16408
-// Function ID: 16409
+// Module ID: 16646
+// Function ID: 16647
 // Name: ProfilePrivacySetting
-// Dependencies: [8365, 558, 4832, 16409, 5246, 16410, 1999, 1125, 1208, 11248, 2]
+// Dependencies: [8387, 558, 4833, 16647, 5247, 16648, 2000, 1125, 1208, 11302, 2]
 
-// Module 16408 (ProfilePrivacySetting)
+// Module 16646 (ProfilePrivacySetting)
 import intl7 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16409 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16647 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const asyncRequire = tmp2(1999);
+const asyncRequire = tmp2(2000);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
@@ -42,7 +42,7 @@ let obj = {
       const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
       ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(16410, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
+      obj2.openLazy(asyncRequire(16648, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {

@@ -1,13 +1,13 @@
-// Module ID: 19522
-// Function ID: 19523
+// Module ID: 19755
+// Function ID: 19756
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1084, 558, 576, 19523, 19524, 5692, 2064, 1125, 19525, 2]
+// Dependencies: [5, 19, 1084, 558, 576, 19756, 19757, 5694, 2065, 1125, 19758, 2]
 // Exports: default
 
-// Module 19522 (useCreatorMonetizationEligibilityItems)
+// Module 19755 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1084 */;
 import intl27 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -375,7 +375,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -443,7 +443,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
             tmp12();
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;
@@ -503,7 +503,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -571,7 +571,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
             tmp12();
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;
@@ -678,7 +678,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           intl9 = tmp23(1125).intl;
           const intl10 = tmp23(1125).intl;
           formatToPlainString = intl10.formatToPlainString;
-          obj8 = { minimumAge: tmp25(19525)(tmp.minimumAgeInDays) };
+          obj8 = { minimumAge: tmp25(19758)(tmp.minimumAgeInDays) };
           Zwv84O = tmp23(1125).t.Zwv84O;
           push3(obj7);
         }

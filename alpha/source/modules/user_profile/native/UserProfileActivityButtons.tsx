@@ -1,46 +1,46 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14811
+// Function ID: 14812
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 4855, 4856, 6535, 5230, 4878, 11233, 4936, 4946, 4907, 6533, 5666, 1084, 8865, 21, 5004, 587, 558, 576, 7289, 4925, 14578, 573, 6697, 14579, 7847, 1125, 8614, 5246, 6707, 11401, 5280, 10686, 1199, 8660, 11382, 5696, 14581, 8786, 5187, 7913, 7902, 6537, 1414, 9643, 7526, 8869, 11386, 1383, 8894, 2]
+// Dependencies: [5, 19, 4856, 4857, 6559, 5231, 4879, 11287, 4937, 4947, 4908, 6557, 5668, 1084, 8868, 21, 5005, 587, 558, 576, 7313, 4926, 14812, 573, 6721, 14813, 7870, 1125, 8636, 5247, 6731, 11455, 5281, 10719, 1199, 8682, 11436, 5698, 14815, 8789, 5188, 7936, 7925, 6561, 1415, 9675, 7549, 8872, 11440, 1383, 8897, 2]
 // Exports: CustomActivityButton
 
-// Module 14577 (UserProfileActivityButtons)
+// Module 14811 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7902 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7913 */;
-import isStreamingDefault from "isStreaming" /* 8786 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9643 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11401 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 14578 */;
-import getActivityJoinability from "getActivityJoinability" /* 14579 */;
-import getStreamURLDefault from "getStreamURL" /* 14581 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4926 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7925 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7936 */;
+import isStreamingDefault from "isStreaming" /* 8789 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9675 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11455 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 14812 */;
+import getActivityJoinability from "getActivityJoinability" /* 14813 */;
+import getStreamURLDefault from "getStreamURL" /* 14815 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5230 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import LocalActivityStore from "LocalActivityStore" /* 11233 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import LocalActivityStore from "LocalActivityStore" /* 11287 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import Constants from "Constants" /* 1084 */;
-import SpotifyConstants from "SpotifyConstants" /* 8865 */;
-import createStyles from "createStyles" /* 5004 */;
+import SpotifyConstants from "SpotifyConstants" /* 8868 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -505,7 +505,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinGameActi
     tmp6Result = null;
     if (stateFromStores !== getActivityJoinability.ActivityJoinability.CANNOT_JOIN) {
       let stringResult;
-      const Button = tmp2(5280).Button;
+      const Button = tmp2(5281).Button;
       const tmp6 = jsx;
       if (stateFromStores === getActivityJoinability.ActivityJoinability.JOINED) {
         const intl2 = tmp2(1125).intl;
@@ -546,7 +546,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const sync_id = activity.sync_id;
   let tmp6 = null;
   const tmp5 = sync_id;
-  if (sync_id(10686)(activity)) {
+  if (sync_id(10719)(activity)) {
     tmp6 = null;
     if (null != sync_id) {
       let tmp7;
@@ -563,7 +563,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
       }
       if (cResult[2] !== tmp4.icon) {
         const Icon = tmp(1199).Icon;
-        const tmp11 = <Icon size={tmp(1199).Icon.Sizes.SMALL} source={tmp5(8660)} disableColor style={tmp4.icon} />;
+        const tmp11 = <Icon size={tmp(1199).Icon.Sizes.SMALL} source={tmp5(8682)} disableColor style={tmp4.icon} />;
         cResult[2] = tmp4.icon;
         cResult[3] = tmp11;
         tmp9 = tmp11;
@@ -584,7 +584,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             tmp6 = tmp14;
           }
         }
-        const tmp16 = jsx(tmp(5280).Button, { text: tmp7, icon: tmp9, variant: "secondary", onPress: tmp12 });
+        const tmp16 = jsx(tmp(5281).Button, { text: tmp7, icon: tmp9, variant: "secondary", onPress: tmp12 });
         cResult[7] = tmp7;
         cResult[8] = tmp9;
         cResult[9] = tmp12;
@@ -603,7 +603,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -632,7 +632,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -687,13 +687,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10686)(activity)) {
+  if (sync_id(10719)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;
       const intl = intl5.intl;
       let obj2 = { platform: activity.name };
-      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8660), disableColor: true, style: tmp.icon };
+      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8682), disableColor: true, style: tmp.icon };
       const Icon = native.Icon;
       tmp4 = <Button text={intl.formatToPlainString(intl5.t.LEgD7t, obj2)} icon={null} variant="secondary" onPress={_asyncToGenerator(async (arg0, value) => {
         let closure_0;
@@ -709,7 +709,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -737,7 +737,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -816,7 +816,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WatchActivit
         }
         tmp7 = tmp11;
       }
-      const tmp13 = jsx(onAction(5280).Button, {
+      const tmp13 = jsx(onAction(5281).Button, {
         text: tmp9,
         variant: "secondary",
         onPress() {
@@ -1298,7 +1298,7 @@ export const PlayOnSpotifyButton = tmp7;
 export const WatchActivityButton = tmp8;
 export const VoiceChannelButtons = tmp9;
 export const ConnectPlatformButton = tmp10;
-export const CustomActivityButton = function CustomActivityButton(index) {
+export function CustomActivityButton(index) {
   let activity;
   let require;
   ({ user: require, activity } = index);
@@ -1337,7 +1337,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } else {
                 let tmp17;
@@ -1383,13 +1383,13 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         } else {
                           const obj8 = tmp(tmp17[49]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -1420,12 +1420,12 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {
@@ -1442,4 +1442,4 @@ export const CustomActivityButton = function CustomActivityButton(index) {
     }
   }
   return tmp;
-};
+}

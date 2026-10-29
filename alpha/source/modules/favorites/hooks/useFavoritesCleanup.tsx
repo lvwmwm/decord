@@ -1,18 +1,18 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 18083
+// Function ID: 18084
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 4856, 4936, 6806, 4859, 17846, 504, 10896, 10883, 2]
+// Dependencies: [5, 32, 19, 4857, 4937, 6829, 4860, 18084, 504, 10801, 10788, 2]
 // Exports: default
 
-// Module 17845 (useFavoritesCleanup)
-import FavoritesCleanup from "FavoritesCleanup" /* 10896 */;
+// Module 18083 (useFavoritesCleanup)
+import FavoritesCleanup from "FavoritesCleanup" /* 10801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -139,7 +139,7 @@ export default function useFavoritesCleanup(arg0) {
                 closure_129_4(false);
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
             c3 = 0;
             closure_129_11.current = false;
@@ -148,7 +148,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp66) {
           closure_2 = tmp66;
           if (0 === c3) {
@@ -180,7 +180,7 @@ export default function useFavoritesCleanup(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -248,7 +248,7 @@ export default function useFavoritesCleanup(arg0) {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === c3) {

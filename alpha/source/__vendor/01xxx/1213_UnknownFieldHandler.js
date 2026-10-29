@@ -89,6 +89,6 @@ WireType[4] = "EndGroup";
 WireType.Bit32 = 5;
 WireType[5] = "Bit32";
 
-export const mergeBinaryOptions = function mergeBinaryOptions(arg0, arg1) {
+export function mergeBinaryOptions(arg0, arg1) {
   return Object.assign(Object.assign({}, arg0), arg1);
-};
+}

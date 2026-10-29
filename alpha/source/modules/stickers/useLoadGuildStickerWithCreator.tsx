@@ -1,14 +1,14 @@
-// Module ID: 19385
-// Function ID: 19386
+// Module ID: 19618
+// Function ID: 19619
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1389, 6802, 558, 576, 504, 10189, 2]
+// Dependencies: [5, 32, 19, 1389, 6825, 558, 576, 504, 10222, 2]
 
-// Module 19385 (useLoadGuildStickerWithCreator)
+// Module 19618 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildStickersStore from "GuildStickersStore" /* 6802 */;
+import GuildStickersStore from "GuildStickersStore" /* 6825 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -110,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;
@@ -256,7 +256,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c3;
@@ -298,7 +298,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;

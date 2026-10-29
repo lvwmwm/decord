@@ -1,32 +1,24 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13258
+// Function ID: 13259
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 13015, 21, 5004, 558, 576, 1496, 504, 13028, 13195, 13197, 5635, 13198, 6397, 5077, 2]
+// Dependencies: [32, 19, 17, 13236, 21, 5005, 558, 576, 13259, 1497, 13260, 5636, 504, 13426, 13428, 13429, 13430, 6421, 5078, 2]
 
-// Module 13027 (CheckpointCharacterStage)
+// Module 13258 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _mod5077 from "module_5077" /* 5077 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6397 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13028 */;
-import CheckpointCharacterReferencedAssets from "CheckpointCharacterReferencedAssets" /* 13195 */;
-import useCheckpointCharacterLoadedTextureNames from "useCheckpointCharacterLoadedTextureNames" /* 13197 */;
-import useCheckpointCharacterTextureSwaps from "useCheckpointCharacterTextureSwaps" /* 13198 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13260 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13426 */;
+import CheckpointCharacterReferencedAssets from "CheckpointCharacterReferencedAssets" /* 13428 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 13015 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import CheckpointStore from "CheckpointStore" /* 13236 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
 let hasOwnProperty;
 let obj2;
-let tmp5;
-const useInitialValueDefault = tmp5(5635);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -35,144 +27,187 @@ obj2 = {};
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_8 = createStyles(obj);
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointCharacterStage(stage) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointCharacterStage(isActive) {
   let chapterID;
+  let characterBottomInset;
   let faceID;
   let headwearID;
+  let height;
   let shoesID;
-  let tmp22;
-  let tmp23;
-  let tmp6;
-  let tmp7;
+  let stage;
+  let tmp25;
+  let tmp26;
   let wearableID;
-  const obj = react2;
-  const cResult = obj.c(25);
-  stage = stage.stage;
+  let width;
+  let obj = width(576);
+  const cResult = obj.c(33);
+  ({ stage, characterBottomInset } = isActive);
+  isActive = isActive.isActive;
   const tmp4 = closure_8();
-  size = useWindowDimensionsDefault();
+  const context = react.useContext(height(13259));
+  size = height(1497)();
+  width = size.width;
+  height = size.height;
   let str = "MobilePortrait";
-  if (size.width > size.height) {
+  if (width > height) {
     str = "MobileLandscape";
   }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CheckpointStore];
-    const fn = function u() {
-      return CheckpointStore.selectedCharacterTraits;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (cResult[2] === str) {
-    if (cResult[3] === stateFromStores) {
-      let tmp10;
-      if (cResult[4] === stage) {
-        tmp10 = cResult[5];
-      }
-      ({ faceID, headwearID, shoesID, wearableID, chapterID } = tmp10);
-      if (cResult[6] === chapterID) {
-        if (cResult[7] === faceID) {
-          if (cResult[8] === headwearID) {
-            if (cResult[9] === str) {
-              if (cResult[10] === shoesID) {
-                let tmp12;
-                let tmp15;
-                let tmp25;
-                if (cResult[11] === wearableID) {
-                  tmp12 = cResult[12];
-                }
-                const tmpResult7 = useCheckpointCharacterLoadedTextureNames;
-                const checkpointCharacterLoadedTextureNames = tmpResult7.useCheckpointCharacterLoadedTextureNames(tmp12);
-                if (cResult[13] !== checkpointCharacterLoadedTextureNames) {
-                  const tmpResult8 = CheckpointCharacterReferencedAssets;
-                  const checkpointCharacterReferencedAssets = tmpResult8.getCheckpointCharacterReferencedAssets(checkpointCharacterLoadedTextureNames);
-                  cResult[13] = checkpointCharacterLoadedTextureNames;
-                  cResult[14] = checkpointCharacterReferencedAssets;
-                  tmp15 = checkpointCharacterReferencedAssets;
-                } else {
-                  tmp15 = cResult[14];
-                }
-                const tmp17 = useInitialValueDefault(tmp15);
-                [tmp22, tmp23] = react.useState(null);
-                _slicedToArray(react.useState(null), 2);
-                const tmpResult9 = useCheckpointCharacterTextureSwaps;
-                const checkpointCharacterTextureSwaps = tmpResult9.useCheckpointCharacterTextureSwaps(tmp22, tmp15, tmp17);
-                const container = tmp4.container;
-                if (cResult[15] !== stateFromStores) {
-                  const tmpResult10 = CheckpointCharacterAccessibilityUtils;
-                  const checkpointCharacterAccessibilityLabel = tmpResult10.getCheckpointCharacterAccessibilityLabel(stateFromStores);
-                  cResult[15] = stateFromStores;
-                  cResult[16] = checkpointCharacterAccessibilityLabel;
-                  tmp25 = checkpointCharacterAccessibilityLabel;
-                } else {
-                  tmp25 = cResult[16];
-                }
-                if (cResult[17] === tmp10) {
-                  if (cResult[18] === tmp17) {
-                    let tmp27;
-                    if (cResult[19] === tmp4.rive) {
-                      tmp27 = cResult[20];
-                    }
-                    if (cResult[21] === tmp4.container) {
-                      if (cResult[22] === tmp25) {
-                        let tmp30;
-                        if (cResult[23] === tmp27) {
-                          tmp30 = cResult[24];
+  if (cResult[0] === height) {
+    let tmp7;
+    let tmp11;
+    let tmp10;
+    if (cResult[1] === width) {
+      tmp7 = cResult[2];
+    }
+    const tmp8 = height(5636)(tmp7);
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [CheckpointStore];
+      const fn2 = function x() {
+        return CheckpointStore.selectedCharacterTraits;
+      };
+      cResult[3] = items;
+      cResult[4] = fn2;
+      tmp11 = fn2;
+      tmp10 = items;
+    } else {
+      tmp10 = cResult[3];
+      tmp11 = cResult[4];
+    }
+    const tmpResult = width(504);
+    const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
+    if (cResult[5] === characterBottomInset) {
+      if (cResult[6] === height) {
+        if (cResult[7] === str) {
+          if (cResult[8] === stateFromStores) {
+            if (cResult[9] === stage) {
+              let tmp14;
+              if (cResult[10] === tmp8) {
+                tmp14 = cResult[11];
+              }
+              ({ faceID, headwearID, shoesID, wearableID, chapterID } = tmp14);
+              if (cResult[12] === chapterID) {
+                if (cResult[13] === faceID) {
+                  if (cResult[14] === headwearID) {
+                    if (cResult[15] === str) {
+                      if (cResult[16] === shoesID) {
+                        let tmp16;
+                        if (cResult[17] === wearableID) {
+                          tmp16 = cResult[18];
                         }
-                        return tmp30;
+                        const tmpResult7 = width(13429);
+                        const checkpointCharacterLoadedTextureNames = tmpResult7.useCheckpointCharacterLoadedTextureNames(tmp16);
+                        if (cResult[19] === checkpointCharacterLoadedTextureNames) {
+                          let tmp19;
+                          let tmp29;
+                          if (cResult[20] === tmp8) {
+                            tmp19 = cResult[21];
+                          }
+                          const tmp21 = height(5636)(tmp19);
+                          [tmp25, tmp26] = react.useState(null);
+                          _slicedToArray(react.useState(null), 2);
+                          const tmpResult8 = width(13430);
+                          const checkpointCharacterTextureSwaps = tmpResult8.useCheckpointCharacterTextureSwaps(tmp25, tmp19, tmp21);
+                          const container = tmp4.container;
+                          if (cResult[22] !== stateFromStores) {
+                            const tmpResult9 = width(6421);
+                            const checkpointCharacterAccessibilityLabel = tmpResult9.getCheckpointCharacterAccessibilityLabel(stateFromStores);
+                            cResult[22] = stateFromStores;
+                            cResult[23] = checkpointCharacterAccessibilityLabel;
+                            tmp29 = checkpointCharacterAccessibilityLabel;
+                          } else {
+                            tmp29 = cResult[23];
+                          }
+                          if (cResult[24] === tmp14) {
+                            if (cResult[25] === tmp21) {
+                              let tmp31;
+                              if (cResult[26] === tmp4.rive) {
+                                tmp31 = cResult[27];
+                              }
+                              if (cResult[28] === tmp4.container) {
+                                if (cResult[29] === tmp31) {
+                                  if (cResult[30] === tmp28) {
+                                    let tmp34;
+                                    if (cResult[31] === tmp29) {
+                                      tmp34 = cResult[32];
+                                    }
+                                    return tmp34;
+                                  }
+                                }
+                              }
+                              const tmp37 = <closure_5 ref={tmp28} style={container} accessible accessibilityRole="image" accessibilityLabel={tmp29}>{tmp31}</closure_5>;
+                              cResult[28] = tmp4.container;
+                              cResult[29] = tmp31;
+                              cResult[30] = tmp28;
+                              cResult[31] = tmp29;
+                              cResult[32] = tmp37;
+                              tmp34 = tmp37;
+                            }
+                          }
+                          const tmp33 = jsx(width(5078).CheckpointCharacterRive, { artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp21, onRiveFileChange: tmp26, dataBinding: tmp14, style: tmp4.rive });
+                          cResult[24] = tmp14;
+                          cResult[25] = tmp21;
+                          cResult[26] = tmp4.rive;
+                          cResult[27] = tmp33;
+                          tmp31 = tmp33;
+                        }
+                        const tmpResult10 = width(13428);
+                        const checkpointCharacterReferencedAssets = tmpResult10.getCheckpointCharacterReferencedAssets(checkpointCharacterLoadedTextureNames, tmp8);
+                        cResult[19] = checkpointCharacterLoadedTextureNames;
+                        cResult[20] = tmp8;
+                        cResult[21] = checkpointCharacterReferencedAssets;
+                        tmp19 = checkpointCharacterReferencedAssets;
                       }
                     }
-                    const tmp33 = <hasOwnProperty style={container} accessible accessibilityRole="image" accessibilityLabel={tmp25}>{tmp27}</hasOwnProperty>;
-                    cResult[21] = tmp4.container;
-                    cResult[22] = tmp25;
-                    cResult[23] = tmp27;
-                    cResult[24] = tmp33;
-                    tmp30 = tmp33;
                   }
                 }
-                const tmp29 = jsx(_mod5077.CheckpointCharacterRive, { artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp17, onRiveFileChange: tmp23, dataBinding: tmp10, style: tmp4.rive });
-                cResult[17] = tmp10;
-                cResult[18] = tmp17;
-                cResult[19] = tmp4.rive;
-                cResult[20] = tmp29;
-                tmp27 = tmp29;
               }
+              const obj5 = { faceID, headwearID, shoesID, wearableID };
+              const tmpResult11 = width(13428);
+              const checkpointCharacterVisibleTextureNames = tmpResult11.getCheckpointCharacterVisibleTextureNames(obj5, chapterID, str);
+              cResult[12] = chapterID;
+              cResult[13] = faceID;
+              cResult[14] = headwearID;
+              cResult[15] = str;
+              cResult[16] = shoesID;
+              cResult[17] = wearableID;
+              cResult[18] = checkpointCharacterVisibleTextureNames;
+              tmp16 = checkpointCharacterVisibleTextureNames;
             }
           }
         }
       }
-      const obj4 = { faceID, headwearID, shoesID, wearableID };
-      const tmpResult11 = CheckpointCharacterReferencedAssets;
-      const checkpointCharacterVisibleTextureNames = tmpResult11.getCheckpointCharacterVisibleTextureNames(obj4, chapterID, str);
-      cResult[6] = chapterID;
-      cResult[7] = faceID;
-      cResult[8] = headwearID;
-      cResult[9] = str;
-      cResult[10] = shoesID;
-      cResult[11] = wearableID;
-      cResult[12] = checkpointCharacterVisibleTextureNames;
-      tmp12 = checkpointCharacterVisibleTextureNames;
     }
+    const obj6 = { stage, traits: stateFromStores, layout: str, characterBottomInset, stageHeight: height, textureScale: tmp8 };
+    const tmpResult12 = width(13426);
+    const checkpointCharacterDataBinding = tmpResult12.getCheckpointCharacterDataBinding(obj6);
+    cResult[5] = characterBottomInset;
+    cResult[6] = height;
+    cResult[7] = str;
+    cResult[8] = stateFromStores;
+    cResult[9] = stage;
+    cResult[10] = tmp8;
+    cResult[11] = checkpointCharacterDataBinding;
+    tmp14 = checkpointCharacterDataBinding;
   }
-  const tmpResult12 = CheckpointCharacterDataBinding;
-  const checkpointCharacterDataBinding = tmpResult12.getCheckpointCharacterDataBinding(stage, stateFromStores, str);
-  cResult[2] = str;
-  cResult[3] = stateFromStores;
-  cResult[4] = stage;
-  cResult[5] = checkpointCharacterDataBinding;
-  tmp10 = checkpointCharacterDataBinding;
+  const fn = function n() {
+    const obj = CheckpointCharacterTextureUtils;
+    return obj.getCheckpointCharacterTextureScale(width, height);
+  };
+  cResult[0] = height;
+  cResult[1] = width;
+  cResult[2] = fn;
+  tmp7 = fn;
 }) : (function CheckpointCharacterStage(stage) {
-  let obj5;
   let obj6;
-  let tmp11;
-  let tmp12;
+  let tmp14;
+  let tmp15;
+  let tmp6Result;
   stage = stage.stage;
+  const characterBottomInset = stage.characterBottomInset;
+  let width;
   let str;
+  let textureScale;
   let stateFromStores;
   let faceID;
   let headwearID;
@@ -180,20 +215,30 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointCharac
   let wearableID;
   let chapterID;
   let checkpointCharacterLoadedTextureNames;
-  const tmp = checkpointCharacterLoadedTextureNames();
-  size = str(stateFromStores[8])();
-  const tmp2 = str;
+  const isActive = stage.isActive;
+  const tmp = headwearID();
+  let obj = str;
+  const context = str.useContext(characterBottomInset(width[8]));
+  size = characterBottomInset(width[9])();
+  width = size.width;
+  const height = size.height;
   str = "MobilePortrait";
-  if (size.width > size.height) {
+  if (width > height) {
     str = "MobileLandscape";
   }
-  let obj = stage(tmp3[9]);
-  const items = [wearableID];
-  stateFromStores = obj.useStateFromStores(items, () => wearableID.selectedCharacterTraits);
-  const items1 = [stage, stateFromStores, str];
-  const memo = headwearID.useMemo(() => {
+  const tmp5 = characterBottomInset(width[11])(() => {
+    const obj = CheckpointCharacterTextureUtils;
+    return obj.getCheckpointCharacterTextureScale(width, height);
+  });
+  textureScale = tmp5;
+  let obj2 = stage(tmp3[12]);
+  const items = [stateFromStores];
+  stateFromStores = obj2.useStateFromStores(items, () => stateFromStores.selectedCharacterTraits);
+  const items1 = [stage, stateFromStores, str, characterBottomInset, height, tmp5];
+  const memo = obj.useMemo(() => {
     const obj = CheckpointCharacterDataBinding;
-    return obj.getCheckpointCharacterDataBinding(stage, stateFromStores, str);
+    const obj2 = { stage, traits: stateFromStores, layout: str, characterBottomInset, stageHeight: height, textureScale };
+    return obj.getCheckpointCharacterDataBinding(obj2);
   }, items1);
   faceID = memo.faceID;
   headwearID = memo.headwearID;
@@ -201,27 +246,32 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointCharac
   wearableID = memo.wearableID;
   chapterID = memo.chapterID;
   const items2 = [faceID, headwearID, shoesID, wearableID, chapterID, str];
-  const memo1 = headwearID.useMemo(() => {
+  const memo1 = obj.useMemo(() => {
     const obj = CheckpointCharacterReferencedAssets;
     const obj2 = { faceID, headwearID, shoesID, wearableID };
     return obj.getCheckpointCharacterVisibleTextureNames(obj2, chapterID, str);
   }, items2);
-  let obj2 = stage(tmp3[12]);
-  checkpointCharacterLoadedTextureNames = obj2.useCheckpointCharacterLoadedTextureNames(memo1);
-  const items3 = [checkpointCharacterLoadedTextureNames];
-  const memo2 = headwearID.useMemo(() => {
+  const obj3 = stage(width[15]);
+  checkpointCharacterLoadedTextureNames = obj3.useCheckpointCharacterLoadedTextureNames(memo1);
+  const items3 = [checkpointCharacterLoadedTextureNames, tmp5];
+  const memo2 = obj.useMemo(() => {
     const obj = CheckpointCharacterReferencedAssets;
-    return obj.getCheckpointCharacterReferencedAssets(checkpointCharacterLoadedTextureNames);
+    return obj.getCheckpointCharacterReferencedAssets(checkpointCharacterLoadedTextureNames, textureScale);
   }, items3);
-  const tmp9 = tmp2(stateFromStores[13])(memo2);
-  [tmp11, tmp12] = faceID(headwearID.useState(null), 2);
-  faceID(headwearID.useState(null), 2);
-  const obj3 = stage(stateFromStores[14]);
-  const checkpointCharacterTextureSwaps = obj3.useCheckpointCharacterTextureSwaps(tmp11, memo2, tmp9);
-  const obj4 = { style: tmp.container, accessible: true, accessibilityRole: "image", accessibilityLabel: obj5.getCheckpointCharacterAccessibilityLabel(stateFromStores), children: chapterID(stage(stateFromStores[16]).CheckpointCharacterRive, obj6) };
-  obj5 = stage(stateFromStores[15]);
-  obj6 = { artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp9, onRiveFileChange: tmp12, dataBinding: memo, style: tmp.rive };
-  return chapterID(shoesID, obj4);
+  const tmp12 = characterBottomInset(width[11])(memo2);
+  [tmp14, tmp15] = height(obj.useState(null), 2);
+  height(obj.useState(null), 2);
+  const obj4 = stage(width[16]);
+  const checkpointCharacterTextureSwaps = obj4.useCheckpointCharacterTextureSwaps(tmp14, memo2, tmp12);
+  let tmp19;
+  const tmp18 = textureScale;
+  if (isActive) {
+    tmp19 = context;
+  }
+  const obj5 = { ref: tmp19, style: tmp.container, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp6Result.getCheckpointCharacterAccessibilityLabel(stateFromStores), children: faceID(stage(width[18]).CheckpointCharacterRive, obj6) };
+  obj6 = { artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp12, onRiveFileChange: tmp15, dataBinding: memo, style: tmp.rive };
+  tmp6Result = stage(width[17]);
+  return faceID(tmp18, obj5);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/CheckpointCharacterStage.tsx");

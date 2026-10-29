@@ -1,12 +1,12 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16475
+// Function ID: 16476
 // Name: WebAuthnStore
-// Dependencies: [1997, 504, 584, 2]
+// Dependencies: [1998, 504, 584, 2]
 
-// Module 16237 (WebAuthnStore)
+// Module 16475 (WebAuthnStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Server from "Server" /* 1997 */;
+import Server from "Server" /* 1998 */;
 import size from "module_2" /* 2 */;
 
 let c2 = false;

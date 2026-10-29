@@ -60,7 +60,7 @@ const result = size.fileFinishedImporting("modules/build_overrides/BuildOverride
 
 export const APP_VERSION = Version;
 export { getAPIEndpoint };
-export const getBuildOverride = function getBuildOverride() {
+export function getBuildOverride() {
   let obj3;
   let resolved;
   const obj = URLUtilsDefault;
@@ -80,8 +80,8 @@ export const getBuildOverride = function getBuildOverride() {
     resolved = value.then((body) => body.body || null, () => null);
   }
   return resolved;
-};
-export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
+}
+export function getBuildOverrideMeta(url) {
   let obj3;
   let obj5;
   const isMatch = null != url && regExp1.test(url);
@@ -124,11 +124,11 @@ export const getBuildOverrideMeta = function getBuildOverrideMeta(url) {
     }
     return resolved;
   }
-};
-export const probablyHasBuildOverride = function probablyHasBuildOverride() {
+}
+export function probablyHasBuildOverride() {
   return -1 !== cookie.indexOf("" + closure_4 + "=");
-};
-export const getBuildOverrideExperiments = function getBuildOverrideExperiments() {
+}
+export function getBuildOverrideExperiments() {
   try {
     let obj2;
     const _window = window;
@@ -145,14 +145,14 @@ export const getBuildOverrideExperiments = function getBuildOverrideExperiments(
   } catch (err) {
     return {};
   }
-};
-export const isBuildOverrideLink = function isBuildOverrideLink(target) {
+}
+export function isBuildOverrideLink(target) {
   const isMatch = null != target && regExp.test(target);
   return isMatch;
-};
+}
 export { isManualBuildOverrideLink };
 export { manualOverrideLinkMeta };
-export const validateURL = function validateURL(url) {
+export function validateURL(url) {
   let obj3;
   const isMatch = null != url && regExp1.test(url);
   if (isMatch) {
@@ -184,4 +184,4 @@ export const validateURL = function validateURL(url) {
       return null;
     }
   }
-};
+}

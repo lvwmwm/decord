@@ -1,42 +1,44 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 11079
+// Function ID: 11080
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4946, 1389, 21, 5004, 587, 558, 576, 1381, 6944, 10696, 5270, 1199, 14260, 10723, 5288, 8539, 7111, 14261, 1125, 5640, 5705, 1414, 9167, 2]
+// Dependencies: [32, 19, 17, 4947, 1389, 21, 5005, 587, 558, 576, 1381, 6968, 10729, 5271, 1199, 11080, 10756, 5289, 8561, 7135, 11081, 1125, 5641, 5707, 1415, 9170, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 14259 (ChannelHeaderShared)
-import react_native from "react-native" /* 17 */;
+// Module 11079 (ChannelHeaderShared)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useToken from "useToken" /* 5288 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import Pressables from "Pressables" /* 6944 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7111 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import BotTagDefault from "BotTag" /* 9167 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10696 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10723 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14260 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 14261 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useToken from "useToken" /* 5289 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import Pressables from "Pressables" /* 6968 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7135 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import BotTagDefault from "BotTag" /* 9170 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10729 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10756 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11080 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11081 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import react_native from "react-native" /* 17 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
+let Platform;
 let c10;
 let c9;
+let hasOwnProperty;
 let metroImportAll;
-const View = react_native.View;
+({ View: hasOwnProperty, Platform } = react_native);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
 let c11 = 16;
 let closure_12 = createStyles.createStyles(() => {
@@ -95,7 +97,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TitleW
       tmp13 = tmp16;
     }
     const obj2 = { style: tmp4.wrapper, accessibilityRole: "header", children };
-    const tmp19 = metroImportAll(View, obj2);
+    const tmp19 = metroImportAll(hasOwnProperty, obj2);
     cResult[3] = children;
     cResult[4] = tmp4.wrapper;
     cResult[5] = tmp19;
@@ -159,7 +161,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TitleW
   }, []);
   if (null == onPress) {
     const obj2 = { style: tmp.wrapper, accessibilityRole: "header", children };
-    tmp6Result = metroImportAll(View, obj2);
+    tmp6Result = metroImportAll(hasOwnProperty, obj2);
   } else {
     const PressableOpacity = Pressables.PressableOpacity;
     let obj = PlatformUtils;
@@ -230,7 +232,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                       }
                       const obj2 = { style: tmp5.channelContent, children: items };
                       items = [tmp16, tmp20];
-                      const tmp27 = React4(View, obj2);
+                      const tmp27 = React4(hasOwnProperty, obj2);
                       cResult[18] = tmp5.channelContent;
                       cResult[19] = tmp16;
                       cResult[20] = tmp20;
@@ -240,7 +242,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                     let tmp21 = null != subtitle;
                     if (tmp21) {
                       const obj4 = { style: tmp5.subTitleContainer, children: subtitle };
-                      tmp21 = metroImportAll(View, obj4);
+                      tmp21 = metroImportAll(hasOwnProperty, obj4);
                     }
                     cResult[15] = tmp5.subTitleContainer;
                     cResult[16] = subtitle;
@@ -251,7 +253,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
               }
               const obj5 = { style: tmp5.nameWithArrow, children: items1 };
               items1 = [tmp6, tmp7, tmp12];
-              const tmp19 = React4(View, obj5);
+              const tmp19 = React4(hasOwnProperty, obj5);
               cResult[10] = tmp5.nameWithArrow;
               cResult[11] = tmp6;
               cResult[12] = tmp7;
@@ -280,7 +282,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(5270).Text, obj13);
+    tmp9 = metroImportAll(tmp(5271).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -333,14 +335,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp5Result = tmp5(Icon, obj6);
   }
   items[2] = tmp5Result;
-  items1 = [React4(View, obj2), ];
+  items1 = [React4(hasOwnProperty, obj2), ];
   let tmp5Result2 = null != subtitle;
   if (tmp5Result2) {
     const obj11 = { style: tmp.subTitleContainer, children: subtitle };
     tmp5Result2 = tmp5(tmp3, obj11);
   }
   items1[1] = tmp5Result2;
-  return React4(View, obj);
+  return React4(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMIcon(channel) {
@@ -527,7 +529,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(5270).Text, obj3);
+          tmp8 = metroImportAll(tmp(5271).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;
@@ -579,7 +581,31 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   return tmp4(tmp5, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentChannelSubTitle(channel) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubtitleText(arg0) {
+  let tmp4;
+  const obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] !== arg0) {
+    const obj2 = { variant: "text-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
+    const Text = Text_Text.Text;
+    const merged = Object.assign(arg0);
+    const tmp9 = metroImportAll(Text, obj2);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    tmp4 = tmp9;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (function SubtitleText(arg0) {
+  const obj = { variant: "text-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
+  const Text = Text_Text.Text;
+  const merged = Object.assign(arg0);
+  return metroImportAll(Text, obj);
+});
+let closure_19 = tmp4;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentChannelSubTitle(channel) {
   let tmp5;
   let tmp9;
   let tmpResult;
@@ -619,7 +645,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Parent
       return tmp13;
     }
   }
-  const tmp14 = metroImportAll(Text_Text.Text, { lineClamp: 1, accessibilityLabel: tmp5, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-subtle", style: parentChannelName, children: tmp9 });
+  const tmp14 = metroImportAll(closure_19, { lineClamp: 1, accessibilityLabel: tmp5, style: parentChannelName, children: tmp9 });
   cResult[4] = tmp4.parentChannelName;
   cResult[5] = tmp5;
   cResult[6] = tmp9;
@@ -633,19 +659,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Parent
   let obj4;
   let tmp;
   channel = channel.channel;
-  const obj = { lineClamp: 1, accessibilityLabel: formatToPlainString(BjYvHO, obj2), maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-subtle", style: tmp.parentChannelName, children: obj4.computeChannelName(channel, UserStore, RelationshipStore) };
+  const obj = { lineClamp: 1, accessibilityLabel: formatToPlainString(BjYvHO, obj2), style: tmp.parentChannelName, children: obj4.computeChannelName(channel, UserStore, RelationshipStore) };
   tmp = closure_12();
-  const Text = Text_Text.Text;
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { channelName: obj3.computeChannelName(channel, UserStore, RelationshipStore) };
   BjYvHO = intl2.t.BjYvHO;
   obj3 = useChannelName;
   obj4 = useChannelName;
-  return metroImportAll(Text, obj);
+  return metroImportAll(closure_19, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSubTitle(application) {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSubTitle(application) {
   let items;
   let obj12;
   let obj3;
@@ -693,7 +718,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
           }
           const obj5 = { style: tmp4.appSubTitle, children: items };
           items = [tmp7, tmp13, tmp16];
-          const tmp23 = React4(View, obj5);
+          const tmp23 = React4(hasOwnProperty, obj5);
           cResult[10] = tmp4.appSubTitle;
           cResult[11] = tmp7;
           cResult[12] = tmp13;
@@ -736,7 +761,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   const obj = ManaTypeConsolidationExperiment;
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("ChannelHeaderAppSubTitle");
   const tmp5 = React4;
-  const tmp6 = View;
+  const tmp6 = hasOwnProperty;
   if (null != application.icon) {
     const obj3 = { source: obj4.getApplicationIconSource(obj6), style: tmp.appIcon };
     obj6 = { id: null, icon: null, size: v16 };
@@ -758,7 +783,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSubTitleSkeleton() {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSubTitleSkeleton() {
   let items;
   let tmp3;
   let tmp7;
@@ -767,7 +792,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   const tmp2 = closure_12();
   if (cResult[0] !== tmp2.skeletonIcon) {
     const obj2 = { style: tmp2.skeletonIcon };
-    const tmp6 = metroImportAll(View, obj2);
+    const tmp6 = metroImportAll(hasOwnProperty, obj2);
     cResult[0] = tmp2.skeletonIcon;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -776,7 +801,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   }
   if (cResult[2] !== tmp2.skeletonName) {
     const obj3 = { style: tmp2.skeletonName };
-    const tmp10 = metroImportAll(View, obj3);
+    const tmp10 = metroImportAll(hasOwnProperty, obj3);
     cResult[2] = tmp2.skeletonName;
     cResult[3] = tmp10;
     tmp7 = tmp10;
@@ -794,7 +819,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   }
   const obj4 = { style: tmp2.appSubTitle, "aria-hidden": true, children: items };
   items = [tmp3, tmp7];
-  const tmp12 = React4(View, obj4);
+  const tmp12 = React4(hasOwnProperty, obj4);
   cResult[4] = tmp2.appSubTitle;
   cResult[5] = tmp3;
   cResult[6] = tmp7;
@@ -806,13 +831,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSub
   const obj = { style: tmp.appSubTitle, "aria-hidden": true, children: items };
   items = [, ];
   const obj2 = { style: tmp.skeletonIcon };
-  items[0] = metroImportAll(View, obj2);
+  items[0] = metroImportAll(hasOwnProperty, obj2);
   const obj3 = { style: tmp.skeletonName };
-  items[1] = metroImportAll(View, obj3);
-  return React4(View, obj);
+  items[1] = metroImportAll(hasOwnProperty, obj3);
+  return React4(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoAppSubTitle() {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoAppSubTitle() {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -859,14 +884,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoAppS
   return tmp5(Text, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyIcon() {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyIcon() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
   const tmp2 = closure_12();
   if (cResult[0] !== tmp2.channelIconWrapper) {
     const obj2 = { style: tmp2.channelIconWrapper };
-    const tmp6 = metroImportAll(View, obj2);
+    const tmp6 = metroImportAll(hasOwnProperty, obj2);
     cResult[0] = tmp2.channelIconWrapper;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -876,7 +901,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyI
   return tmp3;
 }) : (function EmptyIcon() {
   const obj = { style: closure_12().channelIconWrapper };
-  return metroImportAll(View, obj);
+  return metroImportAll(hasOwnProperty, obj);
 });
 function renderChannelIconRaw(icon, IconComponent) {
   const obj = { icon, IconComponent };
@@ -885,11 +910,11 @@ function renderChannelIconRaw(icon, IconComponent) {
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeaderShared.tsx");
 
-export const renderTitleWrapper = function renderTitleWrapper(tmp17Result, callback, combined, titleContentHeight) {
-  const obj = { onPress: callback, headerAccessibilityLabel: combined, titleContentHeight, children: tmp17Result };
+export function renderTitleWrapper(tmp22Result, callback, joined, titleContentHeight) {
+  const obj = { onPress: callback, headerAccessibilityLabel: joined, titleContentHeight, children: tmp22Result };
   return metroImportAll(closure_13, obj);
-};
-export const renderChannelTitle = function renderChannelTitle(visibleChannelName, arg1) {
+}
+export function renderChannelTitle(visibleChannelName, arg1) {
   let accessibleTitle;
   let subtitle;
   let obj = arg1;
@@ -904,30 +929,30 @@ export const renderChannelTitle = function renderChannelTitle(visibleChannelName
   }
   const obj2 = { title: visibleChannelName, accessibleTitle, subtitle, disableArrow: tmp, userId: obj.userId, guildId: obj.guildId, icon: obj.icon };
   return metroImportAll(closure_14, obj2);
-};
-export const renderGroupDMIcon = function renderGroupDMIcon(stateFromStores) {
+}
+export function renderGroupDMIcon(stateFromStores) {
   const obj = { channel: stateFromStores };
   return metroImportAll(closure_15, obj);
-};
-export const renderUserAvatar = function renderUserAvatar(stateFromStores1, status, isMobileOnline, isVROnline) {
+}
+export function renderUserAvatar(stateFromStores1, status, isMobileOnline, isVROnline) {
   const obj = { user: stateFromStores1, status, isMobileOnline, isVROnline };
   return metroImportAll(closure_16, obj);
-};
+}
 export { renderChannelIconRaw };
-export const renderChannelIcon = function renderChannelIcon(stateFromStores, stateFromStores3) {
+export function renderChannelIcon(id, rulesChannelId) {
   const obj = utils_ChannelUtils;
-  const channelIconWithGuild = obj.getChannelIconWithGuild(stateFromStores, stateFromStores3);
-  let rulesChannelId;
+  const channelIconWithGuild = obj.getChannelIconWithGuild(id, rulesChannelId);
+  rulesChannelId = undefined;
   const getChannelIconComponent = utils_ChannelUtils.getChannelIconComponent;
   utils_ChannelUtils;
-  if (stateFromStores3 != null) {
-    rulesChannelId = stateFromStores3.rulesChannelId;
+  if (rulesChannelId != null) {
+    rulesChannelId = rulesChannelId.rulesChannelId;
   }
-  const obj2 = { isRulesChannel: rulesChannelId === stateFromStores.id };
-  const obj3 = { icon: channelIconWithGuild, IconComponent: getChannelIconComponent(stateFromStores, obj2) };
+  const obj2 = { isRulesChannel: rulesChannelId === id.id };
+  const obj3 = { icon: channelIconWithGuild, IconComponent: getChannelIconComponent(id, obj2) };
   return metroImportAll(closure_17, obj3);
-};
-export const renderMemberCountText = function renderMemberCountText(online, total, flag, leadingAccessoryWidth) {
+}
+export function renderMemberCountText(online, total, flag, leadingAccessoryWidth) {
   let tmp;
   if (flag === undefined) {
     flag = false;
@@ -939,21 +964,22 @@ export const renderMemberCountText = function renderMemberCountText(online, tota
     tmp = null;
   }
   return tmp;
-};
-export const renderParentChannelSubTitle = function renderParentChannelSubTitle(parentChannel) {
+}
+export const SubtitleText = tmp4;
+export function renderParentChannelSubTitle(parentChannel) {
   const obj = { channel: parentChannel };
-  return metroImportAll(closure_19, obj);
-};
-export const renderAppSubTitle = function renderAppSubTitle(application, arg1) {
+  return metroImportAll(closure_20, obj);
+}
+export function renderAppSubTitle(appChannelApplication, arg1) {
   let tmp2;
-  if (null != application) {
-    const obj = { application };
-    tmp2 = metroImportAll(closure_20, obj);
+  if (null != appChannelApplication) {
+    const obj = { application: appChannelApplication };
+    tmp2 = metroImportAll(closure_21, obj);
   } else {
-    tmp2 = metroImportAll(arg1 ? closure_21 : closure_22, {});
+    tmp2 = metroImportAll(arg1 ? closure_22 : closure_23, {});
   }
   return tmp2;
-};
-export const renderEmptyIcon = function renderEmptyIcon() {
-  return metroImportAll(closure_23, {});
-};
+}
+export function renderEmptyIcon() {
+  return metroImportAll(closure_24, {});
+}

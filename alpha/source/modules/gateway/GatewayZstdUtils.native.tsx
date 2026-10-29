@@ -1,18 +1,18 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15459
+// Function ID: 15460
 // Name: react-native
-// Dependencies: [15225, 2]
+// Dependencies: [15460, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 15224 (react-native)
-import react_nativeDefault from "react-native" /* 15225 */;
+// Module 15459 (react-native)
+import react_nativeDefault from "react-native" /* 15460 */;
 import size from "module_2" /* 2 */;
 
 let constants;
 
 const result = size.fileFinishedImporting("modules/gateway/GatewayZstdUtils.native.tsx");
 
-export const supportsZstd = function supportsZstd() {
+export function supportsZstd() {
   const obj = react_nativeDefault;
   constants = obj.getConstants();
   let flag;
@@ -23,8 +23,8 @@ export const supportsZstd = function supportsZstd() {
     flag = false;
   }
   return flag;
-};
-export const createZstdContextWeb = function createZstdContextWeb() {
+}
+export function createZstdContextWeb() {
   const error = new Error("Attempting to use createZstdContextWeb in a native context. Use MobileGatewayCompressionHandler instead.");
   throw error;
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 18621
-// Function ID: 18622
+// Module ID: 18855
+// Function ID: 18856
 // Name: MessageRequestStoreUtils
 // Dependencies: [11, 2]
 // Exports: sortChannelIds
 
-// Module 18621 (MessageRequestStoreUtils)
+// Module 18855 (MessageRequestStoreUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/MessageRequestStoreUtils.tsx");
 
-export const sortChannelIds = function sortChannelIds(found) {
+export function sortChannelIds(found) {
   const sorted = found.sort((lastMessageId, lastMessageId2) => {
     const obj = SnowflakeUtilsDefault;
     return obj.compare(lastMessageId.lastMessageId, lastMessageId2.lastMessageId);
   });
   return sorted.reverse();
-};
+}

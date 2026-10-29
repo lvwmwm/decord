@@ -1,46 +1,44 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9189
+// Function ID: 9190
 // Name: CallsUtils
-// Dependencies: [32, 5, 19, 17, 6677, 4856, 2011, 4907, 5666, 5770, 9187, 7903, 9189, 5945, 1125, 7920, 5887, 5933, 1893, 7902, 6669, 12, 9190, 9191, 9192, 1381, 504, 9193, 9188, 11652, 5771, 558, 576, 2]
+// Dependencies: [32, 5, 19, 17, 6701, 4857, 2012, 4908, 5668, 5772, 9190, 7926, 9192, 5947, 1125, 7943, 5889, 5935, 1894, 7925, 6693, 12, 9193, 9194, 9195, 1381, 504, 9196, 9191, 11706, 5773, 558, 576, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert
 
-// Module 9186 (CallsUtils)
+// Module 9189 (CallsUtils)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl7 from "intl" /* 1125 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5887 */;
-import AVError from "AVError" /* 5933 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7902 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9190 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9191 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9192 */;
-import useIsVideoModeDefault from "useIsVideoMode" /* 11652 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5889 */;
+import AVError from "AVError" /* 5935 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7925 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9193 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9194 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9195 */;
+import useIsVideoModeDefault from "useIsVideoMode" /* 11706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
-import AudioRouteStore from "AudioRouteStore" /* 5770 */;
-import AudioManagerStore from "AudioManagerStore" /* 9187 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import AudioRouteStore from "AudioRouteStore" /* 5772 */;
+import AudioManagerStore from "AudioManagerStore" /* 9190 */;
 import module_12_mod from "module_12" /* 12 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, activeAudioDevice, importDefault;
+let _require, activeAudioDevice, c4, c5, importDefault;
 
 let obj = function _handleToggleVideo() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let c3;
-    let flag3;
     let formatToPlainString;
     let intl;
     let obj6;
@@ -48,62 +46,107 @@ let obj = function _handleToggleVideo() {
     let x9mtl4;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (1 === tmp4) {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c5 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c5 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        let closure_2 = closure_131_10.isVideoEnabled();
-        const obj11 = closure_131_0(closure_131_3[12]);
-        const channelVideoLimit = obj11.getChannelVideoLimit(closure_0);
-        const reachedLimit = channelVideoLimit.reachedLimit;
-        const limit = channelVideoLimit.limit;
-        if (reachedLimit) {
-          const tmp15 = flag3;
-          if (tmp15) {
-            const obj5 = { title: intl.string(closure_131_0(closure_131_3[14]).t["3ffmE+"]), body: formatToPlainString(x9mtl4, obj6) };
-            const show = closure_131_1(closure_131_3[13]).show;
-            const tmp19 = closure_131_1(closure_131_3[13]);
-            intl = closure_131_0(closure_131_3[14]).intl;
-            const intl2 = closure_131_0(closure_131_3[14]).intl;
-            formatToPlainString = intl2.formatToPlainString;
-            obj6 = { limit: limit.toString() };
-            x9mtl4 = closure_131_0(closure_131_3[14]).t.x9mtl4;
-            show(obj5);
-          }
-        } else if (closure_2) {
-          const tmp11Result = closure_131_1(closure_131_3[16]);
-          tmp11Result.setVideoEnabled(false);
-        } else {
-          let c4 = 2;
-          c5 = 1;
-          const obj7 = { value: tmp11Result2.requestPermission(closure_131_15.CAMERA), done: false };
-          tmp11Result2 = closure_131_1(closure_131_3[15]);
-          return obj7;
-        }
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } else if (arg0 === 1) {
-      c5 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c5 = 3;
-      const obj8 = { value, done: true };
-      return obj8;
-    } else if (value) {
-      obj = closure_131_1(closure_131_3[16]);
-      obj.setVideoEnabled(true);
+    } else {
+      try {
+        let closure_2;
+        let flag3;
+        let channelVideoLimit;
+        let reachedLimit;
+        let limit;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let c3 = 0;
+            closure_2 = tmp;
+            flag3 = closure_1;
+            if (closure_1 === undefined) {
+              flag3 = true;
+            }
+            closure_2 = undefined;
+            channelVideoLimit = undefined;
+            reachedLimit = undefined;
+            limit = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === tmp4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_2 = closure_131_10.isVideoEnabled();
+              const obj11 = closure_131_0(closure_131_3[12]);
+              channelVideoLimit = obj11.getChannelVideoLimit(closure_0);
+              reachedLimit = channelVideoLimit.reachedLimit;
+              limit = channelVideoLimit.limit;
+              if (reachedLimit) {
+                const tmp15 = flag3;
+                if (tmp15) {
+                  const obj5 = { title: intl.string(closure_131_0(closure_131_3[14]).t["3ffmE+"]), body: formatToPlainString(x9mtl4, obj6) };
+                  const show = closure_131_1(closure_131_3[13]).show;
+                  const tmp19 = closure_131_1(closure_131_3[13]);
+                  intl = closure_131_0(closure_131_3[14]).intl;
+                  const intl2 = closure_131_0(closure_131_3[14]).intl;
+                  formatToPlainString = intl2.formatToPlainString;
+                  obj6 = { limit: limit.toString() };
+                  x9mtl4 = closure_131_0(closure_131_3[14]).t.x9mtl4;
+                  show(obj5);
+                }
+              } else if (closure_2) {
+                const tmp11Result = closure_131_1(closure_131_3[16]);
+                tmp11Result.setVideoEnabled(false);
+              } else {
+                c4 = 2;
+                c5 = 1;
+                const obj7 = { value: tmp11Result2.requestPermission(closure_131_15.CAMERA), done: false };
+                tmp11Result2 = closure_131_1(closure_131_3[15]);
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else if (value) {
+            obj = closure_131_1(closure_131_3[16]);
+            obj.setVideoEnabled(true);
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp31) {
+        c5 = 3;
+        throw tmp31;
+      }
     }
-    await "IconComponent";
-    closure_2 = tmp;
-    flag3 = closure_1;
-    if (closure_1 === undefined) {
-      flag3 = true;
-    }
-    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -188,7 +231,7 @@ let tmp2 = PlatformUtils.isAndroid() ? (() => {
     }
     closure_3(isEnabled);
   }, items2);
-  const obj2 = { isAudioRouteEnabled, toggleAudio: callback, routeSource: isVideoMode(isBluetoothRoute ? 9191 : 9192) };
+  const obj2 = { isAudioRouteEnabled, toggleAudio: callback, routeSource: isVideoMode(isBluetoothRoute ? 9194 : 9195) };
   return obj2;
 });
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -218,7 +261,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const tmp9 = useIsVideoModeDefault();
   _require = tmp9;
-  let tmp10 = stateFromStores === tmp(5771).RouteTypes.SPEAKER;
+  let tmp10 = stateFromStores === tmp(5773).RouteTypes.SPEAKER;
   const tmp11 = stateFromStores === require("VoiceCallTypes").RouteTypes.BLUETOOTH;
   const tmp8 = importDefault;
   if (!tmp10) {
@@ -259,7 +302,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const effect = obj3.useEffect(tmp15, tmp16);
-      const tmp8Result = tmp8(tmp11 ? 9191 : 9192);
+      const tmp8Result = tmp8(tmp11 ? 9194 : 9195);
       if (cResult[10] === isAudioRouteEnabled) {
         class O {
           constructor() {
@@ -332,23 +375,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = react.useEffect(() => {
     closure_3(closure_1);
   }, items2);
-  const obj2 = { isAudioRouteEnabled, toggleAudio: callback, routeSource: tmp3(tmp6 ? 9191 : 9192) };
+  const obj2 = { isAudioRouteEnabled, toggleAudio: callback, routeSource: tmp3(tmp6 ? 9194 : 9195) };
   return obj2;
 });
 let result = size.fileFinishedImporting("modules/voice_calls/native/CallsUtils.tsx");
 
-export const handleToggleVideo = function handleToggleVideo() {
+export function handleToggleVideo() {
   return obj(...arguments);
-};
-export const handleToggleSelfDeaf = function handleToggleSelfDeaf() {
+}
+export function handleToggleSelfDeaf() {
   obj = AudioActionCreatorsDefault;
   obj.toggleSelfDeaf();
-};
-export const handleToggleSelfMute = function handleToggleSelfMute() {
+}
+export function handleToggleSelfMute() {
   obj = AudioActionCreatorsDefault;
   obj.toggleSelfMute();
-};
-export const showSuppressedAlert = function showSuppressedAlert() {
+}
+export function showSuppressedAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t.FJSZVM), body: intl2.string(intl7.t.etJjgW), hideActionSheet: false };
@@ -357,8 +400,8 @@ export const showSuppressedAlert = function showSuppressedAlert() {
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const showServerMuteAlert = function showServerMuteAlert() {
+}
+export function showServerMuteAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t["+JQCa/"]), body: intl2.string(intl7.t.hsNm7d), hideActionSheet: false };
@@ -367,8 +410,8 @@ export const showServerMuteAlert = function showServerMuteAlert() {
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const showServerDeafenAlert = function showServerDeafenAlert() {
+}
+export function showServerDeafenAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t.QZ7WSS), body: intl2.string(intl7.t.Tl9JpL), hideActionSheet: false };
@@ -377,8 +420,8 @@ export const showServerDeafenAlert = function showServerDeafenAlert() {
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const showCameraDisabledAlert = function showCameraDisabledAlert() {
+}
+export function showCameraDisabledAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t.OYzPcW), body: intl2.string(intl7.t.oBH7Y2), hideActionSheet: false };
@@ -387,8 +430,8 @@ export const showCameraDisabledAlert = function showCameraDisabledAlert() {
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const showScreenshareDisabledAlert = function showScreenshareDisabledAlert() {
+}
+export function showScreenshareDisabledAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t["/x4knx"]), body: intl2.string(intl7.t.PpfzUE), hideActionSheet: false };
@@ -397,8 +440,8 @@ export const showScreenshareDisabledAlert = function showScreenshareDisabledAler
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const showMinOSScreenshareRequirementAlert = function showMinOSScreenshareRequirementAlert() {
+}
+export function showMinOSScreenshareRequirementAlert() {
   let intl2;
   let intl3;
   const intl = intl7.intl;
@@ -417,8 +460,8 @@ export const showMinOSScreenshareRequirementAlert = function showMinOSScreenshar
   intl2 = tmp(1125).intl;
   intl3 = tmp(1125).intl;
   show(obj2);
-};
-export const showTabletRequirementAlert = function showTabletRequirementAlert() {
+}
+export function showTabletRequirementAlert() {
   let intl;
   let intl2;
   obj = { title: intl.string(intl7.t["1N0dxa"]), body: intl2.string(intl7.t.qqDFVb), hideActionSheet: false };
@@ -427,8 +470,8 @@ export const showTabletRequirementAlert = function showTabletRequirementAlert() 
   intl = intl7.intl;
   intl2 = intl7.intl;
   show(obj);
-};
-export const handleDisconnect = function handleDisconnect(channel) {
+}
+export function handleDisconnect(channel) {
   obj = KeyboardManagerUtilsAll;
   const result = obj.dismissGlobalKeyboard();
   const obj2 = PrivateChannelCallUtils;
@@ -436,9 +479,9 @@ export const handleDisconnect = function handleDisconnect(channel) {
     obj = SelectedChannelActionCreatorsDefault;
     const voiceChannel = obj.selectVoiceChannel(null);
   });
-};
+}
 export const audioDeviceToIconMap = obj;
-export const getAudioDeviceToDisplayText = function getAudioDeviceToDisplayText(deviceType) {
+export function getAudioDeviceToDisplayText(deviceType) {
   let intl;
   let intl2;
   let intl3;
@@ -458,6 +501,6 @@ export const getAudioDeviceToDisplayText = function getAudioDeviceToDisplayText(
     stringResult = obj[deviceType.simpleDeviceType];
   }
   return stringResult;
-};
+}
 export const useMaskedSpeakerStates = tmp2;
 export const useImmediateMaskedSpeakerStates = tmp3;

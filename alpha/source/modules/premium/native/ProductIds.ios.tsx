@@ -1,11 +1,11 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7585
+// Function ID: 7586
 // Name: premium/ProductIds
-// Dependencies: [1391, 7563, 2]
+// Dependencies: [1391, 7586, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7562 (premium/ProductIds)
-import AppleProductIds from "AppleProductIds" /* 7563 */;
+// Module 7585 (premium/ProductIds)
+import AppleProductIds from "AppleProductIds" /* 7586 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ export const AppStorePremiumProductIdsToPremiumBundledItems = { [frozen.PREMIUM_
 export const TrialIdToProductOfferId = { [PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium_tier_2_monthly_likelihood", [frozen.PREMIUM_TIER_2_YEARLY]: "premium_tier_2_yearly_likelihood" }, [PREMIUM_TIER_2_REACTIVATION_TRIAL_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium_tier_2_monthly_reactivation", [frozen.PREMIUM_TIER_2_YEARLY]: "premium_tier_2_yearly_reactivation" }, [PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID]: { [frozen.PREMIUM_TIER_0_MONTHLY]: "premium_tier_0_monthly_likelihood", [frozen.PREMIUM_TIER_0_YEARLY]: "premium_tier_0_yearly_likelihood" }, [PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium_tier_2_monthly_q4_drop", [frozen.PREMIUM_TIER_2_YEARLY]: "premium_tier_2_yearly_q4_drop" }, [PREMIUM_TIER_2_REFERRAL_TRIAL_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium_tier_2_monthly_referral_trial", [frozen.PREMIUM_TIER_2_YEARLY]: "premium_tier_2_yearly_referral_trial" }, [PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium_tier_2_monthly_hfu_two_week_trial", [frozen.PREMIUM_TIER_2_YEARLY]: "premium_tier_2_yearly_hfu_two_week_trial" } };
 export const DiscountIdToProductOfferId = { [PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium-tier-2-monthly-likelihood-discount" }, [PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID]: { [frozen.PREMIUM_TIER_2_MONTHLY]: "premium-tier-2-monthly-reengagement-discount" } };
 export const BOGO_OFFER_ID = "premium-tier-2-monthly-bogo";
-export const getProductIdForGift = function getProductIdForGift(arg0) {
+export function getProductIdForGift(arg0) {
   if (SubscriptionPlans.PREMIUM_MONTH_TIER_0 === arg0) {
     return frozen.PREMIUM_GIFT_MONTH_TIER_0;
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_0 === arg0) {
@@ -158,8 +158,8 @@ export const getProductIdForGift = function getProductIdForGift(arg0) {
     const error = new Error("Tried to get Product for Plan not configured for IAP!");
     throw error;
   }
-};
-export const getPlanIdForGift = function getPlanIdForGift(arg0) {
+}
+export function getPlanIdForGift(arg0) {
   if (frozen.PREMIUM_GIFT_MONTH_TIER_0 === arg0) {
     return SubscriptionPlans.PREMIUM_MONTH_TIER_0;
   } else if (frozen.PREMIUM_GIFT_YEAR_TIER_0 === arg0) {
@@ -179,4 +179,4 @@ export const getPlanIdForGift = function getPlanIdForGift(arg0) {
     const error = new Error("Tried to get Plan for Product not configured for IAP!");
     throw error;
   }
-};
+}

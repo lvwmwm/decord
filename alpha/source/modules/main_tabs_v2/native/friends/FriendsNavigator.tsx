@@ -1,23 +1,26 @@
-// Module ID: 18485
-// Function ID: 18486
+// Module ID: 18719
+// Function ID: 18720
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 9777, 5004, 587, 558, 576, 1125, 9739, 9733, 13756, 7619, 7131, 18486, 18492, 18495, 18496, 18497, 18508, 18509, 18510, 18512, 18515, 18516, 5182, 1630, 5070, 2]
+// Dependencies: [109, 19, 17, 21, 9809, 5005, 587, 558, 576, 1125, 9771, 9765, 13989, 7642, 7155, 18720, 18726, 18729, 18730, 18731, 18742, 18743, 18744, 18746, 18749, 18750, 5183, 1631, 7098, 4962, 5071, 2]
 
-// Module 18485 (FriendsNavigator)
+// Module 18719 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5182 */;
-import HeaderShared from "HeaderShared" /* 9733 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9739 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13756 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import DeviceUtils from "DeviceUtils" /* 4962 */;
+import native from "native" /* 5071 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5183 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7098 */;
+import HeaderShared from "HeaderShared" /* 9765 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9771 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13989 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +31,6 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
-let tmp;
-const native = tmp(5070);
 let closure_3 = ["children"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -61,7 +62,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reques
     const obj2 = { isModal: true, children: metroImportDefault(HeaderIconButton, obj3) };
     obj3 = { source: AssetRegistryDefault, onPress, accessibilityLabel: first };
     const tmp9 = PressableNavigatorButtonWrapperDefault;
-    HeaderIconButton = tmp(9733).HeaderIconButton;
+    HeaderIconButton = tmp(9765).HeaderIconButton;
     const tmp10 = metroImportDefault(tmp9, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;
@@ -125,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(7131);
+  const tmpResult = tmp(7155);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === accessibilityNativeStackOptions) {
     let tmp9;
@@ -670,83 +671,149 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
   return closure_8(Navigator, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedFriendsNavigator() {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedFriendsNavigator(route) {
   let left;
   let right;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(16);
+  route = route.route;
   const tmp4 = useColorThemeBackgroundDefault();
   ({ left, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  const tmp6 = closure_10();
-  if (cResult[0] === left) {
+  const tmp6 = useIsWindowLargeDefault();
+  const params = route.params;
+  let str;
+  if (params != null) {
+    const params2 = params.params;
+    if (params2 != null) {
+      str = params2.presentation;
+    }
+  }
+  if (str == null) {
+    str = "modal";
+  }
+  if (cResult[0] === tmp6) {
     let tmp7;
-    if (cResult[1] === right) {
+    if (cResult[1] === str) {
       tmp7 = cResult[2];
     }
-    if (cResult[3] === tmp6.container) {
-      let tmp8;
-      let tmp10;
-      let tmp14;
-      if (cResult[4] === tmp7) {
-        tmp8 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp13 = metroImportDefault(closure_12, {});
-        cResult[6] = tmp13;
-        tmp10 = tmp13;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] !== tmp8) {
-        const obj2 = { style: tmp8, children: tmp10 };
-        const tmp17 = metroImportDefault(View, obj2);
-        cResult[7] = tmp8;
-        cResult[8] = tmp17;
-        tmp14 = tmp17;
-      } else {
-        tmp14 = cResult[8];
-      }
-      if (cResult[9] === tmp4) {
-        let tmp18;
-        if (cResult[10] === tmp14) {
-          tmp18 = cResult[11];
+    const tmp10 = closure_10();
+    if (cResult[3] === tmp7) {
+      if (cResult[4] === left) {
+        let tmp11;
+        if (cResult[5] === right) {
+          tmp11 = cResult[6];
         }
-        return tmp18;
+        if (cResult[7] === tmp10.container) {
+          let tmp13;
+          let tmp15;
+          let tmp19;
+          if (cResult[8] === tmp11) {
+            tmp13 = cResult[9];
+          }
+          const _Symbol = Symbol;
+          if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+            const tmp18 = metroImportDefault(closure_12, {});
+            cResult[10] = tmp18;
+            tmp15 = tmp18;
+          } else {
+            tmp15 = cResult[10];
+          }
+          if (cResult[11] !== tmp13) {
+            const obj2 = { style: tmp13, children: tmp15 };
+            const tmp22 = metroImportDefault(View, obj2);
+            cResult[11] = tmp13;
+            cResult[12] = tmp22;
+            tmp19 = tmp22;
+          } else {
+            tmp19 = cResult[12];
+          }
+          if (cResult[13] === tmp4) {
+            let tmp23;
+            if (cResult[14] === tmp19) {
+              tmp23 = cResult[15];
+            }
+            return tmp23;
+          }
+          const obj3 = { gradient: tmp4, children: tmp19 };
+          const tmp25 = metroImportDefault(native.ThemeContextProvider, obj3);
+          cResult[13] = tmp4;
+          cResult[14] = tmp19;
+          cResult[15] = tmp25;
+          tmp23 = tmp25;
+        }
+        const items = [tmp10.container, tmp11];
+        cResult[7] = tmp10.container;
+        cResult[8] = tmp11;
+        cResult[9] = items;
+        tmp13 = items;
       }
-      const obj3 = { gradient: tmp4, children: tmp14 };
-      const tmp20 = metroImportDefault(native.ThemeContextProvider, obj3);
-      cResult[9] = tmp4;
-      cResult[10] = tmp14;
-      cResult[11] = tmp20;
-      tmp18 = tmp20;
     }
-    const items = [tmp6.container, tmp7];
-    cResult[3] = tmp6.container;
-    cResult[4] = tmp7;
-    cResult[5] = items;
-    tmp8 = items;
+    let tmp12 = !tmp7;
+    if (tmp12) {
+      tmp12 = { paddingLeft: left, paddingRight: right };
+      const obj4 = { paddingLeft: left, paddingRight: right };
+    }
+    cResult[3] = tmp7;
+    cResult[4] = left;
+    cResult[5] = right;
+    cResult[6] = tmp12;
+    tmp11 = tmp12;
   }
-  const obj4 = { paddingLeft: left, paddingRight: right };
-  cResult[0] = left;
-  cResult[1] = right;
-  cResult[2] = obj4;
-  tmp7 = obj4;
-}) : (function ThemedFriendsNavigator() {
-  let items;
+  let isIpadOSResult = tmp6;
+  if (isIpadOSResult) {
+    const tmpResult = DeviceUtils;
+    isIpadOSResult = tmpResult.isIpadOS();
+  }
+  if (isIpadOSResult) {
+    isIpadOSResult = "modal" === str;
+  }
+  cResult[0] = tmp6;
+  cResult[1] = str;
+  cResult[2] = isIpadOSResult;
+  tmp7 = isIpadOSResult;
+}) : (function ThemedFriendsNavigator(route) {
   let left;
-  let obj2;
+  let obj4;
   let right;
-  const tmp = useColorThemeBackgroundDefault();
+  let tmp9;
+  route = route.route;
+  const tmp2 = useColorThemeBackgroundDefault();
   ({ left, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  const obj = { gradient: tmp, children: metroImportDefault(View, obj2) };
-  obj2 = { style: items, children: metroImportDefault(closure_12, {}) };
-  items = [closure_10().container, { paddingLeft: left, paddingRight: right }];
+  const params = route.params;
+  let str;
+  const tmp4 = useIsWindowLargeDefault();
+  if (params != null) {
+    const params2 = params.params;
+    if (params2 != null) {
+      str = params2.presentation;
+    }
+  }
+  if (str == null) {
+    str = "modal";
+  }
+  let isIpadOSResult = tmp4;
+  if (isIpadOSResult) {
+    const obj = DeviceUtils;
+    isIpadOSResult = obj.isIpadOS();
+  }
+  if (isIpadOSResult) {
+    isIpadOSResult = "modal" === str;
+  }
+  const obj2 = { gradient: tmp2, children: metroImportDefault(tmp9, obj4) };
+  const items = [closure_10().container, ];
+  let tmp10 = !isIpadOSResult;
   closure_10();
   const ThemeContextProvider = native.ThemeContextProvider;
-  return metroImportDefault(ThemeContextProvider, obj);
+  tmp9 = View;
+  if (!isIpadOSResult) {
+    tmp10 = { paddingLeft: left, paddingRight: right };
+    const obj3 = { paddingLeft: left, paddingRight: right };
+  }
+  items[1] = tmp10;
+  obj4 = { style: items, children: metroImportDefault(closure_12, {}) };
+  return metroImportDefault(ThemeContextProvider, obj2);
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/FriendsNavigator.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 18933
-// Function ID: 18934
+// Module ID: 19166
+// Function ID: 19167
 // Name: JankVoicePanelTabReporter
-// Dependencies: [32, 19, 10939, 10937, 17714, 558, 576, 5085, 2]
+// Dependencies: [32, 19, 10974, 10972, 17952, 558, 576, 5086, 2]
 // Exports: reportJankVoicePanelTabRequest
 
-// Module 18933 (JankVoicePanelTabReporter)
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10937 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17714 */;
+// Module 19166 (JankVoicePanelTabReporter)
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17952 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -287,7 +287,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankVoicePanelTabReporter.native.tsx");
 
 export default memoResult;
-export const reportJankVoicePanelTabRequest = function reportJankVoicePanelTabRequest(disableControlsUpdate, disableControlsUpdate2, arg2) {
+export function reportJankVoicePanelTabRequest(disableControlsUpdate, disableControlsUpdate2, arg2) {
   let controlsProps;
   let tab;
   ({ tab, controlsProps } = disableControlsUpdate);
@@ -340,4 +340,4 @@ export const reportJankVoicePanelTabRequest = function reportJankVoicePanelTabRe
     }
     setJankVoicePanelTab(disableControlsUpdate, tmp10);
   }
-};
+}

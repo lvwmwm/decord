@@ -1,14 +1,14 @@
-// Module ID: 15363
-// Function ID: 15364
+// Module ID: 15597
+// Function ID: 15598
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [4878, 5035, 15364, 558, 576, 504, 2]
+// Dependencies: [4879, 5036, 15598, 558, 576, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow
 
-// Module 15363 (MidjourneyOnboardingUtils)
+// Module 15597 (MidjourneyOnboardingUtils)
 import react from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15364 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15598 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ const result = size.fileFinishedImporting("modules/midjourney_onboarding/Midjour
 
 export { isMidjourneyOnboardingFlow };
 export const useIsMidjourneyOnboardingFlow = tmp3;
-export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyRedirect(channel) {
+export function isEligibleForMidjourneyRedirect(channel) {
   let isDMResult = channel.isDM() && 1 === channel.rawRecipients.length && channel.rawRecipients[0].id === React3;
   if (isDMResult) {
     let guildStore = {}.guildStore;
@@ -129,8 +129,8 @@ export const isEligibleForMidjourneyRedirect = function isEligibleForMidjourneyR
     1 === guildStore.getGuildCount() && tmp8;
   }
   return isDMResult;
-};
-export const hasRedirectedToGuild = function hasRedirectedToGuild(arg0) {
+}
+export function hasRedirectedToGuild(arg0) {
   let guildId;
   let closure_0 = arg0;
   const promise = new Promise((fn, arg1) => {
@@ -160,4 +160,4 @@ export const hasRedirectedToGuild = function hasRedirectedToGuild(arg0) {
     }
   });
   return promise;
-};
+}

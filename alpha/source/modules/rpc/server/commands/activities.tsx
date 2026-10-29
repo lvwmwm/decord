@@ -1,14 +1,14 @@
-// Module ID: 16031
-// Function ID: 16032
+// Module ID: 16268
+// Function ID: 16269
 // Name: activities
-// Dependencies: [5, 1084, 15987, 15977, 11520, 2028, 9296, 9290, 6813, 6812, 10767, 2]
+// Dependencies: [5, 1084, 16215, 16214, 11574, 2029, 9300, 9294, 6836, 6835, 10842, 2]
 
-// Module 16031 (activities)
-import RPCHelpers from "RPCHelpers" /* 11520 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15977 */;
+// Module 16268 (activities)
+import RPCHelpers from "RPCHelpers" /* 11574 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16214 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15987 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16215 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;
@@ -50,7 +50,7 @@ let obj3 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;

@@ -1,18 +1,18 @@
-// Module ID: 19746
-// Function ID: 19747
+// Module ID: 19968
+// Function ID: 19969
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 5004, 558, 576, 1125, 2833, 7918, 6692, 5270, 2]
+// Dependencies: [19, 21, 5005, 558, 576, 1125, 2834, 7941, 6716, 5271, 2]
 
-// Module 19746 (AgeUpdateFooter)
+// Module 19968 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import _modDef2833 from "module_2833" /* 2833 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
+import _modDef2834 from "module_2834" /* 2834 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeUpdateF
           return obj.showAgeVerificationGetStartedModal(obj2);
         }
     };
-    const formatResult = intl.format(_modDef2833.ifObbX, obj2);
+    const formatResult = intl.format(_modDef2834.ifObbX, obj2);
     cResult[0] = formatResult;
     first = formatResult;
   } else {
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeUpdateF
       return obj.showAgeVerificationGetStartedModal(obj2);
     }
   };
-  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2833.ifObbX, obj2)}</Text>;
+  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2834.ifObbX, obj2)}</Text>;
 });
 const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
 

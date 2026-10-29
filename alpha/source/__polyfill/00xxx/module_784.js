@@ -10,7 +10,7 @@ import _mod724 from "module_724" /* 724 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
+export function addBreadcrumb(arg0, arg1) {
   let tmpResult;
   let closure_0 = arg1;
   const obj = _mod724;
@@ -46,4 +46,4 @@ export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
       }
     }
   }
-};
+}

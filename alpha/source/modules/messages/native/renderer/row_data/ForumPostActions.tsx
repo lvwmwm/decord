@@ -1,19 +1,19 @@
-// Module ID: 8311
-// Function ID: 8312
+// Module ID: 8333
+// Function ID: 8334
 // Name: ForumPostActions
-// Dependencies: [1084, 8309, 6956, 8312, 1254, 5715, 1125, 2064, 8313, 7220, 1414, 8314, 4948, 4954, 2]
+// Dependencies: [1084, 8331, 6980, 8334, 1254, 5717, 1125, 2065, 8335, 7244, 1415, 8336, 4949, 4955, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 8311 (ForumPostActions)
+// Module 8333 (ForumPostActions)
 import Constants from "Constants" /* 1084 */;
-import ReactionUtils from "ReactionUtils" /* 4948 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
+import ReactionUtils from "ReactionUtils" /* 4949 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/ForumPostActions.tsx");
 
-export const createDefaultReaction = function createDefaultReaction(arg0) {
+export function createDefaultReaction(arg0) {
   let customGuildEmoji;
   let defaultReactionEmoji;
   let obj2;
@@ -77,8 +77,8 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
     const obj10 = { emoji: tmp, me: false, count: 0 };
   }
   return tmp8;
-};
-export const createForumPostActions = function createForumPostActions(arg0) {
+}
+export function createForumPostActions(arg0) {
   let YtCu5p;
   let assetUriForEmbed;
   let defaultReaction;
@@ -102,22 +102,22 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   const getAssetUriForEmbed = renderer_EmbedUtils.getAssetUriForEmbed;
   renderer_EmbedUtils;
   if (isFollowing) {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(6956));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(6980));
     tmp6 = tmp4;
     tmp8 = tmp;
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(8312));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(8334));
     tmp6 = tmp4;
     tmp8 = tmp;
   }
   if (null == assetUriForEmbed) {
     const _HermesInternal = HermesInternal;
     const tmp6Result = tmp6(1254);
-    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 6956 : 8312));
+    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 6980 : 8334));
   }
   let stringResult;
-  const tmp8Result = tmp8(8309);
-  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(5715));
+  const tmp8Result = tmp8(8331);
+  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(5717));
   if (!hasReactions) {
     let emoji;
     if (defaultReaction != null) {
@@ -130,18 +130,18 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   }
   let tmp14;
   if (showMediaPostSharePrompt) {
-    const obj = { title: intl2.string(tmp8(1125).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1125).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(8313)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7220)) };
+    const obj = { title: intl2.string(tmp8(1125).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1125).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(8335)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7244)) };
     intl2 = tmp8(1125).intl;
     const intl3 = tmp8(1125).intl;
     formatToParts = intl3.formatToParts;
     obj2 = { helpArticleUrl: obj3 };
     obj3 = { url: tmp6Result2.getCreatorSupportArticleURL(HelpdeskArticles.MEDIA_CHANNEL) };
     YtCu5p = tmp8(1125).t.YtCu5p;
-    tmp6Result2 = tmp6(2064);
+    tmp6Result2 = tmp6(2065);
     intl4 = tmp8(1125).intl;
-    tmp8Result3 = tmp8(8309);
+    tmp8Result3 = tmp8(8331);
     tmp14 = obj;
-    tmp8Result4 = tmp8(8309);
+    tmp8Result4 = tmp8(8331);
   }
   const obj4 = { numDisplayedReactions: 3, isFollowing, followIcon: assetUriForEmbed, followLabel: stringResult1, shareIcon: assetUriForEmbed1, shareLabel: intl6.string(tmp8(1125).t.Ej3B3Y), defaultReaction, addReactLabel: stringResult, sharePrompt: tmp14 };
   const intl5 = tmp8(1125).intl;
@@ -154,4 +154,4 @@ export const createForumPostActions = function createForumPostActions(arg0) {
   }
   intl6 = tmp8(1125).intl;
   return obj4;
-};
+}

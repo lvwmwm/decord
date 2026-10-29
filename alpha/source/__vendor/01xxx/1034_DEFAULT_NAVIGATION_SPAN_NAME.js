@@ -145,24 +145,24 @@ export const startIdleNavigationSpan = (arg0) => {
   }
 };
 export { startIdleSpan };
-export const getDefaultIdleNavigationSpanOptions = function getDefaultIdleNavigationSpanOptions() {
+export function getDefaultIdleNavigationSpanOptions() {
   let obj2;
   const obj = { name, op: "navigation", forceTransaction: true, scope: obj2.getCurrentScope() };
   obj2 = _mod693;
   return obj;
-};
-export const isSentryInteractionSpan = function isSentryInteractionSpan(activeSpan) {
+}
+export function isSentryInteractionSpan(activeSpan) {
   const items = [SPAN_ORIGIN_AUTO_INTERACTION.SPAN_ORIGIN_AUTO_INTERACTION, SPAN_ORIGIN_AUTO_INTERACTION.SPAN_ORIGIN_MANUAL_INTERACTION];
   const includes = items.includes;
   const obj = _mod693;
   const tmp = obj.spanToJSON(activeSpan).origin || "";
   return includes(tmp);
-};
+}
 export const SCOPE_SPAN_FIELD = "_sentrySpan";
-export const clearActiveSpanFromScope = function clearActiveSpanFromScope(currentScope) {
+export function clearActiveSpanFromScope(currentScope) {
   delete currentScope[_sentrySpan];
-};
-export const addDefaultOpForSpanFrom = function addDefaultOpForSpanFrom(on) {
+}
+export function addDefaultOpForSpanFrom(on) {
   on.on("spanStart", (setAttribute) => {
     const obj = _mod693;
     const tmp = require;
@@ -171,11 +171,11 @@ export const addDefaultOpForSpanFrom = function addDefaultOpForSpanFrom(on) {
       const attr = setAttribute.setAttribute(tmp(tmp2[1]).SEMANTIC_ATTRIBUTE_SENTRY_OP, "default");
     }
   });
-};
+}
 export const SPAN_THREAD_NAME = "thread.name";
 export const SPAN_THREAD_NAME_MAIN = "main";
 export const SPAN_THREAD_NAME_JAVASCRIPT = "javascript";
-export const addThreadInfoToSpan = function addThreadInfoToSpan(on) {
+export function addThreadInfoToSpan(on) {
   on.on("spanStart", (setAttribute) => {
     const obj = _mod693;
     const data = obj.spanToJSON(setAttribute).data;
@@ -189,9 +189,9 @@ export const addThreadInfoToSpan = function addThreadInfoToSpan(on) {
       const attr = setAttribute.setAttribute(closure_1_7, javascript);
     }
   });
-};
-export const setMainThreadInfo = function setMainThreadInfo(childSpanJSON2) {
+}
+export function setMainThreadInfo(childSpanJSON2) {
   childSpanJSON2.data = childSpanJSON2.data || {};
   childSpanJSON2.data[c7] = main;
   return childSpanJSON2;
-};
+}

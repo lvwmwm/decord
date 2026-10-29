@@ -1,15 +1,15 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 15058
+// Function ID: 15059
 // Name: usePresenceActivityInviteCoverImageURL
-// Dependencies: [19, 14824, 1897, 8657, 558, 576, 504, 14825, 2]
+// Dependencies: [19, 15059, 1898, 8679, 558, 576, 504, 15060, 2]
 // Exports: getPresenceActivityInviteCoverImageURL
 
-// Module 14823 (usePresenceActivityInviteCoverImageURL)
-import react_nativeDefault from "react-native" /* 1897 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8657 */;
-import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 14825 */;
+// Module 15058 (usePresenceActivityInviteCoverImageURL)
+import react_nativeDefault from "react-native" /* 1898 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8679 */;
+import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 15060 */;
 import react from "react" /* 19 */;
-import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 14824 */;
+import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 15059 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageId) => {
 let result = size.fileFinishedImporting("modules/activities/utils/usePresenceActivityInviteCoverImageURL.tsx");
 
 export const usePresenceActivityInviteCoverImageURL = tmp2;
-export const getPresenceActivityInviteCoverImageURL = function getPresenceActivityInviteCoverImageURL(messageId) {
+export function getPresenceActivityInviteCoverImageURL(messageId) {
   messageId = messageId.messageId;
   const obj = { messageId, presenceActivity: messageId.presenceActivity, application: messageId.application };
   const tmp = _getPresenceActivityInviteCoverImageURL(obj);
@@ -159,4 +159,4 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
     obj2.setCoverImageURL(obj3);
   }
   return imageURL;
-};
+}

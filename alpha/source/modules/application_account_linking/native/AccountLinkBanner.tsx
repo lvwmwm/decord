@@ -1,21 +1,21 @@
-// Module ID: 17899
-// Function ID: 17900
+// Module ID: 18137
+// Function ID: 18138
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1389, 4853, 21, 587, 7297, 11098, 5286, 5004, 558, 576, 573, 7289, 7314, 6967, 6944, 1199, 1125, 5270, 9369, 5280, 6941, 2]
+// Dependencies: [19, 17, 1389, 4854, 21, 587, 7321, 11152, 5287, 5005, 558, 576, 573, 7313, 7338, 6991, 6968, 1199, 1125, 5271, 9401, 5281, 6965, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 17899 (AccountLinkBanner)
+// Module 18137 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import ButtonConstants from "ButtonConstants" /* 5286 */;
-import GameIcon from "GameIcon" /* 7297 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11098 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import ButtonConstants from "ButtonConstants" /* 5287 */;
+import GameIcon from "GameIcon" /* 7321 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -248,7 +248,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
     const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);
@@ -308,11 +308,11 @@ const result = size.fileFinishedImporting("modules/application_account_linking/n
 export default memoResult;
 export const ACCOUNT_LINK_BANNER_MARGIN_TOP = PX_8;
 export const ACCOUNT_LINK_BANNER_MARGIN_BOTTOM = PX_82;
-export const getScaledAccountLinkBannerHeight = function getScaledAccountLinkBannerHeight(fontScale) {
+export function getScaledAccountLinkBannerHeight(fontScale) {
   const sum = PX_8 + PX_12 + closure_14 + PX_16;
   const obj = useScaledTextLineHeight;
   const sum1 = sum + obj.scaleTextLineHeight(c15, fontScale) + PX_4;
   const obj2 = useScaledTextLineHeight;
   const sum2 = sum1 + 2 * obj2.scaleTextLineHeight(c16, fontScale) + PX_162;
   return sum2 + ButtonConstants.MEDIUM_BUTTON_HEIGHT + PX_12 + PX_82;
-};
+}

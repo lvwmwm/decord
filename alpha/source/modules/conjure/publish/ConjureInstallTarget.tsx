@@ -1,11 +1,11 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11855
+// Function ID: 11856
 // Name: ConjureInstallTarget
-// Dependencies: [5, 10757, 2]
+// Dependencies: [5, 10832, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 11801 (ConjureInstallTarget)
-import ConjureActionCreators from "ConjureActionCreators" /* 10757 */;
+// Module 11855 (ConjureInstallTarget)
+import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _repairConjureGuildHints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _repairConjureGuildHints() {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp7) {
           c2 = 3;
           throw tmp7;
@@ -69,7 +69,7 @@ let obj = function _repairConjureGuildHints() {
 };
 const result = size.fileFinishedImporting("modules/conjure/publish/ConjureInstallTarget.tsx");
 
-export const conjureInstallGuildId = function conjureInstallGuildId(project, integrationStatus, guildId) {
+export function conjureInstallGuildId(project, integrationStatus, guildId) {
   let prop;
   if (integrationStatus != null) {
     prop = integrationStatus.integration_installed;
@@ -86,7 +86,7 @@ export const conjureInstallGuildId = function conjureInstallGuildId(project, int
     }
   }
   return guild_id;
-};
-export const repairConjureGuildHints = function repairConjureGuildHints() {
+}
+export function repairConjureGuildHints() {
   return obj(...arguments);
-};
+}

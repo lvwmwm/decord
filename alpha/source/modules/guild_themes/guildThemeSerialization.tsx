@@ -1,15 +1,15 @@
-// Module ID: 4877
-// Function ID: 4878
+// Module ID: 4878
+// Function ID: 4879
 // Name: guildThemeSerialization
 // Dependencies: [2]
 // Exports: cloneGuildTheme, cloneGuildThemeSettings, fromServerGuildTheme, fromServerGuildThemeSettings, toServerGuildThemeSettings
 
-// Module 4877 (guildThemeSerialization)
+// Module 4878 (guildThemeSerialization)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/guildThemeSerialization.tsx");
 
-export const cloneGuildThemeSettings = function cloneGuildThemeSettings(themeSettings) {
+export function cloneGuildThemeSettings(themeSettings) {
   let customUserThemeSettings;
   let items;
   let items1;
@@ -35,8 +35,8 @@ export const cloneGuildThemeSettings = function cloneGuildThemeSettings(themeSet
     tmp2 = obj;
   }
   return tmp2;
-};
-export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
+}
+export function cloneGuildTheme(guildTheme) {
   let customUserThemeSettings;
   let items;
   let items1;
@@ -70,8 +70,8 @@ export const cloneGuildTheme = function cloneGuildTheme(guildTheme) {
     tmp2 = obj;
   }
   return tmp2;
-};
-export const toServerGuildThemeSettings = function toServerGuildThemeSettings(themeSettings) {
+}
+export function toServerGuildThemeSettings(themeSettings) {
   let items;
   let items2;
   let num3;
@@ -111,8 +111,8 @@ export const toServerGuildThemeSettings = function toServerGuildThemeSettings(th
     }
   }
   return obj;
-};
-export const fromServerGuildThemeSettings = function fromServerGuildThemeSettings(preset_id) {
+}
+export function fromServerGuildThemeSettings(preset_id) {
   let gradient_color_stops;
   let num;
   let num2;
@@ -149,8 +149,8 @@ export const fromServerGuildThemeSettings = function fromServerGuildThemeSetting
     }
   }
   return tmp;
-};
-export const fromServerGuildTheme = function fromServerGuildTheme(theme) {
+}
+export function fromServerGuildTheme(theme) {
   let gradient_color_stops;
   let num;
   let num2;
@@ -193,4 +193,4 @@ export const fromServerGuildTheme = function fromServerGuildTheme(theme) {
     tmp = obj;
   }
   return tmp;
-};
+}

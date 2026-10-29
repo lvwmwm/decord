@@ -1,41 +1,203 @@
 // Module ID: 8972
 // Function ID: 8973
-// Dependencies: [17]
-// Exports: getInstallationErrorMessage
+// Dependencies: [19, 17, 21, 8973, 8977]
 
 // Module 8972
+import Fragment from "Fragment" /* 21 */;
+import DatePickerAndroid2 from "DatePickerAndroid" /* 8973 */;
+import _slicedToArray from "_slicedToArray" /* 8977 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 
-const require = globalThis.__r;
+let Platform;
+let Text;
+let c2;
+({ Appearance: c2, Platform, Text } = react_native);
+const jsx = Fragment.jsx;
+const DatePickerAndroid = DatePickerAndroid2.DatePickerAndroid;
+function getTheme(arg0) {
 
-let items;
-let items1;
-let items2;
-let items3;
-let obj2;
-let obj3;
-const Platform = react_native.Platform;
-const obj = { ios: obj2, android: obj3 };
-obj2 = { expo: items.join("\n"), nonExpo: items1.join("\n") };
-items = ["react-native-date-picker is not installed correctly. Make sure you: ", "", ...["1. Have rebuilt your app (with for instance 'npx expo run:ios')", "2. Are not using Expo Go (Expo Go is unsupported). See README for more info: ", "https://github.com/henninghall/react-native-date-picker"], "", "Please reply in this thread if this solved your issue or not: ", "https://github.com/henninghall/react-native-date-picker/issues/404", "", "To ignore this warning, add 'global.ignoreDatePickerWarning = true' to the top of your index file."];
-const sum = tmp2 + 1;
-const sum1 = sum + 1;
-items1 = ["react-native-date-picker is not installed correctly. Make sure you: ", "", ...["1. Installed pods (by for instance running 'cd ios && pod install')", "2. Rebuilt the app (by for instance 'npx react-native run-ios')"], "", "Please reply in this thread if this solved your issue or not: ", "https://github.com/henninghall/react-native-date-picker/issues/404", "", "To ignore this warning, add 'global.ignoreDatePickerWarning = true' to the top of your index file."];
-const sum2 = tmp5 + 1;
-const sum3 = sum2 + 1;
-obj3 = { expo: items2.join("\n"), nonExpo: items3.join("\n") };
-items2 = ["react-native-date-picker is not installed correctly. Make sure you: ", "", ...["1. Have rebuilt your app (with for instance 'npx expo run:android')", "2. Are not using Expo Go (Expo Go is unsupported). See README for more info: ", "https://github.com/henninghall/react-native-date-picker"], "", "Please reply in this thread if this solved your issue or not: ", "https://github.com/henninghall/react-native-date-picker/issues/404", "", "To ignore this warning, add 'global.ignoreDatePickerWarning = true' to the top of your index file."];
-const sum4 = tmp8 + 1;
-const sum5 = sum4 + 1;
-items3 = ["react-native-date-picker is not installed correctly. Make sure you: ", "", ...["1. Rebuilt the app (by for instance 'npx react-native run-ios')"], "", "Please reply in this thread if this solved your issue or not: ", "https://github.com/henninghall/react-native-date-picker/issues/404", "", "To ignore this warning, add 'global.ignoreDatePickerWarning = true' to the top of your index file."];
-const sum6 = tmp11 + 1;
-const sum7 = sum6 + 1;
+}
+function getDividerColor(arg0) {
 
-export const getInstallationErrorMessage = () => {
-  try {
-    require(dependencyMap[1]).default;
-    return obj.android.expo;
-  } catch (err) {
-    return obj.android.nonExpo;
+}
+function getTextColor(arg0) {
+
+}
+function getButtonColor(arg0) {
+
+}
+function getTitle(arg0) {
+
+}
+
+export default react.memo((theme) => {
+  const obj = {};
+  const merged = Object.assign(theme);
+  _slicedToArray;
+  const tmp = jsx;
+  const tmp2 = DatePickerAndroid;
+  if (typeof getTextColor === "function") {
+    if (typeof getTheme === "function") {
+      let str;
+      if (theme.theme) {
+        str = theme.theme;
+      } else {
+        str = "auto";
+        if (React2) {
+          const colorScheme = obj2.getColorScheme();
+          let tmp11;
+          if (null !== colorScheme) {
+            tmp11 = colorScheme;
+          }
+          str = tmp11;
+        }
+      }
+      let str2 = "white";
+      let str4 = "white";
+      if ("dark" !== str) {
+        let str6;
+        if ("light" === str) {
+          str6 = "black";
+        }
+        str4 = str6;
+      }
+      obj.textColor = tmp7(str4);
+      _slicedToArray;
+      if (typeof getDividerColor === "function") {
+        let dividerColor;
+        if (theme.dividerColor) {
+          dividerColor = theme.dividerColor;
+        } else if (typeof getTheme === "function") {
+          let str7;
+          if (theme.theme) {
+            str7 = theme.theme;
+          } else {
+            str7 = "auto";
+            if (React2) {
+              const colorScheme1 = obj3.getColorScheme();
+              let tmp17;
+              if (null !== colorScheme1) {
+                tmp17 = colorScheme1;
+              }
+              str7 = tmp17;
+            }
+          }
+          dividerColor = str2;
+          if ("dark" !== str7) {
+            let str9;
+            if ("light" === str7) {
+              str9 = "black";
+            }
+            dividerColor = str9;
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+        obj.dividerColor = tmp13(dividerColor);
+        _slicedToArray;
+        if (typeof getButtonColor === "function") {
+          if (theme.buttonColor) {
+            str2 = theme.buttonColor;
+          } else if (typeof getTheme === "function") {
+            let str10;
+            if (theme.theme) {
+              str10 = theme.theme;
+            } else {
+              str10 = "auto";
+              if (React2) {
+                const colorScheme2 = obj4.getColorScheme();
+                let tmp23;
+                if (null !== colorScheme2) {
+                  tmp23 = colorScheme2;
+                }
+                str10 = tmp23;
+              }
+            }
+            if ("dark" !== str10) {
+              let str12;
+              if ("light" === str10) {
+                str12 = "black";
+              }
+              str2 = str12;
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+          obj.buttonColor = tmp19(str2);
+          if (typeof getTheme === "function") {
+            let str13;
+            if (theme.theme) {
+              str13 = theme.theme;
+            } else {
+              str13 = "auto";
+              if (React2) {
+                const colorScheme3 = obj5.getColorScheme();
+                let tmp26;
+                if (null !== colorScheme3) {
+                  tmp26 = colorScheme3;
+                }
+                str13 = tmp26;
+              }
+            }
+            obj.theme = str13;
+            if (typeof getTitle === "function") {
+              let title = theme.title;
+              let str14 = "";
+              let str15 = "";
+              if (null !== title) {
+                if (!title) {
+                  let str16 = "Select date";
+                  if ("time" === tmp28) {
+                    str16 = "Select time";
+                  }
+                  title = str16;
+                }
+                str15 = title;
+              }
+              obj.title = str15;
+              let str18 = "Confirm";
+              if (theme.confirmText) {
+                str18 = theme.confirmText;
+              }
+              obj.confirmText = str18;
+              let str19 = "Cancel";
+              if (theme.cancelText) {
+                str19 = theme.cancelText;
+              }
+              obj.cancelText = str19;
+              let num = 1;
+              if (theme.minuteInterval) {
+                num = theme.minuteInterval;
+              }
+              obj.minuteInterval = num;
+              let str20 = "datetime";
+              if (theme.mode) {
+                str20 = theme.mode;
+              }
+              obj.mode = str20;
+              if (null != theme.timeZoneOffsetInMinutes) {
+                const str21 = theme.timeZoneOffsetInMinutes;
+                str14 = str21.toString();
+              }
+              obj.timeZoneOffsetInMinutes = str14;
+              return tmp(tmp2, obj);
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
-};
+});

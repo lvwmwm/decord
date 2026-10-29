@@ -1,16 +1,16 @@
-// Module ID: 18379
-// Function ID: 18380
+// Module ID: 18613
+// Function ID: 18614
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 11993, 5270, 1199, 18380, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12047, 5271, 1199, 18614, 2]
 
-// Module 18379 (guild_channels/VoiceOrStageSummaryRow)
+// Module 18613 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     num = max;
   }
   if (cResult[0] !== layout) {
-    const tmpResult = tmp(11993);
+    const tmpResult = tmp(12047);
     const layoutStyles = tmpResult.getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
@@ -339,11 +339,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   obj5 = { style: items2, children: items3 };
                   items2 = [, ];
                   ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp7);
-                  let obj6 = { size: tmp(1199).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(18380) };
+                  let obj6 = { size: tmp(1199).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(18614) };
                   const Icon = tmp(1199).Icon;
                   items3 = [tmp17(Icon, obj6), ];
                   let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-                  items3[1] = closure_4(tmp(5270).Text, obj7);
+                  items3[1] = closure_4(tmp(5271).Text, obj7);
                   tmp17Result = closure_4(bound, obj4);
                 }
                 cResult[22] = audienceCount;

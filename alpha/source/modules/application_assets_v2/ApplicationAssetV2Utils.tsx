@@ -1,19 +1,19 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11987
+// Function ID: 11988
 // Name: ApplicationAssetV2Utils
-// Dependencies: [1294, 1449, 2]
+// Dependencies: [1294, 1450, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 11933 (ApplicationAssetV2Utils)
+// Module 11987 (ApplicationAssetV2Utils)
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let result = size.fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 
-export const getApplicationAssetUrl = function getApplicationAssetUrl(arg0, asset_id, size) {
+export function getApplicationAssetUrl(arg0, asset_id, size) {
   let str5;
   if (null != window.GLOBAL_ENV.CDN_HOST) {
     const _URL2 = URL;
@@ -43,4 +43,4 @@ export const getApplicationAssetUrl = function getApplicationAssetUrl(arg0, asse
     const result1 = searchParams2.set("animated", "true");
   }
   return str5.toString();
-};
+}

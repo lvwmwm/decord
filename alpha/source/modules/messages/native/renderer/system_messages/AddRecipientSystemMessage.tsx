@@ -1,24 +1,24 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8372
+// Function ID: 8373
 // Name: AddRecipientSystemMessage
-// Dependencies: [4860, 4856, 1389, 8351, 8353, 1125, 8355, 2]
+// Dependencies: [4861, 4857, 1389, 8373, 8375, 1125, 8377, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8350 (AddRecipientSystemMessage)
+// Module 8372 (AddRecipientSystemMessage)
 import intl2 from "intl" /* 1125 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let tmp9;
-const createCommonMessageDefault = tmp9(8355);
+const createCommonMessageDefault = tmp9(8377);
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/AddRecipientSystemMessage.tsx");
 
-export const createAddRecipientSystemMessage = function createAddRecipientSystemMessage(message) {
+export function createAddRecipientSystemMessage(message) {
   let formatToPartsResult;
   let roleStyle;
   ({ message, roleStyle } = message);
@@ -42,4 +42,4 @@ export const createAddRecipientSystemMessage = function createAddRecipientSystem
   const obj4 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj4;
-};
+}

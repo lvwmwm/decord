@@ -13,7 +13,7 @@ let _require, closure_0, dependencyMap;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBrowserTracingIntegration(arg0) {
+export function tanstackRouterBrowserTracingIntegration(arg0) {
   let _undefined;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -31,12 +31,12 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
   const instrumentNavigation = obj.instrumentNavigation;
   let closure_3 = undefined === instrumentNavigation || instrumentNavigation;
   let obj3 = {
-    afterAllSetup(f143048) {
+    afterAllSetup(f144596) {
       let matchRoutes;
       let obj2;
       let options;
-      closure_0 = f143048;
-      _undefined.afterAllSetup(f143048);
+      closure_0 = f144596;
+      _undefined.afterAllSetup(f144596);
       let tmp2 = closure_0;
       const tmp3 = _undefined;
       let _location = closure_0(_undefined[0]).WINDOW.location;
@@ -89,7 +89,7 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
             tmp11 = obj3;
           }
           const merged = Object.assign(tmp11);
-          const result = startBrowserTracingPageLoadSpan(f143048, obj);
+          const result = startBrowserTracingPageLoadSpan(f144596, obj);
         }
       }
       const tmp18 = closure_3;
@@ -170,4 +170,4 @@ export const tanstackRouterBrowserTracingIntegration = function tanstackRouterBr
   };
   const merged1 = Object.assign(result);
   return obj3;
-};
+}

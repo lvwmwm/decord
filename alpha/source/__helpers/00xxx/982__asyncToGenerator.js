@@ -23,7 +23,7 @@ let obj = function _diagnoseSdkConnectivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -75,7 +75,7 @@ let obj = function _diagnoseSdkConnectivity() {
         } else {
           c2 = 0;
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         if (0 === c2) {
@@ -91,6 +91,6 @@ let obj = function _diagnoseSdkConnectivity() {
 };
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const diagnoseSdkConnectivity = function diagnoseSdkConnectivity() {
+export function diagnoseSdkConnectivity() {
   return obj(...arguments);
-};
+}

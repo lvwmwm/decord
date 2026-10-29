@@ -1,11 +1,11 @@
-// Module ID: 15666
-// Function ID: 15667
+// Module ID: 15902
+// Function ID: 15903
 // Name: Status/StatusUtils
-// Dependencies: [1200, 15667, 2]
+// Dependencies: [1200, 15903, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 15666 (Status/StatusUtils)
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15667 */;
+// Module 15902 (Status/StatusUtils)
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15903 */;
 import StatusConstants from "StatusConstants" /* 1200 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -15,21 +15,21 @@ let c3;
 let size = size_mod;
 const result = size.fileFinishedImporting("design/void/Status/native/StatusUtils.tsx");
 
-export const getAnimatedTypingTranslateX = function getAnimatedTypingTranslateX(width) {
+export function getAnimatedTypingTranslateX(width) {
   return width / 2 - 6;
-};
-export const getMobileStatusContainerRect = function getMobileStatusContainerRect(statusSizeOverride) {
+}
+export function getMobileStatusContainerRect(statusSizeOverride) {
   let sum;
   size = { width: sum, height: 1.4 * sum, cornerRadius: sum / 4 };
   sum = statusSizeOverride + 2 * React2;
   return size;
-};
-export const getVRStatusContainerRect = function getVRStatusContainerRect(statusSizeOverride) {
+}
+export function getVRStatusContainerRect(statusSizeOverride) {
   size = getStatusContainerStyleDefault(statusSizeOverride, false, true);
   const size1 = { width: size.width, height: size.height, cornerRadius: size.borderRadius };
   return size1;
-};
-export const getStatusTypingDimensions = function getStatusTypingDimensions(statusSizeOverride) {
+}
+export function getStatusTypingDimensions(statusSizeOverride) {
   if (constants.SMALL !== statusSizeOverride) {
     let num;
     let num2;
@@ -43,4 +43,4 @@ export const getStatusTypingDimensions = function getStatusTypingDimensions(stat
   }
   num = 4;
   num2 = 22;
-};
+}

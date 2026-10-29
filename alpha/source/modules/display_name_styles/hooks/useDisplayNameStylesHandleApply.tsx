@@ -1,16 +1,16 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 17204
+// Function ID: 17205
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1389, 1084, 5029, 1406, 16120, 7114, 8693, 8690, 1264, 1409, 1408, 5031, 2]
+// Dependencies: [5, 32, 19, 1389, 1084, 5030, 1406, 16357, 7138, 8696, 8693, 1264, 1409, 1408, 5032, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 16965 (useDisplayNameStylesHandleApply)
+// Module 17204 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, colors;
@@ -22,7 +22,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
 export const DisplayNameStylesEntryPoints = { TRY_THIS_STYLE: "try_this_style", PROFILE_EDITOR: "profile_editor" };
-export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
+export function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
   const entryPoint = hasChanges.entryPoint;
   let selectedFontId = hasChanges.selectedFontId;
@@ -62,7 +62,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -100,7 +100,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                         const obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       }
                     } else {
                       try {
@@ -198,7 +198,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                           closure_1_8();
                         }
                         c5 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "IconComponent" };
                       } catch (tmp60) {
                         closure_2 = tmp60;
                         if (0 === c3) {
@@ -295,7 +295,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               return obj;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp34) {
             if (0 === selectedFontId) {
               c4 = 3;
@@ -310,4 +310,4 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
     isApplying: tmp[0]
   };
   return obj;
-};
+}

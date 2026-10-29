@@ -1,17 +1,17 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8981
+// Function ID: 8982
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4936, 1389, 8977, 1095, 1096, 558, 576, 4870, 504, 2]
+// Dependencies: [32, 19, 4937, 1389, 8980, 1095, 1096, 558, 576, 4871, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions
 
-// Module 8978 (useManageResourcePermissions)
+// Module 8981 (useManageResourcePermissions)
 import Constants from "Constants" /* 1095 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore_mod from "UserStore" /* 1389 */;
-import PermissionsConstants from "PermissionsConstants" /* 8977 */;
+import PermissionsConstants from "PermissionsConstants" /* 8980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -311,7 +311,7 @@ const result = size.fileFinishedImporting("modules/permissions/useManageResource
 
 export { attachChannelPermissions };
 export const useManageResourcePermissions = tmp3;
-export const getManageResourcePermissions = function getManageResourcePermissions(guild, c6, UserStore) {
+export function getManageResourcePermissions(guild, c6, UserStore) {
   let c0;
   let closure_4;
   let items2;
@@ -382,4 +382,4 @@ export const getManageResourcePermissions = function getManageResourcePermission
     };
   }
   return obj6;
-};
+}

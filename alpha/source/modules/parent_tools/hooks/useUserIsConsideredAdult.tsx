@@ -1,9 +1,9 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 13104
+// Function ID: 13105
 // Name: useUserIsConsideredAdult
 // Dependencies: [1389, 558, 576, 504, 2]
 
-// Module 12883 (useUserIsConsideredAdult)
+// Module 13104 (useUserIsConsideredAdult)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

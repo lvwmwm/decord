@@ -1,11 +1,11 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14845
+// Function ID: 14846
 // Name: BadgeDirectoryNuxGraphicUtils
-// Dependencies: [32, 8710, 2]
+// Dependencies: [32, 8713, 2]
 // Exports: getBadgeDirectoryNuxGraphicIconUrls, getBadgeDirectoryNuxGraphicLayout
 
-// Module 14611 (BadgeDirectoryNuxGraphicUtils)
-import BadgeId from "BadgeId" /* 8710 */;
+// Module 14845 (BadgeDirectoryNuxGraphicUtils)
+import BadgeId from "BadgeId" /* 8713 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let map;
 let items = [BadgeId.BadgeId.STREAMING, BadgeId.BadgeId.GAME_VARIETY, BadgeId.BadgeId.GAME_TIME, BadgeId.BadgeId.ACCOUNT_AGE];
 const result = size.fileFinishedImporting("modules/badges/BadgeDirectoryNuxGraphicUtils.tsx");
 
-export const getBadgeDirectoryNuxGraphicIconUrls = function getBadgeDirectoryNuxGraphicIconUrls(badges) {
+export function getBadgeDirectoryNuxGraphicIconUrls(badges) {
   map = new Map(badges.map((badge_id) => {
     items = [badge_id.badge_id, badge_id];
     return items;
@@ -64,8 +64,8 @@ export const getBadgeDirectoryNuxGraphicIconUrls = function getBadgeDirectoryNux
   const sorted = items.sort((tierIndex, tierIndex2) => tierIndex2.tierIndex - tierIndex.tierIndex);
   const substr = sorted.slice(0, 3);
   return substr.map((iconUrl) => iconUrl.iconUrl);
-};
-export const getBadgeDirectoryNuxGraphicLayout = function getBadgeDirectoryNuxGraphicLayout(badgeIconUrls) {
+}
+export function getBadgeDirectoryNuxGraphicLayout(badgeIconUrls) {
   let items1;
   let items2;
   let obj;
@@ -89,4 +89,4 @@ export const getBadgeDirectoryNuxGraphicLayout = function getBadgeDirectoryNuxGr
     items2 = [tmp3, tmp2, tmp4];
   }
   return obj;
-};
+}

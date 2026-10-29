@@ -1,11 +1,11 @@
-// Module ID: 18223
-// Function ID: 18224
+// Module ID: 18457
+// Function ID: 18458
 // Name: ThumbhashUtils
-// Dependencies: [16805, 2]
+// Dependencies: [17043, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 18223 (ThumbhashUtils)
-import _slicedToArray from "_slicedToArray" /* 16805 */;
+// Module 18457 (ThumbhashUtils)
+import _slicedToArray from "_slicedToArray" /* 17043 */;
 import size from "module_2" /* 2 */;
 
 function thumbHashToRGBA(arg0) {
@@ -331,9 +331,9 @@ function thumbHashToRGBA(arg0) {
 }
 let result = size.fileFinishedImporting("modules/thumbhash/ThumbhashUtils.tsx");
 
-export const createThumbhashImageFromPlaceholder = function createThumbhashImageFromPlaceholder(placeholder) {
+export function createThumbhashImageFromPlaceholder(placeholder) {
   const tmp = thumbHashToRGBA(Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0)), { detail: 1, pop: 1.1 });
   const obj = _slicedToArray;
   return obj.rgbaToDataURL(tmp.w, tmp.h, tmp.rgba);
-};
+}
 export { thumbHashToRGBA };

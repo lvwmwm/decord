@@ -1,12 +1,12 @@
-// Module ID: 12407
-// Function ID: 12408
+// Module ID: 12461
+// Function ID: 12462
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 4878, 1389, 558, 576, 12390, 504, 5058, 12408, 1125, 3863, 2]
+// Dependencies: [19, 4879, 1389, 558, 576, 12444, 504, 5059, 12462, 1125, 3864, 2]
 
-// Module 12407 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12390 */;
+// Module 12461 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12444 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     if (cResult[20] !== actor_user_id.source_name) {
       const intl3 = tmp(tmp2[9]).intl;
       const obj11 = { source: actor_user_id.source_name };
-      const formatResult4 = intl3.format(require("module_3863").mHCXtm, obj11);
+      const formatResult4 = intl3.format(require("module_3864").mHCXtm, obj11);
       cResult[20] = actor_user_id.source_name;
       cResult[21] = formatResult4;
       tmp26 = formatResult4;
@@ -232,7 +232,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     const _Symbol2 = Symbol;
     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(tmp2[9]).intl;
-      const stringResult1 = intl2.string(require("module_3863").UGAfl9);
+      const stringResult1 = intl2.string(require("module_3864").UGAfl9);
       cResult[22] = stringResult1;
       tmp24 = stringResult1;
     } else {
@@ -373,10 +373,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   } else if ("remixed" === type) {
     const intl3 = tmp2(tmp3[9]).intl;
     const obj13 = { source: actor_user_id.source_name };
-    return intl3.format(require("module_3863").mHCXtm, obj13);
+    return intl3.format(require("module_3864").mHCXtm, obj13);
   } else if ("voice_channel_pin" === type) {
     const intl2 = tmp2(tmp3[9]).intl;
-    return intl2.string(require("module_3863").UGAfl9);
+    return intl2.string(require("module_3864").UGAfl9);
   }
 });
 const result = size.fileFinishedImporting("modules/conjure/chat/useConjureProjectEventLine.tsx");

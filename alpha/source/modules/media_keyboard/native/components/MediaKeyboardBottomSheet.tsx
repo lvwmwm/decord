@@ -1,26 +1,26 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12238
+// Function ID: 12239
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1626, 1084, 21, 1627, 1381, 5004, 587, 558, 576, 1125, 12141, 5070, 5182, 5305, 5086, 5248, 5249, 1264, 5303, 5195, 6007, 5085, 5299, 1630, 6004, 2]
+// Dependencies: [32, 19, 17, 1627, 1084, 21, 1628, 1381, 5005, 587, 558, 576, 1125, 12195, 5071, 5183, 5306, 5087, 5249, 5250, 1264, 5304, 5196, 6009, 5086, 5300, 1631, 6006, 2]
 
-// Module 12184 (MediaKeyboardBottomSheet)
+// Module 12238 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import ChatInputUtils from "ChatInputUtils" /* 5195 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import ChatInputUtils from "ChatInputUtils" /* 5196 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

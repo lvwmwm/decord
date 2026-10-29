@@ -1,13 +1,13 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10527
+// Function ID: 10528
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 2055, 9551, 1391, 558, 576, 504, 7592, 10493, 7564, 10495, 2]
+// Dependencies: [19, 2056, 9583, 1391, 558, 576, 504, 7615, 10526, 7587, 10528, 2]
 
-// Module 10494 (useIsEligibleForBogoOffer)
+// Module 10527 (useIsEligibleForBogoOffer)
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
-import PromotionsStore from "PromotionsStore" /* 9551 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
+import PromotionsStore from "PromotionsStore" /* 9583 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,13 +56,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp8, tmp9);
-  const tmpResult7 = tmp(7592);
+  const tmpResult7 = tmp(7615);
   const premiumTrialOffer = tmpResult7.usePremiumTrialOffer();
-  const tmpResult8 = tmp(10493);
+  const tmpResult8 = tmp(10526);
   const premiumDiscountOffer = tmpResult8.usePremiumDiscountOffer();
-  const tmpResult9 = tmp(7564);
+  const tmpResult9 = tmp(7587);
   const isPaymentsBlocked = tmpResult9.useIsPaymentsBlocked();
-  const tmpResult10 = tmp(10495);
+  const tmpResult10 = tmp(10528);
   forceUpdate = tmpResult10.useForceUpdate();
   if (cResult[4] !== stateFromStores) {
     let valueOfResult = null;
@@ -135,13 +135,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
   const items1 = [SubscriptionStore];
   const obj2 = forceUpdate(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj4 = forceUpdate(7592);
+  const obj4 = forceUpdate(7615);
   const premiumTrialOffer = obj4.usePremiumTrialOffer();
-  const obj5 = forceUpdate(10493);
+  const obj5 = forceUpdate(10526);
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
-  const obj6 = forceUpdate(7564);
+  const obj6 = forceUpdate(7587);
   const isPaymentsBlocked = obj6.useIsPaymentsBlocked();
-  const obj7 = forceUpdate(10495);
+  const obj7 = forceUpdate(10528);
   forceUpdate = obj7.useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {

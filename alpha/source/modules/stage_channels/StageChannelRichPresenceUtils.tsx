@@ -1,17 +1,17 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10720
+// Function ID: 10721
 // Name: StageChannelRichPresenceUtils
-// Dependencies: [32, 502, 4856, 4878, 6721, 6672, 1084, 2]
+// Dependencies: [32, 502, 4857, 4879, 6744, 6696, 1084, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 10687 (StageChannelRichPresenceUtils)
+// Module 10720 (StageChannelRichPresenceUtils)
 import Constants from "Constants" /* 1084 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6672 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6721 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6744 */;
 import size from "module_2" /* 2 */;
 
 function unpackStageChannelParty(activity) {
@@ -40,7 +40,7 @@ const GuildFeatures = Constants.GuildFeatures;
 let c7 = "stage:";
 const result = size.fileFinishedImporting("modules/stage_channels/StageChannelRichPresenceUtils.tsx");
 
-export const packStageChannelPartyId = function packStageChannelPartyId(channel, stageInstanceByChannel) {
+export function packStageChannelPartyId(channel, stageInstanceByChannel) {
   let num = 0;
   if (StageChannelRoleStore.isSpeaker(AuthenticationStore.getId(), channel.id)) {
     num = 1;
@@ -62,20 +62,20 @@ export const packStageChannelPartyId = function packStageChannelPartyId(channel,
     str = tmp4;
   }
   return "" + c7 + channel.guild_id + ":" + channel.id + ":" + str.toString(16) + ":" + stageInstanceByChannel.id;
-};
+}
 export { unpackStageChannelParty };
-export const isStageActivity = function isStageActivity(activity) {
+export function isStageActivity(activity) {
   let application_id;
   if (activity != null) {
     application_id = activity.application_id;
   }
   return application_id === STAGE_APPLICATION_ID;
-};
-export const shouldShowActivity = function shouldShowActivity(activity) {
+}
+export function shouldShowActivity(activity) {
   const tmp = unpackStageChannelParty(activity);
   if (null == tmp) {
     return false;
   } else {
     return null != ChannelStore.getChannel(tmp.channelId);
   }
-};
+}

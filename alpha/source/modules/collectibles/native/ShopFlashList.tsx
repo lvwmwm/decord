@@ -1,19 +1,19 @@
-// Module ID: 17512
-// Function ID: 17513
+// Module ID: 17751
+// Function ID: 17752
 // Name: ShopFlashList
-// Dependencies: [19, 21, 5004, 587, 558, 576, 17475, 7256, 1199, 8760, 1125, 2]
+// Dependencies: [19, 21, 5005, 587, 558, 576, 17714, 7280, 1199, 8763, 1125, 2]
 
-// Module 17512 (ShopFlashList)
+// Module 17751 (ShopFlashList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7256 */;
-import generated_NoResults from "generated/NoResults" /* 8760 */;
-import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 17475 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7280 */;
+import generated_NoResults from "generated/NoResults" /* 8763 */;
+import useScrollToInitialIndexOnce2 from "useScrollToInitialIndexOnce" /* 17714 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,50 +31,59 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopFlashLis
   let onViewableItemsChanged;
   let renderItem;
   const obj = react2;
-  const cResult = obj.c(11);
+  const cResult = obj.c(12);
   ({ data, renderItem, initialScrollIndex, getItemType, keyExtractor, onViewableItemsChanged } = arg0);
   const ref = react.useRef(null);
   const tmp5 = closure_4();
   if (cResult[0] === initialScrollIndex) {
     let tmp7;
+    let tmp10;
     if (cResult[1] === (null != initialScrollIndex && initialScrollIndex > 0)) {
       tmp7 = cResult[2];
     }
     const tmpResult = useScrollToInitialIndexOnce2;
     const scrollToInitialIndexOnce = tmpResult.useScrollToInitialIndexOnce(tmp7);
-    if (cResult[3] === data) {
-      if (cResult[4] === getItemType) {
-        if (cResult[5] === initialScrollIndex) {
-          if (cResult[6] === keyExtractor) {
-            if (cResult[7] === onViewableItemsChanged) {
-              if (cResult[8] === renderItem) {
-                let tmp9;
-                if (cResult[9] === tmp5.contentContainer) {
-                  tmp9 = cResult[10];
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { disabled: true };
+      cResult[3] = obj2;
+      tmp10 = obj2;
+    } else {
+      tmp10 = cResult[3];
+    }
+    if (cResult[4] === data) {
+      if (cResult[5] === getItemType) {
+        if (cResult[6] === initialScrollIndex) {
+          if (cResult[7] === keyExtractor) {
+            if (cResult[8] === onViewableItemsChanged) {
+              if (cResult[9] === renderItem) {
+                let tmp11;
+                if (cResult[10] === tmp5.contentContainer) {
+                  tmp11 = cResult[11];
                 }
-                return tmp9;
+                return tmp11;
               }
             }
           }
         }
       }
     }
-    const tmp12 = jsx(defaultMVCPConfig.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, keyExtractor, onViewableItemsChanged, contentContainerStyle: tmp5.contentContainer });
-    cResult[3] = data;
-    cResult[4] = getItemType;
-    cResult[5] = initialScrollIndex;
-    cResult[6] = keyExtractor;
-    cResult[7] = onViewableItemsChanged;
-    cResult[8] = renderItem;
-    cResult[9] = tmp5.contentContainer;
-    cResult[10] = tmp12;
-    tmp9 = tmp12;
+    const tmp14 = jsx(defaultMVCPConfig.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, keyExtractor, onViewableItemsChanged, maintainVisibleContentPosition: tmp10, contentContainerStyle: tmp5.contentContainer });
+    cResult[4] = data;
+    cResult[5] = getItemType;
+    cResult[6] = initialScrollIndex;
+    cResult[7] = keyExtractor;
+    cResult[8] = onViewableItemsChanged;
+    cResult[9] = renderItem;
+    cResult[10] = tmp5.contentContainer;
+    cResult[11] = tmp14;
+    tmp11 = tmp14;
   }
-  const obj3 = { shouldScroll: null != initialScrollIndex && initialScrollIndex > 0, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce2.INITIAL_SCROLL_DELAY_MS };
+  const obj4 = { shouldScroll: null != initialScrollIndex && initialScrollIndex > 0, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce2.INITIAL_SCROLL_DELAY_MS };
   cResult[0] = initialScrollIndex;
   cResult[1] = null != initialScrollIndex && initialScrollIndex > 0;
-  cResult[2] = obj3;
-  tmp7 = obj3;
+  cResult[2] = obj4;
+  tmp7 = obj4;
 }) : (function ShopFlashList(initialScrollIndex) {
   let data;
   let getItemType;
@@ -93,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopFlashLis
   }
   const obj = { shouldScroll: tmp6, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce2.INITIAL_SCROLL_DELAY_MS };
   const scrollToInitialIndexOnce = useScrollToInitialIndexOnce(obj);
-  return jsx(defaultMVCPConfig.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, keyExtractor, onViewableItemsChanged, contentContainerStyle: tmp2.contentContainer });
+  return jsx(defaultMVCPConfig.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, keyExtractor, onViewableItemsChanged, maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: tmp2.contentContainer });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopEmptyState() {

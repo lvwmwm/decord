@@ -1,10 +1,10 @@
-// Module ID: 14697
-// Function ID: 14698
+// Module ID: 14932
+// Function ID: 14933
 // Name: PeopleListTracking
 // Dependencies: [1084, 1264, 2]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 14697 (PeopleListTracking)
+// Module 14932 (PeopleListTracking)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const FriendsListItemActionType = { ROW_CLICKED: "row_clicked", MESSAGE_CLICKED:
 const result = size.fileFinishedImporting("modules/people/PeopleListTracking.tsx");
 
 export { FriendsListItemActionType };
-export const trackFriendsListItemClicked = function trackFriendsListItemClicked(arg0) {
+export function trackFriendsListItemClicked(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -22,8 +22,8 @@ export const trackFriendsListItemClicked = function trackFriendsListItemClicked(
   const ROW_CLICKED = obj.ROW_CLICKED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: ROW_CLICKED });
-};
-export const trackFriendsListItemMessageClicked = function trackFriendsListItemMessageClicked(arg0) {
+}
+export function trackFriendsListItemMessageClicked(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -31,8 +31,8 @@ export const trackFriendsListItemMessageClicked = function trackFriendsListItemM
   const MESSAGE_CLICKED = obj.MESSAGE_CLICKED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: MESSAGE_CLICKED });
-};
-export const trackFriendsListItemVideoCallClicked = function trackFriendsListItemVideoCallClicked(arg0) {
+}
+export function trackFriendsListItemVideoCallClicked(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -40,8 +40,8 @@ export const trackFriendsListItemVideoCallClicked = function trackFriendsListIte
   const VIDEO_CALL_CLICKED = obj.VIDEO_CALL_CLICKED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: VIDEO_CALL_CLICKED });
-};
-export const trackFriendsListItemVoiceCallClicked = function trackFriendsListItemVoiceCallClicked(arg0) {
+}
+export function trackFriendsListItemVoiceCallClicked(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -49,8 +49,8 @@ export const trackFriendsListItemVoiceCallClicked = function trackFriendsListIte
   const VOICE_CALL_CLICKED = obj.VOICE_CALL_CLICKED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: VOICE_CALL_CLICKED });
-};
-export const trackFriendsListItemRemoveFriendClicked = function trackFriendsListItemRemoveFriendClicked(arg0) {
+}
+export function trackFriendsListItemRemoveFriendClicked(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -58,8 +58,8 @@ export const trackFriendsListItemRemoveFriendClicked = function trackFriendsList
   const REMOVE_FRIEND_CLICKED = obj.REMOVE_FRIEND_CLICKED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: REMOVE_FRIEND_CLICKED });
-};
-export const trackFriendsListItemContextMenuInteracted = function trackFriendsListItemContextMenuInteracted(arg0) {
+}
+export function trackFriendsListItemContextMenuInteracted(arg0) {
   let obj;
   let tab;
   let targetUserId;
@@ -67,11 +67,11 @@ export const trackFriendsListItemContextMenuInteracted = function trackFriendsLi
   const CONTEXT_MENU_INTERACTED = obj.CONTEXT_MENU_INTERACTED;
   obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIENDS_LIST_ITEM_ACTION, { target_user_id: targetUserId, tab, action_type: CONTEXT_MENU_INTERACTED });
-};
-export const trackViewFriendRequestNote = function trackViewFriendRequestNote(arg0) {
+}
+export function trackViewFriendRequestNote(arg0) {
   let analyticsLocation;
   let noteLength;
   ({ analyticsLocation, noteLength } = arg0);
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.FRIEND_REQUEST_NOTE_VIEWED, { location: analyticsLocation, note_length: noteLength });
-};
+}

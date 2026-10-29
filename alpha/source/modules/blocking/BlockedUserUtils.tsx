@@ -1,18 +1,18 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15518
+// Function ID: 15519
 // Name: BlockedUserUtils
-// Dependencies: [4946, 1385, 2]
+// Dependencies: [4947, 1385, 2]
 // Exports: filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, hasBlockedOrIgnoredUserIds
 
-// Module 15283 (BlockedUserUtils)
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+// Module 15518 (BlockedUserUtils)
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 let id;
 
 const result = size.fileFinishedImporting("modules/blocking/BlockedUserUtils.tsx");
 
-export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnoredUsers(mapped, stateFromStores1) {
+export function filterOutBlockedOrIgnoredUsers(mapped, stateFromStores1) {
   const found = mapped.filter((item) => {
     const obj = stateFromStores1(dependencyMap[1]);
     return obj.isNotNullish(item);
@@ -28,8 +28,8 @@ export const filterOutBlockedOrIgnoredUsers = function filterOutBlockedOrIgnored
     }
     return !hasItem;
   });
-};
-export const filterOutBlockedOrIgnoredUserIds = function filterOutBlockedOrIgnoredUserIds(arr, arg1) {
+}
+export function filterOutBlockedOrIgnoredUserIds(arr, arg1) {
   let closure_0 = arg1;
   return arr.filter((item) => {
     let hasItem;
@@ -41,8 +41,8 @@ export const filterOutBlockedOrIgnoredUserIds = function filterOutBlockedOrIgnor
     }
     return !hasItem;
   });
-};
-export const hasBlockedOrIgnoredUserIds = function hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredUserIds) {
+}
+export function hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredUserIds) {
   let closure_0 = blockedOrIgnoredUserIds;
   return items.some((item) => {
     let hasItem;
@@ -54,4 +54,4 @@ export const hasBlockedOrIgnoredUserIds = function hasBlockedOrIgnoredUserIds(it
     }
     return hasItem;
   });
-};
+}

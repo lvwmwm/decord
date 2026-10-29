@@ -1,18 +1,18 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 10879
+// Function ID: 10880
 // Name: leaveFrame
-// Dependencies: [6810, 1385, 584, 2]
+// Dependencies: [6833, 1385, 584, 2]
 // Exports: leaveFrame
 
-// Module 10803 (leaveFrame)
+// Module 10879 (leaveFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import FramesStore from "FramesStore" /* 6810 */;
+import FramesStore from "FramesStore" /* 6833 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/leaveFrame.tsx");
 
-export const leaveFrame = function leaveFrame(id) {
+export function leaveFrame(id) {
   const obj = GlobalUtils;
   if (obj.isNotNullish(id)) {
     const obj3 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId: id, lockState: null, pictureInPictureLockState: null };
@@ -26,4 +26,4 @@ export const leaveFrame = function leaveFrame(id) {
     const obj4 = DispatcherDefault;
     obj4.dispatch(obj7);
   }
-};
+}

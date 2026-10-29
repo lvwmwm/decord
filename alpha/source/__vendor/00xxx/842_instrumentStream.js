@@ -315,7 +315,7 @@ let obj = function _instrumentStream() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c19;
@@ -350,7 +350,7 @@ let obj = function _instrumentStream() {
                 value = undefined;
                 value2 = undefined;
                 items9 = undefined;
-                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "k", totalTokens: "mode", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "k", totalTokens: "getGuild", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
                 c4 = false;
                 c5 = false;
                 c19 = 4;
@@ -491,7 +491,7 @@ let obj = function _instrumentStream() {
                   }
                   closure_0.end();
                   c22 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               }
               break;
@@ -1081,6 +1081,6 @@ let obj = function _instrumentStream() {
 };
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentStream = function instrumentStream(arg0, arg1, arg2) {
+export function instrumentStream(arg0, arg1, arg2) {
   return obj(...arguments);
-};
+}

@@ -1,16 +1,16 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12384
+// Function ID: 12385
 // Name: ConjureHeaderIconButton
-// Dependencies: [19, 17, 21, 9437, 5004, 558, 576, 6944, 2]
+// Dependencies: [19, 17, 21, 9468, 5005, 558, 576, 6968, 2]
 
-// Module 12330 (ConjureHeaderIconButton)
+// Module 12384 (ConjureHeaderIconButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Pressables from "Pressables" /* 6944 */;
-import ClipView from "ClipView" /* 9437 */;
+import Pressables from "Pressables" /* 6968 */;
+import ClipView from "ClipView" /* 9468 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -175,7 +175,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHea
     return items;
   }, items);
   const obj = { ref, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, onPress, activeOpacity: 0.6, androidRippleConfig, style: tmp.button, children: tmp3Result };
-  const PressableOpacity = badgeSize(6944).PressableOpacity;
+  const PressableOpacity = badgeSize(6968).PressableOpacity;
   if (null != badge) {
     const obj2 = { style: tmp.icon, children: items2 };
     const obj3 = { cutouts: memo, style: items1, children: closure_5(IconComponent, {}) };

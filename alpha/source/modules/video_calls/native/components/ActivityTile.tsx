@@ -1,25 +1,25 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11548
+// Function ID: 11549
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4855, 1389, 1084, 1203, 2023, 21, 1199, 5004, 587, 558, 576, 1385, 504, 7293, 6025, 5058, 11495, 7289, 7314, 9969, 1125, 11497, 11404, 11499, 11500, 11501, 6944, 11547, 5270, 5281, 5070, 2]
+// Dependencies: [5, 32, 19, 17, 4856, 1389, 1084, 1203, 2024, 21, 1199, 5005, 587, 558, 576, 1385, 504, 7317, 6029, 5059, 11549, 7313, 7338, 10001, 1125, 11551, 11458, 11553, 11554, 11555, 6968, 11601, 5271, 5282, 5071, 2]
 
-// Module 11494 (ActivityTile)
+// Module 11548 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
 import FormConstants from "FormConstants" /* 1203 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import Constants2 from "Constants" /* 2023 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11500 */;
+import Constants2 from "Constants" /* 2024 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11554 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(5070);
+const native2 = tmp(5071);
 const View = react_native.View;
 ({ ThemeTypes: metroImportAll, Fonts } = Constants);
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               const result = obj.setOrientationLockState(application);
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp16) {
             c2 = 3;
             throw tmp16;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

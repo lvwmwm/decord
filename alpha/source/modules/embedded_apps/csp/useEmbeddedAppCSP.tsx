@@ -1,14 +1,14 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10888
+// Function ID: 10889
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 10810, 504, 10813, 558, 576, 10811, 5659, 2]
+// Dependencies: [5, 10886, 504, 10889, 558, 576, 10887, 5661, 2]
 
-// Module 10812 (useEmbeddedAppCSP)
+// Module 10888 (useEmbeddedAppCSP)
 import react from "react" /* 576 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10811 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10813 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10887 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10810 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10886 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5659);
+const getURLForApplication = tmp(5661);
 let obj = {
   getQueryId(arg0) {
     let combined = null;
@@ -51,7 +51,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -80,7 +80,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

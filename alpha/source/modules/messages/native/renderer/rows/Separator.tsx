@@ -1,15 +1,15 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 15069
+// Function ID: 15070
 // Name: Separator
-// Dependencies: [8166, 5004, 587, 5180, 1385, 2]
+// Dependencies: [8189, 5005, 587, 5181, 1385, 2]
 // Exports: generateSeparatorRowData
 
-// Module 14834 (Separator)
+// Module 15069 (Separator)
 import nativeDefault from "native" /* 587 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5180 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
-import createStyles from "createStyles" /* 5004 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5181 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -19,7 +19,7 @@ let obj = { dayColor: nativeDefault.colors.TEXT_MUTED, unreadTextColor: nativeDe
 let closure_4 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/rows/Separator.tsx");
 
-export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
+export function generateSeparatorRowData(text, theme) {
   let changeType;
   let obj3;
   let rowType;
@@ -43,4 +43,4 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     const obj = GlobalUtils;
     obj.assertNever(rowType);
   }
-};
+}

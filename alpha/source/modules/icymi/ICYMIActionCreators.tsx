@@ -1,12 +1,12 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8881
+// Function ID: 8882
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1084, 1294, 584, 1254, 8879, 8880, 4832, 2]
+// Dependencies: [5, 1084, 1294, 584, 1254, 8882, 8883, 4833, 2]
 
-// Module 8878 (ICYMIActionCreators)
+// Module 8881 (ICYMIActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8879 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8882 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -189,7 +189,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp20) {
           refresh = tmp20;
           if (0 === c3) {
@@ -217,7 +217,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -250,7 +250,7 @@ let obj = {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === constants) {
             c3 = 0;
@@ -300,7 +300,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -350,7 +350,7 @@ let obj = {
             if (0 === channel_id.body.message_items.length) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               const obj9 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", messageItem: channel_id.body.message_items[0] };
               const obj = message_id(closure_2[3]);
@@ -359,7 +359,7 @@ let obj = {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp23) {
           closure_2 = tmp23;
           if (0 === c3) {
@@ -396,7 +396,7 @@ let obj = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp30;
@@ -470,7 +470,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp30) {
           if (0 === c3) {
             c5 = 3;
@@ -494,7 +494,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -546,7 +546,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -571,7 +571,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -623,7 +623,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -648,7 +648,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -707,7 +707,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp24) {
           closure_2 = tmp24;
           if (0 === c3) {

@@ -340,7 +340,7 @@ function eventFromUnknownInput(arg0, error, arg2, arg3, arg4) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const re4 = /Minified React error #\d+;/i;
 
-export const eventFromException = function eventFromException(arg0, arg1, syntheticException, arg3) {
+export function eventFromException(arg0, arg1, syntheticException, arg3) {
   syntheticException = undefined;
   const tmp = eventFromUnknownInput;
   if (syntheticException != null) {
@@ -359,8 +359,8 @@ export const eventFromException = function eventFromException(arg0, arg1, synthe
   }
   const tmp4Result = _mod693;
   return tmp4Result.resolvedSyncPromise(tmpResult);
-};
-export const eventFromMessage = function eventFromMessage(arg0, value, arg2, syntheticException) {
+}
+export function eventFromMessage(arg0, value, arg2, syntheticException) {
   let items;
   let obj4;
   let str = arg2;
@@ -403,11 +403,11 @@ export const eventFromMessage = function eventFromMessage(arg0, value, arg2, syn
   }
   const tmp7Result = _mod693;
   return tmp7Result.resolvedSyncPromise(obj);
-};
+}
 export { eventFromUnknownInput };
 export { exceptionFromError };
 export { extractMessage };
-export const extractType = function extractType(name) {
+export function extractType(name) {
   name = undefined;
   if (name != null) {
     name = name.name;
@@ -440,4 +440,4 @@ export const extractType = function extractType(name) {
     }
   }
   return tmp2;
-};
+}

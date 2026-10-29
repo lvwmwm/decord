@@ -1,32 +1,32 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8820
+// Function ID: 8821
 // Name: MediaModal
-// Dependencies: [19, 17, 8818, 1998, 1084, 21, 8789, 8819, 8791, 504, 1381, 8794, 8797, 8824, 8826, 8827, 1893, 8857, 5248, 5249, 5246, 8859, 1999, 14459, 8792, 14477, 14479, 14484, 14488, 14489, 2]
+// Dependencies: [19, 17, 8821, 1999, 1084, 21, 8792, 8822, 8794, 504, 1381, 8797, 8800, 8827, 8829, 8830, 1894, 8860, 5249, 5250, 5247, 8862, 2000, 14693, 8795, 14711, 14713, 14718, 14722, 14723, 2]
 // Exports: default
 
-// Module 8817 (MediaModal)
+// Module 8820 (MediaModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import useVideoControls from "useVideoControls" /* 8791 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8794 */;
-import MediaModalPortal from "MediaModalPortal" /* 8797 */;
-import MediaModalTiktok from "MediaModalTiktok" /* 8824 */;
-import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 8826 */;
-import common_Video from "common/Video" /* 8827 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 14459 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 14477 */;
-import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 14479 */;
-import MediaModalVideoDefault from "MediaModalVideo" /* 14484 */;
-import MediaModalImageDefault from "MediaModalImage" /* 14488 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import useVideoControls from "useVideoControls" /* 8794 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8797 */;
+import MediaModalPortal from "MediaModalPortal" /* 8800 */;
+import MediaModalTiktok from "MediaModalTiktok" /* 8827 */;
+import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 8829 */;
+import common_Video from "common/Video" /* 8830 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 14693 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 14711 */;
+import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 14713 */;
+import MediaModalVideoDefault from "MediaModalVideo" /* 14718 */;
+import MediaModalImageDefault from "MediaModalImage" /* 14722 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppFreezeStore from "AppFreezeStore" /* 8818 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
+import AppFreezeStore from "AppFreezeStore" /* 8821 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import size_mod from "module_2" /* 2 */;
 
 const MediaModalPortalDefault = MediaModalPortal;
@@ -152,7 +152,7 @@ export default function MediaModal(initialIndex) {
         portalControls = tmpResult5.createWebFileVideoControls();
       } else {
         const tmpResult6 = common_Video;
-        portalControls = tmpResult6.createVideoControls(tmp(8791).setPausedState);
+        portalControls = tmpResult6.createVideoControls(tmp(8794).setPausedState);
       }
       tmp5.current[combined] = portalControls;
       return portalControls;
@@ -210,7 +210,7 @@ export default function MediaModal(initialIndex) {
         const result = tmp2Result.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         const obj2 = { source: selectedMediaSource, disableDownload, shareable: tmp };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(8859, tmp3.paths), "MediaShareActionSheet", obj2);
+        obj3.openLazy(asyncRequire(8862, tmp3.paths), "MediaShareActionSheet", obj2);
       }
     }
   }, items5);

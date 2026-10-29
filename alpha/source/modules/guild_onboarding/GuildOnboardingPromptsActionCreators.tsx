@@ -1,20 +1,20 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7254
+// Function ID: 7255
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 4916, 4878, 7231, 7232, 1084, 4922, 1264, 5747, 584, 1294, 1402, 2]
+// Dependencies: [5, 502, 4917, 4879, 7255, 7256, 1084, 4923, 1264, 5749, 584, 1294, 1402, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7230 (GuildOnboardingPromptsActionCreators)
+// Module 7254 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7232 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7231 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7255 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let c16 = -2;
 const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboardingPromptsActionCreators.tsx");
 
-export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
+export function loadOnboardingPrompts(guildId) {
   obj = { has_new_prompts: false, number_of_prompts: 0 };
   const track = AnalyticsUtilsDefault.track;
   const GUILD_ONBOARDING_LOADED = constants.GUILD_ONBOARDING_LOADED;
@@ -198,10 +198,10 @@ export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
   const obj2 = AppAnalyticsUtils;
   const merged = Object.assign(obj2.collectGuildAnalyticsMetadata(guildId));
   track(GUILD_ONBOARDING_LOADED, obj);
-};
+}
 export { fetchOnboardingPrompts };
-export const maybeFetchOnboardingPrompts = function maybeFetchOnboardingPrompts() {
+export function maybeFetchOnboardingPrompts() {
   return obj(...arguments);
-};
+}
 export { startOnboarding };
 export const CONNECTIONS_STEP = -3;

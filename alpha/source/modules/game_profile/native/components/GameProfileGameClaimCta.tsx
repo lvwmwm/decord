@@ -1,12 +1,12 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9565
+// Function ID: 9566
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1084, 21, 558, 576, 9278, 7466, 7470, 1997, 1125, 5280, 2]
+// Dependencies: [5, 19, 1084, 21, 558, 576, 9282, 7489, 7493, 1998, 1125, 5281, 2]
 
-// Module 9533 (GameProfileGameClaimCta)
+// Module 9565 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7466 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7489 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -103,7 +103,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
       tmp9 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp13 = jsx(trackAction(5280).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
+      const tmp13 = jsx(trackAction(5281).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp13;
       tmp11 = tmp13;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           return obj;
         } else {
           trackAction = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         trackAction = 3;
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5280).Button;
+    const Button = trackAction(5281).Button;
     const intl = trackAction(1125).intl;
     tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1125).t["mqg+to"])} onPress={callback} />;
   } else {

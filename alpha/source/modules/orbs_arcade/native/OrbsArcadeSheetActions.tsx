@@ -1,11 +1,11 @@
-// Module ID: 16682
-// Function ID: 16683
+// Module ID: 16920
+// Function ID: 16921
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 21, 1125, 5246, 16679, 558, 576, 16683, 16686, 5280, 6731, 2]
+// Dependencies: [19, 21, 1125, 5247, 16917, 558, 576, 16921, 16924, 5281, 6754, 2]
 
-// Module 16682 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16679 */;
+// Module 16920 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16917 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -51,7 +51,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           if (null != tmp5) {
             obj2 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
             ({ text: obj6.text, onPress: obj6.onPress } = tmp5);
-            tmp17 = closure_3(tmp(5280).Button, obj2);
+            tmp17 = closure_3(tmp(5281).Button, obj2);
           }
           cResult[7] = tmp5;
           cResult[8] = tmp17;
@@ -72,7 +72,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         }
         const obj3 = { direction, size: "lg", style, children: items };
         items = [tmp9, tmp16];
-        const tmp21 = closure_4(game(6731).ButtonGroup, obj3);
+        const tmp21 = closure_4(game(6754).ButtonGroup, obj3);
         cResult[9] = direction;
         cResult[10] = style;
         cResult[11] = tmp9;
@@ -82,12 +82,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       if (primaryAction === obj.CLAIM) {
         const obj4 = { game, size: "lg" };
-        tmp11 = closure_3(sheetKey(16683), obj4);
+        tmp11 = closure_3(sheetKey(16921), obj4);
       } else {
         tmp11 = null;
         if (primaryAction === tmp10.PLAY) {
           const obj5 = { game, size: "lg" };
-          tmp11 = closure_3(sheetKey(16686), obj5);
+          tmp11 = closure_3(sheetKey(16924), obj5);
         }
       }
       cResult[4] = game;
@@ -176,17 +176,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     tmp6 = tmp3;
   }
   const obj3 = { direction, size: "lg", style, children: items };
-  const ButtonGroup = game(6731).ButtonGroup;
+  const ButtonGroup = game(6754).ButtonGroup;
   const tmp10 = game;
   const tmp9 = closure_4;
   if (primaryAction === obj.CLAIM) {
     const obj4 = { game, size: "lg" };
-    tmp13 = closure_3(sheetKey(16683), obj4);
+    tmp13 = closure_3(sheetKey(16921), obj4);
   } else {
     tmp13 = null;
     if (primaryAction === tmp12.PLAY) {
       const obj5 = { game, size: "lg" };
-      tmp13 = closure_3(sheetKey(16686), obj5);
+      tmp13 = closure_3(sheetKey(16924), obj5);
     }
   }
   items = [tmp13, ];
@@ -194,7 +194,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   if (null != tmp6) {
     const obj11 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
     ({ text: obj6.text, onPress: obj6.onPress } = tmp6);
-    tmp18 = closure_3(tmp10(5280).Button, obj11);
+    tmp18 = closure_3(tmp10(5281).Button, obj11);
   }
   items[1] = tmp18;
   return tmp9(ButtonGroup, obj3);

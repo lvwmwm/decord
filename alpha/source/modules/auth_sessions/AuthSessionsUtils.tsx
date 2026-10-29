@@ -1,15 +1,15 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16577
+// Function ID: 16578
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 16340, 558, 576, 504, 1125, 2046, 2]
+// Dependencies: [19, 502, 16578, 558, 576, 504, 1125, 2047, 2]
 // Exports: formatDate
 
-// Module 16339 (AuthSessionsUtils)
+// Module 16577 (AuthSessionsUtils)
 import intl2 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 16340 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 16578 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,15 +101,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthSessi
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
 export const useAuthSessions = tmp2;
-export const formatDate = function formatDate(arg0) {
+export function formatDate(arg0) {
   let stringResult;
   const timestamp = Date.now();
   if ((timestamp - arg0.valueOf()) / 1000 / 60 / 60 < 1) {
     const intl = intl2.intl;
     stringResult = intl.string(intl2.t.TXCmfL);
   } else {
-    const obj = _modDef2046(arg0);
+    const obj = _modDef2047(arg0);
     stringResult = obj.fromNow();
   }
   return stringResult;
-};
+}

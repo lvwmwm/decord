@@ -1,19 +1,19 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 8451
+// Function ID: 8452
 // Name: StageStartSystemMessage
-// Dependencies: [8351, 1125, 8353, 8355, 2]
+// Dependencies: [8373, 1125, 8375, 8377, 2]
 // Exports: createStageStartSystemMessage
 
-// Module 8429 (StageStartSystemMessage)
+// Module 8451 (StageStartSystemMessage)
 import intl2 from "intl" /* 1125 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8355 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8377 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageStartSystemMessage.tsx");
 
-export const createStageStartSystemMessage = function createStageStartSystemMessage(message) {
+export function createStageStartSystemMessage(message) {
   let aZtRW8;
   let formatToParts;
   let obj3;
@@ -28,4 +28,4 @@ export const createStageStartSystemMessage = function createStageStartSystemMess
   aZtRW8 = intl2.t.aZtRW8;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

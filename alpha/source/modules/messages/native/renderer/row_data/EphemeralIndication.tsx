@@ -1,14 +1,14 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8509
+// Function ID: 8510
 // Name: EphemeralIndication
-// Dependencies: [8171, 1084, 8488, 1125, 2064, 2]
+// Dependencies: [8194, 1084, 8510, 1125, 2065, 2]
 // Exports: createEphemeralIndication
 
-// Module 8487 (EphemeralIndication)
+// Module 8509 (EphemeralIndication)
 import intl6 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8488 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8171 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8510 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8194 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 ({ HelpdeskArticles: closure_4, MessageFlags: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/EphemeralIndication.tsx");
 
-export const createEphemeralIndication = function createEphemeralIndication(message) {
+export function createEphemeralIndication(message) {
   let intl2;
   let intl3;
   let intl4;
@@ -60,7 +60,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       const tmp12 = importDefault;
       const tmp13 = constants;
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
-        const tmp12Result = tmp12(2064);
+        const tmp12Result = tmp12(2065);
         obj4.helpArticleLink = tmp12Result.getArticleURL(tmp13.GUILD_AUTOMOD_BLOCKED_MESSAGE);
         const intl = tmp10(1125).intl;
         obj4.helpButtonAccessibilityLabel = intl.string(intl6.t.OiCBhP);
@@ -68,4 +68,4 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       return obj4;
     }
   }
-};
+}

@@ -105,7 +105,7 @@ function parseHermesJSStackFrame(category) {
 }
 let closure_2 = 1000000 * _mod997.MAX_PROFILE_DURATION_MS;
 
-export const convertToSentryProfile = function convertToSentryProfile(hermesProfile) {
+export function convertToSentryProfile(hermesProfile) {
   let hermesStacks;
   let jsThreads;
   let samples;
@@ -211,6 +211,6 @@ export const convertToSentryProfile = function convertToSentryProfile(hermesProf
     tmp15 = Object.keys(obj)[0] || "0";
     return obj2;
   }
-};
+}
 export { mapSamples };
 export { parseHermesJSStackFrame };

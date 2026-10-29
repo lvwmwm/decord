@@ -1,0 +1,20 @@
+// Module ID: 6471
+// Function ID: 6472
+// Name: trim
+// Dependencies: [1338, 6472, 6458]
+
+// Module 6471 (trim)
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1338 */;
+import RequireObjectCoercible from "RequireObjectCoercible" /* 6458 */;
+import ToString from "ToString" /* 6472 */;
+
+let closure_2 = callBoundIntrinsic("String.prototype.replace");
+const obj = /^\s$/;
+const isMatch = obj.test("\u180E");
+let closure_3 = isMatch ? /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/ : /^[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/;
+let closure_4 = isMatch ? /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/ : /[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+$/;
+
+export default function trim() {
+  const tmp = ToString;
+  return closure_2(closure_2(tmp(RequireObjectCoercible(this)), closure_3, ""), closure_4, "");
+};

@@ -1,30 +1,30 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11788
+// Function ID: 11789
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 4856, 4878, 5750, 5773, 7849, 1389, 5754, 21, 5004, 5001, 587, 558, 576, 1199, 504, 5640, 11735, 5774, 1125, 5280, 7257, 2]
+// Dependencies: [109, 32, 19, 17, 4857, 4879, 5752, 5775, 7872, 1389, 5756, 21, 5005, 5002, 587, 558, 576, 1199, 504, 5641, 11789, 5776, 1125, 5281, 7281, 2]
 
-// Module 11734 (RTCDebugOverlay)
+// Module 11788 (RTCDebugOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import Constants from "Constants" /* 5754 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5774 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11735 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import Constants from "Constants" /* 5756 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5776 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11789 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
-import RTCDebugStore from "RTCDebugStore" /* 5773 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7849 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
+import RTCDebugStore from "RTCDebugStore" /* 5775 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import ColorUtils_mod from "ColorUtils" /* 5001 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import ColorUtils_mod from "ColorUtils" /* 5002 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj3;
 let tmp;
 const get_initialized = tmp(504);
 const native = tmp(1199);
-const f112057 = (data, index) => {
+const f113286 = (data, index) => {
   const obj = { data };
   return closure_1_17(closure_1_25, obj, index);
 };
@@ -495,7 +495,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   }
   const tmpResult4 = guildId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
-  const tmp19 = channelId(5640)(stateFromStores1);
+  const tmp19 = channelId(5641)(stateFromStores1);
   let name = null;
   if (null != stateFromStores) {
     name = stateFromStores.name;
@@ -560,7 +560,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5640)(stateFromStores1);
+  const tmp4 = channelId(5641)(stateFromStores1);
   const tmp6 = closure_23;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {
@@ -749,7 +749,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           obj3 = { obj: mediaEngineConnectionId.transport };
           items[1] = closure_17(closure_23, obj2);
           const outbound = mediaEngineConnectionId.rtp.outbound;
-          obj4 = { title: "outbound", children: outbound.map(f112057) };
+          obj4 = { title: "outbound", children: outbound.map(f113286) };
           items[2] = closure_17(closure_23, obj4);
           const inbound = mediaEngineConnectionId.rtp.inbound;
           const keys = Object.keys(inbound);
@@ -806,7 +806,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         obj3 = { obj: mediaEngineConnectionId.transport };
         items[1] = closure_17(closure_23, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
-        obj4 = { title: "outbound", children: outbound.map(f112057) };
+        obj4 = { title: "outbound", children: outbound.map(f113286) };
         items[2] = closure_17(closure_23, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);

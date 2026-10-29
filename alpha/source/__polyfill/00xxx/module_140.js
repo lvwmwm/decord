@@ -125,9 +125,9 @@ let items = [
   },
   {
     key: "getElementById",
-    value: function getElementById(ReanimatedCustomWebAnimationsStyle) {
+    value: function getElementById(arg0) {
       const obj = NativeDOMCxxDefault;
-      const element = obj.getElementById(this._rootTag, ReanimatedCustomWebAnimationsStyle);
+      const element = obj.getElementById(this._rootTag, arg0);
       if (null == element) {
         return null;
       } else {
@@ -146,8 +146,8 @@ const importDefaultResultResult = _createClass(ReactNativeDocument, items);
 const metroImportDefault = importDefaultResultResult;
 
 export default importDefaultResultResult;
-export const createReactNativeDocument = function createReactNativeDocument(containerTag) {
+export function createReactNativeDocument(containerTag) {
   const obj = _mod137;
   const tmp = new metroImportDefault(containerTag, obj.createReactNativeDocumentInstanceHandle(containerTag));
   return tmp;
-};
+}

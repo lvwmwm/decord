@@ -1,12 +1,12 @@
-// Module ID: 5190
-// Function ID: 5191
+// Module ID: 5191
+// Function ID: 5192
 // Name: useWindowSizeClassifier
-// Dependencies: [5191, 558, 576, 2]
+// Dependencies: [5192, 558, 576, 2]
 // Exports: getWindowSizeClassifier
 
-// Module 5190 (useWindowSizeClassifier)
+// Module 5191 (useWindowSizeClassifier)
 import react from "react" /* 576 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5191 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5192 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ export const WINDOW_SIZE_THRESHOLD_SMALL = 360;
 export const WINDOW_SIZE_THRESHOLD_LARGE = 600;
 export const WINDOW_SIZE_THRESHOLD_XLARGE = 840;
 export { WindowSizeClassifier };
-export const getWindowSizeClassifier = function getWindowSizeClassifier() {
+export function getWindowSizeClassifier() {
   let XLARGE;
   const obj = useBaseAppContainerDimensions;
   const width = obj.getBaseAppContainerDimensions().width;
@@ -71,4 +71,4 @@ export const getWindowSizeClassifier = function getWindowSizeClassifier() {
     XLARGE = obj.XLARGE;
   }
   return XLARGE;
-};
+}

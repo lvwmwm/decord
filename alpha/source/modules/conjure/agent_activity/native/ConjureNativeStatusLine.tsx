@@ -1,17 +1,17 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 12433
+// Function ID: 12434
 // Name: ConjureNativeStatusLine
-// Dependencies: [19, 17, 21, 587, 5004, 558, 576, 5288, 11118, 7341, 12212, 5270, 12380, 1125, 3863, 6944, 2]
+// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 5289, 11172, 7365, 12266, 5271, 12434, 1125, 3864, 6968, 2]
 // Exports: laneTintFor, laneTintIndexFor
 
-// Module 12379 (ConjureNativeStatusLine)
+// Module 12433 (ConjureNativeStatusLine)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import MagicWandIcon from "MagicWandIcon" /* 12212 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import MagicWandIcon from "MagicWandIcon" /* 12266 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -410,7 +410,7 @@ const result = size.fileFinishedImporting("modules/conjure/agent_activity/native
 export default tmp4;
 export const LANE_TINT_COUNT = length;
 export { laneTintIndexFor };
-export const laneTintFor = function laneTintFor(str) {
+export function laneTintFor(str) {
   let length;
   let num = 0;
   let num2 = 0;
@@ -425,7 +425,7 @@ export const laneTintFor = function laneTintFor(str) {
     } while (num2 < length);
   }
   return tmp[num % items.length];
-};
+}
 export const MESSAGE_AVATAR_SIZE = 40;
 export const MESSAGE_EDGE_INSET = 12;
 export const MESSAGE_AVATAR_GAP = 12;

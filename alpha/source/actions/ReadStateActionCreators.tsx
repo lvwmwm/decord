@@ -1,17 +1,17 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7266
+// Function ID: 7267
 // Name: ReadStateActionCreators
-// Dependencies: [6805, 4860, 4856, 7243, 1389, 1084, 584, 11, 2]
+// Dependencies: [6828, 4861, 4857, 7267, 1389, 1084, 584, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 7242 (ReadStateActionCreators)
+// Module 7266 (ReadStateActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6805 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7243 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6828 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7267 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ const result = size.fileFinishedImporting("actions/ReadStateActionCreators.tsx")
 
 export { ack };
 export { ackCategory };
-export const ackChannel = function ackChannel(channel, location) {
+export function ackChannel(channel, location) {
   if (channel.isCategory()) {
     ackCategory(channel.id, location, true, true);
   } else {
@@ -90,43 +90,43 @@ export const ackChannel = function ackChannel(channel, location) {
       tmpResult4.dispatch(obj2);
     }
   }
-};
-export const bulkAck = function bulkAck(mapped, onFinished) {
+}
+export function bulkAck(mapped, onFinished) {
   const obj = DispatcherDefault;
   const obj2 = { type: "BULK_ACK", channels: mapped, context: CURRENT_APP_CONTEXT, onFinished };
   obj.dispatch(obj2);
-};
-export const localAck = function localAck(channelId) {
+}
+export function localAck(channelId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_LOCAL_ACK", channelId };
   obj.dispatch(obj2);
-};
-export const enableAutomaticAck = function enableAutomaticAck(channelId, windowId) {
+}
+export function enableAutomaticAck(channelId, windowId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "ENABLE_AUTOMATIC_ACK", channelId, windowId };
   obj.dispatch(obj2);
-};
-export const registerVisibleInlineChannel = function registerVisibleInlineChannel(channelId, windowId) {
+}
+export function registerVisibleInlineChannel(channelId, windowId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "REGISTER_VISIBLE_INLINE_CHANNEL", channelId, windowId };
   obj.dispatch(obj2);
-};
-export const unregisterVisibleInlineChannel = function unregisterVisibleInlineChannel(channelId, windowId) {
+}
+export function unregisterVisibleInlineChannel(channelId, windowId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "UNREGISTER_VISIBLE_INLINE_CHANNEL", channelId, windowId };
   obj.dispatch(obj2);
-};
-export const disableAutomaticAck = function disableAutomaticAck(channelId, windowId) {
+}
+export function disableAutomaticAck(channelId, windowId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "DISABLE_AUTOMATIC_ACK", channelId, windowId };
   obj.dispatch(obj2);
-};
-export const ackGuildFeature = function ackGuildFeature(guildId, GUILD_EVENT, tmp13Result) {
+}
+export function ackGuildFeature(guildId, GUILD_EVENT, tmp13Result) {
   const obj = DispatcherDefault;
   const obj2 = { type: "GUILD_FEATURE_ACK", id: guildId, ackType: GUILD_EVENT, ackedId: tmp13Result, local: false };
   obj.dispatch(obj2);
-};
-export const ackUserFeature = function ackUserFeature(NOTIFICATION_CENTER, ackedId) {
+}
+export function ackUserFeature(NOTIFICATION_CENTER, ackedId) {
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -137,9 +137,9 @@ export const ackUserFeature = function ackUserFeature(NOTIFICATION_CENTER, acked
     const obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
-export const clearOldestUnreadMessageId = function clearOldestUnreadMessageId(current) {
+}
+export function clearOldestUnreadMessageId(current) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CLEAR_OLDEST_UNREAD_MESSAGE", channelId: current };
   obj.dispatch(obj2);
-};
+}

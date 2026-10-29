@@ -1,14 +1,14 @@
-// Module ID: 10476
-// Function ID: 10477
+// Module ID: 10509
+// Function ID: 10510
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 5004, 558, 576, 1125, 5270, 5280, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 1125, 5271, 5281, 2]
 
-// Module 10476 (MediaKeyboardLimitedPickerNotice)
+// Module 10509 (MediaKeyboardLimitedPickerNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,8 +16,8 @@ let closure_4;
 let hasOwnProperty;
 let tmp;
 const intl3 = tmp(1125);
-const Text_Text = tmp(5270);
-const components_Button_Button = tmp(5280);
+const Text_Text = tmp(5271);
+const components_Button_Button = tmp(5281);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", paddingHorizontal: 16, paddingVertical: 16, alignItems: "center" }, absoluteContainer: { position: "absolute" }, text: { flex: 1 }, button: { marginLeft: 16 } });

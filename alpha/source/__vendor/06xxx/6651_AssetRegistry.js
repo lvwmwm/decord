@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "16b0b46c160f5dbee25bcf55b1de2e19", name: "img_account_sync_mastodon_white", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "267a8dd66b567343016eb7bda7db7c01", name: "img_account_sync_paypal_white", type: "png" });

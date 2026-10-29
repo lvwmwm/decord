@@ -1,21 +1,18 @@
 // Module ID: 15822
 // Function ID: 15823
-// Dependencies: [15823]
+// Dependencies: [15815]
 
 // Module 15822
-import _mod15823 from "module_15823" /* 15823 */;
+import _mod15815 from "module_15815" /* 15815 */;
+
+let version;
 
 
 export default (arg0, arg1) => {
-  let tmp3 = _mod15823[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    const tmpResult = _mod15823;
-    if (!arg1) {
-      obj = {};
-    }
-    tmpResult[arg0] = obj;
-    tmp3 = obj;
+  const tmp = _mod15815(arg0, arg1);
+  version = null;
+  if (tmp) {
+    version = tmp.version;
   }
-  return tmp3;
+  return version;
 };

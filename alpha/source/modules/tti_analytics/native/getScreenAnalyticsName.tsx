@@ -1,18 +1,18 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 17949
+// Function ID: 17950
 // Name: getScreenAnalyticsName
-// Dependencies: [4856, 7779, 4863, 5187, 5186, 2]
+// Dependencies: [4857, 7801, 4864, 5188, 5187, 2]
 // Exports: default, getChannelScreenName
 
-// Module 17711 (getScreenAnalyticsName)
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7779 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+// Module 17949 (getScreenAnalyticsName)
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7801 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5186);
+const NavigationRouteUtils = tmp(5187);
 const ACCEPT_INVITE_MODAL_KEY = AcceptInviteConstants.ACCEPT_INVITE_MODAL_KEY;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/tti_analytics/native/getScreenAnalyticsName.tsx");
@@ -81,7 +81,7 @@ export default function getScreenAnalyticsName() {
     }
   }
 };
-export const getChannelScreenName = function getChannelScreenName(channelId) {
+export function getChannelScreenName(channelId) {
   if (isStaticChannelRoute(channelId)) {
     return channelId;
   } else {
@@ -112,4 +112,4 @@ export const getChannelScreenName = function getChannelScreenName(channelId) {
     }
     return str;
   }
-};
+}

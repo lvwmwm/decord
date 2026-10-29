@@ -1,11 +1,11 @@
-// Module ID: 2077
-// Function ID: 2078
+// Module ID: 2078
+// Function ID: 2079
 // Name: preloader
-// Dependencies: [5, 1125, 1999, 2078, 2110, 2142, 2173, 2205, 2237, 2239, 2241, 2273, 2305, 2307, 2339, 2371, 2403, 2405, 2407, 2439, 2471, 2503, 2535, 2567, 2599, 2631, 2633, 2635, 2637, 2639, 2671, 2673, 2705, 2737, 2769, 2801, 2833, 2865, 2897, 2929, 2961, 2993, 3025, 3057, 3089, 3091, 3123, 3155, 3187, 3219, 3251, 3283, 3315, 3347, 3349, 3381, 3413, 3445, 3477, 3509, 3541, 3573, 3605, 3637, 3669, 3701, 3733, 3765, 3797, 3799, 3831, 3863, 3865, 3897, 3929, 3961, 3993, 4024, 4056, 4087, 4118, 4150, 4182, 4214, 4246, 4248, 4280, 2]
+// Dependencies: [5, 1125, 2000, 2079, 2111, 2143, 2174, 2206, 2238, 2240, 2242, 2274, 2306, 2308, 2340, 2372, 2404, 2406, 2408, 2440, 2472, 2504, 2536, 2568, 2600, 2632, 2634, 2636, 2638, 2640, 2672, 2674, 2706, 2738, 2770, 2802, 2834, 2866, 2898, 2930, 2962, 2994, 3026, 3058, 3090, 3092, 3124, 3156, 3188, 3220, 3252, 3284, 3316, 3348, 3350, 3382, 3414, 3446, 3478, 3510, 3542, 3574, 3606, 3638, 3670, 3702, 3734, 3766, 3798, 3800, 3832, 3864, 3866, 3898, 3930, 3962, 3994, 4025, 4057, 4088, 4119, 4151, 4183, 4215, 4247, 4249, 4281, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 2077 (preloader)
-import asyncRequire from "asyncRequire" /* 1999 */;
+// Module 2078 (preloader)
+import asyncRequire from "asyncRequire" /* 2000 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj = function _preloadAllIntlMessageFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -51,6 +51,6 @@ let obj = function _preloadAllIntlMessageFiles() {
 };
 const result = size.fileFinishedImporting("intl/preloader.tsx");
 
-export const preloadAllIntlMessageFiles = function preloadAllIntlMessageFiles() {
+export function preloadAllIntlMessageFiles() {
   return obj(...arguments);
-};
+}

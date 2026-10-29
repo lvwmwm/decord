@@ -1,10 +1,10 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16494
+// Function ID: 16495
 // Name: StringMatchUtils
 // Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 16256 (StringMatchUtils)
+// Module 16494 (StringMatchUtils)
 import size from "module_2" /* 2 */;
 
 function calculateJaroWinklerDistance(formatted, item) {
@@ -142,7 +142,7 @@ function calculateJaroWinklerDistance(formatted, item) {
 }
 let result = size.fileFinishedImporting("modules/search/StringMatchUtils.tsx");
 
-export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimilarity(toLocaleLowerCaseResult, item, arg2) {
+export function calculateJaroWinklerSimilarity(toLocaleLowerCaseResult, item, arg2) {
   let obj = arg2;
   if (arg2 == null) {
     obj = {};
@@ -157,4 +157,4 @@ export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimil
   }
   const formatted = toLocaleLowerCaseResult.toLowerCase();
   tmp2 = calculateJaroWinklerDistance(formatted, item.toLowerCase());
-};
+}

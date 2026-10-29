@@ -1,18 +1,18 @@
-// Module ID: 2030
-// Function ID: 2031
+// Module ID: 2031
+// Function ID: 2032
 // Name: StringUtils
-// Dependencies: [2, 2031]
+// Dependencies: [2, 2032]
 // Exports: isNullOrEmpty
 
-// Module 2030 (StringUtils)
-import utils_StringUtils from "utils/StringUtils" /* 2031 */;
+// Module 2031 (StringUtils)
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StringUtils.tsx");
 
-export const isNullOrEmpty = function isNullOrEmpty(id) {
-  return null == id || 0 === id.length;
-};
+export function isNullOrEmpty(trimmed) {
+  return null == trimmed || 0 === trimmed.length;
+}
 export const upperCaseFirstChar = utils_StringUtils.upperCaseFirstChar;
 export const getAcronym = utils_StringUtils.getAcronym;
 export const cssValueToNumber = utils_StringUtils.cssValueToNumber;

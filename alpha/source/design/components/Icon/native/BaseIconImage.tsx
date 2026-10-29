@@ -1,20 +1,20 @@
-// Module ID: 5704
-// Function ID: 5705
+// Module ID: 5706
+// Function ID: 5707
 // Name: BaseIconImage
-// Dependencies: [19, 21, 558, 576, 5288, 5705, 2]
+// Dependencies: [19, 21, 558, 576, 5289, 5707, 2]
 
-// Module 5704 (BaseIconImage)
+// Module 5706 (BaseIconImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5705 */;
+import FastImageDefault from "FastImage" /* 5707 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useToken = tmp(5288);
+const useToken = tmp(5289);
 const jsx = Fragment.jsx;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "useCallback", height: "PX_16" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "Reflect" }, refresh_sm: { width: 18, height: 18 } };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseIconImage(arg0) {
   let accessibilityLabel;
   let accessible;

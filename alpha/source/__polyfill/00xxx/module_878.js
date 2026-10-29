@@ -197,7 +197,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           while (true) {
@@ -316,7 +316,7 @@ const NATIVE = {
               return obj;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       })();
@@ -431,7 +431,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -476,7 +476,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -521,7 +521,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -566,7 +566,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -611,7 +611,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -665,7 +665,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -881,7 +881,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -910,7 +910,7 @@ const NATIVE = {
                 }
               }
               c1 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp3) {
             c1 = 3;
@@ -1099,7 +1099,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1121,7 +1121,7 @@ const NATIVE = {
                 }
               }
               c1 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp3) {
             c1 = 3;
@@ -1147,7 +1147,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1278,7 +1278,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1392,7 +1392,7 @@ const NATIVE = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1543,7 +1543,7 @@ sentryError1 = new _mod693.SentryError("Native Client is not available, can't st
 
 export { getRNSentryModule };
 export { NATIVE };
-export const getDataFromUri = function getDataFromUri(arg0) {
+export function getDataFromUri(arg0) {
   let closure_0 = arg0;
   return closure_4(this, undefined, undefined, function*(arg0, value) {
     if (c0 === 2) {
@@ -1556,7 +1556,7 @@ export const getDataFromUri = function getDataFromUri(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1579,4 +1579,4 @@ export const getDataFromUri = function getDataFromUri(arg0) {
       }
     }
   });
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14667
+// Function ID: 14668
 // Name: getConsoleIcon
-// Dependencies: [1084, 5668, 11759, 11760, 2]
+// Dependencies: [1084, 5670, 11813, 11814, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 14433 (getConsoleIcon)
+// Module 14667 (getConsoleIcon)
 import Constants from "Constants" /* 1084 */;
-import CallConstants from "CallConstants" /* 5668 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11759 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11760 */;
+import CallConstants from "CallConstants" /* 5670 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11813 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11814 */;
 import size from "module_2" /* 2 */;
 
 let PLAYSTATION;
@@ -23,7 +23,7 @@ const result = size.fileFinishedImporting("modules/game_console/native/getConsol
 export default function getConsoleIcon(arg0) {
   return obj[arg0];
 };
-export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePlatform(voicePlatform) {
+export function getConsoleIconForVoicePlatform(voicePlatform) {
   let tmp2;
   if (voicePlatform === VoicePlatforms.XBOX) {
     tmp2 = AssetRegistryDefault;
@@ -34,4 +34,4 @@ export const getConsoleIconForVoicePlatform = function getConsoleIconForVoicePla
     }
   }
   return tmp2;
-};
+}

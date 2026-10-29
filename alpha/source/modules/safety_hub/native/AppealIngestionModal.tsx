@@ -1,25 +1,25 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 13119
+// Function ID: 13120
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7957, 7933, 1084, 21, 5004, 587, 558, 576, 5270, 504, 12892, 1502, 7934, 12897, 12893, 7932, 7257, 1125, 5280, 6960, 12899, 1272, 12919, 12921, 12923, 12925, 12926, 5635, 7131, 2]
+// Dependencies: [5, 32, 19, 17, 7980, 7956, 1084, 21, 5005, 587, 558, 576, 5271, 504, 13113, 1503, 7957, 13118, 13114, 7955, 7281, 1125, 5281, 6984, 13120, 1272, 13140, 13142, 13144, 13146, 13147, 5636, 7155, 2]
 
-// Module 12898 (AppealIngestionModal)
+// Module 13119 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12897 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12899 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12919 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12921 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13118 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 13120 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 13140 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 13142 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7957 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7933 */;
+import SafetyHubStore from "SafetyHubStore" /* 7980 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
       tmp10 = null;
       if (subHeaderText.length > 0) {
         const obj3 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-        tmp10 = authStore2(tmp(5270).Text, obj3);
+        tmp10 = authStore2(tmp(5271).Text, obj3);
       }
     }
     cResult[3] = tmp4.subheader;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp6 = null != headerText && "" !== headerText;
   if (tmp6) {
     const obj4 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp6 = authStore2(tmp(5270).Text, obj4);
+    tmp6 = authStore2(tmp(5271).Text, obj4);
   }
   cResult[0] = headerText;
   cResult[1] = tmp4.header;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp25) {
           closure_2 = tmp25;
           if (0 === c3) {
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -668,7 +668,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           navigation = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

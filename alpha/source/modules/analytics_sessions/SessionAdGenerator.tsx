@@ -1,15 +1,15 @@
-// Module ID: 7830
-// Function ID: 7831
+// Module ID: 7853
+// Function ID: 7854
 // Name: SessionAdGenerator
-// Dependencies: [1101, 1278, 7616, 584, 1254, 2]
+// Dependencies: [1101, 1278, 7639, 584, 1254, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7830 (SessionAdGenerator)
+// Module 7853 (SessionAdGenerator)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import v1 from "v1" /* 1278 */;
-import SessionUtils from "SessionUtils" /* 7616 */;
+import SessionUtils from "SessionUtils" /* 7639 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -18,7 +18,7 @@ let closure_3 = 12 * DurationsDefault.Millis.HOUR;
 let c4 = null;
 const result = size.fileFinishedImporting("modules/analytics_sessions/SessionAdGenerator.tsx");
 
-export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtendSession) {
+export function getOrRefreshAdSession(shouldExtendSession) {
   let obj3;
   let flag = shouldExtendSession;
   if (shouldExtendSession === undefined) {
@@ -55,14 +55,14 @@ export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtend
   const obj4 = DispatcherDefault;
   obj4.dispatch({ type: "AD_SESSION_RESET" });
   tmp10 = _null;
-};
+}
 export function clearAdSession() {
   let c4 = null;
 }
 export function getCurrentAdSession() {
   return c4;
 }
-export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp) {
+export function isAdSessionExpired(createdAtTimestamp) {
   const timestamp = Date.now();
   if (timestamp < createdAtTimestamp.createdAtTimestamp) {
     const _HermesInternal = HermesInternal;
@@ -76,4 +76,4 @@ export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp
     const tmp5 = diff > SessionUtils.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
     return tmp5;
   }
-};
+}

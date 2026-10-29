@@ -1,8 +1,8 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13307
+// Function ID: 13308
 // Dependencies: [2]
 
-// Module 13076
+// Module 13307
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_14_possessed_textureAtlas.webp.js");

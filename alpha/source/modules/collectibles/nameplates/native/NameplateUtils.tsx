@@ -1,16 +1,16 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9474
+// Function ID: 9475
 // Name: NameplateUtils
-// Dependencies: [1986, 2]
+// Dependencies: [1987, 2]
 // Exports: getNameplateAssets
 
-// Module 9443 (NameplateUtils)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1986 */;
+// Module 9474 (NameplateUtils)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");
 
-export const getNameplateAssets = function getNameplateAssets(nameplate) {
+export function getNameplateAssets(nameplate) {
   let obj2;
   let obj3;
   let obj4;
@@ -22,4 +22,4 @@ export const getNameplateAssets = function getNameplateAssets(nameplate) {
   obj4 = CollectiblesAssetUtils;
   obj5 = { skuId, assetFormat: CollectiblesAssetUtils.CollectiblesItemAssetFormat.ANIMATED };
   return obj;
-};
+}

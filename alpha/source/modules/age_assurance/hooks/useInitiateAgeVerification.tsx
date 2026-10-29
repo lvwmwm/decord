@@ -1,13 +1,13 @@
-// Module ID: 7982
-// Function ID: 7983
+// Module ID: 8005
+// Function ID: 8006
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1389, 1084, 7453, 504, 584, 7918, 7459, 558, 576, 7931, 2]
+// Dependencies: [5, 32, 19, 1389, 1084, 7476, 504, 584, 7941, 7482, 558, 576, 7954, 2]
 
-// Module 7982 (useInitiateAgeVerification)
+// Module 8005 (useInitiateAgeVerification)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 7453 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7931 */;
+import Constants2 from "Constants" /* 7476 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7954 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp64) {
           if (0 === c5) {

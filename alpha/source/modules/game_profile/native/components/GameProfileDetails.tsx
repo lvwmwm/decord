@@ -1,28 +1,29 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9545
+// Function ID: 9546
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8876, 21, 8867, 9514, 7089, 9324, 9516, 9518, 5004, 587, 558, 576, 5696, 9520, 9521, 9335, 1125, 1997, 4829, 9522, 5270, 2]
+// Dependencies: [19, 17, 8879, 21, 8870, 9546, 7113, 9328, 9548, 9550, 9318, 5005, 587, 558, 576, 5698, 9552, 9553, 9339, 1125, 1998, 4830, 9554, 5271, 2]
 
-// Module 9513 (GameProfileDetails)
+// Module 9545 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1125 */;
-import Server from "Server" /* 1997 */;
-import DateUtilsAll from "DateUtils" /* 4829 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7089 */;
-import PlatformType from "PlatformType" /* 8867 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8876 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9324 */;
-import SKUUtils from "SKUUtils" /* 9335 */;
-import ScreenIcon from "ScreenIcon" /* 9514 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9516 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9518 */;
-import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9521 */;
+import Server from "Server" /* 1998 */;
+import DateUtilsAll from "DateUtils" /* 4830 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7113 */;
+import PlatformType from "PlatformType" /* 8870 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8879 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9318 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9328 */;
+import SKUUtils from "SKUUtils" /* 9339 */;
+import ScreenIcon from "ScreenIcon" /* 9546 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9548 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9550 */;
+import useGameProfilePlatformsDefault from "useGameProfilePlatforms" /* 9553 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,6 +50,7 @@ obj[PlatformType.PlatformType.DESKTOP] = ScreenIcon.ScreenIcon;
 obj[PlatformType.PlatformType.XBOX] = XboxNeutralIcon.XboxNeutralIcon;
 obj[PlatformType.PlatformType.PLAYSTATION] = PlaystationNeutralIcon.PlaystationNeutralIcon;
 obj[PlatformType.PlatformType.NINTENDO] = NintendoSwitchNeutralIcon.NintendoSwitchNeutralIcon;
+obj[PlatformType.PlatformType.ROBLOX] = RobloxNeutralIcon.RobloxNeutralIcon;
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, headerText: obj4, detailsContainer: obj5, detailsRow: obj6, detailsRowValue: obj7, detailsRowBottomBorder: obj8, platformsContainer: obj9, linksContainer: obj10 };
 obj3 = { gap: nativeDefault.space.PX_8 };
@@ -134,9 +136,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   let container;
   let game;
   let headerText;
-  let tmp23;
-  let tmp32;
-  let tmp55;
   let trackAction;
   let tmp = trackAction;
   let tmp2 = dependencyMap;
@@ -145,15 +144,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   ({ game, trackAction } = arg0);
   const tmp4 = closure_11();
   importDefault = tmp4;
-  let obj2 = trackAction(9520);
+  let obj2 = trackAction(9552);
   const gameProfileLinks = obj2.useGameProfileLinks(game);
   const arr2 = useGameProfilePlatformsDefault(game);
   if (null != game) {
     let tmp9;
-    let tmp17;
-    let tmp26;
-    let tmp58;
+    let tmp16;
+    let arr6;
+    let tmp25;
+    let arr7;
     let tmp59;
+    let tmp60;
     if (cResult[1] === game) {
       if (cResult[2] === gameProfileLinks) {
         if (cResult[3] === arr2) {
@@ -178,7 +179,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9335).getGenreText);
+        const mapped = genres1.map(tmp(9339).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -225,303 +226,248 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
     }
     if (cResult[15] !== game) {
-      let tmp20;
+      let tmp19;
       let companyByRole;
       if (game != null) {
-        companyByRole = game.getCompanyByRole(tmp(1997).GameCompanyRole.PUBLISHER);
+        companyByRole = game.getCompanyByRole(tmp(1998).GameCompanyRole.PUBLISHER);
       }
       const _Symbol2 = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
-          constructor(name) {
-            return name.name;
-          }
-        }
-        cResult[18] = L;
-        tmp20 = L;
+        const fn = function w(name) {
+          return name.name;
+        };
+        cResult[18] = fn;
+        tmp19 = fn;
       } else {
-        class L {
-          constructor(name) {
-            return name.name;
-          }
-        }
+        tmp19 = cResult[18];
       }
-      const mapped1 = companyByRole.map(tmp20);
+      const mapped1 = companyByRole.map(tmp19);
       const joined1 = mapped1.join(", ");
       cResult[15] = game;
       cResult[16] = companyByRole;
       cResult[17] = joined1;
-      tmp17 = joined1;
+      tmp16 = joined1;
+      arr6 = companyByRole;
     } else {
-      class L {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      tmp17 = cResult[17];
+      arr6 = cResult[16];
+      tmp16 = cResult[17];
     }
-    if (null != tmp17) {
-      class L {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      if ("" !== tmp17) {
-        class L {
-          constructor(name) {
-            return name.name;
+    if (null != tmp16) {
+      if ("" !== tmp16) {
+        let tmp21;
+        if (cResult[19] !== arr6.length) {
+          let stringResult1;
+          if (1 !== arr6.length) {
+            const intl4 = tmp(1125).intl;
+            stringResult1 = intl4.string(tmp(1125).t.Hc7Enk);
+          } else {
+            const intl3 = tmp(1125).intl;
+            stringResult1 = intl3.string(tmp(1125).t["4Byy/G"]);
           }
+          cResult[19] = arr6.length;
+          cResult[20] = stringResult1;
+          tmp21 = stringResult1;
+        } else {
+          tmp21 = cResult[20];
         }
-        if (cResult[21] === tmp17) {
-          class L {
-            constructor(name) {
-              return name.name;
-            }
+        if (cResult[21] === tmp16) {
+          let tmp23;
+          if (cResult[22] === tmp21) {
+            tmp23 = cResult[23];
           }
           items.push(tmp23);
         }
-        const obj4 = { label: tmp22, value: tmp17 };
-        cResult[21] = tmp17;
-        cResult[22] = tmp22;
+        const obj4 = { label: tmp21, value: tmp16 };
+        cResult[21] = tmp16;
+        cResult[22] = tmp21;
         cResult[23] = obj4;
         tmp23 = obj4;
       }
     }
     if (cResult[24] !== game) {
-      let tmp27Result;
-      let tmp29;
-      class L {
-        constructor(name) {
-          return name.name;
-        }
-      }
+      let tmp28;
+      let companyByRole1;
       if (game != null) {
-        class L {
-          constructor(name) {
-            return name.name;
-          }
-        }
-        tmp27Result = tmp27(tmp(1997).GameCompanyRole.DEVELOPER);
+        companyByRole1 = game.getCompanyByRole(tmp(1998).GameCompanyRole.DEVELOPER);
       }
       const _Symbol3 = Symbol;
       if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor(name) {
-            return name.name;
-          }
-        }
-        cResult[27] = O;
-        tmp29 = O;
+        const fn2 = function k(name) {
+          return name.name;
+        };
+        cResult[27] = fn2;
+        tmp28 = fn2;
       } else {
-        class O {
-          constructor(name) {
-            return name.name;
-          }
-        }
+        tmp28 = cResult[27];
       }
-      const mapped2 = tmp27Result.map(tmp29);
+      const mapped2 = companyByRole1.map(tmp28);
       const joined2 = mapped2.join(", ");
       cResult[24] = game;
-      cResult[25] = tmp27Result;
+      cResult[25] = companyByRole1;
       cResult[26] = joined2;
-      tmp26 = joined2;
+      tmp25 = joined2;
+      arr7 = companyByRole1;
     } else {
-      class O {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      tmp26 = cResult[26];
+      arr7 = cResult[25];
+      tmp25 = cResult[26];
     }
-    if (null != tmp26) {
-      class O {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      if ("" !== tmp26) {
-        class O {
-          constructor(name) {
-            return name.name;
+    if (null != tmp25) {
+      if ("" !== tmp25) {
+        let tmp30;
+        if (cResult[28] !== arr7.length) {
+          let stringResult2;
+          if (1 !== arr7.length) {
+            const intl6 = tmp(1125).intl;
+            stringResult2 = intl6.string(tmp(1125).t.KATEJB);
+          } else {
+            const intl5 = tmp(1125).intl;
+            stringResult2 = intl5.string(tmp(1125).t.na3PT0);
           }
+          cResult[28] = arr7.length;
+          cResult[29] = stringResult2;
+          tmp30 = stringResult2;
+        } else {
+          tmp30 = cResult[29];
         }
-        if (cResult[30] === tmp26) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
+        if (cResult[30] === tmp25) {
+          let tmp32;
+          if (cResult[31] === tmp30) {
+            tmp32 = cResult[32];
           }
           items.push(tmp32);
         }
-        const obj5 = { label: tmp31, value: tmp26 };
-        cResult[30] = tmp26;
-        cResult[31] = tmp31;
+        const obj5 = { label: tmp30, value: tmp25 };
+        cResult[30] = tmp25;
+        cResult[31] = tmp30;
         cResult[32] = obj5;
         tmp32 = obj5;
       }
     }
+    let firstReleaseDate;
     if (game != null) {
-      class O {
-        constructor(name) {
-          return name.name;
-        }
-      }
+      firstReleaseDate = game.firstReleaseDate;
     }
-    if (null != undefined) {
-      class O {
-        constructor(name) {
-          return name.name;
-        }
-      }
-      if ("" !== undefined) {
+    if (null != firstReleaseDate) {
+      if ("" !== firstReleaseDate) {
         let tmp35;
-        let tmp43;
-        class O {
-          constructor(name) {
-            return name.name;
-          }
-        }
+        let tmp37;
+        let tmp44;
         const _Symbol7 = Symbol;
         if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
-          const stringResult1 = obj9.string(tmp(1125).t.H3mPDT);
-          cResult[33] = stringResult1;
-          tmp35 = stringResult1;
+          const intl7 = tmp(1125).intl;
+          const stringResult3 = intl7.string(tmp(1125).t.H3mPDT);
+          cResult[33] = stringResult3;
+          tmp35 = stringResult3;
         } else {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
+          tmp35 = cResult[33];
         }
-        if (cResult[34] !== undefined) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
+        if (cResult[34] !== firstReleaseDate) {
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr3(4829).dateFormat;
-          arr3(4829);
-          const date = new Date(undefined);
-          cResult[34] = undefined;
-          cResult[35] = dateFormat(date, "LL");
+          const dateFormat = arr3(4830).dateFormat;
+          arr3(4830);
+          const date = new Date(firstReleaseDate);
           const dateFormatResult = dateFormat(date, "LL");
+          cResult[34] = firstReleaseDate;
+          cResult[35] = dateFormatResult;
+          tmp37 = dateFormatResult;
         } else {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
+          tmp37 = cResult[35];
         }
         if (cResult[36] !== tmp37) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
-          tmp44[0] = tmp35;
-          tmp44[1] = tmp37;
+          const obj6 = { label: tmp35, value: tmp37 };
           cResult[36] = tmp37;
-          cResult[37] = tmp44;
-          tmp43 = tmp44;
+          cResult[37] = obj6;
+          tmp44 = obj6;
         } else {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
+          tmp44 = cResult[37];
         }
-        items.push(tmp43);
+        items.push(tmp44);
       }
     }
     if (arr2.length > 0) {
-      class O {
-        constructor(name) {
-          return name.name;
+      let tmp46;
+      let tmp48;
+      if (cResult[38] !== arr2.length) {
+        let stringResult4;
+        if (1 !== arr2.length) {
+          const intl9 = tmp(1125).intl;
+          stringResult4 = intl9.string(tmp(1125).t.PNqxNe);
+        } else {
+          const intl8 = tmp(1125).intl;
+          stringResult4 = intl8.string(tmp(1125).t["UxAag+"]);
         }
+        cResult[38] = arr2.length;
+        cResult[39] = stringResult4;
+        tmp46 = stringResult4;
+      } else {
+        tmp46 = cResult[39];
       }
       const platformsContainer = tmp4.platformsContainer;
       if (cResult[40] !== arr2) {
-        let tmp48;
-        class O {
-          constructor(name) {
-            return name.name;
-          }
-        }
+        let tmp50;
         const _Symbol4 = Symbol;
         if (cResult[42] === Symbol.for("react.memo_cache_sentinel")) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
-          cResult[42] = tmp49;
-          tmp48 = tmp49;
+          const fn3 = function z(item) {
+            let obj2;
+            obj = { size: "md", color: closure_1(dependencyMap[12]).colors.ICON_SUBTLE, accessibilityLabel: obj2.getGameProfilePlatformText(item) };
+            const tmp = closure_1_10[item];
+            obj2 = trackAction(dependencyMap[17]);
+            return closure_1_8(tmp, obj, item);
+          };
+          cResult[42] = fn3;
+          tmp50 = fn3;
         } else {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
-          }
+          tmp50 = cResult[42];
         }
-        const mapped3 = arr2.map(tmp48);
+        const mapped3 = arr2.map(tmp50);
         cResult[40] = arr2;
         cResult[41] = mapped3;
+        tmp48 = mapped3;
       } else {
-        class O {
-          constructor(name) {
-            return name.name;
-          }
-        }
+        tmp48 = cResult[41];
       }
       if (cResult[43] === tmp4.platformsContainer) {
-        class O {
-          constructor(name) {
-            return name.name;
-          }
+        let tmp52;
+        if (cResult[44] === tmp48) {
+          tmp52 = cResult[45];
         }
         if (cResult[46] === tmp46) {
-          class O {
-            constructor(name) {
-              return name.name;
-            }
+          let tmp56;
+          if (cResult[47] === tmp52) {
+            tmp56 = cResult[48];
           }
-          items.push(tmp55);
+          items.push(tmp56);
         }
-        const obj6 = { label: tmp46, value: tmp51 };
+        const obj7 = { label: tmp46, value: tmp52 };
         cResult[46] = tmp46;
-        cResult[47] = tmp51;
-        cResult[48] = obj6;
-        tmp55 = obj6;
+        cResult[47] = tmp52;
+        cResult[48] = obj7;
+        tmp56 = obj7;
       }
-      const obj7 = { style: platformsContainer, children: tmp47 };
+      const obj8 = { style: platformsContainer, children: tmp48 };
+      const tmp55 = closure_8(closure_5, obj8);
       cResult[43] = tmp4.platformsContainer;
-      cResult[44] = tmp47;
-      cResult[45] = closure_8(closure_5, obj7);
-      const tmp54 = closure_8(closure_5, obj7);
+      cResult[44] = tmp48;
+      cResult[45] = tmp55;
+      tmp52 = tmp55;
     }
     const _Symbol5 = Symbol;
     if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
       class H {
         constructor(arg0) {
-          const tmp = closure_1(dependencyMap[21]);
-          return tmp(arg0, closure_1(dependencyMap[11]).colors.ICON_SUBTLE);
+          const tmp = closure_1(dependencyMap[22]);
+          return tmp(arg0, closure_1(dependencyMap[12]).colors.ICON_SUBTLE);
         }
       }
       cResult[49] = H;
-      tmp58 = H;
+      tmp59 = H;
     } else {
       class H {
         constructor(arg0) {
-          const tmp = closure_1(dependencyMap[21]);
-          return tmp(arg0, closure_1(dependencyMap[11]).colors.ICON_SUBTLE);
+          const tmp = closure_1(dependencyMap[22]);
+          return tmp(arg0, closure_1(dependencyMap[12]).colors.ICON_SUBTLE);
         }
       }
     }
@@ -533,7 +479,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         }
       }
       cResult[50] = F;
-      tmp59 = F;
+      tmp60 = F;
     } else {
       class F {
         constructor(arg0) {
@@ -541,12 +487,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
         }
       }
     }
-    const mapped4 = gameProfileLinks.map(tmp58);
-    const found = mapped4.filter(tmp59);
+    const mapped4 = gameProfileLinks.map(tmp59);
+    const found = mapped4.filter(tmp60);
     if (found.length > 0) {
-      let tmp60;
-      let tmp62;
-      let tmp67;
+      let tmp61;
+      let tmp63;
+      let tmp68;
       class F {
         constructor(arg0) {
           return null != arg0;
@@ -558,9 +504,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             return null != arg0;
           }
         }
-        const stringResult2 = obj12.string(tmp(1125).t["Oj3o1/"]);
-        cResult[51] = stringResult2;
-        tmp60 = stringResult2;
+        const stringResult5 = obj12.string(tmp(1125).t["Oj3o1/"]);
+        cResult[51] = stringResult5;
+        tmp61 = stringResult5;
       } else {
         class F {
           constructor(arg0) {
@@ -575,8 +521,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           }
         }
         cResult[52] = trackAction;
-        cResult[53] = tmp63;
-        tmp62 = tmp63;
+        cResult[53] = tmp64;
+        tmp63 = tmp64;
       } else {
         class F {
           constructor(arg0) {
@@ -584,19 +530,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           }
         }
       }
-      const obj8 = { style: tmp4.linksContainer, children: found.map(tmp62) };
-      const tmp66 = closure_8(closure_5, obj8);
-      if (cResult[54] !== tmp66) {
+      const obj9 = { style: tmp4.linksContainer, children: found.map(tmp63) };
+      const tmp67 = closure_8(closure_5, obj9);
+      if (cResult[54] !== tmp67) {
         class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp68[0] = tmp60;
-        tmp68[1] = tmp66;
-        cResult[54] = tmp66;
-        cResult[55] = tmp68;
-        tmp67 = tmp68;
+        tmp69[0] = tmp61;
+        tmp69[1] = tmp67;
+        cResult[54] = tmp67;
+        cResult[55] = tmp69;
+        tmp68 = tmp69;
       } else {
         class F {
           constructor(arg0) {
@@ -604,12 +550,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           }
         }
       }
-      items.push(tmp67);
+      items.push(tmp68);
     }
     if (items.length > 0) {
+      let tmp72;
       let tmp71;
-      let tmp70;
-      let tmp75;
+      let tmp76;
       class F {
         constructor(arg0) {
           return null != arg0;
@@ -621,33 +567,33 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
             return null != arg0;
           }
         }
-        const stringResult3 = obj14.string(tmp(1125).t["BwQ+9e"]);
-        const intl3 = tmp(1125).intl;
+        const stringResult6 = obj14.string(tmp(1125).t["BwQ+9e"]);
+        const intl10 = tmp(1125).intl;
         const obj10 = { igdbLink: IGDB_ATTRIBUTION_LINK };
-        const formatResult = intl3.format(tmp(1125).t.XPFZVl, obj10);
-        cResult[56] = stringResult3;
+        const formatResult = intl10.format(tmp(1125).t.XPFZVl, obj10);
+        cResult[56] = stringResult6;
         cResult[57] = formatResult;
-        tmp71 = formatResult;
-        tmp70 = stringResult3;
+        tmp72 = formatResult;
+        tmp71 = stringResult6;
       } else {
         class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp71 = cResult[57];
+        tmp72 = cResult[57];
       }
-      if (cResult[58] !== tmp71) {
+      if (cResult[58] !== tmp72) {
         class F {
           constructor(arg0) {
             return null != arg0;
           }
         }
-        tmp76[0] = tmp70;
-        tmp76[1] = tmp71;
-        cResult[58] = tmp71;
-        cResult[59] = tmp76;
-        tmp75 = tmp76;
+        tmp77[0] = tmp71;
+        tmp77[1] = tmp72;
+        cResult[58] = tmp72;
+        cResult[59] = tmp77;
+        tmp76 = tmp77;
       } else {
         class F {
           constructor(arg0) {
@@ -655,7 +601,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           }
         }
       }
-      items.push(tmp75);
+      items.push(tmp76);
     }
     cResult[1] = game;
     cResult[2] = gameProfileLinks;
@@ -695,7 +641,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
       }
     }
   } else {
-    let tmp78;
+    let tmp79;
     class F {
       constructor(arg0) {
         return null != arg0;
@@ -709,9 +655,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           return null != arg0;
         }
       }
-      const stringResult4 = obj16.string(tmp(1125).t["7OjmmH"]);
-      cResult[60] = stringResult4;
-      tmp78 = stringResult4;
+      const stringResult7 = obj16.string(tmp(1125).t["7OjmmH"]);
+      cResult[60] = stringResult7;
+      tmp79 = stringResult7;
     } else {
       class F {
         constructor(arg0) {
@@ -725,10 +671,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           return null != arg0;
         }
       }
-      const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
+      const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp79 };
       cResult[61] = tmp4.headerText;
-      cResult[62] = closure_8(tmp(5270).Text, obj11);
-      const tmp81 = closure_8(tmp(5270).Text, obj11);
+      cResult[62] = closure_8(tmp(5271).Text, obj11);
+      const tmp82 = closure_8(tmp(5271).Text, obj11);
     } else {
       class F {
         constructor(arg0) {
@@ -788,9 +734,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   let closure_2 = tmp;
   let tmp2 = game;
   const tmp3 = gameProfileLinks;
-  obj = game(gameProfileLinks[15]);
+  obj = game(gameProfileLinks[16]);
   gameProfileLinks = obj.useGameProfileLinks(game);
-  const tmp5 = trackAction(gameProfileLinks[16])(game);
+  const tmp5 = trackAction(gameProfileLinks[17])(game);
   react = tmp5;
   let items = [, , , , , ];
   ({ linksContainer: arr[0], platformsContainer: arr[1] } = tmp);
@@ -906,17 +852,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
           style: closure_2.platformsContainer,
           children: length.map((item) => {
                 let obj2;
-                obj = { size: "md", color: trackAction(gameProfileLinks[11]).colors.ICON_SUBTLE, accessibilityLabel: obj2.getGameProfilePlatformText(item) };
+                obj = { size: "md", color: trackAction(gameProfileLinks[12]).colors.ICON_SUBTLE, accessibilityLabel: obj2.getGameProfilePlatformText(item) };
                 const tmp = closure_1_10[item];
-                obj2 = game(gameProfileLinks[16]);
+                obj2 = game(gameProfileLinks[17]);
                 return closure_1_8(tmp, obj, item);
               })
         };
         push5(obj6);
       }
       const mapped3 = gameProfileLinks.map((item) => {
-        const tmp = trackAction(gameProfileLinks[21]);
-        return tmp(item, trackAction(gameProfileLinks[11]).colors.ICON_SUBTLE);
+        const tmp = trackAction(gameProfileLinks[22]);
+        return tmp(item, trackAction(gameProfileLinks[12]).colors.ICON_SUBTLE);
       });
       const found = mapped3.filter((item) => null != item);
       if (found.length > 0) {
@@ -948,9 +894,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileD
   if (0 !== memo.length) {
     let tmp7 = closure_9;
     let obj2 = { style: tmp.container, children: items1 };
-    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[18]).t["7OjmmH"]) };
-    const Text = tmp2(tmp3[22]).Text;
-    intl = tmp2(tmp3[18]).intl;
+    let obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(tmp2(tmp3[19]).t["7OjmmH"]) };
+    const Text = tmp2(tmp3[23]).Text;
+    intl = tmp2(tmp3[19]).intl;
     items1 = [closure_8(Text, obj3), ];
     let obj4 = {
       style: tmp.detailsContainer,

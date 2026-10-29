@@ -1,22 +1,22 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14625
+// Function ID: 14626
 // Name: ConjureYouScreenButton
-// Dependencies: [19, 21, 5004, 587, 558, 576, 14392, 1503, 14397, 14399, 1125, 3863, 14400, 12212, 14402, 2]
+// Dependencies: [19, 21, 5005, 587, 558, 576, 14626, 1504, 14631, 14633, 1125, 3864, 14634, 12266, 14636, 2]
 
-// Module 14391 (ConjureYouScreenButton)
+// Module 14625 (ConjureYouScreenButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1503 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import MagicWandIcon from "MagicWandIcon" /* 12212 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 14392 */;
-import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14397 */;
-import getIconSize from "getIconSize" /* 14399 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14400 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14402 */;
+import Link from "Link" /* 1504 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import MagicWandIcon from "MagicWandIcon" /* 12266 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 14626 */;
+import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14631 */;
+import getIconSize from "getIconSize" /* 14633 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14634 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 14636 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1125).intl;
-      const stringResult = intl.string(_modDef3863.uk6jhJ);
+      const stringResult = intl.string(_modDef3864.uk6jhJ);
       cResult[3] = stringResult;
       tmp13 = stringResult;
     } else {
@@ -97,7 +97,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp7Result = tmp7(tmp2Result, obj3);
   }
   const intl = tmp5(1125).intl;
-  return <tmp8 IconComponent={MagicWandIcon.MagicWandIcon} icon={tmp7Result} accessibilityLabel={accessibilityLabel} label={intl.string(_modDef3863.uk6jhJ)} onPress={openConjureProjectsSheetDefault} showRedDot={hasBadge} dotStyle={tmp.dot} />;
+  return <tmp8 IconComponent={MagicWandIcon.MagicWandIcon} icon={tmp7Result} accessibilityLabel={accessibilityLabel} label={intl.string(_modDef3864.uk6jhJ)} onPress={openConjureProjectsSheetDefault} showRedDot={hasBadge} dotStyle={tmp.dot} />;
 }));
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/ConjureYouScreenButton.tsx");
 

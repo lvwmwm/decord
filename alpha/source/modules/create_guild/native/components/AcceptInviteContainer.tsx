@@ -1,21 +1,21 @@
-// Module ID: 13892
-// Function ID: 13893
+// Module ID: 14125
+// Function ID: 14126
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 4916, 4878, 5736, 1084, 4922, 21, 5004, 587, 1502, 504, 6960, 1402, 7226, 1999, 7843, 8940, 7465, 8900, 10049, 13893, 7257, 5070, 2]
+// Dependencies: [5, 19, 4917, 4879, 5738, 1084, 4923, 21, 5005, 587, 1503, 504, 6984, 1402, 7250, 2000, 7866, 8943, 7488, 8903, 10081, 14126, 7281, 5071, 2]
 // Exports: default
 
-// Module 13892 (AcceptInviteContainer)
+// Module 14125 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import InviteStore from "InviteStore" /* 5736 */;
-import createStyles from "createStyles" /* 5004 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import InviteStore from "InviteStore" /* 5738 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, closure_2, closure_3, navigation;
@@ -117,7 +117,7 @@ export default function AcceptInviteContainer(code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;
@@ -203,7 +203,7 @@ export default function AcceptInviteContainer(code) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function AcceptInviteContainer(code) {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -263,7 +263,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "IconComponent" };
                               } else {
                                 closure_1();
                                 const tmp8Result = closure_2_0(transitionToInviteChannel[17]);
@@ -293,7 +293,7 @@ export default function AcceptInviteContainer(code) {
                             closure_1();
                           }
                           c6 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } else if (1 === c5) {
                         c4 = 0;
@@ -348,7 +348,7 @@ export default function AcceptInviteContainer(code) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -403,7 +403,7 @@ export default function AcceptInviteContainer(code) {
                       closure_128_2(closure_128_1);
                     }
                     c2 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   } catch (tmp15) {
                     c2 = 3;
                     throw tmp15;
@@ -431,7 +431,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         code = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp4) {
         code = 3;
         throw tmp4;

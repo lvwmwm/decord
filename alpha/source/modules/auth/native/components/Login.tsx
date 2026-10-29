@@ -1,25 +1,25 @@
-// Module ID: 7070
-// Function ID: 7071
+// Module ID: 7094
+// Function ID: 7095
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7071, 502, 1084, 21, 5004, 558, 576, 5270, 6944, 5945, 1125, 1381, 7072, 7073, 1502, 504, 1505, 6703, 7075, 5946, 7076, 7077, 7078, 6409, 7079, 7083, 7084, 7086, 7080, 5280, 7087, 1627, 7089, 7091, 7044, 7097, 7099, 7101, 6013, 7108, 7069, 2]
+// Dependencies: [5, 32, 19, 17, 7095, 502, 1084, 21, 5005, 558, 576, 5271, 6968, 5947, 1125, 1381, 7096, 7097, 1503, 504, 1506, 6727, 7099, 5948, 7100, 7101, 7102, 6433, 7103, 7107, 7108, 7110, 7104, 5281, 7111, 1628, 7113, 7115, 7068, 7121, 7123, 7125, 6015, 7132, 7093, 2]
 // Exports: default
 
-// Module 7070 (Login)
+// Module 7094 (Login)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl11 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import Pressables from "Pressables" /* 6944 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import Pressables from "Pressables" /* 6968 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7071 */;
+import PhoneStore from "PhoneStore" /* 7095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -257,7 +257,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -310,7 +310,7 @@ export default function Login(isMultiAccount) {
               c3 = 0;
               closure_129_4(false);
               _undefined3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               if (closure_0 === closure_0(ref[22]).PasswordResetMethods.ONE_TIME_LOGIN) {
                 const obj = closure_0(ref[23]);
@@ -330,7 +330,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           closure_129_4(false);
           _undefined3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp43) {
         ref = tmp43;
@@ -366,7 +366,7 @@ export default function Login(isMultiAccount) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -388,7 +388,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -426,7 +426,7 @@ export default function Login(isMultiAccount) {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp19) {
           if (0 === c6) {
@@ -464,7 +464,7 @@ export default function Login(isMultiAccount) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -530,7 +530,7 @@ export default function Login(isMultiAccount) {
           closure_129_4(false);
         }
         _undefined3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp48) {
         ref = tmp48;
         if (0 === c3) {

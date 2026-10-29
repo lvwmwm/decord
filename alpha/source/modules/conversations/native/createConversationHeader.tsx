@@ -1,16 +1,16 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13519
+// Function ID: 13520
 // Name: createConversationHeader
-// Dependencies: [8166, 8309, 12516, 1125, 3765, 10028, 2]
+// Dependencies: [8189, 8331, 12575, 1125, 3766, 10060, 2]
 // Exports: default, findConversationHeaderRowIndex
 
-// Module 13286 (createConversationHeader)
+// Module 13519 (createConversationHeader)
 import intl2 from "intl" /* 1125 */;
-import _modDef3765 from "module_3765" /* 3765 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import computeScrollData from "computeScrollData" /* 10028 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12516 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8166 */;
+import _modDef3766 from "module_3766" /* 3766 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import computeScrollData from "computeScrollData" /* 10060 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12575 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -21,12 +21,12 @@ const result = size.fileFinishedImporting("modules/conversations/native/createCo
 export default function createConversationHeader(conversationId) {
   let intl;
   let obj2;
-  const obj = { conversationId: conversationId.id, channelId: conversationId.channelId, startMessageId: conversationId.startMessageId, title: conversationId.title, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3765.pU5Dut) };
+  const obj = { conversationId: conversationId.id, channelId: conversationId.channelId, startMessageId: conversationId.startMessageId, title: conversationId.title, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3766.pU5Dut) };
   obj2 = renderer_EmbedUtils;
   intl = intl2.intl;
   return obj;
 };
-export const findConversationHeaderRowIndex = function findConversationHeaderRowIndex(previousRows, startMessageId) {
+export function findConversationHeaderRowIndex(previousRows, startMessageId) {
   const obj = computeScrollData;
   const findMessageRowIndexResult = obj.findMessageRowIndex(previousRows, startMessageId.startMessageId);
   if (null != findMessageRowIndexResult) {
@@ -42,4 +42,4 @@ export const findConversationHeaderRowIndex = function findConversationHeaderRow
     }
     return sum;
   }
-};
+}

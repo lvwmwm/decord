@@ -19,7 +19,7 @@ obj4 = { targetField: "uri", targetAttribute: CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOU
 ({ targetField: "uri", targetAttribute: CLIENT_ADDRESS_ATTRIBUTE.MCP_RESOURCE_URI_ATTRIBUTE });
 ({ targetField: "name", targetAttribute: CLIENT_ADDRESS_ATTRIBUTE.MCP_PROMPT_NAME_ATTRIBUTE, captureName: true, captureArguments: true, argumentsField: "arguments" });
 
-export const extractTargetInfo = function extractTargetInfo(method, arg1) {
+export function extractTargetInfo(method, arg1) {
   if (obj[method]) {
     let tmp2;
     if (obj[method].targetField) {
@@ -47,8 +47,8 @@ export const extractTargetInfo = function extractTargetInfo(method, arg1) {
     obj = { attributes: {} };
     return obj;
   }
-};
-export const getRequestArguments = function getRequestArguments(method3, uri) {
+}
+export function getRequestArguments(method3, uri) {
   let str;
   let tmp11;
   obj = {};
@@ -110,4 +110,4 @@ export const getRequestArguments = function getRequestArguments(method3, uri) {
   } else {
     return obj;
   }
-};
+}

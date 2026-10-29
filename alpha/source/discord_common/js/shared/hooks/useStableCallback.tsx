@@ -1,9 +1,9 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 7118
+// Function ID: 7119
 // Name: hooks/useStableCallback
 // Dependencies: [19, 558, 576, 2]
 
-// Module 7094 (hooks/useStableCallback)
+// Module 7118 (hooks/useStableCallback)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

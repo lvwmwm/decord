@@ -97,7 +97,7 @@ function getCachedSuperProperties() {
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("35320200000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("35320300000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;
@@ -309,7 +309,7 @@ let result1 = size.fileFinishedImporting("../discord_common/js/packages/analytic
 export { getOS };
 export { getBrowser };
 export { getDevice };
-export const getCampaignParams = function getCampaignParams(arg0) {
+export function getCampaignParams(arg0) {
   let closure_0 = arg0;
   obj = {};
   const item = closure_15.forEach(function(item) {
@@ -339,7 +339,7 @@ export const getCampaignParams = function getCampaignParams(arg0) {
     }
   });
   return obj;
-};
+}
 export { extendSuperProperties };
 export function getSuperProperties() {
   return obj;

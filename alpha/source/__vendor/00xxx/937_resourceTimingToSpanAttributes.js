@@ -10,7 +10,7 @@ import extractNetworkProtocol from "extractNetworkProtocol" /* 933 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const resourceTimingToSpanAttributes = function resourceTimingToSpanAttributes(nextHopProtocol) {
+export function resourceTimingToSpanAttributes(nextHopProtocol) {
   let fromEntriesResult;
   let result1;
   let result10;
@@ -190,4 +190,4 @@ export const resourceTimingToSpanAttributes = function resourceTimingToSpanAttri
     fromEntriesResult = obj;
   }
   return fromEntriesResult;
-};
+}

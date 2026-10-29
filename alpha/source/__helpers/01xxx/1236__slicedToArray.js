@@ -86,12 +86,12 @@ function listEnumValues(arg0) {
 
 export { isEnumObject };
 export { listEnumValues };
-export const listEnumNames = function listEnumNames(arg0) {
+export function listEnumNames(arg0) {
   const arr = listEnumValues(arg0);
   return arr.map((name) => name.name);
-};
-export const listEnumNumbers = function listEnumNumbers(arg0) {
+}
+export function listEnumNumbers(arg0) {
   const arr = listEnumValues(arg0);
   const mapped = arr.map((number) => number.number);
   return mapped.filter((item, index, arr) => arr.indexOf(item) == index);
-};
+}

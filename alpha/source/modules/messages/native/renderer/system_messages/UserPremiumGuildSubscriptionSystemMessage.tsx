@@ -1,20 +1,20 @@
-// Module ID: 8396
-// Function ID: 8397
+// Module ID: 8418
+// Function ID: 8419
 // Name: UserPremiumGuildSubscriptionSystemMessage
-// Dependencies: [8397, 8351, 8353, 1125, 8355, 2]
+// Dependencies: [8419, 8373, 8375, 1125, 8377, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 8396 (UserPremiumGuildSubscriptionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8397 */;
+// Module 8418 (UserPremiumGuildSubscriptionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8419 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8355);
+const createCommonMessageDefault = tmp(8377);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 
-export const createUserPremiumGuildSubscriptionSystemMessage = function createUserPremiumGuildSubscriptionSystemMessage(message) {
+export function createUserPremiumGuildSubscriptionSystemMessage(message) {
   let formatToPartsResult;
   message = message.message;
   const roleStyle = message.roleStyle;
@@ -34,4 +34,4 @@ export const createUserPremiumGuildSubscriptionSystemMessage = function createUs
   const obj4 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj4;
-};
+}

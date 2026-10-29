@@ -1,13 +1,13 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 9528
+// Function ID: 9529
 // Name: ImprovedMobileShopLoadingExperiment
-// Dependencies: [19, 1452, 558, 576, 2]
+// Dependencies: [19, 1453, 558, 576, 2]
 // Exports: useIsInImprovedMobileShopLoading
 
-// Module 9497 (ImprovedMobileShopLoadingExperiment)
+// Module 9528 (ImprovedMobileShopLoadingExperiment)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,6 +40,6 @@ const result1 = size.fileFinishedImporting("modules/collectibles/experiments/Imp
 export default apexExperiment;
 export const useIsImprovedMobileShopLoadingEnabled = tmp3;
 export const ImprovedMobileShopLoadingProvider = Provider;
-export const useIsInImprovedMobileShopLoading = function useIsInImprovedMobileShopLoading() {
+export function useIsInImprovedMobileShopLoading() {
   return react.useContext(context);
-};
+}

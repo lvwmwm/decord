@@ -1,18 +1,18 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14997
+// Function ID: 14998
 // Name: InteractionStatus
-// Dependencies: [8636, 1125, 2]
+// Dependencies: [8658, 1125, 2]
 // Exports: createInteractionStatus
 
-// Module 14762 (InteractionStatus)
+// Module 14997 (InteractionStatus)
 import intl5 from "intl" /* 1125 */;
-import InteractionUtils from "InteractionUtils" /* 8636 */;
+import InteractionUtils from "InteractionUtils" /* 8658 */;
 import size from "module_2" /* 2 */;
 
 const constants = { LOADING: 0, [0]: "LOADING", FAILED: 1, [1]: "FAILED", EPHEMERAL_SUCCESS: 999, [999]: "EPHEMERAL_SUCCESS" };
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/interaction/InteractionStatus.tsx");
 
-export const createInteractionStatus = function createInteractionStatus(message, interaction) {
+export function createInteractionStatus(message, interaction) {
   let intl2;
   let intl3;
   let intl4;
@@ -40,4 +40,4 @@ export const createInteractionStatus = function createInteractionStatus(message,
   } else if (InteractionUtils.InteractionStatusViewState.EPHEMERAL_SUCCESS === interactionStatusViewState) {
     return { text: "", state: constants.EPHEMERAL_SUCCESS };
   }
-};
+}

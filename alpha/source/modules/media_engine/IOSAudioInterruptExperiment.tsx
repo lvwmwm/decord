@@ -1,11 +1,11 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15873
+// Function ID: 15874
 // Name: IOSAudioInterruptExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getIOSAudioInterruptExperimentConfig
 
-// Module 15637 (IOSAudioInterruptExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 15873 (IOSAudioInterruptExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +15,7 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/media_engine/IOSAudioInterruptExperiment.tsx");
 
-export const getIOSAudioInterruptExperimentConfig = function getIOSAudioInterruptExperimentConfig(handleConnectionOpen) {
+export function getIOSAudioInterruptExperimentConfig(handleConnectionOpen) {
   const obj = { location: handleConnectionOpen };
   return config.getConfig(obj);
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 5184
-// Function ID: 5185
+// Module ID: 5185
+// Function ID: 5186
 // Name: CustomThemesRandomUtils
 // Dependencies: [683, 2]
 // Exports: generateRandomColorOptions
 
-// Module 5184 (CustomThemesRandomUtils)
+// Module 5185 (CustomThemesRandomUtils)
 import _modDef683 from "module_683" /* 683 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/client_themes/CustomThemesRan
 export const COLOR_PALETTE = items;
 export { ColorType };
 export const GradientType = obj2;
-export const generateRandomColorOptions = function generateRandomColorOptions() {
+export function generateRandomColorOptions() {
   let obj;
   function generateColorHarmony(items, items1) {
     function generateAnalogousColors(items, value3, value4, value) {
@@ -122,4 +122,4 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
     obj2 = { type: obj.GRADIENT, colors: generateColorHarmony(tmp10, tmp12), angle: tmp2, intensity: tmp, gradientType: tmp12 };
     return obj2;
   }
-};
+}

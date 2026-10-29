@@ -1,18 +1,18 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 10086
+// Function ID: 10087
 // Name: InviteAcceptAgeGroupErrorsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getIsInviteAcceptAgeGroupErrorsEnabled
 
-// Module 10054 (InviteAcceptAgeGroupErrorsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 10086 (InviteAcceptAgeGroupErrorsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-invite-accept-age-group-errors", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_gate/experiments/InviteAcceptAgeGroupErrorsExperiment.tsx");
 
-export const getIsInviteAcceptAgeGroupErrorsEnabled = function getIsInviteAcceptAgeGroupErrorsEnabled(invite_accept_error) {
+export function getIsInviteAcceptAgeGroupErrorsEnabled(invite_accept_error) {
   const obj = { location: invite_accept_error };
   return config.getConfig(obj).enabled;
-};
+}

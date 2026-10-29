@@ -1,10 +1,10 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11709
+// Function ID: 11710
 // Name: MobileVoiceOverlayStore
-// Dependencies: [1084, 1264, 1381, 1627, 504, 584, 2]
+// Dependencies: [1084, 1264, 1381, 1628, 504, 584, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 11655 (MobileVoiceOverlayStore)
+// Module 11709 (MobileVoiceOverlayStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
@@ -13,7 +13,7 @@ import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MetaQuestUtils = tmp(1627);
+const MetaQuestUtils = tmp(1628);
 const AnalyticEvents = Constants.AnalyticEvents;
 let flag = false;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
@@ -57,7 +57,7 @@ const mobileVoiceOverlayStore = new MobileVoiceOverlayStore(DispatcherDefault, o
 const result = size.fileFinishedImporting("stores/native/MobileVoiceOverlayStore.tsx");
 
 export default mobileVoiceOverlayStore;
-export const isMobileOverlaySupported = function isMobileOverlaySupported() {
+export function isMobileOverlaySupported() {
   const obj = PlatformUtils;
   let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
@@ -65,4 +65,4 @@ export const isMobileOverlaySupported = function isMobileOverlaySupported() {
     isAndroidResult = !tmpResult.isMetaQuest();
   }
   return isAndroidResult;
-};
+}

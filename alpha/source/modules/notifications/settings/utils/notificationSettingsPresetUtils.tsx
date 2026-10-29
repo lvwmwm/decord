@@ -1,18 +1,23 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8353
+// Function ID: 8354
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1084, 6740, 6519, 1125, 2]
-// Exports: arePresetSettingsUnset, presetName, webPresetFromSettings
+// Dependencies: [1084, 6763, 6543, 2]
+// Exports: presetFromSettings
 
-// Module 8331 (notificationSettingsPresetUtils)
+// Module 8353 (notificationSettingsPresetUtils)
 import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import merged5 from "merged5" /* 6519 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
+import merged5 from "merged5" /* 6543 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
 import size from "module_2" /* 2 */;
 
-function presetFromSettings(stateFromStores, stateFromStores1) {
-  const items = [stateFromStores1, stateFromStores];
+const UserNotificationSettings = Constants.UserNotificationSettings;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const Presets = { ALL_MESSAGES: "all_messages", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };
+const result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
+
+export { Presets };
+export function presetFromSettings(unreadSetting, UserGuildSettingsStore) {
+  const items = [UserGuildSettingsStore, unreadSetting];
   const str = merged5;
   const match = str.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
@@ -27,53 +32,3 @@ function presetFromSettings(stateFromStores, stateFromStores1) {
   const withResult4 = withResult3.with(items5, () => constants.NOTHING);
   return withResult4.otherwise(() => constants.CUSTOM);
 }
-const UserNotificationSettings = Constants.UserNotificationSettings;
-const UnreadSetting = ReadStateConstants.UnreadSetting;
-const Presets = { ALL_MESSAGES: "all_messages", HYBRID: "hybrid", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };
-const result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
-
-export { Presets };
-export { presetFromSettings };
-export const webPresetFromSettings = function webPresetFromSettings(stateFromStores, stateFromStores1) {
-  if (stateFromStores === UnreadSetting.ALL_MESSAGES) {
-    let HYBRID;
-    if (stateFromStores1 === UserNotificationSettings.ONLY_MENTIONS) {
-      HYBRID = obj.HYBRID;
-    }
-    return HYBRID;
-  }
-  HYBRID = presetFromSettings(stateFromStores, stateFromStores1);
-};
-export const presetName = function presetName(arg0) {
-  const str = merged5;
-  const match = str.match(arg0);
-  const withResult = match.with(obj.ALL_MESSAGES, () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t.hZrr6k);
-  });
-  const withResult1 = withResult.with(obj.HYBRID, () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t.JzbSEY);
-  });
-  const withResult2 = withResult1.with(obj.MENTIONS, () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t.y59NJm);
-  });
-  const withResult3 = withResult2.with(obj.NOTHING, () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t["pGn/bJ"]);
-  });
-  const withResult4 = withResult3.with(obj.CUSTOM, () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t["32yow9"]);
-  });
-  return withResult4.exhaustive();
-};
-export const arePresetSettingsUnset = function arePresetSettingsUnset(arg0, arg1) {
-  let tmp = null != arg0 && arg0 !== UnreadSetting.UNSET;
-  if (!tmp) {
-    tmp = null != arg1 && arg1 !== UserNotificationSettings.NULL;
-    const tmp4 = null != arg1 && arg1 !== UserNotificationSettings.NULL;
-  }
-  return !tmp;
-};

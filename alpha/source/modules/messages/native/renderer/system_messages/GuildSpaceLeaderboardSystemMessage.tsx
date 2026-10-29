@@ -1,28 +1,28 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8513
+// Function ID: 8514
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [4856, 1389, 5004, 587, 4924, 8389, 6025, 8351, 1125, 8353, 8309, 8492, 8355, 2]
+// Dependencies: [4857, 1389, 5005, 587, 4925, 8411, 6029, 8373, 1125, 8375, 8331, 8514, 8377, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 8491 (GuildSpaceLeaderboardSystemMessage)
+// Module 8513 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4924 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8389 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8492 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4925 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8411 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8514 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
 let closure_5 = createStyles.createNativeStyleProperties(obj);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildSpaceLeaderboardSystemMessage.tsx");
 
-export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpaceLeaderboardSystemMessage(theme) {
+export function createGuildSpaceLeaderboardSystemMessage(theme) {
   let data;
   let guildId;
   let message;
@@ -123,11 +123,11 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(8355)(theme));
+          const merged1 = Object.assign(tmp26(8377)(theme));
           return obj5;
         }
       }
     }
   }
   return null;
-};
+}

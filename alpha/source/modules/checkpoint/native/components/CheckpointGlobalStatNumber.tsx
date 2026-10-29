@@ -1,20 +1,18 @@
-// Module ID: 13212
-// Function ID: 13213
+// Module ID: 13449
+// Function ID: 13450
 // Name: CheckpointGlobalStatNumber
-// Dependencies: [17, 21, 5004, 587, 558, 576, 13213, 13214, 1125, 13209, 13215, 13216, 2]
+// Dependencies: [17, 21, 5005, 587, 558, 576, 13440, 13450, 1125, 13441, 2]
 
-// Module 13212 (CheckpointGlobalStatNumber)
+// Module 13449 (CheckpointGlobalStatNumber)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl from "intl" /* 1125 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 13209 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13213 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13214 */;
-import _modDef13215 from "module_13215" /* 13215 */;
-import _modDef13216 from "module_13216" /* 13216 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13440 */;
+import CheckpointGlobeAnimationDefault from "CheckpointGlobeAnimation" /* 13441 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13450 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,89 +88,88 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
   const iter = closure_6();
   if (cResult[0] === accessibilityLabel) {
     let tmp4;
-    let tmp17;
+    let tmp16;
     if (cResult[1] === value) {
       tmp4 = cResult[2];
     }
     const tmpResult = CheckpointStatNumber;
     if (tmpResult.isCheckpointStatNumberShrunk(value)) {
       if (cResult[3] === iter.container) {
+        let tmp20;
         let tmp21;
-        let tmp22;
         if (cResult[4] === iter.croppedContainer) {
-          tmp21 = cResult[5];
+          tmp20 = cResult[5];
         }
         if (cResult[6] !== value) {
           const obj2 = { value };
-          const tmp25 = React3(closure_7, obj2);
+          const tmp24 = React3(closure_7, obj2);
           cResult[6] = value;
-          cResult[7] = tmp25;
-          tmp22 = tmp25;
+          cResult[7] = tmp24;
+          tmp21 = tmp24;
         } else {
-          tmp22 = cResult[7];
+          tmp21 = cResult[7];
         }
         if (cResult[8] === iter.value) {
-          let tmp26;
-          if (cResult[9] === tmp22) {
-            tmp26 = cResult[10];
+          let tmp25;
+          if (cResult[9] === tmp21) {
+            tmp25 = cResult[10];
           }
           if (cResult[11] === iter.clip) {
-            let tmp30;
-            let tmp34;
-            if (cResult[12] === tmp26) {
-              tmp30 = cResult[13];
+            let tmp29;
+            let tmp33;
+            if (cResult[12] === tmp25) {
+              tmp29 = cResult[13];
             }
             if (cResult[14] !== iter.globe) {
-              const obj3 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
-              const tmp37 = CheckpointApngPlayerDefault;
-              const tmp38 = React3(tmp37, obj3);
+              const obj3 = { style: iter.globe };
+              const tmp36 = React3(CheckpointGlobeAnimationDefault, obj3);
               cResult[14] = iter.globe;
-              cResult[15] = tmp38;
-              tmp34 = tmp38;
+              cResult[15] = tmp36;
+              tmp33 = tmp36;
             } else {
-              tmp34 = cResult[15];
+              tmp33 = cResult[15];
             }
             if (cResult[16] === tmp4) {
-              if (cResult[17] === tmp21) {
-                if (cResult[18] === tmp30) {
-                  let tmp39;
-                  if (cResult[19] === tmp34) {
-                    tmp39 = cResult[20];
+              if (cResult[17] === tmp20) {
+                if (cResult[18] === tmp29) {
+                  let tmp37;
+                  if (cResult[19] === tmp33) {
+                    tmp37 = cResult[20];
                   }
-                  tmp17 = tmp39;
+                  tmp16 = tmp37;
                 }
               }
             }
-            const obj4 = { accessible: true, accessibilityLabel: tmp4, style: tmp21, children: items };
-            items = [tmp30, tmp34];
-            const tmp42 = hasOwnProperty(View, obj4);
+            const obj4 = { accessible: true, accessibilityLabel: tmp4, style: tmp20, children: items };
+            items = [tmp29, tmp33];
+            const tmp40 = hasOwnProperty(View, obj4);
             cResult[16] = tmp4;
-            cResult[17] = tmp21;
-            cResult[18] = tmp30;
-            cResult[19] = tmp34;
-            cResult[20] = tmp42;
-            tmp39 = tmp42;
+            cResult[17] = tmp20;
+            cResult[18] = tmp29;
+            cResult[19] = tmp33;
+            cResult[20] = tmp40;
+            tmp37 = tmp40;
           }
-          const obj5 = { style: iter.clip, children: tmp26 };
-          const tmp33 = React3(View, obj5);
+          const obj5 = { style: iter.clip, children: tmp25 };
+          const tmp32 = React3(View, obj5);
           cResult[11] = iter.clip;
-          cResult[12] = tmp26;
-          cResult[13] = tmp33;
-          tmp30 = tmp33;
+          cResult[12] = tmp25;
+          cResult[13] = tmp32;
+          tmp29 = tmp32;
         }
-        const obj6 = { style: iter.value, children: tmp22 };
-        const tmp29 = React3(View, obj6);
+        const obj6 = { style: iter.value, children: tmp21 };
+        const tmp28 = React3(View, obj6);
         cResult[8] = iter.value;
-        cResult[9] = tmp22;
-        cResult[10] = tmp29;
-        tmp26 = tmp29;
+        cResult[9] = tmp21;
+        cResult[10] = tmp28;
+        tmp25 = tmp28;
       }
       const items1 = [, ];
       ({ container: arr3[0], croppedContainer: arr3[1] } = iter);
       cResult[3] = iter.container;
       cResult[4] = iter.croppedContainer;
       cResult[5] = items1;
-      tmp21 = items1;
+      tmp20 = items1;
     } else {
       if (cResult[21] === iter.container) {
         let tmp7;
@@ -191,12 +188,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
           tmp8 = cResult[25];
         }
         if (cResult[26] !== iter.globe) {
-          const obj8 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
-          const tmp15 = CheckpointApngPlayerDefault;
-          const tmp16 = React3(tmp15, obj8);
+          const obj8 = { style: iter.globe };
+          const tmp15 = React3(CheckpointGlobeAnimationDefault, obj8);
           cResult[26] = iter.globe;
-          cResult[27] = tmp16;
-          tmp12 = tmp16;
+          cResult[27] = tmp15;
+          tmp12 = tmp15;
         } else {
           tmp12 = cResult[27];
         }
@@ -204,20 +200,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
           if (cResult[29] === tmp7) {
             if (cResult[30] === tmp8) {
               if (cResult[31] === tmp12) {
-                tmp17 = cResult[32];
+                tmp16 = cResult[32];
               }
             }
           }
         }
         const obj9 = { accessible: true, accessibilityLabel: tmp4, style: tmp7, children: items2 };
         items2 = [tmp8, tmp12];
-        const tmp20 = hasOwnProperty(View, obj9);
+        const tmp19 = hasOwnProperty(View, obj9);
         cResult[28] = tmp4;
         cResult[29] = tmp7;
         cResult[30] = tmp8;
         cResult[31] = tmp12;
-        cResult[32] = tmp20;
-        tmp17 = tmp20;
+        cResult[32] = tmp19;
+        tmp16 = tmp19;
       }
       const items3 = [, ];
       ({ container: arr[0], uncroppedContainer: arr[1] } = iter);
@@ -226,7 +222,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
       cResult[23] = items3;
       tmp7 = items3;
     }
-    return tmp17;
+    return tmp16;
   }
   let tmp5 = accessibilityLabel;
   if (accessibilityLabel == null) {
@@ -265,9 +261,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
     obj4 = { style: iter.value, children: React3(closure_7, obj5) };
     obj5 = { value };
     const items1 = [React3(View, obj3), ];
-    const obj6 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
-    const tmp13 = CheckpointApngPlayerDefault;
-    items1[1] = React3(tmp13, obj6);
+    const obj6 = { style: iter.globe };
+    items1[1] = React3(CheckpointGlobeAnimationDefault, obj6);
     obj2.children = items1;
     tmp3Result = tmp3(tmp4, obj2);
   } else {
@@ -275,9 +270,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGl
     obj2.style = items;
     const obj7 = { value };
     const items2 = [React3(closure_7, obj7), ];
-    const obj8 = { animatedUri: _modDef13215, staticUri: _modDef13216, style: iter.globe };
-    const tmp8 = CheckpointApngPlayerDefault;
-    items2[1] = React3(tmp8, obj8);
+    const obj8 = { style: iter.globe };
+    items2[1] = React3(CheckpointGlobeAnimationDefault, obj8);
     obj2.children = items2;
     tmp3Result = tmp3(tmp4, obj2);
   }

@@ -8,7 +8,7 @@ import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" 
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUrlObject(hash, arg1, arg2, method, arg4) {
+export function getHttpSpanDetailsFromUrlObject(hash, arg1, arg2, method, arg4) {
   let tmp = arg4;
   const obj = { [closure_1_0(closure_1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: arg2, [closure_1_0(closure_1_1[0]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "url" };
   if (arg4) {
@@ -104,8 +104,8 @@ export const getHttpSpanDetailsFromUrlObject = function getHttpSpanDetailsFromUr
   }
   const items1 = ["" + str10 + " " + tmp, obj];
   return items1;
-};
-export const getSanitizedUrlString = function getSanitizedUrlString(path) {
+}
+export function getSanitizedUrlString(path) {
   let host;
   let protocol;
   ({ protocol, host } = path);
@@ -125,8 +125,8 @@ export const getSanitizedUrlString = function getSanitizedUrlString(path) {
     str3 = "";
   }
   return "" + str + str3 + path;
-};
-export const getSanitizedUrlStringFromUrlObject = function getSanitizedUrlStringFromUrlObject(pathname) {
+}
+export function getSanitizedUrlStringFromUrlObject(pathname) {
   if ("isRelative" in pathname) {
     return pathname.pathname;
   } else {
@@ -148,11 +148,11 @@ export const getSanitizedUrlStringFromUrlObject = function getSanitizedUrlString
     }
     return str.toString();
   }
-};
-export const isURLObjectRelative = function isURLObjectRelative(result) {
+}
+export function isURLObjectRelative(result) {
   return "isRelative" in result;
-};
-export const parseStringToURLObject = function parseStringToURLObject(to, arg1) {
+}
+export function parseStringToURLObject(to, arg1) {
   const tmp = to.indexOf("://") <= 0 && 0 !== to.indexOf("//");
   let tmp2 = arg1;
   if (arg1 == null) {
@@ -182,8 +182,8 @@ export const parseStringToURLObject = function parseStringToURLObject(to, arg1) 
     return tmp8;
   } catch (err) {
   }
-};
-export const parseUrl = function parseUrl(str) {
+}
+export function parseUrl(str) {
   const tmp = str;
   if (tmp) {
     const match = str.match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
@@ -196,8 +196,8 @@ export const parseUrl = function parseUrl(str) {
   } else {
     return {};
   }
-};
-export const stripDataUrlContent = function stripDataUrlContent(url, arg1) {
+}
+export function stripDataUrlContent(url, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -237,7 +237,7 @@ export const stripDataUrlContent = function stripDataUrlContent(url, arg1) {
   } else {
     return url;
   }
-};
-export const stripUrlQueryAndFragment = function stripUrlQueryAndFragment(arg0) {
+}
+export function stripUrlQueryAndFragment(arg0) {
   return arg0.split(/[?#]/, 1)[0];
-};
+}

@@ -8,7 +8,7 @@ import _mod902 from "module_902" /* 902 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c4, c5, closure_2, dependencyMap, f88035, getAllKeys;
+let _require, c0, c1, c4, c5, closure_2, dependencyMap, f89042, getAllKeys;
 
 function _push(fn, arg1, arg2) {
   let closure_0 = arg1;
@@ -142,7 +142,7 @@ function _shift(fn) {
 function createIndexedDbStore(arg0) {
   let dbName = arg0;
   function getStore() {
-    if (null == f88035) {
+    if (null == f89042) {
       let str = dbName.dbName;
       const tmp5 = dbName;
       if (!str) {
@@ -166,7 +166,7 @@ function createIndexedDbStore(arg0) {
         closure_0.onerror = fn2;
         closure_0.onabort = fn2;
       });
-      f88035 = (arg0) => {
+      f89042 = (arg0) => {
         closure_0 = arg0;
         return promise.then((transaction) => {
           const transactionResult = transaction.transaction(closure_0, "readwrite");
@@ -174,7 +174,7 @@ function createIndexedDbStore(arg0) {
         });
       };
     }
-    return f88035;
+    return f89042;
   }
   let obj = {
     push(arg0) {
@@ -201,7 +201,7 @@ function createIndexedDbStore(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ function createIndexedDbStore(arg0) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp15) {
         if (0 === c3) {
@@ -290,7 +290,7 @@ function createIndexedDbStore(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -353,7 +353,7 @@ function createIndexedDbStore(arg0) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp15) {
         if (0 === c3) {
@@ -378,7 +378,7 @@ function createIndexedDbStore(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -427,7 +427,7 @@ function createIndexedDbStore(arg0) {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp13) {
         if (0 === c2) {
@@ -444,7 +444,7 @@ function createIndexedDbStore(arg0) {
 let _asyncToGenerator = _asyncToGenerator_mod;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createStore = function createStore(arg0, arg1) {
+export function createStore(arg0, arg1) {
   let closure_0 = arg1;
   const openResult = globalThis.indexedDB.open(arg0);
   dependencyMap = openResult;
@@ -469,8 +469,8 @@ export const createStore = function createStore(arg0, arg1) {
       return closure_0(transactionResult.objectStore(closure_0));
     });
   };
-};
-export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport() {
+}
+export function makeBrowserOfflineTransport() {
   let makeFetchTransport = arg0;
   if (arg0 === undefined) {
     let tmp2 = dependencyMap;
@@ -495,7 +495,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -523,7 +523,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c0 = 3;
@@ -536,7 +536,7 @@ export const makeBrowserOfflineTransport = function makeBrowserOfflineTransport(
     });
     return tmp2;
   };
-};
+}
 export const push = _push;
 export const shift = _shift;
 export const unshift = _unshift;

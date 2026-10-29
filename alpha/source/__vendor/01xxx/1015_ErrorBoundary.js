@@ -206,7 +206,7 @@ const ErrorBoundary_export = _moduleResult;
 
 export { ErrorBoundary_export as ErrorBoundary };
 export const UNKNOWN_COMPONENT = "unknown";
-export const withErrorBoundary = function withErrorBoundary(displayName, arg1) {
+export function withErrorBoundary(displayName, arg1) {
   let closure_1;
   _require = displayName;
   dependencyMap = arg1;
@@ -223,4 +223,4 @@ export const withErrorBoundary = function withErrorBoundary(displayName, arg1) {
   const obj = require("module_1014");
   obj.hoistNonReactStatics(memoResult, displayName);
   return memoResult;
-};
+}

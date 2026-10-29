@@ -1,20 +1,20 @@
-// Module ID: 14861
-// Function ID: 14862
+// Module ID: 15096
+// Function ID: 15097
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 6672, 1084, 21, 5004, 587, 558, 576, 5246, 9186, 7908, 1125, 1199, 5270, 5280, 14434, 2]
+// Dependencies: [19, 17, 6696, 1084, 21, 5005, 587, 558, 576, 5247, 9189, 7931, 1125, 1199, 5271, 5281, 14668, 2]
 
-// Module 14861 (EndStageActionSheet)
+// Module 15096 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6672 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7908 */;
-import CallsUtils from "CallsUtils" /* 9186 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14434 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6696 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7931 */;
+import CallsUtils from "CallsUtils" /* 9189 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14668 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[9] !== tmp4.subtitle) {
       const obj3 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp13 };
-      const tmp17 = closure_5(channel(5270).Text, obj3);
+      const tmp17 = closure_5(channel(5271).Text, obj3);
       cResult[9] = tmp4.subtitle;
       cResult[10] = tmp17;
       tmp15 = tmp17;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[12] !== tmp5) {
       const obj4 = { variant: "secondary", text: tmp18, onPress: tmp5 };
-      const tmp22 = closure_5(channel(5280).Button, obj4);
+      const tmp22 = closure_5(channel(5281).Button, obj4);
       cResult[12] = tmp5;
       cResult[13] = tmp22;
       tmp20 = tmp22;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       }
       if (cResult[18] !== tmp6) {
         const obj5 = { variant: "destructive", text: tmp27, onPress: tmp6 };
-        const tmp31 = closure_5(channel(5280).Button, obj5);
+        const tmp31 = closure_5(channel(5281).Button, obj5);
         cResult[18] = tmp6;
         cResult[19] = tmp31;
         tmp29 = tmp31;
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
   intl = channel(1125).intl;
   items = [closure_5(LegacyText, obj3), , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1125).t.mT7jwN) };
-  const Text = channel(5270).Text;
+  const Text = channel(5271).Text;
   intl2 = channel(1125).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5280).Button;
+  Button = channel(5281).Button;
   intl3 = channel(1125).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
@@ -254,7 +254,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5280).Button;
+  Button2 = channel(5281).Button;
   intl4 = channel(1125).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);

@@ -1,23 +1,23 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7339
+// Function ID: 7340
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 5005, 4910, 4878, 1389, 7231, 21, 5004, 587, 558, 576, 1502, 504, 7260, 5070, 7316, 1414, 1897, 1385, 5303, 5085, 5242, 5705, 1125, 5270, 1199, 7317, 6919, 2046, 7342, 5280, 7257, 2]
+// Dependencies: [19, 17, 5006, 4911, 4879, 1389, 7255, 21, 5005, 587, 558, 576, 1503, 504, 7284, 5071, 7340, 1415, 1898, 1385, 5304, 5086, 5243, 5707, 1125, 5271, 1199, 7341, 6943, 2047, 7366, 5281, 7281, 2]
 
-// Module 7315 (GuildOnboardingCompleted)
+// Module 7339 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 587 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7317 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7341 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7231 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7255 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -610,7 +610,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
       num = tmp6;
     }
     const obj7 = { duration: num, easing: Easing3.out(ReanimatedRexport.Easing.ease) };
-    Easing3 = tmp(5085).Easing;
+    Easing3 = tmp(5086).Easing;
     const obj8 = { opacity: withSequenceResult, transform: items };
     const obj9 = { rotate: withSequence3(withTimingResult2, withDelay3Result, tmpResult8.withTiming("-5deg", { duration })) };
     const withSequence2Result = withSequence2(withTimingResult1, withDelay2Result, withTiming3(1, obj7));

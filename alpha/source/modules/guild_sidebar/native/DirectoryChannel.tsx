@@ -1,19 +1,19 @@
-// Module ID: 17914
-// Function ID: 17915
+// Module ID: 18152
+// Function ID: 18153
 // Name: DirectoryChannel
-// Dependencies: [19, 4856, 4934, 11992, 6740, 21, 5004, 587, 558, 576, 573, 1111, 10726, 9051, 17831, 2]
+// Dependencies: [19, 4857, 4935, 12046, 6763, 21, 5005, 587, 558, 576, 573, 1111, 10759, 9054, 18069, 2]
 
-// Module 17914 (DirectoryChannel)
+// Module 18152 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1111 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10726 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11992 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import createStyles from "createStyles" /* 5004 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const container = tmp4.container;
       if (cResult[8] !== stateFromStores) {
         const obj2 = { channel: stateFromStores };
-        const tmp15 = id(9051)(obj2);
+        const tmp15 = id(9054)(obj2);
         cResult[8] = stateFromStores;
         cResult[9] = tmp15;
         tmp13 = tmp15;
@@ -125,7 +125,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const tmp21 = jsx(id(17831), { onPress: tmp11, onLongPress: tmp12, style: container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
+      const tmp21 = jsx(id(18069), { onPress: tmp11, onLongPress: tmp12, style: container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
       cResult[12] = stateFromStores;
       cResult[13] = tmp12;
       cResult[14] = tmp11;
@@ -184,9 +184,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(17831);
+    id(18069);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9051)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9054)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 }));

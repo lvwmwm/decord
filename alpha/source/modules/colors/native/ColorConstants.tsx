@@ -1,10 +1,10 @@
-// Module ID: 7579
-// Function ID: 7580
+// Module ID: 7602
+// Function ID: 7603
 // Name: ColorConstants
 // Dependencies: [1391, 587, 2]
 // Exports: getPremiumGradientColor
 
-// Module 7579 (ColorConstants)
+// Module 7602 (ColorConstants)
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ items5 = [nativeDefault.unsafe_rawColors.BLURPLE_50, nativeDefault.unsafe_rawCol
 const result = size.fileFinishedImporting("modules/colors/native/ColorConstants.tsx");
 
 export { Gradients };
-export const getPremiumGradientColor = function getPremiumGradientColor(premiumType) {
+export function getPremiumGradientColor(premiumType) {
   if (PremiumTypes.TIER_0 === premiumType) {
     return obj.PREMIUM_TIER_0;
   } else if (PremiumTypes.TIER_1 === premiumType) {
@@ -34,4 +34,4 @@ export const getPremiumGradientColor = function getPremiumGradientColor(premiumT
   } else if (PremiumTypes.TIER_2 === premiumType) {
     return obj.PREMIUM_TIER_2;
   }
-};
+}

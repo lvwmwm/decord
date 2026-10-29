@@ -1,10 +1,10 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9720
+// Function ID: 9721
 // Name: ApplicationCommandIndexActionCreators
 // Dependencies: [5, 1084, 584, 1294, 1101, 1264, 1385, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 9688 (ApplicationCommandIndexActionCreators)
+// Module 9720 (ApplicationCommandIndexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
@@ -30,7 +30,7 @@ let obj = function _fetchApplicationCommandIndex() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = function _fetchApplicationCommandIndex() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -217,7 +217,7 @@ let obj = function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -231,11 +231,11 @@ let obj = function _fetchApplicationCommandIndex() {
 ({ AnalyticEvents: closure_4, Endpoints: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandIndexActionCreators.tsx");
 
-export const fetchApplicationCommandIndex = function fetchApplicationCommandIndex() {
+export function fetchApplicationCommandIndex() {
   return obj(...arguments);
-};
-export const requestApplicationCommandIndex = function requestApplicationCommandIndex(target) {
+}
+export function requestApplicationCommandIndex(target) {
   obj = DispatcherDefault;
   const obj2 = { type: "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", target };
   obj.dispatch(obj2);
-};
+}

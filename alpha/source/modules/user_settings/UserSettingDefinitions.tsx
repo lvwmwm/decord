@@ -1,10 +1,10 @@
-// Module ID: 4836
-// Function ID: 4837
+// Module ID: 4837
+// Function ID: 4838
 // Name: UserSettingDefinitions
-// Dependencies: [1205, 1243, 1094, 558, 576, 504, 4837, 584, 2]
+// Dependencies: [1205, 1243, 1094, 558, 576, 504, 4838, 584, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 4836 (UserSettingDefinitions)
+// Module 4837 (UserSettingDefinitions)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
@@ -18,7 +18,7 @@ let _require, dependencyMap;
 const UserSettingsDelay = UserSettingsConstants.UserSettingsDelay;
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingDefinitions.tsx");
 
-export const defineProtoSetting = function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, arg4) {
+export function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, arg4) {
   let fn;
   _require = textAndImages;
   let closure_1 = activityRestrictedGuildIds;
@@ -48,18 +48,18 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     return tmp(tmp3);
   }
   const obj2 = require("ReactCompilerGating");
-  const f94439 = (favorites) => {
+  const f95449 = (favorites) => {
     let closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f94439] = explicitContentToProto(favorites, arg0[f94439]);
+      arg0[f95449] = explicitContentToProto(favorites, arg0[f95449]);
     }, closure_4);
   };
   const obj3 = {
     getSetting,
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f94445;
+      const tmp = f95455;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -85,7 +85,7 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     })
   };
   return obj3;
-};
+}
 export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, inlineAttachmentMedia) {
   let closure_1 = text;
   let closure_2 = inlineAttachmentMedia;
@@ -121,7 +121,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f94445;
+      const tmp = f95455;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -174,24 +174,24 @@ export function wrapSettingWithOverride(arg0, gifAutoPlay, arg2, arg3) {
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f94445;
+      const tmp = f95455;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f94445 = (arg0) => {
+  const f95455 = (arg0) => {
     let items;
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items };
-    items = [f94445];
+    items = [f95455];
     const obj = gifAutoPlay(closure_2[7]);
     obj.dispatch(obj2);
     return getSetting.updateSetting(arg0);
   };
   return obj;
 }
-export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperimentDefaults(arg0) {
+export function wrapSettingWithExperimentDefaults(arg0) {
   let require;
   ({ baseSetting: require, isEligible: importDefault, useIsEligible: dependencyMap, eligibleDefault: SelectivelySyncedUserSettingsStore, ineligibleDefault: UserSettingsProtoStore, onUseDefault: UserSettingsDelay } = arg0);
   return {
@@ -231,4 +231,4 @@ export const wrapSettingWithExperimentDefaults = function wrapSettingWithExperim
       return _require.updateSetting(arg0);
     }
   };
-};
+}

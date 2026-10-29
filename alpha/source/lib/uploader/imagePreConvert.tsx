@@ -1,13 +1,13 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9732
+// Function ID: 9733
 // Name: imagePreConvert
-// Dependencies: [32, 5, 8177, 8206, 8299, 1999, 7116, 2]
+// Dependencies: [32, 5, 8200, 8228, 8321, 2000, 7140, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9700 (imagePreConvert)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
-import imageFilename from "imageFilename" /* 8206 */;
+// Module 9732 (imagePreConvert)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UploadPlatform from "UploadPlatform" /* 8200 */;
+import imageFilename from "imageFilename" /* 8228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let value = function _maybePreConvertImageItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -217,7 +217,7 @@ let value = function _maybePreConvertImageItem() {
 let size = size_mod;
 const result = size.fileFinishedImporting("lib/uploader/imagePreConvert.tsx");
 
-export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(file) {
+export function itemNeedsImagePreConversion(file) {
   let tmp3 = null;
   if (file.platform === UploadPlatform.UploadPlatform.WEB) {
     tmp3 = null;
@@ -239,7 +239,7 @@ export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(
     }
   }
   return null != tmp3;
-};
-export const maybePreConvertImageItem = function maybePreConvertImageItem() {
+}
+export function maybePreConvertImageItem() {
   return obj(...arguments);
-};
+}

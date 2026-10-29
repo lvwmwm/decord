@@ -1,16 +1,16 @@
-// Module ID: 13553
-// Function ID: 13554
+// Module ID: 13786
+// Function ID: 13787
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5681, 5684, 558, 576, 504, 10906, 8156, 2]
+// Dependencies: [19, 5683, 5686, 558, 576, 504, 10941, 8179, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 13553 (RegionalTeenUtils)
+// Module 13786 (RegionalTeenUtils)
 import react2 from "react" /* 576 */;
-import CountryCodes from "CountryCodes" /* 5684 */;
-import useUserIsTeen from "useUserIsTeen" /* 8156 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10906 */;
+import CountryCodes from "CountryCodes" /* 5686 */;
+import useUserIsTeen from "useUserIsTeen" /* 8179 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10941 */;
 import react from "react" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5681 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,6 +111,6 @@ const result1 = size.fileFinishedImporting("modules/regional_feature_config/Regi
 
 export const useUserCountryCode = tmp3;
 export const useIsTeenInCountrySet = tmp4;
-export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
+export function useIsTeenInStrictCountry() {
   return closure_6(set);
-};
+}

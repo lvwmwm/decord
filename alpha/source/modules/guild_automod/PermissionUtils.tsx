@@ -1,13 +1,13 @@
-// Module ID: 18571
-// Function ID: 18572
+// Module ID: 18805
+// Function ID: 18806
 // Name: guild_automod/PermissionUtils
-// Dependencies: [4878, 4936, 12870, 1084, 558, 576, 504, 2]
+// Dependencies: [4879, 4937, 13091, 1084, 558, 576, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 18571 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 12870 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+// Module 18805 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 13091 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -291,7 +291,7 @@ function hasMentionRaidLimitAccess(guildId) {
 }
 const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
-export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
+export function canCurrentUserManageMessageFilters(guild_id) {
   let tmp = null != guild_id;
   if (tmp) {
     const guild = GuildStore.getGuild(guild_id);
@@ -303,8 +303,8 @@ export const canCurrentUserManageMessageFilters = function canCurrentUserManageM
     tmp = canResult;
   }
   return tmp;
-};
-export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(arg0) {
+}
+export function canCurrentUserManageAutomod(arg0) {
   const guild = GuildStore.getGuild(arg0);
   let canResult = null != guild;
   const obj = PermissionStore;
@@ -312,7 +312,7 @@ export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(
     canResult = obj.can(metroRequire.MANAGE_GUILD, guild);
   }
   return canResult;
-};
+}
 export const useCanCurrentUserManageAutomod = tmp3;
 export { hasMentionRaidLimitAccess };
 export const useHasMentionRaidLimitAccess = tmp4;

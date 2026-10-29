@@ -1,220 +1,295 @@
 // Module ID: 8268
 // Function ID: 8269
 // Dependencies: [8269]
+// Exports: dataUriToBuffer, decompress, deferInit, getBase64Image, getCharacterArray, getDataView, getNullTerminatedStringFromDataView, getPascalStringFromDataView, getStringFromDataView, getStringValueFromArray, getUnicodeStringFromDataView, objectAssign, padStart, parseFloatRadix, strRepeat
 
 // Module 8268
-const require = globalThis.__r;
+import _modDef8269 from "module_8269" /* 8269 */;
 
-function decodeXPValue(arg0) {
-  const textDecoder = new TextDecoder("utf-16");
-  const decode = textDecoder.decode;
-  const uint8Array = new Uint8Array(arg0);
-  const str = decode(uint8Array);
-  return str.replace(/\u0000+$/, "");
+const f102473 = (item) => String.fromCharCode(item);
+
+export function getDataView(buffer, byteOffset, byteLength) {
+  try {
+    const _DataView = DataView;
+    const self = this;
+    const self2 = this;
+    const dataView = new DataView(buffer, byteOffset, byteLength);
+    return dataView;
+  } catch (err) {
+    const self3 = this;
+    const self4 = this;
+    const tmp12 = new _modDef8269(buffer, byteOffset, byteLength);
+    return tmp12;
+  }
 }
-const obj = { 11: "ProcessingSoftware", 254: null, 255: null, 256: "ImageWidth", 257: "ImageLength", 258: "BitsPerSample", 259: "Compression", 262: "PhotometricInterpretation", 263: null, 264: "CellWidth", 265: "CellLength", 266: null, 269: "DocumentName", 270: "ImageDescription", 271: "Make", 272: "Model", 273: "StripOffsets", 274: null, 277: "SamplesPerPixel", 278: "RowsPerStrip", 279: "StripByteCounts", 280: "MinSampleValue", 281: "MaxSampleValue", 282: null, 283: null, 284: "PlanarConfiguration", 285: "PageName", 286: null, 287: null, 290: null, 296: null, 297: "PageNumber", 301: "TransferFunction", 305: "Software", 306: "DateTime", 315: "Artist", 316: "HostComputer", 317: "Predictor", 318: null, 319: null, 321: "HalftoneHints", 322: "TileWidth", 323: "TileLength", 330: "A100DataOffset", 332: null, 337: "TargetPrinter", 338: null, 339: null, 513: "JPEGInterchangeFormat", 514: "JPEGInterchangeFormatLength", 529: null, 530: "YCbCrSubSampling", 531: null, 532: null, 700: "ApplicationNotes", 18246: "Rating", 18249: "RatingPercent", 33432: null, 33550: "PixelScale", 33723: "IPTC-NAA", 33920: "IntergraphMatrix", 33922: "ModelTiePoint", 34118: "SEMInfo", 34264: "ModelTransform", 34377: "PhotoshopSettings", 34665: "Exif IFD Pointer", 34675: "ICC_Profile", 34735: "GeoTiffDirectory", 34736: "GeoTiffDoubleParams", 34737: "GeoTiffAsciiParams", 34853: "GPS Info IFD Pointer", 40091: null, 40092: null, 40093: null, 40094: null, 40095: null, 42112: "GDALMetadata", 42113: "GDALNoData", 50341: "PrintIM", 50707: "DNGBackwardVersion", 50708: "UniqueCameraModel", 50709: "LocalizedCameraModel", 50721: "ColorMatrix1", 50722: "ColorMatrix2", 50723: "CameraCalibration1", 50724: "CameraCalibration2", 50725: "ReductionMatrix1", 50726: "ReductionMatrix2", 50727: "AnalogBalance", 50728: "AsShotNeutral", 50729: "AsShotWhiteXY", 50730: "BaselineExposure", 50731: "BaselineNoise", 50732: "BaselineSharpness", 50734: "LinearResponseLimit", 50735: "CameraSerialNumber", 50736: "DNGLensInfo", 50739: "ShadowScale", 50741: null, 50778: null, 50779: null, 50781: "RawDataUniqueID", 50827: "OriginalRawFileName", 50828: "OriginalRawFileData", 50831: "AsShotICCProfile", 50832: "AsShotPreProfileMatrix", 50833: "CurrentICCProfile", 50834: "CurrentPreProfileMatrix", 50879: "ColorimetricReference", 50885: "SRawType", 50898: "PanasonicTitle", 50899: "PanasonicTitle2", 50931: "CameraCalibrationSig", 50932: "ProfileCalibrationSig", 50933: "ProfileIFD", 50934: "AsShotProfileName", 50936: "ProfileName", 50937: "ProfileHueSatMapDims", 50938: "ProfileHueSatMapData1", 50939: "ProfileHueSatMapData2", 50940: "ProfileToneCurve", 50941: null, 50942: "ProfileCopyright", 50964: "ForwardMatrix1", 50965: "ForwardMatrix2", 50966: "PreviewApplicationName", 50967: "PreviewApplicationVersion", 50968: "PreviewSettingsName", 50969: "PreviewSettingsDigest", 50970: null, 50971: "PreviewDateTime", 50972: "RawImageDigest", 50973: "OriginalRawFileDigest", 50981: "ProfileLookTableDims", 50982: "ProfileLookTableData", 51043: "TimeCodes", 51044: "FrameRate", 51058: "TStop", 51081: "ReelName", 51089: "OriginalDefaultFinalSize", 51090: "OriginalBestQualitySize", 51091: "OriginalDefaultCropSize", 51105: "CameraLabel", 51107: null, 51108: null, 51109: "BaselineExposureOffset", 51110: null, 51111: "NewRawImageDigest", 51112: "RawToPreviewGain" };
-obj[254] = {
-  name: "SubfileType",
-  description(arg0) {
-    return { 0: "Full-resolution image", 1: "Reduced-resolution image", 2: "Single page of multi-page image", 3: "Single page of multi-page reduced-resolution image", 4: "Transparency mask", 5: "Transparency mask of reduced-resolution image", 6: "Transparency mask of multi-page image", 7: "Transparency mask of reduced-resolution multi-page image", 65537: "Alternate reduced-resolution image", "4294967295": "Invalid" }[arg0] || "Unknown";
-  }
-};
-obj[255] = {
-  name: "OldSubfileType",
-  description(arg0) {
-    return { 0: "Full-resolution image", 1: "Reduced-resolution image", 2: "Single page of multi-page image" }[arg0] || "Unknown";
-  }
-};
-obj[263] = {
-  name: "Thresholding",
-  description(arg0) {
-    return { 1: "No dithering or halftoning", 2: "Ordered dither or halfton", 3: "Randomized dither" }[arg0] || "Unknown";
-  }
-};
-obj[266] = {
-  name: "FillOrder",
-  description(arg0) {
-    return { 1: "Normal", 2: "Reversed" }[arg0] || "Unknown";
-  }
-};
-obj[274] = {
-  name: "Orientation",
-  description(arg0) {
-    let str = "top-left";
-    if (1 !== arg0) {
-      let str2 = "top-right";
-      if (2 !== arg0) {
-        let str3 = "bottom-right";
-        if (3 !== arg0) {
-          let str4 = "bottom-left";
-          if (4 !== arg0) {
-            let str5 = "left-top";
-            if (5 !== arg0) {
-              let str6 = "right-top";
-              if (6 !== arg0) {
-                let str7 = "right-bottom";
-                if (7 !== arg0) {
-                  let str8 = "Undefined";
-                  if (8 === arg0) {
-                    str8 = "left-bottom";
-                  }
-                  str7 = str8;
-                }
-                str6 = str7;
-              }
-              str5 = str6;
-            }
-            str4 = str5;
-          }
-          str3 = str4;
+export function getStringFromDataView(dataView, sum, length) {
+  const items = [];
+  if (0 < length) {
+    let num2 = 0;
+    if (sum < dataView.byteLength) {
+      items.push(dataView.getUint8(sum + num2));
+      sum = num2 + 1;
+      while (sum < length) {
+        num2 = sum;
+        if (sum + sum >= dataView.byteLength) {
+          break;
         }
-        str2 = str3;
       }
-      str = str2;
     }
-    return str;
   }
-};
-obj[282] = { name: "XResolution", description: require("module_8269").XResolution };
-({ name: "XResolution", description: require("module_8269").XResolution });
-obj[283] = { name: "YResolution", description: require("module_8269").YResolution };
-obj[286] = {
-  name: "XPosition",
-  description(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
-  }
-};
-obj[287] = {
-  name: "YPosition",
-  description(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
-  }
-};
-obj[290] = {
-  name: "GrayResponseUnit",
-  description(arg0) {
-    return { 1: "0.1", 2: "0.001", 3: "0.0001", 4: "1e-05", 5: "1e-06" }[arg0] || "Unknown";
-  }
-};
-({ name: "YResolution", description: require("module_8269").YResolution });
-obj[296] = { name: "ResolutionUnit", description: require("module_8269").ResolutionUnit };
-obj[318] = {
-  name: "WhitePoint",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] + "/" + item[1]);
-    return mapped.join(", ");
-  }
-};
-obj[319] = {
-  name: "PrimaryChromaticities",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] + "/" + item[1]);
-    return mapped.join(", ");
-  }
-};
-obj[332] = {
-  name: "InkSet",
-  description(arg0) {
-    return { 1: "CMYK", 2: "Not CMYK" }[arg0] || "Unknown";
-  }
-};
-obj[338] = {
-  name: "ExtraSamples",
-  description(arg0) {
-    return { 0: "Unspecified", 1: "Associated Alpha", 2: "Unassociated Alpha" }[arg0] || "Unknown";
-  }
-};
-obj[339] = {
-  name: "SampleFormat",
-  description(arr) {
-    let closure_0 = { 1: "Unsigned", 2: "Signed", 3: "Float", 4: "Undefined", 5: "Complex int", 6: "Complex float" };
-    let str = "Unknown";
-    if (Array.isArray(arr)) {
-      const mapped = arr.map((item) => closure_0[item] || "Unknown");
-      str = mapped.join(", ");
-    }
-    return str;
-  }
-};
-obj[529] = {
-  name: "YCbCrCoefficients",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] / item[1]);
-    return mapped.join("/");
-  }
-};
-obj[531] = {
-  name: "YCbCrPositioning",
-  description(arg0) {
-    let str = "centered";
-    if (1 !== arg0) {
-      let str2 = "co-sited";
-      if (2 !== arg0) {
-        str2 = `undefined ${arg0}`;
+  const mapped = items.map(f102473);
+  return mapped.join("");
+}
+export function getNullTerminatedStringFromDataView(byteLength, sum13) {
+  const items = [];
+  let num = 0;
+  if (sum13 < byteLength.byteLength) {
+    const uint8 = byteLength.getUint8(sum13 + num);
+    while (0 !== uint8) {
+      let arr = items.push(uint8);
+      let sum = num + 1;
+      num = sum;
+      if (sum13 + sum >= byteLength.byteLength) {
+        break;
       }
-      str = str2;
     }
-    return str;
   }
-};
-obj[532] = {
-  name: "ReferenceBlackWhite",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] / item[1]);
-    return mapped.join(", ");
+  const mapped = items.map(f102473);
+  return mapped.join("");
+}
+export function getUnicodeStringFromDataView(byteLength, arg1, uint325) {
+  const items = [];
+  if (0 < uint325) {
+    let num2 = 0;
+    if (arg1 < byteLength.byteLength) {
+      items.push(byteLength.getUint16(arg1 + num2));
+      const sum = num2 + 2;
+      while (sum < uint325) {
+        num2 = sum;
+        if (arg1 + sum >= byteLength.byteLength) {
+          break;
+        }
+      }
+    }
   }
-};
-obj[33432] = {
-  name: "Copyright",
-  description(join) {
-    return join.join("; ");
+  if (0 === items[items.length - 1]) {
+    items.pop();
   }
-};
-obj[40091] = { name: "XPTitle", description: decodeXPValue };
-obj[40092] = { name: "XPComment", description: decodeXPValue };
-obj[40093] = { name: "XPAuthor", description: decodeXPValue };
-obj[40094] = { name: "XPKeywords", description: decodeXPValue };
-obj[40095] = { name: "XPSubject", description: decodeXPValue };
-obj[50741] = {
-  name: "MakerNoteSafety",
-  description(arg0) {
-    return { 0: "Unsafe", 1: "Safe" }[arg0] || "Unknown";
+  const mapped = items.map(f102473);
+  return mapped.join("");
+}
+export function getPascalStringFromDataView(getUint8, sum1) {
+  const uint8 = getUint8.getUint8(sum1);
+  const items = [uint8, ];
+  const sum = sum1 + 1;
+  const items1 = [];
+  if (0 < uint8) {
+    let num = 0;
+    if (sum < getUint8.byteLength) {
+      items1.push(getUint8.getUint8(sum + num));
+      sum1 = num + 1;
+      while (sum1 < uint8) {
+        num = sum1;
+        if (sum + sum1 >= getUint8.byteLength) {
+          break;
+        }
+      }
+    }
   }
-};
-({ name: "ResolutionUnit", description: require("module_8269").ResolutionUnit });
-obj[50778] = { name: "CalibrationIlluminant1", description: require("module_8269").LightSource };
-({ name: "CalibrationIlluminant1", description: require("module_8269").LightSource });
-obj[50779] = { name: "CalibrationIlluminant2", description: require("module_8269").LightSource };
-obj[50941] = {
-  name: "ProfileEmbedPolicy",
-  description(arg0) {
-    return { 0: "Allow Copying", 1: "Embed if Used", 2: "Never Embed", 3: "No Restrictions" }[arg0] || "Unknown";
+  const mapped = items1.map(f102473);
+  items[1] = mapped.join("");
+  return items;
+}
+export function getStringValueFromArray(value) {
+  const mapped = value.map(f102473);
+  return mapped.join("");
+}
+export function getCharacterArray(str) {
+  const parts = str.split("");
+  return parts.map((item) => item.charCodeAt(0));
+}
+export function objectAssign() {
+  let num;
+  for (let num = 1; num < arguments.length; num = num + 1) {
+    for (const key10010 in arguments[num]) {
+      arguments[0][key10010] = arguments[num][key10010];
+      continue;
+    }
   }
-};
-obj[50970] = {
-  name: "PreviewColorSpace",
-  description(arg0) {
-    return { 1: "Gray Gamma 2.2", 2: "sRGB", 3: "Adobe RGB", 4: "ProPhoto RGB" }[arg0] || "Unknown";
+  return arguments[0];
+}
+export function deferInit(items, base64, arg2) {
+  let closure_1 = base64;
+  let closure_2 = arg2;
+  let c3 = false;
+  let obj = {
+    get() {
+      const tmp = c3;
+      if (!tmp) {
+        c3 = true;
+        const _Object = Object;
+        const obj = { configurable: true, enumerable: true, value: closure_2.apply(items), writable: true };
+        defineProperty(items, base64, obj);
+      }
+      return items[base64];
+    },
+    configurable: true,
+    enumerable: true
+  };
+  Object.defineProperty(items, base64, obj);
+}
+export function getBase64Image(image) {
+  let tmp4;
+  if (typeof btoa !== "undefined") {
+    let btoaResult;
+    if (typeof image === "string") {
+      const _btoa = btoa;
+      btoaResult = btoa(image);
+    } else {
+      const _Array = Array;
+      const _Uint8Array = Uint8Array;
+      const self3 = this;
+      const self4 = this;
+      const _btoa2 = btoa;
+      const call = reduce.call;
+      const uint8Array = new Uint8Array(image);
+      btoaResult = _btoa2(call(uint8Array, (arg0, arg1) => arg0 + String.fromCharCode(arg1), ""));
+    }
+    tmp4 = btoaResult;
+  } else {
+    const _Buffer3 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let str1;
+      const _Buffer4 = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer2 = Buffer;
+        const str3 = Buffer.from(image);
+        str1 = str3.toString("base64");
+      } else {
+        const _Buffer = Buffer;
+        const self = this;
+        const self2 = this;
+        const str = new Buffer(image);
+        str1 = str.toString("base64");
+      }
+      tmp4 = str1;
+    }
   }
-};
-obj[51107] = {
-  name: "ProfileHueSatMapEncoding",
-  description(arg0) {
-    return { 0: "Linear", 1: "sRGB" }[arg0] || "Unknown";
+  return tmp4;
+}
+export function dataUriToBuffer(result) {
+  const substr = result.substring(result.indexOf(",") + 1);
+  if (-1 !== result.indexOf(";base64")) {
+    const _atob = atob;
+    if (typeof atob !== "undefined") {
+      const _Uint8Array = Uint8Array;
+      const _atob2 = atob;
+      return Uint8Array.from(atob(substr), (str) => str.charCodeAt(0)).buffer;
+    } else {
+      const _Buffer7 = Buffer;
+      if (typeof Buffer !== "undefined") {
+        let fromResult;
+        const _Buffer8 = Buffer;
+        if (undefined !== Buffer.from) {
+          const _Buffer5 = Buffer;
+          fromResult = Buffer.from(substr, "base64");
+        } else {
+          const _Buffer4 = Buffer;
+          const self3 = this;
+          const self4 = this;
+          fromResult = new Buffer(substr, "base64");
+        }
+        return fromResult;
+      }
+    }
+  } else {
+    let buffer;
+    const _decodeURIComponent = decodeURIComponent;
+    const decodeURIComponentResult = decodeURIComponent(substr);
+    const _Buffer6 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let fromResult1;
+      const _Buffer = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer3 = Buffer;
+        fromResult1 = Buffer.from(decodeURIComponentResult);
+      } else {
+        const _Buffer2 = Buffer;
+        const self = this;
+        const self2 = this;
+        fromResult1 = new Buffer(decodeURIComponentResult);
+      }
+      buffer = fromResult1;
+    } else {
+      const _Uint8Array2 = Uint8Array;
+      buffer = Uint8Array.from(decodeURIComponentResult, (str) => str.charCodeAt(0)).buffer;
+    }
+    return buffer;
   }
-};
-obj[51108] = {
-  name: "ProfileLookTableEncoding",
-  description(arg0) {
-    return { 0: "Linear", 1: "sRGB" }[arg0] || "Unknown";
+}
+export function padStart(arg0, arg1, arg2) {
+  const array = new Array(arg1 - arg0.length + 1);
+  return array.join(arg2) + arg0;
+}
+export function parseFloatRadix(str, arg1) {
+  const parsed = parseInt(str.replace(".", ""), arg1);
+  const _Math = Math;
+  const arr = str.split(".")[1] || "";
+  return parsed / pow(arg1, arr.length);
+}
+export function strRepeat(_1, arg1) {
+  const array = new Array(arg1 + 1);
+  return array.join(_1);
+}
+export const COMPRESSION_METHOD_DEFLATE = 0;
+export function decompress(dataView, compressionMethod, arg2, dataview) {
+  let closure_0 = arg2;
+  let str = dataview;
+  if (dataview === undefined) {
+    str = "string";
   }
-};
-obj[51110] = {
-  name: "DefaultBlackRender",
-  description(arg0) {
-    return { 0: "Auto", 1: "None" }[arg0] || "Unknown";
+  if (0 === compressionMethod) {
+    if (typeof globalThis.DecompressionStream === "function") {
+      let nextPromise;
+      const DecompressionStream2 = globalThis.DecompressionStream;
+      const self = this;
+      const self2 = this;
+      const decompressionStream = new globalThis.DecompressionStream("deflate");
+      const _Blob = Blob;
+      const items = [dataView];
+      const self3 = this;
+      const self4 = this;
+      const blob = new Blob(items);
+      const streamResult = blob.stream();
+      const pipeThroughResult = streamResult.pipeThrough(decompressionStream);
+      if ("dataview" === str) {
+        const _Response2 = Response;
+        const self7 = this;
+        const self8 = this;
+        const response = new Response(pipeThroughResult);
+        const arrayBufferResult = response.arrayBuffer();
+        nextPromise = arrayBufferResult.then((result) => {
+          const dataView = new DataView(result);
+          return dataView;
+        });
+      } else {
+        const _Response = Response;
+        const self5 = this;
+        const self6 = this;
+        const response1 = new Response(pipeThroughResult);
+        const arrayBufferResult2 = response1.arrayBuffer();
+        nextPromise = arrayBufferResult2.then((result) => {
+          const decoder = new TextDecoder(closure_0);
+          return decoder.decode(result);
+        });
+      }
+      return nextPromise;
+    }
   }
-};
-({ name: "CalibrationIlluminant2", description: require("module_8269").LightSource });
-
-export default obj;
+  let rejectResult = dataView;
+  if (undefined !== compressionMethod) {
+    const _HermesInternal = HermesInternal;
+    rejectResult = Promise.reject("Unknown compression method " + compressionMethod + ".");
+  }
+  return rejectResult;
+}

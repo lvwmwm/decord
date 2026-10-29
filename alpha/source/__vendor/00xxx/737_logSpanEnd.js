@@ -10,7 +10,7 @@ import _mod699 from "module_699" /* 699 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const logSpanEnd = function logSpanEnd(spanContext) {
+export function logSpanEnd(spanContext) {
   if (_mod699.DEBUG_BUILD) {
     const tmpResult = TRACE_FLAG_NONE;
     const spanToJSONResult = tmpResult.spanToJSON(spanContext);
@@ -35,8 +35,8 @@ export const logSpanEnd = function logSpanEnd(spanContext) {
     const debug = tmp(700).debug;
     debug.log(combined);
   }
-};
-export const logSpanStart = function logSpanStart(spanContext) {
+}
+export function logSpanStart(spanContext) {
   let description2;
   let op2;
   if (_mod699.DEBUG_BUILD) {
@@ -97,4 +97,4 @@ export const logSpanStart = function logSpanStart(spanContext) {
     const _HermesInternal9 = HermesInternal;
     debug.log("" + combined + "\n  " + items.join("\n  "));
   }
-};
+}

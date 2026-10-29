@@ -1,17 +1,17 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12471
+// Function ID: 12472
 // Name: useConjureAutomodSettingsLink
-// Dependencies: [19, 4878, 4936, 6808, 10749, 1084, 21, 558, 576, 6809, 504, 9039, 1125, 3863, 2]
+// Dependencies: [19, 4879, 4937, 6831, 10824, 1084, 21, 558, 576, 6832, 504, 9042, 1125, 3864, 2]
 
-// Module 12417 (useConjureAutomodSettingsLink)
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
+// Module 12471 (useConjureAutomodSettingsLink)
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -175,7 +175,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAutom
   }
   const intl = tmp(1125).intl;
   const format = intl.format;
-  const tmp6 = _modDef3863;
+  const tmp6 = _modDef3864;
   const formatResult = format(update ? tmp6.esEGL5 : tmp6["XrN+Bg"], { onOpen: tmp5 });
   cResult[0] = guildId;
   cResult[1] = update;
@@ -187,7 +187,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAutom
   const update = guildId.update;
   const intl = guildId(1125).intl;
   const format = intl.format;
-  const tmp3 = _modDef3863;
+  const tmp3 = _modDef3864;
   let obj = { children: items };
   items = [" "];
   const obj2 = {

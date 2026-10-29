@@ -1,12 +1,12 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 18708
+// Function ID: 18709
 // Name: ChannelDetailsTopicGradient
-// Dependencies: [19, 558, 576, 5288, 587, 683, 2]
+// Dependencies: [19, 558, 576, 5289, 587, 683, 2]
 
-// Module 18474 (ChannelDetailsTopicGradient)
+// Module 18708 (ChannelDetailsTopicGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
+import useToken from "useToken" /* 5289 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
   tmp7 = items;
 }) : (function useChannelTopicGradientBackground() {
   let token;
-  let obj = token(5288);
+  let obj = token(5289);
   token = obj.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   return react.useMemo(() => {

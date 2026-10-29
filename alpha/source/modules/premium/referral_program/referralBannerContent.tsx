@@ -1,17 +1,17 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15255
+// Function ID: 15256
 // Name: referralBannerContent
-// Dependencies: [15003, 1084, 15004, 15005, 7598, 1125, 2064, 2]
+// Dependencies: [15238, 1084, 15239, 15240, 7621, 1125, 2065, 2]
 // Exports: getAllReferralsSent, getReferralBannerBodyText, getReferralBannerHeadingText, getReferralStatus, getShouldShowSpendOrbsCta
 
-// Module 15020 (referralBannerContent)
+// Module 15255 (referralBannerContent)
 import Constants2 from "Constants" /* 1084 */;
 import intl12 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7598 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 15004 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15005 */;
-import Constants from "Constants" /* 15003 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7621 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 15239 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15240 */;
+import Constants from "Constants" /* 15238 */;
 import size from "module_2" /* 2 */;
 
 let _require, closure_0, closure_1, closure_2, dependencyMap, importDefault;
@@ -22,10 +22,10 @@ let closure_4;
 const HelpdeskArticles = Constants2.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/premium/referral_program/referralBannerContent.tsx");
 
-export const getAllReferralsSent = function getAllReferralsSent(size) {
+export function getAllReferralsSent(size) {
   return size.size === useReferralProgramBannerDetails.MAX_REFERRALS_SENT;
-};
-export const getShouldShowSpendOrbsCta = function getShouldShowSpendOrbsCta(numSent, referralRewardType) {
+}
+export function getShouldShowSpendOrbsCta(numSent, referralRewardType) {
   let tmp3 = referralRewardType === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS;
   if (tmp3) {
     tmp3 = numSent.numSent === useReferralProgramBannerDetails.MAX_REFERRALS_SENT;
@@ -34,8 +34,8 @@ export const getShouldShowSpendOrbsCta = function getShouldShowSpendOrbsCta(numS
     tmp3 = numSent.numConverted >= 1;
   }
   return tmp3;
-};
-export const getReferralStatus = function getReferralStatus(numSent) {
+}
+export function getReferralStatus(numSent) {
   _require = 0;
   importDefault = 0;
   dependencyMap = 0;
@@ -52,8 +52,8 @@ export const getReferralStatus = function getReferralStatus(numSent) {
     }
   });
   return { numRewardGranted: _require, numConverted: importDefault, numRedeemed: dependencyMap, numSent: numSent.size };
-};
-export const getReferralBannerHeadingText = function getReferralBannerHeadingText(arg0) {
+}
+export function getReferralBannerHeadingText(arg0) {
   let stringResult;
   if (arg0 === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
     const intl3 = tmp(1125).intl;
@@ -67,8 +67,8 @@ export const getReferralBannerHeadingText = function getReferralBannerHeadingTex
     stringResult = intl.string(tmp(1125).t.USo4s7);
   }
   return stringResult;
-};
-export const getReferralBannerBodyText = function getReferralBannerBodyText(arg0, numRewardGranted, arg2) {
+}
+export function getReferralBannerBodyText(arg0, numRewardGranted, arg2) {
   let formatResult6;
   const obj = HelpdeskUtilsDefault;
   const articleURL = obj.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
@@ -142,4 +142,4 @@ export const getReferralBannerBodyText = function getReferralBannerBodyText(arg0
     formatResult6 = intl.format(intl12.t["zWhX/Q"], obj12);
   }
   return formatResult6;
-};
+}

@@ -1,25 +1,25 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10265
+// Function ID: 10266
 // Name: executeCommand
-// Dependencies: [5, 6760, 2065, 4878, 8325, 1389, 8339, 1084, 5009, 5670, 584, 8319, 7665, 1997, 10233, 10235, 38, 10236, 5747, 8337, 9699, 4950, 1385, 10237, 8637, 6054, 8172, 8636, 10238, 8707, 10241, 7601, 8198, 8182, 8178, 1125, 10139, 2]
+// Dependencies: [5, 6783, 2066, 4879, 8347, 1389, 8361, 1084, 5010, 5672, 584, 8341, 7688, 1998, 10266, 10268, 38, 10269, 5749, 8359, 9731, 4951, 1385, 10270, 8659, 6058, 8195, 8658, 10271, 8710, 10274, 7624, 8220, 8205, 8201, 1125, 10172, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10232 (executeCommand)
-import MessageConstants from "MessageConstants" /* 5009 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import MessageQueue from "MessageQueue" /* 8172 */;
-import UploadUtils from "UploadUtils" /* 8178 */;
-import FileUtils from "FileUtils" /* 8182 */;
-import UploadLimits from "UploadLimits" /* 8198 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8637 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10238 */;
+// Module 10265 (executeCommand)
+import MessageConstants from "MessageConstants" /* 5010 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import MessageQueue from "MessageQueue" /* 8195 */;
+import UploadUtils from "UploadUtils" /* 8201 */;
+import FileUtils from "FileUtils" /* 8205 */;
+import UploadLimits from "UploadLimits" /* 8220 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8659 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10271 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
 import UserStore from "UserStore" /* 1389 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8339 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8361 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = function _executeCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -126,7 +126,7 @@ let obj = function _executeCommand() {
               obj25 = undefined;
               c15 = 1;
               c16 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === tmp4) {
@@ -652,7 +652,7 @@ let obj = function _executeCommand() {
               }
             }
             c16 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       }
@@ -678,7 +678,7 @@ obj = function _retryCommandMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -718,7 +718,7 @@ obj = function _retryCommandMessage() {
             closure_4(obj5);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp12) {
           c6 = 3;
           throw tmp12;
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(10237);
+      const obj2 = onMessageSuccess(10270);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(6054).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(6058).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(8172).MessageDataType.COMMAND, message };
-    let enqueue = message(8172).enqueue;
-    message(8172);
+    const obj8 = { type: tmp11(8195).MessageDataType.COMMAND, message };
+    let enqueue = message(8195).enqueue;
+    message(8195);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;
@@ -842,7 +842,7 @@ obj = function _displayInteractionLifecycleInChat() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -1016,7 +1016,7 @@ obj = function _getMaxAndTotalFileSize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -1194,6 +1194,6 @@ let result = size.fileFinishedImporting("modules/application_commands/executeCom
 export default function executeCommand() {
   return obj(...arguments);
 };
-export const retryCommandMessage = function retryCommandMessage() {
+export function retryCommandMessage() {
   return obj(...arguments);
-};
+}

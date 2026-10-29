@@ -1,20 +1,20 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18308
+// Function ID: 18309
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 5035, 18009, 1084, 11222, 21, 5004, 587, 7485, 558, 576, 5288, 504, 5085, 5283, 17725, 18022, 1125, 5705, 9341, 18021, 6922, 18033, 5270, 2]
+// Dependencies: [19, 17, 5036, 18243, 1084, 11276, 21, 5005, 587, 7508, 558, 576, 5289, 504, 5086, 5284, 17963, 18256, 1125, 5707, 9345, 18255, 6946, 18267, 5271, 2]
 
-// Module 18074 (GuildsBarItemEmptyNUX)
+// Module 18308 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import spring from "spring" /* 5283 */;
-import transitionToGuild from "transitionToGuild" /* 7485 */;
-import MainTabsConstants from "MainTabsConstants" /* 11222 */;
+import spring from "spring" /* 5284 */;
+import transitionToGuild from "transitionToGuild" /* 7508 */;
+import MainTabsConstants from "MainTabsConstants" /* 11276 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18009 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18243 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18845
+// Function ID: 18846
 // Name: shouldExcludeSafeAreaForModalKey
-// Dependencies: [1084, 10782, 8888, 7902, 2]
+// Dependencies: [1084, 10862, 8891, 7925, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 18611 (shouldExcludeSafeAreaForModalKey)
+// Module 18845 (shouldExcludeSafeAreaForModalKey)
 import Constants2 from "Constants" /* 1084 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7902 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8888 */;
-import Constants from "Constants" /* 10782 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7925 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8891 */;
+import Constants from "Constants" /* 10862 */;
 import size from "module_2" /* 2 */;
 
 let OAUTH2_AUTHORIZE_MODAL_KEY;
@@ -20,7 +20,7 @@ const items = [MEDIA_MODAL_KEY, OAUTH2_AUTHORIZE_MODAL_KEY, OAUTH2_SUCCESS_RESUL
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/safe_area/shouldExcludeSafeAreaForModalKey.native.tsx");
 
-export const shouldExcludeSafeAreaForModalKey = function shouldExcludeSafeAreaForModalKey(key) {
+export function shouldExcludeSafeAreaForModalKey(key) {
   let tmp = null != key;
   if (tmp) {
     const obj = PrivateChannelCallUtils;
@@ -28,4 +28,4 @@ export const shouldExcludeSafeAreaForModalKey = function shouldExcludeSafeAreaFo
     tmp = hasItem;
   }
   return tmp;
-};
+}

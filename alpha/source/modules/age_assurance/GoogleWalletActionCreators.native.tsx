@@ -1,14 +1,14 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 7990
+// Function ID: 7991
 // Name: GoogleWalletActionCreators
-// Dependencies: [5, 502, 1084, 7932, 1294, 7968, 2]
+// Dependencies: [5, 502, 1084, 7955, 1294, 7991, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7967 (GoogleWalletActionCreators)
+// Module 7990 (GoogleWalletActionCreators)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
-import react_nativeDefault from "react-native" /* 7968 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
+import react_nativeDefault from "react-native" /* 7991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _requestGoogleWalletVerification() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ obj = function _verifyGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -170,7 +170,7 @@ obj = function _verifyGoogleWalletCredential() {
             return obj;
           }
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp5) {
         c1 = 3;
@@ -193,7 +193,7 @@ obj = function _checkGoogleWalletAvailable() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -267,7 +267,7 @@ obj = function _getGoogleWalletCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -321,15 +321,15 @@ obj = function _getGoogleWalletCredential() {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/age_assurance/GoogleWalletActionCreators.native.tsx");
 
-export const requestGoogleWalletVerification = function requestGoogleWalletVerification() {
+export function requestGoogleWalletVerification() {
   return obj(...arguments);
-};
-export const verifyGoogleWalletCredential = function verifyGoogleWalletCredential() {
+}
+export function verifyGoogleWalletCredential() {
   return obj(...arguments);
-};
-export const checkGoogleWalletAvailable = function checkGoogleWalletAvailable() {
+}
+export function checkGoogleWalletAvailable() {
   return obj(...arguments);
-};
-export const getGoogleWalletCredential = function getGoogleWalletCredential() {
+}
+export function getGoogleWalletCredential() {
   return obj(...arguments);
-};
+}

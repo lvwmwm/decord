@@ -1,9 +1,9 @@
-// Module ID: 13198
-// Function ID: 13199
+// Module ID: 13430
+// Function ID: 13431
 // Name: useCheckpointCharacterTextureSwaps
-// Dependencies: [32, 5, 19, 5080, 558, 576, 2]
+// Dependencies: [32, 5, 19, 5081, 558, 576, 2]
 
-// Module 13198 (useCheckpointCharacterTextureSwaps)
+// Module 13430 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ obj = function _swapTextures() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ obj = function _swapTextures() {
                                   const obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "IconComponent", done: null };
+                                  return { value: "IconComponent", done: "IconComponent" };
                                 }
                               } else {
                                 try {
@@ -148,7 +148,7 @@ obj = function _swapTextures() {
                                       const result = closure_1_5.set(closure_0, closure_1);
                                     }
                                     c4 = 3;
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "IconComponent" };
                                   }
                                 } catch (tmp15) {
                                   c4 = 3;
@@ -193,7 +193,7 @@ obj = function _swapTextures() {
           }
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp16) {
         c6 = 3;
         throw tmp16;

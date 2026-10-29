@@ -1,14 +1,14 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10706
+// Function ID: 10707
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2019, 1389, 6020, 558, 576, 7443, 2030, 8618, 1125, 504, 2]
+// Dependencies: [19, 2020, 1389, 6024, 558, 576, 7466, 2031, 8640, 1125, 504, 2]
 
-// Module 10673 (useGameMentionsAsPlainText)
-import StringUtils from "StringUtils" /* 2030 */;
+// Module 10706 (useGameMentionsAsPlainText)
+import StringUtils from "StringUtils" /* 2031 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import UserStore from "UserStore" /* 1389 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

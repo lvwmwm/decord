@@ -1,17 +1,17 @@
-// Module ID: 18865
-// Function ID: 18866
+// Module ID: 19098
+// Function ID: 19099
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5004, 587, 558, 576, 10938, 7289, 11500, 11548, 18866, 18867, 6944, 6922, 2]
+// Dependencies: [5, 19, 17, 21, 5005, 587, 558, 576, 10973, 7313, 11554, 11602, 19099, 19100, 6968, 6946, 2]
 
-// Module 18865 (ActivityItemMissingCard)
+// Module 19098 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 6922 */;
+import NativeViewDefault from "NativeView" /* 6946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -178,7 +178,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -222,7 +222,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
           return obj;
         } else {
           activity = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp4) {
         activity = 3;

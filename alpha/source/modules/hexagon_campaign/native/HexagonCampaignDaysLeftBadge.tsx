@@ -1,24 +1,24 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16381
+// Function ID: 16382
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 17, 1389, 5029, 21, 1101, 5004, 587, 558, 576, 504, 5031, 7589, 5070, 5011, 5270, 5727, 1125, 4280, 2]
+// Dependencies: [19, 17, 1389, 5030, 21, 1101, 5005, 587, 558, 576, 504, 5032, 7612, 5071, 5012, 5271, 5729, 1125, 4281, 2]
 
-// Module 16144 (HexagonCampaignDaysLeftBadge)
+// Module 16381 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import _modDef4280 from "module_4280" /* 4280 */;
-import shared from "shared" /* 5011 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5031 */;
-import native from "native" /* 5070 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useCountdownDefault from "useCountdown" /* 7589 */;
+import _modDef4281 from "module_4281" /* 4281 */;
+import shared from "shared" /* 5012 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5032 */;
+import native from "native" /* 5071 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useCountdownDefault from "useCountdown" /* 7612 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHexagonCa
     return max(days + num4, 1);
   }
   if (null != item) {
-    const tmp2Result2 = stateFromStores(5031);
+    const tmp2Result2 = stateFromStores(5032);
     hexagonCampaignPerkCutoffMs = tmp2Result2.getHexagonCampaignPerkCutoffMs(item, stateFromStores);
   } else {
     const _Math = Math;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHexagonCa
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp3 = stateFromStores(7589)(memo, closure_8);
+  const tmp3 = stateFromStores(7612)(memo, closure_8);
   let num = 0;
   const days = tmp3.days;
   let _Math = Math;
@@ -338,7 +338,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   if (cResult[1] !== tmp4) {
     const intl = intl2.intl;
     const obj2 = { days: tmp4 };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef4280["noGK/D"], obj2);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef4281["noGK/D"], obj2);
     cResult[1] = tmp4;
     cResult[2] = formatToPlainStringResult;
     tmp6 = formatToPlainStringResult;
@@ -366,7 +366,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
       const obj = { size: "xxs", color };
       return closure_1_6(require("ClockIcon").ClockIcon, obj);
     },
-    text: intl.formatToPlainString(_modDef4280["noGK/D"], { days: tmp })
+    text: intl.formatToPlainString(_modDef4281["noGK/D"], { days: tmp })
   };
   tmp = closure_11(variant.perk);
   intl = intl2.intl;

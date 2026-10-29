@@ -1,14 +1,14 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14722
+// Function ID: 14723
 // Name: MediaModalImage
-// Dependencies: [19, 21, 1381, 558, 576, 14485, 14486, 5705, 14487, 2]
+// Dependencies: [19, 21, 1381, 558, 576, 14719, 14720, 5707, 14721, 2]
 
-// Module 14488 (MediaModalImage)
+// Module 14722 (MediaModalImage)
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14485 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14487 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14719 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14721 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -195,8 +195,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         cResult[21] = source.width;
         cResult[22] = style;
         cResult[23] = tmp10;
-        cResult[24] = React3(tmp4(5705), size);
-        const tmp15 = React3(tmp4(5705), size);
+        cResult[24] = React3(tmp4(5707), size);
+        const tmp15 = React3(tmp4(5707), size);
       }
     }
   }
@@ -236,7 +236,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp4 = react;
   if (hasError) {
     const obj = { style, status: "error" };
-    tmp7Result = React3(tmp(14486), obj);
+    tmp7Result = React3(tmp(14720), obj);
   } else {
     const Fragment = tmp4.Fragment;
     size = { accessibilityRole: "image", accessibilityLabel: source.description, fadeDuration, height: source.height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: callback, pointerEvents, resizeMethod: str, source: tmp6, style, width: source.width };
@@ -264,7 +264,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp8Result = null;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading", progress };
-      tmp8Result = tmp8(tmp(14486), obj3);
+      tmp8Result = tmp8(tmp(14720), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp8Result;

@@ -179,10 +179,10 @@ function enrichAndroidProfileWithEventContext(profile_id, build_id, contexts) {
   return assign(merged, obj);
 }
 
-export const isValidProfile = function isValidProfile(samples) {
+export function isValidProfile(samples) {
   return samples.samples.length > 1;
-};
-export const findProfiledTransactionsFromEnvelope = function findProfiledTransactionsFromEnvelope(arg0) {
+}
+export function findProfiledTransactionsFromEnvelope(arg0) {
   const items = [];
   const obj = _mod693;
   obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
@@ -215,8 +215,8 @@ export const findProfiledTransactionsFromEnvelope = function findProfiledTransac
     }
   });
   return items;
-};
-export const enrichCombinedProfileWithEventContext = function enrichCombinedProfileWithEventContext(profile_id, value, contexts) {
+}
+export function enrichCombinedProfileWithEventContext(profile_id, value, contexts) {
   let environment;
   let flag;
   let obj2;
@@ -432,12 +432,12 @@ export const enrichCombinedProfileWithEventContext = function enrichCombinedProf
     }
     return null;
   }
-};
+}
 export { enrichAndroidProfileWithEventContext };
-export const createHermesProfilingEvent = function createHermesProfilingEvent(result1) {
+export function createHermesProfilingEvent(result1) {
   return { platform: "javascript", version: "1", profile: result1, transaction: { active_thread_id: result1.active_thread_id } };
-};
-export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) {
+}
+export function addProfilesToEnvelope(arg0, arg1) {
   if (arg1.length) {
     const tmp2 = arg1[Symbol.iterator]();
     while (tmp2 !== undefined) {
@@ -450,4 +450,4 @@ export const addProfilesToEnvelope = function addProfilesToEnvelope(arg0, arg1) 
   } else {
     return arg0;
   }
-};
+}

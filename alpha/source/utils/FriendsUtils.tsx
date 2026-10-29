@@ -1,14 +1,14 @@
-// Module ID: 7456
-// Function ID: 7457
+// Module ID: 7479
+// Function ID: 7480
 // Name: FriendsUtils
-// Dependencies: [32, 1084, 1125, 38, 1264, 7457, 2]
+// Dependencies: [32, 1084, 1125, 38, 1264, 7480, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 7456 (FriendsUtils)
+// Module 7479 (FriendsUtils)
 import _modDef38 from "module_38" /* 38 */;
 import intl8 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7457 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -83,11 +83,11 @@ const re8 = /^[a-zA-Z0-9_\\.]+$/;
 const result = size.fileFinishedImporting("utils/FriendsUtils.tsx");
 
 export { validateDiscordTag };
-export const isValidDiscordTag = function isValidDiscordTag(substr) {
+export function isValidDiscordTag(substr) {
   return null == validateDiscordTag(substr);
-};
+}
 export { humanizeAbortCode };
-export const humanizeAbortCodeForA11y = function humanizeAbortCodeForA11y(arg0, trimmed) {
+export function humanizeAbortCodeForA11y(arg0, trimmed) {
   let formatToPlainStringResult = humanizeAbortCode(arg0, trimmed);
   if (arg0 === constants.RELATIONSHIP_INCOMING_DISABLED) {
     const intl = intl8.intl;
@@ -96,4 +96,4 @@ export const humanizeAbortCodeForA11y = function humanizeAbortCodeForA11y(arg0, 
   }
   _modDef38(typeof formatToPlainStringResult === "string", "abortCode should be a string for a11y");
   return formatToPlainStringResult;
-};
+}

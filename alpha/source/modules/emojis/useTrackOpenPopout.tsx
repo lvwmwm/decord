@@ -1,19 +1,19 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10006
+// Function ID: 10007
 // Name: useTrackOpenPopout
-// Dependencies: [19, 4856, 4907, 1392, 1084, 5747, 5299, 9860, 1264, 2]
+// Dependencies: [19, 4857, 4908, 1392, 1084, 5749, 5300, 9892, 1264, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9974 (useTrackOpenPopout)
+// Module 10006 (useTrackOpenPopout)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import useMountEffectDefault from "useMountEffect" /* 5299 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 9860 */;
+import useMountEffectDefault from "useMountEffect" /* 5300 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 9892 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import size from "module_2" /* 2 */;
 
 const EmojiInteractionPoint = EmojiConstants.EmojiInteractionPoint;

@@ -1,19 +1,19 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 9435
+// Function ID: 9436
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [7690, 7689, 1990, 7691, 7692, 2044, 9403, 1084, 1992, 2]
+// Dependencies: [7713, 7712, 1991, 7714, 7715, 2045, 9434, 1084, 1993, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9404 (CollectiblesWishlistItemRecord)
+// Module 9435 (CollectiblesWishlistItemRecord)
 import Constants from "Constants" /* 1084 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7689 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7690 */;
-import NameplateRecord from "NameplateRecord" /* 1990 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7691 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7692 */;
-import SKURecord from "SKURecord" /* 2044 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9403 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7712 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7713 */;
+import NameplateRecord from "NameplateRecord" /* 1991 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7714 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7715 */;
+import SKURecord from "SKURecord" /* 2045 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9434 */;
 import size from "module_2" /* 2 */;
 
 function createCollectiblesItemFromServerResponse(collectibles_item) {
@@ -112,6 +112,6 @@ class CollectiblesWishlistItemRecord extends BaseWishlistItemRecord {
 const result = size.fileFinishedImporting("modules/wishlists/records/CollectiblesWishlistItemRecord.tsx");
 
 export default CollectiblesWishlistItemRecord;
-export const isCollectiblesWishlistItemRecord = function isCollectiblesWishlistItemRecord(arg0) {
+export function isCollectiblesWishlistItemRecord(arg0) {
   return arg0 instanceof CollectiblesWishlistItemRecord;
-};
+}

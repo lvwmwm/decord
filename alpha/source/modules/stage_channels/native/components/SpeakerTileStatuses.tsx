@@ -1,21 +1,21 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11799
+// Function ID: 11800
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2011, 5666, 6721, 21, 5004, 587, 558, 576, 504, 11688, 11489, 11490, 1199, 11746, 11747, 7098, 2]
+// Dependencies: [19, 17, 2012, 5668, 6744, 21, 5005, 587, 558, 576, 504, 9203, 11742, 11543, 11544, 1199, 11800, 11801, 7122, 2]
 
-// Module 11745 (SpeakerTileStatuses)
+// Module 11799 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7098 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11747 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7122 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11801 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6721 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6744 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,6 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceStatus(userId) {
   let first;
-  let fn;
   let items4;
   let tmp10;
   let tmp7;
@@ -57,7 +56,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[1] !== userId) {
     class S {
       constructor() {
-        return MediaEngineStore.isLocalMute(userId);
+        return closure_4.isLocalMute(userId);
       }
     }
     const items1 = [userId];
@@ -69,7 +68,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     class S {
       constructor() {
-        return MediaEngineStore.isLocalMute(userId);
+        return closure_4.isLocalMute(userId);
       }
     }
     tmp8 = cResult[3];
@@ -79,7 +78,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
       constructor() {
-        return MediaEngineStore.isLocalMute(userId);
+        return closure_4.isLocalMute(userId);
       }
     }
     const items2 = [VoiceStateStore];
@@ -88,65 +87,69 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     class S {
       constructor() {
-        return MediaEngineStore.isLocalMute(userId);
+        return closure_4.isLocalMute(userId);
       }
     }
   }
   if (cResult[5] === channelId) {
-    let tmp15;
+    let tmp17;
     class S {
       constructor() {
-        return MediaEngineStore.isLocalMute(userId);
+        return closure_4.isLocalMute(userId);
       }
     }
-    const tmpResult2 = userId(504);
-    const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, fn, items4);
-    if (stateFromStores1 != null) {
+    const withLocalSelfMuteDeaf = userId(9203).withLocalSelfMuteDeaf;
+    userId(9203);
+    const tmpResult5 = userId(504);
+    const stateFromStores1 = tmpResult5.useStateFromStores(tmp10, M, items4);
+    const tmpResult6 = userId(9203);
+    const result = withLocalSelfMuteDeaf(stateFromStores1, tmpResult6.useLocalSelfMuteDeaf());
+    if (result != null) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
     }
     if (undefined == null) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
     }
-    if (stateFromStores1 != null) {
+    if (result != null) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
     }
     if (undefined == null) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
     }
     if (stateFromStores) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
-      tmp15 = channelId(11688);
+      tmp17 = channelId(11742);
     } else {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
     }
-    if (null != tmp15) {
+    if (null != tmp17) {
       class S {
         constructor() {
-          return MediaEngineStore.isLocalMute(userId);
+          return closure_4.isLocalMute(userId);
         }
       }
       const items3 = [tmp4.voiceStatusWrapper, style];
@@ -156,17 +159,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return null;
   }
-  fn = function y() {
-    return VoiceStateStore.getVoiceStateForChannel(channelId, userId);
-  };
+  class M {
+    constructor() {
+      return closure_5.getVoiceStateForChannel(channelId, userId);
+    }
+  }
   items4 = [channelId, userId];
   cResult[5] = channelId;
   cResult[6] = userId;
-  cResult[7] = fn;
+  cResult[7] = M;
   cResult[8] = items4;
 }) : (function VoiceStatus(userId) {
   let flag3;
-  let tmp5;
+  let tmp7;
   userId = userId.userId;
   const channelId = userId.channelId;
   const style = userId.style;
@@ -175,45 +180,49 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp = closure_8();
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => MediaEngineStore.isLocalMute(userId), items1);
+  const withLocalSelfMuteDeaf = userId(9203).withLocalSelfMuteDeaf;
+  userId(9203);
   const items2 = [VoiceStateStore];
   const items3 = [channelId, userId];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => VoiceStateStore.getVoiceStateForChannel(channelId, userId), items3);
+  const obj3 = userId(9203);
+  const result = withLocalSelfMuteDeaf(stateFromStores1, obj3.useLocalSelfMuteDeaf());
   let flag;
-  if (stateFromStores1 != null) {
-    flag = stateFromStores1.isVoiceMuted();
+  if (result != null) {
+    flag = result.isVoiceMuted();
   }
   if (flag == null) {
     flag = false;
   }
   let flag2;
-  if (stateFromStores1 != null) {
-    flag2 = stateFromStores1.isVoiceDeafened();
+  if (result != null) {
+    flag2 = result.isVoiceDeafened();
   }
   if (flag2 == null) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp5 = channelId(11688);
+    tmp7 = channelId(11742);
     flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(11489);
+    tmp7 = channelId(11543);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(11490);
+      tmp7 = channelId(11544);
       flag3 = false;
     }
   }
-  let tmp9 = null;
-  if (null != tmp5) {
+  let tmp11 = null;
+  if (null != tmp7) {
     const items4 = [tmp.voiceStatusWrapper, style];
-    ({ source: tmp5, size: userId(1199).Icon.Sizes.SMALL, color: channelId(587).unsafe_rawColors.BLACK, disableColor: flag3 });
+    ({ source: tmp7, size: userId(1199).Icon.Sizes.SMALL, color: channelId(587).unsafe_rawColors.BLACK, disableColor: flag3 });
     const Icon = tmp2(1199).Icon;
-    tmp9 = <View style={items4}>{null}</View>;
+    tmp11 = <View style={items4}>{null}</View>;
   }
-  return tmp9;
+  return tmp11;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function ModeratorStatus(userId) {
@@ -241,7 +250,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     let tmp9;
     const tmpResult = userId(504);
     if (tmpResult.useStateFromStores(first, tmp7, tmp8)) {
-      tmp9 = channelId(11746);
+      tmp9 = channelId(11800);
     }
     let tmp11 = null;
     if (null != tmp9) {
@@ -301,7 +310,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(11746);
+    tmp4 = channelId(11800);
   }
   let tmp6 = null;
   if (null != tmp4) {
@@ -353,7 +362,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoredStatu
   return <Icon style={closure_8().restricted} source={AssetRegistryDefault} size={native.Icon.Sizes.EXTRA_SMALL} />;
 });
 size = size_mod;
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/SpeakerTileStatuses.tsx");
+let result = size.fileFinishedImporting("modules/stage_channels/native/components/SpeakerTileStatuses.tsx");
 
 export const VoiceStatus = memoResult;
 export const ModeratorStatus = memo2Result;

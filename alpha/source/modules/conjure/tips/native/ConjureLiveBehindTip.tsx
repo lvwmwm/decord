@@ -1,17 +1,17 @@
-// Module ID: 12382
-// Function ID: 12383
+// Module ID: 12436
+// Function ID: 12437
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 558, 576, 12190, 1125, 3863, 12377, 9838, 12368, 2]
+// Dependencies: [19, 21, 558, 576, 12244, 1125, 3864, 12431, 9870, 12422, 2]
 
-// Module 12382 (ConjureLiveBehindTip)
+// Module 12436 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import UploadIcon from "UploadIcon" /* 9838 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12190 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12368 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 12377 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import UploadIcon from "UploadIcon" /* 9870 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12244 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12422 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12431 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
           return closure_0("outdated_notice");
         }
     };
-    const formatResult = intl.format(_modDef3863.fWfeZ8, obj2);
+    const formatResult = intl.format(_modDef3864.fWfeZ8, obj2);
     cResult[0] = tmp5;
     cResult[1] = formatResult;
     tmp6 = formatResult;
@@ -67,7 +67,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveBeh
       return closure_0("outdated_notice");
     }
   };
-  return <tmp icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3863.fWfeZ8, obj2)}</tmp>;
+  return <tmp icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef3864.fWfeZ8, obj2)}</tmp>;
 });
 let obj = {
   render(arg0, context) {

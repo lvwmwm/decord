@@ -1,21 +1,21 @@
-// Module ID: 9232
-// Function ID: 9233
+// Module ID: 9236
+// Function ID: 9237
 // Name: SecureFramesTracking
-// Dependencies: [4856, 1084, 5747, 8717, 1264, 2]
+// Dependencies: [4857, 1084, 5749, 8720, 1264, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9232 (SecureFramesTracking)
+// Module 9236 (SecureFramesTracking)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8717 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8720 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesTracking.tsx");
 
-export const trackRTCPanelViewed = function trackRTCPanelViewed(channelId) {
+export function trackRTCPanelViewed(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const selectedTab = channelId.selectedTab;
@@ -29,8 +29,8 @@ export const trackRTCPanelViewed = function trackRTCPanelViewed(channelId) {
     guild_id = channel.guild_id;
   }
   trackWithMetadata(RTC_PANEL_VIEWED, obj);
-};
-export const trackE2EEUserVerificationViewed = function trackE2EEUserVerificationViewed(channelId) {
+}
+export function trackE2EEUserVerificationViewed(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const userId = channelId.userId;
@@ -46,8 +46,8 @@ export const trackE2EEUserVerificationViewed = function trackE2EEUserVerificatio
   const obj2 = UserProfileAnalyticsUtils;
   const merged = Object.assign(obj2.getTrackUserRelationshipProperties({ userId }));
   trackWithMetadata(E2EE_USER_VERIFICATION_VIEWED, obj);
-};
-export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
+}
+export function trackE2EEUserVerified(channelId) {
   let analyticsLocation;
   let guild_id;
   let userId;
@@ -65,8 +65,8 @@ export const trackE2EEUserVerified = function trackE2EEUserVerified(channelId) {
   const obj2 = UserProfileAnalyticsUtils;
   const merged = Object.assign(obj2.getTrackUserRelationshipProperties({ userId }));
   trackWithMetadata(E2EE_USER_VERIFIED, obj);
-};
-export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificationFailed(channelId) {
+}
+export function trackE2EEUserVerificationFailed(channelId) {
   let guild_id;
   let keyVersion;
   let reason;
@@ -85,8 +85,8 @@ export const trackE2EEUserVerificationFailed = function trackE2EEUserVerificatio
   const obj2 = UserProfileAnalyticsUtils;
   const merged = Object.assign(obj2.getTrackUserRelationshipProperties({ userId }));
   trackWithMetadata(E2EE_USER_VERIFICATION_FAILED, obj);
-};
-export const trackE2EEUserVerificationShareClicked = function trackE2EEUserVerificationShareClicked(channelId) {
+}
+export function trackE2EEUserVerificationShareClicked(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const userId = channelId.userId;
@@ -102,8 +102,8 @@ export const trackE2EEUserVerificationShareClicked = function trackE2EEUserVerif
   const obj2 = UserProfileAnalyticsUtils;
   const merged = Object.assign(obj2.getTrackUserRelationshipProperties({ userId }));
   trackWithMetadata(E2EE_USER_VERIFICATION_SHARE_CLICKED, obj);
-};
-export const trackE2EEUserVerificationCopied = function trackE2EEUserVerificationCopied(channelId) {
+}
+export function trackE2EEUserVerificationCopied(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const userId = channelId.userId;
@@ -119,8 +119,8 @@ export const trackE2EEUserVerificationCopied = function trackE2EEUserVerificatio
   const obj2 = UserProfileAnalyticsUtils;
   const merged = Object.assign(obj2.getTrackUserRelationshipProperties({ userId }));
   trackWithMetadata(E2EE_USER_VERIFICATION_CODE_COPIED, obj);
-};
-export const trackE2EECallVerificationShareClicked = function trackE2EECallVerificationShareClicked(channelId) {
+}
+export function trackE2EECallVerificationShareClicked(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const obj = { channel_id: channelId, guild_id };
@@ -133,8 +133,8 @@ export const trackE2EECallVerificationShareClicked = function trackE2EECallVerif
     guild_id = channel.guild_id;
   }
   trackWithMetadata(E2EE_CALL_VERIFICATION_SHARE_CLICKED, obj);
-};
-export const trackE2EECallVerificationCopied = function trackE2EECallVerificationCopied(channelId) {
+}
+export function trackE2EECallVerificationCopied(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const obj = { channel_id: channelId, guild_id };
@@ -147,8 +147,8 @@ export const trackE2EECallVerificationCopied = function trackE2EECallVerificatio
     guild_id = channel.guild_id;
   }
   trackWithMetadata(E2EE_CALL_VERIFICATION_CODE_COPIED, obj);
-};
-export const trackE2EEStreamVerificationShareClicked = function trackE2EEStreamVerificationShareClicked(channelId) {
+}
+export function trackE2EEStreamVerificationShareClicked(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const obj = { channel_id: channelId, guild_id };
@@ -161,8 +161,8 @@ export const trackE2EEStreamVerificationShareClicked = function trackE2EEStreamV
     guild_id = channel.guild_id;
   }
   trackWithMetadata(E2EE_STREAM_VERIFICATION_SHARE_CLICKED, obj);
-};
-export const trackE2EEStreamVerificationCopied = function trackE2EEStreamVerificationCopied(channelId) {
+}
+export function trackE2EEStreamVerificationCopied(channelId) {
   let guild_id;
   channelId = channelId.channelId;
   const obj = { channel_id: channelId, guild_id };
@@ -175,17 +175,17 @@ export const trackE2EEStreamVerificationCopied = function trackE2EEStreamVerific
     guild_id = channel.guild_id;
   }
   trackWithMetadata(E2EE_STREAM_VERIFICATION_CODE_COPIED, obj);
-};
-export const trackE2EESettingsUserDelete = function trackE2EESettingsUserDelete() {
+}
+export function trackE2EESettingsUserDelete() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.E2EE_SETTINGS_USER_DELETE);
-};
-export const trackE2EESettingsDeviceDelete = function trackE2EESettingsDeviceDelete() {
+}
+export function trackE2EESettingsDeviceDelete() {
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.E2EE_SETTINGS_DEVICE_DELETE);
-};
-export const trackE2EEPublicKeyMismatch = function trackE2EEPublicKeyMismatch(arg0) {
+}
+export function trackE2EEPublicKeyMismatch(arg0) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { key_version: "" + arg0 };
   obj.track(AnalyticEvents.E2EE_PUBLIC_KEY_MISMATCH, obj2);
-};
+}

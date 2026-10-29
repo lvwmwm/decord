@@ -1,12 +1,12 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 11281
+// Function ID: 11282
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 11227 (UserProfileWYSIWYGEditingExperiment)
+// Module 11281 (UserProfileWYSIWYGEditingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibl
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx");
 
 export const useIsEligibleForUserProfileWYSIWYGEditing = tmp2;
-export const getIsEligibleForUserProfileWYSIWYGEditing = function getIsEligibleForUserProfileWYSIWYGEditing(location) {
+export function getIsEligibleForUserProfileWYSIWYGEditing(location) {
   const obj = { location };
   return closure_2.getConfig(obj).enabled;
-};
+}

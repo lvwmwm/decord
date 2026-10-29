@@ -1,28 +1,28 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9505
+// Function ID: 9506
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [19, 21, 9475, 9476, 9477, 558, 576, 7031, 5705, 2]
+// Dependencies: [19, 21, 9506, 9507, 9508, 558, 576, 7055, 5707, 2]
 
-// Module 9474 (NitroCoinStackSpotIllustration)
+// Module 9505 (NitroCoinStackSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import react_native from "react-native" /* 7031 */;
-import _modDef9475 from "module_9475" /* 9475 */;
-import _modDef9476 from "module_9476" /* 9476 */;
-import _modDef9477 from "module_9477" /* 9477 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import react_native from "react-native" /* 7055 */;
+import _modDef9506 from "module_9506" /* 9506 */;
+import _modDef9507 from "module_9507" /* 9507 */;
+import _modDef9508 from "module_9508" /* 9508 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9475 };
+let obj2 = { uri: _modDef9506 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9476 };
+let obj3 = { uri: _modDef9507 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9477 };
-({ uri: _modDef9477 });
+obj[3] = { uri: _modDef9508 };
+({ uri: _modDef9508 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroCoinStackSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

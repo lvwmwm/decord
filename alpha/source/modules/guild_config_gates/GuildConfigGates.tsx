@@ -1,14 +1,14 @@
-// Module ID: 19449
-// Function ID: 19450
+// Module ID: 19682
+// Function ID: 19683
 // Name: GuildConfigGates
-// Dependencies: [5, 19450, 1084, 504, 1294, 584, 558, 2]
+// Dependencies: [5, 19683, 1084, 504, 1294, 584, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 19449 (GuildConfigGates)
+// Module 19682 (GuildConfigGates)
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19450 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19683 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -103,7 +103,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
           dispatch(obj5);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp13) {
         c6 = 3;
         throw tmp13;
@@ -118,7 +118,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result2 = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
-export const useGuildVerificationRoleEnabled = function useGuildVerificationRoleEnabled(arg0) {
+export function useGuildVerificationRoleEnabled(arg0) {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {
@@ -128,8 +128,8 @@ export const useGuildVerificationRoleEnabled = function useGuildVerificationRole
     flag = false;
   }
   return flag;
-};
-export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(arg0) {
+}
+export function useApplicationIdentityLinkedRolesEnabled(arg0) {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {
@@ -139,4 +139,4 @@ export const useApplicationIdentityLinkedRolesEnabled = function useApplicationI
     flag = false;
   }
   return flag;
-};
+}

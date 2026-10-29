@@ -1,11 +1,11 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8131
+// Function ID: 8132
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1502, 6689, 7967, 7932, 6503, 6508, 1125, 3091, 7935, 7936, 6013, 5270, 6731, 5280, 6692, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 6713, 7990, 7955, 6527, 6532, 1125, 3092, 7958, 7959, 6015, 5271, 6754, 5281, 6716, 2]
 
-// Module 8108 (GoogleWalletVerificationScreen)
+// Module 8131 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -381,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp50;
@@ -510,7 +510,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp50) {
           if (0 === c3) {
@@ -604,7 +604,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let tmp50;
@@ -733,7 +733,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp50) {
         if (0 === c3) {

@@ -1,12 +1,12 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7923
+// Function ID: 7924
 // Name: GuildRoomsExperiment
-// Dependencies: [4916, 5224, 558, 576, 504, 2]
+// Dependencies: [4917, 5225, 558, 576, 504, 2]
 // Exports: getGuildRoomsConfig
 
-// Module 7900 (GuildRoomsExperiment)
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import createExperiment from "module_5224" /* 5224 */;
+// Module 7923 (GuildRoomsExperiment)
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoom
 const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
 
 export const GUILD_ROOMS_EXPERIMENT_ID = "2026-06_guild_rooms";
-export const getGuildRoomsConfig = function getGuildRoomsConfig(guildId, disable) {
+export function getGuildRoomsConfig(guildId, disable) {
   let flag;
   const getCurrentConfig = closure_3.getCurrentConfig;
   const obj = { autoTrackExposure: true, disable: flag };
@@ -120,5 +120,5 @@ export const getGuildRoomsConfig = function getGuildRoomsConfig(guildId, disable
     const tmp3 = null != guildId && !GuildMemberStore.isCurrentUserGuest(guildId);
   }
   return getCurrentConfig(guildId, obj);
-};
+}
 export const useGuildRoomsExperiment = tmp2;

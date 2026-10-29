@@ -1,14 +1,14 @@
-// Module ID: 18804
-// Function ID: 18805
+// Module ID: 19037
+// Function ID: 19038
 // Name: ExpressionPickerStore
-// Dependencies: [1240, 6708, 1266, 5200, 1271, 2]
+// Dependencies: [1240, 6017, 1266, 5201, 1271, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 18804 (ExpressionPickerStore)
+// Module 19037 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
-import uniqueIdDefault from "uniqueId" /* 6708 */;
+import uniqueIdDefault from "uniqueId" /* 6017 */;
 import module_1266_mod from "module_1266" /* 1266 */;
-import combine from "combine" /* 5200 */;
+import combine from "combine" /* 5201 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let obj2 = {
 const withEqualityFnResult = module_1266(combine.persist(() => closure_3, obj2));
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
 
-export const openExpressionPicker = function openExpressionPicker(arg0, arg1, arg2, arg3) {
+export function openExpressionPicker(arg0, arg1, arg2, arg3) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -51,8 +51,8 @@ export const openExpressionPicker = function openExpressionPicker(arg0, arg1, ar
     }
     return setState(obj2);
   });
-};
-export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) {
+}
+export function closeExpressionPicker(arg0, arg1) {
   const state = withEqualityFnResult.getState();
   let tmp2 = undefined !== arg0 && arg0 !== state.activeViewType;
   if (!tmp2) {
@@ -67,8 +67,8 @@ export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) 
       });
     }
   }
-};
-export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(arg0, arg1) {
+}
+export function toggleMultiExpressionPicker(arg0, arg1) {
   let state1;
   const state = withEqualityFnResult.getState();
   const obj = withEqualityFnResult;
@@ -129,8 +129,8 @@ export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(
       return setState(obj2);
     });
   }
-};
-export const toggleExpressionPicker = function toggleExpressionPicker(activeView, activeViewType, activeChannelId) {
+}
+export function toggleExpressionPicker(activeView, activeViewType, activeChannelId) {
   let showEmojiPacks;
   let obj = withEqualityFnResult;
   const state = withEqualityFnResult.getState();
@@ -166,24 +166,24 @@ export const toggleExpressionPicker = function toggleExpressionPicker(activeView
     }
     return setState(obj2);
   });
-};
-export const setExpressionPickerView = function setExpressionPickerView(activeView) {
+}
+export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false };
     return withEqualityFnResult.setState(obj);
   });
-};
-export const setShowEmojiPacks = function setShowEmojiPacks(showEmojiPacks) {
+}
+export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { showEmojiPacks };
     return withEqualityFnResult.setState(obj);
   });
-};
-export const setSearchQuery = function setSearchQuery(searchQuery) {
+}
+export function setSearchQuery(searchQuery) {
   _require = searchQuery;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -194,5 +194,5 @@ export const setSearchQuery = function setSearchQuery(searchQuery) {
     const obj = { searchQuery, isSearchSuggestion: flag };
     return withEqualityFnResult.setState(obj);
   });
-};
+}
 export const useExpressionPickerStore = withEqualityFnResult;

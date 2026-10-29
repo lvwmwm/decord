@@ -1,15 +1,15 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16633
+// Function ID: 16634
 // Name: ModerationUtils
-// Dependencies: [1084, 4834, 586, 16396, 1125, 1208, 2]
+// Dependencies: [1084, 4835, 586, 16634, 1125, 1208, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 16395 (ModerationUtils)
+// Module 16633 (ModerationUtils)
 import shims from "shims" /* 586 */;
 import intl11 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4834 */;
-import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 16396 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4835 */;
+import HighlightedSettingsTypes from "HighlightedSettingsTypes" /* 16634 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -49,13 +49,13 @@ const constants4 = DMSafetyConstants.ExplicitContentFilterTypes;
 const result = size.fileFinishedImporting("utils/ModerationUtils.tsx");
 
 export { mapColorToHighlightColor };
-export const mapOptionToHighlightedRowOptions = function mapOptionToHighlightedRowOptions(arr) {
+export function mapOptionToHighlightedRowOptions(arr) {
   return arr.map((name) => {
     const obj = { title: name.name, description: name.desc, highlightColor: mapColorToHighlightColor(name.color), value: name.value, disabled: name.disabled };
     return obj;
   });
-};
-export const generateVerificationLevelOptions = function generateVerificationLevelOptions(features) {
+}
+export function generateVerificationLevelOptions(features) {
   let intl;
   let intl10;
   let intl3;
@@ -131,8 +131,8 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   }
   items[4] = obj7;
   return items;
-};
-export const generateContentFilterHighlightedOptions = function generateContentFilterHighlightedOptions() {
+}
+export function generateContentFilterHighlightedOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -176,8 +176,8 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   items[2] = obj4;
   tmpResult2 = shims;
   return items;
-};
-export const generateContentFilterOptions = function generateContentFilterOptions(features) {
+}
+export function generateContentFilterOptions(features) {
   let intl;
   let intl2;
   let intl3;
@@ -215,8 +215,8 @@ export const generateContentFilterOptions = function generateContentFilterOption
   }
   items[2] = obj3;
   return items;
-};
-export const generateDmSpamOptions = function generateDmSpamOptions() {
+}
+export function generateDmSpamOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -236,8 +236,8 @@ export const generateDmSpamOptions = function generateDmSpamOptions() {
   intl6 = intl11.intl;
   items[2] = obj3;
   return items;
-};
-export const generateExplicitImageOptions = function generateExplicitImageOptions() {
+}
+export function generateExplicitImageOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -263,4 +263,4 @@ export const generateExplicitImageOptions = function generateExplicitImageOption
   items[2] = obj5;
   obj6 = shims;
   return items;
-};
+}

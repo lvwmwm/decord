@@ -1,7 +1,7 @@
 // Module ID: 1252
 // Function ID: 1253
 // Name: ClientThemesConstants
-// Dependencies: [1095, 1208, 1253, 1125, 4280, 12, 2]
+// Dependencies: [1095, 1208, 1253, 1125, 4281, 12, 2]
 // Exports: isSelectableGradientPreset
 
 // Module 1252 (ClientThemesConstants)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1095 */;
 import intl2 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
-import _modDef4280 from "module_4280" /* 4280 */;
+import _modDef4281 from "module_4281" /* 4281 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -405,7 +405,7 @@ const obj24 = {
   angle: 135,
   getName() {
     const intl = intl2.intl;
-    return intl.string(_modDef4280["+xs8ZP"]);
+    return intl.string(_modDef4281["+xs8ZP"]);
   },
   midpointPercentage: 35,
   unsupported_overlayOpacityMultiplier: 0.8
@@ -438,9 +438,9 @@ const keyByResult = module_12.keyBy(items31, "id");
 const result = size.fileFinishedImporting("modules/client_themes/ClientThemesConstants.tsx");
 
 export const BASIC_DARK_THEMES = items;
-export const isSelectableGradientPreset = function isSelectableGradientPreset(id) {
+export function isSelectableGradientPreset(id) {
   return id.id !== preloaded_user_settings.BackgroundGradientPresetId.EASTER_EGG;
-};
+}
 export const LIGHT_BACKGROUND_GRADIENT_PRESETS = items2;
 export const DARK_BACKGROUND_GRADIENT_PRESETS = items11;
 export const HEXAGON_GRADIENT_PRESET = obj24;

@@ -1,32 +1,32 @@
-// Module ID: 10500
-// Function ID: 10501
+// Module ID: 10533
+// Function ID: 10534
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7567, 7568, 502, 2055, 7559, 9833, 7560, 1084, 5734, 1391, 21, 3, 7555, 584, 9832, 1263, 2046, 7576, 4820, 6498, 1264, 5945, 1125, 10501, 1999, 6707, 7557, 2]
+// Dependencies: [109, 5, 19, 17, 7590, 7591, 502, 2056, 7582, 9865, 7583, 1084, 5736, 1391, 21, 3, 7578, 584, 9864, 1263, 2047, 7599, 4821, 6522, 1264, 5947, 1125, 10534, 2000, 6731, 7580, 2]
 
-// Module 10500 (GPlayManager)
+// Module 10533 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6498 */;
-import ProductIds from "ProductIds" /* 7555 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9832 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9833 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6522 */;
+import ProductIds from "ProductIds" /* 7578 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9864 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9865 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7567 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7568 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7590 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7591 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
-import IAPStore from "IAPStore" /* 7559 */;
-import Constants_mod from "Constants" /* 7560 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
+import IAPStore from "IAPStore" /* 7582 */;
+import Constants_mod from "Constants" /* 7583 */;
 import Constants_mod2 from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
-let c2, createdAfter, key, length, pendingDowngrade, purchases, succeededOnlyFields;
+let c1, c2, createdAfter, key, length, pendingDowngrade, purchases, succeededOnlyFields;
 
 let NativeEventEmitter;
 let NativeModules;
@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ let obj = function _handlePurchaseUpdated() {
                 closure_11 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
               break;
             }
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -189,7 +189,7 @@ let obj = function _handlePurchaseUpdated() {
                   const obj44 = closure_131_1(closure_131_2[17]);
                   obj44.dispatch(obj17);
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 } else {
                   c6 = 7;
                   c7 = 1;
@@ -431,8 +431,6 @@ function handleDowngradeCommand() {
 }
 obj = function _handleDowngradeCommand() {
   obj = _asyncToGenerator(async (arg0) => {
-    let c1;
-    let closure_2;
     let downgradeCommand = arg0;
     let c3 = 0;
     let c4 = 0;
@@ -440,38 +438,74 @@ obj = function _handleDowngradeCommand() {
       function executePendingDowngrade() {
         return closure_1_38(...arguments);
       }
-      if (1 === c3) {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
-          c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
           return { value, done: true };
-        } else if (closure_130_14.EXECUTE === downgradeCommand) {
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: executePendingDowngrade(), done: false };
-          return obj5;
-        } else if (closure_130_14.CLEAR === tmp22) {
-          closure_130_39();
         } else {
-          const _Error = Error;
-          const _HermesInternal = HermesInternal;
-          const self = this;
-          const self2 = this;
-          const error = new Error("Invalid downgrade state " + downgradeCommand);
-          throw error;
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        return { value, done: true };
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp3;
+              c1 = 0;
+              downgradeCommand = undefined;
+              downgradeCommand = downgradeCommand.downgradeCommand;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else if (closure_130_14.EXECUTE === downgradeCommand) {
+                c3 = 2;
+                c4 = 1;
+                const obj5 = { value: executePendingDowngrade(), done: false };
+                return obj5;
+              } else if (closure_130_14.CLEAR === tmp22) {
+                closure_130_39();
+              } else {
+                const _Error = Error;
+                const _HermesInternal = HermesInternal;
+                const self = this;
+                const self2 = this;
+                const error = new Error("Invalid downgrade state " + downgradeCommand);
+                throw error;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            }
+            c4 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp16) {
+          c4 = 3;
+          throw tmp16;
+        }
       }
-      await "IconComponent";
-      downgradeCommand = downgradeCommand.downgradeCommand;
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -494,7 +528,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -591,7 +625,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -626,7 +660,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -695,7 +729,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       } catch (tmp21) {
@@ -711,54 +745,93 @@ function handleAppStateUpdated() {
 }
 obj = function _handleAppStateUpdated() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_2;
     let state = arg0;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
-      if (1 === c5) {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
           return { value, done: true };
         } else {
-          purchases = closure_130_11;
-          if (closure_130_11.isReady()) {
-            purchases = closure_130_9;
-            if (closure_130_9.isAuthenticated()) {
-              purchases = state;
-              if (state === closure_130_17.ACTIVE) {
-                const obj2 = closure_130_0(closure_130_2[18]);
-                obj2.ensureSkusLoaded(closure_130_30);
-                c4 = 1;
-                purchases = closure_130_23.loadPurchases();
-                c5 = 3;
-                c6 = 1;
-                return { value: purchases, done: false };
-              }
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              state = undefined;
+              state = state.state;
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
             }
+          } else {
+            if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                purchases = closure_130_11;
+                if (closure_130_11.isReady()) {
+                  purchases = closure_130_9;
+                  if (closure_130_9.isAuthenticated()) {
+                    purchases = state;
+                    if (state === closure_130_17.ACTIVE) {
+                      const obj2 = closure_130_0(closure_130_2[18]);
+                      obj2.ensureSkusLoaded(closure_130_30);
+                      c4 = 1;
+                      purchases = closure_130_23.loadPurchases();
+                      c5 = 3;
+                      c6 = 1;
+                      return { value: purchases, done: false };
+                    }
+                  }
+                }
+              }
+            } else if (2 === c5) {
+              c4 = 0;
+              purchases = closure_130_23;
+              closure_130_23.open();
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp21) {
+          closure_3 = tmp21;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp21;
+          } else {
+            c5 = 2;
           }
         }
-      } else if (2 === c5) {
-        c4 = 0;
-        purchases = closure_130_23;
-        closure_130_23.open();
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
-      } else {
-        c4 = 0;
       }
-      await "IconComponent";
-      state = state.state;
-      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,12 +1,12 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9728
+// Function ID: 9729
 // Name: useMessageMaxLength
-// Dependencies: [1389, 1084, 2050, 558, 576, 504, 2]
+// Dependencies: [1389, 1084, 2051, 558, 576, 504, 2]
 // Exports: getMaxMessageLength
 
-// Module 9696 (useMessageMaxLength)
+// Module 9728 (useMessageMaxLength)
 import react from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
 const result = size.fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
 
 export default tmp3;
-export const getMaxMessageLength = function getMaxMessageLength() {
+export function getMaxMessageLength() {
   const obj = PremiumUtilsDefault;
   return obj.canUseIncreasedMessageLength(UserStore.getCurrentUser()) ? React3 : hasOwnProperty;
-};
+}

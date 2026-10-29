@@ -1,14 +1,14 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12054
+// Function ID: 12055
 // Name: MarkupInlineChannelMentionRules
-// Dependencies: [19, 21, 8507, 1199, 1385, 2]
+// Dependencies: [19, 21, 8529, 1199, 1385, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 12000 (MarkupInlineChannelMentionRules)
+// Module 12054 (MarkupInlineChannelMentionRules)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1199 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8507 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8529 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -294,7 +294,7 @@ const jsxs = Fragment.jsxs;
 let c0 = "\u{1F4AC}";
 const result = size.fileFinishedImporting("modules/markup/native/MarkupInlineChannelMentionRules.tsx");
 
-export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, fn, key) {
+export function inlineChannelMentionReact(inContent, fn, key) {
   let smartOutputResult;
   if (null == inContent.inContent) {
     const obj3 = MarkupRulesUtils;
@@ -307,7 +307,7 @@ export const inlineChannelMentionReact = function inlineChannelMentionReact(inCo
     smartOutputResult = <LegacyText key={arg2.key}>{items}</LegacyText>;
   }
   return smartOutputResult;
-};
+}
 export function createInlineChannelReact(arg0) {
   let str = arg0;
   if (arg0 === undefined) {

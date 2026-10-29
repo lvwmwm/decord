@@ -1,30 +1,30 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 17203
+// Function ID: 17204
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5005, 1389, 1084, 1626, 21, 1408, 5004, 587, 1503, 9392, 1272, 16965, 504, 16143, 8692, 6402, 5241, 1409, 1406, 16129, 10699, 10700, 568, 5699, 1125, 16966, 16967, 16968, 16130, 1264, 5248, 8693, 8690, 5246, 16969, 1999, 16972, 16973, 16978, 16982, 16133, 5070, 6404, 16652, 2929, 5270, 1199, 7341, 1102, 16134, 5280, 9457, 9804, 558, 576, 1630, 5085, 5283, 2]
+// Dependencies: [32, 19, 17, 5006, 1389, 1084, 1627, 21, 1408, 5005, 587, 1504, 6016, 1272, 17204, 504, 16380, 8695, 6426, 5242, 1409, 1406, 16366, 10732, 10733, 568, 5701, 1125, 17205, 17206, 17207, 16367, 1264, 5249, 8696, 8693, 5247, 17208, 2000, 17211, 17212, 17217, 17221, 16370, 5071, 6428, 16890, 2930, 5271, 1199, 7365, 1102, 16371, 5281, 9488, 9836, 558, 576, 1631, 5086, 5284, 2]
 // Exports: default
 
-// Module 16964 (DisplayNameStylesEditScreen)
+// Module 17203 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import spring from "spring" /* 5283 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8690 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8693 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import spring from "spring" /* 5284 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8693 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,9 @@ const __initData3 = { code: "function DisplayNameStylesEditScreenTsx3(){const{vi
 const __initData4 = { code: "function DisplayNameStylesEditScreenTsx4(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplyButton(onPress) {
   let stateFromStores;
-  let tmp14;
+  let tmp11;
+  let tmp12;
+  let tmp13;
   let tmp4;
   let tmp5;
   let useReducedMotion;
@@ -147,95 +149,74 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplyB
   fn3.__workletHash = 16394479325031;
   fn3.__initData = __initData2;
   const animatedStyle = tmpResult4.useAnimatedStyle(fn3);
-  const tmp8 = visible;
   if (cResult[2] !== onPress) {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
+    const fn4 = function h() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      onPress();
+    };
     let num3 = 2;
     cResult[2] = onPress;
-    cResult[3] = E;
+    cResult[3] = fn4;
+    tmp11 = fn4;
   } else {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
+    tmp11 = cResult[3];
   }
   if (cResult[4] !== bottom) {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
-    tmp13[0] = bottom;
+    let obj3 = { marginBottom: bottom };
     cResult[4] = bottom;
-    cResult[5] = tmp13;
+    cResult[5] = obj3;
+    tmp12 = obj3;
   } else {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
+    tmp12 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
-    const stringResult = obj6.string(onPress(stateFromStores[27]).t["1Qm822"]);
+    const intl = tmp(tmp2[27]).intl;
+    const stringResult = intl.string(onPress(stateFromStores[27]).t["1Qm822"]);
     cResult[6] = stringResult;
-    tmp14 = stringResult;
+    tmp13 = stringResult;
   } else {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
-    }
+    tmp13 = cResult[6];
   }
   if (cResult[7] === tmp11) {
-    class E {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onPress();
-      }
+    let tmp15;
+    if (cResult[8] === loading) {
+      tmp15 = cResult[9];
     }
     if (cResult[10] === animatedProps) {
-      class E {
-        constructor() {
-          const obj = HapticUtils;
-          const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-          onPress();
+      if (cResult[11] === tmp12) {
+        let tmp17;
+        if (cResult[12] === tmp15) {
+          tmp17 = cResult[13];
         }
+        if (cResult[14] === animatedStyle) {
+          let tmp20;
+          if (cResult[15] === tmp17) {
+            tmp20 = cResult[16];
+          }
+          return tmp20;
+        }
+        let obj4 = { style: animatedStyle, children: tmp17 };
+        const tmp22 = closure_12(visible(stateFromStores[59]).View, obj4);
+        cResult[14] = animatedStyle;
+        cResult[15] = tmp17;
+        cResult[16] = tmp22;
+        tmp20 = tmp22;
       }
     }
-    let obj3 = { style: tmp12, animatedProps, children: tmp16 };
+    const obj5 = { style: tmp12, animatedProps, children: tmp15 };
+    const tmp19 = closure_12(visible(stateFromStores[59]).View, obj5);
     cResult[10] = animatedProps;
     cResult[11] = tmp12;
-    cResult[12] = tmp16;
-    cResult[13] = closure_12(tmp8(stateFromStores[59]).View, obj3);
-    const tmp20 = closure_12(tmp8(stateFromStores[59]).View, obj3);
+    cResult[12] = tmp15;
+    cResult[13] = tmp19;
+    tmp17 = tmp19;
   }
+  const tmp16 = closure_12(onPress(stateFromStores[53]).Button, { variant: "primary", onPress: tmp11, size: "lg", text: tmp13, loading });
   cResult[7] = tmp11;
   cResult[8] = loading;
-  cResult[9] = closure_12(onPress(stateFromStores[53]).Button, { variant: "primary", onPress: tmp11, size: "lg", text: tmp14, loading });
-  const tmp17 = closure_12(onPress(stateFromStores[53]).Button, { variant: "primary", onPress: tmp11, size: "lg", text: tmp14, loading });
+  cResult[9] = tmp16;
+  tmp15 = tmp16;
 }) : (function ApplyButton(onPress) {
   let Button;
   let View2;
@@ -322,8 +303,10 @@ let result = size.fileFinishedImporting("modules/display_name_styles/native/Disp
 
 export default function DisplayNameStylesEditScreen() {
   let Provider;
+  let closure_15;
   let combined;
   let combined1;
+  let first2;
   let first4;
   let guildDisplayNameStyles;
   let handleApply;
@@ -356,7 +339,6 @@ export default function DisplayNameStylesEditScreen() {
   let obj4;
   let obj8;
   let obj9;
-  let onSelectColor;
   let onSelectEffect;
   let pendingDisplayNameStyles;
   let tmp14;
@@ -436,379 +418,384 @@ export default function DisplayNameStylesEditScreen() {
   if (colors == null) {
     colors = [];
   }
-  if (colors.length > 0) {
-    let first2;
-    if (!tmp24) {
-      first2 = colors[0];
-    }
-    const tmp18Result3 = stateFromStores(tmp27(first2), 2);
-    const first3 = tmp18Result3[0];
-    value = tmp18Result3[1];
-    const tmp18Result4 = stateFromStores(displayNameStylesPendingName.useState(() => {
-      let length;
-      return Object.fromEntries(items.map((item) => {
-        items = [item, ];
-        let tmp = length;
-        if (length.length <= 0) {
-          tmp = closure_1_12[item];
-        }
-        items[1] = tmp;
-        return items;
-      }));
-    }), 2);
-    first4 = tmp18Result4[0];
-    let closure_17 = tmp18Result4[1];
-    const callback = obj10.useCallback((arg0, arg1) => {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      closure_17((arg0) => {
-        const obj = {};
-        const merged = Object.assign(arg0);
-        obj[closure_0] = closure_1;
-        return obj;
-      });
-    }, []);
-    const items1 = [tmp24, first4, first1, displayNameStylesEffectConfig.defaultColors, first3];
-    const memo = obj10.useMemo(() => {
-      const tmp = closure_10;
-      if (tmp) {
-        let defaultColors = first4[first1];
-        if (defaultColors == null) {
-          defaultColors = displayNameStylesEffectConfig.defaultColors;
-        }
-        items = defaultColors;
-      } else {
-        items = [first3];
-      }
-      return items;
-    }, items1);
-    const items2 = [tmp12Result, selectedFontId, first1, memo];
-    const memo1 = obj10.useMemo(() => {
-      let fontId;
-      const tmp = first;
-      if (closure_5 != null) {
-        fontId = tmp2.fontId;
-      }
-      let tmp4 = tmp !== fontId;
-      if (!tmp4) {
-        let effectId;
-        const tmp5 = first1;
-        if (closure_5 != null) {
-          effectId = tmp2.effectId;
-        }
-        tmp4 = tmp5 !== effectId;
-      }
-      if (!tmp4) {
-        colors = undefined;
-        const areArraysShallowEqual = shallowEqual.areArraysShallowEqual;
-        shallowEqual;
-        const tmp10 = memo;
-        if (closure_5 != null) {
-          colors = tmp2.colors;
-        }
-        if (colors == null) {
-          colors = [];
-        }
-        tmp4 = !areArraysShallowEqual(tmp10, colors);
-      }
-      return tmp4;
-    }, items2);
-    const callback1 = obj10.useCallback(() => {
-      let intl;
-      const obj = { text: intl.string(navigation(isTryItOut[27]).t.F8FvUy) };
-      const open = guildId(isTryItOut[26]).open;
-      guildId(isTryItOut[26]);
-      intl = navigation(isTryItOut[27]).intl;
-      open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj);
-    }, []);
-    const obj6 = {
-      hasChanges: memo1,
-      entryPoint: tmp2(tmp3[14]).DisplayNameStylesEntryPoints.PROFILE_EDITOR,
-      selectedFontId,
-      selectedEffectId: first1,
-      selectedColors: memo,
-      defaultColor: displayNameStylesEffectConfig.defaultColors[0],
-      guildId,
-      isTryItOut,
-      onClose() {
-          const obj = navigation;
-          if (navigation.isFocused()) {
-            obj.goBack();
-          }
-        },
-      onEnrollmentError: callback1
-    };
-    const useDisplayNameStylesHandleApply = tmp2(tmp3[14]).useDisplayNameStylesHandleApply;
-    tmp2(tmp3[14]);
-    const displayNameStylesHandleApply = useDisplayNameStylesHandleApply(obj6);
-    ({ handleApply, isApplying } = displayNameStylesHandleApply);
-    const tmp2Result19 = tmp2(tmp3[28]);
-    const visibleFontOrder = tmp2Result19.useVisibleFontOrder({ includeCampaignFonts: true });
-    const tmp2Result20 = tmp2(tmp3[29]);
-    const visibleEffectOrder = tmp2Result20.useVisibleEffectOrder();
-    const tmp2Result21 = tmp2(tmp3[30]);
-    const displayNameStylesNewFontsBadge = tmp2Result21.useDisplayNameStylesNewFontsBadge(visibleFontOrder);
-    const showFontsBadge = displayNameStylesNewFontsBadge.showFontsBadge;
-    const dismissFontsBadge = displayNameStylesNewFontsBadge.dismissFontsBadge;
-    const tmp2Result22 = tmp2(tmp3[31]);
-    const hexagonCampaignNewFontBadge = tmp2Result22.useHexagonCampaignNewFontBadge("DisplayNameStylesEditScreen");
-    const showCampaignFontBadge = hexagonCampaignNewFontBadge.showCampaignFontBadge;
-    const dismissCampaignFontBadge = hexagonCampaignNewFontBadge.dismissCampaignFontBadge;
-    const tmp2Result23 = tmp2(tmp3[31]);
-    const markHexagonCampaignDisplayNameStylesVisited = tmp2Result23.useMarkHexagonCampaignDisplayNameStylesVisited("DisplayNameStylesEditScreen");
-    const tmp2Result24 = tmp2(tmp3[30]);
-    const displayNameStylesNewEffectsBadge = tmp2Result24.useDisplayNameStylesNewEffectsBadge(visibleEffectOrder);
-    const showEffectsBadge = displayNameStylesNewEffectsBadge.showEffectsBadge;
-    const dismissEffectsBadge = displayNameStylesNewEffectsBadge.dismissEffectsBadge;
-    const items3 = [callback, visibleFontOrder, visibleEffectOrder];
-    const items4 = [navigation, isTryItOut];
-    const callback2 = obj10.useCallback(() => {
-      let effectId;
-      const obj = DisplayNameStylesUtils;
-      const randomDisplayNameStyles = obj.generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder);
-      ({ effectId, colors } = randomDisplayNameStyles);
-      onSelectFont(randomDisplayNameStyles.fontId);
-      onSelectEffect(effectId);
-      const obj2 = DisplayNameStylesUtils;
-      if (obj2.getEffectColorCount(effectId) > 1) {
-        callback(effectId, colors);
-      } else {
-        onSelectColor(colors[0]);
-      }
-      const obj3 = AnalyticsUtilsDefault;
-      obj3.track(AnalyticEvents.DISPLAY_NAME_STYLES_SURPRISE_ME);
-    }, items3);
-    const items5 = [guildId, navigation];
-    const callback3 = obj10.useCallback(() => {
-      const obj = HapticUtils;
-      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-      const tmp4 = isTryItOut;
-      if (tmp4) {
-        const tmpResult = UserProfileActionCreators;
-        const result1 = tmpResult.setTryItOutDisplayNameStyles(null);
-      } else {
-        const tmpResult2 = UserProfileSettingsActionCreators;
-        tmpResult2.setPendingChanges({ displayNameStyles: null });
-      }
-      const obj4 = AnalyticsUtilsDefault;
-      obj4.track(AnalyticEvents.DISPLAY_NAME_STYLES_REMOVED);
-      navigation.goBack();
-    }, items4);
-    const items6 = [selectedFontId, displayNameStylesPendingName, isTryItOut, showFontsBadge, dismissFontsBadge, showCampaignFontBadge, dismissCampaignFontBadge];
-    const callback4 = obj10.useCallback(() => {
-      const obj = HapticUtils;
-      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-      const obj2 = UserProfileSettingsActionCreators;
-      const obj3 = { guildId, displayNameStyles: null };
-      obj2.setPendingChanges(obj3);
-      navigation.goBack();
-    }, items5);
-    const items7 = [first1, , , ];
-    let id1;
-    const callback5 = obj10.useCallback(() => {
-      const tmp = showFontsBadge;
-      if (tmp) {
-        dismissFontsBadge();
-      }
-      const tmp4 = showCampaignFontBadge;
-      if (tmp4) {
-        dismissCampaignFontBadge();
-      }
-      const obj = ActionSheetActionCreatorsDefault;
-      const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName, isTryItOut };
-      obj.openLazy(asyncRequire(16969, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
-    }, items6);
-    const useCallback = displayNameStylesPendingName.useCallback;
-    if (stateFromStores != null) {
-      id1 = stateFromStores.id;
-    }
-    items7[1] = id1;
-    items7[2] = showEffectsBadge;
-    items7[3] = dismissEffectsBadge;
-    const items8 = [tmp24, memo, first3, first1, callback];
-    const callback6 = useCallback(() => {
-      const tmp = showEffectsBadge;
-      if (tmp) {
-        dismissEffectsBadge();
-      }
-      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      let id;
-      ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequire(16972, dependencyMap.paths);
-      if (stateFromStores != null) {
-        id = stateFromStores.id;
-      }
-      const obj = { userId: id, selectedEffectId: first1, onSelectEffect };
-      openLazy(tmp5, "DisplayNameStylesEffectPickerSheet", obj);
-    }, items7);
-    const callback7 = obj10.useCallback(() => {
-      if (first1 === DisplayNameEffect.DisplayNameEffect.GUMMY) {
-        const obj2 = {
-          selectedColors: memo,
-          onSelectColors(arg0) {
-              return callback(navigation(isTryItOut[8]).DisplayNameEffect.GUMMY, arg0);
-            }
-        };
-        const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(16973, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
-      } else {
-        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        ActionSheetActionCreatorsDefault;
-        const tmp2Result = asyncRequire;
-        if (closure_10) {
-          const obj4 = {
-            selectedColors: memo,
-            selectedEffectId: first1,
-            onSelectColors(arg0) {
-                  return callback(first1, arg0);
-                }
-          };
-          openLazy(tmp2Result(16978, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
-        } else {
-          const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-          openLazy(tmp2Result(16982, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
-        }
-      }
-    }, items8);
-    let intl = tmp2(tmp3[27]).intl;
-    const stringResult = intl.string(guildId(tmp3[43])(selectedFontId));
-    let tmp54Result5 = null;
-    if (null != stateFromStores) {
-      let tmp54Result3;
-      let tmp56Result2;
-      const obj7 = { theme: tmp16, children: closure_12(Provider, obj8) };
-      const ThemeContextProvider = tmp2(tmp3[44]).ThemeContextProvider;
-      obj8 = { value, children: colors(closure_5, obj9) };
-      const obj11 = { paddingBottom: num };
-      obj9 = { style: tmp.container, children: items23 };
-      Provider = tmp2(tmp3[45]).DisplayNameStylesContext.Provider;
-      let merged = Object.assign(tmp.contentContainer);
-      num = 0;
-      const tmp58 = selectedFontId;
-      if (memo1) {
-        num = 70;
-      }
-      const obj12 = { contentContainerStyle: obj11, children: items9 };
-      const obj13 = { user: stateFromStores, displayName: displayNameStylesPendingName, guildId, selectedFontId, selectedEffectId: first1, selectedColors: memo, isTryItOut };
-      items9 = [closure_12(tmp6(tmp3[46]), obj13), , ];
-      const obj14 = { style: tmp.fieldButtonGroup, children: items13 };
-      const obj15 = { onPress: callback5, style: tmp.fieldButton, accessibilityRole: "button", accessibilityLabel: combined, children: items11 };
-      const intl2 = tmp2(tmp3[27]).intl;
-      const stringResult1 = intl2.string(guildId(tmp3[47])["0JCuGm"]);
-      if (showFontsBadge || showCampaignFontBadge) {
-        const intl3 = tmp2(tmp3[27]).intl;
-        const _HermesInternal2 = HermesInternal;
-        combined = "" + stringResult1 + ", " + stringResult + ", " + intl3.string(tmp2(tmp3[27]).t.y2b7CA);
-      } else {
-        const _HermesInternal = HermesInternal;
-        combined = "" + stringResult1 + ", " + stringResult;
-      }
-      const obj16 = { children: items10 };
-      const obj17 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl4.string(guildId(tmp3[47])["0JCuGm"]) };
-      const Text = tmp2(tmp3[48]).Text;
-      intl4 = tmp2(tmp3[27]).intl;
-      items10 = [closure_12(Text, obj17), ];
-      const obj18 = { variant: "text-md/normal", color: "text-subtle", children: stringResult };
-      items10[1] = closure_12(tmp2(tmp3[48]).Text, obj18);
-      items11 = [colors(closure_5, obj16), ];
-      if (showFontsBadge || showCampaignFontBadge) {
-        const obj19 = { style: tmp.fieldButtonTrailing, children: items12 };
-        items12 = [closure_12(tmp2(tmp3[49]).NewTag, {}), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
-        tmp54Result3 = tmp56(tmp57, obj19);
-      } else {
-        tmp54Result3 = tmp54(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" });
-      }
-      items11[1] = tmp54Result3;
-      items13 = [colors(onSelectFont, obj15), , ];
-      const obj20 = { onPress: callback6, style: items14, accessibilityRole: "button", accessibilityLabel: combined1, children: items16 };
-      items14 = [, ];
-      ({ fieldButton: arr17[0], fieldButtonBorder: arr17[1] } = tmp);
-      const intl5 = tmp2(tmp3[27]).intl;
-      const stringResult2 = intl5.string(guildId(tmp3[47]).RVtMxT);
-      const name = displayNameStylesEffectConfig.name;
-      if (showEffectsBadge) {
-        const intl6 = tmp2(tmp3[27]).intl;
-        const _HermesInternal4 = HermesInternal;
-        combined1 = "" + stringResult2 + ", " + name + ", " + intl6.string(tmp2(tmp3[27]).t.y2b7CA);
-      } else {
-        const _HermesInternal3 = HermesInternal;
-        combined1 = "" + stringResult2 + ", " + name;
-      }
-      const obj21 = { children: items15 };
-      const obj22 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl7.string(guildId(tmp3[47]).RVtMxT) };
-      const Text2 = tmp2(tmp3[48]).Text;
-      intl7 = tmp2(tmp3[27]).intl;
-      items15 = [closure_12(Text2, obj22), ];
-      const obj23 = { variant: "text-md/normal", color: "text-subtle", children: displayNameStylesEffectConfig.name };
-      items15[1] = closure_12(tmp2(tmp3[48]).Text, obj23);
-      items16 = [colors(closure_5, obj21), ];
-      if (showEffectsBadge) {
-        const obj24 = { style: tmp.fieldButtonTrailing, children: items17 };
-        items17 = [closure_12(tmp2(tmp3[49]).NewTag, {}), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
-        tmp56Result2 = tmp56(tmp57, obj24);
-      } else {
-        tmp56Result2 = tmp54(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" });
-      }
-      items16[1] = tmp56Result2;
-      items13[1] = colors(onSelectFont, obj20);
-      const obj25 = { onPress: callback7, style: items18, accessibilityRole: "button", accessibilityLabel: intl8.string(guildId(tmp3[47])["6OxgN7"]), children: items20 };
-      items18 = [, ];
-      ({ fieldButton: arr21[0], fieldButtonBorder: arr21[1] } = tmp);
-      intl8 = tmp2(tmp3[27]).intl;
-      const obj26 = { style: tmp.fieldButtonLabel, children: items19 };
-      const obj27 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl9.string(guildId(tmp3[47])["6OxgN7"]) };
-      const Text3 = tmp2(tmp3[48]).Text;
-      intl9 = tmp2(tmp3[27]).intl;
-      items19 = [closure_12(Text3, obj27), ];
-      let str13 = "text-md/normal";
-      const Text4 = tmp2(tmp3[48]).Text;
-      if (isDisplayNameStylesFlywheelSettersEnabled) {
-        str13 = "text-sm/normal";
-      }
-      const obj28 = { variant: str13, color: "text-subtle", lineClamp: 1, children: mapped.join(", ") };
-      mapped = memo.map((item) => {
-        const obj = navigation(isTryItOut[51]);
-        return obj.int2hex(item);
-      });
-      items19[1] = closure_12(Text4, obj28);
-      items20 = [colors(closure_5, obj26), ];
-      const obj29 = { style: tmp.fieldButtonChevron, children: items21 };
-      const obj30 = { colors: memo, effectId: first1 };
-      items21 = [closure_12(tmp6(tmp3[52]), obj30), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
-      items20[1] = colors(closure_5, obj29);
-      items13[2] = colors(onSelectFont, obj25);
-      items9[1] = colors(closure_5, obj14);
-      const obj31 = { style: tmp.buttonContainer, children: items22 };
-      const obj32 = { text: intl10.string(guildId(tmp3[47]).NOGFds), onPress: callback2, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[54]).DiceIcon, {}), iconPosition: "start" };
-      const Button = tmp2(tmp3[53]).Button;
-      intl10 = tmp2(tmp3[27]).intl;
-      items22 = [closure_12(Button, obj32), , ];
-      let tmp54Result = null == guildId && null != tmp12Result;
-      if (tmp54Result) {
-        const obj33 = { text: intl11.string(guildId(tmp3[47]).ymq8WQ), onPress: callback3, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[55]).DenyIcon, {}), iconPosition: "start" };
-        const Button2 = tmp2(tmp3[53]).Button;
-        intl11 = tmp2(tmp3[27]).intl;
-        tmp54Result = tmp54(Button2, obj33);
-      }
-      items22[1] = tmp54Result;
-      let tmp54Result4 = null != guildId;
-      if (tmp54Result4) {
-        tmp54Result4 = null != guildDisplayNameStyles || null != pendingDisplayNameStyles;
-      }
-      if (tmp54Result4) {
-        const obj34 = { text: intl12.string(guildId(tmp3[47])["j/KRxc"]), onPress: callback4, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[55]).DenyIcon, {}), iconPosition: "start" };
-        const Button3 = tmp2(tmp3[53]).Button;
-        intl12 = tmp2(tmp3[27]).intl;
-        tmp54Result4 = tmp54(Button3, obj34);
-      }
-      items22[2] = tmp54Result4;
-      items9[2] = colors(closure_5, obj31);
-      items23 = [colors(tmp58, obj12), ];
-      const obj35 = { onPress: handleApply, visible: memo1, loading: isApplying };
-      items23[1] = closure_12(visibleEffectOrder, obj35);
-      tmp54Result5 = tmp54(ThemeContextProvider, obj7);
-    }
-    return tmp54Result5;
+  const useState3 = obj10.useState;
+  if (colors.length > 0 && !tmp24) {
+    first2 = colors[0];
+  } else {
+    first2 = displayNameStylesEffectConfig.defaultColors[0];
   }
-  first2 = displayNameStylesEffectConfig.defaultColors[0];
+  const tmp18Result4 = stateFromStores(useState3(first2), 2);
+  const first3 = tmp18Result4[0];
+  value = tmp18Result4[1];
+  const tmp18Result5 = stateFromStores(displayNameStylesPendingName.useState(colors.length > 0 && !tmp24), 2);
+  first4 = tmp18Result5[0];
+  let closure_17 = tmp18Result5[1];
+  const onSelectColor = obj10.useCallback((arg0) => {
+    closure_15(arg0);
+    closure_17(true);
+  }, []);
+  const tmp18Result6 = stateFromStores(displayNameStylesPendingName.useState(() => {
+    let length;
+    return Object.fromEntries(items.map((item) => {
+      items = [item, ];
+      let tmp = length;
+      if (length.length <= 0) {
+        tmp = closure_1_12[item];
+      }
+      items[1] = tmp;
+      return items;
+    }));
+  }), 2);
+  const first5 = tmp18Result6[0];
+  let closure_20 = tmp18Result6[1];
+  const callback1 = obj10.useCallback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    closure_20((arg0) => {
+      const obj = {};
+      const merged = Object.assign(arg0);
+      obj[closure_0] = closure_1;
+      return obj;
+    });
+  }, []);
+  const items1 = [tmp24, first5, first1, displayNameStylesEffectConfig.defaultColors, first3];
+  const memo = obj10.useMemo(() => {
+    const tmp = closure_10;
+    if (tmp) {
+      let defaultColors = first5[first1];
+      if (defaultColors == null) {
+        defaultColors = displayNameStylesEffectConfig.defaultColors;
+      }
+      items = defaultColors;
+    } else {
+      items = [first3];
+    }
+    return items;
+  }, items1);
+  const items2 = [tmp12Result, selectedFontId, first1, memo];
+  const memo1 = obj10.useMemo(() => {
+    let fontId;
+    const tmp = first;
+    if (closure_5 != null) {
+      fontId = tmp2.fontId;
+    }
+    let tmp4 = tmp !== fontId;
+    if (!tmp4) {
+      let effectId;
+      const tmp5 = first1;
+      if (closure_5 != null) {
+        effectId = tmp2.effectId;
+      }
+      tmp4 = tmp5 !== effectId;
+    }
+    if (!tmp4) {
+      colors = undefined;
+      const areArraysShallowEqual = shallowEqual.areArraysShallowEqual;
+      shallowEqual;
+      const tmp10 = memo;
+      if (closure_5 != null) {
+        colors = tmp2.colors;
+      }
+      if (colors == null) {
+        colors = [];
+      }
+      tmp4 = !areArraysShallowEqual(tmp10, colors);
+    }
+    return tmp4;
+  }, items2);
+  const callback2 = obj10.useCallback(() => {
+    let intl;
+    const obj = { text: intl.string(navigation(isTryItOut[27]).t.F8FvUy) };
+    const open = guildId(isTryItOut[26]).open;
+    guildId(isTryItOut[26]);
+    intl = navigation(isTryItOut[27]).intl;
+    open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj);
+  }, []);
+  const tmp2Result18 = tmp2(tmp3[14]);
+  const obj6 = {
+    hasChanges: memo1,
+    entryPoint: tmp2(tmp3[14]).DisplayNameStylesEntryPoints.PROFILE_EDITOR,
+    selectedFontId,
+    selectedEffectId: first1,
+    selectedColors: memo,
+    defaultColor: displayNameStylesEffectConfig.defaultColors[0],
+    guildId,
+    isTryItOut,
+    onClose() {
+      const obj = navigation;
+      if (navigation.isFocused()) {
+        obj.goBack();
+      }
+    },
+    onEnrollmentError: callback2
+  };
+  const displayNameStylesHandleApply = tmp2Result18.useDisplayNameStylesHandleApply(obj6);
+  ({ handleApply, isApplying } = displayNameStylesHandleApply);
+  const tmp2Result19 = tmp2(tmp3[28]);
+  const visibleFontOrder = tmp2Result19.useVisibleFontOrder({ includeCampaignFonts: true });
+  const tmp2Result20 = tmp2(tmp3[29]);
+  const visibleEffectOrder = tmp2Result20.useVisibleEffectOrder();
+  const tmp2Result21 = tmp2(tmp3[30]);
+  const displayNameStylesNewFontsBadge = tmp2Result21.useDisplayNameStylesNewFontsBadge(visibleFontOrder);
+  const showFontsBadge = displayNameStylesNewFontsBadge.showFontsBadge;
+  const dismissFontsBadge = displayNameStylesNewFontsBadge.dismissFontsBadge;
+  const tmp2Result22 = tmp2(tmp3[31]);
+  const hexagonCampaignNewFontBadge = tmp2Result22.useHexagonCampaignNewFontBadge("DisplayNameStylesEditScreen");
+  const showCampaignFontBadge = hexagonCampaignNewFontBadge.showCampaignFontBadge;
+  const dismissCampaignFontBadge = hexagonCampaignNewFontBadge.dismissCampaignFontBadge;
+  const tmp2Result23 = tmp2(tmp3[31]);
+  const markHexagonCampaignDisplayNameStylesVisited = tmp2Result23.useMarkHexagonCampaignDisplayNameStylesVisited("DisplayNameStylesEditScreen");
+  const tmp2Result24 = tmp2(tmp3[30]);
+  const displayNameStylesNewEffectsBadge = tmp2Result24.useDisplayNameStylesNewEffectsBadge(visibleEffectOrder);
+  const showEffectsBadge = displayNameStylesNewEffectsBadge.showEffectsBadge;
+  const dismissEffectsBadge = displayNameStylesNewEffectsBadge.dismissEffectsBadge;
+  const items3 = [callback1, onSelectColor, visibleFontOrder, visibleEffectOrder];
+  const items4 = [navigation, isTryItOut];
+  const callback3 = obj10.useCallback(() => {
+    let effectId;
+    const obj = DisplayNameStylesUtils;
+    const randomDisplayNameStyles = obj.generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder);
+    ({ effectId, colors } = randomDisplayNameStyles);
+    onSelectFont(randomDisplayNameStyles.fontId);
+    onSelectEffect(effectId);
+    const obj2 = DisplayNameStylesUtils;
+    if (obj2.getEffectColorCount(effectId) > 1) {
+      callback1(effectId, colors);
+    } else {
+      callback(colors[0]);
+    }
+    const obj3 = AnalyticsUtilsDefault;
+    obj3.track(AnalyticEvents.DISPLAY_NAME_STYLES_SURPRISE_ME);
+  }, items3);
+  const items5 = [guildId, navigation];
+  const callback4 = obj10.useCallback(() => {
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+    const tmp4 = isTryItOut;
+    if (tmp4) {
+      const tmpResult = UserProfileActionCreators;
+      const result1 = tmpResult.setTryItOutDisplayNameStyles(null);
+    } else {
+      const tmpResult2 = UserProfileSettingsActionCreators;
+      tmpResult2.setPendingChanges({ displayNameStyles: null });
+    }
+    const obj4 = AnalyticsUtilsDefault;
+    obj4.track(AnalyticEvents.DISPLAY_NAME_STYLES_REMOVED);
+    navigation.goBack();
+  }, items4);
+  const items6 = [selectedFontId, displayNameStylesPendingName, isTryItOut, showFontsBadge, dismissFontsBadge, showCampaignFontBadge, dismissCampaignFontBadge];
+  const callback5 = obj10.useCallback(() => {
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+    const obj2 = UserProfileSettingsActionCreators;
+    const obj3 = { guildId, displayNameStyles: null };
+    obj2.setPendingChanges(obj3);
+    navigation.goBack();
+  }, items5);
+  const items7 = [first1, , , ];
+  let id1;
+  const callback6 = obj10.useCallback(() => {
+    const tmp = showFontsBadge;
+    if (tmp) {
+      dismissFontsBadge();
+    }
+    const tmp4 = showCampaignFontBadge;
+    if (tmp4) {
+      dismissCampaignFontBadge();
+    }
+    const obj = ActionSheetActionCreatorsDefault;
+    const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName, isTryItOut };
+    obj.openLazy(asyncRequire(17208, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+  }, items6);
+  const useCallback = displayNameStylesPendingName.useCallback;
+  if (stateFromStores != null) {
+    id1 = stateFromStores.id;
+  }
+  items7[1] = id1;
+  items7[2] = showEffectsBadge;
+  items7[3] = dismissEffectsBadge;
+  const items8 = [tmp24, memo, first3, first4, first1, callback1, onSelectColor];
+  const callback7 = useCallback(() => {
+    const tmp = showEffectsBadge;
+    if (tmp) {
+      dismissEffectsBadge();
+    }
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    let id;
+    ActionSheetActionCreatorsDefault;
+    const tmp5 = asyncRequire(17211, dependencyMap.paths);
+    if (stateFromStores != null) {
+      id = stateFromStores.id;
+    }
+    const obj = { userId: id, selectedEffectId: first1, onSelectEffect };
+    openLazy(tmp5, "DisplayNameStylesEffectPickerSheet", obj);
+  }, items7);
+  const callback8 = obj10.useCallback(() => {
+    if (first1 === DisplayNameEffect.DisplayNameEffect.GUMMY) {
+      const obj2 = {
+        selectedColors: memo,
+        onSelectColors(arg0) {
+            return callback1(navigation(isTryItOut[8]).DisplayNameEffect.GUMMY, arg0);
+          }
+      };
+      const obj3 = ActionSheetActionCreatorsDefault;
+      obj3.openLazy(asyncRequire(17212, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+    } else {
+      const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+      ActionSheetActionCreatorsDefault;
+      const tmp2Result = asyncRequire;
+      if (closure_10) {
+        const obj4 = {
+          selectedColors: memo,
+          selectedEffectId: first1,
+          onSelectColors(arg0) {
+                return callback1(first1, arg0);
+              }
+        };
+        openLazy(tmp2Result(17217, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+      } else {
+        const obj = { selectedColor: first3, selectedEffectId: first1, hasCustomSingleColor: first4, onSelectColor };
+        openLazy(tmp2Result(17221, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+      }
+    }
+  }, items8);
+  let intl = tmp2(tmp3[27]).intl;
+  const stringResult = intl.string(guildId(tmp3[43])(selectedFontId));
+  let tmp56Result5 = null;
+  if (null != stateFromStores) {
+    let tmp56Result3;
+    let tmp58Result2;
+    const obj7 = { theme: tmp16, children: closure_12(Provider, obj8) };
+    const ThemeContextProvider = tmp2(tmp3[44]).ThemeContextProvider;
+    obj8 = { value, children: colors(closure_5, obj9) };
+    const obj11 = { paddingBottom: num };
+    obj9 = { style: tmp.container, children: items23 };
+    Provider = tmp2(tmp3[45]).DisplayNameStylesContext.Provider;
+    let merged = Object.assign(tmp.contentContainer);
+    num = 0;
+    const tmp60 = selectedFontId;
+    if (memo1) {
+      num = 70;
+    }
+    const obj12 = { contentContainerStyle: obj11, children: items9 };
+    const obj13 = { user: stateFromStores, displayName: displayNameStylesPendingName, guildId, selectedFontId, selectedEffectId: first1, selectedColors: memo, isTryItOut };
+    items9 = [closure_12(tmp6(tmp3[46]), obj13), , ];
+    const obj14 = { style: tmp.fieldButtonGroup, children: items13 };
+    const obj15 = { onPress: callback6, style: tmp.fieldButton, accessibilityRole: "button", accessibilityLabel: combined, children: items11 };
+    const intl2 = tmp2(tmp3[27]).intl;
+    const stringResult1 = intl2.string(guildId(tmp3[47])["0JCuGm"]);
+    if (showFontsBadge || showCampaignFontBadge) {
+      const intl3 = tmp2(tmp3[27]).intl;
+      const _HermesInternal2 = HermesInternal;
+      combined = "" + stringResult1 + ", " + stringResult + ", " + intl3.string(tmp2(tmp3[27]).t.y2b7CA);
+    } else {
+      const _HermesInternal = HermesInternal;
+      combined = "" + stringResult1 + ", " + stringResult;
+    }
+    const obj16 = { children: items10 };
+    const obj17 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl4.string(guildId(tmp3[47])["0JCuGm"]) };
+    const Text = tmp2(tmp3[48]).Text;
+    intl4 = tmp2(tmp3[27]).intl;
+    items10 = [closure_12(Text, obj17), ];
+    const obj18 = { variant: "text-md/normal", color: "text-subtle", children: stringResult };
+    items10[1] = closure_12(tmp2(tmp3[48]).Text, obj18);
+    items11 = [colors(closure_5, obj16), ];
+    if (showFontsBadge || showCampaignFontBadge) {
+      const obj19 = { style: tmp.fieldButtonTrailing, children: items12 };
+      items12 = [closure_12(tmp2(tmp3[49]).NewTag, {}), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
+      tmp56Result3 = tmp58(tmp59, obj19);
+    } else {
+      tmp56Result3 = tmp56(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" });
+    }
+    items11[1] = tmp56Result3;
+    items13 = [colors(onSelectFont, obj15), , ];
+    const obj20 = { onPress: callback7, style: items14, accessibilityRole: "button", accessibilityLabel: combined1, children: items16 };
+    items14 = [, ];
+    ({ fieldButton: arr17[0], fieldButtonBorder: arr17[1] } = tmp);
+    const intl5 = tmp2(tmp3[27]).intl;
+    const stringResult2 = intl5.string(guildId(tmp3[47]).RVtMxT);
+    const name = displayNameStylesEffectConfig.name;
+    if (showEffectsBadge) {
+      const intl6 = tmp2(tmp3[27]).intl;
+      const _HermesInternal4 = HermesInternal;
+      combined1 = "" + stringResult2 + ", " + name + ", " + intl6.string(tmp2(tmp3[27]).t.y2b7CA);
+    } else {
+      const _HermesInternal3 = HermesInternal;
+      combined1 = "" + stringResult2 + ", " + name;
+    }
+    const obj21 = { children: items15 };
+    const obj22 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl7.string(guildId(tmp3[47]).RVtMxT) };
+    const Text2 = tmp2(tmp3[48]).Text;
+    intl7 = tmp2(tmp3[27]).intl;
+    items15 = [closure_12(Text2, obj22), ];
+    const obj23 = { variant: "text-md/normal", color: "text-subtle", children: displayNameStylesEffectConfig.name };
+    items15[1] = closure_12(tmp2(tmp3[48]).Text, obj23);
+    items16 = [colors(closure_5, obj21), ];
+    if (showEffectsBadge) {
+      const obj24 = { style: tmp.fieldButtonTrailing, children: items17 };
+      items17 = [closure_12(tmp2(tmp3[49]).NewTag, {}), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
+      tmp58Result2 = tmp58(tmp59, obj24);
+    } else {
+      tmp58Result2 = tmp56(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" });
+    }
+    items16[1] = tmp58Result2;
+    items13[1] = colors(onSelectFont, obj20);
+    const obj25 = { onPress: callback8, style: items18, accessibilityRole: "button", accessibilityLabel: intl8.string(guildId(tmp3[47])["6OxgN7"]), children: items20 };
+    items18 = [, ];
+    ({ fieldButton: arr21[0], fieldButtonBorder: arr21[1] } = tmp);
+    intl8 = tmp2(tmp3[27]).intl;
+    const obj26 = { style: tmp.fieldButtonLabel, children: items19 };
+    const obj27 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl9.string(guildId(tmp3[47])["6OxgN7"]) };
+    const Text3 = tmp2(tmp3[48]).Text;
+    intl9 = tmp2(tmp3[27]).intl;
+    items19 = [closure_12(Text3, obj27), ];
+    let str13 = "text-md/normal";
+    const Text4 = tmp2(tmp3[48]).Text;
+    if (isDisplayNameStylesFlywheelSettersEnabled) {
+      str13 = "text-sm/normal";
+    }
+    const obj28 = { variant: str13, color: "text-subtle", lineClamp: 1, children: mapped.join(", ") };
+    mapped = memo.map((item) => {
+      const obj = navigation(isTryItOut[51]);
+      return obj.int2hex(item);
+    });
+    items19[1] = closure_12(Text4, obj28);
+    items20 = [colors(closure_5, obj26), ];
+    const obj29 = { style: tmp.fieldButtonChevron, children: items21 };
+    const obj30 = { colors: memo, effectId: first1 };
+    items21 = [closure_12(tmp6(tmp3[52]), obj30), closure_12(tmp2(tmp3[50]).ChevronSmallRightIcon, { color: "icon-muted" })];
+    items20[1] = colors(closure_5, obj29);
+    items13[2] = colors(onSelectFont, obj25);
+    items9[1] = colors(closure_5, obj14);
+    const obj31 = { style: tmp.buttonContainer, children: items22 };
+    const obj32 = { text: intl10.string(guildId(tmp3[47]).NOGFds), onPress: callback3, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[54]).DiceIcon, {}), iconPosition: "start" };
+    const Button = tmp2(tmp3[53]).Button;
+    intl10 = tmp2(tmp3[27]).intl;
+    items22 = [closure_12(Button, obj32), , ];
+    let tmp56Result = null == guildId && null != tmp12Result;
+    if (tmp56Result) {
+      const obj33 = { text: intl11.string(guildId(tmp3[47]).ymq8WQ), onPress: callback4, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[55]).DenyIcon, {}), iconPosition: "start" };
+      const Button2 = tmp2(tmp3[53]).Button;
+      intl11 = tmp2(tmp3[27]).intl;
+      tmp56Result = tmp56(Button2, obj33);
+    }
+    items22[1] = tmp56Result;
+    let tmp56Result4 = null != guildId;
+    if (tmp56Result4) {
+      tmp56Result4 = null != guildDisplayNameStyles || null != pendingDisplayNameStyles;
+    }
+    if (tmp56Result4) {
+      const obj34 = { text: intl12.string(guildId(tmp3[47])["j/KRxc"]), onPress: callback5, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[55]).DenyIcon, {}), iconPosition: "start" };
+      const Button3 = tmp2(tmp3[53]).Button;
+      intl12 = tmp2(tmp3[27]).intl;
+      tmp56Result4 = tmp56(Button3, obj34);
+    }
+    items22[2] = tmp56Result4;
+    items9[2] = colors(closure_5, obj31);
+    items23 = [colors(tmp60, obj12), ];
+    const obj35 = { onPress: handleApply, visible: memo1, loading: isApplying };
+    items23[1] = closure_12(callback1, obj35);
+    tmp56Result5 = tmp56(ThemeContextProvider, obj7);
+  }
+  return tmp56Result5;
 };

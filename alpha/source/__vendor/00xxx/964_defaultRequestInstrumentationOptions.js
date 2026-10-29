@@ -57,7 +57,7 @@ const map = new Map();
 const defaultRequestInstrumentationOptions = { traceFetch: true, traceXHR: true, enableHTTPTimings: true, trackFetchStreamPerformance: false };
 
 export { defaultRequestInstrumentationOptions };
-export const instrumentOutgoingRequests = function instrumentOutgoingRequests(getOptions, arg1) {
+export function instrumentOutgoingRequests(getOptions, arg1) {
   let onRequestSpanEnd;
   let shouldCreateSpanForRequest;
   let traceFetch;
@@ -407,5 +407,5 @@ export const instrumentOutgoingRequests = function instrumentOutgoingRequests(ge
       }
     });
   }
-};
+}
 export { shouldAttachHeaders };

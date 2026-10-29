@@ -1,12 +1,12 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 10067
+// Function ID: 10068
 // Name: VoiceChannelListInviteExperiment
-// Dependencies: [5224, 558, 576, 2]
+// Dependencies: [5225, 558, 576, 2]
 // Exports: getVoiceChannelListInviteExperiment
 
-// Module 10035 (VoiceChannelListInviteExperiment)
+// Module 10067 (VoiceChannelListInviteExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5224" /* 5224 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChan
 });
 const result = size.fileFinishedImporting("modules/messages/VoiceChannelListInviteExperiment.tsx");
 
-export const getVoiceChannelListInviteExperiment = function getVoiceChannelListInviteExperiment(guildId) {
+export function getVoiceChannelListInviteExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return closure_2.getCurrentConfig(obj);
-};
+}
 export const useVoiceChannelListInviteExperiment = tmp2;

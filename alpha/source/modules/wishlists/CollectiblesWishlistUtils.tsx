@@ -1,17 +1,17 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 9424
+// Function ID: 9425
 // Name: CollectiblesWishlistUtils
-// Dependencies: [1992, 1125, 7697, 2]
+// Dependencies: [1993, 1125, 7720, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9393 (CollectiblesWishlistUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7697 */;
+// Module 9424 (CollectiblesWishlistUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
-export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
+export function getProductNameAndTypeFromSku(sku) {
   let formatToPlainStringResult;
   let name;
   let tenantMetadata;
@@ -40,8 +40,8 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
     }
   }
   return formatToPlainStringResult;
-};
-export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
+}
+export function isWishlistableCollectiblesProduct(selectedProduct) {
   const obj = CollectiblesUtils;
   const result = obj.isPremiumCollectiblesProduct(selectedProduct);
   let tmp4 = !result;
@@ -49,4 +49,4 @@ export const isWishlistableCollectiblesProduct = function isWishlistableCollecti
     tmp4 = selectedProduct.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   }
   return tmp4;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 14097
-// Function ID: 14098
+// Module ID: 14330
+// Function ID: 14331
 // Name: useAppChannelRunningApp
-// Dependencies: [6810, 1084, 6811, 558, 576, 504, 14098, 1125, 2]
+// Dependencies: [6833, 1084, 6834, 558, 576, 504, 14331, 1125, 2]
 
-// Module 14097 (useAppChannelRunningApp)
+// Module 14330 (useAppChannelRunningApp)
 import Constants from "Constants" /* 1084 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(14098)(stateFromStores);
+  const tmp9 = stateFromStores(14331)(stateFromStores);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [FramesStore];
     cResult[4] = items2;
@@ -259,7 +259,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChan
     }
     return tmp4;
   }, items1);
-  let tmp4 = stateFromStores(14098)(stateFromStores);
+  let tmp4 = stateFromStores(14331)(stateFromStores);
   const items2 = [FramesStore];
   const items3 = [stateFromStores];
   const obj2 = require("get initialized");

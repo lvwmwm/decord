@@ -1,13 +1,13 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12335
+// Function ID: 12336
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 558, 576, 12269, 12282, 12271, 2]
+// Dependencies: [32, 19, 558, 576, 12323, 12336, 12325, 2]
 
-// Module 12281 (useConjureHistoryData)
+// Module 12335 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12269 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12271 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12282 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12323 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12325 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, map, set;
 
-const f114748 = (result) => {
+const f115977 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(12282);
+    const tmp2Result = tmp2(12336);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -248,7 +248,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f114748);
+      return allResult.then(f115977);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -505,7 +505,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const obj2 = conjureHistoryRequests;
     items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
     const allResult = all(items);
-    return allResult.then(f114748);
+    return allResult.then(f115977);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

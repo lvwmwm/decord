@@ -1,18 +1,18 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 15056
+// Function ID: 15057
 // Name: isMostRecentDeadEndInvite
-// Dependencies: [1084, 11388, 2]
+// Dependencies: [1084, 11442, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 14821 (isMostRecentDeadEndInvite)
+// Module 15056 (isMostRecentDeadEndInvite)
 import Constants from "Constants" /* 1084 */;
-import isInviteActiveDefault from "isInviteActive" /* 11388 */;
+import isInviteActiveDefault from "isInviteActive" /* 11442 */;
 import size from "module_2" /* 2 */;
 
 const ActivityActionTypes = Constants.ActivityActionTypes;
 const result = size.fileFinishedImporting("modules/activities/utils/isMostRecentDeadEndInvite.tsx");
 
-export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, messages, id2, applicationActivity) {
+export function isMostRecentDeadEndInvite(id, messages, id2, applicationActivity) {
   let closure_0 = id2;
   let closure_1 = applicationActivity;
   return !messages.hasAnyAfter(id, (activity) => {
@@ -33,4 +33,4 @@ export const isMostRecentDeadEndInvite = function isMostRecentDeadEndInvite(id, 
     }
     return tmp;
   }, 25);
-};
+}

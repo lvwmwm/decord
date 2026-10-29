@@ -1,18 +1,18 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13955
+// Function ID: 13956
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 587, 1382, 5004, 558, 576, 13711, 1125, 2567, 13723, 13727, 2]
+// Dependencies: [19, 17, 21, 587, 1382, 5005, 558, 576, 13944, 1125, 2568, 13956, 13960, 2]
 
-// Module 13722 (GuildPowerupsLevelsSection)
+// Module 13955 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13723 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13727 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13956 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13960 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
         return "singleLevel" === type.type;
       }
     }
-    let obj2 = { title: intl.string(require("module_2567")["TXY/b0"]), description: intl2.string(require("module_2567").aJv4PB) };
+    let obj2 = { title: intl.string(require("module_2568")["TXY/b0"]), description: intl2.string(require("module_2568").aJv4PB) };
     const tmp14 = require("GuildPowerupsSectionHeader");
     intl = tmp(tmp2[9]).intl;
     intl2 = tmp(tmp2[9]).intl;
@@ -169,8 +169,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const callback = memo.useCallback((current) => {
     isScrollingRef.current = current;
   }, []);
-  let obj2 = { title: intl.string(listings(2567)["TXY/b0"]), description: intl2.string(listings(2567).aJv4PB) };
-  const tmp3 = listings(13711);
+  let obj2 = { title: intl.string(listings(2568)["TXY/b0"]), description: intl2.string(listings(2568).aJv4PB) };
+  const tmp3 = listings(13944);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

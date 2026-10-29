@@ -1,20 +1,20 @@
-// Module ID: 8693
-// Function ID: 8694
+// Module ID: 8696
+// Function ID: 8697
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1389, 1084, 1391, 1120, 5011, 1125, 1264, 8694, 7790, 584, 7119, 1294, 7115, 6409, 2]
+// Dependencies: [5, 1389, 1084, 1391, 1120, 5012, 1125, 1264, 8697, 7812, 584, 7143, 1294, 7139, 6433, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8693 (UserProfileActionCreators)
+// Module 8696 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import shared from "shared" /* 5011 */;
-import InlineUploaderDefault from "InlineUploader" /* 7115 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7119 */;
-import MessageParserDefault from "MessageParser" /* 7790 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8694 */;
+import shared from "shared" /* 5012 */;
+import InlineUploaderDefault from "InlineUploader" /* 7139 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7143 */;
+import MessageParserDefault from "MessageParser" /* 7812 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           } else if (1 === c8) {
@@ -166,7 +166,7 @@ let obj = function _saveProfileChanges() {
 ({ AnalyticsPremiumFeatureTiers: c9, AnalyticsPremiumFeatureNames: c10 } = PremiumConstants);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileActionCreators.tsx");
 
-export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUserProfileChangesInModal() {
+export function notifyUnsavedUserProfileChangesInModal() {
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   ComponentDispatch.dispatch(hasOwnProperty.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = ComponentDispatchUtils.ComponentDispatch;
@@ -177,11 +177,11 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   const stringResult = intl.string(intl3.t.GP7JLE);
   const intl2 = intl3.intl;
   announce("" + stringResult + " " + intl2.string(intl3.t.gKoO1D));
-};
-export const saveProfileChanges = function saveProfileChanges() {
+}
+export function saveProfileChanges() {
   return obj(...arguments);
-};
-export const pinUserProfileBadgesOnClient = function pinUserProfileBadgesOnClient(items, ttlInSeconds) {
+}
+export function pinUserProfileBadgesOnClient(items, ttlInSeconds) {
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -192,20 +192,20 @@ export const pinUserProfileBadgesOnClient = function pinUserProfileBadgesOnClien
     obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
-export const resetPendingProfileChanges = function resetPendingProfileChanges() {
+}
+export function resetPendingProfileChanges() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
-};
-export const resetAllPendingChanges = function resetAllPendingChanges() {
+}
+export function resetAllPendingChanges() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
-};
-export const resetAllTryItOutChanges = function resetAllTryItOutChanges() {
+}
+export function resetAllTryItOutChanges() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_TRY_IT_OUT_CHANGES" });
-};
-export const setTryItOutAvatar = function setTryItOutAvatar(avatar) {
+}
+export function setTryItOutAvatar(avatar) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR", avatar };
   obj.dispatch(obj2);
@@ -213,8 +213,8 @@ export const setTryItOutAvatar = function setTryItOutAvatar(avatar) {
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: ANIMATED_AVATAR, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutAvatarDecoration = function setTryItOutAvatarDecoration(avatarDecoration) {
+}
+export function setTryItOutAvatarDecoration(avatarDecoration) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_AVATAR_DECORATION", avatarDecoration };
   obj.dispatch(obj2);
@@ -222,8 +222,8 @@ export const setTryItOutAvatarDecoration = function setTryItOutAvatarDecoration(
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: AVATAR_DECORATION, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutProfileEffect = function setTryItOutProfileEffect(purchasedItem) {
+}
+export function setTryItOutProfileEffect(purchasedItem) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PROFILE_EFFECT", profileEffect: purchasedItem };
   obj.dispatch(obj2);
@@ -231,8 +231,8 @@ export const setTryItOutProfileEffect = function setTryItOutProfileEffect(purcha
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: PROFILE_EFFECT, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutBanner = function setTryItOutBanner(banner) {
+}
+export function setTryItOutBanner(banner) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_BANNER", banner };
   obj.dispatch(obj2);
@@ -240,8 +240,8 @@ export const setTryItOutBanner = function setTryItOutBanner(banner) {
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: PROFILE_BANNER, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutThemeColors = function setTryItOutThemeColors(themeColors) {
+}
+export function setTryItOutThemeColors(themeColors) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_THEME_COLORS", themeColors };
   obj.dispatch(obj2);
@@ -249,8 +249,8 @@ export const setTryItOutThemeColors = function setTryItOutThemeColors(themeColor
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: PROFILE_THEME_COLOR, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutDisplayNameStyles = function setTryItOutDisplayNameStyles(displayNameStyles) {
+}
+export function setTryItOutDisplayNameStyles(displayNameStyles) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES", displayNameStyles };
   obj.dispatch(obj2);
@@ -258,8 +258,8 @@ export const setTryItOutDisplayNameStyles = function setTryItOutDisplayNameStyle
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: DISPLAY_NAME_STYLES, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutCustomTypingIndicatorStyle = function setTryItOutCustomTypingIndicatorStyle(customTypingIndicatorStyle) {
+}
+export function setTryItOutCustomTypingIndicatorStyle(customTypingIndicatorStyle) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_CUSTOM_TYPING_INDICATOR_STYLE", customTypingIndicatorStyle };
   obj.dispatch(obj2);
@@ -267,8 +267,8 @@ export const setTryItOutCustomTypingIndicatorStyle = function setTryItOutCustomT
   const obj3 = AnalyticsUtilsDefault;
   const obj4 = { feature_name: TYPING_INDICATOR, feature_tier: constants3.PREMIUM_STANDARD };
   obj3.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj4);
-};
-export const setTryItOutPreset = function setTryItOutPreset(arg0) {
+}
+export function setTryItOutPreset(arg0) {
   const dispatch = DispatcherDefault.dispatch;
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_PRESET" };
   DispatcherDefault;
@@ -278,4 +278,4 @@ export const setTryItOutPreset = function setTryItOutPreset(arg0) {
   const obj2 = AnalyticsUtilsDefault;
   const obj3 = { feature_name: PRESET, feature_tier: constants3.PREMIUM_STANDARD };
   obj2.track(metroRequire.PREMIUM_FEATURE_TRY_OUT, obj3);
-};
+}

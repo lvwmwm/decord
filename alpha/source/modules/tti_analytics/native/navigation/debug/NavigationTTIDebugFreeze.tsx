@@ -1,11 +1,11 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 13132
+// Function ID: 13133
 // Name: NavigationTTIDebugFreeze
-// Dependencies: [5193, 2]
+// Dependencies: [5194, 2]
 // Exports: armNavigationTTIDebugFreeze, disarmNavigationTTIDebugFreeze, emitNavigationTTIDebugCheckpoint, getNavigationTTIDebugFreezeTarget, subscribeNavigationTTIDebugFreezeTarget
 
-// Module 12911 (NavigationTTIDebugFreeze)
-import react_native from "react-native" /* 5193 */;
+// Module 13132 (NavigationTTIDebugFreeze)
+import react_native from "react-native" /* 5194 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -20,7 +20,7 @@ const set = new Set();
 let c3 = null;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIDebugFreeze.tsx");
 
-export const getNavigationTTIDebugFreezeTarget = function getNavigationTTIDebugFreezeTarget() {
+export function getNavigationTTIDebugFreezeTarget() {
   let target;
   if (_null != null) {
     target = _null.target;
@@ -29,13 +29,13 @@ export const getNavigationTTIDebugFreezeTarget = function getNavigationTTIDebugF
     target = null;
   }
   return target;
-};
-export const subscribeNavigationTTIDebugFreezeTarget = function subscribeNavigationTTIDebugFreezeTarget(arg0) {
+}
+export function subscribeNavigationTTIDebugFreezeTarget(arg0) {
   let closure_0 = arg0;
   set.add(arg0);
   return () => set.delete(closure_0);
-};
-export const armNavigationTTIDebugFreeze = function armNavigationTTIDebugFreeze(freeze, arg1) {
+}
+export function armNavigationTTIDebugFreeze(freeze, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -50,14 +50,14 @@ export const armNavigationTTIDebugFreeze = function armNavigationTTIDebugFreeze(
   }
   let c3 = { target: freeze, armedDuringTraceId, destinationKey };
   notify();
-};
-export const disarmNavigationTTIDebugFreeze = function disarmNavigationTTIDebugFreeze() {
+}
+export function disarmNavigationTTIDebugFreeze() {
   if (null != c3) {
     c3 = null;
     notify();
   }
-};
-export const emitNavigationTTIDebugCheckpoint = function emitNavigationTTIDebugCheckpoint(traceId, logActiveBundle) {
+}
+export function emitNavigationTTIDebugCheckpoint(traceId, logActiveBundle) {
   if (null != _null) {
     if (traceId.traceId !== _null.armedDuringTraceId) {
       if (null == _null.destinationKey) {
@@ -96,4 +96,4 @@ export const emitNavigationTTIDebugCheckpoint = function emitNavigationTTIDebugC
     }
   }
   return false;
-};
+}

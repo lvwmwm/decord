@@ -1,25 +1,25 @@
-// Module ID: 17800
-// Function ID: 17801
+// Module ID: 18038
+// Function ID: 18039
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1084, 21, 14235, 587, 5004, 8900, 5698, 1125, 9083, 9094, 558, 576, 5187, 5270, 6944, 15358, 17801, 2]
+// Dependencies: [5, 19, 17, 1084, 21, 14471, 587, 5005, 8903, 5700, 1125, 9086, 9097, 558, 576, 5188, 5271, 6968, 15593, 18039, 2]
 
-// Module 17800 (MessagesItemAddFriendsWidget)
+// Module 18038 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Pressables from "Pressables" /* 6944 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8900 */;
-import IconActionButton from "IconActionButton" /* 14235 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15358 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17801 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Pressables from "Pressables" /* 6968 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
+import IconActionButton from "IconActionButton" /* 14471 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15593 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18039 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -190,7 +190,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -224,7 +224,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     intl2 = tmp(1125).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;

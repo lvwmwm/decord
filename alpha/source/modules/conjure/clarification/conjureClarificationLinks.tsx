@@ -1,16 +1,16 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12567
+// Function ID: 12568
 // Name: conjureClarificationLinks
-// Dependencies: [12249, 2]
+// Dependencies: [12303, 2]
 // Exports: sendAfterLinkingApps
 
-// Module 12513 (conjureClarificationLinks)
-import conjureLinkedApps from "conjureLinkedApps" /* 12249 */;
+// Module 12567 (conjureClarificationLinks)
+import conjureLinkedApps from "conjureLinkedApps" /* 12303 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/clarification/conjureClarificationLinks.tsx");
 
-export const sendAfterLinkingApps = function sendAfterLinkingApps(projectId, questions, arg2, first1, fn) {
+export function sendAfterLinkingApps(projectId, questions, arg2, first1, fn) {
   let closure_0 = projectId;
   let closure_1 = arg2;
   let closure_2 = first1;
@@ -40,4 +40,4 @@ export const sendAfterLinkingApps = function sendAfterLinkingApps(projectId, que
   } else {
     const tmp = fn();
   }
-};
+}

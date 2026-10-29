@@ -1,17 +1,17 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13853
+// Function ID: 13854
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 4916, 4922, 21, 558, 576, 4942, 504, 12869, 1125, 13621, 13591, 2]
+// Dependencies: [19, 502, 4917, 4923, 21, 558, 576, 4943, 504, 13090, 1125, 13854, 13824, 2]
 
-// Module 13620 (ChatInputGuardAutomodUserProfileQuarantine)
+// Module 13853 (ChatInputGuardAutomodUserProfileQuarantine)
 import Fragment from "Fragment" /* 21 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4942 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12869 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13591 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4943 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 13090 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13824 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -214,7 +214,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return;
       }
     }
-    const tmp18 = jsx(tmp(13621).ChatXIcon, {});
+    const tmp18 = jsx(tmp(13854).ChatXIcon, {});
     cResult[12] = tmp18;
   } else {
     class R {
@@ -265,7 +265,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = GuildAutomodActionActionCreators;
     const result = obj.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
-  const obj2 = guildId(4942);
+  const obj2 = guildId(4943);
   const automodReason = obj2.getAutomodReason(stateFromStores);
   const tmp6 = GuildMemberFlags;
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {

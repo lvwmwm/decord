@@ -1,12 +1,12 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17554
+// Function ID: 17555
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 17313, 5270, 1125, 558, 576, 7073, 17314, 17308, 17309, 2]
+// Dependencies: [5, 32, 19, 21, 17552, 5271, 1125, 558, 576, 7097, 17553, 17547, 17548, 2]
 
-// Module 17315 (BackupScreen)
+// Module 17554 (BackupScreen)
 import intl6 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import MFA from "MFA" /* 17313 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import MFA from "MFA" /* 17552 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -139,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
             }
             message2(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           if (0 === c5) {
@@ -423,7 +423,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -479,7 +479,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackupScreen
           }
           message2(false);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp28) {
         if (0 === c5) {

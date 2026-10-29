@@ -1,32 +1,32 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17329
+// Function ID: 17330
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1389, 2055, 1205, 1206, 1084, 21, 5004, 587, 1264, 4832, 5904, 558, 576, 5288, 504, 2050, 1502, 7123, 7023, 1125, 7331, 1199, 10201, 5270, 7021, 7020, 8985, 6013, 2]
+// Dependencies: [19, 17, 1389, 2056, 1205, 1206, 1084, 21, 5005, 587, 1264, 4833, 5906, 558, 576, 5289, 504, 2051, 1503, 7147, 7047, 1125, 7355, 1199, 10234, 5271, 7045, 7044, 8988, 6015, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 17090 (UserSettingsText)
+// Module 17329 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1206 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5904 */;
-import TableRadioRow4 from "TableRadioRow" /* 7020 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7021 */;
-import TableRowGroup7 from "TableRowGroup" /* 7023 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7123 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 7331 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10201 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5906 */;
+import TableRadioRow4 from "TableRadioRow" /* 7044 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7045 */;
+import TableRowGroup7 from "TableRowGroup" /* 7047 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7147 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 7355 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10234 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -848,7 +848,7 @@ size = size_mod;
 let result = size.fileFinishedImporting("modules/user_settings/chat/native/UserSettingsText.tsx");
 
 export default tmp5;
-export const setStickerAutocomplete = function setStickerAutocomplete(enabled) {
+export function setStickerAutocomplete(enabled) {
   let obj3;
   const obj2 = { enabled, location: obj3 };
   obj3 = { section: constants2.SETTINGS_TEXT_AND_IMAGES };
@@ -856,8 +856,8 @@ export const setStickerAutocomplete = function setStickerAutocomplete(enabled) {
   obj.track(constants.STICKERS_IN_AUTOCOMPLETE_TOGGLED, obj2);
   const IncludeStickersInAutocomplete = UserSettings.IncludeStickersInAutocomplete;
   IncludeStickersInAutocomplete.updateSetting(enabled);
-};
-export const setLowQualityImageMode = function setLowQualityImageMode(lowQualityImageMode) {
+}
+export function setLowQualityImageMode(lowQualityImageMode) {
   let dataSavingMode;
   let videoUploadQuality;
   let viewImageDescriptions;
@@ -867,7 +867,7 @@ export const setLowQualityImageMode = function setLowQualityImageMode(lowQuality
   obj.track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "low_quality_image_mode" });
   const obj2 = UserSettingsActionCreatorsDefault;
   const result = obj2.updatedUnsyncedSettings({ lowQualityImageMode });
-};
+}
 export { setDataSavingMode };
 export { setVideoUploadQuality };
 export { setImageDescriptions };

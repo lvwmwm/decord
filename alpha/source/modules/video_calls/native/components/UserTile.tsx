@@ -1,33 +1,33 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11539
+// Function ID: 11540
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6042, 11486, 502, 4856, 2011, 1084, 5668, 5754, 21, 5004, 587, 5001, 558, 576, 504, 1199, 11487, 5270, 1125, 8776, 11475, 11474, 11488, 11489, 11490, 11491, 6816, 10944, 11492, 10927, 11462, 5333, 11493, 2]
+// Dependencies: [32, 19, 17, 6046, 11540, 502, 4857, 2012, 1084, 5670, 5756, 21, 5005, 587, 5002, 558, 576, 504, 1199, 11541, 5271, 1125, 8779, 11529, 11528, 11542, 11543, 11544, 11545, 9203, 6839, 10979, 11546, 10962, 11516, 5334, 11547, 2]
 
-// Module 11485 (UserTile)
+// Module 11539 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import CallConstants from "CallConstants" /* 5668 */;
-import Constants2 from "Constants" /* 5754 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11486 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11487 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11488 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11489 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11490 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11491 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11492 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import CallConstants from "CallConstants" /* 5670 */;
+import Constants2 from "Constants" /* 5756 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11540 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11541 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11542 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11543 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11544 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11545 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11546 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6042 */;
+import SoundboardStore from "SoundboardStore" /* 6046 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import ColorUtils_mod from "ColorUtils" /* 5001 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import ColorUtils_mod from "ColorUtils" /* 5002 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -528,16 +528,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   let avatarSize;
   let gestureEnabled;
   let hasNotch;
-  let id;
   let onDoubleTap;
   let resizeMode;
   let statusStyle;
   let style;
   let tmp41;
-  let voiceState;
   const tmp = participant;
   const obj = participant(onDoubleTap[16]);
-  const cResult = obj.c(69);
+  const cResult = obj.c(65);
   participant = participant.participant;
   const onSingleTap = participant.onSingleTap;
   onDoubleTap = participant.onDoubleTap;
@@ -559,9 +557,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
       }
       if (cResult[6] === onLongPress) {
         let tmp7;
-        let tmp9;
-        let tmp13;
+        let tmp11;
         let tmp15;
+        let tmp17;
         if (cResult[7] === participant) {
           tmp7 = cResult[8];
         }
@@ -577,7 +575,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
         }
         const user = participant.user;
-        ({ voiceState, id } = participant);
+        let tmpResult = tmp(tmp2[29]);
+        const withLocalSelfMuteDeaf = tmpResult.withLocalSelfMuteDeaf;
+        const voiceState = participant.voiceState;
+        const tmpResult6 = tmp(onDoubleTap[29]);
+        const result = withLocalSelfMuteDeaf(voiceState, tmpResult6.useLocalSelfMuteDeaf());
+        const id = participant.id;
         if (cResult[9] !== id) {
           const obj2 = { userId: id };
           class UserTileTsx1 {
@@ -592,13 +595,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
           cResult[9] = id;
           cResult[10] = obj2;
-          tmp9 = obj2;
+          tmp11 = obj2;
         } else {
-          tmp9 = cResult[10];
+          tmp11 = cResult[10];
         }
-        onSingleTap(onDoubleTap[29])(tmp9);
+        onSingleTap(onDoubleTap[30])(tmp11);
         const _Symbol = Symbol;
-        const tmp10 = onSingleTap;
+        const tmp12 = onSingleTap;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const items = [];
           class UserTileTsx1 {
@@ -612,9 +615,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[11] = items;
-          tmp13 = items;
+          tmp15 = items;
         } else {
-          tmp13 = cResult[11];
+          tmp15 = cResult[11];
         }
         if (cResult[12] !== participant.id) {
           class J {
@@ -633,7 +636,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
           cResult[13] = J;
-          tmp15 = J;
+          tmp17 = J;
         } else {
           class J {
             constructor() {
@@ -641,17 +644,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
         }
-        let tmpResult = tmp(tmp2[17]);
-        const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp15);
+        const tmpResult7 = tmp(onDoubleTap[17]);
+        const stateFromStores = tmpResult7.useStateFromStores(tmp15, tmp17);
         const getChannel = ChannelStore.getChannel;
-        if (voiceState != null) {
+        if (result != null) {
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
             }
           }
         }
-        const channel = getChannel(tmp19);
+        const channel = getChannel(tmp21);
         if (channel != null) {
           class J {
             constructor() {
@@ -682,7 +685,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               return tmpResult;
             }
           }
-          cResult[15] = tmp23;
+          cResult[15] = tmp25;
         } else {
           class J {
             constructor() {
@@ -690,64 +693,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
         }
-        if (cResult[16] !== voiceState) {
-          class J {
-            constructor() {
-              return SoundboardStore.isUserPlayingSounds(participant.id);
-            }
-          }
-          if (voiceState != null) {
-            class J {
-              constructor() {
-                return SoundboardStore.isUserPlayingSounds(participant.id);
-              }
-            }
-          }
-          class UserTileTsx1 {
-            constructor() {
-              tmpResult = undefined;
-              if (onLongPress != null) {
-                tmp3 = participant;
-                tmpResult = tmp(participant);
-              }
-              return tmpResult;
-            }
-          }
-          cResult[16] = voiceState;
-          cResult[17] = tmp25;
-        } else {
+        if (result != null) {
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
             }
           }
         }
-        if (cResult[18] !== voiceState) {
+        if (undefined == null) {
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
             }
           }
-          if (voiceState != null) {
-            class J {
-              constructor() {
-                return SoundboardStore.isUserPlayingSounds(participant.id);
-              }
-            }
-          }
-          class UserTileTsx1 {
+        }
+        if (result != null) {
+          class J {
             constructor() {
-              tmpResult = undefined;
-              if (onLongPress != null) {
-                tmp3 = participant;
-                tmpResult = tmp(participant);
-              }
-              return tmpResult;
+              return SoundboardStore.isUserPlayingSounds(participant.id);
             }
           }
-          cResult[18] = voiceState;
-          cResult[19] = tmp27;
-        } else {
+        }
+        if (undefined == null) {
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
@@ -755,7 +722,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
         }
         const _Symbol2 = Symbol;
-        if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
           class J {
             constructor() {
               return SoundboardStore.isUserPlayingSounds(participant.id);
@@ -772,7 +739,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               return tmpResult;
             }
           }
-          cResult[20] = items1;
+          cResult[16] = items1;
         } else {
           class J {
             constructor() {
@@ -780,7 +747,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
             }
           }
         }
-        if (cResult[21] === participant.type) {
+        if (cResult[17] === participant.type) {
           let tmp35;
           let tmp36;
           class J {
@@ -799,8 +766,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               return tmpResult;
             }
           }
-          const tmpResult5 = tmp(onDoubleTap[32]);
-          const voiceChatNavigationContext = tmpResult5.useVoiceChatNavigationContext();
+          const tmpResult9 = tmp(onDoubleTap[33]);
+          const voiceChatNavigationContext = tmpResult9.useVoiceChatNavigationContext();
           if (voiceChatNavigationContext != null) {
             class J {
               constructor() {
@@ -817,7 +784,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
           }
           let c5 = tmp34;
           const _Symbol3 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
             class J {
               constructor() {
                 return SoundboardStore.isUserPlayingSounds(participant.id);
@@ -834,7 +801,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return tmpResult;
               }
             }
-            cResult[25] = items2;
+            cResult[21] = items2;
             tmp35 = items2;
           } else {
             class J {
@@ -843,7 +810,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               }
             }
           }
-          if (cResult[26] !== undefined) {
+          if (cResult[22] !== undefined) {
             class J {
               constructor() {
                 return SoundboardStore.isUserPlayingSounds(participant.id);
@@ -859,7 +826,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return tmpResult;
               }
             }
-            cResult[27] = tmp37;
+            cResult[23] = tmp37;
             tmp36 = tmp37;
           } else {
             class J {
@@ -868,17 +835,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
               }
             }
           }
-          const tmpResult6 = tmp(onDoubleTap[17]);
-          const stateFromStores1 = tmpResult6.useStateFromStores(tmp35, tmp36);
+          const tmpResult10 = tmp(onDoubleTap[17]);
+          const stateFromStores1 = tmpResult10.useStateFromStores(tmp35, tmp36);
           const type = participant.type;
           const USER = ParticipantTypes.USER;
-          if (cResult[28] === tmp6) {
+          if (cResult[24] === tmp6) {
             class J {
               constructor() {
                 return SoundboardStore.isUserPlayingSounds(participant.id);
               }
             }
-            const tmp42 = tmp10(onDoubleTap[33])(tmp41);
+            const tmp42 = tmp12(onDoubleTap[34])(tmp41);
             class UserTileTsx1 {
               constructor() {
                 tmpResult = undefined;
@@ -889,7 +856,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 return tmpResult;
               }
             }
-            const Gesture = tmp(tmp2[34]).Gesture;
+            const Gesture = tmp(tmp2[35]).Gesture;
             const LongPressResult = Gesture.LongPress();
             const runOnJSResult = LongPressResult.runOnJS(true);
             const onStartResult = runOnJSResult.onStart(tmp7);
@@ -901,30 +868,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
                 }
               }
             }
-            const GestureDetector = tmp(tmp2[34]).GestureDetector;
-            const Gesture2 = tmp(tmp2[34]).Gesture;
-            cResult[31] = tmp7;
-            cResult[32] = tmp33;
-            cResult[33] = tmp42;
-            cResult[34] = GestureDetector;
-            cResult[35] = Gesture2.Simultaneous(tmp46, tmp42);
+            const GestureDetector = tmp(tmp2[35]).GestureDetector;
+            const Gesture2 = tmp(tmp2[35]).Gesture;
+            cResult[27] = tmp7;
+            cResult[28] = tmp33;
+            cResult[29] = tmp42;
+            cResult[30] = GestureDetector;
+            cResult[31] = Gesture2.Simultaneous(tmp46, tmp42);
             const SimultaneousResult = Gesture2.Simultaneous(tmp46, tmp42);
           }
           const obj3 = { onDoubleTapStart: tmp6, onSingleTapStart: tmp5 };
-          cResult[28] = tmp6;
-          cResult[29] = tmp5;
-          cResult[30] = obj3;
+          cResult[24] = tmp6;
+          cResult[25] = tmp5;
+          cResult[26] = obj3;
           tmp41 = obj3;
         }
-        function ie() {
+        const fn2 = function $() {
           const isLocalVideoDisabledResult = null != user.id && MediaEngineStore.isLocalVideoDisabled(tmp.id, mediaEngineContextFromParticipantTypeDefault(participant.type));
           return isLocalVideoDisabledResult;
-        }
+        };
         const items3 = [user.id, participant.type];
-        cResult[21] = participant.type;
-        cResult[22] = user.id;
-        cResult[23] = ie;
-        cResult[24] = items3;
+        cResult[17] = participant.type;
+        cResult[18] = user.id;
+        cResult[19] = fn2;
+        cResult[20] = items3;
       }
       class UserTileTsx1 {
         constructor() {
@@ -976,13 +943,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   let hasNotch;
   let items7;
   let items8;
-  let obj4;
+  let obj5;
   let ringing;
   let statusStyle;
   let streamId;
   let style;
-  let tmp25;
   let tmp26;
+  let tmp27;
   participant = participant.participant;
   const onSingleTap = participant.onSingleTap;
   const onDoubleTap = participant.onDoubleTap;
@@ -1015,7 +982,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
     return tmpResult;
   }, items1);
   user = participant.user;
-  const voiceState = participant.voiceState;
   const callback2 = user.useCallback(() => {
     let tmpResult;
     if (onLongPress != null) {
@@ -1024,45 +990,50 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
     return tmpResult;
   }, items2);
   ({ streamId, ringing } = participant);
-  const obj = { userId: participant.id };
+  const withLocalSelfMuteDeaf = participant(onDoubleTap[29]).withLocalSelfMuteDeaf;
+  const voiceState = participant.voiceState;
+  participant(onDoubleTap[29]);
+  const obj = participant(onDoubleTap[29]);
+  const result = withLocalSelfMuteDeaf(voiceState, obj.useLocalSelfMuteDeaf());
+  const obj2 = { userId: participant.id };
   const items3 = [SoundboardStore];
   let channelId;
-  const tmp9 = onSingleTap(onDoubleTap[29])(obj);
-  const obj2 = participant(onDoubleTap[17]);
-  const stateFromStores = obj2.useStateFromStores(items3, () => SoundboardStore.isUserPlayingSounds(participant.id));
+  const tmp11 = onSingleTap(onDoubleTap[30])(obj2);
+  const obj4 = participant(onDoubleTap[17]);
+  const stateFromStores = obj4.useStateFromStores(items3, () => SoundboardStore.isUserPlayingSounds(participant.id));
   const getChannel = ChannelStore.getChannel;
-  if (voiceState != null) {
-    channelId = voiceState.channelId;
+  if (result != null) {
+    channelId = result.channelId;
   }
   const channel = getChannel(channelId);
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmp16 = tmp7(tmp8[30])(participant);
+  let tmp17 = tmp10(tmp8[31])(participant);
   let flag;
-  if (voiceState != null) {
-    flag = voiceState.isVoiceMuted();
+  if (result != null) {
+    flag = result.isVoiceMuted();
   }
   if (flag == null) {
     flag = false;
   }
   let flag2;
-  if (voiceState != null) {
-    flag2 = voiceState.isVoiceDeafened();
+  if (result != null) {
+    flag2 = result.isVoiceDeafened();
   }
   if (flag2 == null) {
     flag2 = false;
   }
   const items4 = [MediaEngineStore];
   const items5 = [user.id, participant.type];
-  const tmp10Result = participant(onDoubleTap[17]);
-  const stateFromStores1 = tmp10Result.useStateFromStores(items4, () => {
+  const tmp7Result = participant(onDoubleTap[17]);
+  const stateFromStores1 = tmp7Result.useStateFromStores(items4, () => {
     const isLocalVideoDisabledResult = null != user.id && MediaEngineStore.isLocalVideoDisabled(tmp.id, mediaEngineContextFromParticipantTypeDefault(participant.type));
     return isLocalVideoDisabledResult;
   }, items5);
-  const tmp10Result3 = participant(onDoubleTap[32]);
-  const voiceChatNavigationContext = tmp10Result3.useVoiceChatNavigationContext();
+  const tmp7Result3 = participant(onDoubleTap[33]);
+  const voiceChatNavigationContext = tmp7Result3.useVoiceChatNavigationContext();
   let swipeDismissRef;
   if (voiceChatNavigationContext != null) {
     swipeDismissRef = voiceChatNavigationContext.swipeDismissRef;
@@ -1073,8 +1044,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
     id = user2.id;
   }
   const items6 = [VoiceChannelEffectsStore];
-  const tmp10Result4 = participant(onDoubleTap[17]);
-  const stateFromStores2 = tmp10Result4.useStateFromStores(items6, () => {
+  const tmp7Result4 = participant(onDoubleTap[17]);
+  const stateFromStores2 = tmp7Result4.useStateFromStores(items6, () => {
     let effectForUserId = null;
     if (null != id) {
       effectForUserId = VoiceChannelEffectsStore.getEffectForUserId(tmp);
@@ -1084,34 +1055,34 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
   if (participant.type !== ParticipantTypes.USER) {
     const type = participant.type;
   }
-  const tmp22 = onSingleTap(onDoubleTap[33])({ onDoubleTapStart: callback1, onSingleTapStart: callback });
-  const Gesture = tmp10(tmp8[34]).Gesture;
+  const tmp23 = onSingleTap(onDoubleTap[34])({ onDoubleTapStart: callback1, onSingleTapStart: callback });
+  const Gesture = tmp7(tmp8[35]).Gesture;
   const LongPressResult = Gesture.LongPress();
   const runOnJSResult = LongPressResult.runOnJS(true);
   const onStartResult = runOnJSResult.onStart(callback2);
   const minDurationResult = onStartResult.minDuration(800);
-  let result = minDurationResult;
+  let result1 = minDurationResult;
   if (null != swipeDismissRef) {
-    result = minDurationResult.requireExternalGestureToFail(swipeDismissRef);
+    result1 = minDurationResult.requireExternalGestureToFail(swipeDismissRef);
   }
-  const obj3 = { gesture: Gesture2.Simultaneous(result, tmp22), children: tmp25(tmp26, obj4) };
-  const GestureDetector = tmp10(tmp8[34]).GestureDetector;
-  Gesture2 = tmp10(tmp8[34]).Gesture;
-  obj4 = { style: items7, children: items8 };
+  const obj3 = { gesture: Gesture2.Simultaneous(result1, tmp23), children: tmp26(tmp27, obj5) };
+  const GestureDetector = tmp7(tmp8[35]).GestureDetector;
+  Gesture2 = tmp7(tmp8[35]).Gesture;
+  obj5 = { style: items7, children: items8 };
   items7 = [tmp3.container, style];
-  const obj5 = { guildId: guild_id, hasVideo: tmp16, streamId, user, resizeMode: COVER, ringing, speaking: tmp9, playingSoundboard: stateFromStores, avatarSize, gestureEnabled };
-  tmp25 = closure_16;
-  tmp26 = id;
-  const tmp27 = closure_19;
-  if (tmp16) {
-    tmp16 = !stateFromStores1;
+  const obj6 = { guildId: guild_id, hasVideo: tmp17, streamId, user, resizeMode: COVER, ringing, speaking: tmp11, playingSoundboard: stateFromStores, avatarSize, gestureEnabled };
+  tmp26 = closure_16;
+  tmp27 = id;
+  const tmp28 = closure_19;
+  if (tmp17) {
+    tmp17 = !stateFromStores1;
   }
-  items8 = [closure_15(tmp27, obj5), , ];
-  let tmp24Result = null;
+  items8 = [closure_15(tmp28, obj6), , ];
+  let tmp25Result = null;
   if (null != id) {
-    tmp24Result = null;
+    tmp25Result = null;
     if (null != stateFromStores2) {
-      const obj6 = {
+      const obj7 = {
         voiceChannelEffect: stateFromStores2,
         onComplete() {
               return closure_8(id);
@@ -1119,12 +1090,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTile(par
         userId: id,
         hasNotch
       };
-      tmp24Result = tmp24(tmp7(tmp8[35]), obj6);
+      tmp25Result = tmp25(tmp10(tmp8[36]), obj7);
     }
   }
-  items8[1] = tmp24Result;
-  const obj7 = { muted: flag, deafened: flag2, userId: user.id, style: statusStyle };
-  items8[2] = closure_15(closure_20, obj7);
+  items8[1] = tmp25Result;
+  const obj8 = { muted: flag, deafened: flag2, userId: user.id, style: statusStyle };
+  items8[2] = closure_15(closure_20, obj8);
   return closure_15(GestureDetector, obj3);
 });
 size = size_mod;

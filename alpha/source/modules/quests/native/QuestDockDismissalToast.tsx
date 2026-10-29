@@ -1,18 +1,18 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16958
+// Function ID: 16959
 // Name: QuestDockDismissalToast
-// Dependencies: [5699, 1125, 5722, 2]
+// Dependencies: [5701, 1125, 5724, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 16720 (QuestDockDismissalToast)
+// Module 16958 (QuestDockDismissalToast)
 import intl2 from "intl" /* 1125 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5722 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
 
-export const displayQuestDismissalToast = function displayQuestDismissalToast() {
+export function displayQuestDismissalToast() {
   let intl;
   let obj2;
   const obj = { text: intl.formatToPlainString(intl2.t.dYE1px, obj2), icon: CircleInformationIcon.CircleInformationIcon, position: "bottom" };
@@ -25,4 +25,4 @@ export const displayQuestDismissalToast = function displayQuestDismissalToast() 
     }
   };
   open("QUEST_BAR_DISMISS_TOAST", obj);
-};
+}

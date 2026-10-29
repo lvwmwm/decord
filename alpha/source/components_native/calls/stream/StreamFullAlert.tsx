@@ -1,14 +1,14 @@
-// Module ID: 19720
-// Function ID: 19721
+// Module ID: 19942
+// Function ID: 19943
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 558, 576, 5933, 1125, 5270, 6014, 2]
+// Dependencies: [19, 21, 558, 576, 5935, 1125, 5271, 6018, 2]
 
-// Module 19720 (StreamFullAlert)
+// Module 19942 (StreamFullAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import AVError from "AVError" /* 5933 */;
-import AlertDefault from "Alert" /* 6014 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import AVError from "AVError" /* 5935 */;
+import AlertDefault from "Alert" /* 6018 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -30,7 +30,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(5933).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(5935).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;
@@ -53,7 +53,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     intl3 = tmp(1125).intl;
     const tmp15 = _false(Text, obj3);
     const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: first };
@@ -96,7 +96,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const merged = Object.assign(arg0);
   intl2 = tmp(1125).intl;
   const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5270).Text;
+  const Text = tmp(5271).Text;
   intl3 = tmp(1125).intl;
   items = [_false(Text, obj3), ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };

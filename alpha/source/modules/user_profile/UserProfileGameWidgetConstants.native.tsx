@@ -1,15 +1,15 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14873
+// Function ID: 14874
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [14640, 14642, 9791, 9793, 5702, 2]
+// Dependencies: [14874, 14876, 9823, 9825, 5704, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 14639 (UserProfileGameWidgetConstants)
-import FriendsIcon from "FriendsIcon" /* 5702 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9791 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9793 */;
-import RibbonIcon from "RibbonIcon" /* 14642 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 14640 */;
+// Module 14873 (UserProfileGameWidgetConstants)
+import FriendsIcon from "FriendsIcon" /* 5704 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9823 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9825 */;
+import RibbonIcon from "RibbonIcon" /* 14876 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 14874 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -22,10 +22,10 @@ const widgetGameTagMetadata = buildWidgetGameTagMetadata(obj);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetConstants.native.tsx");
 
 export const WIDGET_GAME_TAG_METADATA = widgetGameTagMetadata;
-export const getWidgetGameTagMetadata = function getWidgetGameTagMetadata(tag) {
+export function getWidgetGameTagMetadata(tag) {
   let tmp2 = null;
   if (null != widgetGameTagMetadata[tag]) {
     tmp2 = tmp;
   }
   return tmp2;
-};
+}

@@ -8,7 +8,7 @@ import _mod693 from "module_693" /* 693 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const setActiveSpanInBrowser = function setActiveSpanInBrowser(end) {
+export function setActiveSpanInBrowser(end) {
   let activeSpan;
   let currentScope;
   let obj = activeSpan(currentScope[0]);
@@ -31,4 +31,4 @@ export const setActiveSpanInBrowser = function setActiveSpanInBrowser(end) {
     const tmpResult2 = activeSpan(currentScope[0]);
     let result = tmpResult2._INTERNAL_setSpanForScope(currentScope, end);
   }
-};
+}

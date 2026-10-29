@@ -1,17 +1,17 @@
-// Module ID: 8145
-// Function ID: 8146
+// Module ID: 8168
+// Function ID: 8169
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 8146, 21, 7521, 8147, 1125, 8148, 5299, 8160, 8144, 8142, 7131, 2]
+// Dependencies: [5, 32, 19, 8169, 21, 7544, 8170, 1125, 8171, 5300, 8183, 8167, 8165, 7155, 2]
 // Exports: default
 
-// Module 8145 (InAppReportModal)
+// Module 8168 (InAppReportModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import Navigator2 from "Navigator" /* 7131 */;
-import showReportModal from "showReportModal" /* 8142 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8144 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8146 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
+import Navigator2 from "Navigator" /* 7155 */;
+import showReportModal from "showReportModal" /* 8165 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8167 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8169 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8183 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -45,7 +45,7 @@ export default function InAppReportModal(arg0) {
   let menu;
   let name;
   let screens;
-  const f146721 = (fn) => fn();
+  const f148270 = (fn) => fn();
   ({ reportType: require, menu } = arg0);
   ({ afterSubmit: dependencyMap, isEligibleForFeedback: _asyncToGenerator } = arg0);
   _slicedToArray = undefined;
@@ -73,7 +73,7 @@ export default function InAppReportModal(arg0) {
     const result = obj.trackCloseReportModalAnalytics(require, c12, first);
     const obj2 = showReportModal;
     obj2.hideReportModal();
-    const item = _undefined2.forEach(f146721);
+    const item = _undefined2.forEach(f148270);
     const tmp3 = require;
     const tmp4 = first;
     const tmp8 = _asyncToGenerator;
@@ -90,7 +90,7 @@ export default function InAppReportModal(arg0) {
   [c12, c13] = tmp4;
   let tmp5 = _slicedToArray(react.useState([]), 2);
   [c14, c15] = tmp5;
-  let tmp7 = menu(5299)(() => {
+  let tmp7 = menu(5300)(() => {
     const obj = FamilyCenterUtils;
     const orFetchLinkedUsers = obj.getOrFetchLinkedUsers();
   });
@@ -116,7 +116,7 @@ export default function InAppReportModal(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -164,7 +164,7 @@ export default function InAppReportModal(arg0) {
                   closure_1_16(closure_2);
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp31) {
               c4 = 3;
@@ -182,7 +182,7 @@ export default function InAppReportModal(arg0) {
       const result = obj.trackCloseReportModalAnalytics(obj, c12, first);
       let obj2 = showReportModal;
       obj2.hideReportModal();
-      const item = _undefined2.forEach(f146721);
+      const item = _undefined2.forEach(f148270);
       const tmp12 = closure_3;
       const tmp5 = obj;
       const tmp7 = first;

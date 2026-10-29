@@ -1,15 +1,15 @@
-// Module ID: 7548
-// Function ID: 7549
+// Module ID: 7571
+// Function ID: 7572
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2055, 1084, 1391, 5945, 1125, 1264, 6498, 7549, 7554, 7555, 7556, 2050, 2]
+// Dependencies: [5, 2056, 1084, 1391, 5947, 1125, 1264, 6522, 7572, 7577, 7578, 7579, 2051, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7548 (GuildBoostPurchasingUtils)
+// Module 7571 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               allowYearlyBundles = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             if (1 === onPaymentDismiss) {
@@ -143,7 +143,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;
@@ -224,6 +224,6 @@ let obj = function _launchGuildBoostFlowOrAlert() {
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportAll, PremiumTypes: c9, SubscriptionIntervalTypes: c10 } = PremiumConstants);
 let result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");
 
-export const launchGuildBoostFlowOrAlert = function launchGuildBoostFlowOrAlert() {
+export function launchGuildBoostFlowOrAlert() {
   return obj(...arguments);
-};
+}

@@ -1,17 +1,17 @@
-// Module ID: 5033
-// Function ID: 5034
+// Module ID: 5034
+// Function ID: 5035
 // Name: HexagonCampaignExperiment
-// Dependencies: [1452, 558, 576, 5031, 2]
+// Dependencies: [1453, 558, 576, 5032, 2]
 // Exports: getIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled
 
-// Module 5033 (HexagonCampaignExperiment)
+// Module 5034 (HexagonCampaignExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const HexagonCampaignUtils = tmp(5031);
+const HexagonCampaignUtils = tmp(5032);
 let obj = { kind: "user", name: "2026-09-hexagon-campaign-client", defaultConfig: { enabled: false, questHomeRedirect: false }, variations: { 0: { enabled: false, questHomeRedirect: false }, 1: { enabled: true, questHomeRedirect: true }, 2: { enabled: true, questHomeRedirect: false } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -79,16 +79,16 @@ const result1 = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCamp
 
 export const HexagonCampaignClientExperiment = apexExperiment;
 export const useIsHexagonCampaignEnabled = tmp3;
-export const getIsHexagonCampaignEnabled = function getIsHexagonCampaignEnabled(location) {
+export function getIsHexagonCampaignEnabled(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).enabled;
-};
+}
 export const useIsHexagonCampaignQuestHomeRedirectEnabled = tmp4;
-export const useIsHexagonCampaignQuestHomeHeaderEnabled = function useIsHexagonCampaignQuestHomeHeaderEnabled(HexagonCampaignQuestHomeHeader) {
+export function useIsHexagonCampaignQuestHomeHeaderEnabled(HexagonCampaignQuestHomeHeader) {
   let tmp = closure_3(HexagonCampaignQuestHomeHeader);
   if (tmp) {
     const obj = HexagonCampaignUtils;
     tmp = !obj.isHexagonCampaignTakeoverOver();
   }
   return tmp;
-};
+}

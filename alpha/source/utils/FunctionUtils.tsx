@@ -1,15 +1,15 @@
-// Module ID: 2038
-// Function ID: 2039
+// Module ID: 2039
+// Function ID: 2040
 // Name: FunctionUtils
 // Dependencies: [2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 2038 (FunctionUtils)
+// Module 2039 (FunctionUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/FunctionUtils.tsx");
 
-export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, arg1) {
+export function areArraysShallowlyEqual(arg0, arg1) {
   if (arg0 === arg1) {
     return true;
   } else {
@@ -29,7 +29,7 @@ export const areArraysShallowlyEqual = function areArraysShallowlyEqual(arg0, ar
     }
     return false;
   }
-};
+}
 export function cachedFunction(arg0) {
   let closure_0 = arg0;
   let items = null;
@@ -69,7 +69,7 @@ export function cachedFunction(arg0) {
     return closure_2;
   };
 }
-export const clearObject = function clearObject(obj) {
+export function clearObject(obj) {
   for (const key10003 in obj) {
     let tmp2 = key10003;
     if (!obj.hasOwnProperty(key10003)) {
@@ -80,8 +80,8 @@ export const clearObject = function clearObject(obj) {
     }
     continue;
   }
-};
-export const isPlainObjectEmpty = function isPlainObjectEmpty(arg0) {
+}
+export function isPlainObjectEmpty(arg0) {
   const keys = Object.keys();
   if (keys !== undefined) {
     if (keys[tmp] !== undefined) {
@@ -89,4 +89,4 @@ export const isPlainObjectEmpty = function isPlainObjectEmpty(arg0) {
     }
   }
   return true;
-};
+}

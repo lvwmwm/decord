@@ -1,15 +1,15 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11449
+// Function ID: 11450
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7240, 5752, 1084, 1382, 1402, 11242, 2]
+// Dependencies: [7264, 5754, 1084, 1382, 1402, 11296, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11395 (getRemoteJoinableActivityPlatform)
+// Module 11449 (getRemoteJoinableActivityPlatform)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 11242 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7240 */;
-import SessionsStore from "SessionsStore" /* 5752 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 11296 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7264 */;
+import SessionsStore from "SessionsStore" /* 5754 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let hasOwnProperty;
 ({ ActivityFlags: closure_4, ActivityGamePlatforms: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
 
-export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActivityPlatform(presenceActivity) {
+export function getRemoteJoinableActivityPlatform(presenceActivity) {
   if (null == presenceActivity) {
     return null;
   } else {
@@ -73,4 +73,4 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
     }
     return null;
   }
-};
+}

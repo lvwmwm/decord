@@ -12,7 +12,7 @@ import _mod745 from "module_745" /* 745 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const captureError = function captureError(error, prompt_execution, arg2) {
+export function captureError(error, prompt_execution, arg2) {
   let obj4;
   let obj5;
   try {
@@ -44,4 +44,4 @@ export const captureError = function captureError(error, prompt_execution, arg2)
     }
   } catch (err) {
   }
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12302
+// Function ID: 12303
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6808, 558, 576, 12249, 504, 1125, 3863, 2]
+// Dependencies: [5, 32, 19, 6831, 558, 576, 12303, 504, 1125, 3864, 2]
 
-// Module 12248 (useConjureLinkedApps)
+// Module 12302 (useConjureLinkedApps)
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
+import _modDef3864 from "module_3864" /* 3864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
                   });
                 });
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp19) {
               if (0 === c4) {
@@ -186,7 +186,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c3;
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
                 c3 = 0;
                 c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp18) {
               if (0 === c3) {
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
           if (name == null) {
             const intl = intl2.intl;
             const obj = { projectId: project_id };
-            name = intl.formatToPlainString(_modDef3863.HHCa93, obj);
+            name = intl.formatToPlainString(_modDef3864.HHCa93, obj);
           }
           items[1] = name;
           return items;
@@ -308,7 +308,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
           if (name == null) {
             const intl = intl2.intl;
             const obj = { projectId: project_id };
-            name = intl.formatToPlainString(_modDef3863.HHCa93, obj);
+            name = intl.formatToPlainString(_modDef3864.HHCa93, obj);
           }
           items[1] = name;
           return items;
@@ -341,7 +341,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c2;
@@ -385,7 +385,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp14) {
             if (0 === c2) {
@@ -440,7 +440,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c2;
@@ -484,7 +484,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp14) {
             if (0 === c2) {
@@ -550,7 +550,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -602,7 +602,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
             });
           });
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp19) {
         if (0 === c4) {
@@ -634,7 +634,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -677,7 +677,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLi
           c3 = 0;
           c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp18) {
         if (0 === c3) {

@@ -1,26 +1,26 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 14978
+// Function ID: 14979
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1084, 1095, 21, 558, 576, 9830, 9465, 14111, 1381, 2062, 5246, 8702, 14744, 10610, 10597, 2]
+// Dependencies: [19, 1084, 1095, 21, 558, 576, 9862, 9496, 14344, 1381, 2063, 5247, 8705, 14979, 10643, 10630, 2]
 
-// Module 14743 (HeadlessCollectiblesPurchaseFlow)
+// Module 14978 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2062 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9465 */;
-import ACOMExperiments from "ACOMExperiments" /* 9830 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 14111 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 14744 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2063 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9496 */;
+import ACOMExperiments from "ACOMExperiments" /* 9862 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 14344 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 14979 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const NativeCheckoutStoreProviderDefault = tmp3(10597);
+const NativeCheckoutStoreProviderDefault = tmp3(10630);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
@@ -42,7 +42,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeadlessCollecti
   } else {
     first = cResult[0];
   }
-  const OTPACOMOrderExperiment = tmp(9830).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp(9862).OTPACOMOrderExperiment;
   const enabled = OTPACOMOrderExperiment.useConfig(first).enabled;
   const tmpResult = useProductPurchaseState;
   const isPurchased = tmpResult.useProductPurchaseState(product).isPurchased;
@@ -175,7 +175,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeadlessCollecti
     }
     tmp7 = tmp8;
   }
-  const NativePaymentContextProvider = tmp(10610).NativePaymentContextProvider;
+  const NativePaymentContextProvider = tmp(10643).NativePaymentContextProvider;
   const items = [product.skuId];
   const obj5 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
   NativeCheckoutStoreProviderDefault;

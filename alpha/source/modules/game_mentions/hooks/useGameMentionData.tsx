@@ -1,14 +1,14 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8637
+// Function ID: 8638
 // Name: useGameMentionData
-// Dependencies: [2019, 8616, 1389, 8618, 558, 576, 504, 568, 2]
+// Dependencies: [2020, 8638, 1389, 8640, 558, 576, 504, 568, 2]
 // Exports: getGameMentionData
 
-// Module 8615 (useGameMentionData)
+// Module 8637 (useGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 8618 */;
-import GameStore from "GameStore" /* 2019 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8616 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 8640 */;
+import GameStore from "GameStore" /* 2020 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8638 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
 });
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
 
-export const getGameMentionData = function getGameMentionData(gameId) {
+export function getGameMentionData(gameId) {
   let icon;
   let media;
   let tmp4;
@@ -144,5 +144,5 @@ export const getGameMentionData = function getGameMentionData(gameId) {
     tmp4 = obj;
   }
   return tmp4;
-};
+}
 export const useGameMentionData = tmp2;

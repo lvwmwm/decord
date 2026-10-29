@@ -1,22 +1,22 @@
-// Module ID: 17915
-// Function ID: 17916
+// Module ID: 18153
+// Function ID: 18154
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 4916, 7362, 8333, 4863, 4922, 21, 5004, 587, 558, 576, 5294, 573, 1402, 6944, 1111, 5270, 1125, 1199, 11604, 2]
+// Dependencies: [19, 17, 4917, 7385, 8355, 4864, 4923, 21, 5005, 587, 558, 576, 5295, 573, 1402, 6968, 1111, 5271, 1125, 1199, 11658, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 17915 (NewMemberActionsProgress)
+// Module 18153 (NewMemberActionsProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7362 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8333 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7385 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8355 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Progre
 });
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/NewMemberActionsProgress.tsx");
 
-export const NewMemberActionsProgress = function NewMemberActionsProgress(guildId) {
+export function NewMemberActionsProgress(guildId) {
   let intl;
   let items5;
   let items6;
@@ -200,4 +200,4 @@ export const NewMemberActionsProgress = function NewMemberActionsProgress(guildI
     }
   }
   return tmp8;
-};
+}

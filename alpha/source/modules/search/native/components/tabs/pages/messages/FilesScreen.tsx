@@ -1,14 +1,14 @@
-// Module ID: 18444
-// Function ID: 18445
+// Module ID: 18678
+// Function ID: 18679
 // Name: FilesScreen
-// Dependencies: [19, 9748, 21, 558, 576, 18430, 18437, 18445, 18365, 18439, 18438, 13456, 18443, 18372, 2]
+// Dependencies: [19, 9780, 21, 558, 576, 18664, 18671, 18679, 18599, 18673, 18672, 13689, 18677, 18606, 2]
 
-// Module 18444 (FilesScreen)
+// Module 18678 (FilesScreen)
 import Fragment from "Fragment" /* 21 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13456 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 18439 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13689 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 18673 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

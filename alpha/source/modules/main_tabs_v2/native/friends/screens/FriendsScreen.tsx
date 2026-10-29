@@ -1,25 +1,25 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18720
+// Function ID: 18721
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7766, 4946, 21, 5004, 587, 558, 576, 1502, 7289, 7314, 1630, 18487, 504, 1893, 8705, 18488, 18491, 1125, 18167, 5716, 6939, 5280, 12982, 16728, 10652, 12913, 2]
+// Dependencies: [19, 17, 7788, 4947, 21, 5005, 587, 558, 576, 1503, 7313, 7338, 1631, 18721, 504, 1894, 8708, 18722, 18725, 1125, 18401, 5718, 6963, 5281, 13203, 16966, 10685, 13134, 2]
 
-// Module 18486 (FriendsScreen)
+// Module 18720 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import SendMessageIcon from "SendMessageIcon" /* 5716 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import NoResultsDefault from "NoResults" /* 12982 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16728 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18167 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import SendMessageIcon from "SendMessageIcon" /* 5718 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import NoResultsDefault from "NoResults" /* 13203 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16966 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18401 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7766 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

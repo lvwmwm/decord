@@ -1,9 +1,9 @@
-// Module ID: 4835
-// Function ID: 4836
+// Module ID: 4836
+// Function ID: 4837
 // Name: StickersConstants
 // Dependencies: [2]
 
-// Module 4835 (StickersConstants)
+// Module 4836 (StickersConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stickers/StickersConstants.tsx");

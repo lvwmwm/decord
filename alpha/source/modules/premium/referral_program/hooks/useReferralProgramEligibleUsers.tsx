@@ -1,14 +1,14 @@
-// Module ID: 15011
-// Function ID: 15012
+// Module ID: 15246
+// Function ID: 15247
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 7597, 504, 38, 7598, 8707, 2]
+// Dependencies: [5, 32, 19, 7620, 504, 38, 7621, 8710, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 15011 (useReferralProgramEligibleUsers)
+// Module 15246 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7597 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7620 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ let c10, c7, c9, map, set, users;
 let react = react_mod;
 let result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramEligibleUsers.tsx");
 
-export const useReferralProgramEligibleUsers = function useReferralProgramEligibleUsers(searchQuery) {
+export function useReferralProgramEligibleUsers(searchQuery) {
   let _undefined;
   let c5;
   let c6;
@@ -38,7 +38,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       }
     });
@@ -323,4 +323,4 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
     resendUsers: first3
   };
   return obj4;
-};
+}

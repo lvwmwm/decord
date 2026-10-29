@@ -1,14 +1,14 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 11834
+// Function ID: 11835
 // Name: RouteManager
-// Dependencies: [6531, 11781, 1084, 1111, 11782, 12631, 2]
+// Dependencies: [6555, 11835, 1084, 1111, 11836, 12848, 2]
 
-// Module 11780 (RouteManager)
+// Module 11834 (RouteManager)
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 11782 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6531 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 11781 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 11836 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 11835 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {
@@ -107,7 +107,7 @@ class RouteManager {
         let pathname = obj2.getHistory().location.pathname;
         let tmp7Result = tmp7(location, REPLACE);
         if (null != tmp7Result) {
-          let tmp9Result = tmp9(12631);
+          let tmp9Result = tmp9(12848);
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
           let addBreadcrumbResult = tmp9Result.addBreadcrumb(obj3);

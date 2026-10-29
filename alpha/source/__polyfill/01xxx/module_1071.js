@@ -8,15 +8,17 @@ import react_native from "react-native" /* 17 */;
 import RN_GLOBAL_OBJ2 from "RN_GLOBAL_OBJ" /* 692 */;
 import ReactNativeLibraries from "ReactNativeLibraries" /* 874 */;
 
+let version;
+
 let tmp;
 const _mod879 = tmp(879);
 const Alert = react_native.Alert;
 
-export const isModalSupported = function isModalSupported() {
+export function isModalSupported() {
   let major;
   let minor;
   const ReactNativeVersion = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion;
-  let version;
+  version = undefined;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
       version = ReactNativeVersion.version;
@@ -29,12 +31,12 @@ export const isModalSupported = function isModalSupported() {
   const tmpResult = _mod879;
   const isFabricEnabledResult = tmpResult.isFabricEnabled() && 0 === major && minor && minor < 71;
   return !isFabricEnabledResult;
-};
-export const isNativeDriverSupportedForColorAnimations = function isNativeDriverSupportedForColorAnimations() {
+}
+export function isNativeDriverSupportedForColorAnimations() {
   let major;
   let minor;
   const ReactNativeVersion = ReactNativeLibraries.ReactNativeLibraries.ReactNativeVersion;
-  let version;
+  version = undefined;
   if (null !== ReactNativeVersion) {
     if (undefined !== ReactNativeVersion) {
       version = ReactNativeVersion.version;
@@ -53,7 +55,7 @@ export const isNativeDriverSupportedForColorAnimations = function isNativeDriver
     flag = false;
   }
   return flag;
-};
+}
 export const isValidEmail = (arg0) => {
   const obj = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return obj.test(arg0);

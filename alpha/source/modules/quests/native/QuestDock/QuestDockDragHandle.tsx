@@ -1,17 +1,17 @@
-// Module ID: 16796
-// Function ID: 16797
+// Module ID: 17034
+// Function ID: 17035
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6745, 16709, 21, 5004, 558, 576, 16710, 5085, 5283, 1125, 5618, 7204, 16708, 2]
+// Dependencies: [19, 17, 6768, 16947, 21, 5005, 558, 576, 16948, 5086, 5284, 1125, 5619, 7228, 16946, 2]
 
-// Module 16796 (QuestDockDragHandle)
+// Module 17034 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
-import spring from "spring" /* 5283 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7204 */;
-import QuestDockConstants from "QuestDockConstants" /* 16709 */;
+import spring from "spring" /* 5284 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7228 */;
+import QuestDockConstants from "QuestDockConstants" /* 16947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,9 +50,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   isExpanded = isExpanded.isExpanded;
   const variant = isExpanded.variant;
   const tmp4 = closure_8();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16710).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16948).QuestDockGestureContext).activeQuestDockMode;
   importDefault = tmp5;
-  let obj2 = activeQuestDockMode(5085);
+  let obj2 = activeQuestDockMode(5086);
   const fn = function c() {
     let items;
     let num = 0;
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__workletHash = 8792527248223;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const obj4 = activeQuestDockMode(5085);
+  const obj4 = activeQuestDockMode(5086);
   class M {
     constructor() {
       spring;
@@ -88,10 +88,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       num = 1;
     }
   }
-  M.__closure = { withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  M.__closure = { withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   M.__workletHash = 6896281369829;
   M.__initData = __initData2;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle1 = obj4.useAnimatedStyle(M);
   const fn2 = function k() {
     spring;
@@ -106,11 +106,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     num = 0;
   };
-  const obj6 = activeQuestDockMode(5085);
-  fn2.__closure = { withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  const obj6 = activeQuestDockMode(5086);
+  fn2.__closure = { withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn2.__workletHash = 7780416831295;
   fn2.__initData = __initData3;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj6.useAnimatedStyle(fn2);
   if (cResult[0] === animatedStyle2) {
     let tmp9;
@@ -138,7 +138,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[5] !== tmp10) {
       const obj8 = { variant: "overlay", accessibilityLabel: tmp10 };
-      const tmp14 = closure_6(tmp(5618).ActionSheetHeaderBar, obj8);
+      const tmp14 = closure_6(tmp(5619).ActionSheetHeaderBar, obj8);
       cResult[5] = tmp10;
       cResult[6] = tmp14;
       tmp12 = tmp14;
@@ -159,7 +159,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp23 = closure_6(tmp(5618).ActionSheetHeaderBar, { variant: "default" });
+          const tmp23 = closure_6(tmp(5619).ActionSheetHeaderBar, { variant: "default" });
           cResult[13] = tmp23;
           tmp21 = tmp23;
         } else {
@@ -195,7 +195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp33 = tmp36;
           }
         }
-        const obj11 = { style: animatedStyle, layout: tmp(16708).dimensionsLayoutTransition, children: items };
+        const obj11 = { style: animatedStyle, layout: tmp(16946).dimensionsLayoutTransition, children: items };
         items = [tmp15, tmp24];
         const tmp31 = ReanimatedNativeViewDefault;
         const tmp32 = closure_7(tmp31, obj11);
@@ -240,9 +240,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_8();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16710).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16948).QuestDockGestureContext).activeQuestDockMode;
   importDefault = tmp4;
-  let obj = activeQuestDockMode(5085);
+  let obj = activeQuestDockMode(5086);
   const fn = function c() {
     let items;
     let num = 0;
@@ -275,11 +275,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     num = 1;
   };
-  const obj3 = activeQuestDockMode(5085);
-  fn2.__closure = { withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  const obj3 = activeQuestDockMode(5086);
+  fn2.__closure = { withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn2.__workletHash = 6699454768642;
   fn2.__initData = __initData5;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle1 = obj3.useAnimatedStyle(fn2);
   const fn3 = function _() {
     spring;
@@ -294,20 +294,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     num = 0;
   };
-  const obj5 = activeQuestDockMode(5085);
-  fn3.__closure = { withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  const obj5 = activeQuestDockMode(5086);
+  fn3.__closure = { withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn3.__workletHash = 2024198657306;
   fn3.__initData = __initData6;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj5.useAnimatedStyle(fn3);
   const obj7 = { style: tmp.dragHandleWrapper, children: tmp11(tmp12, obj8) };
-  obj8 = { style: animatedStyle, layout: activeQuestDockMode(16708).dimensionsLayoutTransition, children: items1 };
+  obj8 = { style: animatedStyle, layout: activeQuestDockMode(16946).dimensionsLayoutTransition, children: items1 };
   const tmp10 = ReanimatedNativeViewDefault;
   tmp12 = ReanimatedNativeViewDefault;
   const obj9 = { style: items, children: closure_6(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
   items = [tmp.dragHandleOverlay, animatedStyle2];
   const tmp13 = ReanimatedNativeViewDefault;
-  ActionSheetHeaderBar = activeQuestDockMode(5618).ActionSheetHeaderBar;
+  ActionSheetHeaderBar = activeQuestDockMode(5619).ActionSheetHeaderBar;
   const intl = activeQuestDockMode(1125).intl;
   const string = intl.string;
   const t = activeQuestDockMode(1125).t;
@@ -318,7 +318,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     stringResult = string(t.Yplnt6);
   }
   items1 = [closure_6(tmp13, obj9), ];
-  const obj10 = { style: items2, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_6(tmp2(5618).ActionSheetHeaderBar, { variant: "default" }) };
+  const obj10 = { style: items2, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_6(tmp2(5619).ActionSheetHeaderBar, { variant: "default" }) };
   items2 = [tmp.dragHandleOverlay, animatedStyle1];
   const tmp9Result = ReanimatedNativeViewDefault;
   items1[1] = closure_6(tmp9Result, obj10);

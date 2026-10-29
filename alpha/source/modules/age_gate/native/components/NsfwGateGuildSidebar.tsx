@@ -1,21 +1,21 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 18240
+// Function ID: 18241
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 4916, 4878, 1389, 7351, 1084, 21, 5004, 587, 558, 576, 504, 1264, 7352, 17838, 6686, 1125, 2064, 1199, 2]
+// Dependencies: [19, 17, 4917, 4879, 1389, 7375, 1084, 21, 5005, 587, 558, 576, 504, 1264, 7376, 18076, 6710, 1125, 2065, 1199, 2]
 
-// Module 18006 (NsfwGateGuildSidebar)
+// Module 18240 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Constants2 from "Constants" /* 7351 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7352 */;
+import Constants2 from "Constants" /* 7375 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7376 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         if (cResult[11] !== stateFromStores) {
           let obj2 = { guild: stateFromStores, showExtraButtons: false };
-          const tmp21 = closure_12(stateFromStores(17838), obj2);
+          const tmp21 = closure_12(stateFromStores(18076), obj2);
           cResult[11] = stateFromStores;
           cResult[12] = tmp21;
           tmp18 = tmp21;
@@ -108,8 +108,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp26 = stateFromStores(6686)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
-          const tmp27 = stateFromStores(6686)(constants3.PRIMARY_NORMAL, undefined, 14);
+          const tmp26 = stateFromStores(6710)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
+          const tmp27 = stateFromStores(6710)(constants3.PRIMARY_NORMAL, undefined, 14);
           cResult[13] = tmp26;
           cResult[14] = tmp27;
           tmp23 = tmp27;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
           const format = intl2.format;
           const obj3 = { helpURL: obj5.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
           const NQuXf0 = tmp(1125).t.NQuXf0;
-          obj5 = stateFromStores(2064);
+          obj5 = stateFromStores(2065);
           const formatResult = format(NQuXf0, obj3);
           cResult[15] = stringResult;
           cResult[16] = formatResult;

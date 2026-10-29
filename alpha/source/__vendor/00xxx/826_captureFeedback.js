@@ -9,7 +9,7 @@ import _mod724 from "module_724" /* 724 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const captureFeedback = function captureFeedback(contact_email) {
+export function captureFeedback(contact_email) {
   let obj4;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -34,4 +34,4 @@ export const captureFeedback = function captureFeedback(contact_email) {
     client.emit("beforeSendFeedback", obj2, obj);
   }
   return currentScope.captureEvent(obj2, obj);
-};
+}

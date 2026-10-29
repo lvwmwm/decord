@@ -1,23 +1,23 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 8469
+// Function ID: 8470
 // Name: ChannelLinkedToLobbySystemMessage
-// Dependencies: [2042, 1084, 8344, 8351, 8353, 2064, 1125, 8355, 2]
+// Dependencies: [2043, 1084, 8366, 8373, 8375, 2065, 1125, 8377, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8447 (ChannelLinkedToLobbySystemMessage)
+// Module 8469 (ChannelLinkedToLobbySystemMessage)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8344 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8366 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelLinkedToLobbySystemMessage.tsx");
 
-export const createChannelLinkedToLobbySystemMessage = function createChannelLinkedToLobbySystemMessage(message) {
+export function createChannelLinkedToLobbySystemMessage(message) {
   let intl;
   let obj3;
   let obj4;
@@ -46,7 +46,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     tmpResult = HelpdeskUtilsDefault;
     const obj6 = { content: intl.formatToParts(intl2.t.gZfhOw, obj2) };
     intl = intl2.intl;
-    const merged = Object.assign(tmp(8355)(message));
+    const merged = Object.assign(tmp(8377)(message));
     return obj6;
   }
-};
+}

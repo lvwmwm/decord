@@ -1,18 +1,18 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12985
+// Function ID: 12986
 // Name: joinFrameActivity
-// Dependencies: [5, 2042, 4856, 5666, 6811, 1084, 2023, 584, 11439, 11397, 5662, 11440, 10820, 1125, 11458, 12769, 11252, 10815, 6410, 12770, 9287, 7448, 11386, 2]
+// Dependencies: [5, 2043, 4857, 5668, 6834, 1084, 2024, 584, 11493, 11451, 5664, 11494, 10896, 1125, 11512, 12986, 11306, 10891, 6434, 12987, 9291, 7471, 11440, 2]
 // Exports: default
 
-// Module 12768 (joinFrameActivity)
-import Constants2 from "Constants" /* 2023 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11386 */;
+// Module 12985 (joinFrameActivity)
+import Constants2 from "Constants" /* 2024 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj = function _joinFrameActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c8;
@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
               break;
             }
@@ -476,7 +476,7 @@ obj = function _getVoiceChannelAppChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -566,7 +566,7 @@ obj = function _getActivityChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -593,7 +593,7 @@ obj = function _getActivityChannelId() {
         } else if (1 === c3) {
           c4 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

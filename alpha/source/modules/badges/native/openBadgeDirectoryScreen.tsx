@@ -1,22 +1,22 @@
-// Module ID: 11160
-// Function ID: 11161
+// Module ID: 11214
+// Function ID: 11215
 // Name: openBadgeDirectoryScreen
-// Dependencies: [1381, 7074, 6707, 11161, 1999, 2]
+// Dependencies: [1381, 7098, 6731, 11215, 2000, 2]
 // Exports: closeBadgeDirectoryScreen, isBadgeDirectoryIOSPageSheet, openBadgeDirectoryScreen
 
-// Module 11160 (openBadgeDirectoryScreen)
+// Module 11214 (openBadgeDirectoryScreen)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useIsWindowLarge = tmp(7074);
+const useIsWindowLarge = tmp(7098);
 let c3 = "badge-directory";
 const result = size.fileFinishedImporting("modules/badges/native/openBadgeDirectoryScreen.tsx");
 
 export const BADGE_DIRECTORY_MODAL_KEY = "badge-directory";
-export const isBadgeDirectoryIOSPageSheet = function isBadgeDirectoryIOSPageSheet() {
+export function isBadgeDirectoryIOSPageSheet() {
   const obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
@@ -24,8 +24,8 @@ export const isBadgeDirectoryIOSPageSheet = function isBadgeDirectoryIOSPageShee
     isIOSResult = !tmpResult.getIsWindowLarge();
   }
   return isIOSResult;
-};
-export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) {
+}
+export function openBadgeDirectoryScreen(arg0) {
   let obj4;
   let obj = arg0;
   if (arg0 === undefined) {
@@ -35,7 +35,7 @@ export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) 
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   ModalActionCreatorsDefault;
   const obj2 = { targetUserId };
-  const tmp4 = asyncRequire(11161, dependencyMap.paths);
+  const tmp4 = asyncRequire(11215, dependencyMap.paths);
   const obj3 = PlatformUtils;
   const tmp5 = c3;
   if (!obj3.isIOS()) {
@@ -44,8 +44,8 @@ export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) 
     useIsWindowLarge;
   }
   pushLazy(tmp4, obj2, tmp5, obj4);
-};
-export const closeBadgeDirectoryScreen = function closeBadgeDirectoryScreen() {
+}
+export function closeBadgeDirectoryScreen() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(c3);
-};
+}

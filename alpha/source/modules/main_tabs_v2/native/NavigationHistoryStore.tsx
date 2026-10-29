@@ -1,16 +1,16 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6861
+// Function ID: 6862
 // Name: NavigationHistoryStore
-// Dependencies: [4856, 504, 584, 5187, 5186, 5189, 2]
+// Dependencies: [4857, 504, 584, 5188, 5187, 5190, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 6838 (NavigationHistoryStore)
+// Module 6861 (NavigationHistoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import useChatLayout from "useChatLayout" /* 5189 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import useChatLayout from "useChatLayout" /* 5190 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 function getIdFromHistoryItem(str) {
@@ -119,8 +119,8 @@ export default navigationHistoryStore;
 export const CHANNEL_PREFIX = "channel-";
 export const GUILD_PREFIX = "guild-";
 export { getIdFromHistoryItem };
-export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const f97730 = (item) => item !== combined;
+export function handleHistoryStoreNavigationChange() {
+  const f98745 = (item) => item !== combined;
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
@@ -144,7 +144,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
                 const _HermesInternal = HermesInternal;
                 const combined = "" + c3 + channelId;
                 if (map.has(combined)) {
-                  history = history.filter(f97730);
+                  history = history.filter(f98745);
                 }
                 if (null != history[history.length - 1]) {
                   const _Date3 = Date;
@@ -167,7 +167,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               const _HermesInternal3 = HermesInternal;
               const combined1 = "" + c4 + guildId;
               if (map.has(combined1)) {
-                history = history.filter(f97730);
+                history = history.filter(f98745);
               }
               if (null != history[history.length - 1]) {
                 const _Date2 = Date;
@@ -185,7 +185,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
           const _HermesInternal2 = HermesInternal;
           const combined2 = "" + c3 + coerceChannelRouteResult.params.channelId;
           if (map.has(combined2)) {
-            history = history.filter(f97730);
+            history = history.filter(f98745);
           }
           if (null != history[history.length - 1]) {
             const _Date = Date;
@@ -201,7 +201,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
       }
     }
   }
-};
+}
 export function getNavigationHistory() {
   return history;
 }

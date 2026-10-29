@@ -1,10 +1,10 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11145
+// Function ID: 11146
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [7369, 558, 576, 504, 2]
+// Dependencies: [7392, 558, 576, 504, 2]
 
-// Module 11091 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7369 */;
+// Module 11145 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

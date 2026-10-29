@@ -1,13 +1,13 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8829
+// Function ID: 8830
 // Name: MediaModalWebVideoFile
-// Dependencies: [32, 19, 21, 8825, 558, 576, 6695, 8790, 8792, 2]
+// Dependencies: [32, 19, 21, 8828, 558, 576, 6719, 8793, 8795, 2]
 // Exports: createWebFileVideoControls
 
-// Module 8826 (MediaModalWebVideoFile)
+// Module 8829 (MediaModalWebVideoFile)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8790 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8825 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8793 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 8828 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -478,7 +478,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalWebVideoFile.tsx");
 
 export default memoResult;
-export const createWebFileVideoControls = function createWebFileVideoControls() {
+export function createWebFileVideoControls() {
   const ref = react.createRef();
   react = 0;
   let c5 = 0;
@@ -549,4 +549,4 @@ export const createWebFileVideoControls = function createWebFileVideoControls() 
       }
     }
   };
-};
+}

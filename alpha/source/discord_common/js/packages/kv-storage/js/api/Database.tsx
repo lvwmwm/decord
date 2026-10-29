@@ -1,13 +1,13 @@
-// Module ID: 4890
-// Function ID: 4891
+// Module ID: 4891
+// Function ID: 4892
 // Name: Database
-// Dependencies: [5, 4891, 4889, 4892, 10, 2]
+// Dependencies: [5, 4892, 4890, 4893, 10, 2]
 
-// Module 4890 (Database)
+// Module 4891 (Database)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import TableId from "TableId" /* 4889 */;
-import Host2 from "Host" /* 4891 */;
-import Runtime2 from "Runtime" /* 4892 */;
+import TableId from "TableId" /* 4890 */;
+import Host2 from "Host" /* 4892 */;
+import Runtime2 from "Runtime" /* 4893 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ class Database {
       obj.name = openSyncUnsafeResult.name;
       obj.lastState = TableId.DatabaseState.Open;
       obj.handle = openSyncUnsafeResult.handle;
-      const Runtime = tmp2(4892).Runtime;
+      const Runtime = tmp2(4893).Runtime;
       obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (obj.handle === arg0) {
           tmp.lastState = lastState;
@@ -91,7 +91,7 @@ class Database {
   }
   execute(table, arg1) {
     let closure_0;
-    const f144685 = async (arg0) => {
+    const f146233 = async (arg0) => {
       raw = raw.raw;
       const execute = raw.execute;
       const obj = { handle: 0 };
@@ -123,7 +123,7 @@ class Database {
         if (type == null) {
           type = table.type;
         }
-        executeAsyncResult = executeAsync(type, f144685);
+        executeAsyncResult = executeAsync(type, f146233);
       } else {
         let type2 = type;
         const timeAsync = require("AppStartPerformance").timeAsync;
@@ -142,7 +142,7 @@ class Database {
           if (closure_0 == null) {
             type = table.type;
           }
-          return executeAsync(type, f144685);
+          return executeAsync(type, f146233);
         }
         executeAsyncResult = timeAsync("\u{1F4BE}", "" + type2 + " " + str, callback);
       }
@@ -160,20 +160,20 @@ class Database {
       const error = new Error("database is no longer open (database: " + tmp);
       throw error;
     } else {
-      let str;
+      let str2;
       if ("key" in table) {
-        str = table.key[0];
+        str2 = table.key[0];
       } else {
-        str = table.table;
+        str2 = table.table;
       }
       const time = AppStartPerformanceDefault.time;
       const type = table.type;
       AppStartPerformanceDefault;
-      if (str == null) {
-        str = "";
+      if (str2 == null) {
+        str2 = "";
       }
       const _HermesInternal = HermesInternal;
-      return time("\u{1F4BE}", "SYNC: " + type + " " + str, () => {
+      return time("\u{1F4BE}", "SYNC: " + type + " " + str2, () => {
         const raw = self.raw;
         const execute = raw.execute;
         const obj = { handle: 0 };
@@ -215,7 +215,7 @@ class Database {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {

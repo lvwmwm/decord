@@ -1,27 +1,27 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18699
+// Function ID: 18700
 // Name: SearchAutocompleteStore
-// Dependencies: [4856, 4916, 4878, 4907, 5059, 1389, 13466, 1084, 6861, 13463, 9103, 5058, 5840, 6865, 6743, 13467, 13464, 504, 584, 2]
+// Dependencies: [4857, 4917, 4879, 4908, 5060, 1389, 13699, 1084, 6884, 13696, 9106, 5059, 5842, 6888, 6766, 13700, 13697, 504, 584, 2]
 
-// Module 18465 (SearchAutocompleteStore)
+// Module 18699 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import isEqualDefault from "isEqual" /* 5840 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6743 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6861 */;
-import GuildUtilsDefault from "GuildUtils" /* 6865 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9103 */;
-import SearchUtils from "SearchUtils" /* 13463 */;
-import SearchTokens from "SearchTokens" /* 13464 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13467 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import StreamerModeStore from "StreamerModeStore" /* 5059 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import isEqualDefault from "isEqual" /* 5842 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6766 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6884 */;
+import GuildUtilsDefault from "GuildUtils" /* 6888 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9106 */;
+import SearchUtils from "SearchUtils" /* 13696 */;
+import SearchTokens from "SearchTokens" /* 13697 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13700 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import StreamerModeStore from "StreamerModeStore" /* 5060 */;
 import UserStore from "UserStore" /* 1389 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13466 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 13699 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

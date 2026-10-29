@@ -1,15 +1,15 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15649
+// Function ID: 15650
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 5733, 3, 1294, 5696, 1381, 1104, 2]
+// Dependencies: [5, 5735, 3, 1294, 5698, 1381, 1104, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 15415 (MobileNativeUpdateUtils)
+// Module 15649 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Linking from "Linking" /* 5696 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5733 */;
+import Linking from "Linking" /* 5698 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5735 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -134,10 +134,10 @@ const logger = new LoggerDefault("MobileNativeUpdateUtils");
 const tmp2 = new LoggerDefault("MobileNativeUpdateUtils");
 const result = size.fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");
 
-export const checkForNewerBuild = function checkForNewerBuild() {
+export function checkForNewerBuild() {
   return obj(...arguments);
-};
-export const openBuildInstaller = function openBuildInstaller(newBuild) {
+}
+export function openBuildInstaller(newBuild) {
   openBuildInstallerUrl(newBuild.urls.install);
-};
+}
 export { openBuildInstallerUrl };

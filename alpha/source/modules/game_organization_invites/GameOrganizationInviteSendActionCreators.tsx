@@ -1,11 +1,11 @@
-// Module ID: 11365
-// Function ID: 11366
+// Module ID: 11419
+// Function ID: 11420
 // Name: GameOrganizationInviteSendActionCreators
-// Dependencies: [5, 1084, 5009, 1294, 6410, 7448, 7601, 11366, 2]
+// Dependencies: [5, 1084, 5010, 1294, 6434, 7471, 7624, 11420, 2]
 
-// Module 11365 (GameOrganizationInviteSendActionCreators)
+// Module 11419 (GameOrganizationInviteSendActionCreators)
 import Constants from "Constants" /* 1084 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -104,7 +104,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -154,7 +154,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp8) {
           c3 = 3;

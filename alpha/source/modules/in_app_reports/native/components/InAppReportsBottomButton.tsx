@@ -1,20 +1,20 @@
-// Module ID: 14856
-// Function ID: 14857
+// Module ID: 15091
+// Function ID: 15092
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1095, 21, 5004, 587, 558, 576, 1125, 2671, 5270, 5280, 1199, 2]
+// Dependencies: [19, 17, 1095, 21, 5005, 587, 558, 576, 1125, 2672, 5271, 5281, 1199, 2]
 
-// Module 14856 (InAppReportsBottomButton)
+// Module 15091 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
 import intl8 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import _modDef2671 from "module_2671" /* 2671 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
+import _modDef2672 from "module_2672" /* 2672 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
         const _Symbol4 = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const intl6 = tmp(1125).intl;
-          const stringResult1 = intl6.string(_modDef2671.ZUyreS);
+          const stringResult1 = intl6.string(_modDef2672.ZUyreS);
           cResult[1] = stringResult1;
           tmp16 = stringResult1;
         } else {
@@ -123,7 +123,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
       const intl7 = tmp(1125).intl;
       const string = intl7.string;
       if (isModeratorReport) {
-        stringResult5 = string(_modDef2671.psKFdJ);
+        stringResult5 = string(_modDef2672.psKFdJ);
       } else {
         stringResult5 = string(tmp(1125).t.h6D8Vy);
       }
@@ -268,7 +268,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
           return onPress(button);
         }
       }
-      tmp27 = React3(tmp(5270).Text, obj7);
+      tmp27 = React3(tmp(5271).Text, obj7);
     }
     cResult[10] = tmp7;
     cResult[11] = tmp4.descriptionText;
@@ -298,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
       const intl2 = tmp15(1125).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        stringResult = string(_modDef2671.ZUyreS);
+        stringResult = string(_modDef2672.ZUyreS);
       } else {
         const stringResult1 = string(intl8.t["G+vU89"]);
         const intl3 = tmp15(1125).intl;
@@ -321,7 +321,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
     const intl4 = tmp15(1125).intl;
     const string2 = intl4.string;
     if (isModeratorReport) {
-      string2Result = string2(_modDef2671.psKFdJ);
+      string2Result = string2(_modDef2672.psKFdJ);
     } else {
       string2Result = string2(tmp15(1125).t.h6D8Vy);
     }
@@ -332,7 +332,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(5270).Text, obj4);
+      tmp12Result = tmp12(tmp15(5271).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {

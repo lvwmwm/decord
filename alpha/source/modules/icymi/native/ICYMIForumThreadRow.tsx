@@ -1,21 +1,21 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 18478
+// Function ID: 18479
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 4856, 4878, 21, 18179, 587, 558, 576, 504, 6866, 8878, 18218, 10726, 18182, 5640, 1125, 11, 5270, 5741, 18222, 6944, 18224, 18225, 2]
+// Dependencies: [19, 17, 4857, 4879, 21, 18413, 587, 558, 576, 504, 6889, 8881, 18452, 10759, 18416, 5641, 1125, 11, 5271, 5743, 18456, 6968, 18458, 18459, 2]
 
-// Module 18244 (ICYMIForumThreadRow)
+// Module 18478 (ICYMIForumThreadRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8878 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10726 */;
-import ICYMIShared from "ICYMIShared" /* 18218 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import ICYMIShared from "ICYMIShared" /* 18452 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18179 */;
+import createICYMIStyles from "createICYMIStyles" /* 18413 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 15035
+// Function ID: 15036
 // Name: EmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 4855, 8658, 2042, 502, 4856, 5736, 4946, 1389, 10038, 7844, 584, 8657, 8307, 8539, 1125, 5640, 14801, 2]
+// Dependencies: [32, 17, 4856, 8680, 2043, 502, 4857, 5738, 4947, 1389, 10070, 7867, 584, 8679, 8329, 8561, 1125, 5641, 15036, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 14800 (EmbeddedActivityInviteEmbed)
+// Module 15035 (EmbeddedActivityInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl6 from "intl" /* 1125 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import Constants from "Constants" /* 7844 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8657 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8658 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10038 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 14801 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import Constants from "Constants" /* 7867 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8679 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8680 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10070 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import InviteStore from "InviteStore" /* 5736 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import InviteStore from "InviteStore" /* 5738 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const InviteTargetTypes = Constants.InviteTargetTypes;
 let closure_16 = ["embedded_cover"];
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/EmbeddedActivityInviteEmbed.tsx");
 
-export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivityInviteEmbed(theme) {
+export function createEmbeddedActivityInviteEmbed(theme) {
   let intl5;
   let tmp25Result;
   let id;
@@ -171,4 +171,4 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
     }
     return null;
   }
-};
+}

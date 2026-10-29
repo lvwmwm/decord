@@ -1,12 +1,12 @@
-// Module ID: 18437
-// Function ID: 18438
+// Module ID: 18671
+// Function ID: 18672
 // Name: useSearchMessages
-// Dependencies: [6827, 13470, 558, 576, 13463, 504, 2]
+// Dependencies: [6850, 13703, 558, 576, 13696, 504, 2]
 
-// Module 18437 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 13463 */;
-import SearchMessageStore from "SearchMessageStore" /* 6827 */;
-import SearchQueryStore from "SearchQueryStore" /* 13470 */;
+// Module 18671 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 13696 */;
+import SearchMessageStore from "SearchMessageStore" /* 6850 */;
+import SearchQueryStore from "SearchQueryStore" /* 13703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16564
+// Function ID: 16565
 // Name: account/MFAUtils
-// Dependencies: [4878, 4936, 1389, 1084, 1125, 558, 576, 573, 7080, 2]
+// Dependencies: [4879, 4937, 1389, 1084, 1125, 558, 576, 573, 7104, 2]
 // Exports: getSMSBackupDisabledMessage
 
-// Module 16326 (account/MFAUtils)
+// Module 16564 (account/MFAUtils)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import MFAUtils from "MFAUtils" /* 7080 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import MFAUtils from "MFAUtils" /* 7104 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F153609 */ })) {
+          if (guildsArray.some(function() { /* body not rendered: F155242 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F153609 */ })) {
+          if (guildsArray.some(function() { /* body not rendered: F155242 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -277,7 +277,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemove
 });
 const result = size.fileFinishedImporting("modules/user_settings/account/MFAUtils.tsx");
 
-export const getSMSBackupDisabledMessage = function getSMSBackupDisabledMessage(stateFromStores) {
+export function getSMSBackupDisabledMessage(stateFromStores) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -325,7 +325,7 @@ export const getSMSBackupDisabledMessage = function getSMSBackupDisabledMessage(
     tmp = tmp3;
   }
   return tmp;
-};
+}
 export const useIsMFAEnabled = tmp3;
 export { MFAAvailability };
 export const useMFAAvailability = tmp4;

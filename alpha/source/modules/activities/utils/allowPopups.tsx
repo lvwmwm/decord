@@ -1,17 +1,17 @@
-// Module ID: 11546
-// Function ID: 11547
+// Module ID: 11600
+// Function ID: 11601
 // Name: allowPopups
-// Dependencies: [2023, 2]
+// Dependencies: [2024, 2]
 // Exports: allowPopups
 
-// Module 11546 (allowPopups)
-import Constants from "Constants" /* 2023 */;
+// Module 11600 (allowPopups)
+import Constants from "Constants" /* 2024 */;
 import size from "module_2" /* 2 */;
 
 const set = Constants.APPLICATIONS_WITH_ALLOWED_POPUPS;
 const result = size.fileFinishedImporting("modules/activities/utils/allowPopups.tsx");
 
-export const allowPopups = function allowPopups(application) {
+export function allowPopups(application) {
   let tmp = null != application;
   if (tmp) {
     let hasItem = set.has(application.id);
@@ -40,4 +40,4 @@ export const allowPopups = function allowPopups(application) {
     tmp = hasItem;
   }
   return tmp;
-};
+}

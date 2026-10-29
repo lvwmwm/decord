@@ -9,6 +9,6 @@ import react from "react" /* 19 */;
 
 const useRef = react.useRef;
 
-export const useVirtualViewLogging = function useVirtualViewLogging(arg0, nativeID) {
+export function useVirtualViewLogging(arg0, nativeID) {
   return useRef(null);
-};
+}

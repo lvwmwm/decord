@@ -1,17 +1,17 @@
-// Module ID: 14831
-// Function ID: 14832
+// Module ID: 15066
+// Function ID: 15067
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1084, 7933, 2046, 1125, 8309, 7990, 2]
+// Dependencies: [17, 1084, 7956, 2047, 1125, 8331, 8013, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 14831 (SafetyPolicyNoticeEmbed)
+// Module 15066 (SafetyPolicyNoticeEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7933 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7990 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8013 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -19,7 +19,7 @@ const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const SafetyHubPolicyNoticeKeys = SafetyHubConstants.SafetyHubPolicyNoticeKeys;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetyPolicyNoticeEmbed.tsx");
 
-export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEmbed(message) {
+export function createSafetyPolicyNoticeEmbed(message) {
   let diff;
   let eevFb6;
   let formatToPlainString;
@@ -73,9 +73,9 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             formatToPlainString = intl2.formatToPlainString;
             obj3 = { daysAgo: diff(obj4.unix(parsed), "days") };
             eevFb6 = intl5.t.eevFb6;
-            diff = _modDef2046().diff;
-            _modDef2046();
-            obj4 = _modDef2046;
+            diff = _modDef2047().diff;
+            _modDef2047();
+            obj4 = _modDef2047;
             intl3 = intl5.intl;
             intl4 = intl5.intl;
             return obj;
@@ -84,4 +84,4 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
       }
     }
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 14279
-// Function ID: 14280
+// Module ID: 14513
+// Function ID: 14514
 // Name: ScheduledMessageNotifications
-// Dependencies: [1084, 5699, 1125, 5727, 9729, 14280, 7314, 5944, 6707, 9731, 1999, 2]
+// Dependencies: [1084, 5701, 1125, 5729, 9761, 14514, 7338, 5946, 6731, 9763, 2000, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 14279 (ScheduledMessageNotifications)
+// Module 14513 (ScheduledMessageNotifications)
 import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import ClockIcon from "ClockIcon" /* 5727 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9729 */;
-import openScheduledMessagesLimitUpsellDefault from "openScheduledMessagesLimitUpsell" /* 14280 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import ClockIcon from "ClockIcon" /* 5729 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9761 */;
+import openScheduledMessagesLimitUpsellDefault from "openScheduledMessagesLimitUpsell" /* 14514 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 const AbortCodes = Constants.AbortCodes;
 const result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageNotifications.native.tsx");
 
-export const showScheduleMessageSuccessToast = function showScheduleMessageSuccessToast(scheduledTimestamp) {
+export function showScheduleMessageSuccessToast(scheduledTimestamp) {
   let date;
   let formatToPlainString;
   let obj2;
@@ -34,8 +34,8 @@ export const showScheduleMessageSuccessToast = function showScheduleMessageSucce
   prop = intl6.t["CvHu/j"];
   date = new Date(scheduledTimestamp);
   open("SCHEDULED_MESSAGE_CREATE_SUCCESS", obj);
-};
-export const showScheduleMessageFailureToast = function showScheduleMessageFailureToast(error) {
+}
+export function showScheduleMessageFailureToast(error) {
   let intl;
   let obj2;
   const obj = { text: intl.formatToPlainString(intl6.t.PsJmUe, obj2), variant: "critical" };
@@ -44,8 +44,8 @@ export const showScheduleMessageFailureToast = function showScheduleMessageFailu
   intl = intl6.intl;
   obj2 = { error };
   open("SCHEDULED_MESSAGE_CREATE_FAILURE", obj);
-};
-export const handleScheduleMessageError = function handleScheduleMessageError(body) {
+}
+export function handleScheduleMessageError(body) {
   let intl;
   let intl2;
   let intl3;
@@ -104,16 +104,16 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
     obj5 = { error: message };
     open("SCHEDULED_MESSAGE_CREATE_FAILURE", obj);
   }
-};
-export const showScheduledMessageEditSuccessToast = function showScheduledMessageEditSuccessToast() {
+}
+export function showScheduledMessageEditSuccessToast() {
   let intl;
   const obj = { text: intl.string(intl6.t.MXsMRk), icon: ClockIcon.ClockIcon, iconColor: "status-positive" };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl6.intl;
   open("SCHEDULED_MESSAGE_UPDATE_SUCCESS", obj);
-};
-export const showScheduledMessageEditFailureToast = function showScheduledMessageEditFailureToast(message) {
+}
+export function showScheduledMessageEditFailureToast(message) {
   let intl;
   let obj2;
   const obj = { text: intl.formatToPlainString(intl6.t.slM6In, obj2), variant: "critical" };
@@ -122,16 +122,16 @@ export const showScheduledMessageEditFailureToast = function showScheduledMessag
   intl = intl6.intl;
   obj2 = { error: message };
   open("SCHEDULED_MESSAGE_UPDATE_FAILURE", obj);
-};
-export const showScheduleMessageDeleteSuccessToast = function showScheduleMessageDeleteSuccessToast() {
+}
+export function showScheduleMessageDeleteSuccessToast() {
   let intl;
   const obj = { text: intl.string(intl6.t["JF/LWn"]), icon: ClockIcon.ClockIcon, iconColor: "status-positive" };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl6.intl;
   open("SCHEDULED_MESSAGE_DELETE_SUCCESS", obj);
-};
-export const showScheduleMessageDeleteFailureToast = function showScheduleMessageDeleteFailureToast(message) {
+}
+export function showScheduleMessageDeleteFailureToast(message) {
   let intl;
   let obj2;
   const obj = { text: intl.formatToPlainString(intl6.t.sUvyW3, obj2), variant: "critical" };
@@ -140,16 +140,16 @@ export const showScheduleMessageDeleteFailureToast = function showScheduleMessag
   intl = intl6.intl;
   obj2 = { error: message };
   open("SCHEDULED_MESSAGE_DELETE_FAILURE", obj);
-};
-export const showScheduleMessageSentNowSuccessToast = function showScheduleMessageSentNowSuccessToast() {
+}
+export function showScheduleMessageSentNowSuccessToast() {
   let intl;
   const obj = { text: intl.string(intl6.t["BHCm/d"]), icon: ClockIcon.ClockIcon, iconColor: "status-positive" };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl6.intl;
   open("SCHEDULED_MESSAGE_SEND_NOW_SUCCESS", obj);
-};
-export const showScheduleMessageSentNowFailureToast = function showScheduleMessageSentNowFailureToast(message) {
+}
+export function showScheduleMessageSentNowFailureToast(message) {
   let intl;
   let obj2;
   const obj = { text: intl.formatToPlainString(intl6.t["uy++C+"], obj2), variant: "critical" };
@@ -158,4 +158,4 @@ export const showScheduleMessageSentNowFailureToast = function showScheduleMessa
   intl = intl6.intl;
   obj2 = { error: message };
   open("SCHEDULED_MESSAGE_SEND_NOW_FAILURE", obj);
-};
+}

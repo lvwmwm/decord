@@ -1,16 +1,16 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14994
+// Function ID: 14995
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5004, 14754, 558, 576, 5270, 12, 7256, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 14989, 558, 576, 5271, 12, 7280, 2]
 
-// Module 14759 (EditCollectiblesPickerList)
+// Module 14994 (EditCollectiblesPickerList)
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14754 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);

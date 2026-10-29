@@ -171,17 +171,17 @@ let c3 = _moduleResult;
 const SyncPromise_export = _moduleResult;
 
 export { SyncPromise_export as SyncPromise };
-export const rejectedSyncPromise = function rejectedSyncPromise(arg0) {
+export function rejectedSyncPromise(arg0) {
   let closure_0 = arg0;
   const tmp = new c3((arg0, fn) => {
     fn(closure_0);
   });
   return tmp;
-};
-export const resolvedSyncPromise = function resolvedSyncPromise(arg0) {
+}
+export function resolvedSyncPromise(arg0) {
   let closure_0 = arg0;
   const tmp = new c3((fn) => {
     fn(closure_0);
   });
   return tmp;
-};
+}

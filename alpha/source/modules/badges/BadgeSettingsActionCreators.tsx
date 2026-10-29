@@ -1,10 +1,10 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16360
+// Function ID: 16361
 // Name: BadgeSettingsActionCreators
 // Dependencies: [5, 1084, 1294, 1254, 2]
 // Exports: updateBadgeSettings
 
-// Module 16123 (BadgeSettingsActionCreators)
+// Module 16360 (BadgeSettingsActionCreators)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _updateBadgeSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -50,7 +50,7 @@ let obj = function _updateBadgeSettings() {
               obj8 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -128,6 +128,6 @@ let obj = function _updateBadgeSettings() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/badges/BadgeSettingsActionCreators.tsx");
 
-export const updateBadgeSettings = function updateBadgeSettings() {
+export function updateBadgeSettings() {
   return obj(...arguments);
-};
+}

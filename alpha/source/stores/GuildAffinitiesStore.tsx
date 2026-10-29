@@ -1,13 +1,13 @@
-// Module ID: 8870
-// Function ID: 8871
+// Module ID: 8873
+// Function ID: 8874
 // Name: GuildAffinitiesStore
-// Dependencies: [4878, 8871, 504, 584, 2]
+// Dependencies: [4879, 8874, 504, 584, 2]
 
-// Module 8870 (GuildAffinitiesStore)
+// Module 8873 (GuildAffinitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 8871 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 8874 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

@@ -1,18 +1,18 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 18321
+// Function ID: 18322
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 5035, 4853, 558, 576, 1125, 4840, 5085, 16272, 1503, 15273, 5758, 504, 7532, 18088, 9874, 2]
+// Dependencies: [32, 19, 5036, 4854, 558, 576, 1125, 4841, 5086, 16510, 1504, 15508, 5760, 504, 7555, 18322, 9906, 2]
 
-// Module 18087 (useYouBarCoachmark)
+// Module 18321 (useYouBarCoachmark)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import Link from "Link" /* 1503 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 16272 */;
+import Link from "Link" /* 1504 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 16510 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ let obj1;
 
 let tmp;
 const get_initialized = tmp(504);
-const dismissible_content = tmp(4840);
-const useSelectedDismissibleContent = tmp(7532);
-const useCoachmark = tmp(9874);
-const usePrivateProfileCoachmarkProps = tmp(18088);
+const dismissible_content = tmp(4841);
+const useSelectedDismissibleContent = tmp(7555);
+const useCoachmark = tmp(9906);
+const usePrivateProfileCoachmarkProps = tmp(18322);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_6 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -47,7 +47,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwip
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(4840).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
+  const YOU_BAR_DM_SWIPE_COACHMARK = tmp(4841).DismissibleContent.YOU_BAR_DM_SWIPE_COACHMARK;
   if (cResult[2] !== markAsDismissed) {
     const fn = function c() {
       return markAsDismissed(ContentDismissActionType.USER_DISMISS);

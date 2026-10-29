@@ -1,8 +1,8 @@
-// Module ID: 6375
-// Function ID: 6376
+// Module ID: 6399
+// Function ID: 6400
 // Dependencies: [2]
 
-// Module 6375
+// Module 6399
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/aura/shock.png.js");

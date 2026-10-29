@@ -1,12 +1,12 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 11009
+// Function ID: 11010
 // Name: InappropriateConversationsDefaultOn
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn
 
-// Module 10974 (InappropriateConversationsDefaultOn)
+// Module 11009 (InappropriateConversationsDefaultOn)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsDefaultOn.tsx");
 
 export const InappropriateConversationsDefaultOn = tmp2;
-export const isEligibleForInappropriateConversationDefaultOn = function isEligibleForInappropriateConversationDefaultOn(location) {
+export function isEligibleForInappropriateConversationDefaultOn(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useIsEligibleForInappropriateConversationDefaultOn = tmp3;

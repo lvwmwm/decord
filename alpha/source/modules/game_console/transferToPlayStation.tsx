@@ -1,15 +1,15 @@
-// Module ID: 11696
-// Function ID: 11697
+// Module ID: 11750
+// Function ID: 11751
 // Name: transferToPlayStation
-// Dependencies: [5, 1084, 11697, 11693, 11700, 584, 1294, 11701, 2]
+// Dependencies: [5, 1084, 11751, 11747, 11754, 584, 1294, 11755, 2]
 // Exports: transferToPlayStation
 
-// Module 11696 (transferToPlayStation)
+// Module 11750 (transferToPlayStation)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11697 */;
-import ConsoleCommands from "ConsoleCommands" /* 11701 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11751 */;
+import ConsoleCommands from "ConsoleCommands" /* 11755 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[4])(id.id, closure_0);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           c6 = 3;
@@ -139,7 +139,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -209,6 +209,6 @@ obj = function _sendConnectVoiceCommand() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/game_console/transferToPlayStation.tsx");
 
-export const transferToPlayStation = function transferToPlayStation() {
+export function transferToPlayStation() {
   return obj(...arguments);
-};
+}

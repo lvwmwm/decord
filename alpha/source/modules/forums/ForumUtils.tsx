@@ -1,17 +1,17 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7464
+// Function ID: 7465
 // Name: ForumUtils
-// Dependencies: [4856, 4878, 6806, 7417, 4863, 1125, 4865, 2]
+// Dependencies: [4857, 4879, 6829, 7440, 4864, 1125, 4866, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 7441 (ForumUtils)
+// Module 7464 (ForumUtils)
 import intl2 from "intl" /* 1125 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4865 */;
-import ForumConstants from "ForumConstants" /* 7417 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4866 */;
+import ForumConstants from "ForumConstants" /* 7440 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
 import size from "module_2" /* 2 */;
 
 function getCreationDefaultFormatter() {
@@ -24,7 +24,7 @@ const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const result = size.fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
-export const getForumPostReadStates = function getForumPostReadStates(isArchivedThread, guild, items) {
+export function getForumPostReadStates(isArchivedThread, guild, items) {
   let isArchivedThreadResult1;
   let obj;
   let tmp = items;
@@ -42,8 +42,8 @@ export const getForumPostReadStates = function getForumPostReadStates(isArchived
   isArchivedThreadResult1 = isArchivedThread.isArchivedThread();
   !isArchivedThreadResult1 && obj.isForumPostUnread(isArchivedThread.id);
   return obj2;
-};
-export const getForumPostReadStatesById = function getForumPostReadStatesById(item) {
+}
+export function getForumPostReadStatesById(item) {
   let isArchivedThreadResult1;
   let obj;
   let obj2;
@@ -73,15 +73,15 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(it
     }
     return tmp11;
   }
-};
-export const getForumTimestampFormatter = function getForumTimestampFormatter(arg0, DURATION_AGO) {
+}
+export function getForumTimestampFormatter(arg0, DURATION_AGO) {
   if (DURATION_AGO === ForumTimestampFormats.POSTED_DURATION_AGO) {
     if (arg0 === ThreadSortOrder.ThreadSortOrder.CREATION_DATE) {
       return getCreationDefaultFormatter;
     }
   }
-};
-export const canDisplayPostUnreadMessageCount = function canDisplayPostUnreadMessageCount(id, items) {
+}
+export function canDisplayPostUnreadMessageCount(id, items) {
   let obj;
   [obj] = items;
   let hasTrackedUnreadResult = obj.hasTrackedUnread(id);
@@ -94,12 +94,12 @@ export const canDisplayPostUnreadMessageCount = function canDisplayPostUnreadMes
     hasTrackedUnreadResult = tmp3;
   }
   return hasTrackedUnreadResult;
-};
-export const isForumPostPinned = function isForumPostPinned(id) {
+}
+export function isForumPostPinned(id) {
   const channel = ChannelStore.getChannel(id);
   let hasFlagResult;
   if (channel != null) {
     hasFlagResult = channel.hasFlag(ChannelFlags.PINNED);
   }
   return true === hasFlagResult;
-};
+}

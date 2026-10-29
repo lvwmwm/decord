@@ -1,13 +1,13 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16260
+// Function ID: 16261
 // Name: userProfile
-// Dependencies: [5, 5247, 1389, 8705, 8707, 2]
+// Dependencies: [5, 5248, 1389, 8708, 8710, 2]
 // Exports: isAnyUserProfileOpen, openUserProfile
 
-// Module 16023 (userProfile)
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8705 */;
+// Module 16260 (userProfile)
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -15,14 +15,14 @@ let c1, c3, key;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/userProfile.native.tsx");
 
-export const isAnyUserProfileOpen = function isAnyUserProfileOpen() {
+export function isAnyUserProfileOpen() {
   const stack = ActionSheetStore.getStack();
   return stack.some((key) => {
     key = key.key;
     return key.startsWith(showUserProfileActionSheet.USER_PROFILE_ACTION_SHEET_KEY_PREFIX);
   });
-};
-export const openUserProfile = function openUserProfile(arg0) {
+}
+export function openUserProfile(arg0) {
   function open() {
     return obj(...arguments);
   }
@@ -42,7 +42,7 @@ export const openUserProfile = function openUserProfile(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c2;
@@ -93,7 +93,7 @@ export const openUserProfile = function openUserProfile(arg0) {
               return obj;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           if (null == authStore.getUser(closure_128_0)) {
             closure_128_2();
@@ -122,4 +122,4 @@ export const openUserProfile = function openUserProfile(arg0) {
   };
   const tmp = open();
   return true;
-};
+}

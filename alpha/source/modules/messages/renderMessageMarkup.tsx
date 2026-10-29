@@ -1,17 +1,17 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8540
+// Function ID: 8541
 // Name: renderMessageMarkup
-// Dependencies: [8519, 5741, 2]
+// Dependencies: [8541, 5743, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 8518 (renderMessageMarkup)
-import MarkupUtilsDefault from "MarkupUtils" /* 5741 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 8519 */;
+// Module 8540 (renderMessageMarkup)
+import MarkupUtilsDefault from "MarkupUtils" /* 5743 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 8541 */;
 import size from "module_2" /* 2 */;
 
 let hasSpoilerEmbeds;
 
-const f101829 = (arg0) => {
+const f102837 = (arg0) => {
   let tmp = arg0;
   if (!Array.isArray(arg0)) {
     const items = [arg0];
@@ -89,7 +89,7 @@ export default function renderMessageMarkup(arg0) {
   const tmp2 = MarkupUtilsDefault;
   return render(formatInline ? tmp2.parseInlineReply : tmp2.parse, arg0, obj);
 };
-export const getInitialParserStateFromMessage = function getInitialParserStateFromMessage(message, renderOptions) {
+export function getInitialParserStateFromMessage(message, renderOptions) {
   let id;
   let soundboardSounds;
   const author = message.author;
@@ -107,16 +107,16 @@ export const getInitialParserStateFromMessage = function getInitialParserStateFr
     soundboardSounds = [];
   }
   return obj3;
-};
+}
 export { getInitialParserState };
-export const renderMessageMarkupWithParser = function renderMessageMarkupWithParser(NativeSearchResultLinkPreviewParser, arg1, arg2) {
+export function renderMessageMarkupWithParser(NativeSearchResultLinkPreviewParser, arg1, arg2) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
   }
   return render(NativeSearchResultLinkPreviewParser, arg1, obj);
-};
-export const renderMessageMarkupToAST = function renderMessageMarkupToAST(message, arg1) {
+}
+export function renderMessageMarkupToAST(message, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -127,8 +127,8 @@ export const renderMessageMarkupToAST = function renderMessageMarkupToAST(messag
   const tmp3 = formatInline ? tmp2.parseInlineReplyToAST : tmp2.parseToAST;
   const merged = Object.assign(obj);
   return render(tmp3, message, obj2);
-};
-export const renderMessageMarkupToASTWithParser = function renderMessageMarkupToASTWithParser(arg0, message, arg2) {
+}
+export function renderMessageMarkupToASTWithParser(arg0, message, arg2) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -136,8 +136,8 @@ export const renderMessageMarkupToASTWithParser = function renderMessageMarkupTo
   const obj2 = { toAST: true };
   const merged = Object.assign(obj);
   return render(arg0, message, obj2);
-};
-export const renderMessageContentMarkup = function renderMessageContentMarkup(notifCenterV2MessagePreviewParser, guildId, arg2) {
+}
+export function renderMessageContentMarkup(notifCenterV2MessagePreviewParser, guildId, arg2) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -154,12 +154,12 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
     }
     return tmp;
   });
-};
-export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
+}
+export function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f101829);
-};
-export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
+  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f102837);
+}
+export function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f101829);
-};
+  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f102837);
+}

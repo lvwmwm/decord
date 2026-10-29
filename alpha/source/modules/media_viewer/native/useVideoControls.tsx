@@ -1,19 +1,19 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 8794
+// Function ID: 8795
 // Name: useVideoControls
-// Dependencies: [32, 19, 5005, 21, 570, 1271, 8792, 5004, 558, 576, 504, 8793, 6695, 8794, 8789, 8801, 2]
+// Dependencies: [32, 19, 5006, 21, 570, 1271, 8795, 5005, 558, 576, 504, 8796, 6719, 8797, 8792, 8804, 2]
 // Exports: initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8791 (useVideoControls)
+// Module 8794 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1271 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8789 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8792 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8792 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8795 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import module_570 from "module_570" /* 570 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const useVideoStateStore = module_570.create(() => ({ controls: "Reflect", paused: true }));
+const useVideoStateStore = module_570.create(() => ({ controls: "Reflect", paused: null }));
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoControls(arg0, portal, controls) {
   let closure_0;
@@ -216,14 +216,14 @@ let result = size.fileFinishedImporting("modules/media_viewer/native/useVideoCon
 
 export default tmp3;
 export { useVideoStateStore };
-export const initVideoStateStore = function initVideoStateStore() {
+export function initVideoStateStore() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ controls: "Reflect", paused: true });
+    state.setState({ controls: "Reflect", paused: null });
   });
-};
-export const setMuted = function setMuted(isMuted) {
+}
+export function setMuted(isMuted) {
   _require = isMuted;
   let obj = require("react-native");
   obj.batchUpdates(() => {
@@ -231,15 +231,15 @@ export const setMuted = function setMuted(isMuted) {
     const obj = { isMuted };
     useMediaPlayerMutedStore.setState(obj);
   });
-};
-export const toggleMuted = function toggleMuted() {
+}
+export function toggleMuted() {
   const obj = react_native;
   obj.batchUpdates(() => {
     const useMediaPlayerMutedStore = require("MediaPlayerMuteManager").useMediaPlayerMutedStore;
     useMediaPlayerMutedStore.setState((isMuted) => ({ isMuted: !isMuted.isMuted }));
   });
-};
-export const setVideoStateControls = function setVideoStateControls(videoControls) {
+}
+export function setVideoStateControls(videoControls) {
   let controls;
   _require = videoControls;
   let obj = require("react-native");
@@ -247,26 +247,26 @@ export const setVideoStateControls = function setVideoStateControls(videoControl
     const obj = { controls };
     return obj.setState(obj);
   });
-};
-export const setPausedState = function setPausedState(paused) {
+}
+export function setPausedState(paused) {
   _require = paused;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { paused };
     return obj.setState(obj);
   });
-};
-export const tryPauseCurrentVideo = function tryPauseCurrentVideo() {
+}
+export function tryPauseCurrentVideo() {
   const controls = obj.getState().controls;
   if (controls != null) {
     controls.pause(true);
   }
-};
-export const unpauseCurrentVideoIfNeeded = function unpauseCurrentVideoIfNeeded() {
+}
+export function unpauseCurrentVideoIfNeeded() {
   if (!obj.getState().paused) {
     const controls = obj.getState().controls;
     if (controls != null) {
       controls.pause(false);
     }
   }
-};
+}

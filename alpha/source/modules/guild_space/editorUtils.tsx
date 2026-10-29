@@ -1,20 +1,20 @@
-// Module ID: 19304
-// Function ID: 19305
+// Module ID: 19537
+// Function ID: 19538
 // Name: editorUtils
-// Dependencies: [32, 19305, 19306, 1294, 6409, 2]
+// Dependencies: [32, 19538, 19539, 1294, 6433, 2]
 // Exports: createDefaultDraftWidgets, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 19304 (editorUtils)
+// Module 19537 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 19305 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 19306 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 19538 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 19539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let tmp;
-const V6OrEarlierAPIError = tmp(6409);
+const V6OrEarlierAPIError = tmp(6433);
 function createDraftWidget(type, name, locked) {
   const obj = { id: "" + c3 + +closure_4, position: { column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 }, requires_hydration: false, default_title: name, locked };
   closure_4 = tmp + 1;
@@ -35,7 +35,7 @@ let items = [GuildSpaceTypes.GuildSpaceWidgetType.POPULAR_MUSIC, GuildSpaceTypes
 let result = size.fileFinishedImporting("modules/guild_space/editorUtils.tsx");
 
 export { createDraftWidget };
-export const createDefaultDraftWidgets = function createDefaultDraftWidgets(arg0) {
+export function createDefaultDraftWidgets(arg0) {
   let closure_0 = arg0;
   return items.flatMap((item, order) => {
     let obj2;
@@ -51,11 +51,11 @@ export const createDefaultDraftWidgets = function createDefaultDraftWidgets(arg0
     }
     return items;
   });
-};
-export const isDraftWidgetId = function isDraftWidgetId(widget_id) {
+}
+export function isDraftWidgetId(widget_id) {
   return widget_id.startsWith(c3);
-};
-export const filterCatalogWidgetsAtMaxInstances = function filterCatalogWidgetsAtMaxInstances(arr, arg1) {
+}
+export function filterCatalogWidgetsAtMaxInstances(arr, arg1) {
   map = new Map();
   const iter = arg1[Symbol.iterator]();
   const nextResult = iter.next();
@@ -76,8 +76,8 @@ export const filterCatalogWidgetsAtMaxInstances = function filterCatalogWidgetsA
     }
     return num < type.max_instances;
   });
-};
-export const toWidgetConfigUpdateRequest = function toWidgetConfigUpdateRequest(type) {
+}
+export function toWidgetConfigUpdateRequest(type) {
   if (type.type === GuildSpaceTypes.GuildSpaceWidgetType.IMAGE_TEXT) {
     const obj = { type: null, text: null, title: null };
     ({ type: obj.type, text: obj.text, title: obj.title } = type);
@@ -88,8 +88,8 @@ export const toWidgetConfigUpdateRequest = function toWidgetConfigUpdateRequest(
   } else {
     return type;
   }
-};
-export const getWidgetSaveError = function getWidgetSaveError(arg0, arg1) {
+}
+export function getWidgetSaveError(arg0, arg1) {
   let str3;
   let tmp14;
   if (arg0 instanceof HTTPUtils.HTTPResponseError) {
@@ -132,4 +132,4 @@ export const getWidgetSaveError = function getWidgetSaveError(arg0, arg1) {
       continue;
     }
   }
-};
+}

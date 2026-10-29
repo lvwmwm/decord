@@ -1,11 +1,11 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9242
+// Function ID: 9243
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 9230, 9229, 2]
+// Dependencies: [5, 32, 19, 9234, 9233, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9238 (useIsPersistentSecureFramesFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9230 */;
+// Module 9242 (useIsPersistentSecureFramesFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9234 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -19,7 +19,7 @@ let react = react_mod;
 let closure_5 = SecureFramesConstants.SECURE_FRAMES_PUBLIC_KEY_VERSION;
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsPersistentSecureFramesFingerprint.tsx");
 
-export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSecureFramesFingerprint(userId) {
+export function useIsPersistentSecureFramesFingerprint(userId) {
   let _undefined;
   let c3;
   let closure_4;
@@ -52,7 +52,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let tmp47;
@@ -126,7 +126,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           c5 = 0;
           closure_2(false);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp47) {
         if (0 === c5) {
@@ -154,4 +154,4 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
     }
   }, items);
   return { loading, isCurrentUserKeyPersistent, isOtherUserKeyPersistent };
-};
+}

@@ -1,25 +1,25 @@
-// Module ID: 19196
-// Function ID: 19197
+// Module ID: 19431
+// Function ID: 19432
 // Name: RedesignNewUserManager
-// Dependencies: [5, 13814, 502, 4850, 6896, 19197, 5187, 5186, 19200, 7250, 9083, 19201, 6707, 19203, 1999, 1381, 2]
+// Dependencies: [5, 14047, 502, 4851, 6920, 19432, 5188, 5187, 19435, 7274, 9086, 19436, 6731, 19438, 2000, 1381, 2]
 
-// Module 19196 (RedesignNewUserManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19197 */;
+// Module 19431 (RedesignNewUserManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19432 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13814 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14047 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4850 */;
-import NewUserStore from "NewUserStore" /* 6896 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4851 */;
+import NewUserStore from "NewUserStore" /* 6920 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
 
 let closure_4;
 let hasOwnProperty;
-const f139429 = (item) => {
+const f141002 = (item) => {
   const obj = closure_1_0(closure_1_2[7]);
   const coerceModalRouteResult = obj.coerceModalRoute(item);
   let key;
@@ -47,7 +47,7 @@ function isNewUserModalInStack() {
   null == rootNavigationRef || !rootNavigationRef.isReady();
   if (someResult) {
     const routes = rootNavigationRef.getRootState().routes;
-    someResult = routes.some(f139429);
+    someResult = routes.some(f141002);
   }
   return someResult;
 }
@@ -86,7 +86,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
         const tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
         if (someResult) {
           const routes = rootNavigationRef.getRootState().routes;
-          someResult = routes.some(f139429);
+          someResult = routes.some(f141002);
         }
         if (!someResult) {
           let str = "nuf-verification-gate";
@@ -108,7 +108,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } else {
                 let c3;
@@ -175,7 +175,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
                             c3 = 0;
                             closure_0._isStartingOnboarding = false;
                             c5 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           } else {
                             const obj2 = closure_0(paths[11]);
                             initialRouteName = obj2.getKeyForOnboardingStep(onboardingStepIndex);
@@ -201,7 +201,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
                           c3 = 0;
                           closure_0._isStartingOnboarding = false;
                           c5 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       }
                     } else if (arg0 === 1) {
@@ -217,7 +217,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
                     c3 = 0;
                     closure_0._isStartingOnboarding = false;
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } catch (tmp55) {
                   initialRouteName = tmp55;
@@ -263,7 +263,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
           null == rootNavigationRef || !rootNavigationRef.isReady();
           if (someResult) {
             const routes = rootNavigationRef.getRootState().routes;
-            someResult = routes.some(f139429);
+            someResult = routes.some(f141002);
           }
           if (!someResult) {
             require.startOnboarding();

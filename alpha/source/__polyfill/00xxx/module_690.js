@@ -92,7 +92,7 @@ const fn = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
   return _Promise1;
 });
 
-export const fetchSourceContext = function fetchSourceContext(value) {
+export function fetchSourceContext(value) {
   let closure_0 = value;
   return fn(this, undefined, undefined, function*(arg0, value) {
     let tmp6;
@@ -109,7 +109,7 @@ export const fetchSourceContext = function fetchSourceContext(value) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -194,8 +194,8 @@ export const fetchSourceContext = function fetchSourceContext(value) {
       }
     }
   });
-};
-export const parseErrorStack = function parseErrorStack(arg0) {
+}
+export function parseErrorStack(arg0) {
   if (ReactNativeLibraries.ReactNativeLibraries.Devtools) {
     const Devtools = ReactNativeLibraries.ReactNativeLibraries.Devtools;
     return Devtools.parseErrorStack(arg0);
@@ -206,8 +206,8 @@ export const parseErrorStack = function parseErrorStack(arg0) {
     const error = new Error("React Native Devtools not available.");
     throw error;
   }
-};
-export const symbolicateStackTrace = function symbolicateStackTrace(arg0, arg1) {
+}
+export function symbolicateStackTrace(arg0, arg1) {
   if (ReactNativeLibraries.ReactNativeLibraries.Devtools) {
     const Devtools = ReactNativeLibraries.ReactNativeLibraries.Devtools;
     return Devtools.symbolicateStackTrace(arg0, arg1);
@@ -218,5 +218,5 @@ export const symbolicateStackTrace = function symbolicateStackTrace(arg0, arg1) 
     const error = new Error("React Native Devtools not available.");
     throw error;
   }
-};
+}
 export { getDevServer };

@@ -1,11 +1,11 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19242
+// Function ID: 19243
 // Name: HttpRequestSampleExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 19009 (HttpRequestSampleExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 19242 (HttpRequestSampleExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,6 +16,6 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/telemetry_ring/HttpRequestSampleExperiment.tsx");
 
 export default apexExperiment;
-export const getHttpRequestSampleRate = function getHttpRequestSampleRate() {
+export function getHttpRequestSampleRate() {
   return apexExperiment.getConfig({ location: "track_http_request" }).sampleRate;
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 7335
+// Function ID: 7336
 // Name: ConnectionsUtils
-// Dependencies: [4910, 4878, 7312, 1084, 1383, 38, 1125, 12, 7313, 2]
+// Dependencies: [4911, 4879, 7336, 1084, 1383, 38, 1125, 12, 7337, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 7311 (ConnectionsUtils)
+// Module 7335 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1084 */;
 import intl29 from "intl" /* 1125 */;
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7313 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import Constants from "Constants" /* 7312 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7337 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import Constants from "Constants" /* 7336 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/connections/ConnectionsUtils.
 
 export const officialApplicationIds = ["426537812993638400", "1042836142560645130", "296023718839451649", "979802510766268446", "1031611223235637258", "512333785338216465"];
 export const ConnectionConfigurationRuleOperator = { AND: 0, [0]: "AND", OR: 1, [1]: "OR" };
-export const getCallbackParamsFromURL = function getCallbackParamsFromURL(c0) {
+export function getCallbackParamsFromURL(c0) {
   let code;
   let error;
   let error_description;
@@ -54,8 +54,8 @@ export const getCallbackParamsFromURL = function getCallbackParamsFromURL(c0) {
   const tmpResult6 = _modDef38;
   tmpResult6(!Array.isArray(errorDescription), "Received multiple query param values for error_description");
   return { code, state, error, errorDescription };
-};
-export const getConnectionsCheckText = function getConnectionsCheckText(value) {
+}
+export function getConnectionsCheckText(value) {
   let closure_0;
   let connectionMetadataField;
   let connectionType;
@@ -411,11 +411,11 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
     }
   }
   return formatResult;
-};
-export const isVerifiedRolesChannelVisible = function isVerifiedRolesChannelVisible(sortedRoles) {
+}
+export function isVerifiedRolesChannelVisible(sortedRoles) {
   return sortedRoles.some((tags) => null === tags.tags.guild_connections);
-};
-export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guildMember) {
+}
+export function getVisibleConnectionsRole(guildMember) {
   let channel;
   let guild;
   let onlyChannelConnectionRoles;
@@ -468,8 +468,8 @@ export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guil
       return tmp7;
     }
   }
-};
-export const getCreatedAtDate = function getCreatedAtDate(metadata, locale) {
+}
+export function getCreatedAtDate(metadata, locale) {
   if (null != metadata) {
     if ("" !== metadata) {
       const _Date = Date;
@@ -489,4 +489,4 @@ export const getCreatedAtDate = function getCreatedAtDate(metadata, locale) {
     }
   }
   return null;
-};
+}

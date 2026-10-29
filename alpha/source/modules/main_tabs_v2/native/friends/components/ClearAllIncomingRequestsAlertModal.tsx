@@ -1,13 +1,13 @@
-// Module ID: 18513
-// Function ID: 18514
+// Module ID: 18747
+// Function ID: 18748
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 7451, 558, 576, 1125, 5950, 5950, 2]
+// Dependencies: [5, 19, 21, 7474, 558, 576, 1125, 5952, 5952, 2]
 
-// Module 18513 (ClearAllIncomingRequestsAlertModal)
+// Module 18747 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1125 */;
-import AlertModal2 from "AlertModal" /* 5950 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7451 */;
+import AlertModal2 from "AlertModal" /* 5952 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -106,7 +106,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "destructive", onPress: handleConfirm, text: intl3.string(intl5.t["cY+Oob"]) };
-    const AlertActionButton = tmp(5950).AlertActionButton;
+    const AlertActionButton = tmp(5952).AlertActionButton;
     intl3 = tmp(1125).intl;
     const tmp11 = React3(AlertActionButton, obj3, "confirm");
     cResult[3] = tmp11;
@@ -117,9 +117,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: items };
     items = [tmp8, ];
-    const AlertActions = tmp(5950).AlertActions;
+    const AlertActions = tmp(5952).AlertActions;
     const obj5 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
-    const AlertActionButton2 = tmp(5950).AlertActionButton;
+    const AlertActionButton2 = tmp(5952).AlertActionButton;
     intl4 = tmp(1125).intl;
     items[1] = React3(AlertActionButton2, obj5, "cancel");
     const tmp15 = hasOwnProperty(AlertActions, obj4);

@@ -1,14 +1,14 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7257
+// Function ID: 7258
 // Name: DefaultChannelUtils
-// Dependencies: [4908, 4856, 1084, 1096, 558, 576, 4941, 504, 2]
+// Dependencies: [4909, 4857, 1084, 1096, 558, 576, 4942, 504, 2]
 // Exports: canChannelBeDefault
 
-// Module 7233 (DefaultChannelUtils)
+// Module 7257 (DefaultChannelUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import GatedChannelStore from "GatedChannelStore" /* 4908 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import GatedChannelStore from "GatedChannelStore" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanChan
 const result = size.fileFinishedImporting("modules/guild_onboarding/DefaultChannelUtils.tsx");
 
 export const useCanChannelBeDefault = tmp3;
-export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
+export function canChannelBeDefault(guild_id, id) {
   const channel = ChannelStore.getChannel(id);
   const obj = ChannelStore;
   if (null != channel) {
@@ -113,4 +113,4 @@ export const canChannelBeDefault = function canChannelBeDefault(guild_id, id) {
     return isChannelGatedResult;
   }
   VIEW_CHANNEL = metroRequire.VIEW_CHANNEL;
-};
+}

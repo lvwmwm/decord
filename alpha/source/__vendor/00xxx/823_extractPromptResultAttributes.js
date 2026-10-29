@@ -12,7 +12,7 @@ let tmp;
 const CLIENT_ADDRESS_ATTRIBUTE = tmp(817);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const extractPromptResultAttributes = function extractPromptResultAttributes(description, recordOutputs) {
+export function extractPromptResultAttributes(description, recordOutputs) {
   let closure_3;
   let messages;
   let obj = {};
@@ -82,8 +82,8 @@ export const extractPromptResultAttributes = function extractPromptResultAttribu
   } else {
     return obj;
   }
-};
-export const extractToolResultAttributes = function extractToolResultAttributes(content, recordOutputs) {
+}
+export function extractToolResultAttributes(content, recordOutputs) {
   function buildAllContentItemAttributes(content, recordOutputs) {
     let closure_3;
     let closure_4;
@@ -177,4 +177,4 @@ export const extractToolResultAttributes = function extractToolResultAttributes(
   } else {
     return {};
   }
-};
+}

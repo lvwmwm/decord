@@ -1,20 +1,20 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 16194
+// Function ID: 16195
 // Name: NotifSettingsUtils
-// Dependencies: [15955, 1125, 15959, 15960, 1254, 2]
+// Dependencies: [16191, 1125, 16195, 16196, 1254, 2]
 
-// Module 15958 (NotifSettingsUtils)
+// Module 16194 (NotifSettingsUtils)
 import intl2 from "intl" /* 1125 */;
-import react_nativeDefault from "react-native" /* 15959 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15955 */;
+import react_nativeDefault from "react-native" /* 16195 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16191 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, notifType;
 
 let c3;
 let closure_4;
-let tmp;
-const SentryUtilsDefault = tmp(1254);
+let tmp2;
+const SentryUtilsDefault = tmp2(1254);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;
@@ -30,17 +30,28 @@ function inferImportanceFromBehavior(visibility) {
   HIGH = constants.HIGH;
 }
 function formatCategory(id) {
-  let intl;
-  const obj = { id: id.stringId, name: intl.string(id.title) };
-  intl = intl2.intl;
+  let stringId;
+  const obj = { id: id.stringId, name: stringId };
+  const intl = intl2.intl;
+  const stringResult = intl.string(id.title);
+  stringId = id.stringId;
+  if ("" !== stringResult) {
+    stringId = stringResult;
+  }
   return obj;
 }
 function formatSetting(item10023, arg1) {
-  let intl;
   let ringtone;
-  let tmp = arg1;
-  const obj = { id: item10023.string_id, groupId: item10023.category, name: intl.string(item10023.title), importance: tmp, ringtone, badge: item10023.behavior.badge, vibrate: item10023.behavior.vibrate };
-  intl = intl2.intl;
+  let string_id;
+  let tmp2;
+  const obj = { id: item10023.string_id, groupId: item10023.category, name: string_id, importance: tmp2, ringtone, badge: item10023.behavior.badge, vibrate: item10023.behavior.vibrate };
+  const intl = intl2.intl;
+  const stringResult = intl.string(item10023.title);
+  string_id = item10023.string_id;
+  if ("" !== stringResult) {
+    string_id = stringResult;
+  }
+  tmp2 = arg1;
   if (arg1 == null) {
     const behavior = item10023.behavior;
     if (!("ringtone" in behavior)) {
@@ -49,10 +60,10 @@ function formatSetting(item10023, arg1) {
         if ("hidden" === behavior.visibility) {
           HIGH = constants.MIN;
         } else {
-          HIGH = behavior.sound ? tmp2.DEFAULT : tmp2.LOW;
+          HIGH = behavior.sound ? tmp3.DEFAULT : tmp3.LOW;
         }
       }
-      tmp = HIGH;
+      tmp2 = HIGH;
     }
     HIGH = constants.HIGH;
   }
@@ -124,7 +135,7 @@ function buildChannelsAndMapping() {
       return map;
     }
   }
-  const obj = map(15960);
+  const obj = map(16196);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ categories, settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = computeInheritedImportances(mappings);
@@ -155,14 +166,14 @@ let obj = {
   registerDeclarativeNotificationCategories() {
     let arr;
     let channels;
+    let found;
     let groups;
     let inheritedImportances;
     let mapping;
     let obj3;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    const tmp = importDefault;
-    const tmp2 = dependencyMap;
+    const tmp2 = importDefault;
     let obj = react_nativeDefault;
     if (obj == null) {
       obj = {};
@@ -170,11 +181,12 @@ let obj = {
     ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
     if (null != registerAndroidNotifGroupsAndChannels) {
       if (null != registerAndroidNotifTypeMappings) {
-        ({ channels, inheritedImportances, groups, mapping } = buildChannelsAndMapping());
+        ({ groups, channels, inheritedImportances, mapping } = buildChannelsAndMapping());
         buildChannelsAndMapping();
         const obj2 = { message: "Registering declarative notification categories", data: obj3 };
         obj3 = {
           channels: channels.map((id) => id.id),
+          entriesWithFallbackNames: found.map((id) => id.id),
           inheritedImportances: arr.map((item) => {
                 let tmp;
                 let tmp2;
@@ -184,6 +196,9 @@ let obj = {
         };
         const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
         SentryUtilsDefault;
+        const items = [];
+        HermesBuiltin.arraySpread(items, channels, HermesBuiltin.arraySpread(items, groups, 0));
+        found = items.filter((name) => name.name === name.id);
         const _Array = Array;
         arr = Array.from(inheritedImportances.entries());
         addBreadcrumb(obj2);

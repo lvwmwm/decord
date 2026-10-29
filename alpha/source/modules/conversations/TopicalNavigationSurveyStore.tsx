@@ -1,9 +1,9 @@
-// Module ID: 9772
-// Function ID: 9773
+// Module ID: 9804
+// Function ID: 9805
 // Name: TopicalNavigationSurveyStore
 // Dependencies: [504, 584, 2]
 
-// Module 9772 (TopicalNavigationSurveyStore)
+// Module 9804 (TopicalNavigationSurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12474
+// Function ID: 12475
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4934, 5009, 504, 7382, 9696, 12421, 10832, 7790, 7601, 2]
+// Dependencies: [5, 32, 19, 4935, 5010, 504, 7405, 9728, 12475, 10908, 7812, 7624, 2]
 // Exports: default
 
-// Module 12420 (useConjurePatchNotesComposer)
-import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import ConjureUtils from "ConjureUtils" /* 7382 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12421 */;
+// Module 12474 (useConjurePatchNotesComposer)
+import GuildChannelStore2 from "GuildChannelStore" /* 4935 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import ConjureUtils from "ConjureUtils" /* 7405 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12475 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -119,7 +119,7 @@ export default function useConjurePatchNotesComposer(projectId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c2;
@@ -147,7 +147,7 @@ export default function useConjurePatchNotesComposer(projectId) {
               c2 = 0;
               if (closure_129_0.cancelled) {
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 closure_1_10(false);
                 closure_1_11(true);
@@ -180,7 +180,7 @@ export default function useConjurePatchNotesComposer(projectId) {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp38) {
             if (0 === c2) {
@@ -235,7 +235,7 @@ export default function useConjurePatchNotesComposer(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {

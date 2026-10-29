@@ -1,23 +1,23 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 13070
+// Function ID: 13071
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1389, 4918, 1084, 21, 5004, 558, 576, 8367, 10070, 1264, 5299, 6025, 12848, 5699, 1125, 5270, 6014, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1389, 4919, 1084, 21, 5005, 558, 576, 8389, 10102, 1264, 5300, 6029, 13069, 5701, 1125, 5271, 6018, 2]
 
-// Module 12849 (GuildEnableCommunicationAlert)
+// Module 13070 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8367 */;
-import CountDownDefault from "CountDown" /* 10070 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8389 */;
+import CountDownDefault from "CountDown" /* 10102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4918 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4919 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp11;
 let unpackModuleId;
-const useMountEffectDefault = tmp11(5299);
+const useMountEffectDefault = tmp11(5300);
 let closure_3 = ["guildId", "userId", "onCancel"];
 const View = react_native.View;
 ({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: c9, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: c10 } = GuildDisableCommunicationConstants);
@@ -154,7 +154,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
             intl = tmp3(c2[19]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -201,8 +201,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  closure_3 = _slicedToArray(userId(8367)(userId, guildId), 1)[0];
-  userId(5299)(() => {
+  closure_3 = _slicedToArray(userId(8389)(userId, guildId), 1)[0];
+  userId(5300)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guildId, other_user_id: userId };
     obj.track(unpackModuleId.OPEN_MODAL, obj2);
@@ -219,7 +219,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6014);
+  const tmp7 = userId(6018);
   const merged1 = Object.assign(merged);
   intl = guildId(1125).intl;
   intl2 = guildId(1125).intl;
@@ -230,12 +230,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   intl3 = tmp9(1125).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "text-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5270).Text;
+  const Text = tmp9(5271).Text;
   const intl4 = tmp9(1125).intl;
   format = intl4.format;
   prop = tmp9(1125).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6025);
+  const tmp3Result = tmp3(6029);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_13;
   tmp12 = View;
@@ -260,7 +260,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   let obj5 = { style: items1, variant: "text-sm/medium", children: intl5.format(tmp9(1125).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5270).Text;
+  const Text2 = tmp9(5271).Text;
   intl5 = tmp9(1125).intl;
   obj6 = { link };
   items[1] = closure_12(Text2, obj5);

@@ -1,25 +1,25 @@
-// Module ID: 6939
-// Function ID: 6940
+// Module ID: 6963
+// Function ID: 6964
 // Name: TableRow
-// Dependencies: [109, 19, 17, 21, 5004, 587, 558, 576, 6940, 5288, 6941, 6934, 6947, 6948, 6950, 5289, 1381, 6951, 5270, 2]
+// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 6964, 5289, 6965, 6958, 6971, 6972, 6974, 5290, 1381, 6975, 5271, 2]
 
-// Module 6939 (TableRow)
+// Module 6963 (TableRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useToken from "useToken" /* 5288 */;
-import useFontScale from "useFontScale" /* 5289 */;
-import TableRowDivider from "TableRowDivider" /* 6934 */;
-import react3 from "react" /* 6940 */;
-import TableRowIcon from "TableRowIcon" /* 6947 */;
-import TableRowArrow from "TableRowArrow" /* 6948 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 6950 */;
-import DragIcon from "DragIcon" /* 6951 */;
+import useToken from "useToken" /* 5289 */;
+import useFontScale from "useFontScale" /* 5290 */;
+import TableRowDivider from "TableRowDivider" /* 6958 */;
+import react3 from "react" /* 6964 */;
+import TableRowIcon from "TableRowIcon" /* 6971 */;
+import TableRowArrow from "TableRowArrow" /* 6972 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 6974 */;
+import DragIcon from "DragIcon" /* 6975 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRow(arg
   if (undefined !== tmp18) {
     str = tmp18;
   }
-  const context = react.useContext(tmp(6940).TableRowGroupContext);
+  const context = react.useContext(tmp(6964).TableRowGroupContext);
   const tmpResult = useToken;
   const token = tmpResult.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
   if (cResult[17] === tmp4) {
@@ -235,7 +235,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRow(arg
                           }
                         }
                         const obj4 = { radius: token, shadow: "none", border: "none", variant: "muted", start: !context && true === tmp14, end: !context && true === tmp8, onPress: tmp13, disabled: undefined !== tmp17 && tmp17, style, children: tmp30 };
-                        const InternalCard = tmp(6941).InternalCard;
+                        const InternalCard = tmp(6965).InternalCard;
                         const merged = Object.assign(tmp5);
                         const tmp38 = metroImportAll(InternalCard, obj4);
                         cResult[30] = token;
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRow(arg
   const token = tmp2Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
   const obj = { radius: token, shadow: "none", border: "none", variant: "muted", start: tmp8, end: !context && true === end, onPress, disabled, style, children: metroImportAll(closure_13, { height, label, subLabel, icon, trailing, arrow, disabled, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps }) };
   tmp8 = !context;
-  const InternalCard = tmp2(6941).InternalCard;
+  const InternalCard = tmp2(6965).InternalCard;
   if (!context) {
     tmp8 = true === start;
   }
@@ -449,7 +449,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
                                                 tmp46 = cResult[43];
                                               }
                                               if (cResult[44] !== arrow) {
-                                                const tmp51 = arrow && metroImportAll(tmp(6948).TableRowArrow, {});
+                                                const tmp51 = arrow && metroImportAll(tmp(6972).TableRowArrow, {});
                                                 cResult[44] = arrow;
                                                 cResult[45] = tmp51;
                                                 tmp50 = tmp51;
@@ -539,7 +539,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
                         let tmp33Result = subLabel;
                         if (!react.isValidElement(subLabel)) {
                           let str5 = "text-subtle";
-                          const Text2 = tmp(5270).Text;
+                          const Text2 = tmp(5271).Text;
                           const tmp33 = metroImportAll;
                           if ("danger" === str) {
                             str5 = "text-feedback-critical";
@@ -562,7 +562,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
               if (!react.isValidElement(label)) {
                 const obj9 = { variant: token, color: str3, lineClamp: labelLineClamp, includeFontPadding: true, children: label };
                 str3 = "text-feedback-critical";
-                const Text = tmp(5270).Text;
+                const Text = tmp(5271).Text;
                 const tmp29 = metroImportAll;
                 if ("danger" !== str) {
                   str3 = token1;
@@ -691,7 +691,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
   if (!react.isValidElement(label)) {
     const obj10 = { variant: token, color: str2, lineClamp: labelLineClamp, includeFontPadding: true, children: label };
     str2 = "text-feedback-critical";
-    const Text = tmp4(5270).Text;
+    const Text = tmp4(5271).Text;
     const tmp22 = metroImportAll;
     if ("danger" !== variant) {
       str2 = token1;
@@ -704,7 +704,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
     let tmp25Result = subLabel;
     if (!react.isValidElement(subLabel)) {
       let str4 = "text-subtle";
-      const Text2 = tmp4(5270).Text;
+      const Text2 = tmp4(5271).Text;
       const tmp25 = metroImportAll;
       if ("danger" === variant) {
         str4 = "text-feedback-critical";
@@ -732,7 +732,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowInne
   }
   items1[3] = tmp28;
   if (arrow) {
-    arrow = metroImportAll(tmp4(6948).TableRowArrow, {});
+    arrow = metroImportAll(tmp4(6972).TableRowArrow, {});
   }
   items1[4] = arrow;
   return authStore(metroImportDefault, obj4);

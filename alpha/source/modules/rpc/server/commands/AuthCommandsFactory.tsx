@@ -1,21 +1,21 @@
-// Module ID: 16038
-// Function ID: 16039
+// Module ID: 16275
+// Function ID: 16276
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2042, 2021, 1389, 6413, 1084, 11523, 1101, 510, 9296, 2028, 5639, 11450, 9671, 9667, 9673, 4941, 1096, 1294, 584, 15987, 8864, 1490, 2]
+// Dependencies: [32, 5, 2043, 2022, 1389, 6437, 1084, 11577, 1101, 510, 9300, 2029, 5640, 11504, 9703, 9699, 9705, 4942, 1096, 1294, 584, 16215, 8867, 1491, 2]
 // Exports: default
 
-// Module 16038 (AuthCommandsFactory)
+// Module 16275 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
+import RPCErrorDefault from "RPCError" /* 9300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import UserStore from "UserStore" /* 1389 */;
-import Constants_mod from "Constants" /* 6413 */;
+import Constants_mod from "Constants" /* 6437 */;
 import Constants_mod2 from "Constants" /* 1084 */;
-import LeakyBucket_mod from "LeakyBucket" /* 11523 */;
+import LeakyBucket_mod from "LeakyBucket" /* 11577 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ let obj = function _authorizeWithPrompt() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -134,7 +134,7 @@ let obj = function _authorizeWithPrompt() {
               map = undefined;
               _prompt = 1;
               disableGuildSelect = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             let createFromServer;
@@ -436,7 +436,7 @@ obj = function _authenticate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -609,7 +609,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f162367 = function(result) {
+      const f164039 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -715,7 +715,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f162367);
+                  return promise.then(f164039);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -724,7 +724,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f162367);
+              catchPromise = promise.then(f164039);
             }
             return catchPromise;
           }

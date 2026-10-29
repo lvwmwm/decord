@@ -1,13 +1,13 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 9010
+// Function ID: 9011
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 9008, 584, 7448, 2]
+// Dependencies: [5, 9011, 584, 7471, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 9007 (ChannelSettingsPermissionsActionCreators)
+// Module 9010 (ChannelSettingsPermissionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9008 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _updatePermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _updatePermission() {
           const obj2 = closure_133_1(closure_133_2[2]);
           obj2.dispatch(obj7);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp15) {
           c7 = 3;
           throw tmp15;
@@ -88,24 +88,24 @@ let obj = function _updatePermission() {
 };
 let result = size.fileFinishedImporting("actions/ChannelSettingsPermissionsActionCreators.tsx");
 
-export const updatePermission = function updatePermission() {
+export function updatePermission() {
   return obj(...arguments);
-};
-export const selectPermission = function selectPermission(id) {
+}
+export function selectPermission(id) {
   obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION", id };
   obj.dispatch(obj2);
-};
-export const setAdvancedMode = function setAdvancedMode(advancedMode) {
+}
+export function setAdvancedMode(advancedMode) {
   obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE", advancedMode };
   obj.dispatch(obj2);
-};
-export const init = function init() {
+}
+export function init() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "CHANNEL_SETTINGS_PERMISSIONS_INIT" });
-};
-export const savePermissionUpdates = function savePermissionUpdates(id, items, silent) {
+}
+export function savePermissionUpdates(id, items, silent) {
   let closure_2;
   let closure_0 = id;
   importDefault = items;
@@ -147,8 +147,8 @@ export const savePermissionUpdates = function savePermissionUpdates(id, items, s
     const obj2 = { type: "CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS", silent };
     obj.dispatch(obj2);
   });
-};
-export const saveAndClearPermissionUpdates = function saveAndClearPermissionUpdates(arg0, arg1, arg2, arg3) {
+}
+export function saveAndClearPermissionUpdates(arg0, arg1, arg2, arg3) {
   let closure_1;
   let closure_2;
   let closure_0 = arg0;
@@ -192,4 +192,4 @@ export const saveAndClearPermissionUpdates = function saveAndClearPermissionUpda
     const obj2 = { type: "CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS", silent };
     obj.dispatch(obj2);
   });
-};
+}

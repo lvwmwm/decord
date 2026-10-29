@@ -1,105 +1,50 @@
-// Module ID: 8401
-// Function ID: 8402
+// Module ID: 8423
+// Function ID: 8424
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8402, 8403, 2055, 1084, 1294, 584, 6409, 2]
+// Dependencies: [5, 8424, 8425, 2056, 1084, 1294, 584, 6433, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8401 (actions/BoostingActionCreators)
+// Module 8423 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8402 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8403 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8424 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8425 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
 import size from "module_2" /* 2 */;
 
-let boostId, closure_3, closure_4, closure_5;
+let boostId, closure_4, closure_5;
 
 let obj = function _fetchAppliedGuildBoostsForGuild() {
   obj = _asyncToGenerator(async (guildId) => {
     let closure_2;
+    let closure_3;
     let closure_1 = arg1;
     let c4 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let flag;
-          let tmp;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp4;
-              flag = undefined;
-              let obj4 = closure_1;
-              if (closure_1 === undefined) {
-                obj4 = {};
-              }
-              flag = obj4.includeEnded ?? false;
-              tmp = undefined;
-              c4 = 1;
-              c5 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              return { value, done: true };
-            } else {
-              let obj6;
-              const HTTP = closure_131_0(closure_131_2[5]).HTTP;
-              const request = { url: closure_131_7.APPLIED_GUILD_BOOSTS_FOR_GUILD(guildId), oldFormErrors: true, query: obj6, rejectWithError: true };
-              const get = HTTP.get;
-              const tmp23 = flag;
-              if (tmp23) {
-                obj6 = { include_ended: true };
-              }
-              c4 = 2;
-              c5 = 1;
-              const obj7 = { value: get(request), done: false };
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            return { value, done: true };
-          } else {
-            const body = value.body;
-            tmp = body.map((item) => closure_1_4.createFromServer(item));
-            const obj9 = { type: "GUILD_APPLIED_BOOSTS_FETCH_SUCCESS", guildId, appliedBoosts: tmp };
-            obj = closure_131_1(closure_131_2[6]);
-            obj.dispatch(obj9);
-            c5 = 3;
-            return { value: tmp, done: true };
-          }
-        } catch (tmp13) {
-          c5 = 3;
-          throw tmp13;
-        }
+      let obj6;
+      let obj4 = closure_1;
+      if (closure_1 === undefined) {
+        obj4 = {};
       }
+      const flag = obj4.includeEnded ?? false;
+      await "Reflect";
+      const HTTP = closure_131_0(closure_131_2[5]).HTTP;
+      const request = { url: closure_131_7.APPLIED_GUILD_BOOSTS_FOR_GUILD(guildId), oldFormErrors: true, query: obj6, rejectWithError: true };
+      const get = HTTP.get;
+      const tmp23 = flag;
+      if (tmp23) {
+        obj6 = { include_ended: true };
+      }
+      await get(request);
+      const body = value.body;
+      const tmp = body.map((item) => closure_1_4.createFromServer(item));
+      const obj9 = { type: "GUILD_APPLIED_BOOSTS_FETCH_SUCCESS", guildId, appliedBoosts: tmp };
+      obj = closure_131_1(closure_131_2[6]);
+      obj.dispatch(obj9);
+      return tmp;
     })();
     iter.next();
     return iter;
@@ -107,85 +52,28 @@ let obj = function _fetchAppliedGuildBoostsForGuild() {
   return obj(...arguments);
 };
 obj = function _fetchAppliedGuildBoostsForUser() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async () => {
+    let c3;
+    let c4;
     let closure_1;
+    let closure_2;
     let obj5;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let flag;
-        let tmp;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            flag = closure_0;
-            if (closure_0 === undefined) {
-              flag = false;
-            }
-            tmp = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-            const request = { url: closure_130_7.USER_APPLIED_GUILD_BOOSTS, oldFormErrors: true, query: obj5, rejectWithError: true };
-            obj5 = { paused: flag };
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: HTTP.get(request), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          const body = value.body;
-          tmp = body.map((item) => closure_1_4.createFromServer(item));
-          const obj8 = { type: "USER_APPLIED_BOOSTS_FETCH_SUCCESS", appliedGuildBoosts: tmp };
-          obj = closure_130_1(closure_130_2[6]);
-          obj.dispatch(obj8);
-          c4 = 3;
-          const obj9 = { value: tmp, done: true };
-          return obj9;
-        }
-      } catch (tmp17) {
-        c4 = 3;
-        throw tmp17;
-      }
+    let flag = closure_0;
+    if (closure_0 === undefined) {
+      flag = false;
     }
+    await "Reflect";
+    const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+    const request = { url: closure_130_7.USER_APPLIED_GUILD_BOOSTS, oldFormErrors: true, query: obj5, rejectWithError: true };
+    obj5 = { paused: flag };
+    await HTTP.get(request);
+    const body = arg1.body;
+    const tmp = body.map((item) => closure_1_4.createFromServer(item));
+    const obj8 = { type: "USER_APPLIED_BOOSTS_FETCH_SUCCESS", appliedGuildBoosts: tmp };
+    obj = closure_130_1(closure_130_2[6]);
+    obj.dispatch(obj8);
+    return tmp;
   });
   return obj(...arguments);
 };
@@ -228,7 +116,7 @@ obj = function _fetchAppliedBoostsCooldown() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -322,7 +210,7 @@ obj = function _applyToGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -351,7 +239,7 @@ obj = function _applyToGuild() {
               appliedGuildBoostError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -441,7 +329,7 @@ obj = function _unapplyFromGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -495,7 +383,7 @@ obj = function _unapplyFromGuild() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj10);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           closure_4 = tmp28;
@@ -552,25 +440,25 @@ obj = function _uncancelGuildBoostSlot() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/BoostingActionCreators.tsx");
 
-export const fetchAppliedGuildBoostsForGuild = function fetchAppliedGuildBoostsForGuild() {
+export function fetchAppliedGuildBoostsForGuild() {
   return obj(...arguments);
-};
-export const fetchAppliedGuildBoostsForUser = function fetchAppliedGuildBoostsForUser() {
+}
+export function fetchAppliedGuildBoostsForUser() {
   return obj(...arguments);
-};
+}
 export { fetchGuildBoostSlots };
-export const fetchAppliedBoostsCooldown = function fetchAppliedBoostsCooldown() {
+export function fetchAppliedBoostsCooldown() {
   return obj(...arguments);
-};
-export const applyToGuild = function applyToGuild() {
+}
+export function applyToGuild() {
   return obj(...arguments);
-};
-export const unapplyFromGuild = function unapplyFromGuild() {
+}
+export function unapplyFromGuild() {
   return obj(...arguments);
-};
-export const cancelGuildBoostSlot = function cancelGuildBoostSlot() {
+}
+export function cancelGuildBoostSlot() {
   return obj(...arguments);
-};
-export const uncancelGuildBoostSlot = function uncancelGuildBoostSlot() {
+}
+export function uncancelGuildBoostSlot() {
   return obj(...arguments);
-};
+}

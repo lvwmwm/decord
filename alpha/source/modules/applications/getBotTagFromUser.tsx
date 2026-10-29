@@ -1,17 +1,17 @@
-// Module ID: 10704
-// Function ID: 10705
+// Module ID: 10737
+// Function ID: 10738
 // Name: getBotTagFromUser
 // Dependencies: [1372, 2]
 // Exports: getBotTagTypeFromUser
 
-// Module 10704 (getBotTagFromUser)
+// Module 10737 (getBotTagFromUser)
 import ApplicationConstants from "ApplicationConstants" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 const BotTagTypes = ApplicationConstants.BotTagTypes;
 const result = size.fileFinishedImporting("modules/applications/getBotTagFromUser.tsx");
 
-export const getBotTagTypeFromUser = function getBotTagTypeFromUser(user) {
+export function getBotTagTypeFromUser(user) {
   let BOT;
   if (user.isSystemUser()) {
     BOT = BotTagTypes.SYSTEM_DM;
@@ -19,4 +19,4 @@ export const getBotTagTypeFromUser = function getBotTagTypeFromUser(user) {
     BOT = BotTagTypes.BOT;
   }
   return BOT;
-};
+}

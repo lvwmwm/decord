@@ -1,9 +1,9 @@
-// Module ID: 6713
-// Function ID: 6714
+// Module ID: 6736
+// Function ID: 6737
 // Name: SignalHelpers
-// Dependencies: [5, 3, 6714, 6715, 2]
+// Dependencies: [5, 3, 6737, 6738, 2]
 
-// Module 6713 (SignalHelpers)
+// Module 6736 (SignalHelpers)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ class SignalHelpers {
             return obj;
           } else {
             credentials = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp4) {
           credentials = 3;
@@ -85,7 +85,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ class SignalHelpers {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp15) {
           c2 = 3;
@@ -153,7 +153,7 @@ class SignalHelpers {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ class SignalHelpers {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp10) {
           c0 = 3;

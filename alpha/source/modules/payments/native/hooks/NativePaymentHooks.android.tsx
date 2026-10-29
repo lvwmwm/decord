@@ -1,17 +1,17 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9863
+// Function ID: 9864
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 502, 7559, 3, 558, 576, 504, 12, 9832, 4820, 2062, 2]
+// Dependencies: [5, 32, 19, 502, 7582, 3, 558, 576, 504, 12, 9864, 4821, 2063, 2]
 // Exports: useNativeIAPPayments
 
-// Module 9831 (NativePaymentHooks)
+// Module 9863 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 7559 */;
+import IAPStore from "IAPStore" /* 7582 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoogleS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoogleS
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {
@@ -249,7 +249,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoogleS
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -311,7 +311,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoogleS
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp34) {
             closure_2 = tmp34;
             if (0 === c3) {

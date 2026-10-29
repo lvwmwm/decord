@@ -1,15 +1,15 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14255
+// Function ID: 14256
 // Name: DebugUploadManager
-// Dependencies: [5, 4856, 3, 17, 6409, 5933, 14023, 7, 14024, 14025, 562, 5193, 14026, 14027, 14028, 14029, 2]
+// Dependencies: [5, 4857, 3, 17, 6433, 5935, 14256, 7, 14257, 14258, 562, 5194, 14259, 14260, 14261, 14262, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 14022 (DebugUploadManager)
+// Module 14255 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;
@@ -45,7 +45,7 @@ let obj = function _uploadDebugLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp33) {
           closure_4 = tmp33;
@@ -149,7 +149,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp80;
@@ -308,7 +308,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;
@@ -353,7 +353,7 @@ const tmp2 = new LoggerDefault("DebugUploadManager");
 const CrashReportingManager = react_native.NativeModules.CrashReportingManager;
 let result = size.fileFinishedImporting("modules/debug/DebugUploadManager.tsx");
 
-export const uploadDebugLogFiles = function uploadDebugLogFiles() {
+export function uploadDebugLogFiles() {
   return obj(...arguments);
-};
+}
 export { uploadAppLogFiles };

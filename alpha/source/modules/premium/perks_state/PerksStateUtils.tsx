@@ -61,7 +61,7 @@ function getPerkSource(perks, MONTHLY_ORBS) {
 }
 const result = size.fileFinishedImporting("modules/premium/perks_state/PerksStateUtils.tsx");
 
-export const parseServerPerks = function parseServerPerks(perks) {
+export function parseServerPerks(perks) {
   let first;
   let tmp7;
   if (null == perks) {
@@ -79,8 +79,8 @@ export const parseServerPerks = function parseServerPerks(perks) {
     }
     return { activePerksBitmask: perks.active_perks_bitmask, configByPerk: obj2, rulesVersion: perks.rules_version };
   }
-};
-export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
+}
+export function hasPerk(perks, MONTHLY_ORBS) {
   if (null == perks) {
     return false;
   } else {
@@ -98,9 +98,9 @@ export const hasPerk = function hasPerk(perks, MONTHLY_ORBS) {
     }
     return hasItem;
   }
-};
+}
 export { getPerkSource };
-export const getPerkConfig = function getPerkConfig(perks, MONTHLY_ORBS) {
+export function getPerkConfig(perks, MONTHLY_ORBS) {
   if (null != perks) {
     const _String = String;
     const tmp3 = perks.configByPerk[String(undefined, MONTHLY_ORBS)];
@@ -109,4 +109,4 @@ export const getPerkConfig = function getPerkConfig(perks, MONTHLY_ORBS) {
       return obj;
     }
   }
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7594
+// Function ID: 7595
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7572, 5734, 7575, 558, 4919, 1266, 7576, 12, 7381, 4820, 7577, 2]
+// Dependencies: [5, 32, 19, 7595, 5736, 7598, 558, 4920, 1266, 7599, 12, 7404, 4821, 7600, 2]
 // Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 7571 (NativeCheckoutStore)
+// Module 7594 (NativeCheckoutStore)
 import _mod1266 from "module_1266" /* 1266 */;
-import _slicedToArray2 from "_slicedToArray" /* 4919 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
-import ContextUtilsDefault from "ContextUtils" /* 7575 */;
+import _slicedToArray2 from "_slicedToArray" /* 4920 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
+import ContextUtilsDefault from "ContextUtils" /* 7598 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7572 */;
+import OrderRecord from "OrderRecord" /* 7595 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutS
 
 export const NativeCheckoutStoreContextOrNull = context;
 export const useNativeCheckoutStore = tmp6;
-export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(cResult, shallow) {
+export function useNativeCheckoutStoreOrNull(cResult, shallow) {
   if (shallow === undefined) {
     shallow = _slicedToArray2.shallow;
   }
@@ -53,8 +53,8 @@ export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNul
     storeWithEqualityFn = obj.useStoreWithEqualityFn(context, cResult, shallow);
   }
   return storeWithEqualityFn;
-};
-export const createNativeStore = function createNativeStore(arg0) {
+}
+export function createNativeStore(arg0) {
   ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
   let obj = _mod1266;
   return obj.createWithEqualityFn((arg0, arg1) => {
@@ -80,7 +80,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -156,7 +156,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -220,7 +220,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               closure_130_0(obj);
             }
             paymentGateway = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp23) {
             paymentGateway = 3;
             throw tmp23;
@@ -246,7 +246,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -333,7 +333,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp40) {
             c7 = 3;
             throw tmp40;
@@ -417,7 +417,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -525,7 +525,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -599,7 +599,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp39) {
           closure_3 = tmp39;
@@ -627,7 +627,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -701,7 +701,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp38) {
           closure_2 = tmp38;
@@ -718,5 +718,5 @@ export const createNativeStore = function createNativeStore(arg0) {
     });
     return obj;
   }, _slicedToArray2.shallow);
-};
+}
 export const NativeCheckoutStoreContext = first;

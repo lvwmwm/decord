@@ -1,12 +1,12 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7424
+// Function ID: 7425
 // Name: canReviewGuildMemberApplications
-// Dependencies: [4878, 4936, 1084, 558, 576, 504, 6930, 2]
+// Dependencies: [4879, 4937, 1084, 558, 576, 504, 6954, 2]
 // Exports: canReviewGuildMemberApplications
 
-// Module 7401 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+// Module 7424 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -80,14 +80,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRevi
     hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    const tmpResult = tmp(6930);
+    const tmpResult = tmp(6954);
     hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
   }
   return hasItem;
 });
 const result = size.fileFinishedImporting("modules/guild_member_verification/canReviewGuildMemberApplications.tsx");
 
-export const canReviewGuildMemberApplications = function canReviewGuildMemberApplications(c0) {
+export function canReviewGuildMemberApplications(c0) {
   const guild = GuildStore.getGuild(c0);
   let tmp2 = null != guild;
   if (tmp2) {
@@ -96,5 +96,5 @@ export const canReviewGuildMemberApplications = function canReviewGuildMemberApp
     tmp2 = hasItem;
   }
   return tmp2;
-};
+}
 export const useCanReviewGuildMemberApplications = tmp3;

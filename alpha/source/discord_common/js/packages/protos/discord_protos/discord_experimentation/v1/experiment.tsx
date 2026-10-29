@@ -1,14 +1,14 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8546
+// Function ID: 8547
 // Name: experiment
-// Dependencies: [32, 1209, 1238, 1239, 8525, 8526, 2]
+// Dependencies: [32, 1209, 1238, 1239, 8547, 8548, 2]
 
-// Module 8524 (experiment)
+// Module 8546 (experiment)
 import _mod1209 from "module_1209" /* 1209 */;
 import timestamp from "timestamp" /* 1238 */;
 import wrappers from "wrappers" /* 1239 */;
-import rules from "rules" /* 8525 */;
-import duration from "duration" /* 8526 */;
+import rules from "rules" /* 8547 */;
+import duration from "duration" /* 8548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -289,6 +289,7 @@ class Experiment$Type extends MessageType {
       },
     ,
     ,
+    ,
 
     ];
     const obj = { no: 42, name: "eligibility_persistence", kind: "enum", T };
@@ -308,11 +309,12 @@ class Experiment$Type extends MessageType {
       }
     };
     items[45] = { no: 49, name: "is_feature_flag", kind: "scalar", T: 8 };
+    items[46] = { no: 50, name: "is_official_holdout", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.Experiment", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { id: "0", name: "", creatorId: "0", version: 0, editorId: "0", title: "", description: "", revision: 0, hashKey: "", unitType: 0, variations: [], rules: [], phase: 0, surfaces: [], owningTeamId: "", cachedNotificationChannelId: "0", exposureTracking: 0, assignmentMode: 0, enableEditRawJsonUi: false, winningVariationId: 0, extraOutcomeContext: "", type: 0, isTemplate: false, fieldNumbersToCopy: [], engineFeatureFlags: [], isAutomatedChange: false, suppressEditorMention: false, customUnitPrefix: 0, exposurePoints: [], dynamicConfigModel: "", growthbookTags: [], allocateRightToLeft: false, isManaged: false, eligibilityPersistence: 0, isFeatureFlag: false };
+    const obj = { id: "0", name: "", creatorId: "0", version: 0, editorId: "0", title: "", description: "", revision: 0, hashKey: "", unitType: 0, variations: [], rules: [], phase: 0, surfaces: [], owningTeamId: "", cachedNotificationChannelId: "0", exposureTracking: 0, assignmentMode: 0, enableEditRawJsonUi: false, winningVariationId: 0, extraOutcomeContext: "", type: 0, isTemplate: false, fieldNumbersToCopy: [], engineFeatureFlags: [], isAutomatedChange: false, suppressEditorMention: false, customUnitPrefix: 0, exposurePoints: [], dynamicConfigModel: "", growthbookTags: [], allocateRightToLeft: false, isManaged: false, eligibilityPersistence: 0, isFeatureFlag: false, isOfficialHoldout: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
@@ -620,6 +622,10 @@ class Experiment$Type extends MessageType {
     if (false !== id.isFeatureFlag) {
       const tagResult45 = tag.tag(49, _mod1209.WireType.Varint);
       tagResult45.bool(id.isFeatureFlag);
+    }
+    if (false !== id.isOfficialHoldout) {
+      const tagResult46 = tag.tag(50, _mod1209.WireType.Varint);
+      tagResult46.bool(id.isOfficialHoldout);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {

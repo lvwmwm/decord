@@ -1,14 +1,14 @@
-// Module ID: 2044
-// Function ID: 2045
+// Module ID: 2045
+// Function ID: 2046
 // Name: SKURecord
-// Dependencies: [1404, 2021, 2045, 1084, 2046, 2047, 2049, 1402, 2]
+// Dependencies: [1404, 2022, 2046, 1084, 2047, 2048, 2050, 1402, 2]
 
-// Module 2044 (SKURecord)
-import SKUConstants from "SKUConstants" /* 2045 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 2047 */;
+// Module 2045 (SKURecord)
+import SKUConstants from "SKUConstants" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 2048 */;
 import Record from "Record" /* 1404 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(2049);
+const transformSKUTenantMetadataDefault = tmp15(2050);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {
@@ -68,11 +68,11 @@ class SKURecord extends Record {
     }
     tmp6 = null;
     if (null != id.release_date) {
-      tmp6 = _modDef2046(id.release_date);
+      tmp6 = _modDef2047(id.release_date);
     }
     tmp9 = null;
     if (null != id.preorder_release_at) {
-      tmp9 = _modDef2046(id.preorder_release_at);
+      tmp9 = _modDef2047(id.preorder_release_at);
     }
     ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
     new Set(id.features);
@@ -126,8 +126,8 @@ class SKURecord extends Record {
     }
     tmp17 = null;
     if (null != id.preview_asset_paths) {
-      tmp17 = { fgStatic: id.preview_asset_paths.fg_static, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
-      const obj5 = { fgStatic: id.preview_asset_paths.fg_static, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
+      tmp17 = { fgStatic: id.preview_asset_paths.fg_static, fgVideo: id.preview_asset_paths.fg_video, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
+      const obj5 = { fgStatic: id.preview_asset_paths.fg_static, fgVideo: id.preview_asset_paths.fg_video, fgAnimated: id.preview_asset_paths.fg_animated, bgStatic: id.preview_asset_paths.bg_static, bgAnimated: id.preview_asset_paths.bg_animated };
     }
     return new tmp(obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 6942
-// Function ID: 6943
+// Module ID: 6966
+// Function ID: 6967
 // Name: CardTokens
-// Dependencies: [5004, 587, 2]
+// Dependencies: [5005, 587, 2]
 // Exports: createCardShadowToken
 
-// Module 6942 (CardTokens)
+// Module 6966 (CardTokens)
 import nativeDefault from "native" /* 587 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let _require;
 
 const result = size.fileFinishedImporting("design/components/Card/native/CardTokens.native.tsx");
 
-export const createCardShadowToken = function createCardShadowToken(arg0) {
+export function createCardShadowToken(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("createStyles");
@@ -35,4 +35,4 @@ export const createCardShadowToken = function createCardShadowToken(arg0) {
     }
     return {};
   });
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 13178
+// Function ID: 13179
 // Name: getInlineForwardOptions
-// Dependencies: [1084, 6035, 2]
+// Dependencies: [1084, 6039, 2]
 // Exports: getInlineForwardOptions
 
-// Module 12957 (getInlineForwardOptions)
+// Module 13178 (getInlineForwardOptions)
 import Constants from "Constants" /* 1084 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6035 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
 import size from "module_2" /* 2 */;
 
 let filename;
@@ -14,7 +14,7 @@ let filename;
 const MessageReferenceTypes = Constants.MessageReferenceTypes;
 const result = size.fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");
 
-export const getInlineForwardOptions = function getInlineForwardOptions(message, nativeSyntheticEventData) {
+export function getInlineForwardOptions(message, nativeSyntheticEventData) {
   let embedIndex;
   let items;
   let targetKind;
@@ -68,4 +68,4 @@ export const getInlineForwardOptions = function getInlineForwardOptions(message,
       obj = {};
     }
   }
-};
+}

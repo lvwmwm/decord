@@ -9,14 +9,14 @@ import _mod740 from "module_740" /* 740 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createMetricContainerEnvelopeItem = function createMetricContainerEnvelopeItem(items) {
+export function createMetricContainerEnvelopeItem(items) {
   items = [, ];
   const obj = { type: "trace_metric", item_count: items.length, content_type: "application/vnd.sentry.items.trace-metric+json" };
   items[0] = obj;
   items[1] = { items };
   return items;
-};
-export const createMetricEnvelope = function createMetricEnvelope(items, sdk, arg2, arg3) {
+}
+export function createMetricEnvelope(items, sdk, arg2, arg3) {
   sdk = undefined;
   if (sdk != null) {
     sdk = sdk.sdk;
@@ -38,4 +38,4 @@ export const createMetricEnvelope = function createMetricEnvelope(items, sdk, ar
   const items1 = [items];
   const obj4 = _mod740;
   return obj4.createEnvelope(obj, items1);
-};
+}

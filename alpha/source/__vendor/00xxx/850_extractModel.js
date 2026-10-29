@@ -73,7 +73,7 @@ function addPrivateRequestAttributes(setAttribute, config) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const extractModel = function extractModel(model, model2) {
+export function extractModel(model, model2) {
   if ("model" in model) {
     if (typeof model.model === "string") {
       return model.model;
@@ -95,8 +95,8 @@ export const extractModel = function extractModel(model, model2) {
     }
   }
   return "unknown";
-};
-export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(arg0, arg1) {
+}
+export function instrumentGoogleGenAIClient(arg0, arg1) {
   let c0;
   let obj2;
   function get(self, arg1, arg2) {
@@ -250,7 +250,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -520,4 +520,4 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
   const obj3 = { get };
   const proxy = new Proxy(arg0, obj3);
   return proxy;
-};
+}

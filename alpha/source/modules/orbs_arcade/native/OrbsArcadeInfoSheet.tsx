@@ -1,14 +1,14 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16932
+// Function ID: 16933
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 16662, 21, 558, 576, 504, 16681, 1125, 16682, 10894, 2]
+// Dependencies: [19, 16900, 21, 558, 576, 504, 16919, 1125, 16920, 10799, 2]
 
-// Module 16694 (OrbsArcadeInfoSheet)
+// Module 16932 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 16681 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16682 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 16919 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 16920 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
     if (cResult[8] !== stateFromStores) {
       OrbsArcadeSheetActionsDefault;
-      const tmp22 = <tmp20 game={stateFromStores} sheetKey={OrbsArcadeInfoSheet_str} secondaryAction={gameId(16682).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY} direction="vertical" />;
+      const tmp22 = <tmp20 game={stateFromStores} sheetKey={OrbsArcadeInfoSheet_str} secondaryAction={gameId(16920).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY} direction="vertical" />;
       cResult[8] = stateFromStores;
       cResult[9] = tmp22;
       tmp17 = tmp22;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
       }
       return tmp23;
     }
-    const tmp25 = jsx(gameId(10894).PromoSheet, { illustration: tmp9, title: tmp13, description: tmp14, actions: tmp17 });
+    const tmp25 = jsx(gameId(10799).PromoSheet, { illustration: tmp9, title: tmp13, description: tmp14, actions: tmp17 });
     cResult[10] = tmp9;
     cResult[11] = tmp17;
     cResult[12] = tmp25;
@@ -110,14 +110,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
   } else {
     const asset = stateFromStores.asset;
     let tmp9Result;
-    const PromoSheet = tmp(10894).PromoSheet;
+    const PromoSheet = tmp(10799).PromoSheet;
     if (null != asset) {
       const obj2 = { asset };
       tmp9Result = tmp9(OrbsArcadeGameGraphicDefault, obj2);
     }
     const intl = tmp(1125).intl;
     const intl2 = tmp(1125).intl;
-    ({ game: stateFromStores, sheetKey: OrbsArcadeInfoSheet_str, secondaryAction: gameId(16682).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: OrbsArcadeInfoSheet_str, secondaryAction: gameId(16920).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     return <PromoSheet illustration={tmp9Result} title={intl.string(gameId(1125).t["3AT3DL"])} description={intl2.string(gameId(1125).t.GSj8gp)} actions={null} />;
   }

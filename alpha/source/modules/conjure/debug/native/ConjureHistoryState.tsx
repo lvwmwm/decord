@@ -1,18 +1,18 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12828
+// Function ID: 12829
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1125, 3863, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 3864, 5271, 2]
 
-// Module 12611 (ConjureHistoryState)
+// Module 12828 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
     let stringResult = emptyBody;
     if ("failed" === state.status) {
       const intl2 = tmp(1125).intl;
-      stringResult = intl2.string(_modDef3863["8SErdg"]);
+      stringResult = intl2.string(_modDef3864["8SErdg"]);
     }
     cResult[5] = emptyBody;
     cResult[6] = "failed" === state.status;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
   let stringResult1 = emptyTitle;
   if ("failed" === state.status) {
     const intl = tmp(1125).intl;
-    stringResult1 = intl.string(_modDef3863.h1SE6R);
+    stringResult1 = intl.string(_modDef3864.h1SE6R);
   }
   cResult[0] = emptyTitle;
   cResult[1] = "failed" === state.status;
@@ -120,13 +120,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
   const Text = Text_Text.Text;
   if ("failed" === state.state.status) {
     const intl = tmp5(1125).intl;
-    emptyTitle = intl.string(_modDef3863.h1SE6R);
+    emptyTitle = intl.string(_modDef3864.h1SE6R);
   }
   items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5270).Text;
+  const Text2 = tmp5(5271).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1125).intl;
-    emptyBody = intl2.string(_modDef3863["8SErdg"]);
+    emptyBody = intl2.string(_modDef3864["8SErdg"]);
   }
   items[1] = React3(Text2, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
@@ -145,8 +145,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
       let first;
       const _Symbol2 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3863.h1SE6R) };
-        const Text2 = tmp(5270).Text;
+        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3864.h1SE6R) };
+        const Text2 = tmp(5271).Text;
         intl2 = tmp(1125).intl;
         const tmp15 = React3(Text2, obj2);
         cResult[0] = tmp15;
@@ -161,8 +161,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
         let tmp6;
         const _Symbol = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3863.V7Ri8H) };
-          const Text = tmp(5270).Text;
+          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3864.V7Ri8H) };
+          const Text = tmp(5271).Text;
           intl = tmp(1125).intl;
           const tmp9 = React3(Text, obj3);
           cResult[1] = tmp9;
@@ -184,14 +184,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3863.h1SE6R) };
+      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3864.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3863.V7Ri8H) };
+        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3864.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

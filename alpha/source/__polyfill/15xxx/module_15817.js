@@ -1,18 +1,21 @@
 // Module ID: 15817
 // Function ID: 15818
-// Dependencies: [15818]
+// Dependencies: []
 
 // Module 15817
-import _mod15818 from "module_15818" /* 15818 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default function(arg0) {
-  if (_mod15818(arg0)) {
-    const self = this;
-    const self2 = this;
-    const tmp2 = new TypeError("Can't call method on " + arg0);
-    throw tmp2;
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
   } else {
-    return arg0;
+    tmp2 = closure_1;
   }
+  return tmp2;
 };

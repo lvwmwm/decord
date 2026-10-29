@@ -1,10 +1,10 @@
-// Module ID: 10046
-// Function ID: 10047
+// Module ID: 10078
+// Function ID: 10079
 // Name: Summary
 // Dependencies: [2]
 // Exports: createSummaryFromServer
 
-// Module 10046 (Summary)
+// Module 10078 (Summary)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/summaries/Summary.tsx");
 
 export const SummarySources = { SOURCE_0: 0, [0]: "SOURCE_0", SOURCE_1: 1, [1]: "SOURCE_1" };
 export const SummaryType = { UNSET: 0, [0]: "UNSET", SOURCE_1: 1, [1]: "SOURCE_1", SOURCE_2: 2, [2]: "SOURCE_2" };
-export const createSummaryFromServer = function createSummaryFromServer(summary, channelId) {
+export function createSummaryFromServer(summary, channelId) {
   let from;
   const obj = { id: summary.id, topic: summary.topic, summShort: summary.summ_short, people: from(set), startId: null, endId: null, count: null, channelId, source: null, type: null };
   from = Array.from;
@@ -21,4 +21,4 @@ export const createSummaryFromServer = function createSummaryFromServer(summary,
   ({ source: obj.source, type: obj.type } = summary);
   set = new Set(summary.people);
   return obj;
-};
+}

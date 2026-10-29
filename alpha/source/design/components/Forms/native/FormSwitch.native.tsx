@@ -1,21 +1,21 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7356
+// Function ID: 7357
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 5085, 5004, 587, 5282, 5018, 5283, 5284, 5288, 6938, 7333, 5248, 5249, 2]
+// Dependencies: [32, 19, 17, 21, 5086, 5005, 587, 5283, 5019, 5284, 5285, 5289, 6962, 7357, 5249, 5250, 2]
 // Exports: FormSwitch
 
-// Module 7332 (FormSwitch)
+// Module 7356 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import IconDefault from "Icon" /* 5282 */;
-import spring from "spring" /* 5283 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5086 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import IconDefault from "Icon" /* 5283 */;
+import spring from "spring" /* 5284 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -26,7 +26,7 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5284);
+const springPresets = tmp3(5285);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let ReanimatedRexport = ReanimatedRexport_mod;
@@ -47,7 +47,7 @@ let closure_11 = { code: "function FormSwitchNativeTsx3(){const{progress,interpo
 size = size_mod;
 let result = size.fileFinishedImporting("design/components/Forms/native/FormSwitch.native.tsx");
 
-export const FormSwitch = function FormSwitch(onValueChange) {
+export function FormSwitch(onValueChange) {
   let accessibilityHint;
   let accessibilityLabel;
   let disabled;
@@ -262,4 +262,4 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   obj10 = { style: items4, children: tmp25Result };
   items4 = [tmp10.knob, animatedStyle1];
   return token(token1, obj9);
-};
+}

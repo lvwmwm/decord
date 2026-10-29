@@ -1,11 +1,11 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18780
+// Function ID: 18781
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 558, 576, 12856, 12857, 1125, 3863, 12319, 6013, 5270, 5950, 5946, 2]
+// Dependencies: [5, 32, 19, 21, 558, 576, 13077, 13078, 1125, 3864, 12373, 6015, 5271, 5952, 5948, 2]
 // Exports: default
 
-// Module 18546 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 5946 */;
+// Module 18780 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 5948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -187,7 +187,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           length = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp31) {
           length = 3;
           throw tmp31;
@@ -297,7 +297,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;
@@ -373,7 +373,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   const tmp6 = tmp4[1];
   [tmp8, c5] = checked(react.useState(null), 2);
   const tmp7 = checked(react.useState(null), 2);
-  let obj2 = { title: intl.string(tmp(tmp2[8]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_3863")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
+  let obj2 = { title: intl.string(tmp(tmp2[8]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_3864")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
   const AlertModal = tmp(tmp2[13]).AlertModal;
   intl = tmp(tmp2[8]).intl;
   tmpResult2 = tmp(tmp2[10]);

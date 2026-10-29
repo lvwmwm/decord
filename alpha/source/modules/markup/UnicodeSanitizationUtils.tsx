@@ -1,10 +1,10 @@
-// Module ID: 6022
-// Function ID: 6023
+// Module ID: 6026
+// Function ID: 6027
 // Name: UnicodeSanitizationUtils
 // Dependencies: [1383, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 6022 (UnicodeSanitizationUtils)
+// Module 6026 (UnicodeSanitizationUtils)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
 import size from "module_2" /* 2 */;
 
@@ -219,21 +219,21 @@ let result = size.fileFinishedImporting("modules/markup/UnicodeSanitizationUtils
 
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX = regExp;
 export const BLANK_CHARACTERS_TO_SANITIZE_REGEX_EXCLUDING_TABS = regExp1;
-export const sanitizeWhitespace = function sanitizeWhitespace(src) {
+export function sanitizeWhitespace(src) {
   return src.replace(regExp, "");
-};
-export const sanitizeWhitespaceExcludingTabs = function sanitizeWhitespaceExcludingTabs(substr) {
+}
+export function sanitizeWhitespaceExcludingTabs(substr) {
   return substr.replace(regExp1, "");
-};
+}
 export const UNICODE_CONFUSABLES_FOR_URL_DETECTION = items2;
-export const sanitizeUnicodeConfusables = function sanitizeUnicodeConfusables(sanitizeWhitespaceResult) {
+export function sanitizeUnicodeConfusables(sanitizeWhitespaceResult) {
   let closure_0 = sanitizeWhitespaceResult;
   const item = items2.forEach((matcher) => {
     closure_0 = closure_0.replace(matcher.matcher, matcher.character);
   });
   return closure_0;
-};
-export const safelyMakeUrlHumanReadable = function safelyMakeUrlHumanReadable(uRL) {
+}
+export function safelyMakeUrlHumanReadable(uRL) {
   let protocol;
   let startsWithResult = "null" === uRL.origin;
   if (startsWithResult) {
@@ -266,4 +266,4 @@ export const safelyMakeUrlHumanReadable = function safelyMakeUrlHumanReadable(uR
   const sum = protocol + safelyPartiallyDecodeURIComponent(uRL.pathname);
   const sum1 = sum + safelyPartiallyDecodeURIComponent(uRL.search);
   return sum1 + safelyPartiallyDecodeURIComponent(uRL.hash);
-};
+}

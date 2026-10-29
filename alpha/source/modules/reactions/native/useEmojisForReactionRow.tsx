@@ -1,12 +1,12 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14457
+// Function ID: 14458
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1392, 558, 576, 9863, 1496, 4954, 2]
+// Dependencies: [19, 1392, 558, 576, 9895, 1497, 4955, 2]
 
-// Module 14223 (useEmojisForReactionRow)
+// Module 14457 (useEmojisForReactionRow)
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojisFor
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(9863);
+  const tmpResult = tmp(9895);
   const frequentlyUsedReactionEmojis = tmpResult.useFrequentlyUsedReactionEmojis(tmp4);
   const rounded = Math.floor(Math.min(useWindowDimensionsDefault().width, arg1) / arg2);
   if (cResult[2] === getGuildId) {

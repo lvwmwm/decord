@@ -16,7 +16,7 @@ let closure_52;
 let closure_53;
 let closure_54;
 let closure_55;
-const f87494 = (__h) => {
+const f88501 = (__h) => {
   let closure_0 = __h;
   try {
     __h = __h.__h;
@@ -165,7 +165,7 @@ function y$1(span, arg1, formTitle) {
       }
     }
   }
-  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "mindre end \u00E9t sekund", __u: "mindre end {{count}} sekunder" };
+  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "5.9.4", __u: 24 };
   sum = sum + 1;
   const obj3 = obj;
   if (null != obj.vnode) {
@@ -478,7 +478,7 @@ class C$1 {
         if (obj.__c) {
           let __cResult1 = obj3.__c(tmp8, items);
         }
-        let someResult = items.some(f87494);
+        let someResult = items.some(f88501);
         items.length = 0;
         items1.length = 0;
         let sorted1 = arr3.sort(H);
@@ -502,7 +502,7 @@ class C$1 {
       if (obj.__c) {
         obj4.__c(tmp4, items);
       }
-      items.some(f87494);
+      items.some(f88501);
     }
     C$1.__r = 0;
   }
@@ -542,7 +542,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                   if (tmp3.constructor != String) {
                     if (isArray(tmp3)) {
                       obj = { children: tmp3 };
-                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "mindre end \u00E9t sekund", __u: "mindre end {{count}} sekunder" };
+                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "5.9.4", __u: 24 };
                       sum = sum + 1;
                       let obj4 = obj;
                       tmp8 = element;
@@ -561,7 +561,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                             ref1 = tmp3.ref;
                           }
                           let __v = tmp3.__v;
-                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "mindre end \u00E9t sekund", __u: "mindre end {{count}} sekunder" };
+                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "5.9.4", __u: 24 };
                           tmp10 = __v;
                           if (null == __v) {
                             let sum1 = sum + 1;
@@ -585,7 +585,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                 }
               }
             }
-            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "mindre end \u00E9t sekund", __u: "mindre end {{count}} sekunder" };
+            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "5.9.4", __u: 24 };
             tmp21 = tmp3;
             if (null == tmp3) {
               let sum2 = sum + 1;
@@ -1937,14 +1937,14 @@ let shouldComponentUpdate = function y(t, fn, fn2) {
       __c.u = true;
       let closure_2 = __c.shouldComponentUpdate;
       const componentWillUpdate = __c.componentWillUpdate;
-      __c.componentWillUpdate = function(D, keys, length) {
+      __c.componentWillUpdate = function(arg0, arg1, arg2) {
         const self = this;
         if (this.__e) {
           closure_2 = undefined;
-          fn(D, keys, length);
+          fn(arg0, arg1, arg2);
         }
         if (componentWillUpdate) {
-          componentWillUpdate.call(self, D, keys, length);
+          componentWillUpdate.call(self, arg0, arg1, arg2);
         }
       };
       __c.shouldComponentUpdate = shouldComponentUpdate;
@@ -2196,12 +2196,12 @@ function Form(onSubmitError) {
     input = screenshotInput.input;
   }
   [tmp12, c14] = tmp3(tmp(tmp2, null), 2);
-  const f87502 = (arg0) => {
+  const f88509 = (arg0) => {
     _undefined(arg0);
     closure_1_13(false);
   };
   items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
-  const f87503 = (name) => {
+  const f88510 = (name) => {
     let tmp2 = isEmailRequired;
     let tmp3 = isNameRequired;
     const tmp = emailLabel;
@@ -2233,8 +2233,8 @@ function Form(onSubmitError) {
   };
   c46 = 8;
   tmp3(tmp(tmp2, null), 2);
-  const tmp14 = fn2(() => f87507, []);
-  closure_15 = fn2(() => f87507, items);
+  const tmp14 = fn2(() => f88514, []);
+  closure_15 = fn2(() => f88514, items);
   let closure_0 = screenshotInput(function*(arg0, value) {
     let closure_2;
     let tmp33;
@@ -2249,7 +2249,7 @@ function Form(onSubmitError) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let closure_3;
@@ -2296,7 +2296,7 @@ function Form(onSubmitError) {
               tags = 0;
               closure_1_10(false);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else if (1 === c5) {
@@ -2337,7 +2337,7 @@ function Form(onSubmitError) {
               tags = 0;
               closure_1_10(false);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else {
@@ -2371,7 +2371,7 @@ function Form(onSubmitError) {
           tags = 0;
           closure_1_10(false);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp60) {
         closure_3 = tmp60;
@@ -2391,11 +2391,11 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  const f142708 = function(arg0) {
-    return f142708(...arguments);
+  const f144256 = function(arg0) {
+    return f144256(...arguments);
   };
   c46 = 8;
-  obj = { class: "form", onSubmit: tmp13(() => f87507, items1) };
+  obj = { class: "form", onSubmit: tmp13(() => f88514, items1) };
   let tmp15Result = null;
   if (input) {
     tmp15Result = null;
@@ -2542,16 +2542,16 @@ function Dialog(onFormSubmitted) {
   first = tmp3[0];
   let closure_3 = tmp3[1];
   items = [first];
-  const f87506 = () => {
+  const f88513 = () => {
     if (first) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp);
       closure_1_3(null);
     }
-    f87506();
+    f88513();
   };
   [][0] = onFormSubmitted;
-  const f87507 = (arg0, arg1) => {
+  const f88514 = (arg0, arg1) => {
     merged.onSubmitSuccess(arg0, arg1);
     closure_1_3(setTimeout(() => {
       closure_1_0();
@@ -2559,7 +2559,7 @@ function Dialog(onFormSubmitted) {
     }, 5000));
   };
   c46 = 8;
-  const tmp5 = fn2(() => f87507, items);
+  const tmp5 = fn2(() => f88514, items);
   const tmp8 = g$1;
   if (first) {
     const obj2 = { class: "success__position", onClick: tmp5 };
@@ -2872,14 +2872,14 @@ let closure_47 = [];
 const __V = [];
 ({ __b: closure_50, __r: closure_51, diffed: closure_52, __c: closure_53, unmount: closure_54, __: closure_55 } = obj);
 let closure_60 = typeof requestAnimationFrame === "function";
-const fn3 = function p(keys) {
+const fn3 = function p(arg0) {
   c46 = 1;
-  return fn(D, keys);
+  return fn(D, arg0);
 };
 const fn4 = function x(arg0, arg1) {
   let closure_0 = arg0;
   c46 = 8;
-  return fn2(() => f87507, arg1);
+  return fn2(() => f88514, arg1);
 };
 let merged = Object.assign({ useCallback: null, useContext: null, useDebugValue: null, useEffect: null, useErrorBoundary: null, useId: null, useImperativeHandle: null, useLayoutEffect: null, useMemo: null, useReducer: null, useRef: null, useState: null });
 merged[0] = fn4;
@@ -3003,12 +3003,12 @@ merged[4] = function b(__) {
   let closure_1 = tmp9;
   __H.__[+closure_42].__ = __;
   if (!__c.componentDidCatch) {
-    __c.componentDidCatch = (tmpResult, arg1) => {
+    __c.componentDidCatch = (arg0, arg1) => {
       obj = constants;
       if (constants.__) {
-        obj.__(tmpResult, arg1);
+        obj.__(arg0, arg1);
       }
-      closure_1[1](tmpResult);
+      closure_1[1](arg0);
     };
   }
   items = [
@@ -3333,7 +3333,7 @@ export const buildFeedbackIntegration = (arg0) => {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -3583,7 +3583,7 @@ export const buildFeedbackIntegration = (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -3631,7 +3631,7 @@ export const buildFeedbackIntegration = (arg0) => {
               c2.appendToDom();
               c2.open();
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } catch (tmp14) {
               c2 = 3;
               throw tmp14;
@@ -3970,7 +3970,7 @@ export const buildFeedbackIntegration = (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -4219,7 +4219,7 @@ export const feedbackModalIntegration = () => {
         if (closure_2_13.__c) {
           obj3.__c(tmpResult2, __h);
         }
-        __h.some(f87494);
+        __h.some(f88501);
       };
       return obj2;
     }
@@ -4369,7 +4369,7 @@ export const feedbackScreenshotIntegration = () => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -4437,7 +4437,7 @@ export const feedbackScreenshotIntegration = () => {
                     } else {
                       c2();
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } catch (tmp14) {
                     c3 = 3;
@@ -4780,7 +4780,7 @@ export const feedbackScreenshotIntegration = () => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -4827,7 +4827,7 @@ export const feedbackScreenshotIntegration = () => {
                   return obj6;
                 } else {
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               }
             } else if (arg0 === 1) {
@@ -4859,7 +4859,7 @@ export const feedbackScreenshotIntegration = () => {
   };
   return obj;
 };
-export const getFeedback = function getFeedback() {
+export function getFeedback() {
   obj = _mod693;
   const client = obj.getClient();
   let integrationByName;
@@ -4867,5 +4867,5 @@ export const getFeedback = function getFeedback() {
     integrationByName = client.getIntegrationByName("Feedback");
   }
   return integrationByName;
-};
+}
 export { sendFeedback };

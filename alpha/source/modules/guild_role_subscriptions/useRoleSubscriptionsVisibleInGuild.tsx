@@ -1,16 +1,16 @@
-// Module ID: 7387
-// Function ID: 7388
+// Module ID: 7410
+// Function ID: 7411
 // Name: useRoleSubscriptionsVisibleInGuild
-// Dependencies: [4909, 4878, 1084, 7388, 7389, 558, 576, 504, 7390, 7395, 2]
+// Dependencies: [4910, 4879, 1084, 7411, 7412, 558, 576, 504, 7413, 7418, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild
 
-// Module 7387 (useRoleSubscriptionsVisibleInGuild)
+// Module 7410 (useRoleSubscriptionsVisibleInGuild)
 import Constants from "Constants" /* 1084 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7388 */;
-import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 7389 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7395 */;
-import ImpersonateStore from "ImpersonateStore" /* 4909 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7411 */;
+import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 7412 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7418 */;
+import ImpersonateStore from "ImpersonateStore" /* 4910 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,13 +139,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowRoleS
 });
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionsVisibleInGuild.tsx");
 
-export const areRoleSubscriptionsVisibleInGuild = function areRoleSubscriptionsVisibleInGuild(c0, arg1) {
+export function areRoleSubscriptionsVisibleInGuild(c0, arg1) {
   let hasRoleSubscriptionsInGuild = computeCanEveryoneInGuildSeeRoleSubscriptions(c0);
   if (!hasRoleSubscriptionsInGuild) {
     const obj = useHasRoleSubscriptionInGuild;
     hasRoleSubscriptionsInGuild = obj.computeHasRoleSubscriptionsInGuild(c0, arg1);
   }
   return hasRoleSubscriptionsInGuild;
-};
+}
 export const useRoleSubscriptionsVisibleInGuild = tmp2;
 export const useShowRoleSubscriptionsInChannelList = tmp3;

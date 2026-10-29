@@ -1,18 +1,18 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18381
+// Function ID: 18382
 // Name: getNotificationCenterItemBody
-// Dependencies: [6819, 4878, 4946, 1389, 1084, 1125, 5058, 6823, 2030, 38, 2]
+// Dependencies: [6842, 4879, 4947, 1389, 1084, 1125, 5059, 6846, 2031, 38, 2]
 // Exports: default, getFriendRequestSentBody
 
-// Module 18147 (getNotificationCenterItemBody)
+// Module 18381 (getNotificationCenterItemBody)
 import _modDef38 from "module_38" /* 38 */;
 import intl13 from "intl" /* 1125 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6819 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6823 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6842 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6846 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -240,8 +240,8 @@ export default function getNotificationCenterItemBody(arg0) {
     return str;
   }
 };
-export const getFriendRequestSentBody = function getFriendRequestSentBody(user) {
+export function getFriendRequestSentBody(user) {
   const intl = intl13.intl;
   const obj = { user };
   return intl.format(intl13.t.gZVTy2, obj);
-};
+}

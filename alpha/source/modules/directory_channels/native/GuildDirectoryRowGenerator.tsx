@@ -1,11 +1,11 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 14042
+// Function ID: 14043
 // Name: GuildDirectoryRowGenerator
-// Dependencies: [13423, 13422, 1125, 2]
+// Dependencies: [13656, 13655, 1125, 2]
 // Exports: generateDirectoryRows
 
-// Module 13809 (GuildDirectoryRowGenerator)
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13423 */;
+// Module 14042 (GuildDirectoryRowGenerator)
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13656 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -18,7 +18,7 @@ let closure_4 = ArrayResult.fill(obj2);
 let result = size.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryRowGenerator.tsx");
 
 export { RowType };
-export const generateDirectoryRows = function generateDirectoryRows(directoryIsFetching, arr, currentCategoryId) {
+export function generateDirectoryRows(directoryIsFetching, arr, currentCategoryId) {
   let intl;
   let intl2;
   let obj;
@@ -31,12 +31,12 @@ export const generateDirectoryRows = function generateDirectoryRows(directoryIsF
   if (0 === arr.length) {
     return [];
   } else if (currentCategoryId !== DirectoryEntryCategories.ALL) {
-    const obj4 = set(13422);
+    const obj4 = set(13655);
     const rankGuildEntriesResult = obj4.rankGuildEntries(arr);
     return rankGuildEntriesResult.map((entry) => ({ type: constants.ENTRY, entry }));
   } else {
     const items = [];
-    const obj5 = set(13422);
+    const obj5 = set(13655);
     const rankByDateAddedResult = obj5.rankByDateAdded(arr);
     const _Set = Set;
     const self = this;
@@ -51,7 +51,7 @@ export const generateDirectoryRows = function generateDirectoryRows(directoryIsF
       combined = items.concat(rankByDateAddedResult.map((entry) => ({ type: constants.ENTRY, entry })));
     }
     const found = arr.filter((guildId) => !set.has(guildId.guildId));
-    const tmp13Result = set(13422);
+    const tmp13Result = set(13655);
     const result = tmp13Result.orderByTotalMemberCount(found);
     let combined1 = combined;
     if (result.length > 0) {
@@ -63,4 +63,4 @@ export const generateDirectoryRows = function generateDirectoryRows(directoryIsF
     }
     return combined1;
   }
-};
+}

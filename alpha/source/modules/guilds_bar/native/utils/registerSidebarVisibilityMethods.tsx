@@ -1,13 +1,13 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 18123
+// Function ID: 18124
 // Name: registerSidebarVisibilityMethods
-// Dependencies: [9606, 4878, 6736, 2]
+// Dependencies: [9638, 4879, 6759, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 17885 (registerSidebarVisibilityMethods)
-import SortedGuildStore2 from "SortedGuildStore" /* 6736 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9606 */;
-import GuildStore from "GuildStore" /* 4878 */;
+// Module 18123 (registerSidebarVisibilityMethods)
+import SortedGuildStore2 from "SortedGuildStore" /* 6759 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9638 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -19,7 +19,7 @@ let map;
 const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
 
-export const registerGuildVisibilityMethod = function registerGuildVisibilityMethod(fastListRef) {
+export function registerGuildVisibilityMethod(fastListRef) {
   const current = fastListRef.current;
   if (null != current) {
     let tmp = closure_1;
@@ -69,8 +69,8 @@ export const registerGuildVisibilityMethod = function registerGuildVisibilityMet
       }
     });
   }
-};
-export const registerFastListChannelVisibilityMethod = function registerFastListChannelVisibilityMethod(ref, guildChannels) {
+}
+export function registerFastListChannelVisibilityMethod(ref, guildChannels) {
   const _window = guildChannels;
   const current = ref.current;
   if (null != current) {
@@ -111,4 +111,4 @@ export const registerFastListChannelVisibilityMethod = function registerFastList
       }
     });
   }
-};
+}

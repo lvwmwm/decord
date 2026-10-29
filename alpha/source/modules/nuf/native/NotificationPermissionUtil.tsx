@@ -1,21 +1,21 @@
-// Module ID: 13545
-// Function ID: 13546
+// Module ID: 13778
+// Function ID: 13779
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 13543, 13544, 1084, 7903, 7926, 10794, 1264, 13546, 13552, 558, 576, 13553, 504, 2]
+// Dependencies: [32, 5, 19, 17, 13776, 13777, 1084, 7926, 7949, 10870, 1264, 13779, 13785, 558, 576, 13786, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 13545 (NotificationPermissionUtil)
+// Module 13778 (NotificationPermissionUtil)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
-import react_nativeDefault from "react-native" /* 7926 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13544 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13553 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
+import react_nativeDefault from "react-native" /* 7949 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13777 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13543 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13776 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _requestPushNotificationPermission() {
               return obj;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp35) {
           c6 = 3;
@@ -134,7 +134,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -261,7 +261,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -304,7 +304,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -336,7 +336,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowReact
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -509,12 +509,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
 });
 let result = size.fileFinishedImporting("modules/nuf/native/NotificationPermissionUtil.tsx");
 
-export const requestPushNotificationPermission = function requestPushNotificationPermission() {
+export function requestPushNotificationPermission() {
   return obj(...arguments);
-};
+}
 export const useShowReactivationPrompt = tmp2;
-export const enableProvisionalPushNotification = function enableProvisionalPushNotification() {
+export function enableProvisionalPushNotification() {
   return obj(...arguments);
-};
+}
 export const useCanSeePushNotificationNudge = tmp3;
 export const useShouldShowPushNotificationNudgeByPromptType = tmp4;

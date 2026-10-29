@@ -1,21 +1,21 @@
-// Module ID: 19014
-// Function ID: 19015
+// Module ID: 19247
+// Function ID: 19248
 // Name: CaptchaUtils
-// Dependencies: [109, 19, 17, 2065, 1204, 1084, 21, 1264, 6503, 6508, 558, 576, 504, 1278, 1348, 6501, 19015, 6707, 19016, 1999, 2]
+// Dependencies: [109, 19, 17, 2066, 1204, 1084, 21, 1264, 6527, 6532, 558, 576, 504, 1278, 1348, 6525, 19248, 6731, 19249, 2000, 2]
 
-// Module 19014 (CaptchaUtils)
+// Module 19247 (CaptchaUtils)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import V8APIError from "V8APIError" /* 1348 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6501 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import _modDef19015 from "module_19015" /* 19015 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6525 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import _modDef19248 from "module_19248" /* 19248 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -373,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
     items = ["event_name:" + "initial-load", "captcha_service:" + HCAPTCHA];
     increment(obj3);
   }, items1);
-  _modDef19015;
+  _modDef19248;
   const merged1 = Object.assign(merged);
   return <tmp5 siteKey={siteKey} onMessage={function onMessage(nativeEvent) {
     let items;

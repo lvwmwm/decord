@@ -1,19 +1,19 @@
-// Module ID: 11092
-// Function ID: 11093
+// Module ID: 11146
+// Function ID: 11147
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 5004, 558, 576, 9449, 1125, 5270, 3733, 11093, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 9480, 1125, 5271, 3734, 11147, 2]
 
-// Module 11092 (SlayerStorefrontGiftPreview)
+// Module 11146 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef3733 from "module_3733" /* 3733 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9449 */;
-import InfoBox from "InfoBox" /* 11093 */;
+import _modDef3734 from "module_3734" /* 3734 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9480 */;
+import InfoBox from "InfoBox" /* 11147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -208,7 +208,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
         const intl3 = tmp(1125).intl;
         const formatToPlainString2 = intl3.formatToPlainString;
         let name1;
-        const BMMo2K = _modDef3733.BMMo2K;
+        const BMMo2K = _modDef3734.BMMo2K;
         if (application != null) {
           name1 = application.name;
         }
@@ -327,7 +327,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(3733).BMMo2K;
+      const BMMo2K = tmp4(3734).BMMo2K;
       if (application != null) {
         name = application.name;
       }

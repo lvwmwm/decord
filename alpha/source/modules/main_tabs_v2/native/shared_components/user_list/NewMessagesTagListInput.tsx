@@ -1,19 +1,19 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13720
+// Function ID: 13721
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1389, 21, 5004, 587, 1381, 558, 576, 1385, 10654, 6944, 1125, 13488, 11195, 5270, 5013, 9027, 2]
+// Dependencies: [19, 17, 1389, 21, 5005, 587, 1381, 558, 576, 1385, 10687, 6968, 1125, 13721, 11249, 5271, 5014, 9030, 2]
 
-// Module 13487 (NewMessagesTagListInput)
+// Module 13720 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10654 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10687 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const mapped = items.map(UserStore.getUser);
     const found = mapped.filter(tmp(1385).isNotNullish);
-    const mapped1 = found.map(tags(10654));
+    const mapped1 = found.map(tags(10687));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -89,7 +89,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp15 = cResult[8];
           }
           if (cResult[9] !== tmp4.header) {
-            const tmp19 = jsx(tmp(5270).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            const tmp19 = jsx(tmp(5271).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             cResult[9] = tmp4.header;
             cResult[10] = tmp19;
             tmp17 = tmp19;
@@ -141,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
             }
-            const tmp26 = jsx(tags(9027), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(9030), { autoFocus, focusOnAdd: true, footer: tmp10, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -177,7 +177,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(6944).PressableOpacity;
+      const PressableOpacity = tmp(6968).PressableOpacity;
       let intl = tmp(1125).intl;
       const string = intl.string;
       const t = tmp(1125).t;
@@ -188,9 +188,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: tmp4.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(13488).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(13721).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(11195).CirclePlusIcon;
+        CirclePlusIcon = tmp(11249).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

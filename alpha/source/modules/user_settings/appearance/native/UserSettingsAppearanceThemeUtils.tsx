@@ -1,21 +1,21 @@
-// Module ID: 16648
-// Function ID: 16649
+// Module ID: 16886
+// Function ID: 16887
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1250, 1204, 1207, 1084, 1391, 1253, 1208, 16649, 13279, 5904, 1251, 5069, 16650, 1264, 2]
+// Dependencies: [1250, 1204, 1207, 1084, 1391, 1253, 1208, 16887, 13512, 5906, 1251, 5070, 16888, 1264, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 16648 (UserSettingsAppearanceThemeUtils)
+// Module 16886 (UserSettingsAppearanceThemeUtils)
 import Constants from "Constants" /* 1084 */;
 import ThemeConstants from "ThemeConstants" /* 1207 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5069 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5904 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13279 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16649 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 16650 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5070 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5906 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13512 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16887 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 16888 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const constants = PremiumConstants.AnalyticsPremiumFeatureNames;
 let result = size.fileFinishedImporting("modules/user_settings/appearance/native/UserSettingsAppearanceThemeUtils.tsx");
 
-export const handleSaveTheme = function handleSaveTheme(found, analyticsLocations, isSynced) {
+export function handleSaveTheme(found, analyticsLocations, isSynced) {
   let str = "custom theme";
   if (found.type !== ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     let combined;
@@ -80,8 +80,8 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
     }
     return saveClientThemeResult;
   }
-};
-export const handleSaveSyncedModeTheme = function handleSaveSyncedModeTheme(theme, systemTheme, analyticsLocations) {
+}
+export function handleSaveSyncedModeTheme(theme, systemTheme, analyticsLocations) {
   if ("system" !== theme.theme) {
     let str2 = "custom theme";
     if (theme.type !== ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
@@ -121,8 +121,8 @@ export const handleSaveSyncedModeTheme = function handleSaveSyncedModeTheme(them
       const result3 = tmp13Result8.updateSyncedClientTheme(systemTheme, obj6);
     }
   }
-};
-export const getSyncedModeThemeIndex = function getSyncedModeThemeIndex(memo2, stateFromStores) {
+}
+export function getSyncedModeThemeIndex(memo2, stateFromStores) {
   const syncedClientTheme = ThemeStore.getSyncedClientTheme(stateFromStores);
   let prop;
   const obj = ThemeStore;
@@ -155,18 +155,18 @@ export const getSyncedModeThemeIndex = function getSyncedModeThemeIndex(memo2, s
     num3 = findIndexResult2;
   }
   return num3;
-};
-export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme() {
+}
+export function enableSameAsDeviceTheme() {
   const obj = SameAsDeviceThemeUtils;
   const result = obj.enableSameAsDeviceTheme(CustomThemeMobileStore.getCustomTheme());
-};
-export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
+}
+export function disableSameAsDeviceTheme() {
   const obj = ThemeActionCreators;
   obj.setUseSystemTheme(SystemThemeState.OFF);
   const obj2 = ThemeActionCreators;
   const result = obj2.clearSyncedClientThemes();
-};
-export const trackClientThemeUpdated = function trackClientThemeUpdated(arg0) {
+}
+export function trackClientThemeUpdated(arg0) {
   let analyticsLocations;
   let isPersisted;
   let isSynced;
@@ -175,8 +175,8 @@ export const trackClientThemeUpdated = function trackClientThemeUpdated(arg0) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { feature_name: constants.CLIENT_THEME, theme_name: themeName, is_persisted: isPersisted, is_synced: isSynced, location_stack: analyticsLocations };
   obj.track(AnalyticEvents.CLIENT_THEME_UPDATED, obj2);
-};
-export const getUserThemeIndex = function getUserThemeIndex(userPreset, c1, arr3, c3, c4) {
+}
+export function getUserThemeIndex(userPreset, c1, arr3, c3, c4) {
   let tmp;
   if (null != userPreset) {
     const findIndexResult = arr3.findIndex((type) => {
@@ -206,4 +206,4 @@ export const getUserThemeIndex = function getUserThemeIndex(userPreset, c1, arr3
     }
     return num2;
   }
-};
+}

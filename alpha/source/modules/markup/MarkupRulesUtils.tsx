@@ -1,15 +1,15 @@
-// Module ID: 8507
-// Function ID: 8508
+// Module ID: 8529
+// Function ID: 8530
 // Name: MarkupRulesUtils
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput
 
-// Module 8507 (MarkupRulesUtils)
+// Module 8529 (MarkupRulesUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/MarkupRulesUtils.tsx");
 
-export const smartOutput = function smartOutput(node, output, state) {
+export function smartOutput(node, output, state) {
   if (typeof node.content !== "string") {
     let content;
     if (undefined !== node.content) {
@@ -18,7 +18,7 @@ export const smartOutput = function smartOutput(node, output, state) {
     return content;
   }
   content = node.content;
-};
+}
 export function isStaticRouteIconType(channelId) {
   return "home" === channelId || "browse" === channelId || "customize" === channelId || "guide" === channelId || "linked-roles" === channelId;
 }

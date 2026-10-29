@@ -1,13 +1,13 @@
-// Module ID: 19436
-// Function ID: 19437
+// Module ID: 19669
+// Function ID: 19670
 // Name: RoleIconUploadUtils
-// Dependencies: [5, 1084, 1392, 1414, 1493, 2]
+// Dependencies: [5, 1084, 1392, 1415, 1494, 2]
 // Exports: fetchCustomEmojiAsPngDataUri
 
-// Module 19436 (RoleIconUploadUtils)
+// Module 19669 (RoleIconUploadUtils)
 import Constants from "Constants" /* 1084 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchCustomEmojiAsPngDataUri() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -109,6 +109,6 @@ const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 const result = size.fileFinishedImporting("modules/guild_settings/roles/RoleIconUploadUtils.tsx");
 
 export const ROLE_ICON_MAX_FILE_SIZE = 256000;
-export const fetchCustomEmojiAsPngDataUri = function fetchCustomEmojiAsPngDataUri() {
+export function fetchCustomEmojiAsPngDataUri() {
   return obj(...arguments);
-};
+}

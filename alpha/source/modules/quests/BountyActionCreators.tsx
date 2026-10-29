@@ -1,25 +1,25 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14606
+// Function ID: 14607
 // Name: BountyActionCreators
-// Dependencies: [5, 7808, 5926, 7810, 7811, 6745, 1084, 3, 584, 6752, 9616, 7809, 6410, 7606, 7830, 1294, 6748, 9615, 7807, 2]
+// Dependencies: [5, 7831, 5928, 7833, 7834, 6768, 1084, 3, 584, 6775, 9648, 7832, 6434, 7629, 7853, 1294, 6771, 9647, 7830, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchQuestBarCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 14372 (BountyActionCreators)
+// Module 14606 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7606 */;
-import QuestDataUtils from "QuestDataUtils" /* 7807 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7830 */;
-import BountiesDesktopQuestBarExperiment2 from "BountiesDesktopQuestBarExperiment" /* 9615 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import QuestTypes from "QuestTypes" /* 6771 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7629 */;
+import QuestDataUtils from "QuestDataUtils" /* 7830 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7853 */;
+import BountiesDesktopQuestBarExperiment2 from "BountiesDesktopQuestBarExperiment" /* 9647 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7808 */;
-import NetworkStore from "NetworkStore" /* 5926 */;
-import BountyStore from "BountyStore" /* 7810 */;
-import QuestStore from "QuestStore" /* 7811 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7831 */;
+import NetworkStore from "NetworkStore" /* 5928 */;
+import BountyStore from "BountyStore" /* 7833 */;
+import QuestStore from "QuestStore" /* 7834 */;
 import size from "module_2" /* 2 */;
 
 let _null, bounties, closure_2, error, map, uuid2;
@@ -44,7 +44,7 @@ let obj = function _fetchBountiesAndDispatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _fetchBountiesAndDispatch() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp18) {
           bounties = tmp18;
@@ -151,7 +151,7 @@ obj = function _fetchQuestHomeBounties() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ obj = function _fetchQuestHomeBounties() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp8) {
         c1 = 3;
         throw tmp8;
@@ -225,7 +225,7 @@ obj = function _fetchBountyPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -278,7 +278,7 @@ obj = function _fetchBountyPreview() {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -321,7 +321,7 @@ obj = function _fetchQuestBarCreativePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let tmp87;
@@ -565,7 +565,7 @@ obj = function _claimBountyReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let adMetadataSealed;
@@ -660,7 +660,7 @@ obj = function _claimBountyReward() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp40) {
           adMetadataSealed = tmp40;
           if (0 === c5) {
@@ -694,7 +694,7 @@ obj = function _dismissAdContent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -777,7 +777,7 @@ obj = function _dismissAdContent() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp40) {
         closure_4 = tmp40;
         if (0 === c5) {
@@ -806,7 +806,7 @@ obj = function _resetCreativePreviewDeliveryState() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -846,7 +846,7 @@ obj = function _resetCreativePreviewDeliveryState() {
             obj = closure_131_1(closure_131_2[8]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c5 = 3;
@@ -872,7 +872,7 @@ obj = function _resetPreviewDeliveryStateLookback() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -904,7 +904,7 @@ obj = function _resetPreviewDeliveryStateLookback() {
             obj = closure_129_1(closure_129_2[8]);
             obj.dispatch({ type: "ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET" });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -921,16 +921,16 @@ const tmp2 = new LoggerDefault("BountyActionCreators");
 let closure_10 = tmp2;
 let result = size.fileFinishedImporting("modules/quests/BountyActionCreators.tsx");
 
-export const fetchQuestHomeBounties = function fetchQuestHomeBounties() {
+export function fetchQuestHomeBounties() {
   return obj(...arguments);
-};
-export const fetchBountyPreview = function fetchBountyPreview() {
+}
+export function fetchBountyPreview() {
   return obj(...arguments);
-};
-export const fetchQuestBarCreativePreview = function fetchQuestBarCreativePreview() {
+}
+export function fetchQuestBarCreativePreview() {
   return obj(...arguments);
-};
-export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
+}
+export function setBountyVideoProgress(bountyId, arg1) {
   obj = SessionAdGenerator;
   if (null != obj.getCurrentAdSession()) {
     const tmpResult = SessionAdGenerator;
@@ -940,16 +940,16 @@ export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, 
     const obj3 = DispatcherDefault;
     obj3.dispatch(obj2);
   }
-};
-export const claimBountyReward = function claimBountyReward() {
+}
+export function claimBountyReward() {
   return obj(...arguments);
-};
-export const dismissAdContent = function dismissAdContent() {
+}
+export function dismissAdContent() {
   return obj(...arguments);
-};
-export const resetCreativePreviewDeliveryState = function resetCreativePreviewDeliveryState() {
+}
+export function resetCreativePreviewDeliveryState() {
   return obj(...arguments);
-};
-export const resetPreviewDeliveryStateLookback = function resetPreviewDeliveryStateLookback() {
+}
+export function resetPreviewDeliveryStateLookback() {
   return obj(...arguments);
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 18594
-// Function ID: 18595
+// Module ID: 18828
+// Function ID: 18829
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 4856, 21, 5004, 587, 558, 576, 10127, 1125, 4866, 7020, 18555, 7224, 7021, 5270, 7023, 18595, 18596, 5705, 504, 2]
+// Dependencies: [32, 19, 17, 4857, 21, 5005, 587, 558, 576, 10160, 1125, 4867, 7044, 18789, 7248, 7045, 5271, 7047, 18829, 18830, 5707, 504, 2]
 
-// Module 18594 (ChannelSettingsChangeDefaultForumLayout)
+// Module 18828 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10127 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18595 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18596 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10160 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18829 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,11 +77,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
   }
   let LIST = tmp6;
   if (tmp6 == null) {
-    LIST = tmp(4866).ForumLayout.LIST;
+    LIST = tmp(4867).ForumLayout.LIST;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { icon: closure_7(tmp(18555).GridSquareIcon, {}), label: intl2.string(tmp(1125).t["U+rQfW"]), value: tmp(4866).ForumLayout.GRID };
-    const TableRadioRow = tmp(7020).TableRadioRow;
+    let obj2 = { icon: closure_7(tmp(18789).GridSquareIcon, {}), label: intl2.string(tmp(1125).t["U+rQfW"]), value: tmp(4867).ForumLayout.GRID };
+    const TableRadioRow = tmp(7044).TableRadioRow;
     intl2 = tmp(1125).intl;
     const tmp12 = closure_7(TableRadioRow, obj2);
     cResult[3] = tmp12;
@@ -90,8 +90,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
     tmp10 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { icon: closure_7(tmp(7224).ListViewIcon, {}), label: intl3.string(tmp(1125).t.tuHPRX), value: tmp(4866).ForumLayout.LIST };
-    const TableRadioRow2 = tmp(7020).TableRadioRow;
+    let obj3 = { icon: closure_7(tmp(7248).ListViewIcon, {}), label: intl3.string(tmp(1125).t.tuHPRX), value: tmp(4867).ForumLayout.LIST };
+    const TableRadioRow2 = tmp(7044).TableRadioRow;
     intl3 = tmp(1125).intl;
     const tmp15 = closure_7(TableRadioRow2, obj3);
     cResult[4] = tmp15;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
     }
     if (cResult[9] !== tmp4.description) {
       let obj4 = { style: description, variant: "text-sm/medium", color: "text-muted", children: tmp18 };
-      const tmp22 = closure_7(channel(5270).Text, obj4);
+      const tmp22 = closure_7(channel(5271).Text, obj4);
       cResult[9] = tmp4.description;
       cResult[10] = tmp22;
       tmp20 = tmp22;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { title: intl5.string(channel(1125).t.e4oMl4) };
-      const TableRowGroupTitle = tmp(7023).TableRowGroupTitle;
+      const TableRowGroupTitle = tmp(7047).TableRowGroupTitle;
       intl5 = tmp(1125).intl;
       const tmp25 = closure_7(TableRowGroupTitle, obj5);
       cResult[11] = tmp25;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
     } else {
       tmp23 = cResult[11];
     }
-    if (tmp6 === channel(4866).ForumLayout.GRID) {
+    if (tmp6 === channel(4867).ForumLayout.GRID) {
       tmp28 = AssetRegistryDefault;
       tmp27 = importDefault;
     } else {
@@ -173,7 +173,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
       tmp33 = tmp36;
     }
     const obj7 = { style: tmp4.thumbnailImagePortrait, source: tmp28 };
-    const tmp32 = closure_7(tmp27(5705), obj7);
+    const tmp32 = closure_7(tmp27(5707), obj7);
     cResult[12] = tmp4.thumbnailImagePortrait;
     cResult[13] = tmp28;
     cResult[14] = tmp32;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
   }
   const obj8 = { title: tmp8, defaultValue: LIST, onChange: tmp7, hasIcons: true, children: items1 };
   items1 = [tmp10, tmp13];
-  const tmp17 = closure_8(channel(7021).TableRadioGroup, obj8);
+  const tmp17 = closure_8(channel(7045).TableRadioGroup, obj8);
   cResult[5] = tmp7;
   cResult[6] = LIST;
   cResult[7] = tmp17;
@@ -216,37 +216,37 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSetti
     obj3.saveChannel(channel.id, obj4);
   }, items);
   let obj2 = { title: intl.string(channel(1125).t.mFMDSq), defaultValue: LIST, onChange: callback, hasIcons: true, children: items1 };
-  const TableRadioGroup = channel(7021).TableRadioGroup;
+  const TableRadioGroup = channel(7045).TableRadioGroup;
   intl = channel(1125).intl;
   LIST = tmp3;
   const tmp6 = View;
   if (tmp3 == null) {
-    LIST = tmp7(4866).ForumLayout.LIST;
+    LIST = tmp7(4867).ForumLayout.LIST;
   }
-  let obj3 = { icon: closure_7(channel(18555).GridSquareIcon, {}), label: intl2.string(channel(1125).t["U+rQfW"]), value: channel(4866).ForumLayout.GRID };
-  const TableRadioRow = tmp7(7020).TableRadioRow;
+  let obj3 = { icon: closure_7(channel(18789).GridSquareIcon, {}), label: intl2.string(channel(1125).t["U+rQfW"]), value: channel(4867).ForumLayout.GRID };
+  const TableRadioRow = tmp7(7044).TableRadioRow;
   intl2 = tmp7(1125).intl;
   items1 = [closure_7(TableRadioRow, obj3), ];
-  let obj4 = { icon: closure_7(channel(7224).ListViewIcon, {}), label: intl3.string(channel(1125).t.tuHPRX), value: channel(4866).ForumLayout.LIST };
-  const TableRadioRow2 = tmp7(7020).TableRadioRow;
+  let obj4 = { icon: closure_7(channel(7248).ListViewIcon, {}), label: intl3.string(channel(1125).t.tuHPRX), value: channel(4867).ForumLayout.LIST };
+  const TableRadioRow2 = tmp7(7044).TableRadioRow;
   intl3 = tmp7(1125).intl;
   items1[1] = closure_7(TableRadioRow2, obj4);
   items2 = [closure_8(TableRadioGroup, obj2), , , ];
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl4.string(channel(1125).t.MbX5Hu) };
-  const Text = tmp7(5270).Text;
+  const Text = tmp7(5271).Text;
   intl4 = tmp7(1125).intl;
   items2[1] = closure_7(Text, obj5);
   const obj6 = { title: intl5.string(channel(1125).t.e4oMl4) };
-  const TableRowGroupTitle = tmp7(7023).TableRowGroupTitle;
+  const TableRowGroupTitle = tmp7(7047).TableRowGroupTitle;
   intl5 = tmp7(1125).intl;
   items2[2] = closure_7(TableRowGroupTitle, obj6);
   const obj7 = { style: tmp.thumbnailImagePortrait, source: tmp10Result };
   const tmp11 = FastImageDefault;
   const tmp9 = closure_7;
-  if (tmp3 === channel(4866).ForumLayout.GRID) {
-    tmp10Result = tmp10(18595);
+  if (tmp3 === channel(4867).ForumLayout.GRID) {
+    tmp10Result = tmp10(18829);
   } else {
-    tmp10Result = tmp10(18596);
+    tmp10Result = tmp10(18830);
   }
   items2[3] = tmp9(tmp11, obj7);
   return closure_8(tmp6, obj);

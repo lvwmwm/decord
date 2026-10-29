@@ -1,15 +1,15 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 10893
+// Function ID: 10894
 // Name: fetchDeveloperApplications
-// Dependencies: [5, 2021, 1084, 584, 1294, 2]
+// Dependencies: [5, 2022, 1084, 584, 1294, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 10817 (fetchDeveloperApplications)
+// Module 10893 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -26,7 +26,7 @@ let obj = function _fetchDeveloperApplications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp10) {
         applications = tmp10;
@@ -100,6 +100,6 @@ let obj = function _fetchDeveloperApplications() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/activities/fetchDeveloperApplications.tsx");
 
-export const fetchDeveloperApplications = function fetchDeveloperApplications() {
+export function fetchDeveloperApplications() {
   return obj(...arguments);
-};
+}

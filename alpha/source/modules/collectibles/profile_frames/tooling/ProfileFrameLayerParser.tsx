@@ -1,13 +1,13 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8737
+// Function ID: 8738
 // Name: ProfileFrameLayerParser
-// Dependencies: [729, 8735, 8736, 8737, 2]
+// Dependencies: [729, 8738, 8739, 8740, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8734 (ProfileFrameLayerParser)
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8735 */;
-import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8736 */;
-import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8737 */;
+// Module 8737 (ProfileFrameLayerParser)
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8738 */;
+import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8739 */;
+import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8740 */;
 import _toArray from "_toArray" /* 729 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export const RESPONSIVE_KEYWORD = "responsive";
 export const FOLDER_ORDER_MAP = obj;
 export const ParseErrorKind = obj2;
 export const PARSE_ERROR_LABELS = obj3;
-export const parseLayerFilename = function parseLayerFilename(filename) {
+export function parseLayerFilename(filename) {
   let obj10;
   let obj6;
   let tmp19;
@@ -101,14 +101,14 @@ export const parseLayerFilename = function parseLayerFilename(filename) {
     }
   }
   return { parsed: null, errorType: obj2.WRONG_PART_COUNT };
-};
-export const compareLayerFiles = function compareLayerFiles(index, index2) {
+}
+export function compareLayerFiles(index, index2) {
   let diff = closure_8[index.order] - closure_8[index2.order];
   if (0 === diff) {
     diff = index.index - index2.index;
   }
   return diff;
-};
-export const isPreviewFilename = function isPreviewFilename(str) {
+}
+export function isPreviewFilename(str) {
   return str.replace(/\.\w+$/, "") === preview;
-};
+}

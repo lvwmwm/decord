@@ -1,15 +1,15 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16698
+// Function ID: 16699
 // Name: FamilyCenterActivityPurchaseRowUtils
-// Dependencies: [7690, 7691, 1391, 1992, 1125, 2535, 1414, 2]
+// Dependencies: [7713, 7714, 1391, 1993, 1125, 2536, 1415, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 16460 (FamilyCenterActivityPurchaseRowUtils)
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7690 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7691 */;
+// Module 16698 (FamilyCenterActivityPurchaseRowUtils)
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7713 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7714 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import size from "module_2" /* 2 */;
 
@@ -18,19 +18,19 @@ let metroRequire;
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1125).intl;
-    return intl5.string(_modDef2535.obi47v);
+    return intl5.string(_modDef2536.obi47v);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1125).intl;
-    return intl4.string(_modDef2535.RX8BMR);
+    return intl4.string(_modDef2536.RX8BMR);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1125).intl;
-    return intl3.string(_modDef2535.nNGEHk);
+    return intl3.string(_modDef2536.nNGEHk);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1125).intl;
-    return intl2.string(_modDef2535.VS1fKo);
+    return intl2.string(_modDef2536.VS1fKo);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1125).intl;
-    return intl.string(_modDef2535.JiIY1l);
+    return intl.string(_modDef2536.JiIY1l);
   } else {
     return "";
   }
@@ -43,7 +43,7 @@ const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActi
 export const PREVIEW_SIZE = 40;
 export const NAMEPLATE_ASPECT_RATIO = 5.333333333333333;
 export { getCollectibleTypeName };
-export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreviewUrl(product) {
+export function getAvatarDecorationPreviewUrl(product) {
   let obj3;
   if (0 === product.items.length) {
     return null;
@@ -58,8 +58,8 @@ export const getAvatarDecorationPreviewUrl = function getAvatarDecorationPreview
     }
     return avatarDecorationURL;
   }
-};
-export const getProfileEffectPreviewUrl = function getProfileEffectPreviewUrl(product) {
+}
+export function getProfileEffectPreviewUrl(product) {
   if (0 === product.items.length) {
     return null;
   } else {
@@ -70,8 +70,8 @@ export const getProfileEffectPreviewUrl = function getProfileEffectPreviewUrl(pr
     }
     return thumbnailPreviewSrc;
   }
-};
-export const isGuildBoostSubscription = function isGuildBoostSubscription(subscriptionPlanId) {
+}
+export function isGuildBoostSubscription(subscriptionPlanId) {
   if (null == subscriptionPlanId) {
     return false;
   } else {
@@ -81,8 +81,8 @@ export const isGuildBoostSubscription = function isGuildBoostSubscription(subscr
     }
     return skuId === hasOwnProperty.GUILD;
   }
-};
-export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subscriptionPlanId) {
+}
+export function getPurchaseDisplayInfo(name, subscriptionPlanId) {
   let displayName;
   let typeName;
   const isSubscription = null != subscriptionPlanId;
@@ -99,4 +99,4 @@ export const getPurchaseDisplayInfo = function getPurchaseDisplayInfo(name, subs
     }
   }
   return { displayName, typeName, isSubscription };
-};
+}

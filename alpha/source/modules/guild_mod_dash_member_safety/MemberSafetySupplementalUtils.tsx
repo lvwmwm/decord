@@ -1,17 +1,17 @@
-// Module ID: 7646
-// Function ID: 7647
+// Module ID: 7669
+// Function ID: 7670
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1084, 1125, 558, 576, 6537, 7647, 5241, 5011, 1294, 2]
+// Dependencies: [5, 1084, 1125, 558, 576, 6561, 7670, 5242, 5012, 1294, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals
 
-// Module 7646 (MemberSafetySupplementalUtils)
+// Module 7669 (MemberSafetySupplementalUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl11 from "intl" /* 1125 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import useThemeDefault from "useTheme" /* 5241 */;
-import PlatformsDefault from "Platforms" /* 6537 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7647 */;
+import useThemeDefault from "useTheme" /* 5242 */;
+import PlatformsDefault from "Platforms" /* 6561 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let c6, c7;
 
 let tmp;
-const shared = tmp(5011);
+const shared = tmp(5012);
 function createFetchKeys(arg0, arr) {
   let closure_0 = arg0;
   return arr.map((item) => closure_0 + item);
@@ -56,7 +56,7 @@ let obj = function _fetchMemberSupplemental() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -214,14 +214,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetInte
 });
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/MemberSafetySupplementalUtils.tsx");
 
-export const registerFetchedSupplementals = function registerFetchedSupplementals(guildId, memberIds) {
+export function registerFetchedSupplementals(guildId, memberIds) {
   let closure_0 = guildId;
   const item = memberIds.forEach((item) => {
     closure_5[guildId + item] = constants.SUCCEEDED;
   });
-};
+}
 export const JoinSourceType = obj;
-export const getJoinSourceTypeLabel = function getJoinSourceTypeLabel(arg0) {
+export function getJoinSourceTypeLabel(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {
     tmp = null;
@@ -267,9 +267,9 @@ export const getJoinSourceTypeLabel = function getJoinSourceTypeLabel(arg0) {
     const intl = intl11.intl;
     return intl.string(intl11.t.DvMBkS);
   }
-};
+}
 export const IntegrationType = obj2;
-export const getIntegrationLabel = function getIntegrationLabel(arg0) {
+export function getIntegrationLabel(arg0) {
   if (obj2.TWITCH === arg0) {
     const intl3 = intl11.intl;
     return intl3.string(intl11.t.AVGAkw);
@@ -280,8 +280,8 @@ export const getIntegrationLabel = function getIntegrationLabel(arg0) {
     const intl = intl11.intl;
     return intl.string(intl11.t.gmCUFw);
   }
-};
+}
 export const useGetIntegrationIconString = tmp2;
-export const fetchMemberSupplemental = function fetchMemberSupplemental() {
+export function fetchMemberSupplemental() {
   return obj(...arguments);
-};
+}

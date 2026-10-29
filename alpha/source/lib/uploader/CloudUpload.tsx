@@ -1,24 +1,24 @@
-// Module ID: 8175
-// Function ID: 8176
+// Module ID: 8198
+// Function ID: 8199
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5273, 1206, 5926, 1084, 3, 1294, 8176, 8177, 8184, 1101, 569, 7115, 12, 1480, 8186, 8206, 7116, 8207, 8208, 8212, 1254, 8185, 8178, 8213, 8214, 1999, 8299, 1264, 2]
+// Dependencies: [109, 5, 32, 5274, 1206, 5928, 1084, 3, 1294, 8199, 8200, 8207, 1101, 569, 7139, 12, 1481, 8209, 8228, 7140, 8229, 8230, 8234, 1254, 8208, 8201, 8235, 8236, 2000, 8321, 1264, 2]
 
-// Module 8175 (CloudUpload)
+// Module 8198 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import InlineUploaderDefault from "InlineUploader" /* 7115 */;
-import UploadPlatform from "UploadPlatform" /* 8177 */;
+import InlineUploaderDefault from "InlineUploader" /* 7139 */;
+import UploadPlatform from "UploadPlatform" /* 8200 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
-import NetworkStore from "NetworkStore" /* 5926 */;
+import NetworkStore from "NetworkStore" /* 5928 */;
 import Constants from "Constants" /* 1084 */;
-import Upload from "Upload" /* 8176 */;
+import Upload from "Upload" /* 8199 */;
 import size_mod from "module_2" /* 2 */;
 
 let c0, c5, c8, closure_6, createAttachmentURL;
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(8176).UploadOrigin[obj.origin];
+          origin = tmp11(8199).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(8184).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(8207).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;
@@ -399,7 +399,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -491,7 +491,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -604,7 +604,7 @@ class CloudUpload extends Upload {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c6;
@@ -648,7 +648,7 @@ class CloudUpload extends Upload {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -789,7 +789,7 @@ class CloudUpload extends Upload {
                             return obj;
                           } else {
                             c6 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "IconComponent" };
                           }
                           value = {};
                           num7 = request.startOrResumeUpload(closure_130_3, num7);
@@ -963,7 +963,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -1048,7 +1048,7 @@ class CloudUpload extends Upload {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let tmp221;
@@ -1179,7 +1179,7 @@ class CloudUpload extends Upload {
                     }
                   }
                   c9 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
                 break;
               }
@@ -1804,7 +1804,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -2000,7 +2000,7 @@ class CloudUpload extends Upload {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -2038,7 +2038,7 @@ class CloudUpload extends Upload {
             c2 = 0;
           }
           _self = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp7) {
           if (0 === c2) {
             _self = 3;
@@ -2079,7 +2079,7 @@ class CloudUpload extends Upload {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -2172,7 +2172,7 @@ class CloudUpload extends Upload {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp35) {
           url = tmp35;
           if (0 === c3) {

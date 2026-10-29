@@ -1,28 +1,28 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12441
+// Function ID: 12442
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1389, 21, 5004, 12379, 12388, 12389, 587, 558, 576, 10735, 12346, 12360, 11812, 12391, 12232, 504, 12399, 12400, 12394, 12401, 12280, 11799, 12392, 5270, 1125, 12398, 12402, 12403, 12404, 12405, 12406, 12416, 3863, 12422, 12424, 12425, 12287, 12426, 12475, 12226, 12476, 12345, 12478, 12506, 12509, 12523, 12525, 12413, 12528, 12533, 12534, 12535, 2]
+// Dependencies: [19, 17, 1389, 21, 5005, 12433, 12442, 12443, 587, 558, 576, 10809, 12400, 12414, 11866, 12445, 12286, 504, 12453, 12454, 12448, 12455, 12334, 11853, 12446, 5271, 10813, 1125, 12452, 12456, 12457, 12458, 12459, 12460, 12470, 3864, 12476, 12478, 12479, 12341, 12480, 12529, 12280, 12530, 12399, 12532, 12560, 12570, 12578, 12580, 12467, 12583, 12588, 12589, 12590, 2]
 
-// Module 12387 (ConjureMessageRow)
+// Module 12441 (ConjureMessageRow)
 import nativeDefault from "native" /* 587 */;
-import conjureChatTurns from "conjureChatTurns" /* 10735 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11812 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12280 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12287 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12346 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12360 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12379 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12388 */;
-import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12389 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12394 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 12399 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12401 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 12426 */;
+import conjureChatTurns from "conjureChatTurns" /* 10809 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11866 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12334 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12341 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12400 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12414 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12433 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12442 */;
+import chat_ConjureRepliedMessage from "chat/ConjureRepliedMessage" /* 12443 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12448 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 12453 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12455 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 12480 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,6 +67,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let checklistSuperseded;
   let clarificationDismissed;
   let closingContent;
+  let combined;
   let first;
   let groupStart;
   let isNewest;
@@ -129,8 +130,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let closure_13 = tmp8;
     const steps2 = message.steps;
     if (cResult[5] !== message) {
-      const tmpResult16 = tmp(tmp2[11]);
-      const turnSettledResult1 = tmpResult16.turnSettled(message);
+      const tmpResult17 = tmp(tmp2[11]);
+      const turnSettledResult1 = tmpResult17.turnSettled(message);
       cResult[5] = message;
       cResult[6] = turnSettledResult1;
       tmp10 = turnSettledResult1;
@@ -144,8 +145,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         arr = cResult[9];
       }
       if (cResult[10] !== message.steps) {
-        const tmpResult17 = tmp(tmp2[12]);
-        const latestTodosResult = tmpResult17.latestTodos(message.steps);
+        const tmpResult18 = tmp(tmp2[12]);
+        const latestTodosResult = tmpResult18.latestTodos(message.steps);
         cResult[10] = message.steps;
         cResult[11] = latestTodosResult;
         tmp14 = latestTodosResult;
@@ -153,8 +154,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         tmp14 = cResult[11];
       }
       if (cResult[12] !== tmp8.tasks) {
-        const tmpResult18 = tmp(tmp2[13]);
-        const runningTodoAgentsResult = tmpResult18.runningTodoAgents(tmp8.tasks);
+        const tmpResult19 = tmp(tmp2[13]);
+        const runningTodoAgentsResult = tmpResult19.runningTodoAgents(tmp8.tasks);
         cResult[12] = tmp8.tasks;
         cResult[13] = runningTodoAgentsResult;
         let tmp16 = runningTodoAgentsResult;
@@ -176,8 +177,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   let tmp20 = cResult[24];
                 }
                 if (cResult[25] !== message.content) {
-                  const tmpResult19 = tmp(tmp2[14]);
-                  const result = tmpResult19.parseConjureDesignRemark(message.content);
+                  const tmpResult20 = tmp(tmp2[14]);
+                  const result = tmpResult20.parseConjureDesignRemark(message.content);
                   cResult[25] = message.content;
                   cResult[26] = result;
                   tmp21 = result;
@@ -200,8 +201,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp25 = cResult[28];
                 }
                 content = tmp25;
-                const tmpResult20 = tmp(tmp2[15]);
-                const conjureMentionNames = tmpResult20.useConjureMentionNames(tmp25);
+                const tmpResult21 = tmp(tmp2[15]);
+                const conjureMentionNames = tmpResult21.useConjureMentionNames(tmp25);
                 if (cResult[29] === message.attachments) {
                   if (cResult[30] === message.content) {
                     let arr2;
@@ -245,8 +246,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         tmp34 = cResult[36];
                         tmp35 = cResult[37];
                       }
-                      const tmpResult21 = tmp(tmp2[17]);
-                      const stateFromStores = tmpResult21.useStateFromStores(tmp34, tmp35);
+                      const tmpResult22 = tmp(tmp2[17]);
+                      const stateFromStores = tmpResult22.useStateFromStores(tmp34, tmp35);
                       if (cResult[38] === message) {
                         let tmp38;
                         if (cResult[39] === onRestoreVersion) {
@@ -302,7 +303,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                 let tmp130 = null;
                                                                 if (null != message.agentReaction) {
                                                                   let obj2 = { reaction: message.agentReaction };
-                                                                  tmp130 = replied(tmp40(tmp2[30]), obj2);
+                                                                  tmp130 = replied(tmp40(tmp2[31]), obj2);
                                                                 }
                                                                 cResult[67] = message.agentReaction;
                                                                 cResult[68] = tmp130;
@@ -319,7 +320,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                       if (null != onRestoreVersion) {
                                                                         fn = () => {
                                                                           const obj = projectId(groupStart[22]);
-                                                                          const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                          const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                           return obj.confirmRestoreVersion(obj2);
                                                                         };
                                                                       }
@@ -368,7 +369,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                     if (null != onRestoreVersion) {
                                                                       fn = () => {
                                                                         const obj = projectId(groupStart[22]);
-                                                                        const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                        const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                         return obj.confirmRestoreVersion(obj2);
                                                                       };
                                                                     }
@@ -400,7 +401,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                             let tmp127 = null;
                                                             if (null != tmp29) {
                                                               let obj4 = { projectId, attachments: tmp29 };
-                                                              tmp127 = replied(tmp40(tmp2[29]), obj4);
+                                                              tmp127 = replied(tmp40(tmp2[30]), obj4);
                                                             }
                                                             cResult[64] = tmp29;
                                                             class Re {
@@ -416,7 +417,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                   if (null != onRestoreVersion) {
                                                                     fn = () => {
                                                                       const obj = projectId(groupStart[22]);
-                                                                      const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                      const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                       return obj.confirmRestoreVersion(obj2);
                                                                     };
                                                                   }
@@ -440,16 +441,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         }
                                                       }
                                                       if ("" !== tmp25) {
-                                                        let tmp123;
-                                                        let combined;
                                                         const Text = tmp(tmp2[25]).Text;
+                                                        tmp(tmp2[26]);
+                                                        const obj6 = { variant: "text-md/normal", color: null, accessibilityLabel: combined, children: items2 };
                                                         const tmp121 = onJumpToReplied;
-                                                        if (!groupStart) {
-                                                          const intl2 = tmp(tmp2[26]).intl;
-                                                          const _HermesInternal = HermesInternal;
-                                                          combined = "" + intl2.string(tmp(tmp2[26]).t.KD6OJJ) + ": " + conjureMentionNames;
-                                                        }
-                                                        const obj6 = { variant: "text-md/normal", color: "text-default", accessibilityLabel: combined, children: items2 };
                                                         class Re {
                                                           constructor() {
                                                             tmp = closure_0(closure_2[20]);
@@ -463,7 +458,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                               if (null != onRestoreVersion) {
                                                                 fn = () => {
                                                                   const obj = projectId(groupStart[22]);
-                                                                  const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                  const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                   return obj.confirmRestoreVersion(obj2);
                                                                 };
                                                               }
@@ -480,21 +475,28 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                             return showConjureMessageActions(obj);
                                                           }
                                                         }
+                                                        combined = undefined;
+                                                        if (!groupStart) {
+                                                          const intl2 = tmp(tmp2[27]).intl;
+                                                          const _HermesInternal = HermesInternal;
+                                                          combined = "" + intl2.string(tmp(tmp2[27]).t.KD6OJJ) + ": " + conjureMentionNames;
+                                                        }
+                                                        let tmp123 = null;
                                                         if (null != tmp21) {
                                                           const obj7 = { label: tmp21.label, variant: "text-md/medium" };
-                                                          tmp123 = replied(message(tmp2[27]), obj7);
+                                                          tmp123 = replied(tmp40(tmp2[28]), obj7);
                                                         }
                                                         items2 = [tmp123, , ];
-                                                        let str10 = null;
+                                                        let str11 = null;
                                                         if (null != tmp21) {
-                                                          str10 = null;
+                                                          str11 = null;
                                                           if ("" !== tmp25) {
-                                                            str10 = " ";
+                                                            str11 = " ";
                                                           }
                                                         }
-                                                        items2[1] = str10;
+                                                        items2[1] = str11;
                                                         const obj8 = { text: tmp25, variant: "text-md/normal" };
-                                                        items2[2] = replied(message(tmp2[28]), obj8);
+                                                        items2[2] = replied(message(tmp2[29]), obj8);
                                                         tmp121Result = tmp121(Text, obj6);
                                                       } else {
                                                         tmp121Result = null;
@@ -513,7 +515,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                             if (null != onRestoreVersion) {
                                                               fn = () => {
                                                                 const obj = projectId(groupStart[22]);
-                                                                const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                 return obj.confirmRestoreVersion(obj2);
                                                               };
                                                             }
@@ -554,7 +556,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -587,7 +589,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -627,7 +629,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -660,7 +662,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   if (null != onRestoreVersion) {
                                                     fn = () => {
                                                       const obj = projectId(groupStart[22]);
-                                                      const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                      const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                       return obj.confirmRestoreVersion(obj2);
                                                     };
                                                   }
@@ -693,7 +695,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                             }
                                             let tmp107 = null;
                                             if (null != message.contextSwitch) {
-                                              const obj13 = { style: tmp4.boundaryRow, children: replied(message(tmp2[31]), obj14) };
+                                              const obj13 = { style: tmp4.boundaryRow, children: replied(message(tmp2[32]), obj14) };
                                               obj14 = { projectId, contextSwitch: null };
                                               class Re {
                                                 constructor() {
@@ -708,7 +710,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -741,7 +743,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   if (null != onRestoreVersion) {
                                                     fn = () => {
                                                       const obj = projectId(groupStart[22]);
-                                                      const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                      const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                       return obj.confirmRestoreVersion(obj2);
                                                     };
                                                   }
@@ -790,7 +792,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -814,7 +816,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   tmp102 = tmp105;
                                                 }
                                                 const obj16 = { projectId, event: message.projectEvent };
-                                                const tmp101 = replied(message(tmp2[32]), obj16);
+                                                const tmp101 = replied(message(tmp2[33]), obj16);
                                                 class Re {
                                                   constructor() {
                                                     tmp = closure_0(closure_2[20]);
@@ -828,7 +830,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -879,7 +881,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -903,7 +905,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   tmp95 = tmp98;
                                                 }
                                                 const obj18 = { projectId, notice: message.publishNotice };
-                                                const tmp94 = replied(message(tmp2[33]), obj18);
+                                                const tmp94 = replied(message(tmp2[34]), obj18);
                                                 class Re {
                                                   constructor() {
                                                     tmp = closure_0(closure_2[20]);
@@ -917,7 +919,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -945,9 +947,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                               const _Symbol4 = Symbol;
                                               const activityBox = tmp4.activityBox;
                                               if (cResult[93] === Symbol.for("react.memo_cache_sentinel")) {
-                                                const intl = tmp(tmp2[26]).intl;
-                                                cResult[93] = intl.string(message(tmp2[34]).oOmBdX);
-                                                const stringResult = intl.string(message(tmp2[34]).oOmBdX);
+                                                const intl = tmp(tmp2[27]).intl;
+                                                cResult[93] = intl.string(message(tmp2[35]).oOmBdX);
+                                                const stringResult = intl.string(message(tmp2[35]).oOmBdX);
                                               }
                                               const _Symbol5 = Symbol;
                                               class Re {
@@ -963,7 +965,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -996,7 +998,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       if (null != onRestoreVersion) {
                                                         fn = () => {
                                                           const obj = projectId(groupStart[22]);
-                                                          const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                          const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                           return obj.confirmRestoreVersion(obj2);
                                                         };
                                                       }
@@ -1037,8 +1039,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                               if ("proposal" === message.kind) {
                                                 proposal = message.proposal;
                                               }
-                                              const tmpResult22 = tmp(tmp2[11]);
-                                              const turnSettledResult2 = tmpResult22.turnSettled(message);
+                                              const tmpResult24 = tmp(tmp2[11]);
+                                              const turnSettledResult2 = tmpResult24.turnSettled(message);
                                               class Re {
                                                 constructor() {
                                                   tmp = closure_0(closure_2[20]);
@@ -1052,7 +1054,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                     if (null != onRestoreVersion) {
                                                       fn = () => {
                                                         const obj = projectId(groupStart[22]);
-                                                        const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                        const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                         return obj.confirmRestoreVersion(obj2);
                                                       };
                                                     }
@@ -1115,7 +1117,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                         if (null != onRestoreVersion) {
                                                           fn = () => {
                                                             const obj = projectId(groupStart[22]);
-                                                            const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                            const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                             return obj.confirmRestoreVersion(obj2);
                                                           };
                                                         }
@@ -1223,7 +1225,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                           if (null != onRestoreVersion) {
                                                                                             fn = () => {
                                                                                               const obj = projectId(groupStart[22]);
-                                                                                              const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                                              const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                                               return obj.confirmRestoreVersion(obj2);
                                                                                             };
                                                                                           }
@@ -1247,10 +1249,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                   }
                                                                                   let closure_25 = tmp72;
                                                                                   if (cResult[127] !== message) {
-                                                                                    const tmpResult23 = tmp(tmp2[11]);
+                                                                                    const tmpResult25 = tmp(tmp2[11]);
                                                                                     cResult[127] = message;
-                                                                                    cResult[128] = tmpResult23.turnSettled(message);
-                                                                                    tmpResult23.turnSettled(message);
+                                                                                    cResult[128] = tmpResult25.turnSettled(message);
+                                                                                    tmpResult25.turnSettled(message);
                                                                                     class Re {
                                                                                       constructor() {
                                                                                         tmp = closure_0(closure_2[20]);
@@ -1264,7 +1266,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                           if (null != onRestoreVersion) {
                                                                                             fn = () => {
                                                                                               const obj = projectId(groupStart[22]);
-                                                                                              const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                                              const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                                               return obj.confirmRestoreVersion(obj2);
                                                                                             };
                                                                                           }
@@ -1296,7 +1298,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                         if (null != onRestoreVersion) {
                                                                                           fn = () => {
                                                                                             const obj = projectId(groupStart[22]);
-                                                                                            const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                                            const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                                             return obj.confirmRestoreVersion(obj2);
                                                                                           };
                                                                                         }
@@ -1314,11 +1316,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                     }
                                                                                   }
                                                                                   const obj21 = { turnActive: !tmp75 };
-                                                                                  const tmpResult24 = tmp(tmp2[12]);
+                                                                                  const tmpResult26 = tmp(tmp2[12]);
                                                                                   cResult[129] = !tmp75;
                                                                                   cResult[130] = arr;
-                                                                                  cResult[131] = tmpResult24.turnLifecycle(arr, obj21);
-                                                                                  const turnLifecycleResult = tmpResult24.turnLifecycle(arr, obj21);
+                                                                                  cResult[131] = tmpResult26.turnLifecycle(arr, obj21);
+                                                                                  const turnLifecycleResult = tmpResult26.turnLifecycle(arr, obj21);
                                                                                 }
                                                                               }
                                                                             }
@@ -1338,8 +1340,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                   const _Symbol2 = Symbol;
                                                   const forResult = Symbol.for("react.early_return_sentinel");
                                                   const obj22 = { steps: message.steps, content: tmp25, hasProposal: null != proposal, hasLiveClarification: null != clarification, hasAttachments: null != tmp29 };
-                                                  const tmpResult25 = tmp(tmp2[37]);
-                                                  const turnPresentation = tmpResult25.resolveTurnPresentation(obj22);
+                                                  const tmpResult27 = tmp(tmp2[38]);
+                                                  const turnPresentation = tmpResult27.resolveTurnPresentation(obj22);
                                                   ({ showsClosingMessage, closingContent, replyKey } = turnPresentation);
                                                   if (!(tmp8.steps.length > 0 || tmp8.tasks.length > 0)) {
                                                     if (0 === turnPresentation.streamed.length) {
@@ -1373,7 +1375,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                                                   if (null != onRestoreVersion) {
                                                                                     fn = () => {
                                                                                       const obj = projectId(groupStart[22]);
-                                                                                      const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                                                                      const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                                                                       return obj.confirmRestoreVersion(obj2);
                                                                                     };
                                                                                   }
@@ -1423,16 +1425,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                                       }
                                                     }
                                                   }
-                                                  const tmpResult26 = tmp(tmp2[37]);
-                                                  turnLeadsWithStretchResult = tmpResult26.turnLeadsWithStretch(tmp8.steps.length > 0 || tmp8.tasks.length > 0, turnPresentation);
+                                                  const tmpResult28 = tmp(tmp2[38]);
+                                                  turnLeadsWithStretchResult = tmpResult28.turnLeadsWithStretch(tmp8.steps.length > 0 || tmp8.tasks.length > 0, turnPresentation);
                                                   tmp70 = forResult;
                                                 }
                                               }
                                               let tmp52;
                                               if ("open" === secretRequestStatus) {
-                                                const tmpResult27 = tmp(tmp2[36]);
-                                                tmp52 = tmpResult27.activeAwaitingUser(message, isNewest);
-                                                const activeAwaitingUserResult = tmpResult27.activeAwaitingUser(message, isNewest);
+                                                const tmpResult29 = tmp(tmp2[37]);
+                                                tmp52 = tmpResult29.activeAwaitingUser(message, isNewest);
+                                                const activeAwaitingUserResult = tmpResult29.activeAwaitingUser(message, isNewest);
                                               }
                                               cResult[100] = isNewest;
                                               cResult[101] = message;
@@ -1462,7 +1464,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               if (null != onRestoreVersion) {
                                 fn = () => {
                                   const obj = projectId(groupStart[22]);
-                                  const obj2 = { onConfirm() { /* body not rendered: F161706 */ } };
+                                  const obj2 = { onConfirm() { /* body not rendered: F163368 */ } };
                                   return obj.confirmRestoreVersion(obj2);
                                 };
                               }
@@ -1491,8 +1493,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       }
                       let turnRestoreEntryResult = null;
                       if (null != onRestoreVersion) {
-                        const tmpResult28 = tmp(tmp2[18]);
-                        turnRestoreEntryResult = tmpResult28.turnRestoreEntry(message);
+                        const tmpResult30 = tmp(tmp2[18]);
+                        turnRestoreEntryResult = tmpResult30.turnRestoreEntry(message);
                       }
                       cResult[38] = message;
                       cResult[39] = onRestoreVersion;
@@ -1507,8 +1509,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   }
                 }
                 if ("user" === message.role) {
-                  const tmpResult29 = tmp(tmp2[16]);
-                  attachments = tmpResult29.withoutInlineFileMentions(message.attachments, message.content);
+                  const tmpResult31 = tmp(tmp2[16]);
+                  attachments = tmpResult31.withoutInlineFileMentions(message.attachments, message.content);
                 } else {
                   attachments = message.attachments;
                 }
@@ -1554,8 +1556,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     cResult[9] = turnSegmentsResult;
     arr = turnSegmentsResult;
   }
-  const tmpResult30 = tmp(tmp2[12]);
-  const timelineTree = tmpResult30.buildTimelineTree(steps, { turnActive: tmp7 });
+  const tmpResult32 = tmp(tmp2[12]);
+  const timelineTree = tmpResult32.buildTimelineTree(steps, { turnActive: tmp7 });
   cResult[2] = message.steps;
   cResult[3] = tmp7;
   cResult[4] = timelineTree;
@@ -1570,6 +1572,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let checklistSuperseded;
   let clarificationDismissed;
   let closure_9;
+  let combined;
   let first;
   let fn;
   let intl;
@@ -1600,9 +1603,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let result;
   let secretRequestStatus;
   let showsClosingMessage;
-  let tmp11Result18;
-  let tmp11Result19;
   let tmp11Result20;
+  let tmp11Result21;
+  let tmp11Result22;
   let tmp18Result;
   let tmp51;
   projectId = projectId.projectId;
@@ -1709,8 +1712,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     user_id = message.user_id;
   }
   const items9 = [onTogglePlan];
-  const tmp11Result11 = projectId(tmp12[17]);
-  stateFromStores = tmp11Result11.useStateFromStores(items9, () => {
+  const tmp11Result12 = projectId(tmp12[17]);
+  stateFromStores = tmp11Result12.useStateFromStores(items9, () => {
     const currentUser = onTogglePlan.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -1790,30 +1793,35 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         items12[1] = tmp94;
         if ("" !== trimmed) {
-          let combined;
           const Text3 = tmp11(tmp12[25]).Text;
+          let str4 = "text-default";
+          const tmp11Result13 = projectId(tmp12[26]);
+          if (tmp11Result13.isConjureAgentHiddenMessage(trimmed)) {
+            str4 = "text-muted";
+          }
+          const obj8 = { variant: "text-md/normal", color: str4, accessibilityLabel: combined, children: items13 };
+          combined = undefined;
           if (!groupStart) {
-            const intl3 = tmp11(tmp12[26]).intl;
+            const intl3 = tmp11(tmp12[27]).intl;
             const _HermesInternal = HermesInternal;
-            combined = "" + intl3.string(tmp11(tmp12[26]).t.KD6OJJ) + ": " + conjureMentionNames;
+            combined = "" + intl3.string(tmp11(tmp12[27]).t.KD6OJJ) + ": " + conjureMentionNames;
           }
           let tmp100 = null;
-          const obj8 = { variant: "text-md/normal", color: "text-default", accessibilityLabel: combined, children: items13 };
           if (null != memo4) {
             const obj9 = { label: memo4.label, variant: "text-md/medium" };
-            tmp100 = replied(tmp18(tmp12[27]), obj9);
+            tmp100 = replied(tmp18(tmp12[28]), obj9);
           }
           items13 = [tmp100, , ];
-          let str5 = null;
+          let str6 = null;
           if (null != memo4) {
-            str5 = null;
+            str6 = null;
             if ("" !== trimmed) {
-              str5 = " ";
+              str6 = " ";
             }
           }
-          items13[1] = str5;
+          items13[1] = str6;
           const obj10 = { text: trimmed, variant: "text-md/normal" };
-          items13[2] = replied(message(tmp12[28]), obj10);
+          items13[2] = replied(message(tmp12[29]), obj10);
           tmp89Result = tmp89(Text3, obj8);
         } else {
           tmp89Result = null;
@@ -1822,20 +1830,20 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         let tmp103 = null;
         if (null != tmp14) {
           const obj11 = { projectId, attachments: tmp14 };
-          tmp103 = replied(tmp18(tmp12[29]), obj11);
+          tmp103 = replied(tmp18(tmp12[30]), obj11);
         }
         items12[3] = tmp103;
         let tmp105 = null;
         if (null != message.agentReaction) {
           const obj12 = { reaction: message.agentReaction };
-          tmp105 = replied(tmp18(tmp12[30]), obj12);
+          tmp105 = replied(tmp18(tmp12[31]), obj12);
         }
         items12[4] = tmp105;
         tmp89Result2 = tmp89(tmp90, obj3);
       } else if ("context_boundary" === message.kind) {
         let tmp85 = null;
         if (null != message.contextSwitch) {
-          const obj13 = { style: tmp.boundaryRow, children: replied(message(tmp12[31]), obj14) };
+          const obj13 = { style: tmp.boundaryRow, children: replied(message(tmp12[32]), obj14) };
           obj14 = { projectId, contextSwitch: message.contextSwitch };
           tmp85 = replied(planSuperseded, obj13);
         }
@@ -1843,14 +1851,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       } else {
         if ("project_event" === message.kind) {
           if (null != message.projectEvent) {
-            const obj15 = { style: items8, children: replied(message(tmp12[32]), obj16) };
+            const obj15 = { style: items8, children: replied(message(tmp12[33]), obj16) };
             obj16 = { projectId, event: message.projectEvent };
             return replied(planSuperseded, obj15);
           }
         }
         if ("publish_notice" === message.kind) {
           if (null != message.publishNotice) {
-            const obj17 = { style: items8, children: replied(message(tmp12[33]), obj18) };
+            const obj17 = { style: items8, children: replied(message(tmp12[34]), obj18) };
             obj18 = { projectId, notice: message.publishNotice };
             return replied(planSuperseded, obj17);
           }
@@ -1858,11 +1866,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         if (true === message.interrupted) {
           const obj19 = { style: items8, children: replied(planSuperseded, obj20) };
           obj20 = { style: tmp.activityBox, children: replied(tmp18Result, obj21) };
-          obj21 = { line: intl2.string(message(tmp12[34]).oOmBdX), live: false, settled: true, inGutter: true, glyph: replied(StopIcon, obj22) };
+          obj21 = { line: intl2.string(message(tmp12[35]).oOmBdX), live: false, settled: true, inGutter: true, glyph: replied(StopIcon, obj22) };
           tmp18Result = message(tmp12[5]);
-          intl2 = tmp11(tmp12[26]).intl;
+          intl2 = tmp11(tmp12[27]).intl;
           obj22 = { size: "refresh_sm", color: message(tmp12[8]).colors.TEXT_MUTED };
-          StopIcon = tmp11(tmp12[35]).StopIcon;
+          StopIcon = tmp11(tmp12[36]).StopIcon;
           return replied(planSuperseded, obj19);
         } else {
           let provisionalTodo;
@@ -1871,8 +1879,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if ("proposal" === message.kind) {
             proposal = message.proposal;
           }
-          const tmp11Result12 = projectId(tmp12[11]);
-          const turnSettledResult = tmp11Result12.turnSettled(message);
+          const tmp11Result14 = projectId(tmp12[11]);
+          const turnSettledResult = tmp11Result14.turnSettled(message);
           let ideas = null;
           if (turnSettledResult) {
             ideas = null;
@@ -1900,8 +1908,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp28 = secretRequest;
           }
           if ("open" === secretRequestStatus) {
-            const tmp11Result13 = projectId(tmp12[36]);
-            tmp11Result13.activeAwaitingUser(message, isNewest);
+            const tmp11Result15 = projectId(tmp12[37]);
+            tmp11Result15.activeAwaitingUser(message, isNewest);
           }
           let tmp32 = null;
           if (turnSettledResult) {
@@ -1966,8 +1974,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             }
           }
           const obj23 = { steps: message.steps, content: trimmed, hasProposal: null != proposal, hasLiveClarification: null != clarification, hasAttachments: null != tmp14 };
-          const tmp11Result14 = projectId(tmp12[37]);
-          const turnPresentation = tmp11Result14.resolveTurnPresentation(obj23);
+          const tmp11Result16 = projectId(tmp12[38]);
+          const turnPresentation = tmp11Result16.resolveTurnPresentation(obj23);
           ({ showsClosingMessage, replyKey: c23 } = turnPresentation);
           let tmp41 = memo.steps.length > 0;
           const closingContent = turnPresentation.closingContent;
@@ -2005,8 +2013,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
             }
           }
-          const tmp11Result15 = projectId(tmp12[37]);
-          const turnLeadsWithStretchResult = tmp11Result15.turnLeadsWithStretch(tmp41, turnPresentation);
+          const tmp11Result17 = projectId(tmp12[38]);
+          const turnLeadsWithStretchResult = tmp11Result17.turnLeadsWithStretch(tmp41, turnPresentation);
           c24 = turnLeadsWithStretchResult;
           const found = memo1.filter((hasWork) => hasWork.hasWork);
           const atResult = found.at(-1);
@@ -2014,12 +2022,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           if (atResult != null) {
             index = atResult.index;
           }
-          const tmp11Result16 = projectId(tmp12[11]);
-          const tmp45 = !tmp11Result16.turnSettled(message);
+          const tmp11Result18 = projectId(tmp12[11]);
+          const tmp45 = !tmp11Result18.turnSettled(message);
           closure_26 = tmp45;
           const obj24 = { turnActive: tmp45 };
-          const tmp11Result17 = projectId(tmp12[12]);
-          open = tmp11Result17.turnLifecycle(memo1, obj24).open;
+          const tmp11Result19 = projectId(tmp12[12]);
+          open = tmp11Result19.turnLifecycle(memo1, obj24).open;
           let avatarSpokenReplying = groupStart && null != replied;
           let tmp49Result = null;
           const tmp47 = closure_9;
@@ -2127,9 +2135,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                 let tmp52Result15 = null;
                                 if (null != tmp30) {
                                   const obj32 = { style: tmp.spoken, children: replied(Text2, obj33) };
-                                  obj33 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(message(tmp12[34]).YR8A2v) };
+                                  obj33 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(message(tmp12[35]).YR8A2v) };
                                   Text2 = tmp11(tmp12[25]).Text;
-                                  intl = tmp11(tmp12[26]).intl;
+                                  intl = tmp11(tmp12[27]).intl;
                                   tmp52Result15 = tmp52(tmp53, obj32);
                                 }
                                 items16[3] = tmp52Result15;
@@ -2158,32 +2166,32 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           let tmp52Result16 = null;
           if (showsClosingMessage) {
             const obj35 = { source: closingContent };
-            tmp52Result16 = tmp52(tmp18(tmp12[38]), obj35);
+            tmp52Result16 = tmp52(tmp18(tmp12[39]), obj35);
           }
           items17[1] = tmp52Result16;
           let tmp52Result17 = null;
           if ("side_reply" === message.kind) {
-            const obj36 = { variant: "text-xs/normal", color: "text-muted", children: tmp11Result18.midTurnCaption(message.acknowledges) };
+            const obj36 = { variant: "text-xs/normal", color: "text-muted", children: tmp11Result20.midTurnCaption(message.acknowledges) };
             const Text = tmp11(tmp12[25]).Text;
-            tmp11Result18 = projectId(tmp12[40]);
+            tmp11Result20 = projectId(tmp12[41]);
             tmp52Result17 = tmp52(Text, obj36);
           }
           items17[2] = tmp52Result17;
           let tmp52Result18 = null;
           if (null != tmp14) {
             const obj37 = { projectId, attachments: tmp14 };
-            tmp52Result18 = tmp52(tmp18(tmp12[29]), obj37);
+            tmp52Result18 = tmp52(tmp18(tmp12[30]), obj37);
           }
           items17[3] = tmp52Result18;
           if (null != items18) {
-            const tmp18Result7 = message(tmp12[41]);
-            const tmp18Result8 = message(tmp12[42]);
+            const tmp18Result7 = message(tmp12[42]);
+            const tmp18Result8 = message(tmp12[43]);
             if (items18 == null) {
               items18 = [];
             }
             const obj38 = { children: replied(tmp18Result8, obj39) };
-            obj39 = { todos: items18, provisional: provisionalTodo, agents: memo3, live: tmp11Result19.checklistLive(message), superseded: checklistSuperseded, expanded: checklistExpanded, onToggleExpanded: callback };
-            tmp11Result19 = projectId(tmp12[43]);
+            obj39 = { todos: items18, provisional: provisionalTodo, agents: memo3, live: tmp11Result21.checklistLive(message), superseded: checklistSuperseded, expanded: checklistExpanded, onToggleExpanded: callback };
+            tmp11Result21 = projectId(tmp12[44]);
             tmp52Result19 = tmp52(tmp18Result7, obj38);
           } else {
             tmp52Result19 = null;
@@ -2192,7 +2200,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           let tmp52Result20 = null;
           if (null != proposal) {
             const obj40 = { projectId, proposal, version: planVersion, superseded: planSuperseded, expanded: planExpanded, onToggleExpanded: callback1, onApprove: onApprovePlan };
-            tmp52Result20 = tmp52(tmp18(tmp12[44]), obj40);
+            tmp52Result20 = tmp52(tmp18(tmp12[45]), obj40);
           }
           items17[5] = tmp52Result20;
           let tmp66 = null;
@@ -2208,7 +2216,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                             },
                 onInputFocusChange: onCardInputFocusChange
               };
-              tmp52Result21 = tmp52(tmp18(tmp12[45]), obj41, clarification.id);
+              tmp52Result21 = tmp52(tmp18(tmp12[46]), obj41, clarification.id);
             } else {
               const obj42 = {
                 projectId,
@@ -2219,7 +2227,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                             },
                 onInputFocusChange: onCardInputFocusChange
               };
-              tmp52Result21 = tmp52(tmp18(tmp12[46]), obj42);
+              tmp52Result21 = tmp52(tmp18(tmp12[47]), obj42);
             }
             tmp66 = tmp52Result21;
           }
@@ -2235,40 +2243,40 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         },
               onInputFocusChange: onCardInputFocusChange
             };
-            tmp52Result22 = tmp52(tmp18(tmp12[47]), obj43);
+            tmp52Result22 = tmp52(tmp18(tmp12[48]), obj43);
           }
           items17[7] = tmp52Result22;
           let tmp52Result23 = null;
           if (null != tmp28) {
             const obj44 = { projectId, cardId: message.render_id, request: tmp28, status: secretRequestStatus, awaiting: tmp30 };
-            tmp52Result23 = tmp52(tmp18(tmp12[48]), obj44);
+            tmp52Result23 = tmp52(tmp18(tmp12[49]), obj44);
           }
           items17[8] = tmp52Result23;
           let tmp52Result24 = null;
           if (null != tmp32) {
             const obj45 = { projectId, request: tmp32, askId: message.id };
-            tmp52Result24 = tmp52(tmp18(tmp12[49]), obj45);
+            tmp52Result24 = tmp52(tmp18(tmp12[50]), obj45);
           }
           items17[9] = tmp52Result24;
           let tmp52Result25 = null;
           if (null != tmp26) {
-            const obj46 = { projectId, turnId: tmp11Result20.turnIdOfSegment(message), cta: tmp26 };
-            const tmp18Result9 = message(tmp12[50]);
-            tmp11Result20 = projectId(tmp12[11]);
+            const obj46 = { projectId, turnId: tmp11Result22.turnIdOfSegment(message), cta: tmp26 };
+            const tmp18Result9 = message(tmp12[51]);
+            tmp11Result22 = projectId(tmp12[11]);
             tmp52Result25 = tmp52(tmp18Result9, obj46);
           }
           items17[10] = tmp52Result25;
           let tmp52Result26 = null;
           if (null != ideas) {
             const obj47 = { ideas, onPick: onPickIdea };
-            tmp52Result26 = tmp52(tmp18(tmp12[51]), obj47);
+            tmp52Result26 = tmp52(tmp18(tmp12[52]), obj47);
           }
           items17[11] = tmp52Result26;
           let tmp52Result27 = null;
           if (null != restoreProposal) {
             const obj48 = { proposal: restoreProposal, onRestore: fn };
             fn = undefined;
-            const tmp18Result10 = message(tmp12[52]);
+            const tmp18Result10 = message(tmp12[53]);
             if (isNewest) {
               if (null != onRestoreVersion) {
                 fn = () => {
@@ -2289,7 +2297,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           let tmp52Result28 = null;
           if (null != prop) {
             const obj49 = { projectId, proposal: prop, current: isNewest };
-            tmp52Result28 = tmp52(tmp18(tmp12[53]), obj49);
+            tmp52Result28 = tmp52(tmp18(tmp12[54]), obj49);
           }
           items17[13] = tmp52Result28;
           tmp46Result2 = tmp46(tmp53, obj34);

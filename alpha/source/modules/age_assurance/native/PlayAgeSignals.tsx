@@ -1,11 +1,11 @@
-// Module ID: 8115
-// Function ID: 8116
+// Module ID: 8138
+// Function ID: 8139
 // Name: PlayAgeSignals
-// Dependencies: [5, 8116, 8117, 2]
+// Dependencies: [5, 8139, 8140, 2]
 // Exports: getAgeSignals
 
-// Module 8115 (PlayAgeSignals)
-import react_nativeDefault from "react-native" /* 8116 */;
+// Module 8138 (PlayAgeSignals)
+import react_nativeDefault from "react-native" /* 8139 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj = function _getAgeSignals() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -98,6 +98,6 @@ let result = size.fileFinishedImporting("modules/age_assurance/native/PlayAgeSig
 export const AgeSignalsStatus = { UNSPECIFIED: 0, SHARED: 1, NOT_SHARED: 2, VERIFICATION_REQUIRED: 3 };
 export const AgeRangeSource = { UNSPECIFIED: 0, TIER_A: 1, TIER_B: 2, TIER_C: 3, TIER_D: 4 };
 export const SignificantChangeStatus = { UNSPECIFIED: 0, APPROVED: 1, PENDING: 2, DECLINED: 3 };
-export const getAgeSignals = function getAgeSignals() {
+export function getAgeSignals() {
   return obj(...arguments);
-};
+}

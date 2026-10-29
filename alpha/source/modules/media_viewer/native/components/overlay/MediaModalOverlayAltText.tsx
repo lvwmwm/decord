@@ -1,15 +1,15 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14704
+// Function ID: 14705
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 5004, 587, 558, 576, 1630, 4832, 11272, 5270, 1125, 6944, 2]
+// Dependencies: [19, 21, 5005, 587, 558, 576, 1631, 4833, 11326, 5271, 1125, 6968, 2]
 
-// Module 14470 (MediaModalOverlayAltText)
+// Module 14704 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11272 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11326 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = tmp(4832).ViewImageDescriptions;
+  const ViewImageDescriptions = tmp(4833).ViewImageDescriptions;
   let tmp5 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp5 = null;
@@ -58,7 +58,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const Text = tmp(5270).Text;
+        const Text = tmp(5271).Text;
         const intl = tmp(1125).intl;
         const tmp11 = <Text variant="text-xs/semibold" color="text-overlay-light">{intl.string(tmp(1125).t.Q5VqrN)}</Text>;
         cResult[3] = tmp11;
@@ -73,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         tmp5 = tmp12;
       }
-      const tmp14 = jsx(tmp(6944).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
+      const tmp14 = jsx(tmp(6968).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
       cResult[4] = tmp4.container;
       cResult[5] = tmp6;
       cResult[6] = tmp14;
@@ -89,14 +89,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(4832).ViewImageDescriptions;
+  const ViewImageDescriptions = str(4833).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
     if (0 !== str.length) {
-      const PressableOpacity = tmp3(6944).PressableOpacity;
+      const PressableOpacity = tmp3(6968).PressableOpacity;
       ({ variant: "text-xs/semibold", color: "text-overlay-light", children: intl.string(str(1125).t.Q5VqrN) });
-      const Text = tmp3(5270).Text;
+      const Text = tmp3(5271).Text;
       intl = tmp3(1125).intl;
       tmp4 = <PressableOpacity style={tmp2.container} onPress={function onPress() {
         const tmp = openMediaModalOverlayAltTextSheetDefault;

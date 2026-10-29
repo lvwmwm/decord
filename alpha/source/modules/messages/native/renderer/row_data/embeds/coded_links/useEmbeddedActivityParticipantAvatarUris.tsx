@@ -1,13 +1,13 @@
-// Module ID: 14801
-// Function ID: 14802
+// Module ID: 15036
+// Function ID: 15037
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 4855, 1389, 1385, 558, 576, 573, 2]
+// Dependencies: [19, 4856, 1389, 1385, 558, 576, 573, 2]
 // Exports: getEmbeddedActivityParticipantAvatarUris
 
-// Module 14801 (useEmbeddedActivityParticipantAvatarUris)
+// Module 15036 (useEmbeddedActivityParticipantAvatarUris)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
 
 export default tmp2;
-export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActivityParticipantAvatarUris(arg0) {
+export function getEmbeddedActivityParticipantAvatarUris(arg0) {
   let activity;
   ({ guildId: require, applicationId: dependencyMap, activity } = arg0);
   if (null == activity) {
@@ -156,4 +156,4 @@ export const getEmbeddedActivityParticipantAvatarUris = function getEmbeddedActi
     return "" + avatarURL;
   });
   return mapped.filter(GlobalUtils.isNotNullish);
-};
+}

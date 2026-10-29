@@ -1,11 +1,11 @@
-// Module ID: 12930
-// Function ID: 12931
+// Module ID: 13151
+// Function ID: 13152
 // Name: useShouldRenderReportFalsePositiveButton
-// Dependencies: [7427, 558, 576, 573, 2]
+// Dependencies: [7450, 558, 576, 573, 2]
 // Exports: shouldRenderReportFalsePositiveButton
 
-// Module 12930 (useShouldRenderReportFalsePositiveButton)
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7427 */;
+// Module 13151 (useShouldRenderReportFalsePositiveButton)
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7450 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
 });
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");
 
-export const shouldRenderReportFalsePositiveButton = function shouldRenderReportFalsePositiveButton(id) {
+export function shouldRenderReportFalsePositiveButton(id) {
   return null != ExplicitMediaStore.getFpMessageInfo(id);
-};
+}
 export const useShouldRenderReportFalsePositiveButton = tmp2;

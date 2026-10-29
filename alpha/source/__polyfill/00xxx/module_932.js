@@ -249,7 +249,7 @@ let closure_6 = {};
 export { _addMeasureSpans };
 export { _addNavigationSpans };
 export { _addResourceSpans };
-export const _setResourceRequestAttributes = function _setResourceRequestAttributes(arg0, arg1, arr) {
+export function _setResourceRequestAttributes(arg0, arg1, arr) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const item = arr.forEach((item) => {
@@ -271,8 +271,8 @@ export const _setResourceRequestAttributes = function _setResourceRequestAttribu
       closure_1[tmp2] = closure_0[tmp];
     }
   });
-};
-export const addPerformanceEntries = function addPerformanceEntries(setAttribute, recordClsOnPageloadSpan) {
+}
+export function addPerformanceEntries(setAttribute, recordClsOnPageloadSpan) {
   let c3;
   let c4;
   let requestStart;
@@ -440,8 +440,8 @@ export const addPerformanceEntries = function addPerformanceEntries(setAttribute
       closure_6 = {};
     }
   }
-};
-export const startTrackingInteractions = function startTrackingInteractions() {
+}
+export function startTrackingInteractions() {
   let obj = _mod908;
   const result = obj.addPerformanceInstrumentationHandler("event", (arg0) => {
     let obj5;
@@ -482,8 +482,8 @@ export const startTrackingInteractions = function startTrackingInteractions() {
       }
     }
   });
-};
-export const startTrackingLongAnimationFrames = function startTrackingLongAnimationFrames() {
+}
+export function startTrackingLongAnimationFrames() {
   const performanceObserver = new globalThis.PerformanceObserver((getEntries) => {
     let sourceCharPosition;
     let sourceFunctionName;
@@ -534,8 +534,8 @@ export const startTrackingLongAnimationFrames = function startTrackingLongAnimat
     }
   });
   performanceObserver.observe({ type: "long-animation-frame", buffered: true });
-};
-export const startTrackingLongTasks = function startTrackingLongTasks() {
+}
+export function startTrackingLongTasks() {
   let obj = _mod908;
   const result = obj.addPerformanceInstrumentationHandler("longtask", (arg0) => {
     let obj5;
@@ -577,8 +577,8 @@ export const startTrackingLongTasks = function startTrackingLongTasks() {
       }
     }
   });
-};
-export const startTrackingWebVitals = function startTrackingWebVitals(client) {
+}
+export function startTrackingWebVitals(client) {
   let c0;
   let closure_1;
   let recordClsStandaloneSpans;
@@ -649,4 +649,4 @@ export const startTrackingWebVitals = function startTrackingWebVitals(client) {
   return () => {
 
   };
-};
+}

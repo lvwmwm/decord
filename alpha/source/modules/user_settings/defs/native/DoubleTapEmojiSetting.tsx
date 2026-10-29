@@ -1,25 +1,25 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17805
+// Function ID: 17806
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 8365, 1084, 1392, 21, 5004, 587, 558, 576, 4832, 8359, 1414, 7263, 9859, 1264, 7314, 9871, 11248, 1125, 2]
+// Dependencies: [5, 19, 8387, 1084, 1392, 21, 5005, 587, 558, 576, 4833, 8381, 1415, 7287, 9891, 1264, 7338, 9903, 11302, 1125, 2]
 
-// Module 17567 (DoubleTapEmojiSetting)
+// Module 17805 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import EmojiDefault from "Emoji" /* 7263 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8359 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import EmojiDefault from "Emoji" /* 7287 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8381 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -257,7 +257,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -296,7 +296,7 @@ let obj3 = {
               const obj = emoji(closure_2[17]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp11) {
             constants = 3;

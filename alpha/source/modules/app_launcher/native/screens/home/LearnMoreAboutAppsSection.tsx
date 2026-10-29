@@ -1,19 +1,19 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12070
+// Function ID: 12071
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1084, 21, 5004, 587, 558, 576, 5696, 2064, 1125, 5270, 6944, 12017, 11208, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 5698, 2065, 1125, 5271, 6968, 12071, 11262, 2]
 
-// Module 12016 (LearnMoreAboutAppsSection)
+// Module 12070 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12017 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,9 +24,9 @@ let obj3;
 let obj4;
 let tmp;
 const intl5 = tmp(1125);
-const Text_Text = tmp(5270);
-const Pressables = tmp(6944);
-const AppLauncherTypes = tmp(11208);
+const Text_Text = tmp(5271);
+const Pressables = tmp(6968);
+const AppLauncherTypes = tmp(11262);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

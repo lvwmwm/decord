@@ -1,29 +1,29 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16302
+// Function ID: 16303
 // Name: MediaPlayerManager
-// Dependencies: [17, 4855, 6839, 4856, 6045, 4936, 1998, 1084, 5645, 16067, 1095, 3, 570, 1271, 2001, 5187, 584, 1381, 568, 7601, 6837, 2]
+// Dependencies: [17, 4856, 6862, 4857, 6049, 4937, 1999, 1084, 5646, 16303, 1095, 3, 570, 1271, 2002, 5188, 584, 1381, 568, 7624, 6860, 2]
 // Exports: isPlaybackComplete
 
-// Module 16066 (MediaPlayerManager)
+// Module 16302 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
 import react_native from "react-native" /* 1271 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
 import react_native2 from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import VoicePanelStore from "VoicePanelStore" /* 6839 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import VoicePanelStore from "VoicePanelStore" /* 6862 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16303 */;
 import module_570 from "module_570" /* 570 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,18 +48,18 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
   let obj = {
     activeMediaPlayerSource: "IconComponent",
     mediaSourceMessage: "Set",
-    canAccessMedia: "done",
+    canAccessMedia: "duration",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: true,
+    showPip: "PLAY_ON_PLAYSTATION",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: 150
+    currentlyDisplayedChannelId: 44
   };
   return obj;
 });
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "done", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "duration", rate: false, isPlaying: false, wasPipClosedByUser: "identity" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);
@@ -534,8 +534,8 @@ let result = size.fileFinishedImporting("modules/media/native/MediaPlayerManager
 
 export default updateDisplayState1;
 export { useMediaPlayerManagerStore };
-export const isPlaybackComplete = function isPlaybackComplete(duration) {
+export function isPlaybackComplete(duration) {
   if (duration.duration > 0) {
     return duration.duration - duration.time <= map1;
   }
-};
+}

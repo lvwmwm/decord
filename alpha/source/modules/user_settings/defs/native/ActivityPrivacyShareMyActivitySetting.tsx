@@ -1,25 +1,25 @@
-// Module ID: 17584
-// Function ID: 17585
+// Module ID: 17822
+// Function ID: 17823
 // Name: ActivityPrivacyShareMyActivitySetting
-// Dependencies: [8365, 11248, 1125, 2705, 4832, 2]
+// Dependencies: [8387, 11302, 1125, 2706, 4833, 2]
 
-// Module 17584 (ActivityPrivacyShareMyActivitySetting)
+// Module 17822 (ActivityPrivacyShareMyActivitySetting)
 import intl2 from "intl" /* 1125 */;
-import _modDef2705 from "module_2705" /* 2705 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import _modDef2706 from "module_2706" /* 2706 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2705.WhdCGP);
+    return intl.string(_modDef2706.WhdCGP);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2705.UQ9RHJ);
+    return intl.string(_modDef2706.UQ9RHJ);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.ShowCurrentGame.useSetting,

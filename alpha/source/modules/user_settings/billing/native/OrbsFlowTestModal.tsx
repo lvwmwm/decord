@@ -1,27 +1,27 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17579
+// Function ID: 17580
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 109, 19, 17, 21, 9777, 558, 576, 7131, 9733, 10065, 5004, 587, 5270, 17341, 6013, 5246, 14194, 1999, 1125, 7044, 5280, 14184, 14193, 5629, 17343, 5633, 2]
+// Dependencies: [32, 109, 19, 17, 21, 9809, 558, 576, 7155, 9765, 10097, 5005, 587, 5271, 17580, 6015, 5247, 14427, 2000, 1125, 7068, 5281, 14417, 14426, 5630, 17582, 5634, 2]
 
-// Module 17340 (OrbsFlowTestModal)
+// Module 17579 (OrbsFlowTestModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
-import Stack_Stack from "Stack/Stack" /* 6013 */;
-import HeaderShared from "HeaderShared" /* 9733 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10065 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17341 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
+import Stack_Stack from "Stack/Stack" /* 6015 */;
+import HeaderShared from "HeaderShared" /* 9765 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10097 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,8 +36,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp6;
-const LayerScope2 = tmp(5633);
-const OrbCheckoutMenuDefault = tmp6(17343);
+const LayerScope2 = tmp(5634);
+const OrbCheckoutMenuDefault = tmp6(17582);
 function BalanceWidgetPillSection() {
   let balance;
   let closure_1;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsFlowTest
   let tmp9;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(7131);
+  let obj2 = accessibilityNativeStackOptions(7155);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n(navigation) {

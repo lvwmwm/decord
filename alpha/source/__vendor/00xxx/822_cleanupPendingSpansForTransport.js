@@ -15,7 +15,7 @@ let map;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const weakMap = new WeakMap();
 
-export const cleanupPendingSpansForTransport = function cleanupPendingSpansForTransport(arg0) {
+export function cleanupPendingSpansForTransport(arg0) {
   const value = weakMap.get(arg0);
   if (value) {
     const tmp2 = value[Symbol.iterator]();
@@ -31,8 +31,8 @@ export const cleanupPendingSpansForTransport = function cleanupPendingSpansForTr
     }
     value.clear();
   }
-};
-export const completeSpanWithResults = function completeSpanWithResults(arg0, id, result, self) {
+}
+export function completeSpanWithResults(arg0, id, result, self) {
   let method;
   let span;
   let value = weakMap.get(arg0);
@@ -69,8 +69,8 @@ export const completeSpanWithResults = function completeSpanWithResults(arg0, id
     span.end();
     value.delete(id);
   }
-};
-export const storeSpanForRequest = function storeSpanForRequest(self, id, startInactiveSpanResult, method) {
+}
+export function storeSpanForRequest(self, id, startInactiveSpanResult, method) {
   let value = weakMap.get(self);
   const obj = weakMap;
   if (!value) {
@@ -83,4 +83,4 @@ export const storeSpanForRequest = function storeSpanForRequest(self, id, startI
   }
   const obj2 = { span: startInactiveSpanResult, method, startTime: Date.now() };
   const result1 = value.set(id, obj2);
-};
+}

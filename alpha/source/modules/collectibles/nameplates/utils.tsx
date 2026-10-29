@@ -1,15 +1,15 @@
-// Module ID: 1989
-// Function ID: 1990
+// Module ID: 1990
+// Function ID: 1991
 // Name: utils
-// Dependencies: [1990, 1095, 1993, 1995, 1125, 2]
+// Dependencies: [1991, 1095, 1994, 1996, 1125, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1989 (utils)
+// Module 1990 (utils)
 import Constants from "Constants" /* 1095 */;
 import intl6 from "intl" /* 1125 */;
-import NameplateRecord from "NameplateRecord" /* 1990 */;
-import nameplates_constants from "nameplates/constants" /* 1993 */;
-import _modDef1995 from "module_1995" /* 1995 */;
+import NameplateRecord from "NameplateRecord" /* 1991 */;
+import nameplates_constants from "nameplates/constants" /* 1994 */;
+import _modDef1996 from "module_1996" /* 1996 */;
 import size_mod from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -17,7 +17,7 @@ const ThemeTypes = Constants.ThemeTypes;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/utils.tsx");
 
-export const getNameplateData = function getNameplateData(nameplate) {
+export function getNameplateData(nameplate) {
   let INVALID_NAMEPLATE_PALETTE;
   let tmp = null;
   if (null != nameplate) {
@@ -26,13 +26,13 @@ export const getNameplateData = function getNameplateData(nameplate) {
     INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1993).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1994).INVALID_NAMEPLATE_PALETTE;
     }
     tmp = obj;
   }
   return tmp;
-};
-export const getNameplateDataFromProductRecord = function getNameplateDataFromProductRecord(product) {
+}
+export function getNameplateDataFromProductRecord(product) {
   let INVALID_NAMEPLATE_PALETTE;
   let palette;
   if (0 === product.items.length) {
@@ -48,7 +48,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1993).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1994).INVALID_NAMEPLATE_PALETTE;
         }
         tmp = obj;
       }
@@ -56,8 +56,8 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
     }
     return tmp4;
   }
-};
-export const getBackgroundGradientColors = function getBackgroundGradientColors(palette, arg1) {
+}
+export function getBackgroundGradientColors(palette, arg1) {
   let tmp3 = palette.name !== nameplates_constants.INVALID_PALETTE_KEY;
   if (tmp3) {
     let tmp4 = palette.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
@@ -79,8 +79,8 @@ export const getBackgroundGradientColors = function getBackgroundGradientColors(
     const _HermesInternal2 = HermesInternal;
     return rect;
   }
-};
-export const isValidPalette = function isValidPalette(name) {
+}
+export function isValidPalette(name) {
   let tmp3 = name.name !== nameplates_constants.INVALID_PALETTE_KEY;
   if (tmp3) {
     let tmp4 = name.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
@@ -96,18 +96,18 @@ export const isValidPalette = function isValidPalette(name) {
     tmp3 = tmp4;
   }
   return tmp3;
-};
-export const getNameplatePalette = function getNameplatePalette(arg0) {
+}
+export function getNameplatePalette(arg0) {
   let INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[arg0];
   if (INVALID_NAMEPLATE_PALETTE == null) {
     INVALID_NAMEPLATE_PALETTE = nameplates_constants.INVALID_NAMEPLATE_PALETTE;
   }
   return INVALID_NAMEPLATE_PALETTE;
-};
-export const parseFirstFrame = function parseFirstFrame(arg0) {
-  const decoder = _modDef1995;
+}
+export function parseFirstFrame(arg0) {
+  const decoder = _modDef1996;
   size = decoder.decode(arg0);
-  const obj = _modDef1995;
+  const obj = _modDef1996;
   const first = obj.toRGBA8(size)[0];
   const element = <canvas />;
   ({ width: obj2.width, height: obj2.height } = size);
@@ -116,8 +116,8 @@ export const parseFirstFrame = function parseFirstFrame(arg0) {
   const imageData = new globalThis.ImageData(uint8ClampedArray, size.width, size.height);
   context.putImageData(imageData, 0, 0);
   return element.toDataURL("image/png");
-};
-export const getNameplateSampleUsers = function getNameplateSampleUsers() {
+}
+export function getNameplateSampleUsers() {
   let intl;
   let intl2;
   let intl3;
@@ -140,4 +140,4 @@ export const getNameplateSampleUsers = function getNameplateSampleUsers() {
   obj6 = { name: intl5.string(intl6.t.ncslie), avatarSrc: "https://cdn.discordapp.com/assets/content/e264a2b0b8d963edd255c223abf1c0554f00a2f3a38640e509a38bc03d73b606.png" };
   intl5 = intl6.intl;
   return obj;
-};
+}

@@ -1,34 +1,34 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12306
+// Function ID: 12307
 // Name: conjurePublishSchedule
-// Dependencies: [1125, 3863, 2]
+// Dependencies: [1125, 3864, 2]
 // Exports: formatPublishScheduleTime, publishScheduleDetails
 
-// Module 12252 (conjurePublishSchedule)
+// Module 12306 (conjurePublishSchedule)
 import intl7 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
+import _modDef3864 from "module_3864" /* 3864 */;
 import size from "module_2" /* 2 */;
 
 function publishScheduleSummary(trigger) {
   if ("cron" === trigger.type) {
     const intl4 = intl7.intl;
     const obj2 = { expression: trigger.expression };
-    return intl4.formatToPlainString(_modDef3863.aewci7, obj2);
+    return intl4.formatToPlainString(_modDef3864.aewci7, obj2);
   } else {
     let formatToPlainStringResult;
     const result = trigger.everyMs / 60000;
     if (result % 1440 === 0) {
       const intl3 = intl7.intl;
       const obj3 = { count: result / 1440 };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef3863["x/G8tD"], obj3);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef3864["x/G8tD"], obj3);
     } else if (result % 60 === 0) {
       const intl2 = intl7.intl;
       const obj4 = { count: result / 60 };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3863["q4AgE/"], obj4);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3864["q4AgE/"], obj4);
     } else {
       const intl = intl7.intl;
       const obj = { count: result };
-      formatToPlainStringResult = intl.formatToPlainString(_modDef3863["+y7hwg"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(_modDef3864["+y7hwg"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -36,11 +36,11 @@ function publishScheduleSummary(trigger) {
 let result = size.fileFinishedImporting("modules/conjure/publish_schedule/conjurePublishSchedule.tsx");
 
 export { publishScheduleSummary };
-export const formatPublishScheduleTime = function formatPublishScheduleTime(next_run_at) {
+export function formatPublishScheduleTime(next_run_at) {
   const date = new Date(next_run_at);
   return date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
-};
-export const publishScheduleDetails = function publishScheduleDetails(saved) {
+}
+export function publishScheduleDetails(saved) {
   let date;
   let date1;
   let error;
@@ -54,7 +54,7 @@ export const publishScheduleDetails = function publishScheduleDetails(saved) {
     const self = this;
     const self2 = this;
     const obj = { interval: tmp, time: date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) };
-    const prop = _modDef3863["qCM+Fa"];
+    const prop = _modDef3864["qCM+Fa"];
     date = new Date(saved.trigger.startsAt);
     formatToPlainStringResult = formatToPlainString(prop, obj);
   }
@@ -63,7 +63,7 @@ export const publishScheduleDetails = function publishScheduleDetails(saved) {
   const intl2 = intl7.intl;
   const formatToPlainString2 = intl2.formatToPlainString;
   const obj2 = { time: date1.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) };
-  const prop1 = _modDef3863["T/dCkl"];
+  const prop1 = _modDef3864["T/dCkl"];
   date1 = new Date(saved.next_run_at);
   push(formatToPlainString2(prop1, obj2));
   const last_run = saved.last_run;
@@ -78,24 +78,24 @@ export const publishScheduleDetails = function publishScheduleDetails(saved) {
     if ("succeeded" === last_run.status) {
       const intl6 = tmp11(1125).intl;
       const obj3 = { time: toLocaleStringResult };
-      formatToPlainStringResult1 = intl6.formatToPlainString(tmp13(3863).yMA4zs, obj3);
+      formatToPlainStringResult1 = intl6.formatToPlainString(tmp13(3864).yMA4zs, obj3);
     } else if ("skipped" === last_run.status) {
       const intl5 = tmp11(1125).intl;
       const obj4 = { time: toLocaleStringResult };
-      formatToPlainStringResult1 = intl5.formatToPlainString(tmp13(3863)["0ikIhz"], obj4);
+      formatToPlainStringResult1 = intl5.formatToPlainString(tmp13(3864)["0ikIhz"], obj4);
     } else {
       const intl3 = tmp11(1125).intl;
       const formatToPlainString3 = intl3.formatToPlainString;
       const obj5 = { time: toLocaleStringResult, error };
       error = last_run.error;
-      const HMNRj4 = tmp13(3863).HMNRj4;
+      const HMNRj4 = tmp13(3864).HMNRj4;
       if (error == null) {
         const intl4 = tmp11(1125).intl;
-        error = intl4.string(tmp13(3863).dRxtva);
+        error = intl4.string(tmp13(3864).dRxtva);
       }
       formatToPlainStringResult1 = formatToPlainString3(HMNRj4, obj5);
     }
     push2(formatToPlainStringResult1);
   }
   return items;
-};
+}

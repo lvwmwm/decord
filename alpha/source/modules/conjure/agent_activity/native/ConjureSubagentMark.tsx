@@ -1,23 +1,23 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12481
+// Function ID: 12482
 // Name: ConjureSubagentMark
-// Dependencies: [32, 12428, 587, 12432, 12436, 12440, 12444, 12448, 12452, 12456, 12460, 12464, 12468, 12472, 2]
+// Dependencies: [32, 12482, 587, 12486, 12490, 12494, 12498, 12502, 12506, 12510, 12514, 12518, 12522, 12526, 2]
 // Exports: familiarMark, subagentIllocons
 
-// Module 12427 (ConjureSubagentMark)
+// Module 12481 (ConjureSubagentMark)
 import nativeDefault from "native" /* 587 */;
-import SnailIllocon from "SnailIllocon" /* 12428 */;
-import GoatIllocon from "GoatIllocon" /* 12432 */;
-import FrogIllocon from "FrogIllocon" /* 12436 */;
-import BunnyIllocon from "BunnyIllocon" /* 12440 */;
-import CatIllocon from "CatIllocon" /* 12444 */;
-import CaterpillarIllocon from "CaterpillarIllocon" /* 12448 */;
-import ButterflyIllocon from "ButterflyIllocon" /* 12452 */;
-import DogIllocon from "DogIllocon" /* 12456 */;
-import SpiderIllocon from "SpiderIllocon" /* 12460 */;
-import BeeIllocon from "BeeIllocon" /* 12464 */;
-import BotIllocon from "BotIllocon" /* 12468 */;
-import ConjureSubagentMarks from "ConjureSubagentMarks" /* 12472 */;
+import SnailIllocon from "SnailIllocon" /* 12482 */;
+import GoatIllocon from "GoatIllocon" /* 12486 */;
+import FrogIllocon from "FrogIllocon" /* 12490 */;
+import BunnyIllocon from "BunnyIllocon" /* 12494 */;
+import CatIllocon from "CatIllocon" /* 12498 */;
+import CaterpillarIllocon from "CaterpillarIllocon" /* 12502 */;
+import ButterflyIllocon from "ButterflyIllocon" /* 12506 */;
+import DogIllocon from "DogIllocon" /* 12510 */;
+import SpiderIllocon from "SpiderIllocon" /* 12514 */;
+import BeeIllocon from "BeeIllocon" /* 12518 */;
+import BotIllocon from "BotIllocon" /* 12522 */;
+import ConjureSubagentMarks from "ConjureSubagentMarks" /* 12526 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ obj2 = { Illocon: SnailIllocon.SnailIllocon, tint: nativeDefault.unsafe_rawColor
 ({ Illocon: BotIllocon.BotIllocon, tint: nativeDefault.unsafe_rawColors.ILLO_PURPLE_40 });
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureSubagentMark.tsx");
 
-export const familiarMark = function familiarMark(helperMark) {
+export function familiarMark(helperMark) {
   let tmpResult;
   obj = ConjureSubagentMarks;
   let tmp3;
@@ -56,8 +56,8 @@ export const familiarMark = function familiarMark(helperMark) {
     tmpResult = ConjureSubagentMarks;
   }
   return tmp3;
-};
-export const subagentIllocons = function subagentIllocons(arr) {
+}
+export function subagentIllocons(arr) {
   map = new Map();
   const obj2 = ConjureSubagentMarks;
   const result = obj2.assignSubagentMarkKeys(arr);
@@ -68,4 +68,4 @@ export const subagentIllocons = function subagentIllocons(arr) {
     continue;
   }
   return map;
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 4875
-// Function ID: 4876
+// Module ID: 4876
+// Function ID: 4877
 // Name: ServerNSFWLevelExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 4875 (ServerNSFWLevelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 4876 (ServerNSFWLevelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,7 +16,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_gate/ServerNSFWLevelExperiment.tsx");
 
 export const ServerNSFWLevelExperiment = apexExperiment;
-export const isServerNSFWLevelEnabled = function isServerNSFWLevelEnabled(guild_record) {
+export function isServerNSFWLevelEnabled(guild_record) {
   const obj = { location: guild_record };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

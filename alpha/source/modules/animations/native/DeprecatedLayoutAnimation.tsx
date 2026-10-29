@@ -1,13 +1,13 @@
-// Module ID: 5631
-// Function ID: 5632
+// Module ID: 5632
+// Function ID: 5633
 // Name: DeprecatedLayoutAnimation
-// Dependencies: [17, 5005, 1381, 2]
+// Dependencies: [17, 5006, 1381, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5631 (DeprecatedLayoutAnimation)
+// Module 5632 (DeprecatedLayoutAnimation)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import size from "module_2" /* 2 */;
 
 let LayoutAnimation;
@@ -19,7 +19,7 @@ const result = size.fileFinishedImporting("modules/animations/native/DeprecatedL
 
 export const CONFIG_GUILD_FOLDER_OPACITY = obj;
 export const CONFIG_GUILD_FOLDER_SCALEXY = obj3;
-export const DeprecatedLayoutAnimation = function DeprecatedLayoutAnimation(duration) {
+export function DeprecatedLayoutAnimation(duration) {
   let useReducedMotion = AccessibilityStore.useReducedMotion;
   if (!useReducedMotion) {
     const obj = PlatformUtils;
@@ -32,8 +32,8 @@ export const DeprecatedLayoutAnimation = function DeprecatedLayoutAnimation(dura
       LayoutAnimation.easeInEaseOut();
     }
   }
-};
-export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimationKeyboard(keyboardDuration) {
+}
+export function DeprecatedLayoutAnimationKeyboard(keyboardDuration) {
   let obj4;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -57,4 +57,4 @@ export const DeprecatedLayoutAnimationKeyboard = function DeprecatedLayoutAnimat
   if (!useReducedMotion) {
     obj5.configureNext(obj3);
   }
-};
+}

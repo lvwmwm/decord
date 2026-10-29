@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14256
+// Function ID: 14257
 // Name: uploadRtcLogFiles
-// Dependencies: [5, 1084, 3, 8733, 6409, 1294, 2]
+// Dependencies: [5, 1084, 3, 8736, 6433, 1294, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 14023 (uploadRtcLogFiles)
+// Module 14256 (uploadRtcLogFiles)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
@@ -28,7 +28,7 @@ let obj = function _uploadRtcLogFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -124,7 +124,7 @@ let obj = function _uploadRtcLogFiles() {
         }
         if (closure_1 === undefined) {
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else {
           c1 = tmp51;
           body = "";
@@ -145,6 +145,6 @@ const tmp3 = new LoggerDefault("uploadRtcLogFiles");
 let closure_5 = tmp3;
 const result = size.fileFinishedImporting("lib/uploadRtcLogFiles.android.tsx");
 
-export const uploadRtcLogFiles = function uploadRtcLogFiles() {
+export function uploadRtcLogFiles() {
   return obj(...arguments);
-};
+}

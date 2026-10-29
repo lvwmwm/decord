@@ -1,17 +1,17 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11458
+// Function ID: 11459
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2042, 4856, 4907, 1389, 4855, 2023, 5664, 4925, 11405, 11448, 11447, 5665, 11458, 8916, 12767, 11434, 2]
+// Dependencies: [5, 2043, 4857, 4908, 1389, 4856, 2024, 5666, 4926, 11459, 11502, 11501, 5667, 11512, 8919, 12984, 11488, 2]
 // Exports: default
 
-// Module 11404 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2023 */;
+// Module 11458 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

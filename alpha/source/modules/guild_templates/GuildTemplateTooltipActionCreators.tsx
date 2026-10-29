@@ -1,13 +1,13 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 7484
+// Function ID: 7485
 // Name: GuildTemplateTooltipActionCreators
-// Dependencies: [5, 4936, 1084, 7462, 584, 2]
+// Dependencies: [5, 4937, 1084, 7485, 584, 2]
 
-// Module 7461 (GuildTemplateTooltipActionCreators)
+// Module 7484 (GuildTemplateTooltipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -26,7 +26,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ let obj = {
             return obj;
           }
           guildId = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp6) {
           guildId = 3;
           throw tmp6;

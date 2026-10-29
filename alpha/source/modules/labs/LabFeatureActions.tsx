@@ -1,18 +1,18 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 17404
+// Function ID: 17405
 // Name: LabFeatureActions
-// Dependencies: [8498, 584, 2]
+// Dependencies: [8520, 584, 2]
 // Exports: toggleLabFeature
 
-// Module 17165 (LabFeatureActions)
+// Module 17404 (LabFeatureActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LabFeatureStore from "LabFeatureStore" /* 8498 */;
+import LabFeatureStore from "LabFeatureStore" /* 8520 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = {};
 const result = size.fileFinishedImporting("modules/labs/LabFeatureActions.tsx");
 
-export const toggleLabFeature = function toggleLabFeature(ICYMI_LAB_FEATURE, arg1) {
+export function toggleLabFeature(ICYMI_LAB_FEATURE, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {
     tmp = closure_3;
@@ -24,4 +24,4 @@ export const toggleLabFeature = function toggleLabFeature(ICYMI_LAB_FEATURE, arg
   const obj = DispatcherDefault;
   const obj2 = { type: "LAB_FEATURE_TOGGLE", labFeature: ICYMI_LAB_FEATURE, enabled };
   obj.dispatch(obj2);
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13233
+// Function ID: 13234
 // Name: onTapCheckpointCard
-// Dependencies: [4856, 1084, 6072, 1264, 5747, 13013, 2]
+// Dependencies: [4857, 1084, 6076, 1264, 5749, 13234, 2]
 // Exports: onTapCheckpointCard
 
-// Module 13012 (onTapCheckpointCard)
+// Module 13233 (onTapCheckpointCard)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6072 */;
-import openCheckpoint from "openCheckpoint" /* 13013 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6076 */;
+import openCheckpoint from "openCheckpoint" /* 13234 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");
 
-export const onTapCheckpointCard = function onTapCheckpointCard(arg0) {
+export function onTapCheckpointCard(arg0) {
   let authorId;
   let message;
   ({ message, authorId } = arg0);
@@ -40,4 +40,4 @@ export const onTapCheckpointCard = function onTapCheckpointCard(arg0) {
     const tmpResult4 = openCheckpoint;
     tmpResult4.openCheckpoint("message_component");
   }
-};
+}

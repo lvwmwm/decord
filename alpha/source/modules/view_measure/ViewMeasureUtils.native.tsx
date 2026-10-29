@@ -1,16 +1,16 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11163
+// Function ID: 11164
 // Name: ViewMeasureUtils
 // Dependencies: [2]
 // Exports: measureView, measureViewInView, measureViewInWindow, measureViewRef, measureViewRefInView, measureViewRefInWindow
 
-// Module 11109 (ViewMeasureUtils)
+// Module 11163 (ViewMeasureUtils)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/view_measure/ViewMeasureUtils.native.tsx");
 
-export const measureView = function measureView(arg0) {
+export function measureView(arg0) {
   let closure_0 = arg0;
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
@@ -20,8 +20,8 @@ export const measureView = function measureView(arg0) {
     });
   });
   return promise;
-};
-export const measureViewRef = function measureViewRef(current) {
+}
+export function measureViewRef(current) {
   let resolved;
   current = current.current;
   if (null == current) {
@@ -38,8 +38,8 @@ export const measureViewRef = function measureViewRef(current) {
     });
   }
   return resolved;
-};
-export const measureViewInWindow = function measureViewInWindow(current2) {
+}
+export function measureViewInWindow(current2) {
   let closure_0 = current2;
   const promise = new Promise((arg0) => {
     let closure_0 = arg0;
@@ -49,8 +49,8 @@ export const measureViewInWindow = function measureViewInWindow(current2) {
     });
   });
   return promise;
-};
-export const measureViewRefInWindow = function measureViewRefInWindow(ref) {
+}
+export function measureViewRefInWindow(ref) {
   let resolved;
   const current = ref.current;
   if (null == current) {
@@ -67,8 +67,8 @@ export const measureViewRefInWindow = function measureViewRefInWindow(ref) {
     });
   }
   return resolved;
-};
-export const measureViewInView = function measureViewInView(arg0, arg1) {
+}
+export function measureViewInView(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const promise = new Promise((arg0) => {
@@ -81,8 +81,8 @@ export const measureViewInView = function measureViewInView(arg0, arg1) {
     });
   });
   return promise;
-};
-export const measureViewRefInView = function measureViewRefInView(ref, current2) {
+}
+export function measureViewRefInView(ref, current2) {
   let resolved;
   const current = ref.current;
   if (null == current) {
@@ -102,4 +102,4 @@ export const measureViewRefInView = function measureViewRefInView(ref, current2)
     });
   }
   return resolved;
-};
+}

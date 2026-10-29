@@ -1,17 +1,17 @@
-// Module ID: 13792
-// Function ID: 13793
+// Module ID: 14025
+// Function ID: 14026
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 4856, 1084, 5699, 1125, 7384, 5246, 6879, 5038, 13793, 1999, 2]
+// Dependencies: [5, 32, 19, 4857, 1084, 5701, 1125, 7407, 5247, 6903, 5039, 14026, 2000, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 13792 (useJoinRequestButtonActions)
+// Module 14025 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -19,7 +19,7 @@ let c4, c5;
 const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/useJoinRequestButtonActions.tsx");
 
-export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
+export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
   let callback1;
   let items1;
   let items2;
@@ -59,7 +59,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(13793, dependencyMap.paths);
+        const tmp10 = asyncRequire(14026, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {
@@ -309,4 +309,4 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
   items1 = [guildId, joinRequestId, onError, submitting, userId];
   items2 = [guildId, joinRequestId, joinRequest, cResult, onError, userId];
   return obj2;
-};
+}

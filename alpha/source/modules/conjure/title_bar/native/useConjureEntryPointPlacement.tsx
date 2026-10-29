@@ -1,11 +1,11 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9629
+// Function ID: 9630
 // Name: useConjureEntryPointPlacement
-// Dependencies: [9598, 558, 576, 6843, 1452, 9599, 504, 2]
+// Dependencies: [9630, 558, 576, 6866, 1453, 9631, 504, 2]
 
-// Module 9597 (useConjureEntryPointPlacement)
-import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9599 */;
-import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9598 */;
+// Module 9629 (useConjureEntryPointPlacement)
+import ConjureMobileExperimentDefault from "ConjureMobileExperiment" /* 9631 */;
+import ConjureYouBarPinStore from "ConjureYouBarPinStore" /* 9630 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureEn
   let obj2 = require("ConjureGuildExperiment");
   const hasConjureGuild = obj2.useHasConjureGuild(_location);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp(1452).ApexExperimentStore];
+    const items = [tmp(1453).ApexExperimentStore];
     cResult[0] = items;
     first = items;
   } else {

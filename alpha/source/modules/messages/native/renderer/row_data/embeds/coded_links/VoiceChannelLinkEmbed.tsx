@@ -1,25 +1,25 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 15042
+// Function ID: 15043
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 4874, 4856, 4878, 4936, 4946, 1389, 1084, 7844, 8307, 1414, 1381, 1125, 8539, 5640, 2]
+// Dependencies: [32, 17, 4875, 4857, 4879, 4937, 4947, 1389, 1084, 7867, 8329, 1415, 1381, 1125, 8561, 5641, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 14807 (VoiceChannelLinkEmbed)
+// Module 15042 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import Constants2 from "Constants" /* 7844 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import Constants2 from "Constants" /* 7867 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const Permissions = Constants.Permissions;
 const InviteTypes = Constants2.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
 
-export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, arg1) {
+export function createVoiceChannelLinkEmbed(code, arg1) {
   let baseColors;
   let colors;
   let icon1;
@@ -60,7 +60,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             if (null != icon) {
               let id;
-              const getGuildIconURL = tmp5(1414).getGuildIconURL;
+              const getGuildIconURL = tmp5(1415).getGuildIconURL;
               AvatarUtilsDefault;
               if (guild != null) {
                 id = guild.id;
@@ -110,4 +110,4 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
     }
   }
   return null;
-};
+}

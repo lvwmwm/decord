@@ -1,20 +1,20 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11219
+// Function ID: 11220
 // Name: useBadgeDirectoryBadgeIndicators
-// Dependencies: [19, 11166, 11164, 8723, 558, 576, 504, 2]
+// Dependencies: [19, 11220, 11218, 8726, 558, 576, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId
 
-// Module 11165 (useBadgeDirectoryBadgeIndicators)
-import BadgeUtils from "BadgeUtils" /* 11164 */;
+// Module 11219 (useBadgeDirectoryBadgeIndicators)
+import BadgeUtils from "BadgeUtils" /* 11218 */;
 import react from "react" /* 19 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 11166 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 11220 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const BadgeDirectoryActionCreators = tmp(8723);
+const BadgeDirectoryActionCreators = tmp(8726);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeDirectoryBadgeIndicators(badges) {
   let seenBadgeIndicators;
@@ -161,7 +161,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissBa
       const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
       const tmp3 = require;
       if (BETA_BADGE_IDS.has(badgeId)) {
-        const tmp3Result = tmp3(8723);
+        const tmp3Result = tmp3(8726);
         const result = tmp3Result.markBadgeDirectoryBadgeIndicatorSeen(tmp);
       }
     }
@@ -183,7 +183,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissBa
       const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
       const tmp3 = require;
       if (BETA_BADGE_IDS.has(badgeId)) {
-        const tmp3Result = tmp3(8723);
+        const tmp3Result = tmp3(8726);
         const result = tmp3Result.markBadgeDirectoryBadgeIndicatorSeen(tmp);
       }
     }

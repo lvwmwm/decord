@@ -1,20 +1,20 @@
-// Module ID: 18333
-// Function ID: 18334
+// Module ID: 18567
+// Function ID: 18568
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5004, 587, 1125, 558, 576, 5058, 1199, 5270, 6941, 18334, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 1125, 558, 576, 5059, 1199, 5271, 6965, 18568, 2]
 
-// Module 18333 (ConjureChannelChatToasts)
+// Module 18567 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import UserUtils from "UserUtils" /* 5058 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Card_Card from "Card/Card" /* 6941 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18334 */;
+import UserUtils from "UserUtils" /* 5059 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Card_Card from "Card/Card" /* 6965 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18568 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
       tmp9 = cResult[4];
     }
     if (cResult[5] !== message.author) {
-      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
       const Avatar = tmp(1199).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
@@ -185,8 +185,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6941).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+  Card = tmp2(6965).Card;
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
   const Avatar = tmp2(1199).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };

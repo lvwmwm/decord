@@ -1,18 +1,18 @@
-// Module ID: 7803
-// Function ID: 7804
+// Module ID: 7826
+// Function ID: 7827
 // Name: appMessageEmbedTrackingConfig
-// Dependencies: [502, 7797, 2]
+// Dependencies: [502, 7820, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 7803 (appMessageEmbedTrackingConfig)
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7797 */;
+// Module 7826 (appMessageEmbedTrackingConfig)
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7820 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 const LinkType = MessageEmbedConstants.LinkType;
 const result = size.fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
 
-export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id) {
+export function trackingConfigWithDefaults(id) {
   let activityCustomId;
   let analyticsLocations;
   let appEmbedState;
@@ -86,4 +86,4 @@ export const trackingConfigWithDefaults = function trackingConfigWithDefaults(id
     analyticsLocations = id.analyticsLocations;
   }
   return obj;
-};
+}

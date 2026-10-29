@@ -1,23 +1,23 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16693
+// Function ID: 16694
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1389, 21, 5004, 558, 576, 8160, 6939, 5058, 1199, 1125, 2535, 5270, 7023, 7334, 2]
+// Dependencies: [19, 1389, 21, 5005, 558, 576, 8183, 6963, 5059, 1199, 1125, 2536, 5271, 7047, 7358, 2]
 
-// Module 16455 (FamilyCenterTopUsersBottomSheet)
+// Module 16693 (FamilyCenterTopUsersBottomSheet)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
-import ActionSheet2 from "ActionSheet" /* 7334 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
+import ActionSheet2 from "ActionSheet" /* 7358 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8183 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (tmp7 === Symbol.for("react.early_return_sentinel")) {
         let tmp19;
         if (cResult[11] !== tmp8) {
-          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "r" };
+          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "Array" };
           const Avatar = tmp(1199).Avatar;
           const tmp21 = React3(Avatar, obj2);
           cResult[11] = tmp8;
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (cResult[9] === userActivity.dms_sent) {
         tmp15 = cResult[10];
       }
-      TableRow = tmp(6939).TableRow;
+      TableRow = tmp(6963).TableRow;
       const obj3 = UserUtilsDefault;
       name = obj3.getName(user);
       tmp13 = tmp15;
@@ -132,7 +132,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2535.BxbvS7);
+    const stringResult = intl.string(_modDef2536.BxbvS7);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2535.BxbvS7) };
+  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2536.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

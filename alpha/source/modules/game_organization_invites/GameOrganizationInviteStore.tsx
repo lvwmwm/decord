@@ -1,18 +1,20 @@
-// Module ID: 11067
-// Function ID: 11068
+// Module ID: 11121
+// Function ID: 11122
 // Name: GameOrganizationInviteStore
-// Dependencies: [11068, 11069, 504, 584, 2]
+// Dependencies: [11122, 11123, 504, 584, 2]
 
-// Module 11067 (GameOrganizationInviteStore)
+// Module 11121 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11069 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11123 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const constants = GameOrganizationInviteConstants.GameOrganizationInviteStates;
+let c2;
+let c3;
+({ GameOrganizationCharacterMode: c2, GameOrganizationInviteStates: c3 } = GameOrganizationInviteConstants);
 let map = new Map();
 const Store = get_initializedDefault.Store;
 class GameOrganizationInviteStore extends Store {
@@ -37,7 +39,7 @@ let obj = {
     if (value != null) {
       state = value.state;
     }
-    if (state === constants.RESOLVED) {
+    if (state === constants2.RESOLVED) {
       return false;
     } else {
       const _Map = Map;
@@ -50,6 +52,7 @@ let obj = {
   },
   GAME_ORGANIZATION_INVITE_RESOLVE_SUCCESS: function handleResolveSuccess(invite) {
     let application;
+    let character_mode;
     let display_noun;
     let game_organization;
     let guild;
@@ -60,7 +63,7 @@ let obj = {
     const code = invite.code;
     map = new Map(map);
     const application_config = invite.application_config;
-    const obj = { code: invite.code, state: constants.RESOLVED, inviterId: invite.inviter_id, accepted: invite.accepted, guildId: invite.guild.id, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
+    const obj = { code: invite.code, state: constants2.RESOLVED, inviterId: invite.inviter_id, accepted: invite.accepted, guildId: invite.guild.id, organization: obj2.fromServerGameOrganization(game_organization), application: obj3.fromServerGameOrganizationApplication(application), displayNoun: display_noun, characterMode: character_mode, linkedGuild: tmp2Result.fromServerGameOrganizationGuild(guild) };
     set = map.set;
     ({ game_organization, application, guild } = invite);
     obj2 = fromServerGameOrganization;
@@ -71,6 +74,13 @@ let obj = {
     }
     if (display_noun == null) {
       display_noun = null;
+    }
+    character_mode = undefined;
+    if (application_config != null) {
+      character_mode = application_config.character_mode;
+    }
+    if (character_mode == null) {
+      character_mode = constants.SINGLE;
     }
     tmp2Result = fromServerGameOrganization;
     const result = set(code, obj);
@@ -83,7 +93,7 @@ let obj = {
     if (value != null) {
       state = value.state;
     }
-    if (state === constants.RESOLVED) {
+    if (state === constants2.RESOLVED) {
       return false;
     } else {
       const _Map = Map;
@@ -101,7 +111,7 @@ let obj = {
     if (value != null) {
       state = value.state;
     }
-    if (state !== constants.RESOLVED) {
+    if (state !== constants2.RESOLVED) {
       return false;
     } else {
       const _Map = Map;

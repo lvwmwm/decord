@@ -18,7 +18,7 @@ export function setRuntimeConfigProvider(arg0) {
     hasOwnProperty = arg0;
   }
 }
-export const get = function get(arg0, arg1) {
+export function get(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const obj = customBubblingEventTypesAll;
@@ -80,8 +80,8 @@ export const get = function get(arg0, arg1) {
     return viewConfig1;
   });
   return arg0;
-};
-export const getWithFallback_DEPRECATED = function getWithFallback_DEPRECATED(arg0, arg1) {
+}
+export function getWithFallback_DEPRECATED(arg0, arg1) {
   let obj2;
   if (null == closure_5) {
     let tmp6 = dependencyMap;
@@ -231,8 +231,8 @@ export const getWithFallback_DEPRECATED = function getWithFallback_DEPRECATED(ar
   }
   FallbackNativeComponent.displayName = "Fallback(" + arg0 + ")";
   return FallbackNativeComponent;
-};
-export const unstable_hasStaticViewConfig = function unstable_hasStaticViewConfig(arg0) {
+}
+export function unstable_hasStaticViewConfig(arg0) {
   let obj;
   if (hasOwnProperty != null) {
     obj = tmp(arg0);
@@ -241,4 +241,4 @@ export const unstable_hasStaticViewConfig = function unstable_hasStaticViewConfi
     obj = { native: true };
   }
   return !obj.native;
-};
+}

@@ -19,7 +19,7 @@ const BINARY_READ_OPTIONS = {
 const result = size.fileFinishedImporting("utils/ProtoUtils.tsx");
 
 export { BINARY_READ_OPTIONS };
-export const b64ToProto = function b64ToProto(fromBinary, actionData) {
+export function b64ToProto(fromBinary, actionData) {
   let fromBinaryResult = null;
   if (null != actionData) {
     fromBinary = fromBinary.fromBinary;
@@ -27,8 +27,8 @@ export const b64ToProto = function b64ToProto(fromBinary, actionData) {
     fromBinaryResult = fromBinary(obj.base64decode(actionData), obj);
   }
   return fromBinaryResult;
-};
-export const protoToB64 = function protoToB64(toBinary, favoriteGifs) {
+}
+export function protoToB64(toBinary, favoriteGifs) {
   const obj = _mod1209;
   return obj.base64encode(toBinary.toBinary(favoriteGifs));
-};
+}

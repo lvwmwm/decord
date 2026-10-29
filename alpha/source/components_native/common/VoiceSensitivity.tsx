@@ -1,25 +1,25 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11715
+// Function ID: 11716
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2011, 6720, 1998, 1084, 7903, 21, 5004, 587, 5001, 558, 576, 1496, 504, 7920, 5775, 5013, 1125, 1199, 8985, 1381, 8806, 2]
+// Dependencies: [5, 32, 19, 17, 2012, 6743, 1999, 1084, 7926, 21, 5005, 587, 5002, 558, 576, 1497, 504, 7943, 5777, 5014, 1125, 1199, 8988, 1381, 8809, 2]
 
-// Module 11661 (VoiceSensitivity)
+// Module 11715 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl5 from "intl" /* 1125 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5775 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore_mod from "MediaEngineStore" /* 2011 */;
-import SpeakingStore from "SpeakingStore" /* 6720 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 2012 */;
+import SpeakingStore from "SpeakingStore" /* 6743 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import ColorUtils_mod from "ColorUtils" /* 5001 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import ColorUtils_mod from "ColorUtils" /* 5002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -649,7 +649,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensiti
             obj = { value, done: true };
             return obj;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -684,7 +684,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensiti
                 mediaEngine.on(_true(first[18]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp16) {
             c2 = 3;

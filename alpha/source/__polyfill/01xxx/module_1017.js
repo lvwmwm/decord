@@ -17,7 +17,7 @@ let obj = {
   }
 };
 
-export const createReduxEnhancer = function createReduxEnhancer(arg0) {
+export function createReduxEnhancer(arg0) {
   obj = {};
   const merged = Object.assign(obj);
   const merged1 = Object.assign(arg0);
@@ -140,4 +140,4 @@ export const createReduxEnhancer = function createReduxEnhancer(arg0) {
       return tmp4;
     };
   };
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12989
+// Function ID: 12990
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 4856, 1389, 11448, 5664, 12064, 11434, 2]
+// Dependencies: [5, 4857, 1389, 11502, 5666, 12118, 11488, 2]
 // Exports: default
 
-// Module 12772 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11448 */;
+// Module 12989 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 11502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             let tmp5;

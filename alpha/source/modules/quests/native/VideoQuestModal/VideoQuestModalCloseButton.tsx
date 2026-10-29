@@ -1,15 +1,15 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 17001
+// Function ID: 17002
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 558, 576, 587, 1125, 6967, 6944, 2]
+// Dependencies: [21, 558, 576, 587, 1125, 6991, 6968, 2]
 
-// Module 16763 (VideoQuestModalCloseButton)
+// Module 17001 (VideoQuestModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Pressables from "Pressables" /* 6944 */;
-import XSmallIcon from "XSmallIcon" /* 6967 */;
+import Pressables from "Pressables" /* 6968 */;
+import XSmallIcon from "XSmallIcon" /* 6991 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

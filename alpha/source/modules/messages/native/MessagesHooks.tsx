@@ -1,25 +1,25 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11308
+// Function ID: 11309
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10037, 9816, 6738, 4878, 5748, 558, 576, 12, 504, 568, 6845, 1385, 7843, 11255, 9815, 11256, 2]
+// Dependencies: [32, 19, 17, 10069, 9848, 6761, 4879, 5750, 558, 576, 12, 504, 568, 6868, 1385, 7866, 11309, 9847, 11310, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11254 (MessagesHooks)
+// Module 11308 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7843 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9815 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9816 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11256 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7866 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9847 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9848 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11310 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10037 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10069 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11255);
+            let tmp4Result = tmp4(11309);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11255);
+            let tmp4Result = tmp4(11309);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -451,7 +451,7 @@ let result = size.fileFinishedImporting("modules/messages/native/MessagesHooks.t
 export const useMessageAuthorActivities = tmp2;
 export const useFetchMessageApplications = tmp3;
 export const useFetchVoiceChannelInviteStartTimes = tmp4;
-export const useMessagesLifecycle = function useMessagesLifecycle(screenIndex) {
+export function useMessagesLifecycle(screenIndex) {
   let channelId;
   let isMessagesReady;
   let messages;
@@ -473,9 +473,9 @@ export const useMessagesLifecycle = function useMessagesLifecycle(screenIndex) {
   const effect1 = screenIndex.useEffect(() => () => {
     closure_2_7(channelId, screenIndex, false);
   }, items);
-};
+}
 export const useScrollState = tmp5;
-export const useChatUpdatesQueue = function useChatUpdatesQueue(ref6, callback) {
+export function useChatUpdatesQueue(ref6, callback) {
   let closure_0 = ref6;
   let closure_1 = callback;
   const items = [ref6, callback];
@@ -497,5 +497,5 @@ export const useChatUpdatesQueue = function useChatUpdatesQueue(ref6, callback) 
     memo.cleanup();
   }, items1);
   return memo;
-};
+}
 export const useMessagesState = tmp6;

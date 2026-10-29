@@ -130,7 +130,7 @@ function getNotificationAttributes(arg0, requestId, arg2) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const buildTypeSpecificAttributes = function buildTypeSpecificAttributes(request, message, params, recordInputs) {
+export function buildTypeSpecificAttributes(request, message, params, recordInputs) {
   let obj = params;
   if ("request" === request) {
     let requestArguments;
@@ -174,5 +174,5 @@ export const buildTypeSpecificAttributes = function buildTypeSpecificAttributes(
     }
     return tmp(method, obj5, recordInputs);
   }
-};
+}
 export { getNotificationAttributes };

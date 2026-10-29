@@ -1,20 +1,20 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7846
+// Function ID: 7847
 // Name: v2/Video
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 7823 (v2/Video)
+// Module 7846 (v2/Video)
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/types/v2/Video.tsx");
 
-export const videoAssetFromServer = function videoAssetFromServer(url) {
+export function videoAssetFromServer(url) {
   size = { url: url.url, width: url.width, height: url.height, thumbnail: url.thumbnail, caption: url.caption, transcript: url.transcript };
   return size;
-};
-export const desktopVideoAssetsFromServer = function desktopVideoAssetsFromServer(assets) {
+}
+export function desktopVideoAssetsFromServer(assets) {
   let video;
   const obj = { video: { url: video.url, width: video.width, height: video.height, thumbnail: video.thumbnail, caption: video.caption, transcript: video.transcript } };
   video = assets.video;
@@ -29,11 +29,11 @@ export const desktopVideoAssetsFromServer = function desktopVideoAssetsFromServe
     obj.videoHls = size1;
   }
   return obj;
-};
-export const desktopVideoMessagesFromServer = function desktopVideoMessagesFromServer(messages) {
+}
+export function desktopVideoMessagesFromServer(messages) {
   return { videoTitle: messages.video_title };
-};
-export const mobileVideoAssetsFromServer = function mobileVideoAssetsFromServer(assets) {
+}
+export function mobileVideoAssetsFromServer(assets) {
   let video;
   const obj = { video: { url: video.url, width: video.width, height: video.height, thumbnail: video.thumbnail, caption: video.caption, transcript: video.transcript } };
   video = assets.video;
@@ -48,7 +48,7 @@ export const mobileVideoAssetsFromServer = function mobileVideoAssetsFromServer(
     obj.videoHls = size1;
   }
   return obj;
-};
-export const mobileVideoMessagesFromServer = function mobileVideoMessagesFromServer(messages) {
+}
+export function mobileVideoMessagesFromServer(messages) {
   return { videoTitle: messages.video_title };
-};
+}

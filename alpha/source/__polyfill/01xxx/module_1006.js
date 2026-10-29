@@ -7,7 +7,7 @@
 import encodeUTF8 from "encodeUTF8" /* 881 */;
 
 
-export const parseContentLengthHeader = function parseContentLengthHeader(responseHeader) {
+export function parseContentLengthHeader(responseHeader) {
   if (responseHeader) {
     const _parseInt = parseInt;
     const parsed = parseInt(responseHeader, 10);
@@ -18,8 +18,8 @@ export const parseContentLengthHeader = function parseContentLengthHeader(respon
     }
     return tmp3;
   }
-};
-export const getBodySize = function getBodySize(size) {
+}
+export function getBodySize(size) {
   function _serializeFormData(size) {
     const str = new URLSearchParams(size);
     return str.toString();
@@ -57,4 +57,4 @@ export const getBodySize = function getBodySize(size) {
     } catch (err) {
     }
   }
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17543
+// Function ID: 17544
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 7080, 6707, 1125, 17305, 7521, 8147, 6960, 17306, 17307, 17312, 17315, 17316, 17317, 7131, 5945, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 7104, 6731, 1125, 17544, 7544, 8170, 6984, 17545, 17546, 17551, 17554, 17555, 17556, 7155, 5947, 2]
 // Exports: openMFAModal
 
-// Module 17304 (MFAModal)
+// Module 17543 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import MFAUtils from "MFAUtils" /* 7080 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7521 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8147 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 17305 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import MFAUtils from "MFAUtils" /* 7104 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7544 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8170 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17544 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, closure_1, data, dependencyMap, importDefault;
+let _require, c2, closure_1, data, dependencyMap, importDefault, mfaType;
 
 let LogBox;
 let metroImportDefault;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
     tmp8 = cResult[5];
   }
   let tmp13 = tmp8;
-  if (!tmp(7080).hasWebAuthn) {
+  if (!tmp(7104).hasWebAuthn) {
     if (cResult[7] !== tmp8.methods) {
       let tmp16;
       const _Symbol = Symbol;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           }
         }
       }
-      const obj3 = { name: tmp(17305).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(17544).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -192,7 +192,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           const obj = closure_2_1(closure_2_2[8]);
           obj.popWithKey(MFA_MODAL_KEY);
           ticket = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp12) {
         ticket = 3;
@@ -265,21 +265,73 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
   }, items);
   const useCallback = finish.useCallback;
   let closure_0 = flag((mfaType) => {
-    let closure_2;
     let ticket;
     let c3 = 0;
     let c4 = 0;
-    const iter = (function*(arg0) {
+    const iter = (function*(arg0, value) {
       let c0;
       let c1;
-      const obj5 = { mfaType, data, ticket: ticket.ticket };
-      yield data(obj5);
-      const obj = finish(cancel[8]);
-      obj.popWithKey(closure_2_9);
-      yield "IconComponent";
-      data = tmp;
-      ({ mfaType: c0, data: c1 } = closure_0);
-      return "Reflect";
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp4;
+              mfaType = undefined;
+              data = undefined;
+              ({ mfaType: c0, data: c1 } = closure_0);
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { mfaType, data, ticket: ticket.ticket };
+              const obj6 = { value: data(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            const obj = finish(cancel[8]);
+            obj.popWithKey(closure_2_9);
+            c4 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp17) {
+          c4 = 3;
+          throw tmp17;
+        }
+      }
     })();
     iter.next();
     return iter;
@@ -543,10 +595,10 @@ let closure_10 = tmp4;
 const result = size.fileFinishedImporting("modules/mfa/native/MFAModal.tsx");
 
 export const MFAModal = tmp4;
-export const openMFAModal = function openMFAModal(mfaChallenge, finish, cancel) {
+export function openMFAModal(mfaChallenge, finish, cancel) {
   const arr = ModalActionCreatorsDefault;
   const obj = { mfaChallenge, finish, cancel };
   arr.push(closure_10, obj, MFA_MODAL_KEY);
   const obj2 = actions_AlertActionCreatorsDefault;
   obj2.close();
-};
+}

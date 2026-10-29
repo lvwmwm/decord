@@ -1,38 +1,38 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11707
+// Function ID: 11708
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 5751, 2011, 4936, 5752, 10921, 1084, 1095, 21, 5004, 11421, 5246, 558, 576, 1627, 5301, 5305, 11654, 5640, 11602, 9083, 11681, 11682, 1125, 1893, 5887, 6669, 5241, 11683, 11611, 504, 11690, 7489, 11691, 11692, 587, 11490, 11709, 11710, 2]
+// Dependencies: [19, 17, 5753, 2012, 4937, 5754, 10956, 1084, 1095, 21, 5005, 11475, 5247, 558, 576, 1628, 5302, 5306, 11708, 5641, 11656, 9086, 11735, 11736, 1125, 1894, 5889, 6693, 5242, 11737, 11665, 504, 11744, 7512, 11745, 11746, 587, 11544, 11763, 11764, 2]
 // Exports: showVoiceSettingsActionSheet
 
-// Module 11653 (ChannelCallConnectingScreen)
+// Module 11707 (ChannelCallConnectingScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import Constants2 from "Constants" /* 1095 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import useThemeDefault from "useTheme" /* 5241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5301 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import useChannelNameDefault from "useChannelName" /* 5640 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5887 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9083 */;
-import ChannelCallStore from "ChannelCallStore" /* 10921 */;
-import useActionBarHeight from "useActionBarHeight" /* 11421 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11654 */;
-import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11681 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11682 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11691 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 11692 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import useThemeDefault from "useTheme" /* 5242 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import useChannelNameDefault from "useChannelName" /* 5641 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5889 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
+import ChannelCallStore from "ChannelCallStore" /* 10956 */;
+import useActionBarHeight from "useActionBarHeight" /* 11475 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11708 */;
+import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11735 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11736 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11745 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 11746 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5751 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import SessionsStore from "SessionsStore" /* 5752 */;
+import GameConsoleStore from "GameConsoleStore" /* 5753 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import SessionsStore from "SessionsStore" /* 5754 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChannelCallMicButton = tmp(11683);
+const ChannelCallMicButton = tmp(11737);
 let react = react_mod;
 const View = react_native.View;
 const resetFocus = ChannelCallStore.resetFocus;
@@ -72,9 +72,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { scrollable: true, startExpanded: first, children: authStore2(BottomSheetScrollView, obj3) };
-    BottomSheet = tmp(5301).BottomSheet;
+    BottomSheet = tmp(5302).BottomSheet;
     obj3 = { children: authStore2(UserSettingsVoiceDefault, {}) };
-    BottomSheetScrollView = tmp(5305).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(5306).BottomSheetScrollView;
     const tmp9 = authStore2(BottomSheet, obj2);
     cResult[1] = tmp9;
     tmp6 = tmp9;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallC
   channel = channel.channel;
   const tmp4 = closure_15();
   const tmp6 = useChannelNameDefault(channel);
-  let obj2 = channel(11602);
+  let obj2 = channel(11656);
   const isVoiceChannelLocked = obj2.useIsVoiceChannelLocked(channel);
   if (cResult[0] === channel) {
     let tmp8;
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallC
   channel = channel.channel;
   const tmp = closure_15();
   const tmp4 = useChannelNameDefault(channel);
-  let obj = channel(11602);
+  let obj = channel(11656);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
@@ -619,10 +619,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallConnecti
 });
 let result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallConnectingScreen.tsx");
 
-export const showVoiceSettingsActionSheet = function showVoiceSettingsActionSheet(guildId) {
+export function showVoiceSettingsActionSheet(guildId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { guildId };
   obj.openLazy(() => Promise.resolve(closure_1_16), "voice settings", obj2);
-};
+}
 export const ChannelCallConnectingHeader = tmp3;
 export const CallConnectingActionBar = tmp4;

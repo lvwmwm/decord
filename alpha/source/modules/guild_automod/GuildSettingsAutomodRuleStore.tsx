@@ -1,13 +1,13 @@
-// Module ID: 19314
-// Function ID: 19315
+// Module ID: 19547
+// Function ID: 19548
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1084, 1125, 1266, 12, 1385, 1271, 19315, 19320, 19316, 8300, 19313, 12875, 6409, 4919, 2]
+// Dependencies: [5, 1084, 1125, 1266, 12, 1385, 1271, 19548, 19553, 19549, 8322, 19546, 13096, 6433, 4920, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 19314 (GuildSettingsAutomodRuleStore)
+// Module 19547 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1084 */;
 import react_native from "react-native" /* 1271 */;
-import _slicedToArray from "_slicedToArray" /* 4919 */;
+import _slicedToArray from "_slicedToArray" /* 4920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1266 from "module_1266" /* 1266 */;
 import size from "module_2" /* 2 */;
@@ -91,7 +91,7 @@ let closure_6 = module_1266.createWithEqualityFn((arg0, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c8;
@@ -303,10 +303,10 @@ let closure_6 = module_1266.createWithEqualityFn((arg0, arg1) => {
 });
 let result = size.fileFinishedImporting("modules/guild_automod/GuildSettingsAutomodRuleStore.tsx");
 
-export const useAutomodEditingRuleActions = function useAutomodEditingRuleActions() {
+export function useAutomodEditingRuleActions() {
   return closure_6((hasChanges) => ({ hasChanges: hasChanges.hasChanges, editingRule: hasChanges.editingRule, isLoading: hasChanges.isLoading, errorMessage: hasChanges.errorMessage, saveRule: hasChanges.saveRule, saveEditingRule: hasChanges.saveEditingRule, cancelEditingRule: hasChanges.cancelEditingRule }), _slicedToArray.shallow);
-};
-export const useAutomodEditingRuleState = function useAutomodEditingRuleState(guildId) {
+}
+export function useAutomodEditingRuleState(guildId) {
   let tmp = guildId;
   if (guildId === undefined) {
     tmp = null;
@@ -316,4 +316,4 @@ export const useAutomodEditingRuleState = function useAutomodEditingRuleState(gu
     obj.setEditingRule(tmp);
   }
   return obj;
-};
+}

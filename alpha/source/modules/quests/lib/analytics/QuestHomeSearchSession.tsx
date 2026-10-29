@@ -1,12 +1,12 @@
-// Module ID: 7842
-// Function ID: 7843
+// Module ID: 7865
+// Function ID: 7866
 // Name: QuestHomeSearchSession
-// Dependencies: [1278, 7616, 2]
+// Dependencies: [1278, 7639, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 7842 (QuestHomeSearchSession)
+// Module 7865 (QuestHomeSearchSession)
 import v1 from "v1" /* 1278 */;
-import SessionUtils from "SessionUtils" /* 7616 */;
+import SessionUtils from "SessionUtils" /* 7639 */;
 import size from "module_2" /* 2 */;
 
 let searchSession;
@@ -14,7 +14,7 @@ let searchSession;
 let c2 = null;
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/QuestHomeSearchSession.tsx");
 
-export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSearchSession() {
+export function getOrCreateQuestHomeSearchSession() {
   let obj;
   let obj3;
   let obj4;
@@ -30,7 +30,7 @@ export const getOrCreateQuestHomeSearchSession = function getOrCreateQuestHomeSe
     obj = { searchSession, isNew: false };
   }
   return obj;
-};
+}
 export function clearQuestHomeSearchSession() {
   let c2 = null;
 }

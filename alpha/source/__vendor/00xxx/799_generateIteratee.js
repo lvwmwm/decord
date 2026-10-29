@@ -13,7 +13,7 @@ let _require, stacktrace;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const generateIteratee = function generateIteratee(arg0) {
+export function generateIteratee(arg0) {
   let closure_2;
   let require;
   ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
@@ -61,7 +61,7 @@ export const generateIteratee = function generateIteratee(arg0) {
       return filename;
     }
   };
-};
+}
 export const rewriteFramesIntegration = module_763.defineIntegration(() => {
   let closure_0;
   let prefix;

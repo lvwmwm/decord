@@ -1,35 +1,35 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12105
+// Function ID: 12106
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9684, 1501, 1084, 6019, 21, 5004, 12052, 587, 558, 576, 11964, 6939, 11207, 7665, 11445, 12026, 1125, 1630, 10238, 1997, 12056, 9683, 5670, 11961, 1381, 12058, 5270, 12060, 12023, 12062, 9682, 1199, 12070, 12072, 5246, 5747, 10781, 2]
+// Dependencies: [5, 19, 17, 9716, 1502, 1084, 6023, 21, 5005, 12106, 587, 558, 576, 12018, 6963, 11261, 7688, 11499, 12080, 1125, 1631, 10271, 1998, 12110, 9715, 5672, 12015, 1381, 12112, 5271, 12114, 12077, 12116, 9714, 1199, 12124, 12126, 5247, 5749, 10861, 2]
 // Exports: default
 
-// Module 12051 (AppDetailContent)
+// Module 12105 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
-import AppLauncherContext from "AppLauncherContext" /* 11207 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11961 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11964 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12026 */;
-import Header from "Header" /* 12052 */;
-import BillIcon from "BillIcon" /* 12058 */;
-import ShopIcon from "ShopIcon" /* 12060 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
+import AppLauncherContext from "AppLauncherContext" /* 11261 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 12018 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 12080 */;
+import Header from "Header" /* 12106 */;
+import BillIcon from "BillIcon" /* 12112 */;
+import ShopIcon from "ShopIcon" /* 12114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9684 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9716 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -378,7 +378,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -419,7 +419,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
                     closure_0();
                   }
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } catch (tmp12) {
                 c3 = 3;
@@ -474,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
   let onPressSend;
   ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
   let tmp = command;
-  let obj = command(11207);
+  let obj = command(11261);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   const tmp3 = onPressSend(true, true);
   hasOptions(context, true, true);
@@ -494,8 +494,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     sectionName
   };
   fn = undefined;
-  const useCommandRowSend = command(12026).useCommandRowSend;
-  const tmp5 = command(12026);
+  const useCommandRowSend = command(12080).useCommandRowSend;
+  const tmp5 = command(12080);
   if (installOnDemand) {
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let obj5;
@@ -511,7 +511,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -552,7 +552,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
               closure_0();
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -601,7 +601,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     onAccessibilityAction: callback,
     trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
   };
-  const TableRow = tmp(6939).TableRow;
+  const TableRow = tmp(6963).TableRow;
   return closure_13(TableRow, obj3);
 });
 let closure_20 = tmp6;
@@ -765,7 +765,7 @@ export default function AppDetailContent(context) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: items };
       items = [map1(BillIcon.BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl.string(intl3.t["5khEk8"]) };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       items[1] = map1(Text, obj3);
       tmp6 = syncedClientThemes(View, obj2);
@@ -775,7 +775,7 @@ export default function AppDetailContent(context) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: items1 };
       items1 = [map1(ShopIcon.ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "text-xs/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(intl3.t["8z5B2U"]) };
-      const Text2 = tmp(5270).Text;
+      const Text2 = tmp(5271).Text;
       intl2 = tmp(1125).intl;
       items1[1] = map1(Text2, obj5);
       tmp11 = syncedClientThemes(View, obj4);

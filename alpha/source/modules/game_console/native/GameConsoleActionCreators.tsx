@@ -1,11 +1,11 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11749
+// Function ID: 11750
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 11696, 5944, 1125, 2]
+// Dependencies: [5, 11750, 5946, 1125, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 11695 (game_console/GameConsoleActionCreators)
-import transferToPlayStation from "transferToPlayStation" /* 11696 */;
+// Module 11749 (game_console/GameConsoleActionCreators)
+import transferToPlayStation from "transferToPlayStation" /* 11750 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _transferToPlaystationWithAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ let obj = function _transferToPlaystationWithAlert() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp26) {
           closure_5 = tmp26;
@@ -93,6 +93,6 @@ let obj = function _transferToPlaystationWithAlert() {
 };
 const result = size.fileFinishedImporting("modules/game_console/native/GameConsoleActionCreators.tsx");
 
-export const transferToPlaystationWithAlert = function transferToPlaystationWithAlert() {
+export function transferToPlaystationWithAlert() {
   return obj(...arguments);
-};
+}

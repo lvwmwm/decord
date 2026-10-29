@@ -1,12 +1,12 @@
-// Module ID: 10737
-// Function ID: 10738
+// Module ID: 10811
+// Function ID: 10812
 // Name: conjureChatHistory
-// Dependencies: [32, 10736, 11, 2]
+// Dependencies: [32, 10810, 11, 2]
 // Exports: foldDividers, messagesFromHistory
 
-// Module 10737 (conjureChatHistory)
+// Module 10811 (conjureChatHistory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 10736 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 10810 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -212,7 +212,7 @@ let result = size.fileFinishedImporting("modules/conjure/chat/conjureChatHistory
 
 export { newMessage };
 export { newMessageFromHistory };
-export const messagesFromHistory = function messagesFromHistory(entries) {
+export function messagesFromHistory(entries) {
   let tmp4;
   const mapped = entries.map(newMessageFromHistory);
   map = new Map();
@@ -368,8 +368,8 @@ export const messagesFromHistory = function messagesFromHistory(entries) {
     });
   }
   return flatMapResult;
-};
-export const foldDividers = function foldDividers(items) {
+}
+export function foldDividers(items) {
   map = new Map();
   const iter = items[Symbol.iterator]();
   const nextResult = iter.next();
@@ -425,5 +425,5 @@ export const foldDividers = function foldDividers(items) {
       }
     });
   }
-};
+}
 export const TURN_ENTRY_PREFIX = "turn:";

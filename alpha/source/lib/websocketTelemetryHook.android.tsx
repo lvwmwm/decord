@@ -1,15 +1,15 @@
-// Module ID: 19770
-// Function ID: 19771
+// Module ID: 19992
+// Function ID: 19993
 // Name: websocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 19770 (websocketTelemetryHook)
+// Module 19992 (websocketTelemetryHook)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
-export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
+export function installWebsocketTelemetryHook(arg0) {
   let _globalThis;
   let closure_0 = arg0;
   function handleMessage(arg0, str) {
@@ -159,4 +159,4 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
       _globalThis.__discordWebsocketTelemetryPatched = true;
     }
   }
-};
+}

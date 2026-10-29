@@ -32,19 +32,19 @@ function parseRetryAfterHeader(arg0) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const DEFAULT_RETRY_AFTER = 60000;
-export const disabledUntil = function disabledUntil(all, arg1) {
+export function disabledUntil(all, arg1) {
   return all[arg1] || all.all || 0;
-};
-export const isRateLimited = function isRateLimited(all, arg1) {
+}
+export function isRateLimited(all, arg1) {
   let safeDateNowResult = arg2;
   if (arg2 === undefined) {
     const obj = safeDateNow;
     safeDateNowResult = obj.safeDateNow();
   }
   return (all[arg1] || all.all || 0) > safeDateNowResult;
-};
+}
 export { parseRetryAfterHeader };
-export const updateRateLimits = function updateRateLimits(arg0, headers) {
+export function updateRateLimits(arg0, headers) {
   let prop1;
   headers = headers.headers;
   let safeDateNowResult = arg2;
@@ -108,4 +108,4 @@ export const updateRateLimits = function updateRateLimits(arg0, headers) {
     obj2.all = safeDateNowResult + 60000;
   }
   return obj2;
-};
+}

@@ -94,7 +94,7 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
     const frames = profile2.frames;
     for (const item10032 of frames) {
       let frames1 = profile.frames;
-      let obj = { function: null, instruction_addr: null, platform: "r" };
+      let obj = { function: null, instruction_addr: null, platform: "Array" };
       ({ function: obj.function, instruction_addr: obj.instruction_addr } = item10032);
       let arr = frames1.push(obj);
       continue;
@@ -400,7 +400,7 @@ export const hermesProfilingIntegration = () => {
   };
   return obj;
 };
-export const startProfiling = function startProfiling(arg0) {
+export function startProfiling(arg0) {
   const NATIVE = _mod878.NATIVE;
   let result = null;
   if (NATIVE.startProfiling(arg0)) {
@@ -408,14 +408,14 @@ export const startProfiling = function startProfiling(arg0) {
     result = Date.now() * c2;
   }
   return result;
-};
+}
 export { stopProfiling };
-export const createAndroidWithHermesProfile = function createAndroidWithHermesProfile(js_profile, arg1, arg2) {
+export function createAndroidWithHermesProfile(js_profile, arg1, arg2) {
   const obj = { platform: "android", js_profile: js_profile.profile, duration_ns: require("AppStartPerformance"), active_thread_id: js_profile.transaction.active_thread_id };
   const merged = Object.assign({}, arg1);
   return assign(merged, obj);
-};
-export const addNativeProfileToHermesProfile = function addNativeProfileToHermesProfile(profile, measurements) {
+}
+export function addNativeProfileToHermesProfile(profile, measurements) {
   let obj3;
   let obj4;
   const _Object = Object;
@@ -443,5 +443,5 @@ export const addNativeProfileToHermesProfile = function addNativeProfileToHermes
   }
   const obj5 = { measurements: measurements.measurements };
   return assign(assign2(assign3Result, obj4), obj5);
-};
+}
 export { addNativeThreadCpuProfileToHermes };

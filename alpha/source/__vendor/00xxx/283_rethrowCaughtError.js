@@ -61,15 +61,15 @@ let obj = { startShouldSetResponder: { phasedRegistrationNames: { bubbled: "onSt
 let c8 = null;
 let c9 = false;
 
-export const rethrowCaughtError = function rethrowCaughtError() {
+export function rethrowCaughtError() {
   const tmp = c9;
   if (tmp) {
     c9 = false;
     c8 = null;
     throw c8;
   }
-};
-export const processResponderEvent = function processResponderEvent(arg0, upload, responderIgnoreScroll) {
+}
+export function processResponderEvent(arg0, upload, responderIgnoreScroll) {
   let tmp38;
   let tmp39;
   let tmp46;
@@ -346,4 +346,4 @@ export const processResponderEvent = function processResponderEvent(arg0, upload
     }
   }
   module_284.recordTouchTrack(arg0, responderIgnoreScroll);
-};
+}

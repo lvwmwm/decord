@@ -1,17 +1,17 @@
-// Module ID: 11258
-// Function ID: 11259
+// Module ID: 11312
+// Function ID: 11313
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5226, 5227, 8524, 5231, 8522, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5227, 5228, 8546, 5232, 8544, 558, 576, 504, 2]
 // Exports: getLegacyExperiments
 
-// Module 11258 (useLegacyExperiments)
+// Module 11312 (useLegacyExperiments)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ExperimentManager from "ExperimentManager" /* 5231 */;
+import ExperimentManager from "ExperimentManager" /* 5232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5226 */;
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
+import ExperimentStore from "ExperimentStore" /* 5227 */;
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -173,11 +173,11 @@ const result = size.fileFinishedImporting("modules/experiments/client_override_h
 
 export { parseRegisteredExperiments };
 export { getLegacyOverridesInfo };
-export const getLegacyExperiments = function getLegacyExperiments() {
+export function getLegacyExperiments() {
   let allExperimentOverrideDescriptors;
   const registeredExperiments = ExperimentStore.getRegisteredExperiments();
   const obj = { experiments: parseRegisteredExperiments(registeredExperiments), overridesInfo: getLegacyOverridesInfo(allExperimentOverrideDescriptors) };
   allExperimentOverrideDescriptors = ExperimentStore.getAllExperimentOverrideDescriptors();
   return obj;
-};
+}
 export const useLegacyExperiments = tmp3;

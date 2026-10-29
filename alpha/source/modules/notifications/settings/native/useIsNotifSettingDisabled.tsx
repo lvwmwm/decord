@@ -1,13 +1,13 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17848
+// Function ID: 17849
 // Name: useIsNotifSettingDisabled
-// Dependencies: [17600, 558, 576, 17602, 17601, 504, 1125, 2865, 2]
+// Dependencies: [17838, 558, 576, 17840, 17839, 504, 1125, 2866, 2]
 
-// Module 17610 (useIsNotifSettingDisabled)
-import _modDef2865 from "module_2865" /* 2865 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17601 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17602 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17600 */;
+// Module 17848 (useIsNotifSettingDisabled)
+import _modDef2866 from "module_2866" /* 2866 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17839 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17840 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17838 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNotif
           return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
         }
       }
-      const stringResult = obj3.string(_modDef2865.TVZ0Fm);
+      const stringResult = obj3.string(_modDef2866.TVZ0Fm);
       cResult[5] = stringResult;
       tmp12 = stringResult;
     } else {
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNotif
   let tmp7 = !tmp4;
   if (tmp7) {
     const obj2 = {
-      label: intl.string(_modDef2865.TVZ0Fm),
+      label: intl.string(_modDef2866.TVZ0Fm),
       onPress: function handleOpenSystem() {
           const obj = DeclarativeSystemNotifPermissionAnalytics;
           const result = obj.trackSystemNotifSettingsOpened(closure_0);

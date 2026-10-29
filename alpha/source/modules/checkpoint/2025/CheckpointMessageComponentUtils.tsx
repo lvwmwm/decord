@@ -1,20 +1,20 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6062
+// Function ID: 6063
 // Name: CheckpointMessageComponentUtils
-// Dependencies: [11, 1125, 6059, 1382, 4950, 2]
+// Dependencies: [11, 1125, 6063, 1382, 4951, 2]
 // Exports: transformCheckpoint2025CardComponent, transformCheckpoint2025CardToRowGeneratedComponent
 
-// Module 6058 (CheckpointMessageComponentUtils)
+// Module 6062 (CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl from "intl" /* 1125 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import CheckpointUtils from "CheckpointUtils" /* 6059 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import CheckpointUtils from "CheckpointUtils" /* 6063 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/2025/CheckpointMessageComponentUtils.tsx");
 
-export const transformCheckpoint2025CardComponent = function transformCheckpoint2025CardComponent(checkpoint_data) {
+export function transformCheckpoint2025CardComponent(checkpoint_data) {
   let emoji_name;
   let tmp;
   let tmp2;
@@ -46,8 +46,8 @@ export const transformCheckpoint2025CardComponent = function transformCheckpoint
     const obj5 = { applicationId: checkpoint_data.top_game.application_id, applicationName: checkpoint_data.top_game.application_name, applicationImageId: checkpoint_data.top_game.application_image_id };
   }
   return obj;
-};
-export const transformCheckpoint2025CardToRowGeneratedComponent = function transformCheckpoint2025CardToRowGeneratedComponent(checkpointData, message) {
+}
+export function transformCheckpoint2025CardToRowGeneratedComponent(checkpointData, message) {
   let checkpointPowerBarUnits;
   let format;
   let min;
@@ -99,4 +99,4 @@ export const transformCheckpoint2025CardToRowGeneratedComponent = function trans
     tmp7 = obj3;
   }
   return obj;
-};
+}

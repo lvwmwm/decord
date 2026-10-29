@@ -1,27 +1,27 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 13624
+// Function ID: 13625
 // Name: trackWaveCtaClicked
-// Dependencies: [4856, 1084, 1264, 2]
+// Dependencies: [4857, 1084, 1264, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 13391 (trackWaveCtaClicked)
+// Module 13624 (trackWaveCtaClicked)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/channel/trackWaveCtaClicked.tsx");
 
-export const getDmHasMessageHistory = function getDmHasMessageHistory(arg0) {
+export function getDmHasMessageHistory(arg0) {
   const channel = ChannelStore.getChannel(arg0);
   let lastMessageId;
   if (channel != null) {
     lastMessageId = channel.lastMessageId;
   }
   return null != lastMessageId;
-};
-export const trackWaveCtaClicked = function trackWaveCtaClicked(channelId) {
+}
+export function trackWaveCtaClicked(channelId) {
   let lastMessageId;
   const obj = { channel_id: channelId.channelId, source: channelId.source, dm_has_message_history: null != lastMessageId };
   const track = AnalyticsUtilsDefault.track;
@@ -33,4 +33,4 @@ export const trackWaveCtaClicked = function trackWaveCtaClicked(channelId) {
     lastMessageId = channel.lastMessageId;
   }
   track(WAVE_CTA_CLICKED, obj);
-};
+}

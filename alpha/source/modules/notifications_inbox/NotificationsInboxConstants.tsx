@@ -1,10 +1,10 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 8690
+// Function ID: 8691
 // Name: NotificationsInboxConstants
-// Dependencies: [1084, 1101, 1125, 4870, 2]
+// Dependencies: [1084, 1101, 1125, 4871, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8687 (NotificationsInboxConstants)
+// Module 8690 (NotificationsInboxConstants)
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl4 from "intl" /* 1125 */;
@@ -28,7 +28,7 @@ export const INBOX_MESSAGE_AGE_THRESHOLD = WEEK;
 export const MAX_MESSAGES_PER_CHANNEL = 50;
 export const MAX_UNREAD_MESSAGES_PER_CHANNEL = 10;
 export const NOTIFICATIONS_INBOX_FEATURE = "notifications-inbox";
-export const getNotificationsInboxGuild = function getNotificationsInboxGuild(arg0) {
+export function getNotificationsInboxGuild(arg0) {
   let stringResult;
   let tmp2;
   if (arg0 === obj2.BOOKMARKS) {
@@ -45,15 +45,15 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     stringResult = intl.string(intl4.t.HcoRu0);
   }
   const obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: [] };
-  const tmp2Result = tmp2(4870);
+  const tmp2Result = tmp2(4871);
   return tmp2Result.fromGuildBasic(obj);
-};
+}
 export const MessageCategory = obj;
 export const InboxFilters = obj2;
 export const InboxReadState = { READ: "READ", UNREAD: "UNREAD" };
 export const InboxMessageType = { ALL_MESSAGES_CHANNEL: "ALL_MESSAGES_CHANNEL", MENTION: "MENTION", BOOKMARK: "BOOKMARK" };
 export const MESSAGE_CATEGORY_DISPLAY_MAP = obj3;
-export const getFilterMap = function getFilterMap() {
+export function getFilterMap() {
   const obj = {};
   const ALL = obj2.ALL;
   const intl = intl4.intl;
@@ -65,7 +65,7 @@ export const getFilterMap = function getFilterMap() {
   const intl3 = intl4.intl;
   obj[BOOKMARKS] = intl3.string(intl4.t["+rlGYW"]);
   return obj;
-};
+}
 export const ChannelLoadState = { UNLOADED: "unloaded", LOADED: "loaded", LOADED_UNREAD: "loadedUnread" };
 export const LoadingTrigger = { AUTO_LOAD: "auto_load", ON_OPEN: "on_open", FILL_SCROLLER: "fill_scroller", USER_SCROLL: "user_scroll", UNKNOWN: "unknown" };
 export const NotificationInboxItemType = { MENTION: "MENTION", REPLY: "REPLY", REACTION: "REACTION", ANNOUNCEMENT: "ANNOUNCEMENT", MESSAGE: "MESSAGE" };

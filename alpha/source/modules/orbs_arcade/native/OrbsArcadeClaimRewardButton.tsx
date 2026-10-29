@@ -1,16 +1,16 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16921
+// Function ID: 16922
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16662, 21, 5699, 1125, 558, 576, 504, 16669, 16668, 16684, 5280, 2]
+// Dependencies: [5, 19, 16900, 21, 5701, 1125, 558, 576, 504, 16907, 16906, 16922, 5281, 2]
 
-// Module 16683 (OrbsArcadeClaimRewardButton)
+// Module 16921 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16669 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16662 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           }
         }
       }
-      const tmp20 = jsx(tmp(5280).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
+      const tmp20 = jsx(tmp(5281).Button, { grow: true, size, variant: "primary", text: tmp16, loading: stateFromStores, onPress: tmp14 });
       cResult[14] = tmp14;
       cResult[15] = stateFromStores;
       cResult[16] = size;
@@ -128,7 +128,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c2;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
             c2 = 0;
             showOrbsArcadeClaimRewardsError();
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -193,7 +193,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp20) {
           if (0 === c2) {
@@ -260,7 +260,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -293,7 +293,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
           c2 = 0;
           showOrbsArcadeClaimRewardsError();
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -324,7 +324,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp20) {
         if (0 === c2) {
@@ -337,7 +337,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcade
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5280).Button;
+  const Button = game(5281).Button;
   const intl = game(1125).intl;
   string = intl.string;
   const tmp6 = jsx;

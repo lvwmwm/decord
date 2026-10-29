@@ -1,18 +1,18 @@
-// Module ID: 11045
-// Function ID: 11046
+// Module ID: 11099
+// Function ID: 11100
 // Name: AvailableForumTag
-// Dependencies: [109, 19, 6760, 1392, 21, 5004, 587, 558, 576, 504, 8947, 7263, 1414, 5270, 10445, 2]
+// Dependencies: [109, 19, 6783, 1392, 21, 5005, 587, 558, 576, 504, 8950, 7287, 1415, 5271, 10478, 2]
 
-// Module 11045 (AvailableForumTag)
+// Module 11099 (AvailableForumTag)
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import EmojiDefault from "Emoji" /* 7263 */;
-import native from "native" /* 8947 */;
+import EmojiDefault from "Emoji" /* 7287 */;
+import native from "native" /* 8950 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(5270);
+const Text_Text = tmp3(5271);
 let closure_3 = ["ref"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 let react = react_mod;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvailableFor
                                       if (null != stateFromStores) {
                                         const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
                                         ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
-                                        const tmp10Result = tmp10(1414);
+                                        const tmp10Result = tmp10(1415);
                                         emojiURL = tmp10Result.getEmojiURL(obj6);
                                       }
                                       str = emojiName;
@@ -195,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvailableFor
                     if (null != stateFromStores) {
                       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
                       ({ id: obj5.id, animated: obj5.animated } = stateFromStores);
-                      const tmp10Result = tmp10(1414);
+                      const tmp10Result = tmp10(1415);
                       emojiURL = tmp10Result.getEmojiURL(obj6);
                     }
                     str = emojiName;
@@ -326,7 +326,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvailableFor
         if (null != metroImportAll) {
           const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
           ({ id: obj5.id, animated: obj5.animated } = metroImportAll);
-          const tmp10Result = tmp10(1414);
+          const tmp10Result = tmp10(1415);
           emojiURL = tmp10Result.getEmojiURL(obj6);
         }
         str = c7;

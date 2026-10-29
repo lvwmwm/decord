@@ -1,20 +1,20 @@
-// Module ID: 9849
-// Function ID: 9850
+// Module ID: 9881
+// Function ID: 9882
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1391, 21, 558, 576, 9850, 7582, 2050, 5705, 2]
+// Dependencies: [19, 1391, 21, 558, 576, 9882, 7605, 2051, 5707, 2]
 
-// Module 9849 (PremiumFeaturesLogo)
+// Module 9881 (PremiumFeaturesLogo)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7582 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9850 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7605 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9882 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PremiumUtils = tmp(2050);
+const PremiumUtils = tmp(2051);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const jsx = Fragment.jsx;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeaturesLogo(arg0) {
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       return tmp10;
     }
   }
-  const tmp11 = jsx(tmp6(5705), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
+  const tmp11 = jsx(tmp6(5707), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = style;
   cResult[4] = tmp8;
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     tmp = importDefault;
     tmp3 = AssetRegistryDefault;
   }
-  tmp(5705);
+  tmp(5707);
   const obj2 = PremiumUtils;
   return <tmpResult accessible accessibilityLabel={obj2.getPremiumTypeDisplayName(premiumType)} accessibilityRole="header" style={style} resizeMode="contain" source={tmp3} />;
 });

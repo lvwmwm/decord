@@ -1,11 +1,10 @@
 // Module ID: 10303
 // Function ID: 10304
-// Dependencies: [41, 42, 93, 95, 98, 10295, 10252, 10256]
+// Dependencies: [41, 42, 93, 95, 98, 10304, 10301]
 
 // Module 10303
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10252 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10256 */;
-import _mod10295 from "module_10295" /* 10295 */;
+import _mod10301 from "module_10301" /* 10301 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10304 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class DETimeUnitWithinFormatParser {
+class AbstractMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DETimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(DETimeUnitWithinFormatParser);
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,24 +43,46 @@ class DETimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(DETimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(AbstractMergeDateTimeRefiner, _mod10301.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const regExp = new RegExp("(?:in|f\u00FCr|w\u00E4hrend)\\s*(" + _mod10295.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-    return regExp;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
+    }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10295.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
+      start = start.start;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
     }
   }
 ];
 
-export default _createClass(DETimeUnitWithinFormatParser, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

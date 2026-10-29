@@ -1,29 +1,29 @@
-// Module ID: 19139
-// Function ID: 19140
+// Module ID: 19374
+// Function ID: 19375
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 4856, 7666, 1084, 21, 5004, 558, 576, 6414, 6939, 12320, 1125, 6049, 7303, 12103, 6967, 7991, 8632, 38, 504, 12082, 8198, 8182, 19140, 1997, 5944, 8186, 13327, 9699, 10453, 1893, 10452, 8184, 7023, 6013, 587, 2]
+// Dependencies: [5, 19, 17, 4857, 7689, 1084, 21, 5005, 558, 576, 6438, 6963, 12374, 1125, 6053, 7327, 12157, 6991, 8014, 8654, 38, 504, 12136, 8220, 8205, 19375, 1998, 5946, 8209, 13560, 9731, 10486, 1894, 10485, 8207, 7047, 6015, 587, 2]
 
-// Module 19139 (FileUploadActionComponent)
+// Module 19374 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6049 */;
-import FileSizeUtils from "FileSizeUtils" /* 6414 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import XSmallIcon from "XSmallIcon" /* 6967 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7303 */;
-import DraftStore from "DraftStore" /* 7666 */;
-import IconButton2 from "IconButton" /* 7991 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9699 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10452 */;
-import AttachmentPreview from "AttachmentPreview" /* 12103 */;
-import FileUpIcon from "FileUpIcon" /* 12320 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6053 */;
+import FileSizeUtils from "FileSizeUtils" /* 6438 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import XSmallIcon from "XSmallIcon" /* 6991 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7327 */;
+import DraftStore from "DraftStore" /* 7689 */;
+import IconButton2 from "IconButton" /* 8014 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9731 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10485 */;
+import AttachmentPreview from "AttachmentPreview" /* 12157 */;
+import FileUpIcon from "FileUpIcon" /* 12374 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainAr
   const formatSizeResult = tmpResult.formatSize(maxSizeBytes / FileSizeUtils.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { IconComponent: FileUpIcon.FileUpIcon };
-    const Icon = tmp(6939).TableRow.Icon;
+    const Icon = tmp(6963).TableRow.Icon;
     const tmp8 = React4(Icon, obj2);
     cResult[6] = tmp8;
     tmp6 = tmp8;
@@ -85,7 +85,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainAr
     tmp9 = cResult[8];
   }
   const obj4 = { onPress: openFilePicker, icon: tmp6, label: tmp9, subLabel: tmpResult2.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult), start: true, end: true, arrow: true };
-  const TableRow = tmp(6939).TableRow;
+  const TableRow = tmp(6963).TableRow;
   tmpResult2 = InteractionComponentUtils;
   const tmp11 = React4(TableRow, obj4);
   cResult[0] = maxSizeBytes;
@@ -129,9 +129,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainAr
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { icon: React4(Icon, obj3), label: intl.string(intl3.t["0PhgpK"]), subLabel: intl2.string(intl3.t.HYg2Hn), disabled: true, start: true, end: true };
-    const TableRow = tmp(6939).TableRow;
+    const TableRow = tmp(6963).TableRow;
     obj3 = { IconComponent: CircleCheckIcon.CircleCheckIcon };
-    Icon = tmp(6939).TableRow.Icon;
+    Icon = tmp(6963).TableRow.Icon;
     intl = tmp(1125).intl;
     intl2 = tmp(1125).intl;
     const tmp6 = React4(TableRow, obj2);
@@ -305,7 +305,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function File(u
     },
     accessibilityLabel: intl2.string(intl3.t.N86XcP)
   };
-  IconButton = tmp3(7991).IconButton;
+  IconButton = tmp3(8014).IconButton;
   intl2 = tmp3(1125).intl;
   return React4(TableRow, obj);
 });
@@ -450,7 +450,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadAc
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -489,7 +489,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadAc
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (1 === tmp5) {
           c6 = 0;
@@ -642,7 +642,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadAc
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -681,7 +681,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadAc
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (1 === tmp5) {
           c6 = 0;

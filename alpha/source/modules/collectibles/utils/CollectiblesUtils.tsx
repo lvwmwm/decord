@@ -1,21 +1,18 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7749
+// Function ID: 7750
 // Name: utils/CollectiblesUtils
-// Dependencies: [5850, 5775, 7727, 558, 576, 7541, 4829, 2]
-// Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl
+// Dependencies: [7750, 558, 576, 7564, 4830, 2]
+// Exports: buildFetchCollectiblesOptionsQuery, getOptimizedProfileEffectThumbnailUrl
 
-// Module 7726 (utils/CollectiblesUtils)
+// Module 7749 (utils/CollectiblesUtils)
 import react from "react" /* 576 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5775 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5850 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7541 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7727 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7564 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DateUtils = tmp(4829);
-const ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
+const DateUtils = tmp(4830);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchFractionalPremiumInfo() {
   let first;
   let tmp6;
@@ -61,23 +58,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchFrac
 });
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
 
-export const constructGoLiveSource = function constructGoLiveSource(resolution, frameRate, desktopSource) {
-  let obj2;
-  const obj = { qualityOptions: obj2, context: BaseConnectionEvent.MediaEngineContextTypes.STREAM };
-  obj2 = { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate };
-  if (null != desktopSource) {
-    if (null != desktopSource.desktopSource) {
-      const obj3 = { sourceId: desktopSource.desktopSource.id, sound: true };
-      obj.desktopSettings = obj3;
-    }
-    if (null != desktopSource.cameraSource) {
-      const obj4 = { videoDeviceGuid: desktopSource.cameraSource.videoDeviceGuid, audioDeviceGuid: desktopSource.cameraSource.audioDeviceGuid };
-      obj.cameraSettings = obj4;
-    }
-  }
-  return obj;
-};
-export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectiblesOptionsQuery(noCache, tab) {
+export function buildFetchCollectiblesOptionsQuery(noCache, tab) {
   const obj = {};
   if (null != tab) {
     obj.tab = tab;
@@ -104,7 +85,7 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     }
     const tmp2 = require;
     if (noCache.variantsReturnStyle === ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(7727).ShopVariantsReturnStyle.VARIANTS_GROUP;
+      obj.variants_return_style = tmp2(7750).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;
@@ -114,11 +95,11 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     }
   }
   return obj;
-};
-export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfileEffectThumbnailUrl(arg0) {
+}
+export function getOptimizedProfileEffectThumbnailUrl(arg0) {
   if (null != arg0) {
     const _HermesInternal = HermesInternal;
     return "" + arg0 + "?width=100&height=195";
   }
-};
+}
 export const useFetchFractionalPremiumInfo = tmp2;

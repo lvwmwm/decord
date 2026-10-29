@@ -1,12 +1,12 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15292
+// Function ID: 15293
 // Name: usePremiumGroupMembership
-// Dependencies: [19, 15058, 558, 576, 504, 584, 2]
+// Dependencies: [19, 15293, 558, 576, 504, 584, 2]
 
-// Module 15057 (usePremiumGroupMembership)
+// Module 15292 (usePremiumGroupMembership)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PremiumGroupStore from "PremiumGroupStore" /* 15058 */;
+import PremiumGroupStore from "PremiumGroupStore" /* 15293 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

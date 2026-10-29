@@ -1,15 +1,15 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11505
+// Function ID: 11506
 // Name: confirmActivityChangeAlert
-// Dependencies: [4946, 1389, 5640, 5944, 1125, 2030, 2]
+// Dependencies: [4947, 1389, 5641, 5946, 1125, 2031, 2]
 // Exports: default
 
-// Module 11451 (confirmActivityChangeAlert)
+// Module 11505 (confirmActivityChangeAlert)
 import intl7 from "intl" /* 1125 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 

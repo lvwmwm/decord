@@ -9,7 +9,7 @@ import _mod697 from "module_697" /* 697 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
+export function vercelWaitUntil(arg0) {
   if (typeof globalThis.EdgeRuntime === "string") {
     const _Symbol = Symbol;
     const tmp7 = _mod697.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
@@ -28,4 +28,4 @@ export const vercelWaitUntil = function vercelWaitUntil(arg0) {
       value.waitUntil(arg0);
     }
   }
-};
+}

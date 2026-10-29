@@ -1,10 +1,10 @@
-// Module ID: 10831
-// Function ID: 10832
+// Module ID: 10907
+// Function ID: 10908
 // Name: conjurePreviewModeRequests
 // Dependencies: [19, 558, 576, 2]
 // Exports: requestConjurePreviewMode
 
-// Module 10831 (conjurePreviewModeRequests)
+// Module 10907 (conjurePreviewModeRequests)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -91,10 +91,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 });
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModeRequests.tsx");
 
-export const requestConjurePreviewMode = function requestConjurePreviewMode(arg0, widget) {
+export function requestConjurePreviewMode(arg0, widget) {
   for (const item10007 of set) {
     let item10007Result = item10007(arg0, widget);
     continue;
   }
-};
+}
 export const useConjurePreviewModeRequests = tmp3;

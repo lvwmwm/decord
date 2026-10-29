@@ -1,10 +1,10 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11866
+// Function ID: 11867
 // Name: ConjureDesignFeedback
 // Dependencies: [2]
 // Exports: conjureDesignAnchorFor, describeConjureDesignTarget, formatConjureDesignFeedback, formatConjureDesignRemark, hitTestConjureDesignTargets, isConjureDesignCommentUsable, parseConjureDesignFeedback, parseConjureDesignRemark
 
-// Module 11812 (ConjureDesignFeedback)
+// Module 11866 (ConjureDesignFeedback)
 import size from "module_2" /* 2 */;
 
 function labelConjureDesignTarget(target) {
@@ -308,7 +308,7 @@ const re12 = /^<([a-zA-Z0-9-]+)>/;
 let result = size.fileFinishedImporting("modules/conjure/design_feedback/ConjureDesignFeedback.tsx");
 
 export const CONJURE_DESIGN_ANCHOR_CENTER = frozen;
-export const conjureDesignAnchorFor = function conjureDesignAnchorFor(rect, arg1, arg2) {
+export function conjureDesignAnchorFor(rect, arg1, arg2) {
   let height;
   let width;
   ({ width, height } = rect.rect);
@@ -324,12 +324,12 @@ export const conjureDesignAnchorFor = function conjureDesignAnchorFor(rect, arg1
     return point;
   }
   point = frozen;
-};
+}
 export const CONJURE_DESIGN_COMMENT_MAX = 1000;
-export const isConjureDesignCommentUsable = function isConjureDesignCommentUsable(str) {
+export function isConjureDesignCommentUsable(str) {
   return "" !== str.trim();
-};
-export const hitTestConjureDesignTargets = function hitTestConjureDesignTargets(arg0, arg1, arg2) {
+}
+export function hitTestConjureDesignTargets(arg0, arg1, arg2) {
   let width;
   let x;
   let y;
@@ -362,16 +362,16 @@ export const hitTestConjureDesignTargets = function hitTestConjureDesignTargets(
     continue;
   }
   return tmp;
-};
+}
 export { labelConjureDesignTarget };
-export const describeConjureDesignTarget = function describeConjureDesignTarget(target) {
+export function describeConjureDesignTarget(target) {
   const items = [, ];
   ({ kind: arr[0], name: arr[1] } = labelConjureDesignTarget(target));
   labelConjureDesignTarget(target);
   const found = items.filter((item) => "" !== item);
   return found.join(" ");
-};
-export const formatConjureDesignRemark = function formatConjureDesignRemark(target, str) {
+}
+export function formatConjureDesignRemark(target, str) {
   const items = [, ];
   ({ kind: arr[0], name: arr[1] } = labelConjureDesignTarget(target));
   labelConjureDesignTarget(target);
@@ -379,8 +379,8 @@ export const formatConjureDesignRemark = function formatConjureDesignRemark(targ
   const joined = found.join(": ");
   const tmp3 = targetLine(target);
   return "" + c4 + joined + " \u2014 " + tmp3 + "\n" + str.trim();
-};
-export const parseConjureDesignRemark = function parseConjureDesignRemark(content) {
+}
+export function parseConjureDesignRemark(content) {
   if (content.startsWith(c4)) {
     const index = content.indexOf("\n");
     let substr = content;
@@ -407,8 +407,8 @@ export const parseConjureDesignRemark = function parseConjureDesignRemark(conten
   } else {
     return null;
   }
-};
-export const formatConjureDesignFeedback = function formatConjureDesignFeedback(arg0) {
+}
+export function formatConjureDesignFeedback(arg0) {
   let annotations;
   let context;
   let metaComment;
@@ -460,8 +460,8 @@ export const formatConjureDesignFeedback = function formatConjureDesignFeedback(
     items.push("Note for the whole batch: " + trimmed1);
   }
   return items.join("\n");
-};
-export const parseConjureDesignFeedback = function parseConjureDesignFeedback(raw) {
+}
+export function parseConjureDesignFeedback(raw) {
   let regex;
   let regex2;
   let regex3;
@@ -589,4 +589,4 @@ export const parseConjureDesignFeedback = function parseConjureDesignFeedback(ra
     }
     return tmp32;
   }
-};
+}

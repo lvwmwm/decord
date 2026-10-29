@@ -1,20 +1,20 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11860
+// Function ID: 11861
 // Name: useConjurePublishProgressLabel
-// Dependencies: [32, 19, 10749, 3863, 558, 576, 504, 1125, 11807, 2]
+// Dependencies: [32, 19, 10824, 3864, 558, 576, 504, 1125, 11861, 2]
 
-// Module 11806 (useConjurePublishProgressLabel)
-import _modDef3863 from "module_3863" /* 3863 */;
+// Module 11860 (useConjurePublishProgressLabel)
+import _modDef3864 from "module_3864" /* 3864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, num, tmp3;
 
-let obj = { preparing: _modDef3863.GQeas1, approval: _modDef3863["TkHHD+"], setup: _modDef3863["F+AxgM"], build: _modDef3863.oQeMIy, deploy: _modDef3863.LqZvZ2, discord: _modDef3863.LFcGAT, activating: _modDef3863.ff1Fq1 };
+let obj = { preparing: _modDef3864.GQeas1, approval: _modDef3864["TkHHD+"], setup: _modDef3864["F+AxgM"], build: _modDef3864.oQeMIy, deploy: _modDef3864.LqZvZ2, discord: _modDef3864.LFcGAT, activating: _modDef3864.ff1Fq1 };
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePublishProgressLabel(arg0) {
   let closure_0;
   let first;
@@ -127,9 +127,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const intl = tmp(1125).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult2.formatElapsed(tmp10 - stateFromStores.stageStartedAt) };
-    const prop = stateFromStores(3863)["ndkR+x"];
+    const prop = stateFromStores(3864)["ndkR+x"];
     intl2 = tmp(1125).intl;
-    tmpResult2 = tmp(11807);
+    tmpResult2 = tmp(11861);
     cResult[7] = tmp10;
     cResult[8] = stateFromStores.stage;
     cResult[9] = stateFromStores.stageStartedAt;
@@ -170,9 +170,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const intl = tmp(1125).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult.formatElapsed(first - stateFromStores.stageStartedAt) };
-    const prop = stateFromStores(3863)["ndkR+x"];
+    const prop = stateFromStores(3864)["ndkR+x"];
     intl2 = tmp(1125).intl;
-    tmpResult = tmp(11807);
+    tmpResult = tmp(11861);
     formatToPlainStringResult = formatToPlainString(prop, obj2);
   }
   return formatToPlainStringResult;

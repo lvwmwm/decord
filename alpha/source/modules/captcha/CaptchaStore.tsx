@@ -1,13 +1,13 @@
-// Module ID: 6502
-// Function ID: 6503
+// Module ID: 6526
+// Function ID: 6527
 // Name: CaptchaStore
-// Dependencies: [32, 570, 1271, 6503, 6508, 2]
+// Dependencies: [32, 570, 1271, 6527, 6532, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 6502 (CaptchaStore)
+// Module 6526 (CaptchaStore)
 import react_native from "react-native" /* 1271 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -19,10 +19,10 @@ const useCaptchaStore = module_570.create(() => ({ captchaServeVolume: {} }));
 const result = size.fileFinishedImporting("modules/captcha/CaptchaStore.tsx");
 
 export { useCaptchaStore };
-export const isCaptchaStoreVolumeEmpty = function isCaptchaStoreVolumeEmpty() {
+export function isCaptchaStoreVolumeEmpty() {
   return 0 === Object.keys(obj.getState().captchaServeVolume).length;
-};
-export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(arg0) {
+}
+export function incrementCaptchaServeVolume(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react-native");
@@ -50,8 +50,8 @@ export const incrementCaptchaServeVolume = function incrementCaptchaServeVolume(
       return tmp2;
     });
   });
-};
-export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
+}
+export function flushCaptchaServeVolume() {
   let items;
   let obj;
   let state;
@@ -72,4 +72,4 @@ export const flushCaptchaServeVolume = function flushCaptchaServeVolume() {
   }
   const obj2 = react_native;
   obj2.batchUpdates(() => state.setState({ captchaServeVolume: {} }));
-};
+}

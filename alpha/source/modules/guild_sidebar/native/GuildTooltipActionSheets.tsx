@@ -1,18 +1,18 @@
-// Module ID: 17950
-// Function ID: 17951
+// Module ID: 18188
+// Function ID: 18189
 // Name: GuildTooltipActionSheets
-// Dependencies: [32, 19, 4853, 21, 17951, 1999, 17953, 17956, 17958, 558, 576, 17959, 4840, 17960, 6798, 17961, 10443, 10442, 5085, 2]
+// Dependencies: [32, 19, 4854, 21, 18189, 2000, 18191, 18194, 18196, 558, 576, 18197, 4841, 18198, 6821, 18199, 10476, 10475, 5086, 2]
 
-// Module 17950 (GuildTooltipActionSheets)
+// Module 18188 (GuildTooltipActionSheets)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10442 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 10443 */;
-import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 17960 */;
-import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 17961 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10475 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 10476 */;
+import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 18198 */;
+import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 18199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,16 +21,16 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return asyncRequire(17951, dependencyMap.paths);
+  return asyncRequire(18189, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return asyncRequire(17953, dependencyMap.paths);
+  return asyncRequire(18191, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return asyncRequire(17956, dependencyMap.paths);
+  return asyncRequire(18194, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return asyncRequire(17958, dependencyMap.paths);
+  return asyncRequire(18196, dependencyMap.paths);
 }
 const constants = DismissibleContentConstants.DismissibleContentGroupName;
 const jsx = Fragment.jsx;
@@ -43,19 +43,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildToolt
   const cResult = obj.c(2);
   id = guild.guild.id;
   const items = [];
-  const obj2 = id(17959);
+  const obj2 = id(18197);
   if (obj2.useCanSeeCreatorMonetizationOnboardingV2Upsell(id)) {
-    items.push(id(4840).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
+    items.push(id(4841).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
   }
   if (useIsGuildEligibleForRoleSubscriptionsUpsellDefault(id)) {
-    items.push(id(4840).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
+    items.push(id(4841).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
   }
-  const tmpResult = id(6798);
+  const tmpResult = id(6821);
   if (tmpResult.useCanUseRoleSubscriptionIAP(id)) {
-    items.push(id(4840).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
+    items.push(id(4841).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
   }
   if (useIsEligibleForTierTemplateUpsellDefault(id)) {
-    items.push(id(4840).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+    items.push(id(4841).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
   }
   if (cResult[0] !== id) {
     const fn = function s(arg0) {
@@ -84,19 +84,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildToolt
 }) : (function GuildTooltipActionSheets(guild) {
   const id = guild.guild.id;
   const items = [];
-  const obj = id(17959);
+  const obj = id(18197);
   if (obj.useCanSeeCreatorMonetizationOnboardingV2Upsell(id)) {
-    items.push(id(4840).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
+    items.push(id(4841).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
   }
   if (useIsGuildEligibleForRoleSubscriptionsUpsellDefault(id)) {
-    items.push(id(4840).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
+    items.push(id(4841).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
   }
-  const tmpResult = id(6798);
+  const tmpResult = id(6821);
   if (tmpResult.useCanUseRoleSubscriptionIAP(id)) {
-    items.push(id(4840).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
+    items.push(id(4841).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
   }
   if (useIsEligibleForTierTemplateUpsellDefault(id)) {
-    items.push(id(4840).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+    items.push(id(4841).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
   }
   return jsx(SelectedDismissibleContentDefault, {
     contentTypes: items,

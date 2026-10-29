@@ -1,37 +1,37 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 13182
+// Function ID: 13183
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7732, 7736, 8860, 4856, 6045, 8884, 12962, 10651, 21, 5004, 587, 558, 576, 1496, 12963, 504, 12959, 12958, 6966, 12965, 5699, 1125, 1385, 12967, 5946, 12968, 9751, 5743, 12969, 12970, 6030, 5248, 5249, 5698, 7321, 7521, 5714, 1381, 12973, 10660, 12974, 12983, 12998, 2]
+// Dependencies: [5, 32, 19, 17, 7755, 7758, 8863, 4857, 6049, 8887, 13183, 10684, 21, 5005, 587, 558, 576, 1497, 13184, 504, 13180, 13179, 6990, 13186, 5701, 1125, 1385, 13188, 5948, 13189, 9783, 5745, 13190, 13191, 6034, 5249, 5250, 5700, 7345, 7544, 5716, 1381, 13194, 10693, 13195, 13204, 13219, 2]
 
-// Module 12961 (ForwardModal)
+// Module 13182 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5249 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import LinkIcon from "LinkIcon" /* 5714 */;
-import ChannelUtils from "ChannelUtils" /* 6030 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7521 */;
-import UserRowConstants from "UserRowConstants" /* 10651 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12958 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12959 */;
-import ForwardConstants from "ForwardConstants" /* 12962 */;
-import formatResults from "formatResults" /* 12963 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12965 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import LinkIcon from "LinkIcon" /* 5716 */;
+import ChannelUtils from "ChannelUtils" /* 6034 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7544 */;
+import UserRowConstants from "UserRowConstants" /* 10684 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13179 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13180 */;
+import ForwardConstants from "ForwardConstants" /* 13183 */;
+import formatResults from "formatResults" /* 13184 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13186 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7732 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7736 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8860 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8884 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7755 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7758 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8863 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8887 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

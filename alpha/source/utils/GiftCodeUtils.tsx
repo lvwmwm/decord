@@ -1,23 +1,23 @@
-// Module ID: 6407
-// Function ID: 6408
+// Module ID: 6431
+// Function ID: 6432
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 6408, 1389, 1084, 1391, 5644, 5938, 6418, 1264, 4828, 6518, 1125, 6519, 1385, 558, 576, 504, 2050, 2]
+// Dependencies: [5, 32, 6432, 1389, 1084, 1391, 5645, 5940, 6442, 1264, 4829, 6542, 1125, 6543, 1385, 558, 576, 504, 2051, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep
 
-// Module 6407 (GiftCodeUtils)
+// Module 6431 (GiftCodeUtils)
 import intl12 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5938 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6518 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5940 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6408 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6432 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import RegexUtils from "RegexUtils" /* 5644 */;
+import RegexUtils from "RegexUtils" /* 5645 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f96949 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f97965 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -52,7 +52,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -82,7 +82,7 @@ let obj = function _resolveGiftCode() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -213,16 +213,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f96949);
+let mapped = fillResult.map(f97965);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f96949);
+const mapped1 = fillResult1.map(f97965);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f96949);
+const mapped2 = fillResult2.map(f97965);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -372,7 +372,7 @@ const result = size.fileFinishedImporting("utils/GiftCodeUtils.tsx");
 
 export const GiftExperience = obj;
 export { getGiftExperience };
-export const shouldShowCustomGiftExperience = function shouldShowCustomGiftExperience(arg0) {
+export function shouldShowCustomGiftExperience(arg0) {
   if (!shared_PlatformUtils.isMobile) {
     let DEFAULT;
     let tmp5;
@@ -389,8 +389,8 @@ export const shouldShowCustomGiftExperience = function shouldShowCustomGiftExper
   }
   DEFAULT = obj.DEFAULT;
   tmp5 = obj;
-};
-export const makeComboId = function makeComboId(skuId, subscriptionPlanId, giftStyle) {
+}
+export function makeComboId(skuId, subscriptionPlanId, giftStyle) {
   let str = subscriptionPlanId;
   if (subscriptionPlanId === undefined) {
     str = null;
@@ -403,8 +403,8 @@ export const makeComboId = function makeComboId(skuId, subscriptionPlanId, giftS
     str2 = "";
   }
   return "" + skuId + ":" + str + ":" + str2;
-};
-export const parseComboId = function parseComboId(item) {
+}
+export function parseComboId(item) {
   let parsed;
   let tmp4;
   const tmp = _slicedToArray(item.split(":"), 3);
@@ -421,9 +421,9 @@ export const parseComboId = function parseComboId(item) {
     }
   }
   return obj;
-};
+}
 export { cleanCode };
-export const isGiftCodeEmbed = function isGiftCodeEmbed(type) {
+export function isGiftCodeEmbed(type) {
   type = undefined;
   if (type != null) {
     type = type.type;
@@ -447,8 +447,8 @@ export const isGiftCodeEmbed = function isGiftCodeEmbed(type) {
     tmp2 = type1 === unpackModuleId.GIFT;
   }
   return tmp2;
-};
-export const findGiftCodes = function findGiftCodes(content) {
+}
+export function findGiftCodes(content) {
   if (null == content) {
     return [];
   } else {
@@ -473,8 +473,8 @@ export const findGiftCodes = function findGiftCodes(content) {
     const _Array = Array;
     return Array.from(set);
   }
-};
-export const getGiftCodeURL = function getGiftCodeURL(code) {
+}
+export function getGiftCodeURL(code) {
   let combined;
   let host;
   let str = code;
@@ -492,11 +492,11 @@ export const getGiftCodeURL = function getGiftCodeURL(code) {
     combined = "/gifts/" + str;
   }
   return "" + location.protocol + "//" + host + combined;
-};
-export const resolveGiftCode = function resolveGiftCode() {
+}
+export function resolveGiftCode() {
   return obj(...arguments);
-};
-export const trackGiftCodeCopy = function trackGiftCodeCopy(giftCodeRecord, value) {
+}
+export function trackGiftCodeCopy(giftCodeRecord, value) {
   const track = AnalyticsUtilsDefault.track;
   const GIFT_CODE_COPIED = metroImportAll.GIFT_CODE_COPIED;
   obj = {};
@@ -504,8 +504,8 @@ export const trackGiftCodeCopy = function trackGiftCodeCopy(giftCodeRecord, valu
   const merged = Object.assign(getAnalyticsDataForSKUDefault(value, false, false));
   const merged1 = Object.assign(giftCodeRecord.analyticsData);
   track(GIFT_CODE_COPIED, obj);
-};
-export const getStep = function getStep(arg0, isSubscription, error) {
+}
+export function getStep(arg0, isSubscription, error) {
   let ERROR;
   let accepted;
   let accepting;
@@ -534,8 +534,8 @@ export const getStep = function getStep(arg0, isSubscription, error) {
     ERROR = SUCCESS;
   }
   ERROR = constants3.ERROR;
-};
-export const getHeaderText = function getHeaderText(arg0, isSubscription, name) {
+}
+export function getHeaderText(arg0, isSubscription, name) {
   if (constants3.ERROR === arg0) {
     const intl2 = intl12.intl;
     return intl2.formatToMarkdownString(intl12.t.JUvC0s, {});
@@ -563,8 +563,8 @@ export const getHeaderText = function getHeaderText(arg0, isSubscription, name) 
     }
     return formatToPlainStringResult1;
   }
-};
-export const getButtonText = function getButtonText(arg0, giftStyle, isCustomGift) {
+}
+export function getButtonText(arg0, giftStyle, isCustomGift) {
   isCustomGift = isCustomGift.isCustomGift;
   if (constants3.ERROR === arg0) {
     const intl6 = intl12.intl;
@@ -609,9 +609,9 @@ export const getButtonText = function getButtonText(arg0, giftStyle, isCustomGif
       }
     }
   }
-};
+}
 export { getSubscriptionGiftSuccessText };
-export const getSubscriptionGiftStartHeaderText = function getSubscriptionGiftStartHeaderText(subscriptionPlan, sender, name) {
+export function getSubscriptionGiftStartHeaderText(subscriptionPlan, sender, name) {
   let intervalCount;
   _require = sender;
   const skuName = name;
@@ -671,8 +671,8 @@ export const getSubscriptionGiftStartHeaderText = function getSubscriptionGiftSt
     }
     return otherwiseResult;
   }
-};
-export const getBodyText = function getBodyText(arg0) {
+}
+export function getBodyText(arg0) {
   let accepted;
   let accepting;
   let error;
@@ -707,7 +707,7 @@ export const getBodyText = function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(6519);
+      const str = subscriptionPlan(6543);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
@@ -764,9 +764,9 @@ export const getBodyText = function getBodyText(arg0) {
       return intl.formatToPlainString(subscriptionPlan(1125).t.l6Ea4Z, obj);
     }
   }
-};
+}
 export { getErrorMessage };
-export const firstLibraryApplicationForGiftCode = function firstLibraryApplicationForGiftCode(arg0, applicationId, arg2) {
+export function firstLibraryApplicationForGiftCode(arg0, applicationId, arg2) {
   let arr = arg0;
   let closure_0 = arg2;
   applicationId = applicationId.applicationId;
@@ -781,8 +781,8 @@ export const firstLibraryApplicationForGiftCode = function firstLibraryApplicati
     first = found[0];
   }
   return first;
-};
-export const processGiftCodeInput = function processGiftCodeInput(str) {
+}
+export function processGiftCodeInput(str) {
   let str3;
   str = str.trim();
   const parts = str.split("/");
@@ -807,9 +807,9 @@ export const processGiftCodeInput = function processGiftCodeInput(str) {
     }
     return replaced;
   }
-};
+}
 export const useGetGiftCode = tmp7;
-export const trackStep = function trackStep(giftCode) {
+export function trackStep(giftCode) {
   let customMessage;
   let emojiName;
   let productLine;
@@ -829,5 +829,5 @@ export const trackStep = function trackStep(giftCode) {
   }
   ({ giftStyle: obj.gift_style, code: obj.gift_code } = giftCode);
   track(GIFT_ACCEPT_STEP, obj);
-};
+}
 export { getGiftCodeRedeemError };

@@ -1,28 +1,28 @@
-// Module ID: 17363
-// Function ID: 17364
+// Module ID: 17602
+// Function ID: 17603
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10485, 1389, 7685, 7700, 8731, 1084, 1391, 21, 5004, 587, 558, 576, 9388, 5270, 11077, 5281, 573, 10525, 14177, 17364, 1199, 2]
+// Dependencies: [32, 19, 17, 10518, 1389, 7708, 7723, 8734, 1084, 1391, 21, 5005, 587, 558, 576, 9420, 5271, 11131, 5282, 573, 10558, 14410, 17603, 1199, 2]
 
-// Module 17363 (CollectiblesTool)
+// Module 17602 (CollectiblesTool)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import BaseTextButton from "BaseTextButton" /* 5281 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8731 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9388 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11077 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14177 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import BaseTextButton from "BaseTextButton" /* 5282 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8734 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9420 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11131 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10485 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10518 */;
 import UserStore from "UserStore" /* 1389 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7700 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -463,7 +463,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
               }
             }
             const obj4 = { pillStyle: tmp4.secondaryButton, text: "Clear override", onPress: tmp6Result6 };
-            tmp39 = syncedClientThemes(tmp(5281).BaseTextButton, obj4);
+            tmp39 = syncedClientThemes(tmp(5282).BaseTextButton, obj4);
           }
           cResult[23] = tmp6Result6;
           cResult[24] = tmp7;

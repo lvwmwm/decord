@@ -1,13 +1,13 @@
-// Module ID: 5057
-// Function ID: 5058
+// Module ID: 5058
+// Function ID: 5059
 // Name: DcfNewUserCooldownExperiment
-// Dependencies: [1452, 1101, 558, 576, 2]
+// Dependencies: [1453, 1101, 558, 576, 2]
 // Exports: getDcfNewUserCooldown
 
-// Module 5057 (DcfNewUserCooldownExperiment)
+// Module 5058 (DcfNewUserCooldownExperiment)
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,6 +41,6 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDcfNewU
 const result = size.fileFinishedImporting("modules/dismissible_content/DcfNewUserCooldownExperiment.tsx");
 
 export const useDcfNewUserCooldown = tmp3;
-export const getDcfNewUserCooldown = function getDcfNewUserCooldown() {
+export function getDcfNewUserCooldown() {
   return closure_2.getConfig({ location: "getDcfNewUserCooldown" }).newUserCooldownMs;
-};
+}

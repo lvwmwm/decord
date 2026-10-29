@@ -1,18 +1,18 @@
-// Module ID: 17769
-// Function ID: 17770
+// Module ID: 18007
+// Function ID: 18008
 // Name: useActiveChannels
-// Dependencies: [4860, 4856, 4936, 6739, 15280, 1084, 4863, 1385, 2]
+// Dependencies: [4861, 4857, 4937, 6762, 15515, 1084, 4864, 1385, 2]
 // Exports: getActiveTextChannels
 
-// Module 17769 (useActiveChannels)
+// Module 18007 (useActiveChannels)
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 15280 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 15515 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -22,7 +22,7 @@ const Permissions = Constants.Permissions;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const result = size.fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
 
-export const getActiveTextChannels = function getActiveTextChannels(guildId, items5) {
+export function getActiveTextChannels(guildId, items5) {
   let arr;
   let obj;
   let obj2;
@@ -86,4 +86,4 @@ export const getActiveTextChannels = function getActiveTextChannels(guildId, ite
       return false;
     }
   });
-};
+}

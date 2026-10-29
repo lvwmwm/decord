@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "5de31cd2c9db12c0dfd39e4c1dd0eb1f", name: "img_roblox_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "71e7a705f0fc76c9ae279a3ce8454ef4", name: "img_account_sync_xbox_light", type: "svg" });

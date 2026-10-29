@@ -1,25 +1,25 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 10510
+// Function ID: 10511
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 7903, 21, 5004, 587, 558, 576, 5705, 5270, 5280, 7524, 1125, 10478, 10472, 10479, 2]
+// Dependencies: [19, 17, 7926, 21, 5005, 587, 558, 576, 5707, 5271, 5281, 7547, 1125, 10511, 10505, 10512, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10477 (MediaKeyboardEmptyState)
+// Module 10510 (MediaKeyboardEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import SettingsIcon from "SettingsIcon" /* 7524 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
-import CameraIcon from "CameraIcon" /* 10472 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10478 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10479 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import SettingsIcon from "SettingsIcon" /* 7547 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
+import CameraIcon from "CameraIcon" /* 10505 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10511 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10512 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ let closure_8 = tmp5;
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx");
 
 export default tmp5;
-export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComponentOrNull(photosEmpty) {
+export function getMediaEmptyStateComponentOrNull(photosEmpty) {
   let intl;
   let intl2;
   let intl3;
@@ -160,4 +160,4 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   intl5 = intl7.intl;
   intl6 = intl7.intl;
   return hasOwnProperty(closure_8, obj3);
-};
+}

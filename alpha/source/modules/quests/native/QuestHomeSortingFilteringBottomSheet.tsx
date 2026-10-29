@@ -1,24 +1,24 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16796
+// Function ID: 16797
 // Name: QuestHomeSortingFilteringBottomSheet
-// Dependencies: [32, 19, 17, 6745, 21, 5004, 587, 558, 576, 1125, 5280, 7257, 6731, 5303, 5011, 5246, 9604, 7284, 7020, 7021, 7023, 6936, 9628, 6013, 5305, 5301, 2]
+// Dependencies: [32, 19, 17, 6768, 21, 5005, 587, 558, 576, 1125, 5281, 7281, 6754, 5304, 5012, 5247, 9636, 7308, 7044, 7045, 7047, 6960, 9660, 6015, 5306, 5302, 2]
 
-// Module 16558 (QuestHomeSortingFilteringBottomSheet)
+// Module 16796 (QuestHomeSortingFilteringBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
-import shared from "shared" /* 5011 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import ButtonGroup2 from "ButtonGroup" /* 6731 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
+import shared from "shared" /* 5012 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import ButtonGroup2 from "ButtonGroup" /* 6754 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Filter
           }
         }
         const obj5 = { bottom: true, children: metroImportAll(ButtonGroup2.ButtonGroup, obj6) };
-        const SafeAreaPaddingView = tmp(7257).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp(7281).SafeAreaPaddingView;
         obj6 = { direction: "vertical", style: footerButtonGroup, children: items };
         items = [tmp10, tmp15];
         const tmp21 = metroImportDefault(SafeAreaPaddingView, obj5);
@@ -235,7 +235,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F162439 */ });
+            found = arr.filter(function() { /* body not rendered: F164111 */ });
           }
           return found;
         });
@@ -257,7 +257,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F162439 */ });
+            found = arr.filter(function() { /* body not rendered: F164111 */ });
           }
           return found;
         });

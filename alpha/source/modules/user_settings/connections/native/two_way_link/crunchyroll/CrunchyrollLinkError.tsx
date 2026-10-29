@@ -1,16 +1,16 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14572
+// Function ID: 14573
 // Name: CrunchyrollLinkError
-// Dependencies: [19, 14330, 21, 558, 576, 1502, 14313, 1125, 14314, 2]
+// Dependencies: [19, 14564, 21, 558, 576, 1503, 14547, 1125, 14548, 2]
 
-// Module 14338 (CrunchyrollLinkError)
+// Module 14572 (CrunchyrollLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import useConnectRetry from "useConnectRetry" /* 14313 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 14314 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14330 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useConnectRetry from "useConnectRetry" /* 14547 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 14548 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14564 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

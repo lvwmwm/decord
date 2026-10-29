@@ -1,11 +1,11 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8697
+// Function ID: 8698
 // Name: useShouldConvertBioEmoji
-// Dependencies: [558, 4832, 2]
+// Dependencies: [558, 4833, 2]
 // Exports: getShouldConvertBioEmoji
 
-// Module 8694 (useShouldConvertBioEmoji)
-import UserSettings from "UserSettings" /* 4832 */;
+// Module 8697 (useShouldConvertBioEmoji)
+import UserSettings from "UserSettings" /* 4833 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldC
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useShouldConvertBioEmoji.tsx");
 
 export default tmp2;
-export const getShouldConvertBioEmoji = function getShouldConvertBioEmoji() {
+export function getShouldConvertBioEmoji() {
   const UseLegacyChatInput = UserSettings.UseLegacyChatInput;
   let setting = UseLegacyChatInput.getSetting();
   if (!setting) {
@@ -37,4 +37,4 @@ export const getShouldConvertBioEmoji = function getShouldConvertBioEmoji() {
     setting = !UseRichChatInput.getSetting();
   }
   return setting;
-};
+}

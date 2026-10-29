@@ -1,18 +1,18 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 18110
+// Function ID: 18111
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 4853, 21, 5004, 558, 576, 9039, 1125, 2567, 5135, 9874, 2]
+// Dependencies: [19, 17, 4854, 21, 5005, 558, 576, 9042, 1125, 2568, 5136, 9906, 2]
 
-// Module 17872 (BoostProgressBarCoachmark)
+// Module 18110 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef2567 from "module_2567" /* 2567 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import BoostThisServerRive from "BoostThisServerRive" /* 5135 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9039 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import BoostThisServerRive from "BoostThisServerRive" /* 5136 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,9 +54,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1125).intl;
-      const stringResult = intl.string(markAsDismissed(2567).uwV2dH);
+      const stringResult = intl.string(markAsDismissed(2568).uwV2dH);
       const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(markAsDismissed(2567).MIwlcR);
+      const stringResult1 = intl2.string(markAsDismissed(2568).MIwlcR);
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
       tmp9 = stringResult1;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
         if (cResult[12] === tmp13) {
           tmp16 = cResult[13];
         }
-        const tmpResult = guild(9874);
+        const tmpResult = guild(9906);
         const coachmark = tmpResult.useCoachmark(targetRef, tmp16);
         return null;
       }
@@ -136,8 +136,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     let intl3;
     let riveContainer;
     const obj = {
-      title: intl.string(_modDef2567.uwV2dH),
-      description: intl2.string(_modDef2567.MIwlcR),
+      title: intl.string(_modDef2568.uwV2dH),
+      description: intl2.string(_modDef2568.MIwlcR),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -154,7 +154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9874);
+  let obj = guild(9906);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 });

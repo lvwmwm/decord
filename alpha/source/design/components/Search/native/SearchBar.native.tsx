@@ -1,14 +1,14 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 7205
+// Function ID: 7206
 // Name: SearchBar
-// Dependencies: [109, 19, 21, 558, 576, 1125, 7051, 7182, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1125, 7075, 7206, 2]
 
-// Module 7181 (SearchBar)
+// Module 7205 (SearchBar)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import TextField2 from "TextField" /* 7051 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7182 */;
+import TextField2 from "TextField" /* 7075 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7206 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBar(
     }
     return tmp11;
   }
-  const TextField = tmp(7051).TextField;
+  const TextField = tmp(7075).TextField;
   const merged = Object.assign(tmp4);
   const tmp13 = <TextField placeholder={tmp9} returnKeyType="search" ref={tmp5} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
   cResult[4] = tmp4;

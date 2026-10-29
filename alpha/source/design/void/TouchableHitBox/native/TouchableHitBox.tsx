@@ -1,17 +1,17 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9077
+// Function ID: 9078
 // Name: TouchableHitBox
-// Dependencies: [19, 17, 21, 5004, 587, 5070, 1199, 6944, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 5071, 1199, 6968, 2]
 
-// Module 9074 (TouchableHitBox)
+// Module 9077 (TouchableHitBox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import native2 from "native" /* 5070 */;
-import Pressables from "Pressables" /* 6944 */;
+import native2 from "native" /* 5071 */;
+import Pressables from "Pressables" /* 6968 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

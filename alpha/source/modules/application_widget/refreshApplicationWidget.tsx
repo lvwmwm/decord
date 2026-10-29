@@ -1,12 +1,12 @@
-// Module ID: 11936
-// Function ID: 11937
+// Module ID: 11990
+// Function ID: 11991
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1084, 5132, 1294, 2]
+// Dependencies: [5, 1084, 5133, 1294, 2]
 // Exports: refreshApplicationWidget
 
-// Module 11936 (refreshApplicationWidget)
+// Module 11990 (refreshApplicationWidget)
 import Constants from "Constants" /* 1084 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5132 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const Endpoints = Constants.Endpoints;
 const promiseDeduper = new utils_FunctionUtils.PromiseDeduper();
 const result = size.fileFinishedImporting("modules/application_widget/refreshApplicationWidget.tsx");
 
-export const refreshApplicationWidget = function refreshApplicationWidget(play) {
+export function refreshApplicationWidget(play) {
   let closure_0 = play;
   return promiseDeduper.one(play, _asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -60,7 +60,7 @@ export const refreshApplicationWidget = function refreshApplicationWidget(play) 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -113,4 +113,4 @@ export const refreshApplicationWidget = function refreshApplicationWidget(play) 
       }
     }
   }));
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11853
+// Function ID: 11854
 // Name: conjureTraceRequests
 // Dependencies: [19, 558, 576, 2]
 // Exports: hasConjureTraceRequest, requestConjureTrace, takeConjureTraceRequest
 
-// Module 11799 (conjureTraceRequests)
+// Module 11853 (conjureTraceRequests)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -92,22 +92,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 });
 const result = size.fileFinishedImporting("modules/conjure/debug/conjureTraceRequests.tsx");
 
-export const requestConjureTrace = function requestConjureTrace(projectId, traceId) {
+export function requestConjureTrace(projectId, traceId) {
   let c4 = { projectId, traceId };
   const items = [...set];
   for (const item10012 of items) {
     let item10012Result = item10012(projectId);
     continue;
   }
-};
-export const hasConjureTraceRequest = function hasConjureTraceRequest(arg0) {
+}
+export function hasConjureTraceRequest(arg0) {
   let projectId;
   if (_null != null) {
     projectId = _null.projectId;
   }
   return projectId === arg0;
-};
-export const takeConjureTraceRequest = function takeConjureTraceRequest(projectId) {
+}
+export function takeConjureTraceRequest(projectId) {
   if (null != _null) {
     if (_null.projectId === projectId) {
       _null = null;
@@ -115,5 +115,5 @@ export const takeConjureTraceRequest = function takeConjureTraceRequest(projectI
     }
   }
   return null;
-};
+}
 export const useConjureTraceRequests = tmp3;

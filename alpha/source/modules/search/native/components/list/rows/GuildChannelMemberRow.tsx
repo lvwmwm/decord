@@ -1,12 +1,12 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18639
+// Function ID: 18640
 // Name: GuildChannelMemberRow
-// Dependencies: [19, 21, 558, 576, 10662, 2]
+// Dependencies: [19, 21, 558, 576, 10695, 2]
 
-// Module 18405 (GuildChannelMemberRow)
+// Module 18639 (GuildChannelMemberRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserRowDefault from "UserRow" /* 10662 */;
+import UserRowDefault from "UserRow" /* 10695 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

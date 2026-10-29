@@ -1,10 +1,10 @@
-// Module ID: 19083
-// Function ID: 19084
+// Module ID: 19318
+// Function ID: 19319
 // Name: passThrough
 // Dependencies: [2]
 // Exports: asIterable, protectConstructors, protectPrototype, protectStatics, protectWindow
 
-// Module 19083 (passThrough)
+// Module 19318 (passThrough)
 import size from "module_2" /* 2 */;
 
 function passThrough(arg0) {
@@ -18,12 +18,12 @@ export function protectPrototype() {
 export function protectWindow() {
   return passThrough;
 }
-export const protectStatics = function protectStatics(Math) {
+export function protectStatics(Math) {
   return globalThis[Math];
-};
-export const protectConstructors = function protectConstructors() {
+}
+export function protectConstructors() {
   return globalThis;
-};
+}
 export function asIterable(items) {
   return items;
 }

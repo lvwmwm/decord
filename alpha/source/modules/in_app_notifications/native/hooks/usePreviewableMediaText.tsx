@@ -1,12 +1,12 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14238
+// Function ID: 14239
 // Name: usePreviewableMediaText
-// Dependencies: [19, 558, 576, 14002, 1125, 2]
+// Dependencies: [19, 558, 576, 14235, 1125, 2]
 
-// Module 14005 (usePreviewableMediaText)
+// Module 14238 (usePreviewableMediaText)
 import react2 from "react" /* 576 */;
 import intl21 from "intl" /* 1125 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 14002 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 14235 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

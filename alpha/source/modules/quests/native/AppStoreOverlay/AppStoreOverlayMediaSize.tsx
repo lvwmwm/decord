@@ -1,13 +1,13 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14587
+// Function ID: 14588
 // Name: AppStoreOverlayMediaSize
-// Dependencies: [32, 19, 17, 2034, 1414, 558, 576, 2]
+// Dependencies: [32, 19, 17, 2035, 1415, 558, 576, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize
 
-// Module 14353 (AppStoreOverlayMediaSize)
+// Module 14587 (AppStoreOverlayMediaSize)
 import react_native from "react-native" /* 17 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2034 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2035 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -208,7 +208,7 @@ let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/A
 
 export const MEDIA_FALLBACK_WIDTH = 1080;
 export const MEDIA_FALLBACK_HEIGHT = 1920;
-export const getMediaTileSize = function getMediaTileSize(value) {
+export function getMediaTileSize(value) {
   if (null != value) {
     let tmp;
     if (value.width > value.height) {
@@ -217,8 +217,8 @@ export const getMediaTileSize = function getMediaTileSize(value) {
     return tmp;
   }
   tmp = closure_5;
-};
-export const getAppStoreOverlayCarouselImageUrl = function getAppStoreOverlayCarouselImageUrl(url) {
+}
+export function getAppStoreOverlayCarouselImageUrl(url) {
   const getSizedImageAssetURL = ImageProxyUtils.getSizedImageAssetURL;
   let format = null;
   ImageProxyUtils;
@@ -226,8 +226,8 @@ export const getAppStoreOverlayCarouselImageUrl = function getAppStoreOverlayCar
     format = "webp";
   }
   return getSizedImageAssetURL(url, { size: 289, keepAspectRatio: true, format });
-};
-export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nativeEvent) {
+}
+export function getMediaSizeFromLoadEvent(nativeEvent) {
   let height;
   let width;
   nativeEvent = nativeEvent.nativeEvent;
@@ -251,5 +251,5 @@ export const getMediaSizeFromLoadEvent = function getMediaSizeFromLoadEvent(nati
     }
   }
   return tmp;
-};
+}
 export const useAppStoreOverlayMediaSizes = tmp3;

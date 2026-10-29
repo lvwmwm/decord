@@ -1,10 +1,10 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14613
+// Function ID: 14614
 // Name: useInGameQuestConnectState
 // Dependencies: [2]
 // Exports: useInGameQuestConnectState
 
-// Module 14379 (useInGameQuestConnectState)
+// Module 14613 (useInGameQuestConnectState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/useInGameQuestConnectState.tsx");

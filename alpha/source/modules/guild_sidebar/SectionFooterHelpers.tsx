@@ -1,23 +1,23 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 18187
+// Function ID: 18188
 // Name: SectionFooterHelpers
-// Dependencies: [7249, 4936, 7678, 1084, 7672, 4881, 2]
+// Dependencies: [7273, 4937, 7701, 1084, 7695, 4882, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 17949 (SectionFooterHelpers)
+// Module 18187 (SectionFooterHelpers)
 import Constants from "Constants" /* 1084 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import ChannelListState from "ChannelListState" /* 7672 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7678 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7249 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import ChannelListState from "ChannelListState" /* 7695 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7701 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7273 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import size from "module_2" /* 2 */;
 
 const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/guild_sidebar/SectionFooterHelpers.tsx");
 
-export const getSectionFooterConfig = function getSectionFooterConfig(guildChannels, optInChannelsEnabled, section) {
+export function getSectionFooterConfig(guildChannels, optInChannelsEnabled, section) {
   let tmp3;
   if (section === ChannelListState.SECTION_INDEX_GUILD_ACTIONS) {
     const guildActionSection = guildChannels.getGuildActionSection();
@@ -33,18 +33,18 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   }
   let tmp6 = !tmp3;
   if (tmp6) {
-    let tmp7 = section === tmp(7672).SECTION_INDEX_GUILD_ACTIONS;
+    let tmp7 = section === tmp(7695).SECTION_INDEX_GUILD_ACTIONS;
     if (!tmp7) {
       let tmp8;
       const tmpResult = FavoritesUtils;
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(7672).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(7695).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(7672).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(7695).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {
@@ -65,8 +65,8 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   const obj = { hasDivider: tmp6, canHaveVoiceSummary: !(section === ChannelListState.SECTION_INDEX_GUILD_ACTIONS || section === ChannelListState.SECTION_INDEX_FAVORITES || section === ChannelListState.SECTION_INDEX_UNCATEGORIZED_CHANNELS || section === guildChannels.recentsSectionNumber || section === guildChannels.voiceChannelsSectionNumber) };
   section === ChannelListState.SECTION_INDEX_GUILD_ACTIONS || section === ChannelListState.SECTION_INDEX_FAVORITES || section === ChannelListState.SECTION_INDEX_UNCATEGORIZED_CHANNELS || section === guildChannels.recentsSectionNumber || section === guildChannels.voiceChannelsSectionNumber;
   return obj;
-};
-export const getSectionFooterActiveVoiceChannels = function getSectionFooterActiveVoiceChannels(arg0) {
+}
+export function getSectionFooterActiveVoiceChannels(arg0) {
   let category;
   let items;
   ({ category, voiceStates: require, selectedChannelId: dependencyMap, selectedVoiceChannelId: CategoryCollapseStore } = arg0);
@@ -87,8 +87,8 @@ export const getSectionFooterActiveVoiceChannels = function getSectionFooterActi
     });
   }
   return items;
-};
-export const isSectionFooterWithActiveVoiceChannels = function isSectionFooterWithActiveVoiceChannels(arg0) {
+}
+export function isSectionFooterWithActiveVoiceChannels(arg0) {
   let category;
   let items;
   ({ category, voiceStates: require, selectedChannelId: dependencyMap, selectedVoiceChannelId: CategoryCollapseStore } = arg0);
@@ -109,4 +109,4 @@ export const isSectionFooterWithActiveVoiceChannels = function isSectionFooterWi
     });
   }
   return items.length > 0;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 5008
-// Function ID: 5009
+// Module ID: 5009
+// Function ID: 5010
 // Name: GameModeExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getGameModeExperimentConfig
 
-// Module 5008 (GameModeExperiment)
+// Module 5009 (GameModeExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameModeE
 });
 const result = size.fileFinishedImporting("modules/game_mode/GameModeExperiment.tsx");
 
-export const getGameModeExperimentConfig = function getGameModeExperimentConfig(location) {
+export function getGameModeExperimentConfig(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj);
-};
+}
 export const useGameModeExperimentConfig = tmp2;

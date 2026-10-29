@@ -1,30 +1,30 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7429
+// Function ID: 7430
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5225, 4860, 502, 4856, 4936, 6805, 7407, 1084, 558, 576, 1096, 504, 6852, 11, 12, 7414, 7412, 7415, 7416, 6688, 6697, 2]
+// Dependencies: [32, 19, 5226, 4861, 502, 4857, 4937, 6828, 7430, 1084, 558, 576, 1096, 504, 6875, 11, 12, 7437, 7435, 7438, 7439, 6712, 6721, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
 
-// Module 7406 (ThreadHooks)
+// Module 7429 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6688 */;
-import AgeGateUtils from "AgeGateUtils" /* 6697 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6852 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7412 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7414 */;
-import useIsRemoteDefault from "useIsRemote" /* 7415 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7416 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6712 */;
+import AgeGateUtils from "AgeGateUtils" /* 6721 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7435 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7437 */;
+import useIsRemoteDefault from "useIsRemote" /* 7438 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5225 */;
+import createExperiment from "createExperiment" /* 5226 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6805 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7407 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6828 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7430 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -1238,7 +1238,7 @@ const result = size.fileFinishedImporting("modules/threads/ThreadHooks.tsx");
 
 export const VoiceInThreadsExperiment = importDefaultResultResult;
 export const useCanStartPublicThread = tmp5;
-export const computeCanStartPublicThread = function computeCanStartPublicThread(channel, message) {
+export function computeCanStartPublicThread(channel, message) {
   let SEND_MESSAGES;
   if (channel.isForumLikeChannel()) {
     SEND_MESSAGES = constants.SEND_MESSAGES;
@@ -1263,9 +1263,9 @@ export const computeCanStartPublicThread = function computeCanStartPublicThread(
     }
   }
   return flag;
-};
+}
 export const useCanStartPrivateThread = tmp6;
-export const computeCanStartPrivateThread = function computeCanStartPrivateThread(type, hasFlag) {
+export function computeCanStartPrivateThread(type, hasFlag) {
   let tmp3 = type.type === constants3.GUILD_TEXT;
   const canResult = PermissionStore.can(constants.CREATE_PRIVATE_THREADS, type);
   if (!tmp3) {
@@ -1291,7 +1291,7 @@ export const computeCanStartPrivateThread = function computeCanStartPrivateThrea
     tmp3 = flag;
   }
   return tmp3;
-};
+}
 export const useCanStartThread = tmp7;
 export const useCanViewThreadForMessage = tmp8;
 export const useHasActiveThreads = tmp9;
@@ -1299,7 +1299,7 @@ export const useCanManageThread = tmp10;
 export const useCanUnarchiveThread = tmp11;
 export { canUnarchiveThread };
 export const useIsActiveChannelOrUnarchivableThread = tmp12;
-export const getIsActiveChannelOrUnarchivableThread = function getIsActiveChannelOrUnarchivableThread(channel) {
+export function getIsActiveChannelOrUnarchivableThread(channel) {
   let tmp = null != channel;
   if (tmp) {
     const isThreadResult = channel.isThread();
@@ -1325,8 +1325,8 @@ export const getIsActiveChannelOrUnarchivableThread = function getIsActiveChanne
     tmp = isActiveThreadResult;
   }
   return tmp;
-};
-export const computeIsReadOnlyThread = function computeIsReadOnlyThread(channel) {
+}
+export function computeIsReadOnlyThread(channel) {
   if (channel.isMediaThread()) {
     return true;
   } else {
@@ -1334,7 +1334,7 @@ export const computeIsReadOnlyThread = function computeIsReadOnlyThread(channel)
     const tmp4 = channel.isArchivedLockedThread() && !canResult;
     return tmp4;
   }
-};
+}
 export const useIsThreadModerator = tmp13;
 export { isThreadModerator };
 export const useCanRemoveThreadMember = tmp14;
@@ -1342,10 +1342,10 @@ export const useIsThreadMember = tmp15;
 export const useHasPermissionToJoinThreadVoice = tmp16;
 export const useCanJoinThreadVoice = tmp17;
 export const useIsNonModInLockedThread = tmp18;
-export const isNonModInLockedThread = function isNonModInLockedThread(isLockedThread) {
+export function isNonModInLockedThread(isLockedThread) {
   const items = [PermissionStore];
   const first = _slicedToArray(items, 1)[0];
   const canResult = null != isLockedThread && first.can(constants.MANAGE_THREADS, isLockedThread);
   const tmp3 = isLockedThread.isLockedThread() && !canResult;
   return tmp3;
-};
+}

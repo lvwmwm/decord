@@ -1,14 +1,14 @@
-// Module ID: 9175
-// Function ID: 9176
+// Module ID: 9178
+// Function ID: 9179
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 4856, 4907, 558, 576, 504, 7913, 2]
+// Dependencies: [5, 32, 19, 4857, 4908, 558, 576, 504, 7936, 2]
 
-// Module 9175 (useSelectStage)
+// Module 9178 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -155,7 +155,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp18) {
           let closure_4 = tmp18;
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
             c5 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp18) {
         let closure_4 = tmp18;

@@ -1,23 +1,23 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 13971
+// Function ID: 13972
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5005, 21, 5004, 587, 558, 576, 7111, 13739, 4829, 504, 8352, 9842, 13741, 13743, 1199, 5270, 13745, 1125, 2]
+// Dependencies: [17, 5006, 21, 5005, 587, 558, 576, 7135, 13972, 4830, 504, 8374, 9874, 13974, 13976, 1199, 5271, 13978, 1125, 2]
 
-// Module 13738 (GuildPowerupsRecentActivitySection)
+// Module 13971 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7111 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8352 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 13739 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 13745 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7135 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8374 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 13972 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 13978 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,11 +101,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     }
     const isRoleStyleAndRoleColorsEligibleForERC = obj8.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(9842).BoostGemIcon;
+      BoostGemSlashIcon = tmp(9874).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(13741).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(13974).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(13743).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(13976).BoostGemSlashIcon;
     }
     if (cResult[7] === BoostGemSlashIcon) {
       if (cResult[10] === roleColor) {
@@ -234,11 +234,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     const tmpResult2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp(9842).BoostGemIcon;
+      BoostGemSlashIcon = tmp(9874).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(13741).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(13974).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(13743).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(13976).BoostGemSlashIcon;
     }
     const obj5 = { style: tmp4.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -258,18 +258,18 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPo
     const obj10 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp24, children: username };
     items3 = [tmp4.username, {}];
     tmp24 = undefined;
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp24 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj10);
     items2[2] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj11 = { variant: "text-md/medium", lineClamp: 1, style: tmp4.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp(5270).Text;
+    const Text2 = tmp(5271).Text;
     items2[3] = hasOwnProperty(Text2, obj11);
     items1[1] = metroRequire(View, obj8);
     let str4 = "text-xs/semibold";
-    const Text3 = tmp(5270).Text;
+    const Text3 = tmp(5271).Text;
     if (manaTypeConsolidationExperiment) {
       str4 = "text-xs/medium";
     }
@@ -393,7 +393,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   if (0 !== arr.length) {
     let str = "text-subtle";
     const obj2 = { style: tmp4.sectionContainer, children: items };
-    const Text = tmp(5270).Text;
+    const Text = tmp(5271).Text;
     const tmp6 = metroRequire;
     if (manaTypeConsolidationExperiment) {
       str = "text-strong";

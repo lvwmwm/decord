@@ -1,9 +1,9 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9693
+// Function ID: 9694
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 5004, 558, 576, 9653, 7310, 9662, 38, 5280, 1125, 7257, 7171, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 5005, 558, 576, 9685, 7334, 9694, 38, 5281, 1125, 7281, 7195, 2]
 
-// Module 9661 (TwoWayLinkDiscordConsent)
+// Module 9693 (TwoWayLinkDiscordConsent)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -11,7 +11,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkDi
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkDi
               v0(code);
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp32) {
           if (0 === v0) {
@@ -261,7 +261,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkDi
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -315,7 +315,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkDi
               v0(code);
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp32) {
           if (0 === v0) {

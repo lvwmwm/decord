@@ -1,12 +1,12 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14887
+// Function ID: 14888
 // Name: showReportModalForUserWidget
-// Dependencies: [2042, 7743, 8140, 6845, 2]
+// Dependencies: [2043, 7765, 8163, 6868, 2]
 // Exports: showReportModalForUserWidget
 
-// Module 14652 (showReportModalForUserWidget)
-import ReportModals from "ReportModals" /* 8140 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+// Module 14887 (showReportModalForUserWidget)
+import ReportModals from "ReportModals" /* 8163 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const user_profile_widget = "user_profile_widget";
 let result = size.fileFinishedImporting("modules/user_profile/showReportModalForUserWidget.tsx");
 
 export const USER_PROFILE_WIDGET_REPORT_ENTRYPOINT = "user_profile_widget";
-export const showReportModalForUserWidget = function showReportModalForUserWidget(userId, widget) {
+export function showReportModalForUserWidget(userId, widget) {
   let applicationId;
   _require = userId;
   importDefault = widget;
@@ -68,4 +68,4 @@ export const showReportModalForUserWidget = function showReportModalForUserWidge
     const tmpResult4 = tmp(tmp2[2]);
     const result2 = tmpResult4.showReportModalForWidget(userId, widget);
   }
-};
+}

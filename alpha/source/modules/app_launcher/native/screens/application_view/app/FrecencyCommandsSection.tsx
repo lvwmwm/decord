@@ -1,19 +1,19 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12124
+// Function ID: 12125
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1084, 21, 5004, 12051, 558, 576, 12071, 5747, 11208, 5270, 1125, 5670, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 12105, 558, 576, 12125, 5749, 11262, 5271, 1125, 5672, 2]
 
-// Module 12070 (FrecencyCommandsSection)
+// Module 12124 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11208 */;
-import AppDetailContent from "AppDetailContent" /* 12051 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 12071 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11262 */;
+import AppDetailContent from "AppDetailContent" /* 12105 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 12125 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -240,7 +240,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecencyComm
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.header, children: arr(Heading, obj3) };
     obj3 = { variant: "text-md/medium", color: "text-default", children: intl.string(context(1125).t.acSE0h) };
-    Heading = context(5270).Heading;
+    Heading = context(5271).Heading;
     intl = context(1125).intl;
     items1 = [
       arr(View, obj2),

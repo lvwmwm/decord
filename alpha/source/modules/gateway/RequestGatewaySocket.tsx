@@ -1,10 +1,10 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10167
+// Function ID: 10168
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1084, 7617, 1264, 2]
+// Dependencies: [5, 1084, 7640, 1264, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 10134 (RequestGatewaySocket)
+// Module 10167 (RequestGatewaySocket)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -58,7 +58,7 @@ let obj = function _withRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c5;
@@ -121,13 +121,13 @@ let c6 = true;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/gateway/RequestGatewaySocket.tsx");
 
-export const isRequested = function isRequested() {
+export function isRequested() {
   return map.size > 0 || c6;
-};
+}
 export function recordStartHeadlessTask() {
   c6 = false;
 }
-export const describeConnectionReasons = function describeConnectionReasons() {
+export function describeConnectionReasons() {
   const tmp = c6 ? closure_5 : [];
   const items = [...tmp, ...map.keys()];
   const sorted = items.sort();
@@ -136,9 +136,9 @@ export const describeConnectionReasons = function describeConnectionReasons() {
     str = sorted.join(",");
   }
   return str;
-};
+}
 export { setRequestedBy };
-export const startBridgeTo = function startBridgeTo(arg0) {
+export function startBridgeTo(arg0) {
   const combined = "BRIDGE:" + arg0;
   let closure_1 = performance.now();
   obj = map;
@@ -148,7 +148,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     num = 0;
   }
   let result = obj.set(combined, num + 1);
-  let obj2 = combined(7617);
+  let obj2 = combined(7640);
   obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const _performance = performance;
@@ -170,8 +170,8 @@ export const startBridgeTo = function startBridgeTo(arg0) {
       const result = obj.set(tmp, diff);
     }
   }, { timeout: 5000 });
-};
+}
 export { stopRequest };
-export const withRequest = function withRequest() {
+export function withRequest() {
   return obj(...arguments);
-};
+}

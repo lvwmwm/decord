@@ -1,12 +1,12 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15739
+// Function ID: 15740
 // Name: MenuPopout
-// Dependencies: [32, 19, 21, 9798, 5085, 10469, 15498, 15503, 15504, 2]
+// Dependencies: [32, 19, 21, 9830, 5086, 10502, 15732, 15737, 15738, 2]
 // Exports: MenuPopout
 
-// Module 15505 (MenuPopout)
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10469 */;
-import Menu2 from "Menu" /* 15498 */;
+// Module 15739 (MenuPopout)
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10502 */;
+import Menu2 from "Menu" /* 15732 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ let metroRequire;
 ({ jsx: hasOwnProperty, Fragment: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("design/components/Menu/native/MenuPopout.tsx");
 
-export const MenuPopout = function MenuPopout(children) {
+export function MenuPopout(children) {
   let first;
   let key;
   let menuItems;
@@ -119,4 +119,4 @@ export const MenuPopout = function MenuPopout(children) {
     }
   };
   return offset(offsetAnimated, obj2);
-};
+}

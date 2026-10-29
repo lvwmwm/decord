@@ -1,10 +1,10 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10810
+// Function ID: 10811
 // Name: conjureStepTimeline
 // Dependencies: [32, 2]
 // Exports: hasTerminalStep, recordStep, replayTimeline
 
-// Module 10736 (conjureStepTimeline)
+// Module 10810 (conjureStepTimeline)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureStepTimeline.tsx");
 
 export const TERMINAL_STEP_KINDS = set;
-export const recordStep = function recordStep(steps, step) {
+export function recordStep(steps, step) {
   function indexTimeline(arr) {
     let first;
     let tmp8;
@@ -110,8 +110,8 @@ export const recordStep = function recordStep(steps, step) {
   }
   const result2 = set(substr, hasItem);
   return substr;
-};
-export const replayTimeline = function replayTimeline(steps) {
+}
+export function replayTimeline(steps) {
   const items = [];
   const obj = { seenSeq: new Set(), todosAt: -1 };
   new Set();
@@ -122,8 +122,8 @@ export const replayTimeline = function replayTimeline(steps) {
   }
   const result = weakMap1.set(items, obj);
   return items;
-};
-export const hasTerminalStep = function hasTerminalStep(steps) {
+}
+export function hasTerminalStep(steps) {
   let value = weakMap.get(steps);
   const obj = weakMap;
   if (null == value) {
@@ -132,4 +132,4 @@ export const hasTerminalStep = function hasTerminalStep(steps) {
     value = someResult;
   }
   return value;
-};
+}

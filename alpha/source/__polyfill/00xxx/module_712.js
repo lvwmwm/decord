@@ -6,7 +6,7 @@
 // Module 712
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const parseSampleRate = function parseSampleRate(flag) {
+export function parseSampleRate(flag) {
   if (typeof flag === "boolean") {
     const _Number = Number;
     return Number(flag);
@@ -29,4 +29,4 @@ export const parseSampleRate = function parseSampleRate(flag) {
     }
     return tmp;
   }
-};
+}

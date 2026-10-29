@@ -1,13 +1,13 @@
-// Module ID: 13423
-// Function ID: 13424
+// Module ID: 13656
+// Function ID: 13657
 // Name: GuildDirectoryConstants
-// Dependencies: [1084, 1125, 4941, 1096, 2]
+// Dependencies: [1084, 1125, 4942, 1096, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 13423 (GuildDirectoryConstants)
+// Module 13656 (GuildDirectoryConstants)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
 import intl72 from "intl" /* 1125 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ export const CreateOrAddGuildSlideTypes = { GUILD_TEMPLATES: "guild-templates", 
 export { HubGuildTemplateId };
 export const DirectoryEntryCategories = obj2;
 export const HQ_CHANNEL_ID = "883060064561299456";
-export const getHubCategories = function getHubCategories(arg0) {
+export function getHubCategories(arg0) {
   let intl;
   let intl2;
   let intl3;
@@ -63,8 +63,8 @@ export const getHubCategories = function getHubCategories(arg0) {
     items1[3] = obj8;
   }
   return items1;
-};
-export const getHubGuildTemplatesMap = function getHubGuildTemplatesMap() {
+}
+export function getHubGuildTemplatesMap() {
   let intl;
   let intl10;
   let intl11;
@@ -371,4 +371,4 @@ export const getHubGuildTemplatesMap = function getHubGuildTemplatesMap() {
   items6[9] = obj75;
   obj[HUB_DORM] = obj65;
   return obj;
-};
+}

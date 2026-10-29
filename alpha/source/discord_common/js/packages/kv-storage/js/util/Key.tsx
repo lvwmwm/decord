@@ -1,16 +1,16 @@
-// Module ID: 4888
-// Function ID: 4889
+// Module ID: 4889
+// Function ID: 4890
 // Name: Key
-// Dependencies: [4889, 2]
+// Dependencies: [4890, 2]
 // Exports: combineKey, combineKeyPrefix
 
-// Module 4888 (Key)
-import TableId from "TableId" /* 4889 */;
+// Module 4889 (Key)
+import TableId from "TableId" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");
 
-export const combineKey = function combineKey(prefix, key) {
+export function combineKey(prefix, key) {
   let items1;
   if (Array.isArray(key)) {
     const items = [];
@@ -27,8 +27,8 @@ export const combineKey = function combineKey(prefix, key) {
   }
   const error = new Error("combination results in an invalid key that has " + items1.length + " elements: " + JSON.stringify(items1));
   throw error;
-};
-export const combineKeyPrefix = function combineKeyPrefix(prefix, items) {
+}
+export function combineKeyPrefix(prefix, items) {
   let items1;
   if (Array.isArray(items)) {
     items = [];
@@ -49,4 +49,4 @@ export const combineKeyPrefix = function combineKeyPrefix(prefix, items) {
     const error = new Error("combination results in an invalid prefix key that has " + items1.length + " elements: " + JSON.stringify(items1));
     throw error;
   }
-};
+}

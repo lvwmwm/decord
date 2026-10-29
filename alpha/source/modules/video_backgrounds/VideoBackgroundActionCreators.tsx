@@ -1,17 +1,17 @@
-// Module ID: 5900
-// Function ID: 5901
+// Module ID: 5902
+// Function ID: 5903
 // Name: VideoBackgroundActionCreators
-// Dependencies: [5, 2011, 1389, 1084, 1294, 584, 5901, 5902, 5903, 5904, 2]
+// Dependencies: [5, 2012, 1389, 1084, 1294, 584, 5903, 5904, 5905, 5906, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 5900 (VideoBackgroundActionCreators)
+// Module 5902 (VideoBackgroundActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5903 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5904 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5905 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _fetchVideoFilterAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -110,7 +110,7 @@ obj = function _uploadVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ obj = function _deleteVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ obj = function _deleteVideoFilterAsset() {
             obj = closure_130_1(closure_130_2[5]);
             obj.dispatch(obj9);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -261,7 +261,7 @@ obj = function _saveLastUsedBackgroundOption() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -309,7 +309,7 @@ obj = function _saveLastUsedBackgroundOption() {
             obj.dispatch(obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp16) {
           c4 = 3;
           throw tmp16;
@@ -322,30 +322,30 @@ obj = function _saveLastUsedBackgroundOption() {
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/video_backgrounds/VideoBackgroundActionCreators.tsx");
 
-export const fetchVideoFilterAssets = function fetchVideoFilterAssets() {
+export function fetchVideoFilterAssets() {
   return obj(...arguments);
-};
-export const uploadVideoFilterAsset = function uploadVideoFilterAsset() {
+}
+export function uploadVideoFilterAsset() {
   return obj(...arguments);
-};
-export const deleteVideoFilterAsset = function deleteVideoFilterAsset() {
+}
+export function deleteVideoFilterAsset() {
   return obj(...arguments);
-};
+}
 export { saveLastUsedBackgroundOption };
-export const applyMediaFilterSettings = function applyMediaFilterSettings(settings) {
+export function applyMediaFilterSettings(settings) {
   if (MediaEngineStore.isSupported()) {
     const obj2 = { type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS", settings };
     obj = DispatcherDefault;
     obj.dispatch(obj2);
   }
-};
-export const startApplyMediaFilterSettings = function startApplyMediaFilterSettings() {
+}
+export function startApplyMediaFilterSettings() {
   if (MediaEngineStore.isSupported()) {
     obj = DispatcherDefault;
     obj.dispatch({ type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START" });
   }
-};
-export const errorApplyingMediaFilterSettings = function errorApplyingMediaFilterSettings() {
+}
+export function errorApplyingMediaFilterSettings() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR" });
-};
+}

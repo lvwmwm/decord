@@ -1,21 +1,21 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12089
+// Function ID: 12090
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5011, 5241, 12036, 12037, 11961, 11208, 5705, 1125, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5012, 5242, 12090, 12091, 12015, 11262, 5707, 1125, 5271, 2]
 
-// Module 12035 (NoPermsState)
+// Module 12089 (NoPermsState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import shared from "shared" /* 5011 */;
-import useThemeDefault from "useTheme" /* 5241 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11961 */;
+import shared from "shared" /* 5012 */;
+import useThemeDefault from "useTheme" /* 5242 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   const cResult = obj.c(10);
   const tmp4 = closure_6();
   const obj2 = shared;
-  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 12036 : 12037);
+  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 12090 : 12091);
   const tmpResult = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11208).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11262).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   if (cResult[0] === tmp5Result) {
     let tmp9;
     let tmp12;
@@ -91,15 +91,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12036 : 12037);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12090 : 12091);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11208).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11262).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   items[0] = React3(FastImageDefault, obj3);
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: intl.string(intl2.t.uDnXXj) };
-  const Text = tmp2(5270).Text;
+  const Text = tmp2(5271).Text;
   intl = tmp2(1125).intl;
   items[1] = React3(Text, obj4);
   return hasOwnProperty(View, obj2);

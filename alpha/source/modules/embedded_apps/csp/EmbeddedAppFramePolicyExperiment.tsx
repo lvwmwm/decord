@@ -1,12 +1,12 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10887
+// Function ID: 10888
 // Name: EmbeddedAppFramePolicyExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsEmbeddedAppFramePolicyEnabled
 
-// Module 10811 (EmbeddedAppFramePolicyExperiment)
+// Module 10887 (EmbeddedAppFramePolicyExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/embedded_apps/csp/EmbeddedApp
 
 export const EMBEDDED_APP_FRAME_POLICY_EXPERIMENT = "2026-10-embedded-app-frame-policy";
 export const useIsEmbeddedAppFramePolicyEnabled = tmp2;
-export const getIsEmbeddedAppFramePolicyEnabled = function getIsEmbeddedAppFramePolicyEnabled(loadEmbeddedAppCSPForLaunch) {
+export function getIsEmbeddedAppFramePolicyEnabled(loadEmbeddedAppCSPForLaunch) {
   const obj = { location: loadEmbeddedAppCSPForLaunch };
   return closure_2.getConfig(obj).enabled;
-};
+}

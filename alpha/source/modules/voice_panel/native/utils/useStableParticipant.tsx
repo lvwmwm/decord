@@ -1,18 +1,18 @@
-// Module ID: 18795
-// Function ID: 18796
+// Module ID: 19028
+// Function ID: 19029
 // Name: useStableParticipant
-// Dependencies: [6807, 502, 2011, 1389, 5668, 568, 558, 576, 6025, 6817, 10944, 504, 2]
+// Dependencies: [6830, 502, 2012, 1389, 5670, 568, 558, 576, 6029, 6840, 10979, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 18795 (useStableParticipant)
+// Module 19028 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import CallConstants from "CallConstants" /* 5668 */;
-import NicknameUtils from "NicknameUtils" /* 6025 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6817 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10944 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import CallConstants from "CallConstants" /* 5670 */;
+import NicknameUtils from "NicknameUtils" /* 6029 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6840 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10979 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "2025-12-shadow-node-spike", isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "2025-12-shadow-node-spike", isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;
@@ -238,7 +238,7 @@ export default tmp2;
 export { isStableStreamParticipant };
 export { isStableUserParticipant };
 export { isStableActivityParticipant };
-export const isStableParticipantWithUser = function isStableParticipantWithUser(participant) {
+export function isStableParticipantWithUser(participant) {
   let type;
   const _Boolean = Boolean;
   if (participant != null) {
@@ -262,8 +262,8 @@ export const isStableParticipantWithUser = function isStableParticipantWithUser(
     _BooleanResult = _Boolean2(type2 === tmp2.USER);
   }
   return _BooleanResult;
-};
-export const stableParticipantHasVideo = function stableParticipantHasVideo(type) {
+}
+export function stableParticipantHasVideo(type) {
   type = undefined;
   const _Boolean = Boolean;
   if (type != null) {
@@ -294,4 +294,4 @@ export const stableParticipantHasVideo = function stableParticipantHasVideo(type
     tmp4 = selfVideo;
   }
   return tmp4;
-};
+}

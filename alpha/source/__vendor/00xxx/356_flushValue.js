@@ -17,7 +17,7 @@ import _inherits from "_inherits" /* 98 */;
 
 let dependencyMap, importDefault, set;
 
-const f86347 = (update) => update.update();
+const f87354 = (update) => update.update();
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -382,7 +382,7 @@ let items = [
             let __getChildrenResult = self5.__getChildren();
             let item = __getChildrenResult.forEach(findAnimatedStyles);
           }
-          const item1 = set.forEach(f86347);
+          const item1 = set.forEach(f87354);
         }
         self5.__callListeners(self5.__getValue());
       }
@@ -398,7 +398,7 @@ let items = [
 ];
 
 export default _createClass(AnimatedValue, items);
-export const flushValue = function flushValue(self) {
+export function flushValue(self) {
   set = new Set();
   function findAnimatedStyles(update) {
     if (typeof update.update === "function") {
@@ -414,5 +414,5 @@ export const flushValue = function flushValue(self) {
     const __getChildrenResult = self.__getChildren();
     const item = __getChildrenResult.forEach(findAnimatedStyles);
   }
-  const item1 = set.forEach(f86347);
-};
+  const item1 = set.forEach(f87354);
+}

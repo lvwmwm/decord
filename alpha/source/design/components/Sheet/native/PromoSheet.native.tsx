@@ -1,16 +1,16 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10799
+// Function ID: 10800
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 5004, 587, 558, 576, 9885, 9884, 5270, 6013, 5301, 2]
+// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 9917, 9916, 5271, 6015, 5302, 2]
 
-// Module 10894 (PromoSheet)
+// Module 10799 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExpressiveGradient2 from "ExpressiveGradient" /* 9885 */;
+import ExpressiveGradient2 from "ExpressiveGradient" /* 9917 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
       }
     }
     let obj2 = { style: tmp14.graphic };
-    const Graphic = tmp(9884).Graphic;
+    const Graphic = tmp(9916).Graphic;
     let merged = Object.assign(tmp7);
     tmp17 = closure_8(Graphic, obj2);
   } else {
@@ -177,12 +177,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
     return closure_2_8(View, obj);
   }) : undefined, items);
   let obj = { startExpanded: true, contentStyles: tmp2.content, backgroundComponent: memo, children: closure_9(Stack, obj6) };
-  BottomSheet = gradientColor(5301).BottomSheet;
+  BottomSheet = gradientColor(5302).BottomSheet;
   let merged = Object.assign(tmp);
-  Stack = gradientColor(6013).Stack;
+  Stack = gradientColor(6015).Stack;
   if (null != graphic) {
     let obj2 = { style: tmp2.graphic };
-    const Graphic = tmp5(9884).Graphic;
+    const Graphic = tmp5(9916).Graphic;
     const merged1 = Object.assign(graphic);
     tmp4Result = tmp4(Graphic, obj2);
   } else {
@@ -193,14 +193,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromoSheet
     }
   }
   const items1 = [tmp4Result, , ];
-  const Stack2 = tmp5(6013).Stack;
+  const Stack2 = tmp5(6015).Stack;
   const items2 = [, ];
   const obj4 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title };
-  items2[0] = closure_8(gradientColor(5270).Text, obj4);
+  items2[0] = closure_8(gradientColor(5271).Text, obj4);
   let tmp4Result2 = null;
   if (null != description) {
     const obj5 = { variant: "redesign/heading-18/medium", color: "text-subtle", style: tmp2.description, children: description };
-    tmp4Result2 = tmp4(tmp5(5270).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(5271).Text, obj5);
   }
   obj6 = { spacing: 24, children: items1 };
   items2[1] = tmp4Result2;

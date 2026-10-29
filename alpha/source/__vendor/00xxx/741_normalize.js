@@ -243,7 +243,7 @@ function normalizeToSize(arg0) {
 
 export { normalize };
 export { normalizeToSize };
-export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
+export function normalizeUrlToBase(arg0, str) {
   let str2 = arg0;
   str = str.replace(/\\/g, "/");
   const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
@@ -257,4 +257,4 @@ export const normalizeUrlToBase = function normalizeUrlToBase(arg0, str) {
   str3.replace(/webpack:\/?/g, "");
   const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
   return replace(regExp, "app:///");
-};
+}

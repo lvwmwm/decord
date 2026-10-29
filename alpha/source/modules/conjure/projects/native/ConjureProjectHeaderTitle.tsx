@@ -1,21 +1,21 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12382
+// Function ID: 12383
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 12329, 6944, 1125, 3863, 12210, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12383, 6968, 1125, 3864, 12264, 5271, 2]
 
-// Module 12328 (ConjureProjectHeaderTitle)
+// Module 12382 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Pressables from "Pressables" /* 6944 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12210 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12329 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Pressables from "Pressables" /* 6968 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12264 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
       let tmp16 = null;
       if (null != tmp6Result) {
         const obj3 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/normal", color: "text-subtle", children: tmp6Result };
-        tmp16 = React3(tmp(5270).Text, obj3);
+        tmp16 = React3(tmp(5271).Text, obj3);
       }
       cResult[5] = tmp6Result;
       cResult[6] = tmp16;
@@ -113,8 +113,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   }
   let tmp9 = null;
   if (null != project) {
-    const obj6 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3863.FzfmQ8), children: React3(ConjureProjectIconDefault, obj7) };
-    const PressableOpacity = tmp(6944).PressableOpacity;
+    const obj6 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3864.FzfmQ8), children: React3(ConjureProjectIconDefault, obj7) };
+    const PressableOpacity = tmp(6968).PressableOpacity;
     intl = tmp(1125).intl;
     obj7 = { project, size: "list" };
     tmp9 = React3(PressableOpacity, obj6);
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   let tmp8 = null;
   const obj = { style: tmp.row, children: items };
   if (null != project) {
-    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3863.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
+    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef3864.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl2.intl;
     obj3 = { project, size: "list" };

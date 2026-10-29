@@ -1,14 +1,14 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 8778
+// Function ID: 8779
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [558, 576, 1414, 8776, 1102, 2]
+// Dependencies: [558, 576, 1415, 8779, 1102, 2]
 // Exports: getAvatarSource
 
-// Module 8775 (profile_customization/ProfileCustomizationUtils)
+// Module 8778 (profile_customization/ProfileCustomizationUtils)
 import react from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import VideoBackground from "VideoBackground" /* 8776 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import VideoBackground from "VideoBackground" /* 8779 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
 const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 
 export const useUserProfileBannerBackgroundColor = tmp2;
-export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2, arg3) {
+export function getAvatarSource(getAvatarURL, arg1, arg2, arg3) {
   let tmp = null;
   if (null != getAvatarURL) {
     let memoizedImageSourceResult;
@@ -136,7 +136,7 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2
       VideoBackground;
       if (userAvatarURL == null) {
         const obj = { avatar: null };
-        const getUserAvatarURL = tmp3(1414).getUserAvatarURL;
+        const getUserAvatarURL = tmp3(1415).getUserAvatarURL;
         AvatarUtils;
         const merged = Object.assign(getAvatarURL);
         userAvatarURL = getUserAvatarURL(obj);
@@ -146,4 +146,4 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL, arg1, arg2
     tmp = memoizedImageSourceResult;
   }
   return tmp;
-};
+}

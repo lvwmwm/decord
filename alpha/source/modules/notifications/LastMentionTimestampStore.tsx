@@ -1,14 +1,14 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7271
+// Function ID: 7272
 // Name: LastMentionTimestampStore
-// Dependencies: [4916, 6739, 1389, 584, 504, 2]
+// Dependencies: [4917, 6762, 1389, 584, 504, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 7247 (LastMentionTimestampStore)
+// Module 7271 (LastMentionTimestampStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -264,7 +264,7 @@ const lastMentionTimestampStore = new LastMentionTimestampStore(DispatcherDefaul
 let result = size.fileFinishedImporting("modules/notifications/LastMentionTimestampStore.tsx");
 
 export default lastMentionTimestampStore;
-export const trackMessageNotificationTimestamps = function trackMessageNotificationTimestamps(mentions, guildId) {
+export function trackMessageNotificationTimestamps(mentions, guildId) {
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -299,4 +299,4 @@ export const trackMessageNotificationTimestamps = function trackMessageNotificat
     someResult1 = !result1;
   }
   dispatch(obj);
-};
+}

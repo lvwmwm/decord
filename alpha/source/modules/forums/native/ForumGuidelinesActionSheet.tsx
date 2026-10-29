@@ -1,23 +1,23 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10184
+// Function ID: 10185
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7417, 21, 5004, 587, 558, 576, 9759, 1630, 10152, 1381, 10153, 5246, 7257, 5281, 1125, 5041, 5642, 10127, 6944, 5270, 10154, 5741, 5305, 5301, 10151, 1999, 2]
+// Dependencies: [32, 19, 17, 7440, 21, 5005, 587, 558, 576, 9791, 1631, 10185, 1381, 10186, 5247, 7281, 5282, 1125, 5042, 5643, 10160, 6968, 5271, 10187, 5743, 5306, 5302, 10184, 2000, 2]
 // Exports: openForumGuidelinesActionSheet
 
-// Module 10151 (ForumGuidelinesActionSheet)
+// Module 10184 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import LinkUtils from "LinkUtils" /* 5642 */;
-import ForumConstants from "ForumConstants" /* 7417 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10127 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10153 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import LinkUtils from "LinkUtils" /* 5643 */;
+import ForumConstants from "ForumConstants" /* 7440 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10160 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10186 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -365,11 +365,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumGuideli
 const result = size.fileFinishedImporting("modules/forums/native/ForumGuidelinesActionSheet.tsx");
 
 export default tmp4;
-export const openForumGuidelinesActionSheet = function openForumGuidelinesActionSheet(arg0) {
+export function openForumGuidelinesActionSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10151, dependencyMap.paths);
+  const tmp2 = asyncRequire(10184, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
-};
+}

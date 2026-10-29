@@ -1,20 +1,20 @@
-// Module ID: 18979
-// Function ID: 18980
+// Module ID: 19212
+// Function ID: 19213
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 5004, 558, 576, 9737, 18056, 587, 18978, 5288, 18980, 5085, 5283, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 9769, 18290, 587, 19211, 5289, 19213, 5086, 5284, 2]
 // Exports: SimpleGuildContainer
 
-// Module 18979 (SimpleGuildContainer)
+// Module 19212 (SimpleGuildContainer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import spring from "spring" /* 5283 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9737 */;
-import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 18056 */;
-import CutoutImageDefault from "CutoutImage" /* 18980 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import spring from "spring" /* 5284 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9769 */;
+import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 18290 */;
+import CutoutImageDefault from "CutoutImage" /* 19213 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const GuildsBarActivityIndicator = tmp(18056);
+const GuildsBarActivityIndicator = tmp(18290);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = 48;
@@ -555,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleGuildC
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/SimpleGuildContainer.tsx");
 
-export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
+export function SimpleGuildContainer(selected) {
   let accessibilityLabel;
   let children;
   let guildIconRef;
@@ -684,5 +684,5 @@ export const SimpleGuildContainer = function SimpleGuildContainer(selected) {
   }
   items3 = [tmp10(tmp9, obj4), memo1, memo, tmp10(closure_13, { backgroundColor, guildId, activityIndicatorState }), tmp10(closure_12, { backgroundColor, badge, unread })];
   return tmp8(backgroundColor, obj3);
-};
+}
 export const SimpleGuildContainerAnimated = tmp5;

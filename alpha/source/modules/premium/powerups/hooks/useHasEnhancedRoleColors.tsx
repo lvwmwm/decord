@@ -1,12 +1,12 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6028
+// Function ID: 6029
 // Name: useHasEnhancedRoleColors
-// Dependencies: [4878, 1084, 558, 576, 504, 2]
+// Dependencies: [4879, 1084, 558, 576, 504, 2]
 // Exports: getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole
 
-// Module 6024 (useHasEnhancedRoleColors)
+// Module 6028 (useHasEnhancedRoleColors)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasEnha
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useHasEnhancedRoleColors.tsx");
 
 export default tmp2;
-export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildId1) {
+export function getHasEnhancedRoleColors(guildId1) {
   if (null == guildId1) {
     return false;
   } else {
@@ -127,9 +127,9 @@ export const getHasEnhancedRoleColors = function getHasEnhancedRoleColors(guildI
     }
     return hasItem;
   }
-};
+}
 export const useHasEnhancedRoleColorsForRole = tmp3;
-export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColorsForRole(id) {
+export function getHasEnhancedRoleColorsForRole(id) {
   const guild = GuildStore.getGuild(id);
   let hasItem = null != guild;
   if (hasItem) {
@@ -137,4 +137,4 @@ export const getHasEnhancedRoleColorsForRole = function getHasEnhancedRoleColors
     hasItem = features.has(GuildFeatures.ENHANCED_ROLE_COLORS);
   }
   return hasItem;
-};
+}

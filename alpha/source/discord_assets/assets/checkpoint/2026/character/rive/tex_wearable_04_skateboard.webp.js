@@ -1,8 +1,8 @@
-// Module ID: 13181
-// Function ID: 13182
+// Module ID: 13412
+// Function ID: 13413
 // Dependencies: [2]
 
-// Module 13181
+// Module 13412
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_04_skateboard.webp.js");

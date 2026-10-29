@@ -1,10 +1,10 @@
-// Module ID: 5226
-// Function ID: 5227
+// Module ID: 5227
+// Function ID: 5228
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1083, 5227, 1084, 3, 1378, 1263, 1264, 5228, 510, 12, 584, 2]
+// Dependencies: [32, 502, 1083, 5228, 1084, 3, 1378, 1263, 1264, 5229, 510, 12, 584, 2]
 // Exports: registerExperiment
 
-// Module 5226 (ExperimentStore)
+// Module 5227 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
@@ -12,15 +12,15 @@ import Dispatcher from "Dispatcher" /* 584 */;
 import _modDef1263 from "module_1263" /* 1263 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1378 */;
-import GuildFilters from "GuildFilters" /* 5228 */;
+import GuildFilters from "GuildFilters" /* 5229 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1083 */;
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
-let closure_22, positions;
+let closure_22, closure_23, positions;
 
 let c10;
 let c9;
@@ -784,8 +784,8 @@ const map = new Map();
 let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };
 let loadedUserExperiments = {};
-const authStore5 = {};
-let closure_23 = {};
+const version = {};
+const sidebars = {};
 let obj4 = {};
 obj = {};
 let c26 = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL || true;
@@ -1130,6 +1130,6 @@ hasExperimentTrackedExposure1.trackExposure = trackExposure;
 let result = size.fileFinishedImporting("modules/experiments/ExperimentStore.tsx");
 
 export default hasExperimentTrackedExposure1;
-export const registerExperiment = function registerExperiment(experimentId) {
+export function registerExperiment(experimentId) {
   closure_19[experimentId.experimentId] = { type: experimentId.experimentType, title: experimentId.title, description: experimentId.description, buckets: experimentId.buckets, commonTriggerPoint: experimentId.commonTriggerPoint };
-};
+}

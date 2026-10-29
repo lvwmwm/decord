@@ -1,15 +1,15 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17591
+// Function ID: 17592
 // Name: SurveyActionCreators
-// Dependencies: [7892, 1084, 584, 1264, 6711, 1272, 4868, 1294, 2]
+// Dependencies: [7915, 1084, 584, 1264, 6734, 1272, 4869, 1294, 2]
 // Exports: overrideSurvey, surveyHide, surveySeen
 
-// Module 17352 (SurveyActionCreators)
+// Module 17591 (SurveyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import TypeUtils from "TypeUtils" /* 4868 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import SurveyStore2 from "SurveyStore" /* 7892 */;
+import TypeUtils from "TypeUtils" /* 4869 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import SurveyStore2 from "SurveyStore" /* 7915 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -24,12 +24,12 @@ const SURVEY_REFETCH_INTERVAL = SurveyStore2.SURVEY_REFETCH_INTERVAL;
 ({ AnalyticEvents: hasOwnProperty, NoticeTypes: metroRequire, Endpoints: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("actions/SurveyActionCreators.tsx");
 
-export const overrideSurvey = function overrideSurvey(id, isActionTriggered) {
+export function overrideSurvey(id, isActionTriggered) {
   const obj = DispatcherDefault;
   const obj2 = { type: "SURVEY_OVERRIDE", id, isActionTriggered };
   obj.dispatch(obj2);
-};
-export const surveyHide = function surveyHide(key, dismissed) {
+}
+export function surveyHide(key, dismissed) {
   const obj = DispatcherDefault;
   const obj2 = { type: "SURVEY_HIDE", key };
   obj.dispatch(obj2);
@@ -42,8 +42,8 @@ export const surveyHide = function surveyHide(key, dismissed) {
     const obj4 = { notice_type: metroRequire.SURVEY };
     track(hasOwnProperty.APP_NOTICE_PRIMARY_CTA_OPENED, obj4);
   }
-};
-export const surveySeen = function surveySeen(key) {
+}
+export function surveySeen(key) {
   let obj5;
   function properties() {
     const obj = TypeUtils;
@@ -66,4 +66,4 @@ export const surveySeen = function surveySeen(key) {
   ({ event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_SURVEY_SEEN, properties });
   obj5 = require("HTTPUtils");
   return post(obj3);
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 8389
+// Function ID: 8390
 // Name: useUserCommunicationDisabled
-// Dependencies: [4916, 1389, 558, 576, 504, 4923, 2]
+// Dependencies: [4917, 1389, 558, 576, 504, 4924, 2]
 // Exports: userCommunicationDisabled
 
-// Module 8367 (useUserCommunicationDisabled)
+// Module 8389 (useUserCommunicationDisabled)
 import react from "react" /* 576 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4923 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4924 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCom
         prop = null;
       }
       const items1 = [prop, ];
-      const tmpResult2 = tmp(4923);
+      const tmpResult2 = tmp(4924);
       items1[1] = tmpResult2.isMemberCommunicationDisabled(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = items1;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCom
     prop = null;
   }
   const items2 = [prop, ];
-  const tmpResult = tmp(4923);
+  const tmpResult = tmp(4924);
   items2[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores);
   return items2;
 });
@@ -159,7 +159,7 @@ const result = size.fileFinishedImporting("modules/guild_communication_disabled/
 
 export default tmp3;
 export const useCurrentUserCommunicationDisabled = tmp2;
-export const userCommunicationDisabled = function userCommunicationDisabled(id, guildId) {
+export function userCommunicationDisabled(id, guildId) {
   let member = null;
   const obj = GuildMemberStore;
   if (null != guildId) {
@@ -179,4 +179,4 @@ export const userCommunicationDisabled = function userCommunicationDisabled(id, 
   const obj2 = CommunicationDisabledUtils;
   items[1] = obj2.isMemberCommunicationDisabled(member);
   return items;
-};
+}

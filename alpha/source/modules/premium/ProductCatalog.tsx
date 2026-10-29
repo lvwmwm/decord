@@ -1,20 +1,20 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5062
+// Function ID: 5063
 // Name: ProductCatalog
-// Dependencies: [1390, 1391, 3, 5062, 5063, 5064, 5066, 1397, 5067, 1395, 2]
+// Dependencies: [1390, 1391, 3, 5063, 5064, 5065, 5067, 1397, 5068, 1395, 2]
 // Exports: canUserUse
 
-// Module 5061 (ProductCatalog)
+// Module 5062 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PerksStateUtils from "PerksStateUtils" /* 1395 */;
 import user from "user" /* 1397 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5063 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 5064 */;
-import SKUListingDefault from "SKUListing" /* 5066 */;
-import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 5067 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 5064 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 5065 */;
+import SKUListingDefault from "SKUListing" /* 5067 */;
+import DenormalizedPerksReadExperiment from "DenormalizedPerksReadExperiment" /* 5068 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 5062 */;
+import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 5063 */;
 import size from "module_2" /* 2 */;
 
 const DenormalizedPerksReadExperimentDefault = DenormalizedPerksReadExperiment;
@@ -1266,7 +1266,7 @@ export const INCREASED_VIDEO_UPLOAD_QUALITY = tmp282;
 export const UPLOAD_LARGE_FILES = tmp293;
 export const QUEST_ORB_MULTIPLIER = tmp294;
 export const PRODUCT_CATALOG = freezeResult;
-export const canUserUse = function canUserUse(COLLECTIBLES, isPremiumWithFractionalPremiumOnly, arg2) {
+export function canUserUse(COLLECTIBLES, isPremiumWithFractionalPremiumOnly, arg2) {
   if (null != isPremiumWithFractionalPremiumOnly) {
     if (isPremiumWithFractionalPremiumOnly.isPremiumWithFractionalPremiumOnly()) {
       if (items3.includes(COLLECTIBLES)) {
@@ -1317,4 +1317,4 @@ export const canUserUse = function canUserUse(COLLECTIBLES, isPremiumWithFractio
     }
     return COLLECTIBLES.getFeatureValue(isPremiumWithFractionalPremiumOnly);
   }
-};
+}

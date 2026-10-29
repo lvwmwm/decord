@@ -7,7 +7,7 @@
 // Module 867 (replaceExports)
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const replaceExports = function replaceExports(arg0, arg1, value) {
+export function replaceExports(arg0, arg1, value) {
   if (typeof arg0[arg1] === "function") {
     try {
       arg0[arg1] = value;
@@ -26,4 +26,4 @@ export const replaceExports = function replaceExports(arg0, arg1, value) {
       }
     }
   }
-};
+}

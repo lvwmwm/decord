@@ -1,29 +1,26 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 13008
+// Function ID: 13009
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 12781, 21, 5004, 587, 558, 576, 5705, 5270, 6013, 12783, 1502, 11361, 5699, 1125, 7935, 7936, 2403, 12788, 12786, 6731, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 13000, 21, 5005, 587, 558, 576, 5707, 5271, 6015, 13002, 1503, 11415, 5701, 1125, 7958, 7959, 2404, 13009, 13007, 6754, 5281, 2]
 // Exports: AcceptStep
 
-// Module 12787 (AcceptStep)
+// Module 13008 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2403 from "module_2403" /* 2403 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import Stack_Stack from "Stack/Stack" /* 6013 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12783 */;
-import GameOrganizationLinkedServerCardDefault from "GameOrganizationLinkedServerCard" /* 12788 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import Stack_Stack from "Stack/Stack" /* 6015 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12781 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13000 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, dependencyMap, importDefault;
+let c5, c6, closure_3, dependencyMap, id;
 
 let c10;
 let c9;
@@ -71,7 +68,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
       }
     }
     const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp4.benefitCard, children: items };
-    const Stack = tmp(6013).Stack;
+    const Stack = tmp(6015).Stack;
     items = [tmp5, tmp11];
     const tmp17 = authStore(Stack, obj3);
     cResult[5] = tmp4.benefitCard;
@@ -118,12 +115,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
 });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/steps/AcceptStep.tsx");
 
-export const AcceptStep = function AcceptStep(code) {
+export function AcceptStep(code) {
   let ButtonGroup;
   let WmxMAI;
   let _undefined;
-  let c2;
-  let closure_1;
+  let c3;
+  let closure_2;
   let formatToPlainString;
   let intl;
   let intl2;
@@ -140,13 +137,14 @@ export const AcceptStep = function AcceptStep(code) {
   let obj7;
   let tmp7;
   code = code.code;
+  const character = code.character;
   dependencyMap = undefined;
+  c3 = undefined;
   let obj = function _handleAcceptInvite() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let intl;
-      let obj3;
-      if (c5 === 2) {
-        c5 = 3;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -155,81 +153,97 @@ export const AcceptStep = function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
-        let c3;
-        let failureReason;
+        let c4;
         try {
-          let closure_0;
+          let characterName;
           let joinStatus;
+          let failureReason;
           let guild_join_status;
-          c5 = 2;
-          if (0 === c4) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c5 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              c6 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
-              closure_0 = undefined;
+              characterName = undefined;
               joinStatus = undefined;
               failureReason = undefined;
               guild_join_status = undefined;
               _undefined(true);
-              c3 = 2;
-              c4 = 3;
-              c5 = 1;
-              const obj5 = { value: obj3.acceptGameOrganizationInvite(code), done: false };
-              obj3 = joinStatus(failureReason[15]);
-              return obj5;
-            }
-          } else if (1 === c4) {
-            c3 = 0;
-            closure_129_2(false);
-            throw failureReason;
-          } else {
-            if (2 === c4) {
-              c3 = 1;
-              const obj6 = { text: intl.string(closure_0(failureReason[17]).t.fEptJP) };
-              const open = joinStatus(failureReason[16]).open;
-              const tmp11 = joinStatus(failureReason[16]);
-              intl = closure_0(failureReason[17]).intl;
-              open("GAME_ORGANIZATION_INVITE_ACCEPT_ERROR", obj6);
-            } else if (arg0 === 1) {
+              c4 = 2;
+              id = undefined;
+              const acceptGameOrganizationInvite = joinStatus(failureReason[15]).acceptGameOrganizationInvite;
+              const tmp49 = joinStatus(failureReason[15]);
+              const tmp50 = code;
+              if (id != null) {
+                id = id.id;
+              }
               c5 = 3;
+              c6 = 1;
+              const obj4 = { value: acceptGameOrganizationInvite(tmp50, id), done: false };
+              return obj4;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_130_3(false);
+            throw closure_3;
+          } else {
+            if (2 === c5) {
+              c4 = 1;
+              const obj5 = { text: intl.string(characterName(failureReason[17]).t.fEptJP) };
+              const open = joinStatus(failureReason[16]).open;
+              const tmp14 = joinStatus(failureReason[16]);
+              intl = characterName(failureReason[17]).intl;
+              open("GAME_ORGANIZATION_INVITE_ACCEPT_ERROR", obj5);
+            } else if (arg0 === 1) {
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 0;
-              closure_129_2(false);
-              c5 = 3;
+              c4 = 0;
+              closure_130_3(false);
+              c6 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              closure_0 = value;
-              joinStatus = closure_0.game_organization_join_status;
-              failureReason = closure_0.game_organization_join_failure_reason;
-              guild_join_status = closure_0.guild_join_status;
-              const obj7 = { joinStatus, failureReason, guildJoinStatus: guild_join_status };
-              closure_129_1.push(constants.OUTCOME, obj7);
-              c3 = 1;
+              characterName = value;
+              joinStatus = characterName.game_organization_join_status;
+              failureReason = characterName.game_organization_join_failure_reason;
+              guild_join_status = characterName.guild_join_status;
+              const obj6 = { joinStatus, failureReason, guildJoinStatus: guild_join_status, characterName };
+              let name;
+              const push = closure_130_2.push;
+              const OUTCOME = constants.OUTCOME;
+              if (closure_130_1 != null) {
+                name = closure_130_1.name;
+              }
+              characterName = name;
+              if (name == null) {
+                characterName = null;
+              }
+              push(OUTCOME, obj6);
+              c4 = 1;
             }
-            c3 = 0;
-            closure_129_2(false);
-            c5 = 3;
-            return { value: "IconComponent", done: null };
+            c4 = 0;
+            closure_130_3(false);
+            c6 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } catch (tmp29) {
-          failureReason = tmp29;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp29;
-          } else if (1 === tmp31) {
-            c4 = 1;
+        } catch (tmp28) {
+          closure_3 = tmp28;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp28;
+          } else if (1 === tmp30) {
+            c5 = 1;
           } else {
-            c4 = 2;
+            c5 = 2;
           }
         }
       }
@@ -238,28 +252,27 @@ export const AcceptStep = function AcceptStep(code) {
   };
   const tmp3 = dependencyMap;
   const tmp = closure_11();
-  const tmp4 = useResolvedGameOrganizationInviteDefault(code);
-  obj = code(1502);
-  importDefault = obj.useNavigation();
-  [tmp7, c2] = _slicedToArray(react.useState(false), 2);
-  const tmp6 = _slicedToArray(react.useState(false), 2);
+  const tmp4 = character(13002)(code);
+  obj = code(1503);
+  dependencyMap = obj.useNavigation();
+  [tmp7, c3] = obj(react.useState(false), 2);
+  const tmp6 = obj(react.useState(false), 2);
   if (null == tmp4) {
     return null;
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    let tmp11 = closure_9;
-    const ModalScreen = tmp5(7935).ModalScreen;
-    const ModalContent = tmp5(7936).ModalContent;
+    const ModalScreen = tmp5(7958).ModalScreen;
+    const ModalContent = tmp5(7959).ModalContent;
     let obj2 = { spacing: tmp2(587).space.PX_48, children: items1 };
-    const Stack3 = tmp5(6013).Stack;
+    const Stack3 = tmp5(6015).Stack;
     let obj3 = { spacing: tmp2(587).space.PX_24, children: items };
-    const Stack4 = tmp5(6013).Stack;
+    const Stack4 = tmp5(6015).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5270).Text;
+    const Text2 = tmp5(5271).Text;
     const intl6 = tmp5(1125).intl;
     formatToPlainString = intl6.formatToPlainString;
-    WmxMAI = tmp2(2403).WmxMAI;
+    WmxMAI = tmp2(2404).WmxMAI;
     if (str == null) {
       str = "other";
     }
@@ -268,31 +281,31 @@ export const AcceptStep = function AcceptStep(code) {
     obj7 = { displayNoun: str };
     items = [tmp11(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = tmp11(GameOrganizationLinkedServerCardDefault, obj8);
+    items[1] = closure_9(character(13009), obj8);
     items1 = [tmp10(Stack4, obj3), ];
-    const obj9 = { spacing: nativeDefault.space.PX_24, children: items2 };
-    const Stack = tmp5(6013).Stack;
-    const obj10 = { variant: "heading-lg/semibold", children: intl.string(_modDef2403.yFqGy8) };
-    const Text = tmp5(5270).Text;
+    const obj9 = { spacing: character(587).space.PX_24, children: items2 };
+    const Stack = tmp5(6015).Stack;
+    const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2404).yFqGy8) };
+    const Text = tmp5(5271).Text;
     intl = tmp5(1125).intl;
     items2 = [tmp11(Text, obj10), ];
-    const obj11 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, children: items3 };
-    const Stack2 = tmp5(6013).Stack;
-    const obj12 = { text: intl2.string(_modDef2403.WUVzdk) };
+    const obj11 = { direction: "horizontal", spacing: character(587).space.PX_16, children: items3 };
+    const Stack2 = tmp5(6015).Stack;
+    const obj12 = { text: intl2.string(character(2404).WUVzdk) };
     intl2 = tmp5(1125).intl;
     items3 = [tmp11(closure_12, obj12), ];
-    const obj13 = { text: intl3.string(_modDef2403.MEQJ1m) };
+    const obj13 = { text: intl3.string(character(2404).MEQJ1m) };
     intl3 = tmp5(1125).intl;
-    items3[1] = tmp11(closure_12, obj13);
+    items3[1] = closure_9(closure_12, obj13);
     items2[1] = closure_10(Stack2, obj11);
     items1[1] = closure_10(Stack, obj9);
     items4 = [tmp11(ModalContent, obj6), ];
     const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(12786).ModalFooter;
+    const ModalFooter = tmp5(13007).ModalFooter;
     obj15 = { children: items5 };
-    ButtonGroup = tmp5(6731).ButtonGroup;
+    ButtonGroup = tmp5(6754).ButtonGroup;
     const obj16 = {
-      text: intl4.string(_modDef2403.BaZ6nt),
+      text: intl4.string(character(2404).BaZ6nt),
       size: "lg",
       loading: tmp7,
       disabled: tmp7,
@@ -300,14 +313,14 @@ export const AcceptStep = function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5280).Button;
+    const Button = tmp5(5281).Button;
     intl4 = tmp5(1125).intl;
     items5 = [tmp11(Button, obj16), ];
     const obj17 = { text: intl5.string(code(1125).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5280).Button;
+    const Button2 = tmp5(5281).Button;
     intl5 = tmp5(1125).intl;
-    items5[1] = tmp11(Button2, obj17);
-    items4[1] = tmp11(ModalFooter, obj14);
+    items5[1] = closure_9(Button2, obj17);
+    items4[1] = closure_9(ModalFooter, obj14);
     return closure_10(ModalScreen, obj5);
   }
-};
+}

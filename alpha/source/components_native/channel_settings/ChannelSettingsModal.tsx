@@ -1,29 +1,29 @@
-// Module ID: 18540
-// Function ID: 18541
+// Module ID: 18774
+// Function ID: 18775
 // Name: ChannelSettingsModal
-// Dependencies: [19, 17, 1084, 9748, 21, 5004, 587, 18541, 1125, 14009, 18456, 18556, 18557, 18559, 18566, 18567, 18576, 18579, 18588, 18590, 18591, 18592, 18593, 18594, 2]
+// Dependencies: [19, 17, 1084, 9780, 21, 5005, 587, 18775, 1125, 14242, 18690, 18790, 18791, 18793, 18800, 18801, 18810, 18813, 18822, 18824, 18825, 18826, 18827, 18828, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 18540 (ChannelSettingsModal)
+// Module 18774 (ChannelSettingsModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 14009 */;
-import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 18541 */;
-import MessagePreviewDefault from "MessagePreview" /* 18556 */;
-import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 18559 */;
-import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 18566 */;
-import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 18567 */;
-import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 18576 */;
-import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18579 */;
-import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 18591 */;
-import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 18592 */;
-import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 18593 */;
-import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 18594 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 14242 */;
+import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 18775 */;
+import MessagePreviewDefault from "MessagePreview" /* 18790 */;
+import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 18793 */;
+import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 18800 */;
+import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 18801 */;
+import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 18810 */;
+import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 18813 */;
+import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 18825 */;
+import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 18826 */;
+import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 18827 */;
+import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 18828 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ const styles = createStyles(obj);
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsModal.tsx");
 
 export const useChannelSettingsScreensStyles = styles;
-export const getChannelSettingsScreens = function getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles) {
+export function getChannelSettingsScreens(channelId, guildId, channelSettingsScreensStyles) {
   let intl;
   let intl10;
   let intl11;
@@ -232,4 +232,4 @@ export const getChannelSettingsScreens = function getChannelSettingsScreens(chan
   intl14 = require("intl").intl;
   obj[DEFAULT_FORUM_LAYOUT] = obj16;
   return obj;
-};
+}

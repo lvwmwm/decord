@@ -1,18 +1,18 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 15132
+// Function ID: 15133
 // Name: ClipsExperiment
-// Dependencies: [2011, 1389, 1391, 5754, 1452, 558, 576, 504, 2050, 1381, 2]
+// Dependencies: [2012, 1389, 1391, 5756, 1453, 558, 576, 504, 2051, 1381, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 14897 (ClipsExperiment)
+// Module 15132 (ClipsExperiment)
 import react from "react" /* 576 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1381 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import Constants from "Constants" /* 5754 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import Constants from "Constants" /* 5756 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import UserStore from "UserStore" /* 1389 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClips
 const result = size.fileFinishedImporting("modules/clips/ClipsExperiment.tsx");
 
 export const ClipsExperiment = apexExperiment;
-export const areClipsAvailable = function areClipsAvailable() {
+export function areClipsAvailable() {
   let ignorePlatformRestriction = apexExperiment.getConfig({ location: "isClipsClientCapable" }).ignorePlatformRestriction;
   const mediaEngine = MediaEngineStore.getMediaEngine();
   const obj = apexExperiment;
@@ -160,7 +160,7 @@ export const areClipsAvailable = function areClipsAvailable() {
   } else {
     return false;
   }
-};
+}
 export const useIsClipsAvailable = tmp3;
 export { isUserPremiumTypeForClipsEarlyAccess };
 export function isScreenshotKeybindEnabled() {

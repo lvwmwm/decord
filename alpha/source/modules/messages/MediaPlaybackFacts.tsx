@@ -1,10 +1,10 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10064
+// Function ID: 10065
 // Name: MediaPlaybackFacts
 // Dependencies: [2]
 // Exports: clearMediaPlaybackFactsForTest, getMediaPlaybackFacts, mediaItemIdFromSource, rememberMediaPlaybackFacts, resolveReportedMediaFacts
 
-// Module 10032 (MediaPlaybackFacts)
+// Module 10064 (MediaPlaybackFacts)
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -14,7 +14,7 @@ const re1 = /\/[^/?#]+\/\d+\/(\d+)\/[^/?#]+/;
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/messages/MediaPlaybackFacts.tsx");
 
-export const rememberMediaPlaybackFacts = function rememberMediaPlaybackFacts(id) {
+export function rememberMediaPlaybackFacts(id) {
   let duration_secs;
   id = id.id;
   if (null != id) {
@@ -41,8 +41,8 @@ export const rememberMediaPlaybackFacts = function rememberMediaPlaybackFacts(id
       const result = set(id, obj);
     }
   }
-};
-export const mediaItemIdFromSource = function mediaItemIdFromSource(arg0) {
+}
+export function mediaItemIdFromSource(arg0) {
   if (null != arg0) {
     if ("" !== arg0) {
       const match = re1.exec(arg0);
@@ -57,8 +57,8 @@ export const mediaItemIdFromSource = function mediaItemIdFromSource(arg0) {
     }
   }
   return null;
-};
-export const getMediaPlaybackFacts = function getMediaPlaybackFacts(arg0) {
+}
+export function getMediaPlaybackFacts(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = null;
@@ -83,8 +83,8 @@ export const getMediaPlaybackFacts = function getMediaPlaybackFacts(arg0) {
     tmp5 = value;
   }
   return tmp5;
-};
-export const resolveReportedMediaFacts = function resolveReportedMediaFacts(mediaSource, fileDurationSec) {
+}
+export function resolveReportedMediaFacts(mediaSource, fileDurationSec) {
   let tmp = null;
   if (null != mediaSource) {
     tmp = null;
@@ -131,7 +131,7 @@ export const resolveReportedMediaFacts = function resolveReportedMediaFacts(medi
     fileDurationSec = tmp8;
   }
   return obj;
-};
-export const clearMediaPlaybackFactsForTest = function clearMediaPlaybackFactsForTest() {
+}
+export function clearMediaPlaybackFactsForTest() {
   map.clear();
-};
+}

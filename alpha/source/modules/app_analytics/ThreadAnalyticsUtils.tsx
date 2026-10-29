@@ -1,24 +1,24 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8351
+// Function ID: 8352
 // Name: ThreadAnalyticsUtils
-// Dependencies: [8324, 7440, 4860, 4936, 1084, 1111, 11, 2]
+// Dependencies: [8346, 7463, 4861, 4937, 1084, 1111, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 8329 (ThreadAnalyticsUtils)
+// Module 8351 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 8324 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 8346 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7463 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import size from "module_2" /* 2 */;
 
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/app_analytics/ThreadAnalyticsUtils.tsx");
 
-export const collectThreadMetadata = function collectThreadMetadata(channel, arg1) {
+export function collectThreadMetadata(channel, arg1) {
   let archived;
   let flag3;
   let num;
@@ -63,4 +63,4 @@ export const collectThreadMetadata = function collectThreadMetadata(channel, arg
     }
   }
   return tmp;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 9592
-// Function ID: 9593
+// Module ID: 9624
+// Function ID: 9625
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2065, 1389, 9551, 1391, 1084, 584, 9593, 1294, 7544, 4837, 1239, 9591, 2]
+// Dependencies: [5, 2066, 1389, 9583, 1391, 1084, 584, 9625, 1294, 7567, 4838, 1239, 9623, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 9592 (PromotionsActionCreators)
+// Module 9624 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import wrappers from "wrappers" /* 1239 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9593 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import UserStore from "UserStore" /* 1389 */;
-import PromotionsStore from "PromotionsStore" /* 9551 */;
+import PromotionsStore from "PromotionsStore" /* 9583 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -38,7 +38,7 @@ let obj = function _fetchActivePromotions() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -125,7 +125,7 @@ let obj = function _fetchActivePromotions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp25) {
           let closure_3 = tmp25;
@@ -146,12 +146,12 @@ function dismissOutboundPromotionNotice() {
   obj.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(4837).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(4838).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       obj = { value: lastDismissedOutboundPromotionStartDate };
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
-    }, lastDismissedOutboundPromotionStartDate(4837).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(4838).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {
@@ -172,7 +172,7 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c2;
@@ -257,7 +257,7 @@ obj = {
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionsActionCreators.tsx");
 
 export default obj;
-export const maybeFetchActivePromotions = function maybeFetchActivePromotions(arg0) {
+export function maybeFetchActivePromotions(arg0) {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -274,11 +274,11 @@ export const maybeFetchActivePromotions = function maybeFetchActivePromotions(ar
       fetchActivePromotions();
     }
   }
-};
-export const clearActivePromotions = function clearActivePromotions() {
+}
+export function clearActivePromotions() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "ACTIVE_PROMOTIONS_CLEAR" });
-};
+}
 export { fetchActivePromotions };
 export { dismissOutboundPromotionNotice };
 export { fetchClaimedOutboundPromotionCodes };

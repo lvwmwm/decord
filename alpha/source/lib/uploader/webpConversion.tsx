@@ -1,10 +1,10 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8236
+// Function ID: 8237
 // Name: webpConversion
-// Dependencies: [5, 3, 8215, 1263, 2]
+// Dependencies: [5, 3, 8237, 1263, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8214 (webpConversion)
+// Module 8236 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef1263 from "module_1263" /* 1263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _shouldConvertToWebP2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -213,7 +213,7 @@ obj = function _performWebPConversion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -472,7 +472,7 @@ obj = function _maybeConvertToWebP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -634,6 +634,6 @@ const result = size.fileFinishedImporting("lib/uploader/webpConversion.tsx");
 
 export const ConversionFailureReason = obj;
 export { _shouldConvertToWebP };
-export const maybeConvertToWebP = function maybeConvertToWebP() {
+export function maybeConvertToWebP() {
   return obj(...arguments);
-};
+}

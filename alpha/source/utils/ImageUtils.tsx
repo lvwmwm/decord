@@ -1,13 +1,13 @@
-// Module ID: 1493
-// Function ID: 1494
+// Module ID: 1494
+// Function ID: 1495
 // Name: ImageUtils
-// Dependencies: [5, 1494, 1495, 12, 38, 2]
+// Dependencies: [5, 1495, 1496, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1493 (ImageUtils)
+// Module 1494 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import quantizeDefault from "quantize" /* 1494 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
+import quantizeDefault from "quantize" /* 1495 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let obj = function _dataUrlToFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -262,7 +262,7 @@ let result = size.fileFinishedImporting("utils/ImageUtils.tsx");
 
 export { fit };
 export const IMAGE_MAX_ZOOM = 2000;
-export const zoomFit = function zoomFit(width, height) {
+export function zoomFit(width, height) {
   let bound;
   let min2Result;
   const rounded = Math.round(0.65 * window.innerHeight);
@@ -273,8 +273,8 @@ export const zoomFit = function zoomFit(width, height) {
   min2Result = min2(rounded1, Math.round(window.innerWidth));
   bound = Math.min(minResult, c5);
   return fit(size);
-};
-export const zoomScale = function zoomScale(arg0, arg1, arg2, arg3) {
+}
+export function zoomScale(arg0, arg1, arg2, arg3) {
   let num = 0;
   const _Math = Math;
   if (null != arg0) {
@@ -312,8 +312,8 @@ export const zoomScale = function zoomScale(arg0, arg1, arg2, arg3) {
   }
   const bound = Math.min(maxResult, num2, num3);
   return parseFloat(bound.toFixed(2));
-};
-export const getRatio = function getRatio(height) {
+}
+export function getRatio(height) {
   let maxHeight;
   let maxWidth;
   let width;
@@ -330,8 +330,8 @@ export const getRatio = function getRatio(height) {
     num2 = maxHeight / rounded1;
   }
   return Math.min(num * num2, 1);
-};
-export const getCoverRatio = function getCoverRatio(arg0) {
+}
+export function getCoverRatio(arg0) {
   let height;
   let width;
   ({ width, height } = arg0);
@@ -342,14 +342,14 @@ export const getCoverRatio = function getCoverRatio(arg0) {
     const _Math2 = Math;
     return Math.min(Math.max(tmp / width, tmp2 / height), 1);
   }
-};
-export const hasDimensions = function hasDimensions(arg0) {
+}
+export function hasDimensions(arg0) {
   let height;
   let width;
   ({ width, height } = arg0);
   return null != width && 0 !== width && null != height && 0 !== height;
-};
-export const makeCssUrlString = function makeCssUrlString(arg0) {
+}
+export function makeCssUrlString(arg0) {
   let str = "none";
   if (null != arg0) {
     str = "none";
@@ -359,13 +359,13 @@ export const makeCssUrlString = function makeCssUrlString(arg0) {
     }
   }
   return str;
-};
+}
 export { getPalette };
-export const getPaletteForAvatar = function getPaletteForAvatar(src) {
+export function getPaletteForAvatar(src) {
   const _default = utils_ImageUtils.default;
   return _default.getPaletteForAvatarMobile(src);
-};
-export const readFileAsBase64 = function readFileAsBase64(value) {
+}
+export function readFileAsBase64(value) {
   let closure_0 = value;
   const promise = new Promise((data, arg1) => {
     let closure_0 = data;
@@ -379,20 +379,20 @@ export const readFileAsBase64 = function readFileAsBase64(value) {
     fileReader.onerror = (arg0) => closure_1(arg0);
   });
   return promise;
-};
-export const dataUriFileSize = function dataUriFileSize(base64) {
+}
+export function dataUriFileSize(base64) {
   const parts = base64.split(";base64,");
   _modDef38(2 === parts.length, "Input data is not a valid image.");
   return atob(parts[1]).length;
-};
-export const dataUrlToFile = function dataUrlToFile() {
+}
+export function dataUrlToFile() {
   return obj(...arguments);
-};
+}
 export { dataUrlToBlob };
-export const isPNGAnimated = function isPNGAnimated() {
+export function isPNGAnimated() {
   return obj(...arguments);
-};
-export const preloadImage = function preloadImage(src) {
+}
+export function preloadImage(src) {
   const promise = new Promise((arg0, arg1) => {
     const image = new globalThis.Image();
     const listener = image.addEventListener("load", arg0);
@@ -400,4 +400,4 @@ export const preloadImage = function preloadImage(src) {
     image.src = src;
   });
   return promise;
-};
+}

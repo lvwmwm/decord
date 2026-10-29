@@ -8,7 +8,7 @@ import _mod865 from "module_865" /* 865 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const isBrowser = function isBrowser() {
+export function isBrowser() {
   let tmp = typeof window !== "undefined";
   if (typeof window !== "undefined") {
     const obj = _mod865;
@@ -26,4 +26,4 @@ export const isBrowser = function isBrowser() {
     tmp = tmp4;
   }
   return tmp;
-};
+}

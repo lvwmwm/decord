@@ -1,17 +1,17 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15740
+// Function ID: 15741
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 5247, 1084, 21, 558, 576, 1272, 9392, 5246, 6008, 6003, 5616, 504, 13557, 5951, 2]
+// Dependencies: [32, 19, 17, 5248, 1084, 21, 558, 576, 1272, 6016, 5247, 6010, 6005, 5617, 504, 13790, 5953, 2]
 
-// Module 15506 (ActionSheetPresenter)
+// Module 15740 (ActionSheetPresenter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9392 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -174,7 +174,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
           }
         }
       }
-      tmp9(6008)(tmp16);
+      tmp9(6010)(tmp16);
       if (cResult[14] === tmp14) {
         class N {
           constructor() {
@@ -191,8 +191,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
       cResult[15] = content;
       cResult[16] = sheetKey;
       cResult[17] = zIndex;
-      cResult[18] = jsx(sheetKey(6003).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
-      const tmp20 = jsx(sheetKey(6003).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
+      cResult[18] = jsx(sheetKey(6005).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
+      const tmp20 = jsx(sheetKey(6005).Dialog, { dialogKey: sheetKey, onDismiss: tmp14, zIndex, children: content });
     }
     const obj4 = { transitionState: tmp5, close: tmp14, onLeave: tmp8, registerDismissHandler: first };
     cResult[9] = tmp14;
@@ -226,7 +226,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
     ref2.current();
   }, []);
   let obj = { type: sheetKey(1272).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  const tmp5 = transitionState(9392);
+  const tmp5 = transitionState(6016);
   tmp5(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
@@ -257,8 +257,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
     callback2();
     return true;
   }, items2);
-  transitionState(6008)(callback3);
-  const Provider = transitionState(5616).Provider;
+  transitionState(6010)(callback3);
+  const Provider = transitionState(5617).Provider;
   return <Provider value={memo}>{null}</Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -317,8 +317,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
       tmp11 = cResult[8];
     }
     if (cResult[10] !== tmp11) {
-      const TransitionGroup = tmp(13557).TransitionGroup;
-      const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5951).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
+      const TransitionGroup = tmp(13790).TransitionGroup;
+      const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5953).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
       cResult[10] = tmp11;
       cResult[11] = tmp17;
       tmp14 = tmp17;
@@ -361,8 +361,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const TransitionGroup = appEntryKey(13557).TransitionGroup;
-  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5951).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
+  const TransitionGroup = appEntryKey(13790).TransitionGroup;
+  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5953).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
 });
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
 

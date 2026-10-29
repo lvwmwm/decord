@@ -1,10 +1,10 @@
-// Module ID: 18263
-// Function ID: 18264
+// Module ID: 18497
+// Function ID: 18498
 // Name: NavigationTTIRegionDebugState
 // Dependencies: [2]
 // Exports: getNavigationTTIRegionDebugMeasurement, recordNavigationTTIRegionDebugMeasurement, subscribeNavigationTTIRegionDebugMeasurements
 
-// Module 18263 (NavigationTTIRegionDebugState)
+// Module 18497 (NavigationTTIRegionDebugState)
 import size from "module_2" /* 2 */;
 
 let set = new Set();
@@ -12,7 +12,7 @@ const map = new Map();
 let c2 = null;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/debug/NavigationTTIRegionDebugState.tsx");
 
-export const recordNavigationTTIRegionDebugMeasurement = function recordNavigationTTIRegionDebugMeasurement(traceId, arg1, activeTraceElapsedMs) {
+export function recordNavigationTTIRegionDebugMeasurement(traceId, arg1, activeTraceElapsedMs) {
   if (traceId !== c2) {
     c2 = traceId;
     map.clear();
@@ -22,8 +22,8 @@ export const recordNavigationTTIRegionDebugMeasurement = function recordNavigati
     let item10015Result = item10015();
     continue;
   }
-};
-export const getNavigationTTIRegionDebugMeasurement = function getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId) {
+}
+export function getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId) {
   let tmp = null;
   if (activeTraceId === c2) {
     let value = map.get(regionId);
@@ -33,10 +33,10 @@ export const getNavigationTTIRegionDebugMeasurement = function getNavigationTTIR
     tmp = value;
   }
   return tmp;
-};
-export const subscribeNavigationTTIRegionDebugMeasurements = function subscribeNavigationTTIRegionDebugMeasurements(arg0) {
+}
+export function subscribeNavigationTTIRegionDebugMeasurements(arg0) {
   let closure_0;
   set = arg0;
   set.add(arg0);
   return () => set.delete(closure_0);
-};
+}

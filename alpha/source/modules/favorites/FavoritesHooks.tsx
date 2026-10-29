@@ -1,21 +1,21 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 10789
+// Function ID: 10790
 // Name: FavoritesHooks
-// Dependencies: [5035, 1389, 4859, 4869, 1391, 10885, 558, 576, 504, 1988, 11, 1208, 4881, 2]
+// Dependencies: [5036, 1389, 4860, 4870, 1391, 10790, 558, 576, 504, 1989, 11, 1208, 4882, 2]
 // Exports: getFavoritesCategories, getFavoritesLimits
 
-// Module 10884 (FavoritesHooks)
+// Module 10789 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1988 */;
-import FavoritesConstants from "FavoritesConstants" /* 4869 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1989 */;
+import FavoritesConstants from "FavoritesConstants" /* 4870 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import UserStore from "UserStore" /* 1389 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10885);
+const FavoritesLimits = tmp(10790);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -55,7 +55,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavo
     if (isPremiumExactlyResult) {
       FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
     } else {
-      FREE_FAVORITE_LIMIT = tmp(10885).FREE_FAVORITE_LIMIT;
+      FREE_FAVORITE_LIMIT = tmp(10790).FREE_FAVORITE_LIMIT;
     }
     const obj2 = { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
     cResult[2] = stateFromStores;
@@ -334,7 +334,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
 });
 let result = size.fileFinishedImporting("modules/favorites/FavoritesHooks.tsx");
 
-export const getFavoritesLimits = function getFavoritesLimits() {
+export function getFavoritesLimits() {
   let FREE_FAVORITE_LIMIT;
   const obj = PremiumTypeUtilsDefault;
   const isPremiumExactlyResult = obj.isPremiumExactly(UserStore.getCurrentUser(), PremiumTypes.TIER_2);
@@ -344,12 +344,12 @@ export const getFavoritesLimits = function getFavoritesLimits() {
     FREE_FAVORITE_LIMIT = FavoritesLimits.FREE_FAVORITE_LIMIT;
   }
   return { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
-};
+}
 export const useFavoritesLimitUpsell = tmp2;
 export const useFavorites = tmp3;
 export const useFavorite = tmp4;
 export const useFavoritedChannelIds = tmp5;
-export const getFavoritesCategories = function getFavoritesCategories(favoriteChannels) {
+export function getFavoritesCategories(favoriteChannels) {
   let nickname;
   if (favoriteChannels === undefined) {
     const tmp2 = FavoriteStore;
@@ -391,6 +391,6 @@ export const getFavoritesCategories = function getFavoritesCategories(favoriteCh
     return num - num2;
   });
   return items;
-};
+}
 export const useIsFavoritesGuildSelected = tmp6;
 export const useFavoritesAwareChannel = tmp7;

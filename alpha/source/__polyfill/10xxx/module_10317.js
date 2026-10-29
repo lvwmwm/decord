@@ -1,106 +1,87 @@
 // Module ID: 10317
 // Function ID: 10318
-// Dependencies: [10318, 10320, 10321, 10322, 10323, 10324, 10325, 10245, 10252, 10254, 10326, 10327, 10291, 10285]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 98, 10301]
 
 // Module 10317
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10285 */;
-import _mod10291 from "module_10291" /* 10291 */;
-import _mod10318 from "module_10318" /* 10318 */;
-import _mod10320 from "module_10320" /* 10320 */;
-import _mod10321 from "module_10321" /* 10321 */;
-import _mod10322 from "module_10322" /* 10322 */;
-import _mod10323 from "module_10323" /* 10323 */;
-import _mod10324 from "module_10324" /* 10324 */;
-import _mod10325 from "module_10325" /* 10325 */;
-import _mod10326 from "module_10326" /* 10326 */;
-import _mod10327 from "module_10327" /* 10327 */;
-import { Chrono } from "module_10245" /* 10245 */;
+import _mod10301 from "module_10301" /* 10301 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-function createConfiguration(flag) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10318.default(), , , , ];
-  new module_10318.default();
-  items[1] = new module_10322.default();
-  new module_10322.default();
-  items[2] = new module_10327.default();
-  new module_10327.default();
-  items[3] = new module_10323.default();
-  new module_10323.default();
-  items[4] = new module_10324.default();
-  new module_10324.default();
-  items1 = [new module_10326.default(), , ];
-  new module_10326.default();
-  items1[1] = new module_10325.default();
-  new module_10325.default();
-  items1[2] = new module_10320.default();
-  new module_10320.default();
-  const result = includeCommonConfiguration(obj, flag);
-  const refiners = result.refiners;
-  result.refiners = refiners.filter((item) => !(item instanceof module_10291.default));
-  return result;
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+class ENUnlikelyFormatFilter {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENUnlikelyFormatFilter);
+    const obj = _getPrototypeOf(ENUnlikelyFormatFilter);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  const tmp = createConfiguration(false);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_10321.default();
-  unshift(_default);
-  return tmp;
 }
-const module_10318 = fn(_mod10318);
-const module_10320 = fn(_mod10320);
-const module_10321 = fn(_mod10321);
-const module_10322 = fn(_mod10322);
-const module_10323 = fn(_mod10323);
-const module_10324 = fn(_mod10324);
-const module_10325 = fn(_mod10325);
-const module_10326 = fn(_mod10326);
-const module_10327 = fn(_mod10327);
-const module_10291 = fn(_mod10291);
-const configuration = createConfiguration(false);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_10321.default();
-unshift(_default);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_10245").Chrono(createConfiguration(true));
-const Chrono_export = require("module_10245").Chrono;
+_inherits(ENUnlikelyFormatFilter, _mod10301.Filter);
+const entry = {
+  key: "isValid",
+  value: function isValid(text, text2) {
+    let closure_0 = text2;
+    const str = text2.text;
+    const str2 = str.trim();
+    const str3 = text.text;
+    if (str2 === str3.trim()) {
+      return true;
+    } else {
+      if ("may" === str2.toLowerCase()) {
+        const str4 = text.text;
+        const str5 = str4.substring(0, text2.index);
+        const str6 = str5.trim();
+        if (!str6.match(/\b(in)$/i)) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          return false;
+        }
+      }
+      const formatted = str2.toLowerCase();
+      const endsWithResult = formatted.endsWith("the second");
+      let flag2 = !endsWithResult;
+      if (endsWithResult) {
+        flag2 = false;
+        const str8 = text.text;
+        const str9 = str8.substring(text2.index + text2.text.length);
+        if (str9.trim().length > 0) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          flag2 = false;
+        }
+      }
+      return flag2;
+    }
+  }
+};
+const items = [entry];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(ENUnlikelyFormatFilter, items);

@@ -1,12 +1,12 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12817
+// Function ID: 12818
 // Name: ConjurePerfTraceFormat
-// Dependencies: [32, 10771, 12601, 2]
+// Dependencies: [32, 10846, 12818, 2]
 // Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
 
-// Module 12600 (ConjurePerfTraceFormat)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10771 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 12601 */;
+// Module 12817 (ConjurePerfTraceFormat)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10846 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 12818 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/Conjur
 
 export const PERF_CATEGORY_LABELS = { op: "Operation", model: "Model", tool: "Tool", setup: "Setup", worktree: "Git worktree", sandbox: "Sandbox", build: "Build", platform: "Platform", other: "Other" };
 export const PERF_STATUS_LABELS = { running: "Running", ok: "Done", error: "Failed" };
-export const formatDuration = function formatDuration(arg0) {
+export function formatDuration(arg0) {
   let combined;
   if (arg0 < 1000) {
     const _HermesInternal2 = HermesInternal;
@@ -95,8 +95,8 @@ export const formatDuration = function formatDuration(arg0) {
     combined = "" + result.toFixed(1) + "s";
   }
   return combined;
-};
-export const formatTokens = function formatTokens(arg0) {
+}
+export function formatTokens(arg0) {
   if (arg0 < 1000) {
     const _String = String;
     return String(arg0);
@@ -116,9 +116,9 @@ export const formatTokens = function formatTokens(arg0) {
     const _HermesInternal = HermesInternal;
     return "" + toFixedResult + "k";
   }
-};
+}
 export { formatPerfMs };
-export const formatSpanCount = function formatSpanCount(dropped) {
+export function formatSpanCount(dropped) {
   let str = arg1;
   if (arg1 === undefined) {
     str = "span";
@@ -128,17 +128,17 @@ export const formatSpanCount = function formatSpanCount(dropped) {
     str2 = "";
   }
   return "" + dropped + " " + str + str2;
-};
+}
 export { perfNodeDuration };
-export const perfSmallerLabel = function perfSmallerLabel(row) {
+export function perfSmallerLabel(row) {
   const count = row.count;
   let str = "s";
   if (1 === count) {
     str = "";
   }
   return "" + count + " " + "smaller span" + str;
-};
-export const perfTickLabel = function perfTickLabel(arg0) {
+}
+export function perfTickLabel(arg0) {
   let str = "0";
   if (0 !== arg0) {
     let combined;
@@ -155,8 +155,8 @@ export const perfTickLabel = function perfTickLabel(arg0) {
     str = combined;
   }
   return str;
-};
-export const perfNodeSections = function perfNodeSections(node) {
+}
+export function perfNodeSections(node) {
   let first;
   let tmp23;
   let items = [detail("Start", "+" + formatPerfMs(node.start)), detail("Duration", perfNodeDuration(node))];
@@ -245,8 +245,8 @@ export const perfNodeSections = function perfNodeSections(node) {
     })
   ];
   return items3;
-};
-export const perfCategoryTotal = function perfCategoryTotal(stats, item) {
+}
+export function perfCategoryTotal(stats, item) {
   let closure_0 = item;
   const categories = stats.categories;
   const found = categories.find((category) => category.category === item);
@@ -279,8 +279,8 @@ export const perfCategoryTotal = function perfCategoryTotal(stats, item) {
     }
   }
   return combined1;
-};
-export const perfModelSummary = function perfModelSummary(stats) {
+}
+export function perfModelSummary(stats) {
   const model = stats.model;
   let joined = null;
   if (0 !== model.calls) {
@@ -394,8 +394,8 @@ export const perfModelSummary = function perfModelSummary(stats) {
     joined = items.join(" \u00B7 ");
   }
   return joined;
-};
-export const perfTraceDuration = function perfTraceDuration(trace) {
+}
+export function perfTraceDuration(trace) {
   let str;
   const obj = ConjurePerfTraceLayout;
   const perfTraceRootResult = obj.perfTraceRoot(trace);
@@ -415,8 +415,8 @@ export const perfTraceDuration = function perfTraceDuration(trace) {
     }
   }
   return str;
-};
-export const perfTraceSummary = function perfTraceSummary(trace) {
+}
+export function perfTraceSummary(trace) {
   const formatClockTime = ConjureTimeFormat.formatClockTime;
   ConjureTimeFormat;
   const date = new Date(trace.started_at);
@@ -441,4 +441,4 @@ export const perfTraceSummary = function perfTraceSummary(trace) {
   items[2] = formatSpanAttrs(attrs);
   const found = items.filter((item) => "" !== item);
   return found.join(" \u00B7 ");
-};
+}

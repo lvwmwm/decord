@@ -1,22 +1,22 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18871
+// Function ID: 18872
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 6045, 21, 5004, 18638, 587, 558, 576, 8589, 5270, 1125, 5722, 4829, 7289, 504, 8705, 8165, 18639, 9806, 6944, 18640, 2]
+// Dependencies: [19, 17, 6049, 21, 5005, 18872, 587, 558, 576, 8611, 5271, 1125, 5724, 4830, 7313, 504, 8708, 8188, 18873, 9838, 6968, 18874, 2]
 
-// Module 18637 (RestrictedMessagePreviewList)
+// Module 18871 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8589 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18638 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 18640 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8611 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18872 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 18874 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6045 */;
+import MessageStore from "MessageStore" /* 6049 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Hidden
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(require("intl").t["VGf+K3"]) };
-      let Text = tmp(5270).Text;
+      let Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       const tmp14 = closure_6(Text, obj2);
       cResult[6] = tmp14;

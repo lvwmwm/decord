@@ -1,15 +1,15 @@
-// Module ID: 8352
-// Function ID: 8353
+// Module ID: 8374
+// Function ID: 8375
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1204, 1095, 683, 1385, 6024, 558, 2]
+// Dependencies: [32, 19, 17, 1204, 1095, 683, 1385, 6028, 558, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8352 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 8374 (enhanced_role_colors/EnhancedRoleColorUtils)
 import react_native from "react-native" /* 17 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1095 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6024 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
@@ -84,7 +84,7 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
 
 export { processColorStrings };
-export const processColorStringsArray = function processColorStringsArray(colorStrings) {
+export function processColorStringsArray(colorStrings) {
   if (null == colorStrings) {
     return [];
   } else {
@@ -93,8 +93,8 @@ export const processColorStringsArray = function processColorStringsArray(colorS
     processColorStrings(colorStrings);
     return items.filter(GlobalUtils.isNotNullish);
   }
-};
-export const useProcessColorStringsArray = function useProcessColorStringsArray(colorStrings) {
+}
+export function useProcessColorStringsArray(colorStrings) {
   let closure_0 = colorStrings;
   let primaryColor;
   const tmp = react;
@@ -125,12 +125,12 @@ export const useProcessColorStringsArray = function useProcessColorStringsArray(
     }
     return items;
   }, items);
-};
-export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMessageEligibleForEnhancedRoleColors(guildId1, id) {
+}
+export function isNativeMessageEligibleForEnhancedRoleColors(guildId1, id) {
   const obj = useHasEnhancedRoleColors;
   return obj.getHasEnhancedRoleColors(guildId1, id);
-};
-export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
+}
+export function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
   const tmp = useHasEnhancedRoleColorsDefault(guildId, id) && "username" === stateFromStores && processColorStringsArray.length > 1;
   return tmp;
-};
+}

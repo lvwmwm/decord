@@ -1,12 +1,12 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6867
+// Function ID: 6868
 // Name: ConjureUserExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isConjureUserEnabled
 
-// Module 6844 (ConjureUserExperiment)
+// Module 6867 (ConjureUserExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConjure
 const result = size.fileFinishedImporting("modules/conjure/experiments/ConjureUserExperiment.tsx");
 
 export const useIsConjureUserEnabled = tmp2;
-export const isConjureUserEnabled = function isConjureUserEnabled(location, arg1) {
+export function isConjureUserEnabled(location, arg1) {
   let obj = arg1;
   const _location = location.location;
   if (arg1 === undefined) {
@@ -44,4 +44,4 @@ export const isConjureUserEnabled = function isConjureUserEnabled(location, arg1
     autoTrackExposure = true;
   }
   return closure_2.getConfig({ location: _location }, { autoTrackExposure }).enabled;
-};
+}

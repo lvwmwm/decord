@@ -1,22 +1,22 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17953
+// Function ID: 17954
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 4907, 5035, 11222, 21, 9777, 17716, 18127, 18176, 504, 558, 576, 18248, 8879, 7131, 5633, 2]
+// Dependencies: [19, 17, 4908, 5036, 11276, 21, 9809, 17954, 18361, 18410, 504, 558, 576, 18482, 8882, 7155, 5634, 2]
 
-// Module 17715 (YouBarStackNavigator)
+// Module 17953 (YouBarStackNavigator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Navigator2 from "Navigator" /* 7131 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8879 */;
-import MainTabsConstants from "MainTabsConstants" /* 11222 */;
-import notifications_Notifications from "notifications/Notifications" /* 18127 */;
-import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 18248 */;
+import Navigator2 from "Navigator" /* 7155 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8882 */;
+import MainTabsConstants from "MainTabsConstants" /* 11276 */;
+import notifications_Notifications from "notifications/Notifications" /* 18361 */;
+import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 18482 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let unpackModuleId;
-const f131585 = () => guildId.getGuildId();
+const f133158 = () => guildId.getGuildId();
 function getGuildsComponent() {
   return require("guilds/Guilds").default;
 }
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const ref = react.useRef(undefined);
   const items = [SelectedGuildStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f131585);
+  const stateFromStores = obj2.useStateFromStores(items, f133158);
   const tmp6 = null == ref.current && null != stateFromStores;
   if (tmp6) {
     const obj3 = { guildId: stateFromStores, channelId };
@@ -132,7 +132,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj6 = { style: React3.absoluteFillObject, children: React4(LayerScope, obj7) };
           obj7 = { children: React4(closure_12.Navigator, obj8) };
           obj8 = { id: "tabs", screenOptions: tmp12, children: tmp31 };
-          LayerScope = tmp(5633).LayerScope;
+          LayerScope = tmp(5634).LayerScope;
           const tmp40 = React4(hasOwnProperty, obj6);
           cResult[16] = tmp12;
           cResult[17] = tmp31;
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp3 = accessibilityNativeStackOptions;
   let obj2 = current(accessibilityNativeStackOptions[10]);
   let items = [SelectedGuildStore];
-  const stateFromStores = obj2.useStateFromStores(items, f131585);
+  const stateFromStores = obj2.useStateFromStores(items, f133158);
   const tmp5 = null == ref.current && null != stateFromStores;
   if (tmp5) {
     let obj3 = { guildId: stateFromStores, channelId };

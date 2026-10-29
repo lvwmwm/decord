@@ -119,7 +119,7 @@ export default function stringifySafe(name) {
     }
   }
 };
-export const createStringifySafeWithLimits = function createStringifySafeWithLimits(maxDepth) {
+export function createStringifySafeWithLimits(maxDepth) {
   function replacer(arg0, _default) {
     let arr = closure_4;
     if (closure_4.length) {
@@ -250,4 +250,4 @@ export const createStringifySafeWithLimits = function createStringifySafeWithLim
       }
     }
   };
-};
+}

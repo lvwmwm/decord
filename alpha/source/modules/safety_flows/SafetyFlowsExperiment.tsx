@@ -1,12 +1,12 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19434
+// Function ID: 19435
 // Name: SafetyFlowsExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isEligibleForSafetyFlowsExperiment
 
-// Module 19199 (SafetyFlowsExperiment)
+// Module 19434 (SafetyFlowsExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
 
 export default tmp2;
-export const isEligibleForSafetyFlowsExperiment = function isEligibleForSafetyFlowsExperiment(location) {
+export function isEligibleForSafetyFlowsExperiment(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useIsEligibleForSafetyFlowsExperiment = tmp3;

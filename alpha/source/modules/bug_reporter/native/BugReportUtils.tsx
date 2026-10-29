@@ -1,10 +1,10 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14253
+// Function ID: 14254
 // Name: BugReportUtils
-// Dependencies: [5, 3, 1278, 8186, 1254, 2]
+// Dependencies: [5, 3, 1278, 8209, 1254, 2]
 // Exports: getAttachments
 
-// Module 14020 (BugReportUtils)
+// Module 14253 (BugReportUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let obj = function _getAttachments() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -137,6 +137,6 @@ const tmp2 = new LoggerDefault("BugReportUtils.tsx");
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("modules/bug_reporter/native/BugReportUtils.tsx");
 
-export const getAttachments = function getAttachments() {
+export function getAttachments() {
   return obj(...arguments);
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 18829
-// Function ID: 18830
+// Module ID: 19062
+// Function ID: 19063
 // Name: useCanSetVoiceChannelStatus
-// Dependencies: [4936, 1095, 4941, 558, 576, 504, 2]
+// Dependencies: [4937, 1095, 4942, 558, 576, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 18829 (useCanSetVoiceChannelStatus)
+// Module 19062 (useCanSetVoiceChannelStatus)
 import Constants from "Constants" /* 1095 */;
-import PermissionStore_mod from "PermissionStore" /* 4936 */;
+import PermissionStore_mod from "PermissionStore" /* 4937 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ const result = size.fileFinishedImporting("modules/calls/useCanSetVoiceChannelSt
 
 export default tmp2;
 export { _canSetVoiceChannelStatus };
-export const canSetVoiceChannelStatus = function canSetVoiceChannelStatus(arg0) {
+export function canSetVoiceChannelStatus(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -136,4 +136,4 @@ export const canSetVoiceChannelStatus = function canSetVoiceChannelStatus(arg0) 
     }
     return canResult;
   });
-};
+}

@@ -69,7 +69,7 @@ export const create = (arg0) => {
   }
   return tmp2;
 };
-export const useStore = function useStore(subscribe) {
+export function useStore(subscribe) {
   let closure_0 = subscribe;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -84,4 +84,4 @@ export const useStore = function useStore(subscribe) {
   const syncExternalStore = useSyncExternalStore(subscribe, callback, react.useCallback(() => closure_1(closure_0.getInitialState()), items1));
   const debugValue = react.useDebugValue(syncExternalStore);
   return syncExternalStore;
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 4874
-// Function ID: 4875
+// Module ID: 4875
+// Function ID: 4876
 // Name: GuildRecord
-// Dependencies: [4871, 1084, 1414, 2030, 11, 4875, 2]
+// Dependencies: [4872, 1084, 1415, 2031, 11, 4876, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
-// Module 4874 (GuildRecord)
+// Module 4875 (GuildRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4875 */;
-import PlainRecord from "PlainRecord" /* 4871 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4876 */;
+import PlainRecord from "PlainRecord" /* 4872 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("records/GuildRecord.tsx");
 export const GuildRecordTypeTag = "Guild";
 export const RESTRICTED_CONTENT_LEVELS = set;
 export const GUILD_DEFAULT_PROPERTY_VALUES = freezeResult;
-export const getGuildIconURL = function getGuildIconURL(id, size) {
+export function getGuildIconURL(id, size) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
@@ -48,8 +48,8 @@ export const getGuildIconURL = function getGuildIconURL(id, size) {
   const obj = AvatarUtilsDefault;
   const obj2 = { id: id.id, size, icon: id.icon, canAnimate: flag, lossless: flag2 };
   return obj.getGuildIconURL(obj2);
-};
-export const getGuildIconSource = function getGuildIconSource(arg0, size, hasItem) {
+}
+export function getGuildIconSource(arg0, size, hasItem) {
   let closure_0 = arg0;
   importDefault = size;
   let flag = hasItem;
@@ -62,12 +62,12 @@ export const getGuildIconSource = function getGuildIconSource(arg0, size, hasIte
     const obj2 = { id: closure_0.id, size, icon: closure_0.icon, canAnimate };
     return obj.getGuildIconSource(obj2);
   });
-};
-export const getGuildAcronym = function getGuildAcronym(guild) {
+}
+export function getGuildAcronym(guild) {
   const obj = StringUtils;
   return obj.getAcronym(guild.name);
-};
-export const isGuildOwner = function isGuildOwner(guild, currentUser) {
+}
+export function isGuildOwner(guild, currentUser) {
   let tmp = currentUser;
   if (typeof currentUser !== "string") {
     let id = null;
@@ -77,8 +77,8 @@ export const isGuildOwner = function isGuildOwner(guild, currentUser) {
     tmp = id;
   }
   return guild.ownerId === tmp;
-};
-export const isGuildOwnerWithRequiredMfaLevel = function isGuildOwnerWithRequiredMfaLevel(mfaLevel, mfaEnabled) {
+}
+export function isGuildOwnerWithRequiredMfaLevel(mfaLevel, mfaEnabled) {
   let tmp3 = !(!mfaEnabled.mfaEnabled && mfaLevel.mfaLevel === MFALevels.ELEVATED);
   const tmp = !mfaEnabled.mfaEnabled && mfaLevel.mfaLevel === MFALevels.ELEVATED;
   if (tmp3) {
@@ -93,15 +93,15 @@ export const isGuildOwnerWithRequiredMfaLevel = function isGuildOwnerWithRequire
     tmp3 = mfaLevel.ownerId === tmp4;
   }
   return tmp3;
-};
-export const isGuildLurker = function isGuildLurker(guild) {
+}
+export function isGuildLurker(guild) {
   return null == guild.joinedAt;
-};
-export const getGuildEveryoneRoleId = function getGuildEveryoneRoleId(id) {
+}
+export function getGuildEveryoneRoleId(id) {
   const obj = SnowflakeUtilsDefault;
   return obj.castGuildIdAsEveryoneGuildRoleId(id.id);
-};
-export const updateJoinedAt = function updateJoinedAt(guild, joinedAt) {
+}
+export function updateJoinedAt(guild, joinedAt) {
   let date = joinedAt;
   const tmp = _false;
   if (typeof joinedAt === "string") {
@@ -111,11 +111,11 @@ export const updateJoinedAt = function updateJoinedAt(guild, joinedAt) {
     date = new Date(joinedAt);
   }
   return tmp(guild, "joinedAt", date);
-};
-export const updateGameApplications = function updateGameApplications(arg0, arg1) {
+}
+export function updateGameApplications(arg0, arg1) {
   return _false(arg0, "gameApplicationIds", arg1);
-};
-export const isGuildNSFW = function isGuildNSFW(guild) {
+}
+export function isGuildNSFW(guild) {
   let tmp = null != guild;
   if (tmp) {
     let hasItem;
@@ -133,4 +133,4 @@ export const isGuildNSFW = function isGuildNSFW(guild) {
     tmp = hasItem;
   }
   return tmp;
-};
+}

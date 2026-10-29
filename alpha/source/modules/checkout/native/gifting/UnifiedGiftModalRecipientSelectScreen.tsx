@@ -1,16 +1,16 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10683
+// Function ID: 10684
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10651, 21, 5004, 587, 558, 576, 1502, 10652, 10618, 2]
+// Dependencies: [19, 17, 10684, 21, 5005, 587, 558, 576, 1503, 10685, 10651, 2]
 
-// Module 10650 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10683 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10618 */;
-import UserRowConstants from "UserRowConstants" /* 10651 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10651 */;
+import UserRowConstants from "UserRowConstants" /* 10684 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGif
   const obj = setRecipientUser(576);
   const cResult = obj.c(6);
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj2 = setRecipientUser(1502);
+  const obj2 = setRecipientUser(1503);
   navigation = obj2.useNavigation();
   const tmp4 = closure_6();
   if (cResult[0] === navigation) {
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGif
     cResult[5] = tmp10;
     tmp7 = tmp10;
   }
-  const tmp6 = jsx(navigation(10652), {
+  const tmp6 = jsx(navigation(10685), {
     onSelectUser(arg0) {
       setRecipientUser(arg0);
       navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL, undefined, { pop: true });
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGif
   tmp5 = tmp6;
 }) : (function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj = setRecipientUser(1502);
+  const obj = setRecipientUser(1503);
   importDefault = obj.useNavigation();
   return <View style={closure_6().container}>{null}</View>;
 });

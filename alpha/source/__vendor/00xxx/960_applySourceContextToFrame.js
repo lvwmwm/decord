@@ -11,7 +11,7 @@ let stacktrace;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const applySourceContextToFrame = function applySourceContextToFrame(filename, arg1, arg2, arg3) {
+export function applySourceContextToFrame(filename, arg1, arg2, arg3) {
   if (filename.filename === arg2) {
     if (filename.lineno) {
       if (arg1.length) {
@@ -21,7 +21,7 @@ export const applySourceContextToFrame = function applySourceContextToFrame(file
     }
   }
   return filename;
-};
+}
 export const contextLinesIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
   let obj = arg0;
   if (arg0 === undefined) {

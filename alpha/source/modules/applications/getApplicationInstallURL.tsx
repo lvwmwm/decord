@@ -1,17 +1,17 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12108
+// Function ID: 12109
 // Name: getApplicationInstallURL
 // Dependencies: [1084, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 12054 (getApplicationInstallURL)
+// Module 12108 (getApplicationInstallURL)
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
 let result = size.fileFinishedImporting("modules/applications/getApplicationInstallURL.tsx");
 
-export const getActivityLaunchURL = function getActivityLaunchURL(applicationId) {
+export function getActivityLaunchURL(applicationId) {
   let channelId;
   let customId;
   let linkId;
@@ -33,8 +33,8 @@ export const getActivityLaunchURL = function getActivityLaunchURL(applicationId)
     const result3 = searchParams.set("channel_id", channelId);
   }
   return str.toString();
-};
-export const getApplicationInstallURL = function getApplicationInstallURL(application) {
+}
+export function getApplicationInstallURL(application) {
   let customInstallUrl;
   let installParams;
   let integrationTypesConfig;
@@ -85,4 +85,4 @@ export const getApplicationInstallURL = function getApplicationInstallURL(applic
     const _HermesInternal = HermesInternal;
     return "" + location.protocol + "//" + location.host + Routes.OAUTH2_AUTHORIZE + "?" + str7.toString();
   }
-};
+}

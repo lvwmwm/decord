@@ -1,15 +1,15 @@
-// Module ID: 6886
-// Function ID: 6887
+// Module ID: 6910
+// Function ID: 6911
 // Name: GuildProfileBuilders
-// Dependencies: [6760, 4950, 6887, 1385, 6888, 2]
+// Dependencies: [6783, 4951, 6911, 1385, 6912, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 6886 (GuildProfileBuilders)
+// Module 6910 (GuildProfileBuilders)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import GuildProfileLimits from "GuildProfileLimits" /* 6887 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 6888 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import GuildProfileLimits from "GuildProfileLimits" /* 6911 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 6912 */;
 import size from "module_2" /* 2 */;
 
 let label;
@@ -124,7 +124,7 @@ let closure_5 = { label: "" };
 const result = size.fileFinishedImporting("modules/guild_profile/GuildProfileBuilders.tsx");
 
 export { buildGuildProfileFromServer };
-export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdateForServer(name) {
+export function buildGuildProfileUpdateForServer(name) {
   let obj = {};
   if (null != name.name) {
     obj.name = name.name;
@@ -198,14 +198,14 @@ export const buildGuildProfileUpdateForServer = function buildGuildProfileUpdate
     obj.badge_color_secondary = name.badgeColorSecondary;
   }
   return obj;
-};
-export const buildTopGamesFromServer = function buildTopGamesFromServer(top_games) {
+}
+export function buildTopGamesFromServer(top_games) {
   return top_games.reduce((acc, game_application_id) => {
     acc[game_application_id.game_application_id] = { level: game_application_id.activity_level, score: game_application_id.activity_score };
     return acc;
   }, {});
-};
-export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(approximate_presence_count) {
+}
+export function buildGuildProfileFromInvite(approximate_presence_count) {
   let description;
   let features;
   let guild;
@@ -248,4 +248,4 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
     tmp = tmp5;
   }
   return tmp;
-};
+}

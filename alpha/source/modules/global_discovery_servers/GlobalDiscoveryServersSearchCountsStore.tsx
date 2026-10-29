@@ -1,12 +1,12 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 15512
+// Function ID: 15513
 // Name: GlobalDiscoveryServersSearchCountsStore
-// Dependencies: [6409, 504, 584, 2]
+// Dependencies: [6433, 504, 584, 2]
 
-// Module 15277 (GlobalDiscoveryServersSearchCountsStore)
+// Module 15512 (GlobalDiscoveryServersSearchCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6409 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6433 */;
 import size from "module_2" /* 2 */;
 
 let set;

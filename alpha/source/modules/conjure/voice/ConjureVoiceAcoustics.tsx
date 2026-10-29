@@ -1,15 +1,15 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 16210
+// Function ID: 16211
 // Name: ConjureVoiceAcoustics
 // Dependencies: [2]
 // Exports: getRoomError, toSpatialAudioOverrides
 
-// Module 15974 (ConjureVoiceAcoustics)
+// Module 16210 (ConjureVoiceAcoustics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/voice/ConjureVoiceAcoustics.tsx");
 
-export const toSpatialAudioOverrides = function toSpatialAudioOverrides(acoustics) {
+export function toSpatialAudioOverrides(acoustics) {
   let air_absorption;
   let binaural;
   let distance_attenuation;
@@ -55,8 +55,8 @@ export const toSpatialAudioOverrides = function toSpatialAudioOverrides(acoustic
     tmp4 = obj13;
   }
   return obj2;
-};
-export const getRoomError = function getRoomError(reflections) {
+}
+export function getRoomError(reflections) {
   let max_corner;
   let tmp2;
   reflections = reflections.reflections;
@@ -94,4 +94,4 @@ export const getRoomError = function getRoomError(reflections) {
     tmp2 = null;
   }
   return tmp2;
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16466
+// Function ID: 16467
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 4878, 6736, 21, 5004, 558, 576, 6057, 1125, 5246, 6025, 1199, 5270, 6919, 12247, 6743, 2]
+// Dependencies: [32, 19, 17, 4879, 6759, 21, 5005, 558, 576, 6061, 1125, 5247, 6029, 1199, 5271, 6943, 12301, 6766, 2]
 
-// Module 16229 (GuildSelectComponentActionSheet)
+// Module 16466 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1199 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6057 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12247 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6061 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12301 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c9;
 let metroImportAll;
 let tmp5;
 const intl2 = tmp5(1125);
-const f126248 = (arg0, arg1) => {
+const f127798 = (arg0, arg1) => {
   guild = guild.getGuild(arg1);
   if (null != guild) {
     const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: null, label: null, guild };
@@ -37,7 +37,7 @@ const f126248 = (arg0, arg1) => {
   }
   return arg0;
 };
-const f126249 = (record) => {
+const f127799 = (record) => {
   record = record.record;
   const obj = { type: closure_1_0(guildIdentity[9]).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
   return obj;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
   let tmp6 = first(react.useState(""), 2);
   [tmp7, r10022] = tmp6;
   if (cResult[0] !== selectedGuild) {
-    const obj4 = { type: tmp(6057).SelectOptionType.GUILD, value: null, label: null, guild: selectedGuild };
+    const obj4 = { type: tmp(6061).SelectOptionType.GUILD, value: null, label: null, guild: selectedGuild };
     ({ id: obj3.value, name: obj3.label } = selectedGuild);
     cResult[0] = selectedGuild;
     cResult[1] = obj4;
@@ -110,12 +110,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -132,12 +132,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -154,12 +154,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -177,12 +177,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -199,12 +199,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -222,12 +222,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -245,12 +245,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -268,12 +268,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -290,12 +290,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -312,12 +312,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -335,12 +335,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -357,12 +357,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -378,12 +378,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
             const self2 = this;
             const reduce = flattenedGuildIds.reduce;
             const array = new Array();
-            reduced = reduce(f126248, array);
+            reduced = reduce(f127798, array);
           } else {
             const obj2 = { query };
             const obj = user(guildIdentity[17]);
             const queryGuildsResult = obj.queryGuilds(obj2);
-            reduced = queryGuildsResult.map(f126249);
+            reduced = queryGuildsResult.map(f127799);
           }
           return reduced;
         }
@@ -410,12 +410,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -432,12 +432,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -454,12 +454,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -476,12 +476,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
           const self2 = this;
           const reduce = flattenedGuildIds.reduce;
           const array = new Array();
-          reduced = reduce(f126248, array);
+          reduced = reduce(f127798, array);
         } else {
           const obj2 = { query };
           const obj = user(guildIdentity[17]);
           const queryGuildsResult = obj.queryGuilds(obj2);
-          reduced = queryGuildsResult.map(f126249);
+          reduced = queryGuildsResult.map(f127799);
         }
         return reduced;
       }
@@ -556,12 +556,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSelec
       const self2 = this;
       const reduce = flattenedGuildIds.reduce;
       const array = new Array();
-      reduced = reduce(f126248, array);
+      reduced = reduce(f127798, array);
     } else {
       let obj = require("AutocompleteUtils");
       const obj2 = { query };
       const queryGuildsResult = obj.queryGuilds(obj2);
-      reduced = queryGuildsResult.map(f126249);
+      reduced = queryGuildsResult.map(f127799);
     }
     return reduced;
   }, []);

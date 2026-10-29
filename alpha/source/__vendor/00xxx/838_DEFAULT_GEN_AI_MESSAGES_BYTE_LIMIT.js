@@ -164,7 +164,7 @@ let c8 = "[Filtered]";
 let closure_9 = ["image_url", "data", "content", "b64_json", "result", "uri"];
 
 export const DEFAULT_GEN_AI_MESSAGES_BYTE_LIMIT = 20000;
-export const truncateGenAiMessages = function truncateGenAiMessages(filteredMessages) {
+export function truncateGenAiMessages(filteredMessages) {
   let tmp11;
   let tmp15;
   let tmp23;
@@ -222,7 +222,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
       }
     }
   }
-  const f87361 = (content) => {
+  const f88368 = (content) => {
     let parts;
     let tmp2;
     const tmp = content && typeof content === "object";
@@ -236,7 +236,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
         isArray = Array.isArray(content.content);
       }
       if (isArray) {
-        const obj2 = { content: content.map(f87361) };
+        const obj2 = { content: content.map(f88368) };
         const merged = Object.assign(content);
         content = content.content;
         tmp9 = obj2;
@@ -267,7 +267,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
         if (tmp9 == null) {
           tmp19 = content;
         }
-        const obj3 = { parts: parts.map(f87361) };
+        const obj3 = { parts: parts.map(f88368) };
         const merged2 = Object.assign(tmp19);
         parts = content.parts;
         tmp18 = obj3;
@@ -294,7 +294,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
     tmp2 = filteredMessages;
     if (0 !== filteredMessages.length) {
       let items = [filteredMessages[filteredMessages.length - 1]];
-      let mapped = items.map(f87361);
+      let mapped = items.map(f88368);
       const first = mapped[0];
       if (typeof jsonBytes === "function") {
         const _JSON = JSON;
@@ -404,7 +404,7 @@ export const truncateGenAiMessages = function truncateGenAiMessages(filteredMess
     }
   }
   return tmp2;
-};
-export const truncateGenAiStringInput = function truncateGenAiStringInput(filteredMessages) {
+}
+export function truncateGenAiStringInput(filteredMessages) {
   return truncateTextByBytes(filteredMessages, c0);
-};
+}

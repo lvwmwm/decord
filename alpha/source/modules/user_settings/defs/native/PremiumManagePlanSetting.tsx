@@ -1,13 +1,13 @@
-// Module ID: 16546
-// Function ID: 16547
+// Module ID: 16784
+// Function ID: 16785
 // Name: PremiumManagePlanSetting
-// Dependencies: [8365, 1084, 11248, 1125, 16547, 2]
+// Dependencies: [8387, 1084, 11302, 1125, 16785, 2]
 
-// Module 16546 (PremiumManagePlanSetting)
+// Module 16784 (PremiumManagePlanSetting)
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

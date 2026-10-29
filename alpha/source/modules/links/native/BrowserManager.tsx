@@ -1,16 +1,16 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5731
+// Function ID: 5732
 // Name: BrowserManager
-// Dependencies: [5, 17, 1381, 5730, 5731, 570, 558, 576, 1104, 5696, 1385, 2]
+// Dependencies: [5, 17, 1381, 5732, 5733, 570, 558, 576, 1104, 5698, 1385, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen
 
-// Module 5729 (BrowserManager)
+// Module 5731 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import react_native2 from "react-native" /* 5730 */;
-import react_nativeDefault2 from "react-native" /* 5731 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import react_native2 from "react-native" /* 5732 */;
+import react_nativeDefault2 from "react-native" /* 5733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import module_570 from "module_570" /* 570 */;
@@ -37,7 +37,7 @@ let obj = function _browserManagerClearWebsiteData() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _browserManagerClearWebsiteData() {
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;
@@ -178,18 +178,18 @@ export const useBrowserManagerSupportsInAppBrowser = tmp4;
 export const useBrowserManagerSelectedBrowser = tmp5;
 export { getBrowserManagerSelectedBrowser };
 export const useIsInAppBrowserOpen = tmp6;
-export const getIsInAppBrowserOpen = function getIsInAppBrowserOpen() {
+export function getIsInAppBrowserOpen() {
   return closure_6.getState().isInAppBrowserOpen;
-};
-export const subscribeToIsInAppBrowserOpen = function subscribeToIsInAppBrowserOpen(arg0) {
+}
+export function subscribeToIsInAppBrowserOpen(arg0) {
   let closure_0 = arg0;
   return closure_6.subscribe((isInAppBrowserOpen, isInAppBrowserOpen2) => {
     if (isInAppBrowserOpen.isInAppBrowserOpen !== isInAppBrowserOpen2.isInAppBrowserOpen) {
       closure_0(isInAppBrowserOpen.isInAppBrowserOpen, isInAppBrowserOpen2.isInAppBrowserOpen);
     }
   });
-};
-export const browserManagerOpenUrl = function browserManagerOpenUrl(tryHandleUniversalLink, CHROME) {
+}
+export function browserManagerOpenUrl(tryHandleUniversalLink, CHROME) {
   let selectedBrowser = CHROME;
   if (CHROME === undefined) {
     selectedBrowser = state.getState().selectedBrowser;
@@ -260,8 +260,8 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(tryHandleUni
   const obj6 = LinkingDefault;
   obj6.performURLNavigation(tryHandleUniversalLink);
   return Promise.resolve();
-};
-export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {
+}
+export function browserManagerSelectBrowser(selectedBrowser) {
   obj = PlatformUtils;
   if (obj.isAndroid()) {
     const obj3 = {};
@@ -278,19 +278,19 @@ export const browserManagerSelectBrowser = function browserManagerSelectBrowser(
   }
   const obj5 = { selectedBrowser };
   closure_6.setState(obj5);
-};
-export const browserManagerCloseBrowser = function browserManagerCloseBrowser() {
+}
+export function browserManagerCloseBrowser() {
   closure_6.setState({ isInAppBrowserOpen: false });
   obj = PlatformUtils;
   if (obj.isIOS()) {
     const obj2 = react_nativeDefault2;
     obj2.closeBrowser();
   }
-};
-export const browserManagerClearWebsiteData = function browserManagerClearWebsiteData() {
+}
+export function browserManagerClearWebsiteData() {
   return obj(...arguments);
-};
-export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(url, appId, arg2, impressionToken) {
+}
+export function openPlayStoreInlineInstall(url, appId, arg2, impressionToken) {
   let openPlayStoreInlineResult;
   let closure_0 = arg2;
   let closure_1 = Date.now();
@@ -327,4 +327,4 @@ export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(ur
     }
   }
   return openPlayStoreInlineResult;
-};
+}

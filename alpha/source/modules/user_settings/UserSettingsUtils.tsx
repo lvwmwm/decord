@@ -40,7 +40,7 @@ let obj = { [PRELOADED_USER_SETTINGS]: preloaded_user_settings.PreloadedUserSett
 ({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = UserSettingsTypes);
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 
-export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
+export function b64ToProtoWithType(type, proto) {
   let tmp = null;
   if (null != proto) {
     let tmp4 = null;
@@ -50,21 +50,21 @@ export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
     tmp = tmp4;
   }
   return tmp;
-};
+}
 export { b64ToProto };
-export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
+export function b64ToPreloadedUserSettingsProto(settings) {
   return b64ToProto(preloaded_user_settings.PreloadedUserSettings, settings);
-};
-export const protoToB64WithType = function protoToB64WithType(arg0, arg1) {
+}
+export function protoToB64WithType(arg0, arg1) {
   const tmp = obj[arg0];
   obj = ProtoUtils;
   return obj.protoToB64(tmp, arg1);
-};
-export const protoToB64 = function protoToB64(arg0, arg1) {
+}
+export function protoToB64(arg0, arg1) {
   obj = ProtoUtils;
   return obj.protoToB64(arg0, arg1);
-};
-export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
+}
+export function mergeTopLevelFields(ProtoClass, proto, proto2) {
   obj = {};
   const merged = Object.assign(proto);
   for (const key10007 in proto2) {
@@ -73,8 +73,8 @@ export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, prot
   }
   ProtoClass.mergePartial(obj, proto2);
   return obj;
-};
-export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, arg1, fn) {
+}
+export function mutateUserGuildSettings(guilds, arg1, fn) {
   if (null == guilds.guilds) {
     const AllGuildSettings = preloaded_user_settings.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
@@ -91,8 +91,8 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, 
     guilds2[tmp3] = GuildSettings.create();
   }
   return fn(guilds.guilds[tmp3]);
-};
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, f94459) {
+}
+export function mutateUserGuildSettingsInternal(guilds, arg1, f95469) {
   let tmp = arg1;
   const tmp2 = null != arg1 && "null" !== tmp;
   if (!tmp2) {
@@ -103,9 +103,9 @@ export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsI
     const GuildSettings = preloaded_user_settings.GuildSettings;
     guilds[tmp] = GuildSettings.create();
   }
-  return f94459(guilds.guilds[tmp]);
-};
-export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, fn) {
+  return f95469(guilds.guilds[tmp]);
+}
+export function mutateUserChannelSettings(guilds, arg1, id, fn) {
   if (null == guilds.guilds) {
     const AllGuildSettings = preloaded_user_settings.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
@@ -127,16 +127,16 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
     channels[id] = ChannelSettings.create();
   }
   return fn(guilds.guilds[tmp3].channels[id]);
-};
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, f94459) {
+}
+export function mutateUserChannelSettingsInternal(channels, arg1, f95469) {
   if (!(arg1 in channels.channels)) {
     channels = channels.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
     channels[arg1] = ChannelSettings.create();
   }
-  return f94459(channels.channels[arg1]);
-};
-export const runMigrations = function runMigrations(proto, arg1) {
+  return f95469(channels.channels[arg1]);
+}
+export function runMigrations(proto, arg1) {
   if (null == proto.versions) {
     const Versions = user_settings_shared.Versions;
     proto.versions = Versions.create();
@@ -186,8 +186,8 @@ export const runMigrations = function runMigrations(proto, arg1) {
     continue;
   }
   return { proto, isDirty: flag, cleanupFuncs: items };
-};
-export const serializeUsageHistory = function serializeUsageHistory(usageHistory, arg1) {
+}
+export function serializeUsageHistory(usageHistory, arg1) {
   let first;
   let length;
   let recentUses;
@@ -228,4 +228,4 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
     continue;
   }
   return obj2;
-};
+}

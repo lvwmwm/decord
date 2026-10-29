@@ -1,16 +1,16 @@
-// Module ID: 8135
-// Function ID: 8136
+// Module ID: 8158
+// Function ID: 8159
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1084, 7453, 1101, 1294, 584, 7932, 7918, 7459, 2]
+// Dependencies: [5, 502, 1084, 7476, 1101, 1294, 584, 7955, 7941, 7482, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8135 (ManualReviewActionCreators)
+// Module 8158 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import Constants2 from "Constants" /* 7453 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
+import Constants2 from "Constants" /* 7476 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ obj = function _handleManualReviewCta() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -132,7 +132,7 @@ obj = function _handleManualReviewCta() {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (1 === c4) {
           c3 = 0;
@@ -187,11 +187,11 @@ export const ManualReviewStatus = obj;
 export function invalidateManualReviewCache() {
   c12 = null;
 }
-export const invalidateAgeVerificationCaches = function invalidateAgeVerificationCaches() {
+export function invalidateAgeVerificationCaches() {
   c12 = null;
   obj = DispatcherDefault;
   obj.dispatch({ type: "AGE_VERIFICATION_METHODS_V2_INVALIDATE" });
-};
-export const handleManualReviewCta = function handleManualReviewCta() {
+}
+export function handleManualReviewCta() {
   return obj(...arguments);
-};
+}

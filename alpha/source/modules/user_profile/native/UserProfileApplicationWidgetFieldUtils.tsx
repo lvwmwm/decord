@@ -1,21 +1,21 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11977
+// Function ID: 11978
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5004, 587, 1125, 558, 576, 11924, 11925, 5270, 5705, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 1125, 558, 576, 11978, 11979, 5271, 5707, 2]
 // Exports: formatDurationNarrow
 
-// Module 11923 (UserProfileApplicationWidgetFieldUtils)
+// Module 11977 (UserProfileApplicationWidgetFieldUtils)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 11924 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 11925 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 11978 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 11979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FieldText(ar
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
-export const formatDurationNarrow = function formatDurationNarrow(arg0) {
+export function formatDurationNarrow(arg0) {
   let num = 0;
   if (Number.isFinite(arg0)) {
     const _Math = Math;
@@ -194,5 +194,5 @@ export const formatDurationNarrow = function formatDurationNarrow(arg0) {
     push3(intl3.formatToPlainString(intl4.t.pyvjRp, obj3));
   }
   return items.join(" ");
-};
+}
 export const FieldText = tmp4;

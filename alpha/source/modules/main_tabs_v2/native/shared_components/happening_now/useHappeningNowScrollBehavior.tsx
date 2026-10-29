@@ -1,10 +1,10 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 18009
+// Function ID: 18010
 // Name: useHappeningNowScrollBehavior
 // Dependencies: [32, 19, 558, 576, 2]
 // Exports: useHappeningNowScrollSnapping
 
-// Module 17771 (useHappeningNowScrollBehavior)
+// Module 18009 (useHappeningNowScrollBehavior)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -65,7 +65,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHappening
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
 
 export default tmp2;
-export const useHappeningNowScrollSnapping = function useHappeningNowScrollSnapping(listRef) {
+export function useHappeningNowScrollSnapping(listRef) {
   const current = listRef.current;
   let num;
   if (current != null) {
@@ -102,4 +102,4 @@ export const useHappeningNowScrollSnapping = function useHappeningNowScrollSnapp
     } while (num2 < num);
   }
   return items;
-};
+}

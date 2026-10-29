@@ -1,16 +1,16 @@
-// Module ID: 14734
-// Function ID: 14735
+// Module ID: 14969
+// Function ID: 14970
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1389, 6860, 21, 1278, 558, 576, 2050, 504, 9611, 7372, 11090, 7696, 4820, 9487, 2]
+// Dependencies: [19, 1389, 6883, 21, 1278, 558, 576, 2051, 504, 9643, 7395, 11144, 7719, 4821, 9518, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 14734 (OrbCheckoutModalContext)
+// Module 14969 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import SKUStore from "SKUStore" /* 6860 */;
+import SKUStore from "SKUStore" /* 6883 */;
 import v1_mod from "v1" /* 1278 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -446,6 +446,6 @@ let result1 = size.fileFinishedImporting("modules/virtual_currency/checkout/OrbC
 
 export const useOrbCheckoutModalContextProvider = tmp3;
 export const OrbCheckoutModalContextProvider = tmp4;
-export const useOrbCheckoutModalContext = function useOrbCheckoutModalContext() {
+export function useOrbCheckoutModalContext() {
   return _false(redux);
-};
+}

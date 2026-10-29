@@ -9,7 +9,7 @@ import GEN_AI_CONVERSATION_ID_ATTRIBUTE from "GEN_AI_CONVERSATION_ID_ATTRIBUTE" 
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const convertSpanJsonToTransactionEvent = function convertSpanJsonToTransactionEvent(beforeSendSpanResult) {
+export function convertSpanJsonToTransactionEvent(beforeSendSpanResult) {
   let obj3;
   let obj6;
   const obj2 = { trace_id: beforeSendSpanResult.trace_id, span_id: beforeSendSpanResult.span_id, parent_span_id: beforeSendSpanResult.parent_span_id, op: beforeSendSpanResult.op, status: beforeSendSpanResult.status, origin: beforeSendSpanResult.origin, data: obj3 };
@@ -32,8 +32,8 @@ export const convertSpanJsonToTransactionEvent = function convertSpanJsonToTrans
   obj6 = { trace: obj2 };
   const merged2 = Object.assign(exclusive_time);
   return obj;
-};
-export const convertTransactionEventToSpanJson = function convertTransactionEventToSpanJson(contexts) {
+}
+export function convertTransactionEventToSpanJson(contexts) {
   let data;
   let num;
   let op;
@@ -78,4 +78,4 @@ export const convertTransactionEventToSpanJson = function convertTransactionEven
     tmp4 = data[GEN_AI_CONVERSATION_ID_ATTRIBUTE.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME];
   }
   return obj2;
-};
+}

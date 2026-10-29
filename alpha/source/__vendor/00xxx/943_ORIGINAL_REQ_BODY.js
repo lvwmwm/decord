@@ -18,7 +18,7 @@ const forResult = Symbol.for("sentry__originalRequestBody");
 let c3 = forResult;
 
 export const ORIGINAL_REQ_BODY = forResult;
-export const getBodyString = function getBodyString(fetchRequestArgBody, arg1) {
+export function getBodyString(fetchRequestArgBody, arg1) {
   let debug = arg1;
   if (arg1 === undefined) {
     debug = _mod693.debug;
@@ -56,8 +56,8 @@ export const getBodyString = function getBodyString(fetchRequestArgBody, arg1) {
     const items5 = [undefined, "BODY_PARSE_ERROR"];
     return items5;
   }
-};
-export const getFetchRequestArgBody = function getFetchRequestArgBody(input) {
+}
+export function getFetchRequestArgBody(input) {
   let items = input;
   if (input === undefined) {
     items = [];
@@ -81,8 +81,8 @@ export const getFetchRequestArgBody = function getFetchRequestArgBody(input) {
       return tmp4;
     }
   }
-};
-export const parseXhrResponseHeaders = function parseXhrResponseHeaders(xhr) {
+}
+export function parseXhrResponseHeaders(xhr) {
   try {
     let reduced;
     const str = xhr.getAllResponseHeaders();
@@ -112,5 +112,5 @@ export const parseXhrResponseHeaders = function parseXhrResponseHeaders(xhr) {
     }
     return {};
   }
-};
+}
 export { serializeFormData };

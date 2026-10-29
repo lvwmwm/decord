@@ -1,17 +1,17 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7407
+// Function ID: 7408
 // Name: safeTransitionTo
-// Dependencies: [5, 4878, 1084, 5642, 7385, 1111, 7386, 5945, 1125, 7420, 2671, 7465, 7471, 2]
+// Dependencies: [5, 4879, 1084, 5643, 7408, 1111, 7409, 5947, 1125, 7443, 2672, 7488, 7494, 2]
 // Exports: default
 
-// Module 7384 (safeTransitionTo)
+// Module 7407 (safeTransitionTo)
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import LinkUtils from "LinkUtils" /* 5642 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7385 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7386 */;
+import LinkUtils from "LinkUtils" /* 5643 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7408 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "paths" };
+          closure_2 = { guildId: "r" };
         }
         c5 = 2;
         c6 = 1;

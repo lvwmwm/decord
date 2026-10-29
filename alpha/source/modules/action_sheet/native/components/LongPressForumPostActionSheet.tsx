@@ -1,37 +1,37 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11093
+// Function ID: 11094
 // Name: LongPressForumPostActionSheet
-// Dependencies: [19, 4937, 4938, 7440, 502, 4878, 6806, 1084, 4863, 21, 10897, 10908, 1125, 10909, 10911, 7099, 7242, 5712, 8319, 9173, 5727, 10692, 11040, 8603, 10154, 10122, 11, 7314, 7524, 10127, 11042, 5246, 11044, 1999, 5714, 9815, 10913, 11046, 10915, 11049, 10900, 5944, 5725, 7601, 1199, 10446, 7321, 5698, 558, 576, 504, 7438, 7406, 9759, 4832, 5640, 11051, 6919, 1627, 11052, 7330, 7334, 2]
+// Dependencies: [19, 4938, 4939, 7463, 502, 4879, 6829, 1084, 4864, 21, 10802, 10943, 1125, 10944, 10946, 7123, 7266, 5714, 8341, 9176, 5729, 10725, 11094, 8625, 10187, 10155, 11, 7338, 7547, 10160, 11096, 5247, 11098, 2000, 5716, 9847, 10948, 11100, 10950, 11103, 10935, 5946, 5727, 7624, 1199, 10479, 7345, 5700, 558, 576, 504, 7461, 7429, 9791, 4833, 5641, 11105, 6943, 1628, 11106, 7354, 7358, 2]
 
-// Module 11039 (LongPressForumPostActionSheet)
+// Module 11093 (LongPressForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import intl16 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useChannelNameDefault from "useChannelName" /* 5640 */;
-import ToastUtils from "ToastUtils" /* 5698 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7242 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7314 */;
-import ClipboardUtils from "ClipboardUtils" /* 7321 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7330 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8319 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9815 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10122 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10127 */;
-import markChannelUnreadDefault from "markChannelUnread" /* 10911 */;
-import threadActionSheets from "threadActionSheets" /* 11049 */;
-import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 11051 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useChannelNameDefault from "useChannelName" /* 5641 */;
+import ToastUtils from "ToastUtils" /* 5700 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7266 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+import ClipboardUtils from "ClipboardUtils" /* 7345 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7354 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8341 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9847 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10155 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10160 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 10946 */;
+import threadActionSheets from "threadActionSheets" /* 11103 */;
+import useFavoritesGuildChannelActionsDefault from "useFavoritesGuildChannelActions" /* 11105 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4937 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4938 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7440 */;
+import LurkingStore from "LurkingStore" /* 4938 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7463 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ let c9;
 let closure_12;
 let tmp17;
 let unpackModuleId;
-const GuildIconDefault = tmp17(6919);
+const GuildIconDefault = tmp17(6943);
 function getActionSheetButtons(thread) {
   let archived;
   let canMarkUnread;
@@ -238,7 +238,7 @@ function getActionSheetButtons(thread) {
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
                       const obj2 = { thread, parentChannel, canManageThread };
-                      obj.openLazy(asyncRequire(11044, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
+                      obj.openLazy(asyncRequire(11098, dependencyMap.paths), "ForumPostTagsActionSheet", obj2);
                     }
           };
           intl9 = tmp5(tmp2[12]).intl;
@@ -283,7 +283,7 @@ function getActionSheetButtons(thread) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { guildId: thread.getGuildId(), channelId: thread.id };
-            const tmp2 = asyncRequire(11046, dependencyMap.paths);
+            const tmp2 = asyncRequire(11100, dependencyMap.paths);
             const combined = "muteSettings" + thread.id;
             openLazy(tmp2, combined, obj);
           };
@@ -626,7 +626,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   }
   const tmpResult15 = tmp(504);
   const stateFromStores3 = tmpResult15.useStateFromStores(tmp18, tmp19);
-  const tmpResult16 = tmp(10911);
+  const tmpResult16 = tmp(10946);
   const canMarkChannelUnread = tmpResult16.useCanMarkChannelUnread(thread);
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -662,15 +662,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   }
   const tmpResult17 = tmp(504);
   const stateFromStores4 = tmpResult17.useStateFromStores(tmp22, tmp23);
-  const tmpResult18 = tmp(7438);
+  const tmpResult18 = tmp(7461);
   const firstMessage = tmpResult18.useFirstForumPostMessage(thread).firstMessage;
-  const tmpResult19 = tmp(7406);
+  const tmpResult19 = tmp(7429);
   const isThreadModerator = tmpResult19.useIsThreadModerator(parentChannel);
-  const tmpResult20 = tmp(7406);
+  const tmpResult20 = tmp(7429);
   const canManageThread = tmpResult20.useCanManageThread(thread);
-  const tmpResult21 = tmp(7406);
+  const tmpResult21 = tmp(7429);
   const canUnarchiveThread = tmpResult21.useCanUnarchiveThread(thread);
-  const tmpResult22 = tmp(9759);
+  const tmpResult22 = tmp(9791);
   const existingPin = tmpResult22.useExistingPin(thread);
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -714,7 +714,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   }
   const tmpResult23 = tmp(504);
   const stateFromStores5 = tmpResult23.useStateFromStores(tmp30, tmp31);
-  const DeveloperMode = tmp(4832).DeveloperMode;
+  const DeveloperMode = tmp(4833).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -761,8 +761,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
       }
     }
   }
-  const tmp37 = onClose(5640)(thread);
-  const tmp38 = onClose(11051)(thread);
+  const tmp37 = onClose(5641)(thread);
+  const tmp38 = onClose(11105)(thread);
   if (null != stateFromStores) {
     class O {
       constructor() {
@@ -871,7 +871,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     }
     tmp49[1] = tmp43;
     tmp49[2] = tmp45;
-    const ActionSheet = tmp(7334).ActionSheet;
+    const ActionSheet = tmp(7358).ActionSheet;
     tmp49[3] = arr8.map(tmp46);
     const tmp50 = <ActionSheet {...tmp49} />;
     cResult[26] = canManageThread;
@@ -894,7 +894,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     cResult[43] = thread;
     cResult[44] = tmp50;
   }
-  tmp45 = jsx(tmp(11052).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
+  tmp45 = jsx(tmp(11106).ActionSheetIconHeader, { title: tmp37, icon: tmp39 });
   cResult[46] = tmp37;
   cResult[47] = tmp39;
   cResult[48] = tmp45;
@@ -922,7 +922,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const items3 = [ReadStateStore];
   const obj4 = thread(504);
   const stateFromStores3 = obj4.useStateFromStores(items3, () => ReadStateStore.hasUnreadOrMentions(thread.id));
-  const obj5 = thread(10911);
+  const obj5 = thread(10946);
   const canMarkChannelUnread = obj5.useCanMarkChannelUnread(thread);
   const items4 = [LurkingStore];
   const obj6 = thread(504);
@@ -930,15 +930,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     const isLurkingResult = null != closure_2 && LurkingStore.isLurking(tmp);
     return isLurkingResult;
   });
-  const obj7 = thread(7438);
+  const obj7 = thread(7461);
   const firstMessage = obj7.useFirstForumPostMessage(thread).firstMessage;
-  const obj8 = thread(7406);
+  const obj8 = thread(7429);
   const isThreadModerator = obj8.useIsThreadModerator(parentChannel);
-  const obj9 = thread(7406);
+  const obj9 = thread(7429);
   const canManageThread = obj9.useCanManageThread(thread);
-  const obj10 = thread(7406);
+  const obj10 = thread(7429);
   const canUnarchiveThread = obj10.useCanUnarchiveThread(thread);
-  const obj11 = thread(9759);
+  const obj11 = thread(9791);
   const existingPin = obj11.useExistingPin(thread);
   const items5 = [ThreadMessageStore];
   const obj12 = thread(504);
@@ -949,7 +949,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     }
     return num;
   });
-  const DeveloperMode = thread(4832).DeveloperMode;
+  const DeveloperMode = thread(4833).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   const items6 = [AuthenticationStore];
   let id;
@@ -962,7 +962,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const tmp19 = useFavoritesGuildChannelActionsDefault(thread);
   if (null != stateFromStores) {
     GuildIconDefault;
-    tmp21 = <tmp17Result guild={stateFromStores} size={tmp(6919).GuildIconSizes.LARGE} />;
+    tmp21 = <tmp17Result guild={stateFromStores} size={tmp(6943).GuildIconSizes.LARGE} />;
     tmp20 = jsx;
   } else {
     tmp20 = jsx;
@@ -973,7 +973,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
   const obj17 = {
     showGradient: true,
     startExpanded: tmpResult.isMetaQuest(),
-    header: tmp20(tmp(11052).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
+    header: tmp20(tmp(11106).ActionSheetIconHeader, { title: tmp18, icon: tmp21 }),
     children: arr8.map((buttons) => {
       buttons = buttons.buttons;
       const sectionKey = buttons.sectionKey;
@@ -1009,8 +1009,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostLon
     })
   };
   arr8 = getActionSheetButtons(obj16);
-  const ActionSheet = tmp(7334).ActionSheet;
-  tmpResult = tmp(1627);
+  const ActionSheet = tmp(7358).ActionSheet;
+  tmpResult = tmp(1628);
   return tmp20(ActionSheet, obj17);
 });
 let result = size.fileFinishedImporting("modules/action_sheet/native/components/LongPressForumPostActionSheet.tsx");

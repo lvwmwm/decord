@@ -39,7 +39,7 @@ export default function createAnimatedComponent(displayName) {
       items[0] = style1;
       items[1] = style;
       obj = {};
-      tmp5 = useMemo(() => { /* body not rendered: F142379 */ }, items);
+      tmp5 = useMemo(function() { /* body not rendered: F143927 */ }, items);
       merged = Object.assign(first);
       merged1 = Object.assign(passthroughAnimatedPropExplicitValues);
       obj.style = tmp5;
@@ -50,7 +50,7 @@ export default function createAnimatedComponent(displayName) {
   AnimatedComponent.displayName = "Animated(" + tmp + ")";
   return AnimatedComponent;
 };
-export const unstable_createAnimatedComponentWithAllowlist = function unstable_createAnimatedComponentWithAllowlist(displayName, arg1) {
+export function unstable_createAnimatedComponentWithAllowlist(displayName, arg1) {
   let closure_1;
   importDefault = displayName;
   dependencyMap = createAnimatedPropsHookDefault(arg1);
@@ -73,7 +73,7 @@ export const unstable_createAnimatedComponentWithAllowlist = function unstable_c
       items[0] = style1;
       items[1] = style;
       obj = {};
-      tmp5 = useMemo(() => { /* body not rendered: F142379 */ }, items);
+      tmp5 = useMemo(function() { /* body not rendered: F143927 */ }, items);
       merged = Object.assign(first);
       merged1 = Object.assign(passthroughAnimatedPropExplicitValues);
       obj.style = tmp5;
@@ -83,4 +83,4 @@ export const unstable_createAnimatedComponentWithAllowlist = function unstable_c
   }
   AnimatedComponent.displayName = "Animated(" + tmp + ")";
   return AnimatedComponent;
-};
+}

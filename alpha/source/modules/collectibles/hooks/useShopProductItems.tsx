@@ -1,10 +1,10 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8700
+// Function ID: 8701
 // Name: useShopProductItems
-// Dependencies: [19, 1992, 558, 576, 2]
+// Dependencies: [19, 1993, 558, 576, 2]
 // Exports: getProductItems, getPurchasedItem
 
-// Module 8697 (useShopProductItems)
+// Module 8700 (useShopProductItems)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -119,7 +119,7 @@ let result = size.fileFinishedImporting("modules/collectibles/hooks/useShopProdu
 
 export { ItemsSortingHat };
 export { getProductItems };
-export const getPurchasedItem = function getPurchasedItem(arg0, firstAvatarDecoration) {
+export function getPurchasedItem(arg0, firstAvatarDecoration) {
   let tmp;
   if (null != arg0) {
     const self = this;
@@ -134,5 +134,5 @@ export const getPurchasedItem = function getPurchasedItem(arg0, firstAvatarDecor
     }
   }
   return tmp;
-};
+}
 export const useShopProductItems = tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8152
+// Function ID: 8153
 // Name: GoogleWalletExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isGoogleWalletEnabled
 
-// Module 8129 (GoogleWalletExperiment)
+// Module 8152 (GoogleWalletExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGoogleW
 const result = size.fileFinishedImporting("modules/age_assurance/GoogleWalletExperiment.tsx");
 
 export const useIsGoogleWalletEnabled = tmp2;
-export const isGoogleWalletEnabled = function isGoogleWalletEnabled(age_verification_methods) {
+export function isGoogleWalletEnabled(age_verification_methods) {
   const obj = { location: age_verification_methods };
   return closure_2.getConfig(obj).enabled;
-};
+}

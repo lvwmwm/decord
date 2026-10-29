@@ -1,28 +1,28 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18463
+// Function ID: 18464
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4856, 1084, 10651, 5009, 21, 5004, 587, 558, 576, 8939, 1125, 18230, 5699, 5629, 12984, 12996, 5280, 6707, 12963, 1385, 7790, 7601, 1630, 1496, 1381, 12973, 12974, 2]
+// Dependencies: [32, 5, 19, 17, 4857, 1084, 10684, 5010, 21, 5005, 587, 558, 576, 8942, 1125, 18464, 5701, 5630, 13205, 13217, 5281, 6731, 13184, 1385, 7812, 7624, 1631, 1497, 1381, 13194, 13195, 2]
 
-// Module 18229 (ICYMIShareModal)
+// Module 18463 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import ShareEventUtils from "ShareEventUtils" /* 8939 */;
-import UserRowConstants from "UserRowConstants" /* 10651 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 12984 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import ShareEventUtils from "ShareEventUtils" /* 8942 */;
+import UserRowConstants from "UserRowConstants" /* 10684 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 13205 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_12;
 let obj2;
 let tmp9;
 let unpackModuleId;
-const ShareChatInputDefault = tmp9(12996);
+const ShareChatInputDefault = tmp9(13217);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp27) {
           closure_3 = tmp27;
@@ -256,7 +256,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -314,7 +314,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp32) {
         closure_3 = tmp32;
@@ -523,7 +523,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5280).Button;
+    const Button = tmp7(5281).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -701,7 +701,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -747,7 +747,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   try {
@@ -793,7 +793,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   } catch (tmp16) {
                     c1 = 3;
                     throw tmp16;
@@ -808,7 +808,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             const arr3 = forwardToChannel(first1[21]);
             arr3.pop();
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp6) {
           c4 = 3;
@@ -858,7 +858,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -906,7 +906,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     }
                   } else {
                     try {
@@ -952,7 +952,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                         return obj;
                       }
                       c1 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "IconComponent" };
                     } catch (tmp16) {
                       c1 = 3;
                       throw tmp16;
@@ -967,7 +967,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
               const arr3 = tmp2(closure_2[21]);
               arr3.pop();
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp6) {
             c4 = 3;

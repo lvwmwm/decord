@@ -1,28 +1,28 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7642
+// Function ID: 7643
 // Name: TTIAnalyticsUtils
-// Dependencies: [5, 7620, 5226, 1204, 502, 4856, 1369, 1084, 7779, 4863, 21, 4961, 5876, 1278, 1380, 5187, 5186, 10, 1254, 1264, 7780, 5193, 7782, 9, 1101, 1375, 1381, 7783, 7784, 5945, 6014, 1999, 2]
+// Dependencies: [5, 7643, 5227, 1204, 502, 4857, 1369, 1084, 7801, 4864, 21, 4962, 5878, 1278, 1380, 5188, 5187, 10, 1254, 1264, 7802, 5194, 7804, 9, 1101, 1375, 1381, 7805, 7806, 5947, 6018, 2000, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7619 (TTIAnalyticsUtils)
+// Module 7642 (TTIAnalyticsUtils)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import DeviceUtils from "DeviceUtils" /* 4961 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import react_nativeDefault from "react-native" /* 5193 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5876 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7779 */;
-import AppStartInfo2 from "AppStartInfo" /* 7780 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import DeviceUtils from "DeviceUtils" /* 4962 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import react_nativeDefault from "react-native" /* 5194 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5878 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7801 */;
+import AppStartInfo2 from "AppStartInfo" /* 7802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 7620 */;
-import ExperimentStore from "ExperimentStore" /* 5226 */;
+import CacheStore from "CacheStore" /* 7643 */;
+import ExperimentStore from "ExperimentStore" /* 5227 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
 import v1 from "v1" /* 1278 */;
 import react_native from "react-native" /* 1380 */;
@@ -31,7 +31,7 @@ import size from "module_2" /* 2 */;
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(5186);
+const NavigationRouteUtils = tmp(5187);
 function getDeviceMetadata() {
   let obj2;
   let obj3;
@@ -198,7 +198,7 @@ let obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ let obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -288,7 +288,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -403,7 +403,7 @@ obj = function _trackAppUIViewed() {
         const obj9 = { value, done: true };
         return obj9;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -547,7 +547,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp65) {
         c6 = 3;
@@ -593,7 +593,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -634,7 +634,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[19]);
           obj.track(closure_132_10.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp20) {
         c8 = 3;
@@ -662,7 +662,7 @@ export { getDeviceMetadata };
 export function currentLoadId() {
   return load_id;
 }
-export const trackAppOpened = function trackAppOpened(launcher) {
+export function trackAppOpened(launcher) {
   obj = AppStartPerformanceDefault;
   obj.mark("\u{1F3C3}", "Track app_opened");
   const obj2 = SentryUtilsDefault;
@@ -674,8 +674,8 @@ export const trackAppOpened = function trackAppOpened(launcher) {
   AnalyticsUtilsDefault;
   const merged = Object.assign(getDeviceMetadata());
   track(APP_OPENED, obj4, { logEventProperties: true });
-};
-export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, hasCacheResult) {
+}
+export function trackAppUIViewed(ModalScreen, arg1, hasCacheResult) {
   function trackAppUIViewedAsync() {
     return obj(...arguments);
   }
@@ -694,11 +694,11 @@ export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, has
   if (!AppStartInfo.getAppUIViewed()) {
     trackAppUIViewedAsync(tmp, obj, hasCacheResult);
   }
-};
+}
 export function getLastTrackedAppUiViewed2Properties() {
   return c26;
 }
-export const trackAppLaunchCompleted = function trackAppLaunchCompleted(unknown, hasCacheResult) {
+export function trackAppLaunchCompleted(unknown, hasCacheResult) {
   function trackAppLaunchCompletedAsync() {
     return obj(...arguments);
   }
@@ -719,4 +719,4 @@ export const trackAppLaunchCompleted = function trackAppLaunchCompleted(unknown,
     }
     trackAppLaunchCompletedAsync(str, hasCacheResult);
   }
-};
+}

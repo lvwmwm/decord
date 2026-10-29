@@ -1,10 +1,10 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17641
+// Function ID: 17642
 // Name: UserSettingsDesignSystemButtonActionSheet
-// Dependencies: [19, 21, 558, 576, 17400, 1271, 7284, 8985, 5301, 2]
+// Dependencies: [19, 21, 558, 576, 17639, 1271, 7308, 8988, 5302, 2]
 
-// Module 17402 (UserSettingsDesignSystemButtonActionSheet)
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17400 */;
+// Module 17641 (UserSettingsDesignSystemButtonActionSheet)
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17639 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

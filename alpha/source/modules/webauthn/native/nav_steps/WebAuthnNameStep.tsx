@@ -1,19 +1,19 @@
-// Module ID: 16350
-// Function ID: 16351
+// Module ID: 16588
+// Function ID: 16589
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1084, 21, 5004, 7126, 1502, 6712, 5699, 1125, 8985, 1199, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 1084, 21, 5005, 7150, 1503, 6735, 5701, 1125, 8988, 1199, 5281, 2]
 // Exports: default
 
-// Module 16350 (WebAuthnNameStep)
+// Module 16588 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7126 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap;
@@ -23,8 +23,8 @@ let metroImportAll;
 let tmp;
 const intl4 = tmp(1125);
 const native = tmp(1199);
-const components_Button_Button = tmp(5280);
-const Form2 = tmp(8985);
+const components_Button_Button = tmp(5281);
+const Form2 = tmp(8988);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp28) {
           body = tmp28;

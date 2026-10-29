@@ -1,18 +1,18 @@
-// Module ID: 9408
-// Function ID: 9409
+// Module ID: 9439
+// Function ID: 9440
 // Name: WishlistActionCreators
-// Dependencies: [5, 7738, 1389, 2051, 7368, 9402, 1084, 1382, 1385, 584, 7372, 1294, 9407, 1254, 6409, 1264, 8707, 2]
+// Dependencies: [5, 7760, 1389, 2052, 7391, 9433, 1084, 1382, 1385, 584, 7395, 1294, 9438, 1254, 6433, 1264, 8710, 2]
 
-// Module 9408 (WishlistActionCreators)
+// Module 9439 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import WishlistRecord2 from "WishlistRecord" /* 9402 */;
+import WishlistRecord2 from "WishlistRecord" /* 9433 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import UserStore from "UserStore" /* 1389 */;
-import BillingInfoStore from "BillingInfoStore" /* 2051 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7368 */;
+import BillingInfoStore from "BillingInfoStore" /* 2052 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7391 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(7372);
-const f104210 = (id) => id.id;
+const StorefrontUtils = tmp(7395);
+const f105396 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f104210) };
+    obj3 = { type: "skus", skuIds: found.map(f105396) };
     const dispatch = tmp3(584).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -80,7 +80,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -159,7 +159,7 @@ let obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp48) {
           closure_3 = tmp48;
@@ -191,7 +191,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -279,7 +279,7 @@ let obj = {
                 c3 = 0;
               }
               currentUser = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
             c3 = 0;
             if (null != sku_id) {
@@ -330,7 +330,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -407,7 +407,7 @@ let obj = {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp22) {
           sku_ids = tmp22;
@@ -441,7 +441,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -525,7 +525,7 @@ let obj = {
             c3 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c3) {
@@ -558,7 +558,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -639,7 +639,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp37) {
           sku_ids = tmp37;
@@ -678,7 +678,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f104210) };
+          obj3 = { type: "skus", skuIds: skus2.map(f105396) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);
@@ -695,7 +695,7 @@ let obj = {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -755,7 +755,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

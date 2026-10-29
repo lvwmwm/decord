@@ -26,7 +26,7 @@ export const MAX_THREAD_MEMBERS_PREVIEW = 50;
 export const MAX_THREAD_UNREAD_MESSAGE_COUNT = 25;
 export { ThreadMemberFlags };
 export const OpenThreadAnalyticsLocations = { EMBED: "Embed", BROWSER: "Thread Browser", POPOUT: "Active Threads Popout", CHANNEL_LIST: "Channel List", GUILD_ACTIVE_THREADS_MODAL: "Guild Active Threads Modal", INBOX: "Inbox", FORUM: "Forum", VOICE_AUTO_OPEN: "Voice Auto Open" };
-export const getThreadNotificationOptions = function getThreadNotificationOptions() {
+export function getThreadNotificationOptions() {
   let intl;
   let intl2;
   let intl3;
@@ -41,7 +41,7 @@ export const getThreadNotificationOptions = function getThreadNotificationOption
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;
-};
+}
 export const ThreadSortOrderReadableForAnalytics = { LATEST_ACTIVITY: "Last Message", CREATION_DATE: "Creation" };
 export const FORUM_POST_CREATION_UPLOAD_ERRORS = set;
 export const FORUM_POST_CREATION_AUTOMOD_ERRORS = set1;

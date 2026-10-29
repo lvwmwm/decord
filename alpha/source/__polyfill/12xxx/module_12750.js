@@ -1,49 +1,17 @@
 // Module ID: 12750
 // Function ID: 12751
-// Dependencies: [12751]
-// Exports: isNodeEnv, loadModule
+// Dependencies: []
 
 // Module 12750
-import _mod12751 from "module_12751" /* 12751 */;
-
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
-
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12751;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
-    }
-    tmp2 = "[object process]" === call(num);
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude() {
+    return this.createSingleNodeList(this.MediaQueryList());
+  },
+  block() {
+    return this.Block(false);
   }
-  return tmp2;
 };
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
-};
+
+export default obj;

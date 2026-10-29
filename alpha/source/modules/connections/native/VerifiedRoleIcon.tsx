@@ -1,19 +1,19 @@
-// Module ID: 7335
-// Function ID: 7336
+// Module ID: 7359
+// Function ID: 7360
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1084, 21, 587, 5004, 558, 576, 7336, 7318, 7337, 5714, 2]
+// Dependencies: [19, 17, 1084, 21, 587, 5005, 558, 576, 7360, 7342, 7361, 5716, 2]
 
-// Module 7335 (VerifiedRoleIcon)
+// Module 7359 (VerifiedRoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 7318 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7336 */;
-import RoleIconDefault from "RoleIcon" /* 7337 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 7342 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7360 */;
+import RoleIconDefault from "RoleIcon" /* 7361 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp3;
-const LinkIcon = tmp3(5714);
+const LinkIcon = tmp3(5716);
 const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifiedRole
               cResult[19] = tmp19;
               tmp17 = tmp19;
             }
-            tmp19 = jsx(tmp(5714).LinkIcon, { style: tmp15, size: "custom", color: tmp6 });
+            tmp19 = jsx(tmp(5716).LinkIcon, { style: tmp15, size: "custom", color: tmp6 });
           }
         }
         const items1 = [style, tmp4.iconContainer, tmp14];

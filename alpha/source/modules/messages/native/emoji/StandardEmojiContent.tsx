@@ -1,21 +1,21 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 10004
+// Function ID: 10005
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5035, 21, 5004, 587, 558, 576, 9973, 4954, 5705, 5270, 9974, 4950, 9863, 9975, 1125, 8985, 9977, 5280, 2]
+// Dependencies: [19, 17, 5036, 21, 5005, 587, 558, 576, 10005, 4955, 5707, 5271, 10006, 4951, 9895, 10007, 1125, 8988, 10009, 5281, 2]
 
-// Module 9972 (StandardEmojiContent)
+// Module 10004 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9973 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9977 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10005 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10009 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let obj = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: obj2 };
@@ -170,7 +170,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandardEm
     const tmpResult = require("useTrackOpenPopout");
     const trackOpenPopout = tmpResult.useTrackOpenPopout(tmp13);
     if (cResult[6] !== emojiNode.surrogate) {
-      const obj6 = isFavoriteEmoji(4950);
+      const obj6 = isFavoriteEmoji(4951);
       const result = obj6.convertSurrogateToBase(emojiNode.surrogate);
       cResult[6] = emojiNode.surrogate;
       cResult[7] = result;
@@ -181,7 +181,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandardEm
     _require = tmp15;
     const tmpResult2 = require("EmojiPickerUtils");
     isFavoriteEmoji = tmpResult2.useIsFavoriteEmoji(tmp10, tmp15);
-    const tmp20 = isFavoriteEmoji(9975)(emojiNode.content);
+    const tmp20 = isFavoriteEmoji(10007)(emojiNode.content);
     if (cResult[8] !== emojiNode.surrogate) {
       const obj4 = { surrogate: emojiNode.surrogate };
       const tmp24 = closure_6(closure_10, obj4);
@@ -203,7 +203,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandardEm
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-sm/medium", children: intl.string(require("intl").t.sXdH8c) };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       const tmp30 = closure_6(Text, obj7);
       cResult[12] = tmp30;

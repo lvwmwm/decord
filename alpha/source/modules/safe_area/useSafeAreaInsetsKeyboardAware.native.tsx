@@ -1,24 +1,24 @@
-// Module ID: 5629
-// Function ID: 5630
+// Module ID: 5630
+// Function ID: 5631
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1498, 558, 576, 5630, 5631, 1630, 1499, 1381, 1896, 5197, 1628, 5632, 2]
+// Dependencies: [32, 19, 1499, 558, 576, 5631, 5632, 1631, 1500, 1381, 1897, 5198, 1629, 5633, 2]
 // Exports: default
 
-// Module 5629 (useSafeAreaInsetsKeyboardAware)
+// Module 5630 (useSafeAreaInsetsKeyboardAware)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1896 */;
-import useKeyboardType from "useKeyboardType" /* 5197 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 5630 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5632 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1897 */;
+import useKeyboardType from "useKeyboardType" /* 5198 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 5631 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5633 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DeprecatedLayoutAnimation = tmp(5631);
+const DeprecatedLayoutAnimation = tmp(5632);
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimateChanges(arg0) {
   let disabled;
   let keyboardHeight;

@@ -1,14 +1,14 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16511
+// Function ID: 16512
 // Name: TinyBroncoNoticeVisibility
-// Dependencies: [1389, 1997, 5680, 6694, 558, 576, 504, 2]
+// Dependencies: [1389, 1998, 5682, 6718, 558, 576, 504, 2]
 // Exports: shouldShowAgeNotice
 
-// Module 16273 (TinyBroncoNoticeVisibility)
+// Module 16511 (TinyBroncoNoticeVisibility)
 import react from "react" /* 576 */;
-import Server from "Server" /* 1997 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6694 */;
+import Server from "Server" /* 1998 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
 });
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoNoticeVisibility.tsx");
 
-export const shouldShowAgeNotice = function shouldShowAgeNotice() {
+export function shouldShowAgeNotice() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.NOTICE);
   if (isFeatureAgeGatedResult) {
@@ -128,6 +128,6 @@ export const shouldShowAgeNotice = function shouldShowAgeNotice() {
     null != prop && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_TEEN;
   }
   return isFeatureAgeGatedResult;
-};
+}
 export const useShouldShowAgeNotice = tmp2;
 export const useShouldShowAgeNoticePromo = tmp3;

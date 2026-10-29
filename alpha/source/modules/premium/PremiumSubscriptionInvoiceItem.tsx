@@ -1,10 +1,10 @@
-// Module ID: 2059
-// Function ID: 2060
+// Module ID: 2060
+// Function ID: 2061
 // Name: PremiumSubscriptionInvoiceItem
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 2059 (PremiumSubscriptionInvoiceItem)
+// Module 2060 (PremiumSubscriptionInvoiceItem)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -12,7 +12,7 @@ let set;
 
 const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
 
-export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
+export function coalesceInvoiceItems(arr) {
   const items = [];
   set = new Set();
   const mapped = arr.map((subscriptionPlanId) => {
@@ -55,7 +55,7 @@ export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {
     }
     return obj;
   });
-};
-export const createInvoiceItemFromServer = function createInvoiceItemFromServer(id) {
+}
+export function createInvoiceItemFromServer(id) {
   return { id: id.id, subscriptionPlanId: id.subscription_plan_id, subscriptionPlanPrice: id.subscription_plan_price, amount: id.amount, quantity: id.quantity, discounts: id.discounts, unitPrice: id.unit_price, tax: id.tax, taxCode: id.tax_code, nominalTaxRate: id.nominal_tax_rate };
-};
+}

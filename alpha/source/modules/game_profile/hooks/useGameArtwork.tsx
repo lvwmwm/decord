@@ -1,12 +1,12 @@
-// Module ID: 9338
-// Function ID: 9339
+// Module ID: 9342
+// Function ID: 9343
 // Name: useGameArtwork
-// Dependencies: [32, 19, 2029, 558, 576, 2]
+// Dependencies: [32, 19, 2030, 558, 576, 2]
 // Exports: getGameArtworkSource, hasGameArtwork
 
-// Module 9338 (useGameArtwork)
+// Module 9342 (useGameArtwork)
 import react2 from "react" /* 576 */;
-import getGameMediaRefURL from "getGameMediaRefURL" /* 2029 */;
+import getGameMediaRefURL from "getGameMediaRefURL" /* 2030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -210,7 +210,7 @@ function getGameArtworkSource(media) {
   if (!hasGameMediaRef(cover)) {
     const media2 = media.media;
     let icon;
-    const hasGameMediaRef2 = tmp(2029).hasGameMediaRef;
+    const hasGameMediaRef2 = tmp(2030).hasGameMediaRef;
     getGameMediaRefURL;
     if (media2 != null) {
       icon = media2.icon;
@@ -227,7 +227,7 @@ const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameArt
 
 export default tmp2;
 export { getGameArtworkSource };
-export const hasGameArtwork = function hasGameArtwork(media) {
+export function hasGameArtwork(media) {
   media = media.media;
   let cover;
   const hasGameMediaRef = getGameMediaRefURL.hasGameMediaRef;
@@ -239,7 +239,7 @@ export const hasGameArtwork = function hasGameArtwork(media) {
   if (!hasGameMediaRef(cover)) {
     const media2 = media.media;
     let icon;
-    const hasGameMediaRef2 = tmp(2029).hasGameMediaRef;
+    const hasGameMediaRef2 = tmp(2030).hasGameMediaRef;
     getGameMediaRefURL;
     if (media2 != null) {
       icon = media2.icon;
@@ -251,4 +251,4 @@ export const hasGameArtwork = function hasGameArtwork(media) {
     str = str2;
   }
   return null != str;
-};
+}

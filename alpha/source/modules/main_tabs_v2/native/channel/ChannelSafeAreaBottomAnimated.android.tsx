@@ -1,14 +1,14 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 14036
+// Function ID: 14037
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 558, 576, 10954, 10959, 5085, 2]
+// Dependencies: [19, 17, 21, 558, 576, 10989, 10994, 5086, 2]
 
-// Module 13803 (ChannelSafeAreaBottomAnimated)
+// Module 14036 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 10954 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10959 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 10989 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10994 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,19 +17,22 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp3;
-const ReanimatedRexportDefault = tmp3(5085);
+const ReanimatedRexportDefault = tmp3(5086);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 const __initData = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const __initData2 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx2(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSafeAreaBottom(channelId) {
   let tmp7;
+  const tmp = dependencyMap;
   let obj = react2;
   const cResult = obj.c(5);
   channelId = channelId.channelId;
+  const tmp3 = importDefault;
   const tmp4 = useChannelSafeAreaHeightSharedValueDefault();
   let closure_0 = tmp4;
   const tmp5 = useChannelSafeAreaBottomStylesDefault(channelId);
+  let obj2 = ReanimatedRexport;
   const fn = function n() {
     const obj = { height: closure_0.get() };
     return obj;
@@ -37,7 +40,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn.__closure = { heightSharedValue: tmp4 };
   fn.__workletHash = 6491350126069;
   fn.__initData = __initData;
-  const obj2 = ReanimatedRexport;
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] !== tmp5) {
     const items = [_false.absoluteFill, tmp5];

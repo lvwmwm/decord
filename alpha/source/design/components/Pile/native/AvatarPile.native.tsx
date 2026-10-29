@@ -1,14 +1,14 @@
-// Module ID: 14572
-// Function ID: 14573
+// Module ID: 14806
+// Function ID: 14807
 // Name: AvatarPile
-// Dependencies: [19, 21, 558, 576, 14573, 12558, 13004, 13003, 9437, 2]
+// Dependencies: [19, 21, 558, 576, 14807, 12613, 13225, 13224, 9468, 2]
 
-// Module 14572 (AvatarPile)
+// Module 14806 (AvatarPile)
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 9437 */;
-import ListUtils from "ListUtils" /* 12558 */;
-import Pile2 from "Pile" /* 13003 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14573 */;
+import ClipView from "ClipView" /* 9468 */;
+import ListUtils from "ListUtils" /* 12613 */;
+import Pile2 from "Pile" /* 13224 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14807 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(13004);
+const PileOverflow = tmp2(13225);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile(size) {
   let children;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile
           }
         }
         const obj2 = { "aria-label": tmp6, shape: ClipView.CutoutShape.Circle, size: tmp5, gap: num3, depthX: 0.4, children: items };
-        const Pile = tmp(13003).Pile;
+        const Pile = tmp(13224).Pile;
         items = [children, tmp8];
         const tmp14 = React3(Pile, obj2);
         cResult[7] = tmp5;
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 2, value: totalCount - countResult };
-      tmp10 = _false(tmp(13004).PileOverflow, obj3);
+      tmp10 = _false(tmp(13225).PileOverflow, obj3);
     }
     cResult[3] = tmp5;
     cResult[4] = countResult;

@@ -1,9 +1,9 @@
-// Module ID: 5230
-// Function ID: 5231
+// Module ID: 5231
+// Function ID: 5232
 // Name: GuildMemberCountStore
 // Dependencies: [504, 584, 2]
 
-// Module 5230 (GuildMemberCountStore)
+// Module 5231 (GuildMemberCountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

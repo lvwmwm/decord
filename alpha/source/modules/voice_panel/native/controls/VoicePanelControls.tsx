@@ -1,46 +1,46 @@
-// Module ID: 18896
-// Function ID: 18897
+// Module ID: 19129
+// Function ID: 19130
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6807, 10939, 10942, 10937, 1084, 21, 5004, 587, 1627, 558, 576, 18897, 8947, 10938, 5085, 18781, 5288, 5333, 18898, 10945, 13397, 5248, 5303, 12573, 10010, 18899, 18798, 18900, 5070, 18904, 18906, 6921, 18909, 5283, 7204, 18768, 18812, 1271, 18933, 18934, 1120, 1630, 1496, 12003, 18905, 18935, 18908, 18936, 18787, 12024, 2]
+// Dependencies: [32, 19, 17, 6830, 10974, 10977, 10972, 1084, 21, 5005, 587, 1628, 558, 576, 19130, 8950, 10973, 5086, 19014, 5289, 5334, 19131, 10980, 13630, 5249, 5304, 12627, 10042, 19132, 19031, 19133, 5071, 19137, 19139, 6945, 19142, 5284, 7228, 19001, 19045, 1271, 19166, 19167, 1120, 1631, 1497, 12057, 19138, 19168, 19141, 19169, 19020, 12078, 2]
 
-// Module 18896 (VoicePanelControls)
+// Module 19129 (VoicePanelControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import spring from "spring" /* 5283 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10010 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10938 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10945 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12003 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13397 */;
-import useControlsLockDefault from "useControlsLock" /* 18781 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18798 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 18897 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18898 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 18899 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 18900 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 18904 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 18906 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import spring from "spring" /* 5284 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10042 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10973 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10980 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12057 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 13630 */;
+import useControlsLockDefault from "useControlsLock" /* 19014 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19031 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19130 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19131 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 19132 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19133 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19137 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore_mod from "ChannelRTCStore" /* 6807 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10942 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10937 */;
+import ChannelRTCStore_mod from "ChannelRTCStore" /* 6830 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10977 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import createStyles_mod from "createStyles" /* 5005 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, addChangeListenerResult, batchUpdatesResult, controlsProps, dependencyMap, importDefault, lockResult, obj1, set, set2, set3, set4, unlockResult;
+let _require, addChangeListenerResult, batchUpdatesResult, controlsProps, dependencyMap, importDefault, lockResult, obj1, set, set2, set3, unlockResult;
 
 let StyleSheet;
 let c10;
@@ -62,7 +62,7 @@ let rect;
 let rect1;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8947);
+const native2 = tmp(8950);
 function useControlsGesture(tab, sharedValue, sharedValue1, G) {
   let controlsSpecs;
   let sharedTab;
@@ -196,7 +196,7 @@ function useControlsGesture(tab, sharedValue, sharedValue1, G) {
         const obj5 = { x: 0, y: 0, width: getControlsDrawerOpenWidth(width2, safeArea.get().left, safeArea.get().right), height: Math.min(diff1, wrapperDimensions.get().drawerHeight - height), drawerMode: true };
         const tmp27 = sharedTab(closure_2[22]);
         height = tmp27(safeArea.get(), token).height;
-        set4 = closure_1_2.set;
+        const set4 = closure_1_2.set;
         const merged1 = Object.assign(closure_1_2.get());
         getControlsDrawerOpenWidth = tab(closure_2[23]).getControlsDrawerOpenWidth;
         tab(closure_2[23]);
@@ -433,16 +433,16 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
   } else {
     first = cResult[0];
   }
-  const tmp6 = isScreenReaderEnabled(12573)(first);
+  const tmp6 = isScreenReaderEnabled(12627)(first);
   dependencyMap = tmp6;
-  const context = windowDimensions.useContext(isScreenReaderEnabled(10938));
+  const context = windowDimensions.useContext(isScreenReaderEnabled(10973));
   const controlsSpecs = context.controlsSpecs;
   windowDimensions = context.windowDimensions;
   const mode = context.mode;
   const setControlsMode = context.setControlsMode;
   const safeArea = context.safeArea;
   const connected = context.connected;
-  let tmpResult = tmp(5085);
+  let tmpResult = tmp(5086);
   const fn = function h() {
     const obj = { connected: connected.get(), currentControlsMode: controlsSpecs.get().mode, mode: mode.get(), windowWidth: windowDimensions.get().width, windowHeight: windowDimensions.get().height, windowHeightIgnoringKeyboard: closure_2.get().height, controlsHeightValue: controlsSpecs.get().height, safeArea: safeArea.get() };
     return obj;
@@ -480,7 +480,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           } else if (constants.HIDDEN === currentControlsMode) {
             if (isScreenReaderEnabled) {
               const obj2 = { hidden: false };
-              set4 = wrapperSpecs.set;
+              const set4 = wrapperSpecs.set;
               const merged = Object.assign(obj6.get());
               set4(obj2);
             } else if (!wrapperSpecs.get().hidden) {
@@ -520,7 +520,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
       }
     }
   };
-  let obj4 = { cheapWorkletShallowEqual: tmp(10010).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(5085).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(13397).getControlsDefaultWidth, getDrawerSpec: tmp(18899).getDrawerSpec, getControlsDrawerOpenWidth: tmp(13397).getControlsDrawerOpenWidth };
+  let obj4 = { cheapWorkletShallowEqual: tmp(10042).cheapWorkletShallowEqual, VoicePanelModes, wrapperSpecs, VoicePanelControlsModes, runOnJS: tmp(5086).runOnJS, setControlsMode, isScreenReaderEnabled, EDGE_GUTTER, getControlsDefaultWidth: tmp(13630).getControlsDefaultWidth, getDrawerSpec: tmp(19132).getDrawerSpec, getControlsDrawerOpenWidth: tmp(13630).getControlsDrawerOpenWidth };
   fn2.__closure = obj4;
   fn2.__workletHash = 12616753127721;
   fn2.__initData = __initData4;
@@ -531,9 +531,9 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
   _require = wrapperSpecs;
   let obj = require("useIsScreenReaderEnabled");
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
-  const tmp2 = isScreenReaderEnabled(12573)({ ignoreKeyboard: true });
+  const tmp2 = isScreenReaderEnabled(12627)({ ignoreKeyboard: true });
   dependencyMap = tmp2;
-  const context = windowDimensions.useContext(isScreenReaderEnabled(10938));
+  const context = windowDimensions.useContext(isScreenReaderEnabled(10973));
   const controlsSpecs = context.controlsSpecs;
   windowDimensions = context.windowDimensions;
   const mode = context.mode;
@@ -578,7 +578,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           } else if (constants.HIDDEN === currentControlsMode) {
             if (isScreenReaderEnabled) {
               const obj2 = { hidden: false };
-              set4 = wrapperSpecs.set;
+              const set4 = wrapperSpecs.set;
               const merged = Object.assign(obj6.get());
               set4(obj2);
             } else if (!wrapperSpecs.get().hidden) {
@@ -680,7 +680,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
                 return;
               }
             }
-            const TransitionItem = tmp(5070).TransitionItem;
+            const TransitionItem = tmp(5071).TransitionItem;
             const tmp15 = authStore4(TransitionItem, obj3);
             cResult[9] = tmp12;
             cResult[10] = tmp15;
@@ -705,7 +705,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
                 return;
               }
             }
-            const TransitionItem2 = tmp(5070).TransitionItem;
+            const TransitionItem2 = tmp(5071).TransitionItem;
             const tmp19 = authStore4(TransitionItem2, obj4);
             cResult[11] = tmp16;
             cResult[12] = tmp19;
@@ -789,7 +789,7 @@ let closure_41 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = authStore4(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(5070).TransitionItem;
+  const TransitionItem2 = tmp(5071).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }
@@ -1199,7 +1199,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj = gestureState(channelId[41]);
                         const obj2 = { tab, disableControlsUpdate, controlsProps };
                         const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                        chatOpen(function() { /* body not rendered: F162987 */ });
+                        chatOpen(function() { /* body not rendered: F164663 */ });
                         const tmp = constants;
                         const tmp3 = channelId;
                         const tmp4 = channelId;
@@ -1282,7 +1282,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       const obj = gestureState(channelId[41]);
                       const obj2 = { tab, disableControlsUpdate, controlsProps };
                       const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                      chatOpen(function() { /* body not rendered: F162987 */ });
+                      chatOpen(function() { /* body not rendered: F164663 */ });
                       const tmp = constants;
                       const tmp3 = channelId;
                       const tmp4 = channelId;
@@ -1556,7 +1556,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj = gestureState(channelId[41]);
                         const obj2 = { tab, disableControlsUpdate, controlsProps };
                         const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                        chatOpen(function() { /* body not rendered: F162987 */ });
+                        chatOpen(function() { /* body not rendered: F164663 */ });
                         const tmp = constants;
                         const tmp3 = channelId;
                         const tmp4 = channelId;
@@ -1661,7 +1661,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 const obj = gestureState(channelId[41]);
                 const obj2 = { tab, disableControlsUpdate, controlsProps };
                 const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-                chatOpen(function() { /* body not rendered: F162987 */ });
+                chatOpen(function() { /* body not rendered: F164663 */ });
                 const tmp = constants;
                 const tmp3 = channelId;
                 const tmp4 = channelId;
@@ -1728,7 +1728,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               const obj = gestureState(channelId[41]);
               const obj2 = { tab, disableControlsUpdate, controlsProps };
               const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-              chatOpen(function() { /* body not rendered: F162987 */ });
+              chatOpen(function() { /* body not rendered: F164663 */ });
               const tmp = constants;
               const tmp3 = channelId;
               const tmp4 = channelId;
@@ -1762,7 +1762,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj = gestureState(channelId[41]);
           const obj2 = { tab, disableControlsUpdate, controlsProps };
           const result = obj.reportJankVoicePanelTabRequest(channelId, obj2, tmp2);
-          chatOpen(function() { /* body not rendered: F162987 */ });
+          chatOpen(function() { /* body not rendered: F164663 */ });
           const tmp = constants;
           const tmp3 = channelId;
           const tmp4 = channelId;

@@ -1,20 +1,20 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14602
+// Function ID: 14603
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2042, 11234, 6745, 1084, 2023, 7833, 7817, 7831, 13954, 2]
+// Dependencies: [32, 2043, 11288, 6768, 1084, 2024, 7856, 7840, 7854, 14187, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 14368 (QuestMatchingUtils)
+// Module 14602 (QuestMatchingUtils)
 import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 2023 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7817 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7831 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7833 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 13954 */;
+import Constants2 from "Constants" /* 2024 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7840 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7854 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 14187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11234 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11288 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;
@@ -94,7 +94,7 @@ const result = size.fileFinishedImporting("modules/quests/utils/QuestMatchingUti
 
 export { questMatchesActivity };
 export { getQuestByActivity };
-export const getQuestByApplicationId = function getQuestByApplicationId(arg0, arg1) {
+export function getQuestByApplicationId(arg0, arg1) {
   let tmp5;
   const obj = arg0[Symbol.iterator]();
   while (obj !== undefined) {
@@ -113,8 +113,8 @@ export const getQuestByApplicationId = function getQuestByApplicationId(arg0, ar
     }
     continue;
   }
-};
-export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQuestsByApplicationId(arr, arg1) {
+}
+export function allPlayOnDesktopQuestsByApplicationId(arr, arg1) {
   let closure_0 = arg1;
   arr = Array.from(arr.values());
   return arr.filter((quest) => {
@@ -132,8 +132,8 @@ export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQu
     }
     return hasPlayOnDesktopTaskResult;
   });
-};
-export const getQuestsFromActivities = function getQuestsFromActivities(result, arg1) {
+}
+export function getQuestsFromActivities(result, arg1) {
   if (null != arg1) {
     if (null != result) {
       const obj = arg1[Symbol.iterator]();
@@ -148,8 +148,8 @@ export const getQuestsFromActivities = function getQuestsFromActivities(result, 
     }
   }
   return null;
-};
-export const getEligibleQuestsForApplicationId = function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
+}
+export function getEligibleQuestsForApplicationId(quests, applicationId, arg2) {
   let items;
   let closure_0 = applicationId;
   let flag = arg2;
@@ -199,8 +199,8 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
     });
   }
   return items;
-};
-export const getQuestApplicationIdsForRunningGame = function getQuestApplicationIdsForRunningGame(pid, arg1) {
+}
+export function getQuestApplicationIdsForRunningGame(pid, arg1) {
   const obj = getApplicationIdsForGameDefault(arg1);
   const applicationIdForPID = SocialSdkApplicationStore.getApplicationIdForPID(pid.pid);
   if (null != applicationIdForPID) {
@@ -211,4 +211,4 @@ export const getQuestApplicationIdsForRunningGame = function getQuestApplication
     }
   }
   return obj;
-};
+}

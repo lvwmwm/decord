@@ -1,14 +1,14 @@
-// Module ID: 7295
-// Function ID: 7296
+// Module ID: 7319
+// Function ID: 7320
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7239, 1084, 4851, 584, 1294, 2]
+// Dependencies: [5, 7263, 1084, 4852, 584, 1294, 2]
 
-// Module 7295 (AuthorizedAppsActionCreators)
+// Module 7319 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import Timers from "Timers" /* 4851 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7239 */;
+import Timers from "Timers" /* 4852 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let obj = function _fetchAuthorizedApps() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;

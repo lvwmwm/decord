@@ -1,14 +1,14 @@
-// Module ID: 7063
-// Function ID: 7064
+// Module ID: 7087
+// Function ID: 7088
 // Name: useKeyboardIsOpen
-// Dependencies: [1498, 1499, 1500, 1628, 558, 576, 2]
+// Dependencies: [1499, 1500, 1501, 1629, 558, 576, 2]
 // Exports: getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7063 (useKeyboardIsOpen)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+// Module 7087 (useKeyboardIsOpen)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1501 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,14 +28,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
   }
   const includeCustomKeyboard = tmp.includeCustomKeyboard;
   _require = tmp5;
-  const tmp2Result = tmp2(1499);
+  const tmp2Result = tmp2(1500);
   const appEntryKey = tmp2Result.useAppEntryKey();
   if (cResult[0] === appEntryKey) {
     let tmp7;
     if (cResult[1] === (undefined !== includeCustomKeyboard && includeCustomKeyboard)) {
       tmp7 = cResult[2];
     }
-    return appEntryKey(1500)(tmp7);
+    return appEntryKey(1501)(tmp7);
   }
   const fn = function o(arg0) {
     let tmp2;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
   if (flag === undefined) {
     flag = false;
   }
-  const obj = flag(1499);
+  const obj = flag(1500);
   importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
     let tmp2;
@@ -104,7 +104,7 @@ function getKeyboardIsOpen(arg0) {
 const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
 
 export default tmp2;
-export const subscribeToKeyboardIsOpen = function subscribeToKeyboardIsOpen(arg0) {
+export function subscribeToKeyboardIsOpen(arg0) {
   let closure_0;
   _require = arg0;
   let tmp = arg1;
@@ -142,5 +142,5 @@ export const subscribeToKeyboardIsOpen = function subscribeToKeyboardIsOpen(arg0
     }
     return tmp(tmp6);
   }, DEFAULT_APP_ENTRY_KEY);
-};
+}
 export { getKeyboardIsOpen };

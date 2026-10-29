@@ -1,15 +1,15 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9730
+// Function ID: 9731
 // Name: ThreadAutoArchive
-// Dependencies: [1124, 1101, 1125, 606, 2046, 2]
+// Dependencies: [1124, 1101, 1125, 606, 2047, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 9698 (ThreadAutoArchive)
+// Module 9730 (ThreadAutoArchive)
 import memoizeDefault from "memoize" /* 606 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import intl5 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
+import _modDef2047 from "module_2047" /* 2047 */;
 import size from "module_2" /* 2 */;
 
 function getAutoArchiveOptions() {
@@ -42,7 +42,7 @@ const result = size.fileFinishedImporting("modules/threads/ThreadAutoArchive.tsx
 export const AUTO_ARCHIVE_OPTION_VALUES = items;
 export { getAutoArchiveOptions };
 export const getAutoArchiveDurations = tmp2;
-export const getAutoArchiveDurationText = function getAutoArchiveDurationText(arg0) {
+export function getAutoArchiveDurationText(arg0) {
   let closure_0 = arg0;
   const arr = getAutoArchiveOptions();
   const found = arr.find((value) => value.value === closure_0);
@@ -51,13 +51,13 @@ export const getAutoArchiveDurationText = function getAutoArchiveDurationText(ar
     label = found.label;
   }
   if (label == null) {
-    const obj = _modDef2046;
+    const obj = _modDef2047;
     const durationResult = obj.duration(arg0, "minutes");
     label = durationResult.humanize();
   }
   return label;
-};
-export const getAutoArchiveDuration = function getAutoArchiveDuration(channel, arg1) {
+}
+export function getAutoArchiveDuration(channel, arg1) {
   let tmp = arg1;
   if (arg1 == null) {
     let prop;
@@ -70,4 +70,4 @@ export const getAutoArchiveDuration = function getAutoArchiveDuration(channel, a
     tmp = closure_3;
   }
   return tmp;
-};
+}

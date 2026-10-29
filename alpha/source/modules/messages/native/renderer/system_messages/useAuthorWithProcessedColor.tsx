@@ -1,20 +1,20 @@
-// Module ID: 8351
-// Function ID: 8352
+// Module ID: 8373
+// Function ID: 8374
 // Name: useAuthorWithProcessedColor
-// Dependencies: [17, 6401, 8352, 2]
+// Dependencies: [17, 6425, 8374, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 8351 (useAuthorWithProcessedColor)
+// Module 8373 (useAuthorWithProcessedColor)
 import react_native from "react-native" /* 17 */;
-import useMessageAuthor from "useMessageAuthor" /* 6401 */;
+import useMessageAuthor from "useMessageAuthor" /* 6425 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const enhanced_role_colors_EnhancedRoleColorUtils = tmp(8352);
+const enhanced_role_colors_EnhancedRoleColorUtils = tmp(8374);
 const processColor = react_native.processColor;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
 
-export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithProcessedColor(message) {
+export function getMessageAuthorWithProcessedColor(message) {
   let colorStrings;
   let guildId;
   let tmp4;
@@ -30,8 +30,8 @@ export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithP
   }
   tmpResult = enhanced_role_colors_EnhancedRoleColorUtils;
   return obj2;
-};
-export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcessedColor(user, channel) {
+}
+export function getUserAuthorWithProcessedColor(user, channel) {
   let colorStrings;
   let guildId;
   let tmp4;
@@ -47,4 +47,4 @@ export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcess
   }
   tmpResult = enhanced_role_colors_EnhancedRoleColorUtils;
   return obj2;
-};
+}

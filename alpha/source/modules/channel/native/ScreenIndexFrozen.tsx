@@ -1,10 +1,10 @@
-// Module ID: 5196
-// Function ID: 5197
+// Module ID: 5197
+// Function ID: 5198
 // Name: ScreenIndexFrozen
-// Dependencies: [19, 558, 576, 5085, 2]
+// Dependencies: [19, 558, 576, 5086, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener
 
-// Module 5196 (ScreenIndexFrozen)
+// Module 5197 (ScreenIndexFrozen)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ function removeFrozenScreenIndexesChangedListener(arg0) {
 }
 let result = size.fileFinishedImporting("modules/channel/native/ScreenIndexFrozen.tsx");
 
-export const freezeScreenIndex = function freezeScreenIndex(shouldFreeze, arg1) {
+export function freezeScreenIndex(shouldFreeze, arg1) {
   const tmp = shouldFreeze;
   if (tmp) {
     set.add(arg1);
@@ -89,7 +89,7 @@ export const freezeScreenIndex = function freezeScreenIndex(shouldFreeze, arg1) 
     set.delete(arg1);
   }
   const item = set1.forEach((fn) => fn());
-};
+}
 export { isScreenIndexFrozen };
 export { addFrozenScreenIndexesChangedListener };
 export { removeFrozenScreenIndexesChangedListener };

@@ -1,20 +1,20 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16351
+// Function ID: 16352
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 7289, 8716, 8705, 1125, 5270, 6944, 10154, 8758, 8774, 16116, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 7313, 8719, 8708, 1125, 5271, 6968, 10187, 8761, 8777, 16352, 2]
 
-// Module 16115 (UserProfileEditBannerButton)
+// Module 16351 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6944 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8758 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8774 */;
-import PencilIcon2 from "PencilIcon" /* 10154 */;
+import Pressables from "Pressables" /* 6968 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8761 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8777 */;
+import PencilIcon2 from "PencilIcon" /* 10187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(16116);
+const EditButtonDefault = tmp2(16352);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -144,7 +144,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditBut
   const tmp5 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const PencilIcon = tmp(10154).PencilIcon;
+    const PencilIcon = tmp(10187).PencilIcon;
     const tmp9 = hasOwnProperty(PencilIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
                     let tmp16Result;
                     if (isUserProfileEditingRefresh) {
                       const obj3 = { style: tmp5.refreshEditButtonContainer, onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled, variant: "secondary-overlay" };
-                      tmp16Result = tmp16(tmp6(16116), obj3);
+                      tmp16Result = tmp16(tmp6(16352), obj3);
                     } else {
                       const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled };
                       tmp16Result = tmp16(closure_9, obj4);

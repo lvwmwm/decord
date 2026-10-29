@@ -1,14 +1,14 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6723
+// Function ID: 6724
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [6700, 1125, 6701, 3123, 2]
+// Dependencies: [6724, 1125, 6725, 3124, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 6699 (getTinyBroncoWarningDescriptions)
+// Module 6723 (getTinyBroncoWarningDescriptions)
 import intl6 from "intl" /* 1125 */;
-import _modDef3123 from "module_3123" /* 3123 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6701 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6700 */;
+import _modDef3124 from "module_3124" /* 3124 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6725 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6724 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -16,7 +16,7 @@ let closure_4;
 ({ TINY_BRONCO_CHANNEL_LOCATION: c3, TINY_BRONCO_SERVER_LOCATION: closure_4 } = TinyBroncoConstants);
 const result = size.fileFinishedImporting("modules/tiny_bronco/getTinyBroncoWarningDescriptions.tsx");
 
-export const getTinyBroncoServerDescriptions = function getTinyBroncoServerDescriptions() {
+export function getTinyBroncoServerDescriptions() {
   let intl;
   let intl2;
   let intl3;
@@ -25,8 +25,8 @@ export const getTinyBroncoServerDescriptions = function getTinyBroncoServerDescr
   intl2 = intl6.intl;
   intl3 = intl6.intl;
   return obj;
-};
-export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDescriptions(arg0, guildName) {
+}
+export function getTinyBroncoWarningDescriptions(arg0, guildName) {
   let tmp4 = null;
   const tmp = arg0 ? React3 : _false;
   const obj = TinyBroncoExperiment;
@@ -43,16 +43,16 @@ export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDes
       tmp7 = obj2;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3123.iK0n30, obj3);
+      obj2.adult = intl.formatToPlainString(_modDef3124.iK0n30, obj3);
       const intl2 = tmp2(1125).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3123.ezJA0R, obj4);
+      obj2.teen = intl2.formatToPlainString(_modDef3124.ezJA0R, obj4);
       const intl3 = tmp2(1125).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3123.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3124.h4HbnI, obj5);
       tmp7 = obj2;
     }
     tmp4 = tmp7;
   }
   return tmp4;
-};
+}

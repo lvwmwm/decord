@@ -1,17 +1,17 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 8192
+// Function ID: 8193
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 8169 (react-native)
+// Module 8192 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
 const processColor = react_native.processColor;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorStyleSheet.tsx");
 
-export const processColorOrThrow = function processColorOrThrow(arg0) {
+export function processColorOrThrow(arg0) {
   const tmp = processColor(arg0);
   if (null == tmp) {
     const _Error = Error;
@@ -23,4 +23,4 @@ export const processColorOrThrow = function processColorOrThrow(arg0) {
   } else {
     return tmp;
   }
-};
+}

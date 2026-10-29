@@ -1,14 +1,14 @@
-// Module ID: 6798
-// Function ID: 6799
+// Module ID: 6821
+// Function ID: 6822
 // Name: IAPEligibility
-// Dependencies: [19, 4878, 1084, 1381, 6799, 558, 576, 573, 2]
+// Dependencies: [19, 4879, 1084, 1381, 6822, 558, 576, 573, 2]
 // Exports: canUseRoleSubscriptionIAP
 
-// Module 6798 (IAPEligibility)
+// Module 6821 (IAPEligibility)
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const getSystemVersion = tmp(6799);
+const getSystemVersion = tmp(6822);
 let c4 = "13.2";
 let items = [Constants.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseRoleSubscriptionIAP(arg0) {
@@ -189,7 +189,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseR
 });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/IAPEligibility.tsx");
 
-export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
+export function canUseRoleSubscriptionIAP(guildId) {
   const obj = PlatformUtils;
   if (obj.isIOS()) {
     const tmpResult = getSystemVersion;
@@ -246,5 +246,5 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
   } else {
     return false;
   }
-};
+}
 export const useCanUseRoleSubscriptionIAP = tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 18031
-// Function ID: 18032
+// Module ID: 18265
+// Function ID: 18266
 // Name: isGuildsBarGuildLabelEqual
 // Dependencies: [2]
 // Exports: default
 
-// Module 18031 (isGuildsBarGuildLabelEqual)
+// Module 18265 (isGuildsBarGuildLabelEqual)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/isGuildsBarGuildLabelEqual.tsx");

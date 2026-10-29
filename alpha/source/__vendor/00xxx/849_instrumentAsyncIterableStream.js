@@ -270,7 +270,7 @@ let obj = function _instrumentAsyncIterableStream() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c9;
@@ -303,7 +303,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "np", cacheReadInputTokens: "key", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "onPress", cacheReadInputTokens: "keys", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -450,7 +450,7 @@ let obj = function _instrumentAsyncIterableStream() {
                   }
                   closure_0.end();
                   c12 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               }
               break;
@@ -1056,13 +1056,13 @@ let obj = function _instrumentAsyncIterableStream() {
 };
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentAsyncIterableStream = function instrumentAsyncIterableStream(arg0, arg1, c1) {
+export function instrumentAsyncIterableStream(arg0, arg1, c1) {
   return obj(...arguments);
-};
-export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
+}
+export function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "np", cacheReadInputTokens: "key", toolCalls: [], activeToolBlocks: {} };
+  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "onPress", cacheReadInputTokens: "keys", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
     processEvent(arg0, obj, flag, closure_0);
   });
@@ -1124,4 +1124,4 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
     }
   });
   return applyResult;
-};
+}

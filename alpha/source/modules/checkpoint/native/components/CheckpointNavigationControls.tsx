@@ -1,17 +1,17 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 13501
+// Function ID: 13502
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 6050, 1084, 21, 5004, 587, 558, 576, 6398, 13258, 1630, 5288, 1125, 6399, 13269, 8802, 3089, 13204, 5696, 2064, 10154, 10787, 10863, 2]
+// Dependencies: [17, 6054, 1084, 21, 5005, 587, 558, 576, 6422, 13491, 1631, 5289, 1125, 6423, 13502, 8805, 3090, 13436, 5698, 2065, 10187, 10858, 10768, 2]
 
-// Module 13268 (CheckpointNavigationControls)
+// Module 13501 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import CheckpointTextDefault from "CheckpointText" /* 13204 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13258 */;
+import CheckpointTextDefault from "CheckpointText" /* 13436 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13491 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (cResult[0] !== nextBlockedTrait) {
     let nitroLockedMessage;
     if (null != nextBlockedTrait) {
-      const tmpResult = tmp(6398);
+      const tmpResult = tmp(6422);
       nitroLockedMessage = tmpResult.getNitroLockedMessage(nextBlockedTrait);
     }
     cResult[0] = nextBlockedTrait;
@@ -87,7 +87,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
         if (cResult[5] === onNext) {
           tmp11 = cResult[6];
         }
-        const rect = nextBlockedTrait(1630)();
+        const rect = nextBlockedTrait(1631)();
         if (cResult[7] === rect.bottom) {
           if (cResult[8] === rect.left) {
             let tmp13;
@@ -102,7 +102,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 tmp14 = cResult[13];
               }
               const _Symbol = Symbol;
-              const tmpResult3 = tmp(5288);
+              const tmpResult3 = tmp(5289);
               const token = tmpResult3.useToken("text-subtle");
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl = tmp(1125).intl;
@@ -114,11 +114,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               }
               if (cResult[15] !== activeRoute) {
                 let stringResult1;
-                if (activeRoute === tmp(6399).CheckpointRoute.FINALIZE_CHARACTER) {
+                if (activeRoute === tmp(6423).CheckpointRoute.FINALIZE_CHARACTER) {
                   const intl3 = tmp(1125).intl;
                   stringResult1 = intl3.string(tmp(1125).t["R3BPH+"]);
                 } else {
-                  const tmpResult4 = tmp(6399);
+                  const tmpResult4 = tmp(6423);
                   if (tmpResult4.isCheckpointCustomizationRoute(activeRoute)) {
                     const intl2 = tmp(1125).intl;
                     stringResult1 = intl2.string(tmp(1125).t.PDTjLN);
@@ -130,7 +130,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               } else {
                 tmp19 = cResult[16];
               }
-              if (activeRoute === tmp(6399).CheckpointRoute.HOME) {
+              if (activeRoute === tmp(6423).CheckpointRoute.HOME) {
                 if (cResult[17] === tmp14) {
                   let tmp67;
                   let tmp68;
@@ -182,7 +182,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                                                   return metroImportDefault(CheckpointTextDefault, obj, arg1);
                                                 }
                         };
-                        const formatResult = intl8.format(nextBlockedTrait(3089).hcNhyq, obj4);
+                        const formatResult = intl8.format(nextBlockedTrait(3090).hcNhyq, obj4);
                         cResult[27] = tmp7.link;
                         cResult[28] = formatResult;
                         tmp75 = formatResult;
@@ -191,7 +191,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       }
                       if (cResult[29] !== tmp75) {
                         const obj5 = { variant: "text-sm/medium", children: tmp75 };
-                        const tmp79 = closure_7(nextBlockedTrait(13204), obj5);
+                        const tmp79 = closure_7(nextBlockedTrait(13436), obj5);
                         cResult[29] = tmp75;
                         cResult[30] = tmp79;
                         tmp77 = tmp79;
@@ -217,8 +217,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       tmp80 = tmp83;
                     }
                   }
-                  const obj7 = { Icon: tmp(8802).PlayIcon, label: tmp68, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp70 };
-                  const tmp12Result = nextBlockedTrait(13269);
+                  const obj7 = { Icon: tmp(8805).PlayIcon, label: tmp68, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp70 };
+                  const tmp12Result = nextBlockedTrait(13502);
                   const tmp74 = closure_7(tmp12Result, obj7);
                   cResult[23] = tmp11;
                   cResult[24] = undefined !== nextLoading && nextLoading;
@@ -231,7 +231,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                 cResult[18] = tmp7.homeContainer;
                 cResult[19] = items1;
                 tmp67 = items1;
-              } else if (activeRoute === tmp(6399).CheckpointRoute.SUMMARY) {
+              } else if (activeRoute === tmp(6423).CheckpointRoute.SUMMARY) {
                 if (cResult[35] === tmp14) {
                   let tmp46;
                   let tmp47;
@@ -311,7 +311,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                               }
                             }
                             const obj10 = { label: tmp58, onPress: onShare, color, borderColor: color, shadowColor, style: tmp7.share };
-                            const tmp62 = closure_7(nextBlockedTrait(13269), obj10);
+                            const tmp62 = closure_7(nextBlockedTrait(13502), obj10);
                             cResult[53] = color;
                             cResult[54] = onShare;
                             cResult[55] = shadowColor;
@@ -329,7 +329,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                         tmp54 = tmp57;
                       }
                       const obj12 = { size: "custom", color, style: tmp7.editIcon };
-                      const tmp53 = closure_7(tmp(10154).PencilIcon, obj12);
+                      const tmp53 = closure_7(tmp(10187).PencilIcon, obj12);
                       cResult[45] = color;
                       cResult[46] = tmp7.editIcon;
                       cResult[47] = tmp53;
@@ -383,7 +383,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                   }
                   if (cResult[68] !== tmp25) {
                     const obj14 = { color: tmp25 };
-                    const tmp28 = closure_7(tmp(10787).ArrowSmallLeftIcon, obj14);
+                    const tmp28 = closure_7(tmp(10858).ArrowSmallLeftIcon, obj14);
                     cResult[68] = tmp25;
                     cResult[69] = tmp28;
                     tmp26 = tmp28;
@@ -453,8 +453,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                               }
                             }
                           }
-                          const obj17 = { Icon: tmp(10863).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp19, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, loading: undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
-                          const tmp12Result2 = nextBlockedTrait(13269);
+                          const obj17 = { Icon: tmp(10768).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp19, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, loading: undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
+                          const tmp12Result2 = nextBlockedTrait(13502);
                           const tmp41 = closure_7(tmp12Result2, obj17);
                           cResult[78] = tmp11;
                           cResult[79] = tmp19;

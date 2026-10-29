@@ -1,10 +1,10 @@
-// Module ID: 8637
-// Function ID: 8638
+// Module ID: 8659
+// Function ID: 8660
 // Name: InteractionActionCreators
 // Dependencies: [5, 1084, 584, 1294, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8637 (InteractionActionCreators)
+// Module 8659 (InteractionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -36,12 +36,12 @@ let obj = function _fetchMessageInteractionData() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/interactions/InteractionActionCreators.tsx");
 
-export const queueInteractionComponentState = function queueInteractionComponentState(c1, nonce, c8, c4) {
+export function queueInteractionComponentState(c1, nonce, c8, c4) {
   obj = DispatcherDefault;
   const obj2 = { type: "QUEUE_INTERACTION_COMPONENT_STATE", messageId: c1, nonce, state: c8, componentId: c4 };
   obj.dispatch(obj2);
-};
-export const addQueued = function addQueued(nonce2, arg1) {
+}
+export function addQueued(nonce2, arg1) {
   let data;
   let messageId;
   let onCreate;
@@ -52,12 +52,12 @@ export const addQueued = function addQueued(nonce2, arg1) {
   obj = DispatcherDefault;
   const obj2 = { type: "INTERACTION_QUEUE", data, nonce: nonce2, messageId, preflight, onCreate, onSuccess, onFailure };
   obj.dispatch(obj2);
-};
-export const setFailed = function setFailed(nonce, code, message, status) {
+}
+export function setFailed(nonce, code, message, status) {
   obj = DispatcherDefault;
   const obj2 = { type: "INTERACTION_FAILURE", nonce, errorMessage: message, errorCode: code, status };
   obj.dispatch(obj2);
-};
-export const fetchMessageInteractionData = function fetchMessageInteractionData() {
+}
+export function fetchMessageInteractionData() {
   return obj(...arguments);
-};
+}

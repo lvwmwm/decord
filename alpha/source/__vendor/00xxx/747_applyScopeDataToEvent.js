@@ -74,7 +74,7 @@ function mergeScopeData(extra, arg1) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
+export function applyScopeDataToEvent(extra, arg1) {
   let breadcrumbs;
   let contexts;
   let fingerprint;
@@ -169,8 +169,8 @@ export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1)
   const merged10 = Object.assign(extra.sdkProcessingMetadata);
   const merged11 = Object.assign(sdkProcessingMetadata);
   extra.sdkProcessingMetadata = obj11;
-};
-export const getCombinedScopeData = function getCombinedScopeData(isolationScope, cloneResult) {
+}
+export function getCombinedScopeData(isolationScope, cloneResult) {
   const obj = _mod724;
   const globalScope = obj.getGlobalScope();
   const scopeData = globalScope.getScopeData();
@@ -182,9 +182,9 @@ export const getCombinedScopeData = function getCombinedScopeData(isolationScope
     mergeScopeData(scopeData, cloneResult.getScopeData());
   }
   return scopeData;
-};
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+}
+export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
   const obj = merge;
   arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
+}
 export { mergeScopeData };

@@ -1,10 +1,10 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9191
+// Function ID: 9192
 // Name: NativeAudioManagerModule
 // Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 9188 (NativeAudioManagerModule)
+// Module 9191 (NativeAudioManagerModule)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -15,8 +15,8 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-cod
 
 export default enforcing;
 export { AudioDeviceType };
-export const getInvalidAndroidDevice = function getInvalidAndroidDevice() {
+export function getInvalidAndroidDevice() {
   let obj;
   obj = { deviceType: 0, simpleDeviceType: obj.INVALID, deviceId: -1, deviceName: "Invalid" };
   return obj;
-};
+}

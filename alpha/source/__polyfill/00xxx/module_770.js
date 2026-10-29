@@ -9,7 +9,7 @@ import _mod740 from "module_740" /* 740 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const createCheckInEnvelope = function createCheckInEnvelope(arg0, trace, sdk, arg3, arg4) {
+export function createCheckInEnvelope(arg0, trace, sdk, arg3, arg4) {
   let date;
   const obj = { sent_at: date.toISOString() };
   sdk = undefined;
@@ -34,4 +34,4 @@ export const createCheckInEnvelope = function createCheckInEnvelope(arg0, trace,
   const items1 = [items];
   const obj5 = _mod740;
   return obj5.createEnvelope(obj, items1);
-};
+}

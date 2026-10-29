@@ -1,20 +1,20 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17485
+// Function ID: 17486
 // Name: GeneratedTestUserActionCreators
-// Dependencies: [5, 1403, 17223, 1084, 7453, 6703, 7459, 6711, 1272, 584, 17247, 2]
+// Dependencies: [5, 1403, 17462, 1084, 7476, 6727, 7482, 6734, 1272, 584, 17486, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 17246 (GeneratedTestUserActionCreators)
+// Module 17485 (GeneratedTestUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6703 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import Constants2 from "Constants" /* 7453 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7459 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6727 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import Constants2 from "Constants" /* 7476 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1403 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17223 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17462 */;
 import size from "module_2" /* 2 */;
 
 let body, c2, c3;
@@ -35,7 +35,7 @@ let obj = function _getGeneratedPoolById() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ const Endpoints = Constants.Endpoints;
 const SafetyToastType = Constants2.SafetyToastType;
 const result = size.fileFinishedImporting("modules/generated_test_users/GeneratedTestUserActionCreators.tsx");
 
-export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
+export function loginAsGeneratedUser(id, arg1) {
   obj = GeneratedTestUsersStore;
   const user = GeneratedTestUsersStore.getUser(arg1);
   if (null == user) {
@@ -153,12 +153,12 @@ export const loginAsGeneratedUser = function loginAsGeneratedUser(id, arg1) {
       });
     }
   }
-};
-export const getGeneratedPoolById = function getGeneratedPoolById() {
+}
+export function getGeneratedPoolById() {
   return obj(...arguments);
-};
-export const removeGeneratedPoolFromList = function removeGeneratedPoolFromList(poolId) {
+}
+export function removeGeneratedPoolFromList(poolId) {
   obj = DispatcherDefault;
   const obj2 = { type: "GENERATED_POOL_REMOVE_FROM_LIST", poolId };
   obj.dispatch(obj2);
-};
+}

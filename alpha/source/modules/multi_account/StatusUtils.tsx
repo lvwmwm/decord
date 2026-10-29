@@ -1,16 +1,16 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14221
+// Function ID: 14222
 // Name: StatusUtils
 // Dependencies: [1125, 2]
 // Exports: getStatusExpiryParts
 
-// Module 13988 (StatusUtils)
+// Module 14221 (StatusUtils)
 import intl from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
 
-export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
+export function getStatusExpiryParts(arg0) {
   let data2;
   let data3;
   let data4;
@@ -54,4 +54,4 @@ export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {
     data2 = tmp10(1125).intl.data;
   }
   return obj3;
-};
+}

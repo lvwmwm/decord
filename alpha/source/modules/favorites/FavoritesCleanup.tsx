@@ -1,21 +1,21 @@
-// Module ID: 10896
-// Function ID: 10897
+// Module ID: 10801
+// Function ID: 10802
 // Name: FavoritesCleanup
-// Dependencies: [5, 4860, 4856, 4936, 6806, 4859, 1095, 1208, 7447, 1101, 6858, 2]
+// Dependencies: [5, 4861, 4857, 4937, 6829, 4860, 1095, 1208, 7470, 1101, 6881, 2]
 // Exports: getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10896 (FavoritesCleanup)
+// Module 10801 (FavoritesCleanup)
 import Constants from "Constants" /* 1095 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6858 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7447 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6881 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7470 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import FavoriteStore from "FavoriteStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import FavoriteStore from "FavoriteStore" /* 4860 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -58,7 +58,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -102,10 +102,10 @@ const Permissions = Constants.Permissions;
 const result = size.fileFinishedImporting("modules/favorites/FavoritesCleanup.tsx");
 
 export { getFavoriteThreadIdsForCleanup };
-export const loadFavoriteThreadsForCleanup = function loadFavoriteThreadsForCleanup() {
+export function loadFavoriteThreadsForCleanup() {
   return obj(...arguments);
-};
-export const getFavoritesCleanupCandidates = function getFavoritesCleanupCandidates(days) {
+}
+export function getFavoritesCleanupCandidates(days) {
   days = days.days;
   const categoryId = days.categoryId;
   if (Number.isSafeInteger(days)) {
@@ -162,4 +162,4 @@ export const getFavoritesCleanupCandidates = function getFavoritesCleanupCandida
     }
   }
   return [];
-};
+}

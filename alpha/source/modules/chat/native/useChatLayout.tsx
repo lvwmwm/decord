@@ -1,12 +1,12 @@
-// Module ID: 5189
-// Function ID: 5190
+// Module ID: 5190
+// Function ID: 5191
 // Name: useChatLayout
-// Dependencies: [19, 5190, 558, 576, 2]
+// Dependencies: [19, 5191, 558, 576, 2]
 // Exports: getChatLayout
 
-// Module 5189 (useChatLayout)
+// Module 5190 (useChatLayout)
 import react2 from "react" /* 576 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5190 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5191 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,9 +43,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatLayou
 const result = size.fileFinishedImporting("modules/chat/native/useChatLayout.tsx");
 
 export default tmp2;
-export const getChatLayout = function getChatLayout() {
+export function getChatLayout() {
   const obj = useWindowSizeClassifier;
   const windowSizeClassifier = obj.getWindowSizeClassifier();
   const obj2 = { isChatBesideChannelList: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.LARGE, isChatLockedOpen: windowSizeClassifier >= useWindowSizeClassifier.WindowSizeClassifier.XLARGE };
   return obj2;
-};
+}

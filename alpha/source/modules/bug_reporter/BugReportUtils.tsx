@@ -1,15 +1,15 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14254
+// Function ID: 14255
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1204, 1084, 1294, 1125, 14022, 1381, 6711, 1272, 2]
+// Dependencies: [5, 1204, 1084, 1294, 1125, 14255, 1381, 6734, 1272, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 14021 (bug_reporter/BugReportUtils)
+// Module 14254 (bug_reporter/BugReportUtils)
 import intl9 from "intl" /* 1125 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import DebugUploadManager from "DebugUploadManager" /* 14022 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import DebugUploadManager from "DebugUploadManager" /* 14255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import Constants from "Constants" /* 1084 */;
@@ -49,7 +49,7 @@ obj = function _submitReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -188,10 +188,10 @@ obj = function _submitReport() {
 ({ DebugLogCategory: hasOwnProperty, Endpoints: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");
 
-export const fetchBugReportConfig = function fetchBugReportConfig() {
+export function fetchBugReportConfig() {
   return obj(...arguments);
-};
-export const getFeatureId = function getFeatureId(feature) {
+}
+export function getFeatureId(feature) {
   let str;
   if (feature != null) {
     str = feature.name;
@@ -211,8 +211,8 @@ export const getFeatureId = function getFeatureId(feature) {
     str3 = `${str}::${str2}`;
   }
   return str3;
-};
-export const getPriorities = function getPriorities() {
+}
+export function getPriorities() {
   let intl;
   let intl2;
   let intl3;
@@ -238,7 +238,7 @@ export const getPriorities = function getPriorities() {
   intl8 = intl9.intl;
   items[3] = obj4;
   return items;
-};
-export const submitReport = function submitReport() {
+}
+export function submitReport() {
   return obj(...arguments);
-};
+}

@@ -1,23 +1,23 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 17049
+// Function ID: 17050
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 5005, 6745, 16709, 1084, 21, 5004, 558, 576, 16710, 5085, 5283, 7204, 16713, 16791, 8796, 1496, 1630, 504, 16708, 683, 16812, 1381, 9601, 1898, 8827, 5705, 5294, 2]
+// Dependencies: [32, 19, 17, 5006, 6768, 16947, 1084, 21, 5005, 558, 576, 16948, 5086, 5284, 7228, 16951, 17029, 8799, 1497, 1631, 504, 16946, 683, 17050, 1381, 9633, 1899, 8830, 5707, 5295, 2]
 
-// Module 16811 (QuestDockVideoBackground)
+// Module 17049 (QuestDockVideoBackground)
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1084 */;
-import react_nativeDefault from "react-native" /* 1898 */;
-import spring from "spring" /* 5283 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7204 */;
-import QuestDockUtils from "QuestDockUtils" /* 16708 */;
+import react_nativeDefault from "react-native" /* 1899 */;
+import spring from "spring" /* 5284 */;
+import QuestConstants from "QuestConstants" /* 6768 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7228 */;
+import QuestDockUtils from "QuestDockUtils" /* 16946 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import QuestDockConstants from "QuestDockConstants" /* 16709 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import QuestDockConstants from "QuestDockConstants" /* 16947 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const cResult = obj.c(7);
   ({ children, style } = arg0);
   const tmp3 = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16710).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16948).QuestDockGestureContext).activeQuestDockMode;
   const fn = function n() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -88,11 +88,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     const obj = { opacity: withSpring(num, c9) };
     return obj;
   };
-  const obj2 = activeQuestDockMode(5085);
-  fn.__closure = { withSpring: activeQuestDockMode(5283).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  const obj2 = activeQuestDockMode(5086);
+  fn.__closure = { withSpring: activeQuestDockMode(5284).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__workletHash = 5908890006198;
   fn.__initData = __initData;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -129,8 +129,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   let activeQuestDockMode;
   ({ children, style } = arg0);
   const tmp = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(16710).QuestDockGestureContext).activeQuestDockMode;
-  let obj = activeQuestDockMode(5085);
+  activeQuestDockMode = react.useContext(activeQuestDockMode(16948).QuestDockGestureContext).activeQuestDockMode;
+  let obj = activeQuestDockMode(5086);
   const fn = function s() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -141,10 +141,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     const obj = { opacity: withSpring(num, c9) };
     return obj;
   };
-  fn.__closure = { withSpring: activeQuestDockMode(5283).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
+  fn.__closure = { withSpring: activeQuestDockMode(5284).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED };
   fn.__workletHash = 9800697298933;
   fn.__initData = __initData2;
-  ({ withSpring: activeQuestDockMode(5283).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
+  ({ withSpring: activeQuestDockMode(5284).withSpring, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { style: items, children };
   items = [tmp.media, style, animatedStyle];
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         const items = [{ translateX: withSpring(num, c9) }, ];
         ({ translateX: withSpring(num, c9) });
-        const withSpring2 = tmp(5283).withSpring;
+        const withSpring2 = tmp(5284).withSpring;
         let num3 = 0;
         spring;
         if (obj.get() === tmp4.COLLAPSED) {
@@ -569,7 +569,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const items = [{ translateX: withSpring(num, c9) }, ];
       ({ translateX: withSpring(num, c9) });
-      const withSpring2 = tmp(5283).withSpring;
+      const withSpring2 = tmp(5284).withSpring;
       let num3 = 0;
       spring;
       if (obj.get() === tmp4.COLLAPSED) {

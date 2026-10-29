@@ -1,10 +1,10 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14380
+// Function ID: 14381
 // Name: IAPUtils
-// Dependencies: [5, 17, 5273, 5682, 1389, 7559, 1084, 1391, 1381, 14148, 14149, 3, 38, 14168, 7555, 12, 1278, 4820, 558, 576, 504, 14169, 1380, 4961, 14170, 2]
+// Dependencies: [5, 17, 5274, 5684, 1389, 7582, 1084, 1391, 1381, 14381, 14382, 3, 38, 14401, 7578, 12, 1278, 4821, 558, 576, 504, 14402, 1380, 4962, 14403, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 14147 (IAPUtils)
+// Module 14380 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -12,17 +12,17 @@ import _modDef38 from "module_38" /* 38 */;
 import v1 from "v1" /* 1278 */;
 import react_nativeAll from "react-native" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import DeviceUtils from "DeviceUtils" /* 4961 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5682 */;
-import react_native2 from "react-native" /* 14148 */;
-import _mod14149 from "module_14149" /* 14149 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 14168 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 14169 */;
-import iapProducts from "iapProducts" /* 14170 */;
+import DeviceUtils from "DeviceUtils" /* 4962 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5684 */;
+import react_native2 from "react-native" /* 14381 */;
+import _mod14382 from "module_14382" /* 14382 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 14401 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 14402 */;
+import iapProducts from "iapProducts" /* 14403 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import UserStore from "UserStore" /* 1389 */;
-import IAPStore from "IAPStore" /* 7559 */;
+import IAPStore from "IAPStore" /* 7582 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ let _require, arr4, c4, closure_3, closure_4, closure_5;
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(7555);
+const ProductIds = tmp(7578);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -70,7 +70,7 @@ let obj = function _makeIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -99,8 +99,8 @@ let obj = function _makeIAPRequest() {
               } else {
                 c6 = 1;
                 const obj5 = { requestJSONString: tmp45, sku: tmp46, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: tmp47 };
-                const requestPurchase = require("module_14149").requestPurchase;
-                require("module_14149");
+                const requestPurchase = require("module_14382").requestPurchase;
+                require("module_14382");
                 c7 = 2;
                 c8 = 1;
                 const obj6 = { value: requestPurchase(obj5), done: false };
@@ -175,7 +175,7 @@ obj = function _purchaseProduct() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ obj = function _purchaseProduct() {
                 c5 = 1;
                 c6 = 1;
                 const obj5 = { value: obj7.clearTransactionIOS(), done: false };
-                obj7 = require("module_14149");
+                obj7 = require("module_14382");
                 return obj5;
               }
             }
@@ -268,7 +268,7 @@ obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -291,7 +291,7 @@ obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -465,7 +465,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -489,7 +489,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_14149");
+              obj4 = require("module_14382");
               return obj6;
             } else {
               c5 = 3;
@@ -548,7 +548,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod14149.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod14149.ErrorCode.E_UNKNOWN];
+let items = [_mod14382.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod14382.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {
@@ -768,13 +768,13 @@ let result = size.fileFinishedImporting("utils/native/IAPUtils.tsx");
 
 export default obj;
 export { convertToUUID };
-export const makeIAPRequest = function makeIAPRequest() {
+export function makeIAPRequest() {
   return obj(...arguments);
-};
+}
 export const useCanPurchaseIAP = tmp6;
 export { isStorekit2Available };
 export { remapStorefront };
-export const manageSubscription = function manageSubscription() {
+export function manageSubscription() {
   let result;
   obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
@@ -796,5 +796,5 @@ export const manageSubscription = function manageSubscription() {
     result = reject(error);
   }
   return result;
-};
+}
 export { shouldMockIAPForceEnable };

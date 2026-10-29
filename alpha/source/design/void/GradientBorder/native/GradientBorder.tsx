@@ -1,14 +1,14 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15891
+// Function ID: 15892
 // Name: GradientBorder
-// Dependencies: [19, 17, 1084, 21, 6519, 587, 5294, 2]
+// Dependencies: [19, 17, 1084, 21, 6543, 587, 5295, 2]
 
-// Module 15655 (GradientBorder)
+// Module 15891 (GradientBorder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import merged5 from "merged5" /* 6519 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import merged5 from "merged5" /* 6543 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;

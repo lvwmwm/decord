@@ -1,15 +1,15 @@
-// Module ID: 15975
-// Function ID: 15976
+// Module ID: 16211
+// Function ID: 16212
 // Name: ConjureVoiceGeometry
 // Dependencies: [2]
 // Exports: toListenerRelativePosition
 
-// Module 15975 (ConjureVoiceGeometry)
+// Module 16211 (ConjureVoiceGeometry)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/voice/ConjureVoiceGeometry.tsx");
 
-export const toListenerRelativePosition = function toListenerRelativePosition(forward, position) {
+export function toListenerRelativePosition(forward, position) {
   let point7;
   let x;
   let y;
@@ -59,4 +59,4 @@ export const toListenerRelativePosition = function toListenerRelativePosition(fo
     point7 = { x: diff6 * point3.x + diff7 * point3.y + diff8 * point3.z, y: diff6 * point4.x + diff7 * point4.y + diff8 * point4.z, z: -diff6 * point.x + diff7 * point.y + diff8 * point.z };
   }
   return point7;
-};
+}

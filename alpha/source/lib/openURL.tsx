@@ -1,10 +1,10 @@
-// Module ID: 5692
-// Function ID: 5693
+// Module ID: 5694
+// Function ID: 5695
 // Name: openURL
-// Dependencies: [5, 5693, 8899, 1999, 2]
+// Dependencies: [5, 5695, 8902, 2000, 2]
 // Exports: default
 
-// Module 5692 (openURL)
+// Module 5694 (openURL)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _openURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _openURL() {
             obj = { skipExtensionCheck, analyticsLocations: [] };
             value.default(closure_0, obj);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp14) {
           c4 = 3;

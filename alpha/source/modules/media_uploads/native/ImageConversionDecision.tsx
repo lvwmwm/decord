@@ -1,21 +1,21 @@
-// Module ID: 8195
-// Function ID: 8196
+// Module ID: 8217
+// Function ID: 8218
 // Name: ImageConversionDecision
-// Dependencies: [1381, 8196, 2]
+// Dependencies: [1381, 8218, 2]
 // Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 8195 (ImageConversionDecision)
+// Module 8217 (ImageConversionDecision)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import IosImageTypesManagerDefault from "IosImageTypesManager" /* 8196 */;
+import IosImageTypesManagerDefault from "IosImageTypesManager" /* 8218 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
 
-export const isPhotoKitAsset = function isPhotoKitAsset(c0, c1) {
+export function isPhotoKitAsset(c0, c1) {
   const tmp = null != c0.match(/^ph:\/\//i) && null != c1;
   return tmp;
-};
-export const isHeicUTI = function isHeicUTI(str) {
+}
+export function isHeicUTI(str) {
   if (null == str) {
     return false;
   } else {
@@ -23,8 +23,8 @@ export const isHeicUTI = function isHeicUTI(str) {
     const hasItem = formatted.includes("heic") || formatted.includes("heif");
     return hasItem;
   }
-};
-export const shouldForceConvertToJPG = function shouldForceConvertToJPG(c0, c1, value) {
+}
+export function shouldForceConvertToJPG(c0, c1, value) {
   const obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
@@ -52,8 +52,8 @@ export const shouldForceConvertToJPG = function shouldForceConvertToJPG(c0, c1, 
     isIOSResult = tmp5;
   }
   return isIOSResult;
-};
-export const shouldConvertToJPG = function shouldConvertToJPG(c0, c1, c2, c4, c7) {
+}
+export function shouldConvertToJPG(c0, c1, c2, c4, c7) {
   let flag = c7;
   if (c7 === undefined) {
     flag = true;
@@ -91,7 +91,7 @@ export const shouldConvertToJPG = function shouldConvertToJPG(c0, c1, c2, c4, c7
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const tmp14Result = tmp14(8196);
+              const tmp14Result = tmp14(8218);
               const supportedExtensions = tmp14Result.getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
@@ -127,4 +127,4 @@ export const shouldConvertToJPG = function shouldConvertToJPG(c0, c1, c2, c4, c7
   } else {
     return false;
   }
-};
+}

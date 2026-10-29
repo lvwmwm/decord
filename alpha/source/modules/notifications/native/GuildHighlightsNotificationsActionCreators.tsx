@@ -1,14 +1,14 @@
-// Module ID: 10076
-// Function ID: 10077
+// Module ID: 10108
+// Function ID: 10109
 // Name: GuildHighlightsNotificationsActionCreators
-// Dependencies: [10077, 1084, 5246, 10078, 1999, 1125, 1264, 2]
+// Dependencies: [10109, 1084, 5247, 10110, 2000, 1125, 1264, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 10076 (GuildHighlightsNotificationsActionCreators)
+// Module 10108 (GuildHighlightsNotificationsActionCreators)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import Constants2 from "Constants" /* 10077 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import Constants2 from "Constants" /* 10109 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let constants = Constants2.NotificationUserFeedbackReasons;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/notifications/native/GuildHighlightsNotificationsActionCreators.tsx");
 
-export const openGuildHighlightNotificationForPush = function openGuildHighlightNotificationForPush(guild_id2, message, notificationType, MESSAGE_EMBED, arg4) {
+export function openGuildHighlightNotificationForPush(guild_id2, message, notificationType, MESSAGE_EMBED, arg4) {
   let _location;
   let guild_id;
   let intl;
@@ -64,7 +64,7 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     }
   };
   const obj3 = { value: constants.TOO_MANY, label: intl.string(require("intl").t.pLeQp0) };
-  const tmp2 = require("asyncRequire")(10078, dependencyMap.paths);
+  const tmp2 = require("asyncRequire")(10110, dependencyMap.paths);
   intl = require("intl").intl;
   items = [obj3, , , , ];
   const obj4 = { value: constants.IRRELEVANT_CHANNEL, label: intl2.string(require("intl").t.Lu4n25) };
@@ -80,4 +80,4 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
   intl5 = require("intl").intl;
   items[4] = obj7;
   openLazy(tmp2, "GuildHighlightsNotifications", obj);
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 10822
-// Function ID: 10823
+// Module ID: 10898
+// Function ID: 10899
 // Name: conjurePreviewClaims
 // Dependencies: [32, 2]
 // Exports: awaitConjurePreviewClaim, clearConjurePreviewClaims, resolveConjurePreviewClaim
 
-// Module 10822 (conjurePreviewClaims)
+// Module 10898 (conjurePreviewClaims)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const map1 = new Map();
 const map2 = new Map();
 let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewClaims.tsx");
 
-export const awaitConjurePreviewClaim = function awaitConjurePreviewClaim(projectId, id) {
+export function awaitConjurePreviewClaim(projectId, id) {
   let resolved;
   let timerId;
   map = id;
@@ -75,8 +75,8 @@ export const awaitConjurePreviewClaim = function awaitConjurePreviewClaim(projec
     });
   }
   return resolved;
-};
-export const resolveConjurePreviewClaim = function resolveConjurePreviewClaim(projectId, id, upload_token) {
+}
+export function resolveConjurePreviewClaim(projectId, id, upload_token) {
   let timerId;
   let timerId1;
   const value = map.get(id);
@@ -119,8 +119,8 @@ export const resolveConjurePreviewClaim = function resolveConjurePreviewClaim(pr
     const merged1 = Object.assign(obj7);
     const result = set(id, obj8);
   }
-};
-export const clearConjurePreviewClaims = function clearConjurePreviewClaims(projectId) {
+}
+export function clearConjurePreviewClaims(projectId) {
   let tmp6;
   let tmp7;
   const items = [...map];
@@ -152,4 +152,4 @@ export const clearConjurePreviewClaims = function clearConjurePreviewClaims(proj
     }
     continue;
   }
-};
+}

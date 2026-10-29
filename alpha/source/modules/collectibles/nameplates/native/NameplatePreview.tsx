@@ -1,24 +1,24 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11267
+// Function ID: 11268
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5005, 4916, 21, 5004, 587, 558, 576, 1989, 6817, 8685, 504, 5058, 6402, 1199, 8775, 9442, 10696, 10697, 5270, 2]
+// Dependencies: [19, 17, 5006, 4917, 21, 5005, 587, 558, 576, 1990, 6840, 8688, 504, 5059, 6426, 1199, 8778, 9473, 10729, 10730, 5271, 2]
 
-// Module 11213 (NameplatePreview)
+// Module 11267 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(8775);
+const profile_customization_ProfileCustomizationUtils = tmp(8778);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -73,7 +73,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
     if (cResult[1] === nameplateData) {
       tmp9 = cResult[2];
     }
-    const tmpResult = tmp(6817);
+    const tmpResult = tmp(6840);
     const avatarDecoration = tmpResult.useAvatarDecoration(user, guildId);
     if (cResult[3] !== guildId) {
       const obj2 = { guildId };
@@ -83,7 +83,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
     } else {
       tmp12 = cResult[4];
     }
-    const pendingAvatarDecoration = guildId(8685)(tmp12).pendingAvatarDecoration;
+    const pendingAvatarDecoration = guildId(8688)(tmp12).pendingAvatarDecoration;
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
       }
       const tmpResult6 = tmp(504);
       const stateFromStores1 = tmpResult6.useStateFromStores(tmp19, tmp21);
-      const tmp13Result = guildId(5058);
+      const tmp13Result = guildId(5059);
       const name = tmp13Result.useName(user);
       if (pendingGlobalName == null) {
         let tmp25 = name;
@@ -145,7 +145,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
           if (cResult[13] === user.id) {
             tmp29 = cResult[14];
           }
-          const tmp30 = guildId(6402)(tmp29);
+          const tmp30 = guildId(6426)(tmp29);
           if (cResult[15] === tmp28) {
             let tmp31;
             let tmp39;
@@ -209,7 +209,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
                   }
                 }
               }
-              const tmpResult7 = tmp(8775);
+              const tmpResult7 = tmp(8778);
               const avatarSource = tmpResult7.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
               cResult[18] = guildId;
               cResult[19] = pendingAvatarSrc;
@@ -316,7 +316,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
                           let tmp64 = null == tmp30;
                           if (tmp64) {
                             const obj7 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
-                            tmp64 = closure_7(tmp(5270).Text, obj7);
+                            tmp64 = closure_7(tmp(5271).Text, obj7);
                           }
                           cResult[44] = tmp30;
                           cResult[45] = pendingGlobalName;
@@ -328,8 +328,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
                   }
                   let tmp60 = null != tmp30;
                   if (tmp60) {
-                    const obj8 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp(10697).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-                    const tmp13Result2 = guildId(10696);
+                    const obj8 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp(10730).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+                    const tmp13Result2 = guildId(10729);
                     tmp60 = closure_7(tmp13Result2, obj8);
                   }
                   cResult[38] = tmp30;
@@ -352,8 +352,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
             cResult[31] = undefined !== animate && animate;
             cResult[32] = tmp9;
             cResult[33] = tmp6Result.nameplate;
-            cResult[34] = closure_7(guildId(9442), obj10);
-            closure_7(guildId(9442), obj10);
+            cResult[34] = closure_7(guildId(9473), obj10);
+            closure_7(guildId(9473), obj10);
             class E {
               constructor() {
                 let member = null;
@@ -411,7 +411,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePre
   }
   let nameplateData1 = nameplateData;
   if (null != nameplate) {
-    const tmpResult8 = tmp(1989);
+    const tmpResult8 = tmp(1990);
     nameplateData1 = tmpResult8.getNameplateData(nameplate);
   }
   cResult[0] = nameplate;

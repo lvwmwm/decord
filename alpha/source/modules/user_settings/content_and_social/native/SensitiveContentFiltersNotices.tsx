@@ -1,16 +1,16 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16619
+// Function ID: 16620
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7453, 21, 558, 576, 16373, 7435, 5696, 2064, 16242, 1125, 7918, 6692, 2]
+// Dependencies: [19, 7476, 21, 558, 576, 16611, 7458, 5698, 2065, 16480, 1125, 7941, 6716, 2]
 
-// Module 16381 (SensitiveContentFiltersNotices)
+// Module 16619 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import Constants from "Constants" /* 7453 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16242 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import Constants from "Constants" /* 7476 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16480 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(5);
-  const obj2 = sensitiveContentFilterHelpArticle(16373);
+  const obj2 = sensitiveContentFilterHelpArticle(16611);
   const isTinyBroncoSettingsNoticeEnabled = obj2.useIsTinyBroncoSettingsNoticeEnabled();
-  const obj3 = sensitiveContentFilterHelpArticle(7435);
+  const obj3 = sensitiveContentFilterHelpArticle(7458);
   sensitiveContentFilterHelpArticle = obj3.useSensitiveContentFilterHelpArticle();
   if (cResult[0] !== sensitiveContentFilterHelpArticle) {
     function handleOpenHelpCenterArticle() {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
     let tmp14;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp16 = jsx(tmp(16373).ContentFiltersTeenNotice, {});
+      const tmp16 = jsx(tmp(16611).ContentFiltersTeenNotice, {});
       cResult[2] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(16373).ContentFiltersTeenNotice, {});
+    tmp4Result = tmp4(tmp(16611).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1125).t.EUo0yj,

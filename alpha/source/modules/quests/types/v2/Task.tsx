@@ -1,14 +1,14 @@
-// Module ID: 7821
-// Function ID: 7822
+// Module ID: 7844
+// Function ID: 7845
 // Name: Task
-// Dependencies: [7822, 6753, 7823, 7824, 2]
+// Dependencies: [7845, 6776, 7846, 7847, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 7821 (Task)
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6753 */;
-import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7822 */;
-import v2_Video from "v2/Video" /* 7823 */;
-import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7824 */;
+// Module 7844 (Task)
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6776 */;
+import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7845 */;
+import v2_Video from "v2/Video" /* 7846 */;
+import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7847 */;
 import size from "module_2" /* 2 */;
 
 function _firstPartyTasksFromServer(tasks) {
@@ -47,7 +47,7 @@ function _thirdPartyTasksFromServer(tasks) {
 }
 const result = size.fileFinishedImporting("modules/quests/types/v2/Task.tsx");
 
-export const questTaskConfigFromServer = function questTaskConfigFromServer(type) {
+export function questTaskConfigFromServer(type) {
   type = type.type;
   if (QuestTaskConfigTypes.QuestTaskConfigTypes.FIRST_PARTY === type) {
     const obj2 = { type: QuestTaskConfigTypes.QuestTaskConfigTypes.FIRST_PARTY, tasks: _firstPartyTasksFromServer(type.tasks), joinOperator: type.join_operator };
@@ -57,8 +57,8 @@ export const questTaskConfigFromServer = function questTaskConfigFromServer(type
     ({ enrollment_url: obj.enrollmentUrl, developer_application_id: obj.developerApplicationId, join_operator: obj.joinOperator } = type);
     return obj;
   }
-};
-export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(task_config_v2) {
+}
+export function questTaskConfigV2FromServer(task_config_v2) {
   try {
     const tmp = task_config_v2;
     const tmp2 = globalThis;
@@ -139,4 +139,4 @@ export const questTaskConfigV2FromServer = function questTaskConfigV2FromServer(
     let obj2 = { tasks: {}, joinOperator: QuestTaskJoinOperator.QuestTaskJoinOperator.OR };
     return obj2;
   }
-};
+}

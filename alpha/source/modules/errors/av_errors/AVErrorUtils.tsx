@@ -1,19 +1,19 @@
-// Module ID: 19702
-// Function ID: 19703
+// Module ID: 19924
+// Function ID: 19925
 // Name: AVErrorUtils
-// Dependencies: [5767, 1101, 5859, 2]
+// Dependencies: [5769, 1101, 5861, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 19702 (AVErrorUtils)
+// Module 19924 (AVErrorUtils)
 import DurationsDefault from "Durations" /* 1101 */;
-import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5859 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5767 */;
+import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5861 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5769 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = 10 * DurationsDefault.Millis.SECOND;
 let result = size.fileFinishedImporting("modules/errors/av_errors/AVErrorUtils.tsx");
 
-export const getReportInboundErrors = function getReportInboundErrors() {
+export function getReportInboundErrors() {
   const WindowVisibilityVideoManager = WindowVisibilityVideoManager3.WindowVisibilityVideoManager;
   let result = WindowVisibilityVideoManager.isIncomingVideoEnabled();
   if (result) {
@@ -23,8 +23,8 @@ export const getReportInboundErrors = function getReportInboundErrors() {
     result = nowResult - WindowVisibilityVideoManager2.lastIncomingVideoEnabledChangeTime() > closure_3;
   }
   return result;
-};
-export const getAccumulatedStatsWithMinDatapoints = function getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId) {
+}
+export function getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, ownerId) {
   let num = arg2;
   if (arg2 === undefined) {
     num = 15;
@@ -46,8 +46,8 @@ export const getAccumulatedStatsWithMinDatapoints = function getAccumulatedStats
     }
   }
   return tmp3;
-};
-export const getWarningFrameRate = function getWarningFrameRate(maxFrameRate) {
+}
+export function getWarningFrameRate(maxFrameRate) {
   let num = maxFrameRate;
   if (maxFrameRate === undefined) {
     num = 30;
@@ -65,4 +65,4 @@ export const getWarningFrameRate = function getWarningFrameRate(maxFrameRate) {
     num2 = num4;
   }
   return num2;
-};
+}

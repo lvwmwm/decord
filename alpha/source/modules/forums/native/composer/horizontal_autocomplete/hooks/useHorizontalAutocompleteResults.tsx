@@ -1,11 +1,11 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10262
+// Function ID: 10263
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [32, 19, 1084, 10230, 7791, 504, 2]
+// Dependencies: [32, 19, 1084, 10263, 7813, 504, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 10229 (useHorizontalAutocompleteResults)
-import AutocompleteOptions from "AutocompleteOptions" /* 10230 */;
+// Module 10262 (useHorizontalAutocompleteResults)
+import AutocompleteOptions from "AutocompleteOptions" /* 10263 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
@@ -19,7 +19,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ AutoCompleteResultTypes: closure_4, ChannelTypes: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx");
 
-export const useHorizontalAutocompleteResults = function useHorizontalAutocompleteResults(channel) {
+export function useHorizontalAutocompleteResults(channel) {
   let closure_4;
   let closure_9;
   let first;
@@ -173,4 +173,4 @@ export const useHorizontalAutocompleteResults = function useHorizontalAutocomple
   };
   items6 = [first];
   return obj2;
-};
+}

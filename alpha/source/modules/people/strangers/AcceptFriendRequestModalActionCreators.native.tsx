@@ -1,16 +1,16 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 10699
+// Function ID: 10700
 // Name: AcceptFriendRequestModalActionCreators
-// Dependencies: [10667, 1084, 21, 1264, 5945, 10668, 1999, 2]
+// Dependencies: [10700, 1084, 21, 1264, 5947, 10701, 2000, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 10666 (AcceptFriendRequestModalActionCreators)
+// Module 10699 (AcceptFriendRequestModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5945 */;
-import Constants2 from "Constants" /* 10667 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
+import Constants2 from "Constants" /* 10700 */;
 import size from "module_2" /* 2 */;
 
 const type = Constants2.ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
@@ -18,7 +18,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/people/strangers/AcceptFriendRequestModalActionCreators.native.tsx");
 
-export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequestConfirmModal(arg0) {
+export function openAcceptFriendRequestConfirmModal(arg0) {
   ({ onConfirm: require, onCancel: importDefault } = arg0);
   const obj = AnalyticsUtilsDefault;
   const obj2 = { type };
@@ -27,7 +27,7 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
   const obj4 = {
     importer() {
       let onConfirm;
-      const promise = asyncRequire(10668, dependencyMap.paths);
+      const promise = asyncRequire(10701, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -45,4 +45,4 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
     isDismissable: false
   };
   obj3.openLazy(obj4);
-};
+}

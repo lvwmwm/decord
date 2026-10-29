@@ -1,18 +1,18 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 18037
+// Function ID: 18038
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5270, 587, 5004, 558, 576, 5085, 8796, 10660, 1125, 2]
+// Dependencies: [19, 17, 21, 5271, 587, 5005, 558, 576, 5086, 8799, 10693, 1125, 2]
 
-// Module 17799 (MessagesItemSuggestedFriendsHeader)
+// Module 18037 (MessagesItemSuggestedFriendsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8796 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8799 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj3;
 let tmp;
 let tmp6;
 const intl2 = tmp(1125);
-const ThemedGradientDefault = tmp6(10660);
+const ThemedGradientDefault = tmp6(10693);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const sum = Text_Text.TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;

@@ -1,15 +1,15 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13491
+// Function ID: 13492
 // Name: showNitroLockedToast
-// Dependencies: [6398, 5698, 2]
+// Dependencies: [6422, 5700, 2]
 // Exports: default
 
-// Module 13258 (showNitroLockedToast)
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6398 */;
+// Module 13491 (showNitroLockedToast)
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6422 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ToastUtils = tmp(5698);
+const ToastUtils = tmp(5700);
 const result = size.fileFinishedImporting("modules/checkpoint/native/showNitroLockedToast.tsx");
 
 export default function showNitroLockedToast(nextBlockedTrait) {

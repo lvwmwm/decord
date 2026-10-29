@@ -1,17 +1,17 @@
-// Module ID: 10807
-// Function ID: 10808
+// Module ID: 10883
+// Function ID: 10884
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: [4855, 10808, 2]
+// Dependencies: [4856, 10884, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10807 (leaveCurrentEmbeddedActivity)
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10808 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+// Module 10883 (leaveCurrentEmbeddedActivity)
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10884 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");
 
-export const leaveCurrentEmbeddedActivity = function leaveCurrentEmbeddedActivity() {
+export function leaveCurrentEmbeddedActivity() {
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
   if (null != currentEmbeddedActivity) {
     const obj3 = { location: null, applicationId: null, showFeedback: false };
@@ -19,4 +19,4 @@ export const leaveCurrentEmbeddedActivity = function leaveCurrentEmbeddedActivit
     const obj = leaveEmbeddedActivity;
     const result = obj.leaveEmbeddedActivity(obj3);
   }
-};
+}

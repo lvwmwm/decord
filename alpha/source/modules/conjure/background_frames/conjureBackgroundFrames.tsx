@@ -1,22 +1,22 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18561
+// Function ID: 18562
 // Name: conjureBackgroundFrames
-// Dependencies: [19, 6810, 4856, 6811, 18328, 18330, 10804, 15971, 5662, 10803, 10765, 6813, 558, 576, 2]
+// Dependencies: [19, 6833, 4857, 6834, 18562, 18564, 10880, 16207, 5664, 10879, 10840, 6836, 558, 576, 2]
 // Exports: returnToConjureFrameSurface
 
-// Module 18327 (conjureBackgroundFrames)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5662 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10765 */;
-import leaveFrame from "leaveFrame" /* 10803 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15971 */;
-import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 18328 */;
-import conjureBackgroundFramePlatformDefault from "conjureBackgroundFramePlatform" /* 18330 */;
+// Module 18561 (conjureBackgroundFrames)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10840 */;
+import leaveFrame from "leaveFrame" /* 10879 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10880 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 16207 */;
+import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 18562 */;
+import conjureBackgroundFramePlatformDefault from "conjureBackgroundFramePlatform" /* 18564 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ function releaseConjureFrame(frameId) {
     let result = obj8.shouldRunInBackgroundOnRelease(frame);
     const tmp13 = require;
     if (result) {
-      const tmp13Result = tmp13(18328);
+      const tmp13Result = tmp13(18562);
       result = !tmp13Result.isBuilderPreviewFrame(frame);
     }
     if (result) {
@@ -84,7 +84,7 @@ function isRunningInBackground(surface) {
       obj4.isActivityPopoutOpen();
       const tmp11 = importDefault;
       if (isPictureInPictureResult) {
-        const tmp11Result = tmp11(18330);
+        const tmp11Result = tmp11(18564);
         isPictureInPictureResult = tmp11Result.isPictureInPicture(surface);
       }
       tmp10 = isPictureInPictureResult;
@@ -245,18 +245,18 @@ let result = size.fileFinishedImporting("modules/conjure/background_frames/conju
 
 export default tmp3;
 export { closeBackgroundedConjureAppFrames };
-export const returnToConjureFrameSurface = function returnToConjureFrameSurface(frame) {
+export function returnToConjureFrameSurface(frame) {
   if (frame.intent === metroRequire.INLINE) {
     const obj3 = conjurePreviewSurface;
     const tmp6 = require;
     if (!obj3.isConjurePreviewSurface(frame.surface)) {
-      const tmp6Result = tmp6(15971);
+      const tmp6Result = tmp6(16207);
       if (tmp6Result.isConjureApplication(frame.applicationId)) {
         const channel = ChannelStore.getChannel(getChannelIdForEmbeddedSurfaceDefault(frame.surface));
         let openSurfaceChannelResult = null != channel;
         const tmp2 = importDefault;
         if (openSurfaceChannelResult) {
-          const tmp2Result = tmp2(18330);
+          const tmp2Result = tmp2(18564);
           openSurfaceChannelResult = tmp2Result.openSurfaceChannel(frame.surface, channel);
         }
         return openSurfaceChannelResult;
@@ -264,4 +264,4 @@ export const returnToConjureFrameSurface = function returnToConjureFrameSurface(
     }
   }
   return false;
-};
+}

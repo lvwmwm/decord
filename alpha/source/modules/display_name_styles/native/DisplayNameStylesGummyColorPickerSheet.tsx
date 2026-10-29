@@ -1,27 +1,28 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 17212
+// Function ID: 17213
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1407, 1084, 21, 1406, 5004, 587, 558, 576, 10699, 1408, 568, 16974, 5248, 16975, 1264, 5246, 1125, 5280, 16970, 16135, 10154, 5301, 2]
+// Dependencies: [32, 19, 17, 1407, 1084, 21, 1406, 5005, 587, 558, 576, 10732, 1408, 568, 17213, 5249, 17214, 1264, 5247, 1125, 5281, 17209, 16372, 10187, 5302, 2]
 
-// Module 16973 (DisplayNameStylesGummyColorPickerSheet)
+// Module 17212 (DisplayNameStylesGummyColorPickerSheet)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 16975 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 17214 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, initialColor, obj1;
+let BottomSheet, dependencyMap;
 
 let StyleSheet;
 let c10;
@@ -35,10 +36,10 @@ let obj5;
 let obj6;
 let obj7;
 let size;
-let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 ({ View: hasOwnProperty, Pressable: metroRequire, StyleSheet } = react_native);
-let closure_7 = DisplayNameStylesConstants.DISPLAY_NAME_STYLES_GUMMY_PRESETS;
-let AnalyticEvents = Constants.AnalyticEvents;
+let colors = DisplayNameStylesConstants.DISPLAY_NAME_STYLES_GUMMY_PRESETS;
+const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = DisplayNameStylesUtils.hueToGummyColor(0);
 let createStyles = createStyles_mod;
@@ -55,23 +56,23 @@ size = { width: 28, height: 28, borderRadius: nativeDefault.radii.round, backgro
 let closure_12 = createStyles(obj);
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   let closure_2;
-  let closure_3;
-  let closure_5;
-  let closure_9;
-  let findIndexResult;
-  let tmp24;
+  let closure_4;
+  let first1;
+  let swatch;
+  let swatchWrapper;
   let tmp6;
   let tmp = selectedColors;
+  let tmp2 = dependencyMap;
   let obj = selectedColors(576);
-  const cResult = obj.c(72);
+  const cResult = obj.c(69);
   selectedColors = selectedColors.selectedColors;
   const onSelectColors = selectedColors.onSelectColors;
   let tmp4 = closure_12();
   dependencyMap = tmp4;
-  let obj2 = selectedColors(10699);
+  let obj2 = selectedColors(10732);
   const displayNameStylesEffectConfig = obj2.useDisplayNameStylesEffectConfig(selectedColors(1408).DisplayNameEffect.GUMMY);
   if (cResult[0] !== selectedColors) {
-    const tmp7 = selectedColors.length > 0 && !closure_7.some((item) => {
+    const tmp7 = selectedColors.length > 0 && !first1.some((item) => {
       const obj = shallowEqual;
       return obj.areArraysShallowEqual(item, selectedColors);
     });
@@ -81,375 +82,369 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   } else {
     tmp6 = cResult[1];
   }
-  _slicedToArray = tmp6;
+  react = tmp6;
   if (cResult[2] === tmp6) {
     let tmp9;
-    let tmp13;
-    let tmp23;
     if (cResult[3] === selectedColors) {
       tmp9 = cResult[4];
     }
-    let obj3 = initialColor;
-    [initialColor, closure_5] = initialColor.useState(tmp9);
-    const tmp10 = _slicedToArray;
-    if (cResult[5] !== selectedColors) {
-      class M {
-        constructor() {
-          let gummyColors = selectedColors;
-          if (selectedColors.length <= 0) {
-            const obj = DisplayNameStylesUtils;
-            gummyColors = obj.buildGummyColors(closure_11);
-          }
-          return gummyColors;
-        }
+    let obj3 = react;
+    const tmp11 = displayNameStylesEffectConfig(react.useState(tmp9), 2);
+    const initialColor = tmp11[0];
+    let closure_6 = tmp11[1];
+    if (cResult[5] === displayNameStylesEffectConfig.defaultColors) {
+      let tmp13;
+      let tmp21;
+      let tmp28;
+      if (cResult[6] === selectedColors) {
+        tmp13 = cResult[7];
       }
-      cResult[5] = selectedColors;
-      cResult[6] = M;
-      tmp13 = M;
-    } else {
-      class M {
-        constructor() {
-          let gummyColors = selectedColors;
-          if (selectedColors.length <= 0) {
-            const obj = DisplayNameStylesUtils;
-            gummyColors = obj.buildGummyColors(closure_11);
-          }
-          return gummyColors;
-        }
-      }
-    }
-    const tmp10Result = tmp10(obj3.useState(tmp13), 2);
-    const first1 = tmp10Result[0];
-    closure_7 = tmp10Result[1];
-    const tmp17 = onSelectColors(16974);
-    const tmp17Result = tmp17(tmp(1408).DisplayNameEffect.GUMMY);
-    if (cResult[7] !== first1) {
-      class L {
-        constructor(colors) {
-          colors = colors.colors;
-          const obj = shallowEqual;
-          return obj.areArraysShallowEqual(colors, first1);
-        }
-      }
-      cResult[7] = first1;
-      cResult[8] = L;
-    } else {
-      class L {
-        constructor(colors) {
-          colors = colors.colors;
-          const obj = shallowEqual;
-          return obj.areArraysShallowEqual(colors, first1);
-        }
-      }
-    }
-    AnalyticEvents = tmp17Result.findIndex(tmp18);
-    tmp17Result.findIndex(tmp18);
-    class I {
-      constructor() {
-        let result;
-        const tmp = closure_3;
-        if (tmp) {
-          const obj = DisplayNameStylesUtils;
-          result = obj.rebuildGummySourceColor(selectedColors);
-        } else {
-          result = closure_11;
-        }
-        return result;
-      }
-    }
-    if (cResult[9] !== initialColor) {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-      cResult[9] = initialColor;
-      cResult[10] = O;
-    } else {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-      cResult[11] = tmp24;
-      tmp23 = tmp24;
-    } else {
-      class O {
-        constructor() {
-          obj = closure_0(closure_2[15]);
-          result = obj.triggerHapticFeedback(closure_0(closure_2[15]).HapticFeedbackTypes.IMPACT_LIGHT);
-          obj1 = {
-            initialColor: closure_4,
-            onSelect(color) {
-                      closure_1_5(color);
-                      const obj = selectedColors(closure_2[6]);
-                      closure_1_7(obj.buildGummyColors(color));
-                    }
-          };
-          tmp2 = closure_1(closure_2[16])(obj1);
-          return;
-        }
-      }
-    }
-    tmp24 = tmp23;
-    const _Symbol2 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-      cResult[12] = Y;
-    } else {
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-    }
-    if (cResult[13] === first1) {
-      let tmp27;
-      class Y {
-        constructor() {
-          const items = [...closure_7[0]];
-          closure_7(items);
-          closure_5(closure_11);
-        }
-      }
-      const _Symbol3 = Symbol;
-      const name = displayNameStylesEffectConfig.name;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class Y {
+      const tmp10Result = displayNameStylesEffectConfig(obj3.useState(tmp13), 2);
+      first1 = tmp10Result[0];
+      let closure_8 = tmp10Result[1];
+      if (cResult[8] !== selectedColors) {
+        class L {
           constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
+            const createColorPaletteList = DisplayNameStylesUtils.createColorPaletteList;
+            let tmp2 = null;
+            DisplayNameStylesUtils;
+            const GUMMY = DisplayNameEffect.DisplayNameEffect.GUMMY;
+            if (selectedColors.length > 0) {
+              tmp2 = selectedColors;
+            }
+            return createColorPaletteList(GUMMY, tmp2);
           }
         }
-        const stringResult = obj5.string(tmp(1125).t.XqMe3N);
-        cResult[16] = stringResult;
-        tmp27 = stringResult;
+        cResult[8] = selectedColors;
+        cResult[9] = L;
+      } else {
+        class L {
+          constructor() {
+            const createColorPaletteList = DisplayNameStylesUtils.createColorPaletteList;
+            let tmp2 = null;
+            DisplayNameStylesUtils;
+            const GUMMY = DisplayNameEffect.DisplayNameEffect.GUMMY;
+            if (selectedColors.length > 0) {
+              tmp2 = selectedColors;
+            }
+            return createColorPaletteList(GUMMY, tmp2);
+          }
+        }
+      }
+      let closure_9 = displayNameStylesEffectConfig(obj3.useState(tmp16), 2)[1];
+      displayNameStylesEffectConfig(obj3.useState(tmp16), 2);
+      class I {
+        constructor() {
+          let defaultColors = selectedColors;
+          if (selectedColors.length <= 0) {
+            defaultColors = displayNameStylesEffectConfig.defaultColors;
+          }
+          return defaultColors;
+        }
+      }
+      const tmp20 = onSelectColors(17213);
+      const tmp20Result = tmp20(tmp(1408).DisplayNameEffect.GUMMY, tmp18);
+      if (cResult[10] !== first1) {
+        class Y {
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
+          }
+        }
+        cResult[10] = first1;
+        cResult[11] = Y;
+        tmp21 = Y;
       } else {
         class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
           }
         }
       }
-      if (cResult[17] !== tmp26) {
+      const findIndexResult = tmp20Result.findIndex(tmp21);
+      let closure_10 = findIndexResult;
+      if (cResult[12] !== initialColor) {
         class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
           }
         }
-        let obj4 = { variant: "primary", size: "sm", text: tmp27, onPress: tmp26 };
-        cResult[17] = tmp26;
-        cResult[18] = tmp24(tmp(5280).Button, obj4);
-        const tmp30 = tmp24(tmp(5280).Button, obj4);
+        cResult[12] = initialColor;
+        cResult[13] = tmp25;
       } else {
         class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
           }
         }
       }
-      if (cResult[19] === displayNameStylesEffectConfig.name) {
+      const _Symbol = Symbol;
+      class M {
+        constructor() {
+          let result;
+          const tmp = closure_4;
+          if (tmp) {
+            const obj = DisplayNameStylesUtils;
+            result = obj.rebuildGummySourceColor(selectedColors);
+          } else {
+            result = closure_11;
+          }
+          return result;
+        }
+      }
+      if (tmp26 === Symbol.for("react.memo_cache_sentinel")) {
         class Y {
-          constructor() {
-            const items = [...closure_7[0]];
-            closure_7(items);
-            closure_5(closure_11);
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
           }
         }
-        if (cResult[22] === tmp4.colorRowInset) {
+        cResult[14] = tmp29;
+        tmp28 = tmp29;
+      } else {
+        class Y {
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
+          }
+        }
+      }
+      closure_11 = tmp28;
+      const _Symbol2 = Symbol;
+      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+        class Y {
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
+          }
+        }
+        cResult[15] = tmp31;
+      } else {
+        class Y {
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
+          }
+        }
+      }
+      if (cResult[16] === first1) {
+        let tmp33;
+        class Y {
+          constructor(colors) {
+            colors = colors.colors;
+            const obj = shallowEqual;
+            return obj.areArraysShallowEqual(colors, first1);
+          }
+        }
+        const _Symbol3 = Symbol;
+        const name = displayNameStylesEffectConfig.name;
+        if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
           class Y {
+            constructor(colors) {
+              colors = colors.colors;
+              const obj = shallowEqual;
+              return obj.areArraysShallowEqual(colors, first1);
+            }
+          }
+          const stringResult = obj5.string(tmp(1125).t.XqMe3N);
+          cResult[19] = stringResult;
+          tmp33 = stringResult;
+        } else {
+          class Y {
+            constructor(colors) {
+              colors = colors.colors;
+              const obj = shallowEqual;
+              return obj.areArraysShallowEqual(colors, first1);
+            }
+          }
+        }
+        if (cResult[20] !== tmp32) {
+          class Y {
+            constructor(colors) {
+              colors = colors.colors;
+              const obj = shallowEqual;
+              return obj.areArraysShallowEqual(colors, first1);
+            }
+          }
+          let obj4 = { variant: "primary", size: "sm", text: tmp33, onPress: tmp32 };
+          cResult[20] = tmp32;
+          cResult[21] = closure_9(tmp(5281).Button, obj4);
+          closure_9(tmp(5281).Button, obj4);
+          class I {
             constructor() {
-              const items = [...closure_7[0]];
-              closure_7(items);
-              closure_5(closure_11);
+              let defaultColors = selectedColors;
+              if (selectedColors.length <= 0) {
+                defaultColors = displayNameStylesEffectConfig.defaultColors;
+              }
+              return defaultColors;
             }
           }
-          if (!tmp20) {
-            class Y {
-              constructor() {
-                const items = [...closure_7[0]];
-                closure_7(items);
-                closure_5(closure_11);
-              }
+        } else {
+          class Y {
+            constructor(colors) {
+              colors = colors.colors;
+              const obj = shallowEqual;
+              return obj.areArraysShallowEqual(colors, first1);
             }
           }
-          if (cResult[25] === tmp4.swatch) {
-            let tmp43Result;
-            class Y {
-              constructor() {
-                const items = [...closure_7[0]];
-                closure_7(items);
-                closure_5(closure_11);
-              }
+        }
+        if (cResult[22] === displayNameStylesEffectConfig.name) {
+          class Y {
+            constructor(colors) {
+              colors = colors.colors;
+              const obj = shallowEqual;
+              return obj.areArraysShallowEqual(colors, first1);
             }
-            if (cResult[28] !== !tmp20) {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
-              }
-              tmp39[0] = !tmp20;
-              cResult[28] = !tmp20;
-              cResult[29] = tmp39;
-            } else {
-              class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
-                }
+          }
+          if (cResult[25] === tmp4.colorRowInset) {
+            let tmp44Result;
+            class Y {
+              constructor(colors) {
+                colors = colors.colors;
+                const obj = shallowEqual;
+                return obj.areArraysShallowEqual(colors, first1);
               }
             }
             const _Symbol4 = Symbol;
-            if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
+            ({ swatchWrapper, swatch } = tmp4);
+            if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
               class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
+                constructor(colors) {
+                  colors = colors.colors;
+                  const obj = shallowEqual;
+                  return obj.areArraysShallowEqual(colors, first1);
                 }
               }
-              cResult[30] = obj8.string(tmp(1125).t["FHBa/1"]);
+              cResult[28] = obj8.string(tmp(1125).t["FHBa/1"]);
               const stringResult1 = obj8.string(tmp(1125).t["FHBa/1"]);
             } else {
               class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
+                constructor(colors) {
+                  colors = colors.colors;
+                  const obj = shallowEqual;
+                  return obj.areArraysShallowEqual(colors, first1);
                 }
               }
             }
-            if (cResult[31] === first1) {
+            if (cResult[29] === first1) {
               class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
+                constructor(colors) {
+                  colors = colors.colors;
+                  const obj = shallowEqual;
+                  return obj.areArraysShallowEqual(colors, first1);
                 }
               }
             }
-            if (tmp20) {
+            if (findIndexResult >= 0) {
               class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
+                constructor(colors) {
+                  colors = colors.colors;
+                  const obj = shallowEqual;
+                  return obj.areArraysShallowEqual(colors, first1);
                 }
               }
               const obj6 = { style: tmp4.customSwatchEmpty };
-              tmp43Result = tmp43(closure_5, obj6);
+              tmp44Result = tmp44(initialColor, obj6);
             } else {
               class Y {
-                constructor() {
-                  const items = [...closure_7[0]];
-                  closure_7(items);
-                  closure_5(closure_11);
+                constructor(colors) {
+                  colors = colors.colors;
+                  const obj = shallowEqual;
+                  return obj.areArraysShallowEqual(colors, first1);
                 }
               }
-              tmp44[0] = first1;
-              tmp43Result = tmp43(tmp16(16135), tmp44);
+              tmp45[0] = first1;
+              tmp44Result = tmp44(tmp19(16372), tmp45);
             }
-            cResult[31] = first1;
-            cResult[32] = tmp20;
-            cResult[33] = tmp4.customSwatchEmpty;
-            cResult[34] = tmp43Result;
+            class I {
+              constructor() {
+                let defaultColors = selectedColors;
+                if (selectedColors.length <= 0) {
+                  defaultColors = displayNameStylesEffectConfig.defaultColors;
+                }
+                return defaultColors;
+              }
+            }
+            cResult[29] = first1;
+            cResult[30] = findIndexResult >= 0;
+            cResult[31] = tmp4.customSwatchEmpty;
+            cResult[32] = tmp44Result;
           }
-          let items = [tmp4.swatch, !tmp20];
-          cResult[25] = tmp4.swatch;
-          cResult[26] = !tmp20;
+          let items = [, ];
+          ({ colorRowInset: arr2[0], optionContainer: arr2[1] } = tmp4);
+          cResult[25] = tmp4.colorRowInset;
+          cResult[26] = tmp4.optionContainer;
+          class I {
+            constructor() {
+              let defaultColors = selectedColors;
+              if (selectedColors.length <= 0) {
+                defaultColors = displayNameStylesEffectConfig.defaultColors;
+              }
+              return defaultColors;
+            }
+          }
           cResult[27] = items;
         }
-        const items1 = [, ];
-        ({ colorRowInset: arr2[0], optionContainer: arr2[1] } = tmp4);
-        cResult[22] = tmp4.colorRowInset;
-        cResult[23] = tmp4.optionContainer;
-        cResult[24] = items1;
+        const obj7 = { title: null, trailing: tmp35 };
+        class I {
+          constructor() {
+            let defaultColors = selectedColors;
+            if (selectedColors.length <= 0) {
+              defaultColors = displayNameStylesEffectConfig.defaultColors;
+            }
+            return defaultColors;
+          }
+        }
+        cResult[22] = displayNameStylesEffectConfig.name;
+        cResult[23] = tmp35;
+        cResult[24] = closure_9(onSelectColors(17209), obj7);
+        const tmp39 = closure_9(onSelectColors(17209), obj7);
       }
-      const obj7 = { title: name, trailing: tmp29 };
-      cResult[19] = displayNameStylesEffectConfig.name;
-      cResult[20] = tmp29;
-      cResult[21] = tmp24(onSelectColors(16970), obj7);
-      const tmp33 = tmp24(onSelectColors(16970), obj7);
+      class Q {
+        constructor() {
+          const obj = HapticUtils;
+          const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+          onSelectColors(first1);
+          const obj2 = AnalyticsUtilsDefault;
+          const obj3 = { default: false, colors: first1 };
+          obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
+          const obj4 = ActionSheetActionCreatorsDefault;
+          obj4.hideActionSheet();
+        }
+      }
+      cResult[16] = first1;
+      cResult[17] = onSelectColors;
+      cResult[18] = Q;
     }
-    class X {
+    class I {
       constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-        onSelectColors(first1);
-        const obj2 = AnalyticsUtilsDefault;
-        const obj3 = { default: false, colors: first1 };
-        obj2.track(AnalyticEvents.DISPLAY_NAME_STYLES_COLOR_SELECTED, obj3);
-        const obj4 = ActionSheetActionCreatorsDefault;
-        obj4.hideActionSheet();
+        let defaultColors = selectedColors;
+        if (selectedColors.length <= 0) {
+          defaultColors = displayNameStylesEffectConfig.defaultColors;
+        }
+        return defaultColors;
       }
     }
-    cResult[13] = first1;
-    cResult[14] = onSelectColors;
-    cResult[15] = X;
+    cResult[5] = displayNameStylesEffectConfig.defaultColors;
+    cResult[6] = selectedColors;
+    cResult[7] = I;
+    tmp13 = I;
   }
-  class I {
+  class M {
     constructor() {
       let result;
-      const tmp = closure_3;
+      const tmp = closure_4;
       if (tmp) {
         const obj = DisplayNameStylesUtils;
         result = obj.rebuildGummySourceColor(selectedColors);
@@ -461,55 +456,58 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   }
   cResult[2] = tmp6;
   cResult[3] = selectedColors;
-  cResult[4] = I;
-  tmp9 = I;
+  cResult[4] = M;
 }) : (function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   let Button;
+  let _undefined;
+  let c9;
   let closure_2;
-  let closure_3;
-  let closure_5;
-  let first1;
+  let closure_4;
   let intl;
   let intl2;
   let intl3;
   let items2;
+  let items3;
   let items4;
   let items5;
-  let items6;
   let obj12;
   let obj3;
   let obj4;
   let obj5;
   let obj8;
-  let tmp18Result;
-  let tmp19;
-  let tmp22;
+  let tmp12;
+  let tmp19Result;
+  let tmp20;
+  let tmp23;
+  const f130934 = (item) => {
+    const obj = shallowEqual;
+    return obj.areArraysShallowEqual(item, selectedColors);
+  };
+  const f130937 = () => {
+    const createColorPaletteList = DisplayNameStylesUtils.createColorPaletteList;
+    let tmp2 = null;
+    DisplayNameStylesUtils;
+    const GUMMY = DisplayNameEffect.DisplayNameEffect.GUMMY;
+    if (selectedColors.length > 0) {
+      tmp2 = selectedColors;
+    }
+    return createColorPaletteList(GUMMY, tmp2);
+  };
   selectedColors = selectedColors.selectedColors;
   const onSelectColors = selectedColors.onSelectColors;
-  _slicedToArray = undefined;
-  initialColor = undefined;
-  closure_5 = undefined;
-  first1 = undefined;
-  closure_7 = undefined;
-  let c8;
-  let closure_9;
+  let first1;
+  c9 = undefined;
   let tmp = closure_12();
   dependencyMap = tmp;
-  const tmp2 = selectedColors;
+  let tmp2 = selectedColors;
   let tmp3 = dependencyMap;
-  let obj = selectedColors(10699);
-  let tmp5 = selectedColors.length > 0;
+  let obj = selectedColors(10732);
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1408).DisplayNameEffect.GUMMY);
-  if (tmp5) {
-    tmp5 = !closure_7.some((item) => {
-      const obj = shallowEqual;
-      return obj.areArraysShallowEqual(item, selectedColors);
-    });
-  }
-  _slicedToArray = tmp5;
-  [initialColor, closure_5] = initialColor.useState(() => {
+  react = selectedColors.length > 0 && !first1.some(f130934);
+  const tmp5 = selectedColors.length > 0 && !first1.some(f130934);
+  const tmp7 = displayNameStylesEffectConfig(react.useState(() => {
     let result;
-    const tmp = closure_3;
+    const tmp = closure_4;
     if (tmp) {
       const obj = DisplayNameStylesUtils;
       result = obj.rebuildGummySourceColor(selectedColors);
@@ -517,48 +515,62 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       result = closure_11;
     }
     return result;
-  });
-  [first1, closure_7] = initialColor.useState(() => {
-    let gummyColors = selectedColors;
+  }), 2);
+  const initialColor = tmp7[0];
+  let closure_6 = tmp7[1];
+  const tmp9 = displayNameStylesEffectConfig(react.useState(() => {
+    let defaultColors = selectedColors;
     if (selectedColors.length <= 0) {
-      const obj = DisplayNameStylesUtils;
-      gummyColors = obj.buildGummyColors(closure_11);
+      defaultColors = displayNameStylesEffectConfig.defaultColors;
     }
-    return gummyColors;
-  });
-  const tmp12 = onSelectColors(16974);
-  const tmp12Result = tmp12(tmp2(1408).DisplayNameEffect.GUMMY);
-  const findIndexResult = tmp12Result.findIndex((colors) => {
+    return defaultColors;
+  }), 2);
+  first1 = tmp9[0];
+  let closure_8 = tmp9[1];
+  [tmp12, c9] = displayNameStylesEffectConfig(react.useState(f130937), 2);
+  displayNameStylesEffectConfig(react.useState(f130937), 2);
+  const tmp14 = onSelectColors(17213);
+  const tmp14Result = tmp14(tmp2(1408).DisplayNameEffect.GUMMY, tmp12);
+  const findIndexResult = tmp14Result.findIndex((colors) => {
     colors = colors.colors;
     const obj = shallowEqual;
     return obj.areArraysShallowEqual(colors, first1);
   });
-  c8 = findIndexResult;
+  let c10 = findIndexResult;
   let items = [initialColor];
-  const callback = initialColor.useCallback(() => {
+  const callback = react.useCallback(() => {
     let obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
     const obj2 = {
       initialColor,
       onSelect(color) {
-        closure_1_5(color);
-        const obj = selectedColors(closure_2[6]);
-        closure_1_7(obj.buildGummyColors(color));
+        let obj = selectedColors(closure_2[6]);
+        const gummyColors = obj.buildGummyColors(color);
+        closure_1_6(color);
+        closure_1_8(gummyColors);
+        _undefined((arr) => {
+          const obj = closure_2_0(closure_2_2[6]);
+          return obj.updateCustomSwatch(arr, closure_2_0(closure_2_2[12]).DisplayNameEffect.GUMMY, gummyColors);
+        });
       }
     };
     showGummyCustomColorSheetDefault(obj2);
   }, items);
-  closure_9 = initialColor.useCallback((arg0) => {
+  closure_11 = react.useCallback((arg0) => {
     const items = [...arg0];
-    closure_7(items);
+    closure_8(items);
   }, []);
   const items1 = [first1, onSelectColors];
-  const callback1 = initialColor.useCallback(() => {
+  const callback1 = react.useCallback(() => {
     const items = [...closure_7[0]];
-    closure_7(items);
-    closure_5(closure_11);
+    closure_8(items);
+    closure_6(closure_11);
+    _undefined((arr) => {
+      const obj = selectedColors(closure_2_2[6]);
+      return obj.updateCustomSwatch(arr, selectedColors(closure_2_2[12]).DisplayNameEffect.GUMMY, items);
+    });
   }, []);
-  const callback2 = initialColor.useCallback(() => {
+  const callback2 = react.useCallback(() => {
     const obj = HapticUtils;
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onSelectColors(first1);
@@ -568,74 +580,68 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const obj4 = ActionSheetActionCreatorsDefault;
     obj4.hideActionSheet();
   }, items1);
-  let obj2 = { header: closure_9(tmp19, obj3), children: closure_10(closure_5, obj5) };
-  BottomSheet = tmp2(5301).BottomSheet;
-  obj3 = { title: displayNameStylesEffectConfig.name, trailing: closure_9(Button, obj4) };
+  let obj2 = { header: c9(tmp20, obj3), children: c10(initialColor, obj5) };
+  BottomSheet = tmp2(5302).BottomSheet;
+  obj3 = { title: displayNameStylesEffectConfig.name, trailing: c9(Button, obj4) };
   obj4 = { variant: "primary", size: "sm", text: intl.string(tmp2(1125).t.XqMe3N), onPress: callback2 };
-  tmp19 = onSelectColors(16970);
-  Button = tmp2(5280).Button;
+  tmp20 = onSelectColors(17209);
+  Button = tmp2(5281).Button;
   intl = tmp2(1125).intl;
-  const obj6 = { style: items2, children: items5 };
+  const obj6 = { style: items2, children: items4 };
   items2 = [, ];
-  obj5 = { style: tmp.body, children: items6 };
+  obj5 = { style: tmp.body, children: items5 };
   ({ colorRowInset: arr5[0], optionContainer: arr5[1] } = tmp);
-  const items3 = [tmp.swatch, ];
-  let swatchSelected = tmp23;
-  const obj7 = { style: tmp.swatchWrapper, children: closure_10(tmp22, obj8) };
-  const tmp11 = onSelectColors;
-  tmp22 = first1;
-  if (findIndexResult < 0) {
-    swatchSelected = tmp.swatchSelected;
-  }
-  items3[1] = swatchSelected;
-  obj8 = { style: items3, onPress: callback, accessibilityRole: "button", accessibilityState: { selected: findIndexResult < 0 }, accessibilityLabel: intl2.string(tmp2(1125).t["FHBa/1"]), children: items4 };
+  const obj7 = { style: tmp.swatchWrapper, children: c10(tmp23, obj8) };
+  obj8 = { style: tmp.swatch, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp2(1125).t["FHBa/1"]), children: items3 };
   intl2 = tmp2(1125).intl;
+  const tmp13 = onSelectColors;
+  tmp23 = closure_6;
   if (findIndexResult >= 0) {
     const obj9 = { style: tmp.customSwatchEmpty };
-    tmp18Result = tmp18(tmp21, obj9);
+    tmp19Result = tmp19(tmp22, obj9);
   } else {
     const obj10 = { colors: first1 };
-    tmp18Result = tmp18(tmp11(16135), obj10);
+    tmp19Result = tmp19(tmp13(16372), obj10);
   }
-  items4 = [tmp18Result, ];
-  const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: closure_9(closure_5, obj12) };
-  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(10154).PencilIcon, { color: "white", size: "sm" }) };
-  items4[1] = closure_9(closure_5, obj11);
-  items5 = [
-    closure_9(closure_5, obj7),
-    tmp12Result.map((colors, index) => {
+  items3 = [tmp19Result, ];
+  const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: c9(initialColor, obj12) };
+  obj12 = { style: tmp.customIconScrim, children: c9(tmp2(10187).PencilIcon, { color: "white", size: "sm" }) };
+  items3[1] = c9(initialColor, obj11);
+  items4 = [
+    c9(initialColor, obj7),
+    tmp14Result.map((colors, index) => {
       let obj2;
       let tmp4;
       colors = colors.colors;
       const items = [closure_2.swatch, ];
       let swatchSelected = tmp;
       const a11yLabel = colors.a11yLabel;
-      const obj = { style: closure_2.swatchWrapper, children: closure_9(tmp4, obj2) };
-      const tmp3 = closure_5;
-      tmp4 = first1;
-      if (c8 === index) {
+      const obj = { style: closure_2.swatchWrapper, children: _undefined(tmp4, obj2) };
+      const tmp3 = first;
+      tmp4 = closure_6;
+      if (c10 === index) {
         swatchSelected = closure_2.swatchSelected;
       }
       items[1] = swatchSelected;
       obj2 = {
         style: items,
         onPress() {
-          return closure_9(colors);
+          return closure_11(colors);
         },
         accessibilityRole: "button",
-        accessibilityState: { selected: c8 === index },
+        accessibilityState: { selected: c10 === index },
         accessibilityLabel: a11yLabel,
-        children: closure_9(onSelectColors(closure_2[22]), { colors })
+        children: _undefined(onSelectColors(closure_2[22]), { colors })
       };
-      return closure_9(tmp3, obj, index);
+      return _undefined(tmp3, obj, index);
     })
   ];
-  items6 = [closure_10(closure_5, obj6), ];
+  items5 = [c10(initialColor, obj6), ];
   const obj13 = { text: intl3.string(tmp2(1125).t.yBZMsQ), onPress: callback1, variant: "secondary" };
-  const Button2 = tmp2(5280).Button;
+  const Button2 = tmp2(5281).Button;
   intl3 = tmp2(1125).intl;
-  items6[1] = closure_9(Button2, obj13);
-  return closure_9(BottomSheet, obj2);
+  items5[1] = c9(Button2, obj13);
+  return c9(BottomSheet, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesGummyColorPickerSheet.tsx");

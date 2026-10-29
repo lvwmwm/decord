@@ -1,13 +1,13 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 15054
+// Function ID: 15055
 // Name: getCanSendInvite
-// Dependencies: [1084, 11388, 7446, 11390, 11391, 11392, 2]
+// Dependencies: [1084, 11442, 7469, 11444, 11445, 11446, 2]
 // Exports: getCanSendInvite
 
-// Module 14819 (getCanSendInvite)
-import isInviteActiveDefault from "isInviteActive" /* 11388 */;
-import _slicedToArray from "_slicedToArray" /* 11390 */;
-import hasPartySize from "hasPartySize" /* 11391 */;
+// Module 15054 (getCanSendInvite)
+import isInviteActiveDefault from "isInviteActive" /* 11442 */;
+import _slicedToArray from "_slicedToArray" /* 11444 */;
+import hasPartySize from "hasPartySize" /* 11445 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let closure_4;
 ({ ActivityFlags: c3, ActivityActionTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/activities/utils/getCanSendInvite.tsx");
 
-export const getCanSendInvite = function getCanSendInvite(applicationActivity, author, application1, id3) {
+export function getCanSendInvite(applicationActivity, author, application1, id3) {
   if (author.author.id === id3) {
     return false;
   } else {
@@ -29,7 +29,7 @@ export const getCanSendInvite = function getCanSendInvite(applicationActivity, a
       }
       if (type !== constants2.JOIN_REQUEST) {
         return false;
-      } else if (tmp11(7446)(applicationActivity, constants.JOIN)) {
+      } else if (tmp11(7469)(applicationActivity, constants.JOIN)) {
         const obj = _slicedToArray;
         const partySize = obj.getPartySize(applicationActivity);
         const obj2 = hasPartySize;
@@ -37,7 +37,7 @@ export const getCanSendInvite = function getCanSendInvite(applicationActivity, a
         let isPartyFullResult = !hasPartySizeResult;
         const tmp5 = require;
         if (hasPartySizeResult) {
-          const tmp5Result = tmp5(11392);
+          const tmp5Result = tmp5(11446);
           isPartyFullResult = tmp5Result.isPartyFull(partySize);
         }
         return !isPartyFullResult;
@@ -48,4 +48,4 @@ export const getCanSendInvite = function getCanSendInvite(applicationActivity, a
       return false;
     }
   }
-};
+}

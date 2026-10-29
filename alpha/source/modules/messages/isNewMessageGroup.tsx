@@ -1,13 +1,13 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10073
+// Function ID: 10074
 // Name: isNewMessageGroup
-// Dependencies: [1084, 1101, 6852, 11, 4829, 2]
+// Dependencies: [1084, 1101, 6875, 11, 4830, 2]
 // Exports: isNewGroupItem
 
-// Module 10041 (isNewMessageGroup)
+// Module 10073 (isNewMessageGroup)
 import DurationsDefault from "Durations" /* 1101 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6852 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                     let tmp21 = !isSameDayResult;
                     const tmp19 = require;
                     if (isSameDayResult) {
-                      const tmp19Result = tmp19(4829);
+                      const tmp19Result = tmp19(4830);
                       const isWithinIntervalResult = tmp19Result.isWithinInterval(content.timestamp, hasFlag.timestamp, closure_6);
                       let tmp24 = !isWithinIntervalResult;
                       if (isWithinIntervalResult) {
@@ -133,7 +133,7 @@ let closure_6 = 7 * DurationsDefault.Millis.MINUTE;
 const result = size.fileFinishedImporting("modules/messages/isNewMessageGroup.tsx");
 
 export default isNewMessageGroup;
-export const isNewGroupItem = function isNewGroupItem(isForumPost, type, hasFlag) {
+export function isNewGroupItem(isForumPost, type, hasFlag) {
   let tmp = null == type;
   if (!tmp) {
     let tmp3 = type.type === constants2.MESSAGE && type.content.id === type.content.channel_id;
@@ -144,4 +144,4 @@ export const isNewGroupItem = function isNewGroupItem(isForumPost, type, hasFlag
     tmp = tmp3;
   }
   return tmp;
-};
+}

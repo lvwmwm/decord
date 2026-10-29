@@ -1,18 +1,18 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11720
+// Function ID: 11721
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1084, 21, 5004, 558, 576, 7488, 7289, 1125, 7480, 11663, 2064, 5270, 11654, 6939, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 558, 576, 7511, 7313, 1125, 7503, 11717, 2065, 5271, 11708, 6963, 2]
 
-// Module 11666 (UserSettingsSoundboardVolume)
+// Module 11720 (UserSettingsSoundboardVolume)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7480 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11663 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7503 */;
+import VolumeSliderDefault from "VolumeSlider" /* 11717 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   const cResult = obj.c(17);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = analyticsLocations(7488);
+    const tmpResult = analyticsLocations(7511);
     const amplitudinalSoundboardVolume = tmpResult.getAmplitudinalSoundboardVolume();
     cResult[0] = amplitudinalSoundboardVolume;
     first = amplitudinalSoundboardVolume;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
     }
     if (cResult[12] !== tmp4.text) {
       const obj4 = { style: text, variant: "text-sm/medium", children: tmp20 };
-      const tmp25 = closure_5(analyticsLocations(5270).Text, obj4);
+      const tmp25 = closure_5(analyticsLocations(5271).Text, obj4);
       cResult[12] = tmp4.text;
       cResult[13] = tmp25;
       tmp23 = tmp25;
@@ -131,11 +131,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
       return tmp26;
     }
     const obj5 = { title: tmp8, hasIcons: false, children: closure_5(TableRow, obj6) };
-    const UserSettingsTableRowGroup = tmp(11654).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11708).UserSettingsTableRowGroup;
     obj6 = { label: tmp10, subLabel: closure_7(closure_6, obj7) };
     obj7 = { children: items };
     items = [tmp18, tmp23];
-    TableRow = tmp(6939).TableRow;
+    TableRow = tmp(6963).TableRow;
     const tmp30 = closure_5(UserSettingsTableRowGroup, obj5);
     cResult[14] = tmp23;
     cResult[15] = tmp18;
@@ -163,14 +163,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   let obj9;
   let tmp3;
   const tmp = closure_8();
-  let obj = analyticsLocations(7488);
+  let obj = analyticsLocations(7511);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const obj2 = { title: intl.string(analyticsLocations(1125).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
-  const UserSettingsTableRowGroup = analyticsLocations(11654).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = analyticsLocations(11708).UserSettingsTableRowGroup;
   intl = analyticsLocations(1125).intl;
   obj3 = { label: intl2.string(analyticsLocations(1125).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
-  TableRow = analyticsLocations(6939).TableRow;
+  TableRow = analyticsLocations(6963).TableRow;
   intl2 = analyticsLocations(1125).intl;
   obj4 = { children: items };
   const obj5 = { style: tmp.slider, children: closure_5(tmp3, obj6) };
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardVo
   intl3 = analyticsLocations(1125).intl;
   items = [closure_5(View, obj5), ];
   const obj7 = { style: tmp.text, variant: "text-sm/medium", children: format(BPbGq7, obj8) };
-  const Text = analyticsLocations(5270).Text;
+  const Text = analyticsLocations(5271).Text;
   const intl4 = analyticsLocations(1125).intl;
   format = intl4.format;
   obj8 = { helpCenterArticle: obj9.getArticleURL(HelpdeskArticles.SOUNDBOARD) };

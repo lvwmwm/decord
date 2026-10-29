@@ -1,9 +1,9 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9762
+// Function ID: 9763
 // Name: ScheduledMessageTypes
 // Dependencies: [2]
 
-// Module 9730 (ScheduledMessageTypes)
+// Module 9762 (ScheduledMessageTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageTypes.tsx");

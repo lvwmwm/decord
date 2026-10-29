@@ -1,19 +1,19 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7419
+// Function ID: 7420
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1389, 7397, 7398, 4928, 2]
+// Dependencies: [1389, 7420, 7421, 4929, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 7396 (canUserSeeMonetizationOnboarding)
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4928 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7397 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7398 */;
+// Module 7419 (canUserSeeMonetizationOnboarding)
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4929 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7420 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7421 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");
 
-export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationOnboarding(guild) {
+export function canUserSeeMonetizationOnboarding(guild) {
   let obj2;
   let obj3;
   let obj4;
@@ -30,4 +30,4 @@ export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationO
   obj3 = CreatorMonetizationEligibilityExperimentUtils;
   obj4 = CreatorMonetizationRestrictionsUtils;
   return canSeeGuildRoleSubscriptionSettings(obj);
-};
+}

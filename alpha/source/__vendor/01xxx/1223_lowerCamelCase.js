@@ -6,7 +6,7 @@
 
 // Module 1223 (lowerCamelCase)
 
-export const lowerCamelCase = function lowerCamelCase(name) {
+export function lowerCamelCase(name) {
   const items = [];
   let num = 0;
   let flag = false;
@@ -35,4 +35,4 @@ export const lowerCamelCase = function lowerCamelCase(name) {
     } while (num < name.length);
   }
   return items.join("");
-};
+}

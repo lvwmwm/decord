@@ -1,24 +1,24 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 13799
+// Function ID: 13800
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1204, 4853, 1240, 21, 5004, 587, 1381, 5288, 13560, 13567, 5085, 5283, 11814, 13568, 5333, 12098, 6944, 1125, 5705, 5011, 7264, 7265, 9946, 1199, 2]
+// Dependencies: [32, 19, 17, 1204, 4854, 1240, 21, 5005, 587, 1381, 5289, 13793, 13800, 5086, 5284, 11868, 13801, 5334, 12152, 6968, 1125, 5707, 5012, 7288, 7289, 9978, 1199, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 13566 (EmojiSuggestionChatButton)
+// Module 13799 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 587 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import spring from "spring" /* 5283 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13560 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import spring from "spring" /* 5284 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;
@@ -55,7 +55,7 @@ let closure_16 = { code: "function EmojiSuggestionChatButtonTsx4(){const{runOnJS
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggestionChatButton.tsx");
 
-export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0) {
+export function EmojiSuggestionChatButton(arg0) {
   let PressableOpacity;
   let active;
   let c5;
@@ -269,4 +269,4 @@ export const EmojiSuggestionChatButton = function EmojiSuggestionChatButton(arg0
   }
   items6[1] = tmp27Result2;
   return gesture1(GestureDetector, obj5);
-};
+}

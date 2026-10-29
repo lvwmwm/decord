@@ -9,7 +9,7 @@ let closure_3;
 
 let closure_4 = ["createNode", "cloneNode", "cloneNodeWithNewChildren", "cloneNodeWithNewProps", "cloneNodeWithNewChildrenAndProps", "createChildSet", "appendChild", "appendChildToSet", "completeRoot", "measure", "measureInWindow", "measureLayout", "configureNextLayoutAnimation", "sendAccessibilityEvent", "findShadowNodeByTag_DEPRECATED", "setNativeProps", "dispatchCommand", "compareDocumentPosition", "getBoundingClientRect", "setIsJSResponder", "unstable_DefaultEventPriority", "unstable_DiscreteEventPriority", "unstable_ContinuousEventPriority", "unstable_IdleEventPriority", "unstable_getCurrentEventPriority"];
 
-export const getFabricUIManager = function getFabricUIManager() {
+export function getFabricUIManager() {
   function createProxyWithCachedProperties(nativeFabricUIManager, arg1) {
     let closure_0 = nativeFabricUIManager;
     let obj = Object.create(nativeFabricUIManager);
@@ -33,4 +33,4 @@ export const getFabricUIManager = function getFabricUIManager() {
     closure_3 = createProxyWithCachedProperties(global.nativeFabricUIManager, closure_4);
   }
   return closure_3;
-};
+}

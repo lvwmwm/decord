@@ -1,24 +1,24 @@
-// Module ID: 7448
-// Function ID: 7449
+// Module ID: 7471
+// Function ID: 7472
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7449, 4860, 4856, 6806, 1084, 7450, 1294, 6868, 5187, 5743, 6669, 584, 6857, 1264, 1111, 5011, 1125, 7461, 5745, 6418, 2]
+// Dependencies: [32, 5, 7472, 4861, 4857, 6829, 1084, 7473, 1294, 6891, 5188, 5745, 6693, 584, 6880, 1264, 1111, 5012, 1125, 7484, 5747, 6442, 2]
 
-// Module 7448 (ChannelActionCreators)
+// Module 7471 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import shared from "shared" /* 5011 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import preloadChannelDefault from "preloadChannel" /* 5745 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6857 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import shared from "shared" /* 5012 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import preloadChannelDefault from "preloadChannel" /* 5747 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7449 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ChangelogStore from "ChangelogStore" /* 7472 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5743);
+const transitionToChannel = tmp5(5745);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -73,7 +73,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -300,7 +300,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(5743);
+          const tmp6Result = tmp6(5745);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -350,7 +350,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -471,7 +471,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "application" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
@@ -657,7 +657,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -804,7 +804,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;

@@ -1,12 +1,13 @@
 // Module ID: 10384
 // Function ID: 10385
-// Dependencies: [41, 42, 93, 95, 98, 10267]
+// Dependencies: [41, 42, 93, 95, 98, 10376, 10284, 10285, 10289]
 
 // Module 10384
-import _mod10267 from "module_10267" /* 10267 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10289 */;
+import _mod10376 from "module_10376" /* 10376 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +26,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class RUMergeDateRangeRefiner {
+const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + _mod10376.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class NLTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(RUMergeDateRangeRefiner);
+    _classCallCheck(this, NLTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +44,32 @@ class RUMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMergeDateRangeRefiner, fn(_mod10267).default);
+_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(и до|и по|до|по|-)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10376.parseDuration(arg1[2]);
+      if ("vorig" !== formatted) {
+        let reverseDurationResult;
+        if ("afgelopen" !== formatted) {
+          reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10285).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      reverseDurationResult = tmp2(10284).reverseDuration(parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(RUMergeDateRangeRefiner, items);
+export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);

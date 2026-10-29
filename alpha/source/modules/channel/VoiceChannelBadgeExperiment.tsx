@@ -1,13 +1,13 @@
-// Module ID: 14767
-// Function ID: 14768
+// Module ID: 15002
+// Function ID: 15003
 // Name: VoiceChannelBadgeExperiment
-// Dependencies: [5227, 5224, 558, 576, 2]
+// Dependencies: [5228, 5225, 558, 576, 2]
 // Exports: getVoiceChannelBadgeExperiment
 
-// Module 14767 (VoiceChannelBadgeExperiment)
+// Module 15002 (VoiceChannelBadgeExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
-import createExperiment from "module_5224" /* 5224 */;
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const result = size.fileFinishedImporting("modules/channel/VoiceChannelBadgeExpe
 
 export const VoiceChannelBadgeExperiment = experiment;
 export const useVoiceChannelBadgeExperiment = tmp3;
-export const getVoiceChannelBadgeExperiment = function getVoiceChannelBadgeExperiment(guildId) {
+export function getVoiceChannelBadgeExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return experiment.getCurrentConfig(obj, { autoTrackExposure: true });
-};
+}

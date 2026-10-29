@@ -1,22 +1,22 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7916
+// Function ID: 7917
 // Name: surveyFetch
-// Dependencies: [1084, 6711, 1272, 4868, 1294, 584, 2]
+// Dependencies: [1084, 6734, 1272, 4869, 1294, 584, 2]
 // Exports: surveyFetch
 
-// Module 7893 (surveyFetch)
+// Module 7916 (surveyFetch)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import TypeUtils from "TypeUtils" /* 4868 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
+import TypeUtils from "TypeUtils" /* 4869 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/surveyFetch.tsx");
 
-export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_seen) {
+export function surveyFetch(surveyOverride, disable_auto_seen) {
   let obj4;
   function properties(body) {
     let survey;
@@ -70,4 +70,4 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
     const obj = DispatcherDefault;
     obj.dispatch({ type: "SURVEY_FETCHED", survey: null });
   });
-};
+}

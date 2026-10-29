@@ -49,7 +49,7 @@ const prototype = SnowflakeSequence.prototype;
 export const DISCORD_EPOCH = 1420070400000;
 export const MAX_SNOWFLAKE_SEQ = 4095;
 export { extractTimestamp };
-export const fromTimestamp = function fromTimestamp(arg0) {
+export function fromTimestamp(arg0) {
   const diff = arg0 - c2;
   let str = "0";
   if (diff > 0) {
@@ -58,21 +58,21 @@ export const fromTimestamp = function fromTimestamp(arg0) {
     str = str2.toString();
   }
   return str;
-};
-export const getNonTimestampBits = function getNonTimestampBits(arg0) {
+}
+export function getNonTimestampBits(arg0) {
   const obj = _modDef14(arg0);
   const andResult = obj.and(closure_5);
   return andResult.toJSNumber();
-};
-export const setNonTimestampBits = function setNonTimestampBits(arg0, arg1) {
+}
+export function setNonTimestampBits(arg0, arg1) {
   const obj = _modDef14(arg0);
   const or = obj.and(closure_5.not()).or;
   obj.and(closure_5.not());
   const obj2 = _modDef14(arg1);
   const str = or(obj2.and(closure_5));
   return str.toString();
-};
-export const fromTimestampWithSequence = function fromTimestampWithSequence(arg0, next) {
+}
+export function fromTimestampWithSequence(arg0, next) {
   const diff = arg0 - c2;
   let num = 0;
   const tmp2 = _modDef14;
@@ -83,8 +83,8 @@ export const fromTimestampWithSequence = function fromTimestampWithSequence(arg0
   const shiftLeftResult = tmp2Result.shiftLeft(22);
   const str = shiftLeftResult.add(next.next());
   return str.toString();
-};
-export const atPreviousMillisecond = function atPreviousMillisecond(arg0) {
+}
+export function atPreviousMillisecond(arg0) {
   const diff = Math.floor(Number(arg0) / 4194304) + c2 - 1 - c2;
   let str = "0";
   if (diff > 0) {
@@ -93,8 +93,8 @@ export const atPreviousMillisecond = function atPreviousMillisecond(arg0) {
     str = str2.toString();
   }
   return str;
-};
-export const atNextMillisecond = function atNextMillisecond(arg0) {
+}
+export function atNextMillisecond(arg0) {
   const diff = Math.floor(Number(arg0) / 4194304) + c2 + 1 - c2;
   let str = "0";
   if (diff > 0) {
@@ -103,12 +103,12 @@ export const atNextMillisecond = function atNextMillisecond(arg0) {
     str = str2.toString();
   }
   return str;
-};
-export const age = function age(arg0) {
+}
+export function age(arg0) {
   const timestamp = Date.now();
   return timestamp - (Math.floor(Number(arg0) / 4194304) + c2);
-};
-export const compare = function compare(arg0, arg1) {
+}
+export function compare(arg0, arg1) {
   let num = 0;
   if (arg0 !== arg1) {
     let num3 = 1;
@@ -134,8 +134,8 @@ export const compare = function compare(arg0, arg1) {
     num = num3;
   }
   return num;
-};
-export const isProbablyAValidSnowflake = function isProbablyAValidSnowflake(arg0) {
+}
+export function isProbablyAValidSnowflake(arg0) {
   if (null == arg0) {
     return false;
   } else {
@@ -150,5 +150,5 @@ export const isProbablyAValidSnowflake = function isProbablyAValidSnowflake(arg0
       return false;
     }
   }
-};
+}
 export { SnowflakeSequence };

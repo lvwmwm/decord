@@ -1,11 +1,11 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13483
+// Function ID: 13484
 // Name: useFriendsAnimationState
-// Dependencies: [32, 19, 558, 576, 6399, 2]
+// Dependencies: [32, 19, 558, 576, 6423, 2]
 
-// Module 13249 (useFriendsAnimationState)
+// Module 13483 (useFriendsAnimationState)
 import react2 from "react" /* 576 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6399 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,10 +33,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriends
       tmp12 = !arg1;
       first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
       if (tmp12) {
-        tmp12 = first.route === tmp(6399).CheckpointRoute.SQUAD;
+        tmp12 = first.route === tmp(6423).CheckpointRoute.SQUAD;
       }
       if (tmp12) {
-        tmp12 = route === tmp(6399).CheckpointRoute.SIDEKICK;
+        tmp12 = route === tmp(6423).CheckpointRoute.SIDEKICK;
       }
       tmp8[1](obj2);
     }
@@ -93,10 +93,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriends
     tmp7 = !arg1;
     first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
     if (tmp7) {
-      tmp7 = first.route === tmp(6399).CheckpointRoute.SQUAD;
+      tmp7 = first.route === tmp(6423).CheckpointRoute.SQUAD;
     }
     if (tmp7) {
-      tmp7 = route === tmp(6399).CheckpointRoute.SIDEKICK;
+      tmp7 = route === tmp(6423).CheckpointRoute.SIDEKICK;
     }
     tmp3[1](obj3);
   }

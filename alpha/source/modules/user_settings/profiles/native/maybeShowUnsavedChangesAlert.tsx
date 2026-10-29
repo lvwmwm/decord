@@ -1,12 +1,12 @@
-// Module ID: 11110
-// Function ID: 11111
+// Module ID: 11164
+// Function ID: 11165
 // Name: maybeShowUnsavedChangesAlert
-// Dependencies: [5, 32, 19, 21, 5946, 5950, 1125, 5195, 11111, 5246, 5945, 2]
+// Dependencies: [5, 32, 19, 21, 5948, 5952, 1125, 5196, 11165, 5247, 5947, 2]
 // Exports: default
 
-// Module 11110 (maybeShowUnsavedChangesAlert)
+// Module 11164 (maybeShowUnsavedChangesAlert)
 import intl5 from "intl" /* 1125 */;
-import AlertModal2 from "AlertModal" /* 5950 */;
+import AlertModal2 from "AlertModal" /* 5952 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -43,7 +43,7 @@ function UnsavedChangesSavePromptAlert(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -94,7 +94,7 @@ function UnsavedChangesSavePromptAlert(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -154,16 +154,16 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
   onReset = onReset.onReset;
   const onContinue = onReset.onContinue;
   if (onReset.hasUnsavedChanges) {
-    let obj = onReset(5195);
+    let obj = onReset(5196);
     obj.dismissKeyboard();
-    const obj2 = onReset(11111);
+    const obj2 = onReset(11165);
     if (obj2.getIsUserProfileMobileSavePromptEnabled(tmp)) {
-      const tmp7Result = onContinue(5246);
+      const tmp7Result = onContinue(5247);
       tmp7Result.hideActionSheet();
-      const tmp7Result3 = onContinue(5945);
+      const tmp7Result3 = onContinue(5947);
       tmp7Result3.close();
       const obj3 = { onReset, onContinue, onSave: tmp2 };
-      const tmp4Result = onReset(5946);
+      const tmp4Result = onReset(5948);
       tmp4Result.openAlert(c9, closure_6(UnsavedChangesSavePromptAlert, obj3), undefined, { dismissable: true });
     } else {
       const obj4 = {
@@ -181,8 +181,8 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
             },
         isDismissable: false
       };
-      const show = onContinue(5945).show;
-      onContinue(5945);
+      const show = onContinue(5947).show;
+      onContinue(5947);
       intl = tmp4(1125).intl;
       intl2 = tmp4(1125).intl;
       intl3 = tmp4(1125).intl;

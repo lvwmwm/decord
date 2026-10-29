@@ -1,12 +1,12 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7715
+// Function ID: 7716
 // Name: ProfileFrameRecord
-// Dependencies: [1991, 1992, 2]
+// Dependencies: [1992, 1993, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7692 (ProfileFrameRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1991 */;
+// Module 7715 (ProfileFrameRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;
 
 class ProfileFrameRecord extends BaseCollectiblesItemRecord {
@@ -43,6 +43,6 @@ class ProfileFrameRecord extends BaseCollectiblesItemRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/ProfileFrameRecord.tsx");
 
 export default ProfileFrameRecord;
-export const isProfileFrameRecord = function isProfileFrameRecord(first1) {
+export function isProfileFrameRecord(first1) {
   return first1 instanceof ProfileFrameRecord;
-};
+}

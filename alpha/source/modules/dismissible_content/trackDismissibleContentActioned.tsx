@@ -1,25 +1,25 @@
-// Module ID: 5678
-// Function ID: 5679
+// Module ID: 5680
+// Function ID: 5681
 // Name: trackDismissibleContentActioned
-// Dependencies: [32, 4843, 4848, 1084, 5677, 1264, 4840, 4844, 2]
+// Dependencies: [32, 4844, 4849, 1084, 5679, 1264, 4841, 4845, 2]
 // Exports: trackDismissibleContentActioned
 
-// Module 5678 (trackDismissibleContentActioned)
+// Module 5680 (trackDismissibleContentActioned)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4844 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4848 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5677 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4845 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4849 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5679 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4843 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4844 */;
 import size from "module_2" /* 2 */;
 
 const getCurrentlyShownCounts = DismissibleContentShownStateStore.getCurrentlyShownCounts;
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/dismissible_content/trackDismissibleContentActioned.tsx");
 
-export const trackDismissibleContentActioned = function trackDismissibleContentActioned(content, dismissAction) {
+export function trackDismissibleContentActioned(content, dismissAction) {
   let diff;
   let obj5;
   let obj = dismissAction;
@@ -45,4 +45,4 @@ export const trackDismissibleContentActioned = function trackDismissibleContentA
     ({ version: obj4.version, snowflakeId: obj4.snowflake_id } = obj);
     track(DISMISSIBLE_CONTENT_ACTIONED, obj6);
   }
-};
+}

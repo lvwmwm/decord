@@ -1,15 +1,15 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17983
+// Function ID: 17984
 // Name: FriendSuggestionUtils
 // Dependencies: [2]
 // Exports: getSuggestedContactNameForSuggestion
 
-// Module 17745 (FriendSuggestionUtils)
+// Module 17983 (FriendSuggestionUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionUtils.tsx");
 
-export const getSuggestedContactNameForSuggestion = function getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend) {
+export function getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend) {
   let contactNames;
   if (suggestedFriend != null) {
     contactNames = suggestedFriend.contactNames;
@@ -45,4 +45,4 @@ export const getSuggestedContactNameForSuggestion = function getSuggestedContact
       }
     }
   }
-};
+}

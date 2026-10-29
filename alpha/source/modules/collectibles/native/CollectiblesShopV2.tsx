@@ -1,40 +1,41 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17701
+// Function ID: 17702
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5273, 1204, 1389, 7685, 5675, 7717, 1086, 1084, 4853, 21, 5004, 7314, 558, 576, 15028, 17463, 504, 1278, 5635, 10525, 17464, 17466, 17467, 9509, 1381, 9479, 9831, 8704, 9400, 5011, 7289, 1502, 17469, 2062, 17471, 5034, 4840, 2050, 17472, 1264, 7728, 8713, 17473, 17474, 17476, 17477, 17509, 1254, 17512, 17513, 17480, 10610, 9497, 17514, 9391, 6504, 1627, 2]
+// Dependencies: [32, 19, 17, 5274, 1204, 1389, 7708, 5677, 7740, 1086, 1084, 4854, 21, 5005, 7338, 558, 576, 15263, 17702, 504, 1278, 5636, 10558, 17703, 17705, 17706, 9541, 1381, 9510, 9863, 8707, 9431, 5012, 7313, 1503, 17708, 2063, 17710, 5035, 4841, 2051, 17711, 1264, 7751, 8716, 17712, 17713, 17715, 17716, 17748, 1254, 17751, 17752, 17719, 10643, 9528, 17753, 9423, 6528, 1628, 2]
 
-// Module 17462 (CollectiblesShopV2)
+// Module 17701 (CollectiblesShopV2)
 import react2 from "react" /* 576 */;
+import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2062 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 7717 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7728 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8713 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9479 */;
-import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9497 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9509 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9831 */;
-import takeWhileDefault from "takeWhile" /* 17469 */;
-import ShopCategory from "ShopCategory" /* 17474 */;
-import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 17476 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17477 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2063 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 7740 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7751 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9510 */;
+import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 9528 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9541 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9863 */;
+import takeWhileDefault from "takeWhile" /* 17708 */;
+import ShopCategory from "ShopCategory" /* 17713 */;
+import ShopNitroUpsellBanner2 from "ShopNitroUpsellBanner" /* 17715 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
 import UserStore from "UserStore" /* 1389 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5675 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5677 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +52,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const SentryUtilsDefault = tmp(1254);
-const MobileNitroUpsellInShopFeedExperimentDefault = tmp(17472);
+const MobileNitroUpsellInShopFeedExperimentDefault = tmp(17711);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const FeedBlockRecord = FeedBlockRecord2.FeedBlockRecord;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: map1, CollectiblesMobileShopScreen: closure_14, CollectibleShopTab: closure_15, SHOP_ALL_PAGE_SIZE } = CollectiblesShopConstants);
@@ -75,7 +75,6 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   let isFetchingShopHome;
   let lastSuccessfulFetch;
   let length;
-  let length2;
   let location_stack;
   let noCache;
   let screen;
@@ -89,9 +88,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   let tmp6;
   let tmp9;
   let tmp = analyticsSource;
-  let tmp2 = screen;
+  const tmp2 = screen;
   let obj = analyticsSource(screen[16]);
-  const cResult = obj.c(167);
+  const cResult = obj.c(169);
   analyticsSource = analyticsSource.analyticsSource;
   const onNavigateAway = analyticsSource.onNavigateAway;
   ({ storeFront, screen } = analyticsSource);
@@ -101,19 +100,22 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp7 = CollectiblesCategoryStore;
     let items = [CollectiblesCategoryStore];
-    const fn = function _() {
-      let num = lastSuccessfulFetch.lastSuccessfulFetch;
-      if (num == null) {
-        num = 0;
+    class E {
+      constructor() {
+        num = isLoading.lastSuccessfulFetch;
+        if (num == null) {
+          num = 0;
+        }
+        items = [];
+        items[0] = num;
+        return items;
       }
-      const items = [num];
-      return items;
-    };
+    }
     let num = 0;
     cResult[0] = items;
     let num2 = 1;
-    cResult[1] = fn;
-    tmp6 = fn;
+    cResult[1] = E;
+    tmp6 = E;
     tmp5 = items;
   } else {
     [tmp5, tmp6] = cResult;
@@ -121,10 +123,11 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   const tmpResult = tmp(tmp2[19]);
   const first = improvedLoading(tmpResult.useStateFromStoresArray(tmp5, tmp6), 1)[0];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp11 = HOME;
     const items1 = [HOME];
     class N {
       constructor() {
-        const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+        obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
         return obj;
       }
     }
@@ -140,32 +143,32 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp9, tmp10);
   ({ bypassGoogleSkuSync, noCache } = stateFromStoresObject);
   const includeUnpublished = stateFromStoresObject.includeUnpublished;
-  closure_22();
+  let tmp13 = closure_22();
   if (storeFront != null) {
     country = storeFront.country;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class V {
       constructor() {
-        let obj2;
-        const obj = { sessionId: obj2.v4() };
+        obj = { sessionId: null };
         obj2 = analyticsSource(screen[20]);
+        obj.sessionId = obj2.v4();
         return obj;
       }
     }
     cResult[4] = V;
     class N {
       constructor() {
-        const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+        obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
         return obj;
       }
     }
   } else {
     class V {
       constructor() {
-        let obj2;
-        const obj = { sessionId: obj2.v4() };
+        obj = { sessionId: null };
         obj2 = analyticsSource(screen[20]);
+        obj.sessionId = obj2.v4();
         return obj;
       }
     }
@@ -177,9 +180,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   if (screen == null) {
     class V {
       constructor() {
-        let obj2;
-        const obj = { sessionId: obj2.v4() };
+        obj = { sessionId: null };
         obj2 = analyticsSource(screen[20]);
+        obj.sessionId = obj2.v4();
         return obj;
       }
     }
@@ -188,25 +191,25 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   if (cResult[5] === sessionId) {
     class V {
       constructor() {
-        let obj2;
-        const obj = { sessionId: obj2.v4() };
+        obj = { sessionId: null };
         obj2 = analyticsSource(screen[20]);
+        obj.sessionId = obj2.v4();
         return obj;
       }
     }
     if (cResult[8] !== country) {
       class V {
         constructor() {
-          let obj2;
-          const obj = { sessionId: obj2.v4() };
+          obj = { sessionId: null };
           obj2 = analyticsSource(screen[20]);
+          obj.sessionId = obj2.v4();
           return obj;
         }
       }
       cResult[8] = country;
       class N {
         constructor() {
-          const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+          obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
           return obj;
         }
       }
@@ -214,9 +217,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
     } else {
       class V {
         constructor() {
-          let obj2;
-          const obj = { sessionId: obj2.v4() };
+          obj = { sessionId: null };
           obj2 = analyticsSource(screen[20]);
+          obj.sessionId = obj2.v4();
           return obj;
         }
       }
@@ -224,9 +227,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
     if (cResult[10] === improvedLoading) {
       class V {
         constructor() {
-          let obj2;
-          const obj = { sessionId: obj2.v4() };
+          obj = { sessionId: null };
           obj2 = analyticsSource(screen[20]);
+          obj.sessionId = obj2.v4();
           return obj;
         }
       }
@@ -234,16 +237,16 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       const tmp26 = tmp15(tmp2[22])(tmp20, tmp17);
       class N {
         constructor() {
-          const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+          obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
           return obj;
         }
       }
       if (screen === constants.ORBS) {
         class V {
           constructor() {
-            let obj2;
-            const obj = { sessionId: obj2.v4() };
+            obj = { sessionId: null };
             obj2 = analyticsSource(screen[20]);
+            obj.sessionId = obj2.v4();
             return obj;
           }
         }
@@ -251,9 +254,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       } else {
         class V {
           constructor() {
-            let obj2;
-            const obj = { sessionId: obj2.v4() };
+            obj = { sessionId: null };
             obj2 = analyticsSource(screen[20]);
+            obj.sessionId = obj2.v4();
             return obj;
           }
         }
@@ -262,25 +265,25 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       if (cResult[13] === includeUnpublished) {
         class V {
           constructor() {
-            let obj2;
-            const obj = { sessionId: obj2.v4() };
+            obj = { sessionId: null };
             obj2 = analyticsSource(screen[20]);
+            obj.sessionId = obj2.v4();
             return obj;
           }
         }
         tmp(tmp2[23]);
         class N {
           constructor() {
-            const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+            obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
             return obj;
           }
         }
         if (improvedLoading) {
           class V {
             constructor() {
-              let obj2;
-              const obj = { sessionId: obj2.v4() };
+              obj = { sessionId: null };
               obj2 = analyticsSource(screen[20]);
+              obj.sessionId = obj2.v4();
               return obj;
             }
           }
@@ -290,9 +293,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
         if (cResult[16] === includeUnpublished) {
           class V {
             constructor() {
-              let obj2;
-              const obj = { sessionId: obj2.v4() };
+              obj = { sessionId: null };
               obj2 = analyticsSource(screen[20]);
+              obj.sessionId = obj2.v4();
               return obj;
             }
           }
@@ -310,7 +313,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
     }
     class N {
       constructor() {
-        const obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
+        obj = { bypassGoogleSkuSync: HOME.get("bypass_google_sku_sync"), noCache: HOME.get("shop_disable_cache"), includeUnpublished: HOME.get("shop_include_unpublished") };
         return obj;
       }
     }
@@ -432,7 +435,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
     return obj;
   }, items2);
   const obj5 = { paymentGateway: stateFromStores.APPLE, logPerf: true, skipFetch: improvedLoading };
-  const tmp12 = onNavigateAway(tmp2[22]);
+  let tmp12 = onNavigateAway(tmp2[22]);
   if (null != country) {
     obj7 = { countryCode: country };
     const obj6 = { countryCode: country };
@@ -494,7 +497,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       if (true !== isFetchingCategories) {
         const obj = PlatformUtils;
         if (false !== obj.isAndroid()) {
-          const getGoogleSkuIds = tmp4(9479).getGoogleSkuIds;
+          const getGoogleSkuIds = tmp4(9510).getGoogleSkuIds;
           const items = [];
           collectibles_CollectiblesUtils;
           HermesBuiltin.arraySpread(items, categories.values(), 0);
@@ -718,7 +721,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       const tmp19 = loadedGoogleSkuIds;
       const tmp20 = require;
       if (closure_31 == null) {
-        GET_NITRO = tmp20(17472).NitroUpsellBannerButtonVariant.GET_NITRO;
+        GET_NITRO = tmp20(17711).NitroUpsellBannerButtonVariant.GET_NITRO;
       }
       tmp19Result = tmp19(ShopNitroUpsellBanner, obj2);
     } else {
@@ -758,21 +761,28 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
   const tmp4Result4 = tmp4(obj4.useState(0), 2);
   first3 = tmp4Result4[0];
   closure_37 = tmp4Result4[1];
-  const items22 = [memo8, prefetchThrough];
+  const items22 = [memo8, prefetchThrough, memo5.length, categories1.length];
   const items23 = [improvedLoading, screen, hasMore, isLoading, memo4.length, categories1.length, memo5.length, first3, prefetchThrough];
   const callback4 = obj4.useCallback((arg0) => {
     let num = 0;
-    let bound = 0;
+    let bound1 = 0;
     let num2 = 0;
     const iter = arg0.viewableItems[Symbol.iterator]();
     while (iter !== undefined) {
       let item = iter.next().item;
       let tmp = item;
-      if (item.kind === analyticsLocations.CATEGORY) {
+      if (item.kind === analyticsLocations.SKELETON) {
         let _Math = Math;
-        bound = Math.max(num, tmp.categoryIndex + 1);
+        let bound = Math.max(num, memo5.length);
         num = bound;
+        bound1 = bound;
         let _Math2 = Math;
+        num2 = Math.max(num2, categories1.length);
+      } else if (tmp.kind === tmp2.CATEGORY) {
+        let _Math3 = Math;
+        bound1 = Math.max(num, tmp.categoryIndex + 1);
+        num = bound1;
+        let _Math4 = Math;
         categoryIndex = memo8.get(tmp.category.skuId);
         if (categoryIndex == null) {
           categoryIndex = tmp.categoryIndex;
@@ -782,7 +792,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsSourc
       continue;
     }
     prefetchThrough(num2);
-    closure_37((arg0) => Math.max(arg0, bound));
+    closure_37((arg0) => Math.max(arg0, bound1));
   }, items22);
   const effect4 = obj4.useEffect(() => {
     const tmp = improvedLoading && screen === isLoading.SHOP_ALL && hasMore && !isLoading && memo4.length === categories1.length && memo5.length < first3 + closure_24;
@@ -932,11 +942,13 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopV2(screen) {
   let currentUser;
   let nativePaymentsConnected;
-  let tmp12;
   let tmp13;
   let tmp14;
-  let tmp6;
+  let tmp15;
+  let tmp18;
+  let tmp25;
   let tmp7;
+  let tmp8;
   const tmp = nativePaymentsConnected;
   const obj = nativePaymentsConnected(576);
   const cResult = obj.c(13);
@@ -944,7 +956,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   const nativeIAPPayments = obj2.useNativeIAPPayments();
   nativePaymentsConnected = nativeIAPPayments.nativePaymentsConnected;
   const storeFront = nativeIAPPayments.storeFront;
-  closure_22();
+  const tmp6 = closure_22();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     const fn = function l() {
@@ -952,13 +964,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
+    tmp7 = items;
+    tmp8 = fn;
   } else {
-    [tmp6, tmp7] = cResult;
+    [tmp7, tmp8] = cResult;
   }
   const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
   let isStaffResult;
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
@@ -970,170 +982,89 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
     isStaffResult = isStaffPersonalResult;
   }
-  [tmp12, importDefault] = react.useState(false);
+  [tmp13, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const obj5 = react;
   if (cResult[2] !== nativePaymentsConnected) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
-        }
+    const fn2 = function _() {
+      let closure_0;
+      let timeout;
+      if (!timeout) {
+        const _setTimeout = setTimeout;
+        timeout = setTimeout(() => {
+          closure_1_1(true);
+        }, 10000);
+        return () => clearTimeout(closure_0);
       }
-    }
+    };
     const items1 = [nativePaymentsConnected];
     cResult[2] = nativePaymentsConnected;
-    cResult[3] = E;
+    cResult[3] = fn2;
     cResult[4] = items1;
-    tmp14 = items1;
-    tmp13 = E;
+    tmp15 = items1;
+    tmp14 = fn2;
   } else {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
-        }
-      }
-    }
-    tmp14 = cResult[4];
+    tmp14 = cResult[3];
+    tmp15 = cResult[4];
   }
-  const effect = obj5.useEffect(tmp13, tmp14);
-  const tmpResult3 = tmp(1381);
-  tmpResult3.isIOS() && !tmp(6504).isStable && isStaffResult;
+  const effect = obj5.useEffect(tmp14, tmp15);
+  const tmpResult4 = tmp(1381);
+  const tmp17 = tmpResult4.isIOS() && !tmp(6528).isStable && isStaffResult;
   if (!nativePaymentsConnected) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
+    if (!tmp17) {
+      if (!tmp13) {
+        if (cResult[5] !== tmp6.spinner) {
+          const obj3 = { style: tmp6.spinner, size: "large" };
+          const tmp21 = closure_20(closure_5, obj3);
+          cResult[5] = tmp6.spinner;
+          cResult[6] = tmp21;
+          tmp18 = tmp21;
         } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
+          tmp18 = cResult[6];
         }
       }
+      return tmp18;
     }
   }
-  if (tmp12) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
-        }
-      }
-    }
-  }
-  if (tmp12) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
-        }
-      }
-    }
-    const captureMessage = tmp18.captureMessage;
+  if (tmp13) {
+    const captureMessage = tmp4(1254).captureMessage;
+    SentryUtilsDefault;
     tmp(1381);
-    const text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj7.isIOS()}`;
-    captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj7.isIOS()}`} isStable: ${tmp(6504).isStable}`);
+    const text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj8.isIOS()}`;
+    captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj8.isIOS()}`} isStable: ${tmp(6528).isStable}`);
   }
   if (screen.screen !== constants.ORBS) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
+    const tmpResult6 = tmp(1628);
+    if (!tmpResult6.isMetaQuest()) {
+      if (cResult[10] === screen) {
+        if (cResult[11] === storeFront) {
+          tmp25 = cResult[12];
         }
       }
-    }
-    if (!obj8.isMetaQuest()) {
-      class E {
-        constructor() {
-          if (closure_0) {
-            return;
-          } else {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 10000;
-            closure_0 = setTimeout(() => {
-              closure_1_1(true);
-            }, 10000);
-            return () => clearTimeout(closure_0);
-          }
-        }
-      }
-      const obj3 = { storeFront, screen: screen.screen };
+      const obj4 = { storeFront, screen: screen.screen };
       const merged = Object.assign(screen);
-      const tmp27 = closure_20(closure_28, obj3);
+      const tmp31 = closure_20(closure_28, obj4);
       cResult[10] = screen;
       cResult[11] = storeFront;
-      cResult[12] = tmp27;
+      cResult[12] = tmp31;
+      tmp25 = tmp31;
     }
+    tmp18 = tmp25;
   }
   if (cResult[7] === screen) {
-    class E {
-      constructor() {
-        if (closure_0) {
-          return;
-        } else {
-          tmp = globalThis;
-          _setTimeout = setTimeout;
-          num = 10000;
-          closure_0 = setTimeout(() => {
-            closure_1_1(true);
-          }, 10000);
-          return () => clearTimeout(closure_0);
-        }
-      }
+    let tmp32;
+    if (cResult[8] === storeFront) {
+      tmp32 = cResult[9];
     }
+    tmp25 = tmp32;
   }
-  const obj4 = { storeFront, screen: screen.screen, improvedLoading: false };
+  const obj6 = { storeFront, screen: screen.screen, improvedLoading: false };
   const merged1 = Object.assign(screen);
-  const tmp29 = closure_20(closure_27, obj4);
+  const tmp34 = closure_20(closure_27, obj6);
   cResult[7] = screen;
   cResult[8] = storeFront;
-  cResult[9] = tmp29;
+  cResult[9] = tmp34;
+  tmp32 = tmp34;
 }) : (function CollectiblesShopV2(screen) {
   let currentUser;
   let tmp14;
@@ -1172,7 +1103,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
   }, items1);
   const tmp5Result = nativePaymentsConnected(1381);
-  const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(6504).isStable && isStaffResult;
+  const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(6528).isStable && isStaffResult;
   if (!nativePaymentsConnected) {
     if (!tmp11) {
       if (!tmp9) {
@@ -1187,11 +1118,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     SentryUtilsDefault;
     nativePaymentsConnected(1381);
     const text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`;
-    captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(6504).isStable}`);
+    captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(6528).isStable}`);
   }
   if (screen.screen !== constants.ORBS) {
     let tmp23;
-    const tmp5Result4 = nativePaymentsConnected(1627);
+    const tmp5Result4 = nativePaymentsConnected(1628);
     if (!tmp5Result4.isMetaQuest()) {
       const obj4 = { storeFront, screen: screen.screen };
       const merged = Object.assign(screen);

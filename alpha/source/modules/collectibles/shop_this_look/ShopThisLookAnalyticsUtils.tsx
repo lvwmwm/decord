@@ -1,13 +1,13 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 14749
+// Function ID: 14750
 // Name: ShopThisLookAnalyticsUtils
-// Dependencies: [1084, 1992, 1264, 2]
+// Dependencies: [1084, 1993, 1264, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 14515 (ShopThisLookAnalyticsUtils)
+// Module 14749 (ShopThisLookAnalyticsUtils)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/S
 export const ShopThisLookMenuAction = { MENU_VIEWED: "menu_viewed", COACHMARK_VIEWED: "coachmark_viewed", COACHMARK_CTA_CLICKED: "coachmark_cta_clicked", COACHMARK_DISMISSED: "coachmark_dismissed" };
 export const ShopThisLookRowAction = { ROW_VIEWED: "row_viewed", ROW_CLICKED: "row_clicked" };
 export { ShopThisLookProductType };
-export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {
+export function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {
   let tmp;
   const obj = { action: COACHMARK_CTA_CLICKED, source: tmp };
   const track = AnalyticsUtilsDefault.track;
@@ -25,8 +25,8 @@ export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(
   AnalyticsUtilsDefault;
   track(SHOP_THIS_LOOK_MENU_ACTION, obj);
   tmp = ACTION_SHEET;
-};
-export const trackShopThisLookRowAction = function trackShopThisLookRowAction(arg0) {
+}
+export function trackShopThisLookRowAction(arg0) {
   let NAMEPLATE;
   let action;
   let isDisabled;
@@ -49,4 +49,4 @@ export const trackShopThisLookRowAction = function trackShopThisLookRowAction(ar
     NAMEPLATE = obj.NAMEPLATE;
   }
   track(SHOP_THIS_LOOK_ROW_ACTION, obj);
-};
+}

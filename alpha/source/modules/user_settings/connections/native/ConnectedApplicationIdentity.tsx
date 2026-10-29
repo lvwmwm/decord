@@ -1,18 +1,18 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16761
+// Function ID: 16762
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 5004, 16524, 1125, 1199, 5270, 11093, 5944, 16501, 6014, 1414, 5282, 10827, 9251, 7991, 6939, 7331, 6940, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 5005, 16762, 1125, 1199, 5271, 11147, 5946, 16739, 6018, 1415, 5283, 10903, 9255, 8014, 6963, 7355, 6964, 2]
 
-// Module 16523 (ConnectedApplicationIdentity)
+// Module 16761 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import Icon from "Icon" /* 5282 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5944 */;
-import AlertDefault from "Alert" /* 6014 */;
-import InfoBoxDefault from "InfoBox" /* 11093 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import Icon from "Icon" /* 5283 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
+import AlertDefault from "Alert" /* 6018 */;
+import InfoBoxDefault from "InfoBox" /* 11147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v0, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5282);
+const IconDefault = tmp(5283);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } else {
               try {
@@ -315,7 +315,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
                     v0 = 0;
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               } catch (tmp17) {
                 if (0 === v0) {
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp17) {
           if (0 === c3) {

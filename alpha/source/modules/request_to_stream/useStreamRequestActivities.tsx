@@ -1,16 +1,16 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14797
+// Function ID: 14798
 // Name: useStreamRequestActivities
-// Dependencies: [19, 502, 5748, 6533, 1084, 9256, 558, 576, 504, 2]
+// Dependencies: [19, 502, 5750, 6557, 1084, 9260, 558, 576, 504, 2]
 // Exports: getStreamRequestActivities
 
-// Module 14563 (useStreamRequestActivities)
+// Module 14797 (useStreamRequestActivities)
 import Constants from "Constants" /* 1084 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9256 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9260 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6533 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ const result = size.fileFinishedImporting("modules/request_to_stream/useStreamRe
 
 export default tmp3;
 export { isStreamRequestActivity };
-export const getStreamRequestActivities = function getStreamRequestActivities(userId, guildId) {
+export function getStreamRequestActivities(userId, guildId) {
   let activities;
   if (AuthenticationStore.getId() === userId) {
     activities = SelfPresenceStore.getActivities();
@@ -112,4 +112,4 @@ export const getStreamRequestActivities = function getStreamRequestActivities(us
     activities = PresenceStore.getActivities(userId, guildId);
   }
   return activities.filter(isStreamRequestActivity);
-};
+}

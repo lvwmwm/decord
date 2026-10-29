@@ -1,10 +1,10 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11660
+// Function ID: 11661
 // Name: StageChannelHeightHooks
-// Dependencies: [558, 8138, 2]
+// Dependencies: [558, 8161, 2]
 
-// Module 11606 (StageChannelHeightHooks)
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8138 */;
+// Module 11660 (StageChannelHeightHooks)
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8161 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

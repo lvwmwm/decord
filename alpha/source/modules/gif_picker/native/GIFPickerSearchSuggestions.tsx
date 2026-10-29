@@ -1,15 +1,15 @@
-// Module ID: 10174
-// Function ID: 10175
+// Module ID: 10207
+// Function ID: 10208
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 10165, 21, 5004, 587, 558, 576, 504, 1125, 5270, 5280, 2]
+// Dependencies: [19, 17, 10198, 21, 5005, 587, 558, 576, 504, 1125, 5271, 5281, 2]
 
-// Module 10174 (GIFPickerSearchSuggestions)
+// Module 10207 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10165 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10198 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return closure_1_4.getSuggestions();
         }
       }
-      const tmp12 = closure_5(onClickSuggestion(5270).Text, obj2);
+      const tmp12 = closure_5(onClickSuggestion(5271).Text, obj2);
       cResult[3] = tmp4.footerSuggestionsTitle;
       cResult[4] = tmp12;
       tmp10 = tmp12;
@@ -143,7 +143,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F148329 */ };
+          obj.onPress = function onPress() { /* body not rendered: F149887 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           Button = onClickSuggestion(closure_1_2[11]).Button;
           obj.hitSlop = closure_1_1(closure_1_2[5]).space.PX_8;
           obj.text = onClickSuggestion;
-          obj.onPress = function onPress() { /* body not rendered: F148329 */ };
+          obj.onPress = function onPress() { /* body not rendered: F149887 */ };
           return closure_1_5(Button, obj, onClickSuggestion);
         }
       }
@@ -187,7 +187,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
     const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1125).t["3JGJo2"]) };
-    const Text = tmp2(5270).Text;
+    const Text = tmp2(5271).Text;
     intl = tmp2(1125).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {

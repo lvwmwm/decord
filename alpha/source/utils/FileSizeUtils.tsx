@@ -1,10 +1,10 @@
-// Module ID: 6414
-// Function ID: 6415
+// Module ID: 6438
+// Function ID: 6439
 // Name: FileSizeUtils
 // Dependencies: [1125, 2]
 // Exports: formatKbSize
 
-// Module 6414 (FileSizeUtils)
+// Module 6438 (FileSizeUtils)
 import intl3 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let result = size.fileFinishedImporting("utils/FileSizeUtils.tsx");
 export const BYTE_IN_KB = 1024;
 export const KB_IN_MB = 1024;
 export { formatSize };
-export const formatKbSize = function formatKbSize(bytes, arg1) {
+export function formatKbSize(bytes, arg1) {
   let formatToPlainStringResult;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -102,4 +102,4 @@ export const formatKbSize = function formatKbSize(bytes, arg1) {
     }
   }
   return formatToPlainStringResult;
-};
+}

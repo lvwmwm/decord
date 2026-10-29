@@ -1,20 +1,20 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 15136
+// Function ID: 15137
 // Name: PoggermodeStore
-// Dependencies: [502, 4907, 7786, 7787, 1084, 4931, 4851, 14902, 1120, 504, 584, 2]
+// Dependencies: [502, 4908, 7808, 7809, 1084, 4932, 4852, 15137, 1120, 504, 584, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 14901 (PoggermodeStore)
+// Module 15136 (PoggermodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4931 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 14902 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4932 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 15137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7786 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7787 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7808 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7809 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,7 +61,7 @@ function updateCombo(userId) {
   if (decayInterval1 == null) {
     const self = this;
     const self2 = this;
-    decayInterval1 = new obj2(4851).Interval();
+    decayInterval1 = new obj2(4852).Interval();
   }
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj2);
   if (flag) {
@@ -260,7 +260,7 @@ const poggermodeStore = new PoggermodeStore(DispatcherDefault, obj);
 let result = size.fileFinishedImporting("modules/poggermode/PoggermodeStore.tsx");
 
 export default poggermodeStore;
-export const isComboing = function isComboing(value) {
+export function isComboing(value) {
   let tmp = null != value;
   if (tmp) {
     let tmp2 = value.value > 0;
@@ -274,11 +274,11 @@ export const isComboing = function isComboing(value) {
     tmp = tmp2;
   }
   return tmp;
-};
-export const getComboId = function getComboId(userId) {
+}
+export function getComboId(userId) {
   return "" + userId.userId + "-" + userId.channelId;
-};
-export const shouldTrackMessage = function shouldTrackMessage(arg0, arg1, arg2, has) {
+}
+export function shouldTrackMessage(arg0, arg1, arg2, has) {
   let tmp = arg0 === arg1;
   if (tmp) {
     let flag = null != arg2 && !has.has(arg2);
@@ -289,4 +289,4 @@ export const shouldTrackMessage = function shouldTrackMessage(arg0, arg1, arg2, 
     tmp = flag;
   }
   return tmp;
-};
+}

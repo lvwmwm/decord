@@ -1,10 +1,10 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 9778
+// Function ID: 9779
 // Name: ChannelDetailsStore
 // Dependencies: [570, 1271, 558, 576, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive
 
-// Module 9746 (ChannelDetailsStore)
+// Module 9778 (ChannelDetailsStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1271 */;
 import module_570 from "module_570" /* 570 */;
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/stores/ChannelDetailsStore.tsx");
 
 export { useChannelDetailsStore };
-export const deleteChannelStates = function deleteChannelStates() {
+export function deleteChannelStates() {
   let obj = react_native;
   obj.batchUpdates(() => {
     setState = setState.setState;
@@ -111,10 +111,10 @@ export const deleteChannelStates = function deleteChannelStates() {
     new Map();
     return setState(obj);
   });
-};
+}
 export const useIsChannelDetailsSearchActive = tmp3;
 export const useChannelDetailsSearchActiveSource = tmp4;
-export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
+export function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
   let obj = { isSearchActive, searchActiveSource };
   const states = obj.getState().states;
   let value = states.get(arg0);
@@ -133,8 +133,8 @@ export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearc
     const obj = { states: map };
     return obj.setState(obj);
   });
-};
-export const getIsChannelDetailsSearchActive = function getIsChannelDetailsSearchActive(arg0) {
+}
+export function getIsChannelDetailsSearchActive(arg0) {
   let obj;
   const states = obj.getState().states;
   let value = states.get(arg0);
@@ -144,8 +144,8 @@ export const getIsChannelDetailsSearchActive = function getIsChannelDetailsSearc
     value = obj;
   }
   return value.isSearchActive;
-};
-export const deleteChannelDetailsSearchState = function deleteChannelDetailsSearchState(arg0) {
+}
+export function deleteChannelDetailsSearchState(arg0) {
   let obj;
   const states = obj.getState().states;
   states.delete(arg0);
@@ -155,4 +155,4 @@ export const deleteChannelDetailsSearchState = function deleteChannelDetailsSear
     const obj = { states: map };
     return obj.setState(obj);
   });
-};
+}

@@ -1,15 +1,15 @@
-// Module ID: 10837
-// Function ID: 10838
+// Module ID: 10913
+// Function ID: 10914
 // Name: conjurePublishApproval
 // Dependencies: [2]
 // Exports: validPublishApproval
 
-// Module 10837 (conjurePublishApproval)
+// Module 10913 (conjurePublishApproval)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishApproval.tsx");
 
-export const validPublishApproval = function validPublishApproval(approval_url, approval_kind) {
+export function validPublishApproval(approval_url, approval_kind) {
   let isMatch = ("enroll" === approval_kind || "publish" === approval_kind) && typeof approval_url === "string";
   if (isMatch) {
     const _RegExp = RegExp;
@@ -20,4 +20,4 @@ export const validPublishApproval = function validPublishApproval(approval_url, 
     isMatch = regExp.test(approval_url);
   }
   return isMatch;
-};
+}

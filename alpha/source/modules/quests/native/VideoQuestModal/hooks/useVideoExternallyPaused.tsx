@@ -1,17 +1,17 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 17008
+// Function ID: 17009
 // Name: useVideoExternallyPaused
-// Dependencies: [5247, 558, 576, 9796, 5186, 14365, 504, 5946, 1381, 2]
+// Dependencies: [5248, 558, 576, 9828, 5187, 14599, 504, 5948, 1381, 2]
 
-// Module 16770 (useVideoExternallyPaused)
+// Module 17008 (useVideoExternallyPaused)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import useAlertStore from "useAlertStore" /* 5946 */;
-import ContextMenuState from "ContextMenuState" /* 9796 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14365 */;
-import ActionSheetStore from "ActionSheetStore" /* 5247 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import useAlertStore from "useAlertStore" /* 5948 */;
+import ContextMenuState from "ContextMenuState" /* 9828 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14599 */;
+import ActionSheetStore from "ActionSheetStore" /* 5248 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

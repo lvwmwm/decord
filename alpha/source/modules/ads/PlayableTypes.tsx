@@ -1,16 +1,16 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9664
+// Function ID: 9665
 // Name: PlayableTypes
-// Dependencies: [9618, 2]
+// Dependencies: [9650, 2]
 // Exports: playableCtaFromServer, playableFromServer
 
-// Module 9632 (PlayableTypes)
-import AssetUtils from "AssetUtils" /* 9618 */;
+// Module 9664 (PlayableTypes)
+import AssetUtils from "AssetUtils" /* 9650 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/PlayableTypes.tsx");
 
-export const playableCtaFromServer = function playableCtaFromServer(url) {
+export function playableCtaFromServer(url) {
   let tmp;
   let tmp2;
   const obj = { url: url.url, buttonLabel: url.button_label, android: tmp, ios: tmp2 };
@@ -25,8 +25,8 @@ export const playableCtaFromServer = function playableCtaFromServer(url) {
     const obj3 = { iosAppId: url.ios.ios_app_id };
   }
   return obj;
-};
-export const playableFromServer = function playableFromServer(creative_content) {
+}
+export function playableFromServer(creative_content) {
   let obj2;
   let obj3;
   let obj4;
@@ -50,4 +50,4 @@ export const playableFromServer = function playableFromServer(creative_content) 
     const obj7 = { iosAppId: cta.ios.ios_app_id };
   }
   return obj;
-};
+}

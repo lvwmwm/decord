@@ -1,10 +1,10 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 18018
+// Function ID: 18019
 // Name: EmojiSourceUtils
-// Dependencies: [5, 4954, 1414, 1898, 2]
+// Dependencies: [5, 4955, 1415, 1899, 2]
 // Exports: getEmojiSource
 
-// Module 17780 (EmojiSourceUtils)
+// Module 18018 (EmojiSourceUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _getEmojiSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _getEmojiSource() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -123,6 +123,6 @@ let obj = function _getEmojiSource() {
 };
 const result = size.fileFinishedImporting("modules/emojis/native/utils/EmojiSourceUtils.tsx");
 
-export const getEmojiSource = function getEmojiSource() {
+export function getEmojiSource() {
   return obj(...arguments);
-};
+}

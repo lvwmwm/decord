@@ -1,18 +1,18 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 17780
+// Function ID: 17781
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6705, 8365, 1084, 21, 558, 576, 17532, 1125, 2064, 9229, 1502, 16413, 16416, 11248, 16371, 16244, 2]
+// Dependencies: [19, 6729, 8387, 1084, 21, 558, 576, 17771, 1125, 2065, 9233, 1503, 16651, 16654, 11302, 16609, 16482, 2]
 
-// Module 17542 (DataAndPrivacyScreen)
+// Module 17780 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9229 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
-import SettingLayoutDefault from "SettingLayout" /* 16244 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 16371 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9233 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingLayoutDefault from "SettingLayout" /* 16482 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 16609 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6705 */;
+import ConsentStore from "ConsentStore" /* 6729 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -293,7 +293,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let tmp8;
   let obj = stackNavigation(576);
   const cResult = obj.c(8);
-  let obj2 = stackNavigation(1502);
+  let obj2 = stackNavigation(1503);
   stackNavigation = obj2.useStackNavigation();
   const tmp6 = closure_11(stackNavigation);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { screen: stackNavigation(16371).SettingsScreen.DATA_AND_PRIVACY };
+      const obj3 = { screen: stackNavigation(16609).SettingsScreen.DATA_AND_PRIVACY };
       const tmp20 = SettingsScreenNoticesDefault;
       const tmp21 = closure_8(tmp20, obj3);
       cResult[5] = tmp21;
@@ -347,9 +347,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   }
   const obj6 = { sections: items2 };
   items2 = [...tmp6];
-  const createList = tmp2(11248).createList;
+  const createList = tmp2(11302).createList;
   const obj7 = { label: intl.string(stackNavigation(1125).t.Me5lVK), settings: items3, subLabel: format(prop, obj8) };
-  stackNavigation(11248);
+  stackNavigation(11302);
   intl = tmp2(1125).intl;
   items3 = [, ];
   ({ DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES: arr3[0], ENCRYPTION_VERIFIED_DEVICES: arr3[1] } = MobileUserSettings);
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   obj8 = { helpArticle: tmp2Result2.getSecureFramesHelpdeskArticle() };
   prop = tmp2(1125).t["/6sFWa"];
   const items4 = [obj7];
-  tmp2Result2 = stackNavigation(9229);
+  tmp2Result2 = stackNavigation(9233);
   const obj9 = { label: intl3.string(stackNavigation(1125).t["+uHbqE"]), settings: items5, subLabel: intl4.format(stackNavigation(1125).t.R5N31P, obj10) };
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, items4, tmp12);
   intl3 = tmp2(1125).intl;
@@ -378,7 +378,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let fetchedConsents;
   let items1;
   let stackNavigation;
-  let obj = stackNavigation(1502);
+  let obj = stackNavigation(1503);
   stackNavigation = obj.useStackNavigation();
   const tmp2 = closure_11(stackNavigation);
   importDefault = tmp2;
@@ -430,7 +430,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     HermesBuiltin.arraySpread(items, items4, arraySpreadResult);
     return createList(obj);
   }, items);
-  let obj3 = { screen: stackNavigation(16371).SettingsScreen.DATA_AND_PRIVACY };
+  let obj3 = { screen: stackNavigation(16609).SettingsScreen.DATA_AND_PRIVACY };
   const tmp5 = SettingsScreenNoticesDefault;
   items1 = [closure_8(tmp5, obj3), closure_8(SettingLayoutDefault, { node: memo })];
   return closure_10(closure_9, obj2);

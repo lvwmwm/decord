@@ -1,19 +1,19 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 8925
+// Function ID: 8926
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6819, 4862, 1084, 1294, 6669, 1111, 8923, 6418, 584, 8928, 8929, 8930, 11, 2]
+// Dependencies: [5, 502, 6842, 4863, 1084, 1294, 6693, 1111, 8926, 6442, 584, 8931, 8932, 8933, 11, 2]
 
-// Module 8922 (GuildScheduledEventsActionCreators)
+// Module 8925 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1111 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8923 */;
-import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8929 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8926 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8932 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ let obj = {
             const obj = tmp(c2[10]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -283,7 +283,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -368,7 +368,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -405,7 +405,7 @@ let obj = {
                 return obj9;
               } else {
                 rsvp = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             }
           } else if (1 === userId) {
@@ -459,7 +459,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -534,7 +534,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp33) {
           closure_2 = tmp33;
@@ -574,7 +574,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {

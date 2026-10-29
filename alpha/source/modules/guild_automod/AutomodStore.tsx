@@ -1,15 +1,15 @@
-// Module ID: 19312
-// Function ID: 19313
+// Module ID: 19545
+// Function ID: 19546
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 12870, 1084, 1266, 19313, 1271, 12875, 6409, 4919, 558, 576, 2]
+// Dependencies: [32, 5, 19, 13091, 1084, 1266, 19546, 1271, 13096, 6433, 4920, 558, 576, 2]
 // Exports: getRuleCountByTriggerType, useSyncAutomodRules
 
-// Module 19312 (AutomodStore)
+// Module 19545 (AutomodStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import _slicedToArray2 from "_slicedToArray" /* 4919 */;
-import Constants2 from "Constants" /* 12870 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 19313 */;
+import _slicedToArray2 from "_slicedToArray" /* 4920 */;
+import Constants2 from "Constants" /* 13091 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 19546 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let _require, c0, c1, c6, c7, closure_5;
 
-const f139937 = (arg0) => {
+const f141507 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -134,7 +134,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -210,7 +210,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
           c4 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp27) {
         closure_5 = tmp27;
         if (0 === c4) {
@@ -241,7 +241,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
   first1 = undefined;
   let obj2 = react;
   [first, closure_1] = react.useState(false);
-  [first1, tmp6] = withEqualityFn(f139937, _slicedToArray2.shallow);
+  [first1, tmp6] = withEqualityFn(f141507, _slicedToArray2.shallow);
   let closure_3 = tmp6;
   const items = [first, ];
   const items1 = [arg0, tmp6, first1];
@@ -256,7 +256,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -302,7 +302,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
           closure_128_1(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp21) {
         closure_2 = tmp21;
         if (0 === c3) {
@@ -330,7 +330,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -358,7 +358,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp5) {
             c0 = 3;
@@ -406,7 +406,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f139937, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f141507, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];
@@ -421,7 +421,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -467,7 +467,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
           closure_128_1(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp21) {
         closure_2 = tmp21;
         if (0 === c3) {
@@ -494,7 +494,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -522,7 +522,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncAutom
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c0 = 3;
@@ -561,7 +561,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutomodRu
   } else {
     tmp4 = cResult[1];
   }
-  return withEqualityFn(tmp4, tmp(4919).shallow);
+  return withEqualityFn(tmp4, tmp(4920).shallow);
 }) : (function useAutomodRulesList(arg0) {
   let closure_0;
   _require = arg0;
@@ -583,7 +583,7 @@ function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f139937, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f141507, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];
@@ -599,7 +599,7 @@ function useSyncAutomodRules(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -645,7 +645,7 @@ function useSyncAutomodRules(arg0) {
           closure_128_1(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp21) {
         closure_2 = tmp21;
         if (0 === c3) {
@@ -662,7 +662,7 @@ function useSyncAutomodRules(arg0) {
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodStore.tsx");
 
 export const useAutomodStore = withEqualityFn;
-export const getRuleCountByTriggerType = function getRuleCountByTriggerType(guildId, triggerType) {
+export function getRuleCountByTriggerType(guildId, triggerType) {
   const tmp = withEqualityFn.getState().rules[guildId];
   let items;
   if (tmp != null) {
@@ -672,7 +672,7 @@ export const getRuleCountByTriggerType = function getRuleCountByTriggerType(guil
     items = [];
   }
   return items.length;
-};
+}
 export { useSyncAutomodRules };
 export const useSyncAutomodRulesEffect = tmp3;
 export const useAutomodRulesList = tmp4;

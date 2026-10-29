@@ -1,13 +1,13 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11454
+// Function ID: 11455
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1084, 7292, 5696, 1264, 2]
+// Dependencies: [5, 1084, 7316, 5698, 1264, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11400 (startAuthorizationNoHook)
+// Module 11454 (startAuthorizationNoHook)
 import Constants from "Constants" /* 1084 */;
-import LinkingDefault from "Linking" /* 5696 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7292 */;
+import LinkingDefault from "Linking" /* 5698 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7316 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _startAuthorizationNoHook() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _startAuthorizationNoHook() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp20) {
           closure_4 = tmp20;
           if (0 === c5) {
@@ -97,6 +97,6 @@ let obj = function _startAuthorizationNoHook() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/application_account_linking/native/startAuthorizationNoHook.tsx");
 
-export const startAuthorizationNoHook = function startAuthorizationNoHook() {
+export function startAuthorizationNoHook() {
   return obj(...arguments);
-};
+}

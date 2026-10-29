@@ -1,19 +1,19 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16639
+// Function ID: 16640
 // Name: SyncContactsSetting
-// Dependencies: [6535, 1389, 8365, 1084, 558, 576, 13817, 16402, 11248, 1125, 2]
+// Dependencies: [6559, 1389, 8387, 1084, 558, 576, 14050, 16640, 11302, 1125, 2]
 
-// Module 16401 (SyncContactsSetting)
+// Module 16639 (SyncContactsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13817 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 16402 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14050 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 16640 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

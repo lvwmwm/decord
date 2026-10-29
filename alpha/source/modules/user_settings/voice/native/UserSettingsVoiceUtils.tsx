@@ -1,14 +1,14 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11724
+// Function ID: 11725
 // Name: UserSettingsVoiceUtils
-// Dependencies: [2011, 1084, 5887, 11671, 558, 576, 504, 2]
+// Dependencies: [2012, 1084, 5889, 11725, 558, 576, 504, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange
 
-// Module 11670 (UserSettingsVoiceUtils)
+// Module 11724 (UserSettingsVoiceUtils)
 import react from "react" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5887 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11671 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5889 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11725 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -81,17 +81,17 @@ function getSelectedNoiseSuppressionOption(MediaEngineStore) {
 }
 let result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
 
-export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
+export function handleAutomaticGainControlChange(arg0) {
   const obj = AudioActionCreatorsDefault;
   const obj2 = { page: constants.USER_SETTINGS, section: hasOwnProperty.SETTINGS_VOICE_AND_VIDEO };
   const result = obj.setAutomaticGainControl(arg0, obj2);
-};
-export const handleEchoCancellationChange = function handleEchoCancellationChange(arg0) {
+}
+export function handleEchoCancellationChange(arg0) {
   const obj = AudioActionCreatorsDefault;
   const obj2 = { page: constants.USER_SETTINGS, section: hasOwnProperty.SETTINGS_VOICE_AND_VIDEO };
   obj.setEchoCancellation(arg0, obj2);
-};
-export const handleNoiseSuppressionChange = function handleNoiseSuppressionChange(arg0) {
+}
+export function handleNoiseSuppressionChange(arg0) {
   let KRISP;
   let STANDARD;
   let obj;
@@ -102,7 +102,7 @@ export const handleNoiseSuppressionChange = function handleNoiseSuppressionChang
   const obj3 = AudioActionCreatorsDefault;
   const obj4 = { page: constants.USER_SETTINGS, section: hasOwnProperty.SETTINGS_VOICE_AND_VIDEO };
   obj3.setNoiseSuppression(arg0 === STANDARD, obj4);
-};
+}
 export { NoiseSuppressionOpt };
 export { getSelectedNoiseSuppressionOption };
 export const useSelectedNoiseSuppressionOption = tmp3;

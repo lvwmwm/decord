@@ -1,15 +1,15 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 9119
+// Function ID: 9120
 // Name: UserAffinitiesActionCreators
-// Dependencies: [6705, 7767, 1084, 584, 1294, 9117, 2]
+// Dependencies: [6729, 7789, 1084, 584, 1294, 9120, 2]
 // Exports: fetchUserAffinitiesV2, setDevToolsUserAffinityOverride
 
-// Module 9116 (UserAffinitiesActionCreators)
+// Module 9119 (UserAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import UserAffinitiesTypes from "UserAffinitiesTypes" /* 9117 */;
-import ConsentStore from "ConsentStore" /* 6705 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7767 */;
+import UserAffinitiesTypes from "UserAffinitiesTypes" /* 9120 */;
+import ConsentStore from "ConsentStore" /* 6729 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let metroRequire;
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");
 
-export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
+export function fetchUserAffinitiesV2() {
   let num;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -101,8 +101,8 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
     return nextPromise;
   }
   nextPromise = Promise.resolve();
-};
-export const setDevToolsUserAffinityOverride = function setDevToolsUserAffinityOverride(userId) {
+}
+export function setDevToolsUserAffinityOverride(userId) {
   let tmp3 = null;
   const dispatch = DispatcherDefault.dispatch;
   DispatcherDefault;
@@ -112,4 +112,4 @@ export const setDevToolsUserAffinityOverride = function setDevToolsUserAffinityO
     tmp3 = obj;
   }
   dispatch({ type: "DEV_TOOLS_SET_USER_AFFINITY_OVERRIDE", override: tmp3 });
-};
+}

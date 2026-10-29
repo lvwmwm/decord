@@ -259,7 +259,7 @@ let obj = function _instrumentStream() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c9;
@@ -431,7 +431,7 @@ let obj = function _instrumentStream() {
                   closure_0.setAttributes(obj28);
                   closure_0.end();
                   c12 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "IconComponent" };
                 }
               }
               break;
@@ -996,6 +996,6 @@ let obj = function _instrumentStream() {
 };
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const instrumentStream = function instrumentStream(arg0, arg1, arg2) {
+export function instrumentStream(arg0, arg1, arg2) {
   return obj(...arguments);
-};
+}

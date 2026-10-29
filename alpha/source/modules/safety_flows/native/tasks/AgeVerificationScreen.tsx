@@ -1,18 +1,18 @@
-// Module ID: 19742
-// Function ID: 19743
+// Module ID: 19964
+// Function ID: 19965
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1389, 1084, 21, 5004, 558, 576, 1278, 19735, 504, 19729, 8128, 1997, 6692, 7937, 1125, 2833, 3091, 7918, 2064, 6703, 15555, 5270, 8130, 19738, 2]
+// Dependencies: [19, 17, 1389, 1084, 21, 5005, 558, 576, 1278, 19957, 504, 19951, 8151, 1998, 6716, 7960, 1125, 2834, 3092, 7941, 2065, 6727, 15791, 5271, 8153, 19960, 2]
 
-// Module 19742 (AgeVerificationScreen)
+// Module 19964 (AgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import Server from "Server" /* 1997 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import types from "types" /* 19729 */;
+import Server from "Server" /* 1998 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import types from "types" /* 19951 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

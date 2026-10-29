@@ -12,7 +12,7 @@ let c5, c6;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_3 = { mechanism: { handled: false, type: "auto.rpc.trpc.middleware" } };
 
-export const trpcMiddleware = function trpcMiddleware() {
+export function trpcMiddleware() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -37,7 +37,7 @@ export const trpcMiddleware = function trpcMiddleware() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -158,7 +158,7 @@ export const trpcMiddleware = function trpcMiddleware() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "IconComponent" };
                         }
                       } else {
                         try {
@@ -237,4 +237,4 @@ export const trpcMiddleware = function trpcMiddleware() {
   return function(arg0) {
     return closure_0(...arguments);
   };
-};
+}

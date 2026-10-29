@@ -1,12 +1,12 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14874
+// Function ID: 14875
 // Name: UserProfileGameWidgetTagMetadata
-// Dependencies: [14641, 1125, 2]
+// Dependencies: [14875, 1125, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 14640 (UserProfileGameWidgetTagMetadata)
+// Module 14874 (UserProfileGameWidgetTagMetadata)
 import intl2 from "intl" /* 1125 */;
-import WidgetGameTag from "WidgetGameTag" /* 14641 */;
+import WidgetGameTag from "WidgetGameTag" /* 14875 */;
 import size from "module_2" /* 2 */;
 
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
@@ -112,7 +112,7 @@ let closure_2 = { [WidgetGameTag.WidgetGameTag.BETTER_THAN_YOU]: obj2, [WidgetGa
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
 
 export const WidgetGameTagIconRole = obj;
-export const buildWidgetGameTagMetadata = function buildWidgetGameTagMetadata(arg0) {
+export function buildWidgetGameTagMetadata(arg0) {
   const obj = {};
   const keys = Object.keys(closure_2);
   const iter = keys[Symbol.iterator]();
@@ -127,4 +127,4 @@ export const buildWidgetGameTagMetadata = function buildWidgetGameTagMetadata(ar
     continue;
   }
   return obj;
-};
+}

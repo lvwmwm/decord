@@ -1,17 +1,17 @@
-// Module ID: 5836
-// Function ID: 5837
+// Module ID: 5838
+// Function ID: 5839
 // Name: VideoCodecUtils
-// Dependencies: [5754, 2]
+// Dependencies: [5756, 2]
 // Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 5836 (VideoCodecUtils)
-import Constants from "Constants" /* 5754 */;
+// Module 5838 (VideoCodecUtils)
+import Constants from "Constants" /* 5756 */;
 import size from "module_2" /* 2 */;
 
 let encode, set;
 
-const f96590 = (name) => name.name;
-const f96592 = (codec) => {
+const f97600 = (name) => name.name;
+const f97602 = (codec) => {
   codec = codec.codec;
   let str = "AV1";
   if ("AV1X" !== codec) {
@@ -23,7 +23,7 @@ const ExperimentFlags = Constants.ExperimentFlags;
 let items = [{ name: "H264", encode: true, decode: true }, { name: "VP8", encode: true, decode: true }];
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx");
 
-export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, arg2) {
+export function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodecs, arg2) {
   let closure_0 = parseNativeCodecsResult;
   let flag = arg2;
   if (arg2 === undefined) {
@@ -49,7 +49,7 @@ export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNat
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f96590));
+    new Set(items.map(f97600));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -59,8 +59,8 @@ export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNat
     });
   }
   return items;
-};
-export const getExperimentCodecs = function getExperimentCodecs(experimentFlags) {
+}
+export function getExperimentCodecs(experimentFlags) {
   const hasItem = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_ENCODE);
   const hasItem1 = experimentFlags.has(ExperimentFlags.SIGNAL_AV1_DECODE);
   items = [];
@@ -73,14 +73,14 @@ export const getExperimentCodecs = function getExperimentCodecs(experimentFlags)
   const obj2 = { name: "H265", encode: tmp6, decode: experimentFlags.has(ExperimentFlags.H265_HARDWARE_DECODE_AVAILABLE) };
   items.push(obj2);
   return items;
-};
-export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
+}
+export function filterVideoCodecs(arg0, arr) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   const parsed = JSON.parse(arg0);
-  const mapped = parsed.map(f96592);
+  const mapped = parsed.map(f97602);
   if (flag === undefined) {
     flag = false;
   }
@@ -105,7 +105,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(items.map(f96590));
+    set = new Set(items.map(f97600));
     const item1 = mapped.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -115,11 +115,11 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     });
   }
   return items;
-};
-export const parseNativeCodecs = function parseNativeCodecs(arg0) {
+}
+export function parseNativeCodecs(arg0) {
   const parsed = JSON.parse(arg0);
-  return parsed.map(f96592);
-};
+  return parsed.map(f97602);
+}
 export function codecNameToPayloadName(name) {
   let str = "AV1X";
   if ("AV1" !== name) {

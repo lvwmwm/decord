@@ -1,20 +1,20 @@
-// Module ID: 5188
-// Function ID: 5189
+// Module ID: 5189
+// Function ID: 5190
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 5039, 4907, 1084, 3, 5189, 1111, 5040, 5053, 5192, 2]
+// Dependencies: [32, 502, 5040, 4908, 1084, 3, 5190, 1111, 5041, 5054, 5193, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 5188 (getInitialNavigationState)
+// Module 5189 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
 import router_utils from "router_utils" /* 1111 */;
-import matchPathCompat from "matchPathCompat" /* 5040 */;
-import RouteUtils from "RouteUtils" /* 5053 */;
-import useChatLayout from "useChatLayout" /* 5189 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5192 */;
+import matchPathCompat from "matchPathCompat" /* 5041 */;
+import RouteUtils from "RouteUtils" /* 5054 */;
+import useChatLayout from "useChatLayout" /* 5190 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5039 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5040 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(5053).RouteParam;
+      const RouteParam3 = tmp(5054).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(5053).RouteParam;
+      RouteParam4 = tmp(5054).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {
@@ -192,11 +192,11 @@ export default function getInitialNavigationState(arr) {
   }
   return tmp;
 };
-export const wrapRouteForRootNavigator = function wrapRouteForRootNavigator(items) {
+export function wrapRouteForRootNavigator(items) {
   const obj = { name: "main", state: obj2 };
   items = [obj];
   return items;
-};
+}
 export function getInitialAuthState() {
   let items;
   const obj = { routes: items, index: 0 };
@@ -204,8 +204,8 @@ export function getInitialAuthState() {
   return obj;
 }
 export { getInitialGuildState };
-export const computeInitialNavigationState = function computeInitialNavigationState() {
+export function computeInitialNavigationState() {
   const tmp = computeInitialNavigationStateWithoutLogging();
   logger.log("Initial State:", tmp);
   return tmp;
-};
+}

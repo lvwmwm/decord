@@ -1,12 +1,12 @@
-// Module ID: 14568
-// Function ID: 14569
+// Module ID: 14802
+// Function ID: 14803
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1101, 8654, 558, 576, 4851, 2]
+// Dependencies: [32, 19, 1101, 8676, 558, 576, 4852, 2]
 // Exports: formatTime, formatTimeForA11yLabel
 
-// Module 14568 (useActivityTimer)
+// Module 14802 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1101 */;
-import utils from "utils" /* 8654 */;
+import utils from "utils" /* 8676 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const self = this;
     const self2 = this;
-    const interval = new tmp(4851).Interval();
+    const interval = new tmp(4852).Interval();
     cResult[0] = interval;
     first = interval;
   } else {
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
   let first;
   importDefault = undefined;
   const end = start.end;
-  const interval = new first(4851).Interval();
+  const interval = new first(4852).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   [first1, importDefault] = closure_5(() => Date.now());
   const items = [first];
@@ -111,7 +111,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
 let result = size.fileFinishedImporting("modules/user_profile/hooks/useActivityTimer.tsx");
 
 export default tmp3;
-export const formatTime = function formatTime(arg0) {
+export function formatTime(arg0) {
   let combined;
   const rounded = Math.floor(arg0);
   const result = rounded % DurationsDefault.Seconds.MINUTE;
@@ -139,8 +139,8 @@ export const formatTime = function formatTime(arg0) {
     combined = "" + padStartResult1 + ":" + padStartResult2 + ":" + StringResult4.padStart(2, "0");
   }
   return combined;
-};
-export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
+}
+export function formatTimeForA11yLabel(arg0) {
   const rounded = Math.floor(arg0);
   const seconds = rounded % DurationsDefault.Seconds.MINUTE;
   const rounded1 = Math.floor(arg0 / DurationsDefault.Seconds.MINUTE);
@@ -148,4 +148,4 @@ export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
   const hours = Math.floor(arg0 / DurationsDefault.Seconds.HOUR);
   const obj = utils;
   return obj.formatTimestampToA11yLabel({ hours, minutes, seconds });
-};
+}

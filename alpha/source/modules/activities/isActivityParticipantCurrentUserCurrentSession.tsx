@@ -1,16 +1,16 @@
-// Module ID: 5663
-// Function ID: 5664
+// Module ID: 5665
+// Function ID: 5666
 // Name: isActivityParticipantCurrentUserCurrentSession
 // Dependencies: [502, 2]
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 5663 (isActivityParticipantCurrentUserCurrentSession)
+// Module 5665 (isActivityParticipantCurrentUserCurrentSession)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");
 
-export const isActivityParticipantCurrentUserCurrentSession = function isActivityParticipantCurrentUserCurrentSession(userId) {
+export function isActivityParticipantCurrentUserCurrentSession(userId) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = AuthenticationStore;
@@ -21,4 +21,4 @@ export const isActivityParticipantCurrentUserCurrentSession = function isActivit
     tmp3 = null == userId.sessionId || undefined === userId.sessionId || userId.sessionId === tmp2;
   }
   return tmp3;
-};
+}

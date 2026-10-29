@@ -1,13 +1,13 @@
-// Module ID: 15305
-// Function ID: 15306
+// Module ID: 15540
+// Function ID: 15541
 // Name: SharedSpacesWarningStore
-// Dependencies: [1101, 570, 5200, 7815, 2]
+// Dependencies: [1101, 570, 5201, 7838, 2]
 // Exports: dequeueBlockWarning, gdmBlockedWarningInCooldown, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers, userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 15305 (SharedSpacesWarningStore)
+// Module 15540 (SharedSpacesWarningStore)
 import DurationsDefault from "Durations" /* 1101 */;
 import module_570 from "module_570" /* 570 */;
-import combine_mod from "combine" /* 5200 */;
+import combine_mod from "combine" /* 5201 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,25 +24,25 @@ let obj2 = create(persist(() => ({ channelDismissTimestamps: {}, userDismissTime
 const result = size.fileFinishedImporting("modules/shared_space_warnings/SharedSpacesWarningStore.tsx");
 
 export const useSharedSpacesWarningStore = obj2;
-export const getChannelDismissTimestamp = function getChannelDismissTimestamp(arg0) {
+export function getChannelDismissTimestamp(arg0) {
   return obj2.getState().channelDismissTimestamps[arg0];
-};
-export const getUserDismissTimestamp = function getUserDismissTimestamp(arg0) {
+}
+export function getUserDismissTimestamp(arg0) {
   return obj2.getState().userDismissTimestamps[arg0];
-};
-export const getGlobalDismissTimestamp = function getGlobalDismissTimestamp() {
+}
+export function getGlobalDismissTimestamp() {
   return obj2.getState().globalDismissTimestamp;
-};
-export const isBlockedWarningQueued = function isBlockedWarningQueued() {
+}
+export function isBlockedWarningQueued() {
   return obj2.getState().queuedWarning;
-};
-export const queueBlockWarning = function queueBlockWarning() {
+}
+export function queueBlockWarning() {
   obj2.setState({ queuedWarning: true });
-};
-export const dequeueBlockWarning = function dequeueBlockWarning() {
+}
+export function dequeueBlockWarning() {
   obj2.setState({ queuedWarning: false });
-};
-export const setDismissalTimeForChannel = function setDismissalTimeForChannel(arg0) {
+}
+export function setDismissalTimeForChannel(arg0) {
   let closure_0 = arg0;
   obj2.setState((channelDismissTimestamps) => {
     const obj = { channelDismissTimestamps: obj2 };
@@ -51,8 +51,8 @@ export const setDismissalTimeForChannel = function setDismissalTimeForChannel(ar
     obj2[closure_0] = Date.now();
     return obj;
   });
-};
-export const setDismissalTimeForUser = function setDismissalTimeForUser(blockedUserId) {
+}
+export function setDismissalTimeForUser(blockedUserId) {
   let closure_0 = blockedUserId;
   obj2.setState((userDismissTimestamps) => {
     const obj = { userDismissTimestamps: obj2, globalDismissTimestamp: Date.now() };
@@ -61,8 +61,8 @@ export const setDismissalTimeForUser = function setDismissalTimeForUser(blockedU
     obj2[closure_0] = Date.now();
     return obj;
   });
-};
-export const setDismissalTimeForUsers = function setDismissalTimeForUsers(arg0) {
+}
+export function setDismissalTimeForUsers(arg0) {
   const arr = Array.from(arg0);
   let closure_0 = arr.reduce((acc, item) => {
     acc[item] = Date.now();
@@ -75,8 +75,8 @@ export const setDismissalTimeForUsers = function setDismissalTimeForUsers(arg0) 
     const merged1 = Object.assign(closure_0);
     return obj;
   });
-};
-export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarningInCooldownForUsers(arg0) {
+}
+export function voiceBlockedWarningInCooldownForUsers(arg0) {
   let num = obj2.getState().globalDismissTimestamp;
   if (num == null) {
     num = 0;
@@ -108,8 +108,8 @@ export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarnin
     });
   }
   return everyResult;
-};
-export const userBlockedWarningInCooldown = function userBlockedWarningInCooldown(arg0) {
+}
+export function userBlockedWarningInCooldown(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -132,11 +132,11 @@ export const userBlockedWarningInCooldown = function userBlockedWarningInCooldow
     tmp5 = num2 > Date.now() - closure_3;
   }
   return tmp5;
-};
-export const gdmBlockedWarningInCooldown = function gdmBlockedWarningInCooldown(arg0) {
+}
+export function gdmBlockedWarningInCooldown(arg0) {
   let num = obj2.getState().channelDismissTimestamps[arg0];
   if (num == null) {
     num = 0;
   }
   return num > Date.now() - closure_2;
-};
+}

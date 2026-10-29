@@ -110,7 +110,7 @@ export const mobileReplayIntegration = () => {
                     const obj = { value, done: true };
                     return obj;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "IconComponent" };
                   }
                 } else {
                   let c3;

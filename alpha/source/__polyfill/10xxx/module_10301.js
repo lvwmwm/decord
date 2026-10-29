@@ -1,94 +1,75 @@
 // Module ID: 10301
 // Function ID: 10302
-// Dependencies: [41, 42, 93, 95, 98, 10249, 10295, 10250, 10256]
+// Dependencies: [41, 42]
 
 // Module 10301
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10249 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10250 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10256 */;
-import _mod10295 from "module_10295" /* 10295 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10295.MONTH_DICTIONARY);
-const regExp = new RegExp("(?:am\\s*?)?(?:den\\s*?)?([0-9]{1,2})\\.(?:\\s*(?:bis(?:\\s*(?:am|zum))?|\\-|\\\u2013|\\s)\\s*([0-9]{1,2})\\.?)?\\s*(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod10295.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class DEMonthNameLittleEndianParser {
+class Filter {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DEMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(DEMonthNameLittleEndianParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, Filter);
   }
 }
-_inherits(DEMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "refine",
+  value: function refine(arg0, arr) {
+    const self = this;
+    let closure_0 = arg0;
+    return arr.filter((item) => self.isValid(closure_0, item));
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod10295.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const parsed = parseInt(index[1]);
-      if (parsed > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", parsed);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod10295.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
-        }
-        if (index[2]) {
-          const _parseInt = parseInt;
-          const start3 = parsingResult.start;
-          const parsed1 = parseInt(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", parsed1);
-        }
-        return parsingResult;
+let items = [entry];
+class MergingRefiner {
+  constructor() {
+    _classCallCheck(this, MergingRefiner);
+  }
+}
+const entry1 = {
+  key: "refine",
+  value: function refine(text, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp20 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp11;
+          let tmp = arg1[num];
+          let str = text.text;
+          let substr = str.substring(first.index + first.text.length, tmp.index);
+          if (self.shouldMergeResults(substr, first, tmp, text)) {
+            let closure_1 = tmp;
+            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
+            let debugResult = text.debug(() => {
+              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
+            });
+            tmp11 = mergeResultsResult;
+          } else {
+            let arr = items.push(first);
+            tmp11 = tmp;
+          }
+          num = num2 + 1;
+          first = tmp11;
+          tmp20 = tmp11;
+          num2 = num;
+        } while (num < arg1.length);
       }
+      if (null != tmp20) {
+        items.push(tmp20);
+      }
+      return items;
     }
   }
-];
+};
+const items1 = [entry1];
+const Filter_export = _createClass(Filter, items);
+const MergingRefiner_export = _createClass(MergingRefiner, items1);
 
-export default _createClass(DEMonthNameLittleEndianParser, items);
+export { Filter_export as Filter };
+export { MergingRefiner_export as MergingRefiner };

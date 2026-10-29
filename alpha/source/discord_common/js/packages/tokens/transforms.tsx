@@ -39,7 +39,7 @@ let closure_8 = [0.75, 1.5];
 let closure_9 = [1.45, 0.45];
 let result = size.fileFinishedImporting("../discord_common/js/packages/tokens/transforms.tsx");
 
-export const transformColorForReducedContrast = function transformColorForReducedContrast(arg0, arg1, arg2) {
+export function transformColorForReducedContrast(arg0, arg1, arg2) {
   let BACKGROUND_LIGHTNESS_LIGHT_THEME;
   let tmp9;
   if ("background" !== arg1) {
@@ -71,8 +71,8 @@ export const transformColorForReducedContrast = function transformColorForReduce
   const set2Result = set2("hsl.l", BACKGROUND_LIGHTNESS_LIGHT_THEME);
   const result1 = set2Result.set("hsl.s", tmp9.BACKGROUND_SATURATION);
   return result1.hex();
-};
-export const transformColorForIncreasedContrast = function transformColorForIncreasedContrast(arg0, arg1, arg2, arg3) {
+}
+export function transformColorForIncreasedContrast(arg0, arg1, arg2, arg3) {
   let items3;
   if ("border" === arg2) {
     const items = [arg0, constants2.BORDER_MIN_OPACITY + arg1];
@@ -104,8 +104,8 @@ export const transformColorForIncreasedContrast = function transformColorForIncr
     items3 = [arg0, arg1];
   }
   return items3;
-};
-export const transformColorForReducedSaturation = function transformColorForReducedSaturation(result, category, saturation) {
+}
+export function transformColorForReducedSaturation(result, category, saturation) {
   let tmp2;
   let tmp3;
   let tmp5;
@@ -123,8 +123,8 @@ export const transformColorForReducedSaturation = function transformColorForRedu
     const result1 = obj.set("hsl.s", "*" + saturation);
     return result1.hex();
   }
-};
-export const transformColorContrast = function transformColorContrast(result, category, theme, contrast) {
+}
+export function transformColorContrast(result, category, theme, contrast) {
   if ("background" !== category) {
     if ("border" !== category) {
       if ("text" === category) {
@@ -140,4 +140,4 @@ export const transformColorContrast = function transformColorContrast(result, ca
   const obj3 = _modDef683(result);
   const result1 = obj3.set("hsl.l", "*" + interpolate(closure_5, "light" === theme ? closure_7 : closure_6, contrast));
   return result1.hex();
-};
+}

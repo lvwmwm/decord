@@ -1,27 +1,27 @@
-// Module ID: 7769
-// Function ID: 7770
+// Module ID: 7791
+// Function ID: 7792
 // Name: UserSearchUtils
-// Dependencies: [7770, 4916, 4946, 1084, 2030, 5058, 2]
+// Dependencies: [7792, 4917, 4947, 1084, 2031, 5059, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7769 (UserSearchUtils)
+// Module 7791 (UserSearchUtils)
 import Constants from "Constants" /* 1084 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7770 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7792 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 const RelationshipTypes = Constants.RelationshipTypes;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/UserSearchUtils.tsx");
 
-export const cleanString = function cleanString(toLocaleLowerCase) {
+export function cleanString(toLocaleLowerCase) {
   const obj = StringUtils;
   const str = obj.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase());
   return str.trim();
-};
-export const getRelationshipType = function getRelationshipType(id) {
+}
+export function getRelationshipType(id) {
   const relationshipType = RelationshipStore.getRelationshipType(id);
   let SUGGESTION = relationshipType;
   if (relationshipType === RelationshipTypes.NONE) {
@@ -31,13 +31,13 @@ export const getRelationshipType = function getRelationshipType(id) {
     }
   }
   return SUGGESTION;
-};
-export const getNames = function getNames(user) {
+}
+export function getNames(user) {
   const names = {};
   const nick = RelationshipStore.getNickname(user.id);
   if (null != nick) {
     const tmp = names;
-    const obj3 = names(2030);
+    const obj3 = names(2031);
     let str = obj3.stripDiacritics(nick.toLocaleLowerCase());
     let str2 = str.trim();
     names[nick] = str2.split(" ");
@@ -46,14 +46,14 @@ export const getNames = function getNames(user) {
   const globalName = obj4.getGlobalName(user);
   const tmp4 = null != globalName && null == names[globalName];
   if (tmp4) {
-    const obj6 = names(2030);
+    const obj6 = names(2031);
     const str4 = obj6.stripDiacritics(globalName.toLocaleLowerCase());
     const str5 = str4.trim();
     names[globalName] = str5.split(" ");
   }
   const username2 = user.username;
   const username = user.username;
-  const obj7 = names(2030);
+  const obj7 = names(2031);
   const str7 = obj7.stripDiacritics(username2.toLocaleLowerCase());
   const str8 = str7.trim();
   names[username] = str8.split(" ");
@@ -67,4 +67,4 @@ export const getNames = function getNames(user) {
     }
   });
   return { names, nick };
-};
+}

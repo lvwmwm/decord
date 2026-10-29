@@ -1,19 +1,19 @@
-// Module ID: 6033
-// Function ID: 6034
+// Module ID: 6037
+// Function ID: 6038
 // Name: MediaPostEmbedUtils
-// Dependencies: [4878, 4946, 1389, 1084, 6034, 1125, 6025, 1414, 1402, 5640, 5735, 5642, 2]
+// Dependencies: [4879, 4947, 1389, 1084, 6038, 1125, 6029, 1415, 1402, 5641, 5737, 5643, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 6033 (MediaPostEmbedUtils)
+// Module 6037 (MediaPostEmbedUtils)
 import FlagUtils from "FlagUtils" /* 1402 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import LinkUtils from "LinkUtils" /* 5642 */;
-import findCodedLinks from "findCodedLinks" /* 5735 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6025 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6034 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import LinkUtils from "LinkUtils" /* 5643 */;
+import findCodedLinks from "findCodedLinks" /* 5737 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6038 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let metroRequire;
 ({ GuildFeatures: metroRequire, MessageAttachmentFlags: metroImportDefault } = Constants);
 let result = size.fileFinishedImporting("modules/media_channel/MediaPostEmbedUtils.tsx");
 
-export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(arg0) {
+export function getMediaPostEmbedCommonData(arg0) {
   let author_id;
   let canAccess;
   let channelName;
@@ -131,8 +131,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     ({ flags: obj4.flags, content_scan_version: obj4.contentScanVersion } = mediaPostEmbedData);
     return obj8;
   }
-};
-export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(url) {
+}
+export function getMediaPostEmbedChannelId(url) {
   let tryParseChannelPathResult;
   if (null != url) {
     const obj = findCodedLinks;
@@ -155,8 +155,8 @@ export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(ur
       return channelId;
     }
   }
-};
-export const getMediaPostEmbedChannelPath = function getMediaPostEmbedChannelPath(url) {
+}
+export function getMediaPostEmbedChannelPath(url) {
   if (null != url) {
     const obj = findCodedLinks;
     const parseURLSafelyResult = obj.parseURLSafely(url);
@@ -169,8 +169,8 @@ export const getMediaPostEmbedChannelPath = function getMediaPostEmbedChannelPat
       }
     }
   }
-};
-export const canUseMediaPostEmbed = function canUseMediaPostEmbed(guildId, isMediaChannel) {
+}
+export function canUseMediaPostEmbed(guildId, isMediaChannel) {
   const guild = GuildStore.getGuild(guildId);
   if (null != guild) {
     if (null != isMediaChannel) {
@@ -186,4 +186,4 @@ export const canUseMediaPostEmbed = function canUseMediaPostEmbed(guildId, isMed
     }
   }
   return false;
-};
+}

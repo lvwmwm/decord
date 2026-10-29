@@ -1,21 +1,21 @@
-// Module ID: 7665
-// Function ID: 7666
+// Module ID: 7688
+// Function ID: 7689
 // Name: ApplicationCommandUtils
-// Dependencies: [4860, 7666, 6019, 1084, 1095, 7668, 1997, 5670, 1096, 12, 38, 14, 5747, 2]
+// Dependencies: [4861, 7689, 6023, 1084, 1095, 7691, 1998, 5672, 1096, 12, 38, 14, 5749, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7665 (ApplicationCommandUtils)
+// Module 7688 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef14 from "module_14" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1095 */;
-import Server from "Server" /* 1997 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import DraftStore from "DraftStore" /* 7666 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7668 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
+import Server from "Server" /* 1998 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import DraftStore from "DraftStore" /* 7689 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7691 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
 import Constants from "Constants" /* 1084 */;
 import BigFlagUtils from "BigFlagUtils" /* 1096 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function buildCommand(arg0) {
   let rootCommand;
   let subCommandPath;
   let useKeyedPermissions;
-  const f100000 = (choices) => {
+  const f101015 = (choices) => {
     let description;
     let mapped;
     let mapped1;
@@ -63,7 +63,7 @@ function buildCommand(arg0) {
     const options = choices.options;
     mapped1 = undefined;
     if (options != null) {
-      mapped1 = options.map(f100000);
+      mapped1 = options.map(f101015);
     }
     ({ name_localized: obj.serverLocalizedName, name_localized } = choices);
     if (name_localized == null) {
@@ -147,7 +147,7 @@ function buildCommand(arg0) {
   ({ description: obj3.untranslatedDescription, options } = command);
   mapped2 = undefined;
   if (options != null) {
-    mapped2 = options.map(f100000);
+    mapped2 = options.map(f101015);
   }
   deserializeResult = undefined;
   if (null != rootCommand.default_member_permissions) {
@@ -186,7 +186,7 @@ function buildSubCommands(arg0) {
   } else {
     const tmp2 = require;
     if (command.type !== Server.ApplicationCommandOptionType.SUB_COMMAND) {
-      if (command.type !== tmp2(1997).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+      if (command.type !== tmp2(1998).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
         const obj = { rootCommand, command, applicationId, subCommandPath, useKeyedPermissions };
         const items1 = [buildCommand(obj)];
         return items1;
@@ -291,15 +291,15 @@ const map1 = deserializeResult;
 let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandUtils.tsx");
 
 export { buildCommand };
-export const buildApplicationCommands = function buildApplicationCommands(cResult, useKeyedPermissions) {
+export function buildApplicationCommands(uniqByResult, useKeyedPermissions) {
   let obj = _modDef12;
-  return obj.flatMap(cResult, (id) => {
+  return obj.flatMap(uniqByResult, (id) => {
     _modDef38(null != id.id, "Missing command id");
     const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions };
     return buildSubCommands(obj);
   });
-};
-export const applicationPermissionsList = function applicationPermissionsList(arr) {
+}
+export function applicationPermissionsList(arr) {
   let reduced;
   if (arr != null) {
     reduced = arr.reduce((arr, applicationCommandPermissions) => {
@@ -312,11 +312,11 @@ export const applicationPermissionsList = function applicationPermissionsList(ar
     }, []);
   }
   return reduced;
-};
-export const isSnowflake = function isSnowflake(text) {
+}
+export function isSnowflake(text) {
   return regex.test(text.trim());
-};
-export const getMatchingGroupCommands = function getMatchingGroupCommands(contextCommands, regExp, arg2, arg3) {
+}
+export function getMatchingGroupCommands(contextCommands, regExp, arg2, arg3) {
   let closure_0 = regExp;
   let closure_1 = arg2;
   const items = [];
@@ -332,22 +332,22 @@ export const getMatchingGroupCommands = function getMatchingGroupCommands(contex
     }
   });
   return items.slice(0, arg3);
-};
-export const getApplicationCommandOptionQueryOptions = function getApplicationCommandOptionQueryOptions(option) {
+}
+export function getApplicationCommandOptionQueryOptions(option) {
   const type = option.type;
   const STRING = Server.ApplicationCommandOptionType.STRING;
   const type2 = option.type;
   const CHANNEL = Server.ApplicationCommandOptionType.CHANNEL;
-  const tmp3 = option.type === Server.ApplicationCommandOptionType.USER || option.type === tmp(1997).ApplicationCommandOptionType.MENTIONABLE;
-  const tmp4 = option.type === tmp(1997).ApplicationCommandOptionType.ROLE || option.type === tmp(1997).ApplicationCommandOptionType.MENTIONABLE;
+  const tmp3 = option.type === Server.ApplicationCommandOptionType.USER || option.type === tmp(1998).ApplicationCommandOptionType.MENTIONABLE;
+  const tmp4 = option.type === tmp(1998).ApplicationCommandOptionType.ROLE || option.type === tmp(1998).ApplicationCommandOptionType.MENTIONABLE;
   return { canMentionEveryone: type === STRING || tmp4, canMentionHere: type === STRING, canMentionChannels: type === STRING || type2 === CHANNEL, canMentionUsers: type === STRING || tmp3, canMentionRoles: type === STRING || tmp4, canMentionAnyGuildUser: tmp3, canMentionNonMentionableRoles: tmp4, canMentionOtherGlobals: type === STRING };
-};
-export const allChannelsSentinel = function allChannelsSentinel(contextGuildId) {
+}
+export function allChannelsSentinel(contextGuildId) {
   const obj = _modDef14(contextGuildId);
   const str = obj.subtract(1);
   return str.toString();
-};
-export const canUseApplicationCommands = function canUseApplicationCommands(can, arg1, isMultiUserDM) {
+}
+export function canUseApplicationCommands(can, arg1, isMultiUserDM) {
   let tmp = !arg1;
   if (tmp) {
     let isMultiUserDMResult = isMultiUserDM.isMultiUserDM();
@@ -372,9 +372,9 @@ export const canUseApplicationCommands = function canUseApplicationCommands(can,
     tmp = isMultiUserDMResult;
   }
   return tmp;
-};
+}
 export const DISABLED_BY_DEFAULT_PERMISSION_FLAG = deserializeResult;
-export const hasAccess = function hasAccess(arg0) {
+export function hasAccess(arg0) {
   let PermissionStore;
   let commandLevelPermissions;
   let defaultMemberPermissions;
@@ -410,15 +410,15 @@ export const hasAccess = function hasAccess(arg0) {
     }
   }
   return true;
-};
-export const getCommandAttachmentDraftType = function getCommandAttachmentDraftType(arg0) {
+}
+export function getCommandAttachmentDraftType(arg0) {
   if (ApplicationCommandTypes.CommandOrigin.CHAT === arg0) {
     return DraftType.SlashCommand;
   } else {
     return DraftType.ApplicationLauncherCommand;
   }
-};
-export const getCommandTriggerSection = function getCommandTriggerSection(descriptor) {
+}
+export function getCommandTriggerSection(descriptor) {
   if (null != descriptor) {
     let APP;
     if (descriptor.id === metroRequire.BUILT_IN) {
@@ -430,8 +430,8 @@ export const getCommandTriggerSection = function getCommandTriggerSection(descri
     }
     return APP;
   }
-};
-export const getApplicationCommandSection = function getApplicationCommandSection(application, arg1, arg2) {
+}
+export function getApplicationCommandSection(application, arg1, arg2) {
   let flag;
   let name = arg2;
   const obj = { type: ApplicationCommandTypes.ApplicationCommandSectionType.APPLICATION, id: application.id, name, icon: application.icon, application, isUserApp: flag };
@@ -453,8 +453,8 @@ export const getApplicationCommandSection = function getApplicationCommandSectio
     flag = false;
   }
   return obj;
-};
-export const extractInteractionDataProps = function extractInteractionDataProps(parsed) {
+}
+export function extractInteractionDataProps(parsed) {
   let id;
   let interactionOptions;
   let options;
@@ -480,8 +480,8 @@ export const extractInteractionDataProps = function extractInteractionDataProps(
     interactionOptions = found1.options;
   }
   return { commandKey, interactionOptions };
-};
-export const trackCommandSelected = function trackCommandSelected(command) {
+}
+export function trackCommandSelected(command) {
   let _location;
   let query;
   let queryLength;
@@ -504,8 +504,8 @@ export const trackCommandSelected = function trackCommandSelected(command) {
   }
   const obj = { command_id: id, application_id: command.applicationId, location: _location, section: triggerSection, query_length: queryLength, command_text_length: command.displayName.length, section_name: sectionName, query, search_results_position: searchResultsPosition, source };
   trackWithMetadata(APPLICATION_COMMAND_SELECTED, obj);
-};
-export const getInitialInteractionMetadata = function getInitialInteractionMetadata(interactionMetadata) {
+}
+export function getInitialInteractionMetadata(interactionMetadata) {
   interactionMetadata = interactionMetadata.interactionMetadata;
   let tmp = null;
   if (null != interactionMetadata) {
@@ -516,12 +516,12 @@ export const getInitialInteractionMetadata = function getInitialInteractionMetad
     tmp = triggering_interaction_metadata;
   }
   return tmp;
-};
-export const hasCommandIndexForApp = function hasCommandIndexForApp(id, guildState) {
+}
+export function hasCommandIndexForApp(id, guildState) {
   const result = guildState.result;
   let sections;
   if (result != null) {
     sections = result.sections;
   }
   return null != sections && id in sections;
-};
+}

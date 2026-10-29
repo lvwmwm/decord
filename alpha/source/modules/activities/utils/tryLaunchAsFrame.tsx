@@ -1,22 +1,22 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11491
+// Function ID: 11492
 // Name: tryLaunchAsFrame
-// Dependencies: [2042, 6811, 11397, 5662, 11438, 10804, 2]
+// Dependencies: [2043, 6834, 11451, 5664, 11492, 10880, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 11437 (tryLaunchAsFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5662 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11397 */;
-import openFrameInAppChannelDefault from "openFrameInAppChannel" /* 11438 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+// Module 11491 (tryLaunchAsFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10880 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11451 */;
+import openFrameInAppChannelDefault from "openFrameInAppChannel" /* 11492 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
 const result = size.fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
 
-export const tryLaunchAsFrame = function tryLaunchAsFrame(channelId) {
+export function tryLaunchAsFrame(channelId) {
   let analyticsContext;
   let application;
   let applicationId;
@@ -49,4 +49,4 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(channelId) {
     flag = true;
   }
   return flag;
-};
+}

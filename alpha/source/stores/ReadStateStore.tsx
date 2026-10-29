@@ -1,10 +1,10 @@
-// Module ID: 6806
-// Function ID: 6807
+// Module ID: 6829
+// Function ID: 6830
 // Name: ReadStateStore
-// Dependencies: [5, 32, 4855, 6807, 4908, 5226, 6819, 6820, 6821, 6822, 6825, 4938, 1243, 4860, 502, 6826, 4856, 6525, 6738, 4878, 6668, 6045, 4936, 4946, 4907, 6739, 1389, 6831, 1084, 5645, 4863, 4862, 6740, 1124, 3, 11, 1101, 584, 6406, 6833, 1294, 4851, 6834, 6835, 6836, 6837, 6716, 4945, 6848, 6849, 6850, 6854, 1999, 1402, 2046, 12, 1385, 6529, 5187, 6855, 6856, 4944, 4868, 504, 1998, 6857, 2]
+// Dependencies: [5, 32, 4856, 6830, 4909, 5227, 6842, 6843, 6844, 6845, 6848, 4939, 1243, 4861, 502, 6849, 4857, 6549, 6761, 4879, 6692, 6049, 4937, 4947, 4908, 6762, 1389, 6854, 1084, 5646, 4864, 4863, 6763, 1124, 3, 11, 1101, 584, 6430, 6856, 1294, 4852, 6857, 6858, 6859, 6860, 6739, 4946, 6871, 6872, 6873, 6877, 2000, 1402, 2047, 12, 1385, 6553, 5188, 6878, 6879, 4945, 4869, 504, 1999, 6880, 2]
 // Exports: isNonMutedPrivateMessage
 
-// Module 6806 (ReadStateStore)
+// Module 6829 (ReadStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,58 +12,58 @@ import DurationsDefault from "Durations" /* 1101 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4862 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 4944 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4945 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import isMessageMentioned from "isMessageMentioned" /* 6406 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6529 */;
-import NSFWContentGate from "NSFWContentGate" /* 6716 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6819 */;
-import networkAwareRetryDefault from "networkAwareRetry" /* 6833 */;
-import OverlaySupported from "OverlaySupported" /* 6834 */;
-import OverlayVisibility from "OverlayVisibility" /* 6835 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6836 */;
-import isChannelFocused from "isChannelFocused" /* 6837 */;
-import MessageRequestUtils from "MessageRequestUtils" /* 6848 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
-import visibleInlineChannels from "visibleInlineChannels" /* 6855 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6856 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6857 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 4945 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4946 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import isMessageMentioned from "isMessageMentioned" /* 6430 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6553 */;
+import NSFWContentGate from "NSFWContentGate" /* 6739 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6842 */;
+import networkAwareRetryDefault from "networkAwareRetry" /* 6856 */;
+import OverlaySupported from "OverlaySupported" /* 6857 */;
+import OverlayVisibility from "OverlayVisibility" /* 6858 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6859 */;
+import isChannelFocused from "isChannelFocused" /* 6860 */;
+import MessageRequestUtils from "MessageRequestUtils" /* 6871 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6873 */;
+import visibleInlineChannels from "visibleInlineChannels" /* 6878 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6879 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import GatedChannelStore from "GatedChannelStore" /* 4908 */;
-import ExperimentStore from "ExperimentStore" /* 5226 */;
-import MessageRequestStore from "MessageRequestStore" /* 6820 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6821 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6822 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6825 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4938 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import GatedChannelStore from "GatedChannelStore" /* 4909 */;
+import ExperimentStore from "ExperimentStore" /* 5227 */;
+import MessageRequestStore from "MessageRequestStore" /* 6843 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6844 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6845 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6848 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6826 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import DimensionStore from "DimensionStore" /* 6525 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6738 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import IdleStore from "IdleStore" /* 6668 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6849 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import DimensionStore from "DimensionStore" /* 6549 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import IdleStore from "IdleStore" /* 6692 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import UserStore from "UserStore" /* 1389 */;
-import WindowStore from "WindowStore" /* 6831 */;
+import WindowStore from "WindowStore" /* 6854 */;
 import Constants from "Constants" /* 1084 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -98,12 +98,12 @@ let closure_53;
 let closure_54;
 let closure_55;
 let tmp;
-const isOptInEnabled = tmp(6849);
-const f97583 = () => {
+const isOptInEnabled = tmp(6872);
+const f98598 = () => {
   obj = DispatcherDefault;
   obj.dispatch({ type: "DECAY_READ_STATES" });
 };
-const f97586 = (type) => {
+const f98601 = (type) => {
   let last_pin_timestamp;
   if (closure_1_18(type.type)) {
     const value = closure_1_83.get(type.id);
@@ -143,7 +143,7 @@ function setDecayedReadStateTimer() {
   const timestamp1 = Date.now();
   closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
   clearTimeout(timeout);
-  timeout = setTimeout(f97583, DurationsDefault.Millis.HOUR);
+  timeout = setTimeout(f98598, DurationsDefault.Millis.HOUR);
 }
 function parseTimestamp(arg0) {
   if (null == arg0) {
@@ -195,7 +195,7 @@ let obj = function _processBulkAckQueue() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -244,7 +244,7 @@ let obj = function _processBulkAckQueue() {
           closure_130_67.length = 0;
           c68 = false;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (2 === c5) {
           if (arg0 === 1) {
             c6 = 3;
@@ -256,7 +256,7 @@ let obj = function _processBulkAckQueue() {
           } else {
             closure_130_79(closure_0);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -576,7 +576,7 @@ function mergeForGuild(guild) {
   const value3 = obj.get(guild.id, tmp3.GUILD_HOME);
   const fromTimestamp = require("SnowflakeUtils").fromTimestamp;
   require("SnowflakeUtils");
-  const tmp13 = _modDef2046;
+  const tmp13 = _modDef2047;
   const tmp13Result = tmp13(Date.now());
   const subtractResult = tmp13Result.subtract(24, "h");
   value3.lastMessageId = fromTimestamp(subtractResult.valueOf());
@@ -745,7 +745,7 @@ function handleMessageDelete(channelId) {
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
-  const item = threads.forEach(f97586);
+  const item = threads.forEach(f98601);
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
@@ -756,9 +756,9 @@ function handleSearchMessagesSuccess(data) {
     item = messages.forEach((arr) => {
       const mapped = arr.map((thread) => thread.thread);
       const found = mapped.filter(closure_1_0(closure_1_2[56]).isNotNullish);
-      const item = found.forEach(f97586);
+      const item = found.forEach(f98601);
     });
-    const item1 = threads.forEach(f97586);
+    const item1 = threads.forEach(f98601);
   });
 }
 function handleChannelDelete(channel) {
@@ -1500,7 +1500,7 @@ class ReadState {
         let tmp9 = !result;
         const tmp4 = require;
         if (tmp9) {
-          const tmp4Result = tmp4(6849);
+          const tmp4Result = tmp4(6872);
           const result1 = tmp4Result.isOptInEnabledForGuild(self._guildId) && self._lastMessageTimestamp < closure_73;
           tmp9 = !result1 && self.canTrackUnreads();
           !result1 && self.canTrackUnreads();
@@ -1829,7 +1829,7 @@ class ReadState {
           const tmp5 = dependencyMap;
           const tmp7 = closure_2;
           if (tmp7) {
-            const promise = asyncRequire(6854, tmp5.paths);
+            const promise = asyncRequire(6877, tmp5.paths);
             promise.then((result) => {
               obj = closure_1_1;
               channelId = channelId.channelId;
@@ -2897,7 +2897,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f97583, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f98598, DurationsDefault.Millis.HOUR);
     token = null;
     const tmp5 = channelId !== selectedChannelId && null != channelId;
     if (tmp5) {
@@ -2927,7 +2927,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f97583, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f98598, DurationsDefault.Millis.HOUR);
     const item = readStates.forEach(function(type) {
       let CHANNEL = type.type;
       if (CHANNEL == null) {
@@ -3033,7 +3033,7 @@ obj = {
     }
     const mapped = messages.map((thread) => thread.thread);
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const item = found.forEach(f97586);
+    const item = found.forEach(f98601);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(messages) {
     messages = messages.messages;
@@ -3314,7 +3314,7 @@ obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Reflect", force: "1000000000000000000", isExplicitUserAction: null, trackAnalytics: "1000000000000000001" });
+    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Reflect", force: "arrow", isExplicitUserAction: "mark", trackAnalytics: "ON!" });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(timestamp) {
     timestamp = timestamp.timestamp;
@@ -3714,7 +3714,7 @@ obj = {
     const item = found.forEach((messageId) => {
       messageId = messageId.messageId;
       const value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId, local: true, immediate: "IconComponent", force: "Reflect", isExplicitUserAction: "M2.97995 0.40039H10.72L13.02 8.26039L14.68 0.40039H20.06L17.08 14.4004H9.49995L7.09995 6.46039L5.39995 14.4004H-4.88423e-05L2.97995 0.40039ZM22.1792 0.40039H28.5192L25.5392 14.4004H19.1992L22.1792 0.40039ZM33.5962\n5.02039H28.8562L29.8362 0.40039H45.6562L44.6762 5.02039H39.9362L37.9362 14.4004H31.6162L33.5962 5.02039ZM47.0034 0.40039H57.5834C58.6634 0.40039 59.5967 0.593723 60.3834 0.980391C61.1834 1.36706 61.7901 1.90039 62.2034 2.58039C62.6167\n3.24706 62.8234 4.00706 62.8234 4.86039C62.8234 6.19372 62.4167 7.28706 61.6034 8.14039C60.8034 8.99372 59.7301 9.48039 58.3834 9.60039L61.1434 14.4004H54.1034L51.5234 8.92039L50.3634 14.4004H44.0234L47.0034 0.40039ZM54.0434\n7.36039C55.6034 7.36039 56.3834 6.81372 56.3834 5.72039C56.3834 5.33372 56.2367 5.02039 55.9434 4.78039C55.6634 4.54039 55.2634 4.42039 54.7434 4.42039H52.4834L51.8634 7.36039H54.0434ZM72.8804 14.8004C71.0138 14.8004 69.3671 14.5071\n67.9404 13.9204C66.5138 13.3204 65.4071 12.4871 64.6204 11.4204C63.8338 10.3537 63.4404 9.13372 63.4404 7.76039C63.4404 6.25372 63.8471 4.91372 64.6604 3.74039C65.4738 2.55372 66.6138 1.63372 68.0804 0.980391C69.5471 0.327057 71.2338\n0.000390053 73.1404 0.000390053C75.0604 0.000390053 76.7471 0.287057 78.2004 0.86039C79.6538 1.42039 80.7738 2.21372 81.5604 3.24039C82.3604 4.26706 82.7604 5.45372 82.7604 6.80039C82.7604 8.33372 82.3404 9.70706 81.5004 10.9204C80.6604\n12.1337 79.4938 13.0871 78.0004 13.7804C76.5071 14.4604 74.8004 14.8004 72.8804 14.8004ZM72.9004 10.1404C73.4738 10.1404 73.9938 10.0071 74.4604 9.74039C74.9271 9.46039 75.2938 9.08706 75.5604 8.62039C75.8271 8.15372 75.9604 7.64039\n75.9604 7.08039C75.9604 6.34706 75.7004 5.76039 75.1804 5.32039C74.6738 4.88039 74.0204 4.66039 73.2204 4.66039C72.6471 4.66039 72.1271 4.79372 71.6604 5.06039C71.2071 5.31372 70.8471 5.66706 70.5804 6.12039C70.3271 6.57372 70.2004 7.08039 70.2004 7.64039C70.2004 8.40039 70.4471 9.00706 70.9404 9.46039C71.4338 9.91372 72.0871 10.1404 72.9004 10.1404ZM95.7692 14.8004C94.2225 14.8004 92.7892 14.6071 91.4692 14.2204C90.1492 13.8337 89.0158 13.3204 88.0692 12.6804L88.8892\n8.80039C89.5825 9.36039 90.5425 9.82706 91.7692 10.2004C92.9958 10.5737 94.1958 10.7604 95.3692 10.7604C96.0092 10.7604 96.4558 10.7071 96.7092 10.6004C96.9758 10.4804 97.1092 10.2804 97.1092 10.0004C97.1092 9.80039 97.0158 9.64706 96.8292 9.54039C96.6558 9.42039 96.3425 9.32039 95.8892 9.24039L94.2892 8.98039C92.7292 8.74039 91.5625 8.29372 90.7892 7.64039C90.0158 6.97372 89.6292 6.14039 89.6292 5.14039C89.6292 3.35372 90.3892 2.05372 91.9092 1.24039C93.4292 0.413723\n95.4225 0.000390053 97.8892 0.000390053C99.3292 0.000390053 100.609 0.14039 101.729 0.420389C102.849 0.70039 103.916 1.08706 104.929 1.58039L104.109 5.36039C103.589 5.04039 102.783 4.74706 101.689 4.48039C100.609 4.21372 99.5358 4.08039\n98.4692 4.08039C97.7758 4.08039 97.2558 4.13372 96.9092 4.24039C96.5758 4.33372 96.4092 4.50706 96.4092 4.76039C96.4092 4.93372 96.4958 5.07372 96.6692 5.18039C96.8558 5.28706 97.2025 5.36706 97.7092 5.42039L99.5092 5.64039C101.016 5.82706 102.149 6.22706 102.909 6.84039C103.669 7.45372 104.049 8.32039 104.049 9.44039C104.049 10.6004 103.676 11.5871 102.929 12.4004C102.183 13.2004 101.183 13.8004 99.9292 14.2004C98.6758 14.6004 97.2892 14.8004 95.7692 14.8004ZM117.574\n14.5404C116.641 14.7137 115.721 14.8004 114.814 14.8004C112.947 14.8004 111.301 14.5071 109.874 13.9204C108.447 13.3204 107.341 12.4871 106.554 11.4204C105.767 10.3537 105.374 9.13372 105.374 7.76039C105.374 6.25372 105.781 4.91372 106.594 3.74039C107.407 2.55372 108.547 1.63372 110.014 0.980391C111.481 0.327057 113.167 0.000390053 115.074 0.000390053C116.994 0.000390053 118.681 0.287057 120.134 0.86039C121.587 1.42039 122.707 2.21372 123.494 3.24039C124.294 4.26706 124.694 5.45372 124.694 6.80039C124.694 8.16039 124.361 9.40039 123.694 10.5204C123.027 11.6404 122.094 12.5604 120.894 13.2804L122.334 15.4404H118.154L117.574 14.5404ZM112.134 7.64039C112.134 8.38706 112.374 8.98706 112.854 9.44039C113.334\n9.88039 113.961 10.1137 114.734 10.1404L113.194 7.74039H117.194L117.614 8.38039C117.801 7.96706 117.894 7.53372 117.894 7.08039C117.894 6.34706 117.634 5.76039 117.114 5.32039C116.607 4.88039 115.954 4.66039 115.154 4.66039C114.581 4.66039 114.061 4.79372 113.594 5.06039C113.141 5.31372 112.781 5.66706 112.514 6.12039C112.261 6.57372 112.134 7.08039 112.134 7.64039ZM133.406 14.8004C131.899 14.8004 130.566 14.5671 129.406 14.1004C128.259 13.6204 127.366 12.9271 126.726\n12.0204C126.086 11.1137 125.766 10.0404 125.766 8.80039C125.766 8.28039 125.826 7.73372 125.946 7.16039L127.406 0.40039H133.746L132.186 7.68039C132.133 7.97372 132.106 8.18039 132.106 8.30039C132.106 8.83372 132.273 9.25372 132.606\n9.56039C132.939 9.85372 133.379 10.0004 133.926 10.0004C135.193 10.0004 135.966 9.31372 136.246 7.94039L137.846 0.40039H144.186L142.526 8.22039C142.073 10.3404 141.066 11.9671 139.506 13.1004C137.959 14.2337 135.926 14.8004 133.406\n14.8004ZM148.999 0.40039H158.219L159.819 14.3804H153.599L153.439 12.2004H148.879L147.779 14.4004H141.439L148.999 0.40039ZM153.219 9.10039L152.859 4.16039L150.399 9.10039H153.219ZM163.859 0.40039H172.079C173.839 0.40039 175.326 0.667056\n176.539 1.20039C177.752 1.73372 178.659 2.45372 179.259 3.36039C179.859 4.26706 180.159 5.28706 180.159 6.42039C180.159 8.15372 179.679 9.62039 178.719 10.8204C177.759 12.0204 176.439 12.9204 174.759 13.5204C173.092 14.1071 171.192 14.4004 169.059 14.4004H160.879L163.859 0.40039ZM169.599 10.3404C170.772 10.3404 171.699 10.0204 172.379 9.38039C173.059 8.74039 173.399 7.88039 173.399 6.80039C173.399 6.12039 173.192 5.56039 172.779 5.12039C172.379 4.68039 171.786 4.46039\n170.999 4.46039H169.339L168.079 10.3404H169.599Z", trackAnalytics: null });
+      value.ack({ messageId, local: true, immediate: "IconComponent", force: "Reflect", isExplicitUserAction: "CONJURE_PROJECT_GLOBAL_SELECT", trackAnalytics: null });
     });
     if (context === closure_42) {
       const push = navigation.push;
@@ -4191,8 +4191,8 @@ let result = size.fileFinishedImporting("stores/ReadStateStore.tsx");
 
 export default readStateStoreClass;
 export { shouldBadgeMessage };
-export const isNonMutedPrivateMessage = function isNonMutedPrivateMessage(isPrivate) {
+export function isNonMutedPrivateMessage(isPrivate) {
   const tmp = null != isPrivate && isPrivate.isPrivate() && !UserGuildSettingsStore.isGuildOrCategoryOrChannelMuted(isPrivate.guild_id, isPrivate.id);
   return tmp;
-};
+}
 export { ReadState };

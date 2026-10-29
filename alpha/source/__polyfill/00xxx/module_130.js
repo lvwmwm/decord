@@ -101,7 +101,7 @@ let closure_4 = tmp2;
 module_126.setPlatformObject(tmp2);
 
 export default tmp2;
-export const createNodeList = function createNodeList(addedNodes) {
+export function createNodeList(addedNodes) {
   const tmp = new closure_4(addedNodes);
   return tmp;
-};
+}

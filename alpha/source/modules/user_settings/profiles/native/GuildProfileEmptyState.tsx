@@ -1,20 +1,20 @@
-// Module ID: 16227
-// Function ID: 16228
+// Module ID: 16464
+// Function ID: 16465
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 5004, 16228, 5270, 1125, 5280, 13846, 1999, 2]
+// Dependencies: [5, 19, 17, 21, 5005, 16465, 5271, 1125, 5281, 14079, 2000, 2]
 // Exports: default
 
-// Module 16227 (GuildProfileEmptyState)
+// Module 16464 (GuildProfileEmptyState)
 import intl5 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16228 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16465 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -64,7 +64,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             _default.openCreateGuildModal();
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp7) {
           c0 = 3;
@@ -120,7 +120,7 @@ export default function GuildProfileEmptyState() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -150,7 +150,7 @@ export default function GuildProfileEmptyState() {
             const _default = value.default;
             const result = _default.openGuildJoinServerScreen();
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp7) {
           c0 = 3;

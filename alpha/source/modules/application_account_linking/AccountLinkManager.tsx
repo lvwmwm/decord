@@ -1,27 +1,25 @@
-// Module ID: 19762
-// Function ID: 19763
+// Module ID: 19984
+// Function ID: 19985
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 7239, 19763, 1084, 1101, 1294, 7250, 2]
+// Dependencies: [32, 5, 7263, 19985, 1084, 1101, 1294, 7274, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 19762 (AccountLinkManager)
+// Module 19984 (AccountLinkManager)
 import DurationsDefault from "Durations" /* 1101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7239 */;
-import AccountLinkStore from "AccountLinkStore" /* 19763 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7263 */;
+import AccountLinkStore from "AccountLinkStore" /* 19985 */;
 import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
-let postResult;
+let application_id, closure_2, closure_3, postResult;
 
 let metroImportDefault;
 let metroRequire;
 let obj = function _claimIncentivizedAccountLinkingReward() {
   obj = _asyncToGenerator(async (application_id) => {
-    let closure_2;
-    let closure_3;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
@@ -30,33 +28,87 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
       let c1;
       let c2;
       let obj5;
-      const HTTP = closure_130_0(closure_130_1[6]).HTTP;
-      const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
-      obj5 = { application_id };
-      postResult = HTTP.post(request);
-      await postResult;
-      if (2 === c5) {
-        c4 = 0;
-        postResult = c2;
-        if (c2 != null) {
-          postResult(closure_3);
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
         }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
       } else {
-        if (postResult != null) {
-          postResult();
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              application_id = undefined;
+              postResult = undefined;
+              c2 = undefined;
+              ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 1;
+              const HTTP = closure_130_0(closure_130_1[6]).HTTP;
+              const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
+              obj5 = { application_id };
+              postResult = HTTP.post(request);
+              c5 = 3;
+              c6 = 1;
+              return { value: postResult, done: false };
+            }
+          } else {
+            if (2 === c5) {
+              c4 = 0;
+              postResult = c2;
+              if (c2 != null) {
+                postResult(closure_3);
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              if (postResult != null) {
+                postResult();
+              }
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp21) {
+          closure_3 = tmp21;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp21;
+          } else {
+            c5 = 2;
+          }
         }
-        c4 = 0;
       }
-      await "IconComponent";
-      ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -149,7 +201,7 @@ const accountLinkManager = new AccountLinkManager();
 let result = size.fileFinishedImporting("modules/application_account_linking/AccountLinkManager.tsx");
 
 export default accountLinkManager;
-export const claimIncentivizedAccountLinkingReward = function claimIncentivizedAccountLinkingReward() {
+export function claimIncentivizedAccountLinkingReward() {
   return obj(...arguments);
-};
+}
 export { AccountLinkManager };

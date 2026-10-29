@@ -1,27 +1,27 @@
-// Module ID: 18384
-// Function ID: 18385
+// Module ID: 18618
+// Function ID: 18619
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4878, 4946, 1389, 6740, 21, 9051, 1125, 5004, 587, 558, 576, 18385, 504, 6919, 12135, 6824, 18386, 10723, 18388, 5640, 2]
+// Dependencies: [19, 17, 4879, 4947, 1389, 6763, 21, 9054, 1125, 5005, 587, 558, 576, 18619, 504, 6943, 12189, 6847, 18620, 10756, 18622, 5641, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 18384 (renderChannelItem)
+// Module 18618 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6824 */;
-import GuildIconDefault from "GuildIcon" /* 6919 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9051 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18385 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18386 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18388 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6847 */;
+import GuildIconDefault from "GuildIcon" /* 6943 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9054 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18619 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18620 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18622 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ function LaunchpadChannelIcon(channel) {
       }
       if (cResult[9] !== channel2) {
         const obj3 = { channel: channel2, size: "sm", wrapperSize: 32 };
-        const tmp38 = closure_8(channel(12135).ChannelIcon, obj3);
+        const tmp38 = closure_8(channel(12189).ChannelIcon, obj3);
         cResult[9] = channel2;
         cResult[10] = tmp38;
         tmp36 = tmp38;
@@ -129,7 +129,7 @@ function LaunchpadChannelIcon(channel) {
     obj9 = { guild: stateFromStores1, size: tmp6.icon.guildBadgeIconSize };
     items3 = [closure_8(View, obj8), ];
     const obj10 = { channel, size: "sm", wrapperSize: 32 };
-    items3[1] = closure_8(channel(12135).ChannelIcon, obj10);
+    items3[1] = closure_8(channel(12189).ChannelIcon, obj10);
     tmp14 = closure_10(closure_9, obj7);
   }
   return tmp14;
@@ -209,7 +209,7 @@ export default function renderChannelItem(unread) {
   const tmp9 = authStore;
   if (channel.isGroupDM()) {
     const obj3 = { channel, size: tmp7.icon.avatarSize };
-    tmp11Result = tmp11(tmp5(10723), obj3);
+    tmp11Result = tmp11(tmp5(10756), obj3);
   } else {
     const obj4 = { channel };
     tmp11Result = tmp11(LaunchpadChannelIcon, obj4);
@@ -229,7 +229,7 @@ export default function renderChannelItem(unread) {
   children[3] = tmp11Result2;
   return tmp8(tmp9(tmp10, { children }), { fontScale });
 };
-export const getChannelAccessibilityProps = function getChannelAccessibilityProps(channel) {
+export function getChannelAccessibilityProps(channel) {
   let embeddedActivitiesCount;
   let mentionCount;
   let stringResult;
@@ -243,4 +243,4 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
     stringResult = intl.string(intl2.t["9C444m"]);
   }
   return obj;
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8876
+// Function ID: 8877
 // Name: ICYMITypes
 // Dependencies: [1084, 2]
 // Exports: typeToString
 
-// Module 8873 (ICYMITypes)
+// Module 8876 (ICYMITypes)
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export const MIN_ITEMS_FOR_NEW_PILL = 3;
 export const MIN_SCORE_FOR_NEW_PILL = 50;
 export const GAME_CONTENT_GUILD_ID = "1312632705086787756";
 export { ICYMIItemTypes };
-export const typeToString = function typeToString(type) {
+export function typeToString(type) {
   type = type.type;
   if (obj.MESSAGE === type) {
     let str5 = "announcement";
@@ -51,7 +51,7 @@ export const typeToString = function typeToString(type) {
   } else if (obj.RECOMMENDED_GUILDS === type) {
     return "recommended_guilds";
   }
-};
+}
 export const SUPPORTED_ITEM_TYPES = set;
 export const GRAVITY_VALID_EMBED_TYPES = set1;
 export const GravityICYMIDoubleTapBehavior = { DEFAULT: 0, [0]: "DEFAULT", BOOKMARKS: 2, [2]: "BOOKMARKS" };

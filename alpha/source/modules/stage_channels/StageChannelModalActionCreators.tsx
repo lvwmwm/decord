@@ -1,18 +1,18 @@
-// Module ID: 7913
-// Function ID: 7914
+// Module ID: 7936
+// Function ID: 7937
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 6677, 4856, 4878, 4936, 4907, 4864, 7904, 7472, 6866, 7914, 6669, 6680, 7864, 7915, 2]
+// Dependencies: [5, 6701, 4857, 4879, 4937, 4908, 4865, 7927, 7495, 6889, 7937, 6693, 6704, 7887, 7938, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7913 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6669 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7904 */;
+// Module 7936 (StageChannelModalActionCreators)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7927 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6677 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ let obj = function _connectOrLurkStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -77,7 +77,7 @@ let obj = function _connectOrLurkStage() {
             value2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -170,7 +170,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(7904);
+        const tmp7Result = tmp7(7927);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -219,30 +219,30 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(7904);
+    const obj2 = flag2(7927);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(7904);
+      const obj3 = flag2(7927);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }
 }
 let result = size.fileFinishedImporting("modules/stage_channels/StageChannelModalActionCreators.tsx");
 
-export const connectOrLurkStage = function connectOrLurkStage() {
+export function connectOrLurkStage() {
   return obj(...arguments);
-};
+}
 export { connectToStage };
 export { connectAndOpen };
-export const navigateToStage = function navigateToStage(arg0, arg1) {
+export function navigateToStage(arg0, arg1) {
   obj = StageChannelActionCreatorExtrasAll;
   obj.navigateToStage(arg0, arg1);
-};
-export const showUserProfile = function showUserProfile(arg0) {
+}
+export function showUserProfile(arg0) {
   obj = StageChannelActionCreatorExtrasAll;
   const result = obj.showPlatformUserProfile(arg0);
-};
+}

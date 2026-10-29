@@ -1,24 +1,24 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12625
+// Function ID: 12626
 // Name: useChatInputMaxHeight
-// Dependencies: [32, 19, 1498, 12567, 1896, 5632, 5197, 1628, 1496, 12572, 12573, 558, 576, 12574, 5242, 5245, 5085, 2]
+// Dependencies: [32, 19, 1499, 12622, 1897, 5633, 5198, 1629, 1497, 12626, 12627, 558, 576, 12628, 5243, 5246, 5086, 2]
 // Exports: getChatInputHeightAnimationTiming, getChatInputHeightAnimationTimingWorklet, getChatInputMinHeight
 
-// Module 12571 (useChatInputMaxHeight)
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1896 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import useKeyboardType from "useKeyboardType" /* 5197 */;
-import timing from "timing" /* 5242 */;
-import timingPresets from "timingPresets" /* 5245 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5632 */;
-import ChatInputConstants from "ChatInputConstants" /* 12567 */;
-import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12572 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12573 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12574 */;
+// Module 12625 (useChatInputMaxHeight)
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1897 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import useKeyboardType from "useKeyboardType" /* 5198 */;
+import timing from "timing" /* 5243 */;
+import timingPresets from "timingPresets" /* 5246 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5633 */;
+import ChatInputConstants from "ChatInputConstants" /* 12622 */;
+import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 12626 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12627 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 12628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const useWindowDimensions = tmp(1496);
+const useWindowDimensions = tmp(1497);
 function getChatInputMaxHeight() {
   const obj = useSystemKeyboardHeight;
   let systemKeyboardHeight = obj.getSystemKeyboardHeight();
@@ -195,7 +195,7 @@ export function getChatInputMinHeight() {
 }
 export { getChatInputMaxHeight };
 export { getChatInputMaxHeightWorklet };
-export const getChatInputHeightAnimationTiming = function getChatInputHeightAnimationTiming(height, arg1) {
+export function getChatInputHeightAnimationTiming(height, arg1) {
   const _Math = Math;
   const bound = Math.max(height, arg1);
   const obj = useSystemKeyboardHeight;
@@ -212,5 +212,5 @@ export const getChatInputHeightAnimationTiming = function getChatInputHeightAnim
   const tmp2Result2 = timing;
   const obj4 = { duration: timingPresets.timingFastDuration, easing: ReanimatedRexport.Easing.linear };
   return tmp2Result2.withTiming(minResult, obj4);
-};
+}
 export { getChatInputHeightAnimationTimingWorklet };

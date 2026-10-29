@@ -15,7 +15,7 @@ let _require;
 
 const weakMap = new WeakMap();
 
-export const enableSyncToNative = function enableSyncToNative(globalScope) {
+export function enableSyncToNative(globalScope) {
   _require = globalScope;
   let obj = weakMap;
   if (!weakMap.has(globalScope)) {
@@ -143,4 +143,4 @@ export const enableSyncToNative = function enableSyncToNative(globalScope) {
       };
     });
   }
-};
+}

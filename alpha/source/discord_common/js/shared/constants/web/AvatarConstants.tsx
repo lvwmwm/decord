@@ -1,10 +1,10 @@
-// Module ID: 1416
-// Function ID: 1417
+// Module ID: 1417
+// Function ID: 1418
 // Name: AvatarConstants
 // Dependencies: [2]
 // Exports: getAvatarSize, getAvatarSpecs, getStatusSize, getVoiceStatus
 
-// Module 1416 (AvatarConstants)
+// Module 1417 (AvatarConstants)
 import size_mod from "module_2" /* 2 */;
 
 let DEPRECATED_SIZE_100;
@@ -59,20 +59,20 @@ export const VoiceStatus = obj2;
 export const StatusBackdropColors = { BLACK: "black", WHITE: "white" };
 export const StatusBackdropOpacity = { HIGH: 0.7, [0.7]: "HIGH", LOW: 0.45, [0.45]: "LOW" };
 export const AvatarSizeSpecs = frozen;
-export const getAvatarSpecs = function getAvatarSpecs(arg0) {
+export function getAvatarSpecs(arg0) {
   return frozen[arg0];
-};
-export const getAvatarSize = function getAvatarSize(num) {
+}
+export function getAvatarSize(num) {
   size = num;
   if (typeof num !== "number") {
     size = frozen[num].size;
   }
   return size;
-};
-export const getStatusSize = function getStatusSize(arg0) {
+}
+export function getStatusSize(arg0) {
   return frozen[arg0].status;
-};
-export const getVoiceStatus = function getVoiceStatus(arg0, arg1) {
+}
+export function getVoiceStatus(arg0, arg1) {
   let PLAYING_SOUNDBOARD;
   const tmp = arg1;
   if (tmp) {
@@ -84,4 +84,4 @@ export const getVoiceStatus = function getVoiceStatus(arg0, arg1) {
     }
   }
   return PLAYING_SOUNDBOARD;
-};
+}

@@ -1,11 +1,11 @@
-// Module ID: 7867
-// Function ID: 7868
+// Module ID: 7890
+// Function ID: 7891
 // Name: GuildRoomActionCreators
-// Dependencies: [5, 7868, 2]
+// Dependencies: [5, 7891, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 7867 (GuildRoomActionCreators)
-import guildRoomConnect2 from "guildRoomConnect" /* 7868 */;
+// Module 7890 (GuildRoomActionCreators)
+import guildRoomConnect2 from "guildRoomConnect" /* 7891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _guildRoomConnect() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c7;
@@ -65,7 +65,7 @@ let obj = function _guildRoomConnect() {
             c7 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp13) {
         let closure_6 = tmp13;
@@ -96,7 +96,7 @@ obj = function _guildRoomUpdate() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -133,7 +133,7 @@ obj = function _guildRoomUpdate() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;
@@ -155,9 +155,9 @@ for (const key10024 in guildRoomConnect2) {
   continue;
 }
 
-export const guildRoomConnect = function guildRoomConnect() {
+export function guildRoomConnect() {
   return obj(...arguments);
-};
-export const guildRoomUpdate = function guildRoomUpdate() {
+}
+export function guildRoomUpdate() {
   return obj(...arguments);
-};
+}

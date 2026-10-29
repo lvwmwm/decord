@@ -9,7 +9,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/GlobalUtils.tsx");
 
-export const getGlobalObject = function getGlobalObject() {
+export function getGlobalObject() {
   let _window;
   if (typeof globalThis !== "undefined") {
     _window = globalThis;
@@ -33,4 +33,4 @@ export const getGlobalObject = function getGlobalObject() {
     }
   }
   return _window;
-};
+}

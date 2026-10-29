@@ -1,10 +1,10 @@
-// Module ID: 7728
-// Function ID: 7729
+// Module ID: 7751
+// Function ID: 7752
 // Name: CollectiblesPerfLogging
 // Dependencies: [1084, 1264, 2]
 // Exports: trackShopPerf
 
-// Module 7728 (CollectiblesPerfLogging)
+// Module 7751 (CollectiblesPerfLogging)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPerfLogging.tsx");
 
 export const CollectiblesShopPerfCheckpoint = { SHOP_MOUNTED: "shop_mounted", CATEGORIES_FETCH_STARTED: "categories_fetch_started", CATEGORIES_FETCH_COMPLETED: "categories_fetch_completed", SHOP_HOME_FETCH_STARTED: "shop_home_fetch_started", SHOP_HOME_FETCH_COMPLETED: "shop_home_fetch_completed", SHOP_RENDERED: "shop_rendered" };
-export const trackShopPerf = function trackShopPerf(logPerf) {
+export function trackShopPerf(logPerf) {
   let cacheDisabled;
   let checkpoint;
   let sessionId;
@@ -22,4 +22,4 @@ export const trackShopPerf = function trackShopPerf(logPerf) {
   ({ sessionId, checkpoint, tab, unpublishedCategoriesShown, cacheDisabled } = logPerf);
   const obj = AnalyticsUtilsDefault;
   obj.track(AnalyticEvents.COLLECTIBLES_SHOP_PERF_TRACKED, { page_session_id: sessionId, checkpoint, tab, unpublished_categories_shown: unpublishedCategoriesShown, cache_disabled: cacheDisabled });
-};
+}

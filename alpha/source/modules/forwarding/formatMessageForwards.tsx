@@ -1,21 +1,21 @@
-// Module ID: 8345
-// Function ID: 8346
+// Module ID: 8367
+// Function ID: 8368
 // Name: formatMessageForwards
-// Dependencies: [8346, 4856, 4878, 4936, 4946, 1389, 1414, 1125, 5638, 4829, 11, 5640, 2]
+// Dependencies: [8368, 4857, 4879, 4937, 4947, 1389, 1415, 1125, 5639, 4830, 11, 5641, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8345 (formatMessageForwards)
+// Module 8367 (formatMessageForwards)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl4 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5638 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import BasicGuildStore from "BasicGuildStore" /* 8346 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5639 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import BasicGuildStore from "BasicGuildStore" /* 8368 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -173,7 +173,7 @@ const prototype = MessageForward.prototype;
 let result = size.fileFinishedImporting("modules/forwarding/formatMessageForwards.tsx");
 
 export { MessageForward };
-export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
+export function maybeCreateSingleForwardForMessage(message) {
   if (isForwardMessageDefault(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
@@ -189,4 +189,4 @@ export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForw
       }
     }
   }
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8143
+// Function ID: 8144
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 5004, 587, 6707, 6960, 8121, 8126, 8127, 8108, 558, 576, 1278, 6692, 1125, 7131, 2]
+// Dependencies: [19, 21, 5005, 587, 6731, 6984, 8144, 8149, 8150, 8131, 558, 576, 1278, 6716, 1125, 7155, 2]
 
-// Module 8120 (AgeVerificationGetStartedModal)
+// Module 8143 (AgeVerificationGetStartedModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 8108 */;
-import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 8121 */;
-import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 8126 */;
-import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 8127 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 8131 */;
+import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 8144 */;
+import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 8149 */;
+import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 8150 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

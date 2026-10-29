@@ -10,7 +10,7 @@ import ScalarType from "ScalarType" /* 1222 */;
 import reflectionLongConvert from "reflectionLongConvert" /* 1227 */;
 
 
-export const reflectionScalarDefault = function reflectionScalarDefault(T, L) {
+export function reflectionScalarDefault(T, L) {
   let STRING = L;
   if (L === undefined) {
     STRING = ScalarType.LongType.STRING;
@@ -49,4 +49,4 @@ export const reflectionScalarDefault = function reflectionScalarDefault(T, L) {
     const tmp3Result2 = reflectionLongConvert;
     return tmp3Result2.reflectionLongConvert(PbULong.PbULong.ZERO, STRING);
   }
-};
+}

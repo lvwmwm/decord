@@ -1,15 +1,15 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12847
+// Function ID: 12848
 // Name: ConjureDebugGit
-// Dependencies: [32, 19, 10739, 12610, 558, 576, 504, 10770, 584, 2]
+// Dependencies: [32, 19, 10814, 12827, 558, 576, 504, 10845, 584, 2]
 // Exports: gitInfoRows, gitInfoStatus, restartAgentStatusLine
 
-// Module 12630 (ConjureDebugGit)
-import conjureDebugConnection from "conjureDebugConnection" /* 10770 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12610 */;
+// Module 12847 (ConjureDebugGit)
+import conjureDebugConnection from "conjureDebugConnection" /* 10845 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10739 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10814 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -494,7 +494,7 @@ export const RESTART_AGENT_RESUME_GRACE_MS = 5000;
 export const RESTART_AGENT_LABEL = "Restart Agent";
 export const RESTART_AGENT_CLEAR_ALARM_LABEL = "Also Clear Alarm";
 export const RESTART_AGENT_CLEAR_ALARM_HINT = "Scheduled wakeups wait until something sets the alarm again.";
-export const gitInfoRows = function gitInfoRows(info) {
+export function gitInfoRows(info) {
   let combined1;
   let formatBytesResult;
   let formatCountResult;
@@ -641,7 +641,7 @@ export const gitInfoRows = function gitInfoRows(info) {
           const tmp36 = require;
           if (objects.garbage > 0) {
             const _HermesInternal7 = HermesInternal;
-            const tmp36Result = tmp36(12610);
+            const tmp36Result = tmp36(12827);
             combined1 = "" + tmp36Result.formatCount(objects.garbage) + " garbage files";
           }
           push5(obj14);
@@ -751,8 +751,8 @@ export const gitInfoRows = function gitInfoRows(info) {
   }
   const items3 = [obj28];
   return items3;
-};
-export const gitInfoStatus = function gitInfoStatus(state) {
+}
+export function gitInfoStatus(state) {
   let error;
   let error2;
   let info;
@@ -821,8 +821,8 @@ export const gitInfoStatus = function gitInfoStatus(state) {
     }), 1);
     return obj;
   }
-};
-export const restartAgentStatusLine = function restartAgentStatusLine(state) {
+}
+export function restartAgentStatusLine(state) {
   const phase = state.phase;
   if ("idle" === phase) {
     return "Starts a new agent instance; the container keeps running.";
@@ -840,6 +840,6 @@ export const restartAgentStatusLine = function restartAgentStatusLine(state) {
     const obj = ConjureDebugFormat;
     return "Failed: " + reason + " \u00B7 " + obj.formatObservedAt(state.observedAt);
   }
-};
+}
 export const useConjureDebugGitInfo = tmp2;
 export const useConjureRestartAgent = tmp3;

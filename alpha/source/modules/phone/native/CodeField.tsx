@@ -1,20 +1,20 @@
-// Module ID: 7211
-// Function ID: 7212
+// Module ID: 7235
+// Function ID: 7236
 // Name: CodeField
-// Dependencies: [32, 19, 17, 21, 5004, 587, 1199, 558, 576, 1125, 7044, 5280, 5270, 7171, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 1199, 558, 576, 1125, 7068, 5281, 5271, 7195, 2]
 // Exports: CodeBlocks
 
-// Module 7211 (CodeField)
+// Module 7235 (CodeField)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7171 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -510,7 +510,7 @@ const result = size.fileFinishedImporting("modules/phone/native/CodeField.tsx");
 
 export default tmp5;
 export { CodeType };
-export const CodeBlocks = function CodeBlocks(onCodeEntered) {
+export function CodeBlocks(onCodeEntered) {
   let TextInput;
   let closure_3;
   let first;
@@ -626,4 +626,4 @@ export const CodeBlocks = function CodeBlocks(onCodeEntered) {
   }
   const obj5 = { style: tmp2.codeContainer, children: items1 };
   return metroImportDefault(hasOwnProperty, obj5);
-};
+}

@@ -1,18 +1,18 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 17062
+// Function ID: 17063
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 587, 5004, 558, 576, 11347, 1125, 5270, 2]
+// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 11401, 1125, 5271, 2]
 
-// Module 16824 (QuestDockLimitedTimePill)
+// Module 17062 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import TimerIcon2 from "TimerIcon" /* 11347 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import TimerIcon2 from "TimerIcon" /* 11401 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const pill = tmp4.pill;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const TimerIcon = tmp(11347).TimerIcon;
+    const TimerIcon = tmp(11401).TimerIcon;
     const tmp8 = React3(TimerIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

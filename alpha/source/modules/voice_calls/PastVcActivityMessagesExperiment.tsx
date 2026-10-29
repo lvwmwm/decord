@@ -1,13 +1,13 @@
-// Module ID: 19067
-// Function ID: 19068
+// Module ID: 19300
+// Function ID: 19301
 // Name: PastVcActivityMessagesExperiment
-// Dependencies: [5227, 5224, 558, 576, 2]
+// Dependencies: [5228, 5225, 558, 576, 2]
 // Exports: isPastVcActivityMessagesEnabled
 
-// Module 19067 (PastVcActivityMessagesExperiment)
+// Module 19300 (PastVcActivityMessagesExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
-import createExperiment from "module_5224" /* 5224 */;
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,8 +47,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPastV
 const result = size.fileFinishedImporting("modules/voice_calls/PastVcActivityMessagesExperiment.tsx");
 
 export default experiment;
-export const isPastVcActivityMessagesEnabled = function isPastVcActivityMessagesEnabled(id, GuildSettingsModalOverview) {
+export function isPastVcActivityMessagesEnabled(id, GuildSettingsModalOverview) {
   const obj = { guildId: id, location: GuildSettingsModalOverview };
   return experiment.getCurrentConfig(obj, { autoTrackExposure: true }).enabled;
-};
+}
 export const useIsPastVcActivityMessagesEnabled = tmp3;

@@ -18,7 +18,7 @@ let _require, _self;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const wrapTransportError = function wrapTransportError(onerror) {
+export function wrapTransportError(onerror) {
   if (onerror.onerror) {
     let obj = _mod698;
     obj.fill(onerror, "onerror", (arg0) => {
@@ -36,8 +36,8 @@ export const wrapTransportError = function wrapTransportError(onerror) {
       };
     });
   }
-};
-export const wrapTransportOnClose = function wrapTransportOnClose(onclose) {
+}
+export function wrapTransportOnClose(onclose) {
   if (onclose.onclose) {
     let obj = _mod698;
     obj.fill(onclose, "onclose", (arg0) => {
@@ -53,8 +53,8 @@ export const wrapTransportOnClose = function wrapTransportOnClose(onclose) {
       };
     });
   }
-};
-export const wrapTransportOnMessage = function wrapTransportOnMessage(onmessage, arg1) {
+}
+export function wrapTransportOnMessage(onmessage, arg1) {
   _require = arg1;
   if (onmessage.onmessage) {
     const tmp = _require;
@@ -127,8 +127,8 @@ export const wrapTransportOnMessage = function wrapTransportOnMessage(onmessage,
       };
     });
   }
-};
-export const wrapTransportSend = function wrapTransportSend(send, arg1) {
+}
+export function wrapTransportSend(send, arg1) {
   _require = arg1;
   if (send.send) {
     let tmp = _require;
@@ -177,7 +177,7 @@ export const wrapTransportSend = function wrapTransportSend(send, arg1) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -196,7 +196,7 @@ export const wrapTransportSend = function wrapTransportSend(send, arg1) {
                   _self = undefined;
                   c6 = 1;
                   c7 = 1;
-                  return { value: "Reflect", done: true };
+                  return { value: "Reflect", done: null };
                 }
               } else {
                 if (1 === tmp4) {
@@ -270,4 +270,4 @@ export const wrapTransportSend = function wrapTransportSend(send, arg1) {
       });
     });
   }
-};
+}

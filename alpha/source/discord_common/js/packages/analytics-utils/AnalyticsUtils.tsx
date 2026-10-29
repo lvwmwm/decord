@@ -41,14 +41,14 @@ export const getOS = getSuperProperties.getOS;
 export const getDevice = getSuperProperties.getDevice;
 export const getBrowser = getSuperProperties.getBrowser;
 export const getCampaignParams = getSuperProperties.getCampaignParams;
-export const isThrottled = function isThrottled(CHANNEL_OPENED) {
+export function isThrottled(CHANNEL_OPENED) {
   let tmp = null != closure_4[CHANNEL_OPENED];
   if (tmp) {
     const _Date = Date;
     tmp = closure_4[CHANNEL_OPENED] > Date.now();
   }
   return tmp;
-};
+}
 export const trackMaker = (arg0) => {
   let TRACK_ACTION_NAME;
   let dispatcher;

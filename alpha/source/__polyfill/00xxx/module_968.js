@@ -10,7 +10,7 @@ import registerSpanErrorInstrumentation from "module_693" /* 693 */;
 
 let closure_2;
 
-const f88027 = (description) => {
+const f89034 = (description) => {
   description = description.description;
   let hasItem;
   if (description != null) {
@@ -22,7 +22,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const SpotlightBrowser = "SpotlightBrowser";
 
 export const INTEGRATION_NAME = "SpotlightBrowser";
-export const isSpotlightInteraction = function isSpotlightInteraction(type) {
+export function isSpotlightInteraction(type) {
   let spans = "transaction" === type.type;
   const _Boolean = Boolean;
   if (spans) {
@@ -41,10 +41,10 @@ export const isSpotlightInteraction = function isSpotlightInteraction(type) {
   }
   if (spans) {
     const spans2 = type.spans;
-    spans = spans2.some(f88027);
+    spans = spans2.some(f89034);
   }
   return _Boolean(spans);
-};
+}
 export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
   let obj = arg0;
   if (arg0 === undefined) {
@@ -78,7 +78,7 @@ export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defi
       }
       if (spans) {
         const spans2 = type.spans;
-        spans = spans2.some(f88027);
+        spans = spans2.some(f89034);
       }
       let tmp3 = null;
       if (!_Boolean(spans)) {

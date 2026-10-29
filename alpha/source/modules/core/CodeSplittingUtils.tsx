@@ -1,11 +1,11 @@
-// Module ID: 4823
-// Function ID: 4824
+// Module ID: 4824
+// Function ID: 4825
 // Name: core/CodeSplittingUtils
-// Dependencies: [4824, 1480, 2]
+// Dependencies: [4825, 1481, 2]
 
-// Module 4823 (core/CodeSplittingUtils)
-import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
-import CodeSplittingUtils from "CodeSplittingUtils" /* 4824 */;
+// Module 4824 (core/CodeSplittingUtils)
+import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
+import CodeSplittingUtils from "CodeSplittingUtils" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 CodeSplittingUtils.setAwaitOnline(NetworkUtilsDefault.awaitOnline);

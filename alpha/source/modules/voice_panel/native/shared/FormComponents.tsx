@@ -1,28 +1,28 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9200
+// Function ID: 9201
 // Name: FormComponents
-// Dependencies: [109, 19, 5748, 21, 5004, 587, 558, 576, 7023, 6922, 9198, 1199, 7289, 9199, 9210, 7460, 6402, 9254, 8705, 7846, 504, 9255, 9257, 5270, 1125, 5058, 9258, 14429, 5280, 7450, 14431, 6939, 2]
+// Dependencies: [109, 19, 5750, 21, 5005, 587, 558, 576, 7047, 6946, 9201, 1199, 7313, 9202, 9214, 7483, 6426, 9258, 8708, 7869, 504, 9259, 9261, 5271, 1125, 5059, 9262, 14663, 5281, 7473, 14665, 6963, 2]
 // Exports: VoicePanelFormSection
 
-// Module 9197 (FormComponents)
+// Module 9200 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import UserUtils from "UserUtils" /* 5058 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import NativeViewDefault from "NativeView" /* 6922 */;
-import TableRowGroup3 from "TableRowGroup" /* 7023 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7450 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7846 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9198 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 14429 */;
+import UserUtils from "UserUtils" /* 5059 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import NativeViewDefault from "NativeView" /* 6946 */;
+import TableRowGroup3 from "TableRowGroup" /* 7047 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7473 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7869 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9201 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 14663 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5748 */;
+import PresenceStore from "PresenceStore" /* 5750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(9258);
+const GuildTagDefault = tmp6(9262);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(9198).VideoIcon;
+        VideoIcon = tmp(9201).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(9198).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(9201).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -508,7 +508,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
 size = size_mod;
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
 
-export const VoicePanelFormSection = function VoicePanelFormSection(style) {
+export function VoicePanelFormSection(style) {
   let TableRowGroup;
   let items1;
   let obj6;
@@ -541,7 +541,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       }
       if (cResult[6] !== tmp18) {
         const obj2 = {};
-        const TableRowGroup2 = tmp15(7023).TableRowGroup;
+        const TableRowGroup2 = tmp15(7047).TableRowGroup;
         const merged = Object.assign(tmp18);
         const tmp31 = metroImportDefault(TableRowGroup2, obj2);
         cResult[6] = tmp18;
@@ -582,5 +582,5 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
     tmp14 = metroImportDefault(tmp10, obj5);
   }
   return tmp14;
-};
+}
 export const MemberRowItem = tmp4;

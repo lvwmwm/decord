@@ -1,12 +1,12 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5876
+// Function ID: 5877
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1452, 558, 576, 504, 2]
+// Dependencies: [502, 1453, 558, 576, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled
 
-// Module 5874 (SurfaceDirectRendererExperiment)
+// Module 5876 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSurface
 const result = size.fileFinishedImporting("modules/video_calls/native/SurfaceDirectRendererExperiment.tsx");
 
 export const ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT = "2026-03-surface-direct-renderer";
-export const isSurfaceDirectRendererExperimentEnabled = function isSurfaceDirectRendererExperimentEnabled() {
+export function isSurfaceDirectRendererExperimentEnabled() {
   return closure_3.getConfig({ location: "RTCConnection_media_engine_connect" }).enableSurfaceDirectRenderer;
-};
+}
 export const useSurfaceDirectRendererExperiment = tmp2;

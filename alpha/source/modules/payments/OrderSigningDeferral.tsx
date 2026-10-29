@@ -1,11 +1,11 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 9521
+// Function ID: 9522
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9491, 2]
+// Dependencies: [5, 9522, 2]
 // Exports: getPaymentRedirectContext, performSigningDeferralAction
 
-// Module 9490 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9491 */;
+// Module 9521 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9522 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _performSigningDeferralAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;
@@ -102,7 +102,7 @@ let obj = function _performSigningDeferralAction() {
 };
 const result = size.fileFinishedImporting("modules/payments/OrderSigningDeferral.tsx");
 
-export const getPaymentRedirectContext = function getPaymentRedirectContext(billing_facet) {
+export function getPaymentRedirectContext(billing_facet) {
   billing_facet = null;
   if (null != billing_facet) {
     billing_facet = billing_facet.billing_facet;
@@ -116,8 +116,8 @@ export const getPaymentRedirectContext = function getPaymentRedirectContext(bill
     prop1 = prop.payment_redirect_context;
   }
   return prop1;
-};
+}
 export { openPaymentRedirect };
-export const performSigningDeferralAction = function performSigningDeferralAction() {
+export function performSigningDeferralAction() {
   return obj(...arguments);
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17874
+// Function ID: 17875
 // Name: RegistrationUIStore
 // Dependencies: [570, 1271, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 17636 (RegistrationUIStore)
+// Module 17874 (RegistrationUIStore)
 import react_native from "react-native" /* 1271 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -12,19 +12,19 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const useRegistrationUIStore = module_570.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "application" }));
+const useRegistrationUIStore = module_570.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "emoji" }));
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export { useRegistrationUIStore };
-export const setRegistrationErrors = function setRegistrationErrors(errors) {
+export function setRegistrationErrors(errors) {
   _require = errors;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { errors };
     obj.setState(obj);
   });
-};
-export const clearRegistrationErrorMessage = function clearRegistrationErrorMessage() {
+}
+export function clearRegistrationErrorMessage() {
   let errors = {};
   const merged = Object.assign(errors.getState().errors);
   delete errors["message"];
@@ -33,8 +33,8 @@ export const clearRegistrationErrorMessage = function clearRegistrationErrorMess
     errors = { errors };
     errors.setState(errors);
   });
-};
-export const updateRegistrationOptions = function updateRegistrationOptions(arg0) {
+}
+export function updateRegistrationOptions(arg0) {
   let closure_0;
   let obj;
   _require = arg0;
@@ -49,23 +49,23 @@ export const updateRegistrationOptions = function updateRegistrationOptions(arg0
     const merged1 = Object.assign(closure_0);
     setState(obj);
   });
-};
-export const resetRegistration = function resetRegistration() {
+}
+export function resetRegistration() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => {
     state.setState({ errors: {}, registrationOptions: {}, submitting: false });
   });
-};
-export const setSubmitting = function setSubmitting(submitting) {
+}
+export function setSubmitting(submitting) {
   _require = submitting;
   let obj = require("react-native");
   obj.batchUpdates(() => {
     const obj = { errors: {}, submitting };
     obj.setState(obj);
   });
-};
-export const doesRegistrationHaveIdentityType = function doesRegistrationHaveIdentityType() {
+}
+export function doesRegistrationHaveIdentityType() {
   const registrationOptions = obj.getState().registrationOptions;
   return null != registrationOptions.email || null != registrationOptions.phone;
-};
+}

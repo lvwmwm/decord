@@ -1,10 +1,10 @@
-// Module ID: 2013
-// Function ID: 2014
+// Module ID: 2014
+// Function ID: 2015
 // Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 2013 (inject)
+// Module 2014 (inject)
 import size from "module_2" /* 2 */;
 
 let voiceEngine;
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/media-e
 export function inject(arg0) {
   let closure_1_0 = arg0;
 }
-export const supported = function supported() {
+export function supported() {
   if (null == uiStore) {
     const _Error = Error;
     const self = this;
@@ -24,8 +24,8 @@ export const supported = function supported() {
   } else {
     return uiStore.supported();
   }
-};
-export const supportsFeature = function supportsFeature(arg0) {
+}
+export function supportsFeature(arg0) {
   if (null == uiStore) {
     const _Error = Error;
     const self = this;
@@ -35,8 +35,8 @@ export const supportsFeature = function supportsFeature(arg0) {
   } else {
     return uiStore.supportsFeature(arg0);
   }
-};
-export const setProcessPriority = function setProcessPriority(arg0) {
+}
+export function setProcessPriority(arg0) {
   if (null == uiStore) {
     const _Error = Error;
     const self = this;
@@ -46,8 +46,8 @@ export const setProcessPriority = function setProcessPriority(arg0) {
   } else {
     uiStore.setProcessPriority(arg0);
   }
-};
-export const getVoiceEngine = function getVoiceEngine() {
+}
+export function getVoiceEngine() {
   if (null == uiStore) {
     const _Error = Error;
     const self = this;
@@ -62,8 +62,8 @@ export const getVoiceEngine = function getVoiceEngine() {
     }
     return tmp;
   }
-};
-export const getOpenH264LibraryPath = function getOpenH264LibraryPath() {
+}
+export function getOpenH264LibraryPath() {
   if (null == uiStore) {
     const _Error = Error;
     const self = this;
@@ -73,4 +73,4 @@ export const getOpenH264LibraryPath = function getOpenH264LibraryPath() {
   } else {
     return uiStore.getOpenH264LibraryPath();
   }
-};
+}

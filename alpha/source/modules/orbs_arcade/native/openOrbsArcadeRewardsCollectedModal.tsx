@@ -1,12 +1,12 @@
-// Module ID: 16684
-// Function ID: 16685
+// Module ID: 16922
+// Function ID: 16923
 // Name: openOrbsArcadeRewardsCollectedModal
-// Dependencies: [5, 5246, 6707, 16685, 1999, 2]
+// Dependencies: [5, 5247, 6731, 16923, 2000, 2]
 // Exports: closeOrbsArcadeRewardsCollectedModal, openOrbsArcadeRewardsCollectedModal
 
-// Module 16684 (openOrbsArcadeRewardsCollectedModal)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+// Module 16922 (openOrbsArcadeRewardsCollectedModal)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 const OrbsArcadeRewardsCollectedModal = "OrbsArcadeRewardsCollectedModal";
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsArcadeRewardsCollectedModal.tsx");
 
-export const openOrbsArcadeRewardsCollectedModal = function openOrbsArcadeRewardsCollectedModal(rewards, entitlements) {
+export function openOrbsArcadeRewardsCollectedModal(rewards, entitlements) {
   let paths;
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
@@ -27,8 +27,8 @@ export const openOrbsArcadeRewardsCollectedModal = function openOrbsArcadeReward
     await require("asyncRequire")(paths[3], paths.paths);
     return arg1.default;
   }), obj3, OrbsArcadeRewardsCollectedModal);
-};
-export const closeOrbsArcadeRewardsCollectedModal = function closeOrbsArcadeRewardsCollectedModal() {
+}
+export function closeOrbsArcadeRewardsCollectedModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(OrbsArcadeRewardsCollectedModal);
-};
+}

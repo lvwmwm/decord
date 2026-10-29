@@ -1,25 +1,25 @@
-// Module ID: 8623
-// Function ID: 8624
+// Module ID: 8645
+// Function ID: 8646
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [5273, 4856, 7427, 7429, 1084, 1208, 1125, 1264, 7425, 6503, 6508, 5680, 6694, 6689, 558, 576, 7431, 2]
+// Dependencies: [5274, 4857, 7450, 7452, 1084, 1208, 1125, 1264, 7448, 6527, 6532, 5682, 6718, 6713, 558, 576, 7454, 2]
 // Exports: hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2
 
-// Module 8623 (ExplicitMediaRedactionUtils)
+// Module 8645 (ExplicitMediaRedactionUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl2 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6694 */;
-import SelfModUtils from "SelfModUtils" /* 7425 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7427 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7429 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
+import SelfModUtils from "SelfModUtils" /* 7448 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7450 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7452 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ObscureMediaModels = tmp(7431);
+const ObscureMediaModels = tmp(7454);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault, MESSAGE_SCAN_TIMEOUT: metroImportAll } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAge
 });
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
 
-export const redactionSettingToRenderedString = function redactionSettingToRenderedString(prop) {
+export function redactionSettingToRenderedString(prop) {
   if (preloaded_user_settings.ExplicitContentRedaction.SHOW === prop) {
     return () => {
       const intl = intl2.intl;
@@ -105,8 +105,8 @@ export const redactionSettingToRenderedString = function redactionSettingToRende
       return intl.string(intl2.t["D/157Y"]);
     };
   }
-};
-export const isPendingScanVersion = function isPendingScanVersion(contentScanVersion) {
+}
+export function isPendingScanVersion(contentScanVersion) {
   const value = DevSettingsStore.get("explicit_media_redaction_ignore_pending_scan");
   let tmp2 = !value;
   if (tmp2) {
@@ -118,10 +118,10 @@ export const isPendingScanVersion = function isPendingScanVersion(contentScanVer
     tmp2 = tmp4;
   }
   return tmp2;
-};
+}
 export const TrackMediaRedactionActionType = { EXPLICIT_MEDIA_LEARN_MORE_VIEWED: "explicit_media_learn_more_viewed", EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS: "explicit_media_learn_more_click_settings", EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE: "explicit_media_learn_more_click_learn_more", EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS: "explicit_media_learn_more_click_dismiss", EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE: "explicit_media_learn_more_click_false_positive", EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY: "explicit_media_learn_more_click_age_verify_reverify", EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE: "explicit_media_learn_more_click_age_verify_learn_more", EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED: "explicit_media_false_positive_viewed", EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM: "explicit_media_false_positive_click_confirm", EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL: "explicit_media_false_positive_click_cancel", EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED: "explicit_media_sender_false_positive_button_clicked", EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT: "explicit_media_false_positive_clyde_message_sent" };
 export const TrackMediaRedactionContext = { EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW: "explicit_media_obscured_false_positive_flow", EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW: "explicit_media_sender_false_positive_flow", EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED: "explicit_media_message_send_blocked", EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED: "explicit_media_add_media_to_forum_post_blocked" };
-export const trackMediaRedactionAction = function trackMediaRedactionAction(arg0) {
+export function trackMediaRedactionAction(arg0) {
   let channelId;
   let guild_id;
   let messageId;
@@ -142,9 +142,9 @@ export const trackMediaRedactionAction = function trackMediaRedactionAction(arg0
       track(EXPLICIT_MEDIA_ACTION, obj2);
     }
   }
-};
+}
 export const TimeoutCancelSource = { UPDATE: "update", TIMEOUT: "timeout" };
-export const trackScanTiming = function trackScanTiming(setAt, UPDATE) {
+export function trackScanTiming(setAt, UPDATE) {
   let items;
   const bound = Math.min(Math.floor((Date.now() - setAt) / 1000), 3);
   const tmp2 = MonitoringAgentDefault;
@@ -152,8 +152,8 @@ export const trackScanTiming = function trackScanTiming(setAt, UPDATE) {
   const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING, tags: items };
   items = ["timingBucket:" + bound, "source:" + UPDATE, "metricVersion:1"];
   increment(obj);
-};
-export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
+}
+export function trackScanningTimedOut(arg0) {
   let attachmentIds;
   let channelId;
   let embedIds;
@@ -215,8 +215,8 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
       }
     }
   }
-};
-export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicitMediaRedactableMessagedLoaded(arg0) {
+}
+export function trackExplicitMediaRedactableMessagedLoaded(arg0) {
   let channelId;
   let guild_id;
   let numOfAttachmentsPendingScan;
@@ -236,13 +236,13 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      const distribution = tmp11(6503).distribution;
+      const distribution = tmp11(6527).distribution;
       MonitoringAgentDefault;
       distribution(obj, sum);
     }
   }
-};
-export const trackRedactableMessageLoaded = function trackRedactableMessageLoaded(arg0) {
+}
+export function trackRedactableMessageLoaded(arg0) {
   let channelId;
   let guild_id;
   let messageId;
@@ -279,8 +279,8 @@ export const trackRedactableMessageLoaded = function trackRedactableMessageLoade
       track(REDACTABLE_MESSAGE_LOADED, obj);
     }
   }
-};
-export const trackExplicitMediaScanComplete = function trackExplicitMediaScanComplete(channelId) {
+}
+export function trackExplicitMediaScanComplete(channelId) {
   let guild_id;
   let type;
   channelId = channelId.channelId;
@@ -300,16 +300,16 @@ export const trackExplicitMediaScanComplete = function trackExplicitMediaScanCom
     }
     track(EXPLICIT_MEDIA_RETROACTIVE_SCAN_COMPLETE, obj);
   }
-};
-export const isObscuredMediaBelowConstraints = function isObscuredMediaBelowConstraints(arg0, arg1) {
+}
+export function isObscuredMediaBelowConstraints(arg0, arg1) {
   let tmp = null != arg0 && null != arg1;
   if (tmp) {
     tmp = arg0 <= metroImportDefault || arg1 <= metroRequire;
     const tmp3 = arg0 <= metroImportDefault || arg1 <= metroRequire;
   }
   return tmp;
-};
-export const shouldAgeVerifyForExplicitMedia = function shouldAgeVerifyForExplicitMedia() {
+}
+export function shouldAgeVerifyForExplicitMedia() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.SENSITIVE_CONTENT_SHOW_SETTING);
   const obj2 = AgeVerificationUtils;
@@ -317,10 +317,10 @@ export const shouldAgeVerifyForExplicitMedia = function shouldAgeVerifyForExplic
     isFeatureAgeGatedResult = obj2.shouldShowTiggerPawtect();
   }
   return isFeatureAgeGatedResult;
-};
+}
 export const useShouldAgeVerifyForExplicitMedia = tmp3;
 export const useShouldAgeVerifyForReason = tmp4;
-export const trackToggleMediaObscurityV2 = function trackToggleMediaObscurityV2(obscure) {
+export function trackToggleMediaObscurityV2(obscure) {
   obscure = obscure.obscure;
   const obj = AgeVerificationUtils;
   if (obj.isVerifiedAdult()) {
@@ -334,8 +334,8 @@ export const trackToggleMediaObscurityV2 = function trackToggleMediaObscurityV2(
     const obj2 = { toggle_direction: str };
     track(EXPLICIT_MEDIA_OBSCURITY_TOGGLE_V2, obj2);
   }
-};
-export const hasMessageSnapshotsWithAttachmentsOrEmbeds = function hasMessageSnapshotsWithAttachmentsOrEmbeds(message) {
+}
+export function hasMessageSnapshotsWithAttachmentsOrEmbeds(message) {
   const message_snapshots = message.message_snapshots;
   let someResult;
   if (message_snapshots != null) {
@@ -359,4 +359,4 @@ export const hasMessageSnapshotsWithAttachmentsOrEmbeds = function hasMessageSna
     });
   }
   return someResult;
-};
+}

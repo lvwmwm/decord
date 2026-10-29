@@ -1,27 +1,27 @@
-// Module ID: 14051
-// Function ID: 14052
+// Module ID: 14284
+// Function ID: 14285
 // Name: ForLaterCardActionButtons
-// Dependencies: [109, 19, 17, 21, 5004, 5246, 14052, 1999, 14045, 14055, 1125, 12561, 6967, 14056, 10154, 558, 576, 7991, 9172, 9795, 2]
+// Dependencies: [109, 19, 17, 21, 5005, 5247, 14285, 2000, 14278, 14288, 1125, 12616, 6991, 14289, 10187, 558, 576, 8014, 9175, 9827, 2]
 // Exports: useForLaterCardMenuItems
 
-// Module 14051 (ForLaterCardActionButtons)
+// Module 14284 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import IconButton2 from "IconButton" /* 7991 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9172 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 14045 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import IconButton2 from "IconButton" /* 8014 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9175 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 14278 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ContextMenu = tmp(9795);
+const ContextMenu = tmp(9827);
 let closure_3 = ["menuItems"];
 let closure_4 = ["ref"];
 const View = react_native.View;
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCa
 const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardActionButtons.tsx");
 
 export default tmp2;
-export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedMessage) {
+export function useForLaterCardMenuItems(savedMessage) {
   let PencilIcon;
   let SvXS1Z;
   let intl;
@@ -117,7 +117,7 @@ export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedM
   const throttledNow = savedMessage.throttledNow;
   let obj = {
     label: intl.string(savedMessage(1125).t["+TSRGD"]),
-    IconComponent: savedMessage(12561).ChatArrowRightIcon,
+    IconComponent: savedMessage(12616).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -140,7 +140,7 @@ export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedM
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(14052, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(14285, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1125).intl;
   const items1 = [obj, ];
@@ -153,7 +153,7 @@ export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedM
   }
   let obj2 = {
     label: string(SvXS1Z),
-    IconComponent: tmp2(6967).XSmallIcon,
+    IconComponent: tmp2(6991).XSmallIcon,
     action() {
       const obj = SavedMessageHelpers;
       return obj.removeSavedMessage(savedMessage.saveData);
@@ -168,11 +168,11 @@ export const useForLaterCardMenuItems = function useForLaterCardMenuItems(savedM
     const t = tmp2(1125).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp2(14056).BellZIcon;
+      PencilIcon = tmp2(14289).BellZIcon;
     } else {
-      PencilIcon = tmp2(10154).PencilIcon;
+      PencilIcon = tmp2(10187).PencilIcon;
     }
     unshift(obj3);
   }
   return items1;
-};
+}

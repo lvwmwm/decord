@@ -1,9 +1,9 @@
-// Module ID: 6509
-// Function ID: 6510
+// Module ID: 6533
+// Function ID: 6534
 // Name: CaptchaConstants
 // Dependencies: [2]
 
-// Module 6509 (CaptchaConstants)
+// Module 6533 (CaptchaConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/captcha/CaptchaConstants.tsx");

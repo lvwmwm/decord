@@ -1,15 +1,15 @@
-// Module ID: 19329
-// Function ID: 19330
+// Module ID: 19562
+// Function ID: 19563
 // Name: AddRuleRow
-// Dependencies: [19, 21, 558, 576, 6939, 11195, 1125, 19316, 2]
+// Dependencies: [19, 21, 558, 576, 6963, 11249, 1125, 19549, 2]
 
-// Module 19329 (AddRuleRow)
+// Module 19562 (AddRuleRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import TableRow2 from "TableRow" /* 6939 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11195 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19316 */;
+import TableRow2 from "TableRow" /* 6963 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11249 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19549 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddRuleRow
   const cResult = obj.c(6);
   ({ triggerType, onPress } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Icon = tmp(6939).TableRow.Icon;
+    const Icon = tmp(6963).TableRow.Icon;
     const tmp6 = <Icon IconComponent={CirclePlusIcon.CirclePlusIcon} />;
     cResult[0] = tmp6;
     first = tmp6;

@@ -1,31 +1,31 @@
-// Module ID: 18810
-// Function ID: 18811
+// Module ID: 19043
+// Function ID: 19044
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1389, 18805, 21, 5004, 587, 7481, 1125, 9989, 558, 576, 2050, 504, 9717, 9942, 18811, 5289, 12, 6919, 1199, 18819, 10193, 5727, 9340, 5270, 9941, 7203, 2]
+// Dependencies: [19, 17, 1389, 19038, 21, 5005, 587, 7504, 1125, 10021, 558, 576, 2051, 504, 9749, 9974, 19044, 5290, 12, 6943, 1199, 19052, 10226, 5729, 9344, 5271, 9973, 7227, 2]
 
-// Module 18810 (SoundboardSoundPickerList)
+// Module 19043 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ClockIcon from "ClockIcon" /* 5727 */;
-import GuildIcon from "GuildIcon" /* 6919 */;
-import FastListDefault from "FastList" /* 7203 */;
-import SoundboardTypes from "SoundboardTypes" /* 7481 */;
-import TrophyIcon from "TrophyIcon" /* 9340 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9717 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9941 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9942 */;
-import chunkDefault from "chunk" /* 9989 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10193 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18819 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ClockIcon from "ClockIcon" /* 5729 */;
+import GuildIcon from "GuildIcon" /* 6943 */;
+import FastListDefault from "FastList" /* 7227 */;
+import SoundboardTypes from "SoundboardTypes" /* 7504 */;
+import TrophyIcon from "TrophyIcon" /* 9344 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9749 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9973 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9974 */;
+import chunkDefault from "chunk" /* 10021 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10226 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19052 */;
 import react from "react" /* 19 */;
 import UserStore_mod from "UserStore" /* 1389 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18805 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19038 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -212,7 +212,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundP
             const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
             soundButtonNotFirst = null;
             obj2 = { section: sectionIndex, item: row };
-            const SoundButton = tmp(18811).SoundButton;
+            const SoundButton = tmp(19044).SoundButton;
             const tmp7 = metroImportDefault;
             if (arg1 > 0) {
               soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -289,7 +289,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundP
         const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
         obj2 = { section: importDefault, item: row };
-        const SoundButton = tmp(18811).SoundButton;
+        const SoundButton = tmp(19044).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -332,7 +332,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmp4 = debounceResult();
   UserStore = tmp4;
-  const tmpResult = tmp(5289);
+  const tmpResult = tmp(5290);
   const fontScale = tmpResult.useFontScale();
   if (cResult[0] !== categories) {
     const tmp8 = arr;
@@ -797,7 +797,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const listRef = channel.listRef;
   const currentUser = closure_10();
-  let obj = channel(5289);
+  let obj = channel(5290);
   const fontScale = obj.useFontScale();
   let tmp2 = getSectionPosition(categories, closure_6);
   const tmp3 = getFastListSectionsFromCategories(categories, closure_6, fontScale);

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1131 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/native/images", width: 375, height: 162, scales: [1], hash: "bda37cc0de8c36fb8217439574ac2fe2", name: "featured_page_footer_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "8808a38e6856d204cf276ed0f683633e", name: "fr.messages.8808a38e6856d204cf276ed0f683633e.compiled.messages", type: "jsona" });

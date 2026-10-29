@@ -1,17 +1,17 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12296
+// Function ID: 12297
 // Name: conjureGuildPickerSources
-// Dependencies: [19, 4916, 4910, 1389, 558, 576, 504, 1385, 5058, 6865, 6866, 2]
+// Dependencies: [19, 4917, 4911, 1389, 558, 576, 504, 1385, 5059, 6888, 6889, 2]
 // Exports: conjureMemberUsername
 
-// Module 12242 (conjureGuildPickerSources)
+// Module 12296 (conjureGuildPickerSources)
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import UserUtils from "UserUtils" /* 5058 */;
-import GuildUtilsDefault from "GuildUtils" /* 6865 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
+import UserUtils from "UserUtils" /* 5059 */;
+import GuildUtilsDefault from "GuildUtils" /* 6888 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -299,7 +299,7 @@ const result = size.fileFinishedImporting("modules/conjure/guild_pickers/conjure
 
 export const useConjureGuildRoles = tmp2;
 export const useConjureGuildMemberUsers = tmp3;
-export const conjureMemberUsername = function conjureMemberUsername(id, stateFromStores1) {
+export function conjureMemberUsername(id, stateFromStores1) {
   let identifiable = "always";
   const getUserTag = UserUtils.getUserTag;
   UserUtils;
@@ -307,5 +307,5 @@ export const conjureMemberUsername = function conjureMemberUsername(id, stateFro
     identifiable = "never";
   }
   return getUserTag(id, { identifiable });
-};
+}
 export const useConjureMemberRequests = tmp4;

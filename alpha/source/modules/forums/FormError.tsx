@@ -1,19 +1,19 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10173
+// Function ID: 10174
 // Name: FormError
-// Dependencies: [1125, 8300, 2]
+// Dependencies: [1125, 8322, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 10140 (FormError)
+// Module 10173 (FormError)
 import intl2 from "intl" /* 1125 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8300 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8322 */;
 import size from "module_2" /* 2 */;
 
 const FormSubmitErrorType = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
 const result = size.fileFinishedImporting("modules/forums/FormError.tsx");
 
 export { FormSubmitErrorType };
-export const makeEmptyTitleError = function makeEmptyTitleError() {
+export function makeEmptyTitleError() {
   let obj;
   const intl = intl2.intl;
   let stringResult = intl.string(intl2.t["71wuR0"]);
@@ -22,8 +22,8 @@ export const makeEmptyTitleError = function makeEmptyTitleError() {
     stringResult = null;
   }
   return obj;
-};
-export const makeEmptyMessageError = function makeEmptyMessageError() {
+}
+export function makeEmptyMessageError() {
   let obj;
   const intl = intl2.intl;
   let stringResult = intl.string(intl2.t["w/BT3G"]);
@@ -32,8 +32,8 @@ export const makeEmptyMessageError = function makeEmptyMessageError() {
     stringResult = null;
   }
   return obj;
-};
-export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
+}
+export function makeAutomodViolationError(errorResponseBody, id) {
   let obj;
   const AutomodViolation = obj.AutomodViolation;
   id = undefined;
@@ -48,8 +48,8 @@ export const makeAutomodViolationError = function makeAutomodViolationError(erro
     automodErrorMessageFromErrorResponse = null;
   }
   return obj;
-};
-export const makeApiNameValidationError = function makeApiNameValidationError() {
+}
+export function makeApiNameValidationError() {
   let obj;
   const ApiValidation = obj.ApiValidation;
   const intl = intl2.intl;
@@ -59,8 +59,8 @@ export const makeApiNameValidationError = function makeApiNameValidationError() 
     stringResult = null;
   }
   return obj;
-};
-export const makeEmptyTagsError = function makeEmptyTagsError() {
+}
+export function makeEmptyTagsError() {
   let obj;
   const EmptyTags = obj.EmptyTags;
   const intl = intl2.intl;
@@ -70,8 +70,8 @@ export const makeEmptyTagsError = function makeEmptyTagsError() {
     stringResult = null;
   }
   return obj;
-};
-export const renderError = function renderError(type, content) {
+}
+export function renderError(type, content) {
   let tmp = null;
   if (null != type) {
     const tmp3 = obj;
@@ -92,4 +92,4 @@ export const renderError = function renderError(type, content) {
     tmp = message;
   }
   return tmp;
-};
+}

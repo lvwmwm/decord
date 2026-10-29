@@ -1,16 +1,16 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11444
+// Function ID: 11445
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getPartySize
 
-// Module 11390 (_slicedToArray)
+// Module 11444 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getPartySize.tsx");
 
-export const getPartySize = function getPartySize(activity) {
+export function getPartySize(activity) {
   if (null != activity) {
     if (null != activity.party) {
       if (null != activity.party.size) {
@@ -24,4 +24,4 @@ export const getPartySize = function getPartySize(activity) {
     }
   }
   return { partySize: -1, maxPartySize: -1 };
-};
+}

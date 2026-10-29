@@ -1,17 +1,17 @@
-// Module ID: 5642
-// Function ID: 5643
+// Module ID: 5643
+// Function ID: 5644
 // Name: LinkUtils
-// Dependencies: [4856, 4878, 4936, 1084, 4863, 5643, 5644, 11, 2]
+// Dependencies: [4857, 4879, 4937, 1084, 4864, 5644, 5645, 11, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseConversationIdFromQuery, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5642 (LinkUtils)
+// Module 5643 (LinkUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import ConversationConstants from "ConversationConstants" /* 5643 */;
-import RegexUtilsDefault from "RegexUtils" /* 5644 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import ConversationConstants from "ConversationConstants" /* 5644 */;
+import RegexUtilsDefault from "RegexUtils" /* 5645 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const result = size.fileFinishedImporting("modules/links/LinkUtils.tsx");
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
 export const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = regExp8;
 export const MEDIA_POST_URL_RE = regExp9;
-export const tryParseChannelPath = function tryParseChannelPath(pathname) {
+export function tryParseChannelPath(pathname) {
   if (null == pathname) {
     return null;
   } else {
@@ -69,8 +69,8 @@ export const tryParseChannelPath = function tryParseChannelPath(pathname) {
     const match3 = pathname.match(regExp4);
     tmp5 = null;
   }
-};
-export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathname) {
+}
+export function tryParseEventDetailsPath(pathname) {
   if (null == pathname) {
     return null;
   } else {
@@ -85,8 +85,8 @@ export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathna
     }
     return tmp2;
   }
-};
-export const tryParseUserProfilePath = function tryParseUserProfilePath(pathname) {
+}
+export function tryParseUserProfilePath(pathname) {
   let tmp = null;
   if (null != pathname) {
     const match = pathname.match(re13);
@@ -100,12 +100,12 @@ export const tryParseUserProfilePath = function tryParseUserProfilePath(pathname
     tmp = tmp4;
   }
   return tmp;
-};
-export const canViewChannel = function canViewChannel(channel) {
+}
+export function canViewChannel(channel) {
   const canResult = channel.isPrivate() || PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
   return canResult;
-};
-export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
+}
+export function isAccessibleChannelPath(arg0) {
   let channelId;
   let guildId;
   ({ guildId, channelId } = arg0);
@@ -125,8 +125,8 @@ export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
     }
     return tmp3;
   }
-};
-export const tryParseDiceRollLink = function tryParseDiceRollLink(pathname) {
+}
+export function tryParseDiceRollLink(pathname) {
   let num2;
   let num5;
   if (null == pathname) {
@@ -153,8 +153,8 @@ export const tryParseDiceRollLink = function tryParseDiceRollLink(pathname) {
     }
     return tmp;
   }
-};
-export const tryParseConversationIdFromQuery = function tryParseConversationIdFromQuery(arg0) {
+}
+export function tryParseConversationIdFromQuery(arg0) {
   if (null != arg0) {
     const _URLSearchParams = URLSearchParams;
     const self = this;
@@ -170,4 +170,4 @@ export const tryParseConversationIdFromQuery = function tryParseConversationIdFr
       }
     }
   }
-};
+}

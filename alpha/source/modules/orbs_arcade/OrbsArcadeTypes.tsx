@@ -1,12 +1,12 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16901
+// Function ID: 16902
 // Name: OrbsArcadeTypes
 // Dependencies: [32, 2]
 // Exports: orbsArcadeApplicationGameFromServer, orbsArcadeClaimedRewardFromServer, orbsArcadeGamesFromServer
 
-// Module 16663 (OrbsArcadeTypes)
+// Module 16901 (OrbsArcadeTypes)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 let obj;
 
@@ -24,7 +24,14 @@ function _rewardFromServer(type) {
 }
 function orbsArcadeGameFromServer(id) {
   let rewards;
-  obj = { id: id.id, versionId: id.version_id, applicationId: id.application_id, name: id.name, instructions: id.instructions, startsAt: id.starts_at, endsAt: id.ends_at, orbCost: id.orb_cost, numFreePlays: id.num_free_plays, windowDurationHours: id.window_duration_hours, asset: id.asset, rewards: rewards.map(_rewardFromServer) };
+  let tmp;
+  obj = { id: id.id, versionId: id.version_id, applicationId: id.application_id, name: id.name, instructions: id.instructions, startsAt: id.starts_at, endsAt: id.ends_at, orbCost: id.orb_cost, numFreePlays: id.num_free_plays, windowDurationHours: id.window_duration_hours, asset: id.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
+  tmp = null;
+  if (null != id.hero_video_asset) {
+    size = { url: null, altText: null, mimeType: null, width: null, height: null };
+    ({ url: obj2.url, alt_text: obj2.altText, mime_type: obj2.mimeType, width: obj2.width, height: obj2.height } = id.hero_video_asset);
+    tmp = size;
+  }
   rewards = id.rewards;
   return obj;
 }
@@ -52,13 +59,14 @@ function orbsArcadeGameStateFromServer(game_state) {
   return obj5;
 }
 const OrbsArcadeRewardType = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", COLLECTIBLE: 1, [1]: "COLLECTIBLE", FRACTIONAL_PREMIUM: 2, [2]: "FRACTIONAL_PREMIUM" };
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/orbs_arcade/OrbsArcadeTypes.tsx");
 
 export { OrbsArcadeRewardType };
 export const OrbsArcadeRewardStatus = { LOCKED: "locked", CLAIMABLE: "claimable", CLAIMED: "claimed" };
 export { orbsArcadeGameFromServer };
 export { orbsArcadeGameStateFromServer };
-export const orbsArcadeGamesFromServer = function orbsArcadeGamesFromServer(body) {
+export function orbsArcadeGamesFromServer(body) {
   let games;
   const gameStateByGameId = {};
   const values = Object.values(body.game_state_by_game_id);
@@ -69,23 +77,29 @@ export const orbsArcadeGamesFromServer = function orbsArcadeGamesFromServer(body
   const obj2 = { games: games.map(orbsArcadeGameFromServer), gameStateByGameId };
   games = body.games;
   return obj2;
-};
-export const orbsArcadeApplicationGameFromServer = function orbsArcadeApplicationGameFromServer(game) {
-  let obj2;
+}
+export function orbsArcadeApplicationGameFromServer(game) {
   let rewards;
   let tmp;
-  obj = { game: obj2, gameState: tmp, enrollmentClosesAt: null, canAffordRun: null };
+  let tmp2;
   game = game.game;
-  obj2 = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, asset: game.asset, rewards: rewards.map(_rewardFromServer) };
-  rewards = game.rewards;
+  game = { id: game.id, versionId: game.version_id, applicationId: game.application_id, name: game.name, instructions: game.instructions, startsAt: game.starts_at, endsAt: game.ends_at, orbCost: game.orb_cost, numFreePlays: game.num_free_plays, windowDurationHours: game.window_duration_hours, asset: game.asset, heroVideoAsset: tmp, rewards: rewards.map(_rewardFromServer) };
   tmp = null;
-  if (null != game.game_state) {
-    tmp = orbsArcadeGameStateFromServer(game.game_state);
+  if (null != game.hero_video_asset) {
+    size = { url: null, altText: null, mimeType: null, width: null, height: null };
+    ({ url: obj2.url, alt_text: obj2.altText, mime_type: obj2.mimeType, width: obj2.width, height: obj2.height } = game.hero_video_asset);
+    tmp = size;
   }
-  ({ enrollment_closes_at: obj.enrollmentClosesAt, can_afford_run: obj.canAffordRun } = game);
-  return obj;
-};
-export const orbsArcadeClaimedRewardFromServer = function orbsArcadeClaimedRewardFromServer(body) {
+  rewards = game.rewards;
+  const obj4 = { game, gameState: tmp2, enrollmentClosesAt: null, canAffordRun: null };
+  tmp2 = null;
+  if (null != game.game_state) {
+    tmp2 = orbsArcadeGameStateFromServer(game.game_state);
+  }
+  ({ enrollment_closes_at: obj3.enrollmentClosesAt, can_afford_run: obj3.canAffordRun } = game);
+  return obj4;
+}
+export function orbsArcadeClaimedRewardFromServer(body) {
   obj = { gameState: orbsArcadeGameStateFromServer(body.game_state), entitlements: body.entitlements };
   return obj;
-};
+}

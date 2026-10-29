@@ -1,12 +1,12 @@
-// Module ID: 9487
-// Function ID: 9488
+// Module ID: 9518
+// Function ID: 9519
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9488, 9489, 7381, 9484, 1125, 2]
+// Dependencies: [5, 32, 19, 9519, 9520, 7404, 9515, 1125, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9487 (useRedeemVirtualCurrency)
+// Module 9518 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1125 */;
-import useOrderSigning from "useOrderSigning" /* 9489 */;
+import useOrderSigning from "useOrderSigning" /* 9520 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ let metroRequire;
 ({ useState: hasOwnProperty, useEffect: metroRequire, useCallback: metroImportDefault } = react);
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/useRedeemVirtualCurrency.tsx");
 
-export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order) {
+export function useRedeemVirtualCurrency(order) {
   let closure_4;
   let enabled;
   let entitlements;
@@ -33,7 +33,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   [error, _asyncToGenerator] = _slicedToArray(enabled(null), 2);
   const tmp5 = _slicedToArray(enabled(null), 2);
   [isSubmitting, _slicedToArray] = enabled(false);
-  let obj = entitlements(9488);
+  let obj = entitlements(9519);
   enabled = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
@@ -70,7 +70,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               tmp(false);
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp47) {
           closure_5 = tmp47;
@@ -247,4 +247,4 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
     }
   }, items2);
   return { entitlements, error, isSubmitting, responseMessage, redeemVirtualCurrency };
-};
+}

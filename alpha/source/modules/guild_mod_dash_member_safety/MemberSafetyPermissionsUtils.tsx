@@ -1,16 +1,16 @@
-// Module ID: 7402
-// Function ID: 7403
+// Module ID: 7425
+// Function ID: 7426
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 4874, 4878, 4936, 1389, 4940, 1084, 1096, 4941, 558, 576, 504, 2]
+// Dependencies: [32, 4875, 4879, 4937, 1389, 4941, 1084, 1096, 4942, 558, 576, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
 
-// Module 7402 (MemberSafetyPermissionsUtils)
+// Module 7425 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4940 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 4941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -316,7 +316,7 @@ const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/
 export { getContextForPermission };
 export { canAccessMemberSafetyPage };
 export { hasBulkBanningPermissions };
-export const canPruneGuildMembers = function canPruneGuildMembers(guild, currentUser, PermissionStore) {
+export function canPruneGuildMembers(guild, currentUser, PermissionStore) {
   let canResult1;
   let obj = PermissionStore;
   if (PermissionStore === undefined) {
@@ -332,12 +332,12 @@ export const canPruneGuildMembers = function canPruneGuildMembers(guild, current
     canResult1 = can(obj2.combine(constants2.MANAGE_GUILD, constants2.KICK_MEMBERS), guild);
   }
   return canResult1;
-};
+}
 export const useCanAccessMemberSafetyPage = tmp3;
 export const useCanAccessBulkBanningFeature = tmp4;
 export const useCanAccessInviteCodeFeature = tmp5;
 export const useCanBulkBanUser = tmp6;
-export const canBulkBanUser = function canBulkBanUser(arg0, arg1, user) {
+export function canBulkBanUser(arg0, arg1, user) {
   const guild = GuildStore.getGuild(arg0);
   let tmp2 = null != guild;
   if (tmp2) {
@@ -345,4 +345,4 @@ export const canBulkBanUser = function canBulkBanUser(arg0, arg1, user) {
     const canManageUserResult = arg1 && PermissionStore.canManageUser(constants2.BAN_MEMBERS, user, guild);
   }
   return tmp2;
-};
+}

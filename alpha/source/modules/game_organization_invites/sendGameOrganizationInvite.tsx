@@ -1,15 +1,15 @@
-// Module ID: 11364
-// Function ID: 11365
+// Module ID: 11418
+// Function ID: 11419
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 9164, 7844, 5011, 1125, 11365, 2]
+// Dependencies: [5, 9167, 7867, 5012, 1125, 11419, 2]
 // Exports: default
 
-// Module 11364 (sendGameOrganizationInvite)
+// Module 11418 (sendGameOrganizationInvite)
 import intl4 from "intl" /* 1125 */;
-import shared from "shared" /* 5011 */;
-import Constants from "Constants" /* 7844 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9164 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11365 */;
+import shared from "shared" /* 5012 */;
+import Constants from "Constants" /* 7867 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9167 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 11419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _sendGameOrganizationInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ let obj = function _sendGameOrganizationInvite() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
           AccessibilityAnnouncer = closure_4;
           c7 = 3;

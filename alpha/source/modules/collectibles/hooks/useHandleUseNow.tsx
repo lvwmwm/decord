@@ -1,10 +1,10 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11277
+// Function ID: 11278
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1086, 1992, 1125, 8697, 11224, 8693, 7114, 2]
+// Dependencies: [5, 32, 19, 1086, 1993, 1125, 8700, 11278, 8696, 7138, 2]
 // Exports: useHandleUseNow
 
-// Module 11223 (hooks/useHandleUseNow)
+// Module 11277 (hooks/useHandleUseNow)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -17,7 +17,7 @@ let _slicedToArray = _slicedToArray_mod;
 const isExternalProduct = CollectiblesShopConstants.isExternalProduct;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
-export const useHandleUseNow = function useHandleUseNow(product) {
+export function useHandleUseNow(product) {
   let closure_3;
   let first;
   let items1;
@@ -102,7 +102,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c5;
@@ -166,7 +166,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                 return obj9;
               }
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === c6) {
             c5 = 0;
@@ -219,4 +219,4 @@ export const useHandleUseNow = function useHandleUseNow(product) {
   };
   items1 = [memo, firstAvatarDecoration, firstProfileEffect, firstNameplate, firstProfileFrame, onSuccess, stringResult, onError];
   return obj3;
-};
+}

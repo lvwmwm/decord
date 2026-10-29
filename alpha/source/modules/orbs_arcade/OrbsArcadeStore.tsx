@@ -1,19 +1,19 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16900
+// Function ID: 16901
 // Name: OrbsArcadeStore
-// Dependencies: [32, 9483, 502, 16663, 16664, 504, 584, 2]
+// Dependencies: [32, 9514, 502, 16901, 16902, 504, 584, 2]
 
-// Module 16662 (OrbsArcadeStore)
+// Module 16900 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9483 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9514 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const orbs_arcade_game_state = tmp(16664);
+const orbs_arcade_game_state = tmp(16902);
 function handleBalanceChange(balance) {
   let tmp8;
   let tmp9;
@@ -42,9 +42,8 @@ let fetchedAt = null;
 let c4 = false;
 let orbsArcadeGames = [];
 new Map();
-new Set();
-const set1 = new Set();
-let set = set1;
+let set = new Set();
+let c8 = null;
 const map1 = new Map();
 let map = map1;
 let balance = null;
@@ -72,7 +71,7 @@ class OrbsArcadeStore extends Store {
     return set.has(id);
   }
   isLaunchingGame(id) {
-    return set.has(id);
+    return c8 === id;
   }
 }
 const prototype = OrbsArcadeStore.prototype;
@@ -97,6 +96,12 @@ Object.defineProperty(prototype, "hasFetchFailed", {
 Object.defineProperty(prototype, "orbsArcadeGames", {
   get: function orbsArcadeGames() {
     return orbsArcadeGames;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isLaunchingAnyGame", {
+  get: function isLaunchingAnyGame() {
+    return null != c8;
   },
   set: undefined
 });
@@ -225,15 +230,15 @@ let obj = {
   },
   ORBS_ARCADE_LAUNCH_GAME_BEGIN: function handleLaunchGameBegin(gameId) {
     gameId = gameId.gameId;
-    set = new Set(set);
-    set = set.add(gameId);
     map = new Map();
     balance = VirtualCurrencyStore.balance;
   },
   ORBS_ARCADE_LAUNCH_GAME_END: function handleLaunchGameEnd(gameId) {
-    gameId = gameId.gameId;
-    set = new Set(set);
-    set.delete(gameId);
+    if (c8 !== gameId.gameId) {
+      return false;
+    } else {
+      c8 = null;
+    }
   },
   VIRTUAL_CURRENCY_BALANCE_UPDATE: handleBalanceChange,
   VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS: handleBalanceChange,
@@ -244,8 +249,7 @@ let obj = {
     orbsArcadeGames = [];
     new Map();
     new Set();
-    new Set();
-    new Set();
+    c8 = null;
     new Map();
     balance = null;
     new Map();

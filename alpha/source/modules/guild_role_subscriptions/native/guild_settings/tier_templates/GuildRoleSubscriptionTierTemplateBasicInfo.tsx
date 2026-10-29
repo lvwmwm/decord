@@ -1,37 +1,33 @@
-// Module ID: 19639
-// Function ID: 19640
+// Module ID: 19873
+// Function ID: 19874
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1391, 1095, 21, 5004, 587, 558, 576, 5705, 1199, 5270, 1125, 7376, 16859, 5280, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5707, 1199, 5271, 17097, 1125, 5281, 2]
 
-// Module 19639 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 19873 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1095 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import PriceUtils from "PriceUtils" /* 7376 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16859 */;
+import FastImageDefault from "FastImage" /* 5707 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let metroImportDefault;
-let metroRequire;
+let closure_4;
+let hasOwnProperty;
 let size;
+let tmp;
+const intl2 = tmp(1125);
+const native = tmp(1199);
+const Text_Text = tmp(5271);
+const components_Button_Button = tmp(5281);
+const GuildRoleSubscriptionTypeUtils = tmp(17097);
 const View = react_native.View;
-const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
-const CurrencyCodes = Constants.CurrencyCodes;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: size };
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm };
-let closure_8 = createStyles.createStyles(obj);
+let closure_6 = createStyles.createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
   let closeActionSheet;
   let container;
@@ -43,23 +39,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   let items1;
   let items2;
   let name;
-  let obj7;
   let price_tier;
   let subscriptionPlanTextStyle;
   let tmp5;
-  let tmpResult;
-  let tmpResult2;
-  const obj = react2;
+  const tmp = require;
+  let obj = react2;
   const cResult = obj.c(37);
   template = template.template;
   const handleSelectTemplateInPreview = template.handleSelectTemplateInPreview;
   ({ subscriptionPlanTextStyle, descriptionTextStyle, closeActionSheet } = template);
   const descriptionTextProps = template.descriptionTextProps;
-  const tmp4 = closure_8();
+  const tmp4 = closure_6();
   ({ image, name, price_tier, description } = template.listings[0]);
   ({ container, header } = tmp4);
   if (cResult[0] !== image) {
-    const obj2 = { uri: image };
+    let obj2 = { uri: image };
     cResult[0] = image;
     cResult[1] = obj2;
     tmp5 = obj2;
@@ -79,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = metroRequire(native.Spacer, { size: 16 });
+      const tmp11 = React3(native.Spacer, { size: 16 });
       cResult[5] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -87,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { flexShrink: 1 };
+      let obj3 = { flexShrink: 1 };
       cResult[6] = obj3;
       tmp12 = obj3;
     } else {
@@ -95,15 +89,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { flexWrap: "wrap" };
+      let obj4 = { flexWrap: "wrap" };
       cResult[7] = obj4;
       tmp13 = obj4;
     } else {
       tmp13 = cResult[7];
     }
     if (cResult[8] !== name) {
-      const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp13, children: name };
-      const tmp16 = metroRequire(Text_Text.Text, obj5);
+      let obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp13, children: name };
+      const tmp16 = React3(Text_Text.Text, obj5);
       cResult[8] = name;
       cResult[9] = tmp16;
       tmp14 = tmp16;
@@ -112,205 +106,189 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol4 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp19 = metroRequire(native.Spacer, { size: 4 });
+      const tmp19 = React3(native.Spacer, { size: 4 });
       cResult[10] = tmp19;
       tmp17 = tmp19;
     } else {
       tmp17 = cResult[10];
     }
     if (cResult[11] !== price_tier) {
-      const intl = tmp(1125).intl;
-      const format = intl.format;
-      const obj6 = { price: tmpResult.formatPrice(price_tier, CurrencyCodes.USD), interval: tmpResult2.formatPlanInterval(obj7) };
-      const CgmBaG = tmp(1125).t.CgmBaG;
-      obj7 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-      tmpResult = PriceUtils;
-      tmpResult2 = GuildRoleSubscriptionTypeUtils;
-      const formatResult = format(CgmBaG, obj6);
+      const tmpResult = GuildRoleSubscriptionTypeUtils;
+      const result = tmpResult.formatMonthlyPriceLabel(price_tier);
       cResult[11] = price_tier;
-      cResult[12] = formatResult;
-      tmp20 = formatResult;
+      cResult[12] = result;
+      tmp20 = result;
     } else {
       tmp20 = cResult[12];
     }
     if (cResult[13] === subscriptionPlanTextStyle) {
-      let tmp24;
+      let tmp22;
       if (cResult[14] === tmp20) {
-        tmp24 = cResult[15];
+        tmp22 = cResult[15];
       }
-      if (cResult[16] === tmp24) {
-        let tmp27;
+      if (cResult[16] === tmp22) {
+        let tmp25;
         if (cResult[17] === tmp14) {
-          tmp27 = cResult[18];
+          tmp25 = cResult[18];
         }
         if (cResult[19] === tmp4.header) {
-          if (cResult[20] === tmp27) {
-            let tmp31;
+          if (cResult[20] === tmp25) {
+            let tmp29;
             if (cResult[21] === tmp6) {
-              tmp31 = cResult[22];
+              tmp29 = cResult[22];
             }
             if (cResult[23] === description) {
               if (cResult[24] === descriptionTextProps) {
-                let tmp35;
-                let tmp41;
+                let tmp33;
+                let tmp39;
                 if (cResult[25] === descriptionTextStyle) {
-                  tmp35 = cResult[26];
+                  tmp33 = cResult[26];
                 }
                 const _Symbol5 = Symbol;
                 if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl2 = tmp(1125).intl;
-                  const stringResult = intl2.string(intl3.t["1W7mCt"]);
+                  const intl = intl2.intl;
+                  const stringResult = intl.string(intl2.t["1W7mCt"]);
                   cResult[27] = stringResult;
-                  tmp41 = stringResult;
+                  tmp39 = stringResult;
                 } else {
-                  tmp41 = cResult[27];
+                  tmp39 = cResult[27];
                 }
                 if (cResult[28] === closeActionSheet) {
                   if (cResult[29] === handleSelectTemplateInPreview) {
-                    let tmp43;
+                    let tmp41;
                     if (cResult[30] === template) {
-                      tmp43 = cResult[31];
+                      tmp41 = cResult[31];
                     }
                     if (cResult[32] === tmp4.container) {
-                      if (cResult[33] === tmp31) {
-                        if (cResult[34] === tmp35) {
-                          let tmp46;
-                          if (cResult[35] === tmp43) {
-                            tmp46 = cResult[36];
+                      if (cResult[33] === tmp29) {
+                        if (cResult[34] === tmp33) {
+                          let tmp44;
+                          if (cResult[35] === tmp41) {
+                            tmp44 = cResult[36];
                           }
-                          return tmp46;
+                          return tmp44;
                         }
                       }
                     }
-                    const obj8 = { style: container, children: items };
-                    items = [tmp31, tmp35, tmp43];
-                    const tmp49 = metroImportDefault(View, obj8);
+                    const obj6 = { style: container, children: items };
+                    items = [tmp29, tmp33, tmp41];
+                    const tmp47 = hasOwnProperty(View, obj6);
                     cResult[32] = tmp4.container;
-                    cResult[33] = tmp31;
-                    cResult[34] = tmp35;
-                    cResult[35] = tmp43;
-                    cResult[36] = tmp49;
-                    tmp46 = tmp49;
+                    cResult[33] = tmp29;
+                    cResult[34] = tmp33;
+                    cResult[35] = tmp41;
+                    cResult[36] = tmp47;
+                    tmp44 = tmp47;
                   }
                 }
-                const obj9 = {
-                  text: tmp41,
+                const obj7 = {
+                  text: tmp39,
                   onPress() {
                                   return handleSelectTemplateInPreview(template, closeActionSheet);
                                 },
                   grow: true
                 };
-                const tmp45 = metroRequire(components_Button_Button.Button, obj9);
+                const tmp43 = React3(components_Button_Button.Button, obj7);
                 cResult[28] = closeActionSheet;
                 cResult[29] = handleSelectTemplateInPreview;
                 cResult[30] = template;
-                cResult[31] = tmp45;
-                tmp43 = tmp45;
+                cResult[31] = tmp43;
+                tmp41 = tmp43;
               }
             }
-            const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
-            const Text = tmp(5270).Text;
+            const obj8 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
+            const Text = Text_Text.Text;
             const merged = Object.assign(descriptionTextProps);
-            const tmp40 = metroRequire(Text, obj10);
+            const tmp38 = React3(Text, obj8);
             cResult[23] = description;
             cResult[24] = descriptionTextProps;
             cResult[25] = descriptionTextStyle;
-            cResult[26] = tmp40;
-            tmp35 = tmp40;
+            cResult[26] = tmp38;
+            tmp33 = tmp38;
           }
         }
-        const obj11 = { style: header, children: items1 };
-        items1 = [tmp6, tmp9, tmp27];
-        const tmp34 = metroImportDefault(View, obj11);
+        const tmp31 = View;
+        const obj9 = { style: header, children: items1 };
+        items1 = [tmp6, tmp9, tmp25];
+        const tmp32 = hasOwnProperty(View, obj9);
         cResult[19] = tmp4.header;
-        cResult[20] = tmp27;
+        cResult[20] = tmp25;
         cResult[21] = tmp6;
-        cResult[22] = tmp34;
-        tmp31 = tmp34;
+        cResult[22] = tmp32;
+        tmp29 = tmp32;
       }
-      const obj12 = { style: tmp12, children: items2 };
-      items2 = [tmp14, tmp17, tmp24];
-      const tmp30 = metroImportDefault(View, obj12);
-      cResult[16] = tmp24;
+      const obj10 = { style: tmp12, children: items2 };
+      items2 = [tmp14, tmp17, tmp22];
+      const tmp28 = hasOwnProperty(View, obj10);
+      cResult[16] = tmp22;
       cResult[17] = tmp14;
-      cResult[18] = tmp30;
-      tmp27 = tmp30;
+      cResult[18] = tmp28;
+      tmp25 = tmp28;
     }
-    const obj13 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: tmp20 };
-    const tmp26 = metroRequire(Text_Text.Text, obj13);
+    const obj11 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: tmp20 };
+    const tmp24 = React3(Text_Text.Text, obj11);
     cResult[13] = subscriptionPlanTextStyle;
     cResult[14] = tmp20;
-    cResult[15] = tmp26;
-    tmp24 = tmp26;
+    cResult[15] = tmp24;
+    tmp22 = tmp24;
   }
-  const obj14 = { source: tmp5, style: tmp4.image };
-  const tmp7 = metroRequire(FastImageDefault, obj14);
+  const obj12 = { source: tmp5, style: tmp4.image };
+  const tmp7 = React3(FastImageDefault, obj12);
   cResult[2] = tmp4.image;
   cResult[3] = tmp5;
   cResult[4] = tmp7;
   tmp6 = tmp7;
 }) : (function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
-  let CgmBaG;
   let closure_129_1;
   let closure_129_2;
   let description;
   let descriptionTextProps;
   let descriptionTextStyle;
-  let format;
   let image;
-  let intl2;
+  let intl;
   let items;
   let items1;
   let items2;
   let name;
   let obj6;
-  let obj7;
-  let obj8;
-  let obj9;
   let price_tier;
   let subscriptionPlanTextStyle;
   template = template.template;
   ({ handleSelectTemplateInPreview: closure_129_1, closeActionSheet: closure_129_2, descriptionTextProps } = template);
   ({ subscriptionPlanTextStyle, descriptionTextStyle } = template);
-  const tmp = closure_8();
+  const tmp = closure_6();
   const obj = { style: tmp.container, children: items2 };
   const obj2 = { style: tmp.header, children: items };
   ({ image, name, price_tier, description } = template.listings[0]);
   items = [, , ];
   const obj3 = { source: { uri: image }, style: tmp.image };
-  items[0] = metroRequire(FastImageDefault, obj3);
-  items[1] = metroRequire(native.Spacer, { size: 16 });
+  items[0] = React3(FastImageDefault, obj3);
+  items[1] = React3(native.Spacer, { size: 16 });
   const obj4 = { style: { flexShrink: 1 }, children: items1 };
-  items1 = [metroRequire(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), metroRequire(native.Spacer, { size: 4 }), ];
-  const obj5 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: format(CgmBaG, obj6) };
+  items1 = [React3(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), React3(native.Spacer, { size: 4 }), ];
+  const obj5 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: obj6.formatMonthlyPriceLabel(price_tier) };
   const Text = Text_Text.Text;
-  const intl = intl3.intl;
-  format = intl.format;
-  obj6 = { price: obj7.formatPrice(price_tier, CurrencyCodes.USD), interval: obj8.formatPlanInterval(obj9) };
-  CgmBaG = intl3.t.CgmBaG;
-  obj7 = PriceUtils;
-  obj8 = GuildRoleSubscriptionTypeUtils;
-  obj9 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-  items1[2] = metroRequire(Text, obj5);
-  items[2] = metroImportDefault(View, obj4);
-  items2 = [metroImportDefault(View, obj2), , ];
-  const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
+  obj6 = GuildRoleSubscriptionTypeUtils;
+  items1[2] = React3(Text, obj5);
+  items[2] = hasOwnProperty(View, obj4);
+  items2 = [hasOwnProperty(View, obj2), , ];
+  const obj7 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
   const Text2 = Text_Text.Text;
   const merged = Object.assign(descriptionTextProps);
-  items2[1] = metroRequire(Text2, obj10);
-  const obj11 = {
-    text: intl2.string(intl3.t["1W7mCt"]),
+  items2[1] = React3(Text2, obj7);
+  const obj8 = {
+    text: intl.string(intl2.t["1W7mCt"]),
     onPress() {
       return closure_1_1(template, closure_1_2);
     },
     grow: true
   };
   const Button = components_Button_Button.Button;
-  intl2 = intl3.intl;
-  items2[2] = metroRequire(Button, obj11);
-  return metroImportDefault(View, obj);
+  intl = intl2.intl;
+  items2[2] = React3(Button, obj8);
+  return hasOwnProperty(View, obj);
 });
 size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateBasicInfo.tsx");
 
 export const GuildRoleSubscriptionTierTemplateBasicInfo = tmp4;

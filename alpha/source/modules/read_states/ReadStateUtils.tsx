@@ -1,13 +1,13 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9116
+// Function ID: 9117
 // Name: ReadStateUtils
-// Dependencies: [6806, 6739, 6740, 558, 576, 504, 2]
+// Dependencies: [6829, 6762, 6763, 558, 576, 504, 2]
 // Exports: getHasImportantUnread
 
-// Module 9113 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 6740 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+// Module 9116 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 6763 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,8 +63,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasImpo
 });
 const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
-export const getHasImportantUnread = function getHasImportantUnread(channel) {
+export function getHasImportantUnread(channel) {
   const hasUnreadResult = ReadStateStore.hasUnread(channel.id) && UserGuildSettingsStore.resolveUnreadSetting(channel) === UnreadSetting.ALL_MESSAGES;
   return hasUnreadResult;
-};
+}
 export const useHasImportantUnread = tmp2;

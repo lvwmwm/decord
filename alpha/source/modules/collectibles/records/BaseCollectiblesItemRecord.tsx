@@ -1,9 +1,9 @@
-// Module ID: 1991
-// Function ID: 1992
+// Module ID: 1992
+// Function ID: 1993
 // Name: BaseCollectiblesItemRecord
 // Dependencies: [1404, 2]
 
-// Module 1991 (BaseCollectiblesItemRecord)
+// Module 1992 (BaseCollectiblesItemRecord)
 import Record from "Record" /* 1404 */;
 import size from "module_2" /* 2 */;
 

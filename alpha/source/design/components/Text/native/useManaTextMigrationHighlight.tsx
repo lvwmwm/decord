@@ -1,16 +1,16 @@
-// Module ID: 5272
-// Function ID: 5273
+// Module ID: 5273
+// Function ID: 5274
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 5273, 1204, 5004, 587, 558, 576, 504, 5011, 2]
+// Dependencies: [17, 5274, 1204, 5005, 587, 558, 576, 504, 5012, 2]
 // Exports: withManaTextMigrationHighlight
 
-// Module 5272 (useManaTextMigrationHighlight)
+// Module 5273 (useManaTextMigrationHighlight)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 5273 */;
+import DevSettingsStore from "DevSettingsStore" /* 5274 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ resolveSemanticColor2 = internal2.resolveSemanticColor;
 const result = size.fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlight.tsx");
 
 export const useManaTextMigrationHighlight = tmp3;
-export const withManaTextMigrationHighlight = function withManaTextMigrationHighlight(fromEntries2Result) {
+export function withManaTextMigrationHighlight(fromEntries2Result) {
   let theme;
   let proxy = fromEntries2Result;
   if (closure_6) {
@@ -152,4 +152,4 @@ export const withManaTextMigrationHighlight = function withManaTextMigrationHigh
     proxy = new Proxy(fromEntries2Result, obj);
   }
   return proxy;
-};
+}

@@ -1,20 +1,20 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12385
+// Function ID: 12386
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 5004, 12330, 587, 558, 576, 5288, 5085, 5242, 12332, 2]
+// Dependencies: [19, 17, 21, 5005, 12384, 587, 558, 576, 5289, 5086, 5243, 12386, 2]
 // Exports: conjurePublishBadgeSize
 
-// Module 12331 (ConjurePublishStatusBadge)
+// Module 12385 (ConjurePublishStatusBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 12330 */;
-import ProgressCircleDefault from "ProgressCircle" /* 12332 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 12384 */;
+import ProgressCircleDefault from "ProgressCircle" /* 12386 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,9 +38,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   let obj = sharedValue(576);
   const cResult = obj.c(12);
   const tmp4 = closure_6();
-  let obj2 = sharedValue(5288);
+  let obj2 = sharedValue(5289);
   const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BRAND);
-  const obj3 = sharedValue(5085);
+  const obj3 = sharedValue(5086);
   sharedValue = obj3.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -76,7 +76,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   fn2.__closure = { rotation: sharedValue };
   fn2.__workletHash = 16804123436708;
   fn2.__initData = __initData;
-  const tmpResult = tmp(5085);
+  const tmpResult = tmp(5086);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === animatedStyle) {
     let tmp12;
@@ -115,9 +115,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
 }) : (function ConjurePublishSpinner() {
   let sharedValue;
   const tmp = closure_6();
-  let obj = sharedValue(5288);
+  let obj = sharedValue(5289);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
-  let obj2 = sharedValue(5085);
+  let obj2 = sharedValue(5086);
   sharedValue = obj2.useSharedValue(0);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -142,7 +142,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   fn.__closure = { rotation: sharedValue };
   fn.__workletHash = 12889163918279;
   fn.__initData = __initData2;
-  const obj3 = sharedValue(5085);
+  const obj3 = sharedValue(5086);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const items1 = [tmp.spinner, animatedStyle];
   View = ReanimatedRexportDefault.View;
@@ -184,10 +184,10 @@ size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishStatusBadge.tsx");
 
 export default tmp2;
-export const conjurePublishBadgeSize = function conjurePublishBadgeSize(indicator) {
+export function conjurePublishBadgeSize(indicator) {
   let num = 12;
   if ("publishing" !== indicator) {
     num = ConjureHeaderIconButton.CONJURE_HEADER_BADGE_SIZE;
   }
   return num;
-};
+}

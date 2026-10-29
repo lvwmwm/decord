@@ -1,10 +1,10 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16802
+// Function ID: 16803
 // Name: BountiesModalConstants
 // Dependencies: [2]
 // Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekClipHeight, getBountyVideoEndPeekScale, getBountyVideoEndPeekTargetScale
 
-// Module 16564 (BountiesModalConstants)
+// Module 16802 (BountiesModalConstants)
 import size from "module_2" /* 2 */;
 
 function getBountyVideoEndPeekScale(arg0, arg1) {
@@ -22,10 +22,10 @@ getBountyVideoEndPeekClipHeight.__initData = { code: "function getBountyVideoEnd
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");
 
 export const BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS = 10000;
-export const getBountyVideoEndAppStoreSheetHeight = function getBountyVideoEndAppStoreSheetHeight(arg0) {
+export function getBountyVideoEndAppStoreSheetHeight(arg0) {
   return 0.6 * arg0;
-};
-export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTargetScale(windowHeight) {
+}
+export function getBountyVideoEndPeekTargetScale(windowHeight) {
   windowHeight = windowHeight.windowHeight;
   const videoTop = windowHeight.videoTop;
   const bound = Math.min(windowHeight.videoWidth, windowHeight.videoHeight);
@@ -36,6 +36,6 @@ export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTa
     const _Math2 = Math;
     return Math.min(1, Math.max(0.1, (windowHeight - 0.6 * windowHeight - videoTop - 8) / bound));
   }
-};
+}
 export { getBountyVideoEndPeekScale };
 export { getBountyVideoEndPeekClipHeight };

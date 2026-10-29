@@ -1,18 +1,18 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 14223
+// Function ID: 14224
 // Name: InAppNotificationUtils
-// Dependencies: [19, 13991, 1084, 12, 1278, 1382, 1101, 558, 576, 5638, 5747, 2]
+// Dependencies: [19, 14224, 1084, 12, 1278, 1382, 1101, 558, 576, 5639, 5749, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
 
-// Module 13990 (InAppNotificationUtils)
+// Module 14223 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import v1 from "v1" /* 1278 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5638 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13991 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5639 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 14224 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f120519 = (type) => type.type === constants.GIFV;
+const f122038 = (type) => type.type === constants.GIFV;
 const REACTION_MILESTONE_COUNTS = InAppNotificationConstants.REACTION_MILESTONE_COUNTS;
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: metroImportDefault, MessageEmbedTypes: metroImportAll, MessageFlags: c9 } = Constants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPreviewableMedia(hasFlag) {
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
       let everyResult = hasFlag.embeds.length > 0;
       if (everyResult) {
         let embeds = hasFlag.embeds;
-        everyResult = embeds.every(f120519);
+        everyResult = embeds.every(f122038);
       }
       hasFlagResult = everyResult;
     }
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f120519);
+              everyResult = embeds.every(f122038);
             }
             hasFlagResult = everyResult;
           }
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f120519);
+        everyResult = embeds.every(f122038);
       }
       hasFlagResult = everyResult;
     }
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f120519);
+              everyResult = embeds.every(f122038);
             }
             hasFlagResult = everyResult;
           }
@@ -125,7 +125,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
 });
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationUtils.tsx");
 
-export const isReactionMilestoneNotification = function isReactionMilestoneNotification(reactions, type) {
+export function isReactionMilestoneNotification(reactions, type) {
   if (null != type) {
     if (type !== metroRequire.GUILD_ANNOUNCEMENT) {
       const obj = _mod12;
@@ -150,20 +150,20 @@ export const isReactionMilestoneNotification = function isReactionMilestoneNotif
     }
   }
   return false;
-};
-export const generateInAppNotificationId = function generateInAppNotificationId() {
+}
+export function generateInAppNotificationId() {
   const obj = v1;
   return obj.v4();
-};
-export const getMessagePreviewTextVariant = function getMessagePreviewTextVariant() {
+}
+export function getMessagePreviewTextVariant() {
   let str = "text-md/medium";
   const obj = utils_PlatformUtils;
   if (obj.isIOS()) {
     str = "text-md/normal";
   }
   return str;
-};
-export const getNotificationDuration = function getNotificationDuration(ALERT) {
+}
+export function getNotificationDuration(ALERT) {
   if (metroImportDefault.MESSAGE !== ALERT) {
     if (metroImportDefault.MESSAGE_FAILED_TO_SEND !== ALERT) {
       if (metroImportDefault.FORUM_THREAD_CREATED !== ALERT) {
@@ -189,9 +189,9 @@ export const getNotificationDuration = function getNotificationDuration(ALERT) {
     }
   }
   return 5 * DurationsDefault.Millis.SECOND;
-};
+}
 export const useHasPreviewableMedia = tmp3;
-export const extractMetadataFromNotification = function extractMetadataFromNotification(notification) {
+export function extractMetadataFromNotification(notification) {
   let id6;
   const type = notification.type;
   if (metroImportDefault.MESSAGE !== type) {
@@ -295,8 +295,8 @@ export const extractMetadataFromNotification = function extractMetadataFromNotif
   tmp2 = type3;
   channelId = id5;
   tmp4 = id4;
-};
-export const trackDismissed = function trackDismissed(arg0) {
+}
+export function trackDismissed(arg0) {
   let channelId;
   let dismissReason;
   let guildId;
@@ -306,4 +306,4 @@ export const trackDismissed = function trackDismissed(arg0) {
   ({ guildId, channelId, type, dismissReason, inAppNotificationId, messageId } = arg0);
   const obj = AppAnalyticsUtilsDefault;
   obj.trackWithMetadata(hasOwnProperty.IN_APP_NOTIFICATION_DISMISSED, { type, guild_id: guildId, channel_id: channelId, dismiss_reason: dismissReason, in_app_notification_id: inAppNotificationId, message_id: messageId });
-};
+}

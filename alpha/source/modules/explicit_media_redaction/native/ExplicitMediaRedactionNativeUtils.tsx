@@ -1,21 +1,21 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 16622
+// Function ID: 16623
 // Name: ExplicitMediaRedactionNativeUtils
-// Dependencies: [1389, 7429, 9748, 1208, 1125, 8623, 7918, 6692, 5246, 16385, 1999, 7426, 7432, 2]
+// Dependencies: [1389, 7452, 9780, 1208, 1125, 8645, 7941, 6716, 5247, 16623, 2000, 7449, 7455, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 16384 (ExplicitMediaRedactionNativeUtils)
+// Module 16622 (ExplicitMediaRedactionNativeUtils)
 import intl4 from "intl" /* 1125 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7426 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7429 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7432 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7918 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8623 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7449 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7452 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7455 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8645 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4 = ExplicitMediaRedactionConstants.EXPLICIT_MEDIA_SETTINGS_ACTION_S
 const SearchMediaTypes = SearchConstants.SearchMediaTypes;
 let result = size.fileFinishedImporting("modules/explicit_media_redaction/native/ExplicitMediaRedactionNativeUtils.tsx");
 
-export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilterPress(arg0) {
+export function handleSensitiveMediaFilterPress(arg0) {
   let currentValue;
   let excluded;
   let intl;
@@ -99,9 +99,9 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     push3(obj3);
   }
   const obj4 = ActionSheetActionCreatorsDefault;
-  obj4.openLazy(asyncRequire(16385, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
-};
-export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
+  obj4.openLazy(asyncRequire(16623, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+}
+export function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {
     return false;
   } else {
@@ -137,4 +137,4 @@ export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMe
       return tmp2;
     }
   }
-};
+}

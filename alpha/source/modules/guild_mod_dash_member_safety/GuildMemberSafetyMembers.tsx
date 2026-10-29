@@ -1,17 +1,17 @@
-// Module ID: 7640
-// Function ID: 7641
+// Module ID: 7663
+// Function ID: 7664
 // Name: GuildMemberSafetyMembers
-// Dependencies: [1389, 4931, 7641, 7642, 7644, 7645, 7651, 5840, 2]
+// Dependencies: [1389, 4932, 7664, 7665, 7667, 7668, 7674, 5842, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7640 (GuildMemberSafetyMembers)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4931 */;
-import isEqualDefault from "isEqual" /* 5840 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7641 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7642 */;
-import SortUtils from "SortUtils" /* 7644 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7645 */;
-import isSpam from "isSpam" /* 7651 */;
+// Module 7663 (GuildMemberSafetyMembers)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4932 */;
+import isEqualDefault from "isEqual" /* 5842 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7664 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7665 */;
+import SortUtils from "SortUtils" /* 7667 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7668 */;
+import isSpam from "isSpam" /* 7674 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ class GuildMemberSafetyMembers {
       const self2 = this;
       const date = new Date(unusualDMActivityUntil);
       const time = date.getTime();
-      tmp9 = time >= closure_4 - tmp(7641).UNUSUAL_DM_COMPARISON_DELTA;
+      tmp9 = time >= closure_4 - tmp(7664).UNUSUAL_DM_COMPARISON_DELTA;
     }
     tmpResult = isSpam;
     return obj3;
@@ -237,7 +237,9 @@ Object.defineProperty(GuildMemberSafetyMembers.prototype, "version", {
   },
   set: undefined
 });
-const hasUnusualDmActivity_export = function hasUnusualDmActivity(arg0) {
+
+export { MemberSafetySecondaryIndex };
+export function hasUnusualDmActivity(arg0) {
   let tmp = null != arg0;
   if (tmp) {
     const _Date = Date;
@@ -248,8 +250,5 @@ const hasUnusualDmActivity_export = function hasUnusualDmActivity(arg0) {
     tmp = time >= closure_4 - MemberSafetyElasticSearchQueryTypes.UNUSUAL_DM_COMPARISON_DELTA;
   }
   return tmp;
-};
-
-export { MemberSafetySecondaryIndex };
-export { hasUnusualDmActivity_export as hasUnusualDmActivity };
+}
 export { GuildMemberSafetyMembers };

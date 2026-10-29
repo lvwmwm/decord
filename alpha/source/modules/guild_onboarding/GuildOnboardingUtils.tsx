@@ -1,24 +1,24 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7261
+// Function ID: 7262
 // Name: GuildOnboardingUtils
-// Dependencies: [4856, 6535, 4934, 4878, 4936, 7232, 1084, 4922, 558, 576, 504, 1402, 7238, 7233, 4941, 1385, 568, 2030, 7239, 2]
+// Dependencies: [4857, 6559, 4935, 4879, 4937, 7256, 1084, 4923, 558, 576, 504, 1402, 7262, 7257, 4942, 1385, 568, 2031, 7263, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding
 
-// Module 7237 (GuildOnboardingUtils)
+// Module 7261 (GuildOnboardingUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7232 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7233 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7238 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4935 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7256 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7257 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7262 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let _require, application_id, authStore, navigation, provider_id, set;
 
 let closure_12;
 let unpackModuleId;
-const f98596 = (isCategory) => {
+const f99611 = (isCategory) => {
   const isCategoryResult = isCategory.isCategory();
   const tmp2 = !isCategoryResult && !isCategory.isThread() && !isRoleRequiredDefault(isCategory);
   return tmp2;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f98596);
+  const found = mapped.filter(f99611);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -278,7 +278,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCo
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f98596);
+  const found = mapped.filter(f99611);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -518,7 +518,7 @@ const result = size.fileFinishedImporting("modules/guild_onboarding/GuildOnboard
 
 export const ONBOARDING_EPOCH = date;
 export const useGuildOnboardingSettingsAvailable = tmp4;
-export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSettingsAvailable(id) {
+export function isGuildOnboardingSettingsAvailable(id) {
   const guild = GuildStore.getGuild(id);
   let hasItem;
   if (guild != null) {
@@ -535,8 +535,8 @@ export const isGuildOnboardingSettingsAvailable = function isGuildOnboardingSett
     tmp4 = canResult1;
   }
   return tmp4;
-};
-export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfMember) {
+}
+export function isBlockedByOnboarding(guild, selfMember) {
   if (null != guild) {
     const features = guild.features;
     if (features.has(unpackModuleId.GUILD_ONBOARDING)) {
@@ -569,8 +569,8 @@ export const isBlockedByOnboarding = function isBlockedByOnboarding(guild, selfM
     }
   }
   return false;
-};
-export const showRulesInOnboarding = function showRulesInOnboarding(stateFromStores2, stateFromStores) {
+}
+export function showRulesInOnboarding(stateFromStores2, stateFromStores) {
   let hasItem = null != stateFromStores2;
   if (hasItem) {
     const features = stateFromStores2.features;
@@ -581,8 +581,8 @@ export const showRulesInOnboarding = function showRulesInOnboarding(stateFromSto
     hasItem = features2.has(unpackModuleId.MEMBER_VERIFICATION_GATE_ENABLED);
   }
   return !hasItem && null != stateFromStores;
-};
-export const getChannelCoverageForOnboarding = function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds) {
+}
+export function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds) {
   arr = GuildChannelStore.getChannels(guildId)[closure_7];
   const mapped = arr.map((channel) => channel.channel);
   set = new Set();
@@ -600,7 +600,7 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
     });
   });
   const item1 = defaultChannelIds.forEach((item) => set.add(item));
-  const found = mapped.filter(f98596);
+  const found = mapped.filter(f99611);
   const items = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -620,9 +620,9 @@ export const getChannelCoverageForOnboarding = function getChannelCoverageForOnb
     })
   ];
   return items;
-};
+}
 export const useChannelCoverageForOnboarding = tmp5;
-export const isChattableChannelId = function isChattableChannelId(arg0) {
+export function isChattableChannelId(arg0) {
   const channel = ChannelStore.getChannel(arg0);
   let tmp = null != channel;
   if (tmp) {
@@ -643,10 +643,10 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
     tmp = canChannelBeDefaultResult;
   }
   return tmp;
-};
+}
 export { isChattableChannel };
 export const useIsChattableChannel = tmp6;
-export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultChannelIds(arg0, arr, onboardingPromptsForOnboarding, arg3) {
+export function getMinimumSetOfDefaultChannelIds(arg0, arr, onboardingPromptsForOnboarding, arg3) {
   let closure_0 = arg0;
   let fn = arg3;
   if (arg3 === undefined) {
@@ -690,8 +690,8 @@ export const getMinimumSetOfDefaultChannelIds = function getMinimumSetOfDefaultC
     }
   });
   return tmp;
-};
-export const getChattableDefaultChannels = function getChattableDefaultChannels(arg0, arr) {
+}
+export function getChattableDefaultChannels(arg0, arr) {
   function filterChattableChannels(arr, arg1) {
     let closure_0 = arg1;
     return arr.filter((item) => {
@@ -729,21 +729,21 @@ export const getChattableDefaultChannels = function getChattableDefaultChannels(
   }
   const items = [filterChattableChannels(arr.map((id) => id.id), obj), arr];
   return items;
-};
+}
 export const useChattableDefaultChannels = tmp7;
-export const getSelectedRoleIds = function getSelectedRoleIds(found) {
+export function getSelectedRoleIds(found) {
   const mapped = found.map((roleIds) => roleIds.roleIds);
   const flatResult = mapped.flat();
   set = new Set(flatResult.filter(GlobalUtils.isNotNullish));
   return set;
-};
-export const getSelectedChannelIds = function getSelectedChannelIds(found) {
+}
+export function getSelectedChannelIds(found) {
   const mapped = found.map((channelIds) => channelIds.channelIds);
   const flatResult = mapped.flat();
   set = new Set(flatResult.filter(GlobalUtils.isNotNullish));
   return set;
-};
-export const getProviderConnectionState = function getProviderConnectionState(stateFromStores) {
+}
+export function getProviderConnectionState(stateFromStores) {
   const found = stateFromStores.filter((connection_type) => {
     let BooleanResult = connection_type.connection_type === constants.PROVIDER_CONNECTED_ACCOUNT;
     if (BooleanResult) {
@@ -768,8 +768,8 @@ export const getProviderConnectionState = function getProviderConnectionState(st
     }
   });
   return { connected, notConnected };
-};
-export const getApplicationConnectionState = function getApplicationConnectionState(stateFromStores) {
+}
+export function getApplicationConnectionState(stateFromStores) {
   let FetchState;
   const found = stateFromStores.filter((connection_type) => {
     let BooleanResult = connection_type.connection_type === constants.APPLICATION;
@@ -797,4 +797,4 @@ export const getApplicationConnectionState = function getApplicationConnectionSt
     }
   });
   return { connected, notConnected };
-};
+}

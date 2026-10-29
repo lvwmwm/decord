@@ -1,15 +1,15 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12047
+// Function ID: 12048
 // Name: ChannelListLayout
-// Dependencies: [5679, 11994, 11996, 11997, 558, 4832, 2]
+// Dependencies: [5681, 12048, 12050, 12051, 558, 4833, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle
 
-// Module 11993 (ChannelListLayout)
-import UserSettings from "UserSettings" /* 4832 */;
-import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 5679 */;
-import CozyDrawer from "CozyDrawer" /* 11994 */;
-import Compact from "Compact" /* 11996 */;
-import Cozy from "Cozy" /* 11997 */;
+// Module 12047 (ChannelListLayout)
+import UserSettings from "UserSettings" /* 4833 */;
+import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 5681 */;
+import CozyDrawer from "CozyDrawer" /* 12048 */;
+import Compact from "Compact" /* 12050 */;
+import Cozy from "Cozy" /* 12051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function getLayoutStyles(layout, launchpad) {
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
     if (ChannelListLayoutTypes2.ChannelListLayoutTypes.MINIMAL !== layout) {
-      const COZY = tmp(5679).ChannelListLayoutTypes.COZY;
+      const COZY = tmp(5681).ChannelListLayoutTypes.COZY;
     }
     const tmpResult2 = Cozy;
     return flag ? tmpResult2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult2.CHANNEL_LIST_STYLES_COZY;
@@ -45,9 +45,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
   if (tmp4) {
     COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(5679).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(5681).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(5679).ChannelListLayoutTypes.COZY;
+    COZY = tmp(5681).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 }) : (function useMessagesTabLayout(arg0) {
@@ -59,9 +59,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
   if (tmp4) {
     COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(5679).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(5681).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(5679).ChannelListLayoutTypes.COZY;
+    COZY = tmp(5681).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 });
@@ -74,12 +74,12 @@ export function makeSizeStyle(size) {
   return size;
 }
 export { isLayoutCompact };
-export const isLayoutCozy = function isLayoutCozy(messagesTabLayout) {
+export function isLayoutCozy(messagesTabLayout) {
   const tmp3 = messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER || messagesTabLayout === ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   return tmp3;
-};
+}
 export const useMessagesTabLayout = tmp2;
-export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0, layout) {
+export function getScaledChannelRowHeight(arg0, layout) {
   let marginVertical;
   let paddingVertical;
   let flag = arg2;
@@ -107,4 +107,4 @@ export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0
     num = 4;
   }
   return sum + result + num;
-};
+}

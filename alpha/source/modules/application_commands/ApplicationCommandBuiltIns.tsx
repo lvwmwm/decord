@@ -1,27 +1,27 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9724
+// Function ID: 9725
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4856, 4936, 1389, 6019, 1084, 9693, 4918, 5009, 5670, 1125, 9694, 1997, 4832, 9695, 9696, 7406, 9697, 1105, 9698, 7601, 7790, 6866, 5058, 1101, 12840, 2046, 7448, 38, 7385, 14293, 2]
+// Dependencies: [5, 4857, 4937, 1389, 6023, 1084, 9725, 4919, 5010, 5672, 1125, 9726, 1998, 4833, 9727, 9728, 7429, 9729, 1105, 9730, 7624, 7812, 6889, 5059, 1101, 13061, 2047, 7471, 38, 7408, 14527, 2]
 // Exports: getBuiltInCommands
 
-// Module 9692 (ApplicationCommandBuiltIns)
-import Server from "Server" /* 1997 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4918 */;
-import MessageConstants from "MessageConstants" /* 5009 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5670 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7385 */;
-import ThreadHooks from "ThreadHooks" /* 7406 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9694 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9695 */;
+// Module 9724 (ApplicationCommandBuiltIns)
+import Server from "Server" /* 1998 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4919 */;
+import MessageConstants from "MessageConstants" /* 5010 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7408 */;
+import ThreadHooks from "ThreadHooks" /* 7429 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9726 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9727 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
-import DiceRollConstants from "DiceRollConstants" /* 9693 */;
+import DiceRollConstants from "DiceRollConstants" /* 9725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1383,7 +1383,7 @@ const obj32 = {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -1426,7 +1426,7 @@ const obj32 = {
               const obj7 = tmp(c2[21]);
               sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp8) {
             c3 = 3;
@@ -1624,7 +1624,7 @@ export const PLATFORM_COMMANDS = application_commands_ApplicationCommandBuiltIns
 export const BUILT_IN_SECTIONS = obj;
 export const BUILT_IN_COMMANDS = items;
 export const BUILT_IN_COMMANDS_ORIGINAL = found;
-export const getBuiltInCommands = function getBuiltInCommands(commandTypes, arg1, arg2) {
+export function getBuiltInCommands(commandTypes, arg1, arg2) {
   let closure_1;
   let enabled;
   importDefault = arg2;
@@ -1649,4 +1649,4 @@ export const getBuiltInCommands = function getBuiltInCommands(commandTypes, arg1
     }
     return hasItem;
   });
-};
+}

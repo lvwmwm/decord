@@ -11,7 +11,7 @@ let _null, c2;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const safeDateNow = function safeDateNow() {
+export function safeDateNow() {
   let timestamp1;
   const fn = () => Date.now();
   if (undefined !== c2) {
@@ -38,8 +38,8 @@ export const safeDateNow = function safeDateNow() {
     timestamp1 = Date.now();
   }
   return timestamp1;
-};
-export const safeMathRandom = function safeMathRandom() {
+}
+export function safeMathRandom() {
   let random1;
   const fn = () => Math.random();
   if (undefined !== c2) {
@@ -66,8 +66,8 @@ export const safeMathRandom = function safeMathRandom() {
     random1 = Math.random();
   }
   return random1;
-};
-export const withRandomSafeContext = function withRandomSafeContext(fn) {
+}
+export function withRandomSafeContext(fn) {
   if (undefined !== _null) {
     return _null ? _null(fn) : fn();
   } else {
@@ -85,4 +85,4 @@ export const withRandomSafeContext = function withRandomSafeContext(fn) {
     _null = null;
     tmp8Result = fn();
   }
-};
+}

@@ -1,17 +1,17 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2019
+// Function ID: 2020
 // Name: RunningGameStore
-// Dependencies: [2019, 2036, 2040, 15559, 504, 11240, 584, 2]
+// Dependencies: [2020, 2037, 2041, 15795, 504, 11294, 584, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 2018 (RunningGameStore)
+// Module 2019 (RunningGameStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SocialSdkGameResolver from "SocialSdkGameResolver" /* 11240 */;
-import OverlayTypes from "OverlayTypes" /* 15559 */;
-import GameStore from "GameStore" /* 2019 */;
-import DetectableGameStore from "DetectableGameStore" /* 2036 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2040 */;
+import SocialSdkGameResolver from "SocialSdkGameResolver" /* 11294 */;
+import OverlayTypes from "OverlayTypes" /* 15795 */;
+import GameStore from "GameStore" /* 2020 */;
+import DetectableGameStore from "DetectableGameStore" /* 2037 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2041 */;
 import size from "module_2" /* 2 */;
 
 const Store = get_initializedDefault.Store;
@@ -137,21 +137,21 @@ export default runningGameStore;
 export function gameKey() {
   return "";
 }
-export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
+export function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
     const items = [DetectableGameStore, LibraryApplicationStore, GameStore];
   }
   const obj = { source: OverlayTypes.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: OverlayTypes.OverlayMethod.Disabled, reason: "Dummy implementation" };
   return obj;
-};
+}
 export function isDetectionEnabled() {
   return false;
 }
 export function maybeTransformSubgame(arg0) {
   return arg0;
 }
-export const transformForGameSettings = function transformForGameSettings(arg0) {
+export function transformForGameSettings(arg0) {
   const obj = { played: "", overlay: false, verified: false, detectable: false };
   const merged = Object.assign(arg0);
   return obj;
-};
+}

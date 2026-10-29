@@ -1,25 +1,25 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13556
+// Function ID: 13557
 // Name: ChatInputCommandOptionParser
-// Dependencies: [32, 17, 5005, 6760, 4910, 4936, 1084, 6020, 1392, 12553, 4954, 12028, 2029, 2030, 8107, 8536, 10146, 4832, 587, 5640, 2]
+// Dependencies: [32, 17, 5006, 6783, 4911, 4937, 1084, 6024, 1392, 12608, 4955, 12082, 2030, 2031, 8130, 8558, 10179, 4833, 587, 5641, 2]
 // Exports: formatTimestampPillText, getChannelHighlightNodes, getCommandOptionValueEnd, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getTimestampHighlightNodes, getTimestampMentionInputNodes, getUsernameHighlightNodes, serializeComposerGameMentions, serializeComposerTimestampMentions, uniqueTimestampPillText
 
-// Module 13323 (ChatInputCommandOptionParser)
+// Module 13556 (ChatInputCommandOptionParser)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2029 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12028 */;
-import ChatInputParser from "ChatInputParser" /* 12553 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12082 */;
+import ChatInputParser from "ChatInputParser" /* 12608 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault = tmp(8107);
+const AssetRegistryDefault = tmp(8130);
 function findTokenLocations(arr, arg1, fn) {
   const items = [];
   let index = arr.indexOf(arg1);
@@ -293,7 +293,7 @@ export const getMatchedOptionsWithValue = function(length2, activeCommand) {
   return [];
 };
 export { getMatchedOptions };
-export const getCommandOptionValueEnd = function getCommandOptionValueEnd(c22, sum, activeCommand) {
+export function getCommandOptionValueEnd(c22, sum, activeCommand) {
   let length;
   let closure_0 = sum;
   const obj = { activeCommand };
@@ -305,7 +305,7 @@ export const getCommandOptionValueEnd = function getCommandOptionValueEnd(c22, s
     length = c22.length;
   }
   return length;
-};
+}
 export const getTextBeforeFirstOption = (arr) => {
   let substr;
   re15.lastIndex = 0;
@@ -318,7 +318,7 @@ export const getTextBeforeFirstOption = (arr) => {
   }
   return obj;
 };
-export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, arg1) {
+export function getEmojiHighlightNodes(channel, arg1) {
   if (0 === arg1.length) {
     return [];
   } else {
@@ -349,34 +349,34 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
     }
     return items;
   }
-};
-export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
-  const f161914 = (text) => _require(text.text) === closure_0;
+}
+export function getUsernameHighlightNodes(channel, arg1) {
+  const f163586 = (text) => _require(text.text) === closure_0;
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f117984 = (arg0) => arg0;
+  const f119503 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
     do {
       let str = match[1];
       let closure_0 = str.trim();
-      if (null != users.find(f161914)) {
+      if (null != users.find(f163586)) {
         let obj3 = { location: match.index, length: match[0].length };
         let arr = items.push(obj3);
       }
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f117985 = (arg0) => arg0.split("#")[0];
+  const f119504 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {
     do {
       let str2 = match1[1];
       closure_0 = str2.trim();
-      if (null != users.find(f161914)) {
+      if (null != users.find(f163586)) {
         let obj5 = { location: match1.index, length: match1[0].length };
         let arr2 = items.push(obj5);
       }
@@ -384,9 +384,9 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
     } while (null != match1);
   }
   return items;
-};
+}
 export { findGameMentionTokens };
-export const serializeComposerGameMentions = function serializeComposerGameMentions(text, mentionGames) {
+export function serializeComposerGameMentions(text, mentionGames) {
   let items = [];
   const values = mentionGames.values();
   for (const item10008 of values) {
@@ -430,9 +430,9 @@ export const serializeComposerGameMentions = function serializeComposerGameMenti
     continue;
   }
   return closure_1;
-};
+}
 export { buildGameMentionResult };
-export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames, text) {
+export function getGameHighlightNodes(mentionGames, text) {
   let icon;
   let iconCornerRadius;
   let iconSize;
@@ -463,12 +463,12 @@ export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames
     continue;
   }
   return items1;
-};
+}
 export const TIMESTAMP_PILL_SENTINEL = "\u2060";
-export const formatTimestampPillText = function formatTimestampPillText(formatted) {
+export function formatTimestampPillText(formatted) {
   return "\u2060" + formatted;
-};
-export const uniqueTimestampPillText = function uniqueTimestampPillText(mentionTimestamps, arg1, timestamp) {
+}
+export function uniqueTimestampPillText(mentionTimestamps, arg1, timestamp) {
   const value = mentionTimestamps.get(arg1);
   let tmp2 = arg1;
   if (null != value) {
@@ -496,9 +496,9 @@ export const uniqueTimestampPillText = function uniqueTimestampPillText(mentionT
     }
   }
   return tmp2;
-};
+}
 export { findAllTimestampPillMatches };
-export const serializeComposerTimestampMentions = function serializeComposerTimestampMentions(text, mentionTimestamps) {
+export function serializeComposerTimestampMentions(text, mentionTimestamps) {
   const arr = findAllTimestampPillMatches(mentionTimestamps, text);
   const sorted = arr.sort((location, location2) => location2.location - location.location);
   return arr.reduce((arr, pillText) => {
@@ -511,12 +511,12 @@ export const serializeComposerTimestampMentions = function serializeComposerTime
     const sum = substr + obj.unparseTimestamp(mention.timestamp, mention.format);
     return sum + arr.slice(_location + pillText.length);
   }, text);
-};
-export const getTimestampHighlightNodes = function getTimestampHighlightNodes(mentionTimestamps, text) {
+}
+export function getTimestampHighlightNodes(mentionTimestamps, text) {
   const arr = findAllTimestampPillMatches(mentionTimestamps, text);
   return arr.map((location) => ({ location: location.location, length: location.pillText.length }));
-};
-export const getTimestampMentionInputNodes = function getTimestampMentionInputNodes(arr) {
+}
+export function getTimestampMentionInputNodes(arr) {
   let length;
   _require = closure_11;
   const items = [];
@@ -531,8 +531,8 @@ export const getTimestampMentionInputNodes = function getTimestampMentionInputNo
     } while (-1 !== index);
   }
   return items.map((location) => ({ location, length: length.length }));
-};
-export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
+}
+export function getGameMentionInputNodes(arr) {
   let length;
   const IncludeGameMentionsInAutocomplete = require("UserSettings").IncludeGameMentionsInAutocomplete;
   const items = [];
@@ -552,7 +552,7 @@ export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
   } else {
     return items;
   }
-};
+}
 export const getRoleHighlightNodes = (getGuildId, arg1) => {
   let roleStyle;
   const items = [];
@@ -625,7 +625,7 @@ export const getRoleHighlightNodes = (getGuildId, arg1) => {
     return items;
   }
 };
-export const getSilentHighlightNodes = function getSilentHighlightNodes(arg0) {
+export function getSilentHighlightNodes(arg0) {
   const items = [];
   const match = re21.exec(arg0);
   if (null != match) {
@@ -633,8 +633,8 @@ export const getSilentHighlightNodes = function getSilentHighlightNodes(arg0) {
     items.push(obj);
   }
   return items;
-};
-export const getChannelHighlightNodes = function getChannelHighlightNodes(channel, arg1) {
+}
+export function getChannelHighlightNodes(channel, arg1) {
   let _loop5Result;
   let closure_2;
   _require = arg1;
@@ -700,4 +700,4 @@ export const getChannelHighlightNodes = function getChannelHighlightNodes(channe
     } while (!_loop5Result);
   }
   return items;
-};
+}

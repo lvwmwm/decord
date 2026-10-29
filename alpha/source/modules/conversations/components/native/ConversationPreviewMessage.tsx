@@ -1,19 +1,19 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9837
+// Function ID: 9838
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 5005, 4916, 21, 8165, 8646, 5004, 587, 558, 576, 504, 6025, 8352, 4832, 4829, 1199, 5270, 9806, 2]
+// Dependencies: [19, 17, 5006, 4917, 21, 8188, 8668, 5005, 587, 558, 576, 504, 6029, 8374, 4833, 4830, 1199, 5271, 9838, 2]
 
-// Module 9805 (ConversationPreviewMessage)
+// Module 9837 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DateUtils from "DateUtils" /* 4829 */;
-import RowGeneratorDefault from "RowGenerator" /* 8165 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8646 */;
+import DateUtils from "DateUtils" /* 4830 */;
+import RowGeneratorDefault from "RowGenerator" /* 8188 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8668 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,22 +82,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     }
     const tmpResult6 = message(504);
     const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp11, tmp12);
-    const tmpResult7 = message(6025);
+    const tmpResult7 = message(6029);
     const name = tmpResult7.useName(guildId, channelId, message.author);
     if (cResult[7] === stateFromStores1) {
       if (cResult[8] === stateFromStores) {
         tmp15 = cResult[9];
       }
       let colorStrings;
-      const useProcessColorStringsArray = message(8352).useProcessColorStringsArray;
-      message(8352);
+      const useProcessColorStringsArray = message(8374).useProcessColorStringsArray;
+      message(8374);
       if (stateFromStores1 != null) {
         colorStrings = stateFromStores1.colorStrings;
       }
       const processColorStringsArray = useProcessColorStringsArray(colorStrings);
-      const tmpResult9 = message(8352);
+      const tmpResult9 = message(8374);
       const isRoleStyleAndRoleColorsEligibleForERC = tmpResult9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, message.author.id, stateFromStores, processColorStringsArray);
-      const TimestampHourCycle = tmp(4832).TimestampHourCycle;
+      const TimestampHourCycle = tmp(4833).TimestampHourCycle;
       const setting = TimestampHourCycle.useSetting();
       if (cResult[10] === setting) {
         let tmp28;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                             }
                             if (cResult[35] !== message) {
                               const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };
-                              const tmp57 = closure_7(guildId(9806), obj2);
+                              const tmp57 = closure_7(guildId(9838), obj2);
                               cResult[35] = message;
                               cResult[36] = tmp57;
                               tmp52 = tmp57;
@@ -183,7 +183,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                       tmp48 = tmp51;
                     }
                     const obj5 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp4.headerTimestamp, children: tmp28 };
-                    const tmp47 = closure_7(message(5270).Text, obj5);
+                    const tmp47 = closure_7(message(5271).Text, obj5);
                     cResult[27] = tmp4.headerTimestamp;
                     cResult[28] = tmp28;
                     cResult[29] = tmp47;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
               }
             }
             const obj7 = { variant: "text-md/medium", lineClamp: 1, style: tmp15, gradientColors: tmp37, children: name };
-            const tmp40 = closure_7(message(5270).Text, obj7);
+            const tmp40 = closure_7(message(5271).Text, obj7);
             cResult[19] = tmp15;
             cResult[20] = name;
             cResult[21] = tmp37;
@@ -234,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
         cResult[15] = tmp32;
         tmp30 = tmp32;
       }
-      const tmpResult10 = message(4829);
+      const tmpResult10 = message(4830);
       const calendarFormatResult = tmpResult10.calendarFormat(message.timestamp, true, setting);
       cResult[10] = setting;
       cResult[11] = message.timestamp;

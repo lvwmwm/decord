@@ -1,15 +1,15 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 10993
+// Function ID: 10994
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [5304, 1630, 1496, 5632, 558, 576, 2]
+// Dependencies: [5305, 1631, 1497, 5633, 558, 576, 2]
 // Exports: getKeyboardActionSheetHeight
 
-// Module 10958 (useKeyboardActionSheetHeight)
+// Module 10993 (useKeyboardActionSheetHeight)
 import react from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 5304 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5632 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1631 */;
+import NavigatorConstants from "NavigatorConstants" /* 5305 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5633 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,11 +40,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardA
       return tmp9;
     }
   }
-  const bound = Math.max(0, tmp7.height - tmp(5304).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
+  const bound = Math.max(0, tmp7.height - tmp(5305).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
   let bound1 = Math.min(tmp8, bound);
   if (bound1 >= bound) {
     const _Math = Math;
-    bound1 = Math.max(0, bound - tmp(5304).NAV_BAR_HEIGHT_MULTILINE);
+    bound1 = Math.max(0, bound - tmp(5305).NAV_BAR_HEIGHT_MULTILINE);
   }
   const obj3 = { minimum: bound1, maximum: bound };
   cResult[1] = tmp8;
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardA
 const result = size.fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 
 export default tmp2;
-export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeight() {
+export function getKeyboardActionSheetHeight() {
   const obj = useSafeAreaInsets;
   const safeAreaInsets = obj.getSafeAreaInsets();
   const obj2 = useWindowDimensions;
@@ -81,4 +81,4 @@ export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeigh
     minimum = Math.max(0, maximum - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE);
   }
   return { minimum, maximum };
-};
+}

@@ -1,17 +1,17 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14986
+// Function ID: 14987
 // Name: CollectiblesRecommendationUtils
 // Dependencies: [2]
 // Exports: reorderCollectiblesByRecommendation
 
-// Module 14751 (CollectiblesRecommendationUtils)
+// Module 14986 (CollectiblesRecommendationUtils)
 import size from "module_2" /* 2 */;
 
 let map;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesRecommendationUtils.tsx");
 
-export const reorderCollectiblesByRecommendation = function reorderCollectiblesByRecommendation(items, arr) {
+export function reorderCollectiblesByRecommendation(items, arr) {
   if (items.length > 1) {
     if (0 !== arr.length) {
       const _Map = Map;
@@ -44,4 +44,4 @@ export const reorderCollectiblesByRecommendation = function reorderCollectiblesB
     }
   }
   return items;
-};
+}

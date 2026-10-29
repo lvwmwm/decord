@@ -1,19 +1,19 @@
-// Module ID: 12199
-// Function ID: 12200
+// Module ID: 12253
+// Function ID: 12254
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 4878, 4936, 6808, 1084, 6809, 3863, 12200, 12201, 12203, 10842, 12204, 1125, 504, 9006, 10757, 2]
+// Dependencies: [5, 32, 19, 4879, 4937, 6831, 1084, 6832, 3864, 12254, 12255, 12257, 10918, 12258, 1125, 504, 9009, 10832, 2]
 // Exports: default
 
-// Module 12199 (useConjurePublishPanel)
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9006 */;
+// Module 12253 (useConjurePublishPanel)
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore_mod from "PermissionStore" /* 4936 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore_mod from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -26,15 +26,15 @@ let _slicedToArray = _slicedToArray_mod;
 let PermissionStore = PermissionStore_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: c9, Permissions: c10 } = Constants);
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3863.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3864.UnoAgo];
 let items1 = [items, , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3863["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3864["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3863.gXY1x1];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3864.gXY1x1];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3863.Q9ruoM];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3864.Q9ruoM];
 items1[3] = items4;
-let obj = { screen_capture: _modDef3863["8/7kE7"], connect_user_to_voice: _modDef3863.uvDWXa };
+let obj = { screen_capture: _modDef3864["8/7kE7"], connect_user_to_voice: _modDef3864.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {
@@ -46,16 +46,18 @@ export default function useConjurePublishPanel(id, guildId) {
   let found;
   let guild;
   let guild_id;
-  let intl5;
+  let intl3;
   let items;
   let liveDescription;
   let liveName;
   let memberCount;
   let saving;
   let str;
+  let stringResult;
   let tmp19;
   let tmp20;
   let tmp25;
+  let tmp27;
   let tmp7;
   _require = id;
   let obj = function _save() {
@@ -73,7 +75,7 @@ export default function useConjurePublishPanel(id, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -239,10 +241,12 @@ export default function useConjurePublishPanel(id, guildId) {
       return obj;
     }),
     devicePermissions: items4,
-    note: null,
-    sharing: null,
-    saving: null,
-    save: null
+    note: stringResult,
+    sharing: tmp27,
+    saving,
+    save() {
+      return obj(...arguments);
+    }
   };
   const stateFromStores = obj4.useStateFromStores(items2, () => {
     let guild = null;
@@ -278,45 +282,35 @@ export default function useConjurePublishPanel(id, guildId) {
   if (!tmp10) {
     items4 = [];
   }
+  stringResult = null;
   if (tmp10) {
+    stringResult = null;
     if ("user" !== id.install_scope) {
-      let combined;
-      let tmp29;
+      stringResult = null;
       if (items.includes(require("ConjureProjectTypes").ConjureSupportedSurface.AUTOMOD)) {
-        const intl3 = tmp23(tmp2[14]).intl;
-        const stringResult = intl3.string(tmp(tmp2[8])["+VqXVO"]);
-        const intl4 = tmp23(tmp2[14]).intl;
-        const _HermesInternal = HermesInternal;
-        combined = "" + stringResult + " " + intl4.string(tmp(tmp2[8]).bljqPk);
+        const intl2 = tmp23(tmp2[14]).intl;
+        stringResult = intl2.string(tmp(tmp2[8]).bljqPk);
       }
-      obj5.note = combined;
-      if (null != guild) {
-        const obj7 = { guild, caption: formatToPlainStringResult };
-        formatToPlainStringResult = null;
-        if (null != memberCount) {
-          const intl6 = tmp23(tmp2[14]).intl;
-          const obj8 = { count: memberCount };
-          formatToPlainStringResult = intl6.formatToPlainString(tmp(tmp2[8]).ZpZxK9, obj8);
-        }
-        tmp29 = obj7;
-      } else {
-        tmp29 = null;
-        if ("user" === id.install_scope) {
-          const obj9 = { guild: null, caption: intl5.string(tmp(tmp2[8]).RUhWLH) };
-          intl5 = tmp23(tmp2[14]).intl;
-          tmp29 = obj9;
-        }
-      }
-      obj5.sharing = tmp29;
-      obj5.saving = saving;
-      obj5.save = function save() {
-        return obj(...arguments);
-      };
-      return obj5;
     }
   }
-  const intl2 = tmp23(tmp2[14]).intl;
-  combined = intl2.string(tmp(tmp2[8])["+VqXVO"]);
+  if (null != guild) {
+    const obj7 = { guild, caption: formatToPlainStringResult };
+    formatToPlainStringResult = null;
+    if (null != memberCount) {
+      const intl4 = tmp23(tmp2[14]).intl;
+      const obj8 = { count: memberCount };
+      formatToPlainStringResult = intl4.formatToPlainString(tmp(tmp2[8]).ZpZxK9, obj8);
+    }
+    tmp27 = obj7;
+  } else {
+    tmp27 = null;
+    if ("user" === id.install_scope) {
+      const obj9 = { guild: null, caption: intl3.string(tmp(tmp2[8]).RUhWLH) };
+      intl3 = tmp23(tmp2[14]).intl;
+      tmp27 = obj9;
+    }
+  }
+  return obj5;
 };
 export const CONJURE_PUBLISH_COMPONENTS = items1;
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

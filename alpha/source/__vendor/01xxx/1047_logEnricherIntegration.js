@@ -5,7 +5,7 @@
 // Exports: logEnricherIntegration
 
 // Module 1047 (logEnricherIntegration)
-let attributes, c4, c5, closure_2;
+let attributes, c4, c5, closure_2, version;
 
 const fn = this && this.__awaiter || ((arg0, arg1, arg2, arg3) => {
   let closure_0 = arg0;
@@ -98,7 +98,7 @@ export const logEnricherIntegration = () => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -229,7 +229,7 @@ export const logEnricherIntegration = () => {
         });
         promise.then(() => {
           on.on("beforeCaptureLog", (attributes) => {
-            const f88282 = (item) => {
+            const f89289 = (item) => {
               let tmp2 = typeof tmp !== "string";
               if (typeof attributes3[item] !== "string") {
                 tmp2 = typeof tmp !== "number";
@@ -267,7 +267,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object = Object;
                   const keys = Object.keys(attributes1);
-                  const item = keys.forEach(f88282);
+                  const item = keys.forEach(f89289);
                 }
               }
               const tmpResult = tmp(tmp2[0]);
@@ -290,7 +290,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object2 = Object;
                   const keys1 = Object.keys(attributes2);
-                  const item1 = keys1.forEach(f88282);
+                  const item1 = keys1.forEach(f89289);
                 }
               }
               const tmpResult2 = tmp(tmp2[0]);
@@ -313,7 +313,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object3 = Object;
                   const keys2 = Object.keys(attributes3);
-                  const item2 = keys2.forEach(f88282);
+                  const item2 = keys2.forEach(f89289);
                 }
               }
               const _Object4 = Object;
@@ -359,7 +359,7 @@ export const logEnricherIntegration = () => {
               if (!tmp27) {
                 attributes["os.name"] = os;
               }
-              const version = closure_2_3.version;
+              version = closure_2_3.version;
               let tmp30 = null == version;
               if (!tmp30) {
                 tmp30 = attributes["os.version"] && false;

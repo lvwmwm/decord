@@ -1,29 +1,29 @@
-// Module ID: 18756
-// Function ID: 18757
+// Module ID: 18989
+// Function ID: 18990
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 4855, 5645, 1095, 21, 5004, 587, 558, 576, 1630, 5085, 18753, 18757, 5070, 5333, 504, 7293, 18758, 18762, 18763, 18652, 18748, 2]
+// Dependencies: [32, 19, 17, 4856, 5646, 1095, 21, 5005, 587, 558, 576, 1631, 5086, 18986, 18990, 5071, 5334, 504, 7317, 18991, 18995, 18996, 18886, 18981, 2]
 
-// Module 18756 (ActivityPanelHeader)
+// Module 18989 (ActivityPanelHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7293 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 18652 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18748 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 18757 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 18758 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 18762 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7317 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 18886 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 18981 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 18990 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 18991 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 18995 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -121,12 +121,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
                   return;
                 }
               }
-              T.__closure = { runOnJS: setMode(5085).runOnJS, setMode, ActivityPanelModes };
+              T.__closure = { runOnJS: setMode(5086).runOnJS, setMode, ActivityPanelModes };
               T.__workletHash = 14504167937928;
               T.__initData = __initData;
               cResult[13] = setMode;
               cResult[14] = T;
-              const obj3 = { runOnJS: setMode(5085).runOnJS, setMode, ActivityPanelModes };
+              const obj3 = { runOnJS: setMode(5086).runOnJS, setMode, ActivityPanelModes };
             } else {
               class T {
                 constructor() {
@@ -148,8 +148,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
             cResult[15] = tmp11;
             cResult[16] = pipState;
             cResult[17] = wrapperOffset;
-            cResult[18] = { mode: setMode(18753).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
-            const obj4 = { mode: setMode(18753).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            cResult[18] = { mode: setMode(18986).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            const obj4 = { mode: setMode(18986).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
           }
         }
         const items1 = [tmp4.panelHeader, panelLandscape, tmp9];
@@ -178,7 +178,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
   ({ wrapperOffset, pipState } = landscape);
   const tmp = closure_14();
   dependencyMap = tmp;
-  const tmp2 = setMode(1630)();
+  const tmp2 = setMode(1631)();
   let closure_3 = tmp2;
   let items = [landscape];
   const items1 = [landscape, tmp2, , ];
@@ -195,7 +195,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
     const obj = ReanimatedRexport;
     obj.runOnJS(setMode)(constants.PIP);
   };
-  let obj = { runOnJS: landscape(5085).runOnJS, setMode, ActivityPanelModes };
+  let obj = { runOnJS: landscape(5086).runOnJS, setMode, ActivityPanelModes };
   const memo1 = react.useMemo(() => {
     let num2;
     let num3;
@@ -233,8 +233,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
   const items2 = [setMode];
   const obj2 = { gesture: tmp6(obj3), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(fn, items2);
-  obj3 = { mode: landscape(18753).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  tmp6 = setMode(18753);
+  obj3 = { mode: landscape(18986).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  tmp6 = setMode(18986);
   return obj2;
 });
 let closure_17 = tmp7;
@@ -287,7 +287,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivity
               tmp5 = tmp23;
             }
             const obj2 = { theme: ThemeTypes.DARK, children: authStore2(LegacyBaseButton.GestureDetector, obj3) };
-            const ThemeContextProvider = tmp(5070).ThemeContextProvider;
+            const ThemeContextProvider = tmp(5071).ThemeContextProvider;
             obj3 = { gesture, children: tmp19 };
             const tmp26 = authStore2(ThemeContextProvider, obj2);
             cResult[11] = gesture;
@@ -464,7 +464,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
               let tmp34 = null != applicationId;
               if (tmp34) {
                 const obj3 = { applicationId };
-                tmp34 = authStore2(tmp16(18763), obj3);
+                tmp34 = authStore2(tmp16(18996), obj3);
               }
               cResult[18] = applicationId;
               cResult[19] = tmp34;
@@ -617,7 +617,7 @@ let closure_20 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(18763), obj5);
+    tmp8Result2 = tmp8(tmp5(18996), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;

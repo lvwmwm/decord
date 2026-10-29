@@ -1,28 +1,28 @@
-// Module ID: 6697
-// Function ID: 6698
+// Module ID: 6721
+// Function ID: 6722
 // Name: AgeGateUtils
-// Dependencies: [4874, 4856, 6698, 4878, 4907, 1389, 1109, 1084, 1125, 11, 558, 576, 5680, 6694, 6699, 6689, 504, 6688, 6692, 2064, 6702, 6716, 6717, 2]
+// Dependencies: [4875, 4857, 6722, 4879, 4908, 1389, 1109, 1084, 1125, 11, 558, 576, 5682, 6718, 6723, 6713, 504, 6712, 6716, 2065, 6726, 6739, 6740, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, userNeedsAgeGate
 
-// Module 6697 (AgeGateUtils)
+// Module 6721 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl15 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import GuildRecord from "GuildRecord" /* 4874 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5680 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6688 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6689 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6692 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6694 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6702 */;
-import NSFWContentGate from "NSFWContentGate" /* 6716 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6717 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6698 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import GuildRecord from "GuildRecord" /* 4875 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6712 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6726 */;
+import NSFWContentGate from "NSFWContentGate" /* 6739 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6740 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6722 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
 import AgeGateConstants from "AgeGateConstants" /* 1109 */;
 import Constants from "Constants" /* 1084 */;
@@ -35,7 +35,7 @@ let _require;
 let GuildNSFWContentLevel;
 let tmp;
 let unpackModuleId;
-const getTinyBroncoWarningDescriptions = tmp(6699);
+const getTinyBroncoWarningDescriptions = tmp(6723);
 function getLargeGuildUnderageContent(isAgeVerified) {
   let string2Result;
   let stringResult;
@@ -1101,7 +1101,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannel
   const tmpResult4 = require("get initialized");
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp12, tmp13);
   const tmpResult5 = require("RegionalFeatureConfigUtils");
-  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(6694).AgeGatedFeature.AGE_GATED_SPACES);
+  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(6718).AgeGatedFeature.AGE_GATED_SPACES);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [];
     class S {
@@ -1379,7 +1379,7 @@ function isCurrentUserMissingDateOfBirth() {
 let result = size.fileFinishedImporting("modules/age_gate/AgeGateUtils.tsx");
 
 export const SERVER_AGE_GATE_SOURCES = set;
-export const userNeedsAgeGate = function userNeedsAgeGate() {
+export function userNeedsAgeGate() {
   const currentUser = UserStore.getCurrentUser();
   let tmp2 = null != currentUser;
   if (tmp2) {
@@ -1391,17 +1391,17 @@ export const userNeedsAgeGate = function userNeedsAgeGate() {
     tmp2 = null == currentUser.nsfwAllowed;
   }
   return tmp2;
-};
-export const guildNeedsAgeGate = function guildNeedsAgeGate(nsfwLevel) {
+}
+export function guildNeedsAgeGate(nsfwLevel) {
   return items.includes(nsfwLevel.nsfwLevel);
-};
+}
 export const useAgeGateVerifyContentForGuild = tmp6;
 export const useAgeGateVerifyContent = tmp7;
 export { shouldShowAgeGateForCurrentUser };
 export { shouldShowAgeGateForGuildContentLevel };
 export { shouldShowAgeGateForChannelId };
 export { shouldShowAgeGateForVoiceChannel };
-export const maybeOpenAgeGateForVoiceChannel = function maybeOpenAgeGateForVoiceChannel(id) {
+export function maybeOpenAgeGateForVoiceChannel(id) {
   const obj = shouldAgeVerifyForAgeGate2;
   let result = obj.shouldAgeVerifyForAgeGate();
   if (result) {
@@ -1426,8 +1426,8 @@ export const maybeOpenAgeGateForVoiceChannel = function maybeOpenAgeGateForVoice
     flag3 = true;
   }
   return flag3;
-};
-export const maybeShowAgeGate = function maybeShowAgeGate(guildId, channelId, JOIN_LARGE_GUILD_UNDERAGE) {
+}
+export function maybeShowAgeGate(guildId, channelId, JOIN_LARGE_GUILD_UNDERAGE) {
   const currentUser = UserStore.getCurrentUser();
   let flag = false;
   if (null != currentUser) {
@@ -1479,9 +1479,9 @@ export const maybeShowAgeGate = function maybeShowAgeGate(guildId, channelId, JO
       openAgeGateModal(NSFW_CHANNEL);
     }
   }
-};
+}
 export const SOURCES_WITH_DOB = set1;
-export const getAgeGateType = function getAgeGateType(arg0) {
+export function getAgeGateType(arg0) {
   if (set1.has(arg0)) {
     return AgeGateType.DATE_OF_BIRTH;
   } else {
@@ -1504,10 +1504,10 @@ export const getAgeGateType = function getAgeGateType(arg0) {
       return AGE_ASSURANCE;
     }
   }
-};
+}
 export const isChannelOrGuildNSFW = NSFWContentGate.isChannelOrGuildNSFW;
 export const userCannotSeeNSFWContent = NSFWContentGate.userCannotSeeNSFWContent;
-export const isChannelAgeVerificationGated = function isChannelAgeVerificationGated(channel) {
+export function isChannelAgeVerificationGated(channel) {
   if (null == channel) {
     return false;
   } else {
@@ -1517,12 +1517,12 @@ export const isChannelAgeVerificationGated = function isChannelAgeVerificationGa
     const tmp4 = obj2.isChannelOrGuildNSFW(channel) && result;
     return tmp4;
   }
-};
+}
 export { isChannelContentGated };
 export const useIsChannelContentGated = tmp9;
 export const useShouldHideChannelContent = tmp10;
 export { isCurrentUserMissingDateOfBirth };
-export const shouldAgeVerifyForSettingsToggles = function shouldAgeVerifyForSettingsToggles() {
+export function shouldAgeVerifyForSettingsToggles() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
   const obj2 = AgeVerificationUtils;
@@ -1530,5 +1530,5 @@ export const shouldAgeVerifyForSettingsToggles = function shouldAgeVerifyForSett
     isFeatureAgeGatedResult = obj2.shouldShowTiggerPawtect();
   }
   return isFeatureAgeGatedResult;
-};
+}
 export const useShouldAgeVerifyForSettingsToggles = tmp11;

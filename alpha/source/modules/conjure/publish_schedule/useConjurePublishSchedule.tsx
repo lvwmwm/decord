@@ -1,13 +1,13 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12305
+// Function ID: 12306
 // Name: useConjurePublishSchedule
-// Dependencies: [5, 32, 19, 10733, 504, 10843, 1125, 3863, 10844, 2]
+// Dependencies: [5, 32, 19, 10807, 504, 10919, 1125, 3864, 10920, 2]
 // Exports: default
 
-// Module 12251 (useConjurePublishSchedule)
+// Module 12305 (useConjurePublishSchedule)
 import intl3 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureConnectionStore2 from "ConjureConnectionStore" /* 10733 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureConnectionStore2 from "ConjureConnectionStore" /* 10807 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -83,7 +83,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
         nextPromise.catch(() => {
           if (ref.current.value === closure_1) {
             const intl = intl3.intl;
-            closure_8(intl.string(_modDef3863.n25haz));
+            closure_8(intl.string(_modDef3864.n25haz));
             closure_4(false);
           }
         });
@@ -120,7 +120,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -207,7 +207,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
                   closure_129_7(false);
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 closure_129_3(tmp);
                 result = closure_129_9;
@@ -224,7 +224,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp72) {
           message = tmp72;
           if (0 === c3) {

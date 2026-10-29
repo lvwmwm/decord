@@ -1,19 +1,19 @@
-// Module ID: 16477
-// Function ID: 16478
+// Module ID: 16715
+// Function ID: 16716
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 5004, 558, 576, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 5271, 2]
 
-// Module 16477 (FamilyCenterEmpty)
+// Module 16715 (FamilyCenterEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5270);
+const Text_Text = tmp(5271);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ empty: { display: "flex", alignItems: "center", justifyContent: "center" } });

@@ -1,16 +1,16 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8383
+// Function ID: 8384
 // Name: canReactToMessage
-// Dependencies: [4916, 6671, 4936, 1389, 1084, 8362, 1402, 4923, 558, 576, 504, 2]
+// Dependencies: [4917, 6695, 4937, 1389, 1084, 8384, 1402, 4924, 558, 576, 504, 2]
 // Exports: canReactToMessage
 
-// Module 8361 (canReactToMessage)
+// Module 8383 (canReactToMessage)
 import FlagUtils from "FlagUtils" /* 1402 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4923 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8362 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6671 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4924 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8384 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6695 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -101,8 +101,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReac
 });
 const result = size.fileFinishedImporting("modules/reactions/canReactToMessage.tsx");
 
-export const canReactToMessage = function canReactToMessage(message, channel) {
+export function canReactToMessage(message, channel) {
   const items = [UserStore, GuildMemberStore, GuildVerificationStore, PermissionStore];
   return canReactToMessageInternal(message, channel, items);
-};
+}
 export const useCanReactToMessage = tmp3;

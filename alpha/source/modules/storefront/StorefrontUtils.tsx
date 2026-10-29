@@ -1,24 +1,24 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7395
+// Function ID: 7396
 // Name: StorefrontUtils
-// Dependencies: [19, 2065, 1389, 7373, 1084, 1391, 12, 7374, 1382, 1402, 558, 576, 504, 7375, 7376, 2050, 7379, 2]
+// Dependencies: [19, 2066, 1389, 7396, 1084, 1391, 12, 7397, 1382, 1402, 558, 576, 504, 7398, 7399, 2051, 7402, 2]
 // Exports: getPromoCodeFromClaimResponse, isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer
 
-// Module 7372 (StorefrontUtils)
+// Module 7395 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
 import FlagUtils from "FlagUtils" /* 1402 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import StorefrontTypes from "StorefrontTypes" /* 7374 */;
-import SlayerStorefrontPriceUtils from "SlayerStorefrontPriceUtils" /* 7375 */;
-import PriceUtils from "PriceUtils" /* 7376 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7379 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import StorefrontTypes from "StorefrontTypes" /* 7397 */;
+import SlayerStorefrontPriceUtils from "SlayerStorefrontPriceUtils" /* 7398 */;
+import PriceUtils from "PriceUtils" /* 7399 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7402 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
 import UserStore from "UserStore" /* 1389 */;
-import SKUPricesStore from "SKUPricesStore" /* 7373 */;
+import SKUPricesStore from "SKUPricesStore" /* 7396 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -118,13 +118,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
   if (cResult[3] !== priceSetAssignmentPurchaseType) {
     let SELF_PURCHASE;
     if (null == priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7374).StorefrontPurchaseType.SELF_PURCHASE;
+      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
     } else if (constants2.DEFAULT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7374).StorefrontPurchaseType.SELF_PURCHASE;
+      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
     } else if (tmp12.GIFT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7374).StorefrontPurchaseType.GIFT;
+      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.GIFT;
     } else {
-      SELF_PURCHASE = tmp(7374).StorefrontPurchaseType.SELF_PURCHASE;
+      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
     }
     cResult[3] = priceSetAssignmentPurchaseType;
     cResult[4] = SELF_PURCHASE;
@@ -136,7 +136,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
     if (null != stateFromStores) {
       let tmp15 = stateFromStores[tmp11];
       if (tmp15 == null) {
-        tmp15 = stateFromStores[tmp(undefined, 7374).StorefrontPurchaseType.SELF_PURCHASE];
+        tmp15 = stateFromStores[tmp(undefined, 7397).StorefrontPurchaseType.SELF_PURCHASE];
       }
       if (cResult[8] === isOrbPrice) {
         let tmp18;
@@ -191,7 +191,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
       tmp14 = cResult[7];
     }
   }
-  const obj3 = { userPrice: "r", pricesForPurchaseType: "toCharArray$esjava$1", purchaseType: tmp11, storeHasPrice: null != stateFromStores };
+  const obj3 = { userPrice: "r", pricesForPurchaseType: "application", purchaseType: tmp11, storeHasPrice: null != stateFromStores };
   cResult[5] = tmp11;
   cResult[6] = null != stateFromStores;
   cResult[7] = obj3;
@@ -234,7 +234,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
       if (null != stateFromStores) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 7374).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 7397).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {
@@ -250,7 +250,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "toCharArray$esjava$1", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "application", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -402,7 +402,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -430,7 +430,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -462,7 +462,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
               } else {
                 if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                   if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                   }
                 }
                 return false;
@@ -482,7 +482,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -508,7 +508,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -529,7 +529,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -550,7 +550,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                   } else {
                     if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                       if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                        const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                        const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                       }
                     }
                     return false;
@@ -577,7 +577,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
                 } else {
                   if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                     if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                     }
                   }
                   return false;
@@ -603,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
             } else {
               if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                 if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                  const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                  const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                 }
               }
               return false;
@@ -623,7 +623,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
               } else {
                 if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                   if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                   }
                 }
                 return false;
@@ -649,7 +649,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
               } else {
                 if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
                   if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7374).StorefrontPromotionRewardType.BENEFIT;
+                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
                   }
                 }
                 return false;
@@ -1040,7 +1040,7 @@ function transformPriceSetAssignmentToStorefrontPurchaseType(arg0) {
 }
 const result = size.fileFinishedImporting("modules/storefront/StorefrontUtils.tsx");
 
-export const transformStorefrontPricesServer = function transformStorefrontPricesServer(storefront_pricing) {
+export function transformStorefrontPricesServer(storefront_pricing) {
   let obj2;
   let obj3;
   let obj4;
@@ -1053,12 +1053,12 @@ export const transformStorefrontPricesServer = function transformStorefrontPrice
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f99026 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f100041 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f99026),
+          userPrice: user_price.map(f100041),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f99026));
+            return obj.mapValues(arg0, (arr) => arr.map(f100041));
           })
         };
         user_price = user_price.user_price;
@@ -1079,9 +1079,9 @@ export const transformStorefrontPricesServer = function transformStorefrontPrice
   obj4 = _modDef12;
   obj5 = _modDef12;
   return obj;
-};
+}
 export { transformPriceSetAssignmentToStorefrontPurchaseType };
-export const isSlayerSkuAvailableOnThisPlatform = function isSlayerSkuAvailableOnThisPlatform(sku) {
+export function isSlayerSkuAvailableOnThisPlatform(sku) {
   if (null != sku) {
     if (sku.productLine === unpackModuleId.SOCIAL_LAYER_GAME_ITEM) {
       let hasFlagResult;
@@ -1109,13 +1109,13 @@ export const isSlayerSkuAvailableOnThisPlatform = function isSlayerSkuAvailableO
     }
   }
   return false;
-};
+}
 export const useSKUPrice = tmp3;
 export const useFormattedSKUPrice = tmp4;
 export const useFormatSKUPrice = tmp5;
 export { formatSKUPrice };
 export const useSKUOrbPrice = tmp6;
-export const getPromoCodeFromClaimResponse = function getPromoCodeFromClaimResponse(arg0) {
+export function getPromoCodeFromClaimResponse(arg0) {
   const iter = arg0.redemptions[Symbol.iterator]();
   while (iter !== undefined) {
     let rewards = iter.next().rewards;
@@ -1130,4 +1130,4 @@ export const getPromoCodeFromClaimResponse = function getPromoCodeFromClaimRespo
     continue;
   }
   return null;
-};
+}

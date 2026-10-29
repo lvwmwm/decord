@@ -1,28 +1,28 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12148
+// Function ID: 12149
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 17, 1203, 21, 5004, 7059, 5288, 587, 1893, 5246, 12095, 1999, 12092, 6944, 5270, 2]
+// Dependencies: [32, 19, 17, 1203, 21, 5005, 7083, 5289, 587, 1894, 5247, 12149, 2000, 12146, 6968, 5271, 2]
 // Exports: default
 
-// Module 12094 (AppLauncherAutocompleteOption)
+// Module 12148 (AppLauncherAutocompleteOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import FormConstants from "FormConstants" /* 1203 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useToken from "useToken" /* 5288 */;
-import Pressables from "Pressables" /* 6944 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7059 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12092 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useToken from "useToken" /* 5289 */;
+import Pressables from "Pressables" /* 6968 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7083 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const Text_Text = tmp4(5270);
+const Text_Text = tmp4(5271);
 const View = react_native.View;
 const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 const jsx = Fragment.jsx;
@@ -61,7 +61,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ANDROID_FOREGROUND_RIPPLE.current
     };
-    obj2.openLazy(asyncRequire(12095, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(12149, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ autoFocus, hasError } = arg0);
   [initChoice, closure_9] = react.useState(() => {

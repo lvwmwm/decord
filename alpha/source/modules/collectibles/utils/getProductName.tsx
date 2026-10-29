@@ -1,18 +1,18 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 9527
+// Function ID: 9528
 // Name: getProductName
-// Dependencies: [1992, 1125, 7696, 2]
+// Dependencies: [1993, 1125, 7719, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9496 (getProductName)
+// Module 9527 (getProductName)
 import intl6 from "intl" /* 1125 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7696 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
-export const getCardProductName = function getCardProductName(product) {
+export function getCardProductName(product) {
   let str = "";
   if (null != product) {
     const string = intl6.intl.string;
@@ -43,8 +43,8 @@ export const getCardProductName = function getCardProductName(product) {
     }
   }
   return formatResult;
-};
-export const getProductName = function getProductName(product) {
+}
+export function getProductName(product) {
   if (null == product) {
     return "";
   } else {
@@ -63,8 +63,8 @@ export const getProductName = function getProductName(product) {
     }
     name = product.name;
   }
-};
-export const getPurchasedProductName = function getPurchasedProductName(baseVariantName) {
+}
+export function getPurchasedProductName(baseVariantName) {
   if (null == baseVariantName) {
     return "";
   } else {
@@ -81,8 +81,8 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
     }
     name = baseVariantName.name;
   }
-};
-export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(product) {
+}
+export function getProductNameAndTypeLabel(product) {
   let str = "";
   if (null != product) {
     const string = intl6.intl.string;
@@ -121,4 +121,4 @@ export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(pr
   } else {
     return str;
   }
-};
+}

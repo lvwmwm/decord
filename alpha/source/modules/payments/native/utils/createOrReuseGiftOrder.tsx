@@ -1,15 +1,15 @@
-// Module ID: 10534
-// Function ID: 10535
+// Module ID: 10567
+// Function ID: 10568
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5734, 1391, 1095, 3, 7576, 1381, 2046, 4820, 2]
+// Dependencies: [5, 19, 5736, 1391, 1095, 3, 7599, 1381, 2047, 4821, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10534 (createOrReuseGiftOrder)
+// Module 10567 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1095 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import PaymentConstants from "PaymentConstants" /* 5734 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import PaymentConstants from "PaymentConstants" /* 5736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ let closure_8 = new LoggerDefault("createOrReuseGiftOrder");
 const tmp2 = new LoggerDefault("createOrReuseGiftOrder");
 let result = size.fileFinishedImporting("modules/payments/native/utils/createOrReuseGiftOrder.tsx");
 
-export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
+export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async function(arg0, value) {
     let APPLE;
@@ -44,7 +44,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -72,7 +72,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
             skuId = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           let error;
@@ -105,7 +105,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
                 } else {
                   APPLE = tmp60.APPLE;
                 }
-                const obj6 = _modDef2046();
+                const obj6 = _modDef2047();
                 const utcResult = obj6.utc();
                 subtractResult = utcResult.subtract(location(dependencyMap[6]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                 obj7 = { line_items: items };
@@ -159,4 +159,4 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-};
+}

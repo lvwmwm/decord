@@ -1,13 +1,13 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13926
+// Function ID: 13927
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 5217, 5218, 558, 576, 504, 13659, 1125, 2567, 2]
+// Dependencies: [19, 5218, 5219, 558, 576, 504, 13892, 1125, 2568, 2]
 
-// Module 13693 (useCanGuildPowerupBeToggled)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5218 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13659 */;
+// Module 13926 (useCanGuildPowerupBeToggled)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5219 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13892 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5217 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5218 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { disabled: true, reason: "a" };
+      const obj4 = { disabled: true, reason: "Array" };
       cResult[4] = obj4;
       tmp12 = obj4;
     } else {
@@ -143,7 +143,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { disabled: true, reason: "a" };
+      const obj5 = { disabled: true, reason: "Array" };
       cResult[3] = obj5;
       tmp10 = obj5;
     } else {
@@ -173,7 +173,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     let unlockedPowerups;
     const tmp = stateFromStores;
     if (null == stateFromStores) {
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     } else {
       if (closure_4.type !== constants.LEVEL_ACTIVATED) {
         if (closure_4.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
@@ -218,7 +218,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
           return obj;
         }
       }
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     }
   }, items1);
 });

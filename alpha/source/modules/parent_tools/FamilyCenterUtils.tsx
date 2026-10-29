@@ -1,16 +1,16 @@
-// Module ID: 8160
-// Function ID: 8161
+// Module ID: 8183
+// Function ID: 8184
 // Name: FamilyCenterUtils
-// Dependencies: [7680, 7681, 1125, 2535, 2046, 7682, 2]
+// Dependencies: [7703, 7704, 1125, 2536, 2047, 7705, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 8160 (FamilyCenterUtils)
+// Module 8183 (FamilyCenterUtils)
 import intl5 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7682 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7680 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7681 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7705 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,48 +21,48 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f101338 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f102351 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
 let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterUtils.tsx");
 
-export const getEmptyActivityFormatter = function getEmptyActivityFormatter() {
+export function getEmptyActivityFormatter() {
   let intl;
   let intl2;
-  const obj = { today: intl.string(_modDef2535.VjIAQQ), yesterday: intl2.string(_modDef2535["2a8xHY"]), days: _modDef2535.Xt6oND };
+  const obj = { today: intl.string(_modDef2536.VjIAQQ), yesterday: intl2.string(_modDef2536["2a8xHY"]), days: _modDef2536.Xt6oND };
   intl = intl5.intl;
   intl2 = intl5.intl;
   return obj;
-};
-export const getActivityWindowTimestampFormatter = function getActivityWindowTimestampFormatter(arg0) {
+}
+export function getActivityWindowTimestampFormatter(arg0) {
   let tmp6;
   const obj = { today: null, yesterday: null, days: null };
   const intl = intl5.intl;
   const string = intl.string;
-  const tmp4 = _modDef2535;
+  const tmp4 = _modDef2536;
   const tmp5 = arg0;
   if (tmp5) {
     obj.today = string(tmp4["2AtcIs"]);
     const intl3 = tmp(1125).intl;
-    obj.yesterday = intl3.string(_modDef2535.stOECr);
-    obj.days = _modDef2535.n8n5Ba;
+    obj.yesterday = intl3.string(_modDef2536.stOECr);
+    obj.days = _modDef2536.n8n5Ba;
     tmp6 = obj;
   } else {
     obj.today = string(tmp4.g1ZX6m);
     const intl2 = tmp(1125).intl;
-    obj.yesterday = intl2.string(_modDef2535.s3qSVt);
-    obj.days = _modDef2535.f1UJiC;
+    obj.yesterday = intl2.string(_modDef2536.s3qSVt);
+    obj.days = _modDef2536.f1UJiC;
     tmp6 = obj;
   }
   return tmp6;
-};
-export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
+}
+export function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
   let yesterday;
-  const obj = _modDef2046();
-  const diffResult = obj.diff(_modDef2046(time), "s");
+  const obj = _modDef2047();
+  const diffResult = obj.diff(_modDef2047(time), "s");
   const tmp3 = timestampFormatter();
-  const obj2 = _modDef2046(time);
+  const obj2 = _modDef2047(time);
   obj2.format("LL");
   if (diffResult < c10) {
     yesterday = tmp3.today;
@@ -83,13 +83,13 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
     yesterday = formatToPlainString(days, obj3);
   }
   return yesterday;
-};
-export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
+}
+export function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
   let yesterday;
-  const obj = _modDef2046();
-  const diffResult = obj.diff(_modDef2046(arg0), "s");
+  const obj = _modDef2047();
+  const diffResult = obj.diff(_modDef2047(arg0), "s");
   const time = SENT_TIMESTAMP_FORMATTER();
-  _modDef2046(arg0);
+  _modDef2047(arg0);
   if (diffResult < 60) {
     yesterday = time.seconds;
   } else if (diffResult < 3600) {
@@ -121,27 +121,27 @@ export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMES
     yesterday = intl.formatToPlainString(time.date, obj5);
   }
   return yesterday;
-};
-export const isUserAction = function isUserAction(action) {
+}
+export function isUserAction(action) {
   return action.display_type === metroImportDefault.USER_ADD || action.display_type === metroImportDefault.USER_INTERACTION || action.display_type === metroImportDefault.USER_CALLED;
-};
-export const isGuildAction = function isGuildAction(action) {
+}
+export function isGuildAction(action) {
   return action.display_type === metroImportDefault.GUILD_ADD || action.display_type === tmp.GUILD_INTERACTION;
-};
-export const isPurchase = function isPurchase(action) {
+}
+export function isPurchase(action) {
   return action.display_type === metroImportDefault.PURCHASES;
-};
-export const isGift = function isGift(action) {
+}
+export function isGift(action) {
   return action.display_type === metroImportDefault.GIFTS;
-};
-export const getFailureCodeForAPIError = function getFailureCodeForAPIError(arg0) {
+}
+export function getFailureCodeForAPIError(arg0) {
   let GENERIC_ERROR = hasOwnProperty[arg0.code];
   if (GENERIC_ERROR == null) {
     GENERIC_ERROR = metroRequire.GENERIC_ERROR;
   }
   return GENERIC_ERROR;
-};
-export const getSortedActivityTypeConfigs = function getSortedActivityTypeConfigs() {
+}
+export function getSortedActivityTypeConfigs() {
   let items;
   map = new Map(React3);
   if (0 === map.size) {
@@ -152,12 +152,12 @@ export const getSortedActivityTypeConfigs = function getSortedActivityTypeConfig
     items = arr.sort((arg0, arg1) => arg0[1].priority - arg1[1].priority);
   }
   return items;
-};
-export const getActivityTypeTextConfigs = function getActivityTypeTextConfigs() {
+}
+export function getActivityTypeTextConfigs() {
   map = new Map(React3);
   return map;
-};
-export const formatTotalTime = function formatTotalTime(arg0) {
+}
+export function formatTotalTime(arg0) {
   let combined;
   const rounded = Math.floor(arg0 / 60);
   const result = arg0 % 60;
@@ -169,8 +169,8 @@ export const formatTotalTime = function formatTotalTime(arg0) {
     combined = "" + result + "m";
   }
   return combined;
-};
-export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
+}
+export function getOrFetchLinkedUsers() {
   const obj = FamilyCenterStore;
   if (FamilyCenterStore.getAreLinkedUsersProcessed()) {
     return obj.getLinkedUsers();
@@ -178,22 +178,22 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
     const obj2 = FamilyCenterActionCreatorsDefault;
     const linkedUsers = obj2.fetchLinkedUsers();
   }
-};
-export const hasActiveParentLinks = function hasActiveParentLinks() {
+}
+export function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f101338);
-};
-export const isParentallyControlled = function isParentallyControlled() {
+  return values.some(f102351);
+}
+export function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f101338);
-};
-export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
+  return values.some(f102351);
+}
+export function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;
   if (call_count > 0) {
     if (0 === dms_sent) {
       const intl3 = intl5.intl;
       const obj2 = { callCount: call_count };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef2535["L/Cj7S"], obj2);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef2536["L/Cj7S"], obj2);
     }
     return formatToPlainStringResult;
   }
@@ -201,10 +201,10 @@ export const getTopUserOrGuildDescription = function getTopUserOrGuildDescriptio
     if (0 === call_count) {
       const intl2 = intl5.intl;
       const obj3 = { messageCount: dms_sent };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef2535["6X1F0i"], obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef2536["6X1F0i"], obj3);
     }
   }
   const intl = intl5.intl;
   const obj = { messageCount: dms_sent, callCount: call_count };
-  formatToPlainStringResult = intl.formatToPlainString(_modDef2535.IYqGMG, obj);
-};
+  formatToPlainStringResult = intl.formatToPlainString(_modDef2536.IYqGMG, obj);
+}

@@ -1,17 +1,17 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7633
+// Function ID: 7634
 // Name: Clickstream
-// Dependencies: [32, 502, 5750, 11, 7611, 1264, 7612, 2]
+// Dependencies: [32, 502, 5752, 11, 7634, 1264, 7635, 2]
 // Exports: trackClickstream
 
-// Module 7610 (Clickstream)
+// Module 7633 (Clickstream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ClickstreamExperiment from "ClickstreamExperiment" /* 7611 */;
-import ClickstreamEvents from "ClickstreamEvents" /* 7612 */;
+import ClickstreamExperiment from "ClickstreamExperiment" /* 7634 */;
+import ClickstreamEvents from "ClickstreamEvents" /* 7635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
 import size from "module_2" /* 2 */;
 
 function isClickstreamEnabled(flag) {
@@ -56,7 +56,7 @@ let c7 = -1;
 let metroImportAll = false;
 const result = size.fileFinishedImporting("modules/app_analytics/clickstream/Clickstream.tsx");
 
-export const trackClickstream = function trackClickstream(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, arg1) {
+export function trackClickstream(CHANNEL_LATEST_MESSAGES_LOADED_CLICKSTREAM, arg1) {
   let date;
   const obj = SnowflakeUtilsDefault;
   const extractTimestampResult = obj.extractTimestamp(AuthenticationStore.getId());
@@ -82,5 +82,5 @@ export const trackClickstream = function trackClickstream(CHANNEL_LATEST_MESSAGE
       push(obj4);
     }
   }
-};
+}
 export { drainClickstream };

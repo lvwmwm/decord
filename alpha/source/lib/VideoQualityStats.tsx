@@ -1,13 +1,13 @@
-// Module ID: 5936
-// Function ID: 5937
+// Module ID: 5938
+// Function ID: 5939
 // Name: VideoQualityStats
-// Dependencies: [32, 5919, 5927, 5758, 2]
+// Dependencies: [32, 5921, 5929, 5760, 2]
 // Exports: parseCodecType
 
-// Module 5936 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 5758 */;
-import Histogram from "Histogram" /* 5919 */;
-import SystemResourcesDefault from "SystemResources" /* 5927 */;
+// Module 5938 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 5760 */;
+import Histogram from "Histogram" /* 5921 */;
+import SystemResourcesDefault from "SystemResources" /* 5929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -775,7 +775,7 @@ export const Decoders = obj3;
 export const VideoStoppedReasons = obj6;
 export { parseEncoder };
 export { parseDecoder };
-export const parseCodecType = function parseCodecType(name) {
+export function parseCodecType(name) {
   let AV1;
   if (null == name) {
     AV1 = obj.UNKNOWN;
@@ -799,7 +799,7 @@ export const parseCodecType = function parseCodecType(name) {
     }
   }
   return AV1;
-};
+}
 export { RawVideoStats };
 export { InboundStats };
 export { OutboundStats };

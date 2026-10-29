@@ -1,12 +1,12 @@
-// Module ID: 12545
-// Function ID: 12546
+// Module ID: 12600
+// Function ID: 12601
 // Name: createWaveTransition
-// Dependencies: [12544, 5242, 5085, 2]
+// Dependencies: [12599, 5243, 5086, 2]
 // Exports: createWaveTransition
 
-// Module 12545 (createWaveTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import waveTransition from "waveTransition" /* 12544 */;
+// Module 12600 (createWaveTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import waveTransition from "waveTransition" /* 12599 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap, set, set2;
@@ -25,7 +25,7 @@ let closure_3 = { code: "function createWaveTransitionNativeTsx2(finished){const
 let result = size.fileFinishedImporting("design/visual-identities/ai/AIShimmer/createWaveTransition.native.tsx");
 
 export { incomingSlotForPass };
-export const createWaveTransition = function createWaveTransition(duration) {
+export function createWaveTransition(duration) {
   let obj;
   let random;
   let respectReducedMotion;
@@ -42,7 +42,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   let DEFAULT_PASS_DURATION = duration.duration;
   if (DEFAULT_PASS_DURATION == null) {
     let tmp = obj;
-    DEFAULT_PASS_DURATION = obj(12544).DEFAULT_PASS_DURATION;
+    DEFAULT_PASS_DURATION = obj(12599).DEFAULT_PASS_DURATION;
   }
   obj = { duration: DEFAULT_PASS_DURATION, random, reducedMotion: null, respectReducedMotion, animationProgress: null, crossFadeOpacity: null, glyphCount: null, onPass: null, onStart: null, onComplete: null };
   random = duration.rng;
@@ -75,7 +75,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   if (0 < glyphCountResult) {
     do {
       let tmp6 = obj;
-      let str3 = obj(12544).GLYPH_PEAK;
+      let str3 = obj(12599).GLYPH_PEAK;
       let charAt = str3.charAt;
       let tmp5Result = tmp5();
       str = `${charAt(tmp8 * obj(c1[0]).GLYPH_PEAK.length | 0)}`;
@@ -316,4 +316,4 @@ export const createWaveTransition = function createWaveTransition(duration) {
   };
   Object.defineProperty(obj3, "running", { get: () => c5, set: undefined });
   return obj3;
-};
+}

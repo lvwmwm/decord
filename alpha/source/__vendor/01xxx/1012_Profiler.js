@@ -170,7 +170,7 @@ const Profiler_export = _moduleResult;
 
 export { Profiler_export as Profiler };
 export const UNKNOWN_COMPONENT = "unknown";
-export const useProfiler = function useProfiler(arg0) {
+export function useProfiler(arg0) {
   let closure_2;
   let closure_0 = arg0;
   let obj = arg1;
@@ -222,8 +222,8 @@ export const useProfiler = function useProfiler(arg0) {
       }
     };
   }, []);
-};
-export const withProfiler = function withProfiler(displayName, name) {
+}
+export function withProfiler(displayName, name) {
   _require = displayName;
   dependencyMap = name;
   name = undefined;
@@ -256,4 +256,4 @@ export const withProfiler = function withProfiler(displayName, name) {
   const obj = require("module_1014");
   obj.hoistNonReactStatics(Wrapped, displayName);
   return Wrapped;
-};
+}

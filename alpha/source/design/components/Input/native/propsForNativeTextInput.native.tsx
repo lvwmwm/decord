@@ -1,21 +1,21 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7089
+// Function ID: 7090
 // Name: _objectWithoutProperties
 // Dependencies: [109, 2]
 // Exports: propsForNativeTextInput
 
-// Module 7065 (_objectWithoutProperties)
+// Module 7089 (_objectWithoutProperties)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["disabled", "centered", "round", "clearable"];
 const result = size.fileFinishedImporting("design/components/Input/native/propsForNativeTextInput.native.tsx");
 
-export const propsForNativeTextInput = function propsForNativeTextInput(inputProps) {
+export function propsForNativeTextInput(inputProps) {
   let centered;
   let clearable;
   let disabled;
   let round;
   ({ disabled, centered, round, clearable } = inputProps);
   return _objectWithoutProperties(inputProps, closure_0);
-};
+}

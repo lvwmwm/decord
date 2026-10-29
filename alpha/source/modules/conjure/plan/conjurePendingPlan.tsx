@@ -1,18 +1,18 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12403
+// Function ID: 12404
 // Name: conjurePendingPlan
-// Dependencies: [10735, 2]
+// Dependencies: [10809, 2]
 // Exports: pendingPlanRenderId, planVersions, takeArrivedPlan
 
-// Module 12349 (conjurePendingPlan)
-import conjureChatTurns from "conjureChatTurns" /* 10735 */;
+// Module 12403 (conjurePendingPlan)
+import conjureChatTurns from "conjureChatTurns" /* 10809 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePendingPlan.tsx");
 
-export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
+export function pendingPlanRenderId(memo) {
   const atResult = memo.at(-1);
   let role;
   if (atResult != null) {
@@ -41,8 +41,8 @@ export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
     }
     return null;
   }
-};
-export const takeArrivedPlan = function takeArrivedPlan(current, projectId, stateFromStores1) {
+}
+export function takeArrivedPlan(current, projectId, stateFromStores1) {
   if (0 === stateFromStores1.length) {
     return null;
   } else {
@@ -72,8 +72,8 @@ export const takeArrivedPlan = function takeArrivedPlan(current, projectId, stat
     }
     return tmp5;
   }
-};
-export const planVersions = function planVersions(memo) {
+}
+export function planVersions(memo) {
   map = new Map();
   let render_id = null;
   let num = 0;
@@ -102,4 +102,4 @@ export const planVersions = function planVersions(memo) {
     continue;
   }
   return map;
-};
+}

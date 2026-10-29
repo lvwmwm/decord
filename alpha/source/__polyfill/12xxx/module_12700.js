@@ -1,83 +1,113 @@
 // Module ID: 12700
 // Function ID: 12701
-// Dependencies: [12660, 12693]
-// Exports: makePromiseBuffer
+// Dependencies: [12657, 12701]
 
 // Module 12700
-import _mod12660 from "module_12660" /* 12660 */;
+import tokenize from "tokenize" /* 12657 */;
+import tokenize2 from "tokenize" /* 12701 */;
 
-let diff;
-
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod12660;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
-    }
-  };
-  return obj;
+let obj2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
 }
+function isDeclarationBlockAtrule() {
+  const scanner = this.scanner;
+  let lookupTypeResult = scanner.lookupType(1);
+  let num = 1;
+  if (lookupTypeResult) {
+    while (lookupTypeResult !== RightCurlyBracket) {
+      if (lookupTypeResult !== LeftCurlyBracket) {
+        if (lookupTypeResult !== AtKeyword) {
+          let sum = num + 1;
+          let scanner2 = this.scanner;
+          lookupTypeResult = scanner2.lookupType(sum);
+          num = sum;
+        }
+      }
+      let flag = false;
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const Semicolon = tokenize.TYPE.Semicolon;
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
+let obj = {
+  name: "Atrule",
+  structure: obj2,
+  parse() {
+    let AtrulePrelude;
+    let parseWithFallback;
+    let tmp13;
+    const self = this;
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(AtKeyword);
+    const scanner = this.scanner;
+    const str = scanner.substrToCursor(tokenStart + 1);
+    const formatted = str.toLowerCase();
+    const scanner2 = this.scanner;
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
+    if (tmp4) {
+      let callResult;
+      if (self.parseAtrulePrelude) {
+        ({ AtrulePrelude, parseWithFallback } = self);
+        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
+        callResult = element;
+        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
+        if (tmp10) {
+          callResult = null;
+        }
+      } else {
+        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = callResult;
+    }
+    const tokenType = self.scanner.tokenType;
+    if (Semicolon === tokenType) {
+      const iter = self.scanner;
+      iter.next();
+      tmp13 = null;
+    } else {
+      tmp13 = null;
+      if (LeftCurlyBracket === tokenType) {
+        const atrule = self.atrule;
+        if (atrule.hasOwnProperty(formatted)) {
+          let callResult1;
+          if (typeof self.atrule[formatted].block === "function") {
+            const block = self.atrule[formatted].block;
+            callResult1 = block.call(self);
+          }
+          tmp13 = callResult1;
+        }
+        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+      }
+    }
+    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
+    return obj;
+  },
+  generate(name) {
+    const self = this;
+    this.chunk("@");
+    this.chunk(name.name);
+    if (null !== name.prelude) {
+      self.chunk(" ");
+      self.node(name.prelude);
+    }
+    if (name.block) {
+      self.node(name.block);
+    } else {
+      self.chunk(";");
+    }
+  },
+  walkContext: "atrule"
+};
+obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
+
+export default obj;

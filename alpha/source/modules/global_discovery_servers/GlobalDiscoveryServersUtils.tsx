@@ -1,17 +1,17 @@
-// Module ID: 19693
-// Function ID: 19694
+// Module ID: 19915
+// Function ID: 19916
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2065, 9041, 1084, 1125, 1385, 7484, 1264, 1278, 2]
+// Dependencies: [5, 2066, 9044, 1084, 1125, 1385, 7507, 1264, 1278, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 19693 (GlobalDiscoveryServersUtils)
+// Module 19915 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1084 */;
 import intl8 from "intl" /* 1125 */;
 import v1 from "v1" /* 1278 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2065 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9041 */;
+import LocaleStore from "LocaleStore" /* 2066 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9044 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -42,7 +42,7 @@ let obj = function _navigateToGuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _navigateToGuild() {
             obj6 = undefined;
             category_id = 1;
             _location = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === category_id) {
           if (arg0 === 1) {
@@ -101,7 +101,7 @@ let obj = function _navigateToGuild() {
           obj = closure_130_1(closure_130_3[7]);
           obj.track(closure_130_12.GUILD_DISCOVERY_GUILD_SELECTED, obj9);
           _location = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp27) {
         _location = 3;
@@ -115,7 +115,7 @@ let obj = function _navigateToGuild() {
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx");
 
-export const getGlobalDiscoveryServersTabTitle = function getGlobalDiscoveryServersTabTitle(arg0) {
+export function getGlobalDiscoveryServersTabTitle(arg0) {
   if (metroRequire.FEATURED === arg0) {
     const intl7 = intl8.intl;
     return intl7.string(intl8.t["RU+DCe"]);
@@ -138,8 +138,8 @@ export const getGlobalDiscoveryServersTabTitle = function getGlobalDiscoveryServ
     const intl = intl8.intl;
     return intl.string(intl8.t["q469/Z"]);
   }
-};
-export const getGlobalDiscoveryServersBannerTitle = function getGlobalDiscoveryServersBannerTitle(arg0) {
+}
+export function getGlobalDiscoveryServersBannerTitle(arg0) {
   if (metroRequire.FEATURED === arg0) {
     const intl7 = intl8.intl;
     return intl7.string(intl8.t.OlDfzP);
@@ -169,8 +169,8 @@ export const getGlobalDiscoveryServersBannerTitle = function getGlobalDiscoveryS
     const error = new Error("[getGlobalDiscoveryServerTabTitle] Unsupported tab: " + arg0);
     throw error;
   }
-};
-export const getGlobalDiscoveryServersBannerDescription = function getGlobalDiscoveryServersBannerDescription(arg0) {
+}
+export function getGlobalDiscoveryServersBannerDescription(arg0) {
   if (metroRequire.FEATURED === arg0) {
     const intl7 = intl8.intl;
     return intl7.string(intl8.t.SdMhrk);
@@ -200,8 +200,8 @@ export const getGlobalDiscoveryServersBannerDescription = function getGlobalDisc
     const error = new Error("[getGlobalDiscoveryServerTabTitle] Unsupported tab: " + arg0);
     throw error;
   }
-};
-export const getGlobalDiscoveryServersTabSectionTitle = function getGlobalDiscoveryServersTabSectionTitle(arg0) {
+}
+export function getGlobalDiscoveryServersTabSectionTitle(arg0) {
   if (metroRequire.FEATURED === arg0) {
     const intl6 = intl8.intl;
     return intl6.string(intl8.t.crt84X);
@@ -223,8 +223,8 @@ export const getGlobalDiscoveryServersTabSectionTitle = function getGlobalDiscov
   } else {
     return null;
   }
-};
-export const getCategoryIdFromServerTab = function getCategoryIdFromServerTab(arg0) {
+}
+export function getCategoryIdFromServerTab(arg0) {
   if (metroRequire.FEATURED === arg0) {
     return React4;
   } else if (metroRequire.GAMING === arg0) {
@@ -243,28 +243,28 @@ export const getCategoryIdFromServerTab = function getCategoryIdFromServerTab(ar
     obj = GlobalUtils;
     obj.assertNever(arg0);
   }
-};
-export const isStaleFeaturedGuilds = function isStaleFeaturedGuilds(arg0) {
+}
+export function isStaleFeaturedGuilds(arg0) {
   let tmp = null == arg0;
   if (!tmp) {
     const _Date = Date;
     tmp = Date.now() - arg0 > metroImportDefault;
   }
   return tmp;
-};
-export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(id) {
+}
+export function fromDiscoverableGuildServer(id) {
   obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: null, preferredLocale: null, discoverySplash: null, emojis: null, emojiCount: null };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, premium_subscription_count: obj.premiumSubscriptionCount, preferred_locale: obj.preferredLocale, discovery_splash: obj.discoverySplash, emojis: obj.emojis, emoji_count: obj.emojiCount } = id);
   new Set(id.features);
   return obj;
-};
-export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "toCharArray$esjava$1", discoverySplash: 66, emojis: [] };
+}
+export function fromDiscoverableGuildSearchResult(id) {
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "ix", discoverySplash: "r", emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;
-};
-export const getLanguageCodeFallback = function getLanguageCodeFallback() {
+}
+export function getLanguageCodeFallback() {
   let tmp3;
   let tmp = arg0;
   if (arg0 === undefined) {
@@ -279,12 +279,12 @@ export const getLanguageCodeFallback = function getLanguageCodeFallback() {
     found = arr2[0];
   }
   return found.code;
-};
-export const navigateToGuild = function navigateToGuild() {
+}
+export function navigateToGuild() {
   return obj(...arguments);
-};
-export const makeAnalyticsID = function makeAnalyticsID() {
+}
+export function makeAnalyticsID() {
   obj = v1;
   const str = obj.v4();
   return str.replace(/-/g, "");
-};
+}

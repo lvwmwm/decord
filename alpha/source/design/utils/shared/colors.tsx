@@ -1,16 +1,16 @@
-// Module ID: 9439
-// Function ID: 9440
+// Module ID: 9470
+// Function ID: 9471
 // Name: colors
 // Dependencies: [683, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 9439 (colors)
+// Module 9470 (colors)
 import _modDef683 from "module_683" /* 683 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/utils/shared/colors.tsx");
 
-export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(arg0, context) {
+export function flattenColorOverOpaqueBackground(arg0, context) {
   const obj = _modDef683(arg0);
   const obj2 = _modDef683(context);
   const rgbaResult = obj.rgba();
@@ -33,4 +33,4 @@ export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueB
     const rgbResult = tmpResult.rgb(rounded, rounded1, rounded2);
     return rgbResult.hex();
   }
-};
+}

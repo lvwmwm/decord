@@ -10,10 +10,10 @@ import _mod698 from "module_698" /* 698 */;
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const _sentrySpan = "_sentrySpan";
 
-export const _getSpanForScope = function _getSpanForScope(arg0) {
+export function _getSpanForScope(arg0) {
   return arg0[_sentrySpan];
-};
-export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+}
+export function _setSpanForScope(arg0, arg1) {
   const tmp2 = arg1;
   if (tmp2) {
     const obj = _mod698;
@@ -21,4 +21,4 @@ export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
   } else {
     delete tmp[_sentrySpan];
   }
-};
+}

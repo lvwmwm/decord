@@ -1,13 +1,13 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7343
+// Function ID: 7344
 // Name: RoleIconUtils
-// Dependencies: [1084, 1381, 4950, 1449, 1414, 2]
+// Dependencies: [1084, 1381, 4951, 1450, 1415, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7319 (RoleIconUtils)
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
+// Module 7343 (RoleIconUtils)
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let closure_6 = "" + location.protocol + window.GLOBAL_ENV.API_ENDPOINT;
 let closure_7 = PlatformUtils.isAndroid();
 const result = size.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
 
-export const getRoleIconData = function getRoleIconData(role, size) {
+export function getRoleIconData(role, size) {
   let icon;
   let id;
   if (null == role) {
@@ -75,15 +75,15 @@ export const getRoleIconData = function getRoleIconData(role, size) {
     }
     return tmp23;
   }
-};
-export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(arg0, arg1) {
+}
+export function replaceRoleIconSourceSize(arg0, arg1) {
   const replace = arg0.replace;
   const getBestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize;
   ImageLoaderUtils;
   const obj = ImageLoaderUtils;
   return replace(/size=[0-9]+/g, "size=" + getBestMediaProxySize(arg1 * obj.getDevicePixelRatio()));
-};
-export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
+}
+export function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);
   if (!startsWithResult) {
     const _HermesInternal = HermesInternal;
@@ -91,8 +91,8 @@ export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
     const startsWithResult1 = str.startsWith("" + closure_6 + "/roles") && str.includes("/icons/");
   }
   return startsWithResult;
-};
-export const canGuildUseRoleIcons = function canGuildUseRoleIcons(guild, role) {
+}
+export function canGuildUseRoleIcons(guild, role) {
   let prop;
   if (role != null) {
     const tags = role.tags;
@@ -106,4 +106,4 @@ export const canGuildUseRoleIcons = function canGuildUseRoleIcons(guild, role) {
     hasItem = features.has(constants.ROLE_ICONS);
   }
   return hasItem;
-};
+}

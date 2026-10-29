@@ -1,10 +1,10 @@
-// Module ID: 12026
-// Function ID: 12027
+// Module ID: 12080
+// Function ID: 12081
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12027, 9683, 12028, 5670, 558, 576, 6948, 5280, 1125, 5716, 587, 2]
+// Dependencies: [5, 32, 19, 21, 12081, 9715, 12082, 5672, 558, 576, 6972, 5281, 1125, 5718, 587, 2]
 // Exports: useCommandRowSend
 
-// Module 12026 (CommandRowButton)
+// Module 12080 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -38,13 +38,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6948).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6972).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5280).Button;
+    const Button = tmp(5281).Button;
     intl = tmp(1125).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp(5716).SendMessageIcon;
+    const SendMessageIcon = tmp(5718).SendMessageIcon;
     tmp5Result = tmp5(Button, obj2);
   }
   cResult[0] = hasOptions;
@@ -56,13 +56,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6948).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6972).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5280).Button;
+    const Button = tmp4(5281).Button;
     intl = tmp4(1125).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp4(5716).SendMessageIcon;
+    const SendMessageIcon = tmp4(5718).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/CommandRowButton.tsx");
 
 export default tmp2;
-export const useCommandRowSend = function useCommandRowSend(command) {
+export function useCommandRowSend(command) {
   let closure_5;
   let items1;
   command = command.command;
@@ -107,7 +107,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -156,7 +156,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp25) {
         onExecuteCommand = tmp25;
@@ -182,4 +182,4 @@ export const useCommandRowSend = function useCommandRowSend(command) {
   };
   items1 = [tryExecuteCommand, callback];
   return obj2;
-};
+}

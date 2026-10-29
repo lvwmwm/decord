@@ -1,12 +1,12 @@
-// Module ID: 12479
-// Function ID: 12480
+// Module ID: 12533
+// Function ID: 12534
 // Name: conjurePlanOverlayDesign
-// Dependencies: [12480, 12483, 2]
+// Dependencies: [12534, 12537, 2]
 // Exports: conjurePlanDesignPreviews, conjurePlanOverlayWidgetBox
 
-// Module 12479 (conjurePlanOverlayDesign)
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12480 */;
-import conjureOverlayPreview from "conjureOverlayPreview" /* 12483 */;
+// Module 12533 (conjurePlanOverlayDesign)
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12534 */;
+import conjureOverlayPreview from "conjureOverlayPreview" /* 12537 */;
 import size_mod from "module_2" /* 2 */;
 
 const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanOverlay
 export const CONJURE_PLAN_OVERLAY_SCENE_ASPECT_RATIO = 1.8860510805500983;
 export const CONJURE_PLAN_OVERLAY_WIDGET_TOP = combined;
 export const CONJURE_PLAN_OVERLAY_WIDGET_END = combined1;
-export const conjurePlanDesignPreviews = function conjurePlanDesignPreviews(proposal) {
+export function conjurePlanDesignPreviews(proposal) {
   let overlayWidgetPreviewSize;
   let overlay_design_image1;
   let overlay_widget;
@@ -101,7 +101,7 @@ export const conjurePlanDesignPreviews = function conjurePlanDesignPreviews(prop
     if (null != id3) {
       const obj4 = { experienceId: id3, design: overlay_design_image1, size: overlayWidgetPreviewSize(overlay_widget) };
       overlay_widget = proposal.overlay_widget;
-      overlayWidgetPreviewSize = tmp(12483).overlayWidgetPreviewSize;
+      overlayWidgetPreviewSize = tmp(12537).overlayWidgetPreviewSize;
       conjureOverlayPreview;
       if (overlay_widget == null) {
         overlay_widget = null;
@@ -110,8 +110,8 @@ export const conjurePlanDesignPreviews = function conjurePlanDesignPreviews(prop
     }
   }
   return obj3;
-};
-export const conjurePlanOverlayWidgetBox = function conjurePlanOverlayWidgetBox(size) {
+}
+export function conjurePlanOverlayWidgetBox(size) {
   let result;
   let result1;
   const bound = Math.min(1, 1872 / size.width, 970 / size.height);
@@ -119,4 +119,4 @@ export const conjurePlanOverlayWidgetBox = function conjurePlanOverlayWidgetBox(
   result = size.width * bound / 1920 * 100;
   result1 = size.height * bound / 1018 * 100;
   return size;
-};
+}

@@ -10,7 +10,7 @@ import _mod693 from "module_693" /* 693 */;
 
 export const header = 0;
 export const items = 1;
-export const createUserFeedbackEnvelope = function createUserFeedbackEnvelope(event_id, tunnel) {
+export function createUserFeedbackEnvelope(event_id, tunnel) {
   let date;
   let dsn;
   let metadata;
@@ -47,4 +47,4 @@ export const createUserFeedbackEnvelope = function createUserFeedbackEnvelope(ev
   const obj5 = assign(assign2Result, tmp3);
   const obj7 = _mod693;
   return obj7.createEnvelope(obj5, items1);
-};
+}

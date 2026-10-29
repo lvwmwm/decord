@@ -1,8 +1,8 @@
-// Module ID: 6292
-// Function ID: 6293
+// Module ID: 6316
+// Function ID: 6317
 // Dependencies: [2]
 
-// Module 6292
+// Module 6316
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/anxious.png.js");

@@ -1,7 +1,7 @@
 // Module ID: 1251
 // Function ID: 1252
 // Name: ClientThemesUtils
-// Dependencies: [1252, 1207, 1095, 5011, 586, 2]
+// Dependencies: [1252, 1207, 1095, 5012, 586, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getCustomThemeBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName, hasCustomTheme, resolveThemeWithCustomSettings
 
 // Module 1251 (ClientThemesUtils)
@@ -9,7 +9,7 @@ import shims from "shims" /* 586 */;
 import Constants from "Constants" /* 1095 */;
 import ThemeConstants from "ThemeConstants" /* 1207 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
-import shared from "shared" /* 5011 */;
+import shared from "shared" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ClientThemesConstants.REFRESH_STANDARD_BACKGROUND_THEMES;
@@ -17,7 +17,7 @@ let closure_3 = ThemeConstants.PROTO_THEME_MAP_WEB_REFRESH;
 const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 
-export const getThemeForColor = function getThemeForColor(l) {
+export function getThemeForColor(l) {
   let LIGHT;
   if (l.l <= 0.3) {
     LIGHT = ThemeTypes.DARK;
@@ -25,15 +25,15 @@ export const getThemeForColor = function getThemeForColor(l) {
     LIGHT = ThemeTypes.LIGHT;
   }
   return LIGHT;
-};
-export const getCustomThemeBaseTheme = function getCustomThemeBaseTheme(theme) {
+}
+export function getCustomThemeBaseTheme(theme) {
   const obj = shared;
   return obj.isThemeDark(theme) ? ThemeTypes.DARK : ThemeTypes.LIGHT;
-};
-export const hasCustomTheme = function hasCustomTheme(colors) {
+}
+export function hasCustomTheme(colors) {
   return null != colors && colors.colors.length > 0;
-};
-export const resolveThemeWithCustomSettings = function resolveThemeWithCustomSettings(theme, customUserThemeSettings) {
+}
+export function resolveThemeWithCustomSettings(theme, customUserThemeSettings) {
   let tmp2 = theme;
   const tmp = null != customUserThemeSettings && customUserThemeSettings.colors.length > 0;
   if (tmp) {
@@ -41,8 +41,8 @@ export const resolveThemeWithCustomSettings = function resolveThemeWithCustomSet
     tmp2 = obj.isThemeDark(theme) ? tmp5.DARK : tmp5.LIGHT;
   }
   return tmp2;
-};
-export const getLinearGradientForBackgroundGradient = function getLinearGradientForBackgroundGradient(gradientPreset) {
+}
+export function getLinearGradientForBackgroundGradient(gradientPreset) {
   let angle;
   let colors;
   ({ angle, colors } = gradientPreset);
@@ -54,8 +54,8 @@ export const getLinearGradientForBackgroundGradient = function getLinearGradient
     return "" + obj.unsafe_getResolvedRawColor(token, { saturation: 1 }) + " " + stop + "%";
   });
   return "linear-gradient(" + angle + "deg, " + mapped.join(", ") + ")";
-};
-export const areThemesEqualForGradientThemes = function areThemesEqualForGradientThemes(arg0, arg1) {
+}
+export function areThemesEqualForGradientThemes(arg0, arg1) {
   let tmp = arg0 === arg1;
   if (!tmp) {
     let tmp3 = arg0 === ThemeTypes.ASH && arg1 === tmp2.DARK;
@@ -65,13 +65,13 @@ export const areThemesEqualForGradientThemes = function areThemesEqualForGradien
     tmp = tmp3;
   }
   return tmp;
-};
-export const getBaseTheme = function getBaseTheme(arg0) {
+}
+export function getBaseTheme(arg0) {
   const tmp = closure_3[arg0];
   const obj = shared;
   return obj.isThemeDark(tmp) ? ThemeTypes.DARK : ThemeTypes.LIGHT;
-};
-export const getThemeName = function getThemeName(ASH) {
+}
+export function getThemeName(ASH) {
   let closure_0 = ASH;
   const found = closure_2.find((theme) => theme.theme === closure_0);
   let str;
@@ -82,4 +82,4 @@ export const getThemeName = function getThemeName(ASH) {
     str = "";
   }
   return str;
-};
+}

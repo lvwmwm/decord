@@ -34,14 +34,14 @@ class XXH64 {
       num = 0;
     }
     _classCallCheck(this, XXH64);
-    Object.defineProperty(this, closure_9, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_10, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_11, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_12, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_13, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_14, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_15, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_16, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_9, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_10, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_11, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_12, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_13, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_14, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_15, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_16, { writable: true, value: "Array" });
     this.reset(num);
   }
 }
@@ -456,7 +456,7 @@ const importDefaultResultResult = _createClass(XXH64, items);
 const XXH64_export = importDefaultResultResult;
 
 export { XXH64_export as XXH64 };
-export const hash = function hash(arg0) {
+export function hash(arg0) {
   let num = arg1;
   if (arg1 === undefined) {
     num = 0;
@@ -464,4 +464,4 @@ export const hash = function hash(arg0) {
   const obj = new importDefaultResultResult(num);
   const updateResult = obj.update(arg0);
   return updateResult.digest();
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 16581
-// Function ID: 16582
+// Module ID: 16819
+// Function ID: 16820
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 5926, 1084, 9640, 1278, 7837, 7836, 6750, 16582, 7827, 6752, 7785, 1381, 7818, 14365, 16572, 16583, 6503, 6508, 2]
+// Dependencies: [5, 32, 19, 5928, 1084, 9672, 1278, 7860, 7859, 6773, 16820, 7850, 6775, 7807, 1381, 7841, 14599, 16810, 16821, 6527, 6532, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 16581 (useBountiesModalVideoAnalytics)
+// Module 16819 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1084 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsActions from "AnalyticsActions" /* 7827 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14365 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16572 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16583 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
+import AdCreativeType from "AdCreativeType" /* 6775 */;
+import AnalyticsActions from "AnalyticsActions" /* 7850 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14599 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16810 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 5926 */;
+import NetworkStore from "NetworkStore" /* 5928 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_3, set;
@@ -26,7 +26,7 @@ let closure_8 = [25, 50, 75];
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalVideoAnalytics.tsx");
 
-export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnalytics(bountyId) {
+export function useBountiesModalVideoAnalytics(bountyId) {
   let items22;
   let items23;
   let items24;
@@ -136,7 +136,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } catch (tmp30) {
@@ -662,4 +662,4 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   items24 = [flag2, callback18];
   items25 = [bountyId, memo, questImpressionId, callback16, callback3, flag2, memo1, sourceQuestContent];
   return obj4;
-};
+}

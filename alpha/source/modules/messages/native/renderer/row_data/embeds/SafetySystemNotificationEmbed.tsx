@@ -1,22 +1,22 @@
-// Module ID: 14832
-// Function ID: 14833
+// Module ID: 15067
+// Function ID: 15068
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1084, 2046, 7990, 8547, 7932, 8309, 1125, 2]
+// Dependencies: [17, 1084, 2047, 8013, 8569, 7955, 8331, 1125, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 14832 (SafetySystemNotificationEmbed)
+// Module 15067 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/SafetySystemNotificationEmbed.tsx");
 
-export const createSafetySystemNotificationEmbed = function createSafetySystemNotificationEmbed(message) {
+export function createSafetySystemNotificationEmbed(message) {
   let diff;
   let eevFb6;
   let formatToPlainString;
@@ -67,7 +67,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7990 : 8547))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 8013 : 8569))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result4 = renderer_EmbedUtils;
             const intl = tmp6(1125).intl;
             formatToPlainString = intl.formatToPlainString;
@@ -77,10 +77,10 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
               num = 0;
             }
             obj3 = { daysAgo: diff(tmp14Result.unix(num), "days") };
-            diff = _modDef2046().diff;
-            _modDef2046();
+            diff = _modDef2047().diff;
+            _modDef2047();
             str4 = parseMessageForPropsResult.body;
-            tmp14Result = _modDef2046;
+            tmp14Result = _modDef2047;
             if (str4 == null) {
               str4 = "";
             }
@@ -114,4 +114,4 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
       }
     }
   }
-};
+}

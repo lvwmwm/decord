@@ -1,113 +1,55 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 12790
+// Function ID: 12791
 // Name: createConjureProject
-// Dependencies: [5, 10733, 10757, 12580, 2]
+// Dependencies: [5, 10807, 10832, 12791, 2]
 // Exports: default
 
-// Module 12582 (createConjureProject)
+// Module 12790 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10733 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10807 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, closure_3, guild_id, install_scope, templateId;
+let closure_2, install_scope, value;
 
 let c3;
 let closure_4;
 let obj = function _createConjureProject() {
   obj = _asyncToGenerator(async (guild_id) => {
+    let closure_3;
+    let templateId;
     let c5 = 0;
     let c6 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
       let c0;
       let c1;
       let c2;
       let c3;
       let c4;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+      let obj6;
+      ({ guildId: c0, installScope: c1, prompt: c2, modelSettings: c3, templateId: c4 } = closure_0);
+      await "Reflect";
+      const createProject = closure_132_0(closure_132_1[2]).createProject;
+      closure_132_0(closure_132_1[2]);
+      if (null != install_scope) {
+        obj6 = { guild_id, install_scope };
       } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              let closure_4 = tmp4;
-              closure_3 = tmp;
-              guild_id = undefined;
-              install_scope = undefined;
-              c2 = undefined;
-              c3 = undefined;
-              templateId = undefined;
-              ({ guildId: c0, installScope: c1, prompt: c2, modelSettings: c3, templateId: c4 } = closure_0);
-              value = undefined;
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              let obj6;
-              const createProject = closure_132_0(closure_132_1[2]).createProject;
-              closure_132_0(closure_132_1[2]);
-              if (null != install_scope) {
-                obj6 = { guild_id, install_scope };
-                const obj5 = { guild_id, install_scope };
-              } else {
-                obj6 = { guild_id, auto_install_scope: true, prompt: install_scope.slice(0, 4000) };
-                install_scope = c2;
-                if (c2 == null) {
-                  install_scope = "";
-                }
-              }
-              c5 = 2;
-              c6 = 1;
-              const obj7 = { value: createProject(obj6), done: false };
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            const obj9 = { templateId };
-            closure_132_3(value, obj9);
-            closure_2 = c3;
-            const tmp29 = closure_132_4;
-            const tmp30 = value;
-            if (c3 == null) {
-              closure_2 = closure_132_0(closure_132_1[3]).CONJURE_DEFAULT_TIER_SETTINGS;
-            }
-            tmp29(tmp30, closure_2);
-            c6 = 3;
-            return { value, done: true };
-          }
-        } catch (tmp19) {
-          c6 = 3;
-          throw tmp19;
+        obj6 = { guild_id, auto_install_scope: true, prompt: install_scope.slice(0, 4000) };
+        install_scope = c2;
+        if (c2 == null) {
+          install_scope = "";
         }
       }
+      value = await createProject(obj6);
+      const obj9 = { templateId };
+      closure_132_3(value, obj9);
+      closure_2 = c3;
+      const tmp29 = closure_132_4;
+      const tmp30 = value;
+      if (c3 == null) {
+        closure_2 = closure_132_0(closure_132_1[3]).CONJURE_DEFAULT_TIER_SETTINGS;
+      }
+      tmp29(tmp30, closure_2);
+      return value;
     })();
     iter.next();
     return iter;

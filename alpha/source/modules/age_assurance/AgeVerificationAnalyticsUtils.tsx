@@ -1,14 +1,14 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6716
+// Function ID: 6717
 // Name: AgeVerificationAnalyticsUtils
-// Dependencies: [4856, 1084, 1264, 2, 6693]
+// Dependencies: [4857, 1084, 1264, 2, 6717]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 6692 (AgeVerificationAnalyticsUtils)
+// Module 6716 (AgeVerificationAnalyticsUtils)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 6693 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 6717 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -21,27 +21,27 @@ export const AgeVerificationModalCta = { LEARN_MORE: "learn_more", GET_STARTED: 
 export const AgeVerificationDmCta = { RETRY: "retry", CONNECT_TO_TEEN: "connect_to_teen", MANUAL_REVIEW: "manual_review" };
 export { NsfwSpaceWarningModalType_export as NsfwSpaceWarningModalType };
 export const NsfwSpaceWarningModalCta = { NSFW_CHANNEL_AGREE_CTA: "nsfw_channel_agree_cta", NSFW_CHANNEL_DISAGREE_CTA: "nsfw_channel_disagree_cta" };
-export const trackAgeVerificationModalViewed = function trackAgeVerificationModalViewed(memo, EXPRESSIVE_PRIMARY, entryPoint) {
+export function trackAgeVerificationModalViewed(memo, EXPRESSIVE_PRIMARY, entryPoint) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { modal_session_id: memo, modal_version: EXPRESSIVE_PRIMARY, entry_point: entryPoint };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_VIEWED, obj2);
-};
-export const trackAgeVerificationModalClicked = function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_PRIMARY, METHOD_SELECT, GOOGLE_WALLET) {
+}
+export function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_PRIMARY, METHOD_SELECT, GOOGLE_WALLET) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { modal_session_id: modalSessionId, modal_version: EXPRESSIVE_PRIMARY, cta: METHOD_SELECT, method: GOOGLE_WALLET };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_CLICKED, obj2);
-};
-export const trackAgeVerificationDmClicked = function trackAgeVerificationDmClicked(CONNECT_TO_TEEN, channelId) {
+}
+export function trackAgeVerificationDmClicked(CONNECT_TO_TEEN, channelId) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { cta: CONNECT_TO_TEEN, channel_id: channelId };
   obj.track(AnalyticEvents.AGE_VERIFICATION_DM_CLICKED, obj2);
-};
-export const trackNsfwSpaceWarningModalViewed = function trackNsfwSpaceWarningModalViewed(modalType, channelId, guildId) {
+}
+export function trackNsfwSpaceWarningModalViewed(modalType, channelId, guildId) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { channel_id: channelId, guild_id: guildId, modal_type: modalType };
   obj.track(AnalyticEvents.NSFW_SPACE_WARNING_MODAL_VIEWED, obj2);
-};
-export const trackNsfwSpaceWarningModalClicked = function trackNsfwSpaceWarningModalClicked(NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId) {
+}
+export function trackNsfwSpaceWarningModalClicked(NSFW_CHANNEL_AGREE_CTA, modalType, channelId, guildId) {
   let channel = null;
   if (null != channelId) {
     channel = ChannelStore.getChannel(channelId);
@@ -58,10 +58,10 @@ export const trackNsfwSpaceWarningModalClicked = function trackNsfwSpaceWarningM
   const obj = AnalyticsUtilsDefault;
   const obj2 = { cta: NSFW_CHANNEL_AGREE_CTA, modal_type: modalType, channel_id: channelId, guild_id: guildId, has_channel_topic: tmp4 };
   obj.track(AnalyticEvents.NSFW_SPACE_WARNING_MODAL_CLICKED, obj2);
-};
+}
 export const AgeVerificationToastType = { VERIFIED_TEEN: "verified_teen", VERIFIED_ADULT: "verified_adult", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage" };
-export const trackAgeVerificationToastViewed = function trackAgeVerificationToastViewed(toast_type) {
+export function trackAgeVerificationToastViewed(toast_type) {
   const obj = AnalyticsUtilsDefault;
   const obj2 = { toast_type };
   obj.track(AnalyticEvents.AGE_VERIFICATION_TOAST_VIEWED, obj2);
-};
+}

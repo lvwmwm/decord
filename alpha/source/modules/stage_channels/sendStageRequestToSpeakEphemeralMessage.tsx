@@ -1,10 +1,10 @@
-// Module ID: 19263
-// Function ID: 19264
+// Module ID: 19496
+// Function ID: 19497
 // Name: sendStageRequestToSpeakEphemeralMessage
 // Dependencies: [1084, 584, 11, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 19263 (sendStageRequestToSpeakEphemeralMessage)
+// Module 19496 (sendStageRequestToSpeakEphemeralMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
@@ -16,7 +16,7 @@ let closure_4;
 ({ MessageFlags: c2, MessageStates: c3, MessageTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/stage_channels/sendStageRequestToSpeakEphemeralMessage.tsx");
 
-export const sendStageRequestToSpeakEphemeralMessage = function sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp) {
+export function sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp) {
   let obj2;
   let obj3;
   const obj = { type: "MESSAGE_CREATE", channelId, message: obj2, optimistic: false, sendMessageOptions: {}, isPushNotification: false };
@@ -25,4 +25,4 @@ export const sendStageRequestToSpeakEphemeralMessage = function sendStageRequest
   DispatcherDefault;
   obj3 = SnowflakeUtilsDefault;
   dispatch(obj);
-};
+}

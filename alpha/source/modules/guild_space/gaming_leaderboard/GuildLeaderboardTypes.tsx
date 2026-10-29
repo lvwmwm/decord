@@ -1,10 +1,10 @@
-// Module ID: 4924
-// Function ID: 4925
+// Module ID: 4925
+// Function ID: 4926
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
 // Exports: getGuildSpaceLeaderboardUserIds, parseGuildSpaceLeaderboardMessageData, parseServerMemberGamingLeaderboardData
 
-// Module 4924 (GuildLeaderboardTypes)
+// Module 4925 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const GamingLeaderboardStat = { GAMING_LEADERBOARD_STAT_UNSPECIFIED: 0, [0]: "GAMING_LEADERBOARD_STAT_UNSPECIFIED", GAMING_LEADERBOARD_STAT_HOURS_PLAYED: 1, [1]: "GAMING_LEADERBOARD_STAT_HOURS_PLAYED", GAMING_LEADERBOARD_STAT_DAYS_PLAYED: 2, [2]: "GAMING_LEADERBOARD_STAT_DAYS_PLAYED", GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED: 3, [3]: "GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED" };
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboar
 
 export { GamingLeaderboardStat };
 export const GuildSpaceLeaderboardEvent = obj2;
-export const getGuildSpaceLeaderboardUserIds = function getGuildSpaceLeaderboardUserIds(leaderboard) {
+export function getGuildSpaceLeaderboardUserIds(leaderboard) {
   let items;
   if (null == leaderboard) {
     items = [];
@@ -23,8 +23,8 @@ export const getGuildSpaceLeaderboardUserIds = function getGuildSpaceLeaderboard
     items = items1.filter((item) => null != item);
   }
   return items;
-};
-export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLeaderboardMessageData(leaderboard) {
+}
+export function parseGuildSpaceLeaderboardMessageData(leaderboard) {
   let obj;
   let secondary_user_id;
   let tmp = null;
@@ -69,8 +69,8 @@ export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLea
     }
   }
   return tmp;
-};
-export const parseServerMemberGamingLeaderboardData = function parseServerMemberGamingLeaderboardData(member_gaming_leaderboard_data) {
+}
+export function parseServerMemberGamingLeaderboardData(member_gaming_leaderboard_data) {
   let winning_value;
   if (null == member_gaming_leaderboard_data) {
     return null;
@@ -113,4 +113,4 @@ export const parseServerMemberGamingLeaderboardData = function parseServerMember
     }
     tmp6 = obj;
   }
-};
+}

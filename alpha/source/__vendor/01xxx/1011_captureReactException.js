@@ -82,7 +82,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let react = react_mod;
 
 export { captureReactException };
-export const isAtLeastReact17 = function isAtLeastReact17(str) {
+export function isAtLeastReact17(str) {
   const match = str.match(/^([^.]+)/);
   let tmp2 = null !== match;
   if (tmp2) {
@@ -90,7 +90,7 @@ export const isAtLeastReact17 = function isAtLeastReact17(str) {
     tmp2 = parseInt(match[0]) >= 17;
   }
   return tmp2;
-};
+}
 export function reactErrorHandler(handled) {
   return (message, componentStack) => {
     const obj = { mechanism: { handled, type: "auto.function.react.error_handler" } };
@@ -99,7 +99,7 @@ export function reactErrorHandler(handled) {
     }
   };
 }
-export const setCause = function setCause(cause, cause2) {
+export function setCause(cause, cause2) {
   const weakSet = new WeakSet();
   function recurse(cause, error) {
     const obj = weakSet;
@@ -130,4 +130,4 @@ export const setCause = function setCause(cause, cause2) {
       cause.cause = cause2;
     }
   }
-};
+}

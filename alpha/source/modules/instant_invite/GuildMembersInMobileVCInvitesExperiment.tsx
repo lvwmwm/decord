@@ -1,11 +1,11 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9117
+// Function ID: 9118
 // Name: GuildMembersInMobileVCInvitesExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 9114 (GuildMembersInMobileVCInvitesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 9117 (GuildMembersInMobileVCInvitesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -16,7 +16,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/instant_invite/GuildMembersInMobileVCInvitesExperiment.tsx");
 
 export default apexExperiment;
-export const getGuildMembersInMobileVCInvitesExperiment = function getGuildMembersInMobileVCInvitesExperiment(location) {
+export function getGuildMembersInMobileVCInvitesExperiment(location) {
   const obj = { location: location.location, guildId: location.guildId };
   return apexExperiment.getConfig(obj).enabled;
-};
+}

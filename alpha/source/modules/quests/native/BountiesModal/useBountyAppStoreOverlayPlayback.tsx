@@ -1,14 +1,14 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16811
+// Function ID: 16812
 // Name: useBountyAppStoreOverlayPlayback
-// Dependencies: [19, 16574, 16576, 558, 576, 16577, 2]
+// Dependencies: [19, 16812, 16814, 558, 576, 16815, 2]
 // Exports: getBountyVideoEndMode
 
-// Module 16573 (useBountyAppStoreOverlayPlayback)
+// Module 16811 (useBountyAppStoreOverlayPlayback)
 import react2 from "react" /* 576 */;
-import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 16574 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 16576 */;
-import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 16577 */;
+import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 16812 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 16814 */;
+import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 16815 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -250,10 +250,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyA
 });
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyAppStoreOverlayPlayback.tsx");
 
-export const getBountyVideoEndMode = function getBountyVideoEndMode(bounty) {
+export function getBountyVideoEndMode(bounty) {
   const obj = useBountyVideoEndAppStoreOverlay;
   const result = obj.canUseBountyVideoEndAppStoreOverlay(bounty);
   const BountyVideoEndMode = useBountiesModalTiming.BountyVideoEndMode;
   return result ? BountyVideoEndMode.APP_STORE_LOOP : BountyVideoEndMode.END_CARD;
-};
+}
 export const useBountyAppStoreOverlayPlayback = tmp2;

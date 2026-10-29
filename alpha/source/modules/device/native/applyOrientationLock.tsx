@@ -1,17 +1,17 @@
-// Module ID: 14386
-// Function ID: 14387
+// Module ID: 14620
+// Function ID: 14621
 // Name: applyOrientationLock
-// Dependencies: [10926, 8857, 2]
+// Dependencies: [10961, 8860, 2]
 // Exports: applyOrientationLock, releaseOrientationLock, restoreDefaultOrientationLock
 
-// Module 14386 (applyOrientationLock)
-import DeviceOrientation from "DeviceOrientation" /* 8857 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10926 */;
+// Module 14620 (applyOrientationLock)
+import DeviceOrientation from "DeviceOrientation" /* 8860 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10961 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/device/native/applyOrientationLock.tsx");
 
-export const applyOrientationLock = function applyOrientationLock(PORTRAIT, flag) {
+export function applyOrientationLock(PORTRAIT, flag) {
   if (flag === undefined) {
     flag = true;
   }
@@ -19,18 +19,18 @@ export const applyOrientationLock = function applyOrientationLock(PORTRAIT, flag
     const obj = DeviceOrientation;
     obj.lockOrientation(PORTRAIT, flag);
   }
-};
-export const releaseOrientationLock = function releaseOrientationLock(unlockAfterRotatingToPreviousLock) {
+}
+export function releaseOrientationLock(unlockAfterRotatingToPreviousLock) {
   unlockAfterRotatingToPreviousLock = unlockAfterRotatingToPreviousLock.unlockAfterRotatingToPreviousLock;
   if (isOrientationLockSupportedDefault()) {
     const obj2 = { unlockAfterRotatingToPreviousLock };
     const obj = DeviceOrientation;
     obj.unlockOrientation(obj2);
   }
-};
-export const restoreDefaultOrientationLock = function restoreDefaultOrientationLock() {
+}
+export function restoreDefaultOrientationLock() {
   if (isOrientationLockSupportedDefault()) {
     const obj = DeviceOrientation;
     const result = obj.restoreDefaultOrientation();
   }
-};
+}

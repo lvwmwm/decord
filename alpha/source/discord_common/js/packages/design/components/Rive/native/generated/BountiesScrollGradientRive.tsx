@@ -1,20 +1,20 @@
-// Module ID: 5137
-// Function ID: 5138
+// Module ID: 5138
+// Function ID: 5139
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 558, 576, 5079, 5138, 5134, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5080, 5139, 5135, 2]
 
-// Module 5137 (BountiesScrollGradientRive)
+// Module 5138 (BountiesScrollGradientRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef5138 from "module_5138" /* 5138 */;
+import _modDef5139 from "module_5139" /* 5139 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BaseRive2 = tmp(5079);
-const RiveErrorBoundary2 = tmp(5134);
+const BaseRive2 = tmp(5080);
+const RiveErrorBoundary2 = tmp(5135);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;
@@ -78,7 +78,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bountie
   }
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp5);
-  const tmp15 = <BaseRive ref={tmp4} src={_modDef5138} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp12} stateMachine={tmp6} />;
+  const tmp15 = <BaseRive ref={tmp4} src={_modDef5139} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp12} stateMachine={tmp6} />;
   cResult[6] = str;
   cResult[7] = tmp12;
   cResult[8] = tmp4;
@@ -104,7 +104,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bountie
   const tmp2 = _objectWithoutProperties(ref, closure_4);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={ref} src={_modDef5138} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+  return <BaseRive ref={ref} src={_modDef5139} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollGradientRiveWithBoundary(fallback) {

@@ -1,158 +1,103 @@
 // Module ID: 12679
 // Function ID: 12680
-// Dependencies: [12635, 12636, 12680, 12683, 12672, 12641]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [12652, 12657]
 
 // Module 12679
-import _mod12641 from "module_12641" /* 12641 */;
-import _mod12680 from "module_12680" /* 12680 */;
-import _mod12683 from "module_12683" /* 12683 */;
-import DEBUG_BUILD from "module_12635" /* 12635 */;
-import CONSOLE_LEVELS from "module_12636" /* 12636 */;
+import TokenStream from "TokenStream" /* 12652 */;
+import tokenize from "tokenize" /* 12657 */;
 
-const require = globalThis.__r;
-let _require, integrations;
-
-
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod12680;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
-    }
+function prepareTokens(arg0, items) {
+  let node1 = null;
+  if (items) {
+    node1 = items[0].node;
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
+  items = [];
+  tokenize(arg0, closure_2);
+  let num = 0;
+  let num2 = 0;
+  while (!closure_2.eof) {
+    let tmp6 = node1;
+    let tmp7 = num;
+    let tmp8 = num2;
+    if (items) {
+      tmp6 = node1;
+      tmp7 = num;
+      tmp8 = num2;
+      if (num < items.length) {
+        let tmp12 = num;
+        let tmp13 = num2;
+        tmp6 = node1;
+        tmp7 = num;
+        tmp8 = num2;
+        if (num2 + items[num].len <= closure_2.tokenStart) {
+          let sum = tmp12 + 1;
+          let sum1 = tmp13 + items[tmp12].len;
+          let node = items[sum].node;
+          tmp6 = node;
+          tmp8 = sum1;
+          tmp7 = sum;
+          while (sum < items.length) {
+            tmp12 = sum;
+            tmp13 = sum1;
+            tmp6 = node;
+            tmp7 = sum;
+            tmp8 = sum1;
+            if (sum1 + items[sum].len > closure_2.tokenStart) {
+              break;
+            }
+          }
+        }
+      }
     }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
+    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
+    let push = items.push;
+    let arr = push(obj);
+    let nextResult = closure_2.next();
+    node1 = tmp6;
+    num = tmp7;
+    num2 = tmp8;
   }
-  const tmp3Result = _mod12680;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod12680;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+  return items;
+}
+let tmp = new TokenStream();
+let closure_2 = tmp;
+let closure_3 = {
+  decorator(children) {
+    let node = null;
+    let obj = { len: 0, node: null };
+    const items = [obj];
+    let closure_4 = "";
+    return {
+      children: children.children,
+      node(arg0) {
+        let closure_1 = arg0;
+        node = children.node;
+        node.call(this, arg0);
+        const tmp = closure_1;
+        closure_1 = tmp;
+      },
+      chunk(arg0) {
+        closure_4 = closure_4 + arg0;
+        if (obj.node !== node) {
+          obj = { len: arg0.length, node };
+          items.push(obj);
+        } else {
+          obj.len = obj.len + arg0.length;
+        }
+      },
+      result() {
+        return prepareTokens(closure_4, items);
+      }
+    };
+  }
 };
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod12680;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
-  }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod12683;
-  }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
+
+export default (str, generate) => {
+  let generateResult;
+  if (typeof str === "string") {
+    generateResult = prepareTokens(str, null);
   } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
+    generateResult = generate.generate(str, closure_3);
   }
-  const items2 = [items1];
-  const tmpResult2 = _mod12680;
-  return tmpResult2.createEnvelope(obj2, items2);
-};
-export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
-  let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
-  }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_12672");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
-  date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
-  if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
-  }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
-  if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(12683);
-  }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
-  const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod12641;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod12641;
-      tmpResult.showSpanDropWarning();
-    }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_12680");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
-    }
-    continue;
-  }
-  const obj8 = require("module_12680");
-  return obj8.createEnvelope(obj2, items);
+  return generateResult;
 };

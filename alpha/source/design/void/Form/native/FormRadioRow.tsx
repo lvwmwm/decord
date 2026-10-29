@@ -1,22 +1,22 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 9000
+// Function ID: 9001
 // Name: FormRadioRow
-// Dependencies: [109, 19, 21, 558, 576, 7022, 5072, 7020, 7279, 7273, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7046, 5073, 7044, 7303, 7297, 2]
 
-// Module 8997 (FormRadioRow)
+// Module 9000 (FormRadioRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react_native from "react-native" /* 5072 */;
-import RedesignCompat from "RedesignCompat" /* 7022 */;
-import FormRowDefault from "FormRow" /* 7273 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 7279 */;
+import react_native from "react-native" /* 5073 */;
+import RedesignCompat from "RedesignCompat" /* 7046 */;
+import FormRowDefault from "FormRow" /* 7297 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 7303 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const TableRadioRow2 = tmp2(7020);
+const TableRadioRow2 = tmp2(7044);
 let closure_3 = ["selected", "align", "leading", "value", "onPress", "style"];
 const jsx = Fragment.jsx;
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioRow(arg0) {
@@ -69,7 +69,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioRow(arg
   if (undefined !== tmp9) {
     str = tmp9;
   }
-  const context = react.useContext(tmp(7022).RedesignCompatContext);
+  const context = react.useContext(tmp(7046).RedesignCompatContext);
   if (cResult[8] !== tmp7) {
     const obj2 = { selected: tmp7 };
     cResult[8] = tmp7;
@@ -95,7 +95,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioRow(arg
         }
       }
     }
-    const TableRadioRow = tmp(7020).TableRadioRow;
+    const TableRadioRow = tmp(7044).TableRadioRow;
     const merged = Object.assign(tmp6);
     const tmp38 = <TableRadioRow icon={tmp4} value={tmp10} legacyCompat_selected={tmp7} legacyCompat_onPress={tmp5} />;
     cResult[10] = tmp5;
@@ -199,12 +199,12 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioRow(arg
     tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
-      tmp8Result3 = tmp8(tmp9(7279), obj4);
+      tmp8Result3 = tmp8(tmp9(7303), obj4);
     }
     tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
-      tmp8Result4 = tmp8(tmp9(7279), obj5);
+      tmp8Result4 = tmp8(tmp9(7303), obj5);
     }
     tmp8Result = tmp8(tmp10, obj3);
   }

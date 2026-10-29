@@ -1,20 +1,20 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 10020
+// Function ID: 10021
 // Name: EmojiGrid
-// Dependencies: [19, 17, 21, 5004, 587, 4954, 1414, 558, 576, 7263, 9973, 9989, 9991, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 4955, 1415, 558, 576, 7287, 10005, 10021, 10023, 2]
 
-// Module 9988 (EmojiGrid)
+// Module 10020 (EmojiGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
-import EmojiDefault from "Emoji" /* 7263 */;
-import chunkDefault from "chunk" /* 9989 */;
-import LayoutUtils from "LayoutUtils" /* 9991 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
+import EmojiDefault from "Emoji" /* 7287 */;
+import chunkDefault from "chunk" /* 10021 */;
+import LayoutUtils from "LayoutUtils" /* 10023 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -225,14 +225,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
     const substr1 = found.slice(0, num3);
     const emojiGridContainer = tmp7.emojiGridContainer;
     const arr4 = chunkDefault(substr1, num4);
-    let GappedList = tmp(9991).GappedList;
+    let GappedList = tmp(10023).GappedList;
     if (cResult[18] !== tmp7.emojiGridRowContainer) {
       class U {
         constructor(arg0, arg1) {
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F148192 */ });
+          obj1.children = arg0.map(function() { /* body not rendered: F149749 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F148192 */ });
+          obj1.children = arg0.map(function() { /* body not rendered: F149749 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -260,7 +260,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F148192 */ });
+          obj1.children = arg0.map(function() { /* body not rendered: F149749 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -305,7 +305,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
     num2 = 5;
   }
   let obj = {};
-  const obj2 = doNotDisplayEmojiIds(9973);
+  const obj2 = doNotDisplayEmojiIds(10005);
   const merged = Object.assign(obj2.useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_5());
   let emojis;
@@ -334,8 +334,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
       return <View key={arg1} style={obj.emojiGridRowContainer}>{null}</View>;
     })
   });
-  arr4 = obj(9989)(substr1, num2);
-  let GappedList = tmp(9991).GappedList;
+  arr4 = obj(10021)(substr1, num2);
+  let GappedList = tmp(10023).GappedList;
   return <View style={obj.emojiGridContainer}>{null}</View>;
 });
 size = size_mod;

@@ -1,21 +1,21 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11619
+// Function ID: 11620
 // Name: StageMusicManager
-// Dependencies: [4856, 2011, 4907, 5666, 6676, 4861, 11563, 11566, 558, 576, 504, 6729, 6723, 7250, 2]
+// Dependencies: [4857, 2012, 4908, 5668, 6700, 4862, 11617, 11620, 558, 576, 504, 6752, 6746, 7274, 2]
 // Exports: shouldShowStageMusicMuteButton
 
-// Module 11565 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 6723 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6676 */;
-import StageInstanceStore from "StageInstanceStore" /* 4861 */;
-import StageMusicStore from "StageMusicStore" /* 11563 */;
-import SoundUtils from "SoundUtils" /* 11566 */;
+// Module 11619 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 6746 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6700 */;
+import StageInstanceStore from "StageInstanceStore" /* 4862 */;
+import StageMusicStore from "StageMusicStore" /* 11617 */;
+import SoundUtils from "SoundUtils" /* 11620 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowStage
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmpResult3 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(6723).StageChannelParticipantNamedIndex.SPEAKER);
+  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(6746).StageChannelParticipantNamedIndex.SPEAKER);
   if (cResult[3] !== stageParticipants) {
     let tmp9;
     const _Symbol = Symbol;
@@ -271,7 +271,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/StageMusicMana
 
 export default stageMusicManager;
 export const useShowStageMusicMuteButton = tmp2;
-export const shouldShowStageMusicMuteButton = function shouldShowStageMusicMuteButton(id) {
+export function shouldShowStageMusicMuteButton(id) {
   let tmp = SelectedChannelStore.getVoiceChannelId() === id;
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);
   const tmp2 = null != mutableParticipants.find((voiceState) => {
@@ -285,4 +285,4 @@ export const shouldShowStageMusicMuteButton = function shouldShowStageMusicMuteB
     tmp = !tmp2;
   }
   return tmp;
-};
+}

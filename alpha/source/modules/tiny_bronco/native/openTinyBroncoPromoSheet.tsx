@@ -1,12 +1,12 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16513
+// Function ID: 16514
 // Name: openTinyBroncoPromoSheet
-// Dependencies: [5246, 16276, 1999, 2]
+// Dependencies: [5247, 16514, 2000, 2]
 // Exports: default
 
-// Module 16275 (openTinyBroncoPromoSheet)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
+// Module 16513 (openTinyBroncoPromoSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import size from "module_2" /* 2 */;
 
 const TINY_BRONCO_PROMO_SHEET_KEY = "TINY_BRONCO_PROMO_SHEET_KEY";
@@ -15,6 +15,6 @@ const TINY_BRONCO_PROMO_SHEET_KEY_export = "TINY_BRONCO_PROMO_SHEET_KEY";
 
 export default function openTinyBroncoPromoSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(16276, dependencyMap.paths), TINY_BRONCO_PROMO_SHEET_KEY, arg0);
+  obj.openLazy(asyncRequire(16514, dependencyMap.paths), TINY_BRONCO_PROMO_SHEET_KEY, arg0);
 };
 export { TINY_BRONCO_PROMO_SHEET_KEY_export as TINY_BRONCO_PROMO_SHEET_KEY };

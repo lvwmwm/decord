@@ -1,38 +1,38 @@
-// Module ID: 16685
-// Function ID: 16686
+// Module ID: 16923
+// Function ID: 16924
 // Name: OrbsArcadeRewardsCollectedModal
-// Dependencies: [32, 19, 17, 5005, 1084, 1391, 21, 5004, 587, 558, 576, 14181, 5270, 8704, 504, 11090, 8697, 9434, 16672, 1125, 7697, 11221, 5280, 7726, 9469, 16684, 7526, 5288, 5294, 1104, 7991, 10693, 16663, 6731, 7257, 2]
+// Dependencies: [32, 19, 17, 5006, 1084, 1391, 21, 5005, 587, 558, 576, 14414, 5271, 8707, 504, 11144, 8700, 9465, 16910, 1125, 7720, 11275, 5281, 7749, 9500, 16922, 7549, 5289, 5295, 1104, 8014, 10726, 16901, 6754, 7281, 2]
 
-// Module 16685 (OrbsArcadeRewardsCollectedModal)
+// Module 16923 (OrbsArcadeRewardsCollectedModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import openUserSettings from "openUserSettings" /* 7526 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7697 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7726 */;
-import useShopProductItems from "useShopProductItems" /* 8697 */;
-import useCurrentUser from "useCurrentUser" /* 8704 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9434 */;
-import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9469 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10693 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11090 */;
-import useHandleUseNow from "useHandleUseNow" /* 11221 */;
-import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 14181 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16663 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16672 */;
-import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 16684 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import openUserSettings from "openUserSettings" /* 7549 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7749 */;
+import useShopProductItems from "useShopProductItems" /* 8700 */;
+import useCurrentUser from "useCurrentUser" /* 8707 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9465 */;
+import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10726 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11144 */;
+import useHandleUseNow from "useHandleUseNow" /* 11275 */;
+import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 14414 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16901 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16910 */;
+import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 16922 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -400,7 +400,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
       }
     }
   }
-  const Button = tmp(5280).Button;
+  const Button = tmp(5281).Button;
   const tmp7 = authStore;
   if (canUseNow) {
     const obj3 = { size: "lg", text: intl2.string(intl4.t.MAS7uK), loading: isApplying, disabled: isApplying, onPress: handleUseNow };
@@ -465,7 +465,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
 
             }
       };
-      const Button = tmp(5280).Button;
+      const Button = tmp(5281).Button;
       intl = tmp(1125).intl;
       tmp7 = authStore(Button, obj4);
     }
@@ -495,7 +495,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
 
         }
     };
-    const Button = tmp(5280).Button;
+    const Button = tmp(5281).Button;
     intl = tmp(1125).intl;
     tmp4 = authStore(Button, obj3);
   }
@@ -674,14 +674,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroC
     }
     return tmp7;
   }
-  const tmp8 = closure_10(consumed(5280).Button, { size: "lg", text: tmp4, onPress: tmp6 });
+  const tmp8 = closure_10(consumed(5281).Button, { size: "lg", text: tmp4, onPress: tmp6 });
   cResult[4] = tmp4;
   cResult[5] = tmp6;
   cResult[6] = tmp8;
   tmp7 = tmp8;
 }) : (function NitroCreditRewardPrimaryAction(consumed) {
   consumed = consumed.consumed;
-  const Button = consumed(5280).Button;
+  const Button = consumed(5281).Button;
   const intl = consumed(1125).intl;
   const string = intl.string;
   const t = consumed(1125).t;
@@ -857,11 +857,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
   importDefault = tmp;
   let tmp2 = entitlements;
   let tmp3 = dependencyMap;
-  let obj = entitlements(5288);
+  let obj = entitlements(5289);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  let obj2 = entitlements(5288);
+  let obj2 = entitlements(5289);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  let obj3 = entitlements(5288);
+  let obj3 = entitlements(5289);
   const token2 = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
   const items = [c7];
   const obj4 = entitlements(504);
@@ -897,9 +897,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
     items3 = [closure_10(tmp4Result, obj6), ];
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items4 };
     const obj7 = { style: tmp.header, children: closure_10(IconButton, obj8) };
-    const SafeAreaPaddingView = tmp2(7257).SafeAreaPaddingView;
-    obj8 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1125).t.cpT0Cq), onPress: tmp2(16684).closeOrbsArcadeRewardsCollectedModal };
-    IconButton = tmp2(7991).IconButton;
+    const SafeAreaPaddingView = tmp2(7281).SafeAreaPaddingView;
+    obj8 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1125).t.cpT0Cq), onPress: tmp2(16922).closeOrbsArcadeRewardsCollectedModal };
+    IconButton = tmp2(8014).IconButton;
     intl3 = tmp2(1125).intl;
     items4 = [closure_10(page, obj7), , ];
     const obj9 = { style: tmp.pager, onLayout: callback, children: tmp28Result };
@@ -966,8 +966,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       tmp28Result3 = tmp28(tmp27, obj12);
     }
     items5 = [tmp28Result3, ];
-    const ButtonGroup = tmp2(6731).ButtonGroup;
-    if (rewards[bound].type === tmp2(16663).OrbsArcadeRewardType.COLLECTIBLE) {
+    const ButtonGroup = tmp2(6754).ButtonGroup;
+    if (rewards[bound].type === tmp2(16901).OrbsArcadeRewardType.COLLECTIBLE) {
       const obj15 = { reward: rewards[bound] };
       tmp28Result4 = tmp28(closure_19, obj15, tmp16.id);
     } else {
@@ -985,7 +985,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeRe
       tmp28Result4 = tmp28(tmp20, obj16, tmp16.id);
     }
     const items6 = [tmp28Result4, ];
-    const Button = tmp2(5280).Button;
+    const Button = tmp2(5281).Button;
     const intl2 = tmp2(1125).intl;
     const string = intl2.string;
     const t = tmp2(1125).t;

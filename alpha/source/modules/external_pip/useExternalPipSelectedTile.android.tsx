@@ -1,14 +1,14 @@
-// Module ID: 18956
-// Function ID: 18957
+// Module ID: 19189
+// Function ID: 19190
 // Name: useExternalPipSelectedTile
-// Dependencies: [19, 6807, 15311, 5750, 18731, 558, 576, 18729, 5860, 504, 2]
+// Dependencies: [19, 6830, 15546, 5752, 18965, 558, 576, 18963, 5862, 504, 2]
 
-// Module 18956 (useExternalPipSelectedTile)
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18731 */;
+// Module 19189 (useExternalPipSelectedTile)
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18965 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15311 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15546 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalP
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         class E {
           constructor() {
-            return () => { /* body not rendered: F157634 */ };
+            return function() { /* body not rendered: F159279 */ };
           }
         }
         let items = [];
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalP
       } else {
         class E {
           constructor() {
-            return () => { /* body not rendered: F157634 */ };
+            return function() { /* body not rendered: F159279 */ };
           }
         }
         tmp7 = cResult[6];
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalP
   }
   class S {
     constructor() {
-      update = function update() { /* body not rendered: F157632 */ };
+      update = function update() { /* body not rendered: F159277 */ };
       items = [, ];
       items[0] = closure_1_6;
       items[1] = closure_1_5;
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalP
       attachResult = batchedStoreListener.attach("useExternalPipSelectedTile");
       closure_1 = closure_1.subscribeFromItem(update);
       updateResult = update();
-      return () => { /* body not rendered: F157633 */ };
+      return function() { /* body not rendered: F159278 */ };
     }
   }
   const items1 = [arg0, arg1, str];

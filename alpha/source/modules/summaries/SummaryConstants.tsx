@@ -1,10 +1,10 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10076
+// Function ID: 10077
 // Name: SummaryConstants
 // Dependencies: [1101, 1125, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 10044 (SummaryConstants)
+// Module 10076 (SummaryConstants)
 import DurationsDefault from "Durations" /* 1101 */;
 import intl7 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ export const SUMMARY_POLL_INTERVAL = result;
 export const SummariesSidebarToggledSource = { TOOLBAR_BUTTON: "toolbar button", PILL: "pill" };
 export const SummariesTopicClickedSource = { SIDEBAR: "sidebar", PILL_DROPDOWN: "pill dropdown", PILL_NEXT_ARROW: "pill next arrow", PILL_PREVIOUS_ARROW: "pill previous arrow" };
 export { SummaryFeedbackReasons };
-export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
+export function getSummaryFeedbackReasons() {
   let intl;
   let intl2;
   let intl3;
@@ -44,4 +44,4 @@ export const getSummaryFeedbackReasons = function getSummaryFeedbackReasons() {
   intl6 = intl7.intl;
   items[5] = obj6;
   return items;
-};
+}

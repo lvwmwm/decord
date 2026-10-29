@@ -1,12 +1,12 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6076
+// Function ID: 6077
 // Name: CheckpointExperiments
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled
 
-// Module 6072 (CheckpointExperiments)
+// Module 6076 (CheckpointExperiments)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,12 +55,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCheck
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperiments.tsx");
 
 export const useIsCheckpointEnabled = tmp2;
-export const getIsCheckpointEnabled = function getIsCheckpointEnabled(getCheckpointClickable) {
+export function getIsCheckpointEnabled(getCheckpointClickable) {
   const obj = { location: getCheckpointClickable };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useIsCheckpointCardEnabled = tmp3;
-export const getIsCheckpointCardEnabled = function getIsCheckpointCardEnabled(transformCheckpoint2026CardComponent) {
+export function getIsCheckpointCardEnabled(transformCheckpoint2026CardComponent) {
   const obj = { location: transformCheckpoint2026CardComponent };
   return closure_3.getConfig(obj).enabled;
-};
+}

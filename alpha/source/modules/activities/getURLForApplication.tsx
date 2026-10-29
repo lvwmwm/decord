@@ -1,14 +1,14 @@
-// Module ID: 5659
-// Function ID: 5660
+// Module ID: 5661
+// Function ID: 5662
 // Name: getURLForApplication
-// Dependencies: [32, 5660, 5661, 1383, 2]
+// Dependencies: [32, 5662, 5663, 1383, 2]
 // Exports: default, getApplicationRouterOrigin, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 5659 (getURLForApplication)
+// Module 5661 (getURLForApplication)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TestModeStore from "TestModeStore" /* 5660 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5661 */;
+import TestModeStore from "TestModeStore" /* 5662 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5663 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
@@ -54,7 +54,7 @@ export default function getURLForApplication(arg0) {
   }
   return activityUrlOverride;
 };
-export const getNonTestModeUrlForApplication = function getNonTestModeUrlForApplication(arg0) {
+export function getNonTestModeUrlForApplication(arg0) {
   if (null == ACTIVITY_APPLICATION_HOST) {
     return null;
   } else if (ACTIVITY_APPLICATION_HOST.startsWith("//")) {
@@ -72,8 +72,8 @@ export const getNonTestModeUrlForApplication = function getNonTestModeUrlForAppl
     const _HermesInternal = HermesInternal;
     return "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
   }
-};
-export const getApplicationRouterOrigin = function getApplicationRouterOrigin(embeddedAppUrl) {
+}
+export function getApplicationRouterOrigin(embeddedAppUrl) {
   const obj = URLUtilsDefault;
   const toURLSafeResult = obj.toURLSafe(embeddedAppUrl);
   if (null == toURLSafeResult) {
@@ -116,9 +116,9 @@ export const getApplicationRouterOrigin = function getApplicationRouterOrigin(em
     }
     return origin2;
   }
-};
-export const isUsingDevShelfActivityUrlOverride = function isUsingDevShelfActivityUrlOverride() {
+}
+export function isUsingDevShelfActivityUrlOverride() {
   const state = DeveloperActivityShelfStore.getState();
   const useActivityUrlOverride = state.useActivityUrlOverride && null != state.activityUrlOverride && "" !== state.activityUrlOverride;
   return useActivityUrlOverride;
-};
+}

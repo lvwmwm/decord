@@ -1,28 +1,28 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17971
+// Function ID: 17972
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 4856, 21, 11098, 587, 17734, 558, 576, 504, 17743, 7256, 14107, 2]
+// Dependencies: [32, 19, 4857, 21, 11152, 587, 17972, 558, 576, 504, 17981, 7280, 14340, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 17733 (MessagesItemChannel)
+// Module 17971 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11098 */;
-import LegendList from "LegendList" /* 14107 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 17734 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17743 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
+import LegendList from "LegendList" /* 14340 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 17972 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 17981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
 
 let tmp;
-const defaultMVCPConfig = tmp(7256);
+const defaultMVCPConfig = tmp(7280);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannel(channelId) {
@@ -240,7 +240,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
 }));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
-export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
+export function getMessagesItemChannelSizes(fontScale) {
   let sum;
   const obj = useScaledTextLineHeight;
   const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
@@ -251,7 +251,7 @@ export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(
   const obj3 = { avatar: PX_32, height: sum + MessagesItemChannelBase.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING, label: scaleTextLineHeightResult, labelSecondary: scaleTextLineHeightResult1, padding: PX_16 };
   sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
   return obj3;
-};
+}
 export const MessagesItemChannelFast = memoResult;
 export const MessagesItemChannelFlash = memo2Result;
 export const MessagesItemChannelLegend = memo3Result;

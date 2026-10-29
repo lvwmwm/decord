@@ -1,25 +1,25 @@
-// Module ID: 18536
-// Function ID: 18537
+// Module ID: 18770
+// Function ID: 18771
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 15293, 1084, 7579, 1391, 21, 1101, 5004, 587, 18537, 1264, 1125, 558, 576, 2046, 573, 7592, 7589, 18535, 2064, 5270, 2050, 1199, 6944, 9456, 5294, 7339, 2]
+// Dependencies: [19, 17, 15528, 1084, 7602, 1391, 21, 1101, 5005, 587, 18771, 1264, 1125, 558, 576, 2047, 573, 7615, 7612, 18769, 2065, 5271, 2051, 1199, 6968, 9487, 5295, 7363, 2]
 
-// Module 18536 (YouExpiringTrialOfferCard)
+// Module 18770 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl4 from "intl" /* 1125 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import ColorConstants from "ColorConstants" /* 7579 */;
-import useCountdownDefault from "useCountdown" /* 7589 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18537 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import ColorConstants from "ColorConstants" /* 7602 */;
+import useCountdownDefault from "useCountdown" /* 7612 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18771 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 15293 */;
+import NoticeStore from "NoticeStore" /* 15528 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const HelpdeskUtilsDefault = tmp(2064);
-const UserProfileCardDefault = tmp(7339);
+const HelpdeskUtilsDefault = tmp(2065);
+const UserProfileCardDefault = tmp(7363);
 function getNoticeCopy(days, trialPeriod, termsUrl) {
   let formatResult;
   if (days.days > 0) {
@@ -84,7 +84,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   navigateToPremium = navigateToPremium.navigateToPremium;
   const style = navigateToPremium.style;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = untilAtLeast(2046)();
+    let obj2 = untilAtLeast(2047)();
     const addResult = obj2.add(5, "days");
     cResult[0] = addResult;
     untilAtLeast = addResult;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmpResult4 = tmp(7592);
+  const tmpResult4 = tmp(7615);
   const premiumTrialOffer = tmpResult4.usePremiumTrialOffer();
   if (cResult[3] !== premiumTrialOffer) {
     let num5 = 0;
@@ -132,8 +132,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   } else {
     tmp13 = cResult[4];
   }
-  const tmp16 = untilAtLeast(7589)(tmp13, closure_15);
-  const tmpResult5 = tmp(18535);
+  const tmp16 = untilAtLeast(7612)(tmp13, closure_15);
+  const tmpResult5 = tmp(18769);
   shouldShowExpiringTrialOfferCard = tmpResult5.useShouldShowExpiringTrialOfferCard();
   if (cResult[5] === stateFromStores) {
     if (cResult[6] === shouldShowExpiringTrialOfferCard) {
@@ -331,7 +331,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                                                       return tmp(tmp2, obj);
                                                     }
                                                   }
-                                                  const tmp80 = closure_12(untilAtLeast(7339), tmp79);
+                                                  const tmp80 = closure_12(untilAtLeast(7363), tmp79);
                                                   cResult[58] = tmp73;
                                                   cResult[59] = style;
                                                   cResult[60] = tmp80;
@@ -461,7 +461,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                                   }
                                 }
                                 let obj4 = { style: null, accessibilityRole: "button", accessibilityLabel: tmp52, hitSlop: tmp53, onPress: tmp56, children: tmp57 };
-                                const tmp61 = closure_12(tmp(6944).PressableOpacity, obj4);
+                                const tmp61 = closure_12(tmp(6968).PressableOpacity, obj4);
                                 cResult[37] = tmp7.closeButton;
                                 cResult[38] = tmp56;
                                 cResult[39] = tmp57;
@@ -517,7 +517,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                 }
               }
             }
-            untilAtLeast(2064);
+            untilAtLeast(2065);
             class A {
               constructor() {
                 return shouldShowExpiringTrialOfferCard.getNoticeType();
@@ -530,11 +530,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
             }
             const header = tmp7.header;
             const tmp31Result = tmp31(PREMIUM_TRIAL);
-            const Text = tmp(5270).Text;
+            const Text = tmp(5271).Text;
             const subscriptionTrial3 = premiumTrialOffer.subscriptionTrial;
             let interval;
-            const formatIntervalDuration = tmp(2050).formatIntervalDuration;
-            tmp(2050);
+            const formatIntervalDuration = tmp(2051).formatIntervalDuration;
+            tmp(2051);
             const tmp37 = getNoticeCopy;
             if (subscriptionTrial3 != null) {
               interval = subscriptionTrial3.interval;
@@ -624,7 +624,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   let tmp = importDefault;
   let tmp2 = dependencyMap;
   const style = navigateToPremium.style;
-  let obj = _modDef2046();
+  let obj = _modDef2047();
   importDefault = obj.add(5, "days");
   const tmp3 = closure_16();
   dependencyMap = tmp3;
@@ -632,7 +632,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   let obj2 = navigateToPremium(573);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(7592);
+  let obj3 = navigateToPremium(7615);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -644,7 +644,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
     }
   }
   const tmp7Result = tmp7(num, closure_15);
-  const tmp4Result = tmp4(18535);
+  const tmp4Result = tmp4(18769);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -669,11 +669,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
         }
         let obj4 = { style: tmp3.header, children: closure_12(Text, obj7) };
         const articleURL = getArticleURL(PREMIUM_TRIAL);
-        Text = tmp4(5270).Text;
+        Text = tmp4(5271).Text;
         const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
         let interval;
-        const formatIntervalDuration = tmp4(2050).formatIntervalDuration;
-        tmp4(2050);
+        const formatIntervalDuration = tmp4(2051).formatIntervalDuration;
+        tmp4(2051);
         const tmp17 = premiumTrialOffer;
         const tmp18 = getNoticeCopy;
         if (subscriptionTrial != null) {
@@ -705,7 +705,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                 },
           children: closure_12(tmp4(1199).CloseIcon, size)
         };
-        const PressableOpacity = tmp4(6944).PressableOpacity;
+        const PressableOpacity = tmp4(6968).PressableOpacity;
         intl = tmp4(1125).intl;
         size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         items2[1] = closure_12(PressableOpacity, obj8);

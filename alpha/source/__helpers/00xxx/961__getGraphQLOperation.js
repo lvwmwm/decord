@@ -63,10 +63,10 @@ function _getGraphQLOperation(operationName) {
       } else {
         const match1 = query.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
         if (match1) {
-          obj = { operationType: match1[1], operationName: "Array" };
-          const obj3 = { operationType: match1[1], operationName: "Array" };
+          obj = { operationType: match1[1], operationName: "a" };
+          const obj3 = { operationType: match1[1], operationName: "a" };
         } else {
-          obj = { operationType: "useCallback", operationName: "PX_16" };
+          obj = { operationType: "Array", operationName: "Reflect" };
         }
       }
       let operationName2 = obj.operationName;
@@ -144,7 +144,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { _getGraphQLOperation };
 export { getGraphQLRequestPayload };
-export const getRequestPayloadXhrOrFetch = function getRequestPayloadXhrOrFetch(input) {
+export function getRequestPayloadXhrOrFetch(input) {
   let first1;
   if ("xhr" in input) {
     const tmp7 = input.xhr[_addMeasureSpans.SENTRY_XHR_DATA_KEY];
@@ -162,7 +162,7 @@ export const getRequestPayloadXhrOrFetch = function getRequestPayloadXhrOrFetch(
     first1 = obj2.getBodyString(fetchRequestArgBody)[0];
   }
   return first1;
-};
+}
 export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineIntegration((arg0) => {
   let closure_0 = arg0;
   let obj = {
@@ -342,7 +342,7 @@ export const graphqlClientIntegration = registerSpanErrorInstrumentation.defineI
   };
   return obj;
 });
-export const parseGraphQLQuery = function parseGraphQLQuery(str) {
+export function parseGraphQLQuery(str) {
   const match = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)(\w+)(?:\s*)[{(]/);
   if (match) {
     return { operationType: match[1], operationName: match[2] };
@@ -350,11 +350,11 @@ export const parseGraphQLQuery = function parseGraphQLQuery(str) {
     let obj;
     const match1 = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
     if (match1) {
-      obj = { operationType: match1[1], operationName: "Array" };
-      const obj3 = { operationType: match1[1], operationName: "Array" };
+      obj = { operationType: match1[1], operationName: "a" };
+      const obj3 = { operationType: match1[1], operationName: "a" };
     } else {
-      obj = { operationType: "useCallback", operationName: "PX_16" };
+      obj = { operationType: "Array", operationName: "Reflect" };
     }
     return obj;
   }
-};
+}

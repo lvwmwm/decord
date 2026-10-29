@@ -21,7 +21,7 @@ let set;
 
 let tmp3;
 const generateSpanId = tmp3(705);
-const f87037 = (attributes) => {
+const f88044 = (attributes) => {
   let spanId;
   let traceFlags;
   let traceId;
@@ -127,7 +127,7 @@ function spanToJSON(getSpanJSON) {
       mapped = undefined;
       if (links) {
         if (links.length > 0) {
-          mapped = links.map(f87037);
+          mapped = links.map(f88044);
         }
       }
       return obj2;
@@ -147,7 +147,7 @@ const _sentryRootSpan = "_sentryRootSpan";
 
 export const TRACE_FLAG_NONE = 0;
 export const TRACE_FLAG_SAMPLED = 1;
-export const addChildSpanToSpan = function addChildSpanToSpan(arg0, arg1) {
+export function addChildSpanToSpan(arg0, arg1) {
   let tmp2 = arg0[_sentryRootSpan];
   const tmp = _sentryRootSpan;
   if (!tmp2) {
@@ -168,17 +168,17 @@ export const addChildSpanToSpan = function addChildSpanToSpan(arg0, arg1) {
     set = new Set(items);
     const result1 = addNonEnumerableProperty(arg0, tmp6, set);
   }
-};
-export const convertSpanLinksForEnvelope = function convertSpanLinksForEnvelope(_links) {
+}
+export function convertSpanLinksForEnvelope(_links) {
   let mapped;
   if (_links) {
     if (_links.length > 0) {
-      mapped = _links.map(f87037);
+      mapped = _links.map(f88044);
     }
   }
   return mapped;
-};
-export const getActiveSpan = function getActiveSpan() {
+}
+export function getActiveSpan() {
   let activeSpan;
   const obj = _mod701;
   const mainCarrier = obj.getMainCarrier();
@@ -193,11 +193,11 @@ export const getActiveSpan = function getActiveSpan() {
     activeSpan = _getSpanForScope(tmpResult2.getCurrentScope());
   }
   return activeSpan;
-};
-export const getRootSpan = function getRootSpan(arg0) {
+}
+export function getRootSpan(arg0) {
   return arg0[_sentryRootSpan] || arg0;
-};
-export const getSpanDescendants = function getSpanDescendants(arg0) {
+}
+export function getSpanDescendants(arg0) {
   set = new Set();
   function addSpanChildren(arg0) {
     const obj = set;
@@ -219,8 +219,8 @@ export const getSpanDescendants = function getSpanDescendants(arg0) {
   }
   addSpanChildren(arg0);
   return Array.from(set);
-};
-export const getStatusMessage = function getStatusMessage(code) {
+}
+export function getStatusMessage(code) {
   const tmp = code;
   if (tmp) {
     const tmp2 = require;
@@ -232,14 +232,14 @@ export const getStatusMessage = function getStatusMessage(code) {
       return str;
     }
   }
-};
-export const removeChildSpanFromSpan = function removeChildSpanFromSpan(arg0, arg1) {
+}
+export function removeChildSpanFromSpan(arg0, arg1) {
   if (arg0[_sentryChildSpans]) {
     const obj = arg0[tmp];
     obj.delete(arg1);
   }
-};
-export const showSpanDropWarning = function showSpanDropWarning() {
+}
+export function showSpanDropWarning() {
   const tmp = c2;
   if (!tmp) {
     const obj = CONSOLE_LEVELS;
@@ -248,9 +248,9 @@ export const showSpanDropWarning = function showSpanDropWarning() {
     });
     c2 = true;
   }
-};
+}
 export { spanIsSampled };
-export const spanTimeInputToSeconds = function spanTimeInputToSeconds(getTime) {
+export function spanTimeInputToSeconds(getTime) {
   let sum;
   if (typeof getTime === "number") {
     let result = getTime;
@@ -278,9 +278,9 @@ export const spanTimeInputToSeconds = function spanTimeInputToSeconds(getTime) {
     }
   }
   return sum;
-};
+}
 export { spanToJSON };
-export const spanToTraceContext = function spanToTraceContext(spanContext) {
+export function spanToTraceContext(spanContext) {
   let isRemote;
   let spanId;
   const spanContextResult = spanContext.spanContext();
@@ -305,8 +305,8 @@ export const spanToTraceContext = function spanToTraceContext(spanContext) {
     spanId = propagationSpanId;
   }
   return obj2;
-};
-export const spanToTraceHeader = function spanToTraceHeader(spanContext) {
+}
+export function spanToTraceHeader(spanContext) {
   let spanId;
   let traceId;
   ({ traceId, spanId } = spanContext.spanContext());
@@ -314,8 +314,8 @@ export const spanToTraceHeader = function spanToTraceHeader(spanContext) {
   const traceFlags = spanContext.spanContext().traceFlags;
   const obj = regExp;
   return obj.generateSentryTraceHeader(traceId, spanId, 1 === traceFlags);
-};
-export const spanToTraceparentHeader = function spanToTraceparentHeader(span) {
+}
+export function spanToTraceparentHeader(span) {
   let spanId;
   let traceId;
   ({ traceId, spanId } = span.spanContext());
@@ -323,17 +323,17 @@ export const spanToTraceparentHeader = function spanToTraceparentHeader(span) {
   const traceFlags = span.spanContext().traceFlags;
   const obj = regExp;
   return obj.generateTraceparentHeader(traceId, spanId, 1 === traceFlags);
-};
-export const spanToTransactionTraceContext = function spanToTransactionTraceContext(spanContext) {
+}
+export function spanToTransactionTraceContext(spanContext) {
   let spanId;
   let traceId;
   ({ spanId, traceId } = spanContext.spanContext());
   spanContext.spanContext();
   const tmp2 = spanToJSON(spanContext);
   return { parent_span_id: tmp2.parent_span_id, span_id: spanId, trace_id: traceId, data: tmp2.data, op: tmp2.op, status: tmp2.status, origin: tmp2.origin, links: tmp2.links };
-};
-export const updateSpanName = function updateSpanName(updateName, arg1) {
+}
+export function updateSpanName(updateName, arg1) {
   updateName.updateName(arg1);
   const obj = { [closure_1_0(closure_1_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "custom", [closure_1_0(closure_1_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME]: arg1 };
   updateName.setAttributes(obj);
-};
+}

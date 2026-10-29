@@ -1,14 +1,14 @@
-// Module ID: 19589
-// Function ID: 19590
+// Module ID: 19822
+// Function ID: 19823
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1271, 1266, 7393, 558, 576, 4919, 5299, 16840, 2]
+// Dependencies: [32, 5, 1271, 1266, 7416, 558, 576, 4920, 5300, 17078, 2]
 // Exports: resetImperatively
 
-// Module 19589 (RoleTierEditStore)
+// Module 19822 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1271 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7393 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16840 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7416 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17078 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1266 from "module_1266" /* 1266 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, c3, c4, dependencyMap, set;
 
 let tmp;
-const _slicedToArray2 = tmp(4919);
+const _slicedToArray2 = tmp(4920);
 let _slicedToArray = _slicedToArray_mod;
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
@@ -60,7 +60,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           let c2;
@@ -116,7 +116,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp21) {
             if (0 === c2) {
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4919).shallow), 3);
+  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4920).shallow), 3);
   const first1 = tmp5[0];
   let closure_2 = tmp7;
   dependencyMap = tmp8;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
         if (cResult[6] === tmp9) {
           tmp10 = cResult[7];
         }
-        first1(5299)(tmp10);
+        first1(5300)(tmp10);
         if (cResult[8] === guildId) {
           if (cResult[9] === tmp9) {
             if (cResult[10] === tmp5[1]) {
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5299)(() => {
+  tiers(5300)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {
@@ -446,9 +446,9 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export { LoadingState };
 export const useRoleTierEditStore = withEqualityFn;
-export const resetImperatively = function resetImperatively() {
+export function resetImperatively() {
   withEqualityFn.getState().reset();
-};
+}
 export const useCurrentTierEditScene = tmp3;
 export const useResetTierEditState = tmp4;
 export const usePriceTiers = tmp5;

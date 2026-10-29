@@ -4,9 +4,11 @@
 // Exports: addUserAgentToTransportHeaders
 
 // Module 768
+let version;
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addUserAgentToTransportHeaders = function addUserAgentToTransportHeaders(_metadata) {
+export function addUserAgentToTransportHeaders(_metadata) {
   let obj3;
   _metadata = _metadata._metadata;
   let sdk;
@@ -19,7 +21,7 @@ export const addUserAgentToTransportHeaders = function addUserAgentToTransportHe
   }
   let combined;
   if (name) {
-    let version;
+    version = undefined;
     if (sdk != null) {
       version = sdk.version;
     }
@@ -52,4 +54,4 @@ export const addUserAgentToTransportHeaders = function addUserAgentToTransportHe
   }
   const merged2 = Object.assign(headers);
   _metadata.transportOptions = obj;
-};
+}

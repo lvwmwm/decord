@@ -1,16 +1,16 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16236
+// Function ID: 16237
 // Name: getEmbeddedActivityPopoutWindowKey
-// Dependencies: [2042, 7865, 4855, 5645, 1084, 2028, 5662, 4925, 558, 576, 504, 2]
+// Dependencies: [2043, 7888, 4856, 5646, 1084, 2029, 5664, 4926, 558, 576, 504, 2]
 // Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel
 
-// Module 15999 (getEmbeddedActivityPopoutWindowKey)
+// Module 16236 (getEmbeddedActivityPopoutWindowKey)
 import Constants from "Constants" /* 1084 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5645 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7865 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4926 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7888 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const result = size.fileFinishedImporting("modules/activities/getEmbeddedActivit
 
 export default getEmbeddedActivityPopoutWindowKey;
 export { getEmbeddedActivityPopoutWindowKeyForChannel };
-export const getEmbeddedActivityPopoutWindowKeyForApplication = function getEmbeddedActivityPopoutWindowKeyForApplication(applicationId) {
+export function getEmbeddedActivityPopoutWindowKeyForApplication(applicationId) {
   applicationId = applicationId.applicationId;
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
   if (null != currentEmbeddedActivity) {
@@ -100,5 +100,5 @@ export const getEmbeddedActivityPopoutWindowKeyForApplication = function getEmbe
       }
     }
   }
-};
+}
 export const usePopoutWindowForActivity = tmp2;

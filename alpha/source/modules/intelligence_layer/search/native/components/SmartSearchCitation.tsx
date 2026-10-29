@@ -1,12 +1,12 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 18649
+// Function ID: 18650
 // Name: SmartSearchCitation
-// Dependencies: [5, 19, 9748, 21, 558, 576, 18365, 13480, 13478, 18416, 18396, 2]
+// Dependencies: [5, 19, 9780, 21, 558, 576, 18599, 13713, 13711, 18650, 18630, 2]
 
-// Module 18415 (SmartSearchCitation)
+// Module 18649 (SmartSearchCitation)
 import Fragment from "Fragment" /* 21 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18416 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         }
         onPressMessageItem(citation.channelId, citation.messageId);
         numCitationsPresented = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp12) {
         if (0 === index) {
           numCitationsPresented = 3;
@@ -214,7 +214,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -258,7 +258,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         }
         closure_128_4(closure_128_1.channelId, closure_128_1.messageId);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp12) {
         if (0 === index) {
           c3 = 3;

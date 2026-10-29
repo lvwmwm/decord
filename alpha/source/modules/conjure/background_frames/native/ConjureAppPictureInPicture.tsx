@@ -1,32 +1,32 @@
-// Module ID: 18738
-// Function ID: 18739
+// Module ID: 18972
+// Function ID: 18973
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6810, 4878, 1084, 18650, 6811, 10940, 21, 4961, 5004, 587, 558, 576, 9300, 504, 6919, 5270, 18739, 11664, 8609, 7293, 11531, 18740, 18736, 5085, 18327, 14081, 5248, 5333, 5242, 5283, 1125, 3863, 11818, 11822, 5070, 2]
+// Dependencies: [19, 17, 6833, 4879, 1084, 18884, 6834, 10975, 21, 4962, 5005, 587, 558, 576, 9304, 504, 6943, 5271, 14469, 11718, 8631, 7317, 11585, 18973, 18970, 5086, 18561, 14314, 5249, 5334, 5243, 5284, 1125, 3864, 11872, 11876, 5071, 2]
 
-// Module 18738 (ConjureAppPictureInPicture)
+// Module 18972 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import timing from "timing" /* 5242 */;
-import spring from "spring" /* 5283 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import GuildIconDefault from "GuildIcon" /* 6919 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9300 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10940 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18327 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18650 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 18736 */;
-import conjureFrameSound from "conjureFrameSound" /* 18739 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 18740 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import timing from "timing" /* 5243 */;
+import spring from "spring" /* 5284 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import GuildIconDefault from "GuildIcon" /* 6943 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9304 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10975 */;
+import conjureFrameSound from "conjureFrameSound" /* 14469 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 18561 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18884 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 18970 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 18973 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesStore from "FramesStore" /* 6833 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import FramesConstants from "FramesConstants" /* 6834 */;
 import Fragment from "Fragment" /* 21 */;
-import DeviceUtils_mod from "DeviceUtils" /* 4961 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import DeviceUtils_mod from "DeviceUtils" /* 4962 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -213,9 +213,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundB
     let VoiceNormalIcon;
     let tmp6;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp(11664).VoiceXIcon;
+      VoiceNormalIcon = tmp(11718).VoiceXIcon;
     } else {
-      VoiceNormalIcon = tmp(8609).VoiceNormalIcon;
+      VoiceNormalIcon = tmp(8631).VoiceNormalIcon;
     }
     if (cResult[0] !== VoiceNormalIcon) {
       const obj3 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
@@ -250,9 +250,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundB
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(11664).VoiceXIcon;
+      VoiceNormalIcon = tmp2(11718).VoiceXIcon;
     } else {
-      VoiceNormalIcon = tmp2(8609).VoiceNormalIcon;
+      VoiceNormalIcon = tmp2(8631).VoiceNormalIcon;
     }
     const obj2 = { style: tmp.soundBadge, pointerEvents: "none", children: authStore(VoiceNormalIcon, obj3) };
     obj3 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };

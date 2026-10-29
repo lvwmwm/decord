@@ -1,16 +1,16 @@
-// Module ID: 19313
-// Function ID: 19314
+// Module ID: 19546
+// Function ID: 19547
 // Name: SystemRulesUtils
 // Dependencies: [2]
 // Exports: isDefaultRuleId
 
-// Module 19313 (SystemRulesUtils)
+// Module 19546 (SystemRulesUtils)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["1030554520465440818"]);
 const result = size.fileFinishedImporting("modules/guild_automod/SystemRulesUtils.tsx");
 
-export const isDefaultRuleId = function isDefaultRuleId(id) {
+export function isDefaultRuleId(id) {
   const hasItem = null != id && set.has(id);
   return hasItem;
-};
+}

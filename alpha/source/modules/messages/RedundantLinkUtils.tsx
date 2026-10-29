@@ -1,20 +1,20 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8542
+// Function ID: 8543
 // Name: RedundantLinkUtils
-// Dependencies: [6522, 6521, 5735, 2]
+// Dependencies: [6546, 6545, 5737, 2]
 // Exports: hasOnlySimpleEmbed, isRedundantLink, isSingleLinkContent, readContentLinks
 
-// Module 8520 (RedundantLinkUtils)
-import findCodedLinks from "findCodedLinks" /* 5735 */;
-import EmbedUtils from "EmbedUtils" /* 6521 */;
-import EmbedConstants from "EmbedConstants" /* 6522 */;
+// Module 8542 (RedundantLinkUtils)
+import findCodedLinks from "findCodedLinks" /* 5737 */;
+import EmbedUtils from "EmbedUtils" /* 6545 */;
+import EmbedConstants from "EmbedConstants" /* 6546 */;
 import size from "module_2" /* 2 */;
 
 const SIMPLE_EMBED_TYPES = EmbedConstants.SIMPLE_EMBED_TYPES;
 const result = size.fileFinishedImporting("modules/messages/RedundantLinkUtils.tsx");
 
 export const NO_LINK_CONTENT = { linkCount: 0, onlyLinks: false };
-export const readContentLinks = function readContentLinks(found1, isLinkNode) {
+export function readContentLinks(found1, isLinkNode) {
   let linkCount = 0;
   const iter = found1[Symbol.iterator]();
   while (iter !== undefined) {
@@ -28,8 +28,8 @@ export const readContentLinks = function readContentLinks(found1, isLinkNode) {
     }
   }
   return { linkCount, onlyLinks: true };
-};
-export const hasOnlySimpleEmbed = function hasOnlySimpleEmbed(embeds) {
+}
+export function hasOnlySimpleEmbed(embeds) {
   if (1 !== embeds.length) {
     return false;
   } else {
@@ -41,12 +41,12 @@ export const hasOnlySimpleEmbed = function hasOnlySimpleEmbed(embeds) {
     }
     return hasItem;
   }
-};
-export const isSingleLinkContent = function isSingleLinkContent(contentLinks) {
+}
+export function isSingleLinkContent(contentLinks) {
   const onlyLinks = contentLinks.onlyLinks && 1 === tmp;
   return onlyLinks;
-};
-export const isRedundantLink = function isRedundantLink(target, arg1) {
+}
+export function isRedundantLink(target, arg1) {
   let onlyLinkContent;
   let stripGameServerShareLinks;
   ({ onlyLinkContent, stripGameServerShareLinks } = arg1);
@@ -64,4 +64,4 @@ export const isRedundantLink = function isRedundantLink(target, arg1) {
     tmp5 = stripGameServerShareLinks;
   }
   return tmp5;
-};
+}

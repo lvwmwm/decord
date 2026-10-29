@@ -1,10 +1,10 @@
-// Module ID: 6741
-// Function ID: 6742
+// Module ID: 6764
+// Function ID: 6765
 // Name: GuildsTree
 // Dependencies: [38, 12, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 6741 (GuildsTree)
+// Module 6764 (GuildsTree)
 import _mod12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
@@ -164,9 +164,9 @@ class GuildsTree {
     self.version = self.version + 1;
     return self;
   }
-  cloneNode(node) {
+  cloneNode(arg0) {
     obj = _mod12;
-    return obj.clone(node);
+    return obj.clone(arg0);
   }
   convertToFolder(node) {
     const self = this;
@@ -198,7 +198,7 @@ class GuildsTree {
   }
   sortedGuildNodes() {
     let items1;
-    const f145546 = (type) => {
+    const f147095 = (type) => {
       let items1;
       if (type.type === constants.GUILD) {
         const items = [type];
@@ -207,7 +207,7 @@ class GuildsTree {
         items1 = [];
       } else {
         const children = type.children;
-        const mapped = children.map(f145546);
+        const mapped = children.map(f147095);
         items1 = mapped.flat();
       }
       return items1;
@@ -220,7 +220,7 @@ class GuildsTree {
       items1 = [];
     } else {
       let children = root.children;
-      let mapped = children.map(f145546);
+      let mapped = children.map(f147095);
       items1 = mapped.flat();
     }
     return items1;
@@ -255,11 +255,11 @@ Object.defineProperty(GuildsTree.prototype, "size", {
 
 export { GuildsNodeType };
 export { GuildsTree };
-export const createGuildNode = function createGuildNode(item10030, id) {
+export function createGuildNode(item10030, id) {
   const element = { type: obj.GUILD, id: item10030, parentId: id, children: [], unavailable: false };
   return element;
-};
-export const createFolderNode = function createFolderNode(folderId, parentId, ExpandedGuildFolderStore) {
+}
+export function createFolderNode(folderId, parentId, ExpandedGuildFolderStore) {
   let folderColor;
   let folderName;
   let tmp;
@@ -275,4 +275,4 @@ export const createFolderNode = function createFolderNode(folderId, parentId, Ex
     tmp = flag;
   }
   return element;
-};
+}

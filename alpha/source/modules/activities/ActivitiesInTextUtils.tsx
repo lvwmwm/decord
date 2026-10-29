@@ -1,14 +1,14 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8919
+// Function ID: 8920
 // Name: ActivitiesInTextUtils
-// Dependencies: [4856, 4936, 1095, 1105, 558, 576, 504, 2]
+// Dependencies: [4857, 4937, 1095, 1105, 558, 576, 504, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled
 
-// Module 8916 (ActivitiesInTextUtils)
+// Module 8919 (ActivitiesInTextUtils)
 import Constants from "Constants" /* 1095 */;
 import ChannelTypes from "ChannelTypes" /* 1105 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAppLa
 const result = size.fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
 
 export { isActivityInTextSupportedForChannel };
-export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
+export function isActivitiesInTextEnabled(channel) {
   let flag = false;
   const obj = PermissionStore;
   if (null != channel) {
@@ -198,7 +198,7 @@ export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(chan
     }
   }
   return flag;
-};
+}
 export const useIsActivitiesInTextEnabled = tmp2;
 export { getIsAppLauncherEnabled };
 export const useIsAppLauncherEnabled = tmp3;

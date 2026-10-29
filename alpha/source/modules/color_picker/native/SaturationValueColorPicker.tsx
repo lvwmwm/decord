@@ -1,17 +1,17 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16347
+// Function ID: 16348
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5004, 587, 558, 576, 5085, 16109, 5294, 5333, 2]
+// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 5086, 16345, 5295, 5334, 2]
 
-// Module 16111 (SaturationValueColorPicker)
+// Module 16347 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16109 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const ReanimatedRexport = tmp(5085);
+const ReanimatedRexport = tmp(5086);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -59,8 +59,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ColorB
     const obj2 = { h: hue.get(), s: 1, l: 0.5 };
     return obj.hslToRgbWorklet(obj2);
   };
-  const tmp7 = hue(5085);
-  let obj2 = { hslToRgbWorklet: hue(16109).hslToRgbWorklet, hue };
+  const tmp7 = hue(5086);
+  let obj2 = { hslToRgbWorklet: hue(16345).hslToRgbWorklet, hue };
   const useAnimatedReaction = tmp7.useAnimatedReaction;
   fn.__closure = obj2;
   fn.__workletHash = 8814597686728;
@@ -73,10 +73,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ColorB
       runOnJSResult("rgb(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ")");
     }
   };
-  fn2.__closure = { runOnJS: hue(5085).runOnJS, setColor: tmp6 };
+  fn2.__closure = { runOnJS: hue(5086).runOnJS, setColor: tmp6 };
   fn2.__workletHash = 8277631711655;
   fn2.__initData = __initData2;
-  ({ runOnJS: hue(5085).runOnJS, setColor: tmp6 });
+  ({ runOnJS: hue(5086).runOnJS, setColor: tmp6 });
   const animatedReaction = useAnimatedReaction(fn, fn2);
   if (cResult[0] === colorBoxStyle) {
     let tmp9;
@@ -168,7 +168,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ColorB
   const tmp = closure_8();
   [first] = react.useState("rgb(0,0,0)");
   importDefault = tmp4;
-  const tmp5 = hue(5085);
+  const tmp5 = hue(5086);
   class S {
     constructor() {
       const obj = ColorPickerUtils;
@@ -176,7 +176,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ColorB
       return obj.hslToRgbWorklet(obj2);
     }
   }
-  let obj = { hslToRgbWorklet: hue(16109).hslToRgbWorklet, hue };
+  let obj = { hslToRgbWorklet: hue(16345).hslToRgbWorklet, hue };
   const useAnimatedReaction = tmp5.useAnimatedReaction;
   S.__closure = obj;
   S.__workletHash = 3837299793738;
@@ -189,7 +189,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ColorB
       runOnJSResult("rgb(" + arg0[0] + ", " + arg0[1] + ", " + arg0[2] + ")");
     }
   };
-  let obj2 = { runOnJS: hue(5085).runOnJS, setColor: tmp4 };
+  let obj2 = { runOnJS: hue(5086).runOnJS, setColor: tmp4 };
   fn.__closure = obj2;
   fn.__workletHash = 12285995316583;
   fn.__initData = __initData4;
@@ -238,7 +238,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSat
                 obj.runOnJS(tmp)();
               }
             };
-            let obj2 = { onPanFinalize, runOnJS: tmp(5085).runOnJS };
+            let obj2 = { onPanFinalize, runOnJS: tmp(5086).runOnJS };
             fn3.__closure = obj2;
             fn3.__workletHash = 12584172371118;
             fn3.__initData = __initData7;
@@ -254,7 +254,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSat
               if (cResult[11] === tmp6) {
                 tmp8 = cResult[12];
               }
-              let tmpResult = tmp(5333);
+              let tmpResult = tmp(5334);
               const panGesture = tmpResult.usePanGesture(tmp8);
               if (cResult[13] === panGesture) {
                 if (cResult[14] === saturation) {
@@ -295,7 +295,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSat
       tmpResult.runOnJS(tmp5)();
     }
   };
-  size = { saturation, normalizeValue: tmp(16109).normalizeValue, width, value, height, onPanUpdate, runOnJS: tmp(5085).runOnJS };
+  size = { saturation, normalizeValue: tmp(16345).normalizeValue, width, value, height, onPanUpdate, runOnJS: tmp(5086).runOnJS };
   fn.__closure = size;
   fn.__workletHash = 12002555446516;
   fn.__initData = __initData5;
@@ -311,7 +311,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSat
       tmpResult.runOnJS(tmp5)();
     }
   };
-  const size1 = { saturation, normalizeValue: tmp(16109).normalizeValue, width, value, height, onPanUpdate, runOnJS: tmp(5085).runOnJS };
+  const size1 = { saturation, normalizeValue: tmp(16345).normalizeValue, width, value, height, onPanUpdate, runOnJS: tmp(5086).runOnJS };
   fn2.__closure = size1;
   fn2.__workletHash = 6407791468184;
   fn2.__initData = __initData6;
@@ -420,7 +420,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SaturationVa
       tmp11 = cResult[2];
     }
     const gesture = closure_20(saturation, value, colorBoxWidth, first1, tmp11).gesture;
-    const tmpResult = hue(5085);
+    const tmpResult = hue(5086);
     class E {
       constructor() {
         obj = closure_0(closure_2[9]);
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SaturationVa
         return obj8;
       }
     }
-    let obj2 = { hsvToRgbWorklet: tmp(16109).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
+    let obj2 = { hsvToRgbWorklet: tmp(16345).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
     const useAnimatedStyle = tmpResult.useAnimatedStyle;
     E.__closure = obj2;
     E.__workletHash = 7417575834789;
@@ -572,7 +572,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SaturationVa
   closure_8 = tmp6[1];
   let obj = { onPanUpdate, onPanFinalize };
   const gesture = closure_20(saturation, value, colorBoxWidth, first1, obj).gesture;
-  let obj2 = hue(5085);
+  let obj2 = hue(5086);
   const fn = function f() {
     let items;
     const obj = ColorPickerUtils;
@@ -588,7 +588,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SaturationVa
     ({ translateY: first1 * (1 - dependencyMap.get()) });
     return obj4;
   };
-  let obj3 = { hsvToRgbWorklet: hue(16109).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
+  let obj3 = { hsvToRgbWorklet: hue(16345).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
   fn.__closure = obj3;
   fn.__workletHash = 10218068286918;
   fn.__initData = __initData12;
@@ -615,11 +615,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SaturationVa
   ];
   const obj5 = { gesture, children: closure_6(first1, obj6) };
   obj6 = { onLayout: callback, hitSlop: { top: result, bottom: result, left: result, right: result }, children: closure_6(closure_13, { hue, colorBoxStyle, colorBoxInnerStyle }) };
-  const GestureDetector = hue(5333).GestureDetector;
+  const GestureDetector = hue(5334).GestureDetector;
   items2 = [closure_6(GestureDetector, obj5), ];
   const obj7 = { onLayout: callback1, pointerEvents: "box-none", style: items3 };
   items3 = [tmp.selector, animatedStyle, selectorStyle];
-  items2[1] = closure_6(saturation(5085).View, obj7);
+  items2[1] = closure_6(saturation(5086).View, obj7);
   return first2(first1, obj4);
 });
 size = size_mod;

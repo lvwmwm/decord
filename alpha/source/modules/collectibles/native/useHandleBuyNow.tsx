@@ -1,10 +1,10 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14980
+// Function ID: 14981
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1084, 3, 14116, 7684, 5246, 14177, 1627, 7466, 4820, 5699, 1125, 2]
+// Dependencies: [5, 32, 19, 1084, 3, 14349, 7707, 5247, 14410, 1628, 7489, 4821, 5701, 1125, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 14745 (useHandleBuyNow)
+// Module 14980 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -42,7 +42,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function useHandleBuyNow(product) {
             const obj2 = c1(c2[8]);
             obj2.open(obj8);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp16) {
           c2 = 3;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(14116)(obj);
+  const tmp3 = onBuySettled(14349)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -127,7 +127,7 @@ function useHandleBuyNow(product) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -232,7 +232,7 @@ function useHandleBuyNow(product) {
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp52) {
           closure_2 = tmp52;
           if (0 === c3) {

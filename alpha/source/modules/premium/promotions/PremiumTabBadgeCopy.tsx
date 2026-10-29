@@ -1,17 +1,17 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16781
+// Function ID: 16782
 // Name: PremiumTabBadgeCopy
-// Dependencies: [1125, 16544, 2]
+// Dependencies: [1125, 16782, 2]
 // Exports: getPremiumTabBadgeCopy
 
-// Module 16543 (PremiumTabBadgeCopy)
+// Module 16781 (PremiumTabBadgeCopy)
 import intl from "intl" /* 1125 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 16544 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 16782 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/promotions/PremiumTabBadgeCopy.tsx");
 
-export const getPremiumTabBadgeCopy = function getPremiumTabBadgeCopy(promotionMarketingComponent) {
+export function getPremiumTabBadgeCopy(promotionMarketingComponent) {
   if ("premiumTab" !== promotionMarketingComponent.properties.properties.oneofKind) {
     return null;
   } else {
@@ -21,7 +21,7 @@ export const getPremiumTabBadgeCopy = function getPremiumTabBadgeCopy(promotionM
     const result = obj3.formatMarketingPlainString(premiumTab.badgeLabel, formatVariableValues);
     const tmp5 = require;
     if (result.ok) {
-      const tmp5Result = tmp5(16544);
+      const tmp5Result = tmp5(16782);
       const result1 = tmp5Result.formatMarketingPlainString(premiumTab.acknowledgedBadgeLabel, formatVariableValues);
       let tmp3 = null;
       if (result1.ok) {
@@ -33,4 +33,4 @@ export const getPremiumTabBadgeCopy = function getPremiumTabBadgeCopy(promotionM
       return null;
     }
   }
-};
+}

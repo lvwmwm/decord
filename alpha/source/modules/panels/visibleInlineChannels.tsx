@@ -1,10 +1,10 @@
-// Module ID: 6855
-// Function ID: 6856
+// Module ID: 6878
+// Function ID: 6879
 // Name: visibleInlineChannels
 // Dependencies: [2]
 // Exports: isChannelVisibleInline, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 6855 (visibleInlineChannels)
+// Module 6878 (visibleInlineChannels)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -12,7 +12,7 @@ let set;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/panels/visibleInlineChannels.tsx");
 
-export const registerVisibleInlineChannel = function registerVisibleInlineChannel(arg0, arg1) {
+export function registerVisibleInlineChannel(arg0, arg1) {
   let value = map.get(arg0);
   const obj = map;
   if (null == value) {
@@ -24,8 +24,8 @@ export const registerVisibleInlineChannel = function registerVisibleInlineChanne
     value = set;
   }
   value.add(arg1);
-};
-export const unregisterVisibleInlineChannel = function unregisterVisibleInlineChannel(arg0, arg1) {
+}
+export function unregisterVisibleInlineChannel(arg0, arg1) {
   const value = map.get(arg0);
   const obj = map;
   if (null != value) {
@@ -34,8 +34,8 @@ export const unregisterVisibleInlineChannel = function unregisterVisibleInlineCh
       obj.delete(arg0);
     }
   }
-};
-export const isChannelVisibleInline = function isChannelVisibleInline(channelId, fn) {
+}
+export function isChannelVisibleInline(channelId, fn) {
   const value = map.get(channelId);
   if (null == value) {
     return false;
@@ -49,4 +49,4 @@ export const isChannelVisibleInline = function isChannelVisibleInline(channelId,
     }
     return false;
   }
-};
+}

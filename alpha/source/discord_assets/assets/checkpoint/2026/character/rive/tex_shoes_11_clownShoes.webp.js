@@ -1,8 +1,8 @@
-// Module ID: 13174
-// Function ID: 13175
+// Module ID: 13405
+// Function ID: 13406
 // Dependencies: [2]
 
-// Module 13174
+// Module 13405
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_11_clownShoes.webp.js");

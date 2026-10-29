@@ -1,20 +1,20 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16727
+// Function ID: 16728
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1084, 7681, 21, 5004, 587, 558, 576, 1502, 7289, 7314, 7126, 16451, 16469, 1125, 2535, 9733, 16490, 16491, 7682, 8935, 16492, 7257, 9179, 11186, 2]
+// Dependencies: [32, 19, 17, 1084, 7704, 21, 5005, 587, 558, 576, 1503, 7313, 7338, 7150, 16689, 16707, 1125, 2536, 9765, 16728, 16729, 7705, 8938, 16730, 7281, 9182, 11240, 2]
 
-// Module 16489 (UserSettingsFamilyCenterParentalControls)
+// Module 16727 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl3 from "intl" /* 1125 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7681 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7682 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7705 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                       fn = (arg0) => {
                         let intl;
                         let teenId;
-                        let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                        let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                         const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                         const merged = Object.assign(arg0);
                         intl = stackNavigation(selectedSubPage[16]).intl;
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                   }
                   return;
                 }
-                setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                 return;
               }
             }
@@ -171,7 +171,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                   return;
                 }
               }
@@ -215,7 +215,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                   return;
                 }
               }
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -275,7 +275,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                   return;
                 }
               }
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -326,7 +326,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                   return;
                 }
               }
@@ -369,7 +369,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -381,7 +381,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
                   return;
                 }
               }
@@ -415,7 +415,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                 fn = (arg0) => {
                   let intl;
                   let teenId;
-                  let obj = { onPress() { /* body not rendered: F162428 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                  let obj = { onPress() { /* body not rendered: F164100 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                   const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                   const merged = Object.assign(arg0);
                   intl = stackNavigation(selectedSubPage[16]).intl;
@@ -427,7 +427,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
             }
             return;
           }
-          setOptionsResult1 = closure_0.setOptions({ title: "useCallback", headerRight: "PX_16" });
+          setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Reflect" });
           return;
         }
       }
@@ -530,7 +530,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     let intl;
     if (selectedSubPage === FamilyCenterSubPages.SCREEN_TIME_CONTROLS) {
       if (null != id) {
-        let obj = { title: intl.string(_modDef2535["1Op+NP"]), headerRight: fn };
+        let obj = { title: intl.string(_modDef2536["1Op+NP"]), headerRight: fn };
         const setOptions = stackNavigation.setOptions;
         intl = intl3.intl;
         fn = undefined;
@@ -554,7 +554,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "useCallback", headerRight: "PX_16" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "Reflect" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[16]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

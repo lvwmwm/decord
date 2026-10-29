@@ -1,16 +1,16 @@
-// Module ID: 11352
-// Function ID: 11353
+// Module ID: 11406
+// Function ID: 11407
 // Name: AppChannelPermissionUtils
-// Dependencies: [2042, 1084, 558, 576, 7383, 1096, 4943, 2]
+// Dependencies: [2043, 1084, 558, 576, 7406, 1096, 4944, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission
 
-// Module 11352 (AppChannelPermissionUtils)
+// Module 11406 (AppChannelPermissionUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4943 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7383 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4944 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7406 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ function getAppChannelBotUserIdFromApplication(type, bot) {
 const result = size.fileFinishedImporting("modules/app_channels/AppChannelPermissionUtils.tsx");
 
 export { getAppChannelBotUserIdFromApplication };
-export const getAppChannelBotUserId = function getAppChannelBotUserId(c18) {
+export function getAppChannelBotUserId(c18) {
   const application = ApplicationStore.getApplication(c18.application_id);
   let tmp2;
   if (c18.type === ChannelTypes.GUILD_APP) {
@@ -115,13 +115,13 @@ export const getAppChannelBotUserId = function getAppChannelBotUserId(c18) {
     }
   }
   return tmp2;
-};
+}
 export const useAppChannelBotUserId = tmp2;
-export const isAppChannelFloorPermission = function isAppChannelFloorPermission(appChannelBotUserId, id, arg2) {
+export function isAppChannelFloorPermission(appChannelBotUserId, id, arg2) {
   let hasItem = appChannelBotUserId === id;
   if (hasItem) {
     const obj = BigFlagUtilsAll;
     hasItem = obj.has(AppChannelPermissions.APP_CHANNEL_MINIMUM_BOT_PERMISSIONS, arg2);
   }
   return hasItem;
-};
+}

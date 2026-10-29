@@ -1,16 +1,16 @@
-// Module ID: 12418
-// Function ID: 12419
+// Module ID: 12472
+// Function ID: 12473
 // Name: useConjurePatchNotesLink
-// Dependencies: [19, 6808, 10749, 1084, 558, 576, 11803, 504, 1111, 2]
+// Dependencies: [19, 6831, 10824, 1084, 558, 576, 11857, 504, 1111, 2]
 // Exports: conjurePatchNotesEditorProps, openConjureSentPatchNotes
 
-// Module 12418 (useConjurePatchNotesLink)
+// Module 12472 (useConjurePatchNotesLink)
 import Constants from "Constants" /* 1084 */;
 import router_utils from "router_utils" /* 1111 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11803 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6831 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11857 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10749 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,15 +235,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePatchNotesLink.tsx");
 
 export default tmp2;
-export const openConjureSentPatchNotes = function openConjureSentPatchNotes(sent) {
+export function openConjureSentPatchNotes(sent) {
   let channelId;
   let guildId;
   let messageId;
   ({ guildId, channelId, messageId } = sent);
   const obj = router_utils;
   obj.transitionTo(Routes.CHANNEL(guildId, channelId, messageId));
-};
-export const conjurePatchNotesEditorProps = function conjurePatchNotesEditorProps(projectId, arg1) {
+}
+export function conjurePatchNotesEditorProps(projectId, arg1) {
   let fallbackGuildId;
   let publishedRevision;
   ({ publishedRevision, fallbackGuildId } = arg1);
@@ -263,4 +263,4 @@ export const conjurePatchNotesEditorProps = function conjurePatchNotesEditorProp
     }
   }
   return tmp5;
-};
+}

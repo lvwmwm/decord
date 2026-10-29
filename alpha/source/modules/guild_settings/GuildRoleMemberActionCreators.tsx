@@ -1,16 +1,16 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7286
+// Function ID: 7287
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 7261, 1084, 584, 1294, 1456, 6866, 2]
+// Dependencies: [5, 7285, 1084, 584, 1294, 1457, 6889, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 7262 (GuildRoleMemberActionCreators)
+// Module 7286 (GuildRoleMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7261 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7285 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let obj = function _fetchMemberCountsFromBackend() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _fetchMemberCountsFromBackend() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -113,7 +113,7 @@ obj = function _fetchMemberCounts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ obj = function _fetchMemberCounts() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -158,10 +158,10 @@ const tmp2 = new LRUCacheDefault({ maxAge: 10000 });
 let closure_8 = tmp2;
 let result = size.fileFinishedImporting("modules/guild_settings/GuildRoleMemberActionCreators.tsx");
 
-export const fetchMemberCounts = function fetchMemberCounts() {
+export function fetchMemberCounts() {
   return obj(...arguments);
-};
-export const requestMembersForRole = function requestMembersForRole(guildId, roleId, arg2) {
+}
+export function requestMembersForRole(guildId, roleId, arg2) {
   let obj2;
   let flag = arg2;
   if (arg2 === undefined) {
@@ -187,4 +187,4 @@ export const requestMembersForRole = function requestMembersForRole(guildId, rol
     const membersById = obj.requestMembersById(guildId, body.body, false);
     return body.body.length;
   });
-};
+}

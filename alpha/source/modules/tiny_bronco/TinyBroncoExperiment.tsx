@@ -1,12 +1,12 @@
-// Module ID: 6701
-// Function ID: 6702
+// Module ID: 6725
+// Function ID: 6726
 // Name: TinyBroncoExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isTinyBroncoEnabled
 
-// Module 6701 (TinyBroncoExperiment)
+// Module 6725 (TinyBroncoExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTinyBro
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoExperiment.tsx");
 
 export const useIsTinyBroncoEnabled = tmp2;
-export const isTinyBroncoEnabled = function isTinyBroncoEnabled(location) {
+export function isTinyBroncoEnabled(location) {
   const obj = { location };
   return closure_2.getConfig(obj).enabled;
-};
+}

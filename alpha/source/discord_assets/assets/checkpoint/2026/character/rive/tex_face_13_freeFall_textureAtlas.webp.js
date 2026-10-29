@@ -1,8 +1,8 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13306
+// Function ID: 13307
 // Dependencies: [2]
 
-// Module 13075
+// Module 13306
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_13_freeFall_textureAtlas.webp.js");

@@ -1,21 +1,21 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12466
+// Function ID: 12467
 // Name: useConjureVoiceChannelPin
-// Dependencies: [5, 32, 19, 4856, 4934, 4936, 4946, 1389, 6808, 10753, 1084, 558, 576, 504, 5640, 10841, 2]
+// Dependencies: [5, 32, 19, 4857, 4935, 4937, 4947, 1389, 6831, 10828, 1084, 558, 576, 504, 5641, 10917, 2]
 
-// Module 12412 (useConjureVoiceChannelPin)
-import GuildChannelStore2 from "GuildChannelStore" /* 4934 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10841 */;
+// Module 12466 (useConjureVoiceChannelPin)
+import GuildChannelStore2 from "GuildChannelStore" /* 4935 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 10917 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 10753 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 10828 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -342,7 +342,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureVo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -390,7 +390,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureVo
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp20) {
           c3 = 3;
           throw tmp20;
@@ -467,7 +467,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureVo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -515,7 +515,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureVo
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp26) {
         c3 = 3;
         throw tmp26;

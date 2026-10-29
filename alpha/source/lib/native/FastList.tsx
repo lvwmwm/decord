@@ -1,17 +1,17 @@
-// Module ID: 7203
-// Function ID: 7204
+// Module ID: 7227
+// Function ID: 7228
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5270, 6922, 1381, 5085, 7204, 7205, 5305, 7206, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5271, 6946, 1381, 5086, 7228, 7229, 5306, 7230, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7203 (FastList)
+// Module 7227 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import NativeViewDefault from "NativeView" /* 6922 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7206 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5086 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import NativeViewDefault from "NativeView" /* 6946 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7230 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -2751,9 +2751,9 @@ let result1 = size.fileFinishedImporting("lib/native/FastList.tsx");
 export default FastList;
 export const DEFAULT_BATCHES_TO_RENDER = 12;
 export const MINIMUM_BATCHES_TO_RENDER = 5;
-export const getItemSizeOverrideKey = function getItemSizeOverrideKey(arg0, arg1, arg2) {
+export function getItemSizeOverrideKey(arg0, arg1, arg2) {
   return "" + arg0 + ":" + arg1 + ":" + arg2;
-};
+}
 export { FastListItemTypes };
 export { FastListComputer };
 export const AnimatedFastList = animatedComponent;

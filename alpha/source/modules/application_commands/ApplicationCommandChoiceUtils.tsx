@@ -1,12 +1,12 @@
-// Module ID: 10235
-// Function ID: 10236
+// Module ID: 10268
+// Function ID: 10269
 // Name: ApplicationCommandChoiceUtils
-// Dependencies: [8338, 6019, 2]
+// Dependencies: [8360, 6023, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 10235 (ApplicationCommandChoiceUtils)
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8338 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
+// Module 10268 (ApplicationCommandChoiceUtils)
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8360 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -14,13 +14,13 @@ let map;
 ({ FALSE_OPTION_NAME: map, TRUE_OPTION_NAME: c2 } = ApplicationCommandConstants);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandChoiceUtils.tsx");
 
-export const toChoiceBooleanValue = function toChoiceBooleanValue(trimmed) {
+export function toChoiceBooleanValue(trimmed) {
   const formatted = trimmed.toLowerCase();
   const tmp2 = formatted === React2.toLowerCase();
   const formatted1 = trimmed.toLowerCase();
   return tmp2;
-};
-export const findChoiceStringValue = function findChoiceStringValue(choices, surrogate) {
+}
+export function findChoiceStringValue(choices, surrogate) {
   let closure_0 = surrogate;
   let value;
   if (choices != null) {
@@ -30,8 +30,8 @@ export const findChoiceStringValue = function findChoiceStringValue(choices, sur
     }
   }
   return typeof value === "string" ? value : undefined;
-};
-export const findChoiceNumberValue = function findChoiceNumberValue(choices, trimmed) {
+}
+export function findChoiceNumberValue(choices, trimmed) {
   let closure_0 = trimmed;
   let value;
   if (choices != null) {
@@ -41,8 +41,8 @@ export const findChoiceNumberValue = function findChoiceNumberValue(choices, tri
     }
   }
   return typeof value === "number" ? value : undefined;
-};
-export const findAutocompleteChoiceStringValue = function findAutocompleteChoiceStringValue(id, name, surrogate) {
+}
+export function findAutocompleteChoiceStringValue(id, name, surrogate) {
   const autocompleteLastChoices = ApplicationCommandAutocompleteStore.getAutocompleteLastChoices(id, name);
   let closure_0 = surrogate;
   let value;
@@ -57,8 +57,8 @@ export const findAutocompleteChoiceStringValue = function findAutocompleteChoice
     tmp2 = value;
   }
   return tmp2;
-};
-export const findAutocompleteChoiceNumberValue = function findAutocompleteChoiceNumberValue(id, name, trimmed) {
+}
+export function findAutocompleteChoiceNumberValue(id, name, trimmed) {
   const autocompleteLastChoices = ApplicationCommandAutocompleteStore.getAutocompleteLastChoices(id, name);
   let closure_0 = trimmed;
   let value;
@@ -73,4 +73,4 @@ export const findAutocompleteChoiceNumberValue = function findAutocompleteChoice
     tmp2 = value;
   }
   return tmp2;
-};
+}

@@ -15,7 +15,7 @@ function dateTimestampInSeconds() {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let timeOrigin = null;
 
-export const browserPerformanceTimeOrigin = function browserPerformanceTimeOrigin() {
+export function browserPerformanceTimeOrigin() {
   let tmp = timeOrigin;
   if (null === timeOrigin) {
     const _performance = _mod697.GLOBAL_OBJ.performance;
@@ -51,9 +51,9 @@ export const browserPerformanceTimeOrigin = function browserPerformanceTimeOrigi
     tmp = tmp3;
   }
   return tmp;
-};
+}
 export { dateTimestampInSeconds };
-export const timestampInSeconds = function timestampInSeconds() {
+export function timestampInSeconds() {
   let _performance;
   let fn;
   let tmp = fn;
@@ -76,4 +76,4 @@ export const timestampInSeconds = function timestampInSeconds() {
     fn = dateTimestampInSeconds;
   }
   return tmp();
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 6412
-// Function ID: 6413
+// Module ID: 6436
+// Function ID: 6437
 // Name: NativeDispatchError
-// Dependencies: [6413, 1125, 6414, 2]
+// Dependencies: [6437, 1125, 6438, 2]
 
-// Module 6412 (NativeDispatchError)
-import Constants from "Constants" /* 6413 */;
+// Module 6436 (NativeDispatchError)
+import Constants from "Constants" /* 6437 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

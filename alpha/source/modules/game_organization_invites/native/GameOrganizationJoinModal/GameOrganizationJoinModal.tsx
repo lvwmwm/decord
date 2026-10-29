@@ -1,16 +1,16 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12999
+// Function ID: 13000
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 12781, 21, 558, 576, 6960, 12782, 12787, 12789, 7131, 1125, 12790, 2]
+// Dependencies: [19, 13000, 21, 558, 576, 6984, 13001, 13008, 13010, 7155, 1125, 13011, 2]
 
-// Module 12780 (GameOrganizationJoinModal)
+// Module 12999 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import NavigatorHeader from "NavigatorHeader" /* 6960 */;
-import StepModal2 from "StepModal" /* 12790 */;
+import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import StepModal2 from "StepModal" /* 13011 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12781 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13000 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,9 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
   let tmp4;
   let tmp5;
   _require = arg0;
+  let tmp = _require;
   let obj = require("react");
   const cResult = obj.c(3);
-  const tmp = _require;
   if (cResult[0] !== arg0) {
     const fn = function c() {
       let code;
@@ -38,7 +38,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
       let obj5;
       let obj6;
       let obj8;
-      const obj = {};
+      let obj = {};
       const VIEW = GameOrganizationJoinScenes.VIEW;
       const obj2 = {
         headerTitle() {
@@ -58,8 +58,15 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         },
         headerLeft: obj5.getHeaderBackButton(),
         headerRight: obj6.getHeaderCloseButton(closeGameOrganizationJoinModal),
-        render() {
-          return jsx(code(dependencyMap[7]).AcceptStep, { code });
+        render(character) {
+          const obj = { code, character };
+          character = undefined;
+          const AcceptStep = code(dependencyMap[7]).AcceptStep;
+          const tmp = jsx;
+          if (character != null) {
+            character = character.character;
+          }
+          return tmp(AcceptStep, obj);
         }
       };
       obj5 = NavigatorHeader;
@@ -92,7 +99,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = tmp(7131);
+  const tmpResult = tmp(7155);
   return tmpResult.useNavigatorScreens(tmp4, tmp5);
 }) : (function useScreens(arg0) {
   let closure_0;
@@ -105,7 +112,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
     let obj5;
     let obj6;
     let obj8;
-    const obj = {};
+    let obj = {};
     const VIEW = GameOrganizationJoinScenes.VIEW;
     const obj2 = {
       headerTitle() {
@@ -125,8 +132,15 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
       },
       headerLeft: obj5.getHeaderBackButton(),
       headerRight: obj6.getHeaderCloseButton(closeGameOrganizationJoinModal),
-      render() {
-        return jsx(code(dependencyMap[7]).AcceptStep, { code });
+      render(character) {
+        const obj = { code, character };
+        character = undefined;
+        const AcceptStep = code(dependencyMap[7]).AcceptStep;
+        const tmp = jsx;
+        if (character != null) {
+          character = character.character;
+        }
+        return tmp(AcceptStep, obj);
       }
     };
     obj5 = NavigatorHeader;

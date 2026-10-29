@@ -1,22 +1,22 @@
-// Module ID: 7925
-// Function ID: 7926
+// Module ID: 7948
+// Function ID: 7949
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 7903, 21, 1381, 1627, 7926, 7922, 3, 7927, 7928, 1999, 5946, 1125, 2]
+// Dependencies: [5, 19, 17, 7926, 21, 1381, 1628, 7949, 7945, 3, 7950, 7951, 2000, 5948, 1125, 2]
 
-// Module 7925 (mobile/NativePermissionUtils)
+// Module 7948 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1125 */;
-import useAlertStore from "useAlertStore" /* 5946 */;
-import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7922 */;
-import react_nativeDefault from "react-native" /* 7927 */;
+import useAlertStore from "useAlertStore" /* 5948 */;
+import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7945 */;
+import react_nativeDefault from "react-native" /* 7950 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7903 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1627 */;
-import react_native2_mod from "react-native" /* 7926 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
+import react_native2_mod from "react-native" /* 7949 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ let requestPermissionLookup = function _combineStatuses() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {

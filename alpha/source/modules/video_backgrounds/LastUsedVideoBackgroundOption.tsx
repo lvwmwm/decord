@@ -1,14 +1,14 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5904
+// Function ID: 5905
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1206, 1243, 1389, 5903, 2050, 558, 576, 504, 2]
+// Dependencies: [19, 1206, 1243, 1389, 5905, 2051, 558, 576, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption
 
-// Module 5902 (LastUsedVideoBackgroundOption)
+// Module 5904 (LastUsedVideoBackgroundOption)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5903 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5905 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
@@ -146,7 +146,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastUsedV
           tmp8 = tmp3;
         } else {
           tmp8 = null;
-          tmp4(5903);
+          tmp4(5905);
         }
         tmp7 = tmp8;
       } else {
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastUsedV
 });
 const result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
-export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
+export function getLastUsedVideoBackgroundOption(currentUser) {
   let tmp5;
   const videoBackground = UnsyncedUserSettingsStore.videoBackground;
   const obj = VideoBackgroundUtils;
@@ -178,5 +178,5 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
     PremiumUtilsDefault;
   }
   return tmp5;
-};
+}
 export const useLastUsedVideoBackgroundOption = tmp2;

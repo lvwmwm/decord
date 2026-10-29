@@ -1,17 +1,17 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 18464
+// Function ID: 18465
 // Name: reactionUtils
-// Dependencies: [7790, 7601, 2]
+// Dependencies: [7812, 7624, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 18230 (reactionUtils)
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7601 */;
-import MessageParserDefault from "MessageParser" /* 7790 */;
+// Module 18464 (reactionUtils)
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
+import MessageParserDefault from "MessageParser" /* 7812 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
 
-export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {
+export function sendMessageWithEmbed(channel) {
   let _location;
   let content;
   let doNotNotifyOnError;
@@ -24,8 +24,8 @@ export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {
   const obj2 = MessageActionCreatorsDefault;
   const obj3 = { contentInventoryEntry: { unverified_content: entry }, doNotNotifyOnError, location: _location };
   return obj2.sendMessage(channel.id, parsed, whenReady, obj3);
-};
-export const sendMessageWithoutContentInventoryEntry = function sendMessageWithoutContentInventoryEntry(channel) {
+}
+export function sendMessageWithoutContentInventoryEntry(channel) {
   let _location;
   let content;
   let doNotNotifyOnError;
@@ -37,4 +37,4 @@ export const sendMessageWithoutContentInventoryEntry = function sendMessageWitho
   const obj2 = MessageActionCreatorsDefault;
   const obj3 = { doNotNotifyOnError, location: _location };
   return obj2.sendMessage(channel.id, parsed, whenReady, obj3);
-};
+}

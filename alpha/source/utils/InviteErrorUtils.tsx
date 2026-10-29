@@ -1,13 +1,13 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 14134
+// Function ID: 14135
 // Name: InviteErrorUtils
-// Dependencies: [1389, 1084, 2050, 1125, 2064, 2]
+// Dependencies: [1389, 1084, 2051, 1125, 2065, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 13901 (InviteErrorUtils)
+// Module 14134 (InviteErrorUtils)
 import intl13 from "intl" /* 1125 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2050 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let metroRequire;
 ({ AbortCodes: closure_4, HelpdeskArticles: hasOwnProperty, MAX_USER_GUILDS: metroRequire, MAX_USER_GUILDS_PREMIUM: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("utils/InviteErrorUtils.tsx");
 
-export const getDescriptiveInviteError = function getDescriptiveInviteError(code) {
+export function getDescriptiveInviteError(code) {
   let intl;
   let intl10;
   let intl11;
@@ -80,8 +80,8 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
   } else {
     return null;
   }
-};
-export const getInviteError = function getInviteError(arg0) {
+}
+export function getInviteError(arg0) {
   let obj2;
   if (constants.TOO_MANY_USER_GUILDS === arg0) {
     const intl8 = intl13.intl;
@@ -112,4 +112,4 @@ export const getInviteError = function getInviteError(arg0) {
     const intl = intl13.intl;
     return intl.string(intl13.t.dDZRdy);
   }
-};
+}

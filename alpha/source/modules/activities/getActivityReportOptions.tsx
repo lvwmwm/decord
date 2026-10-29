@@ -1,12 +1,12 @@
-// Module ID: 19103
-// Function ID: 19104
+// Module ID: 19338
+// Function ID: 19339
 // Name: getActivityReportOptions
-// Dependencies: [2023, 1125, 2]
+// Dependencies: [2024, 1125, 2]
 // Exports: default
 
-// Module 19103 (getActivityReportOptions)
+// Module 19338 (getActivityReportOptions)
 import intl7 from "intl" /* 1125 */;
-import Constants from "Constants" /* 2023 */;
+import Constants from "Constants" /* 2024 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFeedbackReasons = Constants.ActivityFeedbackReasons;

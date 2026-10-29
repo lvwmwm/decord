@@ -1,12 +1,12 @@
-// Module ID: 6847
-// Function ID: 6848
+// Module ID: 6870
+// Function ID: 6871
 // Name: ApplicationFlagUtils
-// Dependencies: [2021, 1096, 2]
+// Dependencies: [2022, 1096, 2]
 // Exports: hasApplicationFlag
 
-// Module 6847 (ApplicationFlagUtils)
+// Module 6870 (ApplicationFlagUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import size from "module_2" /* 2 */;
 
 function getApplicationFlags(application) {
@@ -47,7 +47,7 @@ function getApplicationFlags(application) {
 const result = size.fileFinishedImporting("modules/applications/utils/ApplicationFlagUtils.tsx");
 
 export { getApplicationFlags };
-export const hasApplicationFlag = function hasApplicationFlag(application, EMBEDDED_FIRST_PARTY) {
+export function hasApplicationFlag(application, EMBEDDED_FIRST_PARTY) {
   const obj = BigFlagUtilsAll;
   return obj.has(getApplicationFlags(application), EMBEDDED_FIRST_PARTY);
-};
+}

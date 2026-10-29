@@ -1,11 +1,11 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12255
+// Function ID: 12256
 // Name: useConjureAppIdentityDraft
-// Dependencies: [32, 19, 558, 576, 12202, 10757, 2]
+// Dependencies: [32, 19, 558, 576, 12256, 10832, 2]
 
-// Module 12201 (useConjureAppIdentityDraft)
-import ConjureActionCreators from "ConjureActionCreators" /* 10757 */;
-import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 12202 */;
+// Module 12255 (useConjureAppIdentityDraft)
+import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
+import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 12256 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -174,7 +174,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let tmp7;
   let trimmed;
   let closure_0 = arg0;
-  const tmp = first(12202)(arg0);
+  const tmp = first(12256)(arg0);
   let obj = trimmed;
   const items = [arg0];
   const effect = trimmed.useEffect(() => {

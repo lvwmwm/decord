@@ -1,10 +1,10 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9865
+// Function ID: 9866
 // Name: GPlayAnalyticsStore
 // Dependencies: [570, 1271, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 9833 (GPlayAnalyticsStore)
+// Module 9865 (GPlayAnalyticsStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let closure_2 = Object.freeze({ analyticsByProductId: {} });
 const useGPlayAnalyticsStore = module_570.create(() => closure_2);
 const result = size.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
 
-export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
+export function setGPlayAnalytics(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -32,8 +32,8 @@ export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {
       return obj;
     });
   });
-};
-export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
+}
+export function deleteGPlayAnalytics(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("react-native");
@@ -45,5 +45,5 @@ export const deleteGPlayAnalytics = function deleteGPlayAnalytics(arg0) {
       return { analyticsByProductId };
     });
   });
-};
+}
 export { useGPlayAnalyticsStore };

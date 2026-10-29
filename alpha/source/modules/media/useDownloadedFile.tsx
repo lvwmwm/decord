@@ -1,12 +1,12 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11379
+// Function ID: 11380
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1125, 6414, 6022, 2]
+// Dependencies: [5, 32, 19, 1125, 6438, 6026, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11325 (useDownloadedFile)
+// Module 11379 (useDownloadedFile)
 import intl2 from "intl" /* 1125 */;
-import FileSizeUtils from "FileSizeUtils" /* 6414 */;
+import FileSizeUtils from "FileSizeUtils" /* 6438 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,7 +17,7 @@ let c0, c8, c9, closure_3, closure_4;
 let c5 = "utf-8";
 const result = size.fileFinishedImporting("modules/media/useDownloadedFile.tsx");
 
-export const getBytesLeftNotice = function getBytesLeftNotice(bytesLeft) {
+export function getBytesLeftNotice(bytesLeft) {
   let obj2;
   let str = "";
   if (bytesLeft > 0) {
@@ -30,8 +30,8 @@ export const getBytesLeftNotice = function getBytesLeftNotice(bytesLeft) {
     str = "... " + formatToPlainString(prop, obj);
   }
   return str;
-};
-export const useDownloadedFile = function useDownloadedFile(url, arg1) {
+}
+export function useDownloadedFile(url, arg1) {
   let bytesLeft;
   let closure_2;
   let fileContents;
@@ -95,7 +95,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;
@@ -220,4 +220,4 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
     const tmp = !download();
   }, items);
   return { fileContents, bytesLeft, hadError };
-};
+}

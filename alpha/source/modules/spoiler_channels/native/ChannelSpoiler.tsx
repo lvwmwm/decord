@@ -1,25 +1,25 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 10971
+// Function ID: 10972
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6807, 4856, 4878, 10937, 21, 5004, 587, 558, 576, 504, 5640, 10938, 5746, 6866, 5187, 8539, 5270, 1125, 6013, 5741, 6944, 10935, 6692, 2]
+// Dependencies: [32, 19, 17, 6830, 4857, 4879, 10972, 21, 5005, 587, 558, 576, 504, 5641, 10973, 5748, 6889, 5188, 8561, 5271, 1125, 6015, 5743, 6968, 10970, 6716, 2]
 
-// Module 10936 (ChannelSpoiler)
+// Module 10971 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import useChannelNameDefault from "useChannelName" /* 5640 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5741 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5746 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6866 */;
-import GatedContentDefault from "GatedContent" /* 10935 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10937 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import useChannelNameDefault from "useChannelName" /* 5641 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5743 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5748 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+import GatedContentDefault from "GatedContent" /* 10970 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let c10;
 let size;
 let tmp14;
 let unpackModuleId;
-const VoicePanelStateContextDefault = tmp14(10938);
+const VoicePanelStateContextDefault = tmp14(10973);
 const View = react_native.View;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -186,7 +186,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp7(10938)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp7(10973)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -219,14 +219,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }, items3);
   if (null != stateFromStores1) {
-    const tmpResult = tmp(8539);
+    const tmpResult = tmp(8561);
     channelIconComponent = tmpResult.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {
     let obj3 = { style: { flexDirection: "row", alignItems: "center", gap: 4, flexShrink: 1 }, children: items4 };
     items4 = [closure_10(channelIconComponent, { size: "lg", color: "mobile-text-heading-primary" }), ];
     const obj5 = { variant: "heading-xxl/bold", color: "mobile-text-heading-primary", lineClamp: 1, style: { flexShrink: 1 }, children: tmp8 };
-    items4[1] = closure_10(tmp(5270).Text, obj5);
+    items4[1] = closure_10(tmp(5271).Text, obj5);
     stringResult = closure_11(View, obj3);
   } else {
     const intl = tmp(1125).intl;
@@ -243,14 +243,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     if ("" !== str.trim()) {
       const obj6 = { spacing: 4, style: tmp4.subtitleContainer, children: items5 };
       const obj7 = { style: tmp4.subtitleMeasure, pointerEvents: "none", children: closure_10(Text2, obj8) };
-      const Stack = tmp(6013).Stack;
+      const Stack = tmp(6015).Stack;
       obj8 = { variant: "text-md/medium", maxFontSizeMultiplier: 2, onTextLayout: callback1, children: tmp7Result.parseTopic(stateFromStores1.topic, true, obj9) };
-      Text2 = tmp(5270).Text;
+      Text2 = tmp(5271).Text;
       obj9 = { channelId: stateFromStores1.id };
       tmp7Result = MarkupUtilsDefault;
       items5 = [closure_10(View, obj7), , , ];
       const obj10 = { color: "text-muted", variant: "text-md/medium", style: tmp4.subtitle, maxFontSizeMultiplier: 2, lineClamp: 3, children: tmp7Result3.parseTopic(stateFromStores1.topic, true, obj11) };
-      const Text3 = tmp(5270).Text;
+      const Text3 = tmp(5271).Text;
       obj11 = { channelId: stateFromStores1.id };
       tmp7Result3 = MarkupUtilsDefault;
       items5[1] = closure_10(Text3, obj10);
@@ -259,9 +259,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
       const tmp26 = View;
       if (first) {
         const obj12 = { onPress: callback2, accessibilityRole: "button", children: closure_10(Text, obj13) };
-        const PressableHighlight = tmp(6944).PressableHighlight;
+        const PressableHighlight = tmp(6968).PressableHighlight;
         obj13 = { variant: "text-sm/medium", color: "text-brand", style: { textDecorationLine: "underline" }, children: intl2.string(tmp(1125).t["/QvRak"]) };
-        Text = tmp(5270).Text;
+        Text = tmp(5271).Text;
         intl2 = tmp(1125).intl;
         tmp25Result = tmp25(PressableHighlight, obj12);
       }
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }
   const obj15 = {
-    modalType: tmp(6692).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
+    modalType: tmp(6716).NsfwSpaceWarningModalType.SPOILER_CHANNEL,
     onAgree: function handleAgree() {
       const obj = GuildActionCreatorsDefault;
       obj.spoilerAgree(channelId.channelId);

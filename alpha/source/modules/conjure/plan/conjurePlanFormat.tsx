@@ -1,16 +1,16 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12542
+// Function ID: 12543
 // Name: conjurePlanFormat
-// Dependencies: [1997, 2]
+// Dependencies: [1998, 2]
 // Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementLabel
 
-// Module 12488 (conjurePlanFormat)
-import Server from "Server" /* 1997 */;
+// Module 12542 (conjurePlanFormat)
+import Server from "Server" /* 1998 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanFormat.tsx");
 
-export const formatConjurePlanRequirementLabel = function formatConjurePlanRequirementLabel(str) {
+export function formatConjurePlanRequirementLabel(str) {
   const parts = str.split("_");
   str = parts.join(" ");
   const formatted = str.toLowerCase();
@@ -21,8 +21,8 @@ export const formatConjurePlanRequirementLabel = function formatConjurePlanRequi
     sum = formatted1 + formatted.slice(1);
   }
   return sum;
-};
-export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(type) {
+}
+export function conjurePlanCommandPrefix(type) {
   let str = "\u21EA /";
   if (type.type !== Server.ApplicationCommandType.PRIMARY_ENTRY_POINT) {
     let str2;
@@ -34,4 +34,4 @@ export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(type) 
     str = str2;
   }
   return str;
-};
+}

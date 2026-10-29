@@ -1,12 +1,12 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17769
+// Function ID: 17770
 // Name: AdTopicOptOutClientExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isAdTopicOptOutClientEnabled
 
-// Module 17530 (AdTopicOptOutClientExperiment)
+// Module 17769 (AdTopicOptOutClientExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,6 +34,6 @@ const result = size.fileFinishedImporting("modules/ads/AdTopicOptOutClientExperi
 
 export const AdTopicOptOutClientExperiment = apexExperiment;
 export const useIsAdTopicOptOutClientEnabled = tmp3;
-export const isAdTopicOptOutClientEnabled = function isAdTopicOptOutClientEnabled() {
+export function isAdTopicOptOutClientEnabled() {
   return apexExperiment.getConfig({ location: "isAdTopicOptOutClientEnabled" }).enabled;
-};
+}

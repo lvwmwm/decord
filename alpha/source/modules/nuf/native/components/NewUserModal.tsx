@@ -1,18 +1,18 @@
-// Module ID: 19203
-// Function ID: 19204
+// Module ID: 19438
+// Function ID: 19439
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 9777, 5004, 587, 19204, 1999, 5946, 558, 576, 7131, 19201, 6707, 19200, 6966, 1381, 17691, 19205, 13834, 13822, 19206, 19215, 19221, 19207, 2]
+// Dependencies: [19, 17, 21, 9809, 5005, 587, 19439, 2000, 5948, 558, 576, 7155, 19436, 6731, 19435, 6990, 1381, 17929, 19440, 14067, 14055, 19441, 19448, 19454, 19442, 2]
 
-// Module 19203 (NewUserModal)
+// Module 19438 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NewUserUtils from "NewUserUtils" /* 19201 */;
-import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19207 */;
+import NewUserUtils from "NewUserUtils" /* 19436 */;
+import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19442 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9777 */;
-import createStyles from "createStyles" /* 5004 */;
+import NativeStackView from "NativeStackView" /* 9809 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, closure_0, dependencyMap, importDefault;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f139444 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f141017 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
 const NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserMod
   }
   importDefault = accessibilityNativeStackOptions.useRef(tmp5);
   dependencyMap = accessibilityNativeStackOptions.useRef(null);
-  const tmpResult = tmp(7131);
+  const tmpResult = tmp(7155);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function v(flag) {
@@ -106,7 +106,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserMod
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = tmp(6966);
+  const tmpResult2 = tmp(6990);
   tmpResult2.useNavigatorBackPressHandler(tmp8);
   if (cResult[4] === accessibilityNativeStackOptions) {
     let tmp10;
@@ -151,7 +151,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserMod
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f139444);
+                      const lazyResult = React.lazy(f141017);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -392,7 +392,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserMod
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f139444);
+              const lazyResult = React.lazy(f141017);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {

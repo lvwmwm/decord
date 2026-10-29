@@ -1,14 +1,14 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14597
+// Function ID: 14598
 // Name: IosAttributionMetrics
-// Dependencies: [1084, 6503, 6508, 1264, 2]
+// Dependencies: [1084, 6527, 6532, 1264, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
-// Module 14363 (IosAttributionMetrics)
+// Module 14597 (IosAttributionMetrics)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6503 */;
-import MetricEvents from "MetricEvents" /* 6508 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
+import MetricEvents from "MetricEvents" /* 6532 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttrib
 
 export const IosAttributionImpressionResult = { REGISTERED: "registered", NO_FRAMEWORK: "no_framework", NO_METADATA: "no_metadata", NOT_SKAN_ENABLED: "not_skan_enabled", SIGN_FAILED: "sign_failed", NO_TOKEN: "no_token" };
 export const IosAttributionClickResult = { ATTRIBUTED: "attributed", NO_IMPRESSION: "no_impression", NOT_READY: "not_ready" };
-export const trackIosAttributionImpression = function trackIosAttributionImpression(NO_FRAMEWORK, c2, c0) {
+export function trackIosAttributionImpression(NO_FRAMEWORK, c2, c0) {
   let items;
   let str = c2;
   const tmp3 = MonitoringAgentDefault;
@@ -37,8 +37,8 @@ export const trackIosAttributionImpression = function trackIosAttributionImpress
     str = "none";
   }
   track(IOS_ATTRIBUTION_VIEW_RESOLVED, obj2);
-};
-export const trackIosAttributionClick = function trackIosAttributionClick(ATTRIBUTED, framework, impression_id) {
+}
+export function trackIosAttributionClick(ATTRIBUTED, framework, impression_id) {
   let items;
   let str = framework;
   const tmp3 = MonitoringAgentDefault;
@@ -59,4 +59,4 @@ export const trackIosAttributionClick = function trackIosAttributionClick(ATTRIB
     str = "none";
   }
   track(IOS_ATTRIBUTION_CLICK_RESOLVED, obj2);
-};
+}

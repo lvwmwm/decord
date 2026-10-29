@@ -1,10 +1,10 @@
-// Module ID: 6914
-// Function ID: 6915
+// Module ID: 6938
+// Function ID: 6939
 // Name: InitialMemberVerificationStore
 // Dependencies: [504, 584, 2]
 // Exports: setInitialVerification
 
-// Module 6914 (InitialMemberVerificationStore)
+// Module 6938 (InitialMemberVerificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -40,8 +40,8 @@ const initialMemberVerificationStore = new InitialMemberVerificationStore(Dispat
 let result = size.fileFinishedImporting("modules/guild_member_verification/native/InitialMemberVerificationStore.tsx");
 
 export default initialMemberVerificationStore;
-export const setInitialVerification = function setInitialVerification(guildId, state) {
+export function setInitialVerification(guildId, state) {
   const obj = DispatcherDefault;
   const obj2 = { type: "SET_INITIAL_MEMBER_VERIFICATION", guildId, state };
   obj.dispatch(obj2);
-};
+}

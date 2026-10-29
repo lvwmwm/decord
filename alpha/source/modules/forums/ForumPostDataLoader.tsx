@@ -1,18 +1,18 @@
-// Module ID: 7438
-// Function ID: 7439
+// Module ID: 7461
+// Function ID: 7462
 // Name: ForumPostDataLoader
-// Dependencies: [5, 4856, 7439, 7421, 7442, 1084, 12, 11, 558, 576, 504, 1294, 584, 2]
+// Dependencies: [5, 4857, 7462, 7444, 7465, 1084, 12, 11, 558, 576, 504, 1294, 584, 2]
 // Exports: preloadForumThreads
 
-// Module 7438 (ForumPostDataLoader)
+// Module 7461 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1084 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7439 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7462 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7421 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7442 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7444 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7465 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _loadForumPostData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -59,7 +59,7 @@ let obj = function _loadForumPostData() {
               c3 = 0;
               c11 = null;
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         } else if (1 === tmp4) {
@@ -110,7 +110,7 @@ obj = function _loadForumPostDataForChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -139,7 +139,7 @@ obj = function _loadForumPostDataForChannelId() {
               postResult = closure_2_10;
               closure_2_10.finishRequesting(closure_0, nextBatch);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               channel = channel.getChannel(tmp44);
               guild_id = undefined;
@@ -151,7 +151,7 @@ obj = function _loadForumPostDataForChannelId() {
                 postResult = closure_2_10;
                 closure_2_10.finishRequesting(closure_0, nextBatch);
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               } else {
                 const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: Endpoints.FORUM_POSTS(closure_0), body: obj4, rejectWithError: true };
@@ -193,7 +193,7 @@ obj = function _loadForumPostDataForChannelId() {
           postResult = closure_0;
           closure_130_10.finishRequesting(closure_0, nextBatch);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp37) {
         closure_3 = tmp37;
@@ -631,7 +631,7 @@ const result = size.fileFinishedImporting("modules/forums/ForumPostDataLoader.ts
 export const BATCH_SIZE = 10;
 export const useFirstForumPostMessage = tmp4;
 export const useMostRecentForumMessage = tmp5;
-export const preloadForumThreads = function preloadForumThreads(channel) {
+export function preloadForumThreads(channel) {
   let closure_11;
   let timeout;
   const arr = computeThreadIdsSnapshot(channel.id);
@@ -654,4 +654,4 @@ export const preloadForumThreads = function preloadForumThreads(channel) {
     const _setTimeout = setTimeout;
     timeout = setTimeout(loadForumPostData, 0);
   }
-};
+}

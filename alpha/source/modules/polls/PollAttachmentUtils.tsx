@@ -1,11 +1,11 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12222
+// Function ID: 12223
 // Name: PollAttachmentUtils
-// Dependencies: [5, 8343, 2]
+// Dependencies: [5, 8365, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 12168 (PollAttachmentUtils)
-import PollsConstants from "PollsConstants" /* 8343 */;
+// Module 12222 (PollAttachmentUtils)
+import PollsConstants from "PollsConstants" /* 8365 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _downloadPollGif() {
 const POLL_ATTACHMENT_FOLDER = PollsConstants.POLL_ATTACHMENT_FOLDER;
 const result = size.fileFinishedImporting("modules/polls/PollAttachmentUtils.tsx");
 
-export const getFileNameFromGifUrl = function getFileNameFromGifUrl(localCreationAnswerId, mediaURL) {
+export function getFileNameFromGifUrl(localCreationAnswerId, mediaURL) {
   const str = decodeURIComponent(mediaURL);
   const parts = str.split("/");
   let str2 = parts.pop();
@@ -47,10 +47,10 @@ export const getFileNameFromGifUrl = function getFileNameFromGifUrl(localCreatio
     str2 = "temp.gif";
   }
   return "" + localCreationAnswerId + "-" + str2;
-};
-export const getFilePathForGif = function getFilePathForGif(arg0) {
+}
+export function getFilePathForGif(arg0) {
   return POLL_ATTACHMENT_FOLDER + "/" + arg0;
-};
-export const downloadPollGif = function downloadPollGif() {
+}
+export function downloadPollGif() {
   return obj(...arguments);
-};
+}

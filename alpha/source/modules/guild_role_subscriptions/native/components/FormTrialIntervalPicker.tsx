@@ -1,15 +1,14 @@
-// Module ID: 19603
-// Function ID: 19604
+// Module ID: 19836
+// Function ID: 19837
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 15405, 1125, 16859, 5246, 8959, 1999, 2]
+// Dependencies: [19, 21, 6963, 1125, 17097, 5247, 8962, 2000, 2]
 // Exports: default
 
-// Module 19603 (FormTrialIntervalPicker)
+// Module 19836 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import FormDropdownDefault from "FormDropdown" /* 15405 */;
+import intl4 from "intl" /* 1125 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,31 +17,29 @@ const GuildRoleSubscriptionTrialIntervalSelect = "GuildRoleSubscriptionTrialInte
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FormTrialIntervalPicker.tsx");
 
 export default function FormTrialIntervalPicker(interval) {
+  let TrailingText;
+  let intl;
+  let intl2;
   let items;
   let stringResult;
   interval = interval.interval;
   ({ onChange: importDefault, trialIntervalOptions: dependencyMap } = interval);
-  let tmp2 = dependencyMap;
-  const disabled = interval.disabled;
   let tmp = jsx;
-  let tmp3 = FormDropdownDefault;
-  if (null == interval) {
-    let intl = interval(1125).intl;
-    stringResult = intl.string(interval(1125).t.WZG1BU);
-  } else {
-    let tmp4 = interval;
-    let obj = interval(16859);
-    stringResult = obj.formatPlanIntervalDuration(interval);
-  }
-  const obj2 = {
-    label: stringResult,
+  let tmp2 = interval;
+  let tmp3 = dependencyMap;
+  const disabled = interval.disabled;
+  let obj = {
+    label: intl.string(interval(1125).t.m1KuWd),
+    subLabel: intl2.string(interval(1125).t.NB9NLF),
+    trailing: tmp(TrailingText, { text: stringResult }),
+    arrow: true,
     onPress: function handleSelectTrialInterval() {
       let intl;
       let tmp4;
       const tmp = ActionSheetActionCreatorsDefault;
       const openLazy = tmp.openLazy;
       let obj = {
-        title: intl.string(intl2.t.m1KuWd),
+        title: intl.string(intl4.t.m1KuWd),
         items: dependencyMap,
         onItemSelect(arg0) {
           if (closure_1_1 != null) {
@@ -54,8 +51,8 @@ export default function FormTrialIntervalPicker(interval) {
         selectedItem: tmp4,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8959, dependencyMap.paths);
-      intl = intl2.intl;
+      const tmp2 = asyncRequire(8962, dependencyMap.paths);
+      intl = intl4.intl;
       tmp4 = interval;
       const tmp3 = GuildRoleSubscriptionTrialIntervalSelect;
       if (interval == null) {
@@ -65,5 +62,16 @@ export default function FormTrialIntervalPicker(interval) {
     },
     disabled
   };
-  return tmp(tmp3, obj2);
+  const TableRow = interval(6963).TableRow;
+  intl = interval(1125).intl;
+  intl2 = interval(1125).intl;
+  TrailingText = interval(6963).TableRow.TrailingText;
+  if (null == interval) {
+    const intl3 = tmp2(1125).intl;
+    stringResult = intl3.string(tmp2(1125).t.WZG1BU);
+  } else {
+    const tmp2Result = tmp2(17097);
+    stringResult = tmp2Result.formatPlanIntervalDuration(interval);
+  }
+  return tmp(TableRow, obj);
 };

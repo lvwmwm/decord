@@ -1,9 +1,9 @@
-// Module ID: 13462
-// Function ID: 13463
+// Module ID: 13695
+// Function ID: 13696
 // Name: QueryTokenizer
 // Dependencies: [2]
 
-// Module 13462 (QueryTokenizer)
+// Module 13695 (QueryTokenizer)
 import size from "module_2" /* 2 */;
 
 let map;
@@ -204,16 +204,16 @@ class QueryTokenizer {
       let arr = _rules.push(obj);
     }
   }
-  tokenize(errorcode) {
+  tokenize(arg0) {
     let tmp2;
     const self = this;
-    let str = errorcode;
+    let str = arg0;
     const items = [];
     let num = 0;
     let str2 = "";
     let num2 = 0;
     let str3 = "";
-    if (errorcode.length > 0) {
+    if (arg0.length > 0) {
       while (true) {
         let sum;
         let substr;
@@ -370,7 +370,7 @@ class QueryTokenizer {
       continue;
     }
   }
-  _getMatch(errorcode, type, arg2) {
+  _getMatch(arg0, type, arg2) {
     type = null;
     if (null != type) {
       type = type.type;
@@ -383,10 +383,10 @@ class QueryTokenizer {
     let tmp3;
     if (end === arg2) {
       const _String = String;
-      tmp3 = getMatch(errorcode, self._followers[String(undefined, type)], arg2);
+      tmp3 = getMatch(arg0, self._followers[String(undefined, type)], arg2);
     }
     if (null == tmp3) {
-      tmp3 = getMatch(errorcode, self._rules, arg2);
+      tmp3 = getMatch(arg0, self._rules, arg2);
     }
     return tmp3;
   }

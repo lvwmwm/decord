@@ -9,7 +9,7 @@ import _INTERNAL_captureMetric2 from "_INTERNAL_captureMetric" /* 761 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const count = function count(name, arg1, unit) {
+export function count(name, arg1, unit) {
   let attributes;
   let num = arg1;
   if (arg1 === undefined) {
@@ -31,8 +31,8 @@ export const count = function count(name, arg1, unit) {
     scope = unit.scope;
   }
   const result = _INTERNAL_captureMetric(obj, { scope });
-};
-export const distribution = function distribution(name, value, unit) {
+}
+export function distribution(name, value, unit) {
   let attributes;
   const obj = { type: "distribution", name, value, unit, attributes };
   unit = undefined;
@@ -50,8 +50,8 @@ export const distribution = function distribution(name, value, unit) {
     scope = unit.scope;
   }
   const result = _INTERNAL_captureMetric(obj, { scope });
-};
-export const gauge = function gauge(name, value, unit) {
+}
+export function gauge(name, value, unit) {
   let attributes;
   const obj = { type: "gauge", name, value, unit, attributes };
   unit = undefined;
@@ -69,4 +69,4 @@ export const gauge = function gauge(name, value, unit) {
     scope = unit.scope;
   }
   const result = _INTERNAL_captureMetric(obj, { scope });
-};
+}

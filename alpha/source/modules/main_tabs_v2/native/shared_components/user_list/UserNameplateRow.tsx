@@ -1,20 +1,20 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10754
+// Function ID: 10755
 // Name: UserNameplateRow
-// Dependencies: [32, 109, 19, 21, 5004, 587, 558, 576, 6940, 5288, 9442, 6939, 6941, 6934, 2]
+// Dependencies: [32, 109, 19, 21, 5005, 587, 558, 576, 6964, 5289, 9473, 6963, 6965, 6958, 2]
 
-// Module 10721 (UserNameplateRow)
+// Module 10754 (UserNameplateRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5288 */;
-import TableRowDivider from "TableRowDivider" /* 6934 */;
-import react3 from "react" /* 6940 */;
-import NameplateDefault from "Nameplate" /* 9442 */;
+import useToken from "useToken" /* 5289 */;
+import TableRowDivider from "TableRowDivider" /* 6958 */;
+import react3 from "react" /* 6964 */;
+import NameplateDefault from "Nameplate" /* 9473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNamepl
     tmp21 = cResult[18];
   }
   closure_10();
-  const context = react.useContext(tmp(6940).TableRowGroupContext);
+  const context = react.useContext(tmp(6964).TableRowGroupContext);
   let tmp30 = !context;
   if (tmp30) {
     tmp30 = true === tmp16;
@@ -229,13 +229,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNamepl
   const token = tmp3Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
   const obj2 = { shadow: "none", border: "none", radius: token, start: tmp14, end: !context && true === end, onPress, onPressIn: callback, onPressOut: callback1, disabled: flag, style: tmp2.card, children: items2 };
   tmp14 = !context;
-  const Card = tmp3(6941).Card;
+  const Card = tmp3(6965).Card;
   if (!context) {
     tmp14 = true === start;
   }
   const merged1 = Object.assign(merged);
   items2 = [metroImportDefault(NameplateDefault, { nameplate, isPressed: first, invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), ];
-  const TableRowInner = tmp3(6939).TableRowInner;
+  const TableRowInner = tmp3(6963).TableRowInner;
   items2[1] = metroImportDefault(TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps });
   const tmp13Result = metroImportAll(Card, obj2);
   let tmp13Result2 = tmp13Result;

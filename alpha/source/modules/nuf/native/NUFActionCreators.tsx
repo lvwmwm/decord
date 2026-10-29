@@ -1,22 +1,22 @@
-// Module ID: 13842
-// Function ID: 13843
+// Module ID: 14075
+// Function ID: 14076
 // Name: NUFActionCreators
-// Dependencies: [5, 13814, 6535, 1389, 13843, 1084, 7109, 584, 6707, 13844, 1999, 13924, 13927, 13928, 1104, 13817, 13821, 2]
+// Dependencies: [5, 14047, 6559, 1389, 14076, 1084, 7133, 584, 6731, 14077, 2000, 14157, 14160, 14161, 1104, 14050, 14054, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 13842 (NUFActionCreators)
+// Module 14075 (NUFActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7109 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13817 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13821 */;
-import NUFConstants from "NUFConstants" /* 13843 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13924 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13927 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7133 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14050 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14054 */;
+import NUFConstants from "NUFConstants" /* 14076 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 14157 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13814 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6535 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14047 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
 import UserStore from "UserStore" /* 1389 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let modalConfig = function _startContactSyncForDiscoverability() {
           return obj;
         } else {
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp22) {
         c3 = 3;
@@ -121,11 +121,11 @@ const PlatformTypes = Constants.PlatformTypes;
 let closure_12 = CreateGuildConstants.IN_APP_GUILD_TEMPLATES_MODAL_KEY;
 let result = size.fileFinishedImporting("modules/nuf/native/NUFActionCreators.tsx");
 
-export const startOnboarding = function startOnboarding() {
+export function startOnboarding() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "ONBOARDING_START" });
-};
-export const nextOnboardingStep = function nextOnboardingStep(skip) {
+}
+export function nextOnboardingStep(skip) {
   let flag = skip.skip;
   if (flag === undefined) {
     flag = false;
@@ -136,12 +136,12 @@ export const nextOnboardingStep = function nextOnboardingStep(skip) {
   }
   const obj = DispatcherDefault;
   obj.dispatch({ type: "ONBOARDING_STEP", skip: flag, skipAttempt: flag2 });
-};
-export const previousOnboardingStep = function previousOnboardingStep() {
+}
+export function previousOnboardingStep() {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "ONBOARDING_STEP", back: true });
-};
-export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
+}
+export function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
   let paths;
   let closure_0 = SLIDE_IN;
   const obj = ModalActionCreatorsDefault;
@@ -155,8 +155,8 @@ export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildT
     value.modalConfig = modalConfig;
     return value;
   }), {}, closure_12);
-};
-export const transitionToHubEmailConnectionModal = function transitionToHubEmailConnectionModal(SLIDE_IN, arg1) {
+}
+export function transitionToHubEmailConnectionModal(SLIDE_IN, arg1) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -176,8 +176,8 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
     displayStudentPrompt: flag
   };
   obj.open(obj2, SLIDE_IN);
-};
-export const openDiscoverabilityModal = function openDiscoverabilityModal() {
+}
+export function openDiscoverabilityModal() {
   let paths;
   const obj = ModalActionCreatorsDefault;
   obj.pushLazy(_asyncToGenerator(async () => {
@@ -190,18 +190,18 @@ export const openDiscoverabilityModal = function openDiscoverabilityModal() {
     value.modalConfig = modalConfig;
     return value;
   }), {}, closure_10);
-};
-export const closeDiscoverabilityModal = function closeDiscoverabilityModal(skip) {
+}
+export function closeDiscoverabilityModal(skip) {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(closure_10);
   const obj2 = DispatcherDefault;
   const obj3 = { type: "ONBOARDING_STEP", skip };
   obj2.dispatch(obj3);
-};
-export const startContactSyncForDiscoverability = function startContactSyncForDiscoverability() {
+}
+export function startContactSyncForDiscoverability() {
   return obj(...arguments);
-};
-export const toggleDiscoverabilityForUser = function toggleDiscoverabilityForUser() {
+}
+export function toggleDiscoverabilityForUser() {
   const currentUser = UserStore.getCurrentUser();
   let phone;
   if (currentUser != null) {
@@ -216,4 +216,4 @@ export const toggleDiscoverabilityForUser = function toggleDiscoverabilityForUse
       React3(true);
     }
   }
-};
+}

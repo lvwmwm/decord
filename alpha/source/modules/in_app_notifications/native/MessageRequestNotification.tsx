@@ -1,16 +1,16 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14308
+// Function ID: 14309
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 558, 576, 1125, 13992, 5187, 1199, 13999, 14010, 2]
+// Dependencies: [19, 21, 558, 576, 1125, 14225, 5188, 1199, 14232, 14243, 2]
 
-// Module 14075 (MessageRequestNotification)
+// Module 14308 (MessageRequestNotification)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import RootNavigationRef from "RootNavigationRef" /* 5187 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13992 */;
-import Notification from "Notification" /* 14010 */;
+import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 14225 */;
+import Notification from "Notification" /* 14243 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
     if (cResult[6] !== author) {
       const Avatar = tmp(1199).Avatar;
-      const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="r" />;
+      const tmp11 = <Avatar user={author} size={native.AvatarSizes.NORMAL} guildId="Array" />;
       cResult[6] = author;
       cResult[7] = tmp11;
       tmp9 = tmp11;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const SystemMessageText = tmp(13999).SystemMessageText;
+      const SystemMessageText = tmp(14232).SystemMessageText;
       const intl2 = tmp(1125).intl;
       const tmp14 = <SystemMessageText text={intl2.string(intl3.t["Bx4/Lf"])} />;
       cResult[8] = tmp14;
@@ -119,11 +119,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const NotificationPressable = author(14010).NotificationPressable;
-  let obj2 = { user: author, size: author(1199).AvatarSizes.NORMAL, guildId: "r" };
+  const NotificationPressable = author(14243).NotificationPressable;
+  let obj2 = { user: author, size: author(1199).AvatarSizes.NORMAL, guildId: "Array" };
   const Avatar = author(1199).Avatar;
   ({ text: intl.string(author(1125).t["Bx4/Lf"]) });
-  const SystemMessageText = author(13999).SystemMessageText;
+  const SystemMessageText = author(14232).SystemMessageText;
   intl = author(1125).intl;
   return <NotificationPressable icon={null} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

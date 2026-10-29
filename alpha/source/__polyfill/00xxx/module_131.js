@@ -281,14 +281,14 @@ let items = [
   },
   {
     key: "compareDocumentPosition",
-    value: function compareDocumentPosition(nativeNodeReference) {
-      if (nativeNodeReference === this) {
+    value: function compareDocumentPosition(target) {
+      if (target === this) {
         return 0;
       } else {
         const obj = require("module_136");
-        nativeNodeReference = obj.getNativeNodeReference(tmp);
+        const nativeNodeReference = obj.getNativeNodeReference(tmp);
         const obj2 = require("module_136");
-        const nativeNodeReference1 = obj2.getNativeNodeReference(nativeNodeReference);
+        const nativeNodeReference1 = obj2.getNativeNodeReference(target);
         if (null != nativeNodeReference) {
           let DOCUMENT_POSITION_DISCONNECTED;
           if (null != nativeNodeReference1) {
@@ -303,9 +303,9 @@ let items = [
   },
   {
     key: "contains",
-    value: function contains(nativeNodeReference) {
+    value: function contains(arg0) {
       const self = this;
-      const tmp = nativeNodeReference === this || self.compareDocumentPosition(nativeNodeReference) & ReadOnlyNode.DOCUMENT_POSITION_CONTAINED_BY;
+      const tmp = arg0 === this || self.compareDocumentPosition(arg0) & ReadOnlyNode.DOCUMENT_POSITION_CONTAINED_BY;
       return tmp;
     }
   },

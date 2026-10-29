@@ -1,18 +1,18 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13462
+// Function ID: 13463
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5005, 13015, 6050, 21, 5004, 587, 1381, 558, 576, 504, 13018, 13022, 13023, 1125, 3057, 3089, 13229, 13226, 13231, 13212, 13204, 1414, 1354, 13243, 7263, 13206, 13214, 2]
+// Dependencies: [32, 19, 17, 5006, 13236, 6054, 21, 5005, 587, 1381, 558, 576, 504, 13249, 13253, 13254, 1125, 3058, 3090, 13463, 13460, 13465, 13449, 13436, 1415, 1354, 13477, 7287, 13438, 13450, 2]
 
-// Module 13228 (CheckpointEmojiStatsScreen)
+// Module 13462 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
-import CheckpointStore from "CheckpointStore" /* 13015 */;
-import CheckpointConstants from "CheckpointConstants" /* 6050 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import CheckpointStore from "CheckpointStore" /* 13236 */;
+import CheckpointConstants from "CheckpointConstants" /* 6054 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -273,7 +273,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
                                     const obj8 = { style: tmp42, children: items5 };
                                     items5 = [tmp43, ];
                                     const obj7 = { style: tmp4.copy, children: items6 };
-                                    const obj9 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
+                                    const obj9 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
                                     const tmp31Result3 = stateFromStores(tmp2[28]);
                                     const tmp31Result4 = stateFromStores(tmp2[23]);
                                     items5[1] = closure_9(tmp31Result4, obj9);
@@ -499,7 +499,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   [emoji, _slicedToArray] = react.useState(tmp9 ? closure_11 : emojis[0]);
   let tmp12 = importDefault;
   const tmp13 = require("useCheckpointSound");
-  react = tmp13(require("module_13023"));
+  react = tmp13(require("module_13254"));
   let intl = tmp2(tmp3[16]).intl;
   const string = intl.string;
   if (tmp9) {
@@ -527,7 +527,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEm
   items6 = [, ];
   const obj9 = { size: "xs", color };
   items6[0] = closure_9(EmojiSlightlySmilingFaceIcon, obj9);
-  const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj10 = { isStepHeading: true, variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp12Result3 = tmp12(emoji[23]);
   items6[1] = closure_9(tmp12Result3, obj10);
   items7 = [closure_10(View, obj8), , , , ];

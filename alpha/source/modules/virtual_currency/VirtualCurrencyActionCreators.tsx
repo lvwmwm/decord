@@ -1,16 +1,16 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9515
+// Function ID: 9516
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6860, 1084, 3, 584, 1294, 6409, 9485, 1254, 2]
+// Dependencies: [5, 6883, 1084, 3, 584, 1294, 6433, 9516, 1254, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9484 (VirtualCurrencyActionCreators)
+// Module 9515 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6860 */;
+import SKUStore from "SKUStore" /* 6883 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2, skuId;
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp62(billingError);
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -266,14 +266,14 @@ const tmp2 = new LoggerDefault("VirtualCurrencyActionCreators");
 let result = size.fileFinishedImporting("modules/virtual_currency/VirtualCurrencyActionCreators.tsx");
 
 export { fetchVirtualCurrencyBalance };
-export const fetchVirtualCurrencyTotalRedeemed = function fetchVirtualCurrencyTotalRedeemed() {
+export function fetchVirtualCurrencyTotalRedeemed() {
   return obj(...arguments);
-};
-export const redeemVirtualCurrencyForSKU = function redeemVirtualCurrencyForSKU() {
+}
+export function redeemVirtualCurrencyForSKU() {
   return obj(...arguments);
-};
-export const setBalancePillOverlay = function setBalancePillOverlay(balancePillOverlay) {
+}
+export function setBalancePillOverlay(balancePillOverlay) {
   obj = DispatcherDefault;
   const obj2 = { type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY", balancePillOverlay };
   return obj.dispatch(obj2);
-};
+}

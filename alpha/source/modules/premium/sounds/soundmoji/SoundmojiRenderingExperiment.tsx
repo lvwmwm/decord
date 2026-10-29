@@ -1,12 +1,12 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13227
+// Function ID: 13228
 // Name: SoundmojiRenderingExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getSoundmojiRenderingExperiment
 
-// Module 13006 (SoundmojiRenderingExperiment)
+// Module 13227 (SoundmojiRenderingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundmoji
 });
 const result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/SoundmojiRenderingExperiment.tsx");
 
-export const getSoundmojiRenderingExperiment = function getSoundmojiRenderingExperiment(location) {
+export function getSoundmojiRenderingExperiment(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useSoundmojiRenderingExperiment = tmp2;

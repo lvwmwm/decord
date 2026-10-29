@@ -12,7 +12,7 @@ let navigation;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
+export function callFrameToStackFrame(location, str, fn) {
   let UNKNOWN_FUNCTION;
   let filenameIsInAppResult;
   let replaced;
@@ -35,8 +35,8 @@ export const callFrameToStackFrame = function callFrameToStackFrame(location, st
     filenameIsInAppResult = obj2.filenameIsInApp(replaced);
   }
   return obj;
-};
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
+}
+export function watchdogTimer(fn, arg1, arg2, arg3) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   let closure_2 = arg3;
@@ -65,4 +65,4 @@ export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
       c5 = arg0;
     }
   };
-};
+}

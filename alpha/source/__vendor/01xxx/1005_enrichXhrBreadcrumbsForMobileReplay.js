@@ -9,7 +9,7 @@ import _mod693 from "module_693" /* 693 */;
 import _mod1006 from "module_1006" /* 1006 */;
 
 
-export const enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbsForMobileReplay(category, xhr) {
+export function enrichXhrBreadcrumbsForMobileReplay(category, xhr) {
   function _getBodySize(response, responseType) {
     try {
       let json = response;
@@ -60,4 +60,4 @@ export const enrichXhrBreadcrumbsForMobileReplay = function enrichXhrBreadcrumbs
       }
     }
   }
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14477
+// Function ID: 14478
 // Name: openAppChannelReportModal
-// Dependencies: [5, 2042, 6845, 14242, 8140, 2]
+// Dependencies: [5, 2043, 6868, 14478, 8163, 2]
 // Exports: default
 
-// Module 14241 (openAppChannelReportModal)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
+// Module 14477 (openAppChannelReportModal)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_4, closure_5, contextualGuildId;
@@ -26,7 +26,7 @@ let obj = function _getApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -106,7 +106,7 @@ obj = function _openAppChannelReportModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ obj = function _openAppChannelReportModal() {
               closure_133_1(closure_133_2[3])();
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp25) {
           c7 = 3;

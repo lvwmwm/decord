@@ -1,15 +1,15 @@
-// Module ID: 13897
-// Function ID: 13898
+// Module ID: 14130
+// Function ID: 14131
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 5004, 558, 576, 4914, 5270, 1125, 10876, 6013, 2]
+// Dependencies: [19, 17, 21, 5005, 558, 576, 4915, 5271, 1125, 10781, 6015, 2]
 
-// Module 13897 (InviteRolesList)
+// Module 14130 (InviteRolesList)
 import react_native from "react-native" /* 17 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 4914 */;
-import RolePillDefault from "RolePill" /* 10876 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 4915 */;
+import RolePillDefault from "RolePill" /* 10781 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
         }
         const items = [];
         HermesBuiltin.arraySpread(items, roles, 0);
-        const sorted = items.sort(tmp2(4914).sortInviteRoles);
+        const sorted = items.sort(tmp2(4915).sortInviteRoles);
         const mapped = sorted.map(tmp7);
         cResult[1] = guild;
         cResult[2] = roles;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
           const _Symbol = Symbol;
           if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1125).t.stcSfI) };
-            const Text = tmp2(5270).Text;
+            const Text = tmp2(5271).Text;
             intl = tmp2(1125).intl;
             const tmp14 = closure_5(Text, obj2);
             cResult[6] = tmp14;
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
               }
               const obj3 = { spacing: 4, style, children: items1 };
               items1 = [tmp12, tmp19];
-              const tmp25 = closure_6(guild(6013).Stack, obj3);
+              const tmp25 = closure_6(guild(6015).Stack, obj3);
               cResult[15] = style;
               cResult[16] = tmp19;
               cResult[17] = tmp25;
@@ -168,9 +168,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteRole
     tmp2 = null;
     if (0 !== memo.length) {
       let obj = { spacing: 4, style, children: items1 };
-      const Stack = guild(6013).Stack;
+      const Stack = guild(6015).Stack;
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(guild(1125).t.stcSfI) };
-      const Text = guild(5270).Text;
+      const Text = guild(5271).Text;
       intl = guild(1125).intl;
       items1 = [closure_5(Text, obj2), ];
       const obj3 = {

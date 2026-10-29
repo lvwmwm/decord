@@ -1,14 +1,14 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18644
+// Function ID: 18645
 // Name: useSmartSearchRowViewability
-// Dependencies: [19, 1998, 558, 576, 5186, 13568, 1503, 5189, 13480, 13478, 1104, 504, 2]
+// Dependencies: [19, 1999, 558, 576, 5187, 13801, 1504, 5190, 13713, 13711, 1104, 504, 2]
 
-// Module 18410 (useSmartSearchRowViewability)
-import useChatLayoutDefault from "useChatLayout" /* 5189 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13478 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13480 */;
+// Module 18644 (useSmartSearchRowViewability)
+import useChatLayoutDefault from "useChatLayout" /* 5190 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13711 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13713 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmar
     }
     const effect = obj3.useEffect(tmp13, tmp14);
   }
-  const tmpResult = tmp(5186);
+  const tmpResult = tmp(5187);
   let tmp8 = null != tmpResult.coerceChannelRoute({ name: currentNavigationRouteName });
   if (!tmp8) {
     class S {
@@ -109,7 +109,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSmar
   if (!tmp6) {
     if (isChatLockedOpen) {
       const obj5 = { name: currentNavigationRouteName };
-      const tmpResult = tmp(5186);
+      const tmpResult = tmp(5187);
       isChatLockedOpen = null != tmpResult.coerceGuildsRoute(obj5);
     }
     tmp6 = isChatLockedOpen;

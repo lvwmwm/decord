@@ -1,28 +1,28 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13696
+// Function ID: 13697
 // Name: SearchUtils
-// Dependencies: [32, 4856, 4934, 6698, 4878, 4946, 4907, 1389, 9748, 1084, 2046, 1125, 13464, 11, 13462, 12, 584, 5640, 5058, 13467, 2]
+// Dependencies: [32, 4857, 4935, 6722, 4879, 4947, 4908, 1389, 9780, 1084, 2047, 1125, 13697, 11, 13695, 12, 584, 5641, 5059, 13700, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 13463 (SearchUtils)
+// Module 13696 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl11 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import SearchConstants from "SearchConstants" /* 9748 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 13462 */;
-import SearchTokens from "SearchTokens" /* 13464 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13467 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import SearchConstants from "SearchConstants" /* 9780 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 13695 */;
+import SearchTokens from "SearchTokens" /* 13697 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 13700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildChannelStore from "GuildChannelStore" /* 4934 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6698 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildChannelStore from "GuildChannelStore" /* 4935 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6722 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let closure_16;
 let closure_17;
 let map1;
 let unpackModuleId;
-const f118476 = (arg0, arg1) => "\\" + arg1;
+const f119995 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
@@ -51,7 +51,7 @@ let tmp5 = new QueryTokenizerDefault();
 const navigation2 = tmp5;
 let result = size.fileFinishedImporting("modules/search/SearchUtils.tsx");
 
-export const getSearchContextId = function getSearchContextId(searchContext) {
+export function getSearchContextId(searchContext) {
   const type = searchContext.type;
   if (unpackModuleId.GUILD === type) {
     return searchContext.guildId;
@@ -65,8 +65,8 @@ export const getSearchContextId = function getSearchContextId(searchContext) {
     }
     return searchContext.channelId;
   }
-};
-export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
+}
+export function getSearchHistoryStateId(type) {
   let channelId;
   type = type.type;
   if (unpackModuleId.GUILD === type) {
@@ -84,8 +84,8 @@ export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
     channelId = type.channelId;
   }
   return channelId;
-};
-export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, tab, searchResultsQuery) {
+}
+export function getSearchTabFetchId(searchContext, tab, searchResultsQuery) {
   let channelId;
   const type = searchContext.type;
   if (unpackModuleId.GUILD === type) {
@@ -103,10 +103,10 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, t
     channelId = searchContext.channelId;
   }
   return "" + channelId + "-" + tab + "-" + searchResultsQuery;
-};
-export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(cResult) {
-  const obj = _modDef2046();
-  const diffResult = obj.diff(_modDef2046(cResult), "s");
+}
+export function getChannelActiveAgoTimestamp(cResult) {
+  const obj = _modDef2047();
+  const diffResult = obj.diff(_modDef2047(cResult), "s");
   if (diffResult > c19) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -144,8 +144,8 @@ export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestam
     const intl = intl11.intl;
     return intl.string(intl11.t["5Ldpkc"]);
   }
-};
-export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
+}
+export function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
   if (unpackModuleId.CHANNEL === type) {
     const intl3 = intl11.intl;
@@ -157,8 +157,8 @@ export const getIndexingErrorText = function getIndexingErrorText(searchContext)
     const intl = intl11.intl;
     return intl.string(intl11.t.AXPbZr);
   }
-};
-export const getGuildIdFromSearchContext = function getGuildIdFromSearchContext(searchContext) {
+}
+export function getGuildIdFromSearchContext(searchContext) {
   const type = searchContext.type;
   if (unpackModuleId.GUILD_CHANNEL !== type) {
     if (unpackModuleId.GUILD !== type) {
@@ -180,8 +180,8 @@ export const getGuildIdFromSearchContext = function getGuildIdFromSearchContext(
     }
   }
   return searchContext.guildId;
-};
-export const getChannelIdFromSearchContext = function getChannelIdFromSearchContext(searchContext) {
+}
+export function getChannelIdFromSearchContext(searchContext) {
   const type = searchContext.type;
   if (unpackModuleId.GUILD_CHANNEL !== type) {
     if (unpackModuleId.CHANNEL !== type) {
@@ -191,8 +191,8 @@ export const getChannelIdFromSearchContext = function getChannelIdFromSearchCont
     }
   }
   return searchContext.channelId;
-};
-export const getTabTitle = function getTabTitle(id) {
+}
+export function getTabTitle(id) {
   if (SearchTabs.RECENT === id) {
     const intl10 = intl11.intl;
     return intl10.string(intl11.t.tWnHcL);
@@ -224,8 +224,8 @@ export const getTabTitle = function getTabTitle(id) {
     const intl = intl11.intl;
     return intl.string(intl11.t.B2panI);
   }
-};
-export const searchModeToSearchQueryParams = function searchModeToSearchQueryParams(searchMode) {
+}
+export function searchModeToSearchQueryParams(searchMode) {
   if (constants3.MOST_RELEVANT === searchMode) {
     return { sort_by: "relevance", sort_order: "desc" };
   } else if (constants3.OLDEST === searchMode) {
@@ -234,8 +234,8 @@ export const searchModeToSearchQueryParams = function searchModeToSearchQueryPar
     const NEWEST = tmp.NEWEST;
     return { sort_by: "timestamp", sort_order: "desc" };
   }
-};
-export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchMode(sort_by) {
+}
+export function searchQueryParamsToSearchMode(sort_by) {
   if (null != sort_by.sort_by) {
     let NEWEST;
     if (null != sort_by.sort_order) {
@@ -250,8 +250,8 @@ export const searchQueryParamsToSearchMode = function searchQueryParamsToSearchM
     return NEWEST;
   }
   NEWEST = constants3.NEWEST;
-};
-export const getSearchOptionAnswer = function getSearchOptionAnswer(arg0) {
+}
+export function getSearchOptionAnswer(arg0) {
   if (SearchTokenTypes.FILTER_FROM === arg0) {
     const intl10 = intl11.intl;
     return intl10.string(intl11.t.E466pL);
@@ -290,9 +290,9 @@ export const getSearchOptionAnswer = function getSearchOptionAnswer(arg0) {
     const intl7 = intl11.intl;
     return intl7.string(intl11.t.Zbbc1E);
   }
-};
+}
 export { ShowDatePicker };
-export const setIncludeNSFW = function setIncludeNSFW(arg0, guildIdFromSearchContext) {
+export function setIncludeNSFW(arg0, guildIdFromSearchContext) {
   if (GuildNSFWAgreeStore.didAgree(guildIdFromSearchContext)) {
     const currentUser = UserStore.getCurrentUser();
     if (null != currentUser) {
@@ -300,8 +300,8 @@ export const setIncludeNSFW = function setIncludeNSFW(arg0, guildIdFromSearchCon
       arg0.include_nsfw = tmp4;
     }
   }
-};
-export const getSearchQueryFromTokens = function getSearchQueryFromTokens(tokenizeQueryResult) {
+}
+export function getSearchQueryFromTokens(tokenizeQueryResult) {
   let tmp7;
   let tmp8;
   const obj = {};
@@ -403,8 +403,8 @@ export const getSearchQueryFromTokens = function getSearchQueryFromTokens(tokeni
     }
   }
   return obj;
-};
-export const getQueryContentString = function getQueryContentString(searchQueryFromTokens) {
+}
+export function getQueryContentString(searchQueryFromTokens) {
   let content;
   let contents;
   if (searchQueryFromTokens != null) {
@@ -431,8 +431,8 @@ export const getQueryContentString = function getQueryContentString(searchQueryF
   if (searchQueryFromTokens != null) {
     content = searchQueryFromTokens.content;
   }
-};
-export const getNonTokenQuery = function getNonTokenQuery(tokenizeQueryResult) {
+}
+export function getNonTokenQuery(tokenizeQueryResult) {
   const mapped = tokenizeQueryResult.map((type) => {
     let str = "";
     if (type.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
@@ -442,8 +442,8 @@ export const getNonTokenQuery = function getNonTokenQuery(tokenizeQueryResult) {
   });
   let str = mapped.join(" ");
   return str.trim();
-};
-export const getSelectionScope = function getSelectionScope(tokenizeQueryResult, focusOffset, anchorOffset) {
+}
+export function getSelectionScope(tokenizeQueryResult, focusOffset, anchorOffset) {
   let closure_1 = focusOffset;
   let closure_2 = anchorOffset;
   const found = tokenizeQueryResult.find((start, index) => {
@@ -472,8 +472,8 @@ export const getSelectionScope = function getSelectionScope(tokenizeQueryResult,
     const obj = { previousToken: _slicedToArray, currentToken: found, nextToken, focusOffset, anchorOffset };
   }
   return tmp2;
-};
-export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tokens) {
+}
+export function getAutocompleteMode(cursorScope, tokens) {
   let currentToken;
   let previousToken;
   let obj = cursorScope;
@@ -504,7 +504,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
         let obj7;
-        const tmp10Result = tmp10(13464);
+        const tmp10Result = tmp10(13697);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           obj7 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
           const obj6 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
@@ -513,21 +513,21 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(13462).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(13695).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: map1.FILTER_ALL, filter: null, token: tmp4 };
   }
-};
-export const quoteChannelName = function quoteChannelName(channelName) {
+}
+export function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f118476) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f119995) + "\"";
   }
   return combined;
-};
-export const getFlattenedAutocompleteResults = function getFlattenedAutocompleteResults(arg0, arg1) {
+}
+export function getFlattenedAutocompleteResults(arg0, arg1) {
   let closure_1;
   let closure_0 = arg1;
   importDefault = [];
@@ -544,7 +544,7 @@ export const getFlattenedAutocompleteResults = function getFlattenedAutocomplete
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f118476) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f119995) + "\"";
             }
             tmp = combined;
           }
@@ -576,35 +576,35 @@ export const getFlattenedAutocompleteResults = function getFlattenedAutocomplete
     }
   });
   return importDefault.filter((resultText) => "" !== resultText.resultText);
-};
-export const getQueryFromTokens = function getQueryFromTokens(tokens) {
+}
+export function getQueryFromTokens(tokens) {
   let str = "";
   if (null != tokens) {
     const mapped = tokens.map((getFullMatch) => getFullMatch.getFullMatch());
     str = mapped.join("");
   }
   return str;
-};
-export const queryHasFilter = function queryHasFilter(errorcode, arg1) {
+}
+export function queryHasFilter(arg0, arg1) {
   let closure_0 = arg1;
-  const tokenizeResult = navigation.tokenize(errorcode);
+  const tokenizeResult = navigation.tokenize(arg0);
   return tokenizeResult.some((type) => type.type === closure_0);
-};
-export const tokenizeQuery = function tokenizeQuery(searchQueryString) {
+}
+export function tokenizeQuery(searchQueryString) {
   return navigation.tokenize(searchQueryString);
-};
-export const clearTokenCache = function clearTokenCache() {
+}
+export function clearTokenCache() {
   navigation.clearCache();
   navigation2.clearCache();
-};
-export const showDatePicker = function showDatePicker(arg0) {
+}
+export function showDatePicker(arg0) {
   let tmp = null;
   if (null != arg0) {
     tmp = obj[arg0];
   }
   return tmp;
-};
-export const filterHasAnswer = function filterHasAnswer(type, type2) {
+}
+export function filterHasAnswer(type, type2) {
   const isMatch = regex2.test(type.type);
   let tmp2 = null == type2 && isMatch;
   if (!tmp2) {
@@ -612,8 +612,8 @@ export const filterHasAnswer = function filterHasAnswer(type, type2) {
     const tmp3 = null != type2 && isMatch && !regex.test(type2.type);
   }
   return !tmp2;
-};
-export const refreshSearchTokens = function refreshSearchTokens() {
+}
+export function refreshSearchTokens() {
   let addRule2;
   let obj = SearchTokens;
   const result = obj.rebuildSearchTokenConfigs();
@@ -638,8 +638,8 @@ export const refreshSearchTokens = function refreshSearchTokens() {
   });
   const obj5 = DispatcherDefault;
   obj5.dispatch({ type: "SEARCH_TOKENS_REFRESHED" });
-};
-export const getChannelDisplayName = function getChannelDisplayName(isDM) {
+}
+export function getChannelDisplayName(isDM) {
   let flag;
   let str;
   const obj = useChannelName;
@@ -675,7 +675,7 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f118476) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f119995) + "\"";
   }
   let combined1 = combined;
   if (flag) {
@@ -683,8 +683,8 @@ export const getChannelDisplayName = function getChannelDisplayName(isDM) {
     combined1 = "#" + combined;
   }
   return combined1;
-};
-export const getChannelPlaceholderName = function getChannelPlaceholderName(isGroupDM) {
+}
+export function getChannelPlaceholderName(isGroupDM) {
   if (isGroupDM.isGroupDM()) {
     const obj3 = useChannelName;
     return obj3.computeChannelName(isGroupDM, UserStore, RelationshipStore);
@@ -704,10 +704,10 @@ export const getChannelPlaceholderName = function getChannelPlaceholderName(isGr
     }
     return name;
   }
-};
-export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPrivateChannelSearchTokens(errorcode) {
+}
+export function removeInvalidPrivateChannelSearchTokens(arg0) {
   const items = [];
-  const tokenizeResult = navigation2.tokenize(errorcode);
+  const tokenizeResult = navigation2.tokenize(arg0);
   const item = tokenizeResult.forEach((type) => {
     const tmp2 = type.type === SearchTokenTypes.FILTER_IN || type.type === tmp.ANSWER_IN;
     if (!tmp2) {
@@ -719,8 +719,8 @@ export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPri
     closure_1 = closure_1 + getFullMatch.getFullMatch();
   });
   return importDefault.trim();
-};
-export const getSearchAnalyticsIds = function getSearchAnalyticsIds(guildId, getSessionId) {
+}
+export function getSearchAnalyticsIds(guildId, getSessionId) {
   const obj = isGuildLikeSearchContext;
   if (obj.isGuildLikeSearchContext(guildId)) {
     const guild = GuildStore.getGuild(guildId.guildId);
@@ -744,4 +744,4 @@ export const getSearchAnalyticsIds = function getSearchAnalyticsIds(guildId, get
     }
   }
   return null;
-};
+}

@@ -1,24 +1,24 @@
-// Module ID: 19723
-// Function ID: 19724
+// Module ID: 19945
+// Function ID: 19946
 // Name: NativeIntentsManager
-// Dependencies: [32, 4856, 4878, 4936, 4946, 4907, 1389, 1084, 19724, 19725, 5640, 14575, 1414, 1385, 5058, 7250, 2]
+// Dependencies: [32, 4857, 4879, 4937, 4947, 4908, 1389, 1084, 19946, 19947, 5641, 14809, 1415, 1385, 5059, 7274, 2]
 
-// Module 19723 (NativeIntentsManager)
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import useChannelName from "useChannelName" /* 5640 */;
-import getChannelIcon from "getChannelIcon" /* 14575 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19724 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 19725 */;
+// Module 19945 (NativeIntentsManager)
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import useChannelName from "useChannelName" /* 5641 */;
+import getChannelIcon from "getChannelIcon" /* 14809 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 19946 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 19947 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
 import size from "module_2" /* 2 */;
 
 let id;

@@ -1,12 +1,12 @@
-// Module ID: 8304
-// Function ID: 8305
+// Module ID: 8326
+// Function ID: 8327
 // Name: useIsFirstMessageInMediaPost
-// Dependencies: [4856, 558, 576, 573, 11, 2]
+// Dependencies: [4857, 558, 576, 573, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost
 
-// Module 8304 (useIsFirstMessageInMediaPost)
+// Module 8326 (useIsFirstMessageInMediaPost)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

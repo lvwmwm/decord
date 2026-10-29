@@ -1,12 +1,12 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5682
+// Function ID: 5683
 // Name: RegionalFeatureConfigUtils
-// Dependencies: [5681, 558, 576, 504, 2]
+// Dependencies: [5683, 558, 576, 504, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal
 
-// Module 5680 (RegionalFeatureConfigUtils)
+// Module 5682 (RegionalFeatureConfigUtils)
 import react from "react" /* 576 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5681 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5683 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,22 +137,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasTeenDe
 });
 const result = size.fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigUtils.tsx");
 
-export const isFeatureAgeGated = function isFeatureAgeGated(arg0) {
+export function isFeatureAgeGated(arg0) {
   return RegionalFeatureConfigStore.isFeatureAgeGated(arg0);
-};
+}
 export const useIsFeatureAgeGated = tmp2;
-export const isSettingTeenByDefault = function isSettingTeenByDefault(arg0) {
+export function isSettingTeenByDefault(arg0) {
   return RegionalFeatureConfigStore.isSettingTeenByDefault(arg0);
-};
+}
 export const useIsSettingTeenByDefault = tmp3;
-export const hasAgeGatedFeatures = function hasAgeGatedFeatures() {
+export function hasAgeGatedFeatures() {
   return RegionalFeatureConfigStore.hasAgeGatedFeatures();
-};
+}
 export const useHasAgeGatedFeatures = tmp4;
-export const hasTeenDefaults = function hasTeenDefaults() {
+export function hasTeenDefaults() {
   return RegionalFeatureConfigStore.hasTeenDefaults();
-};
+}
 export const useHasTeenDefaults = tmp5;
-export const shouldCollectAppStoreSignal = function shouldCollectAppStoreSignal() {
+export function shouldCollectAppStoreSignal() {
   return RegionalFeatureConfigStore.shouldCollectAppStoreSignal();
-};
+}

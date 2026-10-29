@@ -1,12 +1,12 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 15154
+// Function ID: 15155
 // Name: acomRetry
-// Dependencies: [5, 502, 14914, 569, 1480, 4851, 2]
+// Dependencies: [5, 502, 15149, 569, 1481, 4852, 2]
 // Exports: retryACOMRequest
 
-// Module 14919 (acomRetry)
+// Module 15154 (acomRetry)
 import BackoffDefault from "Backoff" /* 569 */;
-import ErrorUtilsAll from "ErrorUtils" /* 14914 */;
+import ErrorUtilsAll from "ErrorUtils" /* 15149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ let obj = function _retryACOMRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -192,6 +192,6 @@ const re7 = /code:\s*(\d{7})(?!\d)/;
 const result = size.fileFinishedImporting("modules/billing/native/apple/acomRetry.tsx");
 
 export { parseACOMErrorCode };
-export const retryACOMRequest = function retryACOMRequest() {
+export function retryACOMRequest() {
   return obj(...arguments);
-};
+}

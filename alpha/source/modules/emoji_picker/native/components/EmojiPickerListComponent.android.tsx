@@ -1,23 +1,23 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 9992
+// Function ID: 9993
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6760, 6763, 9862, 1240, 21, 5004, 5085, 9961, 5305, 1627, 558, 576, 4950, 7201, 9949, 2]
+// Dependencies: [19, 6783, 6786, 9894, 1240, 21, 5005, 5086, 9993, 5306, 1628, 558, 576, 4951, 7225, 9981, 2]
 
-// Module 9960 (EmojiPickerListComponent)
+// Module 9992 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 5085 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6763 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7201 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9862 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9949 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9961 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5086 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6786 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7225 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9894 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9981 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9993 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import createStyles from "createStyles" /* 5005 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

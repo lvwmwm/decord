@@ -1,12 +1,12 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7418
+// Function ID: 7419
 // Name: GuildProductsEligibility
-// Dependencies: [4878, 1084, 558, 576, 504, 2]
+// Dependencies: [4879, 1084, 558, 576, 504, 2]
 // Exports: isGuildEligibleForGuildProducts
 
-// Module 7395 (GuildProductsEligibility)
+// Module 7418 (GuildProductsEligibility)
 import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEl
 const result = size.fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
 
 export const useGuildEligibleForGuildProducts = tmp2;
-export const isGuildEligibleForGuildProducts = function isGuildEligibleForGuildProducts(id) {
+export function isGuildEligibleForGuildProducts(id) {
   if (null == id) {
     return false;
   } else {
@@ -110,4 +110,4 @@ export const isGuildEligibleForGuildProducts = function isGuildEligibleForGuildP
     }
     return tmp3;
   }
-};
+}

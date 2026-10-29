@@ -1,25 +1,25 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7293
+// Function ID: 7294
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1125, 587, 5004, 558, 576, 5288, 5294, 7270, 5071, 5270, 2]
+// Dependencies: [17, 21, 1125, 587, 5005, 558, 576, 5289, 5295, 7294, 5072, 5271, 2]
 
-// Module 7269 (Badge/Badge)
+// Module 7293 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 5071 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useToken from "useToken" /* 5288 */;
-import BadgeShared from "BadgeShared" /* 7270 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5072 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useToken from "useToken" /* 5289 */;
+import BadgeShared from "BadgeShared" /* 7294 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp3;
-const LinearGradientDefault = tmp3(5294);
+const LinearGradientDefault = tmp3(5295);
 function getBadgeColors(variant) {
   switch (variant) {
     case "secondary":
@@ -194,7 +194,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) {
   const cResult = obj.c(17);
   ({ type, variant, icon } = arg0);
   if (undefined === variant) {
-    variant = tmp(7270).DEFAULT_BADGE_VARIANT;
+    variant = tmp(7294).DEFAULT_BADGE_VARIANT;
   }
   const tmp4 = closure_7(variant);
   const tmpResult = useBadgeTextVariant;

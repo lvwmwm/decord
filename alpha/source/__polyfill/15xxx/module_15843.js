@@ -1,26 +1,106 @@
 // Module ID: 15843
 // Function ID: 15844
-// Dependencies: [15832, 15807]
+// Dependencies: [15816, 15820, 15815]
 
 // Module 15843
-import _mod15807 from "module_15807" /* 15807 */;
-import module_15832 from "module_15832" /* 15832 */;
+import _mod15815 from "module_15815" /* 15815 */;
+import _mod15816 from "module_15816" /* 15816 */;
 
-let _moduleResult = module_15832(_mod15807.document);
-if (_moduleResult) {
-  const _module1 = module_15832;
-  _moduleResult = _module1(_mod15807.document.createElement);
-}
-let c2 = _moduleResult;
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod15807.document;
-    element = _document.createElement(arg0);
+export default (num, arg1) => {
+  if (num instanceof _mod15816) {
+    return num;
   } else {
-    element = {};
+    let StringResult = num;
+    if (typeof num === "number") {
+      const _String = String;
+      StringResult = String(num);
+    }
+    if (typeof StringResult !== "string") {
+      return null;
+    } else {
+      let match3;
+      const tmp3 = arg1 || {};
+      if (tmp3.rtl) {
+        let obj;
+        const includePrerelease2 = tmp3.includePrerelease;
+        const safeRe2 = tmp(15820).safeRe;
+        const t2 = tmp(15820).t;
+        if (includePrerelease2) {
+          obj = safeRe2[t2.COERCERTLFULL];
+        } else {
+          obj = safeRe2[t2.COERCERTL];
+        }
+        let match1 = obj.exec(StringResult);
+        let tmp7 = null;
+        let tmp9 = null;
+        if (match1) {
+          while (true) {
+            let tmp11 = tmp7;
+            let tmp12 = tmp7 && match1.index + match1[0].length === tmp11.index + tmp11[0].length;
+            if (!tmp12) {
+              tmp11 = match1;
+            }
+            obj.lastIndex = match1.index + match1[1].length + match1[2].length;
+            let match2 = obj.exec(StringResult);
+            tmp9 = tmp11;
+            if (!match2) {
+              break;
+            } else {
+              match1 = match2;
+              tmp7 = tmp11;
+              if (!tmp7) {
+                continue;
+              } else {
+                match1 = match2;
+                tmp7 = tmp11;
+                tmp9 = tmp11;
+                if (tmp11.index + tmp11[0].length === StringResult.length) {
+                  break;
+                }
+              }
+              continue;
+            }
+          }
+        }
+        obj.lastIndex = -1;
+        match3 = tmp9;
+      } else {
+        let tmp4;
+        const match = StringResult.match;
+        const includePrerelease = tmp3.includePrerelease;
+        const safeRe = tmp(15820).safeRe;
+        const t = tmp(15820).t;
+        if (includePrerelease) {
+          tmp4 = safeRe[t.COERCEFULL];
+        } else {
+          tmp4 = safeRe[t.COERCE];
+        }
+        match3 = match(tmp4);
+      }
+      if (null === match3) {
+        return null;
+      } else {
+        let str2 = "";
+        if (tmp3.includePrerelease) {
+          str2 = "";
+          if (match3[5]) {
+            const _HermesInternal = HermesInternal;
+            str2 = "-" + match3[5];
+          }
+        }
+        let str4 = "";
+        if (tmp3.includePrerelease) {
+          str4 = "";
+          if (match3[6]) {
+            const _HermesInternal2 = HermesInternal;
+            str4 = "+" + match3[6];
+          }
+        }
+        const _HermesInternal3 = HermesInternal;
+        const tmp21 = _mod15815;
+        return tmp21("" + match3[2] + "." + match3[3] || "0" + "." + match3[4] || "0" + str2 + str4, tmp3);
+      }
+    }
   }
-  return element;
 };

@@ -1,12 +1,12 @@
-// Module ID: 5141
-// Function ID: 5142
+// Module ID: 5142
+// Function ID: 5143
 // Name: CameraRive
-// Dependencies: [109, 19, 21, 558, 5079, 576, 5142, 5134, 2]
+// Dependencies: [109, 19, 21, 558, 5080, 576, 5143, 5135, 2]
 
-// Module 5141 (CameraRive)
+// Module 5142 (CameraRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 5079 */;
+import BaseRive2 from "BaseRive" /* 5080 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let dataBinding, dependencyMap, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(5134);
+const RiveErrorBoundary2 = tmp(5135);
 let closure_2 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -44,7 +44,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(5079).useBooleanBinding;
+    const useBooleanBinding = tmp(5080).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -75,7 +75,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(5079).useBooleanBinding;
+    const useBooleanBinding = tmp(5080).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -181,7 +181,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Camera
           }
         }
       }
-      const BaseRive = tmp(5079).BaseRive;
+      const BaseRive = tmp(5080).BaseRive;
       class E {
         constructor(arg0) {
           tmp = closure_9[closure_2];

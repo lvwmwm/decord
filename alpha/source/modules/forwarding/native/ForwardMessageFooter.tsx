@@ -1,12 +1,12 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 13204
+// Function ID: 13205
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 7666, 21, 558, 576, 12959, 12965, 504, 8336, 12984, 1125, 12985, 5280, 12996, 12997, 2]
+// Dependencies: [32, 19, 7689, 21, 558, 576, 13180, 13186, 504, 8358, 13205, 1125, 13206, 5281, 13217, 13218, 2]
 
-// Module 12983 (ForwardMessageFooter)
+// Module 13204 (ForwardMessageFooter)
 import Fragment from "Fragment" /* 21 */;
-import DraftStore2 from "DraftStore" /* 7666 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
+import DraftStore2 from "DraftStore" /* 7689 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

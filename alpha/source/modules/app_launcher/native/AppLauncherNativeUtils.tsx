@@ -1,25 +1,25 @@
-// Module ID: 11961
-// Function ID: 11962
+// Module ID: 12015
+// Function ID: 12016
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 4856, 1389, 1501, 1084, 6019, 5747, 5670, 11962, 7665, 1997, 8337, 1987, 9683, 1414, 558, 576, 11207, 9969, 11967, 7293, 5248, 2]
+// Dependencies: [19, 4857, 1389, 1502, 1084, 6023, 5749, 5672, 12016, 7688, 1998, 8359, 1988, 9715, 1415, 558, 576, 11261, 10001, 12021, 7317, 5249, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
-// Module 11961 (AppLauncherNativeUtils)
+// Module 12015 (AppLauncherNativeUtils)
 import Constants from "Constants" /* 1084 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1987 */;
-import Server from "Server" /* 1997 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7665 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8337 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9683 */;
-import FrecencySection from "FrecencySection" /* 11962 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1988 */;
+import Server from "Server" /* 1998 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8359 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
+import FrecencySection from "FrecencySection" /* 12016 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleAct
 });
 let result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeUtils.tsx");
 
-export const handleApplicationSelected = function handleApplicationSelected(entrypoint) {
+export function handleApplicationSelected(entrypoint) {
   let APP;
   let _location;
   let application;
@@ -302,9 +302,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   const APPLICATION_COMMAND_SECTION_SELECTED = AnalyticEvents.APPLICATION_COMMAND_SECTION_SELECTED;
   AppAnalyticsUtils;
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    APP = tmp(5670).ApplicationCommandTriggerSections.BUILT_IN;
+    APP = tmp(5672).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(5670).ApplicationCommandTriggerSections.APP;
+    APP = tmp(5672).ApplicationCommandTriggerSections.APP;
   }
   id = application.id;
   if (id == null) {
@@ -315,8 +315,8 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
     const obj2 = { application, context, installOnDemand, sectionName, entrypoint };
     navigation.navigate(metroImportAll.APPLICATION_VIEW, obj2);
   }
-};
-export const handleViewAllSelected = function handleViewAllSelected(arg0) {
+}
+export function handleViewAllSelected(arg0) {
   let _location;
   let applications;
   let commands;
@@ -333,8 +333,8 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   const obj2 = { section_name: sectionName, num: sectionItemType === FrecencySection.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj2);
   navigation.navigate(metroImportAll.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
-};
-export const handleApplicationCommandSelected = function handleApplicationCommandSelected(arg0) {
+}
+export function handleApplicationCommandSelected(arg0) {
   let _location;
   let command;
   let context;
@@ -374,8 +374,8 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       navigation.navigate(metroImportAll.COMMAND_VIEW, obj5);
     }
   }
-};
-export const getInitialOptionValues = function getInitialOptionValues(option) {
+}
+export function getInitialOptionValues(option) {
   let choices1;
   let prefilledValues;
   let roles;
@@ -491,8 +491,8 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
     const items15 = [{ type: "text", text: "" }];
     return items15;
   }
-};
-export const getAppLauncherIconSource = function getAppLauncherIconSource(application) {
+}
+export function getAppLauncherIconSource(application) {
   let applicationIconSource;
   if (null == application) {
     applicationIconSource = AssetRegistryDefault;
@@ -509,6 +509,6 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
     }
   }
   return applicationIconSource;
-};
+}
 export const useLogAppLauncherEmptyStateView = tmp3;
 export const useHandleActivityItemSelected = tmp4;

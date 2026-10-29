@@ -1,26 +1,26 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18422
+// Function ID: 18423
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 6739, 8860, 21, 5004, 587, 8877, 558, 576, 1125, 1199, 18189, 18190, 18191, 8935, 9179, 504, 18192, 5270, 7331, 5640, 2]
+// Dependencies: [32, 19, 17, 6762, 8863, 21, 5005, 587, 8880, 558, 576, 1125, 1199, 18423, 18424, 18425, 8938, 9182, 504, 18426, 5271, 7355, 5641, 2]
 
-// Module 18188 (ICYMIContentSettingControl)
+// Module 18422 (ICYMIContentSettingControl)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import ICYMIUtils from "ICYMIUtils" /* 8877 */;
-import SegmentedControlState from "SegmentedControlState" /* 8935 */;
-import SegmentedControl from "SegmentedControl" /* 9179 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18189 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18190 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18191 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18192 */;
+import ICYMIUtils from "ICYMIUtils" /* 8880 */;
+import SegmentedControlState from "SegmentedControlState" /* 8938 */;
+import SegmentedControl from "SegmentedControl" /* 9182 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18423 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18424 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18425 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 18426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
-import ICYMIStore from "ICYMIStore" /* 8860 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import ICYMIStore from "ICYMIStore" /* 8863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     first = cResult[0];
   }
   let iconSelected = null;
-  if (tmp6 === tmp(8877).ICYMICustomScore.LESS) {
+  if (tmp6 === tmp(8880).ICYMICustomScore.LESS) {
     iconSelected = tmp4.iconSelected;
   }
   if (cResult[1] === tmp4.icon) {
@@ -93,7 +93,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       tmp11 = cResult[4];
     }
     let iconSelected1 = null;
-    if (tmp6 === tmp(8877).ICYMICustomScore.DEFAULT) {
+    if (tmp6 === tmp(8880).ICYMICustomScore.DEFAULT) {
       iconSelected1 = tmp4.iconSelected;
     }
     if (cResult[5] === tmp4.icon) {
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         tmp17 = cResult[8];
       }
       let iconSelected2 = null;
-      if (tmp6 === tmp(8877).ICYMICustomScore.MORE) {
+      if (tmp6 === tmp(8880).ICYMICustomScore.MORE) {
         iconSelected2 = tmp4.iconSelected;
       }
       if (cResult[9] === tmp4.icon) {
@@ -186,7 +186,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
                   return;
                 }
               }
-              if (tmp(8877).ICYMICustomScore.LESS !== tmp6) {
+              if (tmp(8880).ICYMICustomScore.LESS !== tmp6) {
                 class V {
                   constructor(arg0) {
                     tmp = closure_0;
@@ -205,7 +205,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
                     return;
                   }
                 }
-                if (tmp(8877).ICYMICustomScore.MORE === tmp6) {
+                if (tmp(8880).ICYMICustomScore.MORE === tmp6) {
                   class V {
                     constructor(arg0) {
                       tmp = closure_0;
@@ -372,9 +372,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     onSetActiveIndex(arg0) {
       let MORE = ICYMIUtils.ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = tmp(8877).ICYMICustomScore.LESS;
+        MORE = tmp(8880).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = tmp(8877).ICYMICustomScore.MORE;
+        MORE = tmp(8880).ICYMICustomScore.MORE;
       }
       _undefined(MORE);
       _require(MORE);
@@ -382,7 +382,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     items: items1,
     defaultIndex: num
   };
-  const useSegmentedControlState = tmp4(8935).useSegmentedControlState;
+  const useSegmentedControlState = tmp4(8938).useSegmentedControlState;
   num = 0;
   SegmentedControlState;
   if (ICYMIUtils.ICYMICustomScore.LESS !== tmp3) {
@@ -440,7 +440,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== stateFromStores) {
-    const tmpResult2 = tmp(8877);
+    const tmpResult2 = tmp(8880);
     const numberToCustomScoreResult = tmpResult2.numberToCustomScore(stateFromStores);
     cResult[3] = stateFromStores;
     cResult[4] = numberToCustomScoreResult;
@@ -449,7 +449,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
     tmp8 = cResult[4];
   }
   importDefault = tmp8;
-  const MUTED = tmp(8877).ICYMICustomScore.MUTED;
+  const MUTED = tmp(8880).ICYMICustomScore.MUTED;
   if (cResult[5] !== id) {
     const fn2 = function v(arg0) {
       let customScoreToNumberResult;
@@ -485,7 +485,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(tmp(1125).t.Clq6km) };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       const tmp16 = closure_8(Text, obj2);
       cResult[10] = tmp16;
@@ -505,7 +505,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
     }
     if (cResult[13] !== tmp17) {
       const obj4 = { variant: "text-xs/normal", color: "text-default", children: tmp17 };
-      const tmp21 = closure_8(tmp(5270).Text, obj4);
+      const tmp21 = closure_8(tmp(5271).Text, obj4);
       cResult[13] = tmp17;
       cResult[14] = tmp21;
       tmp19 = tmp21;
@@ -553,7 +553,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
               }
               if (cResult[28] !== tmp13.warningText) {
                 const obj5 = { variant: "text-xs/normal", color: "text-muted", style: warningText, children: tmp39 };
-                const tmp43 = closure_8(tmp(5270).Text, obj5);
+                const tmp43 = closure_8(tmp(5271).Text, obj5);
                 cResult[28] = tmp13.warningText;
                 cResult[29] = tmp43;
                 tmp41 = tmp43;
@@ -600,7 +600,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
             tmp35 = tmp38;
           }
           const obj8 = { value: tmp8 !== MUTED, onValueChange: tmp10, label: tmp29, start: true, end: true };
-          const tmp34 = closure_8(tmp(7331).TableSwitchRow, obj8);
+          const tmp34 = closure_8(tmp(7355).TableSwitchRow, obj8);
           cResult[21] = tmp10;
           cResult[22] = tmp8 !== MUTED;
           cResult[23] = tmp34;
@@ -652,10 +652,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
   let obj = id(504);
   const items = [ICYMIStore];
   const stateFromStores = obj.useStateFromStores(items, () => ICYMIStore.getCustomGuildScore(id));
-  let obj2 = id(8877);
+  let obj2 = id(8880);
   const numberToCustomScoreResult = obj2.numberToCustomScore(stateFromStores);
   let c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8877).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(8880).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = react.useCallback((arg0) => {
@@ -686,11 +686,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
   }, items2);
   const tmp8 = closure_10();
   const obj3 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(id(1125).t.Clq6km) };
-  const Text = id(5270).Text;
+  const Text = id(5271).Text;
   intl = id(1125).intl;
   const items3 = [closure_8(Text, obj3), , , , ];
   const obj4 = { variant: "text-xs/normal", color: "text-default", children: intl2.format(id(1125).t["0DhU2P"], obj5) };
-  const Text2 = id(5270).Text;
+  const Text2 = id(5271).Text;
   intl2 = id(1125).intl;
   obj5 = { guildName: guild.name };
   items3[1] = closure_8(Text2, obj4);
@@ -705,11 +705,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScoreSe
   const obj8 = { children: items3 };
   const obj9 = { style: tmp5 && tmp8.muted, children: closure_8(TableSwitchRow, obj10) };
   obj10 = { value: !tmp5, onValueChange: callback, label: intl3.string(tmp(1125).t.oujX73), start: true, end: true };
-  TableSwitchRow = tmp(7331).TableSwitchRow;
+  TableSwitchRow = tmp(7355).TableSwitchRow;
   intl3 = tmp(1125).intl;
   items3[3] = closure_8(View, obj9);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp8.warningText, children: intl4.string(tmp(1125).t.vRVs07) };
-  const Text3 = tmp(5270).Text;
+  const Text3 = tmp(5271).Text;
   intl4 = tmp(1125).intl;
   items3[4] = closure_8(Text3, obj11);
   return tmp9(View, obj8);

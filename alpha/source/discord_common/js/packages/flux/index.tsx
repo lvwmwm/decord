@@ -46,6 +46,6 @@ export { useStateFromStores_export as useStateFromStores };
 export const useStateFromStoresObject = useStateFromStores.useStateFromStoresObject;
 export const useStateFromStoresArray = useStateFromStores.useStateFromStoresArray;
 export { initialize };
-export const destroy = function destroy() {
+export function destroy() {
   PersistedStore.destroy();
-};
+}

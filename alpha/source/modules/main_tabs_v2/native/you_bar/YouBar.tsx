@@ -1,37 +1,37 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 18320
+// Function ID: 18321
 // Name: YouBar
-// Dependencies: [5, 19, 17, 5028, 5035, 1389, 16712, 1084, 4853, 21, 5004, 587, 16705, 11265, 16711, 16715, 5085, 5283, 8879, 9597, 18087, 16272, 504, 8744, 18093, 5187, 5248, 1385, 12, 18094, 1999, 5186, 11211, 7485, 4840, 1125, 7526, 11814, 5333, 1199, 18108, 18109, 18110, 18115, 18117, 18119, 558, 576, 18121, 18122, 5070, 2]
+// Dependencies: [5, 19, 17, 5029, 5036, 1389, 16950, 1084, 4854, 21, 5005, 587, 16943, 11319, 16949, 16953, 5086, 5284, 8882, 9629, 18321, 16510, 504, 8747, 18327, 5188, 5249, 1385, 12, 18328, 2000, 5187, 11265, 7508, 4841, 1125, 7549, 11868, 5334, 1199, 18342, 18343, 18344, 18349, 18351, 18353, 558, 576, 18355, 18356, 5071, 2]
 
-// Module 18086 (YouBar)
+// Module 18320 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import native from "native" /* 5070 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import spring from "spring" /* 5283 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import transitionToGuild from "transitionToGuild" /* 7485 */;
-import openUserSettings from "openUserSettings" /* 7526 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11211 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18121 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18122 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import native from "native" /* 5071 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import spring from "spring" /* 5284 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import transitionToGuild from "transitionToGuild" /* 7508 */;
+import openUserSettings from "openUserSettings" /* 7549 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11265 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18355 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5028 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5029 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import UserStore from "UserStore" /* 1389 */;
-import YouBarConstants from "YouBarConstants" /* 16712 */;
+import YouBarConstants from "YouBarConstants" /* 16950 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,26 +78,26 @@ let closure_25 = react.memo(function YouBar() {
   let tmp = closure_20();
   const tmp2 = isMobileQuestDockRenderedBase;
   const tmp3 = dependencyMap;
-  let obj = isMobileQuestDockRenderedBase(16705);
+  let obj = isMobileQuestDockRenderedBase(16943);
   const mobileQuestDock = obj.useMobileQuestDock();
-  let obj2 = isMobileQuestDockRenderedBase(16705);
+  let obj2 = isMobileQuestDockRenderedBase(16943);
   isMobileQuestDockRenderedBase = obj2.useIsMobileQuestDockRenderedBase(mobileQuestDock);
-  let obj3 = isMobileQuestDockRenderedBase(11265);
+  let obj3 = isMobileQuestDockRenderedBase(11319);
   const drawerWidth = obj3.useDrawerWidth({ whileSliding: "wider" });
-  let obj4 = isMobileQuestDockRenderedBase(16711);
+  let obj4 = isMobileQuestDockRenderedBase(16949);
   const youBarHorizontalMargin = obj4.useYouBarHorizontalMargin();
   let diff = drawerWidth - 2 * youBarHorizontalMargin;
   dependencyMap = diff;
-  let obj5 = isMobileQuestDockRenderedBase(16711);
+  let obj5 = isMobileQuestDockRenderedBase(16949);
   const youBarBottomMargin = obj5.useYouBarBottomMargin();
-  const obj6 = isMobileQuestDockRenderedBase(16715);
+  const obj6 = isMobileQuestDockRenderedBase(16953);
   const connectionBannerHeight = obj6.useConnectionBannerHeight();
   let items = [diff, youBarHorizontalMargin];
   const memo = connectionBannerHeight.useMemo(() => {
     size = { marginHorizontal: youBarHorizontalMargin, height, padding: unpackModuleId, width: dependencyMap };
     return size;
   }, items);
-  const obj7 = isMobileQuestDockRenderedBase(5085);
+  const obj7 = isMobileQuestDockRenderedBase(5086);
   const sharedValue = obj7.useSharedValue(false);
   let fn = function s() {
     let items;
@@ -117,21 +117,21 @@ let closure_25 = react.memo(function YouBar() {
     ({ scale: withSpring(num, authStore2) });
     return obj;
   };
-  const obj8 = isMobileQuestDockRenderedBase(5085);
-  fn.__closure = { withSpring: isMobileQuestDockRenderedBase(5283).withSpring, barMarginBottom: youBarBottomMargin, connectionBannerHeight, YOU_BAR_SPRING_CONFIG: gesture, isPressedValue: sharedValue, isQuestRendered: isMobileQuestDockRenderedBase };
+  const obj8 = isMobileQuestDockRenderedBase(5086);
+  fn.__closure = { withSpring: isMobileQuestDockRenderedBase(5284).withSpring, barMarginBottom: youBarBottomMargin, connectionBannerHeight, YOU_BAR_SPRING_CONFIG: gesture, isPressedValue: sharedValue, isQuestRendered: isMobileQuestDockRenderedBase };
   fn.__workletHash = 7314807713815;
   fn.__initData = __initData;
-  ({ withSpring: isMobileQuestDockRenderedBase(5283).withSpring, barMarginBottom: youBarBottomMargin, connectionBannerHeight, YOU_BAR_SPRING_CONFIG: gesture, isPressedValue: sharedValue, isQuestRendered: isMobileQuestDockRenderedBase });
+  ({ withSpring: isMobileQuestDockRenderedBase(5284).withSpring, barMarginBottom: youBarBottomMargin, connectionBannerHeight, YOU_BAR_SPRING_CONFIG: gesture, isPressedValue: sharedValue, isQuestRendered: isMobileQuestDockRenderedBase });
   const animatedStyle = obj8.useAnimatedStyle(fn);
-  const obj10 = isMobileQuestDockRenderedBase(8879);
+  const obj10 = isMobileQuestDockRenderedBase(8882);
   const iCYMIEnabled = obj10.useICYMIEnabled("TabsNavigator");
-  const tmp16 = youBarHorizontalMargin(9597)("YouBar");
-  const obj11 = isMobileQuestDockRenderedBase(18087);
+  const tmp16 = youBarHorizontalMargin(9629)("YouBar");
+  const obj11 = isMobileQuestDockRenderedBase(18321);
   const youBarCoachmark = obj11.useYouBarCoachmark({ isQuestRendered: isMobileQuestDockRenderedBase });
   const visibleContent = youBarCoachmark.visibleContent;
   const markAsDismissed = youBarCoachmark.markAsDismissed;
   const animatedRef = youBarCoachmark.animatedRef;
-  const obj12 = isMobileQuestDockRenderedBase(16272);
+  const obj12 = isMobileQuestDockRenderedBase(16510);
   const showTinyBroncoPromoSheet = obj12.useShowTinyBroncoPromoSheet({ visibleContent, markAsDismissed });
   const ref = connectionBannerHeight.useRef(markAsDismissed);
   const ref2 = connectionBannerHeight.useRef(visibleContent);
@@ -143,9 +143,9 @@ let closure_25 = react.memo(function YouBar() {
   const items2 = [ref2];
   const obj13 = isMobileQuestDockRenderedBase(504);
   const stateFromStores = obj13.useStateFromStores(items2, () => ref2.getCurrentUser());
-  const obj14 = isMobileQuestDockRenderedBase(8744);
+  const obj14 = isMobileQuestDockRenderedBase(8747);
   const nameplate = obj14.useNameplate({ user: stateFromStores });
-  const obj15 = isMobileQuestDockRenderedBase(18093);
+  const obj15 = isMobileQuestDockRenderedBase(18327);
   const youBarAccessibilityLabel = obj15.useYouBarAccessibilityLabel(stateFromStores);
   height = connectionBannerHeight.useRef(null);
   const effect1 = connectionBannerHeight.useEffect(() => {
@@ -226,7 +226,7 @@ let closure_25 = react.memo(function YouBar() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ let closure_25 = react.memo(function YouBar() {
           const result1 = tmp.showYouAccountActionSheet();
           const result2 = closure_129_5.set(false);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp9) {
         c3 = 3;
@@ -282,7 +282,7 @@ let closure_25 = react.memo(function YouBar() {
     const coerceGuildsRouteResult = obj.coerceGuildsRoute(getNavigatorCurrentRouteDefault());
     if (null != coerceGuildsRouteResult) {
       const tmpResult = HapticUtils;
-      const result = tmpResult.triggerHapticFeedback(tmp(5248).HapticFeedbackTypes.SOFT);
+      const result = tmpResult.triggerHapticFeedback(tmp(5249).HapticFeedbackTypes.SOFT);
       const params = coerceGuildsRouteResult.params;
       let guildId;
       if (params != null) {
@@ -324,10 +324,10 @@ let closure_25 = react.memo(function YouBar() {
       callback3();
     }
   }, items7);
-  const context = connectionBannerHeight.useContext(youBarHorizontalMargin(11814));
+  const context = connectionBannerHeight.useContext(youBarHorizontalMargin(11868));
   gesture = context.gesture;
   const translateX = context.translateX;
-  const obj16 = isMobileQuestDockRenderedBase(5085);
+  const obj16 = isMobileQuestDockRenderedBase(5086);
   const sharedValue1 = obj16.useSharedValue(0);
   const items8 = [callback3, gesture, sharedValue1, translateX];
   const memo3 = connectionBannerHeight.useMemo(() => {
@@ -377,17 +377,17 @@ let closure_25 = react.memo(function YouBar() {
   }
   const obj17 = { ref: animatedRef, style: items9, shouldRasterizeIOS: true, children: items10 };
   items9 = [tmp.youRow, memo, animatedStyle];
-  const View = tmp15(5085).View;
-  items10 = [closure_18(tmp15(18108), { hasNameplate: tmp22, isLargeAvatar: tmp35, barWidth: diff, isQuestRendered: isMobileQuestDockRenderedBase, avatarSize: tmp37 }), , , ];
+  const View = tmp15(5086).View;
+  items10 = [closure_18(tmp15(18342), { hasNameplate: tmp22, isLargeAvatar: tmp35, barWidth: diff, isQuestRendered: isMobileQuestDockRenderedBase, avatarSize: tmp37 }), , , ];
   let tmp40Result = tmp22;
   if (tmp40Result) {
     const obj18 = { nameplate, barWidth: diff, isQuestRendered: isMobileQuestDockRenderedBase, avatarSize: tmp37 };
-    tmp40Result = tmp40(tmp15(18109), obj18);
+    tmp40Result = tmp40(tmp15(18343), obj18);
   }
   items10[1] = tmp40Result;
   const obj19 = { gesture: memo3, children: closure_18(visibleContent, obj20) };
-  obj20 = { style: tmp.youPressable, android_ripple: { color: "transparent" }, accessibilityRole: "button", accessibilityLabel: youBarAccessibilityLabel, accessibilityHint: intl.string(tmp2(1125).t.cSgdvE), accessibilityActions: memo2, onAccessibilityAction: callback4, onPressIn: callback1, onPressOut: callback2, onPress: memo1, onLongPress: callback, hitSlop, testID: "you_bar_profile_button", children: closure_18(youBarHorizontalMargin(18110), { isQuestRendered: isMobileQuestDockRenderedBase, onAvatarPress: memo1 }) };
-  const GestureDetector = tmp2(5333).GestureDetector;
+  obj20 = { style: tmp.youPressable, android_ripple: { color: "transparent" }, accessibilityRole: "button", accessibilityLabel: youBarAccessibilityLabel, accessibilityHint: intl.string(tmp2(1125).t.cSgdvE), accessibilityActions: memo2, onAccessibilityAction: callback4, onPressIn: callback1, onPressOut: callback2, onPress: memo1, onLongPress: callback, hitSlop, testID: "you_bar_profile_button", children: closure_18(youBarHorizontalMargin(18344), { isQuestRendered: isMobileQuestDockRenderedBase, onAvatarPress: memo1 }) };
+  const GestureDetector = tmp2(5334).GestureDetector;
   intl = tmp2(1125).intl;
   items10[2] = closure_18(GestureDetector, obj19);
   let placement;
@@ -398,15 +398,15 @@ let closure_25 = react.memo(function YouBar() {
   }
   if ("you_bar" === placement) {
     const obj22 = { hasNameplate: null != nameplate, canUnpin: tmp16.canPin };
-    tmp40Result2 = tmp40(tmp15(18115), obj22);
+    tmp40Result2 = tmp40(tmp15(18349), obj22);
   } else {
     tmp40Result2 = null;
     if (iCYMIEnabled) {
       const obj23 = { hasNameplate: null != nameplate };
-      tmp40Result2 = tmp40(tmp15(18117), obj23);
+      tmp40Result2 = tmp40(tmp15(18351), obj23);
     }
   }
-  items11 = [tmp40Result2, closure_18(tmp15(18119), { hasNameplate: tmp22 })];
+  items11 = [tmp40Result2, closure_18(tmp15(18353), { hasNameplate: tmp22 })];
   items10[3] = closure_19(tmp42, obj21);
   return closure_19(View, obj17);
 });

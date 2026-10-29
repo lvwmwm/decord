@@ -1,12 +1,12 @@
-// Module ID: 5222
-// Function ID: 5223
+// Module ID: 5223
+// Function ID: 5224
 // Name: ServerThemeUserExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getServerThemeUserEnabled
 
-// Module 5222 (ServerThemeUserExperiment)
+// Module 5223 (ServerThemeUserExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerT
 const result = size.fileFinishedImporting("modules/premium/powerups/experiments/ServerThemeUserExperiment.tsx");
 
 export const ServerThemeUserExperiment = apexExperiment;
-export const getServerThemeUserEnabled = function getServerThemeUserEnabled(GuildPowerupsConstants) {
+export function getServerThemeUserEnabled(GuildPowerupsConstants) {
   const obj = { location: GuildPowerupsConstants };
   return apexExperiment.getConfig(obj).enabled;
-};
+}
 export const useServerThemeUserEnabled = tmp3;

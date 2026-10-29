@@ -1,15 +1,15 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7819
+// Function ID: 7820
 // Name: SlowmodeUtils
-// Dependencies: [4936, 1084, 558, 576, 504, 1125, 1101, 2046, 2]
+// Dependencies: [4937, 1084, 558, 576, 504, 1125, 1101, 2047, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText
 
-// Module 7796 (SlowmodeUtils)
+// Module 7819 (SlowmodeUtils)
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import intl4 from "intl" /* 1125 */;
-import _modDef2046 from "module_2046" /* 2046 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import _modDef2047 from "module_2047" /* 2047 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,17 +57,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanBypa
 const result = size.fileFinishedImporting("modules/chat/SlowmodeUtils.tsx");
 
 export { canBypassSlowmodeHelper };
-export const canBypassSlowmode = function canBypassSlowmode(channel) {
+export function canBypassSlowmode(channel) {
   return PermissionStore.can(Permissions.BYPASS_SLOWMODE, channel);
-};
+}
 export const useCanBypassSlowmode = tmp2;
-export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
+export function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
   const tmp = canBypassSlowmode;
   if (tmp) {
     const intl2 = intl4.intl;
     return intl2.string(intl4.t["8+NidX"]);
   } else if (stateFromStores >= DurationsDefault.Millis.HOUR) {
-    const tmp3Result = _modDef2046;
+    const tmp3Result = _modDef2047;
     const time2 = tmp3Result.duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + time2.minutes();
@@ -78,7 +78,7 @@ export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateF
     const padStartResult1 = combined1.padStart(2, "0");
     return "" + time2.hours() + ":" + padStartResult + ":" + padStartResult1;
   } else if (stateFromStores > 0) {
-    const tmp3Result2 = _modDef2046;
+    const tmp3Result2 = _modDef2047;
     const time = tmp3Result2.duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + time.seconds();
@@ -89,8 +89,8 @@ export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateF
     const intl = intl4.intl;
     return intl.string(intl4.t.Icu3bf);
   }
-};
-export const getSlowmodeDescription = function getSlowmodeDescription(rateLimitPerUser) {
+}
+export function getSlowmodeDescription(rateLimitPerUser) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -123,4 +123,4 @@ export const getSlowmodeDescription = function getSlowmodeDescription(rateLimitP
     const obj = { seconds: rateLimitPerUser };
     return formatToPlainString(flag ? t["9yE8Ga"] : t.IWntYg, obj);
   }
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 18439
-// Function ID: 18440
+// Module ID: 18673
+// Function ID: 18674
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6827, 13470, 9747, 21, 13477, 558, 576, 13463, 504, 18428, 18440, 13456, 18441, 18442, 13461, 18361, 18373, 2]
+// Dependencies: [19, 6850, 13703, 9779, 21, 13710, 558, 576, 13696, 504, 18662, 18674, 13689, 18675, 18676, 13694, 18595, 18607, 2]
 // Exports: trackMessageItemPress
 
-// Module 18439 (BaseMessagesScreen)
+// Module 18673 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9747 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13456 */;
-import SearchUtils from "SearchUtils" /* 13463 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13477 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18441 */;
+import TrackingConstants from "TrackingConstants" /* 9779 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13689 */;
+import SearchUtils from "SearchUtils" /* 13696 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13710 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18675 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6827 */;
-import SearchQueryStore from "SearchQueryStore" /* 13470 */;
+import SearchMessageStore from "SearchMessageStore" /* 6850 */;
+import SearchQueryStore from "SearchQueryStore" /* 13703 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -418,7 +418,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
 
 export default tmp2;
-export const trackMessageItemPress = function trackMessageItemPress(messageId) {
+export function trackMessageItemPress(messageId) {
   let channelId;
   let id;
   let index;
@@ -436,4 +436,4 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
     }
   }
   const result = trackSearchResultClicked(obj);
-};
+}

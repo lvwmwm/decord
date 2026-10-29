@@ -1,13 +1,13 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11494
+// Function ID: 11495
 // Name: resolveAppChannel
-// Dependencies: [5, 4856, 4936, 1084, 10757, 2]
+// Dependencies: [5, 4857, 4937, 1084, 10832, 2]
 // Exports: default
 
-// Module 11440 (resolveAppChannel)
+// Module 11494 (resolveAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _resolveAppChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _resolveAppChannel() {
             closure_7 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

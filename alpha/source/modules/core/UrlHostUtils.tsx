@@ -1,21 +1,21 @@
-// Module ID: 2035
-// Function ID: 2036
+// Module ID: 2036
+// Function ID: 2037
 // Name: UrlHostUtils
 // Dependencies: [2]
 // Exports: getHostWithoutPort, isLocalhost
 
-// Module 2035 (UrlHostUtils)
+// Module 2036 (UrlHostUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/UrlHostUtils.tsx");
 
-export const getHostWithoutPort = function getHostWithoutPort(arg0) {
+export function getHostWithoutPort(arg0) {
   let first;
   if (arg0 != null) {
     first = arg0.split(":")[0];
   }
   return first;
-};
+}
 export function isLocalhost(arg0) {
   return "localhost" === arg0 || "127.0.0.1" === arg0;
 }

@@ -1,17 +1,17 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16356
+// Function ID: 16357
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 32, 19, 8686, 7738, 1389, 1084, 5029, 558, 576, 504, 7114, 16120, 11224, 5031, 7121, 16121, 6748, 7124, 16122, 6409, 1125, 8693, 584, 16123, 8707, 8723, 14667, 4832, 15423, 2]
+// Dependencies: [109, 5, 32, 19, 8689, 7760, 1389, 1084, 5030, 558, 576, 504, 7138, 16357, 11278, 5032, 7145, 16358, 6771, 7148, 16359, 6433, 1125, 8696, 584, 16360, 8710, 8726, 14902, 4833, 15657, 2]
 
-// Module 16119 (useUserProfileEditForm)
+// Module 16356 (useUserProfileEditForm)
 import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8686 */;
-import UserProfileStore from "UserProfileStore" /* 7738 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8689 */;
+import UserProfileStore from "UserProfileStore" /* 7760 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           if (1 === c7) {
@@ -694,7 +694,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -758,7 +758,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           if (1 === c7) {
@@ -1166,7 +1166,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -1212,7 +1212,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp15) {
         c3 = 3;
         throw tmp15;

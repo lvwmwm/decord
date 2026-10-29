@@ -12,7 +12,7 @@ function setEventHandlerAttributeMap(removeEventListener, map) {
 }
 let closure_0 = Symbol("eventHandlerAttributeMap");
 
-export const getEventHandlerAttribute = function getEventHandlerAttribute(arg0, error) {
+export function getEventHandlerAttribute(arg0, error) {
   let value;
   if (arg0[closure_0] != null) {
     value = obj.get(error);
@@ -22,8 +22,8 @@ export const getEventHandlerAttribute = function getEventHandlerAttribute(arg0, 
     handleEvent = value.handleEvent;
   }
   return handleEvent;
-};
-export const setEventHandlerAttribute = function setEventHandlerAttribute(removeEventListener, error, handleEvent) {
+}
+export function setEventHandlerAttribute(removeEventListener, error, handleEvent) {
   const tmp = getEventHandlerAttributeMap(removeEventListener);
   let obj = tmp;
   if (null != tmp) {
@@ -55,4 +55,4 @@ export const setEventHandlerAttribute = function setEventHandlerAttribute(remove
   if (tmp16) {
     setEventHandlerAttributeMap(removeEventListener, null);
   }
-};
+}

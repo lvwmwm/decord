@@ -1,22 +1,53 @@
 // Module ID: 5426
 // Function ID: 5427
-// Dependencies: [5401, 5416, 5392]
-// Exports: useManualGesture
+// Dependencies: [5402, 5417, 5393]
+// Exports: useHoverGesture
 
 // Module 5426
-import ComposedGestureName from "ComposedGestureName" /* 5392 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5401 */;
-import _mod5416 from "module_5416" /* 5416 */;
+import ComposedGestureName from "ComposedGestureName" /* 5393 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5402 */;
+import _mod5417 from "module_5417" /* 5417 */;
 
-let closure_2 = {};
+function transformHoverProps(arg0) {
+  const obj = maybeExtractNativeEvent;
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
+}
+function diffCalculator(arg0, arg1) {
+  let num2;
+  let num = 0;
+  if (arg1) {
+    num = arg0.x - arg1.x;
+  }
+  const obj = { changeX: num, changeY: num2 };
+  num2 = 0;
+  if (arg1) {
+    num2 = arg0.y - arg1.y;
+  }
+  return obj;
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 622993324586;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 11545520927040;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+const items = [["effect", "hoverEffect"]];
+const map = new Map(items);
+let closure_6 = {};
 
-export const useManualGesture = function useManualGesture(cResult) {
+export function useHoverGesture(cResult) {
   let tmp = cResult;
   if (cResult === undefined) {
-    tmp = closure_2;
+    tmp = closure_6;
   }
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
-  const obj2 = _mod5416;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
-};
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
+  const obj2 = _mod5417;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+}

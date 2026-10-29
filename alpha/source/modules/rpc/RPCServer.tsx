@@ -1,16 +1,16 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9297
+// Function ID: 9298
 // Name: RPCServer
-// Dependencies: [5, 6413, 1084, 12, 9294, 9296, 9298, 1264, 38, 9299, 9301, 4851, 1101, 2]
+// Dependencies: [5, 6437, 1084, 12, 9298, 9300, 9302, 1264, 38, 9303, 9305, 4852, 1101, 2]
 
-// Module 9293 (RPCServer)
+// Module 9297 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Constants2 from "Constants" /* 6413 */;
-import transformUserDefault from "transformUser" /* 9294 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import validateScopeDefault from "validateScope" /* 9298 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9301 */;
+import Constants2 from "Constants" /* 6437 */;
+import transformUserDefault from "transformUser" /* 9298 */;
+import RPCErrorDefault from "RPCError" /* 9300 */;
+import validateScopeDefault from "validateScope" /* 9302 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f147630 = function() {
+    const f149179 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f147630).then;
-    then(f147630);
+    const then2 = then(f149179).then;
+    then(f149179);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

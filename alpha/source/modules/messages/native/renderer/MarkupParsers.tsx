@@ -1,23 +1,23 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8518
+// Function ID: 8519
 // Name: MarkupParsers
-// Dependencies: [1084, 1101, 1456, 5741, 8497, 8501, 8518, 8527, 1254, 2]
+// Dependencies: [1084, 1101, 1457, 5743, 8519, 8523, 8540, 8549, 1254, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8496 (MarkupParsers)
+// Module 8518 (MarkupParsers)
 import Constants from "Constants" /* 1084 */;
 import DurationsDefault from "Durations" /* 1101 */;
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5741 */;
-import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8497 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8518 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 8527 */;
-import LRUCache_mod from "LRUCache" /* 1456 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5743 */;
+import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8519 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8540 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 8549 */;
+import LRUCache_mod from "LRUCache" /* 1457 */;
 import size from "module_2" /* 2 */;
 
 let LRUCache;
 let tmp;
-const ChangeLogStandardTemplate = tmp(8501);
+const ChangeLogStandardTemplate = tmp(8523);
 const MessageTypes = Constants.MessageTypes;
 let obj = { max: Infinity, maxAge: 15 * DurationsDefault.Millis.MINUTE, updateAgeOnGet: true };
 const tmp2 = new LRUCache(obj);
@@ -32,7 +32,7 @@ const tmp7 = new LRUCache(obj);
 let closure_7 = tmp7;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/MarkupParsers.tsx");
 
-export const parseEmbedTitleMarkup = function parseEmbedTitleMarkup(rawName, channelId) {
+export function parseEmbedTitleMarkup(rawName, channelId) {
   const combined = "" + rawName + "-" + channelId;
   let value = closure_4.get(combined);
   const obj = closure_4;
@@ -44,8 +44,8 @@ export const parseEmbedTitleMarkup = function parseEmbedTitleMarkup(rawName, cha
     value = parseEmbedTitleToASTResult;
   }
   return value;
-};
-export const parseEmbedTitleMarkupWithoutLinks = function parseEmbedTitleMarkupWithoutLinks(arg0, channelId) {
+}
+export function parseEmbedTitleMarkupWithoutLinks(arg0, channelId) {
   const combined = "" + arg0 + "-" + channelId + "-nolinks";
   let value = closure_5.get(combined);
   const obj = closure_5;
@@ -57,8 +57,8 @@ export const parseEmbedTitleMarkupWithoutLinks = function parseEmbedTitleMarkupW
     value = result;
   }
   return value;
-};
-export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(arg0) {
+}
+export function parseEmbedDescriptionMarkup(arg0) {
   let channelId;
   let description;
   let ignoreCache;
@@ -96,8 +96,8 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
   const parseToASTResult = parseToAST(tmp4, true, obj);
   const result = importDefaultResult1.set(combined, parseToASTResult);
   return parseToASTResult;
-};
-export const parseMessageMarkup = function parseMessageMarkup(message, message2, forceHideSimpleEmbedContent, isInlineReplyPreview, arg4, result, result2) {
+}
+export function parseMessageMarkup(message, message2, forceHideSimpleEmbedContent, isInlineReplyPreview, arg4, result, result2) {
   let tmp10;
   function parseMessageContentToAST(message, arg1, result) {
     const tmp = result;
@@ -167,4 +167,4 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   const merged = Object.assign(parseMessageContentToAST(message, obj5, result));
   result2 = obj2.set(message, obj6);
   return obj6;
-};
+}

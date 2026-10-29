@@ -1,12 +1,12 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 14799
+// Function ID: 14800
 // Name: RequestToStreamActionCreators
-// Dependencies: [14566, 584, 2]
+// Dependencies: [14800, 584, 2]
 // Exports: dismissStreamRequestReminder, startStreamRequestCooldown
 
-// Module 14565 (RequestToStreamActionCreators)
+// Module 14799 (RequestToStreamActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import RequestToStreamConstants from "RequestToStreamConstants" /* 14566 */;
+import RequestToStreamConstants from "RequestToStreamConstants" /* 14800 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -14,7 +14,7 @@ let importDefault;
 let closure_2 = RequestToStreamConstants.REQUEST_TO_STREAM_COOLDOWN_MS;
 const result = size.fileFinishedImporting("modules/request_to_stream/RequestToStreamActionCreators.tsx");
 
-export const startStreamRequestCooldown = function startStreamRequestCooldown(userId) {
+export function startStreamRequestCooldown(userId) {
   importDefault = userId;
   let obj = DispatcherDefault;
   let obj2 = { type: "STREAM_REQUEST_COOLDOWN_START", userId };
@@ -24,9 +24,9 @@ export const startStreamRequestCooldown = function startStreamRequestCooldown(us
     const obj2 = { type: "STREAM_REQUEST_COOLDOWN_END", userId };
     obj.dispatch(obj2);
   }, closure_2);
-};
-export const dismissStreamRequestReminder = function dismissStreamRequestReminder(messageId) {
+}
+export function dismissStreamRequestReminder(messageId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "STREAM_REQUEST_REMINDER_DISMISS", messageId };
   obj.dispatch(obj2);
-};
+}

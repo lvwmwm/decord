@@ -1,8 +1,8 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 14303
+// Function ID: 14304
 // Dependencies: [2]
 
-// Module 14070
+// Module 14303
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookmarksSpotIllustration-3x.png.js");

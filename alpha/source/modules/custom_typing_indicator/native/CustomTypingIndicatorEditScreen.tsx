@@ -1,20 +1,20 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17225
+// Function ID: 17226
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1389, 1084, 21, 5004, 587, 1397, 1125, 3865, 558, 576, 1503, 7289, 1502, 504, 2050, 7314, 1264, 13301, 1410, 5840, 5246, 16987, 1999, 16988, 8693, 8690, 7114, 6409, 16122, 13302, 9826, 13313, 6025, 5270, 16989, 7023, 6939, 2064, 6013, 5280, 9457, 9804, 17034, 10212, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 1084, 21, 5005, 587, 1397, 1125, 3866, 558, 576, 1504, 7313, 1503, 504, 2051, 7338, 1264, 13534, 1411, 5842, 5247, 17226, 2000, 17227, 8696, 8693, 7138, 6433, 16359, 13535, 9858, 13546, 6029, 5271, 17228, 7047, 6963, 2065, 6015, 5281, 9488, 9836, 17273, 10245, 2]
 
-// Module 16986 (CustomTypingIndicatorEditScreen)
+// Module 17225 (CustomTypingIndicatorEditScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import user from "user" /* 1397 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1410 */;
-import Link from "Link" /* 1503 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7289 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9826 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13301 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
+import Link from "Link" /* 1504 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7313 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9858 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13534 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,12 +146,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(16987, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17226, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(16988, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17227, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];
@@ -198,7 +198,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -246,7 +246,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -484,7 +484,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7289).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7313).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

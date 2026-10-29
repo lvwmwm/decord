@@ -1,21 +1,21 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 13186
+// Function ID: 13187
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6801, 4860, 4856, 4936, 4946, 1389, 1084, 558, 576, 12963, 1385, 504, 1105, 6523, 1997, 6697, 6689, 5680, 6694, 12966, 1125, 6521, 7796, 5058, 5640, 2]
+// Dependencies: [19, 6824, 4861, 4857, 4937, 4947, 1389, 1084, 558, 576, 13184, 1385, 504, 1105, 6547, 1998, 6721, 6713, 5682, 6718, 13187, 1125, 6545, 7819, 5059, 5641, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 12965 (ForwardDestinationUtils)
+// Module 13186 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1105 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import StickersUtils from "StickersUtils" /* 6523 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7796 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 12966 */;
+import StickersUtils from "StickersUtils" /* 6547 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7819 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13187 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6801 */;
-import ChannelRecord from "ChannelRecord" /* 4860 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import StickersStore from "StickersStore" /* 6824 */;
+import ChannelRecord from "ChannelRecord" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(12963).getChannelIdFromDestinationId);
+    const mapped = arr.map(tmp(13184).getChannelIdFromDestinationId);
     const found = mapped.find(tmp(1385).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
   return tmp11;
 }) : (function useSelectedDestinationChannel(arr) {
   let found;
-  const mapped = arr.map(found(12963).getChannelIdFromDestinationId);
+  const mapped = arr.map(found(13184).getChannelIdFromDestinationId);
   found = mapped.find(found(1385).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
@@ -327,7 +327,7 @@ function isRatelimitedInChannel(channel, can) {
 let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = tmp4;
-export const getDestinationIsUnavailable = function getDestinationIsUnavailable(components, channel, type, fn) {
+export function getDestinationIsUnavailable(components, channel, type, fn) {
   let intl;
   let intl2;
   let intl3;
@@ -378,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(6694).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(6718).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {
@@ -466,7 +466,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       }
     }
   }
-};
+}
 export { isRatelimitedInChannel };
 export const useSelectedDestinationNames = tmp5;
 export const useDestinationNamesWithSlowmode = tmp6;

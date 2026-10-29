@@ -1,17 +1,17 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9337
+// Function ID: 9338
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2019, 4858, 5736, 1084, 9305, 504, 1101, 8900, 7443, 558, 576, 2]
+// Dependencies: [5, 19, 2020, 4859, 5738, 1084, 9309, 504, 1101, 8903, 7466, 558, 576, 2]
 // Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 9333 (useGameProfileInvite)
+// Module 9337 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1101 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8900 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4858 */;
-import InviteStore from "InviteStore" /* 5736 */;
+import GameStore from "GameStore" /* 2020 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4859 */;
+import InviteStore from "InviteStore" /* 5738 */;
 import Constants from "Constants" /* 1084 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f103990 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f104998 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -97,7 +97,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     }
   } else {
     try {
@@ -137,7 +137,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
         throw error;
       }
       c4 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "IconComponent" };
     } catch (tmp19) {
       c4 = 3;
       throw tmp19;
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f103990);
+        found = websites.find(f104998);
       }
     }
     let arr;
@@ -317,7 +317,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f103990);
+      found = websites.find(f104998);
     }
   }
   let arr;
@@ -383,7 +383,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileInvite.tsx");
 
 export default tmp6;
-export const hasGameProfileDiscordWebsite = function hasGameProfileDiscordWebsite(game) {
+export function hasGameProfileDiscordWebsite(game) {
   let flag;
   if (game != null) {
     const websites = game.websites;
@@ -395,8 +395,8 @@ export const hasGameProfileDiscordWebsite = function hasGameProfileDiscordWebsit
     flag = false;
   }
   return flag;
-};
-export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) {
+}
+export function preloadGameProfileInvite(arg0) {
   let closure_0;
   _require = arg0;
   const useGame = require("useGame").useGame;
@@ -408,7 +408,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f103990);
+        found = websites.find(f104998);
       }
     }
     let arr;
@@ -429,4 +429,4 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
       const many = closure_10.fetchMany(items);
     }
   });
-};
+}

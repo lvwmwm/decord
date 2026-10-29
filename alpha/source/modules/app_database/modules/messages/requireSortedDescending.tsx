@@ -1,10 +1,10 @@
-// Module ID: 6530
-// Function ID: 6531
+// Module ID: 6554
+// Function ID: 6555
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 6530 (requireSortedDescending)
+// Module 6554 (requireSortedDescending)
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
 
@@ -12,7 +12,7 @@ let tmp;
 const SnowflakeUtilsDefault = tmp(11);
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/requireSortedDescending.tsx");
 
-export const requireSortedDescending = function requireSortedDescending(messages) {
+export function requireSortedDescending(messages) {
   let tmp4 = messages.length <= 2;
   const tmp3 = _modDef38;
   if (!tmp4) {
@@ -20,4 +20,4 @@ export const requireSortedDescending = function requireSortedDescending(messages
     tmp4 = tmpResult.compare(messages[0].id, messages[messages.length - 1].id) >= 0;
   }
   tmp3(tmp4, "messages must be sorted in descending order.");
-};
+}

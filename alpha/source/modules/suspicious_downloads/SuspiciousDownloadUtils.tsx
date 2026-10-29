@@ -1,25 +1,25 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8669
+// Function ID: 8670
 // Name: SuspiciousDownloadUtils
-// Dependencies: [8648, 1383, 2]
+// Dependencies: [8670, 1383, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8647 (SuspiciousDownloadUtils)
+// Module 8669 (SuspiciousDownloadUtils)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
-import _modDef8648 from "module_8648" /* 8648 */;
+import _modDef8670 from "module_8670" /* 8670 */;
 import size from "module_2" /* 2 */;
 
 let regExp;
 let regExp1;
 let regExp2;
-const set = new Set(_modDef8648);
+const set = new Set(_modDef8670);
 let obj = { "github.com": regExp, "bitbucket.org": regExp1, "gitlab.com": regExp2 };
 regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 regExp1 = new RegExp("/downloads\\S*/[^/]*");
 regExp2 = new RegExp("/downloads\\S*/[^/]*");
 const result = size.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
 
-export const isSuspiciousDownload = function isSuspiciousDownload(url) {
+export function isSuspiciousDownload(url) {
   let hostname;
   let pathname;
   obj = URLUtilsDefault;
@@ -98,4 +98,4 @@ export const isSuspiciousDownload = function isSuspiciousDownload(url) {
       }
     }
   }
-};
+}

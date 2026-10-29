@@ -1,19 +1,19 @@
-// Module ID: 8409
-// Function ID: 8410
+// Module ID: 8431
+// Function ID: 8432
 // Name: ChannelFollowAddSystemMessage
-// Dependencies: [8351, 1125, 8353, 8355, 2]
+// Dependencies: [8373, 1125, 8375, 8377, 2]
 // Exports: createChannelFollowAddSystemMessage
 
-// Module 8409 (ChannelFollowAddSystemMessage)
+// Module 8431 (ChannelFollowAddSystemMessage)
 import intl2 from "intl" /* 1125 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8351 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8353 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8355 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8377 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelFollowAddSystemMessage.tsx");
 
-export const createChannelFollowAddSystemMessage = function createChannelFollowAddSystemMessage(message) {
+export function createChannelFollowAddSystemMessage(message) {
   let formatToParts;
   let obj3;
   let xH8qGO;
@@ -28,4 +28,4 @@ export const createChannelFollowAddSystemMessage = function createChannelFollowA
   xH8qGO = intl2.t.xH8qGO;
   const merged = Object.assign(createCommonMessageDefault(message));
   return obj2;
-};
+}

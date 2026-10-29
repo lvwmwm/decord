@@ -1,15 +1,15 @@
-// Module ID: 5056
-// Function ID: 5057
+// Module ID: 5057
+// Function ID: 5058
 // Name: NewUserDismissibleContentRegistry
-// Dependencies: [502, 4843, 4840, 558, 576, 5057, 573, 11, 2]
+// Dependencies: [502, 4844, 4841, 558, 576, 5058, 573, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough
 
-// Module 5056 (NewUserDismissibleContentRegistry)
+// Module 5057 (NewUserDismissibleContentRegistry)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5057 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5058 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4843 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4844 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNewUserDi
   const tmp2 = dependencyMap;
   let obj = dcfNewUserCooldown(576);
   const cResult = obj.c(9);
-  const obj2 = dcfNewUserCooldown(5057);
+  const obj2 = dcfNewUserCooldown(5058);
   dcfNewUserCooldown = obj2.useDcfNewUserCooldown();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore, ];
@@ -171,7 +171,7 @@ function isUserAccountOldEnough(arg0, arg1, arg2) {
 const result = size.fileFinishedImporting("modules/dismissible_content/NewUserDismissibleContentRegistry.tsx");
 
 export const useNewUserDismissibleContent = tmp2;
-export const disableNewUserDismissibleContent = function disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
+export function disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
   let tmp = !DismissibleContentFrameworkStore.newUserMinAgeRequiredOverridden;
   if (tmp) {
     const id = AuthenticationStore.getId();
@@ -189,5 +189,5 @@ export const disableNewUserDismissibleContent = function disableNewUserDismissib
     tmp = !tmp9;
   }
   return tmp;
-};
+}
 export { isUserAccountOldEnough };

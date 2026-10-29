@@ -126,8 +126,8 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { addNonEnumerableProperty };
 export { convertToPlainObject };
-export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
-  const f87041 = (item) => {
+export function dropUndefinedKeys(obj) {
+  const f88048 = (item) => {
     obj = closure_1;
     let closure_0 = item;
     items = undefined;
@@ -145,7 +145,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
           if (Array.isArray(item)) {
             items = [];
             let result = obj.set(item, items);
-            item = item.forEach(f87041);
+            item = item.forEach(f88048);
             value = items;
           } else {
             let constructor = item.constructor;
@@ -157,7 +157,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
               let result1 = obj.set(item, obj2);
               let _Object2 = Object;
               let keys = Object.keys(item);
-              let item1 = keys.forEach(f87042);
+              let item1 = keys.forEach(f88049);
               value = obj2;
             }
           }
@@ -166,7 +166,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
     }
     arr = push(value);
   };
-  const f87042 = (item) => {
+  const f88049 = (item) => {
     let arr = closure_1_0[item];
     if (undefined !== arr) {
       let obj2 = closure_1_1;
@@ -184,7 +184,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
             if (Array.isArray(arr)) {
               let items = [];
               let result = obj2.set(arr, items);
-              item = arr.forEach(f87041);
+              item = arr.forEach(f88048);
               value = items;
             } else {
               let constructor = arr.constructor;
@@ -196,7 +196,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
                 let result1 = obj2.set(arr, obj);
                 let _Object2 = Object;
                 let keys = Object.keys(arr);
-                let item1 = keys.forEach(f87042);
+                let item1 = keys.forEach(f88049);
                 value = obj;
               }
             }
@@ -220,7 +220,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
         if (Array.isArray(obj)) {
           items = [];
           const result = map.set(obj, items);
-          const item = obj.forEach(f87041);
+          const item = obj.forEach(f88048);
           value = items;
         } else {
           const constructor = obj.constructor;
@@ -232,7 +232,7 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
             const result1 = map.set(obj, obj);
             const _Object2 = Object;
             const keys = Object.keys(obj);
-            const item1 = keys.forEach(f87042);
+            const item1 = keys.forEach(f88049);
             value = obj;
           }
         }
@@ -240,8 +240,8 @@ export const dropUndefinedKeys = function dropUndefinedKeys(obj) {
     }
   }
   return value;
-};
-export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
+}
+export function extractExceptionKeysForMessage(arg0) {
   const keys = Object.keys(convertToPlainObject(arg0));
   const sorted = keys.sort();
   let str = "[object has no keys]";
@@ -249,8 +249,8 @@ export const extractExceptionKeysForMessage = function extractExceptionKeysForMe
     str = keys.join(", ");
   }
   return str;
-};
-export const fill = function fill(arg0, arg1, fn) {
+}
+export function fill(arg0, arg1, fn) {
   if (arg1 in arg0) {
     if (typeof arg0[arg1] === "function") {
       const tmp7 = fn(arg0[arg1]);
@@ -269,12 +269,12 @@ export const fill = function fill(arg0, arg1, fn) {
       }
     }
   }
-};
-export const getOriginalFunction = function getOriginalFunction(__sentry_original__) {
+}
+export function getOriginalFunction(__sentry_original__) {
   return __sentry_original__.__sentry_original__;
-};
+}
 export { markFunctionWrapped };
-export const objectify = function objectify(arg0) {
+export function objectify(arg0) {
   let string;
   if (null == arg0 === true) {
     const _String = String;
@@ -297,4 +297,4 @@ export const objectify = function objectify(arg0) {
     }
   }
   return string;
-};
+}

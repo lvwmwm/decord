@@ -1,22 +1,22 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16486
+// Function ID: 16487
 // Name: SettingRendererUtils
-// Dependencies: [11249, 1084, 8365, 7123, 7127, 7063, 1381, 1893, 16093, 38, 16095, 16249, 12, 2]
+// Dependencies: [11303, 1084, 8387, 7147, 7151, 7087, 1381, 1894, 16329, 38, 16331, 16487, 12, 2]
 // Exports: getDesignSystemScreens, getInitialScrollIndex, getScoredSettingListSearchResultItems, getSettingListSearchResultItems, getSettingScreens, getSettingSearchableTitles, getSettingTitle, onRouteSettingOnPress, toSettingListItems
 
-// Module 16248 (SettingRendererUtils)
+// Module 16486 (SettingRendererUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1084 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7063 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7123 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7127 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SettingHookHarness from "SettingHookHarness" /* 16093 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 16095 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 16249 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11249 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7087 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7147 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7151 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SettingHookHarness from "SettingHookHarness" /* 16329 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 16331 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 16487 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11303 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, constants, data, importDefault, map, map1, set;
@@ -29,7 +29,7 @@ const AnalyticsPages = Constants.AnalyticsPages;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let result = size.fileFinishedImporting("modules/settings/native/renderer/SettingRendererUtils.tsx");
 
-export const onRouteSettingOnPress = function onRouteSettingOnPress(arg0) {
+export function onRouteSettingOnPress(arg0) {
   let preNavigationAction;
   ({ navigation: require, screen: importDefault, preNavigationAction } = arg0);
   function goToScreen() {
@@ -68,18 +68,18 @@ export const onRouteSettingOnPress = function onRouteSettingOnPress(arg0) {
   if (false !== preNavigationActionResult) {
     goToScreen();
   }
-};
-export const getSettingTitle = function getSettingTitle(id) {
+}
+export function getSettingTitle(id) {
   const obj = SettingHookHarness;
   const cachedSettingTitle = obj.getCachedSettingTitle(id);
   const tmp2 = _modDef38;
   const tmp3 = null != cachedSettingTitle;
   tmp2(tmp3, "Setting " + id + " is missing a title.");
   return cachedSettingTitle;
-};
-export const getSettingSearchableTitles = function getSettingSearchableTitles() {
+}
+export function getSettingSearchableTitles() {
   let items;
-  const entries = Object.entries(items(16095).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(16331).SETTING_RENDERER_CONFIG);
   items = [];
   const item = entries.forEach((item) => {
     let tmp2;
@@ -93,7 +93,7 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
         items = [tmp2, ];
         const items1 = [cachedSettingTitle];
         const push = items.push;
-        const tmp4Result = tmp4(16093);
+        const tmp4Result = tmp4(16329);
         HermesBuiltin.arraySpread(items1, tmp4Result.getCachedSettingSearchTerms(tmp2), 1);
         items[1] = items1;
         push(items);
@@ -101,11 +101,11 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
     }
   });
   return items;
-};
-export const getSettingScreens = function getSettingScreens() {
+}
+export function getSettingScreens() {
   let items = [];
   set = new Set();
-  const entries = Object.entries(items(16095).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(16331).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -120,10 +120,10 @@ export const getSettingScreens = function getSettingScreens() {
     }
   });
   return items;
-};
-export const getDesignSystemScreens = function getDesignSystemScreens() {
+}
+export function getDesignSystemScreens() {
   let items = [];
-  const entries = Object.entries(items(16095).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(16331).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -135,8 +135,8 @@ export const getDesignSystemScreens = function getDesignSystemScreens() {
     }
   });
   return items;
-};
-export const toSettingListItems = function toSettingListItems(node, field) {
+}
+export function toSettingListItems(node, field) {
   let closure_0 = field;
   const items = [];
   const sections = node.sections;
@@ -162,8 +162,8 @@ export const toSettingListItems = function toSettingListItems(node, field) {
     }
   });
   return items;
-};
-export const getSettingListSearchResultItems = function getSettingListSearchResultItems(arr) {
+}
+export function getSettingListSearchResultItems(arr) {
   let items1;
   const items = [];
   const item = arr.forEach((setting) => {
@@ -221,8 +221,8 @@ export const getSettingListSearchResultItems = function getSettingListSearchResu
     push(obj3);
   });
   return items1;
-};
-export const getScoredSettingListSearchResultItems = function getScoredSettingListSearchResultItems(settings, isLoading, placeholderCount) {
+}
+export function getScoredSettingListSearchResultItems(settings, isLoading, placeholderCount) {
   let items = [];
   const tmp = isLoading;
   if (tmp) {
@@ -346,12 +346,12 @@ export const getScoredSettingListSearchResultItems = function getScoredSettingLi
     });
     return items;
   }
-};
-export const getInitialScrollIndex = function getInitialScrollIndex(arg0, findLastIndex) {
+}
+export function getInitialScrollIndex(arg0, findLastIndex) {
   let closure_0 = arg0;
   const findLastIndexResult = findLastIndex.findLastIndex((type) => type.type === constants.SECTION_ROW && type.setting === closure_0);
   if (1 !== findLastIndexResult) {
     const _Math = Math;
     return Math.max(0, findLastIndexResult);
   }
-};
+}

@@ -1,10 +1,10 @@
-// Module ID: 8206
-// Function ID: 8207
+// Module ID: 8228
+// Function ID: 8229
 // Name: imageFilename
 // Dependencies: [2]
 // Exports: heicMimeType, isHeicFile, isJxrFile, jxrMimeType, renameToJpegExtension
 
-// Module 8206 (imageFilename)
+// Module 8228 (imageFilename)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["image/heic", "image/heif", "image/heic-sequence", "image/heif-sequence"]);
@@ -15,7 +15,7 @@ const set3 = new Set([".jxr", ".wdp", ".hdp"]);
 const re5 = /\.(jxr|wdp|hdp)$/i;
 const result = size.fileFinishedImporting("lib/uploader/imageFilename.tsx");
 
-export const isHeicFile = function isHeicFile(type) {
+export function isHeicFile(type) {
   if (set.has(type.type)) {
     return true;
   } else {
@@ -32,8 +32,8 @@ export const isHeicFile = function isHeicFile(type) {
     const hasItem = null != formatted && set1.has(formatted);
     return hasItem;
   }
-};
-export const isJxrFile = function isJxrFile(file) {
+}
+export function isJxrFile(file) {
   if (set2.has(file.type)) {
     return true;
   } else {
@@ -50,8 +50,8 @@ export const isJxrFile = function isJxrFile(file) {
     const hasItem = null != formatted && set3.has(formatted);
     return hasItem;
   }
-};
-export const heicMimeType = function heicMimeType(file) {
+}
+export function heicMimeType(file) {
   let str3;
   let str = "";
   if ("" !== file.type) {
@@ -67,15 +67,15 @@ export const heicMimeType = function heicMimeType(file) {
     }
   }
   return str3;
-};
-export const jxrMimeType = function jxrMimeType(file) {
+}
+export function jxrMimeType(file) {
   let str = "image/jxr";
   if ("" !== file.type) {
     str = file.type;
   }
   return str;
-};
-export const renameToJpegExtension = function renameToJpegExtension(name) {
+}
+export function renameToJpegExtension(name) {
   let replaced;
   const tmp = re2;
   if (re2.test(name)) {
@@ -90,4 +90,4 @@ export const renameToJpegExtension = function renameToJpegExtension(name) {
     }
   }
   return replaced;
-};
+}

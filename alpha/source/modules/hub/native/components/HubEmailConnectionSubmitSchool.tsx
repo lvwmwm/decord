@@ -1,26 +1,26 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 14150
+// Function ID: 14151
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 13895, 1084, 21, 5004, 587, 1502, 5629, 13909, 6409, 13904, 1199, 1125, 5270, 7043, 5280, 2]
+// Dependencies: [5, 32, 19, 17, 14128, 1084, 21, 5005, 587, 1503, 5630, 14142, 6433, 14137, 1199, 1125, 5271, 7067, 5281, 2]
 // Exports: default
 
-// Module 13917 (HubEmailConnectionSubmitSchool)
+// Module 14150 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
 import native from "native" /* 1199 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7043 */;
-import HubConstants from "HubConstants" /* 13895 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13904 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7067 */;
+import HubConstants from "HubConstants" /* 14128 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 14137 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, dependencyMap;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp41) {
           closure_2 = tmp41;
@@ -233,7 +233,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5280).Button;
+  Button = tmp2(5281).Button;
   intl5 = tmp2(1125).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);

@@ -1,16 +1,16 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 18145
+// Function ID: 18146
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 4848, 1084, 4853, 570, 558, 576, 4840, 7532, 2]
+// Dependencies: [32, 19, 4849, 1084, 4854, 570, 558, 576, 4841, 7555, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 17907 (FavoritesGuildSuggestionsStore)
+// Module 18145 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4848 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4849 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -101,7 +101,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   if (cResult[1] !== tmp5) {
     let items1;
     if (tmp5) {
-      items = [tmp(4840).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
+      items = [tmp(4841).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
       items1 = items;
     } else {
       items1 = [];
@@ -116,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp6), 2);
   _require = tmp9;
   const first1 = tmp7[0];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp(4840).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp(4841).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   if (cResult[3] !== tmp7[1]) {
     const fn2 = function _() {
       let obj = {
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   _require = tmp7;
   const first = tmp5[0];
   const items2 = [tmp5[1]];
-  const FAVORITES_GUILD_SUGGESTIONS = tmp2(4840).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
+  const FAVORITES_GUILD_SUGGESTIONS = tmp2(4841).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS;
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = {
       dismiss() {

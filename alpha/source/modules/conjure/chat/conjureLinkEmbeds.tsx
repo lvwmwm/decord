@@ -1,10 +1,10 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 10930
+// Function ID: 10931
 // Name: conjureLinkEmbeds
-// Dependencies: [5, 32, 19, 1383, 10855, 558, 576, 2]
+// Dependencies: [5, 32, 19, 1383, 10931, 558, 576, 2]
 // Exports: readyConjureLinkEmbeds, resetConjureLinkEmbedsForTests
 
-// Module 10854 (conjureLinkEmbeds)
+// Module 10930 (conjureLinkEmbeds)
 import URLUtilsDefault from "URLUtils" /* 1383 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c0, c1, c11, c12, set2;
 
-const f109136 = (item) => {
+const f110428 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -29,7 +29,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f109136));
+    set = new Set(match.filter(f110428));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -52,7 +52,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -259,7 +259,7 @@ let obj = function _prefetchConjureLinkEmbeds() {
           let deleteResult2 = closure_136_7.delete(joined);
         }
         c12 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     }
   });
@@ -288,7 +288,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(match.filter(f109136));
+        set = new Set(match.filter(f110428));
         const items = [];
         const tmp6 = set;
         HermesBuiltin.arraySpread(items, set, 0);
@@ -309,7 +309,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -337,7 +337,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp6) {
               c0 = 3;
@@ -375,7 +375,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f109136));
+      set = new Set(match.filter(f110428));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);
@@ -396,7 +396,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -424,7 +424,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -442,7 +442,7 @@ export const MAX_CONJURE_LINK_EMBEDS = 4;
 export const CONJURE_LINK_PREFETCH_DELAY_MS = 300;
 export { conjureLinkUrls };
 export { prefetchConjureLinkEmbeds };
-export const readyConjureLinkEmbeds = function readyConjureLinkEmbeds(trimmed) {
+export function readyConjureLinkEmbeds(trimmed) {
   let substr;
   const get = map.get;
   if (trimmed.includes("http")) {
@@ -454,7 +454,7 @@ export const readyConjureLinkEmbeds = function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f109136));
+    set = new Set(match.filter(f110428));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {
@@ -468,9 +468,9 @@ export const readyConjureLinkEmbeds = function readyConjureLinkEmbeds(trimmed) {
     }
   }
   return tmp10;
-};
+}
 export const useConjureLinkPrefetch = tmp4;
-export const resetConjureLinkEmbedsForTests = function resetConjureLinkEmbedsForTests() {
+export function resetConjureLinkEmbedsForTests() {
   map.clear();
   set.clear();
-};
+}

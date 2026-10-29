@@ -1,28 +1,28 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19587
+// Function ID: 19588
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1389, 19350, 1084, 21, 5004, 587, 1125, 5058, 19352, 558, 576, 5072, 7024, 10871, 1630, 1502, 6863, 19355, 1199, 11728, 19356, 7020, 7181, 8760, 7256, 5628, 2]
+// Dependencies: [32, 19, 17, 1389, 19583, 1084, 21, 5005, 587, 1125, 5059, 19585, 558, 576, 5073, 7048, 10776, 1631, 1503, 6886, 19588, 1199, 11782, 19589, 7044, 7205, 8763, 7280, 5629, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 19354 (GuildSettingsModalAuditLogFilter)
+// Module 19587 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl6 from "intl" /* 1125 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import react_native2 from "react-native" /* 5072 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6863 */;
-import FormRadio from "FormRadio" /* 7024 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10871 */;
-import AuditLogUtils from "AuditLogUtils" /* 19352 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19355 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import react_native2 from "react-native" /* 5073 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6886 */;
+import FormRadio from "FormRadio" /* 7048 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10776 */;
+import AuditLogUtils from "AuditLogUtils" /* 19585 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19350 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19583 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -137,8 +137,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   guildId = guildId.guildId;
   let tmp4 = closure_12();
   dependencyMap = tmp4;
-  const bottom = guildId(1630)().bottom;
-  let obj2 = filterType(1502);
+  const bottom = guildId(1631)().bottom;
+  let obj2 = filterType(1503);
   navigation = obj2.useNavigation();
   let obj3 = first;
   let tmp6 = navigation(first.useState(""), 2);
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           }
                         }
                       }
-                      const tmp25 = closure_9(tmp(7181).SearchBar, obj5);
+                      const tmp25 = closure_9(tmp(7205).SearchBar, obj5);
                       cResult[25] = tmp20;
                       cResult[26] = tmp25;
                       tmp23 = tmp25;
@@ -638,7 +638,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
 const result = size.fileFinishedImporting("modules/guild_settings/audit_log/native/GuildSettingsModalAuditLogFilter.tsx");
 
 export default tmp4;
-export const createAuditLogFilterUserData = function createAuditLogFilterUserData(arg0) {
+export function createAuditLogFilterUserData(arg0) {
   let closure_0;
   let intl;
   _require = arg0;
@@ -693,8 +693,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
     return num;
   });
   return items;
-};
-export const createAuditLogFilterActionData = function createAuditLogFilterActionData(arg0) {
+}
+export function createAuditLogFilterActionData(arg0) {
   let closure_0 = arg0;
   const obj = AuditLogUtils;
   const ACTION_FILTER_ITEMSResult = obj.ACTION_FILTER_ITEMS();
@@ -710,4 +710,4 @@ export const createAuditLogFilterActionData = function createAuditLogFilterActio
     }
     return num;
   });
-};
+}

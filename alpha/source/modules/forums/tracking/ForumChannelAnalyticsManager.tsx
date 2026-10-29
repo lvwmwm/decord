@@ -1,10 +1,10 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 8349
+// Function ID: 8350
 // Name: ForumChannelAnalyticsManager
-// Dependencies: [4856, 2]
+// Dependencies: [4857, 2]
 
-// Module 8327 (ForumChannelAnalyticsManager)
-import ChannelStore from "ChannelStore" /* 4856 */;
+// Module 8349 (ForumChannelAnalyticsManager)
+import ChannelStore from "ChannelStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 let obj = Object.create((function ForumChannelAnalyticsManager() {

@@ -1,24 +1,24 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7493
+// Function ID: 7494
 // Name: LoginHandoffSource
-// Dependencies: [4863, 1094, 5642, 6755, 2]
+// Dependencies: [4864, 1094, 5643, 6778, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 7470 (LoginHandoffSource)
+// Module 7493 (LoginHandoffSource)
 import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import LinkUtils from "LinkUtils" /* 5642 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import LinkUtils from "LinkUtils" /* 5643 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsURLUtils = tmp(6755);
+const UserSettingsURLUtils = tmp(6778);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const UserSettingsPath = UserSettingsConstants.UserSettingsPath;
 const LoginHandoffSource = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting", GUILD_ANALYTICS_SETTING: "guild_analytics_setting", GAME_CLAIM: "game_claim" };
 const result = size.fileFinishedImporting("modules/auth/LoginHandoffSource.tsx");
 
 export { LoginHandoffSource };
-export const getLoginHandoffSourceFromRedirectTo = function getLoginHandoffSourceFromRedirectTo(arg0) {
+export function getLoginHandoffSourceFromRedirectTo(arg0) {
   let ROLE_SUBSCRIPTION_SETTING;
   const str = decodeURIComponent(arg0);
   const obj = LinkUtils;
@@ -34,4 +34,4 @@ export const getLoginHandoffSourceFromRedirectTo = function getLoginHandoffSourc
   if (formatted === tmpResult.settingsPathToRoute(UserSettingsPath.SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS)) {
     ROLE_SUBSCRIPTION_SETTING = obj.ROLE_SUBSCRIPTION_SETTING;
   }
-};
+}

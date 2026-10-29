@@ -1,19 +1,19 @@
-// Module ID: 13560
-// Function ID: 13561
+// Module ID: 13793
+// Function ID: 13794
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5005, 1084, 21, 1199, 558, 576, 5085, 5283, 5070, 5242, 504, 7289, 7314, 13525, 13561, 12186, 9937, 9706, 2]
+// Dependencies: [32, 19, 5006, 1084, 21, 1199, 558, 576, 5086, 5284, 5071, 5243, 504, 7313, 7338, 13758, 13794, 12240, 9969, 9738, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 13560 (EmojiSuggestionBarUtils)
+// Module 13793 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import native from "native" /* 1199 */;
-import native2 from "native" /* 5070 */;
-import spring from "spring" /* 5283 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9706 */;
+import native2 from "native" /* 5071 */;
+import spring from "spring" /* 5284 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ const require = globalThis.__r;
 let dependencyMap, obj, obj1, obj5, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(5085);
-const timing = tmp(5242);
+const ReanimatedRexport = tmp(5086);
+const timing = tmp(5243);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -289,9 +289,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  const tmp12 = chatInputStateRef(7289);
-  analyticsLocations = tmp12(chatInputStateRef(7314).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp13 = chatInputStateRef(13525)(tmp6, 16);
+  const tmp12 = chatInputStateRef(7313);
+  analyticsLocations = tmp12(chatInputStateRef(7338).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp13 = chatInputStateRef(13758)(tmp6, 16);
   setData = tmp13.setData;
   setDataImmediate = tmp13.setDataImmediate;
   const tmp11 = chatInputStateRef;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
               if (cResult[11] === text) {
                 tmp17 = cResult[12];
               }
-              const tmp18 = tmp11(13561)(tmp17);
+              const tmp18 = tmp11(13794)(tmp17);
               const unlockedEmojis = tmp18.unlockedEmojis;
               ({ lockedEmojis, queryEnd } = tmp18);
               clear = tmp18.clear;
@@ -511,15 +511,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   obj2 = chatInputRef(504);
   const items = [setDataImmediate];
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
-  const tmp5 = chatInputStateRef(7289);
-  analyticsLocations = tmp5(chatInputStateRef(7314).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13525)(tmp3, 16);
+  const tmp5 = chatInputStateRef(7313);
+  analyticsLocations = tmp5(chatInputStateRef(7338).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(13758)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13561);
+  const tmp8 = chatInputStateRef(13794);
   if (focused) {
     focused = !suppressed;
   }
@@ -591,7 +591,7 @@ let result = size.fileFinishedImporting("modules/chat_input/native/EmojiSuggesti
 export const MAX_SUGGESTIONS_LARGE = 12;
 export const SET_DATA_DEBOUNCE_MS = 16;
 export { SUGGESTION_BAR_HEIGHT_TIMING };
-export const sortEmojisForDisplay = function sortEmojisForDisplay(unlockedEmojis, lockedEmojis, bound) {
+export function sortEmojisForDisplay(unlockedEmojis, lockedEmojis, bound) {
   let length = unlockedEmojis.length;
   let length2 = lockedEmojis.length;
   if (length + length2 > bound) {
@@ -615,9 +615,9 @@ export const sortEmojisForDisplay = function sortEmojisForDisplay(unlockedEmojis
   const substr1 = lockedEmojis.slice(0, length2);
   HermesBuiltin.arraySpread(items, substr1.map((emoji) => ({ emoji, locked: true })), tmp2);
   return items;
-};
+}
 export { getEmojiIdentity };
-export const getEmojiEntranceKey = function getEmojiEntranceKey(displayEmojis, index) {
+export function getEmojiEntranceKey(displayEmojis, index) {
   const mapped = displayEmojis.map((emoji) => {
     emoji = emoji.emoji;
     let surrogates = emoji.id;
@@ -633,7 +633,7 @@ export const getEmojiEntranceKey = function getEmojiEntranceKey(displayEmojis, i
     surrogates = emoji.surrogates;
   }
   return "" + joined + ":" + surrogates + ":" + index;
-};
+}
 export const ITEM_ENTRANCE_SPRING_CONFIG = obj2;
 export const EmojiEntranceAnimation = tmp2;
 export const useSuggestionBarHeight = tmp3;

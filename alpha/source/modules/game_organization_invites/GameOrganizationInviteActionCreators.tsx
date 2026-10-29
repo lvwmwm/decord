@@ -1,11 +1,11 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11415
+// Function ID: 11416
 // Name: GameOrganizationInviteActionCreators
-// Dependencies: [5, 11068, 1084, 584, 1294, 6410, 2]
+// Dependencies: [5, 11122, 1084, 584, 1294, 6434, 2]
 
-// Module 11361 (GameOrganizationInviteActionCreators)
+// Module 11415 (GameOrganizationInviteActionCreators)
 import Constants from "Constants" /* 1084 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -108,7 +108,7 @@ let obj = {
             obj.dispatch(obj15);
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp39) {
           closure_2 = tmp39;
@@ -137,7 +137,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -175,7 +175,7 @@ let obj = {
             obj = tmp(c2[3]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -184,9 +184,69 @@ let obj = {
       }
     })();
   },
-  acceptGameOrganizationInvite(arg0, arg1) {
+  fetchCharacterEligibility(arg0) {
     let closure_0 = arg0;
-    let closure_1 = arg1;
+    return (async (arg0, value) => {
+      let closure_1;
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let body;
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              body = undefined;
+              const HTTP = tmp4(c2[4]).HTTP;
+              const obj4 = { url: Endpoints.GAME_ORGANIZATION_INVITE_CHARACTERS(tmp4), rejectWithError: true };
+              const get = HTTP.get;
+              c2 = 1;
+              c3 = 1;
+              const obj5 = { value: get(obj4), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            body = value.body;
+            const obj7 = { type: "GAME_ORGANIZATION_CHARACTER_ELIGIBILITY_FETCH_SUCCESS", code: closure_129_0, characters: body.characters };
+            obj = tmp(c2[3]);
+            obj.dispatch(obj7);
+            c3 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
+          }
+        } catch (tmp16) {
+          c3 = 3;
+          throw tmp16;
+        }
+      }
+    })();
+  },
+  acceptGameOrganizationInvite(arg0, id) {
+    let closure_0 = arg0;
+    let closure_1 = id;
     return (async function(arg0, value) {
       let obj4;
       if (c5 === 2) {
@@ -199,7 +259,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;

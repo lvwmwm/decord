@@ -1,12 +1,12 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14971
+// Function ID: 14972
 // Name: useVirtualCurrencyBalance
-// Dependencies: [9483, 558, 576, 504, 2]
+// Dependencies: [9514, 558, 576, 504, 2]
 // Exports: getVirtualCurrencyBalance
 
-// Module 14736 (useVirtualCurrencyBalance)
+// Module 14971 (useVirtualCurrencyBalance)
 import react from "react" /* 576 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9483 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9514 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,6 +101,6 @@ const result = size.fileFinishedImporting("modules/virtual_currency/hooks/useVir
 
 export const useVirtualCurrencyBalance = tmp2;
 export const useHasEnoughVirtualCurrency = tmp3;
-export const getVirtualCurrencyBalance = function getVirtualCurrencyBalance() {
+export function getVirtualCurrencyBalance() {
   return VirtualCurrencyStore.getCurrentBalance();
-};
+}

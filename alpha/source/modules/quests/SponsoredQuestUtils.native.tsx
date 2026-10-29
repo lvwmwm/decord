@@ -1,15 +1,15 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14612
+// Function ID: 14613
 // Name: SponsoredQuestUtils
 // Dependencies: [2]
 // Exports: createGameSheetHook
 
-// Module 14378 (SponsoredQuestUtils)
+// Module 14612 (SponsoredQuestUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");
 
-export const createGameSheetHook = function createGameSheetHook(arg0) {
+export function createGameSheetHook(arg0) {
   let applications;
   let onGameSheetClosed;
   let onGameSheetOpened;
@@ -18,4 +18,4 @@ export const createGameSheetHook = function createGameSheetHook(arg0) {
   let sourceQuestContent;
   ({ quest, sourceQuestContent, applications, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed } = arg0);
   return (arg0) => arg0;
-};
+}

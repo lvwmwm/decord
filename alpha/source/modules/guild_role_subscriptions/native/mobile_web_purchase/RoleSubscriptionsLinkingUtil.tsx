@@ -1,10 +1,10 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7488
+// Function ID: 7489
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1084, 4863, 7466, 1999, 3, 7470, 2]
+// Dependencies: [5, 1084, 4864, 7489, 2000, 3, 7493, 2]
 
-// Module 7465 (RoleSubscriptionsLinkingUtil)
-import ChannelConstants from "ChannelConstants" /* 4863 */;
+// Module 7488 (RoleSubscriptionsLinkingUtil)
+import ChannelConstants from "ChannelConstants" /* 4864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _performRoleSubscriptionUpsellRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -122,7 +122,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ obj = function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -173,7 +173,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ obj = function _performRoleSubscriptionEditPayoutRedirect() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -228,7 +228,7 @@ obj = function _performDeveloperPortalRedirectWithTokenHandoff() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;

@@ -1,17 +1,17 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 11001
+// Function ID: 11002
 // Name: useStrangerDangerWarning
-// Dependencies: [1389, 10728, 558, 576, 504, 10967, 10968, 10969, 8156, 10970, 2]
+// Dependencies: [1389, 10761, 558, 576, 504, 11002, 11003, 11004, 8179, 11005, 2]
 
-// Module 10966 (useStrangerDangerWarning)
+// Module 11001 (useStrangerDangerWarning)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 8156 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10728 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10967 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10968 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10969 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10970 */;
+import useUserIsTeen from "useUserIsTeen" /* 8179 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10761 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11002 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11003 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11004 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11005 */;
 import UserStore from "UserStore" /* 1389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

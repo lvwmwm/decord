@@ -1,27 +1,27 @@
-// Module ID: 17932
-// Function ID: 17933
+// Module ID: 18170
+// Function ID: 18171
 // Name: TextChannel
-// Dependencies: [19, 17, 4855, 4908, 4856, 4936, 6806, 6739, 11992, 21, 5004, 587, 17832, 8583, 8539, 13507, 558, 576, 6029, 504, 7448, 17933, 5743, 1123, 10726, 17831, 8916, 14097, 17934, 14003, 5640, 9051, 5270, 13508, 17936, 17937, 8947, 6922, 2]
+// Dependencies: [19, 17, 4856, 4909, 4857, 4937, 6829, 6762, 12046, 21, 5005, 587, 18070, 8605, 8561, 13740, 558, 576, 6033, 504, 7471, 18171, 5745, 1123, 10759, 18069, 8919, 14330, 18172, 14236, 5641, 9054, 5271, 13741, 18174, 18175, 8950, 6946, 2]
 
-// Module 17932 (TextChannel)
+// Module 18170 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1123 */;
-import transitionToChannel2 from "transitionToChannel" /* 5743 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6029 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10726 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 17933 */;
+import transitionToChannel2 from "transitionToChannel" /* 5745 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6033 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 18171 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import GatedChannelStore from "GatedChannelStore" /* 4908 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11992 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import GatedChannelStore from "GatedChannelStore" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

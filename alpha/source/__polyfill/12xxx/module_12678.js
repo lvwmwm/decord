@@ -1,56 +1,70 @@
 // Module ID: 12678
 // Function ID: 12679
-// Dependencies: [12641, 12664, 12636, 12651]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: []
 
 // Module 12678
-import _mod12641 from "module_12641" /* 12641 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12651 */;
-import _mod12664 from "module_12664" /* 12664 */;
-
-
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod12641;
-    activeSpan = obj.getActiveSpan();
-  }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod12641;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod12664.DEBUG_BUILD) {
-      const logger = tmp9(12636).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+function getTrace(arg0) {
+  let closure_0 = arg0;
+  let items1 = null;
+  if (null !== this.matched) {
+    function hasMatch(matched) {
+      if (Array.isArray(matched.match)) {
+        let num = 0;
+        if (0 < matched.match.length) {
+          while (!hasMatch(matched.match[num])) {
+            num = num + 1;
+          }
+          const syntax = matched.syntax;
+          let tmp7 = null !== syntax;
+          if (tmp7) {
+            tmp7 = "Type" === syntax.type || "Property" === syntax.type || "Keyword" === syntax.type;
+            const tmp8 = "Type" === syntax.type || "Property" === syntax.type || "Keyword" === syntax.type;
+          }
+          if (tmp7) {
+            items1.unshift(matched.syntax);
+          }
+          return true;
+        }
+      } else if (matched.node === closure_0) {
+        const syntax2 = matched.syntax;
+        let tmp3 = null !== syntax2;
+        if (tmp3) {
+          tmp3 = "Type" === syntax2.type || "Property" === syntax2.type || "Keyword" === syntax2.type;
+          const tmp2 = "Type" === syntax2.type || "Property" === syntax2.type || "Keyword" === syntax2.type;
+        }
+        if (tmp3) {
+          const items = [matched.syntax];
+          items1 = items;
+        } else {
+          items1 = [];
+        }
+        return true;
+      }
+      return false;
     }
-    const obj2 = {};
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
+    hasMatch(tmp.matched);
+  }
+  return items1;
+}
+const obj = {
+  getTrace,
+  isType(arg0, arg1) {
+    let closure_0 = arg1;
+    const callResult = getTrace.call(this, arg0);
+    const tmp = null !== callResult && callResult.some((type) => "Type" === type.type && type.name === closure_0);
+    return tmp;
+  },
+  isProperty(arg0, arg1) {
+    let closure_0 = arg1;
+    const callResult = getTrace.call(this, arg0);
+    const tmp = null !== callResult && callResult.some((type) => "Property" === type.type && type.name === closure_0);
+    return tmp;
+  },
+  isKeyword(arg0) {
+    const callResult = getTrace.call(this, arg0);
+    const someResult = null !== callResult && callResult.some((type) => "Keyword" === type.type);
+    return someResult;
   }
 };
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  let tmp = arr;
-  if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
-        }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
-        }
-      });
-      return obj;
-    }
-  }
-};
+
+export default obj;

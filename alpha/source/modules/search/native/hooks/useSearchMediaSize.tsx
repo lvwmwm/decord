@@ -1,11 +1,11 @@
-// Module ID: 18368
-// Function ID: 18369
+// Module ID: 18602
+// Function ID: 18603
 // Name: useSearchMediaSize
-// Dependencies: [9748, 2]
+// Dependencies: [9780, 2]
 // Exports: default
 
-// Module 18368 (useSearchMediaSize)
-import SearchConstants from "SearchConstants" /* 9748 */;
+// Module 18602 (useSearchMediaSize)
+import SearchConstants from "SearchConstants" /* 9780 */;
 import size from "module_2" /* 2 */;
 
 let _window;

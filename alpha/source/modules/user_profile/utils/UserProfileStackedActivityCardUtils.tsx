@@ -1,10 +1,10 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14820
+// Function ID: 14821
 // Name: UserProfileStackedActivityCardUtils
 // Dependencies: [1084, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 14586 (UserProfileStackedActivityCardUtils)
+// Module 14820 (UserProfileStackedActivityCardUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let type;
 const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");
 
-export const getUserProfileLiveActivities = function getUserProfileLiveActivities(stateFromStores1) {
+export function getUserProfileLiveActivities(stateFromStores1) {
   const obj = _mod12;
   return obj.uniqWith(stateFromStores1.filter((type) => {
     type = type.type;
@@ -26,8 +26,8 @@ export const getUserProfileLiveActivities = function getUserProfileLiveActivitie
     }
     return tmp;
   });
-};
-export const getUserProfileStackedActivityCards = function getUserProfileStackedActivityCards(arg0) {
+}
+export function getUserProfileStackedActivityCards(arg0) {
   let isPrivate;
   let live;
   let stream;
@@ -65,4 +65,4 @@ export const getUserProfileStackedActivityCards = function getUserProfileStacked
     items.push(obj3);
   }
   return items;
-};
+}

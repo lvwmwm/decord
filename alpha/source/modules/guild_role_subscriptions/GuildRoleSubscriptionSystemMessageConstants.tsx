@@ -1,12 +1,12 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8405
+// Function ID: 8406
 // Name: GuildRoleSubscriptionSystemMessageConstants
-// Dependencies: [1125, 6524, 2]
+// Dependencies: [1125, 6548, 2]
 // Exports: getJoinButtonLabels, getRenewButtonLabels
 
-// Module 8383 (GuildRoleSubscriptionSystemMessageConstants)
+// Module 8405 (GuildRoleSubscriptionSystemMessageConstants)
 import intl3 from "intl" /* 1125 */;
-import StickersTypes from "StickersTypes" /* 6524 */;
+import StickersTypes from "StickersTypes" /* 6548 */;
 import size from "module_2" /* 2 */;
 
 let items = [{ id: "781323471249604648", format_type: StickersTypes.StickerFormat.APNG, description: "Cheerful Choco jumps out of gift box", name: "Surprise" }, , , , ];
@@ -21,18 +21,18 @@ items[4] = { id: "813951723822645278", format_type: StickersTypes.StickerFormat.
 ({ id: "813951723822645278", format_type: StickersTypes.StickerFormat.APNG, description: "Cheerful Choco gives thumbs up", name: "Nice" });
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageConstants.tsx");
 
-export const getJoinButtonLabels = function getJoinButtonLabels() {
+export function getJoinButtonLabels() {
   const intl = intl3.intl;
   const items = [intl.string(intl3.t.b6wEe6), ];
   const intl2 = intl3.intl;
   items[1] = intl2.string(intl3.t.i8o9hX);
   return items;
-};
-export const getRenewButtonLabels = function getRenewButtonLabels() {
+}
+export function getRenewButtonLabels() {
   const intl = intl3.intl;
   const items = [intl.string(intl3.t.vqnToc), ];
   const intl2 = intl3.intl;
   items[1] = intl2.string(intl3.t["9yh+dM"]);
   return items;
-};
+}
 export const STICKERS = items;

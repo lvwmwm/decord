@@ -1,15 +1,15 @@
-// Module ID: 17991
-// Function ID: 17992
+// Module ID: 18225
+// Function ID: 18226
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 17255, 21, 5004, 9392, 1272, 558, 576, 1503, 504, 7289, 7314, 17992, 7256, 2]
+// Dependencies: [32, 19, 17494, 21, 5005, 6016, 1272, 558, 576, 1504, 504, 7313, 7338, 18226, 7280, 2]
 
-// Module 17991 (OneColumnGuildUpsellList)
+// Module 18225 (OneColumnGuildUpsellList)
 import Fragment from "Fragment" /* 21 */;
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 17992 */;
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 18226 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17255 */;
-import createStyles from "createStyles" /* 5004 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17494 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnV
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(1503);
+  const tmpResult = tmp(1504);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   if (cResult[2] === arg1) {
     let tmp9;

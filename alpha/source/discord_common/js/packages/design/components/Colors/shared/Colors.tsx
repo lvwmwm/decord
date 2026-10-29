@@ -1,10 +1,10 @@
-// Module ID: 5027
-// Function ID: 5028
+// Module ID: 5028
+// Function ID: 5029
 // Name: Colors
 // Dependencies: [32, 683, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 5027 (Colors)
+// Module 5028 (Colors)
 import _modDef683 from "module_683" /* 683 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const WCAGContrastRatios = { NonText: 3, Text: 4.5, HighContrastText: 7 };
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Colors/shared/Colors.tsx");
 
 export { WCAGContrastRatios };
-export const getContrastingColor = function getContrastingColor(primaryColor, arg1) {
+export function getContrastingColor(primaryColor, arg1) {
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -74,22 +74,22 @@ export const getContrastingColor = function getContrastingColor(primaryColor, ar
     let str6 = ", ";
     return "rgba(" + tmp16[0] + ", " + tmp16[1] + ", " + tmp16[2] + ", " + tmp16[3] + ")";
   }
-};
-export const darkenColor = function darkenColor(contrastingColor, arg1) {
+}
+export function darkenColor(contrastingColor, arg1) {
   const obj = _modDef683(contrastingColor);
   const darkenResult = obj.darken(arg1);
   const tmp = _slicedToArray(darkenResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
-};
-export const brightenColor = function brightenColor(profilePrimaryColor, arg1) {
+}
+export function brightenColor(profilePrimaryColor, arg1) {
   const obj = _modDef683(profilePrimaryColor);
   const brightenResult = obj.brighten(arg1);
   const tmp = _slicedToArray(brightenResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
-};
-export const setColorOpacity = function setColorOpacity(white, alphaResult) {
+}
+export function setColorOpacity(white, alphaResult) {
   const obj = _modDef683(white);
   alphaResult = obj.alpha(alphaResult);
   const tmp = _slicedToArray(alphaResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
-};
+}

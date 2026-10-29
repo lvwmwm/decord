@@ -1,13 +1,13 @@
-// Module ID: 5260
-// Function ID: 5261
+// Module ID: 5261
+// Function ID: 5262
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 558, 576, 5261, 5262, 2]
+// Dependencies: [19, 21, 558, 576, 5262, 5263, 2]
 
-// Module 5260 (BurstReactionAnimationPreview)
+// Module 5261 (BurstReactionAnimationPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5261 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 5262 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5262 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 5263 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

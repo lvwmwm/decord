@@ -1,16 +1,16 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8679
+// Function ID: 8680
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8658, 1084, 38, 3, 1294, 584, 1449, 2]
+// Dependencies: [32, 5, 8680, 1084, 38, 3, 1294, 584, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8657 (ApplicationAssetUtils)
+// Module 8679 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8658 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8680 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f102028 = (item) => {
+const f103036 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f102028).length > 0) {
+  if (arr.filter(f103036).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -260,89 +260,129 @@ obj = function _fetchAssetIds() {
     let c5 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
-      let num13;
       function resolveExternalAssets() {
         return closure_1_18(...arguments);
       }
-      if (1 === c5) {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 3;
           return { value, done: true };
         } else {
-          const obj6 = { type: "APPLICATION_ASSETS_FETCH", applicationId };
-          const obj16 = closure_132_1(closure_132_2[7]);
-          obj16.dispatch(obj6);
-          value = [];
-          length = closure_1.filter((item) => {
-            let startsWithResult;
-            if (item != null) {
-              startsWithResult = item.startsWith("http:");
-            }
-            if (!startsWithResult) {
-              let startsWithResult1;
-              if (item != null) {
-                startsWithResult1 = item.startsWith("https:");
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } else {
+        try {
+          let num13;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              length = tmp4;
+              value = tmp;
+              num13 = closure_2;
+              if (closure_2 === undefined) {
+                num13 = 1;
               }
-              startsWithResult = startsWithResult1;
+              value = undefined;
+              length = undefined;
+              assets = undefined;
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
             }
-            return startsWithResult;
-          });
-          if (length.length > 0) {
-            c5 = 3;
-            c6 = 1;
-            const obj8 = { value: resolveExternalAssets(applicationId, length), done: false };
-            return obj8;
-          }
-        }
-      } else if (2 === c5) {
-        if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          return { value, done: true };
-        } else {
-          let nextPromise;
-          assets = value;
-          const obj10 = { type: "APPLICATION_ASSETS_UPDATE", applicationId, assets };
-          const obj14 = closure_132_1(closure_132_2[7]);
-          obj14.dispatch(obj10);
-          if (closure_132_20(closure_1, value, assets, num13)) {
-            const promise = closure_132_13(applicationId);
-            nextPromise = promise.then(() => closure_2_21(applicationId, closure_1_1, closure_1_2 - 1));
           } else {
-            const obj11 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
-            const obj2 = closure_132_1(closure_132_2[7]);
-            obj2.dispatch(obj11);
-            nextPromise = value;
+            if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                const obj6 = { type: "APPLICATION_ASSETS_FETCH", applicationId };
+                const obj16 = closure_132_1(closure_132_2[7]);
+                obj16.dispatch(obj6);
+                value = [];
+                length = closure_1.filter((item) => {
+                  let startsWithResult;
+                  if (item != null) {
+                    startsWithResult = item.startsWith("http:");
+                  }
+                  if (!startsWithResult) {
+                    let startsWithResult1;
+                    if (item != null) {
+                      startsWithResult1 = item.startsWith("https:");
+                    }
+                    startsWithResult = startsWithResult1;
+                  }
+                  return startsWithResult;
+                });
+                if (length.length > 0) {
+                  c5 = 3;
+                  c6 = 1;
+                  const obj8 = { value: resolveExternalAssets(applicationId, length), done: false };
+                  return obj8;
+                }
+              }
+            } else if (2 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                let nextPromise;
+                assets = value;
+                const obj10 = { type: "APPLICATION_ASSETS_UPDATE", applicationId, assets };
+                const obj14 = closure_132_1(closure_132_2[7]);
+                obj14.dispatch(obj10);
+                if (closure_132_20(closure_1, value, assets, num13)) {
+                  const promise = closure_132_13(applicationId);
+                  nextPromise = promise.then(() => closure_2_21(applicationId, closure_1_1, closure_1_2 - 1));
+                } else {
+                  const obj11 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
+                  const obj2 = closure_132_1(closure_132_2[7]);
+                  obj2.dispatch(obj11);
+                  nextPromise = value;
+                }
+                c6 = 3;
+                return { value: nextPromise, done: true };
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            }
+            if (closure_132_19(closure_1, value)) {
+              const obj13 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
+              const obj7 = closure_132_1(closure_132_2[7]);
+              obj7.dispatch(obj13);
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c5 = 2;
+              c6 = 1;
+              const obj17 = { value: closure_132_16(applicationId), done: false };
+              return obj17;
+            }
           }
+        } catch (tmp30) {
           c6 = 3;
-          return { value: nextPromise, done: true };
+          throw tmp30;
         }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 3;
-        return { value, done: true };
       }
-      if (closure_132_19(closure_1, value)) {
-        const obj13 = { type: "APPLICATION_ASSETS_FETCH_SUCCESS", applicationId };
-        const obj7 = closure_132_1(closure_132_2[7]);
-        obj7.dispatch(obj13);
-        return value;
-      }
-      await closure_132_16(applicationId);
-      length = tmp4;
-      value = tmp;
-      num13 = closure_2;
-      if (closure_2 === undefined) {
-        num13 = 1;
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -435,7 +475,7 @@ let closure_11 = { [PlatformTypes.SPOTIFY]: obj, [PlatformTypes.TWITCH]: obj2, [
 const map = new Map();
 let result = size.fileFinishedImporting("utils/ApplicationAssetUtils.tsx");
 
-export const getAssetFromImageURL = function getAssetFromImageURL(SPOTIFY, url) {
+export function getAssetFromImageURL(SPOTIFY, url) {
   const serializer = closure_11[SPOTIFY];
   const str = serializer.serialize(url);
   let combined = null;
@@ -447,8 +487,8 @@ export const getAssetFromImageURL = function getAssetFromImageURL(SPOTIFY, url) 
     }
   }
   return combined;
-};
-export const getAssetImage = function getAssetImage(application_id, large_image, items, format) {
+}
+export function getAssetImage(application_id, large_image, items, format) {
   let tmp22;
   let tmp23;
   let str = format;
@@ -516,13 +556,13 @@ export const getAssetImage = function getAssetImage(application_id, large_image,
       return combined;
     }
   }
-};
+}
 export { getAssets };
 export { fetchAssetIds };
-export const getAssetIds = function getAssetIds(id, arr) {
+export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f102028).length > 0) {
+  if (arr.filter(f103036).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -582,4 +622,4 @@ export const getAssetIds = function getAssetIds(id, arr) {
     }
     return items;
   }
-};
+}

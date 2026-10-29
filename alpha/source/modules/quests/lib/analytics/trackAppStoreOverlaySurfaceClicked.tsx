@@ -1,16 +1,16 @@
-// Module ID: 14360
-// Function ID: 14361
+// Module ID: 14594
+// Function ID: 14595
 // Name: trackAppStoreOverlaySurfaceClicked
-// Dependencies: [7827, 9607, 9610, 7836, 6748, 6752, 2]
+// Dependencies: [7850, 9639, 9642, 7859, 6771, 6775, 2]
 // Exports: trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest
 
-// Module 14360 (trackAppStoreOverlaySurfaceClicked)
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsActions from "AnalyticsActions" /* 7827 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7836 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 9607 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9610 */;
+// Module 14594 (trackAppStoreOverlaySurfaceClicked)
+import QuestTypes from "QuestTypes" /* 6771 */;
+import AdCreativeType from "AdCreativeType" /* 6775 */;
+import AnalyticsActions from "AnalyticsActions" /* 7850 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 9639 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
 import size from "module_2" /* 2 */;
 
 function captureAppStoreOverlaySurfaceClick(overlaySurface, arg1, arg2) {
@@ -39,7 +39,7 @@ function captureAppStoreOverlaySurfaceClick(overlaySurface, arg1, arg2) {
 }
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/trackAppStoreOverlaySurfaceClicked.tsx");
 
-export const trackAppStoreOverlaySurfaceClickedForQuest = function trackAppStoreOverlaySurfaceClickedForQuest(trackingCtx) {
+export function trackAppStoreOverlaySurfaceClickedForQuest(trackingCtx) {
   let overlaySurface;
   let questId;
   trackingCtx = trackingCtx.trackingCtx;
@@ -47,8 +47,8 @@ export const trackAppStoreOverlaySurfaceClickedForQuest = function trackAppStore
   const obj = { surfaceId: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: trackingCtx.sourceQuestContent, questContentPosition: trackingCtx.position, impressionId: trackingCtx.impressionId };
   const obj2 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: questId };
   captureAppStoreOverlaySurfaceClick(overlaySurface, obj, obj2);
-};
-export const trackAppStoreOverlaySurfaceClickedForAdContent = function trackAppStoreOverlaySurfaceClickedForAdContent(trackingCtx) {
+}
+export function trackAppStoreOverlaySurfaceClickedForAdContent(trackingCtx) {
   let adContentId;
   let adCreativeType;
   let overlaySurface;
@@ -56,4 +56,4 @@ export const trackAppStoreOverlaySurfaceClickedForAdContent = function trackAppS
   ({ adContentId, adCreativeType, overlaySurface } = trackingCtx);
   const obj = { surfaceId: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: trackingCtx.sourceQuestContent, questContentPosition: trackingCtx.position, impressionId: trackingCtx.impressionId };
   captureAppStoreOverlaySurfaceClick(overlaySurface, obj, { adCreativeType, adCreativeId: adContentId });
-};
+}

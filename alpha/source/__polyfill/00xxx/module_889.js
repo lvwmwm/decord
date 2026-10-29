@@ -11,7 +11,7 @@ do {
   num = num + 1;
 } while (num < 64);
 
-export const base64StringFromByteArray = function base64StringFromByteArray(arr2) {
+export function base64StringFromByteArray(arr2) {
   let sum;
   const result = length % 3;
   items = [];
@@ -47,4 +47,4 @@ export const base64StringFromByteArray = function base64StringFromByteArray(arr2
     items.push("" + items[sum3 >> 10] + items[sum3 >> 4 & 63] + items[sum3 << 2 & 63] + "=");
   }
   return items.join("");
-};
+}

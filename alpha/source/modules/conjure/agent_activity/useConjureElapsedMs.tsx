@@ -1,10 +1,10 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12604
+// Function ID: 12605
 // Name: useConjureElapsedMs
 // Dependencies: [32, 19, 558, 576, 2]
 // Exports: useConjureElapsedMs
 
-// Module 12549 (useConjureElapsedMs)
+// Module 12604 (useConjureElapsedMs)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let closure_4 = { second: 1000, minute: 60000 };
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled();
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/useConjureElapsedMs.tsx");
 
-export const useConjureElapsedMs = function useConjureElapsedMs(startedAt, arg1) {
+export function useConjureElapsedMs(startedAt, arg1) {
   let bound1;
   let closure_2;
   let first1;
@@ -119,4 +119,4 @@ export const useConjureElapsedMs = function useConjureElapsedMs(startedAt, arg1)
     }
   }
   return bound1;
-};
+}

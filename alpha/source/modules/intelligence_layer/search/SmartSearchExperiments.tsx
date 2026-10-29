@@ -1,14 +1,14 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13729
+// Function ID: 13730
 // Name: SmartSearchExperiments
-// Dependencies: [4878, 1084, 1452, 9768, 558, 576, 504, 2]
+// Dependencies: [4879, 1084, 1453, 9800, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 13496 (SmartSearchExperiments)
+// Module 13729 (SmartSearchExperiments)
 import Constants from "Constants" /* 1084 */;
-import ConversationExperiments from "ConversationExperiments" /* 9768 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import ConversationExperiments from "ConversationExperiments" /* 9800 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNlpSe
   }
   const tmpResult = tmp(504);
   let stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult2 = tmp(9768);
+  const tmpResult2 = tmp(9800);
   let isConversationDebugUXEnabled = tmpResult2.useIsConversationDebugUXEnabled(arg0, location);
   if (cResult[4] !== location) {
     const obj2 = { location };
@@ -152,7 +152,7 @@ const result = size.fileFinishedImporting("modules/intelligence_layer/search/Sma
 
 export const NlpSearchUserExperiment = apexExperiment;
 export const NlpSearchGuildExperiment = apexExperiment1;
-export const isNlpSearchEnabled = function isNlpSearchEnabled(guildId, suggested_searches) {
+export function isNlpSearchEnabled(guildId, suggested_searches) {
   const guild = GuildStore.getGuild(guildId);
   let flag;
   if (guild != null) {
@@ -178,5 +178,5 @@ export const isNlpSearchEnabled = function isNlpSearchEnabled(guildId, suggested
   } else {
     return false;
   }
-};
+}
 export const useIsNlpSearchEnabled = tmp4;

@@ -1,22 +1,22 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 19184
+// Function ID: 19185
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [4856, 5750, 4855, 1084, 4925, 1264, 2]
+// Dependencies: [4857, 5752, 4856, 1084, 4926, 1264, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 18951 (trackActivityThermalStateNoticeShown)
+// Module 19184 (trackActivityThermalStateNoticeShown)
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4925 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4926 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
 
-export const trackActivityThermalStateNoticeShown = function trackActivityThermalStateNoticeShown() {
+export function trackActivityThermalStateNoticeShown() {
   let guild_id;
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
   let _location;
@@ -44,4 +44,4 @@ export const trackActivityThermalStateNoticeShown = function trackActivityTherma
     guild_id = basicChannel.guild_id;
   }
   track(ACTIVITY_THERMAL_STATE_NOTICE_SHOWN, obj);
-};
+}

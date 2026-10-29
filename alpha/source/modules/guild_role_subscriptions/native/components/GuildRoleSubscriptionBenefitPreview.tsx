@@ -1,29 +1,28 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19856
+// Function ID: 19857
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 16833, 21, 5004, 558, 576, 16868, 7341, 5270, 4950, 8539, 8588, 16861, 5640, 1125, 2]
+// Dependencies: [19, 17, 17071, 21, 5005, 558, 576, 17106, 7365, 5271, 17109, 17099, 5641, 1125, 2]
 
-// Module 19616 (GuildRoleSubscriptionBenefitPreview)
+// Module 19856 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import useChannelNameDefault from "useChannelName" /* 5640 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16833 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16861 */;
-import EmojiIconDefault from "EmojiIcon" /* 16868 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import useChannelNameDefault from "useChannelName" /* 5641 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17099 */;
+import EmojiIconDefault from "EmojiIcon" /* 17106 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5270);
-const ChevronSmallRightIcon = tmp(7341);
+const ChevronSmallRightIcon = tmp(7365);
 const View = react_native.View;
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -153,61 +152,52 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Descrip
   let isInteractive;
   let items;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(11);
   ({ benefit, children, guildId, isInteractive } = arg0);
   const tmp4 = closure_7();
   if (cResult[0] === benefit.description) {
     let tmp5;
+    let tmp8;
     if (cResult[1] === tmp4) {
       tmp5 = cResult[2];
     }
-    if (cResult[3] === benefit.emoji_id) {
-      let tmp8;
-      if (cResult[4] === benefit.emoji_name) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === children) {
-        if (cResult[7] === tmp5) {
-          if (cResult[8] === tmp8) {
-            if (cResult[9] === guildId) {
-              let tmp11;
-              if (cResult[10] === isInteractive) {
-                tmp11 = cResult[11];
-              }
-              return tmp11;
+    if (cResult[3] !== benefit) {
+      const tmpResult = GuildRoleSubscriptionBenefitUtils;
+      const benefitEmojiId = tmpResult.getBenefitEmojiId(benefit);
+      cResult[3] = benefit;
+      cResult[4] = benefitEmojiId;
+      tmp8 = benefitEmojiId;
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] === children) {
+      if (cResult[6] === tmp5) {
+        if (cResult[7] === guildId) {
+          if (cResult[8] === isInteractive) {
+            let tmp10;
+            if (cResult[9] === tmp8) {
+              tmp10 = cResult[10];
             }
+            return tmp10;
           }
         }
       }
-      const obj2 = { emoji: tmp8, guildId, isInteractive, children: items };
-      items = [children, tmp5];
-      const tmp14 = metroRequire(closure_8, obj2);
-      cResult[6] = children;
-      cResult[7] = tmp5;
-      cResult[8] = tmp8;
-      cResult[9] = guildId;
-      cResult[10] = isInteractive;
-      cResult[11] = tmp14;
-      tmp11 = tmp14;
     }
-    let emoji_id = benefit.emoji_id;
-    if (emoji_id == null) {
-      let str = "";
-      if (null != benefit.emoji_name) {
-        const obj3 = UnicodeEmojisDefault;
-        str = obj3.convertSurrogateToName(benefit.emoji_name, false);
-      }
-      emoji_id = str;
-    }
-    cResult[3] = benefit.emoji_id;
-    cResult[4] = benefit.emoji_name;
-    cResult[5] = emoji_id;
-    tmp8 = emoji_id;
+    const obj2 = { emoji: tmp8, guildId, isInteractive, children: items };
+    items = [children, tmp5];
+    const tmp13 = metroRequire(closure_8, obj2);
+    cResult[5] = children;
+    cResult[6] = tmp5;
+    cResult[7] = guildId;
+    cResult[8] = isInteractive;
+    cResult[9] = tmp8;
+    cResult[10] = tmp13;
+    tmp10 = tmp13;
   }
   let tmp6 = null;
   if (null != benefit.description) {
-    const obj4 = { style: tmp4.benefitDescription, variant: "text-sm/medium", color: "interactive-text-default", children: benefit.description };
-    tmp6 = hasOwnProperty(Text_Text.Text, obj4);
+    const obj3 = { style: tmp4.benefitDescription, variant: "text-sm/medium", color: "interactive-text-default", children: benefit.description };
+    tmp6 = hasOwnProperty(tmp(5271).Text, obj3);
   }
   cResult[0] = benefit.description;
   cResult[1] = tmp4;
@@ -218,6 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Descrip
   let guildId;
   let isInteractive;
   let items;
+  let obj3;
   benefit = benefit.benefit;
   ({ children, guildId, isInteractive } = benefit);
   let tmp2 = null;
@@ -225,18 +216,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Descrip
     const obj = { style: tmp.benefitDescription, variant: "text-sm/medium", color: "interactive-text-default", children: benefit.description };
     tmp2 = hasOwnProperty(Text_Text.Text, obj);
   }
-  let emoji_id = benefit.emoji_id;
-  if (emoji_id == null) {
-    let str = "";
-    if (null != benefit.emoji_name) {
-      const obj2 = UnicodeEmojisDefault;
-      str = obj2.convertSurrogateToName(benefit.emoji_name, false);
-    }
-    emoji_id = str;
-  }
-  const obj3 = { emoji: emoji_id, guildId, isInteractive, children: items };
+  const obj2 = { emoji: obj3.getBenefitEmojiId(benefit), guildId, isInteractive, children: items };
   items = [children, tmp2];
-  return metroRequire(closure_8, obj3);
+  obj3 = GuildRoleSubscriptionBenefitUtils;
+  return metroRequire(closure_8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenefitRow(arg0) {
@@ -257,12 +240,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-      const Text = tmp(5270).Text;
+      const Text = tmp(5271).Text;
       intl = tmp(1125).intl;
       const _HermesInternal = HermesInternal;
-      const tmp24 = hasOwnProperty(Text, obj3);
-      cResult[0] = tmp24;
-      first = tmp24;
+      const tmp23 = hasOwnProperty(Text, obj3);
+      cResult[0] = tmp23;
+      first = tmp23;
     } else {
       first = cResult[0];
     }
@@ -270,67 +253,62 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     if (cResult[1] === channelWithTemplateFallback) {
       let tmp7;
-      let tmp10;
+      let tmp9;
       if (cResult[2] === tmp4.channelIcon) {
         tmp7 = cResult[3];
       }
       if (cResult[4] !== tmp6) {
         const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp6 };
-        const tmp12 = hasOwnProperty(Text_Text.Text, obj4);
+        const tmp11 = hasOwnProperty(Text_Text.Text, obj4);
         cResult[4] = tmp6;
-        cResult[5] = tmp12;
-        tmp10 = tmp12;
+        cResult[5] = tmp11;
+        tmp9 = tmp11;
       } else {
-        tmp10 = cResult[5];
+        tmp9 = cResult[5];
       }
       if (cResult[6] === tmp4.channelRow) {
         if (cResult[7] === tmp7) {
-          let tmp13;
-          if (cResult[8] === tmp10) {
-            tmp13 = cResult[9];
+          let tmp12;
+          if (cResult[8] === tmp9) {
+            tmp12 = cResult[9];
           }
           if (cResult[10] === benefit) {
             if (cResult[11] === guildId) {
               if (cResult[12] === isInteractive) {
-                let tmp17;
-                if (cResult[13] === tmp13) {
-                  tmp17 = cResult[14];
+                let tmp16;
+                if (cResult[13] === tmp12) {
+                  tmp16 = cResult[14];
                 }
-                return tmp17;
+                return tmp16;
               }
             }
           }
-          const obj5 = { benefit, guildId, isInteractive, children: tmp13 };
-          const tmp20 = hasOwnProperty(closure_9, obj5);
+          const obj5 = { benefit, guildId, isInteractive, children: tmp12 };
+          const tmp19 = hasOwnProperty(closure_9, obj5);
           cResult[10] = benefit;
           cResult[11] = guildId;
           cResult[12] = isInteractive;
-          cResult[13] = tmp13;
-          cResult[14] = tmp20;
-          tmp17 = tmp20;
+          cResult[13] = tmp12;
+          cResult[14] = tmp19;
+          tmp16 = tmp19;
         }
       }
-      const obj6 = { style: tmp25, children: items };
-      items = [tmp7, tmp10];
-      const tmp16 = metroRequire(View, obj6);
+      const obj6 = { style: tmp24, children: items };
+      items = [tmp7, tmp9];
+      const tmp15 = metroRequire(View, obj6);
       cResult[6] = tmp4.channelRow;
       cResult[7] = tmp7;
-      cResult[8] = tmp10;
-      cResult[9] = tmp16;
-      tmp13 = tmp16;
+      cResult[8] = tmp9;
+      cResult[9] = tmp15;
+      tmp12 = tmp15;
     }
-    const channelIcon = tmp4.channelIcon;
-    const tmpResult = utils_ChannelUtils;
-    let TextIcon = tmpResult.getChannelIconComponent(channelWithTemplateFallback);
-    if (TextIcon == null) {
-      TextIcon = tmp(8588).TextIcon;
-    }
-    const obj7 = { style: channelIcon, size: "xs" };
-    const tmp9 = hasOwnProperty(TextIcon, obj7);
+    const obj7 = { style: tmp4.channelIcon, size: "xs" };
+    const tmpResult = GuildRoleSubscriptionBenefitUtils;
+    const renderChannelIconResult = tmpResult.renderChannelIcon(channelWithTemplateFallback, obj7);
     cResult[1] = channelWithTemplateFallback;
     cResult[2] = tmp4.channelIcon;
-    cResult[3] = tmp9;
-    tmp7 = tmp9;
+    cResult[3] = renderChannelIconResult;
+    tmp7 = renderChannelIconResult;
   }
 }) : (function ChannelBenefitRow(benefit) {
   let guildId;
@@ -338,9 +316,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   let isInteractive;
   let items;
   let obj4;
-  let tmp11;
-  let tmp12;
-  let tmp9Result;
+  let tmp8;
   benefit = benefit.benefit;
   ({ guildId, isInteractive } = benefit);
   const tmp = closure_7();
@@ -348,29 +324,22 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5270).Text;
+    const Text = tmp2(5271).Text;
     intl = tmp2(1125).intl;
     const _HermesInternal = HermesInternal;
-    tmp9Result = hasOwnProperty(Text, obj2);
+    tmp8 = hasOwnProperty(Text, obj2);
   } else {
-    const obj3 = { benefit, guildId, isInteractive, children: tmp11(tmp12, obj4) };
-    const channelIcon = tmp.channelIcon;
+    const obj3 = { benefit, guildId, isInteractive, children: metroRequire(View, obj4) };
     obj4 = { style: tmp.channelRow, children: items };
-    const tmp2Result = utils_ChannelUtils;
-    let TextIcon = tmp2Result.getChannelIconComponent(channelWithTemplateFallback);
-    const tmp10 = closure_9;
-    tmp11 = metroRequire;
-    tmp12 = View;
-    if (TextIcon == null) {
-      TextIcon = tmp2(8588).TextIcon;
-    }
-    const obj5 = { style: channelIcon, size: "xs" };
-    items = [hasOwnProperty(TextIcon, obj5), ];
+    items = [, ];
+    const obj5 = { style: tmp.channelIcon, size: "xs" };
+    const tmp2Result = GuildRoleSubscriptionBenefitUtils;
+    items[0] = tmp2Result.renderChannelIcon(channelWithTemplateFallback, obj5);
     const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp5 };
     items[1] = hasOwnProperty(Text_Text.Text, obj6);
-    tmp9Result = tmp9(tmp10, obj3);
+    tmp8 = hasOwnProperty(closure_9, obj3);
   }
-  return tmp9Result;
+  return tmp8;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntangibleBenefitRow(arg0) {

@@ -9,14 +9,14 @@ import _mod902 from "module_902" /* 902 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const baggageHeaderHasSentryValues = function baggageHeaderHasSentryValues(baggage) {
+export function baggageHeaderHasSentryValues(baggage) {
   const parts = baggage.split(",");
   return parts.some((item) => {
     const trimmed = item.trim();
     return trimmed.startsWith("sentry-");
   });
-};
-export const createHeadersSafely = function createHeadersSafely(headers) {
+}
+export function createHeadersSafely(headers) {
   try {
     const _Headers = Headers;
     const self = this;
@@ -25,8 +25,8 @@ export const createHeadersSafely = function createHeadersSafely(headers) {
     return headers;
   } catch (err) {
   }
-};
-export const getFullURL = function getFullURL(arg0) {
+}
+export function getFullURL(arg0) {
   try {
     const _URL = URL;
     const self = this;
@@ -35,12 +35,12 @@ export const getFullURL = function getFullURL(arg0) {
     return uRL.href;
   } catch (err) {
   }
-};
-export const isPerformanceResourceTiming = function isPerformanceResourceTiming(entryType) {
+}
+export function isPerformanceResourceTiming(entryType) {
   let tmp = "resource" === entryType.entryType && "initiatorType" in entryType && typeof entryType.nextHopProtocol === "string";
   if (tmp) {
     tmp = "fetch" === entryType.initiatorType || "xmlhttprequest" === entryType.initiatorType;
     const tmp2 = "fetch" === entryType.initiatorType || "xmlhttprequest" === entryType.initiatorType;
   }
   return tmp;
-};
+}

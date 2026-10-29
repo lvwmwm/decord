@@ -1,9 +1,9 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7264
+// Function ID: 7265
 // Name: ConnectedAppsStore
 // Dependencies: [504, 12, 584, 2]
 
-// Module 7240 (ConnectedAppsStore)
+// Module 7264 (ConnectedAppsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

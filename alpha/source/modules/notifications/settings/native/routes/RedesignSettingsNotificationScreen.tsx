@@ -1,20 +1,20 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17835
+// Function ID: 17836
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17110, 8365, 21, 17598, 1125, 2865, 558, 576, 17111, 11248, 17113, 17599, 5299, 16244, 2]
+// Dependencies: [19, 17349, 8387, 21, 17836, 1125, 2866, 558, 576, 17350, 11302, 17352, 17837, 5300, 16482, 2]
 
-// Module 17597 (RedesignSettingsNotificationScreen)
+// Module 17835 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1125 */;
-import _modDef2865 from "module_2865" /* 2865 */;
-import useMountEffectDefault from "useMountEffect" /* 5299 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
-import SettingLayoutDefault from "SettingLayout" /* 16244 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17110 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17111 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17598 */;
+import _modDef2866 from "module_2866" /* 2866 */;
+import useMountEffectDefault from "useMountEffect" /* 5300 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingLayoutDefault from "SettingLayout" /* 16482 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17349 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17350 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17836 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 let tmp2;
 
 let tmp3;
-const NotificationPermissionSettingsHeaderDefault = tmp3(17113);
+const NotificationPermissionSettingsHeaderDefault = tmp3(17352);
 let closure_4 = AndroidNotificationSettingsStore.initializeAndroidNotificationSettingsStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
@@ -54,14 +54,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items = [, ];
     const tmpResult2 = MobileNotifSettingsRouteBuilders;
     items[0] = tmpResult2.buildOverviewCategoriesSection();
-    const obj5 = { label: intl.string(_modDef2865.nvBHcD), settings: items1 };
+    const obj5 = { label: intl.string(_modDef2866.nvBHcD), settings: items1 };
     intl = tmp(1125).intl;
     items1 = [, , , , , , ];
     ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);
     items[1] = obj5;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(17113);
+      tmp5Result = tmp5(17352);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;
@@ -132,7 +132,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items = [, ];
     const obj2 = MobileNotifSettingsRouteBuilders;
     items[0] = obj2.buildOverviewCategoriesSection();
-    const obj3 = { label: intl.string(_modDef2865.nvBHcD), settings: items1 };
+    const obj3 = { label: intl.string(_modDef2866.nvBHcD), settings: items1 };
     intl = intl2.intl;
     items1 = [, , , , , , ];
     ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);

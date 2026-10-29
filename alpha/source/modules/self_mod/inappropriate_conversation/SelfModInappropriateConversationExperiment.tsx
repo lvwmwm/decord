@@ -1,12 +1,12 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 11007
+// Function ID: 11008
 // Name: SelfModInappropriateConversationExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationWarning
 
-// Module 10972 (SelfModInappropriateConversationExperiment)
+// Module 11007 (SelfModInappropriateConversationExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligi
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/SelfModInappropriateConversationExperiment.tsx");
 
 export const InappropriateConversationExperiment = tmp2;
-export const isEligibleForInappropriateConversationWarning = function isEligibleForInappropriateConversationWarning(location) {
+export function isEligibleForInappropriateConversationWarning(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useIsEligibleForInappropriateConversationWarning = tmp3;

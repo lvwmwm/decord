@@ -1,13 +1,13 @@
-// Module ID: 18475
-// Function ID: 18476
+// Module ID: 18709
+// Function ID: 18710
 // Name: useBackgroundConjureAppChannelIds
-// Dependencies: [18332, 6813, 558, 504, 2]
+// Dependencies: [18566, 6836, 558, 504, 2]
 // Exports: default
 
-// Module 18475 (useBackgroundConjureAppChannelIds)
+// Module 18709 (useBackgroundConjureAppChannelIds)
 import get_initialized from "get initialized" /* 504 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18332 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18566 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

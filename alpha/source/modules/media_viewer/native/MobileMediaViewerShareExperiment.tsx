@@ -1,12 +1,12 @@
-// Module ID: 8889
-// Function ID: 8890
+// Module ID: 8892
+// Function ID: 8893
 // Name: MobileMediaViewerShareExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8889 (MobileMediaViewerShareExperiment)
+// Module 8892 (MobileMediaViewerShareExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileM
 const result = size.fileFinishedImporting("modules/media_viewer/native/MobileMediaViewerShareExperiment.tsx");
 
 export const MobileMediaViewerShareExperiment = apexExperiment;
-export const getMobileMediaViewerShareExperimentEnabled = function getMobileMediaViewerShareExperimentEnabled(shareMediaSource) {
+export function getMobileMediaViewerShareExperimentEnabled(shareMediaSource) {
   const obj = { location: shareMediaSource };
   return apexExperiment.getConfig(obj).enabled;
-};
+}
 export const useMobileMediaViewerShareExperimentEnabled = tmp3;

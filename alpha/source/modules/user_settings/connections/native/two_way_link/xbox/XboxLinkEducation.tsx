@@ -1,23 +1,23 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14544
+// Function ID: 14545
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1084, 21, 5004, 558, 576, 9653, 2064, 14311, 5705, 1125, 5270, 5280, 7257, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 558, 576, 9685, 2065, 14545, 5707, 1125, 5271, 5281, 7281, 2]
 
-// Module 14310 (XboxLinkEducation)
+// Module 14544 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
 import intl4 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import FastImageDefault from "FastImage" /* 5705 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7257 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9653 */;
-import _modDef14311 from "module_14311" /* 14311 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import FastImageDefault from "FastImage" /* 5707 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9685 */;
+import _modDef14545 from "module_14545" /* 14545 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef14311 };
+    const obj10 = { uri: _modDef14545 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   } else {
     tmp24 = cResult[21];
   }
-  const Text = tmp(5270).Text;
+  const Text = tmp(5271).Text;
   const body = twoWayLinkStyles.body;
   const intl2 = tmp(1125).intl;
   const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14311 };
+    const obj = { uri: _modDef14545 };
     return obj;
   }, []);
   items = [, , ];

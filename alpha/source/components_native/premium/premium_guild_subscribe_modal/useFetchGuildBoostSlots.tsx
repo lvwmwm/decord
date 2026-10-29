@@ -1,14 +1,14 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15380
+// Function ID: 15381
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 7547, 1998, 558, 576, 504, 1104, 7566, 8401, 2]
+// Dependencies: [5, 32, 19, 7570, 1999, 558, 576, 504, 1104, 7589, 8423, 2]
 
-// Module 15145 (useFetchGuildBoostSlots)
+// Module 15380 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7547 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7570 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp11) {
               c2 = 3;
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             try {
@@ -243,7 +243,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp11) {
               c2 = 3;

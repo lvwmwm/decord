@@ -1,18 +1,18 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16691
+// Function ID: 16692
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 16452, 8160, 5270, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 16690, 8183, 5271, 2]
 
-// Module 16453 (FamilyCenterActivityTotal)
+// Module 16691 (FamilyCenterActivityTotal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8160 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16452 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8183 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16690 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,7 +119,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   const obj3 = { style: tmp.container, children: items };
   const obj4 = { variant: "heading-xxl/medium", color: str, children: num };
-  const Text = tmp2(5270).Text;
+  const Text = tmp2(5271).Text;
   const tmp6 = React3;
   const tmp7 = View;
   if (num == null) {

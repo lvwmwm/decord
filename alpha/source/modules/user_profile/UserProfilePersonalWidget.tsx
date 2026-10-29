@@ -1,18 +1,18 @@
-// Module ID: 7744
-// Function ID: 7745
+// Module ID: 7766
+// Function ID: 7767
 // Name: UserProfilePersonalWidget
-// Dependencies: [1389, 1391, 7745, 5034, 4840, 1385, 1354, 7739, 1988, 2]
+// Dependencies: [1389, 1391, 7767, 5035, 4841, 1385, 1354, 7761, 1989, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7744 (UserProfilePersonalWidget)
+// Module 7766 (UserProfilePersonalWidget)
 import _modDef1354 from "module_1354" /* 1354 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5034 */;
-import WidgetType from "WidgetType" /* 7739 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7745 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
+import WidgetType from "WidgetType" /* 7761 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7767 */;
 import UserStore from "UserStore" /* 1389 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ class UserProfilePersonalWidget {
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7745).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7767).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;
@@ -336,17 +336,17 @@ const prototype = UserProfilePersonalWidget.prototype;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/UserProfilePersonalWidget.tsx");
 
-export const createDefaultCoverSection = function createDefaultCoverSection() {
+export function createDefaultCoverSection() {
   const obj = { type: PersonalWidgetSectionType.PersonalWidgetSectionType.COVER, title: "", subtitle: "" };
   return obj;
-};
-export const createDefaultField = function createDefaultField() {
+}
+export function createDefaultField() {
   const obj = { key: `field-${+closure_5}`, title: "", description: "" };
   closure_5 = tmp + 1;
   return obj;
-};
+}
 export { createDefaultFieldsSection };
-export const createDefaultPersonalWidget = function createDefaultPersonalWidget() {
+export function createDefaultPersonalWidget() {
   let header;
   let id;
   let items;
@@ -370,12 +370,12 @@ export const createDefaultPersonalWidget = function createDefaultPersonalWidget(
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-};
-export const isPersonalWidgetNew = function isPersonalWidgetNew() {
+}
+export function isPersonalWidgetNew() {
   const obj = DismissibleContentUnsafeUtils;
   return !obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.USER_PROFILE_PERSONAL_WIDGET_NEW_BADGE);
-};
-export const parsePersonalWidgetSections = function parsePersonalWidgetSections(sections) {
+}
+export function parsePersonalWidgetSections(sections) {
   let items;
   if (null == sections) {
     items = [];
@@ -428,5 +428,5 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
     push(obj);
   }
   return items;
-};
+}
 export { UserProfilePersonalWidget };

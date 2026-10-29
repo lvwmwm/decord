@@ -7,7 +7,7 @@
 // Module 72 (unstable_hasComponent)
 const map = new Map();
 
-export const unstable_hasComponent = function unstable_hasComponent(arg0) {
+export function unstable_hasComponent(arg0) {
   let value = map.get(arg0);
   const obj = map;
   if (null == value) {
@@ -26,4 +26,4 @@ export const unstable_hasComponent = function unstable_hasComponent(arg0) {
     }
   }
   return value;
-};
+}

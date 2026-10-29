@@ -1,18 +1,18 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7495
+// Function ID: 7496
 // Name: LurkerActionCreators
-// Dependencies: [5, 5750, 4937, 1084, 584, 1294, 1385, 2]
+// Dependencies: [5, 5752, 4938, 1084, 584, 1294, 1385, 2]
 // Exports: stopLurking
 
-// Module 7472 (LurkerActionCreators)
+// Module 7495 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5750 */;
-import LurkingStore from "LurkingStore" /* 4937 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
+import LurkingStore from "LurkingStore" /* 4938 */;
 import size from "module_2" /* 2 */;
 
-let c0, c2, c3, closure_3, closure_4, length, lurkingSource, map;
+let c2, c3, c4, closure_3, closure_4, length, lurkingSource, map;
 
 function stopLurkingAll() {
   return obj(...arguments);
@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "IconComponent" };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "IconComponent" };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;
@@ -170,43 +170,83 @@ let obj = function _stopLurkingAll() {
 };
 obj = function _stopLurking() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let c1;
     let closure_0 = arg0;
-    if (1 === c3) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
-        let c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c4 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        length = closure_130_5.lurkingGuildIds();
-        if (0 !== length.length) {
-          const items = [c0, closure_130_4.getGuildId()];
-          let closure_2 = items.filter(closure_130_0(closure_130_2[6]).isNotNullish);
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: closure_130_7(closure_2), done: false };
-          return obj5;
-        }
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      obj = { value, done: true };
-      return obj;
+    } else {
+      try {
+        let closure_2;
+        let c0;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_2 = tmp3;
+            let c1 = 0;
+            c0 = undefined;
+            let tmp18 = closure_0;
+            if (closure_0 === undefined) {
+              tmp18 = null;
+            }
+            c0 = tmp18;
+            length = undefined;
+            closure_2 = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              length = closure_130_5.lurkingGuildIds();
+              if (0 !== length.length) {
+                const items = [c0, closure_130_4.getGuildId()];
+                closure_2 = items.filter(closure_130_0(closure_130_2[6]).isNotNullish);
+                c3 = 2;
+                c4 = 1;
+                const obj5 = { value: closure_130_7(closure_2), done: false };
+                return obj5;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: "IconComponent" };
+        }
+      } catch (tmp19) {
+        c4 = 3;
+        throw tmp19;
+      }
     }
-    await "IconComponent";
-    closure_2 = tmp3;
-    let tmp18 = closure_0;
-    if (closure_0 === undefined) {
-      tmp18 = null;
-    }
-    c0 = tmp18;
-    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -214,6 +254,6 @@ const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/lurker_mode/LurkerActionCreators.tsx");
 
 export { stopLurkingAll };
-export const stopLurking = function stopLurking() {
+export function stopLurking() {
   return obj(...arguments);
-};
+}

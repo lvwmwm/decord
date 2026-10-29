@@ -1,69 +1,93 @@
-// Module ID: 9588
-// Function ID: 9589
+// Module ID: 9620
+// Function ID: 9621
 // Name: shop_coachmark
-// Dependencies: [32, 1209, 9566, 9556, 2]
+// Dependencies: [32, 1209, 9598, 9588, 2]
 
-// Module 9588 (shop_coachmark)
+// Module 9620 (shop_coachmark)
 import _mod1209 from "module_1209" /* 1209 */;
-import localized_string from "localized_string" /* 9556 */;
-import theme_aware_asset from "theme_aware_asset" /* 9566 */;
+import localized_string from "localized_string" /* 9588 */;
+import theme_aware_asset from "theme_aware_asset" /* 9598 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6;
 
-let tmp;
-const T2 = function T() {
-  return require("theme_aware_asset").ThemeAwareAsset;
-};
-const T3 = function T() {
-  return require("localized_string").LocalizedString;
-};
-const T4 = function T() {
-  return require("localized_string").LocalizedString;
-};
-const T5 = function T() {
-  return require("localized_string").LocalizedString;
-};
-const T6 = function T() {
-  const items = ["discord_protos.premium_marketing.v1.ShopCoachmarkDisplayType", ShopCoachmarkDisplayType, "SHOP_COACHMARK_DISPLAY_TYPE_"];
-  return items;
-};
-const T7 = function T() {
-  return require("theme_aware_asset").ThemeAwareAsset;
-};
 const ShopCoachmarkDisplayType = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", SM_TILE: 1, [1]: "SM_TILE", MD_TILE: 2, [2]: "MD_TILE", LG_TILE: 3, [3]: "LG_TILE", VIDEO_TILE: 4, [4]: "VIDEO_TILE" };
 const MessageType = _mod1209.MessageType;
 class ShopCoachmark$Type extends MessageType {
   constructor() {
-    let items = [, , , , , , , , , , , , , ];
-    const obj = { no: 1, name: "asset", kind: "message", T: T2 };
+    let items = [, , , , , , , , , , , , , , ];
+    const obj = {
+      no: 1,
+      name: "asset",
+      kind: "message",
+      T() {
+        return require("theme_aware_asset").ThemeAwareAsset;
+      }
+    };
     items[0] = obj;
-    items[1] = { no: 2, name: "header_localized", kind: "message", T: T3 };
-    items[2] = { no: 3, name: "body_localized", kind: "message", T: T4 };
-    items[3] = { no: 4, name: "button_label_localized", kind: "message", T: T5 };
-    items[4] = { no: 5, name: "display_type", kind: "enum", T: T6 };
+    items[1] = {
+      no: 2,
+      name: "header_localized",
+      kind: "message",
+      T() {
+        return require("localized_string").LocalizedString;
+      }
+    };
+    items[2] = {
+      no: 3,
+      name: "body_localized",
+      kind: "message",
+      T() {
+        return require("localized_string").LocalizedString;
+      }
+    };
+    items[3] = {
+      no: 4,
+      name: "button_label_localized",
+      kind: "message",
+      T() {
+        return require("localized_string").LocalizedString;
+      }
+    };
+    items[4] = {
+      no: 5,
+      name: "display_type",
+      kind: "enum",
+      T() {
+        const items = ["discord_protos.premium_marketing.v1.ShopCoachmarkDisplayType", ShopCoachmarkDisplayType, "SHOP_COACHMARK_DISPLAY_TYPE_"];
+        return items;
+      }
+    };
     const obj2 = { no: 6, name: "badge_text_localized", kind: "message", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[3]).LocalizedString;
+        return require("localized_string").LocalizedString;
       }
     }
     items[5] = obj2;
     items[6] = { no: 7, name: "badge_icon", kind: "scalar", T: 9 };
     items[7] = { no: 8, name: "badge_countdown_ends_at", kind: "scalar", T: 9 };
     items[8] = { no: 9, name: "show_hover_gradient", kind: "scalar", T: 8 };
-    items[9] = { no: 10, name: "hover_background", kind: "message", T: T7 };
+    items[9] = {
+      no: 10,
+      name: "hover_background",
+      kind: "message",
+      T() {
+        return require("theme_aware_asset").ThemeAwareAsset;
+      }
+    };
     items[10] = { no: 11, name: "header", kind: "scalar", T: 9 };
     items[11] = { no: 12, name: "body", kind: "scalar", T: 9 };
     items[12] = { no: 13, name: "button_label", kind: "scalar", T: 9 };
     items[13] = { no: 14, name: "badge_text", kind: "scalar", T: 9 };
+    items[14] = { no: 15, name: "version", kind: "scalar", T: 13 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.ShopCoachmark", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { displayType: 0, badgeIcon: "", badgeCountdownEndsAt: "", showHoverGradient: false, header: "", body: "", buttonLabel: "", badgeText: "" };
+    const obj = { displayType: 0, badgeIcon: "", badgeCountdownEndsAt: "", showHoverGradient: false, header: "", body: "", buttonLabel: "", badgeText: "", version: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
@@ -166,6 +190,10 @@ class ShopCoachmark$Type extends MessageType {
       const tagResult13 = tag.tag(14, _mod1209.WireType.LengthDelimited);
       tagResult13.string(asset.badgeText);
     }
+    if (0 !== asset.version) {
+      const tagResult14 = tag.tag(15, _mod1209.WireType.Varint);
+      tagResult14.uint32(asset.version);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -178,25 +206,8 @@ class ShopCoachmark$Type extends MessageType {
   }
 }
 const prototype = ShopCoachmark$Type.prototype;
-let obj2 = { no: 1, name: "asset", kind: "message", T: T2 };
-let items = [obj2, { no: 2, name: "header_localized", kind: "message", T: T3 }, { no: 3, name: "body_localized", kind: "message", T: T4 }, { no: 4, name: "button_label_localized", kind: "message", T: T5 }, { no: 5, name: "display_type", kind: "enum", T: T6 }, , , , , , , , , ];
-const obj3 = { no: 6, name: "badge_text_localized", kind: "message", T };
-class T {
-  constructor() {
-    return require("localized_string").LocalizedString;
-  }
-}
-items[5] = obj3;
-items[6] = { no: 7, name: "badge_icon", kind: "scalar", T: 9 };
-items[7] = { no: 8, name: "badge_countdown_ends_at", kind: "scalar", T: 9 };
-items[8] = { no: 9, name: "show_hover_gradient", kind: "scalar", T: 8 };
-items[9] = { no: 10, name: "hover_background", kind: "message", T: T7 };
-items[10] = { no: 11, name: "header", kind: "scalar", T: 9 };
-items[11] = { no: 12, name: "body", kind: "scalar", T: 9 };
-items[12] = { no: 13, name: "button_label", kind: "scalar", T: 9 };
-items[13] = { no: 14, name: "badge_text", kind: "scalar", T: 9 };
-const prototype1 = new prototype("discord_protos.premium_marketing.v1.ShopCoachmark", items, tmp, T, ShopCoachmark$Type, prototype, items, require, dependencyMap);
+const shopCoachmarkType = new ShopCoachmark$Type();
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/shop_coachmark.tsx");
 
 export { ShopCoachmarkDisplayType };
-export const ShopCoachmark = prototype1;
+export const ShopCoachmark = shopCoachmarkType;

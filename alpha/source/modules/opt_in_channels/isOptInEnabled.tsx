@@ -1,13 +1,13 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6872
+// Function ID: 6873
 // Name: isOptInEnabled
-// Dependencies: [4878, 4936, 6739, 1389, 1084, 558, 576, 504, 2]
+// Dependencies: [4879, 4937, 6762, 1389, 1084, 558, 576, 504, 2]
 // Exports: isOptInEnabledForGuild
 
-// Module 6849 (isOptInEnabled)
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6739 */;
+// Module 6872 (isOptInEnabled)
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -198,7 +198,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
 const result = size.fileFinishedImporting("modules/opt_in_channels/isOptInEnabled.tsx");
 
 export const useOptInEnabledForGuild = tmp3;
-export const isOptInEnabledForGuild = function isOptInEnabledForGuild(guild_id) {
+export function isOptInEnabledForGuild(guild_id) {
   const guild = GuildStore.getGuild(guild_id);
   const currentUser = UserStore.getCurrentUser();
   let tmp2 = null != guild_id && null != guild && null != currentUser;
@@ -208,5 +208,5 @@ export const isOptInEnabledForGuild = function isOptInEnabledForGuild(guild_id) 
     const isOptInEnabledResult = (features.has(metroRequire.COMMUNITY) || currentUser.isStaff()) && UserGuildSettingsStore.isOptInEnabled(guild_id);
   }
   return tmp2;
-};
+}
 export const useShouldShowOnboardingAdminUpsellForGuild = tmp4;

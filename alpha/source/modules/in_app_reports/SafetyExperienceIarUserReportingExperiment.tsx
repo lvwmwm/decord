@@ -1,12 +1,12 @@
-// Module ID: 14508
-// Function ID: 14509
+// Module ID: 14742
+// Function ID: 14743
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [5224, 558, 576, 2]
+// Dependencies: [5225, 558, 576, 2]
 // Exports: isIarUserReportingEnabled
 
-// Module 14508 (SafetyExperienceIarUserReportingExperiment)
+// Module 14742 (SafetyExperienceIarUserReportingExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5224" /* 5224 */;
+import createExperiment from "module_5225" /* 5225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ const result = size.fileFinishedImporting("modules/in_app_reports/SafetyExperien
 
 export default experiment;
 export const useIsIarUserReportingEnabled = tmp3;
-export const isIarUserReportingEnabled = function isIarUserReportingEnabled(location) {
+export function isIarUserReportingEnabled(location) {
   const obj = { location };
   return experiment.getCurrentConfig(obj, { autoTrackExposure: true }).enabled;
-};
+}

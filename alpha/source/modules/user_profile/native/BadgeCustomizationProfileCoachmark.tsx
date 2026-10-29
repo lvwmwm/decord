@@ -1,16 +1,16 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18767
+// Function ID: 18768
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1389, 4853, 587, 558, 576, 1496, 1630, 9549, 2050, 504, 5018, 1125, 5078, 9874, 2]
+// Dependencies: [32, 19, 1389, 4854, 587, 558, 576, 1497, 1631, 9581, 2051, 504, 5019, 1125, 5079, 9906, 2]
 
-// Module 18533 (BadgeCustomizationProfileCoachmark)
+// Module 18767 (BadgeCustomizationProfileCoachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1125 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5078 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 5079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1389 */;
@@ -18,7 +18,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YouBannerDecorations = tmp(9549);
+const YouBannerDecorations = tmp(9581);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const PX_64 = nativeDefault.space.PX_64;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -150,7 +150,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
   }
   const tmpResult = markAsDismissed(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const reducedMotion = react.useContext(tmp(5018).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = react.useContext(tmp(5019).AccessibilityPreferencesContext).reducedMotion;
   const tmp8 = closure_8(targetRef, visible);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1125).intl;
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
                 if (cResult[19] === visible) {
                   tmp18 = cResult[20];
                 }
-                const tmpResult2 = markAsDismissed(9874);
+                const tmpResult2 = markAsDismissed(9906);
                 const coachmark = tmpResult2.useCoachmark(targetRef, tmp18);
                 return null;
               }
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
     cResult[13] = I;
     tmp17 = I;
   }
-  const obj3 = { type: "rive", rive: markAsDismissed(5078).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj4 };
+  const obj3 = { type: "rive", rive: markAsDismissed(5079).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj4 };
   obj4 = { dataBinding: { on: visible, reducedMotion: reducedMotion.enabled } };
   cResult[5] = reducedMotion.enabled;
   cResult[6] = visible;

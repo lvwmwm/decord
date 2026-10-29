@@ -1,25 +1,25 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 10026
+// Function ID: 10027
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6763, 21, 558, 576, 9340, 9983, 5727, 9995, 9381, 9997, 9999, 9650, 10001, 10003, 9398, 10005, 9456, 2]
+// Dependencies: [19, 6786, 21, 558, 576, 9344, 10015, 5729, 10027, 9413, 10029, 10031, 9682, 10033, 10035, 9429, 10037, 9487, 2]
 
-// Module 9994 (EmojiPickerCategoryIcon)
+// Module 10026 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClockIcon from "ClockIcon" /* 5727 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6763 */;
-import TrophyIcon from "TrophyIcon" /* 9340 */;
-import ReactionIcon from "ReactionIcon" /* 9381 */;
-import HeartIcon from "HeartIcon" /* 9398 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9456 */;
-import GameControllerIcon from "GameControllerIcon" /* 9650 */;
-import StarIcon from "StarIcon" /* 9983 */;
-import LightbulbIcon from "LightbulbIcon" /* 9995 */;
-import NatureIcon from "NatureIcon" /* 9997 */;
-import FoodIcon from "FoodIcon" /* 9999 */;
-import BicycleIcon from "BicycleIcon" /* 10001 */;
-import ObjectIcon from "ObjectIcon" /* 10003 */;
-import FlagIcon from "FlagIcon" /* 10005 */;
+import ClockIcon from "ClockIcon" /* 5729 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6786 */;
+import TrophyIcon from "TrophyIcon" /* 9344 */;
+import ReactionIcon from "ReactionIcon" /* 9413 */;
+import HeartIcon from "HeartIcon" /* 9429 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
+import GameControllerIcon from "GameControllerIcon" /* 9682 */;
+import StarIcon from "StarIcon" /* 10015 */;
+import LightbulbIcon from "LightbulbIcon" /* 10027 */;
+import NatureIcon from "NatureIcon" /* 10029 */;
+import FoodIcon from "FoodIcon" /* 10031 */;
+import BicycleIcon from "BicycleIcon" /* 10033 */;
+import ObjectIcon from "ObjectIcon" /* 10035 */;
+import FlagIcon from "FlagIcon" /* 10037 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

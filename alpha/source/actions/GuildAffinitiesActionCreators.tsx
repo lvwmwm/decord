@@ -1,10 +1,10 @@
-// Module ID: 8871
-// Function ID: 8872
+// Module ID: 8874
+// Function ID: 8875
 // Name: GuildAffinitiesActionCreators
 // Dependencies: [1084, 1294, 584, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8871 (GuildAffinitiesActionCreators)
+// Module 8874 (GuildAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("actions/GuildAffinitiesActionCreators.tsx");
 
-export const fetchGuildAffinities = function fetchGuildAffinities() {
+export function fetchGuildAffinities() {
   let obj2;
   const HTTP = HTTPUtils.HTTP;
   let obj = { url: Endpoints.GUILD_AFFINITIES, oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
@@ -28,4 +28,4 @@ export const fetchGuildAffinities = function fetchGuildAffinities() {
     const obj = DispatcherDefault;
     obj.dispatch({ type: "LOAD_GUILD_AFFINITIES_FAILURE" });
   });
-};
+}

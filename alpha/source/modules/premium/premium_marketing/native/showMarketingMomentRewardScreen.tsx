@@ -1,13 +1,13 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15231
+// Function ID: 15232
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7685, 7684, 14177, 2]
+// Dependencies: [5, 7708, 7707, 14410, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 14996 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7684 */;
+// Module 15231 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -26,7 +26,7 @@ let obj = function _showMarketingMomentRewardScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _showMarketingMomentRewardScreen() {
             obj.open(obj7);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp20) {
         c4 = 3;
@@ -76,6 +76,6 @@ let obj = function _showMarketingMomentRewardScreen() {
 };
 const result = size.fileFinishedImporting("modules/premium/premium_marketing/native/showMarketingMomentRewardScreen.tsx");
 
-export const showMarketingMomentRewardScreen = function showMarketingMomentRewardScreen() {
+export function showMarketingMomentRewardScreen() {
   return obj(...arguments);
-};
+}

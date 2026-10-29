@@ -38,7 +38,7 @@ function isNativeFunction(arg0) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
+export function supportsDOMError() {
   try {
     const self = this;
     const dOMError = new globalThis.DOMError("");
@@ -46,8 +46,8 @@ export const supportsDOMError = function supportsDOMError() {
   } catch (err) {
     return false;
   }
-};
-export const supportsDOMException = function supportsDOMException() {
+}
+export function supportsDOMException() {
   try {
     const self = this;
     const dOMException = new globalThis.DOMException("");
@@ -55,8 +55,8 @@ export const supportsDOMException = function supportsDOMException() {
   } catch (err) {
     return false;
   }
-};
-export const supportsErrorEvent = function supportsErrorEvent() {
+}
+export function supportsErrorEvent() {
   try {
     const self = this;
     const errorEvent = new globalThis.ErrorEvent("");
@@ -64,13 +64,13 @@ export const supportsErrorEvent = function supportsErrorEvent() {
   } catch (err) {
     return false;
   }
-};
+}
 export const supportsFetch = _isFetchSupported;
-export const supportsHistory = function supportsHistory() {
+export function supportsHistory() {
   const tmp3 = "history" in _mod697.GLOBAL_OBJ && _mod697.GLOBAL_OBJ.history;
   return tmp3;
-};
-export const supportsNativeFetch = function supportsNativeFetch() {
+}
+export function supportsNativeFetch() {
   if (typeof globalThis.EdgeRuntime === "string") {
     return true;
   } else if (_isFetchSupported()) {
@@ -111,8 +111,8 @@ export const supportsNativeFetch = function supportsNativeFetch() {
   } else {
     return false;
   }
-};
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
+}
+export function supportsReferrerPolicy() {
   if (_isFetchSupported()) {
     try {
       const _Request = Request;
@@ -125,7 +125,7 @@ export const supportsReferrerPolicy = function supportsReferrerPolicy() {
   } else {
     return false;
   }
-};
-export const supportsReportingObserver = function supportsReportingObserver() {
+}
+export function supportsReportingObserver() {
   return "ReportingObserver" in _mod697.GLOBAL_OBJ;
-};
+}

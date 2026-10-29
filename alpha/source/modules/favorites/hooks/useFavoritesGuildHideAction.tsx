@@ -1,16 +1,16 @@
-// Module ID: 17841
-// Function ID: 17842
+// Module ID: 18079
+// Function ID: 18080
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 5035, 1084, 558, 576, 10883, 4881, 1111, 1125, 3445, 2]
+// Dependencies: [19, 5036, 1084, 558, 576, 10788, 4882, 1111, 1125, 3446, 2]
 
-// Module 17841 (useFavoritesGuildHideAction)
+// Module 18079 (useFavoritesGuildHideAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import _modDef3445 from "module_3445" /* 3445 */;
-import FavoritesUtils from "FavoritesUtils" /* 4881 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10883 */;
+import _modDef3446 from "module_3446" /* 3446 */;
+import FavoritesUtils from "FavoritesUtils" /* 4882 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10788 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5035 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { label: intl.string(_modDef3445["8FO0y9"]), subLabel: intl2.string(_modDef3445.FaHxWl), perform: first };
+    let obj2 = { label: intl.string(_modDef3446["8FO0y9"]), subLabel: intl2.string(_modDef3446.FaHxWl), perform: first };
     intl = intl3.intl;
     intl2 = intl3.intl;
     cResult[1] = obj2;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
   let guildId;
   let intl;
   let intl2;
-  let obj = { label: intl.string(_modDef3445["8FO0y9"]), subLabel: intl2.string(_modDef3445.FaHxWl), perform: callback };
+  let obj = { label: intl.string(_modDef3446["8FO0y9"]), subLabel: intl2.string(_modDef3446.FaHxWl), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesActionCreators;
     const result = obj.setFavoritesGuildVisibility(false, "server_context_menu");

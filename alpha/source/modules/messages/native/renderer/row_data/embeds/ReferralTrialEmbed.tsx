@@ -1,30 +1,30 @@
-// Module ID: 8470
-// Function ID: 8471
+// Module ID: 8492
+// Function ID: 8493
 // Name: ReferralTrialEmbed
-// Dependencies: [4856, 1389, 2055, 7595, 7559, 1084, 1391, 5004, 587, 7555, 8309, 8471, 1125, 8472, 5058, 2050, 7594, 8459, 2064, 1627, 8455, 2]
+// Dependencies: [4857, 1389, 2056, 7618, 7582, 1084, 1391, 5005, 587, 7578, 8331, 8493, 1125, 8494, 5059, 2051, 7617, 8481, 2065, 1628, 8477, 2]
 // Exports: createReferralTrialEmbedRedeemable
 
-// Module 8470 (ReferralTrialEmbed)
+// Module 8492 (ReferralTrialEmbed)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import intl12 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import PremiumUtils from "PremiumUtils" /* 2050 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import createStyles from "createStyles" /* 5004 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import useTrialOffer from "useTrialOffer" /* 7594 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8455 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8459 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8471 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8472 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import PremiumUtils from "PremiumUtils" /* 2051 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import createStyles from "createStyles" /* 5005 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import useTrialOffer from "useTrialOffer" /* 7617 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8477 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8481 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8493 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8494 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 2055 */;
-import UserOfferStore from "UserOfferStore" /* 7595 */;
-import IAPStore from "IAPStore" /* 7559 */;
+import SubscriptionStore from "SubscriptionStore" /* 2056 */;
+import UserOfferStore from "UserOfferStore" /* 7618 */;
+import IAPStore from "IAPStore" /* 7582 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -33,7 +33,7 @@ const HelpdeskArticles = Constants.HelpdeskArticles;
 let closure_9 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/ReferralTrialEmbed.tsx");
 
-export const createReferralTrialEmbedRedeemable = function createReferralTrialEmbedRedeemable(message, theme, id, relevantUserTrialOffer) {
+export function createReferralTrialEmbedRedeemable(message, theme, id, relevantUserTrialOffer) {
   let acceptLabelColor;
   let backgroundColor;
   let bodyTextColor;
@@ -106,7 +106,7 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
               const userTrialOffer = UserOfferStore.getUserTrialOffer(closure_9);
               const offerIds = IAPStore.getOfferIds();
               const _Object = Object;
-              const values = Object.values(tmp46(7555).TrialIdToProductOfferId[closure_9]);
+              const values = Object.values(tmp46(7578).TrialIdToProductOfferId[closure_9]);
               let id1;
               const id2 = relevantUserTrialOffer.id;
               const everyResult = values.every((item) => set.has(item));
@@ -221,4 +221,4 @@ export const createReferralTrialEmbedRedeemable = function createReferralTrialEm
       }
     }
   }
-};
+}

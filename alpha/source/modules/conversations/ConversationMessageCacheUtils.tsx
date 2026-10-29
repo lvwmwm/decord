@@ -1,19 +1,19 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7756
+// Function ID: 7757
 // Name: ConversationMessageCacheUtils
-// Dependencies: [502, 4946, 6047, 4948, 2]
+// Dependencies: [502, 4947, 6051, 4949, 2]
 // Exports: applyHydratedMessages, applyReaction, applyRelationshipFlags, removeHydratedMessage, replaceHydratedMessage
 
-// Module 7734 (ConversationMessageCacheUtils)
-import ReactionUtils from "ReactionUtils" /* 4948 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6047 */;
+// Module 7756 (ConversationMessageCacheUtils)
+import ReactionUtils from "ReactionUtils" /* 4949 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6051 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conversations/ConversationMessageCacheUtils.tsx");
 
-export const applyHydratedMessages = function applyHydratedMessages(arg0) {
+export function applyHydratedMessages(arg0) {
   let fullyHydrated;
   let messageReferences;
   let messages;
@@ -46,8 +46,8 @@ export const applyHydratedMessages = function applyHydratedMessages(arg0) {
     continue;
   }
   return true;
-};
-export const replaceHydratedMessage = function replaceHydratedMessage(peekResult, messageId, addReactionBatchResult) {
+}
+export function replaceHydratedMessage(peekResult, messageId, addReactionBatchResult) {
   let closure_0 = messageId;
   let hydratedMessages1;
   if (peekResult != null) {
@@ -63,8 +63,8 @@ export const replaceHydratedMessage = function replaceHydratedMessage(peekResult
       peekResult.hydratedMessages = substr;
     }
   }
-};
-export const removeHydratedMessage = function removeHydratedMessage(peekResult, id) {
+}
+export function removeHydratedMessage(peekResult, id) {
   let closure_0 = id;
   let hydratedMessages;
   if (peekResult != null) {
@@ -74,8 +74,8 @@ export const removeHydratedMessage = function removeHydratedMessage(peekResult, 
     const hydratedMessages1 = peekResult.hydratedMessages;
     peekResult.hydratedMessages = hydratedMessages1.filter((id) => id.id !== id);
   }
-};
-export const applyRelationshipFlags = function applyRelationshipFlags(message) {
+}
+export function applyRelationshipFlags(message) {
   let result1;
   const isBlockedForMessageResult = RelationshipStore.isBlockedForMessage(message);
   const isIgnoredForMessageResult = RelationshipStore.isIgnoredForMessage(message);
@@ -86,8 +86,8 @@ export const applyRelationshipFlags = function applyRelationshipFlags(message) {
     result1 = null;
   }
   return result1;
-};
-export const applyReaction = function applyReaction(userId, message) {
+}
+export function applyReaction(userId, message) {
   const obj = ReactionUtils;
   if (obj.shouldApplyReaction(userId)) {
     let addReactionResult;
@@ -103,4 +103,4 @@ export const applyReaction = function applyReaction(userId, message) {
   } else {
     return null;
   }
-};
+}

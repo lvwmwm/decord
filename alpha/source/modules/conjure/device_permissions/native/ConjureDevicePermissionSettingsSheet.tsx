@@ -1,16 +1,16 @@
-// Module ID: 14239
-// Function ID: 14240
+// Module ID: 14475
+// Function ID: 14476
 // Name: ConjureDevicePermissionSettingsSheet
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 14240, 1125, 3863, 7284, 7331, 10835, 7023, 7334, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 14476, 1125, 3864, 7308, 7355, 10911, 7047, 7358, 2]
 
-// Module 14239 (ConjureDevicePermissionSettingsSheet)
+// Module 14475 (ConjureDevicePermissionSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14240 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14476 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
   useConjureDevicePermissionSettingsDefault(applicationId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1125).intl;
-    let stringResult = intl.string(tmp5(3863)["7a+RNP"]);
+    let stringResult = intl.string(tmp5(3864)["7a+RNP"]);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
   if (cResult[1] !== appName) {
     const intl2 = tmp(1125).intl;
     let obj2 = { app: appName };
-    const formatToPlainStringResult = intl2.formatToPlainString(_modDef3863.IJY15p, obj2);
+    const formatToPlainStringResult = intl2.formatToPlainString(_modDef3864.IJY15p, obj2);
     cResult[1] = appName;
     cResult[2] = formatToPlainStringResult;
     tmp9 = formatToPlainStringResult;
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
     tmp9 = cResult[2];
   }
   if (cResult[3] !== tmp9) {
-    const tmp13 = jsx(tmp(7284).BottomSheetTitleHeader, { title: first, subtitle: tmp9 });
+    const tmp13 = jsx(tmp(7308).BottomSheetTitleHeader, { title: first, subtitle: tmp9 });
     cResult[3] = tmp9;
     cResult[4] = tmp13;
     tmp11 = tmp13;
@@ -72,7 +72,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
       tmp15 = cResult[7];
     }
     if (cResult[10] !== tmp15) {
-      const tmp20 = jsx(tmp(7023).TableRowGroup, { hasIcons: false, children: tmp15 });
+      const tmp20 = jsx(tmp(7047).TableRowGroup, { hasIcons: false, children: tmp15 });
       cResult[10] = tmp15;
       cResult[11] = tmp20;
       tmp18 = tmp20;
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
         }
         return tmp25;
       }
-      const tmp27 = jsx(tmp(7334).ActionSheet, { startExpanded: true, header: tmp11, children: tmp21 });
+      const tmp27 = jsx(tmp(7358).ActionSheet, { startExpanded: true, header: tmp11, children: tmp21 });
       cResult[15] = tmp11;
       cResult[16] = tmp21;
       cResult[17] = tmp27;
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
         }
         obj.subLabel = stringResult;
         obj.value = "granted" === decision;
-        obj.onValueChange = function onValueChange() { /* body not rendered: F152262 */ };
+        obj.onValueChange = function onValueChange() { /* body not rendered: F153890 */ };
         return tmp(TableSwitchRow, obj, permission);
       }
     }
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
         }
         obj.subLabel = stringResult;
         obj.value = "granted" === decision;
-        obj.onValueChange = function onValueChange() { /* body not rendered: F152262 */ };
+        obj.onValueChange = function onValueChange() { /* body not rendered: F153890 */ };
         return tmp(TableSwitchRow, obj, permission);
       }
     }
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
   let tmp2 = useConjureDevicePermissionSettingsDefault(applicationId);
   ({ settings, setAllowed: c0 } = tmp2);
   const ActionSheet = require("ActionSheet").ActionSheet;
-  let obj2 = { title: intl.string(_modDef3863["7a+RNP"]), subtitle: intl2.formatToPlainString(_modDef3863.IJY15p, { app: appName }) };
+  let obj2 = { title: intl.string(_modDef3864["7a+RNP"]), subtitle: intl2.formatToPlainString(_modDef3864.IJY15p, { app: appName }) };
   const BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -200,7 +200,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDev
       const tmp2 = _undefined;
       if (null == decision) {
         const intl = tmp2(tmp3[8]).intl;
-        stringResult = intl.string(require("module_3863")["wyav+H"]);
+        stringResult = intl.string(require("module_3864")["wyav+H"]);
       }
       return tmp(TableSwitchRow, obj, permission);
     })

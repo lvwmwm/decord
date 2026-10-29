@@ -9,7 +9,7 @@ let _global;
 let c1 = 1;
 let set = new Set();
 
-export const setImmediate = function setImmediate(flushQueue) {
+export function setImmediate(flushQueue) {
   let closure_2;
   _global = flushQueue;
   let closure_1 = [...arguments].slice();
@@ -44,7 +44,7 @@ export const setImmediate = function setImmediate(flushQueue) {
     });
     return +closure_1;
   }
-};
-export const clearImmediate = function clearImmediate(_updateImmediate) {
+}
+export function clearImmediate(_updateImmediate) {
   set.add(_updateImmediate);
-};
+}

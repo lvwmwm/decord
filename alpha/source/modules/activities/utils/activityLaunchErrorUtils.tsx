@@ -1,22 +1,22 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10891
+// Function ID: 10892
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10816, 5661, 1084, 21, 1125, 10814, 4832, 10817, 6053, 8636, 6703, 2064, 10818, 2]
+// Dependencies: [5, 19, 10892, 5663, 1084, 21, 1125, 10890, 4833, 10893, 6057, 8658, 6727, 2065, 10894, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10815 (activityLaunchErrorUtils)
+// Module 10891 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
 import intl12 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5661 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6053 */;
-import InteractionUtils from "InteractionUtils" /* 8636 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10814 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10817 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5663 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6057 */;
+import InteractionUtils from "InteractionUtils" /* 8658 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10890 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10893 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10816 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10892 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -190,6 +190,6 @@ obj = { ClientError: 0, [0]: "ClientError", CallbackError: 1, [1]: "CallbackErro
 let result = size.fileFinishedImporting("modules/activities/utils/activityLaunchErrorUtils.tsx");
 
 export const ActivityLaunchFailErrorType = obj;
-export const getActivityLaunchErrorInfo = function getActivityLaunchErrorInfo() {
+export function getActivityLaunchErrorInfo() {
   return obj(...arguments);
-};
+}

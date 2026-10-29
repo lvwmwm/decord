@@ -1,10 +1,10 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14507
+// Function ID: 14508
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1084, 584, 1294, 9729, 1402, 2]
+// Dependencies: [32, 5, 1084, 584, 1294, 9761, 1402, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 14273 (ScheduledMessageActionCreators)
+// Module 14507 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -35,7 +35,7 @@ let obj = function _createScheduledMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -62,7 +62,7 @@ let obj = function _createScheduledMessage() {
             errorMsg = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -161,7 +161,7 @@ obj = function _updateScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c6;
@@ -191,7 +191,7 @@ obj = function _updateScheduledMessage() {
               errorMsg = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -273,7 +273,7 @@ obj = function _updateScheduledMessage() {
             dispatch(obj);
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp58) {
           closure_5 = tmp58;
@@ -306,7 +306,7 @@ obj = function _deleteScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -370,7 +370,7 @@ obj = function _deleteScheduledMessage() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -401,7 +401,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ obj = function _sendScheduledMessageNow() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp34) {
           closure_4 = tmp34;
@@ -509,7 +509,7 @@ obj = function _fetchScheduledMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -563,7 +563,7 @@ obj = function _fetchScheduledMessages() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp30) {
         closure_2 = tmp30;
@@ -581,18 +581,18 @@ obj = function _fetchScheduledMessages() {
 ({ Endpoints: hasOwnProperty, MessageFlags: metroRequire } = Constants);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageActionCreators.tsx");
 
-export const createScheduledMessage = function createScheduledMessage() {
+export function createScheduledMessage() {
   return obj(...arguments);
-};
-export const updateScheduledMessage = function updateScheduledMessage() {
+}
+export function updateScheduledMessage() {
   return obj(...arguments);
-};
-export const deleteScheduledMessage = function deleteScheduledMessage() {
+}
+export function deleteScheduledMessage() {
   return obj(...arguments);
-};
-export const sendScheduledMessageNow = function sendScheduledMessageNow() {
+}
+export function sendScheduledMessageNow() {
   return obj(...arguments);
-};
-export const fetchScheduledMessages = function fetchScheduledMessages() {
+}
+export function fetchScheduledMessages() {
   return obj(...arguments);
-};
+}

@@ -1,100 +1,111 @@
 // Module ID: 10361
 // Function ID: 10362
-// Dependencies: [41, 42, 93, 95, 98, 10357, 10256]
+// Dependencies: [10278, 10285, 10287, 10311, 10362, 10364, 10365, 10366, 10367, 10368, 10369, 10318]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10361
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10256 */;
-import _mod10357 from "module_10357" /* 10357 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10311 from "module_10311" /* 10311 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10318 */;
+import _mod10362 from "module_10362" /* 10362 */;
+import _mod10364 from "module_10364" /* 10364 */;
+import _mod10365 from "module_10365" /* 10365 */;
+import _mod10366 from "module_10366" /* 10366 */;
+import _mod10367 from "module_10367" /* 10367 */;
+import _mod10368 from "module_10368" /* 10368 */;
+import _mod10369 from "module_10369" /* 10369 */;
+import { Chrono } from "module_10278" /* 10278 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10311.default(flag2), , , ];
+  new module_10311.default(flag2);
+  items[1] = new module_10362.default();
+  new module_10362.default();
+  items[2] = new module_10364.default();
+  new module_10364.default();
+  items[3] = new module_10367.default();
+  new module_10367.default();
+  items1 = [new module_10365.default(), ];
+  new module_10365.default();
+  items1[1] = new module_10366.default();
+  new module_10366.default();
+  return includeCommonConfiguration(obj, flag);
 }
-const keys = Object.keys(_mod10357.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\u661F\u671F|\u793C\u62DC|\u5468)(?<weekday>" + keys.join("|") + ")");
-class ZHHansWeekdayParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ZHHansWeekdayParser);
-    const obj = _getPrototypeOf(ZHHansWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const push = parsers.push;
+  const _default = new module_10368.default();
+  push(_default);
+  const parsers1 = tmp.parsers;
+  const push2 = parsers1.push;
+  const _default1 = new module_10369.default();
+  push2(_default1);
+  return tmp;
 }
-_inherits(ZHHansWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp2 = _mod10357.WEEKDAY_OFFSET[index.groups.weekday];
-      if (undefined === tmp2) {
-        return null;
-      } else {
-        const _Date = Date;
-        const refDate = createParsingResult.refDate;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        const diff = tmp2 - date.getDay();
-        const _Math3 = Math;
-        const _Math4 = Math;
-        const absolute = Math.abs(diff - 7);
-        let diff1 = diff;
-        if (absolute < Math.abs(diff)) {
-          diff1 = diff - 7;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const absolute1 = Math.abs(diff1 + 7);
-        let sum = diff1;
-        if (absolute1 < Math.abs(diff1)) {
-          sum = diff1 + 7;
-        }
-        date.setDate(date.getDate() + sum);
-        const start = parsingResult.start;
-        start.assign("weekday", tmp2);
-        const start2 = parsingResult.start;
-        start2.imply("day", date.getDate());
-        const start3 = parsingResult.start;
-        start3.imply("month", date.getMonth() + 1);
-        const start4 = parsingResult.start;
-        start4.imply("year", date.getFullYear());
-        return parsingResult;
-      }
-    }
-  }
-];
+const module_10311 = fn(_mod10311);
+const module_10362 = fn(_mod10362);
+const module_10364 = fn(_mod10364);
+const module_10365 = fn(_mod10365);
+const module_10366 = fn(_mod10366);
+const module_10367 = fn(_mod10367);
+const module_10368 = fn(_mod10368);
+const module_10369 = fn(_mod10369);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let push = parsers.push;
+let _default = new module_10368.default();
+push(_default);
+let parsers1 = configuration.parsers;
+let push2 = parsers1.push;
+let _default1 = new module_10369.default();
+push2(_default1);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10278").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10278").Chrono;
 
-export default _createClass(ZHHansWeekdayParser, items);
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

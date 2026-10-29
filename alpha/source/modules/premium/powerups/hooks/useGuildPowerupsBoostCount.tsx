@@ -1,15 +1,15 @@
-// Module ID: 8404
-// Function ID: 8405
+// Module ID: 8426
+// Function ID: 8427
 // Name: useGuildPowerupsBoostCount
-// Dependencies: [19, 8405, 4878, 5217, 5236, 558, 576, 504, 2]
+// Dependencies: [19, 8427, 4879, 5218, 5237, 558, 576, 504, 2]
 // Exports: getGuildPowerupsBoostCount
 
-// Module 8404 (useGuildPowerupsBoostCount)
-import GameServerExperiment from "GameServerExperiment" /* 5236 */;
+// Module 8426 (useGuildPowerupsBoostCount)
+import GameServerExperiment from "GameServerExperiment" /* 5237 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8405 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5217 */;
+import GameServerStore from "GameServerStore" /* 8427 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5218 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAppl
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
 
 export default tmp2;
-export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id) {
+export function getGuildPowerupsBoostCount(id) {
   let num2;
   const guild = GuildStore.getGuild(id);
   let total;
@@ -214,4 +214,4 @@ export const getGuildPowerupsBoostCount = function getGuildPowerupsBoostCount(id
     return obj2;
   }
   return { available: 0, spent: 0, total };
-};
+}

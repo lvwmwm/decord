@@ -1,18 +1,18 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11862
+// Function ID: 11863
 // Name: conjurePreviewTargets
-// Dependencies: [5662, 11797, 1125, 3863, 2]
+// Dependencies: [5664, 11851, 1125, 3864, 2]
 // Exports: activePreviewTarget, getPreviewTargetLabel, previewTargetKey, previewTargets, selectPreviewTarget
 
-// Module 11808 (conjurePreviewTargets)
+// Module 11862 (conjurePreviewTargets)
 import intl5 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjurePreviewMode from "ConjurePreviewMode" /* 11797 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjurePreviewMode from "ConjurePreviewMode" /* 11851 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTargets.tsx");
 
-export const previewTargets = function previewTargets(modes, frameSurfaceOptions, stateFromStores3) {
+export function previewTargets(modes, frameSurfaceOptions, stateFromStores3) {
   let items = stateFromStores3;
   if (stateFromStores3 === undefined) {
     items = [];
@@ -41,8 +41,8 @@ export const previewTargets = function previewTargets(modes, frameSurfaceOptions
     }
     return flatMapResult;
   });
-};
-export const previewTargetKey = function previewTargetKey(target) {
+}
+export function previewTargetKey(target) {
   let mode;
   if ("frame" !== target.mode) {
     mode = target.mode;
@@ -54,8 +54,8 @@ export const previewTargetKey = function previewTargetKey(target) {
     mode = "frame-" + target.surface + "-" + target.appChannel;
   }
   return mode;
-};
-export const activePreviewTarget = function activePreviewTarget(activeMode, frameSurface, appChannel) {
+}
+export function activePreviewTarget(activeMode, frameSurface, appChannel) {
   let tmp = appChannel;
   if (appChannel === undefined) {
     tmp = null;
@@ -75,8 +75,8 @@ export const activePreviewTarget = function activePreviewTarget(activeMode, fram
     tmp2 = obj;
   }
   return tmp2;
-};
-export const getPreviewTargetLabel = function getPreviewTargetLabel(mode) {
+}
+export function getPreviewTargetLabel(mode) {
   let obj2;
   mode = mode.mode;
   if ("frame" === mode) {
@@ -88,23 +88,23 @@ export const getPreviewTargetLabel = function getPreviewTargetLabel(mode) {
       const intl4 = intl5.intl;
       const formatToPlainString = intl4.formatToPlainString;
       const obj = { surface: obj2.getPreviewFrameSurfaceLabel(mode.surface), channel: mode.appChannel };
-      const prop = _modDef3863["6xVl+N"];
+      const prop = _modDef3864["6xVl+N"];
       obj2 = ConjurePreviewMode;
       previewFrameSurfaceLabel = formatToPlainString(prop, obj);
     }
     return previewFrameSurfaceLabel;
   } else if ("widget" === mode) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3863.y5GiL1);
+    return intl3.string(_modDef3864.y5GiL1);
   } else if ("overlay" === mode) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3863["2940LX"]);
+    return intl2.string(_modDef3864["2940LX"]);
   } else if ("bot" === mode) {
     const intl = intl5.intl;
-    return intl.string(_modDef3863.tjpaGN);
+    return intl.string(_modDef3864.tjpaGN);
   }
-};
-export const selectPreviewTarget = function selectPreviewTarget(mode, fn, fn2, fn3) {
+}
+export function selectPreviewTarget(mode, fn, fn2, fn3) {
   if ("frame" === mode.mode) {
     fn2(mode.surface);
     if (null != mode.appChannel) {
@@ -114,4 +114,4 @@ export const selectPreviewTarget = function selectPreviewTarget(mode, fn, fn2, f
     }
   }
   fn(mode.mode);
-};
+}

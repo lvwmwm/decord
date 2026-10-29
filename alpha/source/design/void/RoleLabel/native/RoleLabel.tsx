@@ -1,17 +1,17 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10188
+// Function ID: 10189
 // Name: RoleLabel
-// Dependencies: [19, 17, 5005, 21, 5004, 558, 576, 504, 1199, 8985, 2]
+// Dependencies: [19, 17, 5006, 21, 5005, 558, 576, 504, 1199, 8988, 2]
 
-// Module 10155 (RoleLabel)
+// Module 10188 (RoleLabel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Form from "Form" /* 8985 */;
+import Form from "Form" /* 8988 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

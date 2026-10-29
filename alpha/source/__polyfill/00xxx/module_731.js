@@ -8,7 +8,7 @@ import _mod724 from "module_724" /* 724 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const hasSpansEnabled = function hasSpansEnabled(options) {
+export function hasSpansEnabled(options) {
   if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
     if (!globalThis.__SENTRY_TRACING__) {
       return false;
@@ -29,4 +29,4 @@ export const hasSpansEnabled = function hasSpansEnabled(options) {
     tmp6 = null == tmp.tracesSampleRate && !tmp.tracesSampler;
   }
   return !tmp6;
-};
+}

@@ -1,14 +1,14 @@
-// Module ID: 10672
-// Function ID: 10673
+// Module ID: 10705
+// Function ID: 10706
 // Name: useUserVoiceActivity
-// Dependencies: [4856, 4936, 5666, 1095, 558, 576, 504, 2]
+// Dependencies: [4857, 4937, 5668, 1095, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10672 (useUserVoiceActivity)
+// Module 10705 (useUserVoiceActivity)
 import Constants from "Constants" /* 1095 */;
-import ChannelStore_mod from "ChannelStore" /* 4856 */;
-import PermissionStore_mod from "PermissionStore" /* 4936 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 5666 */;
+import ChannelStore_mod from "ChannelStore" /* 4857 */;
+import PermissionStore_mod from "PermissionStore" /* 4937 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5668 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "useCallback", voiceChannel: "PX_16" });
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "Reflect" });
 function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;
@@ -190,7 +190,7 @@ const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceA
 
 export default tmp5;
 export { getUserVoiceState };
-export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
+export function canViewUserVoiceChannel(arg0) {
   let guildId;
   let includeNonDiscoverable;
   let tmp4;
@@ -258,5 +258,5 @@ export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
     }
     tmp4 = voiceStateForUser;
   }
-};
+}
 export { getVisibleUserVoiceActivity };

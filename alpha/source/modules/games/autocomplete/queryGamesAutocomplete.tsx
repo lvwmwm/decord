@@ -1,14 +1,14 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9108
+// Function ID: 9109
 // Name: queryGamesAutocomplete
-// Dependencies: [8616, 551, 9106, 9108, 8617, 2]
+// Dependencies: [8638, 551, 9109, 9111, 8639, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 9105 (queryGamesAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8617 */;
-import useGameAutocomplete2 from "useGameAutocomplete" /* 9106 */;
-import GameSearchSession from "GameSearchSession" /* 9108 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8616 */;
+// Module 9108 (queryGamesAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8639 */;
+import useGameAutocomplete2 from "useGameAutocomplete" /* 9109 */;
+import GameSearchSession from "GameSearchSession" /* 9111 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8638 */;
 import debounce from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_3 = debounce((arg0, arg1) => {
 }, GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);
 let result = size.fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
 
-export const queryGamesAutocomplete = function queryGamesAutocomplete(query, DEFAULT, CHAT_MENTION) {
+export function queryGamesAutocomplete(query, DEFAULT, CHAT_MENTION) {
   let gameSearchSession = null;
   if (null != CHAT_MENTION) {
     const obj = GameSearchSession;
@@ -54,4 +54,4 @@ export const queryGamesAutocomplete = function queryGamesAutocomplete(query, DEF
     }
     return found;
   }
-};
+}

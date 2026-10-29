@@ -1,15 +1,15 @@
-// Module ID: 4923
-// Function ID: 4924
+// Module ID: 4924
+// Function ID: 4925
 // Name: CommunicationDisabledUtils
 // Dependencies: [2]
 // Exports: isCommunicationDisabled, isMemberCommunicationDisabled
 
-// Module 4923 (CommunicationDisabledUtils)
+// Module 4924 (CommunicationDisabledUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledUtils.tsx");
 
-export const isCommunicationDisabled = function isCommunicationDisabled(communicationDisabledUserMap) {
+export function isCommunicationDisabled(communicationDisabledUserMap) {
   let tmp = null != communicationDisabledUserMap;
   if (tmp) {
     const _Date = Date;
@@ -23,8 +23,8 @@ export const isCommunicationDisabled = function isCommunicationDisabled(communic
     const date1 = new Date();
   }
   return tmp;
-};
-export const isMemberCommunicationDisabled = function isMemberCommunicationDisabled(member) {
+}
+export function isMemberCommunicationDisabled(member) {
   let prop;
   if (member != null) {
     prop = member.communicationDisabledUntil;
@@ -42,4 +42,4 @@ export const isMemberCommunicationDisabled = function isMemberCommunicationDisab
     const date1 = new Date();
   }
   return tmp2;
-};
+}

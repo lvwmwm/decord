@@ -1,10 +1,10 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11282
+// Function ID: 11283
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1084, 584, 1294, 7115, 7119, 2]
+// Dependencies: [5, 1084, 584, 1294, 7139, 7143, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 11228 (GuildIdentityActionCreators)
+// Module 11282 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -40,7 +40,7 @@ let obj = function _saveGuildIdentityChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ let obj = function _saveGuildIdentityChanges() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -207,32 +207,32 @@ let obj = function _saveGuildIdentityChanges() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/guild_identity/GuildIdentityActionCreators.tsx");
 
-export const saveGuildIdentityChanges = function saveGuildIdentityChanges() {
+export function saveGuildIdentityChanges() {
   return obj(...arguments);
-};
-export const setCurrentGuild = function setCurrentGuild(id) {
+}
+export function setCurrentGuild(id) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_SET_GUILD", guildId: id };
   obj.dispatch(obj2);
-};
-export const initGuildIdentitySettings = function initGuildIdentitySettings(id) {
+}
+export function initGuildIdentitySettings(id) {
   obj = DispatcherDefault;
   const obj2 = { type: "USER_PROFILE_SETTINGS_INIT", guildId: id };
   obj.dispatch(obj2);
-};
-export const resetPendingMemberChanges = function resetPendingMemberChanges() {
+}
+export function resetPendingMemberChanges() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES" });
-};
-export const resetPendingProfileChanges = function resetPendingProfileChanges() {
+}
+export function resetPendingProfileChanges() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_PROFILE_CHANGES" });
-};
-export const resetAllPending = function resetAllPending() {
+}
+export function resetAllPending() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_RESET_PENDING_CHANGES" });
-};
-export const clearErrors = function clearErrors() {
+}
+export function clearErrors() {
   obj = DispatcherDefault;
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_CLEAR_ERRORS" });
-};
+}

@@ -1,84 +1,231 @@
 // Module ID: 12688
 // Function ID: 12689
-// Dependencies: [12637]
-// Exports: getDebugImagesForResources
+// Dependencies: []
 
 // Module 12688
-const require = globalThis.__r;
-let _require, obj;
+function noop() {
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_12637").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
-    }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
-  }
 }
 
-export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
-    }
-    return items;
+export default function(type, enter, arg2) {
+  let obj;
+  let obj2;
+  let obj3;
+  let obj4;
+  let tmp4;
+  let tmp5;
+  let closure_0 = arg2;
+  enter = noop;
+  let leave = noop;
+  if (typeof enter === "function") {
+    obj = tmp;
+    obj2 = enter;
+    obj3 = tmp;
+    obj4 = enter;
+    tmp4 = tmp;
+    tmp5 = enter;
   } else {
-    return items;
+    obj = tmp;
+    obj2 = tmp;
+    obj3 = tmp;
+    obj4 = tmp;
+    tmp4 = tmp;
+    tmp5 = tmp;
+    if (enter) {
+      enter = enter.enter;
+      let tmp2 = tmp;
+      if (typeof enter === "function") {
+        tmp2 = enter;
+      }
+      enter = tmp2;
+      leave = enter.leave;
+      let tmp3 = tmp;
+      if (typeof leave === "function") {
+        tmp3 = leave;
+      }
+      leave = tmp3;
+      obj = tmp3;
+      obj2 = tmp2;
+      obj3 = tmp3;
+      obj4 = tmp2;
+      tmp4 = tmp3;
+      tmp5 = tmp2;
+    }
+  }
+  if (tmp5 === noop) {
+    if (tmp4 === noop) {
+      const _Error3 = Error;
+      const self5 = this;
+      const self6 = this;
+      let error = new Error("Neither `enter` nor `leave` walker handler is set or both aren't a function");
+      throw error;
+    }
+  }
+  function walk(term) {
+    enter.call(closure_0, term);
+    switch (term.type) {
+      case "Group":
+      {
+        const terms = term.terms;
+        const item = terms.forEach(walk);
+        leave.call(closure_0, term);
+        break;
+      }
+      case "Multiplier":
+      {
+        walk(term.term);
+        break;
+      }
+      case "Type":
+      {
+        break;
+      }
+      case "Property":
+      {
+        break;
+      }
+      case "Keyword":
+      {
+        break;
+      }
+      case "AtKeyword":
+      {
+        break;
+      }
+      case "Function":
+      {
+        break;
+      }
+      case "String":
+      {
+        break;
+      }
+      case "Token":
+      {
+        break;
+      }
+      case "Comma":
+      {
+        break;
+      }
+      default:
+      {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Unknown type: " + term.type);
+        throw error;
+      }
+    }
+  }
+  obj4.call(arg2, type);
+  switch (type.type) {
+    case "Group":
+    {
+      let terms = type.terms;
+      let item = terms.forEach(walk);
+      obj3.call(arg2, type);
+      break;
+    }
+    case "Multiplier":
+    {
+      const term = type.term;
+      obj2.call(arg2, term);
+      switch (term.type) {
+        case "Group":
+        {
+          const terms1 = term.terms;
+          const item1 = terms1.forEach(walk);
+          obj.call(arg2, term);
+          break;
+        }
+        case "Multiplier":
+        {
+          walk(term.term);
+          break;
+        }
+        case "Type":
+        {
+          break;
+        }
+        case "Property":
+        {
+          break;
+        }
+        case "Keyword":
+        {
+          break;
+        }
+        case "AtKeyword":
+        {
+          break;
+        }
+        case "Function":
+        {
+          break;
+        }
+        case "String":
+        {
+          break;
+        }
+        case "Token":
+        {
+          break;
+        }
+        case "Comma":
+        {
+          break;
+        }
+        default:
+        {
+          let _Error = Error;
+          let self = this;
+          let self2 = this;
+          const error1 = new Error("Unknown type: " + term.type);
+          throw error1;
+        }
+      }
+      break;
+    }
+    case "Type":
+    {
+      break;
+    }
+    case "Property":
+    {
+      break;
+    }
+    case "Keyword":
+    {
+      break;
+    }
+    case "AtKeyword":
+    {
+      break;
+    }
+    case "Function":
+    {
+      break;
+    }
+    case "String":
+    {
+      break;
+    }
+    case "Token":
+    {
+      break;
+    }
+    case "Comma":
+    {
+      break;
+    }
+    default:
+    {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error2 = new Error("Unknown type: " + type.type);
+      throw error2;
+    }
   }
 };
-export { getFilenameToDebugIdMap };

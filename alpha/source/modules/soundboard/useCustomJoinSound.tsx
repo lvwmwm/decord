@@ -1,11 +1,11 @@
-// Module ID: 7518
-// Function ID: 7519
+// Module ID: 7541
+// Function ID: 7542
 // Name: useCustomJoinSound
-// Dependencies: [1243, 6044, 558, 576, 504, 2]
+// Dependencies: [1243, 6048, 558, 576, 504, 2]
 // Exports: getCustomJoinSound
 
-// Module 7518 (useCustomJoinSound)
-import SoundboardConstants from "SoundboardConstants" /* 6044 */;
+// Module 7541 (useCustomJoinSound)
+import SoundboardConstants from "SoundboardConstants" /* 6048 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -120,7 +120,7 @@ const result = size.fileFinishedImporting("modules/soundboard/useCustomJoinSound
 
 export { CustomSoundType };
 export const useCustomJoinSound = tmp2;
-export const getCustomJoinSound = function getCustomJoinSound(arg0) {
+export function getCustomJoinSound(arg0) {
   let GLOBAL;
   let joinSound;
   const guilds = UserSettingsProtoStore.settings.guilds;
@@ -154,4 +154,4 @@ export const getCustomJoinSound = function getCustomJoinSound(arg0) {
     tmp5 = obj2;
   }
   return tmp5;
-};
+}

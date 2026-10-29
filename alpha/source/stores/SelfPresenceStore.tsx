@@ -1,23 +1,23 @@
-// Module ID: 6533
-// Function ID: 6534
+// Module ID: 6557
+// Function ID: 6558
 // Name: SelfPresenceStore
-// Dependencies: [6534, 1243, 2036, 6668, 2040, 11233, 5748, 5752, 1084, 7543, 4832, 10686, 1354, 12, 504, 584, 2]
+// Dependencies: [6558, 1243, 2037, 6692, 2041, 11287, 5750, 5754, 1084, 7566, 4833, 10719, 1354, 12, 504, 584, 2]
 
-// Module 6533 (SelfPresenceStore)
+// Module 6557 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1354 from "module_1354" /* 1354 */;
-import UserSettings from "UserSettings" /* 4832 */;
-import PresenceStore2 from "PresenceStore" /* 5748 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7543 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10686 */;
-import SpotifyStore from "SpotifyStore" /* 6534 */;
+import UserSettings from "UserSettings" /* 4833 */;
+import PresenceStore2 from "PresenceStore" /* 5750 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7566 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10719 */;
+import SpotifyStore from "SpotifyStore" /* 6558 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import DetectableGameStore from "DetectableGameStore" /* 2036 */;
-import IdleStore from "IdleStore" /* 6668 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2040 */;
-import LocalActivityStore from "LocalActivityStore" /* 11233 */;
-import SessionsStore from "SessionsStore" /* 5752 */;
+import DetectableGameStore from "DetectableGameStore" /* 2037 */;
+import IdleStore from "IdleStore" /* 6692 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2041 */;
+import LocalActivityStore from "LocalActivityStore" /* 11287 */;
+import SessionsStore from "SessionsStore" /* 5754 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -230,13 +230,13 @@ class SelfPresenceStore extends Store {
     }
     return this.findActivity((application_id) => application_id.application_id === closure_0, flag);
   }
-  findActivity(cResult) {
+  findActivity(arg0) {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = true;
     }
     activities = this.getActivities(flag);
-    return activities.find(cResult);
+    return activities.find(arg0);
   }
 }
 const prototype = SelfPresenceStore.prototype;

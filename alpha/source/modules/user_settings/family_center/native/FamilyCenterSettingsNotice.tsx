@@ -1,15 +1,15 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16610
+// Function ID: 16611
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7453, 21, 558, 576, 8157, 10492, 7725, 5698, 1125, 2535, 16242, 2]
+// Dependencies: [19, 7476, 21, 558, 576, 8180, 10525, 7748, 5700, 1125, 2536, 16480, 2]
 
-// Module 16372 (FamilyCenterSettingsNotice)
+// Module 16610 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2535 from "module_2535" /* 2535 */;
-import Constants from "Constants" /* 7453 */;
-import LayerActionCreators from "LayerActionCreators" /* 7725 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10492 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16242 */;
+import _modDef2536 from "module_2536" /* 2536 */;
+import Constants from "Constants" /* 7476 */;
+import LayerActionCreators from "LayerActionCreators" /* 7748 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 10525 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16480 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp = dependencyMap;
   let obj = activeLinkUserIds(576);
   const cResult = obj.c(5);
-  const obj2 = activeLinkUserIds(8157);
+  const obj2 = activeLinkUserIds(8180);
   activeLinkUserIds = obj2.useActiveLinkUserIds();
   if (cResult[0] !== activeLinkUserIds) {
     function handleMessageParentClick() {
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         activeLinkUserIds(dependencyMap[8]);
         const intl = activeLinkUserIds(dependencyMap[9]).intl;
         const obj = { count: length.length };
-        return presentFailedToast(intl.formatToPlainString(_modDef2535.D1BwNC, obj));
+        return presentFailedToast(intl.formatToPlainString(_modDef2536.D1BwNC, obj));
       });
     }
     cResult[0] = activeLinkUserIds;
@@ -50,17 +50,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     return tmp4;
   }
   SafetySettingsNoticeDefault;
-  const tmp6 = <tmp5 label={_modDef2535.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={tmp3} count={activeLinkUserIds.length} />;
+  const tmp6 = <tmp5 label={_modDef2536.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={tmp3} count={activeLinkUserIds.length} />;
   cResult[2] = tmp3;
   cResult[3] = activeLinkUserIds.length;
   cResult[4] = tmp6;
   tmp4 = tmp6;
 }) : (function FamilyCenterSettingsParentalControlsNotice() {
   let activeLinkUserIds;
-  let obj = activeLinkUserIds(8157);
+  let obj = activeLinkUserIds(8180);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   let tmp = SafetySettingsNoticeDefault;
-  return <tmp label={_modDef2535.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
+  return <tmp label={_modDef2536.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
     let length;
     const tmp = openLinkedUsersChannelDefault;
     tmp(activeLinkUserIds, LayerActionCreators.popLayer, () => {
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
       activeLinkUserIds(dependencyMap[8]);
       const intl = activeLinkUserIds(dependencyMap[9]).intl;
       const obj = { count: length.length };
-      return presentFailedToast(intl.formatToPlainString(_modDef2535.D1BwNC, obj));
+      return presentFailedToast(intl.formatToPlainString(_modDef2536.D1BwNC, obj));
     });
   }} count={activeLinkUserIds.length} />;
 });

@@ -1,22 +1,22 @@
-// Module ID: 8480
-// Function ID: 8481
+// Module ID: 8502
+// Function ID: 8503
 // Name: GiftIntentEmbed
-// Dependencies: [8481, 1389, 1391, 5004, 587, 1125, 8484, 5058, 8309, 5703, 8485, 8486, 2]
+// Dependencies: [8503, 1389, 1391, 5005, 587, 1125, 8506, 5059, 8331, 5705, 8507, 8508, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8480 (GiftIntentEmbed)
+// Module 8502 (GiftIntentEmbed)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1125 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import UserUtilsDefault from "UserUtils" /* 5058 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5703 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8309 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8484 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8485 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8486 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8481 */;
+import UserUtilsDefault from "UserUtils" /* 5059 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5705 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8331 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8506 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8507 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8508 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8503 */;
 import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;
@@ -24,7 +24,7 @@ let obj = { headerTextColor: nativeDefault.colors.TEXT_STRONG, subHeaderTextColo
 let closure_6 = createStyles.createNativeStyleProperties(obj);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
 
-export const createGiftIntentEmbed = function createGiftIntentEmbed(message, theme) {
+export function createGiftIntentEmbed(message, theme) {
   let giftIntentType;
   let intl;
   let intl2;
@@ -89,4 +89,4 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
       }
     }
   }
-};
+}

@@ -1,13 +1,13 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14675
+// Function ID: 14676
 // Name: generateDynamicLink
-// Dependencies: [109, 32, 1364, 1278, 14442, 2]
+// Dependencies: [109, 32, 1364, 1278, 14676, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 14441 (generateDynamicLink)
+// Module 14675 (generateDynamicLink)
 import v1 from "v1" /* 1278 */;
 import _modDef1364 from "module_1364" /* 1364 */;
-import getDescriptionDefault from "getDescription" /* 14442 */;
+import getDescriptionDefault from "getDescription" /* 14676 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -89,11 +89,11 @@ export default function generateDynamicLink(arg0, arg1) {
   }
   return sum1;
 };
-export const generateAttemptId = function generateAttemptId() {
+export function generateAttemptId() {
   const obj = v1;
   return obj.v4();
-};
-export const parseDynamicLink = function parseDynamicLink(str) {
+}
+export function parseDynamicLink(str) {
   if (str.startsWith(c6)) {
     try {
       const _URL = URL;
@@ -129,4 +129,4 @@ export const parseDynamicLink = function parseDynamicLink(str) {
   } else {
     return null;
   }
-};
+}

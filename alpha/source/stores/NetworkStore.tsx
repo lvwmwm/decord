@@ -1,12 +1,12 @@
-// Module ID: 5926
-// Function ID: 5927
+// Module ID: 5928
+// Function ID: 5929
 // Name: NetworkStore
-// Dependencies: [1084, 504, 1480, 584, 2]
+// Dependencies: [1084, 504, 1481, 584, 2]
 
-// Module 5926 (NetworkStore)
+// Module 5928 (NetworkStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 

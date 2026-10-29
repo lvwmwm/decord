@@ -1,10 +1,10 @@
-// Module ID: 7617
-// Function ID: 7618
+// Module ID: 7640
+// Function ID: 7641
 // Name: requestSafeIdleCallback
 // Dependencies: [1373, 2]
 // Exports: requestSafeIdleCallback, setOriginWindow
 
-// Module 7617 (requestSafeIdleCallback)
+// Module 7640 (requestSafeIdleCallback)
 import GlobalUtils from "utils/GlobalUtils" /* 1373 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/design/
 export function setOriginWindow(arg0) {
   closure_0 = arg0;
 }
-export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, timeout) {
+export function requestSafeIdleCallback(arg0, timeout) {
   closure_0 = arg0;
   let obj = closure_0;
   let closure_1 = closure_0;
@@ -75,4 +75,4 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
   return () => {
     closure_1.clearTimeout(closure_5);
   };
-};
+}

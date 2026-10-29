@@ -1,14 +1,14 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15500
+// Function ID: 15501
 // Name: ContentInventoryExperiments
-// Dependencies: [5227, 1452, 5224, 8879, 2]
+// Dependencies: [5228, 1453, 5225, 8882, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping
 
-// Module 15265 (ContentInventoryExperiments)
-import ExperimentConstants from "ExperimentConstants" /* 5227 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8879 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
-import createExperiment from "module_5224" /* 5224 */;
+// Module 15500 (ContentInventoryExperiments)
+import ExperimentConstants from "ExperimentConstants" /* 5228 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8882 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
+import createExperiment from "module_5225" /* 5225 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/content_inventory/ContentInve
 
 export const MemberlistRankerExperiment = apexExperiment;
 export const HotwheelsActivityFeedNvidiaExperiment = experiment;
-export const isEligibleForContentInventoryV1 = function isEligibleForContentInventoryV1(ContentInventoryManager) {
+export function isEligibleForContentInventoryV1(ContentInventoryManager) {
   const obj = { location: ContentInventoryManager };
   let enabled = apexExperiment.getConfig(obj).enabled;
   const obj2 = ICYMIExperiment;
@@ -30,10 +30,10 @@ export const isEligibleForContentInventoryV1 = function isEligibleForContentInve
     enabled = obj2.getICYMIEnabled(ContentInventoryManager);
   }
   return enabled;
-};
-export const isEligibleForImpressionCapping = function isEligibleForImpressionCapping(location) {
+}
+export function isEligibleForImpressionCapping(location) {
   const obj = { location };
   const config = apexExperiment.getConfig(obj);
   const enabled = config.enabled && true === tmp2;
   return enabled;
-};
+}

@@ -1,12 +1,12 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 16198
+// Function ID: 16199
 // Name: DeclarativeNotificationSettingsRedesignExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 15962 (DeclarativeNotificationSettingsRedesignExperiment)
+// Module 16198 (DeclarativeNotificationSettingsRedesignExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDeclara
 });
 const result = size.fileFinishedImporting("modules/notifications/DeclarativeNotificationSettingsRedesignExperiment.tsx");
 
-export const isDeclarativeNotificationSettingsRedesignEnabled = function isDeclarativeNotificationSettingsRedesignEnabled(getAssignedNotifSettingsAndMappings) {
+export function isDeclarativeNotificationSettingsRedesignEnabled(getAssignedNotifSettingsAndMappings) {
   const obj = { location: getAssignedNotifSettingsAndMappings };
   return closure_2.getConfig(obj).enabled;
-};
+}
 export const useIsDeclarativeNotificationSettingsRedesignEnabled = tmp2;

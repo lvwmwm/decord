@@ -1,12 +1,12 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8776
+// Function ID: 8777
 // Name: VisualEffectViewThemed
-// Dependencies: [109, 19, 21, 558, 576, 5241, 5011, 5622, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5242, 5012, 5623, 2]
 
-// Module 8773 (VisualEffectViewThemed)
+// Module 8776 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 5241 */;
+import useThemeDefault from "useTheme" /* 5242 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,8 +14,8 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp9;
-const shared = tmp(5011);
-const VisualEffectViewDefault = tmp9(5622);
+const shared = tmp(5012);
+const VisualEffectViewDefault = tmp9(5623);
 let closure_3 = ["ref"];
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualEffectViewThemed(ref) {

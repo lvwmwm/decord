@@ -1,18 +1,18 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18848
+// Function ID: 18849
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1084, 21, 5004, 587, 1125, 558, 576, 5699, 5743, 6707, 13585, 1264, 18615, 1199, 14798, 6944, 16483, 8985, 1630, 18620, 18622, 13584, 18625, 1381, 5270, 7256, 2]
+// Dependencies: [19, 17, 1084, 21, 5005, 587, 1125, 558, 576, 5701, 5745, 6731, 13818, 1264, 18849, 1199, 15033, 6968, 16721, 8988, 1631, 18854, 18856, 13817, 18859, 1381, 5271, 7280, 2]
 
-// Module 18614 (MessageRequestList)
+// Module 18848 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6707 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -804,20 +804,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   let tmp = closure_9();
   const tmp3 = dependencyMap;
   let tmp2 = data;
-  const bottom = data(1630)().bottom;
-  data = data(18620)();
-  let obj = goToMessageRequestPreview(18622);
+  const bottom = data(1631)().bottom;
+  data = data(18854)();
+  let obj = goToMessageRequestPreview(18856);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13584);
+  const obj2 = goToMessageRequestPreview(13817);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1125).t.SXrqTf) };
-    const tmp2Result = tmp2(18625);
+    const tmp2Result = tmp2(18859);
     intl2 = tmp4(1125).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {
     const items = [tmp.list, ];
-    const FlashList = tmp4(7256).FlashList;
+    const FlashList = tmp4(7280).FlashList;
     let num = 0;
     const tmp4Result = goToMessageRequestPreview(1381);
     if (tmp4Result.isAndroid()) {
@@ -860,7 +860,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
     obj8 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(1125).t.evH4Yb, obj9) };
-    Text = tmp4(5270).Text;
+    Text = tmp4(5271).Text;
     intl = tmp4(1125).intl;
     obj9 = { pendingRequestNumber: data.length };
     tmp9Result = tmp9(FlashList, obj4);

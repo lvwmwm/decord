@@ -1,12 +1,12 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12400
+// Function ID: 12401
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3863, 1125, 2]
+// Dependencies: [32, 3864, 1125, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12346 (ConjureTimelineTree)
+// Module 12400 (ConjureTimelineTree)
 import intl2 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
+import _modDef3864 from "module_3864" /* 3864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -593,12 +593,12 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3863.iwOTgo, preview_ready: _modDef3863.okkgSB, working: _modDef3863.t8skVB, error: _modDef3863.avt0ax, error_service_unavailable: _modDef3863.yreXyD, error_rate_limited: _modDef3863.d8lNBq, error_timeout: _modDef3863.t1R7Rt };
+let obj = { healthcheck_failed: _modDef3864.iwOTgo, preview_ready: _modDef3864.okkgSB, working: _modDef3864.t8skVB, error: _modDef3864.avt0ax, error_service_unavailable: _modDef3864.yreXyD, error_rate_limited: _modDef3864.d8lNBq, error_timeout: _modDef3864.t1R7Rt };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
 
-export const describeNode = function describeNode(currentStepResult) {
+export function describeNode(currentStepResult) {
   if (null != currentStepResult.labelText) {
     if ("" !== currentStepResult.labelText) {
       return currentStepResult.labelText;
@@ -611,12 +611,12 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3863.t8skVB;
+    t8skVB = _modDef3864.t8skVB;
   }
   return string(t8skVB);
-};
+}
 export { buildTimelineTree };
-export const currentStep = function currentStep(productId) {
+export function currentStep(productId) {
   let tmp;
   const iter = productId[Symbol.iterator]();
   const nextResult = iter.next();
@@ -631,13 +631,13 @@ export const currentStep = function currentStep(productId) {
     continue;
   }
   return tmp;
-};
-export const streamedContent = function streamedContent(steps) {
+}
+export function streamedContent(steps) {
   return scanTurnColumn(steps).items;
-};
+}
 export { segmentDurations };
 export { sharedTimelineTree };
-export const turnSegments = function turnSegments(steps, arg1) {
+export function turnSegments(steps, arg1) {
   let items4;
   let num2;
   function sharedScan(steps) {
@@ -750,8 +750,8 @@ export const turnSegments = function turnSegments(steps, arg1) {
     }
   }
   return items5;
-};
-export const turnLifecycle = function turnLifecycle(arr, turnActive) {
+}
+export function turnLifecycle(arr, turnActive) {
   let index;
   let obj2;
   let obj5;
@@ -790,8 +790,8 @@ export const turnLifecycle = function turnLifecycle(arr, turnActive) {
   }
   const merged1 = Object.assign(obj5);
   return obj3;
-};
-export const streamedMessages = function streamedMessages(arr) {
+}
+export function streamedMessages(arr) {
   let items = scanTurnColumn(arr).items;
   return items.flatMap((type) => {
     let items1;
@@ -805,8 +805,8 @@ export const streamedMessages = function streamedMessages(arr) {
     }
     return items1;
   });
-};
-export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
+}
+export function endsWithStreamedMessage(arg0) {
   let diff = arg0.length - 1;
   if (0 <= diff) {
     while (true) {
@@ -842,8 +842,8 @@ export const endsWithStreamedMessage = function endsWithStreamedMessage(arg0) {
     return true;
   }
   return false;
-};
-export const latestTodos = function latestTodos(steps) {
+}
+export function latestTodos(steps) {
   let tmp2;
   let diff = steps.length - 1;
   if (0 <= diff) {
@@ -867,4 +867,4 @@ export const latestTodos = function latestTodos(steps) {
     return tmp2.items;
   }
   return null;
-};
+}

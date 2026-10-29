@@ -18,10 +18,10 @@ let closure_5 = tmp4;
 
 export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg1) {
   let closure_0 = animatedShouldDebounceQueueFlush;
-  const f85248 = () => {
-    set.add(f85248);
+  const f86255 = () => {
+    set.add(f86255);
     let tmp5Result;
-    const tmp = f85248;
+    const tmp = f86255;
     const tmp3 = closure_2_2;
     if (closure_2_2 != null) {
       if (tmp3[tmp] != null) {
@@ -33,7 +33,7 @@ export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg
   let closure_1 = arg1;
   return () => {
     if (null == closure_2) {
-      let tmp2 = f85249();
+      let tmp2 = f86256();
       if (tmp2 == null) {
         tmp2 = closure_1;
       }
@@ -44,7 +44,7 @@ export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg
 }
 export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
   let closure_0 = cdpInteractionMetricsEnabled;
-  const f85249 = () => {
+  const f86256 = () => {
     let hasItem = cdpInteractionMetricsEnabled(dependencyMap[0]);
     const tmp2 = cdpInteractionMetricsEnabled;
     const tmp3 = dependencyMap;
@@ -55,15 +55,15 @@ export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
       hasItem = !closure_2_5;
     }
     if (!hasItem) {
-      set.add(f85249);
+      set.add(f86256);
       const _console = console;
       const _HermesInternal = HermesInternal;
-      console.error("Could not access feature flag '" + f85249 + "' because native module method was not available");
+      console.error("Could not access feature flag '" + f86256 + "' because native module method was not available");
     }
     const tmp2Result = tmp2(tmp3[0]);
     let tmp13Result;
     if (tmp2Result != null) {
-      if (tmp2Result[f85249] != null) {
+      if (tmp2Result[f86256] != null) {
         tmp13Result = tmp13();
       }
     }
@@ -72,7 +72,7 @@ export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
   let closure_1 = arg1;
   return () => {
     if (null == closure_2) {
-      let tmp2 = f85249();
+      let tmp2 = f86256();
       if (tmp2 == null) {
         tmp2 = closure_1;
       }
@@ -84,7 +84,7 @@ export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
 export function getOverrides() {
   return React2;
 }
-export const setOverrides = function setOverrides(arg0) {
+export function setOverrides(arg0) {
   if (null != React2) {
     const _Error2 = Error;
     const self3 = this;
@@ -103,7 +103,7 @@ export const setOverrides = function setOverrides(arg0) {
   } else {
     React2 = arg0;
   }
-};
+}
 export function dangerouslyResetForTesting() {
 
 }

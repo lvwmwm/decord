@@ -1,17 +1,17 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18477
+// Function ID: 18478
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 18179, 587, 558, 576, 1125, 5270, 2]
+// Dependencies: [19, 17, 21, 18413, 587, 558, 576, 1125, 5271, 2]
 
-// Module 18243 (ICYMIHeader)
+// Module 18477 (ICYMIHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5270 */;
+import Text_Text from "Text/Text" /* 5271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18179 */;
+import createICYMIStyles from "createICYMIStyles" /* 18413 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

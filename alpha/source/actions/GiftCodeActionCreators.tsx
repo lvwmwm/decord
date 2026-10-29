@@ -1,20 +1,20 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11129
+// Function ID: 11130
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2042, 7685, 7693, 1084, 1391, 584, 6407, 6845, 7684, 6409, 4828, 1254, 1294, 11076, 11077, 2]
+// Dependencies: [5, 2043, 7708, 7716, 1084, 1391, 584, 6431, 6868, 7707, 6433, 4829, 1254, 1294, 11130, 11131, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11075 (GiftCodeActionCreators)
+// Module 11129 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1254 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4828 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7693 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11076 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11077 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4829 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7716 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11130 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11131 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7685 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -263,7 +263,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -314,7 +314,7 @@ obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp20) {
           closure_2 = tmp20;
@@ -379,7 +379,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -428,7 +428,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;
@@ -453,6 +453,6 @@ const result = size.fileFinishedImporting("actions/GiftCodeActionCreators.tsx");
 export default obj;
 export { resolveGiftCode };
 export { reportUnexpectedGiftCodeError };
-export const deliverGiftCodes = function deliverGiftCodes() {
+export function deliverGiftCodes() {
   return obj(...arguments);
-};
+}

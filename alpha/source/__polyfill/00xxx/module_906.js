@@ -11,7 +11,7 @@ let _require, c5, c6, closure_2, closure_3, headers;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const makeFetchTransport = function makeFetchTransport(bufferSize) {
+export function makeFetchTransport(bufferSize) {
   _require = bufferSize;
   let nativeImplementation = arg1;
   if (arg1 === undefined) {
@@ -35,7 +35,7 @@ export const makeFetchTransport = function makeFetchTransport(bufferSize) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c4;
@@ -131,4 +131,4 @@ export const makeFetchTransport = function makeFetchTransport(bufferSize) {
     return obj(...arguments);
   }
   return createTransport(bufferSize, makeRequest, makePromiseBuffer(num));
-};
+}

@@ -1,19 +1,19 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 16208
+// Function ID: 16209
 // Name: validateEmbeddedAppFrame
-// Dependencies: [15973, 1084, 9289, 5662, 10765, 11520, 2028, 9296, 9290, 2]
+// Dependencies: [16209, 1084, 9293, 5664, 10840, 11574, 2029, 9300, 9294, 2]
 // Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
-// Module 15972 (validateEmbeddedAppFrame)
+// Module 16208 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1084 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2028 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5662 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9289 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9290 */;
-import RPCErrorDefault from "RPCError" /* 9296 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10765 */;
-import RPCHelpers from "RPCHelpers" /* 11520 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15973 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9293 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9294 */;
+import RPCErrorDefault from "RPCError" /* 9300 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10840 */;
+import RPCHelpers from "RPCHelpers" /* 11574 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16209 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(socket) {
@@ -105,10 +105,10 @@ const RPCErrors = Constants.RPCErrors;
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");
 
 export default validateEmbeddedAppFrame;
-export const validateEmbeddedAppFrameOnAnySurface = function validateEmbeddedAppFrameOnAnySurface(arg0) {
+export function validateEmbeddedAppFrameOnAnySurface(arg0) {
   return validateFrame(arg0, true);
-};
-export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(socket) {
+}
+export function tryValidateEmbeddedAppFrame(socket) {
   try {
     return validateEmbeddedAppFrame(socket);
   } catch (tmp3) {
@@ -118,4 +118,4 @@ export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(
       throw tmp3;
     }
   }
-};
+}

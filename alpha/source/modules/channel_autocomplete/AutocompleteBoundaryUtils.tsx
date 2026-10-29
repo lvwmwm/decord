@@ -1,12 +1,12 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 7813
+// Function ID: 7814
 // Name: AutocompleteBoundaryUtils
-// Dependencies: [6020, 1084, 2]
+// Dependencies: [6024, 1084, 2]
 // Exports: boundAutocompleteWord
 
-// Module 7791 (AutocompleteBoundaryUtils)
+// Module 7813 (AutocompleteBoundaryUtils)
 import Constants from "Constants" /* 1084 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6020 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_SENTINEL;
@@ -52,9 +52,9 @@ export const AUTOCOMPLETE_BOUNDARY_CHARACTERS = items1;
 export const AUTOCOMPLETE_BOUNDARY_CHARACTERS_SET = set;
 export { isAutocompleteSeparatingBoundary };
 export { getAutocompleteToken };
-export const boundAutocompleteWord = function boundAutocompleteWord(c22, arr) {
+export function boundAutocompleteWord(c22, arr) {
   arr = getAutocompleteToken(c22);
   const diff = c22.length - arr.length;
   const obj = { word: arr, fullWord: arr.slice(diff), didTrimPrefix: diff > 0 };
   return obj;
-};
+}

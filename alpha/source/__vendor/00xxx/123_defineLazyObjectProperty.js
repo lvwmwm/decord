@@ -8,7 +8,7 @@
 import defineLazyObjectProperty from "defineLazyObjectProperty" /* 49 */;
 
 
-export const polyfillObjectProperty = function polyfillObjectProperty(_navigator, product, get) {
+export function polyfillObjectProperty(_navigator, product, get) {
   const ownPropertyDescriptor = Object.getOwnPropertyDescriptor(_navigator, product);
   const configurable = (ownPropertyDescriptor || {}).configurable;
   if (!ownPropertyDescriptor) {
@@ -19,8 +19,8 @@ export const polyfillObjectProperty = function polyfillObjectProperty(_navigator
     const _console = console;
     console.error(`Failed to set polyfill. ${product} is not configurable.`);
   }
-};
-export const polyfillGlobal = function polyfillGlobal(arg0, get) {
+}
+export function polyfillGlobal(arg0, get) {
   const ownPropertyDescriptor = Object.getOwnPropertyDescriptor(global, arg0);
   const configurable = (ownPropertyDescriptor || {}).configurable;
   const tmp = global;
@@ -32,4 +32,4 @@ export const polyfillGlobal = function polyfillGlobal(arg0, get) {
     const _console = console;
     console.error(`Failed to set polyfill. ${arg0} is not configurable.`);
   }
-};
+}

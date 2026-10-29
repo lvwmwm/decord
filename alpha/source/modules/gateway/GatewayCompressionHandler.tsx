@@ -1,15 +1,15 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15458
+// Function ID: 15459
 // Name: GatewayCompressionHandler
-// Dependencies: [15224, 15226, 3, 15225, 7346, 2]
+// Dependencies: [15459, 15461, 3, 15460, 7370, 2]
 // Exports: getCompressionHandler
 
-// Module 15223 (GatewayCompressionHandler)
+// Module 15458 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import ProcessArgs2 from "ProcessArgs" /* 7346 */;
-import react_native from "react-native" /* 15224 */;
-import react_native2 from "react-native" /* 15225 */;
-import _mod15226 from "module_15226" /* 15226 */;
+import ProcessArgs2 from "ProcessArgs" /* 7370 */;
+import react_native from "react-native" /* 15459 */;
+import react_native2 from "react-native" /* 15460 */;
+import _mod15461 from "module_15461" /* 15461 */;
 import size from "module_2" /* 2 */;
 
 const items = [];
@@ -103,7 +103,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod15226;
+    tmp2._pako = _mod15461;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -247,7 +247,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod15226;
+    applyArgumentsResult._pako = _mod15461;
     return applyArgumentsResult;
   }
   static canUse() {
@@ -377,7 +377,7 @@ const prototype6 = NullGatewayCompressionHandler.prototype;
 items.push(NullGatewayCompressionHandler);
 let result = size.fileFinishedImporting("modules/gateway/GatewayCompressionHandler.tsx");
 
-export const getCompressionHandler = function getCompressionHandler(arg0) {
+export function getCompressionHandler(arg0) {
   const ProcessArgs = ProcessArgs2.ProcessArgs;
   if (ProcessArgs.isDiscordGatewayPlaintextSet()) {
     const self4 = this;
@@ -395,4 +395,4 @@ export const getCompressionHandler = function getCompressionHandler(arg0) {
     const self3 = this;
     return new NullGatewayCompressionHandler(arg0);
   }
-};
+}

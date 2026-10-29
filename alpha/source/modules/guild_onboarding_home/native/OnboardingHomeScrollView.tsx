@@ -1,16 +1,16 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18534
+// Function ID: 18535
 // Name: OnboardingHomeScrollView
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 1630, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1631, 2]
 
-// Module 18300 (OnboardingHomeScrollView)
+// Module 18534 (OnboardingHomeScrollView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

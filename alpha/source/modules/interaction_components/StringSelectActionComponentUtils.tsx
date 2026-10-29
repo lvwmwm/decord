@@ -1,17 +1,17 @@
-// Module ID: 8639
-// Function ID: 8640
+// Module ID: 8661
+// Function ID: 8662
 // Name: StringSelectActionComponentUtils
-// Dependencies: [8633, 1997, 2]
+// Dependencies: [8655, 1998, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 8639 (StringSelectActionComponentUtils)
-import Server from "Server" /* 1997 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8633 */;
+// Module 8661 (StringSelectActionComponentUtils)
+import Server from "Server" /* 1998 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8655 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/StringSelectActionComponentUtils.tsx");
 
-export const getInitialStringSelectOptions = function getInitialStringSelectOptions(selectionActionComponent, containerId) {
+export function getInitialStringSelectOptions(selectionActionComponent, containerId) {
   let mapped;
   const interactionComponentState = LocalInteractionComponentStateStore.getInteractionComponentState(containerId, selectionActionComponent.id);
   let type;
@@ -26,4 +26,4 @@ export const getInitialStringSelectOptions = function getInitialStringSelectOpti
     mapped = found.map((value) => value.value);
   }
   return mapped;
-};
+}

@@ -1,26 +1,26 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 14151
+// Function ID: 14152
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 13895, 21, 5004, 587, 558, 576, 4870, 6919, 8985, 1125, 5270, 1630, 5280, 1199, 1502, 7521, 7182, 13909, 6409, 13904, 7256, 2]
+// Dependencies: [5, 32, 19, 17, 14128, 21, 5005, 587, 558, 576, 4871, 6943, 8988, 1125, 5271, 1631, 5281, 1199, 1503, 7544, 7206, 14142, 6433, 14137, 7280, 2]
 // Exports: default
 
-// Module 13918 (HubEmailConnectionGuildSelect)
+// Module 14151 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4870 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import components_Button_Button from "components/Button/Button" /* 5280 */;
-import GuildIconDefault from "GuildIcon" /* 6919 */;
-import Form from "Form" /* 8985 */;
-import HubConstants from "HubConstants" /* 13895 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import components_Button_Button from "components/Button/Button" /* 5281 */;
+import GuildIconDefault from "GuildIcon" /* 6943 */;
+import Form from "Form" /* 8988 */;
+import HubConstants from "HubConstants" /* 14128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -395,7 +395,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c3;
@@ -450,7 +450,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "IconComponent" };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

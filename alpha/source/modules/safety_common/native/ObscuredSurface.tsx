@@ -1,18 +1,18 @@
-// Module ID: 9329
-// Function ID: 9330
+// Module ID: 9333
+// Function ID: 9334
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 8589, 1125, 5270, 9330, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 8611, 1125, 5271, 9334, 2]
 
-// Module 9329 (ObscuredSurface)
+// Module 9333 (ObscuredSurface)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ImageWarningIcon2 from "ImageWarningIcon" /* 8589 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9330 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ImageWarningIcon2 from "ImageWarningIcon" /* 8611 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9334 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurf
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "lg", color: nativeDefault.colors.TEXT_DEFAULT };
-        const ImageWarningIcon = tmp(8589).ImageWarningIcon;
+        const ImageWarningIcon = tmp(8611).ImageWarningIcon;
         const tmp18 = React3(ImageWarningIcon, obj3);
         cResult[5] = tmp18;
         tmp15 = tmp18;
@@ -132,7 +132,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurf
             }
           }
           const obj6 = { value: ObscuredSurfaceContext.OBSCURED_VALUE, children: hasOwnProperty(View, obj7) };
-          const Provider = tmp(9330).ObscuredSurfaceContext.Provider;
+          const Provider = tmp(9334).ObscuredSurfaceContext.Provider;
           obj7 = { style: tmp4.container, children: items };
           items = [tmp6, tmp10, tmp31];
           const tmp39 = React3(Provider, obj6);
@@ -191,7 +191,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ObscuredSurf
     }
     const obj7 = { variant: "heading-md/semibold", color: "text-strong", children: heading };
     items1[1] = React3(Text, obj7);
-    const Text2 = tmp4(5270).Text;
+    const Text2 = tmp4(5271).Text;
     if (description == null) {
       const intl2 = tmp4(1125).intl;
       description = intl2.string(tmp4(1125).t["0fc/DG"]);

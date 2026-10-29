@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 const require = globalThis.__r;
 let _require, dependencyMap, setPropagationContext;
 
-const f87178 = (fn) => fn();
+const f88185 = (fn) => fn();
 function createChildOrRootSpan(arg0) {
   let forceTransaction;
   let parentSpan;
@@ -281,7 +281,7 @@ export const continueTrace = (arg0, arg1) => {
     });
   }
 };
-export const startInactiveSpan = function startInactiveSpan(experimental) {
+export function startInactiveSpan(experimental) {
   let forceTransaction;
   let obj4;
   let parentSpan;
@@ -378,8 +378,8 @@ export const startInactiveSpan = function startInactiveSpan(experimental) {
       sentryNonRecordingSpan = createChildOrRootSpan(obj2);
     });
   }
-};
-export const startNewTrace = function startNewTrace(arg0) {
+}
+export function startNewTrace(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("module_724");
@@ -417,8 +417,8 @@ export const startNewTrace = function startNewTrace(arg0) {
     }
     return withActiveSpanResult;
   });
-};
-export const startSpan = function startSpan(experimental, arg1) {
+}
+export function startSpan(experimental, arg1) {
   let closure_1;
   let scope;
   let tmpResult;
@@ -479,7 +479,7 @@ export const startSpan = function startSpan(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f87178(function() {
+      }) : f88185(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;
@@ -544,8 +544,8 @@ export const startSpan = function startSpan(experimental, arg1) {
       });
     });
   }
-};
-export const startSpanManual = function startSpanManual(experimental, arg1) {
+}
+export function startSpanManual(experimental, arg1) {
   let scope;
   let tmpResult;
   _require = experimental;
@@ -605,7 +605,7 @@ export const startSpanManual = function startSpanManual(experimental, arg1) {
           });
         }
         return withActiveSpanResult;
-      }) : f87178(function() {
+      }) : f88185(function() {
         let sentryNonRecordingSpan;
         let tmp = experimental;
         let tmp2 = closure_1_1;
@@ -668,8 +668,8 @@ export const startSpanManual = function startSpanManual(experimental, arg1) {
       });
     });
   }
-};
-export const suppressTracing = function suppressTracing(arg0) {
+}
+export function suppressTracing(arg0) {
   let closure_0;
   let suppressTracingResult;
   _require = arg0;
@@ -691,8 +691,8 @@ export const suppressTracing = function suppressTracing(arg0) {
     });
   }
   return suppressTracingResult;
-};
-export const withActiveSpan = function withActiveSpan(arg0, arg1) {
+}
+export function withActiveSpan(arg0, arg1) {
   let closure_0;
   let closure_1;
   let withActiveSpanResult;
@@ -715,4 +715,4 @@ export const withActiveSpan = function withActiveSpan(arg0, arg1) {
     });
   }
   return withActiveSpanResult;
-};
+}

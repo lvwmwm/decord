@@ -1,12 +1,12 @@
-// Module ID: 8761
-// Function ID: 8762
-// Dependencies: [1084, 558, 576, 5070, 2]
+// Module ID: 8764
+// Function ID: 8765
+// Dependencies: [1084, 558, 576, 5071, 2]
 // Exports: getIllustrationSource
 
-// Module 8761
+// Module 8764
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import native from "native" /* 5070 */;
+import native from "native" /* 5071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIllustrat
 });
 const result = size.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
-export const getIllustrationSource = function getIllustrationSource(theme, light) {
+export function getIllustrationSource(theme, light) {
   let lightResult;
   if (theme === ThemeTypes.LIGHT) {
     light = light.light;
@@ -57,5 +57,5 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
     lightResult = light.dark();
   }
   return lightResult;
-};
+}
 export const useIllustrationSource = tmp2;

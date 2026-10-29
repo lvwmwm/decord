@@ -1,14 +1,14 @@
-// Module ID: 4928
-// Function ID: 4929
+// Module ID: 4929
+// Function ID: 4930
 // Name: CreatorMonetizationRestrictionsUtils
-// Dependencies: [4929, 4878, 4930, 1084, 2]
+// Dependencies: [4930, 4879, 4931, 1084, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4928 (CreatorMonetizationRestrictionsUtils)
+// Module 4929 (CreatorMonetizationRestrictionsUtils)
 import Constants from "Constants" /* 1084 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4929 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4930 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4930 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4931 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -18,11 +18,11 @@ const constants = CreatorMonetizationReviewConstants.CreatorMonetizationRestrict
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");
 
-export const isRestrictedFromShowingGuildPurchaseEntryPoints = function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
+export function isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions) {
   const hasItem = null != restrictions && restrictions.includes(constants.NEW_PURCHASES_DISABLED);
   return hasItem;
-};
-export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurchaseEntryPoints(guildId) {
+}
+export function shouldHideGuildPurchaseEntryPoints(guildId) {
   if (null == guildId) {
     return false;
   } else {
@@ -45,12 +45,12 @@ export const shouldHideGuildPurchaseEntryPoints = function shouldHideGuildPurcha
     }
     return flag;
   }
-};
-export const isRestrictedFromUpdatingCreatorMonetizationSettings = function isRestrictedFromUpdatingCreatorMonetizationSettings(restrictions) {
+}
+export function isRestrictedFromUpdatingCreatorMonetizationSettings(restrictions) {
   const hasItem = null != restrictions && restrictions.includes(constants.SETTINGS_READ_ONLY);
   return hasItem;
-};
-export const shouldRestrictUpdatingCreatorMonetizationSettings = function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
+}
+export function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
   if (null == id) {
     return false;
   } else {
@@ -73,8 +73,8 @@ export const shouldRestrictUpdatingCreatorMonetizationSettings = function should
     }
     return flag;
   }
-};
-export const isRestrictedFromMonetizationReapplication = function isRestrictedFromMonetizationReapplication(restrictions) {
+}
+export function isRestrictedFromMonetizationReapplication(restrictions) {
   const hasItem = null != restrictions && restrictions.includes(constants.REAPPLICATION_DISABLED);
   return hasItem;
-};
+}

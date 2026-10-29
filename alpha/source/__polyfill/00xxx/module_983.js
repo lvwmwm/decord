@@ -14,7 +14,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const WebWorker = "WebWorker";
 
 export const INTEGRATION_NAME = "WebWorker";
-export const registerWebWorker = function registerWebWorker(self) {
+export function registerWebWorker(self) {
   let _sentryModuleMetadata;
   const _self = self.self;
   const _sentryDebugIds = _self._sentryDebugIds;
@@ -44,9 +44,9 @@ export const registerWebWorker = function registerWebWorker(self) {
     let debug = tmp3(693).debug;
     debug.log("[Sentry Worker] Registered worker with unhandled rejection handling");
   }
-};
+}
 export const webWorkerIntegration = registerSpanErrorInstrumentation.defineIntegration((worker) => {
-  const f88086 = (event) => {
+  const f89093 = (event) => {
     let obj5;
     const data = event.data;
     let obj = closure_0(closure_1[0]);
@@ -183,11 +183,11 @@ export const webWorkerIntegration = registerSpanErrorInstrumentation.defineInteg
         arr = items;
       }
       const item = arr.forEach((addEventListener) => {
-        const listener = addEventListener.addEventListener("message", f88086);
+        const listener = addEventListener.addEventListener("message", f89093);
       });
     },
     addWorker(addEventListener) {
-      const listener = addEventListener.addEventListener("message", f88086);
+      const listener = addEventListener.addEventListener("message", f89093);
     }
   };
   return obj;

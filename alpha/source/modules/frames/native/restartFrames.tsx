@@ -1,14 +1,14 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10878
+// Function ID: 10879
 // Name: restartFrames
-// Dependencies: [6810, 6811, 10803, 10804, 2]
+// Dependencies: [6833, 6834, 10879, 10880, 2]
 // Exports: restartAppFrames
 
-// Module 10802 (restartFrames)
-import FramesConstants from "FramesConstants" /* 6811 */;
-import leaveFrame from "leaveFrame" /* 10803 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import FramesStore from "FramesStore" /* 6810 */;
+// Module 10878 (restartFrames)
+import FramesConstants from "FramesConstants" /* 6834 */;
+import leaveFrame from "leaveFrame" /* 10879 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10880 */;
+import FramesStore from "FramesStore" /* 6833 */;
 import size from "module_2" /* 2 */;
 
 function restartFrame(item10016) {
@@ -44,7 +44,7 @@ const isLaunched = FramesConstants.isLaunched;
 const result = size.fileFinishedImporting("modules/frames/native/restartFrames.tsx");
 
 export { restartFrame };
-export const restartAppFrames = function restartAppFrames(application_id) {
+export function restartAppFrames(application_id) {
   let closure_0 = application_id;
   if (null != application_id) {
     const items = [];
@@ -55,4 +55,4 @@ export const restartAppFrames = function restartAppFrames(application_id) {
       continue;
     }
   }
-};
+}

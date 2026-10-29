@@ -1,14 +1,14 @@
-// Module ID: 7980
-// Function ID: 7981
+// Module ID: 8003
+// Function ID: 8004
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [7957, 1452, 558, 576, 7932, 504, 2]
+// Dependencies: [7980, 1453, 558, 576, 7955, 504, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt
 
-// Module 7980 (ShowExpressiveModalSubtitleAltFlag)
+// Module 8003 (ShowExpressiveModalSubtitleAltFlag)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7932 */;
-import SafetyHubStore from "SafetyHubStore" /* 7957 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
+import SafetyHubStore from "SafetyHubStore" /* 7980 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
 const result = size.fileFinishedImporting("modules/age_assurance/ShowExpressiveModalSubtitleAltFlag.tsx");
 
 export const useShouldShowExpressiveModalSubtitleAlt = tmp2;
-export const shouldShowExpressiveModalSubtitleAlt = function shouldShowExpressiveModalSubtitleAlt(location) {
+export function shouldShowExpressiveModalSubtitleAlt(location) {
   let enabled;
   const obj = SafetyHubUtils;
   if (obj.isCurrentUserSuspended()) {
@@ -82,4 +82,4 @@ export const shouldShowExpressiveModalSubtitleAlt = function shouldShowExpressiv
     enabled = closure_3.getConfig(obj2).enabled;
   }
   return enabled;
-};
+}

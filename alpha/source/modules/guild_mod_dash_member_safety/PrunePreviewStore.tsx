@@ -1,10 +1,10 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18543
+// Function ID: 18544
 // Name: PrunePreviewStore
 // Dependencies: [32, 570, 558, 576, 2]
 // Exports: clearAllPrunePreviews, getPrunePreview, getPrunePreviewKey, setPrunePreview
 
-// Module 18309 (PrunePreviewStore)
+// Module 18543 (PrunePreviewStore)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -177,16 +177,16 @@ const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/
 export const CACHE_TTL_MS = 3600000;
 export { getPrunePreviewKey };
 export { usePrunePreviewStore };
-export const setPrunePreview = function setPrunePreview(arg0, arg1, arg2, arg3, arg4) {
+export function setPrunePreview(arg0, arg1, arg2, arg3, arg4) {
   const state = obj.getState();
   state.setPreview(arg0, arg1, arg2, arg3, arg4);
-};
-export const clearAllPrunePreviews = function clearAllPrunePreviews() {
+}
+export function clearAllPrunePreviews() {
   const state = obj.getState();
   state.clear();
-};
+}
 export const usePrunePreview = tmp3;
-export const getPrunePreview = function getPrunePreview(arg0, arg1, arg2) {
+export function getPrunePreview(arg0, arg1, arg2) {
   const items = [];
   const state = obj.getState();
   HermesBuiltin.arraySpread(items, arg2, 0);
@@ -201,4 +201,4 @@ export const getPrunePreview = function getPrunePreview(arg0, arg1, arg2) {
     }
   }
   return count;
-};
+}

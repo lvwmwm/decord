@@ -1,16 +1,16 @@
-// Module ID: 9547
-// Function ID: 9548
+// Module ID: 9579
+// Function ID: 9580
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 5004, 587, 558, 576, 5288, 5085, 5242, 1414, 8947, 5705, 5270, 9339, 2]
+// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5289, 5086, 5243, 1415, 8950, 5707, 5271, 9343, 2]
 
-// Module 9547 (GameProfileNavigationHeader)
+// Module 9579 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 587 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import timing from "timing" /* 5242 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import timing from "timing" /* 5243 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -211,7 +211,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
                   if (tmp47) {
                     const obj9 = { style: items2, children: headerRight() };
                     items2 = [tmp4.headerRight, animatedStyle];
-                    const View2 = tmp5(5085).View;
+                    const View2 = tmp5(5086).View;
                     tmp47 = closure_6(View2, obj9);
                   }
                   cResult[22] = headerRight;
@@ -244,16 +244,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           if (tmp37) {
             const obj11 = { style: tmp4.rankPillContainer, children: items4 };
             const obj12 = { rank: game.l30Rank, compact: true };
-            items4 = [closure_6(sharedValue(9339), obj12), ];
+            items4 = [closure_6(sharedValue(9343), obj12), ];
             const items5 = [StyleSheet.absoluteFill, animatedStyle1];
-            const obj13 = { style: null, children: closure_6(sharedValue(9339), obj14) };
+            const obj13 = { style: null, children: closure_6(sharedValue(9343), obj14) };
             class T {
               constructor() {
                 const obj = { opacity: 1 - sharedValue.get() };
                 return obj;
               }
             }
-            const View = tmp5(5085).View;
+            const View = tmp5(5086).View;
             obj14 = { rank: game.l30Rank };
             items4[1] = closure_6(View, obj13);
             tmp37 = closure_7(closure_4, obj11);
@@ -273,7 +273,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         if (tmp30) {
           const obj15 = { source: obj16, style: tmp4.icon };
           obj16 = { uri: tmp18 };
-          tmp30 = closure_6(tmp5(5705), obj15);
+          tmp30 = closure_6(tmp5(5707), obj15);
         }
         cResult[9] = tmp18;
         cResult[10] = tmp4.icon;
@@ -348,13 +348,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   let tmp = closure_9();
   const tmp2 = game;
   let tmp3 = dependencyMap;
-  let obj = game(5288);
+  let obj = game(5289);
   let tmp6 = null != headerRight;
   dependencyMap = tmp6;
   const token = obj.useToken(application(587).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
-  const useSharedValue = game(5085).useSharedValue;
-  game(5085);
+  const useSharedValue = game(5086).useSharedValue;
+  game(5086);
   if (tmp6) {
     num = 1;
   }
@@ -377,7 +377,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   fn.__closure = { headerRightProgress: sharedValue };
   fn.__workletHash = 7824413274607;
   fn.__initData = __initData3;
-  const tmp2Result = tmp2(5085);
+  const tmp2Result = tmp2(5086);
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
   const fn2 = function b() {
     const obj = { opacity: 1 - sharedValue.get() };
@@ -387,7 +387,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   fn2.__workletHash = 12417398077364;
   fn2.__initData = __initData4;
   const items1 = [game, application];
-  const tmp2Result2 = tmp2(5085);
+  const tmp2Result2 = tmp2(5086);
   const animatedStyle1 = tmp2Result2.useAnimatedStyle(fn2);
   const memo = sharedValue.useMemo(() => {
     let iconURL;
@@ -435,18 +435,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   if (null != name) {
     const obj2 = { style: tmp.headerContainer, children: items2 };
     const obj3 = { android_fallbackColor: token };
-    items2 = [closure_6(tmp2(8947).BackgroundBlurFill, obj3), ];
+    items2 = [closure_6(tmp2(8950).BackgroundBlurFill, obj3), ];
     let tmp18Result = null != memo;
     const obj4 = { style: tmp.headerRow, children: items3 };
     if (tmp18Result) {
       const obj5 = { source: obj6, style: tmp.icon };
       obj6 = { uri: memo };
-      tmp18Result = tmp18(tmp4(5705), obj5);
+      tmp18Result = tmp18(tmp4(5707), obj5);
     }
     items3 = [tmp18Result, , ];
     const obj7 = { style: tmp.titleContainer, children: items4 };
     const obj8 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items4 = [closure_6(tmp2(5270).Heading, obj8), ];
+    items4 = [closure_6(tmp2(5271).Heading, obj8), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -455,10 +455,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     if (tmp16Result) {
       const obj10 = { rank: game.l30Rank, compact: true };
       const obj9 = { style: tmp.rankPillContainer, children: items5 };
-      items5 = [closure_6(tmp4(9339), obj10), ];
-      const obj11 = { style: items6, children: closure_6(application(9339), obj12) };
+      items5 = [closure_6(tmp4(9343), obj10), ];
+      const obj11 = { style: items6, children: closure_6(application(9343), obj12) };
       items6 = [StyleSheet.absoluteFill, animatedStyle1];
-      const View = tmp4(5085).View;
+      const View = tmp4(5086).View;
       obj12 = { rank: game.l30Rank };
       items5[1] = closure_6(View, obj11);
       tmp16Result = tmp16(tmp17, obj9);
@@ -469,7 +469,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     if (tmp18Result2) {
       const obj13 = { style: items7, children: headerRight() };
       items7 = [tmp.headerRight, animatedStyle];
-      const View2 = tmp4(5085).View;
+      const View2 = tmp4(5086).View;
       tmp18Result2 = tmp18(View2, obj13);
     }
     items3[2] = tmp18Result2;

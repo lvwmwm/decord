@@ -1,14 +1,14 @@
-// Module ID: 7572
-// Function ID: 7573
+// Module ID: 7595
+// Function ID: 7596
 // Name: OrderRecord
-// Dependencies: [1404, 2058, 7573, 7574, 1095, 2]
+// Dependencies: [1404, 2059, 7596, 7597, 1095, 2]
 
-// Module 7572 (OrderRecord)
+// Module 7595 (OrderRecord)
 import Constants from "Constants" /* 1095 */;
-import InvoiceRecord from "InvoiceRecord" /* 2058 */;
+import InvoiceRecord from "InvoiceRecord" /* 2059 */;
 import Record from "Record" /* 1404 */;
-import CheckoutContextRecord from "CheckoutContextRecord" /* 7573 */;
-import SubscriptionFacetRecord from "SubscriptionFacetRecord" /* 7574 */;
+import CheckoutContextRecord from "CheckoutContextRecord" /* 7596 */;
+import SubscriptionFacetRecord from "SubscriptionFacetRecord" /* 7597 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet;

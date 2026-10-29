@@ -1,16 +1,16 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 12447
+// Function ID: 12448
 // Name: ConjureMessageTime
-// Dependencies: [4829, 2]
+// Dependencies: [4830, 2]
 // Exports: describeMessageTime
 
-// Module 12393 (ConjureMessageTime)
-import DateUtils from "DateUtils" /* 4829 */;
+// Module 12447 (ConjureMessageTime)
+import DateUtils from "DateUtils" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureMessageTime.tsx");
 
-export const describeMessageTime = function describeMessageTime(at) {
+export function describeMessageTime(at) {
   let isFiniteResult = null != at;
   if (isFiniteResult) {
     const _Number = Number;
@@ -30,4 +30,4 @@ export const describeMessageTime = function describeMessageTime(at) {
     calendarFormatResult = calendarFormat(date, true);
   }
   return calendarFormatResult;
-};
+}

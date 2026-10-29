@@ -1,13 +1,13 @@
-// Module ID: 11450
-// Function ID: 11451
+// Module ID: 11504
+// Function ID: 11505
 // Name: ApplicationSubscriptionsHttpApi
-// Dependencies: [5, 1084, 1294, 584, 6410, 2]
+// Dependencies: [5, 1084, 1294, 584, 6434, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 11450 (ApplicationSubscriptionsHttpApi)
+// Module 11504 (ApplicationSubscriptionsHttpApi)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1084 */;
-import APIErrorDefault from "APIError" /* 6410 */;
+import APIErrorDefault from "APIError" /* 6434 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -81,16 +81,16 @@ obj = function _fetchEligibleApplicationSubscriptionGuilds() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsHttpApi.tsx");
 
-export const getApplicationSubscriptionGroupListingsForApplication = function getApplicationSubscriptionGroupListingsForApplication() {
+export function getApplicationSubscriptionGroupListingsForApplication() {
   return obj(...arguments);
-};
-export const getEntitlementsForGuild = function getEntitlementsForGuild() {
+}
+export function getEntitlementsForGuild() {
   return obj(...arguments);
-};
-export const getSubscriptionGroupForSubscriptionPlan = function getSubscriptionGroupForSubscriptionPlan() {
+}
+export function getSubscriptionGroupForSubscriptionPlan() {
   return obj(...arguments);
-};
-export const fetchApplication = function fetchApplication(applicationId, signal) {
+}
+export function fetchApplication(applicationId, signal) {
   let obj4;
   _require = applicationId;
   obj = DispatcherDefault;
@@ -114,7 +114,7 @@ export const fetchApplication = function fetchApplication(applicationId, signal)
     const tmp2 = new APIErrorDefault(error);
     return reject(tmp2);
   });
-};
-export const fetchEligibleApplicationSubscriptionGuilds = function fetchEligibleApplicationSubscriptionGuilds() {
+}
+export function fetchEligibleApplicationSubscriptionGuilds() {
   return obj(...arguments);
-};
+}

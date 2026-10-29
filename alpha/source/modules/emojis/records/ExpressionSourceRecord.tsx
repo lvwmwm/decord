@@ -1,13 +1,13 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6944
+// Function ID: 6945
 // Name: ExpressionSourceRecord
-// Dependencies: [5, 1404, 1084, 1294, 1414, 4873, 4870, 2]
+// Dependencies: [5, 1404, 1084, 1294, 1415, 4874, 4871, 2]
 
-// Module 6920 (ExpressionSourceRecord)
+// Module 6944 (ExpressionSourceRecord)
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4870 */;
-import SetUtils from "SetUtils" /* 4873 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
+import SetUtils from "SetUtils" /* 4874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Record from "Record" /* 1404 */;
 import Constants from "Constants" /* 1084 */;
@@ -102,7 +102,7 @@ class ExpressionSourceGuildRecord extends Record {
     if (hasItem === undefined) {
       flag = false;
     }
-    obj = self(1414);
+    obj = self(1415);
     return obj.getAnimatableSourceWithFallback(flag, (canAnimate) => {
       obj = AvatarUtilsDefault;
       const obj2 = { id: self.id, size, icon: self.icon, canAnimate };

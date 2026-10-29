@@ -1,10 +1,10 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 18000
+// Function ID: 18001
 // Name: HappeningNowAnalytics
 // Dependencies: [32, 502, 11, 2]
 // Exports: getAffinityProperties
 
-// Module 17762 (HappeningNowAnalytics)
+// Module 18000 (HappeningNowAnalytics)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -75,7 +75,7 @@ function getItemChannelId(channelId) {
 }
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowAnalytics.tsx");
 
-export const getAffinityProperties = function getAffinityProperties(data) {
+export function getAffinityProperties(data) {
   let obj10;
   const id = AuthenticationStore.getId();
   const obj = SnowflakeUtilsDefault;
@@ -94,4 +94,4 @@ export const getAffinityProperties = function getAffinityProperties(data) {
     obj10 = {};
   }
   return obj10;
-};
+}

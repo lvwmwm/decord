@@ -1,16 +1,16 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7362
+// Function ID: 7363
 // Name: UserProfileRoleUtils
-// Dependencies: [4914, 2]
+// Dependencies: [4915, 2]
 // Exports: sortRolesByVerification
 
-// Module 7338 (UserProfileRoleUtils)
-import GuildRoleUtils from "GuildRoleUtils" /* 4914 */;
+// Module 7362 (UserProfileRoleUtils)
+import GuildRoleUtils from "GuildRoleUtils" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
 
-export const sortRolesByVerification = function sortRolesByVerification(tags, tags2) {
+export function sortRolesByVerification(tags, tags2) {
   let num;
   tags = tags.tags;
   let guild_connections;
@@ -35,4 +35,4 @@ export const sortRolesByVerification = function sortRolesByVerification(tags, ta
     num = 1;
   }
   return num;
-};
+}

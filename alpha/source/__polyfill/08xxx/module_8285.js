@@ -1,80 +1,62 @@
 // Module ID: 8285
 // Function ID: 8286
-// Dependencies: [32, 8246, 8263, 8286]
+// Dependencies: [8273]
 
 // Module 8285
-import _mod8246 from "module_8246" /* 8246 */;
-import _modDef8263 from "module_8263" /* 8263 */;
-import PathRecordTypesDefault from "PathRecordTypes" /* 8286 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _modDef8273 from "module_8273" /* 8273 */;
 
-let length;
-let metroImportDefault;
-function getTagName(dataView, sum1) {
-  let num;
-  let sum;
-  const obj = _mod8246;
-  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
-  const first = tmp[0];
-  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
-  num = 0;
-  sum = 1 + first;
-  if (first % 2 === 0) {
-    num = 1;
-  }
-  return obj2;
-}
-let obj = {
-  read(arg0, arg1) {
-    let tmp4Result2;
-    const getDataView = _mod8246.getDataView;
-    _mod8246;
-    const uint8Array = new Uint8Array(arg0);
-    const dataView = getDataView(uint8Array.buffer);
-    const obj = {};
-    let num = 0;
-    if (0 < arg0.length) {
-      const sum = num + metroImportDefault;
-      const obj2 = _mod8246;
-      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
-      const obj3 = _modDef8263;
-      const shortAt = obj3.getShortAt(dataView, sum);
-      const sum1 = sum + c5;
-      const tmp14 = getTagName(dataView, sum1);
-      let name = tmp14.tagName;
-      const sum2 = sum1 + tmp14.tagNameSize;
-      const obj4 = _modDef8263;
-      const longAt = obj4.getLongAt(dataView, sum2);
-      const sum3 = sum2 + c6;
-      if (stringFromDataView === c4) {
-        const tmp4Result = _mod8246;
-        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
-        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
-        tmp4Result2 = _mod8246;
-        if (PathRecordTypesDefault[shortAt]) {
-          try {
-            const obj5 = PathRecordTypesDefault[shortAt];
-            obj6.description = obj5.description(dataView1);
-          } catch (err) {
-            obj6.description = "<no description formatter>";
-          }
-          if (!name) {
-            name = tmp9(8286)[shortAt].name;
-          }
-          obj[name] = obj6;
-        } else if (arg1) {
-          const _HermesInternal = HermesInternal;
-          obj["undefined-" + shortAt] = obj6;
-        }
-      }
-      num = sum3 + (longAt + longAt % 2);
+const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
+const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
+const obj3 = {
+  getAsciiValue(items) {
+    return items.map((item) => String.fromCharCode(item));
+  },
+  getByteAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getAsciiAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getShortAt(dataView, sum, byteOrder) {
+    return dataView.getUint16(sum, byteOrder === _modDef8273.LITTLE_ENDIAN);
+  },
+  getLongAt(dataView, sum, byteOrder) {
+    return dataView.getUint32(sum, byteOrder === _modDef8273.LITTLE_ENDIAN);
+  },
+  getRationalAt(getUint32, sum, arg2) {
+    const items = [getUint32.getUint32(sum, arg2 === _modDef8273.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getUint32.getUint32(sum, arg2 === _modDef8273.LITTLE_ENDIAN);
+    return items;
+  },
+  getUndefinedAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getSlongAt(getInt32, sum, arg2) {
+    return getInt32.getInt32(sum, arg2 === _modDef8273.LITTLE_ENDIAN);
+  },
+  getSrationalAt(getInt32, sum, arg2) {
+    const items = [getInt32.getInt32(sum, arg2 === _modDef8273.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getInt32.getInt32(sum, arg2 === _modDef8273.LITTLE_ENDIAN);
+    return items;
+  },
+  getIfdPointerAt(getUint32, sum, arg2) {
+    return getUint32.getUint32(sum, arg2 === _modDef8273.LITTLE_ENDIAN);
+  },
+  typeSizes,
+  tagTypes: obj2,
+  getTypeSize(LONG) {
+    if (undefined === obj2[LONG]) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("No such type found.");
+      throw error;
+    } else {
+      return obj[tmp[LONG]];
     }
-    return obj;
   }
 };
-let c4 = "8BIM";
-let c5 = 2;
-let c6 = 4;
-({ length, length: metroImportDefault } = "8BIM");
 
-export default obj;
+export default obj3;

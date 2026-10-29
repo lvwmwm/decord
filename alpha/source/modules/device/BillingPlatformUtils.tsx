@@ -1,21 +1,21 @@
-// Module ID: 2062
-// Function ID: 2063
+// Module ID: 2063
+// Function ID: 2064
 // Name: BillingPlatformUtils
-// Dependencies: [1627, 1381, 2]
+// Dependencies: [1628, 1381, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 2062 (BillingPlatformUtils)
+// Module 2063 (BillingPlatformUtils)
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 
-export const isPremiumGiftingSupported = function isPremiumGiftingSupported() {
+export function isPremiumGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isGooglePlayBillingSupported = function isGooglePlayBillingSupported() {
+}
+export function isGooglePlayBillingSupported() {
   const obj = PlatformUtils;
   let isAndroidResult = obj.isAndroid();
   if (isAndroidResult) {
@@ -23,16 +23,16 @@ export const isGooglePlayBillingSupported = function isGooglePlayBillingSupporte
     isAndroidResult = !tmpResult.isMetaQuest();
   }
   return isAndroidResult;
-};
-export const isCollectibleGiftingSupported = function isCollectibleGiftingSupported() {
+}
+export function isCollectibleGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isSocialLayerStorefrontGiftingSupported = function isSocialLayerStorefrontGiftingSupported() {
+}
+export function isSocialLayerStorefrontGiftingSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
-export const isSocialLayerStorefrontPurchaseSupported = function isSocialLayerStorefrontPurchaseSupported() {
+}
+export function isSocialLayerStorefrontPurchaseSupported() {
   const obj = MetaQuestUtils;
   return !obj.isMetaQuest();
-};
+}

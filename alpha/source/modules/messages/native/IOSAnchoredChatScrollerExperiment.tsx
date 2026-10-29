@@ -1,13 +1,13 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7805
+// Function ID: 7806
 // Name: IOSAnchoredChatScrollerExperiment
-// Dependencies: [17, 1452, 1381, 2]
+// Dependencies: [17, 1453, 1381, 2]
 // Exports: isIOSAnchoredChatScrollerEnabled, shouldUseIOSAnchoredChatScroller
 
-// Module 7783 (IOSAnchoredChatScrollerExperiment)
+// Module 7805 (IOSAnchoredChatScrollerExperiment)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -18,11 +18,11 @@ obj2[1] = { enabled: true };
 const config = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/messages/native/IOSAnchoredChatScrollerExperiment.tsx");
 
-export const shouldUseIOSAnchoredChatScroller = function shouldUseIOSAnchoredChatScroller(location) {
+export function shouldUseIOSAnchoredChatScroller(location) {
   const obj = { location: location.location };
   return config.getConfig(obj).enabled;
-};
-export const isIOSAnchoredChatScrollerEnabled = function isIOSAnchoredChatScrollerEnabled() {
+}
+export function isIOSAnchoredChatScrollerEnabled() {
   const obj = PlatformUtils;
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
@@ -34,4 +34,4 @@ export const isIOSAnchoredChatScrollerEnabled = function isIOSAnchoredChatScroll
     isIOSResult = true === prop;
   }
   return isIOSResult;
-};
+}

@@ -1,29 +1,29 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9025
+// Function ID: 9026
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 4916, 4910, 4878, 1389, 7910, 1095, 21, 5004, 587, 4941, 5629, 5644, 504, 9006, 5013, 1125, 1199, 5270, 9023, 5305, 7256, 9027, 6865, 7988, 9032, 5640, 6030, 9007, 5698, 5246, 5301, 7284, 5280, 2]
+// Dependencies: [5, 109, 32, 19, 17, 4917, 4911, 4879, 1389, 7933, 1095, 21, 5005, 587, 4942, 5630, 5645, 504, 9009, 5014, 1125, 1199, 5271, 9026, 5306, 7280, 9030, 6888, 8011, 9035, 5641, 6034, 9010, 5700, 5247, 5302, 7308, 5281, 2]
 // Exports: default
 
-// Module 9022 (AddMembersActionSheet)
+// Module 9025 (AddMembersActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
 import intl9 from "intl" /* 1125 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4941 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import RegexUtilsDefault from "RegexUtils" /* 5644 */;
-import GuildUtilsDefault from "GuildUtils" /* 6865 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import RegexUtilsDefault from "RegexUtils" /* 5645 */;
+import GuildUtilsDefault from "GuildUtils" /* 6888 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import UserStore from "UserStore" /* 1389 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7910 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7933 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5, closure_1, dependencyMap, row, user;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(9006);
+const ChannelPermissionsUtilsAll = tmp10(9009);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -133,7 +133,7 @@ class AddMembersBody {
     const tmp8 = pendingAdditions;
     let obj2 = { isKeyboardAwareOnAndroid: !inActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(5629)(obj2).insets;
+    const insets = pendingAdditions(5630)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -215,11 +215,11 @@ class AddMembersBody {
       return obj;
     });
     if (inActionSheet) {
-      BottomSheetScrollView = tmp12(5305).BottomSheetScrollView;
+      BottomSheetScrollView = tmp12(5306).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
-    const tmp12Result = tmp12(7256);
+    const tmp12Result = tmp12(7280);
     const obj9 = { style: tmp4.inputContainer, children: closure_17(tmp8Result, obj10) };
     obj10 = {
       accessibilityLabel: intl5.string(tmp12(1125).t["5h0QOP"]),
@@ -248,7 +248,7 @@ class AddMembersBody {
       }
     };
     const tmp31 = inActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(9027);
+    tmp8Result = tmp8(9030);
     intl5 = tmp12(1125).intl;
     intl6 = tmp12(1125).intl;
     const items10 = [closure_17(c8, obj9), , ];
@@ -258,7 +258,7 @@ class AddMembersBody {
     if (canEveryoneRoleResult) {
       const obj11 = { style: tmp4.adminWarning, children: closure_17(InlineNotice, obj12) };
       obj12 = { type: "warning", message: intl7.string(tmp12(1125).t["5f3HIC"]), role: "status" };
-      InlineNotice = tmp12(7988).InlineNotice;
+      InlineNotice = tmp12(8011).InlineNotice;
       intl7 = tmp12(1125).intl;
       canEveryoneRoleResult = tmp34(tmp35, obj11);
     }
@@ -269,7 +269,7 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(9032).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1125).t.ErpIY3, obj15) };
+          obj14 = { Illustration: tmp12(9035).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1125).t.ErpIY3, obj15) };
           EmptyState = tmp12(1199).EmptyState;
           ({ emptyState: obj19.style, emptyStateText: obj19.bodyStyle } = tmp4);
           intl8 = tmp12(1125).intl;
@@ -412,7 +412,7 @@ export default function AddMembersActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -479,7 +479,7 @@ export default function AddMembersActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp16) {
           let closure_2 = tmp16;
@@ -510,7 +510,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(5640)(channel, true);
+  let str = pendingAdditions(5641)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -522,9 +522,9 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    BottomSheet = tmp5(5301).BottomSheet;
+    BottomSheet = tmp5(5302).BottomSheet;
     let obj2 = { title: intl3.string(tmp5(1125).t.dMJ3Y6), subtitle: str, trailing: null };
-    const BottomSheetTitleHeader = tmp5(7284).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp5(7308).BottomSheetTitleHeader;
     intl3 = tmp5(1125).intl;
     if (canSkip) {
       let obj7;

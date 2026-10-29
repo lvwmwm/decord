@@ -1,12 +1,13 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 17218
+// Function ID: 17219
 // Name: ColorPickerConsts
 // Dependencies: [2]
 
-// Module 16979 (ColorPickerConsts)
+// Module 17218 (ColorPickerConsts)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/consts/ColorPickerConsts.tsx");
 
 export const CHECKMARK_SIZE = 20;
 export const DARK_SWATCH_THRESHOLD = 0.2;
+export const EYEDROPPER_ICON_SIZE = 14;

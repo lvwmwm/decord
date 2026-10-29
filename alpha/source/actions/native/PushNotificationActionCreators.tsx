@@ -1,10 +1,10 @@
-// Module ID: 13546
-// Function ID: 13547
+// Module ID: 13779
+// Function ID: 13780
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 13547, 502, 1084, 13548, 6706, 3, 1110, 1294, 1254, 13551, 510, 6711, 1381, 1272, 1385, 584, 2]
+// Dependencies: [5, 13780, 502, 1084, 13781, 6730, 3, 1110, 1294, 1254, 13784, 510, 6734, 1381, 1272, 1385, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 13546 (PushNotificationActionCreators)
+// Module 13779 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,13 +12,13 @@ import TokenManagerAll from "TokenManager" /* 1110 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6711 */;
-import Constants2 from "Constants" /* 13548 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import Constants2 from "Constants" /* 13781 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 13547 */;
+import MultiAccountStore from "MultiAccountStore" /* 13780 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1084 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6706 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6730 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp22) {
           c3 = 3;
@@ -295,23 +295,23 @@ body = {
 let result = size.fileFinishedImporting("actions/native/PushNotificationActionCreators.tsx");
 
 export default body;
-export const setPushPermissionState = function setPushPermissionState(PROMPT_SEEN) {
+export function setPushPermissionState(PROMPT_SEEN) {
   const obj = DispatcherDefault;
   const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_STATE", permissionState: PROMPT_SEEN };
   obj.dispatch(obj2);
-};
-export const setPushPermissionReactivationSeen = function setPushPermissionReactivationSeen(promptType) {
+}
+export function setPushPermissionReactivationSeen(promptType) {
   const obj = DispatcherDefault;
   const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_REACTIVATION_SEEN", promptType };
   obj.dispatch(obj2);
-};
-export const setPushNotificationPermissionEligibleForPrompt = function setPushNotificationPermissionEligibleForPrompt(CHANNEL_BANNER) {
+}
+export function setPushNotificationPermissionEligibleForPrompt(CHANNEL_BANNER) {
   const obj = DispatcherDefault;
   const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_ELIGIBLE", promptType: CHANNEL_BANNER };
   obj.dispatch(obj2);
-};
-export const updateNotificationAuthorizationStatus = function updateNotificationAuthorizationStatus(authorizationStatus) {
+}
+export function updateNotificationAuthorizationStatus(authorizationStatus) {
   const obj = DispatcherDefault;
   const obj2 = { type: "PUSH_NOTIFICATION_AUTHORIZATION_STATUS_UPDATE", authorizationStatus };
   obj.dispatch(obj2);
-};
+}

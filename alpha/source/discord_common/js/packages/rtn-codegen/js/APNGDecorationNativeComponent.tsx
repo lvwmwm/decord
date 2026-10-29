@@ -1,9 +1,9 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9464
+// Function ID: 9465
 // Name: APNGDecorationNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 9433 (APNGDecorationNativeComponent)
+// Module 9464 (APNGDecorationNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

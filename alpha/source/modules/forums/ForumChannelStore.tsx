@@ -1,16 +1,16 @@
-// Module ID: 13331
-// Function ID: 13332
+// Module ID: 13564
+// Function ID: 13565
 // Name: ForumChannelStore
-// Dependencies: [4856, 4866, 4865, 4867, 1271, 38, 8327, 570, 558, 576, 504, 2]
+// Dependencies: [4857, 4867, 4866, 4868, 1271, 38, 8349, 570, 558, 576, 504, 2]
 // Exports: useForumChannelStoreApi
 
-// Module 13331 (ForumChannelStore)
+// Module 13564 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4865 */;
-import ForumLayout from "ForumLayout" /* 4866 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4867 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8327 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4866 */;
+import ForumLayout from "ForumLayout" /* 4867 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4868 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8349 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

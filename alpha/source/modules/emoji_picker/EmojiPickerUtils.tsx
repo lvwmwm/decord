@@ -1,26 +1,26 @@
-// Module ID: 9863
-// Function ID: 9864
+// Module ID: 9895
+// Function ID: 9896
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6760, 4878, 6736, 1389, 6763, 1084, 1392, 1240, 1391, 1278, 9864, 5747, 9865, 9867, 9868, 504, 1988, 4954, 1125, 4950, 1264, 12, 1101, 558, 576, 4837, 2]
+// Dependencies: [19, 6783, 4879, 6759, 1389, 6786, 1084, 1392, 1240, 1391, 1278, 9896, 5749, 9897, 9899, 9900, 504, 1989, 4955, 1125, 4951, 1264, 12, 1101, 558, 576, 4838, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9863 (EmojiPickerUtils)
+// Module 9895 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1101 */;
 import intl13 from "intl" /* 1125 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import v1 from "v1" /* 1278 */;
 import PremiumConstants from "PremiumConstants" /* 1391 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4950 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4954 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5747 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9864 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4955 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9896 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import SortedGuildStore from "SortedGuildStore" /* 6736 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import SortedGuildStore from "SortedGuildStore" /* 6759 */;
 import UserStore from "UserStore" /* 1389 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6763 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6786 */;
 import Constants from "Constants" /* 1084 */;
 import EmojiConstants from "EmojiConstants" /* 1392 */;
 import module_12 from "module_12" /* 12 */;
@@ -471,7 +471,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiInP
 });
 let result = size.fileFinishedImporting("modules/emoji_picker/EmojiPickerUtils.tsx");
 
-export const initializeSearch = function initializeSearch(intention) {
+export function initializeSearch(intention) {
   let EMOJI;
   intention = intention.intention;
   const _location = intention.location;
@@ -491,8 +491,8 @@ export const initializeSearch = function initializeSearch(intention) {
     EMOJI = constants7.EMOJI;
   }
   trackWithMetadata(SEARCH_OPENED, { search_type: EMOJI, load_id: replaced, location: _location });
-};
-export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cResult) {
+}
+export function useEmojiCategories(CHAT, channel, cResult) {
   let newlyAddedEmojis;
   let topEmojis;
   _require = CHAT;
@@ -723,13 +723,13 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
     tmp16 = items6;
   }
   return tmp16;
-};
-export const getUnicodeEmojiCategories = function getUnicodeEmojiCategories() {
+}
+export function getUnicodeEmojiCategories() {
   const obj = UnicodeEmojisDefault;
   const categories = obj.getCategories();
   return categories.map((id) => ({ type: constants.UNICODE, id, name: id, isNitroLocked: false }));
-};
-export const trackPremiumSettingsPaneOpened = function trackPremiumSettingsPaneOpened(getGuildId) {
+}
+export function trackPremiumSettingsPaneOpened(getGuildId) {
   let CUSTOM_STATUS_MODAL;
   let guildId;
   if (getGuildId != null) {
@@ -745,8 +745,8 @@ export const trackPremiumSettingsPaneOpened = function trackPremiumSettingsPaneO
     CUSTOM_STATUS_MODAL = map1.CUSTOM_STATUS_MODAL;
   }
   track(PREMIUM_PROMOTION_OPENED, obj);
-};
-export const trackEmojiSearchStart = function trackEmojiSearchStart(location, arg1) {
+}
+export function trackEmojiSearchStart(location, arg1) {
   let EMOJI;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const SEARCH_STARTED = unpackModuleId.SEARCH_STARTED;
@@ -771,8 +771,8 @@ export const trackEmojiSearchStart = function trackEmojiSearchStart(location, ar
     trackWithMetadata(SEARCH_STARTED, obj);
   }
   obj3 = {};
-};
-export const trackEmojiSearchResultsViewed = function trackEmojiSearchResultsViewed(arg0) {
+}
+export function trackEmojiSearchResultsViewed(arg0) {
   let EMOJI;
   let _location;
   let intention;
@@ -803,8 +803,8 @@ export const trackEmojiSearchResultsViewed = function trackEmojiSearchResultsVie
     trackWithMetadata(SEARCH_RESULT_VIEWED, obj);
   }
   obj3 = {};
-};
-export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
+}
+export function trackEmojiSearchSelect(arg0) {
   let EMOJI;
   let _location;
   let emoji;
@@ -867,8 +867,8 @@ export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
     trackWithMetadata(SEARCH_RESULT_SELECTED, obj);
   }
   obj3 = {};
-};
-export const trackEmojiSearchEmpty = function trackEmojiSearchEmpty(arg0) {
+}
+export function trackEmojiSearchEmpty(arg0) {
   let EMOJI;
   let _location;
   let intention;
@@ -897,8 +897,8 @@ export const trackEmojiSearchEmpty = function trackEmojiSearchEmpty(arg0) {
     trackWithMetadata(SEARCH_RESULT_EMPTY, obj);
   }
   obj3 = {};
-};
-export const trackEmojiFocus = function trackEmojiFocus(arg0) {
+}
+export function trackEmojiFocus(arg0) {
   let emoji;
   let newlyAddedHighlight;
   let position;
@@ -914,8 +914,8 @@ export const trackEmojiFocus = function trackEmojiFocus(arg0) {
   }
   const obj = { expression_section: str, newly_added_highlight: newlyAddedHighlight, emoji_id: emoji.id, emoji_name: emoji.name, emoji_animated: emoji.animated, emoji_position: position };
   trackWithMetadata(EXPRESSION_PICKER_EXPRESSION_FOCUS, obj);
-};
-export const trackEmojiSelect = function trackEmojiSelect(arg0) {
+}
+export function trackEmojiSelect(arg0) {
   let EMOJI_PICKER_EMOJI_CLICKED;
   let EXPRESSION_PICKER_EXPRESSION_SELECTED;
   let _location;
@@ -966,8 +966,8 @@ export const trackEmojiSelect = function trackEmojiSelect(arg0) {
   }
   const merged = Object.assign(tmp10);
   trackWithMetadata(EXPRESSION_PICKER_EXPRESSION_SELECTED, obj);
-};
-export const trackEmojiFavorited = function trackEmojiFavorited(emoji) {
+}
+export function trackEmojiFavorited(emoji) {
   emoji = emoji.emoji;
   let name = emoji.uniqueName;
   const _location = emoji.location;
@@ -977,9 +977,9 @@ export const trackEmojiFavorited = function trackEmojiFavorited(emoji) {
   const obj = AppAnalyticsUtilsDefault;
   const obj2 = { location: _location, expression_type: ExpressionPickerViewType.EMOJI, expression_id: emoji.id, expression_name: name, expression_guild_id: emoji.guildId, is_custom: null != emoji.id, is_animated: emoji.animated };
   obj.trackWithMetadata(unpackModuleId.EXPRESSION_FAVORITED, obj2);
-};
+}
 export const throttledTrackEmojiAutoSuggestDisplayed = throttleResult;
-export const getAriaIdForEmojiCategory = function getAriaIdForEmojiCategory(type, name) {
+export function getAriaIdForEmojiCategory(type, name) {
   let id;
   if (type.type === constants2.GUILD) {
     let str = "";
@@ -991,8 +991,8 @@ export const getAriaIdForEmojiCategory = function getAriaIdForEmojiCategory(type
     id = type.id;
   }
   return id;
-};
-export const getStringForEmojiCategory = function getStringForEmojiCategory(PREMIUM_UPSELL, guildName) {
+}
+export function getStringForEmojiCategory(PREMIUM_UPSELL, guildName) {
   if (metroImportAll.TOP_GUILD_EMOJI === PREMIUM_UPSELL) {
     const intl12 = intl13.intl;
     const obj = { guildName };
@@ -1037,14 +1037,14 @@ export const getStringForEmojiCategory = function getStringForEmojiCategory(PREM
     }
     return tmp3;
   }
-};
+}
 export const useEmojiSearchResults = tmp6;
 export const useFrequentlyUsedEmojis = tmp7;
 export const useFrequentlyUsedReactionEmojis = tmp8;
 export const useFavoriteEmojis = tmp9;
 export const useIsFavoriteEmoji = tmp10;
 export const useEmojiInPriorityOrder = tmp11;
-export const getEmojiSubCategory = function getEmojiSubCategory(arr, arr2, arg2) {
+export function getEmojiSubCategory(arr, arr2, arg2) {
   if (null == arg2) {
     return constants3.NONE;
   } else {
@@ -1067,8 +1067,8 @@ export const getEmojiSubCategory = function getEmojiSubCategory(arr, arr2, arg2)
     }
     return TOP_GUILD_EMOJI;
   }
-};
-export const getSearchPlaceholder = function getSearchPlaceholder(arg0, arg1) {
+}
+export function getSearchPlaceholder(arg0, arg1) {
   let stringResult1;
   if (arg0 === constants8.REACTION) {
     let stringResult;
@@ -1086,4 +1086,4 @@ export const getSearchPlaceholder = function getSearchPlaceholder(arg0, arg1) {
     stringResult1 = intl.string(intl13.t.KgK5qg);
   }
   return stringResult1;
-};
+}

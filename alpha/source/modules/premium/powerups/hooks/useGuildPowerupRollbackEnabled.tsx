@@ -1,13 +1,13 @@
-// Module ID: 13655
-// Function ID: 13656
+// Module ID: 13888
+// Function ID: 13889
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [5221, 558, 576, 5223, 2]
+// Dependencies: [5222, 558, 576, 5224, 2]
 // Exports: isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 13655 (useGuildPowerupRollbackEnabled)
+// Module 13888 (useGuildPowerupRollbackEnabled)
 import react from "react" /* 576 */;
-import Powerups from "Powerups" /* 5221 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 5223 */;
+import Powerups from "Powerups" /* 5222 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 5224 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,11 +42,11 @@ const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGui
 
 export default tmp2;
 export { isGuildPowerupRollbackEnabledForSku };
-export const isGuildPowerupRollbackEnabled = function isGuildPowerupRollbackEnabled(guildId, skuId, maybeGetPerkPurchaseablePopoutDCF) {
+export function isGuildPowerupRollbackEnabled(guildId, skuId, maybeGetPerkPurchaseablePopoutDCF) {
   let serverThemeRollbackEnabled = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID;
   if (serverThemeRollbackEnabled) {
     const tmpResult = ServerThemeExperiment;
     serverThemeRollbackEnabled = tmpResult.getServerThemeRollbackEnabled(guildId, maybeGetPerkPurchaseablePopoutDCF);
   }
   return serverThemeRollbackEnabled;
-};
+}

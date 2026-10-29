@@ -1,16 +1,16 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12241
+// Function ID: 12242
 // Name: useConjureNativePublishButton
-// Dependencies: [19, 6808, 10839, 12188, 5699, 558, 576, 504, 6845, 12189, 5013, 2]
+// Dependencies: [19, 6831, 10915, 12242, 5701, 558, 576, 504, 6868, 12243, 5014, 2]
 
-// Module 12187 (useConjureNativePublishButton)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5013 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5699 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 10839 */;
-import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 12188 */;
-import useConjurePublishButtonDefault from "useConjurePublishButton" /* 12189 */;
+// Module 12241 (useConjureNativePublishButton)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 10915 */;
+import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 12242 */;
+import useConjurePublishButtonDefault from "useConjurePublishButton" /* 12243 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,8 +74,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
   ({ integrationStatusChecked, previewAppId } = stateFromStoresObject);
-  const useApplication = tmp(6845).useApplication;
-  tmp(6845);
+  const useApplication = tmp(6868).useApplication;
+  tmp(6868);
   const isLoading = useApplication(previewAppId).isLoading;
   let tmp11 = !integrationStatusChecked;
   const tmp10 = useConjurePublishButtonDefault;

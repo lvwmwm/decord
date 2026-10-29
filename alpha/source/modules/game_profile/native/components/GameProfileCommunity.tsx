@@ -1,16 +1,16 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9403
+// Function ID: 9404
 // Name: GameProfileCommunity
-// Dependencies: [19, 21, 558, 576, 9366, 9368, 9372, 9333, 9278, 7485, 9373, 1125, 4870, 2]
+// Dependencies: [19, 21, 558, 576, 9398, 9400, 9404, 9337, 9282, 7508, 9405, 1125, 4871, 2]
 
-// Module 9371 (GameProfileCommunity)
+// Module 9403 (GameProfileCommunity)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import transitionToGuild from "transitionToGuild" /* 7485 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9278 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9366 */;
-import GameProfileSection from "GameProfileSection" /* 9368 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9373 */;
+import transitionToGuild from "transitionToGuild" /* 7508 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9282 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9398 */;
+import GameProfileSection from "GameProfileSection" /* 9400 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9405 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let closure_5 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ga
   const cResult = obj.c(1);
   const result = 2 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const GameProfileSectionSkeleton = tmp(9368).GameProfileSectionSkeleton;
+    const GameProfileSectionSkeleton = tmp(9400).GameProfileSectionSkeleton;
     const tmp7 = <GameProfileSectionSkeleton animationDelayMs={result} showViewAllSkeleton={false} skeletonTitleWidth={80}>{null}</GameProfileSectionSkeleton>;
     cResult[0] = tmp7;
     first = tmp7;

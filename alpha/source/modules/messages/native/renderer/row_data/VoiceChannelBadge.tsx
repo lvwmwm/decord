@@ -1,26 +1,26 @@
-// Module ID: 14766
-// Function ID: 14767
+// Module ID: 15001
+// Function ID: 15002
 // Name: VoiceChannelBadge
-// Dependencies: [17, 4856, 4936, 5666, 1084, 14767, 8539, 6688, 6697, 2]
+// Dependencies: [17, 4857, 4937, 5668, 1084, 15002, 8561, 6712, 6721, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 14766 (VoiceChannelBadge)
+// Module 15001 (VoiceChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1084 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6688 */;
-import AgeGateUtils from "AgeGateUtils" /* 6697 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8539 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 14767 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import VoiceStateStore from "VoiceStateStore" /* 5666 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6712 */;
+import AgeGateUtils from "AgeGateUtils" /* 6721 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 15002 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import VoiceStateStore from "VoiceStateStore" /* 5668 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
 const Permissions = Constants.Permissions;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
-export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId1) {
+export function createVoiceChannelBadge(id, guildId1) {
   const guildId = guildId1;
   const getVoiceChannelBadgeExperiment = VoiceChannelBadgeExperiment.getVoiceChannelBadgeExperiment;
   VoiceChannelBadgeExperiment;
@@ -64,4 +64,4 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
       }
     }
   }
-};
+}

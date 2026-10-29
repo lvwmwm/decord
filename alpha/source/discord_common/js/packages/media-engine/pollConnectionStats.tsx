@@ -1,10 +1,10 @@
-// Module ID: 5785
-// Function ID: 5786
+// Module ID: 5787
+// Function ID: 5788
 // Name: pollConnectionStats
-// Dependencies: [5, 5784, 5786, 2]
+// Dependencies: [5, 5786, 5788, 2]
 // Exports: default
 
-// Module 5785 (pollConnectionStats)
+// Module 5787 (pollConnectionStats)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export default function pollConnectionStats(on) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         while (true) {
@@ -63,7 +63,7 @@ export default function pollConnectionStats(on) {
                 closure_0 = items[Symbol.iterator]();
               }
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else if (1 === tmp5) {
             let c5 = 0;

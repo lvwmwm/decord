@@ -1,16 +1,16 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14554
+// Function ID: 14555
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 14319, 1084, 21, 5004, 1125, 8609, 9650, 558, 576, 1502, 2064, 14321, 9652, 2]
+// Dependencies: [19, 14553, 1084, 21, 5005, 1125, 8631, 9682, 558, 576, 1503, 2065, 14555, 9684, 2]
 
-// Module 14320 (PlayStationLinkLanding)
+// Module 14554 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14319 */;
-import _modDef14321 from "module_14321" /* 14321 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14553 */;
+import _modDef14555 from "module_14555" /* 14555 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const cResult = obj.c(11);
   platformType = platformType.platformType;
   const tmp4 = closure_7();
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = HelpdeskUtilsDefault;
@@ -48,11 +48,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { label: intl2.string(navigation(1125).t["+eJP7o"]), subLabel: intl3.string(navigation(1125).t["+0VIUh"]), icon: navigation(8609).VoiceNormalIcon };
+    const obj5 = { label: intl2.string(navigation(1125).t["+eJP7o"]), subLabel: intl3.string(navigation(1125).t["+0VIUh"]), icon: navigation(8631).VoiceNormalIcon };
     intl2 = tmp(1125).intl;
     intl3 = tmp(1125).intl;
     const items = [obj5, ];
-    const obj6 = { label: intl4.string(navigation(1125).t.ZH4QFa), icon: navigation(9650).GameControllerIcon };
+    const obj6 = { label: intl4.string(navigation(1125).t.ZH4QFa), icon: navigation(9682).GameControllerIcon };
     intl4 = tmp(1125).intl;
     items[1] = obj6;
     cResult[1] = items;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { uri: _modDef14321 };
+    const obj7 = { uri: _modDef14555 };
     cResult[4] = obj7;
     tmp13 = obj7;
   } else {
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
       return tmp19;
     }
   }
-  const tmp20 = jsx(navigation(9652).TwoWayLinkLanding, { platformType, img: tmp13, imgStyle: image, headerConnect: tmp15, headerReconnect: tmp16, body: first, onNext: tmp12, valueProps: tmp11 });
+  const tmp20 = jsx(navigation(9684).TwoWayLinkLanding, { platformType, img: tmp13, imgStyle: image, headerConnect: tmp15, headerReconnect: tmp16, body: first, onNext: tmp12, valueProps: tmp11 });
   cResult[7] = tmp12;
   cResult[8] = platformType;
   cResult[9] = tmp4.image;
@@ -110,7 +110,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   navigation = undefined;
   platformType = platformType.platformType;
   const tmp = closure_7();
-  let obj = navigation(1502);
+  let obj = navigation(1503);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.PS_CONNECTION);
@@ -134,10 +134,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef14321 };
+    const obj = { uri: _modDef14555 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9652).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9684).TwoWayLinkLanding;
   let intl2 = navigation(1125).intl;
   let intl3 = navigation(1125).intl;
   return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1125).t.xAWHOy)} headerReconnect={intl3.string(navigation(1125).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;

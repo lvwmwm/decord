@@ -1,15 +1,15 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10895
+// Function ID: 10896
 // Name: IntlLink
-// Dependencies: [19, 21, 5004, 587, 558, 576, 5018, 5696, 1948, 1199, 2]
+// Dependencies: [19, 21, 5005, 587, 558, 576, 5019, 5698, 1949, 1199, 2]
 
-// Module 10819 (IntlLink)
+// Module 10895 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef1948 from "module_1948" /* 1948 */;
-import LinkingDefault from "Linking" /* 5696 */;
+import _modDef1949 from "module_1949" /* 1949 */;
+import LinkingDefault from "Linking" /* 5698 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,14 +34,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
   const cResult = obj.c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(5018).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(react.useContext(target(5019).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     let tmp6;
     if (cResult[0] !== target) {
       const fn = function s() {
         const openURL = LinkingDefault.openURL;
         LinkingDefault;
-        const obj = _modDef1948;
+        const obj = _modDef1949;
         return openURL(obj.sanitizeUrl(target));
       };
       cResult[0] = target;
@@ -94,12 +94,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(5018).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(5019).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1948;
+      const obj = _modDef1949;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";

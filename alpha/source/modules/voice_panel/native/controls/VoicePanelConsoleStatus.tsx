@@ -1,19 +1,19 @@
-// Module ID: 18906
-// Function ID: 18907
+// Module ID: 19139
+// Function ID: 19140
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 10939, 10942, 10937, 21, 5004, 587, 558, 576, 10938, 18900, 5085, 5070, 18907, 18905, 5283, 1199, 5270, 6944, 11693, 1125, 6922, 18908, 2]
+// Dependencies: [19, 10974, 10977, 10972, 21, 5005, 587, 558, 576, 10973, 19133, 5086, 5071, 19140, 19138, 5284, 1199, 5271, 6968, 11747, 1125, 6946, 19141, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 18906 (VoicePanelConsoleStatus)
+// Module 19139 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 5070 */;
-import spring from "spring" /* 5283 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10937 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10939 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10942 */;
+import native from "native" /* 5071 */;
+import spring from "spring" /* 5284 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10977 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ReanimatedRexport = tmp(5085);
+const ReanimatedRexport = tmp(5086);
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;
 const CONTROLS_HEIGHT = VoicePanelControlsConstants.CONTROLS_HEIGHT;
@@ -684,8 +684,8 @@ let result = size.fileFinishedImporting("modules/voice_panel/native/controls/Voi
 
 export default tmp5;
 export const CONSOLE_STATUS_HEIGHT = 36;
-export const renderVoicePanelConsoleStatus = function renderVoicePanelConsoleStatus(arg0, arg1, state, cleanUp) {
+export function renderVoicePanelConsoleStatus(arg0, arg1, state, cleanUp) {
   const obj = { state, cleanUp };
   const merged = Object.assign(arg1);
   return metroRequire(closure_17, obj, arg0);
-};
+}

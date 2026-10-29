@@ -1,10 +1,10 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 6013
+// Function ID: 6014
 // Name: BackPressTracking
-// Dependencies: [19, 17, 6012, 558, 576, 2]
+// Dependencies: [19, 17, 6014, 558, 576, 2]
 // Exports: addBackPressListener
 
-// Module 6011 (BackPressTracking)
+// Module 6013 (BackPressTracking)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackNavi
 });
 let result = size.fileFinishedImporting("modules/routing/native/BackPressTracking.android.tsx");
 
-export const addBackPressListener = function addBackPressListener(fn) {
+export function addBackPressListener(fn) {
   let closure_0 = BackHandler.addEventListener("hardwareBackPress", fn);
   closure_6 = closure_6 + 1;
   const tmp = c8;
@@ -205,5 +205,5 @@ export const addBackPressListener = function addBackPressListener(fn) {
       }
     }
   };
-};
+}
 export const useTrackNavigationBackPress = tmp3;

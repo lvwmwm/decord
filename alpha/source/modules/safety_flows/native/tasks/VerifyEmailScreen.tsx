@@ -1,9 +1,9 @@
-// Module ID: 19739
-// Function ID: 19740
+// Module ID: 19961
+// Function ID: 19962
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 558, 576, 19734, 19735, 19729, 5699, 1125, 2833, 5270, 7044, 19740, 6013, 587, 19738, 2]
+// Dependencies: [5, 32, 19, 21, 558, 576, 19956, 19957, 19951, 5701, 1125, 2834, 5271, 7068, 19962, 6015, 587, 19960, 2]
 
-// Module 19739 (VerifyEmailScreen)
+// Module 19961 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp28) {
           let closure_2 = tmp28;
           if (0 === c3) {
@@ -218,7 +218,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -269,7 +269,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp28) {
         first = tmp28;
         if (0 === c3) {
@@ -292,19 +292,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       callback();
     }
   }, items2);
-  let obj3 = { title: intl.string(require("module_2833")["Qm6K/s"]), action: intl2.string(require("module_2833").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
+  let obj3 = { title: intl.string(require("module_2834")["Qm6K/s"]), action: intl2.string(require("module_2834").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
   const tmp14 = require("SafetyFlowTaskScreen");
   intl = onTaskComplete(value[10]).intl;
   intl2 = onTaskComplete(value[10]).intl;
   obj4 = { spacing: require("native").space.PX_16, children: items3 };
   Stack = onTaskComplete(value[15]).Stack;
-  let obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl3.string(require("module_2833").aveKoG) };
+  let obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl3.string(require("module_2834").aveKoG) };
   const Text = onTaskComplete(value[12]).Text;
   intl3 = onTaskComplete(value[10]).intl;
   items3 = [onAction(Text, obj5), ];
   let obj6 = { spacing: require("native").space.PX_8, children: items4 };
   const Stack2 = onTaskComplete(value[15]).Stack;
-  const obj7 = { placeholder: intl4.string(require("module_2833").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
+  const obj7 = { placeholder: intl4.string(require("module_2834").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
   const TextInput = onTaskComplete(value[13]).TextInput;
   intl4 = onTaskComplete(value[10]).intl;
   items4 = [onAction(TextInput, obj7), ];

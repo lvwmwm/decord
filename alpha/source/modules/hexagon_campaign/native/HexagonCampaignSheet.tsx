@@ -1,28 +1,28 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16883
+// Function ID: 16884
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1205, 1389, 15905, 5029, 5302, 9899, 1252, 1095, 21, 1409, 1408, 9254, 5004, 587, 558, 576, 5032, 504, 7289, 7314, 15026, 5031, 1630, 2050, 9900, 16121, 6748, 16646, 5699, 1125, 5246, 16644, 4280, 10660, 5270, 16651, 7284, 16144, 5280, 16652, 7023, 7331, 16653, 5301, 2]
+// Dependencies: [5, 32, 19, 17, 1205, 1389, 16141, 5030, 5303, 9931, 1252, 1095, 21, 1409, 1408, 9258, 5005, 587, 558, 576, 5033, 504, 7313, 7338, 15261, 5032, 1631, 2051, 9932, 16358, 6771, 16884, 5701, 1125, 5247, 16882, 4281, 10693, 5271, 16889, 7308, 16381, 5281, 16890, 7047, 7355, 16891, 5302, 2]
 
-// Module 16645 (HexagonCampaignSheet)
+// Module 16883 (HexagonCampaignSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1095 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
 import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5302 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9254 */;
-import AppIconConstants from "AppIconConstants" /* 9899 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9258 */;
+import AppIconConstants from "AppIconConstants" /* 9931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
 import UserStore from "UserStore" /* 1389 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15905 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16141 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let tmp = stateFromStores;
   let tmp2 = analyticsLocations;
   obj = stateFromStores(analyticsLocations[19]);
-  const cResult = obj.c(117);
+  const cResult = obj.c(118);
   closure_22();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -254,6 +254,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let intl2;
   let intl3;
   let intl4;
+  let intl5;
   let items10;
   let items11;
   let items12;
@@ -303,7 +304,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -381,7 +382,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } catch (tmp57) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -508,29 +509,29 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
         if (null == stateFromStores) {
           return null;
         } else {
-          let obj7 = { perk: tmp8.CLIENT_THEME, label: intl.string(tmp5(tmp3[36]).TTUKuI), icon: closure_16(first1, obj8) };
-          intl = tmp2(tmp3[33]).intl;
+          let obj7 = { perk: tmp8.CLIENT_THEME, label: intl2.string(tmp5(tmp3[36]).TTUKuI), icon: closure_16(first1, obj8) };
+          intl2 = tmp2(tmp3[33]).intl;
           obj8 = { style: tmp.rowIcon, children: closure_16(tmp2(tmp3[37]).Gradient, obj9) };
           obj9 = { gradient: HEXAGON_GRADIENT_PRESET, absolute: true };
           const items5 = [obj7, , ];
-          const obj11 = { perk: result1.DISPLAY_NAME_STYLE, label: intl2.string(tmp5(tmp3[36]).fobter), icon: closure_16(first1, obj12) };
-          intl2 = tmp2(tmp3[33]).intl;
+          const obj11 = { perk: result1.DISPLAY_NAME_STYLE, label: intl3.string(tmp5(tmp3[36]).fobter), icon: closure_16(first1, obj12) };
+          intl3 = tmp2(tmp3[33]).intl;
           obj12 = { style: items6, children: closure_16(tmp2(tmp3[38]).Text, obj13) };
           items6 = [, ];
           ({ rowIcon: arr11[0], fontRowIcon: arr11[1] } = tmp);
           obj13 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
           items5[1] = obj11;
-          const obj14 = { perk: result1.APP_ICON, label: intl3.string(tmp5(tmp3[36]).DTv8Yq), icon: closure_16(tmp5Result3, obj15) };
-          intl3 = tmp2(tmp3[33]).intl;
+          const obj14 = { perk: result1.APP_ICON, label: intl4.string(tmp5(tmp3[36]).DTv8Yq), icon: closure_16(tmp5Result3, obj15) };
+          intl4 = tmp2(tmp3[33]).intl;
           obj15 = { id: tmp2(tmp3[28]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
           items5[2] = obj14;
           tmp5Result3 = tmp5(tmp3[39]);
           const obj16 = { header: closure_17(first1, obj17), footer: closure_16(first1, obj20), startExpanded: true, children: tmp62(first1, obj24) };
           obj17 = { children: items7 };
           BottomSheet = tmp2(tmp3[47]).BottomSheet;
-          const obj18 = { title: intl4.string(tmp5(tmp3[36]).rZmLDm) };
+          const obj18 = { title: intl5.string(tmp5(tmp3[36]).rZmLDm) };
           const BottomSheetTitleHeader = tmp2(tmp3[40]).BottomSheetTitleHeader;
-          intl4 = tmp2(tmp3[33]).intl;
+          intl5 = tmp2(tmp3[33]).intl;
           items7 = [closure_16(BottomSheetTitleHeader, obj18), ];
           const obj19 = { style: tmp.badgeRow, children: closure_16(tmp5(tmp3[41]), {}) };
           items7[1] = closure_16(first1, obj19);
@@ -539,8 +540,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           const obj21 = { paddingBottom: sum };
           items8[1] = obj21;
           Button = tmp2(tmp3[42]).Button;
-          const intl5 = tmp2(tmp3[33]).intl;
-          const string = intl5.string;
+          const intl6 = tmp2(tmp3[33]).intl;
+          const string = intl6.string;
           const t = tmp2(tmp3[33]).t;
           obj22 = {
             size: "lg",
@@ -569,7 +570,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           }
           items10 = [tmp62Result, ];
           const obj31 = { style: tmp.previewArea, children: closure_16(tmp56, obj33) };
-          const obj32 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, appIconId: HEXAGON, appIconScale: 0.8125, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true };
+          const obj32 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, appIconId: HEXAGON, appIconScale: 0.8125, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl.string(tmp5(tmp3[36])["U/irIt"]) };
           username = stateFromStores.globalName;
           tmp56 = closure_23;
           const tmp5Result4 = tmp5(tmp3[43]);
@@ -578,6 +579,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           }
           ({ fontId: obj23.selectedFontId, effectId: obj23.selectedEffectId, colors: obj23.selectedColors } = tmp46);
           obj33 = { children: closure_16(tmp5Result4, obj32) };
+          intl = tmp2(tmp3[33]).intl;
           items10[1] = closure_16(first1, obj31);
           items11 = [tmp62(tmp59, obj27), ];
           const obj34 = { style: tmp.rows, children: closure_16(TableRowGroup, obj35) };

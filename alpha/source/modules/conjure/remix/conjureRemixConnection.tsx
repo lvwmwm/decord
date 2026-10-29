@@ -1,13 +1,13 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 10921
+// Function ID: 10922
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 584, 10762, 10756, 2]
+// Dependencies: [32, 5, 584, 10837, 10831, 2]
 // Exports: acceptRemix, sendRetryRemix
 
-// Module 10845 (conjureRemixConnection)
+// Module 10921 (conjureRemixConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10756 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10762 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10837 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _acceptRemix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ obj = function _mintUpstreamTicket() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c6;
@@ -227,7 +227,7 @@ obj = function _mintUpstreamTicket() {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp21) {
         status = tmp21;
@@ -259,10 +259,10 @@ obj = {
 let result = size.fileFinishedImporting("modules/conjure/remix/conjureRemixConnection.tsx");
 
 export const remixFrameHandlers = obj;
-export const acceptRemix = function acceptRemix() {
+export function acceptRemix() {
   return obj(...arguments);
-};
-export const sendRetryRemix = function sendRetryRemix(projectId) {
+}
+export function sendRetryRemix(projectId) {
   obj = conjureProjectSockets;
   return obj.sendOnConjureSocket(projectId, "retry remix", (sendRetryRemix) => sendRetryRemix.sendRetryRemix());
-};
+}

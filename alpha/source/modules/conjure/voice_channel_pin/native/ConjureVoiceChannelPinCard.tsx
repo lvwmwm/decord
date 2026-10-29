@@ -1,25 +1,25 @@
-// Module ID: 12411
-// Function ID: 12412
+// Module ID: 12465
+// Function ID: 12466
 // Name: ConjureVoiceChannelPinCard
-// Dependencies: [19, 17, 4878, 4946, 1389, 21, 5004, 587, 558, 576, 12412, 5270, 1125, 3863, 12226, 8539, 5246, 12243, 7023, 6939, 5640, 6947, 5280, 2]
+// Dependencies: [19, 17, 4879, 4947, 1389, 21, 5005, 587, 558, 576, 12466, 5271, 1125, 3864, 12280, 8561, 5247, 12297, 7047, 6963, 5641, 6971, 5281, 2]
 
-// Module 12411 (ConjureVoiceChannelPinCard)
+// Module 12465 (ConjureVoiceChannelPinCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1125 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5246 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12226 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12243 */;
-import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 12412 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12280 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12297 */;
+import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 12466 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,8 +56,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
   const conjureVoiceChannelPinOutcome = obj2.useConjureVoiceChannelPinOutcome(projectId);
   ({ outcome, pinnedName } = conjureVoiceChannelPinOutcome);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(_modDef3863.UGAfl9) };
-    const Text = tmp(5270).Text;
+    const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(_modDef3864.UGAfl9) };
+    const Text = tmp(5271).Text;
     intl = tmp(1125).intl;
     const tmp9 = metroImportDefault(Text, obj3);
     cResult[0] = tmp9;
@@ -101,7 +101,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
       const intl3 = tmp(1125).intl;
       const formatToPlainString = intl3.formatToPlainString;
       let str2 = pinnedName;
-      const gKe6Lw = _modDef3863.gKe6Lw;
+      const gKe6Lw = _modDef3864.gKe6Lw;
       if (pinnedName == null) {
         str2 = "";
       }
@@ -109,7 +109,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
       formatToPlainStringResult = formatToPlainString(gKe6Lw, obj6);
     } else {
       const intl2 = tmp(1125).intl;
-      formatToPlainStringResult = intl2.string(_modDef3863["+kpQ3v"]);
+      formatToPlainStringResult = intl2.string(_modDef3864["+kpQ3v"]);
     }
     cResult[1] = outcome.status;
     cResult[2] = pinnedName;
@@ -152,7 +152,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
   const obj = useConjureVoiceChannelPin;
   const conjureVoiceChannelPinOutcome = obj.useConjureVoiceChannelPinOutcome(projectId);
   ({ outcome, pinnedName } = conjureVoiceChannelPinOutcome);
-  const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(_modDef3863.UGAfl9) };
+  const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(_modDef3864.UGAfl9) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   const tmp7 = metroImportDefault(Text, obj2);
@@ -162,11 +162,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
     let formatToPlainStringResult;
     const obj3 = { style: tmp.card, children: items };
     items = [tmp7, ];
-    const Text2 = tmp2(5270).Text;
+    const Text2 = tmp2(5271).Text;
     if ("pinned" === outcome.status) {
       const intl3 = tmp2(1125).intl;
       const formatToPlainString = intl3.formatToPlainString;
-      const gKe6Lw = tmp6(3863).gKe6Lw;
+      const gKe6Lw = tmp6(3864).gKe6Lw;
       if (pinnedName == null) {
         pinnedName = "";
       }
@@ -174,7 +174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVoi
       formatToPlainStringResult = formatToPlainString(gKe6Lw, obj4);
     } else {
       const intl2 = tmp2(1125).intl;
-      formatToPlainStringResult = intl2.string(tmp6(3863)["+kpQ3v"]);
+      formatToPlainStringResult = intl2.string(tmp6(3864)["+kpQ3v"]);
     }
     const obj5 = { variant: "text-sm/normal", color: "text-default", children: formatToPlainStringResult };
     items[1] = metroImportDefault(Text2, obj5);
@@ -402,7 +402,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           return setPicked(id.id);
         }
       };
-      obj3 = { title: intl.string(_modDef3863.peOi1H) };
+      obj3 = { title: intl.string(_modDef3864.peOi1H) };
       ActionSheetActionCreators;
       tmp2 = ChannelPickerActionSheetDefault;
       intl = intl7.intl;
@@ -453,7 +453,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   projectId = projectId.projectId;
   let tmp2 = channels;
   const tmp = closure_11();
-  let obj = channels(12412);
+  let obj = channels(12466);
   const conjureVoiceChannelPinForm = obj.useConjureVoiceChannelPinForm(projectId);
   ({ guildId, channels } = conjureVoiceChannelPinForm);
   const selected = conjureVoiceChannelPinForm.selected;
@@ -465,24 +465,24 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   }
   let channelIconWithGuild = null;
   if (null != selected) {
-    const tmp2Result = tmp2(8539);
+    const tmp2Result = tmp2(8561);
     channelIconWithGuild = tmp2Result.getChannelIconWithGuild(selected, guild);
   }
-  let obj2 = { variant: "text-sm/normal", color: "text-default", children: intl.string(selected(3863)["1vVBAw"]) };
-  const Text = tmp2(5270).Text;
+  let obj2 = { variant: "text-sm/normal", color: "text-default", children: intl.string(selected(3864)["1vVBAw"]) };
+  const Text = tmp2(5271).Text;
   intl = tmp2(1125).intl;
   const items = [closure_7(Text, obj2), , , ];
   const tmp9 = closure_9;
   if (channels.length > 0) {
     let stringResult;
     let obj3 = { hasIcons: null != channelIconWithGuild, children: closure_7(TableRow, obj4) };
-    const TableRowGroup = tmp2(7023).TableRowGroup;
-    TableRow = tmp2(6939).TableRow;
+    const TableRowGroup = tmp2(7047).TableRowGroup;
+    TableRow = tmp2(6963).TableRow;
     if (null == selected) {
       const intl3 = tmp2(1125).intl;
-      stringResult = intl3.string(tmp11(3863)["9+dfPT"]);
+      stringResult = intl3.string(tmp11(3864)["9+dfPT"]);
     } else {
-      const tmp2Result2 = tmp2(5640);
+      const tmp2Result2 = tmp2(5641);
       stringResult = tmp2Result2.computeChannelName(selected, UserStore, RelationshipStore);
     }
     obj4 = {
@@ -506,7 +506,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               return closure_1_2(id.id);
             }
           };
-          obj3 = { title: intl.string(_modDef3863.peOi1H) };
+          obj3 = { title: intl.string(_modDef3864.peOi1H) };
           ActionSheetActionCreators;
           tmp2 = ChannelPickerActionSheetDefault;
           intl = intl7.intl;
@@ -516,34 +516,34 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     tmp10Result = undefined;
     if (null != channelIconWithGuild) {
       const obj5 = { source: channelIconWithGuild };
-      tmp10Result = tmp10(tmp2(6947).TableRowIcon, obj5);
+      tmp10Result = tmp10(tmp2(6971).TableRowIcon, obj5);
     }
     tmp10Result4 = tmp10(TableRowGroup, obj3);
   } else {
-    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(selected(3863).JVUsIY) };
-    const Text2 = tmp2(5270).Text;
+    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(selected(3864).JVUsIY) };
+    const Text2 = tmp2(5271).Text;
     intl2 = tmp2(1125).intl;
     tmp10Result4 = tmp10(Text2, obj6);
   }
   items[1] = tmp10Result4;
   let tmp10Result5 = null;
   if (failed) {
-    const obj7 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(3863).d7EeAm) };
-    const Text3 = tmp2(5270).Text;
+    const obj7 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(3864).d7EeAm) };
+    const Text3 = tmp2(5271).Text;
     intl4 = tmp2(1125).intl;
     tmp10Result5 = tmp10(Text3, obj7);
   }
   items[2] = tmp10Result5;
   const obj8 = { style: tmp.actions, children: items1 };
-  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(3863).Iw0l8o), disabled: pinning, onPress: skip };
-  const Button = tmp2(5280).Button;
+  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(3864).Iw0l8o), disabled: pinning, onPress: skip };
+  const Button = tmp2(5281).Button;
   intl5 = tmp2(1125).intl;
   items1 = [closure_7(Button, obj9), ];
   let tmp10Result6 = null;
   const tmp18 = guild;
   if (channels.length > 0) {
-    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(3863).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
-    const Button2 = tmp2(5280).Button;
+    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(3864).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
+    const Button2 = tmp2(5281).Button;
     intl6 = tmp2(1125).intl;
     tmp10Result6 = tmp10(Button2, obj10);
   }

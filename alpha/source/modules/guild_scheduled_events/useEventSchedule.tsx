@@ -1,14 +1,14 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8935
+// Function ID: 8936
 // Name: useEventSchedule
-// Dependencies: [6819, 558, 576, 8924, 8931, 504, 2]
+// Dependencies: [6842, 558, 576, 8927, 8934, 504, 2]
 // Exports: getEventSchedule
 
-// Module 8932 (useEventSchedule)
+// Module 8935 (useEventSchedule)
 import react from "react" /* 576 */;
-import ScheduleUtils from "ScheduleUtils" /* 8924 */;
-import useEventException from "useEventException" /* 8931 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6819 */;
+import ScheduleUtils from "ScheduleUtils" /* 8927 */;
+import useEventException from "useEventException" /* 8934 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -275,7 +275,7 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEve
 
 export default tmp2;
 export const useEventScheduleById = tmp3;
-export const getEventSchedule = function getEventSchedule(guildEvent, recurrenceId) {
+export function getEventSchedule(guildEvent, recurrenceId) {
   let date1;
   let endDate;
   let startDate;
@@ -307,4 +307,4 @@ export const getEventSchedule = function getEventSchedule(guildEvent, recurrence
     date1 = new Date(guildEvent.scheduled_end_time);
   }
   obj = obj2;
-};
+}

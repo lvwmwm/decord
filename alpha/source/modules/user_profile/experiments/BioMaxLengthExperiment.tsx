@@ -1,13 +1,13 @@
-// Module ID: 8688
-// Function ID: 8689
+// Module ID: 8691
+// Function ID: 8692
 // Name: BioMaxLengthExperiment
-// Dependencies: [1084, 1452, 558, 576, 2]
+// Dependencies: [1084, 1453, 558, 576, 2]
 // Exports: getBioMaxLength
 
-// Module 8688 (BioMaxLengthExperiment)
+// Module 8691 (BioMaxLengthExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1084 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBioMaxL
 const result = size.fileFinishedImporting("modules/user_profile/experiments/BioMaxLengthExperiment.tsx");
 
 export const useBioMaxLength = tmp3;
-export const getBioMaxLength = function getBioMaxLength(location) {
+export function getBioMaxLength(location) {
   const obj = { location: location.location };
   return closure_2.getConfig(obj).maxLength;
-};
+}

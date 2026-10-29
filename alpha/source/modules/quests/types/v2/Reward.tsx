@@ -1,12 +1,12 @@
-// Module ID: 7825
-// Function ID: 7826
+// Module ID: 7848
+// Function ID: 7849
 // Name: Reward
-// Dependencies: [6748, 7816, 2]
+// Dependencies: [6771, 7839, 2]
 // Exports: questRewardsConfigV2FromServer
 
-// Module 7825 (Reward)
-import QuestTypes from "QuestTypes" /* 6748 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7816 */;
+// Module 7848 (Reward)
+import QuestTypes from "QuestTypes" /* 6771 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7839 */;
 import size from "module_2" /* 2 */;
 
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {
@@ -63,9 +63,9 @@ function _questRewardV2FromServer(type) {
 }
 const result = size.fileFinishedImporting("modules/quests/types/v2/Reward.tsx");
 
-export const questRewardsConfigV2FromServer = function questRewardsConfigV2FromServer(rewards_config) {
+export function questRewardsConfigV2FromServer(rewards_config) {
   let rewards;
   const obj = { assignmentMethod: rewards_config.assignment_method, rewards: rewards.map(_questRewardV2FromServer), rewardsExpireAt: rewards_config.rewards_expire_at, platforms: rewards_config.platforms };
   rewards = rewards_config.rewards;
   return obj;
-};
+}

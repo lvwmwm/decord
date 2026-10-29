@@ -15,7 +15,7 @@ const CONSOLE_LEVELS = tmp(700);
 const _mod712 = tmp(712);
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const sampleSpan = function sampleSpan(tracesSampler, parentSampled, arg2) {
+export function sampleSpan(tracesSampler, parentSampled, arg2) {
   let closure_0 = parentSampled;
   const tmp = require;
   const obj = _mod731;
@@ -89,4 +89,4 @@ export const sampleSpan = function sampleSpan(tracesSampler, parentSampled, arg2
     const items3 = [false];
     return items3;
   }
-};
+}

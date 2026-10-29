@@ -1,59 +1,59 @@
-// Module ID: 10126
-// Function ID: 10127
+// Module ID: 10159
+// Function ID: 10160
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5005, 1204, 7666, 4916, 4936, 4907, 7795, 8325, 1389, 1084, 4863, 4853, 1240, 1124, 1095, 21, 5004, 587, 7289, 504, 5011, 5197, 9696, 5640, 9759, 7790, 7419, 5058, 5629, 5085, 8336, 5743, 7601, 12, 9761, 10127, 10129, 10140, 5945, 1125, 10141, 10143, 1381, 10144, 10145, 10148, 4840, 10149, 1999, 10150, 10151, 8985, 1199, 7418, 1628, 1500, 7069, 8705, 10155, 5270, 10156, 10228, 10442, 10443, 558, 576, 9494, 10444, 10448, 7521, 14210, 8595, 10452, 8321, 5246, 11044, 9381, 5280, 8579, 2]
+// Dependencies: [5, 32, 19, 17, 5006, 1204, 7689, 4917, 4937, 4908, 7818, 8347, 1389, 1084, 4864, 4854, 1240, 1124, 1095, 21, 5005, 587, 7313, 504, 5012, 5198, 9728, 5641, 9791, 7812, 7442, 5059, 5630, 5086, 8358, 5745, 7624, 12, 9793, 10160, 10162, 10173, 5947, 1125, 10174, 10176, 1381, 10177, 10178, 10181, 4841, 10182, 2000, 10183, 10184, 8988, 1199, 7441, 1629, 1501, 7093, 8708, 10188, 5271, 10189, 10261, 10475, 10476, 558, 576, 9525, 10477, 10481, 7544, 14444, 8617, 10485, 8343, 5247, 11098, 9413, 5281, 8601, 2]
 // Exports: default
 
-// Module 10126 (ForumComposer)
+// Module 10159 (ForumComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ThreadConstants from "ThreadConstants" /* 1124 */;
 import intl6 from "intl" /* 1125 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import dismissible_content from "dismissible_content" /* 4840 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4853 */;
-import ChannelConstants from "ChannelConstants" /* 4863 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5197 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5246 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5629 */;
-import transitionToChannel from "transitionToChannel" /* 5743 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7418 */;
-import DraftStore2 from "DraftStore" /* 7666 */;
-import MessageParser from "MessageParser" /* 7790 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7795 */;
-import Tracking from "Tracking" /* 8321 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8336 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import useFocusHandlers from "useFocusHandlers" /* 10143 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10151 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10156 */;
-import AppliedForumTag from "AppliedForumTag" /* 10444 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10452 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import dismissible_content from "dismissible_content" /* 4841 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import ChannelConstants from "ChannelConstants" /* 4864 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5198 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
+import transitionToChannel from "transitionToChannel" /* 5745 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7441 */;
+import DraftStore2 from "DraftStore" /* 7689 */;
+import MessageParser from "MessageParser" /* 7812 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7818 */;
+import Tracking from "Tracking" /* 8343 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8358 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import useFocusHandlers from "useFocusHandlers" /* 10176 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10184 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10189 */;
+import AppliedForumTag from "AppliedForumTag" /* 10477 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10485 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5005 */;
+import AccessibilityStore from "AccessibilityStore" /* 5006 */;
 import ThemeStore from "ThemeStore" /* 1204 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4907 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants_mod from "Constants" /* 1084 */;
 import Constants_mod2 from "Constants" /* 1095 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
 const SlowmodeStore = SlowmodeStore2;
-let c2, c3, c5, closure_1, maxLength, set;
+let c2, c3, c5, c6, closure_3, maxLength, set;
 
 let Fonts;
 let StyleSheet;
@@ -77,9 +77,9 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const TagIcon = tmp(9494);
-const DismissibleActionSheet = tmp(10443);
-const ImageCarouselDefault = tmp5(10448);
+const TagIcon = tmp(9525);
+const DismissibleActionSheet = tmp(10476);
+const ImageCarouselDefault = tmp5(10481);
 function ActionBar(channel) {
   let Button;
   let ChatIcon;
@@ -123,7 +123,7 @@ function ActionBar(channel) {
   const tmp6 = useKeyboardTypeDefault();
   let closure_7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
-  const tmp8 = tmp6 === channel(1628).KeyboardTypes.MEDIA;
+  const tmp8 = tmp6 === channel(1629).KeyboardTypes.MEDIA;
   let closure_8 = tmp8;
   if (!isMediaChannelResult) {
     isMediaChannelResult = stateFromStores1 && stateFromStores.length > 0;
@@ -166,15 +166,15 @@ function ActionBar(channel) {
         },
       foregroundRipple: true
     };
-    const HeaderActionButton = tmp2(7521).HeaderActionButton;
+    const HeaderActionButton = tmp2(7544).HeaderActionButton;
     intl = tmp2(1125).intl;
     items4 = [, ];
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(14210).KeyboardIcon;
+      ImageIcon = tmp2(14444).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(8595).ImageIcon;
+      ImageIcon = tmp2(8617).ImageIcon;
     }
     tmp16Result = tmp16(HeaderActionButton, obj6);
   }
@@ -183,7 +183,7 @@ function ActionBar(channel) {
     const obj7 = {
       accessibilityLabel: intl2.string(tmp2(1125).t["112vVE"]),
       style: items6,
-      IconComponent: tmp2(9494).TagIcon,
+      IconComponent: tmp2(9525).TagIcon,
       onPress: function handlePressTagsButton() {
           let intl;
           metroRequire.dismiss();
@@ -206,29 +206,29 @@ function ActionBar(channel) {
               }
             }
           };
-          const tmp3 = asyncRequire(11044, dependencyMap.paths);
+          const tmp3 = asyncRequire(11098, dependencyMap.paths);
           intl = intl6.intl;
           openLazy(tmp3, "ForumPostTagsActionSheet", obj);
         },
       foregroundRipple: true
     };
-    const HeaderActionButton2 = tmp2(7521).HeaderActionButton;
+    const HeaderActionButton2 = tmp2(7544).HeaderActionButton;
     intl2 = tmp2(1125).intl;
     items6 = [, ];
     ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(10143).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(10176).PostComposerInputs.CONTENT;
   if (tmp18) {
-    const obj8 = { accessibilityLabel: intl3.string(tmp2(1125).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9381).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
-    const HeaderActionButton3 = tmp2(7521).HeaderActionButton;
+    const obj8 = { accessibilityLabel: intl3.string(tmp2(1125).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9413).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
+    const HeaderActionButton3 = tmp2(7544).HeaderActionButton;
     intl3 = tmp2(1125).intl;
     tmp18 = closure_29(HeaderActionButton3, obj8);
   }
   items5[2] = tmp18;
   const obj9 = { style: tmp.postButtonWrapper, children: closure_29(Button, obj10) };
-  Button = tmp2(5280).Button;
+  Button = tmp2(5281).Button;
   const intl4 = tmp2(1125).intl;
   const string = intl4.string;
   const t = tmp2(1125).t;
@@ -253,7 +253,7 @@ function ActionBar(channel) {
     submitting = !canPost;
   }
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  ChatIcon = tmp2(8579).ChatIcon;
+  ChatIcon = tmp2(8601).ChatIcon;
   items5[3] = closure_29(closure_9, obj9);
   items3[1] = closure_30(closure_9, obj5);
   return closure_30(closure_9, obj3);
@@ -301,7 +301,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tags(t
     tags = tmp4.tags;
     if (cResult[0] !== tmp4.tagIcon) {
       let obj2 = { size: "sm", style: tmp4.tagIcon };
-      const tmp7 = set(TagIcon.TagIcon, obj2);
+      const tmp7 = closure_29(TagIcon.TagIcon, obj2);
       cResult[0] = tmp4.tagIcon;
       cResult[1] = tmp7;
       tmp5 = tmp7;
@@ -366,7 +366,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tags(t
     let obj = { style: tmp.tags, children: items };
     let obj2 = { size: "sm", style: tmp.tagIcon };
     items = [
-      set(TagIcon.TagIcon, obj2),
+      closure_29(TagIcon.TagIcon, obj2),
       tags.map((tag, index) => {
           let items;
           let tmp2 = 0 !== index;
@@ -704,7 +704,7 @@ export default function ForumComposer(parentChannel) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -739,7 +739,7 @@ export default function ForumComposer(parentChannel) {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           if (1 === tmp4) {
@@ -827,142 +827,188 @@ export default function ForumComposer(parentChannel) {
   const useCallback2 = obj.useCallback;
   closure_0 = tmp42(function*(arg0, value) {
     let closure_2;
-    let stickerId;
     closure_0 = arg0;
-    if (1 === c5) {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c6 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        let tmp71;
-        if (closure_0.hasFlag(constants2.REQUIRE_TAG)) {
-          if (0 === length.length) {
-            const obj8 = closure_0(threadSettingsDraft[41]);
-            closure_1_22(obj8.makeEmptyTagsError());
-          }
-        }
-        closure_1_13(true);
-        const parse = thread(threadSettingsDraft[29]).parse;
-        const tmp68 = thread(threadSettingsDraft[29]);
-        if (c5) {
-          tmp71 = closure_1;
-        } else {
-          tmp71 = closure_0;
-        }
-        const content = parse(tmp71, str4).content;
-        let c4 = 2;
-        constants(null);
-        closure_1_22(null);
-        if (c5) {
-          c5 = 4;
-          c6 = 1;
-          const obj9 = { value: onPressSticker(content), done: false };
-          return obj9;
-        } else {
-          let tmp87;
-          const tmp84 = createForumPost;
-          const tmp85 = content;
-          if (null != stickerId) {
-            const items = [stickerId];
-            tmp87 = items;
-          }
-          c5 = 5;
-          c6 = 1;
-          const obj10 = { value: tmp84(tmp85, tmp87, stateFromStores5), done: false };
-          return obj10;
-        }
+        return { value: "IconComponent", done: "IconComponent" };
       }
-    } else if (2 === c5) {
-      c4 = 0;
-      closure_1_13(false);
-      throw closure_3;
     } else {
-      if (3 === c5) {
-        c4 = 1;
-        const tmp = closure_3;
-        const body = tmp.body;
-        let code;
-        if (body != null) {
-          code = body.code;
-        }
-        if (null != code) {
-          const body3 = tmp.body;
-          let code1;
-          if (body3 != null) {
-            code1 = body3.code;
-          }
-          if (code1 === constants.AUTOMOD_TITLE_BLOCKED) {
-            const obj5 = closure_0(threadSettingsDraft[41]);
-            constants(obj5.makeAutomodViolationError(tmp.body, closure_0));
-          } else {
-            const body4 = tmp.body;
-            let code2;
-            if (body4 != null) {
-              code2 = body4.code;
-            }
-            if (code2 === constants.AUTOMOD_MESSAGE_BLOCKED) {
-              const obj4 = closure_0(threadSettingsDraft[41]);
-              closure_1_22(obj4.makeAutomodViolationError(tmp.body, closure_0));
-            } else {
-              const body5 = tmp.body;
-              let code3;
-              if (body5 != null) {
-                code3 = body5.code;
-              }
-              let tmp25 = code3 === constants.INVALID_FORM_BODY;
-              if (tmp25) {
-                const body2 = tmp.body;
-                let name;
-                if (body2 != null) {
-                  const errors = body2.errors;
-                  if (errors != null) {
-                    name = errors.name;
-                  }
-                }
-                tmp25 = null != name;
-              }
-              if (tmp25) {
-                const obj3 = closure_0(threadSettingsDraft[41]);
-                constants(obj3.makeApiNameValidationError());
-              }
-            }
-          }
-        }
-      } else {
-        if (4 === c5) {
+      let c4;
+      try {
+        let closure_1;
+        let stickerId;
+        let content;
+        c6 = 2;
+        if (0 === c5) {
           if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c6 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_1 = tmp4;
+            stickerId = closure_0.stickerId;
+            content = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj7 = { value, done: true };
+              return obj7;
+            } else {
+              let tmp71;
+              if (closure_0.hasFlag(constants2.REQUIRE_TAG)) {
+                if (0 === length.length) {
+                  const obj8 = closure_0(threadSettingsDraft[41]);
+                  closure_1_22(obj8.makeEmptyTagsError());
+                }
+              }
+              closure_1_13(true);
+              const parse = thread(threadSettingsDraft[29]).parse;
+              const tmp68 = thread(threadSettingsDraft[29]);
+              if (c5) {
+                tmp71 = closure_1;
+              } else {
+                tmp71 = closure_0;
+              }
+              content = parse(tmp71, str4).content;
+              c4 = 2;
+              constants(null);
+              closure_1_22(null);
+              if (c5) {
+                c5 = 4;
+                c6 = 1;
+                const obj9 = { value: onPressSticker(content), done: false };
+                return obj9;
+              } else {
+                let tmp87;
+                const tmp84 = createForumPost;
+                const tmp85 = content;
+                if (null != stickerId) {
+                  const items = [stickerId];
+                  tmp87 = items;
+                }
+                c5 = 5;
+                c6 = 1;
+                const obj10 = { value: tmp84(tmp85, tmp87, stateFromStores5), done: false };
+                return obj10;
+              }
+            }
+          } else if (2 === c5) {
             c4 = 0;
             closure_1_13(false);
-            c6 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
+            throw closure_3;
+          } else {
+            if (3 === c5) {
+              c4 = 1;
+              const tmp = closure_3;
+              const body = tmp.body;
+              let code;
+              if (body != null) {
+                code = body.code;
+              }
+              if (null != code) {
+                const body3 = tmp.body;
+                let code1;
+                if (body3 != null) {
+                  code1 = body3.code;
+                }
+                if (code1 === constants.AUTOMOD_TITLE_BLOCKED) {
+                  const obj5 = closure_0(threadSettingsDraft[41]);
+                  constants(obj5.makeAutomodViolationError(tmp.body, closure_0));
+                } else {
+                  const body4 = tmp.body;
+                  let code2;
+                  if (body4 != null) {
+                    code2 = body4.code;
+                  }
+                  if (code2 === constants.AUTOMOD_MESSAGE_BLOCKED) {
+                    const obj4 = closure_0(threadSettingsDraft[41]);
+                    closure_1_22(obj4.makeAutomodViolationError(tmp.body, closure_0));
+                  } else {
+                    const body5 = tmp.body;
+                    let code3;
+                    if (body5 != null) {
+                      code3 = body5.code;
+                    }
+                    let tmp25 = code3 === constants.INVALID_FORM_BODY;
+                    if (tmp25) {
+                      const body2 = tmp.body;
+                      let name;
+                      if (body2 != null) {
+                        const errors = body2.errors;
+                        if (errors != null) {
+                          name = errors.name;
+                        }
+                      }
+                      tmp25 = null != name;
+                    }
+                    if (tmp25) {
+                      const obj3 = closure_0(threadSettingsDraft[41]);
+                      constants(obj3.makeApiNameValidationError());
+                    }
+                  }
+                }
+              }
+            } else {
+              if (4 === c5) {
+                if (arg0 === 1) {
+                  c6 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 0;
+                  closure_1_13(false);
+                  c6 = 3;
+                  const obj11 = { value, done: true };
+                  return obj11;
+                }
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                closure_1_13(false);
+                c6 = 3;
+                const obj = { value, done: true };
+                return obj;
+              }
+              c4 = 1;
+            }
+            c4 = 0;
+            closure_1_13(false);
           }
-        } else if (arg0 === 1) {
           c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          closure_1_13(false);
-          c6 = 3;
-          const obj = { value, done: true };
-          return obj;
+          return { value: "IconComponent", done: "IconComponent" };
         }
-        c4 = 1;
+      } catch (tmp100) {
+        closure_3 = tmp100;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp100;
+        } else if (1 === tmp102) {
+          c5 = 2;
+        } else {
+          c5 = 3;
+        }
       }
-      c4 = 0;
-      closure_1_13(false);
     }
-    yield "IconComponent";
-    closure_1 = tmp4;
-    stickerId = closure_0.stickerId;
-    return "Reflect";
   });
   const items13 = [parentChannel, first1.length, isEdit, thread, str4, callback4, createForumPost, stateFromStores5];
   callback21 = useCallback2(function() {
@@ -1190,7 +1236,7 @@ export default function ForumComposer(parentChannel) {
               }
               if (tmp7Result !== name2) {
                 const obj = { name: tmp7Result };
-                const tmp5Result = tmp5(8336);
+                const tmp5Result = tmp5(8358);
                 tmp5Result.changeThreadSettings(parentChannel.id, obj);
                 closure_15(tmp7Result);
               }
@@ -1346,7 +1392,7 @@ export default function ForumComposer(parentChannel) {
               actionSheetKey: "ThumbnailBottomSheet",
               importer: MediaPostMultipleThumbnailActionSheetImporter
             };
-            tmp3 = set(DismissibleActionSheet.DismissibleActionSheet, obj);
+            tmp3 = createForumPost(DismissibleActionSheet.DismissibleActionSheet, obj);
           }
           return tmp3;
         }

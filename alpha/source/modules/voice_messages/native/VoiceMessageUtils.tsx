@@ -1,22 +1,22 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13616
+// Function ID: 13617
 // Name: VoiceMessageUtils
-// Dependencies: [5, 2011, 13293, 13294, 1084, 3, 13384, 206, 12, 5775, 1264, 5248, 1381, 2]
+// Dependencies: [5, 2012, 13526, 13527, 1084, 3, 13617, 206, 12, 5777, 1264, 5249, 1381, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 13383 (VoiceMessageUtils)
+// Module 13616 (VoiceMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import Constants from "Constants" /* 1084 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
 import PlatformUtils from "PlatformUtils" /* 1381 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5775 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 13384 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 13617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13293 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13294 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13526 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13527 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f118162 = (item) => Math.min(item, closure_1_13);
+const f119681 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -51,7 +51,7 @@ let obj = function _startAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -109,7 +109,7 @@ let obj = function _startAudioRecording() {
             if (recordingId !== closure_0) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } else {
               closure_130_9(constants.STARTED);
               recordingId = closure_130_10;
@@ -117,7 +117,7 @@ let obj = function _startAudioRecording() {
               closure_130_10(Date.now());
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           }
         }
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f118162);
+  const mapped1 = arr3.map(f119681);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -185,7 +185,7 @@ obj = function _endAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -256,7 +256,7 @@ obj = function _stopAndCacheAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _stopAndCacheAudioRecording() {
           closure_129_23();
           closure_129_7(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -322,25 +322,25 @@ let closure_21 = module_12.throttle((arg0) => {
 }, 100);
 let result = size.fileFinishedImporting("modules/voice_messages/native/VoiceMessageUtils.tsx");
 
-export const generateBase64EncodedWaveform = function generateBase64EncodedWaveform(arg0) {
+export function generateBase64EncodedWaveform(arg0) {
   let arr = arg0;
   if (arg0.length > authStore3) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f118162);
+  const mapped = arr.map(f119681);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);
   return fromByteArray(uint8Array);
-};
-export const startAudioRecording = function startAudioRecording() {
+}
+export function startAudioRecording() {
   return obj(...arguments);
-};
-export const endAudioRecording = function endAudioRecording() {
+}
+export function endAudioRecording() {
   return obj(...arguments);
-};
+}
 export { stopAndCacheAudioRecording };
-export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCELLED_DURATION, durationSecs, startTimeMillis) {
+export function emitVoiceMessageRecorded(CANCELLED_DURATION, durationSecs, startTimeMillis) {
   if (null != startTimeMillis) {
     const _Date = Date;
     obj = { recording_start_timestamp: startTimeMillis, recording_stop_timestamp: Date.now(), duration_secs: durationSecs, result: CANCELLED_DURATION, initialize_secs };
@@ -350,12 +350,12 @@ export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCEL
     track(VOICE_MESSAGE_RECORDED, obj);
     initialize_secs = null;
   }
-};
-export const triggerHaptic = function triggerHaptic() {
+}
+export function triggerHaptic() {
   const triggerHapticFeedback = HapticUtils.triggerHapticFeedback;
   HapticUtils;
   obj = PlatformUtils;
   const isAndroidResult = obj.isAndroid();
   const HapticFeedbackTypes = HapticUtils.HapticFeedbackTypes;
   const result = triggerHapticFeedback(isAndroidResult ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
-};
+}

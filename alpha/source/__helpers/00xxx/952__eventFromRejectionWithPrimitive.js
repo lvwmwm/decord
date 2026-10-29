@@ -30,7 +30,7 @@ function _getUnhandledRejectionError(reason) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const _eventFromRejectionWithPrimitive = function _eventFromRejectionWithPrimitive(reason) {
+export function _eventFromRejectionWithPrimitive(reason) {
   let items;
   let obj2;
   const obj = { exception: obj2 };
@@ -38,7 +38,7 @@ export const _eventFromRejectionWithPrimitive = function _eventFromRejectionWith
   items = [{ type: "UnhandledRejection", value: "Non-Error promise rejection captured with value: " + String(reason) }];
   ({ type: "UnhandledRejection", value: "Non-Error promise rejection captured with value: " + String(reason) });
   return obj;
-};
+}
 export { _getUnhandledRejectionError };
 export const globalHandlersIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
   let obj = arg0;

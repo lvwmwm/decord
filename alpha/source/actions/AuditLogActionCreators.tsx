@@ -1,19 +1,19 @@
-// Module ID: 19355
-// Function ID: 19356
+// Module ID: 19588
+// Function ID: 19589
 // Name: AuditLogActionCreators
-// Dependencies: [19350, 1084, 1294, 584, 2]
+// Dependencies: [19583, 1084, 1294, 584, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 19355 (AuditLogActionCreators)
+// Module 19588 (AuditLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19350 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19583 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f140128 = (body) => {
+const f141698 = (body) => {
   let application_commands;
   let audit_log_entries;
   let auto_moderation_rules;
@@ -25,7 +25,7 @@ const f140128 = (body) => {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
 };
-const f140129 = () => {
+const f141699 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "AUDIT_LOG_FETCH_FAIL" });
 };
@@ -64,7 +64,7 @@ function makeRequest(arg0, arg1) {
 ({ Endpoints: closure_4, AUDIT_LOG_PAGE_LIMIT: hasOwnProperty } = Constants);
 const result = size.fileFinishedImporting("actions/AuditLogActionCreators.tsx");
 
-export const fetchLogs = function fetchLogs(guildId, userId, targetId, action) {
+export function fetchLogs(guildId, userId, targetId, action) {
   const tmp = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
   if (!tmp) {
     if (null != guildId) {
@@ -72,11 +72,11 @@ export const fetchLogs = function fetchLogs(guildId, userId, targetId, action) {
       obj.dispatch({ type: "AUDIT_LOG_FETCH_START" });
       const obj2 = { userId, action, targetId };
       const promise = makeRequest(guildId, obj2);
-      return promise.then(f140128, f140129);
+      return promise.then(f141698, f141699);
     }
   }
-};
-export const fetchNextLogPage = function fetchNextLogPage(guildId) {
+}
+export function fetchNextLogPage(guildId) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
@@ -113,8 +113,8 @@ export const fetchNextLogPage = function fetchNextLogPage(guildId) {
       }
     }
   }
-};
-export const filterByAction = function filterByAction(action, guildId) {
+}
+export function filterByAction(action, guildId) {
   const tmp2 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
   if (!tmp2) {
     if (null != guildId) {
@@ -130,14 +130,14 @@ export const filterByAction = function filterByAction(action, guildId) {
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action, targetId: null };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f140128, f140129);
+          nextPromise = promise.then(f141698, f141699);
         }
       }
       return nextPromise;
     }
   }
-};
-export const filterByUserId = function filterByUserId(id, guildId) {
+}
+export function filterByUserId(id, guildId) {
   const tmp2 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
   if (!tmp2) {
     if (null != guildId) {
@@ -151,16 +151,16 @@ export const filterByUserId = function filterByUserId(id, guildId) {
         if (null != guildId) {
           const tmp10Result = tmp10(584);
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          const obj2 = { userId: id, action: "Array", targetId: "application" };
+          const obj2 = { userId: id, action: "Array", targetId: "toCharArray$esjava$1" };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f140128, f140129);
+          nextPromise = promise.then(f141698, f141699);
         }
       }
       return nextPromise;
     }
   }
-};
-export const filterByTargetId = function filterByTargetId(targetId, arg1) {
+}
+export function filterByTargetId(targetId, arg1) {
   const tmp2 = GuildSettingsAuditLogStore.isLoading || GuildSettingsAuditLogStore.isLoadingNextPage;
   if (!tmp2) {
     if (null != arg1) {
@@ -176,10 +176,10 @@ export const filterByTargetId = function filterByTargetId(targetId, arg1) {
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action: "Array", targetId };
           const promise = makeRequest(arg1, obj2);
-          nextPromise = promise.then(f140128, f140129);
+          nextPromise = promise.then(f141698, f141699);
         }
       }
       return nextPromise;
     }
   }
-};
+}

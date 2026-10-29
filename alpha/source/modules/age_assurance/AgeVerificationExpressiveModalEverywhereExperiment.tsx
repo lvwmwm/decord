@@ -1,12 +1,12 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8142
+// Function ID: 8143
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8119 (AgeVerificationExpressiveModalEverywhereExperiment)
+// Module 8142 (AgeVerificationExpressiveModalEverywhereExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVeri
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationExpressiveModalEverywhereExperiment.tsx");
 
 export const useIsAgeVerificationExpressiveModalEverywhereEnabled = tmp2;
-export const isAgeVerificationExpressiveModalEverywhereEnabled = function isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint) {
+export function isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint) {
   const obj = { location: entryPoint };
   return closure_2.getConfig(obj).enabled;
-};
+}

@@ -1,23 +1,23 @@
-// Module ID: 18852
-// Function ID: 18853
+// Module ID: 19085
+// Function ID: 19086
 // Name: VoicePanelUserSheet
-// Dependencies: [109, 19, 17, 4856, 4946, 1389, 1084, 21, 5004, 587, 558, 576, 7289, 7314, 14509, 8716, 504, 13251, 4832, 7320, 14508, 8705, 1125, 14518, 7448, 9678, 9795, 5085, 6025, 14585, 18851, 9450, 1199, 5705, 5270, 14531, 14588, 5301, 5305, 7257, 2]
+// Dependencies: [109, 19, 17, 4857, 4947, 1389, 1084, 21, 5005, 587, 558, 576, 7313, 7338, 14743, 8719, 504, 13485, 4833, 7344, 14742, 8708, 1125, 14752, 7471, 9710, 9827, 5086, 6029, 14819, 19084, 9481, 1199, 5707, 5271, 14765, 14822, 5302, 2]
 
-// Module 18852 (VoicePanelUserSheet)
+// Module 19085 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1084 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7448 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8705 */;
-import UserProfileActivity from "UserProfileActivity" /* 14531 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 18851 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import UserProfileActivity from "UserProfileActivity" /* 14765 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19084 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import RelationshipStore from "RelationshipStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import RelationshipStore from "RelationshipStore" /* 4947 */;
 import UserStore from "UserStore" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,9 +48,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overfl
   let stateFromStores;
   let tmp12;
   let tmp14;
-  let tmp15;
-  let tmp19;
+  let tmp16;
   let tmp20;
+  let tmp21;
   let tmp = userId;
   let obj = userId(analyticsLocations[11]);
   const cResult = obj.c(53);
@@ -75,91 +75,73 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overfl
     first = cResult[0];
   }
   if (cResult[1] !== userId) {
-    class S {
-      constructor() {
-        obj = { relationshipType: closure_9.getRelationshipType(userId), isIgnored: closure_9.isIgnored(userId) };
-        return obj;
-      }
-    }
+    const fn = function v() {
+      const obj = { relationshipType: RelationshipStore.getRelationshipType(userId), isIgnored: RelationshipStore.isIgnored(userId) };
+      return obj;
+    };
     cResult[1] = userId;
-    cResult[2] = S;
-    tmp12 = S;
+    cResult[2] = fn;
+    tmp12 = fn;
   } else {
-    class S {
-      constructor() {
-        obj = { relationshipType: closure_9.getRelationshipType(userId), isIgnored: closure_9.isIgnored(userId) };
-        return obj;
-      }
-    }
+    tmp12 = cResult[2];
   }
   const tmpResult = tmp(analyticsLocations[16]);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp12);
   const relationshipType = stateFromStoresObject.relationshipType;
   const BLOCKED = RelationshipTypes.BLOCKED;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        obj = { relationshipType: closure_9.getRelationshipType(userId), isIgnored: closure_9.isIgnored(userId) };
-        return obj;
-      }
-    }
     const items1 = [UserStore];
     cResult[3] = items1;
     tmp14 = items1;
   } else {
-    class S {
-      constructor() {
-        obj = { relationshipType: closure_9.getRelationshipType(userId), isIgnored: closure_9.isIgnored(userId) };
-        return obj;
-      }
-    }
+    tmp14 = cResult[3];
   }
   if (cResult[4] !== userId) {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
     cResult[4] = userId;
     cResult[5] = V;
-    tmp15 = V;
+    tmp16 = V;
   } else {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
   }
   const tmpResult3 = tmp(analyticsLocations[16]);
-  stateFromStores = tmpResult3.useStateFromStores(tmp14, tmp15);
+  stateFromStores = tmpResult3.useStateFromStores(tmp14, tmp16);
   channelId(analyticsLocations[17])(userId, guildId);
   const DeveloperMode = tmp(tmp2[18]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
     let obj3 = { autoTrackExposure: false };
-    cResult[6] = tmp21;
+    cResult[6] = tmp22;
     cResult[7] = obj3;
-    tmp20 = obj3;
-    tmp19 = tmp21;
+    tmp21 = obj3;
+    tmp20 = tmp22;
   } else {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
-    tmp20 = cResult[7];
+    tmp21 = cResult[7];
   }
   const tmp4Result = channelId(analyticsLocations[19]);
-  const tidaWebformEnabled = tmp4Result.useExperiment(tmp19, tmp20).tidaWebformEnabled;
+  const tidaWebformEnabled = tmp4Result.useExperiment(tmp20, tmp21).tidaWebformEnabled;
   if (cResult[8] === analyticsLocations) {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
   }
@@ -168,22 +150,16 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overfl
   if (cResult[24] === analyticsLocations) {
     class V {
       constructor() {
-        return closure_10.getUser(userId);
+        return UserStore.getUser(userId);
       }
     }
   }
   class X {
-    constructor(arg0) {
-      obj = {};
-      tmp = closure_1(closure_2[21]);
-      merged = Object.assign(context);
-      obj.showGuildProfile = userId;
-      obj.userId = userId;
-      obj.channelId = channelId;
-      obj.sourceAnalyticsLocations = analyticsLocations;
-      obj.ignoreBlockedSpeedBump = true;
-      tmpResult = tmp(obj);
-      return;
+    constructor(showGuildProfile) {
+      const obj = { showGuildProfile, userId, channelId, sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true };
+      const tmp = showUserProfileActionSheetDefault;
+      const merged = Object.assign(context);
+      tmp(obj);
     }
   }
   cResult[24] = analyticsLocations;
@@ -422,9 +398,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
   }
   const tmpResult5 = tmp(504);
   const stateFromStores2 = tmpResult5.useStateFromStores(tmp13, tmp14);
-  const tmpResult6 = tmp(6025);
+  const tmpResult6 = tmp(6029);
   const name = tmpResult6.useName(guildId, channelId, stateFromStores);
-  const live = userId(14585)(userId).live;
+  const live = userId(14819)(userId).live;
   react = tmp17;
   if (cResult[8] !== (null == stateFromStores || null == stateFromStores1 || null == stateFromStores2)) {
     class C {
@@ -481,7 +457,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
   let items4;
   let items5;
   let items6;
-  let obj10;
   ({ guildId, channelId } = userId);
   userId = userId.userId;
   let tmp = closure_15();
@@ -495,9 +470,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
   const items2 = [UserStore];
   const obj4 = channelId(504);
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj5 = channelId(6025);
+  const obj5 = channelId(6029);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(14585)(userId).live;
+  const live = userId(14819)(userId).live;
   react = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = react.useEffect(() => {
@@ -514,33 +489,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
         let tmp11Result;
         const avatarURL = stateFromStores.getAvatarURL(guildId, 48, false);
         if (null != avatarURL) {
-          const tmp2Result = channelId(9450);
+          const tmp2Result = channelId(9481);
           cachedSourceFromURI = tmp2Result.getCachedSourceFromURI(avatarURL);
         }
         const avatarDecoration = stateFromStores.avatarDecoration;
-        BottomSheet = tmp2(5301).BottomSheet;
-        const BottomSheetScrollView = tmp2(5305).BottomSheetScrollView;
-        const obj2 = { bottom: true, style: tmp.wrapper, children: items6 };
+        const obj2 = { style: tmp.wrapper, children: items6 };
         const obj6 = { style: tmp.header, children: items5 };
         const obj7 = { style: tmp.user, children: items4 };
-        const SafeAreaPaddingView = tmp2(7257).SafeAreaPaddingView;
+        BottomSheet = tmp2(5302).BottomSheet;
         if (null != avatarDecoration) {
           const obj8 = { source: cachedSourceFromURI, size: channelId(1199).AvatarSizes.LARGE_48, avatarDecoration };
           const Avatar = tmp2(1199).Avatar;
           tmp11Result = tmp11(Avatar, obj8);
         } else {
           size = { source: cachedSourceFromURI, resizeMode: "stretch", width: v48, height: v48, style: tmp.avatar };
-          const tmp7Result = userId(5705);
+          const tmp7Result = userId(5707);
           tmp11Result = tmp11(tmp7Result, size);
         }
-        const obj9 = { scrollable: true, children: closure_12(BottomSheetScrollView, obj10) };
         items4 = [tmp11Result, ];
-        obj10 = { children: closure_13(SafeAreaPaddingView, obj2) };
-        const obj11 = { variant: "text-md/semibold", style: tmp.username, lineClamp: 1, children: name };
-        items4[1] = closure_12(channelId(5270).Text, obj11);
+        const obj10 = { variant: "text-md/semibold", style: tmp.username, lineClamp: 1, children: name };
+        const obj9 = { children: closure_13(closure_6, obj2) };
+        items4[1] = closure_12(channelId(5271).Text, obj10);
         items5 = [closure_13(closure_6, obj7), ];
-        const obj12 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
-        items5[1] = closure_12(closure_16, obj12);
+        const obj11 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
+        items5[1] = closure_12(closure_16, obj11);
         items6 = [
           closure_13(closure_6, obj6),
           live.map((activity, index) => {
@@ -555,8 +527,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelUs
                 }),
 
         ];
-        const obj13 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_12(userId(14588), obj13);
+        const obj12 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
+        items6[2] = closure_12(userId(14822), obj12);
         return closure_12(BottomSheet, obj9);
       }
     }

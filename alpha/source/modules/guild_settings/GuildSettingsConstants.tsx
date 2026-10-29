@@ -1,10 +1,10 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 19646
+// Function ID: 19647
 // Name: GuildSettingsConstants
 // Dependencies: [1125, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 19413 (GuildSettingsConstants)
+// Module 19646 (GuildSettingsConstants)
 import intl2 from "intl" /* 1125 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export const MAX_KEYWORDS = 10;
 export const MAX_KEYWORD_LENGTH = 30;
 export const GuildSettingsRoleEditSections = { DISPLAY: 0, [0]: "DISPLAY", PERMISSIONS: 1, [1]: "PERMISSIONS", MEMBERS: 2, [2]: "MEMBERS", VERIFICATIONS: 3, [3]: "VERIFICATIONS" };
 export { ERROR_KEY_TO_LABEL_FUNC };
-export const getSettingsErrorMessage = function getSettingsErrorMessage(arg0) {
+export function getSettingsErrorMessage(arg0) {
   if (0 === Object.keys(arg0).length) {
     return null;
   } else {
@@ -52,5 +52,5 @@ export const getSettingsErrorMessage = function getSettingsErrorMessage(arg0) {
     }
     return combined;
   }
-};
+}
 export const VANITY_URL_INVITE_ENDPOINT = "https://discord.gg";

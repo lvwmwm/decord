@@ -1,9 +1,9 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7354
+// Function ID: 7355
 // Name: ActionSheetRow
-// Dependencies: [109, 19, 17, 21, 558, 576, 6939, 6947, 7023, 7331, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 6963, 6971, 7047, 7355, 2]
 
-// Module 7330 (ActionSheetRow)
+// Module 7354 (ActionSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,10 +13,10 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow2 = tmp(6939);
-const TableRowIcon2 = tmp(6947);
-const TableRowGroup = tmp(7023);
-const TableSwitchRow2 = tmp(7331);
+const TableRow2 = tmp(6963);
+const TableRowIcon2 = tmp(6971);
+const TableRowGroup = tmp(7047);
+const TableSwitchRow2 = tmp(7355);
 let closure_2 = ["label", "variant", "arrow", "icon"];
 const View = react_native.View;
 const jsx = Fragment.jsx;

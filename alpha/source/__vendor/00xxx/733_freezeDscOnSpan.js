@@ -123,11 +123,11 @@ function getDynamicSamplingContextFromSpan(spanContext) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const _frozenDsc = "_frozenDsc";
 
-export const freezeDscOnSpan = function freezeDscOnSpan(arg0, arg1) {
+export function freezeDscOnSpan(arg0, arg1) {
   const obj = _mod698;
   const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
-};
-export const getDynamicSamplingContextFromClient = function getDynamicSamplingContextFromClient(trace_id, getOptions) {
+}
+export function getDynamicSamplingContextFromClient(trace_id, getOptions) {
   let obj2;
   const options = getOptions.getOptions();
   let DEFAULT_ENVIRONMENT = options.environment;
@@ -140,8 +140,8 @@ export const getDynamicSamplingContextFromClient = function getDynamicSamplingCo
   obj2 = _mod713;
   getOptions.emit("createDsc", obj);
   return obj;
-};
-export const getDynamicSamplingContextFromScope = function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
+}
+export function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
   let obj2;
   const propagationContext = getPropagationContext.getPropagationContext();
   let dsc = propagationContext.dsc;
@@ -160,10 +160,10 @@ export const getDynamicSamplingContextFromScope = function getDynamicSamplingCon
     dsc = obj;
   }
   return dsc;
-};
+}
 export { getDynamicSamplingContextFromSpan };
-export const spanToBaggageHeader = function spanToBaggageHeader(arg0) {
+export function spanToBaggageHeader(arg0) {
   const tmp = getDynamicSamplingContextFromSpan(arg0);
   const obj = MAX_BAGGAGE_STRING_LENGTH;
   return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
-};
+}

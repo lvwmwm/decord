@@ -1,13 +1,13 @@
-// Module ID: 10241
-// Function ID: 10242
+// Module ID: 10274
+// Function ID: 10275
 // Name: createMessage
-// Dependencies: [7731, 1403, 1389, 1084, 38, 10237, 2]
+// Dependencies: [7754, 1403, 1389, 1084, 38, 10270, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 10241 (createMessage)
+// Module 10274 (createMessage)
 import _modDef38 from "module_38" /* 38 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7731 */;
-import createNonce from "createNonce" /* 10237 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7754 */;
+import createNonce from "createNonce" /* 10270 */;
 import UserRecord from "UserRecord" /* 1403 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
@@ -88,10 +88,10 @@ export default function createMessage(tts) {
   }
   return obj5;
 };
-export const userRecordToServer = function userRecordToServer(currentUser) {
+export function userRecordToServer(currentUser) {
   return { id: currentUser.id, username: currentUser.username, avatar: currentUser.avatar, discriminator: currentUser.discriminator, bot: currentUser.bot, global_name: currentUser.globalName, primary_guild: currentUser.primaryGuild };
-};
-export const createBotMessage = function createBotMessage(arg0) {
+}
+export function createBotMessage(arg0) {
   let channelId;
   let content;
   let date;
@@ -112,4 +112,4 @@ export const createBotMessage = function createBotMessage(arg0) {
   }
   date = new Date();
   return obj2;
-};
+}

@@ -1,22 +1,22 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 15040
+// Function ID: 15041
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11066, 7844, 8307, 12774, 14806, 1380, 1125, 8169, 587, 5011, 12812, 12813, 14804, 2]
+// Dependencies: [17, 11120, 7867, 8329, 12991, 15041, 1380, 1125, 8192, 587, 5012, 13033, 13034, 15039, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 14805 (BuildOverrideEmbed)
+// Module 15040 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1125 */;
 import react_nativeAll from "react-native" /* 1380 */;
-import shared from "shared" /* 5011 */;
-import Constants from "Constants" /* 7844 */;
-import react_native2 from "react-native" /* 8169 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8307 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 11066 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12774 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14804 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 14806 */;
+import shared from "shared" /* 5012 */;
+import Constants from "Constants" /* 7867 */;
+import react_native2 from "react-native" /* 8192 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 11120 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12991 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15039 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 15041 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -26,7 +26,7 @@ const State = BuildOverrideStore2.State;
 const InviteTypes = Constants.InviteTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx");
 
-export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, arg1) {
+export function createBuildOverrideEmbed(code, arg1) {
   let RCYGot;
   let baseColors;
   let colors;
@@ -142,9 +142,9 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(12812);
+      tmpResult2 = tmp(13033);
     } else {
-      tmpResult2 = tmp(12813);
+      tmpResult2 = tmp(13034);
     }
   }
-};
+}

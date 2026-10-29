@@ -1,12 +1,12 @@
-// Module ID: 12336
-// Function ID: 12337
+// Module ID: 12390
+// Function ID: 12391
 // Name: useConjureSpendLimitNotice
-// Dependencies: [10752, 558, 576, 504, 2064, 1125, 3863, 2]
+// Dependencies: [10827, 558, 576, 504, 2065, 1125, 3864, 2]
 
-// Module 12336 (useConjureSpendLimitNotice)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2064 */;
-import _modDef3863 from "module_3863" /* 3863 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 10752 */;
+// Module 12390 (useConjureSpendLimitNotice)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 10827 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,11 +96,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       if (null == formatResult) {
         const intl3 = tmp(1125).intl;
         const obj3 = { helpdeskURL: submitRequestURL };
-        formatResult1 = intl3.format(tmp21(3863)["bw/n4C"], obj3);
+        formatResult1 = intl3.format(tmp21(3864)["bw/n4C"], obj3);
       } else {
         const intl2 = tmp(1125).intl;
         const obj5 = { limit: formatResult, helpdeskURL: submitRequestURL };
-        formatResult1 = intl2.format(tmp21(3863).GYqJXH, obj5);
+        formatResult1 = intl2.format(tmp21(3864).GYqJXH, obj5);
       }
       tmp14 = { blocked: true, message: formatResult1 };
       const obj6 = { blocked: true, message: formatResult1 };
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
             const bound = Math.min(99, Math.floor(stateFromStores.spentUsd / stateFromStores.limitUsd * 100));
             const intl = tmp(1125).intl;
             const obj7 = { percent: bound, limit: formatResult };
-            const formatToPlainStringResult = intl.formatToPlainString(_modDef3863.GHgG2B, obj7);
+            const formatToPlainStringResult = intl.formatToPlainString(_modDef3864.GHgG2B, obj7);
             cResult[9] = stateFromStores.limitUsd;
             cResult[10] = stateFromStores.spentUsd;
             cResult[11] = stateFromStores.state;
@@ -160,11 +160,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       if (null == formatResult) {
         const intl2 = tmp(1125).intl;
         const obj3 = { helpdeskURL: submitRequestURL };
-        formatResult1 = intl2.format(tmp6(3863)["bw/n4C"], obj3);
+        formatResult1 = intl2.format(tmp6(3864)["bw/n4C"], obj3);
       } else {
         const intl = tmp(1125).intl;
         const obj4 = { limit: formatResult, helpdeskURL: submitRequestURL };
-        formatResult1 = intl.format(tmp6(3863).GYqJXH, obj4);
+        formatResult1 = intl.format(tmp6(3864).GYqJXH, obj4);
       }
       return { blocked: true, message: formatResult1 };
     } else {
@@ -173,7 +173,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           if (stateFromStores.limitUsd > 0) {
             const _Math = Math;
             const _Math2 = Math;
-            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef3863.GHgG2B, obj7) };
+            const obj6 = { blocked: false, message: intl3.formatToPlainString(_modDef3864.GHgG2B, obj7) };
             const bound = Math.min(99, Math.floor(stateFromStores.spentUsd / stateFromStores.limitUsd * 100));
             intl3 = tmp(1125).intl;
             return obj6;

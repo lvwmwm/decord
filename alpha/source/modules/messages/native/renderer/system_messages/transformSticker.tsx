@@ -1,12 +1,12 @@
-// Module ID: 8391
-// Function ID: 8392
+// Module ID: 8413
+// Function ID: 8414
 // Name: transformSticker
-// Dependencies: [4835, 6523, 8392, 8314, 1125, 4832, 2]
+// Dependencies: [4836, 6547, 8414, 8336, 1125, 4833, 2]
 // Exports: transformSticker
 
-// Module 8391 (transformSticker)
+// Module 8413 (transformSticker)
 import intl3 from "intl" /* 1125 */;
-import StickersConstants from "StickersConstants" /* 4835 */;
+import StickersConstants from "StickersConstants" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ let _require;
 const StickerAnimationSettings = StickersConstants.StickerAnimationSettings;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/transformSticker.tsx");
 
-export const transformSticker = function transformSticker(tmp2Result4) {
+export function transformSticker(tmp2Result4) {
   let ALWAYS_ANIMATE;
   let NativeLottieRenderMode;
   let closure_0;
@@ -42,7 +42,7 @@ export const transformSticker = function transformSticker(tmp2Result4) {
   if (str2 == null) {
     str2 = "";
   }
-  NativeLottieRenderMode = tmp(8392).NativeLottieRenderMode;
+  NativeLottieRenderMode = tmp(8414).NativeLottieRenderMode;
   obj3 = {
     expensive() {
       const intl = intl3.intl;
@@ -56,4 +56,4 @@ export const transformSticker = function transformSticker(tmp2Result4) {
   intl = tmp(1125).intl;
   intl2 = tmp(1125).intl;
   return obj;
-};
+}

@@ -26,7 +26,7 @@ export const reactNativeTracingIntegration = () => {
   let obj5;
   let fn2;
   let url;
-  let obj2 = { currentRoute: "paths" };
+  let obj2 = { currentRoute: "r" };
   let _Object = Object;
   let fn = obj.beforeStartSpan;
   const merged = Object.assign(Object.assign({}, url), obj);
@@ -110,13 +110,13 @@ export const reactNativeTracingIntegration = () => {
     }
   };
 };
-export const getCurrentReactNativeTracingIntegration = function getCurrentReactNativeTracingIntegration() {
+export function getCurrentReactNativeTracingIntegration() {
   const obj = _mod693;
   const client = obj.getClient();
   if (client) {
     return client.getIntegrationByName(ReactNativeTracing);
   }
-};
-export const getReactNativeTracingIntegration = function getReactNativeTracingIntegration(getIntegrationByName) {
+}
+export function getReactNativeTracingIntegration(getIntegrationByName) {
   return getIntegrationByName.getIntegrationByName(ReactNativeTracing);
-};
+}

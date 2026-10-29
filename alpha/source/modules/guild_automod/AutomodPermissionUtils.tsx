@@ -1,13 +1,13 @@
-// Module ID: 4942
-// Function ID: 4943
+// Module ID: 4943
+// Function ID: 4944
 // Name: AutomodPermissionUtils
-// Dependencies: [4916, 4922, 1402, 558, 576, 504, 2]
+// Dependencies: [4917, 4923, 1402, 558, 576, 504, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile
 
-// Module 4942 (AutomodPermissionUtils)
+// Module 4943 (AutomodPermissionUtils)
 import FlagUtils from "FlagUtils" /* 1402 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4922 */;
-import GuildMemberStore from "GuildMemberStore" /* 4916 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
+import GuildMemberStore from "GuildMemberStore" /* 4917 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ const result = size.fileFinishedImporting("modules/guild_automod/AutomodPermissi
 
 export const AUTOMOD_QUARANTINED_PROFILE_FLAGS = items;
 export { getAutomodQuarantinedProfileFlags };
-export const getAutomodQuarantinedGuildMemberFlags = function getAutomodQuarantinedGuildMemberFlags(member) {
+export function getAutomodQuarantinedGuildMemberFlags(member) {
   if (null == member) {
     const _Set3 = Set;
     const self5 = this;
@@ -201,8 +201,8 @@ export const getAutomodQuarantinedGuildMemberFlags = function getAutomodQuaranti
     }
   }
   return set;
-};
-export const getAutomodReason = function getAutomodReason(automodQuarantinedGuildMemberFlags) {
+}
+export function getAutomodReason(automodQuarantinedGuildMemberFlags) {
   let prop;
   if (automodQuarantinedGuildMemberFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
     prop = tmp.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME;
@@ -215,6 +215,6 @@ export const getAutomodReason = function getAutomodReason(automodQuarantinedGuil
     }
   }
   return prop;
-};
+}
 export { hasAutomodQuarantinedProfile };
 export const useCurrentUserAutomodQuaratinedProfile = tmp2;

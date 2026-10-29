@@ -1,25 +1,25 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16637
+// Function ID: 16638
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8365, 21, 1266, 1271, 558, 576, 4919, 13817, 1348, 5699, 11248, 16400, 2]
+// Dependencies: [5, 17, 8387, 21, 1266, 1271, 558, 576, 4920, 14050, 1348, 5701, 11302, 16638, 2]
 
-// Module 16399 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 16637 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8365 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16400 */;
+import SettingsConstants from "SettingsConstants" /* 8387 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16638 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1266 from "module_1266" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11248 */;
+import SettingBuilders from "SettingBuilders" /* 11302 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4919);
+const _slicedToArray = tmp(4920);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -45,7 +45,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp35) {
         closure_2 = tmp35;
         if (0 === c3) {

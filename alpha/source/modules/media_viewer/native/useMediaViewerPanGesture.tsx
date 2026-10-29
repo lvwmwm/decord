@@ -1,13 +1,13 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14724
+// Function ID: 14725
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 558, 576, 5085, 8791, 8790, 5283, 7093, 5333, 2]
+// Dependencies: [19, 558, 576, 5086, 8794, 8793, 5284, 7117, 5334, 2]
 
-// Module 14490 (useMediaViewerPanGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import spring from "spring" /* 5283 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import useVideoControls from "useVideoControls" /* 8791 */;
+// Module 14724 (useMediaViewerPanGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import spring from "spring" /* 5284 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import useVideoControls from "useVideoControls" /* 8794 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let __initData, __initData2, __initData3, _require, dependencyMap, obj1, set;
 
 let tmp;
-const MediaViewerAnalyticsManager = tmp(8790);
+const MediaViewerAnalyticsManager = tmp(8793);
 let closure_4 = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 let closure_5 = { code: "function useMediaViewerPanGestureTsx1(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };
 let closure_6 = { code: "function useMediaViewerPanGestureTsx2(){const{runOnJS,handleClose}=this.__closure;runOnJS(handleClose)();}" };

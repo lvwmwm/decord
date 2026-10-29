@@ -1,9 +1,9 @@
-// Module ID: 10752
-// Function ID: 10753
+// Module ID: 10827
+// Function ID: 10828
 // Name: ConjureSpendLimitStore
 // Dependencies: [504, 584, 2]
 
-// Module 10752 (ConjureSpendLimitStore)
+// Module 10827 (ConjureSpendLimitStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

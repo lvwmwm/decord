@@ -1,14 +1,14 @@
-// Module ID: 19514
-// Function ID: 19515
+// Module ID: 19747
+// Function ID: 19748
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 2042, 504, 6845, 6409, 2]
+// Dependencies: [5, 32, 19, 2043, 504, 6868, 6433, 2]
 // Exports: default
 
-// Module 19514 (useGuildApplication)
+// Module 19747 (useGuildApplication)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ export default function useGuildApplication(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -105,7 +105,7 @@ export default function useGuildApplication(arg0, arg1) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp35) {
         application = tmp35;
         if (0 === c3) {

@@ -1,16 +1,16 @@
-// Module ID: 4838
-// Function ID: 4839
+// Module ID: 4839
+// Function ID: 4840
 // Name: UserSettingsProtoUtils
 // Dependencies: [1246, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
-// Module 4838 (UserSettingsProtoUtils)
+// Module 4839 (UserSettingsProtoUtils)
 import ProtoUtils from "ProtoUtils" /* 1246 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");
 
-export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSettings, field) {
+export function getProtoFieldClass(PreloadedUserSettings, field) {
   let closure_0 = field;
   const fields = PreloadedUserSettings.fields;
   const found = fields.find((localName) => localName.localName === field);
@@ -22,8 +22,8 @@ export const getProtoFieldClass = function getProtoFieldClass(PreloadedUserSetti
   } else {
     return found.T();
   }
-};
-export const createModifiedProto = function createModifiedProto(favoriteGifs, fn, protoFieldClass, PreloadedUserSettings, arg4) {
+}
+export function createModifiedProto(favoriteGifs, fn, protoFieldClass, PreloadedUserSettings, arg4) {
   let fromBinaryResult;
   if (null != favoriteGifs) {
     const fromBinary = protoFieldClass.fromBinary;
@@ -39,4 +39,4 @@ export const createModifiedProto = function createModifiedProto(favoriteGifs, fn
     obj[arg4] = fromBinaryResult;
     return obj;
   }
-};
+}

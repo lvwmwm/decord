@@ -1,10 +1,10 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12220
+// Function ID: 12221
 // Name: PollsHttpApi
-// Dependencies: [5, 1084, 1294, 6409, 2]
+// Dependencies: [5, 1084, 1294, 6433, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 12166 (PollsHttpApi)
+// Module 12220 (PollsHttpApi)
 import Constants from "Constants" /* 1084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _submitPollVote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -51,7 +51,7 @@ let obj = function _submitPollVote() {
             ({ channelId: c0, messageId: c1, answerIds: c2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -89,7 +89,7 @@ let obj = function _submitPollVote() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -119,7 +119,7 @@ obj = function _endPollEarly() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -141,7 +141,7 @@ obj = function _endPollEarly() {
             ({ channelId: c0, messageId: c1 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           let self;
@@ -182,7 +182,7 @@ obj = function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       } catch (tmp22) {
@@ -201,9 +201,9 @@ obj = function _endPollEarly() {
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/polls/PollsHttpApi.tsx");
 
-export const submitPollVote = function submitPollVote() {
+export function submitPollVote() {
   return obj(...arguments);
-};
-export const endPollEarly = function endPollEarly() {
+}
+export function endPollEarly() {
   return obj(...arguments);
-};
+}

@@ -1,21 +1,21 @@
-// Module ID: 12875
-// Function ID: 12876
+// Module ID: 13096
+// Function ID: 13097
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 4910, 4878, 4936, 1084, 12876, 1385, 11, 1294, 12869, 5747, 7662, 584, 2]
+// Dependencies: [5, 4911, 4879, 4937, 1084, 13097, 1385, 11, 1294, 13090, 5749, 7685, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 12875 (GuildAutomodActionCreators)
+// Module 13096 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5747 */;
-import AutomodFeedback from "AutomodFeedback" /* 7662 */;
-import DataUtils from "DataUtils" /* 12876 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
+import AutomodFeedback from "AutomodFeedback" /* 7685 */;
+import DataUtils from "DataUtils" /* 13097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 4910 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import PermissionStore from "PermissionStore" /* 4936 */;
+import GuildRoleStore from "GuildRoleStore" /* 4911 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import PermissionStore from "PermissionStore" /* 4937 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;
@@ -309,25 +309,25 @@ obj = function _executeAlertAction() {
 ({ AnalyticEvents: metroImportDefault, Endpoints: metroImportAll, Permissions: c9 } = Constants);
 let result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodActionCreators.tsx");
 
-export const validateAutomodRule = function validateAutomodRule() {
+export function validateAutomodRule() {
   return obj(...arguments);
-};
-export const createAutomodRule = function createAutomodRule() {
+}
+export function createAutomodRule() {
   return obj(...arguments);
-};
-export const updateAutomodRule = function updateAutomodRule() {
+}
+export function updateAutomodRule() {
   return obj(...arguments);
-};
-export const deleteAutomodRule = function deleteAutomodRule() {
+}
+export function deleteAutomodRule() {
   return obj(...arguments);
-};
-export const fetchAutomodRules = function fetchAutomodRules() {
+}
+export function fetchAutomodRules() {
   return obj(...arguments);
-};
-export const executeAlertAction = function executeAlertAction() {
+}
+export function executeAlertAction() {
   return obj(...arguments);
-};
-export const removeMentionRaidRestrictionWithFeedback = function removeMentionRaidRestrictionWithFeedback(arg0, decision_id, arg2) {
+}
+export function removeMentionRaidRestrictionWithFeedback(arg0, decision_id, arg2) {
   let closure_0;
   let closure_2;
   _require = arg0;
@@ -349,9 +349,9 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
       closure_2();
     });
   }
-};
-export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {
+}
+export function clearMentionRaidDetected(guildId) {
   obj = DispatcherDefault;
   const obj2 = { type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS", guildId };
   obj.dispatch(obj2);
-};
+}

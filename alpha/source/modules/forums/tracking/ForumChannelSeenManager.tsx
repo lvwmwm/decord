@@ -1,12 +1,12 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 9795
+// Function ID: 9796
 // Name: ForumChannelSeenManager
-// Dependencies: [9764, 9762, 8321, 8323, 2]
+// Dependencies: [9796, 9794, 8343, 8345, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9763 (ForumChannelSeenManager)
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9762 */;
-import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9764 */;
+// Module 9795 (ForumChannelSeenManager)
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9794 */;
+import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9796 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -70,14 +70,14 @@ class ForumChannelSeenManager extends AnalyticsFeedItemSeenManager {
 let result = size.fileFinishedImporting("modules/forums/tracking/ForumChannelSeenManager.tsx");
 
 export default ForumChannelSeenManager;
-export const getForumPostSeenManagerId = function getForumPostSeenManagerId(arg0) {
+export function getForumPostSeenManagerId(arg0) {
   return "" + AnalyticsFeedItemSeenManager2.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + arg0;
-};
-export const markForumPostItemAsSeen = function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
+}
+export function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
   const obj = AnalyticsFeedItemSeenActionCreators;
   const result = obj.markAnalyticsFeedItemSeen("" + AnalyticsFeedItemSeenManager2.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
-};
-export const markForumPostItemAsUnseen = function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
+}
+export function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
   const obj = AnalyticsFeedItemSeenActionCreators;
   const result = obj.markAnalyticsFeedItemUnseen("" + AnalyticsFeedItemSeenManager2.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
-};
+}

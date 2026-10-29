@@ -1,16 +1,16 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 13014
+// Function ID: 13015
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2042, 7239, 11067, 11068, 6845, 7292, 7295, 2]
+// Dependencies: [5, 2043, 7263, 11121, 11122, 6868, 7316, 7319, 2]
 // Exports: default
 
-// Module 12793 (prefetchGameOrganizationAccountLinkState)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7239 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11068 */;
+// Module 13014 (prefetchGameOrganizationAccountLinkState)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7263 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2042 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11067 */;
+import ApplicationStore from "ApplicationStore" /* 2043 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11121 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

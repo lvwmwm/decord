@@ -1,20 +1,20 @@
-// Module ID: 15538
-// Function ID: 15539
+// Module ID: 15772
+// Function ID: 15773
 // Name: TableSliderRow
-// Dependencies: [32, 109, 19, 17, 21, 5004, 558, 576, 6940, 15539, 5270, 6941, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5005, 558, 576, 6964, 15773, 5271, 6965, 2]
 
-// Module 15538 (TableSliderRow)
+// Module 15772 (TableSliderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5270 */;
-import react3 from "react" /* 6940 */;
-import Card_Card from "Card/Card" /* 6941 */;
-import Slider2 from "Slider" /* 15539 */;
+import Text_Text from "Text/Text" /* 5271 */;
+import react3 from "react" /* 6964 */;
+import Card_Card from "Card/Card" /* 6965 */;
+import Slider2 from "Slider" /* 15773 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSlide
     num11 = tmp11;
   }
   const tmp18 = closure_9();
-  const context = react.useContext(tmp(6940).TableRowGroupContext);
+  const context = react.useContext(tmp(6964).TableRowGroupContext);
   const tmpResult = Slider2;
   [tmp21, tmp22] = tmpResult.useLatestSliderValue(tmp12, tmp4, num11);
   let closure_1 = tmp22;
@@ -160,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSlide
               }
             }
             const obj4 = { value: tmp12, defaultValue: tmp4, minValue: num11, formatValue: tmp5, onChange: tmp23, accessibilityLabel: tmp6 };
-            const Slider = tmp(15539).Slider;
+            const Slider = tmp(15773).Slider;
             const merged = Object.assign(tmp8);
             const tmp41 = metroImportDefault(Slider, obj4);
             cResult[23] = tmp4;
@@ -186,7 +186,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSlide
       let tmp30 = null;
       if (null != tmp5) {
         const obj6 = { variant: "text-md/medium", color: "text-muted", children: tmp5(tmp21) };
-        const Text = tmp(5270).Text;
+        const Text = tmp(5271).Text;
         tmp30 = metroImportDefault(Text, obj6);
       }
       cResult[16] = tmp5;
@@ -257,7 +257,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSlide
   let tmp11Result = null;
   if (null != formatValue) {
     const obj5 = { variant: "text-md/medium", color: "text-muted", children: formatValue(first) };
-    const Text = tmp3(5270).Text;
+    const Text = tmp3(5271).Text;
     tmp11Result = tmp11(Text, obj5);
   }
   items[1] = tmp11Result;
@@ -276,7 +276,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSlide
     },
     accessibilityLabel: label
   };
-  Slider = tmp3(15539).Slider;
+  Slider = tmp3(15773).Slider;
   const merged1 = Object.assign(merged);
   items1[1] = metroImportDefault(View, obj6);
   return metroImportAll(Card, obj2);

@@ -1,15 +1,15 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10266
+// Function ID: 10267
 // Name: ApplicationCommandOptionUtils
-// Dependencies: [6019, 38, 10234, 5644, 1997, 2]
+// Dependencies: [6023, 38, 10267, 5645, 1998, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 10233 (ApplicationCommandOptionUtils)
+// Module 10266 (ApplicationCommandOptionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1997 */;
-import RegexUtilsDefault from "RegexUtils" /* 5644 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6019 */;
-import numberParts from "numberParts" /* 10234 */;
+import Server from "Server" /* 1998 */;
+import RegexUtilsDefault from "RegexUtils" /* 5645 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
+import numberParts from "numberParts" /* 10267 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, regExp, regExp1;
@@ -58,7 +58,7 @@ function getString(arg0, arg1) {
 const TRUE_OPTION_NAME = ApplicationCommandConstants.TRUE_OPTION_NAME;
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandOptionUtils.tsx");
 
-export const filterEmpty = function filterEmpty(c1) {
+export function filterEmpty(c1) {
   let items;
   let closure_0 = c1;
   if (null == c1) {
@@ -81,8 +81,8 @@ export const filterEmpty = function filterEmpty(c1) {
     });
   }
   return items;
-};
-export const getBoolean = function getBoolean(arg0, arg1) {
+}
+export function getBoolean(arg0, arg1) {
   let items;
   if (null == arg0[arg1]) {
     items = [];
@@ -112,8 +112,8 @@ export const getBoolean = function getBoolean(arg0, arg1) {
   }
   tmp2("text" === type, "First value is not text");
   return items[0].text === TRUE_OPTION_NAME;
-};
-export const getOptionalBoolean = function getOptionalBoolean(arg0, arg1) {
+}
+export function getOptionalBoolean(arg0, arg1) {
   let tmp = null;
   if (null != arg0[arg1]) {
     let items;
@@ -147,8 +147,8 @@ export const getOptionalBoolean = function getOptionalBoolean(arg0, arg1) {
     tmp = items[0].text === TRUE_OPTION_NAME;
   }
   return tmp;
-};
-export const getChannelId = function getChannelId(arg0, arg1) {
+}
+export function getChannelId(arg0, arg1) {
   let items;
   if (null == arg0[arg1]) {
     items = [];
@@ -178,8 +178,8 @@ export const getChannelId = function getChannelId(arg0, arg1) {
   }
   tmp2("channelMention" === type, "First value is not a channel mention");
   return items[0].channelId;
-};
-export const getOptionalChannelId = function getOptionalChannelId(arg0, arg1) {
+}
+export function getOptionalChannelId(arg0, arg1) {
   let channelId = null;
   if (null != arg0[arg1]) {
     let items;
@@ -213,8 +213,8 @@ export const getOptionalChannelId = function getOptionalChannelId(arg0, arg1) {
     channelId = items[0].channelId;
   }
   return channelId;
-};
-export const getUserId = function getUserId(arg0, arg1) {
+}
+export function getUserId(arg0, arg1) {
   let items;
   if (null == arg0[arg1]) {
     items = [];
@@ -244,8 +244,8 @@ export const getUserId = function getUserId(arg0, arg1) {
   }
   tmp2("userMention" === type, "First value is not a user mention");
   return items[0].userId;
-};
-export const getOptionalUserId = function getOptionalUserId(arg0, arg1) {
+}
+export function getOptionalUserId(arg0, arg1) {
   let userId = null;
   if (null != arg0[arg1]) {
     let items;
@@ -279,8 +279,8 @@ export const getOptionalUserId = function getOptionalUserId(arg0, arg1) {
     userId = items[0].userId;
   }
   return userId;
-};
-export const getRoleId = function getRoleId(arg0, arg1) {
+}
+export function getRoleId(arg0, arg1) {
   let items;
   if (null == arg0[arg1]) {
     items = [];
@@ -310,8 +310,8 @@ export const getRoleId = function getRoleId(arg0, arg1) {
   }
   tmp2("roleMention" === type, "First value is not a role mention");
   return items[0].roleId;
-};
-export const getOptionalRoleId = function getOptionalRoleId(arg0, arg1) {
+}
+export function getOptionalRoleId(arg0, arg1) {
   let roleId = null;
   if (null != arg0[arg1]) {
     let items;
@@ -347,16 +347,16 @@ export const getOptionalRoleId = function getOptionalRoleId(arg0, arg1) {
     roleId = items[0].roleId;
   }
   return roleId;
-};
+}
 export { getString };
-export const getOptionalString = function getOptionalString(c1, name) {
+export function getOptionalString(c1, name) {
   let tmp = null;
   if (null != c1[name]) {
     tmp = getString(c1, name);
   }
   return tmp;
-};
-export const normalizeNumericString = function normalizeNumericString(locale, trimmed) {
+}
+export function normalizeNumericString(locale, trimmed) {
   let decimal;
   let group;
   if (locale !== hasOwnProperty) {
@@ -364,7 +364,7 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
     let prop = numberParts.numberParts[locale];
     const tmp8 = require;
     if (prop == null) {
-      prop = tmp8(10234).numberParts["en-US"];
+      prop = tmp8(10267).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = prop);
@@ -380,8 +380,8 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
   }
   const str3 = trimmed.replace(regExp, "");
   return str3.replace(regExp1, ".");
-};
-export const getInitialValuesFromInteractionOptions = function getInitialValuesFromInteractionOptions(command, interactionOptions) {
+}
+export function getInitialValuesFromInteractionOptions(command, interactionOptions) {
   const obj = {};
   function _loop(iter) {
     let found;
@@ -409,4 +409,4 @@ export const getInitialValuesFromInteractionOptions = function getInitialValuesF
     continue;
   }
   return obj;
-};
+}

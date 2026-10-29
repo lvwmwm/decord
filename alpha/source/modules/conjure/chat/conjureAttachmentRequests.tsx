@@ -1,11 +1,11 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12290
+// Function ID: 12291
 // Name: conjureAttachmentRequests
-// Dependencies: [5, 10830, 10829, 2]
+// Dependencies: [5, 10906, 10905, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 12236 (conjureAttachmentRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10830 */;
+// Module 12290 (conjureAttachmentRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _listStoredAttachments() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ obj = function _importAttachmentFromUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ obj = function _deleteStagedAttachment() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _deleteStagedAttachment() {
           closure_0 = value;
           if (closure_0.ok) {
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -318,7 +318,7 @@ obj = function _getAttachmentUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ obj = function _getAttachmentUrl() {
             uRLSearchParams = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -414,7 +414,7 @@ obj = function _isAttachmentAvailable() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       try {
@@ -518,20 +518,20 @@ function attachmentPath(arg0) {
 }
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureAttachmentRequests.tsx");
 
-export const uploadAttachment = function uploadAttachment(arg0, name) {
+export function uploadAttachment(arg0, name) {
   return uploadAttachmentBytes(arg0, name, name.name, name.type);
-};
-export const listStoredAttachments = function listStoredAttachments() {
+}
+export function listStoredAttachments() {
   return obj(...arguments);
-};
-export const importAttachmentFromUrl = function importAttachmentFromUrl() {
+}
+export function importAttachmentFromUrl() {
   return obj(...arguments);
-};
+}
 export { uploadAttachmentBytes };
-export const deleteStagedAttachment = function deleteStagedAttachment() {
+export function deleteStagedAttachment() {
   return obj(...arguments);
-};
+}
 export { getAttachmentUrl };
-export const isAttachmentAvailable = function isAttachmentAvailable() {
+export function isAttachmentAvailable() {
   return obj(...arguments);
-};
+}

@@ -8,7 +8,7 @@
 import react_native from "react-native" /* 994 */;
 
 
-export const getDebugMetadata = function getDebugMetadata() {
+export function getDebugMetadata() {
   if (react_native.DEFAULT_BUNDLE_NAME) {
     const _sentryDebugIds = tmp(693).GLOBAL_OBJ._sentryDebugIds;
     if (_sentryDebugIds) {
@@ -41,4 +41,4 @@ export const getDebugMetadata = function getDebugMetadata() {
   } else {
     return [];
   }
-};
+}

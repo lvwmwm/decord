@@ -1,18 +1,18 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 13177
+// Function ID: 13178
 // Name: handleForwardBreadcrumb
-// Dependencies: [5, 4856, 4878, 1084, 7484, 6866, 1264, 7384, 2]
+// Dependencies: [5, 4857, 4879, 1084, 7507, 6889, 6893, 1264, 7407, 2]
 // Exports: default
 
-// Module 12956 (handleForwardBreadcrumb)
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7484 */;
+// Module 13177 (handleForwardBreadcrumb)
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7507 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4856 */;
-import GuildStore from "GuildStore" /* 4878 */;
+import ChannelStore from "ChannelStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4879 */;
 import Constants from "Constants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
-let c4, did_lurk;
+let c6, closure_3, did_lurk;
 
 let metroImportAll;
 let metroImportDefault;
@@ -23,8 +23,8 @@ let obj = function _handleForwardBreadcrumb() {
     let obj2;
     let obj7;
     let closure_0 = arg0;
-    if (did_lurk === 2) {
-      did_lurk = 3;
+    if (c6 === 2) {
+      c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -33,23 +33,24 @@ let obj = function _handleForwardBreadcrumb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
-      let c3;
+      let c4;
       try {
         let guild_id;
         let channel_id;
         let message_id;
+        let closure_6;
         let welcomeModalChannelId;
         let channel2;
-        did_lurk = 2;
-        if (0 === c4) {
+        c6 = 2;
+        if (0 === did_lurk) {
           if (arg0 === 1) {
-            did_lurk = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            did_lurk = 3;
+            c6 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
@@ -60,20 +61,22 @@ let obj = function _handleForwardBreadcrumb() {
             message_id = undefined;
             channel2 = undefined;
             did_lurk = undefined;
+            closure_6 = undefined;
             welcomeModalChannelId = undefined;
             if (null != closure_0.messageReference) {
-              guild_id = tmp56.messageReference.guild_id;
-              channel_id = tmp56.messageReference.channel_id;
-              message_id = tmp56.messageReference.message_id;
+              guild_id = tmp63.messageReference.guild_id;
+              channel_id = tmp63.messageReference.channel_id;
+              message_id = tmp63.messageReference.message_id;
               channel2 = channel.getChannel(channel_id);
               did_lurk = false;
+              closure_6 = false;
               if (null == channel2) {
                 if (null != guild_id) {
                   if (null == guild.getGuild(guild_id)) {
-                    c3 = 1;
+                    c4 = 1;
                     const obj5 = { object: constants.FORWARD_BREADCRUMB };
-                    c4 = 2;
-                    did_lurk = 1;
+                    did_lurk = 2;
+                    c6 = 1;
                     const obj6 = { value: obj7.startLurking(guild_id, obj5, { shouldNavigate: false }), done: false };
                     obj7 = GuildDiscoveryUtils;
                     return obj6;
@@ -81,42 +84,43 @@ let obj = function _handleForwardBreadcrumb() {
                 }
               }
             }
-            did_lurk = 3;
-            return { value: "IconComponent", done: null };
+            c6 = 3;
+            return { value: "IconComponent", done: "IconComponent" };
           }
-        } else if (1 === c4) {
-          c3 = 0;
-        } else if (2 === c4) {
+        } else if (1 === did_lurk) {
+          c4 = 0;
+          closure_6 = closure_3 instanceof closure_130_0(closure_130_2[6]).JoinGuildRefusedError;
+        } else if (2 === did_lurk) {
           if (arg0 === 1) {
-            did_lurk = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 0;
-            did_lurk = 3;
+            c4 = 0;
+            c6 = 3;
             const obj8 = { value, done: true };
             return obj8;
           } else {
-            c4 = 3;
-            did_lurk = 1;
+            did_lurk = 3;
+            c6 = 1;
             const obj9 = { value: obj2.waitForGuild(guild_id), done: false };
             obj2 = closure_130_0(closure_130_2[5]);
             return obj9;
           }
         } else if (arg0 === 1) {
-          did_lurk = 3;
+          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c3 = 0;
-          did_lurk = 3;
+          c4 = 0;
+          c6 = 3;
           obj = { value, done: true };
           return obj;
         } else {
           channel2 = closure_130_4.getChannel(channel_id);
-          c3 = 0;
+          c4 = 0;
         }
-        const track = closure_130_1(closure_130_2[6]).track;
+        const track = closure_130_1(closure_130_2[7]).track;
         const FORWARD_BREADCRUMB_CLICKED = closure_130_6.FORWARD_BREADCRUMB_CLICKED;
-        const tmp19 = closure_130_1(closure_130_2[6]);
+        const tmp25 = closure_130_1(closure_130_2[7]);
         const basicChannel = closure_130_4.getBasicChannel(closure_0.channel_id);
         let guild_id1;
         if (basicChannel != null) {
@@ -124,20 +128,24 @@ let obj = function _handleForwardBreadcrumb() {
         }
         const obj10 = { guild_id: guild_id1, channel_id: closure_0.channel_id, message_id: closure_0.id, breadcrumb_guild_id: guild_id, breadcrumb_channel_id: channel_id, breadcrumb_message_id: message_id, did_lurk };
         track(FORWARD_BREADCRUMB_CLICKED, obj10);
-        let tmp34;
-        if (did_lurk) {
-          tmp34 = channel_id;
+        const tmp39 = closure_6;
+        if (!tmp39) {
+          let tmp42;
+          if (did_lurk) {
+            tmp42 = channel_id;
+          }
+          welcomeModalChannelId = tmp42;
+          const obj11 = { navigationReplace: false, welcomeModalChannelId };
+          const tmp46 = closure_130_1(closure_130_2[8]);
+          tmp46(closure_130_8.CHANNEL(guild_id, channel_id, message_id), obj11);
         }
-        welcomeModalChannelId = tmp34;
-        const obj11 = { navigationReplace: false, welcomeModalChannelId };
-        const tmp40 = closure_130_1(closure_130_2[7]);
-        tmp40(closure_130_8.CHANNEL(guild_id, channel_id, message_id), obj11);
-      } catch (tmp50) {
-        if (0 === c3) {
-          did_lurk = 3;
-          throw tmp50;
+      } catch (tmp56) {
+        closure_3 = tmp56;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp56;
         } else {
-          c4 = 1;
+          did_lurk = 1;
         }
       }
     }

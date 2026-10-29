@@ -1,18 +1,18 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 12579
+// Function ID: 12580
 // Name: ConjureAppBuildRequestProjectsSheet
-// Dependencies: [32, 19, 21, 5004, 587, 558, 576, 1630, 7284, 6936, 7023, 5305, 7334, 2]
+// Dependencies: [32, 19, 21, 5005, 587, 558, 576, 1631, 7308, 6960, 7047, 5306, 7358, 2]
 
-// Module 12524 (ConjureAppBuildRequestProjectsSheet)
+// Module 12579 (ConjureAppBuildRequestProjectsSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import BottomSheetModal from "BottomSheetModal" /* 5305 */;
-import TableRowGroup2 from "TableRowGroup" /* 7023 */;
-import ActionSheet2 from "ActionSheet" /* 7334 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import BottomSheetModal from "BottomSheetModal" /* 5306 */;
+import TableRowGroup2 from "TableRowGroup" /* 7047 */;
+import ActionSheet2 from "ActionSheet" /* 7358 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5004 */;
+import createStyles from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

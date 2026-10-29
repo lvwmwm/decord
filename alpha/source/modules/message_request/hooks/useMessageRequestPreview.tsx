@@ -1,16 +1,16 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13987
+// Function ID: 13988
 // Name: useMessageRequestPreview
-// Dependencies: [5, 6045, 6806, 13755, 1084, 558, 576, 504, 12, 1294, 584, 2]
+// Dependencies: [5, 6049, 6829, 13988, 1084, 558, 576, 504, 12, 1294, 584, 2]
 
-// Module 13754 (useMessageRequestPreview)
+// Module 13987 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1084 */;
 import HTTPUtils from "HTTPUtils" /* 1294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6045 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13755 */;
+import MessageStore from "MessageStore" /* 6049 */;
+import ReadStateStore from "ReadStateStore" /* 6829 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13988 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         }
       }

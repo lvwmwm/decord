@@ -1,13 +1,13 @@
-// Module ID: 7784
-// Function ID: 7785
+// Module ID: 7806
+// Function ID: 7807
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1084, 7781, 4851, 1264, 2]
+// Dependencies: [32, 5, 1084, 7803, 4852, 1264, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7784 (ArtProfileAnalytics)
+// Module 7806 (ArtProfileAnalytics)
 import Constants from "Constants" /* 1084 */;
-import Timers from "Timers" /* 4851 */;
-import react_nativeDefault from "react-native" /* 7781 */;
+import Timers from "Timers" /* 4852 */;
+import react_nativeDefault from "react-native" /* 7803 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "IconComponent" };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
             const obj6 = closure_131_1(closure_131_2[5]);
             obj6.track(closure_131_5.ANDROID_ART_PROFILE_SNAPSHOT, obj5, { logEventProperties: true });
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } catch (tmp5) {
           c5 = 3;
@@ -95,7 +95,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const UNKNOWN_STATUS = "UNKNOWN_STATUS";
 const result = size.fileFinishedImporting("modules/tti_analytics/native/ArtProfileAnalytics.android.tsx");
 
-export const trackAndroidArtProfileSnapshot = function trackAndroidArtProfileSnapshot(arg0, arg1) {
+export function trackAndroidArtProfileSnapshot(arg0, arg1) {
   function trackAndroidArtProfileSnapshotAsync() {
     return obj(...arguments);
   }
@@ -103,4 +103,4 @@ export const trackAndroidArtProfileSnapshot = function trackAndroidArtProfileSna
   promise.catch(() => {
 
   });
-};
+}

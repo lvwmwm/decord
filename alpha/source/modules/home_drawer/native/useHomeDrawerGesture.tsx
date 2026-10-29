@@ -1,26 +1,26 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17963
+// Function ID: 17964
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 17720, 17726, 1084, 11244, 558, 576, 5192, 5085, 1503, 1264, 5242, 17721, 5248, 1496, 1630, 5189, 11245, 17727, 5186, 5244, 5333, 7205, 2]
+// Dependencies: [32, 19, 17958, 17964, 1084, 11298, 558, 576, 5193, 5086, 1504, 1264, 5243, 17959, 5249, 1497, 1631, 5190, 11299, 17965, 5187, 5245, 5334, 7229, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useIsHomeDrawerEnabled
 
-// Module 17725 (useHomeDrawerGesture)
+// Module 17963 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1084 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5085 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5186 */;
-import timing from "timing" /* 5242 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5244 */;
-import HapticUtils from "HapticUtils" /* 5248 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5333 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11244 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 17720 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17721 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+import timing from "timing" /* 5243 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5245 */;
+import HapticUtils from "HapticUtils" /* 5249 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11298 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 17958 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17959 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 17726 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 17964 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7205 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7229 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set, set2, set3;
@@ -1097,12 +1097,12 @@ export const INITIAL_OPEN_WIDTH = 144;
 export const HOME_DRAWER_FLING_PHYSICS = { mass: 0.4, damping: 100, stiffness: 250 };
 export const useHomeGesture = tmp2;
 export const HomeDrawerStateContext = context;
-export const useHomeDrawerState = function useHomeDrawerState() {
+export function useHomeDrawerState() {
   return react.useContext(context).homeDrawerState;
-};
-export const useIsHomeDrawerEnabled = function useIsHomeDrawerEnabled() {
+}
+export function useIsHomeDrawerEnabled() {
   return react.useContext(context).enableHome;
-};
-export const useDoesLandOnHomeDrawer = function useDoesLandOnHomeDrawer() {
+}
+export function useDoesLandOnHomeDrawer() {
   return react.useContext(context).landOnHome;
-};
+}

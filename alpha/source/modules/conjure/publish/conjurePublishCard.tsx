@@ -1,17 +1,17 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12392
+// Function ID: 12393
 // Name: conjurePublishCard
-// Dependencies: [3863, 2]
+// Dependencies: [3864, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 12338 (conjurePublishCard)
-import _modDef3863 from "module_3863" /* 3863 */;
+// Module 12392 (conjurePublishCard)
+import _modDef3864 from "module_3864" /* 3864 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
 
-export const isPublishCardLive = function isPublishCardLive(reason, newUiUnpublished) {
+export function isPublishCardLive(reason, newUiUnpublished) {
   let tmp = null != newUiUnpublished;
   if (tmp) {
     let tmp3;
@@ -23,8 +23,8 @@ export const isPublishCardLive = function isPublishCardLive(reason, newUiUnpubli
     tmp = tmp3;
   }
   return tmp;
-};
-export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(publish, cta) {
+}
+export function isConjurePublishCtaVisible(publish, cta) {
   let tmp = null != publish;
   if (tmp) {
     const status = publish.status;
@@ -41,8 +41,8 @@ export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(pu
     tmp = tmp2;
   }
   return tmp;
-};
-export const livePublishCardMessageId = function livePublishCardMessageId(arg0, newUiUnpublished) {
+}
+export function livePublishCardMessageId(arg0, newUiUnpublished) {
   let diff = arg0.length - 1;
   if (0 <= diff) {
     const publishCta = arg0[diff].publishCta;
@@ -66,28 +66,28 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
     return id;
   }
   return null;
-};
-export const publishNoticeMessage = function publishNoticeMessage(notice, arg1, automod) {
+}
+export function publishNoticeMessage(notice, arg1, automod) {
   let prop;
   if (true === notice.commands_failed) {
-    prop = _modDef3863["PrQg+B"];
+    prop = _modDef3864["PrQg+B"];
   } else if (true === notice.channel_skipped) {
-    prop = _modDef3863.ev23Cw;
+    prop = _modDef3864.ev23Cw;
   } else if (notice.update) {
-    prop = _modDef3863.gQzuLC;
+    prop = _modDef3864.gQzuLC;
   } else {
     const tmp = automod;
     if (tmp) {
-      prop = _modDef3863.KORRGl;
+      prop = _modDef3864.KORRGl;
     } else if (null == arg1) {
-      prop = _modDef3863.MOrR29;
+      prop = _modDef3864.MOrR29;
     } else {
-      prop = _modDef3863["/npn7F"];
+      prop = _modDef3864["/npn7F"];
     }
   }
   return prop;
-};
-export const withLivePublishCard = function withLivePublishCard(stateFromStores1, stateFromStores2) {
+}
+export function withLivePublishCard(stateFromStores1, stateFromStores2) {
   let diff = stateFromStores1.length - 1;
   let tmp2 = null;
   if (0 <= diff) {
@@ -133,4 +133,4 @@ export const withLivePublishCard = function withLivePublishCard(stateFromStores1
     });
   }
   return mapped;
-};
+}

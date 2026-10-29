@@ -1,20 +1,20 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16258
+// Function ID: 16259
 // Name: subscriptionHelpers
-// Dependencies: [4855, 15973, 7811, 1084, 2023, 9289, 15976, 8728, 15977, 7833, 2]
+// Dependencies: [4856, 16209, 7834, 1084, 2024, 9293, 16212, 8731, 16214, 7856, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 16021 (subscriptionHelpers)
+// Module 16258 (subscriptionHelpers)
 import Constants2 from "Constants" /* 1084 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7833 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8728 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9289 */;
-import useThermalState from "useThermalState" /* 15976 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15977 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4855 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15973 */;
-import QuestStore from "QuestStore" /* 7811 */;
-import Constants from "Constants" /* 2023 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8731 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9293 */;
+import useThermalState from "useThermalState" /* 16212 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16214 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 16209 */;
+import QuestStore from "QuestStore" /* 7834 */;
+import Constants from "Constants" /* 2024 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -23,7 +23,7 @@ const RPCEvents = Constants2.RPCEvents;
 ({ ActivityLayoutMode: metroRequire, ActivityScreenOrientation: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
-export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(application, arg1, quest_id) {
+export function getInitialSubscriptionPayload(application, arg1, quest_id) {
   let enrolledAt;
   let enrolledAt1;
   let obj4;
@@ -125,4 +125,4 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
   } else {
     return null;
   }
-};
+}

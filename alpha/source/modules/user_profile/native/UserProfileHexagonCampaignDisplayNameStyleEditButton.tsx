@@ -1,27 +1,27 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16379
+// Function ID: 16380
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1389, 1084, 5029, 21, 5004, 587, 558, 576, 16143, 1125, 2929, 16121, 6748, 8692, 6402, 5031, 10696, 5299, 8690, 16120, 5699, 7289, 7314, 9826, 9827, 16144, 7002, 5294, 6948, 7332, 6944, 16137, 7045, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 1084, 5030, 21, 5005, 587, 558, 576, 16380, 1125, 2930, 16358, 6771, 8695, 6426, 5032, 10729, 5300, 8693, 16357, 5701, 7313, 7338, 9858, 9859, 16381, 7026, 5295, 6972, 7356, 6968, 16374, 7069, 2]
 
-// Module 16142 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+// Module 16379 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
 import nativeDefault from "native" /* 587 */;
-import _modDef2929 from "module_2929" /* 2929 */;
-import LinearGradientDefault from "LinearGradient" /* 5294 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6402 */;
-import _modDef7002 from "module_7002" /* 7002 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7289 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9826 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9827 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10696 */;
+import _modDef2930 from "module_2930" /* 2930 */;
+import LinearGradientDefault from "LinearGradient" /* 5295 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6426 */;
+import _modDef7026 from "module_7026" /* 7026 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9858 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9859 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10729 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1389 */;
 import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5029 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5004 */;
+import createStyles_mod from "createStyles" /* 5005 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,20 +81,20 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }
   closure_19();
   _require = tmp6;
-  const tmpResult = tmp(16143);
+  const tmpResult = tmp(16380);
   const displayNameStylesPendingName = tmpResult.useDisplayNameStylesPendingName(user);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2929["86GtGH"]);
+    const stringResult = intl.string(_modDef2930["86GtGH"]);
     cResult[0] = stringResult;
     let first = stringResult;
   } else {
     first = cResult[0];
   }
-  const useTrackHexagonCampaignContentViewed = tmp(16121).useTrackHexagonCampaignContentViewed;
-  tmp(16121);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6748).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(16121).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
-  const tmpResult6 = tmp(8692);
+  const useTrackHexagonCampaignContentViewed = tmp(16358).useTrackHexagonCampaignContentViewed;
+  tmp(16358);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6771).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(16358).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
+  const tmpResult6 = tmp(8695);
   pendingDisplayNameStyles = tmpResult6.useGuildMemberOrUserPendingDisplayNameStyles(user).pendingDisplayNameStyles;
   if (cResult[1] === pendingDisplayNameStyles) {
     let tmp13;
@@ -106,7 +106,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     if (cResult[4] !== tmp15) {
       let result = null != tmp15;
       if (result) {
-        const tmpResult7 = tmp(5031);
+        const tmpResult7 = tmp(5032);
         result = tmpResult7.isHexagonCampaignDisplayNameStyle(tmp15);
       }
       cResult[4] = tmp15;
@@ -178,7 +178,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
           }
         }
       }
-      const tmpResult8 = tmp(5299);
+      const tmpResult8 = tmp(5300);
       const unmountEffect = tmpResult8.useUnmountEffect(tmp31);
       if (!tmp4) {
         class W {
@@ -210,7 +210,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             }
           } else {
             let c3;
@@ -293,7 +293,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
                 }
               }
               ref = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "IconComponent" };
             } catch (tmp50) {
               tmp51 = c3;
               if (0 === c3) {
@@ -319,7 +319,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
       }
       t9 = tmp34;
       const tmp14Result = useAnalyticsLocationsDefault;
-      const analyticsLocations = tmp14Result(tmp14(7314).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
+      const analyticsLocations = tmp14Result(tmp14(7338).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
       if (cResult[13] !== analyticsLocations) {
         class W {
           constructor(nativeEvent) {
@@ -414,7 +414,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   let obj = require("useDisplayNameStylesPendingName");
   const displayNameStylesPendingName = obj.useDisplayNameStylesPendingName(user);
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef2929["86GtGH"]);
+  const stringResult = intl.string(_modDef2930["86GtGH"]);
   const useTrackHexagonCampaignContentViewed = require("HexagonCampaignAnalytics").useTrackHexagonCampaignContentViewed;
   const tmp8 = require("HexagonCampaignAnalytics");
   const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(require("QuestTypes").QuestContent.DISPLAY_NAME_STYLES_SETTINGS, require("HexagonCampaignAnalytics").HexagonCampaignContentSurface.NON_NITRO_CARD, true);
@@ -423,7 +423,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp10 = useDisplayNameStylesDefault(obj3);
   let result = null != tmp10;
   if (result) {
-    const tmp3Result = tmp3(5031);
+    const tmp3Result = tmp3(5032);
     result = tmp3Result.isHexagonCampaignDisplayNameStyle(tmp10);
   }
   importDefault = result;
@@ -445,7 +445,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp21 = _slicedToArray(react.useState(false), 2);
   react = react.useRef(false);
   closure_6 = react.useRef(true);
-  const tmp3Result2 = tmp3(5299);
+  const tmp3Result2 = tmp3(5300);
   const unmountEffect = tmp3Result2.useUnmountEffect(() => {
     closure_6.current = false;
   });
@@ -469,7 +469,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       }
     } else {
       let c3;
@@ -553,7 +553,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
           }
         }
         ref = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "IconComponent" };
       } catch (tmp50) {
         if (0 === c3) {
           ref = 3;
@@ -568,7 +568,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     return closure_0(...arguments);
   }, []);
   const tmp6Result = useAnalyticsLocationsDefault;
-  analyticsLocations = tmp6Result(tmp6(7314).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
+  analyticsLocations = tmp6Result(tmp6(7338).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
   const items = [analyticsLocations];
   callback3 = obj5.useCallback(() => {
     let obj2;
@@ -588,16 +588,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }, items1);
   let obj6 = { label: stringResult, labelTrailing: tmp18Result, children: tmp31(tmp32, obj9) };
   tmp18Result = undefined;
-  const Input = tmp3(7045).Input;
+  const Input = tmp3(7069).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16144), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16381), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
   obj9 = { style: tmp.card, children: items5 };
   let obj10 = { onPress: callback4, style: tmp.row, disabled, accessibilityRole: str, accessibilityLabel: stringResult, accessibilityState: tmp33, children: items4 };
   str = "switch";
-  const PressableHighlight = tmp3(6944).PressableHighlight;
+  const PressableHighlight = tmp3(6968).PressableHighlight;
   if (availability === constants5.LOCKED) {
     str = "button";
   }
@@ -615,7 +615,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
       obj14 = { style: tmp.nameMask, children: items2 };
       items2 = [, ];
       const obj15 = { colors, style: tmp.nameMaskOpaque };
-      const tmp6Result2 = _modDef7002;
+      const tmp6Result2 = _modDef7026;
       items2[0] = tmp18(LinearGradientDefault, obj15);
       const obj16 = { colors: colors2, start: null, end: null, style: tmp.nameMaskFade };
       ({ START: obj22.start, END: obj22.end } = closure_11);
@@ -630,13 +630,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   items3[1] = tmp18(closure_6, obj17);
   items4 = [tmp31(tmp32, obj12), ];
   if (availability === constants5.LOCKED) {
-    tmp18Result4 = tmp18(tmp3(6948).TableRowArrow, {});
+    tmp18Result4 = tmp18(tmp3(6972).TableRowArrow, {});
   } else {
     const obj20 = { "aria-hidden": true, value: result, onValueChange: callback2, disabled };
-    tmp18Result4 = tmp18(tmp3(7332).FormSwitch, obj20);
+    tmp18Result4 = tmp18(tmp3(7356).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16137), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16374), { showLearnMore: true })];
   return tmp18(Input, obj6);
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileHexagonCampaignDisplayNameStyleEditButton.tsx");

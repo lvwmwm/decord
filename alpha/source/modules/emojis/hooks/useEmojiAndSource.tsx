@@ -1,17 +1,17 @@
-// Module ID: 9978
-// Function ID: 9979
+// Module ID: 10010
+// Function ID: 10011
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 4878, 6760, 6920, 1084, 4953, 558, 576, 573, 2]
+// Dependencies: [5, 32, 19, 4879, 6783, 6944, 1084, 4954, 558, 576, 573, 2]
 
-// Module 9978 (useEmojiAndSource)
+// Module 10010 (useEmojiAndSource)
 import Constants from "Constants" /* 1084 */;
-import EmojiTypes from "EmojiTypes" /* 4953 */;
+import EmojiTypes from "EmojiTypes" /* 4954 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4878 */;
-import EmojiStore from "EmojiStore" /* 6760 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6920 */;
+import GuildStore from "GuildStore" /* 4879 */;
+import EmojiStore from "EmojiStore" /* 6783 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6944 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -556,10 +556,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F161186 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F162839 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F161187 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F162840 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {
@@ -689,7 +689,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           }
         } else {
           try {
@@ -744,7 +744,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
               current();
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "IconComponent" };
           } catch (tmp33) {
             c3 = 3;
             throw tmp33;

@@ -1,201 +1,125 @@
 // Module ID: 12686
 // Function ID: 12687
-// Dependencies: [12661, 12642, 12641, 12672]
-// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
+// Dependencies: []
 
 // Module 12686
-import _mod12641 from "module_12641" /* 12641 */;
-import _mod12642 from "module_12642" /* 12642 */;
-import _mod12661 from "module_12661" /* 12661 */;
-import _mod12672 from "module_12672" /* 12672 */;
-
-
-export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
-  let breadcrumbs;
-  let contexts;
-  let fingerprint;
-  let items1;
-  let level;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let tmpResult10;
-  let tmpResult9;
-  let transactionName;
-  let user;
-  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
-  ({ extra, tags, user, contexts } = arg1);
-  const obj = _mod12642;
-  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
-  let length = dropUndefinedKeysResult;
-  if (length) {
-    const _Object = Object;
-    length = Object.keys(dropUndefinedKeysResult).length;
-  }
-  const tmp5 = extra;
-  if (length) {
-    const obj2 = {};
-    const merged = Object.assign(dropUndefinedKeysResult);
-    const merged1 = Object.assign(extra.extra);
-    extra.extra = obj2;
-  }
-  const tmpResult = _mod12642;
-  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
-  let length2 = dropUndefinedKeysResult1;
-  if (length2) {
-    const _Object2 = Object;
-    length2 = Object.keys(dropUndefinedKeysResult1).length;
-  }
-  if (length2) {
-    const obj3 = {};
-    const merged2 = Object.assign(dropUndefinedKeysResult1);
-    const merged3 = Object.assign(extra.tags);
-    extra.tags = obj3;
-  }
-  const tmpResult7 = _mod12642;
-  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
-  let length3 = dropUndefinedKeysResult2;
-  if (length3) {
-    const _Object3 = Object;
-    length3 = Object.keys(dropUndefinedKeysResult2).length;
-  }
-  if (length3) {
-    const obj4 = {};
-    const merged4 = Object.assign(dropUndefinedKeysResult2);
-    const merged5 = Object.assign(extra.user);
-    extra.user = obj4;
-  }
-  const tmpResult8 = _mod12642;
-  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
-  let length4 = dropUndefinedKeysResult3;
-  if (length4) {
-    const _Object4 = Object;
-    length4 = Object.keys(dropUndefinedKeysResult3).length;
-  }
-  if (length4) {
-    const obj5 = {};
-    const merged6 = Object.assign(dropUndefinedKeysResult3);
-    const merged7 = Object.assign(extra.contexts);
-    extra.contexts = obj5;
-  }
-  if (level) {
-    extra.level = level;
-  }
-  const tmp32 = transactionName && "transaction" !== extra.type;
-  if (tmp32) {
-    extra.transaction = transactionName;
-  }
-  if (span) {
-    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
-    tmpResult9 = _mod12641;
-    const merged8 = Object.assign(extra.contexts);
-    extra.contexts = obj6;
-    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
-    tmpResult10 = _mod12672;
-    const merged9 = Object.assign(extra.sdkProcessingMetadata);
-    extra.sdkProcessingMetadata = obj7;
-    const tmpResult11 = _mod12641;
-    const rootSpan = tmpResult11.getRootSpan(span);
-    const tmpResult12 = _mod12641;
-    const description = tmpResult12.spanToJSON(rootSpan).description;
-    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
-    if (tmp38) {
-      extra.transaction = description;
-    }
-  }
-  if (extra.fingerprint) {
-    let items;
-    const _Array = Array;
-    const fingerprint2 = extra.fingerprint;
-    if (Array.isArray(extra.fingerprint)) {
-      items = fingerprint2;
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
+let obj = {
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
     } else {
-      items = [fingerprint2];
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
+      } else {
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
+        }
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
+      }
     }
-    items1 = items;
-  } else {
-    items1 = [];
+  },
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
+    } else {
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
+        }
+        str = str2;
+      } else {
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
+        }
+      }
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
+      }
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
+            }
+          }
+        }
+        str10 = str11;
+      }
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
+    }
+  },
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
+        }
+      }
+    }
+    return "";
   }
-  extra.fingerprint = items1;
-  if (fingerprint) {
-    const fingerprint3 = extra.fingerprint;
-    extra.fingerprint = fingerprint3.concat(fingerprint);
-  }
-  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
-  if (tmp40) {
-    delete tmp5["fingerprint"];
-  }
-  const items2 = [...breadcrumbs];
-  let tmp42;
-  if (items2.length) {
-    tmp42 = items2;
-  }
-  extra.breadcrumbs = tmp42;
-  const obj8 = {};
-  const merged10 = Object.assign(extra.sdkProcessingMetadata);
-  const merged11 = Object.assign(sdkProcessingMetadata);
-  extra.sdkProcessingMetadata = obj8;
 };
-export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
-  const obj = _mod12661;
-  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
-};
-export const mergeScopeData = function mergeScopeData(extra, arg1) {
-  let attachments;
-  let breadcrumbs;
-  let contexts;
-  let eventProcessors;
-  let fingerprint;
-  let level;
-  let propagationContext;
-  let sdkProcessingMetadata;
-  let span;
-  let tags;
-  let transactionName;
-  let user;
-  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
-  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
-  const obj = _mod12661;
-  extra.extra = obj.merge(extra.extra, extra, 1);
-  const obj2 = _mod12661;
-  extra.tags = obj2.merge(extra.tags, tags, 1);
-  const obj3 = _mod12661;
-  extra.user = obj3.merge(extra.user, user, 1);
-  const obj4 = _mod12661;
-  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
-  const obj5 = _mod12661;
-  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
-  if (level) {
-    extra.level = level;
-  }
-  if (transactionName) {
-    extra.transactionName = transactionName;
-  }
-  if (span) {
-    extra.span = span;
-  }
-  if (breadcrumbs.length) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
-    extra.breadcrumbs = items;
-  }
-  if (fingerprint.length) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
-    extra.fingerprint = items1;
-  }
-  if (eventProcessors.length) {
-    const items2 = [];
-    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
-    extra.eventProcessors = items2;
-  }
-  if (attachments.length) {
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
-    extra.attachments = items3;
-  }
-  const obj6 = {};
-  const merged = Object.assign(extra.propagationContext);
-  const merged1 = Object.assign(propagationContext);
-  extra.propagationContext = obj6;
-};
+
+export default obj;

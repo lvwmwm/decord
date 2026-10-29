@@ -512,6 +512,6 @@ export const reactNavigationIntegration = () => {
   };
   return obj2;
 };
-export const getReactNavigationIntegration = function getReactNavigationIntegration(getIntegrationByName) {
+export function getReactNavigationIntegration(getIntegrationByName) {
   return getIntegrationByName.getIntegrationByName(ReactNavigation);
-};
+}
