@@ -9148,6 +9148,13 @@
         "width": 60,
         "height": 60
     },
+    "WidgetsIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WidgetsIcon.png",
+        "hash": "07694532fe5b5d77fc59f6774ff08cb4",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "WindowLaunchIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
         "hash": "6fc18e0c40f0ce37259a8a45cc634c66",
