@@ -1365,8 +1365,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[7] !== sharedValue) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154409 */ }, 10);
-        return () => { /* body not rendered: F154410 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154411 */ }, 10);
+        return () => { /* body not rendered: F154412 */ };
       }
     }
     cResult[7] = sharedValue;
@@ -1375,24 +1375,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154409 */ }, 10);
-        return () => { /* body not rendered: F154410 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154411 */ }, 10);
+        return () => { /* body not rendered: F154412 */ };
       }
     }
   }
   if (cResult[9] === shouldFreeze) {
     class J {
       constructor() {
-        closure_0 = setTimeout(() => { /* body not rendered: F154409 */ }, 10);
-        return () => { /* body not rendered: F154410 */ };
+        closure_0 = setTimeout(() => { /* body not rendered: F154411 */ }, 10);
+        return () => { /* body not rendered: F154412 */ };
       }
     }
     const effect1 = obj2.useEffect(tmp21, items);
     if (cResult[12] === firstScreenFrame) {
       class J {
         constructor() {
-          closure_0 = setTimeout(() => { /* body not rendered: F154409 */ }, 10);
-          return () => { /* body not rendered: F154410 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F154411 */ }, 10);
+          return () => { /* body not rendered: F154412 */ };
         }
       }
     }

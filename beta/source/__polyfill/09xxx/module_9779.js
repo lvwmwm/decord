@@ -365,7 +365,7 @@ export const useHeaderConfigProps = function useHeaderConfigProps(headerLargeTit
   let tmp19 = null != headerBack;
   let headerLeftResult;
   if (headerLeft != null) {
-    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "Array" };
+    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "a" };
     tmp21 = headerBackTitle;
     if (headerBackTitle == null) {
       let title1;

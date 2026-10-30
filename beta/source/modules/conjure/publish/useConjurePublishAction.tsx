@@ -788,13 +788,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c9 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f160340 = requestConsent;
+                  let f160342 = requestConsent;
                   if (requestConsent == null) {
-                    f160340 = (arg0) => closure_2_18(arg0, closure_1_3);
+                    f160342 = (arg0) => closure_2_18(arg0, closure_1_3);
                   }
                   c10 = 3;
                   c11 = 1;
-                  const obj5 = { value: f160340(closure_0), done: false };
+                  const obj5 = { value: f160342(closure_0), done: false };
                   return obj5;
                 }
               }

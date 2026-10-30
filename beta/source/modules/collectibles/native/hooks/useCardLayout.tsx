@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
             let tmp30;
             const _Symbol = Symbol;
             if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "__initData" };
+              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
               cResult[6] = obj3;
               tmp30 = obj3;
             } else {
@@ -188,7 +188,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     if (result3 + (bound + tmp10(9389).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       let obj;
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "__initData" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "ix" };
       }
       return obj;
     }

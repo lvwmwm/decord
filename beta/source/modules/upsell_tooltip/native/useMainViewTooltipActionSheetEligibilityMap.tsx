@@ -1030,12 +1030,12 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp35;
   let tmp8;
   let tmp9;
-  const f135816 = () => {
+  const f135818 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f135818 = () => {
+  const f135820 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -1060,8 +1060,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult19 = get_initialized;
-  [tmp8, tmp9] = tmpResult19.useStateFromStoresArray(items2, f135816);
-  _slicedToArray(tmpResult19.useStateFromStoresArray(items2, f135816), 2);
+  [tmp8, tmp9] = tmpResult19.useStateFromStoresArray(items2, f135818);
+  _slicedToArray(tmpResult19.useStateFromStoresArray(items2, f135818), 2);
   const tmpResult20 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult20.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -1075,8 +1075,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   const isEligibleSenderForReferralProgram = tmpResult22.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult23 = get_initialized;
-  [tmp14, tmp15] = tmpResult23.useStateFromStoresArray(items4, f135818);
-  _slicedToArray(tmpResult23.useStateFromStoresArray(items4, f135818), 2);
+  [tmp14, tmp15] = tmpResult23.useStateFromStoresArray(items4, f135820);
+  _slicedToArray(tmpResult23.useStateFromStoresArray(items4, f135820), 2);
   const tmpResult24 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult24.usePremiumTrialOffer();
   const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18460).PremiumTrialOfferActionSheetKillSwitchExperiment;

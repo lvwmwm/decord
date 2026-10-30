@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f140401 = (arg0) => {
+const f140403 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f140401);
+  const promise = new Promise(f140403);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f157433 = () => {
+  const f157435 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(syncedClientThemes.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f140401;
+          fn = f140403;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f157433;
+          fn2 = f157435;
           promise.then(fn2);
           break;
         }

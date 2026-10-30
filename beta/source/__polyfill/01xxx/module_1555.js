@@ -154,7 +154,7 @@ export const getActionFromState = function getActionFromState(index, initialRout
         }
         let tmp22 = substr1[substr1.length - 1];
         let _Object3 = Object;
-        let merged1 = Object.assign(obj5, { initial: "fill", screen: "x", params: "toCharArray$esjava$1", state: "toCharArray$esjava$1" });
+        let merged1 = Object.assign(obj5, { initial: "Array", screen: "test", params: "y", state: "IconComponent" });
         if (1 === substr1.length) {
           if (undefined === substr1[0].key) {
             let params;

@@ -549,9 +549,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     render() {
       let items;
       const obj = { children: items };
-      items = [, ];
       const obj2 = { guildId, inline, projectId: stateFromStores, sceneProjectId: "Array", openedProjectIdRef };
-      items[0] = authStore(closure_13, obj2);
+      items = [authStore(closure_13, obj2), ];
       const obj3 = { guildId };
       items[1] = authStore(ConjureProjectListDefault, obj3);
       return authStore2(unpackModuleId, obj);

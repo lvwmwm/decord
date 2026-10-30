@@ -156,7 +156,7 @@ export const Card = function Card(shadowEnabled) {
     }
   });
   let tmp7 = num(1527)((closing) => {
-    const f158966 = () => {
+    const f158968 = () => {
       closure_1_37();
     };
     closing = closing.closing;
@@ -215,7 +215,7 @@ export const Card = function Card(shadowEnabled) {
                 defaultOverlay();
               }
               const _requestAnimationFrame = requestAnimationFrame;
-              ref4.current = requestAnimationFrame(f158966);
+              ref4.current = requestAnimationFrame(f158968);
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -228,7 +228,7 @@ export const Card = function Card(shadowEnabled) {
           closure_13();
         }
         let _requestAnimationFrame = requestAnimationFrame;
-        ref4.current = requestAnimationFrame(f158966);
+        ref4.current = requestAnimationFrame(f158968);
       }
     } else {
       throw new TypeError("Trying to call a non-function");

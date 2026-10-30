@@ -244,8 +244,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155869 */ }, 1000);
-          return () => { /* body not rendered: F155870 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
+          return () => { /* body not rendered: F155872 */ };
         }
       }
     }
@@ -264,8 +264,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155869 */ }, 1000);
-          return () => { /* body not rendered: F155870 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
+          return () => { /* body not rendered: F155872 */ };
         }
       }
     }
@@ -281,8 +281,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
           tmp = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          closure_0 = setTimeout(() => { /* body not rendered: F155869 */ }, 1000);
-          return () => { /* body not rendered: F155870 */ };
+          closure_0 = setTimeout(() => { /* body not rendered: F155871 */ }, 1000);
+          return () => { /* body not rendered: F155872 */ };
         }
       }
     }

@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelAffinitiesV2Constants from "ChannelAffinitiesV2Constants" /* 17762 */;
 import size from "module_2" /* 2 */;
 
-const f131850 = (channelId) => {
+const f131852 = (channelId) => {
   const items = [channelId.channelId, channelId];
   return items;
 };
@@ -29,7 +29,7 @@ class ChannelAffinitiesV2Store extends PersistedStore {
       channelAffinities = obj.channelAffinities;
       const self = this;
       const self2 = this;
-      new Map(channelAffinities.map(f131850));
+      new Map(channelAffinities.map(f131852));
     }
   }
   shouldFetch() {
@@ -87,7 +87,7 @@ const obj2 = {
     c2 = false;
     obj.channelAffinities = affineChannels;
     const channelAffinities = obj.channelAffinities;
-    map = new Map(channelAffinities.map(f131850));
+    map = new Map(channelAffinities.map(f131852));
   },
   LOAD_CHANNEL_AFFINITIES_V2_FAILURE: function handleLoadChannelAffinitiesFailure() {
     c2 = false;

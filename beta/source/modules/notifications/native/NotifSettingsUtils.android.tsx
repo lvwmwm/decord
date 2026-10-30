@@ -14,8 +14,8 @@ let map, map1, notifType;
 let c3;
 let closure_4;
 let hasOwnProperty;
-let tmp;
-const SentryUtilsDefault = tmp(1257);
+let tmp2;
+const SentryUtilsDefault = tmp2(1257);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;
@@ -31,17 +31,28 @@ function inferImportanceFromBehavior(visibility) {
   HIGH = constants.HIGH;
 }
 function formatCategory(id) {
-  let intl;
-  const obj = { id: id.string_id, name: intl.string(id.title) };
-  intl = intl2.intl;
+  let string_id;
+  const obj = { id: id.string_id, name: string_id };
+  const intl = intl2.intl;
+  const stringResult = intl.string(id.title);
+  string_id = id.string_id;
+  if ("" !== stringResult) {
+    string_id = stringResult;
+  }
   return obj;
 }
 function formatSetting(item10022, arg1) {
-  let intl;
   let ringtone;
-  let tmp = arg1;
-  const obj = { id: item10022.string_id, groupId: item10022.category, name: intl.string(item10022.title), importance: tmp, ringtone, badge: item10022.behavior.badge, vibrate: item10022.behavior.vibrate };
-  intl = intl2.intl;
+  let string_id;
+  let tmp2;
+  const obj = { id: item10022.string_id, groupId: item10022.category, name: string_id, importance: tmp2, ringtone, badge: item10022.behavior.badge, vibrate: item10022.behavior.vibrate };
+  const intl = intl2.intl;
+  const stringResult = intl.string(item10022.title);
+  string_id = item10022.string_id;
+  if ("" !== stringResult) {
+    string_id = stringResult;
+  }
+  tmp2 = arg1;
   if (arg1 == null) {
     const behavior = item10022.behavior;
     if (!("ringtone" in behavior)) {
@@ -50,10 +61,10 @@ function formatSetting(item10022, arg1) {
         if ("hidden" === behavior.visibility) {
           HIGH = constants.MIN;
         } else {
-          HIGH = behavior.sound ? tmp2.DEFAULT : tmp2.LOW;
+          HIGH = behavior.sound ? tmp3.DEFAULT : tmp3.LOW;
         }
       }
-      tmp = HIGH;
+      tmp2 = HIGH;
     }
     HIGH = constants.HIGH;
   }
@@ -157,13 +168,12 @@ let obj = {
   registerDeclarativeNotificationCategories() {
     let arr;
     let channels;
+    let found;
     let inheritedImportances;
-    let mapping;
     let obj3;
     let registerAndroidNotifGroupsAndChannels;
     let registerAndroidNotifTypeMappings;
-    const tmp = importDefault;
-    const tmp2 = dependencyMap;
+    const tmp2 = importDefault;
     let obj = react_nativeDefault;
     if (obj == null) {
       obj = {};
@@ -171,11 +181,14 @@ let obj = {
     ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
     if (null != registerAndroidNotifGroupsAndChannels) {
       if (null != registerAndroidNotifTypeMappings) {
-        ({ channels, inheritedImportances, mapping } = buildChannelsAndMapping());
-        buildChannelsAndMapping();
+        const tmp5 = buildChannelsAndMapping();
+        ({ channels, inheritedImportances } = tmp5);
+        const mapping = tmp5.mapping;
+        const mapped = _false.map(formatCategory);
         const obj2 = { message: "Registering declarative notification categories", data: obj3 };
         obj3 = {
           channels: channels.map((id) => id.id),
+          entriesWithFallbackNames: found.map((id) => id.id),
           inheritedImportances: arr.map((item) => {
                 let tmp;
                 let tmp2;
@@ -185,10 +198,13 @@ let obj = {
         };
         const addBreadcrumb = SentryUtilsDefault.addBreadcrumb;
         SentryUtilsDefault;
+        const items = [];
+        HermesBuiltin.arraySpread(items, channels, HermesBuiltin.arraySpread(items, mapped, 0));
+        found = items.filter((name) => name.name === name.id);
         const _Array = Array;
         arr = Array.from(inheritedImportances.entries());
         addBreadcrumb(obj2);
-        const result = registerAndroidNotifGroupsAndChannels(_false.map(formatCategory), channels);
+        const result = registerAndroidNotifGroupsAndChannels(mapped, channels);
         const result1 = registerAndroidNotifTypeMappings(mapping);
         return true;
       }

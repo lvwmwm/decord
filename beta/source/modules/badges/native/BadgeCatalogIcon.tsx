@@ -65,7 +65,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F147889 */ });
+        tmp = closure_0(() => { /* body not rendered: F147891 */ });
         return;
       }
     }
@@ -74,7 +74,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   } else {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F147889 */ });
+        tmp = closure_0(() => { /* body not rendered: F147891 */ });
         return;
       }
     }
@@ -82,7 +82,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   if (cResult[6] !== size) {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F147889 */ });
+        tmp = closure_0(() => { /* body not rendered: F147891 */ });
         return;
       }
     }
@@ -93,7 +93,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
   } else {
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F147889 */ });
+        tmp = closure_0(() => { /* body not rendered: F147891 */ });
         return;
       }
     }
@@ -102,14 +102,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
     let tmp24;
     class B {
       constructor() {
-        tmp = closure_0(() => { /* body not rendered: F147889 */ });
+        tmp = closure_0(() => { /* body not rendered: F147891 */ });
         return;
       }
     }
     if (null == tmp11) {
       class B {
         constructor() {
-          tmp = closure_0(() => { /* body not rendered: F147889 */ });
+          tmp = closure_0(() => { /* body not rendered: F147891 */ });
           return;
         }
       }
@@ -117,14 +117,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
     } else {
       class B {
         constructor() {
-          tmp = closure_0(() => { /* body not rendered: F147889 */ });
+          tmp = closure_0(() => { /* body not rendered: F147891 */ });
           return;
         }
       }
       if (cResult[15] !== size) {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F147889 */ });
+            tmp = closure_0(() => { /* body not rendered: F147891 */ });
             return;
           }
         }
@@ -135,7 +135,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
       } else {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F147889 */ });
+            tmp = closure_0(() => { /* body not rendered: F147891 */ });
             return;
           }
         }
@@ -143,14 +143,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCa
       if (cResult[17] === tmp17) {
         class B {
           constructor() {
-            tmp = closure_0(() => { /* body not rendered: F147889 */ });
+            tmp = closure_0(() => { /* body not rendered: F147891 */ });
             return;
           }
         }
         if (cResult[20] === tmp15) {
           class B {
             constructor() {
-              tmp = closure_0(() => { /* body not rendered: F147889 */ });
+              tmp = closure_0(() => { /* body not rendered: F147891 */ });
               return;
             }
           }

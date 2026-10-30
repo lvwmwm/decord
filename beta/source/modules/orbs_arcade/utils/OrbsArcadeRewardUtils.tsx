@@ -9,7 +9,7 @@ import intl2 from "intl" /* 1128 */;
 import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16430 */;
 import size from "module_2" /* 2 */;
 
-const f126851 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f126853 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 const result = size.fileFinishedImporting("modules/orbs_arcade/utils/OrbsArcadeRewardUtils.tsx");
 
 export const getOrbsArcadeRewardStatus = function getOrbsArcadeRewardStatus(id, gameState) {
@@ -88,7 +88,7 @@ export const hasOrbsArcadeUnclaimedRewards = function hasOrbsArcadeUnclaimedRewa
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f126851);
+  return values2.some(f126853);
 };
 export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -108,7 +108,7 @@ export const isOrbsArcadeEnrollmentOver = function isOrbsArcadeEnrollmentOver(ga
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f126851);
+    tmp = !values2.some(f126853);
   }
   return tmp;
 };
@@ -130,7 +130,7 @@ export const mustClaimOrbsArcadeRewardsToPlay = function mustClaimOrbsArcadeRewa
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f126851);
+    someResult = values2.some(f126853);
   }
   return someResult;
 };

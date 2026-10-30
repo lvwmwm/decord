@@ -35,10 +35,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F154008 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154009 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154010 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F154011 */ };
+          allowRender = function allowRender() { /* body not rendered: F154010 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154011 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154012 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F154013 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F154012 */ };
+          return () => { /* body not rendered: F154014 */ };
         }
       }
     }
@@ -85,10 +85,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         if (tmp) {
           return;
         } else {
-          allowRender = function allowRender() { /* body not rendered: F154008 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154009 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154010 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F154011 */ };
+          allowRender = function allowRender() { /* body not rendered: F154010 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F154011 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F154012 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F154013 */ };
           obj = closure_1_5;
           result = closure_1_5.addReactChangeListener(checkGatewayConnection);
           obj2 = closure_1_4;
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
             tmp12 = checkGatewayConnection;
             tmp13 = checkGatewayConnection(true);
           }
-          return () => { /* body not rendered: F154012 */ };
+          return () => { /* body not rendered: F154014 */ };
         }
       }
     }

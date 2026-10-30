@@ -556,10 +556,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F159919 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F159921 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F159920 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F159922 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {

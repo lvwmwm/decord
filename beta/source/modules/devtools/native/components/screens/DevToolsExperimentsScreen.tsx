@@ -1948,7 +1948,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
     class S {
       constructor() {
         obj = closure_0(closure_2[31]);
-        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149734 */ });
+        copyResult = obj.copy(closure_1, () => { /* body not rendered: F149736 */ });
         return;
       }
     }
@@ -1958,7 +1958,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentDe
   class S {
     constructor() {
       obj = closure_0(closure_2[31]);
-      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149734 */ });
+      copyResult = obj.copy(closure_1, () => { /* body not rendered: F149736 */ });
       return;
     }
   }

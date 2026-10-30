@@ -198,7 +198,7 @@ export default function connectStores(items, arg1, arg2) {
         memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F86133 */ };
         memoizedFunction.clear = function clear() { /* body not rendered: F86135 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F162109 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, () => { /* body not rendered: F162111 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

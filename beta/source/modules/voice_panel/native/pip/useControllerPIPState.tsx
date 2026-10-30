@@ -180,7 +180,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   let participant;
   let tmp11;
   let windowDimensions;
-  const f137414 = () => layoutManager.getTargetDimensions(focusedId);
+  const f137416 = () => layoutManager.getTargetDimensions(focusedId);
   channelId = channelId.channelId;
   ({ connected, focusedId } = channelId);
   const layoutManager = channelId.layoutManager;
@@ -201,8 +201,8 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const stateFromStores = obj3.useStateFromStores(items, () => PIPSpeakerStore.getSpeakerId(channelId));
   const tmp7 = closure_12({ channelId, mode });
   const tmp9 = focusedId(layoutManager[18])(channelId);
-  [tmp11, c7] = windowDimensions(pipAvoidanceSpecs.useState(f137414), 2);
-  windowDimensions(pipAvoidanceSpecs.useState(f137414), 2);
+  [tmp11, c7] = windowDimensions(pipAvoidanceSpecs.useState(f137416), 2);
+  windowDimensions(pipAvoidanceSpecs.useState(f137416), 2);
   const obj4 = channelId(layoutManager[19]);
   const pIPMode = obj4.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp9 });
   const obj5 = { connected, mode, focusedId, participantTargetDimensions: tmp11, selfHasVideo: tmp9, showSecondaryPIP: tmp7 };
@@ -253,7 +253,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const animatedReaction = tmpResult2.useAnimatedReaction(C, fn);
   const items1 = [focusedId, layoutManager, tmp11];
   const effect1 = obj2.useEffect(() => {
-    const f161742 = (safeAreaState) => {
+    const f161744 = (safeAreaState) => {
       targetDimensions = targetDimensions.getTargetDimensions(closure_1_1);
       const obj = channelId(layoutManager[15]);
       if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
@@ -261,9 +261,9 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
       }
       return targetDimensions;
     };
-    _undefined(f161742);
+    _undefined(f161744);
     return layoutManager.subscribeFromItem(function updateParticipantDimensions() {
-      _undefined(f161742);
+      _undefined(f161744);
     });
   }, items1);
   tmp8(layoutManager[21])(channelId, layoutManager, pIPMode);

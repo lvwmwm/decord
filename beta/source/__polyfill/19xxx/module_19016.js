@@ -68,8 +68,8 @@ if (typeof exports === "object") {
     const POSITIVE_INFINITY2 = Number.POSITIVE_INFINITY;
     const fn4 = function r(arg0, timeout, arg2) {
       let raceResult;
-      const f161876 = function(arg0, arg1) {
-        const f163694 = (fn, fn2) => {
+      const f161878 = function(arg0, arg1) {
+        const f163696 = (fn, fn2) => {
           try {
             fn(closure_1_0());
           } catch (tmp4) {
@@ -84,7 +84,7 @@ if (typeof exports === "object") {
             const tmp2 = globalThis;
             let self = this;
             let self2 = this;
-            let promise = new Promise(f163694);
+            let promise = new Promise(f163696);
             const tmp3 = promise;
             let nextPromise = promise.then(function(result) {
               const tmp = result;
@@ -119,7 +119,7 @@ if (typeof exports === "object") {
           const _Promise = Promise;
           let self = this;
           let self2 = this;
-          let promise = new Promise(f163694);
+          let promise = new Promise(f163696);
           let tmp3 = promise;
           let nextPromise = promise.then(function(result) {
             const tmp = result;
@@ -209,7 +209,7 @@ if (typeof exports === "object") {
         const tmp7 = globalThis;
         const self3 = this;
         const self4 = this;
-        let promise = new Promise(f161876);
+        let promise = new Promise(f161878);
         const items = [, ];
         items[0] = promise;
         items[1] = fn();
@@ -219,7 +219,7 @@ if (typeof exports === "object") {
         let _Promise = Promise;
         let self = this;
         let self2 = this;
-        raceResult = new Promise(f161876);
+        raceResult = new Promise(f161878);
       }
       return raceResult;
     };
@@ -291,8 +291,8 @@ if (typeof globalThis.define === "function") {
       };
       const fn2 = function r(arg0, timeout, arg2) {
         let raceResult;
-        const f161876 = function(arg0, arg1) {
-          const f163694 = (fn, fn2) => {
+        const f161878 = function(arg0, arg1) {
+          const f163696 = (fn, fn2) => {
             try {
               fn(closure_1_0());
             } catch (tmp4) {
@@ -307,7 +307,7 @@ if (typeof globalThis.define === "function") {
               const tmp2 = globalThis;
               let self = this;
               let self2 = this;
-              let promise = new Promise(f163694);
+              let promise = new Promise(f163696);
               const tmp3 = promise;
               let nextPromise = promise.then(function(result) {
                 const tmp = result;
@@ -342,7 +342,7 @@ if (typeof globalThis.define === "function") {
             const _Promise = Promise;
             let self = this;
             let self2 = this;
-            let promise = new Promise(f163694);
+            let promise = new Promise(f163696);
             let tmp3 = promise;
             let nextPromise = promise.then(function(result) {
               const tmp = result;
@@ -432,7 +432,7 @@ if (typeof globalThis.define === "function") {
           const tmp7 = globalThis;
           const self3 = this;
           const self4 = this;
-          let promise = new Promise(f161876);
+          let promise = new Promise(f161878);
           const items = [, ];
           items[0] = promise;
           items[1] = fn();
@@ -442,7 +442,7 @@ if (typeof globalThis.define === "function") {
           let _Promise = Promise;
           let self = this;
           let self2 = this;
-          raceResult = new Promise(f161876);
+          raceResult = new Promise(f161878);
         }
         return raceResult;
       };
@@ -512,8 +512,8 @@ let closure_2 = {
 POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
 fn2 = function r(arg0, timeout, arg2) {
   let raceResult;
-  const f161876 = function(arg0, arg1) {
-    const f163694 = (fn, fn2) => {
+  const f161878 = function(arg0, arg1) {
+    const f163696 = (fn, fn2) => {
       try {
         fn(closure_1_0());
       } catch (tmp4) {
@@ -528,7 +528,7 @@ fn2 = function r(arg0, timeout, arg2) {
         const tmp2 = globalThis;
         let self = this;
         let self2 = this;
-        let promise = new Promise(f163694);
+        let promise = new Promise(f163696);
         const tmp3 = promise;
         let nextPromise = promise.then(function(result) {
           const tmp = result;
@@ -563,7 +563,7 @@ fn2 = function r(arg0, timeout, arg2) {
       const _Promise = Promise;
       let self = this;
       let self2 = this;
-      let promise = new Promise(f163694);
+      let promise = new Promise(f163696);
       let tmp3 = promise;
       let nextPromise = promise.then(function(result) {
         const tmp = result;
@@ -653,7 +653,7 @@ fn2 = function r(arg0, timeout, arg2) {
     const tmp7 = globalThis;
     const self3 = this;
     const self4 = this;
-    let promise = new Promise(f161876);
+    let promise = new Promise(f161878);
     const items = [, ];
     items[0] = promise;
     items[1] = fn();
@@ -663,7 +663,7 @@ fn2 = function r(arg0, timeout, arg2) {
     let _Promise = Promise;
     let self = this;
     let self2 = this;
-    raceResult = new Promise(f161876);
+    raceResult = new Promise(f161878);
   }
   return raceResult;
 };

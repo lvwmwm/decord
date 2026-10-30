@@ -89,9 +89,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWind
         class E {
           constructor() {
             result = closure_1_6.set(closure_1, closure_3);
-            handleUnload = function handleUnload() { /* body not rendered: F144496 */ };
+            handleUnload = function handleUnload() { /* body not rendered: F144498 */ };
             listener = handleUnload.addEventListener("unload", handleUnload);
-            return () => { /* body not rendered: F144497 */ };
+            return () => { /* body not rendered: F144499 */ };
           }
         }
         const items = [tmp11, renderWindow, windowId];

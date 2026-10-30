@@ -122,10 +122,10 @@ function Rt() {
   }
   return false;
 }
-const f1273312 = () => {
+const f1273332 = () => {
 
 };
-const f1273322 = () => {
+const f1273342 = () => {
 
 };
 const get = (arg0) => fn.call(fn, arg0);
@@ -407,7 +407,7 @@ c0 = () => {
 
 };
 let closure_1;
-const f127331 = f1273312;
+const f127333 = f1273332;
 const f74508 = (arg0, arg1) => {
   arg1.exports = function Ca(arg0, fn) {
     let tmp = arg0;
@@ -601,7 +601,7 @@ const f74513 = (arg0, arg1) => {
 const f74514 = (arg0, arg1) => {
   let tmp;
   function br(nodeType) {
-    const f152770 = (item) => {
+    const f152772 = (item) => {
       let name;
       let value;
       ({ name, value } = item);
@@ -742,7 +742,7 @@ const f74514 = (arg0, arg1) => {
       let str18 = "";
       if (items1.length) {
         const items2 = [];
-        let item = items1.forEach(f152770);
+        let item = items1.forEach(f152772);
         let str19 = "";
         if (items2.length) {
           str19 = ` ${arr3.join(" ")}`;
@@ -759,7 +759,7 @@ const f74514 = (arg0, arg1) => {
       let str22 = "";
       if (items3.length) {
         const items4 = [];
-        const item1 = items3.forEach(f152770);
+        const item1 = items3.forEach(f152772);
         let str23 = "";
         if (items4.length) {
           str23 = ` ${arr5.join(" ")}`;
@@ -1682,19 +1682,19 @@ const f74515 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+                  tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
                   return tmp;
                 }
               }
@@ -1893,19 +1893,19 @@ const f74515 = (arg0, arg1) => {
                     closure_0 = arg0.split(" ");
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+                    tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
                     return items;
                   }
                   getElementsByTagName(arg0) {
                     closure_0 = arg0.toLowerCase();
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+                    tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
                     return items;
                   }
                   contains(arg0) {
                     closure_0 = arg0;
-                    tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+                    tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
                     return tmp;
                   }
                 }
@@ -2119,19 +2119,19 @@ const f74515 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+                  tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
                   return tmp;
                 }
               }
@@ -2332,19 +2332,19 @@ const f74515 = (arg0, arg1) => {
                 closure_0 = arg0.split(" ");
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+                tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
                 return items;
               }
               getElementsByTagName(arg0) {
                 closure_0 = arg0.toLowerCase();
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+                tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
                 return items;
               }
               contains(arg0) {
                 closure_0 = arg0;
-                tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+                tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
                 return tmp;
               }
             }
@@ -2545,19 +2545,19 @@ const f74515 = (arg0, arg1) => {
               closure_0 = arg0.split(" ");
               items = [];
               closure_1 = items;
-              tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+              tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
               return items;
             }
             getElementsByTagName(arg0) {
               closure_0 = arg0.toLowerCase();
               items = [];
               closure_1 = items;
-              tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+              tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
               return items;
             }
             contains(arg0) {
               closure_0 = arg0;
-              tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+              tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
               return tmp;
             }
           }
@@ -2758,19 +2758,19 @@ const f74515 = (arg0, arg1) => {
             closure_0 = arg0.split(" ");
             items = [];
             closure_1 = items;
-            tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+            tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
             return items;
           }
           getElementsByTagName(arg0) {
             closure_0 = arg0.toLowerCase();
             items = [];
             closure_1 = items;
-            tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+            tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
             return items;
           }
           contains(arg0) {
             closure_0 = arg0;
-            tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+            tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
             return tmp;
           }
         }
@@ -2971,19 +2971,19 @@ const f74515 = (arg0, arg1) => {
           closure_0 = arg0.split(" ");
           items = [];
           closure_1 = items;
-          tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+          tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
           return items;
         }
         getElementsByTagName(arg0) {
           closure_0 = arg0.toLowerCase();
           items = [];
           closure_1 = items;
-          tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+          tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
           return items;
         }
         contains(arg0) {
           closure_0 = arg0;
-          tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+          tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
           return tmp;
         }
       }
@@ -3184,19 +3184,19 @@ const f74515 = (arg0, arg1) => {
         closure_0 = arg0.split(" ");
         items = [];
         closure_1 = items;
-        tmp = closure_0(this, () => { /* body not rendered: F152771 */ });
+        tmp = closure_0(this, () => { /* body not rendered: F152773 */ });
         return items;
       }
       getElementsByTagName(arg0) {
         closure_0 = arg0.toLowerCase();
         items = [];
         closure_1 = items;
-        tmp = closure_0(this.childNodes, () => { /* body not rendered: F152772 */ });
+        tmp = closure_0(this.childNodes, () => { /* body not rendered: F152774 */ });
         return items;
       }
       contains(arg0) {
         closure_0 = arg0;
-        tmp = closure_0(this, function() { /* body not rendered: F152773 */ }) || false;
+        tmp = closure_0(this, function() { /* body not rendered: F152775 */ }) || false;
         return tmp;
       }
     }
@@ -3321,7 +3321,7 @@ const f74516 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(() => { /* body not rendered: F152774 */ });
+          mapped = childNodes.map(() => { /* body not rendered: F152776 */ });
           return mapped.join("");
         }
       }
@@ -3364,7 +3364,7 @@ const f74516 = (arg0, arg1) => {
           }
           toString() {
             childNodes = this.childNodes;
-            mapped = childNodes.map(() => { /* body not rendered: F152774 */ });
+            mapped = childNodes.map(() => { /* body not rendered: F152776 */ });
             return mapped.join("");
           }
         }
@@ -3419,7 +3419,7 @@ const f74516 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(() => { /* body not rendered: F152774 */ });
+          mapped = childNodes.map(() => { /* body not rendered: F152776 */ });
           return mapped.join("");
         }
       }
@@ -3464,7 +3464,7 @@ const f74516 = (arg0, arg1) => {
       }
       toString() {
         childNodes = this.childNodes;
-        mapped = childNodes.map(() => { /* body not rendered: F152774 */ });
+        mapped = childNodes.map(() => { /* body not rendered: F152776 */ });
         return mapped.join("");
       }
     }
@@ -4724,7 +4724,7 @@ const f74519 = function(arg0, arg1) {
   }
 };
 let c1;
-const f127332 = f1273322;
+const f127334 = f1273342;
 let obj = {};
 let obj2 = { default: () => ne };
 for (const key10058 in obj2) {
@@ -5265,7 +5265,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_listeners", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._listeners = undefined;
       }
@@ -5363,7 +5363,7 @@ let items2 = [
   {
     key: "emit",
     value(arg0, arg1) {
-      const f161240 = (call) => {
+      const f161242 = (call) => {
         const obj = { type };
         call.call(self, obj, type);
       };
@@ -5376,14 +5376,14 @@ let items2 = [
         const arr3 = self._listeners[arg0] || [];
         const arr4 = self._listeners["after" + arg0] || [];
         const substr = arr.slice();
-        const item = substr.forEach(f161240);
+        const item = substr.forEach(f161242);
         const substr1 = arr2.slice();
-        const item1 = substr1.forEach(f161240);
+        const item1 = substr1.forEach(f161242);
         const substr2 = arr3.slice();
-        const item2 = substr2.forEach(f161240);
+        const item2 = substr2.forEach(f161242);
         closure_0 = tmp;
         const substr3 = arr4.slice();
-        const item3 = substr3.forEach(f161240);
+        const item3 = substr3.forEach(f161242);
       }
     }
   }
@@ -5403,19 +5403,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -5542,7 +5542,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.viewErrored = undefined;
       }
@@ -5650,13 +5650,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -5724,31 +5724,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -5893,7 +5893,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -6062,31 +6062,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -6227,7 +6227,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -6322,31 +6322,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6457,7 +6457,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.isSeeking = undefined;
       }
@@ -6569,7 +6569,7 @@ function Xt(arg0, arg1) {
 let closure_71 = ["adbreakstart", "adrequest", "adresponse", "adplay", "adplaying", "adpause", "adended", "adbreakend", "aderror", "adclicked", "adskipped"];
 const fn13 = function r(pm) {
   let tmp2;
-  const f127436 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
+  const f127438 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
   let closure_0 = pm;
   const self = this;
   const tmp = fn13;
@@ -6582,55 +6582,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.pm = undefined;
       }
@@ -6664,7 +6664,7 @@ const fn13 = function r(pm) {
         const _adRequests = self._adRequests;
         if (typeof closure_2_70 === "function") {
           _adRequests.push(tmp2);
-          const sorted = _adRequests.sort(f127436);
+          const sorted = _adRequests.sort(f127438);
           const data = closure_0.data;
           data.view_ad_request_count = data.view_ad_request_count || 0;
           data.view_ad_request_count = data.view_ad_request_count + 1;
@@ -6688,7 +6688,7 @@ const fn13 = function r(pm) {
         const obj2 = self;
         if (typeof closure_2_70 === "function") {
           _adResponses.push(merged);
-          const sorted = _adResponses.sort(f127436);
+          const sorted = _adResponses.sort(f127438);
           const findAdRequestResult = obj2.findAdRequest(merged.ad_request_id);
           if (findAdRequestResult) {
             const data = closure_0.data;
@@ -6935,7 +6935,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7137,7 +7137,7 @@ function r() {
   }
   return obj;
 }
-const f127446 = () => {
+const f127448 = () => {
 
 };
 const fn16 = function i(arg0, arg1, arg2) {
@@ -7420,7 +7420,7 @@ const fn17 = (arg0, arg1) => {
     const _window = window;
     tmp = typeof window !== "undefined" ? window : {};
   }
-  if (typeof f127332 === "function") {
+  if (typeof f127334 === "function") {
     let _document1;
     const tmp3 = obj;
     if (!tmp3) {
@@ -7772,73 +7772,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "mux", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "envKey", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "options", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+          Object.defineProperty(self, "viewerData", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
         } else {
           self.viewerData = undefined;
         }
@@ -8508,7 +8508,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8782,7 +8782,7 @@ const fn22 = function r(on) {
 };
 let closure_99 = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange", "cdnchange", "playbackmodechange"];
 const set = new Set(["requestcompleted", "requestfailed", "requestcanceled"]);
-let f127324;
+let f127326;
 class t {
   constructor(mux, id, beaconDomain) {
     let tmp2;
@@ -8806,7 +8806,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8819,7 +8819,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8832,7 +8832,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8845,7 +8845,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8858,7 +8858,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8871,7 +8871,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8884,7 +8884,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                        Object.defineProperty(callResult, "data", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8897,7 +8897,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8910,7 +8910,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8923,7 +8923,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8936,7 +8936,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8949,7 +8949,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8962,7 +8962,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8975,7 +8975,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8988,7 +8988,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -9001,7 +9001,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9014,7 +9014,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9027,7 +9027,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9040,7 +9040,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9053,7 +9053,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9066,7 +9066,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9079,7 +9079,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9092,7 +9092,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9105,7 +9105,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9118,7 +9118,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9131,7 +9131,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9144,7 +9144,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9157,7 +9157,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9170,7 +9170,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9183,7 +9183,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: "Russian Federation", configurable: "RU", writable: "+7" });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: "Hungary", configurable: "HU", writable: "+36" });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }
@@ -9610,11 +9610,11 @@ const obj11 = { constructor: { value: t, writable: true, configurable: true } };
 t.prototype = Object.create(fn2.prototype, obj11);
 let tmp25 = fn(t, fn2);
 closure_1 = Rt();
-f127324 = function() {
+f127326 = function() {
   let constructResult;
   let tmp9;
   const self = this;
-  const obj = fn(f127324);
+  const obj = fn(f127326);
   const tmp = t;
   if (tmp) {
     const _Reflect = Reflect;

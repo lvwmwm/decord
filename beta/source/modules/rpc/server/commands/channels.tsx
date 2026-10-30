@@ -263,7 +263,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f124508 = function(type) {
+    const f124510 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -406,8 +406,8 @@ let obj8 = {
         const tmp = new channel_id(flag2[12])(obj, "Request to select voice channel timed out.");
         throw tmp;
       });
-      const then = catchPromise.then(f124508).then;
-      catchPromise.then(f124508);
+      const then = catchPromise.then(f124510).then;
+      catchPromise.then(f124510);
       let closure_0 = obj(function*(arg0, value) {
         function validateUserAllowsJoiningVoice() {
           return closure_1_15(...arguments);

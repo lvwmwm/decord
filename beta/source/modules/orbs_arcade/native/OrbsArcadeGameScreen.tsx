@@ -29,7 +29,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let rect;
-const f135555 = (id) => id.id;
+const f135557 = (id) => id.id;
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 const ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT = ActivityPanelConstants.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT;
@@ -163,10 +163,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGa
               const _Set = Set;
               const obj3 = navigation(frameId[11]);
               const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
-              const mapped = orbsArcadeClaimableRewards.map(f135555);
+              const mapped = orbsArcadeClaimableRewards.map(f135557);
               const self = this;
               const self2 = this;
-              set = new Set(mapped.filter(() => { /* body not rendered: F135556 */ }));
+              set = new Set(mapped.filter(() => { /* body not rendered: F135558 */ }));
               const tmp5 = navigation;
               const tmp6 = frameId;
               if (set.size > 0) {
@@ -267,7 +267,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsArcadeGa
       const _Set = Set;
       const obj3 = navigation(frameId[11]);
       const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
-      const mapped = orbsArcadeClaimableRewards.map(f135555);
+      const mapped = orbsArcadeClaimableRewards.map(f135557);
       const self = this;
       const self2 = this;
       set = new Set(mapped.filter((item) => !closure_0.includes(item)));

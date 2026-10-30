@@ -34,7 +34,7 @@ let closure_12;
 let map1;
 let tmp2;
 const QuestMatchingUtils = tmp2(14162);
-const f124497 = (userStatus) => {
+const f124499 = (userStatus) => {
   userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
@@ -90,7 +90,7 @@ function maybeEmitFrameSessionMetricsForQuest(applicationId, name) {
     if (eligibleQuestsForApplicationId.length > 0) {
       const _HermesInternal2 = HermesInternal;
       const items = ["application_id:" + applicationId];
-      const found = eligibleQuestsForApplicationId.find(f124497);
+      const found = eligibleQuestsForApplicationId.find(f124499);
       let id;
       if (found != null) {
         id = found.id;
@@ -388,7 +388,7 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
         if (eligibleQuestsForApplicationId.length > 0) {
           const _HermesInternal2 = HermesInternal;
           const items2 = ["application_id:" + applicationId];
-          const found = eligibleQuestsForApplicationId.find(f124497);
+          const found = eligibleQuestsForApplicationId.find(f124499);
           let id;
           if (found != null) {
             id = found.id;

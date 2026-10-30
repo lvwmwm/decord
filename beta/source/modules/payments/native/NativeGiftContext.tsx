@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: "hayvan", planSelection: { premiumType, planInterval }, giftInfo: "aiguille \u00E0 coudre" };
+  let obj4 = { orderId: "a", planId: false, planSelection: { premiumType, planInterval }, giftInfo: false };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "hayvan", planSelection: { premiumType, planInterval }, giftInfo: "aiguille \u00E0 coudre" };
+  let obj = { orderId: "a", planId: false, planSelection: { premiumType, planInterval }, giftInfo: false };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
