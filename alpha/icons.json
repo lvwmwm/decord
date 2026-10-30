@@ -2365,6 +2365,13 @@
         "width": 76,
         "height": 76
     },
+    "FandomNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/FandomNeutralIcon.png",
+        "hash": "1e2c63f1ee26f8c3880e4c0e137e58ab",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "featured_page_footer_dark": {
         "file": "app/modules/collectibles/native/images/featured_page_footer_dark.png",
         "hash": "8c6551e987e65957d7c90c18eddac8f1",
@@ -6529,6 +6536,13 @@
         "scales": [],
         "width": 70,
         "height": 47
+    },
+    "ItchNeutralIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ItchNeutralIcon.png",
+        "hash": "c4c151d6ead96957c93181e4a41ea4b6",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "ja": {
         "file": "discord_common/js/shared/images/flags/ja.png",
